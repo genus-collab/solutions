@@ -1,0 +1,24 @@
+T2: 150 (g,mu) cases, tau sample 14 points, max degree in tau 13, series precision 13
+T2 (1.1): 1387 matches, 0 mismatches; 150/150 cases hold as identities in tau (deg+1 points). t=1.7s
+T2b valuation >= l-2 and parity x^(l mod 2): violations 0
+T2c [p_mu]C(x;-1-tau) = (-1)^(|mu|-l)[p_mu]C(x;tau): 1653 coefficients, violations 0
+Controls (each must produce mismatches):
+  true formula (expected 0): 0 mismatches of 210
+  K1 drop sigma^g: 132 mismatches of 132
+  K2 weights (1,-tau,1+tau): 132 mismatches of 132
+  K2b weight (-1,tau,-1-tau) i.e. Lambda(+1): 132 mismatches of 132
+  K3 framing e^(tau kappa x/2), no 1/2: 201 mismatches of 210
+  K4 Pi_mu(-1-tau): 93 mismatches of 210
+  K5 leaf 1/(1+mu psi): 144 mismatches of 210
+  K6 drop 1/|Aut mu|: 93 mismatches of 93
+  K7 M_0(m) = 1/m instead of 1/m^2: 15 mismatches of 18
+  K8 extra (-1)^g: 66 mismatches of 66
+T3: LLZ eqs (1)-(3) literally, in lambda over Q(i), against -(i)^(|mu|+l)/|Aut| sigma^(l-1) Pi_mu I_g:
+  printed LLZ: V with 2 sin, prefactor i^(|mu|+l): 90 matches, 0 mismatches
+  A_mv line 177 variant: V = prod 1/[h], prefactor i^l: 90 matches, 0 mismatches
+  CONTROL: V with 2 sin, prefactor i^l (mixed): 24 matches, 66 mismatches
+T4: OP Theorem 1 (0.8) literally: disconnected series, parameters (-1,-1/a,1/(a+1)), sqrt(a(a+1))u:
+  OP (0.8) as printed, labelled disconnected series: 332 coefficients match, 84 mismatches, of which 84 are exactly the factor |Aut mu| (repeated parts only)
+  OP (0.8) with no 1/|Aut mu|, as in OP (1.24), (1.28): 416 match, 0 mismatches
+  CONTROL, no rescaling sqrt(a(a+1)): 152 mismatches of 416 coefficients
+total time 4.3s

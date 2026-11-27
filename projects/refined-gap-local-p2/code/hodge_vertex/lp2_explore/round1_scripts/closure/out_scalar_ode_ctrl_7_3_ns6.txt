@@ -1,0 +1,4 @@
+colour 0: PF operator annihilates Phat0 (frame B), z^0..z^9: FAILED (exact to s^3)
+colour 1: PF operator annihilates Phat0 (frame B), z^0..z^9: FAILED (exact to s^3)
+colour 2: PF operator annihilates Phat0 (frame B), z^0..z^9: FAILED (exact to s^3)
+done

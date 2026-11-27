@@ -1,0 +1,28 @@
+lam = 10, solution w^s (s = 1 + lam/z):
+  b_1: poles z=-5;  deg_zeta N - deg_zeta D = 1
+  b_2: poles z=-10/3 z=-5;  deg_zeta N - deg_zeta D = 2
+  b_3: poles z=-5/2 z=-10/3 z=-5;  deg_zeta N - deg_zeta D = 3
+  b_4: poles z=-2 z=-5/2 z=-10/3 z=-5;  deg_zeta N - deg_zeta D = 4
+  b_5: poles z=-5/3 z=-2 z=-5/2 z=-10/3 z=-5;  deg_zeta N - deg_zeta D = 5
+  b_6: poles z=-10/7 z=-5/3 z=-2 z=-5/2 z=-10/3 z=-5;  deg_zeta N - deg_zeta D = 6
+lam = 10, solution w^1:
+  b_1: poles z=10;  deg_zeta N - deg_zeta D = 1
+  b_2: poles z=10 z=5;  deg_zeta N - deg_zeta D = 2
+  b_3: poles z=10 z=5 z=10/3;  deg_zeta N - deg_zeta D = 3
+  b_4: poles z=10 z=5 z=10/3 z=5/2;  deg_zeta N - deg_zeta D = 4
+  b_5: poles z=10 z=5 z=10/3 z=5/2 z=2;  deg_zeta N - deg_zeta D = 4
+  b_6: poles z=10 z=5 z=10/3 z=5/2 z=2 z=5/3;  deg_zeta N - deg_zeta D = 6
+lam = -10, solution w^s (s = 1 + lam/z):
+  b_1: poles z=5;  deg_zeta N - deg_zeta D = 1
+  b_2: poles z=5 z=10/3;  deg_zeta N - deg_zeta D = 2
+  b_3: poles z=5 z=10/3 z=5/2;  deg_zeta N - deg_zeta D = 3
+  b_4: poles z=5 z=10/3 z=5/2 z=2;  deg_zeta N - deg_zeta D = 4
+  b_5: poles z=5 z=10/3 z=5/2 z=2 z=5/3;  deg_zeta N - deg_zeta D = 5
+  b_6: poles z=5 z=10/3 z=5/2 z=2 z=5/3 z=10/7;  deg_zeta N - deg_zeta D = 6
+lam = -10, solution w^1:
+  b_1: poles z=-10;  deg_zeta N - deg_zeta D = 1
+  b_2: poles z=-5 z=-10;  deg_zeta N - deg_zeta D = 2
+  b_3: poles z=-10/3 z=-5 z=-10;  deg_zeta N - deg_zeta D = 3
+  b_4: poles z=-5/2 z=-10/3 z=-5 z=-10;  deg_zeta N - deg_zeta D = 4
+  b_5: poles z=-2 z=-5/2 z=-10/3 z=-5 z=-10;  deg_zeta N - deg_zeta D = 4
+  b_6: poles z=-5/3 z=-2 z=-5/2 z=-10/3 z=-5 z=-10;  deg_zeta N - deg_zeta D = 6

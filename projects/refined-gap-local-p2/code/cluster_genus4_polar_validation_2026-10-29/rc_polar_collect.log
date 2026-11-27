@@ -1,0 +1,14 @@
+2026-10-28 22:34:41  [g=2] 6 chunk files; failed orbits: 0; full rational functions: True
+2026-10-28 22:34:41  [g=2] total polar part: {(7 + 10*x^2 + 7*x^4)/(5760*x), 0}; expected {(7 + 10*x^2 + 7*x^4)/(5760*x), 0}
+2026-10-28 22:34:41  [g=2] VALIDATION OK: sum of the polar parts = polar part of P_g Li_{3-2g}
+2026-10-28 22:34:41  [g=2] VALIDATION OK: sum of the decorated graphs = F20 at alpha0 = 0, alpha_i = eps_i
+2026-10-28 22:34:41  [g=2] wrote conifold_graphterms_genus2.m (17 entries) and the _full.m file
+2026-10-28 22:34:42  [g=2] VALIDATION OK: all 17 genus-2 decorated graphs agree with the stored results (polar parts and rational functions)
+2026-10-28 22:34:42  [g=2] done
+2026-10-28 22:43:59  [g=3] 6 chunk files; failed orbits: 0; full rational functions: True
+2026-10-28 22:43:59  [g=3] total polar part: {-1/161280*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}; expected {-1/161280*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}
+2026-10-28 22:43:59  [g=3] VALIDATION OK: sum of the polar parts = polar part of P_g Li_{3-2g}
+2026-10-28 22:43:59  [g=3] VALIDATION OK: sum of the decorated graphs = F30 at alpha0 = 0, alpha_i = eps_i
+2026-10-28 22:44:00  [g=3] wrote conifold_graphterms_genus3.m (378 entries) and the _full.m file
+2026-10-28 22:44:07  [g=3] VALIDATION OK: all 378 genus-3 decorated graphs agree with the stored results (polar parts and rational functions)
+2026-10-28 22:44:07  [g=3] done

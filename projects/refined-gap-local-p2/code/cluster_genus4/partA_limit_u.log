@@ -1,0 +1,6 @@
+14:43:41  pole orders of C_b(delta): {0, 0, 3, 3, 6, 6, 9, 9, 12, 12}
+14:44:15  u-pole order of PPunnorm: 3; delta-pole order of C: 12; J = 4
+14:46:34  u-Laurent expansion of PPunnorm done
+14:46:35  delta-Laurent expansion of C done
+14:46:35  cancellation of polar terms (all zero?): True
+14:46:35  saved cPP_z9.m; LeafCounts {24, 63, 128, 219, 336, 479, 800, 1021, 1268, 1541}

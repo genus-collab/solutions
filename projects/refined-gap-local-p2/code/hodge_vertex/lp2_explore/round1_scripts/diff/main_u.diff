@@ -1,0 +1,1585 @@
+--- "/g/My Drive/Projects/Old/refGW/arXiv/main.tex"	2024-09-30 18:07:09.739000000 +0100
++++ "/g/My Drive/Projects/Old/refGW/BS_v2_2026-11-02/main.tex"	2026-11-02 07:23:40.000000000 +0000
+@@ -586,10 +586,12 @@
+ \address{$^3$ University of Cambridge, Department of Pure Mathematics and Mathematical Statistics, Wilberforce Road, Cambridge CB3 0WB, United Kingdom}
+ \address{$^4$ ETH Z\"{u}rich, Department of Mathematics, R\"{a}mistrasse 101, 8092 Z\"{u}rich, Switzerland}
+ \email{<e-mail removed>, <e-mail removed>}
++\subjclass{14N35 (Primary), 53D45, 14J33, 14H81, 14J81}
++
+ \begin{document}
+ 
+ \begin{abstract}
+-We study the enumerative geometry of stable maps to Calabi--Yau 5-folds $Z$ with a group action preserving the Calabi--Yau form. In the central case $Z=X \times \bbC^2$, where $X$ is a Calabi--Yau 3-fold with a group action scaling the holomorphic volume form non-trivially, we conjecture that the disconnected equivariant Gromov--Witten generating series of $Z$ returns the Nekrasov--Okounkov equivariant K-theoretic PT partition function of $X$ and, under suitable rigidity conditions, its refined BPS index. We show that in the unrefined limit the conjecture reproduces known statements about the higher genus Gromov--Witten theory of $X$;  we prove it for $X$ the resolved conifold; and we establish a refined cycle-level local/relative correspondence for local del Pezzo surfaces, implying the Nekrasov--Shatashvili limit of the conjecture when $X$ is the local projective plane. We further establish B-model physics predictions of Huang--Klemm for refined higher genus mirror symmetry for local $\bbP^2$. In particular, we prove that our refined Gromov--Witten generating series obey extended holomorphic anomaly equations, are quasi-modular functions of $\Gamma_1(3)$, have leading asymptotics at the conifold point given by the logarithm of the Barnes double-Gamma function, and satisfy a version of the higher genus Crepant Resolution Correspondence with the refined orbifold Gromov--Witten theory of $[\bbC^3/\mu_3]$. This refines results, and partially proves conjectures, of Lho--Pandharipande, Coates--Iritani, and Bousseau--Fan--Guo--Wu.
++We study the enumerative geometry of stable maps to Calabi--Yau 5-folds $Z$ with a group action preserving the Calabi--Yau form. In the central case $Z=X \times \bbC^2$, where $X$ is a Calabi--Yau 3-fold with a group action scaling the holomorphic volume form non-trivially, we conjecture that the disconnected equivariant Gromov--Witten generating series of $Z$ returns the Nekrasov--Okounkov equivariant K-theoretic PT partition function of $X$ and, under suitable rigidity conditions, its refined BPS index. We show that in the unrefined limit the conjecture reproduces known statements about the higher genus Gromov--Witten theory of $X$;  we prove it for $X$ the resolved conifold; and we establish a refined cycle-level local/relative correspondence for del Pezzo surfaces, implying the Nekrasov--Shatashvili limit of the conjecture when $X$ is the local projective plane. We further establish B-model physics predictions of Huang--Klemm for refined higher genus mirror symmetry for local $\bbP^2$. In particular, we prove that our refined Gromov--Witten generating series obey extended holomorphic anomaly equations, are quasi-modular functions of $\Gamma_1(3)$, have leading asymptotics at the conifold point given by the logarithm of the Barnes double-Gamma function, and satisfy a version of the higher genus Crepant Resolution Correspondence with the refined orbifold Gromov--Witten theory of $[\bbC^3/\mu_3]$. This refines results, and partially proves conjectures, of Lho--Pandharipande, Coates--Iritani, and Bousseau--Fan--Guo--Wu.
+ \end{abstract}
+ 
+ \maketitle
+@@ -621,13 +623,13 @@
+ %topological F-terms in a type IIA string compactification on $X$, 
+ Gopakumar--Vafa \cite{GV98:MthTopStrI,GV98:MthTopStrII} were led to express the generating function of GW invariants as
+ \beq
+-\sum_{g \geq 0} \sum_{\beta \in H_2(X, \bbZ)} (-\epsilon^2)^{g-1} \mathcal{Q}^\beta \, \GW_{g,\beta}(X)  = \sum_{k \geq 1} \sum_{\beta \in H_2(X, \bbZ)} \frac{\mathcal{Q}^{k\beta}}{k [\mchar{q}^k]^2} \, \Omega^{\rm un}_\beta(X)(\mchar{q}^k)\,,
++\sum_{g \geq 0} \sum_{\beta \in H_2(X, \bbZ)} (-\epsilon^2)^{g-1} \mathcal{Q}^\beta \, \GW_{g,\beta}(X)  = -\sum_{k \geq 1} \sum_{\beta \in H_2(X, \bbZ)} \frac{\mathcal{Q}^{k\beta}}{k [\mchar{q}^k]^2} \, \Omega^{\rm un}_\beta(X)(\mchar{q}^k)\,,
+ \label{eq:GWGV}
+ \eeq
+ where we denoted 
+ \[ \mchar{q} \coloneqq \re^{\epsilon}\,, \quad [\mchar{q}] \coloneqq \mchar{q}^{1/2}-\mchar{q}^{-1/2}\,,\] and $\Omega_{\mathrlap{\beta}}{\mathstrut}^{\rm un}(X)$ is the integral Laurent polynomial \cite{IP18:GV,DIW21:GVfinite}
+ \beq
+-\Omega^{\rm un}_\beta(X)(\mchar{q}) \coloneqq \sum_{g \geq 0} (-1)^{g-1} [\mchar{q}]^{2g} \, \invariantsfont{GV}_{g,\beta}(X)
++\Omega^{\rm un}_\beta(X)(\mchar{q}) \coloneqq \sum_{g \geq 0} (-1)^{g} [\mchar{q}]^{2g} \, \invariantsfont{GV}_{g,\beta}(X)
+ \in \bbZ[\mchar{q}^{\pm 1}] \,.
+ \label{eq:Omegabeta}
+ \eeq
+@@ -779,7 +781,7 @@
+ \end{conj}
+ 
+ The second correspondence combines \Cref{speculation: link to Mtheory} with the membranes/sheaves correspondence of \cite{NO14:membranes} to provide 
+-a natural refinement of the  numerical GW/PT correspondence conjecture \cite{PT09:StabPairs}
++a natural refinement of the  numerical GW/PT conjecture \cite{PT09:StabPairs}
+  upon identifying the coordinate  of the anti-diagonal torus $\Gm_{\mchar{q}_-}$ acting on $\bbC^2$ with the box-counting parameter in PT theory.
+ 
+ \begin{conj}[Refined GW/PT correspondence, =\Cref{conj: refined PT GW}; see \cref{sec:KthPT,sec:KthPTconj} for a detailed treatment]
+@@ -796,7 +798,8 @@
+ \label{eq:GWPTintro}
+ \eeq
+ \end{conj}
+-%\cref{conj: GWPT intro} a representation theoretic interpretation for the change of variables $\mchar{q} \mapsto \re^{\epsilon}$.
++When the $\mgp{T}^{\prime}$-action fixes the holomorphic 3-form of $X$, \cref{conj: GWPT intro} reduces to the numerical GW/PT correspondence \cite{PT09:StabPairs} (see \cref{sec: PT GW unref}): the MNOP change of variables $\mchar{q}_- \mapsto \re^{\epsilon_-}$ receives here a representation-theoretic meaning as the operation of taking the Chern character.
++
+ We stress that, unlike for \Cref{conj: refined GV integrality intro}, we do not impose any rigidity assumption in \Cref{conj: GWPT intro}. As K-theoretic and motivic PT invariants generally disagree when the stable pairs moduli space is non-compact, this in particular means that we can only expect an agreement with motivically refined sheaf counting when the target is equirigid. In that case, the Rigidity \cref{conj: rigidity} implies that \eqref{eq:GWPTintro} would hold with $\mgp{T}$ replaced by any Calabi--Yau 2-torus on $Z$ covering the $\mgp{T}'$ action on $X$ and the $\Gm[2]$-action on $\Aaff{2}$.
+ \\
+ 
+@@ -841,7 +844,7 @@
+ %
+ \[
+ 1+\sum_{d =1}^\infty \refGWdiscb{Z}{\mgp{T}}{d [\bbP^1]} \,\cQ^d =\ch[{\mgp{T}}]
+- \prod_{m \geq 1} \prod_{j=0}^{m-1} \l(1-\mchar{q^{2j-m-1}_+} \mchar{q_-^m} \cQ\r)
++ \prod_{m \geq 1} \prod_{j=0}^{m-1} \l(1-\mchar{q^{2j-m+1}_+} \mchar{q_-^m} \cQ\r)
+  =1+\ch[{\mgp{T}}] \sum_{d =1}^\infty \refPTb{X}{\mgp{T}'}{d [\bbP^1]}\, \cQ^d 
+  \,.
+ \]
+@@ -890,7 +893,7 @@
+ \end{customthm}
+ 
+ In \eqref{eq:GWGVrefNS}, we denoted by $\MT^{\rm NS}_\beta(K_{\bbP^2})$ the refined Maulik--Toda generating function in the NS limit,
+-\[ \MT^{\rm NS}_\beta(K_{\bbP^2})(\mchar{q}) \coloneqq (-\mchar{q}^{-1/2})^{\dim(M_{\beta})} \sum_{j=0}^{\dim(M_{\beta})} b_{2j}(M_{\beta}) \, (-\mchar{q})^j\,,
++\[ \MT^{\rm NS}_\beta(K_{\bbP^2})(\mchar{q}) \coloneqq (-\mchar{q}^{-1/2})^{\dim(M_{\beta})} \sum_{j=0}^{\dim(M_{\beta})} b_{2j}(M_{\beta}) \, \mchar{q}^j\,,
+ \]
+ given by the symmetrised Poincar\'{e} polynomial of the moduli space $M_{\beta}$ of pure one-dimensional Gieseker semi-stable sheaves on $\bbP^2$ with second Chern character $\beta$ and Euler characteristic one. The right-hand side of \eqref{eq:GWGVrefNS} should be then viewed as the limit
+ \[
+@@ -915,7 +918,7 @@
+ \cZ = \l\{\l([z_0:z_1:z_2], y\r) \in \bbP^2 \times \bbP(3,1)\, \big|\, z_0^3+ z_1^3+ z_2^3 + y^{-1/3} z_0 z_1 z_2=0 \r\} \longrightarrow \bbP(3,1)\,.
+ \]
+ 
+-The family has singular fibres at the two values $y=-1/27$ (the {\it conifold point}) and $y=0$ (the {\it large radius point}), away from which the fibres are smooth elliptic curves. On a regular fibre $\cZ_{y}$ over $y \neq 0$, $y \neq -1/27$, write
++The family has singular fibres at the two values $y=-1/27$ (the {\it conifold point}) and $y=0$ (the {\it large radius point}), away from which the fibres are smooth elliptic curves. On a regular fibre $\cZ_{y}$ over $y \neq 0$, $y \neq -1/27$, and in an affine chart $z_0=1$, write
+ %
+ \[
+ \Pi_\gamma(y) = \int_\gamma \log z_1 \dd \log z_2
+@@ -923,15 +926,15 @@
+ %
+ for the (single-valued) period of the (multi-valued) 1-form $\log z_1 \dd \log z_2$ over a homology cycle $\gamma \in H_1(\cZ_y, \bbZ)$. The periods $\Pi_\gamma$ have unipotent (resp.~maximal unipotent) monodromy around the singular fibre at the conifold (resp.~the large radius point), and cyclic $\mu_3$-monodromy around $y=\infty$. Around the large radius point $y=0$, there is a unique $\gamma \in H_1(\cZ_y, \bbZ)$ such that $\Pi_{\gamma} \sim \log y + \cO(y)$ diverges logarithmically \cite{CKYZ99:locMS}. Around the conifold point $y=-1/27$, there is a unique 
+ %non-zero 
+-$\gamma_{\rm cf} \in H_1(\cZ_y, \bbZ)$ such that $\Pi_{\gamma_{\rm cf}} \sim (y-1/27) + \cO(y-1/27)^2$ vanishes linearly \cite{HKR:HAE}; and around the orbifold point, there is a unique $\gamma_{\rm orb} \in H_1(\cZ_y, \bbC)$ such that $\Pi_{\gamma_{\rm orb}} \sim y^{-1/3} + \cO(y^{-4/3})$ \cite{Aganagic:2006wq}. 
++$\gamma_{\rm cf} \in H_1(\cZ_y, \bbZ)$ such that $\Pi_{\gamma_{\rm cf}} \sim (1+27y) + \cO(1+27 y)^2$ vanishes linearly \cite{HKR:HAE}; and around the orbifold point, there is a unique $\gamma_{\rm orb} \in H_1(\cZ_y, \bbC)$ such that $\Pi_{\gamma_{\rm orb}} \sim y^{-1/3} + \cO(y^{-4/3})$ \cite{Aganagic:2006wq}. 
+ 
+ The complement of the conifold and large radius points is the coarse moduli space of the modular curve $[\mathbb{H}/\Gamma_1(3)]$; the discriminant $X(y)$, Jacobian $A(y)$, and propagator $F(y)$, defined as
+ \[
+-X(y) \coloneqq \frac{1}{1+27 y}\,, \qquad A(y)= y \de_y \log \Pi_{\gamma}\,, \qquad F(y) \coloneqq y\de_y \log A(y)
++X(y) \coloneqq \frac{1}{1+27 y}\,, \qquad A(y)= y \de_y  \Pi_{\gamma}\,, \qquad F(y) \coloneqq y\de_y \log A(y)
+ \]
+ are quasi-modular functions of $\Gamma_1(3)$ of weight and depth equal to  $(0,0)$, $(1,0)$, and $(0,1)$  respectively. In the following, we will similarly define
+ \[
+- A_{\rm orb}(y)= y \de_y \log \Pi_{\gamma_{\rm orb}}\,, \quad F_{\rm orb}(y) \coloneqq y\de_y \log A_{\rm orb}(y)\,, \quad A_{\rm cf}(y)= y \de_y \log \Pi_{\gamma_{\rm cf}}\,, \quad F_{\rm cf}(y) \coloneqq y\de_y \log A_{\rm cf}(y)\,,
++ A_{\rm orb}(y)= -3 y \de_y \Pi_{\gamma_{\rm orb}}\,, \quad F_{\rm orb}(y) \coloneqq -3y\de_y \log A_{\rm orb}(y)\,, \quad A_{\rm cf}(y)= y \de_y \Pi_{\gamma_{\rm cf}}\,, \quad F_{\rm cf}(y) \coloneqq y\de_y \log A_{\rm cf}(y)\,,
+ \]
+ and denote by \[\big[x^n\big] f\] the $n^{\rm th}$ formal Laurent  coefficient of $f \in \bbQ(\!(x)\!)$. 
+ %In terms of the mirror family $\cZ$, and up to the mirror map $\cQ \to \exp(\Pi_{A})$, they are uniquely constrained by the following four properties. 
+@@ -941,19 +944,19 @@
+ For all $k+g \geq 2$, the refined generating series are uniquely and recursively determined from $\mathscr{F}_{0,0}$, $\mathscr{F}_{0,1}$ and $\mathscr{F}_{1,0}$ by imposing:    
+ 
+ \begin{description}
+- \item[(Finite generation)] $\mathscr{F}_{k,g}$ is a weight-zero, depth $3(g+k-1)$ quasi-modular function of $\Gamma_1(3)$ with
+-  \[ \mathscr{F}_{k,g} \in \bbQ[X^{\pm 1}][F]\,, \quad \deg_F \mathscr{F}_{k,g} = 3(g+k-1)\,.\] 
++ \item[(Finite generation)] $\mathscr{F}_{k,g}$ is a weight-zero quasi-modular function of $\Gamma_1(3)$ of depth at most $3(g+k-1)$, with
++  \[ \mathscr{F}_{k,g} \in \bbQ[X^{\pm 1}][F]\,, \quad \deg_F \mathscr{F}_{k,g} \leq 3(g+k-1)\,.\] 
+  \item[(Modular anomaly)] the refined modular anomaly equations hold:
+  \[
+-\frac{X}{A^2}
+-\frac{\de \mathscr{F}_{k,g}}{\de F}=\frac{1}{2} (\cQ \partial_\cQ)^2 \mathscr{F}_{k,g-1} + \frac{\cQ^2}{2} \sum_{\substack{0\leq k' \leq k\,, 0 \leq g' \leq g \\(0,0)\neq (k',g')\neq (k,g) }} ~ \de_\cQ \mathscr{F}_{k',g'} \,  \partial_\cQ \mathscr{F}_{k-k',g-g'}\,.\]
++\frac{2X}{3A^2}
++\frac{\de \mathscr{F}_{k,g}}{\de F}= (\cQ \partial_\cQ)^2 \mathscr{F}_{k,g-1} + \cQ^2 \sum_{\substack{0\leq k' \leq k\,, 0 \leq g' \leq g \\(0,0)\neq (k',g')\neq (k,g) }} ~ \de_\cQ \mathscr{F}_{k',g'} \,  \partial_\cQ \mathscr{F}_{k-k',g-g'}\,.\]
+  \item[(Orbifold regularity)]  near $y=\infty$, the following asymptotic behaviour holds
+- \[ \mathscr{F}_{k,g}\Big|_{F \to F_{\rm orb}} = \cO(y^{-1})\,. \]
++ \[ \mathscr{F}_{k,g}\Big|_{F \to -F_{\rm orb}/3} = \cO(y^{0})\,. \]
+   \item[(Conifold asymptotics)] near $y=-1/27$, the following asymptotic behaviour holds
+- \[ \mathscr{F}_{k,g}\Big|_{F \to F_{\rm cf}} =  \mathfrak{b}_{k,g} \Pi^{2-2g+2k}_{\gamma_{\rm cf}} + \cO(1)\,,
++ \[ \mathscr{F}_{k,g}\Big|_{F \to F_{\rm cf}} =  \mathfrak{b}_{k,g} \Pi^{2-2g-2k}_{\gamma_{\rm cf}} + \cO(1)\,,
+   \]
+   where
+-  \beq \mathfrak{b}_{k,g} =   (-3)^{g-1} \big[t^{2g} (\epsilon_1+\epsilon_2)^k(\epsilon_1\epsilon_2)^{g-1}\big] \l(\frac{ (2g-1)!}{[\mchar{q}_1^t] [\mchar{q}_2^t]}\r)\,.
++  \beq \mathfrak{b}_{k,g} = (-3)^{k+g-1}   \big[ (\epsilon_1+\epsilon_2)^{2k}(\epsilon_1\epsilon_2)^{g-1}\big] \beta_{2k+2g-2}(\epsilon_1,\epsilon_2)\,, \qquad \beta_n(\epsilon_1,\epsilon_2) \coloneqq (n-1)!\,\big[t^n\big]\, \frac{1}{4\sinh\frac{\epsilon_1 t}{2}\sinh\frac{\epsilon_2 t}{2}}\,.
+   \label{eq:bkgcf}
+   \eeq 
+ \end{description}
+@@ -961,7 +964,7 @@
+ 
+ With a suitable mirror symmetry prescription for the initial data $\mathscr{F}_{k,g}$ with $k+g=0$ (the special geometry prepotential) and $k+g=1$ (the refined Ray--Singer torsion), the authors of \cite{HK10:OmegaBG,CKK14:refBPS} conjecture and verify in low genus and degree that
+ \[
+-\mathscr{F}_{k,g} = \big[(\epsilon_1+\epsilon_2)^k (\epsilon_1 \epsilon_2)^{g-1}\big]  \sum_{k \geq 1} \l[\sum_{0 \neq \beta} \frac{\cQ^{k\beta}}{k [\mchar{q}_1^k][\mchar{q}_2^k]} \, \MT_\beta(K_{\bbP^2})( \mchar{q}_+^k, \mchar{q}_-^k)\r]\Bigg|_{\mchar{q}_i=\re^{\epsilon_i}}\,.
++\mathscr{F}_{k,g} = \big[(\epsilon_1+\epsilon_2)^{2k} (\epsilon_1 \epsilon_2)^{g-1}\big]  \sum_{m \geq 1} \l[\sum_{0 \neq \beta} \frac{\cQ^{m\beta}}{m [\mchar{q}_1^m][\mchar{q}_2^m]} \, \MT_\beta(K_{\bbP^2})( \mchar{q}_+^m, \mchar{q}_-^m)\r]\Bigg|_{\mchar{q}_i=\re^{\epsilon_i}}\,.
+ \]
+ %where
+ %\[
+@@ -976,14 +979,14 @@
+ \label{thm:B}
+ Let $X=K_{\bbP^2}$, $Z=K_{\bbP^2}\times \Aaff{2}$ and $\mgp{T}_{\rm F}$ be the fibrewise action as in \cref{thm:A3}. Writing $H$ for the class of a line in $\bbP^2$, define
+ \[
+-\mathscr{F}_{k,g} \coloneqq \sum_{d=1}^\infty  \l(\big[(\epsilon_1+\epsilon_2)^k (\epsilon_1 \epsilon_2)^{g-1}\big]\, \refGWb{Z}{\mgp{T}_{\rm F}}{d [H]}\r) \cQ^d \in \bbQ\llbracket \cQ \rrbracket\,.
++\mathscr{F}_{k,g} \coloneqq \sum_{d=1}^\infty  \l(\big[(\epsilon_1+\epsilon_2)^{2k} (\epsilon_1 \epsilon_2)^{g-1}\big]\, \refGWb{Z}{\mgp{T}_{\rm F}}{d [H]}\r) \cQ^d \in \bbQ\llbracket \cQ \rrbracket\,.
+ \]
+-Then, under the mirror map $\cQ \to \re^{\Pi_\gamma(y)}$:
++Then, under the mirror map $\cQ \to \re^{\Pi_\gamma(y)}$, and up to constant terms:
+ \bit
+ \item 
+ for $k+g<2$, $\mathscr{F}_{k,g}$ coincides with the Huang--Klemm initial data  \cite{HK10:OmegaBG,CKK14:refBPS};
+ \item for $k+g\geq 2$, $\mathscr{F}_{k,g}$ satisfies {\bf (Finite generation)},  {\bf (Modular anomaly)}, {\bf (Orbifold regularity)}, and the following weak version of {\bf (Conifold asymptotics)}:
+- \[ \mathscr{F}_{k,g}\Big|_{F \to F_{\rm cf}} = \mathfrak{b}_{k,g} \Pi^{2-2g+2k}_{\gamma_{\rm cf}}\l(1 + \cO(\Pi_{\gamma_{\rm cf}})\r)\,.
++ \[ \mathscr{F}_{k,g}\Big|_{F \to F_{\rm cf}} = \mathfrak{b}_{k,g} \Pi^{2-2g-2k}_{\gamma_{\rm cf}}\l(1 + \cO(\Pi_{\gamma_{\rm cf}})\r)\,.
+   \]
+ \eit
+ \end{customthm}
+@@ -1174,7 +1177,7 @@
+ %\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+ \subsection*{Acknowledgements} 
+ A.~B.~ thanks the Galileo Galilei Institute for Theoretical Physics and the Institut Mittag-Leffler for hospitality, and INFN for partial support during the completion of this work. 
+-We acknowledge with thanks discussions and correspondence with P.~Bousseau, T.~Bridgeland, D.~Genlik, H.~Iritani, C.~Manolache, M.~Moreira, G.~Oberdieck, and W.~Pi. A.~B.~ was supported by the EPSRC Fellowship EP/S003657/2. Y.~S.~ was supported by the SNF grant SNF-200020-21936.
++We acknowledge with thanks discussions and correspondence with P.~Bousseau, T.~Bridgeland, D.~Genlik, H.~Iritani, C.~Manolache, M.~Moreira, G.~Oberdieck, and W.~Pi. A.~B.~ was supported by the EPSRC Fellowship EP/S003657/2. Y.~S.~ was supported by the SNF grant SNF-200020-219369.
+ %\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+ %===============================================================================
+ %\part{Constructions}
+@@ -1283,7 +1286,7 @@
+ 	\begin{equation*}
+ 		\refGWgb{g}{Z}{\mgp{G}'}{\beta} \longmapsto \refGWgb{g}{Z}{\mgp{G}}{\beta}
+ 	\end{equation*}
+-	under the induced morphism $R^{\mr{loc}}_{\mgp{G}'} \rightarrow R^{\mr{loc}}_{\mgp{G}}$ of Chow rings.\qed
++	under a suitable localisation of the induced morphism $R_{\mgp{G}'} \rightarrow R_{\mgp{G}}$ of Chow rings.\qed
+ \end{lem}
+ % By way of some warm-up gymnastics, let's illustrate these definitions in what will become our running example
+ %, which will crop up 
+@@ -1516,7 +1519,7 @@
+ 	\end{equation*}
+ \end{lem}
+ \begin{proof}
+-	Assumptions (ii) and (iii) guarantee that $\epsilon_-$ and $\epsilon_+$ are linearly independent. Hence, by (i) these elements generate $R_{\mgp{T}}$. Moreover, by (iv) the only dependence on $\epsilon_-$ comes from the insertion $\HodgeLambda[g]{\epsilon_1}\,  \HodgeLambda[g]{\epsilon_2}$. The \namecref{lem: shape of refGW series 2} then follows as the latter is invariant under the exchange $(\epsilon_1,\epsilon_2) \mapsto (\epsilon_2,\epsilon_1)$ (which is the Weyl group action related to the full $\GL(2,\bbC)$ symmetry) and therefore can only depend on $\epsilon_-^2$.
++	Assumptions (ii), (iii) and (iv) guarantee that $\epsilon_-$ and $\epsilon_+$ are linearly independent. Hence, by (i) these elements generate $R_{\mgp{T}}$. Moreover, by (iv) the only dependence on $\epsilon_-$ comes from the insertion $\HodgeLambda[g]{\epsilon_1}\,  \HodgeLambda[g]{\epsilon_2}$. The \namecref{lem: shape of refGW series 2} then follows as the latter is invariant under the exchange $(\epsilon_1,\epsilon_2) \mapsto (\epsilon_2,\epsilon_1)$ (which is the Weyl group action related to the full $\GL(2,\bbC)$ symmetry) and therefore can only depend on $\epsilon_-^2$.
+ \end{proof}
+ 
+ If $m>0$ one should in principle expect a dependence on the additional equivariant parameters. %: we observed this for instance in \Cref{exmpl: resolved conifold computation}.
+@@ -1529,7 +1532,7 @@
+ 	Suppose $\beta$ is a rigid curve class in $X$ and the $\mgp{G}$-action on $Z$ is Calabi--Yau. Then, as a formal Laurent series, $\refGWb{Z}{\mgp{G}}{\beta}$ only depends on $\epsilon_1$ and $\epsilon_2$. In other words,
+ 	\begin{equation*}
+ 		\begin{split}
+-			\epsilon_1 \epsilon_2 \, \refGWb{Z}{\mgp{G}}{\beta} \quad \in \quad \bbQ \llbracket \epsilon_-^2 , \epsilon_+^2 \rrbracket_{2g}  \quad \subsetneq \quad \widehat{R}_{\mgp{G},2g}\,.
++			\epsilon_1 \epsilon_2 \, \refGWb{Z}{\mgp{G}}{\beta} \quad \in \quad \bbQ \llbracket \epsilon_-^2 , \epsilon_+^2 \rrbracket  \quad \subsetneq \quad \widehat{R}_{\mgp{G}}\,.
+ 		\end{split}
+ 	\end{equation*}
+ \end{conj}
+@@ -1552,7 +1555,7 @@
+ \end{rmk}
+ 
+ \begin{rmk}
+-From a Gromov--Witten perspective, it does not appear {\it a priori} immediate to conceptually justify  the importance of the Calabi--Yau condition for the action on $Z$ in \Cref{conj: rigidity}. On the other hand, this requirement will become much more natural in relation to the refined GW/PT correspondence presented in \Cref{sec: refined PT-GW}, and indeed the reader familiar with \cite{NO14:membranes} may have been reminded of a similar rigidity phenomenon occurring in K-theoretic Pandharipande--Thomas theory. In particular, in \Cref{sec: rigidity implication} we will see that \cite[Prop.~7.5]{NO14:membranes} implies \Cref{conj: rigidity}, assuming the refined GW/PT correspondence stated in \cref{conj: refined PT GW}. 
++From a Gromov--Witten perspective, it does not appear {\it a priori} immediate to conceptually justify  the importance of the Calabi--Yau condition for the action on $Z$ in \Cref{conj: rigidity}. On the other hand, this requirement will become much more natural in relation to the refined GW/PT correspondence presented in \Cref{sec: refined PT-GW}, and indeed the reader familiar with \cite{NO14:membranes} may have been reminded of a similar rigidity phenomenon occurring in K-theoretic Pandharipande--Thomas theory. In particular, in \Cref{sec: rigidity implication} we will see that \cite[Thm.~7.1]{NO14:membranes} implies \Cref{conj: rigidity}, assuming the refined GW/PT correspondence stated in \cref{conj: refined PT GW} up to some technical assumptions (see \Cref{prop: PT-GW implies rigidity}). 
+ %This observation raises the question whether \Cref{conj: rigidity} is only a shadow of \cref{conj: refined PT GW}, or whether \Cref{conj: rigidity} admits a proof intrinsic to Gromov-Witten theory. 
+ %	
+  Our discussion of refined PT theory in \Cref{sec: refined PT-GW} will also make the rigidity condition for the curve class conceptually more transparent.
+@@ -1697,7 +1700,7 @@
+ \begin{equation*}
+ 	c_1^{\Tmax}(\Kappa) = \epsilon_1 + \epsilon_2 - \textstyle{\sum_i} \displaystyle \alpha_i
+ \end{equation*}
+-in the second row. Passing to the four dimensional Calabi--Yau subtorus $\TCY \subseteq \ker \Kappa$ this weight is set to zero, and in agreement with \Cref{conj: rigidity} the coefficients of the expansion of $\refGWb{Z}{\TCY}{[\bbP^1]}$ only depend on $\epsilon_1$ and $\epsilon_2$. The fact that the term in the second line equally vanishes when passing to a subtorus on which $\epsilon_+=0$ is an instance of \Cref{prop: rigidity unref limit}.
++in the second row. Passing to the four dimensional Calabi--Yau subtorus $\TCY \subseteq \ker \Kappa$ this weight is set to zero, and in agreement with \Cref{conj: rigidity} the coefficients of the expansion of $\refGWb{Z}{\TCY}{[\bbP^1]}$ only depend on $\epsilon_1$ and $\epsilon_2$. The fact that the term in the second line equally vanishes when passing to a subtorus on which $\epsilon_+=0$ is an instance of \Cref{prop: unref limit} (with \Cref{rmk: rigid unref limit}).
+ 
+ Upon restriction to an appropriate three-dimensional subtorus of $\TCY$, we can give a closed-form solution for the equivariant Gromov--Witten generating series of $X$.
+ 
+@@ -1813,7 +1816,7 @@
+ \label{sec: local P1 shifted}
+ The ideas of the proof of \Cref{prop:ResConifold} apply equally well to the equivariant Gromov--Witten theory of the threefold
+ \begin{equation*}
+-	X = \Tot \mc{O}_{\bbP_1}\! (-2) \oplus \mc{O}_{\bbP_1}\!(0)\,.
++	X = \Tot \mc{O}_{\bbP^1}\! (-2) \oplus \mc{O}_{\bbP^1}\!(0)\,.
+ \end{equation*}
+ We again denote by $\TCY$ the Calabi--Yau subtorus of the dense open torus $\Tmax$ acting on $X\times \Aaff{2}$. For conformity, let us write $\epsilon_0$ for the tangent $\TCY$-weight at the origin of the $\Aone$-factor of $X$. Under restriction to appropriate three-dimensional subtori $\mgp{T} \hookrightarrow \TCY$ we are again able to compute the equivariant generating series explicitly.
+ 
+@@ -1930,7 +1933,7 @@
+ 	[\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}}_{\text{$\mgp{T}$}_{\rm F}} \coloneqq \HodgeLambda[g]{\epsilon_1} \, \HodgeLambda[g]{\epsilon_2} \, 
+ 	e^{\text{$\mgp{T}$}_{\rm F}} \big(\mathbf{R}^{1}\pi_* f^* \mc{O}_S(-D)\big) \cap [\Mbar_{g,n}(S,\beta)]^{\vir}
+ \end{equation*}
+-for the virtual fundamental class of stable maps to the extended target $Z$ localised at the cocharacter $\sigma: \Gm_{\mchar{q}_-} \hookrightarrow \mgp{T}_{\rm F} , \, \mchar{q}_- \mapsto (\mchar{q}_-,\mchar{q}_-^{-1})$. We will be especially concerned with the \emph{Nekrasov--Shatahvili limit} of this cycle, i.e.~
++for the virtual fundamental class of stable maps to the extended target $Z$ localised at the cocharacter $\sigma: \Gm_{\mchar{q}_-} \hookrightarrow \mgp{T}_{\rm F} , \, \mchar{q}_- \mapsto (\mchar{q}_-,\mchar{q}_-^{-1})$. We will be especially concerned with the \emph{Nekrasov--Shatashvili limit} of this cycle, i.e.~
+ %by this we mean 
+ the restriction to the inclusion of the first factor
+ \begin{equation*}
+@@ -2050,7 +2053,7 @@
+ %\end{equation*}
+ \begin{equation}
+ 	\label{eq: general vs special fibre}
+-	[\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}} = \rho_{*} [\Mbar_{g,n}(\mc{Z}_0,\beta)]^{\vir_{\sigma}}\,.
++	[\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}}_{\mgp{T}_{\rm F}} = \rho_{*} [\Mbar_{g,n}(\mc{Z}_0,\beta)]^{\vir_{\sigma}}_{\mgp{T}_{\rm F}}\,.
+ \end{equation}
+ We will use the degeneration formula for stable logarithmic maps of Kim, Lho and Ruddat \cite{KLR21:degen} to decompose the cycle on the right-hand side. For purely expository reasons, we will be working with their formula rather than Li's for relative stable maps \cite{Li02:Degen}; both essentially yield the same result \cite{ACFW13:ExpDegenPairs}.
+ 
+@@ -2090,7 +2093,7 @@
+ Pulling this insertion back to the product $\prod_v \Mbar_v$ yields
+ \begin{equation}
+ 	\label{eq: degeneration final}
+-	[\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}} = \sum_{\Gamma} \big(\epsilon_1\epsilon_2(-\epsilon_1-\epsilon_2)\big)^{|E(\Gamma)|} ~ \frac{\prod_e d_e}{m!} \theta_{*} \Delta^! \big(\textstyle{\prod_v} C_v \cap [\Mbar_v]^{\vir}\big)\,,
++	[\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}}_{\mgp{T}_{\rm F}} = \sum_{\Gamma} \big(\epsilon_1\epsilon_2(-\epsilon_1-\epsilon_2)\big)^{|E(\Gamma)|} ~ \frac{\prod_e d_e}{m!} \theta_{*} \Delta^! \big(\textstyle{\prod_v} C_v \cap [\Mbar_v]^{\vir}\big)\,,
+ \end{equation}
+ where we introduce the notation
+ \begin{equation*}
+@@ -2107,7 +2110,7 @@
+ \end{equation*}
+ As a consequence, the only splitting types $\Gamma$ that can contribute non-trivially to
+ \begin{equation*}
+-	\epsilon_2\, [\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}}~\Big\lvert_{\epsilon_2 = 0}
++	\epsilon_2\, [\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}}_{\mgp{T}_{\rm F}}~\Big\lvert_{\epsilon_2 = 0}
+ \end{equation*}
+ must have $h_1(\Gamma)=0$, or in other words, the graph underlying $\Gamma$ must be a tree. Furthermore, in the limit $\epsilon_2=0$, the insertions simplify to
+ \begin{equation*}
+@@ -2119,7 +2122,7 @@
+ where in the top line we used \Cref{lem: Mumfords relation}. We arrive at
+ \begin{equation}
+ 	\label{eq: NS degeneration final}
+-	\epsilon_2[\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}}~ \Big\lvert_{\epsilon_2 = 0} = \sum_{\text{tree type }\Gamma} \big(-\epsilon_1^2\big)^{|E(\Gamma)|} ~ \frac{\prod_e d_e}{m!} \theta_{*} \Delta^! \big( \textstyle{\prod_v} C^{\mr{NS}}_v \cap [\Mbar_v]^{\vir} \big)\,.
++	\epsilon_2[\Mbar_{g,n}(Z,\beta)]^{\vir_{\sigma}}_{\mgp{T}_{\rm F}}~ \Big\lvert_{\epsilon_2 = 0} = \sum_{\text{tree type }\Gamma} \big(-\epsilon_1^2\big)^{|E(\Gamma)|} ~ \frac{\prod_e d_e}{m!} \theta_{*} \Delta^! \big( \textstyle{\prod_v} C^{\mr{NS}}_v \cap [\Mbar_v]^{\vir} \big)\,.
+ \end{equation}
+ 
+ \subsection{Vanishing}
+@@ -2258,9 +2261,9 @@
+ \end{equation}
+ A quick dimension count reveals that for all $v\in V_P(\Gamma)$ the cycle $C^{\mr{NS}}_v \cap [\Mbar_{v}]^{\vir}$ is an element of
+ \begin{equation*}
+-	\Chow^{\mgp{\Gm}}_{|m_v|+|n_v|}(\Mbar_{v})
++	\Chow^{\mgp{\Gm}}_{|m_v|+|n_v|}\big(\Mbar_{v}\big)
+ \end{equation*}
+-times a factor $\epsilon_1^{-1}$. Therefore, since $\Mbar_{0,m_v \cup n_v}\times D_0$ is of dimension $\min(|m_v|+|n_v| - 2,1)$, the pushforward
++times a factor $\epsilon_1^{-1}$. Therefore, since $\Mbar_{0,m_v \cup n_v}\times D_0$ is of dimension $\max(|m_v|+|n_v| - 2,1)$, the pushforward
+ \begin{equation*}
+ 	\psi_{v*} \big(C^{\mr{NS}}_v \cap [\Mbar_{v}]^{\vir}\big)
+ \end{equation*}
+@@ -2476,16 +2479,16 @@
+ We will write $\mathfrak{e}_i$ for the idempotents of the algebra \eqref{eq:qprod}, and $\mathfrak{f}_i$ for their normalised counterparts:
+ %
+ \[
+-\mathfrak{e}_i \circ_t \mathfrak{e}_j = \delta_{ij} \mathfrak{e}_i, \quad \mathfrak{f}_i \coloneqq \frac{\mathfrak{e}_i}{\sqrt{\Delta_i}}\,,
++\mathfrak{e}_i \circ_t \mathfrak{e}_j = \delta_{ij} \mathfrak{e}_i, \quad \mathfrak{f}_i \coloneqq \sqrt{\Delta_i}\mathfrak{e}_i\,,
+ \]
+ %
+-where \[\Delta_i \coloneqq \eta(\mathfrak{e}_i,\mathfrak{e}_i)\,.\] 
++where \[\Delta_i \coloneqq \eta(\mathfrak{e}_i,\mathfrak{e}_i)^{-1}\,.\] 
+ %Let $\nabla^{(\eta)}$ be the Levi--Civita connection associated to the Poincar\'e pairing on $\Chow^{}_{\Tmax}(Z)$, canonically viewed as a flat metric on $TB_{\cQ_{\rm cf}} \simeq \cV_{\Tmax} \times B_{\cQ_{\rm cf}}$. By associativity of the quantum product \cite{Dubrovin:1994hc}, there is a pencil of flat connections on $T^*B_{\cQ_{\rm cf}}$,
+ %
+ Formal flat sections $\chi \in \bbC(\!(z)\!) \otimes \Omega^1(\cV_{\Tmax})$ of the Dubrovin connection
+ %on $T^*B_{\cQ_{\rm cf}}$,
+ \[
+-\nabla^{(z)}_X \chi \coloneqq  \dd -z^{-1} X \circ_t \chi =0\,,
++\nabla^{(z)}_X \chi \coloneqq  \dd \chi -z^{-1} X \circ_t \chi =0\,,
+ \label{eq:defconn1}
+ \]
+ %parametrised by $z \in \bbP^1$.  \eqref{eq:defconn1}, $\nabla^{(z)} \chi =0$,
+@@ -2550,7 +2553,7 @@
+ \mathsf{J}(\cQ,z)  
+  %\coloneqq  J(t,z)\Big|_{t_2=0} 
+ =z \cQ^{H/z}
+-\l(\mathbf{1}+ \sum_{d,k} \cQ^d H^a \eta^{ab} \bra
++\l(\mathbf{1}+ \sum_{a,b,d} \cQ^d H^a \eta^{ab} \bra
+ \frac{H^b}{z(z-\psi_{1})}\ket_{0,1,d}^Z\r).
+ \label{eq:Jred}
+ \eeq
+@@ -2640,7 +2643,7 @@
+ I^{[0]}_{1} = 0\,, \quad
+ I^{[1]}_{1} = -3 e_1(\alpha)\sum_{d=1}^{\infty} \frac{ (3 d-1)! H_d (-y)^d}{(d!)^3}\,, \]
+ \beq
+-I^{[2]}_{1} = -\frac{\log^2 y}{2}+ \log y~ I_{1}^{[0]} +9\sum_{d=1}^{\infty}  \frac{(3 d-1)! \left(\psi ^{(0)}(3 d)-\psi^{(0)}(d+1) \right)}{(d!)^3}(-y)^d\,,
++I^{[2]}_{1} = -\frac{\log^2 y}{2}+ \log y~ I_{0}^{[1]} +9\sum_{d=1}^{\infty}  \frac{(3 d-1)! \left(\psi ^{(0)}(3 d)-\psi^{(0)}(d+1) \right)}{(d!)^3}(-y)^d\,,
+ \label{eq:Ian}
+ \eeq
+ % 
+@@ -2688,7 +2691,7 @@
+ E = \frac{1}{2} \l(D- X\r)\,.
+ \label{eq:DErel}
+ \eeq 
+-In particular, $\bbQ[A,D,E,F,X] \simeq \bbQ[A^{\pm 1}, F,X] \simeq \bbQ[A,D,F]$.
++In particular, $\bbQ[A,D,E,F,X] \simeq \bbQ[A,D,F]$, which is a subring of $\bbQ[A^{\pm 1}, F,X]$.
+ \label{lem:modrel}
+ \end{lem}
+ \begin{proof}[Proof (sketch)]
+@@ -2851,6 +2854,21 @@
+ \label{prop:algindABC}
+ \end{prop}
+ %
++Inverting the definitions of $B$ and $C$ with the help of \eqref{eq:DErel}, we have
++\beq
++X = \frac{A^3}{C}\,, \qquad F+\frac{1}{3} = \frac{A(B+A^2)}{6C}\,.
++\label{eq:XFABC}
++\eeq
++Moreover, writing $\partial_\tau \coloneqq \frac{1}{2\pi \ri}\frac{\dd}{\dd \tau}$, the Ramanujan-type identities
++\beq
++\partial_\tau A = \frac{A(B+A^2)}{6}-\frac{C}{3}\,, \qquad \partial_\tau B = \frac{B^2-A^4}{6}\,, \qquad \partial_\tau C = \frac{C(B-A^2)}{2}
++\label{eq:ramanujan}
++\eeq
++hold, and $\cQ \partial_\cQ = C^{-1}\partial_\tau$ \cite[Lem.~4.5]{BFGW21:HAE}. Writing $\bbQ[A,B,C]_m$ for the weight $m$ homogeneous component of $\bbQ[A,B,C]$, the operator $\partial_\tau$ maps $C^{-n}\bbQ[A,B,C]_m$ to $C^{-n}\bbQ[A,B,C]_{m+2}$, since $\partial_\tau C$ is divisible by $C$. Therefore \cite[Lem.~4.6]{BFGW21:HAE}
++\beq
++\cQ \partial_\cQ \l(C^{-n}\bbQ[A,B,C]_m\r) \subseteq C^{-n-1}\bbQ[A,B,C]_{m+2}\,.
++\label{eq:QdQclosure}
++\eeq
+ %As a corollary of \cref{lem:modrel}, the ring of polynomials over $\bbC$ in the variables $A$, $B$, $D$, $E$ and $X$ is isomorphic to the polynomial ring $\bbC[A,B,X]$.
+ \begin{comment}  
+ \noindent From \eqref{eq:ADEFXdef} we have 
+@@ -2889,7 +2907,8 @@
+ %To compute $S^{[\infty]}_{a,2}$, we 
+ 
+ \subsubsection{Generators at \texorpdfstring{$z=0$}{z=0}}
+-Expand now the small J-function \[\mathsf{J}(\cQ,z) \coloneqq \sum_{i=0}^{2}\mathsf{J}_i(\cQ,z) \mathfrak{f}_i\] along the basis of normalised idempotents of the quantum product. Its coefficients
++Consider now the components of the small J-function \[
++\mathsf{J}_i(\cQ,z) \coloneqq \mathsf{J}(\cQ,z)\Big|_{H=-\alpha_i} \] along the basis of equivariant cohomology classes of $\Tmax$-fixed points. They
+ %
+ %\[
+ %\mathsf{J}_i(\cQ,z)  \coloneqq  \mathsf{J}(\cQ,z)\big|_{H=-\alpha_i}\,. 
+@@ -2940,7 +2959,7 @@
+ where $Y_i(y)$ is the root of the polynomial $\widehat{\LL}$ in \eqref{eq:LLMM} satisfying $Y_i(0)=-\alpha_i$. At $\cO(z)$, we find
+ %
+ \beq
+-\mathsf{S}^{[0]}_{i,0} = c W_i^{-1/2}
++\mathsf{S}^{[0]}_{i0} = c W_i^{-1/2}
+ \label{eq:Ji0}
+ \eeq 
+ %
+@@ -3047,7 +3066,7 @@
+ Write now
+ %
+ \[
+-\mathsf{S}(H^b) =  H^b  + \sum_{a=0}^2 \frac{\mathfrak{s}^a_{b}}{z} + \cO\l(\frac{1}{z^2}\r)
++\mathsf{S}(H^b) =  H^b  + \sum_{a=0}^2 \frac{\mathfrak{s}^a_{b} \, H^a}{z} + \cO\l(\frac{1}{z^2}\r)
+ \] 
+ %
+ for the leading terms of the expansion of \eqref{eq:fundsol} at $z=\infty$. In particular, by \eqref{eq:SJ1}, \eqref{eq:SJ2} and \eqref{eq:J=I}, we get
+@@ -3116,7 +3135,7 @@
+ \eeq
+ %
+ %The WDVV equations and \eqref{eq:duidta} express the remaining structure constants $\mathsf{C}^c_{ab}$ in terms of $\{\tilde \partial_{t_d} u_i\}$, which can in turn be computed as follows.
+-The claimed expressions for $\Phi_{ai}$ in \eqref{eq:phi} are implied by \eqref{eq:uili} together with the $(a,b)=(0,b)$ and $(a,b)=(1,2)$ cases of \eqref{eq:duidta}. The inverse change-of-basis matrix, $(\Phi)^{-1}_{ia}$, is directly computed using \eqref{eq:delta1} to be
++The claimed expressions for $\Phi_{ai}$ in \eqref{eq:phi} are implied by \eqref{eq:uili} together with the $(a,b)=(0,b)$ and $(a,b)=(1,2)$ cases of \eqref{eq:duidta}. The inverse change-of-basis matrix, $(\Phi^{-1})_{ia}$, is directly computed using \eqref{eq:delta1} to be
+ \[
+  (\Phi^{-1})_{i0}  =  \frac{e_3(\alpha)}{W_i}\,, \quad
+  %& \nn \\& 
+@@ -3327,7 +3346,7 @@
+ \end{prop}
+ %
+ \begin{proof}
+-The first part of the Proposition is a straightforward substitution of \eqref{eq:asympR} into \eqref{eq:SHb}, using \eqref{eq:ADEFXdef}. The second part follows from \eqref{eq:Sain} together with \cref{lem:modrel,lem:lho}.
++The first part of the Proposition is a straightforward substitution of \eqref{eq:asympS} into \eqref{eq:SHb}, using \eqref{eq:ADEFXdef}. The second part follows from \eqref{eq:Sain} together with \cref{lem:modrel,lem:lho}.
+ \end{proof}
+ 
+ 
+@@ -3472,9 +3491,9 @@
+ \medskip
+ 
+ \begin{description}[itemsep = 0.5em]
+-\item[(Asymptotics)] \smash{$R_j(t,z)(H^a) =\sum_{a,i} R_{aj}(t, z)\re^{u_j/z}$}, with \smash{$R_{aj} \in \bbC\llbracket z\rrbracket$} for fixed $t$\,;
++\item[(Asymptotics)] \smash{$R_j(t,z)(H^a) =R_{aj}(t, z)\re^{u_j/z}$}, with \smash{$R_{aj} \in \bbC\llbracket z\rrbracket$} for fixed $t$\,;
+ \item[(Flatness)] \smash{$\nabla_Z^{(\eta,z)} R_j = 0$}\,;
+-\item[(Symplecticity)] \smash{$\sum_j R_{ai}(t,z) \eta^{ab} R_{bj}(t, -z) = \delta_{ij}$}\,,
++\item[(Symplecticity)] \smash{$\sum_{a,b} R_{ai}(t,z) \eta^{ab} R_{bj}(t, -z) = \delta_{ij}$}\,,
+ \item[(Normalisation)] the small quantum cohomology restriction $R(t) \to \mathsf{R}(\cQ)$ satisfies
+ %
+ \[ 
+@@ -3485,7 +3504,7 @@
+ where
+ \[ 
+ c_j(z) \coloneqq \sum_{n=1}^\infty 
+-p_{2n-1}\l(w_j^{(0)},\dots, w_j^{(4)}\r) \frac{B_{2n} z^{2n-1}}{2n(2n-1)}\,,
++p_{2n-1}\l(\frac{1}{w_j^{(0)}},\dots, \frac{1}{w_j^{(4)}}\r) \frac{B_{2n} z^{2n-1}}{2n(2n-1)}\,,
+ \] 
+ %
+ and $p_n(x_1, \dots, x_k) = \sum_{i=1}^k x_i^n$ is the $n^{\rm th}$ Newton polynomial in $k$ variables.
+@@ -3549,7 +3568,7 @@
+ %
+ In particular, from \eqref{eq:SHb}, we have
+ \beq
+-\mathsf{R}_{1j}  = \frac{z \theta_y R_{0j}+Y_j R_{0j}}{A}\,, \quad
++\mathsf{R}_{1j}  = \frac{z \theta_y \mathsf{R}_{0j}+Y_j \mathsf{R}_{0j}}{A}\,, \quad
+ \mathsf{R}_{2j} =  \frac{z \theta_y\mathsf{R}_{1j}+ (Y_j - e_1(\alpha )E(y) )\mathsf{R}_{1j} }{D(y)}\,.  
+ \label{eq:RHb}
+ \eeq
+@@ -3718,7 +3737,9 @@
+ %$\mathsf{D}_i(z)=\sum_{n \geq 2} D_{i,n} z^{n}$ by
+ %
+ \beq
+-\mathsf{D}_{i,n}(z) \coloneqq [z^{n-1}] \l(\Psi_{0i}-\sum_j \mathsf{R}(-z)_{0i}\r)\,, \quad \mathsf{L}_{i,n}^{[a]} \coloneqq [z^n] \mathsf{R}_{ia} (-1)^n\,,
++\mathsf{D}_{i,n} \coloneqq [z^{n-1}] \l(\Psi_{0i}-
++%\sum_j 
++\mathsf{R}_{0i}(-z)\r)\,, \quad \mathsf{L}_{i,n}^{[a]} \coloneqq [z^n] \mathsf{R}_{ai} (-z)\,,
+ \label{eq:leafterms}
+ \eeq 
+ %
+@@ -3751,7 +3772,7 @@
+ %with $\mathsf{a}(v)=(i \in \{0,1,m\}$, and for $\mathsf{A}$ an ancestor set write $\mathsf{A}(v)=(n_1, \dots, n_{|\cE_\Gamma|})$. 
+ we define 
+ \[
+-\mathrm{Cont}(v) = (3 W_i)^{\frac{2\mathsf{g}(v)-2+\mathsf{|H(v)|}}{2}} %\sum_{d_1, \dots, d_{|\DD(v)|}}\sum_{l_1, \dots, l_{|\mathsf{L}(v)|}}  
++\mathrm{Cont}(v) = \Delta_{\mathsf{q}(v)}^{\frac{2\mathsf{g}(v)-2+|\mathcal{H}(v)|}{2}} %\sum_{d_1, \dots, d_{|\DD(v)|}}\sum_{l_1, \dots, l_{|\mathsf{L}(v)|}}  
+ %\prod_{d \in \DD(v)} T_{\mathsf{q}(v),\mathsf{a}(d)} 
+ \int_{[\Mbar_{\mathsf{g}(v), |\HH(v)|}]}\prod_{k=1}^{|\HH(v)|} 
+ \psi_k^{\mathsf{a}(h_k)}\,.
+@@ -3765,11 +3786,11 @@
+ %\mathrm{Cont}_\mathsf{A}(e) = E^{\mathsf{q}(\mathsf{v}_1(e)),\mathsf{q}(\mathsf{v}_2(e))}_{\mathsf{B}_1^{(\mathsf{A})}(e),  \mathsf{B}_2^{(\mathsf{A})}(e)} \,.
+ %\]
+ %
+-Recalling that $\Delta_i^{-1}=\epsilon_1 \epsilon_2 (3 W_i)$ from \eqref{eq:delta1}, the Givental--Teleman reconstruction formula then states that, for $2g+n-2>0$,
++Recalling that $\Delta_i=3\epsilon_1 \epsilon_2 W_i$ from \eqref{eq:phi}, the Givental--Teleman reconstruction formula then states that, for $2g+n-2>0$,
+ %
+ \beq 
+ \bra \! \bra H^{a_1}, \dots, H^{a_n} \ket \! \ket_{g,n}^Z =
+-\sum_{\Gamma \in \cG^{[2]}_{g,n}} \frac{(\epsilon_1 \epsilon_2)^{g-1}}{|\mathrm{Aut}(\Gamma)|} 
++\sum_{\Gamma \in \cG^{[2]}_{g,n}} \frac{1}{|\mathrm{Aut}(\Gamma)|} 
+ \prod_{e\in \cE_\Gamma}\mathrm{Cont}(e)
+ \prod_{h\in \LL_\Gamma 
+ \sqcup \DD_\Gamma
+@@ -3815,7 +3836,7 @@
+ \begin{equation}
+ \begin{split}
+ \sum_{a,b} \mathsf{R}_{ai}(-z) \eta^{ab} \mathsf{R}_{bj}(-w) & =
+-\frac{\epsilon _1 \epsilon _2 e_3(\alpha)}{9} \mathsf{R}_{0i}(-z) \mathsf{R}_{0j}(-w) -3 \epsilon _1 \epsilon _2 \big( \mathsf{R}_{1i}(-z) \mathsf{R}_{2j}(-w)+ \mathsf{R}_{2i}(-z) \mathsf{R}_{1j}(-w)\big) 
++3\epsilon _1 \epsilon _2 e_3(\alpha) \mathsf{R}_{0i}(-z) \mathsf{R}_{0j}(-w) -3 \epsilon _1 \epsilon _2 \big( \mathsf{R}_{1i}(-z) \mathsf{R}_{2j}(-w)+ \mathsf{R}_{2i}(-z) \mathsf{R}_{1j}(-w)\big) 
+ \\ 
+ &- 3\epsilon _1 \epsilon _2 e_1(\alpha) \mathsf{R}_{1i}(-z) \mathsf{R}_{1j}(-w) 
+ %\nn \\ & \coloneqq a_{00} + a_{12} + a_{11}
+@@ -3870,8 +3891,8 @@
+ \item the modular anomaly equation holds,
+ %
+ \beq
+-\frac{X}{A^2}
+-\frac{\de \GW^{\mgp{T}_{\rm R}}_g}{\de F}=\frac{\epsilon_1 \epsilon_2}{2} \l[(\cQ \partial_\cQ)^2 \mathsf{GW}^{\mgp{T}_{\rm R}}_{g-1} + \cQ^2 \sum_{g'=1}^{g-1}   \de_\cQ \mathsf{GW}^{\mgp{T}_{\rm R}}_{g'} \, \partial_\cQ \mathsf{GW}^{\mgp{T}_{\rm R}}_{g-g'}\r]\,,
++\frac{2X}{3A^2}
++\frac{\de \GW^{\mgp{T}_{\rm R}}_g}{\de F}=\epsilon_1 \epsilon_2 \l[(\cQ \partial_\cQ)^2 \mathsf{GW}^{\mgp{T}_{\rm R}}_{g-1} + \cQ^2 \sum_{g'=1}^{g-1}   \de_\cQ \mathsf{GW}^{\mgp{T}_{\rm R}}_{g'} \, \partial_\cQ \mathsf{GW}^{\mgp{T}_{\rm R}}_{g-g'}\r]\,,
+ \label{eq:HAEF}
+ \eeq
+ %
+@@ -3911,44 +3932,46 @@
+ \[
+ \frac{X}{A^2}
+ \frac{\de \GW_g^{\mgp{T}_{\rm R}}}{\de F} = \sum_{\Gamma \in \cG^{[2]}_{g,0}}
+-\frac{(\epsilon_1 \epsilon_2)^{g-1}}{|\mathrm{Aut}(\Gamma)|}  \sum_{e\in \cE_\Gamma} \frac{X}{A^2} \frac{\de \mathrm{Cont}(e)}{\partial F}  \prod_{f \neq e\in \cE_\Gamma}\mathrm{Cont}(f) \prod_{h\in \LL_\Gamma \sqcup \DD_\Gamma}\mathrm{Cont}(h) \prod_{v\in \cV_\Gamma}  \mathrm{Cont}(v)\,. 
++\frac{1}{|\mathrm{Aut}(\Gamma)|}  \sum_{e\in \cE_\Gamma} \frac{X}{A^2} \frac{\de \mathrm{Cont}(e)}{\partial F}  \prod_{f \neq e\in \cE_\Gamma}\mathrm{Cont}(f) \prod_{h\in \LL_\Gamma \sqcup \DD_\Gamma}\mathrm{Cont}(h) \prod_{v\in \cV_\Gamma}  \mathrm{Cont}(v)\,. 
+ \]
+ %
+-Now, from \cref{prop:fingenR}, we have that 
++Only the edge factors depend on $F$ by \cref{prop:fingenTLE}. By the second line of \cref{prop:fingenR}, $F$ enters $\mathsf{R}^{[2]}_{i,n+1}$ only through the term $-(F/Y_i)\mathsf{R}^{[1]}_{i,n}$, which arises from the $z\theta_y$-derivative of $1/A$ in \eqref{eq:RHb}. Hence
+ %
+ \beq 
+-\de_F \mathsf{R}_{i,n}^{[2]} = -\frac{\mathsf{R}_{i,n}^{[1]}}{6 Y_i}\,,
++\de_F \mathsf{R}_{i,n}^{[2]} = -\frac{\mathsf{R}_{i,n-1}^{[1]}}{Y_i}\,, \qquad \de_F \mathsf{R}_{2j}(z) = -\frac{z\,\mathsf{R}_{1j}(z)}{D}\,,
+ \label{eq:dFR}
+ \eeq 
+ %
+-and therefore, from \eqref{eq:edgeterm} and denoting $i_k=\mathsf{q}(\mathsf{v}(h_k))$, $n_k=\mathsf{a}(h_k)$,
++where the second equality follows from the first by \eqref{eq:asympR}. Since $\eta^{22}=0$ and $\eta^{12}=\eta^{21}=-3\epsilon_1\epsilon_2$ by \eqref{eq:etaflat}, the $F$-derivative of the numerator of \eqref{eq:edgeterm} is
++\[
++3\epsilon_1\epsilon_2 \l( \mathsf{R}_{1i}(-z)\, \de_F\mathsf{R}_{2j}(-w) + \de_F\mathsf{R}_{2i}(-z)\, \mathsf{R}_{1j}(-w) \r) = \frac{3\epsilon_1\epsilon_2 (z+w)}{D}\, \mathsf{R}_{1i}(-z)\mathsf{R}_{1j}(-w)\,.
++\]
++The factor $z+w$ cancels against the denominator of \eqref{eq:edgeterm}. Using $D=X/A^2$, \eqref{eq:asympR}, and $\mathsf{L}^{[1]}_{i,n}=(-1)^n Y_i \mathsf{R}^{[1]}_{i,n}/A$ from the proof of \cref{prop:fingenTLE}, we obtain
+ %
+ \beq 
+-\de_F \mathrm{Cont}(e) =
+-\de_F \mathsf{E}^{i_1, i_2}_{n_1+1, n_2+1}=\frac{(-1)^{n_1+n_2} Y_i Y_j \mathsf{R}^{[1]}_{i_1,n_1} \mathsf{R}^{[1]}_{i_2,n_2}%\epsilon_1 \epsilon_2
+-}{X}\,. 
++\de_F \mathsf{E}^{i, j}_{n, m}=3\epsilon_1\epsilon_2 \,\frac{(-1)^{n+m} Y_i Y_j \mathsf{R}^{[1]}_{i,n} \mathsf{R}^{[1]}_{j,m}}{X}\,, \qquad \frac{X}{A^2}\,\de_F \mathsf{E}^{i, j}_{n, m} = 3\epsilon_1\epsilon_2\, \mathsf{L}^{[1]}_{i,n}\mathsf{L}^{[1]}_{j,m}\,.
+ \label{eq:dFedge}
+ \eeq 
+ %
+-From \eqref{eq:asympR} and \eqref{eq:dFedge}, acting with $\de_F$ converts edge terms corresponding to $e \in \Gamma$ to insertions of the hyperplane class at the corresponding new markings in $\Gamma^0_e$ (if $\Gamma \setminus e$ is connected) or $\Gamma^i_e$, $i=1,2$ (if $\Gamma \setminus e$ is disconnected). As these are not ordered, when we sum over labellings we need to compensate for that by a symmetry factor of 2. Explicitly, substituting \eqref{eq:dFedge} into \eqref{eq:gtH}, decomposing the resulting sum over graphs according to the connectedness of $\Gamma \setminus e$, and using \eqref{eq:gtH} for each of these separately, we have
++Therefore, acting with $(X/A^2)\de_F$ on the edge factor of an edge $e=\{h_1,h_2\}$ of $\Gamma$ replaces it with $3\epsilon_1\epsilon_2$ times the product of the marking factors of two new marked leaves carrying the hyperplane class, with the same ancestor labels $\mathsf{a}(h_1)$, $\mathsf{a}(h_2)$ and attached to the same vertices. The resulting graph is $\Gamma^0_e$ (if $\Gamma \setminus e$ is connected) or $\Gamma^i_e$, $i=1,2$ (if $\Gamma \setminus e$ is disconnected). The vertex factors are unchanged, since $|\HH(v)|$ is unchanged for every vertex. As the two new markings are not ordered, when we sum over labellings we need to compensate for that by a symmetry factor of 2. Explicitly, substituting \eqref{eq:dFedge} into \eqref{eq:gtH}, decomposing the resulting sum over graphs according to the connectedness of $\Gamma \setminus e$, and using \eqref{eq:gtH} for each of these separately, we have
+ %
+ %
+ \bea 
+-& &\frac{X}{A^2}
+- \frac{\de \GW_g^{\mgp{T}_{\rm R}}}{\de F} = \frac{X}{2A^2} \Bigg[\sum_{\Gamma \in \cG^{[2]}_{g-1,2}}
+-\frac{(\epsilon_1 \epsilon_2)^{g-1}}{|\mathrm{Aut}(\Gamma)|}  \sum_{e\in \cE_\Gamma} \frac{\de \mathrm{Cont}(e)}{\partial F} \prod_{f \neq e\in \cE_\Gamma}\mathrm{Cont}(f) \prod_{h\in \LL_\Gamma \sqcup \DD_\Gamma}\mathrm{Cont}(h) \prod_{v\in \cV_\Gamma} 
++& &\frac{2X}{3A^2}
++ \frac{\de \GW_g^{\mgp{T}_{\rm R}}}{\de F} = \epsilon_1 \epsilon_2 \Bigg[\sum_{\Gamma \in \cG^{[2]}_{g-1,2}}
++\frac{1}{|\mathrm{Aut}(\Gamma)|}  \sum_{e\in \cE_\Gamma} \frac{\de \mathrm{Cont}(e)}{\partial F} \prod_{f \neq e\in \cE_\Gamma}\mathrm{Cont}(f) \prod_{h\in \LL_\Gamma \sqcup \DD_\Gamma}\mathrm{Cont}(h) \prod_{v\in \cV_\Gamma} 
+ %\int_{[\overline{M}_{\mathsf{g}(v), |\HH(v)|}]} 
+ \mathrm{Cont}(v) \nn \\
+ & & +   \sum_{g'=1}^{g-1} \sum_{\Gamma \in \cG^{[2]}_{g',1}} \sum_{\Gamma \in \cG^{[2]}_{g-g',1}}
+-\frac{(\epsilon_1 \epsilon_2)^{g-1}}{|\mathrm{Aut}(\Gamma)|}  \sum_{e\in \cE_\Gamma} \frac{\de \mathrm{Cont}(e)}{\partial F} \prod_{f \neq e\in \cE_\Gamma}\mathrm{Cont}(f) \prod_{h\in \LL_\Gamma \sqcup \DD_\Gamma}\mathrm{Cont}(h) \prod_{v\in \cV_\Gamma} 
++\frac{1}{|\mathrm{Aut}(\Gamma)|}  \sum_{e\in \cE_\Gamma} \frac{\de \mathrm{Cont}(e)}{\partial F} \prod_{f \neq e\in \cE_\Gamma}\mathrm{Cont}(f) \prod_{h\in \LL_\Gamma \sqcup \DD_\Gamma}\mathrm{Cont}(h) \prod_{v\in \cV_\Gamma} 
+ %\int_{[\overline{M}_{\mathsf{g}(v), |\HH(v)|}]} 
+ \mathrm{Cont}(v)\Bigg]\nn \\
+ %\eea
+ %\bea
+ & & =
+-\frac{\epsilon_1 \epsilon_2}{2} \l(\bra \! \bra H,H \ket \! \ket^Z_{g-1,2} + \sum_{g'=1}^{g-1} \bra \! \bra H \ket \! \ket^Z_{g',1}\bra \! \bra H \ket \! \ket^Z_{g-g',1}\r)\bigg|_{t_a=I_0^{[a]}} \nn \\
++\epsilon_1 \epsilon_2 \l(\bra \! \bra H,H \ket \! \ket^Z_{g-1,2} + \sum_{g'=1}^{g-1} \bra \! \bra H \ket \! \ket^Z_{g',1}\bra \! \bra H \ket \! \ket^Z_{g-g',1}\r)\bigg|_{t_a=I_0^{[a]}} \nn \\
+ & & =
+-\frac{\epsilon_1 \epsilon_2}{2} \l[(\cQ \partial_\cQ)^2 \mathsf{GW}^{\mgp{T}_{\rm R}}_{g-1} + \cQ^2 \sum_{g'=1}^{g-1}   \de_\cQ \mathsf{GW}^{\mgp{T}_{\rm R}}_{g'}  \, \partial_\cQ \mathsf{GW}^{\mgp{T}_{\rm R}}_{g-g'}\r]\,,
++\epsilon_1 \epsilon_2 \l[(\cQ \partial_\cQ)^2 \mathsf{GW}^{\mgp{T}_{\rm R}}_{g-1} + \cQ^2 \sum_{g'=1}^{g-1}   \de_\cQ \mathsf{GW}^{\mgp{T}_{\rm R}}_{g'}  \, \partial_\cQ \mathsf{GW}^{\mgp{T}_{\rm R}}_{g-g'}\r]\,,
+ \eea 
+ %
+ where in the last line we have used the Divisor Axiom. By the first part of the theorem, the identity holds as an equality in $A^{-2}G_{\mgp{T}_{\rm R}}[F]$. 
+@@ -3979,7 +4002,7 @@
+ \begin{thm}
+ %\ben
+ %\item 
+-For $k+g \geq 2$, the refined generating series are weight $0$, depth $3g+3k-3$ quasi-modular functions of $\Gamma_1(3)$,
++For $k+g \geq 2$, the refined generating series are weight $0$ quasi-modular functions of $\Gamma_1(3)$ of depth at most $3g+3k-3$,
+ %
+ \[ 
+ \mathscr{F}_{k,g} \in \bbQ[X^{\pm 1}][ F]\subset \mathfrak{QMod}^{[0,3g+3k-3]}(\Gamma_1(3))\,.
+@@ -3989,8 +4012,8 @@
+ Moreover, the refined modular anomaly equation holds,
+ %
+ \[
+-\frac{X}{A^2}
+-\frac{\de \mathscr{F}_{k,g}}{\de F}=\frac{1}{2} (\cQ \partial_\cQ)^2 \mathscr{F}_{k,g-1} + \frac{\cQ^2}{2} \sum_{\substack{0\leq k' \leq k\,, 0 \leq g' \leq g \\(0,0)\neq (k',g')\neq (k,g) }}   \de_\cQ \mathscr{F}_{k',g'} \, \partial_\cQ \mathscr{F}_{k-k',g-g'}\,,
++\frac{2X}{3A^2}
++\frac{\de \mathscr{F}_{k,g}}{\de F}=(\cQ \partial_\cQ)^2 \mathscr{F}_{k,g-1} + \cQ^2 \sum_{\substack{0\leq k' \leq k\,, 0 \leq g' \leq g \\(0,0)\neq (k',g')\neq (k,g) }}   \de_\cQ \mathscr{F}_{k',g'} \, \partial_\cQ \mathscr{F}_{k-k',g-g'}\,,
+ \]
+ %
+ as an identity in $A^{-2}\,\bbQ[X^{\pm 1},F]$.
+@@ -4022,14 +4045,14 @@
+ %
+ \beq 
+ \GW^{\mgp{T}_{\rm F}}_g = (\epsilon_1 \epsilon_2)^{g-1}
+-\sum_{n=1-g}^{g-1}
++\sum_{n=-g}^{g}
+ \GW^{\mgp{T}_{\rm F}}_{g,n} (\epsilon_1/\epsilon_2)^n\,, \quad \GW^{\mgp{T}_{\rm F}}_{g,n}\in \bbQ\llbracket\cQ\rrbracket\,.
+ \label{eq:GWLpol}
+ \eeq 
+ %
+ %As \eqref{eq:gwref} is symmetric under $\epsilon_1 \leftrightarrow \epsilon_2$, we have $\GW^{\mgp{T}_{\rm F}}_{g,n}=\GW^{\mgp{T}_{\rm F}}_{g,-n}$. 
+ By properness of the $\mgp{T}_{\rm F}$-fixed locus $\Mbar^{\mgp{T}_{\rm F}}_{g,0}(Z,
+-    d [H])$, the equivariant GW generating function  for the maximal torus, $\GW^{\Tmax}_g$,
++    d [H])$ and \cref{lem: GW contravariance}, the equivariant GW generating function  for the maximal torus, $\GW^{\Tmax}_g$,
+ is a regular function of the weights along the diagonal \eqref{eq:diagweights}; and as argued below \eqref{eq:diagweights}, the fibrewise action is in the closure of the set of rational weights in \cref{def:adm}. Therefore, by continuity, \cref{thm:haegen}(i) extends to the fibrewise torus:
+ %
+ \beq 
+@@ -4071,16 +4094,16 @@
+ Expanding  \eqref{eq:HAEF} in $\epsilon_1 \epsilon_2$ and $\epsilon_1/\epsilon_2$ (respectively, $\epsilon_1 \epsilon_2$ and $\epsilon_1+\epsilon_2$), we obtain
+ %
+ \[
+-\frac{X}{A^2}
+-\frac{\de \GW^{\mgp{T}_{\rm F}}_{g,n}}{\de F}=\frac{1}{2} (\cQ \partial_\cQ)^2 \GW^{\mgp{T}_{\rm F}}_{g-1,n} + \frac{\cQ^2}{2} \sum_{\substack{0\leq n' \leq n\,, 0 \leq g' \leq g \\(0,0)\neq (g',n')\neq (g,n) }}   \de_\cQ \GW^{\mgp{T}_{\rm F}}_{g',n'} \, \partial_\cQ \GW^{\mgp{T}_{\rm F}}_{g-g',n-n'}\,,
++\frac{2X}{3A^2}
++\frac{\de \GW^{\mgp{T}_{\rm F}}_{g,n}}{\de F}= (\cQ \partial_\cQ)^2 \GW^{\mgp{T}_{\rm F}}_{g-1,n} + \cQ^2 \sum_{\substack{|n'| \leq g'\,, |n-n'| \leq g-g'\,, 0 \leq g' \leq g \\(0,0)\neq (g',n')\neq (g,n) }}   \de_\cQ \GW^{\mgp{T}_{\rm F}}_{g',n'} \, \partial_\cQ \GW^{\mgp{T}_{\rm F}}_{g-g',n-n'}\,,
+ \label{eq:HAEFdiag}
+ \]
+ %
+ and
+ %
+ \[
+-\frac{X}{A^2}
+-\frac{\de \mathscr{F}_{k,g}}{\de F}=\frac{1}{2} (\cQ \partial_\cQ)^2 \mathscr{F}_{k,g-1} + \frac{\cQ^2}{2} \sum_{(0,0)\neq (k',g')\neq (k,g) }   \de_\cQ \mathscr{F}_{k',g'} \, \partial_\cQ \mathscr{F}_{k-k',g-g'}\,,
++\frac{2X}{3A^2}
++\frac{\de \mathscr{F}_{k,g}}{\de F}= (\cQ \partial_\cQ)^2 \mathscr{F}_{k,g-1} + \cQ^2 \sum_{(0,0)\neq (k',g')\neq (k,g) }   \de_\cQ \mathscr{F}_{k',g'} \, \partial_\cQ \mathscr{F}_{k-k',g-g'}\,,
+ \label{eq:HAEFref}
+ \]
+ %
+@@ -4218,7 +4241,7 @@
+ \[
+ \cI(z) \coloneqq \int_{\Gamma} \re^{-\frac{\phi(q)}{z}} \gamma(q) \dd^n q
+ \]
+-where $z>0$ and $\Gamma\subset \bbC^n$ be the union of the negative gradient flow lines of $\mathrm{Re}(\phi)$ emerging from $q^{\rm cr}$: by the Cauchy--Riemann equations, this is an $n$-dimensional contour. In the sense of Poincar\'e expansions (i.e.~neglecting exponentially sub-leading terms), the asymptotic behaviour of $\omega(z)$ as $z\to 0^+$ can be computed by the classical Laplace method: we have
++where $z>0$ and $\Gamma\subset \bbC^n$ be the union of the negative gradient flow lines of $\mathrm{Re}(\phi)$ emerging from $q^{\rm cr}$: by the Cauchy--Riemann equations, this is an $n$-dimensional contour. In the sense of Poincar\'e expansions (i.e.~neglecting exponentially sub-leading terms), the asymptotic behaviour of $\cI(z)$ as $z\to 0^+$ can be computed by the classical Laplace method: we have
+ \[
+ \cI(z) \sim \frac{(2 \pi z)^{n/2}\re^{-\phi(q^{\rm cr})/z}}{\sqrt{\det_{ab}(H_{ab})}} \omega(z)\,,
+ \]
+@@ -4234,7 +4257,8 @@
+ \]
+ %
+ \begin{example}
+-Take $n=1$, $\phi(q)=q$, $\gamma(q)=q^{\alpha/z+\beta-1}$ with $\alpha \in \bbR^+$, $\beta \in \bbC$, and $\cC$ the steepest descent path emerging from the unique critical point at $q^{\rm cr} = \alpha$. Then 
++\label{exmpl:stirling}
++Take $n=1$, $\phi(q)=q-\alpha \log{q} $, $\gamma(q)=q^{\beta-1}$ with $\alpha \in \bbR^+$, $\beta \in \bbC$, and $\cC$ the steepest descent path emerging from the unique critical point at $q^{\rm cr} = \alpha$. Then 
+ %
+ \[
+ \int_{\cC} \re^{-\frac{q}{z}}
+@@ -4248,14 +4272,19 @@
+ q^{\frac{\alpha}{z} + \beta-1} \dd q \big] = \alpha^{\beta-1/2} \exp\l[-\sum_{k > 0} \frac{B_{k+1}(\beta)}{k(k+1)} \l(-\frac{z}{\alpha}\r)^k\r]\,,
+ \] 
+ %
+-with $B_n(x) = [t^n] \frac{t n! e^{t x}}{e^t-1}$ denoting the $n^{\rm th}$ Bernoulli polynomial. For future use, we will introduce the short-hand notations
++with \[B_n(x) = [t^n] \frac{t n! e^{t x}}{e^t-1}\] denoting the $n^{\rm th}$ Bernoulli polynomial. For future use, we will introduce the short-hand notations
+ %
+ %\begin{align*}
+ \[ \Theta(z,x)  \coloneqq  ~
+ \exp\l[-\sum_{k > 0} \frac{B_{k+1}(x) (-z)^k}{k(k+1)}\r] \in 1+ z \bbQ[x]\llbracket z\rrbracket  \,, \quad 
+ \Theta(z) \coloneqq \Theta(z,0)  \in 1+ z \bbQ\llbracket z\rrbracket\,, \]
+ \[
+-\Upsilon(z_1,z_2) \coloneqq \frac{\Theta(z_1) \Theta(z_2)}{\Theta(z_1+z_2)} \in \bbQ\llbracket z_1,z_2\rrbracket\,.\]
++\Upsilon(z_1,z_2) \coloneqq \frac{\Theta(z_1) \Theta(z_2)}{\Theta\Big(\frac{z_1 z_2}{z_1+z_2}\Big)}.\]
++For $z_1=z/a$ and $z_2=z/b$ with $a,b \neq 0$ and $a+b\neq 0$, the argument of the denominator is $z/(a+b)$, and $\Upsilon(z/a,z/b) \in 1+z\,\bbQ(a,b)\llbracket z\rrbracket$. The series $\Upsilon(z/a,z/b)$ is the Stirling expansion of the Euler Beta function \[\mathrm{B}\Big(\frac{a}{z},\frac{b}{z}\Big)=\frac{\Gamma\Big(\frac{a}{z}\Big)\Gamma\Big(\frac{b}{z}\Big)}{\Gamma\Big(\frac{a+b}{z}\Big)}\,,\] in the same sense in which $\Theta(z/a)$ is the Stirling expansion of $\Gamma(a/z)$. From $B_{k+1}(x+1)-B_{k+1}(x)=(k+1)x^k$ and $B_{2k+1}=0$ for $k \geq 1$, we have the identities
++\[
++\Theta(z,x+1)=(1+xz)\Theta(z,x)\,, \qquad \Theta(z,1)=\Theta(z)\,, \qquad \Theta(z,-1)=\frac{\Theta(z)}{1-z}\,, \qquad \Theta(-z)=\frac{1}{\Theta(z)}\,,
++\]
++and therefore $\Upsilon(-z_1,-z_2)=1/\Upsilon(z_1,z_2)$.
+ \end{example}
+ 
+ 
+@@ -4282,15 +4311,15 @@
+ The steepest descent asymptotics of this equality is
+ %
+ \beq
+-\mathsf{Asym}_{q_i^{\rm cr}}[\re^{-\cW/z} \dd \Omega] = N_i \mathsf{R}_{0i} \,,
++\mathsf{Asym}_{q_i^{\rm cr}}[\re^{\cW/z} \dd \Omega] = N_i \mathsf{R}_{0i} \,,
+ \label{eq:oscintP}
+ \eeq 
+ %
+-for a formal Taylor series $N_i \in Q_{\Tmax}[(w_i^{(j)})^{1/2}]\llbracket z\rrbracket$. This relative normalisation term  was computed in \cite[Prop.~6.9]{MR4047552}:  specialised to our case, it reads
++for a formal Taylor series $N_i \in Q_{\Tmax}[(w_i^{(j)})^{1/2}]\llbracket z\rrbracket$. The sign of $z$ in the exponent is the one for which the critical value $\mathsf{u}_i=\cW(q^{\rm cr}_i)$ appears as $\re^{\mathsf{u}_i/z}$, as in \eqref{eq:asympRrho}. In the notation of \cref{exmpl:stirling}, the left-hand side is $\mathsf{Asym}_{q_i^{\rm cr}}[\re^{-\phi/z}\dd\Omega]$ with $\phi=-\cW$. This relative normalisation term  was computed in \cite[Prop.~6.9]{MR4047552}:  specialised to our case, it reads
+ %
+ \beq
+ N_i(z)= \sqrt{\epsilon_1 \epsilon_2}\,
+-\Theta\l(\frac{z}{\epsilon_1}\r)\Theta\l(\frac{z}{\epsilon_2}\r)
++\Theta\l(-\frac{z}{\epsilon_1}\r)\Theta\l(-\frac{z}{\epsilon_2}\r)
+ %\prod_{j=0}^2
+ %\l(\frac{1}{w_i^{(j)}}\r)^{1/2} 
+ %\Theta\l(\frac{z}{w^{(j)}_i}\r)
+@@ -4308,9 +4337,9 @@
+ In particular, when $\alpha_i \neq \alpha_j $ for $i \neq j$, the large radius limit of \eqref{eq:oscintP} is given by
+ %
+ \[
+-\lim_{y \to 0} \mathsf{Asym}_{q_i^{\rm cr}}[\re^{-\cW/z} \dd \Omega] = \prod_{j=0}^2
++\lim_{y \to 0} \mathsf{Asym}_{q_i^{\rm cr}}[\re^{\cW/z} \dd \Omega] = \prod_{j=0}^2
+ \frac{1}{\sqrt{w_i^{(j)}}}
+-\Theta\l(\frac{z}{w^{(j)}_i}\r)\,.
++\Theta\l(-\frac{z}{w^{(j)}_i}\r)\,.
+ \] 
+ %
+ When $\alpha_i=\alpha_j$ for some $i\neq j$, meaning that $w_i^{j}=0$, the r.h.s.~of the last equality is not defined.
+@@ -4329,7 +4358,7 @@
+ %
+ \bea 
+ \cW &=& s_1^3 -3 s_1 s_2+ \l(3+\frac{1}{y^{1/3}} \r)s_3 - \l(\epsilon_1+\epsilon_2\r) \log s_3\,, \nn \\ 
+-\dd\Omega &=&  \sqrt{s_1^2 s_2^2-4 s_1^3  s_3+18 s_1 s_2 s_3-4 s_2^3-27 s_3^2}~\frac{\dd s_1 \dd s_2 \dd s_3}{s_3^3}\,. \nn
++\dd\Omega &=&  \frac{9}{s_3\sqrt{s_1^2 s_2^2-4 s_1^3  s_3+18 s_1 s_2 s_3-4 s_2^3-27 s_3^2}}~{\dd s_1 \dd s_2 \dd s_3}\,. \nn
+ \eea
+ %
+ There are two possible sources of critical points of $\cW : (\bbC^{\times})^3 \to \bbC$. The first is given, obviously, by the vanishing of its gradient in $s$-coordinates, 
+@@ -4371,8 +4400,8 @@
+ with $\sum_i {j_i} \equiv 0$ mod $3$. In particular, we have that
+ %
+ \[
+-\mathsf{Asym}_{q_i^{\rm cr}} \l[\re^{-\cW/z} \dd\Omega \r]=
+-\mathsf{Asym}_{\widetilde{q_i^{\rm cr}}} \l[\re^{-\cW/z} \dd\Omega \r]\,,
++\mathsf{Asym}_{q_i^{\rm cr}} \l[\re^{\cW/z} \dd\Omega \r]=
++\mathsf{Asym}_{\widetilde{q_i^{\rm cr}}} \l[\re^{\cW/z} \dd\Omega \r]\,,
+ \] 
+ %
+ with 
+@@ -4441,12 +4470,12 @@
+ \prod_{k=1}^n \mathrm{ev}_k^* \mathbf{1}_{\frac{\nu_k}{3}} \in \frac{1}{\epsilon_1 \epsilon_2}\bbQ[\epsilon_1, \epsilon_2]\,,  
+ \]
+ \[
+-[\Mbar_{g,n}(\cY)]^{\vir}  \coloneqq e^{\mgp{T}_{\rm F}}(\mathbf{R}^1\pi_* f^* (\cO_{1}))^3 \cap e^{\mgp{T}_{\rm F}}\big( \mathbf{R}\pi_* f^* \cO_{0}\big)^2 \cap [\Mbar_{g,n}(B\mu_3)]^{\vir} \,. 
++[\Mbar_{g,n}(\text{$\cY$})]^{\vir}  \coloneqq e^{\mgp{T}_{\rm F}}(\text{$\mathbf{R}$}^1\pi_* f^* (\text{$\cO$}_{1}))^3 \cap e^{\mgp{T}_{\rm F}}\big( \mathbf{R}\pi_* f^* \cO_{0}\big)^2 \cap [\Mbar_{g,n}(B\mu_3)]^{\vir} \,. 
+ \]
+ %
+ When $g=0$ and $n=2$, the correlators give the $\mgp{T}_{\rm F}$-equivariant Chen--Ruan intersection pairing on $\cY$:
+ \[
+-\eta_{\rm orb}\big(\mathbf{1}_{\frac{\mu}{3}},\mathbf{1}_{\frac{\nu}{3}}\big) \coloneqq 
++\eta_{\rm orb}\big(\text{$\mathbf{1}$}_{\frac{\mu}{3}},\text{$\mathbf{1}$}_{\frac{\nu}{3}}\big) \coloneqq 
+ (\eta_{\rm orb})_{\mu\nu} \coloneqq
+ \intEquiv{\mgp{T}_{\rm F}}_{[I\cY]_{\mgp{T}_{\rm F}}} \mathbf{1}_{\frac{\mu}{3}} \cup \mathbf{1}_{\bra\frac{3-\nu}{3}\ket} = \frac{1}{3 \epsilon_1 \epsilon_2} 
+ \l(
+@@ -4549,8 +4578,7 @@
+ E_{\rm orb} = \frac{3}{2}X\,.
+ \label{eq:DEorbrel}
+ \eeq 
+-In particular, $\bbQ[A_{\rm orb},D_{\rm orb},E_{\rm orb},F_{\rm orb},X] \simeq \bbQ[A_{\rm orb}^{\pm 1}, F_{\rm orb},X] \simeq \bbQ[A_{\rm orb},D_{\rm orb},F_{\rm orb}]$.
+-\label{lem:modrelorb}
++In particular, $\bbQ[A_{\rm orb},D_{\rm orb},E_{\rm orb},F_{\rm orb},X] = \bbQ[A_{\rm orb},D_{\rm orb},F_{\rm orb}]$, which is a subring of $\bbQ[A_{\rm orb}^{\pm 1}, F_{\rm orb},X]$.\label{lem:modrelorb}
+ \end{lem}
+ \begin{proof}[Proof (sketch)]
+ The proof is largely identical to that of \cref{lem:modrel}. The first relation in \eqref{eq:DEorbrel} is proved using the methods of \cite{MR2454324} (see also \cite{MR3960668}). The second relation is implied by
+@@ -4628,13 +4656,13 @@
+ \end{equation}
+ %
+ where, in the same vein as for \eqref{eq:RHb}, we have used the fact that $\sigma = \tau^{\rm orb}_{1}$ in the first equality, and the WDVV equation in the second. As in \cref{sec:Rmatrix}, write \[\mathsf{R}_{\nu i}^{\rm orb}(x,z) \coloneqq \re^{-\mathsf{u}_i/z} \mathsf{R}^{\rm orb}(\mathbf{1}_{\frac{\nu}{3}})\,,\]
+-where $\Psi^{\rm orb}_{\nu i}$ is the Jacobian matrix of the change-of-basis \[\{\mathbf{1}_{\frac{\nu}{3}}\}_{\nu=0,1,2} \to \{ \mathsf{f}_i\}_{i=0,1,2}\] restricted to $\tau_\mu^{\rm orb}=\delta_{\mu, 1} \sigma(x)$. By \eqref{eq:R12orb}, $\mathsf{R}_{\nu i}^{\rm orb}(x,z)$ is determined by $\mathsf{R}_{0i}^{\rm orb}(x,z)$.
++and denote $\Psi^{\rm orb}_{\nu i}$ the Jacobian matrix of the change-of-basis \[\{\mathbf{1}_{\frac{\nu}{3}}\}_{\nu=0,1,2} \to \{ \mathsf{f}_i\}_{i=0,1,2}\] restricted to $\tau_\mu^{\rm orb}=\delta_{\mu, 1} \sigma(x)$. By \eqref{eq:R12orb}, $\mathsf{R}_{\nu i}^{\rm orb}(x,z)$ is determined by $\mathsf{R}_{0i}^{\rm orb}(x,z)$.
+ %
+ \begin{prop}
+ The following identity holds in $\sqrt{\epsilon_1 \epsilon_2}\, Q_{\mgp{T}_{\rm F}}\llbracket x,z\rrbracket$:
+ \[
+-\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{-\cW/z} \dd\Omega]\Big|_{y=x^{-3}}
+-={\sqrt{\epsilon_1 \epsilon_2}}\,\Theta\l(\frac{z}{\epsilon_1} \r) \Theta\l(\frac{z}{\epsilon_2} \r)\mathsf{R}^{\rm orb}_{0i} \,. 
++\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{\cW/z} \dd\Omega]\Big|_{y=x^{-3}}
++={\sqrt{\epsilon_1 \epsilon_2}}\,\Theta\l(-\frac{z}{\epsilon_1} \r) \Theta\l(-\frac{z}{\epsilon_2} \r)\mathsf{R}^{\rm orb}_{0i} \,. 
+ %
+ \]
+ \label{prop:Rnorm}
+@@ -4651,10 +4679,10 @@
+ This implies that the components of the I-function $I(x^{-3},z)$ of $Z$ are a flat chart for the Dubrovin connection of $\cY$ restricted to the locus $\tau_\nu^{\rm orb}=\delta_{\nu, 1} \sigma(x)$. By \eqref{eq:normNLR},
+ %By \eqref{eq:pforb},
+ %Therefore, %genus zero Crepant Transformation Theorem for $\cY$ is that 
+-the same is true for the steepest descent asymptotics of the periods of $\re^{-\cW/z} \dd \Omega$, with $y=x^{-3}$, to all orders in a formal expansion at $z=0$. As such, the latter equate the identity component of the canonical $R$-matrix of $\cY$ up to right-multiplication by a diagonal factor $N_i^{\rm orb} \in Q_{\mgp{T}_{\rm F}}[\sqrt{\epsilon_1},\sqrt{\epsilon_2}]\llbracket z\rrbracket$ which is constant in $x$:
++the same is true for the steepest descent asymptotics of the periods of $\re^{\cW/z} \dd \Omega$, with $y=x^{-3}$, to all orders in a formal expansion at $z=0$. As such, the latter equate the identity component of the canonical $R$-matrix of $\cY$ up to right-multiplication by a diagonal factor $N_i^{\rm orb} \in Q_{\mgp{T}_{\rm F}}[\sqrt{\epsilon_1},\sqrt{\epsilon_2}]\llbracket z\rrbracket$ which is constant in $x$:
+ %
+ \[ 
+-\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{-\cW/z} \dd\Omega]\bigg|_{y=x^{-3}}
++\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{\cW/z} \dd\Omega]\bigg|_{y=x^{-3}}
+ =\mathsf{R}^{\rm orb}_{0i} N_i^{\rm orb}\,. 
+ \] 
+ %
+@@ -4663,7 +4691,7 @@
+ \beq
+ \mathsf{R}^{\rm orb}_{\nu i}\big|_{\sigma=0} =  
+ \frac{\omega^{\nu i}}{3\sqrt{\epsilon_1 \epsilon_2}} \l(\frac{\epsilon_1+\epsilon_2}{3}\r)^{\nu-3/2}\exp\left[
+-\sum_{k>0} \l(-\frac{3B_{k+1}\left(\frac{\nu}{3}\right) (-3z)^k}{k(k+1)(\epsilon_1+\epsilon_2)^k}+ 
++\sum_{k>0} \l(-\frac{3B_{k+1}\left(\frac{\nu}{3}\right) (3z)^k}{k(k+1)(\epsilon_1+\epsilon_2)^k}+
+ \frac{B_{2k} z^{2k-1}(\epsilon_1^{1-2k}+\epsilon_2^{1-2k})}{2k(2k-1)}\r) \r]\,. 
+ %& \nu = 1,2\,.
+ %\end{cases}
+@@ -4673,8 +4701,8 @@
+ On the other hand, at $x=0$ we have that $\cW=\sum_{j=0}^2 (q_i-(\epsilon_1+\epsilon_2)/3 \log q_i)$, $\dd \Omega = 1/3 \prod_{j=0}^2 \dd \log q_i$, and $\widetilde{q^{\rm cr}_i} = (\epsilon_1+\epsilon_2)/3$. Then, the oscillating integral \eqref{eq:oscintP} factorises at $x=0$ into a product of three Gamma integrals:
+ %
+ \[
+-\int_{\Gamma_i} \re^{-\cW/z}\dd \Omega\bigg|_{x=0} = \frac{1}{3}\prod_{j=0}^2 \int_0^\infty \re^{-q_j/z} q_j^{\frac{\epsilon_1+\epsilon_2}{3 z}-1} \dd q_i = \frac{z^{\frac{\epsilon_1+\epsilon_2}{z}}}{3} 
+-\Gamma\l( \frac{\epsilon_1+\epsilon_2}{3z} \r)^3
++\int_{\Gamma_i} \re^{\cW/z}\dd \Omega\bigg|_{x=0} = \frac{1}{3}\prod_{j=0}^2 \int_0^\infty \re^{q_j/z} q_j^{-\frac{\epsilon_1+\epsilon_2}{3 z}-1} \dd q_j = \frac{(-z)^{-\frac{\epsilon_1+\epsilon_2}{z}}}{3}
++\Gamma\l( -\frac{\epsilon_1+\epsilon_2}{3z} \r)^3
+ \,,
+ \label{eq:Gammaorb}
+ \]
+@@ -4682,8 +4710,8 @@
+ so that
+ %
+ \[ 
+-\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{-\cW/z} \dd\Omega]\bigg|_{x=0} = \sqrt{\frac{3}{(\epsilon_1+\epsilon_2)^3 }}\exp\left[
+--\sum_{k>0}\frac{3B_{k+1}\left(0\right) (-3z)^k}{k(k+1)(\epsilon_1+\epsilon_2)^k}
++\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{\cW/z} \dd\Omega]\bigg|_{x=0} = \sqrt{\frac{3}{(\epsilon_1+\epsilon_2)^3 }}\exp\left[
++-\sum_{k>0}\frac{3B_{k+1}\left(0\right) (3z)^k}{k(k+1)(\epsilon_1+\epsilon_2)^k}
+  \r]\,.
+ \] 
+ %
+@@ -4695,12 +4723,12 @@
+ %
+ Since 
+ %\[
+-$X = 27x^3 + \cO(x^6)$ and $A_{\rm orb} = x + \cO(x^2)$, 
++$X = x^3/27 + \cO(x^6)$ and $A_{\rm orb} = x + \cO(x^4)$, 
+ %it is straightforward to check that with this normalisation 
+ by \eqref{eq:R12orb} the components $R^{\rm orb}_{\nu i}$ of the R-matrix satisfy 
+ %
+ \[
+-\frac{\de^\nu}{\de x^\nu}\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{-\cW/z} \dd\Omega]\bigg|_{x=0}
++\frac{\de^\nu}{\de x^\nu}\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{\cW/z} \dd\Omega]\bigg|_{x=0}
+ =\mathsf{R}^{\rm orb}_{\nu i} N_i^{\rm orb}\bigg|_{x=0}\,. 
+ \]
+ %
+@@ -4708,25 +4736,25 @@
+ %
+ \begin{align}
+ \frac{\de^\nu}{\de x^\nu}
+-\int_{\Gamma_i}  \re^{-\cW/z}\dd \Omega\bigg|_{x=0} & =
++\int_{\Gamma_i}  \re^{\cW/z}\dd \Omega\bigg|_{x=0} & =
+ \omega^{\nu i} \frac{\de^\nu}{\de x^\nu}
+-\int_{\Gamma_0}  \re^{-\cW/z}\dd \Omega\bigg|_{x=0}=
+-\frac{1}{3}\prod_{j=0}^2 \int_0^\infty \re^{-q_j/z} q_j^{\frac{\epsilon_1+\epsilon_2}{3 z}+\frac{\nu}{3}-1} \dd q_i \nn \\ & =  \omega^{\nu i}\frac{z^{\frac{\epsilon_1+\epsilon_2}{z} + \nu}}{3} 
+-\Gamma\l( \frac{\epsilon_1+\epsilon_2}{3z} +\frac{\nu}{3} \r)^3
++\int_{\Gamma_0}  \re^{\cW/z}\dd \Omega\bigg|_{x=0}=
++\frac{\omega^{\nu i}}{3}\prod_{j=0}^2 \int_0^\infty \re^{q_j/z} q_j^{-\frac{\epsilon_1+\epsilon_2}{3 z}+\frac{\nu}{3}-1} \dd q_j
++%\nn \\ & =  \omega^{\nu i}\frac{z^{\frac{\epsilon_1+\epsilon_2}{z} + \nu}}{3} \Gamma\l( \frac{\epsilon_1+\epsilon_2}{3z} +\frac{\nu}{3} \r)^3
+ \,, \nn
+ %\label{eq:Gammaorb}
+ \end{align}
+ %
+ we find, for $\nu \in \{0,1,2\}$, that
+ \[
+-\frac{\de^\nu}{\de x^\nu}\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{-\cW/z} \dd\Omega]\bigg|_{x=0}=
++\frac{\de^\nu}{\de x^\nu}\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{\cW/z} \dd\Omega]\bigg|_{x=0}=
+ \frac{\omega^{\nu i}}{3}
+ \l(\frac{\epsilon_1+\epsilon_2}{3}\r)^{\nu-3/2}\exp\left[
+-\sum_{k>0} \l(-\frac{3B_{k+1}\left(\frac{\nu}{3}\right) (-3z)^k}{k(k+1)(\epsilon_1+\epsilon_2)^k}\r) \r]\,. 
++\sum_{k>0} \l(-\frac{3B_{k+1}\left(\frac{\nu}{3}\right) (3z)^k}{k(k+1)(\epsilon_1+\epsilon_2)^k}\r) \r]\,. 
+ \]
+ Comparing with \eqref{eq:Rorbnorm}, we conclude that 
+ \[
+-N_i^{\rm orb} = {\sqrt{\epsilon_1 \epsilon_2}}\,\Theta\l(\frac{z}{\epsilon_1} \r) \Theta\l(\frac{z}{\epsilon_2} \r)\,.
++N_i^{\rm orb} = {\sqrt{\epsilon_1 \epsilon_2}}\,\Theta\l(-\frac{z}{\epsilon_1} \r) \Theta\l(-\frac{z}{\epsilon_2} \r)\,.
+ \]
+ %
+ \end{proof}
+@@ -4802,8 +4830,8 @@
+ \begin{proof}
+ The first equality follows from 
+ \[
+-\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{-\cW/z} \dd\Omega] = \mathsf{R}_{0i} N_i = \mathsf{R}^{\rm orb}_{0i} N^{\rm orb}_{i}\,, \quad
+-N_i=N_i^{\rm orb} = \sqrt{\epsilon_1 \epsilon_2}\, \Theta\l(\frac{z}{\epsilon_1}\r)\Theta\l(\frac{z}{\epsilon_2}\r).
++\mathsf{Asym}_{\widetilde{q}_i^{\rm cr}}[\re^{\cW/z} \dd\Omega] = \mathsf{R}_{0i} N_i = \mathsf{R}^{\rm orb}_{0i} N^{\rm orb}_{i}\,, \quad
++N_i=N_i^{\rm orb} = \sqrt{\epsilon_1 \epsilon_2}\, \Theta\l(-\frac{z}{\epsilon_1}\r)\Theta\l(-\frac{z}{\epsilon_2}\r).
+ \]
+ The other two follow from comparing \eqref{eq:RHb} and \eqref{eq:R12orb}, using \cref{lem:modrel,lem:modrelorb}  and bearing in mind that for $f\in G_{\mgp{T}_{\rm F}}[A_{\rm orb}, F_{\rm orb}]$, 
+ %
+@@ -4848,7 +4876,7 @@
+ %\[ 
+ \refGWg{g}{\cY}{\mgp{T}_{\rm F}}
+ =
+-\sum_{\Gamma \in \cG^{[2]}_{g,0}} \frac{(\epsilon_1 \epsilon_2)^{g-1}}{|\mathrm{Aut}(\Gamma)|} 
++\sum_{\Gamma \in \cG^{[2]}_{g,0}} \frac{1}{|\mathrm{Aut}(\Gamma)|} 
+ \prod_{e\in \cE_\Gamma}\mathrm{Cont}_{\rm orb}(e)
+ \prod_{d\in \DD_\Gamma 
+ %\sqcup \DD_\Gamma
+@@ -4914,11 +4942,11 @@
+ \mathscr{F}^{\rm orb}_{k,g} \in \bbQ[X^{\pm 1}][ F_{\rm orb}]\,,
+ \] 
+ %
+-with $\deg_F\mathscr{F}_{k,g}\leq 3(g+k-1)$. Moreover,  the refined modular anomaly equation holds,
++with $\deg_{F_{\rm orb}}\mathscr{F}^{\rm orb}_{k,g}\leq 3(g+k-1)$. Moreover,  the refined modular anomaly equation holds,
+ %
+ \[
+--\frac{27 X}{A_{\rm orb}^2}
+-\frac{\de \mathscr{F}^{\rm orb}_{k,g}}{\de F_{\rm orb}}=\frac{1}{2}  \partial_\sigma^2 \mathscr{F}^{\rm orb}_{k,g-1} + \frac{1}{2} \sum_{\substack{0\leq k' \leq k\,, 0 \leq g' \leq g \\(0,0)\neq (k',g')\neq (k,g) }}   \de_\sigma\mathscr{F}^{\rm orb}_{k',g'} \, \partial_\sigma \mathscr{F}^{\rm orb}_{k-k',g-g'}\,,
++-\frac{18 X}{A_{\rm orb}^2}
++\frac{\de \mathscr{F}^{\rm orb}_{k,g}}{\de F_{\rm orb}}=  \partial_\sigma^2 \mathscr{F}^{\rm orb}_{k,g-1} +  \sum_{\substack{0\leq k' \leq k\,, 0 \leq g' \leq g \\(0,0)\neq (k',g')\neq (k,g) }}   \de_\sigma\mathscr{F}^{\rm orb}_{k',g'} \, \partial_\sigma \mathscr{F}^{\rm orb}_{k-k',g-g'}\,,
+ \]
+ %
+ as an identity in $A_{\rm orb}^{-2}\,\bbQ[X^{\pm 1}][F_{\rm orb}]$.
+@@ -4930,49 +4958,64 @@
+ \end{proof}
+ 
+ \subsubsection{Orbifold regularity}
+-An important corollary of \cref{thm:crc} is the ``orbifold regularity'' property \cite{HK10:OmegaBG}. Let $\tilde F \coloneqq F+1/3 $, and define a grading on the ring $\bbQ[X^{\pm 1}, \tilde F]$ by $\deg X = \deg \tilde F=1$. We will denote by $\mathfrak{g}_k$ the subspaces in the corresponding filtration, generated by monomials of homogeneous degree less than or equal to $k \in \bbZ_{\geq 0}$, and by $\mathfrak{g}_k^{\rm reg}$ the subspace of $\mathfrak{g}_k$ satisfying $3 \deg X + \deg \tilde F \geq 0$. 
+-
+-
+-%bounding the pole order of $\mathscr{F}_{k,g}$ in $X$. 
+-\begin{prop}[Orbifold regularity]
+-For $k+g \geq 2$, we have
+-    %
+-    $
+-     \mathscr{F}_{k,g} \in X^{1-k-g} ~\mathfrak{g}^{\rm reg}_{3g+3k-3}\,.$
+-%\]
+-\label{cor:orbreg}
+-\end{prop}
+-
+-\begin{proof}
+-Under the specialisation 
++\label{sec:orbreg}
++An important corollary of \cref{thm:crc} is the ``orbifold regularity'' property \cite{HK10:OmegaBG}. Under the specialisation
+ \beq
+ F_{\rm orb} \longrightarrow F_{\rm orb}(x) \in \bbQ\llbracket x\rrbracket\,, \quad X \longrightarrow X(x^{-3}) \in \bbQ\llbracket x\rrbracket\,,
+ \label{eq:specFX}
+ \eeq
+-the orbifold refined generating series
+- are by definition regular (in fact analytic) at $\sigma=x=0$, from \eqref{eq:Forbref}. By  \cref{cor:orbHAE},  
+-$\mathscr{F}^{\rm orb}_{k,g}$ is a polynomial in $F_{\rm orb}$ and a Laurent polynomial in $X$: the fact that $F_{\rm orb}(x)=1 + \cO(x)$, $X(x^{-3})=\cO(x^3)$, and $\deg_{F_{\rm orb}}\mathscr{F}^{\rm orb}_{k,g}=3(g+k-1)$ collectively imply that the degree of $\mathscr{F}^{\rm orb}_{k,g}$ in $X^{-1}$ cannot exceed $g+k-1$. More in detail, 
++the orbifold refined generating series $\mathscr{F}^{\rm orb}_{k,g}=\mathsf{Orb}(\mathscr{F}_{k,g})$ are by definition regular at $\sigma=x=0$, from \eqref{eq:Forbref}. Since $\sigma(x)=x+\cO(x^4)$ and only correlators with a number of insertions divisible by three are non-zero, $\mathscr{F}^{\rm orb}_{k,g}$ is a power series in $x^3=y^{-1}$. This proves ({\bf Orbifold regularity}) in the form given in \cref{thm:B}.
++
++We now prove a stronger statement, which controls the individual monomials of $\mathscr{F}_{k,g}$ rather than their sum. Following \cite[Eq.~(59)]{BFGW21:HAE}, write $\mathbf{R}_{\leq k} \subset \bbQ[X,\tilde F]$ for the subspace of polynomials of total degree at most $k$, with $\deg X = \deg \tilde F=1$. For a Laurent polynomial $f \in \bbQ[X^{\pm 1},\tilde F]$, we will say that $f$ is \emph{regular} and write $f \in [-]^{\rm reg}$, if every monomial $X^a \tilde F^b$ appearing in $f$ satisfies $3a+b\geq 0$. The condition is imposed on the monomials of $f$ itself, including any overall power of $X$.
++
++\begin{thm}[Orbifold regularity]
++For $k+g \geq 2$, we have
+ \[
+-\mathscr{F}^{\rm orb}_{k,g} = X^{1-k-g} 
+-\sum_{n=0}^{3(g+k-1)} \sum_{m=0}^{d_n} a_{mn} X^m F_{\rm orb}^n
+-\,,
++C^{2(g+k-1)}\mathscr{F}_{k,g} \in \bbQ[A,B,C]_{6(g+k-1)}\,.
+ \]
+-for some $d_n \in \bbZ_{\geq 0}$ and coefficients $a_{mn} \in \bbQ$ such that the polar part of $\mathscr{F}^{\rm orb}_{k,g} $ in $X$, under the specialisation \eqref{eq:specFX}, vanishes at $x=0$.
+-Shifting $F_{\rm orb} \to \tilde{F}_{\rm orb} = F_{\rm orb} -1=-3 \mathsf{Orb}(\tilde F)$, so that $\tilde{F}_{\rm orb}(x)=x+\cO(x^2)$, entails that
++Equivalently, by \cite[Prop.~4.3]{BFGW21:HAE},
+ \[
+-\mathscr{F}^{\rm orb}_{k,g} = X^{1-k-g} 
+-\sum_{n=0}^{3(g+k-1)} \sum_{m=0}^{d_n} b_{mn} X^m \tilde F_{\rm orb}^n
+-\,
++\mathscr{F}_{k,g} \in \big[X^{1-k-g}\,\mathbf{R}_{\leq 3(g+k-1)}\big]^{\rm reg}\,.
+ \]
+-for some $b_{mn} \in \bbQ$ such that $b_{mn}=0$ if $3m+n<0$, again by requiring that the r.h.s.~is $\cO(1)$ at $x=0$ under \eqref{eq:specFX}. Therefore $\mathscr{F}^{\rm orb}_{k,g} \in X^{1-k-g} ~ \mathsf{Orb}(\mathfrak{g}^{\rm reg}_{3g+3k-3})$, and by \cref{thm:crc},
++In particular, $\mathscr{F}_{k,g} \in C^{2(1-g-k)} \mathrm{QMod}^{[6(g+k-1),3(g+k-1)]}\l(\Gamma_1(3)\r)$.
++\label{thm:orbreg}
++\end{thm}
++
++\begin{proof}
++Write $\bar{g} \coloneqq k+g$. By \eqref{eq:XFABC}, $\bbQ[X^{\pm 1},F]$ embeds in $\bbQ[A^{\pm 1},B,C^{\pm 1}]$, and its image consists of elements of weight zero, since $X$ and $\tilde F$ have weight zero. At fixed $A$ and $C$ we have \[\de_{\tilde F}\big|_X = \frac{6C}{A}\de_B\big|_{A,C}\] and $X/A^2=A/C$. The modular anomaly equation of \cref{thm:haeref} therefore reads
++\beq
++\de_B \mathscr{F}_{k,g} = \frac{1}{4}\l[(\cQ\de_\cQ)^2 \mathscr{F}_{k,g-1} + \sum_{(0,0)\neq (k',g')\neq (k,g) }  \cQ \de_\cQ \mathscr{F}_{k',g'} \, \cQ\partial_\cQ \mathscr{F}_{k-k',g-g'}\r]\,,
++\label{eq:HAEB}
++\eeq
++where $\cQ\de_\cQ=C^{-1}\de_\tau$ acts through \eqref{eq:ramanujan}. 
++
++We argue by induction on $\bar{g}$. From \cref{exmpl:F1}, we have 
+ %
+-\[
+-\mathscr{F}_{k,g} =  X^{1-k-g} 
+-\sum_{n=0}^{3(g+k-1)} \sum_{m=0}^{d_n} (-3)^{n} b_{mn} X^m \tilde F^n \in X^{1-k-g}\,\mathfrak{g}_{3g+3k-3}^{\rm reg}\,. \qedhere
+-\]
++\[\cQ\de_\cQ\mathscr{F}_{0,1}=-\frac{B}{12C}\,, \quad \cQ\de_\cQ\mathscr{F}_{1,0}=-\frac{A^2}{24C}\,,\] which lie in $C^{-1}\bbQ[A,B,C]_2$. Assuming the statement for all $k''+g''<\bar{g}$ with $k''+g''\geq 2$, the closure property \eqref{eq:QdQclosure} shows that the right-hand side of \eqref{eq:HAEB} lies in $C^{-(2\bar{g}-2)}\bbQ[A,B,C]_{6\bar{g}-8}$. Let $\Pi_{k,g} \in \bbQ[A,B,C]_{6\bar{g}-6}$ be the unique polynomial with $\de_B \Pi_{k,g} = C^{2\bar{g}-2}\de_B\mathscr{F}_{k,g}$ and no $B$-independent term. Then $C^{2\bar{g}-2}\mathscr{F}_{k,g}-\Pi_{k,g}$ is independent of $B$. Writing $\mathscr{F}_{k,g}=P(X,\tilde F)$ with $P \in \bbQ[X^{\pm 1}][\tilde F]$, its $B$-independent part is $P(X, A^3/6C)=P(X,X/6)$ by \eqref{eq:XFABC}. Hence
++\beq
++C^{2\bar{g}-2}\mathscr{F}_{k,g}=\Pi_{k,g}(A,B,C)+C^{2\bar{g}-2}\,\mathrm{Amb}_{k,g}(X)\,, \qquad \mathrm{Amb}_{k,g}(X) \coloneqq P(X,X/6) \in \bbQ[X^{\pm 1}]\,,
++\label{eq:ambdec}
++\eeq
++and it remains to show that $\mathrm{Amb}_{k,g}$ is a polynomial of degree at most $2\bar{g}-2$ in $X$. 
++%Note that $\mathrm{Amb}_{k,g}$ is a Laurent polynomial in the single variable $X$, so that its individual monomials are controlled by its behaviour as a function.
++
++For the absence of negative powers, evaluate \eqref{eq:ambdec} under $\mathsf{Orb}$ followed by \eqref{eq:specFX}. Set 
+ %
++\[a \coloneqq \frac{A_{\rm orb}}{3}\,,  \quad b\coloneqq \frac{6c}{a}\,\mathsf{Orb}(\tilde F)-a^2\,, \quad c \coloneqq \frac{a^3}{X}\,,\] so that $(a,b,c)$ satisfy \eqref{eq:XFABC} with $X$ and $\tilde F$ replaced by their images under $\mathsf{Orb}$. From 
++\[
++A_{\rm orb}=x+\cO(x^4)\,, \quad X=\frac{x^3}{27}+\cO(x^6)\,, \quad \mathsf{Orb}(\tilde F)=\frac{x^3}{162}+\cO(x^6)
++\] we have $a, b, c \in \bbQ\llbracket x\rrbracket$, with $c(0)=1$. Hence $\Pi_{k,g}(a,b,c)/c^{2\bar{g}-2} \in \bbQ\llbracket x\rrbracket$. By \cref{thm:crc}, the left-hand side of \eqref{eq:ambdec} evaluates to $c^{2\bar{g}-2}\mathscr{F}^{\rm orb}_{k,g}$, which lies in $\bbQ\llbracket x\rrbracket$ by \eqref{eq:Forbref} and $\sigma(x) \in x\,\bbQ\llbracket x \rrbracket$, and therefore $\mathrm{Amb}_{k,g}(X(x^{-3})) \in \bbQ\llbracket x\rrbracket$. Moreover, since $X(x^{-3})$ vanishes to order exactly three at $x=0$, a non-zero coefficient of $X^{-m}$ with $m>0$ maximal in $\mathrm{Amb}_{k,g}$ would produce a term of order $x^{-3m}$, implying that $\mathrm{Amb}_{k,g}$ has no negative powers of $X$.
++
++For the degree bound, evaluate \eqref{eq:ambdec} instead under the conifold specialisation $\mathsf{Cf}$ of \cref{sec:cfgen}. There $\mathsf{Cf}(A)=A_{\rm cf}=-1+\cO(\xi)$ and $\mathsf{Cf}(X)=\xi^{-1}$, with $\xi=1/X=1+27y$, so that the corresponding $c=A_{\rm cf}^3\xi$ vanishes to first order at $\xi=0$, while $b$ is bounded. Since $\Pi_{k,g}$ is a polynomial, $\Pi_{k,g}(a,b,c)/c^{2\bar{g}-2}$ has a pole of order at most $2\bar{g}-2$ at $\xi=0$. By \cref{lem:cfpole}, $\mathsf{Cf}(\mathscr{F}_{k,g})$ has a pole of order at most $2\bar{g}-2$ in $\xi$. Hence so does $\mathrm{Amb}_{k,g}(\xi^{-1})$, and $\deg_X \mathrm{Amb}_{k,g}\leq 2\bar{g}-2$. This proves the first statement.
++
++For the second statement, the monomial $X^a\tilde F^b$ equals $6^{-b}A^{3a+b}(B+A^2)^b C^{-a-b}$ by \eqref{eq:XFABC}. Therefore $[X^{1-k-g}\mathbf{R}_{\leq 3(\bar{g}-1)}]^{\rm reg}$ maps into $C^{-(2\bar{g}-2)}\bbQ[A,B,C]_{6\bar{g}-6}$, and the map is an isomorphism by \cite[Prop.~4.3]{BFGW21:HAE}. The last statement follows from the inclusion $\bbQ[A,B,C]_{2n} \subset \mathrm{QMod}^{[2n,n]}(\Gamma_1(3))$, which holds since $A$, $B$ and $C$ have weights $1$, $2$ and $3$ and $B$ has depth one.
+ \end{proof}
+ 
++\begin{rmk}
++The regularity condition $3\deg_X+\deg_{\tilde F}\geq 0$ has a heuristic explanation in terms of the reconstruction formula. By \eqref{eq:dFedge}, each power of the propagator $F$ enters \eqref{eq:gtH} through an edge factor with coefficient proportional to $Y_iY_j/X$. On the fibrewise torus, the roots of \eqref{eq:LLMM} are $Y_i=-\alpha x/(x+3\omega^i)$, with $\alpha=(\epsilon_1+\epsilon_2)/3$, $\omega=\re^{2\pi\ri/3}$ and $y=x^{-3}$. Hence $Y_iY_j/X$ has a simple pole in $x$ at the orbifold point, which is the behaviour of $X^{-1/3}$. Each power of $F$ therefore comes with one negative power of $X^{1/3}$, which is what the regularity condition allows.
++\end{rmk}
++
++
+ \begin{table}[t]
+     \centering
+ \def\arraystretch{1.5}%  1 is the default, change whatever you need
+@@ -4994,41 +5037,10 @@
+     \label{tab:orbrefGW}
+ \end{table}
+ 
+-A uniform bound $d_n \leq 3(g+k-1)$ holds from the conifold asymptotics, as we will shall see in \cref{sec:cfpt}, meaning that as a Laurent polynomial in $X$ we have $\deg_{X}\mathscr{F}_{k,g} \leq 2g+2k-2$. 
+-\cref{cor:orbreg} then implies the following enhanced quasi-modularity result about $\mathscr{F}_{k,g}$.
+-
+-\begin{cor}
+-For $k+g \geq 2$, the refined generating series satisfy
+-    %
+-    \[
+-     \mathscr{F}_{k,g} \in C^{2(1-g-k)} \mathrm{QMod}^{[6(g+k-1),3(g+k-1)]}\l(\Gamma_1(3)\r)\,.
+-     \]    
+-\end{cor}
+-
+-\begin{proof}
+-Let $\bbC[A,C]_n$ (respectively, $\bbC[A,B,C]_n$) denote the weight-$n$ graded component of $\bbC[A,C]$ (respectively, $\bbC[A,B,C]$). By \cite[Lem.~4.1]{BFGW21:HAE},
+-we have that $\bbC[A,C]_{n} \simeq \mathrm{Mod}^{[n]}(\Gamma_1(3))$, hence 
+-\[
+-\bbC[A,B,C]_{2n} \simeq 
+-%\l\{ \phi \in \mathrm{Mod}^{[k]}(\Gamma_1(3))[E_2]~ \big|~ \deg_{E_2} \phi = n\r\}=
+-\mathrm{QMod}^{[2n,n]}(\Gamma_1(3))\,.
+-\]
+-Expressing $X$ and $F$ in terms of the quasi-modular forms $A$, $B$, $C$, there is an isomorphism of $\bbC$-vector spaces \cite[Prop.~4.3]{BFGW21:HAE}
+-%
+-\[
+-\l\{\phi \in X^{1-k-g} \mathfrak{g}^{\rm reg}_{3g+3k-3} \Big| \deg_X \phi \leq 2(g+k-1)\,,  \deg_F \phi \leq 3g+3k-3\r\} \simeq C^{2(1-g-k)} \bbC[A,B,C]_{6(g+k-1)}\,,
+-\]
+-%
+-from which the claim follows.
+-\end{proof}
+-
+ In \cref{tab:orbrefGW}, we tabulate the refined orbifold Gromov--Witten invariants %\[\Big\langle\overbrace{\mathbf{1}_{\frac{1}{3}}, \dots, \mathbf{1}_{\frac{1}{3}}}^{3m~\mathrm{times}}
+ %\Big\rangle_{g, 3m}^{[k]} \coloneqq 
+ \[\de^{3m}_\sigma \mathscr{F}^{\rm orb}_{k,g}\Big|_{\sigma=0}\] for $k+g \leq 2$ and $m \leq 6$. These confirm\footnote{The row $(k,g)=(0,2)$ corrects typographical mistakes in the last row of \cite[Eqs.~7.16]{HKK13:OmegaBmodelRigidN2}.} the numerical predictions  of \cite{HKK13:OmegaBmodelRigidN2} based on B-model physics.
+ 
+-        
+-
+-\pagebreak
+ \subsection{The conifold point and the Barnes double Gamma function}
+ \label{sec:cfpt}
+ 
+@@ -5059,13 +5071,10 @@
+    \cite{Nekrasov:2003rj,Brini:2010fc,MR2528052},
+ %
+ \begin{align*}
+-\log \Gamma_2\l(x+\frac{\epsilon_1+ \epsilon_2}{2},\epsilon_1,\epsilon_2\r) & \coloneqq  \frac{\dd}{\dd s} \l[\frac{1}{\Gamma(s)} \int_0^\infty \frac{\dd t}{t}\, \frac{ t^{s}\re^{-tx}}{(\re^{t\epsilon_1}-1)(\re^{t\epsilon_2}-1)}\r]\Bigg|_{s=0} \\
++\log \Gamma_2\l(x+\frac{\epsilon_1+ \epsilon_2}{2},\epsilon_1,\epsilon_2\r) & \coloneqq  \frac{\dd}{\dd s} \l[\frac{1}{\Gamma(s)} \int_0^\infty \frac{\dd t}{t}\, \frac{ t^{s}\re^{t(\epsilon_1+ \epsilon_2)/2-tx}}{(\re^{t\epsilon_1}-1)(\re^{t\epsilon_2}-1)}\r]\Bigg|_{s=0} \\
+ & =
+ \frac{3-2  \log (x)}{4 \epsilon _1 \epsilon _2}x^2
+-+\frac{\left(\left(\epsilon _1-1\right) \epsilon _1+\left(\epsilon _2-1\right) \epsilon
+-   _2\right) \log (x)+ \left(\epsilon _1+\epsilon _2\right)}{2 \epsilon _1 \epsilon _2}x \\
+-   &   +\frac{\left(\epsilon _1+\epsilon _2\right) \left(\epsilon _1 \left(6 \epsilon _1-5\right)+\epsilon _2 \left(6 \epsilon _2-5\right)\right) \log x}{24
+-   \epsilon _1 \epsilon _2}
+++\frac{\epsilon_1^2+\epsilon_2^2}{24 \epsilon _1 \epsilon _2}\log x
+ +\kappa(\epsilon_1,\epsilon_2)+\sum_{n=1}^{\infty}  \beta_{n}(\epsilon_1,\epsilon_2) x^{-n}\,,
+ \end{align*}
+ %
+@@ -5074,21 +5083,22 @@
+ \beq
+ \begin{split}
+ \beta_n(\epsilon,-\epsilon) &= (n-1)![t^n]
+-\frac{-1}{4\sinh^2(\epsilon_1 t/2)} =  \frac{B_{n+2} \epsilon^n}{n(n+2)}\,, \\
++\frac{-1}{4\sinh^2(\epsilon t/2)} =  \frac{B_{n+2} \epsilon^n}{n(n+2)}\,, \\
+ \lim_{\epsilon_1 \to 0} \epsilon_1 \beta_n(\epsilon_1,\epsilon_2) &= (n-1)![t^n]
+-\frac{1}{2\sinh(\epsilon_2 t/2)} = \frac{B_{n+2}(1/2)\epsilon_2^{n+1}}{n(n+1)(n+2)}\,.
++\frac{1}{2t\sinh(\epsilon_2 t/2)} = \frac{B_{n+2}(1/2)\epsilon_2^{n+1}}{n(n+1)(n+2)}\,.
+ \end{split}
+ \label{eq:betalimits}
+ \eeq
+ %
+ \subsubsection{Double-Gamma asymptotics from stable graph sums}
+-For $n>0$, the Laurent polynomials $\beta_{2n}(\epsilon_1, \epsilon_2)$ can be expressed in terms of a certain sum over stable graphs, which we will prove in \cref{sec:resconRmat}. Define
++For $g>1$, the Laurent polynomials $\beta_{2g-2}(\epsilon_1, \epsilon_2)$ can be expressed in terms of a certain sum over stable graphs, which we will prove in \cref{sec:resconRmat}. Define
+ %
+ \beq
+ \begin{split}
+ \mathrm{Cont}_{\rm cf}(d) & \coloneqq  [z^{\mathsf{a}(d)-1}]\l(1- \Upsilon\l(-\frac{z}{\epsilon_1},-\frac{z}{\epsilon_2}\r)\l(1-\frac{z}{\epsilon_1+\epsilon_2}\r)^{-1}\r)\,, \\
+ \mathrm{Cont}_{\rm cf}(e) & \coloneqq  [z^{\mathsf{a}(h_1)} w^{\mathsf{a}(h_2)}]\l( \frac{1- \Upsilon\l(-\frac{z}{\epsilon_1},-\frac{z}{\epsilon_2}\r)\Upsilon\l(-\frac{w}{\epsilon_1},-\frac{w}{\epsilon_2}\r)}{z+w}\r)\,, \\
+-\mathrm{Cont}_{\rm cf}(v) & \coloneqq (-(\epsilon_1+\epsilon_2)^3\epsilon_1 \epsilon_2)^{\frac{2\mathsf{g}(v)-2+\mathsf{|H(v)|}}{2}} %\sum_{d_1, \dots, d_{|\DD(v)|}}\sum_{l_1, \dots, l_{|\mathsf{L}(v)|}}  
++\mathrm{Cont}_{\rm cf}(v) & \coloneqq 
++%(-(\epsilon_1+\epsilon_2)^3\epsilon_1 \epsilon_2)^{\frac{2\mathsf{g}(v)-2+\mathsf{|H(v)|}}{2}} %\sum_{d_1, \dots, d_{|\DD(v)|}}\sum_{l_1, \dots, l_{|\mathsf{L}(v)|}}  
+ %\prod_{d \in \DD(v)} T_{\mathsf{q}(v),\mathsf{a}(d)} 
+ \int_{[\Mbar_{\mathsf{g}(v), |\HH(v)|}]}
+ \prod_{k=1}^{|\HH(v)|} 
+@@ -5100,10 +5110,12 @@
+ \label{eq:contbetagiv}
+ \eeq
+ %
+-The edge, vertices, and dilaton factors are identical to the corresponding terms appearing in the Givental--Teleman higher genus potentials of the special cubic Hodge-CohFT \cite{Okounkov:2003aok}, but for the appearance of a linear factor $(1-2z/\epsilon_+)$ rescaling the generating function for the dilaton leaf contributions. Deferring the proof to \cref{sec:resconRmat}, we claim that the following equality holds:
++The edge, vertices, and dilaton factors are identical to the corresponding terms appearing in the Givental--Teleman higher genus potentials of the special cubic Hodge-CohFT \cite{Okounkov:2003aok}, but for the appearance of a linear factor $(1-z/(\epsilon_1+\epsilon_2))^{-1}$ rescaling the generating function for the dilaton leaf contributions. Deferring the proof to \cref{sec:resconRmat}, we claim that the following equality holds:
+ \begin{prop}[= \cref{prop:cfgraphsum}]
++For $g \geq 2$, we have
+ \beq 
+-\beta_{2g}(\epsilon_1, \epsilon_2)=
++\beta_{2g-2}(\epsilon_1, \epsilon_2)=
++(-(\epsilon_1+\epsilon_2)^3\epsilon_1 \epsilon_2)^{g-1}
+     \sum_{\Gamma \in \cG^{[0]}_{g,0}} \frac{1}{|\mathrm{Aut(\Gamma)}|} \prod_{e\in \cE_\Gamma} \mathrm{Cont}_{\rm cf}(e)\prod_{d\in \DD_\Gamma} 
+ \mathrm{Cont}_{\rm cf}(d) \prod_{v\in \cV_\Gamma}  \mathrm{Cont}_{\rm cf}(v) 
+ \,.
+@@ -5115,7 +5127,7 @@
+ \cref{prop:cfgraphsummainbody} is a consequence of a closed-form formula for the all-order asymptotics of the R-matrix of the resolved conifold near its conifold point, which we derive in \cref{sec:resconRmat}, together with \cref{prop:ResConifold}.
+ %
+ \begin{rmk}
+-   The unrefined limit $\epsilon_1=-\epsilon_2$ of $\beta_{2g}(\epsilon_1, \epsilon_2)$ is well--known  to be related to the orbifold Euler characteristic of the moduli space of genus $g$ smooth curves by the Harer--Zagier formula \cite{MR848681},
++   The unrefined limit $\epsilon_1=-\epsilon_2$ of $\beta_{2g-2}(\epsilon_1, \epsilon_2)$ is well--known  to be related to the orbifold Euler characteristic of the moduli space of genus $g$ smooth curves by the Harer--Zagier formula \cite{MR848681},
+     \[
+     \chi(M_g) = \lambda^{2-2g} \beta_{2g-2}(\lambda, -\lambda) = \frac{B_{2g}}{2g(2g-2)}\,.
+ \]
+@@ -5125,12 +5137,12 @@
+ 
+     
+ \subsubsection{Generators at the conifold point}
+-Let now
++\label{sec:cfgen}
++Let now, for $|y|<1/27$,
++%$t_{\rm cf}$ be the solution of \eqref{eq:pfinf} vanishing at the conifold point, normalised so that $t_{\rm cf} = (1+27y) + \cO(1+27y)^2$, and
+ %
+ \[
+-t_{\rm cf} \coloneqq 
+-\frac{\sqrt{3}}{2\pi} I_{2,1}(y)\,, \quad
+-A_{\rm cf}(y) \coloneqq  \theta_y t_{\rm cf}\,, \quad F_{\rm cf} \coloneqq \theta_y \log A_{\rm cf}(y)\,.
++t_{\rm cf} \coloneqq \frac{\sqrt{3}}{2\pi} \big(I_1^{[2]}(y)-\ri\pi I_0^{[1]}(y)-\pi^2\big)= (1+27y) + \cO(1+27y)^2\,, \quad A_{\rm cf}(y) \coloneqq  \theta_y t_{\rm cf}\,, \quad F_{\rm cf} \coloneqq \theta_y \log A_{\rm cf}(y)\,.
+ \]
+ %
+ \noindent There is a homomorphism of rings,
+@@ -5157,7 +5169,7 @@
+ We will also define
+ %, as in \cref{lem:modrel}, 
+ \[
+-D_{\rm cf} \coloneqq \mathsf{Cf}(D) = A_{\rm cf}^2 X\,, \quad E_{\rm cf}\coloneqq\mathsf{Cf}(E) = \frac{1}{2}(D_{\rm cf}-X)\,, 
++D_{\rm cf} \coloneqq \mathsf{Cf}(D) = \frac{X}{A_{\rm cf}^2}\,, \quad E_{\rm cf}\coloneqq\mathsf{Cf}(E) = \frac{1}{2}(D_{\rm cf}-X)\,,
+ \]
+ %and we will identify \[Y_i^{\rm cf}\coloneqq \mathsf{Cf}(Y_i)=Y_i\,.\] %consistent with the fact that \[\mathsf{Cf}\l(\prod_{i=0}^2 Y_i\r) =-(\epsilon_1+\epsilon_2)^3 \frac{X}{27}\,.\]  
+ Finally, the conifold R-matrix and conifold refined generating series are defined as 
+@@ -5167,7 +5179,7 @@
+ By \eqref{eq:gtH}, we have
+ \beq 
+ \GW^{\rm cf}_{g}
+-= \sum_{\Gamma \in \cG^{[2]}_{g,n}} \frac{(\epsilon_1 \epsilon_2)^{g-1}}{|\mathrm{Aut}(\Gamma)|} 
++= \sum_{\Gamma \in \cG^{[2]}_{g,n}} \frac{1}{|\mathrm{Aut}(\Gamma)|} 
+ \mathsf{Cf}\l[\prod_{e\in \cE_\Gamma}\mathrm{Cont}(e)
+ \prod_{h\in \LL_\Gamma 
+ %\sqcup \DD_\Gamma
+@@ -5186,7 +5198,7 @@
+ \subsubsection{Oscillating integrals at the conifold point}
+ Let $\xi=1/X = 1+27 y$, and consider the asymptotic behaviour of the oscillating integrals \eqref{eq:oscintP} near the conifold point $\xi = 0$. When $i \neq 0$, the critical points \eqref{eq:qi}, the corresponding critical values, and the associated coefficients of the saddle-point expansion are analytic and non-zero at $\xi= 0$:
+ \[
+-\mathsf{Asym}_{q_i^{\rm cr}}[\re^{-\cW/z}\dd\Omega] = \cO(\xi^0)\,.
++\mathsf{Asym}_{q_i^{\rm cr}}[\re^{\cW/z}\dd\Omega] = \cO(\xi^0)\,.
+ \]
+ %all quantities entering the Givental--Teleman reconstruction formula are analytic and non-zero at $y=-1/27$.
+ %
+@@ -5200,7 +5212,7 @@
+ On the other hand, the critical point $q^{\rm cr}_0 \to \infty$ has a simple pole at $\xi=0$, and the corresponding critical value $\mathsf{u}_0$ diverges logarithmically at $\xi=0$. This divergence similarly affects the coefficients of the Laplace expansion of \eqref{eq:oscintP} around $q^{\rm cr}_0$, and therefore all divergence in the Gromov--Witten potential at the conifold point stems from quantities arising as coefficients from the steepest descent expansion around the critical point $q_{\rm cr}^{[0]}$. In $s$-coordinates, this is the steepest descent integral
+ %
+ \beq 
+-\mathsf{Asym}_{s^{\rm cr}}[\re^{-\cW/z} \dd \Omega] = \frac{1}{\sqrt{\det(-h)}} \l[ \re^{\frac{z}{2} \sum_{m,n} h^{mn} \partial^2_{s_m s_n}} \re^{-(\cW^{(1)}_{\rm ng}+\cW^{(2)}_{\rm ng})/z} g(s) \r]\Bigg|_{s=s_{\rm cr}}\,,
++\mathsf{Asym}_{s^{\rm cr}}[\re^{\cW/z} \dd \Omega] = \frac{1}{\sqrt{\det(h)}} \l[ \re^{\frac{z}{2} \sum_{m,n} h^{mn} \partial^2_{s_m s_n}} \re^{(\cW^{(1)}_{\rm ng}+\cW^{(2)}_{\rm ng})/z} g(s) \r]\Bigg|_{s=s_{\rm cr}}\,,
+ \label{eq:asympRp2}
+ \eeq 
+ %
+@@ -5208,7 +5220,7 @@
+ %
+ \[
+ s^{\rm cr} = \l(0,0, \frac{(\epsilon_1+\epsilon_2)y^{1/3}}{1+3 y^{1/3}}\r)\,, \quad 
+-g(s) = \frac{\sqrt{s_2^2 s_1^2-4 s_3  s_1^3+18 s_2 s_3 s_1-4 s_2^3-27 s_3^2}}{s_3^3}\,, 
++g(s) = \frac{9}{s_3\sqrt{s_2^2 s_1^2-4 s_3  s_1^3+18 s_2 s_3 s_1-4 s_2^3-27 s_3^2}}\,, 
+ \]
+ \[
+ h = \l(\bary{ccc} 0 & 3 & 0 \\ 3 & 0 & 0 \\
+@@ -5217,10 +5229,7 @@
+ \cW^{(1)}_{\rm ng} = s_1^3\,, 
+ \]
+ \bea
+-\cW^{(2)}_{\rm ng} &=& 
+-s_3
+-   \left(\frac{1}{y^{1/3}}+3\right)+\left(\epsilon _1+\epsilon _2\right) \log \left(s_3\right) - \left(\epsilon _1+\epsilon _2\right) \log \left(-\frac{y^{1/3} \left(\epsilon
+-   _1+\epsilon _2\right)}{3 y^{1/3}+1}-1\right) \nn \\ &+& \frac{\left(s_3 \left(3 y^{1/3}+1\right)+y^{1/3} \left(\epsilon _1+\epsilon _2\right)\right){}^2}{2 y^{2/3} \left(\epsilon _1+\epsilon _2\right)}
++\cW^{(2)}_{\rm ng} &=& \cW^{(2)}(s_3)-\cW^{(2)}(s_3^{\rm cr})-\frac{\epsilon_1+\epsilon_2}{2 (s_3^{\rm cr})^2}(s_3-s_3^{\rm cr})^2\,, \qquad \cW^{(2)}(s_3) = \left(3+\frac{1}{y^{1/3}}\right)s_3-\left(\epsilon _1+\epsilon _2\right) \log s_3
+ \,. \nn
+ \eea
+  
+@@ -5240,56 +5249,41 @@
+ The differential operators obtained from the terms $(m,n)=(1,2)$, $(2,1)$ and $(3,3)$ in the Feynman sum \eqref{eq:asympRp2} commute, so we will apply them separately in turn. For $m+n=3$, we have that 
+ %
+ \[
+-\l[\re^{\frac{z\de^2_{s_1 s_2}}{3}} \re^{-\cW^{(1)}_{\rm ng}/z} g(s) \r]\Bigg|_{s_1=s_2=0} = 
+-\l[\re^{-\cW^{(1)}_{\rm ng}/z} \re^{\frac{z\de^2_{s_1 s_2}}{3}} g(s) \r]\Bigg|_{s_1=s_2=0} = \sqrt{3}\ri\sum_{l \geq 0} \frac{r_l}{s_3^{l+2}}\,,
++\l[\re^{\frac{z\de^2_{s_1 s_2}}{3}} \re^{\cW^{(1)}_{\rm ng}/z} g(s) \r]\Bigg|_{s_1=s_2=0} = -\frac{\sqrt{3}\ri}{s_3^2}\sum_{l \geq 0} r_l\bigg(\frac{z}{s_3}\bigg)^l\,,
+ \]
+ %
+-where $r_0=-3$, $r_1=1$, $r_2=\frac{4}{9}$, $\dots\,$. Then, 
+-%
++where $r_0=1$, $r_1=1/9$, $r_2=\frac{2}{81}$, $\dots\,$. Then,
+ \[
+-\mathsf{Asym}_{s^{\rm cr}}[\re^{-\cW/z} \dd \Omega] = \sqrt \frac{-1}{\det h}  \sum_{l \geq 0} r_l 
+-\l[\re^{ \frac{z\de^2_{s_3}}{2}}\re^{-\cW^{(2)}_{\rm ng}/z} s_3^{-2-l} \r]
+-\Bigg|_{s_3=\frac{y^{1/3}(\epsilon_1+\epsilon_2) }{1+3 y^{1/3}}}\,.
+-%&=& \sqrt{-27} (\epsilon_1+\epsilon_2) \frac{\Theta\l(\frac{z}{\epsilon_1+\epsilon_2} \r)}{\epsilon_1+\epsilon_2-z}+\cO(\xi)\,.
++\mathsf{Asym}_{s^{\rm cr}}[\re^{\cW/z} \dd \Omega] = \frac{9}{\sqrt{-9}\sqrt{-27}}  \sum_{l \geq 0} r_l\, z^l\, \mathsf{Asym}_{s_3^{\rm cr}}\l[\re^{\cW^{(2)}/z} s_3^{-2-l}\dd s_3\r]\,,
+ \]
+ %
+-The prefactor on the r.h.s.~has a simple pole at $\xi=0$, while the summands in the second factor have zeroes of order $l+2$. Therefore the  r.h.s.~vanishes linearly as $\xi\to 0$, with leading coefficient given by the term $l=0$. Notice now that
+-%
++where $\sqrt{-9}$ is the square root of the determinant of the $(s_1,s_2)$-block of $h$, and the one-dimensional asymptotics on the right-hand side are taken with respect to $\phi=-\cW^{(2)}$.
++The one-dimensional integrals are Gamma integrals. Substituting $s_3 \to -q/(3+y^{-1/3})$, we have
+ \[ 
+-\sqrt \frac{3}{\det h} 
+-\l[\re^{ \frac{z\de^2_{s_3}}{2}}\re^{-\cW^{(2)}_{\rm ng}/z} s_3^{-2} \r]
+-\Bigg|_{s_3=-\frac{y^{1/3}(\epsilon_1+\epsilon_2) }{1+3 y^{1/3}}}
+-= \mathsf{Asym}_{\frac{b}{a}}
+-[\re^{-ax/z} x^b \dd x]\,,
++\re^{\cW^{(2)}/z}s_3^{-2-l}\dd s_3 \propto \re^{-q/z}q^{-(\epsilon_1+\epsilon_2)/z-l-2}\dd q\,,
+ \] 
+-%
+-where $a=3+y^{-1/3}$ and $b=-(\epsilon_1+\epsilon_2)/z-2$. The r.h.s.~is then the asymptotic tail of the Gamma integral 
+-\bea
+-\int_0^\infty \re^{-(3+y^{-1/3})t/z} t^{-(\epsilon_1+\epsilon_2)/z-2} \dd t &=&
+-\l(\frac{3+y^{-1/3}}{z}\r)^{1+(\epsilon_1+\epsilon_2)/z}
+-\Gamma\l(-\frac{\epsilon_1+\epsilon_2}{z}-1\r)\,,\nn 
+-%\\
+-%&=&
+-%\l(\frac{3+y^{-1/3}}{z}\r)^{1+(\epsilon_1+\epsilon_2)/z}
+-%\frac{\Gamma\l(-\frac{\epsilon_1+\epsilon_2}{z}\r)}{-\frac{\epsilon_1+\epsilon_2}{z}-1}\,, \nn
+-\eea
+-%
+-so that
+-%
++which is the integrand of \cref{exmpl:stirling} with $\alpha=-(\epsilon_1+\epsilon_2)$ and $\beta=-l-1$. Since the Stirling series in \cref{exmpl:stirling} is normalised to one at $z=0$, we obtain
+ \[ 
+-\mathsf{Asym}_{s^{\rm cr}}[\re^{-\cW/z} \dd \Omega] =
+--\frac{\xi}{\left(3(\epsilon _1+\epsilon _2)\right)^{1/2}}\frac{\Theta\l(-\frac{z}{\epsilon_1+\epsilon_2} \r)}{\epsilon_1+\epsilon_2-z} + \cO(\xi)^2\,.
++\mathsf{Asym}_{s_3^{\rm cr}}\l[\re^{\cW^{(2)}/z} s_3^{-2-l}\dd s_3\r] = \frac{(s_3^{\rm cr})^{-l-1}}{\sqrt{-(\epsilon_1+\epsilon_2)}}\,\Theta\l(-\frac{z}{\epsilon_1+\epsilon_2},-l-1\r)\,,
+ \] 
++where the prefactor is the value of $s_3^{-2-l}/\sqrt{h_{33}}$ at the critical point. The summand with index $l$ is therefore of order $\xi^{l+1}$, and the leading behaviour at $\xi \to 0$ is given by the term $l=0$. Using $\Theta(u,-1)=\Theta(u)/(1-u)$, we find
+ %
+-Similarly, we get
++\[ 
++\mathsf{Asym}_{s^{\rm cr}}[\re^{\cW/z} \dd \Omega] =
++-\frac{\xi}{\left(3(\epsilon _1+\epsilon _2)\right)^{1/2}}\frac{\Theta\l(-\frac{z}{\epsilon_1+\epsilon_2} \r)}{\epsilon_1+\epsilon_2+z} + \cO(\xi)^2\,.
++\] 
++%where the overall phase, which depends on the branches of the square roots and on the orientation of the cycle, has been fixed consistently with \eqref{eq:normNLR} and ({\bf Normalisation}). 
++Similarly, inserting $s_3$ and $s_3^2$ shifts $\beta$ to $-l$ and $1-l$ respectively, and since $\Theta(u,0)=\Theta(u,1)=\Theta(u)$ we get
+ %
+ %
+ \bea 
+-\mathsf{Asym}_{s^{\rm cr}}[\re^{-\cW/z} s_3 \dd \Omega] &=&
+--\sqrt{\frac{1}{3\left(\epsilon _1+\epsilon _2\right)}} \Theta\l(-\frac{z}{\epsilon_1+\epsilon_2} \r) + \cO(\xi) \,, \nn \\
+-\mathsf{Asym}_{s^{\rm cr}}[\re^{-\cW/z} s_3^2 \dd \Omega] &=&
++\mathsf{Asym}_{s^{\rm cr}}[\re^{\cW/z} s_3 \dd \Omega] &=&
++\sqrt{\frac{1}{3\left(\epsilon _1+\epsilon _2\right)}} \Theta\l(-\frac{z}{\epsilon_1+\epsilon_2} \r) + \cO(\xi) \,, \nn \\
++\mathsf{Asym}_{s^{\rm cr}}[\re^{\cW/z} s_3^2 \dd \Omega] &=&
+ -\sqrt{\frac{\epsilon _1+\epsilon _2}{3}} \Theta\l(-\frac{z}{\epsilon_1+\epsilon_2} \r)~\frac{1}{\xi} + \cO(1) \,. \nn
+ \eea 
++%In all three cases the dependence on $z$ at leading order in $\xi$ is through $\Theta(-z/(\epsilon_1+\epsilon_2))$, together with the linear factor $(\epsilon_1+\epsilon_2+z)^{-1}$ in the first one.
++
+ %
+ \subsubsection{Givental's reconstruction at the conifold point}
+ From the asymptotic analysis of the previous Section, we deduce the following
+@@ -5298,42 +5292,41 @@
+ %    Upon the modular transformation $\tau \to -1/(3 \tau)$, 
+ For $g>1$, the conifold refined Gromov--Witten potentials of $K_{\bbP^2}$ satisfy
+     \[ 
+-\GW^{\rm cf}_{g} = \frac{(-3)^{g-1}\beta_{2g}(\epsilon_1, \epsilon_2)}{t_{\rm cf}^{2g-2}} +\cO\l(\frac{1}{t_{\rm cf}^{2g-3}}\r)\,.
++\GW^{\rm cf}_{g} = \frac{(-3)^{g-1}\beta_{2g-2}(\epsilon_1, \epsilon_2)}{t_{\rm cf}^{2g-2}} +\cO\l(\frac{1}{t_{\rm cf}^{2g-3}}\r)\,.
+     \] 
+ In particular,
+ \[
+-\mathscr{F}^{\rm cf}_{0,g} = \frac{(-3)^{g-1} B_{2g}}{2g(2g-2) t_{\rm cf}^{2g-2}} + \cO\l(\frac{1}{t_{\rm cf}^{2g-3}}\r)\,, \quad \mathscr{F}^{\rm cf}_{g,0} = \frac{(-3)^{g-1} B_{2g+2}(1/2)}{2g(2g+1)(2g+2) t_{\rm cf}^{2g-2}}+ \cO\l(\frac{1}{t_{\rm cf}^{2g-3}}\r)\,.
++\mathscr{F}^{\rm cf}_{0,g} = \frac{3^{g-1} B_{2g}}{2g(2g-2) t_{\rm cf}^{2g-2}} + \cO\l(\frac{1}{t_{\rm cf}^{2g-3}}\r)\,, \quad \mathscr{F}^{\rm cf}_{g,0} = \frac{(-3)^{g-1} B_{2g}(1/2)}{2g(2g-1)(2g-2) t_{\rm cf}^{2g-2}}+ \cO\l(\frac{1}{t_{\rm cf}^{2g-3}}\r)\,.
+ \]
+ \label{thm:cfasym}
+ \end{thm}
+ %
+ \begin{proof}
+-From \eqref{eq:RHb}, \eqref{eq:normNLR}, and $\mathsf{R}^{\rm cf}_{ai} = \mathsf{Cf} (\mathsf{R}_{ai})$, we have
++From \eqref{eq:RHb}, \eqref{eq:normNLR}, and $\mathsf{R}^{\rm cf}_{ai} = \mathsf{Cf} (\mathsf{R}_{ai})$, we have, at leading order in $\xi$,
+ %
+ \bea 
+-\mathsf{Asym}_{s^{\rm cr}}[\re^{-\cW/z} \dd \Omega]
++\mathsf{Asym}_{s^{\rm cr}}[\re^{\cW/z} \dd \Omega]
+ &=& \mathsf{R}^{\rm cf}_{00} N_0\,, \nn \\
+-\mathsf{Asym}_{s^{\rm cr}}[s_3\re^{-\cW/z} \dd \Omega] &=&
++\mathsf{Asym}_{s^{\rm cr}}[s_3\re^{\cW/z} \dd \Omega] &=&
+ A_{\rm cf}(y) \mathsf{R}^{\rm cf}_{10} N_0\,, \nn \\
+-\mathsf{Asym}_{s^{\rm cr}}[s_3^2 \re^{-\cW/z} \dd \Omega] &=& %z\theta_y \mathsf{R}_{10} =  
+-D_{\rm cf}(y) (\mathsf{R}^{\rm cf}_{20} + E_{\rm cf}(y) \mathsf{R}^{\rm cf}_{10}) N_0\,. \nn 
++\mathsf{Asym}_{s^{\rm cr}}[s_3^2 \re^{\cW/z} \dd \Omega] &=& %z\theta_y \mathsf{R}_{10} =
++-D_{\rm cf}(y) \mathsf{R}^{\rm cf}_{20} N_0\,. \nn 
+ \eea 
+ %
+ Since
+ %
+ \[
+ A_{\rm cf}(y) = -1 + \cO(\xi)\,, \quad 
+-D_{\rm cf}(y) = \frac{1}{\xi} + \cO(1)\,, \quad 
+-E_{\rm cf}(y) = -\frac{2}{9}(\epsilon_1+\epsilon_2) + \cO(\xi)\,, 
++D_{\rm cf}(y) = \frac{1}{\xi} + \cO(1)\,, 
+ \] 
+ %
+ we then get
+ %
+ \beq
+ \begin{split}
+-\mathsf{R}^{\rm cf}_{00} &=-\frac{\xi}{\left(3\epsilon_1 \epsilon_2(\epsilon _1+\epsilon _2)\right)^{1/2}}\frac{\Upsilon\l(\frac{z}{\epsilon_1},\frac{z}{\epsilon_2} \r)}{\epsilon_1+\epsilon_2-z} + \cO(\xi)^2\,, \nn \\
++\mathsf{R}^{\rm cf}_{00} &=-\frac{\xi}{\left(3\epsilon_1 \epsilon_2(\epsilon _1+\epsilon _2)\right)^{1/2}}\frac{\Upsilon\l(\frac{z}{\epsilon_1},\frac{z}{\epsilon_2} \r)}{\epsilon_1+\epsilon_2+z} + \cO(\xi)^2\,,  \\
+ \mathsf{R}^{\rm cf}_{10} &=
+--\sqrt{\frac{1}{3\epsilon_1 \epsilon_2\left(\epsilon _1+\epsilon _2\right)}} \Upsilon\l(\frac{z}{\epsilon_1},\frac{z}{\epsilon_2} \r) + \cO(\xi) \,, \nn \\
++-\sqrt{\frac{1}{3\epsilon_1 \epsilon_2\left(\epsilon _1+\epsilon _2\right)}} \Upsilon\l(\frac{z}{\epsilon_1},\frac{z}{\epsilon_2} \r) + \cO(\xi) \,,  \\
+ \mathsf{R}^{\rm cf}_{20} &=
+ \sqrt{\frac{\epsilon _1+\epsilon _2}{3\epsilon_1 \epsilon_2}}
+ ~\Upsilon\l(\frac{z}{\epsilon_1},\frac{z}{\epsilon_2} \r) + \cO(\xi) \,.
+@@ -5355,48 +5348,76 @@
+ \label{eq:deltacf}
+ \eeq
+ %
+-
+-We are now ready to compute the dominant contribution to the graph sum \eqref{eq:gtcf} as $\xi \to 0$. Since 
+-$\mathsf{R}^{\rm cf}_{ai} = \cO(\xi)$ for $i\neq 0$, at the leading order in $t_{\rm cf}$ %$=(1+27 y)+\cO(1+27 y)^2$, 
+-there are no contributions from stable graphs with decoration other than $i=0$.
+-%; and because $\mathsf{R}^{\rm cf}_{00} = \cO(\xi)$, all contributions from graphs with dilaton leaves are sub-leading in $\xi$. %Let then $\cG_g^{\rm cf} \subset \cG_{g,0}^{[0]}$ be the subset of 0-decorated genus-$g$ weighted stable graphs with no marked leaves. 
+-We have:
+-
++We are now ready to compute the dominant contribution to the graph sum \eqref{eq:gtcf} as $\xi \to 0$. We first bound the order of the pole of each summand. The quantities entering \eqref{eq:gtcf} have the following orders in $\xi$, which follow from \eqref{eq:Rcf}--\eqref{eq:deltacf}, from the analyticity at $\xi=0$ of the saddle-point data at the critical points $q^{\rm cr}_i$ with $i \neq 0$, and from $\Psi_{0i}=\Delta_i^{-1/2}$:
++\begin{itemize}
++\item for $i \neq 0$: $\Delta_i^{\rm cf}=\cO(1)$, $\mathsf{R}^{\rm cf}_{ai} = \cO(1)$ for all $a$, and $\mathsf{D}_{i,n}=\cO(1)$;
++\item for $i=0$: 
+ \[ 
+-\GW^{\rm cf}_{g} = \frac{1}{t_{\rm cf}^{2g-2}}\sum_{\Gamma \in \cG^{[0]}_{g,0}} \frac{1}{|\mathrm{Aut(\Gamma)}|} \prod_{e\in \cE_\Gamma} \mathrm{Cont}_{\rm cf}(e)\prod_{d\in \DD_\Gamma} \mathrm{Cont}_{\rm cf}(d) \prod_{v\in \cV_\Gamma} \mathrm{Cont}_{\rm cf}(v) + \cO\l(\frac{1}{t_{\rm cf}^{2g-3}}\r)\,,
++(\Delta_0^{\rm cf})^{1/2}=\cO(\xi^{-1})\,, \quad \mathsf{R}^{\rm cf}_{00}=\cO(\xi)\,, \quad \mathsf{R}^{\rm cf}_{10}=\cO(1)\,, \quad \mathsf{R}^{\rm cf}_{20}=\cO(1)\,,\]
++and \[\mathsf{D}_{0,n}=[z^{n-1}](\Psi_{00}-\mathsf{R}^{\rm cf}_{00}(-z))=\cO(\xi)\,;\]
++\item for all $i,j$: $\mathsf{E}^{ij}_{n,m}=\cO(1)$.
++\end{itemize}
++Let $\Gamma \in \cG^{[2]}_{g,0}$, and let $\cV_0 \subset \cV_\Gamma$ be the set of vertices decorated by $0$. The order of the pole at $\xi=0$ of the summand of $\Gamma$ is at most
++\[
++\sum_{v \in \cV_0}\big(2\mathsf{g}(v)-2+|\HH(v)|\big) - |\DD_0| = \sum_{v \in \cV_0}\big(2\mathsf{g}(v)-2+|\mathsf{E}(v)|\big)\,,
+ \] 
+-%
+-where, from \eqref{eq:Rcf}--\eqref{eq:deltacf},
++where $\DD_0$ is the set of dilaton leaves at vertices in $\cV_0$, and $\mathsf{E}(v) \subset \HH(v)$ is the set of half-edges at $v$ belonging to edges. Now, 
++\[\sum_{v \in \cV_\Gamma}(2\mathsf{g}(v)-2+|\mathsf{E}(v)|)=2g-2\,,
++\]
++so the pole order is at most 
++\[
++2g-2-\sum_{v \notin \cV_0}(2\mathsf{g}(v)-2+|\mathsf{E}(v)|)\,.
++\] Let $K$ be a connected component of the subgraph spanned by the vertices not in $\cV_0$, and let $n_K$ be the number of edges connecting $K$ to $\cV_0$. Then 
++\[
++\sum_{v \in K}(2\mathsf{g}(v)-2+|\mathsf{E}(v)|)=2\mathsf{g}(K)-2+n_K\,.\]
++By the dimension constraint $\sum_{h}\mathsf{a}(h)=3\mathsf{g}(v)-3+|\HH(v)|$, and since $\mathsf{a}(d) \geq 2$ for dilaton leaves, every genus zero vertex has $|\mathsf{E}(v)|\geq 3$. Hence $2\mathsf{g}(K)-2+n_K \geq 1$ whenever $\cV_0 \neq \emptyset$, since a genus zero $K$ is a tree whose extremal vertices need at least two edges to $\cV_0$, or at least three if $K$ is a single vertex, while $n_K \geq 1$ by connectedness if $\mathsf{g}(K)\geq 1$. We conclude that every summand of \eqref{eq:gtcf} has a pole of order at most $2g-2$, and that the coefficient of $\xi^{2-2g}$ only receives contributions from graphs all of whose vertices are decorated by $0$. For these, extracting a factor $(\Delta^{\rm cf}_0)^{1/2}$ for each dilaton leaf and using $\sum_{v}(2\mathsf{g}(v)-2+|\mathsf{E}(v)|)=2g-2$, we find
++\[ 
++\GW^{\rm cf}_{g} = \frac{\big(3\epsilon_1\epsilon_2(\epsilon_1+\epsilon_2)^3\big)^{g-1}}{\xi^{2g-2}}\sum_{\Gamma \in \cG^{[0]}_{g,0}} \frac{1}{|\mathrm{Aut(\Gamma)}|} \prod_{e\in \cE_\Gamma} \mathrm{Cont}_{\rm cf}(e)\prod_{d\in \DD_\Gamma} \mathrm{Cont}_{\rm cf}(d) \prod_{v\in \cV_\Gamma} \mathrm{Cont}_{\rm cf}(v) + \cO\l(\frac{1}{\xi^{2g-3}}\r)\,,
++\] 
++where
+ %
+ \begin{align}
+-\mathrm{Cont}_{\rm cf}(e)  \coloneqq &  [z^{\mathsf{a}(h_1)} w^{\mathsf{a}(h_2)}]\lim_{\xi\to 0}\l( \frac{1- \mathsf{R}^{\rm cf}_{a0}(-z)\eta^{ab}\mathsf{R}^{\rm cf}_{b0}(-w)}{z+w}\r) %\,,\nn \\
+-%&=& 
+-=[z^{\mathsf{a}(h_1)} w^{\mathsf{a}(h_2)}]
++\mathrm{Cont}_{\rm cf}(e)  \coloneqq &  [z^{\mathsf{a}(h_1)} w^{\mathsf{a}(h_2)}]\lim_{\xi\to 0}\l( \frac{1- \sum_{ab}\mathsf{R}^{\rm cf}_{a0}(-z)\eta^{ab}\mathsf{R}^{\rm cf}_{b0}(-w)}{z+w}\r) \nn \\
++= & [z^{\mathsf{a}(h_1)} w^{\mathsf{a}(h_2)}]
+ \l( \frac{1- \Upsilon\l(-\frac{z}{\epsilon_1},-\frac{z}{\epsilon_2}\r)\Upsilon\l(-\frac{w}{\epsilon_1},-\frac{w}{\epsilon_2}\r)}{z+w}\r)\,, \nn \\
+ %\]
+ %\[
+-\mathrm{Cont}_{\rm cf}(d)  \coloneqq  & [z^{\mathsf{a}(d)-1} ]\lim_{\xi\to 0}  \l(- (\Delta^{\rm cf}_0)^{1/2} \mathsf{R}^{\rm cf}_{00}(-z)\r) 
++\mathrm{Cont}_{\rm cf}(d)  \coloneqq  & [z^{\mathsf{a}(d)-1} ]\lim_{\xi\to 0}  \l((\Delta^{\rm cf}_0)^{1/2}\big(\Psi_{00} - \mathsf{R}^{\rm cf}_{00}(-z)\big)\r) 
+ %\,, \nn \\
+ %&=& 
+ = [z^{\mathsf{a}(d)-1} ]
+ \l(1- \Upsilon\l(-\frac{z}{\epsilon_1},-\frac{z}{\epsilon_2}\r)\l(1-\frac{z}{\epsilon_1+\epsilon_2}\r)^{-1}\r)\,, \nn \\
+-\mathrm{Cont}_{\rm cf}(v) \coloneqq &  (-\sqrt{3(\epsilon_1+\epsilon_2)^3\epsilon_1 \epsilon_2})^{2\mathsf{g}(v)-2+\mathsf{|H(v)|}} 
+-\int_{[\Mbar_{\mathsf{g}(v), |\HH(v)|}]} \prod_{k=1}^{|\HH(v)|} \psi_k^{\mathsf{a}(h_k)}\,, \nn
++\mathrm{Cont}_{\rm cf}(v) \coloneqq &  
++\int_{[\Mbar_{\mathsf{g}(v), |\HH(v)|}]} \prod_{k=1}^{|\HH(v)|} \psi_k^{\mathsf{a}(h_k)}\,, 
++\label{eq:cfcontP2}
+ \end{align}
+ %
+-where in the first two equalities we have used \eqref{eq:Rcf}.
++and where in the first two equalities we have used \eqref{eq:Rcf}, \eqref{eq:deltacf} and \eqref{eq:etaflat}. In the edge term, $\mathsf{R}^{\rm cf}_{00}$ does not contribute in the limit, and the terms $(a,b)=(1,1)$ and $(a,b)=(1,2),(2,1)$ contribute $-\Upsilon\Upsilon$ and $2\Upsilon\Upsilon$ respectively, with $\eta^{11}=-3\epsilon_1\epsilon_2(\epsilon_1+\epsilon_2)$, $\eta^{12}=-3\epsilon_1\epsilon_2$ and $\eta^{22}=0$ on the fibrewise torus.
+ %
+-    The first equality in the Theorem is then immediate from \eqref{eq:contbetagiv}--\eqref{eq:betagiv}. The last two equalities in the statement of the Theorem are respectively the unrefined ($\epsilon_1 \to - \epsilon_2$) and NS ($\epsilon_1 \to 0$) limits of the first, and follow from \eqref{eq:betalimits}.
++Therefore, by \eqref{eq:betagiv} and $t_{\rm cf}=\xi+\cO(\xi^2)$,
++\[
++\GW^{\rm cf}_{g} = \frac{(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)}{t_{\rm cf}^{2g-2}}+\cO\l(\frac{1}{t_{\rm cf}^{2g-3}}\r)\,,
++\]
++which is the first equality in the Theorem. The last two equalities in the statement of the Theorem are respectively the unrefined ($\epsilon_1 \to - \epsilon_2$) and NS ($\epsilon_1 \to 0$) limits of the first.
++%and follow from \eqref{eq:betalimits} with $n=2g-2$, together with $\GW_g(\epsilon,-\epsilon)=(-\epsilon^2)^{g-1}\mathscr{F}_{0,g}$ and $\lim_{\epsilon_1 \to 0}\epsilon_1 \GW_g = \epsilon_2^{2g-1}\mathscr{F}_{g,0}$.
++\end{proof}
++
++\begin{lem}[Pole order at the conifold point]
++For $g \geq 2$, the conifold refined generating series $\GW^{\rm cf}_g$ has a pole of order at most $2g-2$ at $\xi=0$. Consequently, for $k+g \geq 2$, $\mathscr{F}^{\rm cf}_{k,g}=\mathsf{Cf}(\mathscr{F}_{k,g})$ has a pole of order at most $2(k+g)-2$ at $\xi=0$.
++\label{lem:cfpole}
++\end{lem}
++\begin{proof}
++The first statement is the bound on the order of the pole of each summand of \eqref{eq:gtcf} established in the proof of \cref{thm:cfasym}. That bound only uses the orders in $\xi$ of the quantities entering the graph sum, and not the precise form of their leading coefficients. The second statement follows from the first, since $\mathscr{F}^{\rm cf}_{k,g}$ is the coefficient of $(\epsilon_1+\epsilon_2)^{2k}(\epsilon_1\epsilon_2)^{g-1}$ in $\GW^{\rm cf}_{k+g}$, and the bound holds identically in $\epsilon_1$, $\epsilon_2$.
+ \end{proof}
+ 
+ \begin{rmk}
+ The two special limits in   \cref{thm:cfasym} prove the leading order of the conifold asymptotics conjecture in \cite{HK10:OmegaBG,Coates:2018hms} and \cite[Conj.~1.9]{BFGW21:HAE}. A proof of the full refined conifold gap conjecture,
+     \[ 
+-\GW^{\rm cf}_{g} = \frac{(-3)^{g-1}\beta_{2g}(\epsilon_1, \epsilon_2)}{t_{\rm cf}^{2g-2}} +\cO\l(1\r)\,,
++\GW^{\rm cf}_{g} = \frac{(-3)^{g-1}\beta_{{2g-2}}(\epsilon_1, \epsilon_2)}{t_{\rm cf}^{2g-2}} +\cO\l(1\r)\,,
+     \] 
+ appears to require a significant leap in complexity. We have however verified that this holds for low genus: for example, from \eqref{eq:F2ref}, one computes
+     \[ 
+-\GW_2^{\rm cf} =  -\frac{7 \epsilon _1^4+10 \epsilon _2^2 \epsilon _1^2+7 \epsilon _2^4}{1920 \epsilon _1 \epsilon _2}\frac{1}{t_{\rm cf}^{2}} + \cO\l(1\r)\,.
++\GW_2^{\rm cf} =  -\frac{7 \epsilon _1^4+10 \epsilon _2^2 \epsilon _1^2+7 \epsilon _2^4}{1920 \epsilon _1 \epsilon _2}\frac{1}{t_{\rm cf}^{2}} + \cO\l(1\r) = -\frac{3\beta_2(\epsilon_1,\epsilon_2)}{t_{\rm cf}^2}+\cO(1)\,.
+     \] 
+ \label{rmk:cfgap}
+ \end{rmk}
+@@ -5411,7 +5432,7 @@
+ \subsection{Refined BPS integrality}
+ \label{sec: refined GV}
+ %Gopakumar and Vafa predicted the existence of certain integer invariants underlying the (unrefined) Gromov--Witten invariants of Calabi--Yau threefold \cite{GV98:MthTopStrI,GV98:MthTopStrII}. This conjecture got recently been proved by Ionel--Parker \cite{IP18:GV} and Doan--Ionel--Walpuski \cite{DIW21:GVfinite}. From the B-model observations of Choi--Huang--Katz--Klemm \cite{HK10:OmegaBG,CKK14:refBPS} one should expect a similar behaviour for our equivariantly refined invariants. 
+-The Gopakumar--Vafa formulation of the refined BPS partition function of a Calabi--Yau threefold $X$ predicts that the invariants $N^{\mathrlap{\beta}}{\mathstrut}_{j_-,j_+}$ in \eqref{eq:GVref} are positive integers \cite{GV98:MthTopStrI,GV98:MthTopStrII}. In this section we will formulate this expectation as precise conjectures in increasing levels of strength.
++The Gopakumar--Vafa formulation of the refined BPS partition function of a Calabi--Yau threefold $X$ predicts that the invariants $N^{\mathrlap{\beta}}{\mathstrut}_{j_-,j_+}$ in \eqref{eq:Omegabetaref} are positive integers \cite{GV98:MthTopStrI,GV98:MthTopStrII}. In this section we will formulate this expectation as precise conjectures in increasing levels of strength.
+ %and in decreasing level of generality.
+ 
+ \subsubsection{Rationality}
+@@ -5466,7 +5487,7 @@
+ 
+ We can further corroborate the evidence for \Cref{conj: rational lift} in the context of local surfaces. Let $S$ be a del Pezzo surface and consider the fibrewise scaling action by $\mgp{T}_{\mr{F}}=\Gm[2]$ on $Z = K_S \times \Aaff{2}$ from \Cref{sec: local surface prelim}. One checks that this action satisfies all conditions listed in \Cref{lem: shape of refGW series 2}, hence the all-genus Gromov--Witten generating series is regular up to a leading factor $(\epsilon_1 \epsilon_2)^{-1}$. Thus, if \Cref{conj: rational lift} holds, the following limit must exist:
+ \begin{equation*}
+-	\epsilon_2 \, \refGWb{K_S \times \Aaff{2}}{\mgp{T}_{\mr{F}}}{\beta} ~\Big\lvert_{\epsilon_2 =0} = \ch[\Gm] \, (1-\mchar{q}_2)\cdot \refBPSbarb{K_S \times \Aaff{2}}{\mgp{T}_{\mr{F}}}{\beta}~\Big\lvert_{\mchar{q}_2 =1}\,,
++	\epsilon_2 \, \refGWb{K_S \times \Aaff{2}}{\mgp{T}_{\mr{F}}}{\beta} ~\Big\lvert_{\epsilon_2 =0} = \ch[\Gm] \, (\mchar{q}_2-1)\cdot \refBPSbarb{K_S \times \Aaff{2}}{\mgp{T}_{\mr{F}}}{\beta}~\Big\lvert_{\mchar{q}_2 =1}\,,
+ \end{equation*}
+ where $\ch[\Gm] \mchar{q}_1 = \re^{\epsilon_1}$; in particular, the left-hand side lifts to a rational function in $\mchar{q}_1$. We can show that this is indeed the case.
+ 
+@@ -5505,7 +5526,7 @@
+ \end{equation*}
+ i.e.
+ \begin{equation*}
+-	\refBPSb{Z}{\mgp{G}}{\beta}(\mathbf{t}) = \frac{1}{[\mchar{q}_1][\mchar{q}_2]} \sum_{k|\beta} \frac{\mu(k)}{k} \, \refBPSbarb{Z}{\mgp{G}}{\beta/k} (\mathbf{t}^k)\,,
++	\refBPSb{Z}{\mgp{G}}{\beta}(\mathbf{t}) = [\mchar{q}_1][\mchar{q}_2] \sum_{k|\beta} \frac{\mu(k)}{k} \, \refBPSbarb{Z}{\mgp{G}}{\beta/k} (\mathbf{t}^k)\,,
+ \end{equation*}
+ where we write $[\mchar{q}]\coloneqq \mchar{q}^{1/2}-\mchar{q}^{-1/2}$ and $\mu$ is the M\"{o}bius function. In the above two equations, we denoted by $\Omega(\mathbf{t}^k)$ the image of the $k^{\rm th}$ Adams operation on an element $\Omega \in K_{\mgp{G}}(\mr{pt})$. The image of a one-dimensional $\mgp{T}$-representation $\mchar{t}$ under this operation is $\mchar{t}^k$.
+ 
+@@ -5577,7 +5598,7 @@
+ 		\label{eq: notation original GV}
+ 		\sum_{g\geq 0} (-\epsilon_-^2)^{g-1} \int_{[\Mbar_g(X,\beta)]^{\vir}}1 = \sum_{k|\beta} \sum_{g\geq 0}\frac{n_{0,g}^{\beta/k}}{k} \, (-1)^{g-1}\left(2 \sinh \tfrac{k \epsilon_-}{2}\right)^{2g-2}
+ 	\end{equation}
+-	where in order to get the right-hand side we applied \Cref{prop: unref limit}. Gopakumar and Vafa predicted that the coefficients $n^{\mathrlap{\beta}}{\mathstrut}_{0,g}$ appearing in \eqref{eq: notation original GV} are all integers, and furthermore vanish for $g\gg 0$ : these two statements were proven in \cite{IP18:GV} and \cite{DIW21:GVfinite} respectively. Therefore \Cref{conj: refined GV integrality II} (and thus also \Cref{conj: refined GV integrality}) are known to hold in the unrefined limit.
++	where in order to get the left-hand side we applied \Cref{prop: unref limit}. Gopakumar and Vafa predicted that the coefficients $n^{\mathrlap{\beta}}{\mathstrut}_{0,g}$ appearing in \eqref{eq: notation original GV} are all integers, and furthermore vanish for $g\gg 0$ : these two statements were proven in \cite{IP18:GV} and \cite{DIW21:GVfinite} respectively. Therefore \Cref{conj: refined GV integrality II} (and thus also \Cref{conj: refined GV integrality}) are known to hold in the unrefined limit.
+ %\end{rmk}
+ 	
+ 	\label{rmk: direct integration BPS}
+@@ -5658,7 +5679,7 @@
+ 
+ A second obvious check comes, again, from the unrefined limit: in this case, the evidence only translates to the compatibility with earlier conjectures.	Restricting \Cref{conj: MT type BPS local surfaces} to the anti-diagonal torus $\Gm_{\mchar{q}_-} \hookrightarrow \mgp{T}_{\mr{F}}$, i.e.~setting $\mchar{q}_+ = 1$, we recover a special instance of a conjecture of Maulik and Toda \cite[Conj.~3.18]{MT18:GV} predicting that the integers $n^{\beta,\MT}_{0,g} \in \bbZ$ defined via
+ \begin{equation*}
+-	\sum_{g\geq 0} n_{0,g}^{\beta,\MT} (-1)^{g+1} [\mchar{q}_-]^{2g} \coloneqq \refMTb{K_S}{\beta} (1, \mchar{q}_-)
++	\sum_{g\geq 0} n_{0,g}^{\beta,\MT} (-1)^{g} [\mchar{q}_-]^{2g} \coloneqq \refMTb{K_S}{\beta} (1, \mchar{q}_-)
+ \end{equation*}
+ satisfy equation \eqref{eq: notation original GV}. We remark that, for local surfaces, the BPS sheaf agrees with the IC sheaf as proven by Meinhardt in \cite[Thm~1.1]{Mei15:DTinvIC}. By \cite[Lem.~3.11]{MT18:GV} the $\epsilon_1=\epsilon_2=0$ limit of our conjecture is also seen to be compatible with Katz's proposal for genus zero Gopakumar--Vafa invariants \cite{Kat08:GVgenus0}.
+ 
+@@ -5674,7 +5695,7 @@
+ 		\GW_{\beta}(\bbP^2/D) = \sum_{k|\beta} \frac{1
+  % \refMTb{K_S}{\beta/k} (\mchar{q}_1^{k/2},\mchar{q}_1^{k/2})
+  }
+-{k^2 [\mchar{q}_1^k]} \, \MT^{\rm NS}_{\beta/k}(K_{\bbP^2})(\mchar{q}_1) ~ \Bigg\lvert_{\mchar{q}_1 \to \re^{\epsilon_1}}\,.
++{k^2 [\mchar{q}_1^k]} \, \MT^{\rm NS}_{\beta/k}(K_{\bbP^2})(\mchar{q}_1^k) ~ \Bigg\lvert_{\mchar{q}_1 \to \re^{\epsilon_1}}\,.
+ 	\end{equation*}
+ \end{thm}
+ 
+@@ -5685,8 +5706,8 @@
+ \begin{proof}
+ 	Combining \Cref{thm: NS vs log num} with \Cref{thm: Bousseaus BPS integrality P2 E} we obtain
+ 	\begin{equation*}
+-		\epsilon_2 \, \refGWb{K_{\bbP^2}}{\mgp{T}_{\mr{F}}}{\beta} ~\Big\lvert_{ \epsilon_2 = 0 } = \GW_{\beta}(\bbP^2/D) = \sum_{k|\beta} \frac{1}
+-{k^2 [\mchar{q}_1^k]} \, \MT^{\rm NS}_{\beta/k}(K_{\bbP^2})(\mchar{q}_1) ~\Bigg\lvert_{\mchar{q}_1 \to \re^{\epsilon_1}} \,.
++		\epsilon_2 \, \refGWb{Z}{\mgp{T}_{\mr{F}}}{\beta} ~\Big\lvert_{ \epsilon_2 = 0 } = \GW_{\beta}(\bbP^2/D) = \sum_{k|\beta} \frac{1}
++{k^2 [\mchar{q}_1^k]} \, \MT^{\rm NS}_{\beta/k}(K_{\bbP^2})(\mchar{q}_1^k) ~\Bigg\lvert_{\mchar{q}_1 \to \re^{\epsilon_1}} \,.
+ 	\end{equation*}
+ 	The expression on the right-hand side  is of course nothing but the restriction
+ 	\begin{equation*}
+@@ -5700,11 +5721,12 @@
+ 
+ In the case of local $\bbP^2$, we can also lend further support to the veracity of \Cref{conj: MT type BPS local surfaces} away from the unrefined and NS limits. The refined Maulik--Toda invariants earlier appeared in the work of 
+ %Kononov--Lim--Moreira--Pi--Shen 
+-\cite{KPS23:refBPSP2,KLMP24:CohOneDimSheavesP2}; the authors kindly shared the outcome of their calculation of $\refMTb{K_{\bbP^2}}{\beta}$ up to degree seven with us, and we checked that it agrees with  the refined direct integration method \cite[Table~2]{HKK13:OmegaBmodelRigidN2} (see \Cref{rmk: direct integration BPS}). Using the results of \cref{sec: ref mirror sym KP2,sec: ref KP2 beyond LV} and \cref{prop:KP2refintcheck}, we obtain the following statement.
++\cite{KPS23:refBPSP2,KLMP24:CohOneDimSheavesP2}, where the authors checked that $\refMTb{K_{\bbP^2}}{\beta}$ agrees with the refined BPS invariants computed through the refined topological vertex up to degree five. Within this degree bound, the latter invariants were tested to obey refined direct integration in \cite[Sec.~7.1]{HKK13:OmegaBmodelRigidN2}% (see \Cref{rmk: direct integration BPS})
++. Using the results of \cref{sec: ref mirror sym KP2,sec: ref KP2 beyond LV} and \cref{prop:KP2refintcheck}, we obtain the following statement.
+ 
+ \begin{prop}
+     \label{prop:KP2refMTcheck}
+-	Suppose {\bf (Conifold asymptotics)} holds as formulated in \cref{def:dirint}. Then \Cref{conj: MT type BPS local surfaces} holds for $S=\bbP^2$ up to degree seven, modulo contributions from stable maps with $g>84$.
++	Suppose {\bf (Conifold asymptotics)} holds as formulated in \cref{def:dirint}. Then \Cref{conj: MT type BPS local surfaces} holds for $S=\bbP^2$ up to degree five, modulo contributions from stable maps with $g>84$.
+ \end{prop}
+ 
+ 
+@@ -5853,7 +5875,7 @@
+ The above formula can as well be deduced from the K-theoretic vertex \cite{KOO21:2legKthVertex} and is related to the motivic generating series
+ %
+ \[
+-1 + \sum_{d,n=0}^\infty \mchar{q}^n \cQ^d [P_n(X,d)]^{\rm mot} = \prod_{m \geq 1} \prod_{j=0}^{m-1} \l(1-\bbL^{-\frac{m+1}{2} +j} \mchar{q}^m \cQ\r)
++1 + \sum_{d,n=0}^\infty (-\mchar{q})^n \cQ^d [P_n(X,d)]^{\rm mot} = \prod_{m \geq 1} \prod_{j=0}^{m-1} \l(1-\bbL^{-\frac{m-1}{2} +j} \mchar{q}^m \cQ\r)
+ \]
+ %
+ determined in \cite[Prop.~4.3]{MMNS12:motivicResCon} via the change of variables $\mchar{q}_1 = \mchar{q} \bbL^{1/2}$ and $\mchar{q}_2 = \mchar{q}^{-1}\bbL^{1/2}$: here, $[P_n(X,\beta)]^{\rm mot}$ $\in \bbZ[\bbL^{\pm 1/2}]$ is the virtual motive of $P_n(X,\beta)$, and $\bbL$ is the Lefschetz motive.
+@@ -5883,10 +5905,10 @@
+ 	The conjecture is known to be true for local curves \cite{BP08:GWLocCurves,OP10:localDTcurves} and toric varieties \cite{MPT10:K3modularForms,MOOP11:GWDTtoric}, and many more cases are covered by the methods developed by Pandharipande and Pixton \cite{PP17:GWPTquintic}. The general case is covered by recent work of Pardon \cite{Par23:UnivCurveCount}.
+ %\end{rmk}
+ 
+-Additional evidence is provided by the refined direct integration for local $\bbP^2$. In \Cref{prop:KP2refMTcheck} we have already explained how refined mirror symmetry agrees with the Poincar\'{e} refinement of Maulik--Toda invariants to fairly high genus, which in turn have been checked numerically in \cite{KPS23:refBPSP2,KLMP24:CohOneDimSheavesP2} to match the K-theoretic PT generating series to high degree. This gives the following stable pairs analogue of \cref{prop:KP2refMTcheck}.
++Additional evidence comes from refined mirror symmetry for local $\bbP^2$. In \cite{HKK13:OmegaBmodelRigidN2,CKK14:refBPS}, it was checked to fairly high genus that refined direct integration indeed returns the K-theoretic PT generating series as computed via the refined topological vertex. This gives the following stable pairs analogue of \cref{prop:KP2refMTcheck}.
+ 
+ \begin{prop}
+-	Suppose that {(\bf Conifold asymptotics)} holds as formulated in \cref{def:dirint}. Then, \Cref{conj: refined PT GW} holds for $X=K_{\bbP^2}$ with the $\mgp{G}'=\Gm$-scaling action on the fibre direction to curve class degree seven, and modulo contributions from stable maps with $g>84$.
++	Suppose that {(\bf Conifold asymptotics)} holds as formulated in \cref{def:dirint}. Then, \Cref{conj: refined PT GW} holds for $X=K_{\bbP^2}$ with the $\mgp{G}'=\Gm$-scaling action on the fibre direction to curve class degree five, and modulo contributions from stable maps with $g>84$.
+  \label{prop:KP2refPTcheck}
+ \end{prop}
+ 
+@@ -5904,7 +5926,7 @@
+     \begin{equation*}
+         \refPTb{X}{\mgp{G}^{\prime}}{\beta} \in \bbZ[\mchar{q}_+^{\pm 1}](\!(\mchar{q}_-)\!)\,.
+     \end{equation*}
+-    Thus, \eqref{eq: GW conn to disc} and \eqref{eq: refined PT GW} imply that $\refGWb{X}{\mgp{G}}{\beta} \in \widehat{R}^{\,\mr{loc}}_{\mgp{G}}$ can only depend on $\epsilon_+$ and $\epsilon_-$. In combination with \Cref{lem: shape of refGW series} this gives
++    Thus, \eqref{eq: GW conn to disc} and \eqref{eq: refined PT GW} imply that $\refGWb{Z}{\mgp{G}}{\beta} \in \widehat{R}^{\,\mr{loc}}_{\mgp{G}}$ can only depend on $\epsilon_+$ and $\epsilon_-$. In combination with \Cref{lem: shape of refGW series} this gives
+     \begin{equation*}
+     	\epsilon_1 \epsilon_2 \, \refGWb{Z}{\mgp{G}}{\beta} \in \bbQ\llbracket \epsilon_+^2,\epsilon_-^2\rrbracket\,. \qedhere
+     \end{equation*} 
+@@ -5916,11 +5938,11 @@
+ 
+ When $X$ is not equirigid, the outcome of a refined topological vertex calculation will only be related to the GW generating series through its conjectural lift to localised equivariant K-theory (see \Cref{rmk: Kth lift}). For a concrete example, let us consider $X=\Tot \cO_{\bbP^1}(-2) \times \bbC$. In \Cref{sec: local P1 shifted} we presented the conjectural formula
+ \begin{equation*}
+-    \refGWb{Z}{\TCY}{d[\bbP^1]} = \ch[\TCY] \frac{1}{d} \frac{[\mchar{q}_0^{-1}\mchar{q}_1^{-1}\mchar{q}_2^{-1}]}{[\mchar{q}_0][\mchar{q}_1][\mchar{q}_2]}\,.
++    \refGWb{Z}{\TCY}{d[\bbP^1]} = \ch[\TCY] \frac{1}{d} \frac{[\mchar{q}_0^{-d}\mchar{q}_1^{-d}\mchar{q}_2^{-d}]}{[\mchar{q}_0^d][\mchar{q}_1^d][\mchar{q}_2^d]}\,.
+ \end{equation*}
+ If we take the limit $\mchar{q}_0^{\pm 1} \rightarrow \infty$ of the K-theoretic lift while keeping $\mchar{q_+}$ constant, we recover the result of a calculation using the refined topological vertex \cite[Sec.~5.3]{IKV09:RefVert}:
+ \begin{equation*}
+-    \frac{1}{d} \frac{\mchar{q_+^{\pm 1}}}{[\mchar{q}_1][\mchar{q}_2]}\,.
++    \frac{1}{d} \frac{(-\mchar{q}_+)^{\pm {d}}}{[\mchar{q}_1^d][\mchar{q}_2^d]}\,.
+ \end{equation*}
+ Notice that in order to perform the limit it was crucial to first pass to an analytic continuation in $\epsilon_0, \epsilon_1, \epsilon_2$, meaning that the latter quantity does not have a direct enumerative meaning in terms of stable maps anymore.
+ 
+@@ -6007,7 +6029,7 @@
+ A basis of solutions is given by the components of the $J$-function of $Z$,
+ %
+ \bea 
+-J(t,z) & \coloneqq & \re^{t_0/z+t_1 p/z} \sum_{d \geq 0} \re^{t_1 d}\frac{\prod_{m=0}^{d-1} (-H+\alpha_1 z) \prod_{m=0}^{d-1} (-H+\alpha_2 z)}{\prod_{m=1}^d (H+m z) \prod_{m=1}^d (H+\alpha_0+m z)}\,, \nn \\
++J(t,z) & \coloneqq & \re^{t_0/z+t_1 p/z} \sum_{d \geq 0} \re^{t_1 d}\frac{\prod_{m=0}^{d-1} (-H+\alpha_1-m z) \prod_{m=0}^{d-1} (-H+\alpha_2-m z)}{\prod_{m=1}^d (H+m z) \prod_{m=1}^d (H+\alpha_0+m z)}\,, \nn \\
+ &=& 
+ z \re^{\frac{t_0}{z}} \, _2F_1\left(-\frac{\alpha _1}{z},-\frac{\alpha _2}{z};1+\frac{\alpha _0}{z};\re^{t_1}\right) \varepsilon_+
+ +
+@@ -6084,20 +6106,20 @@
+ from the Euler--Pochhammer representation of the Gauss hypergeometric function, where $\mathrm{B}(x,y)=\Gamma(x) \Gamma(y)/\Gamma(x+y)$ is the Euler Beta function. Likewise, asymptotically around $z=0$,  the saddle-point expansion of $\Pi_{\pm}$ gives formal solutions of the flatness equation of the Dubrovin connection, meromorphically in $\re^{t_1/2}$ away from $t_1=0$ and to all orders in a formal expansion in $z$:
+ %
+ \[ 
+-\Pi_{\pm} \simeq \frac{\re^{u_\pm/z}}{\sqrt{-2 \pi z}} \mathsf{Asym}_{x^{\rm cr}_\pm} \l[\re^{\cW/z}\dd \Omega\r] = \frac{\re^{u_\pm/z}}{\sqrt{-2 \pi z}} \sum_{n \geq 0} \psi_n(t_1) z^n\,.
++\Pi_{\pm} \simeq \frac{\re^{u_\pm/z}}{\sqrt{-2 \pi z}} \mathsf{Asym}_{s^{\rm cr}_\pm} \l[\re^{\cW/z}\dd \Omega\r] = \frac{\re^{u_\pm/z}}{\sqrt{-2 \pi z}} \sum_{n \geq 0} \psi^{(\pm)}_ n(t_1)\, z^n\,.
+ \] 
+ %
+ The columns of the $R$-matrix are therefore given by 
+ %
+ \bea
+-R_\pm(\mathbf{1}) &=& \mathsf{c}_\pm(z) \mathsf{Asym}_{x^{\rm cr}_\pm} \l[\re^{\cW/z}\dd \Omega\r]\,, \nn \\
+-R_\pm(H) &=& \mathsf{c}_\pm(z) \bigg(f_\pm + z \de_{t_1}\bigg)\mathsf{Asym}_{x^{\rm cr}_\pm} \l[\re^{\cW/z}\dd \Omega\r] \nn
++R_\pm(\mathbf{1}) &=& \mathsf{c}_\pm(z) \mathsf{Asym}_{s^{\rm cr}_\pm} \l[\re^{\cW/z}\dd \Omega\r]\,, \nn \\
++R_\pm(H) &=& \mathsf{c}_\pm(z) \bigg(f_\pm + z \de_{t_1}\bigg)\mathsf{Asym}_{s^{\rm cr}_\pm} \l[\re^{\cW/z}\dd \Omega\r] \nn
+ \eea 
+ %
+ for some $\mathsf{c}_\pm(z) \in \bbC\llbracket z\rrbracket$, which is fixed via the quantum Riemann--Roch theorem by imposing
+ %
+ \[ 
+-R_\pm(\mathbf{1}) \bigg|_{t_0 \to 0, \mathrm{Re}(t_1) \to -\infty} = \prod_{j=1}^5 \frac{1}{\sqrt{w_\pm^{(j)}}}\Theta\l(\frac{z}{w_\pm^{(j)}}\r).
++R_\pm(\mathbf{1}) \bigg|_{t_0 \to 0, \mathrm{Re}(t_1) \to -\infty} = \prod_{j=1}^5 \frac{1}{\sqrt{w_\pm^{(j)}}}\Theta\l(-\frac{z}{w_\pm^{(j)}}\r)\,.
+ \] 
+ %
+ Let's consider $x_+^{\rm cr}$ for simplicity. We find, from the saddle-point expansion of the Euler Beta integral,
+@@ -6283,11 +6305,11 @@
+ \label{eq:GWgrescon}
+ \eeq 
+ %
+-By \eqref{eq:cfasymp} and \eqref{eq:RH}, $\GW_g(Z,\mgp{T}_{\rm F})$ has a pole of order ${2g-2}$ at $t_1=0$ arising exclusively from contributions of stable graphs with decoration $i=+$ on all vertices: the analyticity of $\Delta_-$ at $t_1=0$ implies that graphs having any vertex coloured by $i=-$ may only contribute sub-leading terms in $1/t_1$. Also, in the edge term contribution \eqref{eq:TLRcf}, only terms with $a=b=1$ contribute to the coefficient of the leading pole, since $R_+(\mathbf{1})=\cO(t_1)$ gives again a sub-leading contribution. Finally, note that stable graphs with $k$-dilaton leaves have the same divergent behaviour as the graph obtained by removing them, since each  addition of a dilaton leaf (which contributes a factor $\cO(t_1)$, by \eqref{eq:RH}) comes balanced with a corresponding factor of $\Delta_+^{1/2}$ (which contributes a factor $\cO(t_1^{-1})$, by \eqref{eq:cfasymp}). 
++By \eqref{eq:cfasymp} and \eqref{eq:RH}, $\GW_g(Z,\mgp{T}_{\rm F})$ has a pole of order ${2g-2}$ at $t_1=0$ arising exclusively from contributions of stable graphs with decoration $i=+$ on all vertices: the analyticity of $\Delta_-$ at $t_1=0$ implies that graphs having any vertex coloured by $i=-$ may only contribute sub-leading terms in $1/t_1$. Also, in the edge term contribution \eqref{eq:TLRcf}, only terms with $a=b=1$ contribute to the coefficient of the leading pole, since $R_+(\mathbf{1})=\cO(t_1)$ gives again a sub-leading contribution. Finally, note that stable graphs with $k$-dilaton leaves have the same divergent behaviour as the graph obtained by removing them, since each  addition of a dilaton leaf (which contributes a factor $\cO(t_1)$, by \eqref{eq:RH}) comes balanced with a corresponding factor of $\Delta_+^{1/2}$ (which contributes a factor $\cO(t_1^{-1})$, by \eqref{eq:cfasymp}). Accordingly, we extract one factor $\Delta_+^{1/2}$ from the vertex factor for each dilaton leaf and absorb it into the dilaton leaf contribution. The remaining vertex exponents are $(2\mathsf{g}(v)-2+|\mathsf{E}(v)|)/2$, where $\mathsf{E}(v)\subset \HH(v)$ is the set of half-edges at $v$ belonging to edges, and $\sum_v (2\mathsf{g}(v)-2+|\mathsf{E}(v)|)=2g-2$. The product of the leading coefficients of the vertex factors is then the global factor $(-(\epsilon_1+\epsilon_2)^3\epsilon_1\epsilon_2)^{g-1}t_1^{2-2g}$, independently of the graph.
+ 
+ As far as the dominant asymptotics at the conifold point is concerned, then, the sum over graphs in \eqref{eq:GWgrescon} reduces to a graph expansion akin to that of the higher genus primary potential of a scalar CohFT, but with a slight deformation of the dilaton shift. Explicitly, the coefficient of the leading term in the asymptotics in $1/t_1$ of $\GW_g(Z,\mgp{T}_F)$ will be given by specialising the vertex, dilaton and edge terms in  \eqref{eq:GWgrescon}  to the leading order in $1/t_1$ of $\Delta_+$, $D_{+,l}$, and $E_{n,m}^{++}$ in \eqref{eq:cfasymp} and \eqref{eq:TLRcf}: we find 
+ \beq
+-\GW_g(Z,\mgp{T}_{\rm F})= \frac{1}{t_1^{2g-2}}\sum_{\Gamma \in \cG^{[0]}_{g,0}} \frac{1}{|\mathrm{Aut(\Gamma)}|} \prod_{e\in \cE_\Gamma} \mathrm{Cont}_{\rm cf}(e) 
++\GW_g(Z,\mgp{T}_{\rm F})= \frac{(-(\epsilon_1+\epsilon_2)^3 \epsilon_1 \epsilon_2)^{g-1}}{t_1^{2g-2}}\sum_{\Gamma \in \cG^{[0]}_{g,0}} \frac{1}{|\mathrm{Aut(\Gamma)}|} \prod_{e\in \cE_\Gamma} \mathrm{Cont}_{\rm cf}(e) 
+ \prod_{d\in \DD_\Gamma} 
+ \mathrm{Cont}_{\rm cf}(d)
+ \prod_{v\in \cV_\Gamma} \mathrm{Cont}_{\rm cf}(v) + \cO\l(\frac{1}{t_1^{2g-3}}\r)\,,
+@@ -6300,7 +6322,8 @@
+ \begin{split}
+ \mathrm{Cont}_{\rm cf}(d) & \coloneqq   [z^{\mathsf{a}(d)-1}]\l(1- \Upsilon\l(-\frac{z}{\epsilon_1},-\frac{z}{\epsilon_2}\r)\l(1-\frac{z}{\epsilon_1+\epsilon_2}\r)^{-1}\r)\,, \\
+ \mathrm{Cont}_{\rm cf}(e) & \coloneqq   [z^{\mathsf{a}(h_1)} w^{\mathsf{a}(h_2)}]\l( \frac{1- \Upsilon\l(-\frac{z}{\epsilon_1},-\frac{z}{\epsilon_2}\r)\Upsilon\l(-\frac{w}{\epsilon_1},-\frac{w}{\epsilon_2}\r)}{z+w}\r)\,, \\
+-\mathrm{Cont}_{\rm cf}(v) & \coloneqq  (-(\epsilon_1+\epsilon_2)^3\epsilon_1 \epsilon_2)^{\frac{2\mathsf{g}(v)-2+\mathsf{|H(v)|}}{2}} %\sum_{d_1, \dots, d_{|\DD(v)|}}\sum_{l_1, \dots, l_{|\mathsf{L}(v)|}}  
++\mathrm{Cont}_{\rm cf}(v) & \coloneqq  
++%(-(\epsilon_1+\epsilon_2)^3\epsilon_1 \epsilon_2)^{\frac{2\mathsf{g}(v)-2+\mathsf{|H(v)|}}{2}} %\sum_{d_1, \dots, d_{|\DD(v)|}}\sum_{l_1, \dots, l_{|\mathsf{L}(v)|}}  
+ %\prod_{d \in \DD(v)} T_{\mathsf{q}(v),\mathsf{a}(d)} 
+ \int_{[\Mbar_{\mathsf{g}(v), |\HH(v)|}]}
+ \prod_{k=1}^{|\HH(v)|} 
+@@ -6312,22 +6335,32 @@
+ \label{eq:GWresconcfcont}
+ \eeq
+ %
++Here $\Upsilon$ is as in \cref{exmpl:stirling}. In the dilaton leaf factor we have used, for $l \geq 2$,
++\[
++\Delta_+^{1/2}D_{+,l} \to [z^{l-1}]\l(1-\Upsilon\l(-\frac{z}{\epsilon_1},-\frac{z}{\epsilon_2}\r)\l(1-\frac{z}{\epsilon_1+\epsilon_2}\r)^{-1}\r)\,,
++\]
++and in the edge factor we have used $\eta^{11}=-(\epsilon_1+\epsilon_2)\epsilon_1\epsilon_2$ from \eqref{eq:etacf}, so that
++\[
++\sum_{ab}R_+(-z)(H^a)\eta^{ab}R_+(-w)(H^b) \to \Upsilon\l(-\frac{z}{\epsilon_1},-\frac{z}{\epsilon_2}\r)\Upsilon\l(-\frac{w}{\epsilon_1},-\frac{w}{\epsilon_2}\r)\,.
++\]
+ The graph factors in \eqref{eq:GWresconcfcont} are almost identical to the ones of the special cubic Hodge CohFT \cite{Okounkov:2003aok}, which describes the equivariant GW theory of $\bbC^3$ with respect to a Calabi--Yau torus acting with weights $(\epsilon_1$, $\epsilon_2$, $-\epsilon_1-\epsilon_2$),
+ %on its coordinates, 
+ and for which the primary higher genus potential is %well-known to be given by 
+-the asymptotic expansion of the logarithm of the McMahon function. %$M(q)$ when $q=\re^{-\epsilon_1 \epsilon_2} \to 1$ \cite{MR1728879,Okounkov:2003sp}. Up to a redefinition of $q$, 
++the asymptotic expansion of the logarithm of the MacMahon function. %$M(q)$ when $q=\re^{-\epsilon_1 \epsilon_2} \to 1$ \cite{MR1728879,Okounkov:2003sp}. Up to a redefinition of $q$, 
+ The sole (but crucial) difference here stems from the factor $(1-z/(\epsilon_1+\epsilon_2))^{-1}$ appearing in the expression of the dilaton leaf contribution, $\mathrm{Cont}_{\rm cf}(d)$.
+ 
+ \begin{prop}
+-Let $X=\mathrm{Tot}\l(\cO_{\bbP^1}^{\oplus 2}(-1)\r)$ and $\mgp{T}_{\rm F}$ be the fibrewise torus action with weights $\alpha_0=0$, $\alpha_{1,2}=\epsilon_{1,2}$. Then,\[
++Let $X=\mathrm{Tot}\l(\cO_{\bbP^1}^{\oplus 2}(-1)\r)$ and $\mgp{T}_{\rm F}$ be the fibrewise torus action with weights $\alpha_0=0$, $\alpha_{1,2}=\epsilon_{1,2}$. Then, for $g \geq 2$,
++\[
+ \mgp{GW}_g(X \times \bbC^2, \mgp{T}_{\rm F})
+-=\frac{\beta_{2g}(\epsilon_1, \epsilon_2)}{t_{1}^{2g-2}}\big(1+\cO(t_1)\big)  \,,
++=\frac{\beta_{2g-2}(\epsilon_1, \epsilon_2)}{t_{1}^{2g-2}}\big(1+\cO(t_1)\big)  \,,
+ \]
+ where $t_1 =\log \cQ$. In particular, with notation as in \eqref{eq:GWresconcfcont}, we have
+     \beq 
++    (-(\epsilon_1+\epsilon_2)^3 \epsilon_1 \epsilon_2)^{g-1}
+     \sum_{\Gamma \in \cG^{[0]}_{g,0}} \frac{1}{|\mathrm{Aut(\Gamma)}|} \prod_{e\in \cE_\Gamma} \mathrm{Cont}_{\rm cf}(e)\prod_{d\in \DD_\Gamma} 
+ \mathrm{Cont}_{\rm cf}(d) \prod_{v\in \cV_\Gamma}  \mathrm{Cont}_{\rm cf}(v) =
+-\beta_{2g}(\epsilon_1, \epsilon_2)\,.
++\beta_{2g-2}(\epsilon_1, \epsilon_2)\,.
+ \label{eq:cfgraphsum} 
+     \eeq 
+     \label{prop:cfgraphsum}
+@@ -6336,7 +6369,7 @@
+ From \Cref{prop:ResConifold} and \eqref{eq:betapol}, we have
+ %
+ \[
+-\mgp{GW}_g(X \times \bbC^2, \mgp{T}_{\rm F}) = \sum_{d=1}^\infty  \frac{d^{2g-3} \beta_{2g}(\epsilon_1, \epsilon_2)}{(2g-3)!}\re^{d t_1} = \frac{\beta_{2g}(\epsilon_1, \epsilon_2)}{(2g-3)!}\mathrm{Li}_{3-2g}(\re^{t_1})\,. 
++\mgp{GW}_g(X \times \bbC^2, \mgp{T}_{\rm F}) = \sum_{d=1}^\infty  \frac{d^{2g-3} \beta_{2g-2}(\epsilon_1, \epsilon_2)}{(2g-3)!}\re^{d t_1} = \frac{\beta_{2g-2}(\epsilon_1, \epsilon_2)}{(2g-3)!}\mathrm{Li}_{3-2g}(\re^{t_1})\,. 
+ \]
+ %
+ The first part of the claim is elementary since, for $n>1$, \[

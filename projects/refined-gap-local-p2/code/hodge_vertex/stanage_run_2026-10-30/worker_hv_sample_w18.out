@@ -1,0 +1,34 @@
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+start: genus 4, KMAX 9, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+R-matrix coefficients from cPP_z9.m
+R-matrix rows built to z^9; LeafCounts row0/1/2: {5116, 5079, 21521}
+rows of R' = R_Z h^(-1) built to z^9; LeafCounts {493, 456, 1491}
+6 points assigned, 0 already done, 6 to do
+point 18  1
+{-, 67}
+ 2 done in 267. s; total-ref {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; max |Im|      -333
+0. 10
+point 138  2
+{-, 67}
+ 5 done in 275.9 s; total-ref {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; max |Im|      -333
+0. 10
+point 258  2
+{-, 67}
+ 7 done in 275. s; total-ref {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; max |Im|      -333
+0. 10
+point 378  3
+{-, 67}
+ 8 done in 275.2 s; total-ref {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; max |Im|      -333
+0. 10
+point 498  3
+{--, 67}
+ 10 done in 272.2 s; total-ref {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; max |Im|      -333
+0. 10
+point 618  4
+{--, 67}
+ 11 done in 270.7 s; total-ref {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; max |Im|      -333
+0. 10
+job finished

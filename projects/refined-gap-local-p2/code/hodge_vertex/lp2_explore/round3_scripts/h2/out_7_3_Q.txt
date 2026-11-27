@@ -1,0 +1,65 @@
+e1=7 e2=3 E=10 NV=10 NZ=22 Q=1/10  (OFF SHELL c1=-wc(1+Q Del))
+r_l: ['1', '1/9', '2/81', '14/2187', '8/19683', '-440/177147', '-21520/4782969', '-268240/43046721']
+check theta t_c = C1cf = -wc : OK
+check theta Delta_c = Delta_c - 1 : OK
+check t_c(V(t_c)) = t_c : OK ; v =  ['-1/10', '-1/180', '-1/4860', '1/524880']
+sigma known in t_c to order < 8
+
+=== leaf form of sigma_a^(k) (t_c-expansion): sigma = a_psi psi + a0 + Sum_j beta_j l_j(psi) ===
+  sigma_0^(-1): a_psi=0  a0=0  top leaf=0 (bound 0)  spare z-orders=21  beta=[]
+  sigma_0^(0): a_psi=0  a0=0  top leaf=1 (bound 1)  spare z-orders=20  beta=[10]
+  sigma_0^(1): a_psi=0  a0=0  top leaf=2 (bound 2)  spare z-orders=19  beta=[-5/9, 10/9]
+  sigma_0^(2): a_psi=0  a0=0  top leaf=3 (bound 3)  spare z-orders=18  beta=[5/243, -10/81, 10/81]
+  sigma_0^(3): a_psi=0  a0=0  top leaf=4 (bound 4)  spare z-orders=17  beta=[5/2916, -5/4374, -25/2187 ...]
+  sigma_0^(4): a_psi=0  a0=0  top leaf=5 (bound 5)  spare z-orders=16  beta=[-113/236196, 335/118098, -55/13122 ...]
+  sigma_0^(5): a_psi=0  a0=0  top leaf=6 (bound 6)  spare z-orders=15  beta=[733/12754584, -1181/2125764, 565/354294 ...]
+  sigma_0^(6): a_psi=0  a0=0  top leaf=7 (bound 7)  spare z-orders=14  beta=[-317/89282088, 3277/57395628, -15197/57395628 ...]
+  sigma_0^(7): a_psi=0  a0=0  top leaf=8 (bound 8)  spare z-orders=13  beta=[-9439/57854793024, -23027/28927396512, 145/8503056 ...]
+  sigma_1^(-1): a_psi=0  a0=10  top leaf=0 (bound 0)  spare z-orders=21  beta=[]
+  sigma_1^(0): a_psi=0  a0=-1  top leaf=1 (bound 1)  spare z-orders=20  beta=[100/9]
+  sigma_1^(1): a_psi=0  a0=32/45  top leaf=2 (bound 2)  spare z-orders=19  beta=[-140/81, 100/81]
+  sigma_1^(2): a_psi=0  a0=-10463/24300  top leaf=3 (bound 3)  spare z-orders=18  beta=[571/729, -370/2187, 700/6561]
+  sigma_1^(3): a_psi=0  a0=401249/1640250  top leaf=4 (bound 4)  spare z-orders=17  beta=[-145123/295245, 893/19683, 80/6561 ...]
+  sigma_1^(4): a_psi=0  a0=-40058447/295245000  top leaf=5 (bound 5)  spare z-orders=16  beta=[7643947/26572050, -102278/2657205, -7108/531441 ...]
+  sigma_1^(5): a_psi=0  a0=2974903487/39858075000  top leaf=6 (bound 6)  spare z-orders=15  beta=[-32007409/199290375, 18478601/717445350, 716254/215233605 ...]
+  sigma_1^(6): a_psi=0  a0=-4114155248729/100442349000000  top leaf=7 (bound 7)  spare z-orders=14  beta=[798584890979/9039811410000, -632168701/43046721000, -2389843/4304672100 ...]
+  sigma_1^(7): a_psi=0  a0=152323421907067/6779858557500000  top leaf=8 (bound 8)  spare z-orders=13  beta=[-8445902382787/174339220050000, 1958019923257/244074908070000, 90871796/435848050125 ...]
+  sigma_2^(-1): a_psi=0  a0=-100  top leaf=0 (bound 0)  spare z-orders=21  beta=[]
+  sigma_2^(0): a_psi=-1  a0=0  top leaf=0 (bound 0)  spare z-orders=21  beta=[]
+  sigma_2^(1): a_psi=7/6  a0=11/18  top leaf=1 (bound 1)  spare z-orders=20  beta=[1000/81]
+  sigma_2^(2): a_psi=-403/486  a0=-343/540  top leaf=2 (bound 2)  spare z-orders=19  beta=[10985/2187, 5350/2187]
+  sigma_2^(3): a_psi=24479/52488  a0=1314887/3936600  top leaf=3 (bound 3)  spare z-orders=18  beta=[-363952/59049, -860/2187, 6400/19683]
+  sigma_2^(4): a_psi=-179719/787320  a0=-2560589/29524500  top leaf=4 (bound 4)  spare z-orders=17  beta=[10211839/2657205, -92197/531441, -10945/177147 ...]
+  sigma_2^(5): a_psi=1442963/14171760  a0=-1431291547/47829690000  top leaf=5 (bound 5)  spare z-orders=16  beta=[-148199057/79716150, 11235137/71744535, -1115579/43046721 ...]
+  sigma_2^(6): a_psi=-1024170443/24106163760  a0=523160851241/8609344200000  top leaf=6 (bound 6)  spare z-orders=15  beta=[587114843509/774840978000, -1816536397/25828032600, 56300779/2582803260 ...]
+  sigma_2^(7): a_psi=464406331/27549901440  a0=-99262062714631/1807962282000000  top leaf=7 (bound 7)  spare z-orders=14  beta=[-7917366618577/30509363508750, 36458098031/1743392200500, -3039636809/348678440100 ...]
+H2-form violations (psi-linear, constants at k>=0, leaf bound sigma_0,1: k+1, sigma_2: k): [(1, 0), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (2, 0), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7)]
+Z-infinity: Sum_j beta_j/j [sigma_0^(k)], k=0..: ['10', '0', '0', '0', '0', '0', '0', '0']
+
+(I1) sigma_1 = Dc sigma_0, Dc = (L_1 + z/t_c) + z d/dt_c, L_1 = C1i Y : FAILS: valuation 0
+(I2) sigma_2 = kappa Dc sigma_1 + mu sigma_1, kappa = c1^3 Del, mu = (E/2)(c1^2-1) : FAILS: lowest t_c-order 1
+(G1),(G2) general-section forms: OK  (to t_c^7)
+L_1 = E C1i theta(log v) = E d log v/dt_c : OK ; L_1 coefficients t_c^-1..: ['10', '-4/9', '809/1215', '-21563/54675']
+kappa: ['0', '-1', '-16/45', '3271/24300']  mu: ['0', '29/9', '11/1620', '-953/131220']
+
+symplecticity <sigma(psi), sigma(-psi)> = 3 e1 e2 E^3 / t_c^2 : exact to t_c^6, all z^0..z^22
+
+=== residue lemma: Ebar = t_c^2 rho^2 Ehat_00 ===
+  t_c^0: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): True; support (i-1)+(l-1)<=-2: True; Ebar coefficient identically 0: True
+  t_c^1: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): False; support (i-1)+(l-1)<=-1: True; Ebar coefficient identically 0: False
+  t_c^2: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): False; support (i-1)+(l-1)<=0: True; C_11/(2E) = -70000/9 vs -e1 e2 E^4/27 = -70000/9; nonzero C: [(1, 1)]
+  t_c^3: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): False; support (i-1)+(l-1)<=1: True
+  t_c^4: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): False; support (i-1)+(l-1)<=2: True
+  t_c^5: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): False; support (i-1)+(l-1)<=3: True
+  t_c^6: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): False; support (i-1)+(l-1)<=4: True
+  t_c^7: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): False; support (i-1)+(l-1)<=5: True
+  t_c^8: Nb(-psi',psi')=0: True; direct == residue formula (231 entries): False; support (i-1)+(l-1)<=6: True
+done
+sigma_2 psi-linear coefficient: fitted vs predicted E Del wc^2 theta(f)/t_c: [('0', '0'), ('-1', '-1'), ('7/6', '7/6'), ('-403/486', '-403/486'), ('24479/52488', '24479/52488'), ('-179719/787320', '-179719/787320'), ('1442963/14171760', '1442963/14171760'), ('-1024170443/24106163760', '-1024170443/24106163760'), ('464406331/27549901440', '464406331/27549901440')] ALL EQUAL
+[s^0] Ehat_00 a_il: {(1, 1): '-70000/9'}
+[s^1] Ehat_00 a_il: {(1, 1): '49000/9', (1, 2): '-280000/81', (2, 1): '-280000/81'}
+[s^2] Ehat_00 a_il: {(1, 1): '826700/81', (1, 2): '77000/81', (1, 3): '-350000/243', (2, 1): '77000/81', (2, 2): '-140000/81', (3, 1): '-350000/243'}
+[s^3] Ehat_00 a_il: {(1, 1): '-26315170/2187', (1, 2): '2956100/729', (1, 3): '-119000/243', (1, 4): '-1120000/2187', (2, 1): '2956100/729', (2, 2): '-7000/27', (2, 3): '-560000/729', (3, 1): '-119000/243', (3, 2): '-560000/729', (4, 1): '-1120000/2187'}
+[s^4] Ehat_00 a_il: {(1, 1): '55264363/6561', (1, 2): '-21621110/19683', (1, 3): '2470300/2187', (1, 4): '-1421000/2187', (1, 5): '-2450000/19683', (2, 1): '-21621110/19683', (2, 2): '11276300/6561', (2, 3): '-469000/729', (2, 4): '-5600000/19683', (3, 1): '2470300/2187', (3, 2): '-469000/729', (3, 3): '-6790000/19683', (4, 1): '-1421000/2187', (4, 2): '-5600000/19683', (5, 1): '-2450000/19683'}
+closed form Phat1 = E C1i (theta v / v) S^(1): OK (to v^8)
+closed form Phat2 = (Del/C1i) E theta v [E theta v S^(2)/v^2 + (z theta log(C1i theta v) - d2) S^(1)/v]: OK (to v^7)

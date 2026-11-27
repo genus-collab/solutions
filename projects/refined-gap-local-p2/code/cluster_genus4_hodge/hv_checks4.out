@@ -1,0 +1,21 @@
+known values: genus 1-2 (lambda_1; lambda_1 psi^3, lambda_2 psi^2, lambda_1 lambda_2 psi, lambda_1 lambda_2; ch_3 on M_2 = -1/34560), genus 3 (lambda_1^6 = 1/90720 raw; lambda_3 psi^4; lambda_3 lambda_2 psi^2; lambda_1 lambda_2 lambda_3), genus 4 (lambda_1^9 = 1/113400 raw; lambda_4 psi^6 = 127/154828800; lambda_4 lambda_3 psi^3 = 1/3225600; lambda_4 lambda_3 psi^2 psi^2 = 1/276480 [GP]; lambda_4 lambda_3 lambda_2 = 1/87091200): {True, True, True, True, True, True, True, True, True, True, True, True, True, True, True}
+vanishing above the top degree of the lambda ring, computed without the cut-off: True
+Mumford relations not encoded in lamSub (lambda_3^3 = 2 lambda_4 lambda_3 lambda_2 = 1/43545600 on M_4, lambda_2^3 = 1/725760 on M_3, lambda_g^2 = 0 (g = 2-4), lambda_3^2 = 2 lambda_4 lambda_2 on M_{4,n}, lambda_2^2 = 2 lambda_3 lambda_1 on M_{3,n}): {True, True, True, True, True}
+lambda_g formula and lambda_g lambda_{g-1} closed form (zeros by string) versus the recursion, genus 2-4 (genus 4: n <= 2): True
+string and dilaton equations of the Hodge correlators, genus 1-4: True
+hodgeChecks4 done in 15 s
+PPZ genus 2 symbolic = normalised Hodge class on M_2: True
+PPZ genus 3 (42 graphs) at weights    3     7
+{-(-), -(-), 5}
+   4     3: True (0 s)
+PPZ genus 3 (42 graphs) at weights    7     7
+{-(-), -(-), 2}
+   4     3: True (0 s)
+PPZ genus 4 (379 graphs) at weights  4    3   2
+{-, -(-), -}
+ 5    2   3: True (2 s)
+PPZ genus 4 (379 graphs) at weights        1
+{4, 7, -}
+       2: True (2 s)
+PPZ genus 4 (379 graphs) at weights {2, 3, 8}: True (2 s)
+VALIDATION OK: Hodge integrals and scalar R-action up to genus 4

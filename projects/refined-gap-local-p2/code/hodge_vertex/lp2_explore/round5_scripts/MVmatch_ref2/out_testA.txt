@@ -1,0 +1,7 @@
+tau 3/2 done 85 bad 0 11:28:25
+tau -7/5 done 170 bad 0 11:28:25
+tau -1/2 done 255 bad 0 11:28:25
+tau -1/3 done 340 bad 0 11:28:25
+tau -2/3 done 425 bad 0 11:28:25
+tau 1 done 510 bad 0 11:28:26
+tau 5/11 done 595 bad 0 11:28:26

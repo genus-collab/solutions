@@ -1,0 +1,12 @@
+2026-10-29 17:46:13  [g=2] 884 files, 884 of 884 points; max |Im|      -341
+0. 10; points with unexpected monomials: 0; points whose orbit sum differs from the reference total: 0; complete t-values: 26 of 26; incomplete: {}
+2026-10-29 17:46:13  [g=2] VALIDATION OK: sum of decorated graphs = reference total at every sample point
+2026-10-29 17:46:13  [g=2] wrote 6 chunk files (5 orbits each at most)
+2026-10-29 17:51:38  [g=3] 780 files, 780 of 780 points; max |Im|      -335
+0. 10; points with unexpected monomials: 0; points whose orbit sum differs from the reference total: 0; complete t-values: 26 of 26; incomplete: {}
+2026-10-29 17:51:38  [g=3] VALIDATION OK: sum of decorated graphs = reference total at every sample point
+2026-10-29 17:51:40  [g=3] wrote 6 chunk files (116 orbits each at most)
+2026-10-30 10:10:04  [g=4] 680 files, 680 of 680 points; max |Im|      -329
+0. 10; points with unexpected monomials: 0; points whose orbit sum differs from the reference total: 0; complete t-values: 34 of 34; incomplete: {}
+2026-10-30 10:10:04  [g=4] VALIDATION OK: sum of decorated graphs = reference total at every sample point
+2026-10-30 10:13:41  [g=4] wrote 120 chunk files (227 orbits each at most)

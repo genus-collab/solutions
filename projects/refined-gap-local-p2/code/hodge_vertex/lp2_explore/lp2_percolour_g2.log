@@ -1,0 +1,92 @@
+R-matrix coefficients from cPP_z6.m
+R-matrix rows built to z^3; LeafCounts row0/1/2: {435, 422, 1653}
+genus 2, KMAX = 3, factor order ORD = 12, t_c series order 28; Sun 1 Nov 2026 18:03:37
+self-check XX: y c1'/c1 with c1 = C1cf equals XXcf through t_c^4: True; XX(0) =   2
+-(-)
+  9; c1(0) = -1
+
+==================== eps1 = 1/3, eps2 = 1, sq = 3/8 ====================
+factor series built in 12 s
+(A) conifold valuations (order in t_c; Infinity = identically 0 to the order computed) of the per-colour factors
+  colour 0: sqrtDelta -1; rows P0 {1, 1, 1, 1}, P1 {0, 1, 1, 1}, P2 {0, 2, 2, 2}; Dil[1..4] {1, 1, 1, 1}; Leaf[0..3] {0, 1, 1, 1}
+  colour 1: sqrtDelta 0; rows P0 {0, 0, 0, 0}, P1 {0, 0, 0, 0}, P2 {1, 1, 1, 1}; Dil[1..4] {0, 0, 0, 0}; Leaf[0..3] {0, 0, 0, 0}
+  colour 2: sqrtDelta 0; rows P0 {0, 0, 0, 0}, P1 {0, 0, 0, 0}, P2 {1, 1, 1, 1}; Dil[1..4] {0, 0, 0, 0}; Leaf[0..3] {0, 0, 0, 0}
+  edge E_00[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{2, 2, 2}, {2, 2}, {2}}   min 2
+  edge E_01[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_02[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_10[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_11[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_12[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_20[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_21[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_22[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{0, 0, 0}, {0, 0}, {0}}   min 0
+  regular idempotents (colours 1, 2): minimal valuation of sqrtDelta, P0, P1, P2 (hence Dil, Leaf), E_ij (i, j in {1,2}) = 0  => ANALYTIC at the conifold (to z^3); sqrtDelta_1, sqrtDelta_2 at t_c = 0: {(-4*I)/27 + 4/(9*Sqrt[3]), (4*I)/27 + 4/(9*Sqrt[3])}
+(B) per-colouring polar parts {t_c^-P .. t_c^-1}, sum over all decorations of the stable graph with the colouring fixed
+  graph 1: genera {2}, edges {}, Aut 1, decorations 8; colour-sum = stored term through t_c^1: True (precision t_c^10)
+      colouring {0} (prec t_c^10): {-83/6480, 0}
+      singular colourings: 1 of 3
+      singular set S = {1} summed over the regular colours: {-83/6480, 0}
+      colour sum: {-83/6480, 0}
+  graph 2: genera {1}, edges {{1, 1}}, Aut 2, decorations 10; colour-sum = stored term through t_c^1: True (precision t_c^11)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 3: genera {0}, edges {{1, 1}, {1, 1}}, Aut 8, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 4: genera {1, 1}, edges {{1, 2}}, Aut 2, decorations 9; colour-sum = stored term through t_c^1: True (precision t_c^11)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 5: genera {0, 1}, edges {{1, 1}, {1, 2}}, Aut 2, decorations 3; colour-sum = stored term through t_c^1: True (precision t_c^12)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 6: genera {0, 0}, edges {{1, 2}, {1, 2}, {1, 2}}, Aut 12, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 7: genera {0, 0}, edges {{1, 1}, {2, 2}, {1, 2}}, Aut 8, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+SUMMARY eps1 = 1/3: self-checks all True: True; graphs with an edge that are singular for some colouring: {}; graphs with an edge singular for some singular set S (after summing the regular colours): {}; time 23 s
+
+==================== eps1 = 1/8, eps2 = 1, sq = 8/27 ====================
+factor series built in 12 s
+(A) conifold valuations (order in t_c; Infinity = identically 0 to the order computed) of the per-colour factors
+  colour 0: sqrtDelta -1; rows P0 {1, 1, 1, 1}, P1 {0, 1, 1, 1}, P2 {0, 2, 2, 2}; Dil[1..4] {1, 1, 1, 1}; Leaf[0..3] {0, 1, 1, 1}
+  colour 1: sqrtDelta 0; rows P0 {0, 0, 0, 0}, P1 {0, 0, 0, 0}, P2 {1, 1, 1, 1}; Dil[1..4] {0, 0, 0, 0}; Leaf[0..3] {0, 0, 0, 0}
+  colour 2: sqrtDelta 0; rows P0 {0, 0, 0, 0}, P1 {0, 0, 0, 0}, P2 {1, 1, 1, 1}; Dil[1..4] {0, 0, 0, 0}; Leaf[0..3] {0, 0, 0, 0}
+  edge E_00[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{2, 2, 2}, {2, 2}, {2}}   min 2
+  edge E_01[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_02[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_10[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_11[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_12[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_20[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_21[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_22[m, n] (rows m = 0..2, n = 0..KMAX-1-m): {{0, 0, 0}, {0, 0}, {0}}   min 0
+  regular idempotents (colours 1, 2): minimal valuation of sqrtDelta, P0, P1, P2 (hence Dil, Leaf), E_ij (i, j in {1,2}) = 0  => ANALYTIC at the conifold (to z^3); sqrtDelta_1, sqrtDelta_2 at t_c = 0: {(-9*I)/128 + (9*Sqrt[3])/128, (9*I)/128 + (9*Sqrt[3])/128}
+(B) per-colouring polar parts {t_c^-P .. t_c^-1}, sum over all decorations of the stable graph with the colouring fixed
+  graph 1: genera {2}, edges {}, Aut 1, decorations 8; colour-sum = stored term through t_c^1: True (precision t_c^10)
+      colouring {0} (prec t_c^10): {-9773/327680, 0}
+      singular colourings: 1 of 3
+      singular set S = {1} summed over the regular colours: {-9773/327680, 0}
+      colour sum: {-9773/327680, 0}
+  graph 2: genera {1}, edges {{1, 1}}, Aut 2, decorations 10; colour-sum = stored term through t_c^1: True (precision t_c^11)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 3: genera {0}, edges {{1, 1}, {1, 1}}, Aut 8, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 4: genera {1, 1}, edges {{1, 2}}, Aut 2, decorations 9; colour-sum = stored term through t_c^1: True (precision t_c^11)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 5: genera {0, 1}, edges {{1, 1}, {1, 2}}, Aut 2, decorations 3; colour-sum = stored term through t_c^1: True (precision t_c^12)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 6: genera {0, 0}, edges {{1, 2}, {1, 2}, {1, 2}}, Aut 12, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 7: genera {0, 0}, edges {{1, 1}, {2, 2}, {1, 2}}, Aut 8, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+SUMMARY eps1 = 1/8: self-checks all True: True; graphs with an edge that are singular for some colouring: {}; graphs with an edge singular for some singular set S (after summing the regular colours): {}; time 23 s
+written G:\My Drive\Projects\Old\refGW\hodge_vertex\lp2_explore\lp2_percolour_g2_out.txt
+exit 0 after 53 s

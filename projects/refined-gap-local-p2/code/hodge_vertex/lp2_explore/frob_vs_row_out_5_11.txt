@@ -1,0 +1,30 @@
+eps = (5,11), E = 16, u-orders 1..6
+z sample points: 1/3 2/7 7/3 13/4 11 17/5 19/6 23/9 29/11 31/7 37/8 41/13
+lam = 16, solution w^s:
+  u^1:affine (alpha=32/3, beta=256/3)
+  u^2:affine (alpha=-512/27, beta=-2048/27)
+  u^3:affine (alpha=4096/81, beta=0)
+  u^4:affine (alpha=-131072/729, beta=262144/729)
+  u^5:affine (alpha=8388608/10935, beta=-16777216/10935)
+  u^6:affine (alpha=-209715200/59049, beta=268435456/59049)
+lam = 16, solution w^1:
+  u^1:NOT affine
+  u^2:NOT affine
+  u^3:NOT affine
+  u^4:NOT affine
+  u^5:NOT affine
+  u^6:NOT affine
+lam = -16, solution w^s:
+  u^1:NOT affine
+  u^2:NOT affine
+  u^3:NOT affine
+  u^4:NOT affine
+  u^5:NOT affine
+  u^6:NOT affine
+lam = -16, solution w^1:
+  u^1:NOT affine
+  u^2:NOT affine
+  u^3:NOT affine
+  u^4:NOT affine
+  u^5:NOT affine
+  u^6:NOT affine

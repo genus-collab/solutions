@@ -1,0 +1,12 @@
+=== genus 2: Hodge vertices ===
+=== genus 3: Hodge vertices ===
+=== Hodge integrals and scalar R-action (genus 4 PPZ on 379 graphs) ===
+2026-10-29 17:46:13  [g=2] VALIDATION OK: sum of decorated graphs = reference total at every sample point
+2026-10-29 17:51:38  [g=3] VALIDATION OK: sum of decorated graphs = reference total at every sample point
+2026-10-29 17:46:17  [g=2] VALIDATION OK: sum of decorated graphs = reference F20
+2026-10-29 17:46:17  [g=2] VALIDATION OK: conifold gap
+2026-10-29 17:46:17  [g=2] VALIDATION OK: all 27 genus-2 decorated graphs and polar parts agree with the stored local run
+2026-10-29 17:52:00  [g=3] VALIDATION OK: sum of decorated graphs = reference F30
+2026-10-29 17:52:00  [g=3] VALIDATION OK: conifold gap
+2026-10-29 17:52:00  [g=3] VALIDATION OK: all 693 genus-3 decorated graphs and polar parts agree with the stored local run
+2026-10-29 17:52:22  VALIDATION OK: Hodge integrals and scalar R-action up to genus 4

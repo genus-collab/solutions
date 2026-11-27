@@ -1,0 +1,630 @@
+% s04_generic. Section file; new macros at the top; label prefix: gen
+\newcommand{\gendbr}[1]{\langle\!\langle #1 \rangle\!\rangle}  % double bracket
+\newcommand{\genC}{\mathsf{C}}                                 % matrix of H\circ on the small locus
+\newcommand{\genone}{\mathbf{1}}                               % unit; also the trivial rank-one CohFT
+\newcommand{\genst}{\mathrm{st}}                               % stabilisation
+\newcommand{\genev}{\mathrm{ev}}
+\newcommand{\genft}{\mathrm{ft}}
+\newcommand{\genCurve}{\mathcal{C}}                            % universal curve over M_{g,n}
+\newcommand{\genbR}{\boldsymbol{\mathsf{R}}}                   % \Psi^{-1} R \Psi in the Euler-field remark
+\section{The CohFT and its R-matrix at generic weights}
+\label{sec:gen}
+
+In this section the torus is the maximal torus $\Tmax$ and the weights $\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2$ are independent indeterminates. The product at $\cQ=0$ is semisimple there, and the Givental--Teleman classification applies. The main statement, \cref{thm:gen-main}, is an intermediate step towards the fibrewise torus: nothing is claimed about Gromov--Witten theory at generic weights beyond it. No step of the section uses a finite-order computation.
+
+\subsection{Statement}
+
+We use the notation of \cref{sec:set}. Throughout, $\{i,j,k\}=\{0,1,2\}$ when the three indices occur together. Recall that
+\[
+\wts_i=\{3\alpha_i,\ \alpha_j-\alpha_i,\ \alpha_k-\alpha_i,\ -\epsilon_1,\ -\epsilon_2\},\qquad \wprod_i=\prod_{a\in\wts_i}a,
+\]
+that $\Kal=\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$, that $\Kalt=\Kal\big(\wprod_0^{1/2},\wprod_1^{1/2},\wprod_2^{1/2}\big)$ and that $\Fzero=\Kalt\lser{\cQ}$. For a multiset $\mathsf{v}$ of non-zero weights put
+\[
+h_{\mathsf{v}}(z)\coloneqq\exp\Big(-\sum_{k\geq 1}\frac{B_{2k}}{2k(2k-1)}\,p_{2k-1}(1/\mathsf{v})\,z^{2k-1}\Big)=\prod_{a\in\mathsf{v}}\Theta(-z/a),\qquad
+\Hg_{\mathsf{v}}\coloneqq\prod_{a\in\mathsf{v}}\frac{\Lamv(a)}{a^{g}},
+\]
+with $\Lamv(u)=\sum_i(-1)^i\lambda_i u^{g-i}$ and $\Theta(x)=\exp\sum_{m\geq 1}B_{2m}x^{2m-1}/(2m(2m-1))$. We write $\genone$ both for the unit of the state space and for the trivial rank-one CohFT, and $\Rm.\TFT$ for the unit-preserving action of \cite[Definition 2.13]{PPZ15}. The state space is $\cV=\Kal[H]/\big(\prod_i(H+\alpha_i)\big)$, with scalars extended whenever needed. The mirror map $\cQ=y\exp\big(3\sum_{d\geq1}\frac{(3d-1)!}{(d!)^3}(-y)^d\big)$ is a unit times $y$, with coefficients in $\bbQ$ and independent of $\alpha$, so $\Kal\fps{\cQ}=\Kal\fps{y}$; further $A=\theta\log\cQ$ and $\thQ=A^{-1}\theta$.
+
+\begin{thm}\genusstatus{AI-proposed, unchecked}
+\label{thm:gen-main}
+\begin{description}
+\item[(A1)] Let
+\[
+\Omega_{g,n}(\gamma_1,\dots,\gamma_n)\coloneqq\sum_{d}\cQ^d\,\genst_*\Big([\Mbar_{g,n}(\bbP^2,d)]^{\vir}_{\Tmax}\cap\prod_k\genev_k^*\gamma_k\cap e_{\Tmax}(R\pi_*f^*\Ntw)^{-1}\Big),
+\]
+with $\Ntw=\cO(-3)_{3\alpha}\oplus\cO_{-\epsilon_1}\oplus\cO_{-\epsilon_2}$. This equals the localisation definition of the invariants of $Z$ in \cite{BS}. It is a CohFT with flat unit over $\Kal\fps{\cQ}$, with pairing $\eta(a,b)=\sum_i a|_{P_i}b|_{P_i}/\wprod_i$. It satisfies the divisor equation $p_*\Omega_{g,n+1}(\gamma,H)=\thQ\Omega_{g,n}(\gamma)$. It is semisimple at $\cQ=0$, with idempotents $\eid_i(\cQ)\in\cV\otimes\Kal\fps{\cQ}$ and $\Delta_i(\cQ=0)=\wprod_i$. Each $\GW_{g,d}^{\Tmax}$ ($d\geq 1$, or $d=0$ and $g\geq 2$) lies in $\locOal$. So it is regular on the diagonal, and its value at $\alpha^*$ is the $\TF$ integral $\int_{[\Mbar(\bbP^2,d)]^{\vir}}e_{\TF}(R\pi_*f^*\Ntw)^{-1}$. For any embedding of $\Fzero$ in $\bbC$, \cite[Theorem (2)]{Tel12} gives $\Omega=\Rm.\TFT$ with $\TFT(\eid_i^{\,n})=\Delta_i^{g-1}$, for a unique symplectic $\Rm$, and $\Rm$ has coefficients in $\Fzero$.
+
+\item[(A2)] Put $\mathsf{s}_{aj}\coloneqq\wprod_j^{-1/2}\,\Fsol(H^a)|_{P_j}$. Define $\mathsf{u}_j$ by $\thQ\mathsf{u}_j=\mathsf{L}_j$, where $\mathsf{L}_j$ is the eigenvalue of $H\qprod$ with $\mathsf{L}_j(0)=-\alpha_j$, normalised by $\mathsf{u}_j+\alpha_j\log y\to 0$ at $y=0$. Then $\theta\mathsf{u}_j=Y_j$, where $Y_j\in\Kal\fps{y}$ is the root of $\Lhat$ with $Y_j(0)=-\alpha_j$. Moreover $\Rt_{aj}\coloneqq\re^{-\mathsf{u}_j/z}\mathsf{s}_{aj}$ lies in $\Kalt\fps{y}\fps{z}$; $\Rt|_{z=0}=\Psi$, where $\Psi_{aj}=\fid_j^*(H^a)$; $\Rt|_{y=0}=\Psi|_{y=0}$, with no $z$-dependence; $\Delta_i=3\epsilon_1\epsilon_2W(Y_i)$; and
+\[
+\sum_{a,b}\Rt_{ai}(z)\,\eta^{ab}\,\Rt_{bj}(-z)=\delta_{ij}.
+\]
+Further
+\begin{equation}
+\Rt_{1j}=\frac{(z\theta+Y_j)\Rt_{0j}}{A},\qquad \Rt_{2j}=\frac{(z\theta+Y_j-e_1(\alpha)\Ey)\Rt_{1j}}{D}.
+\label{eq:gen-rowrec}
+\end{equation}
+With the dictionary $\eta(H^a,\Rm(z)\fid_j)=\Rm_{aj}(z)$, the R-matrix of (A1) satisfies
+\[
+\Rm_{aj}(z)=\Rt_{aj}(z)\exp\Big(\sum_k a_k^{(j)}z^{2k-1}\Big),\qquad a_k^{(j)}\in\Kalt.
+\]
+
+\item[(A3)] The constants are
+\[
+a_k^{(j)}=-\frac{B_{2k}}{2k(2k-1)}\,p_{2k-1}(1/\wts_j).
+\]
+That is, $\Rm_{aj}=\Rt_{aj}\,h_{\wts_j}$, $\ \Rm_{aj}|_{\cQ=0}=\Psi_{aj}|_{\cQ=0}\,h_{\wts_j}(z)$, and in $\End(\cV)$ one has $\Rm|_{\cQ=0}=\mathrm{diag}(h_{\wts_j}(z))$ on the $\fid_j$. For $n\geq 1$,
+\[
+\Omega(\eid_{i_1},\dots,\eid_{i_n})|_{\cQ=0}=\delta_{i_1=\dots=i_n=i}\ \wprod_i^{\,g-1}\,\Hg_{\wts_i}.
+\]
+With $\Asym$ the normalised formal Laplace expansion of \cref{sec:row}, normalised by $\sqrt{\det\Hess(-\cW)}$, one has
+\[
+\Asym_{q_i^{\mathrm{cr}}}[\re^{\cW/z}\dd\Omega]=\mathsf{k}\,\Nz(z)\,\Rm_{0i},\qquad \Nz(z)=\sqrt{\epsilon_1\epsilon_2}\,\Theta(-z/\epsilon_1)\Theta(-z/\epsilon_2),
+\]
+with $\mathsf{k}^2=-1$, and $\mathsf{k}$ universal up to the branch of the square root. With $(\det\Hess\cW)^{-1/2}$ in place of $(\det\Hess(-\cW))^{-1/2}$, one has $\mathsf{k}=1$. Structurally, $\Omega^{Z}_{g,n}=(\epsilon_1\epsilon_2)^{g-1}\Hg_{(-\epsilon_1,-\epsilon_2)}\Omega^{\KPtwo}_{g,n}$, so $\Rm^{Z}=\Rm^{\KPtwo}h_{(-\epsilon_1,-\epsilon_2)}$, and $\Asym=\mathsf{k}\,\Rm^{\KPtwo}_{0i}$, with $\Rm^{\KPtwo}$ taken in its own normalised frame, so that $\mathsf{k}=1$ in the $(\det\Hess\cW)^{-1/2}$ convention. (Here $\Rm^{Z}_{0i}=(\epsilon_1\epsilon_2)^{-1/2}\Rm^{\KPtwo}_{0i}h_{(-\epsilon_1,-\epsilon_2)}$ and $\Theta(-z/\epsilon)\Theta(z/\epsilon)=1$.)
+\end{description}
+
+\emph{Graph sum.} For $g\geq2$, in $\Kal\fps{\cQ}$,
+\begin{multline}
+\sF_g^{\Tmax}\coloneqq\sum_{d\geq0}\cQ^d\,\GW_{g,d}^{\Tmax}
+=\sum_{\Gamma}\frac{1}{|\Aut\Gamma|}\sum_{\col:\Ver(\Gamma)\to\{0,1,2\}}\sum_{\mathrm{dec}}\\
+\prod_{v}\Big[\Delta_{\col_v}^{g_v-1}\frac{1}{m_v!}\int_{\Mbar_{g_v,n_v+m_v}}\prod_h\psi_h^{a_h}\prod_k\psi_{n_v+k}^{d_{v,k}}\prod_k\Dil_{\col_v}(d_{v,k})\Big]
+\prod_{e}\Edge_{\col\col'}(a_e,b_e),
+\label{eq:gen-graphsum}
+\end{multline}
+where $\Pn_a^{(i)}\coloneqq\Delta_i^{1/2}\Rm_{ai}$, $\ \Dil_i(d)\coloneqq(-1)^d[z^{d-1}]\Pn_0^{(i)}$ for $d\geq2$, and
+\[
+\Edge_{ij}(\psi,w)\coloneqq\frac{\delta_{ij}\Delta_i-\sum_{a,b}\Pn_a^{(i)}(-\psi)\,\eta^{ab}\,\Pn_b^{(j)}(-w)}{\psi+w},
+\]
+with $\Edge_{ij}(a,b)$ its coefficient of $\psi^aw^b$. Each coloured term lies in $\Kal\fps{\cQ}$, with no square roots and no cube roots at generic $\alpha$; the identity is for the total. Equivalently, $\sF_g^{\Tmax}$ is the corresponding sum over the rows $\Rt$ with vertex classes $\Delta_{\col_v}^{g_v-1}\Hg_{\wts_{\col_v}}$.
+\end{thm}
+
+The series $\sF_g^{\Tmax}$ includes $d=0$, see \cref{rmk:set-d0}. The decorations in \cref{eq:gen-graphsum} are those of \cref{def:set-graphsum}.
+
+\begin{rmk}[Dependencies]
+\label{rmk:gen-deps}
+The mirror theorem (\cref{thm:gen-mirror}) enters through \cref{lem:gen-rows}, and hence \cref{lem:gen-compare,lem:gen-Y,lem:gen-unit}, the application of \cref{lem:gen-ambig} to the rows $\Rt$, \cref{lem:gen-red}, \cref{thm:gen-const}, \cref{prop:gen-osc}, parts (A2), (A3) and the row form of the graph sum. It does not enter part (A1) (\cref{lem:gen-fixed,lem:gen-weights,prop:gen-poly,lem:gen-axioms,lem:gen-divisor,lem:gen-ss,lem:gen-free,prop:gen-teleman}), \cref{lem:gen-wkb,lem:gen-dict,prop:gen-flat,lem:gen-mumford,lem:gen-ch,lem:gen-tensor}, or the comparison statement of \cref{lem:gen-ambig} for two flat solutions. \Cref{prop:gen-osc} is not needed for the graph sum: \cref{sec:spe} uses it for the identity $\Pn_0=\Theta(z/\epsilon_1)\Theta(z/\epsilon_2)\Phi$.
+\end{rmk}
+
+\subsection{Geometry at generic weights}
+
+\begin{lem}[Fixed loci]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-fixed}
+One has $\Mbar_{g,n}(Z,d)^{\Tmax}=\Mbar_{g,n}(\bbP^2,d)^{\Tmax}$, which is closed in the proper space $\Mbar(\bbP^2,d)$.
+\end{lem}
+\begin{proof}
+A compact irreducible $\Tmax$-invariant curve in $Z$ maps to a $\Tmax$-fixed point of $\bbC^2$, that is, the origin. A compact curve in $\KPtwo$ lies in the zero section, because $\KPtwo\to\bbC^3/\mu_3$ is affine away from $\bbP^2$.
+\end{proof}
+
+\begin{lem}[Weights move]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-weights}
+Let $F$ be a component of the $\Tmax$-fixed locus of $\Mbar_{g,n}(\bbP^2,d)$, $g\geq0$. Every weight of $R\pi_*f^*\Ntw|_F$ is a non-zero linear form, and it remains non-zero on $\TF$. The fixed part of the obstruction theory of $Z$ on $F$ is that of $\bbP^2$, the virtual classes $[F]^{\vir}$ coincide, and $e(N^{\vir}_Z)=e(N^{\vir}_{\bbP^2})\,e_{\Tmax}(R\pi_*f^*\Ntw)$. Hence the localisation definition of \cite{BS} equals the twisted integral in part (A1) of \cref{thm:gen-main}. \draftnote{BS label: defn: refined GW series, notation: defn via localisation.}
+\end{lem}
+\begin{proof}
+Fix a fixed map with vertices $C_v$ at $P_{i(v)}$ and edges $C_e$ covering a line $P_iP_j$ with degree $d_e$. By the normalisation sequence, $R\pi_*f^*\Ntw|_F$ is as follows. For $\cO(-3)$ it consists of the vertex terms $(\cO-\Hdg_v^\vee)\,3\alpha_i$, the flag terms $-3\alpha_i$, and the edge terms $H^1(\bbP^1,\cO(-3d_e))$ (with $H^0=0$), whose weights are
+\[
+3\alpha_i+\frac{l(\alpha_j-\alpha_i)}{d_e}=\frac{(3d_e-l)\alpha_i+l\alpha_j}{d_e},\qquad l=1,\dots,3d_e-1.
+\]
+For $\cO_{-\epsilon}$ it is $(\cO-\Hdg^\vee)(-\epsilon)$. Every weight is a non-zero linear form. They all remain non-zero on $\TF$, where they become $E$, $-\epsilon_1$, $-\epsilon_2$. For $d>0$, $H^0(C,f^*\cO(-3))=0$ by connectedness, and $R^1$ has rank $3d+g-1$. Hence the fixed part of the $Z$-obstruction theory on $F$ is that of $\bbP^2$, the virtual classes coincide, and the Euler classes factor as stated. The last claim follows from the localisation formula of Graber--Pandharipande on the proper space $\Mbar(\bbP^2,d)$, in the form for $\Tmax$ given in the proof of \cref{prop:gen-poly}.
+\end{proof}
+
+We now define the rings needed for regularity on the diagonal. Let $\ringA=\bbQ[\alpha,\epsilon,y]$ with the prime $\primeq=(\alpha_i-E/3,\ i=0,1,2)$, and let $\locOal$ be $\bbQ[\alpha,\epsilon]$ localised at $\primeq\cap\bbQ[\alpha,\epsilon]$. The elements $\epsilon_1,\epsilon_2,E$ and $e_3(\alpha)$ are not in $\primeq$.
+
+\begin{prop}[Polynomiality and regularity on the diagonal]\genusstatus{AI-proposed, unchecked}
+\label{prop:gen-poly}
+Let $H$ be the equivariant class, with $H|_{P_i}=-\alpha_i$.
+\begin{enumerate}
+\item For $d\geq1$ and $g\geq0$, $\epsilon_1\epsilon_2\GW_{g,d}^{\Tmax}$ lies in $\bbQ[\alpha,\epsilon]$, is homogeneous of degree $2g$, and
+\[
+\GW_{g,d}^{\Tmax}=\int_{[\Mbar_g(\bbP^2,d)]^{\vir}_{\Tmax}}\frac{e_{\Tmax}(R^1\pi_*f^*\cO(-3)_{3\alpha})\,\Lamv(-\epsilon_1)\Lamv(-\epsilon_2)}{\epsilon_1\epsilon_2}.
+\]
+\item For $d=0$ and $g\geq2$, $3e_3(\alpha)\epsilon_1\epsilon_2\GW_{g,0}^{\Tmax}$ lies in $\bbQ[\alpha,\epsilon]$, using $(-3H)^{-1}=(H^2+e_1(\alpha)H+e_2(\alpha))/(3e_3(\alpha))$ in $H_{\Tmax}(\bbP^2)[e_3(\alpha)^{-1}]$.
+\item Both lie in $\locOal$, and their image under $\alpha_i\mapsto E/3$ is
+\[
+\GW_{g,d}^{\TF}=\int_{[\Mbar_g(\bbP^2,d)]^{\vir}}e_{\TF}(R\pi_*f^*\Ntw)^{-1},
+\]
+the $\TF$ localisation definition.
+\end{enumerate}
+\end{prop}
+\begin{proof}
+\emph{Localisation for $\Tmax$.} Formula (1) and Appendices A and C of \cite{GP99} are stated for a $\bbC^*$-action. Apply them to a generic one-parameter subgroup through which $\Tmax$ acts with the same fixed loci. Both sides are rational in $(\alpha,\epsilon)$, and such subgroups are Zariski dense, so the formula holds for $\Tmax$.
+
+\emph{Case $d\geq1$.} Let $M=\Mbar_g(\bbP^2,d)$, which is proper, with $\Tmax$ acting through $\alpha$, by a linearisation with $H|_{P_i}=-\alpha_i$ and $\cO(-3)|_{P_i}=3\alpha_i$. One has $H^0(C,f^*\cO(-3))=0$: a section vanishes on non-contracted components, is constant on contracted ones, and $C$ is connected. So $R^1\coloneqq R^1\pi_*f^*\cO(-3)_{3\alpha}$ is a vector bundle of rank $3d+g-1$, and
+\[
+e_{\Tmax}(R\pi_*f^*\Ntw)^{-1}=\frac{e_{\Tmax}(R^1)\Lamv(-\epsilon_1)\Lamv(-\epsilon_2)}{\epsilon_1\epsilon_2},
+\]
+an honest class on $M$ after inverting $\epsilon_1\epsilon_2$. By \cref{lem:gen-weights} (all weights of $R\pi_*f^*\Ntw$ move on fixed loci, and $[F]^{\vir}$ and $N^{\vir}$ compare) and localisation on $M$, the localisation definition of \cite{BS} equals $\int_{[M]^{\vir}_{\Tmax}}$ of this class. The $\Tmax$-equivariant pushforward lands in $\bbQ[\alpha,\epsilon]$, which gives the polynomiality. The degree is $(3d+g-1)+2g-(3d+g-1)=2g$, and the expression is symmetric in $\epsilon_1,\epsilon_2$.
+
+\emph{Case $d=0$, $g\geq2$.} The same argument applies on $\Mbar_g\times\bbP^2$, with $e_{\Tmax}(\cO(-3)_{3\alpha})=-3H$ inverted as in the statement, using $H^3+e_1(\alpha)H^2+e_2(\alpha)H+e_3(\alpha)=0$.
+
+\emph{Passage to $\TF$.} Since $\epsilon_1,\epsilon_2$ and $e_3(\alpha)$ are not in $\primeq$, both invariants lie in $\locOal$. Restriction to $\TF$ (on a finite cover; rational coefficients make this harmless) is $\alpha_i\mapsto E/3$ and is compatible with pushforward. On $\TF$ one has $\Mbar(Z,d)^{\TF}=M$, since a compact curve maps to a point of the affinisation, so for $\TF$-fixed maps it lies in the zero section. The fixed part is the obstruction theory of $\bbP^2$, and $N^{\vir}=R\pi_*f^*\Ntw$ with the non-zero weights $E,-\epsilon_1,-\epsilon_2$. At $\alpha^*$ one has $H=H'-E/3$, and $(H^2+e_1(\alpha)H+e_2(\alpha))/(3e_3(\alpha))=1/(E-3H')$ modulo $H'^3$. Finally $e_3(\alpha^*)=(E/3)^3$ is not in the prime.
+\end{proof}
+
+The value of the constant $\GW_{g,0}^{\TF}$ is computed in \cref{prop:spe-const}.
+
+\subsection{The CohFT}
+
+\begin{lem}[Axioms]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-axioms}
+Over $\Kal\fps{\cQ}$, $\Omega$ is a CohFT with flat unit and pairing $\eta$.
+\end{lem}
+\begin{proof}
+$S_n$-symmetry is clear.
+
+\emph{Unit.} One has $\Omega_{g,n+1}(\gamma,\genone)=p^*\Omega_{g,n}(\gamma)$, from the fundamental-class axiom of the virtual class with $\cE_{g,n+1,d}=\genft^*\cE_{g,n,d}$ for the twisting class, by \cite[App.~1 (iv)]{CG07}. Further $\Omega_{0,3}(a,b,\genone)=\eta(a,b)$, since the terms with $d>0$ pull back from $\Mbar_{0,2}(\bbP^2,d)$.
+
+\emph{Gluing.} This is the splitting axiom together with the statement that $\iota^*R\pi_*f^*\Ntw$ is the sum over the two sides (or the one side) minus $\genev^*\Ntw$, by \cite[App.~1 (v), (vi)]{CG07}, or directly from the normalisation sequence. The node factor $e(\Ntw)$ turns the diagonal of $\bbP^2$ into the bivector $\eta^{-1}$, which is $\sum_i\wprod_i\,\eid_i(0)\otimes\eid_i(0)$. \draftnote{The fundamental-class and splitting axioms of the virtual class are used in standard form; a reference (Behrend--Manin) is to be added to the bibliography.}
+\end{proof}
+
+\begin{lem}[Divisor equation]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-divisor}
+One has $p_*\Omega_{g,n+1,d}(\gamma,H)=d\,\Omega_{g,n,d}(\gamma)$, also at $d=0$. Iterating,
+\[
+\sum_m\frac{\ft_1^{\,m}}{m!}\,p^m_*\Omega_{g,n+m}(\gamma,H^m)=\shQ\big(\Omega_{g,n}(\gamma)\big),
+\]
+with $\shQ\coloneqq\re^{\ft_1\thQ}\colon\Fzero\to\Fzero\fps{\ft_1}$ the ring map $\cQ\mapsto\cQ\re^{\ft_1}$.
+\end{lem}
+\begin{proof}
+One has $\genft_*(\genev_{n+1}^*H)=d$, an equivariant class of degree $0$, namely the fibre degree of $f^*\cO(1)$. The statement follows from the fundamental-class axiom.
+\end{proof}
+
+\begin{lem}[Semisimplicity]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-ss}
+The eigenvalues $\mathsf{L}_i$ of $H\qprod$ and the idempotents $\eid_i$ lie in $\Kal\fps{\cQ}$, and $\Delta_i(0)=\wprod_i$.
+\end{lem}
+\begin{proof}
+The matrix of $H\qprod$ reduces modulo $\cQ$ to cup product with $H$, which has the distinct eigenvalues $-\alpha_i$. The statement follows by Hensel's lemma.
+\end{proof}
+
+\subsection{The genus-zero differential equation}
+
+The double bracket used in this section, and everywhere the quantum differential equation is used, is
+\[
+\gendbr{x_1,\dots,x_n}\coloneqq\sum_{d\geq0}\sum_{m\geq0}\frac{\cQ^d}{m!}\,\langle x_1,\dots,x_n,\ft,\dots,\ft\rangle_{0,n+m,d},
+\]
+the sum over $(d,n+m)$ with $d>0$ or $n+m\geq3$, in $\Kal\fps{\cQ}\fps{\ft_0,\ft_1,\ft_2}$, with $\cQ$ a Novikov variable. This range and these weights are those for which the quantum product, the fundamental solution and the small $J$-function of \cref{sec:set} are defined. \draftnote{BS labels: eq:gwprim, eq:qprod, eq:fundsol, eq:Jred.} As in \cref{eq:set-fundsol}, put
+\[
+V(a,b)\coloneqq\eta(a,b)+\gendbr{a,\frac{b}{z-\psi}},\qquad\text{so that}\qquad\Fsol(a)=\sum_{c,b}H^c\eta^{cb}V(a,H^b),
+\]
+and $\eta(a\qprod b,c)=\gendbr{a,b,c}$. We write $\partial_c$ for the derivative in the flat direction $c$, and $\partial_1$ for the direction $H$. On the full formal space the $J$-function is $J(\ft,z)=(z+\ft_0)\genone+\ft_1H+\ft_2H^2+\sum_{a,b}H^a\eta^{ab}\gendbr{H^b/(z-\psi)}$, whose restriction is the small $J$-function $\Jsm$ of \cref{eq:set-J}. \draftnote{BS label: eq:resj.}
+
+The statement \cite[Prop.~2.4]{Iri} assumes a proper target, and \cite[Section~1]{Pan98} a convex one, so we derive the genus-zero differential equation at generic weights for this target.
+
+\begin{prop}[Genus-zero differential equation]\genusstatus{AI-proposed, unchecked}
+\label{prop:gen-qde}
+On the full formal space with coordinates $\ft_0,\ft_1,\ft_2$:
+\begin{enumerate}
+\item (Topological recursion relation of genus zero.) $\gendbr{c,a,\psi^{k+1}b}=\sum_{e,f}\gendbr{\psi^kb,e}\,\eta^{ef}\,\gendbr{f,c,a}$, with only stable splittings on the right. This is the psi-class relation on $\Mbar_{0,n}$, and it is unrelated to Eynard--Orantin recursion.
+\item $z\partial_c\Fsol(a)=\Fsol(c\qprod a)$ for all $a,c$.
+\item $\genone\qprod a=a$, $\ \Fsol(\genone)=J/z$ and $\Fsol(H)=\partial_1J$.
+\item On the small locus $\ft_0=\ft_2=0$,
+\[
+\Fsol(a)|_{\ft_1H}=\re^{\ft_1H/z}\Big(a+\sum_{d>0}(\cQ\re^{\ft_1})^d\sum_{c,b}H^c\eta^{cb}\Big\langle a,\frac{H^b}{z-\psi}\Big\rangle_{0,2,d}\Big).
+\]
+Setting the Novikov variable to $1$, writing $\cQ$ for $\cQ\re^{\ft_1}$ and $\ft_1=\log\cQ$, the derivative $\partial_1$ acts as $\thQ$, including on $\cQ^{H/z}$. In particular $z\thQ\Fsol(H^a)=\sum_c\genC^c_{1a}\Fsol(H^c)$ with $H\qprod H^a=\sum_c\genC^c_{1a}H^c$, and $\Fsol(H)=z\thQ\Fsol(\genone)$.
+\item $c\qprod(e\qprod a)=e\qprod(c\qprod a)$.
+\end{enumerate}
+\end{prop}
+\begin{proof}
+\emph{The psi relation.} By \cite[Lemma 1]{Pan98}, for $n\geq3$ the class $\psi_1$ on $\Mbar_{0,n}(\bbP^2,d)$ is the sum of the boundary divisors separating marking $1$ from markings $2,3$ ($\bbP^2$ is convex). That lemma is stated non-equivariantly, and the $\Tmax$-equivariant form is as follows. Let $M=\Mbar_{0,n}(\bbP^2,d)$, and let $\mathsf{c}\colon C\to M\times\bbP^1$ be the contraction of the universal curve onto the stabilisation of $(C;p_1,p_2,p_3)$, with $w$ the coordinate on $\bbP^1$ such that $p_1,p_2,p_3$ go to $0,1,\infty$. The torus $\Tmax$ acts on $M$ by composition with $f$ only, so $\mathsf{c}$ is $\Tmax$-invariant and $\Tmax$ acts trivially on $\bbP^1$. Hence, with $s_1$ the section of the marking $p_1$, $s_1^*\mathsf{c}^*\dd w$ is a $\Tmax$-invariant section of the cotangent line $\LL_1$. It vanishes exactly where $\mathsf{c}$ contracts the component of $p_1$, that is, on the divisors separating $1$ from $2,3$. The vanishing order is $1$ at the generic point of each: near a node $\mathsf{a}\mathsf{b}=\mathsf{s}$, with $p_1$ at $\mathsf{b}=\mathsf{b}_0$, one has $w=\mathsf{s}/\mathsf{b}-\mathsf{s}/\mathsf{b}_0$ and $\dd w=-\mathsf{s}\,\dd\mathsf{b}/\mathsf{b}^2$. So $c_1^{\Tmax}(\LL_1)=\sum[D]^{\Tmax}$, with no character correction.
+
+\emph{Boundary structure.} We use the boundary structure with the normalisation sequence, as in \cref{lem:gen-axioms}: the restriction of $e^{-1}(R\pi_*f^*\Ntw)$ to a boundary divisor is the product of the two factors times $e(\genev^*\Ntw)$, and $e(\Ntw)[\mathrm{Diagonal}_{\bbP^2}]=\sum_{e,f}\eta^{ef}H^e\otimes H^f$. Apply the psi relation with $b,c,a$ as the markings $1,2,3$, and write a splitting as a side $\mathsf{S}_1\ni b$ of degree $d_1$ and a side $\mathsf{S}_2\ni c,a$. The restriction holds for every stable splitting, because $0\to f^*\Ntw\to f_{\mathsf{S}_1}^*\Ntw\oplus f_{\mathsf{S}_2}^*\Ntw\to\genev^*\Ntw\to0$ is exact on the glued family and $R\pi_*$ commutes with base change. If $d_1=0$, side $\mathsf{S}_1$ contributes $e(\genev^*\Ntw)^{-1}$, which cancels the node factor. Here $e(\Ntw)=-3H\epsilon_1\epsilon_2$ is invertible in $\cV$ because $H|_{P_i}=-\alpha_i\neq0$, so the relation is an identity over $\Kal$ with no non-equivariant limit. The case $d_1=0$, $\mathsf{S}_1=\{b\}$ is not a divisor; the term $\eta(e,b)$ of $V$ takes its place, through $\sum\eta(e,b)\eta^{ef}\gendbr{f,c,a}=\gendbr{b,c,a}$. All integrals are over the smooth proper space $\Mbar_{0,n}(\bbP^2,d)$, with the fundamental class as virtual class, so no properness of $Z$ is used. The target $Z$ enters only through \cref{lem:gen-fixed,lem:gen-weights}: the fixed loci, universal curves and cotangent lines coincide, so psi insertions are covered, and the pairing of \cref{eq:set-eta} is $\eta$. This proves (i).
+
+\emph{Proof of (ii).} From the definition of $V$ and (i),
+\begin{align*}
+z\partial_cV(a,b)&=\gendbr{c,a,b}+\sum_{k\geq0}z^{-k-1}\gendbr{c,a,\psi^{k+1}b}\\
+&=\sum_{e,f}V(e,b)\,\eta^{ef}\,\gendbr{f,c,a}=V(c\qprod a,b).
+\end{align*}
+So $z\partial_c\Fsol(a)=\Fsol(c\qprod a)$.
+
+\emph{Proof of (iii).} By the string equation (\cite[Section~1.2, I]{Pan98}, from $\psi_i=\genft^*\psi_i+D_{i,n+1}$, with the twist pulled back) and $\langle\genone,a,b\rangle_{0,3,0}=\eta(a,b)$, one has $\genone\qprod a=a$ and $\Fsol(\genone)=J/z$. And $\Fsol(H)=\partial_1J$ by the formula for the fundamental solution. So $\Fsol(H)=z\thQ\Fsol(\genone)$ in (iv) is the case $c=H$, $a=\genone$ of (ii).
+
+\emph{Proof of (iv).} Restrict to $\ft_0=\ft_2=0$. For $d>0$ the descendant divisor equation $\langle x,\psi^kb,H\rangle_d=d\langle x,\psi^kb\rangle_d+\langle x,\psi^{k-1}(bH)\rangle_d$ holds, from $\psi_2=\genft^*\psi_2+D_{2,3}$, $\genft_*\genev^*H=d$, and the twist pulled back, by \cite[App.~1 (iv)]{CG07}. For $d=0$ direct evaluation on $\Mbar_{0,2+m}$ gives $\langle a,\psi^{m-1}b,H,\dots,H\rangle_{0,2+m,0}=\eta(aH^m,b)$, other powers of $\psi$ vanishing. Since multiplication by $H$ is $\eta$-self-adjoint, the displayed formula follows. Each coefficient of $z^{-k}$ lies in $\Kal[\ft_1]\fps{\cQ\re^{\ft_1}}$. So we may set the Novikov variable to $1$, call $\cQ\re^{\ft_1}$ the new $\cQ$ and put $\ft_1=\log\cQ$; then $\partial_1$ acts as $\thQ$, including on $\cQ^{H/z}$.
+
+\emph{Proof of (v).} The WDVV equation is not used. Since $z\partial_c[\Fsol(e\qprod a)]=z\Fsol(\partial_c(e\qprod a))+\Fsol(c\qprod(e\qprod a))$ and $\partial_c\partial_e=\partial_e\partial_c$, we get
+\[
+z\Fsol\big(\partial_c(e\qprod a)-\partial_e(c\qprod a)\big)+\Fsol\big(c\qprod(e\qprod a)-e\qprod(c\qprod a)\big)=0.
+\]
+As $\Fsol=1+O(1/z)$ is invertible and both arguments are free of $z$, we get $c\qprod(e\qprod a)=e\qprod(c\qprod a)$. This uses the full formal space, not only the small locus.
+\end{proof}
+
+\begin{rmk}
+The same form of the differential equation and of the fundamental solution appears in \cite[Section~1.2 (6), Section~1.3 Prop.~2]{Pan98} for convex targets. It is consistent with \cite[Theorem 2]{CCIT15} and with \cite[Theorem 1]{Giv03} (the recursion relation, string and dilaton equations are equivalent to the cone property); neither is used here.
+\end{rmk}
+
+\begin{thm}[Mirror theorem at generic weights]\genusstatus{AI-proposed, unchecked}
+\label{thm:gen-mirror}
+Let $\cQ(y)=\exp I_0^{[1]}(y)=y\re^{\gI(y)}$, with $\gI(y)=3\sum_{d\geq1}\frac{(3d-1)!}{(d!)^3}(-y)^d$ independent of $\alpha$. Then, with $\Tmax$-equivariant classes,
+\[
+\Jsm(\cQ(y),z)=I(y,z).
+\]
+\end{thm}
+\draftnote{BS label: eq:J=I. Numbers of \cite{CCIT15} are those of arXiv:1310.4163v5; to be compared with the journal print before submission.}
+\begin{proof}
+This is \cite[Theorem 31]{CCIT15} with \cite[Definition 28, eq.~(19), eq.~(4), Remark 3]{CCIT15}, as we now spell out.
+
+\emph{Scope.} The space $Z=\KPtwo\times\bbC^2$ is the smooth toric variety with lattice $\bbZ^5$, rays
+\[
+\begin{gathered}b_0=(1,0,1,0,0),\ b_1=(0,1,1,0,0),\ b_2=(-1,-1,1,0,0),\\ b_3=(0,0,1,0,0),\ b_4=(0,0,0,1,0),\ b_5=(0,0,0,0,1),\end{gathered}
+\]
+and maximal cones spanned by $b_3,b_4,b_5$ and two of $b_0,b_1,b_2$. These cones are unimodular, so $\mathrm{Box}=\{0\}$, and the lattice of relations is $\bbZ(1,1,1,-3,0,0)$. The variety $Z$ is semi-projective in the sense of \cite[Section~3.1]{CCIT15}: it has three fixed points, and $Z\to\Spec H^0(\cO_Z)=\bbC^3/\mu_3\times\bbC^2$ is projective, with $-\mathfrak{D}_3=3H$ relatively ample, where $\mathfrak{D}_3$ is the divisor of $b_3$. In fan terms the support $\mathrm{Cone}(b_0,b_1,b_2)\times\bbR_{\geq0}^2$ is convex and full-dimensional, and the piecewise linear function with value $-1$ at $b_3$ and $0$ at the other rays is the maximum of its linear pieces, strictly. The cone of effective curves is generated by the line.
+
+\emph{Torus.} The torus of \cite{CCIT15} is $\bbZ^5\otimes\bbC^*=(\bbC^*)^6/\bbC^*$. The torus $\Tmax$ (weights $(\alpha_0,\alpha_1,\alpha_2,0,-\epsilon_1,-\epsilon_2)$ on $\bbC^6$) maps onto it with kernel $\mu_3$. The character lattices differ by index $3$, so the two rings of fractions of equivariant parameters are both $\bbC(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$, and the localisation formulas agree.
+
+\emph{Dictionary.} For the $\Tmax$-action the toric divisor classes are $\mathfrak{u}_i=H+\alpha_i$ ($i=0,1,2$), $\mathfrak{u}_3=-3H$, $\mathfrak{u}_4=-\epsilon_1$, $\mathfrak{u}_5=-\epsilon_2$, with $H=c_1$ of $\cO(1)$ with its lift, $H|_{P_i}=-\alpha_i$. So $H=-\mathfrak{u}_3/3$, $\alpha_i=\mathfrak{u}_i-H$ and $\epsilon_j=-\mathfrak{u}_{3+j}$. The non-zero $\mathfrak{u}_j|_{P_i}$ ($j=0,\dots,5$) are, as a set, the tangent weights $\wts_i$ at $P_i$; here $3\alpha_i$ is $\mathfrak{u}_3|_{P_i}$ and $-\epsilon_j$ is $\mathfrak{u}_{3+j}|_{P_i}$. The relation $\mathfrak{u}_0\mathfrak{u}_1\mathfrak{u}_2=0$ is $\prod_i(H+\alpha_i)=0$.
+
+\emph{Substitution.} Take the extended set $S$ empty and all extended parameters zero in \cite[eq.~(19)]{CCIT15}. The curve classes are $d(1,1,1,-3,0,0)$, $d\geq0$, and the factors are $1/\prod_{m=1}^d(H+\alpha_i+mz)$ for $i=0,1,2$, $\prod_{m=0}^{3d-1}(-3H-mz)$ for $i=3$, and $1$ for $i=4,5$. So $I^{\mathrm{CCIT}}(\cQ,z)=z\sum_d\cQ^dI_d(z)$, where $zy^{H/z}\sum_dy^dI_d(z)$ is the $I$-function \cref{eq:set-I}.
+
+\emph{Mirror map.} Each $I_d$ with $d\geq1$ is $-3H$ times a function homogeneous of degree $-1$ in $(H,\alpha,z)$, with expansion at $z=\infty$ beginning $3H(-1)^d\frac{(3d-1)!}{(d!)^3}z^{-1}$. Reducing $H^3$ by the relation keeps the power of $z$. Hence $I^{\mathrm{CCIT}}(\cQ,-z)=-z+\gI(\cQ)H+O(1/z)$, with $\gI(0)=0$ and $\gI$ independent of $\alpha$; in the notation of \cref{sec:set}, $\gI=I_0^{[1]}-\log y$. By \cite[Theorem 31]{CCIT15} this is a point of the form \cite[eq.~(4)]{CCIT15}. The part in non-negative powers of $z$ of \cite[eq.~(4)]{CCIT15} is $-z+\mathbf{t}(z)$, so $\mathbf{t}(z)=\gI(\cQ)H$, and by \cite[Remark 3]{CCIT15}, $I^{\mathrm{CCIT}}(\cQ,z)=J(\gI(\cQ)H,z)$.
+
+\emph{Divisor equation.} One has
+\[
+J(\tau_\circ H,z)=z\re^{\tau_\circ H/z}\Big(1+\sum_d(\cQ\re^{\tau_\circ})^d\sum_{a,b}H^a\eta^{ab}\Big\langle\frac{H^b}{z(z-\psi)}\Big\rangle_{0,1,d}\Big),
+\]
+including the $d=0$ classical terms $z\re^{\tau_\circ H/z}$. Hence
+\[
+\sum_d\cQ^dI_d=\re^{\gI(\cQ)H/z}\Big(1+\sum_d(\cQ\re^{\gI(\cQ)})^d\sum_{a,b}H^a\eta^{ab}\Big\langle\frac{H^b}{z(z-\psi)}\Big\rangle_{0,1,d}\Big).
+\]
+Rename $\cQ$ as $y$ and multiply by $zy^{H/z}$. By \cref{eq:set-J} this is the statement of the theorem, with $\cQ=y\re^{\gI(y)}=\exp I_0^{[1]}$.
+
+\emph{Comparison with \cref{lem:gen-weights}.} \cite[Section~2.2]{CCIT15} defines the invariants on $Z$ by virtual localisation over the proper fixed locus (via \cite[eq.~(51)]{Liu13}), which is the definition of \cite{BS} for this $Z$ and $\Tmax$. \Cref{lem:gen-fixed,lem:gen-weights} identify this with the twisted integral on $\Mbar_{0,n}(\bbP^2,d)$ in genus $0$. For $d=0$, $\Mbar_{0,n}(Z,0)=\Mbar_{0,n}\times Z$, and both sides are $\sum_i\prod_ja_j|_{P_i}/\wprod_i$ times a psi integral on $\Mbar_{0,n}$; the pairing is that of \cref{eq:set-eta}. On genus-zero trees $R\pi_*f^*\cO_{w}=\cO_{w}$ for a trivial line bundle of weight $w$, so the $\bbC^2$ factor multiplies each invariant by $1/(\epsilon_1\epsilon_2)$ and $\eta^{ab}$ by $\epsilon_1\epsilon_2$, and $J$ is unchanged.
+\end{proof}
+
+\begin{rmk}
+\label{rmk:gen-mirror}
+The theorem of \cite{Coa09} (Prop.~4.1, Cor.~4.2) gives the mirror statement on $\TF$; the present section cannot be moved to $\TF$, because the product at $\cQ=0$ is not semisimple there. The proof of \cite[Theorem 31]{CCIT15} uses the recursive characterisation of the Lagrangian cone in the form of its Theorem 41 (see also its Props.~45--47), the localisation formula of \cite{Liu13}, the hypergeometric modification with quantum Riemann--Roch at the fixed points, and its Theorem 2, whose recursion relation is the genus-zero psi-class relation; Eynard--Orantin topological recursion, remodelling and mirror curves do not occur in it. A statement of the same kind, for targets $W/\!/G$ with isolated torus-fixed points in the semi-positive case, is \cite[Theorem 1.2.2, Cors.~1.4.1, 1.4.2]{CFK}; it is not used here.
+\end{rmk}
+
+\subsection{Hodge classes and the existence of the R-matrix}
+
+For a scalar series $h=\sum_kb_kz^{2k-1}$ put
+\[
+\mathsf{X}_h\coloneqq\sum_kb_k\frac{(2k)!}{B_{2k}}\,\mathrm{ch}_{2k-1}(\Hdg).
+\]
+We write $\exp(h)$ for the rank-one R-matrix with logarithm $h$; correspondingly $h_{\mathsf{v}}.\genone$ is the action of the series $h_{\mathsf{v}}$ itself, whose logarithm is $\log h_{\mathsf{v}}$.
+
+\begin{lem}[Hodge classes as an R-action]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-mumford}
+For all stable $(g,n)$, in the conventions $\kappa_{2l-1}=p_*(\psi_{n+1}^{2l})$ of Arbarello--Cornalba,
+\begin{equation}
+\mathrm{ch}_{2l-1}(\Hdg)=\frac{B_{2l}}{(2l)!}\Big[\kappa_{2l-1}-\sum_i\psi_i^{2l-1}+\frac12\xi_*\Big(\sum_{a+a'=2l-2}(-1)^{a'}\psi^a\psi'^{a'}\Big)\Big],
+\label{eq:gen-mumford}
+\end{equation}
+including $g=0$, where both sides vanish. Further $\exp(h).\genone=\exp(\mathsf{X}_h)$, and $\Hg_{\mathsf{v}}=h_{\mathsf{v}}.\genone$.
+\end{lem}
+\begin{proof}
+\emph{Mumford's formula with markings.} The theorem as stated in \cite[Theorem (Mumford), Section~1.1]{FP00} applies to the family $\pi\colon\Mbar_{g,n+1}\to\Mbar_{g,n}$. With $K_{\pi}\coloneqq c_1(\omega_\pi)$, $D=\sum D_i$, $K_{\pi}\cdot D_i=\psi_iD_i$, $D_i^2=-\psi_iD_i$ and $D_iD_j=0$, one has
+\[
+(K_{\pi}+D_i)^{2l}=K_{\pi}^{2l}+\psi_i^{2l-1}D_i\sum_{r=1}^{2l}(-1)^{r-1}\binom{2l}{r}=K_{\pi}^{2l}+\psi_i^{2l-1}D_i,
+\]
+so $\pi_*(c_1(\omega(D))^{2l})=\pi_*(c_1(\omega)^{2l})+\sum_i\psi_i^{2l-1}$. This gives \cref{eq:gen-mumford}.
+
+\emph{The Hodge class.} The relation $c(\Hdg)c(\Hdg^\vee)=1$ (\cite[(5.4), (5.5)]{Mum83}, \cite[Section~2 before (22)]{FP00}) gives $\mathrm{ch}_{2k}(\Hdg)=0$ for $k\geq1$, and
+\[
+\frac{\Lamv(v)}{v^g}=c_{-1/v}(\Hdg)=\exp\Big(-\sum_k(2k-2)!\,\mathrm{ch}_{2k-1}(\Hdg)\,v^{1-2k}\Big).
+\]
+
+\emph{The action.} By \cite[Prop.~2.14]{PPZ15}, $\frac{\dd}{\dd s}(\re^{sh}.\genone)=\mathsf{D}_h(\re^{sh}.\genone)$, where from \cite[Defs.~2.2, 2.13]{PPZ15}
+\[
+\mathsf{D}_h\Omega_{g,n}=\sum_kb_k\Big[-\sum_i\psi_i^{2k-1}\Omega_{g,n}+p_*(\psi_{n+1}^{2k}\Omega_{g,n+1})+\frac12\xi_*\Big(\sum_{a+a'=2k-2}(-1)^{a'}\psi^a\psi'^{a'}\Omega'\Big)\Big].
+\]
+The legs give $-\psi^{2k-1}$, coming from $\Rm^{-1}$; the translation $T(z)=b_kz^{2k}$ gives the $\kappa$ term; and the edge gives $(z^{2k-1}+w^{2k-1})/(z+w)$. On $\exp(s\mathsf{X}_h)$, which is pulled back under $p$ and additive under $\xi^*$ for $k\geq1$ (loops included), the projection formula gives
+\[
+\mathsf{D}_h\exp(s\mathsf{X}_h)=\exp(s\mathsf{X}_h)\sum_kb_k\Big[\kappa_{2k-1}-\sum\psi_i^{2k-1}+\frac12\xi_*(\cdots)\Big]=\mathsf{X}_h\exp(s\mathsf{X}_h),
+\]
+by \cref{eq:gen-mumford}. So $\exp(s\mathsf{X}_h)$ solves the same graded differential equation with the same initial value, which proves $\exp(h).\genone=\exp(\mathsf{X}_h)$.
+
+\emph{Comparison.} The series $\log h_{\mathsf{v}}$ has $b_k=-\frac{B_{2k}}{2k(2k-1)}p_{2k-1}(1/\mathsf{v})$, so
+\[
+\mathsf{X}_{\log h_{\mathsf{v}}}=-\sum_k(2k-2)!\,\mathrm{ch}_{2k-1}(\Hdg)\,p_{2k-1}(1/\mathsf{v})=\log\Hg_{\mathsf{v}}.
+\]
+ This agrees with \cite[Prop.~8.7(i)]{Tel12} and with \cite[Section~2.3, Lemma]{Giv01}.
+\end{proof}
+
+\begin{lem}[Non-vanishing of $\mathrm{ch}_{2k-1}$]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-ch}
+For $k\geq2$, $\mathrm{ch}_{2k-1}(\Hdg)\neq0$ on $\Mbar_k$. Moreover $\mathrm{ch}_{2k-1}(\Hdg)\neq0$ on $\Mbar_{k,1}$ for $k\geq1$.
+\end{lem}
+\begin{proof}
+For $c_t=\sum\lambda_it^i$ one has $c_t'c_{-t}=\sum_{n\geq1}(-1)^{n-1}p_nt^{n-1}$, with $p_n=n!\,\mathrm{ch}_n$. Taking the coefficient of $t^{2g-2}$ gives $(2g-1)!\,\mathrm{ch}_{2g-1}(\Hdg)=(-1)^{g-1}\lambda_g\lambda_{g-1}$. Further $\lambda_{g-1}^2=2\lambda_g\lambda_{g-2}$, so $\int_{\Mbar_g}\lambda_g\lambda_{g-1}\lambda_{g-2}=\frac12\int\lambda_{g-1}^3\neq0$ for $g\geq2$ by \cite[Theorem 4]{FP00}. So $\mathrm{ch}_{2k-1}(\Hdg)\neq0$ on $\Mbar_k$, $k\geq2$. For $k=1$, $\int_{\Mbar_{1,1}}\lambda_1=1/24$.
+
+For the second statement, $\mathrm{ch}_{2k-1}(\Hdg)$ on $\Mbar_{k,1}$ is the pull-back $p^*$ of the class on $\Mbar_k$ for $k\geq2$, and $p^*\colon H^*(\Mbar_k;\bbQ)\to H^*(\Mbar_{k,1};\bbQ)$ is injective because $p_*(\psi_1p^*x)=(2k-2)x$. For $k=1$, $\Mbar_{1,1}$ is used directly.
+\end{proof}
+
+\begin{lem}[Freeness of the action]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-free}
+Let $\TFT$ be a semisimple TFT over a field of characteristic $0$, with $\TFT(\eid_i^{\,n})=\Delta_i^{g-1}$. If $\Rm$ is in the symplectic group and $\Rm.\TFT=\TFT$, then $\Rm=1$.
+\end{lem}
+\begin{proof}
+Suppose $\Rm\neq1$, and write $\Rm=1+\Rm_mz^m+\cdots$ in the basis $\fid_i$.
+
+Evaluate $(\Rm.\TFT)_{0,m+3}(\fid_i,\fid_j,\dots,\fid_j)$ with $i\neq j$. Graphs with an edge separate $\fid_i$, and translations vanish on mixed insertions, so only the leg term at the $\fid_i$-leg survives. This gives $-(\Rm_m)_{ji}\Delta_j^{(m+1)/2}\psi_1^m$, and $\psi_1^m\neq0$ on $\Mbar_{0,m+3}$. Hence $\Rm_m$ is diagonal, $\Rm_m=\mathrm{diag}(r_i)$.
+
+Symplecticity makes $m$ odd, $m=2k-1$ with $k\geq1$: $\Rm(z)\Rm^T(-z)=1$ gives $\Rm_m+(-1)^m\Rm_m^T=0$, so a diagonal $\Rm_m$ with $m$ even vanishes.
+
+\emph{Colour isolation.} Work on $\Mbar_{k,1}$ with the insertion $\eid_i$. (On $\Mbar_k$ there is no marking, and $\Omega_{k,0}$ is a sum over colours, so one colour cannot be separated.) The degree-$m$ part of $(\Rm.\TFT)_{k,1}(\eid_i)$ is linear in $\Rm_m$, monochromatic (a half-edge at a vertex carrying $\eid_i$ or joined to it must have colour $i$), and equals $\Delta_i^{k-1}$ times the degree-$m$ part of $(\exp(r_iz^m).\genone)_{k,1}$. By \cref{lem:gen-mumford} this is $\Delta_i^{k-1}r_i\frac{(m+1)!}{B_{m+1}}\mathrm{ch}_m(\Hdg)$. By \cref{lem:gen-ch}, $\mathrm{ch}_{2k-1}(\Hdg)\neq0$ on $\Mbar_{k,1}$; that lemma uses only $c(\Hdg)c(\Hdg^\vee)=1$ and \cite[Theorem 4]{FP00}. Hence $r_i=0$, a contradiction.
+\end{proof}
+
+\begin{prop}[Existence and field of definition of $\Rm$]\genusstatus{AI-proposed, unchecked}
+\label{prop:gen-teleman}
+For any embedding $\iota\colon\Fzero\to\bbC$ one has $\Omega=\Rm.\TFT$ with $\TFT(\eid_i^{\,n})=\Delta_i^{g-1}$, for a unique symplectic $\Rm$, and $\Rm$ has coefficients in $\Fzero$.
+\end{prop}
+\begin{proof}
+The field $\Fzero=\Kalt\lser{\cQ}$ has characteristic $0$ and the cardinality of the continuum, so it embeds in $\bbC$. Since $H^*(\Mbar_{g,n})$ is finite dimensional, $\iota(\Omega)$ is a CohFT with flat unit in $H^*(\Mbar_{g,n};\bbQ)\otimes\bbC$, semisimple because $\Omega$ is semisimple over $\Fzero$ (\cref{lem:gen-ss}). \cite[Defs.~2.2, 2.5, 2.13 and Prop.~2.14]{PPZ15} are identities of graph sums, and their proofs hold over any field of characteristic $0$. By \cite[Theorem (2) and Prop.~8.7(ii)]{Tel12}, in the form of \cite[Section~3.2]{PPZ15}, $\Omega=\Rm.\TFT$ with $\Rm$ over $\bbC$. By \cref{lem:gen-free} and the group action of \cite[Prop.~2.14]{PPZ15}, $\Rm$ is unique. Automorphisms of $\bbC$ over $\Fzero$ fix $\Omega$ and $\TFT$, so they fix $\Rm$. The fixed field of $\Aut(\bbC/\Fzero)$ is $\Fzero$, since $\Fzero$ has characteristic $0$: an algebraic element not in $\Fzero$ has a different conjugate, a transcendental element can be moved to itself plus $1$, and these automorphisms extend to $\bbC$. So $\Rm$ has coefficients in $\Fzero$.
+\end{proof}
+
+\subsection{The rows}
+
+\emph{Convention.} In the definition of $\mathsf{s}_{aj}=\wprod_j^{-1/2}\Fsol(H^a)|_{P_j}$, the covector is the constant covector $\fid_j^*|_{\cQ=0}$ at $\cQ=0$; with a covector moving with $\cQ$ the flatness below would fail. By contrast, $\Psi_{aj}=\fid_j^*(H^a)$ uses the dual basis at the point $\cQ$.
+
+On the small locus write $\genC$ for the matrix with entries $\genC_a{}^c=\genC^c_{1a}$, and define $G_I\coloneqq\theta I_1^{[1]}/e_1(\alpha)$ and $P_I\coloneqq\theta I_1^{[2]}$, so that by \cref{eq:set-gens}, $\Ey=\theta(G_I/A)$ and $D=\theta(P_I/A)$.
+
+\begin{lem}[Rows are formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-rows}
+With $I$ the $I$-function and on the small locus in the coordinate $y$,
+\[
+\Fsol(\genone)=\frac{I}{z},\qquad\Fsol(H)=\frac{\theta I}{A},\qquad\Fsol(H^2)=\frac{z\theta\Fsol(H)-e_1(\alpha)\Ey\Fsol(H)}{D},
+\]
+and $\genC^0_{11}=0$, $\genC^1_{11}=e_1(\alpha)\Ey/A$, $\genC^2_{11}=D/A$. Further $\mathsf{s}_{aj}=y^{-\alpha_j/z}\widehat{\mathsf{s}}_{aj}$ with $\widehat{\mathsf{s}}_{aj}\in\Kalt(z)\fps{y}$. All these identities, and the differential equation $z\thQ\Fsol(H^a)=\sum_c\genC^c_{1a}\Fsol(H^c)$, are identities of rational functions of $z$ at each order in $y$, and they may be expanded at $z=0$.
+\end{lem}
+\begin{proof}
+The first two formulas are \cref{prop:gen-qde}(iii), (iv) and \cref{thm:gen-mirror}. Further
+\[
+I|_{P_j}=zy^{-\alpha_j/z}\sum_dy^d\frac{\prod_{m=0}^{3d-1}(3\alpha_j-mz)}{\prod_l\prod_{m=1}^d(\alpha_l-\alpha_j+mz)},
+\]
+so $\mathsf{s}_{aj}=y^{-\alpha_j/z}\widehat{\mathsf{s}}_{aj}$ as claimed. The $d$-th $\cQ$-coefficients of $\Fsol(\genone),\Fsol(H),\Fsol(H^2)$ are built from $I$ by $\theta$ and by division by $A$ and $D$, so they are rational in $z$. The mirror theorem is an identity of $1/z$-series, and a $1/z$-series identity between rational functions is a rational identity. This covers the third row of the differential equation as well, which is used in \cref{lem:gen-compare}. So all these identities may be expanded at $z=0$.
+
+\emph{Row 2.} This computation uses the definition \cref{eq:set-gens} of the generators alone, and not the relations of \cref{prop:row-modrel}. With $\mathsf{r}=1/z$, the $I$-function gives
+\[
+\Fsol(\genone)=\frac{I}{z}=1+\mathsf{r}HI_0^{[1]}+\mathsf{r}^2\big(HI_1^{[1]}+H^2I_1^{[2]}\big)+O(\mathsf{r}^3).
+\]
+So
+\[
+\Fsol(H)=z\thQ\Fsol(\genone)=H+\mathsf{r}\Big(e_1(\alpha)\frac{G_I}{A}H+\frac{P_I}{A}H^2\Big)+O(\mathsf{r}^2).
+\]
+Since $\Fsol(H^c)=H^c+O(1/z)$, comparing the $z^0$ terms of $z\thQ\Fsol(H)=\genC^0_{11}\Fsol(\genone)+\genC^1_{11}\Fsol(H)+\genC^2_{11}\Fsol(H^2)$ gives $\genC^0_{11}=0$, $\genC^1_{11}=e_1(\alpha)\Ey/A$, $\genC^2_{11}=D/A$. As $D(0)=1$, this yields $\Fsol(H^2)=(z\theta\Fsol(H)-e_1(\alpha)\Ey\Fsol(H))/D$. \draftnote{BS labels: eq:SHb, eq:Ian, eq:ADEFXdef.}
+\end{proof}
+
+\begin{lem}[Formal WKB]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-wkb}
+Let $\Psi\in GL_3(\Kalt\fps{\cQ})$ have as columns the $\eta^{-1}$-orthonormal eigen-covectors, with $\Psi_{aj}(0)=(-\alpha_j)^a\wprod_j^{-1/2}$. Then $\GPsi\coloneqq\Psi^{-1}\thQ\Psi$ is antisymmetric with zero diagonal, and lies in $\cQ\,\mathrm{Mat}_3$ because $\thQ$ kills constants. The equation $(z\thQ+\mathsf{L}_j)v=\genC v$ has a solution $v=\Psi x$, $x=\sum_nz^nx^{(n)}$, $x^{(n)}\in(\Kalt\fps{\cQ})^3$, with $x^{(n)}(\cQ=0)=\delta_{n0}\,\mathbf{e}_j$ and $x^{(0)}=\mathbf{e}_j$, where $\mathbf{e}_j$ is the $j$-th unit vector. This does not depend on the rank.
+\end{lem}
+\begin{proof}
+The equation for $x$ reads, order by order,
+\[
+(\mathsf{L}_l-\mathsf{L}_j)\,x_l^{(n)}=\thQ x_l^{(n-1)}+(\GPsi x^{(n-1)})_l.
+\]
+For $l\neq j$ the factor $\mathsf{L}_l-\mathsf{L}_j$ is a unit of $\Kalt\fps{\cQ}$, so $x_l^{(n)}$ is determined. For $l=j$ the equation reads $\thQ x_j^{(n-1)}=-(\GPsi x^{(n-1)})_j$, which lies in $\cQ\Kalt\fps{\cQ}$, and this is contained in the image of $\thQ$. So a solution exists with the stated initial values.
+\end{proof}
+
+\begin{lem}[Comparison with the flat rows]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-compare}
+Since $\mathsf{L}_j(0)=-\alpha_j$ and $A(0)=1$, $\mathsf{L}_j+\alpha_j/A$ lies in $\cQ\Kalt\fps{\cQ}$; define $U_j\in\cQ\Kalt\fps{\cQ}$ by $\thQ U_j=\mathsf{L}_j+\alpha_j/A$ and put $\mathsf{u}_j\coloneqq U_j-\alpha_j\log y$, so that $\thQ\mathsf{u}_j=\mathsf{L}_j$. Then $\Rt_{aj}\coloneqq\re^{-\mathsf{u}_j/z}\mathsf{s}_{aj}$ lies in $\Kalt\fps{y}\fps{z}$, and $\Rt|_{z=0}=\Psi$, $\Rt|_{y=0}=\Psi|_{y=0}$.
+\end{lem}
+\begin{proof}
+Put $\widehat{w}\coloneqq\exp(-(\mathsf{u}_j+\alpha_j\log y)/z)\,\widehat{\mathsf{s}}_{\cdot j}=\exp(-U_j/z)\,\widehat{\mathsf{s}}_{\cdot j}$, in $\Kalt\lser{z}\fps{\cQ}$. Here $\log y$, not $\log\cQ$, is the correct logarithm, because $\mathsf{s}_{aj}=y^{-\alpha_j/z}\widehat{\mathsf{s}}_{aj}$. Then $\widehat{w}=\re^{-\mathsf{u}_j/z}\mathsf{s}_{\cdot j}$, and from the differential equation $z\thQ\widehat{w}=(\genC-\mathsf{L}_j)\widehat{w}$, with $\widehat{w}|_{\cQ=0}=\Psi_{\cdot j}(0)$. In the $\cQ$-expansion, the operator on the $d$-th coefficient has diagonal entries $zd+\alpha_l-\alpha_j$, all invertible in $\Kalt\lser{z}$ for $d\geq1$, including $l=j$, where $zd\neq0$ in $\Kalt\lser{z}$. So $\widehat{w}$ is unique, and $\widehat{w}=v$ with $v$ the solution of \cref{lem:gen-wkb}. This proves the statements. No oscillating integral and no analytic asymptotics are used.
+\end{proof}
+
+\begin{lem}[$Y_j$ and $\Delta_j$]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-Y}
+One has $\theta\mathsf{u}_j=A\mathsf{L}_j=Y_j$, the root of $\Lhat$ with $Y_j(0)=-\alpha_j$, and $\Delta_j=3\epsilon_1\epsilon_2W(Y_j)$.
+\end{lem}
+\begin{proof}
+The $I$-function satisfies \cref{eq:set-pf}. Indeed, $z\theta+\alpha_j$ acts on the summand $y^{d+H/z}$ as multiplication by $H+\alpha_j+dz$, and $3\theta+j$ on $y^{d-1+H/z}$ as $(3H+(3d-3+j)z)/z$. Writing $c_d$ for the coefficient of $y^{d+H/z}$ in $I/z$, the ratio $c_d/c_{d-1}$ gives $\prod_j(H+\alpha_j+dz)\,c_d+\prod_{m=3d-3}^{3d-1}(3H+mz)\,c_{d-1}=0$ for $d\geq1$, and for $d=0$ one uses $\prod_j(H+\alpha_j)=0$.
+
+Since $I|_{P_j}/z=\Fsol(\genone)|_{P_j}=\wprod_j^{1/2}\re^{\mathsf{u}_j/z}\Rt_{0j}$, we may conjugate \cref{eq:set-pf} by $\re^{\mathsf{u}_j/z}$, with $\theta\mathsf{u}_j=A\mathsf{L}_j$, and apply it to $\Rt_{0j}$. At order $z^0$, using that $\Rt_{0j}|_{z=0}=\Psi_{0j}$ is a unit, one gets $\Lhat(A\mathsf{L}_j)=0$, so $Y_j\coloneqq A\mathsf{L}_j$ is the root with $Y_j(0)=-\alpha_j$, and $\theta\mathsf{u}_j=Y_j$. At order $z^1$, by \cref{lem:row-wkb}(i) in its algebraic form, $(\theta+\frac12\theta\log W(Y_j))\Psi_{0j}=0$. Since $\Psi_{0j}=\Delta_j^{-1/2}$ and $\Delta_j(0)=\wprod_j=3\epsilon_1\epsilon_2W(-\alpha_j)$, we get $\Delta_j=3\epsilon_1\epsilon_2W(Y_j)$.
+\end{proof}
+
+\begin{lem}[Unitarity]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-unit}
+One has $\sum_{a,b}\Rt_{ai}(-z)\eta^{ab}\Rt_{bj}(z)=\delta_{ij}$, and the rows satisfy \cref{eq:gen-rowrec}.
+\end{lem}
+\begin{proof}
+The matrix $G_{ab}\coloneqq\sum_k\mathsf{s}_{ak}(z)\mathsf{s}_{bk}(-z)$ lies in $\Kalt(z)\fps{\cQ}$, since the factors $y^{\pm\alpha_k/z}$ cancel, and $z\thQ G=\genC G-G\genC^T$. The pairing $\eta$ also solves this equation, by self-adjointness of $H\qprod$, and $G(0)=\eta$. The difference vanishes by the same invertibility as in \cref{lem:gen-compare}. Write $\mathsf{s}=\widehat{\mathsf{s}}\,\mathrm{diag}(y^{-\alpha_k/z})$. Then $G=\widehat{\mathsf{s}}(z)\widehat{\mathsf{s}}(-z)^T$, with $\widehat{\mathsf{s}}\in GL_3(\Kalt(z)\fps{\cQ})$ since $\widehat{\mathsf{s}}(\cQ=0)$ is invertible. Inverting $G=\eta$ gives $\widehat{\mathsf{s}}(-z)^T\eta^{-1}\widehat{\mathsf{s}}(z)=1$. Conjugating by $\exp(U_k/z)$, that is, using $\Rt_{ai}(-z)=\re^{U_i/z}\widehat{\mathsf{s}}_{ai}(-z)$ and $\Rt_{bj}(z)=\re^{-U_j/z}\widehat{\mathsf{s}}_{bj}(z)$, yields the identity.
+
+The row formulas follow by conjugating $z\thQ\Fsol(H^a)=\sum_c\genC^c_{1a}\Fsol(H^c)$ with $\re^{\mathsf{u}/z}$, using the values of $\genC^c_{11}$ in \cref{lem:gen-rows}, where $\genC^0_{11}=\eta_{11}/\eta_{00}=0$. \draftnote{BS label of the row recursion: eq:RHb.}
+\end{proof}
+
+\begin{lem}[Dictionary]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-dict}
+The relation $\eta(H^a,\Rm(z)\fid_j)=\Rm_{aj}(z)$ is equivalent to $\fid_j^*\Rm^{-1}(z)H^a=\Rm_{aj}(-z)$, by symplecticity. Under it, \cite[Defs.~2.2, 2.13]{PPZ15} become exactly the factors and the stable graph sum of \cite{BS}. \draftnote{BS labels: eq:leafterms, eq:edgeterm, eq:gtH.}
+\end{lem}
+\begin{proof}
+The equivalence is the symplectic condition $\Rm^{-1}(z)^{\dagger}=\Rm(-z)$ of \cite[(5)]{PPZ15}, with $\dagger$ the $\eta$-adjoint.
+\end{proof}
+
+\subsection{Flatness of the R-matrix}
+
+We use the same letter $\Psi$ for the operator $\Fzero^3\to\cV\otimes\Fzero$, $\mathbf{e}_j\mapsto\fid_j$, whose entries in the sense above are $\Psi_{aj}=\eta(H^a,\Psi\mathbf{e}_j)$. Write $\mathbf{\Lambda}=\mathrm{diag}(\mathsf{L}_j)$, so that $H\qprod\Psi=\Psi\mathbf{\Lambda}$.
+
+\begin{prop}[Flatness of $\Rm$]\genusstatus{AI-proposed, unchecked}
+\label{prop:gen-flat}
+One has
+\[
+z\thQ\big(\Rm(z)\Psi\big)=\big(H\qprod\Rm(z)-\Rm(z)\,H\qprod\big)\Psi.
+\]
+This is an equation for $\Rm$ with legs $\Rm^{-1}(\psi)$, not for $\Rm^*(z)\coloneqq\Rm^{-1}(-z)$. With $\thQ U=\mathbf{\Lambda}$ it is equivalent to $z\thQ\Fsol=H\qprod\Fsol$ for $\Fsol=\Rm\Psi\re^{U/z}$.
+\end{prop}
+\begin{proof}
+\emph{Set-up.} In this proof state-space elements are denoted $\mathsf{x}_l$, and $\mathsf{D}_i,\mathsf{D}$ below are not the function $D$ of \cref{eq:set-gens}. Work over $\Fzero$ with the derivation $\thQ$, using $\Omega=\Rm.\TFT$ (\cref{prop:gen-teleman}) and \cref{lem:gen-divisor}. Put $\Rinv(\psi)\coloneqq\Rm^{-1}(\psi)$ and $a^i(\psi;\mathsf{x})\coloneqq\fid_i^*(\Rinv(\psi)\mathsf{x})$ for $\mathsf{x}\in\cV$ over $\Kal$, so that $\thQ\mathsf{x}=0$. On $M_{g,n}$ (smooth curves) only the edgeless graph survives:
+\[
+\Omega_{g,n}(\mathsf{x}_1,\dots,\mathsf{x}_n)=\sum_i\mathsf{D}_i\mathsf{N}_i(\kappa)\prod_la^i(\psi_l;\mathsf{x}_l),
+\]
+with $\mathsf{D}_i\coloneqq\Delta_i^{(2g-2+n)/2}$ and
+\[
+\mathsf{N}_i(\kappa)\coloneqq\sum_m\frac{1}{m!}\,p_{m*}\prod_k\big(\Delta_i^{1/2}\fid_i^*T_{\Rm}(\psi_{n+k})\big).
+\]
+This is a power series in the $\kappa_j$, $j\geq1$, finite in each degree; it is given by $\exp(\sum_js^i_j\kappa_j)$ with $\exp(-\sum_js^i_j\psi^j)=b_i(\psi)\coloneqq\Delta_i^{1/2}a^i(\psi;\genone)$, by $T_{\Rm}(z)=z(1-\Rm^{-1}(z)\genone)$. It has constant term $1$, and it is the same series for every $(g,n)$.
+
+\emph{Pushforward.} Let $p\colon\genCurve\to M_{g,n}$ be the restriction of $\Mbar_{g,n+1}\to\Mbar_{g,n}$, with sections $\delta_l$. On $\genCurve$ one has $\psi_l=p^*\psi_l+\delta_l$, $\psi_{n+1}\delta_l=0$, $\psi_l\delta_l=0$, hence $\psi_l^k=(p^*\psi_l)^k+\delta_l(p^*\psi_l)^{k-1}$, as in \cite[(2.15)]{Tel12}; further $\delta_l\delta_{l'}=0$ for $l\neq l'$, and $\kappa_j=p^*\kappa_j+\psi_{n+1}^j$. The only graphs with an edge are the bubbles $(0,3)$ carrying the legs $l,n+1$: a point of $\genCurve$ has at most one node, so graphs with two or more edges miss $\genCurve$, and the other one-edge graphs lie over the boundary of $\Mbar_{g,n}$. The bubble vertex is $\TFT_{0,3}$ with no translation leg, since $p_{m*}$ of a class of degree $\geq2m$ on $\Mbar_{0,3+m}$ vanishes on $\Mbar_{0,3}$ for $m\geq1$. Its leg factors are $\Rm^{-1}(0)=1$, since $\psi$ vanishes on $\Mbar_{0,3}$.
+
+On $\delta_l$ the classes $\kappa_j$ restrict to $p^*\kappa_j$, and $a^i(\psi_{n+1};H)$ restricts to $\fid_i^*H$, since $\psi_{n+1}\delta_l=0$. Further
+\[
+\Rinv(\psi_l)=\Rinv(p^*\psi_l)+\delta_l\,\frac{\Rinv(p^*\psi_l)-1}{p^*\psi_l}.
+\]
+After $p_*$, using $p_*(\delta_lp^*c)=c$, the factor becomes $(\Rinv(\psi_l)-1)/\psi_l$ with $\psi_l$ on $M_{g,n}$. The bubble puts $\frac{1-\Rinv(\psi_l)}{\psi_l}$ applied to $H\qprod\mathsf{x}_l$ on leg $l$ of the genus-$g$ vertex; its edge factor at $\psi_h=0$ is $\big(\eta^{-1}-(1\otimes\Rinv(\psi_{h'}))\eta^{-1}\big)/\psi_{h'}$. Since $\Delta_i^{(2g-1+n)/2}a^ib^i=\Delta_i^{(2g-2+n)/2}\fid_i^*(a\qprod b)$, the two $\delta_l$ terms add up to $\frac{1}{\psi_l}[H\qprod,\Rinv(\psi_l)]\mathsf{x}_l$ on leg $l$. Hence
+\begin{multline*}
+p_*\Omega_{g,n+1}(\mathsf{x},H)=\sum_i\mathsf{D}_i\mathsf{N}_i\sum_l\fid_i^*\Big(\frac{1}{\psi_l}[H\qprod,\Rinv(\psi_l)]\mathsf{x}_l\Big)\prod_{l'\neq l}a^i(\psi_{l'};\mathsf{x}_{l'})\\
++\sum_iG_i(\kappa)\prod_la^i(\psi_l;\mathsf{x}_l),
+\end{multline*}
+with $G_i=\mathsf{D}_i\mathsf{N}_i(\kappa)\,p_*\big[\Delta_i^{1/2}a^i(\psi_{n+1};H)/b_i(\psi_{n+1})\big]$, a series in the $\kappa_j$, $j\geq1$, with coefficients in $\Fzero$ and with the number $\kappa_0=2g-2+n$ among them. The series $G_i$ contains no $\psi_l$. Here the identity $\mathsf{N}_i(p^*\kappa+\psi^j)=\mathsf{N}_i(p^*\kappa)/b_i(\psi)$ is used.
+
+\emph{The defect.} Define $\Mdef(\psi)\in\mathrm{Mat}_3(\Fzero\fps{\psi})$ by
+\[
+\thQ a^i(\psi;\mathsf{x})-\fid_i^*\Big(\frac{1}{\psi}[H\qprod,\Rinv(\psi)]\mathsf{x}\Big)=\sum_k\Mdef(\psi)^i_{\ k}\,a^k(\psi;\mathsf{x}),
+\]
+which is possible because $\mathsf{x}\mapsto a(\psi;\mathsf{x})$ is invertible. \Cref{lem:gen-divisor} at $n=2$, where $\mathsf{D}_i=\Delta_i^g$, reads
+\[
+\sum_i\mathsf{D}_i\mathsf{N}_i\big[(\Mdef(\psi_1)a_1)^ia_2^i+a_1^i(\Mdef(\psi_2)a_2)^i\big]=\sum_i\widetilde{G}_i(\kappa)\,a_1^ia_2^i,\qquad\widetilde{G}_i\coloneqq G_i-\thQ(\mathsf{D}_i\mathsf{N}_i).
+\]
+
+\emph{Stability.} By \cite[2.17--2.19]{Tel12}, resting on \cite[Props.~(2.1), (2.2)]{Loo96}, \cite[Theorem 1.1.1]{MW07}, and on \cite{Har85} and \cite{Iva90} as reported in \cite[Section~1]{Loo96}: in cohomological degree $<(g-1)/2$ (with $\deg\psi_l=2$, $\deg\kappa_j=2j$), $H^*(M_{g,2};\bbQ)$, the rational cohomology of the open moduli space, is the polynomial ring on $\psi_1,\psi_2$ and the pull-backs of the $\kappa_j$ of $M_g$. On $M_{g,2}$, where $\delta_{12}=0$, the classes used here, which are the Arbarello--Cornalba classes, satisfy $\kappa_j=\pi^*\kappa_j+\psi_1^j+\psi_2^j$, by \cite[(2.15)]{Tel12}. This is a triangular degree-preserving change of generators, so monomials in $\kappa_j$ ($j\geq1$), $\psi_1,\psi_2$ form a basis in that range. Over $\Fzero$ they form a basis because $H^*(M_{g,2};\Fzero)=H^*(M_{g,2};\bbQ)\otimes_{\bbQ}\Fzero$, and $\thQ$ acts as $1\otimes\thQ$, killing the monomials. All coefficient extractions below are in this basis, and $\kappa^0$ means no $\kappa_j$ with $j\geq1$. For an integer degree $k$, the condition $k<(g-1)/2$ is equivalent to $k\leq g/2-1$, which is the bound of \cite{Iva90}. Only independence in some range growing with $g$ is used.
+
+Take the coefficient of $\kappa^0\psi_2^0$, where $\mathsf{N}_i=1$ and $a_2=(\fid_i^*\mathsf{x}_2)_i$ is arbitrary, and let $\mathsf{x}_1$ be arbitrary. With $\mathsf{D}=\mathrm{diag}(\mathsf{D}_i)$,
+\[
+\mathsf{D}\,\Mdef(\psi)+\Mdef_0^T\mathsf{D}=\widetilde{G}(0),\quad\text{diagonal, modulo that degree.}
+\]
+Since $g$ is arbitrary and $\Mdef$ does not depend on $g$, $\Mdef_n=0$ for $n\geq1$: take $g>4n+1$, so that $\psi_1^n$ has degree $2n<(g-1)/2$. Further $(\Mdef_0)_{ik}=-(\GPsi)_{ik}+([\mathbf{\Lambda},\Rm_1])_{ik}$ in the $\fid$-frame, and both terms are skew, as $\Rm_1$ is symmetric by symplecticity. So $(\Delta_i^g-\Delta_k^g)(\Mdef_0)_{ik}=0$. Moreover $\Delta_i^g\neq\Delta_k^g$, because their values at $\cQ=0$ are $\wprod_i^{\,g},\wprod_k^{\,g}$, and, with $\{i,k,m\}=\{0,1,2\}$,
+\[
+\frac{\wprod_i}{\wprod_k}=-\frac{\alpha_i(\alpha_m-\alpha_i)}{\alpha_k(\alpha_m-\alpha_k)}
+\]
+is a non-constant element of $\bbQ(\alpha)$, hence transcendental over $\bbQ$ and not a root of unity. Any $g\geq1$ serves here, since only degree $0$ is used. Hence $\Mdef=0$, that is,
+\[
+\thQ\big(\Psi^{-1}\Rinv(\psi)\big)=\Psi^{-1}\frac{1}{\psi}[H\qprod,\Rinv(\psi)].
+\]
+
+\emph{The equation.} Take $\eta$-adjoints, with $\Rinv(\psi)^{\dagger}=\Rm(-\psi)$ (this is $\Rm^{-1}(z)^{\dagger}=\Rm(-z)$, the symplectic condition of \cite[(5)]{PPZ15}), $\Psi^{\dagger}=\Psi^{-1}$, $(H\qprod)^{\dagger}=H\qprod$, and $\thQ\eta=0$, so that $\thQ$ commutes with $\dagger$. Putting $z=-\psi$ gives the stated equation. With $H\qprod\Psi=\Psi\mathbf{\Lambda}$ and $\thQ U=\mathbf{\Lambda}$ it is equivalent to $z\thQ\Fsol=H\qprod\Fsol$ for $\Fsol=\Rm\Psi\re^{U/z}$, which is \cite[(3)]{Giv01}.
+\end{proof}
+
+\begin{rmk}[The $\kappa$ terms carry no further constraint]
+\label{rmk:gen-kappa}
+With $\Mdef=0$ and $c_i(\psi)\coloneqq\Delta_i^{1/2}a^i(\psi;H)/b_i(\psi)=\mathsf{L}_i+c_{i,1}\psi+\cdots$, one has $c_{i,1}=\Delta_i^{1/2}\sum_k(\GPsi)_{ik}\Delta_k^{-1/2}=\thQ\log\Delta_i^{1/2}$, which matches the $\kappa_0$ term of $\thQ\log\mathsf{D}_i$. The flatness equation applied to $\mathsf{x}=\genone$ gives $-\psi\thQ b_i=c_ib_i-(\mathsf{L}_i+c_{i,1}\psi)b_i$, which is $\thQ s^i_j=c_{i,j+1}$. So $\widetilde{G}_i(\kappa)=0$ identically: $\Mdef=0$ implies \cref{lem:gen-divisor} on $M_{g,n}$ in full. Compare \cite[(7.7.c)]{Tel12}. \draftnote{The item (7.7.c) has not been compared in Teleman's notation.}
+\end{rmk}
+
+\begin{rmk}[Comparison with Teleman's Prop.~7.7; not used in the proof]
+\label{rmk:gen-teleman77}
+Put $\mathbf{E}_{\ft_1}\coloneqq\shQ(\Rm)$, over $\Fzero\fps{\ft_1}$. Applying $\shQ$ to coefficients gives $\shQ(\Rm).\shQ(\TFT)=\shQ(\Omega)$. Apply the embedding $\iota\colon\Fzero\to\bbC$ of \cref{prop:gen-teleman} coefficientwise in $\ft_1$. Then $\iota(\shQ(\Omega))$ is \cite[Def.~7.1]{Tel12} for the CohFT $\iota(\Omega)$ and the shift $-\ft_1H$ over $\bbC\fps{\ft_1}$, $\iota(\shQ(\Rm))$ is its data, and the coefficient of $\ft_1^0$ in \cite[(7.7.a)]{Tel12} is $\iota$ of the identity over $\Fzero$ stated above. The operator $\thQ$ is never extended to $\bbC$. Only the direction $H$ is used, because the integrand $p_*\Omega_{g,n+1}(\mathsf{x},H)$ belongs to the same family. The definition \cite[Def.~7.1]{Tel12} has the factor $(-1)^m$, and the divisor equation used is that of \cref{lem:gen-divisor}; the sign printed in \cite[Ex.~7.17]{Tel12} is not relied on. By \cref{lem:gen-free}, applied over the field $\bbC\lser{\ft_1}$, $\mathbf{E}_{\ft_1}$ is the unique such data. Equation \cite[(7.7.a)]{Tel12} along the line reads $\partial_{\ft_1}(\mathbf{E}\Psi)\Psi^{-1}=-[\mathbf{E},H\qprod_{\ft_1}]/z$, and at $\ft_1=0$ this is the equation of \cref{prop:gen-flat}, which is also \cite[(7.7.a)]{Tel12} along $-H$. The legs of \cite[(7.6)]{Tel12} carry $\mathbf{E}_u^{-1}(\psi_i)$, and the legs of \cite[Def.~2.2]{PPZ15} carry $\Rm^{-1}(\psi_i)$, so in this comparison Teleman's $\mathbf{E}$ is $\Rm$, with the same $z$. The statement \cite[Prop.~8.2(ii)]{Tel12} is consistent with this.
+\end{rmk}
+
+\begin{rmk}[Sign check at first order]
+\label{rmk:gen-sign}
+The degree-$1$ part of $(\Rm.\TFT)_{0,4}$ from \cite[Def.~2.2]{PPZ15} has coefficient $-\Delta_ir_{ij}$ on $a_jb_ic_id_i$ and $\Delta_i^{1/2}\Delta_j^{1/2}r_{ij}$ on $a_jd_jb_ic_i$, where $r_{ij}$ are the entries of $\Rm_1$ and $a,b,c,d$ the insertions in the $\fid$-frame. This is exactly the derivative of $C_{abc}=\sum\Delta_i^{1/2}a_ib_ic_i$ with $\GPsi=[\dd U,\Rm_1]$. It separates $\Rm(z)$ from $\Rm(-z)$. It does not separate $\Rm$ from $\Rm^*(z)=\Rm^{-1}(-z)$, because $\Rm_1$ is symmetric and $\Rm^*$ has the same $\Rm_1$ (with $\Rm^*_2=\Rm_1^2-\Rm_2$). So it is not an independent check of the full flatness statement.
+\end{rmk}
+
+\begin{rmk}[Convention check through {\cite[(12)]{PPZ15}}; not a proof step, since the line in $\cQ$ has no Euler field]
+\label{rmk:gen-ppz12}
+On a conformal semisimple Frobenius manifold with Euler field $\mathsf{Eu}$, flat basis $\partial_a$ of charge $\mathsf{c}_a$, dimension $\mathsf{n}$, $\mu\partial_a=(\mathsf{c}_a-\mathsf{n}/2)\partial_a$ and $\mathsf{m}\coloneqq\mathsf{Eu}\qprod$, let $\Psi$ be the matrix of the normalised idempotents $\fid_i$ in the flat basis, and $\genbR\coloneqq\Psi^{-1}\Rm\Psi$. Then $\Fsol=\Psi\genbR\re^{U/z}$ and $z\partial\Fsol=(\partial\ft\,\qprod)\Fsol$ give
+\[
+z\partial_{\mathsf{v}}\genbR+z(\Psi^{-1}\partial_{\mathsf{v}}\Psi)\genbR=[\partial_{\mathsf{v}}U,\genbR].
+\]
+Take $\mathsf{v}=\mathsf{Eu}$: then $\partial_{\mathsf{v}}U=U$, $\ \partial_{\mathsf{v}}\genbR_m=-m\genbR_m$, and $\partial_{\mathsf{v}}\Psi=-\mu\Psi$, which follows from $[\mathsf{Eu},\fid_i]=(\mathsf{n}/2-1)\fid_i$ and $[\mathsf{Eu},\partial_a]=(\mathsf{c}_a-1)\partial_a$. At $z^{m+1}$, and after conjugating by $\Psi$,
+\[
+[\Rm_{m+1},\mathsf{m}]=(m+\mu)\Rm_m,
+\]
+which is \cite[eq.~(12)]{PPZ15} at all $m$. For $\Rm^*$ the same steps give $[\Rm^*_{m+1},\mathsf{m}]=-m\Rm^*_m+\Rm^*_m\mu$, a different equation from $m=1$ on. So the R-matrix of \cite{PPZ15} is the one with $\Fsol=\Psi\Rm\re^{U/z}$, not $\Rm^*$. (In this remark, $\mathsf{c}_a,\mathsf{n},\mathsf{m}$ replace the customary letters, which have other meanings in this paper.)
+\end{rmk}
+
+\begin{rmk}[Attribution of signs]
+\label{rmk:gen-attr}
+\cite[footnote 10 and Remark 1.6]{PPZ15} attribute the opposite commutator sign to Teleman's opposite Euler field, not to the $(-1)^m$ of \cite[Def.~7.1]{Tel12}. Both amount to $u\mapsto-u$, and they are two separate statements. In the proof of \cref{prop:gen-flat} the sign comes directly from \cite[Def.~2.2]{PPZ15}, \cref{lem:gen-divisor} and the adjoint step. The definition \cite[Def.~7.1]{Tel12} enters only in \cref{rmk:gen-teleman77}, where it carries the sign of that route.
+\end{rmk}
+
+\begin{lem}[Ambiguity]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-ambig}
+Let $\Rm_{aj}$ and $\Rt_{aj}$ be symplectic matrices over $\Fzero\fps{z}$, that is, $\sum_{a,b}\mathsf{Y}_{ai}(-z)\eta^{ab}\mathsf{Y}_{bj}(z)=\delta_{ij}$, with the same value at $z=0$, both solving $z\thQ\mathsf{Y}=\genC\mathsf{Y}-\mathsf{Y}\mathbf{\Lambda}$. Then $\Rm_{aj}=\Rt_{aj}\exp\sum_ka_k^{(j)}z^{2k-1}$ with $a_k^{(j)}\in\Kalt$. This applies to $\Rt$ of \cref{lem:gen-compare} and $\Rm$ of \cref{prop:gen-teleman}, and $\Rm$ then has coefficients in $\Kalt\fps{\cQ}$.
+\end{lem}
+\begin{proof}
+Put $\mathsf{Z}(z)\coloneqq\Psi^{-1}\Rt^{-1}\Rm\Psi$. Here $\Rt$ is the operator with matrix $\Rt_{aj}=\eta(H^a,\Rt\fid_j)$, so $\mathsf{Z}$ is the matrix $\Rt_{aj}^{-1}\Rm_{aj}$ with $\Rm_{aj}=\eta(H^a,\Rm(z)\fid_j)$ (\cref{lem:gen-dict}). Since both matrices solve the stated equation, $z\thQ\mathsf{Z}=[\mathbf{\Lambda},\mathsf{Z}]$. With $\mathsf{Z}=1+\sum_{n\geq1}\mathsf{Z}_nz^n$ one gets $(\mathsf{L}_i-\mathsf{L}_j)(\mathsf{Z}_n)_{ij}=(\thQ\mathsf{Z}_{n-1})_{ij}$, and $\mathsf{L}_i-\mathsf{L}_j$ is invertible. By induction $\mathsf{Z}_n$ is diagonal and $\thQ$-constant; the constants of $\thQ$ on $\Kalt\lser{\cQ}$ are $\Kalt$. Symplecticity gives $\mathsf{Z}=\mathrm{diag}\exp(\text{odd series})$.
+
+For the application: $\Rt$ solves the equation by \cref{lem:gen-compare}, is symplectic by \cref{lem:gen-unit}, and $\Rt|_{z=0}=\Psi$. The matrix of $\Rm$ is symplectic because $\Rm$ is, and it solves the equation by \cref{prop:gen-flat}, on applying $\eta(H^a,\cdot)$ and the self-adjointness of $H\qprod$, and $\Rm|_{z=0}=1$ gives the value $\Psi$ at $z=0$. As $\Rt$ has coefficients in $\Kalt\fps{\cQ}$ and the $a_k^{(j)}$ are constants, so does $\Rm$.
+\end{proof}
+
+\subsection{The constants}
+
+\begin{lem}[Reduction at $\cQ=0$]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-red}
+One has $\Omega|_{\cQ=0}=\Rm|_{\cQ=0}.\TFT|_{\cQ=0}$ and $\Rm|_{\cQ=0}=\mathrm{diag}(\mathsf{s}^{\circ}_i)$ on the $\fid_i(0)$, with $\mathsf{s}^{\circ}_i\coloneqq\exp\sum_ka_k^{(i)}z^{2k-1}$. Further $\mathsf{s}^{\circ}_i.\genone=\Hg_{\wts_i}$ for all stable $(g,n)$ with $n\geq1$, and the formula for $\Omega(\eid_{i_1},\dots,\eid_{i_n})|_{\cQ=0}$ in part (A3) of \cref{thm:gen-main} holds.
+\end{lem}
+\begin{proof}
+The objects $\Rm$ (\cref{lem:gen-ambig}), $\Rm^{-1}$ (symplecticity), $\eid_i$, $\Delta_i^{\pm1/2}$ and $\eta^{-1}$ are regular at $\cQ=0$, since $\Delta_i(0)=\wprod_i\neq0$, and the graph sum is polynomial in them, so $\Omega|_{\cQ=0}=\Rm|_{\cQ=0}.\TFT|_{\cQ=0}$. By \cref{lem:gen-compare} ($\Rt|_{\cQ=0}=\Psi|_{\cQ=0}$) and \cref{lem:gen-ambig}, $\Rm|_{\cQ=0}=\mathrm{diag}(\mathsf{s}^{\circ}_i)$ on the $\fid_i(0)$. Edges are then diagonal and graphs are monochromatic. Using $\genone=\sum\eid_i$ and $\sum_v(g_v-1)+|\Edg|=g-1$, for $n\geq1$ the $(\eid_i,\dots,\eid_i)$ component is $\wprod_i^{\,g-1}(\mathsf{s}^{\circ}_i.\genone)_{g,n}$, and mixed insertions vanish.
+
+On the geometric side, $d=0$: the fixed loci are $\Mbar_{g,n}\times\{P_i\}$, all of $T_{P_i}Z$ moves, $[F]^{\vir}=[\Mbar_{g,n}]$, $N^{\vir}=T_{P_i}Z-\Hdg^\vee\otimes T_{P_i}Z$, and $e(\Hdg^\vee\otimes\bbC_w)=\Lamv(w)$. So
+\[
+\Omega(\eid_i^{\,n})|_{\cQ=0}=\wprod_i^{-1}\prod_{w\in\wts_i}\Lamv(w)=\wprod_i^{\,g-1}\Hg_{\wts_i}.
+\]
+Hence $\mathsf{s}^{\circ}_i.\genone=\Hg_{\wts_i}$ for all stable $(g,n)$ with $n\geq1$.
+\end{proof}
+
+\begin{thm}[The constants]\genusstatus{AI-proposed, unchecked}
+\label{thm:gen-const}
+One has $a_k^{(i)}=b_k(\wts_i)$ with $b_k(\mathsf{v})=-\frac{B_{2k}}{2k(2k-1)}p_{2k-1}(1/\mathsf{v})$, that is, $\mathsf{s}^{\circ}_i=h_{\wts_i}$. Therefore $\Rm_{aj}=\Rt_{aj}h_{\wts_j}$.
+\end{thm}
+\begin{proof}
+Work on $\Mbar_{k,1}$ with the insertion $\eid_i$. Suppose $k$ is minimal with $a_k^{(i)}\neq b_k(\wts_i)$. By \cref{lem:gen-mumford,lem:gen-red}, the degree $2k-1$ part of $\mathsf{s}^{\circ}_i.\genone=\Hg_{\wts_i}$ on $\Mbar_{k,1}$ reads
+\[
+\big(a_k^{(i)}-b_k(\wts_i)\big)\frac{(2k)!}{B_{2k}}\mathrm{ch}_{2k-1}(\Hdg)=0,
+\]
+which contradicts \cref{lem:gen-ch}. This is the normalisation of \cite{BS}, with the five weights of $\wts_i$. \draftnote{BS labels: eq:canR; (Normalisation) condition; $\re^{-c_j}=h_{\wts_j}$.}
+\end{proof}
+
+\begin{lem}[Tensor structure]\genusstatus{AI-proposed, unchecked}
+\label{lem:gen-tensor}
+For stable $(g,n)$, $\Omega^{Z}=(\epsilon_1\epsilon_2)^{g-1}\Hg_{(-\epsilon_1,-\epsilon_2)}\Omega^{\KPtwo}$, where $\Omega^{\KPtwo}$ is defined as $\Omega$ with $\Ntw$ replaced by $\cO(-3)_{3\alpha}$. Hence $\Rm^{Z}=\Rm^{\KPtwo}h_{(-\epsilon_1,-\epsilon_2)}$.
+\end{lem}
+\begin{proof}
+Since $e(R\pi_*f^*\cO_{-\epsilon})^{-1}=\Lamv(-\epsilon)/(-\epsilon)$, the first identity follows from the definition of $\Hg_{\mathsf{v}}$. The class $\Hg_{\mathsf{v}}$ is multiplicative along boundary strata, including loops, because $c_{-1/v}(\Hdg)$ is (the normalised class, not $\Lamv$ itself), and it is pulled back along $p$. So $\Hg_{\mathsf{v}}(\Rm.\TFT)=\Rm.(\Hg_{\mathsf{v}}\TFT)=(\Rm h_{\mathsf{v}}).\TFT$. Multiplying a cohomological field theory by $c^{g-1}$ divides its pairing by $c$ and, because $\sum_v(g_v-1)+|\Edg|=g-1$, commutes with the action of $\Rm$, so the factor $(\epsilon_1\epsilon_2)^{g-1}$ does not change the operator.
+\end{proof}
+
+\subsection{The oscillating integral}
+
+The series $\Phi$ and the expansion $\Asy=\mathsf{k}_0W^{-1/2}\Phi(\alpha,Y;z)$ are those of \cref{lem:row-analytic} and \cref{eq:row-Phi}. We write $\mathsf{k}$ with $\mathsf{k}^2=-1$ for the constant in the oscillating-integral normalisation, and $\mathsf{k}_0=\mathsf{k}/\sqrt3$. The constant appears because $\Asym$ is normalised by $\sqrt{\det\Hess(-\cW)}$; compare the normalisation of the oscillating integral in \cite{BS}. \draftnote{BS labels: eq:normNLR, eq:oscintP.}
+
+\begin{prop}[Oscillating integral]\genusstatus{AI-proposed, unchecked}
+\label{prop:gen-osc}
+Let $\Asy_i\coloneqq\mathsf{k}\,(3W(Y_i))^{-1/2}\,\Phi(\alpha,Y_i;z)=\mathsf{k}_0W(Y_i)^{-1/2}\Phi(\alpha,Y_i;z)$. In $\Kalh\fps{y}\fps{z}$,
+\[
+\Asy_i=\mathsf{k}\,\Nz(z)\,\Rm_{0i},
+\]
+with $\Nz$ as in \cref{thm:gen-main}, where
+\[
+\Kalh\coloneqq\Kalt\big(\sqrt{-1},\sqrt{\epsilon_1\epsilon_2},\,a^{1/2}:a\in\{3\alpha_i,\alpha_j-\alpha_i,\alpha_k-\alpha_i\}\big).
+\]
+\end{prop}
+\begin{proof}
+\emph{Field.} The expansion $\Asym$ has the constant $\mathsf{k}$ and factors $a^{-1/2}$ and $\sqrt{\epsilon_1\epsilon_2}$, none of which need lie in $\Kalt$, so the argument runs over $\Kalh$. The algebraic form of \cref{lem:row-wkb}(ii) goes through there unchanged: the $\theta$-constants are the coefficient field, and $Y,W$ are units, since $Y_i(0)=-\alpha_i$ and $W(Y_i)(0)\neq0$. The colour-dependent branch sign is fixed together with the $\Kalt$-choice of $\wprod_i^{1/2}$.
+
+\emph{Transfer of \cref{lem:row-pfint} to the formal ring.} \Cref{lem:row-pfint} is stated pointwise on an analytic domain with $y\neq0$, while the argument takes place in $\Kalh\fps{y}\fps{z}$. By \cref{lem:row-analytic}, $\Asy=\mathsf{k}_0W^{-1/2}\Phi(\alpha,Y;z)$, with $\mathsf{k}_0^2=-1/3$ and $[z^n]\Phi\in\bbQ[\alpha,Y,W^{-1}]$. Let $\Pconj\coloneqq\re^{-\mathsf{u}/z}\LPF\re^{\mathsf{u}/z}$ with $\theta\mathsf{u}=Y$. The $\theta$ in $\Pconj$ acts on $\bbQ[\alpha,Y,W^{-1}]$ through $\theta Y=-Y\prod_j(Y+\alpha_j)/W$. So the $z$-coefficients of $W^{1/2}\Pconj(W^{-1/2}\Phi)$ lie in $\bbQ[\alpha,Y^{\pm1},W^{-1}]$, because $y=-\prod_j(Y+\alpha_j)/(27Y^3)$ ($\Lhat$ is linear in $y$ with coefficient $27Y^3$), and $\alpha,\epsilon,Y$ are algebraically independent, since $y$ is determined by them and $\alpha,\epsilon,y$ are independent. By \cref{lem:row-pfint} those coefficients vanish on an open set of $(\alpha,Y)$, hence they vanish identically as rational functions. Apply the substitution $Y\mapsto Y_i$, in $\Kal\fps{y}$, with $Y_i$ and $W(Y_i)$ units, since $Y_i(0)=-\alpha_i$ and $W(-\alpha_i)\neq0$; it commutes with $\theta$. Write $\Pconj_i$ for $\Pconj$ with $\mathsf{u}=\mathsf{u}_i$, so that $\theta\mathsf{u}_i=Y_i$ by \cref{lem:gen-Y}. This gives $\Pconj_i\big((3W(Y_i))^{-1/2}\Phi(\alpha,Y_i;z)\big)=0$ in $\Kalh\fps{y}\fps{z}$. Here $(3W(Y_i))^{1/2}$ lies in $\Kalh\fps{y}$, because $3W(-\alpha_i)$ is the product of the three $a$ in the definition of $\Kalh$. The element $\sqrt3$ itself is not adjoined.
+
+\emph{Kernel argument.} The element $\Asy_i$ has $z$-coefficients in $\Kalh\fps{y}$, by \cref{lem:row-analytic}, since $W(Y_i)(0)\neq0$. By the above and \cref{lem:gen-Y}, $\Asy_i$ and $\Rt_{0i}$ are both formal solutions of $\Pconj_if=0$ with non-zero $z^0$ term. So by the kernel argument of \cref{lem:row-wkb}(ii), $\Asy_i=\mathsf{n}_i(z)\Rt_{0i}$ with $\mathsf{n}_i(z)\in\Kalh\fps{z}$ independent of $y$.
+
+\emph{Value at $y=0$.} Evaluate $\Phi$ at $Y=-\alpha_i$, an algebraic substitution with no limit, since $W(-\alpha_i)=\alpha_i(\alpha_j-\alpha_i)(\alpha_k-\alpha_i)\neq0$. There $\Hess=\mathrm{diag}(0,a,b)+(\alpha_i/3)\mathsf{J}$ and
+\[
+\Jet_m(\zeta)=a\frac{\zeta_j^m}{m!}+b\frac{\zeta_k^m}{m!}+3\alpha_i\frac{s^m}{m!},
+\]
+with $a=\alpha_j-\alpha_i$, $b=\alpha_k-\alpha_i$, $s=(\zeta_i+\zeta_j+\zeta_k)/3$, and $\mathsf{J}$ the all-ones matrix. In the linear coordinates $(s,\zeta_j,\zeta_k)$ the phase splits, so \cref{lem:row-SP1} (linear case) and \cref{lem:row-SP4} factorise $\Phi$ into three one-dimensional expansions, with phases $a(\re^{\zeta}-\zeta)$, $b(\re^{\zeta}-\zeta)$, $3\alpha_i(\re^{s}-s)$. With $q=a\re^{\zeta}$ (\cref{lem:row-SP1} in dimension one), each one-dimensional expansion is \cref{lem:row-SP5} with $\beta=0$ and $z\mapsto-z$, equivalently Stirling for $\Gamma(a/z)$, with value $(-a)^{-1/2}\Theta(-z/a)$, where $(-a)^{-1/2}$ is the Gaussian factor. Since $\Phi_0=1$, this gives $\Phi(\alpha,-\alpha_i;z)=\prod_a\Theta(-z/a)$, and $3W(-\alpha_i)=\prod_a a$. Hence
+\[
+\Asy_i(0)=\mathsf{k}\prod_{a\in\{3\alpha_i,\alpha_j-\alpha_i,\alpha_k-\alpha_i\}}a^{-1/2}\Theta(-z/a),\qquad\mathsf{k}=(-1)^{-3/2}.
+\]
+
+\emph{Conclusion.} With $\Rt_{0i}(0)=\wprod_i^{-1/2}$, $\Rm_{0i}=\Rt_{0i}h_{\wts_i}$ and $\Theta(z/\epsilon)\Theta(-z/\epsilon)=1$, this yields
+\[
+\Asy_i=\mathsf{k}\sqrt{\epsilon_1\epsilon_2}\,\Theta(-z/\epsilon_1)\Theta(-z/\epsilon_2)\Rm_{0i}.
+\]
+The mechanism in rank $3$ is that $h_{\wts_i}$ divided by the Gamma limit is $h_{(-\epsilon_1,-\epsilon_2)}$, the same at all three colours; this is not $1$ on $\TF$. On $\TF$ the extra factor $\Theta(-z/E)$ comes from the factor of \cref{lem:row-SP5} at $a=-E$ (\cref{lem:spe-red}).
+\end{proof}
+
+\begin{rmk}
+No normalisation theorem for the oscillating integral is cited: the derivation above is self-contained modulo the formal calculus of \cref{sec:row}. The structural form in part (A3) of \cref{thm:gen-main} follows by \cref{lem:gen-tensor}: from $\Rm^{Z}_{0i}=(\epsilon_1\epsilon_2)^{-1/2}\Rm^{\KPtwo}_{0i}h_{(-\epsilon_1,-\epsilon_2)}$ and $\Theta(-z/\epsilon)\Theta(z/\epsilon)=1$ one gets $\Asy_i=\mathsf{k}\,\Rm^{\KPtwo}_{0i}$.
+\end{rmk}
+
+\subsection{The graph sum, and the proof of the theorem}
+
+\begin{proof}[Proof of \cref{thm:gen-main}]
+Part (A1) is \cref{lem:gen-weights}, \cref{prop:gen-poly}, \cref{lem:gen-axioms}, \cref{lem:gen-divisor}, \cref{lem:gen-ss}, \cref{prop:gen-teleman}. Part (A2) is \cref{lem:gen-rows,lem:gen-compare,lem:gen-Y,lem:gen-unit,lem:gen-dict,lem:gen-ambig}. Part (A3) is \cref{lem:gen-red}, \cref{thm:gen-const}, \cref{lem:gen-tensor} and \cref{prop:gen-osc}; the case of $\det\Hess\cW$ in place of $\det\Hess(-\cW)$ follows from $\det\Hess(-\cW)=(-1)^3\det\Hess\cW$ and the value $\mathsf{k}=(-1)^{-3/2}$ of \cref{prop:gen-osc}.
+
+For the graph sum, combine \cref{prop:gen-teleman}, \cref{lem:gen-dict}, \cref{thm:gen-const} and the factorisation of $\Delta^{(2g_v-2+|\mathcal{H}|)/2}$ as one $\Delta^{1/2}$ per half-edge and per dilaton leaf, with $\Delta^{g_v-1}$ left at the vertex. By \cref{lem:gen-dict}, $\fid_i^*\Rm^{-1}(\psi)\genone=\Rm_{0i}(-\psi)$, so $\Delta_i^{1/2}\fid_i^*T_{\Rm}(\psi)=\psi\big(1-\Pn_0^{(i)}(-\psi)\big)$, whose coefficient of $\psi^d$ is $\Dil_i(d)$ for $d\geq2$, and the terms $\psi^0,\psi^1$ vanish because $\Pn_0^{(i)}(0)=\Delta_i^{1/2}\Psi_{0i}=1$. Similarly the bivector of \cite[Def.~2.2]{PPZ15} in the frame $\fid_i\otimes\fid_j$, with one $\Delta^{1/2}$ per half-edge, is $\Edge_{ij}$. The rows $\Pn_a^{(i)}$ are rational over $\Kal\fps{y}$, because $\wprod_i^{1/2}$ cancels between $\Delta_i^{1/2}$ and $\Rt$. This is \cref{eq:gen-graphsum}. The form with vertex classes uses $\Rm=\Rt\,\mathrm{diag}(h_{\wts_i})$, \cite[Prop.~2.14]{PPZ15} and $\mathrm{diag}(h).\TFT(\eid_i^{\,n})=\Delta_i^{g-1}\Hg_{\wts_i}$.
+\end{proof}
+
+\begin{rmk}[Specifics of rank 3]
+\label{rmk:gen-rank3}
+There are three idempotents. At generic $\alpha$ all three $Y_i$ are power series in $y$ (simple roots of $\Lhat$ at $y=0$), so nothing in this section involves $t=y^{1/3}$. Cube roots and conjugate colours arise only on $\TF$, where $\Lhat=(Y+E/3)^3+27yY^3$ has a triple root at $y=0$, $Y_i=-(E/3)/(1+3\omega^it)$, and $\cQ=0$ is non-semisimple. That is why the constants must be fixed at generic $\alpha$. The factor $\cO(-3)$ has the weights in \cref{lem:gen-weights}, and $\Omega^{Z}_{g,n}$ is valid for all $g\geq0$.
+\end{rmk}

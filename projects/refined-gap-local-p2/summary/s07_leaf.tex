@@ -1,0 +1,99 @@
+% s07_leaf (abridged version). Leaf structure at the singular colour.
+\section{Leaf structure at the singular colour}
+\label{sec:lea}
+
+This section studies the factors of the decoration sum \eqref{eq:set-graphsum}, taken at $\cone=\ccf$, as functions of the conifold coordinate $\tc$, to all orders in $\tc$ and in the edge variables. The proofs are algebra on the closed form of the rows. They use \cref{lem:set-coord}, \cref{thm:row-pf}, \cref{cor:row-carry}, \cref{cor:row-closed}, the closed forms of rows $1$, $2$ and \cref{prop:row-sympl}, and nothing else. They use nothing from \cref{sec:gen,sec:spe,sec:fra} and no statement of \cite{BS}: the pairing $\eta^{ab}$ and the operator $\LPF$ enter as definitions. In particular they depend neither on the mirror theorem nor on Teleman's classification.
+
+We write $v\coloneqq v_0$ and $Y\coloneqq Y_0$, on the real branch of colour $0$. When $\epsilon_1,\epsilon_2$ are indeterminates, the scalars $\bbC$ in the spans below are read as the constant field $\bbQ(\omega,\epsilon_1,\epsilon_2)$.
+
+\subsection{Statement}
+
+\begin{thm}[Leaf structure; {\Lg{Theorem~7.1}}]\genusstatus{AI-proposed, unchecked}\label{thm:lea-main}
+Let $\epsilon_1,\epsilon_2$ be complex numbers with $\epsilon_1\epsilon_2E\neq0$, or indeterminates. All factors are those of \cref{sec:set} at $\cone=\ccf$. Then:
+\begin{enumerate}
+\item[(F1)] $\Delta_0=3\epsilon_1\epsilon_2E^3/(\tc\rho)^2$, where $\rho$ is an analytic unit at $\tc=0$ with $\rho(0)=1$. For $j=1,2$, $\Delta_j$ is analytic at $\tc=0$, with
+$\Delta_j(0)=\epsilon_1\epsilon_2E^3\omega^{2j}/(3(1-\omega^j)^2)\neq0$.
+\item[(F2)] The normalised identity row at colour $0$ satisfies $\Ph_0^{(0)}(z;\tc=0)=E/(E+z)$. The rescaled row $\brow\coloneqq\rho\Ph^{(0)}(-\psi)$ has $\brow^{(-1)}=(0,E,-E^2)$ and $\brow^{(0)}=(E\lf_1,(E^2/9)\lf_1,0)$, where $\brow^{(k)}\coloneqq[\tc^k]\brow$.
+\item[(F3)] Every dilaton factor $\Dilh_i(d)$ ($i\in\{0,1,2\}$, $d\ge1$) and every edge factor $\Edgeh_{ij}(m,n)$ ($i,j\in\{0,1,2\}$, $m,n\ge0$) is analytic at $\tc=0$.
+\item[(L1)] $[\tc^0](\rho\qt)=\qo$. For every $k\ge1$, $[\tc^k](\rho\qt)$ lies in $\Lsp_{k+1}$; in particular it has no constant term.
+\item[(L2)] Let $j\in\{1,2\}$ and let $e,b,k$ be integers with $b,k\ge0$. Then $[\tc^k][w^b](\rho^e\Edgeh_{0j}(\psi,w))$ lies in $\Lsp_{k+1}(\psi)$ and has no constant. Moreover $\Edgeh_{j0}(w,\psi)=\Edgeh_{0j}(\psi,w)$, so this covers both orientations of a mixed edge. For an edge whose other end is at colour $0$: $[\tc^k][\psi'^b](\rho^e\Edgeh_{00})$ lies in $\Lsp_{k+1}(\psi)$.
+\item[(L3)] For every integer $e$ and every $k\ge0$, $[\tc^k](\rho^e\Edgeh_{00}(\psi,\psi'))$ lies in
+\[
+\mathrm{span}\bigl\{\lf_i(\psi)\lf_l(\psi'):\ i,l\ge1,\ (i-1)+(l-1)\le k\bigr\}
+\]
+and is symmetric. Furthermore $\Edgeh_{00}\big|_{\tc=0}=-(\epsilon_1\epsilon_2E^4/27)\,\lf_1(\psi)\lf_1(\psi')$.
+\end{enumerate}
+Every membership is an identity of formal power series in $\psi$ (and $\psi'$, $w$), holding at every $\psi$-order and every $\tc$-order. The coefficients of the leaves at each order lie in $\bbK$, up to the algebraic factors in $\omega$ at the regular colours.
+\end{thm}
+
+By a scaling argument \Lg{Remark~7.2}, \cref{thm:lea-main} is one statement over $\bbQ$ (over $\bbQ(\omega)$ at the regular colours): the framing $\tau=-\epsilon_1/E$ enters the rows only through the prefactor $\epsilon_1\epsilon_2$ and the scale $E$; it matters only on the Hodge side.
+
+\subsection{The singular row}\label{sec:lea-row0}
+
+By \cref{cor:row-carry}\textup{(ii)} the coefficients $\brow^{(k)}$ are rational in $\psi$. Write $\brow_0^{(k)}=\sum_j\mathsf{b}_j^{(k)}\lf_j$. The inputs are the following translations of \cref{sec:set,sec:row}: $\rho^2\Delta_0=3\epsilon_1\epsilon_2E^3/\tc^2$; $\brow_0^{(-1)}=0$ and $\brow_0^{(k)}\in\Lsp_{k+1}$ for $k\geq0$; $\brow_0^{(0)}=E\lf_1$; the identity \eqref{eq:row-zinf} in the form
+\begin{equation}\label{eq:lea-Zinf}
+\sum_j\frac{\mathsf{b}_j^{(k)}}{j}=E\,\delta_{k0}\qquad\text{for every }k,
+\end{equation}
+obtained from $\lim_{z\to\infty}z\rho\Srow=E$ and $-\psi\lf_j\to1/j$; and symplecticity at $i=j=0$, which with $\rho^2\Delta_0=3\epsilon_1\epsilon_2E^3/\tc^2$ reads
+\begin{equation}\label{eq:lea-K1}
+\langle\brow(\psi),\brow(-\psi)\rangle=3\epsilon_1\epsilon_2E^3/\tc^2 .
+\end{equation}
+
+\emph{Dilaton factors} \Lg{Lemma~7.3}. Since $\rho\qt=-\psi\brow_0$, the first identity of \eqref{eq:set-lam} gives $[\tc^k](\rho\qt)=\sum_j\mathsf{b}_j^{(k)}/j-E\sum_j(\mathsf{b}_j^{(k)}/j)\lf_j$. By \eqref{eq:lea-Zinf} the constant is $E\delta_{k0}$, which gives \textup{(L1)}: the vanishing of the constant for $k\geq1$ is exactly the normalisation $\Sinf(v)=-\tc$. Each $\Dilh_0(d)$ is analytic, with value $-E^{1-d}$ at $\tc=0$, so that $\qt\in\Dom$.
+
+\emph{Rows $1$ and $2$} \Lg{Lemmas~7.5, 7.6}. Since $\tc$ is a coordinate, $\theta=\ccf\,\dd/\dd\tc$, and conjugating \cref{def:set-rows} by $\rho\Delta_0^{1/2}=-E\sqrt{3\epsilon_1\epsilon_2E}/\tc$ gives, at $\cone=\ccf$ and with $\mathrm{D}_{\mathrm{c}}\coloneqq\Yh+z/\tc+z\,\dd/\dd\tc$,
+\[
+\brow_1=\mathrm{D}_{\mathrm{c}}\brow_0,\qquad \brow_2=\kappa\,\mathrm{D}_{\mathrm{c}}\brow_1+\mu\brow_1,
+\]
+where $\Yh\coloneqq\ccf^{-1}Y=E\,\dd\log v/\dd\tc=E/\tc+E/18+O(\tc)$, $\kappa\coloneqq\ccf^3\xi=-\tc+O(\tc^2)$ and $\mu\coloneqq(E/2)(\ccf^2-1)=O(\tc)$. On coefficients $F^{(n)}\coloneqq[\tc^n]F$ of a Laurent series $F$ in $\tc$, at $z=-\psi$ and with $\Yh^{(m)}\coloneqq[\tc^m](\Yh-E/\tc)$,
+\begin{equation}\label{eq:lea-Dc}
+[\tc^n]\mathrm{D}_{\mathrm{c}}F=(E-(n+2)\psi)F^{(n+1)}+\sum_{m\ge0}\Yh^{(m)}F^{(n-m)}.
+\end{equation}
+
+\begin{prop}[Structure of the singular row; {\Lg{Proposition~7.7}}, parts \textup{(a)--(c)}]\genusstatus{AI-proposed, unchecked}\label{prop:lea-H2}
+\leavevmode
+\begin{enumerate}
+\item[(a)] $\brow^{(k)}=0$ for $k\le-2$, and $\brow^{(-1)}=(0,E,-E^2)$.
+\item[(b)] For $k\ge0$, $\brow_0^{(k)}$ and $\brow_1^{(k)}$ lie in $\Lsp_{k+1}$, and $\brow_2^{(k)}$ lies in $\Lsp_k$. No component has a $\psi$-polynomial part or a constant at any $k\ge0$.
+\item[(c)] $\brow^{(0)}=(E\lf_1,(E^2/9)\lf_1,0)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}[Sketch]
+Apply \eqref{eq:lea-Dc} with $F=\brow_0$. By the second identity of \eqref{eq:set-lam} with $N=n+2$, the term $(E-(n+2)\psi)\brow_0^{(n+1)}$ is the constant $(n+2)\sum_j\mathsf{b}_j^{(n+1)}/j$, which vanishes by \eqref{eq:lea-Zinf} for $n\geq0$, plus an element of $\Lsp_{n+1}$: the top leaf $\lf_{n+2}$ cancels because $(E-(n+2)\psi)\lf_{n+2}=1$. So the prefactor produced by the conjugation lowers the leaf bound by exactly one, and $\brow_1^{(k)}\in\Lsp_{k+1}$. The same computation with $F=\brow_1$ gives $\brow_2^{(k)}\in\bbC+\Lsp_k$ with no term linear in $\psi$. The constants of $\brow_2$ are then determined by the limit $\psi\to\infty$ of \eqref{eq:lea-K1}, taken coefficientwise in $\tc$: with $\brow_0\to0$ and $\brow_1\to E/\tc$ it gives $\brow_2\to-E^2/\tc$, so all constants at $k\geq0$ vanish. Part \textup{(c)} is a direct evaluation with $r_1=1/9$.
+\end{proof}
+
+Within the family $\cone=\ccf f(\xi)$, with $f$ analytic, the absence of $\psi$-polynomial parts and the analyticity of $\dtwo$ select the conifold section up to sign \Lg{Proposition~7.7(d)}; the sign of $\cone$ does not affect the edges, the dilaton factors or $\Delta_i$ \Lg{Remark~7.9}.
+
+\subsection{The edges}
+
+\begin{lem}[Residue lemma; {\Lg{Lemma~7.10}}]\genusstatus{AI-proposed, unchecked}\label{lem:lea-res}
+Let $f_0=1$ and $f_j=\lf_j$ for $j\ge1$. Let $\mathsf{C}(\psi,\psi')=\sum_{i,l=0}^{K}C_{il}f_i(\psi)f_l(\psi')$ with $C_{il}=C_{li}$, and suppose that $\varkappa+\mathsf{C}(\psi,-\psi)=0$ for a constant $\varkappa$. Then:
+\begin{enumerate}
+\item[(i)] $\varkappa=-C_{00}$;
+\item[(ii)] $EC_{i0}+\sum_{l\ge1}\dfrac{i\,C_{il}}{i+l}=0$ for every $i\ge1$;
+\item[(iii)] $\dfrac{\varkappa+\mathsf{C}(\psi,\psi')}{\psi+\psi'}=\displaystyle\sum_{i,l\ge1}\frac{il}{E(i+l)}\,C_{il}\,\lf_i(\psi)\lf_l(\psi')$.
+\end{enumerate}
+\end{lem}
+
+The proof is a partial-fraction computation: on the diagonal, $\lf_i(-\psi)=\lf_{-i}(\psi)$ and $\lf_{-i}\lf_l=(i\lf_{-i}+l\lf_l)/(E(i+l))$, and the functions $1,\lf_j$ ($j\neq0$) are linearly independent. Applied order by order in $\tc$ to
+\begin{equation}\label{eq:lea-Et}
+\Edget\coloneqq\tc^2\rho^2\Edgeh_{00}=\frac{3\epsilon_1\epsilon_2E^3-\langle\tc\brow(\psi),\tc\brow(\psi')\rangle}{\psi+\psi'},
+\end{equation}
+with hypothesis \eqref{eq:lea-K1} and with \cref{prop:lea-H2}, it gives the edge at colour $0$.
+
+\begin{thm}[The edge at colour $0$; {\Lg{Theorem~7.11}}, parts \textup{(i)}, \textup{(ii)}]\genusstatus{AI-proposed, unchecked}\label{thm:lea-E00}
+Write $\lf_i=\lf_i(\psi)$ and $\lf_l'=\lf_l(\psi')$. Then
+\[
+\Edget=\sum_{n\ge2}\tc^n\sum_{\substack{i,l\ge1\\ i+l\le n}}\frac{il}{E(i+l)}\,C^{(n)}_{il}\,\lf_i\lf_l',\qquad C^{(n)}_{il}=-\sum_{k_1+k_2=n-2}\sum_{a,b}\eta^{ab}\,[\lf_i]\brow_a^{(k_1)}\,[\lf_l]\brow_b^{(k_2)},
+\]
+and $\Edgeh_{00}$ lies in $\bbK\fps{\psi,\psi'}\fps{\tc}$. In particular it is regular at the conifold.
+\end{thm}
+
+The double pole of $\Delta_0$ is thus cancelled inside the edge: the constant row $\brow^{(-1)}$ feeds only the coefficients $C_{i0}$, $C_{0l}$, $C_{00}$, which do not appear on the right of \cref{lem:lea-res}\textup{(iii)}, and the leaf $\lf_i$ occurs in $\tc\brow$ at order $\tc^a$ only for $i\leq a$. This gives \textup{(L3)} after multiplication by the unit $\rho^{e-2}$; the value at $\tc=0$ comes from $C^{(2)}_{11}=-2\epsilon_1\epsilon_2E^5/27$. No factorisation of the block of $\Edgeh_{00}$ is used.
+
+\emph{Mixed and regular edges} \Lg{Theorem~7.13}. Let $j\in\{1,2\}$ and $\mathbf{v}_{j,k}(z)\coloneqq[\tc^k]\Ph^{(j)}(z)$, a vector of formal power series in $z$, with $\mathbf{v}_{j,k}=0$ for $k<0$ by \cref{cor:row-closed}\textup{(R)}. Write $\brow^{(k_1)}=\sum_{l=1}^{k_1+1}\mathbf{a}_l^{(k_1)}\lf_l$ for $k_1\geq0$. In $(\psi+w)\rho\Edgeh_{0j}=\mathsf{n}(\psi,w)-\mathsf{n}(-w,w)$, with $\mathsf{n}\coloneqq-\langle\brow(\psi),\Ph^{(j)}(-w)\rangle$, every $\psi$-constant cancels, and $\lf_l(\psi)-\lf_l(-w)=l(\psi+w)\lf_l(\psi)\lf_l(-w)$ gives
+\[
+[\tc^k](\rho\Edgeh_{0j})(\psi,w)=-\sum_{k_1=0}^{k}\sum_{l=1}^{k_1+1}l\,\bigl\langle\mathbf{a}_l^{(k_1)},\mathbf{v}_{j,k-k_1}(-w)\bigr\rangle\frac{\lf_l(\psi)}{E+lw}.
+\]
+This gives \textup{(L2)}; at $\tc=0$ the mixed edge is of rank one, $\Edgeh_{0j}|_{\tc=0}=\lf_1(\psi)\chi_j(w)$ with $\chi_j(w)=-\langle(E,E^2/9,0),\mathbf{v}_{j,0}(-w)\rangle/(E+w)$. The symmetry $\Edgeh_{j0}(\psi,w)=\Edgeh_{0j}(w,\psi)$ is the edge symmetry of \eqref{eq:row-edgedelta}. The factors $\Edgeh_{jj'}$, $\Dilh_j$ and $\Delta_j$ at the regular colours are analytic at the conifold by \cref{cor:row-closed}\textup{(R)}.

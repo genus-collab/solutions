@@ -1,0 +1,63 @@
+T5: Prop MV2
+  dilaton-leaf elimination + Laguerre: 572 checks pass, 0 fail
+  Q(s;R+1) = (1+s)^2 Q' + [J+(1+s)n] Q and Q(s;R+0) = (J+sn) Q + s(1+s) Q': 72 pass, 0 fail
+T8: Mathematica tables (independent code)
+  q tables g2,g3 r1,r2 at c-normalisation: 60 match, 0 mismatch
+  control, exponent 3-2r instead of 3h-3+2r: fails as it must
+T9: E-scaling and E-string identities, direct at E != 1
+  Xi^(E) = E^-(3h-3+2r) Xi^(1), (S_P2), (L0_P2): 60 pass, 0 fail
+T7: Xi_h(R) from Schur only (STAR) vs definition; range zeros and controls
+  tau=2/7 h=2 R=(2,) D=1 [in range]: Xi = 0 match  t=0.0s
+  tau=2/7 h=2 R=(3,) D=2 [outside]: Xi = 1367/186624 match  t=0.0s
+  tau=2/7 h=2 R=(2, 2) D=2 [outside]: Xi = 2075/62208 match  t=0.1s
+  tau=2/7 h=2 R=(4,) D=3 [outside]: Xi = -833/311040 match  t=0.0s
+  tau=2/7 h=2 R=(3, 2) D=3 [outside]: Xi = 3577/77760 match  t=0.2s
+  tau=2/7 h=2 R=(2, 2, 2) D=3 [outside]: Xi = 6223/15552 match  t=0.6s
+  tau=2/7 h=2 R=(5,) D=4 [outside]: Xi = -5261/155520 match  t=0.1s
+  tau=2/7 h=2 R=(4, 2) D=4 [outside]: Xi = -1625/31104 match  t=0.3s
+  tau=2/7 h=2 R=(3, 3) D=4 [outside]: Xi = 371/155520 match  t=0.2s
+  tau=2/7 h=2 R=(3, 2, 2) D=4 [outside]: Xi = 1603/5184 match  t=1.2s
+  tau=2/7 h=2 R=(2, 2, 2, 2) D=4 [outside]: Xi = 24697/5184 match  t=2.8s
+  tau=2/7 h=3 R=(2,) D=1 [in range]: Xi = 0 match  t=0.2s
+  tau=2/7 h=3 R=(3,) D=2 [in range]: Xi = 0 match  t=0.2s
+  tau=2/7 h=3 R=(2, 2) D=2 [in range]: Xi = 0 match  t=0.8s
+  tau=2/7 h=3 R=(4,) D=3 [in range]: Xi = 0 match  t=0.2s
+  tau=2/7 h=3 R=(3, 2) D=3 [in range]: Xi = 0 match  t=1.3s
+  tau=2/7 h=3 R=(2, 2, 2) D=3 [in range]: Xi = 0 match  t=3.4s
+  tau=2/7 h=3 R=(5,) D=4 [outside]: Xi = 205027/47029248 match  t=0.2s
+  tau=2/7 h=3 R=(4, 2) D=4 [outside]: Xi = 388505/47029248 match  t=0.9s
+  tau=2/7 h=3 R=(3, 3) D=4 [outside]: Xi = -129809/235146240 match  t=0.7s
+  tau=2/7 h=3 R=(6,) D=5 [outside]: Xi = 99911/6718464 match  t=0.6s
+  tau=-7/3 h=2 R=(2,) D=1 [in range]: Xi = 0 match  t=0.0s
+  tau=-7/3 h=2 R=(3,) D=2 [outside]: Xi = -27/7168 match  t=0.0s
+  tau=-7/3 h=2 R=(2, 2) D=2 [outside]: Xi = -425/64512 match  t=0.1s
+  tau=-7/3 h=2 R=(4,) D=3 [outside]: Xi = -213/35840 match  t=0.0s
+  tau=-7/3 h=2 R=(3, 2) D=3 [outside]: Xi = -153/8960 match  t=0.1s
+  tau=-7/3 h=2 R=(2, 2, 2) D=3 [outside]: Xi = -117/1792 match  t=0.3s
+  tau=-7/3 h=2 R=(5,) D=4 [outside]: Xi = 151/7680 match  t=0.0s
+  tau=-7/3 h=2 R=(4, 2) D=4 [outside]: Xi = 593/10752 match  t=0.1s
+  tau=-7/3 h=2 R=(3, 3) D=4 [outside]: Xi = 153/2560 match  t=0.1s
+  tau=-7/3 h=2 R=(3, 2, 2) D=4 [outside]: Xi = 1147/5376 match  t=0.6s
+  tau=-7/3 h=2 R=(2, 2, 2, 2) D=4 [outside]: Xi = 5333/5376 match  t=1.2s
+  tau=-7/3 h=3 R=(2,) D=1 [in range]: Xi = 0 match  t=0.1s
+  tau=-7/3 h=3 R=(3,) D=2 [in range]: Xi = 0 match  t=0.1s
+  tau=-7/3 h=3 R=(2, 2) D=2 [in range]: Xi = 0 match  t=0.4s
+  tau=-7/3 h=3 R=(4,) D=3 [in range]: Xi = 0 match  t=0.2s
+  tau=-7/3 h=3 R=(3, 2) D=3 [in range]: Xi = 0 match  t=0.7s
+  tau=-7/3 h=3 R=(2, 2, 2) D=3 [in range]: Xi = 0 match  t=1.5s
+  tau=-7/3 h=3 R=(5,) D=4 [outside]: Xi = -1608221/531062784 match  t=0.2s
+  tau=-7/3 h=3 R=(4, 2) D=4 [outside]: Xi = -4980677/531062784 match  t=0.8s
+  tau=-7/3 h=3 R=(3, 3) D=4 [outside]: Xi = -948231/98344960 match  t=0.7s
+  tau=-7/3 h=3 R=(6,) D=5 [outside]: Xi = -209487/19668992 match  t=0.2s
+  Schur only: tau=2/7 h=4 R=(2,) D=1 [in range]: Xi = 0  t=0.9s
+  Schur only: tau=2/7 h=4 R=(3,) D=2 [in range]: Xi = 0  t=1.4s
+  Schur only: tau=2/7 h=4 R=(4,) D=3 [in range]: Xi = 0  t=0.8s
+  Schur only: tau=2/7 h=4 R=(5,) D=4 [in range]: Xi = 0  t=2.9s
+  Schur only: tau=2/7 h=4 R=(6,) D=5 [in range]: Xi = 0  t=3.7s
+  Schur only: tau=2/7 h=4 R=(2, 2) D=2 [in range]: Xi = 0  t=4.2s
+  Schur only: tau=2/7 h=4 R=(3, 2) D=3 [in range]: Xi = 0  t=6.4s
+  Schur only: tau=2/7 h=4 R=(7,) D=6 [outside]: Xi = 193375/214990848  t=3.6s
+  Schur only: tau=2/7 h=5 R=(2,) D=1 [in range]: Xi = 0  t=4.5s
+  Schur only: tau=2/7 h=5 R=(3,) D=2 [in range]: Xi = 0  t=6.7s
+  Schur only: tau=2/7 h=5 R=(9,) D=8 [outside]: Xi = -411745295/104485552128  t=39.6s
+total time 99.1s

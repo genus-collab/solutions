@@ -1,0 +1,8 @@
+2026-10-28 22:34:24  [g=2] Wick expansion to z^3 ready (0.1 s)
+2026-10-28 22:34:25  [g=2] R-matrix at alpha0 = 0 with x symbolic built (0.8 s); S = (-1 + x)/x, P = -(1/(Q*x))
+2026-10-28 22:34:27  [g=2] factors at symbolic Q ready (2.1 s); LeafCount of EdN[1,2][2,0]: 208
+2026-10-28 22:34:27  [g=2] saved rc_factors_g2_x.mx
+2026-10-28 22:37:50  [g=3] Wick expansion to z^6 ready (1.2 s)
+2026-10-28 22:38:03  [g=3] R-matrix at alpha0 = 0 with x symbolic built (12.5 s); S = (-1 + x)/x, P = -(1/(Q*x))
+2026-10-28 22:38:28  [g=3] factors at symbolic Q ready (24.4 s); LeafCount of EdN[1,2][5,0]: 2042
+2026-10-28 22:38:28  [g=3] saved rc_factors_g3_x.mx

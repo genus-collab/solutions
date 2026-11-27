@@ -1,0 +1,88 @@
+e1 = 4, e2 = 9, E = 13; z-orders 0..9; s-precision 7; leaf tests k = 0..3
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+XX(s) = -2/9, 2/27, 10/243, 14/729, 16/2187, 128/59049, 112/177147   (XX(0) must be -2/9)
+rows built
+(A) symplecticity Sum_{p+q=n} (-1)^q <Phat_i[p], Phat_j[q]> = delta_ij delta_n0 Delta_i, all i,j, n <= 9, exact to s^4: OK
+(B) colour 0 (singular) rows, frame B, as series in s = 1+3t:
+  row 0 (c1=1): lowest s-power 0 (known to s^6)
+    [s^0] z^0..z^4: 1, -1/13, 1/169, -1/2197, 1/28561
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 0)
+    [s^1] z^0..z^4: 0, -1/39, 1/169, -7/6591, 5/28561
+      leaf form: in span{1, 1/(E+jz), j<=2} (numerator degree 1)
+    [s^2] z^0..z^4: 0, -1/39, 11/1521, -11/6591, 95/257049
+      leaf form: in span{1, 1/(E+jz), j<=3} (numerator degree 2)
+  row 1 (c1=1): lowest s-power -1 (known to s^5)
+    [s^-1] z^0..z^4: -13/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^0] z^0..z^4: 0, 1/9, -1/117, 1/1521, -1/19773
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 1)
+    [s^1] z^0..z^4: 0, 1/9, -5/351, 1/507, -17/59319
+      leaf form: in span{1, 1/(E+jz), j<=2} (numerator degree 2)
+  row 1 (c1=C1cf): lowest s-power -1 (known to s^5)
+    [s^-1] z^0..z^4: 13/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^0] z^0..z^4: -26/9, -1/9, 1/117, -1/1521, 1/19773
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 1)
+    [s^1] z^0..z^4: 0, -1/27, 1/117, -7/4563, 5/19773
+      leaf form: in span{1, 1/(E+jz), j<=2} (numerator degree 1)
+  row 2 (c1=1): lowest s-power -1 (known to s^5)
+    [s^-1] z^0..z^4: 169/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^0] z^0..z^4: -169/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^1] z^0..z^4: 169/9, -13/27, 1/27, -1/351, 1/4563
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 1)
+  row 2 (c1=C1cf): lowest s-power -1 (known to s^5)
+    [s^-1] z^0..z^4: -169/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^0] z^0..z^4: 169/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^1] z^0..z^4: 169/27, -13/27, 1/27, -1/351, 1/4563
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 0)
+    frame-B identity row at s^0 = E/(E+z) exactly through z^9: OK
+(C) edge factors Ehat_ij(m,n), m+n <= 8:
+  (0,0): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (0,1): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (0,2): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (1,0): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (1,1): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (1,2): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (2,0): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (2,1): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (2,2): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+(R1) independent difference quotient vs code Ed_00, s^0..s^4: EQUAL 225
+(R1) independent difference quotient vs code Ed_01, s^0..s^4: EQUAL 225
+(R1) independent difference quotient vs code Ed_02, s^0..s^4: EQUAL 225
+(R1) independent difference quotient vs code Ed_10, s^0..s^4: EQUAL 225
+(R1) independent difference quotient vs code Ed_11, s^0..s^4: EQUAL 225
+(R1) independent difference quotient vs code Ed_12, s^0..s^4: EQUAL 225
+(R1) independent difference quotient vs code Ed_20, s^0..s^4: EQUAL 225
+(R1) independent difference quotient vs code Ed_21, s^0..s^4: EQUAL 225
+(R1) independent difference quotient vs code Ed_22, s^0..s^4: EQUAL 225
+(R1b) [s^-1] E_01 independent: nonzero entries 0; [s^-2]: 0
+(R1b) [s^-1] E_02 independent: nonzero entries 0; [s^-2]: 0
+(R2) Pihat_00 - delta Delta_0 = 0 (s^-2..s^4, u^0..u^9): OK
+(R2) Pihat_01 - delta Delta_0 = 0 (s^-2..s^4, u^0..u^9): OK
+(R2) Pihat_02 - delta Delta_0 = 0 (s^-2..s^4, u^0..u^9): OK
+(R3) legs f_{1,b} in Lam_{k+1}, no const: OK=25; control Lam_k: FAIL=25; control drop lam_1: FAIL=25
+(R3) legs f_{2,b} in Lam_{k+1}, no const: OK=25; control Lam_k: FAIL=25; control drop lam_1: FAIL=25
+(R3b) E_10 legs (singular end second slot) in Lam_{k+1}(w): OK=25
+(R3b) E_20 legs (singular end second slot) in Lam_{k+1}(w): OK=25
+(R4) E_01|s^0 = lam_1(psi) chi(w): OK; chi nonzero coefs 9
+(R4) E_02|s^0 = lam_1(psi) chi(w): OK; chi nonzero coefs 9
+(R5) closed form variant 'true' E_01: EQUAL 225
+(R5) closed form variant 'true' E_02: EQUAL 225
+(R5) closed form variant 'noL' E_01: FAIL 180/225
+(R5) closed form variant 'noL' E_02: FAIL 180/225
+(R5) closed form variant 'wsign' E_01: FAIL 180/225
+(R5) closed form variant 'wsign' E_02: FAIL 180/225
+(R5) closed form variant 'dropk1top' E_01: FAIL 225/225
+(R5) closed form variant 'dropk1top' E_02: FAIL 225/225
+(R6) control: (O) broken, E_10(n,m) vs E_01(m,n) at s^0 mismatches: 45 (expect >0)
+(R7) Delta_1(0) = (0 + (-8788) w) pred (0 + (-8788) w) OK
+(R7) Delta_2(0) = (8788 + (8788) w) pred (8788 + (8788) w) OK
+(R8) edges identical in c1=1 and c1=C1cf gauges: OK
+(R9) colour 0 true-gauge rows: lowest s-power -1
+(R9) colour 1 true-gauge rows: lowest s-power 0
+(R9) colour 2 true-gauge rows: lowest s-power 0
+REF TOTAL failures: 0

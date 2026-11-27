@@ -1,0 +1,8 @@
+g 3 field Qw eps 3 7 frame hodge perturb None time 38.9
+ total val -4 prec 9  expected leading -30769/2352
+ leading coeff (xi^-4) == expected: True
+ polar part of G_g - (-3)^(g-1) beta/t_c^(2g-2), all zero: True  first bad: []
+ per colouring: edge-graph terms with negative valuation: 0 []  #terms 1416
+ vertex col 0: val -4  minus polar term: polar zero True
+ vertex col (1,) val 0
+ vertex col (2,) val 0

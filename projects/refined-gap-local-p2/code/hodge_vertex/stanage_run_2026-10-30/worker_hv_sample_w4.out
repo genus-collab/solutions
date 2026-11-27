@@ -1,0 +1,20 @@
+[launcher] worker 4 of 9, attempt 1, 2026-10-30 09:21:28
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+start: genus 4, KMAX 9, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+R-matrix coefficients from cPP_z9.m
+R-matrix rows built to z^9; LeafCounts row0/1/2: {5116, 5079, 21521}
+rows of R' = R_Z h^(-1) built to z^9; LeafCounts {493, 456, 1491}
+76 points assigned, 74 already done, 2 to do
+point 193  1
+{-, 43}
+ 6 done in 280.4 s; total-ref {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; max |Im|      -335
+0. 10
+point 553  1
+{--, 43}
+ 11 done in 287.3 s; total-ref {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; max |Im|      -336
+0. 10
+job finished
+[launcher] worker 4 finished on attempt 1, 2026-10-30 09:31:00

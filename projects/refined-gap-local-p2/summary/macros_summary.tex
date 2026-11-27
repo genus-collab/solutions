@@ -1,0 +1,225 @@
+% macros_summary. Macros copied from the preamble of the long version (main.tex), followed by the macros specific to the abridged version.
+%-------------------------------------------------------------------------------
+% Letters
+\newcommand{\bbA}{\mathbb{A}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbD}{\mathbb{D}}
+\newcommand{\bbE}{\mathbb{E}}
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbH}{\mathbb{H}}
+\newcommand{\bbK}{\mathbb{K}}
+\newcommand{\bbL}{\mathbb{L}}
+\newcommand{\bbO}{\mathbb{O}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbT}{\mathbb{T}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\mgp}[1]{\mathsf{#1}}
+
+%-------------------------------------------------------------------------------
+% General
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ri}{\mathrm{i}}
+\newcommand{\re}{\mathrm{e}}
+\newcommand{\de}{\partial}
+% \llbracket: from newtxmath if available, otherwise a substitute (stmaryrd is not assumed)
+\providecommand{\llbracket}{[\![}
+\providecommand{\rrbracket}{]\!]}
+\newcommand{\fps}[1]{\llbracket #1 \rrbracket}
+\newcommand{\lser}[1]{(\!(#1)\!)}
+\newcommand{\Frac}{\mathrm{Frac}}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator*{\Res}{Res}
+\DeclareMathOperator{\Disc}{Disc}
+\newcommand{\tensor}{\otimes}
+
+%-------------------------------------------------------------------------------
+% Geometry and tori
+\newcommand{\Tmax}{\mgp{T}_{\!\mathrm{M}}}
+\newcommand{\TF}{\mgp{T}_{\mathrm{F}}}
+\newcommand{\KPtwo}{K_{\bbP^2}}
+\newcommand{\Mbar}{\overline{M}}
+\newcommand{\vir}{\mathrm{virt}}
+\newcommand{\GW}{\mathsf{GW}}
+\newcommand{\Hdg}{\bbE}                        % Hodge bundle
+\newcommand{\Lamv}{\Lambda^{\!\vee}}           % \Lamv(u) = \sum_i (-1)^i \lambda_i u^{g-i}
+\newcommand{\Hg}{\mathsf{Hg}}                  % \Hg_v = \prod_a \Lamv(v_a)/v_a^g (normalised Hodge class)
+\newcommand{\Ntw}{\cN}                         % O(-3)_{3\alpha} + O_{-\epsilon_1} + O_{-\epsilon_2}
+\newcommand{\bw}{\mathbf{w}}                   % (E,-\epsilon_1,-\epsilon_2)
+\newcommand{\wts}{\mathrm{wt}}                 % \wts_i = the five tangent weights at P_i
+\newcommand{\wprod}{\mathsf{w}}                % \wprod_i = product of \wts_i  (W_i^0 of the sources)
+\newcommand{\bwt}{\bw_{\!\tau}}                % (1,\tau,-1-\tau)
+\newcommand{\st}{\sigma_{\!\tau}}              % \tau(1+\tau)
+
+%-------------------------------------------------------------------------------
+% Fields and rings
+\newcommand{\Kal}{\bbK_{\alpha}}               % Q(\alpha,\epsilon)
+\newcommand{\Kalt}{\widetilde{\bbK}_{\alpha}}  % adjoin (\wprod_i)^{1/2}
+\newcommand{\Kalh}{\widehat{\bbK}_{\alpha}}    % field of the oscillating-integral argument
+\newcommand{\Ky}{\bbK_{y}}                     % \bbK(y)
+\newcommand{\Lom}{\bbL_{\omega}}               % \bbK(\omega)(t)
+\newcommand{\Fzero}{\bbF_{\circ}}              % \Kalt((\cQ))
+\newcommand{\ringA}{\bbA}                      % Q[\alpha,\epsilon,y]
+\newcommand{\primeq}{\mathfrak{q}}             % prime of \TF
+\newcommand{\locO}{\bbO}                       % \ringA localised at \primeq
+\newcommand{\locOal}{\bbO_{\alpha}}            % Q[\alpha,\epsilon] localised at \primeq \cap Q[\alpha,\epsilon]
+\newcommand{\ringC}{\mathscr{C}}               % \locO[Y]/(\Lhat)
+\newcommand{\redn}{\mathrm{red}}               % coefficientwise \alpha_i \mapsto E/3
+\newcommand{\redC}{\pi_{\ringC}}               % \ringC \to \bbL
+\newcommand{\RRing}{\mathbf{R}}                % \RRing_0[[t_c]]
+\newcommand{\Lt}{\widetilde{\bbL}}             % C(\epsilon_1,\epsilon_2,\epsilon_3)(t)
+\newcommand{\Gring}{\mathbf{G}}                % \Lt[\sfA^{\pm 1},\sfF]
+\newcommand{\evA}{\mathrm{ev}_{A}}
+\newcommand{\evcf}{\mathrm{ev}_{\mathrm{cf}}}
+
+%-------------------------------------------------------------------------------
+% Base and mirror data
+\newcommand{\thQ}{\theta_{\cQ}}                % \cQ d/d\cQ;  \theta alone is \theta_y = y d/dy
+\newcommand{\Ey}{E(y)}                         % the function E(y) of [BS]; E alone is the weight
+\newcommand{\Lhat}{\widehat{\LL}}              % \Lhat(Y)
+\newcommand{\Ltwo}{\mathcal{L}_{2}}            % \theta^2 + 3y(3\theta+1)(3\theta+2)
+\newcommand{\LPF}{\mathcal{L}_{\mathrm{PF}}}   % operator of the equivariant Picard--Fuchs equation
+\newcommand{\Pconj}{\mathscr{P}}               % \re^{-u/z} \LPF \re^{u/z}
+\newcommand{\sfF}{\mathsf{F}}                  % indeterminate for F
+\newcommand{\sfA}{\mathsf{A}}                  % indeterminate for A
+\newcommand{\Cf}{\mathsf{Cf}}
+\newcommand{\tc}{t_{\mathrm{c}}}
+\newcommand{\tcf}{t_{\mathrm{cf}}}
+\newcommand{\Acf}{A_{\mathrm{cf}}}
+\newcommand{\Fcf}{F_{\mathrm{cf}}}
+\newcommand{\wcf}{\mathsf{w}_{\mathrm{cf}}}    % analytic solution of \Ltwo with value 1 at \xi=0
+\newcommand{\cone}{\mathsf{c}_{1}}             % a non-vanishing section
+\newcommand{\ccf}{\mathsf{c}_{\mathrm{cf}}}    % \theta\tc = -\wcf
+\newcommand{\Fc}{\mathsf{F}_{\!\mathsf{c}}}    % \theta\log\cone
+\newcommand{\dtwo}{\mathsf{d}_{2}}             % E(\cone^{-2}-1)/(2\xi)
+\newcommand{\gI}{\mathsf{g}}                   % I_0^{[1]} - \log y
+\newcommand{\gtwo}{\mathsf{g}_{2}}             % series part of I_1^{[2]}
+\newcommand{\hI}{\mathfrak{h}}                 % \sum 3 a_d (H_{3d}-H_d)(-y)^d
+\newcommand{\Fsol}{\mathsf{S}}                 % fundamental solution \Fsol(H^a)
+\newcommand{\Jsm}{\mathsf{J}}                  % small J-function
+\newcommand{\ft}{\mathbf{t}}                   % point of \cV (flat coordinates \ft_a)
+\newcommand{\qprod}{\circ}                     % quantum product
+\newcommand{\eid}{\mathfrak{e}}                % idempotents
+\newcommand{\fid}{\mathfrak{f}}                % normalised idempotents
+\newcommand{\Asym}{\mathsf{Asym}}
+\newcommand{\Asy}{\mathscr{A}}                 % \Asym at a critical point
+\newcommand{\Pcr}{\mathsf{p}_{\cW}}            % y^{-1/3}\re^{(x_0+x_1+x_2)/3}
+\newcommand{\Hess}{\mathsf{H}}                 % Hessian
+\newcommand{\Jet}{\mathrm{Jet}}                % Jet_m(\zeta)
+
+%-------------------------------------------------------------------------------
+% Givental data
+\newcommand{\TFT}{\boldsymbol{\omega}}         % semisimple TFT (\omega is e^{2\pi i/3})
+\newcommand{\Rm}{\mathsf{R}}                   % R-matrix
+\newcommand{\Rt}{\widetilde{\mathsf{R}}}       % stripped flat rows (\mathsf{S}_{aj} of [BS])
+\newcommand{\Rinv}{\mathbf{B}}                 % \Rm^{-1}(\psi)
+\newcommand{\RB}{\mathsf{R}'}                  % frame-B R-matrix
+\newcommand{\hb}{h_{\bw}}                      % \Theta(-z/E)\Theta(z/\epsilon_1)\Theta(z/\epsilon_2)
+\newcommand{\Nz}{\mathrm{N}}                   % \sqrt{\epsilon_1\epsilon_2}\Theta(-z/\epsilon_1)\Theta(-z/\epsilon_2)
+\newcommand{\GPsi}{\mathsf{G}_{\Psi}}          % \Psi^{-1}\thQ\Psi
+\newcommand{\Mdef}{\mathbf{M}}                 % defect matrix of the flatness proof
+\newcommand{\shQ}{\mathsf{sh}}                 % ring map \cQ \mapsto \cQ \re^{\ft_1}
+
+%-------------------------------------------------------------------------------
+% Rows
+\newcommand{\Pn}{\mathsf{P}}                   % \Pn_a^{(i)} = \Delta_i^{1/2} \Rm_{ai}; \Pn_0 algebraic row
+\newcommand{\Pb}{\overline{\mathsf{P}}}        % \TF limit of the canonical rows
+\newcommand{\Ph}{\widehat{\mathsf{P}}}         % normalised frame-B rows
+\newcommand{\PB}{{\mathsf{P}^{\mathrm{B}}}}      % unnormalised frame-B rows
+\newcommand{\RLR}{{\mathsf{R}^{\mathrm{LR}}}}    % \hb \PB, large-radius frame
+\newcommand{\opD}{\bbD}                        % z\theta + Y - (z/2)\theta\log W
+\newcommand{\opDb}{\overline{\bbD}}            % on rows on \TF
+\newcommand{\Thp}{\mathrm{Th}}                 % \Thp_i = Y_i + z\theta
+\newcommand{\Qa}{\mathbf{Q}}                   % \opD\Pn_0
+\newcommand{\Qb}{\overline{\mathbf{Q}}}        % \opDb\Pb_0
+\newcommand{\Qh}{\widehat{\mathbf{Q}}}         % \Qh_i = \opD_i S(v_i,z)
+\newcommand{\Srow}{S}                          % \Srow(v,z)
+\newcommand{\Sinf}{S_{\infty}}
+\newcommand{\brow}{\boldsymbol{\sigma}}        % \rho\Ph^{(0)}(-\psi)
+\newcommand{\Yh}{\widehat{Y}}                  % \cone^{-1}Y
+\newcommand{\rhoc}{\rho}
+
+%-------------------------------------------------------------------------------
+% Factors and graph sums
+\newcommand{\Dil}{\mathsf{Dil}}                % \Dil_i(d), generic weights
+\newcommand{\Dilb}{\overline{\mathsf{Dil}}}    % on \TF, point frame
+\newcommand{\Dilh}{\widehat{\mathsf{Dil}}}     % frame B
+\newcommand{\Edge}{\cE}                        % \Edge_{ij}, generic weights
+\newcommand{\Edgeb}{\overline{\cE}}            % on \TF, point frame
+\newcommand{\Edgeh}{\widehat{\cE}}             % frame B
+\newcommand{\Edget}{\widetilde{\cE}}           % t_c^2\rho^2\Edgeh_{00}
+\newcommand{\Ver}{\mathrm{Ver}}                % \Ver(\Gamma)
+\newcommand{\Edg}{\mathrm{Edg}}                % \Edg(\Gamma)
+\newcommand{\col}{\mathfrak{c}}                % colouring \col : \Ver(\Gamma) \to \{0,1,2\}
+\newcommand{\GCont}{\mathrm{Cont}}             % \GCont(\Gamma,\col)
+\newcommand{\Gsum}{\mathscr{G}}                % \Gsum_g, \Gsum_g[\sfF]: Hodge-vertex frame-B graph sum
+\newcommand{\Tsum}{\mathscr{T}}                % \Tsum_g over \locO[\sfF]
+\newcommand{\Tsumb}{\overline{\mathscr{T}}}    % \Tsumb_g[\sfF]: point-frame sum on \TF
+\newcommand{\sF}{\mathscr{F}}                  % \sF_g^{\Tmax}, \sF_g^{\TF}, \sF_{k,h}
+\newcommand{\GWcf}{\GW^{\mathrm{cf}}}
+\newcommand{\sFcf}{\sF^{\mathrm{cf}}}
+\newcommand{\bfrak}{\mathfrak{b}}              % \bfrak_{k,h}
+
+%-------------------------------------------------------------------------------
+% Leaves and Hodge side
+\newcommand{\lf}{\boldsymbol{\lambda}}         % \lf_j(\psi) = 1/(E - j\psi)
+\newcommand{\Lsp}{\mathscr{L}}                 % \Lsp_m = span{\lf_1,...,\lf_m}
+\newcommand{\qo}{\mathsf{q}_{\circ}}           % E - E^2\lf_1
+\newcommand{\qt}{\mathsf{q}_{t}}               % dilaton series -\psi S(v_i,-\psi)
+\newcommand{\Tdil}{T_{\mathrm{dil}}}           % \qo + \psi
+\newcommand{\Fpot}{\mathsf{F}^{\mathrm{pot}}}  % \Fpot_h
+\newcommand{\dbase}{\mathfrak{d}}              % \dbase^s
+\newcommand{\Dom}{\mathfrak{D}}                % neighbourhood of \qo
+\newcommand{\Xiz}{\Xi}                         % \Xiz_h(\mathsf{M}), scale E
+\newcommand{\Xit}{\Xi^{\tau}}                  % \Xit_h(\mathsf{U}), scale 1
+\newcommand{\ZZ}{\mathrm{Z}}                   % \ZZ[h,n] = \Xiz_h(1^n); \ZZ_h(\tau)
+\newcommand{\Mirr}{\mathsf{M}_{\mathrm{irr}}}  % \Mirr(h)
+\newcommand{\dg}{\mathrm{dg}}                  % \dg(\mathsf{M}) = \sum (j-1)
+\newcommand{\msM}{\mathsf{M}}                  % multiset of integers >= 2
+\newcommand{\msU}{\mathsf{U}}                  % multiset
+\newcommand{\msV}{\mathsf{V}}                  % multiset
+
+%-------------------------------------------------------------------------------
+% Marino--Vafa side
+\newcommand{\MVZ}{\mathcal{Z}}                 % partition function
+\newcommand{\MVF}{\mathcal{F}}                 % \log\MVZ
+\newcommand{\tv}{\mathsf{u}}                   % tree variable, \yv = \tv\re^{-\tv}
+\newcommand{\yv}{\mathsf{y}}                   % rescaled p_1 (\yv_k rescaled p_k)
+\newcommand{\thv}{\vartheta}                   % \yv d/d\yv
+\newcommand{\pw}{\varpi}                       % 1/(1-\tv)
+\newcommand{\pv}{\check{\varpi}}               % 1/\pw
+\newcommand{\xinv}{\check{x}}                  % 1/x
+\newcommand{\Eul}{\mathrm{Eu}}                 % Euler operator
+\newcommand{\Hir}{\bbH}                        % Hirota derivative \Hir_k
+\newcommand{\Sch}{\mathrm{Sch}}                % elementary Schur polynomial
+\newcommand{\Bil}{\mathsf{B}}                  % bilinear polynomial \Bil_k(\Hir)
+\newcommand{\bwy}{\boldsymbol{\rho}}           % Weyl vector in \mathsf{q}^{\bwy}
+
+%-------------------------------------------------------------------------------
+% Abridged version only
+\newcommand{\Lg}[1]{\textup{[L,~#1]}}          % pointer to the long version
+\newcommand{\gendbr}[1]{\langle\!\langle #1 \rangle\!\rangle}  % double bracket (as in Section 4 of the long version)
+\newcommand{\genone}{\mathbf{1}}               % unit; also the trivial rank-one CohFT
+\newcommand{\speEtab}{\overline{\eta}}         % \eta^{ab} at \alpha_i = E/3
+\newcommand{\valb}{\mathsf{b}}                 % 1 - e^{-\tau\mathsf{t}}
+\newcommand{\xc}{\mathsf{x}}                   % conifold parameter
+\newcommand{\cc}{\mathsf{c}}                   % 1 + \xc
+\newcommand{\tcn}{\mathsf{t}}                  % conifold coordinate log Q
+

@@ -1,0 +1,13 @@
+colour 0 ok: W(-a_i), P_0, P_1, Phi(-a_i)=prod Theta, kernel ratio through y^3 z^4
+   sample [y^1 z^1] 1203/64 [y^2 z^2] 51385653/8192
+colour 1 ok: W(-a_i), P_0, P_1, Phi(-a_i)=prod Theta, kernel ratio through y^3 z^4
+   sample [y^1 z^1] -36 [y^2 z^2] 11076
+colour 2 ok: W(-a_i), P_0, P_1, Phi(-a_i)=prod Theta, kernel ratio through y^3 z^4
+   sample [y^1 z^1] 2685/64 [y^2 z^2] 89476725/8192
+colour 0 ok: W(-a_i), P_0, P_1, Phi(-a_i)=prod Theta, kernel ratio through y^3 z^4
+   sample [y^1 z^1] -175474782/15625 [y^2 z^2] 493148513064891348/244140625
+colour 1 ok: W(-a_i), P_0, P_1, Phi(-a_i)=prod Theta, kernel ratio through y^3 z^4
+   sample [y^1 z^1] 32617872/1076890625 [y^2 z^2] -1049823026796654432/1159693418212890625
+colour 2 ok: W(-a_i), P_0, P_1, Phi(-a_i)=prod Theta, kernel ratio through y^3 z^4
+   sample [y^1 z^1] 940106160/68921 [y^2 z^2] 11577979482746455800/4750104241
+9/1451520 == 1/161280: True

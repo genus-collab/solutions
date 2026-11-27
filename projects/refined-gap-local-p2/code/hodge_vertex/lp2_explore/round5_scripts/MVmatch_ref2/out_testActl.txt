@@ -1,0 +1,7 @@
+true mismatches/tested 0 / 20
+extra (-1)^g mismatches/tested 12 / 20
+drop sigma^g mismatches/tested 20 / 20
+Pi(-1-tau) mismatches/tested 5 / 20
+labelled 1/Aut mismatches/tested 10 / 20
+weights flipped mismatches/tested 20 / 20
+leaf 1/(1+mu psi) mismatches/tested 20 / 20

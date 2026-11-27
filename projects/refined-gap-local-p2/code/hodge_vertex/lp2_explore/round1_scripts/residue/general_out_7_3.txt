@@ -1,0 +1,51 @@
+== NONE=1
+  GENERAL c1=1 [s^-2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=1 [s^-1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=1 [s^0]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = -700/9
+  GENERAL c1=1 [s^1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 700/81
+  GENERAL c1=1 [s^2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 1400/243
+  GENERAL c1=1 [s^3]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 2800/729
+  GENERAL c1=1 [s^4]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 51800/19683
+  GENERAL c1=1 [s^5]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL (missing fits: 4); psi-linear terms present: no; E_00(0,0) = 112000/59049
+  GENERAL c1=C1cf [s^-2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=C1cf [s^-1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=C1cf [s^0]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = -700/9
+  GENERAL c1=C1cf [s^1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 700/81
+  GENERAL c1=C1cf [s^2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 1400/243
+  GENERAL c1=C1cf [s^3]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 2800/729
+  GENERAL c1=C1cf [s^4]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 51800/19683
+  GENERAL c1=C1cf [s^5]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL (missing fits: 4); psi-linear terms present: no; E_00(0,0) = 112000/59049
+== XXSHIFT=1/10
+  GENERAL c1=1 [s^-2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=1 [s^-1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 210
+  GENERAL c1=1 [s^0]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = -2590/9
+  GENERAL c1=1 [s^1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 6370/81
+  GENERAL c1=1 [s^2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 1400/243
+  GENERAL c1=1 [s^3]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 2800/729
+  GENERAL c1=1 [s^4]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 51800/19683
+  GENERAL c1=1 [s^5]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL (missing fits: 4); psi-linear terms present: YES; E_00(0,0) = 112000/59049
+  GENERAL c1=C1cf [s^-2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=C1cf [s^-1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 210
+  GENERAL c1=C1cf [s^0]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = -2590/9
+  GENERAL c1=C1cf [s^1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 6370/81
+  GENERAL c1=C1cf [s^2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 1400/243
+  GENERAL c1=C1cf [s^3]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 2800/729
+  GENERAL c1=C1cf [s^4]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 51800/19683
+  GENERAL c1=C1cf [s^5]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL (missing fits: 4); psi-linear terms present: YES; E_00(0,0) = 112000/59049
+== XXSHIFT1=1/10
+  GENERAL c1=1 [s^-2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=1 [s^-1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=1 [s^0]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 1190/9
+  GENERAL c1=1 [s^1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = -16310/81
+  GENERAL c1=1 [s^2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 18410/243
+  GENERAL c1=1 [s^3]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 2800/729
+  GENERAL c1=1 [s^4]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 51800/19683
+  GENERAL c1=1 [s^5]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL (missing fits: 4); psi-linear terms present: YES; E_00(0,0) = 112000/59049
+  GENERAL c1=C1cf [s^-2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=C1cf [s^-1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: no; E_00(0,0) = 0
+  GENERAL c1=C1cf [s^0]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 1190/9
+  GENERAL c1=C1cf [s^1]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = -16310/81
+  GENERAL c1=C1cf [s^2]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 18410/243
+  GENERAL c1=C1cf [s^3]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 2800/729
+  GENERAL c1=C1cf [s^4]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL; psi-linear terms present: YES; E_00(0,0) = 51800/19683
+  GENERAL c1=C1cf [s^5]: basis-pair identity vs code E_00 (all m+n <= 8): EQUAL (missing fits: 4); psi-linear terms present: YES; E_00(0,0) = 112000/59049

@@ -1,0 +1,9 @@
+﻿Lemma 3.2 g 1 U (2,) (True, 7)
+Lemma 3.2 g 2 U (2,) (True, 7)
+Lemma 3.2 g 2 U (3,) (True, 7)
+Lemma 3.2 g 2 U (2, 3) (True, 7)
+Lemma 3.2 g 3 U (2,) (True, 7)
+Lemma 3.2 g 3 U (4,) (True, 7)
+Lemma 3.2 g 3 U (2, 5) (True, 7)
+Lemma 3.2 g 4 U (3,) (True, 7)
+done

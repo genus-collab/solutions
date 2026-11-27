@@ -1,0 +1,376 @@
+% s05_specialisation. Section file; new macros at the top; label prefix: spe
+\newcommand{\speLbar}{\overline{\Lhat}}          % reduction of \Lhat modulo \primeq
+\newcommand{\speWbar}{\overline{W}}              % reduction of W modulo \primeq
+\newcommand{\speYbar}{\overline{Y}}              % reduction of Y modulo \primeq
+\newcommand{\speEtab}{\overline{\eta}}           % \eta^{ab} at \alpha_i = E/3
+\newcommand{\speSW}{S_{\mathrm{W}}}              % the row built from the Wick numbers
+\newcommand{\speNij}{\mathsf{N}_{ij}}            % pairing of generic rows at -\psi, -w
+\newcommand{\spechart}{\mathsf{a}}               % chart coordinates q_j^{1/3}
+\section{Specialisation to the fibrewise torus}
+\label{sec:spe}
+
+In this section the graph sum of \cref{thm:gen-main} is carried from generic weights to the fibrewise torus. At generic weights the sum over colourings is a multi-trace over a local ring $\ringC$, and it is a polynomial in an indeterminate $\sfF$ for $F$ with coefficients in the localisation $\locO$ of $\ringA=\bbQ[\alpha,\epsilon,y]$ at the prime $\primeq$ of $\TF$. The identity then passes to $\TF$ by the ring map $\alpha_i\mapsto E/3$ on a subring of power series in $y$, with a denominator outside $\primeq$. No limit in the weights is taken, and the theorem of Teleman is not applied on $\TF$, where the cohomological field theory is not semisimple at $\cQ=0$. \Cref{thm:gen-main} is used as stated, as an intermediate step: the aim of this section is the fibrewise torus, and nothing is claimed about Gromov--Witten theory at generic weights beyond that theorem; parts (a) and (c) below only rewrite its factors and its graph sum algebraically.
+
+\subsection{Statement}
+\label{sec:spe-statement}
+
+Recall the rings $\ringA=\bbQ[\alpha,\epsilon,y]$, the prime $\primeq=(\alpha_i-E/3,\ i=0,1,2)$, the local ring $\locO=\ringA_{\primeq}$ with $\locO/\primeq\locO=\Ky$, and the local ring $\locOal$, which is $\bbQ[\alpha,\epsilon]$ localised at $\primeq\cap\bbQ[\alpha,\epsilon]$. Put
+\[
+\ringC\coloneqq\locO[Y]/(\Lhat(Y)),\qquad \redn\colon\locOal\fps{y}\longrightarrow\bbK\fps{y},\quad \alpha_i\mapsto E/3\ \text{ coefficientwise}.
+\]
+For $g\geq 2$ let
+\[
+\sF_g^{\TF}(y)\coloneqq\sum_{d\geq 0}\cQ(y)^d\,\GW_{g,d}^{\TF}\ \in\ \bbK\fps{y}.
+\]
+The sum includes $d=0$; see \cref{rmk:set-d0}.
+
+\emph{The algebraic row.} Let $\Phi(\alpha,Y;z)$ be the series of \eqref{eq:row-Phi}, that is,
+\[
+\Phi(\alpha,Y;z)=\exp\Big(-\frac{z}{2}(\Hess^{-1})^{ab}\de_a\de_b\Big)\exp\Big(z^{-1}\sum_{m\geq 3}\Jet_m(\zeta)\Big)\Big|_{\zeta=0},
+\]
+with $\Hess=\mathrm{diag}(\alpha_j+Y)-(Y/3)\mathsf{J}$, where $\mathsf{J}$ is the matrix with all entries $1$, and
+\[
+\Jet_m(\zeta)=\sum_j(\alpha_j+Y)\frac{\zeta_j^m}{m!}-3Y\Big(\sum_j\frac{\zeta_j}{3}\Big)^{m}\frac{1}{m!}.
+\]
+Then $\det\Hess=W/3$, $\Phi_0=1$ and $[z^n]\Phi\in\bbQ[\alpha,Y,W^{-1}]$. Put
+\[
+\Pn_0\coloneqq\Theta(z/\epsilon_1)\,\Theta(z/\epsilon_2)\,\Phi,\qquad
+\opD\coloneqq z\theta+Y-\frac{z}{2}\theta\log W,\qquad
+\Qa\coloneqq\opD\Pn_0.
+\]
+
+\emph{Rows on $\TF$.} These are the $\TF$ limits of the canonical rows, as the theorem below shows. At colour $i$ put
+\begin{gather*}
+\Pb_0^{(i)}\coloneqq\hb(z)\,\Srow(v_i,z),\qquad
+\opDb\coloneqq z\theta+Y_i-\frac{z}{2}\theta\log\Delta_i,\qquad
+\Qb\coloneqq\opDb\,\Pb_0^{(i)},\\
+\Pb_1^{(i)}\coloneqq\Qb/A,\qquad
+\Pb_2^{(i)}\coloneqq\xi A\Big[\opDb\Qb-zF\Qb-E\,\frac{X}{2}\big(A^{-2}-1\big)\Qb\Big].
+\end{gather*}
+These are the large-radius rows ${\RLR_a}^{(i)}$ of \cref{def:set-rows} at $\cone=A$, multiplied by $\Delta_i^{1/2}$. Let $\speEtab^{ab}\coloneqq\eta^{ab}|_{\alpha_i=E/3}$, and let the factors be those of \cref{thm:gen-main} for these rows:
+\[
+\Dilb_i(d)\coloneqq(-1)^d[z^{d-1}]\Pb_0^{(i)}\ \ (d\geq2),\qquad
+\Edgeb_{ij}(\psi,w)\coloneqq\frac{\delta_{ij}\Delta_i-\sum_{a,b}\Pb_a^{(i)}(-\psi)\,\speEtab^{ab}\,\Pb_b^{(j)}(-w)}{\psi+w}.
+\]
+For rows $\Pn_a$ at generic weights we write $\langle\Pn(z),\Pn(w)\rangle\coloneqq\sum_{a,b}\Pn_a(z)\,\eta^{ab}\,\Pn_b(w)$, with the two arguments in the two factors of a tensor product.
+
+\begin{thm}[Specialisation]\genusstatus{AI-proposed, unchecked}
+\label{thm:spe-main}
+Parts (c), (d), (e) are for $g\geq 2$. The proof uses \cref{thm:gen-main}, the results of \cref{sec:row} and \cite{GP99}; part \textup{(b)} does not use the mirror theorem, \cref{thm:gen-mirror}.
+\begin{description}
+\item[(a) Regularity of the factors, to all orders in $z$] $\ringC$ is free of rank $3$ over $\locO$ and local, with maximal ideal $\primeq\ringC$ and residue field $\bbL$, via $\redC\colon Y\mapsto-(E/3)/(1+3t)$, $y\mapsto t^3$. The elements $Y$, $W$, $Y+\alpha_j$ and $\Lhat'(Y)=-W/Y$ are units of $\ringC$. The operator $\theta$ extends uniquely to $\ringC$, with $\theta Y=-Y\prod_j(Y+\alpha_j)/W$, and it reduces to $(t/3)\,\dd/\dd t$. The series $\Pn_0$, $\Qa$, $\opD\Qa$ have $z$-coefficients in $\ringC$: no square root and no discriminant occurs in the denominators, only powers of $W$, $\epsilon_1$, $\epsilon_2$. For every colour $j$ at generic $\alpha$,
+\[
+\Delta_j^{1/2}\Rm_{0j}=\iota_j(\Pn_0),
+\]
+where $\iota_j\colon\ringC\to\Kal\lser{y}$ is $Y\mapsto Y_j(y)$. Hence $\Delta_j$, $\Delta_j^{-1}$ and $\Dil_j(d)$ are $\iota_j$ of elements of $\ringC$, and, with $\sfF$ an indeterminate,
+\begin{multline}
+\label{eq:spe-pair}
+[z^Mw^b]\langle\Pn(z),\Pn(w)\rangle
+=\eta^{00}\,\Pn_{0,M}\otimes\Pn_{0,b}-3e_1(\alpha)\epsilon_1\epsilon_2\,\Qa_M\otimes\Qa_b\\
+-3\epsilon_1\epsilon_2\,\xi\,\big(\Qa_M\otimes(\opD\Qa)_b+(\opD\Qa)_M\otimes\Qa_b\big)
++3\epsilon_1\epsilon_2\,\xi\,\sfF\,\big(\Qa_{M-1}\otimes\Qa_b+\Qa_M\otimes\Qa_{b-1}\big),
+\end{multline}
+with $\eta^{00}=3e_3(\alpha)\epsilon_1\epsilon_2$. The function $A$ has cancelled, and
+\[
+\Edge_{ij}(a,b)=-\sum_{k=0}^{b}(-1)^k(-1)^{a+b+1}[z^{a+k+1}w^{b-k}]\langle\Pn(z),\Pn(w)\rangle
+\]
+lies in $(\iota_i\otimes\iota_j)(\ringC\otimes_{\locO}\ringC)+F(\iota_i\otimes\iota_j)(\ringC\otimes_{\locO}\ringC)$, linear in $F$. Equivalently,
+\[
+\de_{\sfF}\Edge_{ij}(\psi,w)=3\epsilon_1\epsilon_2\,\xi\,\Qa^{(i)}(-\psi)\,\Qa^{(j)}(-w).
+\]
+The symplectic identity and the delta form of the edge hold with $\sfF$ free (\cref{lem:spe-pair}). The map $\redC$ carries all of this to the data on $\TF$: at each $z$-order, $\redC(\Phi)=\Theta(-z/E)\,\Srow(v,z)$ and $\redC(\Pn_0)=\hb\,\Srow$.
+
+\item[(b) The Gromov--Witten side] For $d\geq 1$ and $g\geq 0$, $\epsilon_1\epsilon_2\GW_{g,d}^{\Tmax}$ lies in $\bbQ[\alpha,\epsilon]$, is homogeneous of degree $2g$, and
+\[
+\GW_{g,d}^{\Tmax}=\int_{[\Mbar_g(\bbP^2,d)]^{\vir}_{\Tmax}}e_{\Tmax}\big(R^1\pi_*f^*\cO(-3)_{3\alpha}\big)\,\frac{\Lamv(-\epsilon_1)\Lamv(-\epsilon_2)}{\epsilon_1\epsilon_2}.
+\]
+For $d=0$ and $g\geq 2$, $3e_3(\alpha)\epsilon_1\epsilon_2\GW_{g,0}^{\Tmax}$ lies in $\bbQ[\alpha,\epsilon]$, using $(-3H)^{-1}=(H^2+e_1(\alpha)H+e_2(\alpha))/(3e_3(\alpha))$ in $H_{\Tmax}(\bbP^2)[e_3(\alpha)^{-1}]$, with $H$ the equivariant class, $H|_{P_i}=-\alpha_i$. Both lie in $\locOal$, and their image under $\alpha_i\mapsto E/3$ is
+\[
+\GW_{g,d}^{\TF}=\int_{[\Mbar_g(\bbP^2,d)]^{\vir}}e_{\TF}\big(R\pi_*f^*\Ntw\big)^{-1},
+\]
+the localisation definition on $\TF$. These statements are \cref{prop:gen-poly}. The constant term is given by \cref{prop:spe-const}: if $H'$ is the non-equivariant hyperplane class of $\bbP^2$, with $\int_{\bbP^2}H'^2=1$, and
+\[
+\mathrm{P}(H')\coloneqq\frac{\Lamv(E-3H')\Lamv(-\epsilon_1)\Lamv(-\epsilon_2)}{(E-3H')\,\epsilon_1\epsilon_2},
+\]
+then
+\[
+\GW_{g,0}^{\TF}=\int_{\Mbar_g}\big[9\lambda_g\lambda_{g-2}\mathrm{P}(0)-3\lambda_g\lambda_{g-1}\mathrm{P}'(0)\big].
+\]
+For $g=2$ this is $E^2/640$. For $g=3$ this is $9E^4\mathrm{I}_3=E^4/161280$, with $\mathrm{I}_3=\int_{\Mbar_3}\lambda_1\lambda_2\lambda_3$. No closed form is claimed for $g\geq 4$.
+
+\item[(c) Generic $\alpha$, algebraic form] For each stable graph $\Gamma$ of genus $g$ without legs and each decoration, the term of the graph sum \eqref{eq:gen-graphsum} at a colouring $\col$ is $(\prod_v\iota_{\col_v})$ applied to an element $\Tsum_{\Gamma,\mathrm{dec}}$ of $\ringC^{\otimes_{\locO}|\Ver(\Gamma)|}[\sfF]$. So
+\[
+\Tsum_g\coloneqq\sum_\Gamma|\Aut\Gamma|^{-1}\sum_{\mathrm{dec}}\big(\Tr_{\ringC/\locO}\big)^{\otimes|\Ver(\Gamma)|}\big(\Tsum_{\Gamma,\mathrm{dec}}\big)
+\]
+lies in $\locO[\sfF]$, $\deg_{\sfF}\Tsum_g\leq 3g-3$, and the identity \eqref{eq:gen-graphsum} reads $\sF_g^{\Tmax}=\Tsum_g(F)$ in $\Kal\fps{y}$, where the sum over colourings is the multi-trace.
+
+\item[(d) The specialisation identity] In $\bbK\lser{y}$,
+\begin{multline}
+\label{eq:spe-identity}
+\sF_g^{\TF}(y)=\sum_\Gamma\frac{1}{|\Aut\Gamma|}\sum_{\col\colon\Ver(\Gamma)\to\{0,1,2\}}\sum_{\mathrm{dec}}\prod_v\Big[\Delta_{\col_v}^{g_v-1}\frac{1}{m_v!}\int_{\Mbar_{g_v,n_v+m_v}}\prod_h\psi_h^{a_h}\prod_k\psi_{n_v+k}^{d_{v,k}}\prod_k\Dilb_{\col_v}(d_{v,k})\Big]\\
+\times\prod_e\Edgeb_{\col\col'}(a_e,b_e)\ \eqqcolon\ \Tsumb_g(F),
+\end{multline}
+the point-frame graph sum for the rows $\Pb$. Each coloured term lies in $\bbK(\omega)[t^{\pm1},(1+3\omega^it)^{-1}:i][F]$ and has poles at $t=0$ in general. The colour sum lies in $\bbK[y^{\pm1},\xi^{-1}][F]$. The left side is a formal series in $\bbK\fps{y}$; its convergence near $y=0$ is a consequence of \eqref{eq:spe-identity}, because the right side is algebraic in $F$ and $y$. Continuation to the universal cover of $\bbC\setminus\{0,-1/27\}$ means continuation of the right side, and it is not a statement about Gromov--Witten series at large $y$. The cohomological field theory on $\TF$ is not semisimple at $\cQ=0$, and \cite{Tel12} is never applied on $\TF$.
+
+\item[(e) Consequences] $\sF_g^{\TF}$ lies in $\bbK[y^{\pm1},\xi^{-1}][F]$ with $\deg_F\leq 3g-3$. No finite generation statement is used, and neither is $A$, which cancels in graphs without legs. $F$ is transcendental over $\bbC(y)$, by an elementary monodromy argument, so the polynomial in $\sfF$ is unique, and $\Cf(\sF_g^{\TF})\coloneqq\Tsumb_g(\Fcf)$ is well defined (see \cref{def:fra-cf}). Colouring by colouring, the same holds over $\bbC(t)$.
+\end{description}
+\end{thm}
+
+\begin{rmk}
+\label{rmk:spe-noinput}
+The proof of \cref{thm:spe-main} needs no rational sub-torus, no limit along a family of weights, and no algebraic independence. That a denominator is not divisible by the prime of $\TF$ is obtained a priori, as the statement that the denominator is not in $\primeq$, from part (a): the coefficient of $\sfF^k$ is a multi-trace of an element of $\ringC^{\otimes n}$. Only one variable $\sfF$ is present, because $A$ has cancelled, and the normalised rows contain no square roots.
+\end{rmk}
+
+\subsection{The ring \texorpdfstring{$\ringC$}{C}}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}
+\label{lem:spe-ring}
+\begin{enumerate}
+\item $\ringC$ is free over $\locO$ on $1,Y,Y^2$. On $\Lhat=0$ one has $Y\Lhat'(Y)=Ye_2(q)-3\prod_jq_j=-W$, with $q_j=Y+\alpha_j$.
+\item With $t\coloneqq-(Y+E/3)/(3Y)$, the quotient $\Ky[Y]/(\speLbar)$ of $\ringC$ by $\primeq\ringC$ is the field $\bbL=\bbK(t)$, $t^3=y$, $Y=-(E/3)/(1+3t)$, and $\primeq\ringC$ is the unique maximal ideal of $\ringC$. The elements $W$, $Y$ and $Y+\alpha_j$ are units of $\ringC$.
+\item $\theta$ preserves $\locO$ and extends uniquely to $\ringC$, by $\theta Y=-27yY^3/\Lhat'(Y)=-Y\prod_jq_j/W$. It reduces to the unique extension of $y\,\dd/\dd y$ to $\bbL$, namely $(t/3)\,\dd/\dd t$.
+\item $\ringC$ is a domain with fraction field $\bbQ(\alpha,\epsilon,Y)$.
+\item At generic $\alpha$, $\Lhat$ has three simple roots $Y_j\in\Kal\fps{y}$ with $Y_j(0)=-\alpha_j$, and $\iota_j\colon\ringC\to\Kal\lser{y}$, $Y\mapsto Y_j$, is a ring map commuting with $\theta$. The triple $(\iota_0,\iota_1,\iota_2)$ is an isomorphism after $\otimes_{\locO}\Kal\lser{y}$, so $\Tr_{\ringC/\locO}=\sum_j\iota_j$. For $T\in\ringC^{\otimes n}$,
+\[
+\Tr^{\otimes n}(T)=\sum_{\col}\big(\iota_{\col_1}\otimes\dots\otimes\iota_{\col_n}\big)(T)\ \in\ \locO.
+\]
+\item The reduction of $\Tr^{\otimes n}(T)$ modulo $\primeq$ is $\Tr_{\bbL/\Ky}^{\otimes n}(\redC^{\otimes n}T)$. After adjoining $\omega$, this equals $\sum_{\col}$ of $\redC^{\otimes n}T$ evaluated at $t_v=\omega^{\col_v}t$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) $\Lhat$ has leading coefficient $\xi$, a unit of $\locO$, so $\ringC$ is free on $1,Y,Y^2$. The identity follows by direct expansion: on $\Lhat=0$ we have $27yY^3=-\prod_jq_j$, hence $Y\Lhat'(Y)=Ye_2(q)+81yY^3=Ye_2(q)-3\prod_jq_j$, and the expansion of this polynomial in $Y$ is $-W$.
+
+(ii) Modulo $\primeq$, $\speLbar=(Y+E/3)^3+27yY^3$. With $t\coloneqq-(Y+E/3)/(3Y)$ one gets $t^3=y$ and $Y=-(E/3)/(1+3t)$. The polynomial $\mathsf{x}^3-y$ in an indeterminate $\mathsf{x}$ is irreducible over $\Ky$, by Eisenstein at $y$, so $\Ky[Y]/(\speLbar)=\Ky(t)=\bbK(t)=\bbL$ is a field. Since $\ringC$ is finite over the local ring $\locO$, every maximal ideal contains $\primeq\ringC$; thus $\primeq\ringC$ is the unique maximal ideal. Further $\speWbar=E(\speYbar+E/3)^2\neq0$ in $\bbL$, and $\speYbar\neq0$, $\speYbar+E/3\neq0$, so $W$, $Y$ and $Y+\alpha_j$ have non-zero residues and are units of the local ring $\ringC$.
+
+(iii) $\theta=y\,\dd/\dd y$ preserves $\locO$, because $\theta\primeq\subset\primeq$ and denominators stay outside $\primeq$. Differentiating $\Lhat(Y)=0$ along $\theta$, since $\Lhat$ is linear in $y$ with coefficient $27Y^3$, gives $\Lhat'(Y)\theta Y+27yY^3=0$. Thus $\theta Y=-27yY^3/\Lhat'(Y)$, and using $27yY^3=-\prod_jq_j$ and (i) this is $-Y\prod_jq_j/W$. The extension is unique because $\Lhat'(Y)$ is a unit. It reduces to the unique extension of $y\,\dd/\dd y$ to $\bbL$, which is $(t/3)\,\dd/\dd t$. Directly: the reduction of $\theta Y$ is $-\speYbar(\speYbar+E/3)/E=(E/3)\,t/(1+3t)^2=(t/3)\,\dd\speYbar/\dd t$.
+
+(iv) $\Lhat$ is linear in $y$ with coefficient $27Y^3$, so $\ringC$ is a domain with fraction field $\bbQ(\alpha,\epsilon,Y)$, where $y=-\prod_j(Y+\alpha_j)/(27Y^3)$. This is the fact used in the transfer step of \cref{prop:gen-osc}.
+
+(v) The roots exist by Hensel's lemma, and they are the $Y_j$ of \cref{lem:gen-Y}. Non-zero polynomials in $y$ are units of $\Kal\lser{y}$, so $\locO$ embeds in $\Kal\lser{y}$, and $\iota_j$ sends $Y\mapsto Y_j$ and commutes with $\theta$. The triple is an isomorphism after the base change because the $Y_j$ are distinct. So the trace is the sum of the $\iota_j$, and $\Tr^{\otimes n}(T)$, which is a multi-trace of an element of the free module $\ringC^{\otimes n}$, lies in $\locO$.
+
+(vi) The trace of a free module commutes with base change. So the ring in use is $\ringC$, a local \'etale $\locO$-algebra, because $\Lhat'(Y)=-W/Y$ is a unit. No roots of the cubic are needed, and Galois invariance is replaced by the trace. At generic $\alpha$, $\ringC$ is not Galois over $\locO$.
+\end{proof}
+
+\subsection{Row \texorpdfstring{$0$}{0} at generic weights}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}
+\label{lem:spe-row0}
+For every colour $i$ at generic $\alpha$, $\Pn_0^{(i)}=\iota_i(\Pn_0)$, with $[z^n]\Pn_0\in\ringC$, where $\Pn_0^{(i)}=\Delta_i^{1/2}\Rm_{0i}$.
+\end{lem}
+
+\begin{proof}
+By \cref{prop:gen-osc}, in the form written there,
+\[
+\mathsf{k}\,(3W(Y_i))^{-1/2}\iota_i(\Phi)=\mathsf{k}\,\Nz(z)\,\Rm_{0i}\qquad\text{in }\Kalh\fps{y}\fps{z},
+\]
+where $\mathsf{k}\,(3W(Y_i))^{-1/2}=\mathsf{k}_0W(Y_i)^{-1/2}$ with $\mathsf{k}_0=\mathsf{k}/\sqrt3$ and $\mathsf{k}^2=-1$. The transfer step of \cref{prop:gen-osc} is what makes the statement on the oscillating integral an identity in this formal ring.
+
+By formal stationary phase in the logarithmic coordinates of \eqref{eq:set-spot}, $\Asy_i=\mathsf{k}_0W_i^{-1/2}\Phi(\alpha,Y_i;z)$, with $\mathsf{k}_0$ a universal constant. The jets of the phase at the critical point of order $m$ are $q_j\delta-Y/3^{m-1}$, polynomial in $(\alpha,Y)$, and $\Hess^{-1}=(3/W)\,\mathrm{adj}\,\Hess$. The $z^n$ coefficient is a finite sum over at most $2n$ factors $\Jet_m$ (\cref{lem:row-analytic}), and it depends on $y$ only through $Y$. This remains valid at $y=0$, where $q_i=0$, because $W_i(0)\neq0$.
+
+With $\Delta_i=3\epsilon_1\epsilon_2W_i$ and $\Nz(z)=\sqrt{\epsilon_1\epsilon_2}\,\Theta(-z/\epsilon_1)\Theta(-z/\epsilon_2)$, and using $\Theta(x)\Theta(-x)=1$, we get
+\[
+\Delta_i^{1/2}\Rm_{0i}=\sqrt3\,(\mathsf{k}_0/\mathsf{k})\,\Theta(z/\epsilon_1)\Theta(z/\epsilon_2)\,\iota_i(\Phi).
+\]
+The $z^0$ term, $\Delta_i^{1/2}\Psi_{0i}=1$, gives $\sqrt3\,\mathsf{k}_0/\mathsf{k}=1$. All branch choices cancel, so $\Pn_0^{(i)}=\iota_i(\Pn_0)$, with $[z^n]\Pn_0\in\ringC$ by \cref{lem:spe-ring}(ii).
+
+Note that $h_{\wts_i}$ and $\Rt$ are each singular on the diagonal $\alpha_0=\alpha_1=\alpha_2$, while their product is not: $h_{\wts_i}=h_{(3\alpha_i,\alpha_j-\alpha_i,\alpha_k-\alpha_i)}\,h_{(-\epsilon_1,-\epsilon_2)}$, and the Gamma part is absorbed in $\Phi$.
+\end{proof}
+
+\subsection{Rows \texorpdfstring{$1$}{1}, \texorpdfstring{$2$}{2} and the pairing}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}
+\label{lem:spe-pair}
+At generic $\alpha$ the following hold.
+\begin{enumerate}
+\item $\Pn_1=\Qa/A$ and $\Pn_2=D^{-1}A^{-1}\big[\opD\Qa-zF\Qa-e_1(\alpha)\Ey\,\Qa\big]$, with $\Qa$ and $\opD$ evaluated at the colour by $\iota_i$.
+\item The identity \eqref{eq:spe-pair} holds at $\sfF=F$.
+\item Let $n_{M,b}\coloneqq[\psi^Mw^b]\speNij(\psi,w)$, where
+\[
+\speNij(\psi,w)\coloneqq\langle\Pn^{(i)}(-\psi),\Pn^{(j)}(-w)\rangle.
+\]
+Then $\Edge_{ij}(a,b)=-\sum_{k=0}^{b}(-1)^kn_{a+k+1,b-k}$. This defines a tensor in $\ringC\otimes_{\locO}\ringC[\sfF]$, and no idempotent is needed. The tensor of $\Edge(a,b)$ equals the flip of the tensor of $\Edge(b,a)$ in $\ringC\otimes_{\locO}\ringC[\sfF]$.
+\item With $\sfF$ an indeterminate the $\sfF$-term of $\langle\Pn(z),\Pn(w)\rangle$ carries the factor $(z+w)$. So the symplectic identity and the delta form of the edge hold with $\sfF$ free.
+\item Parts \textup{(a)} and \textup{(c)} of \cref{thm:spe-main} hold at generic $\alpha$, with $|\Edg(\Gamma)|\leq3g-3$ bounding $\deg_{\sfF}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) By \cref{thm:gen-main}(A2), $\Rm_1=(z\theta+Y)\Rm_0/A$ and $\Rm_2=(z\theta+Y-e_1(\alpha)\Ey)\Rm_1/D$, the row recursion derived in \cref{lem:gen-unit}. Put $\Pn_a\coloneqq\Delta^{1/2}\Rm_a$. Since $\Delta=3\epsilon_1\epsilon_2W$, one has $\Delta^{1/2}(z\theta+Y)\Delta^{-1/2}=\opD$. So $\Pn_1=\Qa/A$, and $\Pn_2=D^{-1}\big(\opD-e_1(\alpha)\Ey\big)(\Qa/A)$; since $\theta A^{-1}=-A^{-1}F$, this is the stated formula.
+
+(ii) By \cref{prop:row-modrel}, $1/(AD)=\xi A$ and $e_1(\alpha)\Ey=(e_1(\alpha)X/2)(A^{-2}-1)$. The values
+\[
+\eta^{11}=-3e_1(\alpha)\epsilon_1\epsilon_2,\qquad\eta^{12}=-3\epsilon_1\epsilon_2,\qquad\eta^{22}=0
+\]
+follow from $\eta_{00}=1/(3e_3(\alpha)\epsilon_1\epsilon_2)$, $\eta_{12}=-1/(3\epsilon_1\epsilon_2)$, $\eta_{22}=e_1(\alpha)/(3\epsilon_1\epsilon_2)$, which also follow from the residue formula. The $A^{-2}$ terms cancel between $\eta^{11}\Pn_1\Pn_1'$ and $\eta^{12}(\Pn_1\Pn_2'+\Pn_2\Pn_1')$. This gives \eqref{eq:spe-pair}. It is the frame-free reason for the cancellation of $A$ in terms without legs.\draftnote{BS labels: prop:fingenTLE, eq:dFR; agrees with eq:dFR}
+
+(iii) The series $\speNij(\psi,w)$ satisfies $\speNij(-w,w)=\delta_{ij}\Delta_i$, by symplecticity, \cref{lem:gen-unit}. Hence
+\[
+\frac{\delta_{ij}\Delta_i-\speNij(\psi,w)}{\psi+w}=-\sum_{M\geq1,\,b}n_{M,b}\,w^b\,\frac{\psi^M-(-w)^M}{\psi+w},
+\]
+and the $M=0$ terms, which contain $\delta_{ij}$, never enter. This gives the telescoped formula, a tensor in $\ringC\otimes_{\locO}\ringC[\sfF]$ by \eqref{eq:spe-pair} and \cref{lem:spe-row0}. Fix an orientation of every edge to define $\Tsum_{\Gamma,\mathrm{dec}}$. The map $\ringC\otimes_{\locO}\ringC\to\Kal\lser{y}^{9}$ given by the $\iota_i\otimes\iota_j$ is injective, since $\ringC\otimes_{\locO}\ringC$ is free over $\locO$ with basis $Y^a\otimes Y^b$, $0\leq a,b\leq2$, $\locO$ embeds in $\Kal\lser{y}$, and the matrix $(Y_i^aY_j^b)$ is the Kronecker square of a Vandermonde matrix, invertible because the $Y_i$ are distinct. Hence the tensor of $\Edge(a,b)$ equals the flip of the tensor of $\Edge(b,a)$ in $\ringC\otimes_{\locO}\ringC[\sfF]$, $\Tsum_{\Gamma,\mathrm{dec}}$ does not depend on the orientation, and this passes to $\bbL\otimes_{\Ky}\bbL$ under $\redC$. For a loop, apply the multiplication $\ringC\otimes_{\locO}\ringC\to\ringC$.
+
+(iv) The telescoped $\Edge_{ij}(a,b)$ is defined for $\sfF$ an indeterminate, and the delta form holds there too. The $\sfF$-part of $\sum_{M+b=n}(-1)^b[z^Mw^b]\langle\Pn(z),\Pn(w)\rangle$ is
+\[
+3\epsilon_1\epsilon_2\,\xi\,\sfF\sum_{p+r=n-1}\big[(-1)^r+(-1)^{r+1}\big]\Qa_p\otimes\Qa_r=0.
+\]
+Equivalently, the $\sfF$-term of $\langle\Pn(z),\Pn(w)\rangle$ carries the factor $(z+w)$. So symplecticity and the delta form hold with $\sfF$ free. No $\theta F$ occurs in terms without legs, so \cref{sec:fra} may treat $\sfF$ as a free symbol.
+
+(v) $\Delta^{g_v-1}$ is in $\ringC$ (by which we mean that it is $\iota$ of an element of $\ringC$), including at $g_v=0$, because $\Delta$ is a unit. Moreover $\Dil(d)=(-1)^d[z^{d-1}]\Pn_0$. The decoration sum is finite, since $\sum a+\sum d=\dim$ and $d\geq2$. This gives (a) and (c) of \cref{thm:spe-main} at generic $\alpha$; each edge is linear in $\sfF$, and $|\Edg(\Gamma)|\leq3g-3$.
+\end{proof}
+
+\subsection{Reduction of the rows}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}
+\label{lem:spe-red}
+Let $v=3/(E+3Y)$. At each $z$-order,
+\[
+\redC(\Phi)=\Theta(-z/E)\,\Srow(v,z),\qquad\redC(\Pn_0)=\hb\,\Srow(v,z).
+\]
+Further $\redC(\opD)=\opDb$, $\redC(\eta^{ab})=\speEtab^{ab}$, and $\redC$ commutes with $\theta$. Thus $\redC^{\otimes\Ver(\Gamma)}(\Tsum_{\Gamma,\mathrm{dec}})$ is the coloured term on $\TF$, whose telescoped edge equals the delta-form edge.
+\end{lem}
+
+\begin{proof}
+$\redC(\Phi)$ is a power series in $z$ with coefficients in $\bbK[Y,\speWbar^{-1}]$. We compute it in a chart in which the phase splits. In this proof $\spechart_j\coloneqq q_j^{1/3}$, where $q=(q_0,q_1,q_2)$ are the coordinates of the superpotential \eqref{eq:set-spot}, and $s_n\coloneqq e_n(\spechart)$; below $q$ without index is the variable of \cref{lem:row-SP5}.
+
+\emph{The chart.} On $\TF$, in the coordinates $\spechart_j$ and $s_n$, the critical point of colour $0$ is $\spechart=c'(1,\omega,\omega^2)$, with distinct entries, so $s$ is a local biholomorphism there, and \cref{lem:row-SP1} applies. With $\kappa\coloneqq3+1/t=Ev$, the phase is
+\[
+s_1^3-3s_1s_2+\kappa s_3-E\log s_3,
+\]
+which splits exactly, with critical point $s_1=s_2=0$, $s_3=1/v$ and block-diagonal Hessian (\cref{lem:row-SP4}). The measure is $\dd\Omega=\frac13\dd^3x=9\,\dd s/(s_3\mathrm{V})$, where $x_j=\log q_j$, $\mathrm{V}$ is the Vandermonde determinant of $\spechart$, $\mathrm{V}^2=\Disc$, and
+\[
+\frac{\Disc}{-27s_3^2}=1-\frac23\frac{s_1s_2}{s_3}+\frac{4}{27}\frac{s_1^3}{s_3}+\frac{4}{27}\frac{s_2^3}{s_3^2}-\frac{1}{27}\frac{s_1^2s_2^2}{s_3^2}.
+\]
+So only integer powers of $1/s_3$ occur, and $1/\mathrm{V}$ contributes one factor of $1/s_3$ times a series in these monomials.
+
+\emph{The $(s_1,s_2)$-block.} The only non-zero contraction is $\langle s_1s_2\rangle=z/3$. All monomials in the expansion have weight $0$ for $\mathrm{wt}(s_n)=n$. So a term $s_1^{\mathsf{m}}s_2^{b}s_3^{-n}$ of the amplitude, with $k$ insertions of $s_1^3/z$, has $\mathsf{m}+2b=3n$ and needs $\mathsf{m}+3k=b$. It carries $z^{b-k}$, and $n=b-k$. Put $l\coloneqq b-k$. The total of the $(s_1,s_2)$-block is
+\[
+\sum_lr^{\mathrm{W}}_lz^ls_3^{-l-2}\,\dd s_3,
+\]
+up to the constant Gaussian factor. This defines the Wick numbers $r^{\mathrm{W}}_l$, with $r^{\mathrm{W}}_0=1$ after normalisation.
+
+\emph{The $s_3$-integral.} Substitute $s_3=-q/\kappa$. The phase becomes $-(q+E\log q)$ up to a constant, and $s_3^{-l-2}\dd s_3=(-\kappa)^{l+1}q^{-l-2}\dd q$. So \cref{lem:row-SP5} applies with its parameters $a=-E$, $\beta=-l-1$, giving $(-E)^{-l-3/2}\,\Theta(-z/E,-l-1)$, where $\Theta(w,-m)=\Theta(w)/\prod_{j\leq m}(1-jw)$. The factors combine as $(-\kappa)^{l+1}(-E)^{-l-1}=v^{l+1}$, because $\kappa/E=v$, with no $l$-dependent sign. So the $l$-th term is
+\[
+r^{\mathrm{W}}_lz^lv^{l+1}\,\frac{\Theta(-z/E)}{\prod_{j=1}^{l+1}(1+jz/E)},
+\]
+up to a constant, and
+\[
+\Asy=K_0\,\Theta(-z/E)\,v\,\speSW(v,z),\qquad\speSW(v,z)\coloneqq\sum_{l\geq0}r^{\mathrm{W}}_l\frac{(vz)^l}{\prod_{j=1}^{l+1}(1+jz/E)},
+\]
+with $K_0$ independent of $z$ and $y$.
+
+\emph{The recursion.} By \cref{lem:row-pfint}, $\re^{\mathsf{u}/z}\Asy$ solves the equivariant Picard--Fuchs equation \eqref{eq:set-pf}. The series $\Theta(-z/E)$ is invertible and depends on $z$ only, so $\Pconj(v\,\speSW)=0$. \Cref{cor:row-unique} with $r^{\mathrm{W}}_0=1$ gives $r^{\mathrm{W}}_l=r_l$ for all $l$.
+
+\emph{Conclusion.} With $\speWbar^{-1/2}$ proportional to $v$ and $\Phi_0=1$, we obtain $\redC(\Phi)=\Theta(-z/E)\,\Srow(v,z)$. This is an identity in the single rational variable $Y$, with $v=3/(E+3Y)$, so it holds at all three roots with no chart or monodromy discussion. Hence
+\[
+\redC(\Pn_0)=\Theta(z/\epsilon_1)\Theta(z/\epsilon_2)\Theta(-z/E)\,\Srow=\hb\,\Srow,
+\]
+and that the factor depending on $z$ only is $1$ is now a consequence: the constants enter only through \cref{prop:gen-osc}. Moreover $\redC(\opD)=\opDb$, since $\redC(W)=E(Y+E/3)^2$ and $\redC(\Delta)=\Delta_i$; and $\redC(\eta^{ab})=\speEtab^{ab}$. By \cref{lem:spe-ring}, $\redC$ commutes with $\theta$. Thus $\redC^{\otimes\Ver(\Gamma)}(\Tsum_{\Gamma,\mathrm{dec}})$ is the coloured term on $\TF$. Its telescoped edge equals the delta-form edge by \cref{prop:row-sympl}, which is proved from the closed form alone, and \cref{lem:spe-pair}.
+\end{proof}
+
+\begin{rmk}[Analytic form]
+\label{rmk:spe-analytic}
+For $y_0\notin\{0,-1/27\}$ and $(y,\alpha)$ near $(y_0,\alpha^*)$, the root $Y$ near $Y_i$ is analytic, since $\Lhat'=-W/Y\neq0$, and all factors are rational in $(\alpha,\epsilon,y,Y)$ with no pole there, at every $z$-order.
+\end{rmk}
+
+\subsection{The constant term}
+
+\begin{prop}\genusstatus{AI-proposed, unchecked}
+\label{prop:spe-const}
+Let $g\geq2$, let $H'$ be the non-equivariant hyperplane class of $\bbP^2$ and $\mathrm{P}(H')$ as in \cref{thm:spe-main}\textup{(b)}. Then
+\[
+\GW_{g,0}^{\TF}=\int_{\Mbar_g}\big[9\lambda_g\lambda_{g-2}\mathrm{P}(0)-3\lambda_g\lambda_{g-1}\mathrm{P}'(0)\big].
+\]
+Moreover $\epsilon_1\epsilon_2\GW_{g,0}^{\TF}$ is a polynomial, with no $1/E$. One has $\GW_{2,0}^{\TF}=E^2/640$ and $\GW_{3,0}^{\TF}=9E^4\mathrm{I}_3=E^4/161280$.
+\end{prop}
+
+\begin{proof}
+By \cref{prop:gen-poly}, $\GW_{g,0}^{\TF}$ is the integral over $\Mbar_g\times\bbP^2$ of $c_{\mathrm{top}}(\Hdg^\vee\boxtimes T_{\bbP^2})\,\mathrm{P}(H')$. Modulo $H'^3$,
+\[
+c_{\mathrm{top}}(\Hdg^\vee\boxtimes T_{\bbP^2})=-3H'\lambda_g\lambda_{g-1}+9H'^2\lambda_g\lambda_{g-2},
+\]
+using, for the Chern roots $x_1,x_2$ of $T_{\bbP^2}$, the relations $x_1+x_2=3H'$, $x_1x_2=3H'^2$, together with $\lambda_g^2=0$ and $\lambda_{g-1}^2=2\lambda_g\lambda_{g-2}$, which follow from $c(\Hdg)c(\Hdg^\vee)=1$ by \cite[(5.4), (5.5)]{Mum83} and \cite[Section~2, before (22)]{FP00}. Integration over $\bbP^2$ gives the formula.
+
+In $\mathrm{P}(H')$ the term with $1/(E-3H')$ carries $\lambda_g$, so it dies against $\lambda_g$ in the prefactor. So $\epsilon_1\epsilon_2\GW_{g,0}^{\TF}$ is a polynomial, with no $1/E$.
+
+For $g=2$ this gives $9E^2\int\lambda_1\lambda_2=E^2/640$.
+
+For $g=3$, put $\mathsf{v}=E-3H'$ and $\mathsf{p}=\epsilon_1\epsilon_2$. Modulo $\lambda_3$ and with $\lambda_1^2=2\lambda_2$,
+\[
+\mathrm{P}(H')=\big(\mathsf{v}^2-\lambda_1\mathsf{v}+\lambda_2\big)\big(\mathsf{p}^2+\lambda_1\mathsf{p}E+\lambda_2E^2+\cdots\big),
+\]
+so the degree-$2$ part of $\mathrm{P}(0)$ is $\lambda_2(E^2-\mathsf{p})^2$, and the degree-$1$ part of $\mathrm{P}'(0)$ is $-3\lambda_1(2E^2\mathsf{p}-\mathsf{p}^2)$. Hence
+\[
+\GW_{3,0}^{\TF}=9\mathrm{I}_3\big[(E^2-\mathsf{p})^2+2E^2\mathsf{p}-\mathsf{p}^2\big]=9\mathrm{I}_3E^4,
+\]
+with $\mathrm{I}_3=\int\lambda_1\lambda_2\lambda_3=1/1451520$, by \cite[Theorem~4]{FP00} and $\lambda_{g-1}^2=2\lambda_g\lambda_{g-2}$.
+\end{proof}
+
+\subsection{The numerator and denominator step}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}
+\label{lem:spe-numden}
+Let $g\geq2$. Then $\sF_g^{\TF}=\Tsumb_g(F)$ in $\bbK\lser{y}$, and $\Tsumb_g[\sfF]$ of \cref{sec:fra} is the reduction modulo $\primeq$ of the polynomial $\Tsum_g$, coefficientwise in $\sfF$.
+\end{lem}
+
+\begin{proof}
+Write $\Tsum_g=\sum_k(\mathsf{p}_k/\mathsf{den})\,\sfF^k$, with $\mathsf{p}_k,\mathsf{den}\in\ringA$ and $\mathsf{den}\notin\primeq$; this is possible by \cref{thm:spe-main}(c). By \cref{thm:gen-main} and \cref{lem:spe-pair}, in $\Kal\fps{y}$,
+\[
+\mathsf{den}\,\sF_g^{\Tmax}=\sum_k\mathsf{p}_kF^k.
+\]
+Every term lies in the subring $\locOal\fps{y}$: indeed $\sF_g^{\Tmax}=\sum\cQ(y)^d\GW_{g,d}^{\Tmax}$, with $\cQ(y)\in y\bbQ\fps{y}$ the mirror map, independent of $\alpha$, and $\GW_{g,d}^{\Tmax}\in\locOal$ by \cref{prop:gen-poly}; $F\in\bbQ\fps{y}$; and $\mathsf{p}_k$, $\mathsf{den}$ are polynomial. Apply the ring map $\redn$:
+\[
+\redn(\mathsf{den})\,\sF_g^{\TF}=\sum_k\redn(\mathsf{p}_k)F^k
+\]
+in the domain $\bbK\fps{y}$. Now $\redn(\mathsf{den})=\mathsf{den}|_{\alpha^*}\neq0$ in $\bbK[y]$, because $\mathsf{den}\notin\primeq$. Dividing in $\bbK\lser{y}$ gives $\sF_g^{\TF}=(\text{reduction of }\Tsum_g)(F)$. By \cref{lem:spe-ring} and \cref{lem:spe-red} the reduction of $\Tsum_g$ is the colour sum on $\TF$, also coefficientwise in the indeterminate $\sfF$, so the reduction of the polynomial is $\Tsumb_g[\sfF]$.
+
+$\redn(\mathsf{den})(0)$ may vanish, and this does no harm. Model case: the norm of $W$ is
+\[
+\mathrm{Norm}_{\ringC/\locO}(W)=\prod_iW(Y_i)=-e_3(\alpha)\,\xi^2\prod_{i<j}(Y_i-Y_j)^2.
+\]
+At $y=0$ it is $-e_3(\alpha)\prod_{i<j}(\alpha_i-\alpha_j)^2$, while on $\TF$ it equals $E^9y^2/\xi^2$, because $\prod_i(Y_i+E/3)=yE^3/\xi$; this vanishes at $y=0$.
+\end{proof}
+
+\begin{rmk}[Why no limit is taken]
+\label{rmk:spe-nolimit}
+Coefficientwise in $y$, a colourwise factor blows up on the diagonal. At fixed $y_0$ the $y$-series of $Y_j(y)$ diverges for $\alpha$ near $\alpha^*$, because the branch points of $Y(y)$ tend to $y=0$. Hence neither a pointwise limit of the $y$-series nor a colourwise limit is valid. The identity is proved by a ring map, with no topology.
+\end{rmk}
+
+\subsection{Proof of part (e): coefficient ring and transcendence}
+
+\begin{proof}[Proof of the coefficient ring in \cref{thm:spe-main}\textup{(d), (e)}]
+Write $\mathscr{O}_{\omega}\coloneqq\bbK(\omega)[y^{\pm1},\xi^{-1}]$. The coefficients $[z^n]$ of $\Pb_0$, $\Qb$, $\opDb\Qb$ are Laurent polynomials in $v$, because $\hb$ has coefficients in $\bbK$, $Y_i=1/v_i-E/3$ and $\theta v_i=(3/E-v_i)/3$; hence they lie in $\bbK[t^{\pm1},(1+3t)^{\pm1}]$. The coefficients of the powers of $\sfF$ in the coloured terms lie in $\bbK(\omega)[t^{\pm1},(1+3\omega^it)^{-1}]$, which is integral over $\mathscr{O}_{\omega}$, because $t^{-1}=t^2/y$ and $(1+3\omega^it)^{-1}=\prod_{k\neq i}(1+3\omega^kt)/\xi$. The colour sum of each such coefficient lies in $\Ky$, by \cref{lem:spe-ring}. The ring $\mathscr{O}_{\omega}$ is integrally closed, so the sum lies in $\mathscr{O}_{\omega}\cap\Ky$. The extension $\bbK(\omega)/\bbK$ is a constant-field extension, so denominators are detected by the $y$-adic and $(1+27y)$-adic valuations over $\bbK[y]$: a gcd computed over $\bbK$ stays a gcd over $\bbK(\omega)$. Hence $\mathscr{O}_{\omega}\cap\Ky=\bbK[y^{\pm1},\xi^{-1}]$.
+\end{proof}
+
+\begin{prop}\genusstatus{AI-proposed, unchecked}
+\label{prop:spe-transc}
+$F$ is transcendental over $\bbC(y)$. It is therefore transcendental over $\bbC(t)$, and over $\Ky$. So the polynomial in $\sfF$ of \cref{thm:spe-main}\textup{(e)} is unique.
+\end{prop}
+
+\begin{proof}
+No modularity is used. The function $A$ solves $\Ltwo=\xi\theta^2+27y\theta+6y$, which has exponents $(0,0)$ at $\xi=0$. Let $\wcf$ be the analytic solution with $\wcf(0)=1$. The local solutions are spanned by $\wcf$ and $\wcf\log\xi+\varphi_1$, with $\varphi_1$ analytic. Since $a_d27^{-d}\sim\sqrt3/(2\pi d)>0$, we have $A\to+\infty$ as $y\to-1/27$ from the right. So
+\[
+A=\mathsf{a}\,\wcf+\mathsf{b}\,(\wcf\log\xi+\varphi_1),\qquad\mathsf{b}\neq0.
+\]
+Explicitly $\mathsf{b}=-\sqrt3/(2\pi)$, from \eqref{eq:fra-log} under the exchange $\upsilon\mapsto1-\upsilon$. Continuing $n$ times around $\xi=0$ gives $A_n=A+2\pi\ri n\mathsf{b}\wcf$. If $F$ were algebraic over $\bbC(y)$, it would have finitely many branches, so $\theta\log(A_n/A_m)=0$ for some $n\neq m$, that is, $A_n=\mathsf{c}A_m$ with $\mathsf{c}$ constant. For $\mathsf{c}=1$ this contradicts $\mathsf{b}\wcf\neq0$. For $\mathsf{c}\neq1$ it makes $A$ proportional to $\wcf$, contradicting $\mathsf{b}\neq0$. Hence $F$ is transcendental over $\bbC(y)$.
+
+So $F$ is transcendental over $\bbC(t)$, since $t$ is algebraic over $\bbC(y)$. A polynomial relation over $\Ky$ gives, after clearing denominators and taking the coefficient of each monomial in $\epsilon_1,\epsilon_2$, a relation over $\bbC(y)$. So $F$ is transcendental over $\Ky$, and the polynomial in $\sfF$ is unique.
+\end{proof}
+
+\Cref{prop:spe-transc} is all that is needed on terms without legs. The algebraic independence of $F-(X-1)/3$, $X$ and $A$, given by \cite[Lemma~4.2]{BFGW21}, gives more, namely the independence of $A$ and $F$, and it is needed only for statements involving $A$ (\cref{lem:fra-cfwell}).
+
+\begin{rmk}
+\label{rmk:spe-cfgraph}
+The rows of \cref{def:set-rows} depend on $\cone$ only as in \eqref{eq:spe-pair} with $\sfF\mapsto\Fc$; this is step (S0) of the proof of \cref{prop:row-sympl}, for the same decomposition of the second row. So $\Cf$ acts graph by graph as $\sfF\mapsto\Fcf$.
+\end{rmk}
+
+\subsection{End of the proof}
+
+\begin{proof}[Proof of \cref{thm:spe-main}]
+Part (a) is \cref{lem:spe-ring}, \cref{lem:spe-row0}, \cref{lem:spe-pair} and \cref{lem:spe-red}. Part (b) is \cref{prop:gen-poly} and \cref{prop:spe-const}. Part (c) is \cref{lem:spe-pair}(v). Part (d) is \cref{lem:spe-numden}; the location of the coloured terms and of the colour sum was proved above. Part (e) follows from the coefficient ring, \cref{lem:spe-pair}(v) for the degree bound and \cref{prop:spe-transc} for uniqueness. Colouring by colouring, each coloured coefficient lies in $\bbK(\omega)(t)$, and $F$ is transcendental over this field, by \cref{prop:spe-transc} and the coefficient extraction in $\epsilon_1,\epsilon_2$ used there.
+\end{proof}
+
+\begin{rmk}[Specific features of rank $3$]
+\label{rmk:spe-rank3}
+The cube roots $t=y^{1/3}$ occur only in the residue field $\bbL$. The complex-conjugate regular colours occur in part (d) as $t_1,t_2$, conjugate when $t$ and $\epsilon$ are real, with no special treatment, since the sum is a trace. The three idempotents at generic $\alpha$ correspond to $\iota_0,\iota_1,\iota_2$. The product at $\cQ=0$ on $\TF$ is not semisimple: the constants are fixed at generic $\alpha$ (\cref{thm:gen-const}) and then carried by the ring map, and \cite{Tel12} is not applied on $\TF$. The triple root at $y=0$ is visible only as $t$-poles of coloured terms, which cancel in the total as a corollary of part (d), since the left side is in $\bbK\fps{y}$. Regularity at $y=0$ is not an input.
+\end{rmk}

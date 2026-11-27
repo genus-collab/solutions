@@ -1,0 +1,11 @@
+z^0: 0
+z^1: 0
+z^2: 0
+z^3: NONZERO (4 s-coefficients, e.g. s^1: 4/9)
+z^4: NONZERO (5 s-coefficients, e.g. s^1: 44/81)
+z^5: NONZERO (6 s-coefficients, e.g. s^5: -32/2187)
+z^6: NONZERO (7 s-coefficients, e.g. s^5: 5344/19683)
+z^7: NONZERO (8 s-coefficients, e.g. s^1: -508/2187)
+z^8: NONZERO (9 s-coefficients, e.g. s^4: -1199476/531441)
+z^9: NONZERO (10 s-coefficients, e.g. s^9: -18067840/129140163)
+PF FAILS

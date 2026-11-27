@@ -1,0 +1,5 @@
+T_F eps 3 7 Y -2/3 Phi==Theta(-z/E)S: [True, True, True, True, True, True, True, True, True, True] control Theta(+): [True, False, False, False, False, False, False, False, False, False] 20.2s
+T_F eps 2 -5/3 Y 5/7 Phi==Theta(-z/E)S: [True, True, True, True, True, True, True, True, True, True] control Theta(+): [True, False, False, False, False, False, False, False, False, False] 22.6s
+y=0 colour 0 Phi==prod Theta(-z/a): [True, True, True, True, True]
+y=0 colour 1 Phi==prod Theta(-z/a): [True, True, True, True, True]
+y=0 colour 2 Phi==prod Theta(-z/a): [True, True, True, True, True]

@@ -1,0 +1,41 @@
+\documentclass[11pt, reqno]{amsart}
+
+% Abridged version of the paper built from main.tex. Sections are in summary/.
+\input{summary/preamble_summary}
+\input{summary/macros_summary}
+
+%-------------------------------------------------------------------------------
+% Title
+
+\title[Conifold gap for local $\bbP^2\times\bbC^2$ (abridged version)]{Conifold gap and regularity of stable graphs for local \texorpdfstring{$\bbP^2\times\bbC^2$}{P2 x C2}}
+\author{The GENUS collaboration}
+\genusproject{solutions/refined-gap-local-p2 (abridged)}
+\thanks{This is the abridged version of the long document with the same title (output/main.pdf of this GENUS project), referred to below as \textup{[L]}. It contains the statements and the key points of the argument; complete proofs of the statements on local $\bbP^2$ are in the long version.}
+
+\begin{document}
+
+\begin{abstract}
+We study the refined Gromov--Witten theory of $\KPtwo\times\bbC^2$ on the fibrewise torus, which acts trivially on $\bbP^2$, with parameters $\epsilon_1,\epsilon_2$ satisfying $\epsilon_1\epsilon_2(\epsilon_1+\epsilon_2)\neq 0$. In every genus $g\geq 2$ the generating series, after the conifold substitution in its polynomial form, equals an explicit sum over stable graphs with a triple Hodge class at the vertices. Each graph with at least one edge is analytic at the conifold point, for each colouring, and the polar part of the graph with one vertex is the single term $(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)\,\tc^{2-2g}$. Together these give the refined conifold gap on this torus. The regularity statement uses the Mari\~no--Vafa formula and does not use the mirror theorem. The identification with Gromov--Witten theory uses the mirror theorem for toric stacks and Teleman's classification at generic weights, followed by a specialisation with no limit in the weights. No topological recursion on the mirror curve is used. The counterpart for the resolved conifold is also recorded; its regularity statement is conditional on a leaf-structure statement whose proof is given in neither version. This abridged version states the results with their hypotheses and gives the key points of the argument; the proofs are sketched, and the complete proofs of the results on local $\bbP^2$ are in the long version of the paper.
+\end{abstract}
+
+\maketitle
+\genusdisclaimer
+
+\input{summary/s01a_intro}
+\input{summary/s01b_intro}
+\input{summary/s02a_setup}
+\input{summary/s02b_setup}
+\input{summary/s03_rows}
+\input{summary/s04_generic}
+\input{summary/s05_specialisation}
+\input{summary/s06_frame}
+\input{summary/s07_leaf}
+\input{summary/s08_vanishing}
+\input{summary/s09_value}
+\input{summary/s10_regularity}
+\input{summary/s11_final}
+
+\bibliographystyle{amsalpha}
+\bibliography{refs}
+
+\end{document}

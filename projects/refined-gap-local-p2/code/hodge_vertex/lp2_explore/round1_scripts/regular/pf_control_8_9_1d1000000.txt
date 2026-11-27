@@ -1,0 +1,12 @@
+CONTROL: S_8 += 1/1000000 s^9
+[z^0] q^3 Op S = 0
+[z^1] q^3 Op S = 0
+[z^2] q^3 Op S = 0
+[z^3] q^3 Op S = 0
+[z^4] q^3 Op S = 0
+[z^5] q^3 Op S = 0
+[z^6] q^3 Op S = 0
+[z^7] q^3 Op S = 0
+[z^8] q^3 Op S = 0
+[z^9] q^3 Op S = (-1/125000) s^7 + (1/12500) s^8 + (-1/3750) s^9 + (1/3375) s^10
+PF/WKB identity through z^9: FAILS

@@ -1,0 +1,28 @@
+g=3 eps=(3,7) t=1/5 F=0: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+   value -16125042431030933/35310527078400000  graphs differ between frames: 42 of 42
+g=3 eps=(3,7) t=1/5 F=1: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+g=3 eps=(3,7) t=1/5 F=-2/3: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+g=3 eps=(3,7) t=1/5 F=5/3: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+g=3 eps=(3,7) t=1/5 F=11/7: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+g=3 eps=(3,7) t=1/5 F=-7/2: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+g=3 eps=(3,7) t=1/5 F=2/9: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+g=3 eps=(1,1) t=-2/7 F=0: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+   value -17730956722476721/44072289891372960  graphs differ between frames: 42 of 42
+g=3 eps=(1,1) t=-2/7 F=1: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+g=3 eps=(1,1) t=-2/7 F=-2/3: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.0s]
+g=3 eps=(1,1) t=-2/7 F=5/3: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.0s]
+g=3 eps=(1,1) t=-2/7 F=11/7: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.0s]
+g=3 eps=(1,1) t=-2/7 F=-7/2: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [1.9s]
+g=3 eps=(1,1) t=-2/7 F=2/9: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.0s]
+g=3 eps=(5/2,-3/7) t=3/11 F=0: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.1s]
+   value -16884226523847880970133655487/13836163644929099411030016000000  graphs differ between frames: 42 of 42
+g=3 eps=(5/2,-3/7) t=3/11 F=1: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.1s]
+g=3 eps=(5/2,-3/7) t=3/11 F=-2/3: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.1s]
+g=3 eps=(5/2,-3/7) t=3/11 F=5/3: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.2s]
+g=3 eps=(5/2,-3/7) t=3/11 F=11/7: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.1s]
+g=3 eps=(5/2,-3/7) t=3/11 F=-7/2: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.1s]
+g=3 eps=(5/2,-3/7) t=3/11 F=2/9: pt-hodge=0,0 pt-stored=0,0 | ctrl hodge(s=+1 rows)-pt nonzero=True, pt(h^-1)-pt nonzero=True [2.1s]
+
+real	0m42.047s
+user	0m0.061s
+sys	0m0.108s

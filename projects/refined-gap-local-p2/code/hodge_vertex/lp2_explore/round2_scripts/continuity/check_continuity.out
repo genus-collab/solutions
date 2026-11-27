@@ -1,0 +1,11 @@
+(A) generic-alpha identities
+  alpha=(2/3,5/7,-11/5) Y=3/4: crit=ok  det-W/3=0  W+Y*Lhat'=0
+  alpha=(1,2,7) Y=-1/3: crit=ok  det-W/3=0  W+Y*Lhat'=0
+  alpha=(7/3,7/3,7/3) Y=-5/2: crit=ok  det-W/3=0  W+Y*Lhat'=0
+(B) T_F at c0=1/5, E=7: K*Hess = I exact: yes
+  omega1 Taylor coeffs in t=c-c0 (orders 0..4): -1/36, -25/63, 125/63, -625/63, 3125/63
+  omega1 = -3/(4E) + 1/(9Ec) to order 8: yes
+  Asym S0(1+z omega1): z^0:0  z^1:0  z^2:0
+  control +const (allowed): z^0:0  z^1:0  z^2:0
+  control +c (should fail z^2): z^0:0  z^1:0  z^2:NONZERO
+  control S0=1/q^2 (should fail z^1): z^0:0  z^1:NONZERO  z^2:NONZERO

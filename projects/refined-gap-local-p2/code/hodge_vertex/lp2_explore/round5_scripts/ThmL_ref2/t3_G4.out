@@ -1,0 +1,44 @@
+string stripping agrees with direct on 9 cases
+k0 2 R () n 8 |mu| 2 value 0 [('resp_ok', True)] t 0.1
+k0 2 R () n 9 |mu| 2 value 0 [] t 0.1
+k0 3 R () n 8 |mu| 3 value 0 [('resp_ok', True)] t 0.1
+k0 3 R () n 9 |mu| 3 value 0 [] t 0.1
+k0 4 R () n 8 |mu| 4 value 0 [('resp_ok', True)] t 0.7
+k0 4 R () n 9 |mu| 4 value 0 [] t 0.7
+k0 5 R () n 8 |mu| 5 value 0 [('resp_ok', True)] t 1.1
+k0 5 R () n 9 |mu| 5 value 0 [] t 1.2
+k0 6 R () n 8 |mu| 6 value 0 [('resp_ok', True)] t 2.9
+k0 6 R () n 9 |mu| 6 value 0 [] t 3.3
+k0 2 R (2,) n 8 |mu| 4 value 0 [] t 3.4
+k0 2 R (2,) n 9 |mu| 4 value 0 [] t 3.4
+k0 2 R (3,) n 8 |mu| 5 value 0 [('resp_ok', True)] t 3.4
+k0 2 R (3,) n 9 |mu| 5 value 0 [] t 3.4
+k0 2 R (9,) n 8 |mu| 11 value 0 [('resp_ok', True)] t 3.4
+k0 2 R (9,) n 9 |mu| 11 value 0 [] t 3.4
+k0 3 R (5,) n 8 |mu| 8 value 0 [('resp_ok', True)] t 3.5
+k0 3 R (5,) n 9 |mu| 8 value 0 [] t 3.5
+k0 5 R (5,) n 8 |mu| 10 value 0 [] t 7.5
+k0 5 R (5,) n 9 |mu| 10 value 0 [] t 7.8
+k0 4 R (3,) n 8 |mu| 7 value 0 [('resp_ok', True)] t 8.3
+k0 4 R (3,) n 9 |mu| 7 value 0 [] t 8.4
+k0 6 R (17,) n 8 |mu| 23 value 0 [('resp_ok', True)] t 18.9
+k0 6 R (17,) n 9 |mu| 23 value 0 [] t 20.9
+k0 3 R (21,) n 8 |mu| 24 value 0 [('resp_ok', True)] t 21.1
+k0 3 R (21,) n 9 |mu| 24 value 0 [] t 21.1
+k0 5 R (13,) n 8 |mu| 18 value 0 [('resp_ok', True)] t 23.8
+k0 5 R (13,) n 9 |mu| 18 value 0 [] t 24.3
+k0 2 R (3, 3) n 8 |mu| 8 value 0 [('resp_ok', True)] t 24.5
+k0 2 R (3, 3) n 9 |mu| 8 value 0 [] t 24.5
+k0 2 R (2, 2) n 8 |mu| 6 value 0 [] t 24.6
+k0 2 R (2, 2) n 9 |mu| 6 value 0 [] t 24.6
+k0 4 R (2, 7) n 8 |mu| 13 value 0 [('resp_ok', True)] t 32.0
+k0 4 R (2, 7) n 9 |mu| 13 value 0 [] t 32.2
+k0 3 R (8, 13) n 8 |mu| 24 value 0 [('resp_ok', True)] t 32.7
+k0 3 R (8, 13) n 9 |mu| 24 value 0 [] t 32.7
+k0 2 R (2, 2, 2) n 8 |mu| 8 value 0 [] t 33.1
+k0 2 R (2, 2, 2) n 9 |mu| 8 value 0 [] t 33.1
+k0 3 R (2, 3, 4) n 8 |mu| 12 value 0 [] t 34.4
+k0 3 R (2, 3, 4) n 9 |mu| 12 value 0 [] t 34.5
+k0 2 R (5, 5, 5) n 8 |mu| 17 value 0 [('resp_ok', True)] t 35.1
+k0 2 R (5, 5, 5) n 9 |mu| 17 value 0 [] t 35.1
+tau -5/3 G 4 relations 42 failures 0 controls nonzero/total {'pert': [20, 21], 'rising': [21, 21], 'beta': [9, 21], 'cwrong': [7, 21], 'even': [9, 21]}

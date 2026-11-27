@@ -1,0 +1,31 @@
+tau 5/3 forbidden 0 8.0
+ (0,empty) ok True
+ (1,empty) ok True
+ control(1,empty) must fail: False
+ g 2 N 3 tail(with <Omega>) zero: True len 16 | control -<Omega> zero: False | control none zero: False
+   coefficients vs literal Hodge def: True
+   Xi_g(empty)= -16349/3072000 ; <Omega>= -1/25600
+ g 3 N 6 tail(with <Omega>) zero: True len 13 | control -<Omega> zero: False | control none zero: False
+   coefficients vs literal Hodge def: True
+   Xi_g(empty)= 15588439/10321920000 ; <Omega>= -1/28672000
+ g 4 N 9 tail(with <Omega>) zero: True len 10 | control -<Omega> zero: False | control none zero: False
+   coefficients vs literal Hodge def: True
+   Xi_g(empty)= -618111401/471859200000 ; <Omega>= -3/22937600000
+ g 5 N 12 tail(with <Omega>) zero: True len 7 | control -<Omega> zero: False | control none zero: False
+   Xi_g(empty)= 127081722191/55364812800000 ; <Omega>= -81/80740352000000
+ g 6 N 15 tail(with <Omega>) zero: True len 4 | control -<Omega> zero: False | control none zero: False
+   Xi_g(empty)= -18630530849375927/2748107980800000000 ; <Omega>= -18657/1469474406400000000
+tau -1/2 forbidden 0 7.3
+ (0,empty) ok True
+ (1,empty) ok True
+ control(1,empty) must fail: False
+ g 2 N 3 tail(with <Omega>) zero: True len 16 | control -<Omega> zero: False | control none zero: False
+   Xi_g(empty)= -1/240 ; <Omega>= 1/1440
+ g 3 N 6 tail(with <Omega>) zero: True len 13 | control -<Omega> zero: False | control none zero: False
+   Xi_g(empty)= -1/1008 ; <Omega>= -1/90720
+ g 4 N 9 tail(with <Omega>) zero: True len 10 | control -<Omega> zero: False | control none zero: False
+   Xi_g(empty)= -1/1440 ; <Omega>= 1/1360800
+ g 5 N 12 tail(with <Omega>) zero: True len 7 | control -<Omega> zero: False | control none zero: False
+   Xi_g(empty)= -1/1056 ; <Omega>= -1/9979200
+ g 6 N 15 tail(with <Omega>) zero: True len 4 | control -<Omega> zero: False | control none zero: False
+   Xi_g(empty)= -691/327600 ; <Omega>= 691/30648618000

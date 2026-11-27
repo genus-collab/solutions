@@ -1,0 +1,513 @@
+% s08_vanishing. Section file; new macros at the top; label prefix: van
+\newcommand{\vanket}[1]{\lvert #1\rangle}
+\newcommand{\vanbra}[1]{\langle #1\rvert}
+\newcommand{\vanFock}{\mathscr{H}}             % charge-n Fock space
+\newcommand{\vanOp}{\mathsf{Op}}               % \mathsf{K}\Gamma_-(\mathsf{t}')
+\newcommand{\vanS}{\mathbb{S}}                 % \sum_i \psi_i \otimes \psi^*_i
+\newcommand{\vanA}{\mathsf{A}_{\mathrm{c}}}    % formal variable of the content weight
+
+\section{Vanishing of Hodge integrals from the Mari\~no--Vafa formula}
+\label{sec:van}
+
+This section proves the vanishing of the integrals $\Xiz_h(\msM)$ of \cref{def:set-fpot} for non-empty $\msM$. Everything is carried out at scale $1$, over the field $\bbQ(\tau)$, and specialisation takes place only in \cref{cor:van-spec,cor:van-scale}. The object is purely a Hodge integral: neither the curve nor the periods of local $\bbP^2$ enter, and nothing from \cref{sec:set,sec:row,sec:gen,sec:spe,sec:fra,sec:lea} is used beyond the definition of $\Xiz_h$.
+
+\subsection{Statements}
+\label{sec:van-statements}
+
+Let $\tau$ be an indeterminate and $\st=\tau(1+\tau)$. For $h\geq 0$, on $\Mbar_{h,n}$ let $\Lamv(u)=\sum_i(-1)^i\lambda_i u^{h-i}$ and
+\[
+\Hg_{\bwt}=\frac{\Lamv(1)\Lamv(\tau)\Lamv(-1-\tau)}{(-\st)^h},\qquad
+\lf^{\tau}_j(\psi)=\frac{1}{1-j\psi},\qquad
+\Tdil^{\tau}(\psi)=-\frac{\psi^2}{1-\psi}.
+\]
+For a finite multiset $\msU$ of numbers with $r=\#\msU$ and $2h-2+r>0$ put
+\begin{equation}\label{eq:van-Xi}
+\Xit_h(\msU)\coloneqq\sum_{m\geq 0}\frac{1}{m!}\int_{\Mbar_{h,r+m}}\Hg_{\bwt}\prod_{j\in\msU}\lf^{\tau}_j(\psi)\prod_{k=1}^m\Tdil^{\tau}(\psi_{r+k}),
+\end{equation}
+a finite sum because $\Tdil^{\tau}$ has $\psi$-degree at least $2$, and $\dg(\msU)\coloneqq\sum_{j\in\msU}(j-1)$.
+
+\begin{thm}\genusstatus{AI-proposed, unchecked}\label{thm:van-main}
+For every $h\geq 2$ and every non-empty multiset $\msM$ of integers $\geq 2$ with $\dg(\msM)\leq 2h-3$,
+\[
+\Xit_h(\msM)=0\quad\text{in }\bbQ(\tau).
+\]
+\end{thm}
+
+\begin{cor}\genusstatus{AI-proposed, unchecked}\label{cor:van-spec}
+Write $\Lambda(t)=\sum_i t^i\lambda_i$, and let $\mathsf{r}_i$ be the Chern roots of $\Hdg$. Then
+\[
+\Xit_h(\msM;\tau)=\sum_{k=0}^h\Bigl(-\frac{1}{\st}\Bigr)^{k}\,\Xi^{(k)}_h(\msM),\qquad
+\Xi^{(k)}_h(\msM)=\sum_m\frac{1}{m!}\int\Lambda(-1)\,e_k(\mathsf{r}+\mathsf{r}^2)\prod_{j\in\msM}\lf^{\tau}_j\prod_{i=1}^m\Tdil^{\tau},
+\]
+with $\Xi^{(k)}_h(\msM)$ independent of $\tau$. For $\msM$ as in \cref{thm:van-main}, every $\Xi^{(k)}_h(\msM)$ vanishes. Hence $\Xit_h(\msM;\tau_0)=0$ at every $\tau_0$ in a field of characteristic $0$ (in particular at every complex $\tau_0$) with $\st(\tau_0)\neq 0$, including the diagonal $\tau_0=-1/2$ and all other zeros of the factors $\Pi_k$ used in the proof.
+\end{cor}
+
+\begin{cor}\genusstatus{AI-proposed, unchecked}\label{cor:van-parts}
+The same vanishing, in $\bbQ(\tau)$ and at every such $\tau_0$, holds for every non-empty multiset $\msU$ of positive integers with $\dg(\msU)\leq 2h-3$. No part $0$ is allowed.
+\end{cor}
+
+\begin{cor}\genusstatus{AI-proposed, unchecked}\label{cor:van-scale}
+Let $E,\mathsf{v}_2,\mathsf{v}_3$ lie in a field of characteristic $0$, with $E+\mathsf{v}_2+\mathsf{v}_3=0$ and $E\mathsf{v}_2\mathsf{v}_3\neq 0$. Put $\mathsf{v}=(E,\mathsf{v}_2,\mathsf{v}_3)$, $\Hg_{\mathsf{v}}=\prod_a\Lamv(\mathsf{v}_a)/\mathsf{v}_a^h$, $\lf_j(\psi)=1/(E-j\psi)$, $\Tdil(\psi)=-\psi^2/(E-\psi)$, and let $\Xiz^{\mathsf{v}}_h(\msU)$ be defined as in \eqref{eq:van-Xi} with these classes. Then, for every finite multiset $\msU$ with $r=\#\msU$ and $2h-2+r>0$,
+\begin{equation}\label{eq:van-scale}
+\Xiz^{\mathsf{v}}_h(\msU)=E^{-(3h-3+2r)}\,\Xit_h(\msU;\tau=\mathsf{v}_2/E).
+\end{equation}
+Hence $\Xiz^{\mathsf{v}}_h(\msU)$ vanishes in the range of \cref{cor:van-parts}. For $\mathsf{v}=\bw$ one has $\tau=-\epsilon_1/E$, $\st=-\epsilon_1\epsilon_2/E^2$, and $\Xiz^{\bw}_h=\Xiz_h$ is the integral of \cref{def:set-fpot}.
+\end{cor}
+
+\begin{rmk}
+The empty multiset is excluded: $\Xit_h(\emptyset)$ is the value computed in \cref{thm:val-tau}, and part $0$ reduces to it, since $\Xit_h(\msU+0)=(\dg(\msU)-2h+2)\Xit_h(\msU)$ by \cref{lem:van-part01}. Nothing in the proof of \cref{thm:van-main} uses $\Xit_h(\emptyset)$. Formula \eqref{eq:van-scale} is elementary and uses no input.
+\end{rmk}
+
+The proof of \cref{thm:van-main} uses the Mari\~no--Vafa formula \cite[eq.~(1)--(3)]{LLZ03} and the following textbook facts: the string and dilaton equations with classes pulled back along forgetful maps; the genus-$0$ multinomial formula for $\psi$-integrals; the Frobenius formula and the Murnaghan--Nakayama rule; the hook-length form of the principal specialisation of Schur functions; Lagrange inversion. No theorem on integrable hierarchies is cited: the one integrable identity needed is derived in \cref{sec:van-bil}.
+
+The mechanism is as follows. The pair $\MVZ_0=\MVZ(p)$, $\MVZ_1=\MVZ(\re^{\tau x}\circ p)$ of Mari\~no--Vafa series satisfies one explicit bilinear equation $\Bil_k(\Hir)\MVZ_0\cdot\MVZ_1=0$ for each $k\geq 2$. The shift enters through $\re^{\gamma_\tau\Eul}$ with $\Eul=\sum_k kp_k\de/\de p_k$ and $\gamma_\tau=\tau x$. At the dilaton point ($\yv=\tv\re^{-\tv}$, $\pw=1/(1-\tv)$, where $\pw\to 0$ is $s=-1$), $\Eul$ raises the order in $\pw$ by one with coefficient $\delta_g=\dg-2g+2$, so that powers of $\Eul$ produce falling factorials $(\delta_g)_k$. The lowest coefficient of the equation in $\pw$ is an exact all-genus relation (\cref{thm:van-Mk}). Inside the range of \cref{thm:van-main} a counting identity kills every term except a non-zero multiple of the target value.
+
+\subsection{Notation}
+\label{sec:van-notation}
+
+All identities hold over $\bbQ(\tau)$ unless stated otherwise.
+
+\emph{Constants.} $\Pi_m=\prod_{a=1}^{m-1}(m\tau+a)/(m-1)!$, so $\Pi_1=1$ and $\Pi_m\neq 0$ in $\bbQ[\tau]$; $\Pi_\mu=\prod_i\Pi_{\mu_i}$.
+
+\emph{Hodge classes.} With $\Lambda(t)=\sum_i t^i\lambda_i$ one has $\Lamv(u)=u^g\Lambda(-1/u)$, so on genus $g$
+\[
+\Hg_{\bwt}=\Lambda(-1)\,\Lambda(-1/\tau)\,\Lambda(1/(1+\tau)),\qquad \Hg_{\bwt}=1\text{ for }g=0,
+\]
+and $\Hg_{\bwt}$ is pulled back under forgetful maps.
+
+\emph{Leaves.} $\lf^{\tau}_j=1/(1-j\psi)$, $\lf^{\tau}_0=1$, $\Tdil^{\tau}=-\psi^2/(1-\psi)$, and
+\[
+T^{+}\coloneqq-\Tdil^{\tau}=\frac{\psi^2}{1-\psi}=\lf^{\tau}_1-1-\psi.
+\]
+
+\emph{Multisets.} $\msU,\msV$ are finite multisets, and $\msM$ is a multiset of integers $\geq 2$. We write $r_{\msU}=\#\msU$, $J_{\msU}=\sum_{u\in\msU}u$, $\dg(\msU)=J_{\msU}-r_{\msU}$, $\delta_g(\msU)=\dg(\msU)-2g+2$. $\msU+\msV$ is the union, $1^a$ is $a$ parts equal to $1$, $\lvert\Aut\msU\rvert$ is the product of the factorials of the multiplicities, and $\yv_{\msU}=\prod_{u\in\msU}\yv_u$. We abbreviate $\lf^{\tau}_{\msU}=\prod_{j\in\msU}\lf^{\tau}_j(\psi)$, one factor on each corresponding marking.
+
+\emph{Factorials.} $(a)_k=a(a-1)\cdots(a-k+1)$ is falling and $(a)^{(k)}=a(a+1)\cdots(a+k-1)$ is rising, both equal to $1$ at $k=0$.
+
+\emph{Integrals.} For a multiset $\mu$ of positive integers with $\ell(\mu)\geq 1$, put
+\[
+M_g(\mu)=\int_{\Mbar_{g,\ell(\mu)}}\Hg_{\bwt}\prod_i\lf^{\tau}_{\mu_i}(\psi_i)\quad\text{if }2g-2+\ell(\mu)>0,\qquad
+M_0(\mu)\coloneqq\lvert\mu\rvert^{\ell(\mu)-3}\quad\text{for all }\ell(\mu)\geq 1.
+\]
+For $\ell(\mu)\geq 3$ the second is the integral, by $\int_{\Mbar_{0,l}}\prod_i\psi_i^{d_i}=(l-3)!/\prod_i d_i!$. For $\ell(\mu)=1,2$ it is the convention of \cite{LLZ03}: $M_0((m))=1/m^2$, $M_0((m,n))=1/(m+n)$.
+
+For $2g-2+r>0$, with $r=r_{\msU}$ and $N=3g-3+r$, put
+\[
+\mathsf{Q}_g(s;\msU)\coloneqq\sum_{m\geq 0}\frac{s^m}{m!}\int_{\Mbar_{g,r+m}}\Hg_{\bwt}\,\lf^{\tau}_{\msU}\,(T^{+})^{\tensor m},
+\]
+a polynomial in $s$ of degree at most $N$, since $2m\leq 3g-3+r+m$. For $g\geq 1$ (with $\msU$ non-empty when $g=1$) put $\mathrm{X}_g(\msU)\coloneqq\Xit_g(\msU)=\mathsf{Q}_g(-1;\msU)$; this is the definition \eqref{eq:van-Xi}, as $\Tdil^{\tau}=-T^{+}$. For $\msU$ non-empty with positive parts put
+\[
+\mathrm{X}_0(\msU)\coloneqq\frac{\Gamma(J_{\msU})}{\Gamma(J_{\msU}-r_{\msU}+3)},
+\]
+explicitly $1/(J(J+1))$ for $r=1$, $1/J$ for $r=2$, and $(J-1)(J-2)\cdots(J-r+3)$ for $r\geq 3$. The quantity $\mathrm{X}_0$ is defined by this formula and is not a $\Xit$; \cref{lem:van-g0} shows why it plays the same role.
+
+\emph{Generating function.} Let $\mathsf{q}=\re^x$, $p_k(\mathsf{q}^{\bwy})=1/(\mathsf{q}^{k/2}-\mathsf{q}^{-k/2})=1/(2\sinh(kx/2))$, $f_2(\nu)$ the sum of the contents of $\nu$, $\kappa_\nu=\sum_i\nu_i(\nu_i-2i+1)=2f_2(\nu)$, $s_\nu=\sum_\mu\chi_\nu(\mu)p_\mu/z_\mu$, and
+\[
+\MVZ(p)=\sum_\nu\re^{\tau xf_2(\nu)}s_\nu(\mathsf{q}^{\bwy})s_\nu(p),\qquad \MVF=\log\MVZ,\qquad\text{in }\bbQ[\tau]\lser{x}\fps{p_1,p_2,\dots}.
+\]
+$\MVZ$ has constant term $1$ in $p$, so $\MVF$ is defined and has no constant term in $p$.
+
+\subsection{The Mari\~no--Vafa formula in real form}
+\label{sec:van-MV}
+
+We recall the formula of \cite[Introduction, eq.~(1)--(3)]{LLZ03}, which is called the Mari\~no--Vafa formula there. Let
+\[
+I_g(\mu)=\int_{\Mbar_{g,\ell(\mu)}}\frac{\Lamv(1)\Lamv(-\tau-1)\Lamv(\tau)}{\prod_i(1-\mu_i\psi_i)},
+\]
+extended to $\ell(\mu)<3$ by $I_0(\mu)=\lvert\mu\rvert^{\ell(\mu)-3}$, and
+\begin{equation}\label{eq:van-LLZdef}
+C_{g,\mu}(\tau)=-\frac{(\sqrt{-1})^{\lvert\mu\rvert+\ell(\mu)}}{\lvert\Aut\mu\rvert}\,[\tau(\tau+1)]^{\ell(\mu)-1}\,\Pi_\mu\,I_g(\mu).
+\end{equation}
+Then, with $s_\nu$ as above,
+\begin{equation}\label{eq:van-LLZ}
+\sum_{\mu\neq\emptyset}\sum_{g\geq 0}\lambda_{\mathrm{MV}}^{2g-2+\ell(\mu)}C_{g,\mu}(\tau)p_\mu
+=\log\sum_\nu\re^{\sqrt{-1}(\tau+\frac12)\kappa_\nu\lambda_{\mathrm{MV}}/2}\,V_\nu(\lambda_{\mathrm{MV}})\,s_\nu(p),
+\end{equation}
+\begin{equation}\label{eq:van-LLZV}
+V_\nu=\prod_{a<b}\frac{\sin[(\nu_a-\nu_b+b-a)\lambda_{\mathrm{MV}}/2]}{\sin[(b-a)\lambda_{\mathrm{MV}}/2]}\;\prod_i\prod_{v=1}^{\nu_i}\frac{1}{2\sin[(v-i+\ell(\nu))\lambda_{\mathrm{MV}}/2]}.
+\end{equation}
+Here the sum on $\nu$ has $\lvert\nu\rvert=\lvert\mu\rvert$ at the coefficient of $p_\mu$, and every power of $\lambda_{\mathrm{MV}}$ on the left has exponent $2g-2+\ell(\mu)$ with $g\geq 0$.
+
+\begin{prop}\genusstatus{AI-proposed, unchecked}\label{prop:van-real}
+One has
+\[
+\MVZ(p)=\sum_\nu\re^{(\tau+\frac12)\kappa_\nu x/2}\prod_{\square\in\nu}\bigl(2\sinh(\mathsf{h}(\square)x/2)\bigr)^{-1}s_\nu(p),
+\]
+and for every $\mu\neq\emptyset$ with $\ell=\ell(\mu)$,
+\begin{equation}\label{eq:van-real}
+[x^{2g-2+\ell}]\,[p_\mu]\,\MVF=\st^{\,g+\ell-1}\,\Pi_\mu\,\frac{M_g(\mu)}{\lvert\Aut\mu\rvert}\qquad(g\geq 0),
+\end{equation}
+and all other powers of $x$ vanish in $[p_\mu]\MVF$.
+\end{prop}
+
+\begin{proof}
+The proof is the conversion of \eqref{eq:van-LLZdef}--\eqref{eq:van-LLZV}, by \cite[eq.~(1)--(3)]{LLZ03}.
+
+\emph{(a) Hook form of $V_\nu$.} Let $\mathsf{f}(n)=2\sin(n\lambda_{\mathrm{MV}}/2)$, $[n]!=\mathsf{f}(1)\cdots\mathsf{f}(n)$, and $\mathsf{b}_i=\nu_i+\ell(\nu)-i$. Then $\nu_a-\nu_b+b-a=\mathsf{b}_a-\mathsf{b}_b$, $\prod_{v=1}^{\nu_i}\mathsf{f}(v+\ell(\nu)-i)=[\mathsf{b}_i]!/[\ell(\nu)-i]!$, and $\prod_i[\ell(\nu)-i]!=\prod_{a<b}\mathsf{f}(b-a)$. So \eqref{eq:van-LLZV} reads
+\[
+V_\nu=\frac{\prod_{a<b}\mathsf{f}(\mathsf{b}_a-\mathsf{b}_b)}{\prod_i[\mathsf{b}_i]!}.
+\]
+We use the row-hook lemma: for fixed $i$, the hook lengths $\{\mathsf{h}_{i,j}\}_j$ of row $i$ together with $\{\mathsf{b}_i-\mathsf{b}_k\}_{k>i}$ are exactly $\{1,\dots,\mathsf{b}_i\}$. (In the Maya diagram with occupied positions $\mathsf{b}_k$, the positions below $\mathsf{b}_i$ are either occupied, by some $\mathsf{b}_k$ with $k>i$, or empty; sliding the particle at $\mathsf{b}_i$ down to an empty position removes a rim hook, and the lengths of these rim hooks are the hook lengths of row $i$.) Hence $V_\nu=\prod_{\square}1/\mathsf{f}(\mathsf{h}(\square))$. This is a multiset identity, valid for any non-vanishing $\mathsf{f}$.\draftnote{Row-hook lemma: \cite[eq.~(8), (9)]{LLZ03} point to \cite[pp.~10--11]{Mac95}; the pointer to \cite[I.1, Ex.~1]{Mac95} is from memory, to be checked.}
+
+\emph{(b) Principal specialisation.} One has $s_\nu(1,t,t^2,\dots)=t^{n(\nu)}\prod_{\square}(1-t^{\mathsf{h}(\square)})^{-1}$, by \cite[eq.~(12)]{LLZ03} and \cite[I.3, Ex.~2]{Mac95}.\draftnote{Exercise numbers in \cite{Mac95} and \cite[Cor.~7.21.3]{Sta99} are from memory; \cite[eq.~(12)]{LLZ03} has been read.} We take $t=\mathsf{q}^{-1}$, with the prefactor $\mathsf{q}^{-\lvert\nu\rvert/2}$ coming from $\mathsf{q}^{\bwy}=(\mathsf{q}^{-1/2},\mathsf{q}^{-3/2},\dots)$. Since $\sum_{\square}\mathsf{h}(\square)=n(\nu)+n(\nu')+\lvert\nu\rvert$ and $\kappa_\nu=2(n(\nu')-n(\nu))$, this gives
+\[
+s_\nu(\mathsf{q}^{\bwy})=\mathsf{q}^{\kappa_\nu/4}\prod_{\square}\frac{1}{2\sinh(\mathsf{h}(\square)x/2)}.
+\]
+Since $\re^{\tau xf_2}\mathsf{q}^{\kappa/4}=\re^{(\tau+\frac12)\kappa x/2}$, this is the first claim. It is an identity of rational functions of $\mathsf{q}^{1/2}$, with $p_k(\mathsf{q}^{\bwy})$ as defined above.
+
+\emph{(c) Removal of $\ri=\sqrt{-1}$.} Work over $\bbQ(\ri)$, with $x=\ri\lambda_{\mathrm{MV}}$, so $\lambda_{\mathrm{MV}}=-\ri x$. Then $\re^{\ri(\tau+\frac12)\kappa\lambda_{\mathrm{MV}}/2}=\re^{(\tau+\frac12)\kappa x/2}$, and $2\sinh(\mathsf{h}x/2)=2\ri\sin(\mathsf{h}\lambda_{\mathrm{MV}}/2)$, so $1/(2\sin(\mathsf{h}\lambda_{\mathrm{MV}}/2))=\ri/(2\sinh(\mathsf{h}x/2))$ and $V_\nu=\ri^{\lvert\nu\rvert}\prod_{\square}1/(2\sinh(\mathsf{h}(\square)x/2))$. By homogeneity $\ri^{\lvert\nu\rvert}s_\nu(p)=s_\nu((\ri^kp_k)_k)$. So the right side of \eqref{eq:van-LLZ} is $\MVF(x;(\ri^kp_k)_k)$, whose $[p_\mu]$ coefficient is $\ri^{\lvert\mu\rvert}[p_\mu]\MVF$.
+
+\emph{(d) Signs.} On the left of \eqref{eq:van-LLZ}, writing $\ell=\ell(\mu)$, the term $\lambda_{\mathrm{MV}}^{2g-2+\ell}C_{g,\mu}$ carries
+\[
+-\ri^{\lvert\mu\rvert+\ell}(-\ri)^{2g-2+\ell}=-\ri^{\lvert\mu\rvert}(\ri\cdot(-\ri))^{\ell}(-\ri)^{2g-2}=-\ri^{\lvert\mu\rvert}(-1)^{g-1}=\ri^{\lvert\mu\rvert}(-1)^g.
+\]
+Cancelling $\ri^{\lvert\mu\rvert}$,
+\[
+[x^{2g-2+\ell}]\,[p_\mu]\,\MVF=(-1)^g\st^{\,\ell-1}\Pi_\mu\frac{I_g(\mu)}{\lvert\Aut\mu\rvert}.
+\]
+Finally $\Lamv(1)\Lamv(\tau)\Lamv(-1-\tau)=(-\st)^g\Hg_{\bwt}$, so $I_g(\mu)=(-\st)^gM_g(\mu)$ and $(-1)^g(-\st)^g=\st^{\,g}$. In genus $0$, $\Hg_{\bwt}=1$ and the extension of \eqref{eq:van-LLZdef} is $M_0$.
+\end{proof}
+
+\begin{rmk}
+A second derivation of \eqref{eq:van-real} goes through \cite[Theorem~1]{OP04}, formula (0.8) there, with $a=\tau$, $u=x$, $t=(-1,-1/a,1/(a+1))$ (the class is then exactly $\Hg_{\bwt}$), $\binom{(a+1)m}{m}=(a+1)\Pi_m(a)$, and the rescaling $\sqrt{a(a+1)}\,u$. It is not used. In this derivation the formula of \cite{OP04} is read through its operator forms (1.24), (1.28), which have no factor $1/\lvert\Aut\mu\rvert$: at repeated parts the factor displayed in (0.5), (0.8) there has to be read accordingly, as one sees at $\mu=(1,1)$, where the left side of (0.5) is $u^{-4}(1+\cdots)$ and the right side with that factor is $\tfrac12u^{-4}\cosh u$.
+\end{rmk}
+
+\begin{rmk}
+Two consistency checks in all genera, not used. (i) At $\tau=0$ one has $\MVZ=\exp(\sum_dp_d/(d\cdot 2\sinh(dx/2)))$, so $[p_d]\MVF=1/(2d\sinh(dx/2))$ and no terms with $\ell(\mu)\geq 2$ occur; on the Hodge side $\Lamv(1)\Lamv(-1)=(-1)^g$ and $\Lamv(0)=(-1)^g\lambda_g$, which matches the sign $(-1)^g$ of the proof in every genus. (ii) The transposition $\nu\mapsto\nu'$ gives $\MVZ(x;-1-\tau;p)=\MVZ(x;\tau;((-1)^{k-1}p_k))$, matching $\Pi_m(-1-\tau)=(-1)^{m-1}\Pi_m(\tau)$ and the invariance of $\Hg_{\bwt}$ and $\st$.
+\end{rmk}
+
+\emph{Scaled variables.} Over $\bbQ(\tau)$ put
+\[
+\hbar=\st x^2,\qquad \yv_k=x\st\Pi_kp_k\quad(k\geq 1),\qquad \yv\coloneqq\yv_1=x\st p_1.
+\]
+This uses $\Pi_k\neq 0$ in $\bbQ(\tau)$, and the substitution rescales each monomial by a unit of $\bbQ(\tau)\lser{x}$. Since $x^{2g-2+\ell}\st^{\,g+\ell-1}\Pi_\mu p_\mu=\hbar^{g-1}\yv_\mu$ and $\lvert\Aut(\msM+1^a)\rvert=\lvert\Aut\msM\rvert a!$ for $\msM$ with parts $\geq 2$, \eqref{eq:van-real} is equivalent to
+\begin{equation}\label{eq:van-scaled}
+\MVF=\sum_{g\geq 0}\hbar^{g-1}\MVF_g,\qquad
+\MVF_g=\sum_{\substack{\msM\neq\emptyset\\\text{parts}\geq 2}}\frac{\yv_{\msM}\,G^{(g)}_{\msM}(\yv)}{\lvert\Aut\msM\rvert}+\sum_{a\geq 1}\frac{M_g(1^a)\yv^a}{a!},
+\end{equation}
+where for a multiset $\msU$ of positive integers
+\begin{equation}\label{eq:van-G}
+G^{(g)}_{\msU}(\yv)\coloneqq\sum_{a\geq 0}\frac{M_g(\msU+1^a)\yv^a}{a!}\qquad(\msU\text{ non-empty, }g\geq 0;\text{ or }\msU\text{ empty, }g\geq 2).
+\end{equation}
+The empty-$\msM$ part of $\MVF_g$ has no constant term, because $\MVF$ has none. Its $a=0$ term would be $\int_{\Mbar_g}\Hg_{\bwt}$, which is not in the series. The function $G^{(g)}_{\emptyset}$ with its $a=0$ term is an auxiliary function, used only in \cref{cor:van-string}, where $\dd/\dd\yv$ kills the constant. For all $g\geq 0$,
+\begin{equation}\label{eq:van-Gd}
+\frac{\dd}{\dd\yv}\Bigl[\sum_{a\geq 1}\frac{M_g(1^a)\yv^a}{a!}\Bigr]=G^{(g)}_{(1)},\qquad \frac{\dd}{\dd\yv}G^{(g)}_{\msU}=G^{(g)}_{\msU+1}.
+\end{equation}
+
+\subsection{Dilaton-point calculus}
+\label{sec:van-dil}
+
+Let $\tv$ be a formal variable, $\yv=\tv\re^{-\tv}$ (an automorphism of the power series ring), $\pw=1/(1-\tv)$ in $\bbQ(\tau)\fps{\tv}$, $s=\pw-1$, so $\tv=s/(1+s)$. Let $\thv=\yv\,\dd/\dd\yv$. Then $\thv=(\pw-1)\dd/\dd\tv$, $\dd\pw^n/\dd\tv=n\pw^{n+1}$, and $1/\yv=\re^{\tv}\pw/(\pw-1)$.
+
+The series $\pw$ is transcendental over $\bbQ(\tau)$: a polynomial relation in $\pw$ would be a rational relation in $\tv$. So $\re^{\tv J}\bbQ(\tau)[\pw,1/\pw]$ is a free rank-one module over the Laurent polynomial ring in $\pw$, and coefficients in $\pw$ are well defined. No analytic continuation is used in what follows.
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}\label{lem:van-ops}
+\begin{align*}
+(J+\thv)(\re^{\tv J}\pw^n)&=\re^{\tv J}\bigl((J-n)\pw^{n+1}+n\pw^{n+2}\bigr),\\
+\frac{\dd}{\dd\yv}(\re^{\tv J}\pw^n)&=\re^{\tv(J+1)}\bigl(J\pw^{n+1}+n\pw^{n+2}\bigr),\\
+\frac{\dd}{\dd\yv}\,\thv&=(\thv+1)\,\frac{\dd}{\dd\yv}.
+\end{align*}
+\end{lem}
+
+\begin{proof}
+For the first line, $\thv(\re^{\tv J}\pw^n)=(\pw-1)\re^{\tv J}(J\pw^n+n\pw^{n+1})$; adding $J\re^{\tv J}\pw^n$ gives the claim. For the second, $\dd/\dd\yv=\yv^{-1}\thv=\re^{\tv}\pw\,\dd/\dd\tv$ gives the claim directly. The third is the identity $\de_{\yv}(\yv\de_{\yv})=(\yv\de_{\yv}+1)\de_{\yv}$.
+\end{proof}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}\label{lem:van-dil}
+Let $\msU$ be a multiset of numbers (parts $0$, $1$ and non-integers allowed), $r=r_{\msU}$, $J=J_{\msU}$, with $2g-2+r>0$. Put $M_a=\int_{\Mbar_{g,r+a}}\Hg_{\bwt}\lf^{\tau}_{\msU}(\lf^{\tau}_1)^{a}$ and $G_{\msU}(\yv)=\sum_{a\geq 0}M_a\yv^a/a!$. In $\bbQ(\tau)\fps{s}$, with $\tv=s/(1+s)$,
+\begin{equation}\label{eq:van-dil}
+\mathsf{Q}_g(s;\msU)=(1+s)^{-(2g-2+r)}\,\re^{-\tv J}\,G_{\msU}(\tv\re^{-\tv}).
+\end{equation}
+Equivalently $G_{\msU}(\tv\re^{-\tv})=\re^{\tv J}\pw^{2g-2+r}\mathsf{Q}_g(\pw-1;\msU)$, where $\mathsf{Q}_g$ is a polynomial of degree at most $N=3g-3+r$, and $\mathrm{X}_g(\msU)=\mathsf{Q}_g(-1;\msU)$ is its constant term in $\pw$.
+\end{lem}
+
+\begin{proof}
+Write $T^{+}=\lf^{\tau}_1-1-\psi$ and expand the $m$-th term of $\mathsf{Q}_g$:
+\[
+\mathsf{Q}_g=\sum_{a,b,c\geq 0}\frac{s^a}{a!}\,\frac{(-s)^b}{b!}\,\frac{(-s)^c}{c!}\,\bigl\langle\Hg_{\bwt}\,\lf^{\tau}_{\msU}\,(\lf^{\tau}_1)^{a}\,1^b\,\psi^c\bigr\rangle.
+\]
+The class $\Hg_{\bwt}$ is pulled back along $\pi\colon\Mbar_{g,n+1}\to\Mbar_{g,n}$, and $\psi_i=\pi^*\psi_i+D_{i,n+1}$, $\psi_{n+1}D_{i,n+1}=0$, $\pi_*\psi_{n+1}=2g-2+n$. So:
+\begin{itemize}
+\item The dilaton equation removes the $c$ factors $\psi$ with total factor $(e)^{(c)}$, where $e=2g-2+r+a+b$.
+\item The string equation acts on legs by $\psi^n\mapsto\psi^{n-1}$, killing $\psi^0$. It sends $\lf^{\tau}_j$ to $j\lf^{\tau}_j$. So removing one leg $1$ multiplies by the sum of the labels, and removing the $b$ legs $1$ gives $(J+a)^b$.
+\end{itemize}
+All intermediate spaces are stable since $2g-2+r>0$. Now resum: $\sum_c((-s)^c/c!)(e)^{(c)}=(1+s)^{-e}$, and $\sum_b((-s)^b/b!)(J+a)^b(1+s)^{-b}=\re^{-\tv(J+a)}$. Therefore
+\[
+\mathsf{Q}_g=\sum_a\frac{s^a}{a!}(1+s)^{-(2g-2+r+a)}\re^{-\tv(J+a)}M_a=(1+s)^{-(2g-2+r)}\re^{-\tv J}\sum_a\frac{(\tv\re^{-\tv})^aM_a}{a!}.
+\]
+Each $s$-coefficient is a finite sum, so this holds in $\bbQ(\tau)\fps{s}$. The degree bound comes from the definition of $\mathsf{Q}_g$. No analytic continuation of $G_{\msU}$ in $\yv$ is used: $\mathrm{X}_g(\msU)$ is the value at $s=-1$ of a polynomial whose Taylor series at $s=0$ is the right side.
+\end{proof}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}\label{lem:van-g0}
+Let $\msU$ be non-empty with positive parts, $r=r_{\msU}$, $J=J_{\msU}$. Then $\re^{-\tv J}G^{(0)}_{\msU}=\pw^{r-2}\cdot(\text{polynomial in }\pw)$ with constant term $\mathrm{X}_0(\msU)$.
+\end{lem}
+
+\begin{proof}
+By definition $G^{(0)}_{\msU}=\sum_a(J+a)^{a+r-3}\yv^a/a!$, and $J+\thv$ multiplies the coefficient of $\yv^a$ by $J+a$. So $J+\thv$ is injective on power series and raises $r$ by one in this formula. By Lagrange inversion for $\tv=\yv\re^{\tv}$, $\sum_a(J+a)^{a-1}\yv^a/a!=\re^{\tv J}/J$, which is the case $r=2$. \Cref{lem:van-ops} then gives $r\geq 3$, with leading coefficient $\prod_{n=1}^{r-3}(J-n)$. For $r=1$ the solution of $(J+\thv)G=\re^{\tv J}/J$ is
+\[
+G^{(0)}_{(J)}=\re^{\tv J}\Bigl(\frac{\pw^{-1}}{J(J+1)}+\frac{1}{J^2(J+1)}\Bigr),
+\]
+by \cref{lem:van-ops} and injectivity.
+\end{proof}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}\label{lem:van-lead}
+For all $g\geq 0$, $k\geq 0$ and every non-empty multiset $\msU$ of positive integers:
+\begin{equation}\label{eq:van-lead}
+\re^{-\tv J_{\msU}}(J_{\msU}+\thv)^kG^{(g)}_{\msU}=\pw^{2g-2+r_{\msU}+k}\bigl((\delta_g(\msU))_k\,\mathrm{X}_g(\msU)+\pw\cdot(\text{polynomial in }\pw)\bigr).
+\end{equation}
+\end{lem}
+
+\begin{proof}
+The case $k=0$ is \cref{lem:van-dil} ($g\geq 1$) or \cref{lem:van-g0} ($g=0$). The step $k\mapsto k+1$ is \cref{lem:van-ops} at $n=2g-2+r_{\msU}+l$, where $J-n=\delta_g(\msU)-l$, applied to the lowest term; higher terms stay higher.
+\end{proof}
+
+\begin{cor}\genusstatus{AI-proposed, unchecked}\label{cor:van-string}
+Let $g\geq 1$ and $\msU$ non-empty with positive parts. Then $\mathrm{X}_g(\msU+1)=J_{\msU}\mathrm{X}_g(\msU)$. For $g\geq 2$, $\mathrm{X}_g(1^v)=0$ for all $v\geq 1$. Consequently, for $\msU=\msU'+1^v$ with $\msU'$ having parts $\geq 2$, and $g\geq 2$:
+\begin{equation}\label{eq:van-string}
+\mathrm{X}_g(\msU)=(J_{\msU'})^{(v)}\mathrm{X}_g(\msU')\ \text{ if }\msU'\text{ is non-empty},\qquad \mathrm{X}_g(1^v)=0.
+\end{equation}
+\end{cor}
+
+\begin{proof}
+One has $G_{\msU+1}=\dd G_{\msU}/\dd\yv$ by \eqref{eq:van-G}. Apply the second line of \cref{lem:van-ops} to \eqref{eq:van-dil}: the coefficient of $\pw^{2g-2+r+1}$ gives $\mathrm{X}_g(\msU+1)=J_{\msU}\mathrm{X}_g(\msU)$. For $g\geq 2$ and $\msU$ empty, apply the same with the auxiliary $G_{\emptyset}$ (with its $a=0$ term included; \eqref{eq:van-dil} holds for it, and $\dd/\dd\yv$ kills the constant): $J=0$ gives $\mathrm{X}_g(1)=0$. Iterate.
+\end{proof}
+
+\begin{rmk}\label{rmk:van-table}
+Put $\msU=1^v$, $v\geq 1$, so $\delta_g=2-2g$, in \eqref{eq:van-lead}. One has $\mathrm{X}_0(1^v)=(v-1)!/2$, with leading coefficients $(v-1)!/2$, $(v-1)!$, $(v-1)!$, $0,0,\dots$ at $k=0,1,2,3,\dots$. At $g=1$ the coefficient is $(v-1)!\mathrm{X}_1(1)$ at $k=0$ and $0$ for $k\geq 1$, with $\mathrm{X}_1(1)=-(1+1/\st)/24$. At $g\geq 2$ it is $0$.
+\end{rmk}
+
+\subsection{The bilinear equations}
+\label{sec:van-bil}
+
+Let $\mathsf{t}_k=p_k/k$ be the times, and let $\Sch_j$ be the elementary Schur polynomial, $\exp(\sum_k\mathsf{t}_kz^k)=\sum_j\Sch_j(\mathsf{t})z^j$. Let $\Eul=\sum_kkp_k\de/\de p_k$ and $\gamma_\tau=\tau x$. For two series $\mathsf{Z},\mathsf{Z}'$ in the times define the Hirota derivatives $\Hir_k$ at a base point $b$ by
+\[
+\mathsf{Z}(b+\varsigma)\,\mathsf{Z}'(b-\varsigma)=\exp\Bigl(\sum_k\varsigma_k\Hir_k\Bigr)\mathsf{Z}\cdot\mathsf{Z}',
+\]
+and put $\widetilde{\Hir}=(\Hir_k/k)_k$, $\Bil_k(\Hir)\coloneqq\Hir_k+\Sch_k(-\widetilde{\Hir})$.
+
+\begin{prop}\genusstatus{AI-proposed, unchecked}\label{prop:van-bil}
+Let $\MVZ_0=\MVZ$ and $\MVZ_1=\MVZ(\re^{\gamma_\tau}\circ p)$, where $(\re^{\gamma_\tau}\circ p)_k=\re^{k\gamma_\tau}p_k$. Then for every $k\geq 1$,
+\begin{equation}\label{eq:van-bil}
+\Bil_k(\Hir)\,\MVZ_0\cdot\MVZ_1=0
+\end{equation}
+coefficientwise in $\bbQ[\tau]\lser{x}\fps{p}$. Explicitly $\Bil_k=\sum_{\varrho\vdash k}c_\varrho\Hir^\varrho$, where for $\varrho=(i^{m_i})$:
+\begin{equation}\label{eq:van-bilc}
+c_\varrho=\prod_i\frac{(-1/i)^{m_i}}{m_i!}+[\varrho=(k)],\quad\text{so } c_{(k)}=\frac{k-1}{k},\text{ which is non-zero for }k\geq 2.
+\end{equation}
+$\Bil_1=0$ identically. For example $2\Bil_2=\Hir_1^2+\Hir_2$, $6\Bil_3=4\Hir_3+3\Hir_1\Hir_2-\Hir_1^3$, $24\Bil_4=\Hir_1^4+8\Hir_1\Hir_3-6\Hir_1^2\Hir_2+3\Hir_2^2+18\Hir_4$.
+\end{prop}
+
+\begin{proof}
+\emph{Conventions.} Let $\mathbf{e}_i$ ($i\in\bbZ$) be the wedge basis, $\boldsymbol{\psi}_i=\mathbf{e}_i\wedge$, $\boldsymbol{\psi}^*_i=\de/\de\mathbf{e}_i$, $\vanket{n}=\mathbf{e}_{n-1}\wedge\mathbf{e}_{n-2}\wedge\cdots$, and let $\vanFock_n$ be the charge-$n$ Fock space. The vector $\vanket{\nu,n}$ has occupied modes $\nu_j+n-j$, and these vectors form an orthonormal basis of $\vanFock_n$. Put $\mathrm{a}_k=\sum_j:\!\boldsymbol{\psi}_j\boldsymbol{\psi}^*_{j+k}\!:$. Then
+\[
+[\mathrm{a}_k,\boldsymbol{\psi}_i]=\boldsymbol{\psi}_{i-k},\quad[\mathrm{a}_k,\boldsymbol{\psi}^*_i]=-\boldsymbol{\psi}^*_{i+k},\quad[\mathrm{a}_k,\mathrm{a}_l]=k\delta_{k+l,0},\quad\mathrm{a}_k\vanket{n}=0=\vanbra{n}\mathrm{a}_{-k}\quad(k>0).
+\]
+Put $\Gamma_+(\mathsf{t})=\exp(\sum_{k\geq 1}\mathsf{t}_k\mathrm{a}_k)$, $\Gamma_-(\mathsf{t}')=\exp(\sum_{k\geq 1}\mathsf{t}'_k\mathrm{a}_{-k})$, with $p_k=k\mathsf{t}_k$ and $p'_k=k\mathsf{t}'_k$. Let $\mathsf{v}(\mathsf{t},z)=\sum_k\mathsf{t}_kz^k$, and let $[1/z]$ be the time vector with $k$-th entry $z^{-k}/k$. Let $\vanA$ and the $\mathsf{t}'_k$ be formal variables. All sums below are finite at fixed degree in $\mathsf{t},\widetilde{\mathsf{t}},\mathsf{t}'$.
+
+\emph{(F1) Schur functions.} The operator $\mathrm{a}_{-k}$ moves one particle up by $k$ with sign $(-1)^{\mathrm{height}}$. This is the Murnaghan--Nakayama rule, so $\mathrm{a}_{-\mu}\vanket{n}=\sum_\nu\chi_\nu(\mu)\vanket{\nu,n}$. By the Frobenius formula,
+\[
+\vanbra{n}\Gamma_+(\mathsf{t})\vanket{\nu,n}=s_\nu(\mathsf{t}),\qquad\Gamma_-(\mathsf{t}')\vanket{n}=\sum_\nu s_\nu(\mathsf{t}')\vanket{\nu,n}.
+\]
+Since the character table is invertible, $\vanFock_n$ is spanned by the $\mathrm{a}_{-\mu}\vanket{n}$.\draftnote{No theorem numbers are pinned for the Frobenius formula, the Murnaghan--Nakayama rule, or the string and dilaton equations with pulled-back classes.}
+
+\emph{(F2) Content weight.} Let $\mathsf{K}$ be diagonal, with $\mathsf{K}\vanket{\mathsf{I}}=\vanA^{\mathsf{n}(\mathsf{I})}\vanket{\mathsf{I}}$ on the basis vector with occupied set $\mathsf{I}$, where
+\[
+\mathsf{n}(\mathsf{I})=\sum_{j\in\mathsf{I},\,j\geq 0}\mathsf{f}(j)-\sum_{j\notin\mathsf{I},\,j<0}\mathsf{f}(j),\qquad\mathsf{f}(j)=\frac{j(j+1)}{2}.
+\]
+Adding $j$ to $\mathsf{I}$ changes $\mathsf{n}$ by $\mathsf{f}(j)$ in both cases, so $\mathsf{K}\boldsymbol{\psi}_i\mathsf{K}^{-1}=\vanA^{\mathsf{f}(i)}\boldsymbol{\psi}_i$ and $\mathsf{K}\boldsymbol{\psi}^*_i\mathsf{K}^{-1}=\vanA^{-\mathsf{f}(i)}\boldsymbol{\psi}^*_i$. Since $\mathsf{f}(\nu_j+m)-\mathsf{f}(m)$ at $m=n-j$ equals $\nu_j(\nu_j-2j+1)/2+n\nu_j$, and $\mathsf{n}$ vanishes on $\vanket{0}$ and $\vanket{1}$, one has for $n=0,1$:
+\[
+\mathsf{n}(\vanket{\nu,n})=f_2(\nu)+n\lvert\nu\rvert.
+\]
+Put $\vanOp\coloneqq\mathsf{K}\Gamma_-(\mathsf{t}')$. Then for $n=0,1$:
+\[
+\mathsf{Z}_n(\mathsf{t})\coloneqq\vanbra{n}\Gamma_+(\mathsf{t})\vanOp\vanket{n}=\sum_\nu\vanA^{f_2(\nu)+n\lvert\nu\rvert}s_\nu(\mathsf{t}')s_\nu(\mathsf{t}).
+\]
+At $\vanA=\re^{\gamma_\tau}$, $\gamma_\tau=\tau x$, $\mathsf{t}'=\mathsf{q}^{\bwy}$ (that is $p'_k=1/(2\sinh(kx/2))$), one has $\mathsf{Z}_0=\MVZ_0$ and $\mathsf{Z}_1=\MVZ_1$. No normalising constant occurs, and the orientation $\re^{+\tau x}$ is derived here.
+
+\emph{(F3) Commutation.} The operator $\vanS\coloneqq\sum_i\boldsymbol{\psi}_i\tensor\boldsymbol{\psi}^*_i$ is a finite sum on any tensor of wedges. It commutes with $\vanOp\tensor\vanOp$: for $\mathsf{K}$ termwise, by (F2); and for $\Gamma_-$, because
+\[
+\sum_i\bigl([\mathrm{a}_{-k},\boldsymbol{\psi}_i]\tensor\boldsymbol{\psi}^*_i+\boldsymbol{\psi}_i\tensor[\mathrm{a}_{-k},\boldsymbol{\psi}^*_i]\bigr)=\sum_i\bigl(\boldsymbol{\psi}_{i+k}\tensor\boldsymbol{\psi}^*_i-\boldsymbol{\psi}_i\tensor\boldsymbol{\psi}^*_{i-k}\bigr)=0.
+\]
+On $\vanket{0}\tensor\vanket{1}$ only $i=0$ survives, and $\vanS(\vanket{0}\tensor\vanket{1})=\vanket{1}\tensor\vanket{0}$. Hence $\vanS(\vanOp\vanket{0}\tensor\vanOp\vanket{1})=\vanOp\vanket{1}\tensor\vanOp\vanket{0}$.
+
+\emph{(F4) Vertex operators as shifts.} Put $\boldsymbol{\psi}(z)=\sum_i\boldsymbol{\psi}_iz^i$ and $\boldsymbol{\psi}^*(z)=\sum_i\boldsymbol{\psi}^*_iz^{-i}$. Then $[\mathrm{a}_k,\boldsymbol{\psi}(z)]=z^k\boldsymbol{\psi}(z)$ and $[\mathrm{a}_k,\boldsymbol{\psi}^*(z)]=-z^k\boldsymbol{\psi}^*(z)$, so
+\[
+\Gamma_+(\mathsf{t})\boldsymbol{\psi}(z)=\re^{\mathsf{v}(\mathsf{t},z)}\boldsymbol{\psi}(z)\Gamma_+(\mathsf{t}),\qquad\Gamma_+(\mathsf{t})\boldsymbol{\psi}^*(z)=\re^{-\mathsf{v}(\mathsf{t},z)}\boldsymbol{\psi}^*(z)\Gamma_+(\mathsf{t}).
+\]
+The covector $\vanbra{1}\boldsymbol{\psi}(z)$ on $\vanFock_0$ is an eigenvector of right multiplication by $\mathrm{a}_{-k}$ with eigenvalue $-z^{-k}$, and it takes the value $1$ on $\vanket{0}$. The covector $\vanbra{0}\Gamma_+(-[1/z])$ has the same two properties. By (F1),
+\[
+\vanbra{1}\boldsymbol{\psi}(z)=\vanbra{0}\Gamma_+(-[1/z])\quad\text{on }\vanFock_0.
+\]
+Likewise, with eigenvalue $+z^{-k}$ and value $1$ on $\vanket{1}$,
+\[
+\vanbra{0}\boldsymbol{\psi}^*(z)=\vanbra{1}\Gamma_+([1/z])\quad\text{on }\vanFock_1.
+\]
+
+\emph{(F5) Bilinear identity.} Note $\vanS=[z^0]\boldsymbol{\psi}(z)\tensor\boldsymbol{\psi}^*(z)$. Pair (F3) with $\vanbra{1}\Gamma_+(\mathsf{t})\tensor\vanbra{0}\Gamma_+(\widetilde{\mathsf{t}})$, move $\Gamma_+$ past $\boldsymbol{\psi}(z),\boldsymbol{\psi}^*(z)$ by the first line of (F4), and apply the two covector identities to $\Gamma_+(\mathsf{t})\vanOp\vanket{0}$ and $\Gamma_+(\widetilde{\mathsf{t}})\vanOp\vanket{1}$:
+\begin{equation}\label{eq:van-bilid}
+[z^0]\,\re^{\mathsf{v}(\mathsf{t}-\widetilde{\mathsf{t}},z)}\,\mathsf{Z}_0(\mathsf{t}-[1/z])\,\mathsf{Z}_1(\widetilde{\mathsf{t}}+[1/z])=\mathsf{Z}_1(\mathsf{t})\,\mathsf{Z}_0(\widetilde{\mathsf{t}}).
+\end{equation}
+
+\emph{(F6) The linear members.} Put $\mathsf{t}=b+\varsigma$, $\widetilde{\mathsf{t}}=b-\varsigma$ in \eqref{eq:van-bilid}:
+\[
+\sum_{j\geq 0}\Sch_j(2\varsigma)\,\Sch_j(-\widetilde{\Hir})\,\exp\Bigl(\sum_k\varsigma_k\Hir_k\Bigr)\mathsf{Z}_0\cdot\mathsf{Z}_1=\exp\Bigl(-\sum_k\varsigma_k\Hir_k\Bigr)\mathsf{Z}_0\cdot\mathsf{Z}_1.
+\]
+Since $\Sch_j(2\varsigma)=2\varsigma_j+(\text{degree}\geq 2\text{ in }\varsigma)$, the part linear in $\varsigma_k$ at $\varsigma=0$ gives $\Hir_k+2\Sch_k(-\widetilde{\Hir})=-\Hir_k$ on $\mathsf{Z}_0\cdot\mathsf{Z}_1$. That is, $\Bil_k(\Hir)\mathsf{Z}_0\cdot\mathsf{Z}_1=0$ for every $k\geq 1$. The formula \eqref{eq:van-bilc} is the expansion of $\Sch_k$.
+
+\emph{Specialisation.} At a fixed $\mathsf{t}$-monomial of weight $d$, the left side of $\Bil_k(\Hir)\mathsf{Z}_0\cdot\mathsf{Z}_1=0$ is a polynomial in $\mathsf{t}'$ of weight $d+k$ with coefficients in $\bbQ[\vanA,1/\vanA]$. So the equation holds under the ring map $\vanA\mapsto\re^{\tau x}$, $p'_k\mapsto 1/(2\sinh(kx/2))$, coefficientwise in $\bbQ[\tau]\lser{x}\fps{p}$. In particular it holds for $\MVZ_0$, $\MVZ_1$.
+\end{proof}
+
+\begin{rmk}
+\Cref{prop:van-bil} is derived above and is not taken from the literature. For comparison, the polynomials $\Bil_2,\dots,\Bil_5$ lie in the span of the entries of the table of the first modified KP hierarchy in \cite[Appendix~1, p.~996]{JM83}.\draftnote{The bilinear identity of \cite[(2.2)]{HO15} as printed in the arXiv version has exponent $\re^{-\mathsf{v}(\mathrm{d}\mathsf{t},z)}$ where \eqref{eq:van-bilid} has the opposite sign; journal version not compared. Decide whether to mention. The equation number of the bilinear identity in \cite{JM83} has not been looked up.}
+\end{rmk}
+
+\subsection{The relations at the dilaton point}
+\label{sec:van-Mk}
+
+No hypothesis on vanishing enters this subsection.
+
+\emph{Setting.} Let $\MVF_1\coloneqq\log\MVZ_1=\re^{\gamma_\tau\Eul}\MVF=\sum_{k\geq 0}\gamma_\tau^k\Eul^k\MVF/k!$, and put $\cG(\varsigma)=\MVF(b+\varsigma)+\MVF_1(b-\varsigma)-\MVF(b)-\MVF_1(b)$. Since $\MVZ$ has constant term $1$, \eqref{eq:van-bil} gives
+\begin{equation}\label{eq:van-exp}
+\Bil_{k_0}(\de/\de\varsigma)\,\re^{\cG}\big|_{\varsigma=0}=0\qquad\text{for }k_0\geq 2.
+\end{equation}
+
+\emph{Blocks.} Let $\varrho\vdash k_0$ be a partition, viewed as a list of positions, and $\ell(\varrho)$ its number of parts. For a monomial $\Hir^\varrho$, the Fa\`a di Bruno formula over set partitions $\pi$ of the positions (recall $\cG(0)=0$) gives a sum of $\prod_{B\in\pi}\de^B\cG|_0$, with
+\[
+\de^B=\prod_{i\in B}\frac{\de}{\de\mathsf{t}_i}=\prod_{i\in B}\Bigl(ix\st\Pi_i\frac{\de}{\de\yv_i}\Bigr).
+\]
+And
+\[
+\de^B\cG\big|_0=\sum_{k\geq 0}c(\lvert B\rvert,k)\frac{\gamma_\tau^k}{k!}\de^B\Eul^k\MVF,
+\]
+with $c(\mathrm{odd},0)=0$, $c(\mathrm{odd},k\geq 1)=-1$, $c(\mathrm{even},0)=2$, $c(\mathrm{even},k\geq 1)=1$.
+
+\begin{thm}\genusstatus{AI-proposed, unchecked}\label{thm:van-Mk}
+For all $k_0\geq 2$, $n\geq 0$ and every multiset $\msM$ of integers $\geq 2$ ($\msM$ empty allowed):
+\begin{equation}\label{eq:van-Mk}
+\sum_{\varrho\vdash k_0}c_\varrho\sum_{\pi}\ \sum_{\msM\to\text{blocks}}\ \sum_{\substack{(g_B,k_B)\\\sum_Bn_B=n}}\ \prod_{B\in\pi}\varphi_B=0,
+\end{equation}
+where $\pi$ runs over set partitions of the positions of $\varrho$, the third sum runs over labelled assignments $\msM_B$ of the parts of $\msM$ to the blocks, $n_B\coloneqq2g_B-2+\lvert B\rvert+k_B$, and
+\[
+\varphi_B=c(\lvert B\rvert,k_B)\Bigl(\prod_{i\in B}i\Pi_i\Bigr)\st^{\,\lvert B\rvert+g_B-1}\frac{\tau^{k_B}}{k_B!}\,(\delta_{g_B}(\msU_B))_{k_B}\,\mathrm{X}_{g_B}(\msU_B),\qquad\msU_B=\msM_B+B.
+\]
+\end{thm}
+
+\begin{proof}
+\emph{Coefficient of a block.} In the $\yv$-variables, $\Eul=\sum_kk\yv_k\de/\de\yv_k$, which acts on $\yv_{\msM'}G(\yv)$ as $\yv_{\msM'}(J_{\msM'}+\thv)G(\yv)$. Using \eqref{eq:van-scaled}, \eqref{eq:van-Gd} and the third line of \cref{lem:van-ops}, the coefficient of $\yv_{\msM_B}/\lvert\Aut\msM_B\rvert$ ($\msM_B$ with parts $\geq 2$) in the $(g,k)$ term of $\de^B\gamma_\tau^k/k!\,\Eul^k\hbar^{g-1}\MVF_g$ is
+\begin{equation}\label{eq:van-block}
+c(\lvert B\rvert,k)\Bigl(\prod_{i\in B}i\Pi_i\Bigr)\st^{\,\lvert B\rvert+g-1}\frac{\tau^k}{k!}\,x^{n_B}\,(J_{\msU}+\thv)^kG^{(g)}_{\msU},\qquad\msU=\msM_B+B,\quad n_B=2g-2+\lvert B\rvert+k.
+\end{equation}
+In detail: the derivatives $\de/\de\yv_i$, $i\geq 2$, in $\de^B$ raise the profile from $\msM_B$ to $\msM'=\msM_B+\{i\in B:i\geq 2\}$. With $v=\#\{i\in B:i=1\}$, one has $(\dd/\dd\yv)^v(J_{\msM'}+\thv)^kG_{\msM'}=(J_{\msM'}+v+\thv)^kG_{\msM'+1^v}$. For $\msM'$ empty, $v=\lvert B\rvert\geq 1$, and \eqref{eq:van-Gd} applies to the empty-profile part of $\MVF_g$, with no constant term needed. The powers of $x$ and $\st$ are $x^{\lvert B\rvert}x^kx^{2g-2}$ and $\st^{\,\lvert B\rvert}\st^{\,g-1}$.
+
+The multiset $\msU$ is non-empty, because $\lvert B\rvert\geq 1$. So \cref{lem:van-lead} applies to every block. Neither the undifferentiated empty-profile function nor a singular $v=0$ function ever occurs, and unit parts are treated like all other parts.
+
+\emph{Budget.} One has $n_B\geq 2g\geq 0$, because $\lvert B\rvert+k\geq 2$ in every allowed case (odd $\lvert B\rvert$ forces $k\geq 1$, and even $\lvert B\rvert$ has $\lvert B\rvert\geq 2$). The number of blocks is at most $k_0$. So at fixed $x^n$ the sum over $(g_B,k_B)$ is finite.
+
+\emph{Coefficient extraction.} The coefficient of $\yv_{\msM}/\lvert\Aut\msM\rvert$ in a product of blocks is the sum over labelled assignments of the parts of $\msM$ to the blocks. So the coefficient of $(x^n,\yv_{\msM}/\lvert\Aut\msM\rvert)$ in \eqref{eq:van-exp} is a finite $\bbQ(\tau)$-combination of products of the series in \eqref{eq:van-block}, and it vanishes in $\bbQ(\tau)\fps{\yv}$.
+
+\emph{Single sector.} Substitute $\yv=\tv\re^{-\tv}$. In every term, $\sum_BJ_{\msU_B}=J_{\msM}+k_0$ and, by \eqref{eq:van-lead}, the orders in $\pw$ satisfy $\sum_B(n_B+r_{\msM_B})=n+r_{\msM}$. So the coefficient is
+\[
+\re^{\tv(J_{\msM}+k_0)}\,\pw^{n+r_{\msM}}\cdot(\text{polynomial in }\pw),
+\]
+which vanishes in $\bbQ(\tau)\fps{\tv}$. Since $\re^{\tv(J_{\msM}+k_0)}$ is a unit and $\pw$ is transcendental over $\bbQ(\tau)$, every coefficient of that polynomial vanishes. In particular so does its constant term, which by \eqref{eq:van-lead} and \eqref{eq:van-bilc} is the left side of \eqref{eq:van-Mk}. This single-sector property holds because $\MVF$ contains all unstable genus-$0$ terms ($\ell(\mu)=1,2$).
+\end{proof}
+
+\subsection{Proof of the vanishing theorem}
+\label{sec:van-proof}
+
+\begin{proof}[Proof of \cref{thm:van-main}]
+Induct on $h\geq 2$ and, for fixed $h$, on $d=1,\dots,2h-3$. Fix $G=h$ and $d$, and assume:
+\begin{itemize}
+\item[(H1)] \cref{thm:van-main} in genera $2,\dots,G-1$;
+\item[(H2)] $\mathrm{X}_G(\msM')=0$ for all non-empty $\msM'$ with parts $\geq 2$ and $\dg(\msM')<d$.
+\end{itemize}
+No ordering inside a level is needed. By \eqref{eq:van-string} these extend to multisets with parts $\geq 1$:
+\begin{itemize}
+\item[(H1$'$)] $\mathrm{X}_g(\msU)=0$ for $2\leq g<G$, $\msU$ non-empty, $\dg(\msU)\leq 2g-3$;
+\item[(H2$'$)] $\mathrm{X}_G(\msU)=0$ for $\msU$ non-empty, $\dg(\msU)<d$.
+\end{itemize}
+
+Let $\msV$ be a non-empty multiset with parts $\geq 2$ and $\dg(\msV)=d$. Pick any part $k_0$ of $\msV$ and put $\msM=\msV-k_0$, which may be empty; then $\dg(\msM)=d-k_0+1$. Take \eqref{eq:van-Mk} with $n=2G$. Only this even value of $n$ is used.
+
+\emph{Count.} Since $\sum_B\dg(\msU_B)=\dg(\msM)+k_0-\ell(\varrho)$, where $\ell(\varrho)=\sum_B\lvert B\rvert$, every term of \eqref{eq:van-Mk} satisfies
+\[
+\sum_B\bigl(\delta_{g_B}(\msU_B)-k_B\bigr)=\dg(\msM)+k_0-\sum_Bn_B=d+1-2G\leq-2<0.
+\]
+So in every term some block has $\delta_B<k_B$, where $\delta_B\coloneqq\delta_{g_B}(\msU_B)$. Fix such a block, with data $(g,k,\msU)$, and consider its factor $\varphi_B$.
+\begin{itemize}
+\item If $0\leq\delta_B$, then $(\delta_B)_k=0$, so $\varphi_B=0$.
+\item If $\delta_B<0$, then $\dg(\msU)\leq 2g-3$, and $g\geq 2$ because $\delta_0(\msU)\geq 2$ and $\delta_1(\msU)\geq 0$ for non-empty $\msU$. Also $g\leq G$, since $n_B\geq 2g$ and all $n_B\geq 0$ sum to $2G$.
+\begin{itemize}
+\item If $g<G$, then $\mathrm{X}_g(\msU)=0$ by (H1$'$).
+\item If $g=G$, then $n_B=2G$ forces $\lvert B\rvert+k=2$, and $\dg(\msU)=\dg(\msM_B)+\sum_{i\in B}(i-1)\leq\dg(\msM)+k_0-\ell(\varrho)=d+1-\ell(\varrho)$. If $\ell(\varrho)\geq 2$, then $\dg(\msU)\leq d-1$, so $\mathrm{X}_G(\msU)=0$ by (H2$'$). If $\ell(\varrho)=1$, then $\varrho=(k_0)$, the only block is $B=\{k_0\}$, $k=1$, $\msM_B=\msM$, so $\msU=\msV$. This is the target term.
+\end{itemize}
+\end{itemize}
+
+So \eqref{eq:van-Mk} reduces to its target term. By \eqref{eq:van-bilc}, $c(1,1)=-1$ and the block factor $k_0\Pi_{k_0}\st^{\,G}\tau$, it reads
+\[
+-(k_0-1)\,\Pi_{k_0}\,\st^{\,G}\,\tau\,\delta_G(\msV)\,\mathrm{X}_G(\msV)=0,\qquad\delta_G(\msV)=d+2-2G\leq-1.
+\]
+The coefficient is a non-zero element of $\bbQ(\tau)$, as $k_0\geq 2$. So $\mathrm{X}_G(\msV)=0$. This closes the induction.
+\end{proof}
+
+\begin{rmk}
+The base case by hand is $h=2$, $d=1$, $\msV=(2)$, $\msM=\emptyset$, $k_0=2$, $n=4$. Here (H1), (H2) are vacuous, and (H2$'$) is \cref{cor:van-string}.
+\begin{itemize}
+\item $\varrho=(2)$, $c_\varrho=1/2$, one block $\{2\}$, $(g,k)\in\{(2,1),(1,3),(0,5)\}$: the last two die by $(1)_3=(3)_5=0$, and the first gives $\Pi_2\st^{\,2}\tau\mathrm{X}_2((2))$.
+\item $\varrho=(1,1)$, $c_\varrho=1/2$, one block $\{1,1\}$, $(g,k)\in\{(2,0),(1,2),(0,4)\}$: $\mathrm{X}_2((1,1))=0$, $(0)_2=0$, $(2)_4=0$.
+\item $\varrho=(1,1)$, two blocks $\{1\},\{1\}$: each block has $n_B=2g-1+k$. Genus $0$ needs $k\leq 2$ by $(2)_k$, so $n_B\leq 1$; genus $1$ dies by $(0)_k$, $k\geq 1$; genus $\geq 2$ dies by $\mathrm{X}_g((1))=0$. The total cannot reach $4$.
+\end{itemize}
+So $\Pi_2\st^{\,2}\tau\mathrm{X}_2((2))=0$.
+\end{rmk}
+
+\begin{rmk}
+\Cref{thm:van-Mk} and \cref{lem:van-ops,lem:van-dil,lem:van-g0,lem:van-lead} are identities for every genus, inside and outside the range. Every hypothesis of the induction is used as an identity in $\bbQ(\tau)$, and division by $\Pi_{k_0}$ (which vanishes at, for instance, $\tau=-1/2$ when $k_0$ is even) occurs only in $\bbQ(\tau)$. Specialisation comes only afterwards, in \cref{cor:van-spec}. Finite-order comparisons are collected in \cref{sec:evi-van}; no proof uses them.
+\end{rmk}
+
+\subsection{Proofs of the corollaries}
+\label{sec:van-cors}
+
+\begin{proof}[Proof of \cref{cor:van-spec}]
+With Chern roots $\mathsf{r}_i$ of $\Hdg$, one has $(1-\mathsf{r}/\tau)(1+\mathsf{r}/(1+\tau))=1-(\mathsf{r}+\mathsf{r}^2)/\st$, so
+\[
+\Hg_{\bwt}=\Lambda(-1)\sum_{k=0}^h\Bigl(-\frac{1}{\st}\Bigr)^ke_k(\mathsf{r}+\mathsf{r}^2).
+\]
+The class $e_k(\mathsf{r}+\mathsf{r}^2)$ is symmetric in the roots, hence a polynomial in the $\lambda$ classes, free of $\tau$. So $\Xit_h(\msM;\tau)=\sum_{k=0}^h(-1/\st)^k\Xi^{(k)}_h(\msM)$ with $\Xi^{(k)}_h(\msM)\in\bbQ$ for integer parts. As $1/\st$ is transcendental over $\bbQ$, \cref{thm:van-main} gives $\Xi^{(k)}_h(\msM)=0$ for each $k$. So the vanishing holds at every $\tau_0$ in any field of characteristic $0$ with $\st(\tau_0)\neq 0$, also where the factors $\Pi_{k_0}$ of the proof vanish.
+\end{proof}
+
+\begin{proof}[Proof of \cref{cor:van-parts}]
+Let $\msU$ be non-empty with positive parts and $\dg(\msU)\leq 2h-3$. If $\msU$ has only parts $1$, then $\mathrm{X}_h(\msU)=0$ by \eqref{eq:van-string}. Otherwise $\msU=\msU'+1^v$ with $\msU'$ non-empty, parts $\geq 2$, $\dg(\msU')=\dg(\msU)$, and \eqref{eq:van-string} with \cref{thm:van-main} gives the claim. The argument of the proof of \cref{cor:van-spec} applies to $\msU$: each $\Xi^{(k)}_h(\msU)$ vanishes, so the statement also holds at every such $\tau_0$.
+\end{proof}
+
+\begin{lem}\genusstatus{AI-proposed, unchecked}\label{lem:van-part01}
+Let $\msU$ be any multiset of numbers with $2g-2+r>0$, $r=r_{\msU}$, $J=J_{\msU}$, and put $n=2g-2+r$. Then
+\begin{align*}
+\mathsf{Q}_g(s;\msU+1)&=(1+s)^2\de_s\mathsf{Q}_g(s;\msU)+[J+(1+s)n]\,\mathsf{Q}_g(s;\msU),\\
+\mathsf{Q}_g(s;\msU+0)&=(J+sn)\,\mathsf{Q}_g(s;\msU)+s(1+s)\de_s\mathsf{Q}_g(s;\msU),
+\end{align*}
+hence
+\[
+\Xit_g(\msU+1)=J_{\msU}\,\Xit_g(\msU),\qquad\Xit_g(\msU+0)=(J-n)\,\Xit_g(\msU)=(\dg(\msU)-2g+2)\,\Xit_g(\msU).
+\]
+So part $0$ is not covered by \cref{thm:van-main}: $\Xit_h(0)=(2-2h)\Xit_h(\emptyset)$. It is a lowering operator on $\dg$ and reaches the empty multiset.
+\end{lem}
+
+\begin{proof}
+Write $G_{\msU}=\re^{\tv J}\pw^n\mathsf{Q}_g(\pw-1;\msU)$ by \cref{lem:van-dil}, and recall that $\dd/\dd\tv$ acts on a function of $\pw$ as $\pw^2\de_{\pw}$, with $\de_{\pw}=\de_s$.
+
+\emph{Part $1$.} One has $G_{\msU+1}=\dd G_{\msU}/\dd\yv$, and $\dd/\dd\yv=\re^{\tv}\pw\,\dd/\dd\tv$ gives the first formula.
+
+\emph{Part $0$.} One has $\int\Hg_{\bwt}\lf^{\tau}_{\msU}(\lf^{\tau}_1)^a\cdot 1=(J+a)M_a$ by the string equation, so $G_{\msU+0}=(J+\thv)G_{\msU}$, and $\thv=(\pw-1)\dd/\dd\tv$ gives the second formula. Here $\yv\,\dd/\dd\yv=s(1+s)^2\dd/\dd s$. The values at $s=-1$ follow.
+\end{proof}
+
+\begin{proof}[Proof of \cref{cor:van-scale}]
+For $\mathsf{v}=(E,\mathsf{v}_2,\mathsf{v}_3)$ with sum $0$, the choice $\tau\coloneqq\mathsf{v}_2/E$ gives $\mathsf{v}=E(1,\tau,-1-\tau)$ and $\st=-\mathsf{v}_2\mathsf{v}_3/E^2\neq 0$. Replace $\psi$ by $\psi/E$. The degree-$i$ part of $\Hg_{\mathsf{v}}$ is homogeneous of degree $-i$ in $\mathsf{v}$, so it scales as $E^{-i}$. The degree-$b$ part of a leaf $1/(E-j\psi)$ scales as $E^{-1-b}$. The degree-$b$ part of $-\psi^2/(E-\psi)$ scales as $E^{1-b}$. On $\Mbar_{h,r+m}$ the total degree is $3h-3+r+m$, so the total exponent is $-(3h-3+r+m)-r+m=-(3h-3+2r)$, independent of $m$. This is \eqref{eq:van-scale}. The vanishing follows from \cref{cor:van-parts} at $\tau_0=\mathsf{v}_2/E$. For $\mathsf{v}=\bw=(E,-\epsilon_1,-\epsilon_2)$ one has $\tau=-\epsilon_1/E$ and $\st=-\epsilon_1\epsilon_2/E^2$.
+\end{proof}
+
+\begin{rmk}\label{rmk:van-scale}
+The normalisation by $\mathsf{v}_a^h$ matters: with the unnormalised product the exponent in \eqref{eq:van-scale} would be $3-2r$. The vanishing is not affected. In this normalisation, by \cref{lem:van-part01},
+\[
+\Xiz^{\mathsf{v}}_h(\msU+1)=\frac{J_{\msU}}{E^2}\Xiz^{\mathsf{v}}_h(\msU),\qquad\Xiz^{\mathsf{v}}_h(\msU+0)=\frac{\dg(\msU)-2h+2}{E^2}\Xiz^{\mathsf{v}}_h(\msU),\qquad\lf_0=\frac1E.
+\]
+The hypothesis that the leaf scale $E$ is one of the three weights is essential. For the weights $-\mathsf{v}$, with the leaf scale $E$ kept, the leaf scale is not a weight, and neither \cref{thm:van-main} nor its proof applies.
+\end{rmk}

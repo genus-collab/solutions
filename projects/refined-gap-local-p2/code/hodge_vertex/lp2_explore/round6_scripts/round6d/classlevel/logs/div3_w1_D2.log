@@ -1,0 +1,2 @@
+divisor n=2->3 (A1.5 at n=2 with psi on both legs) (1, 3, 8) (Fraction(5, 2), Fraction(-3, 7)) g 1 D 2 [tests,fails] {'GS': [60, 0], 'GP': [60, 0]}
+divisor n=2->3 (A1.5 at n=2 with psi on both legs) (1, 3, 8) (Fraction(5, 2), Fraction(-3, 7)) g 2 D 2 [tests,fails] {'GS': [168, 0], 'GP': [168, 0]}

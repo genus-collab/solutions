@@ -1,0 +1,2657 @@
+point vertices: 7 graphs, 24 labelled decorations, 17 orbits; Hodge vertices: 37 labelled decorations, 27 orbits
+R-matrix coefficients from cPP_z6.m
+R-matrix rows built to z^3; LeafCounts row0/1/2: {435, 422, 1653}
+mode point: 884 points assigned, 884 to do
+mode point point 1  1
+{-, 3}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 2  1
+{-, 5}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 3  1
+{-, 7}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 4  1
+{-, 11}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 5  1
+{-, 13}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 6  1
+{-, 17}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 7  1
+{-, 19}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 8  1
+{-, 23}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 9  1
+{-, 29}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 10  1
+{-, 31}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 11  1
+{-, 37}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 12  1
+{-, 41}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 13  1
+{-, 43}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 14  1
+{-, 47}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 15  1
+{-, 53}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 16  1
+{-, 59}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 17  1
+{-, 61}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 18  1
+{-, 67}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 19  1
+{-, 71}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 20  1
+{-, 73}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 21  1
+{-, 79}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 22  1
+{-, 83}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 23  1
+{-, 89}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 24  1
+{-, 97}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 25  1
+{-, 101}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 26  1
+{-, 103}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 27  1
+{-, 107}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 28  1
+{-, 109}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 29  1
+{-, 113}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 30  1
+{-, 127}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 31  1
+{-, 131}
+ 2 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 32  1
+{-, 137}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 33  1
+{-, 139}
+ 2 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 34  1
+{-, 149}
+ 2 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 35  1
+{-, 3}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 36  1
+{-, 5}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 37  1
+{-, 7}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 38  1
+{-, 11}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 39  1
+{-, 13}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 40  1
+{-, 17}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 41  1
+{-, 19}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 42  1
+{-, 23}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 43  1
+{-, 29}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 44  1
+{-, 31}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 45  1
+{-, 37}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 46  1
+{-, 41}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 47  1
+{-, 43}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 48  1
+{-, 47}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 49  1
+{-, 53}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 50  1
+{-, 59}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 51  1
+{-, 61}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 52  1
+{-, 67}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 53  1
+{-, 71}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 54  1
+{-, 73}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 55  1
+{-, 79}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 56  1
+{-, 83}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 57  1
+{-, 89}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 58  1
+{-, 97}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 59  1
+{-, 101}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 60  1
+{-, 103}
+ 3 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 61  1
+{-, 107}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 62  1
+{-, 109}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 63  1
+{-, 113}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 64  1
+{-, 127}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 65  1
+{-, 131}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 66  1
+{-, 137}
+ 3 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 67  1
+{-, 139}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 68  1
+{-, 149}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 69  2
+{-, 3}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 70  2
+{-, 5}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 71  2
+{-, 7}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 72  2
+{-, 11}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 73  2
+{-, 13}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 74  2
+{-, 17}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 75  2
+{-, 19}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 76  2
+{-, 23}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 77  2
+{-, 29}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 78  2
+{-, 31}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 79  2
+{-, 37}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 80  2
+{-, 41}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 81  2
+{-, 43}
+ 3 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 82  2
+{-, 47}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 83  2
+{-, 53}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 84  2
+{-, 59}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 85  2
+{-, 61}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 86  2
+{-, 67}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 87  2
+{-, 71}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 88  2
+{-, 73}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 89  2
+{-, 79}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 90  2
+{-, 83}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 91  2
+{-, 89}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 92  2
+{-, 97}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 93  2
+{-, 101}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 94  2
+{-, 103}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 95  2
+{-, 107}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 96  2
+{-, 109}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 97  2
+{-, 113}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 98  2
+{-, 127}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 99  2
+{-, 131}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 100  2
+{-, 137}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 101  2
+{-, 139}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 102  2
+{-, 149}
+ 3 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 103  1
+{-, 3}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 104  1
+{-, 5}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 105  1
+{-, 7}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 106  1
+{-, 11}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 107  1
+{-, 13}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 108  1
+{-, 17}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 109  1
+{-, 19}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 110  1
+{-, 23}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 111  1
+{-, 29}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 112  1
+{-, 31}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 113  1
+{-, 37}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 114  1
+{-, 41}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 115  1
+{-, 43}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 116  1
+{-, 47}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 117  1
+{-, 53}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 118  1
+{-, 59}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 119  1
+{-, 61}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 120  1
+{-, 67}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 121  1
+{-, 71}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 122  1
+{-, 73}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 123  1
+{-, 79}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 124  1
+{-, 83}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 125  1
+{-, 89}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 126  1
+{-, 97}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 127  1
+{-, 101}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 128  1
+{-, 103}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 129  1
+{-, 107}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 130  1
+{-, 109}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 131  1
+{-, 113}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 132  1
+{-, 127}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 133  1
+{-, 131}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 134  1
+{-, 137}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 135  1
+{-, 139}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 136  1
+{-, 149}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 137  3
+{-, 3}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 138  3
+{-, 5}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 139  3
+{-, 7}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 140  3
+{-, 11}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 141  3
+{-, 13}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 142  3
+{-, 17}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 143  3
+{-, 19}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 144  3
+{-, 23}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 145  3
+{-, 29}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 146  3
+{-, 31}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 147  3
+{-, 37}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 148  3
+{-, 41}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 149  3
+{-, 43}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 150  3
+{-, 47}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 151  3
+{-, 53}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 152  3
+{-, 59}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 153  3
+{-, 61}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 154  3
+{-, 67}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 155  3
+{-, 71}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 156  3
+{-, 73}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 157  3
+{-, 79}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 158  3
+{-, 83}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 159  3
+{-, 89}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 160  3
+{-, 97}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 161  3
+{-, 101}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 162  3
+{-, 103}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 163  3
+{-, 107}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 164  3
+{-, 109}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 165  3
+{-, 113}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 166  3
+{-, 127}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 167  3
+{-, 131}
+ 4 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 168  3
+{-, 137}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 169  3
+{-, 139}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 170  3
+{-, 149}
+ 4 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 171  1
+{-, 3}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 172  1
+{-, 5}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 173  1
+{-, 7}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 174  1
+{-, 11}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 175  1
+{-, 13}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 176  1
+{-, 17}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 177  1
+{-, 19}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 178  1
+{-, 23}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 179  1
+{-, 29}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 180  1
+{-, 31}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 181  1
+{-, 37}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 182  1
+{-, 41}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 183  1
+{-, 43}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 184  1
+{-, 47}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 185  1
+{-, 53}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 186  1
+{-, 59}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 187  1
+{-, 61}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 188  1
+{-, 67}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 189  1
+{-, 71}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 190  1
+{-, 73}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 191  1
+{-, 79}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 192  1
+{-, 83}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 193  1
+{-, 89}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 194  1
+{-, 97}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 195  1
+{-, 101}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 196  1
+{-, 103}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 197  1
+{-, 107}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 198  1
+{-, 109}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 199  1
+{-, 113}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 200  1
+{-, 127}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 201  1
+{-, 131}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 202  1
+{-, 137}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 203  1
+{-, 139}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 204  1
+{-, 149}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 205  2
+{-, 3}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 206  2
+{-, 5}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 207  2
+{-, 7}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 208  2
+{-, 11}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 209  2
+{-, 13}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 210  2
+{-, 17}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 211  2
+{-, 19}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 212  2
+{-, 23}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 213  2
+{-, 29}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 214  2
+{-, 31}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 215  2
+{-, 37}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 216  2
+{-, 41}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 217  2
+{-, 43}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 218  2
+{-, 47}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 219  2
+{-, 53}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 220  2
+{-, 59}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 221  2
+{-, 61}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 222  2
+{-, 67}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 223  2
+{-, 71}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 224  2
+{-, 73}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 225  2
+{-, 79}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 226  2
+{-, 83}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 227  2
+{-, 89}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 228  2
+{-, 97}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 229  2
+{-, 101}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 230  2
+{-, 103}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 231  2
+{-, 107}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 232  2
+{-, 109}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 233  2
+{-, 113}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 234  2
+{-, 127}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 235  2
+{-, 131}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 236  2
+{-, 137}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 237  2
+{-, 139}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 238  2
+{-, 149}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 239  3
+{-, 3}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 240  3
+{-, 5}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 241  3
+{-, 7}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 242  3
+{-, 11}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 243  3
+{-, 13}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 244  3
+{-, 17}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 245  3
+{-, 19}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 246  3
+{-, 23}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 247  3
+{-, 29}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 248  3
+{-, 31}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 249  3
+{-, 37}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 250  3
+{-, 41}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 251  3
+{-, 43}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 252  3
+{-, 47}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 253  3
+{-, 53}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 254  3
+{-, 59}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 255  3
+{-, 61}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 256  3
+{-, 67}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 257  3
+{-, 71}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 258  3
+{-, 73}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 259  3
+{-, 79}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 260  3
+{-, 83}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 261  3
+{-, 89}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 262  3
+{-, 97}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 263  3
+{-, 101}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 264  3
+{-, 103}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 265  3
+{-, 107}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 266  3
+{-, 109}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 267  3
+{-, 113}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 268  3
+{-, 127}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 269  3
+{-, 131}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 270  3
+{-, 137}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 271  3
+{-, 139}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 272  3
+{-, 149}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 273  4
+{-, 3}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 274  4
+{-, 5}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 275  4
+{-, 7}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 276  4
+{-, 11}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 277  4
+{-, 13}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 278  4
+{-, 17}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 279  4
+{-, 19}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 280  4
+{-, 23}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 281  4
+{-, 29}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 282  4
+{-, 31}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 283  4
+{-, 37}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 284  4
+{-, 41}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 285  4
+{-, 43}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 286  4
+{-, 47}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 287  4
+{-, 53}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 288  4
+{-, 59}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 289  4
+{-, 61}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 290  4
+{-, 67}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 291  4
+{-, 71}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 292  4
+{-, 73}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 293  4
+{-, 79}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 294  4
+{-, 83}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 295  4
+{-, 89}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 296  4
+{-, 97}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 297  4
+{-, 101}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 298  4
+{-, 103}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 299  4
+{-, 107}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 300  4
+{-, 109}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 301  4
+{-, 113}
+ 5 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 302  4
+{-, 127}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 303  4
+{-, 131}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 304  4
+{-, 137}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 305  4
+{-, 139}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 306  4
+{-, 149}
+ 5 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 307  1
+{-, 3}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 308  1
+{-, 5}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 309  1
+{-, 7}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 310  1
+{-, 11}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 311  1
+{-, 13}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 312  1
+{-, 17}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 313  1
+{-, 19}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 314  1
+{-, 23}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 315  1
+{-, 29}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 316  1
+{-, 31}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 317  1
+{-, 37}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 318  1
+{-, 41}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 319  1
+{-, 43}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 320  1
+{-, 47}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 321  1
+{-, 53}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 322  1
+{-, 59}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 323  1
+{-, 61}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 324  1
+{-, 67}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 325  1
+{-, 71}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 326  1
+{-, 73}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 327  1
+{-, 79}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 328  1
+{-, 83}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 329  1
+{-, 89}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 330  1
+{-, 97}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 331  1
+{-, 101}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 332  1
+{-, 103}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 333  1
+{-, 107}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 334  1
+{-, 109}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 335  1
+{-, 113}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 336  1
+{-, 127}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 337  1
+{-, 131}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 338  1
+{-, 137}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 339  1
+{-, 139}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 340  1
+{-, 149}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 341  5
+{-, 3}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 342  5
+{-, 5}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 343  5
+{-, 7}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 344  5
+{-, 11}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 345  5
+{-, 13}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 346  5
+{-, 17}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 347  5
+{-, 19}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 348  5
+{-, 23}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 349  5
+{-, 29}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 350  5
+{-, 31}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 351  5
+{-, 37}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 352  5
+{-, 41}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 353  5
+{-, 43}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 354  5
+{-, 47}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 355  5
+{-, 53}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 356  5
+{-, 59}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 357  5
+{-, 61}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 358  5
+{-, 67}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 359  5
+{-, 71}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 360  5
+{-, 73}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 361  5
+{-, 79}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 362  5
+{-, 83}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 363  5
+{-, 89}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 364  5
+{-, 97}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 365  5
+{-, 101}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 366  5
+{-, 103}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 367  5
+{-, 107}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 368  5
+{-, 109}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 369  5
+{-, 113}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 370  5
+{-, 127}
+ 6 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 371  5
+{-, 131}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 372  5
+{-, 137}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 373  5
+{-, 139}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 374  5
+{-, 149}
+ 6 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 375  1
+{-, 3}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 376  1
+{-, 5}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 377  1
+{-, 7}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 378  1
+{-, 11}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 379  1
+{-, 13}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 380  1
+{-, 17}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 381  1
+{-, 19}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 382  1
+{-, 23}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 383  1
+{-, 29}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 384  1
+{-, 31}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 385  1
+{-, 37}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 386  1
+{-, 41}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 387  1
+{-, 43}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 388  1
+{-, 47}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 389  1
+{-, 53}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 390  1
+{-, 59}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 391  1
+{-, 61}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 392  1
+{-, 67}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 393  1
+{-, 71}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 394  1
+{-, 73}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 395  1
+{-, 79}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 396  1
+{-, 83}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 397  1
+{-, 89}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 398  1
+{-, 97}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 399  1
+{-, 101}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 400  1
+{-, 103}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 401  1
+{-, 107}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 402  1
+{-, 109}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 403  1
+{-, 113}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 404  1
+{-, 127}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 405  1
+{-, 131}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 406  1
+{-, 137}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 407  1
+{-, 139}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 408  1
+{-, 149}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 409  2
+{-, 3}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 410  2
+{-, 5}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 411  2
+{-, 7}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 412  2
+{-, 11}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 413  2
+{-, 13}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 414  2
+{-, 17}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 415  2
+{-, 19}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 416  2
+{-, 23}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 417  2
+{-, 29}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 418  2
+{-, 31}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 419  2
+{-, 37}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 420  2
+{-, 41}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 421  2
+{-, 43}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 422  2
+{-, 47}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 423  2
+{-, 53}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 424  2
+{-, 59}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 425  2
+{-, 61}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 426  2
+{-, 67}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 427  2
+{-, 71}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 428  2
+{-, 73}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 429  2
+{-, 79}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 430  2
+{-, 83}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 431  2
+{-, 89}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 432  2
+{-, 97}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 433  2
+{-, 101}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 434  2
+{-, 103}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 435  2
+{-, 107}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 436  2
+{-, 109}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 437  2
+{-, 113}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 438  2
+{-, 127}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 439  2
+{-, 131}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 440  2
+{-, 137}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 441  2
+{-, 139}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 442  2
+{-, 149}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 443  3
+{-, 3}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 444  3
+{-, 5}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 445  3
+{-, 7}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 446  3
+{-, 11}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 447  3
+{-, 13}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 448  3
+{-, 17}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 449  3
+{-, 19}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 450  3
+{-, 23}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 451  3
+{-, 29}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 452  3
+{-, 31}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 453  3
+{-, 37}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 454  3
+{-, 41}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 455  3
+{-, 43}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 456  3
+{-, 47}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 457  3
+{-, 53}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 458  3
+{-, 59}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 459  3
+{-, 61}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 460  3
+{-, 67}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 461  3
+{-, 71}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 462  3
+{-, 73}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 463  3
+{-, 79}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 464  3
+{-, 83}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 465  3
+{-, 89}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 466  3
+{-, 97}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 467  3
+{-, 101}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 468  3
+{-, 103}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 469  3
+{-, 107}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 470  3
+{-, 109}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 471  3
+{-, 113}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 472  3
+{-, 127}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 473  3
+{-, 131}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 474  3
+{-, 137}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 475  3
+{-, 139}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 476  3
+{-, 149}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 477  4
+{-, 3}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 478  4
+{-, 5}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 479  4
+{-, 7}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 480  4
+{-, 11}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 481  4
+{-, 13}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 482  4
+{-, 17}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 483  4
+{-, 19}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 484  4
+{-, 23}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 485  4
+{-, 29}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 486  4
+{-, 31}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 487  4
+{-, 37}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 488  4
+{-, 41}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 489  4
+{-, 43}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 490  4
+{-, 47}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 491  4
+{-, 53}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 492  4
+{-, 59}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 493  4
+{-, 61}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 494  4
+{-, 67}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 495  4
+{-, 71}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 496  4
+{-, 73}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 497  4
+{-, 79}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 498  4
+{-, 83}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 499  4
+{-, 89}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 500  4
+{-, 97}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 501  4
+{-, 101}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 502  4
+{-, 103}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 503  4
+{-, 107}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 504  4
+{-, 109}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 505  4
+{-, 113}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 506  4
+{-, 127}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 507  4
+{-, 131}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 508  4
+{-, 137}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 509  4
+{-, 139}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 510  4
+{-, 149}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 511  5
+{-, 3}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 512  5
+{-, 5}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 513  5
+{-, 7}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 514  5
+{-, 11}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 515  5
+{-, 13}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 516  5
+{-, 17}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 517  5
+{-, 19}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 518  5
+{-, 23}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 519  5
+{-, 29}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 520  5
+{-, 31}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 521  5
+{-, 37}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 522  5
+{-, 41}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 523  5
+{-, 43}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 524  5
+{-, 47}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 525  5
+{-, 53}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 526  5
+{-, 59}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 527  5
+{-, 61}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 528  5
+{-, 67}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 529  5
+{-, 71}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 530  5
+{-, 73}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 531  5
+{-, 79}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 532  5
+{-, 83}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 533  5
+{-, 89}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 534  5
+{-, 97}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 535  5
+{-, 101}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 536  5
+{-, 103}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 537  5
+{-, 107}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 538  5
+{-, 109}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 539  5
+{-, 113}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 540  5
+{-, 127}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 541  5
+{-, 131}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 542  5
+{-, 137}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 543  5
+{-, 139}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 544  5
+{-, 149}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 545  6
+{-, 3}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 546  6
+{-, 5}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 547  6
+{-, 7}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 548  6
+{-, 11}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 549  6
+{-, 13}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 550  6
+{-, 17}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 551  6
+{-, 19}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 552  6
+{-, 23}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 553  6
+{-, 29}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 554  6
+{-, 31}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 555  6
+{-, 37}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 556  6
+{-, 41}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 557  6
+{-, 43}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 558  6
+{-, 47}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 559  6
+{-, 53}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 560  6
+{-, 59}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 561  6
+{-, 61}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 562  6
+{-, 67}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 563  6
+{-, 71}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 564  6
+{-, 73}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 565  6
+{-, 79}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 566  6
+{-, 83}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 567  6
+{-, 89}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 568  6
+{-, 97}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 569  6
+{-, 101}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 570  6
+{-, 103}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 571  6
+{-, 107}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 572  6
+{-, 109}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 573  6
+{-, 113}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 574  6
+{-, 127}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 575  6
+{-, 131}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 576  6
+{-, 137}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 577  6
+{-, 139}
+ 7 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 578  6
+{-, 149}
+ 7 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 579  1
+{-, 3}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 580  1
+{-, 5}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 581  1
+{-, 7}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 582  1
+{-, 11}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 583  1
+{-, 13}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 584  1
+{-, 17}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 585  1
+{-, 19}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 586  1
+{-, 23}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 587  1
+{-, 29}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 588  1
+{-, 31}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 589  1
+{-, 37}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 590  1
+{-, 41}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 591  1
+{-, 43}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 592  1
+{-, 47}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 593  1
+{-, 53}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 594  1
+{-, 59}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 595  1
+{-, 61}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 596  1
+{-, 67}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 597  1
+{-, 71}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 598  1
+{-, 73}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 599  1
+{-, 79}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 600  1
+{-, 83}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 601  1
+{-, 89}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 602  1
+{-, 97}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 603  1
+{-, 101}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 604  1
+{-, 103}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 605  1
+{-, 107}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 606  1
+{-, 109}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 607  1
+{-, 113}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 608  1
+{-, 127}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 609  1
+{-, 131}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 610  1
+{-, 137}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 611  1
+{-, 139}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 612  1
+{-, 149}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 613  3
+{-, 3}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 614  3
+{-, 5}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 615  3
+{-, 7}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 616  3
+{-, 11}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 617  3
+{-, 13}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 618  3
+{-, 17}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 619  3
+{-, 19}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 620  3
+{-, 23}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 621  3
+{-, 29}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 622  3
+{-, 31}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 623  3
+{-, 37}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 624  3
+{-, 41}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 625  3
+{-, 43}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 626  3
+{-, 47}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 627  3
+{-, 53}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 628  3
+{-, 59}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 629  3
+{-, 61}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 630  3
+{-, 67}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 631  3
+{-, 71}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 632  3
+{-, 73}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 633  3
+{-, 79}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 634  3
+{-, 83}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 635  3
+{-, 89}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 636  3
+{-, 97}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 637  3
+{-, 101}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 638  3
+{-, 103}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 639  3
+{-, 107}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 640  3
+{-, 109}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 641  3
+{-, 113}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 642  3
+{-, 127}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 643  3
+{-, 131}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 644  3
+{-, 137}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 645  3
+{-, 139}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 646  3
+{-, 149}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 647  5
+{-, 3}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 648  5
+{-, 5}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 649  5
+{-, 7}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 650  5
+{-, 11}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 651  5
+{-, 13}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 652  5
+{-, 17}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 653  5
+{-, 19}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 654  5
+{-, 23}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 655  5
+{-, 29}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 656  5
+{-, 31}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 657  5
+{-, 37}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 658  5
+{-, 41}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 659  5
+{-, 43}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 660  5
+{-, 47}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 661  5
+{-, 53}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 662  5
+{-, 59}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 663  5
+{-, 61}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 664  5
+{-, 67}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 665  5
+{-, 71}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 666  5
+{-, 73}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 667  5
+{-, 79}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 668  5
+{-, 83}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 669  5
+{-, 89}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 670  5
+{-, 97}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 671  5
+{-, 101}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 672  5
+{-, 103}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 673  5
+{-, 107}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 674  5
+{-, 109}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 675  5
+{-, 113}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 676  5
+{-, 127}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 677  5
+{-, 131}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 678  5
+{-, 137}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 679  5
+{-, 139}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 680  5
+{-, 149}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 681  7
+{-, 3}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 682  7
+{-, 5}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 683  7
+{-, 7}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 684  7
+{-, 11}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 685  7
+{-, 13}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 686  7
+{-, 17}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 687  7
+{-, 19}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 688  7
+{-, 23}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 689  7
+{-, 29}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 690  7
+{-, 31}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 691  7
+{-, 37}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 692  7
+{-, 41}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 693  7
+{-, 43}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 694  7
+{-, 47}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 695  7
+{-, 53}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 696  7
+{-, 59}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 697  7
+{-, 61}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 698  7
+{-, 67}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 699  7
+{-, 71}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 700  7
+{-, 73}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 701  7
+{-, 79}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 702  7
+{-, 83}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 703  7
+{-, 89}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 704  7
+{-, 97}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 705  7
+{-, 101}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 706  7
+{-, 103}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 707  7
+{-, 107}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 708  7
+{-, 109}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 709  7
+{-, 113}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 710  7
+{-, 127}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 711  7
+{-, 131}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 712  7
+{-, 137}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 713  7
+{-, 139}
+ 8 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 714  7
+{-, 149}
+ 8 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 715  1
+{-, 3}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 716  1
+{-, 5}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 717  1
+{-, 7}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 718  1
+{-, 11}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 719  1
+{-, 13}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 720  1
+{-, 17}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 721  1
+{-, 19}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 722  1
+{-, 23}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 723  1
+{-, 29}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 724  1
+{-, 31}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 725  1
+{-, 37}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 726  1
+{-, 41}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 727  1
+{-, 43}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 728  1
+{-, 47}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 729  1
+{-, 53}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 730  1
+{-, 59}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 731  1
+{-, 61}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 732  1
+{-, 67}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 733  1
+{-, 71}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 734  1
+{-, 73}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 735  1
+{-, 79}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 736  1
+{-, 83}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 737  1
+{-, 89}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 738  1
+{-, 97}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 739  1
+{-, 101}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 740  1
+{-, 103}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 741  1
+{-, 107}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 742  1
+{-, 109}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 743  1
+{-, 113}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 744  1
+{-, 127}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 745  1
+{-, 131}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 746  1
+{-, 137}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 747  1
+{-, 139}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 748  1
+{-, 149}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 749  2
+{-, 3}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 750  2
+{-, 5}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 751  2
+{-, 7}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 752  2
+{-, 11}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 753  2
+{-, 13}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 754  2
+{-, 17}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 755  2
+{-, 19}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 756  2
+{-, 23}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 757  2
+{-, 29}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 758  2
+{-, 31}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 759  2
+{-, 37}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 760  2
+{-, 41}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 761  2
+{-, 43}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 762  2
+{-, 47}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 763  2
+{-, 53}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 764  2
+{-, 59}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 765  2
+{-, 61}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 766  2
+{-, 67}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 767  2
+{-, 71}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 768  2
+{-, 73}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 769  2
+{-, 79}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 770  2
+{-, 83}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 771  2
+{-, 89}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 772  2
+{-, 97}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 773  2
+{-, 101}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 774  2
+{-, 103}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 775  2
+{-, 107}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 776  2
+{-, 109}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 777  2
+{-, 113}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 778  2
+{-, 127}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 779  2
+{-, 131}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 780  2
+{-, 137}
+ 9 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 781  2
+{-, 139}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 782  2
+{-, 149}
+ 9 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 783  1
+{--, 3}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 784  1
+{--, 5}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 785  1
+{--, 7}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 786  1
+{--, 11}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 787  1
+{--, 13}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 788  1
+{--, 17}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 789  1
+{--, 19}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 790  1
+{--, 23}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 791  1
+{--, 29}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 792  1
+{--, 31}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 793  1
+{--, 37}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 794  1
+{--, 41}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 795  1
+{--, 43}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 796  1
+{--, 47}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 797  1
+{--, 53}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 798  1
+{--, 59}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 799  1
+{--, 61}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 800  1
+{--, 67}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 801  1
+{--, 71}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 802  1
+{--, 73}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 803  1
+{--, 79}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 804  1
+{--, 83}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 805  1
+{--, 89}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 806  1
+{--, 97}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 807  1
+{--, 101}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 808  1
+{--, 103}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 809  1
+{--, 107}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 810  1
+{--, 109}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 811  1
+{--, 113}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 812  1
+{--, 127}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 813  1
+{--, 131}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 814  1
+{--, 137}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 815  1
+{--, 139}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 816  1
+{--, 149}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 817  3
+{--, 3}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 818  3
+{--, 5}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 819  3
+{--, 7}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 820  3
+{--, 11}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 821  3
+{--, 13}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 822  3
+{--, 17}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 823  3
+{--, 19}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 824  3
+{--, 23}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 825  3
+{--, 29}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 826  3
+{--, 31}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 827  3
+{--, 37}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 828  3
+{--, 41}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 829  3
+{--, 43}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 830  3
+{--, 47}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 831  3
+{--, 53}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 832  3
+{--, 59}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 833  3
+{--, 61}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 834  3
+{--, 67}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 835  3
+{--, 71}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 836  3
+{--, 73}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 837  3
+{--, 79}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 838  3
+{--, 83}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 839  3
+{--, 89}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 840  3
+{--, 97}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 841  3
+{--, 101}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 842  3
+{--, 103}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 843  3
+{--, 107}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 844  3
+{--, 109}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 845  3
+{--, 113}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 846  3
+{--, 127}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 847  3
+{--, 131}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 848  3
+{--, 137}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 849  3
+{--, 139}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 850  3
+{--, 149}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 851  7
+{--, 3}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 852  7
+{--, 5}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 853  7
+{--, 7}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 854  7
+{--, 11}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 855  7
+{--, 13}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 856  7
+{--, 17}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 857  7
+{--, 19}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 858  7
+{--, 23}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 859  7
+{--, 29}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 860  7
+{--, 31}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 861  7
+{--, 37}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 862  7
+{--, 41}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 863  7
+{--, 43}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 864  7
+{--, 47}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 865  7
+{--, 53}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 866  7
+{--, 59}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 867  7
+{--, 61}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 868  7
+{--, 67}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 869  7
+{--, 71}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 870  7
+{--, 73}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 871  7
+{--, 79}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 872  7
+{--, 83}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 873  7
+{--, 89}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 874  7
+{--, 97}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 875  7
+{--, 101}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 876  7
+{--, 103}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 877  7
+{--, 107}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 878  7
+{--, 109}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 879  7
+{--, 113}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 880  7
+{--, 127}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 881  7
+{--, 131}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 882  7
+{--, 137}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point point 883  7
+{--, 139}
+ 10 in 0.1 s; total-ref {0, 0, 0, 0}
+mode point point 884  7
+{--, 149}
+ 10 in 0. s; total-ref {0, 0, 0, 0}
+mode point finished

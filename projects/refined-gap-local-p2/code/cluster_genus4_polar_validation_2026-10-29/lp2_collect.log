@@ -1,0 +1,15 @@
+2026-10-28 22:34:22  [g=2] 6 chunk files; failed reconstructions: 0
+2026-10-28 22:34:22  [g=2] total minus reference at 5 random rational points: {0, 0, 0, 0, 0}; symbolic: True
+2026-10-28 22:34:22  [g=2] VALIDATION OK: sum of decorated graphs = reference F20
+2026-10-28 22:34:22  [g=2] total polar part {t_c^-2, ..., t_c^-1} (eps1 = x, eps2 = 1): {-1/1920*(7 + 10*x^2 + 7*x^4)/x, 0}; expected leading -1/1920*(7 + 10*x^2 + 7*x^4)/x
+2026-10-28 22:34:22  [g=2] VALIDATION OK: conifold gap
+2026-10-28 22:34:22  [g=2] wrote localP2_graphterms_genus2.m (17 entries) and localP2_polar_genus2.m
+2026-10-28 22:34:22  [g=2] done
+2026-10-28 22:37:44  [g=3] 6 chunk files; failed reconstructions: 0
+2026-10-28 22:37:44  [g=3] total minus reference at 5 random rational points: {0, 0, 0, 0, 0}; symbolic: True
+2026-10-28 22:37:44  [g=3] VALIDATION OK: sum of decorated graphs = reference F30
+2026-10-28 22:37:44  [g=3] total polar part {t_c^-4, ..., t_c^-1} (eps1 = x, eps2 = 1): {-1/17920*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}; expected leading -1/17920*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x
+2026-10-28 22:37:44  [g=3] VALIDATION OK: conifold gap
+2026-10-28 22:37:45  [g=3] wrote localP2_graphterms_genus3.m (378 entries) and localP2_polar_genus3.m
+2026-10-28 22:37:46  [g=3] VALIDATION OK: all 378 genus-3 decorated graphs and polar parts agree with the stored results
+2026-10-28 22:37:46  [g=3] done

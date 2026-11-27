@@ -1,0 +1,10 @@
+genus 3 stable graphs: 42
+eps 3 7 imag part zero: True time 2.4
+  total-GW0 =5.3658e-11 ; (total-GW0)/Q - GW1 = -2.9292e-08 ; ((total-GW0)-Q GW1)/Q^2 - GW2 = 2.8279e-06 ; ...-GW3 = -1.5972e-04
+  GW0 125/2016 GW1 2271671/42336 GW2 -206682949/7056
+eps 1 1 imag part zero: True time 2.4
+  total-GW0 =8.2837e-14 ; (total-GW0)/Q - GW1 = -4.0003e-11 ; ((total-GW0)-Q GW1)/Q^2 - GW2 = 3.6967e-09 ; ...-GW3 = -2.0324e-07
+  GW0 1/10080 GW1 167/2016 GW2 -13441/336
+eps 5/2 -3/7 imag part zero: True time 2.5
+  total-GW0 =3.7458e-15 ; (total-GW0)/Q - GW1 = 3.7096e-11 ; ((total-GW0)-Q GW1)/Q^2 - GW2 = -5.7630e-09 ; ...-GW3 = 4.1434e-07
+  GW0 707281/6195732480 GW1 9747346003/2602207641600 GW2 4022094163513/108425318400

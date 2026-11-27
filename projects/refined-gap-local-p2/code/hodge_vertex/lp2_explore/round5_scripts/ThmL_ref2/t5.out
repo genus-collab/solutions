@@ -1,0 +1,13 @@
+﻿Lemma 3.2 g 1 U (2,) (False, 10)
+Lemma 3.2 g 2 U (2,) (False, 10)
+Lemma 3.2 g 2 U (3,) (False, 10)
+Lemma 3.2 g 2 U (2, 3) (False, 10)
+Lemma 3.2 g 3 U (2,) (False, 10)
+Lemma 3.2 g 3 U (4,) (False, 10)
+Lemma 3.2 g 3 U (2, 5) (False, 10)
+Lemma 3.2 g 4 U (3,) (False, 10)
+low n relations 140 failures 0
+V_nu eq(3) vs hook product, max rel diff 6.661338147750939e-16
+h 2 Xi(empty) coeffs in (1/sigma)^j: [Fraction(-1, 240), Fraction(-7, 1440), Fraction(-7, 5760)] predict check True
+h 3 Xi(empty) coeffs in (1/sigma)^j: [Fraction(1, 1008), Fraction(41, 20160), Fraction(31, 26880), Fraction(31, 161280)] predict check True
+h 4 Xi(empty) coeffs in (1/sigma)^j: [Fraction(-1, 1440), Fraction(-67, 30240), Fraction(-103, 48384), Fraction(-127, 161280), Fraction(-127, 1290240)] predict check True

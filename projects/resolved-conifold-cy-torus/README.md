@@ -27,10 +27,11 @@ Outputs:
 - `data/`: where the result tables are, and the large files in
   [genus-collab/data](https://github.com/genus-collab/data). See [`data/README.md`](data/README.md).
 
-Related project: the companion project on local P² × C² (cited as [GEN26] in the PDF) proves the two
-theorems on Hodge integrals used in Theorem C (Theorems 6.8 and 6.9 of `main.pdf`), and itself uses Lemma A of
-this project (`code/hodge_vertex_conifold/lemmaA/LEMMA_A_PROOF.md`). It is to be added to the GENUS
-repositories; the link will be added here.
+Related project: [solutions/refined-gap-local-p2](../refined-gap-local-p2/), the companion project on
+local P² × C² (cited as [GEN26] in the PDF). It proves the two theorems on Hodge integrals used in Theorem C
+(Theorems 6.8 and 6.9 of `main.pdf`, which quote Theorem 8.1, Corollaries 8.2–8.4 and Theorem 9.1 of its
+`main.pdf`), and its working notes use Lemma A of this project
+(`code/hodge_vertex_conifold/lemmaA/LEMMA_A_PROOF.md`).
 
 ## Contributors
 

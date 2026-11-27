@@ -1,0 +1,42 @@
+[z^0] q^3 Op S = 0
+[z^1] q^3 Op S = 0
+[z^2] q^3 Op S = 0
+[z^3] q^3 Op S = 0
+[z^4] q^3 Op S = 0
+[z^5] q^3 Op S = 0
+[z^6] q^3 Op S = 0
+[z^7] q^3 Op S = 0
+[z^8] q^3 Op S = 0
+[z^9] q^3 Op S = 0
+PF/WKB identity through z^9: EXACT ZERO
+
+Structure of the transport recursion (exact, on the basis s^n):
+ n=1: Op1(s * s^0) + (s^0)' = 0; q^3 | q^3 Op2(s^1): yes; q^3 | q^3 Op3(s^1): yes
+     Op3(s^1) = (1/18) s^0 + (-1/27) s^1
+     Op2(s^1) = (1/9) s^0
+ n=2: Op1(s * s^1) + (s^1)' = 0; q^3 | q^3 Op2(s^2): yes; q^3 | q^3 Op3(s^2): yes
+     Op3(s^2) = (-1/2) s^0 + (7/9) s^1 + (-8/27) s^2
+     Op2(s^2) = (-3/2) s^0 + (7/9) s^1
+ n=3: Op1(s * s^2) + (s^2)' = 0; q^3 | q^3 Op2(s^3): yes; q^3 | q^3 Op3(s^3): yes
+     Op3(s^3) = (-3) s^1 + (19/6) s^2 + (-1) s^3
+     Op2(s^3) = (-5) s^1 + (19/9) s^2
+ n=4: Op1(s * s^3) + (s^3)' = 0; q^3 | q^3 Op2(s^4): yes; q^3 | q^3 Op3(s^4): yes
+     Op3(s^4) = (-9) s^2 + (74/9) s^3 + (-64/27) s^4
+     Op2(s^4) = (-21/2) s^2 + (37/9) s^3
+ n=5: Op1(s * s^4) + (s^4)' = 0; q^3 | q^3 Op2(s^5): yes; q^3 | q^3 Op3(s^5): yes
+     Op3(s^5) = (-20) s^3 + (305/18) s^4 + (-125/27) s^5
+     Op2(s^5) = (-18) s^3 + (61/9) s^4
+ n=6: Op1(s * s^5) + (s^5)' = 0; q^3 | q^3 Op2(s^6): yes; q^3 | q^3 Op3(s^6): yes
+     Op3(s^6) = (-75/2) s^4 + (91/3) s^5 + (-8) s^6
+     Op2(s^6) = (-55/2) s^4 + (91/9) s^5
+
+Sources src_k = -(Op2 S_{k-1} + Op3 S_{k-2}) for the stored rows (transport: sigma_k' = -src_k... sign as computed):
+ k=1: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..0; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0
+ k=2: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..1; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0
+ k=3: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..2; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0
+ k=4: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..3; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0
+ k=5: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..4; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0
+ k=6: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..5; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0
+ k=7: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..6; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0
+ k=8: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..7; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0
+ k=9: q^3 divides q^3*(Op2 S_{k-1}+Op3 S_{k-2}): yes; quotient s-exponents 0..8; (Op2 S_{k-1}+Op3 S_{k-2}) - d sigma_k/ds = 0

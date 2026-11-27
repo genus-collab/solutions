@@ -1,0 +1,9 @@
+tau 2/7
+M_1((1)) -49/432 expected -49/432
+X_1(1) -67/432 expected -67/432
+X_2(2) 0  X_2(3) 1367/186624  X_2(2,2) 2075/62208
+X_3(2),(3),(4) 0 0 0  X_3(2,2) 0  X_3(5) 205027/47029248
+relations 48 fails 0
+target coefficient ok 24 bad 0
+control flip c(odd,k): nonzero 13 of 24
+control beta->-beta: nonzero 13 of 24

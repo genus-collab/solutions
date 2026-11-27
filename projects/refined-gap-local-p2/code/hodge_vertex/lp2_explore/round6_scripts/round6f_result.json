@@ -1,0 +1,83 @@
+{
+ "refQDE": {
+  "verdict": "sound_with_minor_fixes",
+  "major": [],
+  "minor": [
+   "F1, equivariant lift of Lemma 1 (a real but one-paragraph gap). Pandharipande states Lemma 1 for psi_1 in H^2(Mbar_{0,n}(X,beta);Q), non-equivariantly (pand.txt line 307, with the class fixed at about line 180). The derivation needs it in H^2_T. A non-equivariant identity leaves room for a character of T as a correction. Insert after '(P2 is convex; opened in round 6e)': 'Lemma 1 is stated non-equivariantly; the T-equivariant form is as follows. Let c: C -> M x P^1 be the contraction of the universal curve onto the stabilisation of (C; p_1, p_2, p_3), with w the coordinate on P^1 such that p_1, p_2, p_3 go to 0, 1, infinity. T acts on M by composition with f only, so c is T-invariant and T acts trivially on P^1. Hence s_1^* c^* dw is a T-invariant section of L_1. It vanishes exactly where c contracts the component of p_1, that is on the divisors separating 1 from 2, 3. The vanishing order is 1 at the generic point of each: near a node xy = s, with p_1 at y = y_0, one has w = s/y - s/y_0 and dw = -s dy/y^2. So c_1^T(L_1) = Sum [D]^T, with no character correction.'",
+   "F2, bracket convention (the bullet leaves it undefined, and the printed BS definition makes the QDE false). eq:gwprim (BS line 2446) is printed with d > 0, no 1/m! and no Q^d. With d > 0 only, <<c,a,b>> loses eta(ca,b) and S loses Q^{H/z}. Insert before 'Put V(a,b)': 'Here <<x_1,...,x_n>> := Sum_{d>=0} Sum_{m>=0} (Q^d/m!) <x_1,...,x_n,t,...,t>_{0,n+m,d}, the sum over (d,n+m) with d > 0 or n+m >= 3, in Kw[[Q]][[t_0,t_1,t_2]], with Q a Novikov variable. This is not eq:gwprim as printed (d > 0, no 1/m!, no Q^d). It is the reading that eq:qprod and eq:Jred use, and the summation of Pandharipande s.1.3.'",
+   "F3, the restriction step. 'Restrict to t_0 = t_2 = 0, t_1 = log Q, where d_1 = theta_Q' is correct but compresses three things: the Novikov bookkeeping, the descendant divisor equation (A1.5 has only the primary form), and d = 0 at n = 2, where no forgetful map exists. Replace that sentence by: 'Restrict to t_0 = t_2 = 0. For d > 0 the descendant divisor equation <x, psi^k b, H>_d = d <x, psi^k b>_d + <x, psi^{k-1}(bH)>_d holds (from psi_2 = ft^*psi_2 + D_{2,3}, ft_* ev^*H = d, and the twist pulled back, Coates-Givental App. 1 (iv)). For d = 0 direct evaluation on Mbar_{0,2+m} gives <a, psi^{m-1} b, H,...,H>_{0,2+m,0} = eta(a H^m, b), other powers of psi vanishing. Since multiplication by H is eta-self-adjoint, S(a)|_{t_1 H} = e^{t_1 H/z}(a + Sum_{d>0} (Q e^{t_1})^d Sum_{c,b} H^c eta^{cb} <a, H^b/(z-psi)>_{0,2,d}). Each coefficient of z^{-k} lies in Kw[t_1][[Q e^{t_1}]]. So we may set the Novikov variable to 1, call Q e^{t_1} the new Q and put t_1 = log Q. Then d_1 acts as theta_Q, including on Q^{H/z}.'",
+   "F4, commutativity. The sentence is correct, but the product-rule term is suppressed, and that term is what makes the argument need a z-grading. Replace 'WDVV is not used; commutativity ... is invertible.' by: 'WDVV is not used. Since z d_c [S(e*a)] = z S(d_c(e*a)) + S(c*(e*a)) and d_c d_e = d_e d_c, we get z S(d_c(e*a) - d_e(c*a)) + S(c*(e*a) - e*(c*a)) = 0. S = 1 + O(1/z) is invertible and both arguments are free of z, so c*(e*a) = e*(c*a). This uses the full formal t-space, not only the small locus.'",
+   "F5, unit and string (A2.1 uses them; the bullet does not derive them). A1.4 covers classes pulled back from Mbar_{g,n}, not psi on the stable-map space. Insert after 'So z d_c S(a) = S(c*a).': 'By the string equation (Pandharipande s.1.2 I, from psi_i = ft^*psi_i + D_{i,n+1}, twist pulled back) and <1,a,b>_{0,3,0} = eta(a,b), one has 1*a = a and S(1) = J/z, and S(H) = d_1 J by eq:fundsol. So S(H) = z theta_Q S(1) in A2.1 is the case c = H, a = 1.'",
+   "F6, input (b) and properness (the content is right, the statement should be explicit, since the bullet says 'theory of Z' and rejects Iritani for needing properness). Insert after Input (b): 'The restriction holds for every stable splitting, because 0 -> f^*N -> f_A^*N + f_B^*N -> ev^*N -> 0 is exact on the glued family and R pi_* commutes with base change. If d_1 = 0, side A contributes e(ev^*N)^{-1}, which cancels the node factor; e(N) = -3H eps1 eps2 is invertible in V because H|P_i = -alpha_i != 0, so the TRR is an identity over Kw with no non-equivariant limit. The case d_1 = 0, A = {b} is not a divisor; the term eta(e,b) of V takes its place, through Sum eta(e,b) eta^{ef} <<f,c,a>> = <<b,c,a>>. All integrals are over the smooth proper Mbar_{0,n}(P2,d), with the fundamental class as virtual class, so no properness of Z is used. Z enters only through A1.1 and A1.2: the fixed loci, universal curves and cotangent lines coincide, so psi insertions are covered, and BS''s pairing is eta.'",
+   "F7, dictionary in the eq:J=I bullet. 'u_j|P_i are BS's tangent weights w^{(j)}_i' is false index by index: u_i|P_i = 0, while BS has w^{(i)}_i = 3 alpha_i. Replace by: 'The non-zero u_j|P_i (j = 0,...,5) are, as a set, BS's tangent weights at P_i (BS line 2383). The indices differ: BS's w^{(i)}_i = 3 alpha_i is u_3|P_i, and BS's w^{(j)}_i = -eps_{j-2} (j = 3,4) is u_{j+1}|P_i.'",
+   "F8, errata. FRAMEB_PROOF.md line 64 and s.5.1 item 1 treat line 2446 as GW_g, but line 2446 is the double bracket of eq:gwprim. Line 1169 of the draft words it correctly. At line 64 replace by: 'BS's GW_g as printed (line 1277) has d > 0 only, as do the correlators of eq:gwprim (line 2446).' In s.5.1 item 1 write 'GW_g (line 1277) and the correlators of eq:gwprim (line 2446) are printed with d > 0'. Add s.5.1 item 13: '13. **Line 2446 (eq:gwprim).** The double bracket is printed with d > 0, without 1/m! and without Q^d. eq:qprod, eq:fundsol, eq:Jred and the QDE need Sum_{d>=0, m>=0} (Q^d/m!) over stable (d, n+m). With the printed range the QDE is false.'"
+  ],
+  "checked": [
+   "Psi relation re-derived by hand from the contraction to the 3-pointed stabilisation. Divisors: A contains 1, B contains 2 and 3; side B is always stable; side A with d_1 = 0 needs |A| >= 2. Multiplicity 1 from the local model xy = s. Equivariance from T-invariance of the section (F1). A fixed-map consistency check: a marking on an edge forces the fixed map onto D(b|c,a), matching the non-zero weight of L_b there.",
+   "Twisted class on boundary divisors, by the normalisation sequence and by direct R^1 sequences, in all cases: d_1, d_2 > 0 (factor -3H from the node, 1/(eps1 eps2) global); d_1 = 0; d_2 = 0; both 0. The formula is correct in all of them.",
+   "e(N)[Diagonal] = Sum eta^{ef} phi_e (x) phi_f, checked in the fixed-point basis. eq:etaflat re-derived by hand from Int H^{a+b}/(-3H eps1 eps2), including Int H^{-1} = -1/e_3.",
+   "TRR <<c,a,psi^{k+1} b>> = Sum <<psi^k b,e>> eta^{ef} <<f,c,a>>, with the stable-splitting range correct; d = 0 correct, giving <psi^k b, ca> when side B is 3-pointed at d = 0.",
+   "z d_c V(a,b) = V(c*a,b) and z d_c S(a) = S(c*a), term by term; the eta(e,b) term produces exactly <<b,c,a>>.",
+   "Convention against BS eq:fundsol: S(a) = Sum H^c eta^{cb} V(a,H^b) is that formula, with psi on the output index, so the operator acts on the input slot. Same as Pandharipande s.1.3 Prop 2 (his flat field is S_ab g^{as} with b fixed), as BS eq:SJ1, eq:SJ2, and as the rows f_j^* S(H^a). A2.1 QDE form confirmed.",
+   "A2.1 Row 2 re-derived: C^0_11 = 0, C^1_11 = e_1 E(y)/A, C^2_11 = D/A, eq:SHb; eq:Ian coefficients re-derived, including the H_d and H_{3d-1} - H_d terms.",
+   "Small-locus form S(a) = e^{t_1 H/z}(a + ...) and d_1 = theta_Q (F3). Commutativity argument, with the product-rule term (F4).",
+   "Properness: not needed in the QDE derivation (F6). Everything is on proper smooth Mbar_{0,n}(P2,d).",
+   "eq:J=I bullet by hand: factors of (19) at S empty, t = 0; d < 0 summands vanish (factor u_0 u_1 u_2; Remark 30); homogeneity degree -1; leading term 3H(-1)^d (3d-1)!/(d!)^3 z^{-1}; H_+ part -z + g H with g(0) = 0, so (5) holds; Theorem 31 and Remark 3 signs at -z; divisor step including d = 0 giving z e^{tau H/z}; Q = y e^{g(y)} = exp I_0^{[1]}; final form matches eq:Jred. Also L, mu_3 kernel and index 3 of character lattices, one cone unimodular, the support function strictly convex on one cone, and the eps1 eps2 cancellation in J. Only the index defect of F7 was found.",
+   "Text of Lemma 1, equation (6), Prop 2 and CCIT15 (4), (5), Definition 28, Remark 3, Remark 30, Theorem 31, read from the cached copies under scratchpad/lp2_round6/round6e/citeO1/dl.",
+   "Evidence only, not a proof step: fresh exact tree localisation, no project import, one weight point alpha = (2/7,5/11,-3/13), eps = (3,7); script <user home>/AppData/Local/Temp/claude/G--My-Drive-Projects-Old-refGW/37f24460-3601-4c85-b123-5156e19eb475/scratchpad/lp2_round6/round6f/qde_read/check.py. Results: T-equivariant TRR with 0 failures in 72 cases (n = 3, d <= 3) and 36 cases (n = 4 with one t, d <= 2); descendant divisor and string, 0 failures at d <= 2; d = 0 formula eta(a H^m, b) true for m <= 3; J = I at all P_i through y^3 at z = 13/3, -7/2; eq:etaflat true; eps1 eps2 <H,H,H>_d/d^3 = 3, -45/8, 244/9; untwisted <pt,pt>_1 = <pt^5>_2 = 1. Controls: the untwisted diagonal and a psi shifted by a weight both fail, as they must. Each control was run once, on one correlator at d = 2."
+  ],
+  "not_checked": [
+   "The proof of CCIT15 Theorem 31 (Theorem 41, Props 45-47), and the journal print of the theorem number.",
+   "CCIT15 s.2.2 and Liu eq. (51) were not re-read; the comparison with A1.2 was checked only at the level of the formulas in the bullet.",
+   "Iritani Prop 2.4 was located but its hypotheses were not re-read. The claim that no numbered theorem at T_max exists was not re-searched.",
+   "A1.1 and A1.2 were accepted as written; only their use for psi insertions was considered (F6).",
+   "Later uses of the QDE, in particular the third row in A2.4 and A2.2 onward.",
+   "Graber-Pandharipande and the passage from C^* to T (B5).",
+   "The item O1 dependency partition and ruling Q1, which remain for the user.",
+   "Numerics were run at one weight point only, and do not reach d = 4."
+  ]
+ },
+ "fix": {
+  "files_written": [
+   "G:/My Drive/Projects/Old/refGW/hodge_vertex/lp2_explore/FRAMEB_PROOF.md",
+   "G:/My Drive/Projects/Old/refGW/hodge_vertex/lp2_explore/LP2_REGULARITY_PROOF_draft.md",
+   "G:/My Drive/Projects/Old/refGW/hodge_vertex/lp2_explore/ROUND6_STATUS_2026-11-02.md",
+   "G:/My Drive/Projects/Old/refGW/hodge_vertex_conifold/leaf_proof/leaf_structure_proof.md",
+   "G:/My Drive/Projects/Old/refGW/hodge_vertex_conifold/conifold_regularity_note.md",
+   "G:/My Drive/Projects/Old/refGW/hodge_vertex/lp2_explore/round6_scripts/round6e/adopt/apply_status2.py",
+   "G:/My Drive/Projects/Old/refGW/hodge_vertex/lp2_explore/round6_scripts/round6e/adopt/status_new.md",
+   "<user home>/AppData/Local/Temp/claude/G--My-Drive-Projects-Old-refGW/37f24460-3601-4c85-b123-5156e19eb475/scratchpad/lp2_round6/round6f/fix/apply_round6f.py",
+   "<user home>/AppData/Local/Temp/claude/G--My-Drive-Projects-Old-refGW/37f24460-3601-4c85-b123-5156e19eb475/scratchpad/lp2_round6/round6f/fix/backup/ (pre-edit copies of the five files)"
+  ],
+  "applied": [
+   "All 63 exact-match edits matched exactly once (the script writes nothing unless all match). Line counts changed against the backups: FRAMEB 14, draft 15, ROUND6_STATUS 25, leaf 2, note 2. BS main.tex not touched (mtime 07:23).",
+   "Audit major 1, in the exception form, since the refQDE verdict is sound_with_minor_fixes. FRAMEB s.0.3 and draft s.0.2 keep 'at least one referee pass' and add a sentence: written by verify:ccit in round 6e, read once independently by refQDE (round 6f). The draft marker ROUND6C-REFEREES uses the audit's rewording of verify:ccit, with 'no independent pass' dropped, and gains a *Round 6f* entry for refQDE with its limits. ROUND6_STATUS s.2: row 6e reworded, new row 6f, heading now 6a-6f, round6f_result.json named.",
+   "Audit major 2: ROUND6_STATUS line 23 replaced by three rows (Lemma A_P2(b); R_P2 and SV_P2; Theorem VI). Checked first against LEMMA_A_PROOF.md line 426 ('uses nothing from Theorem L') and draft s.8.2 item 2.",
+   "Audit minor 1 (leaf line 1990).",
+   "Audit minor 2: the report lists in ROUND6_STATUS s.2 and the draft marker now include round6e_result.json and round6f_result.json. round6e_result.json already existed with keys verify, adopt, audit. apply_status2.py and status_new.md were not yet archived, so they were copied to round6e/adopt/ (status_new.md verified byte-identical with cmp).",
+   "Audit minor 3 (FRAMEB line 11 partition), after reading A2.2, A2.7, A3.3 and A3.4 and finding them consistent with the dependency claim.",
+   "Audit minor 4, 5, 6, 7, 8, 9 (ROUND6_STATUS s.1 and draft s.0.3 proviso list).",
+   "Audit minor 10 (FRAMEB line 11 heading).",
+   "Audit minor 11 (FRAMEB line 3, leaf line 13, refCon2 bullet). H^* at A1.7 and A3.3, the (F1), (F3) series wording and the moved evidence pointers were all confirmed in the current text. FRAMEB line 3 also now says rounds '6c, 6d, 6e and 6f'.",
+   "Audit minor 12 (FRAMEB lines 194, 383, s.0.3 bullet; draft lines 380, 512, 1119; ROUND6_STATUS s.3.2 bullet). The other occurrences at FRAMEB 66, 112, 116 already state the proviso and were left alone, as the audit lists only 194 and 383.",
+   "Audit minor 13, 14, 16, 17, 18, 19, 20.",
+   "Audit minor 15, extended to name the round-6f edits too: they are status and citation wording, read by no pass.",
+   "refQDE F1 (equivariant lift of Lemma 1), F2 (bracket convention), F3 (restriction step), F4 (commutativity), F5 (unit and string), F6 (input (b) and properness), F7 (index dictionary; BS line 2383 checked: w^{(i)}_i = 3 alpha_i, w^{(j)}_i = -eps_{j-2}) in the FRAMEB s.1.2 bullets. In F6 the report's doubled apostrophe in 'BS''s' was normalised to 'BS's'.",
+   "refQDE F8: FRAMEB line 64, s.5.1 item 1, new s.5.1 item 13.",
+   "Consistency edits not literally listed: ROUND6_STATUS s.4 headline 1 reworded and headline 13 added to match F8; FRAMEB provenance paragraph records refQDE F1-F8; ROUND6_STATUS opening line says 'updated in round 6f'; the former last bullet of FRAMEB s.0.3 now ends in a semicolon before the new bullet."
+  ],
+  "rejected": [
+   "Audit major 1 in its written form ('has had no independent pass' in FRAMEB line 147, draft lines 89 and 121, ROUND6_STATUS row 6e). Replaced by the exception form, as instructed, because refQDE is an independent reader with a sound verdict. No audit item was rejected as no longer applying: all other strings were present and all claims checked held.",
+   "Audit minor 2, the instruction to save round6e_result.json: no action, the file already exists with the expected keys."
+  ],
+  "flags": [
+   "round6_scripts/round6f_result.json does not exist yet, but ROUND6_STATUS s.2, the draft marker and FRAMEB now cite it. The main session must save it.",
+   "refQDE's evidence script exists only at <user home>/AppData/Local/Temp/claude/G--My-Drive-Projects-Old-refGW/37f24460-3601-4c85-b123-5156e19eb475/scratchpad/lp2_round6/round6f/qde_read/check.py and was not archived, since this step covered only round6e. Consider copying it to round6_scripts/round6f/qde_read/. No entry was added to FRAMEB s.A.1; this evidence is described only in the marker and in row 6f.",
+   "The inserted F1-F8 text and all round-6f status edits are read by no pass. The files say so (FRAMEB provenance, marker, row 6f, draft s.0.4). Their mathematics is refQDE's own derivation, applied without a further hand re-derivation here beyond a read of F1, F3, F4 and the F7 indices.",
+   "The status of the torus, semi-projectivity and A1.2 paragraphs is recorded precisely rather than as a full pass. refQDE checked the lattice statements and the comparison with A1.2 only at the level of the formulas in the bullet, and did not re-read CCIT15 s.2.2 or Liu eq. (51). The marker records this limit but does not list 'the support function on one cone' as a limit of the semi-projectivity check.",
+   "Open for the user: ruling Q1 on the T_max use (item O1) and the item O1 dependency partition, which no referee report has checked.",
+   "Minor 17 follows the audit literally and reads 'MR3414388, Theorem 31. (numbered as in arXiv v5; ...).', with a full stop before the parenthesis. It is cosmetic and could be tidied.",
+   "Draft line 73 still reads '(lines 1277, 2446)' for the d > 0 convention. It was left unedited because it is not in the refQDE or audit items and remains accurate; only FRAMEB's wording was singled out by F8."
+  ]
+ }
+}

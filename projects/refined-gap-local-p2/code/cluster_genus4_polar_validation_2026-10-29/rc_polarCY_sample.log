@@ -1,0 +1,236 @@
+2026-10-28 22:34:43  [g2_w4of6] start: genus 2, ZMAX 3, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:43  [g2_w4of6] 7 points assigned (of 40), 0 already done, 7 to do; 17 decorated graphs
+2026-10-28 22:34:43  [g2_w2of6] start: genus 2, ZMAX 3, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:43  [g2_w6of6] start: genus 2, ZMAX 3, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:43  [g2_w5of6] start: genus 2, ZMAX 3, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:43  [g2_w2of6] 7 points assigned (of 40), 0 already done, 7 to do; 17 decorated graphs
+2026-10-28 22:34:43  [g2_w5of6] 6 points assigned (of 40), 0 already done, 6 to do; 17 decorated graphs
+2026-10-28 22:34:44  [g2_w6of6] 6 points assigned (of 40), 0 already done, 6 to do; 17 decorated graphs
+2026-10-28 22:34:44  [g2_w4of6] point {2, -11, -3} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:44  [g2_w1of6] start: genus 2, ZMAX 3, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:44  [g2_w5of6] point {-8, -6, 1} done in 0.3 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:44  [g2_w1of6] 7 points assigned (of 40), 0 already done, 7 to do; 17 decorated graphs
+2026-10-28 22:34:44  [g2_w3of6] start: genus 2, ZMAX 3, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:44  [g2_w6of6] point {4, -4, 1} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:44  [g2_w2of6] point {6, -11, 4} done in 0.6 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:44  [g2_w3of6] 7 points assigned (of 40), 0 already done, 7 to do; 17 decorated graphs
+2026-10-28 22:34:44  [g2_w4of6] point {-3, 5, -9} done in 0.6 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:44  [g2_w5of6] point {9, -11, 2} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:44  [g2_w1of6] point {8, 10, -6} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:44  [g2_w6of6] point {-11, 7, -2} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:44  [g2_w3of6] point {-8, -1, 1} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w2of6] point {6, -12, -12} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w4of6] point {4, -9, -3} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w5of6] point {5, -9, -8} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w1of6] point {-9, -6, 12} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w6of6] point {8, 10, 4} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w3of6] point {12, -3, 6} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w2of6] point {12, -12, 1} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w4of6] point {3, 7, -9} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w5of6] point {-12, 6, -3} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w6of6] point {-10, 4, 11} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w1of6] point {-6, 3, 4} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w3of6] point {-12, 7, -4} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w2of6] point {-3, 11, 2} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:45  [g2_w4of6] point {12, 2, 7} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w5of6] point {-1, -4, -7} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w6of6] point {5, 6, -4} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w3of6] point {-3, -5, -5} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w1of6] point {2, -5, 11} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w2of6] point {12, 10, -2} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w4of6] point {-1, 4, 6} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w5of6] point {2, -6, 6} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w5of6] job finished
+2026-10-28 22:34:46  [g2_w1of6] point {-6, -5, 3} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w6of6] point {-10, -6, 12} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w6of6] job finished
+2026-10-28 22:34:46  [g2_w3of6] point {5, -5, 12} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w2of6] point {-11, 10, 3} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w4of6] point {3, 2, 10} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:46  [g2_w4of6] job finished
+2026-10-28 22:34:47  [g2_w1of6] point {-5, 6, 3} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:47  [g2_w3of6] point {6, 4, -4} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:47  [g2_w2of6] point {-8, -3, -11} done in 0.5 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:47  [g2_w2of6] job finished
+2026-10-28 22:34:47  [g2_w1of6] point {10, -6, -6} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:47  [g2_w1of6] job finished
+2026-10-28 22:34:47  [g2_w3of6] point {4, 7, -5} done in 0.4 s; sum of orbits = P_g Li polar part: True
+2026-10-28 22:34:47  [g2_w3of6] job finished
+2026-10-28 22:44:08  [g3_w4of6] start: genus 3, ZMAX 6, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:44:08  [g3_w1of6] start: genus 3, ZMAX 6, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:44:09  [g3_w3of6] start: genus 3, ZMAX 6, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:44:09  [g3_w2of6] start: genus 3, ZMAX 6, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:44:09  [g3_w5of6] start: genus 3, ZMAX 6, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:44:09  [g3_w6of6] start: genus 3, ZMAX 6, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:44:09  [g3_w4of6] 27 points assigned (of 160), 0 already done, 27 to do; 378 decorated graphs
+2026-10-28 22:44:10  [g3_w1of6] 27 points assigned (of 160), 0 already done, 27 to do; 378 decorated graphs
+2026-10-28 22:44:10  [g3_w3of6] 27 points assigned (of 160), 0 already done, 27 to do; 378 decorated graphs
+2026-10-28 22:44:10  [g3_w2of6] 27 points assigned (of 160), 0 already done, 27 to do; 378 decorated graphs
+2026-10-28 22:44:10  [g3_w5of6] 26 points assigned (of 160), 0 already done, 26 to do; 378 decorated graphs
+2026-10-28 22:44:10  [g3_w6of6] 26 points assigned (of 160), 0 already done, 26 to do; 378 decorated graphs
+2026-10-28 22:44:17  [g3_w6of6] point {4, -4, 1} done in 6.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:18  [g3_w4of6] point {2, -11, -3} done in 8.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:18  [g3_w5of6] point {-8, -6, 1} done in 7.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:18  [g3_w3of6] point {-8, -1, 1} done in 8.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:21  [g3_w1of6] point {8, 10, -6} done in 11.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:23  [g3_w2of6] point {6, -11, 4} done in 12.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:26  [g3_w6of6] point {-11, 7, -2} done in 8.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:28  [g3_w5of6] point {9, -11, 2} done in 10.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:31  [g3_w4of6] point {-3, 5, -9} done in 13.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:32  [g3_w3of6] point {12, -3, 6} done in 13.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:36  [g3_w6of6] point {8, 10, 4} done in 9.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:36  [g3_w1of6] point {-9, -6, 12} done in 15.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:37  [g3_w2of6] point {6, -12, -12} done in 14.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:40  [g3_w4of6] point {4, -9, -3} done in 9.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:42  [g3_w5of6] point {5, -9, -8} done in 13.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:43  [g3_w3of6] point {-12, 7, -4} done in 11.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:46  [g3_w2of6] point {12, -12, 1} done in 9. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:49  [g3_w6of6] point {-10, 4, 11} done in 13. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:49  [g3_w1of6] point {-6, 3, 4} done in 13. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:51  [g3_w5of6] point {-12, 6, -3} done in 9.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:52  [g3_w3of6] point {-3, -5, -5} done in 8.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:55  [g3_w4of6] point {3, 7, -9} done in 14.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:44:56  [g3_w2of6] point {-3, 11, 2} done in 10.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:00  [g3_w6of6] point {5, 6, -4} done in 10.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:02  [g3_w5of6] point {-1, -4, -7} done in 10.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:02  [g3_w4of6] point {12, 2, 7} done in 7.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:03  [g3_w1of6] point {2, -5, 11} done in 14.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:06  [g3_w3of6] point {5, -5, 12} done in 14.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:07  [g3_w2of6] point {12, 10, -2} done in 10.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:13  [g3_w1of6] point {-6, -5, 3} done in 9.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:15  [g3_w6of6] point {-10, -6, 12} done in 15.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:16  [g3_w4of6] point {-1, 4, 6} done in 13.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:17  [g3_w3of6] point {6, 4, -4} done in 10.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:17  [g3_w5of6] point {2, -6, 6} done in 14.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:18  [g3_w2of6] point {-11, 10, 3} done in 10.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:23  [g3_w1of6] point {-5, 6, 3} done in 9.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:26  [g3_w6of6] point {6, 2, -4} done in 10.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:27  [g3_w3of6] point {4, 7, -5} done in 10.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:30  [g3_w5of6] point {-1, -12, -11} done in 13.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:30  [g3_w4of6] point {3, 2, 10} done in 14.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:32  [g3_w2of6] point {-8, -3, -11} done in 14.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:34  [g3_w1of6] point {10, -6, -6} done in 11.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:37  [g3_w3of6] point {-11, 2, -2} done in 9.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:41  [g3_w6of6] point {3, -8, 12} done in 15.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:42  [g3_w2of6] point {7, 10, -3} done in 10.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:44  [g3_w1of6] point {4, 11, -2} done in 9.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:44  [g3_w5of6] point {-2, 7, 9} done in 13.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:46  [g3_w4of6] point {6, 8, -8} done in 15.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:52  [g3_w3of6] point {-6, -1, 10} done in 15.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:54  [g3_w6of6] point {1, 3, 6} done in 13.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:57  [g3_w2of6] point {8, 7, -12} done in 14.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:58  [g3_w1of6] point {2, -12, 8} done in 13.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:45:59  [g3_w5of6] point {-11, 3, 6} done in 15.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:00  [g3_w4of6] point {4, -3, -6} done in 13.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:02  [g3_w3of6] point {-6, 12, -2} done in 9.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:07  [g3_w6of6] point {6, 7, -7} done in 12.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:08  [g3_w1of6] point {2, 10, -9} done in 10.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:09  [g3_w2of6] point {8, -11, -5} done in 12.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:12  [g3_w5of6] point {7, 12, -8} done in 12.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:12  [g3_w3of6] point {9, 10, -3} done in 10.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:13  [g3_w4of6] point {-9, 4, 4} done in 13.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:20  [g3_w6of6] point {3, -2, 9} done in 13.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:21  [g3_w1of6] point {-1, -9, -8} done in 13.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:23  [g3_w2of6] point {-5, -7, -9} done in 13.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:24  [g3_w5of6] point {10, -2, 5} done in 11.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:26  [g3_w4of6] point {10, 5, -4} done in 13. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:27  [g3_w3of6] point {-7, 11, 11} done in 14.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:36  [g3_w6of6] point {4, -2, 8} done in 15.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:36  [g3_w1of6] point {10, 5, 6} done in 14.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:36  [g3_w2of6] point {-2, -8, 11} done in 13.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:38  [g3_w4of6] point {9, -4, -7} done in 11.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:38  [g3_w5of6] point {-1, 9, -9} done in 14.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:40  [g3_w3of6] point {12, 4, 4} done in 13.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:46  [g3_w4of6] point {-6, 2, -3} done in 8.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:46  [g3_w2of6] point {1, -2, 7} done in 9.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:49  [g3_w6of6] point {-4, -10, 11} done in 13.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:51  [g3_w1of6] point {5, -12, -10} done in 14.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:51  [g3_w3of6] point {-12, -10, 4} done in 11.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:52  [g3_w5of6] point {6, 3, -6} done in 14. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:56  [g3_w4of6] point {9, -1, 3} done in 9.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:46:56  [g3_w2of6] point {8, -7, -3} done in 10.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:01  [g3_w6of6] point {-7, -5, 2} done in 12.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:02  [g3_w5of6] point {-2, 7, 3} done in 9.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:05  [g3_w3of6] point {-8, 4, -11} done in 13.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:05  [g3_w1of6] point {6, -2, 12} done in 14.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:09  [g3_w4of6] point {5, 11, -4} done in 13.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:09  [g3_w5of6] point {7, 7, -8} done in 7.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:10  [g3_w2of6] point {-7, 12, -10} done in 13.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:18  [g3_w6of6] point {-11, -1, 11} done in 16.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:18  [g3_w2of6] point {-8, -8, 1} done in 8.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:19  [g3_w3of6] point {-9, -11, 8} done in 13.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:20  [g3_w1of6] point {4, 7, 8} done in 14.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:20  [g3_w4of6] point {-6, 11, 5} done in 11.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:25  [g3_w5of6] point {9, 5, -9} done in 15.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:27  [g3_w6of6] point {3, -2, -7} done in 9.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:28  [g3_w2of6] point {-5, 3, -4} done in 9.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:34  [g3_w3of6] point {-1, -2, 8} done in 15.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:35  [g3_w1of6] point {10, -8, -12} done in 15.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:36  [g3_w4of6] point {-11, -8, 11} done in 15.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:37  [g3_w2of6] point {12, -4, -7} done in 9.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:39  [g3_w5of6] point {-3, -3, -11} done in 14.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:43  [g3_w6of6] point {-4, 3, 12} done in 15.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:43  [g3_w3of6] point {-5, -5, 1} done in 9.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:48  [g3_w2of6] point {8, 11, -3} done in 11. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:49  [g3_w1of6] point {9, -3, 4} done in 13.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:51  [g3_w4of6] point {11, -7, 8} done in 15.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:54  [g3_w5of6] point {6, -11, -11} done in 15. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:54  [g3_w6of6] point {3, 7, -7} done in 11.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:55  [g3_w3of6] point {-10, 2, 5} done in 11.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:47:57  [g3_w2of6] point {12, -12, 5} done in 8.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:03  [g3_w1of6] point {11, -8, -10} done in 14.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:03  [g3_w3of6] point {1, 9, 2} done in 8.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:04  [g3_w5of6] point {2, -10, -2} done in 9.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:07  [g3_w6of6] point {4, 5, -4} done in 13. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:08  [g3_w4of6] point {-6, 7, 12} done in 16.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:10  [g3_w2of6] point {-7, -9, -9} done in 13.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:13  [g3_w5of6] point {5, -8, -3} done in 9.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:14  [g3_w1of6] point {-5, 7, 9} done in 11.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:18  [g3_w3of6] point {-3, 9, 7} done in 14.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:21  [g3_w2of6] point {7, -6, 5} done in 11. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:23  [g3_w6of6] point {10, 8, 6} done in 15.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:23  [g3_w4of6] point {-8, 4, -12} done in 15.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:26  [g3_w1of6] point {-2, -9, -9} done in 11.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:29  [g3_w5of6] point {1, 11, -10} done in 15.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:31  [g3_w3of6] point {2, 12, 9} done in 12.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:34  [g3_w4of6] point {-2, -8, -4} done in 11.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:35  [g3_w2of6] point {11, 11, 7} done in 13.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:38  [g3_w1of6] point {10, 9, -6} done in 11.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:38  [g3_w6of6] point {9, -3, -11} done in 15. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:41  [g3_w5of6] point {10, -2, -4} done in 12.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:45  [g3_w3of6] point {-8, 6, 6} done in 14.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:46  [g3_w4of6] point {-6, 11, 11} done in 11.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:50  [g3_w2of6] point {-3, 9, -11} done in 15.5 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:50  [g3_w5of6] point {6, -5, 3} done in 9.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:53  [g3_w6of6] point {5, -12, -12} done in 15.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:53  [g3_w1of6] point {4, -10, 12} done in 15.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:54  [g3_w3of6] point {-8, -10, -3} done in 9. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:48:59  [g3_w4of6] point {1, 6, -10} done in 13.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:01  [g3_w2of6] point {4, -7, -5} done in 11.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:02  [g3_w1of6] point {-8, -10, 1} done in 9.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:05  [g3_w5of6] point {-1, 8, -11} done in 14.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:09  [g3_w6of6] point {4, -7, 8} done in 16.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:10  [g3_w4of6] point {-4, -8, -7} done in 11.3 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:10  [g3_w3of6] point {7, 12, -12} done in 15.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:11  [g3_w1of6] point {-4, 10, 3} done in 8.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:14  [g3_w5of6] point {1, 10, 3} done in 9.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:17  [g3_w2of6] point {5, 3, 10} done in 15.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:20  [g3_w6of6] point {-7, -2, 3} done in 11. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:21  [g3_w4of6] point {4, -4, 11} done in 11.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:23  [g3_w1of6] point {-1, -6, -6} done in 12.4 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:25  [g3_w3of6] point {2, -11, 6} done in 14.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:29  [g3_w5of6] point {-3, -10, -12} done in 14.8 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:29  [g3_w5of6] job finished
+2026-10-28 22:49:32  [g3_w1of6] point {1, -5, 4} done in 8.7 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:32  [g3_w2of6] point {-8, -5, 8} done in 15.6 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:32  [g3_w2of6] job finished
+2026-10-28 22:49:33  [g3_w6of6] point {4, 5, -9} done in 13.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:33  [g3_w4of6] point {10, -10, 11} done in 11.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:37  [g3_w3of6] point {1, -10, -9} done in 12.1 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:37  [g3_w3of6] job finished
+2026-10-28 22:49:42  [g3_w4of6] point {7, 10, 1} done in 9. s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:42  [g3_w4of6] job finished
+2026-10-28 22:49:45  [g3_w1of6] point {11, 10, 2} done in 12.9 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:45  [g3_w1of6] job finished
+2026-10-28 22:49:47  [g3_w6of6] point {6, 10, -10} done in 14.2 s; sum of orbits = P_g Li polar part: False
+2026-10-28 22:49:47  [g3_w6of6] job finished

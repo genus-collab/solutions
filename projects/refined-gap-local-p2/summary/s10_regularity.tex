@@ -1,0 +1,113 @@
+% s10_regularity (abridged version). Regularity of stable graphs and the conifold gap.
+\section{Regularity of stable graphs and the conifold gap}
+\label{sec:reg}
+
+This section combines the leaf structure of \cref{thm:lea-main}, the vanishing of \cref{thm:van-main} and the vertex identity of \cref{thm:val-main}. Everything up to \cref{cor:reg-sv} is a statement about the decoration sum \eqref{eq:set-graphsum} at $\cone=\ccf$, and uses neither the mirror theorem nor \cite[Theorem~(2)]{Tel12}. The frame formula of \cref{prop:fra-frame} and \cref{lem:fra-tcf} enter only in \cref{sec:reg-gap}.
+
+\subsection{String and dilaton identities}
+\label{sec:reg-string}
+
+\begin{lem}[Dilaton homogeneity on $\Dom$; {\Lg{Lemma~10.1}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-H0}
+Let $q\in\Dom$, and let $\nu\in 1+\tc\RRing$ be independent of $\psi$. Then $\nu q\in\Dom$, and for $f_1,\dots,f_n\in\RRing\fps{\psi}$,
+\begin{equation}
+\label{eq:reg-H0}
+\dd^n\Fpot_h(q)[f_1,\dots,f_n]=\nu^{2h-2}\,\dd^n\Fpot_h(\nu q)[\nu f_1,\dots,\nu f_n].
+\end{equation}
+\end{lem}
+
+Only $\nu=\rho$ is used. Since $\qo=\Tdil-\psi$, the dilaton equation, which holds for the pulled-back class $\Hg_{\bw}$, gives $\dbase^{s+1}(\mathsf{b}_1,\dots,\mathsf{b}_s,\qo)=(2-2h-s)\,\dbase^s(\mathsf{b}_1,\dots,\mathsf{b}_s)$; this gives the Euler identity $\dd^{n+1}\Fpot_h(q)[f,q]=(2-2h-n)\,\dd^n\Fpot_h(q)[f]$ on $\Dom$, which is integrated along $q_{\mathsf{r}}=(1+\mathsf{r}(\nu-1))q$.
+
+\begin{lem}[String identity, vanishing on $1^p$, and the $\lf_0$ identity; {\Lg{Lemmas~10.2, 10.3, 10.4}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-string}
+For $h\geq 2$ and every multiset $\msU$ of integers,
+\[
+\Xiz_h(1^p,\msU)=\prod_{i=0}^{p-1}(J_{\msU}+i)\cdot E^{-2p}\,\Xiz_h(\msU),\qquad
+\Xiz_h(0,\msU)=\frac{\dg(\msU)-2h+2}{E^2}\,\Xiz_h(\msU).
+\]
+In particular $\Xiz_h(1^p)=0$ for $p\geq1$, that is, $\ZZ[h,n]=0$ for $n\geq 1$.
+\end{lem}
+
+These follow from the string and dilaton equations and the shapes of the leaves: the string equation acts on a leaf by $(\lf_j-\lf_j(0))/\psi=(j/E)\lf_j$ and on a dilaton tail by $\Tdil/\psi=-\psi\lf_1$.
+
+\emph{Absence of $\lf_0$} \Lg{Remark~10.5}. A constant component at an insertion could not be stripped by the string identity: by the second formula it lowers $\dg$, and when the remaining multiset is empty it leaves a multiple of $\ZZ[h,0]$ at a polar order. So a $\lf_0$ component would be a genuine obstruction. It does not occur: $\brow^{(k)}$, $k\geq0$, has no constants and no part polynomial in $\psi$ (\cref{prop:lea-H2}); only $\lf_i\lf_l'$ with $i,l\geq1$ appear in the edge at colour $0$ (\cref{thm:lea-E00}); and the mixed edge and the dilaton series at orders $k\geq1$ have no constant (\cref{thm:lea-main}\textup{(L1), (L2)}). The identity \eqref{eq:row-zinf} enters here in two places: for the absence of a constant in $\brow_1$, and for the dilaton series.
+
+\begin{lem}[Range; {\Lg{Lemma~10.6}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-range}
+Let $\Gamma$ be a connected stable graph of genus $g$, without legs, with at least one edge. Then $g_{v}\leq g-1$ for every vertex $v$: either $h^1(\Gamma)\geq1$, or $\Gamma$ is a tree with at least two leaf vertices, each of genus $\geq1$ by stability.
+\end{lem}
+
+\begin{lem}[Transfer of the vanishing; {\Lg{Lemma~10.7}}, parts \textup{(a)}, \textup{(b)}]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-A}\leavevmode
+\begin{enumerate}
+\item[(a)] The number $\Xiz_h(\msU)$ of \cref{def:set-fpot} is the object of \cref{sec:van} at scale $E$: $(E,-\epsilon_1,-\epsilon_2)=E\,(1,\tau,-1-\tau)$ with $\tau\coloneqq-\epsilon_1/E$ and $\st=-\epsilon_1\epsilon_2/E^2$, and $\Xiz_h(\msU)=E^{-(3h-3+2r)}\,\Xit_h(\msU)|_{\tau=-\epsilon_1/E}$ for $r=\#\msU$.
+\item[(b)] For every $h\geq 2$ and every non-empty multiset $\msM$ of integers $\geq 2$ with $\dg(\msM)\leq 2h-3$, $\Xiz_h(\msM)=0$ in $\bbK$, and at every specialisation with $\epsilon_1\epsilon_2E\neq 0$, the diagonal $\epsilon_1=\epsilon_2$ included. That is, $\Mirr(h)$ holds for every $h\geq 2$. Combined with \cref{lem:reg-string}, the same vanishing holds for every non-empty multiset with parts $\geq 1$ in the same range. The multiset must not contain a part $0$.
+\end{enumerate}
+\end{lem}
+
+This is \cref{thm:van-main} with \cref{cor:van-spec,cor:van-scale}; only $\st\neq 0$ and $E\neq 0$ are needed, and these are the standing assumptions on $\TF$. The transfer is possible because the leaf scale $E$ produced by \cref{thm:lea-main}\textup{(F2)} equals the Hodge weight $\bw_1=E$; for $-\bw$ it is not a weight \Lg{Remark~2.10}.
+
+\subsection{Regularity of graphs with an edge}
+
+\begin{thm}[Regularity of graphs with an edge; {\Lg{Theorem~10.8}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:reg-main}
+Fix $g\geq 2$, and assume $\Mirr(h)$ for $2\leq h\leq g-1$. Then for every connected stable graph $\Gamma$ of genus $g$ with at least one edge, and for every colouring $\col$, the decoration sum $\GCont(\Gamma,\col)$ of \eqref{eq:set-graphsum} at $\cone=\ccf$ is analytic at $y=-1/27$, that is, its Laurent expansion in $\tc$ has no negative powers. The same therefore holds for the colour sum.
+\end{thm}
+
+By \cref{lem:reg-A}\textup{(b)}, $\Mirr(h)$ holds for every $h\geq 2$, so the hypothesis of \cref{thm:reg-main} and of \cref{cor:reg-sv} below is satisfied. It is kept in the statements only to show which $h$ are used.
+
+\begin{proof}[Sketch]
+Fix $\Gamma$ and a colouring $\col$. Call a colour-$0$ vertex with $g_{v}\geq 2$ \emph{rescaled}. Dilaton decorations at every vertex are summed first, as in \eqref{eq:set-vertex}. Everything below is multilinear in the half-edge slots; for an edge that does not factorise (a loop, or an edge between two rescaled vertices) the statements are applied term by term in the leaf expansion of \cref{thm:lea-E00}, and coefficientwise in the edge variables of the far end. This is legitimate because $\dbase^s$ depends only on a finite jet of each slot.
+
+\emph{(i) Homogeneity.} At a rescaled vertex $v$ of genus $h$ with half-edge series $f_1,\dots,f_n$ the vertex factor is, by \eqref{eq:set-vertex}, by \eqref{eq:reg-H0} with $\nu=\rho$, and by \cref{lem:set-coord}\textup{(b)},
+\[
+\Delta_0^{h-1}\,\dd^n\Fpot_h(\qt)[f_1,\dots,f_n]=\Big(\frac{3\epsilon_1\epsilon_2E^3}{\tc^2}\Big)^{h-1}\dd^n\Fpot_h(\rho\qt)[\rho f_1,\dots,\rho f_n].
+\]
+Three properties of $\rho$ are used: it is analytic and free of $z$; $\rho(0)=1$, so that $[\tc^0](\rho\qt)=\qo$ is the base point of $\Dom$; and $\rho^2\Delta_0=3\epsilon_1\epsilon_2E^3\tc^{-2}$.
+
+\emph{(ii) Leaf expansion.} By \cref{thm:lea-main}\textup{(L1)}, $\rho\qt=\qo+\sum_{k\geq 1}\tc^k q^{(k)}$ with $q^{(k)}\in\Lsp_{k+1}$. Each half-edge at $v$ receives one factor $\rho$. For an edge to a regular colour, or to an unrescaled colour-$0$ vertex (of genus $0$ or $1$), the coefficient $[\tc^k]$ of $\rho\Edgeh_{0j}$ or $\rho\Edgeh_{00}$, taken coefficientwise in the variable of the far end, lies in $\Lsp_{k+1}$, with no constant, by \textup{(L2)}. For an edge between two rescaled vertices, or a loop, the factor is $\rho^2\Edgeh_{00}$, whose coefficient at order $\tc^k$ lies in $\mathrm{span}\{\lf_i\lf_l':(i-1)+(l-1)\leq k\}$, by \textup{(L3)}; the leaf degree bound is split between the two ends, or assigned wholly to $v$ for a loop. At an unrescaled vertex only regularity is needed: at colour $0$, $\Delta_0^{g_v-1}$ is $\cO(\tc^2)$ for $g_v=0$ and $1$ for $g_v=1$; $\Delta_j^{h-1}$ is analytic for every $h$ because $\Delta_j(0)\neq0$; and the dilaton and edge factors are analytic, by \textup{(F1), (F3)}. Since $\Fpot_h(\qo+\delta)$ is by definition its Taylor series at $\qo$, the coefficient of $\tc^{2-2h+k}$ of the rescaled vertex factor is a finite combination of numbers $\Xiz_h(\msU)$ with all parts $j\geq 1$ and $\dg(\msU)\leq k$. There are no $\lf_0$ terms and no remainders polynomial in $\psi$, and each half-edge contributes at least one leaf, so $r\geq n_{v}\geq 1$.
+
+\emph{(iii) Vanishing.} Strip the parts equal to $1$ by \cref{lem:reg-string}: $\Xiz_h(1^p,\msM)=\prod_{i<p}(J_{\msM}+i)\,E^{-2p}\,\Xiz_h(\msM)$, where $\msM$ has parts $\geq 2$. If $\msM$ is empty, then $p=r\geq 1$ and $J_{\msM}=0$ kills the term. If $\msM$ is non-empty, then $\dg(\msM)=\dg(\msU)$, and the term vanishes by $\Mirr(h)$ whenever $\dg(\msU)\leq 2h-3$, whatever the $\tc$-order $k$ at which it occurs; here $h\leq g-1$ by \cref{lem:reg-range}. So a non-zero term needs $\dg_{v}\geq 2g_{v}-2$ at every rescaled vertex, where $\dg_{v}$ is the total leaf degree at $v$.
+
+\emph{(iv) Counting.} Consider a non-zero term in the expansion of $\GCont(\Gamma,\col)$. Each factor contributes a $\tc$-order, and its leaf degree at any rescaled end is bounded by that order. So the $\tc$-order of the term is at least
+\[
+\sum_{v\text{ rescaled}}\big(2-2g_{v}+\dg_{v}\big)+2\,\#\{\text{colour-$0$ vertices of genus $0$}\}+0,
+\]
+where the final $0$ accounts for the regular-colour vertices, the genus-$1$ colour-$0$ vertices, and every edge or dilaton order not allocated to a $\dg_{v}$. By \textup{(iii)} each summand is at least $0$.
+\end{proof}
+
+Genus $2$ uses no instance of $\Mirr$. No input from \cite{BS} enters.
+
+\begin{cor}[The single-vertex graph; {\Lg{Corollary~10.9}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:reg-sv}
+Fix $g\geq 2$, and assume $\Mirr(h)$ for $2\leq h\leq g$. The single-vertex graph is analytic at colours $1$ and $2$. At colour $0$ its polar part is the single term $(3\epsilon_1\epsilon_2E^3)^{g-1}\,\ZZ[g,0]\,\tc^{2-2g}$, with $\ZZ[g,0]=\Fpot_g(\qo)$. By \cref{thm:val-main} this equals $(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)\,\tc^{2-2g}$. Hence the polar part of $\Gsum_g$ is exactly this term.
+\end{cor}
+
+\begin{proof}[Sketch]
+At colours $1$, $2$ all factors are analytic. At colour $0$, by steps \textup{(i)--(iii)} with no half-edges, the vertex factor is $(3\epsilon_1\epsilon_2E^3/\tc^2)^{g-1}\Fpot_g(\rho\qt)$. Its $k$-th Taylor term is a combination of numbers $\Xiz_g(\msU)$, with $\msU$ empty only at $k=0$, and with $\msU$ non-empty with parts $\geq 1$ and $\dg(\msU)\leq k$ otherwise. For $1\leq k\leq 2g-3$ these vanish by \cref{lem:reg-A}\textup{(b)} at $h=g$. Finally $3\epsilon_1\epsilon_2E^3=(-3)(-\epsilon_1\epsilon_2E^3)$.
+\end{proof}
+
+\subsection{The refined conifold gap}
+\label{sec:reg-gap}
+
+\begin{cor}[Refined conifold gap; {\Lg{Corollary~10.10}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:reg-gap}
+The statement of \cref{cor:int-gap} holds: for $g\geq 2$, on the fibrewise torus, $\GWcf_g=(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)\,\tcf^{2-2g}+\cO(1)$, where $\cO(1)$ has the meaning given there. The statement holds with either convention for $d=0$ of \cref{rmk:set-d0}, since the constant is $\cO(1)$.
+\end{cor}
+
+\begin{proof}[Sketch]
+By \cref{prop:fra-frame}, $\GWcf_g=\sum_\Gamma|\Aut\Gamma|^{-1}\sum_{\col}\GCont(\Gamma,\col)$ at $\cone=\ccf$. Each $\GCont(\Gamma,\col)$ is a meromorphic germ at $\tc=0$, by \cref{cor:row-carry}. \Cref{thm:reg-main} removes all polar terms of graphs with an edge, colouring by colouring, the hypothesis being satisfied by \cref{lem:reg-A}\textup{(b)}. By \cref{cor:reg-sv}, the single vertex is analytic at colours $1,2$, and at colour $0$ its polar part is $(-3)^{g-1}\beta_{2g-2}\,\tc^{2-2g}$. By \cref{lem:fra-tcf}, $\tc=\tcf$. For the Taylor coefficients: $\wcf$, $\tc$ and $\Fcf$ lie in $\bbQ\fps{\xi}$, and by \cref{thm:spe-main}\textup{(e)} $\GWcf_g$ is an element of $\bbK[y^{\pm1},\xi^{-1}][\Fcf]$, so the difference has a Laurent expansion in $\tc$ over $\bbK$ with no negative powers, and it converges. With the convention $d>0$ the left side changes by the constant $\GW_{g,0}^{\TF}\in\bbK$.
+\end{proof}
+
+\begin{cor}[Coefficients; {\Lg{Corollary~10.11}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:reg-gapkh}
+The expansion $\sF_g^{\TF}=\sum_{k+h=g}E^{2k}(\epsilon_1\epsilon_2)^{h-1}\sF_{k,h}$ exists and is unique, with $\sF_{k,h}\in\bbQ[y^{\pm1},\xi^{-1}][F]$, and the statement of \cref{cor:int-gapkh} holds: with $\sFcf_{k,h}\coloneqq\Cf(\sF_{k,h})$ and $k+h\geq 2$, $\sFcf_{k,h}=\bfrak_{k,h}\,\tcf^{2-2h-2k}+\cO(1)$.
+\end{cor}
+
+\begin{proof}[Sketch]
+By \cref{prop:gen-poly} and the formula for the constant term in \cref{thm:spe-main}\textup{(b)}, $\epsilon_1\epsilon_2\GW_{g,d}^{\TF}$ is a symmetric homogeneous polynomial of degree $2g$ in $\epsilon_1,\epsilon_2$, so $\epsilon_1\epsilon_2\,\sF_g^{\TF}=\sum_jE^{2g-2j}(\epsilon_1\epsilon_2)^j f_j(y)$ with $f_j\in\bbQ\fps{y}$. Solving at finitely many rational $\epsilon$ puts $f_j$ in $\bbQ[y^{\pm1},\xi^{-1}][F]$, and uniqueness of the polynomial in $F$ gives $\Cf(\sF_g^{\TF})=\sum_jE^{2g-2j}(\epsilon_1\epsilon_2)^{j-1}\Cf(f_j)$. The Laurent coefficients of $\Cf(f_j)$ in $\tc$ lie in $\bbQ$, so the statement follows from \cref{cor:reg-gap} by comparing coefficients of the monomials $E^{2k}(\epsilon_1\epsilon_2)^{h-1}$.
+\end{proof}
+
+This is the conifold asymptotics in refined direct integration, read as follows. The period $\Pi_{\gamma_{\mathrm{cf}}}$ of \cite{BS} is read through its displayed expansion: it solves $\Ltwo\circ\theta=0$, it vanishes linearly at $\xi=0$ with leading coefficient $1$, and $\Acf=\theta\Pi_{\gamma_{\mathrm{cf}}}$. Since $\Ltwo$ has exponents $(0,0)$ there, this gives $\Pi_{\gamma_{\mathrm{cf}}}=\tc=\tcf$. The coefficient $\bfrak_{k,h}$ depends on this normalisation; integrality of the cycle is not used. The coefficients of the polynomials $f_j$ are shown to lie in $\bbQ[X^{\pm1},(1-X)^{-1}]$; we do not show that they lie in $\bbQ[X^{\pm1}]$.
+
+The leading coefficient and the pole bound of \cite{BS} are implied by these results, which are sharper: every graph with an edge has no pole at all, and in the single-vertex graph only the order $2g-2$ occurs. The statement of \cite{BS} expressing $\beta$ as a graph sum is equivalent to \cref{thm:val-main} \Lg{Remarks~10.13, 10.14}.

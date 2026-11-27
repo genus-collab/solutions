@@ -1,0 +1,3593 @@
+=== genus 2 local validation ===
+7 graphs, 37 labelled decorations, 27 decorated graphs (orbits), 12 dilaton-free; 884 sample points (26 t x 34 eps-ratios); 0. s; written hv_orbits_g2.mx
+start: genus 2, KMAX 3, PREC 350, 13.0.0 for Microsoft Windows (64-bit) (December 3, 2021)
+R-matrix coefficients from cPP_z6.m
+R-matrix rows built to z^3; LeafCounts row0/1/2: {435, 422, 1653}
+rows of R' = R_Z h^(-1) built to z^3; LeafCounts {136, 123, 327}
+884 points assigned, 0 already done, 884 to do
+point 1  1
+{-, 3}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 2  1
+{-, 5}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 3  1
+{-, 7}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 4  1
+{-, 11}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 5  1
+{-, 13}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 6  1
+{-, 17}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 7  1
+{-, 19}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 8  1
+{-, 23}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 9  1
+{-, 29}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 10  1
+{-, 31}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 11  1
+{-, 37}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 12  1
+{-, 41}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 13  1
+{-, 43}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 14  1
+{-, 47}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 15  1
+{-, 53}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 16  1
+{-, 59}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 17  1
+{-, 61}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 18  1
+{-, 67}
+ 2 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 19  1
+{-, 71}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 20  1
+{-, 73}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 21  1
+{-, 79}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 22  1
+{-, 83}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 23  1
+{-, 89}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 24  1
+{-, 97}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 25  1
+{-, 101}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 26  1
+{-, 103}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 27  1
+{-, 107}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 28  1
+{-, 109}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 29  1
+{-, 113}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 30  1
+{-, 127}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 31  1
+{-, 131}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 32  1
+{-, 137}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 33  1
+{-, 139}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 34  1
+{-, 149}
+ 2 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -341
+0. 10
+point 35  1
+{-, 3}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 36  1
+{-, 5}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 37  1
+{-, 7}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 38  1
+{-, 11}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 39  1
+{-, 13}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 40  1
+{-, 17}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 41  1
+{-, 19}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 42  1
+{-, 23}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 43  1
+{-, 29}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 44  1
+{-, 31}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 45  1
+{-, 37}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 46  1
+{-, 41}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 47  1
+{-, 43}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 48  1
+{-, 47}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 49  1
+{-, 53}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 50  1
+{-, 59}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 51  1
+{-, 61}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 52  1
+{-, 67}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 53  1
+{-, 71}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 54  1
+{-, 73}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 55  1
+{-, 79}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 56  1
+{-, 83}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 57  1
+{-, 89}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 58  1
+{-, 97}
+ 3 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 59  1
+{-, 101}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 60  1
+{-, 103}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 61  1
+{-, 107}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 62  1
+{-, 109}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 63  1
+{-, 113}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 64  1
+{-, 127}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 65  1
+{-, 131}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 66  1
+{-, 137}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 67  1
+{-, 139}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 68  1
+{-, 149}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -341
+0. 10
+point 69  2
+{-, 3}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 70  2
+{-, 5}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 71  2
+{-, 7}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 72  2
+{-, 11}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 73  2
+{-, 13}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 74  2
+{-, 17}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 75  2
+{-, 19}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 76  2
+{-, 23}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 77  2
+{-, 29}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 78  2
+{-, 31}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 79  2
+{-, 37}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 80  2
+{-, 41}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 81  2
+{-, 43}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 82  2
+{-, 47}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 83  2
+{-, 53}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 84  2
+{-, 59}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 85  2
+{-, 61}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 86  2
+{-, 67}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 87  2
+{-, 71}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 88  2
+{-, 73}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 89  2
+{-, 79}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 90  2
+{-, 83}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 91  2
+{-, 89}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 92  2
+{-, 97}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 93  2
+{-, 101}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 94  2
+{-, 103}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 95  2
+{-, 107}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 96  2
+{-, 109}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 97  2
+{-, 113}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 98  2
+{-, 127}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 99  2
+{-, 131}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 100  2
+{-, 137}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 101  2
+{-, 139}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 102  2
+{-, 149}
+ 3 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 103  1
+{-, 3}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 104  1
+{-, 5}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 105  1
+{-, 7}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 106  1
+{-, 11}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 107  1
+{-, 13}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 108  1
+{-, 17}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 109  1
+{-, 19}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 110  1
+{-, 23}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 111  1
+{-, 29}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 112  1
+{-, 31}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 113  1
+{-, 37}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 114  1
+{-, 41}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 115  1
+{-, 43}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 116  1
+{-, 47}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 117  1
+{-, 53}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 118  1
+{-, 59}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 119  1
+{-, 61}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 120  1
+{-, 67}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 121  1
+{-, 71}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 122  1
+{-, 73}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 123  1
+{-, 79}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 124  1
+{-, 83}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 125  1
+{-, 89}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 126  1
+{-, 97}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 127  1
+{-, 101}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 128  1
+{-, 103}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 129  1
+{-, 107}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 130  1
+{-, 109}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 131  1
+{-, 113}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 132  1
+{-, 127}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 133  1
+{-, 131}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 134  1
+{-, 137}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 135  1
+{-, 139}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 136  1
+{-, 149}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -341
+0. 10
+point 137  3
+{-, 3}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 138  3
+{-, 5}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 139  3
+{-, 7}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 140  3
+{-, 11}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 141  3
+{-, 13}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 142  3
+{-, 17}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 143  3
+{-, 19}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 144  3
+{-, 23}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 145  3
+{-, 29}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 146  3
+{-, 31}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 147  3
+{-, 37}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 148  3
+{-, 41}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 149  3
+{-, 43}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 150  3
+{-, 47}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 151  3
+{-, 53}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 152  3
+{-, 59}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 153  3
+{-, 61}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 154  3
+{-, 67}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 155  3
+{-, 71}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 156  3
+{-, 73}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 157  3
+{-, 79}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 158  3
+{-, 83}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 159  3
+{-, 89}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 160  3
+{-, 97}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 161  3
+{-, 101}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 162  3
+{-, 103}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 163  3
+{-, 107}
+ 4 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 164  3
+{-, 109}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 165  3
+{-, 113}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 166  3
+{-, 127}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 167  3
+{-, 131}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 168  3
+{-, 137}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 169  3
+{-, 139}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 170  3
+{-, 149}
+ 4 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 171  1
+{-, 3}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 172  1
+{-, 5}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 173  1
+{-, 7}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 174  1
+{-, 11}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 175  1
+{-, 13}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 176  1
+{-, 17}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 177  1
+{-, 19}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 178  1
+{-, 23}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 179  1
+{-, 29}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 180  1
+{-, 31}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 181  1
+{-, 37}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 182  1
+{-, 41}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 183  1
+{-, 43}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 184  1
+{-, 47}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 185  1
+{-, 53}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 186  1
+{-, 59}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 187  1
+{-, 61}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 188  1
+{-, 67}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 189  1
+{-, 71}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 190  1
+{-, 73}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 191  1
+{-, 79}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 192  1
+{-, 83}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 193  1
+{-, 89}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 194  1
+{-, 97}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 195  1
+{-, 101}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 196  1
+{-, 103}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 197  1
+{-, 107}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 198  1
+{-, 109}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 199  1
+{-, 113}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 200  1
+{-, 127}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 201  1
+{-, 131}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 202  1
+{-, 137}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 203  1
+{-, 139}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 204  1
+{-, 149}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 205  2
+{-, 3}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 206  2
+{-, 5}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 207  2
+{-, 7}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 208  2
+{-, 11}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 209  2
+{-, 13}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 210  2
+{-, 17}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 211  2
+{-, 19}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 212  2
+{-, 23}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 213  2
+{-, 29}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 214  2
+{-, 31}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 215  2
+{-, 37}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 216  2
+{-, 41}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 217  2
+{-, 43}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 218  2
+{-, 47}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 219  2
+{-, 53}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 220  2
+{-, 59}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 221  2
+{-, 61}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 222  2
+{-, 67}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 223  2
+{-, 71}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 224  2
+{-, 73}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 225  2
+{-, 79}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 226  2
+{-, 83}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 227  2
+{-, 89}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 228  2
+{-, 97}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 229  2
+{-, 101}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 230  2
+{-, 103}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 231  2
+{-, 107}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 232  2
+{-, 109}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 233  2
+{-, 113}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 234  2
+{-, 127}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 235  2
+{-, 131}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 236  2
+{-, 137}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 237  2
+{-, 139}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 238  2
+{-, 149}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -341
+0. 10
+point 239  3
+{-, 3}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 240  3
+{-, 5}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 241  3
+{-, 7}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 242  3
+{-, 11}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 243  3
+{-, 13}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 244  3
+{-, 17}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 245  3
+{-, 19}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 246  3
+{-, 23}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 247  3
+{-, 29}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 248  3
+{-, 31}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 249  3
+{-, 37}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 250  3
+{-, 41}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 251  3
+{-, 43}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 252  3
+{-, 47}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 253  3
+{-, 53}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 254  3
+{-, 59}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 255  3
+{-, 61}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 256  3
+{-, 67}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 257  3
+{-, 71}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 258  3
+{-, 73}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 259  3
+{-, 79}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 260  3
+{-, 83}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 261  3
+{-, 89}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 262  3
+{-, 97}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 263  3
+{-, 101}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 264  3
+{-, 103}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 265  3
+{-, 107}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 266  3
+{-, 109}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 267  3
+{-, 113}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 268  3
+{-, 127}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 269  3
+{-, 131}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 270  3
+{-, 137}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 271  3
+{-, 139}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 272  3
+{-, 149}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 273  4
+{-, 3}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 274  4
+{-, 5}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 275  4
+{-, 7}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 276  4
+{-, 11}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 277  4
+{-, 13}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 278  4
+{-, 17}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 279  4
+{-, 19}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 280  4
+{-, 23}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 281  4
+{-, 29}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 282  4
+{-, 31}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 283  4
+{-, 37}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 284  4
+{-, 41}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 285  4
+{-, 43}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 286  4
+{-, 47}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 287  4
+{-, 53}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 288  4
+{-, 59}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 289  4
+{-, 61}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 290  4
+{-, 67}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 291  4
+{-, 71}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 292  4
+{-, 73}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 293  4
+{-, 79}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 294  4
+{-, 83}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 295  4
+{-, 89}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 296  4
+{-, 97}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 297  4
+{-, 101}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 298  4
+{-, 103}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 299  4
+{-, 107}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 300  4
+{-, 109}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 301  4
+{-, 113}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 302  4
+{-, 127}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 303  4
+{-, 131}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 304  4
+{-, 137}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 305  4
+{-, 139}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 306  4
+{-, 149}
+ 5 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 307  1
+{-, 3}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 308  1
+{-, 5}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 309  1
+{-, 7}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 310  1
+{-, 11}
+ 6 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 311  1
+{-, 13}
+ 6 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 312  1
+{-, 17}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 313  1
+{-, 19}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 314  1
+{-, 23}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 315  1
+{-, 29}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 316  1
+{-, 31}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 317  1
+{-, 37}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 318  1
+{-, 41}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 319  1
+{-, 43}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 320  1
+{-, 47}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 321  1
+{-, 53}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 322  1
+{-, 59}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 323  1
+{-, 61}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 324  1
+{-, 67}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 325  1
+{-, 71}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 326  1
+{-, 73}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 327  1
+{-, 79}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 328  1
+{-, 83}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 329  1
+{-, 89}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 330  1
+{-, 97}
+ 6 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 331  1
+{-, 101}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 332  1
+{-, 103}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 333  1
+{-, 107}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 334  1
+{-, 109}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 335  1
+{-, 113}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 336  1
+{-, 127}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 337  1
+{-, 131}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 338  1
+{-, 137}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 339  1
+{-, 139}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 340  1
+{-, 149}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 341  5
+{-, 3}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 342  5
+{-, 5}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 343  5
+{-, 7}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 344  5
+{-, 11}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 345  5
+{-, 13}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 346  5
+{-, 17}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 347  5
+{-, 19}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 348  5
+{-, 23}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 349  5
+{-, 29}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 350  5
+{-, 31}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 351  5
+{-, 37}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 352  5
+{-, 41}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 353  5
+{-, 43}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 354  5
+{-, 47}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 355  5
+{-, 53}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 356  5
+{-, 59}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 357  5
+{-, 61}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 358  5
+{-, 67}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 359  5
+{-, 71}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 360  5
+{-, 73}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 361  5
+{-, 79}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 362  5
+{-, 83}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 363  5
+{-, 89}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 364  5
+{-, 97}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 365  5
+{-, 101}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 366  5
+{-, 103}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 367  5
+{-, 107}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 368  5
+{-, 109}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 369  5
+{-, 113}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 370  5
+{-, 127}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 371  5
+{-, 131}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 372  5
+{-, 137}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 373  5
+{-, 139}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 374  5
+{-, 149}
+ 6 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 375  1
+{-, 3}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 376  1
+{-, 5}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 377  1
+{-, 7}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 378  1
+{-, 11}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 379  1
+{-, 13}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 380  1
+{-, 17}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 381  1
+{-, 19}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 382  1
+{-, 23}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 383  1
+{-, 29}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 384  1
+{-, 31}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 385  1
+{-, 37}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 386  1
+{-, 41}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 387  1
+{-, 43}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 388  1
+{-, 47}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 389  1
+{-, 53}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 390  1
+{-, 59}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 391  1
+{-, 61}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 392  1
+{-, 67}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 393  1
+{-, 71}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 394  1
+{-, 73}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 395  1
+{-, 79}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 396  1
+{-, 83}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 397  1
+{-, 89}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 398  1
+{-, 97}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 399  1
+{-, 101}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 400  1
+{-, 103}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 401  1
+{-, 107}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 402  1
+{-, 109}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 403  1
+{-, 113}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 404  1
+{-, 127}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 405  1
+{-, 131}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 406  1
+{-, 137}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 407  1
+{-, 139}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 408  1
+{-, 149}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 409  2
+{-, 3}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 410  2
+{-, 5}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 411  2
+{-, 7}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 412  2
+{-, 11}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 413  2
+{-, 13}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 414  2
+{-, 17}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 415  2
+{-, 19}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 416  2
+{-, 23}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 417  2
+{-, 29}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 418  2
+{-, 31}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 419  2
+{-, 37}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 420  2
+{-, 41}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 421  2
+{-, 43}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 422  2
+{-, 47}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 423  2
+{-, 53}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 424  2
+{-, 59}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 425  2
+{-, 61}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 426  2
+{-, 67}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 427  2
+{-, 71}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 428  2
+{-, 73}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 429  2
+{-, 79}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 430  2
+{-, 83}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 431  2
+{-, 89}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 432  2
+{-, 97}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 433  2
+{-, 101}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 434  2
+{-, 103}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 435  2
+{-, 107}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 436  2
+{-, 109}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 437  2
+{-, 113}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 438  2
+{-, 127}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 439  2
+{-, 131}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 440  2
+{-, 137}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 441  2
+{-, 139}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 442  2
+{-, 149}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -341
+0. 10
+point 443  3
+{-, 3}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 444  3
+{-, 5}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 445  3
+{-, 7}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 446  3
+{-, 11}
+ 7 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 447  3
+{-, 13}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 448  3
+{-, 17}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 449  3
+{-, 19}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 450  3
+{-, 23}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 451  3
+{-, 29}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 452  3
+{-, 31}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 453  3
+{-, 37}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 454  3
+{-, 41}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 455  3
+{-, 43}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 456  3
+{-, 47}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 457  3
+{-, 53}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 458  3
+{-, 59}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 459  3
+{-, 61}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 460  3
+{-, 67}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 461  3
+{-, 71}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 462  3
+{-, 73}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 463  3
+{-, 79}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 464  3
+{-, 83}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 465  3
+{-, 89}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 466  3
+{-, 97}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 467  3
+{-, 101}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 468  3
+{-, 103}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 469  3
+{-, 107}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 470  3
+{-, 109}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 471  3
+{-, 113}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 472  3
+{-, 127}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 473  3
+{-, 131}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 474  3
+{-, 137}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 475  3
+{-, 139}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 476  3
+{-, 149}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -341
+0. 10
+point 477  4
+{-, 3}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 478  4
+{-, 5}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 479  4
+{-, 7}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 480  4
+{-, 11}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 481  4
+{-, 13}
+ 7 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 482  4
+{-, 17}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 483  4
+{-, 19}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 484  4
+{-, 23}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 485  4
+{-, 29}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 486  4
+{-, 31}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 487  4
+{-, 37}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 488  4
+{-, 41}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 489  4
+{-, 43}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 490  4
+{-, 47}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 491  4
+{-, 53}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 492  4
+{-, 59}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 493  4
+{-, 61}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 494  4
+{-, 67}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 495  4
+{-, 71}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 496  4
+{-, 73}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 497  4
+{-, 79}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 498  4
+{-, 83}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 499  4
+{-, 89}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 500  4
+{-, 97}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 501  4
+{-, 101}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 502  4
+{-, 103}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 503  4
+{-, 107}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 504  4
+{-, 109}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 505  4
+{-, 113}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 506  4
+{-, 127}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 507  4
+{-, 131}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 508  4
+{-, 137}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 509  4
+{-, 139}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 510  4
+{-, 149}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 511  5
+{-, 3}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 512  5
+{-, 5}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 513  5
+{-, 7}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 514  5
+{-, 11}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 515  5
+{-, 13}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 516  5
+{-, 17}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 517  5
+{-, 19}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 518  5
+{-, 23}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 519  5
+{-, 29}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 520  5
+{-, 31}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 521  5
+{-, 37}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 522  5
+{-, 41}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 523  5
+{-, 43}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 524  5
+{-, 47}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 525  5
+{-, 53}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 526  5
+{-, 59}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 527  5
+{-, 61}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 528  5
+{-, 67}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 529  5
+{-, 71}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 530  5
+{-, 73}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 531  5
+{-, 79}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 532  5
+{-, 83}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 533  5
+{-, 89}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 534  5
+{-, 97}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 535  5
+{-, 101}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 536  5
+{-, 103}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 537  5
+{-, 107}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 538  5
+{-, 109}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 539  5
+{-, 113}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 540  5
+{-, 127}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 541  5
+{-, 131}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 542  5
+{-, 137}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 543  5
+{-, 139}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 544  5
+{-, 149}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 545  6
+{-, 3}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 546  6
+{-, 5}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 547  6
+{-, 7}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 548  6
+{-, 11}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 549  6
+{-, 13}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 550  6
+{-, 17}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 551  6
+{-, 19}
+ 7 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 552  6
+{-, 23}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 553  6
+{-, 29}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 554  6
+{-, 31}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 555  6
+{-, 37}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 556  6
+{-, 41}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 557  6
+{-, 43}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 558  6
+{-, 47}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 559  6
+{-, 53}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 560  6
+{-, 59}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 561  6
+{-, 61}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 562  6
+{-, 67}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 563  6
+{-, 71}
+ 7 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 564  6
+{-, 73}
+ 7 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 565  6
+{-, 79}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 566  6
+{-, 83}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 567  6
+{-, 89}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 568  6
+{-, 97}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 569  6
+{-, 101}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 570  6
+{-, 103}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 571  6
+{-, 107}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 572  6
+{-, 109}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 573  6
+{-, 113}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 574  6
+{-, 127}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 575  6
+{-, 131}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 576  6
+{-, 137}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 577  6
+{-, 139}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 578  6
+{-, 149}
+ 7 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 579  1
+{-, 3}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 580  1
+{-, 5}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 581  1
+{-, 7}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 582  1
+{-, 11}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 583  1
+{-, 13}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 584  1
+{-, 17}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 585  1
+{-, 19}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 586  1
+{-, 23}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 587  1
+{-, 29}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 588  1
+{-, 31}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 589  1
+{-, 37}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 590  1
+{-, 41}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 591  1
+{-, 43}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 592  1
+{-, 47}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 593  1
+{-, 53}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 594  1
+{-, 59}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 595  1
+{-, 61}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 596  1
+{-, 67}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 597  1
+{-, 71}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 598  1
+{-, 73}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 599  1
+{-, 79}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 600  1
+{-, 83}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 601  1
+{-, 89}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 602  1
+{-, 97}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 603  1
+{-, 101}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 604  1
+{-, 103}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 605  1
+{-, 107}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 606  1
+{-, 109}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 607  1
+{-, 113}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 608  1
+{-, 127}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 609  1
+{-, 131}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 610  1
+{-, 137}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 611  1
+{-, 139}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 612  1
+{-, 149}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 613  3
+{-, 3}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 614  3
+{-, 5}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 615  3
+{-, 7}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 616  3
+{-, 11}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 617  3
+{-, 13}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 618  3
+{-, 17}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 619  3
+{-, 19}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 620  3
+{-, 23}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 621  3
+{-, 29}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 622  3
+{-, 31}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 623  3
+{-, 37}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 624  3
+{-, 41}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 625  3
+{-, 43}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 626  3
+{-, 47}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 627  3
+{-, 53}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 628  3
+{-, 59}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 629  3
+{-, 61}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 630  3
+{-, 67}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 631  3
+{-, 71}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 632  3
+{-, 73}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 633  3
+{-, 79}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 634  3
+{-, 83}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 635  3
+{-, 89}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 636  3
+{-, 97}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 637  3
+{-, 101}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 638  3
+{-, 103}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 639  3
+{-, 107}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 640  3
+{-, 109}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 641  3
+{-, 113}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 642  3
+{-, 127}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 643  3
+{-, 131}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 644  3
+{-, 137}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 645  3
+{-, 139}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 646  3
+{-, 149}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -341
+0. 10
+point 647  5
+{-, 3}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 648  5
+{-, 5}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 649  5
+{-, 7}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 650  5
+{-, 11}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 651  5
+{-, 13}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 652  5
+{-, 17}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 653  5
+{-, 19}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 654  5
+{-, 23}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 655  5
+{-, 29}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 656  5
+{-, 31}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 657  5
+{-, 37}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 658  5
+{-, 41}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 659  5
+{-, 43}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 660  5
+{-, 47}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 661  5
+{-, 53}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 662  5
+{-, 59}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 663  5
+{-, 61}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 664  5
+{-, 67}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 665  5
+{-, 71}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 666  5
+{-, 73}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 667  5
+{-, 79}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 668  5
+{-, 83}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 669  5
+{-, 89}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 670  5
+{-, 97}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 671  5
+{-, 101}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 672  5
+{-, 103}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 673  5
+{-, 107}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 674  5
+{-, 109}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 675  5
+{-, 113}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 676  5
+{-, 127}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 677  5
+{-, 131}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 678  5
+{-, 137}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 679  5
+{-, 139}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 680  5
+{-, 149}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 681  7
+{-, 3}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 682  7
+{-, 5}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 683  7
+{-, 7}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 684  7
+{-, 11}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 685  7
+{-, 13}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 686  7
+{-, 17}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 687  7
+{-, 19}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 688  7
+{-, 23}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 689  7
+{-, 29}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 690  7
+{-, 31}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 691  7
+{-, 37}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 692  7
+{-, 41}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 693  7
+{-, 43}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 694  7
+{-, 47}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 695  7
+{-, 53}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 696  7
+{-, 59}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 697  7
+{-, 61}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 698  7
+{-, 67}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 699  7
+{-, 71}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 700  7
+{-, 73}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 701  7
+{-, 79}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 702  7
+{-, 83}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 703  7
+{-, 89}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 704  7
+{-, 97}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 705  7
+{-, 101}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 706  7
+{-, 103}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 707  7
+{-, 107}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 708  7
+{-, 109}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 709  7
+{-, 113}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 710  7
+{-, 127}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 711  7
+{-, 131}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 712  7
+{-, 137}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 713  7
+{-, 139}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 714  7
+{-, 149}
+ 8 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 715  1
+{-, 3}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 716  1
+{-, 5}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 717  1
+{-, 7}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 718  1
+{-, 11}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 719  1
+{-, 13}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 720  1
+{-, 17}
+ 9 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 721  1
+{-, 19}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 722  1
+{-, 23}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 723  1
+{-, 29}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 724  1
+{-, 31}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 725  1
+{-, 37}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 726  1
+{-, 41}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 727  1
+{-, 43}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 728  1
+{-, 47}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 729  1
+{-, 53}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 730  1
+{-, 59}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 731  1
+{-, 61}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 732  1
+{-, 67}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 733  1
+{-, 71}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 734  1
+{-, 73}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 735  1
+{-, 79}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 736  1
+{-, 83}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 737  1
+{-, 89}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 738  1
+{-, 97}
+ 9 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 739  1
+{-, 101}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 740  1
+{-, 103}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 741  1
+{-, 107}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 742  1
+{-, 109}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 743  1
+{-, 113}
+ 9 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 744  1
+{-, 127}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 745  1
+{-, 131}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 746  1
+{-, 137}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 747  1
+{-, 139}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 748  1
+{-, 149}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 749  2
+{-, 3}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 750  2
+{-, 5}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -348
+0. 10
+point 751  2
+{-, 7}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 752  2
+{-, 11}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 753  2
+{-, 13}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 754  2
+{-, 17}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 755  2
+{-, 19}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 756  2
+{-, 23}
+ 9 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 757  2
+{-, 29}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 758  2
+{-, 31}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 759  2
+{-, 37}
+ 9 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 760  2
+{-, 41}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 761  2
+{-, 43}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 762  2
+{-, 47}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 763  2
+{-, 53}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 764  2
+{-, 59}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 765  2
+{-, 61}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 766  2
+{-, 67}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 767  2
+{-, 71}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 768  2
+{-, 73}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 769  2
+{-, 79}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 770  2
+{-, 83}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 771  2
+{-, 89}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 772  2
+{-, 97}
+ 9 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 773  2
+{-, 101}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 774  2
+{-, 103}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 775  2
+{-, 107}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 776  2
+{-, 109}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 777  2
+{-, 113}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 778  2
+{-, 127}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 779  2
+{-, 131}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 780  2
+{-, 137}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 781  2
+{-, 139}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 782  2
+{-, 149}
+ 9 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 783  1
+{--, 3}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 784  1
+{--, 5}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 785  1
+{--, 7}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 786  1
+{--, 11}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 787  1
+{--, 13}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 788  1
+{--, 17}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 789  1
+{--, 19}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 790  1
+{--, 23}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 791  1
+{--, 29}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 792  1
+{--, 31}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 793  1
+{--, 37}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 794  1
+{--, 41}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 795  1
+{--, 43}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 796  1
+{--, 47}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 797  1
+{--, 53}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 798  1
+{--, 59}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 799  1
+{--, 61}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 800  1
+{--, 67}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 801  1
+{--, 71}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 802  1
+{--, 73}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 803  1
+{--, 79}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 804  1
+{--, 83}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 805  1
+{--, 89}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 806  1
+{--, 97}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 807  1
+{--, 101}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 808  1
+{--, 103}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 809  1
+{--, 107}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 810  1
+{--, 109}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 811  1
+{--, 113}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 812  1
+{--, 127}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 813  1
+{--, 131}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 814  1
+{--, 137}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 815  1
+{--, 139}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 816  1
+{--, 149}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 817  3
+{--, 3}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 818  3
+{--, 5}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 819  3
+{--, 7}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 820  3
+{--, 11}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 821  3
+{--, 13}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 822  3
+{--, 17}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 823  3
+{--, 19}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 824  3
+{--, 23}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 825  3
+{--, 29}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 826  3
+{--, 31}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 827  3
+{--, 37}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 828  3
+{--, 41}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 829  3
+{--, 43}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 830  3
+{--, 47}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 831  3
+{--, 53}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 832  3
+{--, 59}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 833  3
+{--, 61}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 834  3
+{--, 67}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 835  3
+{--, 71}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 836  3
+{--, 73}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 837  3
+{--, 79}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 838  3
+{--, 83}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 839  3
+{--, 89}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 840  3
+{--, 97}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 841  3
+{--, 101}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 842  3
+{--, 103}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 843  3
+{--, 107}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 844  3
+{--, 109}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 845  3
+{--, 113}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 846  3
+{--, 127}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 847  3
+{--, 131}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 848  3
+{--, 137}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 849  3
+{--, 139}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 850  3
+{--, 149}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -341
+0. 10
+point 851  7
+{--, 3}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 852  7
+{--, 5}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 853  7
+{--, 7}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -347
+0. 10
+point 854  7
+{--, 11}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 855  7
+{--, 13}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 856  7
+{--, 17}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 857  7
+{--, 19}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -346
+0. 10
+point 858  7
+{--, 23}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 859  7
+{--, 29}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 860  7
+{--, 31}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 861  7
+{--, 37}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 862  7
+{--, 41}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 863  7
+{--, 43}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -345
+0. 10
+point 864  7
+{--, 47}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 865  7
+{--, 53}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 866  7
+{--, 59}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 867  7
+{--, 61}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 868  7
+{--, 67}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 869  7
+{--, 71}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 870  7
+{--, 73}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -344
+0. 10
+point 871  7
+{--, 79}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 872  7
+{--, 83}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 873  7
+{--, 89}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 874  7
+{--, 97}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 875  7
+{--, 101}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 876  7
+{--, 103}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 877  7
+{--, 107}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 878  7
+{--, 109}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -343
+0. 10
+point 879  7
+{--, 113}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 880  7
+{--, 127}
+ 10 done in 0. s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 881  7
+{--, 131}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 882  7
+{--, 137}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 883  7
+{--, 139}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+point 884  7
+{--, 149}
+ 10 done in 0.1 s; total-ref {0, 0, 0, 0}; max |Im|      -342
+0. 10
+job finished
+884 files, 884 of 884 points; max |Im|      -341
+0. 10; points with unexpected monomials: 0; points whose orbit sum differs from the reference total: 0; complete t-values: 26 of 26; incomplete: {}
+VALIDATION OK: sum of decorated graphs = reference total at every sample point
+wrote 4 chunk files (7 orbits each at most)
+start: 7 decorated graphs, 26 t-values x 34 eps-ratios
+orbit {1, 1} {{}, {{}}} done (0.1 s), LeafCount 73, polar {(1 + x)^2/1920, -1/17280*(1 + x)^2}
+orbit {1, 5} {{}, {{2, 2}}} done (0. s), LeafCount 76, polar {(5*(1 + x + x^2))/384, (5*(1 + x + x^2))/3456}
+orbit {2, 2} {{{0, 0}}, {{3}}} done (0. s), LeafCount 42, polar {0, 0}
+orbit {2, 6} {{{0, 2}}, {{}}} done (0. s), LeafCount 18, polar {0, 0}
+orbit {4, 1} {{{0, 0}}, {{}, {}}} done (0.1 s), LeafCount 193, polar {0, 0}
+orbit {4, 5} {{{0, 1}}, {{2}, {}}} done (0. s), LeafCount 8, polar {0, 0}
+orbit {5, 3} {{{0, 0}, {0, 1}}, {{}, {}}} done (0. s), LeafCount 1, polar {0, 0}
+finished: 7 reconstructed, 0 failed
+start: 7 decorated graphs, 26 t-values x 34 eps-ratios
+orbit {1, 2} {{}, {{2}}} done (0.1 s), LeafCount 138, polar {(-7*(1 + x + x^2)^2)/(1920*x), 0}
+orbit {1, 6} {{}, {{2, 3}}} done (0. s), LeafCount 25, polar {(29*x)/1920, (29*x)/5760}
+orbit {2, 3} {{{0, 0}}, {{2, 2}}} done (0. s), LeafCount 42, polar {0, 0}
+orbit {2, 7} {{{1, 1}}, {{}}} done (0. s), LeafCount 8, polar {0, 0}
+orbit {4, 2} {{{0, 0}}, {{}, {2}}} done (0. s), LeafCount 109, polar {0, 0}
+orbit {4, 6} {{{1, 1}}, {{}, {}}} done (0. s), LeafCount 8, polar {0, 0}
+orbit {6, 1} {{{0, 0}, {0, 0}, {0, 0}}, {{}, {}}} done (0.1 s), LeafCount 68, polar {0, 0}
+finished: 7 reconstructed, 0 failed
+start: 7 decorated graphs, 26 t-values x 34 eps-ratios
+orbit {1, 3} {{}, {{3}}} done (0.1 s), LeafCount 76, polar {(-1 - x - x^2)/160, (-1 - x - x^2)/720}
+orbit {1, 7} {{}, {{2, 2, 2}}} done (0. s), LeafCount 25, polar {(-7*x)/480, (-7*x)/2160}
+orbit {2, 4} {{{0, 1}}, {{}}} done (0. s), LeafCount 27, polar {0, 0}
+orbit {3, 1} {{{0, 0}, {0, 0}}, {{2}}} done (0. s), LeafCount 37, polar {0, 0}
+orbit {4, 3} {{{0, 0}}, {{2}, {2}}} done (0. s), LeafCount 37, polar {0, 0}
+orbit {5, 1} {{{0, 0}, {0, 0}}, {{}, {}}} done (0. s), LeafCount 81, polar {0, 0}
+orbit {7, 1} {{{0, 0}, {0, 0}, {0, 0}}, {{}, {}}} done (0.1 s), LeafCount 68, polar {0, 0}
+finished: 7 reconstructed, 0 failed
+start: 6 decorated graphs, 26 t-values x 34 eps-ratios
+orbit {1, 4} {{}, {{4}}} done (0. s), LeafCount 25, polar {-1/384*x, -1/576*x}
+orbit {2, 1} {{{0, 0}}, {{2}}} done (0. s), LeafCount 124, polar {0, 0}
+orbit {2, 5} {{{0, 1}}, {{2}}} done (0. s), LeafCount 18, polar {0, 0}
+orbit {3, 2} {{{0, 0}, {0, 1}}, {{}}} done (0. s), LeafCount 28, polar {0, 0}
+orbit {4, 4} {{{0, 1}}, {{}, {}}} done (0. s), LeafCount 25, polar {0, 0}
+orbit {5, 2} {{{0, 0}, {0, 0}}, {{}, {2}}} done (0. s), LeafCount 29, polar {0, 0}
+finished: 6 reconstructed, 0 failed
+4 chunk files; failed reconstructions: 0
+total minus reference at 5 random rational points: {0, 0, 0, 0, 0}; symbolic: True
+VALIDATION OK: sum of decorated graphs = reference F20
+total polar part {t_c^-2, ..., t_c^-1} (eps1 = x, eps2 = 1): {-1/1920*(7 + 10*x^2 + 7*x^4)/x, 0}; expected leading -1/1920*(7 + 10*x^2 + 7*x^4)/x
+VALIDATION OK: conifold gap
+7 stable graphs; regular at the conifold: 6; singular: {{1, {2}, {}, {-1/1920*(7 + 10*x^2 + 7*x^4)/x, 0}}}
+stable graphs containing singular decorated graphs: {{1, {2}, 7, 7}}; graphs with a vertex of genus >= 2: {1}
+wrote hodge_graphterms_genus2.m (27 entries), hodge_stablegraphs_genus2.m, hodge_collect_genus2.txt
+VALIDATION FAIL: genus-2 per-graph agreement: terms 27, polar parts 20 of 27 (stored 27, unmatched keys 0)
+done

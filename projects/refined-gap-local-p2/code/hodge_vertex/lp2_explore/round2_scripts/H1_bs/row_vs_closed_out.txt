@@ -1,0 +1,18 @@
+== 3 8 5/7
+sqrt3 exponents: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+sq exponents: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+row sign 1: v=21/92 ; v*(E+3L)=3 ; match z^0..z^9: = = = = = = = = = =
+row sign -1: v=3469/4048 ; v*(E+3L)=3469/308 ; match z^0..z^9: = = X X X X X X X X
+  diff z^2: 2545/38472192
+== 1 1 -2/5
+sqrt3 exponents: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+sq exponents: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+row sign 1: v=15/4 ; v*(E+3L)=3 ; match z^0..z^9: = = = = = = = = = =
+row sign -1: v=3 ; v*(E+3L)=12/5 ; match z^0..z^9: = = X X X X X X X X
+  diff z^2: 1/96
+== 4 -1 13/3
+sqrt3 exponents: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+sq exponents: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+row sign 1: v=3/16 ; v*(E+3L)=3 ; match z^0..z^9: = = = = = = = = = =
+row sign -1: v=119/16 ; v*(E+3L)=119 ; match z^0..z^9: = = X X X X X X X X
+  diff z^2: -841/1728

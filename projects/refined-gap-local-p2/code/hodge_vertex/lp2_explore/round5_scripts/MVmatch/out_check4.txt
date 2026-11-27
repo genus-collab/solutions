@@ -1,0 +1,17 @@
+(STAR) in the a!-free form, true formula, in range (expected 0), and first point outside:
+   2 (2,) 0  direct: 0
+   3 (3,) 0  direct: 0
+   3 (2, 2) 0  direct: 0
+   3 (4,) 0  direct: 0
+   4 (4,) 0  direct: -
+   3 (5,) 205027/47029248  direct: 205027/47029248
+   2 (3,) 1367/186624  direct: 1367/186624
+Controls at in-range points (must be nonzero):
+   Laguerre index off by one: 2 (2,) True ; no (-1)^a: True
+   Laguerre index off by one: 3 (3,) True ; no (-1)^a: True
+   Laguerre index off by one: 3 (2, 2) True ; no (-1)^a: True
+Control, |Aut R| dropped at an outside point (2,(2,2)): differs from direct: True
+  Xi_2(empty) at tau=2/7: from MV + M_0 = -49279/1866240, direct = -49279/1866240 match
+  Xi_2(empty) at tau=-7/3: from MV + M_0 = -1259/215040, direct = -1259/215040 match
+  Xi_3(empty) at tau=2/7: from MV + M_0 = 3565223/188116992, direct = 3565223/188116992 match
+  Xi_3(empty) at tau=-7/3: from MV + M_0 = 1254227/708083712, direct = 1254227/708083712 match

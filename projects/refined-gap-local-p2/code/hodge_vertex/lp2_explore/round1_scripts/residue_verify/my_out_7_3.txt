@@ -1,0 +1,49 @@
+e1 = 7, e2 = 3, E = 10; z-orders 0..9; s-precision 9; leaf tests k = 0..3
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+XX(s) = -2/9, 2/27, 10/243, 14/729, 16/2187, 128/59049, 112/177147, 320/531441, 41068/43046721   (XX(0) must be -2/9)
+rows built
+  [c1=1] sigma_0 [s^-1]: c0 = 0, top pole j = 0 (<= 0), spare z-orders 9
+  [c1=1] sigma_0 [s^0]: c0 = 0, top pole j = 1 (<= 1), spare z-orders 8
+  [c1=1] sigma_0 [s^1]: c0 = 0, top pole j = 2 (<= 2), spare z-orders 7
+  [c1=1] sigma_0 [s^7]: c0 = 0, top pole j = 8 (<= 8), spare z-orders 1
+  [c1=1] sigma_1 [s^-1]: c0 = -10/3, top pole j = 0 (<= 0), spare z-orders 9
+  [c1=1] sigma_1 [s^0]: c0 = 10/9, top pole j = 1 (<= 1), spare z-orders 8
+  [c1=1] sigma_1 [s^1]: c0 = 20/27, top pole j = 2 (<= 2), spare z-orders 7
+  [c1=1] sigma_1 [s^7]: c0 = 76520/1594323, top pole j = 8 (<= 8), spare z-orders 1
+  [c1=1] sigma_2 [s^-1]: c0 = 100/3, top pole j = 0 (<= 0), spare z-orders 9
+  [c1=1] sigma_2 [s^0]: c0 = -100/3, top pole j = 0 (<= 1), spare z-orders 8
+  [c1=1] sigma_2 [s^1]: c0 = 200/27, top pole j = 1 (<= 2), spare z-orders 7
+  [c1=1] sigma_2 [s^7]: c0 = -348400/1594323, top pole j = 7 (<= 8), spare z-orders 1
+[c1=1] leaf-fit failures: 0
+[c1=1] s^-2: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=1] s^-1: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=1] s^0: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes; A_11 = -70000/9
+[c1=1] s^1: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=1] s^2: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=1] s^3: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=1] s^4: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=1] s^5: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=1] s^6: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+  [c1=C1cf] sigma_0 [s^-1]: c0 = 0, top pole j = 0 (<= 0), spare z-orders 9
+  [c1=C1cf] sigma_0 [s^0]: c0 = 0, top pole j = 1 (<= 1), spare z-orders 8
+  [c1=C1cf] sigma_0 [s^1]: c0 = 0, top pole j = 2 (<= 2), spare z-orders 7
+  [c1=C1cf] sigma_0 [s^7]: c0 = 0, top pole j = 8 (<= 8), spare z-orders 1
+  [c1=C1cf] sigma_1 [s^-1]: c0 = 10/3, top pole j = 0 (<= 0), spare z-orders 9
+  [c1=C1cf] sigma_1 [s^0]: c0 = -10/3, top pole j = 1 (<= 1), spare z-orders 8
+  [c1=C1cf] sigma_1 [s^1]: c0 = 0, top pole j = 2 (<= 2), spare z-orders 7
+  [c1=C1cf] sigma_1 [s^7]: c0 = 0, top pole j = 8 (<= 8), spare z-orders 1
+  [c1=C1cf] sigma_2 [s^-1]: c0 = -100/3, top pole j = 0 (<= 0), spare z-orders 9
+  [c1=C1cf] sigma_2 [s^0]: c0 = 100/3, top pole j = 0 (<= 1), spare z-orders 8
+  [c1=C1cf] sigma_2 [s^1]: c0 = 0, top pole j = 1 (<= 2), spare z-orders 7
+  [c1=C1cf] sigma_2 [s^7]: c0 = 0, top pole j = 7 (<= 8), spare z-orders 1
+[c1=C1cf] leaf-fit failures: 0
+[c1=C1cf] s^-2: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=C1cf] s^-1: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=C1cf] s^0: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes; A_11 = -70000/9
+[c1=C1cf] s^1: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=C1cf] s^2: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=C1cf] s^3: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=C1cf] s^4: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=C1cf] s^5: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+[c1=C1cf] s^6: predicted vs code E_00: EQUAL 45 entries; support (i-1)+(l-1)<=k: yes
+done

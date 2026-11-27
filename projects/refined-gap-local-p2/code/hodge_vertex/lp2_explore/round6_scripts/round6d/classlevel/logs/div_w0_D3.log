@@ -1,0 +1,2 @@
+divisor/unit checks (1, 2, 5) (3, 7) g= 1 D= 3 {'GP div': [9, 0], 'GS div': [9, 0], 'GP unit': [6, 0], 'GS unit': [6, 0], 'GP div without bubble (control)': [9, 6]}
+divisor/unit checks (1, 2, 5) (3, 7) g= 2 D= 3 {'GP div': [18, 0], 'GS div': [18, 0], 'GP unit': [15, 0], 'GS unit': [15, 0], 'GP div without bubble (control)': [18, 15]}

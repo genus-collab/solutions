@@ -1,0 +1,31 @@
+form k=0: stored Sqrt3 power 1; interp verified on 6 extra pts: yes; s-exponents 1..1; OK
+form k=1: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..2; OK
+form k=2: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..3; OK
+form k=3: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..4; OK
+form k=4: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..5; OK
+form k=5: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..6; OK
+form k=6: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..7; OK
+form k=7: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..8; OK
+form k=8: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..9; OK
+form k=9: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..10; OK
+S_0 = 1/100 s
+FORM ALL: OK
+CONTROL: perturbed S_0 by 1/1000000 s
+PF z^0: 0
+PF z^1: 0
+PF z^2: NONZERO (4 terms)
+PF z^3: NONZERO (5 terms)
+PF z^4: 0
+PF z^5: 0
+PF z^6: 0
+PF z^7: 0
+PF z^8: 0
+PF z^9: 0
+PF ALL: FAIL
+colour 1: t = 0 + (-1/3) w, s = 3/5 + (3/10) w
+colour 2: t = 1/3 + (1/3) w, s = 3/10 + (-3/10) w
+Pi_11: DEVIATES z^0:100020001/100000000 + (0) w z^2:-7031/63504000000 + (1655189/1890000000000) w
+Pi_12: DEVIATES z^2:10001/10000000000 + (0) w z^3:173/7560000000 + (173/3780000000) w
+Pi_21: DEVIATES z^2:10001/10000000000 + (0) w z^3:-173/7560000000 + (-173/3780000000) w
+Pi_22: DEVIATES z^0:100020001/100000000 + (0) w z^2:-611771/620156250000 + (-1655189/1890000000000) w
+ORTHO ALL: FAIL

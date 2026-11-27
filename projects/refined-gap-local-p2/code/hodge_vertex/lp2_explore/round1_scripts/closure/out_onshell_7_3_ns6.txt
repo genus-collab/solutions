@@ -1,0 +1,54 @@
+e1 = 7, e2 = 3, E = 10; z-orders 0..9; s-precision 6; leaf tests k = 0..3
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+XX(s) = -2/9, 2/27, 10/243, 14/729, 16/2187, 128/59049   (XX(0) must be -2/9)
+section check theta log c1 - XX: valuation none (zero to s^4)
+rows built
+(0) M(z) V(z) = 1 (M = eta^-1 V(-z)^T Delta^-1, true rows, z^0..z^9): OK (exact to s^3)
+(1) A(z) = Sum_k z^k A_k from z d/dt_c v = (A - L/c1) v, rows at the section c1:
+  A_0: nonzero entries: (0,1) (1,1) (1,2) (2,0) (2,1) (2,2)  [entries known to s^2; omega-parts absent]
+     A_0(0,1) = s^0: 1, 0, 0, 0 (known to s^3)
+     A_0(1,1) = s^0: 20/9, 0, -160/729 (known to s^2)
+     A_0(1,2) = s^-1: -1/3, 1/3, 0, -1/243 (known to s^2)
+     A_0(2,0) = s^0: -1000/27, 0, 0, 0 (known to s^3)
+     A_0(2,1) = s^0: 100/9, 200/27, 1600/729 (known to s^2)
+     A_0(2,2) = s^-1: 10/3, -10/9, 0, -130/729 (known to s^2)
+     eta^-1 A_0: SYMMETRIC (A_0 eta-self-adjoint)
+  A_1: nonzero entries: none  [entries known to s^2; omega-parts absent]
+  A_2: nonzero entries: none  [entries known to s^2; omega-parts absent]
+  A_3: nonzero entries: none  [entries known to s^2; omega-parts absent]
+  A_4: nonzero entries: none  [entries known to s^2; omega-parts absent]
+  A_5: nonzero entries: none  [entries known to s^2; omega-parts absent]
+  A_6: nonzero entries: none  [entries known to s^2; omega-parts absent]
+  A_7: nonzero entries: none  [entries known to s^2; omega-parts absent]
+  A_8: nonzero entries: none  [entries known to s^2; omega-parts absent]
+  A_9: nonzero entries: none  [entries known to s^2; omega-parts absent]
+(2) Riccati defect Rd(XX) = 0 (to s^5)
+    prediction (hand derivation): A(z) = A_0 + z^2 kappa E_21, kappa = -c1 Rd = 0 (to s^5)
+    A_2(2,1) - kappa: 0 (to s^2)
+    closed forms of A_0: A0(0,0) OK; A0(0,1) OK; A0(0,2) OK; A0(1,0) OK; A0(1,1) OK; A0(1,2) OK; A0(2,0) OK
+    A0(2,1) = s^0: 100/9, 200/27, 1600/729 (known to s^2)
+    A0(2,2) = s^-1: 10/3, -10/9, 0, -130/729 (known to s^2)
+    c1 * A0(2,2) = s^-1: -10/3, -10/9, -20/27, -250/729 (known to s^2)
+    A0(2,1)/c1 = s^0: -100/9, 0, 2000/729 (known to s^2)
+(3) Ehat_00(m,n), m+n <= 8, from the true rows at colour 0: lowest s-power 0
+    Ehat_00(0,0) = s^0: -700/9, 700/81, 1400/243 (known to s^3)
+    Ehat_00(0,1) = s^0: -70/9, -70/27, -560/243 (known to s^3)
+    Ehat_00(0,2) = s^0: -7/9, -77/81, -266/243 (known to s^3)
+    Ehat_00(1,0) = s^0: -70/9, -70/27, -560/243 (known to s^3)
+    Ehat_00(1,1) = s^0: -7/9, -49/81, -56/81 (known to s^3)
+    Ehat_00(2,0) = s^0: -7/9, -77/81, -266/243 (known to s^3)
+    entries with an s^-1 term: none
+    (A_0 - L') X(psi=0) = 0: OK
+    Flow_0 numerator divisible by (psi+psi'): OK
+(4) flow identity d_T Ehat - 2 ell Ehat = Flow_0 + <A_2 X, X'> for m+n <= 7: OK (exact to s^0); without the A_2 term: OK
+    [s^-2] F(0,0) = 0;  [s^-2] Flow_0(0,0) = 0;  [s^-2] Anom(0,0) = 0
+    entries with [s^-2] Anom != 0: none
+    entries with [s^-2] Flow_0 != 0: none
+    leading balance: e_-1 = -3 c1(0) [s^-2]F(0,0) = 0;  observed [s^-1] Ehat_00(0,0) = 0
+    pure-anomaly prediction e_-1 = -3 c1(0) [s^-2]Anom(0,0) = 0
+    closed form q e1 e2 E^2 (q = XX shift at s = 0) = 0
+done
+
+real	0m58.484s
+user	0m57.391s
+sys	0m0.765s

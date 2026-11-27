@@ -1,0 +1,2532 @@
+2026-10-28 22:34:14  [g2_w5of6] start: genus 2, KMAX 3, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:14  [g2_w3of6] start: genus 2, KMAX 3, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:14  [g2_w5of6] 39 points assigned, 0 already done, 39 to do
+2026-10-28 22:34:14  [g2_w5of6] point  1
+{-, 13}
+ 2 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  1
+{-, 5}
+ 3 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  1
+{-, 23}
+ 3 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:14  [g2_w3of6] 39 points assigned, 0 already done, 39 to do
+2026-10-28 22:34:14  [g2_w5of6] point  2
+{-, 13}
+ 3 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:14  [g2_w2of6] start: genus 2, KMAX 3, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:14  [g2_w3of6] point  1
+{-, 7}
+ 2 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  1
+{-, 5}
+ 4 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:14  [g2_w3of6] point  1
+{-, 29}
+ 2 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:14  [g2_w3of6] point  1
+{-, 17}
+ 3 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  1
+{-, 23}
+ 4 done in 0.1 s; max |Im|      -344
+0. 10
+2026-10-28 22:34:14  [g2_w3of6] point  2
+{-, 7}
+ 3 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  3
+{-, 13}
+ 4 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:14  [g2_w3of6] point  2
+{-, 29}
+ 3 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  1
+{-, 5}
+ 5 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:14  [g2_w3of6] point  1
+{-, 17}
+ 4 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  1
+{-, 23}
+ 5 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:14  [g2_w3of6] point  3
+{-, 7}
+ 4 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  2
+{-, 13}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:14  [g2_w3of6] point  3
+{-, 29}
+ 4 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  3
+{-, 5}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:14  [g2_w2of6] 39 points assigned, 0 already done, 39 to do
+2026-10-28 22:34:14  [g2_w3of6] point  1
+{-, 17}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:14  [g2_w5of6] point  3
+{-, 23}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  1
+{-, 5}
+ 2 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  2
+{-, 7}
+ 5 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  1
+{-, 23}
+ 2 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  2
+{-, 29}
+ 5 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  4
+{-, 13}
+ 5 done in 0.1 s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  1
+{-, 13}
+ 3 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  3
+{-, 17}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  1
+{-, 5}
+ 6 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  2
+{-, 5}
+ 3 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] start: genus 2, KMAX 3, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:15  [g2_w3of6] point  4
+{-, 7}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  1
+{-, 23}
+ 6 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  2
+{-, 23}
+ 3 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  4
+{-, 29}
+ 5 done in 0.1 s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  1
+{-, 13}
+ 4 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  5
+{-, 13}
+ 6 done in 0.1 s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  3
+{-, 5}
+ 4 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  1
+{-, 17}
+ 6 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  1
+{-, 5}
+ 7 done in 0.1 s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  3
+{-, 23}
+ 4 done in 0.1 s; max |Im|      -343
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  5
+{-, 7}
+ 6 done in 0.1 s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  1
+{-, 13}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  5
+{-, 29}
+ 6 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  1
+{-, 23}
+ 7 done in 0.1 s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] start: genus 2, KMAX 3, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:15  [g2_w2of6] point  2
+{-, 5}
+ 5 done in 0.1 s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  1
+{-, 17}
+ 7 done in 0.1 s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  2
+{-, 13}
+ 7 done in 0.1 s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  2
+{-, 23}
+ 5 done in 0.1 s; max |Im|      -343
+0. 10
+2026-10-28 22:34:15  [g2_w4of6] start: genus 2, KMAX 3, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:15  [g2_w1of6] 39 points assigned, 0 already done, 39 to do
+2026-10-28 22:34:15  [g2_w2of6] point  3
+{-, 13}
+ 5 done in 0.1 s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  2
+{-, 7}
+ 7 done in 0.1 s; max |Im|      -347
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  3
+{-, 5}
+ 7 done in 0.1 s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  4
+{-, 5}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  1
+{-, 3}
+ 2 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  2
+{-, 29}
+ 7 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  3
+{-, 23}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  4
+{-, 23}
+ 5 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  1
+{-, 19}
+ 2 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  3
+{-, 17}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  4
+{-, 13}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  1
+{-, 13}
+ 6 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  1
+{-, 11}
+ 3 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  4
+{-, 7}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  5
+{-, 5}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  5
+{-, 5}
+ 6 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  2
+{-, 3}
+ 3 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  4
+{-, 29}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  5
+{-, 23}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  2
+{-, 19}
+ 3 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  5
+{-, 23}
+ 6 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  5
+{-, 17}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  6
+{-, 13}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  1
+{-, 11}
+ 4 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  1
+{-, 13}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  6
+{-, 7}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  1
+{-, 5}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] 39 points assigned, 0 already done, 39 to do
+2026-10-28 22:34:15  [g2_w1of6] point  3
+{-, 3}
+ 4 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  2
+{-, 5}
+ 7 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  6
+{-, 29}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  1
+{-, 23}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] point  1
+{-, 17}
+ 2 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w4of6] 39 points assigned, 0 already done, 39 to do
+2026-10-28 22:34:15  [g2_w1of6] point  3
+{-, 19}
+ 4 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  2
+{-, 23}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  1
+{-, 17}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  3
+{-, 13}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] point  1
+{-, 7}
+ 3 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w4of6] point  1
+{-, 11}
+ 2 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  1
+{-, 11}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  3
+{-, 13}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  3
+{-, 7}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  5
+{-, 5}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] point  1
+{-, 29}
+ 3 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:15  [g2_w4of6] point  1
+{-, 3}
+ 3 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  2
+{-, 3}
+ 5 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  3
+{-, 29}
+ 8 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  5
+{-, 23}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  4
+{-, 5}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] point  2
+{-, 17}
+ 3 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w4of6] point  1
+{-, 19}
+ 3 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  2
+{-, 19}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  5
+{-, 17}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  7
+{-, 13}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  4
+{-, 23}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] point  1
+{-, 7}
+ 4 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:15  [g2_w4of6] point  2
+{-, 11}
+ 3 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  3
+{-, 11}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  7
+{-, 7}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  1
+{-, 5}
+ 9 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  5
+{-, 13}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] point  1
+{-, 29}
+ 4 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:15  [g2_w4of6] point  1
+{-, 3}
+ 4 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w1of6] point  4
+{-, 3}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w3of6] point  7
+{-, 29}
+ 8 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:15  [g2_w5of6] point  1
+{-, 23}
+ 9 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:15  [g2_w2of6] point  6
+{-, 5}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:15  [g2_w6of6] point  3
+{-, 17}
+ 4 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 19}
+ 4 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  4
+{-, 19}
+ 5 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w3of6] point  1
+{-, 17}
+ 9 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w5of6] point  2
+{-, 13}
+ 9 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  6
+{-, 23}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 7}
+ 5 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  3
+{-, 11}
+ 4 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  1
+{-, 11}
+ 6 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w3of6] point  2
+{-, 7}
+ 9 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w5of6] point  1
+{--, 5}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  1
+{-, 13}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 29}
+ 5 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 3}
+ 5 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  5
+{-, 3}
+ 6 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w3of6] point  2
+{-, 29}
+ 9 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:16  [g2_w5of6] point  1
+{--, 23}
+ 10 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  3
+{-, 5}
+ 8 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  2
+{-, 17}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 19}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  5
+{-, 19}
+ 6 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w3of6] point  1
+{--, 17}
+ 10 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w5of6] point  3
+{--, 13}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  3
+{-, 23}
+ 8 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  3
+{-, 7}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  2
+{-, 11}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  1
+{-, 11}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w3of6] point  3
+{--, 7}
+ 10 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w5of6] point  7
+{--, 5}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  5
+{-, 13}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  3
+{-, 29}
+ 5 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  3
+{-, 3}
+ 5 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  2
+{-, 3}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w3of6] point  3
+{--, 29}
+ 10 done in 0. s; max |Im|      -342
+0. 10
+2026-10-28 22:34:16  [g2_w5of6] point  7
+{--, 23}
+ 10 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w5of6] job finished
+2026-10-28 22:34:16  [g2_w2of6] point  7
+{-, 5}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  4
+{-, 17}
+ 5 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  3
+{-, 19}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  2
+{-, 19}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w3of6] point  7
+{--, 17}
+ 10 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w3of6] job finished
+2026-10-28 22:34:16  [g2_w2of6] point  7
+{-, 23}
+ 8 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 7}
+ 6 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  4
+{-, 11}
+ 5 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  3
+{-, 11}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  1
+{-, 13}
+ 9 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 29}
+ 6 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 3}
+ 6 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  4
+{-, 3}
+ 7 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  2
+{-, 5}
+ 9 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  5
+{-, 17}
+ 6 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 19}
+ 6 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  4
+{-, 19}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  2
+{-, 23}
+ 9 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 7}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  5
+{-, 11}
+ 6 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  5
+{-, 11}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  1
+{--, 13}
+ 10 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 29}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 3}
+ 7 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  6
+{-, 3}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  3
+{--, 5}
+ 10 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  2
+{-, 17}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 19}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  6
+{-, 19}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  3
+{--, 23}
+ 10 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  3
+{-, 7}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  2
+{-, 11}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  1
+{-, 11}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] point  7
+{--, 13}
+ 10 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w2of6] job finished
+2026-10-28 22:34:16  [g2_w6of6] point  3
+{-, 29}
+ 7 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  3
+{-, 3}
+ 8 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  3
+{-, 3}
+ 7 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  4
+{-, 17}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  3
+{-, 19}
+ 8 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  3
+{-, 19}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  5
+{-, 7}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  5
+{-, 11}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  4
+{-, 11}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  5
+{-, 29}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  7
+{-, 3}
+ 8 done in 0. s; max |Im|      -343
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  5
+{-, 3}
+ 7 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  6
+{-, 17}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  7
+{-, 19}
+ 8 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  5
+{-, 19}
+ 7 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 7}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  1
+{-, 11}
+ 9 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  6
+{-, 11}
+ 7 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 29}
+ 8 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  2
+{-, 3}
+ 9 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 3}
+ 8 done in 0. s; max |Im|      -347
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  3
+{-, 17}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  2
+{-, 19}
+ 9 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 19}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  5
+{-, 7}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  1
+{--, 11}
+ 10 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  3
+{-, 11}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  5
+{-, 29}
+ 8 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  3
+{--, 3}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  5
+{-, 3}
+ 8 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  7
+{-, 17}
+ 8 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  3
+{--, 19}
+ 10 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  5
+{-, 19}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 7}
+ 9 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] point  7
+{--, 11}
+ 10 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w1of6] job finished
+2026-10-28 22:34:16  [g2_w4of6] point  7
+{-, 11}
+ 8 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{-, 29}
+ 9 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 3}
+ 9 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  2
+{-, 17}
+ 9 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{-, 19}
+ 9 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{--, 7}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  2
+{-, 11}
+ 9 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:16  [g2_w6of6] point  1
+{--, 29}
+ 10 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:16  [g2_w4of6] point  1
+{--, 3}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:17  [g2_w6of6] point  3
+{--, 17}
+ 10 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:17  [g2_w4of6] point  1
+{--, 19}
+ 10 done in 0. s; max |Im|      -345
+0. 10
+2026-10-28 22:34:17  [g2_w6of6] point  7
+{--, 7}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:17  [g2_w4of6] point  3
+{--, 11}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:17  [g2_w6of6] point  7
+{--, 29}
+ 10 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:17  [g2_w6of6] job finished
+2026-10-28 22:34:17  [g2_w4of6] point  7
+{--, 3}
+ 10 done in 0. s; max |Im|      -346
+0. 10
+2026-10-28 22:34:17  [g2_w4of6] point  7
+{--, 19}
+ 10 done in 0. s; max |Im|      -344
+0. 10
+2026-10-28 22:34:17  [g2_w4of6] job finished
+2026-10-28 22:34:58  [g3_w4of6] start: genus 3, KMAX 6, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:58  [g3_w5of6] start: genus 3, KMAX 6, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:58  [g3_w2of6] start: genus 3, KMAX 6, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:58  [g3_w1of6] start: genus 3, KMAX 6, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:58  [g3_w4of6] 65 points assigned, 0 already done, 65 to do
+2026-10-28 22:34:58  [g3_w5of6] 65 points assigned, 0 already done, 65 to do
+2026-10-28 22:34:59  [g3_w6of6] start: genus 3, KMAX 6, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:59  [g3_w3of6] start: genus 3, KMAX 6, PREC 350, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-10-28 22:34:59  [g3_w2of6] 65 points assigned, 0 already done, 65 to do
+2026-10-28 22:34:59  [g3_w1of6] 65 points assigned, 0 already done, 65 to do
+2026-10-28 22:34:59  [g3_w6of6] 65 points assigned, 0 already done, 65 to do
+2026-10-28 22:34:59  [g3_w3of6] 65 points assigned, 0 already done, 65 to do
+2026-10-28 22:35:00  [g3_w4of6] point  1
+{-, 11}
+ 2 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:00  [g3_w5of6] point  1
+{-, 13}
+ 2 done in 1.7 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:00  [g3_w2of6] point  1
+{-, 5}
+ 2 done in 1.5 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:01  [g3_w1of6] point  1
+{-, 3}
+ 2 done in 1.5 s; max |Im|      -345
+0. 10
+2026-10-28 22:35:01  [g3_w6of6] point  1
+{-, 17}
+ 2 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:01  [g3_w3of6] point  1
+{-, 7}
+ 2 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:01  [g3_w4of6] point  1
+{-, 31}
+ 2 done in 1.5 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:02  [g3_w5of6] point  1
+{-, 37}
+ 2 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:02  [g3_w2of6] point  1
+{-, 23}
+ 2 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:02  [g3_w1of6] point  1
+{-, 19}
+ 2 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:02  [g3_w6of6] point  1
+{-, 41}
+ 2 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:03  [g3_w3of6] point  1
+{-, 29}
+ 2 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:03  [g3_w4of6] point  1
+{-, 3}
+ 3 done in 1.5 s; max |Im|      -345
+0. 10
+2026-10-28 22:35:03  [g3_w5of6] point  1
+{-, 5}
+ 3 done in 1.5 s; max |Im|      -345
+0. 10
+2026-10-28 22:35:04  [g3_w2of6] point  1
+{-, 47}
+ 2 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:04  [g3_w1of6] point  1
+{-, 43}
+ 2 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:04  [g3_w6of6] point  1
+{-, 7}
+ 3 done in 1.5 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:04  [g3_w3of6] point  1
+{-, 53}
+ 2 done in 1.6 s; max |Im|      -331
+0. 10
+2026-10-28 22:35:05  [g3_w4of6] point  1
+{-, 19}
+ 3 done in 1.5 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:05  [g3_w5of6] point  1
+{-, 23}
+ 3 done in 1.5 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:05  [g3_w2of6] point  1
+{-, 13}
+ 3 done in 1.5 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:05  [g3_w1of6] point  1
+{-, 11}
+ 3 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:06  [g3_w6of6] point  1
+{-, 29}
+ 3 done in 1.5 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:06  [g3_w3of6] point  1
+{-, 17}
+ 3 done in 1.5 s; max |Im|      -340
+0. 10
+2026-10-28 22:35:06  [g3_w4of6] point  1
+{-, 43}
+ 3 done in 1.5 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:06  [g3_w5of6] point  1
+{-, 47}
+ 3 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:07  [g3_w2of6] point  1
+{-, 37}
+ 3 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:07  [g3_w1of6] point  1
+{-, 31}
+ 3 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:07  [g3_w6of6] point  1
+{-, 53}
+ 3 done in 1.5 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:07  [g3_w3of6] point  1
+{-, 41}
+ 3 done in 1.5 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:08  [g3_w4of6] point  2
+{-, 11}
+ 3 done in 1.5 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:08  [g3_w5of6] point  2
+{-, 13}
+ 3 done in 1.5 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:08  [g3_w2of6] point  2
+{-, 5}
+ 3 done in 1.5 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:08  [g3_w1of6] point  2
+{-, 3}
+ 3 done in 1.5 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:09  [g3_w6of6] point  2
+{-, 17}
+ 3 done in 1.5 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:09  [g3_w3of6] point  2
+{-, 7}
+ 3 done in 1.5 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:09  [g3_w4of6] point  2
+{-, 31}
+ 3 done in 1.5 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:09  [g3_w5of6] point  2
+{-, 37}
+ 3 done in 1.5 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:10  [g3_w2of6] point  2
+{-, 23}
+ 3 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:10  [g3_w1of6] point  2
+{-, 19}
+ 3 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:10  [g3_w6of6] point  2
+{-, 41}
+ 3 done in 1.5 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:10  [g3_w3of6] point  2
+{-, 29}
+ 3 done in 1.5 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:11  [g3_w4of6] point  1
+{-, 3}
+ 4 done in 1.5 s; max |Im|      -346
+0. 10
+2026-10-28 22:35:11  [g3_w5of6] point  1
+{-, 5}
+ 4 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:11  [g3_w2of6] point  2
+{-, 47}
+ 3 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:11  [g3_w1of6] point  2
+{-, 43}
+ 3 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:12  [g3_w6of6] point  1
+{-, 7}
+ 4 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:12  [g3_w3of6] point  2
+{-, 53}
+ 3 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:12  [g3_w4of6] point  1
+{-, 19}
+ 4 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:13  [g3_w5of6] point  1
+{-, 23}
+ 4 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:13  [g3_w2of6] point  1
+{-, 13}
+ 4 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:13  [g3_w1of6] point  1
+{-, 11}
+ 4 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:13  [g3_w6of6] point  1
+{-, 29}
+ 4 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:13  [g3_w3of6] point  1
+{-, 17}
+ 4 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:14  [g3_w4of6] point  1
+{-, 43}
+ 4 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:14  [g3_w5of6] point  1
+{-, 47}
+ 4 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:15  [g3_w2of6] point  1
+{-, 37}
+ 4 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:15  [g3_w1of6] point  1
+{-, 31}
+ 4 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:15  [g3_w6of6] point  1
+{-, 53}
+ 4 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:15  [g3_w3of6] point  1
+{-, 41}
+ 4 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:15  [g3_w4of6] point  3
+{-, 11}
+ 4 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:16  [g3_w5of6] point  3
+{-, 13}
+ 4 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:16  [g3_w2of6] point  3
+{-, 5}
+ 4 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:16  [g3_w1of6] point  3
+{-, 3}
+ 4 done in 1.5 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:16  [g3_w6of6] point  3
+{-, 17}
+ 4 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:17  [g3_w3of6] point  3
+{-, 7}
+ 4 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:17  [g3_w4of6] point  3
+{-, 31}
+ 4 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:17  [g3_w5of6] point  3
+{-, 37}
+ 4 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:18  [g3_w2of6] point  3
+{-, 23}
+ 4 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:18  [g3_w1of6] point  3
+{-, 19}
+ 4 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:18  [g3_w6of6] point  3
+{-, 41}
+ 4 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:18  [g3_w3of6] point  3
+{-, 29}
+ 4 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:19  [g3_w4of6] point  1
+{-, 3}
+ 5 done in 1.5 s; max |Im|      -345
+0. 10
+2026-10-28 22:35:19  [g3_w5of6] point  1
+{-, 5}
+ 5 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:19  [g3_w2of6] point  3
+{-, 47}
+ 4 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:19  [g3_w1of6] point  3
+{-, 43}
+ 4 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:20  [g3_w6of6] point  1
+{-, 7}
+ 5 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:20  [g3_w3of6] point  3
+{-, 53}
+ 4 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:20  [g3_w4of6] point  1
+{-, 19}
+ 5 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:21  [g3_w5of6] point  1
+{-, 23}
+ 5 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:21  [g3_w2of6] point  1
+{-, 13}
+ 5 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:21  [g3_w1of6] point  1
+{-, 11}
+ 5 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:21  [g3_w6of6] point  1
+{-, 29}
+ 5 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:21  [g3_w3of6] point  1
+{-, 17}
+ 5 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:35:22  [g3_w4of6] point  1
+{-, 43}
+ 5 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:22  [g3_w5of6] point  1
+{-, 47}
+ 5 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:22  [g3_w2of6] point  1
+{-, 37}
+ 5 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:23  [g3_w1of6] point  1
+{-, 31}
+ 5 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:23  [g3_w6of6] point  1
+{-, 53}
+ 5 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:23  [g3_w3of6] point  1
+{-, 41}
+ 5 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:23  [g3_w4of6] point  2
+{-, 11}
+ 5 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:24  [g3_w5of6] point  2
+{-, 13}
+ 5 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:24  [g3_w2of6] point  2
+{-, 5}
+ 5 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:24  [g3_w1of6] point  2
+{-, 3}
+ 5 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:35:24  [g3_w6of6] point  2
+{-, 17}
+ 5 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:25  [g3_w3of6] point  2
+{-, 7}
+ 5 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:25  [g3_w4of6] point  2
+{-, 31}
+ 5 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:25  [g3_w5of6] point  2
+{-, 37}
+ 5 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:26  [g3_w2of6] point  2
+{-, 23}
+ 5 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:26  [g3_w1of6] point  2
+{-, 19}
+ 5 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:26  [g3_w6of6] point  2
+{-, 41}
+ 5 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:26  [g3_w3of6] point  2
+{-, 29}
+ 5 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:26  [g3_w4of6] point  3
+{-, 3}
+ 5 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:27  [g3_w5of6] point  3
+{-, 5}
+ 5 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:27  [g3_w2of6] point  2
+{-, 47}
+ 5 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:27  [g3_w1of6] point  2
+{-, 43}
+ 5 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:28  [g3_w6of6] point  3
+{-, 7}
+ 5 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:28  [g3_w3of6] point  2
+{-, 53}
+ 5 done in 1.6 s; max |Im|      -331
+0. 10
+2026-10-28 22:35:28  [g3_w4of6] point  3
+{-, 19}
+ 5 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:29  [g3_w5of6] point  3
+{-, 23}
+ 5 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:29  [g3_w2of6] point  3
+{-, 13}
+ 5 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:29  [g3_w1of6] point  3
+{-, 11}
+ 5 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:29  [g3_w6of6] point  3
+{-, 29}
+ 5 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:29  [g3_w3of6] point  3
+{-, 17}
+ 5 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:30  [g3_w4of6] point  3
+{-, 43}
+ 5 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:30  [g3_w5of6] point  3
+{-, 47}
+ 5 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:30  [g3_w2of6] point  3
+{-, 37}
+ 5 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:31  [g3_w1of6] point  3
+{-, 31}
+ 5 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:31  [g3_w6of6] point  3
+{-, 53}
+ 5 done in 1.6 s; max |Im|      -331
+0. 10
+2026-10-28 22:35:31  [g3_w3of6] point  3
+{-, 41}
+ 5 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:31  [g3_w4of6] point  4
+{-, 11}
+ 5 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:35:32  [g3_w5of6] point  4
+{-, 13}
+ 5 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:35:32  [g3_w2of6] point  4
+{-, 5}
+ 5 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:32  [g3_w1of6] point  4
+{-, 3}
+ 5 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:32  [g3_w6of6] point  4
+{-, 17}
+ 5 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:33  [g3_w3of6] point  4
+{-, 7}
+ 5 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:33  [g3_w4of6] point  4
+{-, 31}
+ 5 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:33  [g3_w5of6] point  4
+{-, 37}
+ 5 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:34  [g3_w2of6] point  4
+{-, 23}
+ 5 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:34  [g3_w1of6] point  4
+{-, 19}
+ 5 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:34  [g3_w6of6] point  4
+{-, 41}
+ 5 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:34  [g3_w3of6] point  4
+{-, 29}
+ 5 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:34  [g3_w4of6] point  1
+{-, 3}
+ 6 done in 1.5 s; max |Im|      -346
+0. 10
+2026-10-28 22:35:35  [g3_w5of6] point  1
+{-, 5}
+ 6 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:35  [g3_w2of6] point  4
+{-, 47}
+ 5 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:35  [g3_w1of6] point  4
+{-, 43}
+ 5 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:36  [g3_w6of6] point  1
+{-, 7}
+ 6 done in 1.5 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:36  [g3_w3of6] point  4
+{-, 53}
+ 5 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:36  [g3_w4of6] point  1
+{-, 19}
+ 6 done in 1.5 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:37  [g3_w5of6] point  1
+{-, 23}
+ 6 done in 1.5 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:37  [g3_w2of6] point  1
+{-, 13}
+ 6 done in 1.5 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:37  [g3_w1of6] point  1
+{-, 11}
+ 6 done in 1.5 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:37  [g3_w6of6] point  1
+{-, 29}
+ 6 done in 1.5 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:37  [g3_w3of6] point  1
+{-, 17}
+ 6 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:35:38  [g3_w4of6] point  1
+{-, 43}
+ 6 done in 1.5 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:38  [g3_w5of6] point  1
+{-, 47}
+ 6 done in 1.5 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:38  [g3_w2of6] point  1
+{-, 37}
+ 6 done in 1.5 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:38  [g3_w1of6] point  1
+{-, 31}
+ 6 done in 1.5 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:39  [g3_w6of6] point  1
+{-, 53}
+ 6 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:39  [g3_w3of6] point  1
+{-, 41}
+ 6 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:39  [g3_w4of6] point  5
+{-, 11}
+ 6 done in 1.5 s; max |Im|      -340
+0. 10
+2026-10-28 22:35:40  [g3_w5of6] point  5
+{-, 13}
+ 6 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:40  [g3_w2of6] point  5
+{-, 5}
+ 6 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:40  [g3_w1of6] point  5
+{-, 3}
+ 6 done in 1.5 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:40  [g3_w6of6] point  5
+{-, 17}
+ 6 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:41  [g3_w3of6] point  5
+{-, 7}
+ 6 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:41  [g3_w4of6] point  5
+{-, 31}
+ 6 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:41  [g3_w5of6] point  5
+{-, 37}
+ 6 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:41  [g3_w2of6] point  5
+{-, 23}
+ 6 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:42  [g3_w1of6] point  5
+{-, 19}
+ 6 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:42  [g3_w6of6] point  5
+{-, 41}
+ 6 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:42  [g3_w3of6] point  5
+{-, 29}
+ 6 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:42  [g3_w4of6] point  1
+{-, 3}
+ 7 done in 1.5 s; max |Im|      -346
+0. 10
+2026-10-28 22:35:43  [g3_w5of6] point  1
+{-, 5}
+ 7 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:43  [g3_w2of6] point  5
+{-, 47}
+ 6 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:43  [g3_w1of6] point  5
+{-, 43}
+ 6 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:43  [g3_w6of6] point  1
+{-, 7}
+ 7 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:44  [g3_w3of6] point  5
+{-, 53}
+ 6 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:44  [g3_w4of6] point  1
+{-, 19}
+ 7 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:35:45  [g3_w5of6] point  1
+{-, 23}
+ 7 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:45  [g3_w2of6] point  1
+{-, 13}
+ 7 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:45  [g3_w1of6] point  1
+{-, 11}
+ 7 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:45  [g3_w6of6] point  1
+{-, 29}
+ 7 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:45  [g3_w3of6] point  1
+{-, 17}
+ 7 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:45  [g3_w4of6] point  1
+{-, 43}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:46  [g3_w5of6] point  1
+{-, 47}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:46  [g3_w2of6] point  1
+{-, 37}
+ 7 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:46  [g3_w1of6] point  1
+{-, 31}
+ 7 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:47  [g3_w6of6] point  1
+{-, 53}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:47  [g3_w3of6] point  1
+{-, 41}
+ 7 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:47  [g3_w4of6] point  2
+{-, 11}
+ 7 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:48  [g3_w5of6] point  2
+{-, 13}
+ 7 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:48  [g3_w2of6] point  2
+{-, 5}
+ 7 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:35:48  [g3_w1of6] point  2
+{-, 3}
+ 7 done in 1.5 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:48  [g3_w6of6] point  2
+{-, 17}
+ 7 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:35:48  [g3_w4of6] point  2
+{-, 31}
+ 7 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:48  [g3_w3of6] point  2
+{-, 7}
+ 7 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:49  [g3_w5of6] point  2
+{-, 37}
+ 7 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:49  [g3_w2of6] point  2
+{-, 23}
+ 7 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:49  [g3_w1of6] point  2
+{-, 19}
+ 7 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:50  [g3_w6of6] point  2
+{-, 41}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:50  [g3_w3of6] point  2
+{-, 29}
+ 7 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:50  [g3_w4of6] point  3
+{-, 3}
+ 7 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:35:51  [g3_w5of6] point  3
+{-, 5}
+ 7 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:51  [g3_w1of6] point  2
+{-, 43}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:51  [g3_w2of6] point  2
+{-, 47}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:51  [g3_w6of6] point  3
+{-, 7}
+ 7 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:52  [g3_w4of6] point  3
+{-, 19}
+ 7 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:52  [g3_w3of6] point  2
+{-, 53}
+ 7 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:53  [g3_w5of6] point  3
+{-, 23}
+ 7 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:53  [g3_w1of6] point  3
+{-, 11}
+ 7 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:53  [g3_w2of6] point  3
+{-, 13}
+ 7 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:53  [g3_w6of6] point  3
+{-, 29}
+ 7 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:53  [g3_w4of6] point  3
+{-, 43}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:53  [g3_w3of6] point  3
+{-, 17}
+ 7 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:54  [g3_w5of6] point  3
+{-, 47}
+ 7 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:54  [g3_w1of6] point  3
+{-, 31}
+ 7 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:54  [g3_w2of6] point  3
+{-, 37}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:55  [g3_w6of6] point  3
+{-, 53}
+ 7 done in 1.6 s; max |Im|      -331
+0. 10
+2026-10-28 22:35:55  [g3_w4of6] point  4
+{-, 11}
+ 7 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:35:55  [g3_w3of6] point  3
+{-, 41}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:56  [g3_w1of6] point  4
+{-, 3}
+ 7 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:35:56  [g3_w5of6] point  4
+{-, 13}
+ 7 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:56  [g3_w2of6] point  4
+{-, 5}
+ 7 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:35:56  [g3_w6of6] point  4
+{-, 17}
+ 7 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:35:56  [g3_w4of6] point  4
+{-, 31}
+ 7 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:35:56  [g3_w3of6] point  4
+{-, 7}
+ 7 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:57  [g3_w1of6] point  4
+{-, 19}
+ 7 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:35:57  [g3_w5of6] point  4
+{-, 37}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:35:58  [g3_w2of6] point  4
+{-, 23}
+ 7 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:35:58  [g3_w6of6] point  4
+{-, 41}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:58  [g3_w4of6] point  5
+{-, 3}
+ 7 done in 1.5 s; max |Im|      -344
+0. 10
+2026-10-28 22:35:58  [g3_w3of6] point  4
+{-, 29}
+ 7 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:35:59  [g3_w1of6] point  4
+{-, 43}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:35:59  [g3_w5of6] point  5
+{-, 5}
+ 7 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:35:59  [g3_w2of6] point  4
+{-, 47}
+ 7 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:35:59  [g3_w6of6] point  5
+{-, 7}
+ 7 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:00  [g3_w4of6] point  5
+{-, 19}
+ 7 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:00  [g3_w3of6] point  4
+{-, 53}
+ 7 done in 1.6 s; max |Im|      -331
+0. 10
+2026-10-28 22:36:01  [g3_w1of6] point  5
+{-, 11}
+ 7 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:01  [g3_w5of6] point  5
+{-, 23}
+ 7 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:01  [g3_w2of6] point  5
+{-, 13}
+ 7 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:01  [g3_w6of6] point  5
+{-, 29}
+ 7 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:01  [g3_w4of6] point  5
+{-, 43}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:01  [g3_w3of6] point  5
+{-, 17}
+ 7 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:02  [g3_w1of6] point  5
+{-, 31}
+ 7 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:02  [g3_w5of6] point  5
+{-, 47}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:02  [g3_w2of6] point  5
+{-, 37}
+ 7 done in 1.7 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:03  [g3_w6of6] point  5
+{-, 53}
+ 7 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:36:03  [g3_w4of6] point  6
+{-, 11}
+ 7 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:03  [g3_w3of6] point  5
+{-, 41}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:04  [g3_w1of6] point  6
+{-, 3}
+ 7 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:04  [g3_w5of6] point  6
+{-, 13}
+ 7 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:04  [g3_w2of6] point  6
+{-, 5}
+ 7 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:04  [g3_w6of6] point  6
+{-, 17}
+ 7 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:04  [g3_w4of6] point  6
+{-, 31}
+ 7 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:04  [g3_w3of6] point  6
+{-, 7}
+ 7 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:36:05  [g3_w1of6] point  6
+{-, 19}
+ 7 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:06  [g3_w5of6] point  6
+{-, 37}
+ 7 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:06  [g3_w2of6] point  6
+{-, 23}
+ 7 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:06  [g3_w6of6] point  6
+{-, 41}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:06  [g3_w4of6] point  1
+{-, 3}
+ 8 done in 1.5 s; max |Im|      -345
+0. 10
+2026-10-28 22:36:06  [g3_w3of6] point  6
+{-, 29}
+ 7 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:07  [g3_w1of6] point  6
+{-, 43}
+ 7 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:07  [g3_w5of6] point  1
+{-, 5}
+ 8 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:36:07  [g3_w2of6] point  6
+{-, 47}
+ 7 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:07  [g3_w6of6] point  1
+{-, 7}
+ 8 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:08  [g3_w4of6] point  1
+{-, 19}
+ 8 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:36:08  [g3_w3of6] point  6
+{-, 53}
+ 7 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:36:09  [g3_w1of6] point  1
+{-, 11}
+ 8 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:09  [g3_w5of6] point  1
+{-, 23}
+ 8 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:09  [g3_w2of6] point  1
+{-, 13}
+ 8 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:09  [g3_w6of6] point  1
+{-, 29}
+ 8 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:09  [g3_w4of6] point  1
+{-, 43}
+ 8 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:09  [g3_w3of6] point  1
+{-, 17}
+ 8 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:10  [g3_w1of6] point  1
+{-, 31}
+ 8 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:10  [g3_w5of6] point  1
+{-, 47}
+ 8 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:11  [g3_w2of6] point  1
+{-, 37}
+ 8 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:11  [g3_w6of6] point  1
+{-, 53}
+ 8 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:11  [g3_w4of6] point  3
+{-, 11}
+ 8 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:11  [g3_w3of6] point  1
+{-, 41}
+ 8 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:12  [g3_w1of6] point  3
+{-, 3}
+ 8 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:36:12  [g3_w5of6] point  3
+{-, 13}
+ 8 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:12  [g3_w2of6] point  3
+{-, 5}
+ 8 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:12  [g3_w6of6] point  3
+{-, 17}
+ 8 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:12  [g3_w4of6] point  3
+{-, 31}
+ 8 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:12  [g3_w3of6] point  3
+{-, 7}
+ 8 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:13  [g3_w1of6] point  3
+{-, 19}
+ 8 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:14  [g3_w5of6] point  3
+{-, 37}
+ 8 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:14  [g3_w2of6] point  3
+{-, 23}
+ 8 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:14  [g3_w6of6] point  3
+{-, 41}
+ 8 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:14  [g3_w4of6] point  5
+{-, 3}
+ 8 done in 1.5 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:14  [g3_w3of6] point  3
+{-, 29}
+ 8 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:15  [g3_w1of6] point  3
+{-, 43}
+ 8 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:15  [g3_w5of6] point  5
+{-, 5}
+ 8 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:15  [g3_w2of6] point  3
+{-, 47}
+ 8 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:36:15  [g3_w4of6] point  5
+{-, 19}
+ 8 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:15  [g3_w6of6] point  5
+{-, 7}
+ 8 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:16  [g3_w3of6] point  3
+{-, 53}
+ 8 done in 1.6 s; max |Im|      -331
+0. 10
+2026-10-28 22:36:17  [g3_w1of6] point  5
+{-, 11}
+ 8 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:17  [g3_w5of6] point  5
+{-, 23}
+ 8 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:17  [g3_w2of6] point  5
+{-, 13}
+ 8 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:17  [g3_w6of6] point  5
+{-, 29}
+ 8 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:17  [g3_w4of6] point  5
+{-, 43}
+ 8 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:17  [g3_w3of6] point  5
+{-, 17}
+ 8 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:18  [g3_w1of6] point  5
+{-, 31}
+ 8 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:18  [g3_w5of6] point  5
+{-, 47}
+ 8 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:36:19  [g3_w2of6] point  5
+{-, 37}
+ 8 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:19  [g3_w4of6] point  7
+{-, 11}
+ 8 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:19  [g3_w6of6] point  5
+{-, 53}
+ 8 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:36:19  [g3_w3of6] point  5
+{-, 41}
+ 8 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:20  [g3_w1of6] point  7
+{-, 3}
+ 8 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:20  [g3_w5of6] point  7
+{-, 13}
+ 8 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:20  [g3_w2of6] point  7
+{-, 5}
+ 8 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:20  [g3_w4of6] point  7
+{-, 31}
+ 8 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:20  [g3_w6of6] point  7
+{-, 17}
+ 8 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:21  [g3_w3of6] point  7
+{-, 7}
+ 8 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:36:21  [g3_w1of6] point  7
+{-, 19}
+ 8 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:22  [g3_w5of6] point  7
+{-, 37}
+ 8 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:22  [g3_w2of6] point  7
+{-, 23}
+ 8 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:22  [g3_w4of6] point  1
+{-, 3}
+ 9 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:36:22  [g3_w6of6] point  7
+{-, 41}
+ 8 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:22  [g3_w3of6] point  7
+{-, 29}
+ 8 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:23  [g3_w1of6] point  7
+{-, 43}
+ 8 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:23  [g3_w5of6] point  1
+{-, 5}
+ 9 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:23  [g3_w4of6] point  1
+{-, 19}
+ 9 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:23  [g3_w2of6] point  7
+{-, 47}
+ 8 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:24  [g3_w6of6] point  1
+{-, 7}
+ 9 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:24  [g3_w3of6] point  7
+{-, 53}
+ 8 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:36:25  [g3_w1of6] point  1
+{-, 11}
+ 9 done in 1.5 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:25  [g3_w5of6] point  1
+{-, 23}
+ 9 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:36:25  [g3_w4of6] point  1
+{-, 43}
+ 9 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:25  [g3_w2of6] point  1
+{-, 13}
+ 9 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:25  [g3_w6of6] point  1
+{-, 29}
+ 9 done in 1.5 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:25  [g3_w3of6] point  1
+{-, 17}
+ 9 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:26  [g3_w1of6] point  1
+{-, 31}
+ 9 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:26  [g3_w5of6] point  1
+{-, 47}
+ 9 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:27  [g3_w4of6] point  2
+{-, 11}
+ 9 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:27  [g3_w6of6] point  1
+{-, 53}
+ 9 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:27  [g3_w2of6] point  1
+{-, 37}
+ 9 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:27  [g3_w3of6] point  1
+{-, 41}
+ 9 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:28  [g3_w1of6] point  2
+{-, 3}
+ 9 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:36:28  [g3_w5of6] point  2
+{-, 13}
+ 9 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:28  [g3_w4of6] point  2
+{-, 31}
+ 9 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:28  [g3_w6of6] point  2
+{-, 17}
+ 9 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:36:28  [g3_w2of6] point  2
+{-, 5}
+ 9 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:28  [g3_w3of6] point  2
+{-, 7}
+ 9 done in 1.5 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:29  [g3_w1of6] point  2
+{-, 19}
+ 9 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:29  [g3_w5of6] point  2
+{-, 37}
+ 9 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:30  [g3_w4of6] point  1
+{--, 3}
+ 10 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:30  [g3_w6of6] point  2
+{-, 41}
+ 9 done in 1.5 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:30  [g3_w2of6] point  2
+{-, 23}
+ 9 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:30  [g3_w3of6] point  2
+{-, 29}
+ 9 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:31  [g3_w1of6] point  2
+{-, 43}
+ 9 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:31  [g3_w5of6] point  1
+{--, 5}
+ 10 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:31  [g3_w6of6] point  1
+{--, 7}
+ 10 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:31  [g3_w4of6] point  1
+{--, 19}
+ 10 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:31  [g3_w2of6] point  2
+{-, 47}
+ 9 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:32  [g3_w3of6] point  2
+{-, 53}
+ 9 done in 1.5 s; max |Im|      -332
+0. 10
+2026-10-28 22:36:32  [g3_w1of6] point  1
+{--, 11}
+ 10 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:33  [g3_w5of6] point  1
+{--, 23}
+ 10 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:36:33  [g3_w6of6] point  1
+{--, 29}
+ 10 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:33  [g3_w4of6] point  1
+{--, 43}
+ 10 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:33  [g3_w2of6] point  1
+{--, 13}
+ 10 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:33  [g3_w3of6] point  1
+{--, 17}
+ 10 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:34  [g3_w1of6] point  1
+{--, 31}
+ 10 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:34  [g3_w5of6] point  1
+{--, 47}
+ 10 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:35  [g3_w6of6] point  1
+{--, 53}
+ 10 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:35  [g3_w4of6] point  3
+{--, 11}
+ 10 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:35  [g3_w2of6] point  1
+{--, 37}
+ 10 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:35  [g3_w3of6] point  1
+{--, 41}
+ 10 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:36  [g3_w1of6] point  3
+{--, 3}
+ 10 done in 1.6 s; max |Im|      -345
+0. 10
+2026-10-28 22:36:36  [g3_w5of6] point  3
+{--, 13}
+ 10 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:36  [g3_w6of6] point  3
+{--, 17}
+ 10 done in 1.6 s; max |Im|      -340
+0. 10
+2026-10-28 22:36:36  [g3_w4of6] point  3
+{--, 31}
+ 10 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:36  [g3_w2of6] point  3
+{--, 5}
+ 10 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:36  [g3_w3of6] point  3
+{--, 7}
+ 10 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:37  [g3_w1of6] point  3
+{--, 19}
+ 10 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:38  [g3_w5of6] point  3
+{--, 37}
+ 10 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:38  [g3_w6of6] point  3
+{--, 41}
+ 10 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:38  [g3_w4of6] point  7
+{--, 3}
+ 10 done in 1.6 s; max |Im|      -344
+0. 10
+2026-10-28 22:36:38  [g3_w2of6] point  3
+{--, 23}
+ 10 done in 1.6 s; max |Im|      -338
+0. 10
+2026-10-28 22:36:38  [g3_w3of6] point  3
+{--, 29}
+ 10 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:39  [g3_w1of6] point  3
+{--, 43}
+ 10 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:39  [g3_w5of6] point  7
+{--, 5}
+ 10 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:39  [g3_w6of6] point  7
+{--, 7}
+ 10 done in 1.6 s; max |Im|      -343
+0. 10
+2026-10-28 22:36:39  [g3_w4of6] point  7
+{--, 19}
+ 10 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:39  [g3_w2of6] point  3
+{--, 47}
+ 10 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:40  [g3_w3of6] point  3
+{--, 53}
+ 10 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:40  [g3_w1of6] point  7
+{--, 11}
+ 10 done in 1.6 s; max |Im|      -342
+0. 10
+2026-10-28 22:36:41  [g3_w5of6] point  7
+{--, 23}
+ 10 done in 1.6 s; max |Im|      -337
+0. 10
+2026-10-28 22:36:41  [g3_w6of6] point  7
+{--, 29}
+ 10 done in 1.6 s; max |Im|      -336
+0. 10
+2026-10-28 22:36:41  [g3_w4of6] point  7
+{--, 43}
+ 10 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:41  [g3_w4of6] job finished
+2026-10-28 22:36:41  [g3_w2of6] point  7
+{--, 13}
+ 10 done in 1.6 s; max |Im|      -341
+0. 10
+2026-10-28 22:36:41  [g3_w3of6] point  7
+{--, 17}
+ 10 done in 1.6 s; max |Im|      -339
+0. 10
+2026-10-28 22:36:42  [g3_w1of6] point  7
+{--, 31}
+ 10 done in 1.6 s; max |Im|      -335
+0. 10
+2026-10-28 22:36:42  [g3_w1of6] job finished
+2026-10-28 22:36:42  [g3_w5of6] point  7
+{--, 47}
+ 10 done in 1.6 s; max |Im|      -333
+0. 10
+2026-10-28 22:36:42  [g3_w5of6] job finished
+2026-10-28 22:36:43  [g3_w6of6] point  7
+{--, 53}
+ 10 done in 1.6 s; max |Im|      -332
+0. 10
+2026-10-28 22:36:43  [g3_w6of6] job finished
+2026-10-28 22:36:43  [g3_w2of6] point  7
+{--, 37}
+ 10 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:43  [g3_w2of6] job finished
+2026-10-28 22:36:43  [g3_w3of6] point  7
+{--, 41}
+ 10 done in 1.6 s; max |Im|      -334
+0. 10
+2026-10-28 22:36:43  [g3_w3of6] job finished

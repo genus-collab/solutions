@@ -1,0 +1,21 @@
+g 4 R (Fraction(5, 2),) tau 5/3 coeffs ok m<= 1 True 7.0
+g 3 R (Fraction(-7, 3), 2, Fraction(1, 5)) tau 1/3 coeffs ok m<= 2 True 31.8
+g 3 R (Fraction(5, 2),) tau 2/9 coeffs ok m<= 3 True 0.0
+E Laurent h 2 R (3,) deg<=h: True coef at (-1/sigma)^h 7/2880 at ^0 -1/320
+  sym tau->-1-tau True
+E Laurent h 3 R (5,) deg<=h: True coef at (-1/sigma)^h 31/40320 at ^0 -65/24192
+  sym tau->-1-tau True
+E Laurent h 3 R (4, 2) deg<=h: True coef at (-1/sigma)^h 31/8064 at ^0 -8/945
+  sym tau->-1-tau True
+zero of Pi: h 2 R (2,) tau -1/2 Xi_def 0
+zero of Pi: h 3 R (2, 2) tau -1/2 Xi_def 0
+zero of Pi: h 3 R (4,) tau -1/2 Xi_def 0
+zero of Pi: h 3 R (3, 2) tau -1/3 Xi_def 0
+zero of Pi: h 3 R (3,) tau -1/3 Xi_def 0
+zero of Pi: h 3 R (3,) tau -2/3 Xi_def 0
+E-scale 2 (3,) True ctl3-2r False
+  S_P2 True L0_P2 True ctl J/E False
+E-scale 3 (5,) True ctl3-2r False
+  S_P2 True L0_P2 True ctl J/E False
+E-scale 2 (4, 2) True ctl3-2r False
+  S_P2 True L0_P2 True ctl J/E False

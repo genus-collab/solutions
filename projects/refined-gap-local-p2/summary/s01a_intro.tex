@@ -1,0 +1,94 @@
+% s01a_intro (abridged version). Introduction, part 1: the problem and the statements.
+\section{Introduction}
+\label{sec:int}
+
+%-------------------------------------------------------------------------------
+\subsection{The problem}
+\label{sec:int-problem}
+
+Let $Z=\KPtwo\times\bbC^2$, let $\epsilon_1,\epsilon_2$ be the equivariant parameters of the $\bbC^2$ factor, and put $E=\epsilon_1+\epsilon_2$, with $\epsilon_1\epsilon_2E\neq 0$. The fibrewise torus $\TF$ acts trivially on $\bbP^2$, with weight $E$ on the fibre of $\KPtwo$ and weights $-\epsilon_1,-\epsilon_2$ on $\bbC^2$. For $g\geq 2$ the refined Gromov--Witten generating series of \cite{BS} is, in the reading of this paper,
+\[
+\sF_g^{\TF}=\sum_{d\geq 0}\cQ^d\,\GW_{g,d}^{\TF},\qquad \GW_{g,d}^{\TF}=\int_{[\Mbar_g(\bbP^2,d)]^{\vir}}e_{\TF}\big(R\pi_*f^*\Ntw\big)^{-1},
+\]
+with $\Ntw=\cO(-3)_{E}\oplus\cO_{-\epsilon_1}\oplus\cO_{-\epsilon_2}$ on $\TF$; see \cref{sec:set-target} and \cref{rmk:set-d0}. Under the mirror map $\cQ(y)$ it is an element of $\bbK\fps{y}$, where $\bbK=\bbQ(\epsilon_1,\epsilon_2)$. Its coefficients $\sF_{k,h}$ in the expansion in $E^{2}$ and $\epsilon_1\epsilon_2$ are the objects of the refined direct integration of Huang--Klemm \cite{HK10}, in the formulation of \cite{BS}. That method prescribes four properties: finite generation, a modular anomaly equation, regularity at the orbifold point and an asymptotic behaviour at the conifold point $y=-1/27$. The last one, with $\Pi_{\gamma_{\mathrm{cf}}}$ the period of \cite{BS} vanishing linearly at $y=-1/27$ and $\sFcf_{k,h}$ the coefficient with $F$ replaced by $\Fcf$ (both are made precise below), reads
+\[
+\sFcf_{k,h}=\bfrak_{k,h}\,\Pi_{\gamma_{\mathrm{cf}}}^{2-2h-2k}+\cO(1),\qquad
+\bfrak_{k,h}=(-3)^{k+h-1}\big[E^{2k}(\epsilon_1\epsilon_2)^{h-1}\big]\beta_{2k+2h-2}(\epsilon_1,\epsilon_2),
+\]
+where
+\[
+\beta_n(\epsilon_1,\epsilon_2)=(n-1)!\,[\mathsf{t}^n]\,\frac{1}{4\sinh(\epsilon_1\mathsf{t}/2)\sinh(\epsilon_2\mathsf{t}/2)}.
+\]
+The content of this property beyond the leading coefficient is the \emph{conifold gap}: no polar term other than the leading one occurs. In \cite{BS} the leading coefficient and a bound on the order of the pole are obtained, and the full statement is formulated as a conjecture and verified in low genus. For related work on local $\bbP^2$ see \cite{LP18,BFGW21,CI18}; the first relation of \cref{prop:row-modrel} is attributed in \cite{BS} to \cite{ZZ08}.
+
+We prove the refined conifold gap on the fibrewise torus in every genus. We also prove a more precise statement about the stable graph sum: every stable graph with an edge is regular at the conifold point, colouring by colouring, so that the whole polar part sits in the graph with one vertex.
+
+\emph{About this version.} This is the abridged version of the paper. We write \textup{[L]} for the long version of this paper. Every statement below carries a pointer of the form \Lg{Theorem~5.1} to the corresponding statement of the long version, where the complete proofs are given; the only exception is the resolved conifold, for which \textup{[L]} is not complete either, see \cref{sec:fin}. The proofs given here are sketches, unless they are said to be complete. Where only a part of a statement of \textup{[L]} is reproduced, this is said.
+
+%-------------------------------------------------------------------------------
+\subsection{Statements}
+\label{sec:int-statements}
+
+We recall the objects briefly; the definitions are in \cref{sec:set,sec:fra}. Put $\theta=y\,\dd/\dd y$, $\xi=1+27y$, $X=1/\xi$, $A=\theta\log\cQ$ and $F=\theta\log A$. By \cref{thm:spe-main}(e), $\sF_g^{\TF}$ lies in $\bbK[y^{\pm1},\xi^{-1}][F]$ with $\deg_F\leq 3g-3$, and the polynomial in $F$ is unique, because $F$ is transcendental over $\bbC(y)$.
+
+\emph{The conifold data.} Let $\wcf={}_2F_1(\tfrac13,\tfrac23;1;\xi)$, and define $\tc$ by $\theta\tc=-\wcf$, $\tc(\xi=0)=0$; thus $\tc=\xi+O(\xi^2)$ is an analytic coordinate at $\xi=0$. Put $\ccf=\theta\tc$. The coordinate $\tcf$ of \cite{BS} is
+\[
+\tcf=\frac{\sqrt3}{2\pi}\big(I_1^{[2]}-\ri\pi I_0^{[1]}-\pi^2\big),
+\]
+on $y\in(-1/27,0)$ with the branch $\log y=\log(-y)+\ri\pi$, continued analytically to a neighbourhood of $\xi=0$; further $\Acf=\theta\tcf$ and $\Fcf=\theta\log\Acf$. By \cref{lem:fra-tcf}, $\tcf=\tc$ and $\Acf=\ccf$. The conifold substitution $\Cf$ is defined in \cref{def:fra-cf}: it is the identity on coefficients and it fixes $X$ and the roots $Y_i$, and on Gromov--Witten series it is the substitution $F\mapsto\Fcf$ in the unique polynomial above. It is a substitution on the polynomial, not an analytic continuation of the series. This is the reading of the substitution of \cite{BS} that we adopt as a definition, see the remark after \cref{def:fra-cf}, and the conifold gap below is a statement about it. We write $\GWcf_g=\Cf(\sF_g^{\TF})$, a germ at $\xi=0$.
+
+\emph{The graph sum.} On $\TF$ put $t=y^{1/3}$, $t_i=\omega^it$ with $\omega=\re^{2\pi\ri/3}$, $v_i=(1+3t_i)/(Et_i)$ and $\Delta_i=3\epsilon_1\epsilon_2E/v_i^2$. Colour $0$ on the real branch $t\to-1/3$ is the \emph{singular colour}, the unique colour with $v_i\to 0$ as $y\to-1/27$. The rows are built by \cref{def:set-rows} from the explicit series
+\[
+\Srow(v,z)=\sum_{l\geq0}\frac{r_l\,(vz)^l}{\prod_{j=1}^{l+1}(1+jz/E)},
+\]
+with $r_l$ given by the recursion \eqref{eq:set-rec}. The vertices carry the class $\Hg_{\bw}$ of \eqref{eq:set-Hg}, with $\bw=(E,-\epsilon_1,-\epsilon_2)$. For a connected stable graph $\Gamma$ of genus $g$ without legs and a colouring $\col\colon\Ver(\Gamma)\to\{0,1,2\}$, $\GCont(\Gamma,\col)$ is the finite decoration sum \eqref{eq:set-graphsum}, and
+\[
+\Gsum_g=\sum_{\Gamma}\frac{1}{|\Aut\Gamma|}\sum_{\col}\GCont(\Gamma,\col)
+\]
+is the \emph{frame-B Hodge-vertex graph sum}. It is a sum of explicitly defined factors, all taken at the section $\cone=\ccf$. We write $\Gsum_g[\sfF]$ for the same sum with an indeterminate $\sfF$ in place of $\theta\log\cone$ in the edges.
+
+\emph{Scope.} All statements below are on the fibrewise torus, with $\epsilon_1\epsilon_2E\neq 0$. The statements on graphs hold for each colouring separately. Generic weights occur only in an intermediate step, \cref{thm:gen-main}.
+
+\begin{thm}[Frame formula; {\Lg{Theorem~1.1}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-frame}
+For $g\geq 2$,
+\[
+\Cf(\sF_g^{\TF})=\Gsum_g[\Fcf],
+\]
+and this is $\Gsum_g$ of \eqref{eq:set-Gsum} at $\cone=\ccf$. If the series is taken with $d>0$ only, the right side is replaced by $\Gsum_g[\Fcf]-\GW_{g,0}^{\TF}$, where $\GW_{g,0}^{\TF}\in\bbK$ is the constant of \cref{thm:spe-main}\textup{(b)}.
+\end{thm}
+
+This is \cref{prop:fra-frame}. Its proof uses the mirror theorem \cite[Theorem~31]{CCIT15} at generic weights and the results of \cref{sec:int-inputs}, except the Mari\~no--Vafa formula and Barnes's second lemma.
+
+\begin{thm}[Regularity of graphs with an edge; {\Lg{Theorem~1.2}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-regularity}
+Fix $g\geq 2$. For every connected stable graph $\Gamma$ of genus $g$ with at least one edge, and for every colouring $\col$, the decoration sum $\GCont(\Gamma,\col)$ is analytic at $y=-1/27$, that is, its Laurent expansion in $\tc$ has no negative powers. The graph with one vertex is analytic at colours $1$ and $2$, and at colour $0$ its polar part is the single term
+\[
+(3\epsilon_1\epsilon_2E^3)^{g-1}\,\ZZ[g,0]\,\tc^{2-2g}=(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)\,\tc^{2-2g},
+\]
+where $\ZZ[g,0]=\Fpot_g(\qo)$ is the Hodge integral of \cref{def:set-fpot}. Hence the polar part of $\Gsum_g$ is exactly $(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)\,\tc^{2-2g}$.
+\end{thm}
+
+This combines \cref{thm:reg-main,cor:reg-sv,lem:reg-A}. It is a statement about the decoration sum as defined. Its proof uses the Mari\~no--Vafa formula \cite[eq.~(1)--(3)]{LLZ03} and textbook facts. It uses neither the mirror theorem, nor \cite{Tel12}, nor any statement of \cite{BS}.
+
+\begin{cor}[Refined conifold gap; {\Lg{Corollary~1.3}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:int-gap}
+For $g\geq 2$, on the fibrewise torus,
+\[
+\GWcf_g=\frac{(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)}{\tcf^{2g-2}}+\cO(1).
+\]
+Here $\cO(1)$ means that the difference is holomorphic in a neighbourhood of $\tcf=0$, equivalently of $y=-1/27$, with no negative powers of $\tcf$, and that its Taylor coefficients lie in $\bbK$. The value of the $\cO(1)$ term is not determined. The statement holds with either convention for the term $d=0$, since that term is a constant.
+\end{cor}
+
+At $g=2$ the leading term is $-(7\epsilon_1^4+10\epsilon_1^2\epsilon_2^2+7\epsilon_2^4)/(1920\,\epsilon_1\epsilon_2\,\tcf^2)$, which is the display of \cite{BS} at genus $2$. For the coefficient form write $\sF_g^{\TF}=\sum_{k+h=g}E^{2k}(\epsilon_1\epsilon_2)^{h-1}\sF_{k,h}$. This expansion exists and is unique, with $\sF_{k,h}\in\bbQ[y^{\pm1},\xi^{-1}][F]$ (\cref{sec:reg-gap}). Put $\sFcf_{k,h}=\Cf(\sF_{k,h})$.
+
+\begin{cor}[Coefficients; {\Lg{Corollary~1.4}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:int-gapkh}
+For $k+h\geq 2$,
+\[
+\sFcf_{k,h}=\bfrak_{k,h}\,\tcf^{2-2h-2k}+\cO(1),\qquad
+\bfrak_{k,h}=(-3)^{k+h-1}\big[E^{2k}(\epsilon_1\epsilon_2)^{h-1}\big]\beta_{2k+2h-2}(\epsilon_1,\epsilon_2).
+\]
+\end{cor}
+
+\Cref{cor:int-gap,cor:int-gapkh} are \cref{cor:reg-gap,cor:reg-gapkh}. \Cref{cor:int-gapkh} is the conifold asymptotics in refined direct integration, with the period $\Pi_{\gamma_{\mathrm{cf}}}$ read through its expansion, as explained after \cref{cor:reg-gapkh}; then $\Pi_{\gamma_{\mathrm{cf}}}=\tc=\tcf$. By \Lg{Remark~10.12} the $\cQ^d$ coefficient of $\sF_{0,h}$, $d\geq 1$, is the usual Gromov--Witten invariant of local $\bbP^2$, so the case $k=0$ concerns the unrefined series.
