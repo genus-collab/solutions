@@ -1,0 +1,16 @@
+genus 5 lambda_5 lambda_4 lambda_3 =     1
+----------
+2554675200 (Faber:     1
+----------
+2554675200)
+genus 5 psi^4 lambda_5 lambda_4 =    1
+--------
+63866880 (Getzler-Pandharipande:    1
+--------
+63866880)
+genus 5, R = {4}: engine prediction CONFIRMED; value 0   [95 s]
+genus 5, R = {2, 3}: engine prediction CONFIRMED; value 0   [432 s]
+genus 5, R = {3, 4}: engine prediction CONFIRMED; value 0   [432 s]
+genus 5, R = {3, 3, 3}: engine prediction CONFIRMED; value 0   [1814 s]
+genus 5, R = {4, 6}: engine prediction CONFIRMED; value non-zero   [1814 s]
+done(main session, 2026-10-31: round-1 check M2 = E_crosscheck_g5.wls with expected_g5_M2.m at x = -3/5, i.e. tau = 3/2, sigma = 15/4, a non-special framing; wolframscript, 31 min; all 5 engine predictions confirmed: (4), (2,3), (3,4), (3,3,3) vanish and the control (4,6) agrees with its non-zero prediction)

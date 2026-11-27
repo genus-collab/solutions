@@ -1,0 +1,9 @@
+torus: a1 = e1, alpha0 = 1
+   (g,d) = (2,3): localization 527047/33177600, prediction 527047/33177600  ok [1 s]
+   (g,d) = (3,2): localization -565154239/300987187200, prediction -565154239/300987187200  ok [1 s]
+   (g,d) = (4,1): localization 76840547401/7925422620672000, prediction 76840547401/7925422620672000  ok [10 s]
+torus: generic T_CY, alpha0 = 1, a1 = 1/3
+   (g,d) = (2,3): localization 527047/33177600, prediction 527047/33177600  ok [2 s]
+   (g,d) = (3,2): localization -565154239/300987187200, prediction -565154239/300987187200  ok [1 s]
+   (g,d) = (4,1): localization 76840547401/7925422620672000, prediction 76840547401/7925422620672000  ok [0 s]
+ALL OK

@@ -1,0 +1,21 @@
+A. S(y) = y/(2 sinh(y/2)) even coefficients s_k: ['1', '-1/24', '7/5760', '-31/967680', '127/154828800']
+   P_2 = {(0, 4): '7/5760', (2, 2): '1/576', (4, 0): '7/5760'}
+   beta_2 = (2g-3)! P_g/(e1 e2) has e1 e2 * beta = {(0, 4): '7/5760', (2, 2): '1/576', (4, 0): '7/5760'}
+   P_3 = {(0, 6): '-31/967680', (2, 4): '-7/138240', (4, 2): '-7/138240', (6, 0): '-31/967680'}
+   beta_4 = (2g-3)! P_g/(e1 e2) has e1 e2 * beta = {(0, 6): '-31/161280', (2, 4): '-7/23040', (4, 2): '-7/23040', (6, 0): '-31/161280'}
+   BS: beta_2 = (7 e1^4 + 10 e1^2 e2^2 + 7 e2^4)/(5760 e1 e2)  -> ['7/5760', '1/576']
+   BS: beta_4 = -(31 e1^6 + 49 e1^4 e2^2 + 49 e1^2 e2^4 + 31 e2^6)/(161280 e1 e2) -> ['-31/161280', '-7/23040']
+   gap_2 at (x,1) vs (7+10x^2+7x^4)/(5760x): True
+B. Disc = Q^2 tau^2 (L1-L2)^2, disc(Disc) = 16 a1 a2 A B, Disc(1) = E^2, prod(a1a2 - E L_i) = a1 a2 A B: True
+C. P(U) from the phase, disc P = Disc, L(U) in the QDE quadratic, Delta = a1 A e1 e2 W_2 = e1e2(a0a1a2+2a1a2L-EL^2) mod P, P(1) = A(Q-1), P(1/Q) = a1(1-Q)/Q, a0=0 rescaling: True
+C'. Q=1e+06: U1=0.823530 (-> (a1-a2)/B=0.823529), Q*U2=0.250000 (-> -a2/(a1-a2)=0.250000); L1=2.100003, L2=-0.700000 (-> a1,a2 = 2.1,-0.7)
+    Delta1 = a1 A e1 e2 W2(U1) = -20.241937 vs -a1 B (a1-a2) e1 e2 = -20.241900;  Delta2 = -1.190700 vs a2 A (a1-a2) e1 e2 = -1.190700
+C'. Q=1e+09: U1=0.823529 (-> (a1-a2)/B=0.823529), Q*U2=0.250000 (-> -a2/(a1-a2)=0.250000); L1=2.100000, L2=-0.700000 (-> a1,a2 = 2.1,-0.7)
+    Delta1 = a1 A e1 e2 W2(U1) = -20.241900 vs -a1 B (a1-a2) e1 e2 = -20.241900;  Delta2 = -1.190700 vs a2 A (a1-a2) e1 e2 = -1.190700
+D. Hensel: Disc(Q_1) = 0 to O(a0^8), Q_1 = -a0^2/(4a1a2) + (a1+a2)a0^3/(8a1^2a2^2) - (5a1^2+6a1a2+5a2^2)a0^4/(64a1^3a2^3) + ... : True  e.g. Q_1 coefficients: ['0', '0', '-5/108', '-155/7776', '-19225/2239488', '-596285/161243136']
+E. Li_{-n} = A_n/(1-Q)^{n+1}, A_n(0)=0, deg A_n = n, Li_{-n}(1/Q) = (-1)^{n+1} Li_{-n}(Q) (n>=1), series agreement: True
+   Li_{-1}(e^t) Laurent: polar part {-2: '1'}, t^0 coeff -1/12, t^1 coeff 0
+   Li_{-3}(e^t) Laurent: polar part {-4: '6'}, t^0 coeff 1/120, t^1 coeff 0
+E'. polar part of Li_{-n}(e^t) is exactly (-1)^{n+1} n! t^{-n-1} (= +n! t^{-n-1} for odd n = 2g-3; no lower-order polar terms), n = 1..6: True
+F. h_nw h_{(E,-a1,-A)} = h_{(E,-e1,-e2)} (power sums k=1..3), a0=0: h_nw h_w^-1 = h_{(a1,a2,-E)}, Q=oo flop constants: True
+G. (F_g(0) alpha-dependence: not recomputed here; cited from cy_torus_explore critic flop_const.log as evidence.)

@@ -1,0 +1,6 @@
+Use of uninitialized value $k in subtraction (-) at fitNR.pl line 20.
+genus 1, r = 2: 1 basis functions (rank 1): CONSISTENT
+genus 2, r = 2: 4 basis functions (rank 4): CONSISTENT
+genus 3, r = 2: 9 basis functions (rank 9): CONSISTENT
+genus 4, r = 2: 16 basis functions (rank 16): CONSISTENT
+genus 5, r = 2: 25 basis functions (rank 25): CONSISTENT

@@ -1,0 +1,14 @@
+tau=-1/2 g=2 n=1: compared 23, mismatches 0
+tau=-1/2 g=2 n=2: compared 10, mismatches 0
+tau=-1/2 g=3 n=1: compared 23, mismatches 0
+tau=-1/2 g=3 n=2: compared 15, mismatches 0
+tau=-1/2 g=4 n=1: compared 23, mismatches 0
+tau=-1/2 g=4 n=2: compared 21, mismatches 0
+tau=-1/2 g=5 n=1: compared 23, mismatches 0
+tau=-1/2 g=5 n=2: compared 28, mismatches 0
+tau=-1/2 g=6 n=1: compared 23, mismatches 0
+tau=-1/2 g=6 n=2: compared 36, mismatches 0
+tau=-1/2 g=7 n=1: compared 23, mismatches 0
+tau=-1/2 g=7 n=2: compared 45, mismatches 0
+tau=-1/2 g=8 n=1: compared 23, mismatches 0
+TOTAL tau=-1/2 (Theorem 1 formal vs exact EO, no P2): compared 316, mismatches 0

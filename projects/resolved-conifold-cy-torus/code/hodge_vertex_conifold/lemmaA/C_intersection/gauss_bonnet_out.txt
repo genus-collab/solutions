@@ -1,0 +1,9 @@
+comp_g1_r1_psi.txt     h=1 r=1  Xi^H(0^r) = -1/12      chi(M_{h,r}) = -1/12      OK
+comp_g1_r2_psi.txt     h=1 r=2  Xi^H(0^r) = 1/12       chi(M_{h,r}) = 1/12       OK
+comp_g2_r1.txt         h=2 r=1  Xi^H(0^r) = 1/120      chi(M_{h,r}) = 1/120      OK
+comp_g2_r1_psi.txt     h=2 r=1  Xi^H(0^r) = 1/120      chi(M_{h,r}) = 1/120      OK
+comp_g2_r2.txt         h=2 r=2  Xi^H(0^r) = -1/40      chi(M_{h,r}) = -1/40      OK
+comp_g3_r1.txt         h=3 r=1  Xi^H(0^r) = -1/252     chi(M_{h,r}) = -1/252     OK
+comp_g3_r2.txt         h=3 r=2  Xi^H(0^r) = 5/252      chi(M_{h,r}) = 5/252      OK
+comp_g4_r1.txt         h=4 r=1  Xi^H(0^r) = 1/240      chi(M_{h,r}) = 1/240      OK
+comp_g4_r2.txt         h=4 r=2  Xi^H(0^r) = -7/240     chi(M_{h,r}) = -7/240     OK

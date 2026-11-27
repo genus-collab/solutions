@@ -1,0 +1,11 @@
+# rmv genus 7 done (77 s), tau = 749653434 mod 1000000007
+# Xi_7(13) = 974338488 mod p
+# Xi_7(2,13) = 1413483 mod p
+# Xi_7(14) = 996710330 mod p
+# Xi_7(2,14) = 320043870 mod p
+G=7 R=(13) EVEN: residual 0 mod p OK
+G=7 R=(13) ODD : residual 0 mod p OK
+G=7 R=(14) EVEN: residual 0 mod p OK
+G=7 R=(14) ODD : residual 0 mod p OK
+control (Xi_G(R+2)+1): residual 208940424 (nonzero, as it must be)
+# total 89 s

@@ -1,0 +1,8 @@
+ode_leaf K=100 tau=2/7: closed form T1 confirmed to order 100
+real	2m52.194s
+ode_leaf K=100 tau=-1/5: closed form T1 confirmed to order 100
+real	2m28.357s
+ode_leaf K=100 tau=-3/7: closed form T1 confirmed to order 100
+real	2m41.902s
+ode_leaf K=100 tau=3/11: closed form T1 confirmed to order 100
+real	2m53.978s

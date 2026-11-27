@@ -1,0 +1,508 @@
+% s05_identification. Section file; new macros at the top; label prefix: ide.
+% New macros (section-local; none of them clashes with main.tex):
+\newcommand{\ideKt}{\widetilde{\bbK}_{\mathrm{CY}}}      % \KCY with e(wt_+)^{1/2}, e(wt_-)^{1/2} adjoined
+\newcommand{\ideFz}{\bbF_{\circ}}                        % \ideKt((Q)), the field of the flatness proof
+\newcommand{\ideone}{\mathbf{1}}                         % the unit of the state space; also the trivial rank-one CohFT
+\newcommand{\ideV}{\mathcal{V}}                          % state space \KCY 1 + \KCY H (with scalars extended)
+\newcommand{\idePF}{\mathsf{PF}}                         % the second-order operator of Euler's identity
+\newcommand{\idekm}{\mathsf{k}_{\mathrm{m}}}             % its amplitude -z\alpha_1 Q(1-U)/(1-QU)
+\newcommand{\ideCh}{\mathcal{X}}                         % \ideCh_h = \sum_k b_k (2k)!/B_{2k} ch_{2k-1}(E)
+\newcommand{\ideCurve}{\mathfrak{C}}                     % universal curve over the open moduli space
+\newcommand{\idesec}{\varsigma}                          % its sections \idesec_l
+\newcommand{\ideLam}{\boldsymbol{\Lambda}}               % diag(L_+, L_-)
+\newcommand{\idecan}{\boldsymbol{u}}                     % diag(u_+, u_-), canonical coordinates
+\newcommand{\ideS}{\mathscr{S}}                          % fundamental solution R \Psi e^{u/z}
+\newcommand{\idelg}[1]{\mathrm{a}^{#1}}                  % leg functions \idelg{i}(\psi;x) = f_i^*(B(\psi)x)
+\newcommand{\ideP}{\mathfrak{P}}                         % \ideP_i = \Delta_i^{(2g-2+n)/2}
+\newcommand{\ideN}{\mathfrak{N}}                         % kappa series of the translation legs
+\newcommand{\ideG}{\mathfrak{G}}                         % kappa series of the pushforward
+\newcommand{\ideW}{\mathsf{W}_{\Psi}}                    % \Psi^{-1}\thQ\Psi
+\newcommand{\ideRf}{\mathsf{R}^{\mathrm{f}}}             % \Psi^{-1}\Rm\Psi
+\newcommand{\ideY}{\mathsf{Y}}                           % the pairing <v_+(z), v_-(-z)> in the symplecticity step
+\newcommand{\ideZ}{\mathsf{Z}}                           % \Psi^{-1}\Rm_1^{-1}\Rm_2\Psi in the ambiguity lemma
+\newcommand{\idesp}{\mathfrak{s}}                        % the scalar series \idesp_p = \exp\sum_k a_k^{p} z^{2k-1}
+\newcommand{\ideQU}{\mathrm{V}}                          % \ideQU = Q U_- , the regular coordinate at Q = 0
+\newcommand{\ideT}{\mathsf{T}_{\!\Rm}}                   % translation z(1 - R^{-1}(z) 1)
+
+\section{Identification of the graph sum with the Gromov--Witten potential}
+\label{sec:ide}
+
+This section proves Theorem~B: for $g\geq 2$ the frame-B Hodge-vertex graph sum $\Gsum_g$ of \cref{def:set-graphsum} is the Gromov--Witten potential $\sF_g=\sum_{d\geq 0}\GW_{g,d}\cQ^d$ of $Z$ on the Calabi--Yau torus. The argument runs as follows. The equivariant classes of $Z$ form a cohomological field theory which is semisimple at $\cQ=0$ on $\TCY$, because $\alpha_0\neq 0$ there; Teleman's classification writes it as $\Rm.\TFT$ for a unique symplectic $\Rm$, which we show to be a flat solution of the quantum differential equation. The rows built from the normalised stationary-phase expansions of the Euler integrand, multiplied by one scalar constant $\hnw$, form another such solution; the two agree up to constants, which are fixed at $\cQ=0$ by the Hodge integrals of constant maps. The change to frame~B is a scalar in the group of \cite{PPZ15}. Throughout, the weights are the generic point of $\TCY$: the field is $\KCY=\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1)$ with $\epsilon_2\coloneqq E-\epsilon_1$, and every hypothesis on the weights used below is a non-vanishing or non-constancy statement which holds in $\KCY$. The inputs of this section are \cite{Tel12}, \cite{PPZ15}, \cite{GP99}, \cite{CG07}, Mumford's relation and formula \cite{Mum83,FP00}, \cite[Theorem~4, p.~3]{FP00} and, through \cref{lem:row-betaphase}, Stirling's series. Theorem~A is not used; \cref{thm:lea-qde} is cited in a remark only. The nine steps of the flatness proof are named (Fl1)--(Fl9) here, to keep them apart from the properties (F1)--(F3) of Theorem~A.
+
+\subsection{Statement}
+
+\begin{prop}[Theorem~B: the frame-B formula on $\TCY$]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-main}
+Let $g\geq 2$. Then $\sF_g$ lies in $\KCY(\cQ)$, is regular at $\cQ=0$ with power series expansion $\sum_{d\geq 0}\GW_{g,d}\cQ^d$ there, and
+\begin{equation}
+\label{eq:ide-main}
+\sF_g=\Gsum_g=\sum_{\Gamma}\frac{1}{|\Aut\Gamma|}\sum_{\col\colon\Ver(\Gamma)\to\{1,2\}}\GCont(\Gamma,\col)
+\end{equation}
+in $\KCY(\cQ)$, the sum over the connected stable graphs of genus $g$ without legs, with
+\[
+\GCont(\Gamma,\col)=\sum_{\mathrm{dec}}\prod_v\Delta_{\col_v}^{g_v-1}\int\Hg_{\bw}\,\psi^{a}\prod\Dil_{\col_v}(d)\ \prod_e\Edge_{\col\col'}(a_e,b_e)
+\]
+as in \cref{eq:set-graphsum}: the vertex class is $\Hg_{\bw}=\prod_{a=1}^3\Lamv_{g_v}(w_a)/w_a^{g_v}$ with $\bw=(E,-\epsilon_1,-\epsilon_2)$, and the frame-B factors $\Delta_i$, $\Dil_i(d)$, $\Edge_{ij}(a,b)$ are those of \cref{def:set-factors}, computed from the rows $\vv_i=(\rr_{0,i},\rr_{1,i})$ with
+\[
+\rr_{0,i}=\hw^{-1}\hnw\,\rpt_{0,i}=h_{(\alpha_1,\wA,-E)}\,\rpt_{0,i},\qquad \rr_{1,i}=(\Lv_i+z\Dop_i)\,\rr_{0,i},\qquad \Dop_i=\frac{\dd}{\dd t}-\frac{\Delta_i'}{2\Delta_i},
+\]
+where $\rpt_{0,i}$ is the normalised stationary-phase expansion of $\re^{\cW/z}\dd U/U$ at the root $U_i$ (\cref{def:set-rows}) and $\nw=(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)$. Moreover each coloured term $\GCont(\Gamma,\col)$ is an element of the function field $\KCY(\Ccov)$ of the double cover $\ydc^2=\Disc(\cQ)$, regular over every $\cQ\notin\{0,1,\infty\}$ with $\Disc(\cQ)\neq 0$.
+\end{prop}
+
+Two remarks on the statement. The field $\KCY$ is the function field of $\mathrm{Lie}(\TCY)$: on $\TCY$ the elements $\alpha_0,\alpha_1,\alpha_2,\wA,\wB,\epsilon_1,\epsilon_2,E,\alpha_1-\alpha_2$ are non-zero (\cref{def:set-ND}), and this is all that is used. The proof treats the four weights as indeterminates; it never passes through a non-semisimple point, because $\cQ=0$ is semisimple on $\TCY$ (\cref{lem:ide-ss}); a specialisation step would be needed only on the fibrewise torus, where $\alpha_0=0$, and that case is treated in \cref{sec:rig} by a ring map (\cref{lem:rig-3Tid}, \cref{rmk:ide-scope}).
+
+\subsection{The cohomological field theory and its genus-zero data}
+
+Let $\Omega=(\Omega_{g,n})$ denote the $\TCY$-equivariant Gromov--Witten classes of $Z$ with the Novikov variable $\cQ$ of degree $d[\bbP^1]$, defined by localisation on the fixed loci of the proper moduli space of maps to $\bbP^1$ (\cref{def:set-inv}), so that $\sF_g=\int_{\Mbar_g}\Omega_{g,0}$. Let $H$ be the equivariant lift of the hyperplane class of $\bbP^1$ with $H|_{p_+}=0$, $H|_{p_-}=-\alpha_0$, so that $H(H+\alpha_0)=0$ in $H^*_{\TCY}(\bbP^1)$, and let $\ideV\coloneqq\KCY\ideone\oplus\KCY H$ be the state space, with scalars extended whenever needed.
+
+\begin{lem}[Fixed loci, the twisted theory, the axioms]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-fixed}
+\begin{enumerate}
+\item A $\TCY$-fixed stable map to $Z$ has image in the zero section; the $\TCY$-fixed loci of $\Mbar_{g,n}(Z,d)$ are those of the proper space $\Mbar_{g,n}(\bbP^1,d)$, and $R\pi_*f^*\Nb$, $\Nb=\cO(-1)_{\alpha_1}\oplus\cO(-1)_{\alpha_2}\oplus\cO_{-\epsilon_1}\oplus\cO_{-\epsilon_2}$, is moving on them.
+\item $\Omega$ consists of the classes of the $e_{\TCY}(R\pi_*f^*\Nb)^{-1}$-twisted theory of $\bbP^1$ in the sense of \cite[Section~1]{CG07}:
+\[
+\Omega_{g,n}(\gamma_1,\dots,\gamma_n)=\sum_{d\geq 0}\cQ^d\,\mathrm{st}_*\Big([\Mbar_{g,n}(\bbP^1,d)]^{\vir}_{\TCY}\cap\prod_k\ev_k^*\gamma_k\cap e_{\TCY}(R\pi_*f^*\Nb)^{-1}\Big).
+\]
+\item $\Omega$ is a cohomological field theory with flat unit $\ideone$ over $\KCY\fps{\cQ}$ for the pairing
+\[
+\eta(a,b)=\int_{\bbP^1}\frac{ab}{e_{\TCY}(\Nb)}=\int_Z ab=\frac{(ab)|_{p_+}}{\eul(\wts_+)}+\frac{(ab)|_{p_-}}{\eul(\wts_-)},
+\]
+with $\eul(\wts_+)=\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2$ and $\eul(\wts_-)=-\alpha_0\wA\wB\epsilon_1\epsilon_2$; in the basis $(\ideone,H)$ this is the pairing of \cref{prop:set-frob}.
+\end{enumerate}
+\end{lem}
+\begin{proof}
+(i) A compact irreducible $\TCY$-invariant curve in $Z$ maps to the fixed point of $\bbC^2$, that is, the origin, since $\epsilon_1,\epsilon_2\neq 0$, and a compact curve in the resolved conifold lies in the zero section, the conifold being affine away from it. Hence the image of a $\TCY$-fixed map lies in the zero section $\bbP^1$, on which $\TCY$ acts by the rotation of weight $\alpha_0\neq 0$, and the $\TCY$-fixed loci of $\Mbar_{g,n}(Z,d)$ are the $\alpha_0$-fixed loci of the proper space $\Mbar_{g,n}(\bbP^1,d)$. On such a locus the restriction of $R\pi_*f^*\Nb$ is moving: its weights are the fibre characters $\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2$ at $p_+$ and $\wB,\wA,-\epsilon_1,-\epsilon_2$ at $p_-$ (vertex and flag terms), and, on an edge of degree $d_e$ covering $\bbP^1$, the weights $\alpha_1+k\alpha_0/d_e$, $\alpha_2+k\alpha_0/d_e$, $1\leq k\leq d_e-1$, of $H^1(\bbP^1,\cO(-d_e))$; every one of these is a non-zero linear form on $\mathrm{Lie}(\TCY)$. \draftnote{The sources state ``$R\pi_*f^*\Nb$ is moving there'' without listing the weights; the list is the normalisation-sequence computation of the companion paper for $\cO(-3)$, read for $\cO(-1)_{\alpha_1}\oplus\cO(-1)_{\alpha_2}$; to be checked.}
+
+(ii) By (i) and the localisation formula of \cite{GP99} applied on $\Mbar_{g,n}(\bbP^1,d)$ (to a generic one-parameter subgroup through which $\TCY$ acts with the same fixed loci; both sides are rational in the weights and such subgroups are Zariski dense), the fixed part of the obstruction theory of $Z$ on a fixed locus is that of $\bbP^1$, the virtual classes of the fixed loci agree, and the virtual normal bundle of $Z$ is that of $\bbP^1$ plus $R\pi_*f^*\Nb$; so the localisation definition of the classes of $Z$ is the twisted integral displayed. \draftnote{BS label: defn: refined GW invariant; the definition by localisation on the proper fixed locus.}
+
+(iii) The $S_n$-symmetry is clear. Unit: $\Omega_{g,n+1}(\gamma,\ideone)=p^*\Omega_{g,n}(\gamma)$ by the fundamental-class axiom of the virtual class, because the twisting class is pulled back along the forgetful map, $R\pi_*f^*\Nb$ on $\Mbar_{g,n+1}(\bbP^1,d)$ being the pull-back of the one on $\Mbar_{g,n}(\bbP^1,d)$ \cite[App.~1~(iv)]{CG07}; and $\Omega_{0,3}(a,b,\ideone)=\eta(a,b)$, since the terms with $d>0$ are pulled back along the forgetful map $\Mbar_{0,3}(\bbP^1,d)\to\Mbar_{0,2}(\bbP^1,d)$ and vanish. Gluing: the splitting axiom of the virtual class, together with the statement that the restriction of $R\pi_*f^*\Nb$ to a boundary divisor is the sum of the two sides (or the one side, for a non-separating node) minus $\ev^*\Nb$ at the node \cite[App.~1~(v), (vi)]{CG07} (equivalently, the normalisation sequence); the node factor $e(\Nb)$ turns the diagonal class of $\bbP^1$ into the bivector $\eta^{-1}$. This replaces the Poincar\'e pairing of $\bbP^1$ by $\eta$, and the last formula is localisation on $Z$, whose tangent weights at $p_\pm$ are $\wts_\pm$. \draftnote{The fundamental-class and splitting axioms of the virtual class are used in standard form; a reference (Behrend--Manin) is to be added to the bibliography.}
+\end{proof}
+
+\begin{lem}[The genus-zero potential]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-g0}
+Let $t_0,t_1$ be the flat coordinates along $\ideone,H$. The genus-zero potential is
+\[
+\cF_0=\cF_0^{\mathrm{cl}}+\frac{\Li_3(\re^{t_1})}{\epsilon_1\epsilon_2},\qquad
+\cF_0^{\mathrm{cl}}=\frac16\Big[\frac{t_0^3}{\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2}-\frac{(t_0-\alpha_0t_1)^3}{\alpha_0\wA\wB\epsilon_1\epsilon_2}\Big],
+\]
+with $\cQ=\re^{t_1}$: that is, $\GW_{0,d}=1/(d^3\epsilon_1\epsilon_2)$ for $d\geq 1$ and $\langle H,H,H\rangle_{0,d}=d^3\GW_{0,d}=1/(\epsilon_1\epsilon_2)$. Consequently
+\begin{gather*}
+H\qprod H=(\Lv_++\Lv_-)\,H-\Lv_+\Lv_-\,\ideone,\\
+\Lv_++\Lv_-=-\frac{\alpha_0+(\alpha_1+\alpha_2)\cQ}{1-\cQ}=\frac{E}{\tau}-\alpha_0,\qquad
+\Lv_+\Lv_-=-\frac{\alpha_1\alpha_2\cQ}{1-\cQ}=\frac{\alpha_1\alpha_2}{\tau},
+\end{gather*}
+where $\Lv_\pm$ denote the two eigenvalues of $H\qprod$.
+\end{lem}
+\begin{proof}
+The classical part is the localisation formula $\frac16\int_Z(t_0+t_1H)^3=\frac16\sum_{p=\pm}(t_0+t_1H|_p)^3/\eul(\wts_p)$ with $H|_{p_+}=0$, $H|_{p_-}=-\alpha_0$ and the values of $\eul(\wts_\pm)$ of \cref{lem:ide-fixed}(iii). For $d>0$: a section of $f^*\cO(-1)$ on a connected curve $C$ vanishes on the non-contracted components, where the bundle has negative degree, and is constant on the contracted ones, which meet them, so $H^0(C,f^*\cO(-1))=0$; hence $\Mbar_{0,0}(Z,d)=\Mbar_{0,0}(\bbP^1,d)\times\bbC^2$ with obstruction bundle $R^1\pi_*f^*(\cO(-1)\oplus\cO(-1))$, whose rank $2d-2$ is the virtual dimension of $\Mbar_{0,0}(\bbP^1,d)$. Localising on the factor $\bbC^2$ gives $\GW_{0,d}=C(0,d)/(\epsilon_1\epsilon_2)$ with $C(0,d)=\int_{[\Mbar_{0,0}(\bbP^1,d)]^{\vir}}e(R^1\pi_*f^*(\cO(-1)\oplus\cO(-1)))=1/d^3$, the Aspinwall--Morrison formula \cite[p.~3]{FP00}. The divisor equation of the twisted theory of $\bbP^1$ (the statement (Fl4) in the proof of \cref{prop:ide-flat}, which uses only the fundamental-class axiom and \cite[App.~1~(iv)]{CG07} and nothing else of that proof), applied in genus $0$, gives $\langle H,H,H\rangle_{0,d}=d^3\GW_{0,d}$, so the degree-$d$ part of the potential is $\GW_{0,d}\re^{dt_1}$ and the sum over $d\geq 1$ is $\Li_3(\re^{t_1})/(\epsilon_1\epsilon_2)$. The quantum product is read off from the third derivatives of $\cF_0$ through $\eta$: $\partial_{t_1}^3\Li_3(\re^{t_1})=\re^{t_1}/(1-\re^{t_1})=\cQ/(1-\cQ)=-1/\tau$, and the computation of the structure constants, carried out in \cref{prop:set-frob}, gives $H\qprod H$ as displayed; $\Lv_\pm$ are the roots of $\Lv^2-(\Lv_++\Lv_-)\Lv+\Lv_+\Lv_-$.
+\end{proof}
+
+\begin{lem}[Semisimplicity at $\cQ=0$]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-ss}
+The eigenvalues $\Lv_\pm$ of $H\qprod$ lie in $\KCY\fps{\cQ}$, with $\Lv_+(0)=0$, $\Lv_-(0)=-\alpha_0$, and $\Lv_+-\Lv_-$ is a unit of $\KCY\fps{\cQ}$. The idempotents $\eid_\pm=(H-\Lv_\mp)/(\Lv_\pm-\Lv_\mp)$ lie in $\ideV\otimes\KCY\fps{\cQ}$, and $\eid_\pm|_{\cQ=0}$ are the point classes $\eid_p|_q=\delta_{pq}$ of $p_\pm$. With $\Delta_i\coloneqq 1/\eta(\eid_i,\eid_i)$,
+\begin{equation}
+\label{eq:ide-Delta}
+\Delta_i=\epsilon_1\epsilon_2\big(\alpha_0\alpha_1\alpha_2+2\alpha_1\alpha_2\Lv_i-E\Lv_i^2\big)=\epsilon_1\epsilon_2(\Lv_i-\Lv_j)(\alpha_1\alpha_2-E\Lv_i)
+=\alpha_1\wA\epsilon_1\epsilon_2\,\cW_2(U_i),
+\end{equation}
+$j\neq i$, and $\Delta_+(0)=\eul(\wts_+)=\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2$, $\Delta_-(0)=\eul(\wts_-)=-\alpha_0\wA\wB\epsilon_1\epsilon_2$, both non-zero in $\KCY$. So the cohomological field theory $\Omega$ is semisimple over $\KCY\fps{\cQ}$, and the ratio $\Delta_+(0)/\Delta_-(0)=-\alpha_1\alpha_2/(\wA\wB)$ is a non-constant element of $\KCY$.
+\end{lem}
+\begin{proof}
+By \cref{lem:ide-g0} the eigenvalues are the roots of $\Lv^2-(\Lv_++\Lv_-)\Lv+\Lv_+\Lv_-$, whose coefficients lie in $\KCY\fps{\cQ}$ and which reduces modulo $\cQ$ to $\Lv^2+\alpha_0\Lv=\Lv(\Lv+\alpha_0)$, with the distinct roots $0$ and $-\alpha_0$ since $\alpha_0\neq 0$; by Hensel's lemma both roots lie in $\KCY\fps{\cQ}$, and their difference has the value $\alpha_0$ at $\cQ=0$, hence is a unit. Modulo $\cQ$ the quantum product is the classical product of $H^*_{\TCY}(Z)\otimes\KCY=\KCY\eid_+\oplus\KCY\eid_-$, in which $H=-\alpha_0\eid_-$; so $\eid_\pm(0)$ are the point classes. The formulas \cref{eq:ide-Delta} are \cref{prop:set-idem} and \cref{lem:set-crit}; we recall their derivation in \cref{prop:ide-rows}(i). The values at $\cQ=0$ follow from the first form with $\Lv_+(0)=0$ and $\Lv_-(0)=-\alpha_0$: $\Delta_-(0)=\epsilon_1\epsilon_2(\alpha_0\alpha_1\alpha_2-2\alpha_0\alpha_1\alpha_2-E\alpha_0^2)=-\alpha_0\epsilon_1\epsilon_2(\alpha_1\alpha_2+\alpha_0E)=-\alpha_0\wA\wB\epsilon_1\epsilon_2$, as $\wA\wB=\alpha_0E+\alpha_1\alpha_2$. They agree with $\eta(\eid_p(0),\eid_p(0))=1/\eul(\wts_p)$ from \cref{lem:ide-fixed}(iii). The ratio $-\alpha_1\alpha_2/((\alpha_0+\alpha_1)(\alpha_0+\alpha_2))$ is a non-constant rational function of $(\alpha_0,\alpha_1,\alpha_2)$.
+\end{proof}
+
+\subsection{Hodge classes as an R-matrix action}
+
+The two lemmas of this subsection are statements about $\Mbar_{g,n}$ alone. They are placed here because the freeness lemma below uses them. For a scalar series $h=\sum_{k\geq 1}b_kz^{2k-1}$ put
+\[
+\ideCh_h\coloneqq\sum_{k\geq 1}b_k\frac{(2k)!}{B_{2k}}\,\mathrm{ch}_{2k-1}(\Hdg)\in H^*(\Mbar_{g,n};\bbQ),
+\]
+and write $\exp(h)$ for the rank-one R-matrix with logarithm $h$, acting on the trivial rank-one theory $\ideone$ by the unit-preserving action of \cite[Definitions~2.2, 2.13]{PPZ15}; thus $h_{\mathsf{v}}.\ideone$ denotes the action of the series $h_{\mathsf{v}}$ of \cref{def:set-rows}, whose logarithm is $-\sum_k\bk_kz^{2k-1}\sum_av_a^{1-2k}$. Recall $\Hg_{\mathsf{v}}=\prod_{a}\Lamv(v_a)/v_a^{g}$ for a multiset $\mathsf{v}$ of non-zero weights.
+
+\begin{lem}[Hodge classes as an R-action]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-mumford}
+For all stable $(g,n)$, in the conventions $\kappa_{2l-1}=p_*(\psi_{n+1}^{2l})$ of Arbarello--Cornalba,
+\begin{equation}
+\label{eq:ide-mumford}
+\mathrm{ch}_{2l-1}(\Hdg)=\frac{B_{2l}}{(2l)!}\Big[\kappa_{2l-1}-\sum_{i=1}^n\psi_i^{2l-1}+\frac12\xi_*\Big(\sum_{a+a'=2l-2}(-1)^{a'}\psi^a\psi'^{a'}\Big)\Big],
+\end{equation}
+including $g=0$, where both sides vanish ($\xi$ is the gluing map of the boundary with the two branches $\psi,\psi'$ at the node). Further $\exp(h).\ideone=\exp(\ideCh_h)$, and $\Hg_{\mathsf{v}}=h_{\mathsf{v}}.\ideone$.
+\end{lem}
+\begin{proof}
+\emph{Mumford's formula with markings.} Mumford's formula as stated in \cite[Section~1.1]{FP00} applies to the family $\pi\colon\Mbar_{g,n+1}\to\Mbar_{g,n}$ of curves with the marked points as the divisor $D=\sum_iD_i$. With $K_\pi\coloneqq c_1(\omega_\pi)$, $K_\pi\cdot D_i=\psi_iD_i$, $D_i^2=-\psi_iD_i$ and $D_iD_j=0$ for $i\neq j$,
+\[
+(K_\pi+D_i)^{2l}=K_\pi^{2l}+\psi_i^{2l-1}D_i\sum_{r=1}^{2l}(-1)^{r-1}\binom{2l}{r}=K_\pi^{2l}+\psi_i^{2l-1}D_i,
+\]
+so $\pi_*(c_1(\omega_\pi(D))^{2l})=\pi_*(c_1(\omega_\pi)^{2l})+\sum_i\psi_i^{2l-1}$, which turns Mumford's formula for $\pi_*(c_1(\omega_\pi)^{2l})$ into \cref{eq:ide-mumford}.
+
+\emph{The Hodge class.} The relation $c(\Hdg)c(\Hdg^\vee)=1$ \cite[(5.4), (5.5)]{Mum83} gives $\mathrm{ch}_{2k}(\Hdg)=0$ for $k\geq 1$, hence
+\[
+\frac{\Lamv(v)}{v^g}=c_{-1/v}(\Hdg)=\exp\Big(-\sum_{k\geq 1}(2k-2)!\,\mathrm{ch}_{2k-1}(\Hdg)\,v^{1-2k}\Big).
+\]
+
+\emph{The action.} By \cite[Prop.~2.14]{PPZ15}, $\frac{\dd}{\dd s}(\re^{sh}.\ideone)=\mathcal{D}_h(\re^{sh}.\ideone)$, where, from \cite[Defs.~2.2, 2.13]{PPZ15},
+\[
+\mathcal{D}_h\Omega_{g,n}=\sum_kb_k\Big[-\sum_i\psi_i^{2k-1}\Omega_{g,n}+p_*\big(\psi_{n+1}^{2k}\Omega_{g,n+1}\big)+\frac12\xi_*\Big(\sum_{a+a'=2k-2}(-1)^{a'}\psi^a\psi'^{a'}\Omega'\Big)\Big]:
+\]
+the legs give $-\psi^{2k-1}$, from $\Rm^{-1}(\psi)$; the translation $\ideT(z)=b_kz^{2k}$ gives the $\kappa$ term; and the edge gives $(z^{2k-1}+w^{2k-1})/(z+w)$. On $\exp(s\ideCh_h)$, which is pulled back under $p$ and additive under $\xi^*$ for $k\geq 1$ (loops included), the projection formula gives
+\[
+\mathcal{D}_h\exp(s\ideCh_h)=\exp(s\ideCh_h)\sum_kb_k\Big[\kappa_{2k-1}-\sum_i\psi_i^{2k-1}+\frac12\xi_*(\cdots)\Big]=\ideCh_h\exp(s\ideCh_h)
+\]
+by \cref{eq:ide-mumford}. So $\exp(s\ideCh_h)$ solves the same graded differential equation as $\re^{sh}.\ideone$ with the same initial value $1$ at $s=0$, which proves $\exp(h).\ideone=\exp(\ideCh_h)$.
+
+\emph{Comparison.} The series $\log h_{\mathsf{v}}$ has $b_k=-\bk_k\sum_av_a^{1-2k}$ with $\bk_k=B_{2k}/(2k(2k-1))$, so $b_k(2k)!/B_{2k}=-(2k-2)!\sum_av_a^{1-2k}$ and $\ideCh_{\log h_{\mathsf{v}}}=-\sum_k(2k-2)!\,\mathrm{ch}_{2k-1}(\Hdg)\sum_av_a^{1-2k}=\log\Hg_{\mathsf{v}}$. This agrees with \cite[Prop.~8.7(i)]{Tel12} and \cite[Section~2.3, Lemma]{Giv01}.
+\end{proof}
+
+\begin{lem}[Non-vanishing of $\mathrm{ch}_{2k-1}$]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-ch}
+For $k\geq 2$, $\mathrm{ch}_{2k-1}(\Hdg)\neq 0$ on $\Mbar_k$, and $\mathrm{ch}_{2k-1}(\Hdg)\neq 0$ on $\Mbar_{k,1}$ for $k\geq 1$.
+\end{lem}
+\begin{proof}
+For $c_t=\sum_i\lambda_it^i$ one has $c_t'c_{-t}=\sum_{n\geq 1}(-1)^{n-1}p_nt^{n-1}$ with $p_n=n!\,\mathrm{ch}_n$; the coefficient of $t^{2k-2}$, using $c(\Hdg)c(\Hdg^\vee)=1$ and $\lambda_i=0$ for $i>k$ on $\Mbar_k$ (the Hodge bundle has rank $k$), gives $(2k-1)!\,\mathrm{ch}_{2k-1}(\Hdg)=(-1)^{k-1}\lambda_k\lambda_{k-1}$. Further, by the coefficient of $t^{2k-2}$ in $c_tc_{-t}=1$ on $\Mbar_k$, $\lambda_{k-1}^2=2\lambda_k\lambda_{k-2}$, so $\int_{\Mbar_k}\lambda_k\lambda_{k-1}\lambda_{k-2}=\frac12\int_{\Mbar_k}\lambda_{k-1}^3\neq 0$ for $k\geq 2$ by \cite[Theorem~4]{FP00}; hence $\mathrm{ch}_{2k-1}(\Hdg)\neq 0$ on $\Mbar_k$. For the second statement, $\mathrm{ch}_{2k-1}(\Hdg)$ on $\Mbar_{k,1}$ is the pull-back $\pi^*$ of the class on $\Mbar_k$ for $k\geq 2$, and $\pi^*\colon H^*(\Mbar_k;\bbQ)\to H^*(\Mbar_{k,1};\bbQ)$ is injective because $\pi_*(\psi_1\pi^*y)=(2k-2)y$. For $k=1$, $\int_{\Mbar_{1,1}}\lambda_1=1/24$.
+\end{proof}
+
+\subsection{Teleman's classification over the field}
+
+Let $\TFT$ be the semisimple topological field theory over $\KCY\fps{\cQ}$ with $\TFT_{g,n}(\eid_i^{\otimes n})=\Delta_i^{g-1}$ and $\TFT_{g,n}(x_1,\dots,x_n)=0$ for mixed insertions; its genus-zero part is the Frobenius algebra $(\ideV\otimes\KCY\fps{\cQ},\qprod,\eta)$. An R-matrix is an element $\Rm(z)=1+\Rm_1z+\Rm_2z^2+\cdots$ of $\End(\ideV)\fps{z}$ (scalars extended to a field containing $\KCY\lser{\cQ}$) which is symplectic, $\eta(\Rm(z)a,\Rm(-z)b)=\eta(a,b)$, equivalently $\Rm^{-1}(z)^\dagger=\Rm(-z)$ with $\dagger$ the $\eta$-adjoint \cite[(5)]{PPZ15}; $\Rm.\TFT$ denotes the unit-preserving action of \cite[Definitions~2.2, 2.13]{PPZ15}: a sum over stable graphs with the legs $\Rm^{-1}(\psi_l)$, the edges $(\eta^{-1}-(\Rm^{-1}(\psi)\otimes\Rm^{-1}(\psi'))\eta^{-1})/(\psi+\psi')$ and the translation $\ideT(z)=z(\ideone-\Rm^{-1}(z)\ideone)$. We write $\fid_i\coloneqq\Delta_i^{1/2}\eid_i$ for the normalised idempotents, which are $\eta$-orthonormal, and $\fid_i^*=\eta(\fid_i,\cdot)=\Delta_i^{-1/2}\eid_i^*$, where $\eid_i^*=\Delta_i\eta(\eid_i,\cdot)$ is the dual basis. The square roots $\Delta_i^{1/2}$ lie in $\ideKt\fps{\cQ}$, $\ideKt\coloneqq\KCY\big(\eul(\wts_+)^{1/2},\eul(\wts_-)^{1/2}\big)$, because $\Delta_i\in\KCY\fps{\cQ}$ has the non-zero value $\eul(\wts_i)$ at $\cQ=0$ (\cref{lem:ide-ss}); they are used only in the flatness proof and in the ambiguity lemma. Put $\ideFz\coloneqq\ideKt\lser{\cQ}$, a finite extension of $\KCY\lser{\cQ}$.
+
+\begin{lem}[Freeness of the action]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-free}
+Let $\TFT$ be a semisimple topological field theory over a field of characteristic $0$ with $\TFT(\eid_i^{\otimes n})=\Delta_i^{g-1}$ (of any rank). If $\Rm$ is symplectic and $\Rm.\TFT=\TFT$, then $\Rm=1$.
+\end{lem}
+\begin{proof}
+Suppose $\Rm\neq 1$ and write $\Rm=1+\Rm_mz^m+\cdots$ with $\Rm_m\neq 0$, in the basis $\fid_i$ (over the field with the $\Delta_i^{1/2}$ adjoined).
+
+Evaluate the degree-$m$ part of $(\Rm.\TFT)_{0,m+3}(\fid_i,\fid_j,\dots,\fid_j)$ with $i\neq j$. A graph with an edge would need a vertex carrying $\fid_i$ and the edge alone, which is unstable, so only the one-vertex graphs occur; translations give mixed insertions, which vanish; so only the leg term at the $\fid_i$-leg survives, which is $-(\Rm_m)_{ji}\Delta_j^{(m+1)/2}\psi_1^m$, and $\psi_1^m\neq 0$ on $\Mbar_{0,m+3}$. Hence $\Rm_m$ is diagonal, $\Rm_m=\mathrm{diag}(r_i)$.
+
+Symplecticity makes $m$ odd: $\Rm(z)\Rm(-z)^\dagger=1$ gives $\Rm_m+(-1)^m\Rm_m^\dagger=0$ at order $z^m$, and a diagonal $\Rm_m$ in the orthonormal basis is self-adjoint, so $m$ even would force $\Rm_m=0$. Write $m=2k-1$, $k\geq 1$.
+
+\emph{Colour isolation.} Work on $\Mbar_{k,1}$ with the insertion $\eid_i$ (on $\Mbar_k$ there is no marking and $\TFT_{k,0}$ is a sum over colours, so one colour cannot be separated there). The degree-$m$ part of $(\Rm.\TFT)_{k,1}(\eid_i)$ is linear in $\Rm_m$, monochromatic (a half-edge at a vertex carrying $\eid_i$, or joined to it, must have colour $i$, because $\Rm_m$ is diagonal and mixed insertions vanish), and equals $\Delta_i^{k-1}$ times the degree-$m$ part of $(\exp(r_iz^m).\ideone)_{k,1}$, by $\sum_v(g_v-1)+|\Edg(\Gamma)|=g-1$. By \cref{lem:ide-mumford} this is $\Delta_i^{k-1}r_i\frac{(m+1)!}{B_{m+1}}\mathrm{ch}_m(\Hdg)$, and by \cref{lem:ide-ch} $\mathrm{ch}_{2k-1}(\Hdg)\neq 0$ on $\Mbar_{k,1}$. Hence $r_i=0$ for every $i$, a contradiction.
+\end{proof}
+
+\begin{prop}[Existence and field of definition of $\Rm$]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-teleman}
+There is a unique symplectic $\Rm\in\End(\ideV)\otimes\KCY\lser{\cQ}\fps{z}$ with $\Omega=\Rm.\TFT$.
+\end{prop}
+\begin{proof}
+\emph{Field of definition.} The classification of \cite{Tel12} is stated over $\bbC$ (it allows the generic point of the Novikov variables, \cite[(1.6)]{Tel12}). The field $\KCY\lser{\cQ}$ has characteristic $0$ and cardinality $2^{\aleph_0}$, so it embeds in $\bbC$ as a field: send a transcendence basis over $\bbQ$ injectively into one of $\bbC$ and extend, $\bbC$ being algebraically closed. Fix such an embedding $\iota$. Since $H^*(\Mbar_{g,n};\bbQ)$ is finite dimensional, $\iota(\Omega)$ is a cohomological field theory with flat unit in $H^*(\Mbar_{g,n};\bbQ)\otimes\bbC$, semisimple because $\Omega$ is semisimple over $\KCY\lser{\cQ}$ (\cref{lem:ide-ss}), with the topological field theory $\iota(\TFT)$. By \cite[(1.15), Theorem~(2), Prop.~8.7(ii)]{Tel12}, $\iota(\Omega)=\Rm.\iota(\TFT)$ for a symplectic $\Rm$ with coefficients in $\bbC$; here \cite[Defs.~2.2, 2.5, 2.13 and Prop.~2.14]{PPZ15} are identities of graph sums whose proofs hold over any field of characteristic $0$. By \cref{lem:ide-free} and the group property \cite[Prop.~2.14]{PPZ15}, $\Rm$ is unique: if $\Rm_1.\TFT=\Rm_2.\TFT$ then $(\Rm_1^{-1}\Rm_2).\TFT=\TFT$, so $\Rm_1=\Rm_2$. The embedding forgets the derivation $\thQ$, which is recovered in \cref{prop:ide-flat} after the descent.
+
+\emph{Descent.} Read $\Rm$ in $\End(\ideV\otimes\bbC)$, where $\ideV$ has the basis $(\ideone,H)$ over $\KCY\lser{\cQ}$. The idempotents $\eid_\pm=(H-\Lv_\mp)/(\Lv_\pm-\Lv_\mp)$ lie in $\ideV\otimes\KCY\fps{\cQ}$, because $\Lv_+-\Lv_-$ is a unit of $\KCY\fps{\cQ}$ (\cref{lem:ide-ss}), so $\TFT$ and $\Omega$ are defined over $\KCY\lser{\cQ}$, and no square root of $\Delta_i$ is needed for this step. Let $\phi\in\Aut(\bbC/\KCY\lser{\cQ})$. The action $\Rm.\TFT$ is given by polynomial formulas over $\bbQ$ in the entries of $\Rm$ and the values of $\TFT$, so $\phi(\Rm).\TFT=\phi(\Rm.\TFT)=\Omega=\Rm.\TFT$; hence $\Rm^{-1}\phi(\Rm)$ fixes $\TFT$ \cite[Prop.~2.14]{PPZ15}, and $\phi(\Rm)=\Rm$ by \cref{lem:ide-free}. The fixed field of $\Aut(\bbC/F)$ is $F$ for every subfield $F$ of $\bbC$: an element algebraic over $F$ and not in $F$ has a conjugate different from itself, an element $y$ transcendental over $F$ can be sent to $y+1$, and these automorphisms of $F(y)$, respectively of $F(\text{conjugates})$, extend to $\bbC$. So $\Rm$ has coefficients in $\KCY\lser{\cQ}$, and, by uniqueness over $\KCY\lser{\cQ}$, it does not depend on the embedding.
+\end{proof}
+
+Let $\Psi\colon\ideFz^2\to\ideV\otimes\ideFz$ be the operator $\mathbf{e}_i\mapsto\fid_i$, so that $\Psi^T\eta\Psi=1$, that is, $\eta(\Psi\mathsf{u},\Psi\mathsf{u}')=\mathsf{u}\cdot\mathsf{u}'$, and $\Psi^{-1}y=(\fid_+^*(y),\fid_-^*(y))$; let $\ideLam\coloneqq\mathrm{diag}(\Lv_+,\Lv_-)$, so that $H\qprod\Psi=\Psi\ideLam$. The derivation $\thQ=\cQ\,\dd/\dd\cQ=\dd/\dd t$ extends coefficientwise to $\ideFz$, with constants $\ideKt$; it kills $\eta$ and the elements of $\ideV$ over $\KCY$. Let $\idecan=\mathrm{diag}(u_+,u_-)$ be canonical coordinates, $\thQ\idecan=\ideLam$ (any choice; only $\thQ\idecan$ enters).
+
+\begin{lem}[Ambiguity of flat symplectic solutions]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-ambig}
+Let $\Rm_1,\Rm_2\in\End(\ideV)\otimes\ideFz\fps{z}$ be symplectic, with $\Rm_1(0)=\Rm_2(0)=1$, both solving the flatness equation
+\begin{equation}
+\label{eq:ide-flat}
+z\,\thQ\big(\Rm(z)\Psi\big)=\big(H\qprod\Rm(z)-\Rm(z)\,H\qprod\big)\Psi .
+\end{equation}
+Then $\Rm_2=\Rm_1\Psi\exp\big(\mathrm{diag}\sum_{k\geq 1}a_k^{(i)}z^{2k-1}\big)\Psi^{-1}$ with constants $a_k^{(i)}\in\ideKt$; that is, in the frame $\fid_i$ the two matrices differ by right multiplication by a diagonal matrix of exponentials of odd series with constant coefficients.
+\end{lem}
+\begin{proof}
+Equation \cref{eq:ide-flat} says $z\thQ\Rm=H\qprod\Rm-\Rm H\qprod-z\Rm\,\thQ\Psi\,\Psi^{-1}$, since $\Psi\ideLam\Psi^{-1}=H\qprod$. Hence for $\mathfrak{Y}\coloneqq\Rm_1^{-1}\Rm_2$, using $z\thQ(\Rm_1^{-1})=-\Rm_1^{-1}(z\thQ\Rm_1)\Rm_1^{-1}$,
+\[
+z\thQ\mathfrak{Y}=[H\qprod,\mathfrak{Y}]+z\,[\thQ\Psi\,\Psi^{-1},\mathfrak{Y}],
+\]
+and for $\ideZ\coloneqq\Psi^{-1}\mathfrak{Y}\Psi$ the terms in $\thQ\Psi$ cancel: $z\thQ\ideZ=[\ideLam,\ideZ]$. Write $\ideZ=1+\sum_{n\geq 1}\ideZ_nz^n$. At order $z^n$, $\thQ\ideZ_{n-1}=[\ideLam,\ideZ_n]$, that is, $(\Lv_i-\Lv_j)(\ideZ_n)_{ij}=(\thQ\ideZ_{n-1})_{ij}$ for $i\neq j$ and $(\thQ\ideZ_{n-1})_{ii}=0$. By induction on $n$: $\ideZ_0=1$ is diagonal and constant; if $\ideZ_{n-1}$ is diagonal with $\thQ$-constant entries, then the off-diagonal entries of $\ideZ_n$ vanish because $\Lv_+-\Lv_-$ is a unit (\cref{lem:ide-ss}), and the next equation says that the diagonal entries of $\ideZ_n$ are $\thQ$-constant. The constants of $\thQ$ on $\ideFz=\ideKt\lser{\cQ}$ are $\ideKt$. So $\ideZ=\mathrm{diag}(\zeta_+(z),\zeta_-(z))$ with $\zeta_i\in\ideKt\fps{z}$, $\zeta_i(0)=1$. Since $\Rm_1^{-1}\Rm_2$ is symplectic and $\Psi$ is an isometry, $\ideZ(z)^T\ideZ(-z)=1$, that is, $\zeta_i(z)\zeta_i(-z)=1$, so $\log\zeta_i$ is odd: $\zeta_i=\exp\sum_ka_k^{(i)}z^{2k-1}$.
+\end{proof}
+
+\subsection{Flatness of the R-matrix}
+
+\begin{prop}[Flatness of $\Rm$]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-flat}
+The R-matrix $\Rm$ of \cref{prop:ide-teleman} satisfies \cref{eq:ide-flat}. Equivalently, $\ideS\coloneqq\Rm\Psi\re^{\idecan/z}$ satisfies $z\thQ\ideS=H\qprod\ideS$: it is a fundamental solution of the quantum differential equation, unitary in the sense that $\Rm$ is symplectic. In terms of the covectors $\vv_i\coloneqq\eid_i^*\circ\Rm^{-1}(-z)$, $i=\pm$, the equation reads
+\begin{equation}
+\label{eq:ide-roweq}
+z\Dop_i\vv_i=(\Aop-\Lv_i)\vv_i,\qquad \Dop_i=\frac{\dd}{\dd t}-\frac{\Delta_i'}{2\Delta_i},
+\end{equation}
+where $\Aop$ is the transpose of the matrix of $H\qprod$, acting on covectors by $(\Aop a)(x)=a(H\qprod x)$; in the basis $(\ideone,H)$, $\Aop=\begin{pmatrix}0&1\\-\Lv_+\Lv_-&\Lv_++\Lv_-\end{pmatrix}$ on $a=(a_0,a_1)$ (\cref{prop:set-frob}). The equation is for the $\Rm$ whose legs are $\Rm^{-1}(\psi)$, with the same $z$; it is not an equation for $\Rm^{-1}(-z)$.
+\end{prop}
+
+\begin{proof}
+\emph{Set-up.} Work over $\ideFz$ with the derivation $\thQ$, using $\Omega=\Rm.\TFT$ (\cref{prop:ide-teleman}; the coefficients of $\Rm$ lie in $\KCY\lser{\cQ}\subset\ideFz$). On $\ideV_0\coloneqq\KCY\ideone\oplus\KCY H$ the derivation $\thQ$ vanishes and $\eta$ takes values in $\KCY$. In this proof state-space elements are denoted $x,x_l\in\ideV_0$, so that $\thQ x=0$. Put $\Rinv(\psi)\coloneqq\Rm^{-1}(\psi)$ and
+\[
+\idelg{i}(\psi;x)\coloneqq\fid_i^*\big(\Rinv(\psi)x\big)\in\ideFz\fps{\psi}.
+\]
+Let $M_{g,n}$ denote the moduli space of smooth curves ($\Mbar_{g,n}$ is its compactification). Each of the following nine steps is a statement about curves or about a semisimple Frobenius algebra of any rank, except (Fl4) and (Fl8), where the target enters.
+
+\emph{(Fl1) Edgeless form.} On $M_{g,n}$ every graph with an edge vanishes, being pushed forward from the boundary. The translation $\ideT(z)=z(\ideone-\Rinv(z)\ideone)$ has no $z^0$ and $z^1$ terms, since $\Rinv(z)=1-\Rm_1z+\cdots$; so the translation legs, pushed forward along the forgetful maps, give a series in the classes $\kappa_j$, $j\geq 1$, finite in each degree, with no boundary correction, because the corrections from the divisors where a leg $l$ bubbles off with translation points vanish by the dimension count of (Fl3) (a translation leg on a genus-$0$ bubble with $m$ translation points has degree $\geq 2m>m-1$). Only the one-vertex graph remains, and only its monochromatic terms, because $\TFT$ vanishes on mixed insertions and $\TFT_{g,N}(\fid_i^{\otimes N})=\Delta_i^{(2g-2+N)/2}$. Distributing one factor $\Delta_i^{1/2}$ to each translation leg,
+\begin{equation}
+\label{eq:ide-Fl1}
+\begin{gathered}
+\Omega_{g,n}(x_1,\dots,x_n)=\sum_{i=\pm}\ideP_i\,\ideN_i(\kappa)\prod_{l=1}^n\idelg{i}(\psi_l;x_l),\\
+\ideP_i\coloneqq\Delta_i^{(2g-2+n)/2},\qquad
+\ideN_i(\kappa)\coloneqq\sum_{m\geq 0}\frac{1}{m!}\,p_{m*}\prod_{k=1}^m\Big(\Delta_i^{1/2}\fid_i^*\ideT(\psi_{n+k})\Big),
+\end{gathered}
+\end{equation}
+where $p_m\colon\Mbar_{g,n+m}\to\Mbar_{g,n}$ forgets the last $m$ points; $\ideN_i$ is a series in the $\kappa_j$, $j\geq 1$, with coefficients in $\ideFz$, finite in each degree, with constant term $\ideN_i(0)=1$. Only $\TFT(\fid_i^{\otimes N})=\Delta_i^{(2g-2+N)/2}$ and the vanishing of mixed insertions are used.
+
+\emph{(Fl2) Pushforward.} Let $p\colon\ideCurve\to M_{g,n}$ be the restriction of $\Mbar_{g,n+1}\to\Mbar_{g,n}$ over $M_{g,n}$, with sections $\idesec_l$, $l=1,\dots,n$. On $\ideCurve$: $\psi_l=p^*\psi_l+\idesec_l$, $\psi_l\idesec_l=\psi_{n+1}\idesec_l=0$, hence $\psi_l^k=(p^*\psi_l)^k+\idesec_l(p^*\psi_l)^{k-1}$; $\idesec_l\idesec_{l'}=0$ for $l\neq l'$; $\kappa_j=p^*\kappa_j+\psi_{n+1}^j$; $p_*\psi_{n+1}^k=\kappa_{k-1}$, where $\kappa_0=2g-2+n$ is a number; and $p_*(\idesec_l\,p^*c)=c$. These are statements about curves, with no target.
+
+\emph{(Fl3) Bubble.} The fibres of $p$ are smooth, so a point of $\ideCurve$ has at most one node: graphs with two or more edges miss $\ideCurve$, and the one-edge graphs meeting $\ideCurve$ are the bubbles, a vertex $(0,3)$ carrying the legs $l$ and $n+1$ joined by one edge to the genus-$g$ vertex, supported on $\idesec_l$. A translation leg on the bubble vanishes, since $p_{m*}$ of a class of degree $\geq 2m$ on $\Mbar_{0,3+m}$, of dimension $m$, vanishes for $m\geq 1$; the legs of the bubble carry $\Rinv(0)=1$, since $\psi=0$ on $\Mbar_{0,3}$. The bubble vertex is $\TFT_{0,3}(x_l,H,\cdot)=\eta(H\qprod x_l,\cdot)$, which, contracted with the bivector of the edge, puts $H\qprod x_l$ on the genus-$g$ side; the edge factor at $\psi_h=0$ on the bubble side is $(\eta^{-1}-(1\otimes\Rinv(\psi_{h'}))\eta^{-1})/\psi_{h'}$, so the bubble contributes
+\[
+\ideP_i\ideN_i\,\fid_i^*\Big(\frac{1-\Rinv(\psi_l)}{\psi_l}\,H\qprod x_l\Big)\prod_{l'\neq l}\idelg{i}(\psi_{l'};x_{l'})
+\]
+on leg $l$ of the genus-$g$ vertex, after $p_*$. The edgeless graph \cref{eq:ide-Fl1} for $(g,n+1)$ with insertions $(x,H)$, restricted to $\idesec_l$, where $\kappa_j\mapsto p^*\kappa_j$, $\idelg{i}(\psi_{n+1};H)\mapsto\fid_i^*(H)$ and $\Rinv(\psi_l)=\Rinv(p^*\psi_l)+\idesec_l(\Rinv(p^*\psi_l)-1)/p^*\psi_l$, contributes after $p_*$
+\[
+\Delta_i^{(2g-1+n)/2}\ideN_i\,\fid_i^*(H)\,\fid_i^*\Big(\frac{\Rinv(\psi_l)-1}{\psi_l}x_l\Big)\prod_{l'\neq l}\idelg{i}(\psi_{l'};x_{l'}).
+\]
+The identities $H=\sum_i\Lv_i\eid_i$, that is, $\fid_i^*(H)=\Lv_i\Delta_i^{-1/2}$, and $\fid_i^*(a\qprod b)=\Delta_i^{1/2}\fid_i^*(a)\fid_i^*(b)$ hold in any semisimple Frobenius algebra; so $\Delta_i^{1/2}\fid_i^*(H)\fid_i^*(y)=\Lv_i\fid_i^*(y)=\fid_i^*(H\qprod y)$, and the two terms add up to $\ideP_i\ideN_i\fid_i^*\big(\frac{1}{\psi_l}[H\qprod,\Rinv(\psi_l)]x_l\big)$ on leg $l$. The part of the edgeless graph not supported on the sections gives, after $p_*$, a series in the $\kappa_j$ times $\prod_l\idelg{i}(\psi_l;x_l)$. Hence
+\begin{equation}
+\label{eq:ide-Fl3}
+p_*\Omega_{g,n+1}(x,H)=\sum_i\ideP_i\ideN_i\sum_{l=1}^n\fid_i^*\Big(\frac{1}{\psi_l}[H\qprod,\Rinv(\psi_l)]\,x_l\Big)\prod_{l'\neq l}\idelg{i}(\psi_{l'};x_{l'})+\sum_i\ideG_i(\kappa)\prod_l\idelg{i}(\psi_l;x_l),
+\end{equation}
+with $\ideG_i$ a series in the $\kappa_j$, $j\geq 1$ (and the number $\kappa_0$), finite in each degree, containing no $\psi_l$.
+
+\emph{(Fl4) Divisor equation} (the first of the two places where the target enters). For $x\in\ideV_0^{\otimes n}$ and every $d\geq 0$,
+\[
+p_*\Omega_{g,n+1,d}(x,H)=d\,\Omega_{g,n,d}(x),\qquad\text{hence}\qquad p_*\Omega_{g,n+1}(x,H)=\thQ\Omega_{g,n}(x).
+\]
+Indeed $\mathrm{ft}_*(\ev_{n+1}^*H)=d$, the fibre degree of $f^*\cO(1)$, an equivariant class of degree $0$, for the equivariant lift of $H$ used here as for any other; the virtual class is pulled back (fundamental-class axiom) and so is the twisting class \cite[App.~1~(iv)]{CG07}. At $d=0$ both sides vanish. So the left side of \cref{eq:ide-Fl3} is $\thQ\Omega_{g,n}(x)$, with $\thQ$ acting coefficientwise on \cref{eq:ide-Fl1}.
+
+\emph{(Fl5) Defect.} Since $x\mapsto(\idelg{+}(\psi;x),\idelg{-}(\psi;x))=\Psi^{-1}\Rinv(\psi)x$ is invertible over $\ideFz\fps{\psi}$, there is a unique $\Mdef(\psi)\in\mathrm{Mat}_2(\ideFz\fps{\psi})$ with
+\[
+\thQ\idelg{i}(\psi;x)-\fid_i^*\Big(\frac{1}{\psi}[H\qprod,\Rinv(\psi)]\,x\Big)=\sum_k\Mdef(\psi)^i{}_k\,\idelg{k}(\psi;x)\qquad\text{for all }x\in\ideV_0 .
+\]
+$\Mdef$ is built from $\Rm$, $\Psi$ and $H\qprod$ alone, so it does not depend on $g$. Apply $\thQ$ to \cref{eq:ide-Fl1} at $n=2$, where $\ideP_i=\Delta_i^g$, and compare with \cref{eq:ide-Fl3} through (Fl4): with $\mathrm{a}_l\coloneqq(\idelg{\pm}(\psi_l;x_l))$,
+\begin{equation}
+\label{eq:ide-Fl5}
+\sum_i\ideP_i\ideN_i\Big[(\Mdef(\psi_1)\mathrm{a}_1)^i\,\mathrm{a}_2^i+\mathrm{a}_1^i\,(\Mdef(\psi_2)\mathrm{a}_2)^i\Big]=\sum_i\widetilde{\ideG}_i(\kappa)\,\mathrm{a}_1^i\mathrm{a}_2^i,\qquad
+\widetilde{\ideG}_i\coloneqq\ideG_i-\thQ(\ideP_i\ideN_i),
+\end{equation}
+an identity in $H^*(M_{g,2})\otimes\ideFz$, bilinear in $(\mathrm{a}_1,\mathrm{a}_2)$ over $\ideFz\fps{\psi_1,\psi_2}$; since $x\mapsto\mathrm{a}(\psi;x)$ is invertible over $\ideFz$, it holds for arbitrary vectors $\mathrm{a}_1\in\ideFz\fps{\psi_1}^2$, $\mathrm{a}_2\in\ideFz\fps{\psi_2}^2$.
+
+\emph{(Fl6) Stability.} By \cite[2.17--2.19]{Tel12}, resting on \cite{Loo96}, \cite{MW07}, \cite{Har85} and \cite{Iva90} as reported there, in cohomological degree $<(g-1)/2$ (with $\deg\psi_l=2$, $\deg\kappa_j=2j$) the monomials in $\psi_1,\psi_2$ and in the classes $\kappa_j^{M}$, $j\geq 1$, pulled back from $M_g$, are linearly independent in $H^*(M_{g,2};\bbQ)$. The $\kappa_j$ used here are the Arbarello--Cornalba classes, and on $M_{g,2}$ they satisfy $\kappa_j=\kappa_j^M+\psi_1^j+\psi_2^j$ \cite[(2.15)]{Tel12}, a triangular degree-preserving change of generators; so the monomials in $\kappa_j$ ($j\geq 1$), $\psi_1,\psi_2$ are independent in the same range, and over $\ideFz$ by base change, $H^*(M_{g,2};\ideFz)=H^*(M_{g,2};\bbQ)\otimes_{\bbQ}\ideFz$ with $\thQ$ acting on the second factor. Only independence in some range growing with $g$ is used. Take in \cref{eq:ide-Fl5} the coefficient of $\kappa^0\psi_2^0$, where $\ideN_i=1$, $\mathrm{a}_2$ is a constant vector and $\mathrm{a}_1\in\ideFz\fps{\psi_1}^2$ is arbitrary: with $\ideP\coloneqq\mathrm{diag}(\Delta_+^g,\Delta_-^g)$, as bilinear forms in $(\mathrm{a}_1,\mathrm{a}_2)$,
+\[
+\ideP\,\Mdef(\psi)+\Mdef_0^T\ideP=\widetilde{\ideG}(0)\quad\text{diagonal, modulo degree}\ \geq(g-1)/2\ \text{in}\ \psi,
+\]
+$\Mdef_0\coloneqq\Mdef(0)$. Since $\Mdef$ does not depend on $g$, the coefficient of $\psi^n$ for $n\geq 1$ gives $\ideP\Mdef_n=0$ once $g>4n+1$ (then $\psi_1^n$ has cohomological degree $2n<(g-1)/2$), and $\ideP$ is invertible; so $\Mdef_n=0$ for all $n\geq 1$. At $\psi^0$ the off-diagonal entry reads
+\[
+\Delta_+^g(\Mdef_0)_{+-}+\Delta_-^g(\Mdef_0)_{-+}=0\qquad\text{for every }g\geq 2 .
+\]
+
+\emph{(Fl7) Skewness of $\Mdef_0$.} With $\ideW\coloneqq\Psi^{-1}\thQ\Psi$ and $\ideRf\coloneqq\Psi^{-1}\Rm\Psi$, one has $\Mdef_0=-\ideW+[\ideLam,\ideRf_1]$. Indeed $\mathrm{a}(\psi;x)=\Psi^{-1}\Rinv(\psi)x$, so $\thQ\mathrm{a}=-\ideW\mathrm{a}+\Psi^{-1}(\thQ\Rinv)x$, and
+\[
+\Psi^{-1}\frac1\psi[H\qprod,\Rinv]x=\frac1\psi\big(\ideLam\mathrm{a}-\Psi^{-1}\Rinv\Psi\,\ideLam\,(\Psi^{-1}\Rinv\Psi)^{-1}\mathrm{a}\big);
+\]
+at $\psi^0$, using $\Psi^{-1}\Rinv(\psi)\Psi=1-\ideRf_1\psi+\cdots$ and $\thQ\Rinv=O(\psi)$, this gives $\Mdef_0=-\ideW-\big(-[\ideLam,\ideRf_1]\big)$. $\ideW$ is skew, because $\Psi^T\eta\Psi=1$ and $\thQ\eta=0$ give $(\Psi^{-1}\thQ\Psi)^T+\Psi^{-1}\thQ\Psi=0$. $\ideRf_1$ is symmetric: symplecticity gives $\Rm_1=\Rm_1^\dagger$ at order $z$, and in the $\eta$-orthonormal frame $\fid_i$ the adjoint is the transpose; its commutator with the diagonal $\ideLam$ is skew. No rank enters. So $(\Mdef_0)_{-+}=-(\Mdef_0)_{+-}$, and the off-diagonal relation of (Fl6) becomes $(\Delta_+^g-\Delta_-^g)(\Mdef_0)_{+-}=0$.
+
+\emph{(Fl8) Non-degeneracy} (the second place where the target enters). By \cref{lem:ide-ss}, $\Delta_+(0)/\Delta_-(0)=-\alpha_1\alpha_2/(\wA\wB)$ is a non-constant element of $\KCY$. Since $\bbQ$ is algebraically closed in the purely transcendental extension $\KCY=\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1)$, this element is transcendental over $\bbQ$, hence not a root of unity. So $\Delta_+^g-\Delta_-^g$ has the non-zero value $\Delta_-(0)^g\big((\Delta_+(0)/\Delta_-(0))^g-1\big)$ at $\cQ=0$, for every $g\geq 1$, and $(\Mdef_0)_{+-}=0$; with skewness and the vanishing of the diagonal part of a skew matrix, $\Mdef_0=0$. Hence $\Mdef=0$:
+\[
+\thQ\big(\Psi^{-1}\Rinv(\psi)\big)=\Psi^{-1}\frac1\psi\big[H\qprod,\Rinv(\psi)\big]
+\]
+as operators, since both sides agree on $\ideV_0$ and are $\ideFz$-linear.
+
+\emph{(Fl9) The equation.} Take $\eta$-adjoints, with $\Rinv(\psi)^\dagger=\Rm(-\psi)$ (the symplectic condition), $\Psi^\dagger=\Psi^{-1}$ ($\Psi$ is an isometry), $(H\qprod)^\dagger=H\qprod$ (\cref{prop:set-frob}) and $\thQ\eta=0$, so that $\thQ$ commutes with $\dagger$:
+\[
+\thQ\big(\Rm(-\psi)\Psi\big)=\frac1\psi\big(\Rm(-\psi)\,H\qprod-H\qprod\Rm(-\psi)\big)\Psi .
+\]
+Putting $z=-\psi$ gives \cref{eq:ide-flat}. With $H\qprod\Psi=\Psi\ideLam$ and $\thQ\idecan=\ideLam$, \cref{eq:ide-flat} is equivalent to $z\thQ\ideS=H\qprod\ideS$ for $\ideS=\Rm\Psi\re^{\idecan/z}$, the form \cite[Section~1.3, (3)--(5)]{Giv01} of the system. The $\Rm$ here is the one of the legs $\Rm^{-1}(\psi_l)$ of \cite[Def.~2.2]{PPZ15}, so no comparison of conventions is needed. For the rows: by symplecticity and $\eid_i^*=\Delta_i\eta(\eid_i,\cdot)$,
+\[
+\vv_i(x)=\eid_i^*\big(\Rm^{-1}(-z)x\big)=\Delta_i\,\eta\big(\Rm^{-1}(-z)^\dagger\eid_i,x\big)=\Delta_i^{1/2}\,\eta\big(\Rm(z)\fid_i,x\big),
+\]
+so $\Delta_i^{-1/2}\vv_i$ is the $i$-th column of $\Rm(z)\Psi$ lowered by the constant pairing $\eta$. The $i$-th column of \cref{eq:ide-flat} is $z\thQ(\Rm\Psi\mathbf{e}_i)=H\qprod(\Rm\Psi\mathbf{e}_i)-\Lv_i\Rm\Psi\mathbf{e}_i$; lowering by $\eta$ turns $H\qprod$ into $\Aop$, and $z\thQ(\Delta_i^{-1/2}\vv_i)=\Delta_i^{-1/2}\big(z\vv_i'-z\frac{\Delta_i'}{2\Delta_i}\vv_i\big)=\Delta_i^{-1/2}z\Dop_i\vv_i$. This is \cref{eq:ide-roweq}, with the same $z$.
+\end{proof}
+
+Beyond the semisimple Frobenius data ($\Lv_+-\Lv_-$ a unit, for the $\eid_i$, $\Psi$ and the ambiguity lemma; $\Delta_i(0)\neq 0$, for $\fid_i$ and the invertibility of $\ideP$), the target enters only through (Fl4) and (Fl8).
+
+\begin{rmk}[The route through Teleman's Proposition~7.7; not used]
+\label{rmk:ide-tel77}
+Let $\mathsf{sh}\coloneqq\exp(s\thQ)\colon\KCY\lser{\cQ}\to\KCY\lser{\cQ}\fps{s}$ be the ring map $\cQ\mapsto\cQ\re^{s}$. By (Fl4), $\sum_m\frac{s^m}{m!}p^m_*\Omega_{g,n+m}(x,H^m)=\mathsf{sh}(\Omega_{g,n}(x))$. The definition \cite[Def.~7.1]{Tel12} carries the factor $(-1)^m$, so, applying the embedding of \cref{prop:ide-teleman} coefficientwise in $s$, $\mathsf{sh}(\Omega)$ is Teleman's family at $u=-sH$, not at $u=sH$ (against the divisor equation of (Fl4), the one printed in \cite[Example~7.17]{Tel12} has the opposite sign; that printed sign is not relied on). Applying $\mathsf{sh}$ to coefficients gives $\mathsf{sh}(\Rm).\mathsf{sh}(\TFT)=\mathsf{sh}(\Omega)$, so $\mathsf{sh}(\Rm)$ is the datum of this family, unique by \cref{lem:ide-free} over $\bbC\lser{s}$. Equation \cite[(7.7.a)]{Tel12} with $v=-H$ gives at $s=0$ the equation \cref{eq:ide-flat}, and \cite[Prop.~8.2(ii)]{Tel12} along $v=-H$ is $z\thQ\ideS=H\qprod\ideS$. The legs of \cite[(7.6)]{Tel12} carry $\mathbf{E}^{-1}(\psi_i)$ and those of \cite[Def.~2.2]{PPZ15} carry $\Rm^{-1}(\psi_i)$, so in this comparison Teleman's $\mathbf{E}$ is the $\Rm$ of \cite{PPZ15}, with the same $z$. No step of the proof above uses \cite[Prop.~7.7, Prop.~8.2(ii) or Example~7.17]{Tel12}.
+\end{rmk}
+
+\subsection{The rows}
+
+We now construct a second flat symplectic solution from the normalised stationary-phase expansions of \cref{sec:row}. Recall from \cref{def:set-rows} that
+\[
+\rpt_{0,i}(z;t)=\sum_mz^m\wick_m\big(\cW_2(U_i),\cW_3(U_i),\dots\big)
+\]
+is the normalised expansion of $\re^{\cW/z}\dd U/U$ at the root $U_i$ of the critical equation $\Pq(U)=0$ of \eqref{eq:set-P} (\cref{lem:set-crit}), where
+\[
+\cW(U)=\alpha_1\log(1-\cQ U)-\alpha_2\log U+\wA\log(1-U),\quad\cW_k=\thU^k\cW,\quad
+\Lv(U)=-\frac{\alpha_1\cQ U}{1-\cQ U}=\frac{\de\cW}{\de t}\Big|_U ,
+\]
+and the eigenvalues are $\Lv_i=\Lv(U_i)$. At $\cQ=0$ the two roots are labelled by $U_+\to-\alpha_2/\alpha_0$ and $\ideQU\coloneqq\cQ U_-\to\alpha_0/\wB$ (\cref{lem:set-limits}): indeed $\Pq(U)|_{\cQ=0}=-\alpha_0U-\alpha_2$ has the simple root $-\alpha_2/\alpha_0$, and in terms of $\ideQU=\cQ U$ the equation $\cQ\Pq(U)=\wB\ideQU^2-(\alpha_0+\cQ(\alpha_1-\alpha_2))\ideQU-\alpha_2\cQ=0$ reduces at $\cQ=0$ to $\ideQU(\wB\ideQU-\alpha_0)=0$ with the simple root $\alpha_0/\wB$. By Hensel's lemma $U_+$ and $\ideQU$ lie in $\KCY\fps{\cQ}$ (both roots are simple because $\alpha_0\neq 0$). This labelling of the two roots is the one in force in this subsection; the labelling $U_1\to 1$, $U_2\to-\alpha_2/\wB$ at $\cQ\to 1$ of \cref{lem:set-crit} is a different one, and no matching between the two is needed, because the colour sum is symmetric under the exchange of the two roots (\cref{lem:ide-terms}).
+
+\begin{lem}[Normalisation constants at $\cQ=0$]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-norm}
+The $z$-coefficients of $\rpt_{0,\pm}$ lie in $\KCY\fps{\cQ}$, and
+\[
+\rpt_{0,+}(z;\cQ=0)=h_{(\alpha_2,\,-\wA,\,\alpha_0)}(z),\qquad
+\rpt_{0,-}(z;\cQ=0)=h_{(-\alpha_0,\,-\alpha_1,\,\wB)}(z).
+\]
+Hence
+\[
+\frac{h_{\wts_+}}{\rpt_{0,+}(z;0)}=\frac{h_{\wts_-}}{\rpt_{0,-}(z;0)}=\hnw,\qquad\nw=(\alpha_1,\wA,-\epsilon_1,-\epsilon_2),
+\]
+the same scalar at both colours.
+\end{lem}
+\begin{proof}
+At $U_+$: for $k\geq 1$, $\thU^k\log(1-\cQ U)$ is a polynomial without constant term in $\cQ U/(1-\cQ U)$, which lies in $\cQ\KCY\fps{\cQ}$ at $U=U_+$; $\thU\log U=1$ and $\thU^k\log U=0$ for $k\geq 2$; and $\thU^k\log(1-U)$ is a polynomial in $(1-U)^{-1}$, with $(1-U_+)^{-1}\in\KCY\fps{\cQ}$ of value $\alpha_0/\wA$. So every $\cW_k(U_+)$, $k\geq 2$, lies in $\KCY\fps{\cQ}$ and its value at $\cQ=0$ is the $k$-th derivative in $y=\log U$ of $f=a\log U+b\log(1-U)$, $(a,b)=(-\alpha_2,\wA)$, at $U_+(0)=-\alpha_2/\alpha_0=a/(a+b)$, which is the critical point of $f$ (here $a\neq 0$, $b\neq 0$, $a+b=\alpha_0\neq 0$). At $U_-$: write $\cW(U)=\alpha_1\log(1-\ideQU)-\alpha_2\log\ideQU+\alpha_2\log\cQ+\wA\log(1-\ideQU/\cQ)$ with $\ideQU=\cQ U$, and $\thU=\theta_{\ideQU}$; at $\ideQU=\ideQU(\cQ)\in\KCY\fps{\cQ}$ with $\ideQU(0)=\alpha_0/\wB\neq 0$, one has $\theta_{\ideQU}\log(1-\ideQU/\cQ)=\ideQU/(\ideQU-\cQ)\in\KCY\fps{\cQ}$ with value $1$, and $\theta_{\ideQU}^{k}\log(1-\ideQU/\cQ)=\theta_{\ideQU}^{k-1}\big(\ideQU/(\ideQU-\cQ)\big)\in\cQ\KCY\fps{\cQ}$ for $k\geq 2$; further $(1-\ideQU)^{-1}\in\KCY\fps{\cQ}$ with value $\wB/\alpha_1$. So $\cW_k(U_-)$ lies in $\KCY\fps{\cQ}$ for $k\geq 2$, and its value at $\cQ=0$ is the $k$-th derivative in $\log\ideQU$ of $\alpha_1\log(1-\ideQU)$, which for $k\geq 2$ is also that of $f=a\log\ideQU+b\log(1-\ideQU)$, $(a,b)=(\alpha_0,\alpha_1)$, at $\ideQU(0)=\alpha_0/\wB=a/(a+b)$, the critical point of $f$ (the critical equation $\cW_1(U_-)=0$ reads, at $\cQ=0$, $\alpha_0+\alpha_1\theta_{\ideQU}\log(1-\ideQU)=0$; here $a,b,a+b=\wB$ are non-zero). In both cases $\cW_2\to-a(a+b)/b\neq 0$ (for $f(y)=ay+b\log(1-\re^y)$ one has $f''=-b\re^y/(1-\re^y)^2$, and at $\re^y=a/(a+b)$ this is $-a(a+b)/b$). By the Wick form (D1) of \cref{def:row-Lnorm} and the characterisation of $\wick_m$ as a polynomial in $\cW_2^{-1},\cW_3,\dots$ (\cref{def:set-rows}), each $z$-coefficient of $\rpt_{0,\pm}$ lies in $\KCY\fps{\cQ}$ and its value at $\cQ=0$ is the corresponding coefficient of $\Lnorm[f,1;y_0]$ in the variable $y=\log U$ at the critical point $y_0=\log(a/(a+b))$. By \cref{lem:row-betaphase}, applied with $(a,b)=(-\alpha_2,\wA)$ and with $(a,b)=(\alpha_0,\alpha_1)$ (in both cases $ab(a+b)\neq 0$ in $\KCY$), this limit is $h_{(-a,-b,a+b)}$, which gives the two displayed values. Finally, as multisets, $\wts_+=(\alpha_0,\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2)=\nw+(\alpha_2,-\wA,\alpha_0)$ and $\wts_-=(-\alpha_0,\wB,\wA,-\epsilon_1,-\epsilon_2)=\nw+(-\alpha_0,-\alpha_1,\wB)$, so $h_{\wts_+}=\hnw h_{(\alpha_2,-\wA,\alpha_0)}$ and $h_{\wts_-}=\hnw h_{(-\alpha_0,-\alpha_1,\wB)}$ by $h_{\mathsf{u}+\mathsf{v}}=h_{\mathsf{u}}h_{\mathsf{v}}$ (\cref{def:set-rows}).
+\end{proof}
+
+Define the rows with the constant,
+\[
+\rZ_{0,i}\coloneqq\hnw\,\rpt_{0,i},\qquad \rZ_{1,i}\coloneqq(\Lv_i+z\Dop_i)\,\rZ_{0,i},\qquad i=\pm,
+\]
+and let $\RZ$ be the endomorphism with $\eid_i^*\circ\RZ^{-1}(-z)=(\rZ_{0,i},\rZ_{1,i})$, $i=\pm$: it exists and is unique since $\eid_\pm^*$ is a basis of the dual, and $\RZ(0)=1$ because $\rZ_{0,i}[0]=1$, $\rZ_{1,i}[0]=\Lv_i$, that is, $(\rZ_{0,i},\rZ_{1,i})|_{z=0}=(1,\Lv_i)=\chiv_i=\eid_i^*$.
+
+\begin{prop}[The rows form a flat unitary solution]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-rows}
+\begin{enumerate}
+\item (Frobenius data.) $\Lv_i=\Lv(U_i)=\thQ u_i$ for $u_i\coloneqq\cW(U_i)$; $U_i/(1-U_i)=(\Lv_i-\alpha_2)/\wA$; and \cref{eq:ide-Delta} holds.
+\item (Row~2 of the quantum differential equation.) With $\dd/\dd t=\thQ$ at fixed $U$ and
+\begin{equation}
+\label{eq:ide-PF}
+\idePF\coloneqq z^2(\cQ-1)\Big(\frac{\dd}{\dd t}\Big)^2-z\big(\alpha_0+(\alpha_1+\alpha_2)\cQ\big)\frac{\dd}{\dd t}+\alpha_1\alpha_2\cQ
+=(\cQ-1)\Big[\Big(z\frac{\dd}{\dd t}\Big)^2-(\Lv_++\Lv_-)\,z\frac{\dd}{\dd t}+\Lv_+\Lv_-\Big],
+\end{equation}
+Euler's integration by parts is the identity in $U$ and $\cQ$
+\begin{equation}
+\label{eq:ide-euler}
+\idePF\,\re^{\cW/z}=\thU\big(\idekm\,\re^{\cW/z}\big),\qquad\idekm\coloneqq-z\alpha_1\cQ\,\frac{1-U}{1-\cQ U},
+\end{equation}
+and consequently $z\Dop_i(\rZ_{0,i},\rZ_{1,i})=(\Aop-\Lv_i)(\rZ_{0,i},\rZ_{1,i})$, as an identity in $\KCY(\Ccov)\fps{z}$ (\cref{lem:ide-terms}) and in $\KCY\fps{\cQ}\fps{z}$.
+\item ($\cQ=0$.) The rows lie in $\KCY\fps{\cQ}\fps{z}^2$, and $(\rZ_{0,i},\rZ_{1,i})|_{\cQ=0}=h_{\wts_i}(z)\,(1,\Lv_i(0))$: that is, $\RZ|_{\cQ=0}=\mathrm{diag}(h_{\wts_+},h_{\wts_-})$ on the idempotents $\eid_\pm(0)$.
+\item (Symplecticity.) $\langle\vv^Z_+(z),\vv^Z_-(-z)\rangle=0$ and $\langle\vv^Z_i(z),\vv^Z_i(-z)\rangle=\Delta_i$, where $\vv^Z_i=(\rZ_{0,i},\rZ_{1,i})$ and $\langle\ ,\ \rangle$ is the pairing of covectors by $\eta^{-1}$. Hence $\RZ$ is symplectic, $\RZ\Psi\re^{\idecan/z}$ is a unitary fundamental solution of the quantum differential equation, and
+\[
+\Rm=\RZ\,\Psi\exp\Big(\mathrm{diag}\sum_{k\geq 1}a_k^{(i)}z^{2k-1}\Big)\Psi^{-1}\qquad\text{with constants }a_k^{(i)}\in\ideKt .
+\]
+\end{enumerate}
+\end{prop}
+\begin{proof}
+(i) $\de_t\cW|_U=\alpha_1\thQ\log(1-\cQ U)=-\alpha_1\cQ U/(1-\cQ U)=\Lv(U)$, and at a root $U_i$ of $\Pq$, which is the critical equation $\thU\cW=0$ (\cref{lem:set-crit}), $\thQ u_i=\de_t\cW|_{U_i}+\cW_1(U_i)\thQ\log U_i=\Lv(U_i)$. The critical equation is $\cW_1=\Lv(U)-\alpha_2-\wA U/(1-U)=0$, which gives $U_i/(1-U_i)=(\Lv_i-\alpha_2)/\wA$. That $\Lv(U_\pm)$ are the eigenvalues $\Lv_\pm$ of $H\qprod$ is \cref{lem:set-eig}(ii); directly, $\Lv(U)=(\wB U+\alpha_2)/\tau$ modulo $\Pq$ (\cref{lem:set-crit}(iii)) and $\tau^2\cQ\big[\Lv(U)^2-(\Lv_++\Lv_-)\Lv(U)+\Lv_+\Lv_-\big]=\wB\,\Pq(U)$ identically in $U$, with the sum and product of \cref{lem:ide-g0}. For \cref{eq:ide-Delta}: $\eta(\eid_i,\eid_i)=\eta(\eid_i,\ideone)=\big(\eta(H,\ideone)-\Lv_j\eta(\ideone,\ideone)\big)/(\Lv_i-\Lv_j)=(\alpha_1\alpha_2-E\Lv_j)/\big(\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2(\Lv_i-\Lv_j)\big)$ by the values $\eta(\ideone,\ideone)=E/(\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2)$, $\eta(\ideone,H)=1/(\wA\wB\epsilon_1\epsilon_2)$ of \cref{lem:ide-fixed}(iii); the identity $(\alpha_1\alpha_2-E\Lv_+)(\alpha_1\alpha_2-E\Lv_-)=\alpha_1^2\alpha_2^2-E\alpha_1\alpha_2(\Lv_++\Lv_-)+E^2\Lv_+\Lv_-=\alpha_1\alpha_2(\alpha_1\alpha_2+\alpha_0E)=\alpha_1\alpha_2\wA\wB$ turns the inverse into $\epsilon_1\epsilon_2(\Lv_i-\Lv_j)(\alpha_1\alpha_2-E\Lv_i)$, and $\Lv_j=E/\tau-\alpha_0-\Lv_i$, $\Lv_i\Lv_j=\alpha_1\alpha_2/\tau$ give the first form. For the third form, $\cW_2=\thU\cW_1=-\alpha_1\cQ U/(1-\cQ U)^2-\wA U/(1-U)^2$; with $-\alpha_1\cQ U/(1-\cQ U)^2=\Lv(1+\cQ U/(1-\cQ U))=\Lv-\Lv^2/\alpha_1$ and $-\wA U/(1-U)^2=-\wA\,\frac{U}{1-U}\big(1+\frac{U}{1-U}\big)=-(\Lv-\alpha_2)(\Lv+\alpha_0)/\wA$ at $U_i$, one gets $\alpha_1\wA\cW_2(U_i)=\alpha_1\wA\Lv_i-\wA\Lv_i^2-\alpha_1(\Lv_i-\alpha_2)(\Lv_i+\alpha_0)=-E\Lv_i^2+2\alpha_1\alpha_2\Lv_i+\alpha_0\alpha_1\alpha_2$, as $\wA+\alpha_1=E$ and $\wA-\alpha_0+\alpha_2=2\alpha_2$. \draftnote{Compare BS, Appendix A, for the Frobenius data of the conifold at generic weights.}
+
+(ii) \emph{The identity \cref{eq:ide-euler}.} Divide both sides by $\re^{\cW/z}$. On the left, with $\de_t\cW=\Lv(U)$ and $\de_t^2\cW=\thQ\Lv(U)=-\alpha_1\cQ U/(1-\cQ U)^2=\Lv(U)/(1-\cQ U)$,
+\[
+\re^{-\cW/z}\idePF\re^{\cW/z}=(\cQ-1)\Big[\Lv^2+\frac{z\Lv}{1-\cQ U}\Big]-\big(\alpha_0+(\alpha_1+\alpha_2)\cQ\big)\Lv+\alpha_1\alpha_2\cQ .
+\]
+On the right, $\re^{-\cW/z}\thU(\idekm\re^{\cW/z})=\thU\idekm+\idekm\cW_1/z$, with
+\[
+\thU\idekm=-z\alpha_1\cQ U\,\frac{-(1-\cQ U)+\cQ(1-U)}{(1-\cQ U)^2}=-z\alpha_1\cQ U\,\frac{\cQ-1}{(1-\cQ U)^2}=(\cQ-1)\frac{z\Lv}{1-\cQ U},
+\]
+and, writing $\alpha_1\cQ/(1-\cQ U)=-\Lv/U$,
+\[
+\frac{\idekm\cW_1}{z}=-\alpha_1\cQ\frac{1-U}{1-\cQ U}\Big[\Lv-\alpha_2-\wA\frac{U}{1-U}\Big]=\Lv^2\frac{1-U}{U}-\alpha_2\Lv\frac{1-U}{U}-\wA\Lv .
+\]
+The $z$-terms agree, and the difference of the $z^0$-terms, multiplied by $U$, is
+\begin{multline*}
+\Lv^2\big((\cQ-1)U-(1-U)\big)+\Lv\big(-(\alpha_0+(\alpha_1+\alpha_2)\cQ)U+\alpha_2(1-U)+\wA U\big)+\alpha_1\alpha_2\cQ U\\
+=-(1-\cQ U)\Lv^2+\alpha_2(1-\cQ U)\Lv-\alpha_1\cQ U\Lv+\alpha_1\alpha_2\cQ U,
+\end{multline*}
+using $-\alpha_0U-\alpha_2U+\wA U=0$. This equals $(\alpha_2-\Lv)\big((1-\cQ U)\Lv+\alpha_1\cQ U\big)=0$, by the definition of $\Lv(U)$. So \cref{eq:ide-euler} holds identically in $U$ and $\cQ$, not only at the critical points.
+
+\emph{Row~2.} Fix complex weights in (ND) and a complex $\cQ_0\notin\{0,1,\infty\}$ with $\Disc(\cQ_0)\neq 0$. Then the two roots are distinct, hence simple, and lie outside $\{0,1,1/\cQ\}$, by $U_+U_-=-\alpha_2/(\wB\cQ)$ and $\Pq(1)=\wA(\cQ-1)$, $\Pq(1/\cQ)=\alpha_1(1-\cQ)/\cQ$ (\cref{lem:set-crit}); each $U_i(\cQ)$ is analytic near $\cQ_0$, $y_i\coloneqq\log U_i$ is defined, and $\cW^y(y;t)\coloneqq\cW(\re^y)$ is analytic near $(y_i,t_0)$ with $\de_y^k\cW^y(y_i)=\cW_k(U_i)$, $\de_y\cW^y(y_i)=0$ and $\de_y^2\cW^y(y_i)=\cW_2(U_i)\neq 0$ (by \cref{eq:ide-Delta}, $\cW_2(U_i)=0$ would force $\Lv_i=\Lv_j$ or $\alpha_1\alpha_2-E\Lv_i=0$, and the latter is excluded by $(\alpha_1\alpha_2-E\Lv_+)(\alpha_1\alpha_2-E\Lv_-)=\alpha_1\alpha_2\wA\wB\neq 0$). In the coordinate $y$ the integrand is $\re^{\cW^y/z}\dd y$ with amplitude $1$, so $\rpt_{0,i}=\Lnorm[\cW^y,1;y_i]$ by (D1) of \cref{def:row-Lnorm} and the Wick form of $\rpt_{0,i}$ (this is step~(1) of the proof of \cref{prop:row-wickrow}). Now \cref{prop:row-P2} (the parameter derivative with a moving expansion point, with the parameter $t$ in place of $\tau$, the coordinate $y$ in place of $s$ and the critical point $y_i(t)$) gives, for every amplitude $q(t,y)$ which is a Laurent polynomial in $z$ with coefficients analytic near $(t_0,y_i(t_0))$,
+\[
+\Big(\frac{\dd}{\dd t}+\frac{\thQ u_i}{z}-\frac{\thQ\cW_2(U_i)}{2\cW_2(U_i)}\Big)\Lnorm[\cW^y,q;y_i]=\Lnorm\Big[\cW^y,\ \de_tq+\frac{q\,\de_t\cW^y}{z};y_i\Big],
+\]
+where $u_i=\cW^y(y_i)$ is the critical value and $\de_t\cW^y=\Lv(\re^y)$. By (i) and \cref{eq:ide-Delta}, $\thQ u_i=\Lv_i$ and $\thQ\cW_2(U_i)/\cW_2(U_i)=\Delta_i'/\Delta_i$, so the operator on the left is $z^{-1}(\Lv_i+z\Dop_i)$. Applying it twice to $\rpt_{0,i}$ (first with $q=1$, which gives the amplitude $\Lv(\re^y)/z$, then with $q=\Lv(\re^y)/z$, which gives $\thQ\Lv(\re^y)/z+\Lv(\re^y)^2/z^2$), and using the linearity (D3) of $\Lnorm$ over functions independent of $y$,
+\begin{align*}
+\Big[(\Lv_i+z\Dop_i)^2-(\Lv_++\Lv_-)(\Lv_i+z\Dop_i)+\Lv_+\Lv_-\Big]\rpt_{0,i}
+&=\Lnorm\big[\cW^y,\ z\thQ\Lv+\Lv^2-(\Lv_++\Lv_-)\Lv+\Lv_+\Lv_-;\,y_i\big]\\
+&=\frac{1}{\cQ-1}\Lnorm\big[\cW^y,\ \re^{-\cW/z}\idePF\re^{\cW/z};\,y_i\big],
+\end{align*}
+by \cref{eq:ide-PF}. By \cref{eq:ide-euler} the amplitude is $\thU\idekm+\idekm\cW_1/z=\de_y\idekm(\re^y)+\idekm(\re^y)\,\de_y\cW^y/z$, the amplitude of the total derivative $\de_y(\re^{\cW^y/z}\idekm(\re^y))$, with $\idekm(\re^y)$ analytic near $y_i$ because $1-\cQ U_i\neq 0$. By \cref{prop:row-P3} its normalised expansion vanishes. Since $\hnw$ does not depend on $t$, the same identity holds for $\rZ_{0,i}=\hnw\rpt_{0,i}$, and with $\rZ_{1,i}=(\Lv_i+z\Dop_i)\rZ_{0,i}$ it reads
+\[
+z\Dop_i\rZ_{1,i}=\Lv_j\big(\rZ_{1,i}-\Lv_i\rZ_{0,i}\big),\qquad j\neq i,
+\]
+which, together with $z\Dop_i\rZ_{0,i}=\rZ_{1,i}-\Lv_i\rZ_{0,i}$ (the definition of $\rZ_{1,i}$), is $z\Dop_i\vv^Z_i=(\Aop-\Lv_i)\vv^Z_i$ componentwise: $(\Aop a)_0=a_1$ and $(\Aop a)_1=-\Lv_+\Lv_-a_0+(\Lv_++\Lv_-)a_1$, so $((\Aop-\Lv_i)\vv_i^Z)_1=-\Lv_i\Lv_j\rZ_{0,i}+\Lv_j\rZ_{1,i}$. The $z$-coefficients of both sides are, for indeterminate weights, elements of $\KCY(\Ccov)$ (\cref{lem:ide-terms}, whose proof uses only the definitions), and they agree as analytic functions of $\cQ$ near every $\cQ_0$ as above at every complex weight point of (ND); by the principle (P) of \cref{lem:set-rings}, in the form: an element of $\KCY(\Ccov)$ vanishes if its evaluations at all complex weights with (ND) and all complex $\cQ$ in an open set vanish, the identity holds in $\KCY(\Ccov)\fps{z}$, hence, expanding at either point of $\Ccov$ over $\cQ=0$, in $\KCY\fps{\cQ}\fps{z}$. \draftnote{The sources state the conclusion ``at every $\cQ$ with distinct roots not in $\{0,1,1/\cQ\}$''; the passage to the function field is the principle (P), applied here with the parameter $t$ in place of $\tau$. To be checked that \cref{prop:row-P2} is stated in \cref{sec:row} with a general parameter, as in its source.} This is also the argument of \cref{thm:lea-row2reg}, Steps C--D, with Gauss's operator replaced by $\idePF$.
+
+(iii) By the proof of \cref{lem:ide-norm}, every $\cW_k(U_\pm)$, $k\geq 2$, lies in $\KCY\fps{\cQ}$ and $\cW_2(U_\pm)$ is a unit there; so the $z$-coefficients of $\rpt_{0,\pm}$, polynomials in $\cW_2^{-1},\cW_3,\dots$, lie in $\KCY\fps{\cQ}$. Further $\Lv_+=-\alpha_1\cQ U_+/(1-\cQ U_+)\in\cQ\KCY\fps{\cQ}$, $\Lv_-=-\alpha_1\ideQU/(1-\ideQU)\in\KCY\fps{\cQ}$ with value $-\alpha_1(\alpha_0/\wB)/(\alpha_1/\wB)=-\alpha_0$, and $\Delta_\pm\in\KCY\fps{\cQ}$ with the non-zero values $\eul(\wts_\pm)$ (\cref{lem:ide-ss}), so $\Delta_i'/\Delta_i\in\KCY\fps{\cQ}$ and $\rZ_{1,i}=(\Lv_i+z\Dop_i)\rZ_{0,i}$ has coefficients in $\KCY\fps{\cQ}$. At $\cQ=0$ the derivation $\thQ=\cQ\,\dd/\dd\cQ$ vanishes, so $\rZ_{1,i}(z;0)=\Lv_i(0)\rZ_{0,i}(z;0)$, and $\rZ_{0,i}(z;0)=\hnw\rpt_{0,i}(z;0)=h_{\wts_i}$ by \cref{lem:ide-norm}. Since $\eid_i^*(0)=(1,\Lv_i(0))$, this says $\eid_i^*\circ\RZ^{-1}(-z)|_{\cQ=0}=h_{\wts_i}(z)\eid_i^*$, that is, $\RZ^{-1}(-z)|_{\cQ=0}=\mathrm{diag}(h_{\wts_i}(z))$ on the $\eid_i(0)$, and $h_{\wts_i}(z)^{-1}=h_{\wts_i}(-z)$ gives $\RZ|_{\cQ=0}=\mathrm{diag}(h_{\wts_i})$.
+
+(iv) Write $\vv_i=\vv^Z_i$ and $\ideY(z)\coloneqq\langle\vv_+(z),\vv_-(-z)\rangle\in\KCY\fps{\cQ}\fps{z}$. The pairing has constant coefficients, so $\dd\langle a,b\rangle/\dd t=\langle a',b\rangle+\langle a,b'\rangle$, and $\Aop$ is self-adjoint for it because $H\qprod$ is $\eta$-self-adjoint (\cref{prop:set-frob}). From (ii), $z\vv_i'=(\Aop-\Lv_i+z\frac{\Delta_i'}{2\Delta_i})\vv_i$, and replacing $z$ by $-z$, $z\,\vv_-(-z)'=-(\Aop-\Lv_-)\vv_-(-z)+z\frac{\Delta_-'}{2\Delta_-}\vv_-(-z)$. Hence
+\begin{align*}
+z\ideY'&=\langle(\Aop-\Lv_+)\vv_+,\vv_-(-z)\rangle-\langle\vv_+,(\Aop-\Lv_-)\vv_-(-z)\rangle+\frac z2\Big(\frac{\Delta_+'}{\Delta_+}+\frac{\Delta_-'}{\Delta_-}\Big)\ideY\\
+&=\Big[(\Lv_--\Lv_+)+\frac z2\Big(\frac{\Delta_+'}{\Delta_+}+\frac{\Delta_-'}{\Delta_-}\Big)\Big]\ideY .
+\end{align*}
+Write $\ideY=\sum_n\ideY_nz^n$ with $\ideY_n\in\KCY\fps{\cQ}$. At $z^0$: $(\Lv_--\Lv_+)\ideY_0=0$, so $\ideY_0=0$ since $\Lv_+-\Lv_-$ is a unit; at $z^n$: $\ideY_{n-1}'=(\Lv_--\Lv_+)\ideY_n+\frac12(\ldots)\ideY_{n-1}$, so $\ideY_{n-1}=0$ implies $\ideY_n=0$. Thus $\ideY=0$. Likewise, writing $\langle\vv_i(z),\vv_i(-z)\rangle=\Delta_i\,\mathsf{K}_i(z)$ (so that $\mathsf{K}_1,\mathsf{K}_2$ are the symplectic constants $\Kone,\Ktwo$ of \cref{def:set-factors}), the terms in $\Aop-\Lv_i$ cancel and $z(\Delta_i\mathsf{K}_i)'=z\frac{\Delta_i'}{\Delta_i}\Delta_i\mathsf{K}_i$, so $\mathsf{K}_i'=0$ and $\mathsf{K}_i$ is independent of $\cQ$; its value at $\cQ=0$ is, by (iii), $h_{\wts_i}(z)h_{\wts_i}(-z)\langle\chiv_i,\chiv_i\rangle/\Delta_i$ at $\cQ=0$, and $\langle\chiv_i,\chiv_i\rangle=\epsilon_1\epsilon_2(\alpha_0\alpha_1\alpha_2+2\alpha_1\alpha_2\Lv_i-E\Lv_i^2)=\Delta_i$ by the pairing of \cref{prop:set-frob} and \cref{eq:ide-Delta}, while $h_{\wts_i}(z)h_{\wts_i}(-z)=1$. So $\mathsf{K}_i=1$. In terms of $\RZ$: $\langle\vv_i(z),\vv_j(-z)\rangle=\Delta_i\Delta_j\,\eta\big(\RZ^{-1}(z)\RZ^{-1}(-z)^\dagger\eid_i,\eid_j\big)$, so the two identities say $\RZ^{-1}(z)\RZ^{-1}(-z)^\dagger=1$, which is the symplectic condition. Then, exactly as in (Fl9), $\vv_i=\Delta_i^{1/2}\eta(\RZ(z)\fid_i,\cdot)$ and the row equations of (ii) are the columns of \cref{eq:ide-flat} for $\RZ$, lowered by $\eta$; so $\RZ$ is a flat symplectic solution with $\RZ(0)=1$, and $\RZ\Psi\re^{\idecan/z}$ is a unitary fundamental solution. By \cref{prop:ide-flat} the same holds for $\Rm$, and \cref{lem:ide-ambig} gives the last statement.
+\end{proof}
+
+\subsection{The constants}
+
+\begin{prop}[$\Rm=\RZ$]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-const}
+The constants of \cref{prop:ide-rows}(iv) vanish: $\Rm=\RZ$. Consequently, for $g\geq 2$, $\sF_g=\int_{\Mbar_g}\Omega_{g,0}$ is the point-frame graph sum for the rows $\vv^Z_i=(\rZ_{0,i},\rZ_{1,i})$, that is, the sum \cref{eq:set-graphsum} with the vertex class $\Hg_{\bw}$ replaced by $1$ and the factors $\Delta_i$, $\Dil_i(d)$, $\Edge_{ij}(a,b)$ of \cref{def:set-factors} computed from the rows $\vv^Z_i$.
+\end{prop}
+\begin{proof}
+\emph{Reduction at $\cQ=0$.} Write $\idesp_p\coloneqq\exp\sum_ka_k^{(p)}z^{2k-1}$, $p=\pm$. The objects $\Rm$, $\Rm^{-1}$, $\eid_i$, $\Delta_i^{\pm1}$ and $\eta^{-1}$ are regular at $\cQ=0$ (\cref{prop:ide-rows}(iii), (iv), \cref{lem:ide-ss}), and the graph sum $\Rm.\TFT$ is polynomial in them, so $\Omega|_{\cQ=0}=\Rm|_{\cQ=0}.\TFT|_{\cQ=0}$ with $\Rm|_{\cQ=0}=\mathrm{diag}(h_{\wts_p}\idesp_p)$ on the $\eid_p(0)$ by \cref{prop:ide-rows}(iii), (iv). A diagonal R-matrix has diagonal edges, so every graph is monochromatic, and by $\sum_v(g_v-1)+|\Edg(\Gamma)|=g-1$ the $(\eid_p,\dots,\eid_p)$ component of $\Rm|_{\cQ=0}.\TFT|_{\cQ=0}$ is $\Delta_p(0)^{g-1}\big((h_{\wts_p}\idesp_p).\ideone\big)_{g,n}$, while mixed insertions vanish.
+
+\emph{Constant maps.} At $\cQ=0$ only constant maps contribute: the $\TCY$-fixed loci of $\Mbar_{g,n}(Z,0)=\Mbar_{g,n}\times Z$ are $\Mbar_{g,n}\times\{p_\pm\}$, with virtual class $[\Mbar_{g,n}]$ and virtual normal bundle $T_pZ-\Hdg^\vee\otimes T_pZ$; by \cite{GP99}, with $e(\Hdg^\vee\otimes\bbC_w)=\Lamv(w)$ and $e(T_pZ)=\eul(\wts_p)=\prod_{w\in\wts_p}w$,
+\[
+\Omega_{g,n}(\eid_p,\dots,\eid_p)|_{\cQ=0}=\frac{\prod_{w\in\wts_p}\Lamv(w)}{\eul(\wts_p)}=\eul(\wts_p)^{g-1}\,\Hg_{\wts_p},
+\]
+mixed insertions vanish because $\eid_p|_{q}=\delta_{pq}$, and $\Delta_p(0)=\eul(\wts_p)$ (\cref{lem:ide-ss}). Comparing the two descriptions, and using $\Hg_{\wts_p}=h_{\wts_p}.\ideone$ (\cref{lem:ide-mumford}) and the group property \cite[Prop.~2.14]{PPZ15}, $(h_{\wts_p}\idesp_p).\ideone=h_{\wts_p}.(\idesp_p.\ideone)$, we get $\idesp_p.\ideone=\ideone$ for all stable $(g,n)$ with $n\geq 1$.
+
+\emph{Induction.} Suppose $\idesp_p\neq 1$ and let $k$ be minimal with $a_k^{(p)}\neq 0$. Work on $\Mbar_{k,1}$ with the insertion $\eid_p$: on $\Mbar_k$, which has no marking, $\Omega_{k,0}$ is a sum over the colours and one colour cannot be separated. By the flat unit, $(\idesp_p.\ideone)_{k,1}=\pi^*(\idesp_p.\ideone)_{k,0}$, and the degree-$(2k-1)$ part of $(\idesp_p.\ideone)_{k,1}$ is, by \cref{lem:ide-mumford}, $a_k^{(p)}\frac{(2k)!}{B_{2k}}\mathrm{ch}_{2k-1}(\Hdg)$ on $\Mbar_{k,1}$, which is non-zero by \cref{lem:ide-ch} (for $k\geq 2$ because $\pi^*\colon H^*(\Mbar_k;\bbQ)\to H^*(\Mbar_{k,1};\bbQ)$ is injective, $\pi_*(\psi_1\pi^*y)=(2k-2)y$; for $k=1$ directly on $\Mbar_{1,1}$). This contradicts $\idesp_p.\ideone=\ideone$. So $a^{(p)}_k=0$ for all $k$ and $\Rm=\RZ$.
+
+\emph{The graph sum.} Integrating $\Omega_{g,0}=\RZ.\TFT$ over $\Mbar_g$ gives a sum over the connected stable graphs of genus $g$ without legs, in which the vertex at $v$ with colour $i$ contributes $\TFT(\eid_i^{\otimes N})=\Delta_i^{g_v-1}$ integrated against the psi classes, the translation leg at a colour-$i$ vertex contributes $\eid_i^*(\ideT(\psi))=\psi\big(1-\eid_i^*(\RZ^{-1}(\psi)\ideone)\big)=\psi\big(1-\rZ_{0,i}(-\psi)\big)=\sum_{d\geq 2}\Dil_i(d)\psi^d$ (the terms $\psi^0,\psi^1$ cancel because $\rZ_{0,i}[0]=1$, and $\Dil_i(d)=(-1)^d\rZ_{0,i}[d-1]$), and the edge between colours $i,j$ contributes
+\[
+\frac{\Delta_i\delta_{ij}-\langle\vv_i(-z),\vv_j(-w)\rangle}{z+w}=\Edge_{ij}(z,w),
+\]
+because $(\eid_i^*\otimes\eid_j^*)(\eta^{-1})=\Delta_i\delta_{ij}$ and $(\eid_i^*\otimes\eid_j^*)\big((\RZ^{-1}(z)\otimes\RZ^{-1}(w))\eta^{-1}\big)=\sum_k\Delta_k\,\vv_i(-z)(\eid_k)\vv_j(-w)(\eid_k)=\langle\vv_i(-z),\vv_j(-w)\rangle$, and by the symplecticity (iv) this is the edge factor of \cref{lem:set-edgegen}, $\Edge_{ij}(z,w)=[\Pij_{ij}(z,w)-\Pij_{ij}(-w,w)]/(z+w)$ with $\Pij_{ij}(-w,w)=-\langle\vv_i(w),\vv_j(-w)\rangle=-\Delta_i\delta_{ij}$. With the decorations of \cref{def:set-graphsum} (exponents on half-edges, ordered tuples of dilaton degrees $d\geq 2$ with weight $1/m_v!$) this is the point-frame sum. (This is Givental's formula \cite[(1), (6), (7)]{Giv01}, with the vertex weights $\Delta_i^{g_v-1}$, the dilaton leaves $T^i_d$, $d\geq 2$, and the edges $\Delta_i^{1/2}\Delta_j^{1/2}V^{ij}$, written in terms of the rows $\vv_i=\Delta_i^{1/2}\re^{-u_i/z}\,\eta(\ideS\mathbf{e}_i,\cdot)$.)
+\end{proof}
+
+\subsection{Frame B}
+
+\begin{prop}[The frame-B rows]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-frameB}
+Let $\RB\coloneqq\RZ\hw^{-1}$ with $\bw=(E,-\epsilon_1,-\epsilon_2)$, whose rows are $\eid_i^*\circ\RB^{-1}(-z)=\hw(z)^{-1}\vv^Z_i=(\rr_{0,i},\rr_{1,i})$, the frame-B rows of \cref{def:set-rows}. Then, for $g\geq 2$, $\sF_g$ is the Hodge-vertex graph sum \cref{eq:ide-main} with vertex class $\Hg_{\bw}$ and the factors computed from the rows $(\rr_{0,i},\rr_{1,i})$. The exponent $-1$ is derived, not chosen.
+\end{prop}
+\begin{proof}
+By \cref{lem:ide-mumford}, $\Hg_{\bw}=\hw.\ideone$ as rank-one theories, where $\hw$ is a scalar series (the same at both idempotents) with $\hw(z)\hw(-z)=1$, hence a symplectic R-matrix. Since $\hw$ is scalar, the legs, edges and translations of the graph sum defining $\hw.\TFT$ are those of $\hw.\ideone$ multiplied by the identity, respectively by the bivector $\eta^{-1}$ and the unit; by the gluing and unit axioms of $\TFT$ the vertex values reassemble, on each stable graph, to the pull-back of $\TFT_{g,n}$ along the gluing map, and the projection formula gives $(\hw.\TFT)_{g,n}=(\hw.\ideone)_{g,n}\,\TFT_{g,n}=(\Hg_{\bw}\otimes\TFT)_{g,n}$. \draftnote{The sources state ``$\Hg_{\bw}\otimes\TFT=\hw.\TFT$ ($\hw$ is scalar)'' in one phrase; the projection-formula sentence is the expansion of that phrase, to be checked.} By the group property \cite[Prop.~2.14]{PPZ15},
+\[
+\RB.(\Hg_{\bw}\otimes\TFT)=\RB.(\hw.\TFT)=(\RB\hw).\TFT=\RZ.\TFT=\Omega .
+\]
+Integrated over $\Mbar_g$, the right side is $\sF_g$ by \cref{prop:ide-const}. The left side is the graph sum of \cref{prop:ide-const}, last paragraph, for the rows of $\RB$, with the vertex values $\Delta_i^{g_v-1}\Hg_{\bw}$ in place of $\Delta_i^{g_v-1}$: this is \cref{eq:ide-main}, the sum \cref{eq:set-graphsum} with the vertex class $\Hg_{\bw}$ and the frame-B factors of \cref{def:set-factors}, which are computed from the rows $\eid_i^*\circ\RB^{-1}(-z)$. Finally, right multiplication of an R-matrix by the scalar $\hw^s$ multiplies the rows by $\hw(z)^s$: $\eid_i^*\circ(\RZ\hw^s)^{-1}(-z)=\hw(-z)^{-s}\,\eid_i^*\circ\RZ^{-1}(-z)=\hw(z)^s\vv^Z_i$, by $\hw(z)\hw(-z)=1$. So the rows of $\RB=\RZ\hw^{-1}$ are $\hw^{-1}\vv_i^Z=\hw^{-1}\hnw(\rpt_{0,i},(\Lv_i+z\Dop_i)\rpt_{0,i})$, which are the frame-B rows of \cref{def:set-rows}, since $\Lv_i+z\Dop_i$ is linear over $\bbC\fps{z}$ with $t$-independent coefficients and so commutes with the multiplication by $\hw^{-1}\hnw$; and $\hw^{-1}\hnw=h_{(\alpha_1,\wA,-E)}$ by \cref{lem:set-hmult}.
+\end{proof}
+
+\subsection{The coloured terms as elements of the function field}
+
+\begin{lem}[Description of the coloured terms]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-terms}
+Let $\Ccov$ be the double cover $\ydc^2=\Disc(\cQ)$ of $\bbP^1_{\cQ}$, with function field $\KCY(\Ccov)=\KCY(\cQ)[U]/(\Pq(U))$, so that $2\wB\cQ U-(\alpha_0+\cQ(\alpha_1-\alpha_2))=\pm\ydc$ (\cref{lem:set-disc}(v)); the two colours are the two roots of $\Pq$, exchanged by the deck involution of $\Ccov$. Then:
+\begin{enumerate}
+\item every $z$-coefficient of $\rr_{0,i}$, $\rr_{1,i}$, every $\Dil_i(d)$, every $\Edge_{ij}(a,b)$ and $\Delta_i^{\pm1}$ is an element of $\KCY(\Ccov)$, whose denominators are products of powers of $\cW_2(U_i)$, $1-U_i$, $1-\cQ U_i$, $\ydc$, $\wB\cQ$ and the constants $\alpha_1,\wA,\epsilon_1,\epsilon_2,E$;
+\item hence, for $g\geq 2$, each coloured term $\GCont(\Gamma,\col)$ of \cref{eq:ide-main} is an element of $\KCY(\Ccov)$, regular over every $\cQ\notin\{0,1,\infty\}$ with $\Disc(\cQ)\neq 0$;
+\item the factors of colour $2$ are the same expressions as those of colour $1$ evaluated at the other root, so the colour sum $\sum_{\col}\GCont(\Gamma,\col)$ is invariant under the deck involution and lies in $\KCY(\cQ)$;
+\item the two points of $\Ccov$ over $\cQ=0$ are unramified, and the expansion of every coloured term at either of them lies in $\KCY\fps{\cQ}$; so the total \cref{eq:ide-main} is regular at $\cQ=0$.
+\end{enumerate}
+\end{lem}
+\begin{proof}
+(i) Each $z$-coefficient of $\rpt_{0,i}$ is a polynomial with rational coefficients in $\cW_3(U_i),\cW_4(U_i),\dots$ and $1/\cW_2(U_i)$ (\cref{def:set-rows}); $\cW_k(U)$ is, for $k\geq 2$, a polynomial over $\KCY$ in $U/(1-U)$ and $\cQ U/(1-\cQ U)$, and $\cW_1=\Lv(U)-\alpha_2-\wA U/(1-U)$ (\cref{lem:set-crit}). The operator $\Dop_i$ involves $\dd U_i/\dd t=\cQ\,\dd U_i/\dd\cQ=-\cQ(\de_{\cQ}\Pq)/(\de_U\Pq)(U_i)$, whose denominator $\de_U\Pq(U_i)=2\wB\cQ U_i-(\alpha_0+\cQ(\alpha_1-\alpha_2))=\pm\ydc$, and $\Delta_i'/\Delta_i$ with $\Delta_i=\alpha_1\wA\epsilon_1\epsilon_2\cW_2(U_i)$ (\cref{eq:ide-Delta}); $\hnw$, $\hw^{-1}$ and $\eta^{-1}$ are constants of $\KCY\fps{z}$ with the denominators $\alpha_1,\wA,\epsilon_1,\epsilon_2,E$. The dilaton and edge factors are polynomials in the row coefficients and $\eta^{-1}$ (\cref{def:set-factors}, \cref{lem:set-edgegen}). Since $U_i$ is finite exactly where $\wB\cQ\neq 0$, the list of denominators is as stated.
+
+(ii) In genus $g$ only finitely many $z$-coefficients enter: the dilaton degrees and the edge exponents of a decoration are bounded by $3g_v-3+n_v+m_v$. The denominators of (i) vanish only as follows: $\cW_2(U_i)=0$ iff $\Delta_i=0$ iff, by \cref{eq:ide-Delta}, $\Lv_i=\Lv_j$ or $\Lv_i=\infty$, that is, $\Disc(\cQ)=0$ or $\cQ=1$ (\cref{lem:set-disc}(i), $\Disc=\cQ^2\tau^2(\Lv_+-\Lv_-)^2$, and $1-\cQ U_i=0$ only over $\cQ=1$); $1-U_i$ and $1-\cQ U_i$ vanish only over $\cQ=1$, by $\Pq(1)=\wA(\cQ-1)$, $\Pq(1/\cQ)=\alpha_1(1-\cQ)/\cQ$ (\cref{lem:set-crit}); $\ydc=0$ iff $\Disc=0$; $\wB\cQ=0$ iff $\cQ=0$; and at $\cQ=\infty$ see \cref{lem:set-limits}. So each coloured term is regular over every $\cQ\notin\{0,1,\infty\}$ with $\Disc(\cQ)\neq 0$.
+
+(iii) Every factor of colour $i$ is a universal expression in $U_i$, $\cQ$ and the weights; the deck involution $U\mapsto U_++U_--U$ of the quadratic algebra $\KCY(\cQ)[U]/(\Pq)$ (\cref{def:set-QA}) exchanges the two roots and hence the two colours, and the scalar constants $\hnw$, $\hw^{-1}$ are the same at both colours (\cref{lem:ide-norm}). The sum over all colourings of a graph is therefore invariant under the deck involution, and an element of $\KCY(\Ccov)$ fixed by the involution lies in $\KCY(\cQ)$.
+
+(iv) $\Disc(0)=\alpha_0^2\neq 0$, so $\cQ=0$ is unramified (\cref{lem:set-disc}(v)), and the two points over it are $U\to-\alpha_2/\alpha_0$ and $\cQ U\to\alpha_0/\wB$, exchanged by the deck involution together with the colours. By \cref{prop:ide-rows}(iii) the rows at both colours lie in $\KCY\fps{\cQ}\fps{z}$ when expanded at the corresponding point, and so do $\Delta_i^{\pm1}$ (\cref{lem:ide-ss}); hence every coloured term expands in $\KCY\fps{\cQ}$ at either point. A rational function of $\cQ$ over $\KCY$ which, as an element of $\KCY(\Ccov)$, is regular over a point of $\bbP^1$ that is unramified is regular there; so the total is regular at $\cQ=0$.
+\end{proof}
+
+\subsection{Proof of Theorem~B}
+
+\begin{proof}[Proof of \cref{prop:ide-main}]
+By \cref{lem:ide-fixed} the classes $\Omega$ form a cohomological field theory with flat unit over $\KCY\fps{\cQ}$, semisimple at $\cQ=0$ by \cref{lem:ide-ss}, because $\alpha_0\neq 0$ in $\KCY$. By \cref{prop:ide-teleman}, $\Omega=\Rm.\TFT$ for a unique symplectic $\Rm$ over $\KCY\lser{\cQ}$, and by \cref{prop:ide-flat} $\Rm$ is a flat solution of the quantum differential equation. The rows with the constant $\hnw$ (\cref{lem:ide-norm}) form a flat unitary solution $\RZ$ (\cref{prop:ide-rows}), so $\Rm=\RZ$ up to constants (\cref{lem:ide-ambig}), and the constants vanish by the Hodge integrals of constant maps (\cref{prop:ide-const}): $\sF_g=\int_{\Mbar_g}\Omega_{g,0}$ is the point-frame sum for the rows $\vv^Z_i$, an identity in $\KCY\fps{\cQ}$ whose left side is $\sum_{d\geq 0}\GW_{g,d}\cQ^d$ by definition. By \cref{prop:ide-frameB} this is the frame-B Hodge-vertex sum \cref{eq:ide-main}, read in $\KCY\fps{\cQ}$ at either point of $\Ccov$ over $\cQ=0$. By \cref{lem:ide-terms}, every coloured term lies in $\KCY(\Ccov)$, regular over $\cQ\notin\{0,1,\infty\}$ with $\Disc\neq 0$, the colour sum lies in $\KCY(\cQ)$ and is regular at $\cQ=0$, and its expansion there is the series just identified. So $\sF_g\in\KCY(\cQ)$, regular at $\cQ=0$ with expansion $\sum_d\GW_{g,d}\cQ^d$, and \cref{eq:ide-main} holds in $\KCY(\cQ)$.
+
+Every hypothesis on the weights used above holds in $\KCY$: in \cref{lem:ide-fixed}, that the fixed loci are those of $\bbP^1$ and the twisting bundle is moving (all weights are non-zero linear forms, $\alpha_0\neq 0$); in \cref{lem:ide-ss}, $\Lv_+(0)-\Lv_-(0)=\alpha_0\neq 0$ and $\Delta_\pm(0)=\eul(\wts_\pm)\neq 0$; in \cref{prop:ide-teleman}, that $\KCY\lser{\cQ}$ is a field of characteristic $0$ and cardinality $2^{\aleph_0}$; in (Fl8), that $\Delta_+(0)/\Delta_-(0)=-\alpha_1\alpha_2/(\wA\wB)$ is non-constant; in \cref{lem:ide-norm}, that the limiting pairs $(a,b)=(-\alpha_2,\wA)$ and $(\alpha_0,\alpha_1)$ have $a,b,a+b$ non-zero, that is, $\alpha_2,\wA,\alpha_0$ and $\alpha_0,\alpha_1,\wB$ non-zero; in \cref{prop:ide-rows}(ii), (iv), the identities of \cref{lem:ide-g0} and the invertibility of $\Lv_+-\Lv_-$ in $\KCY\fps{\cQ}$; in \cref{prop:ide-const}, $\mathrm{ch}_{2k-1}(\Hdg)\neq 0$ on $\Mbar_{k,1}$ and the non-vanishing of the five weights of $\wts_\pm$, so that $\Hg_{\wts_p}=h_{\wts_p}.\ideone$ makes sense; in \cref{prop:ide-frameB}, that $\bw=(E,-\epsilon_1,-\epsilon_2)$ has non-zero entries.
+\end{proof}
+
+\begin{rmk}[The alternative route by specialisation]
+\label{rmk:ide-alt}
+The same proof applies at the five indeterminate weights, over $\Kal=\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$, with the frame $\bw=(\alpha_0+\alpha_1+\alpha_2,-\epsilon_1,-\epsilon_2)$, and gives \cref{eq:ide-main} for the five-torus invariants $\sF_g^{\Tmax}$ in $\Kal(\cQ)$. The identity on $\TCY$ then also follows by specialising along $\epsilon_2\mapsto E-\epsilon_1$: the colour-summed total is a quotient of polynomials in the weights and $\cQ$ whose denominator does not vanish on $\TCY$, because every per-term denominator is one of the factors listed in \cref{lem:ide-terms}(i), none of which involves $E-\epsilon_1-\epsilon_2$; and on the Gromov--Witten side $\GW^{\TCY}_{g,d}=\GW^{\Tmax}_{g,d}|_{\TCY}$ for $d\geq 1$ by the polynomiality and restriction statement of \cref{lem:rig-poly}, and for $d=0$ by the constant-map formula of \cref{rmk:rig-d0}, whose denominators $\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2$ and $\alpha_0\wA\wB\epsilon_1\epsilon_2$ do not vanish on $\TCY$. Either route gives \cref{eq:ide-main}; the one followed above works over $\KCY$ directly and uses no specialisation.
+\end{rmk}
+
+\begin{rmk}[What is and is not an analytic continuation; the fibrewise torus]
+\label{rmk:ide-scope}
+What is proved about the rows is this: they are formal series in $z$ whose coefficients are elements of $\KCY(\Ccov)$; the genus-$g$ graph sum uses finitely many of them; the identity \cref{eq:ide-main} is an identity in $\KCY(\cQ)$, and the equality of its expansion at $\cQ=0$ with $\sum_d\GW_{g,d}\cQ^d$ is \cref{prop:ide-main}. No analytic continuation in $\cQ$ is used anywhere; everything is algebraic in $\KCY(\Ccov)$. In particular the Laurent expansion of \cref{eq:ide-main} at the conifold point $t=0$, which is the object of \cref{sec:reg,sec:rig}, is the expansion of an element of $\KCY(\cQ)$ at $\cQ=1$.
+
+On the fibrewise torus $\TF$ ($\alpha_0=0$, $\alpha_i=\epsilon_i$), and more generally on the three-torus $\Tthree$ ($\alpha_0=0$), the point $\cQ=0$ is not semisimple: both roots of $\Pq$ tend to infinity and both $\Lv_i\to 0$, and the coloured terms have poles at $\cQ=0$ which cancel only in the total. The argument of this section therefore does not apply there directly. What holds instead is the following. The $\TCY$-invariants are the restrictions of the five-torus invariants, and the $\Tthree$- and $\TF$-invariants are the restrictions of the $\TCY$-invariants, by the contravariance of the invariants under restriction of the torus, together with the polynomiality of $\epsilon_1\epsilon_2\GW_{g,d}$ for $d\geq 1$ (\cref{lem:rig-poly}); \draftnote{BS label: lem: GW contravariance.} this is not used in the proof of \cref{eq:ide-main} but identifies $\sF_g$ with the series of \cite{BS}. On the graph side, \cref{eq:ide-main} is restricted to $\alpha_0=0$ by a ring map applied to the identity at indeterminate weights, with the rows rescaled to the fibrewise rows (\cref{lem:rig-3Tid}, \cref{cor:lea-a0}); the constant $\hnw$ becomes $h_{(\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2)}$, which on $\TF$ equals $1$ because $\nw$ is then of the form $(\mathsf{v},-\mathsf{v})$.
+\end{rmk}
+
+\begin{rmk}[Unitarity and $t$-independence of the frame-B rows; the dilaton shift]
+\label{rmk:ide-frame}
+\begin{enumerate}
+\item $\hw$ is scalar (the same at both idempotents), independent of $t$, and $\hw(z)\hw(-z)=1$. So $\RB=\RZ\hw^{-1}$ is again a flat symplectic solution of the quantum differential equation, the ambiguity being exactly that of \cref{lem:ide-ambig}; the frame-B rows satisfy \cref{eq:ide-roweq} and the symplecticity $\langle\vv_i(z),\vv_j(-z)\rangle=\delta_{ij}\Delta_i$ (that is, $\Kone=\Ktwo=1$ and the orthogonality), which \cref{thm:lea-qde} proves directly from the Euler integral. All dependence on $t$ in \cref{eq:ide-main} sits in $\Delta_i$, $\Dil_i(d)$, $\Edge_{ij}(a,b)$; the vertex class $\Hg_{\bw}$ is independent of $t$. The identity \cref{eq:ide-main} holds for every multiset class $\mathsf{v}$ in place of $\bw$, with $\mathsf{v}$-dependent frame factors; the class $\bw=(E,-\epsilon_1,-\epsilon_2)$ is the one for which the singular frame-B row has the value $E/(E+z)$ at $t=0$ (\cref{cor:row-F2}, \cref{lem:set-hmult}).
+\item The translation of \cite[Def.~2.13]{PPZ15} for $\RB$, $z(\ideone-\RB^{-1}(z)\ideone)$, has no $z^0$ and $z^1$ terms; its colour-$i$ part is $\psi(1-\rr_{0,i}(-\psi))=\sum_{d\geq 2}\Dil_i(d)\psi^d$, and the omitted term $\Dil_i(1)\psi=-\psi$ is the dilaton shift of \cref{def:set-graphsum}.
+\end{enumerate}
+\end{rmk}

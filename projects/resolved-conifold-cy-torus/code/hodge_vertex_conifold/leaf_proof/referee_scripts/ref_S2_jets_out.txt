@@ -1,0 +1,9 @@
+point x=2 s0=2/5 tau0=5/8 done: 50 checks so far, 0 failures
+point x=3/5 s0=3/4 tau0=16/27 done: 100 checks so far, 0 failures
+point x=-3 s0=-2/5 tau0=5/12 done: 150 checks so far, 0 failures
+point x=1/3 s0=6/7 tau0=7/12 done: 200 checks so far, 0 failures
+ref_S2_jets.pl M=7 J=4: 200 checks, 0 failures
+
+real	1m2.238s
+user	1m1.406s
+sys	0m0.311s

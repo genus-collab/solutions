@@ -1,0 +1,9 @@
+tau = 3/5 (sigma = 24/25), y = mix (e = -2), G = 3, N = 2, series order 44; setup 29.4 s
+recursion: 10 correlators, 259.9 s
+(1,1):    3 w-terms, symmetry viol. 0, pole-order viol. 0; (no Hodge data)
+(1,2):   13 w-terms, symmetry viol. 0, pole-order viol. 0; (no Hodge data)
+(2,1):    9 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 7: 7 points (7 with prod Pi != 0), mismatches 0 [Mathematica q-table at s = -e sigma/(1+e sigma)]
+(2,2):   61 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 9: 36 points (36 with prod Pi != 0), mismatches 0 [Mathematica q-table at s = -e sigma/(1+e sigma)]
+(3,1):   15 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 10: 10 points (10 with prod Pi != 0), mismatches 0 [Mathematica q-table at s = -e sigma/(1+e sigma)]
+(3,2):  145 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 12: 66 points (66 with prod Pi != 0), mismatches 0 [Mathematica q-table at s = -e sigma/(1+e sigma)]
+TOTAL: 119 lattice comparisons, 0 failures; time 282.4 s

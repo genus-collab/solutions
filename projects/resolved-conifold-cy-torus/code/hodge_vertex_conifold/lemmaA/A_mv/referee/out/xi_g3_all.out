@@ -1,0 +1,12 @@
+h=3 B=(2) D=1 [in range]: Xi mod p non-zero at 0 of 4 random tau
+h=3 B=(3) D=2 [in range]: Xi mod p non-zero at 0 of 4 random tau
+h=3 B=(4) D=3 [in range]: Xi mod p non-zero at 0 of 4 random tau
+h=3 B=(2,2) D=2 [in range]: Xi mod p non-zero at 0 of 4 random tau
+h=3 B=(3,2) D=3 [in range]: Xi mod p non-zero at 0 of 4 random tau
+h=3 B=(2,2,2) D=3 [in range]: Xi mod p non-zero at 0 of 4 random tau
+h=3 B=(5) D=4 [outside]: Xi mod p non-zero at 4 of 4 random tau  e.g. Xi=590158934
+h=3 B=(4,2) D=4 [outside]: Xi mod p non-zero at 4 of 4 random tau  e.g. Xi=664972489
+h=3 B=(3,3) D=4 [outside]: Xi mod p non-zero at 4 of 4 random tau  e.g. Xi=833271538
+h=3 B=(3,2,2) D=4 [outside]: Xi mod p non-zero at 4 of 4 random tau  e.g. Xi=528864014
+h=3 B=(2,2,2,2) D=4 [outside]: Xi mod p non-zero at 4 of 4 random tau  e.g. Xi=597585002
+(p = 1000000007, 3 s)

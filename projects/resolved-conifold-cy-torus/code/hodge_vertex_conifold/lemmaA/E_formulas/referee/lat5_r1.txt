@@ -1,0 +1,6 @@
+(A) genus 5 r = 1: 7 Lemma-A points (parts >= 2, D <= 2h-3), 0 violations
+(C) genus 5 r = 1: 1 control points (D = 2h-2), 1 non-zero; non-zero components: {9}:all
+(M) genus 5 r = 1: 8 lattice points with parts >= 0, 1 <= J, D <= 2h-3: 0 violations
+(H) genus 5 r = 1, D = 8: Hurwitz component zero at 0 points, non-zero at 1
+(H) genus 5 r = 1, D = 9: Hurwitz component zero at 1 points, non-zero at 0
+(H) genus 5 r = 1, D = 10: Hurwitz component zero at 0 points, non-zero at 1

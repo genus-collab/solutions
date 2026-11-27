@@ -1,0 +1,1 @@
+tau=-7/3 G=6 N=2 X=2 primes=1: formula vs TR 62 comparisons, 0 mismatches; formula vs Hodge(P2) 62 comparisons, 0 mismatches; Lemma D in formula: 40 zeros, 0 violations; time TR 116s, formula 0s, total 122s

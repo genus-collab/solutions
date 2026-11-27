@@ -1,0 +1,7 @@
+Omega: 276 ch-monomials, v-interpolation check failures 0 [34.3 s]
+genus 8 r = 1: 276 ch-monomials processed, Omega check failures 0; written ./ref_engine_h8_r1.txt; memo 52494 [899.0 s]
+
+real	14m59.434s
+user	14m52.045s
+sys	0m1.327s
+exit 0

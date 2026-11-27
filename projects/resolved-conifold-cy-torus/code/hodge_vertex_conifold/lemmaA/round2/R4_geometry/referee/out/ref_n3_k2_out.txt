@@ -1,0 +1,15 @@
+N3 (Mathematica data) g=2 k=0: [y]Xi^(k)(j,y) = separating sum at j = 1,2,3,4
+N3 (Mathematica data) g=2 k=1: [y]Xi^(k)(j,y) = separating sum at j = 1
+N3 (Mathematica data) g=2 k=2: [y]Xi^(k)(j,y) = separating sum at j = 1
+N3 (Mathematica data) g=3 k=0: [y]Xi^(k)(j,y) = separating sum at j = 1,2,3,4,5,6
+N3 (Mathematica data) g=3 k=1: [y]Xi^(k)(j,y) = separating sum at j = 1
+N3 (Mathematica data) g=3 k=2: [y]Xi^(k)(j,y) = separating sum at j = 1
+N3 (Mathematica data) g=3 k=3: [y]Xi^(k)(j,y) = separating sum at j = 1
+N3 (Mathematica data) g=4 k=0: [y]Xi^(k)(j,y) = separating sum at j = 1,2,3,4,5,6,7,8
+N3 (Mathematica data) g=4 k=1: [y]Xi^(k)(j,y) = separating sum at j = 1
+N3 (Mathematica data) g=4 k=2: [y]Xi^(k)(j,y) = separating sum at j = 1
+N3 (Mathematica data) g=4 k=3: [y]Xi^(k)(j,y) = separating sum at j = 1
+N3 (Mathematica data) g=4 k=4: [y]Xi^(k)(j,y) = separating sum at j = 1
+K2 reduction (Mathematica one/two-leaf data, Route E three-leaf genus 1): genus 2, 6 values of j: all equal
+K2 reduction (Mathematica one/two-leaf data, Route E three-leaf genus 2): genus 3, 9 values of j: all equal
+K2 reduction (Mathematica one/two-leaf data, Route E three-leaf genus 3): genus 4, 12 values of j: all equal

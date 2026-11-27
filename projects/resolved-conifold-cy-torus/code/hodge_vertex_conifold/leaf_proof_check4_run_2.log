@@ -1,0 +1,9 @@
+x = 2, ZMAX = 12, t-orders 0..8
+wickDirect ready [2 s]
+R-matrix at alpha0 = 0 ready [36 s]
+rows twisted by h_w^-1 (frame B) [36 s]
+(a) rho r_{0,1}[m] = [z^m] KEY FORMULA, all t^k (k <= 8), m = 0..12: {True, True, True, True, True, True, True, True, True, True, True, True, True}; sample [t^1] rho r_{0,1}[12] = -8191/9565938 [36 s]
+(b) second QDE row, idempotent 1 (m = 1..12): {True, True, True, True, True, True, True, True, True, True, True, True}; idempotent 2: {True, True, True, True, True, True, True, True, True, True, True, True} [36 s]
+(c) symplecticity <v_i(w), v_j(-w)> = delta_ij Delta_i, exact in Q, w^n for n <= 12, all i, j: {True} [39 s]
+total time 39 s
+exit 0

@@ -1,0 +1,27 @@
+genus 3 R = {5} D = 4: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {6} D = 5: Hurwitz component ZERO; non-zero components {1 2 3}
+genus 3 R = {7} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,4} D = 4: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,5} D = 5: Hurwitz component ZERO; non-zero components {1 2 3}
+genus 3 R = {2,6} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {3,3} D = 4: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {3,4} D = 5: Hurwitz component ZERO; non-zero components {1 2 3}
+genus 3 R = {3,5} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {4,4} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,2,3} D = 4: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,2,4} D = 5: Hurwitz component ZERO; non-zero components {1 2 3}
+genus 3 R = {2,2,5} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,3,3} D = 5: Hurwitz component ZERO; non-zero components {1 2 3}
+genus 3 R = {2,3,4} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {3,3,3} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,2,2,2} D = 4: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,2,2,3} D = 5: Hurwitz component ZERO; non-zero components {1 2 3}
+genus 3 R = {2,2,2,4} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,2,3,3} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,2,2,2,2} D = 5: Hurwitz component ZERO; non-zero components {1 2 3}
+genus 3 R = {2,2,2,2,3} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+genus 3 R = {2,2,2,2,2,2} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3}
+SUMMARY genus 3, D = 4: 0 points with Xi^(0) = 0, 5 with Xi^(0) != 0
+SUMMARY genus 3, D = 5: 7 points with Xi^(0) = 0, 0 with Xi^(0) != 0
+SUMMARY genus 3, D = 6: 0 points with Xi^(0) = 0, 11 with Xi^(0) != 0
+time 4.1 s

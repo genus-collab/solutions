@@ -1,0 +1,8 @@
+genus 2 (../refdata/ref_engine_h2_r1.txt): (6.1) as a polynomial identity in (j, sigma): holds;  k=0 vs Theorem B: equal;  k=h vs lambda_g formula: equal
+genus 3 (../refdata/ref_engine_h3_r1.txt): (6.1) as a polynomial identity in (j, sigma): holds;  k=0 vs Theorem B: equal;  k=h vs lambda_g formula: equal
+genus 4 (../refdata/ref_engine_h4_r1.txt): (6.1) as a polynomial identity in (j, sigma): holds;  k=0 vs Theorem B: equal;  k=h vs lambda_g formula: equal
+genus 5 (../refdata/ref_engine_h5_r1.txt): (6.1) as a polynomial identity in (j, sigma): holds;  k=0 vs Theorem B: equal;  k=h vs lambda_g formula: equal
+genus 6 (../refdata/ref_engine_h6_r1.txt): (6.1) as a polynomial identity in (j, sigma): holds;  k=0 vs Theorem B: equal;  k=h vs lambda_g formula: equal
+genus 7 (../refdata/ref_engine_h7_r1.txt): (6.1) as a polynomial identity in (j, sigma): holds;  k=0 vs Theorem B: equal;  k=h vs lambda_g formula: equal
+genus 8 (../refdata/ref_engine_h8_r1.txt): (6.1) as a polynomial identity in (j, sigma): holds;  k=0 vs Theorem B: equal;  k=h vs lambda_g formula: equal
+genus 9 (../refdata/ref_engine_h9_r1.txt): (6.1) as a polynomial identity in (j, sigma): holds;  k=0 vs Theorem B: equal;  k=h vs lambda_g formula: equal

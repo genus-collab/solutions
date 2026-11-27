@@ -1,0 +1,5 @@
+nonCY g 2 closed form holds at t^0..t^3: [False, False, False, False]
+nonCY g 3 closed form holds at t^0..t^3: [False, False, False, False]
+g 2 F_g(0) at 3 alpha samples equal: False
+g 3 F_g(0) at 3 alpha samples equal: False
+g 4 F_g(0) at 3 alpha samples equal: False

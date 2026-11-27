@@ -1,0 +1,1 @@
+ref_forcing G=9 p=1000000007: Lemma 8.1 row spaces at 39 framings, 0 differ; forcing inside hypotheses: 12 of 12 forced; outside: 150 of 233 forced; odd polar orders non-zero: 0; 109s

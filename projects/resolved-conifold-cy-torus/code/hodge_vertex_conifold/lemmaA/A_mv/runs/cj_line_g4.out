@@ -1,0 +1,7 @@
+g=4 a=1: identity holds   (sigma^g M_g(1^a) = (127/154828800)s^0 + (0)s^1 + (0)s^2 + (0)s^3 + (0)s^4; degree check: coefficient of sigma^5 = 0)
+g=4 a=2: identity holds   (sigma^g M_g(1^a) = (127/1209600)s^0 + (-247/2419200)s^1 + (121/3628800)s^2 + (-1/207360)s^3 + (1/3628800)s^4; degree check: coefficient of sigma^5 = 0)
+g=4 a=3: identity holds   (sigma^g M_g(1^a) = (30861/5734400)s^0 + (-48931/4838400)s^1 + (72221/9676800)s^2 + (-263/100800)s^3 + (671/1814400)s^4; degree check: coefficient of sigma^5 = 0)
+g=4 a=4: identity holds   (sigma^g M_g(1^a) = (1016/4725)s^0 + (-234763/403200)s^1 + (96787/151200)s^2 + (-619603/1814400)s^3 + (2263/30240)s^4; degree check: coefficient of sigma^5 = 0)
+g=4 a=5: identity holds   (sigma^g M_g(1^a) = (49609375/6193152)s^0 + (-13444693/483840)s^1 + (22967531/580608)s^2 + (-999115/36288)s^3 + (382777/48384)s^4; degree check: coefficient of sigma^5 = 0)
+g=4 a=6: identity holds   (sigma^g M_g(1^a) = (833247/2800)s^0 + (-12522203/10080)s^1 + (21532963/10080)s^2 + (-6048311/3360)s^3 + (9481571/15120)s^4; degree check: coefficient of sigma^5 = 0)
+SUMMARY: all identities hold

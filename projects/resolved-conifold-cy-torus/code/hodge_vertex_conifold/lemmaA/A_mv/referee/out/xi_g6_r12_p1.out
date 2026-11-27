@@ -1,0 +1,38 @@
+h=6 B=(2) D=1 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(3) D=2 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(4) D=3 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(5) D=4 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(6) D=5 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(7) D=6 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(8) D=7 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(9) D=8 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(10) D=9 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(11) D=10 [outside]: Xi mod p non-zero at 2 of 2 random tau  e.g. Xi=350969950
+h=6 B=(12) D=11 [outside]: Xi mod p non-zero at 2 of 2 random tau  e.g. Xi=221700196
+h=6 B=(2,2) D=2 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(3,2) D=3 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(4,2) D=4 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(3,3) D=4 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(5,2) D=5 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(4,3) D=5 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(6,2) D=6 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(5,3) D=6 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(4,4) D=6 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(7,2) D=7 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(6,3) D=7 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(5,4) D=7 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(8,2) D=8 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(7,3) D=8 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(6,4) D=8 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(5,5) D=8 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(9,2) D=9 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(8,3) D=9 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(7,4) D=9 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(6,5) D=9 [in range]: Xi mod p non-zero at 0 of 2 random tau
+h=6 B=(10,2) D=10 [outside]: Xi mod p non-zero at 2 of 2 random tau  e.g. Xi=856269831
+h=6 B=(6,6) D=10 [outside]: Xi mod p non-zero at 2 of 2 random tau  e.g. Xi=213933247
+(p = 1000000007, 62 s)
+
+real	1m2.898s
+user	1m1.811s
+sys	0m0.438s

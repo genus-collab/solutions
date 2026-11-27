@@ -1,0 +1,30 @@
+genus 2: 1 multisets in the range, 2 unknowns, 0 equations (KP); rank 0, nullity 2
+   not forced to vanish: (2)
+genus 2: 1 multisets in the range, 2 unknowns, 20 equations (KP + cut-and-join); rank 2, nullity 0
+   not forced to vanish: none
+genus 3: 6 multisets in the range, 18 unknowns, 72 equations (KP); rank 12, nullity 6
+   not forced to vanish: (2) (3) (2,2) (4) (3,2) (2,2,2)
+genus 3: 6 multisets in the range, 18 unknowns, 168 equations (KP + cut-and-join); rank 15, nullity 3
+   not forced to vanish: (3) (2,2) (4) (3,2) (2,2,2)
+genus 3: 6 multisets in the range, 18 unknowns, 169 equations (KP + cut-and-join H=3); rank 16, nullity 2
+   not forced to vanish: (3) (2,2) (4) (3,2) (2,2,2)
+genus 3: 6 multisets in the range, 18 unknowns, 171 equations (KP + cut-and-join Z=3); rank 17, nullity 1
+   not forced to vanish: (4) (3,2) (2,2,2)
+genus 3: 6 multisets in the range, 18 unknowns, 174 equations (KP + cut-and-join Z=3 Z=4); rank 18, nullity 0
+   not forced to vanish: none
+genus 4: 18 multisets in the range, 72 unknowns, 476 equations (KP); rank 66, nullity 6
+   not forced to vanish: (2) (3) (2,2) (4) (3,2) (2,2,2) (5) (4,2) (3,3) (3,2,2) (2,2,2,2) (6) (5,2) (4,3) (4,2,2) (3,3,2) (3,2,2,2) (2,2,2,2,2)
+genus 4: 18 multisets in the range, 72 unknowns, 812 equations (KP + cut-and-join); rank 70, nullity 2
+   not forced to vanish: (3) (2,2) (4) (3,2) (2,2,2) (5) (4,2) (3,3) (3,2,2) (2,2,2,2) (6) (5,2) (4,3) (4,2,2) (3,3,2) (3,2,2,2) (2,2,2,2,2)
+genus 4: 18 multisets in the range, 72 unknowns, 813 equations (KP + cut-and-join H=3); rank 71, nullity 1
+   not forced to vanish: (3) (2,2) (4) (3,2) (2,2,2) (5) (4,2) (3,3) (3,2,2) (2,2,2,2) (6) (5,2) (4,3) (4,2,2) (3,3,2) (3,2,2,2) (2,2,2,2,2)
+genus 4: 18 multisets in the range, 72 unknowns, 816 equations (KP + cut-and-join Z=3); rank 72, nullity 0
+   not forced to vanish: none
+genus 4: 18 multisets in the range, 72 unknowns, 814 equations (KP + cut-and-join H=3 H=4); rank 72, nullity 0
+   not forced to vanish: none
+genus 5: 44 multisets in the range, 220 unknowns, 1984 equations (KP); rank 220, nullity 0
+   not forced to vanish: none
+genus 5: 44 multisets in the range, 220 unknowns, 2944 equations (KP + cut-and-join); rank 220, nullity 0
+   not forced to vanish: none
+genus 5: 44 multisets in the range, 220 unknowns, 2945 equations (KP + cut-and-join H=3); rank 220, nullity 0
+   not forced to vanish: none

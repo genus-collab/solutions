@@ -1,0 +1,90 @@
+x = 2
+   Xi^c_2(2): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(3): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(4): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(5): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(2 2): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(2 3): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(3 3): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(2 4): own evaluator vs q-table (s = -1)                         ok
+   Theorem C: Xi^c_2(1) = 0                                               ok
+   string identity Xi^c_2(1,3) = (3/c^2) Xi^c_2(3)                        ok
+x = 1/3
+   Xi^c_2(2): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(3): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(4): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(5): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(2 2): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(2 3): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(3 3): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(2 4): own evaluator vs q-table (s = -1)                         ok
+   Theorem C: Xi^c_2(1) = 0                                               ok
+   string identity Xi^c_2(1,3) = (3/c^2) Xi^c_2(3)                        ok
+x = -3/5
+   Xi^c_2(2): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(3): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(4): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(5): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(2 2): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(2 3): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(3 3): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(2 4): own evaluator vs q-table (s = -1)                         ok
+   Theorem C: Xi^c_2(1) = 0                                               ok
+   string identity Xi^c_2(1,3) = (3/c^2) Xi^c_2(3)                        ok
+x = 5/2
+   Xi^c_2(2): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(3): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(4): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(5): own evaluator vs q-table (s = -1)                           ok
+   Xi^c_2(2 2): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(2 3): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(3 3): own evaluator vs q-table (s = -1)                         ok
+   Xi^c_2(2 4): own evaluator vs q-table (s = -1)                         ok
+   Theorem C: Xi^c_2(1) = 0                                               ok
+   string identity Xi^c_2(1,3) = (3/c^2) Xi^c_2(3)                        ok
+x = 2: genus-2 bare vertex
+   t^0: full leaf expansion = direct                                      ok
+   t^0: truncated T_2 form = direct                                       ok
+   t^1: full leaf expansion = direct                                      ok
+   t^1: truncated T_3 form = direct                                       ok
+   Xi_2(2) = 0 (so the D = k-2 residue at t^1 is harmless)                ok
+   [t^1] G_(2) = (1-x)^2/2                                                ok
+x = 1/3: genus-2 bare vertex
+   t^0: full leaf expansion = direct                                      ok
+   t^0: truncated T_2 form = direct                                       ok
+   t^1: full leaf expansion = direct                                      ok
+   t^1: truncated T_3 form = direct                                       ok
+   Xi_2(2) = 0 (so the D = k-2 residue at t^1 is harmless)                ok
+   [t^1] G_(2) = (1-x)^2/2                                                ok
+x = -3/5: genus-2 bare vertex
+   t^0: full leaf expansion = direct                                      ok
+   t^0: truncated T_2 form = direct                                       ok
+   t^1: full leaf expansion = direct                                      ok
+   t^1: truncated T_3 form = direct                                       ok
+   Xi_2(2) = 0 (so the D = k-2 residue at t^1 is harmless)                ok
+   [t^1] G_(2) = (1-x)^2/2                                                ok
+x = 5/2: genus-2 bare vertex
+   t^0: full leaf expansion = direct                                      ok
+   t^0: truncated T_2 form = direct                                       ok
+   t^1: full leaf expansion = direct                                      ok
+   t^1: truncated T_3 form = direct                                       ok
+   Xi_2(2) = 0 (so the D = k-2 residue at t^1 is harmless)                ok
+   [t^1] G_(2) = (1-x)^2/2                                                ok
+x = -7/3: genus-2 bare vertex
+   t^0: full leaf expansion = direct                                      ok
+   t^0: truncated T_2 form = direct                                       ok
+   t^1: full leaf expansion = direct                                      ok
+   t^1: truncated T_3 form = direct                                       ok
+   Xi_2(2) = 0 (so the D = k-2 residue at t^1 is harmless)                ok
+   [t^1] G_(2) = (1-x)^2/2                                                ok
+   Laguerre form, h = 2, R = (4), x = 2                                   ok
+   Laguerre form, h = 2, R = (5), x = 2                                   ok
+   Laguerre form, h = 2, R = (2 3), x = 2                                 ok
+   Laguerre form, h = 2, R = (3 3), x = 2                                 ok
+   Laguerre form, h = 2, R = (2 2 2), x = 2                               ok
+   Laguerre form, h = 2, R = (4), x = -3/5                                ok
+   Laguerre form, h = 2, R = (5), x = -3/5                                ok
+   Laguerre form, h = 2, R = (2 3), x = -3/5                              ok
+   Laguerre form, h = 2, R = (3 3), x = -3/5                              ok
+   Laguerre form, h = 2, R = (2 2 2), x = -3/5                            ok
+ALL OK

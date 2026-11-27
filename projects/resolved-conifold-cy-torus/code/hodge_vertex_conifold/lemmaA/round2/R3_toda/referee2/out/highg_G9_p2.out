@@ -1,0 +1,21 @@
+# referee-2 high-genus test: p = 998244353, tau = 728844763 (seed 909), gmax = 9
+# 13 profiles needed: (10) (16) (17) (18) (2) (2,15) (2,17) (2,18) (2,8,10) (3,17) (8) (8,10) (8,9)
+# R2mv::compute gmax=9 K=27 P=93 Smax=47: 385941 partitions (conjugate pairs) in 891 s
+# MV engine done in 892 s
+# cross-check against Route E tables (genus <= 6): 78 values, 0 mismatches
+P_2 G=9 eps=0 R=(17) [R+2: D=17, excess -1] 38 terms: residual 0 OK
+P_2 G=9 eps=1 R=(17) [R+2: D=17, excess -1] 0 terms: residual 0 OK
+   control (X_9(2,17) + 1, eps=0): residual 649529445 (nonzero, as it must be)
+P_2 G=9 eps=0 R=(18) [R+2: D=18, excess -2] 58 terms: residual 0 OK
+P_2 G=9 eps=1 R=(18) [R+2: D=18, excess -2] 40 terms: residual 0 OK
+   control (X_9(2,18) + 1, eps=0): residual 300814537 (nonzero, as it must be)
+P_3 G=9 eps=0 R=(17) [R+3: D=18, excess -2] 294 terms: residual 0 OK
+P_3 G=9 eps=1 R=(17) [R+3: D=18, excess -2] 168 terms: residual 0 OK
+   control (X_9(3,17) + 1, eps=0): residual 905595135 (nonzero, as it must be)
+P_2 G=9 eps=0 R=(8,10) [R+2: D=17, excess -1] 98 terms: residual 0 OK
+P_2 G=9 eps=1 R=(8,10) [R+2: D=17, excess -1] 0 terms: residual 0 OK
+   control (X_9(2,8,10) + 1, eps=0): residual 649529445 (nonzero, as it must be)
+Lemma A direct: Xi_9(16), D = 15 (range D <= 15): 0 = 0 OK
+Lemma A direct: Xi_9(2,15), D = 15 (range D <= 15): 0 = 0 OK
+Lemma A direct: Xi_9(8,9), D = 15 (range D <= 15): 0 = 0 OK
+SUMMARY highg p=998244353 gmax=9: 8 relations, 0 failures; table cross-check 78/78; total 947 s

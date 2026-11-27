@@ -1,0 +1,1 @@
+genus 6 (reduced KP system, 14 samples): 54 one-leaf unknowns, 169 equations, rank 54, nullity 0

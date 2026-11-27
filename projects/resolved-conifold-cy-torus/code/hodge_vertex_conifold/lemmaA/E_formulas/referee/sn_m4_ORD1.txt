@@ -1,0 +1,4 @@
+SN slice m = (4), genus 1: 7 grid values, 2 unknowns per sigma-power: consistent
+SN slice m = (4), genus 2: 10 grid values, 3 unknowns per sigma-power: ANSATZ FAILS
+SN slice m = (5), genus 1: 7 grid values, 2 unknowns per sigma-power: consistent
+SN slice m = (5), genus 2: 10 grid values, 3 unknowns per sigma-power: ANSATZ FAILS

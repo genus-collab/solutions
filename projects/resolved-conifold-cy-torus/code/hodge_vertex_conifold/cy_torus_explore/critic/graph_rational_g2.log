@@ -1,0 +1,10 @@
+evaluated 60 points 1.3s
+g 2 frame B weights 7/5 -3/8 13/6 11/9 709/360
+ total (m,n,degN): (0, 2, 2)
+ graph 0 gv [2] edges 0  Disc^-4 (1-Q)^-2 deg N 10  at Q=oo: regular  at Q=1: pole
+ graph 1 gv [1] edges 1  Disc^-4 (1-Q)^-0 deg N 8  at Q=oo: regular  at Q=1: regular
+ graph 2 gv [0] edges 2  Disc^-4 (1-Q)^-0 deg N 8  at Q=oo: regular  at Q=1: regular
+ graph 3 gv [1, 1] edges 2  Disc^-4 (1-Q)^-0 deg N 8  at Q=oo: regular  at Q=1: regular
+ graph 4 gv [0, 1] edges 3  Disc^-4 (1-Q)^-0 deg N 8  at Q=oo: regular  at Q=1: regular
+ graph 5 gv [0, 0] edges 6  Disc^-4 (1-Q)^-0 deg N 8  at Q=oo: regular  at Q=1: regular
+ graph 6 gv [0, 0] edges 4  Disc^-4 (1-Q)^-0 deg N 8  at Q=oo: regular  at Q=1: regular

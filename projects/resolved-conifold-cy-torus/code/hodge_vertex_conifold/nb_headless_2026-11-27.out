@@ -1,0 +1,205 @@
+34 Input cells; evaluating 1..34
+
+=== Input cell 1 ===
+(* graphs.m -- stable graphs, decorations and Witten-Kontsevich numbers (shared by lp2_lib.m and rc_lib.m).
+   Verbatim from genRmat_g4_lib.m / localp2CY5_genus ...
+    (0. s)
+
+=== Input cell 2 ===
+(* orbits.m -- decorated stable graphs = orbits of labelled decorations under Aut(Gamma). Shared by both pipelines
+   (identical prepareGraph structure on both  ...
+    (0. s)
+
+=== Input cell 3 ===
+(* rc_lib.m -- library for the resolved conifold x C^2 pipeline (general five-dimensional torus), genus <= 4.
+   Load with Get after SetDirectory to the data di ...
+    (0.1 s)
+
+=== Input cell 4 ===
+(* hvc_lib.m -- Hodge-vertex graph sum for the resolved conifold x C^2 on the fibrewise torus alpha0 = 0, alpha1 = eps1,
+   alpha2 = eps2 (opposite weights on e ...
+    (0. s)
+
+=== Input cell 5 ===
+(* data directory: this notebook's folder if it holds hvc_lib.m (StableGraph-2/3.bin, ref/resolvedconifold_results.m, the stored
+   hvc_results_g*.m), otherwise ...
+data directory: G:\My Drive\Projects\Genus\resolvedconifold\hodge_vertex_conifold
+    (0. s)
+
+=== Input cell 6 ===
+(* one complete run: R' = R_Z h_w^s with Q and x = eps1/eps2 symbolic (alpha0 = 0, alpha1 = eps1 = x, alpha2 = eps2 = 1), decorated
+   graphs with Hodge (or poi ...
+    (0. s)
+
+=== Input cell 7 ===
+(* the structural statements of a run: singular decorated graphs versus vertex genera, pole-order bound Sum_v max(2 g_v - 2, 0) *)
+structure[res_] := Module[{st ...
+    (0. s)
+
+=== Input cell 8 ===
+(* Hodge integrals of the genus-general evaluator (hv_lib4.m): known values up to genus 4, vanishing above the top degree, Mumford
+   relations, closed forms ve ...
+--> Column[{"known values: genus 1-2 (lambda_1; lambda_1 psi^3, lambda_2 psi^2, lambda_1 lambda_2 psi, lambda_1 lambda_2; ch_3 on M_2 = -1/34560), genus 3 (lambda_1^6 = 1/90720 raw; lambda_3 psi^4; lambda_3 lambda_2 psi^2; lambda_1 lambda_2 lambda_3), genus 4 (lambda_1^9 = 1/113400 raw; lambda_4 psi^6 = 127/154828800; lambda_4 lambda_3 psi^3 = 1/3225600; lambda_4 lambda_3 psi^2 psi^2 = 1/276480 [GP]; lambda_4 lambda_3 lambda_2 = 1/87091200): {True, True, True, True, True, True, True, True, True, True, True, True, True, True, True}", "vanishing above the top degree of the lambda ring, computed without the cut-off: True", "Mumford relations not encoded in lamSub (lambda_3^3 = 2 lambda_4 lambda_3 lambda_2 = 1/43545600 on M_4, lambda_2^3 = 1/725760 on M_3, lambda_g^2 = 0 (g = 2-4), lambda_3^2 = 2 lambda_4 lambda_2 on M_{4,n}, lambda_2^2 = 2 lambda_3 lambda_1 on M_{3,n}): {True, True, True, True, True}", "lambda_g formula and lambda_g lambda_{g-1} closed form (zeros by string) versus the recursion, genus 2-4 (genus 4: n <= 2): True", "string and dilaton equations of the Hodge correlators, genus 1-4: True", "all checks passed: True"}]
+    (15.9 s)
+
+=== Input cell 9 ===
+(* the scalar R-action of h_w^-1 on the point theory (PPZ conventions) reproduces the normalised Hodge class on M_2 for arbitrary weights ... *)
+ppz2 = ppzScala ...
+--> {-1/5760*((w1 + w2)*(w1 + w3)*(w2 + w3))/(w1^2*w2^2*w3^2), True}
+    (0. s)
+
+=== Input cell 10 ===
+(* ... and on M_3 (42 stable graphs) at exact rational weights *)
+SeedRandom[7]; Table[Module[{wn = Table[RandomInteger[{-9, 9}]/RandomInteger[{1, 5}], {3}]}, I ...
+--> {{{8/5, 3/2, -7/2}, True}, {{5/2, 4/5, -4}, True}}
+    (0.2 s)
+
+=== Input cell 11 ===
+(* the rank-4 Hodge class of the actual normal bundle O(-1)+O(-1)+O+O of P^1 in the 5-fold, weights (eps1, eps2, -eps1, -eps2), is
+   trivial by Mumford's c(E)  ...
+--> {{1, 98, "disagreements with Int psi^a:", 0}, {2, 440, "disagreements with Int psi^a:", 0}, {3, 273, "disagreements with Int psi^a:", 0}}
+    (8.1 s)
+
+=== Input cell 12 ===
+(* the triple Hodge class of local P2 (mode B) in genus 2 and 3, as coefficients of lambda_1^k1 ch_3^k3, and the scalar h_wB(z) to z^6 *)
+Table[{g, Table[{c[[1] ...
+--> {1, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)/(12*\[Epsilon][1]*\[Epsilon][2]*(\[Epsilon][1] + \[Epsilon][2])), (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^2/(288*\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2), -1/51840*(139*\[Epsilon][1]^6 + 417*\[Epsilon][1]^5*\[Epsilon][2] + 402*\[Epsilon][1]^4*\[Epsilon][2]^2 + 109*\[Epsilon][1]^3*\[Epsilon][2]^3 + 402*\[Epsilon][1]^2*\[Epsilon][2]^4 + 417*\[Epsilon][1]*\[Epsilon][2]^5 + 139*\[Epsilon][2]^6)/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3), -1/2488320*((\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)*(571*\[Epsilon][1]^6 + 1713*\[Epsilon][1]^5*\[Epsilon][2] + 1698*\[Epsilon][1]^4*\[Epsilon][2]^2 + 541*\[Epsilon][1]^3*\[Epsilon][2]^3 + 1698*\[Epsilon][1]^2*\[Epsilon][2]^4 + 1713*\[Epsilon][1]*\[Epsilon][2]^5 + 571*\[Epsilon][2]^6))/(\[Epsilon][1]^4*\[Epsilon][2]^4*(\[Epsilon][1] + \[Epsilon][2])^4), ((\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^2*(163879*\[Epsilon][1]^6 + 491637*\[Epsilon][1]^5*\[Epsilon][2] + 159882*\[Epsilon][1]^4*\[Epsilon][2]^2 - 499631*\[Epsilon][1]^3*\[Epsilon][2]^3 + 159882*\[Epsilon][1]^2*\[Epsilon][2]^4 + 491637*\[Epsilon][1]*\[Epsilon][2]^5 + 163879*\[Epsilon][2]^6))/(209018880*\[Epsilon][1]^5*\[Epsilon][2]^5*(\[Epsilon][1] + \[Epsilon][2])^5), (5246819*\[Epsilon][1]^12 + 31480914*\[Epsilon][1]^11*\[Epsilon][2] + 83618655*\[Epsilon][1]^10*\[Epsilon][2]^2 + 129518230*\[Epsilon][1]^9*\[Epsilon][2]^3 + 129487374*\[Epsilon][1]^8*\[Epsilon][2]^4 + 87130170*\[Epsilon][1]^7*\[Epsilon][2]^5 + 64799751*\[Epsilon][1]^6*\[Epsilon][2]^6 + 87130170*\[Epsilon][1]^5*\[Epsilon][2]^7 + 129487374*\[Epsilon][1]^4*\[Epsilon][2]^8 + 129518230*\[Epsilon][1]^3*\[Epsilon][2]^9 + 83618655*\[Epsilon][1]^2*\[Epsilon][2]^10 + 31480914*\[Epsilon][1]*\[Epsilon][2]^11 + 5246819*\[Epsilon][2]^12)/(75246796800*\[Epsilon][1]^6*\[Epsilon][2]^6*(\[Epsilon][1] + \[Epsilon][2])^6)}
+    (0. s)
+
+=== Input cell 13 ===
+(* the conifold Frobenius data at alpha0 = 0, alpha_i = eps_i: the quadratic equation of the canonical coordinates U^2 - S U + P = 0,
+   whose roots are U = 1 a ...
+--> {(-1 + x)/x, -(1/(Q*x)), Q*(Q + 4*x - 2*Q*x + Q*x^2), {{U -> 1}, {U -> -x^(-1)}}}
+    (0. s)
+
+=== Input cell 14 ===
+(* genus 2 (a few seconds per mode, everything exact in Q and x): point vertices with R_Z; Hodge vertices of mode B (weights
+   eps1+eps2, -eps1, -eps2) and of  ...
+--> TableForm[{{"point", {7, 24, 17}, "all values symmetric" -> True, "total = F20" -> True, "total polar part = gap" -> True}, {"B", {7, 37, 27}, "all values symmetric" -> True, "total = F20" -> True, "total polar part = gap" -> True}, {"A", {7, 37, 27}, "all values symmetric" -> True, "total = F20" -> True, "total polar part = gap" -> True}}]
+    (17.900000000000002 s)
+
+=== Input cell 15 ===
+(* the opposite exponent s = +1 does not reproduce F20 (shown for mode B) *)
+Module[{r = runMode[2, "B", 1]}, {r["totalOK"], Factor[r["total"] - FrefHVC[2, x]]} ...
+--> {False, -1/2880*(4*Q^2 - 12*Q*x + 4*Q^2*x + 5*x^2 - 60*Q*x^2 + 9*Q^2*x^2 + 11*x^3 - 108*Q*x^3 + 4*Q^2*x^3 + 16*x^4 - 140*Q*x^4 + 6*Q^2*x^4 + 11*x^5 - 108*Q*x^5 + 4*Q^2*x^5 + 5*x^6 - 60*Q*x^6 + 9*Q^2*x^6 - 12*Q*x^7 + 4*Q^2*x^7 + 4*Q^2*x^8)/((-1 + Q)^2*x^2*(1 + x)^2)}
+    (9.4 s)
+
+=== Input cell 16 ===
+(* mode B per stable graph: only the genus-2 vertex graph is singular at Q = 1 and it carries exactly the gap *)
+tableOf[res2["B"]]
+{Factor /@ res2["B"]["stable ...
+--> {{(7 + 10*x^2 + 7*x^4)/(5760*x), 0}, {(7 + 10*x^2 + 7*x^4)/(5760*x), 0}}
+    (0. s)
+
+=== Input cell 17 ===
+(* mode A and the point expansion: every stable graph is singular *)
+tableOf[res2["A"]]
+tableOf[res2["point"]]
+--> Grid[{{"graph", "genera", "edges", "|Aut|", "decorated graphs", "singular decorated graphs", "polar part {t^-(2g-2), ..., t^-1} at Q = 1 (eps1 = x, eps2 = 1)"}, {1, {2}, {}, 1, 3, 3, {(29 + 1635*x - 10338*x^2 + 11759*x^3 - 10338*x^4 + 1635*x^5 + 29*x^6)/(29859840*x^2), ((-1 + x)^2*(29 + 87*x + 2982*x^2 + 7979*x^3 + 2982*x^4 + 87*x^5 + 29*x^6))/(29859840*x^2*(1 + x)^2)}}, {2, {1}, {{1, 1}}, 2, 5, 5, {(139 + 777*x - 3198*x^2 - 3131*x^3 - 3198*x^4 + 777*x^5 + 139*x^6)/(2488320*x^2), ((-1 + x)^2*(139 + 417*x + 402*x^2 + 109*x^3 + 402*x^4 + 417*x^5 + 139*x^6))/(2488320*x^2*(1 + x)^2)}}, {3, {0}, {{1, 1}, {1, 1}}, 8, 2, 2, {((1 + x + x^2)^2*(1 + 13*x + x^2))/(13824*x^2), ((-1 + x)^2*(1 + x + x^2)^3)/(13824*x^2*(1 + x)^2)}}, {4, {1, 1}, {{1, 2}}, 2, 3, 3, {-1/29859840*(77 + 51*x + 2046*x^2 + 1727*x^3 + 2046*x^4 + 51*x^5 + 77*x^6)/x^2, -1/29859840*((-1 + x)^2*(77 + 231*x - 1914*x^2 - 2053*x^3 - 1914*x^4 + 231*x^5 + 77*x^6))/(x^2*(1 + x)^2)}}, {5, {0, 1}, {{1, 1}, {1, 2}}, 2, 2, 2, {-1/165888*((1 - 23*x + x^2)*(1 + x + x^2)^2)/x^2, -1/165888*((-1 + x)^2*(1 + x + x^2)^3)/(x^2*(1 + x)^2)}}, {6, {0, 0}, {{1, 2}, {1, 2}, {1, 2}}, 12, 1, 1, {-1/20736*(1 + x + x^2)^3/x^2, -1/20736*((-1 + x)^2*(1 + x + x^2)^3)/(x^2*(1 + x)^2)}}, {7, {0, 0}, {{1, 1}, {2, 2}, {1, 2}}, 8, 1, 1, {-1/13824*(1 + x + x^2)^3/x^2, -1/13824*((-1 + x)^2*(1 + x + x^2)^3)/(x^2*(1 + x)^2)}}}, Frame -> All]
+    (0. s)
+
+=== Input cell 18 ===
+(* mode B at the level of decorated graphs: the 7 decorations of the vertex carry the polar part, all 20 decorated graphs with an edge
+   are regular individual ...
+--> {20, <|"graphs with a vertex of genus >= 2" -> {1}, "graphs containing singular decorated graphs" -> {1}, "equal" -> True, "pole order <= bound for every decorated graph" -> True, "tally of {pole order, bound}" -> {{{0, 0}, 20}, {{2, 2}, 7}}|>}
+    (0. s)
+
+=== Input cell 19 ===
+(* the terms of the mode-B edge graphs are simple rational functions of Q and x *)
+Table[{k, res2["B"]["stable"][[k]]["genera"], res2["B"]["stable"][[k]]["edges ...
+--> TableForm[{{2, {1}, {{1, 1}}, (31*Q^5 + 496*Q^4*x - 217*Q^5*x - 1375*Q^3*x^2 - 1338*Q^4*x^2 + 574*Q^5*x^2 - 34622*Q^2*x^3 + 17206*Q^3*x^3 - 2450*Q^4*x^3 - 330*Q^5*x^3 - 72765*Q*x^4 + 18804*Q^2*x^4 - 27037*Q^3*x^4 + 15202*Q^4*x^4 - 1905*Q^5*x^4 - 15390*x^5 - 102060*Q*x^5 - 34536*Q^2*x^5 + 46898*Q^3*x^5 - 29750*Q^4*x^5 + 5715*Q^5*x^5 - 30780*x^6 - 123390*Q*x^6 + 39148*Q^2*x^6 - 71384*Q^3*x^6 + 35680*Q^4*x^6 - 7736*Q^5*x^6 - 15390*x^7 - 102060*Q*x^7 - 34536*Q^2*x^7 + 46898*Q^3*x^7 - 29750*Q^4*x^7 + 5715*Q^5*x^7 - 72765*Q*x^8 + 18804*Q^2*x^8 - 27037*Q^3*x^8 + 15202*Q^4*x^8 - 1905*Q^5*x^8 - 34622*Q^2*x^9 + 17206*Q^3*x^9 - 2450*Q^4*x^9 - 330*Q^5*x^9 - 1375*Q^3*x^10 - 1338*Q^4*x^10 + 574*Q^5*x^10 + 496*Q^4*x^11 - 217*Q^5*x^11 + 31*Q^5*x^12)/(311040*Q*(1 + x)^2*(Q + 4*x - 2*Q*x + Q*x^2)^4)}, {3, {0}, {{1, 1}, {1, 1}}, (Q^5 + 16*Q^4*x - 7*Q^5*x + 95*Q^3*x^2 - 78*Q^4*x^2 + 22*Q^5*x^2 + 256*Q^2*x^3 - 278*Q^3*x^3 + 172*Q^4*x^3 - 42*Q^5*x^3 + 237*Q*x^4 - 180*Q^2*x^4 + 341*Q^3*x^4 - 242*Q^4*x^4 + 57*Q^5*x^4 - 270*x^5 + 852*Q*x^5 - 54*Q^2*x^5 - 418*Q^3*x^5 + 268*Q^4*x^5 - 63*Q^5*x^5 - 540*x^6 + 1710*Q*x^6 - 1124*Q^2*x^6 + 520*Q^3*x^6 - 272*Q^4*x^6 + 64*Q^5*x^6 - 270*x^7 + 852*Q*x^7 - 54*Q^2*x^7 - 418*Q^3*x^7 + 268*Q^4*x^7 - 63*Q^5*x^7 + 237*Q*x^8 - 180*Q^2*x^8 + 341*Q^3*x^8 - 242*Q^4*x^8 + 57*Q^5*x^8 + 256*Q^2*x^9 - 278*Q^3*x^9 + 172*Q^4*x^9 - 42*Q^5*x^9 + 95*Q^3*x^10 - 78*Q^4*x^10 + 22*Q^5*x^10 + 16*Q^4*x^11 - 7*Q^5*x^11 + Q^5*x^12)/(1728*Q*(1 + x)^2*(Q + 4*x - 2*Q*x + Q*x^2)^4)}, {4, {1, 1}, {{1, 2}}, -1/3732480*(473*Q^5 + 15128*Q^4*x - 2771*Q^5*x + 130795*Q^3*x^2 - 60654*Q^4*x^2 + 6572*Q^5*x^2 + 415664*Q^2*x^3 - 243142*Q^3*x^3 + 84260*Q^4*x^3 - 8490*Q^5*x^3 + 506025*Q*x^4 - 83028*Q^2*x^4 + 165889*Q^3*x^4 - 73594*Q^4*x^4 + 8385*Q^5*x^4 - 25110*x^5 + 942660*Q*x^5 + 71922*Q^2*x^5 - 312146*Q^3*x^5 + 128300*Q^4*x^5 - 10035*Q^5*x^5 - 50220*x^6 + 1528470*Q*x^6 - 909556*Q^2*x^6 + 517208*Q^3*x^6 - 186880*Q^4*x^6 + 11732*Q^5*x^6 - 25110*x^7 + 942660*Q*x^7 + 71922*Q^2*x^7 - 312146*Q^3*x^7 + 128300*Q^4*x^7 - 10035*Q^5*x^7 + 506025*Q*x^8 - 83028*Q^2*x^8 + 165889*Q^3*x^8 - 73594*Q^4*x^8 + 8385*Q^5*x^8 + 415664*Q^2*x^9 - 243142*Q^3*x^9 + 84260*Q^4*x^9 - 8490*Q^5*x^9 + 130795*Q^3*x^10 - 60654*Q^4*x^10 + 6572*Q^5*x^10 + 15128*Q^4*x^11 - 2771*Q^5*x^11 + 473*Q^5*x^12)/(Q*(1 + x)^2*(Q + 4*x - 2*Q*x + Q*x^2)^4)}, {5, {0, 1}, {{1, 1}, {1, 2}}, (11*Q^5 + 248*Q^4*x - 77*Q^5*x + 1981*Q^3*x^2 - 1218*Q^4*x^2 + 242*Q^5*x^2 + 6626*Q^2*x^3 - 5290*Q^3*x^3 + 2486*Q^4*x^3 - 474*Q^5*x^3 + 7791*Q*x^4 - 2988*Q^2*x^4 + 5119*Q^3*x^4 - 3238*Q^4*x^4 + 699*Q^5*x^4 + 378*x^5 + 12036*Q*x^5 + 2160*Q^2*x^5 - 5966*Q^3*x^5 + 3866*Q^4*x^5 - 873*Q^5*x^5 + 756*x^6 + 17802*Q*x^6 - 10084*Q^2*x^6 + 8312*Q^3*x^6 - 4288*Q^4*x^6 + 944*Q^5*x^6 + 378*x^7 + 12036*Q*x^7 + 2160*Q^2*x^7 - 5966*Q^3*x^7 + 3866*Q^4*x^7 - 873*Q^5*x^7 + 7791*Q*x^8 - 2988*Q^2*x^8 + 5119*Q^3*x^8 - 3238*Q^4*x^8 + 699*Q^5*x^8 + 6626*Q^2*x^9 - 5290*Q^3*x^9 + 2486*Q^4*x^9 - 474*Q^5*x^9 + 1981*Q^3*x^10 - 1218*Q^4*x^10 + 242*Q^5*x^10 + 248*Q^4*x^11
+    (0. s)
+
+=== Input cell 20 ===
+(* individual terms have a simple pole at Q = 0 (the canonical coordinates degenerate there) whose residues cancel; the sum at Q = 0
+   is the constant-map term ...
+--> {{(17*x)/1179648, (-19*x)/98304, (-5*x)/8192, (31*x)/1179648, (7*x)/98304, (7*x)/12288, x/8192}, (-1 - x^2)/5760, (-1 - x^2)/5760}
+    (0.2 s)
+
+=== Input cell 21 ===
+(* regression against the stored runs of hvc_run.wls *)
+Table[If[FileExistsQ["hvc_results_g2_" <> t <> ".m"], Module[{st = Get["hvc_results_g2_" <> t <> ".m"],  ...
+--> {{"Bm", True}, {"Am", True}, {"point", True}}
+    (0.1 s)
+
+=== Input cell 22 ===
+(* genus 3: 42 stable graphs, 693 decorated graphs with Hodge vertices (378 with point vertices). The stored results of hvc_run.wls
+   (hvc_results_g3_Bm.m, _Am ...
+--> TableForm[{{"B", 693, "total = F30" -> True, "total polar part = gap" -> True, {-1/161280*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}}, {"A", 693, "total = F30" -> True, "total polar part = gap" -> True, {-1/161280*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}}, {"point", 378, "total = F30" -> True, "total polar part = gap" -> True, {-1/161280*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}}}]
+    (2.7 s)
+
+=== Input cell 23 ===
+(* mode B per stable graph: only the genus-3 vertex graph is singular at Q = 1 and it carries exactly the gap *)
+tableOf[res3["B"]]
+{Factor /@ res3["B"]["stable ...
+--> {{-1/161280*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}, {-1/161280*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}}
+    (0. s)
+
+=== Input cell 24 ===
+(* mode B: the stable graphs with a vertex of genus >= 2 are exactly those containing singular decorated graphs, and the conifold
+   pole order of every decorat ...
+--> <|"graphs with a vertex of genus >= 2" -> {1, 2, 5, 6}, "graphs containing singular decorated graphs" -> {1, 2, 5, 6}, "equal" -> True, "pole order <= bound for every decorated graph" -> True, "tally of {pole order, bound}" -> {{{0, 0}, 504}, {{0, 4}, 1}, {{2, 2}, 159}, {{4, 4}, 29}}|>
+    (0.1 s)
+
+=== Input cell 25 ===
+(* the genus-3 vertex graph: decomposition of its polar part over its decorated graphs (dilaton-leaf patterns) *)
+Grid[Prepend[Table[{e[[1]], e[[2, 2]], Factor  ...
+--> Grid[{{"id", "dilaton leaves", "polar part {t^-4, ..., t^-1}"}, {{1, 1}, {{}}, {-1/1451520*(1 + x)^4, -1/725760*((-1 + x)^2*(1 + x)^2), (-11 + 28*x - 30*x^2 + 28*x^3 - 11*x^4)/8709120, -1/1451520*((-1 + x)^2*(1 + x^4))/(1 + x)^2}}, {{1, 2}, {{2}}, {0, 0, 0, 0}}, {{1, 3}, {{3}}, {(-41*(1 + x)^2*(1 + x + x^2))/1451520, (41*(-1 + x)^2*(1 + x + x^2))/1451520, (41*(1 + x + x^2)*(1 + 4*x - 12*x^2 + 4*x^3 + x^4))/(2177280*(1 + x)^2), (3239*(-1 + x)^2*x^2*(1 + x + x^2))/(8709120*(1 + x)^4)}}, {{1, 4}, {{4}}, {-1/967680*(31 + 93*x + 208*x^2 + 261*x^3 + 208*x^4 + 93*x^5 + 31*x^6)/x, ((-1 + x)^2*(31 + 93*x + 208*x^2 + 261*x^3 + 208*x^4 + 93*x^5 + 31*x^6))/(193536*x*(1 + x)^2), -1/1161216*((4 - 44*x + 87*x^2 - 44*x^3 + 4*x^4)*(31 + 93*x + 208*x^2 + 261*x^3 + 208*x^4 + 93*x^5 + 31*x^6))/(x*(1 + x)^4), -1/1161216*((-1 + x)^2*(48 - 187*x + 48*x^2)*(31 + 93*x + 208*x^2 + 261*x^3 + 208*x^4 + 93*x^5 + 31*x^6))/(1 + x)^6}}, {{1, 5}, {{5}}, {(-41*(1 + x + x^2)^2)/580608, (533*(-1 + x)^2*(1 + x + x^2)^2)/(580608*(1 + x)^2), (-41*(1 + x + x^2)^2*(44 - 292*x + 525*x^2 - 292*x^3 + 44*x^4))/(870912*(1 + x)^4), (41*(-1 + x)^2*(1 + x + x^2)^2*(144 - 2400*x + 6635*x^2 - 2400*x^3 + 144*x^4))/(3483648*(1 + x)^6)}}, {{1, 6}, {{6}}, {(-7*x*(1 + x + x^2))/138240, (203*(-1 + x)^2*x*(1 + x + x^2))/(138240*(1 + x)^2), (-7*x*(1 + x + x^2)*(812 - 4684*x + 8103*x^2 - 4684*x^3 + 812*x^4))/(829440*(1 + x)^4), (7*(-1 + x)^2*x*(1 + x + x^2)*(480 - 5200*x + 12517*x^2 - 5200*x^3 + 480*x^4))/(276480*(1 + x)^6)}}, {{1, 7}, {{7}}, {-1/82944*x^2, (61*(-1 + x)^2*x^2)/(82944*(1 + x)^2), -1/31104*(x^2*(191 - 1036*x + 1758*x^2 - 1036*x^3 + 191*x^4))/(1 + x)^4, ((-1 + x)^2*x^2*(3120 - 28000*x + 62713*x^2 - 28000*x^3 + 3120*x^4))/(165888*(1 + x)^6)}}, {{1, 8}, {{2, 2}}, {(11*(1 + x)^2*(1 + x + x^2))/103680, 0, (-11*(1 + x + x^2)*(1 + 4*x - 12*x^2 + 4*x^3 + x^4))/(622080*(1 + x)^2), (-11*(-1 + x)^2*x^2*(1 + x + x^2))/(31104*(1 + x)^4)}}, {{1, 9}, {{2, 3}}, {(155 + 465*x + 1021*x^2 + 1267*x^3 + 1021*x^4 + 465*x^5 + 155*x^6)/(483840*x), -1/241920*((-1 + x)^2*(155 + 465*x + 1021*x^2 + 1267*x^3 + 1021*x^4 + 465*x^5 + 155*x^6))/(x*(1 + x)^2), ((5 - 64*x + 129*x^2 - 64*x^3 + 5*x^4)*(155 + 465*x + 1021*x^2 + 1267*x^3 + 1021*x^4 + 465*x^5 + 155*x^6))/(2903040*x*(1 + x)^4), ((-1 + x)^2*(60 - 233*x + 60*x^2)*(155 + 465*x + 1021*x^2 + 1267*x^3 + 1021*x^4 + 465*x^5 + 155*x^6))/(2903040*(1 + x)^6)}}, {{1, 10}, {{2, 4}}, {(2329*(1 + x + x^2)^2)/2903040, (-2329*(-1 + x)^2*(1 + x + x^2)^2)/(483840*(1 + x)^2), (2329*(1 + x + x^2)^2*(53 - 364*x + 660*x^2 - 364*x^3 + 53*x^4))/(17418240*(1 + x)^4), (-2329*(-1 + x)^2*(1 + x + x^2)^2*(3 - 50*x + 138*x^2 - 50*x^3 + 3*x^4))/(1451520*(1 + x)^6)}}, {{1, 11}, {{2, 5}}, {(323*x*(1 + x + x^2))/483840, (-323*(-1 + x)^2*x*(1 + x + x^2))/(34560*(1 + x)^2), (323*x*(1 + x + x^2)*(257 - 1504*x + 2613*x^2 - 1504*x^3 + 257*x^4))/(2903040*(1 + x)^4), (-323*(-1 + x)^2*x*(1 + x + x^2)*(120 - 1300*x + 3127*x^2 - 1300*x^3 + 120*x^4))/(967680*(1 + x)^6)}}, {{1, 12}, {{2, 6}}, {(77*x^2)/414720,
+    (0. s)
+
+=== Input cell 26 ===
+(* the other stable graphs with a genus-2 vertex: singular decorated graphs that cancel only in the sum over the decorations of the graph *)
+Table[With[{st = re ...
+--> TableForm[{{1, {3}, {}, 30, 29, {-1/161280*((1 + x^2)*(31 + 18*x^2 + 31*x^4))/x, 0, 0, 0}}, {2, {2}, {{1, 1}}, 59, 59, "regular"}, {5, {1, 2}, {{1, 2}}, 75, 75, "regular"}, {6, {0, 2}, {{1, 1}, {1, 2}}, 25, 25, "regular"}}]
+    (0. s)
+
+=== Input cell 27 ===
+(* modes A and point: every stable graph singular *)
+tableOf[res3["A"]]
+tableOf[res3["point"]]
+--> Grid[{{"graph", "genera", "edges", "|Aut|", "decorated graphs", "singular decorated graphs", "polar part {t^-(2g-2), ..., t^-1} at Q = 1 (eps1 = x, eps2 = 1)"}, {1, {3}, {}, 1, 11, 11, {(8144609 + 107580414*x - 839543475*x^2 - 14347143110*x^3 + 53929299114*x^4 - 38176310250*x^5 + 26038296021*x^6 - 38176310250*x^7 + 53929299114*x^8 - 14347143110*x^9 - 839543475*x^10 + 107580414*x^11 + 8144609*x^12)/(1155790798848000*x^4), ((-1 + x)^2*(8144609 + 78224034*x + 42948465*x^2 - 87741290*x^3 - 4838621886*x^4 - 8494688790*x^5 - 5377597359*x^6 - 8494688790*x^7 - 4838621886*x^8 - 87741290*x^9 + 42948465*x^10 + 78224034*x^11 + 8144609*x^12))/(577895399424000*x^4*(1 + x)^2), (89590699 + 426920662*x + 442085613*x^2 - 670953462*x^3 + 1938854151*x^4 + 26803790652*x^5 - 47651873614*x^6 + 58731505400*x^7 - 135606951702*x^8 + 58731505400*x^9 - 47651873614*x^10 + 26803790652*x^11 + 1938854151*x^12 - 670953462*x^13 + 442085613*x^14 + 426920662*x^15 + 89590699*x^16)/(6934744793088000*x^4*(1 + x)^4), ((-1 + x)^2*(8144609 + 48867654*x + 117276405*x^2 + 128643070*x^3 + 158615783*x^4 - 3346586376*x^5 + 24918472746*x^6 - 74761454900*x^7 - 226326134232*x^8 - 74761454900*x^9 + 24918472746*x^10 - 3346586376*x^11 + 158615783*x^12 + 128643070*x^13 + 117276405*x^14 + 48867654*x^15 + 8144609*x^16))/(1155790798848000*x^4*(1 + x)^6)}}, {2, {2}, {{1, 1}}, 2, 28, 28, {(14607727 - 71095938*x - 1185075345*x^2 - 6782569750*x^3 + 13352664222*x^4 + 336505590*x^5 + 16779930063*x^6 + 336505590*x^7 + 13352664222*x^8 - 6782569750*x^9 - 1185075345*x^10 - 71095938*x^11 + 14607727*x^12)/(144473849856000*x^4), ((-1 + x)^2*(14607727 + 8275212*x - 325426635*x^2 - 686728900*x^3 - 895004478*x^4 - 1768099860*x^5 - 2673269607*x^6 - 1768099860*x^7 - 895004478*x^8 - 686728900*x^9 - 325426635*x^10 + 8275212*x^11 + 14607727*x^12))/(72236924928000*x^4*(1 + x)^2), (160684997 + 237609026*x - 770754741*x^2 - 2673418506*x^3 - 1364804367*x^4 + 9095269596*x^5 + 16033332958*x^6 - 129010400*x^7 + 14272911774*x^8 - 129010400*x^9 + 16033332958*x^10 + 9095269596*x^11 - 1364804367*x^12 - 2673418506*x^13 - 770754741*x^14 + 237609026*x^15 + 160684997*x^16)/(866843099136000*x^4*(1 + x)^4), ((-1 + x)^2*(14607727 + 87646362*x + 229604475*x^2 + 365574530*x^3 + 1009777609*x^4 - 4907443128*x^5 - 22471520682*x^6 - 4448771500*x^7 + 36125036664*x^8 - 4448771500*x^9 - 22471520682*x^10 - 4907443128*x^11 + 1009777609*x^12 + 365574530*x^13 + 229604475*x^14 + 87646362*x^15 + 14607727*x^16))/(144473849856000*x^4*(1 + x)^6)}}, {3, {1}, {{1, 1}, {1, 1}}, 8, 26, 26, {-1/1031956070400*(58129 + 1100454*x + 15981285*x^2 + 105661970*x^3 + 10360314*x^4 - 80999010*x^5 - 264250659*x^6 - 80999010*x^7 + 10360314*x^8 + 105661970*x^9 + 15981285*x^10 + 1100454*x^11 + 58129*x^12)/x^4, -1/515978035200*((-1 + x)^2*(58129 + 724614*x + 4619685*x^2 + 11706290*x^3 + 15302394*x^4 + 9777150*x^5 + 7641501*x^6 + 9777150*x^7 + 15302394*x^8 + 11706290*x^9 + 4619685*x^10 + 724614*x^11 + 58129*x^12))/(x^4*(1 + x)^2), -1/6191736422400*(639419 + 3712262*x + 5461293*x
+    (0.2 s)
+
+=== Input cell 28 ===
+(* mode B, genus 3: the terms of the stable graphs with three or four vertices as rational functions of Q and x *)
+Table[With[{st = res3["B"]["stable"][[k]]}, { ...
+--> TableForm[{{17, {1, 1, 1}, {{1, 3}, {2, 3}}, (484*Q^10 + 260513*Q^9*x - 5808*Q^10*x + 2795309*Q^8*x^2 + 461846*Q^9*x^2 + 34320*Q^10*x^2 + 6436902*Q^7*x^3 + 33659858*Q^8*x^3 - 16653628*Q^9*x^3 - 136972*Q^10*x^3 + 40101612*Q^6*x^4 + 330657480*Q^7*x^4 - 314501967*Q^8*x^4 + 76150434*Q^9*x^4 + 418320*Q^10*x^4 + 701247523*Q^5*x^5 + 1216897144*Q^6*x^5 - 2015235794*Q^7*x^5 + 942067488*Q^8*x^5 - 156055722*Q^9*x^5 - 1019556*Q^10*x^5 + 5298681079*Q^4*x^6 - 218416394*Q^5*x^6 - 4417614113*Q^6*x^6 + 3596370440*Q^7*x^6 - 1322574333*Q^8*x^6 + 169974246*Q^9*x^6 + 1998105*Q^10*x^6 + 11374318598*Q^3*x^7 + 12934976976*Q^4*x^7 - 22454546094*Q^5*x^7 + 13364711840*Q^6*x^7 - 4732630206*Q^7*x^7 + 1251357768*Q^8*x^7 - 170405832*Q^9*x^7 - 3166920*Q^10*x^7 + 14541220305*Q^2*x^8 + 29960427648*Q^3*x^8 - 686025419*Q^4*x^8 - 8851267974*Q^5*x^8 - 6190547838*Q^6*x^8 + 7694281240*Q^7*x^8 - 2140401711*Q^8*x^8 + 327673194*Q^9*x^8 + 4065939*Q^10*x^8 + 7509793500*Q*x^9 + 52581514500*Q^2*x^9 + 35015014140*Q^3*x^9 - 7049434516*Q^4*x^9 - 677336916*Q^5*x^9 - 2529673596*Q^6*x^9 - 3708296944*Q^7*x^9 + 3015538728*Q^8*x^9 - 416747433*Q^9*x^9 - 3961000*Q^10*x^9 + 1233796050*x^10 + 36399553200*Q*x^10 + 81966997305*Q^2*x^10 + 66580877320*Q^3*x^10 - 47747031831*Q^4*x^10 + 43156369926*Q^5*x^10 - 12763746008*Q^6*x^10 - 4708567560*Q^7*x^10 + 251819982*Q^8*x^10 + 3324736*Q^9*x^10 + 1844589*Q^10*x^10 + 7402776300*x^11 + 75003310800*Q*x^11 + 104389198200*Q^2*x^11 + 92950624458*Q^3*x^11 - 53534085268*Q^4*x^11 + 54187210670*Q^5*x^11 - 14756978800*Q^6*x^11 + 2994591064*Q^7*x^11 - 4824925802*Q^8*x^11 + 555858052*Q^9*x^11 + 2727636*Q^10*x^11 + 18506940750*x^12 + 92573960400*Q*x^12 + 158992868790*Q^2*x^12 + 32431862520*Q^3*x^12 + 62877535755*Q^4*x^12 - 34093953910*Q^5*x^12 + 23343920267*Q^6*x^12 - 6924855520*Q^7*x^12 + 3530131072*Q^8*x^12 - 580007240*Q^9*x^12 - 8015645*Q^10*x^12 + 24675921000*x^13 + 92920818600*Q*x^13 + 197060747400*Q^2*x^13 - 20732194968*Q^3*x^13 + 134773713648*Q^4*x^13 - 63498613662*Q^5*x^13 + 5385858984*Q^6*x^13 + 14934497796*Q^7*x^13 - 849932784*Q^8*x^13 + 412333668*Q^9*x^13 + 10433016*Q^10*x^13 + 18506940750*x^14 + 92573960400*Q*x^14 + 158992868790*Q^2*x^14 + 32431862520*Q^3*x^14 + 62877535755*Q^4*x^14 - 34093953910*Q^5*x^14 + 23343920267*Q^6*x^14 - 6924855520*Q^7*x^14 + 3530131072*Q^8*x^14 - 580007240*Q^9*x^14 - 8015645*Q^10*x^14 + 7402776300*x^15 + 75003310800*Q*x^15 + 104389198200*Q^2*x^15 + 92950624458*Q^3*x^15 - 53534085268*Q^4*x^15 + 54187210670*Q^5*x^15 - 14756978800*Q^6*x^15 + 2994591064*Q^7*x^15 - 4824925802*Q^8*x^15 + 555858052*Q^9*x^15 + 2727636*Q^10*x^15 + 1233796050*x^16 + 36399553200*Q*x^16 + 81966997305*Q^2*x^16 + 66580877320*Q^3*x^16 - 47747031831*Q^4*x^16 + 43156369926*Q^5*x^16 - 12763746008*Q^6*x^16 - 4708567560*Q^7*x^16 + 251819982*Q^8*x^16 + 3324736*Q^9*x^16 + 1844589*Q^10*x^16 + 7509793500*Q*x^17 + 52581514500*Q^2*x^17 + 35015014140*Q^3*x^17 - 7049434516*Q^4*x^17 - 677336916*Q^5*x^17 - 2529673596*Q^6*x^17 - 3708296944*Q^7*x^17 + 3015538728*Q^8*x^17 - 416747433*Q^9*x
+    (0.1 s)
+
+=== Input cell 29 ===
+(* denominators of the mode-B stable-graph terms at genus 3 from FactorList: powers of (1-Q), Q, the discriminant Q(1-x)^2+4x (the two
+   idempotents collide at ...
+--> {{{{0, 2, 8, 0, 6, 1}, 41}, {{4, 2, 8, 1, 6, 1}, 1}}, "total:", {4, 0, 0, 1, 0, 1}}
+    (0.2 s)
+
+=== Input cell 30 ===
+(* residues at Q = 0 of the stable-graph terms cancel; the total at Q = 0 is F_{3,0}(0) *)
+{Factor[Total[Table[Residue[res3["B"]["stable"][[k]]["term"], {Q, 0}] ...
+--> {0, (-1 - x^4)/1451520, (-1 - x^4)/1451520}
+    (1.4000000000000001 s)
+
+=== Input cell 31 ===
+(* genus 4 (mode B) is computed on Stanage with cluster_genus4_hodge_conifold/ (379 stable graphs, 27172 decorated graphs, exact in Q and x)
+   and copied back  ...
+379 stable graphs, 27172 decorated graphs; total = F40 (closed form): True; total polar part = gap: True
+    (3.7 s)
+
+=== Input cell 32 ===
+(* total polar part {t^-6, ..., t^-1} versus the gap polar part of P_4 Li_{-5}(Q)/(eps1 eps2) *)
+If[ValueQ[res4], {Factor /@ res4["polar"], gapHVC[4, x]}]
+--> {{(381 + 620*x^2 + 686*x^4 + 620*x^6 + 381*x^8)/(3870720*x), 0, 0, 0, 0, 0}, {(381 + 620*x^2 + 686*x^4 + 620*x^6 + 381*x^8)/(3870720*x), 0, 0, 0, 0, 0}}
+    (0. s)
+
+=== Input cell 33 ===
+(* which stable graphs are singular at Q = 1 (expected: only the genus-4 vertex graph, with exactly the gap) *)
+If[ValueQ[res4], Module[{sing = Select[Range[Len ...
+--> {378, "regular of", 379, "; singular:", {{1, {4}, {}, {(381 + 620*x^2 + 686*x^4 + 620*x^6 + 381*x^8)/(3870720*x), 0, 0, 0, 0, 0}}}}
+    (0. s)
+
+=== Input cell 34 ===
+(* the structural statements: singular decorated graphs only in the stable graphs with a vertex of genus >= 2, pole order <= Sum_v max(2 g_v - 2, 0) *)
+If[Value ...
+--> Grid[{{"graph", "genera", "edges", "decorated graphs", "singular decorated graphs"}, {1, {4}, {}, 97, 96}, {2, {3}, {{1, 1}}, 293, 284}, {3, {2}, {{1, 1}, {1, 1}}, 307, 307}, {6, {1, 3}, {{1, 2}}, 357, 345}, {7, {2, 2}, {{1, 2}}, 325, 325}, {8, {0, 3}, {{1, 1}, {1, 2}}, 119, 115}, {9, {1, 2}, {{1, 2}, {1, 2}}, 512, 512}, {10, {1, 2}, {{2, 2}, {1, 2}}, 666, 666}, {11, {1, 2}, {{1, 1}, {1, 2}}, 625, 625}, {12, {0, 2}, {{1, 2}, {1, 2}, {1, 2}}, 119, 119}, {13, {0, 2}, {{1, 1}, {1, 2}, {1, 2}}, 210, 210}, {14, {0, 2}, {{1, 1}, {2, 2}, {1, 2}}, 222, 222}, {15, {0, 2}, {{1, 1}, {1, 1}, {1, 2}}, 225, 225}, {35, {1, 1, 2}, {{1, 3}, {2, 3}}, 453, 453}, {36, {1, 1, 2}, {{1, 2}, {2, 3}}, 750, 750}, {37, {0, 1, 2}, {{1, 2}, {1, 3}, {1, 3}}, 177, 177}, {38, {0, 1, 2}, {{1, 2}, {1, 2}, {1, 3}}, 175, 175}, {39, {0, 1, 2}, {{1, 1}, {1, 3}, {2, 3}}, 276, 276}, {40, {0, 1, 2}, {{1, 1}, {1, 2}, {2, 3}}, 250, 250}, {41, {0, 1, 2}, {{1, 1}, {1, 2}, {1, 3}}, 300, 300}, {46, {0, 0, 2}, {{1, 2}, {1, 2}, {1, 3}, {2, 3}}, 59, 59}, {47, {0, 0, 2}, {{1, 2}, {1, 2}, {1, 2}, {2, 3}}, 75, 75}, {48, {0, 0, 2}, {{2, 2}, {1, 2}, {1, 3}, {1, 3}}, 59, 59}, {49, {0, 0, 2}, {{2, 2}, {1, 2}, {1, 2}, {1, 3}}, 75, 75}, {50, {0, 0, 2}, {{1, 1}, {2, 2}, {1, 3}, {2, 3}}, 59, 59}, {51, {0, 0, 2}, {{1, 1}, {2, 2}, {1, 2}, {2, 3}}, 100, 100}, {114, {0, 1, 1, 2}, {{1, 2}, {1, 3}, {1, 4}}, 150, 150}, {117, {0, 0, 1, 2}, {{1, 2}, {1, 2}, {1, 4}, {2, 3}}, 75, 75}, {118, {0, 0, 1, 2}, {{2, 2}, {1, 2}, {1, 3}, {1, 4}}, 75, 75}, {128, {0, 0, 0, 2}, {{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 3}}, 25, 25}, {129, {0, 0, 0, 2}, {{3, 3}, {1, 2}, {1, 2}, {1, 4}, {2, 3}}, 25, 25}, {130, {0, 0, 0, 2}, {{2, 2}, {3, 3}, {1, 2}, {1, 3}, {1, 4}}, 25, 25}}, Frame -> All]
+    (7. s)
+
+headless run finished

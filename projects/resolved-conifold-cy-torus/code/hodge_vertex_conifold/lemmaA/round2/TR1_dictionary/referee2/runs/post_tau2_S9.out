@@ -1,0 +1,44 @@
+(0,3): 1 coefficients, symmetry violations 0, outside 0; vs genus0: 1 compared, 0 mismatches
+(0,4): 5 coefficients, symmetry violations 0, outside 0; vs genus0: 5 compared, 0 mismatches
+(0,5): 21 coefficients, symmetry violations 0, outside 0; vs genus0: 21 compared, 0 mismatches
+(0,6): 84 coefficients, symmetry violations 0, outside 0; vs genus0: 84 compared, 0 mismatches
+(0,7): 330 coefficients, symmetry violations 0, outside 0; vs genus0: 330 compared, 0 mismatches
+(0,8): 1287 coefficients, symmetry violations 0, outside 0; vs genus0: 1287 compared, 0 mismatches
+(0,9): 5005 coefficients, symmetry violations 0, outside 0; vs genus0: 5005 compared, 0 mismatches
+(1,1): 2 coefficients, symmetry violations 0, outside 0; vs engine: 2 compared, 0 mismatches; vs refengine: 2 compared, 0 mismatches
+(1,2): 6 coefficients, symmetry violations 0, outside 0; vs engine: 6 compared, 0 mismatches; vs refengine: 6 compared, 0 mismatches
+(1,3): 20 coefficients, symmetry violations 0, outside 0; vs engine: 20 compared, 0 mismatches; vs refengine: 20 compared, 0 mismatches
+(1,4): 70 coefficients, symmetry violations 0, outside 0; 
+(1,5): 252 coefficients, symmetry violations 0, outside 0; 
+(1,6): 924 coefficients, symmetry violations 0, outside 0; 
+(1,7): 3432 coefficients, symmetry violations 0, outside 0; 
+(1,8): 12870 coefficients, symmetry violations 0, outside 0; 
+(2,1): 5 coefficients, symmetry violations 0, outside 0; vs engine: 5 compared, 0 mismatches; vs refengine: 5 compared, 0 mismatches; vs (6.1): 8 j-values, 0 mismatches; TR zeros at j = 1 2; x-degree: 2 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 1 of 1 non-zero
+(2,2): 21 coefficients, symmetry violations 0, outside 0; vs engine: 21 compared, 0 mismatches; vs refengine: 21 compared, 0 mismatches; x-degree: 3 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 3 of 3 non-zero
+(2,3): 84 coefficients, symmetry violations 0, outside 0; vs engine: 84 compared, 0 mismatches; vs refengine: 84 compared, 0 mismatches; x-degree: 4 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 6 of 6 non-zero
+(2,4): 330 coefficients, symmetry violations 0, outside 0; vs engine: 330 compared, 0 mismatches; x-degree: 5 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 10 of 10 non-zero
+(2,5): 1287 coefficients, symmetry violations 0, outside 0; x-degree: 6 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 15 of 15 non-zero
+(2,6): 5005 coefficients, symmetry violations 0, outside 0; x-degree: 7 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 21 of 21 non-zero
+(2,7): 19448 coefficients, symmetry violations 0, outside 0; x-degree: 8 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 28 of 28 non-zero
+(3,1): 8 coefficients, symmetry violations 0, outside 0; vs engine: 8 compared, 0 mismatches; vs refengine: 8 compared, 0 mismatches; vs (6.1): 11 j-values, 0 mismatches; TR zeros at j = 1 2 3 4; x-degree: 4 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 1 of 1 non-zero
+(3,2): 45 coefficients, symmetry violations 0, outside 0; vs engine: 45 compared, 0 mismatches; vs refengine: 45 compared, 0 mismatches; x-degree: 10 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 5 of 5 non-zero
+(3,3): 220 coefficients, symmetry violations 0, outside 0; vs engine: 220 compared, 0 mismatches; vs refengine: 220 compared, 0 mismatches; x-degree: 20 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 15 of 15 non-zero
+(3,4): 1001 coefficients, symmetry violations 0, outside 0; vs engine: 1001 compared, 0 mismatches; x-degree: 35 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 35 of 35 non-zero
+(3,5): 4368 coefficients, symmetry violations 0, outside 0; x-degree: 56 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 70 of 70 non-zero
+(3,6): 18564 coefficients, symmetry violations 0, outside 0; x-degree: 84 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 126 of 126 non-zero
+(4,1): 11 coefficients, symmetry violations 0, outside 0; vs engine: 11 compared, 0 mismatches; vs refengine: 11 compared, 0 mismatches; vs (6.1): 14 j-values, 0 mismatches; TR zeros at j = 1 2 3 4 5 6; x-degree: 6 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 1 of 1 non-zero
+(4,2): 78 coefficients, symmetry violations 0, outside 0; vs engine: 78 compared, 0 mismatches; vs refengine: 78 compared, 0 mismatches; x-degree: 21 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 7 of 7 non-zero
+(4,3): 455 coefficients, symmetry violations 0, outside 0; vs engine: 455 compared, 0 mismatches; vs refengine: 455 compared, 0 mismatches; x-degree: 56 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 28 of 28 non-zero
+(4,4): 2380 coefficients, symmetry violations 0, outside 0; vs engine: 2380 compared, 0 mismatches; x-degree: 126 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 84 of 84 non-zero
+(4,5): 11628 coefficients, symmetry violations 0, outside 0; vs engine: 11628 compared, 0 mismatches; x-degree: 252 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 210 of 210 non-zero
+(5,1): 14 coefficients, symmetry violations 0, outside 0; vs engine: 14 compared, 0 mismatches; vs refengine: 14 compared, 0 mismatches; vs (6.1): 17 j-values, 0 mismatches; TR zeros at j = 1 2 3 4 5 6 7 8; x-degree: 8 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 1 of 1 non-zero
+(5,2): 120 coefficients, symmetry violations 0, outside 0; vs engine: 120 compared, 0 mismatches; vs refengine: 120 compared, 0 mismatches; x-degree: 36 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 9 of 9 non-zero
+(5,3): 816 coefficients, symmetry violations 0, outside 0; vs engine: 816 compared, 0 mismatches; vs refengine: 816 compared, 0 mismatches; x-degree: 120 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 45 of 45 non-zero
+(5,4): 4845 coefficients, symmetry violations 0, outside 0; vs engine: 4845 compared, 0 mismatches; vs refengine: 4845 compared, 0 mismatches; x-degree: 330 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 165 of 165 non-zero
+(6,1): 17 coefficients, symmetry violations 0, outside 0; vs engine: 17 compared, 0 mismatches; vs refengine: 17 compared, 0 mismatches; vs (6.1): 20 j-values, 0 mismatches; TR zeros at j = 1 2 3 4 5 6 7 8 9 10; x-degree: 10 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 1 of 1 non-zero
+(6,2): 171 coefficients, symmetry violations 0, outside 0; vs engine: 171 compared, 0 mismatches; vs refengine: 171 compared, 0 mismatches; x-degree: 55 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 11 of 11 non-zero
+(6,3): 1330 coefficients, symmetry violations 0, outside 0; vs engine: 1330 compared, 0 mismatches; vs refengine: 1330 compared, 0 mismatches; x-degree: 220 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 66 of 66 non-zero
+(7,1): 20 coefficients, symmetry violations 0, outside 0; vs refengine: 20 compared, 0 mismatches; vs (6.1): 23 j-values, 0 mismatches; TR zeros at j = 1 2 3 4 5 6 7 8 9 10 11 12; x-degree: 12 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 1 of 1 non-zero
+(7,2): 231 coefficients, symmetry violations 0, outside 0; vs refengine: 231 compared, 0 mismatches; x-degree: 78 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 13 of 13 non-zero
+(8,1): 23 coefficients, symmetry violations 0, outside 0; vs (6.1) [h>=8: (6.1) conjectural]: 26 j-values, 0 mismatches; TR zeros at j = 1 2 3 4 5 6 7 8 9 10 11 12 13 14; x-degree: 14 coefficients with |mu| <= 2g-3+n, 0 non-zero; layer |mu| = 2g-2+n: 1 of 1 non-zero
+TOTAL: 38952 comparisons with Hodge-side data (h <= 7), 0 failures; time 1245.0 s

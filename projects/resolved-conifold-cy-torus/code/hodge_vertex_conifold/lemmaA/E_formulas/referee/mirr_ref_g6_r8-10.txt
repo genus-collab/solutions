@@ -1,0 +1,5 @@
+genus 6: 8 tau values, Omega built [0.5 s]
+genus 6 R = {2,2,2,2,2,2,2,2} D = 8: all components 0 [1897.8 s]
+genus 6 R = {2,2,2,2,2,2,2,3} D = 9: all components 0 [4591.6 s]
+genus 6 R = {2,2,2,2,2,2,2,4} D = 10 (control): non-zero components {0 1 2 3 4 5 6} [7139.3 s]
+genus 6 R = {2,2,2,2,2,2,3,3} D = 10 (control): non-zero components {0 1 2 3 4 5 6} [10291.9 s]

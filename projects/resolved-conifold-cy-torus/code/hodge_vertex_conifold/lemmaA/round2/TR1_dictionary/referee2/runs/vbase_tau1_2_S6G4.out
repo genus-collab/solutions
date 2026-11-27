@@ -1,0 +1,17 @@
+mode vbase, tau = 1/2, sigma = 3/4, S = 6, GMAX = 4, lmax = 11; setup 170.0 s
+basis check [x^m] xi_k = m^k Pi_m: 49 values, 0 failures
+recursion: 16 correlators, 190.9 s
+(0,3): d/de C[k] vs Int Lambda omega_{g,n+1}: 1 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/1 mismatches
+(0,4): d/de C[k] vs Int Lambda omega_{g,n+1}: 5 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/5 mismatches
+(0,5): d/de C[k] vs Int Lambda omega_{g,n+1}: 21 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/21 mismatches
+(1,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 2 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/2 mismatches
+(1,2): d/de C[k] vs Int Lambda omega_{g,n+1}: 6 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/6 mismatches
+(1,3): d/de C[k] vs Int Lambda omega_{g,n+1}: 20 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/20 mismatches
+(1,4): d/de C[k] vs Int Lambda omega_{g,n+1}: 70 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/70 mismatches
+(2,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 5 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/5 mismatches
+(2,2): d/de C[k] vs Int Lambda omega_{g,n+1}: 21 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/21 mismatches
+(2,3): d/de C[k] vs Int Lambda omega_{g,n+1}: 84 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/84 mismatches
+(3,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 8 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/8 mismatches
+(3,2): d/de C[k] vs Int Lambda omega_{g,n+1}: 45 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/45 mismatches
+(4,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 11 coefficients, 0 mismatches; homogeneity d/de = -(2g-2+n) omega: 0/11 mismatches
+TOTAL: 598 comparisons, 0 failures; time 197.9 s

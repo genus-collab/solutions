@@ -1,0 +1,23 @@
+mode bkmp, tau = 2, sigma = 6, S = 6, GMAX = 5, lmax = 13; setup 794.8 s
+basis check [x^m] xi_k = m^k Pi_m: 49 values, 0 failures
+recursion: 17 correlators, 836.8 s
+(0,3): BKMP vs RefHodge M_{g,n}[k]: 1 compared, 0 mismatches (0.0 s)
+(0,4): BKMP vs RefHodge M_{g,n}[k]: 5 compared, 0 mismatches (0.0 s)
+(0,5): BKMP vs RefHodge M_{g,n}[k]: 21 compared, 0 mismatches (0.0 s)
+(0,6): BKMP vs RefHodge M_{g,n}[k]: 84 compared, 0 mismatches (0.1 s)
+(1,1): BKMP vs RefHodge M_{g,n}[k]: 2 compared, 0 mismatches (0.0 s)
+(1,2): BKMP vs RefHodge M_{g,n}[k]: 6 compared, 0 mismatches (0.0 s)
+(1,3): BKMP vs RefHodge M_{g,n}[k]: 20 compared, 0 mismatches (0.0 s)
+(1,4): BKMP vs RefHodge M_{g,n}[k]: 70 compared, 0 mismatches (0.0 s)
+(1,5): BKMP vs RefHodge M_{g,n}[k]: 252 compared, 0 mismatches (0.1 s)
+(2,1): BKMP vs RefHodge M_{g,n}[k]: 5 compared, 0 mismatches (0.0 s)
+(2,2): BKMP vs RefHodge M_{g,n}[k]: 21 compared, 0 mismatches (0.0 s)
+(2,3): BKMP vs RefHodge M_{g,n}[k]: 84 compared, 0 mismatches (0.0 s)
+(2,4): BKMP vs RefHodge M_{g,n}[k]: 330 compared, 0 mismatches (0.2 s)
+(3,1): BKMP vs RefHodge M_{g,n}[k]: 8 compared, 0 mismatches (0.1 s)
+(3,2): BKMP vs RefHodge M_{g,n}[k]: 45 compared, 0 mismatches (0.0 s)
+(3,3): BKMP vs RefHodge M_{g,n}[k]: 220 compared, 0 mismatches (0.1 s)
+(4,1): BKMP vs RefHodge M_{g,n}[k]: 11 compared, 0 mismatches (0.6 s)
+(4,2): BKMP vs RefHodge M_{g,n}[k]: 78 compared, 0 mismatches (0.2 s)
+(5,1): BKMP vs RefHodge M_{g,n}[k]: 14 compared, 0 mismatches (3.6 s)
+TOTAL: 1277 comparisons, 0 failures; time 848.8 s

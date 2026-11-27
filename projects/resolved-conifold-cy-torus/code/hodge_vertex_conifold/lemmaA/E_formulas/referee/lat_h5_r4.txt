@@ -1,0 +1,6 @@
+(A) genus 5 r = 4: 7 Lemma-A points (parts >= 2, D <= 2h-3), 0 violations
+(C) genus 5 r = 4: 5 control points (D = 2h-2), 5 non-zero; non-zero components: {2,2,2,6}:all {2,2,3,5}:all {2,2,4,4}:all {2,3,3,4}:all {3,3,3,3}:all
+(M) genus 5 r = 4: 120 lattice points with parts >= 0, 1 <= J, D <= 2h-3: 0 violations
+(H) genus 5 r = 4, D = 8: Hurwitz component zero at 0 points, non-zero at 5
+(H) genus 5 r = 4, D = 9: Hurwitz component zero at 6 points, non-zero at 0
+(H) genus 5 r = 4, D = 10: Hurwitz component zero at 0 points, non-zero at 9

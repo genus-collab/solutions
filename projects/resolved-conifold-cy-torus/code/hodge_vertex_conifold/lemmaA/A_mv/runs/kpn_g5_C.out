@@ -1,0 +1,6 @@
+genus 5: 44 multisets in the range, 220 unknowns, 2944 equations (KP + cut-and-join); rank 220, nullity 0
+   not forced to vanish: none
+
+real	0m2.280s
+user	0m2.171s
+sys	0m0.093s

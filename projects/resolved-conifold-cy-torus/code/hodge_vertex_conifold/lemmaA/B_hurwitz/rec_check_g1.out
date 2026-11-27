@@ -1,0 +1,30 @@
+g=1 R=(2) D=1 delta=1 D=2g-1  recursion 0 | Hurwitz 0 ok
+g=1 R=(3) D=2 delta=2         recursion 1/24 | Hurwitz 1/24 ok
+g=1 R=(4) D=3 delta=3         recursion 1/12 | Hurwitz 1/12 ok
+g=1 R=(5) D=4 delta=4         recursion 1/8 | Hurwitz 1/8 ok
+g=1 R=(6) D=5 delta=5         recursion 1/6 | Hurwitz 1/6 ok
+g=1 R=(7) D=6 delta=6         recursion 5/24 | Hurwitz 5/24 ok
+g=1 R=(8) D=7 delta=7         recursion 1/4 | Hurwitz 1/4 ok
+g=1 R=(9) D=8 delta=8         recursion 7/24 | Hurwitz 7/24 ok
+g=1 R=(2,2) D=2 delta=2         recursion 1/12 | Hurwitz 1/12 ok
+g=1 R=(2,3) D=3 delta=3         recursion 1/4 | Hurwitz 1/4 ok
+g=1 R=(2,4) D=4 delta=4         recursion 1/2 | Hurwitz 1/2 ok
+g=1 R=(2,5) D=5 delta=5         recursion 5/6 | Hurwitz 5/6 ok
+g=1 R=(2,6) D=6 delta=6         recursion 5/4 | Hurwitz 5/4 ok
+g=1 R=(2,7) D=7 delta=7         recursion 7/4 | Hurwitz 7/4 ok
+g=1 R=(3,3) D=4 delta=4         recursion 11/24 | Hurwitz 11/24 ok
+g=1 R=(3,4) D=5 delta=5         recursion 3/4 | Hurwitz 3/4 ok
+g=1 R=(3,5) D=6 delta=6         recursion 9/8 | Hurwitz 9/8 ok
+g=1 R=(3,6) D=7 delta=7         recursion 19/12 | Hurwitz 19/12 ok
+g=1 R=(4,4) D=6 delta=6         recursion 13/12 | Hurwitz 13/12 ok
+g=1 R=(4,5) D=7 delta=7         recursion 3/2 | Hurwitz 3/2 ok
+g=1 R=(2,2,2) D=3 delta=3         recursion 1 | Hurwitz 1 ok
+g=1 R=(2,2,3) D=4 delta=4         recursion 29/12 | Hurwitz 29/12 ok
+g=1 R=(2,2,4) D=5 delta=5         recursion 29/6 | Hurwitz 29/6 ok
+g=1 R=(2,2,5) D=6 delta=6         recursion 17/2 | Hurwitz 17/2 ok
+g=1 R=(2,3,3) D=5 delta=5         recursion 9/2 | Hurwitz 9/2 ok
+g=1 R=(2,3,4) D=6 delta=6         recursion 31/4 | Hurwitz 31/4 ok
+g=1 R=(3,3,3) D=6 delta=6         recursion 22/3 | Hurwitz 22/3 ok
+g=1 R=(2,2,2,2) D=4 delta=4         recursion 29/2 | Hurwitz 29/2 ok
+g=1 R=(2,2,2,3) D=5 delta=5         recursion 65/2 | Hurwitz 65/2 ok
+rec_check g=1 JMAX=9: 29 comparisons, 0 mismatches

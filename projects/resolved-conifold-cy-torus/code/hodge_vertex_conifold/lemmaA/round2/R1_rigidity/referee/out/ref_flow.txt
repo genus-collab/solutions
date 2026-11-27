@@ -1,0 +1,30 @@
+propagation: 1620 checks, 0 failed
+random path 1: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..11: 0 mismatches
+random path 2: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..11: 0 mismatches
+  leaf curve: W (genus-0 root) = zeta H_1/t (Theorem 11.1 zeta): yes; Kflow - K_t independent of mu: yes; constant = log H_1 - tau^2 t: yes
+leaf curve: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..11: 0 mismatches
+ref_flow K=11 tau=-5/8: total mismatching orders 0
+
+real	0m1.752s
+user	0m1.421s
+sys	0m0.248s
+propagation: 1620 checks, 0 failed
+random path 1: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..11: 0 mismatches
+random path 2: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..11: 0 mismatches
+  leaf curve: W (genus-0 root) = zeta H_1/t (Theorem 11.1 zeta): yes; Kflow - K_t independent of mu: yes; constant = log H_1 - tau^2 t: yes
+leaf curve: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..11: 0 mismatches
+ref_flow K=11 tau=7/4: total mismatching orders 0
+
+real	0m1.721s
+user	0m1.437s
+sys	0m0.170s
+propagation: 1057 checks, 0 failed
+random path 1: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..10: 0 mismatches
+random path 2: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..10: 0 mismatches
+  leaf curve: W (genus-0 root) = zeta H_1/t (Theorem 11.1 zeta): yes; Kflow - K_t independent of mu: yes; constant = log H_1 - tau^2 t: yes
+leaf curve: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..10: 0 mismatches
+ref_flow K=10 tau=-2/5: total mismatching orders 0
+
+real	0m1.235s
+user	0m0.858s
+sys	0m0.249s

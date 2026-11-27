@@ -1,0 +1,5 @@
+CHECK h=3 p=1000000007: 294 matches, 0 mismatches (3 s)
+
+real	0m3.926s
+user	0m2.655s
+sys	0m0.311s

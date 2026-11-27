@@ -1,0 +1,148 @@
+% preamble_summary.tex: packages, theorem environments and general macros of the abridged version.
+% Copied from the preamble of the long version (main.tex); the draft-note machinery is omitted.
+% GENUS workshop style: page geometry, fonts, hyperref, fancyhdr and the claim-status tags (genus-collab/meta)
+\usepackage{genus}
+% text width of the original note (170 mm), so that its displayed formulas still fit the line
+\geometry{margin=2cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%-------------------------------------------------------------------------------
+% Packages (modelled on the preamble of [BS] and of the companion paper [LP2]; only what is needed)
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amssymb}
+\usepackage[mathscr]{eucal}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\definecolor{highlight}{HTML}{3465a4}
+% hyperref is loaded by genus.sty, with the GENUS link colours
+\hypersetup{hypertexnames=false, hyperfootnotes=false, linktocpage=true, bookmarksdepth=2}
+\usepackage{cleveref}
+\usepackage{url}
+\usepackage{array}
+
+%-------------------------------------------------------------------------------
+% Typefaces. [BS] uses libertine with newtxmath; libertine needs fontaxes, which is not assumed
+% here, so mathpazo (Palatino) is the substitute, as in the companion paper.
+% (mathpazo and courier dropped: genus.sty sets Latin Modern)
+\usepackage{microtype}
+\linespread{1.06}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{3}
+% enumitem is not assumed: first-level enumerate is labelled (i), (ii), ... ; for named parts use
+% description or \item[(F1)] with an explicit label.
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\renewcommand{\theenumi}{(\roman{enumi})}
+\numberwithin{equation}{section}
+
+%-------------------------------------------------------------------------------
+% Theorem environments (names as in [BS])
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+% genus.sty defines an example environment on its own counter; redefine it on the counter of thm
+\let\example\undefined\let\endexample\undefined\expandafter\let\csname c@example\endcsname\undefined
+\newtheorem{example}[thm]{Example}
+\newtheorem{conv}[thm]{Convention}
+
+\crefname{equation}{Eq.}{Eqs.}
+\crefname{thm}{Theorem}{Theorems}
+\crefname{lem}{Lemma}{Lemmas}
+\crefname{prop}{Proposition}{Propositions}
+\crefname{cor}{Corollary}{Corollaries}
+\crefname{defn}{Definition}{Definitions}
+\crefname{rmk}{Remark}{Remarks}
+\crefname{notation}{Notation}{Notations}
+\crefname{example}{Example}{Examples}
+\crefname{conv}{Convention}{Conventions}
+\crefname{section}{Section}{Sections}
+\crefname{subsection}{Section}{Sections}
+\crefname{appendix}{Appendix}{Appendices}
+
+%-------------------------------------------------------------------------------
+% Letters
+\newcommand{\bbA}{\mathbb{A}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbD}{\mathbb{D}}
+\newcommand{\bbE}{\mathbb{E}}
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbK}{\mathbb{K}}
+\newcommand{\bbL}{\mathbb{L}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbT}{\mathbb{T}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\mgp}[1]{\mathsf{#1}}
+
+%-------------------------------------------------------------------------------
+% General
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ri}{\mathrm{i}}
+\newcommand{\re}{\mathrm{e}}
+\newcommand{\de}{\partial}
+% \llbracket: from newtxmath if available, otherwise a substitute (stmaryrd is not assumed)
+\providecommand{\llbracket}{[\![}
+\providecommand{\rrbracket}{]\!]}
+\newcommand{\fps}[1]{\llbracket #1 \rrbracket}
+\newcommand{\lser}[1]{(\!(#1)\!)}
+\newcommand{\Frac}{\mathrm{Frac}}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator*{\Res}{Res}
+\DeclareMathOperator{\Disc}{Disc}
+\DeclareMathOperator{\Li}{Li}
+\DeclareMathOperator{\val}{val}
+\DeclareMathOperator{\ev}{ev}
+\newcommand{\tensor}{\otimes}
+\newcommand{\coef}[1]{[#1]}                    % coefficient extraction, e.g. \coef{t^k}
+
+%-------------------------------------------------------------------------------
+% Geometry, tori, weights (weights as in [BS]: \alpha_i, \epsilon_i)
+\newcommand{\Tmax}{\mgp{T}}                    % the five-torus
+\newcommand{\TCY}{\mgp{T}_{\mathrm{CY}}}        % the Calabi--Yau four-torus E = \epsilon_1 + \epsilon_2
+\newcommand{\TF}{\mgp{T}_{\mathrm{F}}}          % fibrewise torus \alpha_0 = 0, \alpha_i = \epsilon_i
+\newcommand{\Tthree}{\mgp{T}_{3}}               % \alpha_0 = 0 inside \TCY
+\newcommand{\wA}{\mathsf{A}}                    % \alpha_0 + \alpha_2 = E - \alpha_1
+\newcommand{\wB}{\mathsf{B}}                    % \alpha_0 + \alpha_1 = E - \alpha_2
+\newcommand{\uq}{\mathsf{u}}                    % (E - 2\alpha_1)(E - 2\alpha_2)
+\newcommand{\Mbar}{\overline{M}}
+\newcommand{\vir}{\mathrm{virt}}
+\newcommand{\GW}{\mathsf{GW}}
+\newcommand{\Hdg}{\bbE}                        % Hodge bundle
+\newcommand{\Lamv}{\Lambda^{\!\vee}}           % \Lamv(u) = \sum_i (-1)^i \lambda_i u^{g-i}
+\newcommand{\Hg}{\mathsf{Hg}}                  % \Hg_{\bw} = \prod_a \Lamv(w_a)/w_a^g (normalised Hodge class)
+\newcommand{\Nb}{\cN_{\mathrm{cf}}}             % \cO(-1)_{\alpha_1} + \cO(-1)_{\alpha_2} + \cO_{-\epsilon_1} + \cO_{-\epsilon_2}
+\newcommand{\bw}{\mathbf{w}}                   % (E,-\epsilon_1,-\epsilon_2)
+\newcommand{\nw}{\mathsf{nw}}                  % (\alpha_1,\wA,-\epsilon_1,-\epsilon_2)
+\newcommand{\wts}{\mathrm{wt}}                 % \wts_\pm = the five tangent weights at p_\pm
+\newcommand{\eul}{\mathrm{e}}                  % \eul(\wts_\pm): product of the tangent weights
+\newcommand{\sF}{\mathscr{F}}                  % \sF_g(\cQ) = \sum_{d\ge 0} \GW_{g,d}\cQ^d
+\newcommand{\sG}{\mathscr{G}}                  % \sG_g = \sF_g - \sF_g(0)
+
+%-------------------------------------------------------------------------------
+% References to the long version of this paper: \Lref{Theorem~4.1} prints [L, Theorem 4.1].
+\newcommand{\Lref}[1]{[L,~#1]}
+

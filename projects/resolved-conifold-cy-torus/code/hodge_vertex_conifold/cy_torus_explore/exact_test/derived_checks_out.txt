@@ -1,0 +1,50 @@
+=== fibrewise
+  (a0+a1) tau s*^2 - (E + a0 tau) s* + (a0+a2) = 0: True ; s*(0)=(a0+a2)/E: True
+  Delta_1 tau^2/(-E^3 e1 e2) = (A B/E^3) U1 [A(1-tau)/(1-s*)^2 + B/s*^2] =: alg^2: True ; alg^2(0)=1: True
+  eikonal tau(1-tau)p^2+(E-(a0+2a2... )tau)p - BC=0 at p=C s*/(1-tau s*): True
+  P_tr^2 = delta^2 = E^2(1-tau) - u tau + a0^2 tau^2: True ; P_tr(0)=E: True
+  L_2(0)=a1 a2/E: True ; Delta_2(0)=e1 e2 a1 a2 (a0+a1)(a0+a2)/E: True
+  top leaf a_{k+1}^(k) = (-1)^(k+1) P_k/((k+1) k!^2 E^(2k-2)), P_k = prod_{j<=k} ((k+1)a2 - jE)((k+1)(a0+a2) - jE), k<=5: True
+  a^(1) = (u/2)(1,-1), rho^-1 = 1 - u t/(2E^2) + ...:  1/32 1/32
+  v_2(z;0) proportional to (1, L_2(0)): True
+  frame-B rows do not depend on (e1,e2) at fixed (a0,a1,a2,E): True
+=== S1
+  (a0+a1) tau s*^2 - (E + a0 tau) s* + (a0+a2) = 0: True ; s*(0)=(a0+a2)/E: True
+  Delta_1 tau^2/(-E^3 e1 e2) = (A B/E^3) U1 [A(1-tau)/(1-s*)^2 + B/s*^2] =: alg^2: True ; alg^2(0)=1: True
+  eikonal tau(1-tau)p^2+(E-(a0+2a2... )tau)p - BC=0 at p=C s*/(1-tau s*): True
+  P_tr^2 = delta^2 = E^2(1-tau) - u tau + a0^2 tau^2: True ; P_tr(0)=E: True
+  L_2(0)=a1 a2/E: True ; Delta_2(0)=e1 e2 a1 a2 (a0+a1)(a0+a2)/E: True
+  top leaf a_{k+1}^(k) = (-1)^(k+1) P_k/((k+1) k!^2 E^(2k-2)), P_k = prod_{j<=k} ((k+1)a2 - jE)((k+1)(a0+a2) - jE), k<=5: True
+  a^(1) = (u/2)(1,-1), rho^-1 = 1 - u t/(2E^2) + ...:  -5/32 -5/32
+  v_2(z;0) proportional to (1, L_2(0)): True
+  frame-B rows do not depend on (e1,e2) at fixed (a0,a1,a2,E): True
+=== S2
+  (a0+a1) tau s*^2 - (E + a0 tau) s* + (a0+a2) = 0: True ; s*(0)=(a0+a2)/E: True
+  Delta_1 tau^2/(-E^3 e1 e2) = (A B/E^3) U1 [A(1-tau)/(1-s*)^2 + B/s*^2] =: alg^2: True ; alg^2(0)=1: True
+  eikonal tau(1-tau)p^2+(E-(a0+2a2... )tau)p - BC=0 at p=C s*/(1-tau s*): True
+  P_tr^2 = delta^2 = E^2(1-tau) - u tau + a0^2 tau^2: True ; P_tr(0)=E: True
+  L_2(0)=a1 a2/E: True ; Delta_2(0)=e1 e2 a1 a2 (a0+a1)(a0+a2)/E: True
+  top leaf a_{k+1}^(k) = (-1)^(k+1) P_k/((k+1) k!^2 E^(2k-2)), P_k = prod_{j<=k} ((k+1)a2 - jE)((k+1)(a0+a2) - jE), k<=5: True
+  a^(1) = (u/2)(1,-1), rho^-1 = 1 - u t/(2E^2) + ...:  -85/1922 -85/1922
+  v_2(z;0) proportional to (1, L_2(0)): True
+  frame-B rows do not depend on (e1,e2) at fixed (a0,a1,a2,E): True
+=== S3
+  (a0+a1) tau s*^2 - (E + a0 tau) s* + (a0+a2) = 0: True ; s*(0)=(a0+a2)/E: True
+  Delta_1 tau^2/(-E^3 e1 e2) = (A B/E^3) U1 [A(1-tau)/(1-s*)^2 + B/s*^2] =: alg^2: True ; alg^2(0)=1: True
+  eikonal tau(1-tau)p^2+(E-(a0+2a2... )tau)p - BC=0 at p=C s*/(1-tau s*): True
+  P_tr^2 = delta^2 = E^2(1-tau) - u tau + a0^2 tau^2: True ; P_tr(0)=E: True
+  L_2(0)=a1 a2/E: True ; Delta_2(0)=e1 e2 a1 a2 (a0+a1)(a0+a2)/E: True
+  top leaf a_{k+1}^(k) = (-1)^(k+1) P_k/((k+1) k!^2 E^(2k-2)), P_k = prod_{j<=k} ((k+1)a2 - jE)((k+1)(a0+a2) - jE), k<=5: True
+  a^(1) = (u/2)(1,-1), rho^-1 = 1 - u t/(2E^2) + ...:  483/242 483/242
+  v_2(z;0) proportional to (1, L_2(0)): True
+  frame-B rows do not depend on (e1,e2) at fixed (a0,a1,a2,E): True
+=== random
+  (a0+a1) tau s*^2 - (E + a0 tau) s* + (a0+a2) = 0: True ; s*(0)=(a0+a2)/E: True
+  Delta_1 tau^2/(-E^3 e1 e2) = (A B/E^3) U1 [A(1-tau)/(1-s*)^2 + B/s*^2] =: alg^2: True ; alg^2(0)=1: True
+  eikonal tau(1-tau)p^2+(E-(a0+2a2... )tau)p - BC=0 at p=C s*/(1-tau s*): True
+  P_tr^2 = delta^2 = E^2(1-tau) - u tau + a0^2 tau^2: True ; P_tr(0)=E: True
+  L_2(0)=a1 a2/E: True ; Delta_2(0)=e1 e2 a1 a2 (a0+a1)(a0+a2)/E: True
+  top leaf a_{k+1}^(k) = (-1)^(k+1) P_k/((k+1) k!^2 E^(2k-2)), P_k = prod_{j<=k} ((k+1)a2 - jE)((k+1)(a0+a2) - jE), k<=5: True
+  a^(1) = (u/2)(1,-1), rho^-1 = 1 - u t/(2E^2) + ...:  -8804053405051630941/5922977590603365935 -8804053405051630941/5922977590603365935
+  v_2(z;0) proportional to (1, L_2(0)): True
+  frame-B rows do not depend on (e1,e2) at fixed (a0,a1,a2,E): True

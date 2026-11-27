@@ -1,0 +1,24 @@
+  genus  1: Y_h computed (deg_y 2) [13.7 s]
+  genus  2: Y_h computed (deg_y 5) [14.1 s]
+  genus  3: Y_h computed (deg_y 8) [15.1 s]
+  genus  4: Y_h computed (deg_y 11) [17.7 s]
+  genus  5: Y_h computed (deg_y 14) [23.4 s]
+  genus  6: Y_h computed (deg_y 17) [35.6 s]
+  genus  7: Y_h computed (deg_y 20) [59.6 s]
+  genus  8: Y_h computed (deg_y 23) [105.6 s]
+  genus  9: Y_h computed (deg_y 26) [188.1 s]
+  genus 10: Y_h computed (deg_y 29) [321.9 s]
+two-block part = Sum T_m1(j) T_m2(y): holds for h <= 10;  Y_h(j,0) = (j-2h+1)X_h = T_h/j and Y_h(j,1) = j X_h: hold
+recursion (A) of Prop. M2 as a polynomial identity in j, h = 1..10: holds
+genus  1: C1 equal; K1 (j=2..0) zero; K1' ok; M3 holds at j = 1,2 (fails at 3,4)
+genus  2: C1 equal; K1 (j=2..2) zero; K1' ok; M3 holds at j = 1,2,3,4 (fails at 5,6)
+genus  3: C1 equal; K1 (j=2..4) zero; K1' ok; M3 holds at j = 1,2,3,4,5,6 (fails at 7,8)
+genus  4: C1 equal; K1 (j=2..6) zero; K1' ok; M3 holds at j = 1,2,3,4,5,6,7,8 (fails at 9,10)
+genus  5: C1 equal; K1 (j=2..8) zero; K1' ok; M3 holds at j = 1,2,3,4,5,6,7,8,9,10 (fails at 11,12)
+genus  6: C1 equal; K1 (j=2..10) zero; K1' ok; M3 holds at j = 1,2,3,4,5,6,7,8,9,10,11,12 (fails at 13,14)
+genus  7: C1 equal; K1 (j=2..12) zero; K1' ok; M3 holds at j = 1,2,3,4,5,6,7,8,9,10,11,12,13,14 (fails at 15,16)
+genus  8: C1 equal; K1 (j=2..14) zero; K1' ok; M3 holds at j = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 (fails at 17,18)
+genus  9: C1 equal; K1 (j=2..16) zero; K1' ok; M3 holds at j = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 (fails at 19,20)
+genus 10: C1 equal; K1 (j=2..18) zero; K1' ok; M3 holds at j = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 (fails at 21,22)
+sanity messages: none
+done [352.9 s]

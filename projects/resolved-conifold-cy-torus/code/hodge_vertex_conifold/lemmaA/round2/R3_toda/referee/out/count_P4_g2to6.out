@@ -1,0 +1,2 @@
+equation P4, weight 4, coefficient of D_{t_4}: 3/4
+SUMMARY P4 G=2..6: 47 (G,D,R) cases; terms: H1 1472803, H2 12331, empty0 6208027, ff 3725727, target 47; survivors 0; bad target counts 0; target coefficient factor -c*k = -3 (non-zero needed)

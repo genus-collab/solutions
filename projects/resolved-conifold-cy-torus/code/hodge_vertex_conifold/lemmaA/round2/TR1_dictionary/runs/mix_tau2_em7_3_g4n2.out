@@ -1,0 +1,11 @@
+tau = 2, sigma = 6, y = mix (e = -7/3); G = 4, N = 2, kmax = 11, series length 54; setup 18.1 s
+recursion: 16 correlators, 47.6 s
+(1,1):     2 xi-coefficients, symmetry violations 0; (no Hodge table)
+(1,2):     6 xi-coefficients, symmetry violations 0; (no Hodge table)
+(2,1):     5 xi-coefficients, symmetry violations 0; vs Hodge: 5 compared, mismatches 0
+(2,2):    21 xi-coefficients, symmetry violations 0; vs Hodge: 21 compared, mismatches 0
+(3,1):     8 xi-coefficients, symmetry violations 0; vs Hodge: 8 compared, mismatches 0
+(3,2):    45 xi-coefficients, symmetry violations 0; vs Hodge: 45 compared, mismatches 0
+(4,1):    11 xi-coefficients, symmetry violations 0; vs Hodge: 11 compared, mismatches 0
+(4,2):    78 xi-coefficients, symmetry violations 0; vs Hodge: 78 compared, mismatches 0
+TOTAL: 168 coefficient comparisons, 0 failures; time 129.5 s

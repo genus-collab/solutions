@@ -1,0 +1,19 @@
+h=2 k=0: string OK, dilaton OK
+h=2 k=1: string OK, dilaton OK
+h=2 k=2: string OK, dilaton OK
+h=2 r=1: lambda_g component = b_h (J-1)...(J-N), b_h = 7/5760: OK
+h=2 r=2: lambda_g component = b_h (J-1)...(J-N), b_h = 7/5760: OK
+h=3 k=0: string OK, dilaton OK
+h=3 k=1: string OK, dilaton OK
+h=3 k=2: string OK, dilaton OK
+h=3 k=3: string OK, dilaton OK
+h=3 r=1: lambda_g component = b_h (J-1)...(J-N), b_h = 31/967680: OK
+h=3 r=2: lambda_g component = b_h (J-1)...(J-N), b_h = 31/967680: OK
+h=4 k=0: string OK, dilaton OK
+h=4 k=1: string OK, dilaton OK
+h=4 k=2: string OK, dilaton OK
+h=4 k=3: string OK, dilaton OK
+h=4 k=4: string OK, dilaton OK
+h=4 r=1: lambda_g component = b_h (J-1)...(J-N), b_h = 127/154828800: OK
+h=4 r=2: lambda_g component = b_h (J-1)...(J-N), b_h = 127/154828800: OK
+SUMMARY: all identities hold

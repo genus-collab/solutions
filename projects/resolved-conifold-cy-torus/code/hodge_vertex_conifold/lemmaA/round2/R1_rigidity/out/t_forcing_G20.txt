@@ -1,0 +1,1 @@
+t_forcing G<=20: 1131 tuples inside the hypotheses, 0 not forced

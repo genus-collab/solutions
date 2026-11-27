@@ -1,0 +1,37 @@
+==================== x = -5/2 (c = -3/2)
+  Wick rows done (11 s)
+  E22(0,0)|t=0 = -475/216;  S4: -475/216;  note F3: 125/36  (note F3 agrees at 0 of 21 entries)
+  done x = -5/2 (30 s)
+==================== x = 1 (c = 2)
+  Wick rows done (32 s)
+  E22(0,0)|t=0 = -1/8;  S4: -1/8;  note F3: -1/8  (note F3 agrees at 1 of 21 entries)
+  done x = 1 (40 s)
+==================== summary (comparisons / mismatches)
+  (9.1) sigma_-1 = (0, c)                                       14  0
+  (9.1) sigma_k leaf form vs Wick rows                         168  0
+  (9.8) E12 legs vs EdN                                        252  0
+  10.6'                                                         14  0
+  10.6(a)                                                       28  0
+  10.6(b)                                                       14  0
+  CF.4 loops vs EdN                                            252  0
+  Delta_1 leading                                                2  0
+  Delta_2 (10.1)                                                22  0
+  E11 legs: EdN vs Mathematica fit                             232  0
+  E11 symmetric                                                252  0
+  E12 legs: EdN vs Mathematica fit                             232  0
+  E21(b,a) = E12(a,b) (Prop 9.5)                               294  0
+  E22(t=0) = (x^3/c)(1 - h^2 h^2)/(z+w) (10.6(c))               42  0
+  F2                                                            14  0
+  F3: [t^-1] rho E12 = 0 (Prop 9.3(i))                          42  0
+  F3: [t^-1] rho E21 = 0 (needs 10.6(b))                        42  0
+  F3: t^2 rho^2 E11 = O(t^2)                                    84  0
+  K_1 = 1                                                      112  0
+  K_2 = 1                                                       98  0
+  Row 2 at U1                                                   72  0
+  Row 2 at U2 (Lemma 10.5)                                      84  0
+  V1                                                            34  0
+  W1 = 0 at roots                                               36  0
+  orthogonality (I5)                                           112  0
+  roots                                                         36  0
+  total comparisons: 2584 (x = -5/2 1)
+  all comparisons exact

@@ -1,0 +1,5 @@
+tau = 2/3: (0,2) dictionary  [x1^m1 x2^m2] F_{0,2} = sigma Pi_m1 Pi_m2/(m1+m2): 36 coefficients (m1+m2 <= 9), mismatches 0
+tau = -1/2: (0,2) dictionary  [x1^m1 x2^m2] F_{0,2} = sigma Pi_m1 Pi_m2/(m1+m2): 36 coefficients (m1+m2 <= 9), mismatches 0
+tau = 3: (0,2) dictionary  [x1^m1 x2^m2] F_{0,2} = sigma Pi_m1 Pi_m2/(m1+m2): 36 coefficients (m1+m2 <= 9), mismatches 0
+tau = -5/7: (0,2) dictionary  [x1^m1 x2^m2] F_{0,2} = sigma Pi_m1 Pi_m2/(m1+m2): 36 coefficients (m1+m2 <= 9), mismatches 0
+tau = 1: (0,2) dictionary  [x1^m1 x2^m2] F_{0,2} = sigma Pi_m1 Pi_m2/(m1+m2): 36 coefficients (m1+m2 <= 9), mismatches 0

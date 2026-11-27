@@ -1,0 +1,1 @@
+genus 9: (6.1) vs table: 348 comparisons (12 tau x 29 j), 0 mismatches

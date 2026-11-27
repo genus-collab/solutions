@@ -1,0 +1,312 @@
+# Raw outputs of the R2 verification runs (2026-10-31), collected from the background-task logs and the session transcript.
+## n = 1, xy_npoint.pl vs Route E engine_h<h>_r1.txt, h = 2..6, tau = 1, 2, 4
+h=2 tau=1 j<=6: total 6, mismatches 0, homogeneity violations 0
+h=2 tau=2 j<=6: total 6, mismatches 0, homogeneity violations 0
+h=2 tau=4 j<=6: total 6, mismatches 0, homogeneity violations 0
+h=3 tau=1 j<=9: total 9, mismatches 0, homogeneity violations 0
+h=3 tau=2 j<=9: total 9, mismatches 0, homogeneity violations 0
+h=3 tau=4 j<=9: total 9, mismatches 0, homogeneity violations 0
+h=4 tau=1 j<=12: total 12, mismatches 0, homogeneity violations 0
+h=4 tau=2 j<=12: total 12, mismatches 0, homogeneity violations 0
+h=4 tau=4 j<=12: total 12, mismatches 0, homogeneity violations 0
+h=5 tau=1 j<=15: total 15, mismatches 0, homogeneity violations 0
+h=5 tau=2 j<=15: total 15, mismatches 0, homogeneity violations 0
+h=5 tau=4 j<=15: total 15, mismatches 0, homogeneity violations 0
+h=6 tau=1 j<=18: total 18, mismatches 0, homogeneity violations 0
+h=6 tau=2 j<=18: total 18, mismatches 0, homogeneity violations 0
+h=6 tau=4 j<=18: total 18, mismatches 0, homogeneity violations 0
+
+## n = 1, genus 7 (engine_h7_r1.txt computed in hodge_engine/)
+h=7 tau=1: total 21, mismatches 0, homogeneity violations 0
+h=7 tau=2: total 21, mismatches 0, homogeneity violations 0
+h=7 tau=3: total 21, mismatches 0, homogeneity violations 0
+## n = 2, xy_twopoint.pl vs engine_h<g>_r2.txt
+g=2 tau=1: total 28, mismatches 0
+g=2 tau=2: total 28, mismatches 0
+g=2 tau=3: total 28, mismatches 0
+g=3 tau=1: total 28, mismatches 0
+g=3 tau=2: total 28, mismatches 0
+g=3 tau=3: total 28, mismatches 0
+g=4 tau=1: total 28, mismatches 0
+g=4 tau=2: total 28, mismatches 0
+g=4 tau=3: total 28, mismatches 0
+
+## n = 2, xy_npoint.pl, genus 5, 6
+g=5 tau=1 n=2: total 36, mismatches 0, homogeneity violations 0
+g=5 tau=2 n=2: total 36, mismatches 0, homogeneity violations 0
+g=6 tau=1 n=2: total 36, mismatches 0, homogeneity violations 0
+g=6 tau=2 n=2: total 36, mismatches 0, homogeneity violations 0
+
+## multi-leaf queue (queue_multileaf.sh)
+g=3 n=3 tau=1 j<=4: total 20, mismatches 0, homogeneity violations 0
+g=3 n=3 tau=2 j<=4: total 20, mismatches 0, homogeneity violations 0
+g=4 n=3 tau=1 j<=4: total 20, mismatches 0, homogeneity violations 0
+g=4 n=3 tau=2 j<=3: total 10, mismatches 0, homogeneity violations 0
+g=3 n=4 tau=1 j<=3: total 15, mismatches 0, homogeneity violations 0
+g=5 n=3 tau=1 j<=4: total 20, mismatches 0, homogeneity violations 0
+g=4 n=4 tau=1 j<=3: total 15, mismatches 0, homogeneity violations 0
+g=2 n=5 tau=1 j<=3: total 21, mismatches 0, homogeneity violations 0
+queue done
+
+## exact EO recursion at tau = 1 (trcheck/trC1_g7.out) vs Theorem 1, n <= 3 (cmp_tr_xy.pl; the first 4 lines g=2 n=1..3, g=3 n=1 were cut by tail in the original run, total includes them)
+g=3 n=2: compared 12, mismatches 0
+g=3 n=3: compared 16, mismatches 0
+g=4 n=1: compared 14, mismatches 0
+g=4 n=2: compared 20, mismatches 0
+g=4 n=3: compared 31, mismatches 0
+g=5 n=1: compared 16, mismatches 0
+g=5 n=2: compared 30, mismatches 0
+g=5 n=3: compared 53, mismatches 0
+g=6 n=1: compared 18, mismatches 0
+g=6 n=2: compared 42, mismatches 0
+g=7 n=1: compared 20, mismatches 0
+TOTAL compared 307, mismatches 0
+
+## same, n = 4, 5
+g=2 n=4: compared 7, mismatches 0
+g=2 n=5: compared 7, mismatches 0
+g=3 n=4: compared 18, mismatches 0
+g=3 n=5: compared 19, mismatches 0
+g=4 n=4: compared 38, mismatches 0
+TOTAL compared 89, mismatches 0
+## foreground runs (from the session transcript)
+tau=1 j=1 g=0  xy: 1/2   (6.1): 1/2  OK
+tau=1 j=1 g=1  xy: -1/8   (6.1): -1/8  OK
+tau=1 j=1 g=2  xy: 0   (6.1): 0  OK
+tau=1 j=1 g=3  xy: 0   (6.1): 0  OK
+tau=1 j=2 g=0  xy: 1/6   (6.1): 1/6  OK
+tau=1 j=2 g=1  xy: -1/24   (6.1): -1/24  OK
+tau=1 j=2 g=2  xy: 0   (6.1): 0  OK
+tau=1 j=2 g=3  xy: 0   (6.1): 0  OK
+tau=1 j=3 g=0  xy: 1/12   (6.1): 1/12  OK
+tau=1 j=3 g=1  xy: 1/24   (6.1): 1/24  OK
+tau=1 j=3 g=2  xy: -1/64   (6.1): -1/64  OK
+tau=1 j=3 g=3  xy: 0   (6.1): 0  OK
+tau=1 j=4 g=0  xy: 1/20   (6.1): 1/20  OK
+tau=1 j=4 g=1  xy: 1/8   (6.1): 1/8  OK
+tau=1 j=4 g=2  xy: -11/320   (6.1): -11/320  OK
+tau=1 j=4 g=3  xy: 0   (6.1): 0  OK
+tau=1 j=5 g=0  xy: 1/30   (6.1): 1/30  OK
+tau=1 j=5 g=1  xy: 5/24   (6.1): 5/24  OK
+tau=1 j=5 g=2  xy: 19/480   (6.1): 19/480  OK
+tau=1 j=5 g=3  xy: -3/128   (6.1): -3/128  OK
+tau=1 j=6 g=0  xy: 1/42   (6.1): 1/42  OK
+tau=1 j=6 g=1  xy: 7/24   (6.1): 7/24  OK
+tau=1 j=6 g=2  xy: 37/96   (6.1): 37/96  OK
+tau=1 j=6 g=3  xy: -103/896   (6.1): -103/896  OK
+total 24, mismatches 0
+total 48, mismatches 0
+total 48, mismatches 0
+tau=2 j=4 g=0  xy: 1/20   (6.1): 1/20  OK
+tau=2 j=4 g=1  xy: 11/24   (6.1): 11/24  OK
+tau=2 j=4 g=2  xy: -113/960   (6.1): -113/960  OK
+tau=2 j=4 g=3  xy: 0   (6.1): 0  OK
+tau=2 j=4 g=4  xy: 0   (6.1): 0  OK
+tau=2 j=4 g=5  xy: 0   (6.1): 0  OK
+tau=2 j=5 g=0  xy: 1/30   (6.1): 1/30  OK
+tau=2 j=5 g=1  xy: 17/24   (6.1): 17/24  OK
+tau=2 j=5 g=2  xy: 499/480   (6.1): 499/480  OK
+tau=2 j=5 g=3  xy: -245/384   (6.1): -245/384  OK
+tau=2 j=5 g=4  xy: 0   (6.1): 0  OK
+tau=2 j=5 g=5  xy: 0   (6.1): 0  OK
+tau=-1/2 h=2: compared 21 values of j (20 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=3: compared 21 values of j (19 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=4: compared 21 values of j (18 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=5: compared 21 values of j (17 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=6: compared 21 values of j (16 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=7: compared 21 values of j (15 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=2: compared 23 values of j (22 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=3: compared 23 values of j (21 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=4: compared 23 values of j (20 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=5: compared 23 values of j (19 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=6: compared 23 values of j (18 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=7: compared 23 values of j (17 non-zero), mismatches with (6.1): 0
+tau=-1/2 h=8: compared 23 values of j (16 non-zero), mismatches with (6.1): 0
+tau=2 k=0: Res_{v=tau} xi_k dv = 1
+tau=2 k=1: Res_{v=tau} xi_k dv = 1
+tau=2 k=2: Res_{v=tau} xi_k dv = 1
+tau=2 k=3: Res_{v=tau} xi_k dv = 1
+tau=2 k=4: Res_{v=tau} xi_k dv = 1
+tau=2 k=5: Res_{v=tau} xi_k dv = 1
+tau=2 k=6: Res_{v=tau} xi_k dv = 1
+tau=5 k=0: Res_{v=tau} xi_k dv = 1
+tau=5 k=1: Res_{v=tau} xi_k dv = 1
+tau=5 k=2: Res_{v=tau} xi_k dv = 1
+tau=5 k=3: Res_{v=tau} xi_k dv = 1
+tau=5 k=4: Res_{v=tau} xi_k dv = 1
+tau=1/3 k=0: Res_{v=tau} xi_k dv = 1
+tau=1/3 k=1: Res_{v=tau} xi_k dv = 1
+tau=1/3 k=2: Res_{v=tau} xi_k dv = 1
+tau=1/3 k=3: Res_{v=tau} xi_k dv = 1
+tau=1/3 k=4: Res_{v=tau} xi_k dv = 1
+tau=1 j=3 g=1: xy 1/24  (6.1) 1/24  OK
+tau=1 j=3 g=2: xy -1/64  (6.1) -1/64  OK
+tau=1 j=3 g=3: xy 0  (6.1) 0  OK
+tau=1 j=4 g=1: xy 1/8  (6.1) 1/8  OK
+tau=1 j=4 g=2: xy -11/320  (6.1) -11/320  OK
+tau=1 j=4 g=3: xy 0  (6.1) 0  OK
+genus 7: (6.1) vs engine at 154 points (7 values of tau, j = 0..3h): 0 mismatches
+tau=1 h=2: compared 10 values of j (8 non-zero), mismatches with (6.1): 0
+tau=1 h=3: compared 12 values of j (8 non-zero), mismatches with (6.1): 0
+tau=1 h=4: compared 14 values of j (8 non-zero), mismatches with (6.1): 0
+tau=1 h=5: compared 16 values of j (8 non-zero), mismatches with (6.1): 0
+tau=1 h=6: compared 18 values of j (8 non-zero), mismatches with (6.1): 0
+tau=1 h=7: compared 20 values of j (8 non-zero), mismatches with (6.1): 0
+tau=1 g=2 (1,1): TR-xy 0  engine 0  OK  [range]
+tau=1 g=2 (2,1): TR-xy 0  engine 0  OK  [range]
+tau=1 g=2 (2,2): TR-xy -5/768  engine -5/768  OK
+tau=1 g=2 (3,1): TR-xy -3/256  engine -3/256  OK
+tau=1 g=2 (3,2): TR-xy -23/960  engine -23/960  OK
+tau=1 g=2 (3,3): TR-xy 17/640  engine 17/640  OK
+tau=1 g=2 (4,1): TR-xy -11/320  engine -11/320  OK
+tau=1 g=2 (4,2): TR-xy 7/384  engine 7/384  OK
+tau=1 g=2 (4,3): TR-xy 109/320  engine 109/320  OK
+tau=1 g=2 (4,4): TR-xy 339/256  engine 339/256  OK
+tau=1 g=2 (5,1): TR-xy 19/384  engine 19/384  OK
+tau=1 g=2 (5,2): TR-xy 71/192  engine 71/192  OK
+tau=1 g=2 (5,3): TR-xy 1045/768  engine 1045/768  OK
+tau=1 g=2 (5,4): TR-xy 1759/480  engine 1759/480  OK
+tau=1 g=2 (5,5): TR-xy 2653/320  engine 2653/320  OK
+total 15, mismatches 0
+tau=1 g=2 (1,1,1): TR-xy 0  engine 0  OK  [range]
+tau=1 g=2 (2,1,1): TR-xy 0  engine 0  OK  [range]
+total 20, mismatches 18   [xy_threepoint.pl BEFORE the sign fix in alpha, gamma (bug in the script, not in the formula); superseded by the run below]
+tau=1 g=2 (1,1,1): TR-xy 0  engine 0  OK  [range]
+tau=1 g=2 (2,1,1): TR-xy 0  engine 0  OK  [range]
+total 10, mismatches 8   [same pre-fix bug; superseded]
+tau=1 g=2 (1,1,1): TR-xy 0  engine 0  OK  [range]
+tau=1 g=2 (2,1,1): TR-xy 0  engine 0  OK  [range]
+tau=1 g=2 (2,2,1): TR-xy -5/192  engine -5/192  OK
+tau=1 g=2 (2,2,2): TR-xy -17/192  engine -17/192  OK
+tau=1 g=2 (3,1,1): TR-xy -3/64  engine -3/64  OK
+tau=1 g=2 (3,2,1): TR-xy -23/192  engine -23/192  OK
+tau=1 g=2 (3,2,2): TR-xy 3/64  engine 3/64  OK
+tau=1 g=2 (3,3,1): TR-xy 51/320  engine 51/320  OK
+tau=1 g=2 (3,3,2): TR-xy 1577/960  engine 1577/960  OK
+tau=1 g=2 (3,3,3): TR-xy 1177/160  engine 1177/160  OK
+total 10, mismatches 0
+tau=1 g=2 mu=(2): xy 0  engine 0  OK  [range]
+tau=1 g=2 mu=(1): xy 0  engine 0  OK  [range]
+total 5, mismatches 0, homogeneity violations 0
+tau=1 g=2 mu=(2,1): xy 0  engine 0  OK  [range]
+tau=1 g=2 mu=(1,1): xy 0  engine 0  OK  [range]
+total 6, mismatches 0, homogeneity violations 0
+tau=1 g=2 mu=(2,2,1): xy -5/192  engine -5/192  OK
+tau=1 g=2 mu=(2,1,1): xy 0  engine 0  OK  [range]
+tau=1 g=2 mu=(1,1,1): xy 0  engine 0  OK  [range]
+total 10, mismatches 0, homogeneity violations 0
+tau=1 g=2 mu=(3,3,3,3): xy 81351/160  engine 81351/160  OK
+tau=1 g=2 mu=(3,3,3,2): xy 3741/20  engine 3741/20  OK
+tau=1 g=2 mu=(3,3,3,1): xy 10593/160  engine 10593/160  OK
+tau=1 g=2 mu=(3,3,2,2): xy 8611/160  engine 8611/160  OK
+tau=1 g=2 mu=(3,3,2,1): xy 1577/120  engine 1577/120  OK
+tau=1 g=2 mu=(3,3,1,1): xy 357/320  engine 357/320  OK
+tau=1 g=2 mu=(3,2,2,2): xy 115/12  engine 115/12  OK
+tau=1 g=2 mu=(3,2,2,1): xy 21/64  engine 21/64  OK
+tau=1 g=2 mu=(3,2,1,1): xy -23/32  engine -23/32  OK
+tau=1 g=2 mu=(3,1,1,1): xy -15/64  engine -15/64  OK
+tau=1 g=2 mu=(2,2,2,2): xy 11/192  engine 11/192  OK
+tau=1 g=2 mu=(2,2,2,1): xy -17/32  engine -17/32  OK
+tau=1 g=2 mu=(2,2,1,1): xy -25/192  engine -25/192  OK
+tau=1 g=2 mu=(2,1,1,1): xy 0  engine 0  OK  [range]
+tau=1 g=2 mu=(1,1,1,1): xy 0  engine 0  OK  [range]
+total 15, mismatches 0, homogeneity violations 0
+g=2 n=1: compared 7, mismatches 0
+g=2 n=2: compared 6, mismatches 0
+g=2 n=3: compared 7, mismatches 0
+g=3 n=1: compared 9, mismatches 0
+g=3 n=2: compared 12, mismatches 0
+TOTAL compared 41, mismatches 0
+total 10, mismatches 0, homogeneity violations 0
+total 5, mismatches 0, homogeneity violations 0
+total 10, mismatches 0, homogeneity violations 0
+total 15, mismatches 0, homogeneity violations 0
+total 15, mismatches 0, homogeneity violations 0
+total 20, mismatches 0, homogeneity violations 0
+total 6, mismatches 0, homogeneity violations 0
+total 6, mismatches 0, homogeneity violations 0
+total 6, mismatches 0, homogeneity violations 0
+g=5 tau=1 n=2: total 36, mismatches 0, homogeneity violations 0
+h=7 tau=1: Xi_h(0)/(2-2h) = 16208399/150994944 ; gap formula = 16208399/150994944 ; OK
+h=7 tau=2: Xi_h(0)/(2-2h) = 7240855543/330225942528 ; gap formula = 7240855543/330225942528 ; OK
+h=7 tau=-3/7: Xi_h(0)/(2-2h) = -549089460595/42268920643584 ; gap formula = -549089460595/42268920643584 ; OK
+h=7 tau=5/2: Xi_h(0)/(2-2h) = 147574137289/9264858750000 ; gap formula = 147574137289/9264858750000 ; OK
+h=6 tau=1: Xi_h(0)/(2-2h) = -826119503/42939187200 ; gap formula = -826119503/42939187200 ; OK
+h=6 tau=2: Xi_h(0)/(2-2h) = -162903751583/31302667468800 ; gap formula = -162903751583/31302667468800 ; OK
+h=6 tau=-3/7: Xi_h(0)/(2-2h) = -6862169812343/2003370718003200 ; gap formula = -6862169812343/2003370718003200 ; OK
+h=6 tau=5/2: Xi_h(0)/(2-2h) = -2424999132259/602215818750000 ; gap formula = -2424999132259/602215818750000 ; OK
+tau=1 g=2 (difference form): total 21, mismatches 0
+tau=3 g=3 (difference form): total 15, mismatches 0
+## Theorem 1 (xy_npoint.pl, P2-normalised Xi) vs the main session's independent Mathematica EO recursion at tau = 2, 3 (HVC/hvc_tr_tau2_g3n3.txt, hvc_tr_tau3_g3n3.txt, 'first layer' values = XiTR); all 15 printed first-layer values agree exactly:
+tau=2: Xi_2(3)=-73/20736, Xi_2(3,1)=-73/6912, Xi_2(2,2)=-217/34560, Xi_2(3,1,1)=-73/1728, Xi_2(2,2,1)=-217/8640, Xi_3(5)=-245/82944, Xi_3(5,1)=-1225/82944, Xi_3(4,2)=-11557/1244160, Xi_3(3,3)=-16561/1741824, Xi_3(4,2,1)=-11557/207360, Xi_3(3,3,1)=-16561/290304
+tau=3: Xi_3(5)=-5665/1990656, Xi_3(5,1)=-28325/1990656, Xi_3(4,2)=-41701/4644864, Xi_3(3,3)=-91553/9953280
+tau=2 g=3 mu=(4,2,1): xy -11557/207360  engine -11557/207360  OK
+tau=2 g=3 mu=(3,3,1): xy -16561/290304  engine -16561/290304  OK
+tau=2 g=2 mu=(3): xy -73/20736  engine -73/20736  OK
+tau=2 g=2 mu=(3,1): xy -73/6912  engine -73/6912  OK
+tau=2 g=2 mu=(2,2): xy -217/34560  engine -217/34560  OK
+tau=2 g=2 mu=(3,1,1): xy -73/1728  engine -73/1728  OK
+tau=2 g=2 mu=(2,2,1): xy -217/8640  engine -217/8640  OK
+tau=2 g=3 mu=(5): xy -245/82944  engine -245/82944  OK
+tau=2 g=3 mu=(5,1): xy -1225/82944  engine -1225/82944  OK
+tau=2 g=3 mu=(4,2): xy -11557/1244160  engine -11557/1244160  OK
+tau=2 g=3 mu=(3,3): xy -16561/1741824  engine -16561/1741824  OK
+tau=3 g=3 mu=(5): xy -5665/1990656  engine -5665/1990656  OK
+tau=3 g=3 mu=(5,1): xy -28325/1990656  engine -28325/1990656  OK
+tau=3 g=3 mu=(4,2): xy -41701/4644864  engine -41701/4644864  OK
+tau=3 g=3 mu=(3,3): xy -91553/9953280  engine -91553/9953280  OK
+
+## gap_check.pl, h = 2..7
+h=2 tau=1: Xi_h(0)/(2-2h) = -53/7680 ; gap formula = -53/7680 ; OK
+h=2 tau=2: Xi_h(0)/(2-2h) = -1039/207360 ; gap formula = -1039/207360 ; OK
+h=2 tau=-3/7: Xi_h(0)/(2-2h) = -3799/829440 ; gap formula = -3799/829440 ; OK
+h=2 tau=5/2: Xi_h(0)/(2-2h) = -199/42000 ; gap formula = -199/42000 ; OK
+h=3 tau=1: Xi_h(0)/(2-2h) = 599/258048 ; gap formula = 599/258048 ; OK
+h=3 tau=2: Xi_h(0)/(2-2h) = 9503/6967296 ; gap formula = 9503/6967296 ; OK
+h=3 tau=-3/7: Xi_h(0)/(2-2h) = -65195/55738368 ; gap formula = -65195/55738368 ; OK
+h=3 tau=5/2: Xi_h(0)/(2-2h) = 267917/216090000 ; gap formula = 267917/216090000 ; OK
+h=4 tau=1: Xi_h(0)/(2-2h) = -7193/2949120 ; gap formula = -7193/2949120 ; OK
+h=4 tau=2: Xi_h(0)/(2-2h) = -269113/238878720 ; gap formula = -269113/238878720 ; OK
+h=4 tau=-3/7: Xi_h(0)/(2-2h) = -3418153/3822059520 ; gap formula = -3418153/3822059520 ; OK
+h=4 tau=5/2: Xi_h(0)/(2-2h) = -14773159/15126300000 ; gap formula = -14773159/15126300000 ; OK
+h=5 tau=1: Xi_h(0)/(2-2h) = 90899/17301504 ; gap formula = 90899/17301504 ; OK
+h=5 tau=2: Xi_h(0)/(2-2h) = 70712707/37838389248 ; gap formula = 70712707/37838389248 ; OK
+h=5 tau=-3/7: Xi_h(0)/(2-2h) = -1643346055/1210828455936 ; gap formula = -1643346055/1210828455936 ; OK
+h=5 tau=5/2: Xi_h(0)/(2-2h) = 12159199/7923300000 ; gap formula = 12159199/7923300000 ; OK
+h=6 tau=1: Xi_h(0)/(2-2h) = -826119503/42939187200 ; gap formula = -826119503/42939187200 ; OK
+h=6 tau=2: Xi_h(0)/(2-2h) = -162903751583/31302667468800 ; gap formula = -162903751583/31302667468800 ; OK
+h=6 tau=-3/7: Xi_h(0)/(2-2h) = -6862169812343/2003370718003200 ; gap formula = -6862169812343/2003370718003200 ; OK
+h=6 tau=5/2: Xi_h(0)/(2-2h) = -2424999132259/602215818750000 ; gap formula = -2424999132259/602215818750000 ; OK
+h=7 tau=1: Xi_h(0)/(2-2h) = 16208399/150994944 ; gap formula = 16208399/150994944 ; OK
+h=7 tau=2: Xi_h(0)/(2-2h) = 7240855543/330225942528 ; gap formula = 7240855543/330225942528 ; OK
+h=7 tau=-3/7: Xi_h(0)/(2-2h) = -549089460595/42268920643584 ; gap formula = -549089460595/42268920643584 ; OK
+h=7 tau=5/2: Xi_h(0)/(2-2h) = 147574137289/9264858750000 ; gap formula = 147574137289/9264858750000 ; OK
+## genus 0 (genus0_check.sh)
+genus 0, tau=1, r=3: compared 35 with Gamma(J)/Gamma(J-r+3), mismatches 0
+genus 0, tau=2, r=3: compared 20 with Gamma(J)/Gamma(J-r+3), mismatches 0
+genus 0, tau=1, r=4: compared 35 with Gamma(J)/Gamma(J-r+3), mismatches 0
+genus 0, tau=2, r=4: compared 15 with Gamma(J)/Gamma(J-r+3), mismatches 0
+genus 0, tau=1, r=5: compared 21 with Gamma(J)/Gamma(J-r+3), mismatches 0
+genus 0, tau=3, r=5: compared 6 with Gamma(J)/Gamma(J-r+3), mismatches 0
+
+## genus 7, tau = 4 (from the same xy_npoint job as tau = 1..3; tau = 5..8 were still running at submission)
+h=7 tau=4: total 21, mismatches 0, homogeneity violations 0
+## Theorem 1 vs the lemmaA/data q-tables, converted to engine format by q_to_engine.pl (qeng_h<h>_r<r>.txt)
+data q-table h=2 r=1 tau=1: total 6, mismatches 0, homogeneity violations 0
+data q-table h=2 r=1 tau=2: total 6, mismatches 0, homogeneity violations 0
+data q-table h=2 r=1 tau=3: total 6, mismatches 0, homogeneity violations 0
+data q-table h=3 r=1 tau=1: total 9, mismatches 0, homogeneity violations 0
+data q-table h=3 r=1 tau=2: total 9, mismatches 0, homogeneity violations 0
+data q-table h=3 r=1 tau=3: total 9, mismatches 0, homogeneity violations 0
+data q-table h=4 r=1 tau=1: total 12, mismatches 0, homogeneity violations 0
+data q-table h=4 r=1 tau=2: total 12, mismatches 0, homogeneity violations 0
+data q-table h=4 r=1 tau=3: total 12, mismatches 0, homogeneity violations 0
+data q-table h=2 r=2 tau=1: total 15, mismatches 0, homogeneity violations 0
+data q-table h=2 r=2 tau=2: total 15, mismatches 0, homogeneity violations 0
+data q-table h=2 r=2 tau=3: total 15, mismatches 0, homogeneity violations 0
+data q-table h=3 r=2 tau=1: total 15, mismatches 0, homogeneity violations 0
+data q-table h=3 r=2 tau=2: total 15, mismatches 0, homogeneity violations 0
+data q-table h=3 r=2 tau=3: total 15, mismatches 0, homogeneity violations 0
+data q-table h=4 r=2 tau=1: total 15, mismatches 0, homogeneity violations 0
+data q-table h=4 r=2 tau=2: total 15, mismatches 0, homogeneity violations 0
+data q-table h=4 r=2 tau=3: total 15, mismatches 0, homogeneity violations 0

@@ -1,0 +1,205 @@
+% s04b_closedforms. Section file (second part of s04, input from s04_leaves.tex); label prefix: lea.
+% No new macros: those of s04_leaves.tex are in force (\TFsup, \leaVn, ...).
+
+\subsection{Closed forms}
+\label{sec:lea-closed}
+
+Nothing in \cref{thm:lea-main} depends on this subsection except the sharpness statements and the explicit values quoted as examples. Recall $\Psh_k = \prod_{i=1}^{k}((k+1)\alpha_2 - iE)((k+1)\wA - iE)$, $\Cj_j = \Psh_{j-1}/(j!\,(j-1)!\,E^{2j-4})$, $\zq = \tau e^{\dphi/E}$, and the leaf coefficients $a_j^{(k)}$ of \eqref{eq:lea-pf}, with $\Aleaf_j(t) := \sum_ka_j^{(k)}t^k$ and $\Ahat_j := t\Aleaf_j$.
+
+\begin{thm}[the dilaton leaf coefficients]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-Aj}
+For $j\geq 1$,
+\[
+\Cj_j = \frac{\Psh_{j-1}}{j!\,(j-1)!\,E^{2j-4}} = \frac{E^2\,(1-j\alpha_2/E)_{j-1}(1-j\wA/E)_{j-1}}{j!\,(j-1)!}\quad(\Cj_1 = E^2),\qquad \zq(t) = \tau e^{\dphi(\tau)/E} = t + O(t^2),
+\]
+\begin{equation}
+\label{eq:lea-Aj}
+\Aleaf_j(t) := (-1)^j\,\Cj_j\,t^{-1}\zq(t)^j\,{}_2F_1\Bigl(\frac{j\wB}{E},\frac{j\alpha_1}{E};\,j;\,\tau\Bigr),\qquad \Aleaf_j = O(t^{j-1}).
+\end{equation}
+Then $a_j^{(k)} = \coef{t^k}\Aleaf_j(t)$ for all $j\geq 1$, $k\geq 0$. Equivalently, as formal series in $t$ with finitely many $j$ at each order,
+\[
+z\Gk(z;t) = E + \sum_{j\geq 1}\frac{\Aleaf_j(t)}{E+jz},\qquad \rho\qt(\psi) = E + \sum_{j\geq 1}\Aleaf_j(t)\lf_j(\psi),\qquad \gl(\psi) = -\frac1E\sum_{j\geq 1}j\Aleaf_j(t)\lf_j(\psi).
+\]
+\end{thm}
+
+\begin{proof}
+Fix $j\geq 1$ and $k\geq 0$. By \cref{prop:lea-pf}, $\coef{t^k}(z\Gk)$ has at $-E/j$ at most a simple pole, contributing $a_j^{(k)}/(E+jz)$, so $a_j^{(k)} = j\Res_{z=-E/j}\coef{t^k}(z\Gk)$. Write $z\Gk = (\tau/t)\sum_n\tau^n(Ez/(E+z))\Ephi\Fhyp_n$; $\coef{t^k}(z\Gk)$ is a finite sum over $n\leq k$ of terms $(\text{scalar})\cdot(Ez/(E+z))\,z^{-p}\,\Fhyp_n(z)$ (each $\coef{\tau^m}\Ephi$ is a polynomial in $1/z$), and evaluation at $z = -E/j$ commutes with taking $t$-coefficients.
+
+$j = 1$: $\Fhyp_n$ is regular at $z = -E$ (its poles are at $0$ and at $-E/l$, $l\geq 2$), so $\Res_{z=-E}\coef{t^k}(z\Gk) = \coef{t^k}\bigl(-E^2(\tau/t)e^{\dphi/E}\Fhyp(-E,\tau)\bigr)$, since $\Res_{z=-E}Ez/(E+z) = -E^2$ and $\Ephi(-E) = e^{\dphi/E}$; at $z = -E$ the parameters are $\ga = 1-\alpha_2/E = \wB/E$, $\gb = 1-\wA/E = \alpha_1/E$, $\gc = 2-1 = 1$, so $\Fhyp(-E,\tau) = {}_2F_1(\wB/E,\alpha_1/E;1;\tau)$. Hence $\Aleaf_1 = -E^2t^{-1}\zq\,{}_2F_1(\wB/E,\alpha_1/E;1;\tau) = (-1)^1\Cj_1t^{-1}\zq\,{}_2F_1$.
+
+$j\geq 2$: $Ez/(E+z)$ and $z^{-p}$ are regular at $-E/j$; $\Fhyp_n$ is regular there for $n < j-1$ and has a simple pole for $n\geq j-1$, from the single factor $E+jz$ of its denominator. At $z = -E/j$: $\alpha_2+lz = (j\alpha_2-lE)/j$, $\wA+lz = (j\wA-lE)/j$, $z^n = (-E/j)^n$, $\prod_{l=2,\,l\neq j}^{n+1}(E+lz) = (E/j)^{n-1}\prod_{l=2,\,l\neq j}^{n+1}(j-l) = (E/j)^{n-1}(j-2)!\,(-1)^{n+1-j}(n+1-j)!$, and $\Res_{z=-E/j}1/(E+jz) = 1/j$; collecting the powers of $j$ ($j^{-2n}$ from the numerator, $j^{-(2n-1)}\cdot j^{-1}$ from the denominator) and the signs,
+\[
+\Res_{z=-E/j}\Fhyp_n = (-1)^{j-1}\,\frac{E\,(1-j\alpha_2/E)_n\,(1-j\wA/E)_n}{j^2\,n!\,(j-2)!\,(n+1-j)!},
+\]
+using $\prod_{l=1}^{n}(j\alpha_2-lE) = (-E)^n(1-j\alpha_2/E)_n$ and the same with $\wA$. Reindex $n = j-1+m$: $(1-j\alpha_2/E)_{j-1+m} = (1-j\alpha_2/E)_{j-1}(j\wB/E)_m$, since $1-j\alpha_2/E+j-1 = j(E-\alpha_2)/E = j\wB/E$; likewise $(1-j\wA/E)_{j-1+m} = (1-j\wA/E)_{j-1}(j\alpha_1/E)_m$; and $(j-1+m)! = (j-1)!\,(j)_m$. So
+\[
+\sum_{n\geq j-1}\tau^n\Res_{z=-E/j}\Fhyp_n = (-1)^{j-1}\,\frac{E\,(1-j\alpha_2/E)_{j-1}(1-j\wA/E)_{j-1}\,\tau^{j-1}}{j^2\,(j-2)!\,(j-1)!}\;{}_2F_1\Bigl(\frac{j\wB}{E},\frac{j\alpha_1}{E};j;\tau\Bigr).
+\]
+The remaining factors at $z = -E/j$ are $Ez/(E+z) = -E/(j-1)$ and $\Ephi = e^{j\dphi/E}$, together with $\tau/t$. Multiplying by $j$ and using $j(j-1)(j-2)!\,(j-1)! = j!\,(j-1)!$,
+\[
+a_j^{(k)} = \coef{t^k}\Bigl\{(-1)^j\,\frac{E^2(1-j\alpha_2/E)_{j-1}(1-j\wA/E)_{j-1}}{j!\,(j-1)!}\,t^{-1}\zq^j\,{}_2F_1\Bigl(\frac{j\wB}{E},\frac{j\alpha_1}{E};j;\tau\Bigr)\Bigr\},
+\]
+and $E^2(1-j\alpha_2/E)_{j-1}(1-j\wA/E)_{j-1} = \Psh_{j-1}/E^{2j-4}$, because $\prod_{i=1}^{j-1}(j\alpha_2-iE) = (-E)^{j-1}(1-j\alpha_2/E)_{j-1}$ and likewise for $\wA$. The three generating functions follow from \cref{prop:lea-pf}, \cref{thm:lea-L1} and $g_j^{(k)} = -(j/E)a_j^{(k)}$; $\Aleaf_j = O(t^{j-1})$ since $\zq^j = O(t^j)$.
+\end{proof}
+
+\begin{cor}[sum rule, $\Thf$, the H-component, dilaton consistency]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-sumrule}
+\begin{enumerate}
+\item[(a)] Sum rule: $\sum_{j\geq 1}\Aleaf_j(t) = -E^2$, i.e.\ $\sum_j(-1)^j\Cj_j\zq^j\,{}_2F_1(j\wB/E,j\alpha_1/E;j;\tau) = -E^2t = E^2\log(1-\tau)$ (no pole of $\Gk$ at $z = 0$).
+\item[(b)] $t\,z\Gk(z) = -E\log(1-\tau) + \sum_j\Ahat_j(\tau)/(E+jz)$, with $\Ahat_j = t\Aleaf_j = (-1)^j\Cj_j\zq^j\,{}_2F_1(j\wB/E,j\alpha_1/E;j;\tau)$ a function of $\tau$.
+\item[(c)] $\Thf = \epsilon_1\epsilon_2(E\dphi' - \alpha_2\wA)$ \eqref{eq:lea-Theta}, $\Thf_1 = -\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E^2$, $\Thf_k = (k+1)\epsilon_1\epsilon_2E\coef{t^{k+1}}\dphi$ for $k\geq 1$.
+\item[(d)] The H-component: $\brow = (0,E/t) + \sum_jS_j(t)\lf_j$ with
+\[
+S_j(t) = \Bigl(-\frac{j}{E}\Aleaf_j,\ \Aleaf_j' - \frac{j-1}{t}\Aleaf_j - \frac{j}{E}\lrem\Aleaf_j\Bigr) = t^{j-1}\Bigl(-\frac{j}{E}\widetilde{\Aleaf}_j,\ \widetilde{\Aleaf}_j' - \frac{j}{E}\lrem\widetilde{\Aleaf}_j\Bigr),
+\]
+where $\widetilde{\Aleaf}_j := t^{1-j}\Aleaf_j = (-1)^j\Cj_j(\zq/t)^j\,{}_2F_1(j\wB/E,j\alpha_1/E;j;\tau)$ is analytic with $\widetilde{\Aleaf}_j(0) = (-1)^j\Cj_j$; the coefficient of $t^k$ is \eqref{eq:lea-Sj}, and $S_1(0) = (E,\alpha_1\alpha_2) = E(1,\alpha_1\alpha_2/E)$.
+\item[(e)] Dilaton consistency: $\sum_{j\geq 1}j\Aleaf_j(t) = -E^2\rho(t)$, i.e.\ $\sum_{j\leq k+1}j\,a_j^{(k)} = -E^2\coef{t^k}\rho$ for every $k$ (not used).
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+(a) is the sum rule of \cref{prop:lea-pf} summed over $k$, with $a_1^{(0)} = -E^2$; multiply by $t = -\log(1-\tau)$. (b) is \cref{thm:lea-Aj} multiplied by $t$. (c) is the expansion after \cref{thm:lea-flow}. (d) By \cref{thm:lea-Aj}, $\gl = -E^{-1}\sum_jj\Aleaf_j\lf_j$, and by (LAM2), $\psi\lf_j = (E\lf_j-1)/j$, so $-\psi\gl = \sum_j\Aleaf_j\lf_j - E^{-1}\sum_j\Aleaf_j$ and $-\psi\gl' = \sum_j\Aleaf_j'\lf_j - E^{-1}\sum_j\Aleaf_j'$. With $\Lv_1 = E/t + \lrem$ \eqref{eq:lea-L1exp}, $\Lv_1\gl = -\sum_j(j/t)\Aleaf_j\lf_j - (\lrem/E)\sum_jj\Aleaf_j\lf_j$. Hence by \eqref{eq:lea-sigma1}
+\[
+\brow_1 = \Lv_1\gl - \frac{\psi}{t}\gl - \psi\gl' = \sum_j\Bigl[\Aleaf_j' - \frac{j-1}{t}\Aleaf_j - \frac{j}{E}\lrem\Aleaf_j\Bigr]\lf_j - \frac{1}{Et}\sum_j\bigl(\Aleaf_j + t\Aleaf_j'\bigr),
+\]
+and the constants add up to $-\frac{1}{Et}\frac{d}{dt}\sum_jt\Aleaf_j = -\frac{1}{Et}\frac{d}{dt}(-E^2t) = \frac{E}{t}$ by (a). With $\brow_0 = \gl$ this is the formula for $S_j$; the second form follows from $\Aleaf_j' - \frac{j-1}{t}\Aleaf_j = t^{j-1}\widetilde{\Aleaf}_j'$. $S_1(0) = (-\Aleaf_1(0)/E,\ \Aleaf_1'(0) - \lrem_0\Aleaf_1(0)/E) = (E,\ a_1^{(1)} + E\lrem_0) = (E,\ \uq/2 + E^2/2 - \alpha_0E - \alpha_1\alpha_2) = (E,\alpha_1\alpha_2)$. (e) $\Dil_1(1) = -\rr_{0,1}[0] = -1$ at every $t$ (\cref{def:set-factors}), so $\coef{\psi^1}(\rho\qt) = -\rho$; with $\coef{\psi^1}\lf_j = j/E^2$ (LAM1) this reads $\sum_jj\Aleaf_j/E^2 = -\rho$.
+\end{proof}
+
+Not given here: closed forms of $\rho$, $\alg$ and $e^{\dphi}$ free of branch ambiguity; generically $e^{\dphi} = (E\sast/\wA)^{\wA}\,(E(1-\sast)/\alpha_1)^{\alpha_1}\,U_1^{-\alpha_2}$ with $1-\sast = \alpha_1U_1/(E-\wB\tau\sast)$ (\cref{lem:set-N}(ii)), which is all that is needed to define $\zq$.
+
+\begin{cor}[top and subleading coefficients; sharpness]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-top}
+For every $k\geq 0$, resp.\ $k\geq 1$,
+\[
+\begin{gathered}
+a_{k+1}^{(k)} = (-1)^{k+1}\Cj_{k+1} = (-1)^{k+1}\frac{\Psh_k}{(k+1)!\,k!\,E^{2k-2}},\qquad
+g_{k+1}^{(k)} = (-1)^k\frac{\Psh_k}{(k!)^2E^{2k-1}},\\
+a_k^{(k)} = (-1)^{k+1}\,k\,\Cj_k\,\frac{\uq}{2E^2}.
+\end{gathered}
+\]
+Consequently $\Cj_{k+1}\neq 0$ if and only if $\Psh_k\neq 0$ if and only if $E\notin\{(k+1)\alpha_2/i,\,(k+1)\wA/i : 1\leq i\leq k\}$: the top leaf $\lf_{k+1}$ occurs in $\coef{t^k}(\rho\qt)$ exactly then, and the bound $j\leq k+1$ of (L1) is sharp at generic weights.
+\end{cor}
+
+\begin{proof}
+$\Aleaf_j = (-1)^j\Cj_jt^{j-1}(\zq/t)^j\,{}_2F_1(j\wB/E,j\alpha_1/E;j;\tau)$ with $(\zq/t)(0) = 1$ and ${}_2F_1 = 1 + O(\tau)$: the first claim is $j = k+1$ at order $t^k$; $g_{k+1}^{(k)} = -\frac{k+1}{E}a_{k+1}^{(k)}$ and $\frac{k+1}{(k+1)!} = \frac{1}{k!}$. For the third, with $j = k$ at order $t^k$ one needs $\coef{t^1}\bigl((\zq/t)^k\,{}_2F_1(k\wB/E,k\alpha_1/E;k;\tau)\bigr)$; now $\zq/t = (\tau/t)e^{\dphi/E} = 1 + (\dphi_1/E - \tfrac12)t + O(t^2)$ with $\dphi_1 = \alpha_2\wA/E$, and ${}_2F_1 = 1 + \frac{(k\wB/E)(k\alpha_1/E)}{k}\tau + O(\tau^2) = 1 + \frac{k\alpha_1\wB}{E^2}t + O(t^2)$, so
+\[
+\coef{t^1}\bigl((\zq/t)^k\,{}_2F_1\bigr) = k\Bigl(\frac{\alpha_2\wA}{E^2} - \frac12\Bigr) + \frac{k\alpha_1\wB}{E^2} = k\,\frac{2\alpha_2\wA + 2\alpha_1\wB - E^2}{2E^2} = -\frac{k\uq}{2E^2},
+\]
+since $2\alpha_2\wA + 2\alpha_1\wB - E^2 = 2E(\alpha_1+\alpha_2) - 4\alpha_1\alpha_2 - E^2 = -\uq$.
+\end{proof}
+
+Direct computation of the top coefficient without \cref{thm:lea-Aj} ($k\geq 1$): put $z_0 := -E/(k+1)$. Only the term $n = k$ of \eqref{eq:lea-Rk}, and in $\Hcoef_k$ only $\Fhyp_k$, has a pole at $z_0$ ($d_{k,k} = 1$), so $a_{k+1}^{(k)} = (k+1)\,\frac{Ez_0}{E+z_0}\Res_{z_0}\Fhyp_k$ with $Ez_0/(E+z_0) = -E/k$, $\alpha_2+iz_0 = ((k+1)\alpha_2-iE)/(k+1)$, $\wA+iz_0 = ((k+1)\wA-iE)/(k+1)$, $z_0^k = (-E)^k/(k+1)^k$, $\prod_{i=2}^{k}(E+iz_0) = E^{k-1}(k-1)!/(k+1)^{k-1}$ and $\Res_{z_0}1/(E+(k+1)z) = 1/(k+1)$; hence $\Res_{z_0}\Fhyp_k = (-1)^k\Psh_k/((k+1)^2k!\,(k-1)!\,E^{2k-1})$ and $a_{k+1}^{(k)} = (k+1)(-E/k)\Res_{z_0}\Fhyp_k = (-1)^{k+1}\Psh_k/((k+1)!\,k!\,E^{2k-2})$. For $k = 0$, $a_1^{(0)} = -E^2 = -\Psh_0E^2$.
+
+\begin{thm}[the loops in closed form]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-loops}
+With $\Ahat_j = t\Aleaf_j$,
+\begin{equation}
+\label{eq:lea-loops}
+\begin{gathered}
+\rho^2\Edge_{11}(\psi,\psi') = \sum_{i,l\geq 1}e_{il}(t)\lf_i(\psi)\lf_l(\psi'),\\
+e_{il}(t) = \frac{il}{E^2t^2}\int_0^t\Thf(u)\,\Ahat_i'(u)\,\Ahat_l'(u)\,du
+= -\frac{il\,\epsilon_1\epsilon_2\wB}{E^2t^2}\int_0^{\tau}v(1-v)\,\sast(v)\Lv_2(v)\,\frac{d\Ahat_i}{dv}\frac{d\Ahat_l}{dv}\,dv,
+\end{gathered}
+\end{equation}
+and $e_{il} = O(t^{(i-1)+(l-1)})$.
+\end{thm}
+
+\begin{proof}
+By \cref{thm:lea-Aj}, $\Dg(\psi) = \frac{d}{dt}(t\gl(\psi)) = -\frac1E\sum_jj\Ahat_j'\lf_j(\psi)$. Insert this in \eqref{eq:lea-flow} and integrate from $0$ (\eqref{eq:lea-int}); the coefficient of $\lf_i(\psi)\lf_l(\psi')$ in $\Ebar = t^2\rho^2\Edge_{11}$ is $\frac{il}{E^2}\int_0^t\Thf\Ahat_i'\Ahat_l'\,du$. For the second form substitute $v = \tau(u)$: $du = dv/(1-v)$, $\Ahat' = (1-v)\,d\Ahat/dv$ and $\Thf = -\epsilon_1\epsilon_2\wB\,v\,\sast(v)\Lv_2(v)$ \eqref{eq:lea-Theta}, so $\Thf\Ahat_i'\Ahat_l'\,du = -\epsilon_1\epsilon_2\wB\,v(1-v)\sast\Lv_2\,\frac{d\Ahat_i}{dv}\frac{d\Ahat_l}{dv}\,dv$. The order follows from $\Thf = O(t)$ and $\Ahat_j' = O(t^{j-1})$.
+\end{proof}
+
+\begin{cor}[anti-diagonal and corner]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-anti}
+Since $\Thf = \Thf_1t + O(t^2)$ and $\Ahat_j' = j\,a_j^{(j-1)}t^{j-1} + O(t^j)$, for $i+l = k+2$:
+\begin{equation}
+\label{eq:lea-antidiag}
+e_{il}^{(k)} = \frac{\Thf_1\,i^2l^2\,a_i^{(i-1)}a_l^{(l-1)}}{E^2(i+l)} = -\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\,i^2l^2\,a_i^{(i-1)}a_l^{(l-1)}}{E^4(i+l)} = -(-1)^{i+l}\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\,i^2l^2\,\Cj_i\Cj_l}{E^4(i+l)},
+\end{equation}
+which is \eqref{eq:lea-anti}; with $a_1^{(0)} = -E^2$ the corner is $e_{1,k+1}^{(k)} = \frac{(k+1)^2}{k+2}\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{E^2}a_{k+1}^{(k)}$. Example $k = 1$: $e_{12}^{(1)} = e_{21}^{(1)} = -\frac{2\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\,\uq}{3E^2}$, $e_{22}^{(1)} = 0$. The anti-diagonal entries are non-zero if and only if $\Psh_{i-1}\Psh_{l-1}\neq 0$, so the support bound of (L3) is sharp entry by entry at generic weights.
+\end{cor}
+
+\begin{proof}
+The leading term of the integrand in \eqref{eq:lea-loops} is $\Thf_1\,il\,a_i^{(i-1)}a_l^{(l-1)}u^{i+l-1}$; integrating gives $t^{i+l}/(i+l)$, and multiplying by $il/(E^2t^2)$ gives the coefficient of $t^{i+l-2} = t^k$. Insert $\Thf_1 = -\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E^2$ and $a_j^{(j-1)} = (-1)^j\Cj_j$ (\cref{cor:lea-top}). For $k = 1$, $(i,l) = (1,2)$: $-\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\cdot 4\cdot(-E^2)(-\uq/2)/(3E^4)$, with $a_2^{(1)} = -\uq/2$ (\cref{prop:lea-sigma}); $e_{22}^{(1)} = 0$ by the support bound.
+\end{proof}
+
+\begin{rmk}[the legs in closed form]
+\label{rmk:lea-legs}
+\begin{enumerate}
+\item[(a)] $\Edge_{11}$ legs: $\coef{t^k}(\rho f_{1,b}) = \sum_{k_1+k_2 = k}\coef{t^{k_1}}(\rho^{-1})\sum_{i,l}e_{il}^{(k_2)}\frac{l^b}{E^{b+1}}\lf_i(\psi)$ \eqref{eq:lea-L2one}: no $\lf_0$, and its top coefficient ($\lf_{k+1}$ at $t^k$, which requires $k_2 = k$, $i = k+1$, $l = 1$) is $e_{k+1,1}^{(k)}/E^{b+1} = \frac{(k+1)^2}{k+2}\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\,a_{k+1}^{(k)}}{E^{b+3}}$, for all $k$ and $b$. At $t^0$ the leg is $-\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{2}E^{-b-1}\lf_1$.
+\item[(b)] $\Edge_{12}$ at $t = 0$ (rank one):
+\[
+\Edge_{12}(\psi,w)\big|_{t=0} = \lf_1(\psi)\,\chi_{12}(w),\qquad \chi_{12}(w) := -\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\,\frac{\rr_{0,2}(-w;0)}{E+w} = -\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\,\frac{\hreg(w)^{-1}}{E+w}.
+\]
+Proof: at $t^0$, \eqref{eq:lea-E12leaf} has only $j = 1$ with $S_1^{(0)} = (E,\alpha_1\alpha_2) = E(1,\alpha_1\alpha_2/E)$, and for every covector $b$
+\[
+\Bigl\langle\Bigl(1,\frac{\alpha_1\alpha_2}{E}\Bigr),b\Bigr\rangle = \epsilon_1\epsilon_2\Bigl[\Bigl(\alpha_0\alpha_1\alpha_2 + \frac{(\alpha_1\alpha_2)^2}{E}\Bigr)b_0 + \Bigl(\alpha_1\alpha_2 - E\frac{\alpha_1\alpha_2}{E}\Bigr)b_1\Bigr] = \frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{E}\,b_0
+\]
+($\alpha_0E+\alpha_1\alpha_2 = \wA\wB$); so $\coef{t^0}(\rho\Edge_{12}) = -E\,\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{E}\rr_{0,2}(-w;0)\lf_1(\psi)\lf_1(-w)$ and $\coef{t^0}\Edge_{12} = \coef{t^0}(\rho\Edge_{12})$ as $\rho(0) = 1$; then \cref{prop:lea-regrows}(a) with $\hreg(-w) = \hreg(w)^{-1}$. The orthogonality is not needed here.
+\item[(c)] $\Edge_{12}$ top coefficients, given \cref{prop:lea-regrows}(a), (b): for all $k$, $b$,
+\[
+[\lf_{k+1}]\coef{t^k}(\rho f_{2,b}) = (k+1)^2\,\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{E^2}\,a_{k+1}^{(k)}\,\coef{w^b}\frac{\hreg(w)^{-1}}{E+(k+1)w}.
+\]
+Proof: in \eqref{eq:lea-E12coef} only $j = k+1$ and $k_1 = k$ contribute to $\lf_{k+1}$, giving
+\[
+-(k+1)\Bigl\langle S_{k+1}^{(k)},\ \coef{w^b}\frac{\vv_{2,0}(-w)}{E+(k+1)w}\Bigr\rangle ;
+\]
+here $\vv_{2,0}(-w) = \hreg(w)^{-1}(1,\alpha_1\alpha_2/E)$, $\langle S,(1,\alpha_1\alpha_2/E)\rangle = \frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{E}S_0$ by (b), and $S_0 = g_{k+1}^{(k)} = -\frac{k+1}{E}a_{k+1}^{(k)}$ by \eqref{eq:lea-Sj}. The lower coefficients $[\lf_j]\coef{t^k}(\rho f_{2,b})$, $j\leq k$, involve $\vv_{2,k_2}$ with $k_2\geq 1$ and are determined recursively by \cref{rmk:lea-E22}(2); no closed form in $b$ is claimed for them.
+\end{enumerate}
+\end{rmk}
+
+\begin{rmk}[low orders]
+\label{rmk:lea-low}
+All of the following has been derived above; $\kappa_2 := \epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB$.
+\begin{itemize}
+\item $\dphi = \frac{\alpha_2\wA}{E}t - \frac{\alpha_1\alpha_2\wA\wB}{2E^3}t^2 + O(t^3)$; $\alg = 1 - \frac{E^2+\uq}{2E^2}\tau + O(\tau^2)$; $\rho = 1 + \frac{\uq}{2E^2}t + O(t^2)$; $\Delta_1 = -\frac{\epsilon_1\epsilon_2E^3}{t^2}\bigl(1 - \frac{\uq}{E^2}t + O(t^2)\bigr)$; $\Delta_2(0) = \kappa_2/E$, $\Delta_2'(0) = 0$; $\lrem_0 = \frac{E}{2} - \alpha_0 - \frac{\alpha_1\alpha_2}{E}$; $\Thf_1 = -\kappa_2/E^2$.
+\item $q^{(1)} = \frac{\uq}{2}(\lf_1-\lf_2)$; $\Gk_1 = \frac{\uq}{2(E+z)(E+2z)}$; $\gl_1 = \frac{\uq}{2E}(2\lf_2-\lf_1) = \frac{\uq}{2}\lf_1\lf_2$ (by (LAM5): $\lf_1\lf_2 = (2\lf_2-\lf_1)/E$); $\Gk_1 - \rho_1\Gk_0 = \coef{t^1}\rr_{0,1} = \frac{E}{E+z}\bigl(\Hcoef_1 - \frac{E^2+\uq}{2E^2}\bigr)$.
+\item Top and subleading coefficients of $q^{(k)}$: $a_{k+1}^{(k)} = (-1)^{k+1}\Cj_{k+1}$, $a_k^{(k)} = (-1)^{k+1}k\Cj_k\uq/(2E^2)$ (\cref{cor:lea-top}); e.g.\ $a_3^{(2)} = -\Cj_3 = -\frac{\Psh_2}{12E^2} = -\frac{(3\alpha_2-E)(3\alpha_2-2E)(3\wA-E)(3\wA-2E)}{12E^2}$, $a_2^{(2)} = -\Cj_2\uq/E^2 = \frac{\uq^2}{2E^2}$ (since $\Cj_2 = \Psh_1/2 = \frac{(2\alpha_2-E)(2\wA-E)}{2} = \frac{(E-2\alpha_2)(2\alpha_1-E)}{2} = -\frac{\uq}{2}$), and $a_1^{(2)} = -a_2^{(2)} - a_3^{(2)}$ by the sum rule.
+\item $\brow^{(0)} = (E\lf_1,\alpha_1\alpha_2\lf_1)$; $\coef{t^0}\Yv = (0,E)$.
+\item Loops: $e_{11}^{(0)} = -\kappa_2/2$; at $k = 1$: $e_{12}^{(1)} = e_{21}^{(1)} = -\frac{2\kappa_2\uq}{3E^2}$, $e_{22}^{(1)} = 0$ ($e_{11}^{(1)}$ needs $\Thf_2 = 3\epsilon_1\epsilon_2E\coef{t^3}\dphi$, not computed here).
+\item $\Edge_{11}$ legs at $t^0$: $-\frac{\kappa_2}{2}E^{-b-1}\lf_1$. $\Edge_{12}$ at $t^0$: $\lf_1(\psi)\chi_{12}(w)$.
+\end{itemize}
+Higher tables ($t^2$, $t^3$ of the loops and legs, $\brow^{(1)}$, $\Thf_2$, $\Thf_3$, $\lrem_1$, the explicit $\Edge_{12}$ leg polynomials in $b$) are not given.
+\end{rmk}
+
+\subsection{The case \texorpdfstring{$\alpha_0 = 0$}{alpha0 = 0}: rescaling to the fibrewise rows}
+\label{sec:lea-a0}
+
+The proof of \cref{thm:lea-main} given above does not use $\alpha_0\neq 0$ (see remark (iv) below). Independently of this, at $\alpha_0 = 0$ the objects of the theorem are related by explicit rescalings to those at a fibrewise point $\alpha_0 = 0$, $\alpha_i = \epsilon_i$, which makes the fibrewise case the general one for $\alpha_0 = 0$.
+
+\begin{cor}[$\alpha_0 = 0$]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-a0}
+Let $\alpha_0 = 0$ and $\alpha_1\alpha_2E\epsilon_1\epsilon_2\neq 0$ (then $\wA = \alpha_2$, $\wB = \alpha_1$, $E = \alpha_1+\alpha_2$), and put $\xc := \alpha_1/\alpha_2$ (so $\xc\neq 0,-1$) and $\cc := 1+\xc = E/\alpha_2$. Let the superscript $\TFsup$ denote the frame-B objects of this note at the fibrewise weight point $(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2) = (0,\xc,1,\xc,1)$. Then, for $i = 1,2$ and all $t$:
+\begin{gather*}
+\rr_{0,i}(z;t) = \rr^{\TFsup}_{0,i}(z/\alpha_2;t),\qquad \rr_{1,i}(z;t) = \alpha_2\,\rr^{\TFsup}_{1,i}(z/\alpha_2;t),\qquad \Lv_i = \alpha_2\Lv_i^{\TFsup},\\
+\Delta_i = \kap\,\Delta_i^{\TFsup},\quad \kap := \frac{\epsilon_1\epsilon_2\alpha_2^4}{\alpha_1},\qquad
+\langle a,b\rangle = \kap\,\langle a^{\TFsup},b^{\TFsup}\rangle^{\TFsup}\ \text{for }a = (a_0,\alpha_2a_1^{\TFsup}),\ b\text{ likewise},\\
+\Dil_i(d) = \alpha_2^{1-d}\Dil_i^{\TFsup}(d),\qquad \Edge_{ij}(m,n) = \kap\,\alpha_2^{-1-m-n}\,\Edge_{ij}^{\TFsup}(m,n),\qquad \rho = \rho^{\TFsup},\\
+\lf_j(\psi) = \alpha_2^{-1}\lf_j^{\TFsup}(\psi/\alpha_2),\qquad \qt(\psi) = \alpha_2\,\qt^{\TFsup}(\psi/\alpha_2),\qquad f_{j,b}(\psi) = \kap\,\alpha_2^{-1-b}f^{\TFsup}_{j,b}(\psi/\alpha_2).
+\end{gather*}
+Consequently \cref{thm:lea-main} at $\alpha_0 = 0$ is \cref{thm:lea-main} at the fibrewise point $(0,\xc,1,\xc,1)$ read through these rescalings; no new row analysis is needed.
+\end{cor}
+
+\begin{proof}
+(1) The superpotential. At $\alpha_0 = 0$, $\cW = \alpha_1\log(1-\cQ U) - \alpha_2\log U + \alpha_2\log(1-U) = \alpha_2\cW^{\TFsup}$ with $\cW^{\TFsup} := \xc\log(1-\cQ U) - \log U + \log(1-U)$, the superpotential at $(0,\xc,1,\xc,1)$; so $\cW_k = \alpha_2\cW_k^{\TFsup}$, the critical points coincide ($\Pq = \alpha_2\Pq^{\TFsup}$), and by the Wick form (D1) and the rescaling rule (D4) of \cref{def:row-Lnorm} ($\Lnorm[\lambda f,1](z) = \Lnorm[f,1](z/\lambda)$, applied in the coordinate $y = \log U$), $\rpt_{0,i}(z) = {\rpt}^{\TFsup}_{0,i}(z/\alpha_2)$.
+(2) The twist. By \cref{lem:set-hmult}, $\rr_{0,i} = h_{(\alpha_1,\alpha_2,-E)}(z)\rpt_{0,i}$, and $h_{(\alpha_1,\alpha_2,-E)}(z) = h_{(\xc,1,-\cc)}(z/\alpha_2)$, because the exponent $-\sum_k\bk_kz^{2k-1}(\alpha_1^{1-2k}+\alpha_2^{1-2k}-E^{1-2k})$ equals $-\sum_k\bk_k(z/\alpha_2)^{2k-1}(\xc^{1-2k}+1-\cc^{1-2k})$ (rescaling the multiset by $\alpha_2$ rescales $z$); and $h_{(\xc,1,-\cc)}$ is the frame-B twist at the fibrewise point, where $\bw^{\TFsup} = (\cc,-\xc,-1)$ and $\hnw^{\TFsup} = h_{(\xc,1,-\xc,-1)} = 1$, so that $h_{(\xc,1,-\cc)} = (h_{\bw^{\TFsup}})^{-1}$ by $h_{-v} = h_v^{-1}$. So $\rr_{0,i}(z) = \rr^{\TFsup}_{0,i}(z/\alpha_2)$.
+(3) $\Lv = -\alpha_1\cQ U/(1-\cQ U) = \alpha_2\Lv^{\TFsup}$. $\Dop_i$ is invariant under a constant rescaling of $\Delta_i$ (shown in (4)). So $\rr_{1,i}(z) = (\alpha_2\Lv_i^{\TFsup} + z\Dop_i)\rr^{\TFsup}_{0,i}(z/\alpha_2) = \alpha_2\bigl(\Lv_i^{\TFsup} + (z/\alpha_2)\Dop_i\bigr)\rr^{\TFsup}_{0,i}(z/\alpha_2) = \alpha_2\rr^{\TFsup}_{1,i}(z/\alpha_2)$.
+(4) Pairing and $\Delta_i$. At $\alpha_0 = 0$, $\langle a,b\rangle = \epsilon_1\epsilon_2[\alpha_1\alpha_2(a_0b_1+a_1b_0) - Ea_1b_1]$ (\cref{prop:set-frob}); with $a_1 = \alpha_2a_1^{\TFsup}$, $b_1 = \alpha_2b_1^{\TFsup}$ and $\alpha_1\alpha_2 = \xc\alpha_2^2$, $E = \cc\alpha_2$,
+\[
+\langle a,b\rangle = \epsilon_1\epsilon_2\alpha_2^3\bigl[\xc(a_0b_1^{\TFsup} + a_1^{\TFsup}b_0) - \cc\,a_1^{\TFsup}b_1^{\TFsup}\bigr] = \frac{\epsilon_1\epsilon_2\alpha_2^3}{\xc}\langle a^{\TFsup},b^{\TFsup}\rangle^{\TFsup},
+\]
+since at the fibrewise point $\epsilon_1\epsilon_2 = \xc$ and $\langle a,b\rangle^{\TFsup} = \xc^2(a_0b_1+a_1b_0) - \cc\xc\,a_1b_1$; and $\epsilon_1\epsilon_2\alpha_2^3/\xc = \kap$. $\Delta_i = \epsilon_1\epsilon_2(\Lv_i-\Lv_j)(\alpha_1\alpha_2 - E\Lv_i) = \epsilon_1\epsilon_2\alpha_2^3(\Lv_i^{\TFsup}-\Lv_j^{\TFsup})(\xc - \cc\Lv_i^{\TFsup}) = (\epsilon_1\epsilon_2\alpha_2^3/\xc)\Delta_i^{\TFsup}$, since $\Delta_i^{\TFsup} = \xc(\Lv_i^{\TFsup}-\Lv_j^{\TFsup})(\xc-\cc\Lv_i^{\TFsup})$ by the second form of \cref{prop:set-idem}. Hence $\Delta_i'/\Delta_i = (\Delta_i^{\TFsup})'/\Delta_i^{\TFsup}$ and $\Dop_i = \Dop_i^{\TFsup}$.
+(5) $\Dil_i(d) = (-1)^d\rr_{0,i}[d-1] = \alpha_2^{1-d}\Dil_i^{\TFsup}(d)$ by (2). By (3), $\vv_i(z) = (\rr^{\TFsup}_{0,i}(z/\alpha_2),\,\alpha_2\rr^{\TFsup}_{1,i}(z/\alpha_2))$ has the form of (4), so $\Pij_{ij}(z,w) = -\langle\vv_i(-z),\vv_j(-w)\rangle = \kap\,\Pij_{ij}^{\TFsup}(z/\alpha_2,w/\alpha_2)$, and by \cref{lem:set-edgegen}
+\[
+\Edge_{ij}(z,w) = \frac{\Pij_{ij}(z,w) - \Pij_{ij}(-w,w)}{z+w} = \frac{\kap}{\alpha_2}\,\frac{\Pij_{ij}^{\TFsup}(z/\alpha_2,w/\alpha_2) - \Pij_{ij}^{\TFsup}(-w/\alpha_2,w/\alpha_2)}{z/\alpha_2 + w/\alpha_2} = \frac{\kap}{\alpha_2}\Edge_{ij}^{\TFsup}\Bigl(\frac{z}{\alpha_2},\frac{w}{\alpha_2}\Bigr),
+\]
+i.e.\ $\Edge_{ij}(m,n) = \kap\,\alpha_2^{-1-m-n}\Edge_{ij}^{\TFsup}(m,n)$.
+(6) $\rho$ and the leaves. $\Delta_1t^2/(-\epsilon_1\epsilon_2E^3) = \kap\Delta_1^{\TFsup}t^2/(-\epsilon_1\epsilon_2\alpha_2^3\cc^3) = \Delta_1^{\TFsup}t^2/(-\xc\cc^3)$, which is the defining expression of $\rho^{\TFsup}$ (at the fibrewise point $-\epsilon_1\epsilon_2E^3 = -\xc\cc^3$); so $\rho = \rho^{\TFsup}$. $\lf_j(\psi) = 1/(\alpha_2\cc - j\psi) = \alpha_2^{-1}/(\cc - j\psi/\alpha_2) = \alpha_2^{-1}\lf_j^{\TFsup}(\psi/\alpha_2)$. $\qt(\psi) = -\psi\rr_{0,1}(-\psi) = \alpha_2\cdot(-\psi/\alpha_2)\rr^{\TFsup}_{0,1}(-\psi/\alpha_2) = \alpha_2\qt^{\TFsup}(\psi/\alpha_2)$. Finally $f_{j,b}(\psi) = \sum_a\Edge_{1j}(a,b)\psi^a = \sum_a\kap\alpha_2^{-1-a-b}\Edge_{1j}^{\TFsup}(a,b)\psi^a = \kap\alpha_2^{-1-b}\sum_a\Edge^{\TFsup}_{1j}(a,b)(\psi/\alpha_2)^a = \kap\alpha_2^{-1-b}f^{\TFsup}_{j,b}(\psi/\alpha_2)$.
+(7) Each statement of \cref{thm:lea-main} at $\alpha_0 = 0$ is now the corresponding statement at the fibrewise point: membership in $\Lsp_{k+1}$ is preserved by $\psi\mapsto\psi/\alpha_2$ and by the overall constants ($\lf_j^{\TFsup}(\psi/\alpha_2) = \alpha_2\lf_j(\psi)$); (F1) is preserved since $\rho = \rho^{\TFsup}$ and $\Delta_2 = \kap\Delta_2^{\TFsup}$; (F2) since $E/(E+z) = \cc/(\cc+z/\alpha_2)$ and $E/t + \alpha_1\alpha_2/(E+z) = \alpha_2[\cc/t + \xc/(\cc+z/\alpha_2)]$; (F3) since the rescalings are by constants; the symmetries $\Edge_{11}(a,b) = \Edge_{11}(b,a)$ and $\Edge_{21}(b,a) = \Edge_{12}(a,b)$ are preserved since the factor $\alpha_2^{-1-m-n}$ is symmetric.
+\end{proof}
+
+Remarks. (i) The fibrewise case needs $\xc\neq 0,-1$, i.e.\ $\alpha_1\neq 0$ and $E\neq 0$; $\alpha_2\neq 0$ for the rescaling; $\epsilon_1\epsilon_2\neq 0$ for $\kap\neq 0$: exactly (ND) at $\alpha_0 = 0$ (where $\wA = \alpha_2$, $\wB = \alpha_1$). (ii) The $\cQ = 0$ constant at $\alpha_0 = 0$ is $\hnw = h_{(\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2)}$, not $1$ unless $\alpha_i = \epsilon_i$; it is the frame change $\hw^{-1}\hnw = h_{(\alpha_1,\alpha_2,-E)}$ that is independent of $\epsilon_1,\epsilon_2$. At the fibrewise point both are trivial. (iii) The vertex class $\Hg_{\bw}$, $\bw = (E,-\epsilon_1,-\epsilon_2) = \alpha_2(\cc,-\epsilon_1/\alpha_2,-\epsilon_2/\alpha_2)$, differs from the fibrewise class $(\cc,-\xc,-1)$ unless $\epsilon_1 = \alpha_1$; this concerns the regularity theorem of \cref{sec:reg}, not \cref{thm:lea-main}. (iv) The direct proof of \cref{sec:row} and of \cref{sec:lea-qde,sec:lea-L1,sec:lea-sigma,sec:lea-flow,sec:lea-regular,sec:lea-legs,sec:lea-assembly} covers $\alpha_0 = 0$ as well: the point $\cQ = 0$ is never used there, and $\hnw$ enters only through the multiset identity of \cref{lem:set-hmult}. The only statements of this section that need $\alpha_0\neq 0$ are the citations of \cref{lem:ide-norm} for the definition of the constant $\hnw$ and of \cref{prop:ide-rows}(iv) as an alternative source for $\Ktwo = 1$; both extend to $\alpha_0 = 0$ by rationality in the weights (the passage (P) of \cref{lem:set-rings}) once the factors are defined there. This is what the three-torus corollary of \cref{sec:rig} uses (\cref{cor:rig-3T}).
+
+\begin{rmk}[the fibrewise torus as a special case]
+\label{rmk:lea-fibrewise}
+At the fibrewise point $(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2) = (0,\xc,1,\xc,1)$ with $\cc = 1+\xc$, \cref{thm:lea-main} is the leaf-structure theorem of the fibrewise torus $\TF$, and the objects of this section take the following form: $\wA = 1$, $\wB = \xc$, $E = \cc$, $\uq = -(1-\xc)^2$, $\epsilon_1\epsilon_2 = \xc$, $-\epsilon_1\epsilon_2E^3 = -\xc\cc^3$; the Euler phase is $\phi_\tau(s) = \log s + \xc\log(1-s) - \log(1-\tau s)$ with $\phi_0''(1/\cc) = -\cc^3/\xc$; $\delta^2 = \cc^2 - 4\xc\tau$, $\sast = 2/(\cc+\delta)$, $\stil = (\cc+\delta)/(2\xc\tau)$, $U_2(0) = -1/\xc$; the class is $\bw = (\cc,-\xc,-1)$, $\hnw = 1$, and the frame-B rows are $\hw^{-1}\rpt_{0,i}$; $\Lv_1 = 1/(\tau\sast) = \cc/\tau - \xc\sast$, $\Lv_2 = \xc\sast$, $\muq = \cc/\tau - 1$, $\lrem_0 = \cc/2 - \xc/\cc$; the pairing is $\langle a,b\rangle = \xc^2(a_0b_1+a_1b_0) - \cc\xc\,a_1b_1$; $\Delta_1 = -\xc\delta/(\tau^2{\sast}^2)$, $\Delta_2 = \xc^3\delta{\sast}^2$, $\Delta_2(0) = \xc^3/\cc$; $\Thf = -\xc^3\tau{\sast}^2$, $\Thf_1 = -\xc^3/\cc^2$; $\kappa_2 = \xc^3$; $\hreg = h_{(\xc,1,1,\xc,-\cc,-\cc)} = \hw^{-2}$, so $\vv_2(z;0) = \hw(z)^{-2}(1,\xc/\cc)$; $\Psh_k = \prod_{i=1}^{k}(k+1-i\cc)^2$, $\Cj_j = \cc^2[(1-j/\cc)_{j-1}]^2/(j!\,(j-1)!)$, and $\Aleaf_j = (-1)^j\Cj_jt^{-1}\zq^j\,{}_2F_1(j\xc/\cc,j\xc/\cc;j;\tau)$ (as $\wB/E = \alpha_1/E = \xc/\cc$). The identity $(1-\tau)\alpha_2s = (\wA-\wB s)(1-\tau s)$ of \cref{lem:set-N}(ii) becomes $1-s = \xc s(1-\tau s)$ at the critical points, and the numerator of $\Fhyp_n$ becomes $\prod_{j=1}^{n}(1+jz)^2$, with double zeros at $-1/j$; neither special form is used in the proofs above. By \cref{cor:lea-a0}, every weight point with $\alpha_0 = 0$ and (ND) is a rescaling of such a fibrewise point.
+\end{rmk}

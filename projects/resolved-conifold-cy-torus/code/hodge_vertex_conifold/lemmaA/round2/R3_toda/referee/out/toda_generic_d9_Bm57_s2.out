@@ -1,0 +1,29 @@
+B = -5/7, p' = (4, 1/6, 1/2, 3/5, 2/7, -5/6, 1/7, 0, -3/7)
+sanity s_(2,1) = (p1^3 - p3)/3: OK
+(JM1) (D1^2+D2) tau0.tau1                      0 (all monomials of degree <= 9 - weight)
+  control (D1^2+D2) tau1.tau0                  NONZERO in 45 monomials (e.g. p_[2,2,2]: -24052874696049469831463791619199833935332070123699917609109/19603818146916040460562228786897601559758186340332031250)
+  control (D1^2+D2) tau0.tau_{-1}              NONZERO in 45 monomials (e.g. p_[6,1]: 1966350453908955611180098728591039051067074493894857906694569156309627056/830918127565004156348428886705932683298669871874153614044189453125)
+  control (D1^2+D2) tau_{-1}.tau0              0 (all monomials of degree <= 9 - weight)
+(JM2) (D1^3+3D1D2-4D3) tau1.tau0               0 (all monomials of degree <= 9 - weight)
+  control (JM2) tau0.tau1                      NONZERO in 30 monomials (e.g. p_[5,1]: -3015995550843107218306078319333656029147230750897960877381460333681754112/9537576837385683819705188796182394899993596482090651988983154296875)
+(P2) (D_2 + p_2(-D~)) tau0.tau1                0 (all monomials of degree <= 9 - weight)
+  control (P2) tau1.tau0                       NONZERO in 45 monomials (e.g. p_[1,1,1]: -284407118263609571527232/4868105063906396484375)
+  control (P2) tau0.tau_{-1}                   NONZERO in 45 monomials (e.g. p_[]: -892/175)
+(P3) (D_3 + p_3(-D~)) tau0.tau1                0 (all monomials of degree <= 9 - weight)
+  control (P3) tau1.tau0                       NONZERO in 30 monomials (e.g. p_[1,1,1,1,1,1]: 12373701545832263954994039683253575771183424077820261390586238352220192/9537576837385683819705188796182394899993596482090651988983154296875)
+  control (P3) tau0.tau_{-1}                   NONZERO in 30 monomials (e.g. p_[4,2]: 111696282931087612284354769457120367422038562589493446041327203226442794/92324236396111572927603209633992520366518874652683734893798828125)
+(P4) (D_4 + p_4(-D~)) tau0.tau1                0 (all monomials of degree <= 9 - weight)
+  control (P4) tau1.tau0                       NONZERO in 19 monomials (e.g. p_[1,1]: -598618173614787472043421578688288/596591346524503791656494140625)
+  control (P4) tau0.tau_{-1}                   NONZERO in 19 monomials (e.g. p_[2,1]: -222393395572596528894217830946561361284476928/15293479342058813018538057804107666015625)
+(P5) (D_5 + p_5(-D~)) tau0.tau1                0 (all monomials of degree <= 9 - weight)
+  control (P5) tau1.tau0                       NONZERO in 12 monomials (e.g. p_[2,1]: 3091610129055476369720124416179865777650038135104351391184/121011223129111360867668078931466676294803619384765625)
+  control (P5) tau0.tau_{-1}                   NONZERO in 12 monomials (e.g. p_[1,1]: -21824501637118235311957317961898176221908976/5097826447352937672846019268035888671875)
+(P6) (D_6 + p_6(-D~)) tau0.tau1                0 (all monomials of degree <= 9 - weight)
+  control (P6) tau1.tau0                       NONZERO in 7 monomials (e.g. p_[]: -739226460072738757799116177567228/1789774039573511374969482421875)
+  control (P6) tau0.tau_{-1}                   NONZERO in 7 monomials (e.g. p_[2]: -14520751372750067039437574620198623553588121434977102364406/73797878073030123338237623465829528868198394775390625)
+(KP) (D1^4+3D2^2-4D1D3) tau0.tau0              0 (all monomials of degree <= 9 - weight)
+(KP) (D1^4+3D2^2-4D1D3) tau1.tau1              0 (all monomials of degree <= 9 - weight)
+
+real	10m40.575s
+user	10m36.498s
+sys	0m0.966s

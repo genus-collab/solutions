@@ -1,0 +1,24 @@
+K01=0 two-leaf:
+genus 3 (reduced KP system, 11 samples): 9 one-leaf unknowns, 16 equations, rank 2, nullity 7; one-leaf coefficients not all pivots for t = 2 3 4 (indicative)
+K01=1 two-leaf:
+genus 3 (reduced KP system, 11 samples): 9 one-leaf unknowns, 19 equations, rank 5, nullity 4; one-leaf coefficients not all pivots for t = 2 3 4 (indicative)
+K01=2 two-leaf:
+genus 3 (reduced KP system, 11 samples): 9 one-leaf unknowns, 22 equations, rank 8, nullity 1; one-leaf coefficients not all pivots for t = 4 (indicative)
+K01=0 two-leaf:
+genus 4 (reduced KP system, 12 samples): 20 one-leaf unknowns, 48 equations, rank 9, nullity 11; one-leaf coefficients not all pivots for t = 3 4 5 6 (indicative)
+K01=1 two-leaf:
+genus 4 (reduced KP system, 12 samples): 20 one-leaf unknowns, 53 equations, rank 14, nullity 6; one-leaf coefficients not all pivots for t = 4 5 6 (indicative)
+K01=2 two-leaf:
+genus 4 (reduced KP system, 12 samples): 20 one-leaf unknowns, 58 equations, rank 19, nullity 1; one-leaf coefficients not all pivots for t = 6 (indicative)
+K01=0 two-leaf:
+genus 5 (reduced KP system, 13 samples): 35 one-leaf unknowns, 96 equations, rank 24, nullity 11; one-leaf coefficients not all pivots for t = 6 7 8 (indicative)
+K01=1 two-leaf:
+genus 5 (reduced KP system, 13 samples): 35 one-leaf unknowns, 103 equations, rank 31, nullity 4; one-leaf coefficients not all pivots for t = 8 (indicative)
+K01=2 two-leaf:
+genus 5 (reduced KP system, 13 samples): 35 one-leaf unknowns, 110 equations, rank 35, nullity 0
+K01=0 two-leaf:
+genus 6 (reduced KP system, 14 samples): 54 one-leaf unknowns, 160 equations, rank 47, nullity 7; one-leaf coefficients not all pivots for t = 9 10 (indicative)
+K01=1 two-leaf:
+genus 6 (reduced KP system, 14 samples): 54 one-leaf unknowns, 169 equations, rank 54, nullity 0
+K01=2 two-leaf:
+genus 6 (reduced KP system, 14 samples): 54 one-leaf unknowns, 178 equations, rank 54, nullity 0

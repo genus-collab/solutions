@@ -1,0 +1,18 @@
+MV table genus 1, l = 1 [0 s]
+MV table genus 1, l = 2 [0 s]
+MV table genus 1, l = 3 [0 s]
+MV table genus 2, l = 1 [0 s]
+MV table genus 2, l = 2 [0 s]
+MV table genus 2, l = 3 [0 s]
+MV table genus 3, l = 1 [0 s]
+MV table genus 3, l = 2 [1 s]
+MV table genus 3, l = 3 [1 s]
+Q table genus 2, r = 1 [1 s]
+Q table genus 2, r = 2 [1 s]
+Q table genus 3, r = 1 [1 s]
+Q table genus 3, r = 2 [1 s]
+psi table genus 1: 44 entries [1 s]
+psi table genus 2: 139 entries [2 s]
+psi table genus 3: 181 entries [3 s]
+total 3 s
+exit 0

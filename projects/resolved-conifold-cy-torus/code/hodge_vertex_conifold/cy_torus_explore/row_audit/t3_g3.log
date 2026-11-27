@@ -1,0 +1,60 @@
+Mon Nov  2 22:33:42 GMTST 2026
+genus 3 weights ['1', '2', '4', '3', '4'] CY frame B
+  graphs with an edge: colourings regular 350, singular 0
+  single vertex polar orders, colour 1: [-4]  colour 2: []
+  colour 1 leading coefficient = gap: True  only t^(2-2g): True
+  total polar orders: [-4]  leading = gap: True
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^4: True []
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): True
+  time 0.2 s
+genus 3 weights ['3/5', '-7/3', '11/2', '5/7', '641/210'] CY frame B
+  graphs with an edge: colourings regular 350, singular 0
+  single vertex polar orders, colour 1: [-4]  colour 2: []
+  colour 1 leading coefficient = gap: True  only t^(2-2g): True
+  total polar orders: [-4]  leading = gap: True
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^4: True []
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): True
+  time 0.2 s
+genus 3 weights ['2/3', '5/7', '-9/4', '3/11', '-1055/924'] CY frame B
+  graphs with an edge: colourings regular 350, singular 0
+  single vertex polar orders, colour 1: [-4]  colour 2: []
+  colour 1 leading coefficient = gap: True  only t^(2-2g): True
+  total polar orders: [-4]  leading = gap: True
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^4: True []
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): True
+  time 0.2 s
+genus 3 weights ['0', '5/3', '2/7', '1/3', '34/21'] CY frame B
+  graphs with an edge: colourings regular 350, singular 0
+  single vertex polar orders, colour 1: [-4]  colour 2: []
+  colour 1 leading coefficient = gap: True  only t^(2-2g): True
+  total polar orders: [-4]  leading = gap: True
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^4: True []
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): False
+  time 0.2 s
+genus 3 weights ['1', '2', '4', '3', '4'] CY frame WRONG
+  graphs with an edge: colourings regular 265, singular 85
+   first singular [(1, [2], (1,), -4), (2, [1], (1,), -4), (3, [0], (1,), -4), (4, [1, 2], (1, 1), -4), (4, [1, 2], (2, 1), -1), (5, [0, 2], (1, 1), -4)]
+  single vertex polar orders, colour 1: [-4, -3, -2, -1]  colour 2: []
+  colour 1 leading coefficient = gap: False  only t^(2-2g): False
+  total polar orders: [-4]  leading = gap: True
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^4: True []
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): True
+  time 0.2 s
+genus 3 weights ['1', '2', '4', '3', '5'] nonCY frame BA
+  graphs with an edge: colourings regular 346, singular 4
+   first singular [(1, [2], (1,), -1), (4, [1, 2], (1, 1), -1), (4, [1, 2], (2, 1), -1), (5, [0, 2], (2, 1), -1)]
+  single vertex polar orders, colour 1: [-4, -3, -2, -1]  colour 2: []
+  colour 1 leading coefficient = gap: False  only t^(2-2g): False
+  total polar orders: [-4, -3, -2, -1]  leading = gap: False
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^4: False [-4, -3, -2, -1, 1, 2, 3, 4]
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): False
+  time 0.2 s
+genus 2 weights ['1', '2', '4', '3', '5'] nonCY frame BA
+  graphs with an edge: colourings regular 20, singular 0
+  single vertex polar orders, colour 1: [-2, -1]  colour 2: []
+  colour 1 leading coefficient = gap: False  only t^(2-2g): False
+  total polar orders: [-2, -1]  leading = gap: False
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^4: False [-2, -1, 1, 2, 3, 4]
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): False
+  time 0.0 s
+Mon Nov  2 22:33:45 GMTST 2026

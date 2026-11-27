@@ -1,0 +1,6 @@
+(HZ) genus 6: Int_{Mbar_h} Lambda^vee(1) K = -691/327600, chi(M_h) = -691/327600 : OK [332.8 s]
+(HZ) genus 6 r = 1: Xi^(0)(0^r) = chi(M_{h,r}) : OK [332.8 s]
+(HZ) genus 6 r = 2: Xi^(0)(0^r) = chi(M_{h,r}) : OK [332.8 s]
+(HZ) genus 6 r = 3: Xi^(0)(0^r) = chi(M_{h,r}) : OK [332.8 s]
+(G) genus 6: lambda_g component = b_h (J-1)...(J-N) at 11 points (in and out of range): 0 failures [364.9 s]
+(MV) genus 6: author's Omega/HK vs one-part Marino-Vafa formula: 18 comparisons, 0 failures [523.8 s]

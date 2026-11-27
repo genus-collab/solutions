@@ -1,0 +1,7 @@
+G=3 done: inside so far 0 (forced 0, all y forced 0); outside 1 (forced 1)
+G=4 done: inside so far 0 (forced 0, all y forced 0); outside 9 (forced 6)
+G=5 done: inside so far 1 (forced 1, all y forced 1); outside 35 (forced 25)
+G=6 done: inside so far 2 (forced 2, all y forced 2); outside 90 (forced 66)
+G=7 done: inside so far 6 (forced 6, all y forced 6); outside 191 (forced 137)
+G=8 done: inside so far 18 (forced 18, all y forced 18); outside 359 (forced 248)
+ref_forcing G=3..8: inside the hypotheses 18 tuples, y_D forced in 18, all one-leaf values forced in 18; outside 359, forced 248

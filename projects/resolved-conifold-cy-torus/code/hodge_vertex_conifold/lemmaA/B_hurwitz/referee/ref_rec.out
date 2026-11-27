@@ -1,0 +1,4 @@
+(1) referee REC vs author REC (g <= 5, J <= 13, r <= 7, delta != 0): 464 comparisons, 0 mismatches
+(2) Theorem-A points (D <= 2g-3 or D = 2g-1) among them: 111, non-zero: 0
+(3) Theorem B (two closed forms) vs REC, g <= 10: 341 comparisons, 0 failures
+(4) Lemma 6.3 u_m = 0 (m <= 25) and L-formula consistency: 60 checks, 0 failures

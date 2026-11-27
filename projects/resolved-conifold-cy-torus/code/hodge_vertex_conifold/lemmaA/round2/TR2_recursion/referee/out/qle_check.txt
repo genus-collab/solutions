@@ -1,0 +1,8 @@
+tau=3/1 g=2: Phi_g has 10 polar coefficients (lowest power -11); Phi_g(v)+Phi_g(sigma v): polar part vanishes
+tau=3/1 g=3: Phi_g has 14 polar coefficients (lowest power -17); Phi_g(v)+Phi_g(sigma v): polar part vanishes
+tau=3/1 g=4: Phi_g has 18 polar coefficients (lowest power -23); Phi_g(v)+Phi_g(sigma v): polar part vanishes
+tau=5/2 g=2: Phi_g has 10 polar coefficients (lowest power -11); Phi_g(v)+Phi_g(sigma v): polar part vanishes
+tau=5/2 g=3: Phi_g has 14 polar coefficients (lowest power -17); Phi_g(v)+Phi_g(sigma v): polar part vanishes
+tau=5/2 g=4: Phi_g has 18 polar coefficients (lowest power -23); Phi_g(v)+Phi_g(sigma v): polar part vanishes
+tau=-7/3 g=2: Phi_g has 10 polar coefficients (lowest power -11); Phi_g(v)+Phi_g(sigma v): polar part vanishes
+tau=-7/3 g=3: Phi_g has 14 polar coefficients (lowest power -17); Phi_g(v)+Phi_g(sigma v): polar part vanishes

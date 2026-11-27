@@ -1,0 +1,5 @@
+M G=7 R=(13) EVEN [target level D(R+2)=13, excess -1] zero polynomial [= ThmM]
+M G=7 R=(13) ODD  [target level D(R+2)=13, excess -1] zero polynomial [= ThmM]
+M G=7 R=(14) EVEN [target level D(R+2)=14, excess -2] zero polynomial [= ThmM]
+M G=7 R=(14) ODD  [target level D(R+2)=14, excess -2] zero polynomial [= ThmM]
+SUMMARY mode=data eq=M: 4 relations, 0 failures (table values used 24, engine values 0)

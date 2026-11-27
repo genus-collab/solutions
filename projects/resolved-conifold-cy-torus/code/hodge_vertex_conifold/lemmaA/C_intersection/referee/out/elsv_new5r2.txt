@@ -1,0 +1,9 @@
+h=5 R=(2,2) D=2 range     Xi^(0) = 0  (Theorem H: 0, OK)   [64 s]
+h=5 R=(3,3) D=4 range     Xi^(0) = 0  (Theorem H: 0, OK)   [75 s]
+h=5 R=(2,7) D=7 range     Xi^(0) = 0  (Theorem H: 0, OK)   [149 s]
+h=5 R=(4,5) D=7 range     Xi^(0) = 0  (Theorem H: 0, OK)   [157 s]
+h=5 R=(3,6) D=7 range     Xi^(0) = 0  (Theorem H: 0, OK)   [123 s]
+h=5 R=(5,5) D=8 boundary  Xi^(0) = -261355/1419264   [88 s]
+h=5 R=(2,8) D=8 boundary  Xi^(0) = -1024/4455   [124 s]
+h=5 R=(4,6) D=8 boundary  Xi^(0) = -72/385   [122 s]
+SUMMARY (new5r2): 5 points in the range, 0 non-zero

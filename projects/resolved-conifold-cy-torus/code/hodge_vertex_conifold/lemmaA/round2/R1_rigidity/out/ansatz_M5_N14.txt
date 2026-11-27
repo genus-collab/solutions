@@ -1,0 +1,11 @@
+t^1 polynomial part: got (11/49, 11/14)  T1 (11/49, 11/14)  OK
+   higher powers present: no
+t^2 polynomial part: got (-1315/28812, 1/42, 1/24)  T1 (-1/84, 1/42, 1/24)  DIFF
+   higher powers present: no
+t^3 polynomial part: got (-16819/235298, 0, 0, 0)  T1 (0, 0, 0, 0)  DIFF
+   higher powers present: no
+t^4 polynomial part: got (-234214427/8301313440, 8507231/296475480, 1/1680, -1/2520, -1/2880)  T1 (1/10080, -1/2520, 1/1680, -1/2520, -1/2880)  DIFF
+   higher powers present: no
+t^5 polynomial part: got (-526129351/22598019920, -77430617/6456577120, -885599/230592040, 0, 0, 0)  T1 (0, 0, 0, 0, 0, 0)  DIFF
+   higher powers present: no
+t_ansatz: 4 orders differ

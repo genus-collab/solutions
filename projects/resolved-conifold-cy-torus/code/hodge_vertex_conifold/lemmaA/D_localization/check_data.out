@@ -1,0 +1,26 @@
+mv g=1 l=1 m=(2): data=11/432 engine=11/432 ok
+mv g=1 l=1 m=(1): data=1/48 engine=1/48 ok
+mv g=1 l=1 m=(3): data=13/432 engine=13/432 ok
+mv g=1 l=2 m=(2,3): data=73/3888 engine=73/3888 ok
+mv g=1 l=2 m=(1,4): data=77/3888 engine=77/3888 ok
+mv g=1 l=2 m=(3,5): data=77/1944 engine=77/1944 ok
+mv g=2 l=1 m=(2): data=259/466560 engine=259/466560 ok
+mv g=2 l=1 m=(1): data=7/69120 engine=7/69120 ok
+mv g=2 l=1 m=(3): data=1039/622080 engine=1039/622080 ok
+mv g=2 l=2 m=(2,3): data=54593/16796160 engine=54593/16796160 ok
+mv g=2 l=2 m=(1,4): data=177947/50388480 engine=177947/50388480 ok
+mv g=2 l=2 m=(3,5): data=15619/699840 engine=15619/699840 ok
+mv g=3 l=1 m=(2): data=10907/1058158080 engine=10907/1058158080 ok
+mv g=3 l=1 m=(1): data=31/69672960 engine=31/69672960 ok
+mv g=3 l=1 m=(3): data=9503/125411328 engine=9503/125411328 ok
+mv g=3 l=2 m=(2,3): data=69183061/152374763520 engine=69183061/152374763520 ok
+mv g=3 l=2 m=(1,4): data=32701141/65303470080 engine=32701141/65303470080 ok
+mv g=3 l=2 m=(3,5): data=27928807/2857026816 engine=27928807/2857026816 ok
+Q(s=-1) = Xi, g=2 r=1 j=(2): data=0 engine=0 ok
+Q(s=-1) = Xi, g=2 r=1 j=(3): data=5/20736 engine=5/20736 ok
+Q(s=-1) = Xi, g=2 r=2 j=(2,3): data=31/77760 engine=31/77760 ok
+Q(s=-1) = Xi, g=2 r=2 j=(3,2): data=31/77760 engine=31/77760 ok
+Q(s=-1) = Xi, g=3 r=1 j=(2): data=0 engine=0 ok
+Q(s=-1) = Xi, g=3 r=1 j=(3): data=0 engine=0 ok
+Q(s=-1) = Xi, g=3 r=2 j=(2,3): data=0 engine=0 ok
+Q(s=-1) = Xi, g=3 r=2 j=(3,2): data=0 engine=0 ok

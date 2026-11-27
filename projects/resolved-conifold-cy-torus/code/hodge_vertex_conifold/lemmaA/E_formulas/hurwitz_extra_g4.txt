@@ -1,0 +1,52 @@
+genus 4 R = {7} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {8} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {9} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,6} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,7} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,8} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {3,5} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {3,6} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {3,7} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {4,4} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {4,5} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {4,6} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {5,5} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,5} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,6} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,2,7} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,3,4} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,3,5} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,3,6} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,4,4} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,4,5} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {3,3,3} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {3,3,4} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {3,3,5} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {3,4,4} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,4} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,5} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,2,2,6} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,3,3} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,3,4} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,2,3,5} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,4,4} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,3,3,3} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,3,3,4} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {3,3,3,3} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,2,3} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,2,4} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,2,2,2,5} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,3,3} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,2,2,3,4} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,3,3,3} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,2,2,2} D = 6: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,2,2,3} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,2,2,2,2,4} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,2,3,3} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,2,2,2,2} D = 7: Hurwitz component ZERO; non-zero components {1 2 3 4}
+genus 4 R = {2,2,2,2,2,2,3} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+genus 4 R = {2,2,2,2,2,2,2,2} D = 8: Hurwitz component non-zero; non-zero components {0 1 2 3 4}
+SUMMARY genus 4, D = 6: 0 points with Xi^(0) = 0, 11 with Xi^(0) != 0
+SUMMARY genus 4, D = 7: 15 points with Xi^(0) = 0, 0 with Xi^(0) != 0
+SUMMARY genus 4, D = 8: 0 points with Xi^(0) = 0, 22 with Xi^(0) != 0
+time 69.2 s

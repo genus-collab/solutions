@@ -1,0 +1,937 @@
+% s04_leaves. Section file; new macros at the top; label prefix: lea.
+% Local macros (used in this section only).
+\providecommand{\leaVn}{\mathbf{n}}                       % normalised vector t rho v_1
+\providecommand{\leaPr}{\mathrm{Pr}}                      % projectors Pr_1, Pr_2 onto the eigenlines
+\providecommand{\leaPhiF}{\boldsymbol{\Phi}_{\Fhyp}}       % (F, (D_z + omega) F) in the Wronskian remark
+\providecommand{\leaLt}{\Lnorm_{2}}                        % Lnorm[phi_tau, (1 - tau s)^{-1}; s~]
+\providecommand{\leaDt}{\mathsf{D}_{\stil}}                % d/dt + f_0'/z - f_2'/(2 f_2)
+\providecommand{\leaDtau}{\mathsf{D}_{\stil,\tau}}         % (1 - tau)^{-1} D_{s~}
+\providecommand{\leaNtw}{\mathsf{N}_{12}}                  % rho P_{12}
+\providecommand{\leaDisc}{\Ddisc_{1}}                      % a disc around tau_0 with closure in D''
+\providecommand{\TFsup}{\mathrm{F}}                        % superscript for the fibrewise point (0, x, 1, x, 1)
+
+\section{The leaf structure at generic weights}
+\label{sec:lea}
+
+This section proves Theorem~A. Throughout, the weights $(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$ are complex numbers satisfying the non-degeneracy condition (ND) of \cref{def:set-ND}, or indeterminates; all factors are the frame-B factors of \cref{def:set-rows,def:set-factors} at their true idempotents, idempotent~$1$ being the critical point $U_1$ of the superpotential that runs into the logarithmic singularity at $t=0$ (the singular idempotent, colour~$1$) and idempotent~$2$ the one that stays away from it (the regular idempotent, colour~$2$). The objects $\rho$, $\lf_j$, $\Lsp_m$, $\qt$, $f_{j,b}$, $\qo$ are those of \cref{def:set-rho,def:set-factors}:
+\begin{gather*}
+\rho(t) = \Bigl(\frac{\Delta_1 t^2}{-\epsilon_1\epsilon_2E^3}\Bigr)^{-1/2}\ (\rho(0)=1),\qquad
+\lf_j(\psi) = \frac{1}{E-j\psi},\qquad \Lsp_m = \operatorname{span}(\lf_1,\dots,\lf_m),\\
+\qt(\psi) = \sum_{d\geq 1}\Dil_1(d;t)\psi^d,\qquad f_{j,b}(\psi) = \coef{w^b}\Edge_{1j}(\psi,w),\qquad \qo = E - E^2\lf_1 .
+\end{gather*}
+The results of \cref{sec:row} are used in the following form: the frame-B singular identity row is $\rr_{0,1}(z;t) = (E/(E+z))\,\Fhyp(z,\tau)\,\Ephi(z,\tau)\,\alg(\tau)$ (\cref{thm:row-main}), with $\Fhyp = {}_2F_1(\ga,\gb;\gc;\tau)$, $\ga = 1+\alpha_2/z$, $\gb = 1+\wA/z$, $\gc = 2+E/z$, $\Ephi = \exp(-\dphi/z)$ and $\alg$ the unit of \cref{lem:row-hess}; its $\tau$-coefficients are rational functions of $z$ without pole at $z=0$ (\cref{cor:row-reg}); $\rr_{0,1}(z;0) = E/(E+z)$ (\cref{cor:row-F2}); and $\Lv_1 = \muq + \dphi'$ with $\muq = E/\tau - \wA$ (\cref{lem:row-canon}). A prime denotes $d/dt = (1-\tau)\,d/d\tau$.
+
+\subsection{Statements}
+\label{sec:lea-statements}
+
+\begin{thm}[Theorem A: leaf structure at generic weights]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-main}
+Let $(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$ be complex numbers on $\TCY$ with (ND), or indeterminates with $E = \epsilon_1+\epsilon_2$ imposed. All factors are the frame-B factors of \cref{sec:set} (rows $\RB = \RZ\hw^{-1}$ with the class $\bw = (E,-\epsilon_1,-\epsilon_2)$, $\RZ$ the rows with the $\cQ = 0$ constant $\hnw$), at their true idempotents. Then:
+\begin{description}
+\item[(F1)] $\Delta_1 = -\epsilon_1\epsilon_2E^3/(t^2\rho^2)$, where $\rho = \tau/(t\alg)$ is analytic at $t = 0$ with $\rho(0) = 1$; so $\Delta_1 = -(\epsilon_1\epsilon_2E^3/t^2)(1 - \uq t/E^2 + O(t^2))$. The function $\Delta_2 = \epsilon_1\epsilon_2\wB\delta\sast\Lv_2$ is analytic at $t = 0$, with $\Delta_2(0) = \epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E \neq 0$ and $\Delta_2'(0) = 0$.
+\item[(F2)] $\rr_{0,1}(z;0) = E/(E+z)$, and $\rho\,\rr_{1,1}(z;t) = E/t + \alpha_1\alpha_2/(E+z) + O(t)$.
+\item[(F3)] Every frame-B dilaton factor $\Dil_i(d)$ ($i = 1,2$, $d \geq 1$) and every edge factor $\Edge_{ij}(m,n)$ ($i,j\in\{1,2\}$, $m,n\geq 0$) is analytic at $t = 0$.
+\item[(L1)] $\coef{t^0}(\rho\qt) = \qo = E - E^2\lf_1$, and $\coef{t^k}(\rho\qt)$ lies in $\Lsp_{k+1}$ for every $k\geq 1$.
+\item[(L2)] For $j\in\{1,2\}$, every $b\geq 0$ and every $k\geq 0$, $\coef{t^k}(\rho f_{j,b})$ lies in $\Lsp_{k+1}$. Moreover $\Edge_{21}(b,a) = \Edge_{12}(a,b)$, and $\coef{t^k}f_{j,b}$ lies in $\Lsp_{k+1}$ as well.
+\item[(L3)] For every $k\geq 0$, $\coef{t^k}(\rho^2\Edge_{11}(\psi,\psi'))$ lies in $\operatorname{span}\{\lf_i(\psi)\lf_l(\psi') : i,l\geq 1,\ (i-1)+(l-1)\leq k\}$, and $\Edge_{11}(a,b) = \Edge_{11}(b,a)$. The same support bound holds for $\coef{t^k}(\rho^e\Edge_{11})$ for every integer $e$.
+\end{description}
+Every membership is an identity of formal power series in $\psi$ (and $\psi'$), valid at every $\psi$-order and every $t$-order; the coefficients are rational functions of the weights, regular on (ND). Sharpness: with
+\[
+\Psh_k := \prod_{i=1}^{k}\bigl((k+1)\alpha_2 - iE\bigr)\bigl((k+1)\wA - iE\bigr)\qquad(\Psh_0 = 1),
+\]
+the top leaf $\lf_{k+1}$ occurs in $\coef{t^k}(\rho\qt)$ if and only if $\Psh_k\neq 0$, i.e.\ if and only if $E\notin\{(k+1)\alpha_2/i,\,(k+1)\wA/i : 1\leq i\leq k\}$; every entry of the anti-diagonal $(i-1)+(l-1) = k$ of (L3) is non-zero if and only if $\Psh_{i-1}\Psh_{l-1}\neq 0$ (\cref{cor:lea-top,cor:lea-anti}). Large-$z$ form: coefficientwise in $t$, $z\,\rr_{0,1}(z;t)\to E/\rho(t)$ and $\Edge_{1j}(z,w)\to 0$ as $z\to\infty$ at fixed order in $w$, in the sense of the rational functions of $z$ of \cref{lem:lea-tcoef} and \cref{cor:lea-alllegs}.
+\end{thm}
+
+\begin{rmk}[where the Calabi--Yau condition enters]
+\label{rmk:lea-cy}
+No step of the proof below uses $E = \epsilon_1+\epsilon_2$: the frame-B rows are $h_{(\alpha_1,\wA,-E)}\rpt_{0,i}$ (\cref{lem:set-hmult}) and do not involve $\epsilon_1,\epsilon_2$ at all; $\Delta_i$, $\Edge_{ij}$ and the pairing carry $\epsilon_1\epsilon_2$ as an overall factor. \Cref{thm:lea-main} therefore holds at every weight point with (ND), with $\bw := (E,-\epsilon_1,-\epsilon_2)$ and $E := \alpha_0+\alpha_1+\alpha_2$. The Calabi--Yau condition is what makes $\bw$ a sum-zero triple whose first weight is the leaf scale $E$, which is what the two theorems of \cite{LP2} cited in \cref{sec:reg} (\cref{thm:reg-L,thm:reg-VI}) need\draftnote{LP2 numbering provisional}; so it is needed for the regularity theorem built on \cref{thm:lea-main}, not for \cref{thm:lea-main} itself.
+\end{rmk}
+
+\begin{thm}[quantum differential equation and symplecticity]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-qde}
+\begin{enumerate}
+\item For $i = 1,2$ the second row of the quantum differential equation holds to all orders in $z$: $z\Dop_i\vv_i = (\Aop - \Lv_i)\vv_i$, with $\vv_i = (\rr_{0,i},\rr_{1,i})$, $\Dop_i = d/dt - \Delta_i'/(2\Delta_i)$ and $\Aop = \begin{bmatrix}0&1\\-\alpha_1\alpha_2/\tau & E/\tau-\alpha_0\end{bmatrix}$ acting on covectors (\cref{prop:lea-row2,thm:lea-row2reg}).
+\item $\langle\vv_i(w),\vv_j(-w)\rangle = \delta_{ij}\Delta_i$ for all $i,j$, to all orders in $w$ (\cref{prop:lea-K1,cor:lea-orth,cor:lea-K2}).
+\item $\vv_2(z;0) = \hreg(z)\,(1,\alpha_1\alpha_2/E)$ with $\hreg = h_{(\alpha_1,\alpha_2,\wA,\wB,-E,-E)}$ (\cref{prop:lea-regrows}; the scalar factor is the analytic input of \cref{prop:lea-regrows}(a), the direction $(1,\alpha_1\alpha_2/E)$ is formal).
+\end{enumerate}
+\end{thm}
+
+\begin{thm}[closed forms]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-closed}
+In frame B,
+\begin{align*}
+\rho\,\rr_{0,1}(z;t) &= \frac{E}{E+z}\,\frac{\tau}{t}\,{}_2F_1\Bigl(1+\frac{\alpha_2}{z},\,1+\frac{\wA}{z};\,2+\frac{E}{z};\,\tau\Bigr)\exp\Bigl(-\frac{\dphi(\tau)}{z}\Bigr),\\
+\rho\,\qt(\psi) &= E + \sum_{j\geq 1}\Aleaf_j(t)\lf_j(\psi),\qquad \Aleaf_j(t) = (-1)^j\Cj_j\,t^{-1}\zq(t)^j\,{}_2F_1\Bigl(\frac{j\wB}{E},\frac{j\alpha_1}{E};\,j;\,\tau\Bigr),\\
+&\qquad \Cj_j := \frac{\Psh_{j-1}}{j!\,(j-1)!\,E^{2j-4}},\qquad \zq := \tau\,e^{\dphi/E},\\
+\frac{d}{dt}\bigl[t^2\rho^2\Edge_{11}(\psi,\psi')\bigr] &= \Thf(t)\,\Dg(\psi)\,\Dg(\psi'),\qquad \gl = -\frac{1}{E}\sum_j j\Aleaf_j\lf_j,\\
+\Thf &= \epsilon_1\epsilon_2(\alpha_1\alpha_2 - E\Lv_2) = -\epsilon_1\epsilon_2\wB\tau\sast\Lv_2,
+\end{align*}
+with closed forms of every leaf and loop coefficient and of the $t = 0$ values of $\Edge_{12}$, $\Edge_{22}$ (\cref{sec:lea-closed}). The first line is the key formula.
+\end{thm}
+
+The key formula is proved in \cref{prop:lea-key}, the flow in \cref{thm:lea-flow}, and the remaining closed forms in \cref{sec:lea-closed}. The proof of \cref{thm:lea-main,thm:lea-qde} is assembled in \cref{sec:lea-assembly}.
+
+\subsection{The metric in the Euler coordinate, the key formula, the quantum differential equation and the symplectic constant at the singular idempotent}
+\label{sec:lea-qde}
+
+\begin{prop}[the Hessian in the Euler coordinate; $\rho$; the key formula]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-key}
+\begin{enumerate}
+\item The vertex weight of the singular idempotent is
+\[
+\Delta_1 = \alpha_1\wA\epsilon_1\epsilon_2\,\cW_2(U_1) = \alpha_1\wA\epsilon_1\epsilon_2\,U_1^2\,\phi_\tau''(\sast)\,\tau^{-2} = -\epsilon_1\epsilon_2E^3\,\alg^2\,\tau^{-2}.
+\]
+\item $\rho = \tau/(t\alg)$, a unit of $\Oan$ with $\rho(0) = 1$, and
+\begin{equation}
+\label{eq:lea-rho}
+t^2\rho^2\Delta_1 = -\epsilon_1\epsilon_2E^3\quad\text{exactly};
+\end{equation}
+$\Delta_1t^2/(-\epsilon_1\epsilon_2E^3) = (t/\tau)^2\alg^2$ is a unit of $\Oan$ with value $1$ at $t = 0$. This is (F1) for $\Delta_1$.
+\item (Key formula.)
+\begin{equation}
+\label{eq:lea-key}
+\Gk(z;t) := \rho\,\rr_{0,1}(z;t) = \frac{E}{E+z}\,\frac{\tau}{t}\,\Fhyp(z,\tau)\,\Ephi(z,\tau);
+\end{equation}
+$\Gk$ lies in $\bbC\fps{z,t}$, $\Gk(z;0) = E/(E+z)$, and every $\Gk_k := \coef{t^k}\Gk$ is a rational function of $z$ without pole at $z = 0$ whose Taylor series is $\coef{t^k}(\rho\,\rr_{0,1})$.
+\item $\rho = 1 + \uq t/(2E^2) + O(t^2)$ and $\Delta_1 = -(\epsilon_1\epsilon_2E^3/t^2)(1 - \uq t/E^2 + O(t^2))$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) The first equality is the fourth form of $\Delta_1$ in \cref{prop:set-idem}; the second is the tensor rule $\cW_2(U_i) = U_i^2\phi_\tau''(s_i)/\tau^2$ of \cref{lem:row-hess}; the third is the definition $\alg^2 = U_1^2\phi_\tau''(\sast)/\phi_0''(\wA/E)$ with $\phi_0''(\wA/E) = -E^3/(\alpha_1\wA)$ (\cref{lem:row-hess}).
+
+(ii) By (i), $\rho^{-2} = \Delta_1t^2/(-\epsilon_1\epsilon_2E^3) = (t\alg/\tau)^2$, a unit of $\Oan$ with value $1$ at $t = 0$ since $\alg(0) = 1$ and $\tau/t = 1 - t/2 + O(t^2)$. Its square root with value $1$ at $t = 0$ is $t\alg/\tau$ (two square roots of a unit of $\Oan$ with the same value at $0$ coincide), so $\rho = \tau/(t\alg)$ and \eqref{eq:lea-rho} holds exactly.
+
+(iii) By \cref{thm:row-main} and (ii), $\rho\,\rr_{0,1} = \frac{\tau}{t\alg}\,\frac{E}{E+z}\,\Fhyp\,\Ephi\,\alg$, which is \eqref{eq:lea-key}. The rational form of $\Gk_k$: write $\Kcoef_j := \coef{\tau^j}(\Fhyp\Ephi\alg)$, so that $\rr_{0,1} = \sum_j(E/(E+z))\Kcoef_j\tau^j$ and $\Gk = \sum_j\rho\,(E/(E+z))\,\Kcoef_j\tau^j$; hence
+\[
+\Gk_k = \sum_{m\leq k}\bigl(\coef{t^m}\rho\bigr)\sum_{j\leq k-m}\bigl(\coef{t^{k-m}}\tau^j\bigr)\frac{E}{E+z}\Kcoef_j ,
+\]
+a finite combination of rational functions regular at $z = 0$ (\cref{cor:row-reg}) whose Taylor series is $\sum_m(\coef{t^m}\rho)\coef{t^{k-m}}\rr_{0,1} = \coef{t^k}(\rho\,\rr_{0,1})$ by the coefficientwise meaning of \cref{thm:row-main}. $\Gk_0 = E/(E+z)$ since $\Kcoef_0 = 1$.
+
+(iv) By \cref{rmk:row-first}, $\alg = 1 - \frac{E^2+\uq}{2E^2}\tau + O(\tau^2)$, and $\tau/t = 1 - t/2 + O(t^2)$; so $\rho = (\tau/t)/\alg = 1 + \bigl[\frac{E^2+\uq}{2E^2} - \frac12\bigr]t + O(t^2) = 1 + \frac{\uq}{2E^2}t + O(t^2)$, and $\rho^{-2} = 1 - \uq t/E^2 + O(t^2)$.
+\end{proof}
+
+\begin{lem}[the operator identity]\genusstatus{AI-proposed, unchecked}
+\label{lem:lea-op}
+Let $\mathsf{B} := \bbC[z,1/z][\tau,1/\tau,1/(1-\tau)]$, and consider the ring of differential operators generated by $\mathsf{B}$ and one symbol $\Dd$ subject to $\Dd a = a\Dd + z a'$ for $a\in\mathsf{B}$ (so $\Dd(\tau) = z(1-\tau)$); put $d/d\tau := (z(1-\tau))^{-1}\Dd$. With $\omq = (E+z)/\tau - (\wA+z)$ and Gauss's operator of \eqref{eq:row-gaussop}, written with this $d/d\tau$,
+\[
+\Gauss[Y] = \tau(1-\tau)Y_{\tau\tau} + (\gc - (\ga+\gb+1)\tau)Y_\tau - \ga\gb\,Y,
+\]
+one has
+\begin{equation}
+\label{eq:lea-op}
+(\Dd+\omq)^2 - \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)(\Dd+\omq) + \frac{\alpha_1\alpha_2}{\tau} = \frac{(1-\tau)z^2}{\tau}\,\Gauss .
+\end{equation}
+The same holds for any symbol $\Dd'$ with the same Leibniz rule $\Dd'(aY) = z a'Y + a\Dd'Y$. In particular, for $\Dd = \Dz = z\,d/dt$ and every $f\in\Rz$,
+\[
+\Bigl[(\Dz+\omq)^2 - \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)(\Dz+\omq) + \frac{\alpha_1\alpha_2}{\tau}\Bigr]f = \frac{(1-\tau)z^2}{\tau}\,\Gauss[f].
+\]
+The case $\Dd = \Dz$ is $\Dz$ conjugated by $\mathsf{Pf} := (1-\tau)^{-\alpha_1/z}\tau^{E/z+1}$: formally $\Dz(\mathsf{Pf}\,f) = \mathsf{Pf}\,(\Dz+\omq)f$, since $z(\log\mathsf{Pf})' = \alpha_1 + E(1-\tau)/\tau + z(1-\tau)/\tau = \muq + z(1-\tau)/\tau = \omq$.
+\end{lem}
+
+\begin{proof}
+Write $\Lsum := E/\tau - \alpha_0$. For $f$ in the ring, $(\Dd+\omq)^2f - \Lsum(\Dd+\omq)f + (\alpha_1\alpha_2/\tau)f = \Dd^2f + (2\omq - \Lsum)\Dd f + [\Dd(\omq) + \omq(\omq-\Lsum) + \alpha_1\alpha_2/\tau]f$, with $\Dd f = z(1-\tau)f_\tau$ and $\Dd^2f = z^2(1-\tau)^2f_{\tau\tau} - z^2(1-\tau)f_\tau$ (because $\Dd(1-\tau) = -z(1-\tau)$).
+
+Coefficient of $f$. $\Dd(\omq) = z\omq' = z(1-\tau)\,d\omq/d\tau = -z(1-\tau)(E+z)/\tau^2$. Next, $\omq - \Lsum = z/\tau - (\alpha_2+z)$, since $(E+z)-E = z$ and $-(\wA+z)+\alpha_0 = -(\alpha_2+z)$; so
+\[
+\omq(\omq-\Lsum) = \frac{z(E+z)}{\tau^2} - \frac{(E+z)(\alpha_2+z) + z(\wA+z)}{\tau} + (\wA+z)(\alpha_2+z).
+\]
+The $\tau^{-2}$ terms of $\Dd(\omq) + \omq(\omq-\Lsum)$ cancel, the $\tau^{-1}$ terms add up to $[z(E+z) - (E+z)(\alpha_2+z) - z(\wA+z) + \alpha_1\alpha_2]/\tau$, and
+\begin{align*}
+z(E+z) - (E+z)(\alpha_2+z) - z(\wA+z) + \alpha_1\alpha_2 &= -[\alpha_2E + (\alpha_2+\wA)z + z^2 - \alpha_1\alpha_2]\\
+&= -[\alpha_2\wA + (\alpha_2+\wA)z + z^2] = -(\wA+z)(\alpha_2+z),
+\end{align*}
+using $\alpha_2E - \alpha_1\alpha_2 = \alpha_2\wA$. So the coefficient of $f$ is $-(\wA+z)(\alpha_2+z)/\tau + (\wA+z)(\alpha_2+z) = -(1-\tau)(\wA+z)(\alpha_2+z)/\tau$.
+
+Coefficient of $f_\tau$: $-z^2(1-\tau) + z(1-\tau)(2\omq-\Lsum) = z(1-\tau)[2\omq - \Lsum - z] = z(1-\tau)\bigl[(E+2z)/\tau - (2\wA - \alpha_0 + 3z)\bigr] = z(1-\tau)\bigl[(E+2z)/\tau - (\alpha_2+\wA+3z)\bigr]$, since $2\wA-\alpha_0 = \wA + \alpha_2$.
+
+Coefficient of $f_{\tau\tau}$: $z^2(1-\tau)^2$.
+
+On the right, $((1-\tau)z^2/\tau)\Gauss[f]$ has $f_{\tau\tau}$-coefficient $z^2(1-\tau)^2$, $f_\tau$-coefficient
+\[
+(1-\tau)z^2\bigl[(2+E/z)/\tau - (3+(\alpha_2+\wA)/z)\bigr] = z(1-\tau)\bigl[(E+2z)/\tau - (\alpha_2+\wA+3z)\bigr],
+\]
+and $f$-coefficient
+\[
+-\frac{(1-\tau)z^2}{\tau}\Bigl(1+\frac{\alpha_2}{z}\Bigr)\Bigl(1+\frac{\wA}{z}\Bigr) = -\frac{(1-\tau)(\alpha_2+z)(\wA+z)}{\tau}.
+\]
+The three coefficients agree. Only the Leibniz rule and $\Dd(\tau) = z(1-\tau)$ were used, which gives the statement for $\Dd'$. For $\mathsf{Pf}$: $z(\log\mathsf{Pf})' = z(1-\tau)\bigl[\alpha_1/(z(1-\tau)) + (E/z+1)/\tau\bigr] = \alpha_1 + E(1-\tau)/\tau + z(1-\tau)/\tau$, and $\alpha_1 + E(1-\tau)/\tau = E/\tau - \wA = \muq$ because $\alpha_1 - E = -\wA$.
+\end{proof}
+
+\begin{prop}[the second row of the quantum differential equation at the singular idempotent]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-row2}
+In $\Rzo$ ($\rr_{0,1}\in\bbC\fps{z,\tau}$, $\rr_{1,1}\in\tau^{-1}\bbC\fps{z,\tau}$), hence to all orders in $z$ as identities of meromorphic functions of $t$ near $0$:
+\begin{align*}
+\text{Row 1:}\quad & \rr_{1,1} = (\Lv_1 + z\Dop_1)\rr_{0,1};\\
+\text{Row 2:}\quad & (\Lv_1 + z\Dop_1)\rr_{1,1} = -\frac{\alpha_1\alpha_2}{\tau}\rr_{0,1} + \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)\rr_{1,1},\quad\text{equivalently}\quad z\Dop_1\rr_{1,1} = \Lv_2(\rr_{1,1} - \Lv_1\rr_{0,1}),
+\end{align*}
+i.e.\ $(\Dop_1\rr_{1,1})[m-1] = \Lv_2(\rr_{1,1}[m] - \Lv_1\rr_{0,1}[m])$ for every $m\geq 1$. In matrix form $z\Dop_1\vv_1 = (\Aop-\Lv_1)\vv_1$, and for $\leaVn := t\rho\,\vv_1$, an element of $\bbC\fps{z,t}^2$,
+\begin{equation}
+\label{eq:lea-qde}
+z\,\leaVn' = (\Aop-\Lv_1)\leaVn .
+\end{equation}
+\end{prop}
+
+\begin{proof}
+Row 1 is the definition of the H-row (\cref{def:set-rows}). By \eqref{eq:lea-rho}, $\Delta_1'/(2\Delta_1) = -(t\rho)'/(t\rho)$, so $\Dop_1f = (t\rho)^{-1}(t\rho f)'$, i.e.
+\begin{equation}
+\label{eq:lea-conj}
+\Lv_1 + z\Dop_1 = (t\rho)^{-1}\bigl(z\,\tfrac{d}{dt} + \Lv_1\bigr)(t\rho)\qquad\text{as operators on }\Rz .
+\end{equation}
+(i) Conjugation. For $f\in\Rz$, using $z\Ephi' = -\dphi'\,\Ephi$, $\tau' = 1-\tau$ and $\Lv_1 - \dphi' = \muq$ (\cref{lem:row-canon}),
+\[
+\bigl(z\tfrac{d}{dt} + \Lv_1\bigr)(\tau\Ephi f) = \tau\Ephi\bigl[zf' + (\Lv_1 - \dphi' + z(1-\tau)/\tau)f\bigr] = \tau\Ephi\,(\Dz+\omq)f,
+\]
+because $\muq + z(1-\tau)/\tau = (E+z)/\tau - (\wA+z) = \omq$.
+
+(ii) By \eqref{eq:lea-key}, $t\rho\,\rr_{0,1} = t\Gk = (E/(E+z))\,\tau\Ephi\Fhyp$. By \eqref{eq:lea-conj} and (i),
+\begin{align*}
+t\rho\,\rr_{1,1} &= \bigl(z\tfrac{d}{dt}+\Lv_1\bigr)(t\Gk) = \frac{E}{E+z}\,\tau\Ephi\,(\Dz+\omq)\Fhyp,\\
+t\rho\,(\Lv_1+z\Dop_1)\rr_{1,1} &= \bigl(z\tfrac{d}{dt}+\Lv_1\bigr)(t\rho\,\rr_{1,1}) = \frac{E}{E+z}\,\tau\Ephi\,(\Dz+\omq)^2\Fhyp .
+\end{align*}
+(iii) Hence, by \eqref{eq:lea-op} and $\Gauss[\Fhyp] = 0$ (\cref{lem:row-unique,thm:row-closed}),
+\begin{align*}
+t\rho\Bigl[(\Lv_1+z\Dop_1)\rr_{1,1} + \frac{\alpha_1\alpha_2}{\tau}\rr_{0,1} - \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)\rr_{1,1}\Bigr]
+&= \frac{E}{E+z}\,\tau\Ephi\Bigl[(\Dz+\omq)^2 - \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)(\Dz+\omq) + \frac{\alpha_1\alpha_2}{\tau}\Bigr]\Fhyp\\
+&= \frac{E}{E+z}\,\Ephi\,(1-\tau)z^2\,\Gauss[\Fhyp] = 0,
+\end{align*}
+and $t\rho$ is a unit of $\Rz$. The second form of Row 2 uses $E/\tau - \alpha_0 - \Lv_1 = \Lv_2$ and $\alpha_1\alpha_2/\tau = \Lv_1\Lv_2$ (\cref{lem:set-eig}). The components of $(\Aop-\Lv_1)\vv_1$ are $\rr_{1,1} - \Lv_1\rr_{0,1} = z\Dop_1\rr_{0,1}$ (Row 1) and $-(\alpha_1\alpha_2/\tau)\rr_{0,1} + (E/\tau-\alpha_0-\Lv_1)\rr_{1,1} = z\Dop_1\rr_{1,1}$ (Row 2), and $z(t\rho f)' = t\rho\,z\Dop_1f$, which gives \eqref{eq:lea-qde}.
+
+Membership: $\Lv_1$ and $\Delta_1'/\Delta_1$ lie in $\tau^{-1}\Oan$, so $\Lv_1 + z\Dop_1$ maps $\bbC\fps{z,\tau}$ into $\tau^{-1}\bbC\fps{z,\tau}$ and $\tau^{-1}\bbC\fps{z,\tau}$ into $\tau^{-2}\bbC\fps{z,\tau}$; with \cref{thm:row-main} every term lies in $\Rzo$, and the identity in $\Rz$ between elements of $\Rzo$ is an identity of formal double series, hence (TRANSFER, \cref{lem:set-rings}) of meromorphic functions of $t$ coefficientwise in $z$. $\leaVn = (t\Gk,\,(t\Lv_1+z)\Gk + zt\Gk')$ lies in $\bbC\fps{z,t}^2$, since $t\Lv_1\in\Oan$ (\cref{lem:set-eig}).
+\end{proof}
+
+Given Row 1 and \eqref{eq:lea-key}, Row 2 is equivalent to $\Gauss[\Fhyp] = 0$, since $(E/(E+z))\Ephi(1-\tau)z^2$ is a unit of $\Rz$; nothing about the regular idempotent is used. From step (ii), since $\Fhyp$ is a unit of $\Cz\fps{\tau}$,
+\begin{equation}
+\label{eq:lea-Hrow}
+\rr_{1,1} = \rr_{0,1}\Bigl[\frac{E+z}{\tau} - (\wA+z) + z(1-\tau)\frac{\Fhyp_\tau}{\Fhyp}\Bigr],\qquad\text{equivalently}\qquad \rho\,\rr_{1,1} = \Bigl(\Lv_1 + \frac{z}{t}\Bigr)\Gk + z\Gk' .
+\end{equation}
+In terms of $\Fhyp$ alone, with $\Psi_{\Fhyp} := \tau(\Dz+\omq)\Fhyp = z\tau(1-\tau)\Fhyp_\tau + (E+z-(\wA+z)\tau)\Fhyp$, Row 2 reads $z(1-\tau)(\Psi_{\Fhyp})_\tau = \alpha_2\Psi_{\Fhyp} - \alpha_1\alpha_2\Fhyp$, because $z(1-\tau)(\Psi_{\Fhyp})_\tau - \alpha_2\Psi_{\Fhyp} + \alpha_1\alpha_2\Fhyp = (1-\tau)z^2\Gauss[\Fhyp]$ (the coefficient $\alpha_2$ is $-[\omq - z(1-\tau)/\tau - (E/\tau-\alpha_0)] = \wA - \alpha_0$, i.e.\ $\Lv_2 + \dphi'$).
+
+\begin{prop}[the operator $\Aop$]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-A}
+\begin{enumerate}
+\item $\Aop$ is the transpose of the matrix $\begin{bmatrix}0 & -\alpha_1\alpha_2/\tau\\ 1 & E/\tau-\alpha_0\end{bmatrix}$ of $H\qprod$ in the basis $(1,H)$ (columns: the coordinates of $H\qprod 1$, $H\qprod H$); $\Aop$ acts on covectors by $s\mapsto s(H\qprod\,\cdot\,)$.
+\item $\chiv_i = (1,\Lv_i)$ (the character $a_0\,1 + a_1H\mapsto a_0 + a_1\Lv_i$; $\chiv_i(\eid_j) = \delta_{ij}$) satisfies $\Aop\chiv_i = \Lv_i\chiv_i$.
+\item $\Aop$ is self-adjoint for $\langle\,,\rangle$: the bilinear form $(a,b)\mapsto\langle\Aop a,b\rangle$ has the symmetric matrix
+\[
+\epsilon_1\epsilon_2\begin{bmatrix}-(\alpha_1\alpha_2)^2/\tau & \alpha_1\alpha_2E/\tau\\ \alpha_1\alpha_2E/\tau & \alpha_1\alpha_2+\alpha_0E - E^2/\tau\end{bmatrix},
+\]
+so $\langle\Aop a,b\rangle = \langle a,\Aop b\rangle$.
+\item $\langle\chiv_i,\chiv_j\rangle = \delta_{ij}\Delta_i$.
+\item $\Aop - \Lv_1 = (\Lv_2-\Lv_1)\leaPr_2$ with $\leaPr_2a := (\pim(a)/\Delta_2)\chiv_2$ the $\langle\,,\rangle$-orthogonal projector onto $\bbC\chiv_2$ along $\bbC\chiv_1$, where
+\[
+\pim(a) := \langle a,\chiv_2\rangle = \epsilon_1\epsilon_2\bigl[\alpha_1\alpha_2(\alpha_0+\Lv_2)a_0 + (\alpha_1\alpha_2 - E\Lv_2)a_1\bigr] = \epsilon_1\epsilon_2\wB\sast\bigl(\alpha_1\alpha_2a_0 - \tau\Lv_2a_1\bigr),
+\]
+and, for all covectors $a,b$,
+\begin{equation}
+\label{eq:lea-proj}
+\langle(\Aop-\Lv_1)a,b\rangle = \frac{\Lv_2-\Lv_1}{\Delta_2}\pim(a)\pim(b) = \frac{\pim(a)\pim(b)}{\Thf},\qquad
+\Thf := \frac{\Delta_2}{\Lv_2-\Lv_1} = \epsilon_1\epsilon_2(\alpha_1\alpha_2 - E\Lv_2) = -\epsilon_1\epsilon_2\wB\tau\sast\Lv_2 .
+\end{equation}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) $H\qprod 1 = H$ and $H\qprod H = -(\alpha_1\alpha_2/\tau)1 + (E/\tau-\alpha_0)H$ (\cref{prop:set-frob}); $(\Aop s)_0 = s_1 = s(H\qprod 1)$ and $(\Aop s)_1 = -(\alpha_1\alpha_2/\tau)s_0 + (E/\tau-\alpha_0)s_1 = s(H\qprod H)$.
+(ii) $\Aop(1,\Lv) = (\Lv,\,-\alpha_1\alpha_2/\tau + (E/\tau-\alpha_0)\Lv)$, which is $\Lv(1,\Lv)$ if and only if $\Lv^2 - (E/\tau-\alpha_0)\Lv + \alpha_1\alpha_2/\tau = 0$, the equation of $\Lv_1,\Lv_2$ (\cref{lem:set-eig}).
+(iii) Write $\eta^{-1} = \epsilon_1\epsilon_2\begin{bmatrix}p&q\\q&r\end{bmatrix}$ with $p = \alpha_0\alpha_1\alpha_2$, $q = \alpha_1\alpha_2$, $r = -E$ (\cref{prop:set-frob}). Then $\langle\Aop a,b\rangle = \epsilon_1\epsilon_2[p(\Aop a)_0b_0 + q((\Aop a)_0b_1 + (\Aop a)_1b_0) + r(\Aop a)_1b_1]$ with $(\Aop a)_0 = a_1$, $(\Aop a)_1 = -(\alpha_1\alpha_2/\tau)a_0 + (E/\tau-\alpha_0)a_1$. The coefficient of $a_0b_0$ is $-q\alpha_1\alpha_2/\tau = -(\alpha_1\alpha_2)^2/\tau$; of $a_0b_1$: $-r\alpha_1\alpha_2/\tau = \alpha_1\alpha_2E/\tau$; of $a_1b_0$: $p + q(E/\tau-\alpha_0) = \alpha_0\alpha_1\alpha_2 + \alpha_1\alpha_2E/\tau - \alpha_0\alpha_1\alpha_2 = \alpha_1\alpha_2E/\tau$; of $a_1b_1$: $q + r(E/\tau-\alpha_0) = \alpha_1\alpha_2 + \alpha_0E - E^2/\tau$. The matrix is symmetric. (Conceptually: $H\qprod$ is $\eta$-self-adjoint.)
+(iv) $\langle\chiv_i,\chiv_j\rangle = \epsilon_1\epsilon_2[\alpha_0\alpha_1\alpha_2 + \alpha_1\alpha_2(\Lv_i+\Lv_j) - E\Lv_i\Lv_j]$. For $i\neq j$ this is $\epsilon_1\epsilon_2[\alpha_0\alpha_1\alpha_2 + \alpha_1\alpha_2(E/\tau-\alpha_0) - E\alpha_1\alpha_2/\tau] = 0$; for $i = j$ it is $\epsilon_1\epsilon_2[\alpha_0\alpha_1\alpha_2 + 2\alpha_1\alpha_2\Lv_i - E\Lv_i^2] = \Delta_i$ by the third form of \cref{prop:set-idem}.
+(v) By (iv), $\chiv_1,\chiv_2$ is an orthogonal basis with non-zero norms, so $a = \sum_i(\langle a,\chiv_i\rangle/\Delta_i)\chiv_i$, $1 = \leaPr_1 + \leaPr_2$ and, by (ii), $\Aop = \Lv_1\leaPr_1 + \Lv_2\leaPr_2$, whence $\Aop - \Lv_1 = (\Lv_2-\Lv_1)\leaPr_2$ and $\langle\leaPr_2a,b\rangle = \pim(a)\pim(b)/\Delta_2$. For $\pim$: $\alpha_0\alpha_1\alpha_2 + \alpha_1\alpha_2\Lv_2 = \alpha_1\alpha_2(\alpha_0+\Lv_2) = \alpha_1\alpha_2\wB\sast$ and $\alpha_1\alpha_2 - E\Lv_2 = -\wB\tau\sast\Lv_2$ (\cref{lem:set-eig,lem:set-Delta2}). $(\Lv_2-\Lv_1)/\Delta_2 = 1/\Thf$ by definition, and $\Delta_2 = \epsilon_1\epsilon_2(\Lv_2-\Lv_1)(\alpha_1\alpha_2 - E\Lv_2)$ (second form of \cref{prop:set-idem}) gives the two other forms of $\Thf$.
+\end{proof}
+
+Note that $\pim(\chiv_1) = \epsilon_1\epsilon_2\wB\sast(\alpha_1\alpha_2 - \tau\Lv_1\Lv_2) = 0$ is literally $\Lv_1\Lv_2 = \alpha_1\alpha_2/\tau$. Self-adjointness is linear over $\bbC((t))$ and \eqref{eq:lea-proj} is bilinear; both extend coefficientwise to covectors with entries in series rings in $\psi$, $\psi'$.
+
+\begin{prop}[the symplectic constant $\Kone = 1$]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-K1}
+\begin{enumerate}
+\item The series
+\[
+\Kone(z) := \frac{\langle\vv_1(z),\vv_1(-z)\rangle}{\Delta_1} = -\frac{\langle\leaVn(z),\leaVn(-z)\rangle}{\epsilon_1\epsilon_2E^3}
+\]
+lies in $\bbC\fps{z,t}$ and is independent of~$t$: $\Kone\in\bbC\fps{z}$.
+\item Put $\brow(\psi) := \rho\,\vv_1(-\psi)$. Then, with $\gl(\psi;t) = \Gk(-\psi;t)$ and $'$ the $t$-derivative at fixed $\psi$,
+\[
+\brow(\psi) = \bigl(\gl,\ (\Lv_1 - \psi/t)\gl - \psi\gl'\bigr);
+\]
+the series $t\brow(\psi)$ lies in $\bbC\fps{\psi,t}^2$,
+\[
+\brow^{(-1)} := \coef{t^{-1}}\brow(\psi) = (0,E),\qquad \gl(\psi)|_{t=0} = \frac{E}{E-\psi} = E\lf_1(\psi)\quad\text{(F2)}.
+\]
+\item $\Kone = 1$, i.e.\ $\langle\vv_1(w),\vv_1(-w)\rangle = \Delta_1$ to all orders in $w$.
+\item Consequences: $\langle\brow(\psi),\brow(-\psi)\rangle = \rho^2\Delta_1 = -\epsilon_1\epsilon_2E^3/t^2$; the subtracted term in the edge formula of \cref{lem:set-edgegen} is $\Pij_{11}(-w,w) = -\Delta_1$, so
+\begin{equation}
+\label{eq:lea-E11sigma}
+\rho^2\Edge_{11}(\psi,\psi') = \frac{-\epsilon_1\epsilon_2E^3/t^2 - \langle\brow(\psi),\brow(\psi')\rangle}{\psi+\psi'};
+\end{equation}
+and $-\psi\,\frac{d}{dt}(t\brow(\psi)) = (\Aop-\Lv_1)(t\brow(\psi))$, i.e.\ $\frac{d\brow}{dt} = -\frac{\brow}{t} - \frac{1}{\psi}(\Aop-\Lv_1)\brow$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) $(t\rho)^2 = -\epsilon_1\epsilon_2E^3/\Delta_1$ by \eqref{eq:lea-rho} gives the second expression, which lies in $\bbC\fps{z,t}$ by \cref{prop:lea-row2}. Applying $z\mapsto -z$ to \eqref{eq:lea-qde} gives $-z\,\leaVn(-z)' = (\Aop-\Lv_1)\leaVn(-z)$ ($\Aop$ and $\Lv_1$ do not involve $z$). Since $\eta^{-1}$ is constant in $t$,
+\[
+z\,\langle\leaVn(z),\leaVn(-z)\rangle' = \langle(\Aop-\Lv_1)\leaVn(z),\leaVn(-z)\rangle - \langle\leaVn(z),(\Aop-\Lv_1)\leaVn(-z)\rangle = 0
+\]
+by \cref{prop:lea-A}(iii). Thus $(1-\tau)\,d\Kone/d\tau = 0$, and the kernel of $d/d\tau$ on $\bbC\fps{z,\tau}$ is $\bbC\fps{z}$.
+
+(ii) By Row 1, \eqref{eq:lea-conj} and \eqref{eq:lea-key}, $\rho\,\rr_{1,1} = \rho(t\rho)^{-1}(z\frac{d}{dt}+\Lv_1)(t\Gk) = (\Lv_1 + z/t)\Gk + z\Gk'$, which is \eqref{eq:lea-Hrow}. By \cref{lem:set-eig}, $t\Lv_1\in\Oan$ with value $E$ at $t = 0$, so $t\rho\,\rr_{1,1} = (t\Lv_1+z)\Gk + zt\Gk'$ lies in $\bbC\fps{z,t}$, and at $t = 0$ it equals $(E+z)\cdot E/(E+z) = E$: the $z$-dependence cancels exactly because of the geometric form $E/(E+z)$ of (F2). Substituting $z = -\psi$ gives the two components of $\brow$, $t\brow\in\bbC\fps{\psi,t}^2$, $\brow^{(-1)} = (0,E)$, and $\gl|_{t=0} = \Gk(-\psi;0) = E/(E-\psi)$.
+
+(iii) $\leaVn(z) = t\rho\,\vv_1(z) = t\brow(-z)$, so $\Kone(z) = -(\epsilon_1\epsilon_2E^3)^{-1}\langle t\brow(-z),t\brow(z)\rangle$. By (ii) this lies in $\bbC\fps{z,t}$ with value at $t = 0$ equal to $-(\epsilon_1\epsilon_2E^3)^{-1}\langle(0,E),(0,E)\rangle = -(\epsilon_1\epsilon_2E^3)^{-1}\cdot\epsilon_1\epsilon_2(-E)E^2 = 1$. By (i), $\Kone = 1$.
+
+(iv) $\langle\brow(\psi),\brow(-\psi)\rangle = \rho^2\langle\vv_1(-\psi),\vv_1(\psi)\rangle = \rho^2\Delta_1\Kone(-\psi) = \rho^2\Delta_1$, and $\Pij_{11}(-w,w) = -\langle\vv_1(w),\vv_1(-w)\rangle = -\Delta_1\Kone(w) = -\Delta_1$; with $z = \psi$, $w = \psi'$ and $\rho^2\Pij_{11}(\psi,\psi') = -\langle\brow(\psi),\brow(\psi')\rangle$, the formula $\Edge_{11} = [\Pij_{11}(z,w) - \Pij_{11}(-w,w)]/(z+w)$ of \cref{lem:set-edgegen} gives \eqref{eq:lea-E11sigma}. Finally \eqref{eq:lea-qde} at $z = -\psi$, with $\leaVn(-\psi) = t\brow(\psi)$, is $-\psi(t\brow(\psi))' = (\Aop-\Lv_1)(t\brow(\psi))$; divide by $-\psi t$. The division by $\psi$ is legitimate: $\vv_1(0) = \rr_{0,1}[0]\chiv_1$ by Row 1, and $(\Aop-\Lv_1)\chiv_1 = 0$, so $(\Aop-\Lv_1)\brow$ vanishes at $\psi = 0$.
+\end{proof}
+
+Only the $t\to 0$ data (F2) and $\brow^{(-1)} = (0,E)$ enter the limit in (iii), and they come from Row 1 and \eqref{eq:lea-key} alone; the $t$-independence (i) uses Row 2, i.e.\ the full closed form.
+
+\begin{rmk}[$\Kone = 1$ as a Wronskian identity for Gauss's equation]
+\label{rmk:lea-wronsk}
+By step (ii) of the proof of \cref{prop:lea-row2}, $\leaVn = (E/(E+z))\,\tau\Ephi\,\leaPhiF$ with $\leaPhiF := (\Fhyp,(\Dz+\omq)\Fhyp)$. Since $\Ephi(z)\Ephi(-z) = 1$ and $(E/(E+z))(E/(E-z)) = E^2/(E^2-z^2)$,
+\[
+\Kone(z) = -\frac{\tau^2\langle\leaPhiF(z),\leaPhiF(-z)\rangle}{\epsilon_1\epsilon_2E(E^2-z^2)},\qquad\text{so}\qquad \Kone = 1\iff \tau^2\langle\leaPhiF(z),\leaPhiF(-z)\rangle = -\epsilon_1\epsilon_2E(E^2-z^2).
+\]
+The latter follows from $\Gauss[\Fhyp] = 0$ alone: $(\Dz+\omq)\leaPhiF = \Aop\leaPhiF$ (Row 2 in $\Fhyp$-form, by \eqref{eq:lea-op}), and $z\mapsto -z$ gives $(-\Dz+\omq(-z))\leaPhiF(-z) = \Aop\leaPhiF(-z)$; by self-adjointness
+\[
+z\,\frac{d}{dt}\langle\leaPhiF(z),\leaPhiF(-z)\rangle = \bigl(\omq(-z)-\omq(z)\bigr)\langle\leaPhiF(z),\leaPhiF(-z)\rangle = -2z\,\frac{1-\tau}{\tau}\langle\leaPhiF(z),\leaPhiF(-z)\rangle,
+\]
+since $\omq(-z)-\omq(z) = -2z/\tau + 2z$; hence $\frac{d}{dt}\bigl(\tau^2\langle\leaPhiF(z),\leaPhiF(-z)\rangle\bigr) = 0$. At $\tau = 0$, $\tau\leaPhiF(z)\to(0,E+z)$, which gives $\epsilon_1\epsilon_2(-E)(E+z)(E-z)$. Given \eqref{eq:lea-key} this is a second proof of \cref{prop:lea-K1}(iii).
+\end{rmk}
+
+\begin{rmk}[flat sections; not used]
+\label{rmk:lea-flat}
+Fix $\kappa_0$ with $\kappa_0^2 = -\epsilon_1\epsilon_2E^3$ and put $\nu_1 := t\rho/\kappa_0$, so that $\nu_1^2 = 1/\Delta_1$. \Cref{prop:lea-row2} says that $\nu_1\vv_1$, multiplied by the formal symbol $e^{u_1/z}$ with $u_1' = \Lv_1$ (\cref{lem:row-canon}), is a flat section of $z\,d/dt - \Aop$: ``$z\,ds/dt = \Aop s$''. Since $\Lv_1 = \muq + \dphi'$, the identity-component of this section is $\kappa_1(z)\,\cQ^{\alpha_1/z}\tau^{E/z+1}\Fhyp$ with $\kappa_1(z) := E/(\kappa_0(E+z))$, $t$-independent, the only genuinely formal factor being $\tau^{E/z}$. Replacing $\rr_{0,1}$ by $\kappa\,\rr_{0,1}$ with $\kappa$ a unit of $\Cz$ replaces $\rr_{1,1}$ by $\kappa\,\rr_{1,1}$, preserves Row 2 and replaces $\Kone(z)$ by $\kappa(z)\kappa(-z)\Kone(z)$; for the frame change $\kappa = \hw$, $\hw(z)\hw(-z) = 1$, so $\Kone$ and the symplectic relations are the same in both frames. The indicial exponents of $\nabla^2 - (E/\tau-\alpha_0)\nabla + \alpha_1\alpha_2/\tau$ at $\tau = 0$ are $0$ and $1 + E/z$ (the $\alpha_0$ and $\alpha_1\alpha_2$ terms are of lower $\tau$-order); the singular section carries the exponent $1 + E/z$, the regular one (\cref{rmk:lea-E22}) the exponent $0$. Nothing below uses this remark.
+\end{rmk}
+
+\subsection{The dilaton leaves: (L1)}
+\label{sec:lea-L1}
+
+This subsection and the next two are written over the field $\Kal$ (the passage (P) of \cref{lem:set-rings}): every function of $t$ is an element of $\Kal((t))$, the expansion at $t = 0$ of the corresponding germ; products of series in $\Kal((t))\fps{\psi}$ or $\Kal((t))\fps{\psi,\psi'}$ are expanded order by order with finite sums (all of them lie in $t^{-2}\Kal\fps{t}\fps{\psi,\psi'}$); and elements of $\Kal(z)\fps{t}$, such as $\Gk$ and $z\Gk$, are compared with series in $z$ or $\psi$ only through \cref{prop:lea-key}(iii): $\Gk_k$ is regular at $z = 0$ with Taylor series $\coef{t^k}(\rho\,\rr_{0,1})$, and $\gl_k := \coef{t^k}\gl$ is the Taylor series of $\Gk_k(-\psi)$. Recall $\Fhyp = \sum_n\Fhyp_n\tau^n$ with
+\[
+\Fhyp_n = \frac{(\ga)_n(\gb)_n}{(\gc)_n\,n!} = \frac{\prod_{j=1}^{n}(\alpha_2+jz)(\wA+jz)}{n!\,z^n\prod_{j=2}^{n+1}(E+jz)}\in\Kal(z),
+\]
+$\Ephi_m := \coef{\tau^m}\Ephi$ and $\Hcoef_n := \coef{\tau^n}(\Fhyp\Ephi) = \sum_{n_1+n_2 = n}\Fhyp_{n_1}\Ephi_{n_2}$.
+
+\begin{lem}[the $\tau$-coefficients]\genusstatus{AI-proposed, unchecked}
+\label{lem:lea-taucoef}
+Let $n,m\geq 0$.
+\begin{enumerate}
+\item $\Fhyp_n$ has poles only at $z = 0$ (of order exactly $n$) and at $z = -E/j$, $2\leq j\leq n+1$ (of order $\leq 1$), and $\Fhyp_n(\infty) = 1/(n+1)$.
+\item $\Ephi_m$ is a polynomial in $1/z$ of degree $\leq m$ with $\Ephi_m(\infty) = \delta_{m0}$.
+\item $\Hcoef_n$ has poles only at $z = 0$ (of order $\leq n$) and at $z = -E/j$, $2\leq j\leq n+1$ (of order $\leq 1$), and $\Hcoef_n(\infty) = 1/(n+1)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) The numerator $\prod_{j=1}^{n}(\alpha_2+jz)(\wA+jz)$ has degree $2n$, value $(\alpha_2\wA)^n\neq 0$ at $z = 0$ (so the pole at $0$ has order exactly $n$) and leading coefficient $(n!)^2$. The denominator $n!\,z^n\prod_{j=2}^{n+1}(E+jz)$ has degree $2n$, leading coefficient $n!\,(n+1)!$, a zero of order $n$ at $0$ and simple zeros at the $n$ distinct non-zero points $-E/j$ (distinct and non-zero because $E\neq 0$). A zero of the numerator (at $-\alpha_2/i$ or $-\wA/i$) can only lower a pole order; the poles at $-E/j$ are therefore of order $\leq 1$ (exactly $1$ over $\Kal$, and at every weight point with $E\notin\{j\alpha_2/i,\,j\wA/i : 1\leq i\leq n,\ 2\leq j\leq n+1\}$). $\Fhyp_n(\infty) = (n!)^2/(n!\,(n+1)!) = 1/(n+1)$, independent of the weights. Only the degree and the leading coefficient of the numerator are used, not the position or multiplicity of its zeros.
+(ii) $\dphi\in\tau\Kal\fps{\tau}$ gives $\dphi^l\in\tau^l\Kal\fps{\tau}$, so $\Ephi_m = \sum_{l=0}^{m}\frac{(-1)^l}{l!}z^{-l}\coef{\tau^m}(\dphi^l)$, a polynomial in $1/z$ of degree $\leq m$ with constant term $\coef{\tau^m}\dphi^0 = \delta_{m0}$.
+(iii) $\Ephi_{n_2}$ is regular away from $0$ with a pole of order $\leq n_2$ at $0$; the poles of $\Fhyp_{n_1}\Ephi_{n_2}$ are therefore at $0$ (order $\leq n_1+n_2 = n$) and at $-E/j$, $2\leq j\leq n_1+1\leq n+1$ (simple); at $\infty$, $\Fhyp_{n_1}\Ephi_{n_2}\to\delta_{n_2,0}/(n_1+1)$, so $\Hcoef_n(\infty) = 1/(n+1)$.
+\end{proof}
+
+\begin{lem}[the $t$-coefficients of $z\Gk$]\genusstatus{AI-proposed, unchecked}
+\label{lem:lea-tcoef}
+For $k\geq 0$ put $\Rk_k(z) := \coef{t^k}(z\Gk) = z\Gk_k(z)$. Then
+\begin{equation}
+\label{eq:lea-Rk}
+\Rk_k = \frac{Ez}{E+z}\sum_{n=0}^{k}d_{k,n}\Hcoef_n,\qquad d_{k,n} := \coef{t^k}\Bigl(\frac{\tau}{t}\tau^n\Bigr)\in\bbQ,\qquad d_{k,k} = 1 .
+\end{equation}
+So $\Rk_k$ is a rational function with poles only at $z = 0$ and at $z = -E/j$, $1\leq j\leq k+1$, of order $\leq 1$ at each $-E/j$; it is bounded at $\infty$ and
+\begin{equation}
+\label{eq:lea-Rinf}
+\Rk_k(\infty) = E\,\delta_{k0}.
+\end{equation}
+\end{lem}
+
+\begin{proof}
+$z\Gk = (Ez/(E+z))(\tau/t)\sum_n\Hcoef_n\tau^n$ with $\tau/t\in 1 + t\bbQ\fps{t}$ and $\tau^n\in t^n(1 + t\bbQ\fps{t})$; this is the principle (T) of \cref{lem:set-rings} and gives the finite sum \eqref{eq:lea-Rk}. Poles: by \cref{lem:lea-taucoef}(iii) each $\Hcoef_n$ with $n\leq k$ has poles only at $0$ and at $-E/j$ with $2\leq j\leq n+1\leq k+1$, simple at the latter; the factor $Ez/(E+z)$ adds a simple pole at $-E$ (this is $j = 1$), which is not one of the $-E/j$ with $j\geq 2$. Limit: $Ez/(E+z)\to E$ and $\Hcoef_n\to 1/(n+1)$, so
+\[
+\Rk_k(\infty) = E\sum_{n\leq k}\frac{d_{k,n}}{n+1} = E\coef{t^k}\Bigl(\frac{\tau}{t}\sum_{n\geq 0}\frac{\tau^n}{n+1}\Bigr) = E\coef{t^k}\Bigl(\frac{-\log(1-\tau)}{t}\Bigr) = E\coef{t^k}1 = E\delta_{k0},
+\]
+since the terms $n > k$ do not contribute to $\coef{t^k}$ and $-\log(1-\tau) = t$.
+\end{proof}
+
+The limit is coefficientwise in $\tau$: $\Fhyp(\infty,\tau) := \sum_n\Fhyp_n(\infty)\tau^n = -\log(1-\tau)/\tau$ is the limit of $\Fhyp$ coefficient by coefficient in $\tau$, for every weight point, because $\Fhyp_n(\infty) = 1/(n+1)$ does not depend on the weights; only this is used, and nothing is claimed about ${}_2F_1(\ga,\gb;\gc;\tau)$ as $z\to\infty$ at fixed $\tau$. For $k\geq 1$ the limit vanishes because $(\tau/t)\Fhyp(\infty,\tau) = 1$ is $t$-independent: this is the precise sense in which the normalisation by $\rho$ removes $\lf_0$. Equivalently $\lim_{z\to\infty}z\,\rr_{0,1}(z;t) = E/\rho(t)$, coefficientwise in $t$.
+
+\begin{rmk}[no pole at $z = 0$]
+\label{rmk:lea-nopole}
+By \cref{prop:lea-key}(iii), $\Gk_k$ is regular at $z = 0$, so $\Rk_k = z\Gk_k$ is regular at $0$ with $\Rk_k(0) = 0$. In \eqref{eq:lea-Rk} the separate terms do have poles at $0$ ($z\Hcoef_n$ can have a pole of order $n-1$); that they cancel is the regularity theorem of \cref{sec:row}: every $\Hcoef_n$ is regular at $z = 0$, for either of two reasons: (a) \cref{cor:row-reg}, which rests on the closed form \cref{thm:row-closed} and on the fact that $\Abeta$ is a unit of $\bbC\fps{z}$ (its value is not used): $\Hcoef_n = \sum_{m\leq n}(\coef{\tau^{n-m}}(1/\alg))\Kcoef_m$ with every $\Kcoef_m$ regular at $0$; (b) \cref{prop:row-transport}, purely formal: $\Fhyp\Ephi = \Phia$ has $z$-coefficients analytic in $\tau$, so the Laurent expansion at $z = 0$ of its $\tau^n$-coefficient $\Hcoef_n$ has no negative powers. Conversely the regularity of all $\Hcoef_n$ gives that of all $\Gk_k$ by (T), since $E/(E+z)$ is a unit at $z = 0$ and $\tau/t$ is a $z$-independent unit of $\Kal\fps{t}$. By hand (\cref{rmk:row-first}): $\Hcoef_1 = \Fhyp_1 + \Ephi_1 = [Ez + E(\alpha_2+\wA) - 2\alpha_2\wA]/(E(E+2z))$, in which the poles of $\Fhyp_1 = (\alpha_2+z)(\wA+z)/(z(E+2z))$ and $\Ephi_1 = -\alpha_2\wA/(Ez)$ at $z = 0$ cancel.
+\end{rmk}
+
+\begin{prop}[(L1) in the variable $z$: partial fractions]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-pf}
+$\Rk_0 = Ez/(E+z) = E - E^2/(E+z)$. For $k\geq 1$ there are $a_j^{(k)}\in\Kal$, $1\leq j\leq k+1$, with
+\begin{equation}
+\label{eq:lea-pf}
+\Rk_k(z) = \coef{t^k}(z\Gk) = \sum_{j=1}^{k+1}\frac{a_j^{(k)}}{E+jz},\qquad a_j^{(k)} = j\Res_{z=-E/j}\Rk_k,\qquad \sum_{j=1}^{k+1}a_j^{(k)} = 0 .
+\end{equation}
+\end{prop}
+
+\begin{proof}
+For $k = 0$, $(\tau/t)\Fhyp\Ephi = \Hcoef_0 = 1$ at $t = 0$, so $\Gk_0 = E/(E+z)$. For $k\geq 1$, \cref{lem:lea-tcoef} and \cref{rmk:lea-nopole} show that the poles of $\Rk_k$ lie in $\{-E/j : 1\leq j\leq k+1\}$ and are simple, and $\Rk_k(\infty) = 0$ by \eqref{eq:lea-Rinf}; so the partial-fraction principle (PF) of \cref{lem:set-leafid}, with $S = \{-E/j : 1\leq j\leq k+1\}$ (distinct and non-zero since $E\neq 0$), gives \eqref{eq:lea-pf} without constant term ($f(\infty) = 0$: a rational function with simple poles that tends to $0$ at $\infty$ is the sum of its principal parts, and $\Res_{z=-E/j}$ of $1/(E+jz)$ is $1/j$). Evaluating at $z = 0$ gives $0 = \Rk_k(0) = E^{-1}\sum_ja_j^{(k)}$, and $E\neq 0$.
+\end{proof}
+
+With $a_1^{(0)} := -E^2$ and $a_j^{(k)} := 0$ for $j > k+1$, the sum rule reads $\sum_ja_j^{(k)} = -E^2\delta_{k0}$ for every $k\geq 0$.
+
+\begin{thm}[(L1), all $k$]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-L1}
+Write $q^{(k)} := \coef{t^k}(\rho\qt)$. Then $q^{(0)} = \qo = E - E^2\lf_1$ and, for $k\geq 1$,
+\[
+q^{(k)} = \sum_{j=1}^{k+1}a_j^{(k)}\lf_j\in\Lsp_{k+1},
+\]
+with the $a_j^{(k)}$ of \eqref{eq:lea-pf}. Moreover $\gl_0 = E\lf_1$, and for $k\geq 1$
+\begin{equation}
+\label{eq:lea-gk}
+\gl_k = \sum_{j=1}^{k+1}g_j^{(k)}\lf_j = -\frac{1}{E}\sum_{j=1}^{k+1}j\,a_j^{(k)}\lf_j\in\Lsp_{k+1},\qquad \gl_k = O(\psi^{-2})\ \text{at}\ \psi = \infty .
+\end{equation}
+\end{thm}
+
+\begin{proof}
+By \cref{def:set-factors}, $\qt(\psi) = -\psi\,\rr_{0,1}(-\psi;t)$. Multiply by $\rho$, which does not involve $\psi$: $\rho\qt(\psi) = -\psi\,\gl(\psi;t)$, and $\coef{t^k}(\rho\qt)(\psi) = \Rk_k(-\psi)$ as formal series (Taylor expansion at $0$ commutes with $z\mapsto -\psi$). Since $1/(E+jz) = \lf_j(\psi)$ at $z = -\psi$, \cref{prop:lea-pf} gives the first two statements. For \eqref{eq:lea-gk}: $\Gk_k = \Rk_k/z$ and $1/(z(E+jz)) = E^{-1}(1/z - j/(E+jz))$, so by the sum rule
+\[
+\Gk_k(z) = \frac{1}{Ez}\sum_ja_j^{(k)} - \frac{1}{E}\sum_j\frac{j\,a_j^{(k)}}{E+jz} = -\frac{1}{E}\sum_j\frac{j\,a_j^{(k)}}{E+jz};
+\]
+substitute $z = -\psi$. Since $\Rk_k = O(1/z)$ at $\infty$ for $k\geq 1$, $\Gk_k = O(z^{-2})$, i.e.\ $\gl_k = O(\psi^{-2})$; equivalently, by (LAM4), $\sum_jg_j^{(k)}/j = -E^{-1}\sum_ja_j^{(k)} = 0$.
+\end{proof}
+
+Remarks. (i) $g_j^{(k)} = -(j/E)a_j^{(k)}$ for all $k\geq 0$ (at $k = 0$, $g_1^{(0)} = E$). (ii) Conversely, by (LAM2), (L1) at order $k\geq 1$ is equivalent to ``$\gl_k\in\Lsp_{k+1}$ and $\gl_k = O(\psi^{-2})$'': $-\psi\gl_k = \sum_jg_j^{(k)}/j + \sum_ja_j^{(k)}\lf_j$, and the constant must vanish. This is the form used in \cref{sec:lea-sigma}. (iii) The three ingredients are separate: the pole structure (\cref{lem:lea-taucoef,lem:lea-tcoef}), the regularity theorem (\cref{rmk:lea-nopole}) and the coefficientwise limit at $z = \infty$ (\cref{lem:lea-tcoef}). That every pole $-E/j$, $j\leq k+1$, actually occurs is proved for the top pole when $\Psh_k\neq 0$ (\cref{cor:lea-top}). (iv) (F3) for $\Dil_1$: $\Dil_1(d) = (-1)^d\coef{z^{d-1}}\rr_{0,1} = (-1)^d\coef{z^{d-1}}(\rho^{-1}\Gk)$ lies in $\Kal\fps{t}$ (\cref{prop:lea-key}), with value $-E^{1-d}$ at $t = 0$, i.e.\ $\qt|_{t=0} = \qo = -E\psi/(E-\psi)$; in particular $\qt$ and $\rho\qt$ lie in the domain $\Dom = \qo + t\RRing\fps{\psi}$ of \cref{def:set-fpot}.
+
+\subsection{The H-row in leaf form}
+\label{sec:lea-sigma}
+
+By \eqref{eq:lea-conj} and \eqref{eq:lea-Hrow},
+\begin{equation}
+\label{eq:lea-sigma1}
+\begin{gathered}
+\rho\,\rr_{1,1}(z) = \Bigl(\Lv_1+\frac{z}{t}\Bigr)\Gk + z\,\frac{d\Gk}{dt},\qquad
+\brow(\psi) = \rho\,\vv_1(-\psi) = (\brow_0,\brow_1),\\
+\brow_0 = \gl,\qquad \brow_1 = \Lv_1\gl - \frac{\psi}{t}\Dg = \Bigl(\Lv_1-\frac{\psi}{t}\Bigr)\gl - \psi\frac{d\gl}{dt}
+\end{gathered}
+\end{equation}
+($z/t$ becomes $-\psi/t$ and $z\,d\Gk/dt$ becomes $-\psi\,d\gl/dt$ under $z = -\psi$; $\Dg = \frac{d}{dt}(t\gl) = \sum_k(k+1)\gl_kt^k$). Both components of $t\brow$ lie in $\Kal\fps{t}\fps{\psi}$, because $t\Lv_1\in\Kal\fps{t}$. Only (F1) enters \eqref{eq:lea-sigma1}: $t^2\rho^2\Delta_1 = -\epsilon_1\epsilon_2E^3$ holds by the definition of $\rho$, so the logarithmic derivative of $\Delta_1$ is that of $(t\rho)^{-2}$ and no square root of $\Delta_1$ is needed. By \cref{lem:set-eig},
+\begin{equation}
+\label{eq:lea-L1exp}
+\Lv_1 = \frac{E}{t} + \lrem(t),\qquad \lrem = \frac{\wA}{\tau\sast} - \alpha_0 - \frac{E}{t}\in\Kal\fps{t},\qquad \lrem_0 = \frac{E}{2} - \alpha_0 - \frac{\alpha_1\alpha_2}{E}.
+\end{equation}
+The structural fact used below is that the coefficient of the pole of $\Lv_1$, $t\Lv_1(0) = E$, equals the leaf scale $E$ of $\lf_j = 1/(E-j\psi)$ and the first weight of $\bw$. It holds because $\Lv_1 = \wA/(\tau\sast) - \alpha_0$ with $\sast(0) = \wA/E$.
+
+\begin{prop}[the leaf structure of $\brow$]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-sigma}
+\begin{enumerate}
+\item $\brow^{(-1)} = \coef{t^{-1}}\brow = (0,E)$.
+\item For $k\geq 0$, $\coef{t^k}\brow_0 = \gl_k$ and
+\begin{equation}
+\label{eq:lea-sigk}
+\coef{t^k}\brow_1 = \bigl(E - (k+2)\psi\bigr)\gl_{k+1} + \sum_{m=0}^{k}\lrem_m\,\gl_{k-m}\in\Lsp_{k+1}.
+\end{equation}
+\end{enumerate}
+Hence $\brow = t^{-1}(0,E) + \sum_{k\geq 0}t^k\brow^{(k)}$ with both components of $\brow^{(k)}$ in $\Lsp_{k+1}$; explicitly
+\begin{equation}
+\label{eq:lea-Sj}
+\brow^{(k)} = \sum_{j=1}^{k+1}S_j^{(k)}\lf_j,\qquad S_j^{(k)} := \Bigl(g_j^{(k)},\ (k+2-j)\,a_j^{(k+1)} + \sum_{m=0}^{k}\lrem_m\,g_j^{(k-m)}\Bigr)
+\end{equation}
+($g_j^{(n)} := 0$ for $j > n+1$). In particular $\brow^{(0)} = (E\lf_1,\ \alpha_1\alpha_2\lf_1) = E\lf_1\,(1,\Lv_2(0))$, and $\gl_1 = \frac{\uq}{2E}(2\lf_2 - \lf_1)$.
+\end{prop}
+
+\begin{proof}
+By \eqref{eq:lea-sigma1} and \eqref{eq:lea-L1exp}, $\coef{t^k}(\Lv_1\gl) = E\gl_{k+1} + \sum_{m=0}^{k}\lrem_m\gl_{k-m}$ and $\coef{t^k}((\psi/t)\Dg) = \psi\coef{t^{k+1}}\Dg = (k+2)\psi\gl_{k+1}$; this gives \eqref{eq:lea-sigk} for every $k\geq -1$ (empty sum for $k = -1$). For $k = -1$, $\coef{t^{-1}}\brow_1 = (E-\psi)\gl_0 = (E-\psi)E\lf_1 = E$ by (LAM3), and $\coef{t^{-1}}\brow_0 = 0$: this is (i).
+
+Leaf structure. Write $\gl_{k+1} = \sum_{j=1}^{k+2}g_j^{(k+1)}\lf_j$. By \cref{thm:lea-L1} (as $k+1\geq 1$) and (LAM4), $\sum_jg_j^{(k+1)}/j = 0$. By (LAM3) with scale $E$, $(E-m\psi)\lf_j = m/j + E(1-m/j)\lf_j$, and $g_j^{(k+1)} = -(j/E)a_j^{(k+1)}$,
+\[
+\bigl(E-(k+2)\psi\bigr)\gl_{k+1} = (k+2)\sum_j\frac{g_j^{(k+1)}}{j} + E\sum_j\Bigl(1-\frac{k+2}{j}\Bigr)g_j^{(k+1)}\lf_j = \sum_{j=1}^{k+1}(k+2-j)\,a_j^{(k+1)}\lf_j :
+\]
+the factor $E-(k+2)\psi$ turns the top leaf $\lf_{k+2}$ into a constant, and all the constants add up to $(k+2)\sum_jg_j^{(k+1)}/j = 0$. The terms $\lrem_m\gl_{k-m}$ lie in $\Lsp_{k-m+1}\subseteq\Lsp_{k+1}$. Together with $\coef{t^k}\brow_0 = \gl_k$ this is \eqref{eq:lea-Sj}. (In the variable $z$: \eqref{eq:lea-sigk} at $\psi = -z$ is $(E+(k+2)z)\Gk_{k+1} + \sum_m\lrem_m\Gk_{k-m}$; the factor $E+(k+2)z$ kills the simple pole of $\Gk_{k+1}$ at $-E/(k+2)$; the result is regular at $0$, $O(1/z)$ at $\infty$, with simple poles in $\{-E/j : j\leq k+1\}$, so (PF) puts it in $\operatorname{span}\{1/(E+jz) : j\leq k+1\}$.)
+
+The case $k = 0$, by hand. From \cref{rmk:row-first} and \eqref{eq:lea-key}, since $\tau/t = 1 - t/2 + O(t^2)$ and $\Hcoef_0 = 1$,
+\[
+\Gk_1 = \frac{E}{E+z}\Bigl(\Hcoef_1 - \frac12\Bigr) = \frac{2Ez + 2E(\alpha_2+\wA) - 4\alpha_2\wA - E^2 - 2Ez}{2(E+z)(E+2z)} = \frac{\uq}{2(E+z)(E+2z)},
+\]
+because $2E(\alpha_2+\wA) - 4\alpha_2\wA - E^2 = -(E-2\alpha_2)(E-2\wA) = -(E-2\alpha_2)(2\alpha_1-E) = \uq$. (Equivalently $\Gk_1 = \coef{t^1}\rr_{0,1} + \rho_1\Gk_0$ with $\rho_1 = \uq/(2E^2)$, since $\Gk = \rho\,\rr_{0,1}$.) So $\Rk_1 = z\Gk_1 = \frac{\uq}{2}\bigl[\frac{1}{E+z} - \frac{1}{E+2z}\bigr]$, $(a_1^{(1)},a_2^{(1)}) = \frac{\uq}{2}(1,-1)$, $q^{(1)} = \frac{\uq}{2}(\lf_1-\lf_2)$, and $\gl_1 = -E^{-1}(a_1^{(1)}\lf_1 + 2a_2^{(1)}\lf_2) = \frac{\uq}{2E}(2\lf_2-\lf_1)$. Then $(E-2\psi)\gl_1 = a_1^{(1)}\lf_1 = \frac{\uq}{2}\lf_1$ (by (LAM3): $(E-2\psi)\lf_2 = 1$ and $(E-2\psi)\lf_1 = 2 - E\lf_1$), $\lrem_0\gl_0 = (E^2/2 - \alpha_0E - \alpha_1\alpha_2)\lf_1$, and
+\[
+\coef{t^0}\brow_1 = \Bigl(\frac{\uq}{2} + \frac{E^2}{2} - \alpha_0E - \alpha_1\alpha_2\Bigr)\lf_1 = \alpha_1\alpha_2\lf_1,
+\]
+since $(\uq+E^2)/2 = \alpha_0E + 2\alpha_1\alpha_2$ (\cref{def:set-ND}). With $\Lv_2(0) = \alpha_1\alpha_2/E$ this is $\brow^{(0)} = E\lf_1(1,\Lv_2(0))$.
+\end{proof}
+
+Remarks. (i) $\brow^{(0)}_1 = \alpha_1\alpha_2\lf_1$ is the $z$-dependent part $\alpha_1\alpha_2/(E+z)$ of the H-row at order $t^0$: $\rho\,\rr_{1,1}(z) = E/t + \alpha_1\alpha_2/(E+z) + O(t)$, the second half of (F2). (ii) The two cancellations in the $k = 0$ computation, $2E(\alpha_2+\wA) - 4\alpha_2\wA - E^2 = \uq$ and $\uq/2 + \lrem_0E = \alpha_1\alpha_2$, use only $E = \alpha_1+\wA = \alpha_2+\wB$ and $\wA\wB = \alpha_1\alpha_2 + \alpha_0E$. (iii) $\brow_1$ is $O(1/\psi)$ but not $O(\psi^{-2})$; this does not matter for the leaf structure. (iv) Part (i) is the same statement as \cref{prop:lea-K1}(ii), proved there from Row 1 and \eqref{eq:lea-key}; here it comes out of the leaf expansion, using only (F2), \eqref{eq:lea-L1exp} and \eqref{eq:lea-sigma1}.
+
+\begin{prop}[the projection of $\brow$ on the regular eigen-covector]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-proj}
+$\pim(\brow(\psi)) = -\Thf\,\frac{\psi}{t}\Dg(\psi) = \epsilon_1\epsilon_2\wB\tau\sast\Lv_2\,\frac{\psi}{t}\Dg(\psi)$ in $\Kal\fps{t}\fps{\psi}$, with $\Thf = \epsilon_1\epsilon_2(\alpha_1\alpha_2 - E\Lv_2)$.
+\end{prop}
+
+\begin{proof}
+$\brow = \gl\,\chiv_1 + (\brow_1 - \Lv_1\gl)(0,1)$, since $\chiv_1 = (1,\Lv_1)$. Now $\pim(\chiv_1) = \langle\chiv_1,\chiv_2\rangle = 0$, $\pim((0,1)) = \epsilon_1\epsilon_2(\alpha_1\alpha_2 - E\Lv_2) = \Thf$ (\cref{prop:lea-A}(v)), and $\brow_1 - \Lv_1\gl = -(\psi/t)\Dg$ by \eqref{eq:lea-sigma1}.
+\end{proof}
+
+\subsection{The \texorpdfstring{$\Edge_{11}$}{E11} flow: (F3) for \texorpdfstring{$\Edge_{11}$}{E11}, (L3), and (L2) for \texorpdfstring{$j = 1$}{j = 1}}
+\label{sec:lea-flow}
+
+By \cref{lem:set-edgegen} and \cref{prop:lea-K1}(iv), in the leaf variables $(\psi,\psi') = (z,w)$,
+\[
+\rho^2\Edge_{11}(\psi,\psi') = \frac{\rho^2\Delta_1 - \langle\brow(\psi),\brow(\psi')\rangle}{\psi+\psi'},\qquad \rho^2\Delta_1 = -\frac{\epsilon_1\epsilon_2E^3}{t^2}.
+\]
+Put $\Yv(\psi) := t\brow(\psi)$, an element of $\Kal\fps{t}\fps{\psi}^2$ by \cref{prop:lea-sigma}, and
+\begin{equation}
+\label{eq:lea-Ebar}
+\Ebar(\psi,\psi') := t^2\rho^2\Edge_{11}(\psi,\psi') = \frac{\Nbar(\psi,\psi')}{\psi+\psi'},\qquad \Nbar := -\epsilon_1\epsilon_2E^3 - \langle\Yv(\psi),\Yv(\psi')\rangle .
+\end{equation}
+$\Nbar$ lies in $\Kal\fps{t}\fps{\psi,\psi'}$, and $\Nbar(\psi,-\psi) = -\epsilon_1\epsilon_2E^3 - t^2\rho^2\langle\vv_1(-\psi),\vv_1(\psi)\rangle = -\epsilon_1\epsilon_2E^3 - t^2\rho^2\Delta_1 = 0$ by \cref{prop:lea-K1}(iii) and \eqref{eq:lea-rho}. So $\Nbar$ is divisible by $\psi+\psi'$ (in the variables $u = \psi$, $v = \psi+\psi'$ it vanishes at $v = 0$), $\Ebar$ lies in $\Kal\fps{t}\fps{\psi,\psi'}$ (quotients by the non-zero-divisor $\psi+\psi'$ are unique), and $\rho^2\Edge_{11}$ lies in $t^{-2}\Kal\fps{t}\fps{\psi,\psi'}$. Since $\langle\,,\rangle$ is symmetric, $\Ebar(\psi,\psi') = \Ebar(\psi',\psi)$, i.e.\ $\Edge_{11}(a,b) = \Edge_{11}(b,a)$. (Without $\Kone = 1$ the subtracted term would be $-\Kone(w)\Delta_1$ and the symmetry would not be manifest.)
+
+\begin{lem}[the equation for $\Yv$]\genusstatus{AI-proposed, unchecked}
+\label{lem:lea-Yqde}
+$-\psi\,\frac{d\Yv(\psi)}{dt} = (\Aop-\Lv_1)\Yv(\psi)$ in $\Kal((t))\fps{\psi}^2$; equivalently $\frac{d\brow}{dt} = -\frac{\brow}{t} - \frac1\psi(\Aop-\Lv_1)\brow$.
+\end{lem}
+
+\begin{proof}
+This is \cref{prop:lea-K1}(iv): the equation \eqref{eq:lea-qde} at $z = -\psi$, with $\leaVn(-\psi) = \Yv(\psi)$; $\Aop$ and $\Lv_1$ do not involve $z$. Sign: $\brow$ is built from $\vv_1(-\psi)$, so $z = -\psi$ and the $1/z$ of the equation becomes $-1/\psi$.
+\end{proof}
+
+\begin{thm}[the $\Edge_{11}$ flow]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-flow}
+In $\Kal\fps{t}\fps{\psi,\psi'}$,
+\begin{align}
+\label{eq:lea-flow}
+\frac{d}{dt}\Ebar(\psi,\psi') &= \Thf(t)\,\Dg(\psi)\,\Dg(\psi'),\qquad \Dg = \frac{d}{dt}(t\gl),\\
+\label{eq:lea-Theta}
+\Thf &= \frac{\Delta_2}{\Lv_2-\Lv_1} = \epsilon_1\epsilon_2(\alpha_1\alpha_2 - E\Lv_2) = -\epsilon_1\epsilon_2\wB\tau\sast\Lv_2 = \epsilon_1\epsilon_2(E\dphi' - \alpha_2\wA).
+\end{align}
+\end{thm}
+
+\begin{proof}
+(i) Since $t^2\rho^2\Delta_1$ is constant, only the pairing term of $\Nbar$ depends on $t$: $d\Nbar/dt = -\langle d\Yv(\psi)/dt,\Yv(\psi')\rangle - \langle\Yv(\psi),d\Yv(\psi')/dt\rangle$. Multiply by $\psi\psi'$ and use \cref{lem:lea-Yqde} and self-adjointness (\cref{prop:lea-A}(iii)):
+\[
+\psi\psi'\frac{d\Nbar}{dt} = \psi'\langle(\Aop-\Lv_1)\Yv(\psi),\Yv(\psi')\rangle + \psi\langle\Yv(\psi),(\Aop-\Lv_1)\Yv(\psi')\rangle = (\psi+\psi')\langle(\Aop-\Lv_1)\Yv(\psi),\Yv(\psi')\rangle .
+\]
+(ii) $\psi+\psi'$ is $t$-independent, so $(\psi+\psi')\,d\Ebar/dt = d\Nbar/dt$, and after cancelling the non-zero-divisor $\psi+\psi'$, $\psi\psi'\,d\Ebar/dt = \langle(\Aop-\Lv_1)\Yv(\psi),\Yv(\psi')\rangle$. This is why the factor $\psi+\psi'$ disappears: the flows of the two arguments contribute $1/\psi$ and $1/\psi'$, self-adjointness makes the two terms equal, and $1/\psi + 1/\psi' = (\psi+\psi')/(\psi\psi')$.
+(iii) By \eqref{eq:lea-proj} and \cref{prop:lea-proj}, $\langle(\Aop-\Lv_1)\Yv(\psi),\Yv(\psi')\rangle = \pim(\Yv(\psi))\pim(\Yv(\psi'))/\Thf$ with $\pim(\Yv(\psi)) = t\,\pim(\brow(\psi)) = -\Thf\,\psi\,\Dg(\psi)$; so $\psi\psi'\,d\Ebar/dt = \Thf\,\psi\psi'\,\Dg(\psi)\Dg(\psi')$; cancel $\psi\psi'$.
+(iv) The forms of $\Thf$ are \cref{prop:lea-A}(v) and \cref{lem:set-Delta2}; and $\dphi' = \alpha_2 - \Lv_2$ (\cref{lem:set-N}) gives $\alpha_1\alpha_2 - E\Lv_2 = \alpha_1\alpha_2 - E\alpha_2 + E\dphi' = E\dphi' - \alpha_2\wA$, since $\alpha_2E - \alpha_1\alpha_2 = \alpha_2\wA$.
+\end{proof}
+
+Expansion of $\Thf$. $\Thf_0 = \epsilon_1\epsilon_2(E\dphi_1 - \alpha_2\wA) = 0$, since $\dphi_1 := \coef{t^1}\dphi = \alpha_2\wA/E$ (\cref{rmk:row-first}); $\Thf = \epsilon_1\epsilon_2E\dphi' - \epsilon_1\epsilon_2\alpha_2\wA$ gives $\Thf_k = (k+1)\epsilon_1\epsilon_2E\coef{t^{k+1}}\dphi$ for $k\geq 1$; and from the explicit form, $\Thf_1 = -\epsilon_1\epsilon_2\wB\sast(0)\Lv_2(0) = -\epsilon_1\epsilon_2\wB(\wA/E)(\alpha_1\alpha_2/E) = -\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E^2$ (as $\tau = t + O(t^2)$); hence $\coef{t^2}\dphi = -\alpha_1\alpha_2\wA\wB/(2E^3)$. Two remarks. (a) $\Thf = \Delta_2/(\Lv_2-\Lv_1)$: the loop flow is governed by the regular idempotent; $\Delta_2$ is regular and non-zero while $\Lv_2-\Lv_1 = -\delta/\tau$ has a simple pole, so $\Thf = O(t)$. (b) Rank one: before expanding in $t$, the right side of \eqref{eq:lea-flow} is a product of a function of $(t,\psi)$ and a function of $(t,\psi')$, because $\Aop-\Lv_1$ has rank one (\cref{prop:lea-A}(v)). Its $t^k$-coefficients are not of rank one in general; they are sums of the rank-one terms $\Thf_{k_0}(k_1+1)(k_2+1)\gl_{k_1}(\psi)\gl_{k_2}(\psi')$ (\cref{thm:lea-L3}). What rank one gives is that every loop coefficient is built from products of the same leaf series $\gl_k$.
+
+\paragraph{Integration from $t = 0$; (F3) for $\Edge_{11}$.}
+By \cref{prop:lea-sigma}(i), $\coef{t^0}\Yv = (0,E)$, and $\langle(0,E),(0,E)\rangle = \epsilon_1\epsilon_2(-E)E^2 = -\epsilon_1\epsilon_2E^3$. Hence $\coef{t^0}\Nbar = 0$ and $\coef{t^0}\Ebar = 0$. This is where $\Kone = 1$ enters: for a $t$-independent $\Kone$ one would have $\Pij_{11}(-w,w) = -\Kone(w)\Delta_1$ and $\coef{t^0}\Ebar = -\epsilon_1\epsilon_2E^3(\Kone(\psi')-1)/(\psi+\psi')$. The kernel of $d/dt$ on $\Kal\fps{t}$ is $\Kal$ and $\coef{t^{n+1}}\Ebar = \coef{t^n}(d\Ebar/dt)/(n+1)$, so \eqref{eq:lea-flow} and $\coef{t^0}\Ebar = 0$ give
+\begin{equation}
+\label{eq:lea-int}
+\Ebar = \int_0^t\Thf(u)\,\Dg(\psi;u)\,\Dg(\psi';u)\,du\ \ \text{(termwise)},\qquad\text{i.e.}\qquad \coef{t^{n+1}}\Ebar = \frac{1}{n+1}\coef{t^n}\bigl(\Thf\,\Dg(\psi)\Dg(\psi')\bigr).
+\end{equation}
+As $\Thf_0 = 0$, also $\coef{t^1}\Ebar = 0$. So $\Ebar$ lies in $t^2\Kal\fps{t}\fps{\psi,\psi'}$, and $\Edge_{11} = (t\rho)^{-2}\Ebar$ lies in $\Kal\fps{t}\fps{\psi,\psi'}$ since $\rho^{-2}\in\Kal\fps{t}$ (\cref{prop:lea-key}): $\Edge_{11}$ is regular at $t = 0$. This is (F3) for $\Edge_{11}$; in frame B the double pole of $\Delta_1$ is exactly compensated.
+
+\begin{thm}[(L3), all $k$]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-L3}
+For every $k\geq 0$,
+\begin{equation}
+\label{eq:lea-L3}
+\begin{aligned}
+\coef{t^k}(\rho^2\Edge_{11})(\psi,\psi') &= \frac{1}{k+2}\sum_{\substack{k_0\geq 1,\ k_1,k_2\geq 0\\ k_0+k_1+k_2 = k+1}}\Thf_{k_0}(k_1+1)(k_2+1)\,\gl_{k_1}(\psi)\gl_{k_2}(\psi')\\
+&= \sum_{\substack{i,l\geq 1\\ (i-1)+(l-1)\leq k}}e^{(k)}_{il}\,\lf_i(\psi)\lf_l(\psi'),\\
+e^{(k)}_{il} &= \frac{1}{k+2}\sum_{\substack{k_0\geq 1\\ k_1+k_2 = k+1-k_0}}\Thf_{k_0}(k_1+1)(k_2+1)\,g_i^{(k_1)}g_l^{(k_2)},\qquad e^{(k)}_{il} = e^{(k)}_{li},
+\end{aligned}
+\end{equation}
+with $g_i^{(m)} := 0$ for $i > m+1$. There is no $\lf_0$ in either variable. On the anti-diagonal $(i-1)+(l-1) = k$, i.e.\ $i = k_1+1$, $l = k_2+1$ with $k_1+k_2 = k$,
+\begin{equation}
+\label{eq:lea-anti}
+e^{(k)}_{k_1+1,k_2+1} = (-1)^{k+1}\,\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\,\frac{(k_1+1)(k_2+1)\,\Psh_{k_1}\Psh_{k_2}}{(k+2)\,(k_1!)^2(k_2!)^2\,E^{2k}},
+\end{equation}
+which is non-zero if and only if $\Psh_{k_1}\Psh_{k_2}\neq 0$. At $t = 0$ the loop has rank one: $\coef{t^0}(\rho^2\Edge_{11}) = \frac12\Thf_1\gl_0(\psi)\gl_0(\psi') = -\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{2}\lf_1(\psi)\lf_1(\psi')$, hence
+\[
+\Edge_{11}(z,w)\big|_{t=0} = -\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{2}\,\lf_1(z)\lf_1(w)
+\]
+(with $\rho(0) = 1$).
+\end{thm}
+
+\begin{proof}
+$\coef{t^k}(\rho^2\Edge_{11}) = \coef{t^{k+2}}\Ebar = \coef{t^{k+1}}(\Thf\,\Dg(\psi)\Dg(\psi'))/(k+2)$ by \eqref{eq:lea-int}; insert $\Thf = \sum_{k_0\geq 1}\Thf_{k_0}t^{k_0}$ and $\Dg = \sum_k(k+1)\gl_kt^k$. Support: every term has $k_1+k_2 = k+1-k_0\leq k$; by \cref{thm:lea-L1}, $\gl_{k_1}\in\Lsp_{k_1+1}$ and $\gl_{k_2}\in\Lsp_{k_2+1}$, so the term lies in $\operatorname{span}\{\lf_i(\psi)\lf_l(\psi') : i\leq k_1+1,\ l\leq k_2+1\}$, of total degree $(i-1)+(l-1)\leq k_1+k_2\leq k$. Symmetry: \eqref{eq:lea-L3} is invariant under $(\psi,k_1)\leftrightarrow(\psi',k_2)$. Anti-diagonal: a product $\lf_{k_1+1}(\psi)\lf_{k_2+1}(\psi')$ with $k_1+k_2 = k$ comes only from terms with $k_1'\geq k_1$, $k_2'\geq k_2$ and $k_1'+k_2'\leq k$, i.e.\ $k_1' = k_1$, $k_2' = k_2$ and $k_0 = 1$; its coefficient is $\frac{1}{k+2}\Thf_1(k_1+1)(k_2+1)g^{(k_1)}_{k_1+1}g^{(k_2)}_{k_2+1}$. Insert $\Thf_1 = -\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E^2$ and $g^{(m)}_{m+1} = -\frac{m+1}{E}a^{(m)}_{m+1} = (-1)^m\Psh_m/((m!)^2E^{2m-1})$ (\cref{cor:lea-top}, proved in \cref{sec:lea-closed}, independently of this theorem); collecting, the coefficient is $(-1)^{k_1+k_2}(-1)\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB(k_1+1)(k_2+1)\Psh_{k_1}\Psh_{k_2}/((k+2)(k_1!)^2(k_2!)^2E^{2+2k_1-1+2k_2-1})$, and $2k_1+2k_2 = 2k$. The value at $t = 0$ is the case $k = 0$ with $\gl_0 = E\lf_1$.
+\end{proof}
+
+Generating form: the $\lf_i$-coefficient of $\Dg$ is $-(i/E)\Ahat_i'$ (\cref{thm:lea-Aj}), so
+\[
+e_{il}(t) := \sum_ke^{(k)}_{il}t^k = \frac{il}{E^2t^2}\int_0^t\Thf(u)\Ahat_i'(u)\Ahat_l'(u)\,du
+\]
+(\cref{thm:lea-loops}). The case $k_1 = 0$ of \eqref{eq:lea-anti} is the corner $e^{(k)}_{1,k+1} = \frac{(k+1)^2}{k+2}\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{E^2}a^{(k)}_{k+1}$.
+
+\begin{cor}[powers of $\rho$; (L2) for $j = 1$]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-rhoe}
+For every integer $e$ and every $k\geq 0$, $\coef{t^k}(\rho^e\Edge_{11})$ lies in $\operatorname{span}\{\lf_i(\psi)\lf_l(\psi') : i,l\geq 1,\ (i-1)+(l-1)\leq k\}$. In particular ((L2) for $j = 1$), for every $b\geq 0$,
+\begin{equation}
+\label{eq:lea-L2one}
+\coef{t^k}(\rho f_{1,b}) = \sum_{i=1}^{k+1}\Bigl(\sum_{m=0}^{k}\coef{t^m}(\rho^{-1})\sum_le^{(k-m)}_{il}\frac{l^b}{E^{b+1}}\Bigr)\lf_i(\psi)\in\Lsp_{k+1},
+\end{equation}
+and $\coef{t^k}f_{1,b}$ lies in $\Lsp_{k+1}$ as well. Explicitly $\coef{t^0}(\rho f_{1,b}) = -\frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{2}E^{-b-1}\lf_1$ for every $b$ (rank one at $t = 0$).
+\end{cor}
+
+\begin{proof}
+$\rho^{e-2}$ lies in $\Kal\fps{t}$ (\cref{prop:lea-key}) with $\psi$-independent coefficients, so
+\[
+\coef{t^k}(\rho^e\Edge_{11}) = \sum_m\coef{t^m}(\rho^{e-2})\,\coef{t^{k-m}}(\rho^2\Edge_{11}),
+\]
+and the supports at the orders $k-m\leq k$ are contained in the support at order $k$. For the leg, $f_{1,b}(\psi) = \coef{\psi'^b}\Edge_{11}(\psi,\psi')$ and $\rho f_{1,b} = \coef{\psi'^b}(\rho\Edge_{11})$ (the case $e = 1$); by (LAM1), $\coef{\psi'^b}\lf_l(\psi') = l^b/E^{b+1}$, and the $\lf_i(\psi)$ that occur have $i-1\leq k$. The same with $e = 0$ gives the statement for $f_{1,b}$. The value at $t = 0$ is $e^{(0)}_{11}/E^{b+1}$ with $e^{(0)}_{11} = -\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/2$ (\cref{thm:lea-L3}).
+\end{proof}
+
+In the regularity theorem of \cref{sec:reg} every half-edge at a singular vertex of genus $h\geq 2$ carries one factor $\rho$. So a loop, or an edge between two such vertices, carries $\rho^2\Edge_{11}$; a leg, i.e.\ an $\Edge_{11}$-edge to a vertex that is not rescaled (singular of genus $0$ or $1$), with external power $b$ at the far end, carries $\rho f_{1,b}$; an $\Edge_{11}$-edge between two non-rescaled vertices carries $\Edge_{11}$ (\cref{rmk:lea-use}).
+
+\subsection{The regular colour}
+\label{sec:lea-regular}
+
+\begin{lem}[the involution exchanges the idempotents; the same scalar at both]\genusstatus{AI-proposed, unchecked}
+\label{lem:lea-conj}
+Let $\iota$ be the involution $U\mapsto U_1+U_2-U$ of the quadratic algebra $\QA = \bbK(\cQ)[U]/(\Pq(U))$ (\cref{def:set-QA}), and let $\ev_i : \QA\to\bbK(\Ccov)$, $U\mapsto U_i$, be the two characters. Then $\iota$ is a ring automorphism of $\QA$ with $\ev_1\circ\iota = \ev_2$ and $\ev_2\circ\iota = \ev_1$; it commutes with the derivation $d/d\cQ$ of $\QA$ defined by implicit differentiation ($dU/d\cQ = -\Pq_{\cQ}/\Pq_U$), and with multiplication by scalar series in $\cQ$ and $z$. Consequently every rational expression in $U$, $\cQ$, $d/d\cQ$ and the $t$-independent scalars $\hnw$, $\hw^{-1}$ that defines a factor of idempotent $1$ defines the corresponding factor of idempotent $2$ when $U_1$ is replaced by $U_2$ throughout: $\rpt_{0,2}(z;t) = \sum_mz^m\wick_m(\cW_2(U_2),\cW_3(U_2),\dots)$, $\rr_{0,2} = h_{(\alpha_1,\wA,-E)}\rpt_{0,2}$, $\rr_{1,2} = (\Lv_2 + z\Dop_2)\rr_{0,2}$ with $d/dt$ the total derivative along $U_2(t)$, and $\Delta_2$ is the quadratic expression $\epsilon_1\epsilon_2(\alpha_0\alpha_1\alpha_2 + 2\alpha_1\alpha_2\Lv - E\Lv^2)$ of \cref{prop:set-idem} evaluated at $\Lv = \Lv_2$.
+\end{lem}
+
+\begin{proof}
+$\ev_1,\ev_2$ are ring homomorphisms, jointly injective ($\Pq$ has distinct roots), and $\ev_1\circ\iota = \ev_2$, $\ev_2\circ\iota = \ev_1$ because $U_1+U_2$ is the sum of the roots; this gives the compatibility with the ring operations. For the derivation: $\ev_i(dU/d\cQ) = dU_i/d\cQ$ by implicit differentiation, so $\ev_i\circ d/d\cQ = (d/d\cQ)\circ\ev_i$; for $\{i,i'\} = \{1,2\}$, $\ev_i(\tfrac{d}{d\cQ}\iota C) = \tfrac{d}{d\cQ}\ev_{i'}(C) = \ev_{i'}(\tfrac{d}{d\cQ}C) = \ev_i(\iota\tfrac{d}{d\cQ}C)$, and joint injectivity gives $\tfrac{d}{d\cQ}\iota = \iota\tfrac{d}{d\cQ}$. The scalars $\hnw$ and $\hw^{-1}$ are the same series at both idempotents (\cref{def:set-rows,lem:set-hmult}), so multiplication by them commutes with $\iota$. The formulae for the factors of idempotent $2$ follow by applying $\ev_2 = \ev_1\circ\iota$ to the defining expressions of idempotent $1$, and $\ev_2$ commutes with the total derivative $d/d\cQ = \cQ^{-1}d/dt$.
+\end{proof}
+
+This is the only place where ``the same scalar at both colours'' is needed: with a colour-dependent constant the two columns would not be exchanged by $\iota$.
+
+\begin{lem}[analyticity at the regular idempotent]\genusstatus{AI-proposed, unchecked}
+\label{lem:lea-reg}
+\begin{enumerate}
+\item For $k\geq 1$, $\cW_k$ is a polynomial in $p_1 := (1-U)^{-1}$ and $p_{\cQ} := (1-\cQ U)^{-1}$ with coefficients in $\bbZ[\alpha_1,\alpha_2,\wA]$ ($\cW_1 = \alpha_1(1-p_{\cQ}) - \alpha_2 + \wA(1-p_1)$, and $\cW_k = -\alpha_1\Pol_{k-1}(p_{\cQ}) - \wA\Pol_{k-1}(p_1)$ for $k\geq 2$, \cref{lem:row-wr}). $U_2(t)$ is analytic at $t = 0$ with $U_2(0) = -\alpha_2/\wB$, and $1-U_2(0) = 1-\cQ(0)U_2(0) = E/\wB\neq 0$; so every $\cW_k(U_2(t))$ is analytic at $t = 0$, and $\cW_2(U_2)$ is a unit of $\Oan$ with $\cW_2(U_2(0)) = \alpha_2\wB/E$.
+\item (R) Every $\rpt_{0,2}[m]$, $\rr_{0,2}[m]$, $\rr_{1,2}[m]$ is analytic at $t = 0$; $\rr_{0,2}[0] = 1$ and $\rr_{1,2}[0] = \Lv_2$.
+\item $\Delta_2 = \epsilon_1\epsilon_2\wB\delta\sast\Lv_2 = \alpha_1\wA\epsilon_1\epsilon_2\cW_2(U_2)$ is analytic at $t = 0$ with $\Delta_2(0) = \epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E$ and $\Delta_2'(0) = 0$ ((F1) for $\Delta_2$).
+\item $\Dil_2(n) = (-1)^n\rr_{0,2}[n-1]$ and every $\Edge_{22}(m,n)$ are analytic at $t = 0$ ((F3) for $\Dil_2$, $\Edge_{22}$).
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) $\thU\log(1-aU) = 1-p_a$ and $\thU p_a^n = n(p_a^{n+1}-p_a^n)$ for $a\in\{1,\cQ\}$, and $\thU\log U = 1$, which gives the polynomial form. At $\cQ = 1$ the critical polynomial is $\Pq(U) = \wB U^2 - (\alpha_0+\alpha_1-\alpha_2)U - \alpha_2 = \wB U^2 - (\wB-\alpha_2)U - \alpha_2 = (\wB U+\alpha_2)(U-1)$, with the simple roots $1$ and $-\alpha_2/\wB$ (distinct, since $-\alpha_2/\wB = 1$ if and only if $E = 0$); so $U_2$ is a simple root at $\cQ = 1$ and analytic in $t$ near $0$. At $\cQ = 1$ the superpotential is $\cW_0(U) := E\log(1-U) - \alpha_2\log U$, $\thU^2\cW_0 = -EU/(1-U)^2$, and at $U = -\alpha_2/\wB$: $-E(-\alpha_2/\wB)/(E/\wB)^2 = \alpha_2\wB/E$.
+(ii) By \cref{lem:lea-conj}, $\rpt_{0,2}[m]$ is a polynomial in $\cW_2(U_2)^{-1},\cW_3(U_2),\dots,\cW_{2m+2}(U_2)$, hence analytic by (i); $\hnw$, $\hw^{-1}$ are $t$-independent; $\Lv_2 = \wB\sast - \alpha_0$ lies in $\Oan$ (\cref{lem:set-eig}) and $\Delta_2$ is a unit of $\Oan$ by (iii), so $\rr_{1,2}[m] = \Lv_2\rr_{0,2}[m] + \Dop_2\rr_{0,2}[m-1]$ is analytic.
+(iii) \Cref{lem:set-Delta2} and the fourth form of \cref{prop:set-idem}; the value $\alpha_1\wA\epsilon_1\epsilon_2\cdot\alpha_2\wB/E$ agrees with \cref{lem:set-Delta2}.
+(iv) By \cref{lem:set-edgegen}, $\Edge_{22}(m,n)$ is a polynomial with constant coefficients in the entries of $\vv_2[p]$, $p\leq m+n+1$.
+\end{proof}
+
+Why a separate argument is needed for Row 2 at the regular idempotent. Row 1 at $i = 2$ is the definition of the H-row. Row 2 at $i = 2$ cannot be obtained as in \cref{prop:lea-row2}, because the closed form concerns the singular row only; nor does the route of \cref{prop:row-gaussode} apply, which multiplies the formal expansion by $\exp(\dphi/z)(f_2/f_2(0))^{-1/2}$ and expands at $\tau = 0$: at $\stil\to\infty$, $e^{\phi_\tau(\stil)/z}$ is $\tau^{-E/z}$ times a unit, $d\phi_\tau(\stil)/d\tau$ has a simple pole and $\phi_\tau''(\stil)$ a double zero. Instead we work coefficientwise in $z$ at fixed small $t\neq 0$, with no expansion at $\tau = 0$; analyticity at $\tau = 0$ enters only through units of $\Oan$ and values at $t = 0$.
+
+\begin{lem}[data at the regular critical point]\genusstatus{AI-proposed, unchecked}
+\label{lem:lea-regdata}
+For $\tau\in\Ddisc''$ (small $t\neq 0$):
+\begin{enumerate}
+\item $\stil = (E+\alpha_0\tau+\delta)/(2\wB\tau) = \wA/(\wB\tau\sast)$ is a non-degenerate critical point of $\phi_\tau$, not in $\{0,1,1/\tau\}$; $\tau\stil$ lies in $\Oan$ with value $E/\wB$; $2\wB\tau\stil - (E+\alpha_0\tau) = \delta$; $\wB\stil = \Lv_1+\alpha_0$; $U_2 = 1-\tau\stil$ is a unit of $\Oan$ with $U_2(0) = -\alpha_2/\wB$.
+\item $f_2 := \phi_\tau''(\stil) = \delta/(\stil(1-\stil)U_2) = \tau^2\Delta_2/(\alpha_1\wA\epsilon_1\epsilon_2U_2^2) = \tau^2f_{2}^{\mathrm{r}}$, where $f_2^{\mathrm{r}} := \Delta_2/(\alpha_1\wA\epsilon_1\epsilon_2U_2^2)$ is a unit of $\Oan$ with $f_2^{\mathrm{r}}(0) = \Delta_2(0)/(\alpha_1\wA\epsilon_1\epsilon_2U_2(0)^2) = \wB^3/(\alpha_2E)$.
+\item $f_0(\tau) := \phi_\tau(\stil(\tau))$ (any branch) has $\partial_\tau f_0 = \alpha_2\stil/(1-\tau\stil)\in\tau^{-1}\Oan$ with leading term $-E/\tau$, and
+\begin{equation}
+\label{eq:lea-f0}
+f_0' = (1-\tau)\frac{\alpha_2\stil}{1-\tau\stil} = \wA - \wB\stil = \alpha_2 - \Lv_1 = \Lv_2 - \muq .
+\end{equation}
+The canonical coordinate $u_2 := \cW(U_2)$ satisfies $du_2/dt = \Lv_2$ and $u_2 = \alpha_1t + E\log\tau + f_0 + \mathrm{const}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) \Cref{def:set-alg,lem:set-N,lem:set-eig}: $\stil$ is the second root of $\Ns$, hence a critical point of $\phi_\tau$ (\cref{lem:row-hess}), non-degenerate because $\Ns'(\stil) = \delta\neq 0$ on $\Ddisc$, not in $\{0,1,1/\tau\}$ on $\Ddisc''$; $\sast\stil = \wA/(\wB\tau)$ gives $\stil = \wA/(\wB\tau\sast)$ and $\wB\stil = \wA/(\tau\sast) = \Lv_1+\alpha_0$; $\tau\stil = (E+\alpha_0\tau+\delta)/(2\wB)$ has value $E/\wB$ at $0$; $U_2(0) = 1 - E/\wB = -\alpha_2/\wB$, and $U_2$ has no zero on $\Ddisc''$ since $\stil\neq 1/\tau$ there.
+(ii) The Hessian formula $\phi_\tau''(s_c) = \Ns'(s_c)/(s_c(1-s_c)(1-\tau s_c))$ of \cref{lem:row-hess} at $s_c = \stil$ with $\Ns'(\stil) = \delta$, and the tensor rule $\cW_2(U_2) = U_2^2\phi_\tau''(\stil)/\tau^2$ with $\Delta_2 = \alpha_1\wA\epsilon_1\epsilon_2\cW_2(U_2)$ (\cref{prop:set-idem}). $f_2^{\mathrm{r}}$ is a unit since $\Delta_2$ and $U_2$ are, with $f_2^{\mathrm{r}}(0) = (\alpha_1\alpha_2\wA\wB/E)\cdot\wB^2/(\alpha_1\wA\alpha_2^2) = \wB^3/(\alpha_2E)$.
+(iii) Envelope formula: $\frac{d}{d\tau}\phi_\tau(\stil(\tau)) = (\partial_\tau\phi_\tau)(\stil) + \phi_\tau'(\stil)\,\partial_\tau\stil = (\partial_\tau\phi_\tau)(\stil) = \alpha_2\stil/(1-\tau\stil)$. Since $\tau\stil\to E/\wB$ and $U_2\to-\alpha_2/\wB$, $\partial_\tau f_0 = \tau^{-1}(\tau\stil)\alpha_2/U_2$ has leading term $\alpha_2(E/\wB)/(\tau\cdot(-\alpha_2/\wB)) = -E/\tau$. For \eqref{eq:lea-f0}: the identity $(1-\tau)\alpha_2s = (\wA-\wB s)(1-\tau s)$ of \cref{lem:set-N}(ii) holds at both roots, being equivalent to $\Ns(s) = 0$; so $f_0' = (1-\tau)\partial_\tau f_0 = \wA-\wB\stil$; then $\wB\stil = \Lv_1+\alpha_0$ gives $\wA-\wB\stil = \wA-\alpha_0-\Lv_1 = \alpha_2-\Lv_1$, and $\Lv_2-\muq = \Lv_2 - E/\tau + \wA = \alpha_2-\Lv_1$ by $\Lv_1+\Lv_2 = E/\tau-\alpha_0$. The statement about $u_2$ is \cref{lem:row-canon} at the second root, with the Euler coordinate $\cW(1-\tau s) = \phi_\tau(s) + E\log\tau + \alpha_1\log\cQ + \alpha_1\log(-1)$ of \cref{lem:row-euler}.
+\end{proof}
+
+Fix $\tau_0\in\Ddisc''$ and an open disc $\leaDisc$ around $\tau_0$ whose closure lies in $\Ddisc''$. Fix on $\leaDisc$ branches of $\log s$, $\log(1-s)$, $\log(1-\tau s)$ near $s = \stil(\tau)$ (possible since $\stil$, $1-\stil$, $1-\tau\stil$ do not vanish on the closure of $\leaDisc$); then $\phi_\tau(s)$ is analytic near every point $(\tau,\stil(\tau))$, $\tau\in\leaDisc$. $\Oan(\leaDisc)$ denotes the analytic functions on $\leaDisc$ and $\Oan(\leaDisc)((z))$ the Laurent series in $z$, bounded below, with coefficients in $\Oan(\leaDisc)$ ($d/dt = (1-\tau)d/d\tau$ coefficientwise). Put, with $f_0$ and $f_2$ of \cref{lem:lea-regdata},
+\[
+\leaDt := \frac{d}{dt} + \frac{f_0'}{z} - \frac{f_2'}{2f_2},\qquad \leaDtau := \frac{\leaDt}{1-\tau} = \frac{d}{d\tau} + \frac{\partial_\tau f_0}{z} - \frac{\partial_\tau f_2}{2f_2}.
+\]
+
+\begin{thm}[Row 2 of the quantum differential equation at the regular idempotent]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-row2reg}
+In $\Man\fps{z}$ (in $\Oan\fps{z}$ after multiplication by $\tau$),
+\begin{equation}
+\label{eq:lea-row2reg}
+(\Lv_2 + z\Dop_2)\rr_{1,2} = -\frac{\alpha_1\alpha_2}{\tau}\rr_{0,2} + \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)\rr_{1,2},\qquad\text{equivalently}\qquad z\Dop_2\rr_{1,2} = \Lv_1(\rr_{1,2} - \Lv_2\rr_{0,2}),
+\end{equation}
+i.e.\ $(\Dop_2\rr_{1,2})[m-1] = \Lv_1(\rr_{1,2}[m] - \Lv_2\rr_{0,2}[m])$ for $m\geq 1$. With Row 1 this is $z\Dop_2\vv_2 = (\Aop-\Lv_2)\vv_2$, for the frame-B rows, the rows $\rZ$ and the point-frame rows alike.
+\end{thm}
+
+\begin{proof}
+Step A (the regular row as a normalised Laplace expansion in the Euler coordinate). For every $\tau\in\leaDisc$,
+\begin{equation}
+\label{eq:lea-stepA}
+\rpt_{0,2}(z;t) = U_2\,\leaLt(\tau),\qquad \leaLt(\tau) := \Lnorm[\phi_\tau,(1-\tau s)^{-1};\stil(\tau)]\in\Oan(\leaDisc)\fps{z}.
+\end{equation}
+This is the argument of \cref{prop:row-wickrow} with $(U_1,\sast)$ replaced by $(U_2,\stil)$. Let $y_2$ be a branch of $\log U_2$ and $\cW_y(y) := \cW(e^y)$; $\cW_y$ is analytic near $y_2$ with $\cW_y^{(k)}(y_2) = \cW_k(U_2)$, $\cW_y'(y_2) = 0$ and $\cW_y''(y_2) = \cW_2(U_2) = \delta U_2/(\tau^2\stil(1-\stil))\neq 0$ (\cref{lem:row-hess}); in this coordinate the integrand is $e^{\cW_y/z}dy$ with amplitude $1$, so by the Wick form (D1) of \cref{def:row-Lnorm} and \cref{lem:lea-conj}, $\rpt_{0,2} = \Lnorm[\cW_y,1;y_2] = \Lhat[\cW_y,1;y_2]$. The map $h(s) := \log(1-\tau s)$, with the branch for which $h(\stil) = y_2$, is analytic near $\stil$ with $h'(\stil) = -\tau/U_2\neq 0$. By \cref{lem:row-euler}, $\cW_y(h(s)) = \phi_\tau(s) + C(t)$ near $\stil$ with $C(t) = E\log\tau + \alpha_1t + \alpha_1\log(-1)$ independent of $s$, and the amplitude $1$ becomes $(1\circ h)h' = -\tau(1-\tau s)^{-1}$. By the coordinate invariance (P1)(iii) of \cref{prop:row-P1}, (D3) and linearity (the factor $-\tau$), $\Lhat[\cW_y,1;y_2] = \Lhat[\phi_\tau,(1-\tau s)^{-1};\stil] = U_2\leaLt$, since the amplitude takes the value $1/U_2$ at $\stil$. By (D2) the $z$-coefficients of $\leaLt$ are polynomials in $1/f_2$, in the $\phi_\tau^{(k)}(\stil)$ of \cref{lem:row-wr} and in $\partial_s^a(1-\tau s)^{-1}|_{\stil} = a!\,\tau^aU_2^{-a-1}$, so they lie in $\Oan(\leaDisc)$.
+
+Step B (conjugation). As operators on $\Oan(\leaDisc)((z))$,
+\begin{equation}
+\label{eq:lea-stepB}
+(\Lv_2 + z\Dop_2)\circ U_2 = U_2\circ(z\leaDt + \omq).
+\end{equation}
+Indeed $(\Lv_2+z\Dop_2)(U_2Y) = U_2\bigl[zY' + \Lv_2Y + z(U_2'/U_2 - \Delta_2'/(2\Delta_2))Y\bigr]$. By \cref{lem:lea-regdata}(ii), $\Delta_2 = \alpha_1\wA\epsilon_1\epsilon_2U_2^2f_2/\tau^2$, so $\Delta_2'/(2\Delta_2) = U_2'/U_2 + f_2'/(2f_2) - \tau'/\tau$ with $\tau'/\tau = (1-\tau)/\tau$; and $\Lv_2 = f_0' + \muq$ by \eqref{eq:lea-f0}. So the bracket equals $zY' + f_0'Y - z(f_2'/(2f_2))Y + (\muq + z(1-\tau)/\tau)Y = (z\leaDt+\omq)Y$, since $\muq + z(1-\tau)/\tau = \omq$. Only the logarithmic derivative of $\Delta_2$ enters, so no square root is involved. Step B is where the identity $\Delta_2 = \alpha_1\wA\epsilon_1\epsilon_2\cW_2(U_2)$ (the fourth form of \cref{prop:set-idem} at the second root) is used: if $\Delta_2$ were $\alpha_1\wA\epsilon_1\epsilon_2\cW_2(U_2)$ times a non-constant $p(t)$, the right side of \eqref{eq:lea-stepB} would contain the extra term $-(z/2)(p'/p)U_2Y$, and Step D would not give Row 2.
+
+Step C (Gauss's equation for $\leaLt$). With $\ga = 1+\alpha_2/z$, $\gb = 1+\wA/z$, $\gc = 2+E/z$,
+\begin{equation}
+\label{eq:lea-stepC}
+\Gauss_{\stil}[\leaLt] := \tau(1-\tau)\leaDtau^2\leaLt + (\gc - (\ga+\gb+1)\tau)\leaDtau\leaLt - \ga\gb\,\leaLt = 0\quad\text{in }\Oan(\leaDisc)((z)).
+\end{equation}
+The parameter derivative with moving expansion point, (P2) of \cref{prop:row-P2}, applies to $f(\tau,s) = \phi_\tau(s)$, to the analytic non-degenerate critical point $\stil(\tau)$ and to every amplitude $q(\tau,s)$ that is a Laurent polynomial in $z$ with coefficients analytic near $(\tau_1,\stil(\tau_1))$, $\tau_1\in\leaDisc$: $\leaDtau\Lnorm[\phi_\tau,q;\stil] = \Lnorm[\phi_\tau,\Dam q;\stil]$ with $\Dam q := \partial_\tau q + q\,(\partial_\tau\phi_\tau)/z$, and with the $f_0$ and $f_2$ of $\stil$. Apply it to $q = \amp_0 := (1-\tau s)^{-1}$ and to $q = \Dam\amp_0$, and use (D3) (the coefficients $\tau(1-\tau)$ etc.\ do not depend on $s$):
+\[
+\Gauss_{\stil}[\leaLt] = \Lnorm\bigl[\tau(1-\tau)\Dam^2\amp_0 + (\gc-(\ga+\gb+1)\tau)\Dam\amp_0 - \ga\gb\,\amp_0;\ \stil\bigr] = -\ga\,\Lnorm\bigl[k_E' + \phi_\tau'k_E/z;\ \stil\bigr] = 0,
+\]
+by the amplitude identity of \cref{lem:row-amp} ($k_E := s(1-s)(1-\tau s)^{-2}$), which is an identity of Laurent polynomials in $z$ with coefficients rational in $(s,\tau)$, valid identically and not only at a critical point, hence also near $\stil$; and by (P3) of \cref{prop:row-P3}, the normalised expansion of a total derivative vanishes. The amplitudes $\amp_0$, $\Dam\amp_0$, $\Dam^2\amp_0$ and $k_E$ are analytic near $\stil$ because $\stil\notin\{0,1,1/\tau\}$; that $\stil\to\infty$ as $\tau\to 0$ plays no role, since $\leaDisc$ does not contain $0$.
+
+Step D (transfer by the operator identity). $z\leaDt = \Dz + a_0$ with the function $a_0 := f_0' - zf_2'/(2f_2)$ satisfies the Leibniz rule $z\leaDt(aY) = za'Y + a\,z\leaDt Y$, and $(z(1-\tau))^{-1}z\leaDt = \leaDtau$. So \cref{lem:lea-op} with $\Dd' = z\leaDt$ gives
+\begin{equation}
+\label{eq:lea-stepD}
+(z\leaDt+\omq)^2 - \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)(z\leaDt+\omq) + \frac{\alpha_1\alpha_2}{\tau} = \frac{(1-\tau)z^2}{\tau}\Gauss_{\stil}\quad\text{on }\Oan(\leaDisc)((z)).
+\end{equation}
+By \eqref{eq:lea-stepA}, \eqref{eq:lea-stepB} applied twice, \eqref{eq:lea-stepD} and \eqref{eq:lea-stepC},
+\begin{align*}
+\Bigl[(\Lv_2+z\Dop_2)^2 - \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)(\Lv_2+z\Dop_2) + \frac{\alpha_1\alpha_2}{\tau}\Bigr]\rpt_{0,2}
+&= U_2\Bigl[(z\leaDt+\omq)^2 - \Bigl(\frac{E}{\tau}-\alpha_0\Bigr)(z\leaDt+\omq) + \frac{\alpha_1\alpha_2}{\tau}\Bigr]\leaLt\\
+&= U_2\,\frac{(1-\tau)z^2}{\tau}\,\Gauss_{\stil}[\leaLt] = 0 .
+\end{align*}
+The $t$-independent scalars $\hnw$ and $\hw^{-1}$ commute with everything, so the same identity holds for the rows $\rZ_{0,2}$ and $\rr_{0,2}$; with $\rr_{1,2} = (\Lv_2+z\Dop_2)\rr_{0,2}$ it is \eqref{eq:lea-row2reg} on $\leaDisc$.
+
+Conclusion. Every $z$-coefficient of \eqref{eq:lea-row2reg} is an identity of analytic functions on $\leaDisc$; $\tau_0$ was arbitrary, so it holds on $\Ddisc''$. All its terms are meromorphic at $t = 0$ (\cref{lem:lea-reg}; $\alpha_1\alpha_2/\tau$ and $E/\tau$ have simple poles), so it holds in $\Man$. The second form uses $E/\tau-\alpha_0-\Lv_2 = \Lv_1$ and $\alpha_1\alpha_2/\tau = \Lv_1\Lv_2$. The components of $(\Aop-\Lv_2)\vv_2$ are $\rr_{1,2}-\Lv_2\rr_{0,2} = z\Dop_2\rr_{0,2}$ (Row 1) and $-(\alpha_1\alpha_2/\tau)\rr_{0,2} + (E/\tau-\alpha_0-\Lv_2)\rr_{1,2} = z\Dop_2\rr_{1,2}$ (Row 2).
+\end{proof}
+
+Why the normalised forms suffice: the point-frame row is itself normalised, so (P1)(iii) identifies it with $U_2\leaLt$ exactly, with no convention; the $t$-dependent factors that the unnormalised form of (P1) carries ($e^{C/z}$, the Jacobian, and $(-f_2)^{-1/2}$ in place of $\Delta_2^{-1/2}$) are accounted for in \eqref{eq:lea-stepB}, through $\muq$, $U_2$, $\tau'/\tau$ and \cref{lem:lea-regdata}(ii). An alternative proof of Row 2 at both idempotents, by the same calculation in the coordinate $U$ with Gauss's operator replaced by the Picard--Fuchs operator and the amplitude identity by Euler's identity, is given at indeterminate weights in \cref{prop:ide-rows}(ii); that statement is pointwise in $\cQ$ and in the weights and covers every weight point with (ND), $\alpha_0 = 0$ included.
+
+\begin{cor}[orthogonality]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-orth}
+$\langle\vv_1(w),\vv_2(-w)\rangle = 0$ in $\Man\fps{w}$, to all orders in $w$.
+\end{cor}
+
+\begin{proof}
+$Y_{12}(z) := \langle\vv_1(z),\vv_2(-z)\rangle$ lies in $\Man\fps{z}$. Use $z\Dop_1\vv_1 = (\Aop-\Lv_1)\vv_1$ (\cref{prop:lea-row2}), \eqref{eq:lea-row2reg} with $z$ replaced by $-z$ ($-z\Dop_2\vv_2(-z) = (\Aop-\Lv_2)\vv_2(-z)$; $\Aop$, $\Lv_2$, $\Dop_2$ do not involve $z$), $\vv_i' = \Dop_i\vv_i + (\Delta_i'/(2\Delta_i))\vv_i$, the $t$-independence of $\eta^{-1}$ and self-adjointness (\cref{prop:lea-A}(iii)):
+\begin{align*}
+zY_{12}' &= \langle(\Aop-\Lv_1)\vv_1(z),\vv_2(-z)\rangle - \langle\vv_1(z),(\Aop-\Lv_2)\vv_2(-z)\rangle + \frac{z}{2}\Bigl(\frac{\Delta_1'}{\Delta_1}+\frac{\Delta_2'}{\Delta_2}\Bigr)Y_{12}\\
+&= \Bigl[(\Lv_2-\Lv_1) + \frac{z}{2}\Bigl(\frac{\Delta_1'}{\Delta_1}+\frac{\Delta_2'}{\Delta_2}\Bigr)\Bigr]Y_{12}.
+\end{align*}
+Write $Y_{12} = \sum_mY_mz^m$ with $Y_m\in\Man$. The $z^0$ coefficient gives $(\Lv_2-\Lv_1)Y_0 = 0$, and for $m\geq 1$ the $z^m$ coefficient gives $(\Lv_2-\Lv_1)Y_m = Y_{m-1}' - \frac12(\Delta_1'/\Delta_1 + \Delta_2'/\Delta_2)Y_{m-1}$. Since $\Lv_2-\Lv_1 = -\delta/\tau$ is a unit of $\Man$, $Y_0 = 0$ and inductively $Y_m = 0$.
+\end{proof}
+
+It is essential that $Y_{12}$ is a power series in $z$, bounded below: the formal symbol $e^{-(u_1-u_2)/z}$, an infinite series in $1/z$ (and not an element of $\Rz$, since $u_1-u_2$ contains $E\log\tau$), would formally give a non-zero flat section. $Y_0 = \langle\chiv_1,\chiv_2\rangle = 0$ is also direct. Row 2 at the regular idempotent is genuinely needed: Row 1 only determines $\rr_{1,2}$ from $\rr_{0,2}$, and the $z^m$ coefficient of $Y_{12}$ contains $\rr_{0,2}[m]$ only through $\langle\chiv_1,\chiv_2\rangle\rr_{0,2}[m] = 0$, so $Y_{12} = 0$ is a genuine constraint on the regular row, which the closed form of the singular row cannot supply. The symplectic relations $\langle\vv_i(w),\vv_j(-w)\rangle = \delta_{ij}\Delta_i$ are also proved at indeterminate weights in \cref{prop:ide-rows}(iv), the diagonal ones by evaluation at the semisimple point $\cQ = 0$, which needs $\alpha_0\neq 0$; the proofs given here (\cref{prop:lea-K1}, the present corollary and \cref{cor:lea-K2}) use the limit $t\to 0$ at $\cQ = 1$ instead and cover $\alpha_0 = 0$ (\cref{cor:lea-a0}).
+
+\begin{prop}[the regular rows at $t = 0$]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-regrows}
+\begin{enumerate}
+\item[(a)] (Analytic input.) $\rpt_{0,2}(z;0) = h_{(\alpha_2,-E,\wB)}(z)$; equivalently the frame-B value is
+\[
+\rr_{0,2}(z;0) = h_{(\alpha_1,\wA,-E)}(z)\,h_{(\alpha_2,-E,\wB)}(z) = h_{(\alpha_1,\alpha_2,\wA,\wB,-E,-E)}(z) =: \hreg(z),\qquad \hreg(z)\hreg(-z) = 1 .
+\]
+\item[(b)] (Uses \cref{thm:lea-row2reg}.) $\alpha_1\alpha_2\,\rr_{0,2}(z;0) = E\,\rr_{1,2}(z;0)$, i.e.
+\[
+\vv_2(z;0) = \rr_{0,2}(z;0)\,(1,\alpha_1\alpha_2/E) = \hreg(z)\,(1,\alpha_1\alpha_2/E);
+\]
+equivalently, $\coef{t^1}\rr_{0,2}(z;t) = 0$.
+\item[(c)] (Uses (a), (b).)
+\[
+\Edge_{22}(z,w)\big|_{t=0} = \frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{E}\,\frac{1 - \hreg(z)^{-1}\hreg(w)^{-1}}{z+w},
+\]
+and, by (a) alone, $\Dil_2(n)|_{t=0} = (-1)^n\coef{z^{n-1}}\hreg(z)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(a) By \cref{lem:lea-reg}, each $\rpt_{0,2}[m]$ is analytic at $t = 0$ and its value there is $\wick_m$ evaluated on the $t = 0$ data $(\thU^k\cW_0)(-\alpha_2/\wB)$, $\cW_0(U) = E\log(1-U) - \alpha_2\log U$ the superpotential at $\cQ = 1$. By the Wick form (D1), $\rpt_{0,2}(z;0) = \Lnorm[\cW_{y,0},1;y_c]$ with $\cW_{y,0}(y) := \cW_0(e^y)$ and $y_c$ a branch of $\log(-\alpha_2/\wB)$: the normalised expansion, in the coordinate $y = \log U$, of the phase $a\log U + b\log(1-U)$ with $(a,b) := (-\alpha_2,E)$ at its critical point $U = a/(a+b) = -\alpha_2/\wB$. This is exactly the situation of \cref{lem:row-betaphase}, whose hypothesis $ab(a+b)\neq 0$ reads $\alpha_2E\wB\neq 0$ here; the lemma gives $\rpt_{0,2}(z;0) = h_{(-a,-b,a+b)} = h_{(\alpha_2,-E,\wB)}$. Frame B multiplies by $h_{(\alpha_1,\wA,-E)}$ (\cref{lem:set-hmult}), and the union of the multisets $(\alpha_1,\wA,-E)$ and $(\alpha_2,-E,\wB)$ is $(\alpha_1,\alpha_2,\wA,\wB,-E,-E)$; $\hreg(z)\hreg(-z) = 1$ because the exponent of $h_v$ is odd in $z$.
+
+(b) First proof, from \cref{thm:lea-row2reg} alone. In $(\Dop_2\rr_{1,2})[m-1] = \Lv_1(\rr_{1,2}[m] - \Lv_2\rr_{0,2}[m])$ the left side is analytic at $t = 0$ (\cref{lem:lea-reg}), while $\Lv_1 = E/t + O(1)$ has a simple pole; so $\rr_{1,2}[m](0) = \Lv_2(0)\rr_{0,2}[m](0) = (\alpha_1\alpha_2/E)\rr_{0,2}[m](0)$ for $m\geq 1$, and for $m = 0$ by Row 1 ($\rr_{1,2}[0] = \Lv_2\rr_{0,2}[0]$). Second proof, from \cref{cor:lea-orth}: put $w = -z$ and multiply by $\rho$: $\langle\brow(z),\vv_2(z)\rangle = 0$; its $t^{-1}$ coefficient is $\langle(0,E),\vv_2(z;0)\rangle = \epsilon_1\epsilon_2E\bigl(\alpha_1\alpha_2\rr_{0,2}(z;0) - E\rr_{1,2}(z;0)\bigr)$, by $\langle(0,E),b\rangle = \epsilon_1\epsilon_2[\alpha_1\alpha_2Eb_0 - E^2b_1]$. Equivalent forms: by Row 1, $\rr_{1,2}[m](0) - (\alpha_1\alpha_2/E)\rr_{0,2}[m](0) = (\Dop_2\rr_{0,2}[m-1])(0) = (\rr_{0,2}[m-1])'(0)$, because $\Lv_2(0) = \alpha_1\alpha_2/E$ and $\Delta_2'(0) = 0$ (\cref{lem:set-Delta2}); so (b) is equivalent to $\coef{t^1}\rr_{0,2} = 0$.
+
+(c) By \cref{lem:set-edgegen} and (a), (b),
+\[
+\Pij_{22}(z,w)\big|_{t=0} = -\langle\vv_2(-z;0),\vv_2(-w;0)\rangle = -\hreg(-z)\hreg(-w)\,\langle(1,\alpha_1\alpha_2/E),(1,\alpha_1\alpha_2/E)\rangle,
+\]
+and
+\begin{align*}
+\Bigl\langle\Bigl(1,\frac{\alpha_1\alpha_2}{E}\Bigr),\Bigl(1,\frac{\alpha_1\alpha_2}{E}\Bigr)\Bigr\rangle &= \epsilon_1\epsilon_2\Bigl[\alpha_0\alpha_1\alpha_2 + 2\alpha_1\alpha_2\frac{\alpha_1\alpha_2}{E} - E\frac{(\alpha_1\alpha_2)^2}{E^2}\Bigr]\\
+&= \epsilon_1\epsilon_2\alpha_1\alpha_2\frac{\alpha_0E+\alpha_1\alpha_2}{E} = \frac{\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB}{E} = \Delta_2(0);
+\end{align*}
+$\Pij_{22}(-w,w)|_{t=0} = -\hreg(w)\hreg(-w)\Delta_2(0) = -\Delta_2(0)$. Hence
+\[
+\Edge_{22}|_{t=0} = \Delta_2(0)\,\frac{1 - \hreg(z)^{-1}\hreg(w)^{-1}}{z+w},\qquad \Dil_2(n)|_{t=0} = (-1)^n\rr_{0,2}[n-1](0) = (-1)^n\coef{z^{n-1}}\hreg(z).
+\]
+\end{proof}
+
+\begin{cor}[$\Ktwo = 1$]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-K2}
+$\Ktwo(z) := \langle\vv_2(z),\vv_2(-z)\rangle/\Delta_2$ lies in $\Oan\fps{z}$, is $t$-independent, and
+\[
+\Ktwo = \rr_{0,2}(z;0)\,\rr_{0,2}(-z;0) = \hreg(z)\hreg(-z) = 1 .
+\] With \cref{prop:lea-K1}(iii) and \cref{cor:lea-orth}: $\langle\vv_i(w),\vv_j(-w)\rangle = \delta_{ij}\Delta_i$ for all $i,j$, to all orders in $w$. (Not used for \cref{thm:lea-main}.)
+\end{cor}
+
+\begin{proof}
+Put $\nu_2 := 1/(\sqrt{\alpha_1\wA\epsilon_1\epsilon_2}\,U_2\,(f_2^{\mathrm{r}})^{1/2})$, a unit of $\Oan$ with $\nu_2^2 = \tau^2/(\alpha_1\wA\epsilon_1\epsilon_2U_2^2f_2) = 1/\Delta_2$ and $\nu_2'/\nu_2 = -\Delta_2'/(2\Delta_2)$ (any fixed square roots). Then $\leaVn_2 := \nu_2\vv_2$ lies in $\Oan\fps{z}^2$ and satisfies $z\leaVn_2' = (\Aop-\Lv_2)\leaVn_2$ by \cref{thm:lea-row2reg}. As in the proof of \cref{prop:lea-K1}(i), $\Ktwo = \langle\leaVn_2(z),\leaVn_2(-z)\rangle$ has zero $t$-derivative (self-adjointness), so $\Ktwo = \langle\vv_2(z;0),\vv_2(-z;0)\rangle/\Delta_2(0) = \rr_{0,2}(z;0)\rr_{0,2}(-z;0)\Delta_2(0)/\Delta_2(0)$ by \cref{prop:lea-regrows}(b) and the computation in its part (c), and $\hreg(z)\hreg(-z) = 1$.
+\end{proof}
+
+$\Ktwo = 1 + O(z^2)$ is automatic ($\Ktwo$ is even in $z$ and $\Ktwo(0) = \langle\chiv_2,\chiv_2\rangle/\Delta_2 = 1$); the vanishing of the higher coefficients is the content of the analytic input (a). $\Edge_{22}$ and $\Dil_2$ are regular whatever $\Ktwo$ is.
+
+\begin{rmk}[$\Edge_{22}$ at $t = 0$ is not of rank one; the regular column is determined by the singular data]
+\label{rmk:lea-E22}
+(1) Write $\hreg(z)^{-1} = \exp\bigl(\sum_{k\geq 1}s_kz^{2k-1}\bigr)$ with $s_k := \bk_k\sum_{v\in(\alpha_1,\alpha_2,\wA,\wB,-E,-E)}v^{1-2k}$. Expanding \cref{prop:lea-regrows}(c),
+\[
+\frac{1-\hreg(z)^{-1}\hreg(w)^{-1}}{z+w} = -s_1 - \frac{s_1^2}{2}(z+w) - s_2(z^2-zw+w^2) - \frac{s_1^3}{6}(z+w)^2 + (\text{degree}\geq 3),
+\]
+so at $t = 0$: $\Edge_{22}(0,0) = -\Delta_2(0)s_1$, $\Edge_{22}(1,0) = \Edge_{22}(0,1) = -\Delta_2(0)s_1^2/2$, $\Edge_{22}(1,1) = \Delta_2(0)(s_2 - s_1^3/3)$, and the minor $\Edge_{22}(0,0)\Edge_{22}(1,1) - \Edge_{22}(0,1)\Edge_{22}(1,0) = \Delta_2(0)^2(s_1^4/12 - s_1s_2)$ is a rational function of the weights which is not identically zero (its restriction to the fibrewise torus $\alpha_0 = 0$, $\alpha_i = \epsilon_i$ is a non-zero rational function of $\alpha_1/\alpha_2$). So $\Edge_{22}|_{t=0}$ is not a product $\varphi(z)\varphi'(w)$, in contrast with $\Edge_{11}|_{t=0}$ and $\Edge_{12}|_{t=0}$ (\cref{thm:lea-L3,rmk:lea-legs}). Only the regularity of $\Edge_{22}$ is used in \cref{sec:reg}. (2) The regular column is determined recursively by the singular data. \Cref{cor:lea-orth} with $w = -z$, multiplied by $\rho$, reads $\langle\brow(z),\vv_2(z)\rangle = 0$; at order $t^k$ ($k\geq -1$), with $\vv_{2,n} := \coef{t^n}\vv_2(z)$, $\langle(0,E),b\rangle = \epsilon_1\epsilon_2E(\alpha_1\alpha_2b_0 - Eb_1)$, the H-row in the form $\alpha_1\alpha_2\rr_{0,2} - E\rr_{1,2} = (\alpha_1\alpha_2 - E\Lv_2)\rr_{0,2} - Ez\Dop_2\rr_{0,2}$, and $\alpha_1\alpha_2 - E\Lv_2 = -\wB\tau\sast\Lv_2 = O(t)$, this gives
+\begin{multline*}
+E(k+2)\,z\coef{t^{k+2}}\rr_{0,2} = \coef{t^{k+1}}\bigl((\alpha_1\alpha_2 - E\Lv_2)\rr_{0,2}\bigr) + Ez\coef{t^{k+1}}\Bigl(\rr_{0,2}\frac{\Delta_2'}{2\Delta_2}\Bigr)\\
++ \frac{1}{\epsilon_1\epsilon_2E}\sum_{k_1=0}^{k}\langle\brow^{(k_1)},\vv_{2,k-k_1}\rangle,
+\end{multline*}
+whose right side involves $\rr_{0,2}$ only up to order $t^{k+1}$. So, given $\rr_{0,2}(z;0) = \hreg$, the whole regular column, and with it every $\Edge_{12}$ leg and $\Edge_{22}$ to all orders, is determined recursively by the closed-form singular data and by $\Lv_2$, $\Delta_2$; e.g.\ $\coef{t^1}\rr_{0,2} = 0$. (3) In the language of \cref{rmk:lea-flat}, Steps A--D of \cref{thm:lea-row2reg} say that $\nu_2\rpt_{0,2}$ times the symbol $e^{u_2/z}$ is the second flat section of $z\,d/dt - \Aop$; its indicial exponent at $\tau = 0$ is $0$, while $(f_2)^{-1/2}\leaLt$ has $\tau$-order exactly $-1$ (the $z^{-2}$ coefficient of \eqref{eq:lea-stepC} is $\leaLt[0]$ times the eikonal polynomial of \cref{lem:row-eik} evaluated at $\partial_\tau f_0 = \stil/U_2$, the second root $-E/\tau + O(1)$ of the eikonal equation). Neither (2) nor (3) is used below.
+\end{rmk}
+
+\subsection{The legs: (L2) for \texorpdfstring{$j = 2$}{j = 2}, (F3) for \texorpdfstring{$\Edge_{12}$}{E12} and \texorpdfstring{$\Edge_{21}$}{E21}}
+\label{sec:lea-legs}
+
+\begin{lem}[extraction of a leg]\genusstatus{AI-proposed, unchecked}
+\label{lem:lea-leg}
+Let $\Edge\in\bbC\fps{\psi,w}$ and $\mathrm{Num} := (\psi+w)\Edge$. For every $b\geq 0$, in $\bbC((\psi))$,
+\begin{equation}
+\label{eq:lea-legext}
+\coef{w^b}\Edge = \sum_{n=0}^{b}(-1)^n\psi^{-n-1}\coef{w^{b-n}}\mathrm{Num}.
+\end{equation}
+\end{lem}
+
+\begin{proof}
+Put $\Edge_m := \coef{w^m}\Edge\in\bbC\fps{\psi}$ and $\Edge_{-1} := 0$. Then $\coef{w^m}\mathrm{Num} = \psi\Edge_m + \Edge_{m-1}$, so
+\[
+\sum_{n=0}^{b}(-1)^n\psi^{-n-1}(\psi\Edge_{b-n} + \Edge_{b-n-1}) = \sum_{n=0}^{b}(-1)^n\psi^{-n}\Edge_{b-n} - \sum_{n=1}^{b+1}(-1)^n\psi^{-n}\Edge_{b-n} = \Edge_b .
+\]
+\end{proof}
+
+Equivalently, \eqref{eq:lea-legext} is the expansion of $\mathrm{Num}/(\psi+w)$ in $\bbC((\psi))\fps{w}$, where $\psi+w$ is invertible with $1/(\psi+w) = \sum_n(-1)^nw^n\psi^{-n-1}$; $\bbC\fps{\psi,w}$ is contained in $\bbC((\psi))\fps{w}$. Being linear, \eqref{eq:lea-legext} holds coefficientwise in $t$.
+
+\begin{prop}[(L2) for $j = 2$ and the regularity of $\Edge_{12}$]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-L2}
+Assume (R) of \cref{lem:lea-reg}(ii) (every $\vv_2[m]$ analytic at $t = 0$). Then:
+\begin{enumerate}
+\item $\rho\Edge_{12}$ and $\Edge_{12}$ are $O(t^0)$: every $\Edge_{12}(a,b)$ is regular at $t = 0$ ((F3) for $\Edge_{12}$);
+\item for all $k\geq 0$ and $b\geq 0$, $\coef{t^k}(\rho f_{2,b})$ lies in $\Lsp_{k+1}$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+Put $\leaNtw(\psi,w) := \rho\Pij_{12}(\psi,w) = -\langle\brow(\psi),\vv_2(-w)\rangle$. Since $\rho$ depends on $t$ only, \cref{lem:set-edgegen} gives
+\begin{equation}
+\label{eq:lea-N12}
+(\psi+w)\,\rho\Edge_{12}(\psi,w) = \leaNtw(\psi,w) - \leaNtw(-w,w).
+\end{equation}
+By \cref{prop:lea-sigma} and (R), $\leaNtw$ is a Laurent series in $t$ starting at $t^{-1}$, and each coefficient is a finite sum:
+\begin{equation}
+\label{eq:lea-N12coef}
+\coef{t^k}\leaNtw(\psi,w) = -\sum_{k_1=-1}^{k}\langle\brow^{(k_1)}(\psi),\vv_{2,k-k_1}(-w)\rangle,\qquad \vv_{2,k_2}(-w) := \coef{t^{k_2}}\vv_2(-w),\ \text{a pair in }\bbC\fps{w}.
+\end{equation}
+(i) $\coef{t^{-1}}\leaNtw(\psi,w) = -\langle(0,E),\vv_{2,0}(-w)\rangle$ does not depend on $\psi$, so the $t^{-1}$ coefficient of the right side of \eqref{eq:lea-N12} is zero; $\bbC\fps{\psi,w}$ has no zero divisors, so $\coef{t^{-1}}(\rho\Edge_{12}) = 0$, and lower orders do not occur. So $\rho\Edge_{12} = O(t^0)$, and $\Edge_{12} = \rho^{-1}(\rho\Edge_{12}) = O(t^0)$.
+
+(ii) Fix $k,b\geq 0$. Apply \eqref{eq:lea-legext} to $\Edge = \coef{t^k}(\rho\Edge_{12})$ and $\mathrm{Num} = \coef{t^k}(\leaNtw(\psi,w) - \leaNtw(-w,w))$:
+\begin{equation}
+\label{eq:lea-legrat}
+\begin{gathered}
+\coef{t^k}(\rho f_{2,b})(\psi) = \sum_{n=0}^{b}(-1)^n\psi^{-n-1}\,Y_{b-n}(\psi),\\
+Y_m(\psi) := \coef{w^m}\coef{t^k}\bigl(\leaNtw(\psi,w) - \leaNtw(-w,w)\bigr) = -(-1)^m\sum_{k_1=-1}^{k}\langle\brow^{(k_1)}(\psi),\vv_{2,k-k_1}[m]\rangle - y_m,
+\end{gathered}
+\end{equation}
+where $\vv_{2,k_2}[m] := \coef{t^{k_2}}\vv_2[m]\in\bbC^2$ (as $\coef{w^m}\vv_2(-w) = (-1)^m\vv_2[m]$) and $y_m := \coef{w^m}\coef{t^k}\leaNtw(-w,w)$ is a constant. By \cref{prop:lea-sigma}, both components of every $\brow^{(k_1)}$, $-1\leq k_1\leq k$, lie in $\Lsp_{k_1+1}^{+}$ (constants plus $\Lsp_{k_1+1}$), contained in $\Lsp_{k+1}^{+}$; hence $Y_m$ is the Taylor series of a rational function $\widehat{Y}_m\in\Lsp_{k+1}^{+}$. Consider $\mathrm{Rat}(\psi) := \sum_{n=0}^{b}(-1)^n\psi^{-n-1}\widehat{Y}_{b-n}(\psi)$.
+\begin{itemize}
+\item[(a)] Away from $\psi = 0$, $\mathrm{Rat}$ has at most simple poles, located at the points $E/j$ with $1\leq j\leq k+1$.
+\item[(b)] $\mathrm{Rat}(\psi)\to 0$ as $\psi\to\infty$, because each $\widehat{Y}_m$ is bounded at $\infty$ and $\psi^{-n-1}\to 0$.
+\item[(c)] The Laurent expansion of $\mathrm{Rat}$ at $\psi = 0$ is the right side of \eqref{eq:lea-legrat}, i.e.\ $\coef{t^k}(\rho f_{2,b})$, which lies in $\bbC\fps{\psi}$ because $\Edge_{12}(\psi,w)$ is a power series in $\psi$ (\cref{lem:set-edgegen}). Hence the principal part of $\mathrm{Rat}$ at $0$ vanishes: the apparent pole of order $\leq b+1$ cancels.
+\end{itemize}
+So $\mathrm{Rat} - \sum_{j=1}^{k+1}\mathrm{Rat}_j\lf_j$, with $\mathrm{Rat}_j := \lim_{\psi\to E/j}(E-j\psi)\mathrm{Rat}(\psi)$, has no poles in $\bbC$ and tends to $0$ at $\infty$, hence is $0$: $\coef{t^k}(\rho f_{2,b}) = \mathrm{Rat}$ lies in $\Lsp_{k+1}$.
+\end{proof}
+
+Explicitly, since $\psi^{-n-1}\lf_j = (j/E)^{n+1}\lf_j + $ (a polynomial in $1/\psi$ without constant term), $\mathrm{Rat}_j = \sum_{n=0}^{b}(-1)^n(j/E)^{n+1}[\lf_j]\widehat{Y}_{b-n}$. What is used about the regular rows: only (R). The rows $\vv_2$ enter \eqref{eq:lea-legrat} through the constants $\vv_{2,k_2}[m]$ and $y_m$; their $z$-dependence, their values, symplecticity and the orthogonality play no role. Analyticity is exactly what the degree bound needs: if some $\vv_2[m]$ had a pole of order $p$ at $t = 0$, \eqref{eq:lea-N12coef} would bring $\brow^{(k+p)}$ into the order $t^k$, i.e.\ $\lf_j$ with $j$ up to $k+p+1$. The $t = 0$ value of $\Edge_{12}$ is \cref{rmk:lea-legs}(b).
+
+\begin{prop}[leaf form of the $\Edge_{12}$ edge]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-E12}
+Put $S_j(t) := \sum_{k\geq j-1}t^kS_j^{(k)}$ with the coefficient vectors \eqref{eq:lea-Sj}; $S_j = O(t^{j-1})$. Then
+\begin{align}
+\label{eq:lea-sigleaf}
+\brow(\psi) &= \Bigl(0,\frac{E}{t}\Bigr) + \sum_{j\geq 1}S_j(t)\lf_j(\psi),\\
+\label{eq:lea-E12leaf}
+\rho\Edge_{12}(\psi,w) &= -\sum_{j\geq 1}j\,\langle S_j(t),\vv_2(-w;t)\rangle\,\lf_j(\psi)\lf_j(-w),\qquad \lf_j(-w) = \frac{1}{E+jw},
+\end{align}
+identities in $\bbC\fps{\psi,w}((t))$ in which only $j\leq k+1$ contribute at order $t^k$ (by (R)). Consequently, for all $k$ and $b$,
+\begin{equation}
+\label{eq:lea-E12coef}
+\coef{t^k}(\rho f_{2,b})(\psi) = -\sum_{j=1}^{k+1}j\,\lf_j(\psi)\sum_{k_1=j-1}^{k}\Bigl\langle S_j^{(k_1)},\ \coef{w^b}\frac{\vv_{2,k-k_1}(-w)}{E+jw}\Bigr\rangle .
+\end{equation}
+\end{prop}
+
+\begin{proof}
+\eqref{eq:lea-sigleaf} is \cref{prop:lea-sigma}. Insert it in $\leaNtw$. The term $(0,E/t)$ contributes the same function of $w$ to $\leaNtw(\psi,w)$ and to $\leaNtw(-w,w)$, so by (LAM6) (with scale $E$: $\lf_j(\psi) - \lf_j(-w) = j(\psi+w)\lf_j(\psi)\lf_j(-w)$)
+\begin{align*}
+\leaNtw(\psi,w) - \leaNtw(-w,w) &= -\sum_j\langle S_j,\vv_2(-w)\rangle\bigl(\lf_j(\psi) - \lf_j(-w)\bigr)\\
+&= -(\psi+w)\sum_jj\,\langle S_j,\vv_2(-w)\rangle\lf_j(\psi)\lf_j(-w).
+\end{align*}
+Divide by $\psi+w$ (\eqref{eq:lea-N12}); \eqref{eq:lea-E12coef} is the coefficient of $t^kw^b$.
+\end{proof}
+
+In \eqref{eq:lea-E12leaf} the cancellation at $\psi = 0$ of step (c) in the proof of \cref{prop:lea-L2} is explicit, and the subtracted term $\leaNtw(-w,w)$, which the orthogonality would set to zero, drops out without being evaluated. \Cref{prop:lea-L2}(ii) is the statement ``$j\leq k+1$'' in \eqref{eq:lea-E12coef}.
+
+\begin{prop}[the transposition $\Edge_{21} = \Edge_{12}^{T}$; regularity of $\Edge_{21}$]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-transp}
+Assume \cref{cor:lea-orth}. Then $\Edge_{21}(z,w) = \Edge_{12}(w,z)$, i.e.\ $\Edge_{21}(b,a) = \Edge_{12}(a,b)$ for all $a,b$. Hence $\Edge_{21}$ is regular at $t = 0$, and an edge joining a singular vertex to a regular one gives the singular vertex the leg $f_{2,b}$ ($b$ the power at the regular end) for either orientation of the edge.
+\end{prop}
+
+\begin{proof}
+$\varphi_{12}(u) := \Pij_{12}(-u,u) = -\langle\vv_1(u),\vv_2(-u)\rangle = 0$, so $\Edge_{12}(z,w) = \Pij_{12}(z,w)/(z+w)$. By the symmetry of $\langle\,,\rangle$, $\Pij_{21}(z,w) = -\langle\vv_2(-z),\vv_1(-w)\rangle = \Pij_{12}(w,z)$ and $\Pij_{21}(-w,w) = \Pij_{12}(w,-w) = \varphi_{12}(-w) = 0$. Hence $\Edge_{21}(z,w) = \Pij_{12}(w,z)/(z+w) = \Edge_{12}(w,z)$.
+\end{proof}
+
+What the orthogonality is needed for. Without it, $\Edge_{21}(z,w) - \Edge_{12}(w,z) = [\varphi_{12}(z) - \varphi_{12}(-w)]/(z+w)$, and by \eqref{eq:lea-legext} the singular-side leg of an $\Edge_{21}$ edge would be
+\[
+\coef{z^b}\Edge_{21}(z,\psi) = \rho^{-1}\Bigl[\sum_{n=0}^{b}(-1)^n\psi^{-n-1}\coef{z^{b-n}}\leaNtw(\psi,z) - (-1)^b\psi^{-b-1}\leaNtw(\psi,-\psi)\Bigr],
+\]
+which contains $\leaNtw(\psi,-\psi) = -\langle\brow(\psi),\vv_2(\psi)\rangle$, a pairing of $\brow$ with the full power series $\vv_2(\psi)$ (at $t = 0$, $\hreg(\psi)(1,\alpha_1\alpha_2/E)$, a divergent Stirling series); the rationality argument of \cref{prop:lea-L2} does not apply to it. With the orthogonality the leg is $f_{2,b}$ and is rational. Even the regularity of $\Edge_{21}$ needs the $t^{-1}$ part of the orthogonality: since $\rho\Pij_{21}(z,w) = -\langle\vv_2(-z),\brow(w)\rangle$ and $\brow^{(-1)} = (0,E)$,
+\begin{gather*}
+\coef{t^{-1}}(\rho\Edge_{21})(z,w) = \frac{f_e(z) - f_e(-w)}{z+w},\\
+f_e(z) := -\langle\vv_2(-z;0),(0,E)\rangle = -\epsilon_1\epsilon_2E\bigl[\alpha_1\alpha_2\,\rr_{0,2}(-z;0) - E\,\rr_{1,2}(-z;0)\bigr],
+\end{gather*}
+and no lower powers of $t$ occur (\cref{lem:lea-reg}). This vanishes if and only if $f_e$ is constant; the constant is $f_e(0) = -\epsilon_1\epsilon_2E(\alpha_1\alpha_2 - E\Lv_2(0)) = 0$ ($\rr_{0,2}[0] = 1$, $\rr_{1,2}[0] = \Lv_2$, $\Lv_2(0) = \alpha_1\alpha_2/E$). So $\Edge_{21}$ is regular if and only if $\alpha_1\alpha_2\rr_{0,2}(z;0) = E\rr_{1,2}(z;0)$, which is \cref{prop:lea-regrows}(b) (from \cref{thm:lea-row2reg} alone).
+
+\begin{cor}[all legs; unrescaled ends]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-alllegs}
+For all $k,b\geq 0$ and $j\in\{1,2\}$: $\coef{t^k}f_{j,b}$ and $\coef{t^k}(\rho f_{j,b})$ lie in $\Lsp_{k+1}$; $\coef{t^k}(\rho^e\Edge_{11}(\psi,\psi'))$ lies in $\operatorname{span}\{\lf_i(\psi)\lf_l(\psi') : i,l\geq 1,\ (i-1)+(l-1)\leq k\}$ for every integer $e$; all these series are $O(t^0)$. In particular $\Edge_{1j}(z,w)\to 0$ as $z\to\infty$ at fixed order in $w$, coefficientwise in $t$ (every element of $\Lsp_{k+1}$ vanishes at $\infty$).
+\end{cor}
+
+\begin{proof}
+$j = 2$: \cref{prop:lea-L2} and multiplication by $\rho^{-1}\in\Kal\fps{t}$ (by (T): $\coef{t^k}(uX) = \sum_iu_i\coef{t^{k-i}}X$, and the spaces $\Lsp_{k+1}$ grow with $k$). $j = 1$ and the loops: \cref{cor:lea-rhoe}.
+\end{proof}
+
+\begin{rmk}[how the factors attach to a singular vertex]
+\label{rmk:lea-use}
+In the regularity theorem of \cref{sec:reg}, at a singular vertex $v$ of genus $h_v\geq 2$ the dilaton homogeneity rescales every half-edge at $v$ exactly once (one factor $\rho$ per half-edge at $v$). The factors attached to $v$ depend on the other end of the edge:
+\begin{itemize}
+\item the other end is a regular vertex: the edge factor $\Edge_{12}$ (or $\Edge_{21}$) gives $v$ the leg $\rho f_{2,b}$, $b$ the power at the regular end (\cref{prop:lea-L2}; either orientation by \cref{prop:lea-transp});
+\item the other end is a singular vertex $v'$ of genus $0$ or $1$ (not rescaled): the edge factor is $\rho\Edge_{11} = \rho^{-1}(\rho^2\Edge_{11})$, and for each power $b'$ at $v'$ it gives $v$ the leg $\rho f_{1,b'}$ (\cref{cor:lea-rhoe}), of leaf degree $\leq k$ at order $t^k$; either orientation, since $\Edge_{11}$ is symmetric;
+\item the other end is a singular vertex $v'$ of genus $\geq 2$ (also rescaled): the edge factor is $\rho^2\Edge_{11}$, which splits its leaf degree $\leq k$ at order $t^k$ between the two ends (\cref{thm:lea-L3});
+\item a self-loop at $v$: the factor is $\rho^2\Edge_{11}$ (\cref{thm:lea-L3}).
+\end{itemize}
+At a vertex $v'$ of genus $0$ or $1$ itself only regularity is needed: $\Delta_1^{h-1}$ is $O(t^2)$ for $h = 0$ and equals $1$ for $h = 1$, and every factor attached to $v'$ is $O(t^0)$ ((F3), \cref{sec:lea-assembly}).
+\end{rmk}
+
+\subsection{Proof of Theorems A and \ref{thm:lea-qde}; (F1)--(F3) in one table}
+\label{sec:lea-assembly}
+
+\begin{proof}[Proof of \cref{thm:lea-main}]
+(F1): $t^2\rho^2\Delta_1 = -\epsilon_1\epsilon_2E^3$, $\rho = \tau/(t\alg)$ with $\rho(0) = 1$, and the expansion: \cref{prop:lea-key}(ii), (iv). $\Delta_2 = \epsilon_1\epsilon_2\wB\delta\sast\Lv_2$ analytic with $\Delta_2(0) = \epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E$ and $\Delta_2'(0) = 0$: \cref{lem:set-Delta2,lem:lea-reg}(iii).
+(F2): $\rr_{0,1}(z;0) = E/(E+z)$: \cref{cor:row-F2}. $\rho\,\rr_{1,1} = E/t + \alpha_1\alpha_2/(E+z) + O(t)$: \cref{prop:lea-sigma}(i), (ii) ($\brow^{(-1)} = (0,E)$, $\brow^{(0)}_1 = \alpha_1\alpha_2\lf_1$) at $\psi = -z$.
+(F3): the table \eqref{eq:lea-table} below.
+(L1): \cref{thm:lea-L1}.
+(L2): $j = 1$ by \cref{cor:lea-rhoe}, $j = 2$ by \cref{prop:lea-L2}(ii); the unrescaled legs $\coef{t^k}f_{j,b}$ by \cref{cor:lea-alllegs}; $\Edge_{21}(b,a) = \Edge_{12}(a,b)$ by \cref{prop:lea-transp}.
+(L3): \cref{thm:lea-L3}; the symmetry by \eqref{eq:lea-Ebar}; all powers $\rho^e$ by \cref{cor:lea-rhoe}.
+Rationality of the coefficients: the passage (P) of \cref{lem:set-rings}. Sharpness: \cref{cor:lea-top,cor:lea-anti}. Large-$z$ form: \cref{lem:lea-tcoef} ($\lim z\,\rr_{0,1} = E/\rho$) and \cref{cor:lea-alllegs}.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:lea-qde}]
+(i) \cref{prop:lea-row2} and \cref{thm:lea-row2reg} (or \cref{prop:ide-rows}(ii)). (ii) \cref{prop:lea-K1}(iii), \cref{cor:lea-orth}, \cref{cor:lea-K2}. (iii) \cref{prop:lea-regrows}(a), (b).
+\end{proof}
+
+(F3), factor by factor (frame B; values at $t = 0$; $\kappa_2 := \epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB$, $\hreg = h_{(\alpha_1,\alpha_2,\wA,\wB,-E,-E)}$, $\chi_{12}(w) := -\kappa_2\hreg(w)^{-1}/(E+w)$):
+\begingroup\small
+\begin{equation}
+\label{eq:lea-table}
+\begin{array}{@{}lll@{}}
+\text{factor} & \text{regularity at }t = 0 & \text{value at }t = 0\\[2pt]\hline\\[-8pt]
+\Dil_1 & \text{\cref{thm:lea-L1}, remark (iv)} & \qo(\psi) = -E\psi/(E-\psi);\ \Dil_1(d;0) = -E^{1-d}\\
+\Dil_2 & \text{\cref{lem:lea-reg}(iv)} & (-1)^n\coef{z^{n-1}}\hreg(z)\quad(\text{\cref{prop:lea-regrows}(a)})\\
+\Edge_{11} & \text{\eqref{eq:lea-int}: }t^2\rho^2\Edge_{11} = O(t^2) & -\tfrac{\kappa_2}{2}\lf_1(\psi)\lf_1(\psi')\quad(\text{\cref{thm:lea-L3}})\\
+\Edge_{12} & \text{\cref{prop:lea-L2}(i)} & \lf_1(\psi)\,\chi_{12}(w)\quad(\text{\cref{rmk:lea-legs}(b)})\\
+\Edge_{21} & \text{\cref{prop:lea-regrows}(b) (}t^{-1}\text{ part); \cref{prop:lea-transp}} & \Edge_{21}(b,a) = \Edge_{12}(a,b)\\
+\Edge_{22} & \text{\cref{lem:lea-reg}(iv)} & \tfrac{\kappa_2}{E}\,\dfrac{1-\hreg(z)^{-1}\hreg(w)^{-1}}{z+w}\quad(\text{\cref{prop:lea-regrows}(c)})
+\end{array}
+\end{equation}
+\endgroup
+By \eqref{eq:lea-sigleaf} the $t^{-1}$ part of $\brow$ is the $\psi$-independent covector $(0,E)$; hence the coefficients $(-1)^n\rr_{1,1}[n]$ of the H-row are regular for $n\geq 1$, while $\rr_{1,1}[0] = \Lv_1$ has a simple pole; they do not enter the graph sum without marked points.
+
+\begin{rmk}[where each input is used; where (ND) is used]
+\label{rmk:lea-inputs}
+The analytic input of \cref{sec:row}, the Beta-phase lemma \cref{lem:row-betaphase} (through the constant $\Abeta$ of \cref{prop:row-beta} and the constant line of \cref{lem:set-hmult}, which also uses \cref{lem:ide-norm} for the definition of the rows), enters through \cref{thm:row-main} into the key formula \eqref{eq:lea-key} and from there into everything that uses $E/(E+z)$: (F2), (L1) at $t^0$ ($\qo$), $\brow^{(-1)} = (0,E)$, $\Kone = 1$, $\coef{t^0}\Ebar = 0$, (F3) for $\Edge_{11}$, the rank-one $t^0$ loop. The same lemma, with $(a,b) = (-\alpha_2,E)$, gives the value $\hreg$ of the regular row at $t = 0$ (\cref{prop:lea-regrows}(a)), used only for the $t = 0$ values at the regular idempotent and for $\Ktwo = 1$, not for \cref{thm:lea-main}. The identity $\Delta_i = \alpha_1\wA\epsilon_1\epsilon_2\cW_2(U_i)$ enters at $U_1$ in \cref{prop:lea-key} ($\rho = \tau/(t\alg)$) and at $U_2$ in \eqref{eq:lea-stepB}. The formal Laplace calculus ((P1)--(P3), homogeneity) enters \cref{prop:row-wickrow,prop:row-gaussode} and \cref{thm:lea-row2reg}. The condition (ND) is used as follows: $E\neq 0$ (the leaf scale; the recursion of \cref{lem:row-unique}; the distinct roots $1$ and $-\alpha_2/\wB$ at $\cQ = 1$); $\alpha_1\wA\neq 0$ (the non-degenerate Euler critical point $\phi_0''(\wA/E) = -E^3/(\alpha_1\wA)$; the Beta-phase lemma at $(\wA,\alpha_1)$); $\alpha_2\neq 0$ ($\sast\neq 1/\tau$; $U_2(0)\neq 0$; the Beta-phase lemma at $(-\alpha_2,E)$); $\wB\neq 0$ ($U_2(0)$ finite, $\Delta_2(0)\neq 0$); $\epsilon_1\epsilon_2\neq 0$ ($\eta$ invertible, $\Delta_i\neq 0$). Nothing uses $E = \epsilon_1+\epsilon_2$ (\cref{rmk:lea-cy}), and nothing uses the point $\cQ = 0$ except through the citations of \cref{lem:ide-norm} (the definition of the constant $\hnw$) and of \cref{prop:ide-rows}(iv) where it is offered as an alternative (\cref{cor:lea-a0}).
+\end{rmk}
+
+\input{sections/s04b_closedforms}

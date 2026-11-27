@@ -1,0 +1,14 @@
+h=7 B=(2,2) D=2 [in range]: Xi mod p non-zero at 0 of 1 random tau
+h=7 B=(3,2) D=3 [in range]: Xi mod p non-zero at 0 of 1 random tau
+h=7 B=(5,5) D=8 [in range]: Xi mod p non-zero at 0 of 1 random tau
+h=7 B=(7,6) D=11 [in range]: Xi mod p non-zero at 0 of 1 random tau
+h=7 B=(11,2) D=11 [in range]: Xi mod p non-zero at 0 of 1 random tau
+h=7 B=(9,4) D=11 [in range]: Xi mod p non-zero at 0 of 1 random tau
+h=7 B=(8,5) D=11 [in range]: Xi mod p non-zero at 0 of 1 random tau
+h=7 B=(7,7) D=12 [outside]: Xi mod p non-zero at 1 of 1 random tau  e.g. Xi=741292746
+h=7 B=(12,2) D=12 [outside]: Xi mod p non-zero at 1 of 1 random tau  e.g. Xi=626069655
+(p = 998244353, 67 s)
+
+real	1m7.701s
+user	1m6.609s
+sys	0m0.515s

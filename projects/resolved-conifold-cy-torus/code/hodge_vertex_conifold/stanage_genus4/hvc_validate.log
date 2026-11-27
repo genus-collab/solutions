@@ -1,0 +1,6 @@
+2026-10-30 14:56:19  [g=2] VALIDATION OK: all 27 decorated graphs (terms and polar parts) agree with the stored local run
+2026-10-30 14:56:19  [g=2] VALIDATION OK: all 7 stable-graph terms and polar parts agree with the stored local run
+2026-10-30 14:56:19  [g=2] VALIDATION OK: fresh run reports total = F20 and the gap
+2026-10-30 14:58:26  [g=3] VALIDATION OK: all 693 decorated graphs (terms and polar parts) agree with the stored local run
+2026-10-30 14:58:26  [g=3] VALIDATION OK: all 42 stable-graph terms and polar parts agree with the stored local run
+2026-10-30 14:58:26  [g=3] VALIDATION OK: fresh run reports total = F30 and the gap

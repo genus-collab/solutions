@@ -1,0 +1,38 @@
+# referee-2 high-genus test: p = 998244353, tau = 826606474 (seed 707), gmax = 7
+# 31 profiles needed: (11) (12) (13) (14) (15) (2) (2,11) (2,13) (2,14) (2,15) (2,2) (2,2,10) (2,2,11) (2,2,13) (2,2,2,11) (2,5,9) (2,6) (2,6,8) (2,8) (3) (3,10) (3,13) (3,6,8) (4,13) (5) (5,9) (6) (6,7) (6,8) (8) (9)
+# R2mv::compute gmax=7 K=22 P=77 Smax=39: 89210 partitions (conjugate pairs) in 360 s
+# MV engine done in 361 s
+# cross-check against Route E tables (genus <= 6): 184 values, 0 mismatches
+P_2 G=7 eps=0 R=(13) [R+2: D=13, excess -1] 30 terms: residual 0 OK
+P_2 G=7 eps=1 R=(13) [R+2: D=13, excess -1] 0 terms: residual 0 OK
+   control (X_7(2,13) + 1, eps=0): residual 486525062 (nonzero, as it must be)
+P_2 G=7 eps=0 R=(14) [R+2: D=14, excess -2] 46 terms: residual 0 OK
+P_2 G=7 eps=1 R=(14) [R+2: D=14, excess -2] 32 terms: residual 0 OK
+   control (X_7(2,14) + 1, eps=0): residual 973050124 (nonzero, as it must be)
+P_2 G=7 eps=0 R=(15) [R+2: D=15, excess -3] 46 terms: residual 0 OK
+P_2 G=7 eps=1 R=(15) [R+2: D=15, excess -3] 48 terms: residual 0 OK
+   control (X_7(2,15) + 1, eps=0): residual 461330833 (nonzero, as it must be)
+P_3 G=7 eps=0 R=(13) [R+3: D=14, excess -2] 230 terms: residual 0 OK
+P_3 G=7 eps=1 R=(13) [R+3: D=14, excess -2] 132 terms: residual 0 OK
+   control (X_7(3,13) + 1, eps=0): residual 325986409 (nonzero, as it must be)
+P_4 G=7 eps=0 R=(13) [R+4: D=15, excess -3] 1629 terms: residual 0 OK
+P_4 G=7 eps=1 R=(13) [R+4: D=15, excess -3] 1265 terms: residual 0 OK
+   control (X_7(4,13) + 1, eps=0): residual 735491582 (nonzero, as it must be)
+P_2 G=7 eps=0 R=(6,8) [R+2: D=13, excess -1] 70 terms: residual 0 OK
+P_2 G=7 eps=1 R=(6,8) [R+2: D=13, excess -1] 0 terms: residual 0 OK
+   control (X_7(2,6,8) + 1, eps=0): residual 486525062 (nonzero, as it must be)
+P_2 G=7 eps=0 R=(5,9) [R+2: D=13, excess -1] 60 terms: residual 0 OK
+P_2 G=7 eps=1 R=(5,9) [R+2: D=13, excess -1] 0 terms: residual 0 OK
+   control (X_7(2,5,9) + 1, eps=0): residual 486525062 (nonzero, as it must be)
+P_3 G=7 eps=0 R=(6,8) [R+3: D=14, excess -2] 820 terms: residual 0 OK
+P_3 G=7 eps=1 R=(6,8) [R+3: D=14, excess -2] 412 terms: residual 0 OK
+   control (X_7(3,6,8) + 1, eps=0): residual 325986409 (nonzero, as it must be)
+P_2 G=7 eps=0 R=(2,2,11) [R+2: D=13, excess -1] 110 terms: residual 0 OK
+P_2 G=7 eps=1 R=(2,2,11) [R+2: D=13, excess -1] 0 terms: residual 0 OK
+   control (X_7(2,2,2,11) + 1, eps=0): residual 486525062 (nonzero, as it must be)
+Lemma A direct: Xi_7(12), D = 11 (range D <= 11): 0 = 0 OK
+Lemma A direct: Xi_7(2,11), D = 11 (range D <= 11): 0 = 0 OK
+Lemma A direct: Xi_7(6,7), D = 11 (range D <= 11): 0 = 0 OK
+Lemma A direct: Xi_7(2,2,10), D = 11 (range D <= 11): 0 = 0 OK
+Lemma A direct: Xi_7(3,10), D = 11 (range D <= 11): 0 = 0 OK
+SUMMARY highg p=998244353 gmax=7: 18 relations, 0 failures; table cross-check 184/184; total 623 s

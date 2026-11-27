@@ -1,0 +1,15 @@
+D= 1:   1 multisets,  4 tau values, kappa = tau+1/2
+D= 2:   2 multisets,  5 tau values, kappa = 1/24
+D= 3:   3 multisets,  6 tau values, kappa = 0
+D= 4:   5 multisets,  7 tau values, kappa = -1/2880
+D= 5:   7 multisets,  8 tau values, kappa = 0
+D= 6:  11 multisets,  9 tau values, kappa = 1/181440
+D= 7:  15 multisets, 10 tau values, kappa = 0
+D= 8:  22 multisets, 11 tau values, kappa = -1/9676800
+D= 9:  30 multisets, 12 tau values, kappa = 0
+D=10:  42 multisets, 13 tau values, kappa = 1/479001600
+D=11:  56 multisets, 14 tau values, kappa = 0
+D=12:  77 multisets, 15 tau values, kappa = -691/15692092416000
+D=13: 101 multisets, 16 tau values, kappa = 0
+D=14: 135 multisets, 17 tau values, kappa = 1/1046139494400
+total 147 evaluations, 0 mismatches

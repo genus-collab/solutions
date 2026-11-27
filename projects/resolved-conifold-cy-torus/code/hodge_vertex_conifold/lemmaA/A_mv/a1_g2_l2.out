@@ -1,0 +1,9 @@
+parsed /g/My Drive/Projects/Old/refGW/hodge_vertex_conifold/lemmaA/A_mv/../data/mv_g2_l2.txt (26659 chars) in 0 s
+tau=2/7: 21 partitions, data eval 0 s all match
+tau=3/2: 21 partitions, data eval 0 s all match
+tau=5: 21 partitions, data eval 0 s all match
+tau=1/4: 21 partitions, data eval 1 s all match
+tau=-7/3: 21 partitions, data eval 1 s all match
+tau=-5/2: 21 partitions, data eval 1 s all match
+tau=7/11: 21 partitions, data eval 1 s all match
+SUMMARY g=2 l=2 maxpart=6 maxsize=1000: 147 matches, 0 mismatches (7 tau values x 21 partitions)

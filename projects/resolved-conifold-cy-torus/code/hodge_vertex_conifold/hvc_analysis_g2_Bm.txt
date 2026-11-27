@@ -1,0 +1,28 @@
+Resolved conifold x C2, fibrewise torus alpha0 = 0, alpha1 = eps1 = x, alpha2 = eps2 = 1, genus 2, mode B (triple Hodge vertex with weights {ϵ[1] + ϵ[2], -ϵ[1], -ϵ[2]}, R' = R_Z h_w^(-1)). stable: per stable graph (order of StableGraph-2.bin) genera, edges, |Aut|, numbers of decorated graphs, term (rational function of Q and x), polar part {t^-(2g-2), ..., t^-1} at Q = 1 in t = Log Q. entries: per decorated graph {id {graph, orbit}, key {psi on half-edges, dilaton leaves}, description, term, polar, symmetric}. Weight convention 1/|Aut| times the sum over labelled decorations and the 2^V colourings.
+
+total = F20 (symbolic in Q, x): True; total polar part {t^-2, ..., t^-1} = gap: True; gap = {(7 + 10*x^2 + 7*x^4)/(5760*x), 0}
+7 stable graphs; regular at Q = 1: 6; singular: {{1, {2}, {}}}
+genus-2 vertex graph (graph 1): polar part = {(7 + 10*x^2 + 7*x^4)/(5760*x), 0}; equal to the gap: True; polar part of the sum of all other graphs: {0, 0}
+27 decorated graphs, 7 singular individually; stable graphs containing singular decorated graphs: {1}; stable graphs with a vertex of genus >= 2: {1}; equal: True
+per stable graph {k, genera, decorated graphs, singular}: {{1, {2}, 7, 7}}
+pole-order tally over decorated graphs {order, count}: {{0, 20}, {2, 7}}; bound order <= Sum_v max(2 g_v - 2, 0) holds for all: True; tally of {order, bound}: {{{0, 0}, 20}, {{2, 2}, 7}}
+bound attained {graph, max order among its decorated graphs, bound}: {{1, 2, 2}}
+odd pole orders occur in single decorated graphs: 0 (t^-(2g-3), t^-(2g-5), ...: {0})
+number of decorated graphs with a nonzero coefficient at t^-{2, 1}: {7, 6}
+decorated graphs with identically vanishing term: 0 {}
+regular decorated graphs inside the stable graphs with a vertex of genus >= 2: 0, of which identically zero: 0; nonzero ones: {}
+vertex graph: 7 decorated graphs; leading coefficients proportional to the gap polynomial: False (7 distinct ratios); sums of their coefficients at t^-{2, 1}: {(7 + 10*x^2 + 7*x^4)/(5760*x), 0}
+vertex graph, per decorated graph {key {psi on half-edges, dilaton leaves}, polar part}: {{{{}, {{}}}, {-1/5760*(1 + x)^2, -1/5760*(-1 + x)^2}}, {{{}, {{2}}}, {(7*(1 + x + x^2)^2)/(5760*x), 0}}, {{{}, {{3}}}, {(1 + x + x^2)/480, -1/240*((-1 + x)^2*(1 + x + x^2))/(1 + x)^2}}, {{{}, {{4}}}, {x/1152, -1/192*((-1 + x)^2*x)/(1 + x)^2}}, {{{}, {{2, 2}}}, {(-5*(1 + x + x^2))/1152, (5*(-1 + x)^2*(1 + x + x^2))/(1152*(1 + x)^2)}}, {{{}, {{2, 3}}}, {(-29*x)/5760, (29*(-1 + x)^2*x)/(1920*(1 + x)^2)}}, {{{}, {{2, 2, 2}}}, {(7*x)/1440, (-7*(-1 + x)^2*x)/(720*(1 + x)^2)}}}
+denominators of the stable-graph terms {power of (1-Q), power of Q, power of the discriminant Q(1-x)^2+4x, power of x, power of (1+x), power of (1-x), residual factor (1 = none)}:
+  tally over the 7 stable graphs: {{{0, 1, 4, 0, 2, 0, 1}, 6}, {{2, 1, 4, 1, 2, 0, 1}, 1}}
+  max powers: {2, 1, 4, 1, 2, 0}; graphs with a discriminant pole: {1, 2, 3, 4, 5, 6, 7}; graphs with a residual (unlisted) denominator factor: {}
+denominators of the decorated-graph terms: max powers {2, 1, 4, 1, 2, 0}; with a discriminant pole: 26; with a residual (unlisted) denominator factor: 0; (1-Q)-power tally: {{0, 20}, {2, 7}}; x-power tally: {{0, 26}, {1, 1}}; (1+x)-power tally: {{0, 1}, {2, 26}}
+VALIDATION OK: every denominator is a product of powers of (1-Q), Q, x, (1+x), (1-x) and the discriminant only
+discriminant-power tally over the stable graphs {power, count}: {{4, 7}}; over the decorated graphs: {{0, 1}, {1, 2}, {2, 7}, {4, 17}}; total has a discriminant pole: False (its denominator: 1)
+discriminant power versus the number of edges of the stable graph {edges, max power}: {{0, 4}, {1, 4}, {2, 4}, {3, 4}}
+degree in Q of numerator/denominator of the stable-graph terms (max): 7/7
+regular stable graphs whose term still has (1-Q) in the denominator (cancellation of the pole only in the Laurent expansion is impossible for a rational function, so these must be 0): {}
+(1-Q)-power of the stable-graph terms versus the leading pole order of the polar part {k, (1-Q)-power, pole order}: {{1, 2, 2}}
+stable graphs with a pole at Q = 0: 7 of 7 (maximal order 1); sum of the residues (coefficient of Q^-1): 0; residue of the vertex graph: (17*x)/1179648
+the total is regular at Q = 0: True
+total at Q = 0 (constant-map contribution F_g(0)): (-1 - x^2)/5760; reference F_g(0): (-1 - x^2)/5760; agree: True

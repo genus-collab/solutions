@@ -1,0 +1,24 @@
+h=4 R={2} D=1: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={3} D=2: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={4} D=3: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={5} D=4: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={6} D=5: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={7} D=6: identity holds; X_a != 0, X_b != 0, X_a + X_b != 0; (G) ok
+h=4 R={8} D=7: identity holds; X_a != 0, X_b != 0, X_a + X_b != 0; (G) ok
+h=4 R={2,2} D=2: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={2,3} D=3: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={2,4} D=4: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={2,5} D=5: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={2,6} D=6: identity holds; X_a != 0, X_b != 0, X_a + X_b != 0; (G) ok
+h=4 R={2,7} D=7: identity holds; X_a != 0, X_b != 0, X_a + X_b != 0; (G) ok
+h=4 R={3,3} D=4: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={3,4} D=5: identity holds; X_a != 0, X_b != 0, X_a + X_b = 0; (G) ok   [Lemma-A range]
+h=4 R={3,5} D=6: identity holds; X_a != 0, X_b != 0, X_a + X_b != 0; (G) ok
+h=4 R={3,6} D=7: identity holds; X_a != 0, X_b != 0, X_a + X_b != 0; (G) ok
+h=4 R={4,4} D=6: identity holds; X_a != 0, X_b != 0, X_a + X_b != 0; (G) ok
+h=4 R={4,5} D=7: identity holds; X_a != 0, X_b != 0, X_a + X_b != 0; (G) ok
+(HZ) referee engine genus 4 r = 0: Int Lambda^vee(1) K = chi(M_{h,r}): OK
+(HZ) referee engine genus 4 r = 1: Int Lambda^vee(1) K = chi(M_{h,r}): OK
+(HZ) referee engine genus 4 r = 2: Int Lambda^vee(1) K = chi(M_{h,r}): OK
+(HZ) referee engine genus 4 r = 3: Int Lambda^vee(1) K = chi(M_{h,r}): OK
+SUMMARY h=4: Mumford identity failures 0, (G) failures 0

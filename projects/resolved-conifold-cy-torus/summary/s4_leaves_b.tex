@@ -1,0 +1,112 @@
+% s4_leaves_b. Second half of the abridged Section 4 (continues s4_leaves_a.tex); label prefix: lea.
+
+\subsection{The regular colour}
+\label{sec:lea-regular}
+
+The factors of idempotent $2$ are those of idempotent $1$ transported by the involution $U\mapsto U_1+U_2-U$ of $\QA$ (\cref{def:set-QA}), which exchanges the characters $\ev_1,\ev_2$ and commutes with $\dd/\dd\cQ$ and with the $t$-independent scalars $\hnw$, $\hw^{-1}$, the same series at both idempotents (this is where ``the same scalar at both colours'' is needed): in every defining expression $U_1$ is replaced by $U_2$ \Lref{Lemma~4.23}. Since $U_2$ is analytic at $t=0$ with $U_2(0)=-\alpha_2/\wB$ and $1-U_2(0)=E/\wB\neq0$, one gets \Lref{Lemma~4.24}: \textbf{(R)} every $\rpt_{0,2}[m]$, $\rr_{0,2}[m]$, $\rr_{1,2}[m]$ is analytic at $t=0$; hence so are $\Dil_2(n)$ and $\Edge_{22}(m,n)$ ((F3) for these factors). Row~1 at $i=2$ is the definition \eqref{eq:set-Hrow}; Row~2 needs a separate argument, since the closed form concerns the singular row only and $\stil\to\infty$ as $\tau\to0$.
+
+\begin{thm}[{\Lref{Theorem~4.26}: Row 2 of the quantum differential equation at the regular idempotent}]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-row2reg}
+In $\Man\fps{z}$ (in $\Oan\fps{z}$ after multiplication by $\tau$),
+\[
+(\Lv_2+z\Dop_2)\rr_{1,2}=-\frac{\alpha_1\alpha_2}{\tau}\rr_{0,2}+\Bigl(\frac E\tau-\alpha_0\Bigr)\rr_{1,2},\qquad\text{equivalently}\qquad z\Dop_2\rr_{1,2}=\Lv_1(\rr_{1,2}-\Lv_2\rr_{0,2}).
+\]
+With Row~1 this is $z\Dop_2\vv_2=(\Aop-\Lv_2)\vv_2$, for the frame-B rows, the rows $\rZ$ and the point-frame rows alike.
+\end{thm}
+
+\begin{proof}[Sketch of proof]
+Work coefficientwise in $z$ near an arbitrary $\tau_0\in\Ddisc''$, away from $\tau=0$, where $\stil$ is a non-degenerate critical point of $\phi_\tau$. Put $f_0\coloneqq\phi_\tau(\stil)$, $f_2\coloneqq\phi_\tau''(\stil)$, $\omq\coloneqq(E+z)/\tau-(\wA+z)$, $\leaDt\coloneqq\dd/\dd t+f_0'/z-f_2'/(2f_2)$.
+(A) As in \cref{prop:row-wickrow}, by (P1) of \cref{prop:row-calc}, $\rpt_{0,2}=U_2\,\leaLt$ with $\leaLt\coloneqq\Lnorm[\phi_\tau,(1-\tau s)^{-1};\stil]$.
+(B) $(\Lv_2+z\Dop_2)\circ U_2=U_2\circ(z\leaDt+\omq)$, by the envelope formula $\Lv_2=f_0'+E/\tau-\wA$ at $\stil$ and by $\Delta_2=\alpha_1\wA\epsilon_1\epsilon_2U_2^2f_2/\tau^2$ (the fourth form of \eqref{eq:set-Delta} at $U_2$).
+(C) $\leaLt$ satisfies Gauss's equation of \cref{prop:row-gaussode} with $\dd/\dd\tau$ replaced by $\leaDt/(1-\tau)$, by the argument given there at $\stil$: (P2), the amplitude identity \Lref{Lemma~3.15} and (P3).
+(D) By the operator identity \Lref{Lemma~4.6}, valid for every symbol with the Leibniz rule of $z\,\dd/\dd t$, (C) says that $(z\leaDt+\omq)^2-(E/\tau-\alpha_0)(z\leaDt+\omq)+\alpha_1\alpha_2/\tau$ annihilates $\leaLt$; by (A), (B) the same polynomial in $\Lv_2+z\Dop_2$ annihilates $\rpt_{0,2}$, hence $\rZ_{0,2}$ and $\rr_{0,2}$. This is Row~2 on $\Ddisc''$, and in $\Man$ by (R).
+\end{proof}
+
+\begin{cor}[{\Lref{Corollary~4.27}: orthogonality}]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-orth}
+$\langle\vv_1(w),\vv_2(-w)\rangle=0$ in $\Man\fps{w}$, to all orders in $w$.
+\end{cor}
+
+\begin{proof}[Sketch of proof]
+Let $Y(z)\coloneqq\langle\vv_1(z),\vv_2(-z)\rangle=\sum_mY_mz^m$. By $z\Dop_i\vv_i=(\Aop-\Lv_i)\vv_i$ for $i=1,2$ (\cref{prop:lea-row2,thm:lea-row2reg}) and the self-adjointness of $\Aop$ \Lref{Proposition~4.8}, $zY'=\big[(\Lv_2-\Lv_1)+\tfrac z2(\Delta_1'/\Delta_1+\Delta_2'/\Delta_2)\big]Y$. As $\Lv_2-\Lv_1=-\delta/\tau$ is a unit of $\Man$ and $Y$ is a power series in $z$, $Y_0=0$ and inductively $Y_m=0$.
+\end{proof}
+
+\begin{prop}[{\Lref{Proposition~4.28}: the regular rows at $t=0$}]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-regrows}
+\begin{enumerate}
+\item[(a)] (Analytic input.) In the point frame $\rpt_{0,2}(z;0)=h_{(\alpha_2,-E,\wB)}(z)$; equivalently, in frame B, $\rr_{0,2}(z;0)=\hreg(z)$. Here $\hreg\coloneqq h_{(\alpha_1,\wA,-E)}h_{(\alpha_2,-E,\wB)}$ is the series \eqref{eq:set-h} of the multiset $(\alpha_1,\alpha_2,\wA,\wB,-E,-E)$, and $\hreg(z)\hreg(-z)=1$.
+\item[(b)] $\vv_2(z;0)=\hreg(z)\,(1,\alpha_1\alpha_2/E)$; equivalently $\coef{t^1}\rr_{0,2}(z;t)=0$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+(a) By (R) the value at $t=0$ is the normalised expansion, in the coordinate $\log U$, of the superpotential at $\cQ=1$, $E\log(1-U)-\alpha_2\log U$, at its critical point $-\alpha_2/\wB$: this is \cref{lem:row-betaphase} with $(a,b)=(-\alpha_2,E)$, whose hypothesis $ab(a+b)\neq0$ reads $\alpha_2E\wB\neq0$, the second use of input (i) of \cref{sec:int-inputs}; frame B multiplies by $h_{(\alpha_1,\wA,-E)}$. (b) In Row~2, read as $(\Dop_2\rr_{1,2})[m-1]=\Lv_1(\rr_{1,2}[m]-\Lv_2\rr_{0,2}[m])$, the left side is analytic at $t=0$ and $\Lv_1=E/t+O(1)$, so the bracket vanishes at $t=0$; and $\Lv_2(0)=\alpha_1\alpha_2/E$.
+\end{proof}
+
+Moreover $\Ktwo(z)\coloneqq\langle\vv_2(z),\vv_2(-z)\rangle/\Delta_2$ is independent of $t$, as $\Kone$ in \cref{prop:lea-K1}, and equals $\hreg(z)\hreg(-z)=1$ by (a), (b) \Lref{Corollary~4.29}; with \cref{cor:lea-orth} this completes \cref{thm:lea-qde}.
+
+\subsection{The legs and the assembly of Theorem~A}
+\label{sec:lea-legs}
+
+Two formal facts are used. \emph{Extraction of a leg} \Lref{Lemma~4.31}: for $\Edge\in\bbC\fps{\psi,w}$ and $b\geq0$, in $\bbC\lser{\psi}$,
+\begin{equation}
+\label{eq:lea-legext}
+\coef{w^b}\Edge=\sum_{n=0}^{b}(-1)^n\psi^{-n-1}\coef{w^{b-n}}\big((\psi+w)\Edge\big).
+\end{equation}
+\emph{The leaf form of the singular covector} \Lref{Proposition~4.17}: $\brow(\psi)=\rho\vv_1(-\psi)$ (\cref{prop:lea-K1}) has the expansion $\brow=t^{-1}(0,E)+\sum_{k\geq0}t^k\brow^{(k)}$ with both components of $\brow^{(k)}$ in $\Lsp_{k+1}$.
+
+\begin{prop}[{\Lref{Proposition~4.32}: (L2) for $j=2$ and the regularity of $\Edge_{12}$}]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-L2}
+Assume \textup{(R)}. Then \textup{(i)} $\rho\Edge_{12}$ and $\Edge_{12}$ are $O(t^0)$, that is, every $\Edge_{12}(a,b)$ is regular at $t=0$ ((F3) for $\Edge_{12}$); and \textup{(ii)} for all $k\geq0$ and $b\geq0$, $\coef{t^k}(\rho f_{2,b})$ lies in $\Lsp_{k+1}$.
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+Put $\leaNtw(\psi,w)\coloneqq\rho\Pij_{12}(\psi,w)=-\langle\brow(\psi),\vv_2(-w)\rangle$; by \eqref{eq:set-edge}, $(\psi+w)\rho\Edge_{12}$ is the difference $\leaNtw(\psi,w)-\leaNtw(-w,w)$. (i) By (R) the only negative power of $t$ in $\leaNtw$ is $t^{-1}$, with coefficient $-\langle(0,E),\vv_2(-w;0)\rangle$, independent of $\psi$; it cancels in the difference. (ii) By \eqref{eq:lea-legext}, $\coef{t^k}(\rho f_{2,b})=\sum_{n\leq b}(-1)^n\psi^{-n-1}Y_{b-n}(\psi)$, where, by (R) and the leaf form of $\brow$, each $Y_m$ is a constant plus an element of $\Lsp_{k+1}$. The right side is a rational function of $\psi$ with at most simple poles at $E/j$, $j\leq k+1$, vanishing at $\infty$, whose apparent pole at $\psi=0$ cancels because the left side is a power series in $\psi$; by partial fractions (\cref{lem:set-leafid}) it lies in $\Lsp_{k+1}$.
+\end{proof}
+
+\emph{Transposition} \Lref{Proposition~4.34}. By \cref{cor:lea-orth}, $\Pij_{12}(-u,u)=0$, so $\Edge_{12}(z,w)=\Pij_{12}(z,w)/(z+w)$, and by the symmetry of the pairing $\Edge_{21}(z,w)=\Edge_{12}(w,z)$, that is, $\Edge_{21}(b,a)=\Edge_{12}(a,b)$. Hence $\Edge_{21}$ is regular at $t=0$, and an edge joining a singular vertex to a regular one gives the singular vertex the leg $f_{2,b}$ for either orientation; this is where Row~2 at the regular idempotent is needed. By (T) of \cref{lem:set-rings}, $\coef{t^k}f_{j,b}$ lies in $\Lsp_{k+1}$ as well, for $j\in\{1,2\}$ \Lref{Corollary~4.35}.
+
+\begin{proof}[Proof of Theorem~A (\cref{thm:int-leaf}) from the results above; {\Lref{Section~4.8}}]
+(F1): \cref{prop:lea-key} for $\Delta_1$ and $\rho$, \cref{lem:set-eig} for $\Delta_2$. (F2): \cref{cor:row-F2} and the orders $t^{-1}$, $t^0$ of the leaf form of $\brow$ at $\psi=-z$. (F3): $\Dil_1$ by \cref{thm:lea-L1}; $\Edge_{11}$ by the flow integrated from $t=0$ (\cref{thm:lea-flow}); $\Dil_2$, $\Edge_{22}$ by (R); $\Edge_{12}$ by \cref{prop:lea-L2}; $\Edge_{21}$ by the transposition. (L1): \cref{thm:lea-L1}. (L2): $j=1$ from \cref{thm:lea-L3} by (LAM1) of \cref{lem:set-leafid}, $j=2$ by \cref{prop:lea-L2}. (L3): \cref{thm:lea-L3}, and (T) for the powers $\rho^e$. Rationality in the weights is (P) of \cref{lem:set-rings}; the sharpness is discussed after \cref{thm:lea-closed}.
+\end{proof}
+
+\emph{Where the inputs enter} \Lref{Remark~4.37}. The analytic input (i) of \cref{sec:int-inputs} enters through the key formula of \cref{prop:lea-key}, hence in everything that uses $E/(E+z)$: (F2), (L1) at $t^0$, $\Kone=1$, (F3) for $\Edge_{11}$. Condition (ND) is used through $E\neq0$ (the leaf scale), $\alpha_1\wA\neq0$ (the non-degenerate Euler critical point), $\alpha_2\wB\neq0$ ($U_2(0)$ finite and non-zero, $\Delta_2(0)\neq0$) and $\epsilon_1\epsilon_2\neq0$ ($\eta$ invertible). The point $\cQ=0$ enters only through the definition of $\hnw$ (\cref{lem:ide-norm}).
+
+\begin{rmk}[{\Lref{Remark~4.2}: where the Calabi--Yau condition enters}]
+\label{rmk:lea-cy}
+No step of the proof of Theorem~A uses $E=\epsilon_1+\epsilon_2$: the frame-B rows do not involve $\epsilon_1,\epsilon_2$ (\cref{lem:set-hmult}), and $\Delta_i$, $\Edge_{ij}$ and the pairing carry $\epsilon_1\epsilon_2$ as an overall factor. Theorem~A therefore holds at every weight point of the five-torus with (ND), with $\bw\coloneqq(E,-\epsilon_1,-\epsilon_2)$ and $E\coloneqq\alpha_0+\alpha_1+\alpha_2$. The Calabi--Yau condition makes $\bw$ a sum-zero triple whose first weight is the leaf scale $E$, which is what the two cited theorems of \cite{LP2} (\cref{thm:reg-L,thm:reg-VI}) need: it is needed for the regularity theorem built on Theorem~A, not for Theorem~A itself.
+\end{rmk}
+
+\subsection{Closed forms, sharpness, and the case \texorpdfstring{$\alpha_0=0$}{alpha0 = 0}}
+\label{sec:lea-closed}
+
+\begin{thm}[{\Lref{Theorem~4.38}, part of \Lref{Theorem~4.4}: closed form of the dilaton leaf coefficients}]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-closed}
+Let $a_j^{(k)}$ be the leaf coefficients of \cref{thm:lea-L1}, with $a_1^{(0)}\coloneqq-E^2$ and $a_j^{(k)}\coloneqq0$ for $j>k+1$. Put $\Psh_k\coloneqq\prod_{i=1}^{k}\big((k+1)\alpha_2-iE\big)\big((k+1)\wA-iE\big)$ ($\Psh_0=1$), $\Cj_j\coloneqq\Psh_{j-1}/(j!\,(j-1)!\,E^{2j-4})$, $\zq\coloneqq\tau\re^{\dphi/E}=t+O(t^2)$ and, for $j\geq1$,
+\[
+\Aleaf_j(t)\coloneqq(-1)^j\,\Cj_j\,t^{-1}\zq(t)^j\,{}_2F_1\Bigl(\frac{j\wB}{E},\frac{j\alpha_1}{E};\,j;\,\tau\Bigr)=O(t^{j-1}).
+\]
+Then $a_j^{(k)}=\coef{t^k}\Aleaf_j$ for all $j\geq1$, $k\geq0$; equivalently $\rho\,\qt=E+\sum_{j\geq1}\Aleaf_j(t)\lf_j$, as formal series in $t$ with finitely many $j$ at each order.
+\end{thm}
+
+\begin{proof}[Sketch of proof]
+By \cref{thm:lea-L1}, $a_j^{(k)}=j\Res_{z=-E/j}\coef{t^k}(z\rho\,\rr_{0,1})$, and $z\rho\,\rr_{0,1}=(\tau/t)\frac{Ez}{E+z}\Ephi\sum_n\Fhyp_n\tau^n$ by the key formula of \cref{prop:lea-key}, $\Fhyp_n$ being the $\tau$-coefficients of $\Fhyp$. At $z=-E/j$, $j\geq2$, $\Fhyp_n$ has a simple pole exactly for $n\geq j-1$, from the factor $E+jz$ of its denominator; after the reindexing $n=j-1+m$ the residues sum to a constant times $\tau^{j-1}{}_2F_1(j\wB/E,j\alpha_1/E;j;\tau)$, and $\Ephi(-E/j)=\re^{j\dphi/E}$. For $j=1$ the pole is that of $Ez/(E+z)$.
+\end{proof}
+
+Inserting these series in the integrated flow of \cref{thm:lea-flow} gives every loop coefficient in closed form \Lref{Theorem~4.41}. \emph{Sharpness} \Lref{Corollaries~4.40 and~4.42}: the top coefficient is $a_{k+1}^{(k)}=(-1)^{k+1}\Cj_{k+1}$, so the top leaf $\lf_{k+1}$ occurs in $\coef{t^k}(\rho\qt)$ if and only if $\Psh_k\neq0$; and the coefficient of $\lf_i(\psi)\lf_l(\psi')$ in $\coef{t^k}(\rho^2\Edge_{11})$ with $(i-1)+(l-1)=k$ is non-zero if and only if $\Psh_{i-1}\Psh_{l-1}\neq0$. So the bounds of (L1) and (L3) are sharp at generic weights.
+
+\begin{cor}[{\Lref{Corollary~4.45}: $\alpha_0=0$}]\genusstatus{AI-proposed, unchecked}
+\label{cor:lea-a0}
+Let $\alpha_0=0$ and $\alpha_1\alpha_2E\epsilon_1\epsilon_2\neq0$ (then $\wA=\alpha_2$, $\wB=\alpha_1$, $E=\alpha_1+\alpha_2$), and put $\xc\coloneqq\alpha_1/\alpha_2$, $\kap\coloneqq\epsilon_1\epsilon_2\alpha_2^4/\alpha_1$. Let the superscript $\TFsup$ denote the frame-B objects at the fibrewise weight point $(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)=(0,\xc,1,\xc,1)$. Then, for $i,j\in\{1,2\}$ and all $t$,
+\begin{gather*}
+\rr_{0,i}(z;t)=\rr^{\TFsup}_{0,i}(z/\alpha_2;t),\qquad \rr_{1,i}(z;t)=\alpha_2\,\rr^{\TFsup}_{1,i}(z/\alpha_2;t),\qquad \Lv_i=\alpha_2\Lv_i^{\TFsup},\qquad \Delta_i=\kap\,\Delta_i^{\TFsup},\\
+\rho=\rho^{\TFsup},\qquad \Dil_i(d)=\alpha_2^{1-d}\Dil_i^{\TFsup}(d),\qquad \Edge_{ij}(m,n)=\kap\,\alpha_2^{-1-m-n}\,\Edge_{ij}^{\TFsup}(m,n),\qquad \lf_j(\psi)=\alpha_2^{-1}\lf_j^{\TFsup}(\psi/\alpha_2).
+\end{gather*}
+Consequently Theorem~A at $\alpha_0=0$ is Theorem~A at the fibrewise point $(0,\xc,1,\xc,1)$ read through these rescalings.
+\end{cor}
+
+\begin{proof}[Sketch of proof]
+At $\alpha_0=0$ the superpotential is $\alpha_2$ times the fibrewise one. The normalised expansions obey the rescaling rule $\Lnorm[\lambda f,1](z)=\Lnorm[f,1](z/\lambda)$ \Lref{Definition~3.7}, so $\rpt_{0,i}(z)={\rpt}^{\TFsup}_{0,i}(z/\alpha_2)$; likewise $h_{(\alpha_1,\alpha_2,-E)}(z)=h_{(\xc,1,-1-\xc)}(z/\alpha_2)$ for the frame-B twist. The pairing \eqref{eq:set-pairing} on covectors $(a_0,\alpha_2a_1)$ and the second form of \eqref{eq:set-Delta} scale by $\kap$.
+\end{proof}
+
+The direct proof of Theorem~A covers $\alpha_0=0$ as well: it never uses the point $\cQ=0$, and $\hnw$ enters it only through the multiset identity of \cref{lem:set-hmult}, whereas the description of $\hnw$ as the constant at $\cQ=0$ (\cref{lem:ide-norm}) needs $\alpha_0\neq0$. The rescaling to a fibrewise point is what \cref{cor:rig-3T} uses.

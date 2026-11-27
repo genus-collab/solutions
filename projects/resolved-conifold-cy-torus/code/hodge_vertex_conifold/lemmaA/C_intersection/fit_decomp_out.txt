@@ -1,0 +1,12 @@
+genus 2 r 1 k 1: IN SPAN, c_g = -1/1440, 1/20
+genus 2 r 2 k 1: NOT in span (15 monomials, 2 basis functions)
+genus 3 r 1 k 1: IN SPAN, c_g = 1/56700, -71/75600, 7/120
+genus 3 r 1 k 2: IN SPAN, c_g = -37/725760, 41/24192
+genus 3 r 2 k 1: NOT in span (36 monomials, 3 basis functions)
+genus 3 r 2 k 2: NOT in span (28 monomials, 2 basis functions)
+genus 4 r 1 k 1: IN SPAN, c_g = -59/108864000, 107/4536000, -179/151200, 1/15
+genus 4 r 1 k 2: IN SPAN, c_g = 299/145152000, -919/12096000, 1357/604800
+genus 4 r 1 k 3: IN SPAN, c_g = -83/34836480, 13/259200
+genus 4 r 2 k 1: NOT in span (66 monomials, 4 basis functions)
+genus 4 r 2 k 2: NOT in span (55 monomials, 3 basis functions)
+genus 4 r 2 k 3: NOT in span (45 monomials, 2 basis functions)

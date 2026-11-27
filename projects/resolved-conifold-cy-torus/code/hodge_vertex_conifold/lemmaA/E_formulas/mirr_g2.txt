@@ -1,0 +1,4 @@
+genus 2 R = {2} D = 1: all components 0
+genus 2 R = {3} D = 2 (control): non-zero components {0 1 2}
+genus 2 R = {2,2} D = 2 (control): non-zero components {0 1 2}
+SUMMARY genus 2: 1 irreducible points, 0 with a non-zero component; 2 control points (D = 2h-2), 2 non-zero; 0.1 s

@@ -1,0 +1,12 @@
+g 2 weights 7/5 -3/8 13/6 11/9 709/360 frame B seed 1
+  F_g(Q0 e^t) == P_g Li/(e1e2) + F_g(0), coefficients t^0..t^4: [True, True, True, True, True]  time 0.0
+g 3 weights 7/5 -3/8 13/6 11/9 709/360 frame B seed 1
+  F_g(Q0 e^t) == P_g Li/(e1e2) + F_g(0), coefficients t^0..t^4: [True, True, True, True, True]  time 0.2
+g 4 weights 7/5 -3/8 13/6 11/9 709/360 frame B seed 1
+  F_g(Q0 e^t) == P_g Li/(e1e2) + F_g(0), coefficients t^0..t^4: [True, True, True, True, True]  time 13.5
+g 2 weights 7/5 -3/8 13/6 11/9 709/360 frame WRONG seed 2
+  F_g(Q0 e^t) == P_g Li/(e1e2) + F_g(0), coefficients t^0..t^4: [True, True, True, True, True]  time 0.0
+g 3 weights 7/5 -3/8 13/6 11/9 709/360 frame PT seed 2
+  F_g(Q0 e^t) == P_g Li/(e1e2) + F_g(0), coefficients t^0..t^4: [True, True, True, True, True]  time 0.2
+g 3 weights -5/4 19/7 2/3 17/5 -533/420 frame B seed 5
+  F_g(Q0 e^t) == P_g Li/(e1e2) + F_g(0), coefficients t^0..t^4: [True, True, True, True, True]  time 0.2

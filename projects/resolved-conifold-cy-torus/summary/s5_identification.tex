@@ -1,0 +1,127 @@
+% s5_identification. Abridged Section 5 (identification of the graph sum with the potential); label prefix: ide.
+\section{Identification of the graph sum with the Gromov--Witten potential}
+\label{sec:ide}
+
+This section sketches the proof of Theorem~B (\cref{thm:int-ident}; \Lref{Proposition~5.1}). The weights are the generic point of $\TCY$; no specialisation and no analytic continuation in $\cQ$ is used. On the three-torus $\Tthree$ ($\alpha_0=0$), which contains the fibrewise torus $\TF$, the point $\cQ=0$ is not semisimple and the argument of this section does not apply directly \Lref{Remark~5.18}; that case is treated in \cref{sec:rig} by a ring map (\cref{lem:rig-3Tid}). The two roots of $\Pq$ are labelled here by their behaviour at $\cQ=0$ (\cref{lem:set-limits}(ii)): $U_+\to-\alpha_2/\alpha_0$ and $\ideQU\coloneqq\cQ U_-\to\alpha_0/\wB$, both in $\KCY\fps{\cQ}$; $i,j\in\{+,-\}$. No matching with the labels $1,2$ fixed at $\cQ=1$ is needed (\cref{lem:ide-terms}(iii)).
+
+Let $\Omega=(\Omega_{g,n})$ be the $\TCY$-equivariant Gromov--Witten classes of $Z$ (\cref{def:set-inv}), so that $\sF_g=\int_{\Mbar_g}\Omega_{g,0}$, and let $\ideV\coloneqq\KCY\ideone\oplus\KCY H$. By \Lref{Lemma~5.2}, which rests on \cite{GP99}, on \cite[App.~1~(iv)--(vi)]{CG07} and on the fundamental-class and splitting axioms of the virtual class, used in standard form, $\Omega$ is the $e_{\TCY}(R\pi_*f^*\Nb)^{-1}$-twisted theory of $\bbP^1$ in the sense of \cite[Section~1]{CG07}, a cohomological field theory with flat unit $\ideone$ over $\KCY\fps{\cQ}$ for the pairing $\eta(a,b)=\int_Zab$, whose inverse is the $\eta^{-1}$ of \cref{prop:set-frob}.
+
+\begin{lem}[{\Lref{Lemma~5.3}: the genus-zero potential}]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-g0}
+In the flat coordinates $t_0,t_1$ along $\ideone,H$, with $\cQ=\re^{t_1}$, the genus-zero potential is $\cF_0=\frac16\int_Z(t_0+t_1H)^3+\Li_3(\re^{t_1})/(\epsilon_1\epsilon_2)$; that is, $\GW_{0,d}=1/(d^3\epsilon_1\epsilon_2)$ for $d\geq1$ and $\langle H,H,H\rangle_{0,d}=d^3\GW_{0,d}=1/(\epsilon_1\epsilon_2)$. Consequently $H\qprod H=(\Lv_++\Lv_-)H-\Lv_+\Lv_-\ideone$ with $\Lv_++\Lv_-=E/\tau-\alpha_0$ and $\Lv_+\Lv_-=\alpha_1\alpha_2/\tau$, where $\Lv_\pm$ are the two eigenvalues of $H\qprod$.
+\end{lem}
+
+\begin{lem}[{\Lref{Lemma~5.4}: semisimplicity at $\cQ=0$}]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-ss}
+The eigenvalues $\Lv_\pm$ of $H\qprod$ lie in $\KCY\fps{\cQ}$, with $\Lv_+(0)=0$, $\Lv_-(0)=-\alpha_0$, and $\Lv_+-\Lv_-$ is a unit of $\KCY\fps{\cQ}$. The idempotents $\eid_\pm|_{\cQ=0}$ are the point classes of $p_\pm$. The $\Delta_i=1/\eta(\eid_i,\eid_i)$ are given by \eqref{eq:set-Delta}, and $\Delta_\pm(0)=\eul(\wts_\pm)$, both non-zero in $\KCY$. So $\Omega$ is semisimple over $\KCY\fps{\cQ}$, and the ratio $\Delta_+(0)/\Delta_-(0)=-\alpha_1\alpha_2/(\wA\wB)$ is a non-constant element of $\KCY$.
+\end{lem}
+
+\emph{Idea of the proofs.} The value of $\GW_{0,d}$ is the Aspinwall--Morrison formula \cite[p.~3]{FP00}, after localisation on the factor $\bbC^2$, and $\langle H,H,H\rangle_{0,d}=d^3\GW_{0,d}$ is the divisor equation of the twisted theory \cite[App.~1~(iv)]{CG07}; \cref{lem:ide-ss} is Hensel's lemma, as $H\qprod$ has characteristic polynomial $\Lv(\Lv+\alpha_0)$ modulo $\cQ$ and $\alpha_0\neq0$.
+
+% Hodge classes as an R-matrix action; Teleman's classification; flatness
+Let $\TFT$ be the semisimple topological field theory over $\KCY\fps{\cQ}$ with $\TFT_{g,n}(\eid_i^{\otimes n})=\Delta_i^{g-1}$ and vanishing mixed insertions. An $R$-matrix is a series $\Rm(z)=1+\Rm_1z+\cdots$ in $\End(\ideV)\fps z$ which is symplectic, $\eta(\Rm(z)a,\Rm(-z)b)=\eta(a,b)$; $\Rm.\TFT$ is the unit-preserving action of \cite[Definitions~2.2, 2.13]{PPZ15}. A scalar series $\exp(h)$, $h=\sum_{k\geq1}b_kz^{2k-1}$, acts in the same way on the trivial rank-one theory $\ideone$, for instance $h_{\mathsf{v}}$ of \eqref{eq:set-h}.
+
+\begin{lem}[{\Lref{Lemmas~5.5--5.7}: Hodge classes as an $R$-action; freeness}]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-mumford}
+\begin{enumerate}
+\item For all stable $(g,n)$, $\exp(h).\ideone=\exp\big(\sum_{k\geq1}b_k\frac{(2k)!}{B_{2k}}\mathrm{ch}_{2k-1}(\Hdg)\big)$, and $\Hg_{\mathsf{v}}=h_{\mathsf{v}}.\ideone$ for every multiset $\mathsf{v}$ of non-zero weights.
+\item $\mathrm{ch}_{2k-1}(\Hdg)\neq0$ on $\Mbar_k$ for $k\geq2$, and on $\Mbar_{k,1}$ for $k\geq1$.
+\item Let $\TFT$ be a semisimple topological field theory over a field of characteristic $0$ with $\TFT(\eid_i^{\otimes n})=\Delta_i^{g-1}$ (of any rank). If $\Rm$ is symplectic and $\Rm.\TFT=\TFT$, then $\Rm=1$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}[Sketch of proof]
+(i) Mumford's formula \cite[Section~1.1]{FP00}, written with markings, expresses $\mathrm{ch}_{2l-1}(\Hdg)$ by the translation, leg and edge terms of the infinitesimal action \cite[Prop.~2.14]{PPZ15}; Mumford's relation $c(\Hdg)c(\Hdg^\vee)=1$ \cite[(5.4), (5.5)]{Mum83} then identifies $\log\Hg_{\mathsf{v}}$ with the class attached to $\log h_{\mathsf{v}}$. (ii) On $\Mbar_k$, $\mathrm{ch}_{2k-1}(\Hdg)$ is a non-zero multiple of $\lambda_k\lambda_{k-1}$, and $\int_{\Mbar_k}\lambda_k\lambda_{k-1}\lambda_{k-2}\neq0$ by \cite[Theorem~4]{FP00}. (iii) The lowest coefficient $\Rm_m\neq0$ of $\Rm-1$ is diagonal in the idempotents, $m=2k-1$ is odd, and on $\Mbar_{k,1}$ it contributes a non-zero multiple of $(\Rm_m)_{ii}\,\mathrm{ch}_{2k-1}(\Hdg)$ to $(\Rm.\TFT)(\eid_i)$.
+\end{proof}
+
+\begin{prop}[{\Lref{Proposition~5.8}: existence and field of definition of $\Rm$}]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-teleman}
+There is a unique symplectic $\Rm\in\End(\ideV)\otimes\KCY\lser{\cQ}\fps{z}$ with $\Omega=\Rm.\TFT$.
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+The field $\KCY\lser{\cQ}$ embeds in $\bbC$, and there Teleman's classification \cite[(1.15), Theorem~(2), Prop.~8.7(ii)]{Tel12} gives a symplectic $\Rm$ with $\Omega=\Rm.\TFT$; the definitions and the group property \cite[Defs.~2.2, 2.5, 2.13 and Prop.~2.14]{PPZ15} hold over any field of characteristic $0$. Uniqueness is \cref{lem:ide-mumford}(iii) with the group property; as automorphisms of $\bbC$ over $\KCY\lser{\cQ}$ fix $\Omega$ and $\TFT$, it shows that $\Rm$ descends to $\KCY\lser{\cQ}$.
+\end{proof}
+
+Let $\fid_i=\Delta_i^{1/2}\eid_i$. The square roots lie in $\ideKt\fps{\cQ}$, where $\ideKt$ is $\KCY$ with the square roots of $\eul(\wts_\pm)$ adjoined; the field $\ideFz\coloneqq\ideKt\lser{\cQ}$ carries $\thQ=\cQ\,\dd/\dd\cQ=\dd/\dd t$, with constants $\ideKt$. Let $\Psi\colon\ideFz^2\to\ideV\otimes\ideFz$, $\mathbf{e}_i\mapsto\fid_i$, an isometry with $H\qprod\Psi=\Psi\ideLam$, $\ideLam\coloneqq\mathrm{diag}(\Lv_+,\Lv_-)$. The \emph{flatness equation} is
+\begin{equation}
+\label{eq:ide-flat}
+z\,\thQ\big(\Rm(z)\Psi\big)=\big(H\qprod\Rm(z)-\Rm(z)\,H\qprod\big)\Psi .
+\end{equation}
+
+\begin{lem}[{\Lref{Lemma~5.9}: ambiguity of flat symplectic solutions}]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-ambig}
+Let $\Rm_1,\Rm_2\in\End(\ideV)\otimes\ideFz\fps{z}$ be symplectic, with $\Rm_1(0)=\Rm_2(0)=1$, both solving \eqref{eq:ide-flat}. Then $\Rm_2=\Rm_1\Psi\exp\big(\mathrm{diag}\sum_{k\geq1}a_k^{(i)}z^{2k-1}\big)\Psi^{-1}$ with constants $a_k^{(i)}\in\ideKt$.
+\end{lem}
+
+\begin{prop}[{\Lref{Proposition~5.10}: flatness of $\Rm$}]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-flat}
+The $R$-matrix $\Rm$ of \cref{prop:ide-teleman} satisfies \eqref{eq:ide-flat}. In terms of the covectors $\vv_i\coloneqq\eid_i^*\circ\Rm^{-1}(-z)$, $\eid_i^*=\Delta_i\eta(\eid_i,\cdot)$, the equation reads $z\Dop_i\vv_i=(\Aop-\Lv_i)\vv_i$, with $\Dop_i$ as in \eqref{eq:set-Hrow} and $\Aop$ the transpose of the matrix of $H\qprod$, acting on covectors by $(\Aop a)(x)=a(H\qprod x)$.
+\end{prop}
+
+\begin{proof}[Sketch of proof of \cref{lem:ide-ambig,prop:ide-flat}]
+\emph{Ambiguity.} For $\ideZ\coloneqq\Psi^{-1}\Rm_1^{-1}\Rm_2\Psi$ the two equations give $z\thQ\ideZ=[\ideLam,\ideZ]$. Order by order in $z$, since $\Lv_+-\Lv_-$ is a unit, $\ideZ$ is diagonal with $\thQ$-constant entries; symplecticity makes their logarithms odd.
+
+\emph{Flatness.} Put $\Rinv=\Rm^{-1}$. On the moduli space $M_{g,n}$ of smooth curves only the edgeless graph survives, with the legs $\fid_i^*(\Rinv(\psi_l)x_l)$. In the push-forward of $\Omega_{g,n+1}(x,H)$ along the universal curve over $M_{g,n}$, the edgeless graph and the bubbles carrying the legs $l$ and $n+1$ replace $\Rinv(\psi_l)$ on leg $l$ by $\psi_l^{-1}[H\qprod,\Rinv(\psi_l)]$, up to terms with unchanged legs; by the divisor equation of the twisted theory \cite[App.~1~(iv)]{CG07} this push-forward is $\thQ\Omega_{g,n}(x)$. Hence the \emph{defect} $\Mdef(\psi)$, defined by $\thQ(\Psi^{-1}\Rinv)-\Psi^{-1}\psi^{-1}[H\qprod,\Rinv]=\Mdef\,\Psi^{-1}\Rinv$ and independent of $g$, satisfies at $n=2$ a relation in $H^*(M_{g,2})\otimes\ideFz$. By the stability range \cite[2.17--2.19, (2.15)]{Tel12}, as reported there from \cite{Loo96,MW07,Har85,Iva90}, the monomials in $\kappa_j$ ($j\geq1$), $\psi_1,\psi_2$ are linearly independent in $H^*(M_{g,2};\bbQ)$ in cohomological degree $<(g-1)/2$; letting $g$ grow gives $\Mdef(\psi)=\Mdef(0)$ and $\Delta_+^g\Mdef(0)_{+-}+\Delta_-^g\Mdef(0)_{-+}=0$ for every $g\geq2$. Now $\Mdef(0)$ is skew, and $\Delta_+(0)/\Delta_-(0)$ is a non-constant element of $\KCY$ (\cref{lem:ide-ss}), hence not a root of unity; so $\Mdef=0$. Taking $\eta$-adjoints gives \eqref{eq:ide-flat}, whose $i$-th column, lowered by $\eta$, is the equation for $\vv_i$.
+\end{proof}
+
+% The rows, the constants, frame B, and the proof of Theorem B
+\begin{lem}[{\Lref{Lemma~5.12}: normalisation constants at $\cQ=0$}]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-norm}
+The $z$-coefficients of $\rpt_{0,\pm}$ lie in $\KCY\fps{\cQ}$, and $\rpt_{0,+}(z;\cQ=0)=h_{(\alpha_2,-\wA,\alpha_0)}(z)$, $\rpt_{0,-}(z;\cQ=0)=h_{(-\alpha_0,-\alpha_1,\wB)}(z)$. Hence $h_{\wts_+}/\rpt_{0,+}(z;0)=h_{\wts_-}/\rpt_{0,-}(z;0)=\hnw$, $\nw=(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)$, the same scalar at both colours.
+\end{lem}
+
+Put $\rZ_{0,i}\coloneqq\hnw\rpt_{0,i}$, $\rZ_{1,i}\coloneqq(\Lv_i+z\Dop_i)\rZ_{0,i}$, $\vv^Z_i\coloneqq(\rZ_{0,i},\rZ_{1,i})$, and let $\RZ$ be the endomorphism with $\eid_i^*\circ\RZ^{-1}(-z)=\vv^Z_i$, $i=\pm$; then $\RZ(0)=1$.
+
+\begin{prop}[{\Lref{Proposition~5.13(ii)--(iv)}: the rows}]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-rows}
+\begin{enumerate}
+\item With $\Dz=z\,\dd/\dd t$ at fixed $U$, Euler's integration by parts is the identity in $U$ and $\cQ$
+\begin{equation}
+\label{eq:ide-euler}
+\idePF\,\re^{\cW/z}=\thU\big(\idekm\,\re^{\cW/z}\big),\quad \idePF\coloneqq(\cQ-1)\big[\Dz^2-(\Lv_++\Lv_-)\Dz+\Lv_+\Lv_-\big],\quad \idekm\coloneqq-z\alpha_1\cQ\,\frac{1-U}{1-\cQ U},
+\end{equation}
+and consequently $z\Dop_i\vv^Z_i=(\Aop-\Lv_i)\vv^Z_i$, as an identity in $\KCY(\Ccov)\fps{z}$ and in $\KCY\fps{\cQ}\fps{z}$.
+\item The rows lie in $\KCY\fps{\cQ}\fps{z}^2$, and $\vv^Z_i|_{\cQ=0}=h_{\wts_i}(z)\,(1,\Lv_i(0))$: that is, $\RZ|_{\cQ=0}=\mathrm{diag}(h_{\wts_+},h_{\wts_-})$ on the idempotents $\eid_\pm(0)$.
+\item $\langle\vv^Z_+(z),\vv^Z_-(-z)\rangle=0$ and $\langle\vv^Z_i(z),\vv^Z_i(-z)\rangle=\Delta_i$ for the pairing \eqref{eq:set-pairing}. Hence $\RZ$ is symplectic and solves \eqref{eq:ide-flat}, and $\Rm=\RZ\,\Psi\exp\big(\mathrm{diag}\sum_{k\geq1}a_k^{(i)}z^{2k-1}\big)\Psi^{-1}$ with constants $a_k^{(i)}\in\ideKt$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}[Sketch of proof of \cref{lem:ide-norm,prop:ide-rows}]
+\emph{Constants.} At $\cQ=0$ the derivatives $\cW_k(U_\pm)$, $k\geq2$, become those of a phase $a\log U+b\log(1-U)$ at its critical point, with $(a,b)=(-\alpha_2,\wA)$ at $U_+$ and, in the coordinate $\ideQU$, $(a,b)=(\alpha_0,\alpha_1)$ at $U_-$; in both cases $ab(a+b)\neq0$ in $\KCY$. By the Wick form \eqref{eq:set-rpt} the value of the row at $\cQ=0$ is the normalised expansion of this Beta phase, which is $h_{(-a,-b,a+b)}$ by \cref{lem:row-betaphase} (this is where Stirling's series enters).
+
+\emph{Rows.} (i) In the coordinate $\log U$ the row $\rpt_{0,i}$ is the normalised expansion of $\re^{\cW/z}$ with amplitude $1$ at $\log U_i$ (as in \cref{prop:row-wickrow}). By the rule (P2) of \cref{prop:row-calc}, applied with the parameter $t$ and the moving critical point $\log U_i$, the operator $z^{-1}(\Lv_i+z\Dop_i)$ acts on such expansions through $q\mapsto\de_tq+q\,\de_t\cW/z$ on the amplitudes. Hence $(\Lv_i+z\Dop_i)^2-(\Lv_++\Lv_-)(\Lv_i+z\Dop_i)+\Lv_+\Lv_-$ sends $\rpt_{0,i}$ to the expansion with amplitude $(\cQ-1)^{-1}\re^{-\cW/z}\idePF\re^{\cW/z}$, the amplitude of a total derivative by \eqref{eq:ide-euler}; it vanishes by (P3). The computation, made at complex weights with (ND), is transferred to $\KCY(\Ccov)$ by (P) of \cref{lem:set-rings}. (ii) follows from \cref{lem:ide-norm}. (iii) By (i) and the self-adjointness of $\Aop$, the first pairing satisfies a first-order linear equation which forces it to vanish order by order in $z$, and $\langle\vv^Z_i(z),\vv^Z_i(-z)\rangle/\Delta_i$ is independent of $\cQ$, with value $1$ at $\cQ=0$ by (ii). Then apply \cref{prop:ide-flat,lem:ide-ambig}.
+\end{proof}
+
+\begin{prop}[{\Lref{Proposition~5.14}: $\Rm=\RZ$}]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-const}
+The constants of \cref{prop:ide-rows}(iii) vanish: $\Rm=\RZ$. Consequently, for $g\geq2$, $\sF_g=\int_{\Mbar_g}\Omega_{g,0}$ is the point-frame graph sum for the rows $\vv^Z_i$, that is, the sum \eqref{eq:set-graphsum}, \eqref{eq:set-Gsum} with the vertex class $\Hg_{\bw}$ replaced by $1$ and the factors of \cref{def:set-factors} computed from the rows $\vv^Z_i$.
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+By \cref{prop:ide-rows}(ii), (iii), $\Rm|_{\cQ=0}=\mathrm{diag}(h_{\wts_p}\idesp_p)$ with $\idesp_p\coloneqq\exp\sum_ka_k^{(p)}z^{2k-1}$, so the $\eid_p$-component of $\Omega|_{\cQ=0}$ is $\Delta_p(0)^{g-1}((h_{\wts_p}\idesp_p).\ideone)_{g,n}$. But only constant maps contribute at $\cQ=0$, and the localisation formula \cite{GP99} on $\Mbar_{g,n}\times\{p_\pm\}$ gives $\Omega_{g,n}(\eid_p,\dots,\eid_p)|_{\cQ=0}=\eul(\wts_p)^{g-1}\Hg_{\wts_p}$, with $\Hg_{\wts_p}=h_{\wts_p}.\ideone$ (\cref{lem:ide-mumford}(i)). By the group property \cite[Prop.~2.14]{PPZ15}, $\idesp_p.\ideone=\ideone$. If $k$ were minimal with $a^{(p)}_k\neq0$, the degree-$(2k-1)$ part of $(\idesp_p.\ideone)_{k,1}$ would be a non-zero multiple of $\mathrm{ch}_{2k-1}(\Hdg)$, against \cref{lem:ide-mumford}(ii).
+\end{proof}
+
+\begin{prop}[{\Lref{Proposition~5.15}: the frame-B rows}]\genusstatus{AI-proposed, unchecked}
+\label{prop:ide-frameB}
+Let $\RB\coloneqq\RZ\hw^{-1}$ with $\bw=(E,-\epsilon_1,-\epsilon_2)$, whose rows are $\eid_i^*\circ\RB^{-1}(-z)=\hw(z)^{-1}\vv^Z_i=(\rr_{0,i},\rr_{1,i})$, the frame-B rows of \cref{def:set-rows}. Then, for $g\geq2$, $\sF_g$ is the Hodge-vertex graph sum \eqref{eq:set-Gsum} with vertex class $\Hg_{\bw}$ and the factors computed from the rows $(\rr_{0,i},\rr_{1,i})$.
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+By \cref{lem:ide-mumford}(i), $\Hg_{\bw}=\hw.\ideone$, and $\hw$ is a scalar symplectic $R$-matrix, so $\hw.\TFT=\Hg_{\bw}\otimes\TFT$. The group property \cite[Prop.~2.14]{PPZ15} gives $\RB.(\Hg_{\bw}\otimes\TFT)=(\RB\hw).\TFT=\RZ.\TFT=\Omega$, and the graph sum of \cref{prop:ide-const} applies with the vertex values $\Delta_i^{g_v-1}\Hg_{\bw}$; $\hw^{-1}\hnw=h_{(\alpha_1,\wA,-E)}$ by \cref{lem:set-hmult}.
+\end{proof}
+
+\begin{lem}[{\Lref{Lemma~5.16}: description of the coloured terms}]\genusstatus{AI-proposed, unchecked}
+\label{lem:ide-terms}
+Let $\Ccov$ be the double cover $\ydc^2=\Disc(\cQ)$, with function field $\KCY(\Ccov)=\QA$ (\cref{lem:set-disc,def:set-QA}); the two colours are the two roots of $\Pq$, exchanged by the deck involution. Then:
+\begin{enumerate}
+\item every $z$-coefficient of $\rr_{0,i}$, $\rr_{1,i}$, every $\Dil_i(d)$, every $\Edge_{ij}(a,b)$ and $\Delta_i^{\pm1}$ is an element of $\KCY(\Ccov)$, whose denominators are products of powers of $\cW_2(U_i)$, $1-U_i$, $1-\cQ U_i$, $\ydc$, $\wB\cQ$ and the constants $\alpha_1,\wA,\epsilon_1,\epsilon_2,E$;
+\item hence, for $g\geq2$, each coloured term $\GCont(\Gamma,\col)$ is an element of $\KCY(\Ccov)$, regular over every $\cQ\notin\{0,1,\infty\}$ with $\Disc(\cQ)\neq0$;
+\item the factors of colour $2$ are the same expressions as those of colour $1$ evaluated at the other root, so the colour sum $\sum_{\col}\GCont(\Gamma,\col)$ is invariant under the deck involution and lies in $\KCY(\cQ)$;
+\item the two points of $\Ccov$ over $\cQ=0$ are unramified, and the expansion of every coloured term at either of them lies in $\KCY\fps{\cQ}$; so the total $\Gsum_g$ is regular at $\cQ=0$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}[Sketch of proof of \cref{lem:ide-terms} and of Theorem~B]
+By \cref{prop:ide-teleman,prop:ide-flat,prop:ide-rows,prop:ide-const,prop:ide-frameB}, $\sF_g=\int_{\Mbar_g}\Omega_{g,0}$ is the frame-B sum $\Gsum_g$, an identity in $\KCY\fps{\cQ}$ whose left side is $\sum_{d\geq0}\GW_{g,d}\cQ^d$ by definition. In \cref{lem:ide-terms} the listed denominators vanish, at finite $\cQ$, only over $\cQ\in\{0,1\}$ or $\Disc=0$, the scalars $\hnw$, $\hw^{-1}$ are the same at both colours, and (iv) is \cref{prop:ide-rows}(ii). So the colour sum lies in $\KCY(\cQ)$, is regular at $\cQ=0$ and has this expansion there.
+\end{proof}

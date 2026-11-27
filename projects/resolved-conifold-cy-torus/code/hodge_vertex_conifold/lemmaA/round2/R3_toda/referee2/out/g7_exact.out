@@ -1,0 +1,5 @@
+# exact genus-7 points: (13) (14) (2,13) (2,14)
+P_2 G=7 eps=0 R=(13) [R+2: D=13, excess -1]: zero at all 22 rational points (identity in tau)
+P_2 G=7 eps=1 R=(13) [R+2: D=13, excess -1]: zero at all 22 rational points (identity in tau)
+P_2 G=7 eps=0 R=(14) [R+2: D=14, excess -2]: zero at all 22 rational points (identity in tau)
+P_2 G=7 eps=1 R=(14) [R+2: D=14, excess -2]: zero at all 22 rational points (identity in tau)

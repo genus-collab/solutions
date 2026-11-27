@@ -1,0 +1,65 @@
+ok    C1 x=2 tau=5/8: U1 = 3/4 is the singular root of Q x U^2 + Q (1-x) U - 1
+ok    C1 W2(U1) = -16, (1 - tau s*)^2 phi''(s*)/tau^2 = -16, -delta/(x tau^2 s*^2) = -16
+ok    C1 W2(U1) = U1^2 phi''_tau(s*)/tau^2 = -delta/(x tau^2 s*^2)
+ok    C1 x=2 tau=5/8: Wick row in y = log U equals N = (1 - tau s*) Lnorm[phi_tau,(1-tau s)^-1; s*], z^0..z^5: 1, -97/512, 20809/524288, 1164725/268435456, -9057782181/549755813888, 4460258014737/281474976710656
+ok    C1 x=1/3 tau=7/12: U1 = 1/2 is the singular root of Q x U^2 + Q (1-x) U - 1
+ok    C1 W2(U1) = -12, (1 - tau s*)^2 phi''(s*)/tau^2 = -12, -delta/(x tau^2 s*^2) = -12
+ok    C1 W2(U1) = U1^2 phi''_tau(s*)/tau^2 = -delta/(x tau^2 s*^2)
+ok    C1 x=1/3 tau=7/12: Wick row in y = log U equals N = (1 - tau s*) Lnorm[phi_tau,(1-tau s)^-1; s*], z^0..z^5: 1, -751/2592, 793321/13436928, 11020713425/104485552128, -300579555542063/1083306204463104, 859680226350166333/2807929681968365568
+ok    C2 x=2: phi_0''(1/c) = -c^3/x
+ok    C2 x=2: Lnorm[phi_0, 1; 1/c] = h_w(z) c/(c+z) for z^0..z^7 (z^1: -17/72, z^2: 865/10368)
+ok    C2 x=1/3: phi_0''(1/c) = -c^3/x
+ok    C2 x=1/3: Lnorm[phi_0, 1; 1/c] = h_w(z) c/(c+z) for z^0..z^7 (z^1: -23/48, z^2: 1825/4608)
+ok    C2 x=5: phi_0''(1/c) = -c^3/x
+ok    C2 x=5: Lnorm[phi_0, 1; 1/c] = h_w(z) c/(c+z) for z^0..z^7 (z^1: -29/360, z^2: 4441/259200)
+ok    C2 x=-3/7: phi_0''(1/c) = -c^3/x
+ok    C2 x=-3/7: Lnorm[phi_0, 1; 1/c] = h_w(z) c/(c+z) for z^0..z^7 (z^1: -289/144, z^2: 147025/41472)
+ok    C3 x=2: x tau s*^2 - c s* + 1 = 0 (mod tau^5)
+ok    C3 x=2: phi_tau'(s*) = 0 (mod tau^5)
+ok    C3 x=2: phi''_tau(s*) = -delta/(x s*^2 (1 - tau s*)^2)
+ok    C3 x=2: alg = (1 - tau s*) (phi''_tau(s*)/phi''_0(1/c))^(1/2) = (delta/c)^(1/2)/(c s*)
+ok    C3 x=2: s*/(1 - tau s*) = (1 - x s*)/(1 - tau)
+ok    C3 x=2: [tau^k] (A F Exp[-dphi/z] alg) has no negative powers of z (k < 5)
+ok    C3 x=2: N(z,tau) = A(z) F(z,tau) Exp[-dphi/z] alg(tau) mod (tau^5, z^5)
+ok    C3 x=2: frame-B row h_w^-1 N: [tau^0] = c/(c+z), [tau^1] = (1-x)^2 z/(c (c+z)(c+2z)) to z^4
+ok    C3 x=1/3: x tau s*^2 - c s* + 1 = 0 (mod tau^5)
+ok    C3 x=1/3: phi_tau'(s*) = 0 (mod tau^5)
+ok    C3 x=1/3: phi''_tau(s*) = -delta/(x s*^2 (1 - tau s*)^2)
+ok    C3 x=1/3: alg = (1 - tau s*) (phi''_tau(s*)/phi''_0(1/c))^(1/2) = (delta/c)^(1/2)/(c s*)
+ok    C3 x=1/3: s*/(1 - tau s*) = (1 - x s*)/(1 - tau)
+ok    C3 x=1/3: [tau^k] (A F Exp[-dphi/z] alg) has no negative powers of z (k < 5)
+ok    C3 x=1/3: N(z,tau) = A(z) F(z,tau) Exp[-dphi/z] alg(tau) mod (tau^5, z^5)
+ok    C3 x=1/3: frame-B row h_w^-1 N: [tau^0] = c/(c+z), [tau^1] = (1-x)^2 z/(c (c+z)(c+2z)) to z^4
+ok    C4 point 1: Gauss_z[e^(phi/z) (1-tau s)^-1] e^(-phi/z) = -(1/z+1)(k' + phi' k/z), k = s(1-s)(1-tau s)^-2, at (x,s,tau,z) = (9/4,7/3,-7/3,9/5)
+ok    C4 point 2: Gauss_z[e^(phi/z) (1-tau s)^-1] e^(-phi/z) = -(1/z+1)(k' + phi' k/z), k = s(1-s)(1-tau s)^-2, at (x,s,tau,z) = (1/2,-3/7,-7/4,-2/3)
+ok    C4 point 3: Gauss_z[e^(phi/z) (1-tau s)^-1] e^(-phi/z) = -(1/z+1)(k' + phi' k/z), k = s(1-s)(1-tau s)^-2, at (x,s,tau,z) = (9/4,2/3,7/6,5/6)
+ok    C4 point 4: Gauss_z[e^(phi/z) (1-tau s)^-1] e^(-phi/z) = -(1/z+1)(k' + phi' k/z), k = s(1-s)(1-tau s)^-2, at (x,s,tau,z) = (-1/3,-1/2,-1/3,3/2)
+ok    C4 point 5: Gauss_z[e^(phi/z) (1-tau s)^-1] e^(-phi/z) = -(1/z+1)(k' + phi' k/z), k = s(1-s)(1-tau s)^-2, at (x,s,tau,z) = (-9/2,-9/5,2,1/2)
+ok    C4 point 6: Gauss_z[e^(phi/z) (1-tau s)^-1] e^(-phi/z) = -(1/z+1)(k' + phi' k/z), k = s(1-s)(1-tau s)^-2, at (x,s,tau,z) = (-9/4,1/4,2/5,-1/2)
+      C4: 6 valid points tested (10 draws)
+ok    C5 x=2 tau=5/8: eikonal = 0, P = delta = 2, R = -9/5 = -x(c+3delta)/(delta(c+delta)), s*' = x s*^2/delta
+ok    C5 x=2 tau=5/8: (log alg)' = R/P, i.e. Phi_0 = 1/alg solves the first transport equation
+ok    C6 x=2: U1 = 1 - tau s* solves Q x U^2 + Q (1-x) U - 1 = 0 (Q = 1/(1-tau))
+ok    C6 x=2: w_k = tau^k W_k(U1) is analytic at tau = 0 with w_k(0) = (-1)^k phi_0^(k)(1/c), k = 2..12
+ok    C6 x=2: w_2 = -delta/(x s*^2), i.e. (1.5)
+ok    C6 x=2 tau=5/8: (1.9) equals tau^k W_k(U1) computed from W_k = -x P_{k-1}(1/(1-QU)) - P_{k-1}(1/(1-U)), k = 2..12
+ok    C6 x=2: d^k/dytilde^k (phi_tau o sigma_tau)(ytilde1) = (-tau)^k W_k(U1) = (-1)^k w_k for k = 1..12 (k = 1: 0)
+ok    C6 x=2: code's Wick row wickZ(W_k(U1)) = wickZ(w_k) equals N(z, tau) mod (tau^7, z^5), tau = 0 included
+ok    C6 x=2: r^pt_{0,1}(z; 0) = wickZ(w_k(0)) = A(z) = h_w(z) c/(c+z), z^0..z^4
+ok    C6 x=2: uniform coordinate: Lnorm[phi_tau o sigma_tau, 1; ytilde1] = N(z, tau) mod (tau^7, z^5)
+ok    C6 x=1/3: U1 = 1 - tau s* solves Q x U^2 + Q (1-x) U - 1 = 0 (Q = 1/(1-tau))
+ok    C6 x=1/3: w_k = tau^k W_k(U1) is analytic at tau = 0 with w_k(0) = (-1)^k phi_0^(k)(1/c), k = 2..12
+ok    C6 x=1/3: w_2 = -delta/(x s*^2), i.e. (1.5)
+ok    C6 x=1/3: d^k/dytilde^k (phi_tau o sigma_tau)(ytilde1) = (-tau)^k W_k(U1) = (-1)^k w_k for k = 1..12 (k = 1: 0)
+ok    C6 x=1/3: code's Wick row wickZ(W_k(U1)) = wickZ(w_k) equals N(z, tau) mod (tau^7, z^5), tau = 0 included
+ok    C6 x=1/3: r^pt_{0,1}(z; 0) = wickZ(w_k(0)) = A(z) = h_w(z) c/(c+z), z^0..z^4
+ok    C6 x=1/3: uniform coordinate: Lnorm[phi_tau o sigma_tau, 1; ytilde1] = N(z, tau) mod (tau^7, z^5)
+ok    C6 x=-5/2: U1 = 1 - tau s* solves Q x U^2 + Q (1-x) U - 1 = 0 (Q = 1/(1-tau))
+ok    C6 x=-5/2: w_k = tau^k W_k(U1) is analytic at tau = 0 with w_k(0) = (-1)^k phi_0^(k)(1/c), k = 2..12
+ok    C6 x=-5/2: w_2 = -delta/(x s*^2), i.e. (1.5)
+ok    C6 x=-5/2: d^k/dytilde^k (phi_tau o sigma_tau)(ytilde1) = (-tau)^k W_k(U1) = (-1)^k w_k for k = 1..12 (k = 1: 0)
+ok    C6 x=-5/2: code's Wick row wickZ(W_k(U1)) = wickZ(w_k) equals N(z, tau) mod (tau^7, z^5), tau = 0 included
+ok    C6 x=-5/2: r^pt_{0,1}(z; 0) = wickZ(w_k(0)) = A(z) = h_w(z) c/(c+z), z^0..z^4
+ok    C6 x=-5/2: uniform coordinate: Lnorm[phi_tau o sigma_tau, 1; ytilde1] = N(z, tau) mod (tau^7, z^5)
+
+all checks passed

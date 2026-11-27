@@ -1,0 +1,2 @@
+g 5 weights 2/9 11/4 -7/6 3/5 217/180 frame B seed 11
+  F_g(Q0 e^t) == P_g Li/(e1e2) + F_g(0), coefficients t^0..t^4: [True, True, True, True, False]  time 1314.2

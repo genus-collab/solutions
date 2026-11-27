@@ -1,0 +1,6 @@
+h=2 R=(2): Lagrange form = 0, Xi = 0 ok
+h=2 R=(3): Lagrange form = 1367/186624, Xi = 1367/186624 ok
+h=2 R=(2,2): Lagrange form = 2075/62208, Xi = 2075/62208 ok
+h=3 R=(2): Lagrange form = 0, Xi = 0 ok
+h=3 R=(3): Lagrange form = 0, Xi = 0 ok
+h=3 R=(5): Lagrange form = 205027/47029248, Xi = 205027/47029248 ok

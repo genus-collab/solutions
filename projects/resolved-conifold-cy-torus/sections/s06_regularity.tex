@@ -1,0 +1,377 @@
+% s06_regularity. Section file; new macros at the top; label prefix: reg.
+% Local macros (used in this section only):
+\providecommand{\regbra}[2]{\langle #1\mid #2\rangle}      % \regbra{f}{\msU}: one extra insertion f(\psi_0)
+\providecommand{\regD}{\dg}                                  % total leaf degree at a vertex, \regD_v
+\section{Regularity at the conifold point and the polar part}
+\label{sec:reg}
+
+This section proves Theorem~C of the introduction (\cref{thm:int-reg}) in the form of \cref{cor:reg-main}. It combines three inputs: the leaf structure of \cref{thm:lea-main} (Theorem~A), which gives the regularity properties (F1), (F3) and the leaf memberships (L1)--(L3) of every frame-B factor to all orders in $t$; the vanishing theorem for the Hodge integrals $\Xiz_h(\msM)$ of \cref{def:set-fpot}, cited from the companion paper as \cref{thm:reg-L}; and the value of the single integral $\ZZ[g,0]$, cited from the companion paper as \cref{thm:reg-VI}. Everything up to and including \cref{thm:reg-main} and parts (a), (b) of \cref{cor:reg-main} is a statement about the decoration sum $\GCont(\Gamma,\col)$ of \cref{def:set-graphsum}, as defined; the identification of the graph sum $\Gsum_g$ with the potential $\sF_g$ (\cref{prop:ide-main}) is used only in the second half of \cref{cor:reg-main}(c), and the proof of regularity and of the value of the pole does not depend on it. As a statement about the decoration sum, Theorem~C therefore rests on Theorem~A and on the two cited theorems of \cite{LP2}, and on nothing else. \draftnote{LP2 numbering provisional.}
+
+The scope is the Calabi--Yau torus $\TCY$, at the generic point (field $\KCY$) or at any weight point with (ND) of \cref{def:set-ND} (field $\bbC$); every statement about a graph is per colouring, and every identity is one of formal series in $z$, $w$, $\psi$ to all orders in $t$. Throughout, $g\geq 2$ is the genus of the graph sum and $h\geq 2$ the genus of a vertex. We write $\RRing\coloneqq\KCY\fps{t}$ at the generic point and $\RRing\coloneqq\bbC\fps{t}$ at a weight point.
+
+\emph{Regularity at $t=0$.} By \cref{def:set-graphsum} and \cref{lem:set-rings}, the decoration sum $\GCont(\Gamma,\col)$ of a coloured stable graph is a finite sum (the decorations being bounded by the dimension of the moduli spaces) of products of coefficients of the frame-B factors $\Delta_{\col_v}^{g_v-1}$, $\Dil_{\col_v}(d)$, $\Edge_{\col_v\col_{v'}}(a,b)$, each of which is a Laurent series in $t$ with coefficients in $\KCY$ (in $\bbC$ at a weight point), by the passage (T) between $\tau$-orders and $t$-orders of \cref{lem:set-rings}. We say that $\GCont(\Gamma,\col)$ is \emph{regular at $t=0$ after summing over decorations} if this Laurent series in $t$ has no negative powers. Its \emph{polar part} is the sum of its terms of negative degree in $t$.
+
+\subsection{The Hodge side: domain, dilaton homogeneity, range of genera}
+\label{sec:reg-hodge}
+
+We use the objects of \cref{def:set-fpot}: for $h\geq 2$ the class $\Hg_{\bw}=\prod_{a=1}^3\Lamv(\bw_a)/\bw_a^{h}$ with $\bw=(E,-\epsilon_1,-\epsilon_2)$, the base-point derivatives $\dbase^s$, the neighbourhood $\Dom=\qo+t\RRing\fps{\psi}$ of $\qo$, the derivatives $\dd^n\Fpot_h(q)[f_1,\dots,f_n]$ for $q\in\Dom$, the dilaton-shifted form, and the numbers $\Xiz_h(\msU)$, $\dg(\msU)=\sum_i(j_i-1)$, $J_{\msU}=\sum_ij_i$, $\ZZ[h,n]=\Xiz_h(1^n)$, so that $\ZZ[h,0]=\Fpot_h(\qo)$. Recall $\lf_j=1/(E-j\psi)$, $\qo=E-E^2\lf_1$ and $\Tdil=-\psi^2/(E-\psi)=\qo+\psi$. The class $\Hg_{\bw}$ is pulled back along the forgetful maps, so the string and dilaton equations hold for it; this is the only property of $\Hg_{\bw}$ used in this subsection and in the next, and it holds for every triple $\bw$. The dilaton series of the singular idempotent, $\qt(\psi)=\sum_{d\geq 1}\Dil_1(d)\psi^d=-\psi\,\rr_{0,1}(-\psi;t)$ (\cref{def:set-factors}), lies in $\Dom$: its coefficients lie in $\RRing$ and $\qt|_{t=0}=\qo$, by (F3) and by remark~(iv) of \cref{thm:lea-L1}. Since $\rho\in 1+t\RRing$ by (F1) of \cref{thm:lea-main}, also $\rho\,\qt\in\Dom$, although its $\psi$-coefficient is $-\rho$ rather than $-1$; this is why the domain $\Dom$, and not only the dilaton-shifted form, has to be used. At the regular idempotent, $\qt^{(2)}|_{t=0}=-\psi\,\rr_{0,2}(-\psi;0)$ is not $\qo$ (\cref{prop:lea-regrows}), so $\qt^{(2)}\notin\Dom$; there only the dilaton-shifted form is used, and nothing is rescaled.
+
+\begin{lem}[Dilaton homogeneity on $\Dom$]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-H0}
+Let $h\geq 2$, $q\in\Dom$, and let $\nu\in 1+t\RRing$ be independent of $\psi$. Then $\nu q\in\Dom$, and for $f_1,\dots,f_n\in\RRing\fps{\psi}$,
+\[
+\dd^n\Fpot_h(\nu q)[f_1,\dots,f_n]=\nu^{2-2h-n}\,\dd^n\Fpot_h(q)[f_1,\dots,f_n],
+\]
+equivalently
+\begin{equation}
+\label{eq:reg-H0}
+\dd^n\Fpot_h(q)[f_1,\dots,f_n]=\nu^{2h-2}\,\dd^n\Fpot_h(\nu q)[\nu f_1,\dots,\nu f_n].
+\end{equation}
+\end{lem}
+
+Only $\nu=\rho$ is used below.
+
+\begin{proof}
+That $\nu q\in\Dom$ is immediate: $\nu q=\qo+\upsilon+(\nu-1)q$ with $(\nu-1)q\in t\RRing\fps{\psi}$.
+
+\emph{Step 1 (base point).} Let $\mathsf{b}_1,\dots,\mathsf{b}_s\in\RRing\fps{\psi}$, and let
+\[
+\mathsf{a}_m\coloneqq\frac{1}{m!}\int_{\Mbar_{h,s+m}}\Hg_{\bw}\prod_{i=1}^s\mathsf{b}_i(\psi_i)\prod_{k=1}^{m}\Tdil(\psi_{s+k})
+\]
+be the summand of $\dbase^s(\mathsf{b}_1,\dots,\mathsf{b}_s)$ with $m$ insertions of $\Tdil$. The dilaton equation gives
+\[
+\int_{\Mbar_{h,s+m+1}}\Hg_{\bw}\,\psi_{s+m+1}\prod_{i}\mathsf{b}_i(\psi_i)\prod_{k\leq m}\Tdil(\psi_{s+k})=(2h-2+s+m)\int_{\Mbar_{h,s+m}}\Hg_{\bw}\prod_i\mathsf{b}_i(\psi_i)\prod_{k\leq m}\Tdil(\psi_{s+k}).
+\]
+Since $\qo=\Tdil-\psi$, the insertion of $\qo$ in the last slot splits into an insertion of $\Tdil$, which turns the summand with $m$ insertions of $\Tdil$ into $(m+1)\mathsf{a}_{m+1}$, and an insertion of $-\psi$, which gives $-(2h-2+s+m)\mathsf{a}_m$. Reindexing the first sum,
+\[
+\dbase^{s+1}(\mathsf{b}_1,\dots,\mathsf{b}_s,\qo)=\sum_{m\geq 0}\big[m-(2h-2+s+m)\big]\mathsf{a}_m=(2-2h-s)\,\dbase^s(\mathsf{b}_1,\dots,\mathsf{b}_s).
+\]
+The dependence on $m$ cancels. (At $s=0$ this reads $E^2\Xiz_h(0)-E^2\Xiz_h(1)=(2-2h)\ZZ[h,0]$, which is the sum of the identities of \cref{rmk:reg-L0} and \cref{lem:reg-C} below.)
+
+\emph{Step 2 (Euler identity on $\Dom$).} Let $q=\qo+\upsilon$ with $\upsilon\in t\RRing\fps{\psi}$, and abbreviate $f=(f_1,\dots,f_n)$. By the definition of $\dd^{n+1}\Fpot_h$ and Step~1 with $s=n+r$,
+\begin{align*}
+\dd^{n+1}\Fpot_h(q)[f,q]
+&=\sum_{r\geq 0}\frac{1}{r!}\Big[\dbase^{n+r+1}(f,\upsilon^{r},\qo)+\dbase^{n+r+1}(f,\upsilon^{r+1})\Big]\\
+&=\sum_{r\geq 0}\frac{1}{r!}(2-2h-n-r)\,\dbase^{n+r}(f,\upsilon^{r})+\sum_{r\geq 0}\frac{1}{r!}\,\dbase^{n+r+1}(f,\upsilon^{r+1})\\
+&=(2-2h-n)\,\dd^n\Fpot_h(q)[f],
+\end{align*}
+because, after the reindexing $r\to r-1$ in the last sum, the terms carrying the factor $r$ in the first sum cancel against it. Here $\upsilon^r$ stands for $r$ slots filled with $\upsilon$.
+
+\emph{Step 3 (integration).} Put $\mu\coloneqq\nu-1\in t\RRing$. Let $\mathsf{r}$ be a formal variable, $q_{\mathsf{r}}\coloneqq(1+\mathsf{r}\mu)q$, and $\mathsf{G}(\mathsf{r})\coloneqq\dd^n\Fpot_h(q_{\mathsf{r}})[f]$. Each $t$-coefficient of $\mathsf{G}$ is a polynomial in $\mathsf{r}$, because at fixed $t$-order only finitely many $r$ contribute to the Taylor sum. The Taylor form of the definition gives $\dd\mathsf{G}/\dd\mathsf{r}=\mu\,\dd^{n+1}\Fpot_h(q_{\mathsf{r}})[f,q]$, and Step~2 at the point $q_{\mathsf{r}}=(1+\mathsf{r}\mu)q$ of $\Dom$ gives
+\[
+(1+\mathsf{r}\mu)\,\frac{\dd\mathsf{G}}{\dd\mathsf{r}}=\mu\,(2-2h-n)\,\mathsf{G}.
+\]
+The solution of this equation in $\RRing\fps{\mathsf{r}}$ with value $\mathsf{G}(0)$ at $\mathsf{r}=0$ is unique (compare the coefficients of $\mathsf{r}^k$, which is possible in characteristic $0$), so $\mathsf{G}(\mathsf{r})=(1+\mathsf{r}\mu)^{2-2h-n}\mathsf{G}(0)$. Put $\mathsf{r}=1$, which is legitimate since each $t$-coefficient is a polynomial in $\mathsf{r}$. This is the first form of the statement; the second follows by replacing $f_i$ by $\nu f_i$ and using multilinearity.
+\end{proof}
+
+\begin{lem}[Range of genera]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-range}
+Let $\Gamma$ be a connected stable graph of genus $g$, without legs, with at least one edge. Then $g_v\leq g-1$ for every vertex $v$. Consequently \cref{thm:reg-main}(a) uses $\Mirr(h)$ only for $2\leq h\leq g-1$, and at $g=2$ a graph with an edge has no vertex of genus $\geq 2$ at all.
+\end{lem}
+
+\begin{proof}
+If $h^1(\Gamma)\geq 1$ this follows from $g=h^1(\Gamma)+\sum_vg_v$. If $\Gamma$ is a tree with at least two vertices, it has at least two vertices of valence $1$, each of genus $\geq 1$ by stability, so no vertex carries all of $g$.
+\end{proof}
+
+The stability count concerns half-edges only: $\Gsum_g$ has no external markings, and the legs of step~(ii) of the proof of \cref{thm:reg-main} appear only after the graph has been fixed. The single-vertex graph does need $h=g$.
+
+\subsection{String and dilaton identities}
+\label{sec:reg-string}
+
+For $h\geq 2$, a multiset $\msU=\{j_1,\dots,j_r\}$ of integers and a series $f\in\RRing\fps{\psi}$, write
+\[
+\regbra{f}{\msU}\coloneqq\sum_{m\geq 0}\frac{1}{m!}\int_{\Mbar_{h,1+r+m}}\Hg_{\bw}\;f(\psi_0)\prod_{i=1}^{r}\lf_{j_i}(\psi_i)\prod_{k=1}^{m}\Tdil(\psi_{r+k}),
+\]
+one extra insertion in the integrals defining $\Xiz_h(\msU)=\dbase^r(\lf_{j_1},\dots,\lf_{j_r})$. The string equation, valid since $h\geq 2$ and $\Hg_{\bw}$ is pulled back along the forgetful map, removes an insertion of $1$ and acts on a series $f$ at another marking by $f\mapsto(f-f(0))/\psi$. On a leaf this gives
+\begin{equation}
+\label{eq:reg-S}
+\frac{\lf_j-\lf_j(0)}{\psi}=\frac{1}{\psi}\Big(\frac{1}{E-j\psi}-\frac1E\Big)=\frac{j}{E}\,\lf_j,
+\qquad
+\frac{\Tdil-\Tdil(0)}{\psi}=\frac{\Tdil}{\psi}=-\frac{\psi}{E-\psi}=-\psi\lf_1 .
+\end{equation}
+
+\begin{lem}[String identity]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-string}
+For $h\geq 2$ and every multiset $\msU$ of integers, $\Xiz_h(1,\msU)=(J_{\msU}/E^2)\,\Xiz_h(\msU)$. Iterating,
+\[
+\Xiz_h(1^p,\msU)=\prod_{i=0}^{p-1}(J_{\msU}+i)\cdot E^{-2p}\,\Xiz_h(\msU).
+\]
+\end{lem}
+
+\begin{proof}
+By (LAM2) of \cref{lem:set-leafid} at $j=1$, $\psi\lf_1=E\lf_1-1$, that is, $\lf_1=E^{-1}(1+\psi\lf_1)$. Hence $\Xiz_h(1,\msU)=E^{-1}\big[\regbra{1}{\msU}+\regbra{\psi\lf_1}{\msU}\big]$. Apply the string equation to the insertion $1$ in $\regbra{1}{\msU}$: by \eqref{eq:reg-S} each probe $\lf_{j_i}$ contributes $(j_i/E)$ times the same integral without the extra marking, and each of the $m$ dilaton leaves contributes an integral in which one $\Tdil$ is replaced by $-\psi\lf_1$; the factor $m/m!=1/(m-1)!$ makes the sum of the latter over $m$ equal to $-\regbra{\psi\lf_1}{\msU}$. So
+\[
+\regbra{1}{\msU}=\frac{J_{\msU}}{E}\,\Xiz_h(\msU)-\regbra{\psi\lf_1}{\msU},
+\]
+and the second term cancels in $\Xiz_h(1,\msU)$. The iteration uses $J_{(1^i,\msU)}=J_{\msU}+i$.
+\end{proof}
+
+\begin{lem}[Vanishing on $1^p$]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-C}
+For $h\geq 2$ and $p\geq 1$, $\Xiz_h(1^p)=0$; that is, $\ZZ[h,n]=0$ for $n\geq 1$.
+\end{lem}
+
+\begin{proof}
+Apply \cref{lem:reg-string} with $\msU$ empty: the factor $J_{\emptyset}=0$ kills every $p\geq 1$. The proof uses only the string equation and the shapes $\lf_j=1/(E-j\psi)$, $\Tdil=-\psi^2/(E-\psi)$ of the leaves; no weight enters.
+\end{proof}
+
+\begin{rmk}[The $\lf_0$ identity; not used]
+\label{rmk:reg-L0}
+Put $\lf_0\coloneqq 1/E$. For $h\geq 2$ and every multiset $\msU$ of integers,
+\[
+\Xiz_h(0,\msU)=\frac{\dg(\msU)-2h+2}{E^2}\,\Xiz_h(\msU).
+\]
+Indeed, from $\Tdil=\qo+\psi=E-E^2\lf_1+\psi$ and (LAM2) at $j=1$ one gets $\psi\lf_1=E\lf_1-1=(\psi-\Tdil)/E$. The dilaton equation gives $\regbra{\psi}{\msU}-\regbra{\Tdil}{\msU}=(2h-2+r)\,\Xiz_h(\msU)$, because after reindexing the sum over the number of dilaton leaves the factor $1/m!$ cancels the dependence on $m$ exactly as in Step~1 of the proof of \cref{lem:reg-H0}. Together with the display in the proof of \cref{lem:reg-string},
+\[
+\regbra{1}{\msU}=\frac{J_{\msU}}{E}\Xiz_h(\msU)-\regbra{\psi\lf_1}{\msU}=\frac{J_{\msU}-(2h-2+r)}{E}\,\Xiz_h(\msU),
+\]
+and multiplication by $\lf_0=1/E$ with $J_{\msU}-r=\dg(\msU)$ gives the identity. In particular $\Xiz_h(0)=((2-2h)/E^2)\,\ZZ[h,0]$: a part $0$ lowers $\dg$ by one and reaches the empty multiset, so it is not covered by \cref{thm:reg-L}. The identity is recorded only to explain the next remark.
+\end{rmk}
+
+\begin{rmk}[Why a constant leaf would be fatal, and why none occurs]
+\label{rmk:reg-nol0}
+In the proof of \cref{thm:reg-main} the coefficients of the factors attached to a singular vertex are expanded in the leaves $\lf_j$, $j\geq 1$, and the counting of step~(iv) rests on the bound $\dg\leq k$ at order $t^k$. A constant component of such a coefficient, that is, a multiple of $\lf_0=1/E$, could not be stripped by \cref{lem:reg-string}; by \cref{rmk:reg-L0} its contribution to $\dg$ is $-1$, so it would lower $\dg$ instead of being absorbed by the counting, and when the remaining multiset is empty it would leave $((2-2h)/E^2)\ZZ[h,0]$, a multiple of the value of \cref{thm:reg-VI}, at the order $t^{2-2h+k}$. So a constant leaf would be a genuine obstruction. None occurs: by \cref{thm:lea-main}, $[t^k](\rho\qt)\in\Lsp_{k+1}$ for $k\geq 1$ (L1), $[t^k](\rho f_{j,b})\in\Lsp_{k+1}$ for every $k\geq 0$ (L2, \cref{prop:lea-L2}, \cref{cor:lea-rhoe}), and $[t^k](\rho^2\Edge_{11}(\psi,\psi'))$ lies in the span of the products $\lf_i(\psi)\lf_l(\psi')$ with $i,l\geq 1$ (L3, \cref{thm:lea-L3}); the spaces $\Lsp_m$ contain no constants. The constant $E$ in $\qo=E-E^2\lf_1=[t^0](\rho\qt)$ is the base point of the Taylor expansion on $\Dom$, not an insertion.
+\end{rmk}
+
+\subsection{The two cited theorems}
+\label{sec:reg-cited}
+
+The companion paper \cite{LP2} works at scale $1$: for an indeterminate $\tau$ it puts $\st\coloneqq\tau(1+\tau)$ and, on $\Mbar_{h,n}$,
+\[
+\Hg_{(1,\tau,-1-\tau)}=\frac{\Lamv(1)\Lamv(\tau)\Lamv(-1-\tau)}{(-\st)^h},\qquad
+\lf^{\tau}_j(\psi)=\frac{1}{1-j\psi},\qquad
+\Tdil^{\tau}(\psi)=-\frac{\psi^2}{1-\psi},
+\]
+and for a finite multiset $\msU$ of integers with $r=\#\msU$ and $2h-2+r>0$
+\[
+\Xit_h(\msU)\coloneqq\sum_{m\geq 0}\frac{1}{m!}\int_{\Mbar_{h,r+m}}\Hg_{(1,\tau,-1-\tau)}\prod_{j\in\msU}\lf^{\tau}_j(\psi)\prod_{k=1}^m\Tdil^{\tau}(\psi_{r+k}),
+\]
+a finite sum because $\Tdil^{\tau}$ has $\psi$-degree at least $2$. The symbol $\st$ is used only in this subsection, and $\tau$ means here the indeterminate of \cite{LP2}, not $1-1/\cQ$; the point at which it is evaluated below is written $\tauw$.
+
+\begin{lem}[Scale law]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-scale}
+Let $E,\mathsf{v}_2,\mathsf{v}_3$ lie in a field of characteristic $0$, with $E+\mathsf{v}_2+\mathsf{v}_3=0$ and $E\mathsf{v}_2\mathsf{v}_3\neq 0$, and let $\Xiz^{\mathsf{v}}_h(\msU)$ be defined as $\Xiz_h(\msU)$ in \cref{def:set-fpot} with the class $\Hg_{\mathsf{v}}=\prod_a\Lamv(\mathsf{v}_a)/\mathsf{v}_a^h$, $\mathsf{v}=(E,\mathsf{v}_2,\mathsf{v}_3)$, the leaves $\lf_j=1/(E-j\psi)$ and $\Tdil=-\psi^2/(E-\psi)$. Then, with $\tau\coloneqq\mathsf{v}_2/E$, one has $\mathsf{v}=E(1,\tau,-1-\tau)$, $\st=-\mathsf{v}_2\mathsf{v}_3/E^2\neq 0$, and for every finite multiset $\msU$ with $r=\#\msU$ and $2h-2+r>0$
+\begin{equation}
+\label{eq:reg-scale}
+\Xiz^{\mathsf{v}}_h(\msU)=E^{-(3h-3+2r)}\,\Xit_h(\msU)\big|_{\tau=\mathsf{v}_2/E}.
+\end{equation}
+For $\mathsf{v}=\bw=(E,-\epsilon_1,-\epsilon_2)$ on $\TCY$ one has $\tauw=-\epsilon_1/E$, $\st=-\epsilon_1\epsilon_2/E^2$, and $\Xiz^{\bw}_h=\Xiz_h$ is the integral of \cref{def:set-fpot}.
+\end{lem}
+
+\begin{proof}
+This is a weight count \cite[Corollary~8.4]{LP2}. Replace $\psi$ by $\psi/E$. Write $\Hg_{\mathsf{v}}=\sum_i(\Hg_{\mathsf{v}})_i$ with $(\Hg_{\mathsf{v}})_i$ of cohomological degree $i$; because of the normalisation by $\mathsf{v}_a^h$, $(\Hg_{\mathsf{v}})_i$ is homogeneous of degree $-i$ in $\mathsf{v}$, so it equals $E^{-i}$ times the corresponding part of $\Hg_{(1,\tau,-1-\tau)}$. The degree-$b$ part of a leaf $1/(E-j\psi)=E^{-1}\sum_b(j\psi/E)^b$ scales as $E^{-1-b}$, and the degree-$b$ part of a dilaton leaf $-\psi^2/(E-\psi)$ scales as $E^{1-b}$. On $\Mbar_{h,r+m}$ the total cohomological degree is $3h-3+r+m$, so the total exponent of $E$ is $-(3h-3+r+m)-r+m=-(3h-3+2r)$, independent of $m$. For $\mathsf{v}=\bw$ the sum-zero condition is $E=\epsilon_1+\epsilon_2$, the defining relation of $\TCY$.
+\end{proof}
+
+Without the normalisation by $\mathsf{v}_a^h$ the exponent would be $3-2r$; the vanishing below is not affected by the normalisation.
+
+\begin{thm}[Vanishing of the Hodge integrals; cited]\genusstatus{AI-proposed, unchecked}
+\label{thm:reg-L}
+\begin{enumerate}
+\item[(i)] \textup{\cite[Theorem~8.1]{LP2}} For every $h\geq 2$ and every non-empty multiset $\msM$ of integers $\geq 2$ with $\dg(\msM)\leq 2h-3$, $\Xit_h(\msM)=0$ in $\bbQ(\tau)$.
+\item[(ii)] \textup{\cite[Corollary~8.2]{LP2}} With $\Lambda(u)=\sum_iu^i\lambda_i$ and the Chern roots $\mathsf{r}_i$ of the Hodge bundle $\Hdg$, one has $(1-\mathsf{r}/\tau)(1+\mathsf{r}/(1+\tau))=1-(\mathsf{r}+\mathsf{r}^2)/\st$, hence $\Hg_{(1,\tau,-1-\tau)}=\Lambda(-1)\sum_{k=0}^h(-1/\st)^k\,e_k(\mathsf{r}+\mathsf{r}^2)$, and for every multiset $\msU$ (the empty one included)
+\begin{equation}
+\label{eq:reg-laurent}
+\Xit_h(\msU;\tau)=\sum_{k=0}^h\Big(-\frac{1}{\st}\Big)^k\,\Xi^{(k)}_h(\msU),
+\end{equation}
+with $\Xi^{(k)}_h(\msU)\in\bbQ$ independent of $\tau$. For $\msM$ as in \textup{(i)} every $\Xi^{(k)}_h(\msM)$ vanishes, so $\Xit_h(\msM;\tau_0)=0$ at every $\tau_0$ in a field of characteristic $0$ with $\st(\tau_0)\neq 0$, the diagonal $\tau_0=-1/2$ included.
+\item[(iii)] \textup{\cite[Corollary~8.3]{LP2}} The same vanishing, in $\bbQ(\tau)$ and at every such $\tau_0$, holds for every non-empty multiset $\msU$ of positive integers with $\dg(\msU)\leq 2h-3$. No part $0$ is allowed.
+\item[(iv)] \textup{(\cref{lem:reg-scale} and \cite[Corollary~8.4]{LP2})} Consequently $\Mirr(h)$ of \cref{def:set-mirr} holds for every $h\geq 2$, for the class $\Hg_{\bw}$, $\bw=(E,-\epsilon_1,-\epsilon_2)$, at the generic point of $\TCY$ (in $\KCY$, indeed in $\bbQ(\epsilon_1,\epsilon_2)$) and at every weight point with $\epsilon_1\epsilon_2E\neq 0$, the diagonal $\epsilon_1=\epsilon_2$ included: for every non-empty $\msM$ with parts $\geq 2$ and $\dg(\msM)\leq 2h-3$,
+\[
+\Xiz_h(\msM)=E^{-(3h-3+2r)}\,\Xit_h(\msM)\big|_{\tau=\tauw=-\epsilon_1/E}=0,\qquad \st=-\frac{\epsilon_1\epsilon_2}{E^2}\neq 0 .
+\]
+Together with \cref{lem:reg-string,lem:reg-C}, the same vanishing holds for every non-empty multiset with parts $\geq 1$ in the same range.
+\end{enumerate}
+\end{thm}
+
+The theorem rests on the Mari\~no--Vafa formula \cite[eq.~(1)--(3)]{LLZ03} and textbook facts; its proof is not reproduced here. Part (iv) is where the Calabi--Yau condition is used, and it is the only place: the hypothesis of (iv) is that $\bw$ is a sum-zero triple whose \emph{first} weight is the leaf scale $E$ of the leaves $\lf_j=1/(E-j\psi)$ produced by Theorem~A. On $\TCY$ the triple $\bw=(E,-\epsilon_1,-\epsilon_2)$ sums to zero precisely because $E=\epsilon_1+\epsilon_2$, so that $\bw=E(1,\tauw,-1-\tauw)$ with $\tauw=-\epsilon_1/E$; and the leaf scale of Theorem~A is $E=\alpha_0+\alpha_1+\alpha_2$, the first weight of $\bw$, by (F2) of \cref{thm:lea-main} and \cref{lem:set-hmult}. Theorem~A itself does not use the Calabi--Yau condition (\cref{rmk:lea-cy}). The specialisation in (ii) and (iv) requires no sign, rationality or integrality condition on the weights: only $\st\neq 0$ and $E\neq 0$ are needed, which on $\TCY$ with (ND) hold.
+
+\begin{thm}[The value of the vertex; cited]\genusstatus{AI-proposed, unchecked}
+\label{thm:reg-VI}
+\begin{enumerate}
+\item[(i)] \textup{\cite[Theorem~9.3]{LP2}} Put $\ZZ_h(\tau)\coloneqq\Xit_h(\emptyset)$ and $\mathsf{a}_1\coloneqq-\tau$, $\mathsf{a}_2\coloneqq 1+\tau$, so that $\mathsf{a}_1\mathsf{a}_2=-\st$. For every $h\geq 2$, identically in $\bbQ(\tau)$,
+\[
+\st^{\,h-1}\,\ZZ_h(\tau)=\beta_{2h-2}(\mathsf{a}_1,\mathsf{a}_2),\qquad
+\beta_n(a,b)\coloneqq(n-1)!\,\coef{\mathsf{t}^n}\,\frac{1}{4\sinh(a\mathsf{t}/2)\sinh(b\mathsf{t}/2)} .
+\]
+\item[(ii)] \textup{\cite[Theorem~9.1]{LP2}} For $\bw=(E,-\epsilon_1,-\epsilon_2)$ with $E=\epsilon_1+\epsilon_2$ and every $g\geq 2$,
+\begin{equation}
+\label{eq:reg-VI}
+(-\epsilon_1\epsilon_2E^3)^{g-1}\,\ZZ[g,0]=\beta_{2g-2}(\epsilon_1,\epsilon_2),
+\end{equation}
+identically in $(\epsilon_1,\epsilon_2)$, and at every weight point with $\epsilon_1\epsilon_2E\neq 0$.
+\end{enumerate}
+\end{thm}
+
+Part (ii) is the form in which the theorem is used; it is literally the situation of this note, with the same class $\Hg_{\bw}$, the same leaves and the same scale $E$, so no conversion is needed. For the record we transcribe how (ii) follows from (i), since this is also what gives the statement at every weight point. By \cref{lem:reg-scale} at $r=0$ with $\mathsf{v}=\bw$, $\ZZ[g,0]=E^{-(3g-3)}\ZZ_g(\tauw)$ at $\tauw=-\epsilon_1/E$, where $\mathsf{a}_i=\epsilon_i/E$. Further $-\epsilon_1\epsilon_2E^3=\st E^5$ and $\beta_n(c\,a,c\,b)=c^{n}\beta_n(a,b)$, since $(n-1)!\coef{\mathsf{t}^n}$ of a function of $c\mathsf{t}$ picks up $c^n$. So
+\[
+(-\epsilon_1\epsilon_2E^3)^{g-1}\ZZ[g,0]=\st^{\,g-1}E^{5g-5-3g+3}\ZZ_g=E^{2g-2}\beta_{2g-2}(\mathsf{a}_1,\mathsf{a}_2)=\beta_{2g-2}(\epsilon_1,\epsilon_2).
+\]
+The identity (i) specialises to every $\tau_0$ with $\st(\tau_0)\neq 0$: by \eqref{eq:reg-laurent} at the empty multiset, $\ZZ_g(\tau)$ is a polynomial in $1/\st$ with rational coefficients, and $\beta_{2g-2}(\mathsf{a}_1,\mathsf{a}_2)$ is $(2g-3)!/(\mathsf{a}_1\mathsf{a}_2)$ times a symmetric polynomial in $\mathsf{a}_1^2,\mathsf{a}_2^2$ (see \cref{lem:reg-beta}), hence a polynomial in $\st$ and $1/\st$, because $\mathsf{a}_1^2+\mathsf{a}_2^2=1+2\st$ and $\mathsf{a}_1^2\mathsf{a}_2^2=\st^2$; an identity in $\bbQ(\tau)$ between two Laurent polynomials in $\st$ holds wherever $\st\neq 0$. This gives \eqref{eq:reg-VI} at every weight point with $\epsilon_1\epsilon_2E\neq 0$. The proof of (i) in \cite{LP2} uses the Mari\~no--Vafa formula only at the profile $1^a$ and nothing from \cref{thm:reg-L}; it is not reproduced here.
+
+\begin{lem}[The polynomials $\beta_{2g-2}$ and $\Pg$]\genusstatus{AI-proposed, unchecked}
+\label{lem:reg-beta}
+Let $\Ssh(y)\coloneqq y/(2\sinh(y/2))$, an even power series in $y$ with constant term $1$, and recall $\Pg=\coef{t^{2g}}\,\epsilon_1\epsilon_2t^2/(4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2))$ from \cref{def:set-inv}. Then $\Pg=\coef{t^{2g}}\,\Ssh(\epsilon_1t)\Ssh(\epsilon_2t)$ is a symmetric homogeneous polynomial of degree $2g$ in $\epsilon_1,\epsilon_2$, a polynomial in $\epsilon_1^2,\epsilon_2^2$, and for $g\geq 2$
+\begin{equation}
+\label{eq:reg-beta}
+\beta_{2g-2}(\epsilon_1,\epsilon_2)=\frac{(2g-3)!\,\Pg}{\epsilon_1\epsilon_2}.
+\end{equation}
+\end{lem}
+
+\begin{proof}
+From the definitions,
+\[
+\Ssh(\epsilon_1t)\,\Ssh(\epsilon_2t)=\frac{\epsilon_1\epsilon_2t^2}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)},
+\]
+so $\Pg=\coef{t^{2g}}\Ssh(\epsilon_1t)\Ssh(\epsilon_2t)$. Since $\Ssh$ is even, write $\Ssh(y)=\sum_{i\geq 0}s_iy^{2i}$ with $s_0=1$; then
+\[
+\Pg=\sum_{i+j=g}s_is_j\,\epsilon_1^{2i}\epsilon_2^{2j},
+\]
+which is the stated polynomial. Next,
+\begin{multline*}
+\beta_{2g-2}(\epsilon_1,\epsilon_2)=(2g-3)!\,\coef{t^{2g-2}}\frac{1}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)}\\
+=\frac{(2g-3)!}{\epsilon_1\epsilon_2}\,\coef{t^{2g}}\frac{\epsilon_1\epsilon_2t^2}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)}
+=\frac{(2g-3)!}{\epsilon_1\epsilon_2}\,\Pg,
+\end{multline*}
+both sides being $(2g-3)!/(\epsilon_1\epsilon_2)$ times $\coef{t^{2g}}\Ssh(\epsilon_1t)\Ssh(\epsilon_2t)$.
+\end{proof}
+
+\begin{rmk}[The first values]
+\label{rmk:reg-betavalues}
+From $2\sinh(y/2)=y\,(1+y^2/24+y^4/1920+y^6/322560+\cdots)$ one finds $\Ssh(y)=1-y^2/24+7y^4/5760-31y^6/967680+\cdots$, so that
+\begin{align*}
+\mathsf{P}_2&=\frac{7\epsilon_1^4+10\epsilon_1^2\epsilon_2^2+7\epsilon_2^4}{5760},&
+\beta_2(\epsilon_1,\epsilon_2)&=\frac{7\epsilon_1^4+10\epsilon_1^2\epsilon_2^2+7\epsilon_2^4}{5760\,\epsilon_1\epsilon_2},\\
+\mathsf{P}_3&=-\frac{31\epsilon_1^6+49\epsilon_1^4\epsilon_2^2+49\epsilon_1^2\epsilon_2^4+31\epsilon_2^6}{967680},&
+\beta_4(\epsilon_1,\epsilon_2)&=-\frac{31\epsilon_1^6+49\epsilon_1^4\epsilon_2^2+49\epsilon_1^2\epsilon_2^4+31\epsilon_2^6}{161280\,\epsilon_1\epsilon_2},
+\end{align*}
+using $s_0s_2=7/5760$, $s_1^2=1/576=10/5760$, $s_0s_3=-31/967680$, $s_1s_2=-7/138240=-49/967680$ and $(2g-3)!=1,6$ at $g=2,3$. These are the first two of the polynomials $\beta_n$ of \cite{BS}. \draftnote{BS label: eq:betapol.} At real $\epsilon_1,\epsilon_2\neq 0$ all terms of $\beta_{2g-2}$ have the sign $(-1)^g$, since the sign of $s_i$ is $(-1)^i$, so $\beta_{2g-2}(\epsilon_1,\epsilon_2)\neq 0$ there; it may vanish at special complex weights. No proof step uses the non-vanishing.
+\end{rmk}
+
+\subsection{Theorem R: regularity and the polar part of the decoration sums}
+\label{sec:reg-thmR}
+
+The hypotheses $\Mirr(h)$ in the following statement are discharged by \cref{thm:reg-L}(iv) for every $h\geq 2$; they are kept in the statement so that the use of each instance is visible. Recall (\cref{def:set-rho}, \cref{prop:lea-key}) that $\rho=(\Delta_1t^2/(-\epsilon_1\epsilon_2E^3))^{-1/2}$, the branch with $\rho(0)=1$, is an element of $1+t\RRing$ free of $z$, and that (F1) of \cref{thm:lea-main} is the exact identity
+\begin{equation}
+\label{eq:reg-F1}
+\Delta_1\,\rho^2=-\frac{\epsilon_1\epsilon_2E^3}{t^2}.
+\end{equation}
+
+\begin{thm}[Theorem R on the Calabi--Yau torus]\genusstatus{AI-proposed, unchecked}
+\label{thm:reg-main}
+Fix $g\geq 2$. Work in frame B with the class $\bw=(E,-\epsilon_1,-\epsilon_2)$, on $\TCY$ at the generic point or at any weight point with (ND).
+\begin{enumerate}
+\item[(a)] If $\Mirr(h)$ holds for every $2\leq h\leq g-1$, then every coloured stable graph $(\Gamma,\col)$ of genus $g$ with at least one edge is regular at $t=0$ after summing over decorations.
+\item[(b)] If $\Mirr(g)$ holds, then the single-vertex graph is regular at colour $2$, and at colour $1$ its decoration sum has the polar part
+\begin{equation}
+\label{eq:reg-pole}
+(-\epsilon_1\epsilon_2E^3)^{g-1}\,\Fpot_g(\qo)\,t^{2-2g}=(-\epsilon_1\epsilon_2E^3)^{g-1}\,\ZZ[g,0]\,t^{2-2g},
+\end{equation}
+and no other polar term: the coefficients of $t^{2-2g+k}$ vanish for $1\leq k\leq 2g-3$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\emph{Step 0 (the vertex factor at a singular vertex).} By \cref{def:set-graphsum} and the dilaton-shifted form of \cref{def:set-fpot}, the sum over the dilaton decorations (degrees $d\geq 2$, weight $1/m!$) at a vertex $v$ of genus $h\geq 2$ and colour $i$, whose $n$ half-edges carry the series $f_1,\dots,f_n\in\RRing\fps{\psi}$ coming from the edge factors, equals
+\begin{equation}
+\label{eq:reg-vertex}
+\Delta_i^{\,h-1}\,\dd^n\Fpot_h\big(\qt^{(i)}\big)[f_1,\dots,f_n],
+\end{equation}
+multilinear in the slots $f_1,\dots,f_n$. The vertex class $\Hg_{\bw}$ is independent of $t$ in frame B; all dependence on $t$ sits in $\Delta_i$, in the dilaton series $\qt^{(i)}$ and in the edge factors. For a vertex of genus $0$ or $1$ the decoration sum is the finite sum of \cref{def:set-graphsum} itself, and \eqref{eq:reg-vertex} is not used there. At colour $1$, $\qt\in\Dom$ and $\rho\qt\in\Dom$ (\cref{sec:reg-hodge}), so the Taylor form of \cref{def:set-fpot} applies.
+
+Edges do not factorise in general: a self-loop at $v$, or an edge between two singular vertices of genus $\geq 2$, is a series in two variables $\psi,\psi'$. Since $\dbase^s$ is $\RRing$-multilinear and depends only on a finite jet of each slot (the number of dilaton leaves is at most $3h-3+s$, and the degree in each slot is cut off by the dimension), it is $t$-adically continuous in each slot and may be applied term by term to a $t$-series of leaves and coefficient by coefficient in the variable $\psi'$ of the far end. At a far end which is a vertex $u$ of genus $0$ or $1$, only the powers $\psi'^{\,b}$ with $b\leq 3g_u-3+n_u$ occur, so only finitely many coefficients enter; at fixed $t$-order the number of Taylor insertions is bounded by that order, so only finitely many multisets occur. Everything below is to be read in this sense.
+
+\emph{Step (i) (homogeneity).} Call a colour-$1$ vertex of genus $h\geq 2$ \emph{rescaled}. At a rescaled vertex $v$ with half-edge series $f_1,\dots,f_n$, \eqref{eq:reg-vertex} with \eqref{eq:reg-H0} at $\nu=\rho$ and with \eqref{eq:reg-F1} gives
+\begin{equation}
+\label{eq:reg-resc}
+\Delta_1^{\,h-1}\,\dd^n\Fpot_h(\qt)[f_1,\dots,f_n]
+=\Big(\frac{-\epsilon_1\epsilon_2E^3}{t^2}\Big)^{h-1}\dd^n\Fpot_h(\rho\qt)[\rho f_1,\dots,\rho f_n].
+\end{equation}
+Three properties of $\rho$ are used: it lies in $\RRing$ and is free of $z$ and $\psi$; $\rho(0)=1$, so that $\nu=\rho$ is admissible in \cref{lem:reg-H0} and $[t^0](\rho\qt)=\qo$ is the base point of $\Dom$; and the exact identity \eqref{eq:reg-F1}. So every half-edge at a rescaled vertex is rescaled by exactly one factor $\rho$, and the prefactor $\Delta_1^{h-1}$ becomes $(-\epsilon_1\epsilon_2E^3)^{h-1}t^{2-2h}$ exactly.
+
+\emph{Step (ii) (leaf expansion).} By (L1) of \cref{thm:lea-main} (\cref{thm:lea-L1}),
+\[
+\rho\qt=\qo+\sum_{k\geq 1}t^kq^{(k)},\qquad q^{(k)}\in\Lsp_{k+1}=\operatorname{span}(\lf_1,\dots,\lf_{k+1}).
+\]
+The factor attached to a half-edge of the rescaled vertex $v$ depends on the other end of its edge, as described in \cref{rmk:lea-use}:
+\begin{itemize}
+\item if the other end is a regular vertex, the edge factor is $\Edge_{12}$ or $\Edge_{21}$, and for each power $w^b$ at the regular end it gives $v$ the leg $\rho f_{2,b}(\psi)=\rho\,[w^b]\Edge_{12}(\psi,w)$; by (L2) (\cref{prop:lea-L2}, \cref{prop:lea-transp} for the orientation $\Edge_{21}(b,a)=\Edge_{12}(a,b)$), $[t^k](\rho f_{2,b})\in\Lsp_{k+1}$ for every $k\geq 0$ and every $b$;
+\item if the other end is a singular vertex $v'$ of genus $0$ or $1$, which is not rescaled, the edge factor is $\rho\,\Edge_{11}=\rho^{-1}(\rho^2\Edge_{11})$, and for each power $\psi'^{\,b'}$ at $v'$ it gives $v$ the leg $\rho f_{1,b'}$; by (L2) at $j=1$ (\cref{cor:lea-rhoe}), $[t^k](\rho f_{1,b'})\in\Lsp_{k+1}$; either orientation, since $\Edge_{11}$ is symmetric (L3);
+\item if the other end is a rescaled vertex $v'$, the edge factor is $\rho^2\Edge_{11}(\psi,\psi')$, and by (L3) (\cref{thm:lea-L3}) its coefficient at order $t^k$ lies in $\operatorname{span}\{\lf_i(\psi)\lf_l(\psi'):i,l\geq 1,\ (i-1)+(l-1)\leq k\}$; the bound on the leaf degree is split between the two ends;
+\item for a self-loop at $v$ the factor is $\rho^2\Edge_{11}(\psi,\psi')$ with both ends at $v$, and the whole bound is assigned to $v$.
+\end{itemize}
+In every case, the order-$t^k$ coefficient of each factor attached to $v$ is a finite combination of leaves $\lf_j$, $j\geq 1$, of total degree $\dg\leq k$, where $\dg(\lf_{j_1}\cdots\lf_{j_s})=\sum(j_i-1)$; the factor $\rho^{-1}=1+O(t)$ at an unrescaled far end raises the $t$-order and does not raise $\dg$; and no constant leaf occurs (\cref{rmk:reg-nol0}). The unrescaled ends themselves are covered by \cref{cor:lea-alllegs}.
+
+By the definition of $\Fpot_h$ on $\Dom$, $\dd^n\Fpot_h(\qo+\upsilon)[\rho f_1,\dots,\rho f_n]$ with $\upsilon=\sum_{k\geq 1}t^kq^{(k)}$ is the Taylor series $\sum_r(1/r!)\,\dbase^{n+r}(\rho f_1,\dots,\rho f_n,\upsilon^r)$ at $\qo$, finite at each order in $t$ because $\upsilon=O(t)$ and each $\dbase$ is a finite sum. Expanding every slot in leaves by multilinearity, a term of total $t$-order $k$ is a product of coefficients whose leaf degrees add up to at most $k$. Hence the coefficient of $t^{2-2h+k}$ of the vertex factor \eqref{eq:reg-resc} is a finite $\KCY$-combination (a $\bbC$-combination at a weight point) of numbers
+\[
+\Xiz_h(\msU)=\dbase^{\,r}(\lf_{j_1},\dots,\lf_{j_r}),\qquad \msU=\{j_1,\dots,j_r\},\quad\text{all parts }j_i\geq 1,\quad \dg(\msU)\leq k,
+\]
+and each half-edge at $v$ contributes at least one leaf, so $r\geq n\geq 1$ whenever $v$ has a half-edge. All leaves occurring at order $t^k$ have integer scales $j\leq k+1$. The $\Edge_{11}$ block between two rescaled vertices is not factorised: it is expanded in the $t$-independent products $\lf_i(\psi)\lf_l(\psi')$ with coefficients in $\RRing$, and the degree bound is split between the ends.
+
+At an unrescaled vertex only regularity is needed, and it is supplied by (F1) and (F3) of \cref{thm:lea-main} (the table \cref{eq:lea-table}): at a singular vertex of genus $0$, $\Delta_1^{-1}=t^2\rho^2/(-\epsilon_1\epsilon_2E^3)=O(t^2)$; at a singular vertex of genus $1$, $\Delta_1^{0}=1$; at a regular vertex of any genus $h\geq 0$, $\Delta_2^{h-1}$ is analytic at $t=0$ because $\Delta_2$ is analytic with $\Delta_2(0)=\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E\neq 0$ (F1); and every dilaton factor $\Dil_i(d)$ and every edge coefficient $\Edge_{ij}(a,b)$ attached to such a vertex is analytic at $t=0$ (F3).
+
+\emph{Step (iii) (vanishing).} Let $v$ be a rescaled vertex of genus $h$, and consider a number $\Xiz_h(\msU)$ occurring at order $t^{2-2h+k}$ in Step~(ii), with all parts $\geq 1$ and $\dg(\msU)\leq k$. Strip the parts equal to $1$ by \cref{lem:reg-string}: writing $\msU=(1^p,\msM)$ with $\msM$ the parts $\geq 2$,
+\[
+\Xiz_h(1^p,\msM)=\prod_{i=0}^{p-1}(J_{\msM}+i)\,E^{-2p}\,\Xiz_h(\msM),\qquad\dg(\msM)=\dg(\msU).
+\]
+If $\msM$ is empty, then $p=r\geq 1$ and the factor $J_{\emptyset}=0$ kills the term (\cref{lem:reg-C}). If $\msM$ is non-empty, all its parts are $\geq 2$ and $\dg(\msM)=\dg(\msU)\leq k$, so $\Xiz_h(\msM)=0$ by $\Mirr(h)$ whenever $k\leq 2h-3$, whatever the $t$-order at which the term occurs; in a graph with an edge, $h\leq g-1$ by \cref{lem:reg-range}, so the hypothesis of (a) covers every rescaled vertex. Consequently a non-zero term in the expansion needs $\regD_v\geq 2h_v-2$ at every rescaled vertex $v$ with at least one leaf, where $\regD_v$ denotes the total leaf degree at $v$ in that term.
+
+\emph{Step (iv) (counting).} This proves (a). In a connected graph with an edge every vertex has at least one half-edge, so $r_v\geq 1$ at every rescaled vertex. Consider a non-zero term in the expansion of $\GCont(\Gamma,\col)$. Each factor contributes a $t$-order, and by Step~(ii) its leaf degree at any rescaled end is bounded by that order, with the bound of an edge between two rescaled vertices split between its ends and that of a loop assigned wholly to its vertex. Hence the $t$-order of the term is at least
+\[
+\sum_{v\ \mathrm{rescaled}}\big(2-2h_v+\regD_v\big)\;+\;2\cdot\#\{\text{singular vertices of genus }0\}\;+\;0,
+\]
+where the $2$ comes from $\Delta_1^{-1}=O(t^2)$ at a singular vertex of genus $0$, and the final $0$ accounts for the singular vertices of genus $1$ ($\Delta_1^0=1$), for all regular vertices ($\Delta_2^{h-1}$, $\Dil_2$, $\Edge_{2j}$ analytic), and for every order of an edge or dilaton factor not allocated to a $\regD_v$, all of which contribute at least $0$ by (F1), (F3). By Step~(iii) each summand $2-2h_v+\regD_v$ is at least $0$. Hence the order is at least $0$: the Laurent series of $\GCont(\Gamma,\col)$ has no negative powers.
+
+\emph{Step (v) (the single-vertex graph).} This proves (b). The single-vertex graph has no edges and trivial automorphism group. Its colour-$2$ term is $\Delta_2^{\,g-1}$ times a finite sum of products of the dilaton factors $\Dil_2(d)$ (the dilaton-shifted form of \cref{def:set-fpot}), which is analytic at $t=0$ by (F1) and (F3). At colour $1$ the term is, by Steps~(i) and (ii) with no half-edges,
+\[
+\Big(\frac{-\epsilon_1\epsilon_2E^3}{t^2}\Big)^{g-1}\Fpot_g(\rho\qt)
+=(-\epsilon_1\epsilon_2E^3)^{g-1}\,t^{2-2g}\sum_{k\geq 0}t^k\,\coef{t^k}\Fpot_g\Big(\qo+\sum_{k'\geq 1}t^{k'}q^{(k')}\Big),
+\]
+and the coefficient of $t^k$ of the Taylor series is a combination of numbers $\Xiz_g(\msU)$ with $\msU$ empty only at $k=0$, where the value is $\Xiz_g(\emptyset)=\Fpot_g(\qo)=\ZZ[g,0]$, and otherwise with $\msU$ non-empty, all parts $\geq 1$ and $\dg(\msU)\leq k$. For $1\leq k\leq 2g-3$ these vanish by Step~(iii) at $h=g$, the case in which only parts $1$ occur being killed by \cref{lem:reg-C} and the other cases by $\Mirr(g)$. So the polar part is exactly \eqref{eq:reg-pole}, and the coefficients of $t^{3-2g},\dots,t^{-1}$ are zero.
+\end{proof}
+
+Three remarks on the logic. The leaves occurring at order $t^k$ have integer scales $j\leq k+1$, and only the vanishing of the $\Xiz_h(\msM)$ is used, never a value other than $\ZZ[g,0]$. The ranges match exactly: the polar orders $k\leq 2h-3$ at a vertex of genus $h$ need exactly $\dg\leq 2h-3$, which is the range of $\Mirr(h)$, and the bound $\dg\leq k$ of Theorem~A is sharp for generic weights (\cref{cor:lea-top}, \cref{cor:lea-anti}), so there is no slack in either direction. Finally, no colouring sum is used: every step is per colouring, and the single-vertex graph is excluded from (a) only through $r\geq 1$ in Step~(iii) and through $h\leq g-1$ in \cref{lem:reg-range}.
+
+\subsection{Theorem C}
+\label{sec:reg-thmC}
+
+\begin{cor}[Theorem C: regularity and the polar part]\genusstatus{AI-proposed, unchecked}
+\label{cor:reg-main}
+Fix $g\geq 2$. In frame B with $\bw=(E,-\epsilon_1,-\epsilon_2)$, on $\TCY$ at the generic point or at any weight point with (ND):
+\begin{enumerate}
+\item[(a)] every coloured stable graph of genus $g$ with at least one edge is regular at $t=0$ after summing over decorations;
+\item[(b)] the single-vertex graph is regular at colour $2$, and at colour $1$ its polar part is exactly
+\begin{equation}
+\label{eq:reg-gap}
+\gapg\,t^{2-2g},\qquad
+\gapg\coloneqq(-\epsilon_1\epsilon_2E^3)^{g-1}\,\ZZ[g,0]=\beta_{2g-2}(\epsilon_1,\epsilon_2)=\frac{(2g-3)!\,\Pg}{\epsilon_1\epsilon_2},
+\end{equation}
+with no polar term of order $t^{3-2g},\dots,t^{-1}$;
+\item[(c)] hence the expansion of the graph sum $\Gsum_g$ of \cref{eq:set-graphsum} in $\KCY\lser{t}$ (in $\bbC\lser{t}$ at a weight point) has polar part exactly $\gapg\,t^{2-2g}$; and, by \cref{prop:ide-main}, the same holds for $\sF_g$: the image of $\sF_g\in\KCY(\cQ)$ under $\cQ=\re^{t}$ has polar part exactly $\gapg\,t^{2-2g}$.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+By \cref{thm:reg-L}(iv), $\Mirr(h)$ holds for every $h\geq 2$ at the generic point of $\TCY$ and at every weight point with $\epsilon_1\epsilon_2E\neq 0$, in particular at every weight point with (ND). So the hypotheses of \cref{thm:reg-main}(a) and (b) are satisfied, and (a) is \cref{thm:reg-main}(a). For (b), \cref{thm:reg-main}(b) gives the polar part $(-\epsilon_1\epsilon_2E^3)^{g-1}\ZZ[g,0]\,t^{2-2g}$ with no other polar term, \cref{thm:reg-VI}(ii) gives $(-\epsilon_1\epsilon_2E^3)^{g-1}\ZZ[g,0]=\beta_{2g-2}(\epsilon_1,\epsilon_2)$, identically and at every weight point with $\epsilon_1\epsilon_2E\neq 0$, and \cref{lem:reg-beta} gives $\beta_{2g-2}=(2g-3)!\Pg/(\epsilon_1\epsilon_2)$.
+
+(c), first half. The graph sum $\Gsum_g=\sum_\Gamma|\Aut\Gamma|^{-1}\sum_{\col}\GCont(\Gamma,\col)$ is a finite sum of Laurent series in $t$ (\cref{def:set-graphsum} and the opening of this section). By (a) every summand belonging to a graph with an edge has no negative powers; by (b) the single-vertex graph, whose automorphism group is trivial, contributes no negative powers at colour $2$ and exactly $\gapg t^{2-2g}$ at colour $1$. So the polar part of $\Gsum_g$ is $\gapg t^{2-2g}$.
+
+(c), second half. By \cref{lem:ide-terms}, each coloured term $\GCont(\Gamma,\col)$ is an element of the function field $\KCY(\Ccov)$ of the double cover $\ydc^2=\Disc(\cQ)$, regular over every $\cQ\notin\{0,1,\infty\}$ with $\Disc(\cQ)\neq 0$; since $\Disc(1)=E^2\neq 0$ (\cref{lem:set-disc}), the point $\cQ=1$ is not a branch point, and the expansion of each term at the colour-$1$ or colour-$2$ point of $\Ccov$ over $\cQ=1$, in the local parameter $t=\log\cQ$, is an element of $\KCY\lser{t}$. By \cref{rmk:set-scope} and \cref{lem:set-rings} these expansions are the formal series in $t$ to which Theorem~A and \cref{thm:reg-main} refer, so the first half of (c) applies to them. By \cref{prop:ide-main}, $\sF_g\in\KCY(\cQ)$ equals $\Gsum_g$ in $\KCY(\Ccov)$. The substitution $\cQ=\re^{t}$ maps $\KCY(\cQ)$, localised away from the poles at $\cQ=1$, into $\KCY\lser{t}$: $\cQ-1=t(1+t/2+\cdots)$ is $t$ times a unit of $\KCY\fps{t}$, and $\cQ$ and $\Disc(\cQ)$ are units at $\cQ=1$. The image of $\sF_g$ is the sum of the expansions of the terms, hence has polar part exactly $\gapg t^{2-2g}$.
+\end{proof}
+
+As a statement about the decoration sum, parts (a), (b) and the first half of (c) use Theorem~A (\cref{thm:lea-main}), the two cited theorems of \cite{LP2} (\cref{thm:reg-L}, \cref{thm:reg-VI}), and the elementary identities of \cref{sec:reg-hodge,sec:reg-string}; they use no result of \cref{sec:ide}, no input from \cite{BS}, no topological recursion and no finite-order computation. The identification with $\sF_g$ in the second half of (c) is \cref{prop:ide-main}, with its own inputs. The value $\gapg$ is the coefficient of $t^{2-2g}$ in $\Pg\Li_{3-2g}(\re^{t})/(\epsilon_1\epsilon_2)$, since the only singular term of $\Li_{3-2g}(\re^{t})$ at $t=0$ is $(2g-3)!\,t^{2-2g}$ (\cref{lem:rig-li}); this is how Theorem~C enters the proof of Theorem~D in \cref{sec:rig}.
+
+\begin{rmk}[Specialisation to weight points]
+\label{rmk:reg-special}
+At a point of $\mathrm{Lie}(\TCY)$ with $\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2E\neq 0$, with complex or rational weights, the same proof applies word for word: Theorem~A holds there (\cref{thm:lea-main} is stated at every weight point with (ND)), $\Mirr(h)$ holds there by \cref{thm:reg-L}(ii), (iv), and the value \eqref{eq:reg-VI} holds there because $\ZZ_g(\tau)$ is a polynomial in $1/\st$ (the paragraph after \cref{thm:reg-VI}). The value $\gapg$ is then a number. It is non-zero at real weights (\cref{rmk:reg-betavalues}) but may vanish at special complex weights; no proof step uses its non-vanishing. The regularity statements (a) and (c) do not depend on the value of $\gapg$ at all.
+\end{rmk}
+
+\begin{rmk}[Which instances of the vanishing theorem are used, by genus]
+\label{rmk:reg-genus}
+By \cref{lem:reg-range} and Step~(v) of the proof of \cref{thm:reg-main}:
+\begin{itemize}
+\item at $g=2$, the graphs with an edge use no instance of $\Mirr$ at all, since every vertex has genus $\leq 1$; the single-vertex graph uses $\Mirr(2)$;
+\item at $g=3$, the graphs with an edge use only $\Mirr(2)$; the single-vertex graph uses $\Mirr(3)$;
+\item at $g\geq 4$, the graphs with an edge use $\Mirr(h)$ for $2\leq h\leq g-1$, and the single-vertex graph also $\Mirr(g)$.
+\end{itemize}
+In every genus, the value of the pole uses \cref{thm:reg-VI} and nothing from \cref{thm:reg-L}. \draftnote{The sources record that $\Mirr(2)$ admits a proof independent of the Mari\~no--Vafa formula; that proof is not among the sources of this note and is not reproduced. The authors may wish to cite it, so that genus $2$ rests on \cref{thm:reg-VI} alone.}
+\end{rmk}

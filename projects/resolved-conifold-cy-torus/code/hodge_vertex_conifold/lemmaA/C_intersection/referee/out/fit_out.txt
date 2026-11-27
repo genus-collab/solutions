@@ -1,0 +1,5 @@
+genus 2 r 2 k 1: 9 lattice points, 2 basis functions: INCONSISTENT -> ansatz refuted
+genus 3 r 2 k 1: 12 lattice points, 3 basis functions: INCONSISTENT -> ansatz refuted
+genus 3 r 2 k 2: 12 lattice points, 2 basis functions: INCONSISTENT -> ansatz refuted
+genus 2 r 1 k 1: 8 lattice points, 2 basis functions: CONSISTENT (c_g = -1/1440, 1/20)
+genus 3 r 1 k 1: 10 lattice points, 3 basis functions: CONSISTENT (c_g = 1/56700, -71/75600, 7/120)

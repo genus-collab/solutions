@@ -1,0 +1,25 @@
+tau=2 g=2 mu=(3): Mathematica EO -73/20736 -> OK
+tau=2 g=2 mu=(3,1): Mathematica EO -73/6912 -> OK
+tau=2 g=2 mu=(2,2): Mathematica EO -217/34560 -> OK
+tau=2 g=2 mu=(3,1,1): Mathematica EO -73/1728 -> OK
+tau=2 g=2 mu=(2,2,1): Mathematica EO -217/8640 -> OK
+tau=2 g=3 mu=(5): Mathematica EO -245/82944 -> OK
+tau=2 g=3 mu=(5,1): Mathematica EO -1225/82944 -> OK
+tau=2 g=3 mu=(4,2): Mathematica EO -11557/1244160 -> OK
+tau=2 g=3 mu=(3,3): Mathematica EO -16561/1741824 -> OK
+tau=2 g=3 mu=(5,1,1): Mathematica EO -1225/13824 -> OK
+tau=2 g=3 mu=(4,2,1): Mathematica EO -11557/207360 -> OK
+tau=2 g=3 mu=(3,3,1): Mathematica EO -16561/290304 -> OK
+tau=3 g=2 mu=(3): Mathematica EO -277/82944 -> OK
+tau=3 g=2 mu=(3,1): Mathematica EO -277/27648 -> OK
+tau=3 g=2 mu=(2,2): Mathematica EO -55/9216 -> OK
+tau=3 g=2 mu=(3,1,1): Mathematica EO -277/6912 -> OK
+tau=3 g=2 mu=(2,2,1): Mathematica EO -55/2304 -> OK
+tau=3 g=3 mu=(5): Mathematica EO -5665/1990656 -> OK
+tau=3 g=3 mu=(5,1): Mathematica EO -28325/1990656 -> OK
+tau=3 g=3 mu=(4,2): Mathematica EO -41701/4644864 -> OK
+tau=3 g=3 mu=(3,3): Mathematica EO -91553/9953280 -> OK
+tau=3 g=3 mu=(5,1,1): Mathematica EO -28325/331776 -> OK
+tau=3 g=3 mu=(4,2,1): Mathematica EO -41701/774144 -> OK
+tau=3 g=3 mu=(3,3,1): Mathematica EO -91553/1658880 -> OK
+TOTAL first-layer values vs Mathematica EO: 24, mismatches 0

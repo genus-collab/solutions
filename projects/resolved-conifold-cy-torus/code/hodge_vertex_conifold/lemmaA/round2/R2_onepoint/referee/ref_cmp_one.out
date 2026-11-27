@@ -1,0 +1,28 @@
+tau=1 g=2 n=1: compared 10, mismatches 0
+tau=1 g=2 n=2: compared 6, mismatches 0
+tau=1 g=2 n=3: compared 7, mismatches 0
+tau=1 g=2 n=4: compared 7, mismatches 0
+tau=1 g=2 n=5: compared 7, mismatches 0
+tau=1 g=2 n=6: compared 7, mismatches 0
+tau=1 g=3 n=1: compared 12, mismatches 0
+tau=1 g=3 n=2: compared 12, mismatches 0
+tau=1 g=3 n=3: compared 16, mismatches 0
+tau=1 g=3 n=4: compared 18, mismatches 0
+tau=1 g=3 n=5: compared 19, mismatches 0
+tau=1 g=4 n=1: compared 14, mismatches 0
+tau=1 g=4 n=2: compared 20, mismatches 0
+tau=1 g=4 n=3: compared 31, mismatches 0
+tau=1 g=4 n=4: compared 38, mismatches 0
+tau=1 g=5 n=1: compared 16, mismatches 0
+tau=1 g=5 n=2: compared 30, mismatches 0
+tau=1 g=5 n=3: compared 53, mismatches 0
+tau=1 g=6 n=1: compared 18, mismatches 0
+tau=1 g=6 n=2: compared 42, mismatches 0
+tau=1 g=7 n=1: compared 20, mismatches 0
+TOTAL tau=1 (Theorem 1 formal vs exact EO, no P2): compared 403, mismatches 0
+tau=1 g=2 n=4: compared 7, mismatches 0
+tau=1 g=2 n=5: compared 7, mismatches 0
+tau=1 g=3 n=4: compared 18, mismatches 0
+tau=1 g=3 n=5: compared 19, mismatches 0
+tau=1 g=4 n=4: compared 38, mismatches 0
+TOTAL tau=1 (Theorem 1 formal vs exact EO, no P2): compared 89, mismatches 0

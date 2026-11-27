@@ -1,0 +1,41 @@
+D=1: Z1 = 0
+D=2: Z1 = 1
+D=3: Z1 = 2
+D=4: Z1 = 5
+D=5: Z1 = 6
+D=6: Z1 = 11
+D=7: Z1 = 13
+D=8: Z1 = 19
+D=9: Z1 = 22
+D=10: Z1 = 29
+D=11: Z1 = 31
+D=12: Z1 = 44
+brute-force Z1 check D <= 16: 0 mismatches
+G=3: min margin 0 at D=3
+FAIL G=4 D=3: Z1=2 Z2=0 need 3
+G=4: min margin -1 at D=3
+FAIL G=5 D=3: Z1=2 Z2=1 need 4
+G=5: min margin -1 at D=3
+FAIL G=6 D=3: Z1=2 Z2=1 need 5
+G=6: min margin -2 at D=3
+FAIL G=7 D=3: Z1=2 Z2=3 need 6
+G=7: min margin -1 at D=3
+G=8: min margin 2 at D=3
+G=9: min margin 1 at D=3
+G=10: min margin 1 at D=3
+G=11: min margin 4 at D=3
+G=12: min margin 3 at D=3
+G=13: min margin 4 at D=3
+G=14: min margin 6 at D=3
+G=15: min margin 5 at D=3
+G=16: min margin 6 at D=3
+G=17: min margin 9 at D=3
+G=18: min margin 8 at D=3
+G=19: min margin 8 at D=3
+G=20: min margin 11 at D=3
+G=21: min margin 10 at D=3
+G=22: min margin 11 at D=3
+G=23: min margin 13 at D=3
+G=24: min margin 12 at D=3
+G=50: min margin 34 at D=3
+ref_zeros: G=3..60, 4 failures

@@ -1,0 +1,17 @@
+D= 1 Z1 brute   0 formula   0
+D= 2 Z1 brute   1 formula   1
+D= 3 Z1 brute   2 formula   2
+D= 4 Z1 brute   5 formula   5
+D= 5 Z1 brute   6 formula   6
+D= 6 Z1 brute  11 formula  11
+D= 7 Z1 brute  13 formula  13
+D= 8 Z1 brute  19 formula  19
+D= 9 Z1 brute  22 formula  22
+D=10 Z1 brute  29 formula  29
+Z1 brute force vs formula (D <= 14): 0 differences
+count fails: G=4 D=3 Z1=2 Z2=0 (need 3)
+count fails: G=5 D=3 Z1=2 Z2=1 (need 4)
+count fails: G=6 D=3 Z1=2 Z2=1 (need 5)
+count fails: G=7 D=3 Z1=2 Z2=3 (need 6)
+Z2 Moebius vs direct (G <= 60): 0 differences
+zero count G=3..1000: 4 failures (all listed above); minimal margin for G >= 8: 1 at G=9 D=3

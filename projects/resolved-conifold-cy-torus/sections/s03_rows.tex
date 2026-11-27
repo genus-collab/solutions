@@ -1,0 +1,805 @@
+% s03_rows. Section file; new macros at the top; label prefix: row.
+% Local macros (used in this section only):
+\providecommand{\kE}{k_E}                              % s(1-s)(1-tau s)^{-2}
+\providecommand{\kph}{\kappa_{\mathrm{ph}}}            % constant of the phase, used nowhere
+\providecommand{\Lt}{\Lnorm_{\tau}}                    % \Lnorm[\phi_\tau,(1-\tau s)^{-1};s^*]
+\providecommand{\Ngauss}{\Nlap_{\mathrm{G}}}            % the conjugated expansion that solves Gauss's equation
+\providecommand{\Spht}{\mathsf{S}_{\phi,\tau}}              % d/dtau of the eikonal phase
+\providecommand{\Sphtt}{\mathsf{S}_{\phi,\tau\tau}}         % second tau-derivative of the eikonal phase
+\providecommand{\Abetam}[1]{\mathsf{A}_{\beta,#1}}         % z-coefficients of \Abeta
+\providecommand{\Bfn}{\mathrm{B}}                      % Euler's Beta function
+\section{The singular row: Euler integral, Gauss equation and the Beta constant}
+\label{sec:row}
+
+This section computes the frame-B identity row $\rr_{0,1}(z;t)$ at the singular idempotent in closed form, as a product of Gauss's hypergeometric series, an exponential of the critical value of an Euler phase and an algebraic unit of $\tau$, and derives from it the regularity of its $t$-coefficients and the value $\rr_{0,1}(z;0)=E/(E+z)$. Throughout, the weights satisfy the non-degeneracy condition (ND) of \cref{def:set-ND}, either as complex numbers or as indeterminates; by the passage (P) of \cref{lem:set-rings} an identity of the kind proved here holds at indeterminate weights if and only if it holds at every complex weight point with (ND). We use the Euler variable $s$, the critical polynomial $\Ns(s)=\wB\tau s^2-(E+\alpha_0\tau)s+\wA$ with its roots $\sast$, $\stil$, the algebraic functions $\delta$, $\sast$, $\stil$ and the discs $\Ddisc$, $\Ddisc'=\Ddisc\cap\{|\tau|<1\}$, $\Ddisc''=\Ddisc'\smallsetminus\{0\}$ of \cref{def:set-alg}, the identities of \cref{lem:set-N}, the eigenvalues $\Lv_1,\Lv_2$ of \cref{lem:set-eig}, and the point-frame row $\rpt_{0,1}$ of \cref{def:set-rows}. Each statement is either \emph{formal} (an identity of formal series, valid at every weight point with (ND)) or \emph{analytic} (a statement about convergent integrals, with explicit hypotheses); we say which. The only analytic statements are \cref{lem:row-laplace,lem:row-betaphase,prop:row-beta}, and the only analytic inputs are Laplace's method, which is proved in full in \cref{lem:row-laplace}, and Stirling's series with remainder \cite[5.11.1 and Section~5.11(ii)]{DLMF}.
+
+On functions of $t$ a prime denotes $\dd/\dd t=\thQ$, and $f_\tau$ denotes $\dd f/\dd\tau$, so that $f'=(1-\tau)f_\tau$ (recall $\tau=1-\re^{-t}$, $\dd\tau/\dd t=1-\tau$). On functions written in the Euler variable $s$ (phases, amplitudes) a prime or a superscript $(k)$ means $\dd/\dd s$, and $\de_\tau$ is the partial derivative in $\tau$ at fixed $s$. $\coef{t^k}$, $\coef{z^m}$, $\coef{\tau^n}$ denote coefficients, taken coefficientwise in the other variables.
+
+%-------------------------------------------------------------------------------
+\subsection{The Euler coordinate}
+\label{sec:row-euler}
+
+Recall the superpotential $\cW(U)=\alpha_1\log(1-\cQ U)-\alpha_2\log U+\wA\log(1-U)$ and $\cW_k=\thU^k\cW$ (\cref{lem:set-crit}). The \emph{Euler phase} is
+\begin{equation}
+\label{eq:row-phase}
+\phi_\tau(s)\coloneqq\wA\log s+\alpha_1\log(1-s)-\alpha_2\log(1-\tau s),
+\end{equation}
+so that $\phi_0(s)=\wA\log s+\alpha_1\log(1-s)$, and, by \cref{lem:set-N},
+\begin{equation}
+\label{eq:row-phaseder}
+\phi_\tau'(s)=\frac{\wA}{s}-\frac{\alpha_1}{1-s}+\frac{\alpha_2\tau}{1-\tau s}=\frac{\Ns(s)}{s(1-s)(1-\tau s)},
+\end{equation}
+because $\wA(1-s)(1-\tau s)-\alpha_1s(1-\tau s)+\alpha_2\tau s(1-s)=\wA-(\wA+\alpha_1)s-\wA\tau s+\alpha_2\tau s+(\wA+\alpha_1-\alpha_2)\tau s^2=\Ns(s)$, using $\wA+\alpha_1=E$, $\alpha_2-\wA=-\alpha_0$ and $\wA+\alpha_1-\alpha_2=\wB$. The critical points of $\phi_\tau$ in $\bbC\smallsetminus\{0,1,1/\tau\}$ are therefore the roots $\sast,\stil$ of $\Ns$; on $\Ddisc'$ the root $\sast$ is not in $\{0,1,1/\tau\}$, and on $\Ddisc''$ neither is $\stil$ (\cref{lem:set-N}). The critical value at the singular root, normalised at $\tau=0$, is the germ $\dphi$ of \cref{def:set-alg},
+\begin{equation}
+\label{eq:row-dphi}
+\dphi(\tau)=\phi_\tau(\sast(\tau))-\phi_0(\wA/E),\qquad \phi_0(\wA/E)=\wA\log\frac{\wA}{E}+\alpha_1\log\frac{\alpha_1}{E},
+\end{equation}
+with principal branches near $(\tau,s)=(0,\wA/E)$; it lies in $\tau\Oan$, and by the envelope formula of \cref{lem:set-N},
+\begin{equation}
+\label{eq:row-dphider}
+\dphi_\tau=\frac{\alpha_2\sast}{1-\tau\sast}=\frac{\wA-\wB\sast}{1-\tau},\qquad \dphi'=\wA-\wB\sast=\alpha_2-\Lv_2 .
+\end{equation}
+(The last equality is $\Lv_2=\wB\sast-\alpha_0$ of \cref{lem:set-eig} with $\wA-\alpha_2=\alpha_0$.)
+
+\begin{lem}[The Euler coordinate; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-euler}
+For $\tau\neq0$ put $U=1-\tau s$. Then
+\[
+1-U=\tau s,\qquad 1-\cQ U=(1-\cQ)(1-s)=-\cQ\tau(1-s),\qquad \frac{\dd U}{U}=-\frac{\tau\,\dd s}{1-\tau s},
+\]
+and on every simply connected domain of the $s$-plane avoiding $s=0,1,1/\tau$, with compatible branches of the logarithms,
+\begin{align}
+\label{eq:row-euler1}
+\cW(1-\tau s)&=\alpha_1\log\big(-\cQ\tau(1-s)\big)-\alpha_2\log(1-\tau s)+\wA\log(\tau s)\notag\\
+&=\phi_\tau(s)+E\log\tau+\alpha_1\log\cQ+\alpha_1\log(-1),\\
+\label{eq:row-euler2}
+\re^{\cW/z}\,\frac{\dd U}{U}&=\kph(z)\,\cQ^{\alpha_1/z}\,\tau^{E/z+1}\,\re^{\phi_\tau(s)/z}\,(1-\tau s)^{-1}\,\dd s,
+\end{align}
+where $\kph(z)\coloneqq-\re^{\alpha_1\log(-1)/z}$.
+\end{lem}
+
+\begin{proof}
+$1-\cQ U=1-\cQ+\cQ\tau s=(1-\cQ)(1-s)$ because $\cQ\tau=\cQ-1$. In \eqref{eq:row-euler1} the term $\alpha_1\log(-\cQ\tau(1-s))$ contributes $\alpha_1\log(1-s)+\alpha_1\log\tau+\alpha_1\log\cQ+\alpha_1\log(-1)$ and $\wA\log(\tau s)$ contributes $\wA\log s+\wA\log\tau$; the two multiples of $\log\tau$ add up to $(\alpha_1+\wA)\log\tau=E\log\tau$. Exponentiating \eqref{eq:row-euler1} divided by $z$ and multiplying by $\dd U/U=-\tau\,\dd s/(1-\tau s)$ gives \eqref{eq:row-euler2}.
+\end{proof}
+
+The constant $\kph$ depends on $z$ and on the branches only, not on $s$ or $t$; it plays no role below. In Pochhammer form, $\re^{\phi_\tau(s)/z}(1-\tau s)^{-1}=s^{\wA/z}(1-s)^{\alpha_1/z}(1-\tau s)^{-\alpha_2/z-1}$. The logarithmic points $U=1$, $U=1/\cQ$, $U=0$ of $\cW$ are $s=0$, $s=1$, $s=1/\tau$. At $t=0$ the first two collide ($1=1/\cQ$) and the singular critical point $U_1$ runs into them; in the coordinate $s$ they stay at $0$ and $1$, the critical point stays at $\sast(0)=\wA/E$ (strictly between them when $\alpha_1,\wA>0$), and $U=0$ escapes to $s=\infty$.
+
+%-------------------------------------------------------------------------------
+\subsection{Hessians and the tensor rule}
+\label{sec:row-hess}
+
+Define
+\begin{equation}
+\label{eq:row-algdef}
+\alg(\tau)\coloneqq(1-\tau\sast)\Big(\frac{\phi_\tau''(\sast)}{\phi_0''(\wA/E)}\Big)^{1/2},
+\end{equation}
+the square root with $\alg(0)=1$; that it is a well-defined unit of $\Oan$ is part of the next lemma.
+
+\begin{lem}[Hessians, $\alg^2$, the tensor rule; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-hess}
+Let $\tau\neq0$. (The parts are labelled (c) and (d); parts (a) and (b) of the same statement, the critical points and the identities (i)--(iv), are \cref{lem:set-N}.)
+\begin{enumerate}
+\item[(c)] At a root $s_c$ of $\Ns$, $\phi_\tau''(s_c)=\Ns'(s_c)/\big(s_c(1-s_c)(1-\tau s_c)\big)$; hence
+\begin{equation}
+\label{eq:row-hess}
+\phi_\tau''(\sast)=-\frac{\delta}{\sast(1-\sast)U_1},\qquad
+\phi_\tau''(\stil)=\frac{\delta}{\stil(1-\stil)U_2},\qquad
+\phi_0''(\wA/E)=-\frac{E^3}{\alpha_1\wA}.
+\end{equation}
+Both critical points are non-degenerate on $\Ddisc''$, and
+\begin{equation}
+\label{eq:row-alg}
+\alg^2=\frac{U_1^2\,\phi_\tau''(\sast)}{\phi_0''(\wA/E)}=\frac{\alpha_1\wA\,\delta\,U_1}{E^3\,\sast(1-\sast)}
+\end{equation}
+is a unit of $\Oan$ with value $1$ at $\tau=0$, so $\alg$ is well defined. Equivalently,
+\begin{equation}
+\label{eq:row-algp}
+\alg^2=\frac{\wA\,\delta\,(E-\wB\tau\sast)}{E^3\,\sast},\qquad E-\wB\tau\sast=\delta+\tau\Lv_2,
+\end{equation}
+and $E-\wB\tau\sast$ has no zero on $\Ddisc$. Since $\delta$ and $\sast$ are units of $\Oan(\Ddisc)$ as well, $\alg^2$ is a unit of $\Oan(\Ddisc)$, and $\alg$, $1/\alg$ are analytic on $\Ddisc$.
+\item[(d)] (Tensor rule.) For a function $G$ of $U$ and the composite $G(1-\tau s)$,
+\[
+\frac{\dd}{\dd s}G(1-\tau s)=-\frac{\tau}{1-\tau s}(\thU G)(1-\tau s),\qquad
+\frac{\dd^2}{\dd s^2}G(1-\tau s)=\Big(\frac{\tau}{1-\tau s}\Big)^2\big[\thU^2G-\thU G\big](1-\tau s).
+\]
+Since $\phi_\tau=\cW(1-\tau s)+\mathrm{const}$ by \eqref{eq:row-euler1} and $\cW_1(U_i)=0$,
+\begin{equation}
+\label{eq:row-tensor}
+\cW_2(U_i)=\frac{U_i^2\,\phi_\tau''(s_i)}{\tau^2}\quad((s_1,s_2)\coloneqq(\sast,\stil)),\qquad
+\cW_2(U_1)=-\frac{\delta\,U_1}{\tau^2\sast(1-\sast)},\qquad
+\cW_2(U_2)=\frac{\delta\,U_2}{\tau^2\stil(1-\stil)}.
+\end{equation}
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(c) Since $\phi_\tau'=\Ns/(s(1-s)(1-\tau s))$ and $\Ns(s_c)=0$, differentiating gives $\phi_\tau''(s_c)=\Ns'(s_c)/(s_c(1-s_c)(1-\tau s_c))$: the derivative of the denominator multiplies $\Ns(s_c)=0$. By \cref{lem:set-N}, $\Ns'(\sast)=2\wB\tau\sast-(E+\alpha_0\tau)=-\delta$ and $\Ns'(\stil)=\delta$, which gives the first two formulas of \eqref{eq:row-hess} with $1-\tau\sast=U_1$, $1-\tau\stil=U_2$. At $\tau=0$, $\phi_0''(s)=-\wA/s^2-\alpha_1/(1-s)^2$, and at $s=\wA/E$, $1-s=\alpha_1/E$, so $\phi_0''(\wA/E)=-\wA(E/\wA)^2-\alpha_1(E/\alpha_1)^2=-E^2(1/\wA+1/\alpha_1)=-E^3/(\alpha_1\wA)$. On $\Ddisc$ the function $\delta$ has no zero, and $\sast$, $1-\sast$, $U_1$ are units of $\Oan$ (values $\wA/E$, $\alpha_1/E$, $1$ at $\tau=0$), so $\phi_\tau''(\sast)$ is a unit of $\Oan$; likewise $\phi_\tau''(\stil)\neq0$ on $\Ddisc''$. Then \eqref{eq:row-alg} follows from \eqref{eq:row-hess}:
+\[
+\alg^2=U_1^2\cdot\Big(-\frac{\delta}{\sast(1-\sast)U_1}\Big)\cdot\Big(-\frac{\alpha_1\wA}{E^3}\Big)=\frac{\alpha_1\wA\,\delta\,U_1}{E^3\sast(1-\sast)},
+\]
+with value $E\cdot(\alpha_1\wA/E^3)\cdot(E/\wA)\cdot(E/\alpha_1)=1$ at $\tau=0$. So $\alg^2$ is a unit of $\Oan$ with value $1$, and $\alg$ is its square root with value $1$ (two square roots of a unit of $\Oan$ with the same value at $0$ coincide). For \eqref{eq:row-algp}, the second form of identity (ii) of \cref{lem:set-N}, $(E-\wB\tau\sast)(1-\sast)=\alpha_1(1-\tau\sast)$, reads $U_1/(1-\sast)=(E-\wB\tau\sast)/\alpha_1$; inserting it into \eqref{eq:row-alg} gives the first formula of \eqref{eq:row-algp}, and $E-\wB\tau\sast=\delta+\tau\Lv_2$ is identity (i) of \cref{lem:set-N}, $\delta=E+\alpha_0\tau-2\wB\tau\sast$, combined with $\tau\Lv_2=\wB\tau\sast-\alpha_0\tau$. If $\wB\tau\sast=E$ then $\Ns(\sast)=\sast(\wB\tau\sast-E-\alpha_0\tau)+\wA=-\alpha_0E/\wB+\wA=(\wA\wB-\alpha_0E)/\wB=\alpha_1\alpha_2/\wB\neq0$ (we used $\wA\wB=\alpha_1\alpha_2+\alpha_0E$), a contradiction; so $E-\wB\tau\sast$ has no zero on $\Ddisc$. As $\delta$ has no zero on $\Ddisc$ and $\sast=2\wA/(E+\alpha_0\tau+\delta)$ is analytic and non-vanishing on $\Ddisc$ (\cref{def:set-alg}), $\alg^2$ is a unit of $\Oan(\Ddisc)$; the disc is simply connected, so its square root $\alg$ with $\alg(0)=1$ and the inverse $1/\alg$ are analytic on $\Ddisc$.
+
+(d) $\dd U/\dd s=-\tau$ and $\thU=U\,\dd/\dd U$ give $\dd/\dd s=-(\tau/U)\thU$ on composites. Differentiating once more, $\dd/\dd s\,(-\tau/(1-\tau s))=-\tau^2/(1-\tau s)^2$, which gives the second formula. At a critical point $\thU\cW=\cW_1=0$, so $\dd^2/\dd s^2[\cW(1-\tau s)]=(\tau/U)^2\cW_2$ there; with \eqref{eq:row-euler1} and \eqref{eq:row-hess} this is \eqref{eq:row-tensor}.
+\end{proof}
+
+\begin{rmk}
+\label{rmk:row-hessfib}
+$\cW_2(U_1)$ has a double pole at $\tau=0$: the coordinate $y=\log U$ degenerates there ($\dd\log(1-\tau s)/\dd s=O(\tau)$), the coordinate $s$ does not. At $\alpha_0=0$ (where $\wA=\alpha_2$, $\wB=\alpha_1$) the critical equation $\Ns(s)=0$ factorises as $\alpha_2(1-s)=\alpha_1s(1-\tau s)$, and \eqref{eq:row-alg} becomes $\alg^2=\alpha_2^2\delta/(E^3\sast{}^2)$; at generic weights there is no factorisation of $\Ns(s)$ of this form, and the two forms of identity (ii) of \cref{lem:set-N} replace it in \cref{sec:row-eik} and in \cref{sec:lea}. The forms \eqref{eq:row-alg} and \eqref{eq:row-algp} of $\alg^2$ are also the two forms of $\Delta_1$ in \cref{prop:lea-key}.
+\end{rmk}
+
+%-------------------------------------------------------------------------------
+\subsection{The rescaled derivatives \texorpdfstring{$\tau^k\cW_k(U_1)$}{tau\textasciicircum k W\_k(U\_1)}}
+\label{sec:row-wr}
+
+For $k\geq1$,
+\begin{equation}
+\label{eq:row-phik}
+\begin{gathered}
+\phi_\tau^{(k)}(s)=(k-1)!\Big[(-1)^{k-1}\wA s^{-k}-\alpha_1(1-s)^{-k}+\alpha_2\tau^k(1-\tau s)^{-k}\Big],\\
+\phi_0^{(k)}(\wA/E)=(k-1)!\,E^k\Big[(-1)^{k-1}\wA^{1-k}-\alpha_1^{1-k}\Big],
+\end{gathered}
+\end{equation}
+since $(\wA/E)^{-k}=E^k\wA^{-k}$ and $(1-\wA/E)^{-k}=(\alpha_1/E)^{-k}=E^k\alpha_1^{-k}$. For $a\in\{1,\cQ\}$ put $p_a\coloneqq(1-aU)^{-1}$. Then $\thU\log(1-aU)=-aU/(1-aU)=1-p_a$ and $\thU p_a=aU/(1-aU)^2=p_a^2-p_a$. Define polynomials $\Pol_0(p)\coloneqq p$ and $\Pol_n(p)\coloneqq(p^2-p)\Pol_{n-1}'(p)$ (so $\Pol_1=p^2-p$, $\Pol_2=2p^3-3p^2+p$). By induction on $k$,
+\[
+\thU^k\log(1-aU)=-\Pol_{k-1}(p_a)\quad(k\geq2):
+\]
+for $k=2$, $\thU(1-p_a)=-(p_a^2-p_a)=-\Pol_1(p_a)$, and $\thU\Pol_{n-1}(p_a)=\Pol_{n-1}'(p_a)\thU p_a=(p_a^2-p_a)\Pol_{n-1}'(p_a)=\Pol_n(p_a)$. Also $\thU^k\log U=0$ for $k\geq2$ since $\thU\log U=1$. Hence
+\begin{equation}
+\label{eq:row-Wk}
+\cW_k=-\alpha_1\Pol_{k-1}(p_\cQ)-\wA\Pol_{k-1}(p_1)\qquad(k\geq2).
+\end{equation}
+$\Pol_n$ has degree $n+1$ and leading coefficient $n!$ (the degree rises by one and the leading coefficient is multiplied by $n$ at each step), and $\Pol_n(0)=0$; write $\Pol_{k-1}(p)=\sum_{i=1}^{k}\pc_{k-1,i}\,p^i$ with $\pc_{k-1,k}=(k-1)!$.
+
+\begin{lem}[Rescaled derivatives; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-wr}
+For $k\geq2$ and $\tau\in\Ddisc''$ put $\wrk_k(\tau)\coloneqq\tau^k\cW_k(U_1)$. Then
+\begin{equation}
+\label{eq:row-wr}
+\wrk_k=-\sum_{i=1}^{k}\pc_{k-1,i}\,\tau^{k-i}\Big[\alpha_1\Big(-\frac{1-\tau}{1-\sast}\Big)^{i}+\wA\,\sast{}^{-i}\Big],
+\end{equation}
+whose right side is analytic on $\Ddisc'$, $\tau=0$ included, with
+\[
+\wrk_k(0)=-(k-1)!\,E^k\Big[(-1)^k\alpha_1^{1-k}+\wA^{1-k}\Big]=(-1)^k\phi_0^{(k)}(\wA/E),\qquad
+\wrk_2=-\frac{\delta\,U_1}{\sast(1-\sast)}\ \text{(no zero on $\Ddisc'$)}.
+\]
+\end{lem}
+
+\begin{proof}
+For $\tau\in\Ddisc''$, $U_1=1-\tau\sast$ is not in $\{1,1/\cQ\}$ ($\tau\sast\neq0$, and $\cQ U_1=1$ would force $\sast=1$), so $\cW_k(U_1)$ is defined: by \eqref{eq:row-Wk} $\cW_k$ has poles only at $U=1$ and $U=1/\cQ$. At $U_1$, $1-U_1=\tau\sast$ and $1-\cQ U_1=-\cQ\tau(1-\sast)$ (\cref{lem:row-euler}), so, with $1/\cQ=1-\tau$,
+\[
+\tau\,p_1(U_1)=\frac{1}{\sast},\qquad \tau\,p_\cQ(U_1)=-\frac{1-\tau}{1-\sast}.
+\]
+Multiplying \eqref{eq:row-Wk} by $\tau^k$ and writing $\tau^k\Pol_{k-1}(p)=\sum_i\pc_{k-1,i}\tau^{k-i}(\tau p)^i$ gives \eqref{eq:row-wr}. Only powers $\tau^{k-i}$ with $0\leq k-i\leq k-1$ occur, and $\sast$, $1/\sast$, $1/(1-\sast)$ are analytic on $\Ddisc'$ (\cref{lem:set-N}: $\sast\notin\{0,1\}$ there), so the right side is analytic on $\Ddisc'$. At $\tau=0$ only $i=k$ survives; with $\sast(0)=\wA/E$, $1-\sast(0)=\alpha_1/E$ and $\pc_{k-1,k}=(k-1)!$,
+\[
+\wrk_k(0)=-(k-1)!\Big[\alpha_1\Big(-\frac{E}{\alpha_1}\Big)^k+\wA\Big(\frac{E}{\wA}\Big)^k\Big]=-(k-1)!\,E^k\Big[(-1)^k\alpha_1^{1-k}+\wA^{1-k}\Big],
+\]
+which equals $(-1)^k\phi_0^{(k)}(\wA/E)$ by \eqref{eq:row-phik}. Finally $\wrk_2=\tau^2\cW_2(U_1)$ is \eqref{eq:row-tensor}, and $\delta$, $U_1$, $\sast$, $1-\sast$ have no zero on $\Ddisc'$.
+\end{proof}
+
+So $\cW_k(U_1)=\tau^{-k}\wrk_k=O(\tau^{-k})$ and $\cW_2(U_1)^{-1}=O(\tau^2)$: the coordinate $y=\log U$ behaves at $t=0$ like $-\tau$ times a good coordinate (\cref{rmk:row-unif}).
+
+%-------------------------------------------------------------------------------
+\subsection{The formal Laplace calculus}
+\label{sec:row-laplace}
+
+This subsection contains no weights; it is the formal counterpart of Laplace's method for integrals $\int\re^{f/z}\amp\,\dd u$ through a non-degenerate critical point, together with the one analytic statement (\cref{lem:row-laplace}) that connects it with actual integrals. Only \cref{lem:row-laplace} is analytic; everything else is formal.
+
+\begin{defn}[The ring $\Acal$ and the Gaussian functional]
+\label{def:row-Acal}
+Let $\Acal$ be the set of formal sums $K=\sum_{p\geq0,\,q\in\bbZ}K_{pq}v^pz^q$ (coefficients complex numbers, or analytic functions of parameters) such that, with the weight $\mathrm{wt}(p,q)\coloneqq p/2+q$, (A1) $\mathrm{wt}$ is bounded below on the support of $K$, and (A2) for every $N$ only finitely many $(p,q)$ with $\mathrm{wt}\leq N$ occur. $\Acal$ is a ring (weights add; every coefficient of a product is a finite sum). It contains $\bbC\fps{v}[z,1/z]$ and $\mathrm{Exp}[\Rr(v)/z]\coloneqq\sum_j\Rr^j/(j!z^j)$ for every $\Rr\in v^3\bbC\fps{v}$ (the term $(\Rr/z)^j$ has weight $\geq j/2$). $\dd/\dd v$ is a derivation of $\Acal$ lowering weights by $1/2$, multiplication by $v$ raises them by $1/2$, and $\dd/\dd v\,\mathrm{Exp}[\Rr/z]=(\Rr'/z)\mathrm{Exp}[\Rr/z]$. For $a\neq0$ the \emph{Gaussian functional} (the formal moments of a centred Gaussian of variance $-z/a$) is
+\begin{equation}
+\label{eq:row-gaussfun}
+\gauss{K}{a}\coloneqq\sum_{p\ \mathrm{even},\,q}K_{pq}\,(p-1)!!\,\Big(-\frac za\Big)^{p/2}z^q\quad\in\Cz\qquad((-1)!!\coloneqq1).
+\end{equation}
+Each power $z^w$ receives contributions only from monomials of weight $w$, finitely many by (A2), and $w$ is bounded below by (A1); $\gauss{\cdot}{a}$ is linear over $\Cz$ and over functions of parameters, and maps elements of weight $\geq N$ into $z^N\bbC\fps{z}$.
+\end{defn}
+
+\begin{lem}[Gaussian calculus; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-gauss}
+For $K\in\Acal$:
+\begin{enumerate}
+\item[(G0)] scaling: $\gauss{K(\lambda v)}{\lambda^2a}=\gauss{K(v)}{a}$ for $\lambda\neq0$;
+\item[(G1)] integration by parts: $\gauss{\dd K/\dd v}{a}=-(a/z)\gauss{vK}{a}$;
+\item[(G2)] variance derivative: if $a=a(\tau)$ and $K$ depends analytically on $\tau$ (coefficientwise, with $\tau$-independent support), then
+\[
+\frac{\dd}{\dd\tau}\gauss{K}{a(\tau)}=\gauss{\dd K/\dd\tau}{a}+\frac{a_\tau}{2z}\gauss{v^2K}{a}+\frac{a_\tau}{2a}\gauss{K}{a}.
+\]
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+Each side is $\gauss{\mathsf{L}K}{\cdot}$ for an operator $\mathsf{L}$ on $\Acal$ that shifts weights by a bounded amount, so every $z$-coefficient involves finitely many monomials of $K$, and it suffices to take $K=v^p$ (for (G2), together with the product rule for the coefficients). Put $m_p\coloneqq\gauss{v^p}{a}$, so $m_{2n}=(2n-1)!!(-z/a)^n$ and $m_{\mathrm{odd}}=0$. (G0): $\lambda^{2n}(2n-1)!!(-z/(\lambda^2a))^n=m_{2n}$. (G1): for $p=2n+1$, $\gauss{p\,v^{2n}}{a}=(2n+1)!!(-z/a)^n=-(a/z)(2n+1)!!(-z/a)^{n+1}=-(a/z)m_{2n+2}$; for $p$ even both sides vanish. (G2): $\dd/\dd\tau\,(-z/a)^n=-n(a_\tau/a)(-z/a)^n$, and $(a_\tau/(2z))m_{2n+2}+(a_\tau/(2a))m_{2n}=m_{2n}(a_\tau/(2a))[-(2n+1)+1]=-n(a_\tau/a)m_{2n}$.
+\end{proof}
+
+\begin{defn}[Normalised formal Laplace expansions]
+\label{def:row-Lnorm}
+Data: a point $u_0$, a \emph{phase} $f$ analytic near $u_0$ (only its Taylor series matters) with $f'(u_0)=0$ and $f_2\coloneqq f''(u_0)\neq0$, and an \emph{amplitude} $\amp\in\Oan_{u_0}[z,1/z]$ (a Laurent polynomial in $z$ with coefficients analytic near $u_0$). Write
+\[
+f(u_0+v)=f(u_0)+\tfrac12f_2v^2+\Rr_f(v),\qquad \Rr_f(v)\coloneqq\sum_{k\geq3}f^{(k)}(u_0)\frac{v^k}{k!},
+\]
+and define
+\begin{align*}
+\Lnorm[f,\amp;u_0]&\coloneqq\gauss{\amp(u_0+v)\,\mathrm{Exp}[\Rr_f(v)/z]}{f_2}\quad\in\Cz,\\
+\Lhat[f,\amp;u_0]&\coloneqq\Lnorm[f,\amp;u_0]/\amp(u_0)\quad\text{for }\amp\in\Oan_{u_0},\ \amp(u_0)\neq0,\\
+\Lfull[f,\amp;u_0]&\coloneqq\re^{f(u_0)/z}(2\pi z)^{1/2}(-f_2)^{-1/2}\,\Lnorm[f,\amp;u_0],
+\end{align*}
+the Gaussian-normalised formal Laplace expansion, the normalised expansion (leading coefficient $1$), and the unnormalised expansion (a formal symbol, with a chosen root). $\Lfull$ is the formal counterpart of $\int\re^{f/z}\amp\,\dd u$ over a path through $u_0$ (\cref{lem:row-laplace}). Immediate properties:
+\begin{enumerate}
+\item[(D1)] (Wick form.) $\Lnorm[f,\amp;u_0]=\sum_{n\geq0}\frac{(2n)!}{n!\,2^n}\big(-\frac{z}{f_2}\big)^n\coef{v^{2n}}\big(\amp(u_0+v)\mathrm{Exp}[\Rr_f(v)/z]\big)$. For $\amp=1$ the coefficient of $z^m$ is the Wick polynomial $\wick_m$ of \cref{def:set-rows} with $\cW_k$ replaced by $f^{(k)}(u_0)$.
+\item[(D2)] For $\amp\in\Oan_{u_0}$, $\Lnorm[f,\amp;u_0]$ lies in $\bbC\fps{z}$ with constant term $\amp(u_0)$, and its $z^m$ coefficient is a polynomial with rational coefficients in $1/f_2$, $f^{(3)}(u_0),\dots,f^{(2m+2)}(u_0)$, $\amp(u_0),\dots,\amp^{(2m)}(u_0)$. (Both factors have weight $\geq0$; the weight-$m$ part involves monomials $v^a$ of $\amp$ with $a/2\leq m$ and terms $f^{(k)}v^k/(k!z)$ of weight $k/2-1\leq m$.)
+\item[(D3)] $\Lnorm$ depends only on the Taylor coefficients of $f$ and $\amp$ at $u_0$ (so a translation $u=u_0+v$ changes nothing), is unchanged when a constant is added to $f$, and is linear in $\amp$ over $\bbC[z,1/z]$ and over functions independent of $u$.
+\item[(D4)] (Rescaling of the phase.) For a constant $\lambda\neq0$ and an amplitude $\amp$ independent of $z$, $\Lnorm[\lambda f,\amp;u_0](z)=\Lnorm[f,\amp;u_0](z/\lambda)$: indeed $\Rr_{\lambda f}/z=\Rr_f/(z/\lambda)$, so every $z$-dependence of $\amp(u_0+v)\mathrm{Exp}[\Rr_{\lambda f}/z]$ is through $z/\lambda$, and $(-z/(\lambda f_2))^{p/2}=(-(z/\lambda)/f_2)^{p/2}$ in \eqref{eq:row-gaussfun}.
+\item[(D5)] (The parameters of the Beta phase.) By (D2) and \eqref{eq:row-phik}, the $z^m$ coefficient of $\Lnorm[\phi_0,1;\wA/E]$ is a polynomial with rational coefficients in $1/\phi_0''(\wA/E)=-\alpha_1\wA/E^3$ and in the $\phi_0^{(k)}(\wA/E)$ of \eqref{eq:row-phik}, hence an element of $\bbQ(\alpha_1,\wA)=\bbQ(\alpha_1,\wA,E)$, homogeneous of degree $-m$ in the weights (in (D1) a term with $j$ factors $f^{(k_i)}v^{k_i}/(k_i!z)$ in the $v^{2n}$ coefficient has $z$-order $n-j$ and degree $j-n$ in the weights, as each $f^{(k)}(\wA/E)$ has degree $1$ and $1/f_2$ has degree $-1$).
+\end{enumerate}
+\end{defn}
+
+\begin{prop}[(P3): total derivatives; formal]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-P3}
+For every $\mathsf{k}\in\Oan_{u_0}[z,1/z]$: $\Lnorm[f,\mathsf{k}'+f'\mathsf{k}/z;u_0]=0$. (The amplitude $\mathsf{k}'+f'\mathsf{k}/z$ is that of a total derivative: $\re^{f/z}(\mathsf{k}'+f'\mathsf{k}/z)=\dd/\dd u\,(\re^{f/z}\mathsf{k})$.)
+\end{prop}
+
+\begin{proof}
+Put $K(v)\coloneqq\mathsf{k}(u_0+v)\mathrm{Exp}[\Rr_f(v)/z]\in\Acal$. Since $f'(u_0+v)=f_2v+\Rr_f'(v)$, we have $(\mathsf{k}'+f'\mathsf{k}/z)(u_0+v)\mathrm{Exp}[\Rr_f(v)/z]=\dd K/\dd v+(f_2/z)vK$, and $\gauss{\dd K/\dd v}{f_2}+(f_2/z)\gauss{vK}{f_2}=0$ by (G1).
+\end{proof}
+
+\begin{prop}[(P2): derivative in a parameter with a moving expansion point; formal]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-P2}
+Let $f(\tau,s)$ and $\amp(\tau,s)$ be analytic near $(\tau_0,s_0)$ ($\amp$ may be a Laurent polynomial in $z$ with such coefficients), let $s_c(\tau)$ be analytic with $s_c(\tau_0)=s_0$, $\de_sf(\tau,s_c(\tau))=0$ and $f_2(\tau)\coloneqq\de_s^2f(\tau,s_c(\tau))\neq0$. Put $f_0(\tau)\coloneqq f(\tau,s_c(\tau))$ and $\mathsf{n}(\tau)\coloneqq\Lnorm[f(\tau,\cdot),\amp(\tau,\cdot);s_c(\tau)]$. Then every $z$-coefficient of $\mathsf{n}$ is analytic in $\tau$, and
+\begin{equation}
+\label{eq:row-P2}
+\de_\tau\mathsf{n}+\Big(\frac{f_{0,\tau}}{z}-\frac{f_{2,\tau}}{2f_2}\Big)\mathsf{n}=\Lnorm[f(\tau,\cdot),\Dam\amp;s_c(\tau)],\qquad \Dam\amp\coloneqq\de_\tau\amp+\amp\,\frac{\de_\tau f}{z},
+\end{equation}
+where $f_{0,\tau}=(\de_\tau f)(\tau,s_c(\tau))$ (by the critical-point condition) and $f_{2,\tau}$ is the total derivative of $f_2$. Equivalently, with $(-f_2(\tau))^{-1/2}$ chosen continuously, $\de_\tau\Lfull[f,\amp;s_c(\tau)]=\Lfull[f,\Dam\amp;s_c(\tau)]$: the expansion of the integrand $\re^{f/z}\amp$ commutes with $\dd/\dd\tau$ although the expansion point moves.
+\end{prop}
+
+\begin{proof}
+Analyticity follows from (D2), as $\de_s^kf(\tau,s_c(\tau))$, $\de_s^k\amp(\tau,s_c(\tau))$ and $1/f_2(\tau)$ are analytic.
+
+\emph{Step 1 (shifted variable).} Let $\tilde f(\tau,v)\coloneqq f(\tau,s_c(\tau)+v)$ and $\tilde\amp(\tau,v)\coloneqq\amp(\tau,s_c(\tau)+v)$. By (D3), $\mathsf{n}=\Lnorm[\tilde f,\tilde\amp;0]$, and $\de_v\tilde f(\tau,0)=0$ for all $\tau$. Write $\tilde f=f_0(\tau)+\frac12f_2(\tau)v^2+\tilde\Rr(\tau,v)$ and $\tilde K\coloneqq\tilde\amp\,\mathrm{Exp}[\tilde\Rr/z]\in\Acal$. By (G2), with $\de_\tau\tilde K=(\de_\tau\tilde\amp+\tilde\amp\,\de_\tau\tilde\Rr/z)\mathrm{Exp}[\tilde\Rr/z]$,
+\[
+\de_\tau\mathsf{n}=\gauss{(\de_\tau\tilde\amp+\tilde\amp\,\de_\tau\tilde\Rr/z)\mathrm{Exp}[\tilde\Rr/z]}{f_2}+\frac{f_{2,\tau}}{2z}\gauss{v^2\tilde K}{f_2}+\frac{f_{2,\tau}}{2f_2}\mathsf{n}.
+\]
+Since $\de_\tau\tilde f=f_{0,\tau}+\frac12f_{2,\tau}v^2+\de_\tau\tilde\Rr$,
+\begin{align*}
+\Lnorm[\tilde f,\de_\tau\tilde\amp+\tilde\amp\,\de_\tau\tilde f/z;0]
+&=\gauss{(\de_\tau\tilde\amp+\tilde\amp\,\de_\tau\tilde\Rr/z)\mathrm{Exp}[\tilde\Rr/z]}{f_2}+\frac{f_{0,\tau}}{z}\mathsf{n}+\frac{f_{2,\tau}}{2z}\gauss{v^2\tilde K}{f_2}\\
+&=\de_\tau\mathsf{n}+\Big(\frac{f_{0,\tau}}{z}-\frac{f_{2,\tau}}{2f_2}\Big)\mathsf{n}.
+\end{align*}
+
+\emph{Step 2 (back to $s$).} $\de_\tau\tilde\amp=(\de_\tau\amp+s_{c,\tau}\de_s\amp)(\tau,s_c+v)$ and $\de_\tau\tilde f=(\de_\tau f+s_{c,\tau}\de_sf)(\tau,s_c+v)$, so
+\[
+\de_\tau\tilde\amp+\tilde\amp\,\de_\tau\tilde f/z=\big[\Dam\amp+s_{c,\tau}\big(\de_s\amp+(\de_sf)\amp/z\big)\big](\tau,s_c+v).
+\]
+The last term is $s_{c,\tau}$ times an amplitude of the form $\mathsf{k}'+f'\mathsf{k}/z$ (with $\mathsf{k}=\amp(\tau,\cdot)$), whose $\Lnorm$ vanishes by \cref{prop:row-P3}. Translating back by (D3) gives \eqref{eq:row-P2}. The unnormalised form follows from $\de_\tau[\re^{f_0/z}(-f_2)^{-1/2}\mathsf{n}]=\re^{f_0/z}(-f_2)^{-1/2}[\de_\tau\mathsf{n}+(f_{0,\tau}/z-f_{2,\tau}/(2f_2))\mathsf{n}]$.
+\end{proof}
+
+In \eqref{eq:row-P2}, $f_{0,\tau}/z$ comes from the moving critical value $\re^{f_0/z}$, $-f_{2,\tau}/(2f_2)$ from the Gaussian normalisation $(-f_2)^{-1/2}$, and the motion of the expansion point is a total derivative.
+
+\begin{prop}[(P1): coordinate invariance; formal]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-P1}
+Let $h$ be analytic near $v_0$ with $h(v_0)=u_0$ and $h_1\coloneqq h'(v_0)\neq0$, and let $f$, $\amp$ be as in \cref{def:row-Lnorm} with $\amp\in\Oan_{u_0}$. Then $f\circ h$ has a non-degenerate critical point at $v_0$, $(f\circ h)(v_0)=f(u_0)$, $(f\circ h)''(v_0)=f_2h_1^2$, and
+\begin{equation}
+\label{eq:row-P1}
+\Lnorm[f\circ h,(\amp\circ h)\,h';v_0]=h_1\,\Lnorm[f,\amp;u_0].
+\end{equation}
+Exactly what is invariant: (i) the critical value $\re^{f(u_0)/z}$; (ii) the unnormalised expansion, $\Lfull[f\circ h,(\amp\circ h)h';v_0]=\Lfull[f,\amp;u_0]$, when the roots are related by $(-(f\circ h)''(v_0))^{1/2}=h_1(-f_2)^{1/2}$ (the Jacobian $h'$ in the amplitude is compensated by $h_1$ in the Gaussian normalisation; for real data and $h_1>0$ both roots are positive, and $h_1<0$ is the orientation reversal of the path); (iii) the normalised expansion, with no convention at all: $\Lhat[f\circ h,(\amp\circ h)h';v_0]=\Lhat[f,\amp;u_0]$, because $((\amp\circ h)h')(v_0)=h_1\amp(u_0)$.
+\end{prop}
+
+\begin{proof}
+For $\varepsilon\in\bbC$ let $h_\varepsilon(v)\coloneqq u_0+h_1(v-v_0)+\varepsilon\big(h(v)-u_0-h_1(v-v_0)\big)$; then $h_\varepsilon(v_0)=u_0$ and $h_\varepsilon'(v_0)=h_1$ for every $\varepsilon$, $h_0$ is affine and $h_\varepsilon=h$ at $\varepsilon=1$. On a neighbourhood $V$ of $v_0$ (uniform for $|\varepsilon|\leq2$) $h_\varepsilon'$ has no zero and $h_\varepsilon(V)$ lies in the domain of $f$, $\amp$. Put $f_\varepsilon\coloneqq f\circ h_\varepsilon$, $\amp_\varepsilon\coloneqq(\amp\circ h_\varepsilon)h_\varepsilon'$ and $n(\varepsilon)\coloneqq\Lnorm[f_\varepsilon,\amp_\varepsilon;v_0]$. Each $f_\varepsilon$ has a critical point at $v_0$ with critical value $f(u_0)$ and $f_\varepsilon''(v_0)=f_2h_1^2$, independent of $\varepsilon$; the Taylor coefficients of $f_\varepsilon$, $\amp_\varepsilon$ at $v_0$ are polynomials in $\varepsilon$, so by (D2) each $z$-coefficient of $n(\varepsilon)$ is a polynomial in $\varepsilon$. Now \eqref{eq:row-P2} with $\tau=\varepsilon$, $s_c(\varepsilon)=v_0$, $f_{0,\varepsilon}=0$, $f_{2,\varepsilon}=0$ gives $n'(\varepsilon)=\Lnorm[f_\varepsilon,\de_\varepsilon\amp_\varepsilon+\amp_\varepsilon\,\de_\varepsilon f_\varepsilon/z;v_0]$. Let $\eta_\varepsilon\coloneqq\de_\varepsilon h_\varepsilon=h(v)-u_0-h_1(v-v_0)$ and $\xi\coloneqq\eta_\varepsilon/h_\varepsilon'$. Then $\de_\varepsilon f_\varepsilon=(f'\circ h_\varepsilon)\eta_\varepsilon=\xi f_\varepsilon'$, and $\de_\varepsilon\amp_\varepsilon=(\amp'\circ h_\varepsilon)\eta_\varepsilon h_\varepsilon'+(\amp\circ h_\varepsilon)\eta_\varepsilon'=(\xi\amp_\varepsilon)'$ (because $\xi\amp_\varepsilon=\eta_\varepsilon(\amp\circ h_\varepsilon)$). So the amplitude is $(\xi\amp_\varepsilon)'+f_\varepsilon'(\xi\amp_\varepsilon)/z$, a total derivative, and $n'(\varepsilon)=0$ by \cref{prop:row-P3}; hence $n(1)=n(0)$. Finally, with $w=v-v_0$, $f_0(v_0+w)=f(u_0+h_1w)$ has $\Rr_{f_0}(w)=\Rr_f(h_1w)$ and $f_0''(v_0)=h_1^2f_2$, so by (G0) with $\lambda=h_1$, $n(0)=h_1\gauss{\amp(u_0+h_1w)\mathrm{Exp}[\Rr_f(h_1w)/z]}{h_1^2f_2}=h_1\Lnorm[f,\amp;u_0]$. (ii) and (iii) restate \eqref{eq:row-P1}. (Here $\eta_\varepsilon$ is an auxiliary function of this proof, not the pairing.)
+\end{proof}
+
+\begin{lem}[Laplace's method; analytic]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-laplace}
+Let $I$ be an open real interval, $f$ and $\amp$ real-analytic on $I$, $u_0\in I$ with $f'(u_0)=0$, $f''(u_0)<0$, and assume $\sup_{I\smallsetminus(u_0-e,u_0+e)}f<f(u_0)$ for every $e>0$ and $\int_I\re^{f/z_0}|\amp|\,\dd u<\infty$ for some $z_0>0$. Then for every $M$, as $z\to0^+$,
+\begin{equation}
+\label{eq:row-laplace}
+\int_I\re^{f(u)/z}\amp(u)\,\dd u=\re^{f(u_0)/z}\Big(\frac{2\pi z}{-f''(u_0)}\Big)^{1/2}\Big[\sum_{m<M}\big(\coef{z^m}\Lnorm[f,\amp;u_0]\big)z^m+O(z^M)\Big].
+\end{equation}
+\end{lem}
+
+\begin{proof}
+\emph{Localisation.} Fix $e>0$ small and $\eta>0$ with $f\leq f(u_0)-\eta$ outside $(u_0-e,u_0+e)$. There, for $0<z<z_0$, $\re^{f/z}=\re^{f/z_0}\re^{f(1/z-1/z_0)}\leq\re^{f/z_0}\re^{(f(u_0)-\eta)(1/z-1/z_0)}$, so the outer part of the integral is $O(\re^{(f(u_0)-\eta)/z})=\re^{f(u_0)/z}O(z^M)$ for every $M$.
+
+\emph{Morse coordinate.} $f(u)-f(u_0)=(u-u_0)^2q(u)$ with $q$ real-analytic and $q(u_0)=f''(u_0)/2<0$; shrinking $e$, $q<0$ on $(u_0-e,u_0+e)$, and $w(u)\coloneqq(u-u_0)\big(2q(u)/f''(u_0)\big)^{1/2}$ is real-analytic and strictly increasing there, with $w(u_0)=0$, $w'(u_0)=1$ and $f(u)=f(u_0)+\frac12f''(u_0)w^2$. Let $u(w)$ be the inverse map, $[w_-,w_+]$ ($w_-<0<w_+$) the image interval and $G(w)\coloneqq\amp(u(w))\,u'(w)$.
+
+\emph{Watson's lemma.} Put $\mathsf{a}\coloneqq-f''(u_0)>0$ and expand $G(w)=\sum_{p<2M}G_pw^p+O(|w|^{2M})$ on $[w_-,w_+]$. Each $\int_{w_-}^{w_+}\re^{-\mathsf{a}w^2/(2z)}w^p\,\dd w$ equals the integral over $\bbR$, which is $(2\pi z/\mathsf{a})^{1/2}(p-1)!!(z/\mathsf{a})^{p/2}$ for $p$ even and $0$ for $p$ odd, up to $O(\re^{-b/z})$ with $b>0$, and $\int_\bbR\re^{-\mathsf{a}w^2/(2z)}|w|^{2M}\,\dd w=O(z^{M+1/2})$. So the inner integral is
+\[
+\re^{f(u_0)/z}\Big(\frac{2\pi z}{\mathsf{a}}\Big)^{1/2}\Big[\sum_{n<M}G_{2n}(2n-1)!!\Big(\frac z{\mathsf{a}}\Big)^n+O(z^M)\Big],
+\]
+and by \eqref{eq:row-gaussfun} and (D3)
+\[
+\sum_nG_{2n}(2n-1)!!\Big(\frac z{\mathsf{a}}\Big)^n=\gauss{G}{-\mathsf{a}}=\Lnorm[\tfrac12f''(u_0)w^2,G;0].
+\]
+Finally \eqref{eq:row-P1} with $h=u(w)$, $h_1=1$, and (D3) for the constant $f(u_0)$ give $\Lnorm[f\circ u,(\amp\circ u)u';0]=\Lnorm[f,\amp;u_0]$.
+\end{proof}
+
+\Cref{lem:row-laplace} is used only for Beta integrals, in \cref{lem:row-betaphase,prop:row-beta}.
+
+\begin{lem}[Homogeneity of the Wick coefficients; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-homog}
+Every monomial of $\wick_m$ is a rational multiple of $\cW_2^{-n}\prod_{i=1}^{n-m}\cW_{k_i}$ with all $k_i\geq3$ and $\sum_ik_i=2n$. Consequently, for every $\lambda\neq0$, as an identity of rational functions of the $\cW_k$,
+\begin{equation}
+\label{eq:row-homog}
+\wick_m(\lambda^2\cW_2,\lambda^3\cW_3,\dots,\lambda^{2m+2}\cW_{2m+2})=\wick_m(\cW_2,\cW_3,\dots,\cW_{2m+2}),
+\end{equation}
+and $\Lnorm[f(u_0+\lambda\,\cdot),1;0]=\Lnorm[f,1;u_0]$ for $f$ as in \cref{def:row-Lnorm}.
+\end{lem}
+
+\begin{proof}
+By the Wick formula of \cref{def:set-rows}, the monomials of the $z^m$ coefficient are $\cW_2^{-n}\prod_{k\in p}\cW_k$ with $p$ a partition of $2n$ into $n-m$ parts $\geq3$; under $\cW_k\mapsto\lambda^k\cW_k$ such a monomial is multiplied by $\lambda^{-2n}\lambda^{2n}=1$. For the second statement put $f_\lambda(v)\coloneqq f(u_0+\lambda v)$; then $f_\lambda'(0)=0$ and $f_\lambda^{(k)}(0)=\lambda^kf^{(k)}(u_0)$, so by (D1) the two $z^m$ coefficients are $\wick_m$ at the arguments $\lambda^kf^{(k)}(u_0)$ and $f^{(k)}(u_0)$, which agree by \eqref{eq:row-homog}. (Equivalently: (G0) for $K=\mathrm{Exp}[\Rr_f/z]$.)
+\end{proof}
+
+In words: giving $\cW_k$ the weight $k$, every Wick monomial has weight $-2n+\sum k_i=0$, so the Wick formula is blind to linear rescalings of the coordinate. This is why the degenerate coordinate $y=\log U$ is harmless.
+
+%-------------------------------------------------------------------------------
+\subsection{The point-frame row is the normalised expansion of the Euler integrand}
+\label{sec:row-wickrow}
+
+Recall from \cref{def:set-rows} that the point-frame identity row at the singular idempotent is
+\[
+\rpt_{0,1}(z;t)=\sum_{m\geq0}z^m\wick_m\big(\cW_2(U_1),\cW_3(U_1),\dots\big).
+\]
+Put
+\begin{equation}
+\label{eq:row-Ndef}
+\begin{gathered}
+\Nlap(z,\tau)\coloneqq\Lhat[\phi_\tau,(1-\tau s)^{-1};\sast(\tau)]=U_1\,\Lnorm[\phi_\tau,(1-\tau s)^{-1};\sast(\tau)],\\
+\Abeta(z)\coloneqq\Lnorm[\phi_0,1;\wA/E],\qquad \Abetam{m}\coloneqq\coef{z^m}\Abeta .
+\end{gathered}
+\end{equation}
+
+\begin{prop}[formal]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-wickrow}
+\begin{enumerate}
+\item For every $\tau\in\Ddisc''$ (every small $t\neq0$), coefficientwise in $z$,
+\begin{equation}
+\label{eq:row-wickrow}
+\rpt_{0,1}(z;t)=\Nlap(z,\tau).
+\end{equation}
+\item For every $m\geq0$ and $\tau\in\Ddisc''$,
+\begin{equation}
+\label{eq:row-wick13}
+\coef{z^m}\rpt_{0,1}(z;t)=\wick_m\big(\cW_2(U_1),\cW_3(U_1),\dots\big)=\wick_m\big(\wrk_2(\tau),\wrk_3(\tau),\dots,\wrk_{2m+2}(\tau)\big),
+\end{equation}
+a polynomial in $1/\wrk_2,\wrk_3,\dots,\wrk_{2m+2}$ with rational coefficients. Hence the $z^m$ coefficient of $\rpt_{0,1}$, an algebraic function of $\cQ$, extends analytically to all of $\Ddisc'$, $\tau=0$ included, and its value at $\tau=0$ is $\Abetam{m}$.
+\item The $z^m$ coefficient $\Nlap_m$ of $\Nlap$ is analytic on $\Ddisc'$ and $\Nlap(z,0)=\Abeta(z)$. So \eqref{eq:row-wickrow} holds on all of $\Ddisc'$, $\Nlap$ lies in $\Oan(\Ddisc')\fps{z}$, and the Taylor series at $t=0$ of the $z^m$ coefficient of $\rpt_{0,1}$ is that of $\Nlap_m(\tau(t))$: \eqref{eq:row-wickrow} holds in $\bbC\fps{z}\fps{t}$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\emph{(1) The point-frame row is a normalised expansion in $y=\log U$.} Fix $\tau\in\Ddisc''$. Then $U_1\neq0$ (as $\sast\neq1/\tau$), so $y_1\coloneqq\log U_1$ (any branch) is defined and $\cW_y(y)\coloneqq\cW(\re^y)$ is analytic near $y_1$, with $\cW_y^{(k)}(y_1)=\cW_k(U_1)$ (since $\dd/\dd y=\thU$), $\cW_y'(y_1)=0$ and $\cW_y''(y_1)=\cW_2(U_1)=-\delta U_1/(\tau^2\sast(1-\sast))\neq0$ by \eqref{eq:row-tensor} ($\delta U_1\neq0$ on $\Ddisc''$). In this coordinate the integrand is $\re^{\cW/z}\,\dd U/U=\re^{\cW_y(y)/z}\,\dd y$, with amplitude $1$. By (D1) and the Wick formula of \cref{def:set-rows}, $\rpt_{0,1}(z;t)=\Lnorm[\cW_y,1;y_1]=\Lhat[\cW_y,1;y_1]$, to every order in $z$.
+
+\emph{(2) Change of coordinate; proof of (i).} $h(s)\coloneqq\log(1-\tau s)$, with the branch for which $h(\sast)=y_1$, is analytic near $\sast$, and $h'(\sast)=-\tau/U_1\neq0$. By \eqref{eq:row-euler1}, $\cW_y\circ h=\phi_\tau+\mathrm{const}$ near $\sast$, and the amplitude $1$ becomes $(1\circ h)h'=-\tau(1-\tau s)^{-1}$. By \cref{prop:row-P1}(iii), (D3) and linearity (the factor $-\tau$),
+\[
+\Lhat[\cW_y,1;y_1]=\Lhat[\phi_\tau,-\tau(1-\tau s)^{-1};\sast]=\Lhat[\phi_\tau,(1-\tau s)^{-1};\sast]=\Nlap(z,\tau),
+\]
+and $\Lhat=\Lnorm/(1-\tau\sast)^{-1}=U_1\Lnorm$.
+
+\emph{(3) Proof of (ii).} The first equality in \eqref{eq:row-wick13} is the definition. By \eqref{eq:row-homog} with $\lambda=\tau$, $\wick_m(\cW_k(U_1))=\wick_m(\tau^k\cW_k(U_1))=\wick_m(\wrk_k)$. By \cref{lem:row-wr} every $\wrk_k$ is analytic on $\Ddisc'$ and $\wrk_2$ has no zero there, so the right side of \eqref{eq:row-wick13} is analytic on $\Ddisc'$. At $\tau=0$, $\wrk_k(0)=(-1)^k\phi_0^{(k)}(\wA/E)$, and \eqref{eq:row-homog} with $\lambda=-1$ followed by (D1) ($\phi_0'(\wA/E)=E-E=0$, $\phi_0''(\wA/E)=-E^3/(\alpha_1\wA)\neq0$) gives $\wick_m(\wrk_k(0))=\wick_m(\phi_0^{(k)}(\wA/E))=\coef{z^m}\Lnorm[\phi_0,1;\wA/E]=\Abetam{m}$. No coordinate change, i.e.\ no use of (P1), occurs here.
+
+\emph{(4) Proof of (iii).} By (D2), $\Nlap_m$ is a polynomial in $1/\phi_\tau''(\sast)$, in the $\phi_\tau^{(k)}(\sast)$ ($k\leq2m+2$), in the derivatives $\de_s^a(1-\tau s)^{-1}$ at $\sast$, which equal $a!\,\tau^aU_1^{-a-1}$ ($a\leq2m$), and in $U_1$. By \eqref{eq:row-phik} all of these are analytic on $\Ddisc'$, since $\sast$ is analytic there, $\sast\notin\{0,1,1/\tau\}$, and $\phi_\tau''(\sast)\neq0$ (\cref{lem:row-hess}). At $\tau=0$, $\sast(0)=\wA/E$ and $(1-0\cdot s)^{-1}=1$, so $\Nlap(z,0)=\Abeta(z)$. By (i) the analytic functions of (ii) and $\Nlap_m$ agree on $\Ddisc''$, and by (ii) and $\Nlap(z,0)=\Abeta(z)$ also at $\tau=0$. Finally $t\mapsto\tau=1-\re^{-t}$ is analytic with $\tau(0)=0$.
+\end{proof}
+
+\begin{rmk}[The degenerate coordinate; a uniform version without continuation]
+\label{rmk:row-unif}
+In $y$ the inputs of the Wick formula blow up at $t=0$ ($\cW_k(U_1)=\tau^{-k}\wrk_k$, $\cW_2(U_1)^{-1}=O(\tau^2)$, $h'(\sast)=O(\tau)$), yet every single Wick monomial is analytic there: a monomial $\cW_2^{-n}\prod\cW_{k_i}$ has $\sum k_i=2n$, so it equals $\wrk_2^{-n}\prod\wrk_{k_i}$; no cancellation between monomials is needed. Geometrically $y$ is $-\tau$ times a coordinate that is good uniformly near $\tau=0$. Let
+\[
+\tilde y\coloneqq-\frac{\log(1-\tau s)}{\tau}=\sum_{n\geq1}\frac{\tau^{n-1}s^n}{n},\qquad
+s=\varsigma_\tau(\tilde y)\coloneqq\frac{1-\re^{-\tau\tilde y}}{\tau}=\sum_{n\geq1}\frac{(-\tau)^{n-1}\tilde y^n}{n!}
+\]
+($\tilde y=s$ at $\tau=0$). $\varsigma$ is entire in $(\tau,\tilde y)$, $\varsigma_0=\mathrm{id}$, $\dd\varsigma_\tau/\dd\tilde y=\re^{-\tau\tilde y}=1-\tau\varsigma_\tau(\tilde y)$, $U=\re^{-\tau\tilde y}$, i.e.\ $y=-\tau\tilde y$ and $\dd/\dd\tilde y=-\tau\thU$. By \eqref{eq:row-euler1},
+\begin{equation}
+\label{eq:row-unif}
+\cW(\re^{-\tau\tilde y})=\phi_\tau(\varsigma_\tau(\tilde y))+E\log\tau+\alpha_1\log\cQ+\alpha_1\log(-1),
+\end{equation}
+and the first term on the right is analytic in $(\tau,\tilde y)$ near $(0,\wA/E)$. With $\tilde y_1(\tau)\coloneqq-\log(U_1)/\tau$ (principal branch; $\tilde y_1(0)=\wA/E$, $\varsigma_\tau(\tilde y_1)=\sast$), differentiating \eqref{eq:row-unif} $k\geq2$ times gives
+\begin{equation}
+\label{eq:row-unif2}
+(-\tau)^k\cW_k(U_1)=(-1)^k\wrk_k(\tau)=\frac{\dd^k}{\dd\tilde y^k}\big[\phi_\tau\circ\varsigma_\tau\big](\tilde y_1(\tau)),
+\end{equation}
+which re-proves \cref{lem:row-wr} near $\tau=0$. For $\tau\neq0$, \cref{lem:row-homog} ($\lambda=-\tau$), \eqref{eq:row-unif} and (D3) give $\rpt_{0,1}(z;t)=\Lnorm[\cW_y,1;y_1]=\Lnorm[\phi_\tau\circ\varsigma_\tau,1;\tilde y_1]$. The right side is defined for every small $\tau$, $\tau=0$ included (second derivative $\wrk_2\neq0$, equal to $-E^3/(\alpha_1\wA)$ at $\tau=0$; coefficients analytic in $\tau$ by (D2)). \Cref{prop:row-P1} with $h=\varsigma_\tau$, $v_0=\tilde y_1$, $u_0=\sast$, $h_1=U_1$ and $\amp=(1-\tau s)^{-1}$, for which $(\amp\circ h)h'=\re^{-\tau\tilde y}/(1-\tau\varsigma_\tau(\tilde y))=1$, gives $\Lnorm[\phi_\tau\circ\varsigma_\tau,1;\tilde y_1]=U_1\Lnorm[\phi_\tau,(1-\tau s)^{-1};\sast]=\Nlap(z,\tau)$ at every small $\tau$, $\tau=0$ included.
+\end{rmk}
+
+%-------------------------------------------------------------------------------
+\subsection{Gauss's equation for the formal expansion}
+\label{sec:row-gauss}
+
+Gauss's parameters and series are
+\begin{equation}
+\label{eq:row-gaussdef}
+\begin{gathered}
+\ga\coloneqq1+\frac{\alpha_2}{z},\qquad \gb\coloneqq1+\frac{\wA}{z},\qquad \gc\coloneqq2+\frac Ez,\qquad
+\Fhyp(z,\tau)\coloneqq{}_2F_1(\ga,\gb;\gc;\tau)=\sum_{n\geq0}\Fhyp_n(z)\tau^n,\\
+\Fhyp_n=\frac{(\ga)_n(\gb)_n}{(\gc)_n\,n!}=\frac{\prod_{j=1}^{n}(\alpha_2+jz)(\wA+jz)}{n!\,z^n\prod_{j=2}^{n+1}(E+jz)}\in\Kal(z),
+\end{gathered}
+\end{equation}
+using $(1+v/z)_n=z^{-n}\prod_{j=1}^n(v+jz)$ and $(2+E/z)_n=z^{-n}\prod_{j=2}^{n+1}(E+jz)$. Gauss's operator, acting on $\Cz\fps{\tau}$ with $\dd/\dd\tau$-derivatives, is
+\begin{equation}
+\label{eq:row-gaussop}
+\begin{gathered}
+\Gauss[Y]\coloneqq\tau(1-\tau)Y_{\tau\tau}+\big(\gc-(\ga+\gb+1)\tau\big)Y_\tau-\ga\gb\,Y,\\
+\ga+\gb+1=3+\frac{\alpha_2+\wA}{z},\qquad \ga\gb=1+\frac{\alpha_2+\wA}{z}+\frac{\alpha_2\wA}{z^2}.
+\end{gathered}
+\end{equation}
+Further, $\Ephi\coloneqq\mathrm{Exp}[-\dphi/z]=\sum_l(-\dphi)^l/(l!z^l)$, an element of $\bbC[1/z]\fps{\tau}$ ($\tau$-adically convergent since $\dphi=O(\tau)$), with $\Ephi_n\coloneqq\coef{\tau^n}\Ephi$ a polynomial of degree $\leq n$ in $1/z$; $\Ephi^{-1}=\mathrm{Exp}[\dphi/z]=\Ephi(-z)$ and $z\Ephi'=-\dphi'\Ephi$. Finally $\Hcoef_n\coloneqq\coef{\tau^n}(\Fhyp\Ephi)=\sum_{n_1+n_2=n}\Fhyp_{n_1}\Ephi_{n_2}$ and $\Kcoef_n\coloneqq\coef{\tau^n}(\Fhyp\Ephi\alg)$, elements of $\Kal(z)$ (the Taylor coefficients of $\alg$ and $\dphi$ lie in $\Kal$ by (P) of \cref{lem:set-rings}).
+
+\begin{lem}[The amplitude identity; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-amp}
+Put $f\coloneqq\phi_\tau$, $\amp_0\coloneqq(1-\tau s)^{-1}$ and $\Dam q\coloneqq\de_\tau q+q\,(\de_\tau f)/z$ as in \eqref{eq:row-P2}, so that $\re^{f/z}\Dam q=\de_\tau(\re^{f/z}q)$. Since $\de_\tau f=\alpha_2s/(1-\tau s)$,
+\[
+\Dam\amp_0=\ga\,s(1-\tau s)^{-2},\qquad \Dam^2\amp_0=\ga(\ga+1)\,s^2(1-\tau s)^{-3},
+\]
+and, with $\kE\coloneqq s(1-s)(1-\tau s)^{-2}$,
+\begin{equation}
+\label{eq:row-amp}
+\tau(1-\tau)\Dam^2\amp_0+\big(\gc-(\ga+\gb+1)\tau\big)\Dam\amp_0-\ga\gb\,\amp_0=-\ga\,\big(\kE'+f'\kE/z\big).
+\end{equation}
+This is an identity of Laurent polynomials in $z$ with coefficients rational in $(s,\tau)$, valid identically in $(s,\tau)$, not only at a critical point.
+\end{lem}
+
+\begin{proof}
+$\de_\tau\amp_0=s(1-\tau s)^{-2}$, so $\Dam\amp_0=s(1-\tau s)^{-2}(1+\alpha_2/z)=\ga s(1-\tau s)^{-2}$; and $\Dam[s(1-\tau s)^{-2}]=2s^2(1-\tau s)^{-3}+(\alpha_2/z)s^2(1-\tau s)^{-3}=(\ga+1)s^2(1-\tau s)^{-3}$. For \eqref{eq:row-amp}, multiply by $(1-\tau s)^3/\ga$. Since $f'\kE=\Ns(s)(1-\tau s)^{-3}$ by \eqref{eq:row-phaseder} and $\kE'=[(1-2s)(1-\tau s)+2\tau s(1-s)](1-\tau s)^{-3}$, the claim becomes
+\[
+\tau(1-\tau)(\ga+1)s^2+\big(\gc-(\ga+\gb+1)\tau\big)s(1-\tau s)-\gb(1-\tau s)^2=-(1-2s)(1-\tau s)-2\tau s(1-s)-\frac{\Ns(s)}{z},
+\]
+an identity between Laurent polynomials in $z$ of order $\geq-1$. Coefficient of $1/z$ on the left: $\tau(1-\tau)\alpha_2s^2+\big(E-(\alpha_2+\wA)\tau\big)s(1-\tau s)-\wA(1-\tau s)^2$; expanding,
+\begin{align*}
+&\tau\alpha_2s^2-\tau^2\alpha_2s^2+Es-E\tau s^2-(\alpha_2+\wA)\tau s+(\alpha_2+\wA)\tau^2s^2-\wA+2\wA\tau s-\wA\tau^2s^2\\
+&\quad=-\wA+\big[E+(\wA-\alpha_2)\tau\big]s+(\alpha_2-E)\tau s^2+(-\alpha_2+\alpha_2+\wA-\wA)\tau^2s^2\\
+&\quad=-\wA+(E+\alpha_0\tau)s-\wB\tau s^2=-\Ns(s),
+\end{align*}
+using $\wA-\alpha_2=\alpha_0$ and $E-\alpha_2=\wB$. Coefficient of $z^0$ on the left: $2\tau(1-\tau)s^2+(2-3\tau)s(1-\tau s)-(1-\tau s)^2=2\tau s^2-2\tau^2s^2+2s-3\tau s-2\tau s^2+3\tau^2s^2-1+2\tau s-\tau^2s^2=2s-\tau s-1$; on the right, $-(1-2s)(1-\tau s)-2\tau s(1-s)=-1+\tau s+2s-2\tau s^2-2\tau s+2\tau s^2=2s-\tau s-1$.
+\end{proof}
+
+Identity \eqref{eq:row-amp} is Euler's integration by parts for the integrand $s^{\gb-1}(1-s)^{\gc-\gb-1}(1-\tau s)^{-\ga}$, written for amplitudes (\cref{rmk:row-eulerint}).
+
+\begin{prop}[Gauss's equation for the formal expansion; formal]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-gaussode}
+Let $\Lt\coloneqq\Lnorm[\phi_\tau,(1-\tau s)^{-1};\sast(\tau)]$, an element of $\Oan(\Ddisc')\fps{z}$ by \cref{prop:row-wickrow}(iii), and
+\[
+\Ngauss(z,\tau)\coloneqq\mathrm{Exp}[\dphi(\tau)/z]\,\Big(\frac{\phi_\tau''(\sast)}{\phi_0''(\wA/E)}\Big)^{-1/2}\iota(\Lt)\quad\in\Cz\fps{\tau}
+\]
+(root with value $1$ at $\tau=0$; $\iota$ is the Taylor expansion of \cref{lem:set-rings}). Then $\Gauss[\Ngauss]=0$ in $\Cz\fps{\tau}$, $\Ngauss(z,0)=\Abeta(z)$, which lies in $1+z\Kal\fps{z}$, and $\Ngauss=\mathrm{Exp}[\dphi/z]\,\Nlap/\alg$.
+\end{prop}
+
+\begin{proof}
+Here, in the notation of \cref{prop:row-P2}, $f=\phi_\tau$, $s_c=\sast$, $f_0(\tau)=\phi_\tau(\sast(\tau))$, so $f_{0,\tau}=\dphi_\tau$, and $f_2(\tau)=\phi_\tau''(\sast(\tau))$. Let $\nabla\coloneqq\dd/\dd\tau+\dphi_\tau/z-f_{2,\tau}/(2f_2)$, acting on $\Oan((z))$-valued expressions. \Cref{prop:row-P2}, applied to each $z$-power of an amplitude $q$, says $\nabla\Lnorm[q]=\Lnorm[\Dam q]$ (expansion point $\sast(\tau)$ throughout); applying it twice and using (D3) (linearity over $\bbC[\tau][z,1/z]$),
+\[
+\big[\tau(1-\tau)\nabla^2+(\gc-(\ga+\gb+1)\tau)\nabla-\ga\gb\big]\Lt=\Lnorm\big[\text{left side of \eqref{eq:row-amp}}\big]=-\ga\,\Lnorm[\kE'+f'\kE/z]=0
+\]
+by \cref{prop:row-P3}. Let $\mathsf{J}\coloneqq\mathrm{Exp}[\dphi/z](f_2(\tau)/f_2(0))^{-1/2}\in\bbC[1/z]\fps{\tau}$. In $\Cz\fps{\tau}$, $\dd/\dd\tau\,(\mathsf{J}Y)=\mathsf{J}\nabla Y$, because $\mathsf{J}_\tau=\mathsf{J}(\dphi_\tau/z-f_{2,\tau}/(2f_2))$ ($\iota$ commutes with $\dd/\dd\tau$ and with multiplication by convergent functions of $\tau$, and $(\mathrm{Exp}[\dphi/z])_\tau=(\dphi_\tau/z)\mathrm{Exp}[\dphi/z]$). Hence $\Gauss[\mathsf{J}\iota(\Lt)]=\mathsf{J}\,\iota\big([\tau(1-\tau)\nabla^2+\dots]\Lt\big)=0$. At $\tau=0$: $\sast(0)=\wA/E$, $(1-0\cdot s)^{-1}=1$ and $\dphi(0)=0$, so $\Ngauss(z,0)=\Lnorm[\phi_0,1;\wA/E]=\Abeta(z)$, which lies in $1+z\Kal\fps{z}$ by (D5). Finally $\Nlap=U_1\Lt$ and $\alg=U_1(f_2(\tau)/f_2(0))^{1/2}$ by \eqref{eq:row-algdef}, so $\Ngauss=\mathrm{Exp}[\dphi/z]\Nlap/\alg$.
+\end{proof}
+
+No boundary term occurs at any stage: the formal functional kills total derivatives exactly (\cref{prop:row-P3}), which is the formal shadow of the vanishing boundary terms of Euler's integration by parts, valid for all weights and all $z$.
+
+%-------------------------------------------------------------------------------
+\subsection{Uniqueness and the closed form}
+\label{sec:row-closed}
+
+\begin{lem}[Uniqueness; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-unique}
+If $Y=\sum_kY_k\tau^k\in\Cz\fps{\tau}$ satisfies $\Gauss[Y]=0$, then $Y=Y_0\Fhyp$.
+\end{lem}
+
+\begin{proof}
+The coefficient of $\tau^k$ in $\Gauss[Y]$ is
+\[
+(k+1)kY_{k+1}-k(k-1)Y_k+\gc(k+1)Y_{k+1}-(\ga+\gb+1)kY_k-\ga\gb Y_k=(k+1)(k+\gc)Y_{k+1}-(k+\ga)(k+\gb)Y_k .
+\]
+Now $k+\gc=(E+(k+2)z)/z$ is a unit of $\Cz$ because $E\neq0$ (this is the only place where the parameters enter), and $k+1\neq0$, so $Y_{k+1}=(k+\ga)(k+\gb)Y_k/((k+1)(k+\gc))$, whence $Y_k=Y_0\Fhyp_k$ by induction.
+\end{proof}
+
+So the solutions of Gauss's equation in $\Cz\fps{\tau}$ form the line $\Cz\Fhyp$; the second local exponent at $\tau=0$, $1-\gc=-1-E/z$, is not in this ring. (The same recursion shows $\Gauss[\Fhyp]=0$: $\Fhyp_{n+1}/\Fhyp_n=(n+\ga)(n+\gb)/((n+1)(n+\gc))$. The exponents of Gauss's equation at $\tau=0$ are $0$ and $1-\gc$; those of the Picard--Fuchs operator $z^2(\cQ-1)\thQ^2-z(\alpha_0+(\alpha_1+\alpha_2)\cQ)\thQ+\alpha_1\alpha_2\cQ$ at $\cQ=1$ are $0$ and $1+E/z$: only $E$ enters at $\cQ=1$. This is not used.)
+
+\begin{thm}[The closed form; formal]\genusstatus{AI-proposed, unchecked}
+\label{thm:row-closed}
+In $\Cz\fps{\tau}$,
+\begin{equation}
+\label{eq:row-closed}
+\Nlap(z,\tau)=\Abeta(z)\,\Fhyp(z,\tau)\,\Ephi(z,\tau)\,\alg(\tau).
+\end{equation}
+\end{thm}
+
+\begin{proof}
+By \cref{prop:row-gaussode,lem:row-unique}, $\Ngauss=\Ngauss(z,0)\Fhyp=\Abeta\Fhyp$. Multiply by $\alg\,\Ephi$ ($\alg$ is in $\Oan$, $\Ephi$ is the inverse of $\mathrm{Exp}[\dphi/z]$ in $\bbC[1/z]\fps{\tau}$) and use $\Ngauss=\mathrm{Exp}[\dphi/z]\Nlap/\alg$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The Beta constant}
+\label{sec:row-beta}
+
+The constant $\Abeta(z)$ of \eqref{eq:row-closed} is the normalised Laplace expansion of a Beta integral. Its evaluation is the one analytic input of this section and of \cref{sec:lea}; it enters through the following lemma and proposition, whose proofs use \cref{lem:row-laplace} and Stirling's series with remainder, and nothing else that is not formal. The lemma is also used in \cref{prop:lea-regrows}, \cref{lem:ide-norm} and \cref{prop:rig-flop}. Recall from \eqref{eq:set-h} that for a finite multiset $\mathsf{v}=(v_1,\dots,v_r)$ of non-zero elements, $h_{\mathsf{v}}(z)\coloneqq\mathrm{Exp}\big[-\sum_{k\geq1}\bk_kz^{2k-1}\sum_av_a^{1-2k}\big]$ with $\bk_k=B_{2k}/(2k(2k-1))$, the $B_{2k}$ being the Bernoulli numbers.
+
+\begin{lem}[The Beta phase; analytic input]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-betaphase}
+Let $a$, $b$ be indeterminates, or complex numbers with $ab(a+b)\neq0$, and let $f(y)\coloneqq ay+b\log(1-\re^y)$, the phase $a\log U+b\log(1-U)$ in the coordinate $y=\log U$. Then $f$ has a critical point at $y_0\coloneqq\log(a/(a+b))$, i.e.\ at $U=a/(a+b)$, with $f''(y_0)=-a(a+b)/b\neq0$, and
+\begin{equation}
+\label{eq:row-betaphase}
+\Lnorm[f,1;y_0]=h_{(-a,-b,a+b)}(z)\qquad\text{in }\bbQ(a,b)\fps{z}.
+\end{equation}
+\end{lem}
+
+\begin{proof}
+\emph{Critical point and rationality.} $f'(y)=a-b\,\re^y/(1-\re^y)$ vanishes if and only if $\re^y/(1-\re^y)=a/b$, i.e.\ $\re^y=a/(a+b)$; and $f''(y)=-b\,\re^y/(1-\re^y)^2$, which at $y_0$ equals $-b\,(a/(a+b))\,((a+b)/b)^2=-a(a+b)/b$. For $k\geq2$, by the computation of \cref{sec:row-wr} with $\thU=\dd/\dd y$, $f^{(k)}(y_0)=-b\,\Pol_{k-1}(p)$ with $p=1/(1-\re^{y_0})=(a+b)/b$; so $1/f''(y_0)$ and all $f^{(k)}(y_0)$ lie in $\bbQ(a,b)$, and by (D2) every $z$-coefficient of the left side of \eqref{eq:row-betaphase} lies in $\bbQ(a,b)$. The $z$-coefficients of the right side are polynomials in $1/a$, $1/b$, $1/(a+b)$ with rational coefficients. A rational function of $(a,b)$ that vanishes on the open quadrant $a,b>0$ vanishes identically, so it suffices to prove \eqref{eq:row-betaphase} coefficientwise for all real $a,b>0$. Fix such $a,b$.
+
+\emph{Laplace.} On $I\coloneqq(-\infty,0)$ the function $f$ is real-analytic and strictly concave ($f''<0$), and it tends to $-\infty$ at both ends ($ay\to-\infty$ as $y\to-\infty$, $b\log(1-\re^y)\to-\infty$ as $y\to0^-$); so $y_0$ is its unique maximum, the supremum of $f$ off $(y_0-e,y_0+e)$ is $\max(f(y_0-e),f(y_0+e))<f(y_0)$, and $\int_I\re^{f}\,\dd y=\int_0^1U^{a}(1-U)^{b}\,\dd U/U=\Bfn(a,b+1)<\infty$ (substitute $U=\re^y$, $\dd y=\dd U/U$). For real $z>0$ the same substitution and \cite[5.12.1]{DLMF} give
+\[
+\int_I\re^{f(y)/z}\,\dd y=\int_0^1U^{a/z}(1-U)^{b/z}\,\frac{\dd U}{U}=\Bfn\Big(\frac az,\frac bz+1\Big).
+\]
+With $f^\ast\coloneqq f(y_0)=a\log a+b\log b-(a+b)\log(a+b)$ and $-f''(y_0)=a(a+b)/b$, \cref{lem:row-laplace} (amplitude $1$, $z_0=1$) gives, for every $M$, as $z\to0^+$,
+\begin{equation}
+\label{eq:row-betalap}
+\Bfn\Big(\frac az,\frac bz+1\Big)=\re^{f^\ast/z}\Big(\frac{2\pi z\,b}{a(a+b)}\Big)^{1/2}\Big[\sum_{m<M}\big(\coef{z^m}\Lnorm[f,1;y_0]\big)z^m+O(z^M)\Big].
+\end{equation}
+
+\emph{Stirling.} $\Gamma(u+1)=u\Gamma(u)$ gives $\Bfn(p,q+1)=\Bfn(p,q)\,q/(p+q)$; for $p=a/z$, $q=b/z$ the factor is $b/(a+b)$, independent of $z$. Stirling's series with remainder \cite[5.11.1]{DLMF} states that for $u\to+\infty$ and every $K\geq1$
+\begin{equation}
+\label{eq:row-stirling}
+\log\Gamma(u)=\Big(u-\frac12\Big)\log u-u+\frac12\log(2\pi)+\sum_{k=1}^{K}\bk_k\,u^{1-2k}+O(u^{-2K-1}),\qquad \bk_k=\frac{B_{2k}}{2k(2k-1)};
+\end{equation}
+for real positive $u$ the remainder after the term $k=K$ is bounded in absolute value by the first neglected term $\bk_{K+1}u^{-2K-1}$ and has its sign \cite[Section~5.11(ii)]{DLMF}. Apply \eqref{eq:row-stirling} to
+\[
+\log\Bfn\Big(\frac az,\frac bz\Big)=\log\Gamma\Big(\frac az\Big)+\log\Gamma\Big(\frac bz\Big)-\log\Gamma\Big(\frac{a+b}z\Big),
+\]
+all three arguments tending to $+\infty$. The terms $-u$ cancel: $-a/z-b/z+(a+b)/z=0$. In the terms $(u-\frac12)\log u$, written as $(u-\frac12)(\log w-\log z)$ for $u=w/z$, the coefficient of $\log z$ is $-(a/z-\frac12)-(b/z-\frac12)+((a+b)/z-\frac12)=\frac12$, and the remaining terms give
+\[
+\frac{a\log a+b\log b-(a+b)\log(a+b)}{z}-\frac12\big(\log a+\log b-\log(a+b)\big)=\frac{f^\ast}{z}+\frac12\log\frac{a+b}{ab}.
+\]
+The three constants $\frac12\log(2\pi)$ leave one $\frac12\log(2\pi)$. In the tails, $u^{1-2k}=z^{2k-1}w^{1-2k}$ for $u=w/z$, so they give $\sum_{k\leq K}\bk_kz^{2k-1}\big(a^{1-2k}+b^{1-2k}-(a+b)^{1-2k}\big)+O(z^{2K+1})$. Since $1-2k$ is odd,
+\[
+a^{1-2k}+b^{1-2k}-(a+b)^{1-2k}=-\big[(-a)^{1-2k}+(-b)^{1-2k}+(a+b)^{1-2k}\big],
+\]
+so the tail is the truncation to $k\leq K$ of $-\sum_k\bk_kz^{2k-1}\sum_vv^{1-2k}$ over the multiset $(-a,-b,a+b)$, that is, of $\log h_{(-a,-b,a+b)}(z)$. Hence
+\[
+\Bfn\Big(\frac az,\frac bz\Big)=\re^{f^\ast/z}\Big(\frac{2\pi z\,(a+b)}{ab}\Big)^{1/2}\mathrm{Exp}\Big[\sum_{k=1}^{K}\bk_kz^{2k-1}\big(a^{1-2k}+b^{1-2k}-(a+b)^{1-2k}\big)+O(z^{2K+1})\Big],
+\]
+and the exponential of (a polynomial in $z$ without constant term) $+\,O(z^{2K+1})$ is the truncation of the formal exponential plus $O(z^{2K+1})$. Multiplying by $b/(a+b)$ and using $\big(2\pi z(a+b)/(ab)\big)^{1/2}\,b/(a+b)=\big(2\pi z\,b/(a(a+b))\big)^{1/2}$,
+\[
+\Bfn\Big(\frac az,\frac bz+1\Big)=\re^{f^\ast/z}\Big(\frac{2\pi z\,b}{a(a+b)}\Big)^{1/2}\Big[\big(h_{(-a,-b,a+b)}(z)\big)_{<M}+O(z^M)\Big]
+\]
+for every $M$ (take $2K+1\geq M$).
+
+\emph{Uniqueness.} The prefactors in this display and in \eqref{eq:row-betalap} are the same positive function of $z$, so the two power series are asymptotic expansions as $z\to0^+$ of the same function; asymptotic power series are unique, so they coincide coefficientwise.
+\end{proof}
+
+\draftnote{The Stirling step, which the source gives in condensed form (``as in the proof of the Beta constant''), is written out here: the series \eqref{eq:row-stirling} for $\log\Gamma(a/z)+\log\Gamma(b/z)-\log\Gamma((a+b)/z)$, its tail $\sum_k\bk_kz^{2k-1}(a^{1-2k}+b^{1-2k}-(a+b)^{1-2k})$, and the identification of this tail with the exponent of $h_{(-a,-b,a+b)}$ through the oddness of $1-2k$. To be checked by the authors.}
+
+\begin{prop}[The Beta constant; analytic input]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-beta}
+\begin{equation}
+\label{eq:row-beta}
+\Abeta(z)=\Lnorm[\phi_0,1;\wA/E]=h_{(E,-\alpha_1,-\wA)}(z)\,\frac{E}{E+z}\qquad\text{in }\bbQ(\alpha_1,\wA)\fps{z}.
+\end{equation}
+In words: the normalised Laplace expansion of the Beta integral $\Bfn(\wA/z+1,\alpha_1/z+1)=\int_0^1s^{\wA/z}(1-s)^{\alpha_1/z}\,\dd s=\int_0^1\re^{\phi_0(s)/z}\,\dd s$ is the Stirling tail $h_{(E,-\alpha_1,-\wA)}$ of $\Bfn(\wA/z,\alpha_1/z)$ times the elementary factor $E/(E+z)$ coming from $\Bfn(p+1,q+1)=\Bfn(p,q)\,pq/((p+q)(p+q+1))$.
+\end{prop}
+
+\begin{proof}
+The proof is the one of \cref{lem:row-betaphase}, for the phase $\phi_0$ in the variable $s$ with amplitude $1$.
+
+\emph{(1) Reduction to $\alpha_1,\wA>0$.} Both sides have $z$-coefficients in $\bbQ(\alpha_1,\wA)$: the left by (D5), the right by definition ($E/(E+z)=\sum_n(-z/E)^n$ with $E=\alpha_1+\wA$). Two rational functions of $(\alpha_1,\wA)$ that agree on the open quadrant are equal. Fix real $\alpha_1,\wA>0$.
+
+\emph{(2) Laplace.} For real $z>0$, $\Bfn(\wA/z+1,\alpha_1/z+1)=\int_0^1s^{\wA/z}(1-s)^{\alpha_1/z}\,\dd s=\int_0^1\re^{\phi_0(s)/z}\,\dd s$. On $I=(0,1)$, $\phi_0=\wA\log s+\alpha_1\log(1-s)$ is real-analytic, $\phi_0''=-\wA/s^2-\alpha_1/(1-s)^2<0$, $\phi_0'=(\wA-Es)/(s(1-s))$ vanishes only at $\wA/E$, and $\phi_0\to-\infty$ at both ends; so $\phi_0$ is strictly concave with its unique maximum at $\wA/E$, its supremum off $(\wA/E-e,\wA/E+e)$ is $\max(\phi_0(\wA/E\pm e))<\phi_0(\wA/E)$, and $\int_0^1\re^{\phi_0}\,\dd s=\Bfn(\wA+1,\alpha_1+1)<\infty$. \Cref{lem:row-laplace} (amplitude $1$, $z_0=1$), with $-\phi_0''(\wA/E)=E^3/(\alpha_1\wA)$ by \eqref{eq:row-hess} and $\phi_0(\wA/E)=\wA\log\wA+\alpha_1\log\alpha_1-E\log E=:f^\ast$, gives, as $z\to0^+$,
+\[
+\Bfn\Big(\frac{\wA}z+1,\frac{\alpha_1}z+1\Big)=\re^{f^\ast/z}\Big(\frac{2\pi z\,\alpha_1\wA}{E^3}\Big)^{1/2}\Big[\sum_{m<M}\Abetam{m}z^m+O(z^M)\Big].
+\]
+
+\emph{(3) Stirling.} $\Gamma(u+1)=u\Gamma(u)$ gives $\Bfn(p+1,q+1)=\Bfn(p,q)\,pq/((p+q)(p+q+1))$; for $p=\wA/z$, $q=\alpha_1/z$ this factor is $(\wA\alpha_1/z^2)/\big((E/z)((E+z)/z)\big)=\wA\alpha_1/(E(E+z))$. The Stirling computation in the proof of \cref{lem:row-betaphase}, with $(a,b)=(\wA,\alpha_1)$ and $a+b=E$, gives
+\[
+\Bfn\Big(\frac{\wA}z,\frac{\alpha_1}z\Big)=\re^{f^\ast/z}\Big(\frac{2\pi z\,E}{\alpha_1\wA}\Big)^{1/2}\mathrm{Exp}\Big[\sum_{k=1}^{K}\bk_kz^{2k-1}\big(\wA^{1-2k}+\alpha_1^{1-2k}-E^{1-2k}\big)+O(z^{2K+1})\Big],
+\]
+whose exponent is the truncation of $\log h_{(E,-\alpha_1,-\wA)}(z)=-\sum_k\bk_kz^{2k-1}\big(E^{1-2k}-\alpha_1^{1-2k}-\wA^{1-2k}\big)$. Multiplying by $\wA\alpha_1/(E(E+z))$, which is analytic at $z=0$, and using $\big(2\pi zE/(\alpha_1\wA)\big)^{1/2}\,\wA\alpha_1/E=\big(2\pi z\,\alpha_1\wA/E^3\big)^{1/2}\,E$,
+\[
+\Bfn\Big(\frac{\wA}z+1,\frac{\alpha_1}z+1\Big)=\re^{f^\ast/z}\Big(\frac{2\pi z\,\alpha_1\wA}{E^3}\Big)^{1/2}\Big[\Big(h_{(E,-\alpha_1,-\wA)}(z)\frac{E}{E+z}\Big)_{<M}+O(z^M)\Big].
+\]
+
+\emph{(4)} The prefactors in (2) and (3) are the same positive function of $z$, so the two power series are asymptotic expansions of the same function as $z\to0^+$; asymptotic power series are unique, so they coincide.
+\end{proof}
+
+\begin{rmk}
+\label{rmk:row-betaroutes}
+(i) \Cref{prop:row-beta} is not an instance of \cref{lem:row-betaphase}: the lemma expands the phase $\wA\log U+\alpha_1\log(1-U)$ in $y=\log U$ with amplitude $1$ in $y$, i.e.\ with amplitude $1/U$ in $U$ (the measure $\dd U/U$), whereas $\Abeta$ is the expansion of $\phi_0$ in $s$ with amplitude $1$ (the measure $\dd s$); by \cref{prop:row-P1}(iii) the two normalised expansions differ by this amplitude. Comparing the two results, $\Lnorm[\phi_0,1;\wA/E]=\Lnorm[\phi_0\circ\exp,1;\log(\wA/E)]\cdot E/(E+z)$, the factor being $\Bfn(\wA/z+1,\alpha_1/z+1)/\Bfn(\wA/z,\alpha_1/z+1)=(\wA/z)/((E+z)/z)$ times $E/\wA$. \draftnote{This relation between the two expansions is a consequence of the two statements as proved, not a step of either proof; the sources do not state it directly, which is why the proposition is proved separately rather than derived from the lemma.}
+
+(ii) Equivalently, the proposition at the pair $(\wA,\alpha_1)$ is the rescaling, by (D4), of its own case $\wA=1$: with $\xc\coloneqq\alpha_1/\wA$ ($\xc\neq0,-1$ by (ND)) and $\mathsf{ph}(s)\coloneqq\log s+\xc\log(1-s)$, whose critical point is $1/(1+\xc)=\wA/E$, one has $\phi_0=\wA\,\mathsf{ph}$, so $\Abeta(z)=\Lnorm[\mathsf{ph},1;1/(1+\xc)](z/\wA)$. The case $\wA=1$ of \eqref{eq:row-beta} reads $\Lnorm[\mathsf{ph},1;1/(1+\xc)](z')=h_{(1+\xc,-\xc,-1)}(z')\,(1+\xc)/(1+\xc+z')$, and at $z'=z/\wA$ the exponent of $h$ becomes $-\sum_k\bk_k(z/\wA)^{2k-1}\sum_aw_a^{1-2k}=-\sum_k\bk_kz^{2k-1}\sum_a(\wA w_a)^{1-2k}$ with $\wA\cdot(1+\xc,-\xc,-1)=(E,-\alpha_1,-\wA)$, while $(1+\xc)/(1+\xc+z/\wA)=E/(E+z)$. Rationality in the weights (step (1)) is what replaces, at generic weights, the passage from positive to arbitrary parameters.
+\end{rmk}
+
+\begin{example}[The coefficient of $z$, by hand]
+\label{ex:row-beta1}
+This is an illustration of \eqref{eq:row-beta}, not part of its proof. By (D1), $\Abetam{1}=f_4/(8f_2^2)-5f_3^2/(24f_2^3)$ with $f_k\coloneqq\phi_0^{(k)}(\wA/E)$ (the terms $n=2$ with one factor $f_4v^4/(4!z)$ and $n=3$ with two factors $f_3v^3/(3!z)$). From \eqref{eq:row-phik}, $f_2=-E^3/(\alpha_1\wA)$, $f_3=2E^3(\alpha_1^2-\wA^2)/(\alpha_1\wA)^2$, $f_4=-6E^4(\alpha_1^3+\wA^3)/(\alpha_1\wA)^3$; so $f_4/(8f_2^2)=-3(\alpha_1^3+\wA^3)/(4\alpha_1\wA E^2)$, $5f_3^2/(24f_2^3)=-5(\alpha_1^2-\wA^2)^2/(6\alpha_1\wA E^3)$, and, with $\alpha_1^3+\wA^3=E(\alpha_1^2-\alpha_1\wA+\wA^2)$ and $(\alpha_1^2-\wA^2)^2=E^2(\alpha_1-\wA)^2$,
+\[
+\Abetam{1}=\frac{-9(\alpha_1^2-\alpha_1\wA+\wA^2)+10(\alpha_1-\wA)^2}{12\,\alpha_1\wA E}=\frac{\alpha_1^2-11\alpha_1\wA+\wA^2}{12\,\alpha_1\wA E}.
+\]
+On the right of \eqref{eq:row-beta}, with $\bk_1=1/12$, $\coef{z^1}\big(h_{(E,-\alpha_1,-\wA)}E/(E+z)\big)=\frac1{12}\big(\frac1{\alpha_1}+\frac1{\wA}-\frac1E\big)-\frac1E=\frac{E^2-13\alpha_1\wA}{12\,\alpha_1\wA E}=\frac{\alpha_1^2-11\alpha_1\wA+\wA^2}{12\,\alpha_1\wA E}$.
+\end{example}
+
+%-------------------------------------------------------------------------------
+\subsection{Regularity, the frame-B row, and (F2)}
+\label{sec:row-main}
+
+\begin{cor}[Regularity of the $\tau$-coefficients; formal given \eqref{eq:row-beta}]\genusstatus{AI-proposed, unchecked}
+\label{cor:row-reg}
+For every $k\geq0$, $\Kcoef_k=\coef{\tau^k}(\Fhyp\Ephi\alg)$ and $\Hcoef_k=\coef{\tau^k}(\Fhyp\Ephi)$ are rational functions of $z$ with coefficients in $\Kal$, without pole at $z=0$.
+\end{cor}
+
+\begin{proof}
+$\Kcoef_k=\sum_{i+j+l=k}\Fhyp_i\Ephi_j\coef{\tau^l}\alg$ is a finite sum of products of elements of $\Kal(z)$, $\Kal[1/z]$ and $\Kal$ ($\alg$ and $\dphi$ have Taylor coefficients in $\Kal$), so it lies in $\Kal(z)$. By \eqref{eq:row-closed}, $\Kcoef_k=\coef{\tau^k}(\Nlap/\Abeta)$ in $\Cz$: $\Abeta$ is a unit of $\bbC\fps{z}$ (constant term $1$) and $\Nlap$ lies in $\bbC\fps{z}\fps{\tau}$ (\cref{prop:row-wickrow}(iii)), so the Laurent expansion of $\Kcoef_k$ at $z=0$ has no negative powers. Only $\Abeta\in1+z\bbC\fps{z}$ is used here, not its value. Since $\alg\in1+\tau\Kal\fps{\tau}$ does not depend on $z$, $\Hcoef_k=\sum_{j\leq k}\Kcoef_j\coef{\tau^{k-j}}(1/\alg)$ is a $\Kal$-linear combination of $\Kcoef_0,\dots,\Kcoef_k$.
+\end{proof}
+
+\paragraph{The constant line.} By \cref{def:set-rows} the frame-B identity row is $\rr_{0,1}=h_{(\alpha_1,\wA,-E)}\rpt_{0,1}=\hw^{-1}\hnw\rpt_{0,1}$, where the equality of the two scalars is the multiset identity $\hnw\,h_{(E,-\alpha_1,-\wA)}=\hw$ of \cref{lem:set-hmult}: as multisets, $\nw+(E,-\alpha_1,-\wA)=(\alpha_1,\wA,-\epsilon_1,-\epsilon_2,E,-\alpha_1,-\wA)=(E,-\epsilon_1,-\epsilon_2)+(\alpha_1,-\alpha_1)+(\wA,-\wA)$, and pairs $v,-v$ contribute nothing to the odd power sums in the exponent. Equivalently $\hw^{-1}\hnw\,h_{(E,-\alpha_1,-\wA)}=1$. This is where the class $\bw=(E,-\epsilon_1,-\epsilon_2)$ is forced: by \cref{lem:set-hmult} it is the unique class, up to pairs $v,-v$, for which the frame-B constant of the singular row is the geometric series $E/(E+z)$. The same scalar $\hnw$ multiplies both idempotents (\cref{lem:ide-norm}), so the frame-B rows of the regular idempotent carry the non-trivial constant $h_{(\alpha_1,\wA,-E)}\rpt_{0,2}(z;0)$ (\cref{prop:lea-regrows}).
+
+\begin{thm}[The frame-B singular row; formal given \eqref{eq:row-beta}]\genusstatus{AI-proposed, unchecked}
+\label{thm:row-main}
+In $\bbC\fps{z}\fps{t}$, and coefficientwise in $z$ as analytic functions of $t$ near $0$,
+\begin{equation}
+\label{eq:row-main}
+\rr_{0,1}(z;t)=\frac{E}{E+z}\,\Fhyp(z,\tau)\,\Ephi(z,\tau)\,\alg(\tau),\qquad \tau=1-\re^{-t}.
+\end{equation}
+Precisely: for every $k$, $\coef{t^k}\rr_{0,1}(z;t)=\sum_{j\leq k}\big(\coef{t^k}\tau^j\big)\frac{E}{E+z}\Kcoef_j(z)$, a rational function of $z$ regular at $z=0$, whose Taylor coefficients in $z$ are the $t^k$ Taylor coefficients of the $z$-coefficients of $\rr_{0,1}$.
+\end{thm}
+
+\begin{proof}
+By \cref{def:set-rows} and the constant line, $\rr_{0,1}=\hw^{-1}\hnw\rpt_{0,1}$, with a $t$-independent scalar; by \cref{prop:row-wickrow} this equals $\hw^{-1}\hnw\Nlap$; by \eqref{eq:row-closed} it equals $\hw^{-1}\hnw\Abeta\Fhyp\Ephi\alg$; and by \cref{prop:row-beta} and the constant line, $\hw^{-1}\hnw\Abeta=\hw^{-1}\hnw h_{(E,-\alpha_1,-\wA)}\,E/(E+z)=E/(E+z)$. The passage from $\tau$ to $t$ is the unitriangular substitution (T) of \cref{lem:set-rings} and preserves regularity. Coefficientwise meaning: the right side of \eqref{eq:row-main} is a priori an element of $\Cz\fps{\tau}$; by \cref{cor:row-reg} it lies in $\bbC\fps{z}\fps{\tau}$, and the chain above says that it equals $\iota(\hw^{-1}\hnw\Nlap)$ with $\hw^{-1}\hnw\Nlap\in\Oan(\Ddisc')\fps{z}$ (\cref{prop:row-wickrow}(iii)). So each $z$-coefficient of the right side is the Taylor series of a function analytic on $\Ddisc'$, and its sum is the corresponding $z$-coefficient of $\rr_{0,1}$. By \eqref{eq:row-transport} below the right side also equals $(E/(E+z))\,\Phia\,\alg$ with $\Phia\in\Oan(\Ddisc)\fps{z}$.
+\end{proof}
+
+\begin{cor}[(F2) at $t=0$]\genusstatus{AI-proposed, unchecked}
+\label{cor:row-F2}
+$\rr_{0,1}(z;0)=E/(E+z)$. Also $\rpt_{0,1}(z;0)=\Abeta(z)=h_{(E,-\alpha_1,-\wA)}(z)\,E/(E+z)$, and for the row $\rZ_{0,1}=\hnw\rpt_{0,1}$ with the $\cQ=0$ constant, $\rZ_{0,1}(z;0)=h_{(E,-\epsilon_1,-\epsilon_2)}(z)\,E/(E+z)=\hw(z)\,E/(E+z)$.
+\end{cor}
+
+\begin{proof}
+$t=0$ means $\tau=0$, and $\Fhyp(z,0)=1$, $\dphi(0)=0$, $\alg(0)=1$. The value of $\rpt_{0,1}(z;0)$ is \cref{prop:row-wickrow}(ii) with \cref{prop:row-beta}, and the last statement is the constant line.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{A purely formal proof of the regularity: eikonal and transport equations}
+\label{sec:row-eik}
+
+This subsection uses neither the Laplace identification (\cref{sec:row-laplace,sec:row-wickrow,sec:row-beta}) nor the value of $\Abeta$; it shows directly that the $z$-expansion of $\Ephi\Fhyp$ exists and has coefficients analytic in $\tau$, on the whole disc $\Ddisc$. Everything here is formal apart from the analyticity of the explicit algebraic functions $\delta$, $\sast$, $\Lv_2$ on $\Ddisc$.
+
+\begin{lem}[Eikonal and transport decomposition; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-eik}
+Write $\Fhyp=\mathrm{Exp}[\Sph/z]\,\Phia$ with $\Sph\in\tau\Oan$. With $\gc=E/z+2$, $\ga+\gb+1=(\alpha_2+\wA)/z+3$ and $\ga\gb=\alpha_2\wA/z^2+(\alpha_2+\wA)/z+1$, as operators on $\Cz\fps{\tau}$,
+\begin{equation}
+\label{eq:row-eik}
+\mathrm{Exp}[-\Sph/z]\,\Gauss\big[\mathrm{Exp}[\Sph/z]\,\Phia\big]=z^{-2}\,\Eik(\Spht)\,\Phia+z^{-1}\big(\Ptr\,\Phia_\tau+\Rtr\,\Phia\big)+\Ttr\,\Phia,
+\end{equation}
+where
+\begin{align*}
+\Eik(p)&\coloneqq\tau(1-\tau)p^2+\big(E-(\alpha_2+\wA)\tau\big)p-\alpha_2\wA, &
+\Ptr&\coloneqq2\tau(1-\tau)\Spht+E-(\alpha_2+\wA)\tau,\\
+\Rtr&\coloneqq\tau(1-\tau)\Sphtt+(2-3\tau)\Spht-(\alpha_2+\wA), &
+\Ttr&\coloneqq\tau(1-\tau)\frac{\dd^2}{\dd\tau^2}+(2-3\tau)\frac{\dd}{\dd\tau}-1 .
+\end{align*}
+Moreover:
+\begin{enumerate}
+\item The eikonal equation $\Eik(p)=0$ is quadratic in $p$ with discriminant $\delta^2$; its root regular at $\tau=0$ has $p(0)=\alpha_2\wA/E$, the other root is $-E/\tau+O(1)$ (exponent $1-\gc$).
+\item $\Sph\coloneqq\dphi$ solves the eikonal equation: $\Eik(\dphi_\tau)=0$, with $\dphi_\tau(0)=\alpha_2\wA/E$.
+\item For $\Sph=\dphi$: $\Ptr=\delta$, and
+\[
+\Rtr=\alpha_0-2\wB\sast-\frac{\wB\tau\sast\Lv_2}{\delta},\qquad \Rtr(0)=-\frac{2\alpha_1\alpha_2+\alpha_0E}{E},
+\]
+analytic on $\Ddisc$. With $\Eik=0$, $z\,\mathrm{Exp}[-\Sph/z]\Gauss[\mathrm{Exp}[\Sph/z]\Phia]=\delta\,\Phia_\tau+\Rtr\,\Phia+z\,\Ttr\,\Phia$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\emph{Derivation of \eqref{eq:row-eik}.} $\Fhyp_\tau=\re^{\Sph/z}(\Phia_\tau+\Spht\Phia/z)$ and $\Fhyp_{\tau\tau}=\re^{\Sph/z}(\Phia_{\tau\tau}+2\Spht\Phia_\tau/z+\Sphtt\Phia/z+\Spht^2\Phia/z^2)$. Collect the powers of $z$ in $\re^{-\Sph/z}\Gauss[\re^{\Sph/z}\Phia]$ with \eqref{eq:row-gaussop}: the coefficient of $z^{-2}$ is $\tau(1-\tau)\Spht^2+(E-(\alpha_2+\wA)\tau)\Spht-\alpha_2\wA$ times $\Phia$; that of $z^{-1}$ is $2\tau(1-\tau)\Spht\Phia_\tau+\tau(1-\tau)\Sphtt\Phia+(E-(\alpha_2+\wA)\tau)\Phia_\tau+(2-3\tau)\Spht\Phia-(\alpha_2+\wA)\Phia$; that of $z^0$ is $\tau(1-\tau)\Phia_{\tau\tau}+(2-3\tau)\Phia_\tau-\Phia$.
+
+\emph{(i)} The discriminant of $\Eik$ in $p$ is
+\[
+\big(E-(\alpha_2+\wA)\tau\big)^2+4\alpha_2\wA\tau(1-\tau)=E^2-\big[2E(\alpha_2+\wA)-4\alpha_2\wA\big]\tau+(\wA-\alpha_2)^2\tau^2=\delta^2,
+\]
+because $\wA-\alpha_2=\alpha_0$ and $2E(\alpha_2+\wA)-4\alpha_2\wA=2E(E-\alpha_1+\alpha_2)-4\alpha_2(E-\alpha_1)=2E(E-\alpha_1-\alpha_2)+4\alpha_1\alpha_2=2\alpha_0E+4\alpha_1\alpha_2=E^2+\uq$, and $\delta^2=E^2-(E^2+\uq)\tau+\alpha_0^2\tau^2$ (\cref{def:set-alg}). At $\tau=0$ the equation reads $Ep-\alpha_2\wA=0$, so the regular root has $p(0)=\alpha_2\wA/E$; the other root is $-E/\tau+O(1)$.
+
+\emph{(ii)} With $s=\sast$ and $p\coloneqq\dphi_\tau=(\wA-\wB s)/(1-\tau)$ (\eqref{eq:row-dphider}),
+\begin{align*}
+(1-\tau)\Eik(p)&=\tau(\wA-\wB s)^2+\big(E-(\alpha_2+\wA)\tau\big)(\wA-\wB s)-\alpha_2\wA(1-\tau)\\
+&=\wB^2\tau s^2+\wB\tau s(\alpha_2+\wA-2\wA)+\wA\tau(\wA-\alpha_2-\wA+\alpha_2)+\wA(E-\alpha_2)-E\wB s\\
+&=\wB\big[\wB\tau s^2-\alpha_0\tau s-Es+\wA\big]=\wB\,\Ns(s)=0,
+\end{align*}
+using $\alpha_2-\wA=-\alpha_0$ and $E-\alpha_2=\wB$. And $p(0)=\wA-\wB\wA/E=\wA(E-\wB)/E=\wA\alpha_2/E$.
+
+\emph{(iii)} $\Ptr=(\dd\Eik/\dd p)(\Spht)$, so $\Ptr^2$ is the discriminant $\delta^2$; directly, $\Ptr=2\tau(\wA-\wB\sast)+E-(\alpha_2+\wA)\tau=E+(\wA-\alpha_2)\tau-2\wB\tau\sast=E+\alpha_0\tau-2\wB\tau\sast=\delta$ by identity (i) of \cref{lem:set-N}. For $\Rtr$: differentiating $(1-\tau)\Spht=\wA-\wB\sast$ gives $-\Spht+(1-\tau)\Sphtt=-\wB\sast_\tau$, i.e.\ $\tau(1-\tau)\Sphtt=\tau\Spht-\wB\tau\sast_\tau$, so
+\[
+\Rtr=2(1-\tau)\Spht-\wB\tau\sast_\tau-(\alpha_2+\wA)=2(\wA-\wB\sast)-\alpha_2-\wA-\wB\tau\sast_\tau=\alpha_0-2\wB\sast-\frac{\wB\tau\sast\Lv_2}{\delta},
+\]
+using $\sast_\tau=\sast\Lv_2/\delta$ (identity (iii) of \cref{lem:set-N}). At $\tau=0$, $\Rtr(0)=\alpha_0-2\wB\wA/E=(\alpha_0E-2\wA\wB)/E=-(2\alpha_1\alpha_2+\alpha_0E)/E$, since $\wA\wB=\alpha_1\alpha_2+\alpha_0E$. On $\Ddisc$ the functions $\sast$, $\Lv_2=\wB\sast-\alpha_0$ and $1/\delta$ are analytic, so $\Rtr$ is analytic on $\Ddisc$. The last display is \eqref{eq:row-eik} multiplied by $z$ with $\Eik(\Spht)=0$ and $\Ptr=\delta$.
+\end{proof}
+
+\begin{prop}[The transport equations; formal]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-transport}
+For $\Phia=\sum_{m\geq0}z^m\Phia_m$, the transport equations
+\[
+\delta\,(\Phia_m)_\tau+\Rtr\,\Phia_m+\Ttr\,\Phia_{m-1}=0\qquad(m\geq0,\ \Phia_{-1}\coloneqq0)
+\]
+have unique solutions analytic on $\Ddisc$ with $\Phia_0(0)=1$ and $\Phia_m(0)=0$ for $m\geq1$, namely
+\[
+\Phia_0=\mathrm{Exp}\Big[-\int_0^\tau\frac{\Rtr}{\delta}\Big]=\frac1{\alg},\qquad
+\Phia_m(\tau)=-\Phia_0(\tau)\int_0^\tau\frac{\Ttr[\Phia_{m-1}](u)}{\delta(u)\Phia_0(u)}\,\dd u,
+\]
+and in $\Cz\fps{\tau}$
+\begin{equation}
+\label{eq:row-transport}
+\Ephi\,\Fhyp=\Phia,\qquad \Phia\in\Oan(\Ddisc)\fps{z},\qquad \coef{z^0}\Phia=\frac1{\alg}.
+\end{equation}
+\end{prop}
+
+\begin{proof}
+On $\Ddisc$ the function $\delta$ has no zero and $\Rtr$ is analytic (\cref{lem:row-eik}(iii)); so the first-order linear equations have, inductively in $m$, unique analytic solutions on the (simply connected) disc with the prescribed values at $0$, given by the displayed integrals. By \eqref{eq:row-eik} with $\Eik(\dphi_\tau)=0$ and $\Ptr=\delta$,
+\[
+z\,\mathrm{Exp}[-\dphi/z]\,\Gauss\big[\mathrm{Exp}[\dphi/z]\iota(\Phia)\big]=\sum_mz^m\big(\delta(\Phia_m)_\tau+\Rtr\Phia_m+\Ttr\Phia_{m-1}\big)=0,
+\]
+so $\tilde Y\coloneqq\mathrm{Exp}[\dphi/z]\iota(\Phia)$ satisfies $\Gauss[\tilde Y]=0$, and $\tilde Y(z,0)=\Phia(z,0)=1$; hence $\tilde Y=\Fhyp$ by \cref{lem:row-unique}, i.e.\ $\Ephi\Fhyp=\Phia$. It remains to identify $\Phia_0$ with $1/\alg$, i.e.\ to show $\Rtr=\delta(\log\alg)_\tau$: both $\Phia_0$ and $1/\alg$ are analytic on $\Ddisc$ with value $1$ at $0$ (for $1/\alg$ by \cref{lem:row-hess}(c) through \eqref{eq:row-algp}), and $\Phia_0$ is the unique such solution of $\delta\Phia_0'+\Rtr\Phia_0=0$, so this identity suffices. By \eqref{eq:row-alg},
+\[
+2(\log\alg)_\tau=\frac{\delta_\tau}{\delta}+\frac{U_{1,\tau}}{U_1}-\frac{\sast_\tau}{\sast}+\frac{\sast_\tau}{1-\sast}.
+\]
+From $\delta=E+\alpha_0\tau-2\wB\tau\sast$ we get $\delta_\tau=\alpha_0-2\wB\sast-2\wB\tau\sast_\tau=\Rtr-\wB\tau\sast_\tau$. So the claim $2\Rtr/\delta=2(\log\alg)_\tau$ becomes, after multiplying by $\delta$ and inserting $\sast_\tau=\sast\Lv_2/\delta$ and $U_{1,\tau}=-\sast-\tau\sast_\tau=-\sast(\delta+\tau\Lv_2)/\delta$,
+\[
+-\frac{\sast(\delta+\tau\Lv_2)}{U_1}-\Lv_2+\frac{\Lv_2\sast}{1-\sast}-\delta_\tau=\frac{2\wB\tau\sast\Lv_2}{\delta}
+\]
+(the right side is $2\Rtr-2\delta_\tau=2\wB\tau\sast_\tau$). Inserting $\delta_\tau=\alpha_0-2\wB\sast-2\wB\tau\sast\Lv_2/\delta$, whose last term cancels the right side, the claim reads
+\[
+-\frac{\sast(\delta+\tau\Lv_2)}{U_1}-\Lv_2+\frac{\Lv_2\sast}{1-\sast}-\alpha_0+2\wB\sast=0 .
+\]
+Since $-\Lv_2-\alpha_0+2\wB\sast=\wB\sast$, dividing by $\sast$ this is
+\[
+\frac{\delta+\tau\Lv_2}{U_1}=\frac{\Lv_2}{1-\sast}+\wB=\frac{\Lv_2+\wB(1-\sast)}{1-\sast}=\frac{\wB-\alpha_0}{1-\sast}=\frac{\alpha_1}{1-\sast},
+\]
+i.e.\ $(\delta+\tau\Lv_2)(1-\sast)=\alpha_1U_1$, which is the second form of identity (ii) of \cref{lem:set-N}, $(E-\wB\tau\sast)(1-\sast)=\alpha_1(1-\tau\sast)$, with $E-\wB\tau\sast=\delta+\tau\Lv_2$ (\eqref{eq:row-algp}).
+\end{proof}
+
+Hence $\Kcoef_k=\coef{\tau^k}(\Phia\alg)$ lies in $\bbC\fps{z}$, which is \cref{cor:row-reg} again, and \eqref{eq:row-transport} says more: the $z$-coefficients of $\Ephi\Fhyp$ are analytic on the whole disc $\Ddisc$, up to the nearest zero of $\delta^2$, where $\sast$ and $\stil$ coalesce. Comparison with \eqref{eq:row-closed}: $\Nlap=\Abeta\,(\Phia\alg)$; the Laplace route fixes the constant $\Abeta$, the transport route the $\tau$-dependence. (The identification $\Phia_0=1/\alg$ also follows formally from \cref{prop:row-gaussode}, whose $z^0$ coefficient is $\coef{z^0}(\Nlap/\Abeta)/\alg=1/\alg$.) Both proofs of the absence of poles at $z=0$ are kept: \cref{cor:row-reg} needs only $\Abeta\in1+z\bbC\fps{z}$, \cref{prop:row-transport} needs no Laplace expansion at all.
+
+%-------------------------------------------------------------------------------
+\subsection{First orders}
+\label{sec:row-first}
+
+\begin{rmk}[First orders]
+\label{rmk:row-first}
+From \eqref{eq:row-gaussdef}, $\Fhyp_1=\ga\gb/\gc=(\alpha_2+z)(\wA+z)/(z(E+2z))$; and $\Ephi_1=-\dphi_1/z$ with $\dphi_1\coloneqq\coef{\tau^1}\dphi=\dphi_\tau(0)=\alpha_2\wA/E$ (\eqref{eq:row-dphider} at $\tau=0$). So
+\[
+\Hcoef_1=\Fhyp_1+\Ephi_1=\frac{E(\alpha_2+z)(\wA+z)-\alpha_2\wA(E+2z)}{Ez(E+2z)}=\frac{Ez+E(\alpha_2+\wA)-2\alpha_2\wA}{E(E+2z)}:
+\]
+the poles at $z=0$ cancel. Next, $\coef{\tau^1}\alg=-(E^2+\uq)/(2E^2)$: by \eqref{eq:row-alg}, $\log\alg^2=\log(\delta/E)+\log U_1-\log(E\sast/\wA)-\log(E(1-\sast)/\alpha_1)$, whose first-order terms in $\tau$ are $-(E^2+\uq)/(2E^2)$, $-\wA/E$, $-\alpha_1\alpha_2/E^2$ and $+\wA\alpha_2/E^2$ respectively, using $\delta=E-(E^2+\uq)\tau/(2E)+O(\tau^2)$ and $\sast_\tau(0)=\sast(0)\Lv_2(0)/E=\wA\alpha_1\alpha_2/E^3$ (identity (iii) of \cref{lem:set-N} with $\Lv_2(0)=\alpha_1\alpha_2/E$, \cref{lem:set-eig}); their sum is $-(E^2+\uq)/(2E^2)-(\wA\wB+\alpha_1\alpha_2)/E^2=-(E^2+\uq)/E^2$, since $\wA\wB+\alpha_1\alpha_2=2\alpha_1\alpha_2+\alpha_0E=(E^2+\uq)/2$. Therefore
+\[
+\coef{\tau^1}\rr_{0,1}=\frac{E}{E+z}\Big(\Hcoef_1-\frac{E^2+\uq}{2E^2}\Big)=\frac{E}{E+z}\cdot\frac{2E\big(Ez+E(\alpha_2+\wA)-2\alpha_2\wA\big)-(E^2+\uq)(E+2z)}{2E^2(E+2z)},
+\]
+and therefore
+\[
+\coef{\tau^1}\rr_{0,1}=-\frac{\uq\,z}{E(E+z)(E+2z)},
+\]
+where in the numerator the constant terms cancel because $2E(\alpha_2+\wA)-4\alpha_2\wA=E^2+\uq$ (proof of \cref{lem:row-eik}(i)), and the coefficient of $z$ is $2E^2-2E^2-2\uq=-2\uq$. Since $\tau=t+O(t^2)$, $\coef{t^1}\rr_{0,1}=\coef{\tau^1}\rr_{0,1}$.
+\end{rmk}
+
+%-------------------------------------------------------------------------------
+\subsection{Canonical coordinates}
+\label{sec:row-canon}
+
+\begin{lem}[Canonical coordinates; formal]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-canon}
+Put $u_i\coloneqq\cW(U_i)$ for $i=1,2$ and $\muq\coloneqq E/\tau-\wA$. Then $\dd u_i/\dd t=\Lv_i$. Explicitly, $u_1=\alpha_1t+E\log\tau+\phi_\tau(\sast)+\alpha_1\log(-1)$, and
+\[
+\Lv_1=\muq+\dphi',\qquad \Lv_1-\dphi'=\frac E\tau-\wA,\qquad \Lv_2=\muq+(\alpha_2-\Lv_1),\qquad \frac{\dd}{\dd t}\phi_\tau(\stil)=\wA-\wB\stil=\alpha_2-\Lv_1 .
+\]
+\end{lem}
+
+\begin{proof}
+At a critical point, $(\de_t\cW)(U)=\Lv(U)$ (\cref{lem:set-crit}), and
+\[
+\frac{\dd u_i}{\dd t}=(\de_t\cW)(U_i)+\cW_1(U_i)\,\frac{\dd\log U_i}{\dd t}=(\de_t\cW)(U_i)=\Lv_i .
+\]
+The explicit form of $u_1$ is \eqref{eq:row-euler1} at $s=\sast$ with $\log\cQ=t$. Hence $u_1'=\alpha_1+E(1-\tau)/\tau+\dd\phi_\tau(\sast)/\dd t$, and $\dd\phi_\tau(\sast)/\dd t=\dphi'=\wA-\wB\sast$ by \eqref{eq:row-dphider}; since $\alpha_1+E(1-\tau)/\tau=E/\tau-\wA+(\alpha_1+\wA-E)=\muq$, this gives $\Lv_1=\muq+\dphi'$. Directly,
+\[
+\muq+\dphi'=E/\tau-\wB\sast=\wA/(\tau\sast)-\alpha_0=\Lv_1
+\]
+(\cref{lem:set-eig}), because $\Ns(\sast)=0$ divided by $\tau\sast$ reads $\wB\sast-(E+\alpha_0\tau)/\tau+\wA/(\tau\sast)=0$. At $\stil$, identity (ii) of \cref{lem:set-N} at the second root gives $\dd\phi_\tau(\stil)/\dd t=(1-\tau)\,\alpha_2\stil/(1-\tau\stil)$, which equals $\wA-\wB\stil$ (the envelope formula, as for $\sast$), and $\wB\stil=\wA/(\tau\sast)=\Lv_1+\alpha_0$ by $\sast\stil=\wA/(\wB\tau)$, so $\wA-\wB\stil=\alpha_2-\Lv_1$ and $\muq+\alpha_2-\Lv_1=E/\tau-\alpha_0-\Lv_1=\Lv_2$ by $\Lv_1+\Lv_2=E/\tau-\alpha_0$ (\cref{lem:set-eig}).
+\end{proof}
+
+\begin{rmk}[Euler's integral; motivation, used nowhere]
+\label{rmk:row-eulerint}
+Under $\mathrm{Re}(\wA/z)>-1$, $\mathrm{Re}(\alpha_1/z)>-1$, $|\tau|<1$, the integral $J(z,\tau)\coloneqq\int_0^1s^{\wA/z}(1-s)^{\alpha_1/z}(1-\tau s)^{-\alpha_2/z-1}\,\dd s$ equals $\Bfn(\wA/z+1,\alpha_1/z+1)\,\Fhyp(z,\tau)$: this is Euler's integral representation with $(a,b,g)=(\ga,\gb,\gc)$ (expand $(1-\tau s)^{-\ga}$ and use $\int_0^1s^{\gb-1+n}(1-s)^{\gc-\gb-1}\,\dd s=\Bfn(\gb,\gc-\gb)(\gb)_n/(\gc)_n$). For general $a,b,g$ and $\mathsf{K}\coloneqq s^{b-1}(1-s)^{g-b-1}(1-\tau s)^{-a}$ the exact identity
+\[
+\big[\tau(1-\tau)\de_\tau^2+(g-(a+b+1)\tau)\de_\tau-ab\big]\mathsf{K}=-a\,\de_s\big[s^b(1-s)^{g-b}(1-\tau s)^{-a-1}\big]
+\]
+holds: after division by $a\mathsf{K}(1-\tau s)^{-2}$ both sides equal $-b+gs+(b-a-1)\tau s+(a+1-g)\tau s^2$. Under the stated hypotheses the boundary terms vanish and $\Gauss[J]=0$; the recursion of \cref{lem:row-unique} at numerical $z$ ($k+\gc\neq0$ since $\mathrm{Re}\,\gc>0$) re-proves $J=J(z,0)\Fhyp$. The formal expansion obeys Gauss's equation because of the pointwise identity \eqref{eq:row-amp} alone, with no boundary terms and no hypothesis on $z$; \eqref{eq:row-amp} is this identity with $(a,b,g)=(\ga,\gb,\gc)$, for which $\mathsf{K}=\re^{\phi_\tau/z}(1-\tau s)^{-1}$.
+\end{rmk}

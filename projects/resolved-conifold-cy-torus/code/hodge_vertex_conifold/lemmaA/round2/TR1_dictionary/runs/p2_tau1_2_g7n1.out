@@ -1,0 +1,10 @@
+tau = 1/2, sigma = 3/4, y = base; G = 7, N = 1, kmax = 19, series length 86; setup 73.8 s
+recursion: 32 correlators, 822.2 s
+(1,1):     2 xi-coefficients, symmetry violations 0; vs Hodge: 2 compared, mismatches 0
+(2,1):     5 xi-coefficients, symmetry violations 0; vs Hodge: 5 compared, mismatches 0
+(3,1):     8 xi-coefficients, symmetry violations 0; vs Hodge: 8 compared, mismatches 0
+(4,1):    11 xi-coefficients, symmetry violations 0; vs Hodge: 11 compared, mismatches 0
+(5,1):    14 xi-coefficients, symmetry violations 0; vs Hodge: 14 compared, mismatches 0
+(6,1):    17 xi-coefficients, symmetry violations 0; vs Hodge: 17 compared, mismatches 0
+(7,1):    20 xi-coefficients, symmetry violations 0; (no Hodge table)
+TOTAL: 57 coefficient comparisons, 0 failures; time 822.6 s

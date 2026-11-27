@@ -1,0 +1,26 @@
+==================== x = 3/7 (c = 10/7)
+==================== x = 2/5 (c = 7/5)
+==================== x = 5/3 (c = 8/3)
+==================== x = 7/2 (c = 9/2)
+==================== summary (comparisons / mismatches)
+  Delta_2                     52  0
+  E11 anti-diagonal           60  0
+  E11 corner                  28  0
+  E11 legs table             524  0
+  E11 loops table            136  0
+  E11 support                 88  0
+  E12 legs t^0 (chi_b)        32  0
+  E12 legs table             132  0
+  E12 legs top               132  0
+  Theta                      164  0
+  algebra                     48  0
+  delta_k table              108  0
+  dphi                       128  0
+  partial fractions          636  0
+  rho                        112  0
+  sigma                       72  0
+  subleading coefficient      44  0
+  sum rule                    48  0
+  top coefficient             48  0
+  total comparisons: 2592 (x = 3/7 2/5 5/3 7/2)
+  all comparisons exact

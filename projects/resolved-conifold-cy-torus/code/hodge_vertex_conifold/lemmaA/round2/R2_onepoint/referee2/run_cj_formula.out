@@ -1,0 +1,7 @@
+SUMMARY formula G=7 tau=1 j=1..23: 23 relations, 0 failures
+SUMMARY formula G=8 tau=1 j=1..26: 26 relations, 0 failures
+SUMMARY formula G=9 tau=1 j=1..29: 29 relations, 0 failures
+SUMMARY formula G=10 tau=1 j=1..32: 32 relations, 0 failures
+SUMMARY formula G=8 tau=2 j=1..26: 26 relations, 0 failures
+SUMMARY formula G=10 tau=2 j=1..32: 32 relations, 0 failures
+done

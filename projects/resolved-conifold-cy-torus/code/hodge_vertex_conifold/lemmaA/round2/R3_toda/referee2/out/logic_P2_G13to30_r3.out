@@ -1,0 +1,14 @@
+# P_2 = (1/2) D[1,1] + (1/2) D[2]
+(L1) P_2 G=13: 458 relations (R at levels D-1, D = 1..23, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=14: 575 relations (R at levels D-1, D = 1..25, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=15: 710 relations (R at levels D-1, D = 1..27, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=16: 865 relations (R at levels D-1, D = 1..29, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=17: 1041 relations (R at levels D-1, D = 1..31, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=18: 1239 relations (R at levels D-1, D = 1..33, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=19: 1461 relations (R at levels D-1, D = 1..35, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=20: 1708 relations (R at levels D-1, D = 1..37, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=21: 1981 relations (R at levels D-1, D = 1..39, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=22: 2282 relations (R at levels D-1, D = 1..41, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=23: 2612 relations (R at levels D-1, D = 1..43, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=24: 2972 relations (R at levels D-1, D = 1..45, r <= 3), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=25: 3364 relations (R at levels D-1, D = 1..47, r <= 3), survivors 0, circular 0, relations without exactly one target 0

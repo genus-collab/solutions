@@ -1,0 +1,164 @@
+% s2_setup_a (abridged version). Label prefix: set. Geometry, invariants, genus-zero data.
+\section{Set-up: the geometry, the torus and the genus-zero data}
+\label{sec:set}
+
+Everything in this section is a definition or an elementary identity; the verifications are direct computations, given in \Lref{Section~2}. Throughout, idempotent (colour) $1$ is the singular one and idempotent (colour) $2$ the regular one, in the sense of \cref{def:set-alg}.
+
+%-------------------------------------------------------------------------------
+\subsection{The target, the tori and the invariants}
+\label{sec:set-target}
+
+Let $X$ be the resolved conifold and $Z\coloneqq X\times\bbC^2$, the total space of $\cO(-1)^{\oplus2}\oplus\cO^{\oplus2}\to\bbP^1$. The five-torus $\Tmax=(\bbC^*)^5$ acts on $Z$ with the two fixed points $p_+,p_-$ of the zero section, with tangent weights
+\begin{equation}
+\label{eq:set-wts}
+\wts_+=(\alpha_0,\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2),\qquad
+\wts_-=(-\alpha_0,\alpha_0+\alpha_1,\alpha_0+\alpha_2,-\epsilon_1,-\epsilon_2) ,
+\end{equation}
+and the $\Tmax$-linearised normal bundle of the zero section is $\Nb=\cO(-1)_{\alpha_1}\oplus\cO(-1)_{\alpha_2}\oplus\cO_{-\epsilon_1}\oplus\cO_{-\epsilon_2}$. We write
+\[
+E\coloneqq\alpha_0+\alpha_1+\alpha_2,\qquad \wA\coloneqq\alpha_0+\alpha_2=E-\alpha_1,\qquad \wB\coloneqq\alpha_0+\alpha_1=E-\alpha_2,\qquad \uq\coloneqq(E-2\alpha_1)(E-2\alpha_2),
+\]
+so that $\wA\wB=\alpha_1\alpha_2+\alpha_0E$ and $2\alpha_0E+4\alpha_1\alpha_2=E^2+\uq$. The products of the tangent weights are $\eul(\wts_+)=\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2$ and $\eul(\wts_-)=-\alpha_0\wA\wB\epsilon_1\epsilon_2$.
+
+\begin{defn}[{\Lref{Definition~2.1}: the Calabi--Yau torus; non-degeneracy}]
+\label{def:set-ND}
+The \emph{Calabi--Yau four-torus} $\TCY\subset\Tmax$ is the subtorus on which $E=\alpha_0+\alpha_1+\alpha_2=\epsilon_1+\epsilon_2$. Inside $\TCY$ we use the three-torus $\Tthree:\ \alpha_0=0$ and the \emph{fibrewise torus} $\TF:\ \alpha_0=0,\ \alpha_i=\epsilon_i$, which fixes the zero section pointwise. The \emph{non-degeneracy condition} is
+\[
+\text{(ND)}\qquad \alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2E\neq0 .
+\]
+A \emph{weight point with (ND)} is a point of $\mathrm{Lie}(\TCY)$, with complex (or rational) coordinates, at which (ND) holds; $\alpha_0=0$ is allowed. The function fields in use are $\Kal\coloneqq\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$, $\KCY\coloneqq\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1)$ with $\epsilon_2\coloneqq E-\epsilon_1$, and $\Kred\coloneqq\bbQ(\alpha_1,\alpha_2,\epsilon_1)$, so that $\KCY=\Kred(\alpha_0)$; $\Kred$ regarded as the function field of $\Tthree$ is written $\Kthree$. ``At the generic point of $\TCY$'' means ``in $\KCY$'', where (ND) holds and $\alpha_0$, $\alpha_1-\alpha_2$ are non-zero.
+\end{defn}
+
+\begin{defn}[{\Lref{Definition~2.3}: invariants by localisation; the series}]
+\label{def:set-inv}
+For $g\geq2$ and $d\geq0$ let $\GW_{g,d}\coloneqq\GW^{Z,\TCY}_{g,d[\bbP^1]}\in\KCY$ be the genus-$g$, degree $d[\bbP^1]$ $\TCY$-equivariant Gromov--Witten invariant of $Z$ in the definition by localisation: the $\TCY$-fixed loci of $\Mbar_{g,0}(Z,d)$ are the $\alpha_0$-fixed loci of the proper moduli space $\Mbar_{g,0}(\bbP^1,d)$ (as $\alpha_0\neq0$ in $\KCY$), and the invariant is the sum over them of the residues of the virtual localisation formula \cite{GP99}, with $\Nb$ moving. For the five-torus the same definition gives $\GW^{\Tmax}_{g,d}\in\Kal$. The genus-$g$ series is
+\[
+\sF_g(\cQ)\coloneqq\sum_{d\geq0}\GW_{g,d}\,\cQ^d,\qquad \sG_g\coloneqq\sF_g-\sF_g(0)=\sum_{d\geq1}\GW_{g,d}\,\cQ^d .
+\]
+We put $t\coloneqq\log\cQ$ and $\tau\coloneqq1-1/\cQ=1-\re^{-t}$, so that $\cQ\tau=\cQ-1$ and $\dd\tau/\dd t=1-\tau$. The \emph{conifold point} is $\cQ=1$, that is, $t=\tau=0$. Finally, for $g\geq0$ and $n\geq1$,
+$\Li_{-n}(\cQ)\coloneqq\sum_{d\geq1}d^n\cQ^d$ and
+\[
+\Pg\coloneqq\coef{t^{2g}}\,\frac{\epsilon_1\epsilon_2\,t^2}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)},\qquad
+\beta_n(\epsilon_1,\epsilon_2)\coloneqq(n-1)!\,\coef{t^n}\,\frac{1}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)} .
+\]
+\end{defn}
+
+On functions of $t$ a prime is $\dd/\dd t=\thQ=\cQ\,\dd/\dd\cQ$ and $f_\tau\coloneqq\dd f/\dd\tau$, so $f'=(1-\tau)f_\tau$; on functions of the Euler variable $s$ below a prime is $\dd/\dd s$. Further $\Dz\coloneqq z\,\dd/\dd t$, and $\coef{t^k}$, $\coef{z^m}$, $\coef{\psi^a}$ denote coefficients, taken coefficientwise in the other variables.
+
+%-------------------------------------------------------------------------------
+\subsection{The superpotential and the Frobenius data}
+\label{sec:set-crit}
+
+\begin{lem}[{\Lref{Lemma~2.5}: superpotential, critical points; parts omitted}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-crit}
+Let $\thU\coloneqq U\,\dd/\dd U$, $\cW(U)\coloneqq\alpha_1\log(1-\cQ U)-\alpha_2\log U+\wA\log(1-U)$ and $\cW_k\coloneqq\thU^k\cW$ for $k\geq1$; the $\cW_k$ are rational in $U$ and $\cQ$, and for $k\geq2$ they are polynomials without constant term in $(1-U)^{-1}$ and $(1-\cQ U)^{-1}$ with coefficients in $\bbZ[\alpha_1,\alpha_2,\wA]$.
+\begin{enumerate}
+\item The critical equation $U\cW_U=0$ is equivalent to
+\begin{equation}
+\label{eq:set-P}
+\Pq(U)\coloneqq\wB\cQ U^2-\big(\alpha_0+\cQ(\alpha_1-\alpha_2)\big)U-\alpha_2=0 ,
+\end{equation}
+and $(1-\cQ U)(1-U)\,U\cW_U=\Pq(U)$ identically. The discriminant of $\Pq$ in $U$ is $\Disc(\cQ)$ of \cref{lem:set-disc}.
+\item $\Pq(1)=\wA(\cQ-1)$ and $\Pq(1/\cQ)=-\alpha_1\tau$. So, for $\cQ$ finite and non-zero, a root $U_i$ of $\Pq$ satisfies $U_i=1$ or $\cQ U_i=1$ only over $\cQ=1$.
+\item Put $\Lv(U)\coloneqq-\alpha_1\cQ U/(1-\cQ U)=\de_t\cW$. At a critical point $\Lv(U)=\alpha_2+\wA U/(1-U)$, and in $\KCY(\cQ)[U]/(\Pq)$ one has $\Lv(U)=(\wB U+\alpha_2)/\tau$.
+\end{enumerate}
+\end{lem}
+
+\begin{prop}[{\Lref{Proposition~2.6}: Frobenius data in the flat basis}]\genusstatus{AI-proposed, unchecked}
+\label{prop:set-frob}
+Let $\{1,H\}$ be the flat basis, $H$ the equivariant hyperplane class of $\bbP^1$ with $H|_{p_+}=0$, $H|_{p_-}=-\alpha_0$. The genus-zero potential of the $\TCY$-equivariant theory of $Z$ is $\mathsf{Prep}^{\mathrm{cl}}+\Li_3(\re^{t_1})/(\epsilon_1\epsilon_2)$ with $\mathsf{Prep}^{\mathrm{cl}}$ the classical cubic term (\cref{lem:ide-g0}). The inverse of the metric is
+\[
+\eta^{-1}=\epsilon_1\epsilon_2\begin{pmatrix}\alpha_0\alpha_1\alpha_2&\alpha_1\alpha_2\\\alpha_1\alpha_2&-E\end{pmatrix},
+\qquad\text{independent of }t;
+\]
+$1$ is the unit of the quantum product, and $H\qprod H=-(\alpha_1\alpha_2/\tau)\,1+(E/\tau-\alpha_0)H$. The eigenvalues $\Lv_1,\Lv_2$ of $H\qprod$ are the roots of $\Lv^2-(E/\tau-\alpha_0)\Lv+\alpha_1\alpha_2/\tau$, and the product is commutative, associative and Frobenius. Covectors $a=(a_0,a_1)$ (components paired with $1$ and $H$) are paired by $\eta^{-1}$,
+\begin{equation}
+\label{eq:set-pairing}
+\langle a,b\rangle\coloneqq\epsilon_1\epsilon_2\big[\alpha_0\alpha_1\alpha_2\,a_0b_0+\alpha_1\alpha_2(a_0b_1+a_1b_0)-E\,a_1b_1\big],
+\end{equation}
+symmetric with constant coefficients.
+\end{prop}
+
+\begin{defn}[{\Lref{Definition~2.7}: the quadratic algebra and its involution}]
+\label{def:set-QA}
+Let $\QA$ be the ring $\KCY(\cQ)[U]/(\Pq(U))$, with its two characters $\ev_i:U\mapsto U_i$, which are jointly injective. The \emph{involution} of $\QA$ is the ring automorphism $U\mapsto U_1+U_2-U$, which exchanges the two characters. By \cref{lem:set-disc}, $\QA$ is the function field $\KCY(\Ccov)$ of the double cover $\Ccov\to\bbP^1_\cQ$, $\ydc^2=\Disc(\cQ)$, and the involution is its deck involution; $\Lv(U)\in\QA$ and $\ev_i\Lv(U)=\Lv_i$.
+\end{defn}
+
+\begin{prop}[{\Lref{Proposition~2.8}: idempotents and vertex weights}]\genusstatus{AI-proposed, unchecked}
+\label{prop:set-idem}
+The idempotents of the quantum product are $\eid_1=(H-\Lv_2)/(\Lv_1-\Lv_2)$ and $\eid_2=(H-\Lv_1)/(\Lv_2-\Lv_1)$, with $H\qprod\eid_i=\Lv_i\eid_i$ and $\eta(\eid_i,\eid_j)=0$ for $i\neq j$. Put $\Delta_i\coloneqq1/\eta(\eid_i,\eid_i)$; the \emph{vertex weight} of a vertex of genus $g_v$ and colour $i$ is $\Delta_i^{g_v-1}$. For $\{i,j\}=\{1,2\}$,
+\begin{equation}
+\label{eq:set-Delta}
+\begin{split}
+\Delta_i&=\frac{\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2(\Lv_i-\Lv_j)}{\alpha_1\alpha_2-E\Lv_j}
+=\epsilon_1\epsilon_2(\Lv_i-\Lv_j)(\alpha_1\alpha_2-E\Lv_i)\\
+&=\epsilon_1\epsilon_2(\alpha_0\alpha_1\alpha_2+2\alpha_1\alpha_2\Lv_i-E\Lv_i^2)
+=\alpha_1\wA\epsilon_1\epsilon_2\,\cW_2(U_i),
+\end{split}
+\end{equation}
+these four expressions being equal as elements of $\QA$; moreover $(\alpha_1\alpha_2-E\Lv_1)(\alpha_1\alpha_2-E\Lv_2)=\alpha_1\alpha_2\wA\wB$, $\Delta_1\Delta_2=-\epsilon_1^2\epsilon_2^2\,\alpha_1\alpha_2\wA\wB(\Lv_1-\Lv_2)^2$ and $1/\Delta_1+1/\Delta_2=E/(\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2)$.
+\end{prop}
+
+Every factor of idempotent $2$ defined below is obtained from the corresponding factor of idempotent $1$ by applying the involution, that is, by evaluating the same expression in $U$ at the other root \Lref{Lemma~4.23}.
+
+%-------------------------------------------------------------------------------
+\subsection{Algebraic functions of \texorpdfstring{$\tau$}{tau}; the discriminant}
+\label{sec:set-alg}
+
+\begin{defn}[{\Lref{Definition~2.9}: algebraic functions of $\tau$}]
+\label{def:set-alg}
+Put $\delta^2\coloneqq(E+\alpha_0\tau)^2-4\wA\wB\tau=E^2-(E^2+\uq)\tau+\alpha_0^2\tau^2$, and let $\delta$ be the root analytic near $\tau=0$ with $\delta(0)=E$; it is analytic on the disc $\Ddisc\coloneqq\{|\tau|<r_\Ddisc\}$, $r_\Ddisc$ the smallest modulus of a root of $\delta^2$ (finite under (ND)). Further $\Ddisc'\coloneqq\Ddisc\cap\{|\tau|<1\}$ and $\Ddisc''\coloneqq\Ddisc'\setminus\{0\}$. The \emph{critical polynomial} is $\Ns(s)\coloneqq\wB\tau s^2-(E+\alpha_0\tau)s+\wA$, with roots
+\[
+\sast\coloneqq\frac{E+\alpha_0\tau-\delta}{2\wB\tau}=\frac{2\wA}{E+\alpha_0\tau+\delta},\qquad
+\stil\coloneqq\frac{E+\alpha_0\tau+\delta}{2\wB\tau}=\frac{\wA}{\wB\tau\sast};
+\]
+$\sast$ is analytic on $\Ddisc$ with $\sast(0)=\wA/E$, and $\tau\stil$ is analytic with value $E/\wB$ at $0$. The \emph{critical points} are $U_1\coloneqq1-\tau\sast$ and $U_2\coloneqq1-\tau\stil$, the two roots of $\Pq$, with $U_1\to1$ and $U_2\to-\alpha_2/\wB$ as $t\to0$; idempotent $1$ is the \emph{singular} idempotent and idempotent $2$ the \emph{regular} one. The \emph{Euler phase} is $\phi_\tau(s)\coloneqq\wA\log s+\alpha_1\log(1-s)-\alpha_2\log(1-\tau s)$, with principal branches near $(\tau,s)=(0,\wA/E)$, and $\dphi(\tau)\coloneqq\phi_\tau(\sast(\tau))-\phi_0(\wA/E)$, an analytic germ at $\tau=0$ with $\dphi(0)=0$.
+\end{defn}
+
+\begin{lem}[{\Lref{Lemma~2.10}: the critical polynomial}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-N}
+Let $\tau\neq0$. Then $\phi_\tau'(s)=\Ns(s)/\big(s(1-s)(1-\tau s)\big)$, so the critical points of $\phi_\tau$ in $\bbC\setminus\{0,1,1/\tau\}$ are $\sast$ and $\stil$; on $\Ddisc'$, $\sast\notin\{0,1,1/\tau\}$, and on $\Ddisc''$, $\stil\notin\{0,1,1/\tau\}$ and $U_2\notin\{0,1,1/\cQ\}$. At $s=\sast$, with $\Lv_2\coloneqq\wB\sast-\alpha_0$:
+\begin{enumerate}
+\item $\Ns'(\sast)=2\wB\tau\sast-(E+\alpha_0\tau)=-\delta$ (and $\Ns'(\stil)=+\delta$);
+\item $(1-\tau)\alpha_2s=(\wA-\wB s)(1-\tau s)$, equivalently $(E-\wB\tau s)(1-s)=\alpha_1(1-\tau s)$ (also at $s=\stil$); moreover $E-\wB\tau\sast=\delta+\tau\Lv_2$;
+\item $\dd\sast/\dd\tau=\sast\Lv_2/\delta$;
+\item $\wA-Es=-\tau s(\wB s-\alpha_0)$ (also at $s=\stil$).
+\end{enumerate}
+Consequently (envelope formula)
+\begin{equation}
+\label{eq:set-envelope}
+\dphi_\tau=\frac{\alpha_2\sast}{1-\tau\sast}=\frac{\wA-\wB\sast}{1-\tau},\qquad \dphi'=\wA-\wB\sast ,
+\end{equation}
+and $\dphi=(\alpha_2\wA/E)\tau+O(\tau^2)$.
+\end{lem}
+
+\begin{lem}[{\Lref{Lemmas~2.11 and~2.12}: eigenvalues and $\Delta_2$ in terms of $\sast$}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-eig}
+With $U=1-\tau s$ ($\tau\neq0$), $\Pq(1-\tau s)=\cQ\tau\Ns(s)$ as polynomials in $s$. The eigenvalues are
+\[
+\Lv_1=\frac{\wA}{\tau\sast}-\alpha_0,\qquad \Lv_2=\wB\sast-\alpha_0,\qquad
+\Lv_1+\Lv_2=\frac E\tau-\alpha_0,\qquad \Lv_1\Lv_2=\frac{\alpha_1\alpha_2}{\tau},\qquad \Lv_1-\Lv_2=\frac\delta\tau .
+\]
+Moreover $\Lv_1=E/t+\lrem(t)$ with $\lrem$ analytic at $t=0$, $\lrem(0)=E/2-\alpha_0-\alpha_1\alpha_2/E$, and $\Lv_2$ is analytic with $\Lv_2(0)=\alpha_1\alpha_2/E$. Finally $\alpha_1\alpha_2-E\Lv_2=-\wB\tau\sast\Lv_2$,
+\[
+\Delta_2=\epsilon_1\epsilon_2\wB\,\delta\,\sast\Lv_2,\qquad
+\Delta_1\Delta_2=-\epsilon_1^2\epsilon_2^2\,\alpha_1\alpha_2\wA\wB\,\frac{\delta^2}{\tau^2},\qquad
+\frac{\Delta_2}{\Lv_2-\Lv_1}=\epsilon_1\epsilon_2(\alpha_1\alpha_2-E\Lv_2),
+\]
+and $\Delta_2$ is analytic at $t=0$ with $\Delta_2(0)=\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E\neq0$ and $\Delta_2'(0)=0$.
+\end{lem}
+
+\begin{lem}[{\Lref{Lemma~2.13}: the discriminant}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-disc}
+Let $\Disc(\cQ)\coloneqq\alpha_0^2+\big(2\alpha_0(\alpha_1+\alpha_2)+4\alpha_1\alpha_2\big)\cQ+(\alpha_1-\alpha_2)^2\cQ^2$. Then $\Disc=\cQ^2\tau^2(\Lv_1-\Lv_2)^2=\cQ^2\delta^2$ is the discriminant of $\Pq(U)$ in $U$; its own discriminant in $\cQ$ is $16\alpha_1\alpha_2\wA\wB$; $\Disc(1)=E^2$, $\Disc(0)=\alpha_0^2$, so at the generic point of $\TCY$, $\Disc$ has two distinct finite roots, none over $\cQ\in\{0,1\}$; $\Disc$ is irreducible over $\KCY=\Kred(\alpha_0)$. The double cover $\Ccov\to\bbP^1_\cQ$, $\ydc^2=\Disc(\cQ)$, has function field $\KCY(\Ccov)=\QA$, by $2\wB\cQ U-(\alpha_0+\cQ(\alpha_1-\alpha_2))=\pm\ydc$; it is ramified exactly over the two roots of $\Disc$ and unramified over $\cQ=0,1,\infty$.
+\end{lem}
+
+\begin{lem}[{\Lref{Lemma~2.14}: behaviour at $\cQ=1$, $\cQ=0$, $\cQ=\infty$}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-limits}
+The following hold.
+\begin{enumerate}
+\item At $\cQ=1$: $\Lv_1=E/\tau+O(1)$, $\Lv_2\to\alpha_1\alpha_2/E$, $t^2\Delta_1$ is analytic with $t^2\Delta_1|_{t=0}=-\epsilon_1\epsilon_2E^3$, and $\Delta_2(0)\neq0$. Idempotent $1$ is therefore the singular one.
+\item At $\cQ=0$, label the roots of $\Pq$ by $U_+\to-\alpha_2/\alpha_0$ and $\cQ U_-\to\alpha_0/\wB$. Then $\Lv_+\to0$, $\Lv_-\to-\alpha_0$, and $\Delta_\pm(0)=\eul(\wts_\pm)$, both non-zero in $\KCY$ because $\alpha_0\neq0$: the point $\cQ=0$ is semisimple at $\alpha_0\neq0$ (on $\Tthree$ and on $\TF$ it is not).
+\item At $\cQ=\infty$ ($\sQ\coloneqq1/\cQ\to0$): $U_1(\sQ)$ and $V_2(\sQ)\coloneqq\cQ U_2$ are power series in $\sQ$ over $\KCY$ with $U_1\to(\alpha_1-\alpha_2)/\wB$, $V_2\to-\alpha_2/(\alpha_1-\alpha_2)$; $\Lv_1\to\alpha_1$, $\Lv_2\to\alpha_2$, and $\Delta_1(\infty)=-\alpha_1\wB(\alpha_1-\alpha_2)\epsilon_1\epsilon_2$, $\Delta_2(\infty)=\alpha_2\wA(\alpha_1-\alpha_2)\epsilon_1\epsilon_2$, both non-zero in $\KCY$. Here the labels $1,2$ are those of the two points of $\Ccov$ over $\cQ=\infty$ at which $U\to(\alpha_1-\alpha_2)/\wB$, respectively $U\to0$.
+\end{enumerate}
+\end{lem}

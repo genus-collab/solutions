@@ -1,0 +1,25 @@
+g=3 R=(2) D=1 delta=-3 range   recursion 0 | Hurwitz 0 ok
+g=3 R=(3) D=2 delta=-2 range   recursion 0 | Hurwitz 0 ok
+g=3 R=(4) D=3 delta=-1 range   recursion 0 | Hurwitz 0 ok
+g=3 R=(6) D=5 delta=1 D=2g-1  recursion 0 | Hurwitz 0 ok
+g=3 R=(7) D=6 delta=2         recursion 913/8064 | Hurwitz 913/8064 ok
+g=3 R=(8) D=7 delta=3         recursion 41/54 | Hurwitz 41/54 ok
+g=3 R=(9) D=8 delta=4         recursion 1781/576 | Hurwitz 1781/576 ok
+g=3 R=(2,2) D=2 delta=-2 range   recursion 0 | Hurwitz 0 ok
+g=3 R=(2,3) D=3 delta=-1 range   recursion 0 | Hurwitz 0 ok
+g=3 R=(2,5) D=5 delta=1 D=2g-1  recursion 0 | Hurwitz 0 ok
+g=3 R=(2,6) D=6 delta=2         recursion 15/28 | Hurwitz 15/28 ok
+g=3 R=(2,7) D=7 delta=3         recursion 7375/1728 | Hurwitz 7375/1728 ok
+g=3 R=(3,4) D=5 delta=1 D=2g-1  recursion 0 | Hurwitz 0 ok
+g=3 R=(3,5) D=6 delta=2         recursion 1301/2688 | Hurwitz 1301/2688 ok
+g=3 R=(3,6) D=7 delta=3         recursion 941/252 | Hurwitz 941/252 ok
+g=3 R=(4,4) D=6 delta=2         recursion 97/210 | Hurwitz 97/210 ok
+g=3 R=(4,5) D=7 delta=3         recursion 3553/1008 | Hurwitz 3553/1008 ok
+g=3 R=(2,2,2) D=3 delta=-1 range   recursion 0 | Hurwitz 0 ok
+g=3 R=(2,2,4) D=5 delta=1 D=2g-1  recursion 0 | Hurwitz 0 ok
+g=3 R=(2,2,5) D=6 delta=2         recursion 431/144 | Hurwitz 431/144 ok
+g=3 R=(2,3,3) D=5 delta=1 D=2g-1  recursion 0 | Hurwitz 0 ok
+g=3 R=(2,3,4) D=6 delta=2         recursion 41/15 | Hurwitz 41/15 ok
+g=3 R=(3,3,3) D=6 delta=2         recursion 157/60 | Hurwitz 157/60 ok
+g=3 R=(2,2,2,3) D=5 delta=1 D=2g-1  recursion 0 | Hurwitz 0 ok
+rec_check g=3 JMAX=9: 24 comparisons, 0 mismatches

@@ -1,0 +1,7 @@
+genus 2 r 1: (a) H' pairs 3, non-zero 0;  (b) box points 3, non-zero 0;  (c) beyond (some b_i = j_i + 1): 0 pairs, non-zero 0
+genus 2 r 2: (a) H' pairs 14, non-zero 0;  (b) box points 14, non-zero 0;  (c) beyond (some b_i = j_i + 1): 4 pairs, non-zero 2  e.g. j=(0 3) b=(1 0): -1/32 | j=(0 3) b=(1 1): -1/96
+genus 3 r 1: (a) H' pairs 10, non-zero 0;  (b) box points 10, non-zero 0;  (c) beyond (some b_i = j_i + 1): 0 pairs, non-zero 0
+genus 3 r 2: (a) H' pairs 58, non-zero 0;  (b) box points 58, non-zero 0;  (c) beyond (some b_i = j_i + 1): 21 pairs, non-zero 16  e.g. j=(0 3) b=(1 0): 1/320 | j=(0 3) b=(1 1): 1/960 | j=(0 4) b=(1 0): 37/2880 | j=(0 4) b=(1 1): 7/2880
+genus 4 r 1: (a) H' pairs 21, non-zero 0;  (b) box points 21, non-zero 0;  (c) beyond (some b_i = j_i + 1): 0 pairs, non-zero 0
+genus 4 r 2: (a) H' pairs 160, non-zero 0;  (b) box points 160, non-zero 0;  (c) beyond (some b_i = j_i + 1): 59 pairs, non-zero 52  e.g. j=(0 3) b=(1 0): -1/672 | j=(0 3) b=(1 1): -1/2016 | j=(0 4) b=(1 0): -37/6048 | j=(0 4) b=(1 1): -1/864
+TOTAL: H' pairs 266 (non-zero 0); beyond pairs 84 (non-zero 70)

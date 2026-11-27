@@ -1,0 +1,8 @@
+x=2: rho = 1, -1/18, -1/162...; 146 checks so far, 0 failures
+x=3/5: rho = 1, -1/32, 1/24576...; 292 checks so far, 0 failures
+x=-3: rho = 1, -2, 457/96...; 438 checks so far, 0 failures
+ref_S2_key.pl M=7 K=6: 438 checks, 0 failures
+
+real	0m45.463s
+user	0m44.999s
+sys	0m0.281s

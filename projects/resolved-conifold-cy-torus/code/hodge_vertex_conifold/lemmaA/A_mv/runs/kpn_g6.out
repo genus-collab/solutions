@@ -1,0 +1,6 @@
+genus 6: 96 multisets in the range, 576 unknowns, 6552 equations (KP); rank 576, nullity 0
+   not forced to vanish: none
+
+real	0m8.363s
+user	0m8.297s
+sys	0m0.046s

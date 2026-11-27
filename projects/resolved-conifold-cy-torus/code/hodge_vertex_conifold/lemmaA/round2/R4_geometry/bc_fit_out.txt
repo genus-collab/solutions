@@ -1,0 +1,15 @@
+genus 1: REC y-Taylor coefficients c <= 4 vs two-leaf table: equal
+genus 2: REC y-Taylor coefficients c <= 4 vs two-leaf table: equal
+genus 3: REC y-Taylor coefficients c <= 4 vs two-leaf table: equal
+genus 4: REC y-Taylor coefficients c <= 4 vs two-leaf table: equal
+genus 5: REC y-Taylor coefficients c <= 4 vs two-leaf table: equal
+genus 6: REC y-Taylor coefficients c <= 4 vs two-leaf table: equal
+genus 7: REC y-Taylor coefficients c <= 4 vs two-leaf table: equal
+c=1: ansatz B^(c)_g = Sum A^(c)_{g-g1} T_{g1}/j holds at  g=1: j=1,2 | g=2: j=1,2,3,4 | g=3: j=1,2,3,4,5,6 | g=4: j=1,2,3,4,5,6,7,8 | g=5: j=1,2,3,4,5,6,7,8,9,10 | g=6: j=1,2,3,4,5,6,7,8,9,10,11,12 | g=7: j=1,2,3,4,5,6,7,8,9,10,11,12,13,14
+      A^(c)_m (m=1..7): -1/12, 1/120, -1/252, 1/240, -1/132, 691/32760, -1/12
+c=2: ansatz B^(c)_g = Sum A^(c)_{g-g1} T_{g1}/j holds at  g=1: j=1 | g=2: j=1 | g=3: j=1 | g=4: j=1 | g=5: j=1 | g=6: j=1 | g=7: j=1
+      A^(c)_m (m=1..7): 1/24, -31/1440, 17/1120, -12379/604800, 29987/665280, -266939317/1816214400, 1916623/2882880
+c=3: ansatz B^(c)_g = Sum A^(c)_{g-g1} T_{g1}/j holds at  g=1: j=1,2 | g=2: j=1 | g=3: j=1 | g=4: j=1 | g=5: j=1 | g=6: j=1 | g=7: j=1
+      A^(c)_m (m=1..7): 0, 7/360, -8333/362880, 367/8960, -8771471/79833600, 4340751631/10378368000, -23445735253/10897286400
+c=4: ansatz B^(c)_g = Sum A^(c)_{g-g1} T_{g1}/j holds at  g=1: j=1,2 | g=2: j=1 | g=3: j=1 | g=4: j=1 | g=5: j=1 | g=6: j=1 | g=7: j=1
+      A^(c)_m (m=1..7): 0, -41/5760, 2585/145152, -553799/12441600, 3562513/23950080, -158731253099/237758976000, 262996370471/67060224000

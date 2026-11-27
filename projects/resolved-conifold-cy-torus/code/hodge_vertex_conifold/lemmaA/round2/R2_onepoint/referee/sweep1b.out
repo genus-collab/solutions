@@ -1,0 +1,21 @@
+Pi=0 lines: 1
+SUMMARY tau=-2/7 g=3 n=1 jmax=9 p=2147483647: tuples 8, compared 8, OK 8, MISMATCH 0, no-data 0; range points 4 (ref zero at 4)
+Pi=0 lines: 1
+SUMMARY tau=-2/7 g=4 n=1 jmax=12 p=2147483647: tuples 11, compared 11, OK 11, MISMATCH 0, no-data 0; range points 6 (ref zero at 6)
+Pi=0 lines: 2
+SUMMARY tau=-2/7 g=5 n=1 jmax=15 p=2147483647: tuples 13, compared 13, OK 13, MISMATCH 0, no-data 0; range points 7 (ref zero at 7)
+Pi=0 lines: 2
+SUMMARY tau=-2/7 g=6 n=1 jmax=18 p=2147483647: tuples 16, compared 16, OK 16, MISMATCH 0, no-data 0; range points 9 (ref zero at 9)
+Pi=0 lines: 3
+SUMMARY tau=-2/7 g=7 n=1 jmax=21 p=2147483647: tuples 18, compared 18, OK 18, MISMATCH 0, no-data 0; range points 11 (ref zero at 11)
+Pi=0 lines: 7
+SUMMARY tau=-2/7 g=2 n=2 jmax=7 p=2147483647: tuples 21, compared 21, OK 21, MISMATCH 0, no-data 0; range points 2 (ref zero at 2)
+Pi=0 lines: 7
+SUMMARY tau=-2/7 g=3 n=2 jmax=7 p=2147483647: tuples 21, compared 21, OK 21, MISMATCH 0, no-data 0; range points 6 (ref zero at 6)
+Pi=0 lines: 7
+SUMMARY tau=-2/7 g=4 n=2 jmax=7 p=2147483647: tuples 21, compared 21, OK 21, MISMATCH 0, no-data 0; range points 12 (ref zero at 12)
+Pi=0 lines: 8
+SUMMARY tau=-2/7 g=5 n=2 jmax=8 p=2147483647: tuples 28, compared 28, OK 28, MISMATCH 0, no-data 0; range points 18 (ref zero at 18)
+Pi=0 lines: 8
+SUMMARY tau=-2/7 g=6 n=2 jmax=8 p=2147483647: tuples 28, compared 28, OK 28, MISMATCH 0, no-data 0; range points 23 (ref zero at 23)
+sweep1b done

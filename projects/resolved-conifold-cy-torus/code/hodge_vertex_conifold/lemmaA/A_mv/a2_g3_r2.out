@@ -1,0 +1,23 @@
+q-data: /g/My Drive/Projects/Old/refGW/hodge_vertex_conifold/lemmaA/A_mv/../data/q_g3_r2.txt
+multiprobe genus 3 r = 2: found
+h=3 tau=2/7 R=(2,2) D=2: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (54 s)
+h=3 tau=2/7 R=(3,2) D=3: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (71 s)
+h=3 tau=2/7 R=(3,3) D=4: Xi=-129809/235146240  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (99 s)
+h=3 tau=2/7 R=(4,2) D=4: Xi=388505/47029248  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (42 s)
+h=3 tau=3/2 R=(2,2) D=2: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (39 s)
+h=3 tau=3/2 R=(3,2) D=3: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (51 s)
+h=3 tau=3/2 R=(3,3) D=4: Xi=-37543/3888000  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (69 s)
+h=3 tau=3/2 R=(4,2) D=4: Xi=-286/30375  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (22 s)
+h=3 tau=5 R=(2,2) D=2: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (35 s)
+h=3 tau=5 R=(3,2) D=3: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (46 s)
+h=3 tau=5 R=(3,3) D=4: Xi=-55523/6220800  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (62 s)
+h=3 tau=5 R=(4,2) D=4: Xi=-18031/2073600  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (20 s)
+h=3 tau=-7/3 R=(2,2) D=2: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (39 s)
+h=3 tau=-7/3 R=(3,2) D=3: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (48 s)
+h=3 tau=-7/3 R=(3,3) D=4: Xi=-948231/98344960  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (67 s)
+h=3 tau=-7/3 R=(4,2) D=4: Xi=-4980677/531062784  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (29 s)
+h=3 tau=7/11 R=(2,2) D=2: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (51 s)
+h=3 tau=7/11 R=(3,2) D=3: Xi=0  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (62 s)
+h=3 tau=7/11 R=(3,3) D=4: Xi=-94169281/16131032064  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (83 s)
+h=3 tau=7/11 R=(4,2) D=4: Xi=-382450139/80655160320  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (42 s)
+SUMMARY h=3 r=2: 80 checks, 0 failures

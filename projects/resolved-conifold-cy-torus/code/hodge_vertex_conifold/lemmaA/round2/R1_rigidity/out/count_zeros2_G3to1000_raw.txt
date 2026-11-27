@@ -1,0 +1,25 @@
+33,42d32
+< G=31: minimal margin 18 (at D=3)
+< G=32: minimal margin 20 (at D=3)
+< G=33: minimal margin 19 (at D=3)
+< G=34: minimal margin 20 (at D=3)
+< G=35: minimal margin 23 (at D=3)
+< G=36: minimal margin 22 (at D=3)
+< G=37: minimal margin 22 (at D=3)
+< G=38: minimal margin 25 (at D=3)
+< G=39: minimal margin 24 (at D=3)
+< G=40: minimal margin 25 (at D=3)
+FAIL G=4 D=3: Z1=2 Z2=0 need 3
+FAIL G=5 D=3: Z1=2 Z2=1 need 4
+FAIL G=6 D=3: Z1=2 Z2=1 need 5
+FAIL G=7 D=3: Z1=2 Z2=3 need 6
+G=800: minimal margin 618 (at D=3)
+G=900: minimal margin 694 (at D=3)
+G=1000: minimal margin 771 (at D=3)
+count_zeros2: G=3..1000, failures: 4; bound (B1) violations: 0; bound (B2) violations (D=8..2000): 0
+
+real	2m58.545s
+user	2m57.841s
+sys	0m0.374s
+
+[exited with code 0]

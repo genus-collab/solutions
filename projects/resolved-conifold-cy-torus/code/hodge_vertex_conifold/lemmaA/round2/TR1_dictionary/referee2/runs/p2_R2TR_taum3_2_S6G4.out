@@ -1,0 +1,22 @@
+mode p2, tau = -3/2, sigma = 3/4, S = 6, GMAX = 4, lmax = 11; setup 121.0 s
+basis check [x^m] xi_k = m^k Pi_m: 49 values, 0 failures
+recursion: 16 correlators, 137.5 s
+(0,3): 1 xi-coefficients, symmetry violations 0, outside 0; xi-form vs genus0: 1 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 4: 4 compared, 0 mismatches
+(0,4): 5 xi-coefficients, symmetry violations 0, outside 0; xi-form vs genus0: 5 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 5: 5 compared, 0 mismatches
+(0,5): 21 xi-coefficients, symmetry violations 0, outside 0; xi-form vs genus0: 21 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 6: 6 compared, 0 mismatches
+(0,6): 84 xi-coefficients, symmetry violations 0, outside 0; xi-form vs genus0: 84 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 7: 7 compared, 0 mismatches
+(1,1): 2 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 2 compared, 0 mismatches; xi-form vs refengine: 2 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 4: 4 compared, 0 mismatches
+(1,2): 6 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 6 compared, 0 mismatches; xi-form vs refengine: 6 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 5: 10 compared, 0 mismatches
+(1,3): 20 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 20 compared, 0 mismatches; xi-form vs refengine: 20 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 6: 20 compared, 0 mismatches
+(1,4): 70 xi-coefficients, symmetry violations 0, outside 0; 
+(1,5): 252 xi-coefficients, symmetry violations 0, outside 0; 
+(2,1): 5 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 5 compared, 0 mismatches; xi-form vs refengine: 5 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 6: 6 compared, 0 mismatches
+(2,2): 21 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 21 compared, 0 mismatches; xi-form vs refengine: 21 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 7: 21 compared, 0 mismatches
+(2,3): 84 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 84 compared, 0 mismatches; xi-form vs refengine: 84 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 8: 56 compared, 0 mismatches
+(2,4): 330 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 330 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 9: 126 compared, 0 mismatches
+(3,1): 8 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 8 compared, 0 mismatches; xi-form vs refengine: 8 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 8: 8 compared, 0 mismatches
+(3,2): 45 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 45 compared, 0 mismatches; xi-form vs refengine: 45 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 9: 36 compared, 0 mismatches
+(3,3): 220 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 220 compared, 0 mismatches; xi-form vs refengine: 220 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 10: 120 compared, 0 mismatches
+(4,1): 11 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 11 compared, 0 mismatches; xi-form vs refengine: 11 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 10: 10 compared, 0 mismatches
+(4,2): 78 xi-coefficients, symmetry violations 0, outside 0; xi-form vs engine: 78 compared, 0 mismatches; xi-form vs refengine: 78 compared, 0 mismatches; x-form [x^mu]F vs sigma^(1-g) prod Pi Xi_g(mu), |mu| <= 11: 55 compared, 0 mismatches
+TOTAL: 1935 comparisons, 0 failures; time 268.9 s

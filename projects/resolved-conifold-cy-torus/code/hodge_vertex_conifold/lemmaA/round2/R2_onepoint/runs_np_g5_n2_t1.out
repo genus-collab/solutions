@@ -1,0 +1,37 @@
+tau=1 g=5 mu=(8,8): xy 512693554037/10813440  engine 512693554037/10813440  OK
+tau=1 g=5 mu=(8,7): xy 10343241839/1081344  engine 10343241839/1081344  OK
+tau=1 g=5 mu=(8,6): xy 3158908243/2162688  engine 3158908243/2162688  OK
+tau=1 g=5 mu=(8,5): xy 6529051/49152  engine 6529051/49152  OK
+tau=1 g=5 mu=(8,4): xy -613017/327680  engine -613017/327680  OK
+tau=1 g=5 mu=(8,3): xy -3989859/1802240  engine -3989859/1802240  OK
+tau=1 g=5 mu=(8,2): xy -12495/65536  engine -12495/65536  OK
+tau=1 g=5 mu=(8,1): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(7,7): xy 1041257947/720896  engine 1041257947/720896  OK
+tau=1 g=5 mu=(7,6): xy 11656387/90112  engine 11656387/90112  OK
+tau=1 g=5 mu=(7,5): xy -113919/65536  engine -113919/65536  OK
+tau=1 g=5 mu=(7,4): xy -731259/360448  engine -731259/360448  OK
+tau=1 g=5 mu=(7,3): xy -11025/65536  engine -11025/65536  OK
+tau=1 g=5 mu=(7,2): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(7,1): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(6,6): xy -1256591/720896  engine -1256591/720896  OK
+tau=1 g=5 mu=(6,5): xy -704573/360448  engine -704573/360448  OK
+tau=1 g=5 mu=(6,4): xy -70785/458752  engine -70785/458752  OK
+tau=1 g=5 mu=(6,3): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(6,2): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(6,1): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(5,5): xy -69779/458752  engine -69779/458752  OK
+tau=1 g=5 mu=(5,4): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(5,3): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(5,2): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(5,1): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(4,4): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(4,3): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(4,2): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(4,1): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(3,3): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(3,2): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(3,1): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(2,2): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(2,1): xy 0  engine 0  OK  [range]
+tau=1 g=5 mu=(1,1): xy 0  engine 0  OK  [range]
+total 36, mismatches 0, homogeneity violations 0

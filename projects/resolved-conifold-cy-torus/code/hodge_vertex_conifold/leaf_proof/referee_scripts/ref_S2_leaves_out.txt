@@ -1,0 +1,9 @@
+x=2: 177 checks so far, 0 failures
+x=3/5: 469 checks so far, 0 failures
+x=-3: 646 checks so far, 0 failures
+x=5/2: 1081 checks so far, 0 failures
+ref_S2_leaves.pl N=12: 1081 checks, 0 failures
+
+real	0m18.091s
+user	0m17.890s
+sys	0m0.062s

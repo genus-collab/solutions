@@ -1,0 +1,71 @@
+A. coloured stable graphs in frame B: sum over labelled decorations at fixed colouring
+   S1 g 2 : coloured stable graphs 22 (with edge 20 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 76 singular 7 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 0s
+   S1 g 3 : coloured stable graphs 352 (with edge 350 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 3676 singular 263 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 0s
+   S1 g 4 : coloured stable graphs 8598 (with edge 8596 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 292748 singular 15534 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 20s
+   S3 g 2 : coloured stable graphs 22 (with edge 20 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 76 singular 7 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 0s
+   S3 g 3 : coloured stable graphs 352 (with edge 350 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 3676 singular 263 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 0s
+   S3 g 4 : coloured stable graphs 8598 (with edge 8596 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 292748 singular 15534 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 15s
+   random g 2 : coloured stable graphs 22 (with edge 20 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 76 singular 7 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 0s
+   random g 3 : coloured stable graphs 352 (with edge 350 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 3676 singular 263 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 0s
+   random g 4 : coloured stable graphs 8598 (with edge 8596 ); singular: 1 , singular with an edge: 0 ; coloured dec orbits 292748 singular 15534 ; above Sum(2g_v-2)+: 0 ; singular with all g_v<=1: 0 ; 15s
+
+B. frames whose vertex class is the actual fixed-point class, and related
+   S1 | actual (wt_U1 at c1, wt_U2 at c2) as (p+,p-) | g 2 total ok True | singular edge graphs 6 of 6
+   S1 | actual swapped | g 2 total ok True | singular edge graphs 6 of 6
+   S1 | c1=B c2=wt- | g 2 total ok True | singular edge graphs 0 of 6
+   S1 | c1=B c2=wt+ | g 2 total ok True | singular edge graphs 0 of 6
+   S1 | both = nw (a1,a0+a2,-e1,-e2) | g 2 total ok True | singular edge graphs 6 of 6
+   S1 | actual (wt_U1 at c1, wt_U2 at c2) as (p+,p-) | g 3 total ok True | singular edge graphs 41 of 41
+   S1 | actual swapped | g 3 total ok True | singular edge graphs 41 of 41
+   S1 | c1=B c2=wt- | g 3 total ok True | singular edge graphs 0 of 41
+   S1 | c1=B c2=wt+ | g 3 total ok True | singular edge graphs 0 of 41
+   S1 | both = nw (a1,a0+a2,-e1,-e2) | g 3 total ok True | singular edge graphs 41 of 41
+   S3 | actual (wt_U1 at c1, wt_U2 at c2) as (p+,p-) | g 2 total ok True | singular edge graphs 6 of 6
+   S3 | actual swapped | g 2 total ok True | singular edge graphs 6 of 6
+   S3 | c1=B c2=wt- | g 2 total ok True | singular edge graphs 0 of 6
+   S3 | c1=B c2=wt+ | g 2 total ok True | singular edge graphs 0 of 6
+   S3 | both = nw (a1,a0+a2,-e1,-e2) | g 2 total ok True | singular edge graphs 6 of 6
+   S3 | actual (wt_U1 at c1, wt_U2 at c2) as (p+,p-) | g 3 total ok True | singular edge graphs 41 of 41
+   S3 | actual swapped | g 3 total ok True | singular edge graphs 41 of 41
+   S3 | c1=B c2=wt- | g 3 total ok True | singular edge graphs 0 of 41
+   S3 | c1=B c2=wt+ | g 3 total ok True | singular edge graphs 0 of 41
+   S3 | both = nw (a1,a0+a2,-e1,-e2) | g 3 total ok True | singular edge graphs 41 of 41
+
+C. controls
+   g 2 no QRR constant (ffc=1): total ok False | singular edge graphs 6
+   g 2 wrong constant (e1->e1+1 in ffc): total ok False | singular edge graphs 6
+   g 2 rows twisted by h_w, vertex class w'=(E+1,-e1,-e2): total ok False
+   g 2 correct frame B (positive control): total ok True
+   g 3 no QRR constant (ffc=1): total ok False | singular edge graphs 41
+   g 3 wrong constant (e1->e1+1 in ffc): total ok False | singular edge graphs 41
+   g 3 rows twisted by h_w, vertex class w'=(E+1,-e1,-e2): total ok False
+   g 3 correct frame B (positive control): total ok True
+
+D. alpha dependence of the frame-B polar coefficients, decorated graph by decorated graph, at fixed (e1,e2)=(5,11)
+   g 2 t^-2: [('deg 0 in (u,a0^2), divisible by u: False', 7), ('zero', 20)]
+   g 2 t^-1: [('deg 1 in (u,a0^2), divisible by u: True', 6), ('zero', 21)]
+   g 3 t^-4: [('deg 0 in (u,a0^2), divisible by u: False', 29), ('zero', 664)]
+   g 3 t^-3: [('deg 1 in (u,a0^2), divisible by u: True', 28), ('zero', 665)]
+   g 3 t^-2: [('deg 2 in (u,a0^2), divisible by u: False', 188), ('zero', 505)]
+   g 3 t^-1: [('deg 3 in (u,a0^2), divisible by u: True', 188), ('zero', 505)]
+
+E. off the CY locus: a0+a1+a2 = Ea != e1+e2 = Ee (the theorem's hypothesis fails; no closed form for the total used)
+   weights (2, 3, 4, 5, 11) g 2 t^2 Delta_1 = -40095 -Ea^3 e1 e2 = -40095
+       (Ea,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): True | singular stable graphs: 1 of 7 [1] | vertex polar powers: [-2, -1] | singular edge graphs: 0
+       (Ee,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): False | singular stable graphs: 7 of 7 [1, 2, 3, 4, 5, 6, 7] | vertex polar powers: [-2, -1] | singular edge graphs: 6
+   weights (2, 3, 4, 5, 11) g 3 t^2 Delta_1 = -40095 -Ea^3 e1 e2 = -40095
+       (Ea,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): True | singular stable graphs: 4 of 42 [1, 2, 5, 6] | vertex polar powers: [-4, -3, -2, -1] | singular edge graphs: 3
+       (Ee,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): False | singular stable graphs: 42 of 42 [1, 2, 3, 4, 5, 6, 7, 8] | vertex polar powers: [-4, -3, -2, -1] | singular edge graphs: 41
+   weights (3, 3, 4, 5, 11) g 2 t^2 Delta_1 = -55000 -Ea^3 e1 e2 = -55000
+       (Ea,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): True | singular stable graphs: 1 of 7 [1] | vertex polar powers: [-2, -1] | singular edge graphs: 0
+       (Ee,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): False | singular stable graphs: 7 of 7 [1, 2, 3, 4, 5, 6, 7] | vertex polar powers: [-2, -1] | singular edge graphs: 6
+   weights (3, 3, 4, 5, 11) g 3 t^2 Delta_1 = -55000 -Ea^3 e1 e2 = -55000
+       (Ea,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): True | singular stable graphs: 4 of 42 [1, 2, 5, 6] | vertex polar powers: [-4, -3, -2, -1] | singular edge graphs: 3
+       (Ee,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): False | singular stable graphs: 42 of 42 [1, 2, 3, 4, 5, 6, 7, 8] | vertex polar powers: [-4, -3, -2, -1] | singular edge graphs: 41
+   weights (1, 7, 2, 5, 3) g 2 t^2 Delta_1 = -15000 -Ea^3 e1 e2 = -15000
+       (Ea,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): True | singular stable graphs: 1 of 7 [1] | vertex polar powers: [-2, -1] | singular edge graphs: 0
+       (Ee,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): False | singular stable graphs: 7 of 7 [1, 2, 3, 4, 5, 6, 7] | vertex polar powers: [-2, -1] | singular edge graphs: 6
+   weights (1, 7, 2, 5, 3) g 3 t^2 Delta_1 = -15000 -Ea^3 e1 e2 = -15000
+       (Ea,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): True | singular stable graphs: 4 of 42 [1, 2, 5, 6] | vertex polar powers: [-4, -3, -2, -1] | singular edge graphs: 3
+       (Ee,-e1,-e2) total = point-frame total: True | r'_{0,1}(z;0)=Ea/(Ea+z): False | singular stable graphs: 42 of 42 [1, 2, 3, 4, 5, 6, 7, 8] | vertex polar powers: [-4, -3, -2, -1] | singular edge graphs: 41
+done

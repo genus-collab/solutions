@@ -1,0 +1,6 @@
+(a) z G = c + Sum_j A_j(t)/(c + j z) through t^12: {True, True, True, True, True, True, True, True, True, True, True, True, True}
+(b) Sum_j A_j(t) = -c^2 through t^12: True
+    order of vanishing of A_j at t = 0 (expected j - 1): {0, 1, 2, 3, 4, 5, 6, 7}
+(c1) A_j against the stored dilaton fits (rho q_t - q_0, lam_0..lam_{k+1}), k = 0..5: {True, True, True, True, True, True}
+(c2) loop coefficients e_il from the flow against the stored restricted fits (rho^2 E11 at t^k, pairs i <= l, (i-1)+(l-1) <= k), k = 0..5: {True, True, True, True, True, True}
+total time 10 s

@@ -1,0 +1,12 @@
+p=2147483647 tau=3/1 Xi_5(9): author=-558409145/13759414272  refTR =  Hodge =
+p=2147483647 tau=3/7 Xi_5(9): author=7833182869/1343692800000  refTR =  Hodge =
+p=2147483647 tau=-5/3 Xi_5(9): author=-3452589/204800000  refTR =  Hodge =
+p=2147483647 tau=2/1 Xi_4(7): author=-182345/23887872  refTR =  Hodge =
+p=2147483647 tau=2/1 Xi_3(5): author=-245/82944  refTR =  Hodge =
+p=2147483647 tau=3/7 Xi_2(3): author=-3053/2592000  refTR =  Hodge =
+p=2147483629 tau=3/1 Xi_5(9): author=-558409145/13759414272  refTR =  Hodge =
+p=2147483629 tau=3/7 Xi_5(9): author=7833182869/1343692800000  refTR =  Hodge =
+p=2147483629 tau=-5/3 Xi_5(9): author=-3452589/204800000  refTR =  Hodge =
+p=2147483629 tau=2/1 Xi_4(7): author=-182345/23887872  refTR =  Hodge =
+p=2147483629 tau=2/1 Xi_3(5): author=-245/82944  refTR =  Hodge =
+p=2147483629 tau=3/7 Xi_2(3): author=-3053/2592000  refTR =  Hodge =

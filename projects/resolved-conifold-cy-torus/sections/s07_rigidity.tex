@@ -1,0 +1,417 @@
+% s07_rigidity. Section file; new macros at the top; label prefix: rig.
+\section{Rigidity}
+\label{sec:rig}
+
+This section proves Theorem D (\cref{thm:int-rig}) and draws its consequences: the rigidity conjecture of \cite{BS} for the resolved conifold (\cref{cor:rig-conj}), a flop identity for the constant-map terms (\cref{prop:rig-flop}), and the three-torus $\Tthree$ (\cref{cor:rig-3T}). Throughout, the weights are those of $\TCY$, the field is $\KCY=\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1)$ with $\epsilon_2=E-\epsilon_1$, and $E=\alpha_0+\alpha_1+\alpha_2=\epsilon_1+\epsilon_2$. In \cref{lem:rig-poly} and \cref{lem:rig-g1} identities on the five-torus $\Tmax$ occur; there the sums $\alpha_0+\alpha_1+\alpha_2$ and $\epsilon_1+\epsilon_2$ are written out, and $E$ is used only after the restriction to $\TCY$. The letter $N$ denotes the numerator of a rational function of $\cQ$ (the critical polynomial of \cref{sec:set} does not occur in this section), and $\sQ\coloneqq 1/\cQ$ is the local coordinate at $\cQ=\infty$.
+
+\subsection{Statement and reduction}
+\label{sec:rig-plan}
+
+\begin{thm}[Theorem D: rigidity for $g\geq 2$]\genusstatus{AI-proposed, unchecked}
+\label{thm:rig-main}
+Let $g\geq 2$. In $\KCY(\cQ)$,
+\begin{equation}
+\label{eq:rig-main}
+\sF_g(\cQ)-\sF_g(0)=\frac{\Pg\,\Li_{3-2g}(\cQ)}{\epsilon_1\epsilon_2},
+\qquad\text{equivalently}\qquad
+\epsilon_1\epsilon_2\,\GW_{g,d}=\Pg\,d^{\,2g-3}\quad\text{for every } d\geq 1 .
+\end{equation}
+Both sides of the second identity are polynomials in $(\alpha_0,\alpha_1,\alpha_2,\epsilon_1)$ on $\mathrm{Lie}(\TCY)$ (\cref{lem:rig-poly}), so it holds at every point of $\mathrm{Lie}(\TCY)$, including $\alpha_1=\alpha_2$, $E=0$, $\epsilon_1=0$ or $\epsilon_2=0$, and $\alpha_0=0$. In particular $\epsilon_1\epsilon_2\GW_{g,d}$ depends on $(\epsilon_1,\epsilon_2)$ only, symmetrically and through $\epsilon_1^2,\epsilon_2^2$.
+\end{thm}
+
+Here $\sF_g(\cQ)=\sum_{d\geq 0}\GW_{g,d}\cQ^d$ is the series of \cref{def:set-inv}, with the constant-map term $\sF_g(0)=\GW_{g,0}$ included (\cref{rmk:set-d0}), $\Pg=\coef{t^{2g}}\,\epsilon_1\epsilon_2t^2/(4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2))$, and $\Li_{-n}(\cQ)=\sum_{d\geq 1}d^n\cQ^d$ (\cref{lem:rig-li}). The equivalence of the two forms of \eqref{eq:rig-main} is the comparison of the coefficients of $\cQ^d$, $d\geq 1$, in $\KCY\fps{\cQ}$: $\sF_g$ is regular at $\cQ=0$ with expansion $\sum_d\GW_{g,d}\cQ^d$ (\cref{lem:rig-poles}), and subtracting the constant $\sF_g(0)\in\KCY$ changes no pole.
+
+\emph{Inputs.} Theorem D uses Theorem B (\cref{prop:ide-main}, through \cref{lem:ide-terms}) and Theorem C (\cref{cor:reg-main}), hence all the inputs on which these rest (\cref{sec:int-inputs}); the only further input is the localisation formula of Graber--Pandharipande \cite{GP99}, used in \cref{lem:rig-poly}. The constant term $\sF_g(0)$ is not determined (\cref{rmk:rig-F0}).
+
+\emph{Plan.} Put
+\[
+\sG_g\coloneqq\sF_g-\sF_g(0)=\sum_{d\geq 1}\GW_{g,d}\cQ^d\in\KCY(\cQ).
+\]
+The proof has four steps: (i) the poles of $\sF_g$ lie over $\cQ\in\{1,\infty\}$ or over the two roots of $\Disc(\cQ)$ (\cref{lem:rig-poles}); (ii) there is no pole on $\Disc=0$ (\cref{lem:rig-disc}, using the polynomiality \cref{lem:rig-poly} and the small root \cref{lem:rig-root}); (iii) there is no pole at $\cQ=\infty$ (\cref{lem:rig-inf}); (iv) the comparison with $\Li_{3-2g}$ at $\cQ=1$ (\cref{lem:rig-li}) and the conclusion. Steps (i)--(iii) use Theorem B, the genus-zero data of \cref{sec:set} and the polynomiality lemma \cref{lem:rig-poly} (localisation on a proper space) only; step (iv) is the only place where Theorem C, and through it Theorem A, enters.
+
+\subsection{Step (i): the possible poles}
+
+\begin{lem}[the possible poles]\genusstatus{AI-proposed, unchecked}
+\label{lem:rig-poles}
+$\sF_g$ lies in $\KCY(\cQ)$, is regular at $\cQ=0$ with expansion $\sum_{d\geq 0}\GW_{g,d}\cQ^d$ there, and its poles lie over $\cQ=1$, over $\cQ=\infty$, or over the two roots of $\Disc(\cQ)$.
+\end{lem}
+
+\begin{proof}
+This is the description of the coloured terms in \cref{lem:ide-terms}: each coloured term of the graph sum \eqref{eq:set-graphsum} is an element of the function field $\KCY(\Ccov)$ of the double cover $\ydc^2=\Disc(\cQ)$ (\cref{lem:set-disc}(v)), regular over every $\cQ\notin\{0,1,\infty\}$ with $\Disc(\cQ)\neq 0$; the colour sum is invariant under the deck involution of $\Ccov$, hence lies in $\KCY(\cQ)$; and the expansion of every coloured term at either of the two points of $\Ccov$ over $\cQ=0$ lies in $\KCY\fps{\cQ}$ (the rows at both colours lie in $\KCY\fps{\cQ}\fps{z}$ by \cref{prop:ide-rows}(iii), $\cQ=0$ being semisimple because $\alpha_0\neq 0$, \cref{lem:ide-ss}; and $\cQ=0$ is unramified for $\Ccov$ by \cref{lem:set-disc}(v)). By \cref{prop:ide-main} this colour sum is $\sF_g$, and its expansion at $\cQ=0$ is $\sum_d\GW_{g,d}\cQ^d$. Finally, a rational function of $\cQ$ over $\KCY$ which, as an element of $\KCY(\Ccov)$, is regular over a point of $\bbP^1_{\cQ}$ that is unramified for $\Ccov$, is regular at that point.
+\end{proof}
+
+\begin{rmk}[what is proved about the rows]
+\label{rmk:rig-rows}
+The rows of \cref{def:set-rows} are formal series in $z$ whose coefficients are elements of $\KCY(\Ccov)$; the genus-$g$ graph sum uses finitely many of them; the identity \eqref{eq:ide-main} is an identity in $\KCY(\cQ)$, and the equality of its expansion at $\cQ=0$ with $\sum_d\GW_{g,d}\cQ^d$ is Theorem B. No analytic continuation in $\cQ$ is used anywhere in this section: every statement is algebraic in $\KCY(\Ccov)$ (compare \cref{rmk:ide-scope}).
+\end{rmk}
+
+\subsection{Step (ii): no pole on the discriminant}
+
+The argument has three parts: the polynomiality of $\epsilon_1\epsilon_2\GW_{g,d}$ in the weights for $d\geq 1$, the existence of a root of $\Disc$ of positive $\alpha_0$-adic valuation, and an $\alpha_0$-adic evaluation. Recall $\Kred=\bbQ(\alpha_1,\alpha_2,\epsilon_1)$, so that $\KCY=\Kred(\alpha_0)$.
+
+\begin{lem}[polynomiality]\genusstatus{AI-proposed, unchecked}
+\label{lem:rig-poly}
+For $d\geq 1$ and all $g\geq 0$, the five-torus invariant $\epsilon_1\epsilon_2\GW^{\Tmax}_{g,d}$ is a polynomial: it lies in the ring $\bbQ[\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2]$, is homogeneous of degree $2g$, and is symmetric under $\epsilon_1\leftrightarrow\epsilon_2$, under $\alpha_1\leftrightarrow\alpha_2$ and under $(\alpha_0,\alpha_1,\alpha_2)\mapsto(-\alpha_0,\alpha_0+\alpha_1,\alpha_0+\alpha_2)$. The $\TCY$-invariant $\GW_{g,d}$ is its restriction $\epsilon_2\mapsto\alpha_0+\alpha_1+\alpha_2-\epsilon_1$. Hence, on $\TCY$,
+\[
+\GW_{g,d}\in\frac{1}{\epsilon_1\epsilon_2}\,\bbQ[\alpha_0,\alpha_1,\alpha_2,\epsilon_1]\subset\Kred\fps{\alpha_0}\qquad(d\geq 1),
+\]
+the inclusion because $1/\epsilon_2=1/\big((\alpha_1+\alpha_2-\epsilon_1)+\alpha_0\big)$ expands in $\Kred\fps{\alpha_0}$, $\alpha_1+\alpha_2-\epsilon_1$ being a non-zero element of $\Kred$.
+\end{lem}
+
+\begin{proof}
+Let $M\coloneqq\Mbar_g(X,d)$, $X$ the resolved conifold and $d\geq 1$. Every compact curve in $X$ lies in the zero section $\bbP^1$, so $M=\Mbar_g(\bbP^1,d)$ as a space, and $M$ is proper: the class $d[\bbP^1]$ is rigid and $X$ is equirigid in the sense of \cite{BS}. \draftnote{BS label: defn: rigid; the sentence that the resolved conifold is equirigid.} The $\Tmax$-fixed loci of $\Mbar_g(Z,d)$ are those of $M$ (\cref{lem:ide-fixed}). For $d\geq 1$ and $C$ connected, $H^0(C,f^*\cO(-1))=0$: a section vanishes on the non-contracted components, where $f^*\cO(-1)$ has negative degree, and is constant on the contracted components, each of which meets a non-contracted one. So $R^1_{a}\coloneqq R^1\pi_*f^*\cO(-1)_{a}$ is a vector bundle of rank $d+g-1$ on $M$ for $a=\alpha_1,\alpha_2$, and
+\[
+R\pi_*f^*\Nb=-R^1_{\alpha_1}-R^1_{\alpha_2}+(\cO-\Hdg^\vee)_{-\epsilon_1}+(\cO-\Hdg^\vee)_{-\epsilon_2}.
+\]
+Thus
+\[
+e_{\Tmax}(R\pi_*f^*\Nb)^{-1}=\frac{e_{\Tmax}(R^1_{\alpha_1})\,e_{\Tmax}(R^1_{\alpha_2})\,e_{\Tmax}(\Hdg^\vee_{-\epsilon_1})\,e_{\Tmax}(\Hdg^\vee_{-\epsilon_2})}{\epsilon_1\epsilon_2}
+\]
+is $(\epsilon_1\epsilon_2)^{-1}$ times an honest $\Tmax$-equivariant class on $M$ ($e_{\Tmax}(R^1_a)$ depends on $\alpha_0$ through the rotation of the base). The localisation definition of the invariant (\cref{def:set-inv}) equals the $\Tmax$-equivariant integral of this class over the proper space $M$ by the localisation formula of \cite{GP99}: that formula is stated for a $\bbC^*$-action, and one applies it to a generic one-parameter subgroup of $\Tmax$ with the same fixed loci; both sides are rational functions of the weights and such subgroups are Zariski dense, so the formula holds for $\Tmax$. The equivariant pushforward of a class on the proper $M$ lands in $H^*_{\Tmax}(\mathrm{pt})=\bbQ[\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2]$, which gives the polynomiality. The degree is $2(d+g-1)+2g-2(d+g-1)=2g$, the virtual dimension of $M$ being $2d+2g-2$. The symmetries are those of \cref{lem:set-sym}: they are induced by automorphisms of $Z$, and the expression is symmetric in $\epsilon_1,\epsilon_2$. Restriction to $\TCY$: the fixed loci are the same, the Euler classes of the fixed and moving parts restrict, and no denominator vanishes on $\TCY$ (the weights of the virtual normal bundles are of the form (a fibre weight at $p_\pm$)$+j\alpha_0/k$ and $\alpha_0/k$ with integers $j$ and $k\geq 1$, none of which is a multiple of $\alpha_0+\alpha_1+\alpha_2-\epsilon_1-\epsilon_2$); so $\GW^{\TCY}_{g,d}=\GW^{\Tmax}_{g,d}|_{\TCY}$. More generally, let $\mgp{T}'\subset\Tmax$ be a subtorus on which none of the weights of $R\pi_*f^*\Nb$ on the fixed loci vanishes: these weights are of the form (a fibre weight of $\Nb$ at $p_\pm$)$+j\alpha_0/k$ with integers $0\leq j\leq k$, $k\geq 1$, and when $\alpha_0=0$ on $\mgp{T}'$ they are the four fibre weights $\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2$ of $\Nb$ at $p_+$ (equal to those at $p_-$), which are then the weights of $R\pi_*f^*\Nb$ on all of $M$. Then the $\mgp{T}'$-fixed loci of $\Mbar_g(Z,d)$ are those of $M$ (every curve of class $d[\bbP^1]$ lies in the zero section, and the two directions of $\bbC^2$ carry the non-zero weights $-\epsilon_1,-\epsilon_2$), $R\pi_*f^*\Nb$ is moving on them, and the $\mgp{T}'$-invariant is defined by localisation as in \cref{def:set-inv}. Since $M$ is proper, the $\Tmax$-equivariant integral over $M$ restricts to the $\mgp{T}'$-equivariant integral of the restricted class, which equals the localisation definition by \cite{GP99} applied to $\mgp{T}'$; so $\epsilon_1\epsilon_2\GW^{\mgp{T}'}_{g,d}$ is the restriction of the polynomial $\epsilon_1\epsilon_2\GW^{\Tmax}_{g,d}$. This covers $\Tthree$ and $\TF$ (\cref{lem:rig-g1}, \cref{lem:rig-3Tid}) and the subtori of $\TCY$ in \cref{cor:rig-conj}. \draftnote{The sources state the restriction for $\TCY$ and, in the three-torus argument, for $\Tthree$ (where the normal weights of the zero section are the four fibre weights); the general subtorus statement is written out here. The hypothesis is stated as the non-vanishing of the weights of $R\pi_*f^*\Nb$ on the fixed loci, not only of the four fibre weights at $p_\pm$: for a subtorus with $\alpha_0\neq 0$ a weight $\alpha_1+j\alpha_0/k$ with $0<j<k$ can vanish although $\alpha_1$ and $\wB$ do not.} This is the contravariance of the invariants of \cite{BS}, and the polynomiality is the polynomiality of the invariants for a rigid class there. \draftnote{BS label: lem: shape of refGW series; lem: GW contravariance.}
+\end{proof}
+
+\begin{rmk}[the constant-map term]
+\label{rmk:rig-d0}
+For $d=0$ the fixed locus is $\Mbar_g\times\{p_+,p_-\}$ and localisation gives
+\[
+\GW_{g,0}=\sum_{p=\pm}\int_{\Mbar_g}\prod_{a=1}^{5}\frac{\Lamv_g(w^{(p)}_a)}{w^{(p)}_a},
+\]
+a rational function of the weights with denominators $\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2$ and $\alpha_0\wA\wB\epsilon_1\epsilon_2$ (this is the value at $\cQ=0$ of the graph sum, \cref{prop:ide-const}). It is a constant in $\cQ$ and plays no role in step (ii); only $\GW_{g,d}\in\Kred\fps{\alpha_0}$ for $d\geq 1$ is used there. A weaker form of \cref{lem:rig-poly}, $\GW^{\Tmax}_{g,d}\in\bbQ[\alpha_1,\alpha_2,\epsilon_1,\epsilon_2][1/(\alpha_1\alpha_2\epsilon_1\epsilon_2)]\fps{\alpha_0}$, obtained by expanding $e_{\Tmax}^{-1}$ in $\alpha_0$, would also suffice for step (ii); the polynomial form is what makes the extension to the excluded loci in the proof of \cref{thm:rig-main} a one-line statement.
+\end{rmk}
+
+\begin{lem}[the small root]\genusstatus{AI-proposed, unchecked}
+\label{lem:rig-root}
+$\Disc$ has a unique root $\cQ_1$ in $\Kred\fps{\alpha_0}$ with $\cQ_1=O(\alpha_0)$; it has $\alpha_0$-adic valuation $2$:
+\[
+\cQ_1=-\frac{\alpha_0^2}{4\alpha_1\alpha_2}+\frac{(\alpha_1+\alpha_2)\,\alpha_0^3}{8\alpha_1^2\alpha_2^2}-\frac{(5\alpha_1^2+6\alpha_1\alpha_2+5\alpha_2^2)\,\alpha_0^4}{64\,\alpha_1^3\alpha_2^3}+O(\alpha_0^5).
+\]
+\end{lem}
+
+\begin{proof}
+Modulo $\alpha_0$, $\Disc=4\alpha_1\alpha_2\cQ+(\alpha_1-\alpha_2)^2\cQ^2$ has the simple root $\cQ=0$ (its derivative there is $4\alpha_1\alpha_2\neq 0$ in $\Kred$), which lifts uniquely to a root in the complete local ring $\Kred\fps{\alpha_0}$ by successive approximation (simple-root lifting). Write $\cQ_1=c_1\alpha_0+c_2\alpha_0^2+c_3\alpha_0^3+c_4\alpha_0^4+\dots$ and expand $\Disc(\cQ_1)=\alpha_0^2+(2\alpha_0(\alpha_1+\alpha_2)+4\alpha_1\alpha_2)\cQ_1+(\alpha_1-\alpha_2)^2\cQ_1^2$. The coefficient of $\alpha_0^1$ is $4\alpha_1\alpha_2c_1$, so $c_1=0$. Then: at order $\alpha_0^2$, $1+4\alpha_1\alpha_2c_2=0$; at order $\alpha_0^3$, $4\alpha_1\alpha_2c_3+2(\alpha_1+\alpha_2)c_2=0$; at order $\alpha_0^4$, $4\alpha_1\alpha_2c_4+2(\alpha_1+\alpha_2)c_3+(\alpha_1-\alpha_2)^2c_2^2=0$, giving
+\[
+c_2=-\frac{1}{4\alpha_1\alpha_2},\qquad c_3=\frac{\alpha_1+\alpha_2}{8\alpha_1^2\alpha_2^2},\qquad
+c_4=-\frac{4(\alpha_1+\alpha_2)^2+(\alpha_1-\alpha_2)^2}{64\,\alpha_1^3\alpha_2^3}=-\frac{5\alpha_1^2+6\alpha_1\alpha_2+5\alpha_2^2}{64\,\alpha_1^3\alpha_2^3}.
+\]
+The other root of $\Disc$ is $-4\alpha_1\alpha_2/(\alpha_1-\alpha_2)^2+O(\alpha_0)$, a unit of $\Kred\fps{\alpha_0}$.
+\end{proof}
+
+\begin{lem}[no pole on $\Disc=0$]\genusstatus{AI-proposed, unchecked}
+\label{lem:rig-disc}
+$\sG_g$, and hence $\sF_g$, has no pole at the roots of $\Disc$.
+\end{lem}
+
+\begin{proof}
+By \cref{lem:rig-poles} and the irreducibility of $\Disc$ over $\KCY$ (\cref{lem:set-disc}(iv)), in the unique factorisation domain $\KCY[\cQ]$ we can write
+\begin{equation}
+\label{eq:rig-NG}
+\sG_g=\frac{N}{(1-\cQ)^n\,\Disc^m},\qquad N\in\KCY[\cQ],\quad n,m\geq 0,\quad \Disc\nmid N
+\end{equation}
+($\sG_g$ is regular at $\cQ=0$ and has no other finite poles; $m$ is then the order of the pole of $\sG_g$ along $\Disc$, and we must show $m=0$). Suppose $m\geq 1$.
+
+\emph{1. The coefficients of $N$.} The identity $N=(1-\cQ)^n\Disc^m\,\sG_g$ holds in $\KCY\fps{\cQ}$ (expand the rational functions at $\cQ=0$; $\sG_g$ is the series $\sum_{d\geq 1}\GW_{g,d}\cQ^d$ by \cref{lem:rig-poles}). Embed $\KCY=\Kred(\alpha_0)$ into the field $\Kred\lser{\alpha_0}$ of formal Laurent series in $\alpha_0$ with finitely many negative powers; the identity then holds in $\Kred\lser{\alpha_0}\fps{\cQ}$. On the right, $(1-\cQ)^n\Disc^m$ has coefficients in $\Kred[\alpha_0]$, and $\sG_g$ has coefficients in $\Kred\fps{\alpha_0}$ by \cref{lem:rig-poly}, so the right side lies in $\Kred\fps{\alpha_0}\fps{\cQ}$. Hence every coefficient of $N$ lies in $\Kred(\alpha_0)\cap\Kred\fps{\alpha_0}$, and $N\in\Kred\fps{\alpha_0}[\cQ]$.
+
+\emph{2. Evaluation at $\cQ_1$.} Let $\ev\colon\Kred\fps{\alpha_0}\fps{\cQ}\to\Kred\fps{\alpha_0}$ be the substitution $\cQ\mapsto\cQ_1$. It is well defined and a ring homomorphism because $\cQ_1$ has valuation $\val(\cQ_1)=2>0$: for a series $\sum_dc_d\cQ^d$ with $c_d\in\Kred\fps{\alpha_0}$, the terms $c_d\cQ_1^d$ have valuation at least $2d$, so the sum converges $\alpha_0$-adically, and products are respected ($\Kred\fps{\alpha_0}$ is complete, and the substitution of a topologically nilpotent element is multiplicative). On the polynomial $N$, $\ev$ is the ordinary evaluation $N(\cQ_1)$. Applying $\ev$ to the identity of step 1,
+\[
+N(\cQ_1)=(1-\cQ_1)^n\,\Disc(\cQ_1)^m\,\ev(\sG_g)=0,
+\]
+since $\Disc(\cQ_1)=0$ and $m\geq 1$. The point is that the series $\sG_g\in\Kred\fps{\alpha_0}\fps{\cQ}$ can be evaluated at $\cQ_1$ only because $\val(\cQ_1)>0$, and that the value of the rational function $\sG_g$ at $\cQ_1$ is not used: what is used is that the identity $N=(1-\cQ)^n\Disc^m\sG_g$ of $\Kred\fps{\alpha_0}\fps{\cQ}$ is preserved by the ring homomorphism $\ev$, and that $N(\cQ_1)$ is the evaluation of a polynomial.
+
+\emph{3. Divisibility.} $N$ lies in $\Kred(\alpha_0)[\cQ]$ and vanishes at $\cQ_1$ in the extension field $\Kred\lser{\alpha_0}$ of $\Kred(\alpha_0)$. The minimal polynomial of $\cQ_1$ over $\Kred(\alpha_0)$ is $\Disc/(\alpha_1-\alpha_2)^2$, which is irreducible over $\Kred(\alpha_0)=\KCY$ by \cref{lem:set-disc}(iv) and has $\cQ_1$ as a root. Hence $\Disc$ divides $N$ in $\Kred(\alpha_0)[\cQ]=\KCY[\cQ]$, contradicting \eqref{eq:rig-NG}. Therefore $m=0$.
+\end{proof}
+
+\subsection{Step (iii): regularity at \texorpdfstring{$\cQ=\infty$}{Q = infinity}}
+
+\begin{lem}[regularity at infinity]\genusstatus{AI-proposed, unchecked}
+\label{lem:rig-inf}
+$\sF_g$ is regular at $\cQ=\infty$ (here $\alpha_1\neq\alpha_2$ in $\KCY$ is used).
+\end{lem}
+
+\begin{proof}
+The point $\cQ=\infty$ is unramified for $\Ccov$ (\cref{lem:set-disc}(v): the leading coefficient $(\alpha_1-\alpha_2)^2$ of $\Disc$ is non-zero), so the two points of $\Ccov$ over $\sQ=1/\cQ=0$ are the two colours, and regularity has to be shown at both of them. In the coordinate $\sQ$, the critical equation \cref{lem:set-crit} divided by $\cQ$ reads
+\[
+\wB\,U^2-(\alpha_0\sQ+\alpha_1-\alpha_2)\,U-\alpha_2\sQ=0,
+\]
+with the simple roots $U\to(\alpha_1-\alpha_2)/\wB$ and $U\to 0$ at $\sQ=0$ (simple because $\alpha_1\neq\alpha_2$); for the second root put $V\coloneqq\cQ U$, so that $\wB\sQ\,V^2-(\alpha_0\sQ+\alpha_1-\alpha_2)\,V-\alpha_2=0$, with the simple root $V\to-\alpha_2/(\alpha_1-\alpha_2)$. Hence (\cref{lem:set-limits}) the critical points $U_1(\sQ)$ and $V_2(\sQ)\coloneqq\cQ U_2$ are power series in $\sQ$ over $\KCY$ with
+\[
+U_1(0)=\frac{\alpha_1-\alpha_2}{\wB},\qquad V_2(0)=-\frac{\alpha_2}{\alpha_1-\alpha_2}.
+\]
+The ingredients of the factors at colour $1$ are the $\cW_k(U_1)$, $k\geq 2$, polynomials in $U_1/(1-U_1)$ and $\cQ U_1/(1-\cQ U_1)=1/(\sQ/U_1-1)$ (\cref{lem:set-crit}); both are power series in $\sQ$, since $1-U_1(0)=\wA/\wB\neq 0$ and $\sQ/U_1-1\to-1$. At colour $2$, $U_2/(1-U_2)=\sQ V_2/(1-\sQ V_2)$ and $\cQ U_2/(1-\cQ U_2)=V_2/(1-V_2)$ are power series in $\sQ$, since $1-V_2(0)=\alpha_1/(\alpha_1-\alpha_2)\neq 0$. Further $\cW_2(U_i)(\sQ=0)\neq 0$ by the values below, so $1/\cW_2(U_i)$ is a power series in $\sQ$; $\Lv_i=\Lv(U_i)=-\alpha_1\cQ U_i/(1-\cQ U_i)$ is a power series in $\sQ$ with $\Lv_1(0)=\alpha_1$, $\Lv_2(0)=\alpha_2$; the derivation $\dd/\dd t=\cQ\,\dd/\dd\cQ=-\sQ\,\dd/\dd\sQ$ maps power series in $\sQ$ to power series in $\sQ$; $\Delta_i=\alpha_1\wA\epsilon_1\epsilon_2\cW_2(U_i)$ (\cref{prop:set-idem}) is a power series in $\sQ$ with non-zero value, so $\Delta_i^{-1}$ and $\Delta_i'/\Delta_i$ are power series in $\sQ$; and $\hnw$, $\hw^{-1}$, $\eta^{-1}$ are constants. Hence every $z$-coefficient of $\rr_{0,i}$ and $\rr_{1,i}$, every $\Dil_i(d)$, every $\Edge_{ij}(a,b)$ and every $\Delta_i^{\pm 1}$ is a power series in $\sQ$ (the normalised expansion of \cref{def:set-rows} has leading coefficient $1$ and involves no square root, so no branch question arises at $\sQ=0$). Therefore every coloured term of \eqref{eq:ide-main}, and $\sF_g$ itself, is a power series in $\sQ$: $\sF_g$ has no pole at $\cQ=\infty$.
+
+\emph{The values at $\sQ=0$} (\cref{lem:set-limits}; they are used again in \cref{prop:rig-flop}). From $\Lv_1+\Lv_2=E/\tau-\alpha_0\to E-\alpha_0=\alpha_1+\alpha_2$ and $\Lv_1\Lv_2=\alpha_1\alpha_2/\tau\to\alpha_1\alpha_2$ at $\tau=1$, the eigenvalues tend to $\{\alpha_1,\alpha_2\}$, and by $\Delta_i=\epsilon_1\epsilon_2(\Lv_i-\Lv_j)(\alpha_1\alpha_2-E\Lv_i)$ (\cref{prop:set-idem}), with $\alpha_2-E=-\wB$ and $\alpha_1-E=-\wA$,
+\begin{align}
+\Delta_1(\infty)&=\epsilon_1\epsilon_2(\alpha_1-\alpha_2)(\alpha_1\alpha_2-E\alpha_1)=-\alpha_1\wB(\alpha_1-\alpha_2)\epsilon_1\epsilon_2,\notag\\
+\Delta_2(\infty)&=\epsilon_1\epsilon_2(\alpha_2-\alpha_1)(\alpha_1\alpha_2-E\alpha_2)=\alpha_2\wA(\alpha_1-\alpha_2)\epsilon_1\epsilon_2,
+\label{eq:rig-Dinf}
+\end{align}
+both non-zero in $\KCY$. The same values follow from $\Delta_i=\alpha_1\wA\epsilon_1\epsilon_2\cW_2(U_i)$: at colour $1$, $\cW_2(U_1)\to-\wA U/(1-U)^2$ at $U=(\alpha_1-\alpha_2)/\wB$, $1-U=\wA/\wB$, which gives $-(\alpha_1-\alpha_2)\wB/\wA$; at colour $2$, $\cW_2(U_2)\to-\alpha_1V/(1-V)^2$ at $V=-\alpha_2/(\alpha_1-\alpha_2)$, $1-V=\alpha_1/(\alpha_1-\alpha_2)$, which gives $\alpha_2(\alpha_1-\alpha_2)/\alpha_1$. In particular $\cW_2(U_i)(0)\neq 0$, as used above.
+\end{proof}
+
+\subsection{Step (iv): comparison with the polylogarithm}
+
+\begin{lem}[the polylogarithms $\Li_{-n}$]\genusstatus{AI-proposed, unchecked}
+\label{lem:rig-li}
+For $n\geq 1$,
+\[
+\Li_{-n}(\cQ)=\sum_{d\geq 1}d^n\cQ^d=\frac{\Aeul_n(\cQ)}{(1-\cQ)^{n+1}},\qquad \Aeul_n\in\bbZ[\cQ],\quad\deg\Aeul_n=n,\quad\Aeul_n(0)=0,
+\]
+with $\Aeul_0=\cQ$ and $\Aeul_{m+1}=\cQ\big[(1-\cQ)\Aeul_m'+(m+1)\Aeul_m\big]$. Hence $\Li_{-n}$ is a rational function of $\cQ$ whose only pole is at $\cQ=1$, of order $n+1$, vanishing at $\cQ=0$ and at $\cQ=\infty$, and
+\[
+\Li_{-n}(1/\cQ)=(-1)^{n+1}\Li_{-n}(\cQ).
+\]
+Its expansion at $t=0$ under $\cQ=\re^{t}$ is
+\[
+\Li_{-n}(\re^{t})=(-1)^{n+1}\,n!\,t^{-n-1}+(\text{a power series in }t),
+\]
+with no other negative power of $t$. For $n=2g-3$ (odd) the polar part is $(2g-3)!\,t^{2-2g}$.
+\end{lem}
+
+\begin{proof}
+The recursion follows from $\Li_{-m-1}=\thQ\Li_{-m}$, $\thQ=\cQ\,\dd/\dd\cQ$: if $\Li_{-m}=\Aeul_m/(1-\cQ)^{m+1}$ then $\thQ\Li_{-m}=\cQ\big[(1-\cQ)\Aeul_m'+(m+1)\Aeul_m\big]/(1-\cQ)^{m+2}$. By induction $\Aeul_n$ has integer coefficients, vanishes at $0$ and has degree exactly $n$ (the coefficient of $\cQ^{m+1}$ in $\Aeul_{m+1}$ is $-m+(m+1)=1$ times the leading coefficient of $\Aeul_m$). So the only pole of $\Li_{-n}$ is at $\cQ=1$, of order $n+1$, and $\Li_{-n}$ vanishes at $\cQ=\infty$ since $\deg\Aeul_n=n<n+1$. The functional equation: for $n=1$, $\Li_{-1}(\cQ)=\cQ/(1-\cQ)^2$ and $\Li_{-1}(1/\cQ)=\cQ/(\cQ-1)^2=\Li_{-1}(\cQ)$; and $\thQ$ anticommutes with $\cQ\mapsto 1/\cQ$ (if $\varphi(\cQ)=f(1/\cQ)$ then $\thQ\varphi=-(\thQ f)(1/\cQ)$), so $\Li_{-n-1}(1/\cQ)=-\thQ\big[\Li_{-n}(1/\cQ)\big]=-(-1)^{n+1}\Li_{-n-1}(\cQ)=(-1)^{n+2}\Li_{-n-1}(\cQ)$. For $n=0$ instead $\Li_0(1/\cQ)=1/(\cQ-1)=-1-\Li_0(\cQ)$, so $\Li_0$ does not vanish at $\infty$; this is why $g\geq 2$ is needed below. The expansion at $t=0$: $\Li_0(\re^t)=\re^t/(1-\re^t)=-1/t-1/2-t/12+\dots$, and since $\thQ=\dd/\dd t$, $\Li_{-n}(\re^t)=(\dd/\dd t)^n\Li_0(\re^t)=(-1)^{n+1}n!\,t^{-n-1}+(\text{power series})$, with no other negative power. For $n=2g-3$, $(-1)^{2g-2}=1$.
+\end{proof}
+
+\subsubsection*{Proof of \cref{thm:rig-main}}
+\label{sec:rig-proof}
+
+Let $g\geq 2$ and put
+\[
+D(\cQ)\coloneqq\sF_g(\cQ)-\sF_g(0)-\frac{\Pg\,\Li_{3-2g}(\cQ)}{\epsilon_1\epsilon_2}\in\KCY(\cQ).
+\]
+\begin{itemize}
+\item \emph{Poles of $D$ at finite $\cQ\neq 1$.} $\sF_g$ has none: it is regular at $\cQ=0$ and has no pole on $\Disc=0$ by \cref{lem:rig-poles,lem:rig-disc}. $\Li_{3-2g}$ has none by \cref{lem:rig-li}.
+\item \emph{Pole at $\cQ=\infty$.} None, by \cref{lem:rig-inf} for $\sF_g$ and \cref{lem:rig-li} for $\Li_{3-2g}$.
+\item \emph{Pole at $\cQ=1$.} Under $\cQ=\re^t$, $D$ maps to an element of $\KCY\lser{t}$ whose polar part is, by Theorem C (\cref{cor:reg-main}(c)), $\gapg\,t^{2-2g}$ minus, by \cref{lem:rig-li} and \cref{lem:reg-beta},
+\[
+\frac{\Pg}{\epsilon_1\epsilon_2}\,(2g-3)!\,t^{2-2g}=\beta_{2g-2}(\epsilon_1,\epsilon_2)\,t^{2-2g}=\gapg\,t^{2-2g};
+\]
+the polar part of $D$ is zero. Here it matters that Theorem C gives the polar part of $\sF_g$ exactly, with no terms $t^{3-2g},\dots,t^{-1}$ (these are what step (v) of \cref{thm:reg-main} kills by $\Mirr(g)$), and that $\Li_{3-2g}(\re^t)$ has none either. A rational function of $\cQ$ over $\KCY$ whose image in $\KCY\lser{t}$ has no negative powers is regular at $\cQ=1$: a pole of order $r\geq 1$ at $\cQ=1$ would give the leading term $(\cQ-1)^{-r}\mapsto t^{-r}$ times a unit of $\KCY\fps{t}$.
+\end{itemize}
+So $D$ is a rational function of $\cQ$ over $\KCY$ without poles on $\bbP^1$, hence a constant $c\in\KCY$, and $D(0)=\sF_g(0)-\sF_g(0)-0=0$ gives $c=0$. This is \eqref{eq:rig-main} in $\KCY(\cQ)$; comparing the coefficients of $\cQ^d$ gives $\epsilon_1\epsilon_2\GW_{g,d}=\Pg\,d^{2g-3}$ in $\KCY$ for every $d\geq 1$.
+
+\emph{Extension to the excluded loci.} Both sides of $\epsilon_1\epsilon_2\GW_{g,d}=\Pg d^{2g-3}$ are polynomials in $(\alpha_0,\alpha_1,\alpha_2,\epsilon_1)$ on $\mathrm{Lie}(\TCY)$: the left side by \cref{lem:rig-poly}, the right side because $\Pg\in\bbQ[\epsilon_1^2,\epsilon_2^2]$ with $\epsilon_2=\alpha_0+\alpha_1+\alpha_2-\epsilon_1$. Two polynomials that are equal in $\KCY$ are equal, so the identity holds at every point of $\mathrm{Lie}(\TCY)$: at $\alpha_1=\alpha_2$ (where the argument of \cref{lem:rig-inf} would fail), at $E=0$ (outside the frame of \cref{sec:lea}), at $\epsilon_1=0$ or $\epsilon_2=0$ (where $\GW_{g,d}$ itself is undefined but $\epsilon_1\epsilon_2\GW_{g,d}$ is not), and at $\alpha_0=0$ (where $\cQ=0$ is not semisimple). Nothing else is needed: the proof is an identity in the function field, and the excluded loci are reached by polynomial continuation, not by taking limits of the graph sum. \qed
+
+\subsection{Genus zero and genus one}
+
+\begin{prop}[genus zero]\genusstatus{AI-proposed, unchecked}
+\label{prop:rig-g0}
+For every $d\geq1$, $\GW_{0,d}=1/(d^3\epsilon_1\epsilon_2)$ at every weight point with $\epsilon_1\epsilon_2\neq0$, i.e.\ $\epsilon_1\epsilon_2\GW_{0,d}=\Ph{0}\,d^{-3}$ with $\Ph{0}=1$ at every point of $\mathrm{Lie}(\TCY)$.
+\end{prop}
+
+\begin{proof}
+This is the Aspinwall--Morrison formula, \cite[p.~3]{FP00}, as used in \cref{lem:ide-g0}: for $d\geq 1$, $H^0(C,f^*\cO(-1))=0$ gives $\Mbar_{0,0}(Z,d)=\Mbar_{0,0}(\bbP^1,d)\times\bbC^2$ with obstruction bundle $R^1\pi_*f^*(\cO(-1)\oplus\cO(-1))$ of rank equal to the virtual dimension, so that, localising on $\bbC^2$, $\GW_{0,d}=1/(d^3\epsilon_1\epsilon_2)$ at every weight. And $\Ph{0}=1$, the constant term of $\epsilon_1\epsilon_2t^2/(4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2))$ (\cref{def:set-inv}).
+\end{proof}
+
+\begin{lem}[genus one]\genusstatus{AI-proposed, unchecked}
+\label{lem:rig-g1}
+For every $d\geq 1$, on $\TCY$,
+\[
+\epsilon_1\epsilon_2\,\GW_{1,d}=\frac{\Ph{1}}{d}=-\frac{\epsilon_1^2+\epsilon_2^2}{24\,d}.
+\]
+For $d\geq 2$ this uses, as an input, the formula of \cite{BS} for the resolved conifold on the subtori on which $\alpha_i=\epsilon_j$; for $d=1$ it is proved by direct localisation, without that input. \draftnote{BS label: prop:ResConifold, eq:resconGWref.}
+\end{lem}
+
+\begin{proof}
+In genus one, $\Lamv_1(-\epsilon)=-\epsilon-\lambda_1$ and $\lambda_1^2=0$ (Mumford's relation $c(\Hdg)c(\Hdg^\vee)=1$, \cite{Mum83}), so, in the integral of \cref{lem:rig-poly} on the five-torus,
+\[
+\epsilon_1\epsilon_2\,\GW^{\Tmax}_{1,d}=\epsilon_1\epsilon_2\,N_d+(\epsilon_1+\epsilon_2)\,L_d,
+\]
+\[
+N_d\coloneqq\int_{[\Mbar_1(\bbP^1,d)]^{\vir}}e(R^1_{\alpha_1})\,e(R^1_{\alpha_2}),\qquad
+L_d\coloneqq\int_{[\Mbar_1(\bbP^1,d)]^{\vir}}e(R^1_{\alpha_1})\,e(R^1_{\alpha_2})\,\lambda_1 .
+\]
+By the degree count of \cref{lem:rig-poly} (the two bundles $R^1_a$ have rank $d$ in genus one, against the virtual dimension $2d$), $N_d\in\bbQ$ and $L_d\in\bbQ[\alpha_0,\alpha_1,\alpha_2]_1$ is a linear form; neither involves $\epsilon_1,\epsilon_2$. By the symmetries of \cref{lem:set-sym}, $L_d=c\,(\alpha_0+\alpha_1+\alpha_2)$ for some $c\in\bbQ$: invariance under $\alpha_1\leftrightarrow\alpha_2$ gives $L_d=c_0\alpha_0+c_1(\alpha_1+\alpha_2)$, and invariance under $(\alpha_0,\alpha_1,\alpha_2)\mapsto(-\alpha_0,\alpha_0+\alpha_1,\alpha_0+\alpha_2)$ gives $-c_0+2c_1=c_0$, i.e.\ $c_0=c_1$.
+
+\emph{$d\geq 2$.} On the fibrewise torus $\TF$ ($\alpha_0=0$, $\alpha_i=\epsilon_i$), a subtorus of $\TCY$ on which $\alpha_1=\epsilon_1$ and on which the invariants are the restrictions of the five-torus ones (\cref{lem:rig-poly}, last paragraph of the proof), the formula of \cite{BS} gives, for all $d\geq 1$, $\sum_g\GW_{g,d}=\frac{1}{d}\big(2\sinh\frac{d\epsilon_1}{2}\big)^{-1}\big(2\sinh\frac{d\epsilon_2}{2}\big)^{-1}$, whose genus-one part is $\epsilon_1\epsilon_2\GW_{1,d}=\coef{t^2}\Ssh(\epsilon_1t)\Ssh(\epsilon_2t)/d=-(\epsilon_1^2+\epsilon_2^2)/(24d)=\epsilon_1\epsilon_2/(12d)-(\epsilon_1+\epsilon_2)^2/(24d)$. On $\TF$ one has $(\epsilon_1+\epsilon_2)(\alpha_0+\alpha_1+\alpha_2)=(\epsilon_1+\epsilon_2)^2$, so the restriction of the five-torus identity reads $\epsilon_1\epsilon_2N_d+c\,(\epsilon_1+\epsilon_2)^2$; the quadratic forms $\epsilon_1\epsilon_2$ and $(\epsilon_1+\epsilon_2)^2$ being linearly independent over $\bbQ$, comparison gives $N_d=1/(12d)$ and $c=-1/(24d)$. Hence, on the five-torus,
+\[
+\epsilon_1\epsilon_2\,\GW^{\Tmax}_{1,d}=\frac{\epsilon_1\epsilon_2}{12d}-\frac{(\epsilon_1+\epsilon_2)(\alpha_0+\alpha_1+\alpha_2)}{24d},
+\]
+which on $\TCY$ is $\epsilon_1\epsilon_2/(12d)-E^2/(24d)=\Ph{1}/d$, using $E=\epsilon_1+\epsilon_2=\alpha_0+\alpha_1+\alpha_2$.
+
+\emph{$d=1$ by direct localisation.} For $d=1$ the $\Tmax$-fixed loci of $\Mbar_g(\bbP^1,1)$ are indexed by $g_++g_-=g$: the zero section covered once, with a contracted component of genus $g_p$ attached at $p$ (absent if $g_p=0$), with fixed locus $\Mbar_{g_+,1}\times\Mbar_{g_-,1}$. The factors of the localisation formula of \cite{GP99} on the proper space $\Mbar_g(\bbP^1,1)$ are: at a vertex $p$ with a contracted component, $H^1$ and $H^0$ of $T_Z$ on that component, i.e.\ $\prod_a\Lamv(w^{(p)}_a)/\prod_aw^{(p)}_a$ over the five tangent weights $w^{(p)}_a$ at $p$; at the node, $\prod_aw^{(p)}_a$ from the normalisation sequence and $1/(w^{(p)}_1-\psi)$ from the smoothing of the node, $w^{(p)}_1=\pm\alpha_0$ being the tangent weight of $\bbP^1$ at $p$; on the edge, $H^0=H^1=0$ for each $\cO(-1)$, $H^0(\bbP^1,\cO_{-\epsilon_i})$ giving $1/(\epsilon_1\epsilon_2)$, and, of $H^0(\bbP^1,T\bbP^1)$ with weights $(\alpha_0,0,-\alpha_0)$, the part not cancelled by the automorphisms of the edge fixing its nodes, i.e.\ $1/w^{(p)}_1$ for each node. Collecting,
+\begin{equation}
+\label{eq:rig-loc}
+\epsilon_1\epsilon_2\,\GW^{\Tmax}_{g,1}=\sum_{g_++g_-=g}V_+(g_+)\,V_-(g_-),\qquad V_\pm(0)\coloneqq 1,\qquad
+V_\pm(h)\coloneqq\int_{\Mbar_{h,1}}\frac{\prod_{a=1}^{5}\Lamv_h(w^{(\pm)}_a)}{w^{(\pm)}_1\,(w^{(\pm)}_1-\psi)}\quad(h\geq 1),
+\end{equation}
+with $\Lamv_h(w)=\sum_i(-1)^i\lambda_iw^{h-i}$ and
+\[
+(w^{(+)}_a)_{a=1}^5=\wts_+=(\alpha_0,\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2),\qquad (w^{(-)}_a)_{a=1}^5=\wts_-=(-\alpha_0,\wB,\wA,-\epsilon_1,-\epsilon_2).
+\]
+At $g=0$, \eqref{eq:rig-loc} gives $\GW_{0,1}=1/(\epsilon_1\epsilon_2)$, the value of \cref{prop:rig-g0}. \draftnote{Formula \eqref{eq:rig-loc} is the standard localisation formula with the ingredients just listed; its normalisation agrees with the genus-zero value. The authors may wish to confirm the sign conventions of the node and edge factors against their reference for localisation on $\Mbar_g(\bbP^1,1)$.}
+
+At $h=1$, $\Lamv_1(w)=w-\lambda_1$ and $\lambda_1^2=0$, so with $\Pi_\pm\coloneqq\prod_{a=1}^5w^{(\pm)}_a$ and $1/(w_1(w_1-\psi))=w_1^{-2}(1+\psi/w_1+\dots)$, the degree-one part of the integrand of $V_\pm(1)$ is $(\Pi_\pm/w_1^2)\big[\psi/w_1-\lambda_1\sum_{a=1}^5 1/w_a\big]$, and $\int_{\Mbar_{1,1}}\psi=\int_{\Mbar_{1,1}}\lambda_1=1/24$ gives
+\[
+V_\pm(1)=\frac{\Pi_\pm}{24\,w_1^2}\Big[\frac{1}{w_1}-\sum_{a=1}^{5}\frac{1}{w_a}\Big]=-\frac{\Pi_\pm}{24\,w_1^2}\sum_{a=2}^{5}\frac{1}{w_a}.
+\]
+At $p_+$, $\Pi_+=\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2$ and $w_1=\alpha_0$, so
+\[
+V_+(1)=-\frac{1}{24\alpha_0}\Big[(\alpha_1+\alpha_2)\epsilon_1\epsilon_2-\alpha_1\alpha_2(\epsilon_1+\epsilon_2)\Big];
+\]
+at $p_-$, $\Pi_-=-\alpha_0\wA\wB\epsilon_1\epsilon_2$ and $w_1^2=\alpha_0^2$, so
+\[
+V_-(1)=\frac{1}{24\alpha_0}\Big[(\wA+\wB)\epsilon_1\epsilon_2-\wA\wB(\epsilon_1+\epsilon_2)\Big].
+\]
+Since $\wA+\wB-\alpha_1-\alpha_2=2\alpha_0$ and $\wA\wB-\alpha_1\alpha_2=\alpha_0(\alpha_0+\alpha_1+\alpha_2)$,
+\[
+\epsilon_1\epsilon_2\,\GW^{\Tmax}_{1,1}=V_+(1)+V_-(1)=\frac{\epsilon_1\epsilon_2}{12}-\frac{(\alpha_0+\alpha_1+\alpha_2)(\epsilon_1+\epsilon_2)}{24}
+\]
+on the five-torus, i.e.\ $N_1=1/12$ and $L_1=-(\alpha_0+\alpha_1+\alpha_2)/24$, without the input of \cite{BS}; on $\TCY$ this is $\epsilon_1\epsilon_2\GW_{1,1}=\Ph{1}$.
+\end{proof}
+
+\begin{rmk}
+\label{rmk:rig-g1input}
+The input of \cite{BS} in \cref{lem:rig-g1} determines the two numbers $N_d$ and $c$ for $d\geq 2$. A direct evaluation of the linear form $L_d=-(\alpha_0+\alpha_1+\alpha_2)/(24d)$ for all $d$ (as done for $d=1$ above), or a genus-one analogue of Theorem B, would remove it; neither is given here.
+\end{rmk}
+
+\subsection{The rigidity conjecture of \texorpdfstring{\cite{BS}}{[BS]} for the resolved conifold}
+
+The conjecture of \cite{BS}, stated by content: let $X$ be a Calabi--Yau threefold, $Z=X\times\bbC^2$, and $\mgp{G}$ a connected reductive group acting on $Z$ with maximal torus $\mgp{T}$ such that the $\mgp{T}$-fixed loci of the moduli spaces of stable maps are proper, so that the $\mgp{G}$-equivariant invariants $\GW_g(Z,\mgp{G};\beta)$ are defined by localisation. If $\beta$ is a rigid curve class in $X$ (i.e.\ $\Mbar_g(X,\beta)$ is proper for every $g$) and the $\mgp{G}$-action on $Z$ is Calabi--Yau, then the fixed-class, all-genus series $\GW(Z,\mgp{G};\beta)\coloneqq\sum_{g\geq 0}\GW_g(Z,\mgp{G};\beta)$ depends only on $\epsilon_1$ and $\epsilon_2$, the weights of the two trivial directions:
+\[
+\epsilon_1\epsilon_2\,\GW(Z,\mgp{G};\beta)\in\bbQ\fps{\epsilon_-^2,\epsilon_+^2},\qquad \epsilon_\pm\coloneqq\tfrac12(\epsilon_1\pm\epsilon_2),
+\]
+i.e.\ it depends on $(\epsilon_1,\epsilon_2)$ symmetrically and evenly. The sum is over genera at fixed $\beta$, and $\beta=0$ is excluded: for non-compact $X$ the class $0$ is not rigid, $\Mbar_g(X,0)=\Mbar_g\times X$ being non-proper, and the fixed-genus series of \cite{BS} sums over non-zero classes only). \draftnote{BS label: conj: rigidity; defn: rigid; defn: refined GW series.}
+
+\begin{cor}[the rigidity conjecture for the resolved conifold]\genusstatus{AI-proposed, unchecked}
+\label{cor:rig-conj}
+Let $X$ be the resolved conifold and $Z=X\times\bbC^2$ with its five-torus $\Tmax$ and Calabi--Yau four-torus $\TCY$ (\cref{def:set-ND}). Then for every $d\geq 1$ and every $g\geq 0$,
+\[
+\epsilon_1\epsilon_2\,\GW_g(Z,\TCY;d[\bbP^1])=\Pg\,d^{\,2g-3},
+\]
+so that
+\[
+\sum_{g\geq 0}\GW_g(Z,\TCY;d[\bbP^1])=\frac{1}{d}\Big(2\sinh\frac{d\epsilon_1}{2}\Big)^{-1}\Big(2\sinh\frac{d\epsilon_2}{2}\Big)^{-1}.
+\]
+In particular the conjecture holds for $X$ the resolved conifold, every non-zero class $d[\bbP^1]$, and $\mgp{G}=\TCY$; by contravariance it holds for every subtorus of $\TCY$ on which $R\pi_*f^*\Nb$ is moving on the fixed loci, so that the invariants are defined by localisation as in \cref{def:set-inv} (the weights to check are listed in the last paragraph of the proof of \cref{lem:rig-poly}), and for every connected $\mgp{G}$ whose maximal torus acts on $Z$ through such a subtorus (in particular for every Calabi--Yau subtorus of $\Tmax$ with this property).
+\end{cor}
+
+\begin{proof}
+The identity $\epsilon_1\epsilon_2\GW_{g,d}=\Pg d^{2g-3}$ is \cref{thm:rig-main} for $g\geq 2$, \cref{lem:rig-g1} for $g=1$ and \cref{prop:rig-g0} for $g=0$; $\TCY$ is the maximal Calabi--Yau torus of $Z$ inside $\Tmax$, and its fixed loci are proper (\cref{lem:ide-fixed}), so the invariants are those of \cref{def:set-inv}. Summing over $g$,
+\[
+\sum_{g\geq 0}\frac{\Pg\,d^{2g-3}}{\epsilon_1\epsilon_2}=\frac{1}{d^3\epsilon_1\epsilon_2}\sum_{g\geq 0}\coef{t^{2g}}\Big(\frac{\epsilon_1\epsilon_2t^2}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)}\Big)\,d^{2g}
+=\frac{1}{d}\Big(2\sinh\frac{d\epsilon_1}{2}\Big)^{-1}\Big(2\sinh\frac{d\epsilon_2}{2}\Big)^{-1},
+\]
+which is the formula of \cite{BS} for the subtori $\alpha_i=\epsilon_j$, now on all of $\TCY$. \draftnote{BS label: eq:resconGWref.} Each $\Pg$ is a symmetric polynomial in $\epsilon_1^2,\epsilon_2^2$, hence a polynomial in $\epsilon_+^2,\epsilon_-^2$. For a subtorus $\mgp{T}'\to\TCY$ the invariants are the images of those of $\TCY$ under the induced map of coefficient rings (contravariance, \cref{lem:rig-poly}), so the polynomial identity persists; for a connected $\mgp{G}$ with maximal torus $\mgp{T}'$ and Weyl group $W$, the $\mgp{G}$-invariant is the element of $R_{\mgp{G}}=R_{\mgp{T}'}^{W}$ whose image in $R_{\mgp{T}'}$ is the $\mgp{T}'$-invariant. \draftnote{BS label: lem: GW contravariance; the identification $R_{\mgp{G}}=R_{\mgp{T}}^{W}$ used in the definition of the invariants.}
+\end{proof}
+
+\emph{What is not implied.} The conjecture for group actions on $Z$ that are not conjugate into the five-torus $\Tmax$ is not addressed. The constant-map term $d=0$ is not part of the conjecture and is not determined here (\cref{rmk:rig-F0}). The inputs by genus: for $g\geq 2$ the result rests on Theorems A, B, C and \cite{GP99}; for $g=1$ it uses in addition the formula of \cite{BS} on the subtori $\alpha_i=\epsilon_j$ when $d\geq 2$; for $g=0$ it is \cite[p.~3]{FP00}.
+
+\begin{rmk}[relation to the results of \cite{BS}]
+\label{rmk:rig-BS}
+(i) The formula of \cite{BS} for the resolved conifold on the subtori on which $\alpha_i=\epsilon_j$, for all $d>0$ and all genera, is proved there by degeneration of the base curve and the relative invariants of local curves. \Cref{cor:rig-conj} contains it for $g\geq 2$ and proves it without degeneration; it uses it at $g=1$ for $d\geq 2$ (\cref{lem:rig-g1}); it does not touch $g=0$. \draftnote{BS label: prop:ResConifold.}
+(ii) The case in which the action on $X$ is also Calabi--Yau, i.e.\ $\epsilon_+=0$, $\epsilon_2=-\epsilon_1$, is proved in \cite{BS} for every rigid class $\beta$ in any $X$: there $\GW_g=(\epsilon_1\epsilon_2)^{g-1}N_{g,d}$ with $N_{g,d}$ the non-equivariant invariants, by Mumford's relation and the properness of $\Mbar_g(X,d)$. On $\TCY$ this is the hyperplane $E=0$ (so also $\alpha_0+\alpha_1+\alpha_2=0$), outside the frame of \cref{sec:lea}; \cref{thm:rig-main} reaches it by the polynomial continuation of its last paragraph, and there \eqref{eq:rig-main} reads, with $\epsilon\coloneqq\epsilon_1=-\epsilon_2$,
+\[
+\GW_{g,d}=-\frac{\Pg(\epsilon,-\epsilon)\,d^{2g-3}}{\epsilon^2}=\text{the }\epsilon^{2g-2}\text{ term of }-\frac{1}{d}\Big(2\sinh\frac{d\epsilon}{2}\Big)^{-2},
+\]
+since $\Pg(\epsilon,-\epsilon)=\coef{t^{2g}}\Ssh(\epsilon t)^2=\epsilon^{2g}\coef{t^{2g}}\Ssh(t)^2$ and $(2\sinh(d\epsilon/2))^{-2}=(d\epsilon)^{-2}\Ssh(d\epsilon)^2$: the genus-$g$ part of the unrefined formula for the resolved conifold. \draftnote{BS label: prop: rigidity unref limit; eq: res conifold unref.}
+(iii) \cite{BS} verified the formula on $\TCY$ by computer for $d\leq 3$ up to contributions of genus five; \cref{cor:rig-conj} proves it for all $d$ and $g$ on $\TCY$.
+(iv) \cite{BS} remark that the conjecture implies that the restriction to any admissible two-dimensional subtorus recovers the fully equivariant series. For the resolved conifold on $\TCY$ this is now a theorem.
+\end{rmk}
+
+\subsection{The flop}
+
+\begin{prop}[the flop identity $\sF_g(\infty)=\sF_g(0)$]\genusstatus{AI-proposed, unchecked}
+\label{prop:rig-flop}
+Let $g\geq 2$ and let $\sF_g(\infty)$ denote the value of $\sF_g$ at $\sQ=0$ (which exists by \cref{lem:rig-inf}).
+\begin{enumerate}
+\item $\sF_g(\infty)=\sF_g(0)$ in $\KCY$.
+\item At $\sQ=0$ all $\dd/\dd t$-derivatives vanish, so $\rr_{1,i}=\Lv_i\rr_{0,i}$ with $(\Lv_1,\Lv_2)=(\alpha_1,\alpha_2)$; the rows $\rZ_{0,i}=\hnw\rpt_{0,i}$ of $\RZ$ take the values
+\[
+\rZ_{0,1}(z;\infty)=h_{\wts'_-}(z),\qquad \rZ_{0,2}(z;\infty)=h_{\wts'_+}(z),
+\]
+\[
+\wts'_-\coloneqq(\alpha_2-\alpha_1,\alpha_1,\wB,-\epsilon_1,-\epsilon_2),\qquad
+\wts'_+\coloneqq(\alpha_1-\alpha_2,\alpha_2,\wA,-\epsilon_1,-\epsilon_2),
+\]
+and $\Delta_1(\infty)=\eul(\wts'_-)$, $\Delta_2(\infty)=\eul(\wts'_+)$. Here $\wts'_\pm$ are the tangent weights at the two fixed points of the flop $\Zfl=\Xfl\times\bbC^2$ of $Z$, $\Xfl$ the other small resolution of the conifold.
+\item Consequently the constant-map terms of $Z$ and of $\Zfl$ agree:
+\[
+\sum_{p=\pm}\int_{\Mbar_g}\prod_{a=1}^{5}\frac{\Lamv_g(w^{(p)}_a)}{w^{(p)}_a}\quad\text{is the same for }(\wts_+,\wts_-)\text{ and for }(\wts'_+,\wts'_-),
+\]
+an identity among constant-map Hodge integrals for which no direct proof is given here.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) By \eqref{eq:rig-main} and \cref{lem:rig-li}, $\sF_g(\infty)=\sF_g(0)+\Pg\Li_{3-2g}(\infty)/(\epsilon_1\epsilon_2)=\sF_g(0)$.
+
+(ii) By \cref{lem:rig-inf}, every factor is a power series in $\sQ$ and $\dd/\dd t=-\sQ\,\dd/\dd\sQ$ kills the value at $\sQ=0$; so at $\sQ=0$ the operators $\Dop_i=\dd/\dd t-\Delta_i'/(2\Delta_i)$ vanish, $\rr_{1,i}=\Lv_i\rr_{0,i}$ and $\Lv_i(0)=\alpha_1,\alpha_2$ by the proof of \cref{lem:rig-inf}. The values of the rows: the point-frame row $\rpt_{0,i}=\sum_mz^m\wick_m(\cW_2(U_i),\cW_3(U_i),\dots)$ (\cref{def:set-rows}) has $z$-coefficients that are polynomials in the $\cW_k(U_i)$, $k\geq 3$, and $1/\cW_2(U_i)$, each a power series in $\sQ$ by \cref{lem:rig-inf}, so its value at $\sQ=0$ is obtained by replacing each $\cW_k(U_i)$ by its value there. These values are the derivatives of a limiting phase. At colour $1$: writing $1-\cQ U=-\cQ U\,(1-\sQ/U)$, the superpotential $\cW(U)=-\alpha_2\log U+\wA\log(1-U)+\alpha_1\log(1-\cQ U)$ of \cref{lem:set-crit} becomes
+\[
+\cW(U)=(\alpha_1-\alpha_2)\log U+\wA\log(1-U)+\alpha_1\log(1-\sQ/U)+(\text{terms independent of }U),
+\]
+and $\thU\log(1-\sQ/U)=\sQ/(U-\sQ)$, so $\thU^k\log(1-\sQ/U)$ is $O(\sQ)$ for every $k\geq 1$ at $U=U_1(\sQ)$, since $U_1(0)=(\alpha_1-\alpha_2)/\wB\neq 0$. Hence $\cW_k(U_1)(\sQ=0)$, $k\geq 2$, are the derivatives $\thU^k$ of the phase $a\log U+b\log(1-U)$ with $(a,b)=(\alpha_1-\alpha_2,\wA)$, at $U=U_1(0)=(\alpha_1-\alpha_2)/\wB=a/(a+b)$, its critical point ($a+b=\wB$). At colour $2$: with $V=\cQ U$, $\thU=\theta_V$, $-\alpha_2\log U=-\alpha_2\log V+\alpha_2\log\cQ$, and $\wA\log(1-U)=\wA\log(1-\sQ V)$ with $\theta_V\log(1-\sQ V)=-\sQ V/(1-\sQ V)=O(\sQ)$, as are all higher $\theta_V$-derivatives; so
+\[
+\cW=-\alpha_2\log V+\alpha_1\log(1-V)+\wA\log(1-\sQ V)+(\text{terms independent of }V),
+\]
+and $\cW_k(U_2)(\sQ=0)$, $k\geq 2$, are the $\theta_V^k$-derivatives of $a\log V+b\log(1-V)$ with $(a,b)=(-\alpha_2,\alpha_1)$ at $V=V_2(0)=-\alpha_2/(\alpha_1-\alpha_2)=a/(a+b)$, again its critical point. In both cases $ab(a+b)\neq 0$ in $\KCY$ ($(\alpha_1-\alpha_2)\wA\wB\neq 0$ and $\alpha_2\alpha_1(\alpha_1-\alpha_2)\neq 0$) and the second derivative is $-a(a+b)/b\neq 0$ (the values computed in the proof of \cref{lem:rig-inf}). By \cref{lem:row-betaphase}, the normalised expansion of the phase $a\log U+b\log(1-U)$ in $y=\log U$ at its critical point is $h_{(-a,-b,a+b)}(z)$. Therefore
+\[
+\rpt_{0,1}(z;\infty)=h_{(\alpha_2-\alpha_1,\,-\wA,\,\wB)}(z),\qquad \rpt_{0,2}(z;\infty)=h_{(\alpha_2,\,-\alpha_1,\,\alpha_1-\alpha_2)}(z).
+\]
+Multiplying by $\hnw=h_{(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)}$ and cancelling the pairs $v,-v$ ($h_{u+v}=h_uh_v$, $h_{-v}=h_v^{-1}$),
+\begin{align*}
+\rZ_{0,1}(z;\infty)&=h_{(\alpha_1,\wA,-\epsilon_1,-\epsilon_2,\,\alpha_2-\alpha_1,-\wA,\wB)}=h_{(\alpha_2-\alpha_1,\,\alpha_1,\,\wB,\,-\epsilon_1,-\epsilon_2)}=h_{\wts'_-},\\
+\rZ_{0,2}(z;\infty)&=h_{(\alpha_1,\wA,-\epsilon_1,-\epsilon_2,\,\alpha_2,-\alpha_1,\alpha_1-\alpha_2)}=h_{(\alpha_1-\alpha_2,\,\alpha_2,\,\wA,\,-\epsilon_1,-\epsilon_2)}=h_{\wts'_+}.
+\end{align*}
+By \eqref{eq:rig-Dinf}, $\Delta_1(\infty)=-\alpha_1\wB(\alpha_1-\alpha_2)\epsilon_1\epsilon_2=(\alpha_2-\alpha_1)\alpha_1\wB\epsilon_1\epsilon_2=\eul(\wts'_-)$ and $\Delta_2(\infty)=(\alpha_1-\alpha_2)\alpha_2\wA\epsilon_1\epsilon_2=\eul(\wts'_+)$.
+
+The geometry: the conifold $\{xy=zw\}$ has the four coordinate weights $\alpha_1,\wA,\alpha_2,\wB$ with $\alpha_1+\wA=\alpha_2+\wB=E$, the two monomials of the relation pairing $\{\alpha_1,\wA\}$ and $\{\alpha_2,\wB\}$. The resolution $X$ has the normal weights $(\alpha_1,\alpha_2)$ at $p_+$ and $(\wB,\wA)$ at $p_-$, with tangent weights $\pm\alpha_0$ along $\bbP^1$; the other small resolution $\Xfl$ has the normal weights $(\alpha_2,\wA)$ at one fixed point and $(\alpha_1,\wB)$ at the other, with tangent weights $\pm(\alpha_1-\alpha_2)$ along its exceptional curve. So $\wts'_\pm$ are the tangent weights of $\Zfl=\Xfl\times\bbC^2$ at its two fixed points, and the Calabi--Yau condition is preserved: the sum of the first three entries of $\wts'_\pm$ is $E=\epsilon_1+\epsilon_2$. \draftnote{The description of the flop and its weights is stated as in the source; the authors may wish to add a reference or a line of justification for the weights of the two small resolutions.}
+
+(iii) At $\sQ=0$ the data of the graph sum of $Z$ are: constant rows $\rZ_{0,i}=h_{\wts'_\mp}$ with vanishing $t$-derivatives, $\rr_{1,i}=\Lv_i\rr_{0,i}$, and $\Delta_i=\eul(\wts'_\mp)$. These are the data of the graph sum of $\Zfl$ at its own point $\cQ'=0$ (\cref{lem:ide-norm} and \cref{prop:ide-const} read for $\Zfl$, whose tangent weights are $\wts'_\pm$, all non-zero in $\KCY$, with $\cQ'=0$ semisimple because $\alpha_1-\alpha_2\neq 0$), where the graph sum takes the constant-map value
+\[
+\sF^{\Zfl}_g(0)=\sum_{p=\pm}\eul(\wts'_p)^{g-1}\int_{\Mbar_g}\prod_{a=1}^{5}\frac{\Lamv_g(w'^{(p)}_a)}{(w'^{(p)}_a)^{g}}=\sum_{p=\pm}\int_{\Mbar_g}\prod_{a=1}^{5}\frac{\Lamv_g(w'^{(p)}_a)}{w'^{(p)}_a}.
+\]
+Hence $\sF_g(\infty)=\sF^{\Zfl}_g(0)$, and with (i) and \cref{rmk:rig-d0} this is the identity (iii). \draftnote{What is written in the source for this step is the sentence that the graph sum at $\sQ=0$ is the $\cQ'=0$ value of the frame-B sum of $\Zfl$, by the constants lemma read for $\Zfl$. The authors should check the identification of the factors: at $\sQ=0$ the eigenvalues of $Z$ are $(\alpha_1,\alpha_2)$ and the pairing is $\eta^{-1}$ of $Z$, while at $\cQ'=0$ the eigenvalues of $\Zfl$ are those of its own flat basis; the factors $\Dil_i$, $\Edge_{ij}$ depend on the eigenvalues and the pairing only through the rows $\rr_{0,i}$, the norms $\Delta_i$ and the orthogonality $\langle(1,\Lv_i),(1,\Lv_j)\rangle=\delta_{ij}\Delta_i$ of the eigen-covectors, which holds in both cases; this reduction is not spelled out in the source.}
+\end{proof}
+
+\begin{rmk}[the constant term]
+\label{rmk:rig-F0}
+Nothing in this section determines $\sF_g(0)=\GW_{g,0}$, the rational function of \cref{rmk:rig-d0}, of degree $2g-2$ in the weights. It is not part of the rigidity conjecture, and there is no reason for it to be independent of $\alpha$; the finite-order values recorded in \cref{sec:evi-flop} show that it is not. On the fibrewise torus $\TF$ it equals $-(\epsilon_1^{2g-2}+\epsilon_2^{2g-2})\,|B_{2g}B_{2g-2}|/\big(4g(2g-2)(2g-2)!\big)$, with $B_{2g}$ the Bernoulli numbers, from the localisation formula of \cref{rmk:rig-d0} and \cite[Theorem~4]{FP00}. \draftnote{The value on $\TF$ is quoted from the sources, where it is derived from [GP99] and [FP00, Theorem 4]; the derivation is not reproduced here.} \Cref{thm:rig-main} says nothing about $\sF_g(0)$ beyond \cref{prop:rig-flop}.
+\end{rmk}
+
+\subsection{The three-torus \texorpdfstring{$\alpha_0=0$}{alpha0 = 0}}
+
+Let $\Tthree\coloneqq\{\alpha_0=0\}\cap\TCY$: the weights are $(0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$ with $\alpha_1+\alpha_2=\epsilon_1+\epsilon_2=E$, and $\alpha_1,\alpha_2,\epsilon_1$ are free; the function field is $\Kthree=\bbQ(\alpha_1,\alpha_2,\epsilon_1)$. Non-degeneracy (ND) reads $\alpha_1\alpha_2\epsilon_1\epsilon_2E\neq 0$ (here $\wA=\alpha_2$ and $\wB=\alpha_1$). $\Tthree$ contains the fibrewise torus $\TF$ ($\alpha_i=\epsilon_i$). On $\Tthree$ the point $\cQ=0$ is not semisimple (both roots of the critical equation degenerate, \cref{lem:set-limits}), so Theorem B is not available there directly; it is obtained by specialisation.
+
+\begin{lem}[Theorem B on $\Tthree$]\genusstatus{AI-proposed, unchecked}
+\label{lem:rig-3Tid}
+Let $g\geq 2$. On $\Tthree$, with $\alpha_1\alpha_2\epsilon_1\epsilon_2E\neq 0$, the frame-B graph sum \eqref{eq:set-graphsum} formed with the rows $\rr_{0,i}=h_{(\alpha_1,\alpha_2,-E)}\rpt_{0,i}$, $\rr_{1,i}=(\Lv_i+z\Dop_i)\rr_{0,i}$ (i.e.\ with $\hnw$ specialised to $h_{(\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2)}$ and $\bw=(E,-\epsilon_1,-\epsilon_2)$) lies in $\Kthree(\cQ)$ and equals $\sF^{\Tthree}_g=\sum_{d\geq 0}\GW^{\Tthree}_{g,d}\cQ^d$, the series of the $\Tthree$-equivariant invariants in the localisation definition.
+\end{lem}
+
+\begin{proof}
+The identity \eqref{eq:ide-main} holds in $\KCY(\cQ)$; we apply to it the ring map $\alpha_0\mapsto 0$ (on the subring of $\KCY$ of elements regular along $\alpha_0=0$, with values in $\Kthree$). Equivalently one may start from the identity at the five indeterminate weights (\cref{rmk:ide-alt}) and apply $\alpha_0\mapsto 0$ followed by $\epsilon_2\mapsto\alpha_1+\alpha_2-\epsilon_1$: the two composite specialisations agree. \draftnote{The source specialises the five-weight identity in two steps; the note's Theorem B is stated over $\KCY$, and the specialisation $\alpha_0\mapsto 0$ applied to it is the same ring map. Check that the wording of \cref{prop:ide-main} and \cref{rmk:ide-alt} supports this.} Three things are to be verified: the Gromov--Witten side is regular along $\alpha_0=0$ and specialises to the $\Tthree$-invariants; the graph side is regular along $\alpha_0=0$ at generic $\cQ$ and specialises to the graph sum of the statement; and the frame change persists.
+
+\emph{The invariants, $d\geq 1$.} By \cref{lem:rig-poly}, $\GW_{g,d}\in(\epsilon_1\epsilon_2)^{-1}\bbQ[\alpha_0,\alpha_1,\alpha_2,\epsilon_1]$ is regular along $\alpha_0=0$, and its value there is the restriction to $\Tthree$ of the five-torus polynomial $\epsilon_1\epsilon_2\GW^{\Tmax}_{g,d}$, divided by $\epsilon_1\epsilon_2$. This restriction is $\GW^{\Tthree}_{g,d}$ by the contravariance of \cref{lem:rig-poly}: the $\Tmax$-equivariant integral over the proper $M=\Mbar_g(\bbP^1,d)$ restricts to the $\Tthree$-equivariant integral of the restricted class, and the latter is the localisation definition of the $\Tthree$-invariant, because the $\Tthree$-fixed locus of $\Mbar_g(Z,d)$ is $M$ (every compact curve lies in the zero section, which $\Tthree$ fixes pointwise since $\alpha_0=0$), with moving part $R\pi_*f^*\Nb$ of non-zero weights.
+\draftnote{The source states the restriction of the invariants for $d\geq 1$ as a consequence of its polynomiality lemma without further comment, and spells out the argument only for $d=0$ (next paragraph); the sentence on the $\Tthree$-fixed locus for $d\geq 1$ follows that argument and should be checked.}
+
+\emph{The constant-map term.} $\GW_{g,0}=\sum_p\int_{\Mbar_g}\prod_{a=1}^5\Lamv_g(w^{(p)}_a)/w^{(p)}_a$ (\cref{rmk:rig-d0}) is regular at $\alpha_0=0$: only the factors $\Lamv_g(\alpha_0)/\alpha_0$ (at $p_+$) and $\Lamv_g(-\alpha_0)/(-\alpha_0)$ (at $p_-$) have a pole there, a simple one, and the two residues cancel. Indeed $\Lamv_g(\alpha_0)/\alpha_0=\sum_i(-1)^i\lambda_i\alpha_0^{g-i-1}$ has the $\alpha_0^{-1}$ term $(-1)^g\lambda_g/\alpha_0$, and the other four factors at $p_+$ are regular at $\alpha_0=0$ (on $\TCY$ the weight $\epsilon_2=\alpha_0+\alpha_1+\alpha_2-\epsilon_1$ does involve $\alpha_0$; only its value at $\alpha_0=0$ enters the residue), so the residue of the $p_+$ term is
+\[
+(-1)^g\int_{\Mbar_g}\lambda_g\,\frac{\Lamv_g(\alpha_1)\Lamv_g(\alpha_2)\Lamv_g(-\epsilon_1)\Lamv_g(-\epsilon_2)}{\alpha_1\alpha_2\epsilon_1\epsilon_2};
+\]
+and $\Lamv_g(-\alpha_0)/(-\alpha_0)=\sum_i(-1)^i\lambda_i(-\alpha_0)^{g-i-1}$ has the $\alpha_0^{-1}$ term $(-1)^g\lambda_g/(-\alpha_0)=-(-1)^g\lambda_g/\alpha_0$, times the value at $\alpha_0=0$ of $\Lamv_g(\wB)\Lamv_g(\wA)\Lamv_g(-\epsilon_1)\Lamv_g(-\epsilon_2)/(\wA\wB\epsilon_1\epsilon_2)$, which is regular there with $\wA\to\alpha_2$, $\wB\to\alpha_1$: the residue of the $p_-$ term is minus that of the $p_+$ term. Moreover $\GW^{\Tthree}_{g,0}$ in the localisation definition equals this value at $\alpha_0=0$, by the same contravariance and localisation argument as for $d\geq 1$: the $\Tthree$-fixed locus of $\Mbar_g(Z,0)=\Mbar_g\times Z$ is the proper $\Mbar_g\times\bbP^1$ (the zero section is fixed pointwise by $\Tthree$; its normal weights $\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2$ are non-zero), with virtual class $e(\Hdg^\vee\boxtimes T_{\bbP^1})\cap[\Mbar_g\times\bbP^1]$ (the $\Tthree$-fixed part of the obstruction bundle $\Hdg^\vee\boxtimes T_Z$) and virtual normal bundle $\Nb\otimes(\cO-\Hdg^\vee)$; the same integral taken $\Tmax$-equivariantly over the proper $\Mbar_g\times\bbP^1$ lies in $\bbQ[\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2][1/(\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2)]$ (its denominators are the $\Tmax$-weights of $\Nb$ at $p_\pm$), restricts to $\Tthree$ by contravariance, and equals $\sum_p\int_{\Mbar_g}\prod_a\Lamv_g(w^{(p)}_a)/w^{(p)}_a$ by localisation at the two $\Tmax$-fixed points of $\bbP^1$ (\cite{GP99}; at $p$ the factor $\Lamv_g(\pm\alpha_0)/(\pm\alpha_0)$ is $e(\Hdg^\vee\otimes T_p\bbP^1)/e(T_p\bbP^1)$).
+
+\emph{The graph side.} At generic $\cQ$ every factor is regular along $\alpha_0=0$: the two roots stay distinct ($\Disc|_{\alpha_0=0}=4\alpha_1\alpha_2\cQ+(\alpha_1-\alpha_2)^2\cQ^2\neq 0$ for generic $\cQ$); $U_i\notin\{0,1,1/\cQ\}$ (\cref{lem:set-crit}: $\Pq(1)=\wA(\cQ-1)$, $\Pq(1/\cQ)=\alpha_1(1-\cQ)/\cQ$, $\Pq(0)=-\alpha_2$, all non-zero at $\alpha_0=0$ for $\cQ\neq 1$); $\cW_2(U_i)$ and $\Delta_i$ are finite and non-zero; $\eta^{-1}$ is polynomial in the weights; and $\hnw\to h_{(\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2)}$ is finite. So the colour-summed total, written as a quotient of polynomials, has a denominator that does not vanish identically on $\alpha_0=0$, and its specialisation is the colour-summed point-frame sum formed with the rows $\hnw|_{\alpha_0=0}\rpt_{0,i}$. At $\alpha_0=0$, $\nw=(\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2)$ and $\bw=(E,-\epsilon_1,-\epsilon_2)$, so $\hnw\hw^{-1}=h_{(\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2,-E,\epsilon_1,\epsilon_2)}=h_{(\alpha_1,\alpha_2,-E)}$, independent of $\epsilon_1,\epsilon_2$ (pairs $v,-v$ cancel). The frame change $\RB=\RZ\hw^{-1}$ of \cref{prop:ide-frameB} applies verbatim ($\bw$ has non-zero entries and $\Hg_{\bw}=\hw.1$), which gives the frame-B form of the statement.
+\end{proof}
+
+\begin{cor}[Theorem C on $\Tthree$]\genusstatus{AI-proposed, unchecked}
+\label{cor:rig-3T}
+Let $g\geq 2$. On $\Tthree$, at the generic point and at every specialisation with $\alpha_1\alpha_2\epsilon_1\epsilon_2E\neq 0$, Theorem C (\cref{cor:reg-main}) holds for the frame-B graph sum of \cref{lem:rig-3Tid}: every coloured stable graph with an edge is regular at $t=0$, the single-vertex graph has polar part exactly $\gapg t^{2-2g}$ at colour $1$ and is regular at colour $2$, and the polar part of $\sF^{\Tthree}_g$ at $\cQ=1$ is exactly $\gapg t^{2-2g}=\beta_{2g-2}(\epsilon_1,\epsilon_2)t^{2-2g}$. No new row analysis is needed: the rows are the fibrewise rows rescaled, and the vanishing theorem is used at $\tauw=-\epsilon_1/E$.
+\end{cor}
+
+\begin{proof}
+(1) \emph{The rows.} By \cref{cor:lea-a0}, at $\alpha_0=0$ with $\xc\coloneqq\alpha_1/\alpha_2$ and $\cc\coloneqq 1+\xc=E/\alpha_2$, the frame-B objects are the fibrewise frame-B objects at parameter $\xc$ read through the rescaling dictionary
+\[
+\rr_{0,i}(z;t)=\rr^{\TF}_{0,i}(z/\alpha_2;t),\quad \rr_{1,i}(z;t)=\alpha_2\,\rr^{\TF}_{1,i}(z/\alpha_2;t),\quad \Lv_i=\alpha_2\Lv^{\TF}_i,\quad \Delta_i=\kap\,\Delta^{\TF}_i,\quad \kap=\frac{\epsilon_1\epsilon_2\alpha_2^4}{\alpha_1},
+\]
+\[
+\Dil_i(d)=\alpha_2^{1-d}\Dil^{\TF}_i(d),\quad \Edge_{ij}(m,n)=\kap\,\alpha_2^{-1-m-n}\Edge^{\TF}_{ij}(m,n),\quad \rho=\rho^{\TF},\quad \lf_j(\psi)=\alpha_2^{-1}\lf^{\TF}_j(\psi/\alpha_2),
+\]
+the pairing being $\kap$ times the fibrewise pairing at $(z/\alpha_2,w/\alpha_2)$. The frame-B constant is $\hnw\hw^{-1}=h_{(\alpha_1,\alpha_2,-E)}$, independent of $\epsilon_1,\epsilon_2$ (\cref{lem:rig-3Tid}).
+
+(2) \emph{Theorem A on $\Tthree$.} Theorem A (\cref{thm:lea-main}) holds at $\alpha_0=0$ directly: its proof never uses the point $\cQ=0$, and the constant $\hnw$ enters it only through the multiset identity of \cref{lem:set-hmult} (remarks after \cref{cor:lea-a0}; the statements that need $\alpha_0\neq 0$ in their citations extend to $\alpha_0=0$ by rationality once the factors are defined there, which (1) does). Alternatively, by (1), each statement (F1)--(F3), (L1)--(L3) at $\alpha_0=0$ is the corresponding fibrewise statement at $\xc$ ($\xc\neq 0,-1$ because $\alpha_1E\neq 0$) read through the dictionary: under $z\mapsto z/\alpha_2$ the fibrewise leaves $1/(\cc-j\psi)$ become $\alpha_2/(E-j\psi)=\alpha_2\lf_j$, the spans $\Lsp_{k+1}$ are preserved, $\rho=(\Delta_1t^2/(-\epsilon_1\epsilon_2E^3))^{-1/2}$ equals the fibrewise $\rho$ (since $\Delta_1t^2/(-\epsilon_1\epsilon_2E^3)=\kap\Delta^{\TF}_1t^2/(-\epsilon_1\epsilon_2\alpha_2^3\cc^3)=\Delta^{\TF}_1t^2/(-\xc\cc^3)$), and the memberships hold with the same coefficients up to monomials in $\alpha_2$.
+
+(3) \emph{Theorem C on $\Tthree$.} The proof of \cref{thm:reg-main} applies verbatim. The vertex class is $\Hg_{\bw}$ with $\bw=(E,-\epsilon_1,-\epsilon_2)$, which is not the fibrewise class (that would be $(E,-\alpha_1,-\alpha_2)$ rescaled) but is the class to which the vanishing theorem \cref{thm:reg-L} applies at $\tauw=-\epsilon_1/E$, $\st=-\epsilon_1\epsilon_2/E^2\neq 0$, and for which \cref{thm:reg-VI} gives the value $(-\epsilon_1\epsilon_2E^3)^{g-1}\ZZ[g,0]=\beta_{2g-2}(\epsilon_1,\epsilon_2)=(2g-3)!\Pg/(\epsilon_1\epsilon_2)$ (\cref{lem:reg-beta}). The decoupling makes this consistent: the rows and factors carry $(\alpha_1,\alpha_2)$ only, the vertex class carries $(\epsilon_1,\epsilon_2)$ only, and the proof of \cref{thm:reg-main} needs no relation between them, because $\Mirr(h)$ is a vanishing statement, $\Xiz_h(\msM)=0$ for each multiset separately, so the $\alpha$-dependent leaf coefficients need satisfy no relation. The identification of the graph sum with $\sF^{\Tthree}_g$, and hence the statement about the polar part of $\sF^{\Tthree}_g$, is \cref{lem:rig-3Tid}.
+\end{proof}
+
+\begin{rmk}
+\label{rmk:rig-3Trig}
+Rigidity on $\Tthree$ is not a separate statement: it is the restriction of \cref{thm:rig-main} to $\alpha_0=0$ by polynomiality (the last paragraph of its proof). The $\alpha_0$-adic argument of \cref{lem:rig-disc} is not available on $\Tthree$ itself, where $\alpha_0=0$; so \cref{cor:rig-3T} alone does not give \eqref{eq:rig-main}.
+\end{rmk}

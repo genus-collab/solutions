@@ -1,0 +1,21 @@
+(* hvc_leaf_probe0.wls -- exploratory: contents of the genus-4 factor file, timing of t-series at the singular root *)
+SetDirectory[DirectoryName[$InputFileName]];
+Get["hvc_lib.m"]; t0 = AbsoluteTime[];
+Get["hvc_factors_g4_Bm.mx"];
+Print["load ", Round[AbsoluteTime[] - t0, 0.1], " s; ZMAX = ", ZMAX];
+Print["names: ", Select[Names["Global`*"], StringMatchQ[#, "*N" | "*CN" | "*Q" | "*Cur" | "*Sym"] &]];
+Print["DilN[1][1] = ", DilN[1][1], "; DilN[1][2] head ", Head[DilN[1][2]], "; EdN defined for {1,1}[0,0]: ", Head[EdN[1, 1][0, 0]], " [8,0]: ", Head[EdN[1, 1][8, 0]], " [9,0]: ", Head[EdN[1, 1][9, 0]]];
+Print["etainvCur = ", etainvCur];
+S0 = Together[SsumQ]; P0 = Together[PprodQ]; sq = ((1 + x)/x) Sqrt[1 + 4 x (1/Q - 1)/(1 + x)^2]; U1 = (S0 + sq)/2;
+Print["S0 = ", S0, "  P0 = ", P0, "  U1(Q=1) = ", Simplify[U1 /. Q -> 1]];
+c = 1 + x;
+t1 = AbsoluteTime[];
+dser = Series[(DeltaCN[1][[1]] + DeltaCN[1][[2]] U1) /. Q -> Exp[t], {t, 0, 3}];
+Print["Delta_1 series (", Round[AbsoluteTime[] - t1, 0.1], " s): ", Table[Factor[SeriesCoefficient[dser, k]], {k, -2, 1}]];
+t1 = AbsoluteTime[];
+e00 = Series[(EdN[1, 1][3, 2][[1]] + EdN[1, 1][3, 2][[2]] U1) /. Q -> Exp[t], {t, 0, 4}];
+Print["E11[3,2] series to t^4 (", Round[AbsoluteTime[] - t1, 0.1], " s): leaf count ", LeafCount[e00]];
+t1 = AbsoluteTime[];
+e00 = Series[(EdN[1, 2][6, 2][[1]] + EdN[1, 2][6, 2][[2]] U1) /. Q -> Exp[t], {t, 0, 4}];
+Print["E12[6,2] series to t^4 (", Round[AbsoluteTime[] - t1, 0.1], " s): leaf count ", LeafCount[e00]];
+Print["total ", Round[AbsoluteTime[] - t0], " s"];

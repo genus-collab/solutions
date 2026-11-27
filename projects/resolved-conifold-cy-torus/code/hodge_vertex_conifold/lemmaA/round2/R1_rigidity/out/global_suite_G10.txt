@@ -1,0 +1,40 @@
+G=10 D= 2 mode=two  cf=0 W=10 S=44: unknowns  160 rank  160 nullity   0  P_{D+1} forced: yes
+G=10 D= 2 mode=two  cf=0 W= 9 S=44: unknowns  144 rank  144 nullity   0  P_{D+1} forced: yes
+G=10 D= 2 mode=two  cf=1 W=10 S=44: unknowns  160 rank  160 nullity   0  P_{D+1} forced: yes
+G=10 D= 2 mode=two  cf=1 W= 9 S=44: unknowns  144 rank  144 nullity   0  P_{D+1} forced: yes
+G=10 D= 2 mode=full cf=0 W=10 S=44: unknowns  160 rank  160 nullity   0  P_{D+1} forced: yes
+G=10 D= 2 mode=full cf=0 W= 9 S=44: unknowns  144 rank  144 nullity   0  P_{D+1} forced: yes
+G=10 D= 2 mode=full cf=1 W=10 S=44: unknowns  160 rank  160 nullity   0  P_{D+1} forced: yes
+G=10 D= 2 mode=full cf=1 W= 9 S=44: unknowns  144 rank  144 nullity   0  P_{D+1} forced: yes
+G=10 D= 3 mode=two  cf=0 W= 9 S=44: unknowns  135 rank  135 nullity   0  P_{D+1} forced: yes
+G=10 D= 3 mode=two  cf=1 W= 9 S=44: unknowns  135 rank  135 nullity   0  P_{D+1} forced: yes
+G=10 D= 3 mode=full cf=0 W= 9 S=44: unknowns  135 rank  135 nullity   0  P_{D+1} forced: yes
+G=10 D= 3 mode=full cf=1 W= 9 S=44: unknowns  135 rank  135 nullity   0  P_{D+1} forced: yes
+G=10 D= 5 mode=two  cf=0 W= 9 S=44: unknowns  117 rank  117 nullity   0  P_{D+1} forced: yes
+G=10 D= 5 mode=two  cf=1 W= 9 S=44: unknowns  117 rank  117 nullity   0  P_{D+1} forced: yes
+G=10 D= 5 mode=full cf=0 W= 9 S=44: unknowns  117 rank  117 nullity   0  P_{D+1} forced: yes
+G=10 D= 5 mode=full cf=1 W= 9 S=44: unknowns  117 rank  117 nullity   0  P_{D+1} forced: yes
+G=10 D= 7 mode=two  cf=0 W= 9 S=44: unknowns   99 rank   99 nullity   0  P_{D+1} forced: yes
+G=10 D= 7 mode=two  cf=1 W= 9 S=44: unknowns   99 rank   99 nullity   0  P_{D+1} forced: yes
+G=10 D= 7 mode=full cf=0 W= 9 S=44: unknowns   99 rank   99 nullity   0  P_{D+1} forced: yes
+G=10 D= 7 mode=full cf=1 W= 9 S=44: unknowns   99 rank   99 nullity   0  P_{D+1} forced: yes
+G=10 D= 9 mode=two  cf=0 W= 9 S=44: unknowns   81 rank   81 nullity   0  P_{D+1} forced: yes
+G=10 D= 9 mode=two  cf=1 W= 9 S=44: unknowns   81 rank   81 nullity   0  P_{D+1} forced: yes
+G=10 D= 9 mode=full cf=0 W= 9 S=44: unknowns   81 rank   81 nullity   0  P_{D+1} forced: yes
+G=10 D= 9 mode=full cf=1 W= 9 S=44: unknowns   81 rank   81 nullity   0  P_{D+1} forced: yes
+G=10 D=11 mode=two  cf=0 W= 9 S=44: unknowns   63 rank   63 nullity   0  P_{D+1} forced: yes
+G=10 D=11 mode=two  cf=1 W= 9 S=44: unknowns   63 rank   63 nullity   0  P_{D+1} forced: yes
+G=10 D=11 mode=full cf=0 W= 9 S=44: unknowns   63 rank   63 nullity   0  P_{D+1} forced: yes
+G=10 D=11 mode=full cf=1 W= 9 S=44: unknowns   63 rank   63 nullity   0  P_{D+1} forced: yes
+G=10 D=13 mode=two  cf=0 W= 9 S=44: unknowns   45 rank   45 nullity   0  P_{D+1} forced: yes
+G=10 D=13 mode=two  cf=1 W= 9 S=44: unknowns   45 rank   45 nullity   0  P_{D+1} forced: yes
+G=10 D=13 mode=full cf=0 W= 9 S=44: unknowns   45 rank   45 nullity   0  P_{D+1} forced: yes
+G=10 D=13 mode=full cf=1 W= 9 S=44: unknowns   45 rank   45 nullity   0  P_{D+1} forced: yes
+G=10 D=15 mode=two  cf=0 W= 9 S=44: unknowns   27 rank   27 nullity   0  P_{D+1} forced: yes
+G=10 D=15 mode=two  cf=1 W= 9 S=44: unknowns   27 rank   27 nullity   0  P_{D+1} forced: yes
+G=10 D=15 mode=full cf=0 W= 9 S=44: unknowns   27 rank   27 nullity   0  P_{D+1} forced: yes
+G=10 D=15 mode=full cf=1 W= 9 S=44: unknowns   27 rank   27 nullity   0  P_{D+1} forced: yes
+G=10 D=17 mode=two  cf=0 W= 9 S=44: unknowns    9 rank    9 nullity   0  P_{D+1} forced: yes
+G=10 D=17 mode=two  cf=1 W= 9 S=44: unknowns    9 rank    9 nullity   0  P_{D+1} forced: yes
+G=10 D=17 mode=full cf=0 W= 9 S=44: unknowns    9 rank    9 nullity   0  P_{D+1} forced: yes
+G=10 D=17 mode=full cf=1 W= 9 S=44: unknowns    9 rank    9 nullity   0  P_{D+1} forced: yes

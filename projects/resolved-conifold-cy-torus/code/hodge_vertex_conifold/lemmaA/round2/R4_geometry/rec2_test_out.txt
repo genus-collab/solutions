@@ -1,0 +1,5 @@
+genus 1: REC (two leaves) at 7 rational points: 0 failures
+genus 2: REC (two leaves) at 7 rational points: 0 failures
+genus 3: REC (two leaves) at 7 rational points: 0 failures
+genus 4: REC (two leaves) at 7 rational points: 0 failures
+genus 5: REC (two leaves) at 7 rational points: 0 failures

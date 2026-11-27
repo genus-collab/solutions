@@ -1,0 +1,16 @@
+genus 4 weights ['1', '2', '4', '3', '4'] CY frame B
+  graphs with an edge: colourings regular 8596, singular 0
+  single vertex polar orders, colour 1: [-6]  colour 2: []
+  colour 1 leading coefficient = gap: True  only t^(2-2g): True
+  total polar orders: [-6]  leading = gap: True
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^5: True []
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): True
+  time 16.8 s
+genus 4 weights ['3/5', '-7/3', '11/2', '5/7', '641/210'] CY frame B
+  graphs with an edge: colourings regular 8596, singular 0
+  single vertex polar orders, colour 1: [-6]  colour 2: []
+  colour 1 leading coefficient = gap: True  only t^(2-2g): True
+  total polar orders: [-6]  leading = gap: True
+  total - P_g Li/(e1 e2): all non-constant coefficients vanish, t^(1-2g)..t^5: True []
+  [t^0] total - [t^0] closed form = constant-map term F_g(0): True
+  time 16.5 s

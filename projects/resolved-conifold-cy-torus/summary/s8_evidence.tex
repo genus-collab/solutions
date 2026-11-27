@@ -1,0 +1,35 @@
+% s8_evidence (abridged). Label prefix: evi.
+\section{Evidence and what remains conditional}
+\noindent\genusstatus{numerically supported} The finite-order checks recorded here are computations (exact arithmetic unless stated); they support the statements at the orders and genera given, and are not proofs. The code and outputs are in \texttt{code/} of this project.
+
+\label{sec:evi}
+
+\subsection*{Finite-order checks}
+
+The long version records, in \Lref{Appendix~A}, the finite-order computations that accompanied the work. None of them is a proof step, and no statement of \cref{sec:set,sec:row,sec:lea,sec:ide,sec:reg,sec:rig} refers to them; they are evidence at the orders and weight points tested. The arithmetic is exact, in $\bbQ$ or in a prime field $\bbF_p$ ($p=2^{127}-1$ or $2^{89}-1$, where a zero test is probabilistic); several implementations written separately were used, together with \emph{controls}, deliberately wrong inputs (a wrong class, a missing constant, a point off $\TCY$) that must make a check fail and did. In outline:
+\begin{enumerate}
+\item \emph{Identities and rows.} The identities of \cref{sec:set,sec:row,sec:lea} at random rational points of $\TCY$; the closed form of the singular row (\cref{thm:row-main}) through $\tau^8z^{11}$; in an independent computation to $t^{14}z^{23}$ at nine points of $\TCY$ (including $\alpha_1=\alpha_2$, $\uq=0$, $\epsilon_1=\epsilon_2$): (F1)--(F3), (L1) for $k\leq13$, (L2) and (L3) for $k\leq9$, \cref{thm:lea-qde,thm:lea-flow}, and the rescaling at $\alpha_0=0$ (\cref{cor:lea-a0}).
+\item \emph{Graph regularity.} The graph sum \eqref{eq:set-graphsum} evaluated per coloured stable graph, summed over decorations: all $20$, $350$, $8596$ and $284806$ coloured stable graphs with an edge of genus $2,3,4,5$ are regular at $t=0$ (genus $2$--$4$ at several generic and special points of $\TCY$, genus $5$ at a single point); the single-vertex graph has the single polar term $\gapg t^{2-2g}$ at colour $1$ and no pole at colour $2$. Other classes at colour $1$, or the point frame, used as controls, give singular edge graphs; the class at colour $2$ is not constrained by these tests.
+\item \emph{Direct localisation}, independent of the $R$-matrix: $\GW_{g,d}=\Pg d^{2g-3}/(\epsilon_1\epsilon_2)$ for $g\leq7$ at $d=1$, $g\leq5$ at $d\leq3$ and $g\leq4$ at $d\leq4$, at points of $\TCY$; the control off $\TCY$ fails for every $g\geq1$ tested.
+\item \emph{Rational reconstruction in $\cQ$} at genus $2,3$: the individual graphs have poles on $\Disc=0$, of orders $4$ and $8$, which cancel in the total (compare \cref{lem:rig-disc}).
+\item \emph{The flop identity} of \cref{prop:rig-flop}(ii) for $g=2,\dots,6$ at two points of $\TCY$; it fails at a point off $\TCY$. The constant term $\sF_g(0)$ was observed to depend on $\alpha$.
+\item \emph{Off the Calabi--Yau torus}, with the class $(E_\alpha,-\epsilon_1,-\epsilon_2)$, $E_\alpha=\alpha_0+\alpha_1+\alpha_2\neq\epsilon_1+\epsilon_2$: the leaf structure survives in the tests (\cref{rmk:lea-cy}), but at genus $2$ the vertex graph acquires a $t^{-1}$ term, and at genus $3$ and $4$ coloured graphs with an edge are singular ($4$ of $350$, $54$ of $8596$). This is evidence only; nothing is claimed off $\TCY$.
+\end{enumerate}
+All checks are at finite genus, at finite orders in $t$, $z$, $\psi$, and at finitely many weight points. The $\alpha_0$-adic step of \cref{lem:rig-disc} and the regularity at $\cQ=\infty$ (\cref{lem:rig-inf}) were tested only through the totals and the rational reconstruction. Not tested at all: the stability argument and the descent in the Teleman step of \cref{sec:ide}, the analytic input \cref{lem:row-betaphase} beyond the values it predicts, and the identification behind \cref{prop:rig-flop}(ii) beyond the Hodge-integral identity itself.
+
+\subsection*{What remains conditional}
+
+The results are conditional only on the cited theorems (i)--(iv) of \cref{sec:int-inputs}, whose proofs are not reproduced; which result uses which input is stated there and is unchanged by the abridgement. None of the arguments uses topological recursion, a mirror theorem, a degeneration argument or a finite-order computation; the one input proved by degeneration is (iv), used in genus $1$ for $d\geq2$ only. The two theorems of \cite{LP2} (\cref{thm:reg-L,thm:reg-VI}) are quoted, not proved, and enter Theorem~C only; the numbering of \cite{LP2} quoted here is provisional, the locators in \cite{Tel12} are those of the arXiv version, and the results of \cite{BS} are referred to by content. The fundamental-class and splitting axioms of the virtual class are used in standard form, without a reference (\cref{sec:ide}). What is not claimed is listed in \cref{sec:int-notclaimed}.
+
+\subsection*{Steps of the long version still to be checked}
+
+The long version is a draft, and it marks the following steps as written out in more detail than in its sources, or as still to be checked by the authors. They are not further inputs from the literature, but the statements that rest on them should be read with this reservation.
+\begin{enumerate}
+\item The Stirling step in the proof of the Beta-phase lemma (\cref{lem:row-betaphase}), on which input (i) rests in the form used.
+\item In \cref{sec:ide}: the list of weights showing that $R\pi_*f^*\Nb$ is moving on the fixed loci, behind \cref{def:set-inv}; and the projection-formula argument for $\Hg_{\bw}\otimes\TFT=\hw.\TFT$ in the proof of \cref{prop:ide-frameB}.
+\item In \cref{lem:rig-poly}: the restriction of the invariants to a general subtorus (contravariance), which the sources state for $\TCY$ and $\Tthree$ only; it is used in \cref{lem:rig-g1} on $\TF$, in \cref{cor:int-conj} for subtori, and in \cref{lem:rig-3Tid}.
+\item In \cref{lem:rig-g1}: the sign conventions of the node and edge factors in the localisation formula at $d=1$; its normalisation agrees with the genus-zero value, and the resulting five-torus value was confirmed by a separate direct-localisation computation recorded in \Lref{Appendix~A}.
+\item In \cref{prop:rig-flop}(ii): the weights of the two small resolutions and the identification of the factors at $\sQ=0$ with those of the flop, as said after its sketch. The identity itself was checked for $2\leq g\leq6$ at two points of $\TCY$ (see the finite-order checks above).
+\item In \cref{lem:rig-3Tid}: that the ring map $\alpha_0\mapsto0$ may be applied to Theorem~B as stated over $\KCY$, and that for $d\geq1$ the restricted invariants are the $\Tthree$-invariants; \cref{cor:rig-3T} depends on this lemma only for its statement about $\sF^{\Tthree}_g$.
+\end{enumerate}
+Theorems~A--D on $\TCY$ at genus $g\geq2$ depend, among these, on (i) and (ii) only; (iii) and (iv) concern genus one and the extension to subtori, (v) the flop identity, and (vi) the three-torus.

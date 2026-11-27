@@ -1,0 +1,41 @@
+==================== x = 5/3 (c = 8/3)
+  Wick rows done (16 s)
+  E22(0,0)|t=0 = -1225/3456;  S4: -1225/3456;  note F3: -125/384  (note F3 agrees at 0 of 21 entries)
+  done x = 5/3 (40 s)
+==================== x = -1/3 (c = 2/3)
+  Wick rows done (46 s)
+  E22(0,0)|t=0 = -7/216;  S4: -7/216;  note F3: 1/24  (note F3 agrees at 0 of 21 entries)
+  done x = -1/3 (59 s)
+==================== x = 11/5 (c = 16/5)
+  Wick rows done (84 s)
+  E22(0,0)|t=0 = -8107/12800;  S4: -8107/12800;  note F3: -1331/2560  (note F3 agrees at 0 of 21 entries)
+  done x = 11/5 (116 s)
+==================== summary (comparisons / mismatches)
+  (9.1) sigma_-1 = (0, c)                                       21  0
+  (9.1) sigma_k leaf form vs Wick rows                         252  0
+  (9.8) E12 legs vs EdN                                        378  0
+  10.6'                                                         21  0
+  10.6(a)                                                       42  0
+  10.6(b)                                                       21  0
+  CF.4 loops vs EdN                                            378  0
+  Delta_1 leading                                                3  0
+  Delta_2 (10.1)                                                33  0
+  E11 legs: EdN vs Mathematica fit                             348  0
+  E11 symmetric                                                378  0
+  E12 legs: EdN vs Mathematica fit                             348  0
+  E21(b,a) = E12(a,b) (Prop 9.5)                               441  0
+  E22(t=0) = (x^3/c)(1 - h^2 h^2)/(z+w) (10.6(c))               63  0
+  F2                                                            21  0
+  F3: [t^-1] rho E12 = 0 (Prop 9.3(i))                          63  0
+  F3: [t^-1] rho E21 = 0 (needs 10.6(b))                        63  0
+  F3: t^2 rho^2 E11 = O(t^2)                                   126  0
+  K_1 = 1                                                      168  0
+  K_2 = 1                                                      147  0
+  Row 2 at U1                                                  108  0
+  Row 2 at U2 (Lemma 10.5)                                     126  0
+  V1                                                            51  0
+  W1 = 0 at roots                                               54  0
+  orthogonality (I5)                                           168  0
+  roots                                                         54  0
+  total comparisons: 3876 (x = 5/3 -1/3 11/5)
+  all comparisons exact

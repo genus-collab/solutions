@@ -1,0 +1,5 @@
+out/forcing_G10.txt: ref_forcing G=10 p=1000000007: Lemma 8.1 row spaces at 50 framings, 0 differ; forcing inside hypotheses: 17 of 17 forced; outside: 218 of 347 forced; odd polar orders non-zero: 0; 437s
+out/forcing_G11.txt: ref_forcing G=11 p=1000000007: Lemma 8.1 row spaces at 63 framings, 0 differ; forcing inside hypotheses: 36 of 36 forced; odd polar orders non-zero: 0; 322s
+out/forcing_G12.txt: ref_forcing G=12 p=1000000007: Lemma 8.1 row spaces at 74 framings, 0 differ; forcing inside hypotheses: 36 of 36 forced; odd polar orders non-zero: 0; 817s
+out/forcing_G8.txt: ref_forcing G=8 p=1000000007: Lemma 8.1 row spaces at 31 framings, 0 differ; forcing inside hypotheses: 12 of 12 forced; outside: 96 of 153 forced; odd polar orders non-zero: 0; 27s
+out/forcing_G9.txt: ref_forcing G=9 p=1000000007: Lemma 8.1 row spaces at 39 framings, 0 differ; forcing inside hypotheses: 12 of 12 forced; outside: 150 of 233 forced; odd polar orders non-zero: 0; 109s

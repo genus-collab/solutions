@@ -1,0 +1,7 @@
+# P_3 = (-1/6) D[1,1,1] + (1/2) D[1,2] + (2/3) D[3]
+(L1) P_3 G=8: 42 relations (R at levels D-2, D = 1..13, r <= 2), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_3 G=9: 56 relations (R at levels D-2, D = 1..15, r <= 2), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_3 G=10: 72 relations (R at levels D-2, D = 1..17, r <= 2), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_3 G=11: 90 relations (R at levels D-2, D = 1..19, r <= 2), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_3 G=12: 110 relations (R at levels D-2, D = 1..21, r <= 2), survivors 0, circular 0, relations without exactly one target 0
+(L1) SUMMARY P_3 G=8..12: 370 relations, 0 surviving non-target terms, 0 circular terms; zero-reasons: FF 14605551, H1 1304607, H2 12385, L0 20573401

@@ -1,0 +1,9 @@
+ref_global G=3 mode=two cf=0 W=3 S=18: unknowns 6, equations 30, rank 2, nullity 4
+ref_global G=3 mode=two cf=0 W=2 S=18: unknowns 4, equations 32, rank 2, nullity 2
+ref_global G=4 mode=two cf=0 W=4 S=22: unknowns 16, equations 108, rank 9, nullity 7
+ref_global G=4 mode=two cf=0 W=3 S=22: unknowns 12, equations 114, rank 9, nullity 3
+ref_global G=5 mode=two cf=0 W=5 S=26: unknowns 30, equations 252, rank 24, nullity 6
+ref_global G=5 mode=two cf=0 W=4 S=26: unknowns 24, equations 264, rank 24, nullity 0
+ref_global G=4 mode=two cf=0 W=4 S=22: unknowns 20, equations 108, rank 9, nullity 11
+ref_global G=5 mode=two cf=0 W=5 S=26: unknowns 35, equations 252, rank 24, nullity 11
+ref_global G=6 mode=two cf=0 W=6 S=30: unknowns 54, equations 480, rank 47, nullity 7

@@ -1,0 +1,25 @@
+g=2 R=(2) [level of R+2: 2, excess 0] OK
+g=2 R=(2,2) [level of R+2: 3, excess -1] OK
+g=2 R=(2,3) [level of R+2: 4, excess -2] OK
+g=2 R=(2,4) [level of R+2: 5, excess -3] OK
+g=2 R=(2,5) [level of R+2: 6, excess -4] OK
+g=2 R=(3) [level of R+2: 3, excess -1] OK
+g=2 R=(3,3) [level of R+2: 5, excess -3] OK
+g=2 R=(3,4) [level of R+2: 6, excess -4] OK
+g=2 R=(4) [level of R+2: 4, excess -2] OK
+g=2 R=(5) [level of R+2: 5, excess -3] OK
+g=2 R=(6) [level of R+2: 6, excess -4] OK
+g=2 R=(7) [level of R+2: 7, excess -5] OK
+g=3 R=(2) [level of R+2: 2, excess 2] OK
+g=3 R=(2,2) [level of R+2: 3, excess 1] OK
+g=3 R=(2,3) [level of R+2: 4, excess 0] OK
+g=3 R=(2,4) [level of R+2: 5, excess -1] OK
+g=3 R=(2,5) [level of R+2: 6, excess -2] OK
+g=3 R=(3) [level of R+2: 3, excess 1] OK
+g=3 R=(3,3) [level of R+2: 5, excess -1] OK
+g=3 R=(3,4) [level of R+2: 6, excess -2] OK
+g=3 R=(4) [level of R+2: 4, excess 0] OK
+g=3 R=(5) [level of R+2: 5, excess -1] OK
+g=3 R=(6) [level of R+2: 6, excess -2] OK
+g=3 R=(7) [level of R+2: 7, excess -3] OK
+SUMMARY Theorem B (referee implementation): 24 relations at 3 values of tau, 0 failures

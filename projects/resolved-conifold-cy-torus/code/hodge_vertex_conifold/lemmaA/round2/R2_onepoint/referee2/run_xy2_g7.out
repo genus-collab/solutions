@@ -1,0 +1,4 @@
+ref_xy2 tau=1 g=7 m<=11: 66 pairs (25 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+ref_xy2 tau=2 g=7 m<=10: 55 pairs (16 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+ref_xy2 tau=3 g=6 m<=10: 55 pairs (25 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+done

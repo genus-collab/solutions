@@ -1,0 +1,215 @@
+
+===  fibrewise (3,5,3,5)  rows+frame 1.5 s; M= 12 K= 7
+   L1+L2 = E/tau - a0 : True
+   L1 L2 = a1 a2/tau : True
+   eta^-1 = e1 e2 {{a0 a1 a2, a1 a2},{a1 a2, -E}} : True
+   F1: t^2 Delta_1 -> -E^3 e1 e2 : True
+   rho^-1 = 1 + (1/32) t, -u/(2E^2) = 1/32
+   Delta_1 = e1 e2 a1 (a0+a2) W_2(U_1) ? : True
+   Delta_2 = e1 e2 a1 (a0+a2) W_2(U_2) ? : True
+   Delta_2(0) = 3375/8 ; Delta_2'(0) = 0
+   Delta_2 = (L2-L1) Theta, Theta=e1 e2(a1 a2-E L2) : True
+   Theta(0)=0 : True
+   Theta_1 = -3375/64
+   <v_i(w),v_j(-w)> = delta_ij Delta_i to w^12 : True
+   QDE row 2 with A=[[0,1],[-a1a2/tau,E/tau-a0]] at both colours, z^0..z^11 : True
+   min valuation of Dil_1, Dil_2: 0 0
+   min valuation of E_11,E_12,E_21,E_22: [0, 0, 0, 0] ; E_21(b,a)=E_12(a,b): True
+   F2: r'_{0,1}(z;0)=E/(E+z) to z^12 : True
+   rho r_{1,1}: t^-1 coefficient = E delta_{m0} : True
+   F2: [t^0] rho r_{1,1}(z) = X/(E+z) to z^12: True; X = 15; a1 a2 = 15, a1 a2 + a0 E = 15
+   L1 k=0: fit ('-64', '8') expect -E^2, E: -64 8
+   L1 k=1: in Lam_2 (rank 2, 14 equations): True ; top coefficient non-zero: True ; in Lam_1: False
+      a_j^(1) = ['-2', '2'] ; u/2 = -2 ; sum = 0
+   L1 k=2: in Lam_3 (rank 3, 14 equations): True ; top coefficient non-zero: True ; in Lam_2: False
+      a_j^(2) = ['-47/768', '1/8', '-49/768'] ; u/2 = -2 ; sum = 0
+   L1 k=3: in Lam_4 (rank 4, 14 equations): True ; top coefficient non-zero: True ; in Lam_3: False
+   L1 k=4: in Lam_5 (rank 5, 14 equations): True ; top coefficient non-zero: True ; in Lam_4: False
+   L1 k=5: in Lam_6 (rank 6, 14 equations): True ; top coefficient non-zero: True ; in Lam_5: False
+   L1 k=6: in Lam_7 (rank 7, 14 equations): True ; top coefficient non-zero: True ; in Lam_6: False
+   L1 k=7: in Lam_8 (rank 8, 14 equations): True ; top coefficient non-zero: False ; in Lam_7: True
+   L3 k=0: in span (1 unknowns, 78 equations, rank 1): True; smaller span (no antidiagonal): False
+   L3 k=1: in span (3 unknowns, 78 equations, rank 3): True; smaller span (no antidiagonal): False
+   L3 k=2: in span (6 unknowns, 78 equations, rank 6): True; smaller span (no antidiagonal): False
+   L3 k=3: in span (10 unknowns, 78 equations, rank 10): True; smaller span (no antidiagonal): False
+   L3 k=4: in span (15 unknowns, 78 equations, rank 15): True; smaller span (no antidiagonal): False
+   L3 k=5: in span (21 unknowns, 78 equations, rank 21): True; smaller span (no antidiagonal): False
+   L2 j=1, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   L2 j=2, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   E11 flow d/dt[t^2 rho^2 E11]=Theta Dg Dg' for m+n<=11 : True
+   r'_{0,2}(z;0) = T(E)^-2 T(a1) T(a0+a2) T(a2) T(a0+a1), T(v)=Exp[Sum b_k (z/v)^(2k-1)] : False
+   r'_{0,2}(z;0) = the inverse of that : True
+   H_n=[tau^n]F Ephi regular at z=0, n<10: True
+   KEY FORMULA rho r'_{0,1}(z;t) = (E/(E+z))(tau/t) 2F1(a2/z+1,(a0+a2)/z+1;E/z+2;tau) Exp[-dphi/z]: True (104 coefficients, t^0..t^7, z^0..z^12)
+
+===  S1 (3,4,5,11)  rows+frame 1.5 s; M= 12 K= 7
+   L1+L2 = E/tau - a0 : True
+   L1 L2 = a1 a2/tau : True
+   eta^-1 = e1 e2 {{a0 a1 a2, a1 a2},{a1 a2, -E}} : True
+   F1: t^2 Delta_1 -> -E^3 e1 e2 : True
+   rho^-1 = 1 + (-5/32) t, -u/(2E^2) = -5/32
+   Delta_1 = e1 e2 a1 (a0+a2) W_2(U_1) ? : True
+   Delta_2 = e1 e2 a1 (a0+a2) W_2(U_2) ? : True
+   Delta_2(0) = 6435 ; Delta_2'(0) = 0
+   Delta_2 = (L2-L1) Theta, Theta=e1 e2(a1 a2-E L2) : True
+   Theta(0)=0 : True
+   Theta_1 = -6435/16
+   <v_i(w),v_j(-w)> = delta_ij Delta_i to w^12 : True
+   QDE row 2 with A=[[0,1],[-a1a2/tau,E/tau-a0]] at both colours, z^0..z^11 : True
+   min valuation of Dil_1, Dil_2: 0 0
+   min valuation of E_11,E_12,E_21,E_22: [0, 0, 0, 0] ; E_21(b,a)=E_12(a,b): True
+   F2: r'_{0,1}(z;0)=E/(E+z) to z^12 : True
+   rho r_{1,1}: t^-1 coefficient = E delta_{m0} : True
+   F2: [t^0] rho r_{1,1}(z) = X/(E+z) to z^12: True; X = 12; a1 a2 = 12, a1 a2 + a0 E = 156
+   L1 k=0: fit ('-256', '16') expect -E^2, E: -256 16
+   L1 k=1: in Lam_2 (rank 2, 14 equations): True ; top coefficient non-zero: True ; in Lam_1: False
+      a_j^(1) = ['40', '-40'] ; u/2 = 40 ; sum = 0
+   L1 k=2: in Lam_3 (rank 3, 14 equations): True ; top coefficient non-zero: True ; in Lam_2: False
+      a_j^(2) = ['-1595/192', '25/2', '-805/192'] ; u/2 = 40 ; sum = 0
+   L1 k=3: in Lam_4 (rank 4, 14 equations): True ; top coefficient non-zero: False ; in Lam_3: True
+   L1 k=4: in Lam_5 (rank 5, 14 equations): True ; top coefficient non-zero: True ; in Lam_4: False
+   L1 k=5: in Lam_6 (rank 6, 14 equations): True ; top coefficient non-zero: True ; in Lam_5: False
+   L1 k=6: in Lam_7 (rank 7, 14 equations): True ; top coefficient non-zero: True ; in Lam_6: False
+   L1 k=7: in Lam_8 (rank 8, 14 equations): True ; top coefficient non-zero: False ; in Lam_7: True
+   L3 k=0: in span (1 unknowns, 78 equations, rank 1): True; smaller span (no antidiagonal): False
+   L3 k=1: in span (3 unknowns, 78 equations, rank 3): True; smaller span (no antidiagonal): False
+   L3 k=2: in span (6 unknowns, 78 equations, rank 6): True; smaller span (no antidiagonal): False
+   L3 k=3: in span (10 unknowns, 78 equations, rank 10): True; smaller span (no antidiagonal): False
+   L3 k=4: in span (15 unknowns, 78 equations, rank 15): True; smaller span (no antidiagonal): False
+   L3 k=5: in span (21 unknowns, 78 equations, rank 21): True; smaller span (no antidiagonal): False
+   L2 j=1, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   L2 j=2, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   E11 flow d/dt[t^2 rho^2 E11]=Theta Dg Dg' for m+n<=11 : True
+   r'_{0,2}(z;0) = T(E)^-2 T(a1) T(a0+a2) T(a2) T(a0+a1), T(v)=Exp[Sum b_k (z/v)^(2k-1)] : False
+   r'_{0,2}(z;0) = the inverse of that : True
+   H_n=[tau^n]F Ephi regular at z=0, n<10: True
+   KEY FORMULA rho r'_{0,1}(z;t) = (E/(E+z))(tau/t) 2F1(a2/z+1,(a0+a2)/z+1;E/z+2;tau) Exp[-dphi/z]: True (104 coefficients, t^0..t^7, z^0..z^12)
+
+===  S2 (7,13,2,29)  rows+frame 2.2 s; M= 12 K= 7
+   L1+L2 = E/tau - a0 : True
+   L1 L2 = a1 a2/tau : True
+   eta^-1 = e1 e2 {{a0 a1 a2, a1 a2},{a1 a2, -E}} : True
+   F1: t^2 Delta_1 -> -E^3 e1 e2 : True
+   rho^-1 = 1 + (-85/1922) t, -u/(2E^2) = -85/1922
+   Delta_1 = e1 e2 a1 (a0+a2) W_2(U_1) ? : True
+   Delta_2 = e1 e2 a1 (a0+a2) W_2(U_2) ? : True
+   Delta_2(0) = 2280096/31 ; Delta_2'(0) = 0
+   Delta_2 = (L2-L1) Theta, Theta=e1 e2(a1 a2-E L2) : True
+   Theta(0)=0 : True
+   Theta_1 = -2280096/961
+   <v_i(w),v_j(-w)> = delta_ij Delta_i to w^12 : True
+   QDE row 2 with A=[[0,1],[-a1a2/tau,E/tau-a0]] at both colours, z^0..z^11 : True
+   min valuation of Dil_1, Dil_2: 0 0
+   min valuation of E_11,E_12,E_21,E_22: [0, 0, 0, 0] ; E_21(b,a)=E_12(a,b): True
+   F2: r'_{0,1}(z;0)=E/(E+z) to z^12 : True
+   rho r_{1,1}: t^-1 coefficient = E delta_{m0} : True
+   F2: [t^0] rho r_{1,1}(z) = X/(E+z) to z^12: True; X = 91; a1 a2 = 91, a1 a2 + a0 E = 432
+   L1 k=0: fit ('-961', '31') expect -E^2, E: -961 31
+   L1 k=1: in Lam_2 (rank 2, 14 equations): True ; top coefficient non-zero: True ; in Lam_1: False
+      a_j^(1) = ['85/2', '-85/2'] ; u/2 = 85/2 ; sum = 0
+   L1 k=2: in Lam_3 (rank 3, 14 equations): True ; top coefficient non-zero: True ; in Lam_2: False
+      a_j^(2) = ['-59395/5766', '7225/1922', '18860/2883'] ; u/2 = 85/2 ; sum = 0
+   L1 k=3: in Lam_4 (rank 4, 14 equations): True ; top coefficient non-zero: True ; in Lam_3: False
+   L1 k=4: in Lam_5 (rank 5, 14 equations): True ; top coefficient non-zero: True ; in Lam_4: False
+   L1 k=5: in Lam_6 (rank 6, 14 equations): True ; top coefficient non-zero: True ; in Lam_5: False
+   L1 k=6: in Lam_7 (rank 7, 14 equations): True ; top coefficient non-zero: True ; in Lam_6: False
+   L1 k=7: in Lam_8 (rank 8, 14 equations): True ; top coefficient non-zero: True ; in Lam_7: False
+   L3 k=0: in span (1 unknowns, 78 equations, rank 1): True; smaller span (no antidiagonal): False
+   L3 k=1: in span (3 unknowns, 78 equations, rank 3): True; smaller span (no antidiagonal): False
+   L3 k=2: in span (6 unknowns, 78 equations, rank 6): True; smaller span (no antidiagonal): False
+   L3 k=3: in span (10 unknowns, 78 equations, rank 10): True; smaller span (no antidiagonal): False
+   L3 k=4: in span (15 unknowns, 78 equations, rank 15): True; smaller span (no antidiagonal): False
+   L3 k=5: in span (21 unknowns, 78 equations, rank 21): True; smaller span (no antidiagonal): False
+   L2 j=1, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   L2 j=2, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   E11 flow d/dt[t^2 rho^2 E11]=Theta Dg Dg' for m+n<=11 : True
+   r'_{0,2}(z;0) = T(E)^-2 T(a1) T(a0+a2) T(a2) T(a0+a1), T(v)=Exp[Sum b_k (z/v)^(2k-1)] : False
+   r'_{0,2}(z;0) = the inverse of that : True
+   H_n=[tau^n]F Ephi regular at z=0, n<10: True
+   KEY FORMULA rho r'_{0,1}(z;t) = (E/(E+z))(tau/t) 2F1(a2/z+1,(a0+a2)/z+1;E/z+2;tau) Exp[-dphi/z]: True (104 coefficients, t^0..t^7, z^0..z^12)
+
+===  S3 (17,-5,19,-8)  rows+frame 2.1 s; M= 12 K= 7
+   L1+L2 = E/tau - a0 : True
+   L1 L2 = a1 a2/tau : True
+   eta^-1 = e1 e2 {{a0 a1 a2, a1 a2},{a1 a2, -E}} : True
+   F1: t^2 Delta_1 -> -E^3 e1 e2 : True
+   rho^-1 = 1 + (483/242) t, -u/(2E^2) = 483/242
+   Delta_1 = e1 e2 a1 (a0+a2) W_2(U_1) ? : True
+   Delta_2 = e1 e2 a1 (a0+a2) W_2(U_2) ? : True
+   Delta_2(0) = -1240320/11 ; Delta_2'(0) = 0
+   Delta_2 = (L2-L1) Theta, Theta=e1 e2(a1 a2-E L2) : True
+   Theta(0)=0 : True
+   Theta_1 = 1240320/121
+   <v_i(w),v_j(-w)> = delta_ij Delta_i to w^12 : True
+   QDE row 2 with A=[[0,1],[-a1a2/tau,E/tau-a0]] at both colours, z^0..z^11 : True
+   min valuation of Dil_1, Dil_2: 0 0
+   min valuation of E_11,E_12,E_21,E_22: [0, 0, 0, 0] ; E_21(b,a)=E_12(a,b): True
+   F2: r'_{0,1}(z;0)=E/(E+z) to z^12 : True
+   rho r_{1,1}: t^-1 coefficient = E delta_{m0} : True
+   F2: [t^0] rho r_{1,1}(z) = X/(E+z) to z^12: True; X = -85; a1 a2 = -85, a1 a2 + a0 E = -96
+   L1 k=0: fit ('-121', '11') expect -E^2, E: -121 11
+   L1 k=1: in Lam_2 (rank 2, 14 equations): True ; top coefficient non-zero: True ; in Lam_1: False
+      a_j^(1) = ['-483/2', '483/2'] ; u/2 = -483/2 ; sum = 0
+   L1 k=2: in Lam_3 (rank 3, 14 equations): True ; top coefficient non-zero: True ; in Lam_2: False
+      a_j^(2) = ['-141907/726', '233289/242', '-278980/363'] ; u/2 = -483/2 ; sum = 0
+   L1 k=3: in Lam_4 (rank 4, 14 equations): True ; top coefficient non-zero: True ; in Lam_3: False
+   L1 k=4: in Lam_5 (rank 5, 14 equations): True ; top coefficient non-zero: True ; in Lam_4: False
+   L1 k=5: in Lam_6 (rank 6, 14 equations): True ; top coefficient non-zero: True ; in Lam_5: False
+   L1 k=6: in Lam_7 (rank 7, 14 equations): True ; top coefficient non-zero: True ; in Lam_6: False
+   L1 k=7: in Lam_8 (rank 8, 14 equations): True ; top coefficient non-zero: True ; in Lam_7: False
+   L3 k=0: in span (1 unknowns, 78 equations, rank 1): True; smaller span (no antidiagonal): False
+   L3 k=1: in span (3 unknowns, 78 equations, rank 3): True; smaller span (no antidiagonal): False
+   L3 k=2: in span (6 unknowns, 78 equations, rank 6): True; smaller span (no antidiagonal): False
+   L3 k=3: in span (10 unknowns, 78 equations, rank 10): True; smaller span (no antidiagonal): False
+   L3 k=4: in span (15 unknowns, 78 equations, rank 15): True; smaller span (no antidiagonal): False
+   L3 k=5: in span (21 unknowns, 78 equations, rank 21): True; smaller span (no antidiagonal): False
+   L2 j=1, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   L2 j=2, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   E11 flow d/dt[t^2 rho^2 E11]=Theta Dg Dg' for m+n<=11 : True
+   r'_{0,2}(z;0) = T(E)^-2 T(a1) T(a0+a2) T(a2) T(a0+a1), T(v)=Exp[Sum b_k (z/v)^(2k-1)] : False
+   r'_{0,2}(z;0) = the inverse of that : True
+   H_n=[tau^n]F Ephi regular at z=0, n<10: True
+   KEY FORMULA rho r'_{0,1}(z;t) = (E/(E+z))(tau/t) 2F1(a2/z+1,(a0+a2)/z+1;E/z+2;tau) Exp[-dphi/z]: True (104 coefficients, t^0..t^7, z^0..z^12)
+
+===  random F_p  rows+frame 2.2 s; M= 12 K= 7
+   L1+L2 = E/tau - a0 : True
+   L1 L2 = a1 a2/tau : True
+   eta^-1 = e1 e2 {{a0 a1 a2, a1 a2},{a1 a2, -E}} : True
+   F1: t^2 Delta_1 -> -E^3 e1 e2 : True
+   rho^-1 = 1 + (5757078279816472252/1395348226942811481) t, -u/(2E^2) = 5757078279816472252/1395348226942811481
+   Delta_1 = e1 e2 a1 (a0+a2) W_2(U_1) ? : True
+   Delta_2 = e1 e2 a1 (a0+a2) W_2(U_2) ? : True
+   Delta_2(0) = 8850613573961300520/7455505721069006459 ; Delta_2'(0) = 0
+   Delta_2 = (L2-L1) Theta, Theta=e1 e2(a1 a2-E L2) : True
+   Theta(0)=0 : True
+   Theta_1 = 8162218650794771889/3628839967757612365
+   <v_i(w),v_j(-w)> = delta_ij Delta_i to w^12 : True
+   QDE row 2 with A=[[0,1],[-a1a2/tau,E/tau-a0]] at both colours, z^0..z^11 : True
+   min valuation of Dil_1, Dil_2: 0 0
+   min valuation of E_11,E_12,E_21,E_22: [0, 0, 0, 0] ; E_21(b,a)=E_12(a,b): True
+   F2: r'_{0,1}(z;0)=E/(E+z) to z^12 : True
+   rho r_{1,1}: t^-1 coefficient = E delta_{m0} : True
+   F2: [t^0] rho r_{1,1}(z) = X/(E+z) to z^12: True; X = 9135472359455311830/4957791371921911517; a1 a2 = 9135472359455311830/4957791371921911517, a1 a2 + a0 E = 3256372765723349837/2239806365900898603
+   L1 k=0: fit ('F_p:82803850740102897841533397287611423543', '-7311051349409933405/4596085024495731927') expect -E^2, E: F_p:82803850740102897841533397287611423543 -7311051349409933405/4596085024495731927
+   L1 k=1: in Lam_2 (rank 2, 14 equations): True ; top coefficient non-zero: True ; in Lam_1: False
+      a_j^(1) = ['-392474734678868004/4546580107493162525', '392474734678868004/4546580107493162525'] ; u/2 = -392474734678868004/4546580107493162525 ; sum = 0
+   L1 k=2: in Lam_3 (rank 3, 14 equations): True ; top coefficient non-zero: True ; in Lam_2: False
+      a_j^(2) = ['3079704384893748054/938456630237918303', '-6264456818125192473/1052517932705960399', 'F_p:28125902209029725173838498928648482425'] ; u/2 = -392474734678868004/4546580107493162525 ; sum = 0
+   L1 k=3: in Lam_4 (rank 4, 14 equations): True ; top coefficient non-zero: True ; in Lam_3: False
+   L1 k=4: in Lam_5 (rank 5, 14 equations): True ; top coefficient non-zero: True ; in Lam_4: False
+   L1 k=5: in Lam_6 (rank 6, 14 equations): True ; top coefficient non-zero: True ; in Lam_5: False
+   L1 k=6: in Lam_7 (rank 7, 14 equations): True ; top coefficient non-zero: True ; in Lam_6: False
+   L1 k=7: in Lam_8 (rank 8, 14 equations): True ; top coefficient non-zero: True ; in Lam_7: False
+   L3 k=0: in span (1 unknowns, 78 equations, rank 1): True; smaller span (no antidiagonal): False
+   L3 k=1: in span (3 unknowns, 78 equations, rank 3): True; smaller span (no antidiagonal): False
+   L3 k=2: in span (6 unknowns, 78 equations, rank 6): True; smaller span (no antidiagonal): False
+   L3 k=3: in span (10 unknowns, 78 equations, rank 10): True; smaller span (no antidiagonal): False
+   L3 k=4: in span (15 unknowns, 78 equations, rank 15): True; smaller span (no antidiagonal): False
+   L3 k=5: in span (21 unknowns, 78 equations, rank 21): True; smaller span (no antidiagonal): False
+   L2 j=1, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   L2 j=2, b=0..3, k=0..5, in Lam_{k+1}: True (24 cases)
+   E11 flow d/dt[t^2 rho^2 E11]=Theta Dg Dg' for m+n<=11 : True
+   r'_{0,2}(z;0) = T(E)^-2 T(a1) T(a0+a2) T(a2) T(a0+a1), T(v)=Exp[Sum b_k (z/v)^(2k-1)] : False
+   r'_{0,2}(z;0) = the inverse of that : True
+   H_n=[tau^n]F Ephi regular at z=0, n<10: True
+   KEY FORMULA rho r'_{0,1}(z;t) = (E/(E+z))(tau/t) 2F1(a2/z+1,(a0+a2)/z+1;E/z+2;tau) Exp[-dphi/z]: True (104 coefficients, t^0..t^7, z^0..z^12)

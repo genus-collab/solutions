@@ -1,0 +1,4 @@
+G=9 done: inside so far 12 (forced 12, all y forced 12); outside 0 (forced 0)
+G=10 done: inside so far 29 (forced 29, all y forced 29); outside 0 (forced 0)
+G=11 done: inside so far 65 (forced 65, all y forced 65); outside 0 (forced 0)
+ref_forcing G=9..11: inside the hypotheses 65 tuples, y_D forced in 65, all one-leaf values forced in 65; outside 0, forced 0

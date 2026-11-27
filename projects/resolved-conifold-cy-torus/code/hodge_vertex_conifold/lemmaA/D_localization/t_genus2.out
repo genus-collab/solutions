@@ -1,0 +1,10 @@
+h=2 R=(1): Xi = 0
+h=2 R=(2): Xi = 0
+h=2 R=(3): Xi = 1367/186624
+h=2 R=(0): Xi = 49279/933120
+h=2 R=(1 1): Xi = 0
+h=2 R=(2 2): Xi = 2075/62208
+h=2 R=(2 1): Xi = 0
+j=3 closed formula=1367/186624  engine=1367/186624  ok
+j=4 closed formula=-833/311040  engine=-833/311040  ok
+j=5 closed formula=-5261/155520  engine=-5261/155520  ok

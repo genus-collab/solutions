@@ -1,0 +1,6 @@
+(A) genus 6 r = 3: 23 Lemma-A points (parts >= 2, D <= 2h-3), 0 violations
+(C) genus 6 r = 3: 8 control points (D = 2h-2), 8 non-zero; non-zero components: {2,2,9}:all {2,3,8}:all {2,4,7}:all {2,5,6}:all {3,3,7}:all {3,4,6}:all {3,5,5}:all {4,4,5}:all
+(M) genus 6 r = 3: 101 lattice points with parts >= 0, 1 <= J, D <= 2h-3: 0 violations
+(H) genus 6 r = 3, D = 10: Hurwitz component zero at 0 points, non-zero at 8
+(H) genus 6 r = 3, D = 11: Hurwitz component zero at 10 points, non-zero at 0
+(H) genus 6 r = 3, D = 12: Hurwitz component zero at 0 points, non-zero at 12

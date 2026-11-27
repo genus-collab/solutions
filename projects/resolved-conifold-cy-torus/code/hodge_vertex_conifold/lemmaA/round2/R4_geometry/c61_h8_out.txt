@@ -1,0 +1,1 @@
+genus 8: (6.1) vs table: 286 comparisons (11 tau x 26 j), 0 mismatches

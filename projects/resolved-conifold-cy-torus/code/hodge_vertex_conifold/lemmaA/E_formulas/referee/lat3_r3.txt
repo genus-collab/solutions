@@ -1,0 +1,6 @@
+(A) genus 3 r = 3: 1 Lemma-A points (parts >= 2, D <= 2h-3), 0 violations
+(C) genus 3 r = 3: 1 control points (D = 2h-2), 1 non-zero; non-zero components: {2,2,3}:all
+(M) genus 3 r = 3: 22 lattice points with parts >= 0, 1 <= J, D <= 2h-3: 0 violations
+(H) genus 3 r = 3, D = 4: Hurwitz component zero at 0 points, non-zero at 1
+(H) genus 3 r = 3, D = 5: Hurwitz component zero at 2 points, non-zero at 0
+(H) genus 3 r = 3, D = 6: Hurwitz component zero at 0 points, non-zero at 3

@@ -1,0 +1,33 @@
+MODE=formula G=7 tau=1 R=(11): 3 Hirota equations (all genera 0..G), 15 non-zero individual terms, 0 non-zero totals
+MODE=formula G=7 tau=1 R=(12): 3 Hirota equations (all genera 0..G), 15 non-zero individual terms, 0 non-zero totals
+MODE=formula G=7 tau=1 R=(13): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=7 tau=1 R=(14): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=7 tau=1 R=(15): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=7 tau=1 R=(16): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=7 tau=1 R=(17): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+SUMMARY MODE=formula G=7 tau=1 W=4: 21 equations, 0 failures
+MODE=formula G=8 tau=1 R=(13): 3 Hirota equations (all genera 0..G), 15 non-zero individual terms, 0 non-zero totals
+MODE=formula G=8 tau=1 R=(14): 3 Hirota equations (all genera 0..G), 15 non-zero individual terms, 0 non-zero totals
+MODE=formula G=8 tau=1 R=(15): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=8 tau=1 R=(16): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=8 tau=1 R=(17): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=8 tau=1 R=(18): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=8 tau=1 R=(19): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+SUMMARY MODE=formula G=8 tau=1 W=4: 21 equations, 0 failures
+MODE=formula G=9 tau=1 R=(15): 3 Hirota equations (all genera 0..G), 15 non-zero individual terms, 0 non-zero totals
+MODE=formula G=9 tau=1 R=(16): 3 Hirota equations (all genera 0..G), 15 non-zero individual terms, 0 non-zero totals
+MODE=formula G=9 tau=1 R=(17): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=9 tau=1 R=(18): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=9 tau=1 R=(19): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=9 tau=1 R=(20): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=9 tau=1 R=(21): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+SUMMARY MODE=formula G=9 tau=1 W=4: 21 equations, 0 failures
+MODE=formula G=10 tau=1 R=(17): 3 Hirota equations (all genera 0..G), 15 non-zero individual terms, 0 non-zero totals
+MODE=formula G=10 tau=1 R=(18): 3 Hirota equations (all genera 0..G), 15 non-zero individual terms, 0 non-zero totals
+MODE=formula G=10 tau=1 R=(19): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=10 tau=1 R=(20): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=10 tau=1 R=(21): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=10 tau=1 R=(22): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+MODE=formula G=10 tau=1 R=(23): 3 Hirota equations (all genera 0..G), 21 non-zero individual terms, 0 non-zero totals
+SUMMARY MODE=formula G=10 tau=1 W=4: 21 equations, 0 failures
+done

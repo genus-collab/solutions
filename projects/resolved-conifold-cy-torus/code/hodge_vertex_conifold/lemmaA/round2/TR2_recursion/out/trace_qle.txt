@@ -1,0 +1,8 @@
+tau=2/1 g=2: Phi_g polar part: even powers non-zero: none; odd polar powers present: 6
+tau=2/1 g=3: Phi_g polar part: even powers non-zero: none; odd polar powers present: 9
+tau=2/1 g=4: Phi_g polar part: even powers non-zero: none; odd polar powers present: 12
+tau=3/7 g=2: Phi_g polar part: even powers non-zero: none; odd polar powers present: 6
+tau=3/7 g=3: Phi_g polar part: even powers non-zero: none; odd polar powers present: 9
+tau=1/1 g=2: Phi_g polar part: even powers non-zero: none; odd polar powers present: 6
+tau=1/1 g=3: Phi_g polar part: even powers non-zero: none; odd polar powers present: 9
+tau=1/1 g=4: Phi_g polar part: even powers non-zero: none; odd polar powers present: 12

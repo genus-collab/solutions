@@ -1,0 +1,5 @@
+(A) genus 6 r = 6: 7 Lemma-A points (parts >= 2, D <= 2h-3), 0 violations
+(C) genus 6 r = 6: 5 control points (D = 2h-2), 5 non-zero; non-zero components: {2,2,2,2,2,6}:all {2,2,2,2,3,5}:all {2,2,2,2,4,4}:all {2,2,2,3,3,4}:all {2,2,3,3,3,3}:all
+(H) genus 6 r = 6, D = 10: Hurwitz component zero at 0 points, non-zero at 5
+(H) genus 6 r = 6, D = 11: Hurwitz component zero at 7 points, non-zero at 0
+(H) genus 6 r = 6, D = 12: Hurwitz component zero at 0 points, non-zero at 11

@@ -1,0 +1,6 @@
+tau=-2/7 g=2: j=1..7 compared; nonzero for j in {3,4,5,6}
+tau=-2/7 g=3: j=1..10 compared; nonzero for j in {5,6,8,9,10}
+tau=-2/7 g=4: j=1..13 compared; nonzero for j in {8,9,10,11,12,13}
+tau=-2/7 g=5: j=1..16 compared; nonzero for j in {9,10,11,12,13,15,16}
+tau=-2/7 g=6: j=1..19 compared; nonzero for j in {11,12,13,15,16,17,18,19}
+tau=-2/7: 58 comparisons, 0 mismatches (7 points with vanishing P2 normalisation skipped)

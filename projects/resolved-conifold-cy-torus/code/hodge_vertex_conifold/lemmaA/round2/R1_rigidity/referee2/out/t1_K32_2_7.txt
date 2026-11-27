@@ -1,0 +1,1 @@
+ref_t1 K=32 tau=2/7 mode=r2 strat=big p=1000000007: 43819 multisets, 64 coefficients compared, 0 mismatches; non-zero relation orders 17; 330s
