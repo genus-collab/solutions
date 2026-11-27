@@ -1,0 +1,74 @@
+% Section 6, part 1 (parts 2-10 follow by \input). Label prefix: mod. No new macros.
+\section{The model: topological recursion on the model curve}
+\label{sec:mod}
+
+Topological recursion is applied here, and only here, to the curve $x=\Wv(p)$, $y=p$ on $\bbP^1$, $v\neq 0$; nothing about the quintic enters. The Model Lemma on $\sK$ (\cref{thm:mod-MLK}) follows from the identification with topological recursion (\cref{thm:mod-tr}), a leg dictionary (\cref{prop:mod-LD,prop:mod-dii}), a lattice theorem (\cref{thm:mod-lattice}), L-regularity (\cref{thm:mod-Lreg}), the Gap Theorem (\cref{thm:mod-gap}) and Theorem~V (\cref{thm:mod-V}). The inputs (Q) are those of \cref{sec:int-inputs}, each cited where used.
+
+\subsection{Conventions; the model as topological recursion}
+\label{sec:mod-tr}
+
+\begin{conv}[Topological recursion]
+\label{conv:mod-kernel}
+Let $x,y$ be meromorphic functions on $\bbP^1$ such that $\dd x$ has only simple zeros, the \emph{branch points} $\varsigma_b$, and $\dd y\neq 0$ there; let $\iota_b$ be the local involution of $x$ near $\varsigma_b$ ($x\circ\iota_b=x$, $\iota_b\neq\mathrm{id}$). Put $\omega_{0,1}:=y\,\dd x$ and $\omega_{0,2}(p_1,p_2):=\dd p_1\,\dd p_2/(p_1-p_2)^2$. For $2h-2+n+1>0$ the correlators $\omega_{h,n+1}$ are defined by the recursion, with $J=(p_1,\dots,p_n)$,
+\begin{equation}
+\label{eq:mod-kernel}
+\begin{gathered}
+\omega_{h,n+1}(p_0,J)=\sum_b\Res_{q\to\varsigma_b}K_b(p_0,q)\Big[\omega_{h-1,n+2}(q,\iota_bq,J)+{\sum}'\,\omega_{h_1,|I_1|+1}(q,I_1)\,\omega_{h_2,|I_2|+1}(\iota_bq,I_2)\Big],\\
+K_b(p_0,q):=\frac{1}{2}\,\frac{\int_{\iota_bq}^{q}\omega_{0,2}(p_0,\cdot)}{\big(y(q)-y(\iota_bq)\big)\,\dd x(q)},
+\end{gathered}
+\end{equation}
+where ${\sum}'$ runs over $h_1+h_2=h$ and $I_1\sqcup I_2=J$ with the two terms containing $\omega_{0,1}$ omitted. Here $q$ is a point of the curve. For $h\geq 2$ the free energy is defined by $(2-2h)\FTR_h:=\sum_b\Res_{\varsigma_b}\Phi_{y\dd x}\,\omega_{h,1}$, where $\dd\Phi_{y\dd x}=y\,\dd x$. This is the convention of \cite[(2-26)--(2-29)]{Dunin-Barkowski:2015caa} and of \cite[(2.1)]{Hock25}. The kernel printed in \cite[(4-3), (4-9)]{Eynard:2007kz} equals the kernel of \cite[(1.1)]{ABDKS25} with $\omega^{(0)}_{1,0}=-y\,\dd x$, and both are $-K_b$. Since $\omega_{h,n}$ is built with $2h-2+n$ kernels, the correlators $W^{(h)}_n$ of \cite{Eynard:2007kz} and $\omega^{(h)}_{n,0}$ of \cite{ABDKS25} are
+$\omega_{h,n}=(-1)^nW^{(h)}_n=(-1)^n\omega^{(h)}_{n,0}$ and $\FTR_h=-F^{(h)}$, with $F^{(h)}$ of \cite[Def.~4.3 (4-10)]{Eynard:2007kz}; in particular our $\omega_{0,3}$ is the negative of \cite[Thm.~4.1 (4-20)]{Eynard:2007kz}. The same dictionary is recorded in \cref{sec:sgn-tr} (\cref{tab:sgn-tr}).
+\end{conv}
+
+By \cite[Thm.~4.2, Thm.~4.6]{Eynard:2007kz}, translated by the dictionary above, every $\omega_{h,n}$ with $2h-2+n>0$ is a symmetric meromorphic multidifferential whose poles, in each variable, lie at the branch points only; in particular it has no poles on the diagonals.
+
+\begin{defn}[The model curve]
+\label{def:mod-curve}
+Let $v\in\bbC$, $v\neq 0$, fix a fifth root $\varsigma$ of $v$, and let $x:=\Wv(p)=p^4/4+v/p$ and $y:=p$ on $\bbP^1$ with the coordinate $p$. Then $\dd x=(p^5-v)\,\dd p/p^2$; the branch points are $\varsigma_b:=\zeta^{-b}\varsigma$, $b\in\bbZ/5$; $x''(\varsigma_b)=5\varsigma_b^2\neq 0$; the critical values $x(\varsigma_b)=\frac54\zeta^b\varsigma^4$ are pairwise distinct; $\dd y=\dd p\neq 0$; and $p=0$, $p=\infty$ are the poles of $x$ and of $y\,\dd x$. The five points of a fibre $x^{-1}(X)$ are the roots of $T^5-4XT+4v$. The weights are $p:1$, $v:5$, $x:4$, $\bar p:=v/p:4$, $\log p:0$. The correlators $\omega_{h,n}$ and $\FTR_h$ of this curve are those of \cref{conv:mod-kernel}; their homogeneity in $v$ is \cref{lem:mod-scale}~(ii).
+\end{defn}
+
+\begin{defn}[Pairings with legs]
+\label{def:mod-pair}
+The \emph{leg class} is $\cL:=\bbQ[v][p]+\bbQ(v)[x]$. For $2h-2+n>0$ and legs $\phi_1,\dots,\phi_n\in\cL$ put
+\[
+\langle\phi_1\cdots\phi_n\rangle^{\mathrm{TR}}_h:=\sum_{b_1,\dots,b_n}\Res_{p_1=\varsigma_{b_1}}\cdots\Res_{p_n=\varsigma_{b_n}}\prod_{l=1}^n\phi_l(p_l)\,\omega_{h,n}(p_1,\dots,p_n),
+\]
+the \emph{residue pairing}; for one slot we write $\langle\phi,w\rangle:=\sum_b\Res_{\varsigma_b}\phi\,w$. For legs in $\bbQ[v][p]$ the residue pairing equals the pairing $(2\pi\ri)^{-1}\oint_{|p|=R}$ on a circle with $R>|\varsigma|$, since such a leg is holomorphic at $p=0$, where $\omega_{h,n}$ is holomorphic too. Let $\mathfrak r$ be a ray from $0$ to $\infty$ avoiding the branch points. The \emph{log leg} $-\log p$ is paired by
+\[
+\langle\cdots,-\log p,\cdots\rangle^{\mathrm{TR}}_h:=\int_{p'\in\mathfrak r}\omega_{h,n}(\dots,p',\dots),
+\]
+and several log legs by iterated integrals along rays; in a mixed pairing the slots with legs in $\cL$ are paired by residues and the other slots along rays. These integrals converge and do not depend on the rays: in each variable $\omega_{h,n}$ is holomorphic off the branch points (the paragraph after \cref{conv:mod-kernel}), and its residues there vanish (\cref{lem:mod-xfun} with $f=1$, whose proof does not use pairings), and moving a ray across $\varsigma_b$ changes the integral by $2\pi\ri$ times such a residue. Moreover, if $\eta$ is a meromorphic $1$-form on $\bbP^1$ with poles only at the branch points and zero residues there, then $\eta=\dd G$ with $G$ rational and holomorphic at $0$ and $\infty$, and
+\[
+\int_{\mathfrak r}\eta=G(\infty)-G(0)=\sum_b\Res_{\varsigma_b}(-\log p)\,\eta,
+\]
+for any branch of $\log p$ near each $\varsigma_b$: indeed $\Res_{\varsigma_b}(\log p\,\dd G)=-\Res_{\varsigma_b}G\,\dd p/p$, and the residue theorem for the rational form $G\,\dd p/p$, whose other poles are $0$ and $\infty$, gives $-\sum_b\Res_{\varsigma_b}G\,\dd p/p=G(0)-G(\infty)$. So a log leg may equally be paired by residues at the branch points.
+\end{defn}
+
+\begin{defn}[Dual descendant functions]
+\label{def:mod-xi}
+Let $D_x:=\dd/\dd x=\frac{p^2}{p^5-v}\frac{\dd}{\dd p}$ acting on functions, and for $a\in\bbZ/5$
+\[
+\xi_a:=\varepsilon'_a\,v^{\alpha_a}\frac{p^{m_a}}{p^5-v},\quad (m_a,\varepsilon'_a,\alpha_a)=(4,-1,0),\ (0,1,1),\ (1,1,0),\ (2,-1,0),\ (3,-1,0)\quad(a=0,\dots,4),
+\]
+and $\xi_{a,d}:=D_x^d\xi_a$ for $d\geq 0$. (The signs $\varepsilon'_a$ are local, not the $\varepsilon_b$ of \cref{def:set-model}.) Each $\xi_{a,d}$ is rational with poles only at the branch points, holomorphic at $p=0$, and $O(p^{-1-4d})$ at $p=\infty$.
+\end{defn}
+
+\begin{defn}[Ancestor vector of a leg]
+\label{def:mod-ancvec}
+For a leg $\phi\in\cL$, or $\phi=-\log p$, or a $\bbQ[v]$-linear combination of these, put $q_\phi(z):=\sum_{a,d}\langle\phi,\dd\xi_{a,d}\rangle H^az^d$; a leg $\phi$ with $q_\phi=X$ is called a \emph{TR leg} of $X$. Here $\langle-\log p,\dd\xi_{a,d}\rangle=\xi_{a,d}(\infty)-\xi_{a,d}(0)$ by \cref{def:mod-pair}.
+\end{defn}
+
+The ancestor correlators $\langle\prod_i\psi^{d_i}H^{a_i}\rangle_h(v)$ of $\Omega^{\mathrm{mod}}_v$ are those of \cref{def:set-modcohft}, extended multilinearly to vectors $q_1,\dots,q_n\in\bbH[z]$ (\cref{conv:tra-forms}).
+
+\begin{thm}[The model as topological recursion]
+\label{thm:mod-tr}
+Let $v\neq 0$ and $2h-2+n>0$. The correlators of the model curve are
+\begin{equation}
+\label{eq:mod-tr}
+\omega_{h,n}(p_1,\dots,p_n)=(-5)^{h-1}\sum_{a_1,\dots,a_n}\sum_{d_1,\dots,d_n\geq 0}\Big\langle\prod_{i=1}^n\psi^{d_i}H^{a_i}\Big\rangle_h(v)\,\prod_{i=1}^n\dd\xi_{a_i,d_i}(p_i),
+\end{equation}
+a finite sum, the brackets being the ancestor correlators of $\Omega^{\mathrm{mod}}_v$. Equivalently, for legs $\phi_1,\dots,\phi_n$ as in \cref{def:mod-ancvec}, $\langle q_{\phi_1}\cdots q_{\phi_n}\rangle_h=(-5)^{1-h}\langle\phi_1\cdots\phi_n\rangle^{\mathrm{TR}}_h$.
+\end{thm}
+
+\input{sections/s06_model_2}

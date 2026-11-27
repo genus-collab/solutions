@@ -1,0 +1,99 @@
+% Section 9, part 3 of 4: Theorem Gamma, the hatted series, the value of D. Continued in part 4.
+
+\subsection{Theorem Gamma and the value of \texorpdfstring{$\Dn$}{D}}
+\label{sec:gam-thm}
+
+Recall $h=h_{\bw_0}$ from \eqref{eq:set-hw}, with $\bw_0=\{1-\zeta^j\}_{j=1,\dots,4}\cup\{-5\}$, and $h_n=\coef{z^n}h$. Put
+\[
+\mathsf T_k:=5^{1-2k}+\sum_{j=1}^4(\zeta^j-1)^{1-2k}\qquad(k\geq 1).
+\]
+Since $1-2k$ is odd, $\mathsf T_k=-\sum_{a\in\bw_0}a^{1-2k}$, and therefore $h(z)=\exp\bigl(\sum_{k\geq 1}\bk_k\mathsf T_kz^{2k-1}\bigr)$.
+
+\begin{thm}[Theorem Gamma]
+\label{thm:gam-main}
+Let $c(z;L)$ be the saddle series of \cref{def:gam-c}.
+\begin{enumerate}
+\item Every $c_n$ lies in $\AL$.
+\item No $c_n$ has a pole at $L=1$, that is at $q=0$, and
+\begin{equation}
+\tag{$\Gamma$}
+\label{eq:gam-Gamma}
+c(z;1)=h(z),\qquad\text{that is, }c_n(1)=h_n\ \text{for every }n\geq 0.
+\end{equation}
+\item $c_n(\zeta L)=\zeta^{-n}c_n(L)$ for every $n$. Hence no $c_n$ has a pole at a fifth root of unity, $c_n$ lies in $\bbQ[L,L^{-1}]$, every exponent of $L$ that occurs in $c_n$ is congruent to $4n$ modulo $5$, and $c(z;\zeta^i)=h_{\bw_i}(z)=h(\zeta^{-i}z)$.
+\item No $c_n$ has a pole at $L=0$, that is at $q=\infty$, and $c(z;0)=\Ginf(z)$, where
+\[
+\Ginf(z):=\exp\Bigl(\sum_{l\geq 1}(-1)^{l+1}\frac{B_{5l+1}(1/5)}{l(5l+1)}\,z^{5l}\Bigr),
+\]
+with $B_k(\theta)$ the Bernoulli polynomials; this is the formula (37) of \cite[Lemma~7.7]{GJR18} at $m=5$, $k=1$ and equivariant parameter $1$ in the notation there, proved there for their Landau--Ginzburg integral (\cref{thm:gam-ginf}). Consequently $c_n\in\bbQ[L]$ (\cref{cor:gam-poly}).
+\end{enumerate}
+\end{thm}
+
+Only (ii) is used in the proof of the main theorem; (iii) and (iv) are by-products, and (iv) identifies the free coefficients (\cref{cor:gam-free}).
+
+\begin{proof}
+(i) is \cref{prop:gam-rational}. (iv) is proved in \cref{thm:gam-ginf} and \cref{cor:gam-poly} below; for the statements of (iv) these proofs use only (i), (iii), \cref{thm:gam-lmi} and \cref{lem:fsp-dlmf5118} (the further statements of \cref{cor:gam-poly} also use \cref{thm:con-Pa}~(iv)).
+
+(ii) We apply \cref{thm:gam-lmi} with $s_*=1$, $a_*=-1$, so that $a(\sigma)=1-\sigma$, and $M_*=0$. Let $\bbD$ be a disc around $1$ that contains none of $0,\zeta,\dots,\zeta^4$, fix branches of $\log(5\sigma)$ and of $\log(\zeta^j-\sigma)$, $j=1,\dots,4$, on $\bbD$, and put
+\[
+\varphi(\sigma):=5\sigma\log(5\sigma)-5\sigma+\sum_{j=1}^4\bigl[(\zeta^j-\sigma)\log(\zeta^j-\sigma)-(\zeta^j-\sigma)\bigr],
+\]
+\[
+\cF(\sigma,z):=(5\sigma)^{1/2}\prod_{j=1}^4(\zeta^j-\sigma)^{-1/2}\exp\Bigl(\sum_{k\geq 1}\bk_kz^{2k-1}\Bigl[(5\sigma)^{1-2k}+\sum_{j=1}^4(\zeta^j-\sigma)^{1-2k}\Bigr]\Bigr),
+\]
+the phase and the amplitude of the five factors of the summand that do not degenerate at $\sigma=1$. Thus $\cF$ is $A_{\mathrm{St}}$ without its factor $(1-\sigma)^{-1/2}\exp(\sum_k\bk_kz^{2k-1}(1-\sigma)^{1-2k})$ of index $j=0$; in particular $\cF$ contains $(5\sigma)^{1/2}$. The functions $\varphi$ and $\cF_m$ are holomorphic on $\bbD$, $\cF_0(1)=5^{1/2}\prod_{j\geq 1}(\zeta^j-1)^{-1/2}\neq 0$, and after shrinking $\bbD$ the function $\cF_0$ has no zero on $\bbD$ and $-1+(\sigma-1)\varphi''(\sigma)\neq 0$ there. The term $a\log a-a=(1-\sigma)\log(1-\sigma)-(1-\sigma)$ of \cref{def:gam-lmidata} is the term $j=0$ of $\mathsf S_0$, and, as $\mathrm{Poch}_0=1$, the Stirling form of $\Gamma(0+a/z)$ contributes $a^{-1/2}\exp(\sum_k\bk_k(z/a)^{2k-1})$, the factor $j=0$ of $A_{\mathrm{St}}$. Hence $S=\mathsf S_0$ and $A=A_{\mathrm{St}}$, and $\lambda(L)=-\varphi'(L)+\log(1-L)=-5\log(5L)+\sum_{j=0}^4\log(\zeta^j-L)$ is the logarithm of \cref{def:gam-c}, for the branches chosen. Therefore $c^{\cF}(z;L)=c(z;L)$ for $L\in U_*$. By \cref{thm:gam-lmi}~(ii) every $c_n$ extends holomorphically to $L=1$; since $c_n$ is rational by (i), it has no pole at $L=1$, and its value there is that of the extension. By \eqref{eq:gam-lmi} with $\delta=0$, and since the factor $(5\sigma)^{1/2}\prod_{j\geq 1}(\zeta^j-\sigma)^{-1/2}$ of $\cF$ does not involve $z$,
+\[
+c(z;1)=\frac{\cF(1,z)}{\cF(1,0)}=\exp\Bigl(\sum_{k\geq 1}\bk_k\mathsf T_kz^{2k-1}\Bigr)=h(z).
+\]
+
+(iii) Let $p_k(L):=\sum_{j=0}^4(\zeta^j-L)^{-k}$ be the power sums of \cref{def:gam-c}. From $\mathsf S_0''(\sigma)=5/\sigma+\sum_j(\zeta^j-\sigma)^{-1}$ and the definitions of $\mathsf S_1$ and $\mathsf S_{2k}$ one finds, for $k\geq 1$ and $r\geq 0$,
+\begin{gather*}
+\coef{t^{k+1}}\bigl(\mathsf S_0(L+t)-\mathsf S_0(L)\bigr)=\frac{5(-1)^{k+1}L^{-k}+p_k(L)}{k(k+1)},\\
+\coef{t^{k}}\bigl(\mathsf S_1(L+t)-\mathsf S_1(L)\bigr)=\frac{(-1)^{k+1}L^{-k}+p_k(L)}{2k},
+\end{gather*}
+\[
+\coef{t^r}\mathsf S_{2k}(L+t)=\bk_k\binom{1-2k}{r}\Bigl(5^{1-2k}L^{1-2k-r}+(-1)^rp_{2k-1+r}(L)\Bigr).
+\]
+Since $p_k(\zeta L)=\zeta^{-k}p_k(L)$, the Taylor coefficients at $\zeta L$ are $\zeta^{-k}$, $\zeta^{-k}$ and $\zeta^{1-2k-r}$ times those at $L$. Substitute $t=\zeta t'$ (\cref{lem:fsp-cov}, a linear map with constant Jacobian). In the variable $t'$ the phase $\mathsf S_0(\zeta L+\zeta t')-\mathsf S_0(\zeta L)$ is $\zeta$ times $\mathsf S_0(L+t')-\mathsf S_0(L)$, the normalised factor $\exp(\mathsf S_1(\zeta L+\zeta t')-\mathsf S_1(\zeta L))$ equals $\exp(\mathsf S_1(L+t')-\mathsf S_1(L))$, and $z^{2k-1}\mathsf S_{2k}(\zeta L+\zeta t')=(\zeta^{-1}z)^{2k-1}\mathsf S_{2k}(L+t')$. So the normalised integrand at $\zeta L$ is that at $L$, with the phase multiplied by $\zeta$ and with $z$ replaced by $\zeta^{-1}z$ in the amplitude. \Cref{lem:fsp-homog} with the unit $\zeta$ gives $c(z;\zeta L)=c(\zeta^{-1}z;L)$, that is $c_n(\zeta L)=\zeta^{-n}c_n(L)$. Iterating, $c_n(L)=\zeta^{-in}c_n(\zeta^{-i}L)$; by (ii) the right side has no pole at $L=\zeta^i$, and its value there is $\zeta^{-in}h_n$. So $c(z;\zeta^i)=h(\zeta^{-i}z)$, which is $h_{\bw_i}(z)$ by \cref{lem:set-hrot}. By (i) the only possible poles of $c_n$ are $0$ and the fifth roots of unity; since there are none at the latter, $c_n\in\bbQ[L,L^{-1}]$. Writing $c_n=\sum_ea_eL^e$, the relation $c_n(\zeta L)=\zeta^{-n}c_n(L)$ gives $\zeta^e=\zeta^{-n}$ whenever $a_e\neq 0$, that is $e\equiv -n\equiv 4n$ modulo $5$.
+\end{proof}
+
+The hatted series $\PhiSP$ of \cref{def:con-PhiSP}, with $\PhiSP(\zh,u)=\sum_n\zh^n\,\mathrm{ph}^{\mathrm{SP}}_n(u)$, is related to $c(z;L)$ by Theorem~P(a).
+
+\begin{prop}[Flat and hatted saddle series]
+\label{prop:gam-hatflat}
+For every $n$, $c_n(L)=L^{4n}\,\mathrm{ph}^{\mathrm{SP}}_n(L^{-5})$ as rational functions of $L$. Hence $\mathrm{ph}^{\mathrm{SP}}_n(1)=c_n(1)$ for every $n$, and
+\[
+\PhiSP(\zh,1)=h(\zh).
+\]
+\end{prop}
+
+\begin{proof}
+The identity of rational functions is \cref{thm:con-Pa}~(iv), which states that every $\mathrm{ph}^{\mathrm{SP}}_n$ is a polynomial in $u$. At $L=1$ it gives $\mathrm{ph}^{\mathrm{SP}}_n(1)=c_n(1)$, and $c_n(1)=h_n$ by \cref{thm:gam-main}~(ii); so $\PhiSP(\zh,1)=\sum_n\mathrm{ph}^{\mathrm{SP}}_n(1)\zh^n=h(\zh)$. The proof of \cref{thm:con-Pa} does not use this proposition or \cref{thm:gam-main}, so there is no circularity.
+\end{proof}
+
+\begin{cor}
+\label{cor:gam-equiv}
+$\PhiSP(z,1)=h(z)$ holds if and only if the identity \eqref{eq:gam-Gamma} holds. With \cref{cor:con-A2}: $\Dn=1$ if and only if \eqref{eq:gam-Gamma} holds.
+\end{cor}
+
+\begin{proof}
+By \cref{thm:con-Pa}~(iv), which uses neither \cref{thm:gam-main} nor \eqref{eq:gam-Gamma}, every $c_n$ is a Laurent polynomial in $L$ with $c_n(1)=\mathrm{ph}^{\mathrm{SP}}_n(1)$; so $c(z;1)=\PhiSP(z,1)$, and the first equivalence follows. The second is \cref{cor:con-A2}.
+\end{proof}
+
+\begin{thm}[Theorem C: the normalisation is canonical]
+\label{thm:gam-D}
+In every conifold frame (\cref{def:set-frames}), $\Dn_0=1$ in $\bbQ\fps{z}$, and $\Dn=1$. Consequently $\Fg{g}$ holds for every $g\geq 2$.
+\end{thm}
+
+\begin{proof}
+Fix a conifold frame. By \cref{thm:con-glue}, together with \cref{thm:con-Pb}, $\Dn_0(z)=\PhiSP(z,1)/h(z)$ exactly in $\bbQ\fps{z}$; the right side does not depend on the frame (\cref{def:con-PhiSP}). By \cref{prop:gam-hatflat}, which rests on \cref{thm:gam-main}~(ii), $\PhiSP(z,1)=h(z)$. Hence $\Dn_0=1$. By \cref{cor:gau-colours}, $\Dn_i(z)=\Dn_0(\zeta^{-i}z)=1$ for every colour $i$, so $\Dn=\diag(\Dn_i)=1$. Finally $\Fg{g}$, that is $\Dn_0=1$ modulo $z^{3g-2}$ (\cref{def:gau-Fg}), holds for every $g\geq 2$.
+\end{proof}
+
+The input (QRR) enters the proof of \cref{thm:gam-D} in two places, in the form of \cref{thm:set-qrr}: through \cref{thm:con-glue}, at colour $0$, and through \cref{cor:gau-colours}, whose proof uses the colour covariance of the rows (\cref{cor:gau-rowsNN}~(iii), which rests on \cref{lem:gau-colrows}), that is (QRR) for the colours $i\neq0$. \Cref{thm:con-glue} also uses the rows of \cref{def:set-rows} and their WKB form (\cref{cor:set-cyclicPF5}), which rest on (M) and (G0). They are the rows of the $R$-matrix of the cohomological field theory of the formal quintic, which the reconstruction (T) identifies (\cref{thm:set-GT}), as in Theorem~A; the proof uses this matrix only through \cref{def:set-rows}~(b), $R(0)=1$ and (QRR). Besides these, the proof uses \cref{sec:fsp} (with \cref{lem:fsp-ift} through \cref{thm:gam-lmi}), \cref{sec:gau} and \cref{sec:con}; the connection form of \cref{sec:con-finite} is not used. The conditionality of the main theorem is stated in \cref{sec:int-inputs}.
+
+\begin{rmk}[Regularity at \texorpdfstring{$L=1$}{L = 1} is automatic]
+\label{rmk:gam-K8}
+Given \cref{thm:con-Pa}~(iv), $c_n(L)=L^{4n}\mathrm{ph}^{\mathrm{SP}}_n(L^{-5})$ is a Laurent polynomial in $L$, so the absence of a pole at $L=1$ in \cref{thm:gam-main}~(ii) is automatic, and the content of \eqref{eq:gam-Gamma} is the value. The proof by \cref{thm:gam-lmi} gives the regularity independently of \cref{thm:con-Pa}.
+\end{rmk}
+
+\input{sections/s09_gamma_4}

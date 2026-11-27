@@ -1,0 +1,87 @@
+% Section 2, part 6 of 8: conifold frames; the differential ring and the conifold expansion; tau; the canonical coordinates; the model, its rows and the T-system.
+
+\begin{defn}[Conifold frames]
+\label{def:set-frames}
+A \emph{conifold frame} is given by $(\alpha,\beta)\in\bbQ^2$: $\varpi_0\coloneqq f_0+\alpha\varpi_1+\beta f_2$ and $\tc\coloneqq\varpi_1/\varpi_0$. Then $\varpi_0=1+\alpha u+O(u^2)$ and $\tc=u+(\frac7{10}-\alpha)u^2+O(u^3)$, so $\varpi_0(0)=1$, $\tc'(0)=1$ and $\Dq\tc(0)=-1$; in the frame $(0,0)$, $\tc=u+\frac7{10}u^2+\frac{41}{75}u^3+O(u^4)$. These are \emph{the conifold frames} of the note. In them the normalisation (N0) of \cref{lem:gau-diag} holds; it uses only $\varpi_0(0)=1$, $\tc'(0)=1$, $\varpi_1=u+O(u^2)$, and $v(u)=u+O(u^2)$ (\cref{def:set-tau}).
+\end{defn}
+
+\begin{defn}[The differential ring of the periods and the conifold expansion]
+\label{def:set-confexp}
+Let
+\[
+\Nring\coloneqq\bbQ[L^{\pm1},\logq,c_0,c_1,c_2,c_3,i_0,i_1,i_2][c_0^{-1},\mathsf W^{-1}],\qquad\mathsf W\coloneqq c_0^2+c_0i_1-c_1i_0,
+\]
+a localised polynomial ring, with the derivation $\Dq$ fixed on the generators: $\Dq L\coloneqq(L^6-L)/5$, $\Dq\logq\coloneqq1$, $\Dq c_j\coloneqq c_{j+1}$ ($j\leq2$), $\Dq c_3\coloneqq(L^5-1)\bigl(2c_3+\frac75c_2+\frac25c_1+\frac{24}{625}c_0\bigr)$, which is $\PFfour c_0=0$ with $u=L^{-5}$, $\Dq i_j\coloneqq i_{j+1}$ ($j\leq1$), and $\Dq i_2\coloneqq i_3$, the element of $\Nring$ determined by the concomitant relation $\Conc(c_0,I_1)=0$, where $I_1\coloneqq c_0\logq+i_0$, $\Dq^jI_1=\logq\,c_j+jc_{j-1}+i_j$ for $j\leq3$, and $\Conc$ is the concomitant of $\PFfour$ (\cref{def:gau-conc}): the terms with $\logq$ cancel as $\Conc(c_0,c_0)=0$, and the relation is linear in $i_3$ with the coefficient $-uc_0=-L^{-5}c_0$, a unit. Put $C_0\coloneqq c_0$, $T\coloneqq I_1/C_0$ and $C_1\coloneqq\Dq T=\mathsf W/c_0^2$. The \emph{evaluation} $\ev\colon\Nring\to\bbQ\fps q[\logq]$, $c_j\mapsto\Dq^jC_0$, $i_j\mapsto\Dq^j\tilde I_1$, $\logq\mapsto\logq$, $L\mapsto L$, is a homomorphism of differential rings, with $\ev(\mathsf W)=C_0^2C_1$: it respects $\Dq c_3$ as $\PFfour C_0=0$, and $\Dq i_2$ as $\Conc(C_0,I_1)=0$; indeed $\PFfour C_0=\PFfour I_1=0$ (\cref{lem:set-periods}), so \cref{lem:gau-conc}~(i), with \cref{lem:gau-adj}, gives $\Dq\Conc(C_0,I_1)=0$, and this constant (the constants of $\Dq$ on $\bbQ\fps q[\logq]$ are $\bbQ$, proof of \cref{lem:set-periods}) vanishes: the coefficients of $\PFfour$ below the leading one are multiples of $1-u=5^5q$, so by \cref{lem:gau-conc}~(iii) the part of order $q^0$ of $\Conc(C_0,I_1)$ is $\sum_a(-1)^{a+1}f_ag_{3-a}$ for the jets $f=(1,0,0,0)$, $g=(\logq,1,0,0)$ of $C_0$, $I_1$ at order $q^0$, which is $-f_0g_3=0$.
+
+The \emph{conifold expansion} in the frame $(\alpha,\beta)$ is the ring homomorphism $\Cexp_{\alpha,\beta}\colon\Nring\to\bbQ\lser s$ with
+\[
+c_j\mapsto\Dq^j\varpi_0,\qquad i_j\mapsto\Dq^j\varpi_1-j\,\Dq^{j-1}\varpi_0+\Xi\,\Dq^j\varpi_0,\qquad\logq\mapsto\log(1-u)=-\Xi,\qquad L\mapsto s^{-1},
+\]
+where $\Xi\coloneqq-\log(1-u)=\sum_{n\geq1}u^n/n$; it is well defined because $c_0\mapsto\varpi_0$ and $\mathsf W\mapsto\varpi_0\Dq\varpi_1-\varpi_1\Dq\varpi_0=\varpi_0^2\Dq\tc$ are units ($\varpi_0(0)=1$, $\Dq\tc(0)=-1$). It maps $C_0$, $I_1$, $T$, $C_1$ to $\varpi_0$, $\varpi_1$, $\tc$, $\Dq\tc$. Replacing the primitive $-\Xi$ of $1$ by $-\Xi+k$, $k\in\bbQ$, composes $\Cexp_{\alpha,\beta}$ with the automorphism $i_j\mapsto i_j-kc_j$, $\logq\mapsto\logq+k$ of $\Nring$, which commutes with $\Dq$ and fixes $c_0$, $I_1$, $\mathsf W$ and $L$, hence $C_0$, $C_1$, $\Delta_i^{1/2}=\zeta^{4i}C_0/L$, the rows (\cref{cor:gau-rowsNN}) and the genus-$g$ sum $F_g^{\Nring}$ of \cref{def:mai-Fcf}. That $\Cexp_{\alpha,\beta}$ commutes with $\Dq$ is \cref{lem:gau-confexp}, and that the rows lie in $\Nring\otimes\bbQ(\zeta)$ is \cref{cor:gau-rowsNN}. The $\bbQ(\zeta)$-linear extension $\Nring\otimes\bbQ(\zeta)\to\bbQ(\zeta)\lser s$ is denoted by the same letter. An element of $\Nring\otimes\bbQ(\zeta)$, or a series over it, is \emph{regular at the conifold point} if its conifold expansion lies in $\bbQ\fps u$, coefficientwise. (This includes the rationality of the coefficients. A \emph{regular gauge} (\cref{def:gau-onepole}) and a \emph{regular} model correlator (\cref{lem:set-modhom}~(c)) are different notions.) The comparison with the conifold expansion of \cite{CGYZ26} is in \cref{sec:sgn-lit} (see also \cref{rmk:mai-constant}).
+\end{defn}
+
+\begin{defn}[The natural variable]
+\label{def:set-tau}
+Put
+\[
+\tau(u)\coloneqq\frac1{{}_2F_1(1,\frac45;\frac95;u)}=\Bigl(\sum_{n\geq0}\frac{4u^n}{5n+4}\Bigr)^{-1}\in1+u\bbQ\fps u,\qquad v(u)\coloneqq u\,\tau(u)^{-5/4}\in u+u^2\bbQ\fps u,
+\]
+the power being the binomial series, and $\varsigma\coloneqq v^{1/5}=s\,\tau^{-1/4}$, so that $z/\varsigma^4=\tau(u)\zh$; $\tau=1-\frac49u+O(u^2)$, and the letter $\tau$ denotes only this series.
+\end{defn}
+
+\begin{lem}[The canonical coordinates at the conifold point]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-canon}
+In $\bbQ(\zeta)\lser s$, with $\Dq=-(1-u)\,\dd/\dd u$ and $L=s^{-1}$, the solutions $y$ of $\Dq y=\zeta^iL$ are the series $y=c-\frac54\zeta^iu^{4/5}/\tau(u)$, $c\in\bbQ(\zeta)$, where $u^{4/5}=s^4$. So in the conifold chart the canonical coordinates of \cref{cor:set-cyclicPF5}~(a), which the note uses only through the equation $\Dq u_i=\zeta^iL$ and which are determined by it up to additive constants, are the series $u_i=u_i^{\mathrm c}-\frac54\zeta^iu^{4/5}/\tau(u)$, with constants $u_i^{\mathrm c}$, their values at $u=0$; and
+\[
+\tau(u)\,\zh=-\frac54\,\frac{\zeta^iz}{u_i-u_i^{\mathrm c}},\qquad u_i-u_i^{\mathrm c}=\zeta^i\bigl(u_0-u_0^{\mathrm c}\bigr).
+\]
+\end{lem}
+
+\begin{proof}
+Termwise, $\int_0^ut^{-1/5}(1-t)^{-1}\dd t=\sum_n\frac{u^{n+4/5}}{n+4/5}=\frac54u^{4/5}/\tau(u)$, so $\Dq\bigl(-\frac54\zeta^iu^{4/5}/\tau\bigr)=\zeta^iu^{-1/5}=\zeta^iL$; the constants of $\Dq$ on $\bbQ(\zeta)\lser s$ are $\bbQ(\zeta)$, since $\Dq f=0$ means $\dd f/\dd s=0$. With $\Dq u_i=\zeta^iL$ (\cref{cor:set-cyclicPF5}~(a)) and $\zh=z/u^{4/5}$ the rest follows.
+\end{proof}
+
+The constants $u_i^{\mathrm c}$ play no role: the exponentials $\re^{u_i/z}$ are stripped from the formal solutions and never absorbed into a normalisation series (\cref{thm:gau-R0}).
+
+%-------------------------------------------------------------------------------
+\subsection{The model}
+\label{sec:set-model}
+
+\begin{defn}[The model]
+\label{def:set-model}
+The \emph{model} is the Landau--Ginzburg potential $\Wv(p)\coloneqq p^4/4+v/p$, with the parameter $v$ and the primitive form $\dd p$. Its formal integrals $I_m(v,z)\coloneqq\int p^m\re^{-\Wv(p)/z}\dd p$ ($m\in\bbZ$) are symbols subject to the two relations
+\[
+\text{(Mod1)}\quad z\,\partial_vI_m=-I_{m-1},\qquad\text{(Mod2)}\quad mz\,I_{m-1}-I_{m+3}+v\,I_{m-2}=0,
+\]
+which express the differentiation under the integral sign ($\partial_v\Wv=p^{-1}$) and the vanishing of the integral of $\dd(p^m\re^{-\Wv/z})=\bigl(mp^{m-1}-(p^{m+3}-vp^{m-2})/z\bigr)\re^{-\Wv/z}\dd p$; they are realised by residues at $p=0$ (\cref{def:gau-van}) and by the formal stationary phase at a critical point (\cref{lem:con-S2}). The charges and the signs are $\nu\coloneqq(0,-1,3,2,1)$ and $\varepsilon\coloneqq(1,-1,-1,1,1)$, with indices in $\bbZ/5$; thus $\nu_a\equiv-a\bmod5$ and $\nu_a+\nu_{3-a}=2$. The \emph{rows} of the model are $Y_b\coloneqq\varepsilon_bI_{\nu_b}$, i.e.\ $Y=(I_0,-I_{-1},-I_3,I_2,I_1)$, and the dictionary of classes is $H^b\leftrightarrow\varepsilon_b\,p^{\nu_b}\dd p$. Under $p\mapsto kp$, $v\mapsto k^5v$, $z\mapsto k^4z$ the form $p^m\re^{-\Wv(p)/z}\dd p$ is multiplied by $k^{m+1}$. The critical points of $\Wv$ are the $p$ with $p^5=v$, with the critical values $\frac54p^4$; colour $i$ corresponds to the critical point $p=\zeta^{-i}\varsigma$, $\varsigma^5=v$, where $\re^{-\Wv/z}=\re^{U_i/z}$ with $U_i\coloneqq-\frac54\zeta^i\varsigma^4$. Other normalisations of the model are compared in \cref{sec:sgn}.
+\end{defn}
+
+\begin{prop}[The model system and the T-system]\genusstatus{AI-proposed, unchecked}
+\label{prop:set-modrows}
+\begin{itemize}
+\item[(a)] If the symbols $I_m$ satisfy (Mod1) and (Mod2), the rows satisfy the \emph{model system}
+\[
+z\,\partial_vY_b=b^{\mathrm m}_b\,Y_{b+1}\quad(b\in\bbZ/5),\qquad b^{\mathrm m}=(b^{\mathrm m}_0,\dots,b^{\mathrm m}_4)\coloneqq\Bigl(1,-\frac1v,1,-1,-1\Bigr).
+\]
+\item[(b)] Fix a colour $i$, let $\varsigma$ be a formal fifth root of $v$, with $\partial_v\varsigma=1/(5\varsigma^4)$, and put $t\coloneqq z/\varsigma^4$; then $\partial_vU_i=-\zeta^i\varsigma^{-1}$ and $\partial_vt=-\frac45t/v$. A \emph{WKB column of colour $i$} is a column $\re^{U_i/z}y$ with $y\in\bbQ(\zeta)[\varsigma^{\pm1}]\fps z^5$, $\re^{U_i/z}$ being a formal exponential with $\partial_v\re^{U_i/z}=(\partial_vU_i/z)\re^{U_i/z}$; it is \emph{homogeneous} if $y_b=\varsigma^{\nu_b-1}F_b(t)$ with $F_b\in\bbQ(\zeta)\fps t$. A homogeneous WKB column solves the model system if and only if
+\begin{gather*}
+F_1=\mathcal T^{(i)}_{-1}F_0,\quad F_2=-\mathcal T^{(i)}_{-2}F_1,\quad F_3=\mathcal T^{(i)}_2F_2,\quad F_4=-\mathcal T^{(i)}_1F_3,\quad F_0=-\mathcal T^{(i)}_0F_4,\\
+\mathcal T^{(i)}_k\coloneqq-\zeta^i+\frac t5\Bigl(k-4t\frac{\dd}{\dd t}\Bigr).
+\end{gather*}
+This T-system has a unique solution $F^{(i)}$ with $F^{(i)}_0(0)=1$, and $F^{(i)}_b(0)=\varepsilon_b\zeta^{ib}$. For colour $0$ we write $\mathcal T_k\coloneqq\mathcal T^{(0)}_k$ and $\Fs_b\coloneqq F^{(0)}_b$; thus $\Fs_b(0)=\varepsilon_b$, and for instance $\Fs_0=1-\frac3{20}t+\frac9{800}t^2+O(t^3)$. Two homogeneous WKB solutions of colour $i$ differ by a constant factor; and if $Y\neq0$ is a homogeneous WKB solution of colour $i$ and $d(z)\in\bbQ(\zeta)\fps z$, then $d(z)Y$ is a WKB solution of colour $i$, which is homogeneous only if $d(z)$ is constant.
+\end{itemize}
+\end{prop}
+
+\begin{proof}
+(a) By (Mod1), $z\partial_vY_0=Y_1$, $z\partial_vY_2=I_2=Y_3$, $z\partial_vY_3=-Y_4$, $z\partial_vY_4=-Y_0$, and with (Mod2) at $m=0$, $z\partial_vY_1=I_{-2}=v^{-1}I_3=-v^{-1}Y_2$.
+
+(b) With $\partial_v\varsigma^c=\frac c5\varsigma^{c-5}$, for every $c$ and $F\in\bbQ(\zeta)\fps t$,
+\[
+z\,\partial_v\bigl[\re^{U_i/z}\varsigma^cF(t)\bigr]=\re^{U_i/z}\varsigma^{c-1}\Bigl(-\zeta^iF+\frac t5\bigl(cF-4tF'\bigr)\Bigr)=\re^{U_i/z}\varsigma^{c-1}\,\mathcal T^{(i)}_cF .
+\]
+So $z\partial_vY_b=\re^{U_i/z}\varsigma^{\nu_b-2}\mathcal T^{(i)}_{\nu_b-1}F_b$ and $b^{\mathrm m}_bY_{b+1}=b^{\mathrm m}_b\re^{U_i/z}\varsigma^{\nu_{b+1}-1}F_{b+1}$; for $b\neq1$, $\nu_{b+1}-1=\nu_b-2$, and $b^{\mathrm m}_1\varsigma^{\nu_2-1}=-\varsigma^{\nu_1-2}$, so the powers of $\varsigma$ match, and $(\nu_b-1)_b=(-1,-2,2,1,0)$ with the signs of $b^{\mathrm m}$ give the T-system.
+
+On monomials, $\mathcal T^{(i)}_kt^n=-\zeta^it^n+\frac{k-4n}5t^{n+1}$. The first four relations define $F_1,\dots,F_4$ from $F_0$, and the closing relation is $F_0=-\mathcal T^{(i)}_0\mathcal T^{(i)}_1\mathcal T^{(i)}_2\mathcal T^{(i)}_{-2}\mathcal T^{(i)}_{-1}F_0$, whose operator maps $t^n$ to $t^n+4n\zeta^{4i}t^{n+1}+O(t^{n+2})$, as $(-\zeta^i)^5=-1$ and the five indices have sum $0$. So the coefficient of $t^{n+1}$ of the closing relation is $4n\zeta^{4i}\coef{t^n}F_0$ plus a combination of the $\coef{t^m}F_0$, $m<n$; the pivot is non-zero for $n\geq1$, so the solutions form a line, determined by $F_0(0)$, and two homogeneous WKB solutions of colour $i$ differ by a constant factor. At $t=0$, $\mathcal T^{(i)}_k$ acts as $-\zeta^i$, which gives $F^{(i)}_b(0)=\varepsilon_b\zeta^{ib}$. Since $z$ is a constant for $\partial_v$, $d(z)Y$ solves the model system. Write $d(z)=\sum_kd_k\varsigma^{4k}t^k$ and $Y_0=\re^{U_i/z}\varsigma^{-1}F_0$ with $F_0(0)\neq0$; if $d_1=\dots=d_{k-1}=0$, the coefficient of $t^k$ in $d(z)F_0$ is $d_0\coef{t^k}F_0+d_k\varsigma^{4k}F_0(0)$, free of $\varsigma$ only if $d_k=0$; by induction, $d(z)Y$ is homogeneous only if $d$ is constant.
+\end{proof}
+
+\input{sections/s02_setup_7}

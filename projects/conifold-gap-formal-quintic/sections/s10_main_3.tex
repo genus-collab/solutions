@@ -1,0 +1,60 @@
+% The final section: complements to the main theorem (label prefix cmp; subsection labels mai). Continued in part 2.
+\section{Complements}
+\label{sec:cmp}
+
+This section records the consequences of $\Dn=1$ (\cref{thm:gam-D}) for the natural form and proves universality in flat form; none of it is used in the proofs of Theorem~A and Corollary~B. The conventions of \cref{sec:mai} are kept.
+
+\subsection{Consequences of \texorpdfstring{$\Dn=1$}{D=1} for the natural form}
+\label{sec:mai-nat}
+
+Let $\hat\Qr(u,\zh)=\Lambda_s\Qr(u,s^4\zh)$ be the hatted rows of \cref{def:set-hat}. Its constant term is $\hat\Qr(u,0)=\Lambda_s\Psi_{\mathrm{cf}}=\Psi(u)$ (\cref{lem:mai-Psi}~(ii)), and $\tilde R(\zh;u)\coloneqq\Psi(u)^{-1}\hat\Qr(u,\zh)=\Psi(u)^T\eta^{-1}\hat\Qr(u,\zh)=\Psi_{\mathrm{cf}}^{-1}\Cexp(\Qr)(s^4\zh)$ is the conifold expansion of the matrix $\tilde R$ of \cref{def:mai-Fcf}, in the variable $\zh$.
+
+\begin{lem}[the hatted gauge]\genusstatus{AI-proposed, unchecked}
+\label{lem:mai-Ghat}
+Write the graded canonical gauge as $\Pc=\sum_kz^k\sum_bp_{k,b}(u)E_{b+k,b}$ with $p_{k,b}\in\bbQ\fps{u}$ (\cref{thm:gau-U}, \cref{prop:gau-graded}, \cref{def:gau-can}), and put $\Ghat(u,\zh)\coloneqq\Lambda_s\Pc(u,s^4\zh)\Lambda_\varsigma^{-1}$. Then
+\[
+\Ghat_{ab}=\tau^{(1-\nu_b)/4}\sum_k\zh^k\,u^{\mu(b,k)}\,p_{k,b}(u)\,\delta_{a,b+k},\qquad\mu(b,k)\coloneqq\frac{4k+\nu_b-\nu_{b+k}}{5},
+\]
+where $\mu(b,k)$ is an integer with $\mu(b,k)\geq\max(0,(4k-4)/5)$, and $\mu(b,k)=0$ only for $k=0$ and for $(b,k)=(1,1)$, the entry $(2,1)$. Hence $\Ghat$ is a power series in $u$ whose coefficient of $u^n$ is a polynomial in $\zh$ of degree at most $\lfloor(5n+4)/4\rfloor$.
+\end{lem}
+
+\begin{proof}
+Since $\varsigma=s\tau^{-1/4}$ (\cref{def:set-tau}), the entry $(b+k,b)$ of $\Lambda_s\Pc(u,s^4\zh)\Lambda_\varsigma^{-1}$ is $p_{k,b}\zh^k\tau^{(1-\nu_b)/4}$ times $s$ to the power $(1-\nu_{b+k})+4k-(1-\nu_b)=4k+\nu_b-\nu_{b+k}$. As $\nu_a\equiv-a\bmod5$, this exponent is $\equiv5k\equiv0\bmod5$, so it is $5\mu(b,k)$ and $s^{5\mu(b,k)}=u^{\mu(b,k)}$. The $\nu_a$ take values in $\{-1,\dots,3\}$, so $\nu_b-\nu_{b+k}\geq-4$ and $\mu(b,k)\geq(4k-4)/5$; for $k=0$ the exponent is $0$, and for $k\geq1$ it is $\geq0$. For $k\geq2$ it is positive; for $k=1$ it vanishes iff $\nu_{b+1}-\nu_b=4$, which happens only for $b=1$. At a given $u^n$ only the $k$ with $(4k-4)/5\leq n$ occur.
+\end{proof}
+
+\begin{cor}[the natural form after $\Dn=1$]\genusstatus{AI-proposed, unchecked}
+\label{cor:mai-natfact}
+In every conifold frame of \cref{def:set-frames}:
+\begin{enumerate}
+\item[(a)] $\hat\Qr(u,\zh)=\Ghat(u,\zh)\,\Rhat^{\mathrm m}(\tau(u)\zh)$. In particular $\hat\Qr$ is a power series in $u$ whose coefficients are power series in $\zh$, and $\Ghat$ is a power series in $u$ whose coefficients are polynomials in $\zh$ (\cref{lem:mai-Ghat}).
+\item[(b)] $\hat\Qr(0,\zh)=\Rhat^{\mathrm m}(\zh)$: the conifold symbol of the formal quintic is that of the model. Hence $\tilde R(\zh;0)=\Mo(\zh)$ and $\Psi(0)=\Psi_0$.
+\item[(c)] $\tilde R(\zh;u)=G(u,\zh)\,\Mo(\tau(u)\zh)$, with $\Mo$ on the right, where
+\[
+G\coloneqq\Psi(u)^{-1}\,\Ghat\,\Psi_0=\Psi_0^{-1}\,\Ghat(u,0)^{-1}\Ghat(u,\zh)\,\Psi_0 .
+\]
+Moreover $G(u,0)=G(0,\zh)=1$, the coefficient of every $u^n$ in $G$ is a polynomial in $\zh$, and $G(-\zh)^TG(\zh)=1$. The factor $\Mo(\tau\zh)$ is the same in every conifold frame; $G$ is built from the canonical gauge of the frame and may depend on it.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+(a) By \cref{thm:gau-R0}~(iv), \cref{cor:gau-colours} and $\Dn=1$, $\Qr=\Pc\Qr^{\mathrm m}$, and $\Qr^{\mathrm m}=\Lambda_\varsigma^{-1}\Rhat^{\mathrm m}(z/\varsigma^4)$ with $z/\varsigma^4=\tau\zh$ (\cref{prop:set-modrows}, \cref{def:set-tau}, \cref{lem:set-canon}; \cref{lem:flh-inputs}~(i)). Multiplying by $\Lambda_s$ and inserting $\Lambda_\varsigma^{-1}\Lambda_\varsigma$ gives $\hat\Qr=\Ghat\,\Rhat^{\mathrm m}(\tau\zh)$. The coefficients of $\Rhat^{\mathrm m}(\tau\zh)$ lie in $\bbQ(\zeta)\fps{u}$, so the polynomiality of $\Ghat$ (\cref{lem:mai-Ghat}) makes $\hat\Qr$ a power series in $u$ with coefficients in $\bbQ(\zeta)\fps{\zh}$; in particular $\hat\Qr$ can be evaluated at $u=0$.
+
+(b) At $\zh=0$, (a) gives $\Psi(u)=\Ghat(u,0)\Psi_0$, since $\Rhat^{\mathrm m}(0)=\Psi_0$ ($\Fs_b(0)=\varepsilon_b$, \cref{prop:set-modrows}); with \cref{lem:mai-Psi}, $\Ghat(0,0)=\Psi(0)\Psi_0^{-1}=1$. By \cref{lem:mai-Ghat} the only entry of $\Ghat$ at $u^0$ off the diagonal is the entry $(2,1)$, with coefficient $\zh\,p_{1,1}(0)$, and $p_{1,1}(0)=0$ by \cref{lem:gau-R1}: column $1$ of $\Pc(0,z)$ is $(\Pc)_{11}(0,z)e_1$. So $\Ghat(0,\zh)=1$, and $\tau(0)=1$ gives $\hat\Qr(0,\zh)=\Rhat^{\mathrm m}(\zh)$. Then $\tilde R(\zh;0)=\Psi_0^{-1}\Rhat^{\mathrm m}(\zh)=\Mo(\zh)$ by \cref{def:set-M0}.
+
+(c) $\tilde R=\Psi(u)^{-1}\Ghat\,\Rhat^{\mathrm m}(\tau\zh)=[\Psi(u)^{-1}\Ghat\,\Psi_0][\Psi_0^{-1}\Rhat^{\mathrm m}(\tau\zh)]=G\,\Mo(\tau\zh)$. The second expression for $G$ follows from $\Psi(u)=\Ghat(u,0)\Psi_0$; $\Ghat(u,0)=\diag(\tau^{(1-\nu_b)/4}p_{0,b})$ is invertible over $\bbQ\fps{u}$, the $p_{0,b}$ being units (\cref{thm:gau-U}), so every $u^n$-coefficient of $G$ is a polynomial in $\zh$. $G(u,0)=1$ is clear, and $G(0,\zh)=1$ is (b). For the symplecticity, \cref{lem:flh-inputs}~(iii) with $\Dn=1$ and \cref{lem:set-M0sympl} give $\Qr(-z)^T\eta^{-1}\Qr(z)=1$, hence $\hat\Qr(-\zh)^T\eta^{-1}\hat\Qr(\zh)=1$ because $\Lambda_s\eta^{-1}\Lambda_s=\eta^{-1}$, and $\tilde R(-\zh)^T\tilde R(\zh)=1$ because $\Psi(u)^{-T}\Psi(u)^{-1}=\eta^{-1}$ (\cref{lem:mai-Psi}). Therefore $G(-\zh)^TG(\zh)=\Mo(-\tau\zh)^{-T}\Mo(\tau\zh)^{-1}=1$ by \cref{lem:set-M0sympl}. Neither $\Mo$ nor $\tau$ involves the frame.
+\end{proof}
+
+Only the symplecticity in (c) sees $\Dn$, through the even part of $\log\Dn_0$: for a scalar $\Dn=\cn(z)\in1+z^5\bbQ\fps{z^5}$ the proof gives the rest with $\Pc\cn(z)^{-1}$ in place of $\Pc$, as $z^5=u^4\zh^5$ (\cref{rmk:mai-stored}).
+
+\begin{cor}[the actual gauge is canonical]\genusstatus{AI-proposed, unchecked}
+\label{cor:mai-actual}
+Let $P^{\mathrm{act}}\coloneqq\Qr\,(\Qr^{\mathrm m})^{-1}$, the matrix series that carries the model columns at $v(u)$ to the rows of the formal quintic, both with their exponentials stripped (\cref{thm:gau-R0}). Then $P^{\mathrm{act}}=\Pc$. In particular $P^{\mathrm{act}}$ is a graded regular gauge with coefficients in $\bbQ\fps{u}$, $P^{\mathrm{act}}_{11}(0,z)=1$, and $P^{\mathrm{act}}\YC(v(u))=\YCQ$.
+\end{cor}
+
+\begin{proof}
+$\Qr^{\mathrm m}$ is invertible because $\Qr^{\mathrm m}(0)=\Psi^{\mathrm m}$ is (\cref{lem:flh-inputs}~(i)). By \cref{thm:gau-R0}~(iv) with \cref{cor:gau-colours}, $\Qr\Dn=\Pc\Qr^{\mathrm m}$, and $\Dn=1$ by \cref{thm:gam-D}; so $P^{\mathrm{act}}=\Pc$. The remaining assertions are \cref{def:gau-can} and \cref{thm:gau-G}.
+\end{proof}
+
+With \cref{thm:gam-D} this is Theorem~C (\cref{thm:int-D}); it is not circular, as the rows are normalised at $u=1$ and the canonical gauge at $u=0$.
+
+\input{sections/s10_main_4}

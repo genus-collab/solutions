@@ -1,0 +1,78 @@
+% Section 8 (part 7 of 8): the key lemma, the weight lemma, the residue, Theorem P(b).
+
+\begin{lem}[The key lemma]
+\label{lem:con-key}
+Expand $\Sigma:=\sum_b\pi_{\nu_b}\,s^{-\nu_b}\,\IC_{\nu_b}(v(u),z)$ into monomials $u^Ez^\beta$, writing $\zh=s^{-4}z$ in $\pi_m$,
+\[
+\IC_m(v,z)=\sum_{i'\geq0}\frac{(-1/(4z))^{i'}}{i'!}\,\frac{(-v/z)^e}{e!},\qquad e:=m+4i'+1\quad(\text{terms with }e\geq0),
+\]
+and $v^e=u^eV^e$ (\cref{def:gau-van,def:set-tau}). A monomial $u^i\zh^j$ of $\pi_m$, the $i'$-th term of $\IC_m$ and a monomial $u^l$ of $V^e$ contribute to $u^Ez^\beta$ with $\beta=j-5i'-m-1$ and $E=i+l-(4\beta-1)/5$. Hence only $\beta\equiv4\bmod5$ occurs, and the coefficient of $u^Ez^\beta$ receives contributions only from the $u^i$-coefficients of the $\pi_m$ with $i\leq E+(4\beta-1)/5$, through finitely many terms; $\Sigma$ is a well-defined formal sum of monomials $u^Ez^\beta$.
+\end{lem}
+
+\begin{proof}
+The $z$-exponent is $j-i'-e=j-5i'-m-1$, and $j\equiv m\bmod5$ by \cref{lem:con-red}, so $\beta\equiv-1$. The $u$-exponent is $i-\frac{4j}5-\frac m5+e+l$; substituting $j=\beta+5i'+m+1$ and $e=m+4i'+1$ gives $E=i+l-(4\beta-1)/5$. So $i=E+(4\beta-1)/5-l\leq E+(4\beta-1)/5$; for fixed $(E,\beta)$ and $i$ the exponent $l$ is fixed, $\pi_m$ is a polynomial in $\zh$ at the order $u^i$, so finitely many $j$ occur, and then $i'$ is fixed.
+\end{proof}
+
+Finite fibres give a formal sum. That $\Sigma$ lies in $\bbQ\lser{z}\fps{u}$ follows from \cref{prop:con-res} below, which identifies it coefficientwise with $\cV\in z^{-1}\bbQ[z^{-1}]\fps{u}$, or directly from the following lemma.
+
+\begin{lem}[The weight lemma]
+\label{lem:con-weight}
+With the weight $\omega(u^NY^n\zh^j):=5N-n-4j$, every monomial $u^i\zh^jY^m$ of $\pi_mY^m$ has $\omega\geq0$; hence $E\geq0$ in \cref{lem:con-key}, and $\Sigma\in\bbQ\lser{z}\fps{u}$.
+\end{lem}
+
+\begin{proof}
+A monomial $x^az^b$ of $\fa$ becomes $u^{(a+4b)/5}X^a\zh^b$, of weight $0$. The uniformising map and its inverse are $X(1+\sum c\,u^kX^{5d})$ and $Y(1+\sum c'\,u^kY^{5d})$ with $d\leq k$ (\cref{lem:con-cfu}), so they do not lower the weight, and every monomial of $\fa_Y$ has weight at least $0$. The step $Y^n\mapsto(n-3)\zh Y^{n-4}$ of the reduction keeps the weight, the step $Y^n\mapsto V_lu^lY^{n-5}$ raises it by $5(l+1)$. Hence $5i-m-4j\geq0$, and $E=(5i-4j-m)/5+e+l\geq0$; for fixed $E$, $\beta\geq(1-5E)/4$.
+\end{proof}
+
+\begin{prop}[The residue]
+\label{prop:con-res}
+Work in a conifold frame, and let $P$ be a graded regular gauge with $\Phi_P=\PhiSP$ (\cref{lem:con-id}). Then
+\[
+\cV=\varpi_0\,\bigl(P\,\YC(v(u),z)\bigr)_0\qquad\text{in }\bbQ\lser{z}\fps{u}.
+\]
+\end{prop}
+
+\begin{proof}
+By \cref{lem:con-relab}, $\cV=s\hat\cV$ coefficientwise. By \cref{lem:fsp-res} the residue on $\cR_{\mathrm{res}}\fps{u}$ is invariant under the uniformising map, termwise in $u$, and vanishes on exact forms; with \cref{lem:con-red},
+\[
+\hat\cV=\Res_Y\bigl[\re^{-W_V/\zh}\fa_Y\,\dd Y\bigr]=\sum_{m=-1}^3\pi_m\,\Res_Y\bigl[Y^m\re^{-W_V/\zh}\,\dd Y\bigr],
+\]
+the products being formed in the hatted variables, with finite fibres, because $\pi_m$ is a polynomial in $\zh$ at each $u$-order. The model residues are, term by term,
+\[
+\Res_{Y=0}\bigl[Y^m\re^{-W_V/\zh}\,\dd Y\bigr]=\sum_{i'\geq0}\frac{(-1/(4\zh))^{i'}}{i'!}\,\frac{(-V/\zh)^e}{e!}=s^{-(m+1)}\IC_m(v(u),z),\qquad e=m+4i'+1:
+\]
+the substitution $p=sY$, with $v=uV$ and $z=s^4\zh$, turns $\Wv(p)/z$ into $W_V(Y)/\zh$, and expanding $V^e$ in $u$ is a relabelling of the kind treated in \cref{lem:con-relab}. The exponent map $\iota$ of \cref{lem:con-relab} is additive, so the image of a product with finite fibres is the product of the images. Hence $\cV=s\sum_m\pi_m\,s^{-(m+1)}\IC_m=\Sigma$, the formal sum of \cref{lem:con-key}, coefficient by coefficient. By \cref{lem:con-id}, $\pi_{\nu_b}=\varepsilon_b\varpi_0G_b=\varepsilon_b\varpi_0s^{\nu_b}P_{0b}$, and $\YC_b=\varepsilon_b\IC_{\nu_b}$ (\cref{def:gau-van}); the signs cancel, $\varepsilon_b^2=1$, and so do the powers of $s$, $s\cdot s^{-(\nu_b+1)}\cdot s^{\nu_b}=1$; so $\Sigma=\varpi_0\sum_bP_{0b}\YC_b=\varpi_0(P\YC)_0$. No power of $\tau$ survives: the residue side carries none, and $G_b$ is defined without it. Since $\cV\in z^{-1}\bbQ[z^{-1}]\fps{u}$ (\cref{def:con-PhiSP}), the identity holds in $\bbQ\lser{z}\fps{u}$ (also by \cref{lem:con-weight}).
+\end{proof}
+
+\begin{thm}[Theorem P(b)]
+\label{thm:con-Pb}
+In every conifold frame of \cref{def:set-frames}, $\PhiSP=\Phican$ in $\bbQ\fps{u}\fps{\zh}$.
+\end{thm}
+
+The proof uses: Theorem~U (\cref{thm:gau-U}) for the pair of systems of \cref{prop:gau-quintic,prop:gau-equalprod}, whose hypotheses hold in the conifold frames; the gauge identity \cref{thm:gau-G}, with \cref{lem:gau-uniq,lem:gau-R1,lem:gau-vanmod,lem:gau-vanq}; \cref{cor:gau-cycsys}; the uniqueness half of \cref{prop:set-modrows}; \cref{lem:gau-poly}; \cref{thm:con-Pa}; \cref{lem:con-form,lem:con-cfu,lem:con-red,lem:con-S2,lem:con-id,lem:con-relab,lem:con-key,prop:con-res}; from \cref{sec:fsp}, \cref{lem:fsp-ibp,lem:fsp-cov,lem:fsp-cfu,lem:fsp-dq,lem:fsp-res,lem:fsp-stirfe,lem:fsp-transl,lem:fsp-homog}; the normalisations $\varpi_0(0)=1$ and $\tc'(0)=1$ of the conifold frames; and $\mathrm{ph}^{\mathrm{can}}_0=1$ (\cref{lem:gau-diag}, through \cref{thm:gau-R0}~(ii)). It uses neither (QRR), nor the finite route of \cref{sec:con-finite}, nor the degree bound \cref{prop:con-deg}, nor Theorem Gamma.
+
+\begin{proof}
+Steps 1--4 are \cref{lem:con-cfu} (the uniformising map), \cref{lem:con-red} (the reduction modulo exact forms), the invariance of both functionals under the uniformising map and their vanishing on exact forms (\cref{lem:fsp-cfu,lem:fsp-ibp,lem:fsp-res}), and the identification of \cref{lem:con-S2,lem:con-id}.
+
+\emph{Step 5 (regularity).} By \cref{thm:con-Pa}~(iii), $\PhiSP$ solves HPF; by \cref{thm:gau-R0}~(ii), which rests on \cref{cor:gau-cycsys}, so does $\Phican$; both have constant term $1$ and coefficients in $\bbQ\fps{u}$. By \cref{lem:gau-poly}, $\PhiSP=\Phican\,\mathsf s(z)$ for a series $\mathsf s\in1+z^5\bbQ\fps{z^5}$ (the letter $\mathsf s$ is local to this proof; $z^5=u^4\zh^5$). Put $P^{\mathrm{SP}}:=\mathsf s(z)\Pc$. By \cref{thm:gau-U}~(b) and \cref{prop:gau-graded} it is a graded regular gauge, and $\Phi_{P^{\mathrm{SP}}}=\mathsf s(z)\Phican=\PhiSP$. The gauge identity for the canonical gauge, $\Pc\YC(v(u),z)=\YCQ$ (\cref{thm:gau-G}), multiplied by $\mathsf s(z)$, gives $(P^{\mathrm{SP}}\YC)_0=\mathsf s(z)(\YCQ)_0$.
+
+\emph{Step 6 (the residue).} By \cref{prop:con-res} for $P=P^{\mathrm{SP}}$, $\cV=\varpi_0\,\mathsf s(z)\,(\YCQ)_0$ in $\bbQ\lser{z}\fps{u}$.
+
+\emph{Step 7 (the order $u^1$).} On the left only $k=1$ contributes to $u^1$ in \cref{def:con-PhiSP}, because $\Xi=u+O(u^2)$, and $[x^0](\re^{-\cG/z}\fa)=1$, because $\cG=O(x^4)$ and $\fa(0,z)=1$; so $[u^1]\cV=-1/z$. On the right, $[u^0](\YCQ)_0=0$, since $y^{(0)}=-e_1$ and the terms $y^{(n)}$, $n\geq1$, vanish at $u=0$; and $[u^1](\YCQ)_0=-1/z$, since by \cref{lem:gau-vanq} only $y^{(1)}_0=-\tc$ contributes at $u^1$ and $\tc=u+O(u^2)$. With $\varpi_0(0)=1$ the right side has $u^1$-coefficient $-\mathsf s(z)/z$. Hence $\mathsf s=1$, and $\PhiSP=\Phican$.
+\end{proof}
+
+\begin{cor}[Frame independence]
+\label{cor:con-frame}
+$\Phican$ does not depend on the conifold frame.
+\end{cor}
+
+\begin{proof}
+$\PhiSP$ is defined without reference to a frame (\cref{def:con-PhiSP}), and $\Phican=\PhiSP$ in every conifold frame by \cref{thm:con-Pb}.
+\end{proof}
+
+\begin{rmk}[The number $7/10$ from the residue]
+\label{rmk:con-710}
+At $u^2$, \cref{prop:con-res} for $P=\Pc$ reads $[u^2]\cV=[u^2]\bigl(\varpi_0(\YCQ)_0\bigr)$. On the left, the term $k=1$ of \cref{def:con-PhiSP} gives $-\frac1{2z}$, from $\Xi=u+\frac12u^2+\dots$, and the term $k=2$ gives $\frac1{2z^2}[x^1]\fa=-\frac1{5z}$, because the Stirling term $k=1$ of $\log\fa$ is $\bk_1(xz)(\frac15-5)=-\frac25xz$ with $\bk_1=\frac1{12}$. On the right only $z^{-1}$ occurs at $u^2$, with coefficient $-[u^2](\varpi_0\tc)=-[u^2]\varpi_1=-\gamma$ (\cref{lem:gau-vanq,lem:set-frobbasis}). So $-(\frac12+\frac15)/z=-\frac7{10}/z$: the Bernoulli number $B_2$ produces the coefficient $\gamma=\frac7{10}$ of the vanishing period. The remark is not used.
+\end{rmk}
+
+\input{sections/s08_connection_8}

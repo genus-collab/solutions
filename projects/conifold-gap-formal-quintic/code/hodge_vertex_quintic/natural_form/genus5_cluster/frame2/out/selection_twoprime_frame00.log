@@ -1,0 +1,8 @@
+g5_61_nat: 4555 inner graphs;  g5_89_nat: 4555 inner graphs
+(a) PIECES: 340363 in frame (0,0), 340363 in the second frame; only in (0,0): 0; only in the second frame: 0
+(b) COEFFICIENTS: 340363 common pieces, 0 with a different u-support bitmask
+    u-support histogram identical: True
+(c) ROWS: 1 non-zero merged rows in frame (0,0), 1 in the second frame; sets equal: True; rows with a different u-support: 0
+    outer graphs that receive a piece but whose row cancels to 0: 627 (0,0) / 627 second frame; sets equal: True
+written out/selection_twoprime_frame00.json
+VERDICT: the non-zero pattern is IDENTICAL across the two frames

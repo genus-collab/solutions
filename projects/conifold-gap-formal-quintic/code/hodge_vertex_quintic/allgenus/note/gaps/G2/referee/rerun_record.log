@@ -1,0 +1,8 @@
+rerun_record.log: the six G2 scripts copied to a scratch folder and re-run with the arguments of GAPS_G2_6 s.10;
+each new log compared with the stored log (carriage returns stripped).
+  g2_linalg.log: identical
+  g2_lemma2.log: identical
+  g2_gauge.log: identical
+  g2_G.log: identical
+  g2_unique.log: identical
+  g2_colours.log: identical

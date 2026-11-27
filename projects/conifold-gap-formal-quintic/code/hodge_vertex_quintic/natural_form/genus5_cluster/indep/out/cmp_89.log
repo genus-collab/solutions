@@ -1,0 +1,103 @@
+==============================================================================================================
+ig_cmp prime 89: independent nat graphs 5, independent id graphs 5
+cluster families loaded for 5 of them
+pieces compared: 18 (144 individual residues); pieces present in only one of the two codes: independent 0, cluster 0
+MISMATCHES: 0
+distinct outer graphs reached: 9, of which in the cancellation set (1 <= E <= 7, non-zero pieces): 8 of 627
+by number of edges of the inner graph:
+     E  graphs    pieces        CPU s
+     1       2         4           11
+     2       1         4            1
+     3       2        10            5
+   total     5        18           18
+point frame: 5 independent id terms compared with parts/g5_89_id/local.json; mismatches 0
+additivity inside the independent code (Sum_q nat pieces == own id term): 5 graphs checked, 0 failures
+colour-space brute force inside the independent code: 5 graphs, all equal: True
+VERDICT prime 89: ALL EQUAL
+==============================================================================================================
+ig_cmp prime 89: independent nat graphs 2, independent id graphs 0
+cluster families loaded for 2 of them
+pieces compared: 30 (240 individual residues); pieces present in only one of the two codes: independent 0, cluster 0
+MISMATCHES: 0
+distinct outer graphs reached: 26, of which in the cancellation set (1 <= E <= 7, non-zero pieces): 25 of 627
+by number of edges of the inner graph:
+     E  graphs    pieces        CPU s
+     4       1         5          582
+     6       1        25           56
+   total     2        30          638
+VERDICT prime 89: ALL EQUAL
+==============================================================================================================
+ig_cmp prime 89: independent nat graphs 985, independent id graphs 0
+cluster families loaded for 985 of them
+pieces compared: 57968 (463744 individual residues); pieces present in only one of the two codes: independent 0, cluster 0
+MISMATCHES: 0
+distinct outer graphs reached: 628, of which in the cancellation set (1 <= E <= 7, non-zero pieces): 627 of 627
+by number of edges of the inner graph:
+     E  graphs    pieces        CPU s
+     0       1         1            3
+     1       3         6            5
+     2      11        39            7
+     3      34       209           42
+     4     100      1013         1033
+     5     239      3959        15456
+     6     153      4486          794
+     7     113      5103          893
+     8      88      6127         1182
+     9      79      7693         5593
+    10      54      7181         1257
+    11      39      7815          502
+    12      71     14336         3587
+   total   985     57968        30355
+VERDICT prime 89: ALL EQUAL
+==============================================================================================================
+ig_cmp prime 89: independent nat graphs 1473, independent id graphs 1010
+cluster families loaded for 1473 of them
+pieces compared: 93523 (748184 individual residues); pieces present in only one of the two codes: independent 0, cluster 0
+MISMATCHES: 0
+distinct outer graphs reached: 628, of which in the cancellation set (1 <= E <= 7, non-zero pieces): 627 of 627
+by number of edges of the inner graph:
+     E  graphs    pieces        CPU s
+     0       1         1            3
+     1       3         6            5
+     2      11        39            7
+     3      34       209           42
+     4     100      1013         1033
+     5     239      3959        15456
+     6     283      8113         1895
+     7     213      9785         1903
+     8     185     12754         2350
+     9     145     14040         7057
+    10     115     15649         2526
+    11      73     13619         1464
+    12      71     14336         3587
+   total  1473     93523        37328
+point frame: 1010 independent id terms compared with parts/g5_89_id/local.json; mismatches 0
+additivity inside the independent code (Sum_q nat pieces == own id term): 1010 graphs checked, 0 failures
+VERDICT prime 89: ALL EQUAL
+wrote G:\My Drive\Projects\Old\refGW\hodge_vertex_quintic\natural_form\genus5_cluster\indep\out\cmp_89.json
+==============================================================================================================
+ig_cmp prime 89: independent nat graphs 1474, independent id graphs 1011
+cluster families loaded for 1474 of them
+pieces compared: 93551 (748408 individual residues); pieces present in only one of the two codes: independent 0, cluster 0
+MISMATCHES: 0
+distinct outer graphs reached: 628, of which in the cancellation set (1 <= E <= 7, non-zero pieces): 627 of 627
+by number of edges of the inner graph:
+     E  graphs    pieces        CPU s
+     0       1         1            3
+     1       3         6            5
+     2      11        39            7
+     3      34       209           42
+     4     100      1013         1033
+     5     239      3959        15456
+     6     283      8113         1895
+     7     213      9785         1903
+     8     185     12754         2350
+     9     146     14068         7220
+    10     115     15649         2526
+    11      73     13619         1464
+    12      71     14336         3587
+   total  1474     93551        37491
+point frame: 1011 independent id terms compared with parts/g5_89_id/local.json; mismatches 0
+additivity inside the independent code (Sum_q nat pieces == own id term): 1011 graphs checked, 0 failures
+VERDICT prime 89: ALL EQUAL
+wrote G:\My Drive\Projects\Old\refGW\hodge_vertex_quintic\natural_form\genus5_cluster\indep\out\cmp_89.json

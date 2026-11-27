@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------------------------------------
+genus3_cubican: circulant class at O(u^3), p = 2^61-1
+PASS the two-edge quadrics are homogeneous in the 15 circulant coordinates of Delta
+PASS the genus-2 rows involve the orders 1..3 only
+PASS every cubic monomial has weight Sum (k - 1) <= 3
+PASS the cubics are affine-linear in z = (c3, c4) (no monomial with two variables of order >= 3)
+PASS every z-coefficient monomial contains a c1 variable (so the z-coefficients vanish at c1 = 0)
+   graph  4 (gv=(0,), ed=[(0, 0), (0, 0), (0, 0)]):  32 monomials; divisible by the variables []
+   graph  9 (gv=(0, 1), ed=[(0, 1), (0, 1), (0, 1)]):  49 monomials; divisible by the variables []
+   graph 10 (gv=(0, 1), ed=[(0, 0), (0, 1), (0, 1)]):  51 monomials; divisible by the variables []
+   graph 11 (gv=(0, 1), ed=[(0, 0), (1, 1), (0, 1)]):  28 monomials; divisible by the variables ['c1_0']
+   graph 12 (gv=(0, 1), ed=[(0, 0), (0, 0), (0, 1)]):  45 monomials; divisible by the variables []
+   graph 18 (gv=(0, 1, 1), ed=[(0, 1), (0, 2), (0, 2)]):  46 monomials; divisible by the variables []
+   graph 19 (gv=(0, 1, 1), ed=[(0, 0), (0, 2), (1, 2)]):  34 monomials; divisible by the variables ['c1_0']
+   graph 20 (gv=(0, 1, 1), ed=[(0, 0), (0, 1), (0, 2)]):  42 monomials; divisible by the variables []
+   graph 32 (gv=(0, 1, 1, 1), ed=[(0, 1), (0, 2), (0, 3)]):  20 monomials; divisible by the variables []
+PASS the genus-2 rows have rank 2 on the three c3 coordinates
+   (L2) solved for ['c3_0', 'c3_1'] in terms of c3_2 and x
+PASS A' entries are quadratic forms and b' entries cubic forms in x
+   (rank A', rank [A' | b']) at 5 random x: [(3, 4), (3, 4), (3, 4), (3, 4), (3, 4)]
+PASS at random x the system A'(x) z' = b'(x) is inconsistent (rank 3 vs 4)
+   126 maximal minors of [A' | b'] computed in 0 s: 90 non-zero, degrees [9]
+PASS minor polynomials = numerical 4 x 4 determinants at a random point (first 10 minors)
+PASS all minors vanish identically on c1 = 0
+   lower-degree consistency conditions: ["b'[graph 20] (A' row zero): degree 3", "b'[graph 32] (A' row zero): degree 3", '2x2 minor rows (4, 18), column 0: degree 5']
+PASS lower-degree conditions are homogeneous
+   degree  5: 31 rows, rank 26 of 126 monomials (codimension 100) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+   degree  6: 75 rows, rank 60 of 210 monomials (codimension 150) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+   degree  7: 155 rows, rank 118 of 330 monomials (codimension 212) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+   degree  8: 287 rows, rank 208 of 495 monomials (codimension 287) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 9: 500 rows processed, rank 344 / 715
+   degree  9: 580 rows, rank 364 of 715 monomials (codimension 351) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 10: 500 rows processed, rank 352 / 1001
+         degree 10: 1000 rows processed, rank 575 / 1001
+   degree 10: 1236 rows, rank 624 of 1001 monomials (codimension 377) in 4 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 11: 500 rows processed, rank 352 / 1365
+         degree 11: 1000 rows processed, rank 670 / 1365
+         degree 11: 1500 rows processed, rank 836 / 1365
+         degree 11: 2000 rows processed, rank 924 / 1365
+         degree 11: 2500 rows processed, rank 972 / 1365
+   degree 11: 2550 rows, rank 972 of 1365 monomials (codimension 393) in 29 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 12: 500 rows processed, rank 352 / 1820
+         degree 12: 1000 rows processed, rank 669 / 1820
+         degree 12: 1500 rows processed, rank 980 / 1820
+         degree 12: 2000 rows processed, rank 1144 / 1820
+         degree 12: 2500 rows processed, rank 1239 / 1820
+         degree 12: 3000 rows processed, rank 1290 / 1820
+         degree 12: 3500 rows processed, rank 1328 / 1820
+         degree 12: 4000 rows processed, rank 1349 / 1820
+         degree 12: 4500 rows processed, rank 1361 / 1820
+   degree 12: 4910 rows, rank 1379 of 1820 monomials (codimension 441) in 124 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 13: 500 rows processed, rank 352 / 2380
+         degree 13: 1000 rows processed, rank 669 / 2380
+         degree 13: 1500 rows processed, rank 985 / 2380
+         degree 13: 2000 rows processed, rank 1286 / 2380
+         degree 13: 2500 rows processed, rank 1490 / 2380
+         degree 13: 3000 rows processed, rank 1604 / 2380
+         degree 13: 3500 rows processed, rank 1667 / 2380
+         degree 13: 4000 rows processed, rank 1716 / 2380
+         degree 13: 4500 rows processed, rank 1748 / 2380
+         degree 13: 5000 rows processed, rank 1762 / 2380
+         degree 13: 5500 rows processed, rank 1784 / 2380
+         degree 13: 6000 rows processed, rank 1813 / 2380
+         degree 13: 6500 rows processed, rank 1834 / 2380
+         degree 13: 7000 rows processed, rank 1846 / 2380
+         degree 13: 7500 rows processed, rank 1861 / 2380
+         degree 13: 8000 rows processed, rank 1868 / 2380
+         degree 13: 8500 rows processed, rank 1887 / 2380
+   degree 13: 8797 rows, rank 1887 of 2380 monomials (codimension 493) in 352 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 14: 500 rows processed, rank 352 / 3060
+         degree 14: 1000 rows processed, rank 669 / 3060
+         degree 14: 1500 rows processed, rank 985 / 3060
+         degree 14: 2000 rows processed, rank 1286 / 3060
+         degree 14: 2500 rows processed, rank 1599 / 3060
+         degree 14: 3000 rows processed, rank 1863 / 3060
+         degree 14: 3500 rows processed, rank 2012 / 3060
+         degree 14: 4000 rows processed, rank 2118 / 3060
+         degree 14: 4500 rows processed, rank 2173 / 3060
+         degree 14: 5000 rows processed, rank 2228 / 3060

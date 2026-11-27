@@ -1,0 +1,37 @@
+dict_verify.py WMAX=160 WSMALL=60 KMAX=41 (exact over Q)
+T1 counts, w <= 160: done
+T2 monomials v^m p^j, w <= 60: 496 in L (all with j >= -m), 525 not in L (all with j < -m)
+T3 I on the monomial basis of M_w, w <= 60: 602 basis elements, all images in M
+T4 legs Phi_k^b, k <= 41, all b: in M, homogeneous
+ main w=  0 |S|= 1 rank(lambda mod v)=1/1 rank(lambda)= 1 dim K_0= 0 (formula  0) in L 0/0 in Q[p,q] 0 rank mod Q(v)[x]= 0
+ main w=  1 |S|= 1 rank(lambda mod v)=1/1 rank(lambda)= 1 dim K_0= 1 (formula  1) in L 1/1 in Q[p,q] 1 rank mod Q(v)[x]= 1
+ main w=  2 |S|= 1 rank(lambda mod v)=1/1 rank(lambda)= 1 dim K_0= 1 (formula  1) in L 1/1 in Q[p,q] 1 rank mod Q(v)[x]= 1
+ main w=  3 |S|= 1 rank(lambda mod v)=1/1 rank(lambda)= 1 dim K_0= 1 (formula  1) in L 1/1 in Q[p,q] 1 rank mod Q(v)[x]= 1
+ main w=  4 |S|= 2 rank(lambda mod v)=2/2 rank(lambda)= 2 dim K_0= 1 (formula  1) in L 1/1 in Q[p,q] 1 rank mod Q(v)[x]= 1
+ main w=  5 |S|= 2 rank(lambda mod v)=1/1 rank(lambda)= 2 dim K_0= 1 (formula  1) in L 1/1 in Q[p,q] 1 rank mod Q(v)[x]= 1
+ main w=  6 |S|= 2 rank(lambda mod v)=1/1 rank(lambda)= 2 dim K_0= 2 (formula  2) in L 2/2 in Q[p,q] 2 rank mod Q(v)[x]= 2
+ main w=  7 |S|= 2 rank(lambda mod v)=1/1 rank(lambda)= 2 dim K_0= 2 (formula  2) in L 2/2 in Q[p,q] 2 rank mod Q(v)[x]= 2
+ main w=  8 |S|= 3 rank(lambda mod v)=2/2 rank(lambda)= 3 dim K_0= 2 (formula  2) in L 2/2 in Q[p,q] 2 rank mod Q(v)[x]= 2
+ main w=  9 |S|= 3 rank(lambda mod v)=1/1 rank(lambda)= 3 dim K_0= 2 (formula  2) in L 2/2 in Q[p,q] 2 rank mod Q(v)[x]= 2
+ main w= 10 |S|= 3 rank(lambda mod v)=1/1 rank(lambda)= 3 dim K_0= 2 (formula  2) in L 2/2 in Q[p,q] 2 rank mod Q(v)[x]= 2
+ main w= 11 |S|= 3 rank(lambda mod v)=1/1 rank(lambda)= 3 dim K_0= 3 (formula  3) in L 3/3 in Q[p,q] 3 rank mod Q(v)[x]= 3
+ main w= 12 |S|= 4 rank(lambda mod v)=2/2 rank(lambda)= 4 dim K_0= 3 (formula  3) in L 3/3 in Q[p,q] 3 rank mod Q(v)[x]= 3
+ main w= 13 |S|= 4 rank(lambda mod v)=1/1 rank(lambda)= 4 dim K_0= 3 (formula  3) in L 3/3 in Q[p,q] 3 rank mod Q(v)[x]= 3
+ main w= 14 |S|= 4 rank(lambda mod v)=1/1 rank(lambda)= 4 dim K_0= 3 (formula  3) in L 3/3 in Q[p,q] 3 rank mod Q(v)[x]= 3
+ main w= 15 |S|= 4 rank(lambda mod v)=1/1 rank(lambda)= 4 dim K_0= 3 (formula  3) in L 3/3 in Q[p,q] 3 rank mod Q(v)[x]= 3
+ main w= 16 |S|= 5 rank(lambda mod v)=2/2 rank(lambda)= 5 dim K_0= 4 (formula  4) in L 4/4 in Q[p,q] 4 rank mod Q(v)[x]= 4
+ main w= 17 |S|= 5 rank(lambda mod v)=1/1 rank(lambda)= 5 dim K_0= 4 (formula  4) in L 4/4 in Q[p,q] 4 rank mod Q(v)[x]= 4
+ main w= 18 |S|= 5 rank(lambda mod v)=1/1 rank(lambda)= 5 dim K_0= 4 (formula  4) in L 4/4 in Q[p,q] 4 rank mod Q(v)[x]= 4
+ main w= 19 |S|= 5 rank(lambda mod v)=1/1 rank(lambda)= 5 dim K_0= 4 (formula  4) in L 4/4 in Q[p,q] 4 rank mod Q(v)[x]= 4
+ main w= 20 |S|= 6 rank(lambda mod v)=2/2 rank(lambda)= 6 dim K_0= 4 (formula  4) in L 4/4 in Q[p,q] 4 rank mod Q(v)[x]= 4
+ main w= 40 |S|=11 rank(lambda mod v)=2/2 rank(lambda)=11 dim K_0= 8 (formula  8) in L 8/8 in Q[p,q] 8 rank mod Q(v)[x]= 8
+ main w= 80 |S|=21 rank(lambda mod v)=2/2 rank(lambda)=21 dim K_0=16 (formula 16) in L 16/16 in Q[p,q] 16 rank mod Q(v)[x]=16
+ main w=120 |S|=31 rank(lambda mod v)=2/2 rank(lambda)=31 dim K_0=24 (formula 24) in L 24/24 in Q[p,q] 24 rank mod Q(v)[x]=24
+ main w=160 |S|=41 rank(lambda mod v)=2/2 rank(lambda)=41 dim K_0=32 (formula 32) in L 32/32 in Q[p,q] 32 rank mod Q(v)[x]=32
+T5-T7 w <= 160: 2640 K_0 basis vectors; failing weights: []
+== Controls (must FAIL)
+ C2 (Phi_0^2 := x, a function of x): first failing weights [4, 8, 9, 12, 13, 14, 16, 17] (expected: non-empty, contains 4)
+ C3 (Phi_0^2 := v^2/p^6, outside Q[p,q]): legs outside M: 13 of 13
+ C3: log-free single legs v^m Phi_k^2 failing L_test (w <= 40): 16 (expected > 0)
+ C1 = the 'not in L' half of T2 (bad monomials v^m p^j, j < -m, all rejected by the linear-algebra test)
+RESULT: ALL CHECKS PASSED

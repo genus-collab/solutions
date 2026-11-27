@@ -1,0 +1,38 @@
+% Section 6, part 10.
+\subsection{The Model Lemma on \texorpdfstring{$\sK$}{K}}
+\label{sec:mod-MLK}
+
+Recall $\ML{h}$ from \cref{def:red-ML}, with $\Fm_h$ the free energy of \cref{cor:mod-trF} for $h\geq 2$, $\Fm_1=-\frac1{12}\log v$ and $\Fm_0=-\frac52v^2\log v$ (only their derivatives of order $\geq 1$, respectively $\geq 3$, enter). Then $\Fm_h=(-5)^{1-h}\FTR_h$ for every $h\geq 0$, with $\FTR_0,\FTR_1$ as in \cref{thm:mod-V}~(ii).
+
+\begin{thm}[The Model Lemma on $\sK$]\genusstatus{AI-proposed, unchecked}
+\label{thm:mod-MLK}
+$\ML{h}$ holds for every $h\geq 0$.
+\end{thm}
+
+\begin{proof}
+Part (ii) of $\ML{h}$ is \cref{thm:mod-gap}. For part (i), let $X_i\in\sK\cap V_{w_i}$, $i=1,\dots,n$.
+
+\emph{Step 1 (the legs of $\sK$).} By \cref{cor:mod-Ksplit}, $X_i=Y_i+\Pi_0(X_i)H$ with $Y_i\in\sKo\cap V_{w_i}$ and $\Pi_0(X_i)\in\bbQ v^{w_i/5}$, a monomial with a non-negative exponent. By \cref{prop:mod-LD} ($q_{-\log p}=H$, and the TR leg of $Y_i$ is $-\Lambda(Y_i)$), $X_i=q_{\ell_i}$ for $\ell_i:=-\Lambda(Y_i)+\Pi_0(X_i)\,(-\log p)$. By \cref{thm:mod-lattice}~(b) and \cref{lem:mod-classL}~(i), $-\Lambda(Y_i)=\phi_i+f_i(x)$ with $\phi_i\in\bbQ[v][p]$ and $f_i\in\bbQ[v][x]$.
+
+\emph{Step 2 (expansion).} \Cref{thm:mod-tr,thm:mod-Lreg,thm:mod-V} are stated for a complex number $v\neq0$, and $\ML{h}$ for the variable $v$. This makes no difference: the correlator $\langle X_1\cdots X_n\rangle_h$ is a finite $\bbQ[v]$-combination of monomials $Cv^e$, $C\in\bbQ$, $e\in\bbZ$ (\cref{lem:set-modhom}), every term on the right below is the value at $v$ of an element of $\bbQ[v,v^{-1}]$, and an identity between elements of $\bbQ[v,v^{-1}]$ that holds for all complex $v\neq0$ holds identically. (The derivatives $(\Fm_h)^{(n)}$ that occur, of order $\geq1$ for $h=1$ and $\geq3$ for $h=0$, are in $\bbQ[v,v^{-1}]$.) By \cref{thm:mod-tr}, multilinearity and \cref{lem:mod-xfun}, which removes the components $f_i(x)$ in every slot,
+\[
+\langle X_1\cdots X_n\rangle_h=(-5)^{1-h}\sum_{S\subseteq\{1,\dots,n\}}\prod_{i\notin S}\Pi_0(X_i)\,\big\langle(\phi_i)_{i\in S},(-\log p)^{n-|S|}\big\rangle^{\mathrm{TR}}_h .
+\]
+Every term with $S\neq\emptyset$ lies in $\bbQ[v]$, by \cref{thm:mod-Lreg} if $S=\{1,\dots,n\}$ and by \cref{thm:mod-V}~(i) otherwise.
+
+\emph{Step 3 (the pure logarithmic term).} By \cref{thm:mod-V}~(ii) and $\Fm_h=(-5)^{1-h}\FTR_h$, the term $S=\emptyset$ is $(-5)^{1-h}\langle(-\log p)^n\rangle^{\mathrm{TR}}_h\prod_i\Pi_0(X_i)=(\Fm_h)^{(n)}\prod_i\Pi_0(X_i)$.
+\end{proof}
+
+\begin{cor}[The one-point law on $\sK$]\genusstatus{AI-proposed, unchecked}
+\label{cor:mod-onepoint}
+Let $h\geq 1$ and $X\in\sK\cap V_w$. If the $v$-exponent $e=1-2h+w/5$ of $\langle X\rangle_h$ (\cref{lem:set-modhom}) is negative, then $\langle X\rangle_h=\Pi_0(X)\,(\Fm_h)'(v)$.
+\end{cor}
+
+\begin{proof}
+By \cref{thm:mod-MLK} with $n=1$, $\langle X\rangle_h-(\Fm_h)'\Pi_0(X)\in\bbQ[v]$. By \cref{lem:set-modhom} both terms are multiples of $v^e$, $e=1-2h+w/5<0$ (as $\Pi_0(X)\in\bbQ v^{w/5}$), so the difference is $0$.
+\end{proof}
+
+\begin{rmk}[Off $\sK$]
+\label{rmk:mod-offK}
+The restriction to $\sK$ cannot be dropped: for insertions with a component along some $\psi^kH$, $k\geq 1$, the singular part of a one-point correlator is in general not $\Pi_0(X)(\Fm_h)'$; this is known only by computation (\cref{sec:evi-model}) and are not used.
+\end{rmk}

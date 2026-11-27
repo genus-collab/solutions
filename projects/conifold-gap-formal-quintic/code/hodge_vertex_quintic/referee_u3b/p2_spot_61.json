@@ -1,0 +1,262 @@
+{
+ "circ_A3_graph2": {
+  "equal": true,
+  "nonzero_orders": [
+   4,
+   5
+  ],
+  "maxdeg": 15,
+  "sec": 63
+ },
+ "circ_A3_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   4,
+   5
+  ],
+  "maxdeg": 12,
+  "sec": 2
+ },
+ "circ_A2_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   3,
+   4,
+   5
+  ],
+  "maxdeg": 8,
+  "sec": 2
+ },
+ "circ_A1_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "maxdeg": 4,
+  "sec": 2
+ },
+ "circpi_A3_graph2": {
+  "equal": true,
+  "nonzero_orders": [
+   4,
+   5
+  ],
+  "maxdeg": 15,
+  "sec": 62
+ },
+ "circpi_A3_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   4,
+   5
+  ],
+  "maxdeg": 12,
+  "sec": 2
+ },
+ "circpi_A2_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   3,
+   4,
+   5
+  ],
+  "maxdeg": 8,
+  "sec": 2
+ },
+ "circpi_A1_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "maxdeg": 4,
+  "sec": 2
+ },
+ "circb_A3_graph2": {
+  "equal": true,
+  "nonzero_orders": [
+   4,
+   5
+  ],
+  "maxdeg": 15,
+  "sec": 62
+ },
+ "circb_A3_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   4,
+   5
+  ],
+  "maxdeg": 12,
+  "sec": 2
+ },
+ "circb_A2_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   3,
+   4,
+   5
+  ],
+  "maxdeg": 8,
+  "sec": 2
+ },
+ "circb_A1_graph5": {
+  "equal": true,
+  "nonzero_orders": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "maxdeg": 4,
+  "sec": 2
+ },
+ "taut_in_sp": [
+  true,
+  true,
+  true
+ ],
+ "n1t_eq_stored_n_taut": true,
+ "taut_N2_system_solved_by_n2taut": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "taut_N2_rhs_nonzero": [
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  false
+ ],
+ "taut_N2_rank": 2,
+ "taut_P2_graph2": [
+  3,
+  4,
+  5
+ ],
+ "taut_P2_graph5": [
+  3,
+  4,
+  5
+ ],
+ "taut_N3_system_solved_by_n3taut": [
+  true,
+  true
+ ],
+ "taut_P3_graph2": [
+  4,
+  5
+ ],
+ "taut_P3_graph5": [
+  4,
+  5
+ ],
+ "n2taut_circulant": true,
+ "n3taut_circulant": true,
+ "circ_n2_minus_taut_nonzero_coords": [
+  "c3_0",
+  "c3_1",
+  "c3_2",
+  "c4_1",
+  "c4_2",
+  "c5_0",
+  "c5_1",
+  "c5_2",
+  "c6_1",
+  "c6_2"
+ ],
+ "circ_n3_minus_taut_nonzero_coords": [
+  "c1_0",
+  "c1_1",
+  "c1_2",
+  "c2_1",
+  "c2_2",
+  "c3_0",
+  "c3_1",
+  "c3_2",
+  "c4_1",
+  "c4_2",
+  "c5_1",
+  "c5_2",
+  "c6_1",
+  "c6_2"
+ ],
+ "circpi_n2_minus_taut_nonzero_coords": [
+  "c1_0",
+  "c1_1",
+  "c1_2",
+  "c2_1",
+  "c2_2",
+  "c3_0",
+  "c3_1",
+  "c3_2",
+  "c4_1",
+  "c4_2",
+  "c5_0",
+  "c5_1",
+  "c5_2",
+  "c6_1",
+  "c6_2"
+ ],
+ "circpi_n3_minus_taut_nonzero_coords": [
+  "c1_0",
+  "c1_1",
+  "c1_2",
+  "c2_1",
+  "c2_2",
+  "c3_0",
+  "c3_1",
+  "c3_2",
+  "c4_1",
+  "c4_2",
+  "c5_1",
+  "c5_2",
+  "c6_1",
+  "c6_2"
+ ],
+ "circb_n2_minus_taut_nonzero_coords": [
+  "c1_1",
+  "c1_2",
+  "c2_1",
+  "c2_2",
+  "c3_0",
+  "c3_1",
+  "c3_2",
+  "c4_1",
+  "c4_2",
+  "c5_0",
+  "c5_1",
+  "c5_2",
+  "c6_1",
+  "c6_2"
+ ],
+ "circb_n3_minus_taut_nonzero_coords": [
+  "c1_0",
+  "c1_1",
+  "c1_2",
+  "c2_1",
+  "c2_2",
+  "c3_0",
+  "c3_1",
+  "c3_2",
+  "c4_1",
+  "c4_2",
+  "c5_1",
+  "c5_2",
+  "c6_1",
+  "c6_2"
+ ],
+ "seconds": 328
+}

@@ -1,0 +1,18 @@
+==============================================================================================================
+ig_run shk_nat_89: 1 graphs requested, 6 jobs to do (0 already stored), nproc 6, deadline 1200 s, started 2026-11-13 12:22:09
+   predicted cost of the queued jobs: 0.2 CPU-h (proxy rate 5e-6 s)
+   t= 119 shard 3/6 E= 4 V=1: 96.6 s, 5 non-zero outer rows   [1/6, wall 98 s]
+   t= 119 shard 0/6 E= 4 V=1: 96.7 s, 5 non-zero outer rows   [2/6, wall 98 s]
+   t= 119 shard 1/6 E= 4 V=1: 96.8 s, 5 non-zero outer rows   [3/6, wall 98 s]
+   t= 119 shard 2/6 E= 4 V=1: 97.0 s, 5 non-zero outer rows   [4/6, wall 98 s]
+   t= 119 shard 5/6 E= 4 V=1: 97.3 s, 5 non-zero outer rows   [5/6, wall 98 s]
+   t= 119 shard 4/6 E= 4 V=1: 97.4 s, 5 non-zero outer rows   [6/6, wall 98 s]
+ig_run shk_nat_89: 6 jobs finished in 99 s wall; queue empty
+==============================================================================================================
+ig_run shk_nat_89: 1 graphs requested, 4 jobs to do (6 already stored), nproc 4, deadline 600 s, started 2026-11-13 12:24:01
+   predicted cost of the queued jobs: 0.0 CPU-h (proxy rate 5e-6 s)
+   t= 444 shard 1/4 E= 6 V=4: 9.9 s, 0 non-zero outer rows   [1/4, wall 35 s]
+   t= 444 shard 2/4 E= 6 V=4: 10.5 s, 0 non-zero outer rows   [2/4, wall 35 s]
+   t= 444 shard 3/4 E= 6 V=4: 10.9 s, 0 non-zero outer rows   [3/4, wall 36 s]
+   t= 444 shard 0/4 E= 6 V=4: 24.5 s, 25 non-zero outer rows   [4/4, wall 49 s]
+ig_run shk_nat_89: 4 jobs finished in 50 s wall; queue empty

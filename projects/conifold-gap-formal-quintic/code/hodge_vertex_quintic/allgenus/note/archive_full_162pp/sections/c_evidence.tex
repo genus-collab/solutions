@@ -1,0 +1,80 @@
+% Appendix C, part 1 of 3 (continued in parts 2 and 3); label prefix: evi. No new macros.
+\section{Evidence: finite computations}
+\label{sec:evi}
+
+Nothing in this appendix is a step of a proof: the proofs of the note are complete without it, and no proof refers to it. It records the finite computations that were made while the statements of the note were developed, as evidence that the statements hold at the orders tested, together with their ranges and their controls. The arithmetic is exact over $\bbQ$ or over $\bbQ(\zeta)$, $\zeta=\re^{2\pi\ri/5}$, or it is done modulo a prime written out as a number; a zero test modulo a prime is probabilistic. A control is a deliberately wrong input that must make a check fail; we list the controls that failed as required, since they show that the checks can detect an error (a positive control is a modified input that must leave a check intact; these are named as such). Conifold frames are labelled by $(\alpha,\beta)$ as in \cref{def:set-frames}, $\varpi_0=f_0+\alpha\varpi_1+\beta f_2$; the two frames used most are $(0,0)$ and $(1/3,-2/7)$. Besides the canonical normalisation $P_{11}(0,z)=1$ of the gauge (\cref{def:gau-can}), some computations use another normalisation, $P=\Pc(1+m_5z^5+\dots)$, defined by $p_{5n,0}(0)=0$ for $n\geq 1$ (\cref{sec:sgn-norm}); its scalars are given in \cref{sec:evi-univ}. Several independent implementations were written; where a statement was checked by more than one of them this is said. A check at one genus or one order says nothing about the next.
+
+\subsection{Calibration and genus zero}
+\label{sec:evi-calib}
+
+\emph{Calibration of the graph sum.} The graph sum of \cref{def:set-graphsum} (for the numbers $N_{1,d}$ of genus $1$, the corresponding genus-$1$ formula of the $R$-matrix action, which the note does not use), with the R-matrix normalised by (QRR), was compared with direct virtual localisation \cite{MR1666787} on the moduli spaces of maps to $\bbP^4$ at $\lambda_i=\zeta^i$. Both give $N_{2,0}=F_2(0)=-19/9600$, $N_{1,1}=-305/6$, $N_{1,2}=-535775/12$, $N_{2,1}=2129/5760$ and $N_{2,2}=203401/144$; in genus $2$ and degree one the split of the localisation contributions by the genera of the contracted components matches the graph sum graph by graph (the vertex graph contributes $-24161/5760$, the graph with two vertices of genus one $2629/576$). The graph sum predicts $N_{1,3}=-1540037125/36$, $N_{1,4}=-1082838731875/24$, $N_{2,3}=1016639975/384$ and $N_{2,4}=181712650375/48$. Localisation gives $N_{3,0}=F_3(0)=1/224000$; the genus-$3$ value of the graph sum at $q=0$ was not computed. The genus-$0$ numbers do not depend on the weights, at four choices of them. From the vertex class of \cite[(26)]{LP20} at $\lambda_i=\zeta^i$, exactly over $\bbQ(\zeta)$, one obtains again $N_{2,0}=-19/9600$ and $N_{3,0}=1/224000$, whereas the twist weight $+5$ in place of $-5$ gives $-97/28800$ and $1/81000$: this supports the sign of the twist weight in (QRR) independently of the graph sum (\cref{rmk:set-qrrsign}). The formal quintic is not the quintic threefold: the constant-map term of the latter at genus $2$ is $-5/144$.
+
+\emph{Genus zero.} The mirror theorem (M) in the form of \cref{thm:set-mirror} was compared at order $q$ with degree-one localisation on $\overline{\mathcal M}_{0,1}(\bbP^4,1)$, as rational functions of $z$, at three random rational weight vectors and at $\lambda_i=\zeta^i$; the literal reading of \cite[Cor.~11.7]{MR1408320} fails by $+600$, and two further controls fail. The coefficients $\kappa^{\mathrm{LR}}_a$ of \cref{prop:set-cyclicLR} were computed to order $q^{30}$ by two implementations (one of them keeping the formal $\logq$ explicit, with fifteen periods); they are free of $\logq$ and have the stated closed forms, and the closing relation and the operator identity relating them to $\PFfour$ hold to that order. Four controls fail: the non-equivariant series, the twist $\cO(4)$ or $\cO(6)$ in place of $\cO(5)$, a wrong $\kappa^{\mathrm{LR}}_1$, and the guess $\kappa^{\mathrm{LR}}_3=C_1/C_0$. Degree-one localisation on $\overline{\mathcal M}_{0,2}(\bbP^4,1)$ at $\lambda_i=\zeta^i$, independent of (M), gives $\langle H,H\rangle_{0,2,1}=2875=5\coef{q}\kappa^{\mathrm{LR}}_1$ and $\langle H^3,H^4\rangle_{0,2,1}=-3250=5\coef{q}\kappa^{\mathrm{LR}}_3$, while the $\bbZ/5$-grading forces $\langle H^2,H^3\rangle_{0,2,1}=\langle H^4,H^4\rangle_{0,2,1}=0$ at $\zeta$ (the first is non-zero at generic weights). The Yukawa coupling $5L^5/(C_0^2C_1^3)$ reproduces the genus-$0$ invariants of the quintic threefold in degrees at most $5$ (instanton numbers $2875$, $609250$, $317206375$, $242467530000$, $229305888887625$).
+
+\subsection{Graph sums of genus 2 to 5}
+\label{sec:evi-graphs}
+
+The outer terms $T_\Gamma$ of \cref{def:set-outer}, with $M=\Mo(\tau(u)\zh)$ truncated in $\zh$ at the order the genus needs (modulo $\zh^7$ and $u^4$ at genus $2$ and $3$, which suffices there; exactly in $u$, modulo $\zh^{3g-2}$, at genus $4$ and $5$), were computed for every leg-free stable graph of genus $2$, $3$, $4$ and $5$, modulo the primes $2^{89}-1$ and $2^{61}-1$ with rational reconstruction (some checks also modulo $2^{521}-1$), in the frames $(0,0)$ and $(1/3,-2/7)$. A term of genus $g$ is written $T_\Gamma=u^{2-2g}G_\Gamma(u)$ (\cref{lem:flh-hat}); an edge graph is regular if and only if $G_\Gamma=O(u^{2g-2})$, so only $G_\Gamma$ modulo $u^{2g-2}$ is needed. At genus $4$ and $5$ the outer sum was evaluated by splitting the edge of the R-matrix $R=R'M$ of the plain graph sum into the edge of $M$ and the edge of $R'$ conjugated by $M^{-1}$, $E_R(\psi,\psi')=E_M(\psi,\psi')+M^{-1}(\psi)E_{R'}(\psi,\psi')M^{-1}(\psi')^T$ (an identity because $M$ and, by \cref{thm:gam-D}, $R'$ are symplectic; \cref{def:set-outer}), the leaves of $R$ being unchanged: the plain sum over the graphs whose edges are marked accordingly, with Witten--Kontsevich numbers of a single colour at the vertices, was regrouped, by contracting the edges marked by $M$, into the outer graph sum. That this regrouping reproduces the outer graph sum is an argument that was checked against genuine vertex tensors only at genus $2$ and $3$. The results are in \cref{tab:evi-g2,tab:evi-g3,tab:evi-g4,tab:evi-g5}: in every genus and in both frames every edge graph is regular, and the vertex graph has the polar part $c_g\tc^{2-2g}$ and no other polar term. At genus $4$ and $5$ the tables give the totals; since the total is the sum of the vertex graph and the edge graphs, the statement on the vertex graph is there the same check as the regularity of the edge graphs, not a second one. At genus $2$ the total is $F_2^{\mathrm{cf}}=(1/1200)\tc^{-2}+0\cdot\tc^{-1}+31/30000+O(\tc)$ in the frame $(0,0)$; in the frames $(0,0)$, $(1,0)$, $(0,1)$, $(2/3,-1/7)$ the polar part is the same and the constant terms are $31/30000$, $31/30000$, $2749/120000$, $-251/120000$.
+
+\begin{table}[ht]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{l|r|r|r}
+graph of genus $2$ & plain, $\coef{\tc^{-2}}$ & plain, $\coef{\tc^{-1}}$ & natural, at $u=0$\\ \hline
+one vertex of genus $2$ & $1807/3072000$ & $-791/15360000$ & $\tfrac{1}{1200}\tc^{-2}+O(1)$\\
+genus-$1$ vertex with a loop & $-811/256000$ & $-1771/3840000$ & $479/756000$\\
+genus-$0$ vertex with two loops & $-57/64000$ & $41/12800$ & $1/2250$\\
+two genus-$1$ vertices, one edge & $843/1024000$ & $743/15360000$ & $-127/2016000$\\
+genus $0$ with a loop, edge to genus $1$ & $3/51200$ & $-41/153600$ & $0$\\
+two genus-$0$ vertices, three edges & $87/32000$ & $37/160000$ & $0$\\
+two genus-$0$ vertices with loops, an edge & $9/12800$ & $-173/64000$ & $0$\\ \hline
+sum & $1/1200$ & $0$ & \\
+\end{tabular}
+\caption{Genus $2$, per stable graph, summed over colourings, in the frame $(0,0)$, modulo both primes: the polar coefficients of the plain graph sum of \cref{def:set-graphsum} (vertices the TFT $\TFT$), and the terms $T_\Gamma$ of the natural form at $u=0$ (in the frame $(1/3,-2/7)$, modulo $2^{89}-1$, the edge graphs are regular as well). The $115$ coloured graphs give identical tables at both primes.}
+\label{tab:evi-g2}
+\end{table}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{l|p{0.68\textwidth}}
+stable graphs & $42$; with $0,1,\dots,6$ edges: $1,2,5,9,12,8,5$\\
+edge graphs & all $41$ regular: frame $(0,0)$ modulo both primes, frame $(1/3,-2/7)$ modulo $2^{89}-1$\\
+vertex graph, $(0,0)$ & $u^{-4}\bigl(\tfrac{1}{25200}-\tfrac{u}{9000}+\tfrac{407u^2}{3780000}-\tfrac{151u^3}{3780000}+\dots\bigr)=\tfrac{1}{25200}\tc^{-4}+O(1)$\\
+vertex graph, $(1/3,-2/7)$ & $u^{-4}\bigl(\tfrac{1}{25200}-\tfrac{11u}{189000}+\dots\bigr)$, with the same polar part\\
+\end{tabular}
+\caption{Genus $3$, the natural form.}
+\label{tab:evi-g3}
+\end{table}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{l|p{0.72\textwidth}}
+stable graphs & $379$; with $0,1,\dots,9$ edges: $1,3,7,21,43,75,89,81,42,17$\\
+edge graphs & all $378$ regular, in both frames, modulo both primes\\
+total, $(0,0)$ & $u^{-6}\bigl(\tfrac{1}{180000}-\tfrac{7u}{300000}+\tfrac{701u^2}{18000000}-\tfrac{1459u^3}{45000000}+\tfrac{923639u^4}{67500000000}-\tfrac{171583u^5}{67500000000}\bigr)$ $=\tfrac{1}{180000}\tc^{-6}+O(1)$\\
+total, $(1/3,-2/7)$ & $u^{-6}\bigl(\tfrac{1}{180000}-\tfrac{11u}{900000}-\tfrac{79u^2}{378000000}+\dots\bigr)$, with the same polar part\\
+\end{tabular}
+\caption{Genus $4$, the natural form; $1/180000=c_4$.}
+\label{tab:evi-g4}
+\end{table}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{l|p{0.72\textwidth}}
+stable graphs & $4555$; with $0,1,\dots,12$ edges: $1,3,11,34,100,239,492,784,1002,926,632,260,71$\\
+edge graphs & all $4554$ regular: frame $(0,0)$ modulo both primes, frame $(1/3,-2/7)$ modulo $2^{89}-1$\\
+total, $(0,0)$ & $u^{-8}\bigl(\tfrac{1}{660000}-\tfrac{7u}{825000}+\tfrac{199u^2}{9900000}-\tfrac{717u^3}{27500000}+\tfrac{449357u^4}{22500000000}-\tfrac{5593217u^5}{618750000000}$ $+\tfrac{14686042363u^6}{6496875000000000}-\tfrac{8370858511u^7}{32484375000000000}\bigr)=\tfrac{1}{660000}\tc^{-8}+O(1)$, by the Chinese remainder theorem from both primes\\
+total, $(1/3,-2/7)$ & $u^{-8}\bigl(\tfrac{1}{660000}-\tfrac{u}{225000}+\tfrac{323u^2}{207900000}+\tfrac{66841u^3}{15592500000}-\dots\bigr)$, modulo both primes: different from the first at every order $u^1,\dots,u^7$, with the same polar part\\
+\end{tabular}
+\caption{Genus $5$, the natural form; $1/660000=c_5$.}
+\label{tab:evi-g5}
+\end{table}
+
+\emph{Content.} At genus $4$, the $229$ graphs with at least six edges are regular a priori, because every outer edge and every outer leaf is $O(u)$ (\cref{rmk:mai-apriori}); of the other $149$ edge graphs, $81$ receive only contributions that vanish identically and $68$ vanish by cancellation among $6767$ non-zero contributions. At genus $5$, $2891$ graphs with at least eight edges are regular a priori, $1036$ receive no non-zero contribution and $627$ vanish by cancellation. Of the $3142$ polar coefficients at stake at genus $5$, $1655$ lie in graphs that receive contributions; of these, $517$ receive no non-zero contribution at that order and $1138$ vanish by genuine cancellation. A cancelling graph is a sum of between $31$ and $4525$ non-zero contributions (median $347$; the three one-edge graphs are sums of $3479$, $2296$ and $4525$).
+
+\emph{Controls.} With the bare symbol $\Mo(\zh)$, that is $\tau=1$, all $149$ edge graphs of genus $4$ with at most five edges are singular. With $\tau$ replaced by $\tau+u^5$, exactly the three one-edge graphs of genus $4$ fail, at order $u^5$ of $G_\Gamma$, and the vertex graph acquires a term $\tc^{-1}$. At genus $5$ the controls were computed on the graphs with at most two edges: with the bare symbol all $14$ edge graphs among them are singular and the vertex graph acquires every polar order $\tc^{-7},\dots,\tc^{-1}$; the shift $\tau+u^7$ makes exactly the three one-edge graphs singular, at order $u^7$ only, and gives the vertex graph a term $\tc^{-1}$ only. A shift of $\tau$ by $cu^k$ moves a graph with $E$ edges at valuation at least $k+E-1$, by multilinearity in the edges; on a one-edge graph the lowest-order change is $c$ times a number that does not depend on $k$, and for the three one-edge graphs of genus $5$ these numbers, measured by the two controls ($k=1$ and $k=7$), are non-zero. So the computations at genus $5$ show that, within the ansatz $M=\Mo(\vartheta\zh)$ with $\vartheta\in\bbQ\fps{u}$, $\vartheta(0)=1$, the rescaling $\vartheta=\tau$ is the only one, modulo $u^8$, for which the one-edge graphs are regular (\cref{rmk:mai-tau}).
+
+\emph{Independent implementations.} At genus $4$ a second implementation, written independently of the first, reproduced, modulo both primes in the frame $(0,0)$, all $379$ outer terms, all $379$ plain terms, every non-zero contribution and both controls (not the second frame); $26$ deliberate errors introduced into the first implementation were all detected, $23$ by the comparison with the values of genus $2$ and $3$ and the other three (in the coefficients of $u^4$ and $u^5$ of $\tau$ and in the orders $\zh\geq7$) by the checks at genus $4$. At genus $5$ an independently written implementation reproduced the contributions of $1474$ of the $4555$ graphs of the plain sum ($93551$ contributions modulo $2^{89}-1$, and $19591$ on $460$ of these graphs modulo $2^{61}-1$; no mismatch); the prime $2^{521}-1$ was used on $31$ of these graphs; and for each of the $4555$ graphs the contributions of its markings add up to its plain term, at both primes and in the second frame ($13665$ identities). The completeness of the graph list was checked by an independent induction, and the automorphism groups, the reconstruction, the Frobenius basis and $\tc$ were recomputed independently.
+
+\emph{Caveats.} At genus $5$ the arithmetic is probabilistic (rational heights up to $2^{136}$ against the product $2^{150}$ of the two primes; a failure probability of about $2^{-138}$), and the two primes test the same implementation; the regularity in the second frame rests on one prime at genus $3$ and $5$; the coefficient of $u^6$ in $\tau$ is tested by no control at any genus, nor are the orders $\zh^{10},\zh^{11},\zh^{12}$ of $\Mo$; the two controls discriminate on $14$ of the $1663$ graphs of genus $5$ that carry content; the regrouping identity is checked as stated above, and the second implementation uses the same regrouping, so that an error in it would be common to both; the graph list is shared by the implementations. Finally, the value $c_g$ and the gap of the total do not depend on $M$: the total is independent of the factorisation, and the leading coefficient (of $u^{2-2g}$) of the vertex graph equals that of the plain total for every $M$ whose symbol at $u=0$ is the model's, because the outer edges are $O(u)$. So $c_g$ and the gap of the total are not evidence for the factorisation; only the regularity of the edge graphs tests it.
+
+\input{sections/c_evidence_2}

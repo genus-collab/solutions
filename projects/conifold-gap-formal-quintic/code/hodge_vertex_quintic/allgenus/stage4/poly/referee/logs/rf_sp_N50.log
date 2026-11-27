@@ -1,0 +1,10 @@
+rf_sp: Lagrange-Buermann stationary phase, w^0..w^50, u^0..u^42, primes 2^61-1, 2^89-1
+p=2305843009213693951: (S1) [w^n] Phi^SP == ph_n^QRR (all u-coefficients) for 51/51 orders; vanishing above u^floor(4n/5): True  [38.6 s]
+   CONTROL 'nostirling' (w^0..w^10): mismatching orders [1, 2, 3, 4, 5, 6] -> fails as it should
+   CONTROL 'flipstirling' (w^0..w^10): mismatching orders [1, 2, 3, 4, 5, 6] -> fails as it should
+   (S2) model: SP(Y^c_b e^(-f/w) dY) = eps_b F_b(w), eps = (+,-,-,+,+), b = 0..4, w^0..w^50: True; control eps = +1: fails as it should
+p=618970019642690137449562111: (S1) [w^n] Phi^SP == ph_n^QRR (all u-coefficients) for 51/51 orders; vanishing above u^floor(4n/5): True  [88.5 s]
+   CONTROL 'nostirling' (w^0..w^10): mismatching orders [1, 2, 3, 4, 5, 6] -> fails as it should
+   CONTROL 'flipstirling' (w^0..w^10): mismatching orders [1, 2, 3, 4, 5, 6] -> fails as it should
+   (S2) model: SP(Y^c_b e^(-f/w) dY) = eps_b F_b(w), eps = (+,-,-,+,+), b = 0..4, w^0..w^50: True; control eps = +1: fails as it should
+RESULT rf_sp: PASS  [89.3 s]

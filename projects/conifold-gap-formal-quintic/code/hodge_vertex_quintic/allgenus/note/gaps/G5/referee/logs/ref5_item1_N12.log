@@ -1,0 +1,9 @@
+ref5_item1: N = 12, 12 random points, F_p with p = 2^61 - 1; free coefficients [z^5m] Ginf = ['4537/3937500', '-177640111151/31007812500000']
+(a) c_n(L0) = L0^(4n) ph_n(L0^-5) for n <= 12 at all points: True
+    controls: f_m shifted by 1/7 -> mismatch: True; L0^(4n-1) -> mismatch: True (both must be True)
+(b) (1.1) for g = sigma^m, m = 0..4, n <= 8, 6 points: True;  control g = q(L): (1.1) fails: True
+(c) PF5^L (L c) = 0 through z^7, 3 points: True;  control without half-density: PF5 fails: True
+
+real	0m4.287s
+user	0m0.031s
+sys	0m0.015s

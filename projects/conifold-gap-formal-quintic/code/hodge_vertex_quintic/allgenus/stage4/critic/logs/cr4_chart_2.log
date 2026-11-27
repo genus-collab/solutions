@@ -1,0 +1,16 @@
+cr4_chart: N = 2 (z^0..z^2); formal SP of the 5-variable chart integral mod p; log logs/cr4_chart_2.log
+PASS [2^61-1] L = 1 (q = 0): chart SP factorises into Stirling series = h_(w_0)(z) through z^2   True
+PASS [2^61-1] L = 2: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 2
+PASS [2^61-1] L = 3/2: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 2
+PASS [2^61-1] L = -2/3: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 2
+PASS [2^61-1] control: no Jacobian |x_0| (amplitude / X_0) fails at z^1
+PASS [2^61-1] control: measure dy/y instead of dy fails (first at z^2; z^1 is blind to it)   [2]
+     [2^61-1] done in 0.2 s
+PASS [2^89-1] L = 1 (q = 0): chart SP factorises into Stirling series = h_(w_0)(z) through z^2   True
+PASS [2^89-1] L = 2: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 2
+PASS [2^89-1] L = 3/2: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 2
+PASS [2^89-1] L = -2/3: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 2
+PASS [2^89-1] control: no Jacobian |x_0| (amplitude / X_0) fails at z^1
+PASS [2^89-1] control: measure dy/y instead of dy fails (first at z^2; z^1 is blind to it)   [2]
+     [2^89-1] done in 0.2 s
+CR4_CHART 2: ALL CHECKS PASSED   (0 s)

@@ -1,0 +1,110 @@
+% Signs and normalisations, part 2: topological recursion, legs, the tower, normalisations, stationary phase, the literature.
+
+%-------------------------------------------------------------------------------
+\subsection{Topological recursion}
+\label{sec:sgn-tr}
+
+Topological recursion is used in \cref{sec:mod} only, on the curve $x=\Wv(p)$, $y=p$, with the kernel of \cref{conv:mod-kernel}; $\iota_b$ is the local involution of $x$ at $\varsigma_b$. \Cref{tab:sgn-tr} compares it with the printed conventions of the sources quoted.
+
+\begin{table}[ht]
+\caption{Conventions of topological recursion.}
+\label{tab:sgn-tr}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.4\textwidth}>{\raggedright\arraybackslash}p{0.39\textwidth}@{}}
+\hline
+object & this note (\cref{conv:mod-kernel}) & sources \\
+\hline
+kernel & $K_b(p_0,q)=\frac12\int_{\iota_bq}^{q}\frac{\omega_{0,2}(p_0,\cdot)}{(y(q)-y(\iota_bq))\,\dd x(q)}$ near $\varsigma_b$, with $\omega_{0,1}=y\,\dd x$ and $\omega_{0,2}=\frac{\dd p_1\dd p_2}{(p_1-p_2)^2}$ & equal to the kernel of \cite[(2-26)--(2-29)]{Dunin-Barkowski:2015caa} and of \cite[(2.1)]{Hock25}; the printed kernel of \cite[(4-3), (4-9)]{Eynard:2007kz} equals that of \cite[(1.1)]{ABDKS25} with $\omega^{(0)}_{1,0}=-y\,\dd x$, and both are minus this kernel \\
+correlators & $\omega_{h,n}$ & $\omega_{h,n}=(-1)^n\omega^{\mathrm{ABDKS}}_{h,n}$; $\omega_{h,n}=(-1)^nW^{\mathrm{EO}}_{h,n}$ for $2h-2+n\geq0$ \\
+$\omega_{0,3}$ & $-\sum_b\Res_{q=\varsigma_b}\frac{\omega_{0,2}(q,p_1)\,\omega_{0,2}(q,p_2)\,\omega_{0,2}(q,p_3)}{\dd x(q)\,\dd y(q)}$ & minus \cite[Theorem~4.1, (4-20)]{Eynard:2007kz} \\
+free energies & $(2-2h)\FTR_h=\sum_b\Res_{\varsigma_b}\Phi_{y\mathrm dx}\,\omega_{h,1}$, $\dd\Phi_{y\mathrm dx}=y\,\dd x$; on the model curve $\FTR_h=\frac{B_{2h}}{2h(2h-2)}v^{2-2h}$ for $h\geq2$ (\cref{thm:mod-gap}) & $\FTR_h=-F^{\mathrm{print}}_h$, with $F^{\mathrm{print}}_h$ of \cite[(4-10)]{Eynard:2007kz} \\
+dilaton equation & $\sum_b\Res_{q=\varsigma_b}\Phi_{y\mathrm dx}(q)\,\omega_{h,n+1}(q,p_1,\dots,p_n)=(2-2h-n)\,\omega_{h,n}(p_1,\dots,p_n)$ for $2h-2+n>0$ & \cite[Theorem~4.7, (4-30)]{Eynard:2007kz}, with the factor $2h+n-2$ for $W^{\mathrm{EO}}$; the residues at the $p_i$ and the term $\delta_{g,0}\delta_{k,1}y\,\dd x$ printed there drop out in this range \\
+variation in $v$ & \cref{thm:mod-var}, at fixed $x$, along a ray $\mathfrak r$ & \cite[Theorem~5.1, (5-14)]{Eynard:2007kz} with \S5.3, (5-27)--(5-30); for $\partial_v$ at fixed $x$ the function $\Lambda$ of \cite[(5-13)]{Eynard:2007kz} (a letter of that paper) is $-1$ on the ray, with the printed signs of \cite[(5-1), (5-13)]{Eynard:2007kz} \\
+Laplace transforms & \cite[(2-31), (2-32)]{Dunin-Barkowski:2015caa} read as formal Laplace series, the finite part at $i=j$ giving the $\delta_{ij}$ of $R^{-1}=1+O(\vartheta^{-1})$ & \cref{lem:mod-laplace} \\
+sign anchors & the curve $x=-p^2/2$, $y=p$ gives the intersection numbers of $\psi$ classes; $x=p+1/p$, $y=p$ gives $\FTR_2=-\frac1{240}$ (\cref{conv:mod-kernel}) & classical; used in no proof \\
+\hline
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------------
+\subsection{Legs}
+\label{sec:sgn-legs}
+
+The dictionary of record is the leg dictionary of \cref{prop:mod-LD}, with the legs $\phi^b_k$ of \cref{def:mod-legs} and the residue pairing of \cref{def:mod-pair}: the leg of $v^m\psi^kH^b$ is $-\varrho_b^{-1}v^m\phi^b_k$, $\varrho=(-1,1,-1,-3,-2)$. In particular the unit has the leg $y=p$, acting in the string equation (used in no proof) by $+\dd/\dd x$; the dilaton shift $q=-z\,1$ has the leg $\int y\,\dd x=-\phi^0_1$; $H$ has the logarithmic leg $-\log p$, paired along a ray $\mathfrak r$; and $\se=z\,1+vH$ has the leg $-p^5/5$. For legs with a pole at $p=0$ the residue pairing and the pairing on a circle $|p|=R>|\varsigma|$ differ by the residue at $p=0$, in general non-zero.
+
+%-------------------------------------------------------------------------------
+\subsection{The vanishing tower and regularity}
+\label{sec:sgn-tower}
+
+The note uses one tower of covectors, defined from the vanishing solution $\YC$ of the model (\cref{def:tra-tower,def:gau-van}):
+\[
+\Pi_i(q):=-\coef{z^i}\bigl\langle\YC(-z),q(z)\bigr\rangle,\qquad i\geq0;
+\]
+$\Pi_0$ is the vanishing covector, and $\Pi_i(z^kH^b)=\Pi_0(z^{k-i}H^b)$, which is zero for $k<i$. On insertions, $\Pi_0(z^kH^b)=(-1)^{k+1}\coef{z^{-k}}\YC_b$, which vanishes unless $b+k\equiv1\bmod5$; for instance $\Pi_0(H)=1$ and $\Pi_0(z\,1)=-v$.
+
+\emph{Weights and regularity.} The $v$-exponent of a model correlator is $e=2-2h+\sum_i\wt(k_i,a_i)$, $\wt(k,a)=(4k+\nu_a-4)/5$ (\cref{lem:set-modhom}); in the graded setting of \cref{conv:tra-forms}, $v$ has weight $5$ and $z^kH^a$ the weight $4k+\nu_a+1=5+5\wt(k,a)$. A model correlator is regular if $e\geq0$, i.e.\ if it lies in $\bbQ[v]$; a graph term is regular if it lies in $\bbQ\fps{u}$, so for $G_\Gamma=u^{2g-2}T_\Gamma$ regularity of $T_\Gamma$ means $G_\Gamma\in u^{2g-2}\bbQ\fps{u}$. ``Regular'' never means ``zero''.
+
+%-------------------------------------------------------------------------------
+\subsection{Normalisations of gauges and series}
+\label{sec:sgn-norm}
+
+The normalisations used throughout are: $(\Pc)_{11}(0,z)=1$ (\cref{def:gau-can}); $\varpi_1=u+O(u^2)$, $\varpi_0(0)=1$, $\tc'(0)=1$ (\cref{lem:set-frobbasis,def:set-frames}); $v(u)=u+O(u^2)$ (\cref{def:set-tau}); $\Fs_0(0)=1$ (\cref{prop:set-modrows}); $\mathrm{ph}_0=1$ (\cref{def:set-rows}); $c_0(L)=1$ (\cref{def:gam-c}); $\SPh=1+O(z)$ (\cref{def:fsp-wick}); and $d(0)=1$ for the dilaton factor of $\Pc$ (\cref{lem:gau-diag}).
+
+The other normalisation of the gauge, fixed by $p_{5n,0}(0)=0$ for $n\geq1$, where $P_k=\sum_bp_{k,b}E_{b+k,b}$ (\cref{def:gau-onepole}), equals $\Pc\,\cn(z)$ with $\cn(z)=1+m_5z^5+m_{10}z^{10}+\dots$ (\cref{rmk:mai-stored}); it enters no proof.
+
+%-------------------------------------------------------------------------------
+\subsection{Stationary phase}
+\label{sec:sgn-sp}
+
+\emph{Phases.} Stationary-phase integrands are written $\re^{F/z}$ in \cref{sec:fsp}; the saddle series of \cref{def:gam-c} has the phase $F=\mathsf S_0$; the flat integrand of \cref{sec:con} is written $\re^{-\cW/z}$ and the hatted one $\re^{-\hat\cW/\zh}$ (\cref{lem:con-form}, \cref{def:con-PhiSP}). They correspond under $F=-\cW$, resp.\ $F=-\hat\cW$ with $z$ renamed $\zh$ (\cref{def:fsp-wick}).
+
+\emph{Measures.} In the Mellin--Barnes summands (\cref{sec:con-form}), $\Gamma(1+5\sigma/z)=\int y^{5\sigma/z}\re^{-y}\dd y$ carries $\dd y$ and $\Gamma(w)=\int x^w\re^{-x}\dd x/x$ carries $\dd x/x$; an insertion $x^m$ with $\dd x/x$ is the case $M=m$ of \cref{lem:fsp-stirling}, with $\dd x$ the case $M=m+1$.
+
+\emph{Normalised and full stationary phase.} The series $\SPn$ of \cref{def:fsp-wick} is normalised by the Gaussian, so its constant term is the value $a_0(c)$ of the $z^0$-part of the amplitude at the critical point; $\SPh=\SPn/a_0(c)$; the full symbol is $(2\pi z)^{n/2}\det(-\mathsf H)^{-1/2}\re^{F(c)/z}\SPn$, $\mathsf H$ the Hessian at $c$. Only the series $\SPh$ are canonical: a prefactor such as $(2\pi z/5)^{1/2}$ cancels in a comparison (\cref{def:con-PhiSP}).
+
+\emph{Branches.} Roots and logarithms occur only in the symbols: $\det(-J^{\mathrm T}\mathsf HJ)^{1/2}:=\det J\cdot\det(-\mathsf H)^{1/2}$ under a change of variables with Jacobian $J$ (\cref{lem:fsp-cov}), $\det(-\mu\mathsf H)^{1/2}:=\mu^{n/2}\det(-\mathsf H)^{1/2}$ under a rescaling by $\mu$ (\cref{lem:fsp-homog}), $\log(a/z):=\log a-\log z$ and $\Gst(1+w):=w\,\Gst(w)$ (\cref{def:fsp-stirling}). The saddle series $c(z;L)$ does not depend on the branches (\cref{prop:gam-rational}).
+
+\emph{$q$ and $-q$.} In every form of the Mellin--Barnes summand the critical equation is $-q(5\sigma)^5=\prod_j(\zeta^j-\sigma)$, i.e.\ $u\sigma^5=1$, so $\sigma=L$ is the critical point of colour $0$; the logarithm $\lambda$ of $-q$ is forced by criticality (\cref{def:gam-c}), and $c(z;L)$ depends on neither $\lambda$ nor the sign convention for $q$. The two summands $(-q)^{\sigma/z}\Gamma(1+5\sigma/z)\prod_j\Gamma((\zeta^j-\sigma)/z)$ and $q^{\sigma/z}\Gamma(1+5\sigma/z)/\prod_j\Gamma(1+(\sigma-\zeta^j)/z)$ give the same normalised series (\cref{lem:con-form}). In Theorem~LMI the chart parameter $\mathsf Q=\re^{-\lambda/a_*}$ is $-q$ at $s_*=1$ and $(-q)^{-1/5}$ at $s_*=0$ (\cref{def:gam-lmidata,thm:gam-main,thm:gam-ginf}).
+
+\emph{Exponentials.} In the comparison of the actual rows with the canonical gauge the same exponential $\re^{u_i/z}$ is removed on both sides (\cref{thm:gau-R0}); the hatted phase gives $\re^{(u_0-u_0^{\mathrm c})/z}$, off by $\re^{-u_0^{\mathrm c}/z}$, so \cref{sec:con} uses normalised series only.
+
+%-------------------------------------------------------------------------------
+\subsection{Conventions of the literature}
+\label{sec:sgn-lit}
+
+\Cref{tab:sgn-lit} records the conventions of the sources in their own letters; they are used only through the translations given at the places cited.
+
+\begin{table}[ht]
+\caption{Conventions of the literature and of the note.}
+\label{tab:sgn-lit}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.47\textwidth}>{\raggedright\arraybackslash}p{0.33\textwidth}@{}}
+\hline
+topic & literature & this note \\
+\hline
+$R$-matrix action & \cite[Def.~2.2]{PPZ15}; \cite[\S2.3]{Dunin-Barkowski:2015caa} (transposed matrix, opposite dilaton sign) & \cite{PPZ15} throughout (\cref{sec:sgn-R}) \\
+characters & \cite[\S2.2, Theorem~1]{Giv01}: tangent characters, minus sign; \cite[9.1~Theorem]{MR1901075}: cotangent characters, plus sign & equal, since only odd powers occur \\
+twist weight & \cite[(17)]{GJR18}: $-5h_\alpha$; \cite[(20)]{GJR17}: $t-5H$; \cite[Corollary~1]{MR2276766}: the symbol $\exp\bigl(+\sum_m\bk_m(z/(\lambda+\rho))^{2m-1}\bigr)$ of an Euler-class twist; \cite[(26)]{LP20}: $(5\lambda_i)/e(\mathbb E^*\tensor(5\lambda_i))$ & all agree with $-5\zeta^i\in\bw_i$ (\cref{thm:set-qrr,rmk:set-qrrsign}) \\
+asymptotic series & \cite[Theorem~4 (i)]{ZZ08}, \cite[\S2.4.4, (18)]{LP20}: $\Phi_s(0)=\delta_{0,s}$ & (QRR): the value $h_{\bw_i}$ at $q=0$ \\
+Landau--Ginzburg charts & \cite[\S7, Remark~7.2]{GJR18}: critical point $(x_i)_\alpha=L_\alpha-\lambda_i$, $y_\alpha=mL_\alpha$, measure $\dd x/x$ with $x^{k/m}$; \cite[\S10]{MR1901075}: chart $x_0=Q/(x_1\cdots x_n)$, measure $\dd x$; \cite[Lemma~4.20]{MR2553377}: $\re^{-W/z}$ at $z=-1$, measure $\dd w/w$; \cite[\S7, (11)]{MR2276766}: $\dd x$ with $(2\pi z(\lambda+\rho))^{-1/2}$ & the summand of \cref{def:gam-c}: critical point $x_j=\zeta^j-L$ (opposite sign) and $y=5L$, measures $\dd y$ and $\dd x_j/x_j$ (\cref{sec:sgn-sp}) \\
+gap constants & \cite[(1.2)]{HKQ09}: $\frac{(-1)^{g-1}B_{2g}}{2g(2g-2)}t_D^{2-2g}$; \cite[Conjecture~1.5]{CGYZ26} (quintic): $\frac{(-1)^{g-1}B_{2g}}{5^{g-1}2g(2g-2)}\tau_c^{2-2g}$; \cite[Definition~1.8]{CGYZ26} has $(-1)^g$ with a constant $\kappa$ and is not used; \cite[(1.5)]{Br25} (local $\bbP^2$): $\frac{3^{g-1}B_{2g}}{2g(2g-2)}t_{\mathrm{CF}}^{2-2g}$ & $c_g=\frac{(-1)^{g-1}B_{2g}}{2g(2g-2)5^{g-1}}$ for $\varpi_1=u+O(u^2)$; rescaling $\varpi_1$ by $\sqrt5$ gives the form of \cite[(1.2)]{HKQ09} (see below); $\Fm_h=(-5)^{1-h}\FTR_h=c_hv^{2-2h}$ \\
+mirror theorem & \cite[Corollary~11.7]{MR1408320} prints $l_\alpha$ for $\lambda_\alpha$ & \cite[Theorem~11.6]{MR1408320} is used (\cref{thm:set-mirror}) \\
+\hline
+\end{tabular}
+\end{table}
+
+\emph{The comparison with \cite{CGYZ26}} (\cref{rmk:int-constant,rmk:mai-constant}). In our notation, and as read in version~2 of the preprint, \cite[Def.~1.1]{CGYZ26} works over $\bbQ(q)$ with $\Dq$, the periods $C_0$, $I_1$ of $\PFfour$ (the genus-$0$ periods of the formal quintic are those of the quintic, \cref{def:set-genus0}), $T=I_1/C_0$ and the differential $\bbQ(q)$-algebra generated by $C_0^{\pm1}$, $C_1^{\pm1}$. A pair of periods at the conifold point, one not vanishing and one vanishing simply, is admissible \cite[Def.~1.2]{CGYZ26} if substituting them for $C_0$, and the derivative of their quotient for $C_1$, respects the relations of that algebra; this defines their conifold expansion, in $\Delta=1-5^5q$. Their pair \cite[Ex.~1.3]{CGYZ26} is $(f_0,\varpi_1)$, the frame $(\alpha,\beta)=(0,0)$ with $\Delta=u$ and their flat coordinate $\tc$; their family \cite[Rem.~1.4]{CGYZ26} with rational coefficients is \cref{def:set-frames}; and $\varpi_1=u+O(u^2)$ is the normalisation of the pair of \cite[Ex.~1.3]{CGYZ26} and of \cite[Def.~1.8\,(2); \S4.2, Prop.-Def.~4.5\,(1)]{CGYZ26}; \cite[Conj.~1.5]{CGYZ26} is read with this normalisation, on which its constant depends (see the rescaling below). Both expansions are differential homomorphisms for $\Dq$ sending $C_0\mapsto\varpi_0$ and $C_1\mapsto\Dq\tc$ and expanding at $u=0$, so they agree on the differential subring of $\Nring$ generated by $c_0^{\pm1}$ and $(\mathsf W/c_0^2)^{\pm1}$ over $\bbQ[L^5,L^{-5}]$, wherever theirs is defined. The constant of \cite[Conj.~1.5]{CGYZ26} is $(-1)^{g-1}B_{2g}/(5^{g-1}\,2g(2g-2))=c_g$; the sign convention of \cite[Def.~1.8]{CGYZ26} is not used.
+
+\emph{Rescaling the periods.} Let $\varkappa_0,\varkappa_1\in\bbC^\times$ (local letters), let $\Cexp'$ be the conifold expansion of \cref{def:set-confexp} with $(\varpi_0,\varpi_1)$ replaced by $(\varkappa_0\varpi_0,\varkappa_1\varpi_1)$, and $\tc'\coloneqq(\varkappa_1/\varkappa_0)\tc$. Then
+\[
+\Cexp'(F_g^{\Nring})-c_g\,\varkappa_1^{2g-2}\,\tc'^{\,2-2g}\in\bbC\fps{u},
+\]
+so the constant does not depend on $\varkappa_0$ and is $c_g$ if and only if $\varkappa_1^{2g-2}=1$. Indeed, the $\bbC$-linear endomorphism $\mathfrak k$ (local) of $\Nring\otimes\bbC$ with $c_j\mapsto\varkappa_0c_j$, $i_j\mapsto\varkappa_1i_j+(\varkappa_1-\varkappa_0)(\logq\,c_j+jc_{j-1})$, $\logq\mapsto\logq$, $L\mapsto L$ commutes with $\Dq$ ($\PFfour$ is linear and the concomitant relation bilinear), satisfies $\Cexp'=\Cexp\circ\mathfrak k$, and sends $C_0$, $I_1$, $C_1$, $\mathsf W$ to $\varkappa_0C_0$, $\varkappa_1I_1$, $(\varkappa_1/\varkappa_0)C_1$, $\varkappa_0\varkappa_1\mathsf W$. It fixes the flat amplitudes $A_n\in\bbQ(\zeta)[L,L^{-1}]$ (\cref{thm:gau-R0}~(iii)), so by the forward relations of \cref{prop:set-cyclicLR}, with coefficients $C_1\kappa^{\mathrm{LR}}_a=(C_1,L^5/(C_0^2C_1^2),C_1,C_0,C_0)$, it multiplies the rows and $\Psi_{\mathrm Q}$ by $\diag(\varkappa_0^{-1},\varkappa_1^{-1},\varkappa_1,\varkappa_0,1)$. Hence $\mathfrak k(\tilde R)=\tilde R$, while $\Delta_i^{1/2}\mapsto\varkappa_0\Delta_i^{1/2}$ and $1_{\TFT}\mapsto\varkappa_0^{-1}1_{\TFT}$: $\mathfrak k$ fixes the edges, multiplies every leaf insertion by $\varkappa_0^{-1}$ and every vertex with $n_v$ half-edges and $l_v$ leaf insertions by $\varkappa_0^{2g_v-2+n_v+l_v}$, so every term by $\varkappa_0^{2g-2}$ (as in the proof of \cref{lem:flh-comm}); so $\Cexp'(F_g^{\Nring})=\varkappa_0^{2g-2}F_g^{\mathrm{cf}}$, and Corollary~B gives the claim. Consequently, for every pair of the family of \cite[Rem.~1.4]{CGYZ26} normalised as in \cite[Prop.-Def.~4.5\,(1)]{CGYZ26}, the formal quintic has the conifold gap in the sense of Corollary~B, with the constant of \cite[Conj.~1.5]{CGYZ26}; by the membership statement below this is also the gap for the conifold expansion of \cite[Def.~1.2]{CGYZ26}, when the pair is admissible.
+
+\emph{Membership.} The comparison needs that $F_g^{\Nring}$ lies in the differential subring $\mathscr S$ of $\Nring$ generated by $c_0^{\pm1}$ and $(\mathsf W/c_0^2)^{\pm1}$ over $\bbQ[L^5,L^{-5}]$, on which the two expansions agree; then $F_g=\ev(F_g^{\Nring})$ lies in the algebra of \cite[Def.~1.1]{CGYZ26} as recalled above, since $\ev$ maps $L^5$, $c_0$ and $\mathsf W/c_0^2$ to $(1-5^5q)^{-1}$, $C_0$ and $C_1$; and for every frame whose pair $(\varpi_0,\varpi_1)$ is admissible, which is asserted in \cite[Ex.~1.3, Rem.~1.4]{CGYZ26} and is not proved here, $F_g^{\mathrm{cf}}$ is the conifold expansion of $F_g$ in the sense of \cite[Def.~1.2]{CGYZ26}: that expansion composed with $\ev$, and $\Cexp_{\alpha,\beta}$, are homomorphisms of differential rings on $\mathscr S$ which agree on its generators. The injectivity of $\ev$ is not used. The membership holds, under the inputs of \cref{thm:gam-D} (the letters $\mathscr S$, $\mathsf B$, $\mathsf B_5$, $x$, $\pi_j$, $\varrho$ are local). (1) $F_g^{\Nring}$ is free of $\logq$ (\cref{cor:gau-rowsNN}~(ii)) and fixed by the automorphisms $i_j\mapsto i_j-kc_j$, $\logq\mapsto\logq+k$, $k\in\bbQ$ (\cref{def:set-confexp}). With $x:=i_0/c_0$ and $\pi_j:=i_j-xc_j$ ($j=1,2$), the $\logq$-free subring of $\Nring$ is the polynomial ring $\mathsf B[x]$ over $\mathsf B:=\bbQ[L^{\pm1}][c_0^{\pm1},c_1,c_2,c_3,\pi_1,\pi_2][\mathsf W^{-1}]$, because $\mathsf W=c_0^2+c_0\pi_1$; the automorphisms fix $\mathsf B$ and send $x$ to $x-k$, so $F_g^{\Nring}\in\mathsf B$. (2) Let $\varrho$ be the automorphism of $\Nring\otimes\bbQ(\zeta)$ with $L\mapsto\zeta L$ which fixes $\zeta$ and the other generators; it commutes with $\Dq$, since $\Dq L=L(L^5-1)/5$ and $\Dq c_3$, $\Dq i_2$ involve $L$ only through $L^5$. By \cref{thm:gam-D}, $A^{\mathrm{act}}_n=A^{\mathrm{can}}_n=L^{4n+1}\mathrm{ph}^{\mathrm{can}}_n(L^{-5})$ (\cref{thm:gau-R0}~(ii), (iii)), so $\varrho$ multiplies $\Qr^{(0)}_{0,n}=A^{\mathrm{act}}_nc_0^{-1}$ by $\zeta^{1-n}$ and, by the recursion of \cref{cor:gau-rowsNN}~(i), whose coefficients it fixes, $\Qr^{(0)}_{a,n}$ by $\zeta^{a+1-n}$. Hence $\varrho(\Qr^{(i)}_{a,n})=\Qr^{(i+1)}_{a,n}$, $\varrho(\Delta_i^{1/2})=\Delta_{i+1}^{1/2}$ and $\varrho\bigl((\Psi_{\mathrm Q})_{aj}\bigr)=(\Psi_{\mathrm Q})_{a,j+1}$ (\cref{lem:mai-Psi}~(i)): $\varrho$ permutes the colours and fixes $F_g^{\Nring}$. As $\mathsf W$ is free of $L$, $\mathsf B=\bigoplus_{k=0}^4L^k\mathsf B_5$, where $\mathsf B_5$ (local) is the ring displayed in (3), and $\varrho$ acts on the $k$-th summand by $\zeta^k$; so $F_g^{\Nring}\in\mathsf B_5$. (3) $\mathsf B_5:=\bbQ[L^{\pm5}][c_0^{\pm1},c_1,c_2,c_3,\pi_1,\pi_2][\mathsf W^{-1}]\subset\mathscr S$, as $c_j=\Dq^jc_0$, $\pi_1=(\mathsf W-c_0^2)/c_0$ and $\pi_2=(\Dq\mathsf W-2c_0c_1)/c_0$.
+
+\emph{Differences.} The rows involve $L\notin\bbQ(q)$, yet $F_g^{\mathrm{cf}}$ is a Laurent series in $u$ by Corollary~B. The expansion of \cite{CGYZ26} is defined on functions under admissibility, $\Cexp$ on the presented ring $\Nring$ (\cref{lem:gau-confexp}).

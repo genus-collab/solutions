@@ -1,0 +1,119 @@
+% Section 5 (one part); label prefix: red.
+% No new macros. Local letters: y^circ (the K_0-part of the leaf, as in sec:tra), t_alpha (frames at the half-edges), hat v (rmk:red-leaf).
+
+\section{Reduction to the model}
+\label{sec:red}
+
+This section proves Theorem R: for a dressing $P$ of the model with (Sp) and (A) (\cref{def:tra-dressing}), every term of the flat graph sum with an edge is regular, and the vertex graph is $c_gT_P^{2-2g}$ up to a regular series, provided that the Model Lemma on $\sK$ holds in the genera that occur. The proof uses only the transport results of \cref{sec:tra}; it uses no gauge equation and no datum of the quintic beyond $T_P$. The Model Lemma enters only as a hypothesis; it is proved for every genus in \cref{sec:mod} (\cref{thm:mod-MLK}). No quoted statement enters this section beyond the definitions of \cite{PPZ15} recalled in \cref{sec:set-graph,sec:tra-dress}.
+
+\subsection{The flat sum and the Model Lemma}
+\label{sec:red-sum}
+
+\begin{defn}[the flat sum]
+\label{def:red-flatsum}
+Let $P$ be a dressing with (Sp), with edge $E_P$, leaf point $q_T$ and $\tilde q_T = d\,q_T$ (\cref{def:tra-edge}). For a leg-free stable graph $\Gamma$ of genus $g\geq 2$, $\mathrm{Cont}_\Gamma$ is $|\Aut\Gamma|^{-1}$ times the contraction along $\Gamma$, as in \cref{def:set-graphsum}, of $E_P$ on every edge with the vertex tensor
+\[
+d^{\,2g_v-2+n_v}\,\dd^{n_v}\overline F_{g_v}(\tilde q_T)
+\]
+at every vertex, of genus $g_v$ and valence $n_v$, one slot per half-edge; here $\overline F_h$ is the dilaton-shifted ancestor potential of the model (\cref{def:set-modcohft,def:set-graphsum}) and $\dd^n\overline F_h$ its $n$-th derivative. The \emph{flat sum} is $F^P_g := \sum_\Gamma\mathrm{Cont}_\Gamma$, the sum over the leg-free stable graphs of genus $g$, with no further factor. The \emph{vertex graph} has one vertex and no edge, and
+\begin{equation}
+\label{eq:red-vertex}
+\mathrm{Cont}_{\mathrm{vertex}} = d^{\,2g-2}\,\overline F_g(\tilde q_T) = d^{\,2g-2}\sum_{m\geq 0}\frac1{m!}\langle(dT_{\geq 2})^m\rangle_g ,
+\end{equation}
+with $dT_{\geq 2} = \tilde q_T+z1\in z^2\cH^u_+$ as in \eqref{eq:tra-leaf};
+an \emph{edge graph} is a graph with at least one edge; $\Gamma$ is \emph{regular} if $\mathrm{Cont}_\Gamma\in\bbQ\fps{u}$. For $P = \Pc$ we write $F_\Gamma := \mathrm{Cont}_\Gamma$, the \emph{flat term} of $\Gamma$; it is compared with the outer term $T_\Gamma$ in \cref{thm:flh-main}.
+\end{defn}
+
+The vertex tensor is defined by this homogeneous form, which makes sense for every dressing with (Sp): its leaf $dT_{\geq 2}$ has $\psi$-degree at least $2$. When $d(0) = 1$ it equals the Taylor expansion $\dd^{n_v}\overline F_{g_v}(q_T)$ of $\overline F_{g_v}$ at the base point $-z1$ in the direction $q_T+z1$ (\cref{lem:tra-conv}~(f1), \cref{lem:tra-F}); this holds for $\Pc$ (\cref{prop:tra-can}). When $d(0)\neq 1$ that Taylor expansion has in general no $u$-adic limit (\cref{lem:tra-conv}~(f2)). Every $\mathrm{Cont}_\Gamma$ is a finite sum (\cref{lem:tra-F}), and by \eqref{eq:red-vertex} and \eqref{eq:tra-leaf} the dressing enters the vertex graph only through the leaf $dT_{\geq 2} = \ttr_{R^{\mathrm{vec}}}(z)$ and the factor $d^{\,2g-2}$.
+
+\begin{defn}[the Model Lemma on $\sK$]
+\label{def:red-ML}
+For $h\geq 2$ let $\Fm_h(v) := \langle\ \rangle_h(v)$ be the genus-$h$ free energy of the model, a rational multiple of $v^{2-2h}$ by \cref{lem:set-modhom}; put $\Fm_1(v) := -\frac{1}{12}\log v$ and $\Fm_0(v) := -\frac52v^2\log v$, of which only the derivatives of order $\geq 1$, resp.\ $\geq 3$, are used. For $h\geq 0$, $\ML{h}$ is the following statement.
+\begin{enumerate}
+\item For $n\geq 1$ with $2h-2+n>0$ and homogeneous $X_1,\dots,X_n\in\sK$ (graded setting, coefficients in $\bbQ[v]$),
+\[
+\langle X_1\cdots X_n\rangle_h(v)-(\Fm_h)^{(n)}(v)\prod_{i=1}^n\Pi_0(X_i)\ \in\ \bbQ[v] .
+\]
+\item For $h\geq 2$, $\Fm_h = c_hv^{2-2h}$, with $c_h$ as in \eqref{eq:set-cg}.
+\end{enumerate}
+By multilinearity over $\bbQ[v]$ and polarisation, (i) is equivalent to the function form: for every $y\in\sK$ (graded setting) and every $n$ with $2h-2+n>0$, the Taylor coefficient $\frac1{n!}\bigl(\langle y^n\rangle_h-(\Fm_h)^{(n)}(v)\Pi_0(y)^n\bigr)$ of $\overline F_h-\Fm_h\circ\Pi_0$ at the base point lies in $\bbQ[v]$; in short, $\overline F_h|_{-z+\sK} = \Fm_h\circ\Pi_0+\mathrm{Reg}_h$ with a regular remainder $\mathrm{Reg}_h$.
+\end{defn}
+
+\begin{lem}[genus bound for vertices of edge graphs]
+\label{lem:red-genus}
+Let $\Gamma$ be a leg-free stable graph of genus $g$ with at least one edge. Then every vertex of $\Gamma$ carries at least one half-edge and has genus at most $g-1$.
+\end{lem}
+
+\begin{proof}
+$\Gamma$ is connected and has an edge, so no vertex is isolated. The genus of $\Gamma$ is the sum of the vertex genera plus the first Betti number of $\Gamma$. If some vertex had genus $g$, all other vertices would have genus $0$ and $\Gamma$ would be a tree; a tree with an edge has at least two vertices of valence $1$, so a vertex of genus $0$ would carry a single half-edge, against stability. Hence every vertex has genus at most $g-1$. If unstable vertices of genus $0$ with at most two half-edges were admitted, their vertex tensors would vanish anyway: a genus-$0$ correlator with $n\leq 2$ slots and $m$ leaves of $\psi$-degree $\geq 2$ has degree at least $2m>n+m-3 = \dim\overline{\mathcal M}_{0,n+m}$; so the conclusion holds for every vertex of a non-zero term.
+\end{proof}
+
+\subsection{Theorem R}
+\label{sec:red-thm}
+
+\begin{thm}[Theorem R]
+\label{thm:red-main}
+Fix $g\geq 2$ and a dressing $P$ of the model at $v(u)$, $v(0) = 0$, $v'(0)\neq 0$, with (Sp) and (A) (\cref{def:tra-dressing}).
+\begin{description}
+\item[(a)] If $\ML{h}$ holds for $0\leq h\leq g-1$, then $\mathrm{Cont}_\Gamma\in\bbQ\fps{u}$ for every leg-free stable graph $\Gamma$ of genus $g$ with at least one edge.
+\item[(b)] If moreover $\ML{g}$ holds, then $\mathrm{Cont}_{\mathrm{vertex}}\in c_g\,T_P^{2-2g}+\bbQ\fps{u}$.
+\end{description}
+The gauge equation is not used.
+\end{thm}
+
+\begin{proof}
+\emph{Step 1 (edges).} By \cref{cor:tra-edges} and \cref{lem:tra-twoslot}, $E_P = \sum_{\alpha,\beta}E_P^{\alpha\beta}\fr_\alpha(\psi)\otimes\fr_\beta(\psi')$, a summable family with $E_P^{\alpha\beta}\in\bbQ\fps{u}$. So every half-edge insertion is a frame, a homogeneous element of $\sKo$ evaluated at $v(u)$ (\cref{lem:tra-coeff}).
+
+\emph{Step 2 (vertices of edge graphs).} By \cref{lem:red-genus}, every vertex of an edge graph carries $n\geq 1$ half-edges and has genus $h\leq g-1$.
+
+\emph{Step 3 (vertex factors).} By \cref{def:red-flatsum} and $\tilde q_T+z1 = dT_{\geq 2}$ \eqref{eq:tra-leaf}, the factor of a vertex of genus $h$ whose half-edges carry the frames $t_{\alpha_1},\dots,t_{\alpha_n}$ is
+\[
+d^{\,2h-2+n}\sum_{m\geq 0}\frac1{m!}\langle t_{\alpha_1}\cdots t_{\alpha_n}(dT_{\geq 2})^m\rangle_h ,
+\]
+a finite sum ($m\leq 3h-3+n$, \cref{lem:tra-conv}~(d)).
+
+\emph{Step 4 (the leaf).} By \cref{lem:tra-T}~(c), (d), $dT_{\geq 2} = y^\circ+\delta_PH$ with $y^\circ\in\sKo$, whose frame coordinates lie in $\bbQ\fps{u}$ and vanish for $k\leq 1$, and with $\delta_P\in u^2\bbQ\fps{u}$.
+
+\emph{Step 5 (the Model Lemma at the vertices).} Expanding multilinearly, with $y^\circ$ expanded in frames (\cref{lem:tra-coeff}), every term of a vertex factor is a product of elements of $\bbQ\fps{u}$ (powers of $d$ and of $\delta_P$, frame coordinates of $y^\circ$) and of a model correlator of homogeneous elements of $\sK$, frames and $H$, which contains the frame $t_{\alpha_1}$ because $n\geq 1$ (Step 2). As $\Pi_0(t_{\alpha_1}) = 0$, the term $(\Fm_h)^{(\cdot)}(v)\prod\Pi_0(\cdot)$ of $\ML{h}$~(i) vanishes, and $\ML{h}$, $h\leq g-1$, says that the correlator lies in $\bbQ[v]$; at $v = v(u)$ it lies in $\bbQ\fps{u}$.
+
+\emph{Step 6 (convergence).} By \cref{lem:tra-conv}~(b4), applied to the edge bivectors $E_P$, which have property (i) of \cref{lem:tra-twoslot} by \cref{cor:tra-edges}, and to the leaves $dT_{\geq 2}\in z^2\cH^u_+\cap\sK$, the contraction along $\Gamma$ is the sum of the summable family obtained by expanding every edge in frames and every leaf as in Step 4. By \cref{lem:tra-conv}~(b2) this expansion agrees with the flat one and never splits a frame into its flat components, so the directions $z^kH$, $k\geq 1$, which occur inside frames, are never isolated.
+
+\emph{Step 7 (edge graphs).} By Steps 1, 5 and 6, every member of the family is a product of elements of $\bbQ\fps{u}$: the coefficients $E_P^{\alpha\beta}$, the powers of $d$ and of $\delta_P$, the frame coordinates of $y^\circ$, and correlators lying in $\bbQ\fps{u}$. The sum of a summable family of elements of $\bbQ\fps{u}$ lies in $\bbQ\fps{u}$; so $\mathrm{Cont}_\Gamma\in\bbQ\fps{u}$. This proves (a), using $\ML{h}$ only for the genera $h\leq g-1$ of the vertices of edge graphs.
+
+\emph{Steps 8 and 9 (the vertex graph).} By \eqref{eq:red-vertex}, $\mathrm{Cont}_{\mathrm{vertex}} = d^{\,2g-2}\,\overline F_g(\tilde q_T)$. By \cref{lem:tra-T}~(c), (d), $\tilde q_T\in -z1+z^2\cH^u_+$, $\Pi_i(\tilde q_T) = 0$ for $i\geq 1$, and $\Pi_0(\tilde q_T)-v = \delta_P\in u^2\bbQ\fps{u}$. So \cref{lem:tra-conv}~(e), whose hypotheses $g\geq 2$ and $v'(0)\neq 0$ hold, gives under $\ML{g}$
+\[
+\overline F_g(\tilde q_T)\in c_g\,(v+\delta_P)^{2-2g}+\bbQ\fps{u} :
+\]
+the terms containing a frame are regular by $\ML{g}$~(i), and the terms with insertions $H$ only resum to $c_g(v+\delta_P)^{2-2g}$; equivalently, the sum over the number of leaves stops at $m = 3g-3$, and the tail of the binomial resummation is regular (\cref{lem:tra-conv}~(e)).
+
+\emph{Step 10.} $v+\delta_P = dT_P$, and $d^{\,2g-2}c_g(dT_P)^{2-2g} = c_gT_P^{2-2g}$; since $d$ is a unit of $\bbQ\fps{u}$, $d^{\,2g-2}\bbQ\fps{u} = \bbQ\fps{u}$. This proves (b). The hypothesis $v(0) = 0$ enters through the $u$-adic setting of \cref{conv:tra-forms} and through \cref{lem:tra-T}~(d); the hypothesis $v'(0)\neq 0$ enters through \cref{lem:tra-conv}~(e), and it makes $T_P = (v+\delta_P)/d$ equal to $u$ times a unit, so $T_P^{2-2g}\in\bbQ\lser{u}$. Neither the gauge equation nor any property of $P$ beyond (Sp), (A), flat regularity and the grading has been used.
+\end{proof}
+
+\begin{cor}[Theorem R for the canonical gauge]
+\label{cor:red-can}
+Let $(\alpha,\beta)\in\bbQ^2$ give a conifold frame (\cref{def:set-frames}) and let $g\geq 2$. If $\ML{h}$ holds for $0\leq h\leq g-1$, every edge graph of genus $g$ of the flat sum of $\Pc.\Omega^{\mathrm{mod}}_{v(u)}$ is regular: $F_\Gamma\in\bbQ\fps{u}$. If moreover $\ML{g}$ holds, the vertex graph satisfies $F_{\mathrm{vertex}}\in c_g\,\tc^{2-2g}+\bbQ\fps{u}$.
+\end{cor}
+
+\begin{proof}
+By \cref{prop:tra-can}, $\Pc$ is a dressing of the model at $v(u) = u\tau(u)^{-5/4}$, with $v(0) = 0$ and $v'(0) = 1$, satisfying (Sp) and (A), and $T_{\Pc} = \tc$. Apply \cref{thm:red-main}.
+\end{proof}
+
+By \cref{thm:mod-MLK} the hypotheses $\ML{h}$ hold for every $h\geq 0$; \cref{thm:flh-main} transfers the conclusion of \cref{cor:red-can} from the flat terms $F_\Gamma$ to the outer terms $T_\Gamma$, and \cref{thm:mai-main} assembles the result.
+
+\begin{rmk}[what of the Model Lemma is used]
+\label{rmk:red-hyp}
+The proof of \cref{thm:red-main} uses the Model Lemma only as follows. (i) Only on $-z+\sK$: the insertions are frames, elements of $\sKo$, and $H$; nothing is used about the directions $\psi^kH$, $k\geq 1$, alone. (ii) Only the vanishing direction: a correlator with negative exponent and at least one insertion from $\sKo$ vanishes; no formula for a non-zero singular part is used except the gap and its derivatives in (iv). (iii) For graphs with an edge, only the genera $h\leq g-1$, including $h = 0$ and $h = 1$, since vertices of genus $0$ and $1$ occur. (iv) For the vertex graph, $\ML{g}$: the gap $\Fm_g = c_gv^{2-2g}$, part (i) for correlators containing a frame, and part (i) for $H^j$, in the form $\langle H^j\rangle_g = (\Fm_g)^{(j)}(v)$. (v) For each $g$ and each graph, only the finitely many members of the summable family of \cref{lem:tra-conv}~(b4) that do not lie in $\bbQ\fps{u}$ matter for regularity; so for each graph the Model Lemma is used for finitely many correlators only.
+\end{rmk}
+
+\begin{rmk}[the leaf bookkeeping]
+\label{rmk:red-leaf}
+This remark explains the mechanism of \cref{cor:red-can} and is not used. For $P = \Pc$ put $\hat v := v/d = u+O(u^2)$. Under $\ML{g}$, without leaves (the term $m = 0$ of \eqref{eq:red-vertex}) the vertex graph would be $d^{\,2g-2}\Fm_g(v) = c_g\hat v^{2-2g}$; the leaves turn it into $c_g\tc^{2-2g}+\bbQ\fps{u}$. Since $\Pi_0(\tilde q_T) = d\,\tc = v+\delta_{\Pc}$, the difference $\tc-\hat v = \delta_{\Pc}/d$ lies in $u^2\bbQ\fps{u}$ (\cref{lem:tra-T}~(d)), and the binomial expansion gives
+\[
+c_g\tc^{2-2g} = c_g\hat v^{2-2g}-(g-1)\,c_g\,\frac{2}{\hat v^{2g-1}}\,(\tc-\hat v)+O\bigl(u^{4-2g}\bigr).
+\]
+The leading coefficient of $\tc-\hat v$ is explicit. By \cref{lem:tra-T}~(d) and \cref{lem:gau-diag}, $d = 1/p_{0,0} = \tau^{1/4}\varpi_0$, so $\hat v = u\tau^{-3/2}/\varpi_0$ and, as $\varpi_0\tc = \varpi_1$ (\cref{def:set-frames}),
+\[
+\delta_{\Pc} = \tau^{1/4}\varpi_1-u\,\tau^{-5/4},
+\]
+which does not depend on the frame. With $\tau = 1-\frac49u+O(u^2)$ (\cref{def:set-tau}) and $\varpi_1 = u+\frac7{10}u^2+O(u^3)$ (\cref{lem:set-frobbasis}) this gives $\delta_{\Pc} = \frac1{30}u^2+O(u^3)$, hence $\tc-\hat v = \delta_{\Pc}/d = \frac1{30}u^2+O(u^3)$ in every conifold frame, and the first correction is $-(g-1)c_gu^{3-2g}/15+O(u^{4-2g})$. The next coefficient of $\delta_{\Pc}$ is recorded in \cref{sec:evi-transport}.
+\end{rmk}

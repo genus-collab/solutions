@@ -1,0 +1,9 @@
+# logs/cyc_ref_xproj.log (py -I -B cyc_ref_xproj.py)
+PASS X1 project f_0, f_1, f_2 = referee f_0, f_1, f_2 below u^28
+PASS X1 project gamma = referee gamma = 7/10
+PASS X1 project log companion h = referee h (u^0..u^27), log obstruction zero
+   fq_conifold Bmat (basis f_0, g, f_2) = [['0', '0', '2'], ['0', '0', '0'], ['-2', '0', '0']]
+PASS X2 fq_conifold Bmat (basis f_0, g, f_2) = referee B in that basis; Bconst_ok and pairing_vacuous are True
+PASS X3 frame (0, 0): project varpi0 and tc = referee y_0 and t = g/y_0 below u^28
+PASS X3 frame (1/3, -2/7): project varpi0 and tc = referee y_0 and t = g/y_0 below u^28
+CYC_REF_XPROJ: ALL CHECKS PASSED   (2.1 s)

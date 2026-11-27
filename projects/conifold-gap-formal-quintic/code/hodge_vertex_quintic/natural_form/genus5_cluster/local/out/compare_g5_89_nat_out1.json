@@ -1,0 +1,17 @@
+{
+ "local": "g5_89_nat_out1",
+ "ref": "g5_89_nat",
+ "maxout": 1,
+ "prime": "89",
+ "testable": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "entries_compared": 32,
+ "mismatches": 0,
+ "inner_covered": 4555,
+ "rows_with_pieces": 4,
+ "failed": []
+}

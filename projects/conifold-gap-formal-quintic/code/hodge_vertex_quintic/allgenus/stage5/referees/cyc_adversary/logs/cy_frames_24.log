@@ -1,0 +1,64 @@
+cy_frames: exact over Q, series through u^23
+(E0) the label "(1/3,-2/7)": programme varpi0 = f0 + g/3 - 2f2/7 has u^2 coefficient -11/210; the critic's f0 + f1/3 - 2f2/7 has -2/7
+[PASS] (E0) the critic's frame "(1/3,-2/7)" is NOT the programme's frame (1/3,-2/7) (a label clash, harmless: CYC covers both)
+[PASS] (E) M = PF4, programme frame (alpha, beta) = (0, 0): y0 = f0 + alpha g + beta f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, programme frame (alpha, beta) = (0, 0): y0 = f0 + alpha g + beta f2, y1 = g
+[PASS] (E) M = PF4, programme frame (alpha, beta) = (1/3, -2/7): y0 = f0 + alpha g + beta f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, programme frame (alpha, beta) = (1/3, -2/7): y0 = f0 + alpha g + beta f2, y1 = g
+[PASS] (E) M = PF4, programme frame (alpha, beta) = (7/11, -3/5): y0 = f0 + alpha g + beta f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, programme frame (alpha, beta) = (7/11, -3/5): y0 = f0 + alpha g + beta f2, y1 = g
+[PASS] (E) M = PF4, programme frame (alpha, beta) = (1, 0): y0 = f0 + alpha g + beta f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, programme frame (alpha, beta) = (1, 0): y0 = f0 + alpha g + beta f2, y1 = g
+[PASS] (E) M = PF4, programme frame (alpha, beta) = (0, 1): y0 = f0 + alpha g + beta f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, programme frame (alpha, beta) = (0, 1): y0 = f0 + alpha g + beta f2, y1 = g
+[PASS] (E) M = PF4, programme frame (alpha, beta) = (2/3, -1/7): y0 = f0 + alpha g + beta f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, programme frame (alpha, beta) = (2/3, -1/7): y0 = f0 + alpha g + beta f2, y1 = g
+[PASS] (E) M = PF4, programme frame (alpha, beta) = (-2, 0): y0 = f0 + alpha g + beta f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, programme frame (alpha, beta) = (-2, 0): y0 = f0 + alpha g + beta f2, y1 = g
+[PASS] (E) M = PF4, critic-convention frame (1/3, -2/7): y0 = f0 + a f1 + b f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, critic-convention frame (1/3, -2/7): y0 = f0 + a f1 + b f2, y1 = g
+[PASS] (E) M = PF4, critic-convention frame (7/11, -3/5): y0 = f0 + a f1 + b f2, y1 = g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, critic-convention frame (7/11, -3/5): y0 = f0 + a f1 + b f2, y1 = g
+[PASS] (E) M = PF4, rescaled: y0 = 2 (f0 + g/3 - 2f2/7), y1 = 3 g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, rescaled: y0 = 2 (f0 + g/3 - 2f2/7), y1 = 3 g
+[PASS] (E) M = PF4, rescaled: y0 = -f0/2, y1 = -5 g   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, rescaled: y0 = -f0/2, y1 = -5 g
+[PASS] (E) M = PF4, same Lagrangian, y1 = g + f0/3 (t -> t + 1/3)   precision u^18; val(c_a) = (0, -1, 0, 0, 0)  [Theorem U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, same Lagrangian, y1 = g + f0/3 (t -> t + 1/3)
+[PASS] (E) M = PF4, varpi0(0) = 0: y0 = f1, y1 = g   precision u^12; val(c_a) = (0, -3, 0, 1, 1)  [NOT the Theorem-U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, varpi0(0) = 0: y0 = f1, y1 = g
+[PASS] (E) M = PF4, varpi0(0) = 0: y0 = f2, y1 = g   precision u^12; val(c_a) = (-2, -1, -2, 2, 2)  [NOT the Theorem-U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, varpi0(0) = 0: y0 = f2, y1 = g
+[PASS] (E) M = PF4, varpi0(0) = 0: y0 = f1 - 2 f2, y1 = g   precision u^12; val(c_a) = (0, -3, 0, 1, 1)  [NOT the Theorem-U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, varpi0(0) = 0: y0 = f1 - 2 f2, y1 = g
+[PASS] (E) M = PF4, other Lagrangian pair: y0 = f1, y1 = f2   precision u^12; val(c_a) = (0, -3, 0, 1, 1)  [NOT the Theorem-U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, other Lagrangian pair: y0 = f1, y1 = f2
+[PASS] (E) M = PF4, other Lagrangian pair: y0 = f2, y1 = f1   precision u^12; val(c_a) = (-2, -1, -2, 2, 2)  [NOT the Theorem-U shape]
+[PASS] (E) unit hypotheses of Theorem U (val c = (0,-1,0,0,0)) hold exactly when expected, other Lagrangian pair: y0 = f2, y1 = f1
+[CONTROL FAILS (as required)] (E) M = PF4, non-isotropic: y0 = f0, y1 = f1 (B = -7/5)   precision u^18; val(c_a) = (0, -1, 0, 0, 0)
+[CONTROL FAILS (as required)] (E) M = PF4, non-isotropic: y0 = f0, y1 = f2 (B = 2)   precision u^15; val(c_a) = (1, -3, 1, 0, 0)
+[CONTROL FAILS (as required)] (E) M = PF4, non-isotropic: y0 = f0 + f1, y1 = f2   precision u^15; val(c_a) = (1, -3, 1, 0, 0)
+[CONTROL FAILS (as required)] (E) M = PF4, wrong gamma 1/2: y0 = f0 + g/3 - 2f2/7, y1 = f1 + f2/2   precision u^18; val(c_a) = (0, -1, 0, 0, 0)
+[CONTROL FAILS (as required)] (E) M = PF4, wrong gamma 7/10 + 1/1000: y0 = f0, y1 = f1 + gamma' f2   precision u^18; val(c_a) = (0, -1, 0, 0, 0)
+[PASS] (F) A0 -> A0 + (1/7)(1-u): the perturbed operator is self-adjoint
+    A0 -> A0 + (1/7)(1-u): obstructions [['-2', '17/5', '-7/5'], ['0', '0', '-7/5'], ['0', '0', '2']], gamma = 7/10, residual obstruction of g: ['0', '0', '0']
+[PASS] (F) A0 -> A0 + (1/7)(1-u): CYC with its OWN Frobenius frame (y0 = f0, y1 = g of the perturbed operator)   precision u^18
+[CONTROL FAILS (as required)] (F) A0 -> A0 + (1/7)(1-u): CYC with the UNPERTURBED frame
+[PASS] (F) A2 -> A2 + u^2/3, A1 -> A1 + D(u^2)/3 (self-adjoint): the perturbed operator is self-adjoint
+    A2 -> A2 + u^2/3, A1 -> A1 + D(u^2)/3 (self-adjoint): obstructions [['-2', '17/5', '-7/5'], ['0', '0', '-7/5'], ['0', '0', '2']], gamma = 7/10, residual obstruction of g: ['0', '0', '0']
+[PASS] (F) A2 -> A2 + u^2/3, A1 -> A1 + D(u^2)/3 (self-adjoint): CYC with its OWN Frobenius frame (y0 = f0, y1 = g of the perturbed operator)   precision u^18
+[CONTROL FAILS (as required)] (F) A2 -> A2 + u^2/3, A1 -> A1 + D(u^2)/3 (self-adjoint): CYC with the UNPERTURBED frame
+[CONTROL FAILS (as required)] (F) A2 -> A2 + u^2/3 alone (not self-adjoint): the perturbed operator is self-adjoint
+    A2 -> A2 + u^2/3 alone (not self-adjoint): obstructions [['-2', '17/5', '-7/5'], ['0', '0', '-7/5'], ['0', '0', '2']], gamma = 7/10, residual obstruction of g: ['0', '0', '0']
+[CONTROL FAILS (as required)] (F) A2 -> A2 + u^2/3 alone (not self-adjoint): CYC with its OWN Frobenius frame (y0 = f0, y1 = g of the perturbed operator)   precision u^18
+[CONTROL FAILS (as required)] (F) A2 -> A2 + u^2/3 alone (not self-adjoint): CYC with the UNPERTURBED frame
+[CONTROL FAILS (as required)] (F) A2 + u^2/3 alone: the concomitant B(f0, f1) is a constant (C2(ii) needs C1)
+[PASS] (F) A4 -> u + u^2/4 with A3 = 2 D A4, A1 = D A2 - D^3 A4: the perturbed operator is self-adjoint
+    A4 -> u + u^2/4 with A3 = 2 D A4, A1 = D A2 - D^3 A4: obstructions [['-2', '39/10', '-19/10'], ['0', '0', '-19/10'], ['0', '0', '2']], gamma = 19/20, residual obstruction of g: ['0', '0', '0']
+[PASS] (F) A4 -> u + u^2/4 with A3 = 2 D A4, A1 = D A2 - D^3 A4: CYC with its OWN Frobenius frame (y0 = f0, y1 = g of the perturbed operator)   precision u^18
+[CONTROL FAILS (as required)] (F) A4 -> u + u^2/4 with A3 = 2 D A4, A1 = D A2 - D^3 A4: CYC with the UNPERTURBED frame
+[CONTROL FAILS (as required)] (F) A4 -> u + u^2/4 with A3 = 2 D A4, A1 = D A2 - D^3 A4: CYC with the literal middle factor u y0^2 Dt^2 (instead of A4 y0^2 Dt^2)
+    A3 -> A3 + 1/2: obstructions of f0, f1, f2 = [['-3', '49/10', '-19/10'], ['0', '1/2', '-7/5'], ['0', '0', '1']]
+[CONTROL FAILS (as required)] (F) A3 -> A3 + 1/2 (exponents 0, 1, 3/2, 2): some g in span(f0, f1, f2) has a solution g log u + h (s.1 Frobenius structure)   obstruction map has rank 3 on span(f0, f1, f2)
+time 0.5 s
+ALL CHECKS PASSED

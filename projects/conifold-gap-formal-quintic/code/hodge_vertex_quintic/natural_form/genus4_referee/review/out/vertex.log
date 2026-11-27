@@ -1,0 +1,5 @@
+PASS (1) partitions_min2 = brute force for m <= 4, total <= 12, part_max <= 7 (no duplicates)
+PASS (2) sorted_tuples = brute force for n <= 5, s <= 8 (no duplicates)
+PASS (3) vertex_table = brute force over ordered leaves with 1/m! for the 19 vertex types [(0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (0, 8), (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (2, 1), (2, 2), (2, 3), (2, 4), (3, 1), (3, 2), (4, 0)] (3496 ordered exponent tuples x 5 colours x 6 u-orders)
+PASS (4) largest leaf exponent with a non-zero KW number = 10 = KZ + 1; largest xhat power 15 <= 19
+RV_VERTEX ALL CHECKS PASSED  (8 s)

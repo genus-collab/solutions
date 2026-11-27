@@ -1,0 +1,225 @@
+==============================================================================
+prime p = 618970019642690137449562111, zeta = 406600421472621888393207950
+PASS PF (product form) on I_0, generic sample 0, q^<=12
+PASS PF (product form) on I_1, generic sample 0, q^<=12
+PASS PF (product form) on I_2, generic sample 0, q^<=12
+PASS PF (product form) on I_3, generic sample 0, q^<=12
+PASS PF (product form) on I_4, generic sample 0, q^<=12
+PASS s^0 term of I/(zC0) = 1 (generic 0)
+PASS s^1 log q term = H (generic 0)
+PASS s^1 term has no H^2,H^3,H^4 components (generic 0)
+   tau0/e_1 = (120)x^1 + (155700)x^2 + (276016000)x^3 + O(x^13)
+PASS mirror-map coefficient b = Itilde_1 (generic 0)
+PASS PF (product form) on I_0, generic sample 1, q^<=12
+PASS PF (product form) on I_1, generic sample 1, q^<=12
+PASS PF (product form) on I_2, generic sample 1, q^<=12
+PASS PF (product form) on I_3, generic sample 1, q^<=12
+PASS PF (product form) on I_4, generic sample 1, q^<=12
+PASS s^0 term of I/(zC0) = 1 (generic 1)
+PASS s^1 log q term = H (generic 1)
+PASS s^1 term has no H^2,H^3,H^4 components (generic 1)
+PASS tau0/e_1(lambda) the same for both weight samples
+   tau0/e_1 = (120)x^1 + (155700)x^2 + (276016000)x^3 + O(x^13)
+PASS mirror-map coefficient b = Itilde_1 (generic 1)
+PASS PF (product form) on I_0 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_0
+PASS I_0(q,z) = zeta^0 I_0(q, zeta^-0 z) (q^<=4, z^<6)
+PASS PF (product form) on I_1 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_1
+PASS I_1(q,z) = zeta^1 I_0(q, zeta^-1 z) (q^<=4, z^<6)
+PASS PF (product form) on I_2 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_2
+PASS I_2(q,z) = zeta^2 I_0(q, zeta^-2 z) (q^<=4, z^<6)
+PASS PF (product form) on I_3 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_3
+PASS I_3(q,z) = zeta^3 I_0(q, zeta^-3 z) (q^<=4, z^<6)
+PASS PF (product form) on I_4 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_4
+PASS I_4(q,z) = zeta^4 I_0(q, zeta^-4 z) (q^<=4, z^<6)
+C0 = (1)x^0 + (120)x^1 + (113400)x^2 + (168168000)x^3 + ([305540235000 mod p])x^4 + O(x^13)
+Itilde_1 = (770)x^1 + (810225)x^2 + (3745679000/3)x^3 + ([309485009821347382285101368 mod p])x^4 + O(x^13)
+PASS tau0 = 0 at the zeta point
+PASS b = Itilde_1 at the zeta point (T = log q + Itilde_1/C0 = I_1^Q/I_0^Q)
+T - log q = (770)x^1 + (717825)x^2 + (3225308000/3)x^3 + O(x^13)
+C1 = DT = (1)x^0 + (770)x^1 + (1435650)x^2 + (3225308000)x^3 + O(x^13)
+PASS z^0 terms of z d_T S(H^a) log-free
+PASS H*H^a proportional to H^(a+1 mod 5) (Z/5 charge)
+PASS closure z d_T S(H^4) = kappa_4 S(1)
+   kappa_0 = (1)x^0 + O(x^13)
+   kappa_1 = (1)x^0 + (575)x^1 + (1418125)x^2 + (3798200625)x^3 + O(x^13)
+   kappa_2 = (1)x^0 + O(x^13)
+   kappa_3 = (1)x^0 + (-650)x^1 + (-821750)x^2 + (-1491220000)x^3 + O(x^13)
+   kappa_4 = (1)x^0 + (-650)x^1 + (-821750)x^2 + (-1491220000)x^3 + O(x^13)
+PASS kappa_0 = kappa_2 = 1
+PASS kappa_1 = L^5/(C0^2 C1^3) (= Y_3/5)
+PASS kappa_3 = kappa_4 = C0/C1
+PASS Gram eta(v_k,v_l) depends on k+l only
+   Y_0 = 0 + O(x^13)
+   Y_1 = 0 + O(x^13)
+   Y_2 = 0 + O(x^13)
+   Y_3 = (5)x^0 + (2875)x^1 + (7090625)x^2 + ([18991003125 mod p])x^3 + O(x^13)
+   Y_4 = 0 + O(x^13)
+   Y_5 = 0 + O(x^13)
+   Y_6 = 0 + O(x^13)
+   Y_7 = 0 + O(x^13)
+   Y_8 = (5)x^0 + (-750)x^1 + (2254375)x^2 + (8959962500)x^3 + O(x^13)
+PASS Y_0 = Y_1 = Y_2 = Y_4 = Y_5 = Y_6 = Y_7 = 0
+PASS Y_3 = 5 L^5/(C0^2 C1^3) to q^12
+PASS Y_8 = (L/C1)^5 Y_3
+PASS characteristic polynomial x^5 - (L/C1)^5 (prod kappa = (L/C1)^5)
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=1, N_{0,d} = 2875
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=2, N_{0,d} = 4876875/8
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=3, N_{0,d} = 8564575000/27
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=4, N_{0,d} = 15517926796875/64
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=5, N_{0,d} = 229305888887648
+PASS eigenvalue mu_0 = zeta^0 L/C1
+PASS Delta_0 = C0^2 zeta^(3*0)/L^2, Delta_0(0) = 1 = W_0^0
+PASS eigenvalue mu_1 = zeta^1 L/C1
+PASS Delta_1 = C0^2 zeta^(3*1)/L^2, Delta_1(0) = 1*zeta^3 = W_1^0
+PASS eigenvalue mu_2 = zeta^2 L/C1
+PASS Delta_2 = C0^2 zeta^(3*2)/L^2, Delta_2(0) = 1*zeta^1 = W_2^0
+PASS eigenvalue mu_3 = zeta^3 L/C1
+PASS Delta_3 = C0^2 zeta^(3*3)/L^2, Delta_3(0) = 1*zeta^4 = W_3^0
+PASS eigenvalue mu_4 = zeta^4 L/C1
+PASS Delta_4 = C0^2 zeta^(3*4)/L^2, Delta_4(0) = 1*zeta^2 = W_4^0
+PASS eta(e_0, e_1) = 0
+PASS PF reduction D^4 C0 formula on q-series (q^20)
+PASS PF reduction D^4 Itilde_1 formula on q-series (q^20)
+PASS DL = (L^6-L)/5 on q-series
+PASS C1 = W/c0^2 on q-series
+PASS relation B(varpi_0, varpi_1) is log-free (Lam-part identically zero)
+PASS B(varpi_0, varpi_0) = 0 identically (antisymmetry)
+RELATION (= 0), 18 terms:  (1) L^-5 c3 i0  +  (-1) L^-5 c2 i1  +  (1) L^-5 c2 i0  +  (1) L^-5 c1 i2  +  (2/5) L^-5 c1 i0  +  (2) L^-5 c1^2  +  (-1) L^-5 c0 i3  +  (-1) L^-5 c0 i2  +  (-2/5) L^-5 c0 i1  +  (-4) L^-5 c0 c2  +  (-2) L^-5 c0 c1  +  (-2/5) L^-5 c0^2  +  (-1) c2 i0  +  (-2/5) c1 i0  +  (1) c0 i2  +  (2/5) c0 i1  +  (2) c0 c1  +  (2/5) c0^2
+   i3 elimination: i3 = L^5 * Rest / c0^1
+PASS relation holds on the EXACT rational q-series to q^20: 0 + O(x^22)
+conifold: exponents {0,1,1,2}; indicial P(n) = n(n-1)^2(n-2) checked
+   f0 = (1)x^0 + (2/625)x^3 + (97/18750)x^4 + (2971/468750)x^5 + (2472757/351562500)x^6 + O(x^52)
+   f1 = (1)x^1 + (-19/60)x^3 + (-40027/90000)x^4 + (-1128481/2250000)x^5 + O(x^52)
+   f2 = (1)x^2 + (37/30)x^3 + (2309/1800)x^4 + (286471/225000)x^5 + O(x^52)
+   gamma = 7/10;  varpi^cf_1 = g = f1 + gamma f2 = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (1133/2500)x^4 + (6089/15625)x^5 + O(x^52)
+   log solution g log u + h, h = (-23/360)x^3 + (-6397/60000)x^4 + (-333323/2500000)x^5 + O(x^52)
+PASS log-solution obstructions (u^-3..u^-1) vanish for g
+PASS pairings B(f_a,f_b) are D-constant
+   B in basis (f0, g, f2): [[Fraction(0, 1), Fraction(0, 1), Fraction(2, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(-2, 1), Fraction(0, 1), Fraction(0, 1)]] ;  B(g, log solution) = (-1)x^0 + O(x^51)
+PASS B(g, analytic) = 0 for all analytic solutions (vanishing period; pairing normalisation vacuous)
+   FREEDOM: varpi^cf_0 = f0 + alpha g + beta f2 with (alpha, beta) free and the scale of g free; chosen alpha = beta = 0
+   t_c = g/varpi^cf_0 = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (9/20)x^4 + (35839/93750)x^5 + O(x^52)
+PASS Cf(c1) = D_s Cf(c0) with D = -((1-s^5)/5) s^-4 d/ds
+PASS Cf(i1) = D_s Cf(i0) - Cf(c0)
+PASS Cf preserves the relation (Cf(Rel) = 0 as s-series, prec O(s^246))
+PASS Cf(C1) independent of the Lam value (log-free element)
+   Cf(C1) = Cf(D T) = D t_c = (-1)x^0 + (-2/5)x^5 + (-6/25)x^10 + (-4/25)x^15 + (-2089/18750)x^20 + (-18484/234375)x^25 + O(x^255)
+time 2.6 s
+==============================================================================
+prime p = 2305843009213693951, zeta = 1781303817082419751
+PASS PF (product form) on I_0, generic sample 0, q^<=12
+PASS PF (product form) on I_1, generic sample 0, q^<=12
+PASS PF (product form) on I_2, generic sample 0, q^<=12
+PASS PF (product form) on I_3, generic sample 0, q^<=12
+PASS PF (product form) on I_4, generic sample 0, q^<=12
+PASS s^0 term of I/(zC0) = 1 (generic 0)
+PASS s^1 log q term = H (generic 0)
+PASS s^1 term has no H^2,H^3,H^4 components (generic 0)
+   tau0/e_1 = (120)x^1 + (155700)x^2 + ([276016000 mod p])x^3 + O(x^13)
+PASS mirror-map coefficient b = Itilde_1 (generic 0)
+PASS PF (product form) on I_0, generic sample 1, q^<=12
+PASS PF (product form) on I_1, generic sample 1, q^<=12
+PASS PF (product form) on I_2, generic sample 1, q^<=12
+PASS PF (product form) on I_3, generic sample 1, q^<=12
+PASS PF (product form) on I_4, generic sample 1, q^<=12
+PASS s^0 term of I/(zC0) = 1 (generic 1)
+PASS s^1 log q term = H (generic 1)
+PASS s^1 term has no H^2,H^3,H^4 components (generic 1)
+PASS tau0/e_1(lambda) the same for both weight samples
+   tau0/e_1 = (120)x^1 + (155700)x^2 + ([276016000 mod p])x^3 + O(x^13)
+PASS mirror-map coefficient b = Itilde_1 (generic 1)
+PASS PF (product form) on I_0 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_0
+PASS I_0(q,z) = zeta^0 I_0(q, zeta^-0 z) (q^<=4, z^<6)
+PASS PF (product form) on I_1 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_1
+PASS I_1(q,z) = zeta^1 I_0(q, zeta^-1 z) (q^<=4, z^<6)
+PASS PF (product form) on I_2 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_2
+PASS I_2(q,z) = zeta^2 I_0(q, zeta^-2 z) (q^<=4, z^<6)
+PASS PF (product form) on I_3 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_3
+PASS I_3(q,z) = zeta^3 I_0(q, zeta^-3 z) (q^<=4, z^<6)
+PASS PF (product form) on I_4 at the zeta point
+PASS PF explicit polynomial form [M^5-1-q(3125M^5+9375zM^4+10625z^2M^3+5625z^3M^2+1370z^4M+120z^5)] on I_4
+PASS I_4(q,z) = zeta^4 I_0(q, zeta^-4 z) (q^<=4, z^<6)
+C0 = (1)x^0 + (120)x^1 + (113400)x^2 + ([168168000 mod p])x^3 + ([305540235000 mod p])x^4 + O(x^13)
+Itilde_1 = (770)x^1 + (810225)x^2 + ([768614337653124317 mod p])x^3 + ([1152923818167167288 mod p])x^4 + O(x^13)
+PASS tau0 = 0 at the zeta point
+PASS b = Itilde_1 at the zeta point (T = log q + Itilde_1/C0 = I_1^Q/I_0^Q)
+T - log q = (770)x^1 + (717825)x^2 + ([768614337479667317 mod p])x^3 + O(x^13)
+C1 = DT = (1)x^0 + (770)x^1 + (1435650)x^2 + ([3225308000 mod p])x^3 + O(x^13)
+PASS z^0 terms of z d_T S(H^a) log-free
+PASS H*H^a proportional to H^(a+1 mod 5) (Z/5 charge)
+PASS closure z d_T S(H^4) = kappa_4 S(1)
+   kappa_0 = (1)x^0 + O(x^13)
+   kappa_1 = (1)x^0 + (575)x^1 + (1418125)x^2 + ([3798200625 mod p])x^3 + O(x^13)
+   kappa_2 = (1)x^0 + O(x^13)
+   kappa_3 = (1)x^0 + (-650)x^1 + (-821750)x^2 + ([2305843007722473951 mod p])x^3 + O(x^13)
+   kappa_4 = (1)x^0 + (-650)x^1 + (-821750)x^2 + ([2305843007722473951 mod p])x^3 + O(x^13)
+PASS kappa_0 = kappa_2 = 1
+PASS kappa_1 = L^5/(C0^2 C1^3) (= Y_3/5)
+PASS kappa_3 = kappa_4 = C0/C1
+PASS Gram eta(v_k,v_l) depends on k+l only
+   Y_0 = 0 + O(x^13)
+   Y_1 = 0 + O(x^13)
+   Y_2 = 0 + O(x^13)
+   Y_3 = (5)x^0 + (2875)x^1 + (7090625)x^2 + ([18991003125 mod p])x^3 + O(x^13)
+   Y_4 = 0 + O(x^13)
+   Y_5 = 0 + O(x^13)
+   Y_6 = 0 + O(x^13)
+   Y_7 = 0 + O(x^13)
+   Y_8 = (5)x^0 + (-750)x^1 + (2254375)x^2 + ([8959962500 mod p])x^3 + O(x^13)
+PASS Y_0 = Y_1 = Y_2 = Y_4 = Y_5 = Y_6 = Y_7 = 0
+PASS Y_3 = 5 L^5/(C0^2 C1^3) to q^12
+PASS Y_8 = (L/C1)^5 Y_3
+PASS characteristic polynomial x^5 - (L/C1)^5 (prod kappa = (L/C1)^5)
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=1, N_{0,d} = 2875
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=2, N_{0,d} = 4876875/8
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=3, N_{0,d} = 8564575000/27
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=4, N_{0,d} = 15517926796875/64
+PASS Yukawa Y_3 = 5 + Sum d^3 N_{0,d} Q^d: d=5, N_{0,d} = 229305888887648
+PASS eigenvalue mu_0 = zeta^0 L/C1
+PASS Delta_0 = C0^2 zeta^(3*0)/L^2, Delta_0(0) = 1 = W_0^0
+PASS eigenvalue mu_1 = zeta^1 L/C1
+PASS Delta_1 = C0^2 zeta^(3*1)/L^2, Delta_1(0) = 1*zeta^3 = W_1^0
+PASS eigenvalue mu_2 = zeta^2 L/C1
+PASS Delta_2 = C0^2 zeta^(3*2)/L^2, Delta_2(0) = 1*zeta^1 = W_2^0
+PASS eigenvalue mu_3 = zeta^3 L/C1
+PASS Delta_3 = C0^2 zeta^(3*3)/L^2, Delta_3(0) = 1*zeta^4 = W_3^0
+PASS eigenvalue mu_4 = zeta^4 L/C1
+PASS Delta_4 = C0^2 zeta^(3*4)/L^2, Delta_4(0) = 1*zeta^2 = W_4^0
+PASS eta(e_0, e_1) = 0
+PASS PF reduction D^4 C0 formula on q-series (q^20)
+PASS PF reduction D^4 Itilde_1 formula on q-series (q^20)
+PASS DL = (L^6-L)/5 on q-series
+PASS C1 = W/c0^2 on q-series
+PASS relation B(varpi_0, varpi_1) is log-free (Lam-part identically zero)
+PASS B(varpi_0, varpi_0) = 0 identically (antisymmetry)
+RELATION (= 0), 18 terms:  (1) L^-5 c3 i0  +  (-1) L^-5 c2 i1  +  (1) L^-5 c2 i0  +  (1) L^-5 c1 i2  +  (2/5) L^-5 c1 i0  +  (2) L^-5 c1^2  +  (-1) L^-5 c0 i3  +  (-1) L^-5 c0 i2  +  (-2/5) L^-5 c0 i1  +  (-4) L^-5 c0 c2  +  (-2) L^-5 c0 c1  +  (-2/5) L^-5 c0^2  +  (-1) c2 i0  +  (-2/5) c1 i0  +  (1) c0 i2  +  (2/5) c0 i1  +  (2) c0 c1  +  (2/5) c0^2
+   i3 elimination: i3 = L^5 * Rest / c0^1
+PASS relation holds on the EXACT rational q-series to q^20: 0 + O(x^22)
+conifold: exponents {0,1,1,2}; indicial P(n) = n(n-1)^2(n-2) checked
+   f0 = (1)x^0 + (2/625)x^3 + (97/18750)x^4 + (2971/468750)x^5 + (2472757/351562500)x^6 + O(x^52)
+   f1 = (1)x^1 + (-19/60)x^3 + (-40027/90000)x^4 + (-1128481/2250000)x^5 + O(x^52)
+   f2 = (1)x^2 + (37/30)x^3 + (2309/1800)x^4 + (286471/225000)x^5 + O(x^52)
+   gamma = 7/10;  varpi^cf_1 = g = f1 + gamma f2 = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (1133/2500)x^4 + (6089/15625)x^5 + O(x^52)
+   log solution g log u + h, h = (-23/360)x^3 + (-6397/60000)x^4 + (-333323/2500000)x^5 + O(x^52)
+PASS log-solution obstructions (u^-3..u^-1) vanish for g
+PASS pairings B(f_a,f_b) are D-constant
+   B in basis (f0, g, f2): [[Fraction(0, 1), Fraction(0, 1), Fraction(2, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(-2, 1), Fraction(0, 1), Fraction(0, 1)]] ;  B(g, log solution) = (-1)x^0 + O(x^51)
+PASS B(g, analytic) = 0 for all analytic solutions (vanishing period; pairing normalisation vacuous)
+   FREEDOM: varpi^cf_0 = f0 + alpha g + beta f2 with (alpha, beta) free and the scale of g free; chosen alpha = beta = 0
+   t_c = g/varpi^cf_0 = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (9/20)x^4 + (35839/93750)x^5 + O(x^52)
+PASS Cf(c1) = D_s Cf(c0) with D = -((1-s^5)/5) s^-4 d/ds
+PASS Cf(i1) = D_s Cf(i0) - Cf(c0)
+PASS Cf preserves the relation (Cf(Rel) = 0 as s-series, prec O(s^246))
+PASS Cf(C1) independent of the Lam value (log-free element)
+   Cf(C1) = Cf(D T) = D t_c = (-1)x^0 + (-2/5)x^5 + (-6/25)x^10 + (-4/25)x^15 + (-2089/18750)x^20 + (-18484/234375)x^25 + O(x^255)
+time 4.1 s
+ALL S1 CHECKS PASSED

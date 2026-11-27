@@ -1,0 +1,139 @@
+% Section 2, part 1 of 8; label prefix: set. The main file inputs only this part; each part inputs the next.
+% Part 1: introduction; the formal quintic, genus-zero data, PF5 = z^5 D PF4 - 1, the quoted inputs (M) and (G0).
+% Part 2: the large-radius cyclic structure: statement and the lemmas on the grading, the unit, the periods, the Birkhoff recursion.
+% Part 3: the Wronskian, operators of order three, proof of the proposition, its corollary; points; Frobenius data.
+% Part 4: the R-matrix and its rows, (QRR), the twist sign, the derivation of (QRR), the rotation of h_w; the graph sum, (T).
+% Part 5: the Frobenius basis at the conifold point, the conifold frames, the conifold expansion, tau, the canonical coordinates.
+% Part 6: the model, its rows and the T-system, M_0 and its symplecticity.
+% Part 7: the model cohomological field theory, its homogeneity, the dilaton lemma.
+% Part 8: the hatted theory, the outer graph sum, polar parts; Property N(g) and the constants c_g.
+% No new macros. Local letters are declared where they occur.
+\section{The formal quintic, the model and the outer graph sum}
+\label{sec:set}
+
+This section fixes the objects of the note. \Cref{sec:set-fq} defines the formal quintic and its genus-zero data, states the two quoted genus-zero inputs, the mirror theorem (M) and the axioms (G0) of the twisted theory, and derives from them the quantum product in the flat basis at large radius (\cref{prop:set-cyclicLR}). \Cref{sec:set-rows} defines the $R$-matrix and its rows and states the quoted normalisation (QRR) at $q=0$; \cref{sec:set-graph} defines the graph sum and states the quoted reconstruction (T). \Cref{sec:set-frames} introduces the conifold frames, the differential ring of the periods with its conifold expansion, and the natural variable $\tau(u)$. \Cref{sec:set-model} defines the model $\Wv(p)=p^4/4+v/p$, its rows, its $R$-matrix $\Mo$ and its cohomological field theory, and proves the symplecticity of $\Mo$, the homogeneity of the model theory and the dilaton lemma. \Cref{sec:set-hat,sec:set-N} define the hatted theory, the outer graph sum with its terms $T_\Gamma$, and Property N($g$).
+
+Apart from the quoted inputs (M), (G0), (QRR) and (T), the definitions and results of \cite{PPZ15} on the action of $R$-matrices, with the formula \cite[(8)]{PPZ15} for the classes $\psi$ under the map forgetting one point (\cref{lem:set-pushins}), and the formula \cite[(1.7)]{AC96}, everything in this section is a definition or is proved here; \cref{rmk:set-qrrderiv}, which no proof uses, quotes further statements. Four statements about the objects defined here are proved later, and nothing in this section depends on them: the conifold expansion commutes with the derivation (\cref{lem:gau-confexp}), the rows lie in the differential ring of the periods (\cref{cor:gau-rowsNN}), the rows are covariant under the colour rotation (\cref{lem:gau-colrows}), and the outer matrix $R'$ of \cref{def:set-outer} is symplectic, which follows from \cref{thm:gam-D}, whose proof does not use $R'$. The evaluation of \cref{def:set-confexp} uses two identities of differential operators proved in \cref{sec:gau}, \cref{lem:gau-adj} and \cref{lem:gau-conc}~(i), whose proofs use only the coefficients of $\PFfour$. No finite computation enters a proof; the numbers printed as illustrations are values of the definitions.
+
+%-------------------------------------------------------------------------------
+\subsection{The formal quintic and its genus-zero data}
+\label{sec:set-fq}
+
+Throughout, $\zeta\coloneqq\re^{2\pi\ri/5}$, colours $i,j$ and flat indices $a,b$ run over $\bbZ/5$, and $\overline{\mathcal M}_{g,n}$ is the moduli space of stable curves of genus $g$ with $n$ marked points.
+
+\begin{defn}[The formal quintic]
+\label{def:set-fq}
+Let $\bbT=(\bbC^*)^5$ act on $\bbP^4$ with weights $\lambda_0,\dots,\lambda_4$ on $H^0(\bbP^4,\cO(1))$, let $p_0,\dots,p_4$ be the fixed points and $H\coloneqq c_1^{\bbT}(\cO(1))$, so that $H|_{p_i}=\lambda_i$, the tangent weights at $p_i$ are $\lambda_i-\lambda_j$ ($j\neq i$), and the fibre of $\cO(5)$ at $p_i$ has the weight $5\lambda_i$ \cite[(10)]{LP20}. For $g,d\geq0$ the \emph{formal quintic invariant} is
+\[
+N_{g,d}\coloneqq\int_{[\overline{\mathcal M}_g(\bbP^4,d)]^{\mathrm{vir}}}e\bigl(R\pi_*f^*\cO(5)\bigr)
+\]
+\cite[Section~0.2, (5)]{LP18}, \cite[Section~0.2, (5)]{LP20} (whenever the moduli space is non-empty). It is defined by the virtual localisation formula \cite{MR1666787}, the Euler class being taken on each $\bbT$-fixed locus as the quotient of the top Chern classes of the two terms of $R\pi_*f^*\cO(5)$; the result is a rational function of the weights, homogeneous of degree $0$ (the rank $5d+1-g$ of $R\pi_*f^*\cO(5)$ equals the virtual dimension), and it is specialised at $\lambda_i=\zeta^i\lambda$, where by homogeneity it does not depend on $\lambda$; we put $\lambda=1$. (On a fixed locus the second term comes from the contracted components, where it is $\bbE^\vee\otimes\cO(5)|_{p_i}$, with weight $5\lambda_i$ shifted by nilpotent classes; its top Chern class stays invertible at $\lambda_i=\zeta^i$ since $5\zeta^i\neq0$.) The specialisation at the fifth roots of unity is that of \cite{ZZ08}; see \cite[Section~3.1, (9)]{GJR18}. For $g\geq2$ the \emph{genus-$g$ potential} is
+\[
+F_g\coloneqq\sum_{d\geq0}N_{g,d}\,\Qn^d\in\bbQ\fps{\Qn},
+\]
+the constant-map term $d=0$ included, $\Qn$ being the degree variable. Along the mirror map, $\Qn=\re^{T(q)}\in q\bbQ\fps q$ (\cref{def:set-genus0}), $F_g$ becomes a power series in $q$, again written $F_g$.
+
+More generally, for $2g-2+n>0$ and $\gamma_1,\dots,\gamma_n\in H^*_{\bbT}(\bbP^4)$ let
+\[
+\Omega_{g,n}(\gamma_1,\dots,\gamma_n)\coloneqq\sum_{d\geq0}\Qn^d\,\rho_*\Bigl(e\bigl(R\pi_*f^*\cO(5)\bigr)\prod_{j=1}^n\mathrm{ev}_j^*\gamma_j\cap[\overline{\mathcal M}_{g,n}(\bbP^4,d)]^{\mathrm{vir}}\Bigr)\in H^*(\overline{\mathcal M}_{g,n})\fps{\Qn},
+\]
+$\rho$ the stabilisation map, defined and specialised in the same way; with the \emph{twisted pairing} $\eta(a,b)\coloneqq\int_{\bbP^4}ab\,e_{\bbT}(\cO(5))$ these are the classes of the cohomological field theory of the formal quintic \cite[Section~4.1]{GJR18}, and $F_g=\int_{\overline{\mathcal M}_g}\Omega_{g,0}$. At $\lambda_i=\zeta^i$ the relation $\prod_j(H-\lambda_j)=0$ of $H^*_{\bbT}(\bbP^4)$ becomes $H^5=1$, and the \emph{state space} is
+\[
+\bbH\coloneqq\bbQ[H]/(H^5-1),\qquad\text{with the flat basis }H^a\ (a\in\bbZ/5),\quad H^0=1 .
+\]
+Restriction to $p_i$ is $H\mapsto\zeta^i$; an element of $\bbH\otimes\bbQ(\zeta)$ is determined by its five restrictions. Since $e_{\bbT}(\cO(5))=5H$ and $e_{\bbT}(T_{p_i}\bbP^4)=\prod_{j\neq i}(\lambda_i-\lambda_j)$, which is $5\zeta^{4i}$ at $\lambda_i=\zeta^i$, the derivative of $x^5-1$ at $\zeta^i$, localisation on $\bbP^4$ gives
+\[
+\eta(H^a,H^b)=\sum_{i\in\bbZ/5}\frac{5\,\zeta^{i(a+b+1)}}{5\,\zeta^{4i}}=5\,\delta_{a+b\equiv3\bmod5},\qquad\eta^{cc'}=\tfrac15\,\delta_{c+c'\equiv3\bmod5},
+\]
+$(\eta^{cc'})$ being the inverse matrix of $(\eta(H^c,H^{c'}))$; as matrices $\eta^{-1}=\eta/25$. The invariants $N_{g,d}$ are rational: a permutation of the coordinates of $\bbC^5$ permutes the weights and preserves $H$ and $\cO(5)$ with their linearisations, so the rational function of the weights is symmetric, and its value at $\lambda_i=\zeta^i$ is fixed by the Galois group of $\bbQ(\zeta)$, which permutes the $\zeta^i$. The Frobenius data of $\bbH$ are fixed in \cref{def:set-frob}.
+\end{defn}
+
+\begin{defn}[Genus-zero data]
+\label{def:set-genus0}
+Let $\Dq\coloneqq q\,\dd/\dd q$, and let $\logq$ be an indeterminate with $\Dq\logq=1$, a formal $\log q$; $\Dq$ acts on $\bbQ\fps q[\logq]$, and the descendant variable $z$ is a constant for $\Dq$. Put
+\[
+C_0\coloneqq\sum_{d\geq0}\frac{(5d)!}{(d!)^5}q^d,\qquad\tilde I_1\coloneqq5\sum_{d\geq1}\frac{(5d)!}{(d!)^5}\Bigl(\sum_{m=d+1}^{5d}\frac1m\Bigr)q^d,\qquad I_1\coloneqq C_0\logq+\tilde I_1,
+\]
+the \emph{mirror map} $T\coloneqq I_1/C_0=\logq+\tilde I_1/C_0$, $C_1\coloneqq\Dq T$, and $\re^T\coloneqq q\exp(\tilde I_1/C_0)\in q\bbQ\fps q$; thus $C_0,C_1\in1+q\bbQ\fps q$. Put $L\coloneqq(1-5^5q)^{-1/5}\in\bbQ\fps q$, so that $\Dq L=5^4qL^6=(L^6-L)/5$. The \emph{I-function} $I(q,z)$ is the $\bbH\otimes\bbQ(\zeta)$-valued series with the restrictions
+\[
+I|_{p_i}=I_i(q,z)\coloneqq z\,q^{\zeta^i/z}\sum_{d\geq0}q^d\,\frac{\prod_{k=1}^{5d}(5\zeta^i+kz)}{\prod_{j\in\bbZ/5}\prod_{k=1}^{d}(\zeta^i-\zeta^j+kz)},\qquad q^{\zeta^i/z}\coloneqq\exp(\zeta^i\logq/z),
+\]
+$z$ times a series in $z^{-1}$ with coefficients in $\bbQ(\zeta)\fps q[\logq]$. The fifth-order and the fourth-order operators are
+\begin{equation}
+\label{eq:set-PF5}
+\PFfive\coloneqq(z\Dq)^5-1-q\prod_{k=1}^5(5z\Dq+kz),
+\end{equation}
+\begin{equation}
+\label{eq:set-PF4}
+\PFfour\coloneqq\Dq^4-5q\prod_{k=1}^4(5\Dq+k)=(1-5^5q)\Dq^4-6250q\Dq^3-4375q\Dq^2-1250q\Dq-120q .
+\end{equation}
+With $u\coloneqq1-5^5q$ (\cref{def:set-points}) they read
+\begin{gather*}
+\PFfour=u\Dq^4-(1-u)\Bigl(2\Dq^3+\frac75\Dq^2+\frac25\Dq+\frac{24}{625}\Bigr),\\
+\PFfive=u(z\Dq)^5-1-(1-u)\Bigl(3z(z\Dq)^4+\frac{17}5z^2(z\Dq)^3+\frac95z^3(z\Dq)^2+\frac{274}{625}z^4(z\Dq)+\frac{24}{625}z^5\Bigr),
+\end{gather*}
+because $5^5q=1-u$ and the coefficients are the elementary symmetric functions of $\frac15,\frac25,\frac35,\frac45$, respectively of $\frac15,\dots,\frac55$. The eigenvalues of the quantum product by $H$, the canonical coordinates and the normalisations $\Delta_i$ are consequences of (M) and (G0); they are stated in \cref{cor:set-cyclicPF5}~(a).
+\end{defn}
+
+\begin{lem}[$\PFfive=z^5\Dq\PFfour-1$]
+\label{lem:set-pf5}
+As operators on any differential $\bbQ$-algebra that contains $q$ with $\Dq q=q$ and in which $z$ is a constant (for instance any differential $\bbQ\fps q$-algebra), $\PFfive=z^5\,\Dq\circ\PFfour-1$.
+\end{lem}
+
+\begin{proof}
+By the Leibniz rule $\Dq(qf)=qf+q\Dq f$, i.e.\ $\Dq\circ q=q\circ(\Dq+1)$, and so $5\Dq\circ q=q\circ(5\Dq+5)$. Hence
+\[
+\Dq\circ\PFfour=\Dq^5-5\,\Dq\circ q\circ\prod_{k=1}^4(5\Dq+k)=\Dq^5-q\circ(5\Dq+5)\prod_{k=1}^4(5\Dq+k)=\Dq^5-q\prod_{k=1}^5(5\Dq+k).
+\]
+Since $z$ is a constant, $(z\Dq)^5=z^5\Dq^5$ and $5z\Dq+kz=z(5\Dq+k)$, so $\PFfive=z^5\bigl(\Dq^5-q\prod_{k=1}^5(5\Dq+k)\bigr)-1=z^5\,\Dq\circ\PFfour-1$.
+\end{proof}
+
+\begin{thm}[The genus-zero mirror theorem (M); quoted]
+\label{thm:set-mirror}
+For $d\geq0$ and $n\geq1$, with $n\geq3$ if $d=0$, let $E_{0,n,d}\coloneqq R^0\pi_*f^*\cO(5)$ on $\overline{\mathcal M}_{0,n}(\bbP^4,d)$, a vector bundle of rank $5d+1$ because $R^1\pi_*f^*\cO(5)=0$ in genus $0$, and let
+\[
+\langle\psi^{k_1}\gamma_1,\dots,\psi^{k_n}\gamma_n\rangle_{0,n,d}\coloneqq\int_{[\overline{\mathcal M}_{0,n}(\bbP^4,d)]}e_{\bbT}(E_{0,n,d})\prod_{j=1}^n\mathrm{ev}_j^*\gamma_j\,\psi_j^{k_j}
+\]
+be the genus-zero twisted invariants. The \emph{J-function}, in the normalisation of \cite[Section~6, (10)]{MR2276766} with the twisted pairing, is
+\[
+J(t,z)\coloneqq z+t+\sum_{n,d}\frac{\Qn^d}{n!}\sum_{a\in\bbZ/5}\Bigl\langle t,\dots,t,\frac{H^a}{z-\psi}\Bigr\rangle_{0,n+1,d}H^\vee_a,\qquad t\in H^*_{\bbT}(\bbP^4),
+\]
+where $H^\vee_a$ is the $\eta$-dual basis and the sum runs over the $(n,d)$ for which $\overline{\mathcal M}_{0,n+1}(\bbP^4,d)$ is defined. Then at $\lambda_i=\zeta^i$, with $\Qn=1$ and $t=T(q)H$,
+\[
+\text{(M)}\qquad J\bigl(T(q)H,z\bigr)=\frac{I(q,z)}{C_0(q)},
+\]
+an identity of $z$ times series in $z^{-1}$ with coefficients in $\bbH\otimes\bbQ(\zeta)\fps q[\logq]$.
+\end{thm}
+
+\emph{The pin.} (M) is \cite[Theorem~11.6]{MR1408320} in the Calabi--Yau case $n=4$, $r=1$, $l_1=5$, with $\lambda'=0$, rewritten for the functions $\mathfrak s_i$ below and specialised at $\lambda_i=\zeta^i$; the set-up is \cite[Section~9, pp.~23--27]{MR1408320}, and the proof of Theorem~11.6 rests on \cite[Proposition~11.4]{MR1408320}. In this paragraph $n$, $r$, $l_a$, $\lambda'_a$, $\hbar$, $Y_{2,d}$, $E'_d$, $Z_i$, $Z_i^*$, $\mathfrak f$, $\mathfrak g_l$, $\mathcal E_i$, $\mathfrak s_i$, $\mathfrak s_i^*$ are Givental's objects. Givental considers $\bbC\bbP^n$ with the torus of $\bbC^{n+1}$ (weights $\lambda_\alpha$, $\alpha=0,\dots,n$) and $\cO(l_1)\oplus\dots\oplus\cO(l_r)$ with fibre weights $\lambda'_a$; $Y_{2,d}$ is the space of genus-zero stable maps of degree $d$ with two marked points $x_0,x_1$, $E'_d$ is the Euler class of the bundle of sections vanishing at $x_0$, $c=-\psi_0$ is the first Chern class of the tangent line at $x_0$, and for $r=1$ (p.~27) $Z_i\coloneqq\sum_{d\geq0}q^d\int_{Y_{2,d}}e_0^*\bigl(\prod_{j\neq i}(p-\lambda_j)\bigr)(\hbar+c)^{-1}E'_d$, the term $d=0$ being $1$. Put $\mathfrak f\coloneqq\sum_d\prod_a(l_ad)!/(d!)^{n+1}q^d$ and $\mathfrak g_l\coloneqq\sum_{d\geq1}q^d\prod_a(l_ad)!/(d!)^{n+1}\sum_{m=1}^{ld}\frac1m$. In the Calabi--Yau case $\sum_al_a=n+1$, Theorem~11.6 states that
+\[
+Z_i^*\coloneqq\sum_{d\geq0}q^d\,\frac{\prod_a\prod_{m=1}^{l_ad}(l_a\lambda_i-\lambda'_a+m\hbar)}{\prod_\alpha\prod_{m=1}^d(\lambda_i-\lambda_\alpha+m\hbar)}
+\]
+coincides with $Z_i$ after (1) the substitution $Q=q\exp\{\sum_al_a(\mathfrak g_{l_a}-\mathfrak g_1)/\mathfrak f\}$, (2) the multiplication of $Z_i(Q(q),\hbar)$ by $\mathcal E_i\coloneqq\exp\{(\mathfrak f\hbar)^{-1}[\sum_a(l_a\lambda_i-\lambda'_a)\mathfrak g_{l_a}-(\sum_\alpha(\lambda_i-\lambda_\alpha))\mathfrak g_1]\}$, and (3) the multiplication by $\mathfrak f$. With $\mathfrak s_i^*(t)\coloneqq\re^{\lambda_it/\hbar}Z_i^*(\re^t,\hbar)$ and $\mathfrak s_i(T)\coloneqq\re^{\lambda_iT/\hbar}Z_i(\re^T,\hbar)$, $\re^T=Q(\re^t)$, this reads $\mathfrak s_i^*(t)=\mathfrak f\,\mathcal E_i\,\re^{-\lambda_i(T-t)/\hbar}\,\mathfrak s_i(T)$. As $T-t=\sum_al_a(\mathfrak g_{l_a}-\mathfrak g_1)/\mathfrak f$, the exponent of $\mathcal E_i\re^{-\lambda_i(T-t)/\hbar}$ is $(\mathfrak f\hbar)^{-1}[\mathfrak g_1\sum_\alpha\lambda_\alpha-\sum_a\lambda'_a\mathfrak g_{l_a}+\lambda_i\mathfrak g_1(\sum_al_a-(n+1))]$, whose last term vanishes; hence
+\[
+\mathfrak s_i^*(t)=\mathfrak f\exp\Bigl\{\frac{\mathfrak g_1\sum_\alpha\lambda_\alpha-\sum_a\lambda'_a\mathfrak g_{l_a}}{\hbar\,\mathfrak f}\Bigr\}\,\mathfrak s_i(T).
+\]
+(\cite[Corollary~11.7]{MR1408320} states this relation with $l_\alpha$ printed in place of $\lambda_\alpha$ in the exponent; we use Theorem~11.6.)
+
+\emph{Translation.} For the formal quintic $n=4$, $r=1$, $l_1=5$, $\lambda'_1=0$ (\cref{def:set-fq}), $p=H$, $\hbar=z$, $\re^t=q$, $t=\logq$. (a) $\mathfrak f=C_0$ and $5(\mathfrak g_5-\mathfrak g_1)=\tilde I_1$, so (1) is the mirror map $T=\logq+\tilde I_1/C_0$ of \cref{def:set-genus0}. (b) The factor of the last display is $C_0\exp\{e_1(\lambda)\mathfrak g_1/(zC_0)\}$, $e_1(\lambda)=\sum_\alpha\lambda_\alpha$, which equals $C_0$ at $\lambda_i=\zeta^i$. (c) $\mathfrak s_i^*(t)=I_i(q,z)/z$. (d) $\mathfrak s_i(T)=J(TH,z)|_{p_i}/z$. For (d): the $\eta$-dual of the functional $\gamma\mapsto\int_{\overline{\mathcal M}_{0,1}(\bbP^4,d)}\beta\,\mathrm{ev}^*\gamma$ is $\mathrm{ev}_*(\beta)/e_{\bbT}(\cO(5))$, and $E_{0,1,d}$ is an extension of $\mathrm{ev}^*\cO(5)$ by the bundle of sections vanishing at the marking (the evaluation is surjective because $f^*\cO(5)$ is globally generated), so $\mathrm{ev}_*(e(E_{0,1,d})\beta)/e(\cO(5))=\mathrm{ev}_*(E'_d\beta)$; with the divisor equation, $J(TH,z)=\re^{TH/z}\bigl(z+\sum_{d\geq1}\re^{dT}\mathrm{ev}_*\bigl(E'_d/(z-\psi)\bigr)\bigr)$. On the other side, $E'_d$ is pulled back from $\overline{\mathcal M}_{0,1}(\bbP^4,d)$ along the map $\pi$ forgetting $x_1$, and $\pi_*(\hbar-\psi_0)^{-1}=\hbar^{-1}(\hbar-\psi_0)^{-1}$ by the string equation for stable maps ($\pi_*\psi_0^k=\psi_0^{k-1}$, $d\geq1$); since $\int_{\bbP^4}\prod_{j\neq i}(H-\lambda_j)\,\gamma=\gamma|_{p_i}$, this gives $Z_i(q,z)=1+z^{-1}\sum_{d\geq1}q^d\,\mathrm{ev}_*\bigl(E'_d/(z-\psi)\bigr)|_{p_i}$, which is (d). By (a)--(d) the displayed relation reads $C_0\,J(TH,z)|_{p_i}=I_i(q,z)$ for every $i$, that is (M).
+
+\emph{Hypotheses.} Theorem~11.6 is stated for the Calabi--Yau case, here $l_1=5=n+1$. Givental works equivariantly for the torus of $\bbC^{n+1}$ and the fibre torus; the classes involved are polynomial in $\lambda$, $\lambda'$ and $\hbar$, so $\lambda'=0$, the case of the formal quintic, is a specialisation. In genus zero $H^1(C,f^*\cO(5))=0$ for every stable map, so Givental's class $E_d$, the Euler class of the bundle with fibre $H^0(C,f^*\cO(5))$, is the Euler class of a vector bundle, and the genus-zero twisted classes above are the equivariant Euler classes of the bundles $E_{0,n,d}$; nothing beyond this convexity is needed in genus zero. Both sides of the relation, after the factor $\re^{\lambda_iT/z}$ is removed, are, coefficientwise in $q$ and $z^{-1}$, polynomials in the weights (on the left equivariant push-forwards of classes on proper moduli spaces; on the right expand $1/(\lambda_i-\lambda_j+mz)$ in $z^{-1}$), while $T$ and $C_0$ do not depend on the weights; so the specialisation $\lambda_i=\zeta^i$ is a ring homomorphism, and $e_1(\zeta^0,\dots,\zeta^4)=0$ gives (M). At generic weights the relation reads $J(TH,z)=\exp\bigl(-e_1(\lambda)\mathfrak g_1/(zC_0)\bigr)I/C_0$. The modern formulation \cite[Theorem~2]{MR2276766} concerns targets without a torus action and is not used.
+
+\begin{thm}[The genus-zero axioms (G0); quoted]
+\label{thm:set-G0}
+At $\lambda_i=\zeta^i$ the classes $\Omega_{0,n}$ of \cref{def:set-fq} form the genus-zero part of a cohomological field theory with unit $1$ for the pairing $\eta$ \cite[Section~4.1]{GJR18}, \cite[Def.~0.3]{PPZ15}, and the following hold.
+\begin{itemize}
+\item[(a)] For $d\geq1$ the invariant $\langle H^{a_1},\dots,H^{a_n}\rangle_{0,n,d}$, before the specialisation, lies in $\bbQ[\lambda_0,\dots,\lambda_4]$, is symmetric in the $\lambda_j$ and homogeneous of degree $\sum_ja_j-n$: the moduli space is proper of dimension $5d+n+1$, $E_{0,n,d}$ has rank $5d+1$, and a permutation of the coordinates of $\bbC^5$ permutes the weights and preserves $H$ and $\cO(5)$ with their linearisations.
+\item[(b)] The string and divisor equations hold: $E_{0,n+1,d}$ is the pull-back of $E_{0,n,d}$ along the map forgetting a point, and $\int_dH=d$.
+\item[(c)] The splitting axiom for $\eta$ holds (by the normalisation sequence along a boundary divisor, $e(E)$ restricted to the divisor times $e(\mathrm{ev}_{\mathrm{node}}^*\cO(5))$ is $e(E_1)e(E_2)$), hence the WDVV equations, and so does the genus-zero topological recursion relation.
+\item[(d)] The quantum differential equation \cite[Section~5.2, (14)]{GJR18}: let
+\[
+\langle\!\langle x,y,w\rangle\!\rangle(t)\coloneqq\sum_{n,d}\frac{\Qn^d}{n!}\langle x,y,w,t,\dots,t\rangle_{0,n+3,d},\qquad x*y\coloneqq\sum_{c,c'}\langle\!\langle x,y,H^c\rangle\!\rangle\,\eta^{cc'}H^{c'},
+\]
+the quantum product at $t$, $(\eta^{cc'})$ being the inverse matrix of $(\eta(H^c,H^{c'}))$, and let $J_a\coloneqq\partial J/\partial t^a$ be the derivative in the direction $H^a$. Then $z\,\partial_{t^b}J_a=\sum_c(H^b*H^a)^cJ_c$, $J_a=H^a+O(z^{-1})$, and $J_0=J/z$ (string equation).
+\end{itemize}
+\end{thm}
+
+These two statements, (M) and (G0), are the quoted genus-zero inputs of the note. They enter only through \cref{prop:set-cyclicLR} and \cref{cor:set-cyclicPF5}.
+
+\input{sections/s02_setup_2}

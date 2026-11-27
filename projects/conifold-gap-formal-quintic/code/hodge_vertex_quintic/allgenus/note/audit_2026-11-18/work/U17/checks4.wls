@@ -1,0 +1,21 @@
+ord = 3;
+spn2[Fexpr_, aexpr_] := Module[{s, t1, t2, ser, Hm, Cm, mom, quad, F0},
+  Hm = {{D[Fexpr, y1, y1], D[Fexpr, y1, y2]}, {D[Fexpr, y2, y1], D[Fexpr, y2, y2]}} /. {y1 -> 0, y2 -> 0};
+  Cm = -Inverse[Hm]; F0 = Fexpr /. {y1 -> 0, y2 -> 0};
+  mom[i_, j_] := mom[i, j] = (D[Exp[{x1, x2}.Cm.{x1, x2}/2], {x1, i}, {x2, j}] /. {x1 -> 0, x2 -> 0});
+  quad = {s t1, s t2}.Hm.{s t1, s t2}/2;
+  ser = Normal[Series[Exp[((Fexpr /. {y1 -> s t1, y2 -> s t2}) - F0 - quad)/s^2] (aexpr /. {y1 -> s t1, y2 -> s t2, zz -> s^2}), {s, 0, 2 ord}]];
+  ser = Expand[ser];
+  ser = Expand[ser /. {t1^i_. t2^j_. :> mom[i, j]}];
+  ser = ser /. {t1^i_. :> mom[i, 0], t2^j_. :> mom[0, j]};
+  Expand[ser /. s -> Sqrt[z]]];
+F2 = -y1^2/2 - y2^2 + y1 y2/3 + y1^3/5 + y1^2 y2/2 - y1 y2^2/7 + y2^3/3 + y1^4/11 + y1^2 y2^2/13 - y1^3 y2/4;
+a2 = 1 + y1 + y2^2 + y1 y2/2 + zz (1 + y2) + zz^2 y1^2;
+ph1 = y1 + y1 y2 + y2^2 - y1^3/2; ph2 = 2 y2 + y1^2 - y1 y2/3 + y2^3 + y1^2 y2;
+Jm = {{D[ph1, y1], D[ph1, y2]}, {D[ph2, y1], D[ph2, y2]}};
+J0 = Jm /. {y1 -> 0, y2 -> 0};
+trunc[ex_] := Expand[ex];
+Fphi = trunc[F2 /. {y1 -> ph1, y2 -> ph2}];
+aphi = trunc[(a2 /. {y1 -> ph1, y2 -> ph2}) Det[Jm]/Det[J0]];
+l = spn2[F2, a2]; Print["l done: ", l]; r = spn2[Fphi, aphi];
+Print["lhs = ", l]; Print["2D cov: lhs - rhs = ", Simplify[l - r]];

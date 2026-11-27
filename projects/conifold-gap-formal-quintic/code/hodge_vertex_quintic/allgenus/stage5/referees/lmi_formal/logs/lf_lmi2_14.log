@@ -1,0 +1,19 @@
+log: logs/lf_lmi2_14.log   (python 3.14.6)
+PASS  M1 quintic at s* = 1: c_n(1 + eps) has no pole, n <= 14
+PASS  M1 quintic at s* = 1: c(z; 1) = h_(w_0) (definition), n <= 14
+PASS  control: M1 singular b_1 + 1/7: regular -- identity FAILS as expected  [first pole (n, eps^k) = (1, 0)]
+PASS  M2 quintic at s* = 0: c_n(eps) has no pole, n <= 14
+PASS  M2 quintic at s* = 0: c(z; 0) = Ginf, n <= 14
+PASS  control: M2 with M0 = 0 (Gamma(5 s) for Gamma(1 + 5 s)): value Ginf -- identity FAILS as expected  [regular: True; first diff z^5]
+PASS  M3 entire g (r = 1/2), alpha0 = -1, M0 = 0: no pole and value = LMI formula, n <= 14
+PASS  M3 entire g (r = -2/3), alpha0 = 2, M0 = 1: no pole and value = LMI formula, n <= 14
+PASS  M3 entire g (r = 3), alpha0 = -1/3, M0 = -1: no pole and value = LMI formula, n <= 14
+PASS  M3 entire g (r = 1/5), alpha0 = 5/2, M0 = 2: no pole and value = LMI formula, n <= 14
+PASS  M4 integer h = M: Bernoulli-polynomial amplitude = a0^(M - 1/2) Poch_M exp(Stirling), M = -2..3
+PASS  M4 h = 1/5, alpha0 = 5: no pole and value = formula with delta = -h z/alpha0, n <= 14 (beyond LMI)
+PASS  M4 h = 1/3, alpha0 = -1: no pole and value = formula with delta = -h z/alpha0, n <= 14 (beyond LMI)
+PASS  M4 h = -1/2, alpha0 = 2/3: no pole and value = formula with delta = -h z/alpha0, n <= 14 (beyond LMI)
+PASS  M4 h = 7/4, alpha0 = -5/2: no pole and value = formula with delta = -h z/alpha0, n <= 14 (beyond LMI)
+PASS  control: M4 B_k(0) for B_k(1/5): regular -- identity FAILS as expected  [first pole (n, eps^k) = (1, 0)]
+checks: 16 passed, 0 failed; 42.8 s
+ALL CHECKS PASSED

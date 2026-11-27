@@ -1,0 +1,103 @@
+% Abridged version, Section 8: local Mellin inversion, Theorem Gamma, Theorem C.
+\section{The Gamma identity and the normalisation}
+\label{sec:gam}
+
+This section proves $c(z;1)=h(z)$, which by \cref{cor:con-A2} is equivalent to $\Dn=1$. The proof is local: near a point at which exactly one Gamma factor of the Mellin--Barnes summand degenerates, only that factor is written as an Euler integral; after a change of chart the two-variable stationary phase depends holomorphically on a parameter that vanishes at the point, where a Gaussian computation evaluates it exactly. This section follows \Lr{sec:gam}.
+
+%-------------------------------------------------------------------------------
+\subsection{Local Mellin inversion}
+\label{sec:gam-lmi}
+
+\begin{lem}[The delta lemma with a source; {\Lr{lem:gam-deltasrc}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:gam-deltasrc}
+Let $a_*\in\bbC^\times$ and $c\in\bbC$, let $P\in s^2\bbC\fps s$, and let $A\in\bbC\fps s\fps z$. In two variables $(s,m)$ consider the phase $F(s,m):=P(s)+a_*sm$, of exactly this form, and the amplitude $\re^{cm}A(s,z)$. Then $(0,0)$ is a non-degenerate critical point of $F$, and, exactly,
+\[
+\SPn_{(0,0)}\bigl[F;\,\re^{cm}A\bigr]=\exp\bigl(P(\delta)/z\bigr)\,A(\delta,z),\qquad\delta:=-cz/a_*,
+\]
+where both factors are re-expanded in $z$. For $c=0$ the series is $A(0,z)$.
+\end{lem}
+
+The covariance of this phase has no $ss$-entry, so in the Wick expansion every copy of $s$ is paired with a copy of $m$. (In this section $s$ is a local variable, not $u^{1/5}$.)
+
+\begin{defn}[LMI data; {\Lr{def:gam-lmidata}}]
+\label{def:gam-lmidata}
+LMI data consist of a point $s_*\in\bbC$, a number $a_*\in\bbC^\times$, an integer $M_*$, an open disc $\bbD$ around $s_*$, a holomorphic function $\varphi$ on $\bbD$, and a series $\cF(\sigma,z)=\sum_{m\geq0}\cF_m(\sigma)z^m$ of holomorphic functions on $\bbD$, such that $\cF_0$ has no zero on $\bbD$ and $a_*+(\sigma-s_*)\varphi''(\sigma)\neq0$ for every $\sigma\in\bbD$. Put $a(\sigma):=a_*(\sigma-s_*)$, which is exactly linear in $\sigma$, and $U_*:=\bbD\setminus\{s_*\}$. For $L\in U_*$ choose a branch of $\log a$ near $L$ and put
+\[
+\lambda(L):=-\varphi'(L)-a_*\log a(L),\qquad S(\sigma):=\lambda(L)\,\sigma+\varphi(\sigma)+a(\sigma)\log a(\sigma)-a(\sigma),
+\]
+\[
+A(\sigma,z):=a(\sigma)^{M_*-1/2}\,\mathrm{Poch}_{M_*}\bigl(z/a(\sigma)\bigr)\exp\Bigl(\sum_{k\geq1}\bk_k\bigl(z/a(\sigma)\bigr)^{2k-1}\Bigr)\,\cF(\sigma,z),
+\]
+that is, the expansion of $z^{M_*+a/z}\,\Gst(M_*+a/z)$ without its factor $(2\pi z)^{1/2}$ and without its phase factor, times $\cF$. Let $c^{\cF}(z;L)=\sum_{n\geq0}c^{\cF}_n(L)z^n:=\SPh_L\bigl[S;\,A\bigr]$. Finally put $\delta:=-M_*z/a_*$ and $\tilde\varphi(x):=\varphi(s_*+x)-\varphi(s_*)-\varphi'(s_*)x$.
+\end{defn}
+
+\begin{thm}[Theorem LMI: local Mellin inversion; {\Lr{thm:gam-lmi}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:gam-lmi}
+Let LMI data be given.
+\begin{enumerate}
+\item For $L\in U_*$ every coefficient $c^{\cF}_n(L)$ depends only on $L$, not on the branch of $\log a$ or on $\lambda(L)$, and $c^{\cF}_n$ is holomorphic on $U_*$.
+\item Every $c^{\cF}_n$ extends holomorphically to $L=s_*$.
+\item With these extensions,
+\[
+c^{\cF}(z;s_*)=\exp\bigl(\tilde\varphi(\delta)/z\bigr)\,\frac{\cF(s_*+\delta,z)}{\cF(s_*,0)},\qquad\delta=-\frac{M_*z}{a_*},
+\]
+where both factors are re-expanded in $z$.
+\end{enumerate}
+\end{thm}
+
+\begin{sketch}
+\emph{Two variables.} By the formal Fubini theorem and Stirling's series as the stationary phase of Euler's integral (\cref{sec:con-fsp}), $c^{\cF}(z;L)$ is the normalised stationary phase, at the point $(L,\log a(L))$, of the two-variable integrand with phase $\lambda\sigma+\varphi(\sigma)+a(\sigma)\chi-\re^\chi$ and amplitude $\re^{M_*\chi}\cF(\sigma,z)$: the inner integral over $\chi$ is Euler's integral for $\Gamma(M_*+a/z)$ in the variable $\re^\chi$.
+
+\emph{The chart.} Translate $\chi=\mu-\lambda/a_*$. Because $a$ is exactly linear, the phase becomes a constant plus $\Psi_{\mathsf Q}(\sigma,\mu):=\varphi(\sigma)+a(\sigma)\mu-\mathsf Q\,\re^\mu$, with the chart parameter $\mathsf Q(L):=\re^{-\lambda(L)/a_*}=a(L)\,\re^{\varphi'(L)/a_*}$, a single-valued holomorphic function on $\bbD$ with a simple zero at $s_*$. For every $L\in\bbD$, including $L=s_*$, the point $(L,-\varphi'(L)/a_*)$ is a non-degenerate critical point of $\Psi_{\mathsf Q(L)}$, and the Taylor data there are holomorphic in $L$; by the universality of the coefficients, $c^{\cF}_n$ is holomorphic on $\bbD$. This is (ii): the critical point, which in the variable $\sigma$ alone runs into the singularity of the degenerate factor, survives in the chart.
+
+\emph{The value.} At $L=s_*$, $\mathsf Q=0$ and the phase is $\varphi(s_*)+\tilde\varphi(s)+a_*sm$ in the variables $s=\sigma-s_*$, $m=\mu-\mu_*$, exactly: the exponential term has disappeared. \Cref{lem:gam-deltasrc} with $P=\tilde\varphi$, $c=M_*$ and $A=\cF(s_*+s,z)$ gives (iii).
+\end{sketch}
+
+%-------------------------------------------------------------------------------
+\subsection{Theorem Gamma and the value of \texorpdfstring{$\Dn$}{D}}
+\label{sec:gam-thm}
+
+\begin{thm}[Theorem Gamma; {\Lr{thm:gam-main,thm:gam-ginf}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{thm:gam-main}
+Let $c(z;L)$ be the saddle series of \cref{def:gam-c}.
+\begin{enumerate}
+\item Every $c_n$ lies in $\AL$.
+\item No $c_n$ has a pole at $L=1$, that is at $q=0$, and
+\[
+c(z;1)=h(z),\qquad\text{that is, }c_n(1)=h_n\ \text{for every }n\geq0.\tag{$\Gamma$}
+\]
+\item $c_n(\zeta L)=\zeta^{-n}c_n(L)$ for every $n$. Hence no $c_n$ has a pole at a fifth root of unity, $c_n$ lies in $\bbQ[L,L^{-1}]$, and $c(z;\zeta^i)=h_{\bw_i}(z)=h(\zeta^{-i}z)$.
+\item No $c_n$ has a pole at $L=0$, that is at $q=\infty$, and $c(z;0)=\Ginf(z)$, the series of \cref{thm:int-gamma}~(b), which is the series displayed on the right of (37) of \cite[Lemma~7.7]{GJR18} at $m=5$, $k=1$ and equivariant parameter $1$ in the notation there, read as a series in $z$; the comparison with \cite{GJR18} enters no proof. Consequently $c_n\in\bbQ[L]$.
+\end{enumerate}
+Only (ii) is used in the proof of the main theorem.
+\end{thm}
+
+\begin{proof}[Proof of (ii), given \cref{thm:gam-lmi}]
+Apply \cref{thm:gam-lmi} with $s_*=1$, $a_*=-1$, so that $a(\sigma)=1-\sigma$, and $M_*=0$, with
+\[
+\varphi(\sigma):=5\sigma\log(5\sigma)-5\sigma+\sum_{j=1}^4\bigl[(\zeta^j-\sigma)\log(\zeta^j-\sigma)-(\zeta^j-\sigma)\bigr],
+\]
+\[
+\cF(\sigma,z):=(5\sigma)^{1/2}\prod_{j=1}^4(\zeta^j-\sigma)^{-1/2}\exp\Bigl(\sum_{k\geq1}\bk_kz^{2k-1}\Bigl[(5\sigma)^{1-2k}+\sum_{j=1}^4(\zeta^j-\sigma)^{1-2k}\Bigr]\Bigr),
+\]
+the phase and the amplitude of the five factors of the summand that do not degenerate at $\sigma=1$; on a small disc $\bbD$ around $1$, with fixed branches, the conditions of \cref{def:gam-lmidata} hold. The term $a\log a-a$ is the term $j=0$ of $\mathsf S_0$, and, as $\mathrm{Poch}_0=1$, the Stirling form of $\Gamma(a/z)$ contributes the factor $j=0$ of $A_{\mathrm{St}}$. Hence $S=\mathsf S_0$, $A=A_{\mathrm{St}}$, $\lambda(L)$ is the logarithm of \cref{def:gam-c}, and $c^{\cF}(z;L)=c(z;L)$ for $L\in U_*$. By \cref{thm:gam-lmi}~(ii) every $c_n$ extends holomorphically to $L=1$; since $c_n$ is rational by (i), it has no pole at $L=1$. By \cref{thm:gam-lmi}~(iii) with $\delta=0$, and since the first factor of $\cF$ does not involve $z$,
+\[
+c(z;1)=\frac{\cF(1,z)}{\cF(1,0)}=\exp\Bigl(\sum_{k\geq1}\bk_k\Bigl[5^{1-2k}+\sum_{j=1}^4(\zeta^j-1)^{1-2k}\Bigr]z^{2k-1}\Bigr)=h(z),
+\]
+because $1-2k$ is odd and $\bw_0=\{1-\zeta^j\}_{j=1,\dots,4}\cup\{-5\}$.
+\end{proof}
+
+So at $q=0$ the saddle series is the product of the Stirling series of the five factors that stay regular, evaluated at $\sigma=1$: these are the quantum Riemann--Roch factors of the four tangent weights $1-\zeta^j$ and of the twist weight $-5$. Part (iii) is the rotation $\sigma\mapsto\zeta\sigma$ of the Taylor data, and (iv) is \cref{thm:gam-lmi} at $s_*=0$ with $a(\sigma)=5\sigma$ and $M_*=1$, where only the twist factor degenerates and $\delta=-z/5\neq0$ \Lr{thm:gam-ginf}; with \cref{thm:con-Pb} it identifies the free coefficients of \cref{lem:gau-HPF}, $1+\sum_{m\geq1}\fc^{\mathrm{can}}_mz^{5m}=\Ginf(z)$ \Lr{cor:gam-free}.
+
+\begin{thm}[Theorem C: the normalisation is canonical; {\Lr{thm:gam-D,prop:gam-hatflat}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:gam-D}
+In every conifold frame, $\Dn_0=1$ in $\bbQ\fps z$, and $\Dn=1$. Consequently $\Fg{g}$ holds for every $g\geq2$. Moreover $\PhiSP(\zh,1)=h(\zh)$.
+\end{thm}
+
+\begin{proof}
+By \cref{thm:con-glue}, with \cref{thm:con-Pb}, $\Dn_0(z)=\PhiSP(z,1)/h(z)$ exactly in $\bbQ\fps z$. By \cref{thm:con-Pa}~(iv), $c_n(L)=L^{4n}\mathrm{ph}^{\mathrm{SP}}_n(L^{-5})$, so $\mathrm{ph}^{\mathrm{SP}}_n(1)=c_n(1)=h_n$ by \cref{thm:gam-main}~(ii), and $\PhiSP(z,1)=h(z)$. Hence $\Dn_0=1$, and $\Dn_i(z)=\Dn_0(\zeta^{-i}z)=1$ for every colour $i$ (\cref{thm:gau-R0}~(iv)).
+\end{proof}
+
+The value of (QRR) enters this proof through the glue, at colour $0$, and through the colour covariance of the rows, that is (QRR) for the colours $i\neq0$; the rows and their WKB form rest on (M), (G0) and the flatness part of (QRR), and the $R$-matrix identified by (T) is used only through $R|_{z=0}=1$ and (QRR). With \cref{thm:gau-R0}~(iv) it gives \cref{thm:int-D}: $\Qr=\Pc\Qr^{\mathrm m}(v(u))$, the actual gauge is the canonical gauge \Lr{cor:mai-actual}. This is not circular, as the rows are normalised at $u=1$ and the canonical gauge at $u=0$.
+
+The mechanism is that of \cite[\S10]{MR1901075}; we are not aware of a proof of the identity $(\Gamma)$ in the literature \Lr{rmk:gam-prior}.

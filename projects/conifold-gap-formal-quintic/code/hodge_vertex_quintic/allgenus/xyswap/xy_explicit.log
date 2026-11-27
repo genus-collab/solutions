@@ -1,0 +1,8 @@
+CHECK omega_{1,1} = explicit D_x formula (TR, exact, 3 points): True
+   omega_{1,1} = [(-15) z^4 v^2 + (-180) z^9 v^1 + (-40) z^14 v^0] / (4 z^5 - v)^4 dz
+CHECK omega_{2,1} = explicit D_x formula (TR, exact, 3 points): True
+   omega_{2,1} = [(-8) z^4 v^6 + (-12053) z^9 v^5 + (-690770) z^14 v^4 + (-7658960) z^19 v^3 + (-20583920) z^24 v^2 + (-10384448) z^29 v^1 + (266112) z^34 v^0] / (4 z^5 - v)^10 dz
+CHECK omega_{1,2} formula = TR at (Fraction(2, 1), Fraction(-1, 3)): True
+CHECK omega_{1,2} formula = TR at (Fraction(-5, 2), Fraction(7, 4)): True
+CHECK omega_{0,3} formula = TR at (Fraction(2, 1), Fraction(-1, 3), Fraction(3, 2)): True
+CHECK omega_{0,3} formula = TR at (Fraction(-5, 2), Fraction(7, 4), Fraction(1, 3)): True

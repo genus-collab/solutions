@@ -1,0 +1,124 @@
+====================================================================================================
+rf_g_run: own gauge solver (direct Laurent undetermined coefficients), exact over Q   [2026-11-13T19:57:02]
+----------------------------------------------------------------------------------------------------
+case quintic: F = ['1'], Gm = ['1'], frame ('0', '0')
+   resonances (z-order: index) {0: 0, 5: 0, 10: 0, 15: 0}; precision of p_k: [41, 40, 39, 38, 37, 37, 36, 35, 34, 33, 33, 32, 31, 30, 29, 29, 28]
+PASS    gauge equation satisfied to the tracked precision (stored and canonical)
+PASS    every p_{k,b} (k <= 16) is a power series in u (Theorem U), both normalisations
+   stored    P_11(0, z) = [z^0] 1  [z^5] -43397/807975000  [z^10] -765368951400317/1305647201250000000  [z^15] -413495284380334910165431657/4383536794477928718750000000000
+   canonical P_11(0, z) = [z^0] 1  [z^5] 0  [z^10] 0  [z^15] 0
+PASS    REGRESSION: stored P_11(0, z) equals the worker's e4.log values [5, 10]
+PASS    canonical: P_11(0, z) is constant
+PASS    canonical (imposed in the recursion) = stored x c0/P^stored_11(0, z) (post-hoc), mod u^12
+PASS    (G) canonical: P Y^C_model = c0 Y^C_system on z^-8..z^8 mod u^8, c0 = 1
+PASS    (G) stored: P Y^C_model - c0 Y^C_system has a positive part (expected), at z^[1, 2, 3, 4, 5, 6, 7, 8]
+PASS    canonical gauge symplectic: P(-z)^T eta P(z) = eta through z^16 mod u^10
+PASS    stored gauge symplectic exactly through z^9, first defect at z^10 (c(z)c(-z) = 1 - m5^2 z^10 + ..): [(10, 0, 0), (10, 1, 0), (10, 2, 0)]
+   (11.8 s)
+RF_G_RUN ALL CHECKS PASSED
+====================================================================================================
+rf_g_run: own gauge solver (direct Laurent undetermined coefficients), exact over Q   [2026-11-13T19:57:21]
+----------------------------------------------------------------------------------------------------
+case quintic_ab: F = ['1'], Gm = ['1'], frame ('1/3', '-2/7')
+   resonances (z-order: index) {0: 0, 5: 0, 10: 0, 15: 0}; precision of p_k: [41, 40, 39, 38, 37, 37, 36, 35, 34, 33, 33, 32, 31, 30, 29, 29, 28]
+PASS    gauge equation satisfied to the tracked precision (stored and canonical)
+PASS    every p_{k,b} (k <= 16) is a power series in u (Theorem U), both normalisations
+   stored    P_11(0, z) = [z^0] 1  [z^5] -43397/807975000  [z^10] -765368951400317/1305647201250000000  [z^15] -413495284380334910165431657/4383536794477928718750000000000
+   canonical P_11(0, z) = [z^0] 1  [z^5] 0  [z^10] 0  [z^15] 0
+PASS    REGRESSION: stored P_11(0, z) equals the worker's e4.log values [5, 10]
+PASS    canonical: P_11(0, z) is constant
+PASS    canonical (imposed in the recursion) = stored x c0/P^stored_11(0, z) (post-hoc), mod u^12
+PASS    (G) canonical: P Y^C_model = c0 Y^C_system on z^-8..z^8 mod u^8, c0 = 1
+PASS    (G) stored: P Y^C_model - c0 Y^C_system has a positive part (expected), at z^[1, 2, 3, 4, 5, 6, 7, 8]
+PASS    canonical gauge symplectic: P(-z)^T eta P(z) = eta through z^16 mod u^10
+PASS    stored gauge symplectic exactly through z^9, first defect at z^10 (c(z)c(-z) = 1 - m5^2 z^10 + ..): [(10, 0, 0), (10, 1, 0), (10, 2, 0)]
+   (12.1 s)
+----------------------------------------------------------------------------------------------------
+case c1: F = ['1', '1/3', '-2/7', '5/11'], Gm = ['1', '-3/5', '1/2', '2/3'], frame ('0', '0')
+   resonances (z-order: index) {0: 0, 5: 0, 10: 0, 15: 0}; precision of p_k: [41, 40, 39, 38, 37, 37, 36, 35, 34, 33, 33, 32, 31, 30, 29, 29, 28]
+PASS    gauge equation satisfied to the tracked precision (stored and canonical)
+PASS    every p_{k,b} (k <= 16) is a power series in u (Theorem U), both normalisations
+   stored    P_11(0, z) = [z^0] 1  [z^5] 31764344287/1163868750  [z^10] 5761596837414242725693984281037/41740938549382073203125000  [z^15] -64269548754803638062575628612886170379643492664040001269/5839005905693059710247037924476078125000000000
+   canonical P_11(0, z) = [z^0] 1  [z^5] 0  [z^10] 0  [z^15] 0
+PASS    REGRESSION: stored P_11(0, z) equals the worker's e4.log values [5, 10]
+PASS    canonical: P_11(0, z) is constant
+PASS    canonical (imposed in the recursion) = stored x c0/P^stored_11(0, z) (post-hoc), mod u^12
+PASS    (G) canonical: P Y^C_model = c0 Y^C_system on z^-8..z^8 mod u^8, c0 = 1
+PASS    (G) stored: P Y^C_model - c0 Y^C_system has a positive part (expected), at z^[1, 2, 3, 4, 5, 6, 7, 8]
+PASS    canonical gauge symplectic: P(-z)^T eta P(z) = eta through z^16 mod u^10
+PASS    stored gauge symplectic exactly through z^9, first defect at z^10 (c(z)c(-z) = 1 - m5^2 z^10 + ..): [(10, 0, 0), (10, 1, 0), (10, 2, 0)]
+   (14.7 s)
+----------------------------------------------------------------------------------------------------
+case c2: F = ['3/2', '1/3'], Gm = ['1', '-3/5', '1/2'], frame ('0', '0')
+   resonances (z-order: index) {0: 0, 5: 0, 10: 0, 15: 0}; precision of p_k: [41, 40, 39, 38, 37, 37, 36, 35, 34, 33, 33, 32, 31, 30, 29, 29, 28]
+PASS    gauge equation satisfied to the tracked precision (stored and canonical)
+PASS    every p_{k,b} (k <= 16) is a power series in u (Theorem U), both normalisations
+   stored    P_11(0, z) = [z^0] 2/3  [z^5] 915238702031/359952862500  [z^10] -382006806145740134909048581153/221713447385390412375000000  [z^15] 70115835821479724220437584646738424028298836676542337/3538970763063751019832932214094359375000000000
+   canonical P_11(0, z) = [z^0] 2/3  [z^5] 0  [z^10] 0  [z^15] 0
+PASS    REGRESSION: stored P_11(0, z) equals the worker's e4.log values [0, 5, 10]
+PASS    canonical: P_11(0, z) is constant
+PASS    canonical (imposed in the recursion) = stored x c0/P^stored_11(0, z) (post-hoc), mod u^12
+PASS    (G) canonical: P Y^C_model = c0 Y^C_system on z^-8..z^8 mod u^8, c0 = 2/3
+PASS    (G) stored: P Y^C_model - c0 Y^C_system has a positive part (expected), at z^[1, 2, 3, 4, 5, 6, 7, 8]
+PASS    canonical gauge symplectic: P(-z)^T eta P(z) = eta through z^16 mod u^10
+PASS    stored gauge symplectic exactly through z^9, first defect at z^10 (c(z)c(-z) = 1 - m5^2 z^10 + ..): [(10, 0, 0), (10, 1, 0), (10, 2, 0)]
+   (13.7 s)
+----------------------------------------------------------------------------------------------------
+case c3: F = ['1', '-7/4', '3', '-1/9'], Gm = ['1', '11/6', '-5/3', '4/13'], frame ('0', '0')
+   resonances (z-order: index) {0: 0, 5: 0, 10: 0, 15: 0}; precision of p_k: [41, 40, 39, 38, 37, 37, 36, 35, 34, 33, 33, 32, 31, 30, 29, 29, 28]
+PASS    gauge equation satisfied to the tracked precision (stored and canonical)
+PASS    every p_{k,b} (k <= 16) is a power series in u (Theorem U), both normalisations
+   stored    P_11(0, z) = [z^0] 1  [z^5] 38700127538971973/59156697600000  [z^10] 417967829490578050112432493949753263881/4990308205957368053760000000000  [z^15] -638733956981741689947545904149657688858374398715929626500826640517/2496004551719085550355199701798784860160000000000000
+   canonical P_11(0, z) = [z^0] 1  [z^5] 0  [z^10] 0  [z^15] 0
+PASS    REGRESSION: stored P_11(0, z) equals the worker's e4.log values [5]
+PASS    canonical: P_11(0, z) is constant
+PASS    canonical (imposed in the recursion) = stored x c0/P^stored_11(0, z) (post-hoc), mod u^12
+PASS    (G) canonical: P Y^C_model = c0 Y^C_system on z^-8..z^8 mod u^8, c0 = 1
+PASS    (G) stored: P Y^C_model - c0 Y^C_system has a positive part (expected), at z^[1, 2, 3, 4, 5, 6, 7, 8]
+PASS    canonical gauge symplectic: P(-z)^T eta P(z) = eta through z^16 mod u^10
+PASS    stored gauge symplectic exactly through z^9, first defect at z^10 (c(z)c(-z) = 1 - m5^2 z^10 + ..): [(10, 0, 0), (10, 1, 0), (10, 2, 0)]
+   (14.4 s)
+----------------------------------------------------------------------------------------------------
+case c4: F = ['1', '2/5', '-1/3'], Gm = ['1', '1/7', '3/4'], frame ('1/3', '-2/7')
+   resonances (z-order: index) {0: 0, 5: 0, 10: 0, 15: 0}; precision of p_k: [41, 40, 39, 38, 37, 37, 36, 35, 34, 33, 33, 32, 31, 30, 29, 29, 28]
+PASS    gauge equation satisfied to the tracked precision (stored and canonical)
+PASS    every p_{k,b} (k <= 16) is a power series in u (Theorem U), both normalisations
+   stored    P_11(0, z) = [z^0] 1  [z^5] -171815241648683/24387917400000  [z^10] 156149704669241602746340034667530437/4240713772728758278800000000000  [z^15] -62038261587482898110320219097914022519623200424831278638586283/11771246518053665208028289905551192720000000000000000
+   canonical P_11(0, z) = [z^0] 1  [z^5] 0  [z^10] 0  [z^15] 0
+PASS    REGRESSION: stored P_11(0, z) equals the worker's e4.log values [5]
+PASS    canonical: P_11(0, z) is constant
+PASS    canonical (imposed in the recursion) = stored x c0/P^stored_11(0, z) (post-hoc), mod u^12
+PASS    (G) canonical: P Y^C_model = c0 Y^C_system on z^-8..z^8 mod u^8, c0 = 1
+PASS    (G) stored: P Y^C_model - c0 Y^C_system has a positive part (expected), at z^[1, 2, 3, 4, 5, 6, 7, 8]
+PASS    canonical gauge symplectic: P(-z)^T eta P(z) = eta through z^16 mod u^10
+PASS    stored gauge symplectic exactly through z^9, first defect at z^10 (c(z)c(-z) = 1 - m5^2 z^10 + ..): [(10, 0, 0), (10, 1, 0), (10, 2, 0)]
+   (14.9 s)
+----------------------------------------------------------------------------------------------------
+case r1: F = ['2', '-1/4', '5/3', '1/6'], Gm = ['3/2', '2/9', '-1', '1/5'], frame ('0', '0')
+   resonances (z-order: index) {0: 0, 5: 0, 10: 0, 15: 0}; precision of p_k: [41, 40, 39, 38, 37, 37, 36, 35, 34, 33, 33, 32, 31, 30, 29, 29, 28]
+PASS    gauge equation satisfied to the tracked precision (stored and canonical)
+PASS    every p_{k,b} (k <= 16) is a power series in u (Theorem U), both normalisations
+   stored    P_11(0, z) = [z^0] 1/3  [z^5] 409279087449539437/43426807603200000  [z^10] 687148271540988683713061990024131258671073/8067827232393684427965726720000000000  [z^15] -28297238831165524430845764454197371067175070391704496692216414693416489/2065845224106045056888537157419553381591023616000000000000000
+   canonical P_11(0, z) = [z^0] 1/3  [z^5] 0  [z^10] 0  [z^15] 0
+PASS    canonical: P_11(0, z) is constant
+PASS    canonical (imposed in the recursion) = stored x c0/P^stored_11(0, z) (post-hoc), mod u^12
+PASS    (G) canonical: P Y^C_model = c0 Y^C_system on z^-8..z^8 mod u^8, c0 = 1/3
+PASS    (G) stored: P Y^C_model - c0 Y^C_system has a positive part (expected), at z^[1, 2, 3, 4, 5, 6, 7, 8]
+PASS    canonical gauge symplectic: P(-z)^T eta P(z) = eta through z^16 mod u^10
+PASS    stored gauge symplectic exactly through z^9, first defect at z^10 (c(z)c(-z) = 1 - m5^2 z^10 + ..): [(10, 0, 0), (10, 1, 0), (10, 2, 0)]
+   (15.5 s)
+----------------------------------------------------------------------------------------------------
+case r2: F = ['1/2', '3', '-2'], Gm = ['1', '-1/3', '4'], frame ('1/3', '-2/7')
+   resonances (z-order: index) {0: 0, 5: 0, 10: 0, 15: 0}; precision of p_k: [41, 40, 39, 38, 37, 37, 36, 35, 34, 33, 33, 32, 31, 30, 29, 29, 28]
+PASS    gauge equation satisfied to the tracked precision (stored and canonical)
+PASS    every p_{k,b} (k <= 16) is a power series in u (Theorem U), both normalisations
+   stored    P_11(0, z) = [z^0] 2  [z^5] 3454676286734/370321875  [z^10] 15250373126783994405877758266119/804586435667437500000  [z^15] -60328671740017774049819818025052334273780827939186398662057/49851494994305885102170599041015625000000
+   canonical P_11(0, z) = [z^0] 2  [z^5] 0  [z^10] 0  [z^15] 0
+PASS    canonical: P_11(0, z) is constant
+PASS    canonical (imposed in the recursion) = stored x c0/P^stored_11(0, z) (post-hoc), mod u^12
+PASS    (G) canonical: P Y^C_model = c0 Y^C_system on z^-8..z^8 mod u^8, c0 = 2
+PASS    (G) stored: P Y^C_model - c0 Y^C_system has a positive part (expected), at z^[1, 2, 3, 4, 5, 6, 7, 8]
+PASS    canonical gauge symplectic: P(-z)^T eta P(z) = eta through z^16 mod u^10
+PASS    stored gauge symplectic exactly through z^9, first defect at z^10 (c(z)c(-z) = 1 - m5^2 z^10 + ..): [(10, 0, 0), (10, 1, 0), (10, 2, 0)]
+   (14.3 s)
+RF_G_RUN ALL CHECKS PASSED

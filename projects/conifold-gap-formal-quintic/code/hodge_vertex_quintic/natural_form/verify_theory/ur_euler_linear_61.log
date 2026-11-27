@@ -1,0 +1,23 @@
+p = 2^61-1; eps-nodes [0, 1, 2, 3, 4, 5, 6]
+----------------------------------------------------------------------------------------------------
+n = zhat (H - zhat)(x)(H + zhat)   (24 s)
+   genus 2, eps^1 coefficients of graphs 1..7: {1: '-7/128', 2: '1/16', 3: '0', 4: '-1/128', 5: '0', 6: '0', 7: '0'}
+   genus 2, eps-degree check (coefficients of eps^4..eps^6 vanish): True
+   genus 3, eps^1 coefficients of the one-edge graphs 2 (loop on g = 2) and 5 (bridge g1 - g2): {2: '0', 5: '0'}
+   genus 3, eps^2 coefficients: {2: '7/128', 5: '7/512'}
+PASS first-order response of n: zero on the genus-3 one-edge graphs, non-zero on genus-2 one-edge graphs (genus-1 anomaly)
+----------------------------------------------------------------------------------------------------
+CONTROL zhat (H + zhat)(x)(H - zhat)   (25 s)
+   genus 2, eps^1 coefficients of graphs 1..7: {1: '-23/1152', 2: '1/16', 3: '0', 4: '-49/1152', 5: '0', 6: '0', 7: '0'}
+   genus 2, eps-degree check (coefficients of eps^4..eps^6 vanish): True
+   genus 3, eps^1 coefficients of the one-edge graphs 2 (loop on g = 2) and 5 (bridge g1 - g2): {2: '-1/150', 5: '-7/7200'}
+   genus 3, eps^2 coefficients: {2: '-4693/5760', 5: '-4111/69120'}
+PASS control has a non-zero first-order response on a genus-3 one-edge graph
+----------------------------------------------------------------------------------------------------
+CONTROL bare zhat H(x)H   (27 s)
+   genus 2, eps^1 coefficients of graphs 1..7: {1: '13/288', 2: '-1/24', 3: '0', 4: '-1/288', 5: '0', 6: '0', 7: '0'}
+   genus 2, eps-degree check (coefficients of eps^4..eps^6 vanish): True
+   genus 3, eps^1 coefficients of the one-edge graphs 2 (loop on g = 2) and 5 (bridge g1 - g2): {2: '-1/400', 5: '-1/7200'}
+   genus 3, eps^2 coefficients: {2: '-67/480', 5: '-101/8640'}
+PASS control has a non-zero first-order response on a genus-3 one-edge graph
+UR_EULER_LINEAR (61) ALL CHECKS PASSED

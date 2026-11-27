@@ -1,0 +1,39 @@
+rl_l3: Lemma L3 and Proof A; LB through z^40, Wick at a = 3/7, -5/2 through z^16, T-z through z^8; log logs/rl_l3_40_16_8.log
+PASS L3(i) a = 1, m = -6 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_-6 by definition, z^0..z^40
+PASS L3(i) a = 1, m = -5 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_-5 by definition, z^0..z^40
+PASS L3(i) a = 1, m = -4 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_-4 by definition, z^0..z^40
+PASS L3(i) a = 1, m = -3 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_-3 by definition, z^0..z^40
+PASS L3(i) a = 1, m = -2 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_-2 by definition, z^0..z^40
+PASS L3(i) a = 1, m = -1 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_-1 by definition, z^0..z^40
+PASS L3(i) a = 1, m = 0 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_0 by definition, z^0..z^40
+PASS L3(i) a = 1, m = 1 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_1 by definition, z^0..z^40
+PASS L3(i) a = 1, m = 2 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_2 by definition, z^0..z^40
+PASS L3(i) a = 1, m = 3 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_3 by definition, z^0..z^40
+PASS L3(i) a = 1, m = 4 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_4 by definition, z^0..z^40
+PASS L3(i) a = 1, m = 5 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_5 by definition, z^0..z^40
+PASS L3(i) a = 1, m = 6 (dx/x with x^m; = dx with x^(m-1)): Lagrange-Buermann SP = St_6 by definition, z^0..z^40
+PASS L3(i) a = 3/7, m = -4: Wick SP = St_m(z/a) (homogeneity (H)), z^0..z^16
+PASS L3(i) a = 3/7, m = 0: Wick SP = St_m(z/a) (homogeneity (H)), z^0..z^16
+PASS L3(i) a = 3/7, m = 3: Wick SP = St_m(z/a) (homogeneity (H)), z^0..z^16
+PASS L3(i) a = -5/2, m = -4: Wick SP = St_m(z/a) (homogeneity (H)), z^0..z^16
+PASS L3(i) a = -5/2, m = 0: Wick SP = St_m(z/a) (homogeneity (H)), z^0..z^16
+PASS L3(i) a = -5/2, m = 3: Wick SP = St_m(z/a) (homogeneity (H)), z^0..z^16
+PASS control (must fail): St_1 claimed for the amplitude x^1 (m = 2)   first differs at z^1
+PASS L3(iv): rho(Y) = (Y+1/2) log(1+1/Y) - 1 + mu(Y+1) - mu(Y) = 0 through Y^-42
+PASS control (must fail): b_3 + 1/1000 in rho   first non-zero at Y^-6
+PASS s.9.2: D^2 mu = T - 1/Y - 1/(2Y^2) through Y^-43 (B_1 = -1/2 convention)
+PASS s.9.2: (e^D - 1) D^2 mu = -1/(2 Y^2 (Y+1)^2) through Y^-42
+PASS s.9.2: D^2[(Y + 1/2) log(1 + 1/Y)] = +1/(2 Y^2 (Y+1)^2) through Y^-42
+PASS L3(iv): St_(m+1)(w) = (1 + m w) St_m(w) for m = -6..6 through w^40 (St_m by definition)
+PASS L1c(iv)/T-z in Step A2: [e^(..) (1+eps)^(1/2) SP^norm_(1+eps)[F_eps; (x/a)^-1]]_(eps=z) = SP^norm_1[F; 1], z^0..z^8   z^1..z^3 = ['1/12', '1/288', '-139/51840']
+PASS    and SP^norm_1[F; 1] = St_1 = St_0 (L3 with m = 1)
+PASS control (must fail): T-z without (Delta_eps/Delta)^(-1/2)   first differs at z^1
+PASS control (must fail): T-z with eps -> 2z   first differs at z^1
+PASS L1a, map x = e^u: SP_u[e^(m u)] = SP_x[x^(m-1)] = St_-3, m = -3, z^0..z^16
+PASS L1a, map x = e^u: SP_u[e^(m u)] = SP_x[x^(m-1)] = St_-1, m = -1, z^0..z^16
+PASS L1a, map x = e^u: SP_u[e^(m u)] = SP_x[x^(m-1)] = St_0, m = 0, z^0..z^16
+PASS L1a, map x = e^u: SP_u[e^(m u)] = SP_x[x^(m-1)] = St_2, m = 2, z^0..z^16
+PASS L1a, map x = e^u: SP_u[e^(m u)] = SP_x[x^(m-1)] = St_3, m = 3, z^0..z^16
+PASS control (must fail): L1a with x = e^u, m = 2, Jacobian e^u omitted   first differs at z^1
+     St_0 = 1 + 1/12 w + 1/288 w^2 + -139/51840 w^3 + ...;  St_-6: w^1 = 253/12
+RL_L3 40 16 8: ALL CHECKS PASSED   (5 s)

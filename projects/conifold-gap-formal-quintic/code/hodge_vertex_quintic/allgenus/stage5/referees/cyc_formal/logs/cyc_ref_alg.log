@@ -1,0 +1,40 @@
+# logs/cyc_ref_alg.log (py -I -B cyc_ref_alg.py)
+PASS A1 PF4 = D^4 - 5q prod(5D+k) has the A_k of CYC s.0 / fq_conifold (u, -2(1-u), -7/5(1-u), -2/5(1-u), -24/625(1-u))
+PASS A1 D u = -(1-u) = q d/dq (1 - 3125 q) (D is q d/dq)
+PASS A1 UR s.1 u-form of PF5: u M^5 - (1-u)[3 zM^4 + 17/5 z^2M^3 + 9/5 z^3M^2 + 274/625 z^4M + 24/625 z^5] - 1
+PASS A2 D^5 - q o prod_(k=1..5)(5D+k) = D o PF4 (so PF5 = z^5 D PF4 - 1, z a constant), exact
+PASS control (fails as it must): A2 same with q on the right
+PASS control (fails as it must): A2 same with k = 0..4
+   c_-3(n) = ['0', '-2', '5', '-4', '1']   (coefficients of n^0, n^1, ...)
+   c_-2(n) = ['0', '17/5', '-47/5', '10', '-4']   (coefficients of n^0, n^1, ...)
+   c_-1(n) = ['0', '-7/5', '26/5', '-6', '6']   (coefficients of n^0, n^1, ...)
+   c_0(n) = ['-24/625', '-2/5', '-11/5', '-2', '-4']   (coefficients of n^0, n^1, ...)
+   c_1(n) = ['24/625', '2/5', '7/5', '2', '1']   (coefficients of n^0, n^1, ...)
+PASS A3 [u^(n-3)] PF4 u^n = n(n-1)^2(n-2) as a polynomial in n
+PASS A3 PF4 u^n lies in span(u^(n-3), .., u^(n+1)) for every n
+PASS A3 no negative powers from u^0, u^1, u^2 (c_s(n) = 0 when n + s < 0)
+PASS A3 pivot n(n-1)^2(n-2) != 0 for 3 <= n <= 10^4
+PASS A4 C1: PF4* = PF4 exactly (formal adjoint Sum (-D)^k o A_k)
+PASS A4 A_3 = 2 D A_4 and A_1 = D A_2 - D^3 A_4 (the two conditions for an order-4 self-adjoint operator)
+PASS A4 P(-D-1) = P(D), P(D) = prod_(k=1..4)(D + k/5)
+PASS A4 D o q = q o (D + 1)
+PASS control (fails as it must): A4 PF4 + u D self-adjoint
+PASS control (fails as it must): A4 PF4 with A_3 -> -3(1-u) self-adjoint
+PASS control (fails as it must): A4 D^4 - 5 prod(5D+k) o q (q on the right) self-adjoint
+PASS A5 C2(i) g L f - f L* g = D P(f,g), L = PF4 (jet identity, exact)
+PASS A5 C2(i) the same identity for a random order-4 operator with quadratic coefficients
+PASS control (fails as it must): A5 C2(i) without the signs (-1)^j
+PASS A5 C2(ii) alternation: P(f,g) + P(g,f) = 0 identically for PF4
+PASS control (fails as it must): A5 alternation for PF4 + uD
+PASS A5 consistency: for PF4 + uD the sum Q = P(f,g) + P(g,f) is non-zero and so is D Q
+   P_ab (a = order on f, b = order on g):
+      ['{}', "{0: '2/5', 1: '-2/5'}", "{0: '1', 1: '-1'}", "{1: '-1'}"]
+      ["{0: '-2/5', 1: '2/5'}", '{}', "{1: '1'}", '{}']
+      ["{0: '-1', 1: '1'}", "{1: '-1'}", '{}', '{}']
+      ["{1: '1'}", '{}', '{}', '{}']
+PASS A6 P_ab = 0 for a + b >= 4
+PASS A6 P_(3-j,j) = (-1)^j u
+PASS A6 P equals the referee's hand computation [[0, 2/5(1-u), 1-u, -u], [-2/5(1-u), 0, u, 0], [-(1-u), -u, 0, 0], [u, 0, 0, 0]]
+PASS A6 det P = u^4
+PASS A6 the referee's P^-1 (zero for a + b <= 2, (P^-1)_03 = 1/u) satisfies P P^-1 = 1 exactly
+CYC_REF_ALG: ALL CHECKS PASSED   (0.2 s)

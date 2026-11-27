@@ -1,0 +1,91 @@
+% Appendix A, part 3 of 5 (sec:fsp-basic, continued): translations, moving the base point, parameters,
+% derivatives in a parameter, the stationary phase at a generic base point. Continued in part 4.
+
+\begin{lem}[Translations]
+\label{lem:fsp-transl}
+Let $c$ be a non-degenerate critical point of $F$ over $A$, $a$ an amplitude and $p\in A^n$ small in one of two senses: (a) $A=A_0\fps{q}$, $F$ and $c$ are defined over $A_0$, $a\in A_0\fps{x-c}\lser{z}\fps{q}$ and $p\in(qA)^n$; or (b) $p\in(zA\fps{z})^n$ and $a\in A\fps{x-c}\lser{z}$. Then the translate $b_p(t):=\exp\bigl((F(c+t+p)-F(c+t))/z\bigr)a(c+t+p)$ (the formal analogue of $x\mapsto x+p$ applied to $\re^{F/z}a$) is an amplitude, in $A_0\fps{t}\lser{z}\fps{q}$, resp.\ $A\fps{t}\lser{z}$, and $\SPn_c[F;b_p]=\SPn_c[F;a]$.
+\end{lem}
+
+\begin{proof}
+In case (a), $F(c+t+p)-F(c+t)$ has coefficients in $qA$, so the exponential converges $q$-adically, each $q$-coefficient lying in $A_0\fps{t}[z^{-1}]$. In case (b), with $p=zv$, $(F(c+t+zv)-F(c+t))/z=\nabla F(c+t)\cdot v+O(z)$ lies in the ideal $(t,z)$ of $A\fps{t,z}$ because $\nabla F(c+t)=O(t)$, so the exponential converges in $A\fps{t,z}$. Let $s$ be a variable and $B(s):=b_{sp}$. At fixed degree in $t$ and powers of $z$ (and $q$), the coefficient of $B(s)$ is a polynomial in $s$: in case (a) each $p_i$ carries a factor $q$; in case (b) each factor $\nabla F(c+t)\cdot sv$ of the exponential has degree $\geq1$ in $t$, while every other factor, and every term of the Taylor expansion of $a(c+t+szv)$ that involves $s$, carries a positive power of $z$. By \cref{lem:fsp-univ} the coefficients of $\SPn_c[F;B(s)]$ are polynomials in $s$, with derivative $\SPn_c[F;\dd B/\dd s]$. Differentiating $B(s)$ and comparing with $\de_iB(s)$, $\de_i=\de/\de t_i$, gives $\dd B/\dd s=\sum_ip_i\bigl(\de_iB+z^{-1}(\de_iF)(c+t)B\bigr)$; by \cref{lem:fsp-ibp} with $h_i:=p_iB(s)$ (coefficientwise in $q$ in case (a)) the derivative vanishes. A polynomial over a $\bbQ$-algebra with zero derivative is constant: $\SPn_c[F;B(1)]=\SPn_c[F;B(0)]$.
+\end{proof}
+
+\begin{cor}[Moving the base point]
+\label{cor:fsp-movebase}
+Let $A:=A_0\fps{q}$, let $F_0\in A_0\fps{x-c_0}$ have the non-degenerate critical point $c_0$ over $A_0$, with Hessian $\mathsf H_0$, let $F:=F_0+F_1$ with $F_1\in qA_0\fps{x-c_0}\fps{q}$, and $a\in A_0\fps{x-c_0}\lser{z}\fps{q}$. Then $F$ has a unique critical point $c\in c_0+(qA)^n$, non-degenerate with Hessian $\mathsf H_c$. For amplitudes $b$ put
+\[
+\mathcal S_q[F;b]:=\exp\bigl((F(c)-F_0(c_0))/z\bigr)\,(\det\mathsf H_c/\det\mathsf H_0)^{-1/2}\,\SPn_c[F;b]
+\]
+(the power is a binomial series, as $\det\mathsf H_c/\det\mathsf H_0\in1+qA$, and the exponential converges, as $(F(c)-F_0(c_0))/z$ lies in $qA_0\fps{q}\,z^{-1}$). Then $\SPn_{c_0}[F_0;\re^{F_1/z}a]=\mathcal S_q[F;a]$ in $A_0\lser{z}\fps{q}$, the left side being computed coefficientwise in $q$. With the branch rule $\det(-\mathsf H_c)^{1/2}:=\det(-\mathsf H_0)^{1/2}(\det\mathsf H_c/\det\mathsf H_0)^{1/2}$, $\mathcal S_q[F;a]$ is $\mathrm{SP}_c[\re^{F/z}a\,\dd^nx]$ divided by the $q$-independent symbols $[\re^{F_0(c_0)/z}](2\pi z)^{n/2}[\det(-\mathsf H_0)^{-1/2}]$.
+\end{cor}
+
+\begin{proof}
+\Cref{lem:fsp-ift} over $B=A$, $I=(q)$, gives $c$: $\nabla F(c_0)=\nabla F_1(c_0)\in(q)^n$. Put $p:=c-c_0$. By \cref{lem:fsp-transl}~(a) for $F_0$ and the amplitude $\re^{F_1/z}a$, the left side is $\SPn_{c_0}[F_0;b_p]$, $b_p(t)=\exp((F(c+t)-F_0(c_0+t))/z)\,a(c+t)$. With $F(c+t)=F(c)+\frac12t^{\mathrm T}\mathsf H_ct+F_{c,\geq3}(t)$ ($c$ is critical) and $F_0(c_0+t)=F_0(c_0)+\frac12t^{\mathrm T}\mathsf H_0t+F_{0,\geq3}(t)$, in $\cR_n(A_0)\fps{q}$
+\[
+\re^{F_{0,\geq3}/z}\,\re^{(F(c+t)-F_0(c_0+t))/z}=\re^{(F(c)-F_0(c_0))/z}\,\re^{t^{\mathrm T}(\mathsf H_c-\mathsf H_0)t/(2z)}\,\re^{F_{c,\geq3}/z}.
+\]
+The scalar factor comes out of $E_{-z\mathsf H_0^{-1}}$. As $\mathsf H_c-\mathsf H_0$ has entries in $qA$, \cref{lem:fsp-pg}~(iii) gives, for $P\in\cR_n(A_0)\fps{q}$,
+\[
+E_{-z\mathsf H_0^{-1}}\bigl[\re^{t^{\mathrm T}(\mathsf H_c-\mathsf H_0)t/(2z)}P\bigr]=(\det\mathsf H_c/\det\mathsf H_0)^{-1/2}\,E_{-z\mathsf H_c^{-1}}[P],
+\]
+and $E_{-z\mathsf H_c^{-1}}[\re^{F_{c,\geq3}/z}a(c+t)]=\SPn_c[F;a]$.
+\end{proof}
+
+\begin{lem}[Parameters]
+\label{lem:fsp-param}
+(i) (Dependence on parameters.) If the Taylor coefficients at $c$ of $F$ (orders $\geq2$) and of $a$ lie in a subring $A'\subset A$ and $\det\mathsf H\in A'^\times$, all coefficients of $\SPn_c[F;a]$ lie in $A'$; rational data give rational coefficients, with poles only where the data have poles or $\det\mathsf H=0$. Over $A=A_0\fps{q}$, $q=(q_1,\dots,q_p)$, if $F|_{q=0}$ has the non-degenerate critical point $c_0$, then $F$ has a unique critical point $c(q)\in c_0+(q)A^n$, non-degenerate, and the coefficients of $\SPn_{c(q)}[F;a]$, $F(c(q))$ and $\det\Hess F(c(q))$ lie in $A_0\fps{q}$. If $F$, $a$ are holomorphic near $(c_0,q_0)$ and $c(q)$ is a holomorphic family of non-degenerate critical points with $c(q_0)=c_0$, these are holomorphic near $q_0$.
+
+(ii) (Taylor expansion and evaluation.) In the holomorphic case, the Taylor series at $q_0$ of each coefficient is the corresponding coefficient over $\bbC\fps{q-q_0}$ for the Taylor-expanded data, at the critical point of the formal case, and its value at $q_0$ is that of $\SPn_{c_0}[F(\cdot\,;q_0);a(\cdot\,;q_0)]$. In the formal case, $q\mapsto0$ maps $\SPn_{c(q)}[F;a]$ to $\SPn_{c_0}[F|_{q=0};a|_{q=0}]$.
+
+(iii) (Perturbation in a parameter.) \Cref{cor:fsp-movebase}: the $q$-expansion of the stationary phase at the moving critical point, with its two prefactors, is that at $c_0$ with $\re^{F_1/z}$ in the amplitude; for $F_1=qg$ and $a$ free of $q$, $\coef{q^d}\SPn_{c_0}[F_0;\re^{qg/z}a]=\SPn_{c_0}[F_0;(g/z)^da]/d!$.
+
+(iv) (A $z$-dependent part of the phase.) Let $g\in A\fps{x-c}$, $g(c)=0$, $\varepsilon$ a variable and $F_\varepsilon:=F+\varepsilon g$, with its unique critical point $c(\varepsilon)\in c+(\varepsilon A\fps{\varepsilon})^n$. Then $\mathcal S_\varepsilon[F_\varepsilon;a]=\SPn_c[F;\re^{\varepsilon g/z}a]$; giving $\varepsilon$ the weight $1$, this series has finitely many non-zero terms $\varepsilon^dz^k$ of each bounded weight $d+k$, the substitution $\varepsilon\mapsto z$ is well defined on such series, and $[\mathcal S_\varepsilon[F_\varepsilon;a]]_{\varepsilon=z}=\SPn_c[F;\re^ga]$. So the stationary phase with the $z$-dependent phase $F+zg$ is defined and equals the one with $zg$ moved into the amplitude as $\re^g$.
+\end{lem}
+
+\begin{proof}
+(i) The first assertion is \eqref{eq:fsp-univ}, as $C=-\operatorname{adj}(\mathsf H)/\det\mathsf H$. In the formal case \cref{lem:fsp-ift} over $A$, $I=(q)$, gives $c(q)$, and the data at $c(q)$ lie in $A$. In the holomorphic case $\de_x^\alpha F(c(q);q)$, $\de_x^\alpha a(c(q);q)$ and the covariance are holomorphic in $q$. (ii) The Taylor map and the evaluations are ring homomorphisms (\cref{lem:fsp-univ}~(i)); the Taylor series of $c(q)$ is a critical point of the expanded phase, hence the formal one by uniqueness (\cref{lem:fsp-ift}). (iii) $\re^{qg/z}a=\sum_dq^d(g/z)^da/d!$. (iv) \Cref{lem:fsp-ift} over $A\fps{\varepsilon}$ gives $c(\varepsilon)$, as $\nabla F_\varepsilon(c)=\varepsilon\nabla g(c)$; the first identity is \cref{cor:fsp-movebase} with $q=\varepsilon$, $F_0=F$, $F_1=\varepsilon g$. In $\cR_{n;\varepsilon}(A)$ every term of $\varepsilon g/z$ and of $F_{\geq3}/z$ has weight $\geq1/2$ ($g=O(t)$), so $\exp(F_{\geq3}/z)\exp(\varepsilon g/z)a(c+t)$ lies there; it is the same formal sum as in $\cR_n(A)\fps{\varepsilon}$, $E_{zC}$ preserves the weight, and each coefficient of $\varepsilon^dz^k$ is the same finite sum in both readings, which gives the finiteness. The substitution $t^\alpha\varepsilon^dz^j\mapsto t^\alpha z^{d+j}$ maps $\cR_{n;\varepsilon}(A)$ to $\cR_n(A)$ (each output monomial comes from finitely many inputs of its weight), is a ring homomorphism compatible with summable sums, maps $\exp(\varepsilon g/z)$ to $\re^g$, and commutes with $E_{zC}$ (both composites send $t^\alpha\varepsilon^dz^j$ to $\langle t^\alpha\rangle_Cz^{d+j+|\alpha|/2}$).
+\end{proof}
+
+\begin{lem}[Derivatives in a parameter]
+\label{lem:fsp-dq}
+In the situation of \cref{cor:fsp-movebase}, for every amplitude $a\in A_0\fps{x-c_0}\lser{z}\fps{q}$,
+\[
+\frac{\dd}{\dd q}\,\mathcal S_q[F;a]=\mathcal S_q\bigl[F;\,z^{-1}(\de_qF)\,a+\de_qa\bigr]\qquad\text{in }A_0\lser{z}\fps{q},
+\]
+i.e.\ $\frac{\dd}{\dd q}\mathrm{SP}[\re^{F/z}a\,\dd^nx]=\mathrm{SP}[\de_q(\re^{F/z}a)\,\dd^nx]$; the same holds for $\mathrm D:=(q_0+q)\,\dd/\dd q$, $q_0\in A_0$, in place of $\de_q$. If $\mathrm DF=\varphi$ does not depend on $q$ and $\mathrm Da=0$, then $P(z\mathrm D)\,\mathcal S_q[F;a]=\mathcal S_q[F;P(\varphi)a]$ for every polynomial $P$ over $A_0[z]$. For holomorphic data with a holomorphic family $c(q)$ the same identities hold for the coefficient functions.
+\end{lem}
+
+\begin{proof}
+By \cref{cor:fsp-movebase}, $\mathcal S_q[F;a]=\SPn_{c_0}[F_0;\re^{F_1/z}a]$ with a $q$-independent functional, applied coefficientwise in $q$; so $\dd/\dd q$ acts on the amplitude, $\frac{\dd}{\dd q}(\re^{F_1/z}a)=\re^{F_1/z}(z^{-1}(\de_qF)a+\de_qa)$, and \cref{cor:fsp-movebase} for this amplitude gives the claim. For $\mathrm D$ multiply by $q_0+q$. If $\mathrm DF=\varphi$ is $q$-independent and $\mathrm Da=0$, then $\mathrm D(\varphi^ka)=0$ and $z\mathrm D\,\mathcal S_q[F;\varphi^ka]=\mathcal S_q[F;\varphi^{k+1}a]$; induction and linearity over $A_0[z]$ give the clause for $P$ (without $\mathrm Da=0$, terms $z\mathrm D(\varphi^ka)$ appear). The holomorphic version follows from \cref{lem:fsp-param}~(ii) at every point.
+\end{proof}
+
+\begin{lem}[The stationary phase at a generic base point]
+\label{lem:fsp-generic}
+Let $\delta(\sigma):=(\sigma^6-\sigma)/5$, so that $\AL=\bbQ[L,\delta(L)^{-1}]$ and $\Dq L=\delta(L)$, and let $\bbA_\sigma:=\bbQ[\sigma,\delta(\sigma)^{-1}]$ be the same ring in a variable $\sigma$; for $f\in\bbA_\sigma$ let $f(L+t)\in\AL\fps{t}$ be its Taylor expansion at $\sigma=L$. Let $S$ be a phase at $\sigma=L$ over $\AL$ with $S'(L)=0$ and $S''(L+t)=-1/\delta(L+t)$, $\varepsilon$ a variable and $F(\sigma;\varepsilon):=S(\sigma)+\varepsilon\sigma$. Let $\mathsf r(\sigma):=5\sigma/(\sigma^5-1)\in\bbA_\sigma^\times$, and for $\sigma_\ast\in\{L,\sigma_\varepsilon\}$ let $(\mathsf r(\sigma)/\mathsf r(\sigma_\ast))^{1/2}$ be the square root with constant term $1$ of the expansion of $\mathsf r(\sigma)/\mathsf r(\sigma_\ast)$ at $\sigma_\ast$.
+
+(i) $F(\cdot\,;\varepsilon)$ has a unique critical point $\sigma_\varepsilon\in L+\varepsilon\AL\fps{\varepsilon}$, non-degenerate, and $\sigma_\varepsilon=\exp(\varepsilon\Dq)(L)$, where $\exp(\varepsilon\Dq):=\sum_m\varepsilon^m\Dq^m/m!$; the ring homomorphism $\AL\to\AL\fps{\varepsilon}$, $L\mapsto\sigma_\varepsilon$, is $\exp(\varepsilon\Dq)$.
+
+(ii) For $b\in\bbA_\sigma\fps{z}$, with $\exp(\varepsilon\Dq)$ acting coefficientwise in $z$,
+\[
+\SPn_{\sigma_\varepsilon}\bigl[F(\cdot\,;\varepsilon);(\mathsf r(\sigma)/\mathsf r(\sigma_\varepsilon))^{1/2}b\bigr]=\exp(\varepsilon\Dq)\,\SPn_L\bigl[S;(\mathsf r(\sigma)/\mathsf r(L))^{1/2}b\bigr].
+\]
+
+(iii) For $a:=(\mathsf r(\sigma)/\mathsf r(L))^{1/2}b$, $b\in\bbA_\sigma\fps{z}$, and $\Dq$ acting coefficientwise in $z$,
+\begin{equation}
+\label{eq:fsp-generic}
+(z\Dq+L)\bigl(L\cdot\SPn_L[S;a]\bigr)=L\cdot\SPn_L[S;\sigma a]\qquad\text{in }\AL\lser{z},
+\end{equation}
+where $\sigma a$ is the amplitude $(L+t)\,a(L+t,z)$.
+\end{lem}
+
+\begin{proof}
+(i) $F(L+t;\varepsilon)=S(L)+\varepsilon L+\varepsilon t+\sum_{k\geq2}S^{(k)}(L)t^k/k!$ has gradient $\varepsilon$ and Hessian $-1/\delta(L)\in\AL^\times$ at $t=0$, so \cref{lem:fsp-ift} over $\AL\fps{\varepsilon}$ gives $\sigma_\varepsilon=L+t_\varepsilon$, $t_\varepsilon\in\varepsilon\AL\fps{\varepsilon}$. For $f\in\bbA_\sigma$, the substitution $t=t_\varepsilon$ in $f(L+t)$ is the ring homomorphism $\bbA_\sigma\to\AL\fps{\varepsilon}$, $\sigma\mapsto\sigma_\varepsilon$ (well defined, $\delta(\sigma_\varepsilon)\equiv\delta(L)$ modulo $\varepsilon$ being a unit): both are ring homomorphisms agreeing on $\sigma$. So $S''(\sigma_\varepsilon)=-1/\delta(\sigma_\varepsilon)$, and differentiating $S'(\sigma_\varepsilon)+\varepsilon=0$ gives $\sigma_\varepsilon'=\delta(\sigma_\varepsilon)$, $\sigma_0=L$. On the other hand $\exp(\varepsilon\Dq)$ is a ring homomorphism (Leibniz rule for $\Dq^m$) with $\frac{\dd}{\dd\varepsilon}\exp(\varepsilon\Dq)(f)=\exp(\varepsilon\Dq)(\Dq f)$, so $\tilde\sigma_\varepsilon:=\exp(\varepsilon\Dq)(L)$ satisfies $\tilde\sigma_\varepsilon'=\delta(\tilde\sigma_\varepsilon)$, $\tilde\sigma_0=L$. A solution $y\in\AL\fps{\varepsilon}$ of $y'=\delta(y)$, $y(0)=L$, is unique, since $(m+1)y_{m+1}=\coef{\varepsilon^m}\delta(y)$ involves only $y_0,\dots,y_m$. So $\sigma_\varepsilon=\tilde\sigma_\varepsilon$, and the two homomorphisms agree on $L$, hence on $\AL$.
+(ii) For $f\in\bbA_\sigma$, the expansion $f(\sigma_\varepsilon+t)$ is $\exp(\varepsilon\Dq)$ applied coefficientwise to $f(L+t)$: both are ring homomorphisms $\bbA_\sigma\to\AL\fps{\varepsilon}\fps{t}$ sending $\sigma$ to $\sigma_\varepsilon+t$, by (i). This applies to the derivatives of $-1/\delta$ (the Taylor coefficients of order $\geq2$ of $F(\cdot\,;\varepsilon)$ at $\sigma_\varepsilon$), to the covariance $\delta(\sigma_\varepsilon)$, to the coefficients of $b$ and to $\mathsf r$; the binomial series has rational coefficients. \Cref{lem:fsp-univ}~(i) and \cref{lem:fsp-const} give (ii).
+(iii) Put $N:=\SPn_L[S;a]$ and $N^\sigma:=\SPn_L[S;\sigma a]$. The amplitude $a$ is free of $\varepsilon$, and at $\sigma_\varepsilon$ it equals $(\mathsf r(\sigma_\varepsilon)/\mathsf r(L))^{1/2}(\mathsf r(\sigma)/\mathsf r(\sigma_\varepsilon))^{1/2}b$, the first factor being the constant $(\exp(\varepsilon\Dq)(\mathsf r(L))/\mathsf r(L))^{1/2}$. By linearity and (ii), and since the Hessian at $\sigma_\varepsilon$ is $\exp(\varepsilon\Dq)(-1/\delta(L))$, the series of \cref{cor:fsp-movebase} (base ring $\AL$, parameter $\varepsilon$, $F_0=S$, $F_1=\varepsilon\sigma$) is
+\[
+\mathcal S_\varepsilon[F;a]=\re^{(F(\sigma_\varepsilon;\varepsilon)-S(L))/z}\Bigl(\frac{\exp(\varepsilon\Dq)(\delta(L)\mathsf r(L))}{\delta(L)\mathsf r(L)}\Bigr)^{1/2}\exp(\varepsilon\Dq)(N)=\re^{(F(\sigma_\varepsilon;\varepsilon)-S(L))/z}\,\frac{\sigma_\varepsilon}L\,\exp(\varepsilon\Dq)(N),
+\]
+because $\delta(L)\mathsf r(L)=L^2$ and two elements of $1+\varepsilon\AL\fps{\varepsilon}$ with equal squares are equal. By \cref{lem:fsp-dq} with $\de_\varepsilon F=\sigma$, $\de_\varepsilon a=0$, the derivative at $\varepsilon=0$ of the left side is $z^{-1}N^\sigma$. On the right, $\frac{\dd}{\dd\varepsilon}F(\sigma_\varepsilon;\varepsilon)=\sigma_\varepsilon$ by criticality, so the three factors contribute $L/z$, $\Dq L/L$ and $\Dq N$. Hence $(L/z)N+(\Dq L/L)N+\Dq N=z^{-1}N^\sigma$; multiply by $zL$. The hypothesis that $b$ has coefficients in $\bbA_\sigma$ (not involving $L$ other than through $\sigma$) is used in (ii) and cannot be dropped: for $b=f(L)b_0$ with $f\in\AL$, $b_0\in\bbA_\sigma\fps{z}$, the two sides of \eqref{eq:fsp-generic} differ by $z(\Dq f)L\,\SPn_L[S;(\mathsf r(\sigma)/\mathsf r(L))^{1/2}b_0]$. The lemma is applied in \cref{thm:con-Pa}~(i) to the phase and amplitude of \cref{def:gam-c}.
+\end{proof}
+
+\input{sections/a_formalsp_4}

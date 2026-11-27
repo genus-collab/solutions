@@ -1,0 +1,10 @@
+==========================================================================================
+genus5_run g5_89_nat_ab1o3_m2o7: task 1 of 100, python 3.9.25, host node005.stanage.hpc.shef.ac.uk
+   set-up 6 s: 4555 inner graphs, K = 8
+   5 inner graphs assigned, estimated 0.46 h on the reference machine (heaviest task 0.70 h)
+   inner graph 2864 (E= 9, V=5):  1856.5 s, 51 outer graphs
+   inner graph  187 (E= 5, V=4):     2.8 s, 19 outer graphs
+   inner graph 4235 (E=11, V=7):     1.8 s, 207 outer graphs
+   inner graph  944 (E= 7, V=5):     1.1 s, 42 outer graphs
+   inner graph  422 (E= 6, V=5):     0.7 s, 30 outer graphs
+TASK 1 OF 100 (g5_89_nat_ab1o3_m2o7) COMPLETE: 5 inner graphs, 1869 s

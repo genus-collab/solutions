@@ -1,0 +1,18 @@
+pieces whose u-support differs between the frames: 190
+lowest u-order at which any of them differs: 3
+distribution of the lowest differing u-order: [(3, 16), (4, 13), (5, 52), (6, 43), (7, 66)]
+by (E(t), E(q)): [((7, 3), 1), ((7, 4), 1), ((8, 3), 2), ((8, 4), 4), ((8, 5), 3), ((9, 3), 5), ((9, 4), 12), ((9, 5), 14), ((9, 6), 6), ((10, 3), 5), ((10, 4), 13), ((10, 5), 24), ((10, 6), 21), ((10, 7), 2), ((11, 3), 3), ((11, 4), 8), ((11, 5), 20), ((11, 6), 24), ((11, 7), 6), ((12, 5), 3), ((12, 6), 8), ((12, 7), 5)]
+pieces stored in one frame only: 66; their supports: [((7,), 66)]
+   t= 949 (E= 7) -> q=  45 (E=3): support (0,0) [3, 4, 5, 6, 7], second frame [4, 5, 6, 7]
+   t= 949 (E= 7) -> q= 100 (E=4): support (0,0) [6, 7], second frame [7]
+   t=1825 (E= 8) -> q= 235 (E=5): support (0,0) [6, 7], second frame [5, 6, 7]
+   t=2035 (E= 8) -> q=  45 (E=3): support (0,0) [3, 4, 5, 6, 7], second frame [4, 5, 6, 7]
+   t=2035 (E= 8) -> q= 100 (E=4): support (0,0) [5, 6, 7], second frame [6, 7]
+   t=2035 (E= 8) -> q= 123 (E=4): support (0,0) [4, 5, 6, 7], second frame [5, 6, 7]
+   t=2035 (E= 8) -> q= 287 (E=5): support (0,0) [6, 7], second frame [7]
+   t=2364 (E= 8) -> q=  45 (E=3): support (0,0) [3, 4, 5, 6, 7], second frame [4, 5, 6, 7]
+   t=2364 (E= 8) -> q= 100 (E=4): support (0,0) [5, 6, 7], second frame [6, 7]
+   t=2364 (E= 8) -> q= 131 (E=4): support (0,0) [5, 6, 7], second frame [6, 7]
+   t=2364 (E= 8) -> q= 334 (E=5): support (0,0) [7], second frame []
+   t=2780 (E= 9) -> q=  45 (E=3): support (0,0) [3, 4, 5, 6, 7], second frame [4, 5, 6, 7]
+written out/selection_detail.json

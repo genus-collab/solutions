@@ -1,0 +1,11 @@
+Get["rtr.wl"];
+cR[j_, i_, k_] := Coefficient[Rinv[[j, i]] /. th -> 1/s, s, k];
+cM[i_, j_, k_] := (-1)^k Coefficient[Mt[[i, j]], t, k];
+rnd[x_] := Round[10^8 Re[N[x, 30]]] + I Round[10^8 Im[N[x, 30]]];
+bad1 = Select[Flatten[Table[{j, i, k, rnd[cR[j, i, k] - cM[i, j, k]]}, {k, 0, 3}, {j, 5}, {i, 5}], 2], #[[4]] != 0 &];
+bad2 = Select[Flatten[Table[{j, i, k, rnd[cR[j, i, k] - cM[j, i, k]]}, {k, 0, 3}, {j, 5}, {i, 5}], 2], #[[4]] != 0 &];
+Print["note reading: nonzero differences (j,i,k,1e8*diff): ", bad1];
+Print["transposed reading: number of nonzero differences: ", Length[bad2], " first: ", Take[bad2, Min[3, Length[bad2]]]];
+lhs2 = Table[Expand[Sum[Rinv[[i, k]]/(sq cs[[k]]), {k, 5}] /. th -> 1/s], {i, 5}];
+rhs2 = Table[Expand[Lap[i, D[pws[[i]], w]] /. th -> 1/s], {i, 5}];
+Print["(2-32) nonzero differences: ", Select[Flatten[Table[{i, k, rnd[Coefficient[lhs2[[i]] - rhs2[[i]], s, k]]}, {i, 5}, {k, 0, 3}], 1], #[[3]] != 0 &]];

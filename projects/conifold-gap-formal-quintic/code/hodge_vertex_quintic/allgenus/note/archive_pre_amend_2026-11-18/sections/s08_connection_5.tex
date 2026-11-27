@@ -1,0 +1,61 @@
+% Section 8 (part 5): Theorem P(a), parts (ii)-(iv); the uniformising map; reduction modulo exact forms.
+
+\begin{proof}[Proof of (ii)]
+Let $A:=\bbQ\lser{s}$, a field, in which $L=s^{-1}$ and $u=s^5$. By \cref{lem:fsp-univ}, $\jmath(c)$ is the normalised saddle series of the same data computed over $A$. The letters $\phi$, $J$, $a$ are local to this proof.
+
+\emph{Step 1 (equivariance).} On $A$, $\Dq=-(1-u)\,\dd/\dd u=-\frac{1-s^5}{5s^4}\frac{\dd}{\dd s}$, and $\Dq(s^{-1})=(1-s^5)/(5s^6)=\jmath((L^6-L)/5)$. A ring homomorphism compatible with the derivations on the generators is compatible on the localisation; so $\jmath\circ\Dq=\Dq\circ\jmath$.
+
+\emph{Step 2 (change of variables).} The map $\phi(X):=L/X$, $\phi(X)-L=L\sum_{m\geq1}(1-X)^m$, has $\phi(1)=L$ and $J:=\phi'(1)=-L$, a unit of $A$. By \cref{lem:fsp-cov} over $A$, $\SPn_L[\mathsf S_0;a]=\SPn_{X=1}[\mathsf S_0\circ\phi;(a\circ\phi)\,\phi'/J]$ for every amplitude $a$.
+
+\emph{Step 3 (the phases agree).} In $A\fps{X-1}$, $\mathsf S_0(\phi(X))-\mathsf S_0(L)=-s^4\bigl(\hat\cW(X;u)-\hat\cW(1;u)\bigr)$. Both sides vanish at $X=1$, and their $X$-derivatives are $-(L/X^2)\mathsf S_0'(L/X)$ and $(L/X^2)\log((1-uX^5)/(1-u))$ (\cref{lem:con-form}~(c)); so it suffices that $\mathsf S_0'(L/X)=-\log((1-uX^5)/(1-u))$. Both sides of this vanish at $X=1$, and both $X$-derivatives are images of $5uX^4/(1-uX^5)$, $u=s^5$ (on the left $\mathsf S_0''(L/X)\cdot(-L/X^2)$, with $\mathsf S_0''=-5/(\sigma(\sigma^5-1))$), under two ring homomorphisms $\bbQ[s^{\pm1},X^{\pm1},(1-s^5X^5)^{-1}]\to A\fps{X-1}$: expansion at $X=1$ over $\bbQ(s)$, and expansion of $(1-s^5X^5)^{-1}=\sum_Pu^PX^{5P}$ in $\bbQ[X]\fps{u}$ followed by expansion at $X=1$ coefficientwise in $s$. They agree on the generators, hence everywhere; and a series in $X-1$ is determined by its value at $X=1$ and its derivative.
+
+\emph{Step 4 (the amplitudes agree).} In $A\fps{X-1}\fps{z}$, with $z=s^4\zh$, $(A_{\mathrm{St}}\circ\phi)\,\phi'/(J\,A_{\mathrm{St}}(L,0))=\hat\fa/\hat\fa(1;0)$. The half-density: at $\sigma=L/X$ one has $5\sigma/(1-\sigma^5)=5LuX^4/(uX^5-1)$ and $\phi'/J=X^{-2}$, so $\re^{\mathsf S_1(L/X)-\mathsf S_1(L)}\phi'/J$ is the square root with constant term $1$ of $(1-u)/(1-uX^5)$, which is the half-density of $\hat\fa/\hat\fa(1;0)$. The Stirling parts: $z^{2k-1}(5\sigma)^{1-2k}=5^{1-2k}(uX\zh)^{2k-1}$ and
+\[
+z^{2k-1}\sum_j(\zeta^j-\sigma)^{1-2k}=-(uX\zh)^{2k-1}\sum_j(1-\zeta^jsX)^{1-2k}=-(uX\zh)^{2k-1}\,5\sum_{P\geq0}\binom{2k-2+5P}{5P}u^PX^{5P},
+\]
+which gives the exponent of $\hat\fa$ (\cref{lem:con-form}~(b), (c)); these identities hold by the two-homomorphism argument of Step 3.
+
+\emph{Step 5 (the rescaling).} Write the amplitude of Step 4 as $a(X;z):=\hat\fa(X;z/s^4)/\hat\fa(1;0)$. By \cref{lem:fsp-homog} with the unit $\mu=s^4$ of $A$, $\SPn_{X=1}[-s^4\hat\cW;a(\cdot;z)](z)=\SPn_{X=1}[-\hat\cW;a(\cdot;s^4\zh)](\zh)$ at $\zh=z/s^4$, and $a(\cdot;s^4\zh)=\hat\fa(\cdot;\zh)/\hat\fa(1;0)$. With Steps 2--4 and \cref{lem:fsp-const} this gives $\jmath(c)(z)=\PhiSP(z/s^4;u)$ in $A\fps{z}$. The hatted data lie in $\bbQ\fps{u}$ (\cref{lem:con-form}~(c)), so $\PhiSP$ is computed in $\bbQ\fps{u}\fps{\zh}$ and, by \cref{lem:fsp-univ} applied to $\bbQ\fps{u}\to A$, equals the same functional over $A$.
+\end{proof}
+
+\begin{proof}[Proof of (iii)]
+Apply $\jmath$ to (i): by Step 1 of the proof of (ii), $\PFfive^{L}(s^{-1}\jmath(c))=0$ in $\bbQ\lser{s}\fps{z}$. The substitution $z=s^4\zh$ is a ring isomorphism $\bbQ\lser{s}\fps{z}\to\bbQ\lser{s}\fps{\zh}$, since $s^4$ is a unit, and by (ii) it maps $s^{-1}\jmath(c)$ to $s^{-1}\PhiSP$. By \eqref{eq:con-chain}, $\PFfive^{L}(s^{-1}\PhiSP)=s^{-1}\mathrm{HPF}(\PhiSP)$, so $\mathrm{HPF}(\PhiSP)=0$ in $\bbQ\lser{s}\fps{\zh}$. HPF has coefficients in $\bbQ[u,\zh]$, and $\PhiSP$ lies in $\bbQ\fps{u}\fps{\zh}$, which embeds in $\bbQ\lser{s}\fps{\zh}$; so the identity holds in $\bbQ\fps{u}\fps{\zh}$.
+\end{proof}
+
+\begin{proof}[Proof of (iv)]
+By (iii), $\PhiSP$ solves HPF with $\mathrm{ph}^{\mathrm{SP}}_0=1$ and coefficients in $\bbQ\fps{u}$; by \cref{lem:gau-poly} (only its polynomiality clause is used) every $\mathrm{ph}^{\mathrm{SP}}_n$ is a polynomial. Then $\jmath\bigl(L^{4n}\mathrm{ph}^{\mathrm{SP}}_n(L^{-5})\bigr)=s^{-4n}\mathrm{ph}^{\mathrm{SP}}_n(s^5)=\jmath(c_n)$ by (ii), and $\jmath$ is injective.
+\end{proof}
+
+Theorem P(b) identifies $\PhiSP$ with $\Phican$. Its proof uniformises the hatted phase by the model phase $\Wv$, reduces the $1$-form modulo exact forms to the five model forms, and compares two functionals on the reduced form, the stationary phase at the critical point and the residue at the pole.
+
+\begin{lem}[The uniformising map]
+\label{lem:con-cfu}
+There are unique $Y_k\in\bbQ[T]$ ($k\geq1$) and $V\in1+u\bbQ\fps{u}$ such that $Y:=X\bigl(1+\sum_{k\geq1}u^kY_k(X^5)\bigr)$ satisfies
+\[
+\hat\cW(X;u)=V/Y+Y^4/4=W_V(Y)\qquad\text{in }\bbQ[X,X^{-1}]\fps{u}.
+\]
+Moreover $\deg Y_k\leq k$ and $Y_1=(1+T)/18$; $V=\tau^{-5/4}$; the point $X=1$ goes to the critical point $Y_c:=Y(1)=V^{1/5}=\tau^{-1/4}$ of $W_V$, and $Y'(1)\in1+u\bbQ\fps{u}$; the inverse map has the same form, $X=Y\bigl(1+\sum_ku^kX_k(Y^5)\bigr)$ with $X_k\in\bbQ[T]$ and $\deg X_k\leq k$; and $Y(\zeta X)=\zeta Y(X)$.
+\end{lem}
+
+\begin{proof}
+Write $Y=X\,y(T)$, $T=X^5$, $y=1+\sum_{k\geq1}u^kY_k(T)$. Then $V/Y+Y^4/4=X^{-1}\bigl(V/y+Ty^4/4\bigr)$, and by \cref{lem:con-form}~(c) the equation becomes $V/y+Ty^4/4=\sum_{m\geq1}\frac{u^{m-1}}m\bigl(1+\frac{T^m}{5m-1}\bigr)$. At $u^0$ it holds with $V=1$, $y=1$. At $u^k$, $k\geq1$, it reads $(T-1)Y_k+V_k=R_k(T)$, where $V_k:=[u^k]V$ and $R_k$ is a polynomial built from $Y_1,\dots,Y_{k-1}$, $V_1,\dots,V_{k-1}$ and the term $\frac1{k+1}(1+\frac{T^{k+1}}{5k+4})$. It has a solution with $Y_k$ a polynomial if and only if $V_k=R_k(1)$, and then $Y_k=(R_k(T)-R_k(1))/(T-1)$ is unique. By induction $\deg Y_j\leq j$ for $j<k$; the $u^k$-parts of $V/y$ and of $Ty^4/4$ other than $V_k-Y_k$ and $TY_k$ then have degree at most $k$ and $k+1$, so $\deg R_k\leq k+1$ and $\deg Y_k\leq k$. At $k=1$: $R_1=\frac12+\frac{T^2}{18}$, $V_1=\frac59$, $Y_1=(1+T)/18$. Since $\hat\cW'(1)=0$ and $Y'(1)\in1+u\bbQ\fps{u}$ is a unit, $W_V'(Y(1))=0$, i.e. $Y(1)^5=V$ with $Y(1)\in1+u\bbQ\fps{u}$, so $Y(1)=V^{1/5}$; then $W_V(Y_c)=\frac54V^{4/5}$, and $\hat\cW(1)=\frac54\tau^{-1}$ gives $V=\tau^{-5/4}$. In the variables $x=sX$ and $sY$ the map reads $sY=x\bigl(1+\sum c_{k,d}u^{k-d}x^{5d}\bigr)$ with $d\leq k$, a change of variables in $\bbQ\fps{u,x}$ tangent to the identity; its inverse is of the same kind, and returning to $Y$ gives the stated form of the inverse with $\deg X_k\leq k$. Finally $T=X^5$ is invariant under $X\mapsto\zeta X$.
+\end{proof}
+
+\begin{lem}[Reduction modulo exact forms]
+\label{lem:con-red}
+Let $\fa_Y(Y;\zh):=\hat\fa(X(Y);\zh)\,X'(Y)$, the hatted amplitude in the variable $Y$ of \cref{lem:con-cfu}; it lies in $\bbQ[Y,\zh]\fps{u}$. For $n\geq4$,
+\[
+\zh\,\dd\bigl(Y^{n-3}\re^{-W_V/\zh}\bigr)=\bigl((n-3)\zh Y^{n-4}+VY^{n-5}-Y^n\bigr)\re^{-W_V/\zh}\,\dd Y,
+\]
+and there are $\pi_m\in\bbQ[\zh]\fps{u}$ ($m=-1,\dots,3$) and $\mathcal E\in Y\bbQ[Y,\zh]\fps{u}$ with
+\[
+\fa_Y\,\re^{-W_V/\zh}\,\dd Y=\sum_{m=-1}^{3}\pi_m\,Y^m\re^{-W_V/\zh}\,\dd Y+\dd\bigl(\mathcal E\,\re^{-W_V/\zh}\bigr).
+\]
+With $\deg Y=1$ and $\deg\zh=-1$, $\pi_m$ contains only powers $\zh^k$ with $k\equiv m\bmod5$; for $m=\nu_b$ this is $k\equiv-b\bmod5$.
+\end{lem}
+
+\begin{proof}
+The displayed identity is $\frac{\dd}{\dd Y}(Y^{n-3}\re^{-W_V/\zh})=\bigl((n-3)Y^{n-4}-Y^{n-3}W_V'(Y)/\zh\bigr)\re^{-W_V/\zh}$ with $W_V'=Y^3-VY^{-2}$; so $Y^n\equiv(n-3)\zh Y^{n-4}+VY^{n-5}$ modulo exact forms. At each $u$-order, $\fa_Y$ is a polynomial in $Y$ and $\zh$, because $\hat\fa\in\bbQ[X,\zh]\fps{u}$ and the inverse map of \cref{lem:con-cfu} is polynomial at each $u$-order. Each reduction step lowers the $Y$-degree by at least $4$, so finitely many steps bring a polynomial to the exponents $-1,\dots,3$, the lowest exponent produced being $4-5=-1$; the powers of $V$ bring power series in $u$, and each $u$-order receives finitely many steps. The primitives are $Y^{n-3}$ with $n\geq4$, whence $\mathcal E\in Y\bbQ[Y,\zh]\fps{u}$. Grading: $W_V(\zeta Y)=\zeta^{-1}W_V(Y)$; $\hat\fa(\zeta X;\zh)=\hat\fa(X;\zeta\zh)$, because $\fa$ depends on $x$ only through $xz$ and $x^5$; and the uniformising map commutes with $X\mapsto\zeta X$. So every monomial $Y^a\zh^b\,\dd Y$ of $\fa_Y\,\dd Y$ has $a-b+1\equiv1\bmod5$, and the relation preserves the degree modulo $5$. Hence every monomial $\zh^kY^m\,\dd Y$ of the result has $m-k\equiv0$; and $\nu_b\equiv-b\bmod5$ (\cref{def:set-model}). Uniqueness of the $\pi_m$ is not needed: \cref{lem:con-id} below determines them.
+\end{proof}
+
+\input{sections/s08_connection_6}

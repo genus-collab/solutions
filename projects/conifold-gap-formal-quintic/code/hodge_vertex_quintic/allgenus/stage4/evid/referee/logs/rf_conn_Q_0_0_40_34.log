@@ -1,0 +1,8 @@
+rf_conn (referee, independent): field Q, frame (0, 0), N <= 40, u < 34, gauge precision NU = 84; log logs/rf_conn_Q_0_0_40_34.log
+   canonical gauge k <= 40 in 47 s (regular: asserted at every order)
+PASS C1 ph^can_N is a polynomial of degree exactly floor(4N/5) (N >= 3; constant for N <= 2), N <= 40: []
+PASS C2 connection form ph^can_N(1) = h_N at EVERY N <= 40 (5 | N: (N); 5 not | N: (H)): []
+PASS C3 ph^can_N = ph_N (QRR WKB polynomial from the PF operator), N <= 40: []
+   f^can_5m = [u^4m] ph^can_5m: f_5 = 4537/3937500; f_10 = -177640111151/31007812500000; f_15 = -284328315069009259339/6226756347656250000000
+PASS C4 control: the stored gauge gives ph^s_5(1) - h_5 = m5 = -43397/807975000 (fails C2 by exactly m5): -43397/807975000
+RF_CONN Q 0_0 N<=40 K=34: ALL CHECKS PASSED   (50 s)

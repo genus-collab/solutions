@@ -1,0 +1,8 @@
+g3_frames.py  KMAX = 80  (exact over Q; homogeneous, at v = 1 with v-powers from the weights)
+[I=II] closed form of Y^C vs iterated-integral solution, b < 5, n < 96: mismatches 0
+[A=B] frames by Theta^-1 vs top-down elimination, k <= 80, a != 1: 324 frames, mismatches 0
+[ANN] Pi_i(frame) = 0 for 0 <= i <= k+12 (Y^C from the ODE): failures 0
+[EXP] coefficients with non-integral or < 1 v-exponent: 0;  support rule j = k - nu_a - 1 mod 5 violated: 0
+[SRC] the source's examples (frame(1,0) = z1 + vH, .., frame(6,0) = z^6 1 + v z^5 H - (v^5/120) H, trivial frames): mismatches none
+[C1] control, frames from Y^C(+z): 304 of 314 non-trivial frames FAIL to be annihilated (expected: most)
+RESULT: ALL CHECKS PASSED

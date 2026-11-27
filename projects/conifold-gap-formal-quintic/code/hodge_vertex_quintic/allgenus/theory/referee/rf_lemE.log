@@ -1,0 +1,11 @@
+====================================================================================================
+rf_lemE seed 20261113 [2026-11-13T19:44:18]
+   graded=False symplectic=True N=8 F=3: sympl. defect first order None, divisibility defect []; slot1 = formula: True, slot2 = formula: True (5 of 5 compared coefficients non-zero); control C2 (flipped sign) agrees: False
+   graded=False symplectic=True N=10 F=4: sympl. defect first order None, divisibility defect []; slot1 = formula: True, slot2 = formula: True (6 of 6 compared coefficients non-zero); control C2 (flipped sign) agrees: False
+   graded=False symplectic=True N=9 F=6: sympl. defect first order None, divisibility defect []; slot1 = formula: True, slot2 = formula: True (3 of 3 compared coefficients non-zero); control C2 (flipped sign) agrees: False
+   graded=True symplectic=True N=8 F=3: sympl. defect first order None, divisibility defect []; slot1 = formula: True, slot2 = formula: True (5 of 5 compared coefficients non-zero); control C2 (flipped sign) agrees: False
+   graded=True symplectic=True N=10 F=4: sympl. defect first order None, divisibility defect []; slot1 = formula: True, slot2 = formula: True (6 of 6 compared coefficients non-zero); control C2 (flipped sign) agrees: False
+   graded=True symplectic=True N=9 F=6: sympl. defect first order None, divisibility defect []; slot1 = formula: True, slot2 = formula: True (3 of 3 compared coefficients non-zero); control C2 (flipped sign) agrees: False
+   graded=False symplectic=False N=8 F=3: sympl. defect first order 1, divisibility defect [1, 2, 3]; slot1 = formula: False, slot2 = formula: False (5 of 5 compared coefficients non-zero); control C2 (flipped sign) agrees: False
+   control C1 (non-symplectic R): divisibility defect present: True (expected True)
+RF_LEME: ALL PASS  (0.7 s)

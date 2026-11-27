@@ -1,0 +1,50 @@
+--------------------------------------------------------------------------------------------------------------
+(F) factorisation of q_6, q_17 and the Q(zeta)-rational hyperplane {m_1 = 0}; explicit rational solution, p = 2^61-1
+PASS dim K_4^circ = 11
+PASS pure-high part of K_4^circ has dimension 5
+PASS q_6 has rank 2 on K_4^circ
+PASS q_6 = a . m . m' with linear forms over F_p on K_4^circ
+   q_6: number of factors vanishing on the pure-high directions (i.e. depending on Delta_L only): 1
+PASS q_6 has exactly one factor depending on Delta_L only
+PASS the Delta_L-only factor of q_6 is c_1(0)
+PASS q_17 has rank 2 on K_4^circ
+PASS q_17 = a . m . m' with linear forms over F_p on K_4^circ
+   q_17: number of factors vanishing on the pure-high directions (i.e. depending on Delta_L only): 1
+PASS q_17 has exactly one factor depending on Delta_L only
+PASS m_1 extends to a functional of the 8 low circulant coordinates (consistent)
+   m_1 (graph 17, Delta_L-only factor) normalised at c1_1: ['c1_1: 1', 'c1_2: [128880293425833138 mod p]', 'c2_1: [742706253974327510 mod p]', 'c2_2: [540461535446104382 mod p]']
+PASS m_1 = 0 and the five free coordinates cut a 5-dimensional affine family in K_4^circ
+PASS the five remaining directions are pure-high
+PASS on {m_1 = 0}: the equation of graph 17 holds at every point of the fibre (row and rhs zero)
+PASS the other four equations have rank 4 on the five fibre directions and are consistent (solution = line, the invisible zhat^6 direction)
+PASS the explicit N_1 = N_1^taut + Delta satisfies all five two-edge quadrics and the four O(u) equations
+   circulant coordinates of Delta (Q(zeta) where reconstructible; free (c2_1, c2_2, c3_0, c3_1, c3_2) = (1, 2, -1, 3, 1), c6_2 = 0): ['c1_0: [2104836667272597962 mod p]', 'c1_1: [1061892653477861101 mod p]', 'c1_2: [689684225159834606 mod p]', 'c2_1: 1', 'c2_2: 2', 'c3_0: -1', 'c3_1: 3', 'c3_2: 1', 'c4_1: [1252452629747433022 mod p]', 'c4_2: [1771902853661191374 mod p]', 'c5_0: [398977268121123757 mod p]', 'c5_1: [1148992712103440600 mod p]', 'c5_2: [406590477640279664 mod p]', 'c6_1: [724683894905714142 mod p]', 'c6_2: 0']
+      verify rational 2/17 jobs done (12 s)
+      verify rational 4/17 jobs done (13 s)
+      verify rational 6/17 jobs done (13 s)
+      verify rational 8/17 jobs done (14 s)
+      verify rational 10/17 jobs done (18 s)
+      verify rational 12/17 jobs done (20 s)
+      verify rational 14/17 jobs done (34 s)
+      verify rational 16/17 jobs done (302 s)
+      verify rational 17/17 jobs done (1156 s)
+   verification pass (17 graphs, full hatted theory, 21-node vertex interpolation): 1156 s
+      graph  1 (E=0): ['1/25200', '-1/9000', '[2145561858074485729 mod p]', '[2138735472916201470 mod p]', '[491814558464884430 mod p]']
+      graph  2 (E=1): ['0', '0', '[599922092970726775 mod p]', '[142732523144776659 mod p]', '[1711923448153608554 mod p]']
+      graph  5 (E=1): ['0', '0', '[1252983859468648853 mod p]', '[1496454470199934827 mod p]', '[270912777408259286 mod p]']
+      graph  3 (E=2): ['0', '0', '0', '[930619733102616466 mod p]', '[1381359158185564949 mod p]']
+      graph  6 (E=2): ['0', '0', '0', '[906979656827649526 mod p]', '[624769678734799069 mod p]']
+      graph  7 (E=2): ['0', '0', '0', '[2186636569423183682 mod p]', '[54709873200328494 mod p]']
+      graph  8 (E=2): ['0', '0', '0', '[2050144551402806326 mod p]', '[15442008635577388 mod p]']
+      graph 17 (E=2): ['0', '0', '0', '[1596143420199590117 mod p]', '[312877292513965372 mod p]']
+      graph  4 (E=3): ['0', '0', '0', '[1199266418437331931 mod p]', '[958725429088665650 mod p]']
+      graph  9 (E=3): ['0', '0', '0', '[321056263872040091 mod p]', '[1048151742298256698 mod p]']
+      graph 10 (E=3): ['0', '0', '0', '[909063797812520861 mod p]', '[2116875556501610776 mod p]']
+      graph 11 (E=3): ['0', '0', '0', '[1011830857028781178 mod p]', '[1593182748535277508 mod p]']
+      graph 12 (E=3): ['0', '0', '0', '[502689878361298003 mod p]', '[1671269811827290429 mod p]']
+      graph 18 (E=3): ['0', '0', '0', '0', '[1384857546273021342 mod p]']
+      graph 19 (E=3): ['0', '0', '0', '[2222457553540972165 mod p]', '[921471702098785809 mod p]']
+      graph 20 (E=3): ['0', '0', '0', '0', '0']
+      graph 32 (E=3): ['0', '0', '0', '0', '0']
+PASS VERIFY (independent full pass): one-edge graphs vanish through u^1 and all five two-edge graphs through u^2 for the explicit Q(zeta)-rational circulant N_1
+QUADSOLVE3 ALL CHECKS PASSED

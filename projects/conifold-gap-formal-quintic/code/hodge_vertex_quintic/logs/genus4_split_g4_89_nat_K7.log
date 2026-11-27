@@ -1,0 +1,27 @@
+====================================================================================================
+genus4_split: g4_89_nat_K7
+   setup 4 s; 379 inner graphs, K = 7, KZ = 9
+      37/379 inner graphs done (35 s)
+      74/379 inner graphs done (52 s)
+      111/379 inner graphs done (85 s)
+      148/379 inner graphs done (103 s)
+      185/379 inner graphs done (118 s)
+      222/379 inner graphs done (135 s)
+      259/379 inner graphs done (155 s)
+      296/379 inner graphs done (198 s)
+      333/379 inner graphs done (215 s)
+      370/379 inner graphs done (228 s)
+   run: 379 inner graphs, wall 234 s, CPU 2870 s, slowest [(69, 273), (58, 271), (57, 253), (51, 378), (46, 169)]
+   part files: ['g4_89_nat_K7_run.json']
+   collect: 1 part files, 379 inner graphs, total CPU 2870 s
+PASS all 379 inner graphs are covered by the part files
+PASS [u^0] E_R(a, b) = Eh_0(a, b) for all (a, b), all colours
+PASS every entry of E_out = E_R - E_M is O(u) (needed for the restriction to fewer than K outer edges)
+   total over all outer graphs: ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000', '[126637988829127183986365696 mod p]']
+      outer graph   0 (E=0, gv=(4,)): ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000', '~-3545862645122/4444565014543']
+   total in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS GAP: total = (1/180000) t_c^-6 + 0 + ... + 0 t_c^-1
+PASS REGULARITY (variant nat): every outer graph with edges is O(u^6)
+   vertex graph in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS VERTEX GRAPH carries the polar part (1/180000) t_c^-6 + 0 + ... + 0 (equivalent to REGULARITY given GAP)
+GENUS4_SPLIT (g4_89_nat_K7) ALL CHECKS PASSED

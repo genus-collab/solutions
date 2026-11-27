@@ -1,0 +1,101 @@
+\begin{lem}[hatting]
+\label{lem:flh-hat}
+Let $g\geq 2$. For every leg-free stable graph $\Gamma$ of genus $g$, the hatted term and the outer term of \cref{def:set-outer} satisfy
+\[
+G_\Gamma=s^{10(g-1)}\,T_\Gamma=u^{2g-2}\,T_\Gamma .
+\]
+\end{lem}
+
+We recall the hatted data of \cref{def:set-hat} in the form in which they are used. The element $\zeta^{-4i}\,\Cexp_{\alpha,\beta}(\Delta_i^{1/2})=s\varpi_0$ does not depend on $i$ ($\Delta_i^{1/2}=\zeta^{4i}C_0/L$, $\Cexp(C_0)=\varpi_0$, $\Cexp(L)=s^{-1}$); put $\hat x\coloneqq\varpi_0$. The hatted TFT is $\hat\TFT=s^{-1}.\TFT$, whose genus-$0$ three-point value at $\tilde e_i$ is $\zeta^{4i}\hat x$ and whose unit is $s$ times the unit $1_{\TFT}=\sum_i\Delta_i^{-1/2}\tilde e_i$ of $\TFT$; the hatted unit of the state space is $\hat1=s1$; the hatted rows are $\hat\Qr(u,\zh)=\Lambda_s\Qr(u,s^4\zh)$; and $\Lambda_s$ preserves $\eta$, because $\eta$ pairs $H^a$ with $H^{3-a}$ and $\nu_a+\nu_{3-a}=2$. With $\hat M(\zh)\coloneqq\Mo(\tau\zh)=M(s^4\zh)$ and $\hat R'(\zh)\coloneqq\hat\Qr(\zh)\hat M(\zh)^{-1}=\Lambda_sR'(s^4\zh)$, the hatted term is $G_\Gamma=\mathrm{Cont}_\Gamma[E_{\hat R'},q_{\hat R'};\hat M.\hat\TFT]$, with the edge and the leaf point formed in the variable $\zh$ and with the unit $\hat1$.
+
+\begin{proof}
+\emph{Edges and leaves.} Since $\Lambda_s$ preserves $\eta$, the edge of $\hat R'$ is $E_{\hat R'}(\psi,\psi')=s^4E_{R'}(s^4\psi,s^4\psi')$: its coefficient of $\psi^a\psi'^b$ is that of $E_{R'}$ times $s^{4(a+b+1)}$. With $\hat1=s1$, $q_{\hat R'}(\zh)=R'^{-1}(s^4\zh)(-\zh s1)=s^{-3}q_{R'}(s^4\zh)$, so the leaf insertion $q_{\hat R'}+\zh\,s1_{\TFT}$ equals $s^{-3}(q_{R'}+z1_{\TFT})$ at $z=s^4\zh$: its coefficient of $\zh^k$ is that of $q_{R'}+z1_{\TFT}$ at $z^k$ times $s^{4k-3}$.
+
+\emph{Vertices.} The classes of $\TFT$ have degree $0$, and in the graph sum of \cite[Def.~2.2]{PPZ15} with the translation of \cite[Def.~2.13]{PPZ15} a term of cohomological degree $D$ uses coefficients of the $R$-matrix of total $z$-degree $D$ (the $\psi$-exponent at a leg, the $\psi$-exponents plus one at an edge, the $z$-exponent minus one at a translation point). Since $\hat M(\zh)=M(s^4\zh)$, the degree-$D$ part of $(\hat M.\TFT)_{h,m}$ is $s^{4D}$ times that of $(M.\TFT)_{h,m}$. By \cref{lem:flh-comm}, $\hat M.\hat\TFT=\hat M.(s^{-1}.\TFT)=s^{-1}.(\hat M.\TFT)$. So at a vertex of genus $g_v$ with $n_v$ half-edges and $l_v$ leaf insertions, the degree-$D_v$ part of the vertex class is multiplied by $s^{4D_v-(2g_v-2+n_v+l_v)}$.
+
+\emph{The count.} Take a term of $\Gamma$ with edge monomials $\psi^{a_e}\psi'^{b_e}$, leaf insertions of degrees $k_l$ and vertex classes of degrees $D_v$, and let $E$ and $n_{\mathrm l}$ be the numbers of edges and of leaf insertions. At each vertex the integrand has the degree $\dim\overline{\mathcal M}_{g_v,n_v+l_v}$, so
+\[
+\sum_vD_v+\sum_e(a_e+b_e)+\sum_lk_l=\sum_v(3g_v-3+n_v+l_v)=3g-3-E+n_{\mathrm l} .
+\]
+By the two previous paragraphs the term is multiplied by $s^N$, where, using $\sum_v(2g_v-2+n_v)=2g-2$,
+\begin{align*}
+N&=\sum_e4(a_e+b_e+1)+\sum_l(4k_l-3)+\sum_v\bigl(4D_v-(2g_v-2+n_v+l_v)\bigr)\\
+&=4(3g-3-E+n_{\mathrm l})+4E-3n_{\mathrm l}-(2g-2)-n_{\mathrm l}=10(g-1).
+\end{align*}
+Hence $G_\Gamma=s^{10(g-1)}T_\Gamma=u^{2g-2}T_\Gamma$.
+\end{proof}
+
+The lemma uses no property of the rows beyond \cref{def:set-hat,def:set-outer}. Once the hatted data are known to be power series in $u$ (\cref{cor:mai-natfact}), it shows that $T_\Gamma$ has a pole of order at most $2g-2$ at $u=0$.
+
+\begin{lem}[the inputs of the comparison]
+\label{lem:flh-inputs}
+Let $\Qr^{\mathrm m}$ be the matrix of the model columns at $v(u)$ (\cref{thm:gau-R0}), $\Psi^{\mathrm m}\coloneqq\Qr^{\mathrm m}|_{z=0}$, $\Psi_{\mathrm Q}\coloneqq\Qr|_{z=0}$, $P_0\coloneqq\Pc|_{z=0}$ and $d\coloneqq(P_0)_{33}$, and identify the colour bases of the formal quintic and of the model through the index $i$, as in \cref{cor:gau-colours}.
+\begin{enumerate}
+\item $\Qr^{\mathrm m}=\Psi^{\mathrm m}M$ and $\Omega^{\mathrm{mod}}_{v(u)}=(\Psi^{\mathrm m})_*\bigl(M.\TFT^{\mathrm m}_{v(u)}\bigr)$; $\Psi^{\mathrm m}$ is an isometry, independent of $z$, from the colour space with the pairing $\delta$ to $(\bbH,\eta)$, and it maps the unit of $\TFT^{\mathrm m}_{v(u)}$ to $H^0$.
+\item $\Qr\Dn=\Pc\Qr^{\mathrm m}$ with $\Dn=\diag(\Dn_i)$ and $\Dn_i(z)=\Dn_0(\zeta^{-i}z)$. Under $\Fg{g}$, $R'\equiv\Pc\Psi^{\mathrm m}\bmod z^{3g-2}$.
+\item $\Pc$ is symplectic; so $E_{\Pc}$ is a power series and $\Pc\Psi^{\mathrm m}$ is symplectic. Moreover
+\[
+R'(-z)^T\eta^{-1}R'(z)=M(z)\bigl(\Dn(z)\Dn(-z)\bigr)^{-1}M(z)^{-1};
+\]
+hence $R'$ is symplectic, $R'(-z)^T\eta^{-1}R'(z)=1$, if and only if $\Dn_0(z)\Dn_0(-z)=1$, and under $\Fg{g}$ it is symplectic modulo $z^{3g-2}$.
+\item $\Pc$ satisfies (unit) with $\varkappa=d$, where $d\in\bbQ\fps{u}$ and $d(0)=1$; $R'$ satisfies (unit) with $\varkappa=1$; $\Psi_{\mathrm Q}=P_0\Psi^{\mathrm m}$; and $\TFT=d.\TFT^{\mathrm m}_{v(u)}$ on the identified colour spaces.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) By \cref{prop:set-modrows}~(b), \cref{def:set-M0} and \cref{lem:gau-colmod}, the colour-$i$ model column at $v(u)$, with its exponential stripped, has the entries $\varsigma^{\nu_b-1}\Rhat^{\mathrm m,(i)}_b(z/\varsigma^4)$, and $z/\varsigma^4=\tau\zh$ because $\varsigma=s\tau^{-1/4}$ (\cref{def:set-tau}). As $\Rhat^{\mathrm m}=\Psi_0\Mo$ (\cref{def:set-M0}), $\Qr^{\mathrm m}=\Lambda_\varsigma^{-1}\Psi_0\Mo(\tau\zh)=\Psi^{\mathrm m}M$ with $\Psi^{\mathrm m}=\Lambda_\varsigma^{-1}\Psi_0$. From $\Psi_0^T\eta^{-1}\Psi_0=1$ (\cref{def:set-M0}) and $\Lambda_\varsigma^{-1}\eta^{-1}\Lambda_\varsigma^{-1}=\eta^{-1}$ (again $\nu_a+\nu_{3-a}=2$) we get $\Psi^{\mathrm m,T}\eta^{-1}\Psi^{\mathrm m}=1$: on lowered components the pairing is $\eta^{-1}$, so $\Psi^{\mathrm m}$ is an isometry. By \cref{def:set-modcohft}, $\Omega^{\mathrm{mod}}_{v(u)}=(\Psi^{\mathrm m})_*(\Mo(z/\varsigma^4).\TFT^{\mathrm m}_{v(u)})$, and $\Mo(z/\varsigma^4)=M$. The action of $M$ preserves the unit of $\TFT^{\mathrm m}$ \cite[Prop.~2.12]{PPZ15}, and $\Omega^{\mathrm{mod}}_{v(u)}$ has the flat unit $H^0$ (\cref{lem:set-dilaton}~(ii)); so $\Psi^{\mathrm m}$ maps the unit of $\TFT^{\mathrm m}$ to $H^0$.
+
+(ii) The identity is \cref{thm:gau-R0}~(iv) with \cref{cor:gau-colours}. Under $\Fg{g}$, $\Dn_0\equiv1\bmod z^{3g-2}$, hence $\Dn\equiv1\bmod z^{3g-2}$; from $\Qr=\Pc\Psi^{\mathrm m}M\Dn^{-1}$ we get $R'=\Pc\Psi^{\mathrm m}\,(M\Dn^{-1}M^{-1})\equiv\Pc\Psi^{\mathrm m}\bmod z^{3g-2}$.
+
+(iii) By \cref{prop:gau-symp}, $\Pc(-z)^T\eta\,\Pc(z)=\eta$, equivalently $\Pc(-z)^T\eta^{-1}\Pc(z)=\eta^{-1}$, since $\eta^{-1}=\eta/25$ (\cref{conv:tra-forms}). So $E_{\Pc}$ is a power series (\cref{def:flh-outer}~(iii), \cref{def:tra-edge}), and $S\coloneqq\Pc\Psi^{\mathrm m}$ (a local letter) satisfies $S(-z)^T\eta^{-1}S(z)=\Psi^{\mathrm m,T}\eta^{-1}\Psi^{\mathrm m}=1$, because $\Psi^{\mathrm m}$ is an isometry independent of $z$ (by (i)): $\Pc\Psi^{\mathrm m}$ is symplectic. By the proof of (ii), $R'=S\,K$ with $K(z)\coloneqq M(z)\Dn(z)^{-1}M(z)^{-1}$. From $M(-z)^TM(z)=1$ we get $M(-z)^T=M(z)^{-1}$ and $M(-z)^{-T}=M(z)$; as $\Dn$ is diagonal, $K(-z)^T=M(z)\Dn(-z)^{-1}M(z)^{-1}$, and
+\[
+R'(-z)^T\eta^{-1}R'(z)=K(-z)^T\,S(-z)^T\eta^{-1}S(z)\,K(z)=K(-z)^TK(z)=M(z)\bigl(\Dn(-z)\Dn(z)\bigr)^{-1}M(z)^{-1}.
+\]
+This is $1$ if and only if $\Dn_i(z)\Dn_i(-z)=1$ for every $i$, that is, as $\Dn_i(z)=\Dn_0(\zeta^{-i}z)$, if and only if $\Dn_0(z)\Dn_0(-z)=1$. Under $\Fg{g}$, $\Dn\equiv1\bmod z^{3g-2}$, so the right side is $\equiv1\bmod z^{3g-2}$.
+
+(iv) The canonical gauge is graded (\cref{def:gau-can}), so $P_0$ is diagonal and, in vector form, maps $H^0$ to $dH^0$ (\cref{conv:tra-forms}: $d=(P_0)_{33}$ is the $(0,0)$ entry of the vector form): this is (unit) with $\varkappa=d$. By \cref{lem:gau-diag}, $p_{0,a}(0)=1$ for every $a$ under (N0), which holds in the conifold frames; so $d(0)=1$, and $d\in\bbQ\fps{u}$ by \cref{thm:gau-U}. Since $M(0)=1$, the constant term of $R'$ is $\Psi_{\mathrm Q}$. Its entries are the conifold expansions of the representatives of \cref{cor:gau-rowsNN}~(i) at $n=0$: there row $0$ of colour $0$ is $A^{\mathrm{act}}_0c_0^{-1}=L/C_0$ (\cref{thm:gau-R0}~(iii)), the rows $a\geq1$ follow from $\Qr_{a+1,0}=(C_1\kappa^{\mathrm{LR}}_a)^{-1}L\,\Qr_{a,0}$ with $C_1\kappa^{\mathrm{LR}}=(C_1,L^5/(C_0^2C_1^2),C_1,C_0,C_0)$, and colour $j$ is $\zeta^{j(a+1)}$ times colour $0$. So, as an identity in $\Nring\otimes\bbQ(\zeta)$, $(\Psi_{\mathrm Q})_{aj}=\zeta^{j(a+1)}\mathfrak m_a$ with $(\mathfrak m_0,\dots,\mathfrak m_4)=(L/C_0,\,L^2/(C_0C_1),\,C_0C_1/L^2,\,C_0/L,\,1)$ (local letters). With $\Delta_j^{-1/2}=\zeta^jL/C_0$ (\cref{cor:gau-rowsNN}~(ii)),
+\[
+\textstyle\sum_j\Delta_j^{-1/2}(\Psi_{\mathrm Q})_{aj}=\frac L{C_0}\,\mathfrak m_a\sum_j\zeta^{j(a+2)}=5\,\delta_{a3}=\eta(H^a,H^0)
+\]
+in $\Nring\otimes\bbQ(\zeta)$, since $\mathfrak m_3=C_0/L$. Its conifold expansion says that $\Psi_{\mathrm Q}$ maps the unit $1_{\TFT}=\sum_j\Delta_j^{-1/2}\tilde e_j$ of $\TFT$ (\cref{def:set-frob}) to $H^0=1$: this is (unit) with $\varkappa=1$. At $z^0$ the identity of (ii) reads $\Psi_{\mathrm Q}=P_0\Psi^{\mathrm m}$, because $\Dn(0)=1$ (\cref{thm:gau-R0}); in particular $\Psi_{\mathrm Q}$ is an isometry, $P_0$ and $\Psi^{\mathrm m}$ being isometries ($P_0^T\eta P_0=\eta$ is the part of order $z^0$ of \cref{prop:gau-symp}). Therefore $1_{\TFT}=\Psi_{\mathrm Q}^{-1}H^0=(\Psi^{\mathrm m})^{-1}P_0^{-1}H^0=d^{-1}(\Psi^{\mathrm m})^{-1}H^0$, which is $d^{-1}$ times the unit of $\TFT^{\mathrm m}$ by (i). Both TFTs are diagonal in their orthonormal colour bases and vanish on mixed colours, and such a TFT is determined by its unit $\sum_iy_i\tilde e_i$: its genus-$g$ value at $\tilde e_i^{\otimes n}$ is $y_i^{-(2g-2+n)}$ (with $y_i=\Delta_i^{-1/2}$ for $\TFT$, \cref{def:set-frob}, and $y_i=\hat\Delta_i^{-1/2}$ for $\TFT^{\mathrm m}$, \cref{def:set-modcohft}). Hence $\TFT_{g,n}=d^{2g-2+n}\,\TFT^{\mathrm m}_{g,n}$, that is $\TFT=d.\TFT^{\mathrm m}$.
+\end{proof}
+
+The symplecticity of $R$ in \cref{def:set-rows}~(a) is an identity between power series in $q$ and is not used in (iii): an identity between evaluations under $\ev$ of elements of $\Nring\otimes\bbQ(\zeta)$ survives the conifold expansion only where $\ev$ is known to be injective, which is neither claimed nor needed. This is why (iii) carries the factor $\Dn$ and why the identities at $z^0$ in (iv) are proved in $\Nring\otimes\bbQ(\zeta)$ itself.
+
+\subsection{The comparison theorem}
+\label{sec:flh-thm}
+
+\begin{thm}[the comparison theorem]
+\label{thm:flh-main}
+Let $g\geq 2$ and let $\Gamma$ be a leg-free stable graph of genus $g$. Let $F_\Gamma$ be its term in the flat sum of $\Pc.\Omega^{\mathrm{mod}}_{v(u)}$ (\cref{def:red-flatsum}), $T_\Gamma$ its outer term and $G_\Gamma$ its hatted term (\cref{def:set-outer}, with $M=\Mo(\tau(u)\zh)$ exactly in $u$). Assume $\Fg{g}$. Then
+\begin{equation}
+\label{eq:flh-main}
+T_\Gamma=F_\Gamma,\qquad\text{hence}\qquad G_\Gamma=u^{2g-2}F_\Gamma .
+\end{equation}
+\end{thm}
+
+\begin{proof}
+\emph{Step 1: only $R'$ through $z^{3g-3}$ enters.} At a vertex of genus $g_v$ with $n_v$ half-edges and $l_v$ leaf insertions, the classes of $M.\TFT$ have degree $\geq0$, so only insertions of total $\psi$-degree at most $3g_v-3+n_v+l_v$ contribute; summed over the vertices this bound is $3g-3-E+n_{\mathrm l}$, where $E$ and $n_{\mathrm l}$ are the numbers of edges and of leaf insertions. Since $R'$ satisfies (unit) with $\varkappa=1$ (\cref{lem:flh-inputs}~(iv)), every leaf insertion $q_{R'}+z1_{\TFT}$ has degree at least $2$. Hence a monomial $\psi^a\psi'^b$ of an edge occurs only with $a+b\leq 3g-3-E-n_{\mathrm l}\leq 3g-4$, and a leaf insertion of degree $k$ only with $k\leq 3g-1-E-n_{\mathrm l}\leq 3g-2$. With $N(\psi,\psi')\coloneqq1-\bigl(R'^{-1}(\psi)\otimes R'^{-1}(\psi')\bigr)\eta^{-1}$, the edge of \cref{def:set-outer} has the numerator $\tilde N\coloneqq N(\psi,\psi')-\frac12N(-\psi',\psi')-\frac12N(\psi,-\psi)$ (a local letter), which vanishes at $\psi'=-\psi$. Writing $\tilde N=\sum_{m,n}\tilde N_{mn}\bigl(\psi^m-(-\psi')^m\bigr)\psi'^n$ and dividing by $\psi+\psi'$, the coefficient of $\psi^a\psi'^b$ in $E_{R'}$ is a combination of the coefficients of $N$ of total degree $a+b+1$, so it involves $R'^{-1}$ only through $z^{a+b+1}$; the coefficient of $z^k$ in $q_{R'}$ involves $R'^{-1}$ only through $z^{k-1}$. So $T_\Gamma$ depends on $R'$ only modulo $z^{3g-2}$, through the part of $N$ of total degree at most $3g-3$ and the part of $q_{R'}$ of degree at most $3g-2$.
+
+\emph{Step 2: the outer data.} Put $R''\coloneqq\Pc\Psi^{\mathrm m}$; it is symplectic (\cref{lem:flh-inputs}~(iii)), so the two correction terms of its numerator vanish, and $E_{R''}$ is the edge of \cite[Def.~2.2]{PPZ15}, a symmetric power series \cite[Rem.~2.1 and (6)]{PPZ15}. By \cref{lem:flh-inputs}~(ii), $R'\equiv R''\bmod z^{3g-2}$, so the parts of total degree at most $3g-3$ of the numerators of $E_{R'}$ and $E_{R''}$ agree, and $q_{R'}\equiv q_{R''}\bmod z^{3g-1}$. Hence the coefficients of $E_{R'}$ of total degree at most $3g-4$, the only ones that enter by Step 1, equal those of $E_{R''}$; by Step 1, $T_\Gamma=\mathrm{Cont}_\Gamma[E_{R''},q_{R''};M.\TFT]$. Since $\Psi^{\mathrm m}$ is an isometry independent of $z$, $R''^{-1}=(\Psi^{\mathrm m})^{-1}\Pc^{-1}$ gives $E_{R''}=((\Psi^{\mathrm m})^{-1}\otimes(\Psi^{\mathrm m})^{-1})E_{\Pc}$ and $q_{R''}=(\Psi^{\mathrm m})^{-1}q_{\Pc}$; and $q_{R''}+zd^{-1}1_{\TFT^{\mathrm m}}=O(z^2)$, where $1_{\TFT^{\mathrm m}}$ is the unit of $\TFT^{\mathrm m}$, because $R''_0=P_0\Psi^{\mathrm m}$ maps $d^{-1}1_{\TFT^{\mathrm m}}$ to $H^0$ (\cref{lem:flh-inputs}~(i), (iv)).
+
+\emph{Step 3: the chain.}
+\begin{align*}
+T_\Gamma&=\mathrm{Cont}_\Gamma[E_{R''},q_{R''};M.\TFT]&&\\
+&=\mathrm{Cont}_\Gamma[E_{R''},q_{R''};M.(d.\TFT^{\mathrm m})]&&\text{(\cref{lem:flh-inputs}~(iv))}\\
+&=\mathrm{Cont}_\Gamma[E_{R''},q_{R''};d.(M.\TFT^{\mathrm m})]&&\text{(\cref{lem:flh-comm}, $M(0)=1$)}\\
+&=\mathrm{Cont}_\Gamma[E_{R''},q_{R''};M.\TFT^{\mathrm m}]&&\text{(\cref{lem:flh-dil}, $\varkappa=d$, $d(0)=1$)}\\
+&=\mathrm{Cont}_\Gamma[E_{\Pc},q_{\Pc};(\Psi^{\mathrm m})_*(M.\TFT^{\mathrm m})]&&\text{(\cref{lem:flh-frame}, $A=\Psi^{\mathrm m}$, Step 2)}\\
+&=\mathrm{Cont}_\Gamma[E_{\Pc},q_{\Pc};\Omega^{\mathrm{mod}}_{v(u)}]&&\text{(\cref{lem:flh-inputs}~(i))}.
+\end{align*}
+The hypothesis of \cref{lem:flh-dil} on the point holds by Step 2; the unit of $d.(M.\TFT^{\mathrm m})$ is $d^{-1}1_{\TFT^{\mathrm m}}=1_{\TFT}$, so the first three lines are finite sums.
+
+\emph{Step 4: the flat term.} The last contraction is formed with the leaf point $q_{\Pc}=q_T$ of \cref{def:tra-edge} and with the Taylor expansions of the potentials of $\Omega^{\mathrm{mod}}_{v(u)}$ at $-z1$ in the direction $q_T+z1\in z(1-d^{-1})1+z^2\bbH\fps{z}$. Since $d(0)=1$, these expansions converge $u$-adically and equal the homogeneous vertex tensors $d^{2g_v-2+n_v}\dd^{n_v}\overline F_{g_v}(dq_T)$ of \cref{def:red-flatsum} (\cref{lem:tra-conv}~(f), \cref{lem:set-dilaton}). So the last line is $F_\Gamma$. Finally $G_\Gamma=u^{2g-2}T_\Gamma$ by \cref{lem:flh-hat}.
+\end{proof}
+
+By Step 1, at genus $g$ the outer terms involve the normalisation series only through $z^{3g-3}$: $\Fg{g}$, the vanishing of $\coef{z^k}\Dn_0$ for $1\leq k\leq 3g-3$, is all of $\Dn_0=1$ that genus $g$ sees (\cref{rmk:con-genus}).
+
+\begin{rmk}[where the comparison can fail]
+\label{rmk:flh-fail}
+(i) \emph{The normalisation.} In general the proof of \cref{lem:flh-inputs}~(ii) gives $R'=\Pc\Psi^{\mathrm m}\,M\Dn^{-1}M^{-1}$. If $\Dn=\cn(z)1$ is scalar with $\cn(z)\cn(-z)=1$, then $R'=(\Pc\cn(z)^{-1})\Psi^{\mathrm m}$ with the symplectic graded regular gauge $\Pc\cn(z)^{-1}$ (\cref{prop:gau-symp}), and the proof identifies $T_\Gamma$ with the term of the flat sum of that gauge, a different graph decomposition (\cref{rmk:mai-stored}, \cref{rmk:mai-graphlocal}). (ii) \emph{The split.} For another symplectic $M'$ with $M'(0)=1$ the outer sum $(\Qr M'^{-1}).(M'.\TFT)$ has the same total (by the regrouping in the proof of \cref{cor:mai-gap}) but different graph terms. (iii) \emph{The rows formula.} The colour-basis form of the edge, $E_{R'}(\psi,\psi')=\bigl(1-R'(-\psi)^T\eta^{-1}R'(-\psi')\bigr)/(\psi+\psi')$, uses the symplecticity of $R'$, which holds modulo $z^{3g-2}$ under $\Fg{g}$ and exactly once $\Dn=1$; it is not inferred from the symplecticity of $R$ at large radius.
+\end{rmk}

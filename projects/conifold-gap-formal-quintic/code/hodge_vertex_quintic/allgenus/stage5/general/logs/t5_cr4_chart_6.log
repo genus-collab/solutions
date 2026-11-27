@@ -1,0 +1,22 @@
+cr4_chart: N = 6 (z^0..z^6); formal SP of the 5-variable chart integral mod p; log logs/cr4_chart_6.log
+PASS [2^61-1] L = 1 (q = 0): chart SP factorises into Stirling series = h_(w_0)(z) through z^6   True
+PASS [2^61-1] L = 2: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 6
+PASS [2^61-1] L = 2: z^5 sees (N): the stored normalisation (f_1 + m5) gives R_5 - chart_5 = m5 exactly
+PASS [2^61-1] L = 3/2: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 6
+PASS [2^61-1] L = 3/2: z^5 sees (N): the stored normalisation (f_1 + m5) gives R_5 - chart_5 = m5 exactly
+PASS [2^61-1] L = -2/3: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 6
+PASS [2^61-1] L = -2/3: z^5 sees (N): the stored normalisation (f_1 + m5) gives R_5 - chart_5 = m5 exactly
+PASS [2^61-1] control: no Jacobian |x_0| (amplitude / X_0) fails at z^1
+PASS [2^61-1] control: measure dy/y instead of dy fails (first at z^2; z^1 is blind to it)   [2, 3, 4, 5, 6]
+     [2^61-1] done in 374.7 s
+PASS [2^89-1] L = 1 (q = 0): chart SP factorises into Stirling series = h_(w_0)(z) through z^6   True
+PASS [2^89-1] L = 2: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 6
+PASS [2^89-1] L = 2: z^5 sees (N): the stored normalisation (f_1 + m5) gives R_5 - chart_5 = m5 exactly
+PASS [2^89-1] L = 3/2: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 6
+PASS [2^89-1] L = 3/2: z^5 sees (N): the stored normalisation (f_1 + m5) gives R_5 - chart_5 = m5 exactly
+PASS [2^89-1] L = -2/3: chart SP = R_n(L) = L^4n ph_n(L^-5) (= c_n(L)) for n <= 6
+PASS [2^89-1] L = -2/3: z^5 sees (N): the stored normalisation (f_1 + m5) gives R_5 - chart_5 = m5 exactly
+PASS [2^89-1] control: no Jacobian |x_0| (amplitude / X_0) fails at z^1
+PASS [2^89-1] control: measure dy/y instead of dy fails (first at z^2; z^1 is blind to it)   [2, 3, 4, 5, 6]
+     [2^89-1] done in 367.4 s
+CR4_CHART 6: ALL CHECKS PASSED   (742 s)

@@ -1,0 +1,18 @@
+g1_cyclic_check: N = 30 (q-order), K = 12 (w-order)
+PASS  C_0 = Sum (5d)!/(d!)^5 q^d
+PASS  I_1 = C_1  (kappa_0 = 1)
+PASS  I_2 C_0^2 C_1^2 = L^5  (kappa_1 = L^5/(C_0^2 C_1^3))
+PASS  I_3 = C_1  (kappa_2 = 1)
+PASS  I_4 = C_0  (kappa_3 = C_0/C_1)
+PASS  I_5 = C_0  (kappa_4 = C_0/C_1)
+PASS  closing g_5 = g_0 through w^7
+PASS  product C_0 I_1 I_2 I_3 I_4 = L^5
+PASS  Lemma D: PF4 c_k = 0 (k = 0..3), PF4 c_4 = 1 (in Q[[q]][ell])
+PASS  Lemma E: W(c_0..c_3) = L^10 (ell-free)
+PASS  control c1 (non-equivariant): I_1..I_4 agree with the zeta point
+PASS (control fails as required)  control c1 (non-equivariant): closing g_5 = g_0
+PASS (control fails as required)  control c2 (twist O(4)): I_2 C_0^2 C_1^2 = L^5
+PASS (control fails as required)  control c2 (twist O(6)): I_2 C_0^2 C_1^2 = L^5
+PASS (control fails as required)  control c3 (wrong guess kappa_3 = C_1/C_0, i.e. I_4 = C_1^2/C_0)
+first coefficients: C_1 = ['1', '770', '1435650', '3225308000'] ; I_2 = ['1', '1345', '3296525', '8940963625']
+TOTAL: 0 unexpected result(s)

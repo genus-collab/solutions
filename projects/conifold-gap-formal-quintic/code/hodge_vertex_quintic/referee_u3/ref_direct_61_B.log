@@ -1,0 +1,9 @@
+circ_b_extra3                132 s (105+25) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+circ_b_extra1                132 s (105+25) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+c6_c2line                    133 s (106+25) | 3-edge nonzero [u^0..3]: {9: [3]} | 2-edge nonzero [u^0..2]: {3: [2], 7: [2], 8: [2], 17: [2]} | 1-edge nonzero [u^0,1]: {2: [1], 5: [1]} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+circ_b_extra2                138 s (109+26) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+c6_c3line                    160 s (24+4) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {7: [2]} | 1-edge nonzero [u^0,1]: {2: [1], 5: [1]} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+Pi_3A+5B_perturbed_c2_1      162 s (25+4) | 3-edge nonzero [u^0..3]: {4: [3], 9: [3], 10: [3], 11: [3], 12: [3], 18: [3], 19: [3], 20: [3], 32: [3]} | 2-edge nonzero [u^0..2]: {3: [2], 6: [2], 7: [2], 8: [2], 17: [2]} | 1-edge nonzero [u^0,1]: {2: [1], 5: [1]} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+Pi_A+B_plus_c6_2             162 s (25+4) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {5: [1]} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+Pi_2A+7B                     166 s (25+4) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+done 166 s -> C:\Users\user\AppData\Local\Temp\claude\d7c1b608d03d194a\37f24460-3601-4c85-b123-5156e19eb475\scratchpad\ref_u3\ref_direct_61_B.json

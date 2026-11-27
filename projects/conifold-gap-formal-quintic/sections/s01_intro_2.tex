@@ -1,0 +1,75 @@
+% Section 1, part 2: the statements. Continued in part 3.
+
+%-------------------------------------------------------------------------------
+\subsection{Results}
+\label{sec:int-results}
+
+For a leg-free stable graph $\Gamma$, a matrix series $X$ and a cohomological field theory $\Omega$, $\mathrm{Cont}_\Gamma[E_X,q_X;\Omega]$ is the contraction of the vertex tensors of $\Omega$ along the edges $E_X$ of $X$, with the leaf point $q_X$ of $X$, as in \cite[Defs.~2.2, 2.13]{PPZ15} when $X$ is symplectic with $X(0)=1$, and with the edge of \cref{def:set-outer} in general, including the factor $|\Aut\Gamma|^{-1}$ (\cref{def:set-graphsum,def:set-outer,def:flh-outer}). The \emph{vertex graph} has one vertex, of genus $g$, and no edge; its term contains the leaf decorations.
+
+\begin{thm}[Theorem~A]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-main}
+Let $g\geq2$ and let $(\alpha,\beta)\in\bbQ^2$ define a conifold frame (\cref{def:set-frames}), with vanishing period $\varpi_1=u+O(u^2)$ and $\tc=\varpi_1/\varpi_0$. Let $M:=\Mo(\tau(u)\zh)$, exactly in $u$, and $R':=\Qr M^{-1}$, where $\Qr$ is the matrix of the lowered rows of \cref{def:set-rows} expanded in the frame (\cref{def:set-confexp}). For a leg-free stable graph $\Gamma$ of genus $g$ let
+\[
+T_\Gamma:=\mathrm{Cont}_\Gamma\bigl[E_{R'},q_{R'};M.\TFT\bigr]
+\]
+be its outer term (\cref{def:set-outer}), where $\TFT$ is the topological field theory of the formal quintic (\cref{def:set-frob}), expanded in the frame. Then:
+\begin{enumerate}
+\item $T_\Gamma\in\bbQ\fps{u}$ for every $\Gamma$ with at least one edge;
+\item for the vertex graph, $T_\Gamma\in c_g\tc^{2-2g}+\bbQ\fps{u}$, where
+\[
+c_g=\frac{(-1)^{g-1}B_{2g}}{2g(2g-2)\,5^{g-1}}=\frac{|B_{2g}|}{2g(2g-2)\,5^{g-1}} .
+\]
+\end{enumerate}
+\end{thm}
+
+\Cref{thm:int-main} is proved as \cref{thm:mai-main}; for one $g$ it is Property N($g$) of \cref{def:set-N}. Here $c_2=1/1200$, $c_3=1/25200$ (\cref{rmk:set-cg}), and the hatted terms are $G_\Gamma=u^{2g-2}T_\Gamma$ (\cref{lem:flh-hat}). The statement is about each graph separately; we do not know how to obtain it from a statement about the singular part of the sum (\cref{rmk:mai-graphlocal}).
+
+\begin{cor}[Corollary~B: the conifold gap of the formal quintic]\genusstatus{AI-proposed, unchecked}
+\label{cor:int-gap}
+Let $g\geq2$ and $(\alpha,\beta)\in\bbQ^2$. The conifold expansion $F_g^{\mathrm{cf}}\in\bbQ\lser{s}$ of the genus-$g$ potential of the formal quintic in the frame $(\alpha,\beta)$ (\cref{def:mai-Fcf}) satisfies
+\[
+F_g^{\mathrm{cf}}\in c_g\tc^{2-2g}+\bbQ\fps{u} .
+\]
+Since $\bbQ\fps{u}=\bbQ\fps{\tc}$, the series $F_g^{\mathrm{cf}}$ has no fractional power of $u$, no term $\tc^k$ with $3-2g\leq k\leq-1$, and leading term $c_g\tc^{2-2g}$.
+\end{cor}
+
+Here $F_g^{\mathrm{cf}}$ is the image under $\Cexp_{\alpha,\beta}$ of the genus-$g$ graph sum written in $\Nring$, whose evaluation is $F_g$ by (T) and (QRR); by the group property of the action \cite[Def.~2.13, Prop.~2.14]{PPZ15} it is the sum of the $T_\Gamma$ (\cref{cor:mai-gap}).
+
+The proof compares two normalisations of the $R$-matrix. The cyclic systems of the formal quintic and of the model at $v(u)$ are related by a gauge regular at $u=0$, unique up to a scalar factor $\cn(z)$ (Theorem~U, \cref{thm:gau-U}); the \emph{canonical gauge} $\Pc$ is fixed at the conifold point by the gauge identity $\Pc\YC(v(u))=\YCQ$ between the vanishing solutions (\cref{thm:gau-G,def:gau-can}), the rows $\Qr$ at $q=0$ by (QRR). Both $\Qr$ and $\Pc\Qr^{\mathrm m}(v(u))$, $\Qr^{\mathrm m}$ the model rows, are formal WKB solutions of the same system with the same exponentials, so
+\[
+\Qr\,\Dn=\Pc\,\Qr^{\mathrm m}(v(u)),\qquad \Dn=\diag(\Dn_0,\dots,\Dn_4),\qquad \Dn_i(z)=\Dn_0(\zeta^{-i}z),\qquad \Dn_0\in\bbQ\fps{z}
+\]
+(\cref{thm:gau-R0,cor:gau-colours}; that $\Dn_0$ has rational coefficients is part of \cref{thm:con-glue}).
+
+\begin{thm}[Theorem~C: the normalisation]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-D}
+In every conifold frame, $\Dn_0=1$ in $\bbQ\fps{z}$. Hence $\Dn=1$, and the window $\Fg{g}$, that is $\Dn_0\equiv1\bmod z^{3g-2}$ (\cref{def:gau-Fg}), holds for every $g\geq2$. Equivalently, $\Qr=\Pc\,\Qr^{\mathrm m}(v(u))$: the actual gauge is the canonical gauge, and the $R$-matrix of the formal quintic, normalised at $q=0$ by (QRR), is in the canonical normalisation at the conifold point.
+\end{thm}
+
+\Cref{thm:int-D} is \cref{thm:gam-D} with \cref{cor:mai-actual}; its consequences for the natural form are \cref{cor:mai-natfact}. It is reduced to one value at $q=0$ of a saddle series:
+
+\begin{thm}[Theorem~Gamma]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-gamma}
+Let $c(z;L)=\sum_{n\geq0}c_n(L)z^n$, $c_0(L)=1$, be the full-Stirling saddle series of \cref{def:gam-c}: the normalised stationary-phase series, divided by its constant term ($\SPh$ of \cref{def:fsp-wick}), at $\sigma=L$ of
+\[
+\Gamma\Bigl(1+\frac{5\sigma}{z}\Bigr)\prod_{j=0}^{4}\Gamma\Bigl(\frac{\zeta^j-\sigma}{z}\Bigr)(-q)^{\sigma/z}\,\dd\sigma,\qquad q=q(L)=\frac{1-L^{-5}}{5^5},
+\]
+with every Gamma factor replaced by its formal Stirling form (\cref{def:fsp-stirling}). Then every $c_n$ lies in $\AL=\bbQ[L,L^{-1},(L^5-1)^{-1}]$, and:
+\begin{enumerate}
+\item[(a)] no $c_n$ has a pole at $L=1$, that is, at $q=0$, and $c(z;1)=h(z)$;
+\item[(b)] no $c_n$ has a pole at $L=0$, that is, at $q=\infty$, and
+\[
+c(z;0)=\Ginf(z):=\exp\Bigl(\sum_{l\geq1}\frac{(-1)^{l+1}B_{5l+1}(\frac15)}{l(5l+1)}\,z^{5l}\Bigr),
+\]
+the series given by \cite[Lemma~7.7, (37)]{GJR18} at $m=5$, $k=1$, $\lambda=1$ in the notation there.
+\end{enumerate}
+\end{thm}
+
+\Cref{thm:int-gamma} is formed by parts (i), (ii) and the first assertion of (iv) of \cref{thm:gam-main}, with \cref{thm:gam-ginf}. Part (a) is proved by a local Mellin inversion (\cref{thm:gam-lmi}) from the formal stationary-phase lemmas of \cref{sec:fsp} alone; by $c_n(L)=L^{4n}\mathrm{ph}^{\mathrm{SP}}_n(L^{-5})$ (\cref{prop:gam-hatflat}), Theorem~P (\cref{thm:con-Pb}) and the glue (\cref{thm:con-glue}) it is equivalent to $\Dn=1$ (\cref{cor:gam-equiv,cor:con-A2}). Part (b) says that $c(z;L)$ takes at $L=0$ the series displayed on the right of \cite[Lemma~7.7, (37)]{GJR18}, read as a series in $z$, which is obtained there for the Landau--Ginzburg series of that paper (we do not claim that the two series coincide); it identifies the free coefficients of the canonical colour-$0$ function (\cref{cor:gam-free}) and is not used for \cref{thm:int-main}.
+
+\begin{rmk}
+\label{rmk:int-constant}
+The constant $c_g$ is that of \cite[Conjecture~1.5]{CGYZ26} for the quintic threefold, in the same normalisation $\varpi_1=u+O(u^2)$; the two theories have different potentials, so nothing about the quintic threefold follows (\cref{sec:sgn-lit}, \cref{rmk:mai-constant}). \draftnote{Numbers from arXiv:2609.13921v2, read in the HTML rendering; to be re-read in the PDF.}
+\end{rmk}
+
+\input{sections/s01_intro_3}

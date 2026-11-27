@@ -1,0 +1,8 @@
+gm_cfu: hatted CFU map mod u^13, exact over Q
+PASS (K1) critical value: What(1; u) = -(5/4)/tau(u) mod u^13
+PASS (K2) solvability at every order k <= 12 (right side vanishes at y = 1)
+PASS (K3) phi_k(1) = 0 for k <= 12 (the critical point Xi = 1 is fixed)
+   deg phi_k: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]   phi_1 = ['1/18', '-1/18']   phi_2 = ['13/567', '-101/4536', '-1/1512']
+PASS (K4) What(xi(Xi); u) = M(Xi; u) identically mod u^13
+PASS (C) control: with tau = 1 (v = u) the order-1 equation is obstructed
+GM_CFU 12: ALL CHECKS PASSED   (0.5 s)

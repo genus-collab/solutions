@@ -1,0 +1,12 @@
+r3_resum.py  L = 24 (series length); exact over Q
+[E] g = 2: ord(S_J - (v+delta)^(2-2g)) >= 3 - 2g + J for all J: True;  ord(S_(3g-3) - target) = 2 (claim >= 2)
+[E] g = 3: ord(S_J - (v+delta)^(2-2g)) >= 3 - 2g + J for all J: True;  ord(S_(3g-3) - target) = 3 (claim >= 3)
+[E] g = 4: ord(S_J - (v+delta)^(2-2g)) >= 3 - 2g + J for all J: True;  ord(S_(3g-3) - target) = 4 (claim >= 4)
+[E1] CONTROL v = u^2, delta = u^2: lowest offset -4; the u^(4-4g) coefficient of S_J for J = 0..12: ['1', '-1', '2', '-2', '3', '-3', '4', '-4', '5', '-5', '6', '-6', '7'] (no limit)
+[E2] CONTROL delta = u/2: target defined: False; the u^(2-2g) coefficient of S_J, J = 0..12: ['1', '0', '3/4', '1/4', '9/16', '3/8', '31/64', '27/64', '117/256', '7/16', '459/1024', '453/1024', '1825/4096'] (no limit)
+[F] N = 1: Sum_(m<L) binom(N+m-1,m) c^m = kappa^N mod u^24: True
+[F] N = 2: Sum_(m<L) binom(N+m-1,m) c^m = kappa^N mod u^24: True
+[F] N = 5: Sum_(m<L) binom(N+m-1,m) c^m = kappa^N mod u^24: True
+[F1] CONTROL kappa = 2 + u, N = 2: u^0 parts of the partial sums: ['1', '2', '11/4', '13/4', '57/16', '15/4'] (all distinct: True)
+[F2] grouped by m, c(0) = 1/2, A = (2, -5, 7), N0 = 3: m <= 80 with [u^0] T_m = 0: [] (expected none)
+RESULT: ALL CHECKS PASSED

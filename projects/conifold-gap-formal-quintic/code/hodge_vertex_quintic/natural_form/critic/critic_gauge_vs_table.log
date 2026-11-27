@@ -1,0 +1,12 @@
+gauge (proof route, periods only), K = 14, N = 38: 4 s; precisions of p_k: [36, 34, 32, 30, 28, 27, 25, 23, 21, 19, 18, 16, 14, 12, 10]
+canonical normalisation P_11(0,z) = 1: scalar factor c(z^5) = 1 + (43397/807975000) z^5 + (153074543599907/261129440250000000) z^10
+   expected from the other reports: c_5 = 43397/807975000 (fit to the R-matrix); c_10 = 153074543599907/261129440250000000 (symplecticity)
+PASS c_5 agrees
+PASS c_10 agrees (canonical = symplectic normalisation at z^10)
+PASS P_22(0,z) = P_11(0,z) = 1 at z^5, z^10 after the normalisation ((R1))
+table entries (u <= 11, zhat <= 14): 397;  predicted non-zero components: 397;  coefficients skipped for lack of precision: 0
+PASS all 397 common components agree exactly (rationals)
+PASS no predicted component is missing from the table
+PASS table components not reproduced: 0 []
+   highest orders compared: zhat^14, u^11;  components with zhat >= 7: 128
+CRITIC_GAUGE_VS_TABLE ALL PASS

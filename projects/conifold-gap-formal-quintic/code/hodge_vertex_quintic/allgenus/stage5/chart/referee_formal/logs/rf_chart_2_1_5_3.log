@@ -1,0 +1,21 @@
+rf_chart: exact Q(zeta) chart z^2, Omega_7 z^1; mod p chart z^5, Omega_7 z^3; log logs/rf_chart_2_1_5_3.log
+PASS expectation algorithms agree (closed-form rank-one vs differential operator), chart at L = 1/2 through z^2
+PASS L = 1/2: K = q y^5/prod_(j>=1) x_j = L - 1 at p_ch(L) (computed from q)
+PASS [Q(zeta)] L = 1/2: chart SP = c(z; L) exactly through z^2   7.1 s
+PASS L = 1: K = q y^5/prod_(j>=1) x_j = L - 1 at p_ch(L) (computed from q)
+PASS [Q(zeta)] L = 1: chart SP = h_(w_0) exactly through z^2   5.4 s
+PASS [Q(zeta)] L = 1/2: 7-variable SP of Omega_7 = c(z; L) exactly through z^1   0.4 s
+PASS [F_p, p = 7000000000000000061] L = -3: chart SP = c(z; L) through z^5
+PASS [F_p, p = 7000000000000000061] L = 5/3: chart SP = c(z; L) through z^5
+PASS [F_p, p = 7000000000000000061] L = 1: chart SP = h through z^5
+PASS [F_p, p = 7000000000000000061] L = -3: 7-variable SP of Omega_7 = c(z; L) through z^3   (prime block 289 s)
+PASS [F_p, p = 2900000000000000000000291] L = -3: chart SP = c(z; L) through z^5
+PASS [F_p, p = 2900000000000000000000291] L = 5/3: chart SP = c(z; L) through z^5
+PASS [F_p, p = 2900000000000000000000291] L = 1: chart SP = h through z^5
+PASS [F_p, p = 2900000000000000000000291] L = -3: 7-variable SP of Omega_7 = c(z; L) through z^3   (prime block 287 s)
+PASS control: chart without the Jacobian X_0 of (L2) (amplitude y^-5) differs from c(z; L), first at z^1
+PASS control: chart with measure dy/y differs from c(z; L), first at z^2
+PASS control: q -> -q in the chart phase: p_ch(L) is no longer critical (linear terms non-zero)
+PASS control: Omega_7 with dy/y equals c(z; L) through z^2 (it first differs at z^2)
+PASS Omega_7 with dy/y equals the Gamma(5s) sigma-form through z^2 (consistent pair)
+RF_CHART 2 1 5 3: ALL CHECKS PASSED   (606 s)

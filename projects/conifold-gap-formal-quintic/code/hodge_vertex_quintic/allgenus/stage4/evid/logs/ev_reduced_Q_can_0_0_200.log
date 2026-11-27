@@ -1,0 +1,48 @@
+ev_reduced: field Q, mode can, frame (0, 0), q <= 40 (zhat^200, u^160), (H) for n <= 204, REG/Ghat_22 for q <= 12
+   log file logs/ev_reduced_Q_can_0_0_200.log
+   setup (periods, tau^m, model rows to t^200, u^160) in 39.3 s; dK_q/df_5q = 1
+   z^5  : f^can = 4537/3937500; ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 1..4 ok; 40 s
+   z^10 : f^can = -177640111151/31007812500000; ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 6..9 ok; 41 s
+   z^15 : f^can = -284328315069009259339/6226756347656250000000; ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 11..14 ok; 42 s
+   z^20 : f^can = 19636563411456..(31/29 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 16..19 ok; 43 s
+   z^25 : f^can = 38485622047381..(39/36 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 21..24 ok; 44 s
+   z^30 : f^can = -1176854732923..(54/45 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 26..29 ok; 45 s
+   z^35 : f^can = -3284302746540..(68/57 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 31..34 ok; 47 s
+   z^40 : f^can = 10164969525512..(77/62 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 36..39 ok; 48 s
+   z^45 : f^can = 27504218922159..(93/75 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 41..44 ok; 50 s
+   z^50 : f^can = -7788429637127..(106/82 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 46..49 ok; 52 s
+   z^55 : f^can = -1401559640615..(116/87 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 51..54 ok; 54 s
+   z^60 : f^can = 16983971454575..(132/99 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 56..59 ok; 57 s
+   z^65 : f^can = 31284734305393..(146/109 digits); ph^can(1) - h = 0; (H) n = 61..64 ok; 58 s
+   z^70 : f^can = -3929574525583..(163/120 digits); ph^can(1) - h = 0; (H) n = 66..69 ok; 60 s
+   z^75 : f^can = -3309268586615..(177/129 digits); ph^can(1) - h = 0; (H) n = 71..74 ok; 62 s
+   z^80 : f^can = 23037099847364..(191/138 digits); ph^can(1) - h = 0; (H) n = 76..79 ok; 64 s
+   z^85 : f^can = 22616447579489..(200/141 digits); ph^can(1) - h = 0; (H) n = 81..84 ok; 66 s
+   z^90 : f^can = -9884281021439..(220/155 digits); ph^can(1) - h = 0; (H) n = 86..89 ok; 68 s
+   z^95 : f^can = -3587308941803..(233/162 digits); ph^can(1) - h = 0; (H) n = 91..94 ok; 70 s
+   z^100: f^can = 21935768761573..(245/169 digits); ph^can(1) - h = 0; (H) n = 96..99 ok; 72 s
+   z^105: f^can = 88214440588785..(268/187 digits); ph^can(1) - h = 0; (H) n = 101..104 ok; 75 s
+   z^110: f^can = -6828081655129..(283/194 digits); ph^can(1) - h = 0; (H) n = 106..109 ok; 77 s
+   z^115: f^can = -7090214835123..(297/202 digits); ph^can(1) - h = 0; (H) n = 111..114 ok; 80 s
+   z^120: f^can = 13337803800203..(314/212 digits); ph^can(1) - h = 0; (H) n = 116..119 ok; 83 s
+   z^125: f^can = 64275729984878..(331/224 digits); ph^can(1) - h = 0; (H) n = 121..124 ok; 86 s
+   z^130: f^can = -8072496472498..(346/231 digits); ph^can(1) - h = 0; (H) n = 126..129 ok; 89 s
+   z^135: f^can = -1252512849661..(369/247 digits); ph^can(1) - h = 0; (H) n = 131..134 ok; 92 s
+   z^140: f^can = 65989253816421..(385/258 digits); ph^can(1) - h = 0; (H) n = 136..139 ok; 95 s
+   z^145: f^can = 13893522538580..(396/262 digits); ph^can(1) - h = 0; (H) n = 141..144 ok; 99 s
+   z^150: f^can = -6250345729289..(417/275 digits); ph^can(1) - h = 0; (H) n = 146..149 ok; 103 s
+   z^155: f^can = -4354395409001..(436/288 digits); ph^can(1) - h = 0; (H) n = 151..154 ok; 106 s
+   z^160: f^can = 42058756744879..(448/293 digits); ph^can(1) - h = 0; (H) n = 156..159 ok; 110 s
+   z^165: f^can = 59198052938293..(469/308 digits); ph^can(1) - h = 0; (H) n = 161..164 ok; 115 s
+   z^170: f^can = -1902773500460..(485/315 digits); ph^can(1) - h = 0; (H) n = 166..169 ok; 119 s
+   z^175: f^can = -6265575897674..(504/327 digits); ph^can(1) - h = 0; (H) n = 171..174 ok; 124 s
+   z^180: f^can = 38968590224408..(521/338 digits); ph^can(1) - h = 0; (H) n = 176..179 ok; 129 s
+   z^185: f^can = 23922420320004..(533/343 digits); ph^can(1) - h = 0; (H) n = 181..184 ok; 134 s
+   z^190: f^can = -1180147017175..(552/352 digits); ph^can(1) - h = 0; (H) n = 186..189 ok; 139 s
+   z^195: f^can = -1927873031939..(572/366 digits); ph^can(1) - h = 0; (H) n = 191..194 ok; 145 s
+   z^200: f^can = 73071291956705..(590/377 digits); ph^can(1) - h = 0; (H) n = 196..199 ok; 150 s
+PASS (H): ph_n(1) = h_n for all 164 n <= 204 with 5 not | n (no free parameter: the WKB recursion alone): []
+PASS no resonance obstruction at the 40 multiples of 5 <= 204 (40 of them because deg rho_n < 4n/5): polynomial-type solution exists
+PASS (N), connection form: ph^can_5q(1) = h_5q for q = 1..40 (f^can fixed at the conifold by K_q = 0, no QRR input): []
+PASS REG and (R1): [u^j] Ghat_11 = [u^j] Ghat_22 = 0 (j < 4q) and Ghat_22 slot = Ghat_11 slot, q <= 12
+EV_REDUCED Q can 0_0 q<=40: ALL CHECKS PASSED   (151 s)

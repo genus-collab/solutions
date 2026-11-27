@@ -1,0 +1,38 @@
+env.sh: using C:\Program Files\Python314\python.exe 3.14.6
+==========================================================================================
+genus5_run g4_89_nat: task 2 of 5, python 3.14.6, host ?
+   set-up 2 s: 379 inner graphs, K = 6
+   76 inner graphs assigned, estimated 0.02 h on the reference machine (heaviest task 0.02 h)
+   inner graph    2 (E= 1, V=2):     0.0 s, 2 outer graphs
+   inner graph    7 (E= 2, V=2):     0.1 s, 4 outer graphs
+   inner graph   12 (E= 3, V=3):     0.1 s, 7 outer graphs
+   inner graph   17 (E= 3, V=2):     0.1 s, 6 outer graphs
+   inner graph   22 (E= 3, V=2):     0.9 s, 6 outer graphs
+   inner graph   27 (E= 3, V=3):     0.5 s, 6 outer graphs
+   inner graph   32 (E= 4, V=1):     1.0 s, 5 outer graphs
+   inner graph   37 (E= 4, V=3):     0.1 s, 7 outer graphs
+   inner graph   42 (E= 4, V=2):     1.8 s, 7 outer graphs
+   inner graph   47 (E= 4, V=2):     1.4 s, 5 outer graphs
+   inner graph   52 (E= 4, V=3):     1.0 s, 10 outer graphs
+   inner graph   57 (E= 4, V=3):     0.7 s, 11 outer graphs
+   inner graph   62 (E= 4, V=3):     2.1 s, 8 outer graphs
+   inner graph   67 (E= 4, V=4):     0.3 s, 12 outer graphs
+   inner graph   72 (E= 4, V=4):     0.3 s, 10 outer graphs
+   inner graph   77 (E= 5, V=2):     2.9 s, 11 outer graphs
+   inner graph   82 (E= 5, V=4):     0.0 s, 16 outer graphs
+   inner graph   87 (E= 5, V=3):     4.4 s, 12 outer graphs
+   inner graph   92 (E= 5, V=3):     0.6 s, 17 outer graphs
+   inner graph   97 (E= 5, V=3):     1.4 s, 11 outer graphs
+   inner graph  102 (E= 5, V=3):     3.7 s, 13 outer graphs
+   inner graph  107 (E= 5, V=3):     0.8 s, 14 outer graphs
+   inner graph  112 (E= 5, V=4):     0.7 s, 14 outer graphs
+   inner graph  117 (E= 5, V=4):     0.5 s, 18 outer graphs
+   inner graph  122 (E= 5, V=4):     0.6 s, 14 outer graphs
+   inner graph  127 (E= 5, V=4):     0.3 s, 18 outer graphs
+   inner graph  132 (E= 5, V=4):     0.4 s, 16 outer graphs
+   inner graph  137 (E= 5, V=4):     1.3 s, 10 outer graphs
+   inner graph  142 (E= 5, V=5):     0.2 s, 15 outer graphs
+   inner graph  147 (E= 5, V=5):     0.5 s, 11 outer graphs
+   inner graph  152 (E= 6, V=3):     1.2 s, 21 outer graphs
+   inner graph  157 (E= 6, V=3):     1.3 s, 15 outer graphs
+   inner graph  162 (E= 6, V=3):     5.9 s, 14 outer graphs

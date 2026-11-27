@@ -1,0 +1,4 @@
+pb_s2.py 60
+  p = 2^61-1: SP(eta^(c_b) e^(-(1/eta+eta^4/4)/t)) = eps_b F_b(t), all b, t^0..t^60: PASS; control [all signs +]: PASS (fails as it must)
+  p = 2^89-1: SP(eta^(c_b) e^(-(1/eta+eta^4/4)/t)) = eps_b F_b(t), all b, t^0..t^60: PASS; control [all signs +]: PASS (fails as it must)
+ALL CHECKS PASSED

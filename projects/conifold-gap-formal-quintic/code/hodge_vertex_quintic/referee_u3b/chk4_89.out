@@ -1,0 +1,14 @@
+prime 2^89-1: rank of the 15 x 15 matrix of q_17 on the circulant class: 3 (kernel dimension 12); m_1 vanishes on the kernel: True
+   rank of q_17 restricted to K_4^circ (dimension 11): 2
+   random Delta in ker A_17 (point 1)               grad q_17 = 0: True  [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: True  (eps-degree 2, nodes 12, 1 s)
+   random Delta in ker A_17 (point 2)               grad q_17 = 0: True  [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: True  (eps-degree 2, nodes 12, 2 s)
+   random Delta in ker A_17 (point 3)               grad q_17 = 0: True  [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: True  (eps-degree 2, nodes 12, 2 s)
+   control: random Delta with m_1 = 0 on K_4^circ   grad q_17 = 0: False [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: False (eps-degree 2, nodes 12, 2 s)
+   control: random circulant Delta                  grad q_17 = 0: False [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: False); [u^3] G_17(N_1, 0) = 0: False (eps-degree 2, nodes 12, 2 s)
+   Delta* (running circstar pass)                   grad q_17 = 0: True  [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: True  (eps-degree 2, nodes 12, 2 s)
+   A + 2B (circpi)                                  grad q_17 = 0: True  [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: True  (eps-degree 2, nodes 12, 3 s)
+   genuine c1_0 = 0 point (circb)                   grad q_17 = 0: True  [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: True  (eps-degree 2, nodes 12, 3 s)
+   extra[3] (b = -zeta^2, not Pi)                   grad q_17 = 0: True  [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: True  (eps-degree 2, nodes 12, 3 s)
+   extra[0] (b = +zeta^2)                           grad q_17 = 0: False [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: False (eps-degree 2, nodes 12, 4 s)
+   B of Pi                                          grad q_17 = 0: True  [u^0] = [u^1] = 0: True; [u^2] = q_17(Delta): True (zero: True ); [u^3] G_17(N_1, 0) = 0: True  (eps-degree 2, nodes 12, 4 s)
+CHK4 done (4 s)

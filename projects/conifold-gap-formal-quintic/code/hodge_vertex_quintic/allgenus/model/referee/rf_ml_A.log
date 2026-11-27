@@ -1,0 +1,52 @@
+(0,3) kappa    :     0 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^3>_0: ok -5
+(0,3) wrongsign:     0 singular generator correlators with >= 1 kappa,     0 NON-ZERO
+(0,3) bare     :     0 singular generator correlators with >= 1 kappa,     0 NON-ZERO
+(0,4) kappa    :     6 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^4>_0: ok 5
+(0,4) wrongsign:     6 singular generator correlators with >= 1 kappa,     1 NON-ZERO   e.g. H H H k(H0,1) e=-1
+(0,4) bare     :     6 singular generator correlators with >= 1 kappa,     1 NON-ZERO   e.g. H H H k(H0,1) e=-1
+(0,5) kappa    :    37 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^5>_0: ok -10
+(0,5) wrongsign:    37 singular generator correlators with >= 1 kappa,     4 NON-ZERO   e.g. H H H H k(H0,1) e=-2; H H H H k(H4,2) e=-1
+(0,5) bare     :    37 singular generator correlators with >= 1 kappa,     4 NON-ZERO   e.g. H H H H k(H0,1) e=-2; H H H H k(H4,2) e=-1
+(0,6) kappa    :   152 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^6>_0: ok 30
+(0,6) wrongsign:   152 singular generator correlators with >= 1 kappa,    14 NON-ZERO   e.g. H H H H H k(H0,1) e=-3; H H H H H k(H4,2) e=-2
+(0,6) bare     :   152 singular generator correlators with >= 1 kappa,    14 NON-ZERO   e.g. H H H H H k(H0,1) e=-3; H H H H H k(H4,2) e=-2
+(1,1) kappa    :     0 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^1>_1: ok -1/12
+(1,1) wrongsign:     0 singular generator correlators with >= 1 kappa,     0 NON-ZERO
+(1,1) bare     :     0 singular generator correlators with >= 1 kappa,     0 NON-ZERO
+(1,2) kappa    :     3 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^2>_1: ok 1/12
+(1,2) wrongsign:     3 singular generator correlators with >= 1 kappa,     1 NON-ZERO   e.g. H k(H0,1) e=-1
+(1,2) bare     :     3 singular generator correlators with >= 1 kappa,     1 NON-ZERO   e.g. H k(H0,1) e=-1
+(1,3) kappa    :    19 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^3>_1: ok -1/6
+(1,3) wrongsign:    19 singular generator correlators with >= 1 kappa,     4 NON-ZERO   e.g. H H k(H0,1) e=-2; H H k(H4,2) e=-1
+(1,3) bare     :    19 singular generator correlators with >= 1 kappa,     4 NON-ZERO   e.g. H H k(H0,1) e=-2; H H k(H4,2) e=-1
+(1,4) kappa    :    83 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^4>_1: ok 1/2
+(1,4) wrongsign:    83 singular generator correlators with >= 1 kappa,    13 NON-ZERO   e.g. H H H k(H0,1) e=-3; H H H k(H4,2) e=-2
+(1,4) bare     :    83 singular generator correlators with >= 1 kappa,    13 NON-ZERO   e.g. H H H k(H0,1) e=-3; H H H k(H4,2) e=-2
+(1,5) kappa    :   313 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^5>_1: ok -2
+(1,5) wrongsign:   313 singular generator correlators with >= 1 kappa,    47 NON-ZERO   e.g. H H H H k(H0,1) e=-4; H H H H k(H4,2) e=-3
+(1,5) bare     :   313 singular generator correlators with >= 1 kappa,    46 NON-ZERO   e.g. H H H H k(H0,1) e=-4; H H H H k(H4,2) e=-3
+(2,1) kappa    :     2 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^1>_2: ok -1/600
+(2,1) wrongsign:     2 singular generator correlators with >= 1 kappa,     2 NON-ZERO   e.g. k(H0,1) e=-2; k(H4,2) e=-1
+(2,1) bare     :     2 singular generator correlators with >= 1 kappa,     2 NON-ZERO   e.g. k(H0,1) e=-2; k(H4,2) e=-1
+(2,2) kappa    :    17 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^2>_2: ok 1/200
+(2,2) wrongsign:    17 singular generator correlators with >= 1 kappa,     9 NON-ZERO   e.g. H k(H0,1) e=-3; H k(H4,2) e=-2
+(2,2) bare     :    17 singular generator correlators with >= 1 kappa,     9 NON-ZERO   e.g. H k(H0,1) e=-3; H k(H4,2) e=-2
+(2,3) kappa    :    90 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^3>_2: ok -1/50
+(2,3) wrongsign:    90 singular generator correlators with >= 1 kappa,    37 NON-ZERO   e.g. H H k(H0,1) e=-4; H H k(H4,2) e=-3
+(2,3) bare     :    90 singular generator correlators with >= 1 kappa,    34 NON-ZERO   e.g. H H k(H0,1) e=-4; H H k(H4,2) e=-3
+(2,4) kappa    :   376 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^4>_2: ok 1/10
+(2,4) wrongsign:   376 singular generator correlators with >= 1 kappa,   144 NON-ZERO   e.g. H H H k(H0,1) e=-5; H H H k(H4,2) e=-4
+(2,4) bare     :   376 singular generator correlators with >= 1 kappa,   137 NON-ZERO   e.g. H H H k(H0,1) e=-5; H H H k(H4,2) e=-4
+(3,1) kappa    :     4 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^1>_3: ok -1/6300
+(3,1) wrongsign:     4 singular generator correlators with >= 1 kappa,     4 NON-ZERO   e.g. k(H0,1) e=-4; k(H4,2) e=-3
+(3,1) bare     :     4 singular generator correlators with >= 1 kappa,     4 NON-ZERO   e.g. k(H0,1) e=-4; k(H4,2) e=-3
+(3,2) kappa    :    41 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^2>_3: ok 1/1260
+(3,2) wrongsign:    41 singular generator correlators with >= 1 kappa,    31 NON-ZERO   e.g. H k(H0,1) e=-5; H k(H4,2) e=-4
+(3,2) bare     :    41 singular generator correlators with >= 1 kappa,    31 NON-ZERO   e.g. H k(H0,1) e=-5; H k(H4,2) e=-4
+(4,1) kappa    :     6 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^1>_4: ok -1/30000
+(4,1) wrongsign:     6 singular generator correlators with >= 1 kappa,     6 NON-ZERO   e.g. k(H0,1) e=-6; k(H4,2) e=-5
+(4,1) bare     :     6 singular generator correlators with >= 1 kappa,     6 NON-ZERO   e.g. k(H0,1) e=-6; k(H4,2) e=-5
+TOTAL kappa    : 1149 tested, 0 non-zero
+TOTAL wrongsign: 1149 tested, 317 non-zero
+TOTAL bare     : 1149 tested, 306 non-zero
+rf_ml done (67 s)

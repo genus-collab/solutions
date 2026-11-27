@@ -1,0 +1,9 @@
+==============================================================================================================
+ig_run pilot_id_89: 5 graphs requested, 5 jobs to do (0 already stored), nproc 5, deadline 600 s, started 2026-11-13 12:20:10
+   predicted cost of the queued jobs: 0.0 CPU-h (proxy rate 5e-6 s)
+   t=   5 E= 2 V=3: 1.4 s, 1 non-zero outer rows   [1/5, wall 2 s]
+   t=  25 E= 3 V=2: 1.5 s, 1 non-zero outer rows   [2/5, wall 2 s]
+   t=   1 E= 1 V=2: 3.1 s, 1 non-zero outer rows   [3/5, wall 4 s]
+   t=  28 E= 3 V=2: 3.4 s, 1 non-zero outer rows   [4/5, wall 4 s]
+   t=   3 E= 1 V=1: 9.4 s, 1 non-zero outer rows   [5/5, wall 10 s]
+ig_run pilot_id_89: 5 jobs finished in 10 s wall; queue empty

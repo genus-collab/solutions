@@ -1,0 +1,11 @@
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicline: chart c_1(0) = 1, random lines, p = 2^89-1
+   tau-degree of the (c5, c6) determinant F: 4
+PASS tau-degree of F resolved
+   line 0: nodes 164, degrees of Res(E_1, E_k) [48, 48, 48] and of Res(E_k, F) [96, 96, 96, 96] (resolved: True); common factor g of degree 6; off a_4 = 0: degree 2 with 1 F_p-root(s) of multiplicities [2]; remaining (non-rational) factor c of degree 0
+      at the F_p-root(s) (the point of Pi): every Res(E_k, F) vanishes: [True];  gcd(c, Res(E_k, F)) degrees: [0, 0, 0, 0]
+   line 1: nodes 164, degrees of Res(E_1, E_k) [48, 48, 48] and of Res(E_k, F) [96, 96, 96, 96] (resolved: True); common factor g of degree 6; off a_4 = 0: degree 2 with 1 F_p-root(s) of multiplicities [2]; remaining (non-rational) factor c of degree 0
+      at the F_p-root(s) (the point of Pi): every Res(E_k, F) vanishes: [True];  gcd(c, Res(E_k, F)) degrees: [0, 0, 0, 0]
+PASS degrees resolved; on each line exactly one F_p-root off a_4 = 0, at which the (c5, c6) condition holds (the point of Pi)
+PASS on each random line the common zeros of the minors off the conic a_4 = 0 are exactly the point of Pi (a double root): no other positive-dimensional family of solutions in the chart c_1(0) = 1
+GENUS3_CUBICLINE done; failures: []

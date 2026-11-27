@@ -1,0 +1,10 @@
+====================================================================================================
+ref_run5: p = 2^521-1, NZ = 16, K = 12; checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}
+(1) B(u) antisymmetric and circulant at every u-order: True; B(0) Fourier components (diagonal in the flat basis): {(1, 4): '-1/5', (2, 3): '-2/5', (3, 2): '2/5', (4, 1): '1/5'}
+    (R-eq) residual vanishes at all orders zhat^1..zhat^16, u^0..u^11: True
+    (G-eq) residual vanishes at all orders: True
+    (M-eq) holds for the symbol through w^16: True
+(2) G (Teleman normalisation)    weight 0: chain L holds in 13 of 13 cases, chain R in 13 of 13 (cases with k = 0: 0)
+(2) G (Teleman normalisation)    weight 5: chain L holds in 0 of 12 cases, chain R in 0 of 12 (cases with k = 0: 0)
+(2) G_flat = Psi(0)^-1 Psi(u) G  weight 0: chain L holds in 13 of 14 cases, chain R in 13 of 14 (cases with k = 0: 1)
+(2) G_flat = Psi(0)^-1 Psi(u) G  weight 5: chain L holds in 0 of 13 cases, chain R in 0 of 13 (cases with k = 0: 1)

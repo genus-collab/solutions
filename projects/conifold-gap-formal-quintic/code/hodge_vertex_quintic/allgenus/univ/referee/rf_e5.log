@@ -1,0 +1,46 @@
+====================================================================================================
+rf_e5: case w1, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:24:52]
+   D: symplectic True; flat-irregular entries []; annihilation violated at m = [1, 3, 4]
+   0 of 41 outer graphs with edges SINGULAR
+   vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (11/136080) T^-1
+   (2 s)
+====================================================================================================
+rf_e5: case w2, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:24:55]
+   D: symplectic True; flat-irregular entries []; annihilation violated at m = [2, 3, 4]
+   0 of 41 outer graphs with edges SINGULAR
+   vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (-11/54432) T^-1
+   (2 s)
+====================================================================================================
+rf_e5: case w12, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:24:57]
+   D: symplectic True; flat-irregular entries []; annihilation violated at m = [1, 2, 3]
+   0 of 41 outer graphs with edges SINGULAR
+   vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (2 s)
+====================================================================================================
+rf_e5: case C1c, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:24:59]
+   D: symplectic True; flat-irregular entries [(0, 2, 3), (1, 2, 4), (1, 3, 3), (1, 4, 2), (4, 2, 2)]; annihilation violated at m = []
+   4 of 41 outer graphs with edges SINGULAR
+      outer graph 1 (E=1, gv=[2]): ['0', '0', '0', '37/87500']
+      outer graph 2 (E=2, gv=[1]): ['0', '0', '0', '-2141/393750']
+      outer graph 3 (E=3, gv=[0]): ['0', '0', '0', '-452/65625']
+      outer graph 8 (E=3, gv=[0, 1]): ['0', '0', '0', '-41/196875']
+   vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (2 s)
+====================================================================================================
+rf_e5: case w1, genus 4, max_outer 1, p = 2^89-1   [2026-11-13T20:25:12]
+   D: symplectic True; flat-irregular entries []; annihilation violated at m = [1, 2, 3, 4]
+====================================================================================================
+rf_e5: case w2, genus 4, max_outer 1, p = 2^89-1   [2026-11-13T20:25:12]
+   D: symplectic True; flat-irregular entries []; annihilation violated at m = [1, 2, 3, 4]
+   3 of 3 outer graphs with edges (<= 1 edges) SINGULAR
+      outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '1/151200', '-8009/122472000', '[473417032378358741715192562 mod p]']
+      outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '-541/97200000', '[313860739518088937275833937 mod p]', '[329373515410162003545962601 mod p]']
+      outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '-139/567000', '[497666965119002903629908374 mod p]', '[11618095936425100597158725 mod p]']
+   vertex graph in T_eff: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (-19/22680000) T^-3 + ([499732682848131091154210859 mod p]) T^-2 + ([163396883719109757539617347 mod p]) T^-1
+   (46 s)
+   3 of 3 outer graphs with edges (<= 1 edges) SINGULAR
+      outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '-1/378000', '959/43740000', '[577959609589716777596144648 mod p]']
+      outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '13/9720000', '-941/233280000', '[258777481415839344303304540 mod p]']
+      outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '-1/283500', '[502508136289422451637601282 mod p]', '[321109182691504253367721087 mod p]']
+   vertex graph in T_eff: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (19/56700000) T^-3 + ([171488938646361646008052923 mod p]) T^-2 + ([429817262226508206943802750 mod p]) T^-1
+   (47 s)

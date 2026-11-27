@@ -1,0 +1,24 @@
+ref_g1_loc: degree-1 localisation checks of (M) and of prop:set-cyclicLR (referee, independent code)
+PASS  A  generic weights #0: J_1 (localisation) = z A_1 - 120 z - 770 lam_i - 120 e_1
+PASS (control fails as required)  A1 generic #0: Cor. 11.7 as printed (extra +600)
+PASS (control fails as required)  A2 generic #0: e_1 term omitted
+PASS (control fails as required)  A3 generic #0: E_d instead of E'_d
+PASS  A  generic weights #1: J_1 (localisation) = z A_1 - 120 z - 770 lam_i - 120 e_1
+PASS (control fails as required)  A1 generic #1: Cor. 11.7 as printed (extra +600)
+PASS (control fails as required)  A2 generic #1: e_1 term omitted
+PASS (control fails as required)  A3 generic #1: E_d instead of E'_d
+PASS  A  generic weights #2: J_1 (localisation) = z A_1 - 120 z - 770 lam_i - 120 e_1
+PASS (control fails as required)  A1 generic #2: Cor. 11.7 as printed (extra +600)
+PASS (control fails as required)  A2 generic #2: e_1 term omitted
+PASS (control fails as required)  A3 generic #2: E_d instead of E'_d
+PASS  A  zeta point: J_1 (localisation) = z A_1 - 120 z - 770 zeta^i
+PASS (control fails as required)  A1 zeta point: Cor. 11.7 as printed (extra +600)
+PASS  A2' zeta point: e_1 term omitted (e_1 = 0 here, so this must PASS)
+   <H,H>_(0,2,1) = 2875, <H^3,H^4>_(0,2,1) = -3250, <H^2,H^3>_(0,2,1) = 0, <H^4,H^4>_(0,2,1) = 0  (zeta point)
+   [q]C_0 = 120, [q]I~_1 = 770, [q]C_1 = 770, [q]kappa_1 = 575, [q]kappa_3 = -650
+PASS  B  <H,H>_(0,2,1) = 2875 = 5 [q] kappa_1
+PASS  B  <H^3,H^4>_(0,2,1) = 5 [q] kappa_3  (kappa_3 = C_0/C_1)
+PASS (control fails as required)  B1 <H^3,H^4>_(0,2,1) = 5 [q] (C_1/C_0)  (wrong guess)
+PASS  B  Z/5 grading: <H^2,H^3>_(0,2,1) = <H^4,H^4>_(0,2,1) = 0 at zeta
+PASS (control fails as required)  B2 grading control: <H^2,H^3>_(0,2,1) = 0 at generic weights
+TOTAL: 0 unexpected result(s)

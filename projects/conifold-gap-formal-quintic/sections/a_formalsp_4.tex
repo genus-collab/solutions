@@ -1,0 +1,84 @@
+% Formal stationary phase, part 4 of 5 (sec:fsp-change): the Piola identity, changes of variables, the uniformising map,
+% iterated stationary phase. Continued in part 5.
+
+%-------------------------------------------------------------------------------
+\subsection{Changes of variables and iterated stationary phase}
+\label{sec:fsp-change}
+
+\begin{lem}[Piola identity]\genusstatus{AI-proposed, unchecked}
+\label{lem:fsp-piola}
+Let $B$ be a commutative $\bbQ$-algebra, $\psi\in B\fps{y}^n$, $y=(y_1,\dots,y_n)$, and $J:=D\psi=(\de\psi_i/\de y_k)_{ik}$. Then $\sum_k\de_k\operatorname{adj}(J)_{ki}=0$ for every $i$, where $\operatorname{adj}(J)_{ki}=(-1)^{i+k}\det J^{(i,k)}$ and $J^{(i,k)}$ is $J$ without row $i$ and column $k$.
+\end{lem}
+
+\begin{proof}
+In the formal de Rham complex of $B\fps{y}$ the $(n-1)$-form $\omega_i:=\dd\psi_1\wedge\dots\wedge\widehat{\dd\psi_i}\wedge\dots\wedge\dd\psi_n$ is closed, each $\dd\psi_j$ being closed. Its coefficient on $\dd y_1\wedge\dots\widehat{\dd y_k}\dots\wedge\dd y_n$ is $\det J^{(i,k)}$, and $\dd(f\,\dd y_1\wedge\dots\widehat{\dd y_k}\dots\wedge\dd y_n)=(-1)^{k-1}\de_kf\,\dd y_1\wedge\dots\wedge\dd y_n$. So $0=\dd\omega_i=\sum_k(-1)^{k-1}\de_k\det J^{(i,k)}\,\dd y_1\wedge\dots\wedge\dd y_n$; multiply by $(-1)^{i+1}$.
+\end{proof}
+
+\begin{lem}[Change of variables]\genusstatus{AI-proposed, unchecked}
+\label{lem:fsp-cov}
+Let $F\in A\fps{x-c}$ have the non-degenerate critical point $c$ over $A$, with Hessian $\mathsf H$, and let $\phi\in c+\bigl((y-c')A\fps{y-c'}\bigr)^n$ be a formal map with $\phi(c')=c$ and $J:=D\phi(c')\in GL_n(A)$. Then $c'$ is a non-degenerate critical point of $F\circ\phi$, with Hessian $J^{\mathrm T}\mathsf HJ$, and for every amplitude $a\in A\fps{x-c}\lser z$
+\[
+\SPn_c[F;a]=\SPn_{c'}\bigl[F\circ\phi;\ (a\circ\phi)\det D\phi/\det J\bigr];
+\]
+for full symbols, $\mathrm{SP}_c[\re^{F/z}a\,\dd^nx]=\mathrm{SP}_{c'}[\re^{(F\circ\phi)/z}(a\circ\phi)\det(D\phi)\,\dd^ny]$ with the branch rule $\det(-J^{\mathrm T}\mathsf HJ)^{1/2}:=\det(J)\det(-\mathsf H)^{1/2}$. As $A$ is arbitrary, this covers analytic maps (through their Taylor series), formal maps and maps depending on parameters ($A=A_0\fps{u}$, or holomorphic in $u$ by \cref{lem:fsp-param}), including critical points that move with the parameter.
+\end{lem}
+
+\begin{proof}
+$\nabla(F\circ\phi)(c')=J^{\mathrm T}\nabla F(c)=0$ and $\Hess(F\circ\phi)(c')=J^{\mathrm T}\mathsf HJ+\sum_i(\de_iF)(c)\Hess\phi_i(c')=J^{\mathrm T}\mathsf HJ$. Translating, let $c=c'=0$.
+\emph{Linear maps.} For $\phi=J$ the covariance of $F\circ J$ is $J^{-1}CJ^{-\mathrm T}$ and its cubic part $F_{\geq3}\circ J$; \cref{lem:fsp-ring}~(v) gives $E_{zJ^{-1}CJ^{-\mathrm T}}[\re^{F_{\geq3}(Jy)/z}a(Jy)]=E_{zC}[\re^{F_{\geq3}/z}a]$, and $\det J/\det J=1$.
+\emph{Reduction.} Write $\phi=J\circ\psi$, $\psi:=J^{-1}\phi$ (local letter), so $D\psi(0)=1$ and $\det D\phi=\det J\det D\psi$; with $\tilde F:=F\circ J$ and $\tilde a:=a\circ J$ it suffices to show $\SPn_0[\tilde F;\tilde a]=\SPn_0[\tilde F\circ\psi;(\tilde a\circ\psi)\det D\psi]$.
+\emph{Maps tangent to the identity.} Write $\psi(y)=y+\chi(y)$, $\chi\in(y)^2$; for a variable $s$ put $\psi_s:=y+s\chi$, $J_s:=D\psi_s=1+sD\chi$ (invertible over $A[s]\fps{y}$), $b_s:=(\tilde a\circ\psi_s)\det J_s$ and $\cN(s):=\SPn_0[\tilde F\circ\psi_s;b_s]$. The phase $\tilde F\circ\psi_s$ has the critical point $0$ with the Hessian $\tilde{\mathsf H}$ of $\tilde F$ for all $s$, so $\cN(s)=E_{z\tilde C}[\exp(P_s/z)b_s]$ with $P_s:=\tilde F\circ\psi_s-\tilde F(0)-\frac12y^{\mathrm T}\tilde{\mathsf H}y$ and the fixed covariance $\tilde C=-\tilde{\mathsf H}^{-1}$. By \cref{lem:fsp-univ} each coefficient of $\cN$ is a polynomial in $s$, and $\cN'(s)=E_{z\tilde C}[\exp(P_s/z)(z^{-1}\de_s(\tilde F\circ\psi_s)b_s+\de_sb_s)]$. Put $\xi:=J_s^{-1}\chi$ (local letter). Then (a) $\de_s(\tilde F\circ\psi_s)=\sum_k\de_k(\tilde F\circ\psi_s)\xi_k$, both sides being $\sum_i(\de_i\tilde F)(\psi_s)\chi_i$, since $\de_k(\tilde F\circ\psi_s)=\sum_i(\de_i\tilde F)(\psi_s)(J_s)_{ik}$ and $J_s\xi=\chi$; and (b) $\de_sb_s=\sum_k\de_k(b_s\xi_k)$: with $\operatorname{adj}(J_s)=\det(J_s)J_s^{-1}$, $b_s\xi=(\tilde a\circ\psi_s)\operatorname{adj}(J_s)\chi$ and
+\[
+\textstyle\sum_k\de_k(b_s\xi_k)=\det(J_s)\sum_i(\de_i\tilde a)(\psi_s)\chi_i+(\tilde a\circ\psi_s)\bigl[\tr(\operatorname{adj}(J_s)D\chi)+\sum_i\chi_i\sum_k\de_k\operatorname{adj}(J_s)_{ki}\bigr],
+\]
+where the first term is $\det(J_s)\,\de_s(\tilde a\circ\psi_s)$, the trace is $\de_s\det J_s$ (Jacobi's formula, $\de_sJ_s=D\chi$) and the last sum vanishes (\cref{lem:fsp-piola}). By (a) and (b), $\cN'(s)=\SPn_0[\tilde F\circ\psi_s;\sum_k(\de_kh_k+z^{-1}\de_k(\tilde F\circ\psi_s)h_k)]$ with $h_k:=b_s\xi_k$, which vanishes by \cref{lem:fsp-ibp} over $A[s]$. So $\cN(1)=\cN(0)$. The full form follows from the branch rule, the critical values being equal.
+\end{proof}
+
+\begin{lem}[The uniformising map]\genusstatus{AI-proposed, unchecked}
+\label{lem:fsp-cfu}
+Let $\Bbbk$ be $\bbQ$ or $\bbQ(\zeta)$, $A:=\Bbbk\fps{u}$, $\psi(T;u)\in1+u\bbQ[T]\fps{u}$, $Y(X):=X\psi(X^5;u)$, $X_0\in\Bbbk$ with $X_0^5=1$, $Y_0:=Y(X_0)$, $f\in A[Y,Y^{-1}]$ and $\hat f:=f\circ Y$. Then $Y'(X_0)\in1+uA$, $X_0$ is a non-degenerate critical point of $\hat f$ over $A$ if and only if $Y_0$ is one of $f$, and then $\hat f(X_0)=f(Y_0)$ and, for every amplitude $\beta\in A\fps{Y-Y_0}\lser{\zh}$ and with $\zh$ in the role of $z$,
+\[
+\SPn_{X_0}\bigl[-\hat f;(\beta\circ Y)Y'/Y'(X_0)\bigr]=\SPn_{Y_0}[-f;\beta],\qquad\mathrm{SP}_{X_0}\bigl[\re^{-\hat f/\zh}(\beta\circ Y)Y'\,\dd X\bigr]=\mathrm{SP}_{Y_0}\bigl[\re^{-f/\zh}\beta\,\dd Y\bigr]
+\]
+in $A\lser{\zh}$, i.e.\ termwise in $u$, with the branch rule of \cref{lem:fsp-cov}.
+\end{lem}
+
+\begin{proof}
+At each order in $u$, $Y$ is a polynomial in $X$, so $Y(X_0+t)-Y_0\in tA\fps{t}$; and $Y'(X_0)=\psi(1;u)+5\de_T\psi(1;u)\in1+uA$. As $Y_0\in X_0+uA$ is a unit, $Y(X_0+t)^{-1}\in A\fps{t}$, so $\hat f(X_0+t)\in A\fps{t}$. Since $\hat f'(X_0)=f'(Y_0)Y'(X_0)$, and $\hat f''(X_0)=f''(Y_0)Y'(X_0)^2$ when $f'(Y_0)=0$, the equivalence holds; the rest is \cref{lem:fsp-cov} over $A$ for the map $X\mapsto Y(X)$ and the phase $-f$ at $Y_0$.
+\end{proof}
+
+\begin{lem}[Iterated stationary phase]\genusstatus{AI-proposed, unchecked}
+\label{lem:fsp-fubini}
+Let $x=(v,w)$, $v=(v_1,\dots,v_{n_1})$, $w=(w_1,\dots,w_{n_2})$, let $F\in A\fps{x-p}$ have the non-degenerate critical point $p=(v_0,w_0)$ over $A$, with Hessian $\mathsf H=\bigl(\begin{smallmatrix}\mathsf H_{vv}&\mathsf H_{vw}\\ \mathsf H_{wv}&\mathsf H_{ww}\end{smallmatrix}\bigr)$ and $\mathsf H_{vv}\in GL_{n_1}(A)$, let $a\in A\fps{x-p}\lser{z}$ and $A_w:=A\fps{w-w_0}$.
+
+(i) There is a unique $v_{\mathrm c}(w)$ in $v_0+((w-w_0)A_w)^{n_1}$ with $\de_vF(v_{\mathrm c}(w),w)=0$; the inner Hessian $\mathsf H_{vv}(w):=\de_v^2F(v_{\mathrm c}(w),w)$ lies in $GL_{n_1}(A_w)$, and $\mathsf H_{vv}(w_0)=\mathsf H_{vv}$.
+
+(ii) $F^\flat(w):=F(v_{\mathrm c}(w),w)$ has $\nabla F^\flat(w_0)=0$ and $\Hess F^\flat(w_0)=\mathsf S:=\mathsf H_{ww}-\mathsf H_{wv}\mathsf H_{vv}^{-1}\mathsf H_{vw}$, and $\det\mathsf H=\det\mathsf H_{vv}\det\mathsf S$; hence $\det\mathsf S\in A^\times$, and $w_0$ is a non-degenerate critical point of $F^\flat$.
+
+(iii) Let
+\[
+B(w;z):=\SPn_{v_{\mathrm c}(w)}[F(\cdot,w);a(\cdot,w)],\qquad\mathfrak b(w):=\bigl(\det\mathsf H_{vv}(w)/\det\mathsf H_{vv}\bigr)^{-1/2}
+\]
+be the inner series in $A_w\lser{z}$, computed over $A_w$, and the Fubini factor, a binomial series in $1+(w-w_0)A_w$. Then
+\[
+\SPn_p[F;a]=\SPn_{w_0}\bigl[F^\flat;\ \mathfrak b(w)\,B(w;z)\bigr];
+\]
+for full symbols,
+\[
+\mathrm{SP}_p\bigl[\re^{F/z}a\,\dd^{n_1}v\,\dd^{n_2}w\bigr]=\mathrm{SP}_{w_0}\bigl[\re^{F^\flat/z}(2\pi z)^{n_1/2}\det(-\mathsf H_{vv}(w))^{-1/2}B(w;z)\,\dd^{n_2}w\bigr],
+\]
+with $\det(-\mathsf H_{vv}(w))^{1/2}:=\det(-\mathsf H_{vv})^{1/2}\mathfrak b(w)^{-1}$ and $\det(-\mathsf H)^{1/2}:=\det(-\mathsf H_{vv})^{1/2}\det(-\mathsf S)^{1/2}$. So every splitting into an inner block with invertible Hessian and the rest computes the same total stationary phase; in particular two orders of iteration agree.
+\end{lem}
+
+\begin{proof}
+(i) \Cref{lem:fsp-ift} over $A_w$, $I=(w-w_0)$, for $v'\mapsto F(v_0+v',w)$: the gradient at $v'=0$ vanishes at $w_0$, and the Hessian is $\mathsf H_{vv}$ modulo $I$.
+(ii) $\nabla F^\flat(w)=\de_wF(v_{\mathrm c}(w),w)$, which vanishes at $w_0$; differentiating $\de_vF(v_{\mathrm c}(w),w)=0$ gives $Dv_{\mathrm c}(w_0)=-\mathsf H_{vv}^{-1}\mathsf H_{vw}$, so $\Hess F^\flat(w_0)=\mathsf H_{ww}+\mathsf H_{wv}Dv_{\mathrm c}(w_0)=\mathsf S$; and $\mathsf H=\bigl(\begin{smallmatrix}1&0\\ \mathsf H_{wv}\mathsf H_{vv}^{-1}&1\end{smallmatrix}\bigr)\diag(\mathsf H_{vv},\mathsf S)\bigl(\begin{smallmatrix}1&\mathsf H_{vv}^{-1}\mathsf H_{vw}\\0&1\end{smallmatrix}\bigr)$.
+(iii) \emph{Straightening.} $\Theta(v',w):=(v_{\mathrm c}(w)+v',w)$ has $\det D\Theta=1$; by \cref{lem:fsp-cov} the left side is $\SPn_{(0,w_0)}[F\circ\Theta;a\circ\Theta]$, while $B$, $F^\flat$ and $\mathsf H_{vv}(w)$ are unchanged (the inner data are only translated). So we may assume $\de_vF(0,w)=0$ for all $w$, and $v_0=w_0=0$; then $\mathsf H_{vw}=0$, $\mathsf S=\mathsf H_{ww}$ and $F^\flat(w)=F(0,w)$.
+\emph{Factorisation.} Expanding in $v$, $F(v,w)=F^\flat(w)+\frac12v^{\mathrm T}\mathsf H_{vv}(w)v+R(v,w)$, $R\in(v)^3$ over $A_w$. The total Hessian is $\diag(\mathsf H_{vv},\mathsf H_{ww})$ and the total cubic part is $F^\flat_{\geq3}(w)+\frac12v^{\mathrm T}\mathsf K(w)v+R$, with $F^\flat_{\geq3}:=F^\flat-F^\flat(0)-\frac12w^{\mathrm T}\mathsf H_{ww}w$ and $\mathsf K(w):=\mathsf H_{vv}(w)-\mathsf H_{vv}$, whose entries lie in $(w)$; each summand divided by $z$ has terms of weight $\geq1/2$. By \cref{lem:fsp-prod}, the linearity of $E^v$ over $\cR_{n_2}(A)$, the series in $w$ and $z$ (\cref{lem:fsp-ring}~(iv)), and \cref{lem:fsp-pg}~(iii) in $v$ with outer variables $w$,
+\[
+\SPn_0[F;a]=E^w_{-z\mathsf H_{ww}^{-1}}\Bigl[\re^{F^\flat_{\geq3}/z}\,E^v_{-z\mathsf H_{vv}^{-1}}\bigl[\re^{v^{\mathrm T}\mathsf Kv/(2z)}\re^{R/z}a\bigr]\Bigr]=E^w_{-z\mathsf H_{ww}^{-1}}\Bigl[\re^{F^\flat_{\geq3}/z}\,\mathfrak b(w)\,E^v_{-z\mathsf H_{vv}(w)^{-1}}\bigl[\re^{R/z}a\bigr]\Bigr].
+\]
+\emph{Rings.} At fixed $w$ the phase $v\mapsto F(v,w)-F^\flat(w)$ has Hessian $\mathsf H_{vv}(w)$ and cubic part $R(\cdot,w)$ at $v=0$, so $B(w;z)=E_{-z\mathsf H_{vv}(w)^{-1}}[\re^{R/z}a]$ in $\cR_{n_1}(A_w)$. The inner functional above is computed in the different ring $\cR_{n_1+n_2}(A)$; but $\re^{R/z}a$ is the same formal sum in both, both functionals act by the same rule on monomials, and each coefficient of $w^\beta z^k$ is the same finite sum. So the last expression is $\SPn_0[F^\flat;\mathfrak bB]$. The full form follows from the branch rules, as $F^\flat(w_0)=F(p)$ and $\det(-\mathsf H)=\det(-\mathsf H_{vv})\det(-\mathsf S)$.
+\end{proof}
+
+\input{sections/a_formalsp_5}

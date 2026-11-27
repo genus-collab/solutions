@@ -1,0 +1,29 @@
+% Section 8 (part 8): the glue. Last part of Section 8.
+
+\subsection{The glue}
+\label{sec:con-glue}
+
+For a colour-$0$ WKB function with polynomial coefficients write $\Phi(z,1):=\sum_n\mathrm{ph}_n(1)z^n$, its value at $u=1$, where $\zh=z$.
+
+\begin{thm}[The glue]
+\label{thm:con-glue}
+In $\bbQ(\zeta)\fps{z}$,
+\begin{equation}
+\label{eq:con-glue}
+h(z)\,\Dn_0(z)=\Phican(z,1);
+\end{equation}
+hence $\Dn_0\in1+z\bbQ\fps{z}$, and, by \cref{thm:con-Pb}, $\Dn_0(z)=\PhiSP(z,1)/h(z)$.
+\end{thm}
+
+\begin{proof}
+(a) By \cref{thm:gau-R0}~(ii)--(iv), the canonical flat amplitude $A^{\mathrm{can}}=\sum_nA^{\mathrm{can}}_nz^n$ has $A^{\mathrm{can}}_n=L^{4n+1}\mathrm{ph}^{\mathrm{can}}_n(L^{-5})\in\bbQ[L,L^{-1}]$, the $\mathrm{ph}^{\mathrm{can}}_n$ being polynomials. In $\bbQ(\zeta)\fps{q}$, with $L=(1-5^5q)^{-1/5}$, $A^{\mathrm{can}}$ and the actual amplitude $A^{\mathrm{act}}$ are colour-$0$ WKB columns of $\PFfive$ with the same exponential $\re^{u_0/z}$ and the same leading term $L$, so by formal WKB uniqueness (\cref{lem:gau-wkb}, with $\Bbbk=\bbQ(\zeta)$) they differ by a constant series in $1+z\bbQ(\zeta)\fps{z}$; hence every $A^{\mathrm{act}}_n$ lies in $\bbQ(\zeta)[L,L^{-1}]$. The ring $\bbQ(\zeta)[L,L^{-1}]\fps{z}$ embeds in $\bbQ(\zeta)\lser{s}\fps{\zh}$, where the comparison of \cref{thm:gau-R0} reads $A^{\mathrm{act}}\,\Dn_0=A^{\mathrm{can}}$; so the constant series is $\Dn_0$. (b) Evaluation at $L=1$, that is $u=1$, $q=0$, $\zh=z$, is a ring homomorphism $\bbQ(\zeta)[L,L^{-1}]\to\bbQ(\zeta)$; applied coefficientwise it gives $A^{\mathrm{act}}(z)|_{L=1}\,\Dn_0(z)=\Phican(z,1)$. As $(1-5^5q)^{-1/5}=1+O(q)$, $A^{\mathrm{act}}_n|_{L=1}$ is the coefficient of $q^0$ of $A^{\mathrm{act}}_n$, which is $h_n$ by (QRR) in the form of \cref{thm:set-qrr}, \eqref{eq:set-qrr}. As $h\in1+z\bbQ\fps{z}$ is invertible, $\Dn_0=\Phican(z,1)/h(z)$ has rational coefficients, and \cref{thm:con-Pb} gives the second form. The inputs used here are (QRR) and the actual rows with their WKB form, which rest on (M) and (G0) (\cref{thm:set-mirror,thm:set-G0}) through \cref{cor:set-cyclicPF5} and \cref{thm:gau-R0}; no other step of this section uses an input.
+\end{proof}
+
+\begin{cor}
+\label{cor:con-A2}
+$\Dn=1$ if and only if $\PhiSP(z,1)=h(z)$. By \cref{thm:con-Pa}~(iv), $\PhiSP(z,1)=c(z;1)$, the value at $L=1$ of the Laurent polynomials $c_n$; so the condition reads $c(z;1)=h(z)$ (\cref{cor:gam-equiv}).
+\end{cor}
+
+\begin{proof}
+By \cref{cor:gau-colours}, $\Dn_i(z)=\Dn_0(\zeta^{-i}z)$, so $\Dn=1$ if and only if $\Dn_0=1$; by \eqref{eq:con-glue} and \cref{thm:con-Pb}, $\Dn_0=1$ if and only if $\PhiSP(z,1)=h(z)$. By \cref{thm:con-Pa}~(iv), $c_n(1)=\mathrm{ph}^{\mathrm{SP}}_n(1)$.
+\end{proof}

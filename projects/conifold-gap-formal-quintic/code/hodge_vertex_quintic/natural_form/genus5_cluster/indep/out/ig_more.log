@@ -1,0 +1,14 @@
+p89 already stored: 985 inner graphs
+   supplement: 3 of the 20 package-heaviest graphs added (6339 s)
+   supplement E= 6: 130 graphs (775 s)
+   supplement E= 7: 100 graphs (777 s)
+   supplement E= 8:  92 graphs (777 s)
+   supplement E= 9:  61 graphs (777 s)
+   supplement E=10:  56 graphs (776 s)
+   supplement E=11:  31 graphs (743 s)
+SUPPLEMENT p89: 473 graphs, predicted 10964 CPU-s
+p61: complete strata E <= 5 and E = 12 that are done at p89: 459 graphs (24846 s)
+SAMPLE p61: 459 graphs, predicted 24846 CPU-s; pieces 19563
+wrote sample_sup89.txt (473 graphs)
+wrote sample_nat61b.txt (459 graphs)
+wrote sample_id61b.txt (459 graphs)

@@ -1,0 +1,16 @@
+g2_colours.py: T-system to t^10, exact over Q(zeta)
+  [PASS] colour 0: closing relation holds; F_0 = 1 - (3/20)t + (9/800)t^2 + (11571/80000)t^3 - (2415609/6400000)t^4 + .. 
+  [PASS] colour 0: F_b(0) = (1, -1, -1, 1, 1) 
+  [PASS] colour 1: unique solution (pivot 4n zeta^(4i)); F^(1)_b(t) = zeta^(1 b) F_b(zeta^-1 t) 
+  [PASS] colour 1: control: zeta^(1(b+1)) F_b(zeta^-1 t) (the normalised rows) is NOT the T-system solution 
+  [PASS] colour 2: unique solution (pivot 4n zeta^(4i)); F^(2)_b(t) = zeta^(2 b) F_b(zeta^-2 t) 
+  [PASS] colour 2: control: zeta^(2(b+1)) F_b(zeta^-2 t) (the normalised rows) is NOT the T-system solution 
+  [PASS] colour 3: unique solution (pivot 4n zeta^(4i)); F^(3)_b(t) = zeta^(3 b) F_b(zeta^-3 t) 
+  [PASS] colour 3: control: zeta^(3(b+1)) F_b(zeta^-3 t) (the normalised rows) is NOT the T-system solution 
+  [PASS] colour 4: unique solution (pivot 4n zeta^(4i)); F^(4)_b(t) = zeta^(4 b) F_b(zeta^-4 t) 
+  [PASS] colour 4: control: zeta^(4(b+1)) F_b(zeta^-4 t) (the normalised rows) is NOT the T-system solution 
+  [PASS] lem:set-hrot: w_i = zeta^i w_0 as multisets (so h_(w_i)(z) = h_(w_0)(zeta^-i z)) 
+  [PASS] control: the multiset {zeta^i - zeta^j} U {-5} is not covariant 
+  [PASS] colour covariance of P_can: every stored entry (b+k, b) has phase zeta^(i(a-b-k)) = 1 (gradedness) 
+  [PASS] control: P_can (1 + z) is not covariant: its z^1 term contains P_can,0 at (a, a), phase zeta^(-i) != 1 
+RESULT: ALL CHECKS PASSED

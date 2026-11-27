@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------------------------------------
+genus3_pi_meaning: Pi = Ad(M_0)^-1 (zhat X), p = 2^61-1
+PASS (1) Pi_A: M_0 Delta M_0^-1 vanishes in the zhat-orders 2, 3, 4, 5
+PASS (1) Pi_A: the order-1 part X has Fourier support [(0, 1), (1, 0), (2, 4), (4, 2)], i.e. Xhat(3, 3) = 0 (no H (x) H component)
+      Xhat(2, 4)/25 = [1581100550906936185 mod p]  [1 (x) H^2 + H^2 (x) 1],  Xhat(0, 1)/25 = [1877663962913604742 mod p]  [H^3 (x) H^4 + H^4 (x) H^3]
+PASS (1) Pi_B: M_0 Delta M_0^-1 vanishes in the zhat-orders 2, 3, 4, 5
+PASS (1) Pi_B: the order-1 part X has Fourier support [(0, 1), (1, 0), (2, 4), (4, 2)], i.e. Xhat(3, 3) = 0 (no H (x) H component)
+      Xhat(2, 4)/25 = [750116058436336682 mod p]  [1 (x) H^2 + H^2 (x) 1],  Xhat(0, 1)/25 = [1555726950777357269 mod p]  [H^3 (x) H^4 + H^4 (x) H^3]
+PASS (2) string generator Xhat(2,4): X symmetric, Delta_X = M_0^-1 (zhat X) M_0 is in sp and circulant, and ALL N_1-conditions vanish (4 linear rows, 5 quadrics, 9 cubics)
+PASS (3) string generator Xhat(2,4): X^2 = 0
+      circulant coordinates of Delta_X (orders 1, 2): ['c1_0: 2/25', 'c1_1: [977763000420556728 mod p]', 'c1_2: [469209212322765297 mod p]', 'c2_1: [1661887954800655246 mod p]', 'c2_2: [323949449478722819 mod p]']
+PASS (2) generator Xhat(0,1): X symmetric, Delta_X = M_0^-1 (zhat X) M_0 is in sp and circulant, and ALL N_1-conditions vanish (4 linear rows, 5 quadrics, 9 cubics)
+PASS (3) generator Xhat(0,1): X^2 != 0, X^3 = 0
+      circulant coordinates of Delta_X (orders 1, 2): ['c1_0: 2/25', 'c1_1: [837889228785120958 mod p]', 'c1_2: [906510847737259938 mod p]', 'c2_1: [746301817187825958 mod p]', 'c2_2: [1156484112241011815 mod p]']
+PASS (2) random combination: X symmetric, Delta_X = M_0^-1 (zhat X) M_0 is in sp and circulant, and ALL N_1-conditions vanish (4 linear rows, 5 quadrics, 9 cubics)
+PASS (2) random combination: X symmetric, Delta_X = M_0^-1 (zhat X) M_0 is in sp and circulant, and ALL N_1-conditions vanish (4 linear rows, 5 quadrics, 9 cubics)
+PASS (2) the excluded generator Xhat(3, 3) (H (x) H): Delta_X is circulant but violates the conditions: ['L2_0', 'L2_1', 'J3_0', 'J3_1', 'q_3', 'q_6', 'q_7', 'q_8', 'q_17', 'c_4', 'c_9', 'c_10', 'c_11', 'c_12', 'c_18', 'c_19', 'c_20', 'c_32']
+PASS the low parts (orders 1..3) and the order-4 parts of the two generators span the same plane as the stored A, B
+GENUS3_PI_MEANING ALL CHECKS PASSED

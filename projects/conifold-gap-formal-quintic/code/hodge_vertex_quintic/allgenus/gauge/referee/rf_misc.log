@@ -1,0 +1,8 @@
+PASS (V1)(i) z d/dv I_m = -I_{m-1}, m = -6..11, through z^-29
+PASS (V1)(ii) m z I_{m-1} - I_{m+3} + v I_{m-2} = 0, m = -6..11, through z^-28
+PASS (V1) Y^C solves the model system z d/dv Y_b = bmod_b Y_{b+1} (no negative power of v from -1/v Y_2), through z^-29
+PASS (V1) Y^C(v = 0) = -e_1
+PASS (F) (-1)^m eps_b [t^-m] y_b = 1/(4^q q! (m-q)!), support b = 1 - m mod 5, phase zeta^(-i(b+1)) = zeta^(i(m-2)), m <= 80: []
+PASS (C) stored c(z): 2 c_10 - c_5^2 = -18223115111903/15543419062500000 (the z^10 symplecticity defect of the stored gauge): -18223115111903/15543419062500000
+PASS (C) canonical pi_8 = stored pi_8 + c_5 pi_3 (c_5 = 43397/807975000) = 1416472237/725359556250000
+RF_MISC: ALL PASS

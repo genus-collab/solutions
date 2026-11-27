@@ -1,0 +1,8 @@
+﻿  [PASS] (1,1)->(1,2) tensor identity, all m_i <= 40: 40 tuples (7 non-zero LHS), failures: + 0, controls - 7, no-xi 7
+  [PASS] (2,1)->(2,2) tensor identity, all m_i <= 70: 70 tuples (11 non-zero LHS), failures: + 0, controls - 11, no-xi 11
+  [PASS] (3,1)->(3,2) tensor identity, all m_i <= 100: 100 tuples (15 non-zero LHS), failures: + 0, controls - 15, no-xi 15
+  [PASS] (4,1)->(4,2) tensor identity, all m_i <= 130: 130 tuples (19 non-zero LHS), failures: + 0, controls - 19, no-xi 19
+  [PASS] (1,2)->(1,3) tensor identity, all m_i <= 50: 1275 tuples (248 non-zero LHS), failures: + 0, controls - 246, no-xi 246
+  [PASS] (2,2)->(2,3) tensor identity, all m_i <= 80: 3240 tuples (624 non-zero LHS), failures: + 0, controls - 623, no-xi 623
+  [PASS] (3,2)->(3,3) tensor identity, all m_i <= 110: 6105 tuples (1170 non-zero LHS), failures: + 0, controls - 1168, no-xi 1168
+  total 67.7 s (P = 2^61-1)

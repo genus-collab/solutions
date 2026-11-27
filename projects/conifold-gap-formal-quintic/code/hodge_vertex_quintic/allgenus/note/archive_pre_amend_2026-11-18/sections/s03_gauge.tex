@@ -1,0 +1,86 @@
+% Section 3, part 1 of 8; label prefix: gau. The main file inputs only this part; each part inputs the next.
+% Part 1: introduction; the cyclic form of PF4 (objects, statements, the conifold expansion).
+% Part 2: the quintic system and the pulled-back model; Theorem U (notation, statement).
+% Part 3: the commutant, lifting, the scalar equation.
+% Part 4: proof of Theorem U, the leading term, the Z/5-degree, graded gauges.
+% Part 5: (R1), the diagonal, the vanishing solutions.
+% Part 6: the gauge identity (G), the canonical gauge, symplecticity, HPF.
+% Part 7: polynomiality, formal WKB uniqueness, colour covariance of the model columns and of the actual rows.
+% Part 8: the normalisation series D, the rows in the ring, the colours of D, (F_g).
+% The proofs of the cyclic form of PF4 are in the appendix file a2_cyclicPF4. No new macros.
+\section{Cyclic systems, Theorem U and the canonical gauge}
+\label{sec:gau}
+
+We compare the cyclic systems of the formal quintic at the conifold point and of the model: both have one simple pole and equal products (\cref{sec:gau-cyc,sec:gau-systems}), their gauges form a free module of rank one (Theorem~U, \cref{sec:gau-U}), (G) singles out the symplectic canonical gauge $\Pc$ (\cref{sec:gau-van}), and $\Pc$ applied to the model columns is the matrix of rows times the normalisation series $\Dn$ (\cref{sec:gau-R0}).
+
+\emph{Conventions.} $\Dq=q\,\dd/\dd q=-(1-u)\,\dd/\dd u$ (\cref{def:set-genus0,def:set-points}); for a series in $u$ a prime denotes $\dd/\dd u$; $z$ is a constant, and $z\de_u$ is $z\,\dd/\dd u$ at fixed $z$, so $z\Dq=-(1-u)z\de_u$. $E_{ab}$ ($a,b\in\bbZ/5$) are the matrix units and $\mathbf e_a$ the standard basis vectors; solutions, gauges and rows are in lowered components (\cref{def:set-rows}).
+
+%-------------------------------------------------------------------------------
+\subsection{The cyclic form of the fourth-order operator}
+\label{sec:gau-cyc}
+
+In this subsection $\PFfour=\sum_{k=0}^4A_k\Dq^k$ is written in the variable $u$ (\cref{def:set-genus0}):
+\[
+A_4=u,\qquad A_3=-2(1-u),\qquad A_2=-\tfrac75(1-u),\qquad A_1=-\tfrac25(1-u),\qquad A_0=-\tfrac{24}{625}(1-u),
+\]
+and we use $\Dq(1-u)=1-u$ and $\Dq u=-(1-u)$ throughout. The proofs of \cref{lem:gau-confexp,thm:gau-cyc,cor:gau-cycsys} are in \cref{sec:gau-cycproof}.
+
+\begin{defn}[Objects of the cyclic-form theorem]
+\label{def:gau-conc}
+\begin{enumerate}
+\item $\bbK:=\bbQ\lser{u}$ with the derivation $\Dq$, and $\bbK[\ell]$ is the polynomial ring in an indeterminate $\ell$ with the unique extension of $\Dq$ for which $\Dq\ell=1-u^{-1}$ (so $\ell$ plays the role of $\log u$). $\bbK[\Dq]$ is the ring of differential operators $\sum_ka_k\Dq^k$, $a_k\in\bbK$, with $\Dq\circ a-a\circ\Dq=\Dq(a)$; it acts on every differential ring that extends $(\bbK,\Dq)$.
+\item $f_0,f_1,f_2\in\bbQ\fps u$ are the solutions of $\PFfour$ with $f_k=u^k+O(u^3)$, and $\varpi_1=f_1+\gamma f_2$, $\gamma=\frac7{10}$, is the vanishing period (\cref{lem:set-frobbasis}). $y_3:=\varpi_1\ell+\rho_3\in\bbK[\ell]$, $\rho_3\in u^3\bbQ\fps u$, is the logarithmic solution of \cref{lem:set-frobbasis}~(iii), whose indeterminate $\ell$ is the one above; thus $\PFfour y_3=0$ in $\bbK[\ell]$. Put $\mathcal S:=\operatorname{span}_\bbQ(f_0,f_1,f_2,y_3)\subset\bbK[\ell]$. An element of $\mathcal S$ lies in $\bbK$ if and only if its coefficient of $y_3$ vanishes, so $\mathcal S\cap\bbK=\operatorname{span}(f_0,f_1,f_2)$, the space of power-series solutions of $\PFfour$.
+\item For $\cP=\sum_{k\leq4}a_k\Dq^k$ with coefficients $a_k$ in a differential ring $(\cR_0,\Dq)$, for instance $\cP\in\bbK[\Dq]$, the \emph{formal adjoint} is $\cP^*:=\sum_k(-\Dq)^k\circ a_k$, and the \emph{concomitant} of $\cP$ is the bilinear differential expression
+\[
+\Conc_\cP(f,g):=\sum_{k=1}^4\sum_{j=0}^{k-1}(-1)^j\,\Dq^j(a_kg)\,\Dq^{k-1-j}f .
+\]
+We write $\Conc:=\Conc_{\PFfour}$ and expand it as $\Conc(f,g)=\sum_{a,b=0}^3\Dq^af\,\Jet_{ab}\,\Dq^bg$ with $\Jet_{ab}\in\bbQ[u]\subset\bbK$; $\Jet=(\Jet_{ab})$ is the \emph{jet matrix}. As the $A_k$ lie in $\bbQ[u]$, $\PFfour$, $\PFfour^*$ and $\Conc$ act on every differential ring containing $(\bbQ[u],\Dq)$: on $\bbK[\ell]$, $\bbQ\fps q[\logq]$ ($u=1-5^5q$), $\Nring$ ($u=L^{-5}$) and $\bbQ\lser s$ (\cref{def:set-confexp,lem:gau-confexp,cor:gau-rowsNN}).
+\item For a basis $\mathbf x=(x_0,\dots,x_3)$ of $\mathcal S$, the \emph{Gram matrix} is $\Conc_{\mathbf x}:=(\Conc(x_i,x_j))_{i,j=0}^3$ and the \emph{Wronskian matrix} is $\Wr_{\mathbf x}:=(\Dq^ax_i)_{a,i=0}^3$ (row $a$, column $i$), whose determinant is the Wronskian $\Wr(x_0,\dots,x_3)$ in the sense of \cref{lem:set-wronskian}. The basis $\mathbf f:=(f_0,f_1,f_2,y_3)$ is the standard one.
+\item $\sh$ is the $\bbK$-algebra automorphism of $\bbK[\ell]$ with $\sh(\ell)=\ell+1$.
+\item For $t\in\bbK$ with $\Dq t\neq0$, $\de_t:=(\Dq t)^{-1}\Dq$, a derivation of $\bbK[\ell]$. For a basis $\mathbf x$ of $\mathcal S$ (with $\Conc_{\mathbf x}$ invertible, \cref{lem:gau-conc}) the \emph{transversality sums} are $\Upsilon_k:=\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}\,x_i\,\Dq^kx_j$ and, for $y_0\in\bbK^\times$, $\widetilde\Upsilon_k:=\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}\,(x_i/y_0)\,\de_t^k(x_j/y_0)$ ($k\geq0$), elements of the fraction field of $\bbK[\ell]$.
+\item For $y_0,y_1\in\bbK$ with $y_0\neq0$ and $t:=y_1/y_0$ not constant, the \emph{cyclic operator} is
+\begin{equation}
+\label{eq:gau-Mcyc}
+\Mcyc(y_0,y_1):=\frac1{y_0}\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\bigl(u\,y_0^2(\Dq t)^2\bigr)\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\frac1{y_0}\ \in\bbK[\Dq].
+\end{equation}
+\end{enumerate}
+\end{defn}
+
+\begin{lem}[The conifold expansion is a ring map]
+\label{lem:gau-confexp}
+Let $(\alpha,\beta)\in\bbQ^2$, $\varpi_0=f_0+\alpha\varpi_1+\beta f_2$ and $\tc=\varpi_1/\varpi_0$ (\cref{def:set-frames}), and extend $\Dq$ from $\bbK$ to $\bbQ\lser s$, $s^5=u$, by $\Dq s=-(1-s^5)/(5s^4)$. The assignment of \cref{def:set-confexp} on the generators of $\Nring$ extends to a unique ring homomorphism $\Cexp_{\alpha,\beta}\colon\Nring\to\bbQ\lser s$, and $\Cexp_{\alpha,\beta}\circ\Dq=\Dq\circ\Cexp_{\alpha,\beta}$. For the elements $C_0=c_0$, $I_1=c_0\logq+i_0$, $T=I_1/C_0$ and $C_1=\mathsf W/c_0^2$ of $\Nring$ (\cref{def:set-confexp}), which evaluate to the functions of \cref{def:set-genus0},
+\[
+\Cexp_{\alpha,\beta}(C_0)=\varpi_0,\qquad \Cexp_{\alpha,\beta}(I_1)=\varpi_1,\qquad \Cexp_{\alpha,\beta}(\mathsf W)=\varpi_0\Dq\varpi_1-\varpi_1\Dq\varpi_0=\varpi_0^2\,\Dq\tc ,
+\]
+so the conifold expansion sends $C_0$, $I_1$, $T$ and $C_1$ to $\varpi_0$, $\varpi_1$, $\tc$ and $\Dq\tc$.
+\end{lem}
+
+\begin{thm}[The cyclic form of $\PFfour$, (CYC)]
+\label{thm:gau-cyc}
+Let $y_0\in\mathcal S\cap\bbK$ be non-zero and not proportional to $\varpi_1$, and let $\varpi_1$ be taken at any non-zero scale. Then, as operators in $\bbK[\Dq]$,
+\begin{equation}
+\label{eq:gau-cyc}
+\PFfour=\Mcyc(y_0,\varpi_1)=\frac1{y_0}\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\bigl(u\,y_0^2(\Dq t)^2\bigr)\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\frac1{y_0},\qquad t=\frac{\varpi_1}{y_0}.
+\end{equation}
+More generally $\PFfour=\Mcyc(y_0,y_1)$ for every basis $(y_0,y_1)$ of an isotropic plane in $\mathcal S\cap\bbK$; these are the planes that contain $\varpi_1$ (\cref{lem:gau-iso}~(iii)). $\Mcyc(y_0,y_1)$ is unchanged under $y_0\mapsto\mu y_0$, $y_1\mapsto\mu'y_1$ ($\mu,\mu'\in\bbQ^\times$) and $y_1\mapsto y_1+ay_0$ ($a\in\bbQ$). In particular $\PFfour=\Mcyc(\varpi_0,\varpi_1)$ in every conifold frame of \cref{def:set-frames}.
+\end{thm}
+
+\begin{cor}[The cyclic system is $\PFfive$]
+\label{cor:gau-cycsys}
+Let $(y_0,y_1)$ be as in \cref{thm:gau-cyc}, $t=y_1/y_0$, and
+\[
+\kappa=(\kappa_0,\dots,\kappa_4):=\Bigl(\Dq t,\ \frac{L^5}{y_0^2(\Dq t)^2},\ \Dq t,\ y_0,\ y_0\Bigr),\qquad L^5:=u^{-1},
+\]
+units of $\bbK$. Let $(\cR,\Dq)$ be a differential ring extending $(\bbK,\Dq)$ and $z\in\cR$ with $\Dq z=0$.
+\begin{enumerate}
+\item For $Y_0,\dots,Y_4\in\cR$ the cyclic system
+\begin{equation}
+\label{eq:gau-system}
+z\Dq Y_a=\kappa_aY_{a+1}\qquad(a\in\bbZ/5)
+\end{equation}
+holds if and only if $y_0Y_0$ solves $\PFfive$ and $Y_{a+1}=z\Dq Y_a/\kappa_a$ for $a=0,\dots,3$.
+\item If $z$ is invertible in $\cR$, then for every $w\in\cR$ the same holds with $z\Dq$ replaced by $z\Dq+w$ in \eqref{eq:gau-system} and in $\PFfive$.
+\end{enumerate}
+\end{cor}
+
+\input{sections/s03_gauge_2}

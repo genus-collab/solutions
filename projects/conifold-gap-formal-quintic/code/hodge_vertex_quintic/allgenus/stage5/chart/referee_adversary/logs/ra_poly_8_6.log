@@ -1,0 +1,10 @@
+ra_poly: polynomial shape of c_n from its Taylor data at L = 1, n <= 8, 6 check coefficients; log logs/ra_poly_8_6.log
+PASS n = 1: fit on 1 Taylor coefficients, confirmed on 21 more; fitted polynomial at L = 2 equals c_n(2) = -12/5: True
+PASS n = 2: fit on 2 Taylor coefficients, confirmed on 19 more; fitted polynomial at L = 2 equals c_n(2) = 72/25: True
+PASS n = 3: fit on 3 Taylor coefficients, confirmed on 17 more; fitted polynomial at L = 2 equals c_n(2) = 354278/625: True
+PASS n = 4: fit on 4 Taylor coefficients, confirmed on 15 more; fitted polynomial at L = 2 equals c_n(2) = -73040834/3125: True
+PASS n = 5: fit on 5 Taylor coefficients, confirmed on 13 more; fitted polynomial at L = 2 equals c_n(2) = 11495493197/31500: True
+PASS n = 6: fit on 5 Taylor coefficients, confirmed on 12 more; fitted polynomial at L = 2 equals c_n(2) = 261514321187317/8203125: True
+PASS n = 7: fit on 6 Taylor coefficients, confirmed on 10 more; fitted polynomial at L = 2 equals c_n(2) = -150964254159761614/41015625: True
+PASS n = 8: fit on 7 Taylor coefficients, confirmed on 8 more; fitted polynomial at L = 2 equals c_n(2) = 207637193026878954427/1230468750: True
+RA_POLY 8 6: ALL CHECKS PASSED   (1 s)

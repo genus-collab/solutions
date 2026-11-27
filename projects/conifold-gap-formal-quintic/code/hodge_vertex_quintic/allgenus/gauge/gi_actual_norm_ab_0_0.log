@@ -1,0 +1,27 @@
+gi_actual_norm: frame (0, 0), referee rows zhat <= 24, u < 18; canonical gauge from the periods over Q
+   canonical gauge (k <= 24) in 42 s; stored normalisation c(z) = P^s_11(0, z) = (1) z^0 + (-43397/807975000) z^5 + (-765368951400317/1305647201250000000) z^10 + ...
+   referee rows: own checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}
+-- p = 2^89-1: actual Ghat from the referee rows in 5 s
+PASS [2^89-1] referee rows pass their own checks; Psi0 = Qhat(u = 0, zhat = 0) = eps_b zeta^(i(b+1))
+PASS [2^89-1] (0) Ghat^act is Z/5-graded (a = b + k) and [zhat^k] Ghat^act_{b+k,b} = O(u^mu(b,k)) for all k <= 24
+PASS [2^89-1] (1) Ghat^act = Ghat^can: all 1058 slots [zhat^k u^N] (k <= 24, N < 18, N >= mu(b,k); 993 of them non-zero) agree: []
+PASS [2^89-1] (C) control: the stored normalisation P^s differs from the actual gauge (603 slots), first at (k, a, b, N) = (5, 0, 0, 4)
+   [2^89-1] normalisation slots [u^4q zhat^5q] of Ghat_11, Ghat_22 (= p_{5q,1}(0), p_{5q,2}(0)); stored p^s_{5q,1}(0) for contrast:
+      z^5 : actual (0, 0)   stored 19000536807916566994910400   INDEPENDENT test (odd multiple of z^5)
+      z^10: actual (0, 0)   stored 442749211570456110217597328   forced by symplecticity from the lower odd orders
+      z^15: actual (0, 0)   stored 528827419419193508442188151   INDEPENDENT test (odd multiple of z^5)
+      z^20: actual (0, 0)   stored 455762090831304956079311475   forced by symplecticity from the lower odd orders
+PASS [2^89-1] (2) c^act(z) = P^act_11(0, z) = P^act_22(0, z) = 1 through z^20 (z^5, z^15 independent; z^10, z^20 forced)
+   referee rows: own checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}
+-- p = 2^61-1: actual Ghat from the referee rows in 5 s
+PASS [2^61-1] referee rows pass their own checks; Psi0 = Qhat(u = 0, zhat = 0) = eps_b zeta^(i(b+1))
+PASS [2^61-1] (0) Ghat^act is Z/5-graded (a = b + k) and [zhat^k] Ghat^act_{b+k,b} = O(u^mu(b,k)) for all k <= 24
+PASS [2^61-1] (1) Ghat^act = Ghat^can: all 1058 slots [zhat^k u^N] (k <= 24, N < 18, N >= mu(b,k); 993 of them non-zero) agree: []
+PASS [2^61-1] (C) control: the stored normalisation P^s differs from the actual gauge (603 slots), first at (k, a, b, N) = (5, 0, 0, 4)
+   [2^61-1] normalisation slots [u^4q zhat^5q] of Ghat_11, Ghat_22 (= p_{5q,1}(0), p_{5q,2}(0)); stored p^s_{5q,1}(0) for contrast:
+      z^5 : actual (0, 0)   stored 437460911312933429   INDEPENDENT test (odd multiple of z^5)
+      z^10: actual (0, 0)   stored 619988681374956788   forced by symplecticity from the lower odd orders
+      z^15: actual (0, 0)   stored 1446895587556228757   INDEPENDENT test (odd multiple of z^5)
+      z^20: actual (0, 0)   stored 1311114847850597764   forced by symplecticity from the lower odd orders
+PASS [2^61-1] (2) c^act(z) = P^act_11(0, z) = P^act_22(0, z) = 1 through z^20 (z^5, z^15 independent; z^10, z^20 forced)
+GI_ACTUAL_NORM ab_0_0: ALL CHECKS PASSED   (52 s)

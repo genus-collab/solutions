@@ -1,0 +1,9 @@
+PASS (i) Sum of the Euler-substitution exponents -w over the six factors = -1, identically in sigma   (['-1', '0', '0', '0']) sigma^0 z^-0
+PASS (ii) order (a): Sum (a/z + m) over the six inner Euler integrals = +1, identically in sigma (cancels z^-1)   (['1', '0', '0', '0']) sigma^0 z^-0
+PASS (iii) coefficient of log z in the six Stirling forms = 2, identically in sigma (elementary factor z^2)   (['2', '0', '0', '0']) sigma^0 z^-0
+PASS (iv) q = 0 chart: Sum (a/z + m) = +1 (a = 5, m = 1; a = zeta^j - 1, m = 0)   (['1', '0', '0', '0']) sigma^0 z^-0
+PASS (iv) step (e): the q^d term has the same power z^(+1) as the q^0 term, d = 0..8
+PASS control: j = 0 factor dropped gives a sigma-dependent power of z   (['-1', '0', '0', '0']) sigma^0 z^-0 + (['1', '0', '0', '0']) sigma^0 z^-1 + (['-1', '0', '0', '0']) sigma^1 z^-1
+PASS control: Gamma(1 + 4s) in place of Gamma(1 + 5s) gives a sigma-dependent power of z   (['-1', '0', '0', '0']) sigma^0 z^-0 + (['1', '0', '0', '0']) sigma^1 z^-1
+note: Gamma(5s) (measure dy/y) gives the exponent 0: still sigma-free, only the constant power changes
+CH_ZPOW: ALL CHECKS PASSED

@@ -1,0 +1,47 @@
+==========================================================================================
+g5_validate: python 3.14.6, 13 processes, host ?
+PASS Python >= 3.8: 3.14.6
+PASS graph lists: 7, 42, 379, 4555 graphs of genus 2..5: {2: 7, 3: 42, 4: 379, 5: 4555}
+PASS |Aut| of the 428 graphs of genus 2-4 = brute-force count
+PASS cost table of genus 5 refers to the same graphs (genera, edges) index by index
+PASS genus 2, 2^89-1, nat: 7 outer graphs equal the stored table through u^2 (1 s)
+PASS genus 2, 2^89-1, M0: 6 outer graphs equal the stored table through u^1 (0 s)
+PASS genus 2, 2^61-1, nat: 7 outer graphs equal the stored table through u^2 (0 s)
+PASS genus 2, 2^61-1, M0: 6 outer graphs equal the stored table through u^1 (0 s)
+PASS genus 3, 2^89-1, nat: 42 outer graphs equal the stored table through u^3 (4 s)
+PASS genus 3, 2^89-1, M0: 42 outer graphs equal the stored table through u^5 (4 s)
+PASS genus 3, 2^89-1, id: 42 outer graphs equal the stored table through u^5 (2 s)
+PASS genus 3, 2^61-1, nat: 42 outer graphs equal the stored table through u^3 (4 s)
+PASS genus 3, 2^61-1, M0: 42 outer graphs equal the stored table through u^5 (4 s)
+PASS genus 3, 2^61-1, id: 42 outer graphs equal the stored table through u^5 (2 s)
+PASS genus 4, g4_89_nat: all 379 outer graphs equal the table of record through u^5 (66 s wall)
+PASS all 379 inner graphs are covered by the part files: 0 missing, e.g. []
+PASS every entry of E_out = E_R - E_M is O(u)
+PASS [u^0] E_R(a, b) = Eh_0(a, b) for all (a, b), all colours
+   vertex graph in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS VERTEX GRAPH: (c) t_c^-6 + 0 + ... + 0 t_c^-1 (exact for any maxout)
+   vertex graph leading coefficient c_4 = 1/180000; pattern |B_2g|/(2g(2g-2)5^(g-1)) = 1/180000: EQUAL
+   outer graphs tested for regularity: 378 (E <= all); with a stored row (some non-zero piece), by E: [(1, 3), (2, 7), (3, 18), (4, 24), (5, 16)]
+PASS REGULARITY: every tested outer graph with edges is O(u^6)
+   total over all graphs: ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000']
+   total in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS GAP: total = (c) t_c^-6 + 0 + ... + 0 t_c^-1
+   c_4 = 1/180000; pattern |B_2g|/(2g(2g-2)5^(g-1)) = 1/180000: EQUAL
+PASS genus 4, g4_89_nat: the collect checks pass and c_4 = 1/180000 matches the Bernoulli pattern
+PASS genus 4, g4_61_nat: all 379 outer graphs equal the table of record through u^5 (68 s wall)
+PASS genus 4, g4_89_id: all 379 outer graphs equal the table of record through u^5 (12 s wall)
+PASS genus 4, g4_61_id: all 379 outer graphs equal the table of record through u^5 (13 s wall)
+PASS genus 4, g4_89_M0: all 379 outer graphs equal the table of record through u^5 (64 s wall)
+PASS genus 4, g4_89_nat_t5: all 379 outer graphs equal the table of record through u^5 (68 s wall)
+PASS genus 4, g4_89_nat_ab1o3_m2o7: all 379 outer graphs equal the table of record through u^5 (67 s wall)
+PASS genus 4, g4_61_nat_ab1o3_m2o7: all 379 outer graphs equal the table of record through u^5 (72 s wall)
+PASS genus 5 set-up, 2^89-1 (6 s): Split assertions, frozen symbol, E_out = O(u) for all 78 keys, tau identity
+PASS genus 5 set-up, 2^61-1 (6 s): Split assertions, frozen symbol, E_out = O(u) for all 78 keys, tau identity
+   calibration (wall 24 s): {808: '8.8 s (ref 10.8 s)', 1109: '18.1 s (ref 20.9 s)', 4511: '2.8 s (ref 3.5 s)'}; machine factor f = 0.84 (cluster time / reference time)
+   NTASKS =  25: heaviest task 1.56 h, mean 1.56 h on this machine (estimate x f)
+   NTASKS =  50: heaviest task 0.78 h, mean 0.78 h on this machine (estimate x f)
+   NTASKS = 100: heaviest task 0.59 h, mean 0.39 h on this machine (estimate x f)
+   NTASKS = 200: heaviest task 0.59 h, mean 0.20 h on this machine (estimate x f)
+   total CPU per full natural-M run on this machine: 39 h (estimate x f)
+   validation wall time 490 s
+G5_VALIDATE ALL CHECKS PASSED

@@ -1,0 +1,14 @@
+rf_struct (referee, independent): field 2^89-1, n <= 1000; log logs/rf_struct_89_1000.log
+   h_n (n <= 1000) and model rows in 0 s
+   n = 100 in 0 s
+   n = 200 in 0 s
+   n = 300 in 1 s
+   n = 500 in 1 s
+   n = 1000 in 3 s
+PASS T1 (H): Phi(zhat, 1) = h at all 800 orders n <= 1000 with 5 not | n: []
+PASS T2 deg ph_n = floor(4n/5) (3 <= n <= 1000), ph_1 = [402330512767748589342215372], ph_2 = [526898229220839979503939747] constant: []
+PASS T3 ph_n(0) = F_(0,n) of the model, n <= 1000: []
+PASS T4 resonances: 0 of 200 multiples of 5 had a right-hand side reaching u^(4n/5) (all unobstructed)
+PASS T6 orbifold lemma: for -300 <= e <= -1 every T_j(s^e), j = 1..5, has only s-exponents <= -1 (P maps x Q[x][z] to itself, x = 1/s); with T_1 this forces deg ph_n <= 4n/5 and trivial resonances for ALL n: []
+PASS T7 prod_(k=1..5)(5M + kz) x^m has x-valuation >= 6 for m = 1..5 (the orbifold indicial roots 1..5): valuations [6, 6, 6, 6, 6]
+RF_STRUCT 2^89-1 n<=1000: ALL CHECKS PASSED   (3 s)

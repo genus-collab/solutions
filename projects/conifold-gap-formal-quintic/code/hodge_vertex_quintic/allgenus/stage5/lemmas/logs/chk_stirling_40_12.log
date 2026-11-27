@@ -1,0 +1,25 @@
+chk_stirling: Lemma L3 through z^40 at a = 1, z^12 at a = 3/7 and -2; exact over Q; log logs/chk_stirling_40_12.log
+     Wick computation at a = 1 through z^40: 1.4 s
+PASS L3 a = 1: SP of x^(a/z-2) e^(-x/z) dx/x  and of  x^(a/z-3) e^(-x/z) dx  = St_-2(z) through z^40   z^1, z^2: 37/12, 2089/288
+PASS L3 a = 1: SP of x^(a/z-1) e^(-x/z) dx/x  and of  x^(a/z-2) e^(-x/z) dx  = St_-1(z) through z^40   z^1, z^2: 13/12, 313/288
+PASS L3 a = 1: SP of x^(a/z+0) e^(-x/z) dx/x  and of  x^(a/z-1) e^(-x/z) dx  = St_0(z) through z^40   z^1, z^2: 1/12, 1/288
+PASS L3 a = 1: SP of x^(a/z+1) e^(-x/z) dx/x  and of  x^(a/z+0) e^(-x/z) dx  = St_1(z) through z^40   z^1, z^2: 1/12, 1/288
+PASS L3 a = 1: SP of x^(a/z+2) e^(-x/z) dx/x  and of  x^(a/z+1) e^(-x/z) dx  = St_2(z) through z^40   z^1, z^2: 13/12, 25/288
+PASS L3 a = 1: SP of x^(a/z+3) e^(-x/z) dx/x  and of  x^(a/z+2) e^(-x/z) dx  = St_3(z) through z^40   z^1, z^2: 37/12, 649/288
+PASS L3 a = 1: SP of x^(a/z+4) e^(-x/z) dx/x  and of  x^(a/z+3) e^(-x/z) dx  = St_4(z) through z^40   z^1, z^2: 73/12, 3313/288
+PASS L3 a = 1: SP of x^(a/z+5) e^(-x/z) dx/x  and of  x^(a/z+4) e^(-x/z) dx  = St_5(z) through z^40   z^1, z^2: 121/12, 10321/288
+PASS functional equation St_-1(w) = (1 + -2 w) St_-2(w) through w^40
+PASS functional equation St_0(w) = (1 + -1 w) St_-1(w) through w^40
+PASS functional equation St_1(w) = (1 + 0 w) St_0(w) through w^40
+PASS functional equation St_2(w) = (1 + 1 w) St_1(w) through w^40
+PASS functional equation St_3(w) = (1 + 2 w) St_2(w) through w^40
+PASS functional equation St_4(w) = (1 + 3 w) St_3(w) through w^40
+PASS functional equation St_5(w) = (1 + 4 w) St_4(w) through w^40
+PASS a-shift identity (1+w)^(1/w+1/2) e^-1 St_0(w/(1+w)) = St_0(w) through w^40
+PASS L3 homogeneity a = 3/7: SP^norm = St_(e+1)(z/a) through z^12 (e = -1, 0, 2)
+PASS L3 homogeneity a = -2: SP^norm = St_(e+1)(z/a) through z^12 (e = -1, 0, 2)
+PASS control (must fail): b_2 -> -b_2   first differs at z^3
+PASS control (must fail): measure dx/x versus dx at m = 1 (St_1 instead of St_2)   first differs at z^1
+PASS control (must fail): St_0 used for m = 2 (dx/x)   first differs at z^1
+     St_0 = exp(Sum b_k w^(2k-1)): w^1..w^4 = ['1/12', '1/288', '-139/51840', '-571/2488320']
+CHK_STIRLING 40 12: ALL CHECKS PASSED   (2 s)

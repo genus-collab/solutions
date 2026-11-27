@@ -1,0 +1,14 @@
+====================================================================================================
+ind_run g2_61_nat: 7 inner graphs, K = 4, NZ = 3, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.2 s
+   7 inner graphs to do with 4 processes, deadline 1500 s
+      7/7 done (1 s wall)
+   run: wall 1 s, CPU (this and earlier runs) 1 s, slowest [(0.2, 6), (0.2, 5), (0.2, 2), (0.2, 1), (0.0, 4), (0.0, 3)]
+   complete outer graphs: 7 of 7 (all)
+PASS 7 outer graphs equal the reference values of the notes (OU_EXTENSION, genus 2), coefficients u^0..u^2
+      compared, by number of outer edges: [(0, 1), (1, 2), (2, 2), (3, 2)]; non-zero in my table: 6
+   vertex graph: ['1/1200', '-7/6000', '287/864000', '[317922106439176722 mod p]']
+PASS REGULARITY (nat): the 6 complete outer graphs with edges are O(u^2)
+PASS VERTEX GRAPH = (1/1200) t_c^-2 + 0 + .. + 0, i.e. [u^0..u^1] G = (1/1200) (u/t_c)^2
+   total: ['1/1200', '-7/6000', '97/72000', '[281666281616427361 mod p]']
+PASS GAP: total = (1/1200) t_c^-2 + 0 + .. + 0
+IND_RUN (g2_61_nat) ALL CHECKS PASSED

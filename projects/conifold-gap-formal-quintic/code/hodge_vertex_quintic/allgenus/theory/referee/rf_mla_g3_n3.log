@@ -1,0 +1,14 @@
+==============================================================================================================
+rf_mla 3 3, p3 = 1208925819614629174706261 (= 1 mod 10) [2026-11-13T19:54:27]
+  genus 3, <= 3 insertions (frames of weight <= 9): 127 singular lists tested, 127 vanish, 0 FAIL, 262 skipped (deficit > 6)
+     genuine cancellations: 88 lists with >= 1 non-zero flat term (max 4 terms), 39 trivially zero (every flat term 0)
+     controls (number of singular lists NON-zero): C1 leading monomials 88; C3 one coefficient doubled 76 of 95; C4 wrong series 0 of 0; C5 Y^C(z) pairing 62 of 69;  regular lists (e = 0, 1): 172 of 212 non-zero
+     PASS (82 s)
+RF_MLA genus 3: PASS
+==============================================================================================================
+rf_mla 3 3, p3 = 1208925819614629174706261 (= 1 mod 10) [2026-11-13T20:15:10]
+  genus 3, <= 3 insertions (frames of weight <= 9): 127 singular lists tested, 127 vanish, 0 FAIL, 262 skipped (deficit > 6)
+     genuine cancellations: 88 lists with >= 1 non-zero flat term (max 4 terms); 39 with every flat term 0, of which 0 trivially (each flat term killed by dimension or by the string equation alone) and 39 with a dimensionally allowed flat correlator that vanishes
+     controls (number of singular lists NON-zero): C1 leading monomials 88; C3 one coefficient doubled 76 of 95; C4 wrong series 0 of 0; C5 Y^C(z) pairing 62 of 69;  regular lists (e = 0, 1): 172 of 212 non-zero
+     PASS (101 s)
+RF_MLA genus 3: PASS

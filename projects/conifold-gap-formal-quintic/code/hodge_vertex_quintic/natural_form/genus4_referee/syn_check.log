@@ -1,0 +1,24 @@
+(1) 89_nat               rows stored  69, non-zero rows   1 [0]
+(2) 89_nat               inner graphs 379, stored pieces 7162, non-zero pieces 7146
+(1) 61_nat               rows stored  69, non-zero rows   1 [0]
+(2) 61_nat               inner graphs 379, stored pieces 7162, non-zero pieces 7146
+(1) 89_id                rows stored 379, non-zero rows 379 lowest order histogram {0: 379}
+(2) 89_id                inner graphs 379, stored pieces 379, non-zero pieces 379
+(1) 61_id                rows stored 379, non-zero rows 379 lowest order histogram {0: 379}
+(2) 61_id                inner graphs 379, stored pieces 379, non-zero pieces 379
+(1) 89_nat_ab1o3_m2o7    rows stored  69, non-zero rows   1 [0]
+(2) 89_nat_ab1o3_m2o7    inner graphs 379, stored pieces 7163, non-zero pieces 7145
+(1) 61_nat_ab1o3_m2o7    rows stored  69, non-zero rows   1 [0]
+(2) 61_nat_ab1o3_m2o7    inner graphs 379, stored pieces 7163, non-zero pieces 7145
+(1) 89_M0                rows stored 150, non-zero rows 150 lowest order histogram {0: 1, 1: 3, 2: 7, 3: 21, 4: 43, 5: 75}
+(2) 89_M0                inner graphs 379, stored pieces 9858, non-zero pieces 9858
+(1) 89_nat_t5            rows stored  69, non-zero rows   4 [0, 1, 2, 3]
+(2) 89_nat_t5            inner graphs 379, stored pieces 7162, non-zero pieces 7146
+(3) one-edge graph 1: [u^5](nat_t5) = (9/4) [u^1](M0): PASS
+(3) one-edge graph 2: [u^5](nat_t5) = (9/4) [u^1](M0): PASS
+(3) one-edge graph 3: [u^5](nat_t5) = (9/4) [u^1](M0): PASS
+(4) totals of nat, id, M0, nat_t5 equal at 2^89-1: PASS
+(4) totals of nat, id equal at 2^61-1: PASS
+(4) vertex row of nat_t5 = row of record - one-edge [u^5] terms: PASS
+(5) second frame, total [u^0..u^3] = 1/180000, -11/900000, -79/378000000, 20081/2126250000 at both primes: PASS
+SYN_CHECK ALL PASS

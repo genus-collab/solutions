@@ -1,0 +1,651 @@
+thm:int-main [thm] sections/s01_intro_2.tex:9 proof@-
+  stmt-refs: ['def:set-confexp', 'def:set-frames', 'def:set-frob', 'def:set-outer', 'def:set-rows']
+  proof-refs: []
+cor:int-gap [cor] sections/s01_intro_2.tex:27 proof@-
+  stmt-refs: ['def:mai-Fcf']
+  proof-refs: []
+thm:int-D [thm] sections/s01_intro_2.tex:44 proof@-
+  stmt-refs: ['def:gau-Fg']
+  proof-refs: []
+thm:int-gamma [thm] sections/s01_intro_2.tex:51 proof@-
+  stmt-refs: ['def:fsp-stirling', 'def:gam-c']
+  proof-refs: []
+rmk:int-constant [rmk] sections/s01_intro_2.tex:70 proof@-
+  stmt-refs: ['rmk:mai-constant', 'sec:sgn-lit']
+  proof-refs: []
+def:set-fq [defn] sections/s02_setup.tex:22 proof@-
+  stmt-refs: ['def:set-genus0']
+  proof-refs: []
+def:set-genus0 [defn] sections/s02_setup.tex:37 proof@-
+  stmt-refs: ['cor:set-cyclicPF5', 'def:set-points']
+  proof-refs: []
+lem:set-pf5 [lem] sections/s02_setup.tex:59 proof@sections/s02_setup.tex:64
+  stmt-refs: []
+  proof-refs: []
+thm:set-mirror [thm] sections/s02_setup.tex:68 proof@-
+  stmt-refs: []
+  proof-refs: []
+thm:set-G0 [thm] sections/s02_setup.tex:95 proof@-
+  stmt-refs: ['def:set-fq']
+  proof-refs: []
+prop:set-cyclicLR [prop] sections/s02_setup_2.tex:5 proof@sections/s02_setup_4.tex:23
+  stmt-refs: ['def:set-rows', 'sec:set-rows']
+  proof-refs: ['cor:set-cyclicPF5', 'def:set-rows', 'lem:set-birkhoff', 'lem:set-grading', 'lem:set-order3', 'lem:set-periods', 'lem:set-unitfrob', 'lem:set-wronskian', 'prop:set-cyclicLR']
+cor:set-cyclicPF5 [cor] sections/s02_setup_3.tex:3 proof@sections/s02_setup_3.tex:16
+  stmt-refs: ['def:set-rows', 'lem:set-canon', 'lem:set-periods']
+  proof-refs: ['def:set-rows', 'eq:set-McycLR', 'lem:set-pf5', 'prop:set-cyclicLR']
+def:set-points [defn] sections/s02_setup_3.tex:26 proof@-
+  stmt-refs: ['def:set-confexp']
+  proof-refs: []
+def:set-frob [defn] sections/s02_setup_3.tex:31 proof@-
+  stmt-refs: ['cor:set-cyclicPF5', 'def:set-fq', 'thm:set-GT']
+  proof-refs: []
+def:set-rows [defn] sections/s02_setup_4.tex:7 proof@-
+  stmt-refs: ['cor:set-cyclicPF5', 'def:set-frob', 'def:set-graphsum', 'thm:set-GT', 'thm:set-qrr']
+  proof-refs: []
+thm:set-qrr [thm] sections/s02_setup_4.tex:29 proof@sections/s02_setup_4.tex:46
+  stmt-refs: ['def:set-rows']
+  proof-refs: ['cor:set-cyclicPF5', 'def:set-frob', 'eq:set-qrr']
+rmk:set-qrrsign [rmk] sections/s02_setup_4.tex:50 proof@-
+  stmt-refs: ['lem:gau-HPF']
+  proof-refs: []
+lem:set-hrot [lem] sections/s02_setup_4.tex:55 proof@sections/s02_setup_4.tex:60
+  stmt-refs: []
+  proof-refs: ['eq:set-hw']
+def:set-graphsum [defn] sections/s02_setup_4.tex:68 proof@-
+  stmt-refs: ['def:set-frob', 'lem:set-pushins', 'sec:sgn']
+  proof-refs: []
+lem:set-pushins [lem] sections/s02_setup_5.tex:3 proof@sections/s02_setup_5.tex:24
+  stmt-refs: ['def:set-graphsum']
+  proof-refs: []
+thm:set-GT [thm] sections/s02_setup_5.tex:40 proof@-
+  stmt-refs: ['def:set-fq', 'def:set-frob', 'def:set-rows', 'lem:set-pushins']
+  proof-refs: []
+lem:set-frobbasis [lem] sections/s02_setup_5.tex:55 proof@sections/s02_setup_5.tex:73
+  stmt-refs: ['def:gau-conc']
+  proof-refs: []
+def:set-frames [defn] sections/s02_setup_6.tex:3 proof@-
+  stmt-refs: ['def:set-tau', 'lem:gau-diag']
+  proof-refs: []
+def:set-confexp [defn] sections/s02_setup_6.tex:8 proof@-
+  stmt-refs: ['cor:gau-rowsNN', 'def:gau-conc', 'def:mai-Fcf', 'lem:gau-adj', 'lem:gau-conc', 'lem:gau-confexp', 'lem:set-periods', 'rmk:mai-constant']
+  proof-refs: []
+def:set-tau [defn] sections/s02_setup_6.tex:23 proof@-
+  stmt-refs: []
+  proof-refs: []
+lem:set-canon [lem] sections/s02_setup_6.tex:32 proof@sections/s02_setup_6.tex:40
+  stmt-refs: ['cor:set-cyclicPF5']
+  proof-refs: ['cor:set-cyclicPF5']
+def:set-model [defn] sections/s02_setup_6.tex:50 proof@-
+  stmt-refs: ['def:gau-van', 'lem:con-S2', 'sec:sgn']
+  proof-refs: []
+prop:set-modrows [prop] sections/s02_setup_6.tex:59 proof@sections/s02_setup_6.tex:75
+  stmt-refs: []
+  proof-refs: []
+def:set-M0 [defn] sections/s02_setup_7.tex:3 proof@-
+  stmt-refs: ['lem:gau-colmod', 'lem:set-M0sympl']
+  proof-refs: []
+lem:set-M0sympl [lem] sections/s02_setup_7.tex:16 proof@sections/s02_setup_7.tex:21
+  stmt-refs: []
+  proof-refs: ['def:set-M0', 'prop:set-modrows']
+def:set-modcohft [defn] sections/s02_setup_7.tex:35 proof@-
+  stmt-refs: ['def:set-M0', 'def:set-graphsum', 'lem:set-M0sympl', 'prop:set-modrows', 'thm:gau-R0', 'thm:mod-gap']
+  proof-refs: []
+lem:set-modhom [lem] sections/s02_setup_7.tex:44 proof@sections/s02_setup_7.tex:60
+  stmt-refs: []
+  proof-refs: ['def:set-M0', 'def:set-graphsum', 'lem:set-M0sympl']
+lem:set-dilaton [lem] sections/s02_setup_8.tex:3 proof@sections/s02_setup_8.tex:19
+  stmt-refs: ['def:set-graphsum']
+  proof-refs: []
+def:set-hat [defn] sections/s02_setup_8.tex:39 proof@-
+  stmt-refs: ['cor:mai-natfact', 'def:flh-outer']
+  proof-refs: []
+def:set-outer [defn] sections/s02_setup_8.tex:44 proof@-
+  stmt-refs: ['def:flh-outer', 'def:gau-Fg', 'def:set-M0', 'def:set-graphsum', 'def:set-hat', 'def:set-rows', 'lem:flh-hat', 'lem:flh-inputs', 'lem:mai-Psi', 'lem:set-M0sympl', 'thm:gam-D']
+  proof-refs: []
+def:set-N [defn] sections/s02_setup_8.tex:59 proof@-
+  stmt-refs: ['def:set-frames', 'def:set-outer', 'thm:mai-main']
+  proof-refs: []
+rmk:set-cg [rmk] sections/s02_setup_8.tex:74 proof@-
+  stmt-refs: ['cor:mod-trF', 'eq:set-cg', 'thm:mod-gap']
+  proof-refs: []
+def:gau-conc [defn] sections/s03_gauge.tex:28 proof@-
+  stmt-refs: ['cor:gau-rowsNN', 'def:set-confexp', 'lem:gau-conc', 'lem:gau-confexp', 'lem:set-frobbasis', 'lem:set-wronskian']
+  proof-refs: []
+lem:gau-confexp [lem] sections/s03_gauge.tex:49 proof@sections/a2_cyclicPF4.tex:125
+  stmt-refs: ['def:set-confexp', 'def:set-frames', 'def:set-genus0']
+  proof-refs: ['def:set-confexp', 'def:set-frames', 'lem:gau-confexp', 'lem:gau-iso']
+thm:gau-cyc [thm] sections/s03_gauge.tex:58 proof@sections/a2_cyclicPF4.tex:105
+  stmt-refs: ['def:set-frames', 'lem:gau-iso']
+  proof-refs: ['eq:gau-Mcyc', 'lem:gau-conc', 'lem:gau-iso', 'lem:gau-sg', 'thm:gau-cyc']
+cor:gau-cycsys [cor] sections/s03_gauge.tex:68 proof@sections/a2_cyclicPF4.tex:113
+  stmt-refs: ['eq:gau-system', 'thm:gau-cyc']
+  proof-refs: ['cor:gau-cycsys', 'eq:gau-Mcyc', 'lem:set-pf5', 'thm:gau-cyc']
+def:gau-onepole [defn] sections/s03_gauge_2.tex:7 proof@-
+  stmt-refs: []
+  proof-refs: []
+prop:gau-quintic [prop] sections/s03_gauge_2.tex:12 proof@sections/s03_gauge_2.tex:30
+  stmt-refs: ['cor:gau-cycsys', 'def:set-frames', 'eq:gau-system', 'prop:set-cyclicLR']
+  proof-refs: ['cor:gau-cycsys', 'def:set-frames', 'lem:gau-confexp']
+prop:gau-equalprod [prop] sections/s03_gauge_2.tex:34 proof@sections/s03_gauge_2.tex:48
+  stmt-refs: ['def:set-tau', 'prop:gau-quintic', 'prop:set-modrows']
+  proof-refs: ['def:set-tau', 'prop:gau-quintic']
+thm:gau-U [thm] sections/s03_gauge_2.tex:68 proof@sections/s03_gauge_4.tex:3
+  stmt-refs: []
+  proof-refs: ['eq:gau-reduced', 'lem:gau-comm', 'lem:gau-lead', 'lem:gau-lift', 'lem:gau-scal', 'prop:gau-graded', 'thm:gau-U']
+lem:gau-comm [lem] sections/s03_gauge_3.tex:3 proof@sections/s03_gauge_3.tex:21
+  stmt-refs: []
+  proof-refs: []
+lem:gau-lift [lem] sections/s03_gauge_3.tex:31 proof@sections/s03_gauge_3.tex:36
+  stmt-refs: []
+  proof-refs: ['lem:gau-comm']
+lem:gau-scal [lem] sections/s03_gauge_3.tex:40 proof@sections/s03_gauge_3.tex:55
+  stmt-refs: []
+  proof-refs: ['lem:gau-comm']
+lem:gau-lead [lem] sections/s03_gauge_4.tex:12 proof@sections/s03_gauge_4.tex:17
+  stmt-refs: []
+  proof-refs: ['eq:gau-reduced', 'lem:gau-comm', 'lem:gau-scal']
+lem:gau-degree [lem] sections/s03_gauge_4.tex:27 proof@sections/s03_gauge_4.tex:32
+  stmt-refs: []
+  proof-refs: []
+prop:gau-graded [prop] sections/s03_gauge_4.tex:36 proof@sections/s03_gauge_4.tex:47
+  stmt-refs: []
+  proof-refs: ['lem:gau-degree', 'thm:gau-U']
+lem:gau-R1 [lem] sections/s03_gauge_5.tex:9 proof@sections/s03_gauge_5.tex:14
+  stmt-refs: []
+  proof-refs: []
+lem:gau-diag [lem] sections/s03_gauge_5.tex:18 proof@sections/s03_gauge_5.tex:30
+  stmt-refs: ['def:gau-can', 'thm:gau-U']
+  proof-refs: ['prop:gau-equalprod', 'prop:gau-quintic', 'thm:gau-U']
+def:gau-van [defn] sections/s03_gauge_5.tex:34 proof@-
+  stmt-refs: ['def:set-model', 'lem:gau-vanq']
+  proof-refs: []
+lem:gau-vanmod [lem] sections/s03_gauge_5.tex:46 proof@sections/s03_gauge_5.tex:51
+  stmt-refs: []
+  proof-refs: []
+lem:gau-vanshape [lem] sections/s03_gauge_5.tex:55 proof@sections/s03_gauge_5.tex:64
+  stmt-refs: []
+  proof-refs: ['def:gau-van']
+lem:gau-uniq [lem] sections/s03_gauge_5.tex:68 proof@sections/s03_gauge_5.tex:73
+  stmt-refs: []
+  proof-refs: []
+lem:gau-vanq [lem] sections/s03_gauge_5.tex:77 proof@sections/s03_gauge_5.tex:88
+  stmt-refs: []
+  proof-refs: ['lem:gau-uniq', 'lem:gau-vanmod', 'prop:gau-equalprod']
+thm:gau-G [thm] sections/s03_gauge_6.tex:3 proof@sections/s03_gauge_6.tex:17
+  stmt-refs: []
+  proof-refs: ['eq:gau-G', 'lem:gau-R1', 'lem:gau-uniq', 'lem:gau-vanmod', 'lem:gau-vanq', 'prop:gau-graded', 'thm:gau-U']
+def:gau-can [defn] sections/s03_gauge_6.tex:23 proof@-
+  stmt-refs: ['lem:gau-diag', 'prop:gau-graded', 'thm:gau-G', 'thm:gau-U']
+  proof-refs: []
+prop:gau-symp [prop] sections/s03_gauge_6.tex:28 proof@sections/s03_gauge_6.tex:38
+  stmt-refs: ['sec:gau-van']
+  proof-refs: ['def:gau-onepole', 'lem:gau-R1', 'thm:gau-U']
+lem:gau-HPF [lem] sections/s03_gauge_6.tex:52 proof@sections/s03_gauge_6.tex:70
+  stmt-refs: ['eq:gau-HPF']
+  proof-refs: ['eq:gau-HPF']
+lem:gau-poly [lem] sections/s03_gauge_7.tex:3 proof@sections/s03_gauge_7.tex:14
+  stmt-refs: ['eq:gau-HPF']
+  proof-refs: ['eq:gau-HPF', 'lem:gau-HPF']
+lem:gau-wkb [lem] sections/s03_gauge_7.tex:18 proof@sections/s03_gauge_7.tex:28
+  stmt-refs: []
+  proof-refs: []
+lem:gau-colmod [lem] sections/s03_gauge_7.tex:38 proof@sections/s03_gauge_7.tex:48
+  stmt-refs: ['def:set-M0', 'prop:set-modrows']
+  proof-refs: ['prop:set-modrows']
+lem:gau-colrows [lem] sections/s03_gauge_7.tex:52 proof@sections/s03_gauge_7.tex:61
+  stmt-refs: ['def:set-rows']
+  proof-refs: ['cor:set-cyclicPF5', 'def:set-frob', 'def:set-rows', 'lem:gau-wkb', 'lem:set-hrot', 'prop:set-cyclicLR', 'thm:set-qrr']
+thm:gau-R0 [thm] sections/s03_gauge_8.tex:3 proof@sections/s03_gauge_8.tex:23
+  stmt-refs: ['cor:gau-rowsNN', 'def:set-rows', 'eq:gau-HPF', 'lem:gau-colmod', 'lem:gau-poly', 'lem:mai-Ghat']
+  proof-refs: ['cor:gau-cycsys', 'cor:gau-rowsNN', 'cor:set-cyclicPF5', 'def:gau-can', 'def:set-M0', 'def:set-frob', 'def:set-tau', 'eq:gau-HPF', 'eq:gau-R0zero', 'lem:gau-HPF', 'lem:gau-colmod', 'lem:gau-diag', 'lem:gau-poly', 'lem:gau-wkb', 'lem:set-canon', 'prop:gau-quintic', 'prop:set-cyclicLR']
+cor:gau-rowsNN [cor] sections/s03_gauge_8.tex:33 proof@sections/s03_gauge_8.tex:42
+  stmt-refs: ['def:mai-Fcf', 'def:set-confexp', 'lem:gau-colrows', 'thm:gau-R0']
+  proof-refs: ['lem:gau-colrows', 'lem:gau-conc', 'prop:gau-quintic']
+cor:gau-colours [cor] sections/s03_gauge_8.tex:46 proof@sections/s03_gauge_8.tex:60
+  stmt-refs: []
+  proof-refs: ['cor:gau-rowsNN', 'def:gau-can', 'eq:gau-R0zero', 'lem:gau-colmod', 'prop:gau-graded', 'thm:gau-R0']
+def:gau-Fg [defn] sections/s03_gauge_8.tex:68 proof@-
+  stmt-refs: ['cor:gau-colours', 'thm:flh-main', 'thm:gam-D']
+  proof-refs: []
+conv:tra-forms [conv] sections/s04_transport.tex:13 proof@-
+  stmt-refs: ['def:gau-van', 'def:mod-weights', 'def:set-frob', 'def:set-model', 'def:set-tau', 'def:tra-dressing', 'lem:set-modhom', 'lem:tra-E', 'lem:tra-twoslot']
+  proof-refs: []
+lem:tra-sum [lem] sections/s04_transport.tex:33 proof@sections/s04_transport.tex:38
+  stmt-refs: []
+  proof-refs: ['conv:tra-forms']
+def:tra-tower [defn] sections/s04_transport.tex:44 proof@-
+  stmt-refs: ['conv:tra-forms', 'def:gau-van', 'lem:gau-vanshape']
+  proof-refs: []
+lem:tra-theta [lem] sections/s04_transport.tex:81 proof@sections/s04_transport.tex:90
+  stmt-refs: []
+  proof-refs: ['eq:tra-shift']
+def:tra-slice [defn] sections/s04_transport.tex:94 proof@-
+  stmt-refs: ['cor:tra-slice', 'lem:tra-theta']
+  proof-refs: []
+lem:tra-frames [lem] sections/s04_transport_2.tex:4 proof@sections/s04_transport_2.tex:25
+  stmt-refs: ['lem:tra-theta']
+  proof-refs: ['def:tra-tower', 'eq:tra-shift', 'eq:tra-values', 'lem:tra-sum', 'lem:tra-theta']
+cor:tra-slice [cor] sections/s04_transport_2.tex:44 proof@sections/s04_transport_2.tex:52
+  stmt-refs: []
+  proof-refs: ['eq:tra-values']
+lem:tra-coeff [lem] sections/s04_transport_2.tex:56 proof@sections/s04_transport_2.tex:61
+  stmt-refs: ['thm:red-main']
+  proof-refs: ['cor:tra-slice', 'lem:tra-frames']
+lem:tra-twoslot [lem] sections/s04_transport_2.tex:65 proof@sections/s04_transport_2.tex:74
+  stmt-refs: []
+  proof-refs: ['lem:tra-frames', 'lem:tra-sum']
+def:tra-dressing [defn] sections/s04_transport_4.tex:7 proof@-
+  stmt-refs: ['prop:gau-symp', 'prop:tra-can', 'rmk:mai-annih', 'thm:gau-G']
+  proof-refs: []
+def:tra-edge [defn] sections/s04_transport_4.tex:17 proof@-
+  stmt-refs: ['def:red-flatsum', 'eq:tra-leaf']
+  proof-refs: []
+lem:tra-E [lem] sections/s04_transport_4.tex:45 proof@sections/s04_transport_4.tex:55
+  stmt-refs: []
+  proof-refs: ['conv:tra-forms']
+cor:tra-edges [cor] sections/s04_transport_4.tex:90 proof@sections/s04_transport_4.tex:95
+  stmt-refs: ['lem:tra-twoslot']
+  proof-refs: ['conv:tra-forms', 'def:tra-dressing', 'eq:tra-pairing', 'lem:tra-E', 'lem:tra-conv', 'lem:tra-twoslot']
+lem:tra-T [lem] sections/s04_transport_4.tex:103 proof@sections/s04_transport_4.tex:118
+  stmt-refs: ['eq:tra-leaf']
+  proof-refs: ['cor:tra-slice', 'eq:tra-leaf', 'eq:tra-pairing', 'eq:tra-values', 'lem:gau-vanshape', 'lem:tra-conv']
+lem:tra-F [lem] sections/s04_transport_4.tex:136 proof@sections/s04_transport_4.tex:141
+  stmt-refs: ['def:red-flatsum']
+  proof-refs: ['def:set-graphsum', 'eq:tra-leaf', 'lem:set-dilaton', 'lem:set-modhom', 'lem:tra-conv']
+prop:tra-can [prop] sections/s04_transport_4.tex:149 proof@sections/s04_transport_4.tex:154
+  stmt-refs: ['cor:tra-edges', 'def:gau-can', 'def:set-frames', 'def:set-tau', 'lem:tra-F', 'lem:tra-T']
+  proof-refs: ['cor:tra-edges', 'def:gau-can', 'def:set-frames', 'lem:gau-diag', 'lem:gau-vanq', 'lem:tra-F', 'lem:tra-T', 'lem:tra-twoslot', 'prop:gau-equalprod', 'prop:gau-symp', 'thm:gau-G', 'thm:gau-U']
+def:red-flatsum [defn] sections/s05_reduction.tex:12 proof@-
+  stmt-refs: ['def:set-graphsum', 'def:set-modcohft', 'def:tra-edge', 'eq:tra-leaf', 'thm:flh-main']
+  proof-refs: []
+def:red-ML [defn] sections/s05_reduction.tex:29 proof@-
+  stmt-refs: ['eq:set-cg', 'lem:set-modhom']
+  proof-refs: []
+lem:red-genus [lem] sections/s05_reduction.tex:42 proof@sections/s05_reduction.tex:47
+  stmt-refs: []
+  proof-refs: []
+thm:red-main [thm] sections/s05_reduction.tex:54 proof@sections/s05_reduction.tex:64
+  stmt-refs: ['def:tra-dressing']
+  proof-refs: ['cor:tra-edges', 'def:red-flatsum', 'eq:red-vertex', 'lem:red-genus', 'lem:tra-T', 'lem:tra-coeff', 'lem:tra-conv', 'lem:tra-twoslot']
+cor:red-can [cor] sections/s05_reduction.tex:78 proof@sections/s05_reduction.tex:83
+  stmt-refs: ['def:set-frames']
+  proof-refs: ['prop:tra-can', 'thm:red-main']
+conv:mod-kernel [conv] sections/s06_model.tex:10 proof@-
+  stmt-refs: ['sec:sgn-tr', 'tab:sgn-tr']
+  proof-refs: []
+def:mod-curve [defn] sections/s06_model.tex:26 proof@-
+  stmt-refs: ['conv:mod-kernel', 'lem:mod-scale']
+  proof-refs: []
+def:mod-pair [defn] sections/s06_model.tex:31 proof@-
+  stmt-refs: ['conv:mod-kernel', 'lem:mod-xfun']
+  proof-refs: []
+def:mod-xi [defn] sections/s06_model.tex:48 proof@-
+  stmt-refs: ['def:set-model']
+  proof-refs: []
+def:mod-ancvec [defn] sections/s06_model.tex:57 proof@-
+  stmt-refs: ['def:mod-pair']
+  proof-refs: []
+thm:mod-tr [thm] sections/s06_model.tex:64 proof@sections/s06_model_3.tex:22
+  stmt-refs: ['def:mod-ancvec']
+  proof-refs: ['def:mod-pair', 'def:mod-xi', 'def:set-M0', 'def:set-modcohft', 'eq:mod-235', 'eq:mod-tr', 'lem:mod-scale', 'prop:mod-Rtr', 'prop:set-modrows', 'thm:mod-tr']
+lem:mod-laplace [lem] sections/s06_model_2.tex:4 proof@sections/s06_model_2.tex:25
+  stmt-refs: []
+  proof-refs: []
+lem:mod-scale [lem] sections/s06_model_2.tex:29 proof@sections/s06_model_2.tex:37
+  stmt-refs: []
+  proof-refs: ['def:mod-pair', 'eq:mod-kernel']
+prop:mod-Rtr [prop] sections/s06_model_2.tex:41 proof@sections/s06_model_3.tex:2
+  stmt-refs: ['lem:mod-laplace']
+  proof-refs: ['def:set-M0', 'eq:mod-Rtr', 'eq:mod-Rtr-pf', 'lem:gau-colmod', 'lem:mod-laplace', 'lem:set-M0sympl', 'lem:set-pushins', 'prop:mod-Rtr', 'prop:set-modrows']
+lem:mod-xfun [lem] sections/s06_model_4.tex:2 proof@sections/s06_model_4.tex:11
+  stmt-refs: []
+  proof-refs: ['conv:mod-kernel', 'eq:mod-kernel']
+def:mod-legs [defn] sections/s06_model_4.tex:22 proof@-
+  stmt-refs: []
+  proof-refs: []
+prop:mod-LD [prop] sections/s06_model_4.tex:27 proof@sections/s06_model_4.tex:37
+  stmt-refs: ['conv:tra-forms']
+  proof-refs: ['eq:mod-LD']
+cor:mod-trF [cor] sections/s06_model_4.tex:46 proof@sections/s06_model_4.tex:51
+  stmt-refs: ['def:set-graphsum', 'def:set-modcohft']
+  proof-refs: ['conv:mod-kernel', 'lem:mod-xfun', 'lem:set-dilaton', 'prop:mod-LD', 'thm:mod-tr']
+def:mod-weights [defn] sections/s06_model_5.tex:2 proof@-
+  stmt-refs: ['conv:tra-forms', 'def:mod-pair', 'prop:mod-LD']
+  proof-refs: []
+lem:mod-closure [lem] sections/s06_model_5.tex:11 proof@sections/s06_model_5.tex:20
+  stmt-refs: []
+  proof-refs: ['def:mod-legs']
+lem:mod-genfn [lem] sections/s06_model_5.tex:24 proof@sections/s06_model_5.tex:29
+  stmt-refs: []
+  proof-refs: ['lem:mod-closure']
+lem:mod-resid [lem] sections/s06_model_5.tex:33 proof@sections/s06_model_5.tex:38
+  stmt-refs: []
+  proof-refs: ['def:gau-van', 'def:tra-tower']
+prop:mod-dii [prop] sections/s06_model_5.tex:46 proof@sections/s06_model_5.tex:56
+  stmt-refs: []
+  proof-refs: ['def:tra-slice', 'def:tra-tower', 'eq:mod-dii', 'lem:mod-genfn', 'lem:mod-resid']
+lem:mod-count [lem] sections/s06_model_6.tex:5 proof@sections/s06_model_6.tex:10
+  stmt-refs: []
+  proof-refs: []
+lem:mod-classL [lem] sections/s06_model_6.tex:14 proof@sections/s06_model_6.tex:24
+  stmt-refs: []
+  proof-refs: []
+lem:mod-modv [lem] sections/s06_model_6.tex:28 proof@sections/s06_model_6.tex:33
+  stmt-refs: []
+  proof-refs: ['lem:mod-closure']
+thm:mod-lattice [thm] sections/s06_model_6.tex:37 proof@sections/s06_model_6.tex:49
+  stmt-refs: []
+  proof-refs: ['lem:mod-classL', 'lem:mod-closure', 'lem:mod-count', 'lem:mod-modv', 'prop:mod-dii']
+cor:mod-split [cor] sections/s06_model_6.tex:53 proof@sections/s06_model_6.tex:58
+  stmt-refs: []
+  proof-refs: ['lem:mod-closure', 'prop:mod-dii']
+cor:mod-Ksplit [cor] sections/s06_model_6.tex:62 proof@sections/s06_model_6.tex:67
+  stmt-refs: []
+  proof-refs: ['cor:mod-split', 'def:tra-tower', 'prop:mod-dii', 'thm:mod-lattice']
+lem:mod-abdks [lem] sections/s06_model_7.tex:22 proof@sections/s06_model_7.tex:30
+  stmt-refs: []
+  proof-refs: ['conv:mod-kernel', 'eq:mod-abdks']
+thm:mod-Lreg [thm] sections/s06_model_7.tex:38 proof@sections/s06_model_7.tex:43
+  stmt-refs: []
+  proof-refs: ['lem:mod-abdks', 'lem:mod-xfun']
+prop:mod-period [prop] sections/s06_model_7.tex:50 proof@sections/s06_model_7.tex:60
+  stmt-refs: []
+  proof-refs: ['def:mod-pair', 'def:mod-xi', 'eq:mod-710', 'lem:mod-scale', 'thm:mod-Lreg']
+thm:mod-gap [thm] sections/s06_model_7.tex:76 proof@sections/s06_model_7.tex:81
+  stmt-refs: ['conv:mod-kernel']
+  proof-refs: ['cor:mod-trF', 'prop:mod-period']
+rmk:mod-hock [rmk] sections/s06_model_7.tex:85 proof@-
+  stmt-refs: ['conv:mod-kernel']
+  proof-refs: []
+lem:mod-fixedx [lem] sections/s06_model_8.tex:7 proof@sections/s06_model_8.tex:12
+  stmt-refs: []
+  proof-refs: []
+lem:mod-ibp [lem] sections/s06_model_8.tex:16 proof@sections/s06_model_8.tex:25
+  stmt-refs: []
+  proof-refs: ['def:mod-pair']
+thm:mod-var [thm] sections/s06_model_8.tex:29 proof@sections/s06_model_8.tex:38
+  stmt-refs: []
+  proof-refs: ['conv:mod-kernel', 'lem:mod-fixedx']
+lem:mod-genus0 [lem] sections/s06_model_8.tex:42 proof@sections/s06_model_8.tex:60
+  stmt-refs: []
+  proof-refs: ['lem:mod-fixedx']
+prop:mod-V1 [prop] sections/s06_model_8.tex:71 proof@sections/s06_model_8.tex:84
+  stmt-refs: []
+  proof-refs: ['eq:mod-V1', 'lem:mod-fixedx', 'lem:mod-ibp', 'thm:mod-var']
+lem:mod-w11 [lem] sections/s06_model_9.tex:8 proof@sections/s06_model_9.tex:17
+  stmt-refs: []
+  proof-refs: ['eq:mod-kernel']
+thm:mod-V [thm] sections/s06_model_9.tex:30 proof@sections/s06_model_9.tex:40
+  stmt-refs: ['eq:mod-V1', 'thm:mod-gap']
+  proof-refs: ['eq:mod-V1', 'eq:mod-loc', 'lem:mod-genus0', 'lem:mod-scale', 'lem:mod-w11', 'prop:mod-V1', 'prop:mod-period', 'thm:mod-Lreg', 'thm:mod-gap']
+thm:mod-MLK [thm] sections/s06_model_10.tex:7 proof@sections/s06_model_10.tex:12
+  stmt-refs: []
+  proof-refs: ['cor:mod-Ksplit', 'lem:mod-classL', 'lem:mod-xfun', 'prop:mod-LD', 'thm:mod-Lreg', 'thm:mod-V', 'thm:mod-gap', 'thm:mod-lattice', 'thm:mod-tr']
+cor:mod-onepoint [cor] sections/s06_model_10.tex:26 proof@sections/s06_model_10.tex:31
+  stmt-refs: []
+  proof-refs: ['lem:set-modhom', 'thm:mod-MLK']
+rmk:mod-offK [rmk] sections/s06_model_10.tex:35 proof@-
+  stmt-refs: ['sec:evi-model']
+  proof-refs: []
+def:flh-outer [defn] sections/s07_comparison.tex:15 proof@-
+  stmt-refs: ['def:set-graphsum', 'lem:set-dilaton', 'lem:tra-conv']
+  proof-refs: []
+lem:flh-frame [lem] sections/s07_comparison.tex:40 proof@sections/s07_comparison.tex:48
+  stmt-refs: ['def:flh-outer']
+  proof-refs: []
+lem:flh-dil [lem] sections/s07_comparison.tex:52 proof@sections/s07_comparison.tex:61
+  stmt-refs: ['def:flh-outer']
+  proof-refs: ['lem:set-dilaton']
+lem:flh-comm [lem] sections/s07_comparison.tex:69 proof@sections/s07_comparison.tex:77
+  stmt-refs: []
+  proof-refs: []
+lem:flh-hat [lem] sections/s07_comparison_2.tex:1 proof@sections/s07_comparison_2.tex:11
+  stmt-refs: ['def:set-outer']
+  proof-refs: ['lem:flh-comm']
+lem:flh-inputs [lem] sections/s07_comparison_2.tex:30 proof@sections/s07_comparison_2.tex:45
+  stmt-refs: ['cor:gau-colours', 'thm:gau-R0']
+  proof-refs: ['conv:tra-forms', 'cor:gau-colours', 'cor:gau-rowsNN', 'def:flh-outer', 'def:gau-can', 'def:set-M0', 'def:set-frob', 'def:set-modcohft', 'def:set-tau', 'def:tra-edge', 'lem:gau-colmod', 'lem:gau-diag', 'lem:set-dilaton', 'prop:gau-symp', 'prop:set-modrows', 'thm:gau-R0', 'thm:gau-U']
+thm:flh-main [thm] sections/s07_comparison_2.tex:68 proof@sections/s07_comparison_2.tex:77
+  stmt-refs: ['def:red-flatsum', 'def:set-outer']
+  proof-refs: ['def:red-flatsum', 'def:set-outer', 'def:tra-edge', 'lem:flh-comm', 'lem:flh-dil', 'lem:flh-frame', 'lem:flh-hat', 'lem:flh-inputs', 'lem:set-dilaton', 'lem:tra-conv']
+rmk:flh-fail [rmk] sections/s07_comparison_2.tex:98 proof@-
+  stmt-refs: ['cor:mai-gap', 'lem:flh-inputs', 'prop:gau-symp', 'rmk:mai-graphlocal', 'rmk:mai-stored']
+  proof-refs: []
+rmk:con-genus [rmk] sections/s08_connection.tex:19 proof@-
+  stmt-refs: ['cor:gau-rowsNN', 'def:gau-Fg', 'def:set-rows', 'lem:flh-inputs', 'thm:gam-D']
+  proof-refs: []
+def:gam-c [defn] sections/s08_connection_3.tex:6 proof@-
+  stmt-refs: ['def:fsp-wick', 'sec:gam']
+  proof-refs: []
+prop:gam-rational [prop] sections/s08_connection_3.tex:44 proof@sections/s08_connection_3.tex:49
+  stmt-refs: []
+  proof-refs: ['lem:fsp-const', 'lem:fsp-univ']
+lem:con-form [lem] sections/s08_connection_3.tex:53 proof@sections/s08_connection_4.tex:3
+  stmt-refs: ['def:gam-c']
+  proof-refs: ['def:fsp-stirling', 'def:set-tau', 'lem:fsp-const', 'lem:fsp-refl', 'lem:fsp-univ', 'prop:gam-rational']
+def:con-PhiSP [defn] sections/s08_connection_4.tex:25 proof@-
+  stmt-refs: ['def:fsp-wick', 'lem:con-form', 'lem:fsp-univ']
+  proof-refs: []
+thm:con-Pa [thm] sections/s08_connection_4.tex:47 proof@sections/s08_connection_4.tex:60
+  stmt-refs: ['def:gam-c', 'prop:gam-rational']
+  proof-refs: ['def:fsp-wick', 'def:gam-c', 'eq:con-bz', 'eq:con-chain', 'eq:con-shiftD', 'eq:fsp-generic', 'lem:con-form', 'lem:fsp-const', 'lem:fsp-cov', 'lem:fsp-generic', 'lem:fsp-homog', 'lem:fsp-stirfe', 'lem:fsp-transl', 'lem:fsp-univ', 'lem:gau-poly']
+lem:con-cfu [lem] sections/s08_connection_5.tex:31 proof@sections/s08_connection_5.tex:40
+  stmt-refs: []
+  proof-refs: ['lem:con-form']
+lem:con-red [lem] sections/s08_connection_5.tex:44 proof@sections/s08_connection_5.tex:57
+  stmt-refs: ['lem:con-cfu']
+  proof-refs: ['def:set-model', 'lem:con-cfu', 'lem:con-id']
+lem:con-S2 [lem] sections/s08_connection_6.tex:3 proof@sections/s08_connection_6.tex:8
+  stmt-refs: []
+  proof-refs: ['lem:fsp-cov', 'lem:fsp-dq', 'lem:fsp-homog', 'lem:fsp-ibp', 'prop:set-modrows']
+lem:con-id [lem] sections/s08_connection_6.tex:16 proof@sections/s08_connection_6.tex:32
+  stmt-refs: ['def:gau-onepole', 'def:set-frames', 'lem:con-cfu', 'lem:con-red', 'prop:gau-graded', 'thm:gau-R0']
+  proof-refs: ['def:con-PhiSP', 'def:fsp-wick', 'def:set-tau', 'lem:con-S2', 'lem:con-cfu', 'lem:con-red', 'lem:fsp-cfu', 'lem:fsp-cov', 'lem:fsp-homog', 'lem:fsp-ibp', 'prop:set-modrows', 'thm:gau-R0']
+lem:con-relab [lem] sections/s08_connection_6.tex:44 proof@sections/s08_connection_6.tex:49
+  stmt-refs: ['lem:fsp-res']
+  proof-refs: ['def:con-PhiSP', 'lem:con-form']
+lem:con-key [lem] sections/s08_connection_7.tex:3 proof@sections/s08_connection_7.tex:12
+  stmt-refs: ['def:gau-van', 'def:set-tau']
+  proof-refs: ['lem:con-red']
+prop:con-res [prop] sections/s08_connection_7.tex:16 proof@sections/s08_connection_7.tex:24
+  stmt-refs: ['lem:con-id']
+  proof-refs: ['def:con-PhiSP', 'def:gau-van', 'lem:con-id', 'lem:con-key', 'lem:con-red', 'lem:con-relab', 'lem:fsp-res']
+thm:con-Pb [thm] sections/s08_connection_7.tex:36 proof@sections/s08_connection_7.tex:43
+  stmt-refs: ['def:set-frames']
+  proof-refs: ['cor:gau-cycsys', 'def:con-PhiSP', 'lem:con-S2', 'lem:con-cfu', 'lem:con-id', 'lem:con-red', 'lem:fsp-cfu', 'lem:fsp-ibp', 'lem:fsp-res', 'lem:gau-poly', 'lem:gau-vanq', 'prop:con-res', 'prop:gau-graded', 'thm:con-Pa', 'thm:gau-G', 'thm:gau-R0', 'thm:gau-U']
+thm:con-glue [thm] sections/s08_connection_8.tex:8 proof@sections/s08_connection_8.tex:18
+  stmt-refs: ['thm:con-Pb']
+  proof-refs: ['cor:set-cyclicPF5', 'eq:set-qrr', 'lem:gau-wkb', 'thm:con-Pb', 'thm:gau-R0', 'thm:set-G0', 'thm:set-mirror', 'thm:set-qrr']
+cor:con-A2 [cor] sections/s08_connection_8.tex:22 proof@sections/s08_connection_8.tex:27
+  stmt-refs: ['cor:gam-equiv', 'thm:con-Pa']
+  proof-refs: ['cor:gau-colours', 'eq:con-glue', 'thm:con-Pa', 'thm:con-Pb']
+lem:gam-deltasrc [lem] sections/s09_gamma.tex:19 proof@sections/s09_gamma.tex:29
+  stmt-refs: []
+  proof-refs: ['def:fsp-wick', 'eq:gam-deltasrc', 'lem:fsp-ring']
+def:gam-lmidata [defn] sections/s09_gamma.tex:37 proof@-
+  stmt-refs: ['lem:fsp-stirfe', 'lem:fsp-stirling']
+  proof-refs: []
+thm:gam-lmi [thm] sections/s09_gamma_2.tex:3 proof@sections/s09_gamma_2.tex:20
+  stmt-refs: ['def:gam-lmidata']
+  proof-refs: ['def:fsp-wick', 'eq:gam-atQ0', 'eq:gam-chart', 'eq:gam-lmi', 'eq:gam-step1', 'lem:fsp-const', 'lem:fsp-cov', 'lem:fsp-fubini', 'lem:fsp-param', 'lem:fsp-stirling', 'lem:fsp-univ', 'lem:gam-deltasrc', 'sec:fsp']
+thm:gam-main [thm] sections/s09_gamma_3.tex:12 proof@sections/s09_gamma_3.tex:34
+  stmt-refs: ['cor:gam-poly', 'def:gam-c', 'thm:gam-ginf']
+  proof-refs: ['cor:gam-poly', 'def:gam-c', 'def:gam-lmidata', 'eq:gam-lmi', 'lem:fsp-cov', 'lem:fsp-dlmf5118', 'lem:fsp-homog', 'lem:set-hrot', 'prop:gam-rational', 'thm:con-Pa', 'thm:gam-ginf', 'thm:gam-lmi']
+prop:gam-hatflat [prop] sections/s09_gamma_3.tex:52 proof@sections/s09_gamma_3.tex:60
+  stmt-refs: []
+  proof-refs: ['thm:con-Pa', 'thm:gam-main']
+cor:gam-equiv [cor] sections/s09_gamma_3.tex:64 proof@sections/s09_gamma_3.tex:69
+  stmt-refs: ['cor:con-A2', 'eq:gam-Gamma']
+  proof-refs: ['cor:con-A2', 'eq:gam-Gamma', 'thm:con-Pa', 'thm:gam-main']
+thm:gam-D [thm] sections/s09_gamma_3.tex:73 proof@sections/s09_gamma_3.tex:78
+  stmt-refs: ['def:set-frames']
+  proof-refs: ['cor:gau-colours', 'def:con-PhiSP', 'def:gau-Fg', 'prop:gam-hatflat', 'thm:con-Pb', 'thm:con-glue', 'thm:gam-main']
+thm:gam-ginf [thm] sections/s09_gamma_4.tex:3 proof@sections/s09_gamma_4.tex:14
+  stmt-refs: []
+  proof-refs: ['def:fsp-stirling', 'def:gam-c', 'def:gam-lmidata', 'eq:gam-ginf', 'eq:gam-lmi', 'lem:fsp-dlmf5118', 'thm:gam-lmi', 'thm:gam-main']
+cor:gam-poly [cor] sections/s09_gamma_4.tex:41 proof@sections/s09_gamma_4.tex:50
+  stmt-refs: []
+  proof-refs: ['prop:gam-hatflat', 'thm:con-Pa', 'thm:gam-ginf', 'thm:gam-main']
+cor:gam-free [cor] sections/s09_gamma_4.tex:54 proof@sections/s09_gamma_4.tex:63
+  stmt-refs: ['lem:gau-HPF', 'thm:gam-D']
+  proof-refs: ['cor:gam-poly', 'eq:gam-ginf', 'thm:con-Pb', 'thm:gam-D', 'thm:gam-ginf', 'thm:gau-R0']
+rmk:gam-prior [rmk] sections/s09_gamma_4.tex:70 proof@-
+  stmt-refs: ['eq:gam-Gamma', 'thm:gam-ginf']
+  proof-refs: []
+thm:mai-main [thm] sections/s10_main.tex:9 proof@sections/s10_main.tex:25
+  stmt-refs: ['def:set-confexp', 'def:set-frames', 'def:set-frob', 'def:set-outer', 'def:set-rows', 'eq:set-cg', 'lem:flh-hat']
+  proof-refs: ['cor:gau-colours', 'cor:red-can', 'def:gau-Fg', 'def:red-flatsum', 'lem:flh-hat', 'lem:set-M0sympl', 'prop:gam-hatflat', 'prop:gau-quintic', 'prop:gau-symp', 'prop:set-cyclicLR', 'prop:tra-can', 'sec:tra', 'thm:con-Pa', 'thm:con-Pb', 'thm:con-glue', 'thm:flh-main', 'thm:gam-D', 'thm:gam-main', 'thm:gau-G', 'thm:gau-R0', 'thm:gau-U', 'thm:gau-cyc', 'thm:mod-MLK']
+lem:mai-Psi [lem] sections/s10_main.tex:37 proof@sections/s10_main.tex:53
+  stmt-refs: []
+  proof-refs: ['cor:gau-rowsNN', 'def:set-M0', 'def:set-frames', 'def:set-frob', 'def:set-rows', 'lem:gau-confexp', 'prop:set-cyclicLR']
+def:mai-Fcf [defn] sections/s10_main.tex:61 proof@-
+  stmt-refs: ['cor:gau-rowsNN', 'lem:mai-Psi']
+  proof-refs: []
+cor:mai-gap [cor] sections/s10_main_2.tex:1 proof@sections/s10_main_2.tex:10
+  stmt-refs: ['def:set-frames']
+  proof-refs: ['def:flh-outer', 'def:mai-Fcf', 'def:set-graphsum', 'def:set-outer', 'lem:flh-frame', 'lem:flh-inputs', 'lem:gau-confexp', 'lem:mai-Psi', 'lem:set-M0sympl', 'lem:set-pushins', 'thm:gam-D', 'thm:mai-main']
+rmk:mai-constant [rmk] sections/s10_main_2.tex:38 proof@-
+  stmt-refs: ['rmk:set-cg', 'sec:sgn-lit']
+  proof-refs: []
+rmk:mai-graphlocal [rmk] sections/s10_main_2.tex:44 proof@-
+  stmt-refs: ['rmk:mai-stored', 'sec:evi', 'thm:gau-G']
+  proof-refs: []
+rmk:mai-necessity [rmk] sections/s10_main_2.tex:49 proof@-
+  stmt-refs: ['def:tra-edge', 'rmk:mai-annih', 'rmk:mai-stored', 'sec:evi', 'thm:red-main']
+  proof-refs: []
+lem:mai-Ghat [lem] sections/s10_main_3.tex:12 proof@sections/s10_main_3.tex:21
+  stmt-refs: ['def:gau-can', 'prop:gau-graded', 'thm:gau-U']
+  proof-refs: ['def:set-tau']
+cor:mai-natfact [cor] sections/s10_main_3.tex:25 proof@sections/s10_main_3.tex:39
+  stmt-refs: ['def:set-frames', 'lem:mai-Ghat']
+  proof-refs: ['cor:gau-colours', 'def:set-M0', 'def:set-tau', 'lem:flh-inputs', 'lem:gau-R1', 'lem:mai-Ghat', 'lem:mai-Psi', 'lem:set-M0sympl', 'lem:set-canon', 'prop:set-modrows', 'thm:gau-R0', 'thm:gau-U']
+cor:mai-actual [cor] sections/s10_main_3.tex:49 proof@sections/s10_main_3.tex:54
+  stmt-refs: ['thm:gau-R0']
+  proof-refs: ['cor:gau-colours', 'def:gau-can', 'lem:flh-inputs', 'thm:gam-D', 'thm:gau-G', 'thm:gau-R0']
+lem:mai-pole [lem] sections/s10_main_4.tex:6 proof@sections/s10_main_4.tex:15
+  stmt-refs: []
+  proof-refs: ['prop:gau-equalprod']
+cor:mai-univ [cor] sections/s10_main_4.tex:19 proof@sections/s10_main_4.tex:30
+  stmt-refs: ['def:gau-can', 'def:gau-onepole', 'prop:gau-graded', 'thm:gau-U']
+  proof-refs: ['def:tra-dressing', 'lem:gau-R1', 'lem:gau-uniq', 'lem:gau-vanmod', 'lem:gau-vanq', 'prop:gau-graded', 'prop:gau-symp', 'thm:gau-G', 'thm:gau-U', 'thm:mod-MLK', 'thm:red-main']
+rmk:mai-annih [rmk] sections/s10_main_4.tex:34 proof@-
+  stmt-refs: ['def:tra-dressing', 'lem:flh-inputs', 'thm:mod-MLK', 'thm:red-main']
+  proof-refs: []
+rmk:mai-stored [rmk] sections/s10_main_4.tex:39 proof@-
+  stmt-refs: ['prop:gau-symp', 'sec:sgn-norm', 'thm:gau-G', 'thm:gau-U']
+  proof-refs: []
+lem:set-grading [lem] sections/a1_cyclicLR.tex:7 proof@sections/a1_cyclicLR.tex:12
+  stmt-refs: []
+  proof-refs: []
+lem:set-unitfrob [lem] sections/a1_cyclicLR.tex:20 proof@sections/a1_cyclicLR.tex:25
+  stmt-refs: []
+  proof-refs: []
+lem:set-periods [lem] sections/a1_cyclicLR.tex:29 proof@sections/a1_cyclicLR.tex:42
+  stmt-refs: []
+  proof-refs: ['eq:set-PF4', 'lem:set-pf5']
+lem:set-birkhoff [lem] sections/a1_cyclicLR.tex:54 proof@sections/a1_cyclicLR.tex:63
+  stmt-refs: []
+  proof-refs: ['lem:set-grading', 'lem:set-periods', 'lem:set-unitfrob']
+lem:set-wronskian [lem] sections/a1_cyclicLR.tex:67 proof@sections/a1_cyclicLR.tex:72
+  stmt-refs: []
+  proof-refs: ['eq:set-PF4', 'lem:set-periods']
+lem:set-order3 [lem] sections/a1_cyclicLR.tex:76 proof@sections/a1_cyclicLR.tex:81
+  stmt-refs: []
+  proof-refs: ['lem:set-periods']
+lem:gau-const [lem] sections/a2_cyclicPF4.tex:7 proof@sections/a2_cyclicPF4.tex:12
+  stmt-refs: []
+  proof-refs: []
+lem:gau-adj [lem] sections/a2_cyclicPF4.tex:16 proof@sections/a2_cyclicPF4.tex:21
+  stmt-refs: []
+  proof-refs: []
+lem:gau-conc [lem] sections/a2_cyclicPF4.tex:25 proof@sections/a2_cyclicPF4.tex:43
+  stmt-refs: []
+  proof-refs: ['lem:gau-adj', 'lem:gau-const']
+lem:gau-transv [lem] sections/a2_cyclicPF4.tex:58 proof@sections/a2_cyclicPF4.tex:67
+  stmt-refs: ['def:gau-conc']
+  proof-refs: ['lem:gau-conc']
+lem:gau-iso [lem] sections/a2_cyclicPF4.tex:71 proof@sections/a2_cyclicPF4.tex:80
+  stmt-refs: []
+  proof-refs: ['lem:gau-conc']
+lem:gau-sg [lem] sections/a2_cyclicPF4.tex:84 proof@sections/a2_cyclicPF4.tex:97
+  stmt-refs: ['lem:gau-iso']
+  proof-refs: ['lem:gau-conc', 'lem:gau-transv']
+lem:tra-conv [lem] sections/a3_uconv.tex:8 proof@sections/a3_uconv.tex:38
+  stmt-refs: ['cor:tra-slice', 'def:red-ML', 'def:set-modcohft', 'lem:gau-diag', 'lem:gau-vanshape', 'lem:set-dilaton', 'lem:set-modhom', 'lem:tra-E', 'lem:tra-T', 'lem:tra-frames', 'lem:tra-twoslot', 'prop:tra-can']
+  proof-refs: ['conv:tra-forms', 'cor:tra-slice', 'def:gau-van', 'lem:gau-vanmod', 'lem:gau-vanshape', 'lem:set-dilaton', 'lem:set-modhom', 'lem:tra-frames', 'lem:tra-sum', 'lem:tra-twoslot']
+def:fsp-ring [defn] sections/a_formalsp.tex:12 proof@-
+  stmt-refs: []
+  proof-refs: []
+lem:fsp-ring [lem] sections/a_formalsp.tex:19 proof@sections/a_formalsp.tex:32
+  stmt-refs: []
+  proof-refs: []
+def:fsp-wick [defn] sections/a_formalsp.tex:36 proof@-
+  stmt-refs: ['lem:fsp-ring', 'sec:con']
+  proof-refs: []
+lem:fsp-univ [lem] sections/a_formalsp_2.tex:4 proof@sections/a_formalsp_2.tex:14
+  stmt-refs: []
+  proof-refs: ['lem:fsp-ring']
+lem:fsp-const [lem] sections/a_formalsp_2.tex:18 proof@sections/a_formalsp_2.tex:23
+  stmt-refs: []
+  proof-refs: ['eq:fsp-univ']
+lem:fsp-homog [lem] sections/a_formalsp_2.tex:27 proof@sections/a_formalsp_2.tex:35
+  stmt-refs: []
+  proof-refs: []
+lem:fsp-ibp [lem] sections/a_formalsp_2.tex:43 proof@sections/a_formalsp_2.tex:48
+  stmt-refs: []
+  proof-refs: ['eq:fsp-gibp']
+lem:fsp-pg [lem] sections/a_formalsp_2.tex:57 proof@sections/a_formalsp_2.tex:72
+  stmt-refs: []
+  proof-refs: []
+lem:fsp-prod [lem] sections/a_formalsp_2.tex:81 proof@sections/a_formalsp_2.tex:90
+  stmt-refs: []
+  proof-refs: []
+lem:fsp-ift [lem] sections/a_formalsp_2.tex:94 proof@sections/a_formalsp_2.tex:99
+  stmt-refs: []
+  proof-refs: []
+lem:fsp-transl [lem] sections/a_formalsp_3.tex:4 proof@sections/a_formalsp_3.tex:9
+  stmt-refs: []
+  proof-refs: ['lem:fsp-ibp', 'lem:fsp-univ']
+cor:fsp-movebase [cor] sections/a_formalsp_3.tex:13 proof@sections/a_formalsp_3.tex:22
+  stmt-refs: []
+  proof-refs: ['lem:fsp-ift', 'lem:fsp-pg', 'lem:fsp-transl']
+lem:fsp-param [lem] sections/a_formalsp_3.tex:34 proof@sections/a_formalsp_3.tex:45
+  stmt-refs: ['cor:fsp-movebase']
+  proof-refs: ['cor:fsp-movebase', 'eq:fsp-univ', 'lem:fsp-ift', 'lem:fsp-univ']
+lem:fsp-dq [lem] sections/a_formalsp_3.tex:49 proof@sections/a_formalsp_3.tex:58
+  stmt-refs: ['cor:fsp-movebase']
+  proof-refs: ['cor:fsp-movebase', 'lem:fsp-param']
+lem:fsp-generic [lem] sections/a_formalsp_3.tex:62 proof@sections/a_formalsp_3.tex:81
+  stmt-refs: []
+  proof-refs: ['cor:fsp-movebase', 'lem:fsp-const', 'lem:fsp-dq', 'lem:fsp-ift', 'lem:fsp-univ']
+lem:fsp-piola [lem] sections/a_formalsp_4.tex:8 proof@sections/a_formalsp_4.tex:13
+  stmt-refs: []
+  proof-refs: []
+lem:fsp-cov [lem] sections/a_formalsp_4.tex:17 proof@sections/a_formalsp_4.tex:26
+  stmt-refs: ['lem:fsp-param']
+  proof-refs: ['lem:fsp-ibp', 'lem:fsp-piola', 'lem:fsp-ring', 'lem:fsp-univ']
+lem:fsp-cfu [lem] sections/a_formalsp_4.tex:37 proof@sections/a_formalsp_4.tex:46
+  stmt-refs: ['lem:fsp-cov']
+  proof-refs: ['lem:fsp-cov']
+lem:fsp-fubini [lem] sections/a_formalsp_4.tex:50 proof@sections/a_formalsp_4.tex:73
+  stmt-refs: []
+  proof-refs: ['lem:fsp-cov', 'lem:fsp-ift', 'lem:fsp-pg', 'lem:fsp-prod']
+def:fsp-stirling [defn] sections/a_formalsp_5.tex:7 proof@-
+  stmt-refs: []
+  proof-refs: []
+lem:fsp-stirfe [lem] sections/a_formalsp_5.tex:16 proof@sections/a_formalsp_5.tex:21
+  stmt-refs: ['def:fsp-stirling']
+  proof-refs: []
+lem:fsp-stirling [lem] sections/a_formalsp_5.tex:29 proof@sections/a_formalsp_5.tex:46
+  stmt-refs: ['eq:fsp-stirling']
+  proof-refs: ['def:fsp-wick', 'eq:fsp-stirling', 'eq:fsp-univ', 'lem:fsp-const', 'lem:fsp-ibp', 'lem:fsp-param', 'lem:fsp-stirfe']
+lem:fsp-dlmf5118 [lem] sections/a_formalsp_5.tex:58 proof@sections/a_formalsp_5.tex:68
+  stmt-refs: []
+  proof-refs: ['lem:fsp-stirfe']
+lem:fsp-refl [lem] sections/a_formalsp_5.tex:72 proof@sections/a_formalsp_5.tex:78
+  stmt-refs: ['lem:con-form']
+  proof-refs: ['lem:fsp-stirfe']
+lem:fsp-res [lem] sections/a_formalsp_5.tex:86 proof@sections/a_formalsp_5.tex:97
+  stmt-refs: []
+  proof-refs: []

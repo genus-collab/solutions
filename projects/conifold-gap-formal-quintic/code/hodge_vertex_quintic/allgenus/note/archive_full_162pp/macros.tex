@@ -1,0 +1,76 @@
+% The notation of the note. Loaded by the main file after the preamble.
+% A section file defines a new macro only if it is unavoidable, at its top, with \providecommand and the section prefix.
+
+%-------------------------------------------------------------------------------
+% Variables, points, rings
+\newcommand{\Dq}{D}                            % q d/dq = -(1-u) d/du
+\newcommand{\zh}{\hat{z}}                      % z/s^4 = L^4 z
+\newcommand{\tc}{t_{\mathrm{c}}}               % varpi_1/varpi_0
+\newcommand{\Cstar}{\mathbb{C}_{\ast}}         % C minus {0, 1, zeta, ..., zeta^4}
+\newcommand{\AL}{\mathbb{A}_{L}}               % Q[L, L^{-1}, (L^5 - 1)^{-1}]
+\newcommand{\bbH}{\mathbb{H}}                  % the state space, flat basis H^a
+\newcommand{\Qn}{\mathscr{Q}}                  % the degree variable of F_g
+\newcommand{\logq}{\mathfrak{l}}               % the formal log q
+\newcommand{\Nring}{\mathscr{N}}               % the presented differential ring
+\newcommand{\Cexp}{\mathscr{C}}                % the conifold expansion \Cexp_{\alpha,\beta}
+\DeclareMathOperator{\Wr}{Wr}                  % Wronskian
+\DeclareMathOperator{\Gau}{Gau}                % solution module of the gauge equation
+\DeclareMathOperator{\wt}{wt}                  % weight
+\DeclareMathOperator{\Hess}{Hess}              % Hessian
+
+%-------------------------------------------------------------------------------
+% The formal quintic, rows, (QRR)
+\newcommand{\PFfour}{\mathrm{PF}_{4}}
+\newcommand{\PFfive}{\mathrm{PF}_{5}}
+\newcommand{\TFT}{\boldsymbol{\omega}}         % TFT (\TFT, \hat\TFT, \TFT^{\mathrm m}_v)
+\newcommand{\Qr}{\mathcal{Q}}                  % rows Q^{(i)}_a
+\newcommand{\Phiact}{\Phi^{\mathrm{act}}}
+\newcommand{\Phican}{\Phi^{\mathrm{can}}}
+\newcommand{\PhiSP}{\Phi^{\mathrm{SP}}}
+\newcommand{\bk}{\mathsf{b}}                   % \bk_k = B_{2k}/(2k(2k-1))
+\newcommand{\bw}{\mathbf{w}}                   % \bw_i
+\newcommand{\hw}{h_{\bw}}                      % h_{\bw}
+\newcommand{\ttr}{\mathfrak{t}}                % PPZ translation \ttr_R(z) = z1 - zR^{-1}(z)1
+
+%-------------------------------------------------------------------------------
+% Cyclic systems, gauges, normalisation
+\newcommand{\Bprod}{\mathcal{B}}               % prod_a b_a
+\newcommand{\Pc}{P_{\mathrm{can}}}             % the canonical gauge
+\newcommand{\Dn}{\mathsf{D}}                   % normalisation series
+\newcommand{\cn}{\mathsf{c}}                   % freedom P -> P c(z)
+\newcommand{\Ghat}{\hat{G}}
+\newcommand{\Rhat}{\hat{R}}
+\newcommand{\YC}{Y^{\mathrm{C}}}
+\newcommand{\YCQ}{Y^{\mathrm{C}}_{\mathrm{Q}}}
+\newcommand{\IC}{I^{\mathrm{C}}}
+\newcommand{\Conc}{\mathcal{C}}                % concomitant
+\newcommand{\Jet}{\mathcal{J}}                 % jet matrix
+\newcommand{\Mcyc}{M_{\mathrm{cyc}}}
+\newcommand{\sh}{\mathrm{sh}}                  % the automorphism ell -> ell + 1
+\newcommand{\fc}{\mathfrak{f}}                 % free coefficients \fc_m
+\newcommand{\Fg}[1]{(\mathrm{F}_{#1})}         % the window (F_g)
+
+%-------------------------------------------------------------------------------
+% The model, transport, topological recursion
+\newcommand{\Wv}{W_{v}}                        % p^4/4 + v/p
+\newcommand{\Mo}{M_{0}}                        % the model R-matrix in Teleman form
+\newcommand{\Fs}{\mathsf{F}}                   % model row series \Fs_b(t)
+\newcommand{\Fm}{F^{\mathrm{m}}}               % model free energy
+\newcommand{\FTR}{F^{\mathrm{TR}}}             % TR free energy
+\newcommand{\cH}{\mathcal{H}}                  % loop spaces
+\newcommand{\cR}{\mathcal{R}}                  % weighted rings (appendix A)
+\newcommand{\cV}{\mathcal{V}}                  % the residue (Section 8)
+\newcommand{\cX}{\mathcal{X}}                  % the variation field (Section 6)
+\newcommand{\sK}{\mathcal{K}}                  % the slice K
+\newcommand{\sKo}{\mathcal{K}_{0}}             % its kernel part K_0
+\newcommand{\fr}{\mathrm{frame}}               % \fr(k,a)
+\newcommand{\se}{\mathsf{e}}                   % Euler-dilaton vector z1 + vH
+\newcommand{\ML}[1]{\mathrm{ML}_{\mathcal{K}}(#1)}  % the Model Lemma on K at genus #1
+
+%-------------------------------------------------------------------------------
+% Connection problem, Gamma identity, formal stationary phase
+\newcommand{\fa}{\mathfrak{a}}                 % amplitude
+\newcommand{\SPn}{\mathrm{SP}^{\circ}}         % normalised stationary phase
+\newcommand{\SPh}{\widehat{\mathrm{SP}}}       % divided by its constant term
+\newcommand{\Gst}{\Gamma_{\mathrm{St}}}        % formal Stirling form
+\newcommand{\Ginf}{G_{\infty}}                 % the orbifold value

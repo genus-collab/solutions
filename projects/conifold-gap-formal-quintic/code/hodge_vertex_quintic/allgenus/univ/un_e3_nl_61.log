@@ -1,0 +1,70 @@
+==============================================================================================================
+un_e3_nl: p = 2^61-1, D built mod (zhat^7, u^4), genera [2, 3]
+--------------------------------------------------------------------------------------------------------------
+case A1
+      solve_ann: converged after 2 iteration(s)
+   X: 14 non-zero entries (zhat-orders [1, 2, 3, 4]); infinitesimally symplectic: True; flat-regular: True
+   annihilation (D Y^C_Q)_+ = 0 in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 4 u^1 + 437/90 u^2 + 157957/18225 u^3) e_1   [constant <=> could be a gauge]
+   T_eff = -[z^-1 e_0] D Y^C_Q = u (1 u^0 + 49/45 u^1 + 27797/12150 u^2 + 3344791/1020600 u^3)
+   genus 2: dressed rows symplectic mod (zhat^4, u^2): True
+   genus 2: ALL 6 outer graphs with edges are O(u^2): REGULAR
+   genus 2: vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1   -> c_g T_eff^-2 + 0
+   RESULT A1 genus 2: edge graphs REGULAR, vertex graph = c_g T_eff^(2-2g)   (1 s)
+   genus 3: dressed rows symplectic mod (zhat^7, u^4): True
+   genus 3: ALL 41 outer graphs with edges are O(u^4): REGULAR
+   genus 3: vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1   -> c_g T_eff^-4 + 0
+   RESULT A1 genus 3: edge graphs REGULAR, vertex graph = c_g T_eff^(2-2g)   (5 s)
+--------------------------------------------------------------------------------------------------------------
+case A2
+      solve_ann: converged after 2 iteration(s)
+   X: 18 non-zero entries (zhat-orders [0, 1, 2, 3, 4]); infinitesimally symplectic: True; flat-regular: True
+   annihilation (D Y^C_Q)_+ = 0 in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 1/3 u^1 + -11/360 u^2 + 1078643/1360800 u^3) e_1   [constant <=> could be a gauge]
+   T_eff = -[z^-1 e_0] D Y^C_Q = u (1 u^0 + 27/10 u^1 + 141283/75600 u^2 + 866297/272160 u^3)
+   genus 2: dressed rows symplectic mod (zhat^4, u^2): True
+   genus 2: ALL 6 outer graphs with edges are O(u^2): REGULAR
+   genus 2: vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1   -> c_g T_eff^-2 + 0
+   RESULT A2 genus 2: edge graphs REGULAR, vertex graph = c_g T_eff^(2-2g)   (0 s)
+   genus 3: dressed rows symplectic mod (zhat^7, u^4): True
+   genus 3: ALL 41 outer graphs with edges are O(u^4): REGULAR
+   genus 3: vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1   -> c_g T_eff^-4 + 0
+   RESULT A2 genus 3: edge graphs REGULAR, vertex graph = c_g T_eff^(2-2g)   (3 s)
+--------------------------------------------------------------------------------------------------------------
+case B1
+   X: 18 non-zero entries (zhat-orders [1, 2, 3, 4]); infinitesimally symplectic: True; flat-regular: True
+   annihilation (D Y^C_Q)_+ = 0 in the window: False  violated at zhat^m, first hatted u-order: {1: 1, 2: 1, 3: 2, 4: 3}
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 4 u^1 + 437/90 u^2 + 309839/36450 u^3) e_1   [constant <=> could be a gauge]
+   T_eff = -[z^-1 e_0] D Y^C_Q = u (1 u^0 + 49/45 u^1 + 27797/12150 u^2 + [1343844569614034552 mod p] u^3)
+   genus 2: dressed rows symplectic mod (zhat^4, u^2): True
+   genus 2: 1 of 6 outer graphs with edges are SINGULAR; (edges, first non-zero u-order): number of graphs = {(1, 1): 1}
+        e.g. outer graph 2 (E=1, gv=(1, 1)): ['0', '-1/864']
+   genus 2: vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1   -> c_g T_eff^-2 + 0
+   RESULT B1 genus 2: edge graphs SINGULAR, vertex graph = c_g T_eff^(2-2g)   (0 s)
+   genus 3: dressed rows symplectic mod (zhat^7, u^4): True
+   genus 3: 14 of 41 outer graphs with edges are SINGULAR; (edges, first non-zero u-order): number of graphs = {(1, 1): 2, (2, 2): 5, (3, 3): 7}
+        e.g. outer graph 1 (E=1, gv=(1, 2)): ['0', '-7/216000', '553/1080000', '[864883369009265626 mod p]']
+        e.g. outer graph 2 (E=1, gv=(2,)): ['0', '-1/4500', '2941/810000', '[1652407976311052232 mod p]']
+        e.g. outer graph 3 (E=2, gv=(0, 2)): ['0', '0', '-67/202500', '[658584166684374730 mod p]']
+        e.g. outer graph 4 (E=2, gv=(1,)): ['0', '0', '1/2700', '-27749/1822500']
+   genus 3: vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + ([1022418100825087997 mod p]) T^-1   -> NOT a pure power of T_eff
+   RESULT B1 genus 3: edge graphs SINGULAR, vertex graph not c_g T_eff^(2-2g)   (3 s)
+--------------------------------------------------------------------------------------------------------------
+case B2
+      solve_ann: converged after 2 iteration(s)
+   X: 14 non-zero entries (zhat-orders [1, 2, 3, 4]); infinitesimally symplectic: True; flat-regular: True
+   annihilation (D Y^C_Q)_+ = 0 in the window: False  violated at zhat^m, first hatted u-order: {1: 2, 2: 3}
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 4 u^1 + 437/90 u^2 + 157957/18225 u^3) e_1   [constant <=> could be a gauge]
+   T_eff = -[z^-1 e_0] D Y^C_Q = u (1 u^0 + 49/45 u^1 + 27797/12150 u^2 + 3344791/1020600 u^3)
+   genus 2: dressed rows symplectic mod (zhat^4, u^2): True
+   genus 2: ALL 6 outer graphs with edges are O(u^2): REGULAR
+   genus 2: vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1   -> c_g T_eff^-2 + 0
+   RESULT B2 genus 2: edge graphs REGULAR, vertex graph = c_g T_eff^(2-2g)   (0 s)
+   genus 3: dressed rows symplectic mod (zhat^7, u^4): True
+   genus 3: 3 of 41 outer graphs with edges are SINGULAR; (edges, first non-zero u-order): number of graphs = {(1, 2): 2, (2, 3): 1}
+        e.g. outer graph 1 (E=1, gv=(1, 2)): ['0', '0', '1/252000', '-23/453600']
+        e.g. outer graph 2 (E=1, gv=(2,)): ['0', '0', '1/14000', '-109/157500']
+        e.g. outer graph 3 (E=2, gv=(0, 2)): ['0', '0', '0', '67/472500']
+   genus 3: vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1   -> c_g T_eff^-4 + 0
+   RESULT B2 genus 3: edge graphs SINGULAR, vertex graph = c_g T_eff^(2-2g)   (4 s)
+UN_E3_NL done

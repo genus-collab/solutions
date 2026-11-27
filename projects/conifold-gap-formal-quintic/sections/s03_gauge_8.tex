@@ -1,0 +1,71 @@
+% Section 3, part 8 of 8: the normalisation series D, the rows in the ring, the colours of D, (F_g).
+
+\begin{thm}[The normalisation series $\Dn$; colour $0$]\genusstatus{AI-proposed, unchecked}
+\label{thm:gau-R0}
+Let $(\alpha,\beta)$ be a conifold frame, $\Pc$ the canonical gauge, and $\Qr^{\mathrm m,(i)}$ the model columns of \cref{lem:gau-colmod} at $v=v(u)$.
+\begin{enumerate}
+\item For every $i$, $\Pc\Qr^{\mathrm m,(i)}$ is a formal WKB solution of the quintic system with exponential $\re^{u_i/z}$: its rows $X_a\in\bbQ(\zeta)\lser s\fps z$ satisfy $(z\Dq+\zeta^iL)X_a=\kappa_aX_{a+1}$ for $a\in\bbZ/5$, with $L=s^{-1}$. With $\Lambda_s:=\diag(s^{1-\nu_a})$, $\Lambda_\varsigma:=\diag(\varsigma^{1-\nu_b})$ and $\Ghat(u,\zh):=\Lambda_s\Pc(u,s^4\zh)\Lambda_\varsigma^{-1}$ (the hatted gauge of \cref{lem:mai-Ghat}),
+\[
+\Lambda_s\,\Pc\,\Qr^{\mathrm m}\big|_{z=s^4\zh}=\Ghat(u,\zh)\,\Rhat^{\mathrm m}(\tau(u)\zh),\qquad \coef{\zh^k}\Ghat_{b+k,b}=\tau^{(1-\nu_b)/4}u^{\mu(b,k)}p_{k,b}(u),
+\]
+with $\mu(b,k)=(4k+\nu_b-\nu_{b+k})/5\in\bbZ$, $\mu(b,k)\geq\max(0,(4k-4)/5)$; the product $\Ghat(u,\zh)\Rhat^{\mathrm m}(\tau\zh)$ is a power series in $u$ whose coefficients are power series in $\zh$.
+\item $\Phican(\zh,u):=\varpi_0\cdot\bigl[\Ghat(u,\zh)\Rhat^{\mathrm m}(\tau\zh)\bigr]_{00}$ (row $0$, colour $0$) solves \eqref{eq:gau-HPF}, with coefficients in $\bbQ\fps u$ and $\mathrm{ph}^{\mathrm{can}}_0=1$. Hence every $\mathrm{ph}^{\mathrm{can}}_n$ is a polynomial in $u$ (\cref{lem:gau-poly}) and $A^{\mathrm{can}}_n:=L^{4n+1}\mathrm{ph}^{\mathrm{can}}_n(L^{-5})$ lies in $\bbQ[L,L^{-1}]$.
+\item Let $A^{\mathrm{act}}:=C_0\Qr^{(0)}_0=\sum_nA^{\mathrm{act}}_nz^n$ be the flat amplitude of the actual colour-$0$ row $0$ (\cref{def:set-rows}), with $A^{\mathrm{act}}_n\in\bbQ(\zeta)\fps q$. In $\bbQ(\zeta)\fps q$, with $L=(1-5^5q)^{-1/5}$, both $A^{\mathrm{can}}:=\sum_nA^{\mathrm{can}}_nz^n$ and $A^{\mathrm{act}}$ are colour-$0$ WKB amplitudes of $\PFfive$ with coefficient $L$ at $z^0$. Hence $A^{\mathrm{can}}=A^{\mathrm{act}}\,\Dn_0(z)$ for a unique $\Dn_0\in1+z\bbQ(\zeta)\fps z$, and every $A^{\mathrm{act}}_n$ is the image of a unique element of $\bbQ(\zeta)[L,L^{-1}]$ under $L\mapsto(1-5^5q)^{-1/5}$, again written $A^{\mathrm{act}}_n$.
+\item In $\bbQ(\zeta)[L,L^{-1}]\fps z$, embedded in $\bbQ(\zeta)\lser s\fps z$ by $L\mapsto s^{-1}$, the identity of (iii) holds; in hatted form it reads $\Phiact(\zh,u)\,\Dn_0(s^4\zh)=\Phican(\zh,u)$, $\Phiact:=\Phi_0=L^{-1}A^{\mathrm{act}}$. The rows of the actual colour-$0$ column have conifold expansions (\cref{cor:gau-rowsNN}), they satisfy $(z\Dq+L)X_a=\kappa_aX_{a+1}$, and
+\begin{equation}
+\label{eq:gau-R0zero}
+\Qr^{(0)}\,\Dn_0(z)=\Pc\,\Qr^{\mathrm m,(0)}(v(u)),
+\end{equation}
+with $\Dn_0$ constant in $u$ and the same exponential $\re^{u_0/z}$ stripped on both sides.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+(i) By \cref{lem:gau-colmod}~(ii) and the chain rule, $z\de_u\Qr^{\mathrm m,(i)}+(\de_uU_i)\Qr^{\mathrm m,(i)}=\tilde A\Qr^{\mathrm m,(i)}$ with $U_i=U_i(v(u))=-\frac54\zeta^iu^{4/5}/\tau=u_i-u_i^{\mathrm c}$ (\cref{def:set-tau}, \cref{lem:set-canon}), so $\de_uU_i=\de_uu_i$. For $X:=\Pc\Qr^{\mathrm m,(i)}$ the gauge equation gives $z\de_uX+(\de_uu_i)X=AX$, which is $(z\Dq+\zeta^iL)X_a=\kappa_aX_{a+1}$ after multiplication by $-(1-u)$; the amplitudes of $\re^{u_i/z}$ and $\re^{U_i/z}$ agree, as $u_i-U_i=u_i^{\mathrm c}$ is constant. Hatting: $\varsigma=s\tau^{-1/4}$ (\cref{def:set-tau}), so $z/\varsigma^4=\tau\zh$, $\Lambda_\varsigma\Qr^{\mathrm m}=\Rhat^{\mathrm m}(\tau\zh)$, and the entry $(b+k,b)$ of $\Ghat$ at $\zh^k$ is $s^{1-\nu_{b+k}}s^{4k}p_{k,b}\,s^{\nu_b-1}\tau^{(1-\nu_b)/4}$. Since $\nu_a\equiv-a$ and $\nu\in\{-1,\dots,3\}$, $\mu(b,k)\in\bbZ$, $\mu(b,k)\geq(4k-4)/5$ and $\mu(b,0)=0$.
+
+(ii) As $\nu_0=0$, $L\Phican=\varpi_0(\Pc\Qr^{\mathrm m,(0)})_0$. By (i) and \cref{cor:gau-cycsys}~(ii) ($\cR=\bbQ\lser s\lser z$, $w=L$, $(y_0,y_1)=(\varpi_0,\varpi_1)$), this solves $\PFfive^{(0)}$, so $\Phican$ solves \eqref{eq:gau-HPF} by \cref{lem:gau-HPF}~(i). Colour $0$ is rational ($\Rhat^{\mathrm m,(0)}_b=\Fs_b$, \cref{def:set-M0}; \cref{def:gau-can}), so by (i) the coefficients lie in $\bbQ\fps u$; $\Ghat(u,0)$ is diagonal with $(0,0)$ entry $\tau^{1/4}p_{0,0}=1/\varpi_0$ (\cref{lem:gau-diag}) and $\Fs_0(0)=1$, so $\mathrm{ph}^{\mathrm{can}}_0=1$. \Cref{lem:gau-poly}~(i) applies, and $A^{\mathrm{can}}_n=u^{-(4n+1)/5}\mathrm{ph}^{\mathrm{can}}_n(u)\in\bbQ[L,L^{-1}]$.
+
+(iii) $L\mapsto(1-5^5q)^{-1/5}$ and $L\mapsto s^{-1}$ are injective homomorphisms of differential rings on $\bbQ(\zeta)[L,L^{-1}]$, $\Dq L=(L^6-L)/5$ (the first as $L-1$ has order $1$ in $q$). The colour-$0$ WKB equations of $A^{\mathrm{can}}$ are identities in $\bbQ[L,L^{-1}]$ that hold after $L\mapsto s^{-1}$ by (ii) ($\sum_nA^{\mathrm{can}}_nz^n=L\Phican$), hence in $\bbQ\fps q$; and $A^{\mathrm{can}}_0=L$. $A^{\mathrm{act}}=L\Phi_0$ is a colour-$0$ WKB amplitude by \cref{cor:set-cyclicPF5}~(b) in the form $\PFfive^{(0)}(L\Phi_0)=0$ (proof after \cref{def:set-rows}), with $A^{\mathrm{act}}_0=C_0\eta(1,\tilde e_0)=L$ (\cref{def:set-frob}). \Cref{lem:gau-wkb}~(ii) with $\Bbbk=\bbQ(\zeta)$ gives $\Dn_0$, and $A^{\mathrm{act}}_n=\sum_{m\leq n}A^{\mathrm{can}}_m\coef{z^{n-m}}\Dn_0^{-1}$ is the image of a unique Laurent polynomial.
+
+(iv) By injectivity the identity of (iii) holds in $\bbQ(\zeta)[L,L^{-1}]\fps z$, hence in $\bbQ(\zeta)\lser s\fps z$; divide by $L$ and put $z=s^4\zh$. Row $0$ of the actual colour-$0$ column is represented by $A^{\mathrm{act}}_n(L)c_0^{-1}$, and rows $a\geq1$ by the forward relations of \cref{prop:set-cyclicLR}, with coefficients represented in $\Nring$; this is \cref{cor:gau-rowsNN}~(i) for colour $0$ (whose proof uses (iii), not (iv)), and by \cref{prop:gau-quintic}~(i) the expansions satisfy $(z\Dq+L)X_a=\kappa_aX_{a+1}$ for $a\leq3$. Row $0$ of \eqref{eq:gau-R0zero}: $A^{\mathrm{act}}\Dn_0/\varpi_0=A^{\mathrm{can}}/\varpi_0=L\Phican/\varpi_0=(\Pc\Qr^{\mathrm m,(0)})_0$ by (ii). Rows $1,\dots,4$ of both sides follow from row $0$ by $X_{a+1}=\kappa_a^{-1}(z\Dq+L)X_a$ ($\Dn_0$ is constant; (i)), as does the closing relation on the left.
+\end{proof}
+
+\begin{cor}[The rows lie in the differential ring]\genusstatus{AI-proposed, unchecked}
+\label{cor:gau-rowsNN}
+\begin{enumerate}
+\item For all $i,a,n$ the row coefficient $\Qr^{(i)}_{a,n}$ is the evaluation (\cref{def:set-confexp}) of an explicit $\logq$-free element of $\Nring\otimes\bbQ(\zeta)$: for colour $0$, row $0$ is $A^{\mathrm{act}}_n(L)\,c_0^{-1}$ with $A^{\mathrm{act}}_n\in\bbQ(\zeta)[L,L^{-1}]$ (\cref{thm:gau-R0}~(iii)); the rows $a=1,\dots,4$ follow from $\Qr_{a+1,n}=(C_1\kappa^{\mathrm{LR}}_a)^{-1}(\Dq\Qr_{a,n-1}+L\Qr_{a,n})$, with $(C_1\kappa^{\mathrm{LR}}_a)^{-1}$ represented by $(c_0^2/\mathsf W,\ \mathsf W^2L^{-5}/c_0^2,\ c_0^2/\mathsf W,\ c_0^{-1})$; and colour $i$ is $\zeta^{i(a+1-n)}$ times colour $0$ (\cref{lem:gau-colrows}). These representatives are used throughout; in this sense the rows lie in $\Nring\otimes\bbQ(\zeta)$ and have conifold expansions. (After \cref{thm:con-glue}, $A^{\mathrm{act}}_n\in\bbQ[L,L^{-1}]$, and the colour-$0$ representatives lie in $\Nring$.)
+\item Consequently every polynomial over $\bbQ(\zeta)$ in finitely many row coefficients and in the $\Delta_i^{\pm1/2}=(\zeta^{4i}C_0L^{-1})^{\pm1}$ has a $\logq$-free representative; this applies to the edges, leaves and genus-$g$ graph terms built from the rows (\cref{def:mai-Fcf}).
+\item The covariance $\Qr^{(i)}_{a,n}=\zeta^{i(a+1-n)}\Qr^{(0)}_{a,n}$ holds for the representatives, hence for the conifold expansions and for the hatted rows $\hat{\Qr}_a=s^{1-\nu_a}\Qr_a$, $z=s^4\zh$.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+(i) The $\logq$-free subring of $\Nring$ (generated by $L^{\pm1}$, the $c_j$, the $i_j$, $c_0^{-1}$, $\mathsf W^{-1}$) is $\Dq$-stable: $\PFfour c_0=0$ does not involve $\logq$, and in $\Conc(c_0,c_0\logq+i_0)=0$, which defines $\Dq i_2$, the coefficient of $\logq$ is $\sum_{a,b}c_a\Jet_{ab}c_b=0$ by antisymmetry of $\Jet$ (\cref{lem:gau-conc}~(iii)). The forward relations at $z^n$ give the recursion, with $\logq$-free coefficients (\cref{prop:gau-quintic}~(i)), and $\ev$ is a homomorphism of differential rings; colour $i$ is \cref{lem:gau-colrows}. (ii) $\Delta_i^{1/2}$ is represented by the unit $\zeta^{4i}c_0L^{-1}$. (iii) The conifold expansion is a $\bbQ(\zeta)$-linear ring homomorphism, and hatting multiplies $\coef{z^n}$ of row $a$ by $s^{1-\nu_a+4n}$ in every colour.
+\end{proof}
+
+\begin{cor}[The colours of $\Dn$]\genusstatus{AI-proposed, unchecked}
+\label{cor:gau-colours}
+For every $i\in\bbZ/5$, $\Dn_i(z):=\Dn_0(\zeta^{-i}z)$ satisfies, in $\bbQ(\zeta)\lser s\fps z$ and for the conifold expansions of the rows,
+\[
+\Qr^{(i)}\,\Dn_i(z)=\Pc\,\Qr^{\mathrm m,(i)}(v(u)),
+\]
+and it is the unique series in $\bbQ(\zeta)\fps z$ with this property. Hence, with $\Dn:=\diag(\Dn_0,\dots,\Dn_4)$ and the matrices of rows (columns indexed by the colours),
+\begin{equation}
+\label{eq:gau-R0}
+\Qr\,\Dn=\Pc\,\Qr^{\mathrm m}(v(u)).
+\end{equation}
+Every $\Dn_i$ lies in $1+z\bbQ(\zeta)\fps z$, with $\coef{z^n}\Dn_i=\zeta^{-in}\coef{z^n}\Dn_0$; so $\Dn_0=1$ implies $\Dn=1$. In particular the expanded rows of every colour form a WKB solution of the quintic system with exponential $\re^{u_i/z}$.
+\end{cor}
+
+\begin{proof}
+By \cref{lem:gau-colmod}~(iii), $\operatorname{Rot}_i\Pc=\Pc$ (\cref{def:gau-can}), the product rules of \cref{prop:gau-graded}~(iv), \eqref{eq:gau-R0zero} and \cref{cor:gau-rowsNN}~(iii),
+\[
+\Pc\Qr^{\mathrm m,(i)}=\operatorname{Rot}_i\bigl(\Pc\Qr^{\mathrm m,(0)}\bigr)=\operatorname{Rot}_i\bigl(\Qr^{(0)}\Dn_0(z)\bigr)=\operatorname{Rot}_i(\Qr^{(0)})\,\Dn_0(\zeta^{-i}z)=\Qr^{(i)}\,\Dn_0(\zeta^{-i}z).
+\]
+Uniqueness: $\Qr^{(i)}_0$ is not a zero divisor, its coefficient of $z^0$ being $\zeta^is^{-1}/\varpi_0\neq0$. The coefficients of $\Dn_i$ follow from \cref{thm:gau-R0}~(iii), and $\Qr^{(i)}=\Pc\Qr^{\mathrm m,(i)}\Dn_i^{-1}$ is a WKB solution by \cref{thm:gau-R0}~(i).
+\end{proof}
+
+\begin{defn}[The window $\Fg{g}$]
+\label{def:gau-Fg}
+For $g\geq2$, $\Fg{g}$ is the statement $\Dn_0\equiv1\pmod{z^{3g-2}}$ for the series $\Dn_0$ of \cref{thm:gau-R0} in the conifold frame considered; by \cref{cor:gau-colours} it implies $\Dn\equiv1\pmod{z^{3g-2}}$. It is the hypothesis of the comparison theorem (\cref{thm:flh-main}). By \cref{thm:gam-D}, $\Dn=1$, so $\Fg{g}$ holds for every $g\geq2$.
+\end{defn}

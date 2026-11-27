@@ -1,0 +1,9 @@
+(A) contributions per branch point at v = 1: ['-1/60', '-1/60', '-1/60', '-1/60', '-1/60']  total <-log p>_1 = -1/12
+    controls: opposite ray orientation 1/12 ; beta00 dropped 1/24 ; y3 dropped -11/96
+(B) local formula (sum over five branch points) = closed form at 8 points (v = 1, 32): mismatches 0
+(C) Res_{c_b} x^k omega_11 != 0 for (b,k), k <= 6: [] ; control Res_{c_b} p^k omega_11 != 0 for 40 of 45 (b,k)
+    Res_{p=0} x^5 omega_11 (v = 1) = -15/4 (non-zero: the circle pairing of x^5 is not zero)
+(D) closed form: <-log p>_1 at v = 1: -1/12  (-1/(12 v) = -1/12 )
+(D) closed form: <-log p>_1 at v = 32: -1/384  (-1/(12 v) = -1/384 )
+(D) closed form: <-log p>_1 at v = -3: 1/36  (-1/(12 v) = 1/36 )
+ALL CHECKS PASSED

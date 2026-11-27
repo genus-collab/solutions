@@ -1,0 +1,112 @@
+{
+ "ctrl": {
+  "c1": "c1_0=1, c1_1=2",
+  "N1_conditions_violated": [],
+  "low_orders_vanish": true,
+  "rhs_nonzero": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "rank": 6,
+  "rank_augmented": 6,
+  "consistent": true,
+  "seconds": 360,
+  "ctrl_n1_eq_stored": true,
+  "ctrl_A1_eq_stored": true
+ },
+ "pi_rand": {
+  "c1": "c1_0=-1, c1_1=-1",
+  "N1_conditions_violated": [],
+  "low_orders_vanish": true,
+  "rhs_nonzero": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "rank": 6,
+  "rank_augmented": 6,
+  "consistent": true,
+  "seconds": 372
+ },
+ "extra0": {
+  "c1": "c1_0=0, c1_1=-1",
+  "N1_conditions_violated": [],
+  "low_orders_vanish": true,
+  "rhs_nonzero": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "rank": 7,
+  "rank_augmented": 7,
+  "consistent": true,
+  "seconds": 360
+ },
+ "extra1": {
+  "c1": "c1_0=0, c1_1=-1",
+  "N1_conditions_violated": [],
+  "low_orders_vanish": true,
+  "rhs_nonzero": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "rank": 7,
+  "rank_augmented": 7,
+  "consistent": true,
+  "seconds": 447
+ },
+ "extra2": {
+  "c1": "c1_0=0, c1_1=-1",
+  "N1_conditions_violated": [],
+  "low_orders_vanish": true,
+  "rhs_nonzero": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "rank": 6,
+  "rank_augmented": 6,
+  "consistent": true,
+  "seconds": 541
+ },
+ "extra3": {
+  "c1": "c1_0=0, c1_1=-1",
+  "N1_conditions_violated": [],
+  "low_orders_vanish": true,
+  "rhs_nonzero": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "rank": 6,
+  "rank_augmented": 6,
+  "consistent": true,
+  "seconds": 488
+ }
+}

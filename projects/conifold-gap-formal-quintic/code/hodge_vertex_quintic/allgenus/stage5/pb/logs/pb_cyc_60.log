@@ -1,0 +1,8 @@
+pb_cyc.py 60   (exact over Q; operator identity tested on u^0..u^6 to O(u^52))
+  frame (0,0): PF4 = (1/varpi0) D (1/Dt) D (u varpi0^2 Dt^2) D (1/Dt) D (1/varpi0) on u^0..u^6, every coefficient below u^57: PASS
+  frame (1/3,-2/7): PF4 = (1/varpi0) D (1/Dt) D (u varpi0^2 Dt^2) D (1/Dt) D (1/varpi0) on u^0..u^6, every coefficient below u^57: PASS
+  frame (7/11,-3/5): PF4 = (1/varpi0) D (1/Dt) D (u varpi0^2 Dt^2) D (1/Dt) D (1/varpi0) on u^0..u^6, every coefficient below u^57: PASS
+  control [t = f2/f0, non-isotropic pair]: first mismatch at u^-2: PASS (fails as it must)
+  control [vanishing period with gamma = 1/2]: first mismatch at u^0: PASS (fails as it must)
+total 2.6 s
+ALL CHECKS PASSED

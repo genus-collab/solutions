@@ -1,0 +1,99 @@
+% Formal stationary phase, part 5 of 5: Stirling's series (sec:fsp-stirling) and the formal residue (sec:fsp-res). Last part.
+
+%-------------------------------------------------------------------------------
+\subsection{Stirling's series}
+\label{sec:fsp-stirling}
+
+\begin{defn}[Stirling forms]
+\label{def:fsp-stirling}
+Let $B_n$ be the Bernoulli numbers, $\xi/(\re^\xi-1)=\sum_nB_n\xi^n/n!$, and $B_n(\theta)$ the Bernoulli polynomials, $\xi\re^{\theta\xi}/(\re^\xi-1)=\sum_nB_n(\theta)\xi^n/n!$ \cite[24.2.3]{DLMF}. Recall $\bk_k=B_{2k}/(2k(2k-1))$, and put $\mu(Y):=\sum_{k\geq1}\bk_kY^{1-2k}\in Y^{-1}\bbQ\fps{1/Y}$ and $\beta_n(\theta):=(-1)^{n+1}B_{n+1}(\theta)/(n(n+1))$ ($n\geq1$), so that $\beta_{2k-1}(0)=\bk_k$ and $\beta_{2k}(0)=0$. The \emph{formal Stirling form} is the formal expression $\Gst(Y):=\exp\bigl((Y-\frac12)\log Y-Y+\frac12\log2\pi+\mu(Y)\bigr)$, in which $\log Y$ is a symbol with $\log(Y+\theta):=\log Y+\log(1+\theta/Y)$, the second logarithm being a series in $1/Y$; for an argument $a/z$ one reads $\log(a/z):=\log a-\log z$, and $\Gst(1+w):=w\,\Gst(w)$. For $M\in\bbZ$ put $\mathrm{Poch}_M(w):=\prod_{i=0}^{M-1}(1+iw)$ if $M\geq0$ and $\mathrm{Poch}_M(w):=\prod_{i=1}^{-M}(1-iw)^{-1}$ if $M<0$, so that $\mathrm{Poch}_{M+1}=(1+Mw)\mathrm{Poch}_M$; and for $m\in\bbZ$ let the \emph{normalised Stirling series} be
+\[
+\mathrm{St}_m(w):=\exp\Bigl((\tfrac1w+m-\tfrac12)\log(1+mw)-m+\sum_{k\geq1}\bk_k\,w^{2k-1}(1+mw)^{1-2k}\Bigr)\in1+w\bbQ\fps{w},
+\]
+the exponent having no constant term since $w^{-1}\log(1+mw)=m+O(w)$. The letter $\mu$ is local to this subsection.
+\end{defn}
+
+\begin{lem}[Stirling's functional equation]
+\label{lem:fsp-stirfe}
+In $\bbQ\fps{1/Y}$, $\rho(Y):=(Y+\frac12)\log(1+1/Y)-1+\mu(Y+1)-\mu(Y)=0$, with $\mu(Y+1)=\sum_k\bk_k(Y+1)^{1-2k}$ expanded in $1/Y$; with the conventions of \cref{def:fsp-stirling} this is $\Gst(Y+1)=Y\,\Gst(Y)$. Equivalently, $\mathrm{St}_{m+1}(w)=(1+mw)\,\mathrm{St}_m(w)$ for every $m\in\bbZ$. Hence $\mathrm{St}_m=\mathrm{Poch}_m\mathrm{St}_0$ and $\mathrm{St}_0(w)=\exp(\sum_k\bk_kw^{2k-1})$.
+\end{lem}
+
+\begin{proof}
+$\de_Y:=\dd/\dd Y$ maps $\bbQ\fps{1/Y}$ into $Y^{-2}\bbQ\fps{1/Y}$, so power series in $\de_Y$ act and compose as power series, and $\re^{\de_Y}f(Y)=f(Y+1)$, as $\sum_j\de_Y^j(Y^{-k})/j!=\sum_j\binom{-k}jY^{-k-j}=Y^{-k}(1+1/Y)^{-k}$. Since $\de_Y^2(Y^{-k})=k(k+1)Y^{-k-2}$, $\de_Y^2$ is injective on $Y^{-1}\bbQ\fps{1/Y}$, and $\rho\in Y^{-2}\bbQ\fps{1/Y}$; so it suffices to show $\de_Y^2\rho=0$. First, $\de_Y^2\mu=\sum_kB_{2k}Y^{-2k-1}=T-1/Y-1/(2Y^2)$ with $T:=(\de_Y/(\re^{\de_Y}-1))(1/Y)=\sum_n(B_n/n!)\de_Y^n(1/Y)=\sum_n(-1)^nB_nY^{-n-1}$ ($B_1=-1/2$, $B_n=0$ for odd $n>1$). As $(1-\re^{\de_Y})T=-\de_Y(1/Y)=1/Y^2$, $(1-\re^{\de_Y})(1/Y)=1/(Y(Y+1))$ and $(1-\re^{\de_Y})(1/Y^2)=1/Y^2-1/(Y+1)^2$,
+\[
+(\re^{\de_Y}-1)\,\de_Y^2\mu=-\frac1{Y^2}+\frac1{Y(Y+1)}+\frac12\Bigl(\frac1{Y^2}-\frac1{(Y+1)^2}\Bigr)=-\frac12\Bigl(\frac1Y-\frac1{Y+1}\Bigr)^2=-\frac1{2Y^2(Y+1)^2}.
+\]
+With $l:=\log(1+1/Y)$, $l'=-1/Y+1/(Y+1)$ and $l''=1/Y^2-1/(Y+1)^2$, so $\de_Y^2[(Y+\frac12)l]=2l'+(Y+\frac12)l''=1/(2Y^2(Y+1)^2)$. As $\mu(Y+1)-\mu(Y)=(\re^{\de_Y}-1)\mu$, $\de_Y^2\rho=0$. For the second form substitute $Y=1/w+m$, i.e.\ $1/Y=w/(1+mw)$, a continuous substitution of Laurent series: then $w^{2k-1}(1+mw)^{1-2k}=Y^{1-2k}$ and $\log(1+mw)=\log(wY)$, so $\log\mathrm{St}_m(w)=(Y-\frac12)\log(wY)-m+\mu(Y)$, the case $m+1$ replaces $Y$ by $Y+1$, and $\log(w(Y+1))=\log(wY)+\log(1+1/Y)$; hence $\log(\mathrm{St}_{m+1}/\mathrm{St}_m)=\log(1+mw)+\rho(1/w+m)$. So $\rho=0$ gives the recursion, and its case $m=0$ ($\mathrm{St}_1=\mathrm{St}_0$) gives back $\rho=0$. Induction up and down from $\mathrm{St}_0=\exp(\sum_k\bk_kw^{2k-1})$ ($1+mw$ is a unit) gives $\mathrm{St}_m=\mathrm{Poch}_m\mathrm{St}_0$. Finally, the logarithm of $\Gst(Y+1)/(Y\Gst(Y))$ is $\rho(Y)$.
+\end{proof}
+
+\begin{lem}[Stirling's series as a stationary phase]
+\label{lem:fsp-stirling}
+Let $a\in A^\times$ and $m\in\bbZ$. The phase $F(x):=a\log x-x$, taken as its Taylor series at $x=a$, $F(a+t)-F(a)=a\log(1+t/a)-t$, has the non-degenerate critical point $a$, with $F''(a)=-1/a$ and $C=a$; its critical value enters only through $[\re^{F(a)/z}]=[a^{a/z}\re^{-a/z}]$.
+
+(i) $\SPn_a[F;(x/a)^{m-1}]=\mathrm{St}_m(z/a)$; equivalently, for $M\in\bbZ$,
+\begin{equation}
+\label{eq:fsp-stirling}
+\SPn_a\bigl[a\log x-x;\ x^{M-1}\bigr]=a^{M-1}\,\mathrm{Poch}_M(z/a)\,\exp\Bigl(\sum_{k\geq1}\bk_k\,(z/a)^{2k-1}\Bigr).
+\end{equation}
+
+(ii) $\mathrm{SP}_a[x^{a/z+m}\re^{-x/z}\,\dd x/x]=[a^{a/z}\re^{-a/z}](2\pi z)^{1/2}a^{m-1/2}\,\mathrm{St}_m(z/a)$, with $[\det(-F''(a))^{-1/2}]=a^{1/2}$; with the measure $\dd x=x\cdot\dd x/x$ replace $m$ by $m+1$. So $x^m$ with $\dd x/x$ is the case $M=m$ of \eqref{eq:fsp-stirling}, and with $\dd x$ the case $M=m+1$.
+
+(iii) With $\log(a/z+m):=\log a-\log z+\log(1+mz/a)$ and $z^{a/z+m}:=\exp((a/z+m)\log z)$, the expansion of $z^{a/z+m}\Gst(a/z+m)$ is the right side of (ii): the $\log z$ terms add up to $\frac12\log z$, the $\log a$ terms to $(a/z+m-\frac12)\log a$, and the rest is $-a/z+\frac12\log2\pi+\log\mathrm{St}_m(z/a)$, as $(a/z+m)^{1-2k}=(z/a)^{2k-1}(1+mz/a)^{1-2k}$. So the stationary phase of $x^{a/z+m}\re^{-x/z}\dd x/x$ at $a$ is $z^{a/z+m}\Gst(a/z+m)$, and that of $x^{a/z+m}\re^{-x/z}\dd x$ is $z^{a/z+m+1}\Gst(a/z+m+1)$.
+
+(iv) $\mathrm{SP}_a[x^{a/z+m+1}\re^{-x/z}\,\dd x/x]=(a+mz)\,\mathrm{SP}_a[x^{a/z+m}\re^{-x/z}\,\dd x/x]$ for every $m\in\bbZ$.
+\end{lem}
+
+\begin{proof}
+\emph{Homogeneity.} $\coef{z^k}\SPn_a[F;(x/a)^e]=c_{k,e}a^{-k}$ with $c_{k,e}\in\bbQ$ independent of $A$ and $a$: in \eqref{eq:fsp-univ} a coefficient of $t^l$ in $F_{\geq3}=\sum_{l\geq3}(-1)^{l+1}t^l/(la^{l-1})$ carries $a^{1-l}$, one of $(1+t/a)^e$ carries $a^{-l}$, and $\langle t^{2j}\rangle_C=(2j-1)!!\,a^j$; a term with factors of degrees $l_1,\dots,l_r$ and an amplitude monomial of degree $l_0$, $\sum_{i\geq0}l_i=2(k+r)$, carries $a^{r-\sum_il_i+k+r}=a^{-k}$. Hence $N_m:=\SPn_a[F;(x/a)^{m-1}]=\mathfrak s_m(z/a)$ for universal $\mathfrak s_m\in1+w\bbQ\fps{w}$ (local notation).
+\emph{Step 1.} With $h:=x^m$, $h'+z^{-1}F'h=mx^{m-1}+z^{-1}(ax^{m-1}-x^m)$, so \cref{lem:fsp-ibp} gives $\SPn_a[F;x^m]=(a+mz)\SPn_a[F;x^{m-1}]$: this is (iv), and $N_{m+1}=(1+mw)N_m$, $w:=z/a$.
+\emph{Step 2.} Apply \cref{lem:fsp-param}~(iv) with $g(x):=\log(x/a)$ and the amplitude $(x/a)^{-1}$. Its right side is $\SPn_a[F;1]=N_1=N_0$ (Step 1). On the left, $F_\varepsilon=(a+\varepsilon)\log x-x-\varepsilon\log a$ has the critical point $a+\varepsilon$, $F_\varepsilon(a+\varepsilon)-F(a)=(a+\varepsilon)\log(1+\varepsilon/a)-\varepsilon$, the Hessian ratio is $a/(a+\varepsilon)$, and by the homogeneity over $A\fps{\varepsilon}$ and \cref{lem:fsp-const}, $\SPn_{a+\varepsilon}[F_\varepsilon;(x/a)^{-1}]=(1+\varepsilon/a)^{-1}\mathfrak s_0(z/(a+\varepsilon))$. So
+$\mathcal S_\varepsilon[F_\varepsilon;(x/a)^{-1}]=\exp\bigl(((a+\varepsilon)\log(1+\varepsilon/a)-\varepsilon)/z\bigr)(1+\varepsilon/a)^{-1/2}\mathfrak s_0(z/(a+\varepsilon))$. Each factor lies in the weighted ring of \cref{lem:fsp-param}~(iv) (the exponent has only terms $\varepsilon^dz^{-1}$, $d\geq2$), where $\varepsilon\mapsto z$ is a ring homomorphism; at $\varepsilon=z$,
+\[
+\mathfrak s_0(w)=\exp\bigl((\tfrac1w+\tfrac12)\log(1+w)-1\bigr)\,\mathfrak s_0\bigl(w/(1+w)\bigr),\qquad\exp\bigl((\tfrac1w+\tfrac12)\log(1+w)-1\bigr)\in1+w\bbQ\fps{w}.
+\]
+\emph{Step 3.} For $\mathfrak g(Y):=\log\mathfrak s_0(1/Y)\in Y^{-1}\bbQ\fps{1/Y}$ (local notation) this reads $\mathfrak g(Y)-\mathfrak g(Y+1)=(Y+\frac12)\log(1+1/Y)-1$, as $w/(1+w)=1/(Y+1)$ for $w=1/Y$. The operator $f\mapsto f(Y)-f(Y+1)$ sends $Y^{-k}$ to $kY^{-k-1}+O(Y^{-k-2})$, so it is injective on $Y^{-1}\bbQ\fps{1/Y}$; $\mu$ satisfies the same equation (\cref{lem:fsp-stirfe}). Hence $\mathfrak g=\mu$ and $\mathfrak s_0=\mathrm{St}_0$.
+\emph{Step 4.} $N_0=\mathrm{St}_0$, $N_{m+1}=(1+mw)N_m$ and $\mathrm{St}_{m+1}=(1+mw)\mathrm{St}_m$ give $N_m=\mathrm{St}_m$ for all $m\in\bbZ$, $1+mw$ being a unit: this is (i), and \eqref{eq:fsp-stirling} follows from $\SPn_a[F;x^{M-1}]=a^{M-1}N_M$ and $\mathrm{St}_M=\mathrm{Poch}_M\mathrm{St}_0$. (ii) is \cref{def:fsp-wick} with $\det(-F''(a))^{-1/2}=a^{1/2}$ and $x^{m-1}=a^{m-1}(x/a)^{m-1}$; (iii) is the displayed bookkeeping.
+\end{proof}
+
+\begin{lem}[The formal shifted Stirling series]
+\label{lem:fsp-dlmf5118}
+In $\bbQ[\theta]\fps{1/w}$,
+\begin{equation}
+\label{eq:fsp-5118}
+(w+\theta-\tfrac12)\log(1+\theta/w)-\theta+\sum_{k\geq1}\bk_k\,(w+\theta)^{1-2k}=\sum_{n\geq1}\beta_n(\theta)\,w^{-n};
+\end{equation}
+that is, with $\log(w+\theta):=\log w+\log(1+\theta/w)$, $\log\Gst(w+\theta)-[(w+\theta-\frac12)\log w-w+\frac12\log2\pi]=\sum_n\beta_n(\theta)w^{-n}$.
+\end{lem}
+
+\begin{proof}
+Both sides lie in $w^{-1}\bbQ[\theta]\fps{1/w}$; let $\ell(\theta)$ be the left side (local notation) and $D_n(\theta)\in\bbQ[\theta]$ the coefficient of $w^{-n}$ of the difference. At $\theta=0$ both sides are $\sum_k\bk_kw^{1-2k}$ ($B_{n+1}=0$ for even $n\geq2$), so $D_n(0)=0$. The substitution $Y=w+\theta$, $1/Y=w^{-1}(1+\theta/w)^{-1}$, is continuous, and $1+(\theta+1)/w=(1+\theta/w)(1+1/(w+\theta))$, so \cref{lem:fsp-stirfe} at $Y=w+\theta$ gives $\ell(\theta+1)-\ell(\theta)=\log(1+\theta/w)+\rho(w+\theta)=\log(1+\theta/w)$. On the right, the generating functions of \cite[24.2.3]{DLMF} at $\theta+1$ and $\theta$ differ by $\xi\re^{\theta\xi}$, so $B_k(\theta+1)-B_k(\theta)=k\theta^{k-1}$ \cite[24.4.1]{DLMF} and $\sum_n(\beta_n(\theta+1)-\beta_n(\theta))w^{-n}=\sum_n(-1)^{n+1}\theta^nw^{-n}/n=\log(1+\theta/w)$. So $D_n(\theta+1)=D_n(\theta)$, $D_n$ vanishes on $\bbZ_{\geq0}$, and $D_n=0$.
+\end{proof}
+
+\begin{lem}[Reflection]
+\label{lem:fsp-refl}
+As formal Stirling expressions in a variable $y$, with the symbols $\log y$, $\log(-y)$ and $\log(1-y)=\log(-y)+\log(1-1/y)$,
+$\log\Gst(y)+\log\Gst(1-y)=\log2\pi+(y-\frac12)(\log y-\log(-y))$. The value of $\log y-\log(-y)$ for chosen branches, an odd multiple of $\pi\ri$, is not a statement about formal series; it is fixed where the identity is used, in \cref{lem:con-form}~(d).
+\end{lem}
+
+\begin{proof}
+\Cref{lem:fsp-stirfe} at $Y=-y$ gives $(\frac12-y)\log(1-1/y)-1+\mu(1-y)-\mu(-y)=0$, hence $\log\Gst(1-y)=(\frac12-y)\log(-y)+y+\frac12\log2\pi+\mu(-y)$. Add $\log\Gst(y)=(y-\frac12)\log y-y+\frac12\log2\pi+\mu(y)$ and use $\mu(-y)=-\mu(y)$ (the exponents $1-2k$ are odd).
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The formal residue}
+\label{sec:fsp-res}
+
+\begin{lem}[The formal residue]
+\label{lem:fsp-res}
+Let $\Bbbk$ be a field of characteristic $0$, $X$ a variable and $\Bbbk\lser{\zh^{-1}}$ the Laurent series in $\zh^{-1}$, with valuation $\ord$. Let $\cR_{\mathrm{res}}$ be the set of sums $\sum_{j\in\bbZ}c_jX^j$, $c_j\in\Bbbk\lser{\zh^{-1}}$, with $\ord(c_j)\geq\epsilon|j|-M$ for all $j$, for some real $\epsilon>0$ and integer $M$, and $\Res\colon\cR_{\mathrm{res}}\to\Bbbk\lser{\zh^{-1}}$, $\sum_jc_jX^j\mapsto c_{-1}$, applied coefficientwise in $u$ on $\cR_{\mathrm{res}}\fps{u}$.
+
+(i) $\cR_{\mathrm{res}}$ is a $\Bbbk\lser{\zh^{-1}}$-algebra containing $\Bbbk\lser{\zh^{-1}}[X,X^{-1}]$ and $\exp(-f_0/\zh)$ for $f_0=P_+(X)+P_-(1/X)$, $P_\pm$ polynomials without constant term; $\dd/\dd X$ is a derivation of it.
+
+(ii) $\Res(\dd\Omega/\dd X)=0$ for $\Omega\in\cR_{\mathrm{res}}\fps{u}$. In particular, for $f=f_0+f_1$, $f_1\in u\Bbbk[X,X^{-1}]\fps{u}$, and $Q\in\Bbbk[\zh,\zh^{-1}][X,X^{-1}]\fps{u}$, $\re^{-f/\zh}Q:=\re^{-f_0/\zh}(\re^{-f_1/\zh}Q)\in\cR_{\mathrm{res}}\fps{u}$ and $\Res[\re^{-f/\zh}(Q'-\zh^{-1}f'Q)]=0$.
+
+(iii) For $\chi\in u\Bbbk[X,X^{-1}]\fps{u}$ and $\Omega\in\cR_{\mathrm{res}}\fps{u}$ put $\Omega(X+\chi):=\sum_{j\geq0}\Omega^{(j)}\chi^j/j!$ ($u$-adically convergent). Then $\Res_X[\Omega(X+\chi)(1+\chi')]=\Res[\Omega]$. The map $\Omega\mapsto\Omega(X+\chi)$ is a ring homomorphism, equal on Laurent polynomials to the substitution $X\mapsto X+\chi$, $(X+\chi)^{-1}=\sum_j(-1)^jX^{-1-j}\chi^j$; so for $\Omega=\re^{-f(Y)/\zh}\beta(Y)$ it is $\re^{-f(X+\chi)/\zh}\beta(X+\chi)$, expanded termwise in $u$.
+\end{lem}
+
+\begin{proof}
+(i) The coefficient of $X^j$ in a product is $\sum_ic'_ic''_{j-i}$, and $\ord(c'_ic''_{j-i})\geq\epsilon'|i|+\epsilon''|j-i|-M'-M''$ tends to infinity with $|i|$ and is $\geq\min(\epsilon',\epsilon'')|j|-M'-M''$; so the sum converges and the bound holds. In $\exp(-P_-(1/X)/\zh)=\sum_k(-P_-(1/X)/\zh)^k/k!$ the $k$-th term has $X$-exponents in $[-kd,-k]$, $d:=\deg P_-$, so the coefficient of $X^{-j}$ is a finite sum over $j/d\leq k\leq j$, of order $\geq j/d$; likewise for $P_+$. Differentiation multiplies $c_j$ by $j$ and shifts the index, preserving a bound of the same form. (ii) The $X^{-1}$-coefficient of $\sum_jjc_jX^{j-1}$ is $0\cdot c_0$; $\re^{-f_1/\zh}$ converges $u$-adically with coefficients in $\Bbbk[\zh^{-1}][X,X^{-1}]$, and $\frac{\dd}{\dd X}(\re^{-f/\zh}Q)=\re^{-f/\zh}(Q'-\zh^{-1}f'Q)$. (iii) $\Omega(X+\chi)(1+\chi')=\Omega+\frac{\dd}{\dd X}\sum_{j\geq1}\Omega^{(j-1)}\chi^j/j!$, since the derivative is $\sum_{j\geq1}\Omega^{(j)}\chi^j/j!+\sum_{j\geq1}\Omega^{(j-1)}\chi^{j-1}\chi'/(j-1)!$; apply (ii) termwise in $u$. The map is multiplicative by the Leibniz rule for higher derivatives, and it is the binomial expansion on $X^{\pm1}$.
+\end{proof}

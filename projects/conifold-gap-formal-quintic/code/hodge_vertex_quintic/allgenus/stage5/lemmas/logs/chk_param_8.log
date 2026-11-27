@@ -1,0 +1,20 @@
+chk_param: L1c (T-q, T-z), FL4, FL3-SP; all terms of weight <= 8 (q^d z^k, d + k <= 8); log logs/chk_param_8.log
+PASS T-q n = 1: S(q) = P(q) (moving critical point versus perturbation) for weight <= 8   81 terms  (0.0 s)
+PASS control (must fail): T-q n = 1: without (Delta(q)/Delta(0))^(-1/2)
+PASS FL4 n = 1: d/dq of the full SP = full SP of d/dq(integrand) (times z), weight <= 8
+PASS control (must fail): FL4 n = 1: without the (d_q F)/z term
+PASS T-z n = 1: [S(eps)]_(eps = z) = SP^norm_0[f; e^g a] through z^8
+PASS control (must fail): T-z n = 1: e^g dropped from the amplitude
+PASS T(b) n = 1: translation by -z leaves SP^norm unchanged, through z^8
+PASS control (must fail): T(b) n = 1: translated amplitude without e^((f(x-z) - f(x))/z)
+PASS T-q n = 2: S(q) = P(q) (moving critical point versus perturbation) for weight <= 8   81 terms  (1.1 s)
+PASS control (must fail): T-q n = 2: without (Delta(q)/Delta(0))^(-1/2)
+PASS FL4 n = 2: d/dq of the full SP = full SP of d/dq(integrand) (times z), weight <= 8
+PASS control (must fail): FL4 n = 2: without the (d_q F)/z term
+PASS T-z n = 2: [S(eps)]_(eps = z) = SP^norm_0[f; e^g a] through z^8
+PASS control (must fail): T-z n = 2: e^g dropped from the amplitude
+PASS T(b) n = 2: translation by -z leaves SP^norm unchanged, through z^8
+PASS control (must fail): T(b) n = 2: translated amplitude without e^((f(x-z) - f(x))/z)
+PASS FL3 (SP): SP_Y at Y_c(u) = SP_X at X_c(u) of the pull-back, weight <= 8 (critical points move with u)   80 terms
+PASS control (must fail): FL3 (SP): pull-back without the factor Y'(X)
+CHK_PARAM 8: ALL CHECKS PASSED   (3 s)

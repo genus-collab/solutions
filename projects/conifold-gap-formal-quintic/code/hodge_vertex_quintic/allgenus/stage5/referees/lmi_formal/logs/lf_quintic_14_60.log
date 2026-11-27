@@ -1,0 +1,41 @@
+log: logs/lf_quintic_14_60.log   (python 3.14.6)
+PASS  Q0 P_r(x) = p_r(x) + (1 - x)^-r, x = 2, -2/3, 1/2, 3, r <= 40
+PASS  Q0 P_r(0) = 5 if 5 | r else 0, r <= 40
+PASS  Q0 p_r(x) = explicit Sum_(j=1..4) (zeta^j - x)^-r in Q(zeta_5), x = 1, 2, r <= 25
+Q1 h_1..h_5 = -3/20, 9/800, -269/80000, 2823/6400000, -257071/8064000000
+PASS  Q1 h_1 = -3/20, h_2 = 9/800 (values quoted in CHART_PROOF s.3.6 and REFEREE_2 s.4.2)
+PASS  Q2 chart(s*=1) = c(z; L) through z^14 at L = 2  [c_1 = -12/5]
+PASS  Q2 c_1..c_5(2) = the values quoted in REFEREE_2 s.4.2 (E1) and CHART_PROOF s.1.7
+PASS  Q2 det H = -g''(L) a0(L) - 1 = -a0(L) S_0''(L) at L = 2
+PASS  control: Q2 chart with Q e^(2 mu) at L = 2 -- identity FAILS as expected  [first diff z^1]
+PASS  control: Q2 c(z; L) without the singular Stirling series vs chart, L = 2 -- identity FAILS as expected  [first diff z^1]
+PASS  Q2 chart(s*=1) = c(z; L) through z^14 at L = -2/3
+PASS  Q2 det H = -g''(L) a0(L) - 1 = -a0(L) S_0''(L) at L = -2/3
+PASS  control: Q2 chart with Q e^(2 mu) at L = -2/3 -- identity FAILS as expected  [first diff z^1]
+PASS  control: Q2 c(z; L) without the singular Stirling series vs chart, L = -2/3 -- identity FAILS as expected  [first diff z^1]
+PASS  Q2 chart(s*=1) = c(z; L) through z^14 at L = 1/2
+PASS  Q2 det H = -g''(L) a0(L) - 1 = -a0(L) S_0''(L) at L = 1/2
+PASS  Q2 chart(s*=1) = c(z; L) through z^14 at L = 3
+PASS  Q2 det H = -g''(L) a0(L) - 1 = -a0(L) S_0''(L) at L = 3
+PASS  Q2 chart(s*=1) = c(z; L) through z^14 at L = -1
+PASS  Q2 det H = -g''(L) a0(L) - 1 = -a0(L) S_0''(L) at L = -1
+PASS  Q2 chart(s*=1) = c(z; L) through z^14 at L = 5/4
+PASS  Q2 det H = -g''(L) a0(L) - 1 = -a0(L) S_0''(L) at L = 5/4
+PASS  Q3 det H at L = 1 equals -alpha0^2 = -1
+PASS  Q3 chart at L = 1 (Q = 0) = h_(w_0) from its definition, through z^60
+PASS  control: Q3 twist weight +5 in h -- identity FAILS as expected  [first diff z^1]
+PASS  Q4 chart(s*=0) = c(z; L) through z^14 at L = 1/2
+PASS  Q4 chart(s*=0) = c(z; L) through z^14 at L = -1/3
+PASS  Q4 chart(s*=0) = c(z; L) through z^14 at L = 2
+PASS  Q4 chart(s*=0) = c(z; L) through z^14 at L = -2
+PASS  Q4 det H at L = 0 equals -alpha0^2 = -25
+PASS  Q4 chart at L = 0 = Ginf through z^60
+PASS  Q4 Ginf = g_shift(1/5) (two codings of the closed form)
+Q4 [z^5] Ginf = 4537/3937500, [z^10] Ginf = -177640111151/31007812500000
+PASS  Q4 [z^5] Ginf = B_6(1/5)/6 = 4537/3937500
+PASS  control: Q4 orbifold chart with M0 = 0 (no e^mu) vs Ginf -- identity FAILS as expected  [first diff z^5]
+PASS  control: Q4 Bernoulli polynomials at 0 instead of 1/5 -- identity FAILS as expected  [first diff z^5]
+PASS  control: Q4 Bernoulli polynomials at 4/5 instead of 1/5 -- identity FAILS as expected  [first diff z^10]
+PASS  control: Q4 Bernoulli polynomials at -1/5 instead of 1/5 -- identity FAILS as expected  [first diff z^5]
+checks: 36 passed, 0 failed; 34.1 s
+ALL CHECKS PASSED

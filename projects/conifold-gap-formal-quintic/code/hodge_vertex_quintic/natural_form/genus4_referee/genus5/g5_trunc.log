@@ -1,0 +1,5 @@
+====================================================================================================
+g5_trunc: 60 graphs drawn with probability ~ estimated cost, 6 (decoration, S) pairs each
+PASS truncated colour sums equal the standard ones on 360 random pairs (0 mismatches)
+   cost-weighted mean of (truncated time / standard time) over 60 graphs: 0.620  (speed-up factor 1.61); pooled time ratio 0.587
+   wall 17 s

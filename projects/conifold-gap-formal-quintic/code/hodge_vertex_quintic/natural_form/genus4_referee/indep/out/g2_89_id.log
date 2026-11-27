@@ -1,0 +1,20 @@
+====================================================================================================
+ind_run g2_89_id: 7 inner graphs, K = 4, NZ = 3, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.1 s
+   inner graph   0 (E=0, V=1, gv=(2,)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   1 (E=1, V=1, gv=(1,)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   2 (E=2, V=1, gv=(0,)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   3 (E=1, V=2, gv=(1, 1)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   4 (E=2, V=2, gv=(0, 1)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   5 (E=3, V=2, gv=(0, 0)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   6 (E=3, V=2, gv=(0, 0)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+BRUTE-FORCE CHECK (g2_89_id) ALL EQUAL
+====================================================================================================
+ind_run g2_89_id: 7 inner graphs, K = 4, NZ = 3, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.1 s
+   7 inner graphs to do with 4 processes, deadline 1500 s
+      7/7 done (1 s wall)
+   run: wall 1 s, CPU (this and earlier runs) 1 s, slowest [(0.1, 6), (0.1, 5), (0.1, 2), (0.1, 1), (0.0, 4), (0.0, 3)]
+   complete outer graphs: 7 of 7 (all)
+   vertex graph: ['1807/3072000', '-7/8000', '67/288000', '1807/480000000']
+   total: ['1/1200', '-7/6000', '97/72000', '-6809/18000000']
+PASS GAP: total = (1/1200) t_c^-2 + 0 + .. + 0
+IND_RUN (g2_89_id) ALL CHECKS PASSED

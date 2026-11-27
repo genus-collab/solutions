@@ -1,0 +1,21 @@
+cr2_legdict.py KMAX = 24, DMAX = 27
+ L3 D(ii) exact over Q: 125 of 125 legs
+ P = 2^61-1, v0 = s^5 for s in (1, 3), ctrl None: LD mismatches 0 of 35000 pairings; non-zero L2 residues 0
+  frame(1,0): f = {0: ('1', 1)}; leg {(5, 0, 0): '-1/5'}
+  frame(2,4): f = {0: ('1/2', 2)}; leg {(5, 0, 1): '-7/60', (10, 0, 0): '1/120'}
+ L4 P = 2^61-1, v0 = 3^5: 52 of 52 frames (a in 0,2,3,4; k <= 12) pass
+ P = 2^89-1, v0 = s^5 for s in (1, 3), ctrl None: LD mismatches 0 of 35000 pairings; non-zero L2 residues 0
+ L4 P = 2^89-1, v0 = 3^5: 52 of 52 frames (a in 0,2,3,4; k <= 12) pass
+ P = 2^61-1, v0 = s^5 for s in (1,), ctrl C1: LD mismatches 60 of 17500 pairings; non-zero L2 residues 0
+  control C1 fails as it must: True
+ P = 2^61-1, v0 = s^5 for s in (1,), ctrl C2: LD mismatches 25 of 17500 pairings; non-zero L2 residues 0
+  control C2 fails as it must: True
+ P = 2^61-1, v0 = s^5 for s in (3,), ctrl C3: LD mismatches 25 of 17500 pairings; non-zero L2 residues 0
+  control C3 fails as it must: True
+ P = 2^61-1, v0 = s^5 for s in (1,), ctrl C4: LD mismatches 1385 of 17500 pairings; non-zero L2 residues 0
+  control C4 fails as it must: True
+RESULT: ALL CHECKS PASSED
+
+real	1m15.105s
+user	0m0.015s
+sys	0m0.046s

@@ -1,0 +1,348 @@
+====================================================================================================
+prime p = 618970019642690137449562111
+rows (Nz = 6), conifold periods, rows truncated at O(s^24): 1.0 s
+----------------------------------------------------------------------------------------------------
+(1) the conifold symbol R^(zhat), zhat = z/s^4: R^_{a,n}^{(i)} = [s^{-4n+c_a-1}] Q^{(i)}_{a,n}, through zhat^6
+PASS symbol: val_s Q^{(i)}_{a,n} = -4n + c_a - 1 exactly (non-zero leading coefficient) for all 5 x 5 x 7 (a, i, n), n <= 6
+PASS symbol: R^ symplectic as a constant series: Sum_ab R^_a^{(i)}(zhat) eta^{ab} R^_b^{(j)}(-zhat) = delta_ij through zhat^6
+PASS symbol: Z/5 covariance R^_a^{(i)}(zhat) = zeta^{i(a+1)} R^_a^{(0)}(zeta^{-i} zhat) (phase a+1-n per coefficient): {(0, 0): 1, (0, 1): 0, (0, 2): 4, (0, 3): 3, (0, 4): 2, (0, 5): 1, (0, 6): 0, (1, 0): 2, (1, 1): 1, (1, 2): 0, (1, 3): 4, (1, 4): 3, (1, 5): 2, (1, 6): 1, (2, 0): 3, (2, 1): 2, (2, 2): 1, (2, 3): 0, (2, 4): 4, (2, 5): 3, (2, 6): 2, (3, 0): 4, (3, 1): 3, (3, 2): 2, (3, 3): 1, (3, 4): 0, (3, 5): 4, (3, 6): 3, (4, 0): 0, (4, 1): 4, (4, 2): 3, (4, 3): 2, (4, 4): 1, (4, 5): 0, (4, 6): 4}
+   (the phase zeta^{ia} of the P-rows, R^_a^{(i)}(zhat) = zeta^{ia} R^_a^{(0)}(zeta^{-i} zhat), holds: False -- the extra zeta^i is Delta_i^{-1/2} = zeta^{-4i}/x)
+PASS symbol in the flat basis: R^_{ab,n} := Sum_i R^_{a,n}^{(i)} R^_{b,0}^{(i)} vanishes unless a + b = n - 2 mod 5 (zhat^n shifts the flat degree by n mod 5)
+   (a) Teleman colour-colour form R~_{ji}(zhat) = Sum_ab R^_{b,0}^{(j)} eta^{ba} R^_a^{(i)}(zhat); coefficient matrices C_n (rows j, columns i), Q(zeta) via Galois (sigma_m: C_n[mj][mi]):
+   C_0:
+      [1, 0, 0, 0, 0]
+      [0, 1, 0, 0, 0]
+      [0, 0, 1, 0, 0]
+      [0, 0, 0, 1, 0]
+      [0, 0, 0, 0, 1]
+   C_1:
+      [1/20, (1/25) z + (3/25) z^2 + (1/25) z^3, -3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3, -1/25 + (2/25) z + (-1/25) z^2, -1/25 + (-1/25) z + (2/25) z^3]
+      [(1/25) z + (3/25) z^2 + (1/25) z^3, -1/20 + (-1/20) z + (-1/20) z^2 + (-1/20) z^3, 1/25 + (3/25) z + (1/25) z^2, 1/25 + (1/25) z + (3/25) z^3, 3/25 + (1/25) z^2 + (1/25) z^3]
+      [-3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3, 1/25 + (3/25) z + (1/25) z^2, (1/20) z^3, 2/25 + (-1/25) z^2 + (-1/25) z^3, (-1/25) z + (2/25) z^2 + (-1/25) z^3]
+      [-1/25 + (2/25) z + (-1/25) z^2, 1/25 + (1/25) z + (3/25) z^3, 2/25 + (-1/25) z^2 + (-1/25) z^3, (1/20) z^2, -2/25 + (-3/25) z + (-3/25) z^2 + (-2/25) z^3]
+      [-1/25 + (-1/25) z + (2/25) z^3, 3/25 + (1/25) z^2 + (1/25) z^3, (-1/25) z + (2/25) z^2 + (-1/25) z^3, -2/25 + (-3/25) z + (-3/25) z^2 + (-2/25) z^3, (1/20) z]
+   C_2:
+      [21/4000, -3/100 + (-9/500) z + (9/500) z^2 + (3/125) z^3, -6/125 + (3/500) z + (-9/250) z^2 + (-9/500) z^3, -27/500 + (-3/500) z + (-3/125) z^2 + (-21/500) z^3, -3/250 + (9/500) z + (21/500) z^2 + (9/250) z^3]
+      [3/125 + (9/500) z + (-9/500) z^2 + (-3/100) z^3, (21/4000) z^3, 9/250 + (21/500) z + (9/500) z^2 + (-3/250) z^3, -21/500 + (-3/125) z + (-3/500) z^2 + (-27/500) z^3, -9/500 + (-9/250) z + (3/500) z^2 + (-6/125) z^3]
+      [21/500 + (-3/250) z + (9/250) z^2 + (9/500) z^3, -9/250 + (-6/125) z + (-9/500) z^2 + (3/500) z^3, (21/4000) z, -3/125 + (-27/500) z + (-21/500) z^2 + (-3/500) z^3, 9/500 + (-3/100) z + (3/125) z^2 + (-9/500) z^3]
+      [27/500 + (3/250) z + (3/100) z^2 + (6/125) z^3, 6/125 + (3/100) z + (3/250) z^2 + (27/500) z^3, 3/100 + (27/500) z + (6/125) z^2 + (3/250) z^3, -21/4000 + (-21/4000) z + (-21/4000) z^2 + (-21/4000) z^3, 3/250 + (6/125) z + (27/500) z^2 + (3/100) z^3]
+      [3/500 + (-9/500) z + (-6/125) z^2 + (-9/250) z^3, 9/500 + (9/250) z + (-3/250) z^2 + (21/500) z^3, -9/500 + (3/125) z + (-3/100) z^2 + (9/500) z^3, -3/500 + (-21/500) z + (-27/500) z^2 + (-3/125) z^3, (21/4000) z^2]
+   C_3:
+      [-1209/80000, -111/2000 + (-93/1250) z + (-921/20000) z^2 + (-81/20000) z^3, -189/20000 + (21/500) z + (-567/20000) z^2 + (921/20000) z^3, -1029/20000 + (-21/500) z + (81/20000) z^2 + (-1407/20000) z^3, 189/10000 + (93/1250) z + (1407/20000) z^2 + (567/20000) z^3]
+      [-21/500 + (-1407/20000) z + (-1029/20000) z^2 + (81/20000) z^3, (-1209/80000) z^2, 21/500 + (921/20000) z + (-189/20000) z^2 + (-567/20000) z^3, 93/1250 + (567/20000) z + (189/10000) z^2 + (1407/20000) z^3, -93/1250 + (-81/20000) z + (-111/2000) z^2 + (-921/20000) z^3]
+      [189/20000 + (111/2000) z + (-189/10000) z^2 + (1029/20000) z^3, 111/2000 + (1029/20000) z + (189/20000) z^2 + (-189/10000) z^3, 1209/80000 + (1209/80000) z + (1209/80000) z^2 + (1209/80000) z^3, -189/10000 + (189/20000) z + (1029/20000) z^2 + (111/2000) z^3, 1029/20000 + (-189/10000) z + (111/2000) z^2 + (189/20000) z^3]
+      [-921/20000 + (-111/2000) z + (-81/20000) z^2 + (-93/1250) z^3, 1407/20000 + (189/10000) z + (567/20000) z^2 + (93/1250) z^3, -567/20000 + (-189/20000) z + (921/20000) z^2 + (21/500) z^3, (-1209/80000) z, 81/20000 + (-1029/20000) z + (-1407/20000) z^2 + (-21/500) z^3]
+      [567/20000 + (1407/20000) z + (93/1250) z^2 + (189/10000) z^3, -1407/20000 + (81/20000) z + (-21/500) z^2 + (-1029/20000) z^3, 921/20000 + (-567/20000) z + (21/500) z^2 + (-189/20000) z^3, -81/20000 + (-921/20000) z + (-93/1250) z^2 + (-111/2000) z^3, (-1209/80000) z^3]
+   C_4:
+      [122871/6400000, -9009/200000 + (-272349/2000000) z + (-335097/2000000) z^2 + (-92337/1000000) z^3, 245007/2000000 + (150423/2000000) z + (15687/500000) z^2 + (335097/2000000) z^3, 11823/250000 + (-150423/2000000) z + (92337/1000000) z^2 + (-3507/80000) z^3, 182259/2000000 + (272349/2000000) z + (3507/80000) z^2 + (-15687/500000) z^3]
+      [15687/500000 + (245007/2000000) z + (335097/2000000) z^2 + (150423/2000000) z^3, (122871/6400000) z, 92337/1000000 + (11823/250000) z + (-3507/80000) z^2 + (-150423/2000000) z^3, -335097/2000000 + (-9009/200000) z + (-92337/1000000) z^2 + (-272349/2000000) z^3, 3507/80000 + (182259/2000000) z + (-15687/500000) z^2 + (272349/2000000) z^3]
+      [-272349/2000000 + (-92337/1000000) z + (-9009/200000) z^2 + (-335097/2000000) z^3, -150423/2000000 + (-3507/80000) z + (11823/250000) z^2 + (92337/1000000) z^3, (122871/6400000) z^2, 150423/2000000 + (335097/2000000) z + (245007/2000000) z^2 + (15687/500000) z^3, 272349/2000000 + (-15687/500000) z + (182259/2000000) z^2 + (3507/80000) z^3]
+      [-3507/80000 + (92337/1000000) z + (-150423/2000000) z^2 + (11823/250000) z^3, 335097/2000000 + (15687/500000) z + (150423/2000000) z^2 + (245007/2000000) z^3, -92337/1000000 + (-335097/2000000) z + (-272349/2000000) z^2 + (-9009/200000) z^3, (122871/6400000) z^3, -15687/500000 + (3507/80000) z + (272349/2000000) z^2 + (182259/2000000) z^3]
+      [-182259/2000000 + (-245007/2000000) z + (-11823/250000) z^2 + (9009/200000) z^3, -11823/250000 + (-182259/2000000) z + (9009/200000) z^2 + (-245007/2000000) z^3, -245007/2000000 + (9009/200000) z + (-182259/2000000) z^2 + (-11823/250000) z^3, 9009/200000 + (-11823/250000) z + (-245007/2000000) z^2 + (-182259/2000000) z^3, -122871/6400000 + (-122871/6400000) z + (-122871/6400000) z^2 + (-122871/6400000) z^3]
+   C_5:
+      [-59913/640000000, 4513509/32000000 + (-18711/160000000) z + (-1283877/5000000) z^2 + (-20621601/80000000) z^3, 63651609/160000000 + (-79569/80000000) z + (41065353/160000000) z^2 + (1283877/5000000) z^3, 63810747/160000000 + (79569/80000000) z + (20621601/80000000) z^2 + (41224491/160000000) z^3, 1411641/10000000 + (18711/160000000) z + (-41224491/160000000) z^2 + (-41065353/160000000) z^3]
+      [1411641/10000000 + (18711/160000000) z + (-41224491/160000000) z^2 + (-41065353/160000000) z^3, -59913/640000000, 4513509/32000000 + (-18711/160000000) z + (-1283877/5000000) z^2 + (-20621601/80000000) z^3, 63651609/160000000 + (-79569/80000000) z + (41065353/160000000) z^2 + (1283877/5000000) z^3, 63810747/160000000 + (79569/80000000) z + (20621601/80000000) z^2 + (41224491/160000000) z^3]
+      [63810747/160000000 + (79569/80000000) z + (20621601/80000000) z^2 + (41224491/160000000) z^3, 1411641/10000000 + (18711/160000000) z + (-41224491/160000000) z^2 + (-41065353/160000000) z^3, -59913/640000000, 4513509/32000000 + (-18711/160000000) z + (-1283877/5000000) z^2 + (-20621601/80000000) z^3, 63651609/160000000 + (-79569/80000000) z + (41065353/160000000) z^2 + (1283877/5000000) z^3]
+      [63651609/160000000 + (-79569/80000000) z + (41065353/160000000) z^2 + (1283877/5000000) z^3, 63810747/160000000 + (79569/80000000) z + (20621601/80000000) z^2 + (41224491/160000000) z^3, 1411641/10000000 + (18711/160000000) z + (-41224491/160000000) z^2 + (-41065353/160000000) z^3, -59913/640000000, 4513509/32000000 + (-18711/160000000) z + (-1283877/5000000) z^2 + (-20621601/80000000) z^3]
+      [4513509/32000000 + (-18711/160000000) z + (-1283877/5000000) z^2 + (-20621601/80000000) z^3, 63651609/160000000 + (-79569/80000000) z + (41065353/160000000) z^2 + (1283877/5000000) z^3, 63810747/160000000 + (79569/80000000) z + (20621601/80000000) z^2 + (41224491/160000000) z^3, 1411641/10000000 + (18711/160000000) z + (-41224491/160000000) z^2 + (-41065353/160000000) z^3, -59913/640000000]
+   C_6:
+      [-2932381683/25600000000, [600240167956279725229742069 mod p], [145423169942876201359469610 mod p], [171478281382025084054277509 mod p], [121289911347729117998568265 mod p]]
+      [-8447846997283/6919675646805, [529000149827393372430017203 mod p], 8966253759905/563287448326, [613146524361226170604753444 mod p], [208209390709866163848326374 mod p]]
+      [[245351719424594336865827674 mod p], [274510194244899457069180393 mod p], [275828311284774880996972534 mod p], [430483619836599222048068746 mod p], [223039149025679920599694079 mod p]]
+      [[526721200868708575518851615 mod p], [616246102955582274250227214 mod p], [353471274541431083497986162 mod p], 8682977587018/4444332484911, -6556946316661/330233684190]
+      [[43216536240908794083470486 mod p], [348580014729579544265917585 mod p], -3783262374738/291456913345, [274453041852086136142643793 mod p], [457301687180994273955003134 mod p]]
+PASS symbol: C_0 = identity (symplecticity at zhat^0)
+   R~ diagonal in colours: False;  Z/5-circulant with phase (C_n[j+1][i+1] = zeta^{-n} C_n[j][i]): True
+PASS symbol: R~ is NOT diagonal in colours (every off-diagonal entry of C_1 is non-zero) and IS circulant with phase zeta^{-n}
+PASS symbol: log R~ = Sum mu_k zhat^k has mu_k^T = (-1)^{k+1} mu_k (symplectic log), k <= 6
+   first rows (j = 0) of mu_1, mu_2, mu_3 in Q(zeta) [sigma_m(mu_k[0][i]) = mu_k[0][mi]]:
+      mu_1[0][.] = [1/20, (1/25) z + (3/25) z^2 + (1/25) z^3, -3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3, -1/25 + (2/25) z + (-1/25) z^2, -1/25 + (-1/25) z + (2/25) z^3]
+      mu_2[0][.] = [0, -27/1000 + (-9/500) z + (9/500) z^2 + (27/1000) z^3, -9/200 + (9/1000) z + (-9/250) z^2 + (-9/500) z^3, -27/500 + (-9/1000) z + (-27/1000) z^2 + (-9/200) z^3, -9/1000 + (9/500) z + (9/200) z^2 + (9/250) z^3]
+      mu_3[0][.] = [-3/200, -243/5000 + (-579/8000) z + (-243/5000) z^2, (243/5000) z + (-951/40000) z^2 + (243/5000) z^3, -243/5000 + (-243/5000) z + (-579/8000) z^3, 951/40000 + (579/8000) z + (579/8000) z^2 + (951/40000) z^3]
+PASS symbol: mu_2 != 0 (an antisymmetric EVEN part is present: R~ is not exp(odd) even as a matrix)
+   (c) diagonal entry R~_00(zhat) = [1, 1/20, 21/4000, -1209/80000, 122871/6400000, -59913/640000000, [141828562323176017510501429 mod p]]
+       log R~_00: even coefficients {2: '1/250', 4: '1247/62500', 6: '-1344311/11718750'}; odd {1: '1/20', 3: '-23/1500', 5: '-79/78125'}
+FAIL symbol: diagonal entries R~_ii are exp(odd series): even coefficients non-zero: {2: '1/250', 4: '1247/62500', 6: '-1344311/11718750'}
+PASS symbol: R~_ii(zhat) = R~_00(zeta^{-i} zhat) (covariance of the diagonal)
+   identity row f(zhat) = R^_0^{(0)}(zhat) = [1, -3/20, 9/800, 11571/80000, -2415609/6400000, 47735919/128000000, 52989974037/25600000000]
+PASS symbol: f coefficients = 1, -3/20, 9/800, 11571/80000, -2415609/6400000, 47735919/128000000 (zhat^0..5)
+   log f: even {2: '0', 4: '-2223/6250', 6: '164934/78125'}; odd (b_k at zhat^{2k-1}) {1: '-3/20', 3: '363/2500', 5: '4968/15625'}
+FAIL symbol: f is exp(odd series): even coefficients: {4: '-2223/6250', 6: '164934/78125'}
+   implied power sums p_{2k-1} = -b_k 2k(2k-1)/B_{2k}: {1: '9/5', 3: '6534/125', 5: '-1251936/3125'}
+   (reference: wt_0 = {1 - zeta^j} U {-5} has p_1, p_3, p_5 = ['9/5', '-126/125', '-1/3125'])
+   named candidates (c * wt_i, c in {+-1, +-5, +-1/5}, all sub-multisets: 930): full (p_1, p_3, p_5) match []; p_1 alone matched by ['1*wt_0']
+   block search (171 Galois-orbit/rational blocks, multisets of size <= 6, 0.1 s): matches for the symbol's (p_1, p_3, p_5): []; control (wt_0's power sums): [(5, ['{1 zeta^(m*0)(1 - zeta^(m*1))}', '{-5}'])]
+PASS symbol: no weight multiset of size <= 6 from the candidate pool realises (p_1, p_3, p_5) of f (and f is not exp(odd) anyway)
+   h_{wt_0}(zhat) = [1, -3/20, 9/800, -269/80000, 2823/6400000, -257071/8064000000, 2942137/537600000000]
+   h_{wt_0}^{-1} f = [1, 0, 0, 37/250, -2223/6250, 250387/787500, 1326317/625000]
+   log(h^{-1} f) = [0, 0, 0, 37/250, -2223/6250, 250387/787500, 164934/78125]
+PASS symbol: f = h_{wt_0}(zhat) (1 + (37/250) zhat^3 + O(zhat^4)): agreement with the QRR constant through zhat^2 only
+   step 1 in 0.2 s
+----------------------------------------------------------------------------------------------------
+(2) s-series fit over ALL monomials of weight <= 3 in (m_1, m_2, m_3): 1 + 40 + 120 + 150 + 680 = 991 unknowns
+   1010 + 20 random symplectic M (fq_sser.SympM.random), orders s^-10..s^2, 991 monomials of weight <= 3
+      200 evaluations, 24.9 s
+      400 evaluations, 48.9 s
+      600 evaluations, 77.6 s
+      800 evaluations, 115.2 s
+      1000 evaluations, 152.8 s
+   evaluations in 158.3 s
+PASS fit: rank 991 = 991 monomials, 0 inconsistent surplus rows (128.5 s)
+PASS fit verified on 20 extra random M for all 91 (graph, order) coefficients
+   graph 1: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 2: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 3: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 4: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 5: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 6: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 7: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+PASS weight structure: s^-10, s^-5, s^0 weight 0; s^-6, s^-1 weight 1; s^-2 weight 2; s^+2 weight 3 ONLY (no weight-0 part); s^-9..-7, -4, -3, 1 zero
+PASS m3 never at a polar order; m3 (weight 3) present at s^+2 for graphs 1, 2, 4 only; m2 at s^-2 and s^+2 (via m1 m2) for graphs 1, 2, 4, 5
+PASS colour-shift covariance c_{shift mu} = zeta^w c_mu on all 1771 fitted coefficients
+   Galois reconstruction in Q(zeta) of the 1771 coefficients: 0 not reconstructible by fq_fp.ratrec (bound ~1e10 at 2^89-1, ~1e7 at 2^61-1)
+   graph 1, s^+2, m3 coefficients: m3_00: 23/1152; m3_01: 1/576 + (1/576) z + (1/576) z^2 + (1/576) z^3; m3_02: (-1/576) z^3; m3_03: (-1/576) z^2; m3_04: (-1/576) z ...
+   graph 2, s^+2, m3 coefficients: m3_00: -1/48; m3_11: (-1/48) z^3; m3_22: (-1/48) z; m3_33: 1/48 + (1/48) z + (1/48) z^2 + (1/48) z^3; m3_44: (-1/48) z^2
+   graph 4, s^+2, m3 coefficients: m3_00: 1/1152; m3_01: -1/576 + (-1/576) z + (-1/576) z^2 + (-1/576) z^3; m3_02: (1/576) z^3; m3_03: (1/576) z^2; m3_04: (1/576) z ...
+   step 2 in 287.4 s
+----------------------------------------------------------------------------------------------------
+(3) the leading-order system L_Gamma(mu) for M_0(zhat) = exp(mu_1 zhat + mu_2 zhat^2 + mu_3 zhat^3)
+   L_Gamma(mu) = c_Gamma + [w1 of s^-6] + [w2 of s^-2] + [w3 of s^+2]: monomial counts {1: 481, 2: 261, 3: 96, 4: 491, 5: 236, 6: 46, 7: 66}
+PASS frozen theory (rows R^, Delta^_i^{1/2} = zeta^{4i}) at M_0 = 1 reproduces every c_Gamma and the total 1/1200
+PASS KEY CHECK: L_Gamma(mu) (substitution m_k = mu_k s^-4k in the s-series fit) = frozen graph sum with rows R^ M_0^-1 and vertex M_0.omega^ at 5 random mu; frozen total = 1/1200
+PASS frozen-theory fit (1010 random mu, 991 monomials): rank 991, 0 inconsistent; verified on 20 more; EVERY coefficient equals L_Gamma (201.7 s)
+PASS (i) tautological mu = log R~ (zhat^1..3): L_1 = 1/1200 and L_Gamma = 0 for the six edge graphs; same from the frozen graph sum
+   (ii) Jacobian of (L_2..L_7) at the tautological point: rank 2; rows non-zero for graphs [2, 4] (graphs with >= 2 edges vanish to second order: every edge factor is O(delta))
+PASS tautological point is a SINGULAR point of the solution variety: Jacobian rank 2 (only the one-edge graphs 2, 4), Zariski tangent space dim 38
+   graphs without any mu_2, mu_3 dependence: [3, 6, 7]; L_Gamma is cubic in mu_1 and LINEAR in (mu_2, mu_3) jointly
+   at random mu_1: rank of the 6 x 25 (mu_2, mu_3)-coefficient matrix and consistency: [(3, False), (3, False), (3, False)]
+PASS (mu_2, mu_3)-coefficient matrix has rank 3 (rows 2, 4, 5) and the system is inconsistent at generic mu_1: mu_1 must lie on W = {L_3 = L_6 = L_7 = 0}
+PASS fibre over the tautological mu_1: coefficient rank 2, consistent: a 23-dimensional affine space of (mu_2, mu_3) completing mu_1^taut to solutions
+      Jacobian rank at a random point of that fibre: 3
+   random points of W (random affine 3-planes in A^15, 3 cubics in 3 unknowns by resultants): 2 found in 1.7 s
+      (rank B, consistent, full Jacobian rank, Jacobian rank of (L_3, L_6, L_7) in mu_1): [(3, True, 6, 3), (3, True, 6, 3)]
+PASS generic point of W: W smooth of dim 12 there, fibre dim 22, full Jacobian rank 6: the solution variety has local dimension 34 at generic points
+   COVARIANT DIAGONAL (a_1, a_3) [mu_2 = 0 forced: antisymmetric diagonal]:
+      graph 1: (1807/3072000) + (37/10240) a1 + (115/1152) a3 + (-119/1536) a1*a1 + (-655/3456) a1*a1*a1
+      graph 2: (-811/256000) + (-343/12800) a1 + (-5/48) a3 + (89/384) a1*a1 + (-5/288) a1*a1*a1
+      graph 3: (-57/64000) + (87/3200) a1 + (-7/32) a1*a1 + (5/8) a1*a1*a1
+      graph 4: (843/1024000) + (11/10240) a1 + (5/1152) a3 + (455/1536) a1*a1 + (-1985/3456) a1*a1*a1
+      graph 5: (3/51200) + (71/2560) a1 + (-245/384) a1*a1 + (115/96) a1*a1*a1
+      graph 6: (87/32000) + (-1/320) a1 + (1/16) a1*a1 + (-5/12) a1*a1*a1
+      graph 7: (9/12800) + (-19/640) a1 + (11/32) a1*a1 + (-5/8) a1*a1*a1
+      eliminating a_3 with graph 2: 5 univariate polynomials in a_1 of degrees [3, 3, 3, 3, 3]; gcd = (1)
+PASS COVARIANT DIAGONAL: no solution (gcd 1); colour-summed version of SCALAR_SCAN s.5
+   DIAGONAL M_0 (x_i, y_i; 10 parameters) in Fourier modes X_a = Sum_i zeta^{ai} x_i, Y_a:
+      graph 1: (1807/3072000) + (37/51200) X1 + (23/1152) Y3 + (-119/19200) X0*X2 + (-119/38400) X1*X1 + (-119/19200) X3*X4 + (-131/28800) X0*X0*X3 + (-131/14400) X0*X1*X2 + (-131/28800) X0*X4*X4 + (-131/86400) X1*X1*X1 + (-131/14400) X1*X3*X4 + (-131/28800) X2*X2*X4 + (-131/28800) X2*X3*X3
+      graph 2: (-811/256000) + (-343/64000) X1 + (-1/48) Y3 + (89/4800) X0*X2 + (89/9600) X1*X1 + (89/4800) X3*X4 + (-1/2400) X0*X0*X3 + (-1/1200) X0*X1*X2 + (-1/2400) X0*X4*X4 + (-1/7200) X1*X1*X1 + (-1/1200) X1*X3*X4 + (-1/2400) X2*X2*X4 + (-1/2400) X2*X3*X3
+      graph 3: (-57/64000) + (87/16000) X1 + (-7/400) X0*X2 + (-7/800) X1*X1 + (-7/400) X3*X4 + (3/200) X0*X0*X3 + (3/100) X0*X1*X2 + (3/200) X0*X4*X4 + (1/200) X1*X1*X1 + (3/100) X1*X3*X4 + (3/200) X2*X2*X4 + (3/200) X2*X3*X3
+      graph 4: (843/1024000) + (11/51200) X1 + (1/1152) Y3 + (71/19200) X0*X2 + (91/7680) X1*X1 + (-121/19200) X3*X4 + (-397/28800) X0*X0*X3 + (-397/14400) X0*X1*X2 + (-397/28800) X0*X4*X4 + (-397/86400) X1*X1*X1 + (-397/14400) X1*X3*X4 + (-397/28800) X2*X2*X4 + (-397/28800) X2*X3*X3
+      graph 5: (3/51200) + (71/12800) X1 + (-53/4800) X0*X2 + (-49/1920) X1*X1 + (43/4800) X3*X4 + (23/800) X0*X0*X3 + (23/400) X0*X1*X2 + (23/800) X0*X4*X4 + (23/2400) X1*X1*X1 + (23/400) X1*X3*X4 + (23/800) X2*X2*X4 + (23/800) X2*X3*X3
+      graph 6: (87/32000) + (-1/1600) X1 + (1/200) X0*X2 + (1/400) X1*X1 + (1/200) X3*X4 + (-1/100) X0*X0*X3 + (-1/50) X0*X1*X2 + (-1/100) X0*X4*X4 + (-1/300) X1*X1*X1 + (-1/50) X1*X3*X4 + (-1/100) X2*X2*X4 + (-1/100) X2*X3*X3
+      graph 7: (9/12800) + (-19/3200) X1 + (3/400) X0*X2 + (11/800) X1*X1 + (-1/400) X3*X4 + (-3/200) X0*X0*X3 + (-3/100) X0*X1*X2 + (-3/200) X0*X4*X4 + (-1/200) X1*X1*X1 + (-3/100) X1*X3*X4 + (-3/200) X2*X2*X4 + (-3/200) X2*X3*X3
+PASS DIAGONAL: every graph is c + alpha X_1 + beta Y_3 + delta X_0X_2 + eps X_1^2 + phi X_3X_4 + gamma C(X), C = X_0^2X_3 + 2X_0X_1X_2 + X_0X_4^2 + X_1^3/3 + 2X_1X_3X_4 + X_2^2X_4 + X_2X_3^2 (Z/5 grading; the cubic parts all proportional)
+      affine in w = (Y_3, X_0X_2, X_3X_4, C) with constant 6 x 4 matrix of rank 4; 2 left null vectors give conditions on X_1:
+         (-243/22000) + (-229/5500) X1 = 0
+         (557/176000) + (239/44000) X1 = 0
+      gcd of the conditions: (1); roots in F_p: []
+PASS DIAGONAL: no solution at all (the two conditions on X_1 are coprime linear polynomials); any (X_0X_2, X_3X_4, C) would be realisable, so this is the only obstruction
+   CIRCULANT (Z/5-covariant) M_0: 8 parameters c_1(0..2), c_2(1..2), c_3(0..2); variables per graph: {1: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2'], 2: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0'], 3: ['c1_0', 'c1_1', 'c1_2'], 4: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2'], 5: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2'], 6: ['c1_0', 'c1_1', 'c1_2'], 7: ['c1_0', 'c1_1', 'c1_2']}
+PASS tautological point lies in the circulant class (log R~ is circulant) and solves its equations
+      pure-c_1 equations (graphs 3, 6, 7) on 3 random planes: gcd degrees [1, 1, 1], points [1, 1, 1]
+PASS circulant: the c_1 locus is a LINE ell through the tautological c_1 (gcd degree 1 on every plane; all three cubics vanish identically along P + t d; plane points collinear)
+      ell = c_1^taut + t d, direction (d_0 = 1) in Q(zeta) [sigma_m c(e) = c(me)]: ['1', '(1/2) z + (1/2) z^3', '(1/2) z + (1/2) z^2'];  c_1^taut = ['1/20', '(1/25) z + (3/25) z^2 + (1/25) z^3', '-3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3']
+      ell passes through the origin c_1 = 0: False
+PASS circulant: direction d(j) = (zeta^j + zeta^{3j})/2, i.e. the mu_1-matrix D_{ij} = zeta^{-i} d(j-i) = (zeta^{j-2i} + zeta^{i-2j})/2 (symmetrised rank-2 tensor of the flat vectors zeta^j and zeta^{-2i})
+      fibres (c_2, c_3) over ell: at the tautological point and two random points: (rank of the 3 x 5 system, consistent) = [(2, True), (3, True), (3, True)]
+PASS circulant: over ell the (c_2, c_3) system is consistent with rank 2 at the tautological point (fibre dim 3) and rank 3 generically (fibre dim 2): a 3-dimensional family of solutions through the tautological point
+      blow-up along ell (chart v = lam w, two random coordinate choices): (vanishing orders along ell, eliminant identically zero, eliminant degree, dd pattern, off-line points) = [([1, 1, 1], True, 46, {1: 2}, 1), ([1, 1, 1], True, 46, {1: 2}, 1)]
+PASS circulant: exactly one further point X of the c_1 locus off ell (both coordinate choices agree; eliminant squarefree part has two F_p roots: w(X) and the exceptional w = 0)
+      X = ['9/20', '(-4/25) z + (-2/25) z^2 + (-4/25) z^3', '2/25 + (-2/25) z + (-2/25) z^2 + (2/25) z^3'] (Q(zeta) via the circulant Galois rule); L_3, L_6, L_7 at X: [0, 0, 0]
+      fibre over X: rank 3, consistent True -> a 2-dimensional family of circulant solutions over X
+PASS circulant: X - c_1^taut = (2/5) e with e(j) = (1 + zeta^{-j})/2, i.e. the mu_1-matrix (zeta^{-i} + zeta^{-j})/2 x 2/5
+PASS per-coloured frozen fit (115 coloured graphs, 61 monomials of weight <= 3 in x_i, y_i, 75 diagonal M_0): rank 61, 0 inconsistent (28.3 s); leafless foreign terms of the vertex graph exactly zeta^{3j}(x_j^3/10 + y_j/48)
+PASS monochrome coloured graphs depend only on (x_c, y_c) and reproduce the SCALAR_SCAN leading columns (T0_-10, T1_-6, T2_-2, T3_2, T4_2) at colour 0 for all 7 graphs
+PASS mixed theta colourings (20) are non-zero constants; mixed colourings of graphs 4, 5, 7 use only 1, x_c, x_c', x_c x_c'
+      per colour c, monochrome equations in (x_c, y_c): (gcd degree all 7 / edge graphs only, F_p roots): {0: (0, 0, [], []), 1: (0, 0, [], []), 2: (0, 0, [], []), 3: (0, 0, [], []), 4: (0, 0, [], [])}
+PASS per-coloured DIAGONAL system: inconsistent (mixed theta constants non-zero; and already the monochrome edge equations of each colour have gcd 1)
+      per-coloured COVARIANT system (110 edge equations, 16 distinct, a_3 eliminated with graph 2 colour 0): gcd degree 0; with the vertex graph (115, pivot graph 1): gcd degree 0
+PASS per-coloured COVARIANT system: gcd 1 (reproduces SCALAR_SCAN s.5)
+   step 3 in 233.0 s
+time for prime 618970019642690137449562111: 521.6 s
+====================================================================================================
+prime p = 2305843009213693951
+rows (Nz = 6), conifold periods, rows truncated at O(s^24): 1.5 s
+----------------------------------------------------------------------------------------------------
+(1) the conifold symbol R^(zhat), zhat = z/s^4: R^_{a,n}^{(i)} = [s^{-4n+c_a-1}] Q^{(i)}_{a,n}, through zhat^6
+PASS symbol: val_s Q^{(i)}_{a,n} = -4n + c_a - 1 exactly (non-zero leading coefficient) for all 5 x 5 x 7 (a, i, n), n <= 6
+PASS symbol: R^ symplectic as a constant series: Sum_ab R^_a^{(i)}(zhat) eta^{ab} R^_b^{(j)}(-zhat) = delta_ij through zhat^6
+PASS symbol: Z/5 covariance R^_a^{(i)}(zhat) = zeta^{i(a+1)} R^_a^{(0)}(zeta^{-i} zhat) (phase a+1-n per coefficient): {(0, 0): 1, (0, 1): 0, (0, 2): 4, (0, 3): 3, (0, 4): 2, (0, 5): 1, (0, 6): 0, (1, 0): 2, (1, 1): 1, (1, 2): 0, (1, 3): 4, (1, 4): 3, (1, 5): 2, (1, 6): 1, (2, 0): 3, (2, 1): 2, (2, 2): 1, (2, 3): 0, (2, 4): 4, (2, 5): 3, (2, 6): 2, (3, 0): 4, (3, 1): 3, (3, 2): 2, (3, 3): 1, (3, 4): 0, (3, 5): 4, (3, 6): 3, (4, 0): 0, (4, 1): 4, (4, 2): 3, (4, 3): 2, (4, 4): 1, (4, 5): 0, (4, 6): 4}
+   (the phase zeta^{ia} of the P-rows, R^_a^{(i)}(zhat) = zeta^{ia} R^_a^{(0)}(zeta^{-i} zhat), holds: False -- the extra zeta^i is Delta_i^{-1/2} = zeta^{-4i}/x)
+PASS symbol in the flat basis: R^_{ab,n} := Sum_i R^_{a,n}^{(i)} R^_{b,0}^{(i)} vanishes unless a + b = n - 2 mod 5 (zhat^n shifts the flat degree by n mod 5)
+   (a) Teleman colour-colour form R~_{ji}(zhat) = Sum_ab R^_{b,0}^{(j)} eta^{ba} R^_a^{(i)}(zhat); coefficient matrices C_n (rows j, columns i), Q(zeta) via Galois (sigma_m: C_n[mj][mi]):
+   C_0:
+      [1, 0, 0, 0, 0]
+      [0, 1, 0, 0, 0]
+      [0, 0, 1, 0, 0]
+      [0, 0, 0, 1, 0]
+      [0, 0, 0, 0, 1]
+   C_1:
+      [1/20, (1/25) z + (3/25) z^2 + (1/25) z^3, -3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3, -1/25 + (2/25) z + (-1/25) z^2, -1/25 + (-1/25) z + (2/25) z^3]
+      [(1/25) z + (3/25) z^2 + (1/25) z^3, -1/20 + (-1/20) z + (-1/20) z^2 + (-1/20) z^3, 1/25 + (3/25) z + (1/25) z^2, 1/25 + (1/25) z + (3/25) z^3, 3/25 + (1/25) z^2 + (1/25) z^3]
+      [-3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3, 1/25 + (3/25) z + (1/25) z^2, (1/20) z^3, 2/25 + (-1/25) z^2 + (-1/25) z^3, (-1/25) z + (2/25) z^2 + (-1/25) z^3]
+      [-1/25 + (2/25) z + (-1/25) z^2, 1/25 + (1/25) z + (3/25) z^3, 2/25 + (-1/25) z^2 + (-1/25) z^3, (1/20) z^2, -2/25 + (-3/25) z + (-3/25) z^2 + (-2/25) z^3]
+      [-1/25 + (-1/25) z + (2/25) z^3, 3/25 + (1/25) z^2 + (1/25) z^3, (-1/25) z + (2/25) z^2 + (-1/25) z^3, -2/25 + (-3/25) z + (-3/25) z^2 + (-2/25) z^3, (1/20) z]
+   C_2:
+      [21/4000, -3/100 + (-9/500) z + (9/500) z^2 + (3/125) z^3, -6/125 + (3/500) z + (-9/250) z^2 + (-9/500) z^3, -27/500 + (-3/500) z + (-3/125) z^2 + (-21/500) z^3, -3/250 + (9/500) z + (21/500) z^2 + (9/250) z^3]
+      [3/125 + (9/500) z + (-9/500) z^2 + (-3/100) z^3, (21/4000) z^3, 9/250 + (21/500) z + (9/500) z^2 + (-3/250) z^3, -21/500 + (-3/125) z + (-3/500) z^2 + (-27/500) z^3, -9/500 + (-9/250) z + (3/500) z^2 + (-6/125) z^3]
+      [21/500 + (-3/250) z + (9/250) z^2 + (9/500) z^3, -9/250 + (-6/125) z + (-9/500) z^2 + (3/500) z^3, (21/4000) z, -3/125 + (-27/500) z + (-21/500) z^2 + (-3/500) z^3, 9/500 + (-3/100) z + (3/125) z^2 + (-9/500) z^3]
+      [27/500 + (3/250) z + (3/100) z^2 + (6/125) z^3, 6/125 + (3/100) z + (3/250) z^2 + (27/500) z^3, 3/100 + (27/500) z + (6/125) z^2 + (3/250) z^3, -21/4000 + (-21/4000) z + (-21/4000) z^2 + (-21/4000) z^3, 3/250 + (6/125) z + (27/500) z^2 + (3/100) z^3]
+      [3/500 + (-9/500) z + (-6/125) z^2 + (-9/250) z^3, 9/500 + (9/250) z + (-3/250) z^2 + (21/500) z^3, -9/500 + (3/125) z + (-3/100) z^2 + (9/500) z^3, -3/500 + (-21/500) z + (-27/500) z^2 + (-3/125) z^3, (21/4000) z^2]
+   C_3:
+      [-1209/80000, -111/2000 + (-93/1250) z + (-921/20000) z^2 + (-81/20000) z^3, -189/20000 + (21/500) z + (-567/20000) z^2 + (921/20000) z^3, -1029/20000 + (-21/500) z + (81/20000) z^2 + (-1407/20000) z^3, 189/10000 + (93/1250) z + (1407/20000) z^2 + (567/20000) z^3]
+      [-21/500 + (-1407/20000) z + (-1029/20000) z^2 + (81/20000) z^3, (-1209/80000) z^2, 21/500 + (921/20000) z + (-189/20000) z^2 + (-567/20000) z^3, 93/1250 + (567/20000) z + (189/10000) z^2 + (1407/20000) z^3, -93/1250 + (-81/20000) z + (-111/2000) z^2 + (-921/20000) z^3]
+      [189/20000 + (111/2000) z + (-189/10000) z^2 + (1029/20000) z^3, 111/2000 + (1029/20000) z + (189/20000) z^2 + (-189/10000) z^3, 1209/80000 + (1209/80000) z + (1209/80000) z^2 + (1209/80000) z^3, -189/10000 + (189/20000) z + (1029/20000) z^2 + (111/2000) z^3, 1029/20000 + (-189/10000) z + (111/2000) z^2 + (189/20000) z^3]
+      [-921/20000 + (-111/2000) z + (-81/20000) z^2 + (-93/1250) z^3, 1407/20000 + (189/10000) z + (567/20000) z^2 + (93/1250) z^3, -567/20000 + (-189/20000) z + (921/20000) z^2 + (21/500) z^3, (-1209/80000) z, 81/20000 + (-1029/20000) z + (-1407/20000) z^2 + (-21/500) z^3]
+      [567/20000 + (1407/20000) z + (93/1250) z^2 + (189/10000) z^3, -1407/20000 + (81/20000) z + (-21/500) z^2 + (-1029/20000) z^3, 921/20000 + (-567/20000) z + (21/500) z^2 + (-189/20000) z^3, -81/20000 + (-921/20000) z + (-93/1250) z^2 + (-111/2000) z^3, (-1209/80000) z^3]
+   C_4:
+      [122871/6400000, -9009/200000 + (-272349/2000000) z + (-335097/2000000) z^2 + (-92337/1000000) z^3, 245007/2000000 + (150423/2000000) z + (15687/500000) z^2 + (335097/2000000) z^3, 11823/250000 + (-150423/2000000) z + (92337/1000000) z^2 + (-3507/80000) z^3, 182259/2000000 + (272349/2000000) z + (3507/80000) z^2 + (-15687/500000) z^3]
+      [15687/500000 + (245007/2000000) z + (335097/2000000) z^2 + (150423/2000000) z^3, (122871/6400000) z, 92337/1000000 + (11823/250000) z + (-3507/80000) z^2 + (-150423/2000000) z^3, -335097/2000000 + (-9009/200000) z + (-92337/1000000) z^2 + (-272349/2000000) z^3, 3507/80000 + (182259/2000000) z + (-15687/500000) z^2 + (272349/2000000) z^3]
+      [-272349/2000000 + (-92337/1000000) z + (-9009/200000) z^2 + (-335097/2000000) z^3, -150423/2000000 + (-3507/80000) z + (11823/250000) z^2 + (92337/1000000) z^3, (122871/6400000) z^2, 150423/2000000 + (335097/2000000) z + (245007/2000000) z^2 + (15687/500000) z^3, 272349/2000000 + (-15687/500000) z + (182259/2000000) z^2 + (3507/80000) z^3]
+      [-3507/80000 + (92337/1000000) z + (-150423/2000000) z^2 + (11823/250000) z^3, 335097/2000000 + (15687/500000) z + (150423/2000000) z^2 + (245007/2000000) z^3, -92337/1000000 + (-335097/2000000) z + (-272349/2000000) z^2 + (-9009/200000) z^3, (122871/6400000) z^3, -15687/500000 + (3507/80000) z + (272349/2000000) z^2 + (182259/2000000) z^3]
+      [-182259/2000000 + (-245007/2000000) z + (-11823/250000) z^2 + (9009/200000) z^3, -11823/250000 + (-182259/2000000) z + (9009/200000) z^2 + (-245007/2000000) z^3, -245007/2000000 + (9009/200000) z + (-182259/2000000) z^2 + (-11823/250000) z^3, 9009/200000 + (-11823/250000) z + (-245007/2000000) z^2 + (-182259/2000000) z^3, -122871/6400000 + (-122871/6400000) z + (-122871/6400000) z^2 + (-122871/6400000) z^3]
+   C_5:
+      [[Q(zeta) coords not reconstructible: (1433553634448680438, 0, 0, 0)], [Q(zeta) coords not reconstructible: (1333752991206382686, 2190878879332588709, 49449725669791352, 492445949933879405)], [Q(zeta) coords not reconstructible: (1284303265536591334, 442996224264088053, 2141429153662797357, 2256393283543902599)], [Q(zeta) coords not reconstructible: (841307041272503281, 1862846784949605898, 1813397059279814546, 1698432929398709304)], [Q(zeta) coords not reconstructible: (1448717121087487928, 114964129881105242, 607410079814984647, 164413855550896594)]]
+      [[Q(zeta) coords not reconstructible: (1448717121087487928, 114964129881105242, 607410079814984647, 164413855550896594)], [Q(zeta) coords not reconstructible: (1433553634448680438, 0, 0, 0)], [Q(zeta) coords not reconstructible: (1333752991206382686, 2190878879332588709, 49449725669791352, 492445949933879405)], [Q(zeta) coords not reconstructible: (1284303265536591334, 442996224264088053, 2141429153662797357, 2256393283543902599)], [Q(zeta) coords not reconstructible: (841307041272503281, 1862846784949605898, 1813397059279814546, 1698432929398709304)]]
+      [[Q(zeta) coords not reconstructible: (841307041272503281, 1862846784949605898, 1813397059279814546, 1698432929398709304)], [Q(zeta) coords not reconstructible: (1448717121087487928, 114964129881105242, 607410079814984647, 164413855550896594)], [Q(zeta) coords not reconstructible: (1433553634448680438, 0, 0, 0)], [Q(zeta) coords not reconstructible: (1333752991206382686, 2190878879332588709, 49449725669791352, 492445949933879405)], [Q(zeta) coords not reconstructible: (1284303265536591334, 442996224264088053, 2141429153662797357, 2256393283543902599)]]
+      [[Q(zeta) coords not reconstructible: (1284303265536591334, 442996224264088053, 2141429153662797357, 2256393283543902599)], [Q(zeta) coords not reconstructible: (841307041272503281, 1862846784949605898, 1813397059279814546, 1698432929398709304)], [Q(zeta) coords not reconstructible: (1448717121087487928, 114964129881105242, 607410079814984647, 164413855550896594)], [Q(zeta) coords not reconstructible: (1433553634448680438, 0, 0, 0)], [Q(zeta) coords not reconstructible: (1333752991206382686, 2190878879332588709, 49449725669791352, 492445949933879405)]]
+      [[Q(zeta) coords not reconstructible: (1333752991206382686, 2190878879332588709, 49449725669791352, 492445949933879405)], [Q(zeta) coords not reconstructible: (1284303265536591334, 442996224264088053, 2141429153662797357, 2256393283543902599)], [Q(zeta) coords not reconstructible: (841307041272503281, 1862846784949605898, 1813397059279814546, 1698432929398709304)], [Q(zeta) coords not reconstructible: (1448717121087487928, 114964129881105242, 607410079814984647, 164413855550896594)], [Q(zeta) coords not reconstructible: (1433553634448680438, 0, 0, 0)]]
+   C_6:
+      [-6886814499073/182377, 8430903974308/55259, -1449567976399/207989, 447135704626/34767, 5062561578778/140377]
+      [2513844977773/122199, 3380763918000/13267, 6047625434749/62121, 2304214371061/160640, -6381701362703/31014]
+      [2391729975923/68620, 1197080129377/59149, -769115620867/15541, 8598300976641/7277, 5421650856051/15769]
+      [-7041279856085/15272, -4059505758859/126248, 2992212614163/148975, -8226390964517/100291, 1418489137041/112553]
+      [9965553286253/130363, -90575385467/39101, -1694160155081/205423, 8801168476559/86607, 976730325687/135493]
+PASS symbol: C_0 = identity (symplecticity at zhat^0)
+   R~ diagonal in colours: False;  Z/5-circulant with phase (C_n[j+1][i+1] = zeta^{-n} C_n[j][i]): True
+PASS symbol: R~ is NOT diagonal in colours (every off-diagonal entry of C_1 is non-zero) and IS circulant with phase zeta^{-n}
+PASS symbol: log R~ = Sum mu_k zhat^k has mu_k^T = (-1)^{k+1} mu_k (symplectic log), k <= 6
+   first rows (j = 0) of mu_1, mu_2, mu_3 in Q(zeta) [sigma_m(mu_k[0][i]) = mu_k[0][mi]]:
+      mu_1[0][.] = [1/20, (1/25) z + (3/25) z^2 + (1/25) z^3, -3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3, -1/25 + (2/25) z + (-1/25) z^2, -1/25 + (-1/25) z + (2/25) z^3]
+      mu_2[0][.] = [0, -27/1000 + (-9/500) z + (9/500) z^2 + (27/1000) z^3, -9/200 + (9/1000) z + (-9/250) z^2 + (-9/500) z^3, -27/500 + (-9/1000) z + (-27/1000) z^2 + (-9/200) z^3, -9/1000 + (9/500) z + (9/200) z^2 + (9/250) z^3]
+      mu_3[0][.] = [-3/200, -243/5000 + (-579/8000) z + (-243/5000) z^2, (243/5000) z + (-951/40000) z^2 + (243/5000) z^3, -243/5000 + (-243/5000) z + (-579/8000) z^3, 951/40000 + (579/8000) z + (579/8000) z^2 + (951/40000) z^3]
+PASS symbol: mu_2 != 0 (an antisymmetric EVEN part is present: R~ is not exp(odd) even as a matrix)
+   (c) diagonal entry R~_00(zhat) = [1, 1/20, 21/4000, -1209/80000, 122871/6400000, [1433553634448680438 mod p], [657804438478992715 mod p]]
+       log R~_00: even coefficients {2: '1/250', 4: '1247/62500', 6: '[1330056684318206889 mod p]'}; odd {1: '1/20', 3: '-23/1500', 5: '-79/78125'}
+FAIL symbol: diagonal entries R~_ii are exp(odd series): even coefficients non-zero: {2: '1/250', 4: '1247/62500', 6: '[1330056684318206889 mod p]'}
+PASS symbol: R~_ii(zhat) = R~_00(zeta^{-i} zhat) (covariance of the diagonal)
+   identity row f(zhat) = R^_0^{(0)}(zhat) = [1, -3/20, 9/800, 11571/80000, -3963167728238/148771, -9169328815198/70061, -1898627182090/168517]
+PASS symbol: f coefficients = 1, -3/20, 9/800, 11571/80000, -2415609/6400000, 47735919/128000000 (zhat^0..5)
+   log f: even {2: '0', 4: '-2223/6250', 6: '164934/78125'}; odd (b_k at zhat^{2k-1}) {1: '-3/20', 3: '363/2500', 5: '4968/15625'}
+FAIL symbol: f is exp(odd series): even coefficients: {4: '-2223/6250', 6: '164934/78125'}
+   implied power sums p_{2k-1} = -b_k 2k(2k-1)/B_{2k}: {1: '9/5', 3: '6534/125', 5: '-1251936/3125'}
+   (reference: wt_0 = {1 - zeta^j} U {-5} has p_1, p_3, p_5 = ['9/5', '-126/125', '-1/3125'])
+   named candidates (c * wt_i, c in {+-1, +-5, +-1/5}, all sub-multisets: 930): full (p_1, p_3, p_5) match []; p_1 alone matched by ['1*wt_0']
+   block search (171 Galois-orbit/rational blocks, multisets of size <= 6, 0.2 s): matches for the symbol's (p_1, p_3, p_5): []; control (wt_0's power sums): [(5, ['{1 zeta^(m*0)(1 - zeta^(m*1))}', '{-5}'])]
+PASS symbol: no weight multiset of size <= 6 from the candidate pool realises (p_1, p_3, p_5) of f (and f is not exp(odd) anyway)
+   h_{wt_0}(zhat) = [1, -3/20, 9/800, -269/80000, 1801439851022/167315, 7298404881839/80244, -9074551659453/172369]
+   h_{wt_0}^{-1} f = [1, 0, 0, 37/250, -2223/6250, 8784163848274/11481, -3689348507030/145003]
+   log(h^{-1} f) = [0, 0, 0, 37/250, -2223/6250, 8784163848274/11481, 164934/78125]
+PASS symbol: f = h_{wt_0}(zhat) (1 + (37/250) zhat^3 + O(zhat^4)): agreement with the QRR constant through zhat^2 only
+   step 1 in 0.3 s
+----------------------------------------------------------------------------------------------------
+(2) s-series fit over ALL monomials of weight <= 3 in (m_1, m_2, m_3): 1 + 40 + 120 + 150 + 680 = 991 unknowns
+   1010 + 20 random symplectic M (fq_sser.SympM.random), orders s^-10..s^2, 991 monomials of weight <= 3
+      200 evaluations, 37.1 s
+      400 evaluations, 75.1 s
+      600 evaluations, 112.8 s
+      800 evaluations, 149.6 s
+      1000 evaluations, 186.5 s
+   evaluations in 192.0 s
+PASS fit: rank 991 = 991 monomials, 0 inconsistent surplus rows (121.9 s)
+PASS fit verified on 20 extra random M for all 91 (graph, order) coefficients
+   graph 1: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 2: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 3: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 4: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 5: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 6: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+   graph 7: s^-10: w[0]  s^-6: w[1]  s^-5: w[0]  s^-2: w[2]  s^-1: w[1]  s^0: w[0]  s^2: w[3]  (all other orders identically 0)
+PASS weight structure: s^-10, s^-5, s^0 weight 0; s^-6, s^-1 weight 1; s^-2 weight 2; s^+2 weight 3 ONLY (no weight-0 part); s^-9..-7, -4, -3, 1 zero
+PASS m3 never at a polar order; m3 (weight 3) present at s^+2 for graphs 1, 2, 4 only; m2 at s^-2 and s^+2 (via m1 m2) for graphs 1, 2, 4, 5
+PASS colour-shift covariance c_{shift mu} = zeta^w c_mu on all 1771 fitted coefficients
+   Galois reconstruction in Q(zeta) of the 1771 coefficients: 0 not reconstructible by fq_fp.ratrec (bound ~1e10 at 2^89-1, ~1e7 at 2^61-1)
+   graph 1, s^+2, m3 coefficients: m3_00: 23/1152; m3_01: 1/576 + (1/576) z + (1/576) z^2 + (1/576) z^3; m3_02: (-1/576) z^3; m3_03: (-1/576) z^2; m3_04: (-1/576) z ...
+   graph 2, s^+2, m3 coefficients: m3_00: -1/48; m3_11: (-1/48) z^3; m3_22: (-1/48) z; m3_33: 1/48 + (1/48) z + (1/48) z^2 + (1/48) z^3; m3_44: (-1/48) z^2
+   graph 4, s^+2, m3 coefficients: m3_00: 1/1152; m3_01: -1/576 + (-1/576) z + (-1/576) z^2 + (-1/576) z^3; m3_02: (1/576) z^3; m3_03: (1/576) z^2; m3_04: (1/576) z ...
+   step 2 in 314.5 s
+----------------------------------------------------------------------------------------------------
+(3) the leading-order system L_Gamma(mu) for M_0(zhat) = exp(mu_1 zhat + mu_2 zhat^2 + mu_3 zhat^3)
+   L_Gamma(mu) = c_Gamma + [w1 of s^-6] + [w2 of s^-2] + [w3 of s^+2]: monomial counts {1: 481, 2: 261, 3: 96, 4: 491, 5: 236, 6: 46, 7: 66}
+PASS frozen theory (rows R^, Delta^_i^{1/2} = zeta^{4i}) at M_0 = 1 reproduces every c_Gamma and the total 1/1200
+PASS KEY CHECK: L_Gamma(mu) (substitution m_k = mu_k s^-4k in the s-series fit) = frozen graph sum with rows R^ M_0^-1 and vertex M_0.omega^ at 5 random mu; frozen total = 1/1200
+PASS frozen-theory fit (1010 random mu, 991 monomials): rank 991, 0 inconsistent; verified on 20 more; EVERY coefficient equals L_Gamma (190.1 s)
+PASS (i) tautological mu = log R~ (zhat^1..3): L_1 = 1/1200 and L_Gamma = 0 for the six edge graphs; same from the frozen graph sum
+   (ii) Jacobian of (L_2..L_7) at the tautological point: rank 2; rows non-zero for graphs [2, 4] (graphs with >= 2 edges vanish to second order: every edge factor is O(delta))
+PASS tautological point is a SINGULAR point of the solution variety: Jacobian rank 2 (only the one-edge graphs 2, 4), Zariski tangent space dim 38
+   graphs without any mu_2, mu_3 dependence: [3, 6, 7]; L_Gamma is cubic in mu_1 and LINEAR in (mu_2, mu_3) jointly
+   at random mu_1: rank of the 6 x 25 (mu_2, mu_3)-coefficient matrix and consistency: [(3, False), (3, False), (3, False)]
+PASS (mu_2, mu_3)-coefficient matrix has rank 3 (rows 2, 4, 5) and the system is inconsistent at generic mu_1: mu_1 must lie on W = {L_3 = L_6 = L_7 = 0}
+PASS fibre over the tautological mu_1: coefficient rank 2, consistent: a 23-dimensional affine space of (mu_2, mu_3) completing mu_1^taut to solutions
+      Jacobian rank at a random point of that fibre: 3
+   random points of W (random affine 3-planes in A^15, 3 cubics in 3 unknowns by resultants): 2 found in 1.4 s
+      (rank B, consistent, full Jacobian rank, Jacobian rank of (L_3, L_6, L_7) in mu_1): [(3, True, 6, 3), (3, True, 6, 3)]
+PASS generic point of W: W smooth of dim 12 there, fibre dim 22, full Jacobian rank 6: the solution variety has local dimension 34 at generic points
+   COVARIANT DIAGONAL (a_1, a_3) [mu_2 = 0 forced: antisymmetric diagonal]:
+      graph 1: (1807/3072000) + (37/10240) a1 + (115/1152) a3 + (-119/1536) a1*a1 + (-655/3456) a1*a1*a1
+      graph 2: (-811/256000) + (-343/12800) a1 + (-5/48) a3 + (89/384) a1*a1 + (-5/288) a1*a1*a1
+      graph 3: (-57/64000) + (87/3200) a1 + (-7/32) a1*a1 + (5/8) a1*a1*a1
+      graph 4: (843/1024000) + (11/10240) a1 + (5/1152) a3 + (455/1536) a1*a1 + (-1985/3456) a1*a1*a1
+      graph 5: (3/51200) + (71/2560) a1 + (-245/384) a1*a1 + (115/96) a1*a1*a1
+      graph 6: (87/32000) + (-1/320) a1 + (1/16) a1*a1 + (-5/12) a1*a1*a1
+      graph 7: (9/12800) + (-19/640) a1 + (11/32) a1*a1 + (-5/8) a1*a1*a1
+      eliminating a_3 with graph 2: 5 univariate polynomials in a_1 of degrees [3, 3, 3, 3, 3]; gcd = (1)
+PASS COVARIANT DIAGONAL: no solution (gcd 1); colour-summed version of SCALAR_SCAN s.5
+   DIAGONAL M_0 (x_i, y_i; 10 parameters) in Fourier modes X_a = Sum_i zeta^{ai} x_i, Y_a:
+      graph 1: (1807/3072000) + (37/51200) X1 + (23/1152) Y3 + (-119/19200) X0*X2 + (-119/38400) X1*X1 + (-119/19200) X3*X4 + (-131/28800) X0*X0*X3 + (-131/14400) X0*X1*X2 + (-131/28800) X0*X4*X4 + (-131/86400) X1*X1*X1 + (-131/14400) X1*X3*X4 + (-131/28800) X2*X2*X4 + (-131/28800) X2*X3*X3
+      graph 2: (-811/256000) + (-343/64000) X1 + (-1/48) Y3 + (89/4800) X0*X2 + (89/9600) X1*X1 + (89/4800) X3*X4 + (-1/2400) X0*X0*X3 + (-1/1200) X0*X1*X2 + (-1/2400) X0*X4*X4 + (-1/7200) X1*X1*X1 + (-1/1200) X1*X3*X4 + (-1/2400) X2*X2*X4 + (-1/2400) X2*X3*X3
+      graph 3: (-57/64000) + (87/16000) X1 + (-7/400) X0*X2 + (-7/800) X1*X1 + (-7/400) X3*X4 + (3/200) X0*X0*X3 + (3/100) X0*X1*X2 + (3/200) X0*X4*X4 + (1/200) X1*X1*X1 + (3/100) X1*X3*X4 + (3/200) X2*X2*X4 + (3/200) X2*X3*X3
+      graph 4: (843/1024000) + (11/51200) X1 + (1/1152) Y3 + (71/19200) X0*X2 + (91/7680) X1*X1 + (-121/19200) X3*X4 + (-397/28800) X0*X0*X3 + (-397/14400) X0*X1*X2 + (-397/28800) X0*X4*X4 + (-397/86400) X1*X1*X1 + (-397/14400) X1*X3*X4 + (-397/28800) X2*X2*X4 + (-397/28800) X2*X3*X3
+      graph 5: (3/51200) + (71/12800) X1 + (-53/4800) X0*X2 + (-49/1920) X1*X1 + (43/4800) X3*X4 + (23/800) X0*X0*X3 + (23/400) X0*X1*X2 + (23/800) X0*X4*X4 + (23/2400) X1*X1*X1 + (23/400) X1*X3*X4 + (23/800) X2*X2*X4 + (23/800) X2*X3*X3
+      graph 6: (87/32000) + (-1/1600) X1 + (1/200) X0*X2 + (1/400) X1*X1 + (1/200) X3*X4 + (-1/100) X0*X0*X3 + (-1/50) X0*X1*X2 + (-1/100) X0*X4*X4 + (-1/300) X1*X1*X1 + (-1/50) X1*X3*X4 + (-1/100) X2*X2*X4 + (-1/100) X2*X3*X3
+      graph 7: (9/12800) + (-19/3200) X1 + (3/400) X0*X2 + (11/800) X1*X1 + (-1/400) X3*X4 + (-3/200) X0*X0*X3 + (-3/100) X0*X1*X2 + (-3/200) X0*X4*X4 + (-1/200) X1*X1*X1 + (-3/100) X1*X3*X4 + (-3/200) X2*X2*X4 + (-3/200) X2*X3*X3
+PASS DIAGONAL: every graph is c + alpha X_1 + beta Y_3 + delta X_0X_2 + eps X_1^2 + phi X_3X_4 + gamma C(X), C = X_0^2X_3 + 2X_0X_1X_2 + X_0X_4^2 + X_1^3/3 + 2X_1X_3X_4 + X_2^2X_4 + X_2X_3^2 (Z/5 grading; the cubic parts all proportional)
+      affine in w = (Y_3, X_0X_2, X_3X_4, C) with constant 6 x 4 matrix of rank 4; 2 left null vectors give conditions on X_1:
+         (-243/22000) + (-229/5500) X1 = 0
+         (557/176000) + (239/44000) X1 = 0
+      gcd of the conditions: (1); roots in F_p: []
+PASS DIAGONAL: no solution at all (the two conditions on X_1 are coprime linear polynomials); any (X_0X_2, X_3X_4, C) would be realisable, so this is the only obstruction
+   CIRCULANT (Z/5-covariant) M_0: 8 parameters c_1(0..2), c_2(1..2), c_3(0..2); variables per graph: {1: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2'], 2: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0'], 3: ['c1_0', 'c1_1', 'c1_2'], 4: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2'], 5: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2'], 6: ['c1_0', 'c1_1', 'c1_2'], 7: ['c1_0', 'c1_1', 'c1_2']}
+PASS tautological point lies in the circulant class (log R~ is circulant) and solves its equations
+      pure-c_1 equations (graphs 3, 6, 7) on 3 random planes: gcd degrees [1, 1, 1], points [1, 1, 1]
+PASS circulant: the c_1 locus is a LINE ell through the tautological c_1 (gcd degree 1 on every plane; all three cubics vanish identically along P + t d; plane points collinear)
+      ell = c_1^taut + t d, direction (d_0 = 1) in Q(zeta) [sigma_m c(e) = c(me)]: ['1', '(1/2) z + (1/2) z^3', '(1/2) z + (1/2) z^2'];  c_1^taut = ['1/20', '(1/25) z + (3/25) z^2 + (1/25) z^3', '-3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3']
+      ell passes through the origin c_1 = 0: False
+PASS circulant: direction d(j) = (zeta^j + zeta^{3j})/2, i.e. the mu_1-matrix D_{ij} = zeta^{-i} d(j-i) = (zeta^{j-2i} + zeta^{i-2j})/2 (symmetrised rank-2 tensor of the flat vectors zeta^j and zeta^{-2i})
+      fibres (c_2, c_3) over ell: at the tautological point and two random points: (rank of the 3 x 5 system, consistent) = [(2, True), (3, True), (3, True)]
+PASS circulant: over ell the (c_2, c_3) system is consistent with rank 2 at the tautological point (fibre dim 3) and rank 3 generically (fibre dim 2): a 3-dimensional family of solutions through the tautological point
+      blow-up along ell (chart v = lam w, two random coordinate choices): (vanishing orders along ell, eliminant identically zero, eliminant degree, dd pattern, off-line points) = [([1, 1, 1], True, 46, {1: 2}, 1), ([1, 1, 1], True, 46, {1: 2}, 1)]
+PASS circulant: exactly one further point X of the c_1 locus off ell (both coordinate choices agree; eliminant squarefree part has two F_p roots: w(X) and the exceptional w = 0)
+      X = ['9/20', '(-4/25) z + (-2/25) z^2 + (-4/25) z^3', '2/25 + (-2/25) z + (-2/25) z^2 + (2/25) z^3'] (Q(zeta) via the circulant Galois rule); L_3, L_6, L_7 at X: [0, 0, 0]
+      fibre over X: rank 3, consistent True -> a 2-dimensional family of circulant solutions over X
+PASS circulant: X - c_1^taut = (2/5) e with e(j) = (1 + zeta^{-j})/2, i.e. the mu_1-matrix (zeta^{-i} + zeta^{-j})/2 x 2/5
+PASS per-coloured frozen fit (115 coloured graphs, 61 monomials of weight <= 3 in x_i, y_i, 75 diagonal M_0): rank 61, 0 inconsistent (28.2 s); leafless foreign terms of the vertex graph exactly zeta^{3j}(x_j^3/10 + y_j/48)
+PASS monochrome coloured graphs depend only on (x_c, y_c) and reproduce the SCALAR_SCAN leading columns (T0_-10, T1_-6, T2_-2, T3_2, T4_2) at colour 0 for all 7 graphs
+PASS mixed theta colourings (20) are non-zero constants; mixed colourings of graphs 4, 5, 7 use only 1, x_c, x_c', x_c x_c'
+      per colour c, monochrome equations in (x_c, y_c): (gcd degree all 7 / edge graphs only, F_p roots): {0: (0, 0, [], []), 1: (0, 0, [], []), 2: (0, 0, [], []), 3: (0, 0, [], []), 4: (0, 0, [], [])}
+PASS per-coloured DIAGONAL system: inconsistent (mixed theta constants non-zero; and already the monochrome edge equations of each colour have gcd 1)
+      per-coloured COVARIANT system (110 edge equations, 16 distinct, a_3 eliminated with graph 2 colour 0): gcd degree 0; with the vertex graph (115, pivot graph 1): gcd degree 0
+PASS per-coloured COVARIANT system: gcd 1 (reproduces SCALAR_SCAN s.5)
+   step 3 in 220.9 s
+time for prime 2305843009213693951: 537.2 s
+====================================================================================================
+(4) cross-prime comparison (2^89-1 reconstructed Q(zeta)/Q values vs 2^61-1 residues)
+PASS all 1771 fitted polynomial coefficients (weight <= 3, 13 orders, 7 graphs) agree at both primes
+PASS symbol colour-colour matrices C_0..C_5 (150 entries) agree at both primes
+PASS identity-row symbol f (zhat^0..6, large-bound reconstruction at 2^89-1) agrees at 2^61-1
+PASS step-3 ranks, dimensions, gcd degrees, the line direction and the point X (Q(zeta)) identical at both primes
+total time 1058.9 s
+SYMBOL FAILURES: ['symbol: diagonal entries R~_ii are exp(odd series)', 'symbol: f is exp(odd series)', 'symbol: diagonal entries R~_ii are exp(odd series)', 'symbol: f is exp(odd series)']

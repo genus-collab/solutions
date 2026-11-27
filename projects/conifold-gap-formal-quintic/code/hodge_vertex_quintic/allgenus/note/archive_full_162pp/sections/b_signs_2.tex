@@ -1,0 +1,103 @@
+% Appendix B, part 2: topological recursion, legs, the tower, normalisations, stationary phase, the literature.
+
+%-------------------------------------------------------------------------------
+\subsection{Topological recursion}
+\label{sec:sgn-tr}
+
+Topological recursion is used in \cref{sec:mod} only, on the curve $x=\Wv(p)$, $y=p$, with the kernel of \cref{conv:mod-kernel}; $\iota_b$ is the local involution of $x$ at $\varsigma_b$. \Cref{tab:sgn-tr} compares it with the printed conventions of the sources quoted.
+
+\begin{table}[ht]
+\caption{Conventions of topological recursion.}
+\label{tab:sgn-tr}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.4\textwidth}>{\raggedright\arraybackslash}p{0.39\textwidth}@{}}
+\hline
+object & this note (\cref{conv:mod-kernel}) & sources \\
+\hline
+kernel & $K_b(p_0,q)=\frac12\int_{\iota_bq}^{q}\frac{\omega_{0,2}(p_0,\cdot)}{(y(q)-y(\iota_bq))\,\dd x(q)}$ near $\varsigma_b$, with $\omega_{0,1}=y\,\dd x$ and $\omega_{0,2}=\frac{\dd p_1\dd p_2}{(p_1-p_2)^2}$ & equal to the kernel of \cite[(2-26)--(2-29)]{Dunin-Barkowski:2015caa} and of \cite[(2.1)]{Hock25}; the printed kernel of \cite[(4-3), (4-9)]{Eynard:2007kz} equals that of \cite[(1.1)]{ABDKS25} with $\omega^{(0)}_{1,0}=-y\,\dd x$, and both are minus this kernel \\
+correlators & $\omega_{h,n}$ & $\omega_{h,n}=(-1)^nW^{\mathrm{EO}}_{h,n}=(-1)^n\omega^{\mathrm{ABDKS}}_{h,n}$ \\
+$\omega_{0,3}$ & $-\sum_b\Res_{q=\varsigma_b}\frac{\omega_{0,2}(q,p_1)\,\omega_{0,2}(q,p_2)\,\omega_{0,2}(q,p_3)}{\dd x(q)\,\dd y(q)}$ & minus \cite[Theorem~4.1, (4-20)]{Eynard:2007kz} \\
+free energies & $(2-2h)\FTR_h=\sum_b\Res_{\varsigma_b}\Phi_{y\mathrm dx}\,\omega_{h,1}$, $\dd\Phi_{y\mathrm dx}=y\,\dd x$; on the model curve $\FTR_h=\frac{B_{2h}}{2h(2h-2)}v^{2-2h}$ for $h\geq2$ (\cref{thm:mod-gap}) & $\FTR_h=-F^{\mathrm{print}}_h$, with $F^{\mathrm{print}}_h$ of \cite[(4-10)]{Eynard:2007kz} \\
+dilaton equation & $\sum_b\Res_{q=\varsigma_b}\Phi_{y\mathrm dx}(q)\,\omega_{h,n+1}(q,p_1,\dots,p_n)=(2-2h-n)\,\omega_{h,n}(p_1,\dots,p_n)$ & \cite[Theorem~4.7, (4-30)]{Eynard:2007kz}, with the factor $2h+n-2$ for $W^{\mathrm{EO}}$ \\
+variation in $v$ & \cref{thm:mod-var}, at fixed $x$, along a ray $\mathfrak r$ & \cite[Theorem~5.1, (5-14)--(5-15)]{Eynard:2007kz} with \S5.3, (5-27)--(5-30); for $\partial_v$ at fixed $x$ the function $\Lambda$ of \cite[(5-13)]{Eynard:2007kz} (a letter of that paper) is $-1$ on the ray, with the printed signs of \cite[(5-1), (5-13)]{Eynard:2007kz} \\
+Laplace transforms & \cite[(2-31), (2-32)]{Dunin-Barkowski:2015caa} read as formal Laplace series, the finite part at $i=j$ giving the $\delta_{ij}$ of $R^{-1}=1+O(\vartheta^{-1})$ & \cref{lem:mod-laplace} \\
+sign anchors & the curve $x=-p^2/2$, $y=p$ gives the intersection numbers of $\psi$ classes; $x=p+1/p$, $y=p$ gives $\FTR_2=-\frac1{240}$ (\cref{conv:mod-kernel}) & classical; used in no proof \\
+\hline
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------------
+\subsection{Legs}
+\label{sec:sgn-legs}
+
+The dictionary of record is the leg dictionary of \cref{prop:mod-LD}. With the legs $\phi^b_0=p,\log p,v/p,p^3,p^2$ ($b=0,\dots,4$) and $\phi^b_{k+1}=-\int\phi^b_k\,\dd x$ (\cref{def:mod-legs}), one has $\langle\phi^b_k,\dd\xi_{a,d}\rangle=-\varrho_b\delta_{ab}\delta_{dk}$ with $\varrho=(-1,1,-1,-3,-2)$; hence $q_{\phi^b_k}=-\varrho_b\,\psi^kH^b$, and the leg of $v^m\psi^kH^b$ is $-\varrho_b^{-1}v^m\phi^b_k$. In particular the unit has the leg $y=p$, and in the string equation it acts on the legs by $+\dd/\dd x$ (an orientation; the string equation is used in no proof); the dilaton shift $q=-z\,1$ has the leg $\int y\,\dd x=-\phi^0_1$; the class $H$ has the logarithmic leg $-\log p$; and the Euler--dilaton vector $\se=z\,1+vH$ has the leg $-p^5/5$.
+
+Legs in the leg class $\cL=\bbQ[v][p]+\bbQ(v)[x]$ are paired with $\omega_{h,n}$ by the residue pairing $\sum_b\Res_{\varsigma_b}$ (\cref{def:mod-pair}). For legs in $\bbQ[v][p]$ it equals the pairing on a circle $|p|=R>|\varsigma|$; for legs with a pole at $p=0$ the two differ by the residue at $p=0$, which is not zero in general. Logarithmic legs are paired along a ray $\mathfrak r$ from $0$ to $\infty$ that avoids the branch points.
+
+A second dictionary, with the unit leg $-p$, the leg $-\log p$ for $H$ and the step $+\int\cdot\,\dd x$, is not dual to the functions $\xi_{a,d}$ and is not used; on the curve $x=p^4+V/p$ it gives $\se$ the leg $-\frac45p^5$ and $\psi\se$ the leg $-\frac{16}{45}p^9+\frac V5p^4$.
+
+%-------------------------------------------------------------------------------
+\subsection{The vanishing tower and regularity}
+\label{sec:sgn-tower}
+
+The note uses one tower of covectors, defined from the vanishing solution $\YC$ of the model (\cref{def:tra-tower,def:gau-van}):
+\[
+\Pi_i(q):=-\coef{z^i}\bigl\langle\YC(-z),q(z)\bigr\rangle,\qquad i\geq0;
+\] $\Pi_0$ is the vanishing covector, and $\Pi_i(z^kH^b)=\Pi_0(z^{k-i}H^b)$, which is zero for $k<i$. On insertions, $\Pi_0(z^kH^b)=(-1)^{k+1}\coef{z^{-k}}\YC_b$, which vanishes unless $b+k\equiv1\bmod5$; for instance $\Pi_0(H)=1$ and $\Pi_0(z\,1)=-v$.
+
+\emph{Weights.} The $v$-exponent of an ancestor correlator $\langle\prod_i\psi^{k_i}H^{a_i}\rangle_h$ of the model is $e=2-2h+\sum_i\wt(k_i,a_i)$ with $\wt(k,a)=(4k+\nu_a-4)/5$ (\cref{lem:set-modhom}). The same exponent is also written $2-2h-\sum_i(4-\nu_{a_i}-4k_i)/5$, where $(4-\nu_a)_{a=0,\dots,4}=(4,5,1,2,3)$. In the graded setting of \cref{conv:tra-forms} the variable $v$ has weight $5$ and $z^kH^a$ has weight $4k+\nu_a+1$, so that the weight of $z^kH^a$ is $5+5\wt(k,a)$.
+
+\emph{Regularity.} A correlator of the model is regular if its $v$-exponent is $\geq0$, that is, if it lies in $\bbQ[v]$; a graph term is regular if it lies in $\bbQ\fps{u}$; for the hatted term $G_\Gamma=u^{2g-2}T_\Gamma$ of a genus-$g$ graph, regularity of $T_\Gamma$ means $G_\Gamma\in u^{2g-2}\bbQ\fps{u}$. ``Regular'' never means ``zero''.
+
+%-------------------------------------------------------------------------------
+\subsection{Normalisations of gauges and series}
+\label{sec:sgn-norm}
+
+The normalisations used throughout are: the canonical gauge has $P_{11}(0,z)=1$ (\cref{def:gau-can}); the vanishing period is $\varpi_1=u+O(u^2)$, and $\varpi_0(0)=1$, $\tc'(0)=1$ in the conifold frames (\cref{lem:set-frobbasis,def:set-frames}); $v(u)=u+O(u^2)$ (\cref{def:set-tau}); $\Fs_0(0)=1$ (\cref{prop:set-modrows}); $\mathrm{ph}_0=1$ (\cref{def:set-rows}); $c_0(L)=1$ (\cref{def:gam-c}); the series $\SPh$ of \cref{def:fsp-wick} have constant term $1$ (the series $\SPn$ has the constant term $a_0(c)$, \cref{sec:sgn-sp}); and the dilaton factor of $\Pc$ satisfies $d(0)=1$ (\cref{lem:gau-diag}).
+
+The other normalisation of the gauge, used only in \cref{sec:evi}, is fixed by $p_{5n,0}(0)=0$ for $n\geq1$, where $P_k=\sum_bp_{k,b}E_{b+k,b}$ (\cref{def:gau-onepole}); it equals $\Pc\,\cn(z)$ with $\cn(z)=1+m_5z^5+m_{10}z^{10}+\dots$ (\cref{rmk:mai-stored}), and the rational numbers $m_5$, $m_{10}$ are recorded in \cref{sec:evi-univ}.
+
+%-------------------------------------------------------------------------------
+\subsection{Stationary phase}
+\label{sec:sgn-sp}
+
+\emph{Phases.} Stationary-phase integrands are written $\re^{F/z}$ in \cref{sec:fsp}; the saddle series of \cref{def:gam-c} has the phase $F=\mathsf S_0$; the flat integrand of \cref{sec:con} is written $\re^{-\cW/z}$ and the hatted one $\re^{-\hat\cW/\zh}$ (\cref{lem:con-form}, \cref{def:con-PhiSP}). They correspond under $F=-\cW$, resp.\ $F=-\hat\cW$ with $z$ renamed $\zh$ (\cref{def:fsp-wick}).
+
+\emph{Measures.} In the Mellin--Barnes summands (\cref{sec:con-form}) the Mellin variable is $\sigma$. $\Gamma(1+5\sigma/z)=\int y^{5\sigma/z}\re^{-y}\dd y$ carries the measure $\dd y$, and $\Gamma(w)=\int x^w\re^{-x}\dd x/x$ the measure $\dd x/x$. An insertion $x^m$ with the measure $\dd x/x$ is the case $M=m$ of \cref{lem:fsp-stirling}, with the measure $\dd x$ the case $M=m+1$.
+
+\emph{Normalised and full stationary phase.} The series $\SPn$ of \cref{def:fsp-wick} is normalised by the Gaussian, so that its constant term is the value $a_0(c)$ at the critical point of the $z^0$-part $a_0$ of the amplitude; $\SPh=\SPn/a_0(c)$ has constant term $1$; the full symbol is $(2\pi z)^{n/2}\det(-\mathsf H)^{-1/2}\re^{F(c)/z}\SPn$, with $\mathsf H$ the Hessian at $c$. Only normalised series are canonical: a $z$-dependent prefactor such as $(2\pi z/5)^{1/2}$ is common to the two sides of a comparison and cancels (\cref{def:con-PhiSP}).
+
+\emph{Branches.} Roots and logarithms occur only in the symbols: $\det(-J^{\mathrm T}\mathsf HJ)^{1/2}:=\det J\cdot\det(-\mathsf H)^{1/2}$ under a change of variables with Jacobian $J$ (\cref{lem:fsp-cov}), $\det(-\mu\mathsf H)^{1/2}:=\mu^{n/2}\det(-\mathsf H)^{1/2}$ under a rescaling by $\mu$ (\cref{lem:fsp-homog}), $\log(a/z):=\log a-\log z$ and $\Gst(1+w):=w\,\Gst(w)$ (\cref{def:fsp-stirling}). The saddle series $c(z;L)$ does not depend on the branches (\cref{prop:gam-rational}).
+
+\emph{$q$ and $-q$.} In every form of the Mellin--Barnes summand the critical equation is $-q(5\sigma)^5=\prod_j(\zeta^j-\sigma)$, that is $u\sigma^5=1$, so that $\sigma=L$ is the critical point of colour $0$; the logarithm $\lambda$ of $-q$ is forced by criticality (\cref{def:gam-c}). The series $c(z;L)$ depends on neither $\lambda$ nor the sign convention for $q$, which only fix the dictionary $q=(1-L^{-5})/5^5$. The two summands $(-q)^{\sigma/z}\Gamma(1+5\sigma/z)\prod_j\Gamma((\zeta^j-\sigma)/z)$ and $q^{\sigma/z}\Gamma(1+5\sigma/z)/\prod_j\Gamma(1+(\sigma-\zeta^j)/z)$ give the same normalised series (\cref{lem:con-form}). In Theorem~LMI the chart parameter $\mathsf Q=\re^{-\lambda/a_*}$ is $-q$ at $s_*=1$ and $(-q)^{-1/5}$ at $s_*=0$ (\cref{def:gam-lmidata,thm:gam-main,thm:gam-ginf}).
+
+\emph{Exponentials.} In the comparison of the actual rows with the canonical gauge the same exponential $\re^{u_i/z}$ is removed on both sides (\cref{thm:gau-R0}). The hatted phase gives $\re^{-\hat\cW(1)/\zh}=\re^{(u_0-u_0^{\mathrm c})/z}$, which differs from $\re^{u_0/z}$ by the constant factor $\re^{-u_0^{\mathrm c}/z}$, not a power series in $z$; for this reason the normalisations of \cref{sec:con} are expressed through normalised series and never through the exponential.
+
+%-------------------------------------------------------------------------------
+\subsection{Conventions of the literature}
+\label{sec:sgn-lit}
+
+\Cref{tab:sgn-lit} records the conventions of the sources in their own letters; in the note they are used only through the translations given at the places cited.
+
+\begin{table}[ht]
+\caption{Conventions of the literature and of the note.}
+\label{tab:sgn-lit}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.47\textwidth}>{\raggedright\arraybackslash}p{0.33\textwidth}@{}}
+\hline
+topic & literature & this note \\
+\hline
+$R$-matrix action & \cite[Def.~2.2]{PPZ15}, the convention of Givental and Teleman; \cite[\S2.3]{Dunin-Barkowski:2015caa} the same action, with Givental's matrix the transpose of theirs \cite[Remark~2.1]{Dunin-Barkowski:2015caa}; the dilaton leaves of \cite[\S2.3]{Dunin-Barkowski:2015caa} have the sign opposite to \cite[Def.~2.13]{PPZ15} and \cite[\S2.3]{DuninBarkowski:2012bw} & \cite{PPZ15} throughout (\cref{sec:sgn-R}) \\
+characters & \cite[\S2.2, Theorem~1]{Giv01}: tangent characters, minus sign; \cite[9.1~Theorem]{MR1901075}: cotangent characters, plus sign & equal (\cref{sec:sgn-qrr}) \\
+twist weight & \cite[(17)]{GJR18}: $-5h_\alpha$; \cite[(20)]{GJR17}: $t-5H$; \cite[Corollary~1]{MR2276766}: the symbol $\exp\bigl(+\sum_m\bk_m(z/(\lambda+\rho))^{2m-1}\bigr)$ of an Euler-class twist; \cite[(26)]{LP20}: $(5\lambda_i)/e(\mathbb E^*\tensor(5\lambda_i))$ & all agree with $-5\zeta^i\in\bw_i$ (\cref{thm:set-qrr,rmk:set-qrrsign}) \\
+asymptotic series & \cite[Theorem~4 (i)]{ZZ08}, \cite[\S2.4.4, (18)]{LP20}: $\Phi_s(0)=\delta_{0,s}$ & (QRR): the value $h_{\bw_i}$ at $q=0$ \\
+Landau--Ginzburg charts & \cite[\S7, Remark~7.2]{GJR18}: critical point $(x_i)_\alpha=L_\alpha-\lambda_i$, $y_\alpha=mL_\alpha$, measure $\dd x/x$ with $x^{k/m}$; \cite[\S10]{MR1901075}: chart $x_0=Q/(x_1\cdots x_n)$, measure $\dd x$; \cite[Lemma~4.20]{MR2553377}: $\re^{-W/z}$ at $z=-1$, measure $\dd w/w$; \cite[\S7, (11)]{MR2276766}: $\dd x$ with $(2\pi z(\lambda+\rho))^{-1/2}$ & the seven-variable chart (\cref{rmk:gam-sevenvar}): critical point $x_j=\zeta^j-L$ (the opposite sign to $L_\alpha-\lambda_i$) and $y=5L$, with $\dd y$ for the factor $\Gamma(1+5\sigma/z)$ and $\dd x_j/x_j$ for the factors $\Gamma((\zeta^j-\sigma)/z)$ \\
+gap constants & \cite[(1.2)]{HKQ09}: $\frac{(-1)^{g-1}B_{2g}}{2g(2g-2)}t_D^{2-2g}$; \cite[Conjecture~1.5]{CGYZ26} (quintic): $\frac{(-1)^{g-1}B_{2g}}{5^{g-1}2g(2g-2)}\tau_c^{2-2g}$; \cite[Definition~1.8]{CGYZ26} has $(-1)^g$ with a constant $\kappa$ and is not used; \cite[(1.5)]{Br25} (local $\bbP^2$): $\frac{3^{g-1}B_{2g}}{2g(2g-2)}t_{\mathrm{CF}}^{2-2g}$ & $c_g=\frac{(-1)^{g-1}B_{2g}}{2g(2g-2)5^{g-1}}$ for $\varpi_1=u+O(u^2)$; rescaling $\varpi_1$ by $\sqrt5$ gives the form of \cite[(1.2)]{HKQ09} (\cref{rmk:mai-constant}); $\Fm_h=(-5)^{1-h}\FTR_h=c_hv^{2-2h}$ \\
+mirror theorem & \cite[Corollary~11.7]{MR1408320} prints $l_\alpha$ for $\lambda_\alpha$ & \cite[Theorem~11.6]{MR1408320} is used (\cref{thm:set-mirror}) \\
+\hline
+\end{tabular}
+\end{table}

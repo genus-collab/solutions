@@ -1,0 +1,12 @@
+PASS (a) metric constant in t = (a1, a2, a3, a4 - a2^2/8, a5): eta_15 = 1, eta_24 = eta_33 = 1/4 at 4 random rational points
+PASS (a) control: in the naive coordinate a4 the entry (d/da2, d/da2) = -a2/8 != 0: 1/10
+PASS (b) c_555 = 1/a5 at the 4 points (prepotential contains (1/2) t5^2 log t5)
+PASS (b) e = d/dt4 is the unit: c_{4 alpha beta} = eta_{alpha beta}
+PASS (c) on the line: d5 o d4 = d5, d5 o d5 = (1/r) d1, d5 o d1 = 4 d2, d5 o d2 = d3, d5 o d3 = d4
+PASS (c) (d5 o)^5 = (4/r) id, hence U = (5/4) r d5 o has U^5 = 5^5 (r/4)^4: eigenvalues 5 x_c^4, x_c^5 = r/4
+PASS (d) deg t_alpha = alpha/4 pair to 2 - d with d = 1/2 on the support of eta; mu_alpha = (3-alpha)/4; mu_a = (c_a-1)/4 under alpha = a-1 mod 5: mu_a = ['-1/4', '-1/2', '1/2', '1/4', '0']
+PASS (e) p = 2^89-1, dump symbol: (5/4)[C_{n+1}, Z] = (V - n) C_n for n <= 5; V antisymmetric True: 0 bad entries
+PASS (e) p = 2^89-1, rec symbol: (5/4)[C_{n+1}, Z] = (V - n) C_n for n <= 30; V antisymmetric True: 0 bad entries
+PASS (e) p = 2^61-1, dump symbol: (5/4)[C_{n+1}, Z] = (V - n) C_n for n <= 5; V antisymmetric True: 0 bad entries
+PASS (e) p = 2^61-1, rec symbol: (5/4)[C_{n+1}, Z] = (V - n) C_n for n <= 30; V antisymmetric True: 0 bad entries
+ALL PASS

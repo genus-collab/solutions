@@ -1,0 +1,22 @@
+====================================================================================================
+bv_run S2_g4_89_stored_none_out2   [2026-11-14T10:31:00]
+system S2: f (1 + u/3 - 2u^2/7 + 5u^3/11), g (1 - 3u/5 + u^2/2 + 2u^3/3);  B -> B (1 - 5u/4 + 7u^2/3);  normalisation stored;  control none
+   rows: 245 of 250 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^5
+PASS    rows symplectic mod (zhat^10, u^6)
+      94/379 inner graphs (68 s wall, 164 s CPU)
+      188/379 inner graphs (115 s wall, 305 s CPU)
+      282/379 inner graphs (172 s wall, 475 s CPU)
+      376/379 inner graphs (245 s wall, 702 s CPU)
+   graph sum: 379 inner graphs, wall 252 s, CPU 704 s
+   RESULT: 6 of 10 outer graphs with edges are SINGULAR
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '[507671236404021415336612950 mod p]', '[7525757209963062544022159 mod p]']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '[50378234870186152272555607 mod p]', '[586092231117127067309917974 mod p]']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[517435772361885854382239521 mod p]']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[338447490936014276891075300 mod p]']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[254886760490074914870583100 mod p]']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[127170015497405228755226301 mod p]']
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '2123/31500000', '~-1333643/13365000000', '[432862035627182615688118969 mod p]', '[318030577530344163583450917 mod p]']
+   vertex graph in T'' = c0 T (c0 = 1): (1/180000) T''^-6 + (0) T''^-5 + (0) T''^-4 + (0) T''^-3 + ([60920548368482569840393554 mod p]) T''^-2 + ([378535656344712516965462316 mod p]) T''^-1  -> NOT c_g T''^(2-2g) + 0
+   [control] in the quintic t_c: (1/180000) t_c^-6 + (-1/180000) t_c^-5 + (227/25200000) t_c^-4 + (-3527/213840000) t_c^-3 + (~5162147867968/7188248945791) t_c^-2 + ([449820936556546794860562461 mod p]) t_c^-1
+   [control] in the model v(u): (1/180000) v^-6 + (-3/200000) v^-5 + (22277/756000000) v^-4 + (~-45266819/997920000000) v^-3 + ([517681578627201802457926676 mod p]) v^-2 + ([605016364692739041560000802 mod p]) v^-1
+BV_RUN S2_g4_89_stored_none_out2: checks passed; edge graphs singular [1, 2, 3, 4, 7, 8]; vertex law FAILS

@@ -1,0 +1,43 @@
+{
+ "tagA": "g5_61_nat",
+ "tagB": "g5_89_nat",
+ "prime": "89",
+ "pieces_A": 340363,
+ "pieces_B": 340363,
+ "pieces_only_A": [],
+ "pieces_only_B": [],
+ "n_pieces_only_A": 0,
+ "n_pieces_only_B": 0,
+ "n_common_pieces": 340363,
+ "n_pieces_with_different_u_support": 0,
+ "pieces_with_different_u_support": [],
+ "mask_hist_A": {
+  "128": 87633,
+  "192": 86362,
+  "224": 68646,
+  "240": 47763,
+  "248": 25877,
+  "252": 15002,
+  "254": 4525,
+  "255": 4555
+ },
+ "mask_hist_B": {
+  "128": 87633,
+  "192": 86362,
+  "224": 68646,
+  "240": 47763,
+  "248": 25877,
+  "252": 15002,
+  "254": 4525,
+  "255": 4555
+ },
+ "nonzero_rows_A": 1,
+ "nonzero_rows_B": 1,
+ "rows_only_A": [],
+ "rows_only_B": [],
+ "rows_with_different_u_support": [],
+ "n_rows_with_different_u_support": 0,
+ "cancelling_rows_A": 627,
+ "cancelling_rows_B": 627,
+ "cancelling_sets_equal": true
+}

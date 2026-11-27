@@ -1,0 +1,17 @@
+====================================================================================================
+bv_run S2_g4_89_canon_none   [2026-11-14T10:46:48]
+system S2: f (1 + u/3 - 2u^2/7 + 5u^3/11), g (1 - 3u/5 + u^2/2 + 2u^3/3);  B -> B (1 - 5u/4 + 7u^2/3);  normalisation canon;  control none
+   rows: 245 of 250 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^5
+PASS    rows symplectic mod (zhat^10, u^6)
+      94/379 inner graphs (136 s wall, 360 s CPU)
+      188/379 inner graphs (266 s wall, 746 s CPU)
+      282/379 inner graphs (372 s wall, 1069 s CPU)
+      376/379 inner graphs (485 s wall, 1421 s CPU)
+   graph sum: 379 inner graphs, wall 492 s, CPU 1424 s
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '2123/31500000', '~-1333643/13365000000', '~50206069/433125000000', '~-262094461/2192695312500']
+   vertex graph in T'' = c0 T (c0 = 1): (1/180000) T''^-6 + (0) T''^-5 + (0) T''^-4 + (0) T''^-3 + (0) T''^-2 + (0) T''^-1  -> c_4 (T'')^-6 + 0
+   [control] in the quintic t_c: (1/180000) t_c^-6 + (-1/180000) t_c^-5 + (227/25200000) t_c^-4 + (-3527/213840000) t_c^-3 + (~432497/15592500000) t_c^-2 + (~-219245089/5011875000000) t_c^-1
+   [control] in the model v(u): (1/180000) v^-6 + (-3/200000) v^-5 + (22277/756000000) v^-4 + (~-45266819/997920000000) v^-3 + (~-5242404717099/4513073431715) v^-2 + ([528897209736736892430717529 mod p]) v^-1
+   total, in T'': (1/180000) T''^-6 + (0) T''^-5 + (0) T''^-4 + (0) T''^-3 + (0) T''^-2 + (0) T''^-1
+BV_RUN S2_g4_89_canon_none: checks passed; edge graphs all regular; vertex law holds

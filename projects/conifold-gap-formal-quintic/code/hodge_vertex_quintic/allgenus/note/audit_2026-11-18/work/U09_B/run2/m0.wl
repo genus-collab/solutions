@@ -1,0 +1,24 @@
+(* Model R-matrix M0(t) from the colour-0 T-system of prop:set-modrows, def:set-M0. Numeric zeta. *)
+Nt = 6; NN = Nt + 1;
+Tk[k_, F_] := Expand[-F + (t/5) (k F - 4 t D[F, t])];
+trunc[f_, n_] := Normal[Series[f, {t, 0, n}]];
+F0 = 1 + Sum[c[n] t^n, {n, 1, NN}];
+F1 = trunc[Tk[-1, F0], NN];
+F2 = trunc[-Tk[-2, F1], NN];
+F3 = trunc[Tk[2, F2], NN];
+F4 = trunc[-Tk[1, F3], NN];
+clos = trunc[-Tk[0, F4] - F0, NN + 1];
+eqs = Table[Coefficient[clos, t, n] == 0, {n, 1, NN + 1}];
+sol = Solve[eqs, Table[c[n], {n, 1, NN}]][[1]];
+Fs = trunc[#, Nt] & /@ ({F0, F1, F2, F3, F4} /. sol);
+Print["F0 = ", Fs[[1]]];
+Print["Fs = ", Fs];
+z5 = N[Exp[2 Pi I/5], 50];
+RhatM = Table[z5^(i (b + 1)) (Fs[[b + 1]] /. t -> z5^(-i) t), {b, 0, 4}, {i, 0, 4}];
+Psi0 = RhatM /. t -> 0;
+M0 = Map[Expand[trunc[#, Nt]] &, Inverse[Psi0].RhatM, {2}];
+M0 = Chop[M0, 10^-40];
+Print["M0 t^1 coefficient matrix: ", Chop[N[Map[Coefficient[#, t, 1] &, M0, {2}], 10]]];
+symp = Map[Expand[trunc[#, Nt]] &, Transpose[M0 /. t -> -t].M0, {2}];
+Print["max |M0(-t)^T M0(t) - 1| coefficients: ", Max[Abs[Flatten[Map[CoefficientList[#, t] &, symp - IdentityMatrix[5], {2}]]]]];
+DumpSave["m0.mx", {Fs, M0, Psi0, z5}];

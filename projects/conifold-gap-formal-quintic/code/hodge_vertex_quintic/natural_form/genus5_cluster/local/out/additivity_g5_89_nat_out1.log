@@ -1,0 +1,14 @@
+point-frame reference parts/g5_89_id: 4555 inner graphs
+PASS the shipped point-frame run covers all 4555 inner graphs: 4555
+   of them 4555 have a non-zero point-frame term
+PASS the point-frame parts re-merge to the shipped results/g5_89_id.json table
+PASS their sum equals its info['total']: ['1/660000', '-7/825000', '199/9900000']
+local full-maxout part files ['local.json']: 2586 inner graphs, CPU 8.89 h
+PASS (A) FULL additivity: for each of the 2586 locally recomputed inner graphs the pieces add up to its point-frame term
+   inner graphs checked by edge number E(t): [(0, 1), (1, 3), (2, 11), (3, 34), (4, 84), (5, 150), (6, 255), (7, 377), (8, 493), (9, 501), (10, 402), (11, 214), (12, 61)]
+   of them 2586 have a non-zero point-frame term (so the identity is not 0 = 0)
+local maxout-1 part files: 4555 inner graphs, CPU 11.77 h
+PASS (B) additivity for the 4 inner graphs with E(t) <= 1 of the maxout-1 run (truncation vacuous)
+PASS (C) RESTRICTION: on the 2586 inner graphs in both runs, the maxout-1 pieces are exactly the full pieces with E(q) <= 1
+   non-zero pieces on those 2586 inner graphs: 9299 in the maxout-1 run, 222784 in the full run
+G5L_ADDITIVITY ALL CHECKS PASSED

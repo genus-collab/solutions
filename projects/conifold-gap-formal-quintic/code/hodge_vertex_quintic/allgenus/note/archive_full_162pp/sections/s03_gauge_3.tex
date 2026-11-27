@@ -1,0 +1,126 @@
+% Section 3, part 3 of 7: the quintic system and the pulled-back model; Theorem U (statement); the commutant.
+
+%-------------------------------------------------------------------------------
+\subsection{The quintic system and the pulled-back model}
+\label{sec:gau-systems}
+
+\begin{defn}[Cyclic systems with one simple pole; regular gauges]
+\label{def:gau-onepole}
+Let $\Bbbk$ be a field of characteristic $0$. A \emph{cyclic system with one simple pole} over $\Bbbk\fps u$ is a system $z\de_uY=AY$ with $A=\sum_{a\in\bbZ/5}b_aE_{a,a+1}$ whose coefficients have the \emph{one-pole shape}: $b_a\in\Bbbk\fps u^\times$ for $a\neq1$ and $ub_1\in\Bbbk\fps u^\times$. Its \emph{residue} is $r:=(ub_1)(0)\in\Bbbk^\times$ and its \emph{product} is $\Bprod:=\prod_ab_a\in\Bbbk\lser u$. It is \emph{self-dual} if $b_0=b_2$ and $b_3=b_4$; for $\eta=(5\,\delta_{a+b\equiv3})_{a,b}$ the entry $(c,d)$ of $\eta A$ is $5b_{d-1}\delta_{c+d\equiv4}$ and that of $A^T\eta$ is $5b_{c-1}\delta_{c+d\equiv4}$, so self-duality is $\eta A=A^T\eta$. For a second such system $\tilde A=\sum_a\tilde b_aE_{a,a+1}$, with residue $\tilde r$, the condition of \emph{equal products} is
+\[
+\text{(EP)}\qquad \prod_ab_a=\prod_a\tilde b_a .
+\]
+The \emph{gauge equation} from $\tilde A$ to $A$ is $zP'=AP-P\tilde A$ for $P=\sum_{k\geq0}z^kP_k$, $P_k\in\mathfrak{gl}_5(\Bbbk\fps u)$; then $z\de_u(P\tilde Y)=(AP-P\tilde A)\tilde Y+P\tilde A\tilde Y=AP\tilde Y$ whenever $z\de_u\tilde Y=\tilde A\tilde Y$, so $Y=P\tilde Y$ maps solutions of the second system to solutions of the first. $\Gau(A,\tilde A)$ denotes the set of all solutions $P\in\mathfrak{gl}_5(\Bbbk\fps u)\fps z$, with no condition on $P_0$; it is a $\Bbbk\fps z$-module, since $z(P\cn)'=(AP-P\tilde A)\cn$ for $\cn\in\Bbbk\fps z$. A \emph{regular gauge} is an element of $\Gau(A,\tilde A)$ with $P_0$ invertible. $P$ is \emph{graded} if $P_k=\sum_bp_{k,b}E_{b+k,b}$ for every $k$.
+\end{defn}
+
+\begin{prop}[The quintic cyclic system]
+\label{prop:gau-quintic}
+Let $(\alpha,\beta)\in\bbQ^2$ give a conifold frame (\cref{def:set-frames}), $\tc=\varpi_1/\varpi_0$, and
+\[
+\kappa:=\Bigl(\Dq\tc,\ \frac{L^5}{\varpi_0^2(\Dq\tc)^2},\ \Dq\tc,\ \varpi_0,\ \varpi_0\Bigr),\qquad L^5=u^{-1},
+\]
+the vector of \cref{cor:gau-cycsys} for $(y_0,y_1)=(\varpi_0,\varpi_1)$.
+\begin{enumerate}
+\item $\kappa_a=\Cexp_{\alpha,\beta}(C_1\kappa^{\mathrm{LR}}_a)$ for $a\in\bbZ/5$, where $C_1\kappa^{\mathrm{LR}}=(C_1,L^5/(C_0^2C_1^2),C_1,C_0,C_0)$ (\cref{prop:set-cyclicLR}) is represented in $\Nring$ by $(\mathsf W/c_0^2,\ L^5c_0^2/\mathsf W^2,\ \mathsf W/c_0^2,\ c_0,\ c_0)$. Hence the conifold expansion carries the forward relations $(z\Dq+\zeta^iL)X_a=C_1\kappa^{\mathrm{LR}}_aX_{a+1}$ ($a=0,\dots,3$) of elements of $\Nring\lser z\otimes\bbQ(\zeta)$ to the relations $(z\Dq+\zeta^iL)\Cexp(X_a)=\kappa_a\Cexp(X_{a+1})$, $L=s^{-1}$; the closing relation is then given by \cref{cor:gau-cycsys}.
+\item The cyclic system \eqref{eq:gau-system} is $z\de_uY=AY$ with $A=\sum_ab_aE_{a,a+1}$, $b_a:=-\kappa_a/(1-u)$,
+\[
+b=\Bigl(\tc',\ -\frac1{u\varpi_0^2(1-u)^3\tc'^2},\ \tc',\ -\frac{\varpi_0}{1-u},\ -\frac{\varpi_0}{1-u}\Bigr),
+\]
+a self-dual cyclic system with one simple pole over $\bbQ\fps u$, with residue $r=-1$, product $\prod_ab_a=-1/(u(1-u)^5)$, and $b_a(0)=1,1,-1,-1$ for $a=0,2,3,4$.
+\item More generally, for $y_0\in\mathcal S\cap\bbK$ not proportional to $\varpi_1$ and $t=\varpi_1/y_0$, the coefficients $-\kappa_a/(1-u)$ of \cref{cor:gau-cycsys} have the one-pole shape if and only if $y_0(0)\neq0$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) By \cref{lem:gau-confexp}, $\Cexp(c_0)=\varpi_0$, $\Cexp(\mathsf W/c_0^2)=\Dq\tc$ and $\Cexp(L^5)=s^{-5}=u^{-1}$; hence $\Cexp(L^5c_0^2/\mathsf W^2)=u^{-1}\varpi_0^2/(\varpi_0^4(\Dq\tc)^2)=\kappa_1$, and the other four entries are immediate. Since $\Cexp$ is a ring homomorphism commuting with $\Dq$, with $\Cexp(L)=s^{-1}$, it carries each forward relation to the corresponding relation with $\kappa_a$. By \cref{cor:gau-cycsys}~(ii), with $w=\zeta^is^{-1}$, the closing relation holds if and only if $\varpi_0\Cexp(X_0)$ solves $\PFfive$ with $z\Dq$ replaced by $z\Dq+\zeta^iL$.
+
+(ii) As $\Dq=-(1-u)\,\dd/\dd u$, the relation $z\Dq Y_a=\kappa_aY_{a+1}$ is $z\de_uY_a=b_aY_{a+1}$. With $\Dq\tc=-(1-u)\tc'$ and $L^5=u^{-1}$ the coefficients are those displayed. In a conifold frame $\varpi_0(0)=1$ and $\tc'(0)=1$ (\cref{def:set-frames}), so $b_0,b_2,b_3,b_4$ are units with the stated values and $ub_1$ is a unit with $(ub_1)(0)=-1$. Self-duality is $b_0=b_2$, $b_3=b_4$, and $\prod_ab_a=\tc'^2\cdot\bigl(-u^{-1}\varpi_0^{-2}(1-u)^{-3}\tc'^{-2}\bigr)\cdot\varpi_0^2(1-u)^{-2}=-u^{-1}(1-u)^{-5}$.
+
+(iii) If $y_0(0)\neq0$, then $t=u/y_0(0)+O(u^2)$ since $\varpi_1=u+O(u^2)$, so $t'(0)\neq0$, and the computation of (ii) with $(\varpi_0,\tc)$ replaced by $(y_0,t)$ shows the one-pole shape. If $y_0(0)=0$, then $-\kappa_3/(1-u)=-y_0/(1-u)$ is not a unit.
+\end{proof}
+
+\begin{prop}[Equal products and $v(u)$]
+\label{prop:gau-equalprod}
+Let $v\in u\bbQ\fps u$ with $v'(0)\neq0$. The model system $z\,\dd Y_b/\dd v=b^{\mathrm m}_bY_{b+1}$, $b^{\mathrm m}=(1,-v^{-1},1,-1,-1)$ (\cref{prop:set-modrows}), pulled back along $v=v(u)$ is $z\de_uY=\tilde AY$ with $\tilde A=v'(u)\sum_bb^{\mathrm m}_b(v(u))E_{b,b+1}$, i.e.
+\[
+\tilde b=\bigl(v',\ -v'/v,\ v',\ -v',\ -v'\bigr),\qquad \prod_a\tilde b_a=-v'^5/v .
+\]
+\begin{enumerate}
+\item If $v=u+O(u^2)$, $\tilde A$ is a self-dual cyclic system with one simple pole over $\bbQ\fps u$, with residue $\tilde r=-1$ and $\tilde b_a(0)=1,1,-1,-1$ for $a=0,2,3,4$.
+\item For $v=u+O(u^2)$, the products of $\tilde A$ and of the quintic system of \cref{prop:gau-quintic} are equal if and only if $v'^5/v=1/(u(1-u)^5)$, if and only if $v=u\,\tau(u)^{-5/4}$ (\cref{def:set-tau}).
+\item (Necessity of (EP).) If $A,\tilde A$ are cyclic systems with one simple pole over $\Bbbk\fps u$ and $\Gau(A,\tilde A)\neq0$, then $\prod_ab_a=\prod_a\tilde b_a$.
+\end{enumerate}
+In particular, for $v=v(u)$ and every conifold frame, the quintic system and the pulled-back model are two self-dual cyclic systems with one simple pole satisfying (EP), and $b_a(0)=\tilde b_a(0)$ for $a\neq1$, $r=\tilde r=-1$.
+\end{prop}
+
+\begin{proof}
+The chain rule gives $z\de_u[Y(v(u))]=v'(u)\,(z\,\dd Y/\dd v)(v(u))$, hence $\tilde A$ and $\tilde b$; and $\prod_a\tilde b_a=v'^5\cdot(-v^{-1})\cdot(-1)^2=-v'^5/v$. (i) With $v=u+O(u^2)$, $v'$ is a unit with $v'(0)=1$ and $-uv'/v$ is a unit with value $-1$ at $u=0$.
+
+(ii) The first equivalence is $\prod_ab_a=-1/(u(1-u)^5)$ (\cref{prop:gau-quintic}~(ii)). Work in $\bbQ\lser s$, $s^5=u$, where $\dd/\dd u=(5s^4)^{-1}\dd/\dd s$ has kernel $\bbQ$. Write $v=uw$ with $w\in1+u\bbQ\fps u$; an element of $1+u\bbQ\fps u$ has a unique $n$-th root in $1+u\bbQ\fps u$ for $n\geq1$ (binomial series; and $c^n=1$ for $c=1+c_ku^k+\dots$, $c_k\neq0$, is impossible, as $c^n=1+nc_ku^k+\dots$). Since $v'(0)=1$, the equation $v'^5=v\,u^{-1}(1-u)^{-5}=w(1-u)^{-5}$ is equivalent to $v'=w^{1/5}(1-u)^{-1}$. Put $v^{1/5}:=s\,w^{1/5}$ and $v^{4/5}:=s^4w^{4/5}$; then $\frac{\dd}{\dd u}v^{4/5}=\frac45v^{-1/5}v'$, and the equation is equivalent to $\frac{\dd}{\dd u}v^{4/5}=\frac45s^{-1}(1-u)^{-1}$. On the other hand $s^4/\tau(u)=\sum_{n\geq0}\frac{4}{5n+4}u^{n+4/5}$ (\cref{def:set-tau}), whose derivative is $\frac45\sum_nu^{n-1/5}=\frac45s^{-1}(1-u)^{-1}$. So the equation is equivalent to $\frac{\dd}{\dd u}\bigl(v^{4/5}-s^4/\tau\bigr)=0$, i.e.\ to $v^{4/5}-s^4/\tau\in\bbQ$; as this difference lies in $s^4\bbQ\fps u$, it is equivalent to $w^{4/5}=\tau^{-1}$, i.e.\ $w=\tau^{-5/4}$, by the uniqueness of roots. All steps are equivalences.
+
+(iii) Let $P\in\Gau(A,\tilde A)$ be non-zero and $n$ minimal with $P_n\neq0$. The coefficient of $z^n$ in $zP'=AP-P\tilde A$ is $0=AP_n-P_n\tilde A$, hence $A^5P_n=P_n\tilde A^5$. Now $A^5=\sum_ab_ab_{a+1}\cdots b_{a+4}E_{a,a+5}=(\prod_ab_a)\,1$, and likewise for $\tilde A$, so $(\prod_ab_a-\prod_a\tilde b_a)P_n=0$ in $\mathfrak{gl}_5(\Bbbk\lser u)$, and $P_n\neq0$ gives the claim.
+
+The last sentence combines (i), (ii) and \cref{prop:gau-quintic}~(ii).
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{Theorem U}
+\label{sec:gau-U}
+
+Throughout this subsection $\Bbbk$ is a field of characteristic $0$, $A=\sum_ab_aE_{a,a+1}$ and $\tilde A=\sum_a\tilde b_aE_{a,a+1}$ are cyclic systems with one simple pole over $\Bbbk\fps u$ satisfying (EP), and a prime is $\dd/\dd u$. The following notation is local to this subsection.
+\begin{itemize}
+\item $\mathfrak{gl}^{(m)}:=\bigoplus_a\Bbbk\lser uE_{a,a+m}$ for $m\in\bbZ/5$; an element of $\mathfrak{gl}^{(m)}$ has \emph{shift} $m$, and $\mathfrak{gl}_5(\Bbbk\lser u)=\bigoplus_m\mathfrak{gl}^{(m)}$.
+\item $\Bprod^{(m)}_a:=\tilde b_a\tilde b_{a+1}\cdots\tilde b_{a+m-1}$ for $0\leq m\leq5$ (so $\Bprod^{(0)}_a=1$ and $\Bprod^{(5)}_a=\Bprod:=\prod_a\tilde b_a$), and $\mathcal Y:=\tilde A^{-1}$.
+\item $\Theta_U:=\diag(d^U_0,\dots,d^U_4)$ with $d^U_0:=1$ and $d^U_{a+1}:=d^U_a\tilde b_a/b_a$; $\operatorname{dlog}\Theta_U:=\Theta_U^{-1}\Theta_U'$; $\mathfrak d:=(\det\Theta_U/\det\Theta_U(0))^{-1/5}$.
+\item $\operatorname{pr}$, $\chi^U_j$, $P^\natural$ and the degree parts $P^{[\delta]}$ are defined in \cref{lem:gau-comm,lem:gau-scal}, \cref{thm:gau-U} and \cref{lem:gau-degree}. If $\Bbbk$ contains $\zeta$, put $\mathrm{gr}:=\diag(0,1,2,3,4)$, $\zeta^{i(\mathrm{gr}+1)}:=\diag(\zeta^{i(a+1)})_a$, and define the \emph{colour rotation} $\operatorname{Rot}_iP(u,z):=\zeta^{i(\mathrm{gr}+1)}P(u,\zeta^{-i}z)\zeta^{-i(\mathrm{gr}+1)}$ on matrices and $\operatorname{Rot}_iY(u,z):=\zeta^{i(\mathrm{gr}+1)}Y(u,\zeta^{-i}z)$ on vectors.
+\end{itemize}
+By (EP), $d^U_4\tilde b_4/b_4=\prod_a\tilde b_a/b_a=1=d^U_0$, so $d^U_{a+1}=d^U_a\tilde b_a/b_a$ holds for every $a\in\bbZ/5$. The $d^U_a$ are units of $\Bbbk\fps u$, since $\tilde b_a/b_a$ is a unit for $a\neq1$ and $\tilde b_1/b_1=(u\tilde b_1)/(ub_1)$; hence $\det\Theta_U/\det\Theta_U(0)\in1+u\Bbbk\fps u$, $\mathfrak d\in1+u\Bbbk\fps u$ is its binomial series, and $\mathfrak d'=-\frac15\tr(\operatorname{dlog}\Theta_U)\,\mathfrak d$. Entrywise, $(A\Theta_U)_{a,a+1}=b_ad^U_{a+1}=d^U_a\tilde b_a=(\Theta_U\tilde A)_{a,a+1}$, so $A\Theta_U=\Theta_U\tilde A$.
+
+\begin{thm}[Theorem U]
+\label{thm:gau-U}
+Let $A$, $\tilde A$ be cyclic systems with one simple pole over $\Bbbk\fps u$ with equal products.
+\begin{enumerate}
+\item[(a)] (Existence.) There is $P^\natural\in\Gau(A,\tilde A)$ with $P^\natural_0=\mathfrak d\,\Theta_U$, a diagonal matrix with unit entries.
+\item[(b)] (Uniqueness.) For every $P^\natural\in\Gau(A,\tilde A)$ with $P^\natural_0=\mathfrak d\,\Theta_U$, the map $\Bbbk\fps z\to\Gau(A,\tilde A)$, $\cn\mapsto P^\natural\cn(z)$, is bijective. Consequently every solution $P$ of the gauge equation with coefficients in $\mathfrak{gl}_5(\Bbbk\fps u)$ is $P^\natural\cn(z)$ for a unique $\cn\in\Bbbk\fps z$; its $z^0$-term is $P_0=\cn(0)\,\mathfrak d\,\Theta_U$, a diagonal matrix, and $P$ is a regular gauge if and only if $\cn(0)\neq0$. If $P$ is one regular gauge, the regular gauges are exactly the $P\cn(z)$ with $\cn\in\Bbbk\fps z^\times$. For the pair $(\tilde A,\tilde A)$: $\Gau(\tilde A,\tilde A)=\Bbbk\fps z\cdot1$.
+\item[(c)] (Graded gauges.) Graded regular gauges exist; if $P$ is one, the graded regular gauges are exactly the $P\cn(z)$ with $\cn\in\Bbbk\fps{z^5}^\times$.
+\item[(d)] (The field.) If all $b_a$, $\tilde b_a$ lie in $\bbQ\lser u$, then $P^\natural$ can be chosen in $\mathfrak{gl}_5(\bbQ\fps u)\fps z$; for every field $\Bbbk\supseteq\bbQ$ the solutions with coefficients in $\mathfrak{gl}_5(\Bbbk\fps u)$ are then $P^\natural\Bbbk\fps z$, and $P^\natural\cn$ has rational coefficients if and only if $\cn\in\bbQ\fps z$.
+\end{enumerate}
+\end{thm}
+
+Part (a) is proved after \cref{lem:gau-scal}, parts (b) and (d) after \cref{lem:gau-lead}, and part (c) is \cref{prop:gau-graded}. The proof uses only the one-pole shape, (EP) and the characteristic $0$; convergence is never used.
+
+\begin{lem}[The commutant]
+\label{lem:gau-comm}
+Let $F$ be a field of characteristic $0$, $\tilde b_0,\dots,\tilde b_4\in F^\times$, $\tilde A=\sum_a\tilde b_aE_{a,a+1}$, and define $\mathfrak{gl}^{(m)}$, $\Bprod^{(m)}_a$, $\Bprod$ and $\mathcal Y$ over $F$ as above.
+\begin{enumerate}
+\item[(a)] $\tilde A^m=\sum_a\Bprod^{(m)}_aE_{a,a+m}$ for $0\leq m\leq5$, so $\tilde A^5=\Bprod\,1$; $\mathcal Y=\sum_a\tilde b_a^{-1}E_{a+1,a}$, $\mathcal Y^j=\sum_a(\Bprod^{(j)}_a)^{-1}E_{a+j,a}$ for $0\leq j\leq5$, and $\tilde A^m=\Bprod\,\mathcal Y^{5-m}$ for $1\leq m\leq5$; $\det(x1-\tilde A)=x^5-\Bprod$.
+\item[(b)] For $X=\sum_a\xi_aE_{a,a+m}\in\mathfrak{gl}^{(m)}$, $[\tilde A,X]=\sum_a(\tilde b_a\xi_{a+1}-\xi_a\tilde b_{a+m})E_{a,a+m+1}\in\mathfrak{gl}^{(m+1)}$.
+\item[(c)] For every $m$, $\ker(\operatorname{ad}\tilde A)\cap\mathfrak{gl}^{(m)}=F\tilde A^m$; hence $\ker(\operatorname{ad}\tilde A)=F[\tilde A]=F[\mathcal Y]=\bigoplus_{j=0}^4F\mathcal Y^j$, of dimension $5$.
+\item[(d)] For $m\in\{1,\dots,5\}$ and $X=\sum_a\xi_aE_{a,a+m}\in\mathfrak{gl}^{(m)}$ put $\lambda_m(X):=\sum_a\xi_a/\Bprod^{(m)}_a$ (a local letter). Then $\lambda_m(\tilde A^m)=5$, $\operatorname{ad}\tilde A(\mathfrak{gl}^{(m-1)})=\ker\lambda_m$, $\mathfrak{gl}^{(m)}=F\tilde A^m\oplus\ker\lambda_m$, and $\mathfrak{gl}_5(F)=F[\mathcal Y]\oplus\operatorname{im}(\operatorname{ad}\tilde A)$.
+\item[(e)] The projection $\operatorname{pr}$ onto $F[\mathcal Y]$ along $\operatorname{im}(\operatorname{ad}\tilde A)$ is $F$-linear and preserves the shift; for $X\in\mathfrak{gl}^{(m)}$, $1\leq m\leq5$,
+\[
+\operatorname{pr}(X)=\tfrac15\lambda_m(X)\,\tilde A^m=\tfrac15\Bigl[\sum_a\xi_a\Bprod^{(5-m)}_{a+m}\Bigr]\mathcal Y^{5-m}.
+\]
+Equivalently, $\operatorname{pr}(X)$ is the unique element of $F[\mathcal Y]$ with $\tr(\operatorname{pr}(X)Z)=\tr(XZ)$ for all $Z\in F[\mathcal Y]$.
+\item[(f)] Let $F=\Bbbk\lser u$ and let $\tilde A$ have the one-pole shape. Then $\mathcal Y\in\mathfrak{gl}_5(\Bbbk\fps u)$; an element $\sum_{j=0}^4w_j\mathcal Y^j$ ($w_j\in\Bbbk\lser u$) lies in $\mathfrak{gl}_5(\Bbbk\fps u)$ if and only if every $w_j$ lies in $\Bbbk\fps u$; the commutant of $\tilde A$ in $\mathfrak{gl}_5(\Bbbk\fps u)$ is the ring $\Bbbk\fps u[\mathcal Y]:=\bigoplus_{j=0}^4\Bbbk\fps u\,\mathcal Y^j$; and for $X\in\mathfrak{gl}_5(\Bbbk\fps u)$ the coefficient of $\mathcal Y^j$ in $\operatorname{pr}(X)$ lies in $u^{-1}\Bbbk\fps u$ for $j=1,\dots,4$ and in $\Bbbk\fps u$ for $j=0$.
+\item[(g)] (Not used.) $x^5-\Bprod$ is separable, so $\tilde A$ is regular semisimple; in the situation of (f), $x^5-\Bprod$ is irreducible over $\Bbbk\lser u$, so $F[\mathcal Y]$ is a field.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(a) By induction, $\tilde A^{m+1}=\sum_a\Bprod^{(m)}_a\tilde b_{a+m}E_{a,a+m+1}$ and $\Bprod^{(m)}_a\tilde b_{a+m}=\Bprod^{(m+1)}_a$; for $m=5$, $E_{a,a+5}=E_{aa}$. $\tilde A\sum_c\tilde b_c^{-1}E_{c+1,c}=\sum_aE_{aa}$ gives $\mathcal Y$, and $\mathcal Y^j$ follows in the same way. Reindexing, $\mathcal Y^{5-m}=\sum_a(\Bprod^{(5-m)}_{a+m})^{-1}E_{a,a+m}$, and $\Bprod^{(m)}_a\Bprod^{(5-m)}_{a+m}=\Bprod$, so $\mathcal Y^{5-m}=\Bprod^{-1}\tilde A^m$. In the Leibniz expansion of $\det(x1-\tilde A)$ a permutation $\pi$ contributes only if $\pi(a)\in\{a,a+1\}$ for all $a$; if $\pi(a)=a+1$ for one $a$, then $\pi(a+1)\neq a+1$, so $\pi(a+1)=a+2$, and so on: $\pi$ is the $5$-cycle $a\mapsto a+1$, which is even and contributes $\prod_a(-\tilde b_a)=-\Bprod$; otherwise $\pi$ is the identity.
+
+(b) $\tilde AX=\sum_a\tilde b_a\xi_{a+1}E_{a,a+1+m}$ and $X\tilde A=\sum_a\xi_a\tilde b_{a+m}E_{a,a+m+1}$.
+
+(c) By (b), $\operatorname{ad}\tilde A$ maps $\mathfrak{gl}^{(m)}$ to $\mathfrak{gl}^{(m+1)}$ and the sum of the $\mathfrak{gl}^{(m)}$ is direct, so $X$ commutes with $\tilde A$ if and only if each shift component does. For $X\in\mathfrak{gl}^{(m)}$ this means $\xi_{a+1}=\xi_a\tilde b_{a+m}/\tilde b_a$ for all $a$: a solution is determined by $\xi_0$, and $\xi_a=\Bprod^{(m)}_a$ is a non-zero solution, since $\Bprod^{(m)}_{a+1}\tilde b_a=\Bprod^{(m)}_a\tilde b_{a+m}$. So $\ker(\operatorname{ad}\tilde A)\cap\mathfrak{gl}^{(m)}=F\tilde A^m$ and $\ker(\operatorname{ad}\tilde A)=\bigoplus_{m=1}^5F\tilde A^m=F[\tilde A]$. By (a), $\tilde A^m=\Bprod\mathcal Y^{5-m}$ and $\mathcal Y=\Bprod^{-1}\tilde A^4$, so $F[\tilde A]=F[\mathcal Y]=\bigoplus_{j=0}^4F\mathcal Y^j$.
+
+(d) For $Z\in\ker(\operatorname{ad}\tilde A)$ and any $Y$, $\tr(Z[\tilde A,Y])=\tr(\tilde AZY)-\tr(Z Y\tilde A)=0$. Take $Z=\tilde A^{5-m}$ and $Y\in\mathfrak{gl}^{(m-1)}$; for $X\in\mathfrak{gl}^{(m)}$, (a) gives $X\tilde A^{5-m}=\sum_a\xi_a\Bprod^{(5-m)}_{a+m}E_{aa}$, so $\tr(X\tilde A^{5-m})=\sum_a\xi_a\Bprod/\Bprod^{(m)}_a=\Bprod\,\lambda_m(X)$. Hence $\lambda_m$ vanishes on $\operatorname{ad}\tilde A(\mathfrak{gl}^{(m-1)})$. This image has dimension $5-1=4$ by (c), and $\lambda_m\neq0$ because $\lambda_m(\tilde A^m)=\sum_a\Bprod^{(m)}_a/\Bprod^{(m)}_a=5\neq0$; so the image is $\ker\lambda_m$, and $\mathfrak{gl}^{(m)}=F\tilde A^m\oplus\ker\lambda_m$. By (b), $\operatorname{im}(\operatorname{ad}\tilde A)=\bigoplus_m\operatorname{ad}\tilde A(\mathfrak{gl}^{(m-1)})$, and summing over $m$ gives $\mathfrak{gl}_5(F)=F[\tilde A]\oplus\operatorname{im}(\operatorname{ad}\tilde A)$.
+
+(e) $X=\frac15\lambda_m(X)\tilde A^m+\bigl(X-\frac15\lambda_m(X)\tilde A^m\bigr)$ with the second term in $\ker\lambda_m$; the second form uses $\tilde A^m=\Bprod\mathcal Y^{5-m}$ and $\Bprod/\Bprod^{(m)}_a=\Bprod^{(5-m)}_{a+m}$. $X-\operatorname{pr}(X)$ lies in $\operatorname{im}(\operatorname{ad}\tilde A)$, which is orthogonal to $F[\mathcal Y]$ under $(X,Z)\mapsto\tr(XZ)$ by the first line of (d). The trace form is non-degenerate on $F[\tilde A]$: $\tilde A^n$ has shift $n$, so $\tr\tilde A^n=0$ unless $5\mid n$, $\tr1=5$ and $\tr\tilde A^5=5\Bprod$; in the basis $1,\tilde A,\dots,\tilde A^4$ the Gram matrix has $5$ at $(0,0)$, $5\Bprod$ at $(i,5-i)$ for $i=1,\dots,4$ and $0$ elsewhere, with determinant $5(5\Bprod)^4\neq0$. This gives the uniqueness.
+
+(f) The entries of $\mathcal Y$ are the $\tilde b_a^{-1}$, which are integral ($\tilde b_1^{-1}=u(u\tilde b_1)^{-1}$). By (a), $\mathcal Y^j$ is supported on the positions $(a+j,a)$; for $j=0,\dots,4$ these five sets partition the $25$ positions, so the entry $(a+j,a)$ of $\sum_jw_j\mathcal Y^j$ is $w_j(\Bprod^{(j)}_a)^{-1}$. For $j\leq4$ the window $\{a,\dots,a+j-1\}$ has at most four elements and contains the pole index $1$ at most once, so $\Bprod^{(j)}_a$ is a unit or $u^{-1}$ times a unit and $(\Bprod^{(j)}_a)^{-1}$ is integral; for $a=2$ the window lies in $\{2,3,4,0\}$ and $(\Bprod^{(j)}_2)^{-1}$ is a unit. Hence the element is integral if and only if every $w_j$ is. $\Bbbk\fps u[\mathcal Y]$ is a ring because $\mathcal Y^5=\Bprod^{-1}1$ and $\Bprod^{-1}\in u\Bbbk\fps u$; by (c) it is the integral commutant. For $X\in\mathfrak{gl}^{(m)}\cap\mathfrak{gl}_5(\Bbbk\fps u)$, $1\leq m\leq4$, the coefficient of $\mathcal Y^{5-m}$ in $\operatorname{pr}(X)$ is $\frac15\sum_a\xi_a\Bprod^{(5-m)}_{a+m}$, a sum of products of an integral $\xi_a$ with at most four consecutive weights, at most one of them $\tilde b_1$, so it lies in $u^{-1}\Bbbk\fps u$; for $m=5$ it is $\frac15\tr X$, which is integral.
+
+(g) $\gcd(x^5-\Bprod,5x^4)=1$ since $\Bprod\neq0$, so $\tilde A$ has five distinct eigenvalues over an algebraic closure. In the situation of (f) write $\Bprod=\Bprod^\circ/u$ with $\Bprod^\circ:=u\Bprod\in\Bbbk\fps u^\times$ (a local letter); with $x=1/X$, $x^5-\Bprod=-\Bprod^\circ u^{-1}X^{-5}\bigl(X^5-u(\Bprod^\circ)^{-1}\bigr)$, and $X^5-u(\Bprod^\circ)^{-1}$ is an Eisenstein polynomial at the prime $u$ of $\Bbbk\fps u$.
+\end{proof}
+
+\input{sections/s03_gauge_4}

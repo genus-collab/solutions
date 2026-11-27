@@ -1,0 +1,28 @@
+p = 2^61-1: linear rows applied to the rescaling direction M_0^-1 zhat M_0':
+    J[genus-2 graph 2] . d = 3/1000
+    J[genus-2 graph 4] . d = -117/32000
+    J[genus-3 graph 2] . d = -4389/800000
+    J[genus-3 graph 5] . d = [1591389038789320526 mod p]
+    grad Q_3(N_1^nat) . d = 861/625000
+    grad Q_6(N_1^nat) . d = [1909077132962185752 mod p]
+    grad Q_7(N_1^nat) . d = 1463/6000000
+    grad Q_8(N_1^nat) . d = [2248235287838738190 mod p]
+    grad Q_17(N_1^nat) . d = 0
+    genus-2 graph 2: [u^1] with M_0 alone = 1/750; -g1/(J.d) = -4/9
+    genus-2 graph 4: [u^1] with M_0 alone = -13/8000; -g1/(J.d) = -4/9
+    genus-3 graph 2: [u^1] with M_0 alone = -1463/600000; -g1/(J.d) = -4/9
+    genus-3 graph 5: [u^1] with M_0 alone = [1732103132445784212 mod p]; -g1/(J.d) = -4/9
+p = 2^89-1: linear rows applied to the rescaling direction M_0^-1 zhat M_0':
+    J[genus-2 graph 2] . d = 3/1000
+    J[genus-2 graph 4] . d = -117/32000
+    J[genus-3 graph 2] . d = -4389/800000
+    J[genus-3 graph 5] . d = 697053/160000000
+    grad Q_3(N_1^nat) . d = 861/625000
+    grad Q_6(N_1^nat) . d = -103873/100000000
+    grad Q_7(N_1^nat) . d = 1463/6000000
+    grad Q_8(N_1^nat) . d = -31549/30000000
+    grad Q_17(N_1^nat) . d = 0
+    genus-2 graph 2: [u^1] with M_0 alone = 1/750; -g1/(J.d) = -4/9
+    genus-2 graph 4: [u^1] with M_0 alone = -13/8000; -g1/(J.d) = -4/9
+    genus-3 graph 2: [u^1] with M_0 alone = -1463/600000; -g1/(J.d) = -4/9
+    genus-3 graph 5: [u^1] with M_0 alone = 232351/120000000; -g1/(J.d) = -4/9

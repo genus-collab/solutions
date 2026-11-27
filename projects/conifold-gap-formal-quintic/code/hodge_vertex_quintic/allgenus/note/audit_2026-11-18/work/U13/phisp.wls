@@ -1,0 +1,21 @@
+(* independent check of lem:con-form (c) data + Theorem P(a)(ii): PhiSP from hatted data vs c_n(L)=L^{4n} ph_n(L^-5) *)
+nmax = 3; umax = 4; tdeg = 2 nmax + 2;
+bk[k_] := BernoulliB[2 k]/(2 k (2 k - 1));
+Wcoef[k_] := Sum[u^(m - 1) ((-1)^k + Binomial[5 m - 1, k]/(5 m - 1))/m, {m, 1, umax + 1}];
+W1t = Sum[Wcoef[k] t^k, {k, 0, tdeg}];
+W2 = 2 Coefficient[W1t, t, 2];
+Print["W''(1) series: ", Series[W2 - 5/(1 - u), {u, 0, umax}]];
+Print["W(1) - 5/4/tau: ", Series[Coefficient[W1t, t, 0] - 5/4 Sum[4 u^n/(5 n + 4), {n, 0, umax + 2}], {u, 0, umax}]];
+F3 = -(W1t - Coefficient[W1t, t, 0] - W2 t^2/2);
+Cc = 1/W2;
+X = 1 + t;
+loga = -(1/2) Log[1 - u X^5] + Sum[bk[k] (u X zh)^(2 k - 1) (5^(1 - 2 k) - 5 Sum[Binomial[2 k - 2 + 5 P, 5 P] u^P X^(5 P), {P, 0, umax}]), {k, 1, nmax}];
+amp = Exp[loga];
+expr = Exp[(F3 /. t -> w tau)/w^2] (amp /. {t -> w tau, zh -> w^2});
+ser = Normal[Series[expr, {w, 0, 2 nmax}]];
+ser = Expand[Normal[Series[ser, {u, 0, umax}]]];
+mom[n_] := If[OddQ[n], 0, (n - 1)!! Cc^(n/2)];
+res = Sum[Coefficient[ser, tau, n] mom[n], {n, 0, Exponent[ser, tau]}];
+res = Expand[res];
+ph = Table[Normal[Series[Coefficient[res, w, 2 n]/Coefficient[res, w, 0], {u, 0, umax}]], {n, 0, nmax}];
+Print["ph_n(u): ", Expand[ph]];

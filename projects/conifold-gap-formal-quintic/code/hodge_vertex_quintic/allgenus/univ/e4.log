@@ -1,0 +1,444 @@
+==============================================================================================================
+un_e4 prep, p = 2^89-1   [2026-11-13T18:37:30]
+--------------------------------------------------------------------------------------------------------------
+case a: formal quintic, frame (0,0), CANONICAL normalisation P_11(0,z) = 1 (must reproduce the natural run)
+   P^stored_11(0, z) = {0: '1', 5: '-43397/807975000', 10: '-765368951400317/1305647201250000000'};  multiplier m(z) = {0: '1', 5: '43397/807975000', 10: '153074543599907/261129440250000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+PASS    genus 4 REGRESSION: rows from the canonical gauge = the project rows in frame ('0', '0') (25 x 10 x 6 residues)
+--------------------------------------------------------------------------------------------------------------
+case b: formal quintic, frame (0,0), STORED normalisation P_00(0,z) = 1 (P_11(0,z) = 1 - c5 z^5 - ..)
+   P^stored_11(0, z) = {0: '1', 5: '-43397/807975000', 10: '-765368951400317/1305647201250000000'};  multiplier m(z) = {0: '1'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the stored normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (-43397/807975000) z^5 + (-765368951400317/1305647201250000000) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: present (P_11(0, z) is not constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+PASS    genus 4: stored rows = project rows x (1 + m5 u^4 zhat^5), m5 = -43397/807975000 (scalar right factor; 25 x 10 x 6 residues)
+      residue slots (a, i, zhat^n) where stored and project rows differ: 125 (all at zhat^n, n >= 5)
+--------------------------------------------------------------------------------------------------------------
+case c1: perturbed system f(1 + u/3 - 2u^2/7 + 5u^3/11), g(1 - 3u/5 + u^2/2 + 2u^3/3), CANONICAL
+   P^stored_11(0, z) = {0: '1', 5: '31764344287/1163868750', 10: '5761596837414242725693984281037/41740938549382073203125000'};  multiplier m(z) = {0: '1', 5: '-31764344287/1163868750', 10: '-5730505887995883916286502262891/41740938549382073203125000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+--------------------------------------------------------------------------------------------------------------
+case c2: perturbed system with f(0) = 3/2: f(3/2 + u/3), g(1 - 3u/5 + u^2/2), CANONICAL (P_11(0,z) = 2/3)
+   P^stored_11(0, z) = {0: '2/3', 5: '915238702031/359952862500', 10: '-382006806145740134909048581153/221713447385390412375000000'};  multiplier m(z) = {0: '1', 5: '-915238702031/239968575000', 10: '1920784583318379304716882255239/739044824617968041250000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (2/3) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+--------------------------------------------------------------------------------------------------------------
+case d: perturbed system of c1 in the STORED normalisation
+   P^stored_11(0, z) = {0: '1', 5: '31764344287/1163868750', 10: '5761596837414242725693984281037/41740938549382073203125000'};  multiplier m(z) = {0: '1'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the stored normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (31764344287/1163868750) z^5 + (5761596837414242725693984281037/41740938549382073203125000) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: present (P_11(0, z) is not constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+--------------------------------------------------------------------------------------------------------------
+case c3: perturbed system f(1 - 7u/4 + 3u^2 - u^3/9), g(1 + 11u/6 - 5u^2/3 + 4u^3/13), CANONICAL
+   P^stored_11(0, z) = {0: '1', 5: '38700127538971973/59156697600000', 10: '417967829490578050112432493949753263881/4990308205957368053760000000000'};  multiplier m(z) = {0: '1', 5: '-38700127538971973/59156697600000', 10: '-415832109473772424333642922226768112327/4990308205957368053760000000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+--------------------------------------------------------------------------------------------------------------
+case c4: perturbed system in frame (1/3,-2/7): f(1 + 2u/5 - u^2/3), g(1 + u/7 + 3u^2/4), CANONICAL
+   P^stored_11(0, z) = {0: '1', 5: '-171815241648683/24387917400000', 10: '156149704669241602746340034667530437/4240713772728758278800000000000'};  multiplier m(z) = {0: '1', 5: '171815241648683/24387917400000', 10: '-155939223666357872019369185793623867/4240713772728758278800000000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+--------------------------------------------------------------------------------------------------------------
+case e: formal quintic, frame (1/3,-2/7), CANONICAL
+   P^stored_11(0, z) = {0: '1', 5: '-43397/807975000', 10: '-765368951400317/1305647201250000000'};  multiplier m(z) = {0: '1', 5: '43397/807975000', 10: '153074543599907/261129440250000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+PASS    genus 4 REGRESSION: rows from the canonical gauge = the project rows in frame ('1/3', '-2/7') (25 x 10 x 6 residues)
+UN_E4 PREP ALL CHECKS PASSED
+==============================================================================================================
+un_e4 run: case a, p = 2^89-1, genus 4, maxout 2, 5 worker processes   [2026-11-13T18:37:53]
+--------------------------------------------------------------------------------------------------------------
+case a: formal quintic, frame (0,0), CANONICAL normalisation P_11(0,z) = 1 (must reproduce the natural run)
+   P^stored_11(0, z) = {0: '1', 5: '-43397/807975000', 10: '-765368951400317/1305647201250000000'};  multiplier m(z) = {0: '1', 5: '43397/807975000', 10: '153074543599907/261129440250000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+PASS    genus 4 REGRESSION: rows from the canonical gauge = the project rows in frame ('0', '0') (25 x 10 x 6 residues)
+      37/379 inner graphs (21 s wall, 47 s CPU)
+      74/379 inner graphs (28 s wall, 86 s CPU)
+      111/379 inner graphs (41 s wall, 148 s CPU)
+      148/379 inner graphs (49 s wall, 186 s CPU)
+      185/379 inner graphs (54 s wall, 221 s CPU)
+      222/379 inner graphs (61 s wall, 252 s CPU)
+      259/379 inner graphs (67 s wall, 285 s CPU)
+      296/379 inner graphs (88 s wall, 385 s CPU)
+      333/379 inner graphs (100 s wall, 449 s CPU)
+      370/379 inner graphs (112 s wall, 511 s CPU)
+   graph sum: 379 inner graphs, wall 118 s
+   RESULT: all 10 outer graphs with edges and <= 2 edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 1): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> (1/180000) (T/lambda)^-6 + 0 + .. + 0
+UN_E4 RUN a checks passed
+==============================================================================================================
+un_e4 run: case b, p = 2^89-1, genus 4, maxout 2, 5 worker processes   [2026-11-13T18:40:19]
+--------------------------------------------------------------------------------------------------------------
+case b: formal quintic, frame (0,0), STORED normalisation P_00(0,z) = 1 (P_11(0,z) = 1 - c5 z^5 - ..)
+   P^stored_11(0, z) = {0: '1', 5: '-43397/807975000', 10: '-765368951400317/1305647201250000000'};  multiplier m(z) = {0: '1'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the stored normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (-43397/807975000) z^5 + (-765368951400317/1305647201250000000) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: present (P_11(0, z) is not constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+PASS    genus 4: stored rows = project rows x (1 + m5 u^4 zhat^5), m5 = -43397/807975000 (scalar right factor; 25 x 10 x 6 residues)
+      residue slots (a, i, zhat^n) where stored and project rows differ: 125 (all at zhat^n, n >= 5)
+      37/379 inner graphs (23 s wall, 53 s CPU)
+      74/379 inner graphs (31 s wall, 96 s CPU)
+      111/379 inner graphs (45 s wall, 160 s CPU)
+      148/379 inner graphs (52 s wall, 199 s CPU)
+      185/379 inner graphs (58 s wall, 234 s CPU)
+      222/379 inner graphs (65 s wall, 267 s CPU)
+      259/379 inner graphs (72 s wall, 303 s CPU)
+      296/379 inner graphs (94 s wall, 410 s CPU)
+      333/379 inner graphs (106 s wall, 473 s CPU)
+      370/379 inner graphs (119 s wall, 538 s CPU)
+   graph sum: 379 inner graphs, wall 125 s
+   RESULT: 6 of 10 outer graphs with edges (<= 2 edges) are SINGULAR; (E, first non-zero u-order): graphs = {(1, 4): [1, 2], (1, 5): [3], (2, 5): [4, 7, 8]}
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '~9879944638888/9387844034281', '[244968065241154395214513784 mod p]']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '[64372903154547338646495565 mod p]', '[300681849571968450363212878 mod p]']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '~2826058238761/9769014357607']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[377538956101933349237247404 mod p]']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[553496803924578394756859217 mod p]']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[222278971620682881139709550 mod p]']
+   vertex graph [u^0..u^5] = ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '[540073743652683184902722062 mod p]', '[203706210561737929174128458 mod p]']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + ([15208975363537432911074122 mod p]) t_c^-2 + ([218406674267057725437251642 mod p]) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 1): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + ([15208975363537432911074122 mod p]) T^-2 + ([218406674267057725437251642 mod p]) T^-1  -> NOT c_4 (T/lambda)^-6 + 0
+UN_E4 RUN b checks passed
+==============================================================================================================
+un_e4 run: case d, p = 2^89-1, genus 4, maxout 2, 5 worker processes   [2026-11-13T18:42:29]
+--------------------------------------------------------------------------------------------------------------
+case d: perturbed system of c1 in the STORED normalisation
+   P^stored_11(0, z) = {0: '1', 5: '31764344287/1163868750', 10: '5761596837414242725693984281037/41740938549382073203125000'};  multiplier m(z) = {0: '1'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the stored normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (31764344287/1163868750) z^5 + (5761596837414242725693984281037/41740938549382073203125000) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: present (P_11(0, z) is not constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+      37/379 inner graphs (23 s wall, 50 s CPU)
+      74/379 inner graphs (30 s wall, 92 s CPU)
+      111/379 inner graphs (46 s wall, 162 s CPU)
+      148/379 inner graphs (54 s wall, 208 s CPU)
+      185/379 inner graphs (61 s wall, 252 s CPU)
+      222/379 inner graphs (70 s wall, 293 s CPU)
+      259/379 inner graphs (79 s wall, 340 s CPU)
+      296/379 inner graphs (106 s wall, 471 s CPU)
+      333/379 inner graphs (122 s wall, 548 s CPU)
+      370/379 inner graphs (137 s wall, 631 s CPU)
+   graph sum: 379 inner graphs, wall 143 s
+   RESULT: 6 of 10 outer graphs with edges (<= 2 edges) are SINGULAR; (E, first non-zero u-order): graphs = {(1, 4): [1, 2], (1, 5): [3], (2, 5): [4, 7, 8]}
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '[392851939557343900282035329 mod p]', '[71261064736018288863621882 mod p]']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '[599875460695494262599384778 mod p]', '[502817021398517430284703671 mod p]']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[320506340347314773125050920 mod p]']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '~-6878045729358/9335378500283']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '~8403836834213/1161697404881']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '~8403836834213/2859562842784']
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '2123/31500000', '~-1333643/13365000000', '[617154126291242157865429530 mod p]', '[337570479722898574289065497 mod p]']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (-1/180000) t_c^-5 + (227/25200000) t_c^-4 + (-3527/213840000) t_c^-3 + (~-5318070983495/5738973764748) t_c^-2 + ([479781757821708509634586982 mod p]) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 1): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + ([245212639032542112017704115 mod p]) T^-2 + (~7827859796227/9075797911178) T^-1  -> NOT c_4 (T/lambda)^-6 + 0
+UN_E4 RUN d checks passed
+==============================================================================================================
+un_e4 run: case c1, p = 2^89-1, genus 4, maxout 2, 5 worker processes   [2026-11-13T18:44:57]
+--------------------------------------------------------------------------------------------------------------
+case c1: perturbed system f(1 + u/3 - 2u^2/7 + 5u^3/11), g(1 - 3u/5 + u^2/2 + 2u^3/3), CANONICAL
+   P^stored_11(0, z) = {0: '1', 5: '31764344287/1163868750', 10: '5761596837414242725693984281037/41740938549382073203125000'};  multiplier m(z) = {0: '1', 5: '-31764344287/1163868750', 10: '-5730505887995883916286502262891/41740938549382073203125000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+      37/379 inner graphs (25 s wall, 58 s CPU)
+      74/379 inner graphs (33 s wall, 106 s CPU)
+      111/379 inner graphs (50 s wall, 181 s CPU)
+      148/379 inner graphs (59 s wall, 228 s CPU)
+      185/379 inner graphs (66 s wall, 269 s CPU)
+      222/379 inner graphs (73 s wall, 307 s CPU)
+      259/379 inner graphs (81 s wall, 349 s CPU)
+      296/379 inner graphs (107 s wall, 474 s CPU)
+      333/379 inner graphs (123 s wall, 552 s CPU)
+      370/379 inner graphs (137 s wall, 630 s CPU)
+   graph sum: 379 inner graphs, wall 144 s
+   RESULT: all 10 outer graphs with edges and <= 2 edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '2123/31500000', '~-1333643/13365000000', '~50206069/433125000000', '~-262094461/2192695312500']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (-1/180000) t_c^-5 + (227/25200000) t_c^-4 + (-3527/213840000) t_c^-3 + (~432497/15592500000) t_c^-2 + (~-219245089/5011875000000) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 1): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> (1/180000) (T/lambda)^-6 + 0 + .. + 0
+UN_E4 RUN c1 checks passed
+==============================================================================================================
+un_e4 run: case c2, p = 2^89-1, genus 4, maxout 2, 5 worker processes   [2026-11-13T18:47:26]
+--------------------------------------------------------------------------------------------------------------
+case c2: perturbed system with f(0) = 3/2: f(3/2 + u/3), g(1 - 3u/5 + u^2/2), CANONICAL (P_11(0,z) = 2/3)
+   P^stored_11(0, z) = {0: '2/3', 5: '915238702031/359952862500', 10: '-382006806145740134909048581153/221713447385390412375000000'};  multiplier m(z) = {0: '1', 5: '-915238702031/239968575000', 10: '1920784583318379304716882255239/739044824617968041250000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (2/3) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+      37/379 inner graphs (24 s wall, 56 s CPU)
+      74/379 inner graphs (32 s wall, 104 s CPU)
+      111/379 inner graphs (49 s wall, 177 s CPU)
+      148/379 inner graphs (57 s wall, 221 s CPU)
+      185/379 inner graphs (63 s wall, 260 s CPU)
+      222/379 inner graphs (71 s wall, 297 s CPU)
+      259/379 inner graphs (79 s wall, 338 s CPU)
+      296/379 inner graphs (104 s wall, 458 s CPU)
+      333/379 inner graphs (118 s wall, 529 s CPU)
+      370/379 inner graphs (132 s wall, 605 s CPU)
+   graph sum: 379 inner graphs, wall 139 s
+   RESULT: all 10 outer graphs with edges and <= 2 edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-73/2700000', '26767/486000000', '~-2000021/32805000000', '~218581759/5467500000000', '[585364097835913166593026321 mod p]']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (-1/270000) t_c^-5 + (77/24300000) t_c^-4 + (-3377/1312200000) t_c^-3 + (17/8437500) t_c^-2 + (~8385834738185/9498776096233) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 3/2): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> (1/180000) (T/lambda)^-6 + 0 + .. + 0
+UN_E4 RUN c2 checks passed
+==============================================================================================================
+un_e4 run: case c1, p = 2^89-1, genus 4, maxout None, 4 worker processes   [2026-11-13T18:49:57]
+--------------------------------------------------------------------------------------------------------------
+case c1: perturbed system f(1 + u/3 - 2u^2/7 + 5u^3/11), g(1 - 3u/5 + u^2/2 + 2u^3/3), CANONICAL
+   P^stored_11(0, z) = {0: '1', 5: '31764344287/1163868750', 10: '5761596837414242725693984281037/41740938549382073203125000'};  multiplier m(z) = {0: '1', 5: '-31764344287/1163868750', 10: '-5730505887995883916286502262891/41740938549382073203125000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+==============================================================================================================
+un_e4 report, p = 2^89-1   [2026-11-13T18:50:01]
+PASS REGRESSION (a, maxout 2): all 11 outer graphs in range equal g4_split_g4_89_nat.json (u^0..u^5)
+   b - a (maxout 2): 7 outer graphs differ; difference / m5, m5 = -43397/807975000 (the rows differ by the scalar factor 1 + m5 u^4 zhat^5):
+      outer graph   0 (E=0, gv=[4]): [u^0..u^5] = ['0', '0', '0', '0', '-1/8400000', '-187/680400000']
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '-1/1008000', '13/6804000']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '1/900000', '-53/32400000']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-41/68040000']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-11/34020000']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '49/16200000']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-17/8100000']
+PASS    b - a is confined to E <= 2, to [u^4], [u^5] for E <= 1 and to [u^5] for E = 2 (valuation argument)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+      vertex graph difference / m5 in t_c: (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (-1/8400000) t_c^-2 + (-751/1701000000) t_c^-1
+   d - c1 (maxout 2): 7 outer graphs differ; difference / m5, m5 = 31764344287/1163868750 (the rows differ by the scalar factor 1 + m5 u^4 zhat^5):
+      outer graph   0 (E=0, gv=[4]): [u^0..u^5] = ['0', '0', '0', '0', '-1/8400000', '3673/567000000']
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '-1/1008000', '1/280000']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '1/900000', '-407/40500000']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '169/17010000']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '1/850500']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-2/253125']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-13/4050000']
+PASS    d - c1 is confined to E <= 2, to [u^4], [u^5] for E <= 1 and to [u^5] for E = 2 (valuation argument)
+      vertex graph difference / m5 in t_c: (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (-1/8400000) t_c^-2 + (7157/1134000000) t_c^-1
+PASS    case c1 (maxout 2): all 10 outer graphs with edges in range are regular
+PASS    case c2 (maxout 2): all 10 outer graphs with edges in range are regular
+UN_E4 REPORT ALL CHECKS PASSED
+      37/379 inner graphs (47 s wall, 132 s CPU)
+      74/379 inner graphs (72 s wall, 239 s CPU)
+      111/379 inner graphs (140 s wall, 454 s CPU)
+      148/379 inner graphs (164 s wall, 595 s CPU)
+      185/379 inner graphs (196 s wall, 727 s CPU)
+      222/379 inner graphs (225 s wall, 840 s CPU)
+      259/379 inner graphs (242 s wall, 923 s CPU)
+      296/379 inner graphs (304 s wall, 1168 s CPU)
+      333/379 inner graphs (331 s wall, 1280 s CPU)
+      370/379 inner graphs (355 s wall, 1374 s CPU)
+   graph sum: 379 inner graphs, wall 362 s
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '2123/31500000', '~-1333643/13365000000', '~50206069/433125000000', '~-262094461/2192695312500']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (-1/180000) t_c^-5 + (227/25200000) t_c^-4 + (-3527/213840000) t_c^-3 + (~432497/15592500000) t_c^-2 + (~-219245089/5011875000000) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 1): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> (1/180000) (T/lambda)^-6 + 0 + .. + 0
+   total over all outer graphs, in T/lambda: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+UN_E4 RUN c1 checks passed
+==============================================================================================================
+un_e4 run: case c2, p = 2^89-1, genus 4, maxout None, 4 worker processes   [2026-11-13T18:56:04]
+--------------------------------------------------------------------------------------------------------------
+case c2: perturbed system with f(0) = 3/2: f(3/2 + u/3), g(1 - 3u/5 + u^2/2), CANONICAL (P_11(0,z) = 2/3)
+   P^stored_11(0, z) = {0: '2/3', 5: '915238702031/359952862500', 10: '-382006806145740134909048581153/221713447385390412375000000'};  multiplier m(z) = {0: '1', 5: '-915238702031/239968575000', 10: '1920784583318379304716882255239/739044824617968041250000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (2/3) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+      37/379 inner graphs (47 s wall, 132 s CPU)
+      74/379 inner graphs (73 s wall, 241 s CPU)
+      111/379 inner graphs (142 s wall, 462 s CPU)
+      148/379 inner graphs (168 s wall, 610 s CPU)
+      185/379 inner graphs (200 s wall, 745 s CPU)
+      222/379 inner graphs (229 s wall, 862 s CPU)
+      259/379 inner graphs (246 s wall, 941 s CPU)
+      296/379 inner graphs (309 s wall, 1188 s CPU)
+      333/379 inner graphs (340 s wall, 1310 s CPU)
+      370/379 inner graphs (366 s wall, 1419 s CPU)
+   graph sum: 379 inner graphs, wall 373 s
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-73/2700000', '26767/486000000', '~-2000021/32805000000', '~218581759/5467500000000', '[585364097835913166593026321 mod p]']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (-1/270000) t_c^-5 + (77/24300000) t_c^-4 + (-3377/1312200000) t_c^-3 + (17/8437500) t_c^-2 + (~8385834738185/9498776096233) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 3/2): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> (1/180000) (T/lambda)^-6 + 0 + .. + 0
+   total over all outer graphs, in T/lambda: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+UN_E4 RUN c2 checks passed
+==============================================================================================================
+un_e4 run: case a, p = 2^89-1, genus 4, maxout None, 4 worker processes   [2026-11-13T19:02:21]
+--------------------------------------------------------------------------------------------------------------
+case a: formal quintic, frame (0,0), CANONICAL normalisation P_11(0,z) = 1 (must reproduce the natural run)
+   P^stored_11(0, z) = {0: '1', 5: '-43397/807975000', 10: '-765368951400317/1305647201250000000'};  multiplier m(z) = {0: '1', 5: '43397/807975000', 10: '153074543599907/261129440250000000'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the canon normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (0) z^5 + (0) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: NONE (canonical: P_11(0, z) is constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+PASS    genus 4 REGRESSION: rows from the canonical gauge = the project rows in frame ('0', '0') (25 x 10 x 6 residues)
+      37/379 inner graphs (41 s wall, 112 s CPU)
+      74/379 inner graphs (64 s wall, 212 s CPU)
+      111/379 inner graphs (134 s wall, 432 s CPU)
+      148/379 inner graphs (160 s wall, 582 s CPU)
+      185/379 inner graphs (194 s wall, 724 s CPU)
+      222/379 inner graphs (228 s wall, 856 s CPU)
+      259/379 inner graphs (248 s wall, 951 s CPU)
+      296/379 inner graphs (319 s wall, 1230 s CPU)
+      333/379 inner graphs (351 s wall, 1355 s CPU)
+      370/379 inner graphs (378 s wall, 1470 s CPU)
+   graph sum: 379 inner graphs, wall 385 s
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 1): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> (1/180000) (T/lambda)^-6 + 0 + .. + 0
+   total over all outer graphs, in T/lambda: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+UN_E4 RUN a checks passed
+==============================================================================================================
+un_e4 report, p = 2^89-1   [2026-11-13T19:09:11]
+PASS REGRESSION (a, maxout None): all 379 outer graphs in range equal g4_split_g4_89_nat.json (u^0..u^5)
+PASS    case c1 (maxout None): all 378 outer graphs with edges in range are regular
+PASS    case c2 (maxout None): all 378 outer graphs with edges in range are regular
+PASS REGRESSION (a, maxout 2): all 11 outer graphs in range equal g4_split_g4_89_nat.json (u^0..u^5)
+   b - a (maxout 2): 7 outer graphs differ; difference / m5, m5 = -43397/807975000 (the rows differ by the scalar factor 1 + m5 u^4 zhat^5):
+      outer graph   0 (E=0, gv=[4]): [u^0..u^5] = ['0', '0', '0', '0', '-1/8400000', '-187/680400000']
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '-1/1008000', '13/6804000']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '1/900000', '-53/32400000']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-41/68040000']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-11/34020000']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '49/16200000']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-17/8100000']
+PASS    b - a is confined to E <= 2, to [u^4], [u^5] for E <= 1 and to [u^5] for E = 2 (valuation argument)
+      vertex graph difference / m5 in t_c: (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (-1/8400000) t_c^-2 + (-751/1701000000) t_c^-1
+   d - c1 (maxout 2): 7 outer graphs differ; difference / m5, m5 = 31764344287/1163868750 (the rows differ by the scalar factor 1 + m5 u^4 zhat^5):
+      outer graph   0 (E=0, gv=[4]): [u^0..u^5] = ['0', '0', '0', '0', '-1/8400000', '3673/567000000']
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '-1/1008000', '1/280000']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '1/900000', '-407/40500000']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '169/17010000']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '1/850500']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-2/253125']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-13/4050000']
+PASS    d - c1 is confined to E <= 2, to [u^4], [u^5] for E <= 1 and to [u^5] for E = 2 (valuation argument)
+      vertex graph difference / m5 in t_c: (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (-1/8400000) t_c^-2 + (7157/1134000000) t_c^-1
+PASS    case c1 (maxout 2): all 10 outer graphs with edges in range are regular
+PASS    case c2 (maxout 2): all 10 outer graphs with edges in range are regular
+UN_E4 REPORT ALL CHECKS PASSED
+==============================================================================================================
+un_e4 run: case b, p = 2^89-1, genus 4, maxout None, 4 worker processes   [2026-11-13T19:23:36]
+--------------------------------------------------------------------------------------------------------------
+case b: formal quintic, frame (0,0), STORED normalisation P_00(0,z) = 1 (P_11(0,z) = 1 - c5 z^5 - ..)
+   P^stored_11(0, z) = {0: '1', 5: '-43397/807975000', 10: '-765368951400317/1305647201250000000'};  multiplier m(z) = {0: '1'}
+PASS    Theorem U: every p_{k,b}, k <= 12, of the (stored) gauge is a power series in u
+PASS    the gauge in the stored normalisation is regular at u = 0
+   P_11(0, z) in this normalisation: (1) z^0 + (-43397/807975000) z^5 + (-765368951400317/1305647201250000000) z^10
+PASS    (G): P Y^C_model(v(u)) = P_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+   => positive powers of z in P Y^C_model: present (P_11(0, z) is not constant)
+PASS    genus 4: the rows Ghat Rhat(tau zhat) are symplectic mod (zhat^10, u^6)
+PASS    genus 4: stored rows = project rows x (1 + m5 u^4 zhat^5), m5 = -43397/807975000 (scalar right factor; 25 x 10 x 6 residues)
+      residue slots (a, i, zhat^n) where stored and project rows differ: 125 (all at zhat^n, n >= 5)
+      37/379 inner graphs (47 s wall, 129 s CPU)
+      74/379 inner graphs (73 s wall, 241 s CPU)
+      111/379 inner graphs (146 s wall, 475 s CPU)
+      148/379 inner graphs (173 s wall, 628 s CPU)
+      185/379 inner graphs (210 s wall, 781 s CPU)
+      222/379 inner graphs (245 s wall, 916 s CPU)
+      259/379 inner graphs (263 s wall, 1007 s CPU)
+      296/379 inner graphs (328 s wall, 1260 s CPU)
+      333/379 inner graphs (357 s wall, 1376 s CPU)
+      370/379 inner graphs (383 s wall, 1487 s CPU)
+   graph sum: 379 inner graphs, wall 390 s
+   RESULT: 6 of 378 outer graphs with edges are SINGULAR; (E, first non-zero u-order): graphs = {(1, 4): [1, 2], (1, 5): [3], (2, 5): [4, 7, 8]}
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '~9879944638888/9387844034281', '[244968065241154395214513784 mod p]']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '[64372903154547338646495565 mod p]', '[300681849571968450363212878 mod p]']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '~2826058238761/9769014357607']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[377538956101933349237247404 mod p]']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[553496803924578394756859217 mod p]']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '[222278971620682881139709550 mod p]']
+   vertex graph [u^0..u^5] = ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '[540073743652683184902722062 mod p]', '[203706210561737929174128458 mod p]']
+   vertex graph in the quintic t_c (frame ('0', '0')): (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + ([15208975363537432911074122 mod p]) t_c^-2 + ([218406674267057725437251642 mod p]) t_c^-1
+   vertex graph in T/lambda (T = Int f, lambda = 1): (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + ([15208975363537432911074122 mod p]) T^-2 + ([218406674267057725437251642 mod p]) T^-1  -> NOT c_4 (T/lambda)^-6 + 0
+   total over all outer graphs, in T/lambda: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+UN_E4 RUN b checks passed
+==============================================================================================================
+un_e4 report, p = 2^89-1   [2026-11-13T19:30:59]
+PASS REGRESSION (a, maxout None): all 379 outer graphs in range equal g4_split_g4_89_nat.json (u^0..u^5)
+   b - a (maxout None): 7 outer graphs differ; difference / m5, m5 = -43397/807975000 (the rows differ by the scalar factor 1 + m5 u^4 zhat^5):
+      outer graph   0 (E=0, gv=[4]): [u^0..u^5] = ['0', '0', '0', '0', '-1/8400000', '-187/680400000']
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '-1/1008000', '13/6804000']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '1/900000', '-53/32400000']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-41/68040000']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-11/34020000']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '49/16200000']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-17/8100000']
+PASS    b - a is confined to E <= 2, to [u^4], [u^5] for E <= 1 and to [u^5] for E = 2 (valuation argument)
+      vertex graph difference / m5 in t_c: (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (-1/8400000) t_c^-2 + (-751/1701000000) t_c^-1
+PASS    case c1 (maxout None): all 378 outer graphs with edges in range are regular
+PASS    case c2 (maxout None): all 378 outer graphs with edges in range are regular
+PASS REGRESSION (a, maxout 2): all 11 outer graphs in range equal g4_split_g4_89_nat.json (u^0..u^5)
+   b - a (maxout 2): 7 outer graphs differ; difference / m5, m5 = -43397/807975000 (the rows differ by the scalar factor 1 + m5 u^4 zhat^5):
+      outer graph   0 (E=0, gv=[4]): [u^0..u^5] = ['0', '0', '0', '0', '-1/8400000', '-187/680400000']
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '-1/1008000', '13/6804000']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '1/900000', '-53/32400000']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-41/68040000']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-11/34020000']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '49/16200000']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-17/8100000']
+PASS    b - a is confined to E <= 2, to [u^4], [u^5] for E <= 1 and to [u^5] for E = 2 (valuation argument)
+      vertex graph difference / m5 in t_c: (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (-1/8400000) t_c^-2 + (-751/1701000000) t_c^-1
+   d - c1 (maxout 2): 7 outer graphs differ; difference / m5, m5 = 31764344287/1163868750 (the rows differ by the scalar factor 1 + m5 u^4 zhat^5):
+      outer graph   0 (E=0, gv=[4]): [u^0..u^5] = ['0', '0', '0', '0', '-1/8400000', '3673/567000000']
+      outer graph   1 (E=1, gv=[1, 3]): [u^0..u^5] = ['0', '0', '0', '0', '-1/1008000', '1/280000']
+      outer graph   2 (E=1, gv=[2, 2]): [u^0..u^5] = ['0', '0', '0', '0', '1/900000', '-407/40500000']
+      outer graph   3 (E=1, gv=[3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '169/17010000']
+      outer graph   4 (E=2, gv=[0, 3]): [u^0..u^5] = ['0', '0', '0', '0', '0', '1/850500']
+      outer graph   7 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-2/253125']
+      outer graph   8 (E=2, gv=[1, 2]): [u^0..u^5] = ['0', '0', '0', '0', '0', '-13/4050000']
+PASS    d - c1 is confined to E <= 2, to [u^4], [u^5] for E <= 1 and to [u^5] for E = 2 (valuation argument)
+      vertex graph difference / m5 in t_c: (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (-1/8400000) t_c^-2 + (7157/1134000000) t_c^-1
+PASS    case c1 (maxout 2): all 10 outer graphs with edges in range are regular
+PASS    case c2 (maxout 2): all 10 outer graphs with edges in range are regular
+UN_E4 REPORT ALL CHECKS PASSED

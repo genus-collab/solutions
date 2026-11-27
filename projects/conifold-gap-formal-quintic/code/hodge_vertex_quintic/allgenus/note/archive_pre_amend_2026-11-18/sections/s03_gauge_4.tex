@@ -1,0 +1,51 @@
+% Section 3, part 4 of 8: proof of Theorem U, the leading term, the Z/5-degree, graded gauges.
+
+\begin{proof}[Proof of \cref{thm:gau-U}~(a)]
+Write $P=\Theta_U\check P$ (a local letter); $\check P$ is integral if and only if $P$ is. As $A\Theta_U=\Theta_U\tilde A$, the gauge equation is equivalent to $z\check P'=[\tilde A,\check P]-z\operatorname{dlog}\Theta_U\,\check P$, i.e.\ to
+\begin{equation}
+\label{eq:gau-reduced}
+[\tilde A,\check P_0]=0,\qquad [\tilde A,\check P_{k+1}]=\check P_k'+\operatorname{dlog}\Theta_U\,\check P_k\quad(k\geq0).
+\end{equation}
+We construct $\check P_k=\mathcal Z_k+w^{(k)}$ with $\mathcal Z_k$ integral and $w^{(k)}\in\Bbbk\fps u[\mathcal Y]$ such that (I$_k$) $[\tilde A,\check P_k]=\check P_{k-1}'+\operatorname{dlog}\Theta_U\check P_{k-1}$ ($\check P_{-1}:=0$) and (S$_k$) $\operatorname{pr}(\check P_k'+\operatorname{dlog}\Theta_U\check P_k)=0$. For $k=0$ take $\mathcal Z_0:=0$, $w^{(0)}:=\mathfrak d\,1$: (I$_0$) is clear and (S$_0$) is \cref{lem:gau-scal}~(c). Given $\check P_k$, $X_{k+1}:=\check P_k'+\operatorname{dlog}\Theta_U\check P_k$ is integral with $\operatorname{pr}(X_{k+1})=0$ by (S$_k$), so \cref{lem:gau-lift}, applied to each shift component, gives an integral $\mathcal Z_{k+1}$ with $[\tilde A,\mathcal Z_{k+1}]=X_{k+1}$; then \cref{lem:gau-scal}~(b) with $Z:=\mathcal Z_{k+1}'+\operatorname{dlog}\Theta_U\mathcal Z_{k+1}$ gives $w^{(k+1)}$, and (I$_{k+1}$) holds since $[\tilde A,w^{(k+1)}]=0$, (S$_{k+1}$) since its left side is $\operatorname{pr}(Z)+\operatorname{pr}\bigl((w^{(k+1)})'+\operatorname{dlog}\Theta_Uw^{(k+1)}\bigr)=0$. By \eqref{eq:gau-reduced}, $P^\natural:=\Theta_U\sum_kz^k\check P_k\in\Gau(A,\tilde A)$ and $P^\natural_0=\mathfrak d\,\Theta_U$.
+\end{proof}
+
+\begin{lem}[The leading term of a solution of the gauge equation]
+\label{lem:gau-lead}
+Let $A$, $\tilde A$ have the one-pole shape and satisfy (EP), let $P\in\Gau(A,\tilde A)$ and $n\geq0$ with $P_0=\dots=P_{n-1}=0$. Then $P_n=\cn\,\mathfrak d\,\Theta_U$ for a unique $\cn\in\Bbbk$, namely $\cn=(P_n)_{00}(0)$.
+\end{lem}
+
+\begin{proof}
+For $\check P:=\Theta_U^{-1}P$, the coefficients of $z^n$ and $z^{n+1}$ of \eqref{eq:gau-reduced} give $[\tilde A,\check P_n]=0$, so $\check P_n\in\Bbbk\fps u[\mathcal Y]$ (\cref{lem:gau-comm}~(c), (f)), and $\check P_n'+\operatorname{dlog}\Theta_U\check P_n\in\operatorname{im}(\operatorname{ad}\tilde A)$, so its projection vanishes. By \cref{lem:gau-scal}~(c), $\check P_n=\cn\,\mathfrak d\,1$, and $\cn=(P_n)_{00}(0)$ as $d^U_0=\mathfrak d(0)=1$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:gau-U}~(b)--(d)]
+Part (c) is \cref{prop:gau-graded}. (b) \emph{Injectivity:} if $\cn\neq0$ has order $n$, $\coef{z^n}(P^\natural\cn)=\cn_n\mathfrak d\Theta_U\neq0$. \emph{Surjectivity:} given $P\in\Gau(A,\tilde A)$, suppose $\cn_0,\dots,\cn_{n-1}$ are found with $R^{(n)}:=P-P^\natural\sum_{m<n}\cn_mz^m\equiv0$ modulo $z^n$. As $\Gau(A,\tilde A)$ is a $\Bbbk\fps z$-module, \cref{lem:gau-lead} gives $\coef{z^n}R^{(n)}=\cn_n\mathfrak d\Theta_U$ for a unique $\cn_n\in\Bbbk$, and then $R^{(n+1)}=R^{(n)}-\cn_nz^nP^\natural\equiv0$ modulo $z^{n+1}$. With $\cn:=\sum_n\cn_nz^n$, every coefficient of $P-P^\natural\cn$ vanishes. Its $z^0$-term is $\cn(0)\mathfrak d\Theta_U$; the statements on regular gauges follow, since $P^\natural\cn'=P\cdot(\cn_P^{-1}\cn')$ for $P=P^\natural\cn_P$ regular. For $(\tilde A,\tilde A)$, $\Theta_U=\mathfrak d=1$ and $1\in\Gau(\tilde A,\tilde A)$.
+
+(d) Every object in the proof of (a) is obtained from the $b_a$, $\tilde b_a$ by field operations, derivatives and $\int_0^u$; with rational free constants the construction stays in $\mathfrak{gl}_5(\bbQ\fps u)\fps z$. Over $\Bbbk\supseteq\bbQ$ the proofs of \cref{lem:gau-comm,lem:gau-lift,lem:gau-scal,lem:gau-lead} hold verbatim, so (b) applies; and for rational $P=P^\natural\cn$ the recursion computes $\cn_n=(\coef{z^n}R^{(n)})_{00}(0)\in\bbQ$.
+\end{proof}
+
+\begin{lem}[The $\bbZ/5$-degree of the gauge equation]
+\label{lem:gau-degree}
+For $P=\sum_kz^kP_k$ with $P_k\in\mathfrak{gl}_5(\Bbbk\lser u)$ and $\delta\in\bbZ/5$ put $P^{[\delta]}:=\sum_kz^k\sum_{(a,b):\,k+b-a\equiv\delta}(P_k)_{ab}E_{ab}$, so that $P=\sum_\delta P^{[\delta]}$, and $P$ is graded if and only if $P=P^{[0]}$. Let $\operatorname{ge}(P):=zP'-AP+P\tilde A$. Then $\operatorname{ge}(P^{[\delta]})=\operatorname{ge}(P)^{[\delta+1]}$; in particular every degree part of a solution of the gauge equation is a solution.
+\end{lem}
+
+\begin{proof}
+Give $z^kf(u)E_{ab}$ the degree $k+b-a$. Then $zP'$ raises it by $1$, and so do $A\,(fz^kE_{cd})=b_{c-1}fz^kE_{c-1,d}$ and $(fz^kE_{cd})\tilde A=\tilde b_dfz^kE_{c,d+1}$; so $\operatorname{ge}$ maps degree $\delta$ to degree $\delta+1$.
+\end{proof}
+
+\begin{prop}[Graded gauges]
+\label{prop:gau-graded}
+Let $A$, $\tilde A$ have the one-pole shape and satisfy (EP).
+\begin{enumerate}
+\item Graded regular gauges exist; they can be chosen rational if all $b_a$, $\tilde b_a$ are rational.
+\item If $P$ is a graded regular gauge, the graded regular gauges are exactly the $P\cn(z)$ with $\cn\in\Bbbk\fps{z^5}^\times$.
+\item For a graded regular gauge $P$, $P_{11}(0,z)=\sum_{m\geq0}(P_{5m})_{11}(0)\,z^{5m}$ is a unit of $\Bbbk\fps{z^5}$.
+\item If $\zeta\in\Bbbk$, then $\operatorname{Rot}_iP=\sum_\delta\zeta^{-i\delta}P^{[\delta]}$; so $P$ is graded if and only if $\operatorname{Rot}_1P=P$, if and only if $\operatorname{Rot}_iP=P$ for all $i$, and $\frac15\sum_i\operatorname{Rot}_iP=P^{[0]}$. Moreover $A\,\zeta^{i(\mathrm{gr}+1)}=\zeta^i\zeta^{i(\mathrm{gr}+1)}A$, and the same for $\tilde A$; $\operatorname{Rot}_i$ maps solutions of $z\de_uY=AY$ to solutions, and $\operatorname{Rot}_i(PY)=(\operatorname{Rot}_iP)(\operatorname{Rot}_iY)$, $\operatorname{Rot}_i(Y\mathsf d(z))=\operatorname{Rot}_i(Y)\,\mathsf d(\zeta^{-i}z)$ for scalar series $\mathsf d$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) By \cref{lem:gau-degree}, $(P^\natural)^{[0]}$ solves the gauge equation, and its $z^0$-term is the diagonal $P^\natural_0$; rationality is \cref{thm:gau-U}~(d). (ii) Regular gauges are $P\cn$, $\cn\in\Bbbk\fps z^\times$ (\cref{thm:gau-U}~(b)); with $\cn^{(r)}:=\sum_{n\equiv r}\cn_nz^n$, $(P\cn)^{[r]}=P\cn^{(r)}$, and $\cn\mapsto P\cn$ is injective, so $P\cn$ is graded if and only if $\cn\in\Bbbk\fps{z^5}$. (iii) For graded $P$, $(P_k)_{11}=0$ unless $5\mid k$, and $(P_0)_{11}(0)=\cn(0)\mathfrak d(0)d^U_1(0)\neq0$. (iv) The entry $(a,b)$ of $\coef{z^k}\operatorname{Rot}_iP$ is $\zeta^{-i(k+b-a)}(P_k)_{ab}$; the equivalences follow from $\sum_i\zeta^{-i\delta}=5\delta_{\delta,0}$. The entry $(a,a+1)$ of $\zeta^{i(\mathrm{gr}+1)}A\zeta^{-i(\mathrm{gr}+1)}$ is $\zeta^{-i}b_a$, so for a solution $Y$, $z\de_u(\operatorname{Rot}_iY)=\zeta^i\zeta^{i(\mathrm{gr}+1)}A\,Y(u,\zeta^{-i}z)=A\operatorname{Rot}_iY$. The product rules are immediate.
+\end{proof}
+
+\input{sections/s03_gauge_5}

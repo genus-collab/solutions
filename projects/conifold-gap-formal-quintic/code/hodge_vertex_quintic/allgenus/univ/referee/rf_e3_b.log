@@ -1,0 +1,129 @@
+(continuation of rf_e3.log)
+====================================================================================================
+rf_e3: case mB7 (PURE MODEL base P = 1, model vanishing covector), genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:26:10]
+   column-1 orbits solved in 4 iterations (Delta_m not imposed for m = [6])
+   D: 22 entries; symplectic: True; flat-regular: True; annihilating mod u^4 for m = 1..6: False (violated at m = [1, 2])
+   delta_0 (z^0 coefficient / e_1) = ['-1', '8/3', '184/27', '5360/1701']  -> not constant: no z-independent target connection
+   RESULT: 3 of 41 outer graphs with edges are SINGULAR; (E, first order): {(1, 2): [1, 4], (2, 3): [5]}
+      outer graph 1 (E=1, gv=[2]): ['0', '0', '1/14000', '-11/15750']
+      outer graph 4 (E=1, gv=[1, 2]): ['0', '0', '1/252000', '-67/1134000']
+      outer graph 5 (E=2, gv=[0, 2]): ['0', '0', '0', '1/31500']
+   vertex graph in T_eff = -u Delta_-1: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (1 s)
+====================================================================================================
+rf_e3: case B1 (quintic base), genus 4, max_outer 2, p = 2^89-1   [2026-11-13T20:28:43]
+   column-1 orbits solved in 8 iterations (Delta_m not imposed for m = [6])
+   D: 34 entries; symplectic: True; flat-regular: True; annihilating mod u^6 for m = 1..9: False (violated at m = [1, 2, 3, 4])
+   delta_0 (z^0 coefficient / e_1) = ['-1', '2', '139/360', '53159/14400', '77611/134400', '-41736121/432000000']  -> not constant: no z-independent target connection
+   RESULT: 10 of 10 outer graphs with edges are SINGULAR; (E, first order): {(1, 2): [1, 2, 3], (2, 3): [4], (2, 4): [5, 6, 7, 8, 9, 10]}
+      outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '1/2646000', '221/158760000', '[374448046135945372884317173 mod p]', '[252369787202083737940627786 mod p]']
+      outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '1/25200000', '11/504000000', '[312557697714038938047745688 mod p]', '[232654443608467534873103772 mod p]']
+      outer graph 3 (E=1, gv=[3]): ['0', '0', '1/88200', '1/588000', '-37829/141120000', '-85067/345600000']
+      outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '103/5670000', '[612685819419450704065241851 mod p]', '[504885330109743130377962030 mod p]']
+      outer graph 5 (E=2, gv=[1, 1, 2]): ['0', '0', '0', '0', '1/105840000', '[578426519076777748417785236 mod p]']
+      outer graph 6 (E=2, gv=[1, 1, 2]): ['0', '0', '0', '0', '1/70560000', '[147207375507473648842445239 mod p]']
+   vertex graph in T_eff = -u Delta_-1: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + ([327224459038002178609089493 mod p]) T^-1 -> NOT c_g T_eff^(2-2g) + 0
+   (138 s)
+====================================================================================================
+rf_e3: case mA7 (PURE MODEL base P = 1, model vanishing covector), genus 4, max_outer 2, p = 2^89-1   [2026-11-13T20:31:04]
+   column-1 orbits solved in 8 iterations (Delta_m not imposed for m = [6])
+   D: 34 entries; symplectic: True; flat-regular: True; annihilating mod u^6 for m = 1..9: True
+   delta_0 (z^0 coefficient / e_1) = ['-1', '8/3', '335/378', '201673/34020', '[102611353224111450212585846 mod p]', '[200114848462542950314314046 mod p]']  -> not constant: no z-independent target connection
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR
+   vertex graph in T_eff = -u Delta_-1: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (138 s)
+====================================================================================================
+rf_e3: case K2 (quintic base), genus 4, max_outer 2, p = 2^89-1   [2026-11-13T20:33:24]
+   column-1 orbits solved in 8 iterations (Delta_m not imposed for m = [6])
+   D: 34 entries; symplectic: True; flat-regular: True; annihilating mod u^6 for m = 1..9: True
+   delta_0 (z^0 coefficient / e_1) = ['-1', '-4/9', '1616/945', '1197397/170100', '224117261/42865200', '[122200974412180899203977781 mod p]']  -> not constant: no z-independent target connection
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR
+   vertex graph in T_eff = -u Delta_-1: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (132 s)
+====================================================================================================
+rf_e3: case L1 (quintic base), genus 3, max_outer None, p = 2^61-1   [2026-11-13T20:44:50]
+   column-1 orbits solved in 2 iterations (Delta_m not imposed for m = [6])
+====================================================================================================
+rf_e3: case A1 (quintic base), genus 4, max_outer None, p = 2^61-1   [2026-11-13T20:44:50]
+   column-1 orbits solved in 8 iterations (Delta_m not imposed for m = [6])
+   D: 34 entries; symplectic: True; flat-regular: True; annihilating mod u^6 for m = 1..9: True
+   delta_0 (z^0 coefficient / e_1) = ['-1', '2', '139/360', '53159/14400', '77611/134400', '[1581774522652989158 mod p]']  -> not constant: no z-independent target connection
+   D: 22 entries; symplectic: True; flat-regular: True; annihilating mod u^4 for m = 1..6: False (violated at m = [1, 2])
+   delta_0 (z^0 coefficient / e_1) = ['-1', '2', '263/45', '49919/18900']  -> not constant: no z-independent target connection
+   FIRST ORDER (t^1) on the edge graphs: ZERO for all 41 outer graphs with edges
+   consistency: t^4 coefficients vanish everywhere: True
+   (5 s)
+====================================================================================================
+rf_e3: case P5 (quintic base), genus 3, max_outer None, p = 2^61-1   [2026-11-13T20:44:55]
+   D: 24 entries; symplectic: True; flat-regular: True; annihilating mod u^4 for m = 1..6: False (violated at m = [1, 2, 3, 4])
+   delta_0 (z^0 coefficient / e_1) = ['-1', '-6/7', '-229/140', '-2161/400']  -> not constant: no z-independent target connection
+   FIRST ORDER (t^1) on the edge graphs: NON-ZERO on {1: [1, 2, 3], 2: [3], 4: [1, 2, 3], 5: [2, 3], 6: [3], 7: [3], 8: [3], 11: [3], 16: [3]}
+   consistency: t^4 coefficients vanish everywhere: True
+   (5 s)
+====================================================================================================
+rf_e3: case A1 (quintic base), genus 3, max_outer None, p = 2^61-1   [2026-11-13T20:45:00]
+   column-1 orbits solved in 4 iterations (Delta_m not imposed for m = [6])
+   D: 22 entries; symplectic: True; flat-regular: True; annihilating mod u^4 for m = 1..6: True
+   delta_0 (z^0 coefficient / e_1) = ['-1', '2', '263/45', '49919/18900']  -> not constant: no z-independent target connection
+   RESULT: all 41 outer graphs with edges are O(u^4): REGULAR
+   vertex graph in T_eff = -u Delta_-1: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (2 s)
+====================================================================================================
+rf_e3: case B1 (quintic base), genus 3, max_outer None, p = 2^61-1   [2026-11-13T20:45:02]
+   column-1 orbits solved in 4 iterations (Delta_m not imposed for m = [6])
+   D: 22 entries; symplectic: True; flat-regular: True; annihilating mod u^4 for m = 1..6: False (violated at m = [1, 2])
+   delta_0 (z^0 coefficient / e_1) = ['-1', '2', '263/45', '49919/18900']  -> not constant: no z-independent target connection
+   RESULT: 3 of 41 outer graphs with edges are SINGULAR; (E, first order): {(1, 2): [1, 4], (2, 3): [5]}
+      outer graph 1 (E=1, gv=[2]): ['0', '0', '1/14000', '-31/105000']
+      outer graph 4 (E=1, gv=[1, 2]): ['0', '0', '1/252000', '-1/72000']
+      outer graph 5 (E=2, gv=[0, 2]): ['0', '0', '0', '109/945000']
+   vertex graph in T_eff = -u Delta_-1: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (2 s)
+====================================================================================================
+rf_e3: case B1 (quintic base), genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:46:46]
+   column-1 orbits solved in 0 iterations (Delta_m not imposed for m = [])
+====================================================================================================
+rf_e3: case mK8 (PURE MODEL base P = 1, model vanishing covector), genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:46:46]
+   column-1 orbits solved in 0 iterations (Delta_m not imposed for m = [])
+   D: 9 entries; symplectic: True; flat-regular: True; annihilating mod u^2 for m = 1..3: True
+   delta_0 (z^0 coefficient / e_1) = ['-1', '-1/2']  -> not constant: no z-independent target connection
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph in T_eff = -u Delta_-1: (1/1200) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (0 s)
+====================================================================================================
+rf_e3: case A3 (quintic base), genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:46:47]
+   column-1 orbits solved in 0 iterations (Delta_m not imposed for m = [])
+   D: 9 entries; symplectic: True; flat-regular: True; annihilating mod u^2 for m = 1..3: True
+   delta_0 (z^0 coefficient / e_1) = ['-1', '-2/3']  -> not constant: no z-independent target connection
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph in T_eff = -u Delta_-1: (1/1200) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (1 s)
+====================================================================================================
+rf_e3: case B1 (quintic base), genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:46:57]
+   column-1 orbits solved in 0 iterations (Delta_m not imposed for m = [])
+   D: 9 entries; symplectic: True; flat-regular: True; annihilating mod u^2 for m = 1..3: True
+   delta_0 (z^0 coefficient / e_1) = ['-1', '2']  -> not constant: no z-independent target connection
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph in T_eff = -u Delta_-1: (1/1200) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (1 s)
+====================================================================================================
+rf_e3: case xA1 (quintic base), genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:47:29]
+   column-1 orbits solved in 0 iterations (Delta_m not imposed for m = [])
+   D: 9 entries; symplectic: True; flat-regular: True; annihilating mod u^2 for m = 1..3: True
+   delta_0 (z^0 coefficient / e_1) = ['-1', '2']  -> not constant: no z-independent target connection
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph in T_eff = -u Delta_-1: (1/1200) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (1 s)
+====================================================================================================
+rf_e3: case xA1 (quintic base), genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:47:31]
+   column-1 orbits solved in 4 iterations (Delta_m not imposed for m = [6])
+   D: 22 entries; symplectic: True; flat-regular: True; annihilating mod u^4 for m = 1..6: False (violated at m = [1, 2])
+   delta_0 (z^0 coefficient / e_1) = ['-1', '2', '263/45', '49919/18900']  -> not constant: no z-independent target connection
+   RESULT: 2 of 41 outer graphs with edges are SINGULAR; (E, first order): {(1, 3): [1, 4]}
+      outer graph 1 (E=1, gv=[2]): ['0', '0', '0', '91/810000']
+      outer graph 4 (E=1, gv=[1, 2]): ['0', '0', '0', '-91/6480000']
+   vertex graph in T_eff = -u Delta_-1: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (2 s)
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR
+   vertex graph in T_eff = -u Delta_-1: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g) + 0
+   (543 s)

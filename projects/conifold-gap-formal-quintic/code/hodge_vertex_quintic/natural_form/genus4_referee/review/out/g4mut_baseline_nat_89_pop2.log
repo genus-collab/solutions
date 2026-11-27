@@ -1,0 +1,15 @@
+====================================================================================================
+rv_g4mut g4mut_baseline_nat_89_pop2: exact copy (control: every check must pass)
+   setup 4 s; 379 inner graphs; min val E_out = 1; frozen_ok = True; 5 processes
+      76/379 inner graphs (31 s)
+      152/379 inner graphs (53 s)
+      228/379 inner graphs (66 s)
+      304/379 inner graphs (93 s)
+   run: wall 116 s, CPU 528 s, covered 379/379, crashes 0 []
+PASS REGULARITY restricted: the 10 outer graphs with 1..2 edges are O(u^6)
+      number of non-regular outer graphs: 0 of 10; by E: {1: 0, 2: 0}
+   vertex graph: ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000']
+   vertex graph in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS VERTEX GRAPH carries the polar part (1/180000) t_c^-6 + 0 + ... + 0
+PASS rows of the 11 outer graphs with <= 2 edges equal the stored table of record
+VERDICT g4mut_baseline_nat_89_pop2: control ok  (wall 116 s)

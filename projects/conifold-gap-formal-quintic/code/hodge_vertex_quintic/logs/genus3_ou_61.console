@@ -1,0 +1,229 @@
+==============================================================================================================
+genus3_ou  p = 2^61-1  (alpha, beta) = (Fraction(0, 1), Fraction(0, 1))  prec_abs = 34  K = 6  nproc = 22  steps ['1', '2', '3', '4']  2026-11-09 17:14
+setup (rows Nz = 6, conifold periods, SRows, symbol, HatRowsU, M_0): 1.2 s
+--------------------------------------------------------------------------------------------------------------
+(1) hatted theory at genus 3, point frame M = 1, frozen sums, M-independence
+PASS HatRowsU: every Qhat has valuation 0 with non-zero constant term, xhat = 1 + O(u); u-precision 6 >= K = 6
+PASS HatRowsU: Qhat|_{u=0} = the conifold symbol R^ for all (a, i, n), n <= 6
+PASS M_0 = R~ mod zhat^7: symplectic to order 6, M_0 M_0^-1 = 1, exp(log M_0) = M_0, log in sp, symbol symplectic to order 6: {'exp_log': True, 'mu_in_sp': True, 'symbol_sympl': True}
+   1-edge graphs: idx 2 gv=(2,) ed=[(0, 0)]; idx 5 gv=(1, 2) ed=[(0, 1)]
+   t_c(u) = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (9/20)x^4 + O(x^10)
+      point frame 5/42 jobs done (10 s)
+      point frame 10/42 jobs done (10 s)
+      point frame 15/42 jobs done (10 s)
+      point frame 20/42 jobs done (10 s)
+      point frame 25/42 jobs done (10 s)
+      point frame 30/42 jobs done (11 s)
+      point frame 35/42 jobs done (11 s)
+      point frame 40/42 jobs done (18 s)
+      point frame 42/42 jobs done (79 s)
+   point-frame pass: 79 s (slowest graph 68 s)
+      graph  1 (E=0, gv=(3,)): ([994175744756750568 mod p]) u^0 + ([318650413353258580 mod p]) u^1 + ([1964359561096312567 mod p]) u^2 + ([2028657666987979968 mod p]) u^3 + ([2172062273737433173 mod p]) u^4 + ([957330653114132951 mod p]) u^5
+      graph  2 (E=1, gv=(2,)): ([169303008921501043 mod p]) u^0 + ([2259615608686035971 mod p]) u^1 + ([2218230759674230882 mod p]) u^2 + ([1286947842900194243 mod p]) u^3 + ([575315106764434132 mod p]) u^4 + ([1187698926513791269 mod p]) u^5
+      graph  3 (E=2, gv=(1,)): ([232201837590392561 mod p]) u^0 + ([1488725480209743451 mod p]) u^1 + ([1089926494353287095 mod p]) u^2 + ([1214328667798421095 mod p]) u^3 + ([16387545939429090 mod p]) u^4 + ([1241888149311284595 mod p]) u^5
+      graph  4 (E=3, gv=(0,)): ([17174010786199976 mod p]) u^0 + ([158406863755485324 mod p]) u^1 + ([1271285702158686957 mod p]) u^2 + ([1804324131119239847 mod p]) u^3 + ([2175294969316434198 mod p]) u^4 + ([1827354416381363937 mod p]) u^5
+      graph  5 (E=1, gv=(1, 2)): ([1232757964972427649 mod p]) u^0 + ([936123706931977187 mod p]) u^1 + ([85504162206853897 mod p]) u^2 + ([1319210577109067795 mod p]) u^3 + ([551359282539547074 mod p]) u^4 + ([1952904971251343261 mod p]) u^5
+      graph  6 (E=2, gv=(0, 2)): ([2206535164841720900 mod p]) u^0 + ([2137057530972605290 mod p]) u^1 + ([95183633078523986 mod p]) u^2 + ([1275098632668774060 mod p]) u^3 + ([1625668107328535421 mod p]) u^4 + ([587057177233182366 mod p]) u^5
+      graph  7 (E=2, gv=(1, 1)): ([285004168269158756 mod p]) u^0 + ([1552922903484882832 mod p]) u^1 + ([1657865102246056373 mod p]) u^2 + ([1254681385506432317 mod p]) u^3 + ([326525229792234898 mod p]) u^4 + ([1138902381848248816 mod p]) u^5
+      graph  8 (E=2, gv=(1, 1)): ([2186579113792474155 mod p]) u^0 + ([351204534122379050 mod p]) u^1 + ([1898473203907953776 mod p]) u^2 + ([284596232039324944 mod p]) u^3 + ([731399715263952370 mod p]) u^4 + ([785242036142671116 mod p]) u^5
+      graph  9 (E=3, gv=(0, 1)): ([129381229267874090 mod p]) u^0 + ([741462574132735534 mod p]) u^1 + ([1066053989551276599 mod p]) u^2 + ([644478048778733287 mod p]) u^3 + ([1053103438710724153 mod p]) u^4 + ([502835789141908908 mod p]) u^5
+      graph 10 (E=3, gv=(0, 1)): ([734913520720737643 mod p]) u^0 + ([316386033489618210 mod p]) u^1 + ([1109319699636465295 mod p]) u^2 + ([60629938207890019 mod p]) u^3 + ([2160987087887587759 mod p]) u^4 + ([988991883179817201 mod p]) u^5
+      graph 11 (E=3, gv=(0, 1)): ([719574177439238097 mod p]) u^0 + ([2016013275175669672 mod p]) u^1 + ([1133440671344567147 mod p]) u^2 + ([875551566869543872 mod p]) u^3 + ([1234216763717282313 mod p]) u^4 + ([1330146348378653852 mod p]) u^5
+      graph 12 (E=3, gv=(0, 1)): ([2066300424589387523 mod p]) u^0 + ([755038509814747579 mod p]) u^1 + ([2264726919958793630 mod p]) u^2 + ([131069661846964432 mod p]) u^3 + ([1727907750556525870 mod p]) u^4 + ([2150630564050136683 mod p]) u^5
+      graph 13 (E=4, gv=(0, 0)): ([1684546202805910214 mod p]) u^0 + ([1161896101403165507 mod p]) u^1 + ([1651644111781751832 mod p]) u^2 + ([426373375405849893 mod p]) u^3 + ([2299792889814026020 mod p]) u^4 + ([653000977210996705 mod p]) u^5
+      graph 14 (E=4, gv=(0, 0)): ([2013633623167558962 mod p]) u^0 + ([545545965599564409 mod p]) u^1 + ([996895348710390600 mod p]) u^2 + ([431069005030285151 mod p]) u^3 + ([23532090484957756 mod p]) u^4 + ([2051694053517053311 mod p]) u^5
+      graph 15 (E=4, gv=(0, 0)): ([592681237062402561 mod p]) u^0 + ([592715759810670136 mod p]) u^1 + ([492437529283440133 mod p]) u^2 + ([1005228600605111181 mod p]) u^3 + ([105894424784856027 mod p]) u^4 + ([188741436038223917 mod p]) u^5
+      graph 16 (E=4, gv=(0, 0)): ([1148024760773025377 mod p]) u^0 + ([221162727806785850 mod p]) u^1 + ([853935211801333366 mod p]) u^2 + ([1648129841486750548 mod p]) u^3 + ([1071348683028140266 mod p]) u^4 + ([1944693309566494324 mod p]) u^5
+      graph 17 (E=2, gv=(1, 1, 1)): ([398437307661934969 mod p]) u^0 + ([1251700037308217033 mod p]) u^1 + ([1766711311493163138 mod p]) u^2 + ([1270945605109806569 mod p]) u^3 + ([1225438060409267966 mod p]) u^4 + ([599414774563547566 mod p]) u^5
+      graph 18 (E=3, gv=(0, 1, 1)): ([1307353705588559997 mod p]) u^0 + ([627820930755783268 mod p]) u^1 + ([299966489637117360 mod p]) u^2 + ([1090097464362576373 mod p]) u^3 + ([111803759147432479 mod p]) u^4 + ([818284596276580120 mod p]) u^5
+      graph 19 (E=3, gv=(0, 1, 1)): ([711063242360110398 mod p]) u^0 + ([1694172463183736859 mod p]) u^1 + ([1513474644798492391 mod p]) u^2 + ([1697059641789709110 mod p]) u^3 + ([912395491113210673 mod p]) u^4 + ([1133668695265816089 mod p]) u^5
+      graph 20 (E=3, gv=(0, 1, 1)): ([1671718800811222464 mod p]) u^0 + ([1056562699465087762 mod p]) u^1 + ([1332164755698690881 mod p]) u^2 + ([640215548372446808 mod p]) u^3 + ([1702608674619193495 mod p]) u^4 + ([801307511074870336 mod p]) u^5
+      graph 21 (E=4, gv=(0, 0, 1)): ([164396905859634018 mod p]) u^0 + ([2001493745682536929 mod p]) u^1 + ([2084242450230152015 mod p]) u^2 + ([13523749029437236 mod p]) u^3 + ([2182576168949481480 mod p]) u^4 + ([762437562647463498 mod p]) u^5
+      graph 22 (E=4, gv=(0, 0, 1)): ([811258711220743257 mod p]) u^0 + ([592257470990573123 mod p]) u^1 + ([411817771353673614 mod p]) u^2 + ([431515816568012733 mod p]) u^3 + ([216383667202833715 mod p]) u^4 + ([1413610708909207194 mod p]) u^5
+      graph 23 (E=4, gv=(0, 0, 1)): ([1400529814347418565 mod p]) u^0 + ([947552701273857955 mod p]) u^1 + ([1092267326146260204 mod p]) u^2 + ([797921522111375472 mod p]) u^3 + ([868008360796607141 mod p]) u^4 + ([1136251134851942899 mod p]) u^5
+      graph 24 (E=4, gv=(0, 0, 1)): ([1188236309159956945 mod p]) u^0 + ([675738320913760629 mod p]) u^1 + ([1366283199100597216 mod p]) u^2 + ([167093103269739060 mod p]) u^3 + ([1497689249567334172 mod p]) u^4 + ([1890105398154953757 mod p]) u^5
+      graph 25 (E=4, gv=(0, 0, 1)): ([1931874163531602485 mod p]) u^0 + ([919375362076121454 mod p]) u^1 + ([1709616120935855887 mod p]) u^2 + ([1140289491904052393 mod p]) u^3 + ([582377238570481787 mod p]) u^4 + ([368757195841622503 mod p]) u^5
+      graph 26 (E=4, gv=(0, 0, 1)): ([749701252564565224 mod p]) u^0 + ([39883236987406175 mod p]) u^1 + ([237791768870764823 mod p]) u^2 + ([2254052041113916426 mod p]) u^3 + ([1857436102237008737 mod p]) u^4 + ([1585507396668001678 mod p]) u^5
+      graph 27 (E=5, gv=(0, 0, 0)): ([935247915391208504 mod p]) u^0 + ([143991036444208224 mod p]) u^1 + ([63160749835534526 mod p]) u^2 + ([1913060900129519801 mod p]) u^3 + ([2130471980625926477 mod p]) u^4 + ([2140140781414240849 mod p]) u^5
+      graph 28 (E=5, gv=(0, 0, 0)): ([2047068471640939195 mod p]) u^0 + ([120559889888061983 mod p]) u^1 + ([2006620324049006733 mod p]) u^2 + ([287287042843168983 mod p]) u^3 + ([95733546639349417 mod p]) u^4 + ([1915752313704716279 mod p]) u^5
+      graph 29 (E=5, gv=(0, 0, 0)): ([1405638578363022535 mod p]) u^0 + ([295908205030173334 mod p]) u^1 + ([637889166961844069 mod p]) u^2 + ([356096117216700942 mod p]) u^3 + ([847152826397203417 mod p]) u^4 + ([46204441485015649 mod p]) u^5
+      graph 30 (E=5, gv=(0, 0, 0)): ([847555309274639268 mod p]) u^0 + ([372078900578981725 mod p]) u^1 + ([1627496280875688320 mod p]) u^2 + ([1226700412952992599 mod p]) u^3 + ([367179760598060855 mod p]) u^4 + ([2067102910664974549 mod p]) u^5
+      graph 31 (E=5, gv=(0, 0, 0)): ([478434571899946022 mod p]) u^0 + ([1507969336670217628 mod p]) u^1 + ([1456836434594828916 mod p]) u^2 + ([1254494694622496350 mod p]) u^3 + ([2227673919906163897 mod p]) u^4 + ([2261870101177531616 mod p]) u^5
+      graph 32 (E=3, gv=(0, 1, 1, 1)): ([1697838324742139223 mod p]) u^0 + ([336468609793399896 mod p]) u^1 + ([1560791324367434269 mod p]) u^2 + ([1463929324461172052 mod p]) u^3 + ([146025860076449263 mod p]) u^4 + ([226016959390447642 mod p]) u^5
+      graph 33 (E=4, gv=(0, 0, 1, 1)): ([436523783742857058 mod p]) u^0 + ([107433582187480552 mod p]) u^1 + ([537960454893972379 mod p]) u^2 + ([1683441398489755693 mod p]) u^3 + ([274389176695021044 mod p]) u^4 + ([1126691100649962561 mod p]) u^5
+      graph 34 (E=4, gv=(0, 0, 1, 1)): ([34679893108244653 mod p]) u^0 + ([1396934893350488662 mod p]) u^1 + ([689584184005268780 mod p]) u^2 + ([206777475304025579 mod p]) u^3 + ([2093686470948945607 mod p]) u^4 + ([1946292614275639748 mod p]) u^5
+      graph 35 (E=5, gv=(0, 0, 0, 1)): ([1777117470646171169 mod p]) u^0 + ([322996495340270144 mod p]) u^1 + ([197771198936177627 mod p]) u^2 + ([1562628670624932442 mod p]) u^3 + ([262739574094066560 mod p]) u^4 + ([633716838514993038 mod p]) u^5
+      graph 36 (E=5, gv=(0, 0, 0, 1)): ([200554536733893225 mod p]) u^0 + ([687742486026891554 mod p]) u^1 + ([314609401281869418 mod p]) u^2 + ([267887690630822531 mod p]) u^3 + ([1342229928611739468 mod p]) u^4 + ([249566396808140717 mod p]) u^5
+      graph 37 (E=5, gv=(0, 0, 0, 1)): ([832317434597871672 mod p]) u^0 + ([2143951221695880512 mod p]) u^1 + ([145785326380388009 mod p]) u^2 + ([544121160494421312 mod p]) u^3 + ([1980497335211883641 mod p]) u^4 + ([1226518422074560867 mod p]) u^5
+      graph 38 (E=6, gv=(0, 0, 0, 0)): ([1064548776854127256 mod p]) u^0 + ([2202254043168939433 mod p]) u^1 + ([1674767401971127023 mod p]) u^2 + ([1235259371244393797 mod p]) u^3 + ([1142194253794482460 mod p]) u^4 + ([1828975684203302532 mod p]) u^5
+      graph 39 (E=6, gv=(0, 0, 0, 0)): ([1724503807733963158 mod p]) u^0 + ([716255973765707000 mod p]) u^1 + ([1317126015553240820 mod p]) u^2 + ([1515682763099060302 mod p]) u^3 + ([1769887628653760627 mod p]) u^4 + ([84127926088724455 mod p]) u^5
+      graph 40 (E=6, gv=(0, 0, 0, 0)): ([1145645129661616938 mod p]) u^0 + ([1341622107056281121 mod p]) u^1 + ([206664385975481632 mod p]) u^2 + ([419484041426397952 mod p]) u^3 + ([587717133125735636 mod p]) u^4 + ([703740575954136559 mod p]) u^5
+      graph 41 (E=6, gv=(0, 0, 0, 0)): ([100811431593024749 mod p]) u^0 + ([740936508930478364 mod p]) u^1 + ([199218123110602584 mod p]) u^2 + ([2147135383149561012 mod p]) u^3 + ([1047005331091618371 mod p]) u^4 + ([764919879066097745 mod p]) u^5
+      graph 42 (E=6, gv=(0, 0, 0, 0)): ([2046853458355585474 mod p]) u^0 + (-81/8000000) u^1 + ([1203743264513195706 mod p]) u^2 + ([1702008662939280584 mod p]) u^3 + ([137342196846873919 mod p]) u^4 + ([1614297940135756979 mod p]) u^5
+   total F_3^cf u^4 = (1/25200) u^0 + (-1/9000) u^1 + (407/3780000) u^2 + (-151/3780000) u^3 + ([1648421880536047755 mod p]) u^4 + ([411689739253977666 mod p]) u^5
+   total in t_c: (1/25200) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1 + ([207768557237385635 mod p]) t_c^0 + ([572626140997305907 mod p]) t_c^1
+PASS point frame total: polar part in t_c is (1/25200) t_c^-4 only (gap: t_c^-3, t_c^-2, t_c^-1 coefficients vanish): (1/25200) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+      frozen id 5/42 jobs done (10 s)
+      frozen id 10/42 jobs done (10 s)
+      frozen id 15/42 jobs done (10 s)
+      frozen id 20/42 jobs done (10 s)
+      frozen id 25/42 jobs done (10 s)
+      frozen id 30/42 jobs done (10 s)
+      frozen id 35/42 jobs done (11 s)
+      frozen id 40/42 jobs done (17 s)
+      frozen id 42/42 jobs done (79 s)
+PASS point frame: frozen sums (u = 0 theory, rows R^, x = 1) = [u^0] of the hatted sums, all 42 graphs (79 s)
+      random M 5/42 jobs done (11 s)
+      random M 10/42 jobs done (11 s)
+      random M 15/42 jobs done (11 s)
+      random M 20/42 jobs done (11 s)
+      random M 25/42 jobs done (12 s)
+      random M 30/42 jobs done (12 s)
+      random M 35/42 jobs done (13 s)
+      random M 40/42 jobs done (29 s)
+      random M 42/42 jobs done (87 s)
+PASS random constant symplectic M (order 6): total Sum_Gamma G_Gamma = point-frame total through u^5 (M-independence; 87 s)
+      frozen rand 5/42 jobs done (9 s)
+      frozen rand 10/42 jobs done (9 s)
+      frozen rand 15/42 jobs done (9 s)
+      frozen rand 20/42 jobs done (9 s)
+      frozen rand 25/42 jobs done (10 s)
+      frozen rand 30/42 jobs done (10 s)
+      frozen rand 35/42 jobs done (11 s)
+      frozen rand 40/42 jobs done (26 s)
+      frozen rand 42/42 jobs done (77 s)
+PASS random M: frozen sums = [u^0] of the hatted sums, all 42 graphs
+PASS genus-2 graphs with the genus-3 code (GraphSummer6, order-6 M = 1): [u^0] = the 7 point-frame values of genus2_ou (0 s)
+PASS genus-2 graphs with M_0 (order 6; orders > 3 cannot enter at genus 2): [u^0..u^3] = the table of OU_EXTENSION_genus2 s.3
+PASS genus-2 total through u^4 = 1/1200 - 7/6000 u + 97/72000 u^2 - 6809/18000000 u^3 - 2551/15000000 u^4
+PASS s-series check: direct s-series sums (SRows, M = 1) have valuation -20 and equal s^-20 G_Gamma(s^5) through s^-14 for graphs [1, 2, 5] (4 s)
+--------------------------------------------------------------------------------------------------------------
+(2) pass A: the tautological M_0 = R~ mod zhat^7
+      pass A (M0) 5/42 jobs done (9 s)
+      pass A (M0) 10/42 jobs done (9 s)
+      pass A (M0) 15/42 jobs done (9 s)
+      pass A (M0) 20/42 jobs done (9 s)
+      pass A (M0) 25/42 jobs done (9 s)
+      pass A (M0) 30/42 jobs done (9 s)
+      pass A (M0) 35/42 jobs done (10 s)
+      pass A (M0) 40/42 jobs done (25 s)
+      pass A (M0) 42/42 jobs done (77 s)
+   pass A (M_0): 77 s
+      graph  1 (E=0, gv=(3,)): (1/25200) u^0 + ([2245297996126570796 mod p]) u^1 + ([2199056519188411182 mod p]) u^2 + ([1913024381116503261 mod p]) u^3 + ([1043309277769055441 mod p]) u^4 + ([1451702020800249554 mod p]) u^5
+      graph  2 (E=1, gv=(2,)): (0) u^0 + (-1463/600000) u^1 + (4551/1562500) u^2 + ([1281757247905124977 mod p]) u^3 + ([1412143365679727226 mod p]) u^4 + ([1826345340957274270 mod p]) u^5
+      graph  3 (E=2, gv=(1,)): (0) u^0 + (0) u^1 + (-303/250000) u^2 + ([903101615346029296 mod p]) u^3 + ([1185288789562767730 mod p]) u^4 + ([699712293812812289 mod p]) u^5
+      graph  4 (E=3, gv=(0,)): (0) u^0 + (0) u^1 + (0) u^2 + (-27/125000) u^3 + (-387/1562500) u^4 + ([1071032947054462048 mod p]) u^5
+      graph  5 (E=1, gv=(1, 2)): (0) u^0 + ([1732103132445784212 mod p]) u^1 + ([360438532130462129 mod p]) u^2 + ([1460864258291709289 mod p]) u^3 + ([147283336191972142 mod p]) u^4 + ([1335594404659313028 mod p]) u^5
+      graph  6 (E=2, gv=(0, 2)): (0) u^0 + (0) u^1 + ([1670181075037654215 mod p]) u^2 + ([1804831271011091845 mod p]) u^3 + ([1507111668531402464 mod p]) u^4 + ([409728785728285632 mod p]) u^5
+      graph  7 (E=2, gv=(1, 1)): (0) u^0 + (0) u^1 + ([1999102657648864440 mod p]) u^2 + ([918641106436862038 mod p]) u^3 + ([2002627912811186720 mod p]) u^4 + ([662326185382961109 mod p]) u^5
+      graph  8 (E=2, gv=(1, 1)): (0) u^0 + (0) u^1 + ([1325209123882585438 mod p]) u^2 + ([2280567552060962653 mod p]) u^3 + ([1713955648927604291 mod p]) u^4 + ([2068287194091729281 mod p]) u^5
+      graph  9 (E=3, gv=(0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (587/562500) u^3 + ([305969084996554793 mod p]) u^4 + ([477441359577989290 mod p]) u^5
+      graph 10 (E=3, gv=(0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (-2797/3750000) u^3 + ([2054494647334587463 mod p]) u^4 + ([1962315270582167678 mod p]) u^5
+      graph 11 (E=3, gv=(0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (807/1250000) u^3 + ([540198917566576347 mod p]) u^4 + ([616212010534654850 mod p]) u^5
+      graph 12 (E=3, gv=(0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (-1319/7500000) u^3 + ([1619034418008235593 mod p]) u^4 + ([1608458700405941911 mod p]) u^5
+      graph 13 (E=4, gv=(0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + ([1706824914174151770 mod p]) u^4 + ([333337023762664746 mod p]) u^5
+      graph 14 (E=4, gv=(0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + ([1590815136177682241 mod p]) u^4 + ([1236805992489309647 mod p]) u^5
+      graph 15 (E=4, gv=(0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + ([101547776599268890 mod p]) u^4 + ([1640069216909610768 mod p]) u^5
+      graph 16 (E=4, gv=(0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + ([1640617852593153408 mod p]) u^4 + ([1760034599105650378 mod p]) u^5
+      graph 17 (E=2, gv=(1, 1, 1)): (0) u^0 + (0) u^1 + ([544666853744942450 mod p]) u^2 + ([1453797740847595564 mod p]) u^3 + ([1775863210570390313 mod p]) u^4 + ([1569684325076897295 mod p]) u^5
+      graph 18 (E=3, gv=(0, 1, 1)): (0) u^0 + (0) u^1 + (0) u^2 + ([1483737829163301549 mod p]) u^3 + ([1460047034436126694 mod p]) u^4 + ([994166918739984468 mod p]) u^5
+      graph 19 (E=3, gv=(0, 1, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (-59/1000000) u^3 + (-31/7500000) u^4 + ([57045251453213131 mod p]) u^5
+      graph 20 (E=3, gv=(0, 1, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (-79/2812500) u^3 + (-1/5625000) u^4 + ([347954046268001441 mod p]) u^5
+      graph 21 (E=4, gv=(0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + ([1505860968338136806 mod p]) u^4 + ([2183824917609317719 mod p]) u^5
+      graph 22 (E=4, gv=(0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (293/9375000) u^4 + ([1824882612804196386 mod p]) u^5
+      graph 23 (E=4, gv=(0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (-127/6250000) u^4 + ([771553087202947319 mod p]) u^5
+      graph 24 (E=4, gv=(0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (23/1875000) u^4 + ([129863172115360960 mod p]) u^5
+      graph 25 (E=4, gv=(0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + ([1875837783406757866 mod p]) u^4 + ([1210622089965927136 mod p]) u^5
+      graph 26 (E=4, gv=(0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (401/6250000) u^4 + ([1050149559028443881 mod p]) u^5
+      graph 27 (E=5, gv=(0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (-57/3125000) u^5
+      graph 28 (E=5, gv=(0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (-63/3125000) u^5
+      graph 29 (E=5, gv=(0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (-17/781250) u^5
+      graph 30 (E=5, gv=(0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (-69/3125000) u^5
+      graph 31 (E=5, gv=(0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (-153/6250000) u^5
+      graph 32 (E=3, gv=(0, 1, 1, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (-1/4050000) u^3 + ([18485089388936846 mod p]) u^4 + ([2132555609715781675 mod p]) u^5
+      graph 33 (E=4, gv=(0, 0, 1, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (1/750000) u^4 + (1/4500000) u^5
+      graph 34 (E=4, gv=(0, 0, 1, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (1/750000) u^4 + ([1210704598152892378 mod p]) u^5
+      graph 35 (E=5, gv=(0, 0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (-7/1875000) u^5
+      graph 36 (E=5, gv=(0, 0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (-3/625000) u^5
+      graph 37 (E=5, gv=(0, 0, 0, 1)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (-3/1250000) u^5
+      graph 38 (E=6, gv=(0, 0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (0) u^5
+      graph 39 (E=6, gv=(0, 0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (0) u^5
+      graph 40 (E=6, gv=(0, 0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (0) u^5
+      graph 41 (E=6, gv=(0, 0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (0) u^5
+      graph 42 (E=6, gv=(0, 0, 0, 0)): (0) u^0 + (0) u^1 + (0) u^2 + (0) u^3 + (0) u^4 + (0) u^5
+PASS pass A: [u^0] G_Gamma[M_0] = 0 for every edge graph (M_0 kills the leading t_c^-4 pole of every edge graph)
+PASS pass A: [u^k] G_Gamma[M_0] = 0 for k < E (an E-edge graph is O(u^E) since R' = 1 + O(u))
+   with M_0 alone: REGULAR edge graphs (O(u^4)): [13, 14, 15, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]; NOT regular: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 17, 18, 19, 20, 32]
+PASS pass A: every graph with >= 4 edges is regular with M_0 alone
+   non-regular graphs with M_0 (u^0..u^3): 2 (E=1): (0) u^0 + (-1463/600000) u^1 + (4551/1562500) u^2 + ([1281757247905124977 mod p]) u^3; 3 (E=2): (0) u^0 + (0) u^1 + (-303/250000) u^2 + ([903101615346029296 mod p]) u^3; 4 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + (-27/125000) u^3; 5 (E=1): (0) u^0 + ([1732103132445784212 mod p]) u^1 + ([360438532130462129 mod p]) u^2 + ([1460864258291709289 mod p]) u^3; 6 (E=2): (0) u^0 + (0) u^1 + ([1670181075037654215 mod p]) u^2 + ([1804831271011091845 mod p]) u^3; 7 (E=2): (0) u^0 + (0) u^1 + ([1999102657648864440 mod p]) u^2 + ([918641106436862038 mod p]) u^3; 8 (E=2): (0) u^0 + (0) u^1 + ([1325209123882585438 mod p]) u^2 + ([2280567552060962653 mod p]) u^3; 9 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + (587/562500) u^3; 10 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + (-2797/3750000) u^3; 11 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + (807/1250000) u^3; 12 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + (-1319/7500000) u^3; 17 (E=2): (0) u^0 + (0) u^1 + ([544666853744942450 mod p]) u^2 + ([1453797740847595564 mod p]) u^3; 18 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + ([1483737829163301549 mod p]) u^3; 19 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + (-59/1000000) u^3; 20 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + (-79/2812500) u^3; 32 (E=3): (0) u^0 + (0) u^1 + (0) u^2 + (-1/4050000) u^3
+PASS pass A: total = point-frame total through u^5 (M-independence)
+PASS pass A: vertex graph [u^0] = 1/25200 = (B_6/(6 . 4))/5 (the genus-3 gap coefficient): 1/25200
+   vertex graph with M_0 in t_c: (1/25200) t_c^-4 + ([54490932594760021 mod p]) t_c^-3 + ([390278375415870425 mod p]) t_c^-2 + ([1606418695315796369 mod p]) t_c^-1 + ([441277300516802261 mod p]) t_c^0
+--------------------------------------------------------------------------------------------------------------
+(3) frozen Jacobian J (75 directions, right placement) for the graphs with E <= 1
+      J directions 9/75 jobs done (321 s)
+      J directions 18/75 jobs done (326 s)
+      J directions 27/75 jobs done (627 s)
+      J directions 36/75 jobs done (637 s)
+      J directions 45/75 jobs done (929 s)
+      J directions 54/75 jobs done (942 s)
+      J directions 63/75 jobs done (950 s)
+      J directions 72/75 jobs done (1096 s)
+      J directions 75/75 jobs done (1098 s)
+   J: 75 directions x 7 nodes x 5 graphs in 1098 s; maximal eps-degree seen 6
+PASS J: eps-polynomials of degree <= 6 (= 3g-3; eps^6 is the last node-resolved power with 7 nodes: degree bound consistent)
+PASS J: constant terms = [u^0] G_Gamma[M_0] (pass A) for every direction and graph
+PASS J: D_N L_Gamma = 0 identically for the E = 2 control graphs [3, 6]
+PASS J: Sum over graphs (vertex + the two 1-edge graphs) = 0 (the frozen total is M-independent)
+PASS J: rank of the 2 x 75 matrix (rows graphs 2, 5) = 2
+      J[2]: 65 non-zero entries; first-block (k = 1) entries: ['11/400000', '[698486333296806359 mod p]', '[426006879749396850 mod p]', '[473143541936449083 mod p]', '[2161988522365807441 mod p]', '11/400000*zeta^1', '[1910360300483432225 mod p]', '[897062894365283647 mod p]', '[292405418945322008 mod p]', '11/400000*zeta^2', '[287439749071573668 mod p]', '[217224274217242363 mod p]', '11/400000*zeta^3', '[1859254122423462160 mod p]', '11/400000*zeta^4']
+      J[5]: 75 non-zero entries; first-block (k = 1) entries: ['[647971313910453090 mod p]', '[250567627122404674 mod p]', '[2230123556310776558 mod p]', '[2197466124012057910 mod p]', '[1082175877720702599 mod p]', '[952391081087112326 mod p]', '[1496981049757707926 mod p]', '[1424289568221805911 mod p]', '[679232019140332489 mod p]', '[724698225306803131 mod p]', '[536715532534033782 mod p]', '[386417759956108985 mod p]', '[1539075279782309827 mod p]', '[1245245931292538921 mod p]', '[747550118340709528 mod p]']
+   genus-2 J with the new machinery: 16 s
+   genus-2 J with the old code (fq_ou.jacobian_N): 31 s
+PASS genus-2 J: new machinery (75 coordinates) = old fq_ou.jacobian_N on the 40 genus-2 coordinates, graphs 1, 2, 4
+PASS genus-2 J: the 35 coordinates of zhat-orders 4, 5, 6 have zero entries (orders > 3 cannot enter at genus 2)
+--------------------------------------------------------------------------------------------------------------
+(4) the [u^1] systems on the classes cov / diag / circ / full, right and left placement
+   g1 (genus 3, M_0): graph 2 = -1463/600000, graph 5 = [1732103132445784212 mod p];  genus 2: 1/750, -13/8000
+   --- system g3: 2 equations ['graph 2 (loop on g2)', 'graph 5 (bridge g1-g2)']
+      g3:cov:right           matrix rows (b1, b3, b5): [['11/80000', '1/9600', '1/640'], ['[934013560338571499 mod p]', '59/384000', '-1/46080']]; rhs ['1463/600000', '[573739876767909739 mod p]']
+      g3:cov:right           solution (b1, b3, b5) = ['27664/2255', '36974/5125', '0']; free directions [['-41875/8118', '-2015/246', '1']]
+PASS g3:cov:right: rank 2, consistent, solution set of dimension 1
+      g3:cov:right           rank 2, consistent, solution set of dimension 1
+      g3:cov:left            matrix rows (b1, b3, b5): [['-1/2000', '0', '1/640'], ['-1/36000', '1/18000', '-1/46080']]; rhs ['1463/600000', '[573739876767909739 mod p]']
+      g3:cov:left            solution (b1, b3, b5) = ['-1463/300', '-2237459/60000', '0']; free directions [['25/8', '125/64', '1']]
+PASS g3:cov:left: rank 2, consistent, solution set of dimension 1
+      g3:cov:left            rank 2, consistent, solution set of dimension 1
+PASS g3:diag:right: rank 2, consistent, solution set of dimension 13
+      g3:diag:right          rank 2, consistent, solution set of dimension 13
+PASS g3:diag:left: rank 2, consistent, solution set of dimension 13
+      g3:diag:left           rank 2, consistent, solution set of dimension 13
+PASS g3:circ:right: rank 2, consistent, solution set of dimension 13
+      g3:circ:right          rank 2, consistent, solution set of dimension 13
+PASS g3:circ:left: rank 2, consistent, solution set of dimension 13
+      g3:circ:left           rank 2, consistent, solution set of dimension 13
+PASS g3:full:right: rank 2, consistent, solution set of dimension 73
+      g3:full:right          rank 2, consistent, solution set of dimension 73
+PASS g3:full:left: rank 2, consistent, solution set of dimension 73
+      g3:full:left           rank 2, consistent, solution set of dimension 73
+   --- system g2+g3: 4 equations ['genus-2 graph 2 (g1 loop)', 'genus-2 graph 4 (g1-g1)', 'graph 2 (loop on g2)', 'graph 5 (bridge g1-g2)']
+      g2+g3:cov:right        matrix rows (b1, b3, b5): [['-1/80', '-5/48', '0'], ['1/640', '5/1152', '0'], ['11/80000', '1/9600', '1/640'], ['[934013560338571499 mod p]', '59/384000', '-1/46080']]; rhs ['-1/750', '13/8000', '1463/600000', '[573739876767909739 mod p]']
+PASS g2+g3:cov:right: rank 3, INCONSISTENT
+      g2+g3:cov:right        rank 3, INCONSISTENT
+      g2+g3:cov:left         matrix rows (b1, b3, b5): [['-1/120', '-5/48', '0'], ['-1/1440', '5/1152', '0'], ['-1/2000', '0', '1/640'], ['-1/36000', '1/18000', '-1/46080']]; rhs ['-1/750', '13/8000', '1463/600000', '[573739876767909739 mod p]']
+PASS g2+g3:cov:left: rank 3, INCONSISTENT
+      g2+g3:cov:left         rank 3, INCONSISTENT
+PASS g2+g3:diag:right: rank 3, INCONSISTENT
+      g2+g3:diag:right       rank 3, INCONSISTENT
+PASS g2+g3:diag:left: rank 3, INCONSISTENT
+      g2+g3:diag:left        rank 3, INCONSISTENT
+PASS g2+g3:circ:right: rank 4, consistent, solution set of dimension 11
+      g2+g3:circ:right       rank 4, consistent, solution set of dimension 11
+PASS g2+g3:circ:left: rank 4, consistent, solution set of dimension 11
+      g2+g3:circ:left        rank 4, consistent, solution set of dimension 11
+PASS g2+g3:full:right: rank 4, consistent, solution set of dimension 71
+      g2+g3:full:right       rank 4, consistent, solution set of dimension 71
+PASS g2+g3:full:left: rank 4, consistent, solution set of dimension 71
+      g2+g3:full:left        rank 4, consistent, solution set of dimension 71
+total time 1549 s
+ALL CHECKS PASSED

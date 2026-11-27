@@ -1,0 +1,65 @@
+% Evidence appendix, part 1 of 3 (continued in parts 2 and 3); label prefix: evi. No new macros.
+\section{Evidence: finite computations}
+\label{sec:evi}
+
+Nothing in this appendix is a step of a proof: the proofs of the note are complete without it, and no proof refers to it. It records in tables some finite computations made while the statements were developed, with exact arithmetic over $\bbQ$ or $\bbQ(\zeta)$ or arithmetic modulo the primes named (a zero test modulo a prime is probabilistic); conifold frames are labelled by $(\alpha,\beta)$ as in \cref{def:set-frames}, $\varpi_0=f_0+\alpha\varpi_1+\beta f_2$.
+
+\subsection{Graph sums of genus 2 to 5}
+\label{sec:evi-graphs}
+
+The outer terms $T_\Gamma=u^{2-2g}G_\Gamma(u)$ (\cref{def:set-outer,lem:flh-hat}), with $M=\Mo(\tau(u)\zh)$, were computed for every leg-free stable graph of genus $2$ to $5$, modulo $2^{89}-1$ and $2^{61}-1$ with rational reconstruction, in the frames $(0,0)$ and $(1/3,-2/7)$; an edge graph is regular if and only if $G_\Gamma=O(u^{2g-2})$. At genus $4$ and $5$ the outer sum was obtained by regrouping the plain graph sum along the edges of $M$, a regrouping checked against genuine vertex tensors only at genus $2$ and $3$. With the bare symbol $\Mo(\zh)$ all $149$ edge graphs of genus $4$ with at most five edges are singular, and with $\tau$ replaced by $\tau+u^5$ exactly the three one-edge graphs of genus $4$ fail. The value $c_g$ and the gap of the total do not depend on $M$; only the regularity of the edge graphs tests the factorisation. The results are in \cref{tab:evi-g2,tab:evi-g3,tab:evi-g4,tab:evi-g5}.
+
+\begin{table}[ht]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{l|r|r|r}
+graph of genus $2$ & plain, $\coef{\tc^{-2}}$ & plain, $\coef{\tc^{-1}}$ & natural, at $u=0$\\ \hline
+one vertex of genus $2$ & $1807/3072000$ & $-791/15360000$ & $\tfrac{1}{1200}\tc^{-2}+O(1)$\\
+genus-$1$ vertex with a loop & $-811/256000$ & $-1771/3840000$ & $479/756000$\\
+genus-$0$ vertex with two loops & $-57/64000$ & $41/12800$ & $1/2250$\\
+two genus-$1$ vertices, one edge & $843/1024000$ & $743/15360000$ & $-127/2016000$\\
+genus $0$ with a loop, edge to genus $1$ & $3/51200$ & $-41/153600$ & $0$\\
+two genus-$0$ vertices, three edges & $87/32000$ & $37/160000$ & $0$\\
+two genus-$0$ vertices with loops, an edge & $9/12800$ & $-173/64000$ & $0$\\ \hline
+sum & $1/1200$ & $0$ & \\
+\end{tabular}
+\caption{Genus $2$, per stable graph, summed over colourings, in the frame $(0,0)$, modulo both primes: the polar coefficients of the plain graph sum of \cref{def:set-graphsum} (vertices the TFT $\TFT$), and the terms $T_\Gamma$ of the natural form at $u=0$ (in the frame $(1/3,-2/7)$, modulo $2^{89}-1$, the edge graphs are regular as well). The $115$ coloured graphs give identical tables at both primes.}
+\label{tab:evi-g2}
+\end{table}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{l|p{0.68\textwidth}}
+stable graphs & $42$; with $0,1,\dots,6$ edges: $1,2,5,9,12,8,5$\\
+edge graphs & all $41$ regular: frame $(0,0)$ modulo both primes, frame $(1/3,-2/7)$ modulo $2^{89}-1$\\
+vertex graph, $(0,0)$ & $u^{-4}\bigl(\tfrac{1}{25200}-\tfrac{u}{9000}+\tfrac{407u^2}{3780000}-\tfrac{151u^3}{3780000}+\dots\bigr)=\tfrac{1}{25200}\tc^{-4}+O(1)$\\
+vertex graph, $(1/3,-2/7)$ & $u^{-4}\bigl(\tfrac{1}{25200}-\tfrac{11u}{189000}+\dots\bigr)$, with the same polar part\\
+\end{tabular}
+\caption{Genus $3$, the natural form.}
+\label{tab:evi-g3}
+\end{table}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{l|p{0.72\textwidth}}
+stable graphs & $379$; with $0,1,\dots,9$ edges: $1,3,7,21,43,75,89,81,42,17$\\
+edge graphs & all $378$ regular, in both frames, modulo both primes\\
+total, $(0,0)$ & $u^{-6}\bigl(\tfrac{1}{180000}-\tfrac{7u}{300000}+\tfrac{701u^2}{18000000}-\tfrac{1459u^3}{45000000}+\tfrac{923639u^4}{67500000000}-\tfrac{171583u^5}{67500000000}\bigr)$ $=\tfrac{1}{180000}\tc^{-6}+O(1)$\\
+total, $(1/3,-2/7)$ & $u^{-6}\bigl(\tfrac{1}{180000}-\tfrac{11u}{900000}-\tfrac{79u^2}{378000000}+\dots\bigr)$, with the same polar part\\
+\end{tabular}
+\caption{Genus $4$, the natural form; $1/180000=c_4$.}
+\label{tab:evi-g4}
+\end{table}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{l|p{0.72\textwidth}}
+stable graphs & $4555$; with $0,1,\dots,12$ edges: $1,3,11,34,100,239,492,784,1002,926,632,260,71$\\
+edge graphs & all $4554$ regular: frame $(0,0)$ modulo both primes, frame $(1/3,-2/7)$ modulo $2^{89}-1$\\
+total, $(0,0)$ & $u^{-8}\bigl(\tfrac{1}{660000}-\tfrac{7u}{825000}+\tfrac{199u^2}{9900000}-\tfrac{717u^3}{27500000}+\tfrac{449357u^4}{22500000000}-\tfrac{5593217u^5}{618750000000}$ $+\tfrac{14686042363u^6}{6496875000000000}-\tfrac{8370858511u^7}{32484375000000000}\bigr)=\tfrac{1}{660000}\tc^{-8}+O(1)$, by the Chinese remainder theorem from both primes\\
+total, $(1/3,-2/7)$ & $u^{-8}\bigl(\tfrac{1}{660000}-\tfrac{u}{225000}+\tfrac{323u^2}{207900000}+\tfrac{66841u^3}{15592500000}-\dots\bigr)$, modulo both primes: different from the first at every order $u^1,\dots,u^7$, with the same polar part\\
+\end{tabular}
+\caption{Genus $5$, the natural form; $1/660000=c_5$.}
+\label{tab:evi-g5}
+\end{table}
+
+\input{sections/c_evidence_2}

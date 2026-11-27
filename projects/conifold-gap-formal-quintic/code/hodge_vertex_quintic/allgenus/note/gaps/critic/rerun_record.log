@@ -1,0 +1,13 @@
+rerun_record.log (key gaps/critic): scripts of the provers and referees copied to a scratch folder and re-run there;
+each new log compared with the stored log (carriage returns stripped; timing lines that two stored logs contain are ignored).
+  G1 g1_cyclic_check.py 30 12: identical; last line: TOTAL: 0 unexpected result(s)
+  G1 referee ref_g1_loc.py: identical; last line: TOTAL: 0 unexpected result(s)
+  G1 referee ref_g1_model.py: identical; last line: TOTAL: 0 unexpected result(s)
+  G2 referee ref_wkb_run.py 6 10: identical; last line: RESULT: ALL CHECKS PASSED
+  G3 referee r3_frames.py 60: identical; last line: RESULT: ALL CHECKS PASSED
+  G4 g4_w11.py: identical; last line: ALL CHECKS PASSED
+  G4 g4_period.py 5: identical; last line: ALL CHECKS PASSED
+  G4 referee rf4_check_b.py: identical; last line: ALL CHECKS PASSED
+  G5 referee ref5_item4.py 40: identical; last line: [P + z^2 (1-x^5) x^-2] hatted solver: first obstruction (n, 
+  G5 referee ref5_item1.py 12 12: identical; last line: (c) PF5^L (L c) = 0 through z^7, 3 points: True;  control wi
+  critic_checks.py (own, this folder): see critic_checks.log

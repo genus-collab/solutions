@@ -1,0 +1,13 @@
+g5_degree_bound: N = 30, exact over Q, colour 0
+(A) P_0 = 0 on x^m, -25 <= m <= 40: True
+(B) P_j(x^m) divisible by (1 - x^5), j = 1..5: True
+(C) P_j(x^m) in x Q[x] for 1 <= m <= 40: True
+(D) Pi(x^m) in x^6 Q[x][z] for 1 <= m <= 40: True
+(T) P_1 x^m = (1 - m)(x^(m-1) - x^(m+4)): True
+(R) free coefficients 0: rho_n in x Q[x], resonance trivial, psi_n in x Q[x], deg <= 4n+1, n <= 30: True
+(H) free coefficients 0: psi_n = x^(4n+1) ph_n(x^-5) with HPF ph_n, deg ph_n <= floor(4n/5): True True
+(R) free coefficients f_m = (-1)^m (2m+3)/7: rho_n in x Q[x], resonance trivial, psi_n in x Q[x], deg <= 4n+1, n <= 30: True
+(H) free coefficients f_m = (-1)^m (2m+3)/7: psi_n = x^(4n+1) ph_n(x^-5) with HPF ph_n, deg ph_n <= floor(4n/5): True True
+first HPF polynomial ph_5 (free coefficient 0): [Fraction(47735919, 128000000), Fraction(-203511, 250000), Fraction(548547, 1000000), Fraction(-6789, 62500)]
+(X1) control psi_0 = x + x^-4: steps with rho_n not in x Q[x] or obstructed resonance: [1, 2, 3, 4, 5, 6] (must be non-empty); obstructed resonances (x^0 term of rho_n != 0) at n = [5, 10] ; min x-exponent of rho_1..rho_4: [-6, -7, -8, -9]
+(X2) control KS = (1,2,3,4,10): P_1 x^3 = {7: Fraction(1, 1), 2: Fraction(-1, 1)} ; valuation property "P_j(x^m) in x^2 Q[x] for m >= 2": False (must be False)

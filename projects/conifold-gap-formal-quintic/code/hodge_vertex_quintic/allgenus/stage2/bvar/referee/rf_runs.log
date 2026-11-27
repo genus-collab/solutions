@@ -1,0 +1,195 @@
+rf_runs.log -- summary of the referee runs (2026-11-14). Full logs and json tables: scratch folder allgenus_s2_bvar_ref.
+== rf_run.py (one line per run; genus 2/3 windows K = 2g, genus 4 K = 6) ==
+RF_RUN R0_g2_61_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_R0_g2_61_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN R0_g2_89_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_R0_g2_89_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN R0_g3_61_canon_none_k6: singular none; vertex law holds; 11 s
+      worker table tab_R0_g3_61_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN R0_g3_89_canon_none_k6: singular none; vertex law holds; 10 s
+      worker table tab_R0_g3_89_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S1_g2_61_canon_dress0_k4: singular [1, 2, 3, 4, 5, 6]; vertex law holds; 4 s
+RF_RUN S1_g2_61_canon_dress2_k4: singular none; vertex law holds; 4 s
+RF_RUN S1_g2_61_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S1_g2_61_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S1_g2_61_canon_staleHat_k4: singular none; vertex law FAILS; 6 s
+RF_RUN S1_g2_61_canon_staleM_k4: singular [1, 2]; vertex law FAILS; 12 s
+RF_RUN S1_g2_89_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S1_g2_89_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S1_g2_89_canon_staleM_k4: singular [1, 2]; vertex law FAILS; 12 s
+      worker table tab_S1_g2_89_canon_staleM_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S1_g3_61_canon_dress0_k6: singular [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]; vertex law holds; 11 s
+RF_RUN S1_g3_61_canon_dress2_k6: singular [1, 2, 3]; vertex law holds; 10 s
+RF_RUN S1_g3_61_canon_none_k6: singular none; vertex law holds; 12 s
+      worker table tab_S1_g3_61_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S1_g3_61_canon_staleHat_k6: singular [1, 2]; vertex law FAILS; 12 s
+RF_RUN S1_g3_61_canon_staleM_k6: singular [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]; vertex law FAILS; 22 s
+RF_RUN S1_g3_89_canon_dress0_k6: singular [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]; vertex law holds; 11 s
+      worker table tab_S1_g3_89_canon_dress0_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S1_g3_89_canon_none_k6: singular none; vertex law holds; 12 s
+      worker table tab_S1_g3_89_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S2_g2_61_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S2_g2_61_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S2_g2_89_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S2_g2_89_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S2_g3_61_canon_none_k6: singular none; vertex law holds; 12 s
+      worker table tab_S2_g3_61_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S2_g3_89_canon_none_k6: singular none; vertex law holds; 11 s
+      worker table tab_S2_g3_89_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S2_g4_61_canon_none_out2_k6: singular none; vertex law holds; 198 s
+RF_RUN S2_g4_61_stored_none_out2_k6: singular [1, 2, 3, 4, 7, 8]; vertex law FAILS; 194 s
+RF_RUN S3_g2_61_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S3_g2_61_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S3_g2_89_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S3_g2_89_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S3_g3_61_canon_none_k6: singular none; vertex law holds; 12 s
+      worker table tab_S3_g3_61_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S3_g3_89_canon_none_k6: singular none; vertex law holds; 12 s
+      worker table tab_S3_g3_89_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S3_g4_89_canon_none_out2_k6: singular none; vertex law holds; 183 s
+      worker table tab_S3_g4_89_canon_none_out2.json: IDENTICAL on all 11 graphs in range (all K = 6 coefficients)
+RF_RUN S4_g2_61_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S4_g2_61_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S4_g2_89_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S4_g2_89_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S4_g3_61_canon_none_k6: singular none; vertex law holds; 11 s
+      worker table tab_S4_g3_61_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S4_g3_89_canon_none_k6: singular none; vertex law holds; 11 s
+      worker table tab_S4_g3_89_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S4_g4_61_canon_none_out2_k6: singular none; vertex law holds; 193 s
+RF_RUN S5_g2_61_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S5_g2_61_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S5_g2_89_canon_none_k4: singular none; vertex law holds; 5 s
+      worker table tab_S5_g2_89_canon_none_k4.json: IDENTICAL on all 7 graphs in range (all K = 4 coefficients)
+RF_RUN S5_g3_61_canon_none_k6: singular none; vertex law holds; 10 s
+      worker table tab_S5_g3_61_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S5_g3_89_canon_none_k6: singular none; vertex law holds; 10 s
+      worker table tab_S5_g3_89_canon_none_k6.json: IDENTICAL on all 42 graphs in range (all K = 6 coefficients)
+RF_RUN S6_g2_61_canon_dress0_k4: singular [1, 2, 3, 4, 5, 6]; vertex law holds; 5 s
+RF_RUN S6_g2_61_canon_none_k4: singular none; vertex law holds; 5 s
+RF_RUN S6_g2_61_canon_staleHat_k4: singular none; vertex law FAILS; 7 s
+RF_RUN S6_g2_61_canon_staleM_k4: singular [1, 2, 3, 4, 5, 6]; vertex law FAILS; 12 s
+RF_RUN S6_g2_89_canon_none_k4: singular none; vertex law holds; 5 s
+RF_RUN S6_g3_61_canon_dress0_k6: singular [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]; vertex law holds; 12 s
+RF_RUN S6_g3_61_canon_dress2_k6: singular [1, 2, 3]; vertex law holds; 10 s
+RF_RUN S6_g3_61_canon_none_k6: singular none; vertex law holds; 10 s
+RF_RUN S6_g3_61_canon_staleHat_k6: singular [1, 2, 3]; vertex law FAILS; 13 s
+RF_RUN S6_g3_61_canon_staleM_k6: singular [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]; vertex law FAILS; 26 s
+RF_RUN S6_g3_89_canon_none_k6: singular none; vertex law holds; 10 s
+RF_RUN S6_g4_61_canon_none_out2_k6: singular none; vertex law holds; 206 s
+RF_RUN S7_g2_61_canon_none_k4: singular none; vertex law holds; 4 s
+RF_RUN S7_g2_89_canon_none_k4: singular none; vertex law holds; 4 s
+RF_RUN S7_g3_61_canon_none_k6: singular none; vertex law holds; 10 s
+RF_RUN S7_g3_89_canon_none_k6: singular none; vertex law holds; 10 s
+RF_RUN S7_g4_61_canon_none_k6: singular none; vertex law holds; 486 s
+RF_RUN S8_g2_61_canon_none_k4: singular none; vertex law holds; 1 s
+RF_RUN S8_g2_89_canon_none_k4: singular none; vertex law holds; 1 s
+RF_RUN S8_g3_61_canon_none_k6: singular none; vertex law holds; 5 s
+RF_RUN S8_g3_89_canon_none_k6: singular none; vertex law holds; 5 s
+== rf_extra.py ==
+S8 rows = project (quintic) rows: True
+   rows symplectic: True;  R0 regression (rows = project rows): n/a
+RF_EXTRA branch g2 61: S8 tables = R0 tables on every graph: True
+S8 rows = project (quintic) rows: True
+   rows symplectic: True;  R0 regression (rows = project rows): n/a
+RF_EXTRA branch g3 61: S8 tables = R0 tables on every graph: True
+S8 rows = project (quintic) rows: True
+   rows symplectic: True;  R0 regression (rows = project rows): n/a
+RF_EXTRA branch g3 89: S8 tables = R0 tables on every graph: True
+S8 rows = project (quintic) rows: True
+   rows symplectic: True;  R0 regression (rows = project rows): n/a
+RF_EXTRA branch g2 89: S8 tables = R0 tables on every graph: True
+RF_EXTRA staleboth S1 g2 61: rows symplectic True; singular edge graphs none; vertex ['1/1200', '1/16200']; total ['1/1200', '1/16200']
+RF_EXTRA staleboth S1 g3 61: rows symplectic True; singular edge graphs [1, 2]; vertex ['1/25200', '1/170100', '[649032284897827345 mod p]', '[506986854466055238 mod p]']; total ['1/25200', '1/170100', '[649032284897827345 mod p]', '[1001484049384627135 mod p]']
+RF_EXTRA rows4 R0 89: symplectic mod (zhat^10, u^6) True; = project rows True
+RF_EXTRA rows4 S1 89: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S2 89: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S3 89: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S4 89: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S5 89: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S6 89: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S7 89: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 R0 61: symplectic mod (zhat^10, u^6) True; = project rows True
+RF_EXTRA rows4 S1 61: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S2 61: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S3 61: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S4 61: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S5 61: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S6 61: symplectic mod (zhat^10, u^6) True; = project rows False
+RF_EXTRA rows4 S7 61: symplectic mod (zhat^10, u^6) True; = project rows False
+nosig: RF_RUN S5_g2_61_canon_none_k4: singular [1, 2, 3, 4, 5, 6]; vertex law holds; 5 s
+nosig: RF_RUN S5_g3_61_canon_none_k6: singular [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]; vertex law holds; 12 s
+S2 m5 = 319129204271/48787200000
+   graph 0 [0, [4]]: (stored - canon)/m5 = ['0', '0', '0', '0', '-1/8400000', '[1656425429510707334 mod p]']
+   graph 1 [1, [1, 3]]: (stored - canon)/m5 = ['0', '0', '0', '0', '-1/1008000', '[547122619386109585 mod p]']
+   graph 2 [1, [2, 2]]: (stored - canon)/m5 = ['0', '0', '0', '0', '1/900000', '[102294960316877032 mod p]']
+   graph 3 [1, [3]]: (stored - canon)/m5 = ['0', '0', '0', '0', '0', '1/5040000']
+   graph 4 [2, [0, 3]]: (stored - canon)/m5 = ['0', '0', '0', '0', '0', '-1/1512000']
+   graph 7 [2, [1, 2]]: (stored - canon)/m5 = ['0', '0', '0', '0', '0', '[1067685804267280444 mod p]']
+   graph 8 [2, [1, 2]]: (stored - canon)/m5 = ['0', '0', '0', '0', '0', '-17/2700000']
+RF_EXTRA norm S2 g4 61: sum over graphs (<= 2 edges) = ['0', '0', '0', '0', '0', '0']
+genus 2 S1: 6 of 6 outer graphs differ from R0 in u^0..u^3
+genus 2 S2: 6 of 6 outer graphs differ from R0 in u^0..u^3
+genus 2 S3: 6 of 6 outer graphs differ from R0 in u^0..u^3
+genus 2 S4: 6 of 6 outer graphs differ from R0 in u^0..u^3
+genus 2 S5: 6 of 6 outer graphs differ from R0 in u^0..u^3
+genus 2 S6: 6 of 6 outer graphs differ from R0 in u^0..u^3
+genus 2 S7: 6 of 6 outer graphs differ from R0 in u^0..u^3
+genus 3 S1: 25 of 26 outer graphs differ from R0 in u^0..u^5
+genus 3 S2: 25 of 26 outer graphs differ from R0 in u^0..u^5
+genus 3 S3: 25 of 26 outer graphs differ from R0 in u^0..u^5
+genus 3 S4: 25 of 26 outer graphs differ from R0 in u^0..u^5
+genus 3 S5: 25 of 26 outer graphs differ from R0 in u^0..u^5
+genus 3 S6: 25 of 26 outer graphs differ from R0 in u^0..u^5
+genus 3 S7: 25 of 26 outer graphs differ from R0 in u^0..u^5
+== rf_reparam.py ==
+S1: phi = (1)u^1 + (-1/27)u^2 + (1408/35721)u^3 + (-192484/18324873)u^4 + (815675989/96975227916)u^5 + O(u^30);  phi'^5 B_X(phi) = B_q: True
+   univ pipeline: C = 1, sigma = 1, c0 = 1
+   graph by graph, w^(2g-2) V~_i(w) = (phi/w)^(2-2g) G_i(phi(w)) mod w^4: ALL EQUAL (7 graphs, 6 non-zero)
+   univ-pipeline run of the pulled-back system: singular edge graphs none; vertex in T~'' ['1/1200', '0'] (c_g = 1/1200)
+RF_REPARAM S1 g2 61: PASS, 8 s
+S1: phi = (1)u^1 + (-1/27)u^2 + (1408/35721)u^3 + (-192484/18324873)u^4 + (815675989/96975227916)u^5 + O(u^30);  phi'^5 B_X(phi) = B_q: True
+   univ pipeline: C = 1, sigma = 1, c0 = 1
+   graph by graph, w^(2g-2) V~_i(w) = (phi/w)^(2-2g) G_i(phi(w)) mod w^6: ALL EQUAL (42 graphs, 25 non-zero)
+   univ-pipeline run of the pulled-back system: singular edge graphs none; vertex in T~'' ['1/25200', '0', '0', '0'] (c_g = 1/25200)
+RF_REPARAM S1 g3 61: PASS, 14 s
+S4: phi = (1)u^1 + (-5/18)u^2 + (355/2268)u^3 + (40561/110808)u^4 + (-472518479/390930624)u^5 + O(u^30);  phi'^5 B_X(phi) = B_q: True
+   univ pipeline: C = 1, sigma = 1, c0 = 1
+   graph by graph, w^(2g-2) V~_i(w) = (phi/w)^(2-2g) G_i(phi(w)) mod w^6: ALL EQUAL (42 graphs, 25 non-zero)
+   univ-pipeline run of the pulled-back system: singular edge graphs none; vertex in T~'' ['1/25200', '0', '0', '0'] (c_g = 1/25200)
+RF_REPARAM S4 g3 61: PASS, 14 s
+S5: phi = (1/32)u^1 + (29/1728)u^2 + (3362767/292626432)u^3 + (84012747853/9607511015424)u^4 + (45947452469745803/6507897381583847424)u^5 + O(u^30);  phi'^5 B_X(phi) = B_q: True
+   univ pipeline: C = 1/1024, sigma = 32, c0 = 1024
+   graph by graph, w^(2g-2) V~_i(w) = (phi/w)^(2-2g) G_i(phi(w)) mod w^6: ALL EQUAL (42 graphs, 25 non-zero)
+   univ-pipeline run of the pulled-back system: singular edge graphs none; vertex in T~'' ['1/25200', '0', '0', '0'] (c_g = 1/25200)
+RF_REPARAM S5 g3 61: PASS, 15 s
+S6: phi = (1/243)u^1 + (18163/7971615)u^2 + (20349800167/12813932673675)u^3 + (223397633298979/182556803790588780)u^4 + (12808692131912286214186/12838438439275880439185625)u^5 + O(u^30);  phi'^5 B_X(phi) = B_q: True
+   univ pipeline: C = 1/59049, sigma = 243, c0 = 59049/2
+   graph by graph, w^(2g-2) V~_i(w) = (phi/w)^(2-2g) G_i(phi(w)) mod w^6: ALL EQUAL (42 graphs, 25 non-zero)
+   univ-pipeline run of the pulled-back system: singular edge graphs none; vertex in T~'' ['1/25200', '0', '0', '0'] (c_g = 1/25200)
+RF_REPARAM S6 g3 61: PASS, 15 s
+S7: phi = (1)u^1 + (-1/9)u^2 + (23/1134)u^3 + (1675/193914)u^4 + (168961/24433164)u^5 + O(u^30);  phi'^5 B_X(phi) = B_q: True
+   univ pipeline: C = 16/9, sigma = 3/4, c0 = -21/20
+   graph by graph, w^(2g-2) V~_i(w) = (phi/w)^(2-2g) G_i(phi(w)) mod w^6: ALL EQUAL (42 graphs, 25 non-zero)
+   univ-pipeline run of the pulled-back system: singular edge graphs none; vertex in T~'' ['1/25200', '0', '0', '0'] (c_g = 1/25200)
+RF_REPARAM S7 g3 89: PASS, 14 s
+== rf_indep2.py ==
+indep engine S5_g3_61: 41 edge graphs in range, singular none; vertex in T'' ['1/25200', '0', '0', '0'] (law holds); vs un_engine run: multiset of per-graph series IDENTICAL
+indep engine S6_g2_89: 6 edge graphs in range, singular none; vertex in T'' ['1/1200', '0'] (law holds); vs un_engine run: multiset of per-graph series IDENTICAL
+indep engine S7_g3_61: 41 edge graphs in range, singular none; vertex in T'' ['1/25200', '0', '0', '0'] (law holds); vs un_engine run: multiset of per-graph series IDENTICAL
+indep engine S6_g4_61_out2: 10 edge graphs in range, singular none; vertex in T'' ['1/180000', '0', '0', '0', '0', '0'] (law holds); vs un_engine run: multiset of per-graph series IDENTICAL; graph by graph IDENTICAL
+indep engine S2_g4_89: 378 edge graphs in range, singular none; vertex in T'' ['1/180000', '0', '0', '0', '0', '0'] (law holds); vs WORKER table tab_S2_g4_89_canon_none.json: IDENTICAL on all 379 graphs
+== dress2 (rf_run.py --ctrl dress2) ==
+ graph 1 (1, [1, 2]): polar ['0', '0', '1/252000', '-11/1134000']
+ graph 2 (1, [2]): polar ['0', '0', '1/14000', '-1/5000']
+ graph 3 (2, [0, 2]): polar ['0', '0', '0', '17/2835000']
+RF_RUN S1_g3_61_canon_dress2_k6: singular [1, 2, 3]; vertex law holds; 10 s
+ graph 1 (1, [1, 2]): polar ['0', '0', '[50123898694938420 mod p]', '[917199947688706017 mod p]']
+ graph 2 (1, [2]): polar ['0', '0', '[902230176508891560 mod p]', '[581724563354338934 mod p]']
+ graph 3 (2, [0, 2]): polar ['0', '0', '0', '[1028240524700485779 mod p]']
+RF_RUN S6_g3_61_canon_dress2_k6: singular [1, 2, 3]; vertex law holds; 10 s
+RF_RUN S1_g2_61_canon_dress2_k4: singular none; vertex law holds; 4 s
+== disclosure: first S8 branch run (float bug in the referee's own sign patch; superseded) ==
+RF_EXTRA branch g2 61: S8 tables = R0 tables on every graph: False
+RF_EXTRA branch g3 61: S8 tables = R0 tables on every graph: False
+RF_EXTRA branch g3 89: S8 tables = R0 tables on every graph: False

@@ -1,0 +1,46 @@
+% Abridged version, Section 9: the main theorem, Corollary B, complements.
+\section{The main theorem}
+\label{sec:mai}
+
+A conifold frame of \cref{def:set-frames} is fixed, and $M=\Mo(\tau(u)\zh)$ is taken exactly in $u$. This section follows \Lr{sec:mai,sec:cmp}.
+
+\begin{thm}[Theorem A; {\Lr{thm:mai-main}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:mai-main}
+The statement of \cref{thm:int-main} holds: for every $g\geq2$, every conifold frame and every leg-free stable graph $\Gamma$ of genus $g$, the outer term $T_\Gamma$ of \cref{def:set-outer} lies in $\bbQ\fps u$ if $\Gamma$ has at least one edge, and in $c_g\,\tc^{2-2g}+\bbQ\fps u$ if $\Gamma$ is the vertex graph. The hatted terms are $G_\Gamma=u^{2g-2}T_\Gamma$.
+\end{thm}
+
+\begin{proof}[Proof, given the results of \cref{sec:gau,sec:tra,sec:mod,sec:flh,sec:con,sec:gam}]
+Fix $g\geq2$ and the frame. By \cref{thm:gam-D}, $\Dn_0=1$ in $\bbQ\fps z$; in particular $\Fg{g}$ holds. By the comparison theorem, \cref{thm:flh-main}, $T_\Gamma=F_\Gamma$ for every leg-free stable graph $\Gamma$ of genus $g$, where $F_\Gamma$ is the term of $\Gamma$ in the flat sum of $\Pc.\Omega^{\mathrm{mod}}_{v(u)}$. By \cref{thm:mod-MLK} the Model Lemma $\ML{h}$ holds for every $h\geq0$. So \cref{thm:red-main} applies to $\Pc$: since $\ML{h}$ holds for $h\leq g-1$, $F_\Gamma$ lies in $\bbQ\fps u$ for every $\Gamma$ with an edge; since $\ML{g}$ holds as well, the vertex graph gives $F_\Gamma\in c_g\tc^{2-2g}+\bbQ\fps u$, the leaf point of $\Pc$ having the vanishing coordinate $T_{\Pc}=\tc$ (\cref{prop:tra-can}). The last sentence is \cref{lem:flh-hat}~(iv).
+\end{proof}
+
+A priori $T_\Gamma\in\bbQ(\zeta)\lser s$. Theorem~A, and Corollary~B below, hold modulo (Q), (QRR), (M), (G0), (T) and \cite[(1.7)]{AC96} (\cref{sec:int-inputs}).
+
+\emph{The conifold expansion of $F_g$.} To expand $F_g$ at the conifold point we use its graph-sum representative in $\Nring$. In $\Nring\otimes\bbQ(\zeta)$ the constant term $\Psi_{\mathrm Q}:=\Qr|_{z=0}$ has the entries $(\Psi_{\mathrm Q})_{aj}=\zeta^{j(a+1)}\mathfrak m_a$ with $(\mathfrak m_0,\dots,\mathfrak m_4)=\bigl(L/C_0,\,L^2/(C_0C_1),\,C_0C_1/L^2,\,C_0/L,\,1\bigr)$, and $\Psi_{\mathrm Q}^T\eta^{-1}\Psi_{\mathrm Q}=1$ \Lr{lem:mai-Psi}.
+
+\begin{defn}[The genus-$g$ sum in the ring and its conifold expansion; {\Lr{def:mai-Fcf}}]
+\label{def:mai-Fcf}
+Put $\tilde R:=\Psi_{\mathrm Q}^{-1}\Qr=\Psi_{\mathrm Q}^T\eta^{-1}\Qr$, the $R$-matrix in Teleman's colour-colour form, a series over $\Nring\otimes\bbQ(\zeta)$ with $\tilde R(0)=1$. For a matrix series $X(z)$ with $X(0)=1$ let $N_X(\psi,\psi'):=1-X^{-1}(\psi)X^{-1}(\psi')^T$ and
+\[
+E_X(\psi,\psi'):=\frac{N_X(\psi,\psi')-\frac12N_X(-\psi',\psi')-\frac12N_X(\psi,-\psi)}{\psi+\psi'} ,
+\]
+a power series for every $X$, which is the edge of \cite[Def.~2.2]{PPZ15} when $X(-z)^TX(z)=1$. With the leaf point $q_{\tilde R}=\tilde R^{-1}(z)(-z1_{\TFT})$, define
+\[
+F_g^{\Nring}:=\sum_\Gamma\mathrm{Cont}_\Gamma\bigl[E_{\tilde R},q_{\tilde R};\TFT\bigr]\in\Nring\otimes\bbQ(\zeta),
+\]
+the sum over the leg-free stable graphs of genus $g$. The \emph{conifold expansion} of $F_g$ in the frame $(\alpha,\beta)$ is $F_g^{\mathrm{cf}}:=\Cexp_{\alpha,\beta}\bigl(F_g^{\Nring}\bigr)\in\bbQ\lser s$.
+\end{defn}
+
+The definition is justified by three facts \Lr{def:mai-Fcf}: $F_g^{\Nring}$ is a polynomial over $\bbQ$ in finitely many row coefficients, in $\Delta_i^{\pm1/2}$ and in $\zeta$; it lies in $\Nring$, because the Galois group of $\bbQ(\zeta)$ permutes the colours; and $\ev(F_g^{\Nring})=F_g$, because under $\ev$ the matrix $\tilde R$ becomes the symplectic $R$-matrix of \cref{def:set-rows}, so that the graph sum is the potential by (T), with the normalisation (QRR). The symplecticity of $\tilde R$ is not known in $\Nring\otimes\bbQ(\zeta)$.
+
+\begin{cor}[Corollary B: the conifold gap of the formal quintic; {\Lr{cor:mai-gap}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:mai-gap}
+Let $g\geq2$. In every conifold frame of \cref{def:set-frames}, $F_g^{\mathrm{cf}}\in c_g\,\tc^{2-2g}+\bbQ\fps u$.
+\end{cor}
+
+\begin{sketch}
+The conifold expansion is a ring homomorphism, and the edge $E_X$ commutes with ring homomorphisms; so $F_g^{\mathrm{cf}}$ is the graph sum of $\Cexp(\tilde R)$ on $\Cexp(\TFT)$. Since $\Dn=1$ (\cref{thm:gam-D}), $R'$ is symplectic (\cref{lem:flh-inputs}~(iii)), hence so are $\Cexp(\Qr)=R'M$ and $\Cexp(\tilde R)$: after the conifold expansion the graph sum is the integral over $\overline{\mathcal M}_g$ of the genus-$g$ class of the unit-preserving action $\Cexp(\tilde R).\Cexp(\TFT)$. Now $X:=\Cexp(\tilde R)M^{-1}$ is symplectic with $X(0)=1$, and by the group property of the action \cite[Prop.~2.14]{PPZ15}, $\Cexp(\tilde R).\Cexp(\TFT)=X.\bigl(M.\Cexp(\TFT)\bigr)$. The genus-$g$ part without legs of the right side is the outer graph sum, $\sum_\Gamma T_\Gamma$ (\cref{def:set-outer}). \Cref{thm:mai-main} gives the claim, the sum over $\Gamma$ being finite.
+\end{sketch}
+
+ 
+
+\emph{Complements} \Lr{sec:cmp}. After $\Dn=1$ the hatted rows factorise as $\hat\Qr(u,\zh)=\Ghat(u,\zh)\,\Rhat^{\mathrm m}(\tau(u)\zh)$ with a hatted gauge $\Ghat$ regular at $u=0$, so that the conifold symbol $\hat\Qr(0,\zh)$ of the formal quintic is that of the model \Lr{cor:mai-natfact}; and the flat half of the proof applies, suitably normalised, to every self-dual one-pole system over $\bbQ\fps u$ whose product is that of a pulled-back model \Lr{cor:mai-univ}.

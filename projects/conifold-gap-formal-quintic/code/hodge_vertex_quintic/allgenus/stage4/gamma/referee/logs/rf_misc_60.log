@@ -1,0 +1,6 @@
+PASS (M1) Gamma_St(y+1) = y Gamma_St(y) as formal series in 1/y, through v^60
+PASS (M1) control: perturbed series is detected
+PASS (M2) Sum_j (zeta^j x - 1)^(-m) = (-1)^m 5 Sum_(5|r) C(m-1+r, r) x^r, m < 30, through x^60 (Newton recurrence)
+PASS (M3) ((-W''(s))^(-1/2) A(s;0))^2 = L^2/5 at s = 1/2, 1/3, 2/3, -1/4, 3/2 (so the saddle prefactor is 5^(-1/2) L)
+PASS (M4) saddle series: Newton-sum route = explicit 5th roots of unity in F_p61 + composition, L = 2, 7/5, through z^14; a non-root 'zeta' differs
+RF_MISC 60: ALL CHECKS PASSED

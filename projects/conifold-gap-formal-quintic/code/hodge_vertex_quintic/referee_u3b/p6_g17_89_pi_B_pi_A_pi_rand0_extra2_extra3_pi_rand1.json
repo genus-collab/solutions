@@ -1,0 +1,107 @@
+{
+ "pi_B": {
+  "N1_conditions_violated": [],
+  "zero_rows": [
+   6,
+   17
+  ],
+  "graphs": {
+   "6": {
+    "nonzero_orders": [
+     4,
+     5
+    ],
+    "u3_is_zero": true,
+    "sec": 2
+   },
+   "17": {
+    "nonzero_orders": [
+     4,
+     5
+    ],
+    "u3_is_zero": true,
+    "sec": 0
+   }
+  }
+ },
+ "pi_A": {
+  "N1_conditions_violated": [],
+  "zero_rows": [
+   17
+  ],
+  "graphs": {
+   "17": {
+    "nonzero_orders": [
+     4,
+     5
+    ],
+    "u3_is_zero": true,
+    "sec": 1
+   }
+  }
+ },
+ "pi_rand0": {
+  "N1_conditions_violated": [],
+  "zero_rows": [
+   17
+  ],
+  "graphs": {
+   "17": {
+    "nonzero_orders": [
+     4,
+     5
+    ],
+    "u3_is_zero": true,
+    "sec": 0
+   }
+  }
+ },
+ "extra2": {
+  "N1_conditions_violated": [],
+  "zero_rows": [
+   17
+  ],
+  "graphs": {
+   "17": {
+    "nonzero_orders": [
+     4,
+     5
+    ],
+    "u3_is_zero": true,
+    "sec": 1
+   }
+  }
+ },
+ "extra3": {
+  "N1_conditions_violated": [],
+  "zero_rows": [
+   17
+  ],
+  "graphs": {
+   "17": {
+    "nonzero_orders": [
+     4,
+     5
+    ],
+    "u3_is_zero": true,
+    "sec": 1
+   }
+  }
+ },
+ "pi_rand1": {
+  "N1_conditions_violated": [],
+  "zero_rows": [
+   17
+  ],
+  "graphs": {
+   "17": {
+    "nonzero_orders": [
+     4,
+     5
+    ],
+    "u3_is_zero": true,
+    "sec": 1
+   }
+  }
+ }
+}

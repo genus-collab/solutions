@@ -1,0 +1,62 @@
+% Abridged version, Section 6: the comparison of the flat and the outer graph sums.
+\section{Flat and outer graph sums}
+\label{sec:flh}
+
+This section compares the outer terms $T_\Gamma$ of the natural form (\cref{def:set-outer}) with the flat terms $F_\Gamma$ (\cref{def:red-flatsum}).
+The argument is graph by graph; it uses no total potential and no topological recursion. This section follows \Lr{sec:flh}. A conifold frame is fixed, $M:=\Mo(\tau(u)\zh)$ is read, exactly in $u$, as a power series in $z$ over $\bbQ(\zeta)\lser s$, and $R':=\Qr M^{-1}$.
+
+Both sides are instances of one definition \Lr{def:flh-outer}. Let $\cA$ be $\bbQ\fps u$ or $\bbQ(\zeta)\lser s$, let $(\mathbb V,\eta,1)$ and $(\mathbb V',\eta',1')$ be free $\cA$-modules of the same finite rank with perfect pairings and distinguished elements, $\Omega$ a cohomological field theory with flat unit $1$ on $\mathbb V$, and $O(z)=\sum_{k\geq0}O_kz^k$, $O_k\colon\mathbb V\to\mathbb V'$, a symplectic series, $O(-z)^*O(z)=1$, with
+\[
+\text{(unit)}\qquad O_0^{-1}1'=\varkappa^{-1}1\quad\text{for a unit }\varkappa\text{ of }\cA .
+\]
+Its edge and leaf point are $E_O(\psi,\psi'):=\bigl(\eta^{-1}-(O^{-1}(\psi)\otimes O^{-1}(\psi'))\eta'^{-1}\bigr)/(\psi+\psi')$ and $q_O(z):=O^{-1}(z)(-z1')$, and $\mathrm{Cont}_\Gamma[E_O,q_O;\Omega]$ is formed as in \cref{def:set-graphsum}, with the potentials of $\Omega$ shifted by its own unit. For a unit $\varkappa$, $\varkappa.\Omega$ is the theory $(\varkappa.\Omega)_{g,n}:=\varkappa^{2g-2+n}\Omega_{g,n}$, with flat unit $\varkappa^{-1}1$. The canonical gauge $\Pc$ satisfies (unit) with $\varkappa=d$, and its edge and leaf point are those of \cref{def:tra-dressing}; the outer matrix $R'$ satisfies (unit) with $\varkappa=1$, a condition on its constant term only; $R'$ is not assumed to be symplectic, and $T_\Gamma$ is formed with the edge of \cref{def:set-outer}.
+
+\begin{lem}[Four lemmas; {\Lr{lem:flh-frame,lem:flh-dil,lem:flh-comm,lem:flh-hat}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:flh-hat}
+\begin{enumerate}
+\item (Frame change.) Let $A\colon(\widetilde{\mathbb V},\tilde\eta)\to(\mathbb V,\eta)$ be an isometry independent of $z$ and $\widetilde\Omega$ a cohomological field theory with flat unit on $\widetilde{\mathbb V}$. For every leg-free stable graph $\Gamma$ and all $E$ and $q$, $\mathrm{Cont}_\Gamma[E,q;A_*\widetilde\Omega]=\mathrm{Cont}_\Gamma\bigl[(A^{-1}\otimes A^{-1})E,\;A^{-1}q;\;\widetilde\Omega\bigr]$.
+\item (TFT dilaton invariance.) Let $\varkappa\in1+u\bbQ\fps u$ and $q\in\mathbb V\fps z$ with $q+z\varkappa^{-1}1\in z^2\mathbb V\fps z$. Then for every leg-free stable graph $\Gamma$, $\mathrm{Cont}_\Gamma[E,q;\varkappa.\Omega]=\mathrm{Cont}_\Gamma[E,q;\Omega]$.
+\item (The $R$-action commutes with the rescaling.) For a unit $\varkappa$ of $\cA$ and an $\End(\mathbb V)$-valued series $R(z)=1+O(z)$ with $R(-z)^*R(z)=1$, $R.(\varkappa.\Omega)=\varkappa.(R.\Omega)$.
+\item (Hatting.) Let $g\geq2$. For every leg-free stable graph $\Gamma$ of genus $g$, the hatted term and the outer term of \cref{def:set-outer} satisfy $G_\Gamma=s^{10(g-1)}\,T_\Gamma=u^{2g-2}\,T_\Gamma$.
+\end{enumerate}
+\end{lem}
+
+Part (ii) is the dilaton equation in the form of \cref{lem:set-dilaton}~(iii), and (iv) is a count of powers of $s$.
+
+\begin{lem}[The inputs of the comparison; {\Lr{lem:flh-inputs}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:flh-inputs}
+Let $\Qr^{\mathrm m}$ be the matrix of the model columns at $v(u)$, $\Psi^{\mathrm m}:=\Qr^{\mathrm m}|_{z=0}$, $\Psi_{\mathrm Q}:=\Qr|_{z=0}$, $P_0:=\Pc|_{z=0}$ and $d:=(P_0)_{33}$, and identify the colour bases of the formal quintic and of the model through the index $i$.
+\begin{enumerate}
+\item $\Qr^{\mathrm m}=\Psi^{\mathrm m}M$ and $\Omega^{\mathrm{mod}}_{v(u)}=(\Psi^{\mathrm m})_*\bigl(M.\TFT^{\mathrm m}_{v(u)}\bigr)$; $\Psi^{\mathrm m}$ is an isometry, independent of $z$, from the colour space to $(\bbH,\eta)$, and it maps the unit of $\TFT^{\mathrm m}_{v(u)}$ to $H^0$.
+\item $\Qr\Dn=\Pc\Qr^{\mathrm m}$ with $\Dn=\diag(\Dn_i)$ and $\Dn_i(z)=\Dn_0(\zeta^{-i}z)$. Under $\Fg{g}$, $R'\equiv\Pc\Psi^{\mathrm m}\bmod z^{3g-2}$.
+\item $\Pc$ is symplectic; so $E_{\Pc}$ is a power series and $\Pc\Psi^{\mathrm m}$ is symplectic. Moreover
+\[
+R'(-z)^T\eta^{-1}R'(z)=M(z)\bigl(\Dn(z)\Dn(-z)\bigr)^{-1}M(z)^{-1};
+\]
+hence $R'$ is symplectic, $R'(-z)^T\eta^{-1}R'(z)=1$, if and only if $\Dn_0(z)\Dn_0(-z)=1$, and under $\Fg{g}$ it is symplectic modulo $z^{3g-2}$.
+\item $\Pc$ satisfies (unit) with $\varkappa=d$, where $d\in\bbQ\fps u$ and $d(0)=1$; $R'$ satisfies (unit) with $\varkappa=1$; $\Psi_{\mathrm Q}=P_0\Psi^{\mathrm m}$; and $\TFT=d.\TFT^{\mathrm m}_{v(u)}$ on the identified colour spaces.
+\end{enumerate}
+\end{lem}
+
+Here (ii) is \cref{thm:gau-R0}~(iv), since $R'=\Pc\Psi^{\mathrm m}\,M\Dn^{-1}M^{-1}$, and (iii) is \cref{prop:gau-symp}. The symplecticity of $R$ at large radius is not used: this is why (iii) carries the factor $\Dn$.
+
+\begin{thm}[The comparison theorem; {\Lr{thm:flh-main}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:flh-main}
+Let $g\geq2$ and let $\Gamma$ be a leg-free stable graph of genus $g$. Let $F_\Gamma$ be its term in the flat sum of $\Pc.\Omega^{\mathrm{mod}}_{v(u)}$, $T_\Gamma$ its outer term and $G_\Gamma$ its hatted term (with $M=\Mo(\tau(u)\zh)$ exactly in $u$). Assume $\Fg{g}$. Then
+\[
+T_\Gamma=F_\Gamma,\qquad\text{hence}\qquad G_\Gamma=u^{2g-2}F_\Gamma .
+\]
+\end{thm}
+
+\begin{sketch}
+\emph{Only $R'$ through $z^{3g-3}$ enters.} The classes of $M.\TFT$ have non-negative degree and every leaf insertion has degree at least $2$, so the dimension of the moduli spaces bounds the degrees: a monomial $\psi^a\psi'^b$ of an edge occurs only with $a+b\leq3g-4$, and a leaf insertion only up to degree $3g-2$. These involve $R'^{-1}$ only through $z^{3g-3}$, so $T_\Gamma$ depends on $R'$ only modulo $z^{3g-2}$. Under $\Fg{g}$ we may therefore replace $R'$ by the symplectic series $R'':=\Pc\Psi^{\mathrm m}$ (\cref{lem:flh-inputs}~(ii), (iii)), whose edge and leaf point are those of $\Pc$ transported by the isometry $\Psi^{\mathrm m}$.
+
+\emph{The chain.} By \cref{lem:flh-inputs}~(iv), (i) and \cref{lem:flh-hat}~(iii), (ii), (i),
+\begin{align*}
+T_\Gamma&=\mathrm{Cont}_\Gamma[E_{R''},q_{R''};M.(d.\TFT^{\mathrm m})]=\mathrm{Cont}_\Gamma[E_{R''},q_{R''};d.(M.\TFT^{\mathrm m})]=\mathrm{Cont}_\Gamma[E_{R''},q_{R''};M.\TFT^{\mathrm m}]\\
+&=\mathrm{Cont}_\Gamma[E_{\Pc},q_{\Pc};(\Psi^{\mathrm m})_*(M.\TFT^{\mathrm m})]=\mathrm{Cont}_\Gamma[E_{\Pc},q_{\Pc};\Omega^{\mathrm{mod}}_{v(u)}] .
+\end{align*}
+The last contraction is formed with the leaf point $q_T$ and with the Taylor expansions of the model potentials at $-z1$; since $d(0)=1$ these converge and equal the vertex tensors $d^{2g_v-2+n_v}\dd^{n_v}\overline F_{g_v}(dq_T)$ of \cref{def:red-flatsum} (\cref{lem:tra-T}~(iv)). So it is $F_\Gamma$.
+\end{sketch}
+
+At genus $g$ the outer terms involve the normalisation series only through $z^{3g-3}$: $\Fg{g}$ is all of $\Dn_0=1$ that genus $g$ sees. If $\Dn=\cn(z)1$ were a scalar with $\cn(z)\cn(-z)=1$, the proof would identify $T_\Gamma$ with the term of the flat sum of the symplectic gauge $\Pc\cn(z)^{-1}$, a different graph decomposition, which satisfies (A) only if $\cn=1$ (\cref{thm:gau-G}~(b)) \Lr{rmk:flh-fail,rmk:mai-stored}.

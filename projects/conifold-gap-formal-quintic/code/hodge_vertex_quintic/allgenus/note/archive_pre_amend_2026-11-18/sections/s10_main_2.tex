@@ -1,0 +1,52 @@
+\begin{cor}[Corollary B: the conifold gap of the formal quintic]
+\label{cor:mai-gap}
+Let $g\geq2$. In every conifold frame of \cref{def:set-frames},
+\[
+F_g^{\mathrm{cf}}\in c_g\,\tc^{2-2g}+\bbQ\fps{u}.
+\]
+Since $\tc=u+O(u^2)$ lies in $\bbQ\fps{u}$, $\bbQ\fps{u}=\bbQ\fps{\tc}$: the conifold expansion of $F_g$ contains no fractional power of $u$ and no power $\tc^k$ with $3-2g\leq k\leq-1$, and its leading term is $c_g\tc^{2-2g}$.
+\end{cor}
+
+\begin{proof}
+Write $\Cexp$ for $\Cexp_{\alpha,\beta}$, extended $\bbQ(\zeta)$-linearly.
+
+\emph{Step 1: expanding the graph sum.} By \cref{lem:gau-confexp}, $\Cexp$ is a ring homomorphism; $F_g^{\Nring}$ is a polynomial expression in finitely many coefficients of the edges of \cref{def:mai-Fcf}, of the leaf points and of $\TFT$, and the edge $E_X$, polynomial in the coefficients of $X^{-1}$ followed by an exact division by $\psi+\psi'$, commutes with ring homomorphisms. Hence
+\[
+F_g^{\mathrm{cf}}=\sum_\Gamma\mathrm{Cont}_\Gamma\bigl[E_{\Cexp(\tilde R)},q_{\Cexp(\tilde R)};\Cexp(\TFT)\bigr].
+\]
+Since $\Dn=1$ (\cref{thm:gam-D}), \cref{lem:flh-inputs}~(iii) gives $R'(-z)^T\eta^{-1}R'(z)=1$ for $R'=\Cexp(\Qr)M^{-1}$, and $M(-z)^TM(z)=1$ (\cref{lem:set-M0sympl}); so $\Cexp(\Qr)(-z)^T\eta^{-1}\Cexp(\Qr)(z)=1$. With $\Psi_{\mathrm{cf}}=\Cexp(\Psi_{\mathrm Q})$, so that $\Psi_{\mathrm{cf}}^T\eta^{-1}\Psi_{\mathrm{cf}}=1$ and $\Psi_{\mathrm{cf}}\Psi_{\mathrm{cf}}^T=\eta$ (\cref{lem:mai-Psi}), and $\Cexp(\tilde R)=\Psi_{\mathrm{cf}}^{-1}\Cexp(\Qr)$, this gives
+\[
+\Cexp(\tilde R)(-z)^T\,\Cexp(\tilde R)(z)=\Cexp(\Qr)(-z)^T(\Psi_{\mathrm{cf}}\Psi_{\mathrm{cf}}^T)^{-1}\Cexp(\Qr)(z)=1 :
+\]
+$\Cexp(\tilde R)$ is symplectic, and $E_{\Cexp(\tilde R)}$ is the edge of \cite[Def.~2.2]{PPZ15}. The classes of $\Cexp(\TFT)$ are those of $\TFT$ with $\Delta_i^{\pm1/2}$ replaced by $\Cexp(\Delta_i^{\pm1/2})$, and the axioms of a topological field theory with unit are polynomial identities in the $\Delta_i^{\pm1/2}$, so $\Cexp(\TFT)$ is one over $\bbQ(\zeta)\lser{s}$, with the unit $\Cexp(1_{\TFT})$, and $q_{\Cexp(\tilde R)}=\Cexp(\tilde R)^{-1}(z)\bigl(-z\,\Cexp(1_{\TFT})\bigr)$. By \cref{lem:set-pushins}~(iii), the right-hand side above is $\int_{\overline{\mathcal M}_g}\bigl(\Cexp(\tilde R).\Cexp(\TFT)\bigr)_{g,0}$, for the unit-preserving action of \cite[Def.~2.13]{PPZ15}.
+
+\emph{Step 2: regrouping.} $M$ is symplectic with $M(0)=1$ (\cref{lem:set-M0sympl}), so $X\coloneqq\Cexp(\tilde R)M^{-1}$ is symplectic with $X(0)=1$, and $\Cexp(\Qr)M^{-1}=\Psi_{\mathrm{cf}}X$ is the outer matrix $R'$ of \cref{def:set-outer}. By \cite[Prop.~2.14]{PPZ15}, the unit-preserving action of \cite[Def.~2.13]{PPZ15} is a left group action, so
+\[
+\Cexp(\tilde R).\Cexp(\TFT)=X.\bigl(M.\Cexp(\TFT)\bigr).
+\]
+(The results of \cite{PPZ15} are stated over $\bbQ$; the proofs of their Props.~2.4, 2.12 and 2.14, and of Props.~2.8 and~2.9, which the proof of Prop.~2.14 uses, are identities between finite sums, polynomial in the coefficients of the $R$-matrices and of the CohFT, and hold verbatim over $\bbQ(\zeta)\lser{s}$, \cref{def:set-graphsum}.) Take the genus-$g$ parts without legs and integrate over $\overline{\mathcal M}_g$. The left-hand side gives $F_g^{\mathrm{cf}}$ by Step 1; the right-hand side gives $\sum_\Gamma\mathrm{Cont}_\Gamma[E_X,q_X;M.\Cexp(\TFT)]$ by \cref{lem:set-pushins}~(iii), applied to $M.\Cexp(\TFT)$, whose unit is that of $\Cexp(\TFT)$ by \cite[Prop.~2.12]{PPZ15}, and to the symplectic series $X$, $X(0)=1$; this is the contraction of \cref{def:flh-outer} with $\varkappa=1$. Since $\Psi_{\mathrm{cf}}$ is an isometry from the colour space onto $(\bbH,\eta)$ independent of $z$ which maps $1_{\TFT}$ to $1$ (\cref{lem:mai-Psi}~(ii), \cref{lem:flh-inputs}~(iv)), $R'(-\psi)^T\eta^{-1}R'(-\psi')=X(-\psi)^TX(-\psi')$ and $R'^{-1}(z)(-z1)=X^{-1}(z)(-z1_{\TFT})$; so $E_{R'}=E_X$ and $q_{R'}=q_X$, by the computation of the proof of \cref{lem:flh-frame} for the isometry $A=\Psi_{\mathrm{cf}}$. Each term is therefore $\mathrm{Cont}_\Gamma[E_{R'},q_{R'};M.\TFT]=T_\Gamma$, with $\TFT$ expanded in the frame as in \cref{def:set-outer}, and
+\[
+F_g^{\mathrm{cf}}=\sum_\Gamma T_\Gamma ,
+\]
+with no further factor $|\Aut\Gamma|^{-1}$.
+
+\emph{Step 3.} By Theorem~A (\cref{thm:mai-main}), $T_\Gamma\in\bbQ\fps{u}$ for every $\Gamma$ with an edge, and the vertex graph gives $c_g\tc^{2-2g}+\bbQ\fps{u}$; the sum is finite, so $F_g^{\mathrm{cf}}\in c_g\tc^{2-2g}+\bbQ\fps{u}$.
+\end{proof}
+
+Corollary~B uses Theorem~A, the reconstruction (T) through the identification $\ev(F_g^{\Nring})=F_g$, \cite[\S0.2, (1); Def.~0.3; (5); Rem.~2.1; Defs.~2.2 and~2.5, with the conventions stated after them; (8); Prop.~2.12; Def.~2.13; Prop.~2.14, with Props.~2.4, 2.8 and~2.9 through its proof]{PPZ15}, and proved statements only; its conditionality is that of Theorem~A.
+
+\begin{rmk}[the constant]
+\label{rmk:mai-constant}
+The constant $c_g$ is that of \cite[Conj.~1.5]{CGYZ26}, proved there for the quintic threefold \cite[Thm.~2]{CGYZ26}, in the same normalisation of the vanishing period; the two theories have different potentials, so nothing about the quintic follows. For the values see \cref{rmk:set-cg}; for the dictionary and the rescaling of the two periods of a frame, \cref{sec:sgn-lit}.
+\draftnote{Numbers from arXiv:2609.13921v2, read in the HTML rendering; to be re-read in the PDF.}
+\end{rmk}
+
+\begin{rmk}[graph-locality]
+\label{rmk:mai-graphlocal}
+In the normalisation of \cref{rmk:mai-stored}, computations (\cref{sec:evi}) show that six edge graphs of genus $4$ become singular while the singular part of the total is unchanged. So the singular part of the total does not determine those of the graph terms, and no argument that uses the total only through its singular part can prove Theorem~A. The proof is graph-local, and it uses the odd part of $\log\cn$, which is fixed by (G) (\cref{thm:gau-G}) and not by symplecticity.\draftnote{The genus-$4$ computation behind this remark is not among the tables of the evidence appendix; record it there, or in an ancillary file, or drop the first sentence.}
+\end{rmk}
+
+\begin{rmk}[the hypotheses cannot be dropped]
+\label{rmk:mai-necessity}
+Computations (\cref{sec:evi}) give dressings that violate (A), among them $P^\sharp$ of \cref{rmk:mai-stored}, and dressings that are not regular in $u$ in the flat frame, whose flat sums have singular edge graphs: neither hypothesis of \cref{thm:red-main} can be dropped in general. For (Sp) no such example exists, because without it the edge of \cref{def:tra-edge} is not a power series. The gauge equation is not a hypothesis (\cref{rmk:mai-annih}).\draftnote{The computations behind the first sentence are not among the tables of the evidence appendix; record them there, or in an ancillary file, or drop the sentence.}
+\end{rmk}

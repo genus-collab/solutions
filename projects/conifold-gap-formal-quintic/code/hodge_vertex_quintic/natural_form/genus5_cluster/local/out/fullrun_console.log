@@ -1,0 +1,10 @@
+resuming from G:\My Drive\Projects\Old\refGW\cluster_genus5_quintic\parts\g5_89_nat\local.json: 2 inner graphs already stored
+tag g5_89_nat (maxout = None), 2584 inner graphs to do, 16991 reference-seconds budgeted, 11 processes
+      inner graphs 516/2584 (184 s)
+      inner graphs 1032/2584 (571 s)
+      inner graphs 1548/2584 (1128 s)
+      inner graphs 2064/2584 (1859 s)
+      inner graphs 2580/2584 (2923 s)
+      inner graphs 2584/2584 (2933 s)
+local full-maxout run: 2584 inner graphs, wall 2934 s, CPU 32009 s (8.89 h); part file now holds 2586 inner graphs
+   local/reference time ratio on this slice: 1.884

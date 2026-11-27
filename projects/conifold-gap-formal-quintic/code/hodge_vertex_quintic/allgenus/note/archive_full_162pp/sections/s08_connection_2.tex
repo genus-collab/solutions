@@ -1,0 +1,42 @@
+% Section 8 (part 2 of 8): the degree bound and the three points.
+
+\begin{prop}[The degree bound]
+\label{prop:con-deg}
+Let $(\fc_m)_{m\geq1}$ be arbitrary rational numbers. There is exactly one solution $\Phi=\sum_n\mathrm{ph}_n\zh^n$ of HPF with $\mathrm{ph}_0=1$, every $\mathrm{ph}_n$ in $\bbQ\fps{u}$ and $[u^{4m}]\mathrm{ph}_{5m}=\fc_m$ for every $m\geq1$. For it every $\mathrm{ph}_n$ is a polynomial of degree at most $\lfloor4n/5\rfloor$, and every resonance condition of \cref{lem:gau-HPF} holds trivially: $\deg r_n<4n/5$, so that $[u^{4m}]r_{5m}=0$. Equivalently, every $A_n$ lies in $L\bbQ[L]$ and has degree at most $4n+1$, and for $n\geq1$ the value of $L^{-1}A_n$ at $L=0$ is $\fc_{n/5}$ if $5\mid n$ and $0$ otherwise ($A_0=L$). Every solution of HPF with $\mathrm{ph}_0=1$ and coefficients in $\bbQ\fps{u}$ is one of these. The same holds in every colour.
+\end{prop}
+
+The proposition is not used by the proof of the main theorem. Its proof uses neither Theorem~U nor \cref{thm:con-Pa}, and it constructs a polynomial solution of HPF for every choice of the free coefficients. We do not claim that the bound $\lfloor4n/5\rfloor$ is attained.
+
+\begin{proof}
+Colour $i$ reduces to colour $0$: its exponent $u_i$ has $\Dq u_i=\zeta^iL$ (\cref{cor:set-cyclicPF5}), and $L':=\zeta^iL$ satisfies $\Dq L'=(L'^6-L')/5$ and $L'^{-5}=L^{-5}$, so the argument below applies verbatim in the variable $L'$. We work in colour $0$. The letters $\theta_L$, $\mathfrak p$, $\cP_j$, $\mathfrak e$, $R_n$, $\tilde r_n$, $\mathcal M_1$, $\mathcal M_{-4}$ are local to this proof. Let $\theta_L:=L\,\dd/\dd L$; on $\bbQ[L,L^{-1}]$ the derivation $\Dq$ is $-\frac15(1-L^5)\theta_L$, because $\Dq L=(L^6-L)/5$, and $q=(1-L^{-5})/5^5$. Put $\mathfrak p:=5^{-5}\prod_{k=1}^5\bigl(5(z\Dq+L)+kz\bigr)$; then
+\begin{equation}
+\label{eq:con-PL}
+\PFfive^{L}=(z\Dq+L)^5-1+L^{-5}(1-L^5)\,\mathfrak p=\sum_{j=0}^{5}z^j\cP_j ,
+\end{equation}
+with operators $\cP_j$ on $\bbQ[L,L^{-1}]$, polynomials in $\theta_L$ with coefficients in $\bbQ[L,L^{-1}]$. For the flat amplitude $\psi:=\sum_nA_nz^n=s^{-1}\Phi$ the equation $[z^{n+1}]\PFfive^{L}\psi=0$ is the $\zh^{n+1}$-coefficient of HPF, by \eqref{eq:con-chain}.
+
+\emph{Step 1 (the term $z^0$).} At $z^0$ one has $z\Dq+L=L$ and $\mathfrak p=L^5$, so $\cP_0=L^5-1+L^{-5}(1-L^5)L^5=0$.
+
+\emph{Step 2 (the left factor).} $z\Dq=(1-L^5)\circ(-\tfrac z5\theta_L)$, and multiplications by functions of $L$ commute. A term of positive $z$-degree of $(z\Dq+L)^5$ is a word in $L$ and $z\Dq$ containing $z\Dq$; the factors to the left of its leftmost $z\Dq$ are multiplications by $L$, so the word has the left factor $1-L^5$. The term $L^{-5}(1-L^5)\mathfrak p$ has it explicitly. With Step 1: for $j\geq1$, $\cP_j=(1-L^5)\circ\tilde\cP_j$ for an operator $\tilde\cP_j$ on $\bbQ[L,L^{-1}]$.
+
+\emph{Step 3 (valuation).} For $m\geq1$, $\bigl(5(z\Dq+L)+kz\bigr)L^m=5L^{m+1}+z(k-m)L^m+zmL^{m+5}$. The five factors of $\mathfrak p$ commute; apply first those with $k=m,m+1,\dots,5$ (if $m\leq5$): each kills the lowest power when that power equals $k$, and no factor lowers the valuation. Hence $\mathfrak p(L^m)\in L^6\bbQ[L][z]$ for $m\geq1$. Since $(z\Dq+L)L^m=L^{m+1}-\frac{zm}5(1-L^5)L^m$ does not lower the valuation either, every $\cP_j$ maps $L\bbQ[L]$ into itself.
+
+\emph{Step 4 (the first-order part).} On $L^m$ the $z^1$-part of $(z\Dq+L)^5$ is $\sum_{i=0}^4L^i(z\Dq)L^{m+4-i}=-(m+2)z(1-L^5)L^{m+4}$, and that of $\mathfrak p$ is $z\bigl(3-(m+2)(1-L^5)\bigr)L^{m+4}$, the $3$ being $\sum_kk/5$. Hence $\cP_1L^m=(1-m)(1-L^5)L^{m-1}$, that is, $\cP_1=(1-L^5)\circ\mathfrak e$ with $\mathfrak e(L^m):=(1-m)L^{m-1}$.
+
+\emph{Step 5 (weights).} Give $L$ the weight $1$, $z$ the weight $-4$ and $\theta_L$ the weight $0$. Then $z\Dq+L=\mathcal M_1+\mathcal M_{-4}$ with $\mathcal M_1:=L+\tfrac z5L^5\theta_L$ of weight $1$ and $\mathcal M_{-4}:=-\tfrac z5\theta_L$ of weight $-4$, and $5(z\Dq+L)+kz=5\mathcal M_1+(5\mathcal M_{-4}+kz)$, the second part of weight $-4$. A product of five factors one of which has weight $-4$ has weight at most $0$. Hence $(z\Dq+L)^5$ and $\mathfrak p$ have the same part $\mathcal M_1^5$ of weight $5$, and all their other parts have weight at most $0$. In \eqref{eq:con-PL} the parts of weight $5$ cancel, and $1$ and $L^{-5}\mathfrak p$ have weight at most $0$. So every term $z^jL^a\theta_L^b$ of $\PFfive^{L}$ has $a\leq4j$.
+
+\emph{Step 6 (induction).} We show: for every $n$ there is exactly one $A_n$ in $L^{4n+1}\bbQ\fps{L^{-5}}$ with $[z^{n+1}]\PFfive^{L}\psi=0$ and $[L^1]A_{5m}=\fc_m$, and it lies in $L\bbQ[L]$ and has degree at most $4n+1$. For $n=0$, $A_0=L$. Assume this for $A_0,\dots,A_{n-1}$. By Step 1 the equation is $\cP_1A_n=R_n:=-\sum_{j=2}^5\cP_jA_{n+1-j}$. By Step 3, $R_n\in L\bbQ[L]$. By Step 5, applied to the terms $z^kA_k$ ($k<n$), which have weight at most $1$, $z^{n+1}R_n$ has weight at most $1$, so $\deg R_n\leq4n+5$. By Step 2, $R_n\in(1-L^5)\bbQ[L,L^{-1}]$. As $1-L^5$ is a unit of $\bbQ\fps{L}$, $\tilde r_n:=R_n/(1-L^5)$ lies in $L\bbQ\fps{L}\cap\bbQ[L,L^{-1}]=L\bbQ[L]$, and $\deg\tilde r_n\leq4n$. By Step 4, and since $1-L^5$ is not a zero divisor in $\bbQ\lser{L^{-1}}$, the equation reads $\mathfrak eA_n=\tilde r_n$, that is,
+\[
+(1-m)\,[L^m]A_n=[L^{m-1}]\tilde r_n\qquad(m\in\bbZ).
+\]
+At $m=1$ this says $0=[L^0]\tilde r_n$, which holds because $\tilde r_n\in L\bbQ[L]$: the resonance is trivial. For $m\neq1$ the equation determines $[L^m]A_n$, which vanishes for $m\leq0$ and for $m>4n+1$. Finally $\PFfive^{L}$ maps $L^mz^j$ to combinations of monomials $L^{m'}z^{j'}$ with $m'+j'\equiv m+j\bmod5$, and $\psi$ has only monomials with $m+j\equiv1$; so $A_n$ has only exponents $\equiv4n+1\bmod5$, and the coefficient $[L^1]A_n$, which the equation leaves free, occurs only for $5\mid n$, where it is $[u^{4n/5}]\mathrm{ph}_n$. This proves the claim.
+
+\emph{Step 7 (translation).} $A_n=\sum_k[u^k]\mathrm{ph}_n\,L^{4n+1-5k}$ lies in $L\bbQ[L]$ if and only if $[u^k]\mathrm{ph}_n=0$ whenever $4n+1-5k\leq0$, that is, if and only if $\deg\mathrm{ph}_n\leq\lfloor4n/5\rfloor$; and $L^{-1}A_n$ at $L=0$ is $[L^1]A_n$. Comparing $[z^{n+1}]\PFfive^{L}\psi=(1-L^5)(\mathfrak eA_n-\tilde r_n)$ with the $\zh^{n+1}$-coefficient $(1-u)[(4n-5\theta_u)\mathrm{ph}_n+r_n]$ of HPF through \eqref{eq:con-chain} gives $\tilde r_n=L^{4n}r_n(L^{-5})$; so $\tilde r_n\in L\bbQ[L]$ means $\deg r_n<4n/5$, and $[L^0]\tilde r_{5m}=[u^{4m}]r_{5m}$ is the resonance coefficient of \cref{lem:gau-HPF}. The $u$-recursion of \cref{lem:gau-HPF} determines $\mathrm{ph}_n$ from $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$ and $\fc_{n/5}$; hence every solution with $\mathrm{ph}_0=1$ and coefficients in $\bbQ\fps{u}$ is the one constructed for its free coefficients.
+\end{proof}
+
+\begin{rmk}[Three points]
+\label{rmk:con-points}
+By \cref{prop:con-deg}, for a colour-$0$ WKB function solving HPF with coefficients in $\bbQ\fps{u}$ the series $L^{-1}\sum_nA_nz^n$ lies in $\bbQ[L]\fps{z}$. Such series connect three points. At $L=1$ ($q=0$, $u=1$, $\zh=z$) the value of the actual amplitude, whose coefficients are Laurent polynomials in $L$ (\cref{thm:gau-R0}~(iii), \cref{thm:con-glue}), is prescribed by (QRR): it is $h(z)$ (\cref{thm:set-qrr}). At $L=0$ ($q=\infty$) the value is $1+\sum_m\fc_mz^{5m}$; for the full-Stirling series of \cref{sec:con-form} it is determined in \cref{thm:gam-ginf}. At $L=\infty$ ($u=0$, the conifold point) the leading coefficients are those of the model (\cref{lem:con-u0}), and the normalisation is fixed by the canonical gauge, through the top coefficients $\fc_m$ (\cref{thm:con-Pb,thm:con-glue}).
+\end{rmk}
+
+\input{sections/s08_connection_3}

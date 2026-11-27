@@ -1,0 +1,29 @@
+{
+ "prime": "89",
+ "maxout": 1,
+ "failed": [],
+ "full_checked": 2586,
+ "full_bad": [],
+ "full_byE": {
+  "0": 1,
+  "1": 3,
+  "2": 11,
+  "3": 34,
+  "4": 84,
+  "5": 150,
+  "6": 255,
+  "7": 377,
+  "8": 493,
+  "9": 501,
+  "10": 402,
+  "11": 214,
+  "12": 61
+ },
+ "full_nonzero_target": 2586,
+ "trunc_small": 4,
+ "trunc_small_bad": [],
+ "both": 2586,
+ "restriction_bad": [],
+ "pieces_trunc_on_both": 9299,
+ "pieces_full_on_both": 222784
+}

@@ -1,0 +1,59 @@
+% Section 8 (part 1 of 8): the connection problem. Label prefix: con.
+% No new macros. Letters used in one proof only are declared there and are local to it.
+
+\section{The connection problem}
+\label{sec:con}
+
+The canonical gauge $\Pc$ of \cref{sec:gau} is normalised at the conifold point $u=0$, the rows of the formal quintic at the large-radius point $q=0$. The normalisation series $\Dn_0$ of \cref{thm:gau-R0} measures the difference, and $\Fg{g}$ for every $g$ (\cref{def:gau-Fg}) is the statement $\Dn_0=1$. This section reduces $\Dn_0=1$ to one identity at $q=0$. After the polynomial structure of the colour-$0$ WKB functions (\cref{sec:con-problem}) we define the full-Stirling saddle series $c(z;L)$ of a Mellin--Barnes summand and the hatted series $\PhiSP$ (\cref{sec:con-form}). Theorem~P (\cref{sec:con-P}) identifies $\PhiSP$ with the canonical function $\Phican$: part~(a) shows that $\PhiSP$ solves HPF and has polynomial coefficients, part~(b) that it is the canonical one, by an exact identity at the conifold end, the residue of the $1$-form at its pole. The glue (\cref{sec:con-glue}) evaluates the comparison \cref{thm:gau-R0} at $u=1$ and gives $\Dn_0(z)=\PhiSP(z,1)/h(z)$ exactly; the value $\PhiSP(z,1)=c(z;1)$ is determined in \cref{sec:gam}. We work in colour~$0$; the other colours follow by \cref{cor:gau-colours}. The formal stationary-phase lemmas are those of \cref{sec:fsp}. Topological recursion is not used in this section. No quoted input enters \cref{thm:con-Pa}, \cref{prop:con-deg} or \cref{thm:con-Pb}; the last concerns the cyclic system of a conifold frame and its canonical gauge, not the rows of the formal quintic. The glue \cref{thm:con-glue} uses the input (QRR), once, and the actual rows, which rest on (M) and (G0).
+
+\subsection{The normalisation problem and the polynomial structure}
+\label{sec:con-problem}
+
+\emph{Conventions.} A colour-$0$ WKB function is a series $\Phi(\zh,u)=\sum_{n\geq 0}\mathrm{ph}_n(u)\zh^n$ with $\mathrm{ph}_0=1$; its flat amplitude is $A_n:=L^{4n+1}\mathrm{ph}_n(L^{-5})$, so that $\sum_n A_nz^n=L\,\Phi(L^4z,L^{-5})$ (\cref{def:set-points,def:set-rows}). We write $\PFfive^{L}$ for $\PFfive$ with $z\Dq$ replaced by $z\Dq+L$, that is, $\PFfive^{L}=\re^{-u_0/z}\,\PFfive\,\re^{u_0/z}$ with $\Dq u_0=L$; it is the operator $\PFfive^{(0)}$ of \cref{lem:gau-HPF,lem:gau-wkb}. At fixed $z$ one has $u\,\dd/\dd u=\theta_u-\tfrac45\theta_{\zh}$ on functions of $(\zh,u)$ and $z/u=\zh/s$, so that for $e\in\bbZ$ and $F$ in $\bbQ\lser{s}\fps{\zh}$
+\begin{equation}
+\label{eq:con-chain}
+(z\Dq+L)(s^eF)=s^{e-1}\mathscr O_eF,\qquad \mathscr O_e=1+\zh(1-u)\bigl(\tfrac45\theta_{\zh}-\tfrac e5-\theta_u\bigr),
+\end{equation}
+the chain rule of \cref{lem:gau-HPF}. Applying it five times to $s^{-1}\Phi$, with $\PFfive$ written as
+\[
+\PFfive=u(z\Dq)^5-1-(1-u)\sum_{m=1}^5e_m\bigl(\tfrac15,\dots,\tfrac55\bigr)\,z^m(z\Dq)^{5-m}
+\]
+($e_m$ the elementary symmetric functions), gives $\PFfive^{L}(s^{-1}\Phi)=s^{-1}\,\mathrm{HPF}(\Phi)$, where $\mathrm{HPF}(\Phi)$ is the left side of \eqref{eq:gau-HPF}; so $L\re^{u_0/z}\Phi$ solves $\PFfive$ if and only if $\Phi$ solves HPF, as identities in $\bbQ\lser{s}\fps{\zh}$. The free coefficients of $\Phi$ are $\fc_m=[u^{4m}]\mathrm{ph}_{5m}$ (\cref{lem:gau-HPF}).
+
+\begin{rmk}[The normalisation problem]
+\label{rmk:con-problem}
+The canonical gauge is normalised at the conifold point, by the gauge identity (G) (\cref{thm:gau-G,def:gau-can}); the rows of the formal quintic are normalised at $q=0$, by (QRR) (\cref{thm:set-qrr}). The series $\Dn=\diag(\Dn_i)$ of \cref{thm:gau-R0,cor:gau-colours} compares the two, and Property N($g$) (\cref{def:set-N}) needs $\Fg{g}$ (\cref{def:gau-Fg}), through the comparison theorem \cref{thm:flh-main} and \cref{thm:mai-main}. The series $\Dn$ is a connection constant: it compares a series built at $u=0$ with its value at $u=1$. It is not determined by data at $q=0$ alone, nor by data at $u=0$ alone (\cref{lem:con-u0,rmk:con-model}).
+\end{rmk}
+
+\begin{rmk}[Genus bookkeeping]
+\label{rmk:con-genus}
+By \cref{def:gau-Fg}, $\Fg{g}$ is the vanishing of the coefficients of $z,\dots,z^{3g-3}$ in $\Dn_0-1$; and $\Dn_0\equiv 1\bmod z^{N+1}$ if and only if these coefficients vanish through $z^N$; the coefficient of $z^n$ enters $\Fg{g}$ first at $g=\lceil(n+3)/3\rceil$. The identity $\Dn_0(z)\Dn_0(-z)=1$ would halve the conditions: $\log\Dn_0=\sum_na_nz^n$ would be an odd series, and $\Dn_0=1$ would follow from $a_n=0$ for every odd $n$. This identity is equivalent to the symplecticity of the rows expanded in the frame. Indeed, the model columns satisfy $\Qr^{\mathrm m}(-z)^T\eta^{-1}\Qr^{\mathrm m}(z)=1$, because $\Mo(-t)^T\Mo(t)=1$, $\Psi_0^T\eta^{-1}\Psi_0=1$ (\cref{def:set-M0,lem:set-M0sympl}) and the powers of $\varsigma$ cancel on the pairs $(a,3-a)$, where $\nu_a+\nu_{3-a}=2$; and $\Pc(-z)^T\eta\Pc(z)=\eta$ (\cref{prop:gau-symp}), with $\eta^{-1}=\eta/25$. Inserting $\Qr=\Pc\Qr^{\mathrm m}\Dn^{-1}$ (\cref{cor:gau-colours}) gives $\Qr(-z)^T\eta^{-1}\Qr(z)=(\Dn(-z)\Dn(z))^{-1}$, colour by colour; equivalently, the outer matrix $R'$ is symplectic if and only if $\Dn_0(z)\Dn_0(-z)=1$ (\cref{lem:flh-inputs}~(iii)). The symplecticity of $R$ (\cref{def:set-rows}~(a)) is an identity between power series in $q$; to carry it to the expanded rows one would need it as an identity between the representatives of the rows in $\Nring\otimes\bbQ(\zeta)$ (\cref{cor:gau-rowsNN}), for instance from the injectivity of $\ev$ on them, which is not claimed (see the paragraph after \cref{lem:flh-inputs}). So the halving is not available a priori, and it is not used: $\Dn_0=1$ is proved directly (\cref{thm:gam-D}), and then $\Dn_0(z)\Dn_0(-z)=1$ holds trivially. The finite ranges in which $\Dn_0=1$ has been tested are reported in \cref{sec:evi-normal}; they are not used.
+\end{rmk}
+
+\begin{lem}[The conifold value]
+\label{lem:con-u0}
+Let $\Phi=\sum_n\mathrm{ph}_n(u)\zh^n$ solve HPF, with $\mathrm{ph}_0=1$ and every $\mathrm{ph}_n$ in $\bbQ\fps{u}$. Then $\mathrm{ph}_n(0)=[t^n]\Fs_0$ for every $n\geq 1$, whatever the free coefficients; that is, $\Phi(\zh,0)=\Fs_0(\zh)$.
+\end{lem}
+
+\begin{proof}
+Put $\Phi_0(\zh):=\Phi(\zh,0)$ and $\mathscr O^0_e:=1+\zh(\tfrac45\theta_{\zh}-\tfrac e5)$, the operator $\mathscr O_e$ at $u=0$. The operators $\theta_u$ and multiplication by $u$ do not lower the $u$-order and $\theta_u$ kills $u^0$; the terms of HPF in the bracket of \eqref{eq:gau-HPF} other than $3\zh\,\Phi^{[4]}$ carry a factor $u^k$, $k\geq 1$. So the $u^0$-part of HPF involves only $\Phi_0$ and reads
+\[
+(\mathscr O^0_{-5}-3\zh)\,\mathscr O^0_{-4}\mathscr O^0_{-3}\mathscr O^0_{-2}\mathscr O^0_{-1}\Phi_0=\Phi_0 .
+\]
+By \cref{lem:gau-HPF} its $\zh^{n+1}$-coefficient is $4n\,\mathrm{ph}_n(0)+r_n(0)=0$, where $r_n(0)\coloneqq\coef{u^0}r_n$ involves only the values at $u=0$ of $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$; the pivot $4n$ is non-zero for $n\geq 1$, so this equation has exactly one solution with constant term $1$. This equation is the model's. Put $g_e:=(4\theta_{\zh}-e)/5$; since $\theta_{\zh}\zh=\zh(\theta_{\zh}+1)$, one has $g_e\zh=\zh g_{e-4}$ and
+\[
+\mathscr O^0_a\mathscr O^0_b\mathscr O^0_c=1+\zh\,(g_a+g_b+g_c)+\zh^2\,(g_{a-4}g_b+g_{a-4}g_c+g_{b-4}g_c)+\zh^3\,g_{a-8}g_{b-4}g_c .
+\]
+For $(a,b,c)=(10,-4,-3)$ and for $(a,b,c)=(0,1,2)$ both sides equal $1+\zh(12\theta-3)/5+\zh^2(48\theta^2+24\theta-18)/25+\zh^3(4\theta-2)(4\theta+8)(4\theta+3)/125$, $\theta:=\theta_{\zh}$. Since $\mathscr O^0_{-5}-3\zh=\mathscr O^0_{10}$, the $u^0$-part of HPF is
+\[
+\Phi_0=\mathscr O^0_0\mathscr O^0_1\mathscr O^0_2\mathscr O^0_{-2}\mathscr O^0_{-1}\Phi_0 .
+\]
+In colour $0$ the operators of the T-system of \cref{prop:set-modrows} are $\mathcal T_k=-\mathscr O^0_k$ at $t=\zh$, so the closing relation of that system, $\Fs_0=-\mathcal T_0\mathcal T_1\mathcal T_2\mathcal T_{-2}\mathcal T_{-1}\Fs_0$, is the same equation. (This is the hatted form of the identity $(z\,\dd/\dd v)^3v(z\,\dd/\dd v)^2=v(z\,\dd/\dd v)^5+3z(z\,\dd/\dd v)^4$, which follows from $[z\,\dd/\dd v,v]=z$: the leading part of $\PFfive$ at $u=0$ is the operator of the model.) By the uniqueness half of \cref{prop:set-modrows}, or by the pivot above, $\Phi_0=\Fs_0$. The free coefficient $\fc_m$ sits at $u^{4m}$ with $m\geq 1$, never at $u^0$, so the conclusion holds for every choice of the free coefficients.
+\end{proof}
+
+\begin{rmk}[The model does not fix the normalisation]
+\label{rmk:con-model}
+By \cref{lem:con-u0} the conifold value $\Phi(\zh,0)=\Fs_0(\zh)$ is the same for every choice of the free coefficients: the model alone does not fix the normalisation. The free coefficient $\fc_m$ sits at $u^{4m}$; by \cref{prop:con-deg} it is the top coefficient of $\mathrm{ph}_{5m}$, that is, the value of $L^{-1}A_{5m}$ at $L=0$. At the conifold point the normalisation is fixed by the gauge: $\Phican$ is singled out by the canonical gauge through (G) (\cref{thm:gau-G,def:gau-can}), not by the model.
+\end{rmk}
+
+\input{sections/s08_connection_2}

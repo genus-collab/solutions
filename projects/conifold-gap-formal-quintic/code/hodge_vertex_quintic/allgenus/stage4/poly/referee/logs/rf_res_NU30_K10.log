@@ -1,0 +1,9 @@
+rf_res: residue V versus C0 (Y^C_Q)_0, u^1..u^30, both frames, primes 2^61-1, 2^89-1; CFU exact, k < 10
+p=2305843009213693951 frame (0,0): V == C0 (Y^C_Q)_0 at u^1..u^30: 30/30 orders; positive z-powers in V: none
+p=2305843009213693951 frame (1/3,-2/7): V == C0 (Y^C_Q)_0 at u^1..u^30: 30/30 orders; positive z-powers in V: none
+   CONTROL no Stirling terms: first mismatch u^2; CONTROL gamma = 1/2: first mismatch u^2 -> fail as they should
+p=618970019642690137449562111 frame (0,0): V == C0 (Y^C_Q)_0 at u^1..u^30: 30/30 orders; positive z-powers in V: none
+p=618970019642690137449562111 frame (1/3,-2/7): V == C0 (Y^C_Q)_0 at u^1..u^30: 30/30 orders; positive z-powers in V: none
+   CONTROL no Stirling terms: first mismatch u^2; CONTROL gamma = 1/2: first mismatch u^2 -> fail as they should
+CFU (exact): Y_k in Q[T] for k < 10; V = tau^(-5/4) (mod 2^89-1 after exact computation): True; Y_1 = (1+T)/18: True; Y(1)^5 = V: True; V = ['1', '5/9', '220/567', '29030/96957']
+RESULT rf_res: PASS  [0.3 s]

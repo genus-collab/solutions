@@ -1,0 +1,9 @@
+====================================================================================================
+rf_deep [2026-11-13T20:11:18], p3 = 1208925819614629174706261
+  frame(6,0) = {(6, 0): (Fraction(1, 1), Fraction(0, 1)), (5, 1): (Fraction(1, 1), Fraction(1, 1)), (0, 1): (Fraction(-1, 120), Fraction(5, 1))};  C4 frame = {(6, 0): (Fraction(1, 1), Fraction(0, 1)), (5, 1): (Fraction(1, 1), Fraction(1, 1)), (0, 1): (Fraction(1, 120), Fraction(5, 1))}
+  <tau_6(1) H^5>_1 = -5/24,  <tau_5(H) H^5>_1 = 7/24,  sum = 1/12  (ML_Lambda(1) predicts 1/12)
+  ML_Lambda list <frame(6,0) H^5>_1    = 0
+  control C4 (wrong series)            = 1/6
+  genus 2: <tau_1(H) tau_2(H^3)>_h = 23/7200, F_h'(1) = -1/600, Hess_h = -23/12 (model worker: -23/12) agree
+  genus 3: <tau_1(H) tau_2(H^3)>_h = 13/302400, F_h'(1) = -1/6300, Hess_h = -13/48 (model worker: -13/48) agree
+  (1 s)

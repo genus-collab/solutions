@@ -1,0 +1,38 @@
+rf_kq (referee, independent code): field Q, mode qrr, frame (1/3, -2/7), q <= 40 (zhat^200), (H) n <= 204, REG q <= 12, K22 q <= 12
+   log file logs/rf_kq_Q_qrr_1o3_m2o7_200.log
+   setup 42.6 s; gamma (u^2 of the vanishing period) = 7/10, a_0 = 0
+   q =   1 done, 45 s
+   q =   2 done, 46 s
+   q =   3 done, 48 s
+   q =   4 done, 50 s
+   q =   5 done, 52 s
+   q =   6 done, 54 s
+   q =   7 done, 56 s
+   q =   8 done, 59 s
+   q =  10 done, 64 s
+   q =  20 done, 85 s
+   q =  30 done, 113 s
+   q =  40 done, 157 s
+   z^5   f = 4537/3937500; K11 = 0; K22 = 0; REG ok
+   z^10  f = -177640111151/31007812500000; K11 = 0; K22 = 0; REG ok
+   z^15  f = -284328315069009259339/6226756347656250000000; K11 = 0; K22 = 0; REG ok
+   z^20  f = 19636563411456..(31/29 digits); K11 = 0; K22 = 0; REG ok
+   z^25  f = 38485622047381..(39/36 digits); K11 = 0; K22 = 0; REG ok
+   z^30  f = -1176854732923..(54/45 digits); K11 = 0; K22 = 0; REG ok
+   z^35  f = -3284302746540..(68/57 digits); K11 = 0; K22 = 0; REG ok
+   z^40  f = 10164969525512..(77/62 digits); K11 = 0; K22 = 0; REG ok
+   z^50  f = -7788429637127..(106/82 digits); K11 = 0; K22 = 0; REG ok
+   z^75  f = -3309268586615..(177/129 digits); K11 = 0
+   z^100 f = 21935768761573..(245/169 digits); K11 = 0
+   z^125 f = 64275729984878..(331/224 digits); K11 = 0
+   z^150 f = -6250345729289..(417/275 digits); K11 = 0
+   z^175 f = -6265575897674..(504/327 digits); K11 = 0
+   z^200 f = 73071291956705..(590/377 digits); K11 = 0
+PASS (H) Phi(zhat, 1) = h at all 164 orders n <= 204 with 5 not | n (WKB from the PF operator, no free parameter): []
+PASS (N) K11_q = 0 for q = 1..40: []
+PASS K22_q = K11_q (the (2,2) slot, rows to a = 2) for q <= 12
+PASS REG: lower u-orders of the (1,1) slot vanish, q <= 12
+PASS ph_n(0) = F_(0,n) of the model for all n <= 200
+PASS deg ph_n = floor(4n/5) for 3 <= n <= 204, ph_1, ph_2 constant ([Fraction(-3, 20)], [Fraction(9, 800)]): []
+PASS resonances unobstructed (0 of the 40 multiples of 5 had a non-trivial rho at u^(4n/5))
+RF_KQ Q qrr 1o3_m2o7 q<=40: ALL CHECKS PASSED   (157 s)

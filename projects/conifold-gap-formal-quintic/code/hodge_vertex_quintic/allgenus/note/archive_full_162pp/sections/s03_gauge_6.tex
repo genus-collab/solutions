@@ -1,0 +1,89 @@
+% Section 3, part 6 of 7: HPF, polynomiality, formal WKB uniqueness, colour covariance of the model columns.
+
+%-------------------------------------------------------------------------------
+\subsection{The normalisation series}
+\label{sec:gau-R0}
+
+This subsection compares, colour by colour, the canonical gauge applied to the model columns with the rows of \cref{def:set-rows}. Colour $0$ (\cref{thm:gau-R0}) uses no (QRR); the other colours follow from colour $0$ by the colour covariance of the model columns, of the actual rows and of $\Pc$ (\cref{cor:gau-colours}). In this subsection $\theta_u:=u\,\dd/\dd u$ and $\theta_{\zh}:=\zh\,\dd/\dd\zh$, and a series $\Phi(\zh,u)=\sum_n\zh^n\mathrm{ph}_n(u)$ with $\mathrm{ph}_n\in\bbQ\lser s$ is identified with the series $\sum_nz^ns^{-4n}\mathrm{ph}_n$ in $z$, through $\zh=z/s^4=L^4z$ (\cref{def:set-points}). $\Dq$ acts on $\bbQ\lser s$ as in \cref{lem:gau-confexp}.
+
+\begin{lem}[HPF]
+\label{lem:gau-HPF}
+For $e\in\bbZ$ let $\mathscr O_e:=1+\zh(1-u)\bigl(\tfrac45\theta_{\zh}-\tfrac e5-\theta_u\bigr)$, and for $\Phi=\sum_n\zh^n\mathrm{ph}_n$ as above put $\Phi^{[0]}:=\Phi$ and $\Phi^{[j]}:=\mathscr O_{-j}\Phi^{[j-1]}$, $j=1,\dots,5$.
+\begin{enumerate}
+\item $L\Phi$ satisfies $\PFfive^{(0)}(L\Phi)=0$, where $\PFfive^{(0)}$ is $\PFfive$ with $z\Dq$ replaced by $z\Dq+L$ (that is, $\re^{u_0/z}L\Phi$ solves $\PFfive$ formally), if and only if
+\begin{equation}
+\label{eq:gau-HPF}
+\Phi^{[5]}-\Phi-(1-u)\Bigl[3\zh\Phi^{[4]}+\tfrac{17}5u\zh^2\Phi^{[3]}+\tfrac95u^2\zh^3\Phi^{[2]}+\tfrac{274}{625}u^3\zh^4\Phi^{[1]}+\tfrac{24}{625}u^4\zh^5\Phi\Bigr]=0 .
+\end{equation}
+\item The coefficient of $\zh^{n+1}$ of the left side of \eqref{eq:gau-HPF} is $(1-u)\bigl[(4n-5\theta_u)\mathrm{ph}_n+r_n\bigr]$, where, with $\Phi^\flat_{j,n}$ the coefficient of $\zh^n$ of $\Phi^{[j]}$ computed with $\mathrm{ph}_n$ replaced by $0$ (and $\Phi^{[j]}_m:=\coef{\zh^m}\Phi^{[j]}$, zero for $m<0$),
+\[
+r_n:=\sum_{j=1}^5\Bigl(\frac{4n+j}5-\theta_u\Bigr)\Phi^\flat_{j-1,n}-3\Phi^\flat_{4,n}-\tfrac{17}5u\Phi^{[3]}_{n-1}-\tfrac95u^2\Phi^{[2]}_{n-2}-\tfrac{274}{625}u^3\Phi^{[1]}_{n-3}-\tfrac{24}{625}u^4\mathrm{ph}_{n-4}
+\]
+depends only on $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$. So \eqref{eq:gau-HPF} holds if and only if $(4n-5\theta_u)\mathrm{ph}_n=-r_n$ for all $n\geq0$; here $r_0=0$, and $r_1=\frac35$ when $\mathrm{ph}_0=1$.
+\item If every $\mathrm{ph}_n$ lies in $\bbQ\fps u$, \eqref{eq:gau-HPF} reads $(4n-5k)\coef{u^k}\mathrm{ph}_n=-\coef{u^k}r_n$ for all $n,k\geq0$: for $5k\neq4n$ the coefficient $\coef{u^k}\mathrm{ph}_n$ is fixed by $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$, while for $n=5m$ the coefficient $\fc_m:=\coef{u^{4m}}\mathrm{ph}_{5m}$ is free and $\coef{u^{4m}}r_{5m}=0$ is required. In particular $\mathrm{ph}_0$ is a constant, and $\mathrm{ph}_0=1$ forces $\mathrm{ph}_1=-\frac3{20}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(1) Let $F^\flat=\sum_m\zh^mF^\flat_m$ (a local letter) and $F:=s^eF^\flat=\sum_mz^ms^{e-4m}F^\flat_m$. Since $\Dq=-(1-u)u^{-1}\theta_u$ and $\theta_u(s^c)=\frac c5s^c$, $\Dq(s^cf)=(1-u)s^{c-5}\bigl(-\frac c5-\theta_u\bigr)f$. With $c=e-4m+4$, the coefficient of $z^m$ in $(z\Dq+L)F$ is $\Dq(s^{e-4m+4}F^\flat_{m-1})+s^{e-4m-1}F^\flat_m=s^{e-4m-1}\bigl[F^\flat_m+(1-u)\bigl(\frac{4(m-1)-e}5-\theta_u\bigr)F^\flat_{m-1}\bigr]$, which is the coefficient of $z^m$ of $s^{e-1}\mathscr O_eF^\flat$. So $(z\Dq+L)(s^eF^\flat)=s^{e-1}\mathscr O_eF^\flat$.
+(2) By induction, $(z\Dq+L)^j(L\Phi)=(z\Dq+L)^j(s^{-1}\Phi)=s^{-1-j}\Phi^{[j]}$, and hence $z^m(z\Dq+L)^{5-m}(L\Phi)=s^{4m}\zh^m\,s^{m-6}\Phi^{[5-m]}=s^{-1}u^{m-1}\zh^m\Phi^{[5-m]}$.
+(3) As $5^5q=1-u$ and $\prod_{k=1}^5(5M+kz)=5^5\sum_{j=0}^5\sigma_j\,z^jM^{5-j}$ for $M=z\Dq$, with $\sigma_j$ the elementary symmetric functions of $\frac15,\dots,\frac55$ (local letters), i.e.\ $\sigma_0=1$ and $(\sigma_1,\dots,\sigma_5)=(3,\frac{17}5,\frac95,\frac{274}{625},\frac{24}{625})$, we have $\PFfive=uM^5-1-(1-u)\bigl(3zM^4+\frac{17}5z^2M^3+\frac95z^3M^2+\frac{274}{625}z^4M+\frac{24}{625}z^5\bigr)$. Replacing $M$ by $z\Dq+L$, applying the result to $L\Phi$, using (2) and dividing by $s^{-1}$ gives the left side of \eqref{eq:gau-HPF}. This proves (i).
+(4) From the definition, $\Phi^{[j]}_m=\Phi^{[j-1]}_m+(1-u)\bigl(\frac{4(m-1)+j}5-\theta_u\bigr)\Phi^{[j-1]}_{m-1}$: every raising of the $\zh$-degree carries a left factor $1-u$. Hence $\Phi^{[5]}_{n+1}-\mathrm{ph}_{n+1}=(1-u)\sum_{j=1}^5(\frac{4n+j}5-\theta_u)\Phi^{[j-1]}_n$. As $\Phi^{[j]}_n=\mathrm{ph}_n+\Phi^\flat_{j,n}$, the part of the coefficient of $\zh^{n+1}$ that contains $\mathrm{ph}_n$ is $(1-u)\bigl[\sum_{j=1}^5(\frac{4n+j}5-\theta_u)-3\bigr]\mathrm{ph}_n=(1-u)(4n-5\theta_u)\mathrm{ph}_n$, the $-3$ coming from $-3(1-u)\Phi^{[4]}_n$; the remaining terms are $(1-u)r_n$. Since $1-u$ is a unit, this proves (ii) apart from the values. For $n=0$ every term of $r_0$ vanishes. For $n=1$ and $\mathrm{ph}_0=1$: $\Phi^\flat_{j,1}=(1-u)\frac{j(j+1)}{10}$, and with $(c-\theta_u)(1-u)=c(1-u)+u$,
+\[
+r_1=\tfrac15\bigl(\tfrac65(1-u)+u\bigr)+\tfrac35\bigl(\tfrac75(1-u)+u\bigr)+\tfrac65\bigl(\tfrac85(1-u)+u\bigr)+2\bigl(\tfrac95(1-u)+u\bigr)-6(1-u)-\tfrac{17}5u=\tfrac35 .
+\]
+(5) For power series, $\theta_u$ acts on $u^k$ by $k$, which gives the first part of (iii); the eigenvalue $4n-5k$ vanishes only for $n=5m$, $k=4m$. For $n=0$, $(4\cdot0-5k)\coef{u^k}\mathrm{ph}_0=0$ gives $\mathrm{ph}_0\in\bbQ$; for $n=1$, $(4-5k)\coef{u^k}\mathrm{ph}_1=-\frac35\delta_{k0}$ gives $\mathrm{ph}_1=-\frac3{20}$.
+\end{proof}
+
+\begin{lem}[Power-series solutions of HPF are polynomial]
+\label{lem:gau-poly}
+Let $\Phi$ be a solution of \eqref{eq:gau-HPF} with $\mathrm{ph}_0=1$ and every $\mathrm{ph}_n\in\bbQ\fps u$.
+\begin{enumerate}
+\item Every $\mathrm{ph}_n$ is a polynomial in $u$.
+\item For $\mathsf k\in\bbQ\fps z$ with $\mathsf k(0)=1$, the product $\Phi\,\mathsf k(z)$ (with $z^n=s^{4n}\zh^n$) solves \eqref{eq:gau-HPF}, and its coefficients lie in $\bbQ\fps u$ if and only if $\mathsf k\in\bbQ\fps{z^5}$.
+\item The solutions of \eqref{eq:gau-HPF} with $\mathrm{ph}_0=1$ and coefficients in $\bbQ\fps u$ are exactly the $\Phi\,\mathsf k(z)$, $\mathsf k\in1+z^5\bbQ\fps{z^5}$; for every choice of the free coefficients $(\fc_m)_{m\geq1}$ there is exactly one of them, and $\Phi^\circ$ denotes the one with all $\fc_m=0$.
+\end{enumerate}
+In particular, as soon as one solution with coefficients in $\bbQ\fps u$ and $\mathrm{ph}_0=1$ exists, the resonance conditions $\coef{u^{4m}}r_{5m}=0$ hold for every choice of the free coefficients.
+\end{lem}
+
+\begin{proof}
+(i) By induction on $n$: if $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$ are polynomials, so is $r_n$, which is obtained from them by $\theta_u$ and multiplication by polynomials in $u$; by \cref{lem:gau-HPF}~(iii), $\coef{u^k}\mathrm{ph}_n=-\coef{u^k}r_n/(4n-5k)$ vanishes for $k>\deg r_n$, except possibly for the single free coefficient at $k=4n/5$. (ii) In the variables $(\zh,u)$, $z^m=s^{4m}\zh^m$ satisfies $\theta_{\zh}z^m=mz^m$ and $\theta_uz^m=\frac{4m}5z^m$, so $(\frac45\theta_{\zh}-\theta_u)(z^mF)=z^m(\frac45\theta_{\zh}-\theta_u)F$; hence every $\mathscr O_e$ commutes with multiplication by a series in $z$, and so does the left side of \eqref{eq:gau-HPF}, whose other coefficients involve only $\zh$ and $u$. The coefficient of $\zh^N$ of $\Phi\mathsf k$ is $\sum_n\mathsf k_ns^{4n}\mathrm{ph}_{N-n}$; if $n_0$ is the least index with $5\nmid n_0$ and $\mathsf k_{n_0}\neq0$, the coefficient of $\zh^{n_0}$ contains $\mathsf k_{n_0}s^{4n_0}$, a fractional power of $u$, plus power series; so the coefficients lie in $\bbQ\fps u$ if and only if no such $n_0$ exists. (iii) Let $\Phi'$ be a second such solution. We construct $\mathsf k^{(N)}\in1+z^5\bbQ[z^5]$ with $\Phi'\equiv\Phi\mathsf k^{(N)}$ modulo $\zh^N$, starting from $\mathsf k^{(1)}=1$. Both $\Phi'$ and $\Phi\mathsf k^{(N)}$ are solutions with coefficients in $\bbQ\fps u$ and $\mathrm{ph}_0=1$, by (ii), and they agree below $\zh^N$, so they have the same $r_N$, and the difference $\delta$ of their coefficients of $\zh^N$ satisfies $(4N-5\theta_u)\delta=0$. If $5\nmid N$, then $\delta=0$ and we put $\mathsf k^{(N+1)}:=\mathsf k^{(N)}$. If $N=5m$, then $\delta=\delta_0u^{4m}$ with $\delta_0\in\bbQ$, and $\mathsf k^{(N+1)}:=\mathsf k^{(N)}+\delta_0z^{5m}$ works, since $z^{5m}\Phi=u^{4m}\zh^{5m}(1+O(\zh))$. The limit $\mathsf k$ satisfies $\Phi'=\Phi\mathsf k$; it is unique because $\Phi$ is a unit of $\bbQ\lser s\fps{\zh}$. Conversely $\Phi\mathsf k$ is such a solution by (ii). The free coefficients of $\Phi\mathsf k$ are $\fc_m(\Phi\mathsf k)=\mathsf k_{5m}+\sum_{0<m'<m}\mathsf k_{5m'}\fc_{m-m'}(\Phi)+\fc_m(\Phi)$, a triangular system in the $\mathsf k_{5m}$ with unit diagonal; so every sequence of free coefficients is attained exactly once. The last assertion follows: for every choice of the free coefficients a solution exists, so no resonance condition fails.
+\end{proof}
+
+\begin{lem}[Formal WKB uniqueness]
+\label{lem:gau-wkb}
+Let $\Bbbk\supseteq\bbQ(\zeta)$ be a field (for $i=0$, any field $\Bbbk\supseteq\bbQ$), and let $(\cR,\Dq,L)$ be $(\Bbbk\fps q,\,q\,\dd/\dd q,\,(1-5^5q)^{-1/5})$ or $(\Bbbk\lser s,\Dq,s^{-1})$; in both, $\Dq L=(L^6-L)/5$ and $5^5q=1-L^{-5}$. For $i\in\bbZ/5$ let $\PFfive^{(i)}\in\cR[z][\Dq]$ be $\PFfive$ with $z\Dq$ replaced by $z\Dq+\zeta^iL$; a \emph{colour-$i$ WKB amplitude} of $\PFfive$ over $\cR$ is a series $\cA=\sum_{n\geq0}\cA_nz^n\in\cR\fps z$ with $\PFfive^{(i)}\cA=0$ (so that $\re^{u_i/z}\cA$ solves $\PFfive$ formally, $\Dq u_i=\zeta^iL$).
+\begin{enumerate}
+\item $\PFfive^{(i)}=\sum_{k=1}^5z^k\mathcal T^{\mathrm w}_k$ with $\mathcal T^{\mathrm w}_k\in\cR[\Dq]$ (local letters), and $\mathcal T^{\mathrm w}_1(Lg)=5\zeta^{4i}\Dq g$ for $g\in\cR$.
+\item If $\cA,\cA'$ are colour-$i$ WKB amplitudes with $\cA_0=\cA'_0=L$, then $\cA'=\cA\,\mathsf k(z)$ for a unique $\mathsf k\in1+z\Bbbk\fps z$; for $i=0$ and $\cA,\cA'$ with coefficients in $\bbQ\fps q$ or $\bbQ\lser s$, $\mathsf k\in1+z\bbQ\fps z$.
+\item $\cA(z)\mapsto\cA(\zeta^{-i}z)$ is a bijection from colour-$0$ to colour-$i$ WKB amplitudes that preserves $\cA_0$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) The coefficient of $z^0$ of $\PFfive^{(i)}$ is the multiplication by $(\zeta^iL)^5-1-q(5\zeta^iL)^5=L^5(1-5^5q)-1=0$. The coefficient of $z$ in $(z\Dq+\zeta^iL)^5$ is $\sum_{j=0}^4(\zeta^iL)^j\Dq(\zeta^iL)^{4-j}$, which acts as
+\[
+f\mapsto\zeta^{4i}\bigl(5L^4\Dq f+10L^3(\Dq L)f\bigr)=\zeta^{4i}\bigl(5L^4\Dq f+2(L^9-L^4)f\bigr).
+\]
+The coefficient of $z$ in $\prod_{k=1}^5\bigl(5\zeta^iL+z(5\Dq+k)\bigr)$ is $\sum_k(5\zeta^iL)^{k-1}(5\Dq+k)(5\zeta^iL)^{5-k}$, which acts as $f\mapsto5^4\zeta^{4i}(25L^4\Dq f+10L^9f+5L^4f)$. With $5^4q=(1-L^{-5})/5$ the difference is $\mathcal T^{\mathrm w}_1f=\zeta^{4i}\bigl(5L^{-1}\Dq f+(L^{-1}-L^4)f\bigr)$, and $\mathcal T^{\mathrm w}_1(Lg)=\zeta^{4i}\bigl(5\Dq g+(L^5-1)g+(1-L^5)g\bigr)=5\zeta^{4i}\Dq g$.
+(ii) The coefficient of $z^{n+1}$ of $\PFfive^{(i)}\cA$ is $\sum_{k=1}^5\mathcal T^{\mathrm w}_k\cA_{n+1-k}$, so the equation is $\mathcal T^{\mathrm w}_1\cA_n=-\sum_{k=2}^5\mathcal T^{\mathrm w}_k\cA_{n+1-k}$. As $L$ is a unit of $\cR$ and the constants of $\Dq$ on $\cR$ are $\Bbbk$, (i) gives $\ker\mathcal T^{\mathrm w}_1=\Bbbk L$. Multiplication by a constant series $\mathsf k(z)$ commutes with $\PFfive^{(i)}$. Suppose $\cA'\equiv\cA\mathsf k^{(n)}$ modulo $z^n$ for a polynomial $\mathsf k^{(n)}$ of degree less than $n$ with $\mathsf k^{(n)}(0)=1$ (for $n=1$, $\mathsf k^{(1)}=1$). Then $B:=\cA'-\cA\mathsf k^{(n)}$ is annihilated by $\PFfive^{(i)}$ and $B\equiv0$ modulo $z^n$, so its equation at $z^{n+1}$ is $\mathcal T^{\mathrm w}_1B_n=0$, i.e.\ $B_n=\mathsf k_nL$ with $\mathsf k_n\in\Bbbk$; and $\mathsf k^{(n+1)}:=\mathsf k^{(n)}+\mathsf k_nz^n$ gives $\cA'\equiv\cA\mathsf k^{(n+1)}$ modulo $z^{n+1}$, since $\coef{z^n}(\mathsf k_nz^n\cA)=\mathsf k_nL$. The limit $\mathsf k$ satisfies $\cA'=\cA\mathsf k$, and it is unique because $\cA$ is a unit. In the rational case of colour $0$ all data are rational, so every $\mathsf k_n$ is.
+(iii) Let $\sigma_i(\cA)(z):=\cA(\zeta^{-i}z)$, a ring automorphism of $\cR\fps z$ commuting with $\Dq$. Then $\sigma_i\circ z=\zeta^{-i}z\circ\sigma_i$ and $\sigma_i\circ(z\Dq+L)=\zeta^{-i}(z\Dq+\zeta^iL)\circ\sigma_i$. Apart from its constant term $-1$, $\PFfive=M^5-1-q\prod_k(5M+kz)$ is homogeneous of degree $5$ in $(M,z)$, $M=z\Dq$; as $\zeta^{-5i}=1$, $\sigma_i\circ\PFfive^{(0)}=\PFfive^{(i)}\circ\sigma_i$. So $\sigma_i$ maps colour-$0$ amplitudes to colour-$i$ amplitudes, with inverse $\sigma_{-i}$, and it fixes $\cA_0$.
+\end{proof}
+
+By (iii), (ii) for colour $i$ also follows from (ii) for colour $0$.
+
+\begin{lem}[Colour covariance of the model columns]
+\label{lem:gau-colmod}
+For $i\in\bbZ/5$ let $F^{(i)}=(F^{(i)}_b)_{b\in\bbZ/5}$ be the solution with $F^{(i)}_0(0)=1$ of the colour-$i$ T-system of \cref{prop:set-modrows}~(b), with $\mathcal T^{(i)}_k=-\zeta^i+\frac t5(k-4t\,\dd/\dd t)$; thus $\Fs_b=F^{(0)}_b$.
+\begin{enumerate}
+\item $F^{(i)}_b(t)=\zeta^{ib}\Fs_b(\zeta^{-i}t)$.
+\item The rows $\Rhat^{\mathrm m,(i)}_b(t)=\zeta^{i(b+1)}\Fs_b(\zeta^{-i}t)=\zeta^iF^{(i)}_b(t)$ of \cref{def:set-M0} are the rows of a WKB solution of the model system with exponential $\re^{U_i/z}$, $U_i:=-\frac54\zeta^i\varsigma^4$: the \emph{model columns} $\Qr^{\mathrm m,(i)}_b(v,z):=\varsigma^{\nu_b-1}\Rhat^{\mathrm m,(i)}_b(z/\varsigma^4)$ satisfy $z\,\de_v\Qr^{\mathrm m,(i)}_b+(\de_vU_i)\Qr^{\mathrm m,(i)}_b=b^{\mathrm m}_b\Qr^{\mathrm m,(i)}_{b+1}$.
+\item At $v=v(u)$: $\Qr^{\mathrm m,(i)}_b(u,z)=\zeta^{i(b+1)}\Qr^{\mathrm m,(0)}_b(u,\zeta^{-i}z)$, i.e.\ $\Qr^{\mathrm m,(i)}=\operatorname{Rot}_i\Qr^{\mathrm m,(0)}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) $t\,\dd/\dd t$ commutes with the substitution $t\mapsto\zeta^{-i}t$, and $t=\zeta^i(\zeta^{-i}t)$; hence $\mathcal T^{(i)}_k[G(\zeta^{-i}t)]=\zeta^i[\mathcal T^{(0)}_kG](\zeta^{-i}t)$ for every series $G$. Put $G_b(t):=\zeta^{ib}\Fs_b(\zeta^{-i}t)$. Then $G_1=\zeta^i[\mathcal T^{(0)}_{-1}\Fs_0](\zeta^{-i}t)=\mathcal T^{(i)}_{-1}G_0$, $G_2=-\zeta^{2i}[\mathcal T^{(0)}_{-2}\Fs_1](\zeta^{-i}t)=-\mathcal T^{(i)}_{-2}G_1$, and in the same way $G_3=\mathcal T^{(i)}_2G_2$ and $G_4=-\mathcal T^{(i)}_1G_3$; finally $G_0=-[\mathcal T^{(0)}_0\Fs_4](\zeta^{-i}t)=-\zeta^{-i}\mathcal T^{(i)}_0[\Fs_4(\zeta^{-i}t)]=-\zeta^{-5i}\mathcal T^{(i)}_0G_4=-\mathcal T^{(i)}_0G_4$, and $G_0(0)=1$. By the uniqueness in \cref{prop:set-modrows}~(b) (the pivot of the recursion at $\coef{t^{n+1}}$ is $4n\zeta^{4i}\neq0$), $F^{(i)}=G$. (ii) By \cref{prop:set-modrows}~(b), $\re^{U_i/z}\varsigma^{\nu_b-1}F^{(i)}_b(z/\varsigma^4)$ solves the model system, and so does its multiple by the constant $\zeta^i$. (iii) As $\varsigma$ depends on $u$ only, $\Qr^{\mathrm m,(i)}_b=\varsigma^{\nu_b-1}\zeta^{i(b+1)}\Fs_b(\zeta^{-i}z/\varsigma^4)=\zeta^{i(b+1)}\Qr^{\mathrm m,(0)}_b(u,\zeta^{-i}z)$.
+\end{proof}
+
+\input{sections/s03_gauge_7}

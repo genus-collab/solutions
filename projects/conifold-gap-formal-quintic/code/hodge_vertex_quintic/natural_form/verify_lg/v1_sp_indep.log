@@ -1,0 +1,21 @@
+independent J_k (Lagrange inversion), k = -4..8, through eps^12: 0.1 s
+   J_0 = 1, 3/80, 9/12800, -11571/5120000, -2415609/1638400000, -47735919/131072000000, 52989974037/104857600000000
+PASS hand value j_{0,1} = 3/80 and j_{0,2} = 9/12800 (task's hand check)
+PASS f = J_0(-4 zhat) = 1 - 3/20 zhat + 9/800 zhat^2 + 11571/80000 zhat^3 (task's identity row): ['1', '-3/20', '9/800', '11571/80000']
+PASS (a) report engine lg_sp.J_series == independent series, k = -4..8, orders <= 10
+PASS (b) report recursion (MC) == independent J_{c_a}(-4 zhat), a = 0..4, orders <= 12 (THEOREM B to this order)
+PASS (b) stored lg_symbol_rows_Q.json == independent series, orders <= 12
+PASS (b) g_3 == g_{-2} identically (orders <= 12)
+PASS (c) p = 2^89-1: symbol re-derived (Nz = 10), 275 residues == N_a zeta^{i(a+1-n)} [zhat^n] J_{c_a}(-4 zhat): 0 mismatches, 2.6 s
+PASS (c) control: without the signs N the comparison FAILS (mismatches > 0): 110 mismatches
+PASS (c) control: the labelling 'row a = J_a' fails for a = 1..4 and holds for a = 0: {0: 0, 1: 50, 2: 50, 3: 50, 4: 50}
+PASS (c) identity row == J_k(-4 zhat) only for k = 0 among k = -4..8: [0]
+PASS (d) p = 2^89-1, colour 0: deg_L phi_n = 4n and [L^{4n}] phi_n = zeta^{-in} [zhat^n] J_0(-4 zhat), n <= 12
+PASS (d) p = 2^89-1, colour 2: deg_L phi_n = 4n and [L^{4n}] phi_n = zeta^{-in} [zhat^n] J_0(-4 zhat), n <= 12
+PASS (c) p = 2^61-1: symbol re-derived (Nz = 10), 275 residues == N_a zeta^{i(a+1-n)} [zhat^n] J_{c_a}(-4 zhat): 0 mismatches, 3.1 s
+PASS (c) control: without the signs N the comparison FAILS (mismatches > 0): 110 mismatches
+PASS (c) control: the labelling 'row a = J_a' fails for a = 1..4 and holds for a = 0: {0: 0, 1: 50, 2: 50, 3: 50, 4: 50}
+PASS (c) identity row == J_k(-4 zhat) only for k = 0 among k = -4..8: [0]
+PASS (d) p = 2^61-1, colour 0: deg_L phi_n = 4n and [L^{4n}] phi_n = zeta^{-in} [zhat^n] J_0(-4 zhat), n <= 12
+PASS (d) p = 2^61-1, colour 2: deg_L phi_n = 4n and [L^{4n}] phi_n = zeta^{-in} [zhat^n] J_0(-4 zhat), n <= 12
+ALL PASS

@@ -1,0 +1,56 @@
+g2_linalg.py: 6 random points, exact over Q
+  [PASS] pt 0: det(x - At) = x^5 - B at six x 
+  [PASS] pt 0: rank ad At = 20 
+  [PASS] pt 0: At^m commute with At, span of dim 5; At^5 = B 
+  [PASS] pt 0: trace form on Q[At]: Gram det = 5^5 B^4 
+  [PASS] pt 0: X - pr(X) lies in im(ad At) (rank stays 20) 
+  [PASS] pt 0: control: with 1/4 in place of 1/5, X - pr(X) is NOT in the image 
+  [PASS] pt 0: control: a non-zero element of Q[At] is not in the image 
+  [PASS] pt 0: y-form (1/5)[Sum xi_a B/calB_a^(m)] y^(5-m) = the At^m form; supports of y^j disjoint 
+  [PASS] pt 0: lifting formula pi_a = rho_a calB_a^(d), rho_(a+1) - rho_a = xi_a/calB_a^(d+1) solves [At, Pi] = X - pr X 
+  [PASS] pt 1: det(x - At) = x^5 - B at six x 
+  [PASS] pt 1: rank ad At = 20 
+  [PASS] pt 1: At^m commute with At, span of dim 5; At^5 = B 
+  [PASS] pt 1: trace form on Q[At]: Gram det = 5^5 B^4 
+  [PASS] pt 1: X - pr(X) lies in im(ad At) (rank stays 20) 
+  [PASS] pt 1: control: with 1/4 in place of 1/5, X - pr(X) is NOT in the image 
+  [PASS] pt 1: control: a non-zero element of Q[At] is not in the image 
+  [PASS] pt 1: y-form (1/5)[Sum xi_a B/calB_a^(m)] y^(5-m) = the At^m form; supports of y^j disjoint 
+  [PASS] pt 1: lifting formula pi_a = rho_a calB_a^(d), rho_(a+1) - rho_a = xi_a/calB_a^(d+1) solves [At, Pi] = X - pr X 
+  [PASS] pt 2: det(x - At) = x^5 - B at six x 
+  [PASS] pt 2: rank ad At = 20 
+  [PASS] pt 2: At^m commute with At, span of dim 5; At^5 = B 
+  [PASS] pt 2: trace form on Q[At]: Gram det = 5^5 B^4 
+  [PASS] pt 2: X - pr(X) lies in im(ad At) (rank stays 20) 
+  [PASS] pt 2: control: with 1/4 in place of 1/5, X - pr(X) is NOT in the image 
+  [PASS] pt 2: control: a non-zero element of Q[At] is not in the image 
+  [PASS] pt 2: y-form (1/5)[Sum xi_a B/calB_a^(m)] y^(5-m) = the At^m form; supports of y^j disjoint 
+  [PASS] pt 2: lifting formula pi_a = rho_a calB_a^(d), rho_(a+1) - rho_a = xi_a/calB_a^(d+1) solves [At, Pi] = X - pr X 
+  [PASS] pt 3: det(x - At) = x^5 - B at six x 
+  [PASS] pt 3: rank ad At = 20 
+  [PASS] pt 3: At^m commute with At, span of dim 5; At^5 = B 
+  [PASS] pt 3: trace form on Q[At]: Gram det = 5^5 B^4 
+  [PASS] pt 3: X - pr(X) lies in im(ad At) (rank stays 20) 
+  [PASS] pt 3: control: with 1/4 in place of 1/5, X - pr(X) is NOT in the image 
+  [PASS] pt 3: control: a non-zero element of Q[At] is not in the image 
+  [PASS] pt 3: y-form (1/5)[Sum xi_a B/calB_a^(m)] y^(5-m) = the At^m form; supports of y^j disjoint 
+  [PASS] pt 3: lifting formula pi_a = rho_a calB_a^(d), rho_(a+1) - rho_a = xi_a/calB_a^(d+1) solves [At, Pi] = X - pr X 
+  [PASS] pt 4: det(x - At) = x^5 - B at six x 
+  [PASS] pt 4: rank ad At = 20 
+  [PASS] pt 4: At^m commute with At, span of dim 5; At^5 = B 
+  [PASS] pt 4: trace form on Q[At]: Gram det = 5^5 B^4 
+  [PASS] pt 4: X - pr(X) lies in im(ad At) (rank stays 20) 
+  [PASS] pt 4: control: with 1/4 in place of 1/5, X - pr(X) is NOT in the image 
+  [PASS] pt 4: control: a non-zero element of Q[At] is not in the image 
+  [PASS] pt 4: y-form (1/5)[Sum xi_a B/calB_a^(m)] y^(5-m) = the At^m form; supports of y^j disjoint 
+  [PASS] pt 4: lifting formula pi_a = rho_a calB_a^(d), rho_(a+1) - rho_a = xi_a/calB_a^(d+1) solves [At, Pi] = X - pr X 
+  [PASS] pt 5: det(x - At) = x^5 - B at six x 
+  [PASS] pt 5: rank ad At = 20 
+  [PASS] pt 5: At^m commute with At, span of dim 5; At^5 = B 
+  [PASS] pt 5: trace form on Q[At]: Gram det = 5^5 B^4 
+  [PASS] pt 5: X - pr(X) lies in im(ad At) (rank stays 20) 
+  [PASS] pt 5: control: with 1/4 in place of 1/5, X - pr(X) is NOT in the image 
+  [PASS] pt 5: control: a non-zero element of Q[At] is not in the image 
+  [PASS] pt 5: y-form (1/5)[Sum xi_a B/calB_a^(m)] y^(5-m) = the At^m form; supports of y^j disjoint 
+  [PASS] pt 5: lifting formula pi_a = rho_a calB_a^(d), rho_(a+1) - rho_a = xi_a/calB_a^(d+1) solves [At, Pi] = X - pr X 
+RESULT: ALL CHECKS PASSED

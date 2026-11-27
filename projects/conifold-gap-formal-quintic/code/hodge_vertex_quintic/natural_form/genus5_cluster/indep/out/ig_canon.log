@@ -1,0 +1,16 @@
+package list: 4555 graphs
+   0/4555 (0 s)
+   500/4555 (0 s)
+   1000/4555 (0 s)
+   1500/4555 (1 s)
+   2000/4555 (2 s)
+   2500/4555 (3 s)
+   3000/4555 (6 s)
+   3500/4555 (10 s)
+   4000/4555 (18 s)
+   4500/4555 (53 s)
+own canon + own |Aut| for all 4555 graphs in 65 s
+distinct own canonical forms: 4555 of 4555
+own |Aut| equals the package |Aut| for all 4555 graphs; max |Aut| = 3840
+contraction sanity: 9110 checks (contract everything -> vertex graph, contract nothing -> itself) all pass
+wrote G:\My Drive\Projects\Old\refGW\hodge_vertex_quintic\natural_form\genus5_cluster\indep\out\canon_map.json

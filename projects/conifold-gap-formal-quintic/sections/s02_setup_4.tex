@@ -1,0 +1,97 @@
+% Section 2, part 4 of 8: the R-matrix and its rows; (QRR); the twist sign; h_w rotation; the graph sum; the two forms of the translation; (T).
+
+%-------------------------------------------------------------------------------
+\subsection{The \texorpdfstring{$R$}{R}-matrix, its rows and quantum Riemann--Roch}
+\label{sec:set-rows}
+
+\begin{defn}[The $R$-matrix and its rows]
+\label{def:set-rows}
+Let $R(z)=1+\sum_{k\geq1}R_kz^k$, $R_k\in\End(\bbH)\otimes\bbQ(\zeta)\fps q$, be the $R$-matrix of the semisimple cohomological field theory of the formal quintic along the line $t=T(q)H$ \cite[Section~4.1]{GJR18}, that is, the $R$-matrix of the quoted input (T), \cref{thm:set-GT}. It has the following properties: (a) is part of the quoted input (T), (b) is part of the quoted input (QRR), \cref{thm:set-qrr}, and (c) is Givental's convention:
+\begin{itemize}
+\item[(a)] $R$ is symplectic: $R(-z)^T\eta\,R(z)=\eta$, as matrices in the flat basis;
+\item[(b)] for every colour $i$ the column $R(z)\tilde e_i\re^{u_i/z}$ solves the quantum differential equation $z\partial_Tv=H*v$, that is, $w\coloneqq R(z)\tilde e_i$ satisfies $z\partial_Tw+\mu_iw=H*w$ (\cref{cor:set-cyclicPF5}~(a));
+\item[(c)] in the graph sums of \cref{def:set-graphsum}, $R$ acts with $R^{-1}(\psi)$ on the legs.
+\end{itemize}
+The flatness (b) and the value of $R$ at $q=0$ form the quoted input (QRR), \cref{thm:set-qrr}; that the graph sum of $R$ is the cohomological field theory of the formal quintic is the quoted input (T), \cref{thm:set-GT}, which includes (a). Property (b) is not a convention: it says that the $R$-matrix of the cohomological field theory is the asymptotic solution of the quantum differential equation, and it is used in \cref{prop:set-cyclicLR}~(iii). By \cref{lem:set-Runique}, which uses only (M) and (G0), (b) and the value at $q=0$ determine $R$, and (a) follows from them. So (QRR) and (T) together say that the graph sum of the unique series of \cref{lem:set-Runique} is the cohomological field theory of the formal quintic; no uniqueness of the $R$-matrix in (T) is used, and (a), although part of the quoted statement (T), is not an independent input.
+
+The \emph{rows} are the lowered components $\Qr^{(i)}_a(z)\coloneqq\eta(H^a,R(z)\tilde e_i)\in\bbQ(\zeta)\fps q\fps z$, with the coefficients $\Qr^{(i)}_{a,n}\coloneqq\coef{z^n}\Qr^{(i)}_a$; $\Qr$ is the matrix $(\Qr^{(i)}_a)$, rows indexed by $a$, columns by $i$. With $\zh=L^4z$ we \emph{define} $\Phi_i(\zh,u)\coloneqq C_0\,\Qr^{(i)}_0(z)/(\zeta^iL)$, i.e.\ $\coef{\zh^n}\Phi_i\coloneqq C_0\,\Qr^{(i)}_{0,n}/(\zeta^iL^{4n+1})$, and the coefficients $\mathrm{ph}_n(u)$ by $\Phi_0(\zh,u)=\sum_{n\geq0}\mathrm{ph}_n(u)\,\zh^n$, power series in $q=(1-u)/5^5$; $\mathrm{ph}_0=1$, because $R|_{z=0}=1$ and $\eta(1,\tilde e_0)=\Delta_0^{-1/2}=L/C_0$ (\cref{def:set-frob}). The \emph{flat amplitudes} are
+\[
+A_n\coloneqq\coef{z^n}\bigl(C_0\,\Qr^{(0)}_0\bigr)=L^{4n+1}\,\mathrm{ph}_n(L^{-5}),\qquad\text{so that}\quad\sum_nA_nz^n=L\,\Phi_0(L^4z,L^{-5}).
+\]
+\end{defn}
+
+\begin{proof}[Proof of \cref{prop:set-cyclicLR}~(iii) and of the end of \cref{cor:set-cyclicPF5}~(b)]
+For $w\coloneqq R(z)\tilde e_i$, \cref{def:set-rows}~(b) and the argument of \cref{prop:set-cyclicLR}~(ii) give $z\partial_Tw_a+\mu_iw_a=\eta(H*H^a,w)=\kappa^{\mathrm{LR}}_aw_{a+1}$, $w_a=\Qr^{(i)}_a$; multiplying by $C_1$, with $C_1\mu_i=\zeta^iL$, gives $(z\Dq+\zeta^iL)\Qr^{(i)}_a=C_1\kappa^{\mathrm{LR}}_a\Qr^{(i)}_{a+1}$. Dividing by $\zeta^i$ gives the relations for $X_a$ ($C_1\kappa^{\mathrm{LR}}_4=C_0$), and $X_0=L\Phi_i/C_0$ is the definition of $\Phi_i$. For the WKB form let $\mathsf B\coloneqq\bbQ(\zeta)\fps q\lser z[\mathsf E,\mathsf E^{-1}]$ with $\Dq\mathsf E\coloneqq z^{-1}\zeta^iL\,\mathsf E$ (a local letter: $\mathsf E$ stands for $\re^{u_i/z}$, $\Dq u_i=\zeta^iL$), a differential $\bbQ\fps q$-algebra in which $z$ is a constant. By \cref{def:set-rows}~(b), $v\coloneqq R(z)\tilde e_i\,\mathsf E$ solves $z\partial_Tv=H*v$ over $\mathsf B$, as $z\partial_T(w\mathsf E)=(z\partial_Tw+\mu_iw)\mathsf E$; so $C_0v_0=\zeta^iL\Phi_i\,\mathsf E$ solves $\PFfive$ by \cref{cor:set-cyclicPF5}~(b); multiply by the constant $z\zeta^{-i}$. Moreover $\Dq(f\mathsf E)=\bigl((\Dq+z^{-1}\zeta^iL)f\bigr)\mathsf E$ gives $\PFfive(f\mathsf E)=(\PFfive^{(i)}f)\,\mathsf E$ for $f\in\bbQ(\zeta)\fps q\lser z$, where $\PFfive^{(i)}$ is $\PFfive$ with $z\Dq$ replaced by $z\Dq+\zeta^iL$; as $\mathsf E$ is a unit of $\mathsf B$, $\PFfive^{(i)}(L\Phi_i)=0$.
+\end{proof}
+
+The colour covariance $\Qr^{(i)}_{a,n}=\zeta^{i(a+1-n)}\Qr^{(0)}_{a,n}$ is \cref{lem:gau-colrows}; the equation of $\Phi_0$ is that of \cref{lem:gau-HPF}~(i), (ii), which hold in the same way for coefficients in $\bbQ(\zeta)\fps q$; item (iii) there concerns coefficients in $\bbQ\fps u$ only.
+
+\begin{thm}[Flatness of the $R$-matrix and its value at $q=0$, (QRR); quoted]\genusstatus{AI-proposed, unchecked}
+\label{thm:set-qrr}
+For a finite multiset $\mathbf w$ of non-zero numbers put
+\begin{equation}
+\label{eq:set-hw}
+\hw(z)\coloneqq\exp\Bigl(-\sum_{k\geq1}\bk_k\,z^{2k-1}\sum_{a\in\mathbf w}a^{1-2k}\Bigr),\qquad\bk_k\coloneqq\frac{B_{2k}}{2k(2k-1)},
+\end{equation}
+and $\bw_i\coloneqq\{\zeta^i-\zeta^j\}_{j\neq i}\cup\{-5\zeta^i\}$. The $R$-matrix of \cref{def:set-rows} has coefficients in $\End(\bbH)\otimes\bbQ(\zeta)\fps q$ and satisfies \cref{def:set-rows}~(b); and $R(q=0)=\diag(h_{\bw_0},\dots,h_{\bw_4})$ in the basis $\tilde e_i(q=0)$: $R(0,z)\tilde e_i(0)=h_{\bw_i}(z)\,\tilde e_i(0)$, where $R(0,z)$ is the part of order $q^0$ of $R(z)$, to all orders in $z$.
+\end{thm}
+
+Flatness is \cite[Lemma~5.2, (16)]{GJR18}: there $R_{i\bar\alpha}=\eta(H^i,R\,\bar e_\alpha)$ is our row $\Qr^{(\alpha)}_i$, $L_\alpha=\zeta^\alpha L$ at $\lambda=1$, and the matrix on the right is that of $C_1H*$, so that (16) is literally \cref{prop:set-cyclicLR}~(iii); see also \cite[\S4.2, (12)--(13)]{GJR17}, and in general \cite[Section~1, Proposition (a)--(c)]{Giv01} and \cite[Props.~7.7, 8.2~(ii), 8.4, 8.7~(ii)]{MR2917177}. The value at $q=0$ is \cite[proof of Lemma~5.2, (17)]{GJR18} and \cite[proof of Lemma~4.6, (19)--(20)]{GJR17} at $t=0$; both refer to \cite[Section~2.2, Theorem~1 and the Remark after it]{Giv01} and \cite[Theorem~1, Corollary~1]{MR2276766}. The value is used only in the following form, for every colour $i$:
+\begin{equation}
+\label{eq:set-qrr}
+\Phi_i(z,1)=h_{\bw_i}(z);
+\end{equation}
+in particular, with $h\coloneqq h_{\bw_0}$ and $h_n\coloneqq\coef{z^n}h$, $A_n(q=0)=\mathrm{ph}_n(1)=h_n$.
+
+\begin{proof}[Proof of \eqref{eq:set-qrr}]
+At $q=0$, $u=1$, $L=1$, $\zh=z$ and $C_0=1$. For every $q$, $\eta(1,\tilde e_i)=\Delta_i^{1/2}\eta(e_i,e_i)=\Delta_i^{-1/2}=\zeta^iL/C_0$ (\cref{cor:set-cyclicPF5}~(a), \cref{def:set-frob}). By (QRR) the part of order $q^0$ of $\Qr^{(i)}_0$ is $h_{\bw_i}(z)\,\eta(1,\tilde e_i)|_{q=0}=\zeta^ih_{\bw_i}(z)$, so $\Phi_i(z,1)=h_{\bw_i}(z)$.
+\end{proof}
+
+\begin{rmk}[The twist sign]
+\label{rmk:set-qrrsign}
+The weight $-5\zeta^i$ in $\bw_i$ is minus the fibre weight $5\zeta^i$ of $\cO(5)$ at $p_i$, the sign of an Euler-class twist: the Chern root $5\zeta^i$ contributes $\exp\bigl(+\sum_m\bk_m(z/5\zeta^i)^{2m-1}\bigr)=\exp\bigl(-\sum_m\bk_mz^{2m-1}(-5\zeta^i)^{1-2m}\bigr)$. The same sign appears in \cite[(17)]{GJR18}, \cite[Corollary~1]{MR2276766} and \cite[(26)]{LP20}. Pairing $j$ with $5-j$ gives $\frac1{1-\zeta^j}+\frac1{1-\zeta^{-j}}=1$, so $\sum_{a\in\bw_0}a^{-1}=2-\frac15=\frac95$ and $h_1=-\frac1{12}\cdot\frac95=-\frac3{20}$, whereas the weight $+5$ would give $-\frac{11}{60}$. The value $h_1=-\frac3{20}$ comes from (QRR). It agrees with \cref{lem:gau-HPF}~(iii), which forces $\mathrm{ph}_1=-\frac3{20}$ for a solution with coefficients in $\bbQ\fps u$; but this is not an independent check of the sign: over $\bbQ\fps q$ the equation $(4-5\theta_u)\mathrm{ph}_1=-\frac35$ of \cref{lem:gau-HPF}~(ii) also has the solutions $-\frac3{20}+k\,u^{4/5}$, $u^{4/5}=(1-5^5q)^{4/5}$ (the freedom of \cref{lem:gau-wkb}~(ii)), and that the actual $\mathrm{ph}_1$ is the constant one is part of Theorem~C, which uses (QRR).
+\end{rmk}
+
+\begin{lem}[Rotation of the colours]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-hrot}
+$h_{\bw_i}(z)=h_{\bw_0}(\zeta^{-i}z)$ for every $i$.
+\end{lem}
+
+\begin{proof}
+As multisets $\bw_i=\zeta^i\bw_0$, so $\sum_{a\in\bw_i}a^{1-2k}z^{2k-1}=\sum_{a\in\bw_0}a^{1-2k}(\zeta^{-i}z)^{2k-1}$ in \eqref{eq:set-hw}.
+\end{proof}
+
+\begin{lem}[Flatness and the value at $q=0$ determine $R$]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-Runique}
+Assume (M) and (G0). There is exactly one series $R(z)=1+\sum_{k\geq1}R_kz^k$, $R_k\in\End(\bbH)\otimes\bbQ(\zeta)\fps q$, which satisfies \cref{def:set-rows}~(b) and $R(0,z)\tilde e_i(0)=h_{\bw_i}(z)\tilde e_i(0)$ for every $i$; and it satisfies \cref{def:set-rows}~(a).
+\end{lem}
+
+\begin{proof}
+The $\tilde e_i$ have flat components in $\bbQ(\zeta)\fps q$ (\cref{cor:set-cyclicPF5}~(a), \cref{def:set-frob}: $\kappa^{\mathrm{LR}}_b$, $C_1/L$ and $C_0/L$ lie in $\bbQ\fps q$) and are orthonormal, so they form a basis of $\bbH\otimes\bbQ(\zeta)\fps q$ over $\bbQ(\zeta)\fps q$, and $x=\sum_j\eta(\tilde e_j,x)\tilde e_j$. Write $R(z)\tilde e_i=\sum_jY_{ji}(z)\tilde e_j$, $Y=1+\sum_{k\geq1}Y_kz^k$ with entries in $\bbQ(\zeta)\fps q$, and $\Dq\tilde e_i=\sum_j\Theta_{ji}\tilde e_j$, $\Theta_{ji}=\eta(\tilde e_j,\Dq\tilde e_i)$ ($\Theta$ a local letter; $\Dq$ acts on the flat components). As $\eta(\tilde e_i,\tilde e_j)=\delta_{ij}$ and the pairing of the flat basis are constant, $\Theta$ is antisymmetric, and its entries lie in $q\bbQ(\zeta)\fps q$, because $\Dq$ maps $\bbQ(\zeta)\fps q$ onto $q\bbQ(\zeta)\fps q$, with kernel $\bbQ(\zeta)$. Since $C_1H*\tilde e_j=\zeta^jL\,\tilde e_j$ (\cref{cor:set-cyclicPF5}~(a)), property (b), multiplied by $C_1$, reads $z\Dq Y+z\Theta Y=[\Dq U,Y]$ with $\Dq U\coloneqq\diag(\Dq u_j)=\diag(\zeta^jL)$, that is,
+\[
+(\Dq Y_k+\Theta Y_k)_{ji}=(\zeta^j-\zeta^i)L\,(Y_{k+1})_{ji}\qquad(k\geq0,\ Y_0=1).
+\]
+(The coefficient of $z^0$ is $[\Dq U,Y_0]=0$.) For $j\neq i$ this determines the off-diagonal entries of $Y_{k+1}$ from $Y_k$, as $(\zeta^j-\zeta^i)L$ is a unit of $\bbQ(\zeta)\fps q$ ($L\in1+q\bbQ\fps q$); they lie in $q\bbQ(\zeta)\fps q$, because the left side does. For $j=i$, with $k+1$ in place of $k$, it reads $\Dq(Y_{k+1})_{ii}=-\sum_{l\neq i}\Theta_{il}(Y_{k+1})_{li}$. The right side lies in $q\bbQ(\zeta)\fps q$, so this equation has a solution in $\bbQ(\zeta)\fps q$ for every prescribed constant term, and exactly one; the equation with $j=i$ and $k=0$ holds, as $\Theta_{ii}=0$. So, by induction on $k$, for every family of constants $c_{k,i}\in\bbQ(\zeta)$ ($k\geq1$) there is exactly one solution $Y$ with $(Y_k)_{ii}(q=0)=c_{k,i}$, and every solution has $Y(q=0)$ diagonal. The condition at $q=0$ is $Y(q=0)=\diag(h_{\bw_i})$, that is $c_{k,i}=\coef{z^k}h_{\bw_i}$; this proves existence and uniqueness, $R(z)$ being the endomorphism with the matrix $Y(z)$ in the basis $\tilde e_i$. For (a) put $N(z)\coloneqq Y(-z)^TY(z)$ (a local letter). From the equation and its transpose at $-z$, using $\Theta^T=-\Theta$, $z\Dq N=[\Dq U,N]$. For $j\neq i$ the lowest coefficient in $z$ of $N_{ji}$ is annihilated by the unit $(\zeta^j-\zeta^i)L$, so $N_{ji}=0$; and $\Dq N_{ii}=0$, so $N_{ii}\in\bbQ(\zeta)\fps z$ is its value at $q=0$, which is $h_{\bw_i}(-z)h_{\bw_i}(z)=1$ because $Y(q=0)$ is diagonal and the exponent of $h_{\bw_i}$ is odd in $z$ \eqref{eq:set-hw}. Hence $Y(-z)^TY(z)=1$, which is (a) in the orthonormal basis $\tilde e_i$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The graph sum}
+\label{sec:set-graph}
+
+\begin{defn}[The Givental--Teleman graph sum]
+\label{def:set-graphsum}
+Let $\Omega$ be a cohomological field theory with unit $1$ \cite[Def.~0.3]{PPZ15} on a free module $V$ of finite rank with a perfect symmetric pairing $\eta$ (its Gram matrix is invertible) over a commutative $\bbQ$-algebra, and $R(z)=1+O(z)\in\End(V)\fps z$ symplectic, $R(-z)^*R(z)=1$ with ${}^*$ the $\eta$-adjoint \cite[(5)]{PPZ15}. The ancestor correlators are $\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\rangle_h\coloneqq\int_{\overline{\mathcal M}_{h,n}}\Omega_{h,n}(a_1,\dots,a_n)\prod_j\psi_j^{k_j}$; for $q\in V\fps z$ (a point of the loop space, not the parameter $q$) the dilaton-shifted potential is $\overline F^\Omega_h(q)\coloneqq\sum_{n:\,2h-2+n>0}\frac1{n!}\langle(q+z1)^n\rangle_h$, with $z^ka\mapsto\psi^ka$ (base point $q=-z1$), and $\dd^n\overline F^\Omega_h(q)$ is the symmetric form $(x_1,\dots,x_n)\mapsto\sum_m\frac1{m!}\langle x_1\cdots x_n(q+z1)^m\rangle_h$ on $V\fps z$. The \emph{edge} and the \emph{leaf point} of $R$ are
+\begin{gather*}
+E_R(\psi,\psi')\coloneqq\frac{\eta^{-1}-\bigl(R^{-1}(\psi)\otimes R^{-1}(\psi')\bigr)\eta^{-1}}{\psi+\psi'}\in(V\otimes V)\fps{\psi,\psi'},\\
+q_R(z)\coloneqq R^{-1}(z)(-z1)=-z1+\ttr_R(z),
+\end{gather*}
+where $\eta^{-1}\in V\otimes V$ is the inverse bivector, $E_R$ is a power series by the symplectic condition \cite[Rem.~2.1, (6)]{PPZ15}, and $\ttr_R(z)\coloneqq z1-zR^{-1}(z)1\in z^2V\fps z$ is the translation of \cite[Def.~2.13]{PPZ15}. For a stable graph $\Gamma$ without legs, with vertices $v$ of genus $g_v$ and valence $n_v$ and of total genus $g=\sum_vg_v+h^1(\Gamma)$, and a bivector series $E$ symmetric under the exchange of its two slots (together with $\psi$, $\psi'$), the contraction
+\[
+\mathrm{Cont}_\Gamma[E,q;\Omega]\coloneqq|\Aut\Gamma|^{-1}\Bigl\langle\prod_v\dd^{n_v}\overline F^\Omega_{g_v}(q),\ \prod_eE\Bigr\rangle
+\]
+contracts, at each vertex, the $n_v$-th derivative of $\overline F^\Omega_{g_v}$ at $q$, one slot for each half-edge, with one copy of $E(\psi,\psi')$ for each edge, its two slots at the two half-edges; sums over graphs carry no further factor. For $q=q_R$ the contraction is finite, as $\ttr_R\in z^2V\fps z$. Let $R.\Omega$ be the unit-preserving action of \cite[Defs.~2.2, 2.5, 2.13]{PPZ15}: legs $R^{-1}(\psi)$, edges $E_R$, translation $\ttr_R$, as in Givental and Teleman \cite[p.~20]{PPZ15}. There the translation points are pushed forward, whereas the vertex tensors above insert them; for $g\geq2$ the two forms agree (\cref{lem:set-pushins}~(iii)). The sum $\sum_\Gamma\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$ over the leg-free stable graphs of genus $g$ is the \emph{graph sum of genus $g$}. The definitions of \cite{PPZ15} used in the note are finite sums; they make sense over every commutative $\bbQ$-algebra $A$, for $V$ free of finite rank with a perfect pairing and classes in $H^*(\overline{\mathcal M}_{g,n},\bbQ)\otimes_\bbQ A$. Two propositions of \cite{PPZ15}, stated there over $\bbQ$, are used over other rings: \cite[Prop.~2.12]{PPZ15} ($R.\Omega$ is a cohomological field theory with the unit of $\Omega$) and \cite[Prop.~2.14]{PPZ15} (the unit-preserving action is a left group action). They are applied only to a topological field theory $\TFT_y$ on $A^r$ with an orthonormal basis $e_i$, $(\TFT_y)_{g,n}(e_i,\dots,e_i)=y_i^{-(2g-2+n)}$, zero on mixed colours, with the unit $\sum_iy_ie_i$, $y_i\in A^\times$, and to series $R=1+O(z)$ with $R(-z)^TR(z)=1$, that is, $R=\exp(r)$ with $r=\sum_{k\geq1}r_kz^k$ and $r_k^T=(-1)^{k+1}r_k$. In a $\bbQ$-basis of $H^*(\overline{\mathcal M}_{g,n},\bbQ)$, for fixed $(g,n)$, each conclusion used is a finite family of identities between Laurent polynomials over $\bbQ$ in the $y_i$ and in finitely many free coordinates of the $r_k$. \cite{PPZ15} gives them at all points with $y\in(\bbQ^\times)^r$ and rational $r_k$; as $\bbQ$ is infinite they are identities of Laurent polynomials, and so they hold over $A$.
+
+\emph{Colours.} When $\Omega=\TFT$ (\cref{def:set-frob}), which vanishes on mixed colours, a \emph{coloured graph} is a stable graph with a colour at each vertex, and the term of $\Gamma$ is the sum over its colourings. For a constant isometry $A\colon(W,\eta_W)\to(V,\eta)$ and $A_*\Omega\coloneqq\Omega\circ(A^{-1})^{\otimes n}$, $A_*(R.\Omega)=(ARA^{-1}).(A_*\Omega)$, immediate from \cite[Defs.~2.2, 2.13]{PPZ15}; it gives the graph sum in the colour basis (\cref{sec:sgn}).
+\end{defn}
+
+\input{sections/s02_setup_5}

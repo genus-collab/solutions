@@ -1,0 +1,9 @@
+g = 2: (A0) the two classes as polynomials in FREE lambda's: differ (expected: differ; they agree only modulo Mumford's relation)
+g = 2: (A) LP (26) class = project class (W_i)^(g-1) Hodge_(w_i) modulo Mumford, all degrees, i = 0..4: PASS
+g = 2: (B) N_(g,0) from LP (26) = -19/9600; project value -19/9600: PASS
+g = 2: (C) control, twist class w^(1-g) Lambda^v(w)/w^g: -97/28800; project formula with weight +5 l_i: -97/28800 (control must differ from -19/9600: FAIL as expected)
+g = 3: (A0) the two classes as polynomials in FREE lambda's: differ (expected: differ; they agree only modulo Mumford's relation)
+g = 3: (A) LP (26) class = project class (W_i)^(g-1) Hodge_(w_i) modulo Mumford, all degrees, i = 0..4: PASS
+g = 3: (B) N_(g,0) from LP (26) = 1/224000; project value 1/224000: PASS
+g = 3: (C) control, twist class w^(1-g) Lambda^v(w)/w^g: 1/81000; project formula with weight +5 l_i: 1/81000 (control must differ from 1/224000: FAIL as expected)
+ALL CHECKS PASSED

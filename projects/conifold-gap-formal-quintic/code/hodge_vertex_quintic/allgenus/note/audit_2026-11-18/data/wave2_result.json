@@ -1,0 +1,2369 @@
+{
+ "failed": [],
+ "tally": {},
+ "tasks": [
+  {
+   "key": "U12",
+   "title": "Comparison of the flat and the outer sums (thm:flh-main and its lemmas)",
+   "summaries": [
+    "[A] Section 7 holds up. Every statement is proved and every cited result is used within its hypotheses. I re-derived the formulas the argument depends on: the hatting exponent 10(g-1), the symplectic defect M(D(z)D(-z))^{-1}M^{-1}, the unit of Psi_Q, TFT = d.TFT^m (with d = varpi_0 tau^{1/4} = 1/p_{0,0}, matching lem:gau-diag) and the dilaton re-expansion. All four lemmas and Steps 1-4 of thm:flh-main check out; the degree bounds show T_Gamma depends on R' only modulo z^{3g-2}. The chain is not circular: thm:gam-D, which supplies (F_g), uses no flh result. A small Wolfram check confirmed M_0(-t)^T M_0(t) = 1 through t^8. The only findings are minor: wording, notation clashes and trivial implicit hypotheses.",
+    "[B] I found no fatal point, no gap and nothing that needs a repair: thm:flh-main is proved as stated. Under (F_g), T_Gamma = F_Gamma for every leg-free stable graph of genus g >= 2 in every conifold frame, and G_Gamma = u^{2g-2} T_Gamma holds without hypotheses. I re-derived Steps 1-4 and every lemma, and checked the hypotheses of each cited result. The degree bound, the units, the ring and topology, and every use of symplecticity hold. Wolframscript checks agree with the text: the matrix identity of lem:flh-inputs (iii), Psi_Q = P_0 Psi^m with P_0 diagonal, d = varpi_0 tau^{1/4} with d(0) = 1, and TFT = d.TFT^m. Later sections use these statements only in the form proved. Seven minor points of wording and notation remain."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U12-1",
+     "lens": "A",
+     "title": "Remark asserts 'different graph terms' without argument",
+     "label": "rmk:flh-fail",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "100",
+     "problem": "No proof or reference to a computation is given. The remark enters no proof."
+    },
+    {
+     "id": "U12-2",
+     "lens": "B",
+     "title": "Remark on scalar D omits the needed coefficient conditions",
+     "label": "rmk:flh-fail",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "100",
+     "problem": "A scalar D forces c in Q(zeta)[[z^5]]. A regular gauge in the sense of thm:gau-U (over Q) also needs rational coefficients, which come from thm:con-glue. Neither is stated. This is a remark and no proof uses it."
+    },
+    {
+     "id": "U12-3",
+     "lens": "A",
+     "title": "Overloaded letters E and N in lem:flh-hat and Step 1",
+     "label": "lem:flh-hat",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "16-23, 78",
+     "problem": "Notational clash. Unambiguous in context."
+    },
+    {
+     "id": "U12-4",
+     "lens": "B",
+     "title": "Notation clashes: E, N and the ring letter",
+     "label": "thm:flh-main",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "16-23, 78",
+     "problem": "Cosmetic clashes that could confuse a reader. Validity is not affected."
+    },
+    {
+     "id": "U12-5",
+     "lens": "A",
+     "title": "Psi_Q denotes both the ring matrix and its conifold expansion",
+     "label": "lem:flh-inputs",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "32, 56-60",
+     "problem": "Notation clash with def:set-outer and lem:mai-Psi, which call the expansion Psi_cf. Both meanings appear in the same paragraph. The argument itself is correct."
+    },
+    {
+     "id": "U12-6",
+     "lens": "A",
+     "title": "(unit) defined for symplectic O but applied to non-symplectic R'",
+     "label": "lem:flh-inputs",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "41, 56-60, 78",
+     "problem": "(unit) is formulated in def:flh-outer (iii) for symplectic series. R' is not known to be symplectic there. Only R'_0 (an isometry) is involved, so nothing depends on it."
+    },
+    {
+     "id": "U12-7",
+     "lens": "A",
+     "title": "P_0 acting on vectors versus lowered components; d's definition mis-attributed",
+     "label": "lem:flh-inputs",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "56, 60",
+     "problem": "P_0 acts on lowered components; on vectors the map is P_0^vec. The two readings agree because (P_0)_{33} = (P_0^vec)_{00} = d. d is defined in def:tra-dressing, not conv:tra-forms."
+    },
+    {
+     "id": "U12-8",
+     "lens": "B",
+     "title": "Overstated: z^0 identities 'proved in N (x) Q(zeta) itself'",
+     "label": "lem:flh-inputs",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "63",
+     "problem": "Only the unit identity sum_j Delta_j^{-1/2}(Psi_Q)_{aj} = 5 delta_{a3} is proved there. Psi_Q = P_0 Psi^m and the isometry of Psi_Q are derived in Q(zeta)((s)) from (ii). Harmless, since neither needs ev to be injective."
+    },
+    {
+     "id": "U12-9",
+     "lens": "A",
+     "title": "Notation 'Pc.Omega^mod' suggests an R-action although Pc(0)!=1",
+     "label": "thm:flh-main",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "70",
+     "problem": "This is not a unit-preserving action. It is the sum of def:red-flatsum, which is cited every time. Suggestive notation only."
+    },
+    {
+     "id": "U12-10",
+     "lens": "B",
+     "title": "E_{R''} called 'the edge of PPZ Def. 2.2'",
+     "label": "thm:flh-main",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "80",
+     "problem": "PPZ's edge is for R(0)=1 on a single space, but R'' maps the colour space to H with R''(0) = Psi_Q. What is meant is the formula of def:flh-outer (iii), equivalently E_X for X = Psi_Q^{-1}R''. Wording only."
+    },
+    {
+     "id": "U12-11",
+     "lens": "B",
+     "title": "Hatted unit hat-1 = s1 mixes coordinates",
+     "label": "lem:flh-hat",
+     "file": "sections/s07_comparison_2.tex",
+     "lines": "9, 12",
+     "problem": "hat-R' acts on hatted lowered components, where hat-H^0 is (0,0,0,5,0). The formula holds because Lambda_s^{-1} turns this into the flat components of sH^0. Feeding the flat vector s1 into hat-R'^{-1} gives s^{-2} q_{R'} instead, which spoi..."
+    },
+    {
+     "id": "U12-12",
+     "lens": "B",
+     "title": "Edge symmetry stated without the exchange psi <-> psi'",
+     "label": "def:flh-outer",
+     "file": "sections/s07_comparison.tex",
+     "lines": "23",
+     "problem": "The edges used are symmetric only when the slots are swapped together with psi and psi' (E(psi,psi')^T = E(psi',psi)), as def:set-outer and def:tra-edge say. The contraction needs only this combined symmetry."
+    },
+    {
+     "id": "U12-13",
+     "lens": "B",
+     "title": "Convergence of general Taylor expansions credited to lem:tra-conv (f)",
+     "label": "def:flh-outer",
+     "file": "sections/s07_comparison.tex",
+     "lines": "24",
+     "problem": "lem:tra-conv (f) covers only flat model correlators in the u-adic setting. For a general CohFT the claim follows from lem:set-dilaton (i): binomial series in eps, plus the edge-degree bound. Wrong reference only."
+    },
+    {
+     "id": "U12-14",
+     "lens": "A",
+     "title": "Translation-insertion identification stated without g>=2 qualifier",
+     "label": "def:flh-outer",
+     "file": "sections/s07_comparison.tex",
+     "lines": "24, 38",
+     "problem": "The identification is lem:set-pushins (iii), proved for g >= 2. The statement is unqualified but enters no proof. Def (ii) also cites lem:tra-conv (f), which covers only the model; lem:set-dilaton (iii), also cited, covers the general case."
+    },
+    {
+     "id": "U12-15",
+     "lens": "A",
+     "title": "Two-sided inverse of a symplectic O needs equal ranks",
+     "label": "def:flh-outer",
+     "file": "sections/s07_comparison.tex",
+     "lines": "25",
+     "problem": "A left inverse is two-sided only if rank V = rank V'. This is not stated. All applications (R'', Pc) have rank 5 on both sides."
+    },
+    {
+     "id": "U12-16",
+     "lens": "A",
+     "title": "Remark misdescribes what the proof of thm:flh-main uses",
+     "label": "def:flh-outer",
+     "file": "sections/s07_comparison.tex",
+     "lines": "38",
+     "problem": "The proof never uses the symplecticity of R'. It uses lem:flh-inputs (ii), R' = Pc Psi^m mod z^{3g-2}, together with the exact symplecticity of R'' = Pc Psi^m."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U15",
+   "title": "Theorem Gamma: local Mellin inversion, thm:gam-main, prop:gam-hatflat, cor:gam-equiv, thm:gam-D (Theorem C), thm:gam-ginf",
+   "summaries": [
+    "[A] I found no fatal, gap or fixable problem in Section 9. I read every line of the four files, opened each cited result and checked its hypotheses where it is used: Appendix D (formal stationary phase) in full, def:gam-c, prop:gam-rational, Theorem P(a)/(b), the glue, cor:con-A2, thm:gau-R0 and cor:gau-colours. The local Mellin inversion is a correct and complete proof. The chain to Theorem C is watertight given the other units' statements, and it is not circular. I re-derived the key formulas by hand. As sanity checks only, not as justification: a toy case of eq:gam-lmi, and c_n(L) for n<=5 matching h_n at L=1 and G_inf at L=0. All findings are minor wording or editorial points.",
+    "[B] No fatal error, gap or fixable error in U15. Theorem LMI is correct and its proof from the formal stationary-phase appendix is complete. The appendix lemmas it uses (Fubini, change of variables, Stirling, universality, constants, homogeneity) are all applied within their hypotheses. I re-derived every chart computation and tested eq:gam-lmi independently on generic data (M*=2, nonlinear phi, z-dependent F). Theorem Gamma (ii) follows. Exact checks: c_1..c_3 are polynomials in L with c_n(1)=h_n; c_5(1)=h_5; c_5(0)=B_6(1/5)/6. Theorem C follows from (ii), prop:gam-hatflat and the cited Section 8/3 results (Pa(iv), Pb, glue, gau-colours). Those results are cited exactly as stated, but I did not re-audit their proofs. The remaining issues are minor wording or editorial points."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U15-1",
+     "lens": "A",
+     "title": "DLMF 24.4.1 listed as an input, but it is derived in one line",
+     "label": "lem:fsp-dlmf5118",
+     "file": "sections/s01_intro_3.tex",
+     "lines": "21",
+     "problem": "lem:fsp-dlmf5118 (a_formalsp_5.tex l.69) derives B_k(theta+1)-B_k(theta)=k theta^{k-1} directly from the generating function (the definition), so it is not really an external input. A harmless overstatement of the conditionality."
+    },
+    {
+     "id": "U15-2",
+     "lens": "A",
+     "title": "Wording: the Taylor data entering are F_m^{(j)}(L)/(j!F_0(L))",
+     "label": "thm:gam-lmi",
+     "file": "sections/s09_gamma_2.tex",
+     "lines": "21",
+     "problem": "What enters are F_m^{(j)}(L)/(j!F_0(L)), not the Taylor coefficients of F_m/F_0. They are holomorphic on D because F_0 has no zero there. Imprecise wording only."
+    },
+    {
+     "id": "U15-3",
+     "lens": "B",
+     "title": "Euler-integral motivation states the z-power factor the wrong way round",
+     "label": "thm:gam-lmi",
+     "file": "sections/s09_gamma_2.tex",
+     "lines": "27",
+     "problem": "The integrand x^{M-1}e^{(a log x - x)/z}dx represents z^{M+a/z}Gamma(M+a/z), that is, Gamma with that factor. Equivalently, it is z^{-s} times int x^{s-1}e^{-x/z}dx with the prefactor z^{-s} dropped. The sentence is only motivation; the for..."
+    },
+    {
+     "id": "U15-4",
+     "lens": "A",
+     "title": "External identification with GJR18 (37) is unproved here and ambiguously cited",
+     "label": "thm:gam-main",
+     "file": "sections/s09_gamma_3.tex",
+     "lines": "28",
+     "problem": "This is an external comparison that enters no proof (s09_gamma_4 l.12) and cannot be checked from the manuscript. The parenthetical '(thm:gam-ginf)' can be read as saying that thm:gam-ginf proves the GJR18 formula."
+    },
+    {
+     "id": "U15-5",
+     "lens": "B",
+     "title": "Dependency list for (iv) omits that (iii) rests on (ii)",
+     "label": "thm:gam-main",
+     "file": "sections/s09_gamma_3.tex",
+     "lines": "35",
+     "problem": "(iii) uses (ii) to exclude poles at the fifth roots of unity, so the conclusion c_n in Q[L] also uses (ii). There is no circularity, because (ii) is proved first."
+    },
+    {
+     "id": "U15-6",
+     "lens": "A",
+     "title": "Free coefficients of Phi^act defined only through the identification after D_0=1",
+     "label": "cor:gam-free",
+     "file": "sections/s09_gamma_4.tex",
+     "lines": "56",
+     "problem": "lem:gau-HPF(iii) defines free coefficients only when ph_n lies in Q[[u]], but ph^act_n lie a priori in Q(zeta)[[q]]. The coefficient [u^{4m}] makes sense only after thm:gau-R0(iii) with D_0=1 identifies ph^act_n with the polynomial ph^can_n..."
+    },
+    {
+     "id": "U15-7",
+     "lens": "B",
+     "title": "Free coefficients of Phi^act are defined only implicitly",
+     "label": "cor:gam-free",
+     "file": "sections/s09_gamma_4.tex",
+     "lines": "56",
+     "problem": "lem:gau-HPF (iii) needs an HPF solution with coefficients in Q[[u]]. For Phi^act this holds only through its conifold expansion (the Laurent-polynomial representative of thm:gau-R0 (iii)) and after D_0=1. This is left implicit. It is not in..."
+    },
+    {
+     "id": "U15-8",
+     "lens": "A",
+     "title": "Draft note left in the prior-art remark",
+     "label": "rmk:gam-prior",
+     "file": "sections/s09_gamma_4.tex",
+     "lines": "72",
+     "problem": "An editorial leftover in the text. It does not affect any proof."
+    },
+    {
+     "id": "U15-9",
+     "lens": "B",
+     "title": "Unresolved draft note in the prior-art remark",
+     "label": "rmk:gam-prior",
+     "file": "sections/s09_gamma_4.tex",
+     "lines": "72",
+     "problem": "This is editorial and affects no proof."
+    },
+    {
+     "id": "U15-10",
+     "lens": "A",
+     "title": "Section overview says LMI applies at zeta^i; the proof uses rotation instead",
+     "label": "sec:gam-series",
+     "file": "sections/s09_gamma.tex",
+     "lines": "12",
+     "problem": "True (s_*=zeta^i, a_*=-1, M_*=0), but the proof of thm:gam-main (iii) instead uses the rotation c(z;zeta L)=c(zeta^{-1}z;L) together with (ii). The sentence could mislead about how (iii) is proved."
+    },
+    {
+     "id": "U15-11",
+     "lens": "B",
+     "title": "Section intro says LMI applies at zeta^i, but (iii) is proved by rotation",
+     "label": "sec:gam-series",
+     "file": "sections/s09_gamma.tex",
+     "lines": "12",
+     "problem": "The statement is true (s*=zeta^i, a*=-1, M*=0 would work), but the proof of thm:gam-main (iii) uses the rotation c(z;zeta L)=c(zeta^{-1}z;L), not LMI at zeta^i. This is misleading only as a description of the proof."
+    },
+    {
+     "id": "U15-12",
+     "lens": "B",
+     "title": "Letter c overloaded in the delta lemma",
+     "label": "lem:gam-deltasrc",
+     "file": "sections/s09_gamma.tex",
+     "lines": "21-34",
+     "problem": "The letter c also names the critical-point slot of SPn_c and the saddle series c(z;L). The proof is not ambiguous."
+    },
+    {
+     "id": "U15-13",
+     "lens": "A",
+     "title": "Local notation clashes: delta, lambda, Q, phi",
+     "label": "def:gam-lmidata",
+     "file": "sections/s09_gamma.tex",
+     "lines": "37-58",
+     "problem": "Each letter has another meaning elsewhere: delta(sigma)=(sigma^6-sigma)/5 in lem:fsp-generic, lambda_i are the torus weights, script Q denotes the rows, phi is the map in lem:fsp-cov. Each is declared locally and causes no ambiguity in the ..."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U14",
+   "title": "Connection II: the lemmas of Theorem P(b), the residue proposition, Theorem P(b), the glue thm:con-glue",
+   "summaries": [
+    "[A] U14 (Connection II) is sound. Every statement is proved by its proof, and every cited result is used within its hypotheses. I re-derived each load-bearing formula: the chain rule, the phase/half-density/Stirling matching in P(a)(ii), the cfu recursion, the reduction and its grading, the model identity, the full-symbol bookkeeping, the relabelling fibres, the exponents in lem:con-key, the model residues, the u^1 comparison and the evaluation at L=1 in the glue. Independent Mathematica checks agree: cfu and red to u^12, con-S2 for all b, con-id(b), c_n(L)=L^{4n}ph_n(L^{-5}) for n<=3, and V=Sum pi_m s^{-m}IC_m to u^11. No fatal finding, no gap, nothing fixable. There are five minor points: a notation clash, unstated square-root branches (checked consistent), loose wording in a two-homomorphism argument, a one-line step in the appendix lemma lem:fsp-res(iii), and one mis-reference.",
+    "[B] I found no fatal error, gap or fixable error in U14; the all-genus argument of this unit holds. Proofs of Theorem P(a)(ii)-(iv), the uniformising map, the reduction, the model identity, the identification lemma, the relabelling and key lemmas, the residue proposition, Theorem P(b) and the glue were re-derived. Each cited formal-stationary-phase lemma was read and used within its hypotheses; earlier units did not cover that appendix. Independent wolframscript checks agree: the uniformising map to u^5; con-S2 for all b to t^5; con-id(b) to u^2, zh^6; and the residue identity V = varpi_0 (Y^C_Q)_0 at z^-1 and at z^-6 to u^12, which covers the first free coefficient. I record six minor points; the main one is an unstated branch-compatibility identity, Y'(1)Y_c = (1-u)^{-1/2}, which is true and was checked."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U14-1",
+     "lens": "A",
+     "title": "Appendix lemma lem:fsp-res(iii): substitution into infinite exponential needs one line",
+     "label": "lem:fsp-res",
+     "file": "sections/a_formalsp_5.tex",
+     "lines": "94, 98",
+     "problem": "e^{-f_0/zh} is a zh^{-1}-adically convergent infinite sum, not u-adic, so ring-hom plus agreement on Laurent polynomials does not immediately give the exponential identity."
+    },
+    {
+     "id": "U14-2",
+     "lens": "B",
+     "title": "Second ring homomorphism in Pa(ii) Step 3 described in the wrong ring",
+     "label": "thm:con-Pa",
+     "file": "sections/s08_connection_5.tex",
+     "lines": "10",
+     "problem": "The domain Q[s^{\u00b11},X^{\u00b11},(1-s^5X^5)^{-1}] contains s^{-1} and X^{-1}, so the intermediate ring must be Q[X^{\u00b11}]((s)), not Q[X][[u]]."
+    },
+    {
+     "id": "U14-3",
+     "lens": "A",
+     "title": "Two-homomorphism argument worded with wrong intermediate ring",
+     "label": "thm:con-Pa",
+     "file": "sections/s08_connection_5.tex",
+     "lines": "10, 14-16",
+     "problem": "The domain contains odd powers of s, so the intermediate ring should be Q[X^{+-1}]((s)). In Step 4 the summands need base Q(zeta), or the remark that the sum is rational over Q. Validity is unaffected."
+    },
+    {
+     "id": "U14-4",
+     "lens": "B",
+     "title": "Special form of the inverse uniformising map asserted without reason",
+     "label": "lem:con-cfu",
+     "file": "sections/s08_connection_5.tex",
+     "lines": "41",
+     "problem": "No reason is given why the inverse has the form y(1+h(u,y^5)), which is needed for X_k in Q[T] with deg X_k <= k."
+    },
+    {
+     "id": "U14-5",
+     "lens": "B",
+     "title": "fsp-cov applied to S_0, whose constant term is not in A",
+     "label": "thm:con-Pa",
+     "file": "sections/s08_connection_5.tex",
+     "lines": "8, 18",
+     "problem": "S_0(L) involves logarithms and is not in A, so S_0 is not a phase over A. One must first pass to the formal phase S_0-S_0(L), as the proof of (i) does. The text invokes lem:fsp-const only in Step 5."
+    },
+    {
+     "id": "U14-6",
+     "lens": "B",
+     "title": "Field of the graded gauge left implicit in lem:con-id(c),(d) and prop:con-res",
+     "label": "prop:con-res",
+     "file": "sections/s08_connection_6.tex",
+     "lines": "22-27 (also s08_connection_7.tex 18)",
+     "problem": "def:gau-onepole allows gauges over any field k, and a Q(zeta)-gauge gives G_b over Q(zeta). Statement (d) is then not literally applicable."
+    },
+    {
+     "id": "U14-7",
+     "lens": "B",
+     "title": "Square-root branch rules in lem:con-id(b) never reconciled with def:con-PhiSP",
+     "label": "lem:con-id",
+     "file": "sections/s08_connection_6.tex",
+     "lines": "33-35 (also s08_connection_4.tex 31-35)",
+     "problem": "def:fsp-wick requires full-symbol identities to state the square-root rule. Three branch rules are chained here: fsp-cfu/cov, the linear map Y=Y_c p, and fsp-homog. def:con-PhiSP implicitly takes Hess^{1/2}=5^{1/2}(1-u)^{-1/2}. These are co..."
+    },
+    {
+     "id": "U14-8",
+     "lens": "A",
+     "title": "Full-symbol identities stated without square-root branch rules",
+     "label": "lem:con-id",
+     "file": "sections/s08_connection_6.tex",
+     "lines": "5, 9-13, 20-21, 33-35",
+     "problem": "def:fsp-wick makes the square root part of the datum, but no branch rule is stated. I checked that the branches induced by lem:fsp-cov/homog/cfu and cor:fsp-movebase are consistent: (5varsigma^2)^{1/2}=sqrt5 varsigma, (5Y_c^2)^{1/2}=sqrt5 Y..."
+    },
+    {
+     "id": "U14-9",
+     "lens": "A",
+     "title": "Letter k used for two different indices in the relabelling",
+     "label": "lem:con-relab",
+     "file": "sections/s08_connection_6.tex",
+     "lines": "51-55",
+     "problem": "The same k denotes the Stirling index of the atoms and of c_{k,P}. This is a notation clash only."
+    },
+    {
+     "id": "U14-10",
+     "lens": "A",
+     "title": "Mis-reference for v(u)=uV",
+     "label": "lem:con-key",
+     "file": "sections/s08_connection_7.tex",
+     "lines": "8",
+     "problem": "v=uV needs V=tau^{-5/4}, which is proved in lem:con-cfu, not in the cited definitions."
+    },
+    {
+     "id": "U14-11",
+     "lens": "B",
+     "title": "Glue (a): identifying the constant series with D_0 is by definition",
+     "label": "thm:con-glue",
+     "file": "sections/s08_connection_8.tex",
+     "lines": "19",
+     "problem": "D_0 is defined by A^can=A^act D_0 in Q(zeta)[[q]] (thm:gau-R0 (iii)), so the detour through the s-embedding is redundant. It is correct."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U18",
+   "title": "The main theorem and Corollary B, the Complements, and the agreement of the introduction statements with their body versions",
+   "summaries": [
+    "[A] The unit is sound. Theorem A follows correctly from thm:gam-D, thm:flh-main, thm:mod-MLK and cor:red-can, each used within its hypotheses, with no circularity. Corollary B (Steps 1-3) is correct given Theorem A, D=1, lem:flh-inputs(iii), lem:set-pushins(iii) and PPZ Prop 2.14. The Complements (lem:mai-Ghat, cor:mai-natfact, cor:mai-actual, lem:mai-pole, cor:mai-univ) are correct; every displayed formula was re-derived, and key ones were machine-checked. The intro statements (Theorems A, C, Gamma and Corollary B) agree with the body. No fatal, gap or fixable findings. The minor points are: the rationality of the colour-0 rows is mis-cited in the Galois step of def:mai-Fcf (it closes via thm:con-glue); Corollary B is about the specific representative F_g^N, since injectivity of ev is not proved; and there are exposition, notation and unrecorded-computation issues in remarks.",
+    "[B] I found no fatal, gap or fixable issue in this unit. Theorem A is assembled correctly: thm:gam-D gives the window (F_g), thm:flh-main gives T_Gamma = F_Gamma, and cor:red-can with thm:mod-MLK finishes. Each cited statement is used within its hypotheses, including boundary cases, colour identification, square-root conventions and rationality. I recomputed Corollary B: the expanded R-matrix is symplectic because D = 1, not from large radius, and the regrouping gives F_g^cf as the sum of the T_Gamma. The Complements check out, and the intro statements agree with their body versions. Independent exact checks support the chain: the HPF recursion with the G_inf free coefficients gives Phi(z,1) = h(z) through z^10, and c_n(1) = h_n for n up to 4. Six minor points remain."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U18-1",
+     "lens": "B",
+     "title": "'Conifold expansion of F_g' depends on the representative in N",
+     "label": "cor:int-gap",
+     "file": "sections/s01_intro_2.tex",
+     "lines": "29-36; s10_main.tex:61-81; s10_main_2.tex:7",
+     "problem": "Without injectivity of ev on the log-free subring, another representative of F_g could have a different conifold expansion. Corollary B is therefore a statement about the explicit representative F_g^N. That representative is canonical, so n..."
+    },
+    {
+     "id": "U18-2",
+     "lens": "A",
+     "title": "Corollary B concerns the representative F_g^N; independence of the representative is not proved",
+     "label": "cor:mai-gap",
+     "file": "sections/s01_intro_2.tex",
+     "lines": "29, 36; s10_main.tex 75-81",
+     "problem": "If ev is not injective, another element of N with evaluation F_g could have a different conifold expansion. So, as proved, the gap holds for this representative, not intrinsically for F_g. The authors disclose this, but the intro wording su..."
+    },
+    {
+     "id": "U18-3",
+     "lens": "A",
+     "title": "Intro Theorem C omits 'in every conifold frame' for D_0=1",
+     "label": "thm:int-D",
+     "file": "sections/s01_intro_2.tex",
+     "lines": "44-46",
+     "problem": "D_0 is defined through P_can, which depends on the frame. The body (thm:gam-D) says 'in every conifold frame'. The omission is harmless because D_0 = Phi^SP(z,1)/h is frame-independent."
+    },
+    {
+     "id": "U18-4",
+     "lens": "A",
+     "title": "Intro describes Cont_Gamma[E_X,q_X;Omega] 'as in PPZ Defs 2.2, 2.13' for X=R'",
+     "label": "thm:int-main",
+     "file": "sections/s01_intro_2.tex",
+     "lines": "7",
+     "problem": "For R' (colour space to H, R'(0) != 1, symplecticity not known a priori) the PPZ edge is undefined. Theorem A uses the corrected edge of def:set-outer, which agrees with PPZ's only once D=1."
+    },
+    {
+     "id": "U18-5",
+     "lens": "A",
+     "title": "Constant c_g matched to CGYZ26 from an HTML rendering",
+     "label": "rmk:mai-constant",
+     "file": "sections/s10_main_2.tex; s01_intro_2.tex",
+     "lines": "s10_main_2 38-42; s01_intro_2 70-73",
+     "problem": "The external numbers cannot be checked within the manuscript (draftnote). The claim enters no proof. The internal values c_2..c_5 and the two forms of c_g were verified."
+    },
+    {
+     "id": "U18-6",
+     "lens": "A",
+     "title": "Remarks and intro sentence rest on unrecorded computations",
+     "label": "rmk:mai-graphlocal",
+     "file": "sections/s10_main_2.tex; s01_intro_2.tex",
+     "lines": "s10_main_2 44-52; s01_intro_2 25",
+     "problem": "These are computational facts not recorded in the evidence appendix (the draftnotes say so). They enter no proof, but the intro states the first as fact."
+    },
+    {
+     "id": "U18-7",
+     "lens": "A",
+     "title": "Corollary B Step 2: E_{R'}=E_X justified via lem:flh-frame, which concerns a different identity",
+     "label": "cor:mai-gap",
+     "file": "sections/s10_main_2.tex",
+     "lines": "27",
+     "problem": "lem:flh-frame is about pushing a CohFT forward, not about comparing two edges. The displayed identity yields E_{R'}=E_X only through the symplectic form of the edge. The conclusion is true."
+    },
+    {
+     "id": "U18-8",
+     "lens": "A",
+     "title": "List of PPZ items after Corollary B differs from the declared input (Q)",
+     "label": "cor:mai-gap",
+     "file": "sections/s10_main_2.tex",
+     "lines": "36",
+     "problem": "(Q) in s01_intro_3 l.9 lists 'Def. 0.3 (iii)' and 'Remark 2.1 and (6)'. The two lists should agree. There is no effect on validity."
+    },
+    {
+     "id": "U18-9",
+     "lens": "B",
+     "title": "Graph-locality and necessity remarks rest on unrecorded computations",
+     "label": "rmk:mai-graphlocal",
+     "file": "sections/s10_main_2.tex",
+     "lines": "44-52; s01_intro_2.tex:25",
+     "problem": "The supporting computations are not in the evidence appendix (the draftnotes say so). These remarks enter no proof, but the intro states the claim as fact."
+    },
+    {
+     "id": "U18-10",
+     "lens": "B",
+     "title": "cor:mai-univ: canonical gauge for a general pair; redundant hypothesis",
+     "label": "cor:mai-univ",
+     "file": "sections/s10_main_4.tex",
+     "lines": "19-32",
+     "problem": "def:gau-can and thm:gau-G(a) are stated for the quintic/model pair only. For a general pair the gap closes in three lines: prop:gau-graded(i)-(iii) and thm:gau-U(b),(d). The residue hypothesis holds automatically by lem:mai-pole(ii), as the..."
+    },
+    {
+     "id": "U18-11",
+     "lens": "A",
+     "title": "cor:mai-univ: hypothesis on r is automatic; existence of P^A_can cited via def:gau-can",
+     "label": "cor:mai-univ",
+     "file": "sections/s10_main_4.tex",
+     "lines": "21, 28",
+     "problem": "For a self-dual one-pole system with product -v_A'^5/v_A, r = -(v_A'(0)^2/(b_0(0)b_3(0)))^2 always holds, so the hypothesis is redundant. def:gau-can's existence argument goes through thm:gau-G(a), which is stated only for the quintic pair."
+    },
+    {
+     "id": "U18-12",
+     "lens": "B",
+     "title": "Wording: '(G) fixes the odd part of log c'",
+     "label": "rmk:mai-stored",
+     "file": "sections/s10_main_4.tex",
+     "lines": "41",
+     "problem": "(G) forces c = 1 entirely (thm:gau-G(b)). The phrase means the part left free by symplecticity. Harmless imprecision."
+    },
+    {
+     "id": "U18-13",
+     "lens": "A",
+     "title": "Notation overloads in the unit (Psi_Q, R~, G, T, eta^{-1})",
+     "label": "cor:mai-natfact",
+     "file": "sections/s10_main.tex; s10_main_3.tex",
+     "lines": "s10_main 35, 63-73; s10_main_3 10, 31-35",
+     "problem": "Psi_Q and R~ each denote both the N-element and its expansion. G is both G_Gamma and the factor G(u,zh). T is the mirror map, T_Gamma, T_P and T_A. eta^{-1} is both the bivector (matrix eta in lowered components) and the pairing. 'G depends..."
+    },
+    {
+     "id": "U18-14",
+     "lens": "B",
+     "title": "Theorem A does not say the TFT is expanded in the frame",
+     "label": "thm:mai-main",
+     "file": "sections/s10_main.tex",
+     "lines": "11; s01_intro_2.tex:15; s02_setup_8.tex:46",
+     "problem": "def:set-frob defines omega over Q(zeta)[[q]], where M = Mo(tau zh) does not live. The intended TFT has Delta_i^{1/2} -> zeta^{4i} s varpi_0, which only cor:mai-gap states explicitly. Psi_Q also denotes two objects (s10_main.tex:35 vs lem:fl..."
+    },
+    {
+     "id": "U18-15",
+     "lens": "A",
+     "title": "Galois descent in def:mai-Fcf cites lem:gau-colrows for rationality it does not give",
+     "label": "def:mai-Fcf",
+     "file": "sections/s10_main.tex",
+     "lines": "81",
+     "problem": "lem:gau-colrows gives no rationality, and cor:gau-rowsNN(i) gives only A^act_n in Q(zeta)[L,L^{-1}]. Read literally, the Galois step lacks its input. Only F_g^N in N is affected; Corollary B's conclusion is not."
+    },
+    {
+     "id": "U18-16",
+     "lens": "B",
+     "title": "Rationality of colour-0 row representatives asserted without citation",
+     "label": "def:mai-Fcf",
+     "file": "sections/s10_main.tex",
+     "lines": "81",
+     "problem": "cor:gau-rowsNN(i) and thm:gau-R0(iii) only give A^act_n in Q(zeta)[L,L^{-1}], so the representatives lie a priori in N (x) Q(zeta). Rationality needs D_0 in Q[[z]]. Validity is not affected, because Theorem A puts F_g^cf back in Q((u))."
+    }
+   ],
+   "coverage_gaps": [
+    {
+     "label": "rmk:mai-constant",
+     "verdict": "not-fully-checked",
+     "note": "External CGYZ26 constant not checkable; internal c_g values verified.",
+     "lens": "A"
+    },
+    {
+     "label": "rmk:mai-graphlocal",
+     "verdict": "not-fully-checked",
+     "note": "Rests on unrecorded genus-4 computations; logical content about odd/even parts of log c is correct.",
+     "lens": "A"
+    },
+    {
+     "label": "rmk:mai-necessity",
+     "verdict": "not-fully-checked",
+     "note": "Computational claims unrecorded; the (Sp) non-power-series argument is correct.",
+     "lens": "A"
+    },
+    {
+     "label": "rmk:int-constant",
+     "verdict": "not-fully-checked",
+     "note": "As rmk:mai-constant: external numbers only.",
+     "lens": "A"
+    },
+    {
+     "label": "rmk:mai-constant",
+     "verdict": "not-fully-checked",
+     "note": "External CGYZ26 constant not checkable here; enters no proof.",
+     "lens": "B"
+    }
+   ]
+  },
+  {
+   "key": "U09",
+   "title": "Model I: the model CohFT as topological recursion (thm:mod-tr, Laplace lemma, prop:mod-Rtr), x-functions, legs, prop:mod-LD, cor:mod-trF",
+   "summaries": [
+    "[A] U09 is sound. I re-derived every displayed formula the argument depends on. The places where the unit relies on its reading of the quoted inputs (Q) were tested independently and agree: (1) at genus 1, one point, omega_{1,1} computed directly from the recursion matches the Givental graph sum with R=M0 and the PPZ dilaton sign to 20 digits, and fails with the opposite sign; (2) the reading of (2-31) gives vertex leaves with poles only at their own branch point, while the transposed reading does not; (3) (2-32) holds identically as forms; (4) the leg dictionary holds numerically for k,d<=2. The earlier results used are applied within their hypotheses. There are no fatal points and no gaps. The five findings are all minor: definitional scope, stated generality and an implicit specialisation.",
+    "[B] I found no fatal error and no gap in U09. I redid every step by hand: the kernel and sign dictionary (checked against the DNOPS, ABDKS and EO pdfs), the Laplace lemma, scaling, prop:mod-Rtr, the transfer from kappa=4 to kappa=1, the factor (-5)^{h-1}, the flat-basis functions xi_a, lem:mod-xfun, the leg dictionary and cor:mod-trF. Independent computations confirm the following. R_TR^{-1}(psi)^j_i equals M0(-psi/kappa)_{ij} through psi^5 for kappa=1 and 4, and (2-32) holds. The off-diagonal edge identity holds in the PPZ reading. omega_{1,1} and omega_{0,3} match the model graph sum, with the PPZ dilaton sign. The leg dictionary holds for k,d<=2. The transposed reading and the opposite dilaton sign both fail, so the tests do discriminate. The findings are minor: chiefly reliance on DNOPS (2-33), which is misprinted in the source, plus wording and scope points."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U09-1",
+     "lens": "A",
+     "title": "Preamble restricts kappa to rationals but lemmas use complex constants",
+     "label": "lem:mod-scale",
+     "file": "sections/s06_model_2.tex",
+     "lines": "2, 18, 32, 38",
+     "problem": "lem:mod-scale(i) is stated for arbitrary constants and applied in (ii) with kappa=k^4, mu=k complex; lem:mod-laplace(iii) takes k in C^x. The proofs work for any non-zero constants, so this is only a misstatement."
+    },
+    {
+     "id": "U09-2",
+     "lens": "B",
+     "title": "Preamble says kappa is rational; lem:mod-scale(ii) uses complex kappa",
+     "label": "lem:mod-scale",
+     "file": "sections/s06_model_2.tex",
+     "lines": "2, 32-38",
+     "problem": "(ii) applies (i) with kappa=k^4 and mu=k complex, and lem:mod-laplace(iii) also uses complex k. Statement (i) is proved for arbitrary nonzero constants, so nothing breaks."
+    },
+    {
+     "id": "U09-3",
+     "lens": "B",
+     "title": "Dilaton-sign justification presupposes a flat unit; the real support is DBOSS (2-23)",
+     "label": "prop:mod-Rtr",
+     "file": "sections/s06_model_2.tex",
+     "lines": "55 (also b_signs.tex 14)",
+     "problem": "This argument assumes that the TR CohFT has a flat unit, which is not shown independently. DBOSS (2-23) does have the PPZ sign (checked on the pdf), and the omega_{1,1} computation confirms it, so the declared input is correct."
+    },
+    {
+     "id": "U09-4",
+     "lens": "A",
+     "title": "prop:set-modrows(b) applied to series with complex coefficients",
+     "label": "prop:mod-Rtr",
+     "file": "sections/s06_model_3.tex",
+     "lines": "13",
+     "problem": "prop:set-modrows(b) is stated for F_b in Q(zeta)[[t]]. Here F_b has coefficients in (-5kappa)^{-1/2} Q(zeta). The computation and the pivot argument are formal and hold over C, but the text does not say so."
+    },
+    {
+     "id": "U09-5",
+     "lens": "B",
+     "title": "Redundant and misattributed hypotheses in Step 1; small misreference",
+     "label": "thm:mod-tr",
+     "file": "sections/s06_model_3.tex",
+     "lines": "19, 28",
+     "problem": "The reason given is that of Prop 4.3(2), not (1); both hold. The condition is redundant, since (2-30)-(2-32) are proved directly. 1/varsigma_k = zeta^k/varsigma is a definition, not a consequence of (i)."
+    },
+    {
+     "id": "U09-6",
+     "lens": "B",
+     "title": "Proof relies on DNOPS (2-33), which is misprinted in the source",
+     "label": "thm:mod-tr",
+     "file": "sections/s06_model_3.tex",
+     "lines": "28 (also s01_intro_3.tex 9)",
+     "problem": "DNOPS (2-33) as printed (pdf p.12) omits 'delta_ij -'. The printed identity is false: the diagonal needs the delta term, and off the diagonal the sign is opposite (my computation). The correct identity is the PPZ edge, as in DBOSS (4-1) and..."
+    },
+    {
+     "id": "U09-7",
+     "lens": "A",
+     "title": "TR leg and q_phi used outside the class where they are defined",
+     "label": "prop:mod-LD",
+     "file": "sections/s06_model_4.tex",
+     "lines": "24, 34 (also s06_model.tex 57-60, 71)",
+     "problem": "def:mod-ancvec and def:mod-pair cover only legs in L, the leg -log p, and Q[v]-combinations of these. Most phi^b_k lie outside this class (e.g. phi^1_1 = -x log p + p^4/16 - v/p), so the second form of thm:mod-tr is not stated for them. The..."
+    },
+    {
+     "id": "U09-8",
+     "lens": "B",
+     "title": "q_phi and 'TR leg' silently extended beyond def:mod-ancvec",
+     "label": "prop:mod-LD",
+     "file": "sections/s06_model_4.tex",
+     "lines": "34; s06_model_5.tex 4",
+     "problem": "def:mod-ancvec defines q_phi only for legs in L, for -log p, and for Q[v]-combinations of these. The phi^b_k (k>=1) contain log p times polynomials in p and pbar, and negative powers of p. The extension by residues at the branch points is c..."
+    },
+    {
+     "id": "U09-9",
+     "lens": "B",
+     "title": "Free-energy convention attributed to DNOPS (2-26)-(2-29)",
+     "label": "conv:mod-kernel",
+     "file": "sections/s06_model.tex",
+     "lines": "20",
+     "problem": "DNOPS (2-26)-(2-29) define omega_{0,1}, omega_{0,2}, the recursion and the bracket; they contain no free energy. The definition is the note's own (minus EO (4-10)) and is used consistently, so this is harmless."
+    },
+    {
+     "id": "U09-10",
+     "lens": "A",
+     "title": "Free energy of a general curve; regularity of f's coefficients at the fixed v",
+     "label": "conv:mod-kernel",
+     "file": "sections/s06_model.tex",
+     "lines": "20 (also s06_model_4.tex 4)",
+     "problem": "Independence of the branch of Phi_{ydx} needs omega_{h,1} to have zero residues at the branch points, which is proved only for the model curve; that is the only curve used. In lem:mod-xfun, the coefficients of f must be regular at the fixed..."
+    },
+    {
+     "id": "U09-11",
+     "lens": "B",
+     "title": "Iterated ray integrals need joint holomorphy, argued only per variable",
+     "label": "def:mod-pair",
+     "file": "sections/s06_model.tex",
+     "lines": "41",
+     "problem": "Convergence and Fubini for several log legs need holomorphy near products of 0 and infinity in several variables at once. This follows because the polar divisor lies in the union of {p_i = varsigma_b} (lem:mod-abdks), a routine omitted deta..."
+    },
+    {
+     "id": "U09-12",
+     "lens": "B",
+     "title": "'TR applied only to x=W_v' while the quoted theorem is applied to 4W_v",
+     "label": "thm:mod-tr",
+     "file": "sections/s06_model.tex",
+     "lines": "5; s01_intro_3.tex 9",
+     "problem": "The quoted theorem is applied to (P^1, 4W_v, p), and lem:mod-scale to (kappa W_v, mu p). (Q) itself mentions f=4W_v, so this is wording only."
+    },
+    {
+     "id": "U09-13",
+     "lens": "A",
+     "title": "Specialisation of the formal fifth root to a complex root left implicit",
+     "label": "thm:mod-tr",
+     "file": "sections/s06_model.tex",
+     "lines": "62-71 (also s06_model_3.tex 32)",
+     "problem": "Step 3 matches the frozen basis (branch points zeta^{-j} vs for the complex vs of def:mod-curve) with tilde e_j of TFT^m_v, which is defined with the formal root. The specialisation of the formal root to that complex root is not stated. It ..."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U10",
+   "title": "Model II: weights, closure, generating functions, residues, the lattice theorem, regularity in L (x-y swap input), periods, the gap of the model free energies",
+   "summaries": [
+    "[A] U10 is sound: I found nothing fatal, no gap and nothing that needs a fix. Every statement in s06_model_5/6/7 is proved as stated, and each cited lemma is used within its hypotheses. I re-derived the key formulas by hand. I also checked [ABDKS25] Thm 7.1, with (7.6)-(7.10), (1.1) and Sec. 1.1, against the arXiv v3 text: it is quoted correctly and applied within its hypotheses, and the sign rule omega_{h,n} = (-1)^n omega^{(h)}_{n,0} holds. In Wolfram, omega_{1,1} computed directly from the recursion matches -dPhi^A_1 to 20 digits. The closed form Phi^A_h gives -B_{2h}/(2h) v^{1-2h} at p=0 and 0 at infinity for h=1..4. Later sections use the lattice theorem, Lreg and the Gap Theorem only in the forms proved. The seven findings are all minor: wording, gradings, notation and a visible draft note.",
+    "[B] Unit U10 (Model II: the weights, the leg map, closure, the lattice theorem, L-regularity, the period of omega_{h,1} and the Gap Theorem) is sound. I re-derived every statement and found no fatal error, gap or fixable error, only five minor points. The one external input of the unit, ABDKS25 Theorem 7.1 with (7.6), (7.7), (7.9) and (7.10), is copied correctly; I checked this against the arXiv v3 text. Its hypotheses hold for x = W_v, and its sign dictionary matches ABDKS (1.1) and (7.16). Independent exact checks all agree: the legs for k <= 7, the lattice bijectivity for w <= 36, Phi^A_h computed with the full x for h <= 4 (no pole at 0, zero at infinity, value -B_{2h}/(2h) v^{1-2h}), the Sigma_h identity for h <= 8, the Airy values at genus 1 and 2, and agreement at h = 1 with lem:mod-w11."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U10-1",
+     "lens": "A",
+     "title": "'A monomial in v' includes zero",
+     "label": "lem:mod-genfn",
+     "file": "sections/s06_model_5.tex",
+     "lines": "26",
+     "problem": "R^b_n is often 0 (e.g. R^1_n = 0 when 5 does not divide n). Harmless."
+    },
+    {
+     "id": "U10-2",
+     "lens": "A",
+     "title": "Notation clashes in the generating-function lemma and period proof",
+     "label": "lem:mod-genfn",
+     "file": "sections/s06_model_5.tex",
+     "lines": "26-30",
+     "problem": "calB clashes with the global macro \\Bprod = \\mathcal B (prod b_a); calR clashes with \\cR (weighted rings, App. A); B (log coefficient) clashes with the Bernoulli numbers B_{2h}; E (exponent) clashes with E(Gamma)."
+    },
+    {
+     "id": "U10-3",
+     "lens": "B",
+     "title": "Notation clashes: I, B, w",
+     "label": "lem:mod-genfn",
+     "file": "sections/s06_model_5.tex",
+     "lines": "30, 39",
+     "problem": "The same letters carry several meanings, sometimes inside one proof: lem:mod-resid uses I^C_m beside the operator I, and lem:mod-genfn writes B/p for B(x(p))/p. Nothing in the mathematics depends on this."
+    },
+    {
+     "id": "U10-4",
+     "lens": "A",
+     "title": "Codomain '{legs}' of Lambda is undefined",
+     "label": "def:mod-weights",
+     "file": "sections/s06_model_5.tex",
+     "lines": "4",
+     "problem": "'{legs}' is not a defined set; by lem:mod-closure (iii) the actual codomain is M."
+    },
+    {
+     "id": "U10-5",
+     "lens": "A",
+     "title": "Weight grading of L/Q(v)[x] is only transported",
+     "label": "lem:mod-classL",
+     "file": "sections/s06_model_6.tex",
+     "lines": "20, 43",
+     "problem": "L and Q(v)[x] are not graded (Q(v) contains non-homogeneous elements). The weight-w piece only makes sense through the isomorphism L/Q(v)[x] = Q[v][p]/Q[v] proved in (iv)."
+    },
+    {
+     "id": "U10-6",
+     "lens": "A",
+     "title": "Log part of phi^1_k mod v needs closure (i) as well as (ii)",
+     "label": "lem:mod-modv",
+     "file": "sections/s06_model_6.tex",
+     "lines": "34",
+     "problem": "I applied to the Q[p,pbar] part also produces log terms (closure (i)). These vanish mod v (-v^c log p needs a=c-4<0; v^{c+1} log p is 0 mod v), but the text does not say so. prop:mod-dii gives the claim directly."
+    },
+    {
+     "id": "U10-7",
+     "lens": "B",
+     "title": "Two one-line facts omitted in the reduction mod v",
+     "label": "lem:mod-modv",
+     "file": "sections/s06_model_6.tex",
+     "lines": "34",
+     "problem": "Two facts are used but not stated. (1) The congruence propagates to all k only because I preserves Q[v,x]+vM (closure(iii): I(Q[v,x]) lies in Q[v,x], and I(vM) = vI(M)). (2) Triangularity needs the log-component of phi^2_{n-1} to vanish mod..."
+    },
+    {
+     "id": "U10-8",
+     "lens": "B",
+     "title": "Weight piece of L/Q(v)[x] is defined only through classL(iv)",
+     "label": "thm:mod-lattice",
+     "file": "sections/s06_model_6.tex",
+     "lines": "43, 50",
+     "problem": "L = Q[v][p]+Q(v)[x] is not a graded ring because Q(v) is not graded, so the subscript w has meaning only through the identification L/Q(v)[x] = Q[v][p]/Q[v] of lem:mod-classL(iv). The proof uses exactly that identification, so validity is n..."
+    },
+    {
+     "id": "U10-9",
+     "lens": "A",
+     "title": "Lreg for legs with Q(v)-coefficients: pairing undefined at their poles",
+     "label": "thm:mod-Lreg",
+     "file": "sections/s06_model_7.tex",
+     "lines": "40",
+     "problem": "A leg with Q(v)-coefficients is undefined at the poles of those coefficients, so the pairing exists only off them. The statement should read 'agrees, where defined, with an element of Q[v]'. Later sections use only legs in Q[v][p] + Q[v][x]..."
+    },
+    {
+     "id": "U10-10",
+     "lens": "B",
+     "title": "Index j in Step 1 is fixed by r; the sum runs over ordered tuples",
+     "label": "prop:mod-period",
+     "file": "sections/s06_model_7.tex",
+     "lines": "61",
+     "problem": "For fixed r the index j = r-2h+1 is determined, and the sum is over ordered j-tuples of positive integers. As worded it reads like a sum over j as well. The computation itself is correct; I checked it for h <= 4."
+    },
+    {
+     "id": "U10-11",
+     "lens": "A",
+     "title": "Visible draft note in rmk:mod-hock",
+     "label": "rmk:mod-hock",
+     "file": "sections/s06_model_7.tex",
+     "lines": "87",
+     "problem": "preamble.tex l.40 sets \\showdraftnotestrue, so the note appears in the compiled text."
+    },
+    {
+     "id": "U10-12",
+     "lens": "B",
+     "title": "Draft note left in rmk:mod-hock",
+     "label": "rmk:mod-hock",
+     "file": "sections/s06_model_7.tex",
+     "lines": "87",
+     "problem": "A drafting artifact in the text. The remark is used in no proof."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U11",
+   "title": "Model III: variation at fixed x, thm:mod-var, genus 0, thm:mod-V, the Model Lemma thm:mod-MLK",
+   "summaries": [
+    "[A] Unit U11 (s06_model_8/9/10) is sound. I re-derived every load-bearing formula by hand. The chain lem:mod-fixedx, lem:mod-ibp, thm:mod-var(i), prop:mod-V1, thm:mod-V, thm:mod-MLK closes. Each cited result is used within its hypotheses, and there is no circularity. The only external input is EO Thm 5.1 (5-14), which is declared in (Q). Its sign translation checks out, but I could not open EO, so the equation numbers are taken on trust. Independent numerical checks agree with the recursion: Loc_1 = -1/60, the genus-0 (V1) cases from (0,3) to (0,4), and the genus-1 cases from (1,1) to (1,2). All findings are minor. The main one is that thm:mod-var(ii) rests on EO (5-15), which the introduction says enters no proof; (ii) is not used anywhere. Downstream, only thm:mod-V(i), thm:mod-V(ii) for h>=2 and thm:mod-MLK carry Theorem A.",
+    "[B] I found nothing fatal, no gaps and nothing that needs a repair: the unit holds up. I re-derived each step, from the fixed-x lemma through integration by parts, Eynard-Orantin Thm 5.1, the recursion (V1) and Theorem V, to the Model Lemma. I checked Thm 5.1 against the source text: its hypotheses (Omega/dy regular, g+k>1, path avoiding the branch points, temperature variation) and the sign dictionary hold. Exact wolframscript checks confirm the genus-1 constant -1/(12v) two ways, from the recursion and from the Givental formula. They also confirm <HHH>_0=-5/v, <HHHH>_0=5/v^2, and (V1) with a non-trivial (X dphi)_+ term (phi=p^10). The findings are minor: (5-15) is used although declared unused, D_Omega=delta_Omega is unstated, and an estimate is uncited. Theorem A needs only the regularity of correlators with a K_0 insertion and ML(g) for g>=2, so Fm_0 and Fm_1 never enter its proof."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U11-1",
+     "lens": "A",
+     "title": "cor:mod-onepoint: 'its v-exponent' ill-defined when the correlator vanishes",
+     "label": "cor:mod-onepoint",
+     "file": "sections/s06_model_10.tex",
+     "lines": "28",
+     "problem": "The exponent meant is e = 1-2h+w/5 from lem:set-modhom, which depends only on h and w, not on the value of <X>_h (which may be 0). This is a wording issue only; the proof is correct."
+    },
+    {
+     "id": "U11-2",
+     "lens": "B",
+     "title": "Vague clause in rmk:mod-offK",
+     "label": "rmk:mod-offK",
+     "file": "sections/s06_model_10.tex",
+     "lines": "37",
+     "problem": "This is not a precise statement and cannot be checked as written. Harmless, since the remark is not used."
+    },
+    {
+     "id": "U11-3",
+     "lens": "A",
+     "title": "Circle radius R not specified in lem:mod-ibp(i)",
+     "label": "lem:mod-ibp",
+     "file": "sections/s06_model_8.tex",
+     "lines": "20, 26",
+     "problem": "The proof needs R > max_b |varsigma_b| (all poles of r w/(p^5-v) must lie inside the circle), but the statement does not say so. The hypothesis 'zero residues' is never used."
+    },
+    {
+     "id": "U11-4",
+     "lens": "A",
+     "title": "thm:mod-var(ii) rests on EO (5-15), declared as entering no proof",
+     "label": "thm:mod-var",
+     "file": "sections/s06_model_8.tex",
+     "lines": "34, 39",
+     "problem": "s01_intro_3.tex l.9 declares only EO Thm 5.1 (5-14) with Section 5.3 in (Q), and l.23 lists (5-15) among the citations that enter no proof. b_signs_2.tex l.24 cites (5-14)--(5-15). Part (ii) is used nowhere: thm:mod-V(ii) gets the h>=2 iden..."
+    },
+    {
+     "id": "U11-5",
+     "lens": "B",
+     "title": "thm:mod-var (ii) uses EO (5-15), declared unused; (ii) itself is unused",
+     "label": "thm:mod-var",
+     "file": "sections/s06_model_8.tex",
+     "lines": "34, 39 (also s01_intro_3.tex:23, b_signs_2.tex:24)",
+     "problem": "The declared inputs and the proof disagree. Part (ii) is never cited: prop:mod-V1 uses only part (i), and thm:mod-V(ii) proves the h>=2 case independently, from prop:mod-period and homogeneity."
+    },
+    {
+     "id": "U11-6",
+     "lens": "B",
+     "title": "EO Thm 5.1 is for the covariant variation D_Omega; D = delta on P^1 not stated",
+     "label": "thm:mod-var",
+     "file": "sections/s06_model_8.tex",
+     "lines": "39",
+     "problem": "EO state (5-14) for D_Omega = delta_Omega + a trace term (5-9) built from the holomorphic differentials and the kappa-modified kernel. On the genus-0 curve this term is absent, but the note does not say so. The convention also differs from ..."
+    },
+    {
+     "id": "U11-7",
+     "lens": "A",
+     "title": "Uniform domination in prop:mod-V1 asserted without reference",
+     "label": "prop:mod-V1",
+     "file": "sections/s06_model_8.tex",
+     "lines": "85",
+     "problem": "No reference or argument is given for the joint bound in several ray variables, uniform in v. Fubini and the slotwise use of lem:mod-ibp inside the iterated integrals are also tacit. The gap closes easily, see the repair."
+    },
+    {
+     "id": "U11-8",
+     "lens": "B",
+     "title": "Holomorphy and uniform ray bound in the (V1) proof not referenced",
+     "label": "prop:mod-V1",
+     "file": "sections/s06_model_8.tex",
+     "lines": "85",
+     "problem": "No reference is given, and with k >= 2 log legs the bound is needed jointly in the k ray variables. It does hold: lem:mod-abdks gives omega = N prod dp_i / prod (p_i^5 - v)^K with N polynomial in v and p, and deg_{p_i} N <= 5K - 2 by holomo..."
+    },
+    {
+     "id": "U11-9",
+     "lens": "B",
+     "title": "Redundant or unused hypotheses in lem:mod-ibp and lem:mod-fixedx",
+     "label": "lem:mod-ibp",
+     "file": "sections/s06_model_8.tex",
+     "lines": "9, 18",
+     "problem": "The proof never uses zero residues. Holomorphy at 0 and O(dp/p^2) at infinity already follow from having poles only at the branch points. lem:mod-fixedx needs the family to be holomorphic (differentiable) in v. Cosmetic."
+    },
+    {
+     "id": "U11-10",
+     "lens": "A",
+     "title": "Local notation clashes in the Theorem V proof",
+     "label": "thm:mod-V",
+     "file": "sections/s06_model_9.tex",
+     "lines": "45-47",
+     "problem": "k already denotes the number of log legs in the statement. rho_b sits next to varrho_b of prop:mod-LD. r, r_b and the ray \\mathfrak r share a letter, and t = p - c clashes with the model variable t = z/varsigma^4. Nothing is ambiguous in co..."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "X2",
+   "title": "Interfaces between the parts of the proof",
+   "summaries": [
+    "[S] Interface audit X2: every citation in the 12 hub proofs is used within the cited result's hypotheses. Objects, rings, index and genus ranges, normalisations and variables (z, zhat, t; u vs v(u); hatted vs flat; lowered coordinates) agree. c_g carries the same sign, power of 5 and coordinate (T = t_c) from thm:mod-gap to Theorem A, with exact checks for h = 2..8. ML(h) as defined is exactly what thm:mod-MLK proves and thm:red-main uses. prop:tra-can gives exactly the hypotheses of thm:red-main. (F_g) is used consistently, and thm:flh-main needs only R' mod z^{3g-2}, which thm:gam-D supplies. T_Gamma is one object throughout. No fatal, gap or fixable issue at the interfaces; five minor presentational points."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "X2-1",
+     "lens": "S",
+     "title": "Notation clash: H^j as j copies of H versus the flat class H^j",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "24-28, 53-61",
+     "problem": "H^j (j = 0..4) is also the flat basis, with H^0 = 1 the unit. The text means j insertions of H = H^1, which is ambiguous exactly where c_g(v+delta)^{2-2g} is produced."
+    },
+    {
+     "id": "X2-2",
+     "lens": "S",
+     "title": "'Conifold expansion of F_g' means the expansion of one representative",
+     "label": "cor:int-gap",
+     "file": "sections/s01_intro_2.tex",
+     "lines": "29",
+     "problem": "By def:mai-Fcf, F_g^cf is Cexp of the specific representative F_g^N in N. ev is not known to be injective (s10_main.tex:81), so the expansion is not shown to be intrinsic to the q-series F_g. The body is precise; the intro wording is not."
+    },
+    {
+     "id": "X2-3",
+     "lens": "S",
+     "title": "'Sum over all colourings' used for the non-diagonal CohFT M.omega",
+     "label": "def:set-outer",
+     "file": "sections/s02_setup_8.tex",
+     "lines": "46",
+     "problem": "M mixes colours, so M.omega is not colour-diagonal and the colouring language of def:set-graphsum does not apply literally. Harmless, since the full tensors are used."
+    },
+    {
+     "id": "X2-4",
+     "lens": "S",
+     "title": "TFT omega in T_Gamma is the conifold-expanded TFT, not stated",
+     "label": "def:set-outer",
+     "file": "sections/s02_setup_8.tex",
+     "lines": "46 (also s10_main.tex:11, s01_intro_2.tex:15)",
+     "problem": "omega of def:set-frob lives over Q(zeta)[[q]]. T_Gamma needs Cexp(Delta_i^{1/2}) = zeta^{4i} s varpi_0. cor:mai-gap says 'omega expanded in the frame as in def:set-outer', but def:set-outer never says so."
+    },
+    {
+     "id": "X2-5",
+     "lens": "S",
+     "title": "Formal versus complex v in the Model Lemma not reconciled in the proof",
+     "label": "thm:mod-MLK",
+     "file": "sections/s06_model_10.tex",
+     "lines": "12-24",
+     "problem": "The transfer is harmless: both sides are homogeneous monomials C v^e with C rational (lem:set-modhom), and the TR side is a polynomial identity in v. The proof does not say so."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "X4",
+   "title": "Rings, expansions and formal-series legitimacy across the manuscript",
+   "summaries": [
+    "[S] Within X4's scope (rings, expansions, formal-series legitimacy) I found no fatal error and no gap. N, ev and C_{alpha,beta} are well defined, and C commutes with D (lem:gau-confexp; I checked Conc(varpi_0,varpi_1)=0 numerically). Everything that C is applied to is an explicit element of N(x)Q(zeta). Identities known only after ev are never transferred to the conifold side. No infinite z-sum carrying growing negative powers of s is formed, and every graph contraction is finite. lem:tra-conv is used within its hypotheses each time. Fractional powers and zeta drop out because T_Gamma=F_Gamma lies in Q((u)). The findings are minor: a mis-cited rationality step in the Galois descent; F_g^cf depends on the chosen representative (canonical anyway, since ev is injective); the expansion is a formal change of frame, not analytic continuation, which the abstract and intro should say; and an inaccurate 'not needed' in the CGYZ comparison."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "X4-1",
+     "lens": "S",
+     "title": "CGYZ comparison: membership of F_g^N in the common subring is needed, and it holds",
+     "label": "sec:sgn-lit",
+     "file": "sections/b_signs_2.tex",
+     "lines": "100-108",
+     "problem": "Read in CGYZ's sense, the conclusion needs C(F_g^N) = phi_CGYZ(F_g), which follows if F_g^N is in S. The text says this membership is not needed."
+    },
+    {
+     "id": "X4-2",
+     "lens": "S",
+     "title": "Theorem A must use the TFT expanded in the frame",
+     "label": "thm:int-main",
+     "file": "sections/s01_intro_2.tex",
+     "lines": "15 (also s10_main.tex l.11; s02_setup_8.tex l.46)",
+     "problem": "def:set-frob defines omega over Q(zeta)[[q]]. T_Gamma needs Delta_i^{1/2} replaced by C(Delta_i^{1/2}) = zeta^{4i} s varpi_0. This is said only in def:set-hat and in the proof of cor:mai-gap."
+    },
+    {
+     "id": "X4-3",
+     "lens": "S",
+     "title": "Proved statement is a formal frame change, not analytic continuation; abstract and intro should say so",
+     "label": "cor:int-gap",
+     "file": "sections/s01_intro_2.tex",
+     "lines": "27-36 (also main.tex l.18 abstract; s01_intro.tex l.18,26; s01_intro_3.tex l.31)",
+     "problem": "C maps (C_0,I_1) to (varpi_0,varpi_1). The analytic continuation of C_0 has a nonzero y_3 = varpi_1 log u component (Conc(C_0,varpi_1) != 0), so analytically continued F_g need not lie in Q((s)). Only the formal statement is proved."
+    },
+    {
+     "id": "X4-4",
+     "lens": "S",
+     "title": "'Regular' has several unrelated meanings",
+     "label": "def:set-confexp",
+     "file": "sections/s02_setup_6.tex",
+     "lines": "20 (also s02_setup_7.tex l.56; s03_gauge_2.tex l.9; s01_intro_2.tex l.38)",
+     "problem": "Every use that enters Theorem A and Cor. B means membership in Q[[u]]. The other meanings are different notions under the same word, and under the first definition even zeta is 'not regular'."
+    },
+    {
+     "id": "X4-5",
+     "lens": "S",
+     "title": "Small ring imprecisions: N((z)), the Q(zeta)-linear extension of C, ph_n(L^{-5})",
+     "label": "prop:gau-quintic",
+     "file": "sections/s03_gauge_2.tex",
+     "lines": "20 (also s02_setup_6.tex l.16; s02_setup_4.tex l.17)",
+     "problem": "The rows lie in N[[z]]. The Q(zeta)-linear extension is named only in the proof of cor:mai-gap. Since L lies in Q[[q]], the ph_n(L^{-5}) form says nothing; the content is thm:gau-R0(iii)."
+    },
+    {
+     "id": "X4-6",
+     "lens": "S",
+     "title": "'Conifold expansion of F_g' is the expansion of a chosen representative; ev is in fact injective",
+     "label": "def:mai-Fcf",
+     "file": "sections/s10_main.tex",
+     "lines": "61-81 (also s02_setup_8.tex l.52, s07_comparison_2.tex l.63, s01_intro_2.tex l.29,36)",
+     "problem": "The proofs are valid for the fixed representatives. But unless ker(ev) lies in ker(C), 'the expansion of F_g' depends on the representative, so Cor. B is literally a statement about F_g^N."
+    },
+    {
+     "id": "X4-7",
+     "lens": "S",
+     "title": "Galois descent of F_g^N cites colour covariance where rationality is needed",
+     "label": "def:mai-Fcf",
+     "file": "sections/s10_main.tex",
+     "lines": "81 (also s03_gauge_8.tex l.36, cor:gau-rowsNN (i))",
+     "problem": "lem:gau-colrows gives covariance only. cor:gau-rowsNN and thm:gau-R0(iii) give A^act_n in Q(zeta)[L^{+-1}], so the colour-0 representatives are known only in N(x)Q(zeta). Their rationality needs D_0 in Q[[z]]."
+    }
+   ],
+   "coverage_gaps": [
+    {
+     "label": "thm:gam-lmi / thm:gam-main (ii)",
+     "verdict": "not-fully-checked",
+     "note": "formal/analytic interface checked only; the Wick computations were not rechecked",
+     "lens": "S"
+    }
+   ]
+  },
+  {
+   "key": "L3",
+   "title": "Identification of the Givental-Teleman graph sum with topological recursion: Dunin-Barkowski-Orantin-Shadrin-Spitz (arXiv:1211.4021) and Dunin-Barkowski-Norbury-Orantin-Popolitov-Shadrin (arXiv:1509.06954)",
+   "summaries": [
+    "[S] The identification of the model CohFT with topological recursion (thm:mod-tr, prop:mod-Rtr) is correct and uses DOSS (1211.4021v1) and DNOPS (1509.06954v2) within their hypotheses. I read both sources on the printed pages. The quoted formulas (2-30)-(2-35), (2-28), DOSS (2-22)-(2-26) and the sentence before DNOPS Thm 8.1 say what the manuscript takes from them. Each hypothesis holds for the model curve, often by two routes. The dilaton sign taken from PPZ is right: DNOPS prints the opposite, and an independent genus-1 TR check confirms the PPZ sign and 1/|Aut|. The factor 4 and the frozen-basis factor (-5)^{h-1} are correct, and R_TR = M_0 was checked numerically to t^3 (the transposed matrix fails). All six findings are minor citation or notation points. No gap."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "L3-1",
+     "lens": "S",
+     "title": "No explicit 'prescription' in DOSS 3.1, 3.5 for the formal Laplace reading",
+     "label": "lem:mod-laplace",
+     "file": "sections/s01_intro_3.tex",
+     "lines": "15 (also s06_model_2.tex 23; b_signs_2.tex 25)",
+     "problem": "DOSS 3.1/3.5 state no rule for divergent or polar Laplace integrals; they give only coefficient identities (3-57), (3-64). The attribution is loose. The reading itself is canonical: Watson's lemma for holomorphic parts, and the only polar t..."
+    },
+    {
+     "id": "L3-2",
+     "lens": "S",
+     "title": "DNOPS 2.3 action lacks 1/|Aut Gamma|; manuscript flags only the dilaton sign",
+     "label": "thm:mod-tr",
+     "file": "sections/s06_model_3.tex",
+     "lines": "23 (also s01_intro_3.tex 9; b_signs.tex 14)",
+     "problem": "DNOPS 2.3 sums over stable graphs with no automorphism factor. The manuscript actually uses PPZ's action, which has it, as does DOSS (2-26). That is the correct reading (the genus-1 check needs the 1/2 of the loop), but the quoted source is..."
+    },
+    {
+     "id": "L3-3",
+     "lens": "S",
+     "title": "DNOPS Prop. 4.3 (1) cited; the justification given is item (2)",
+     "label": "thm:mod-tr",
+     "file": "sections/s06_model_3.tex",
+     "lines": "28",
+     "problem": "As printed, item (1) does not mention y; Example 4.4 shows it needs y = the global coordinate. The parenthetical is the hypothesis of item (2). Both items hold here, and the citation is redundant: (2-32), to which the condition is equivalen..."
+    },
+    {
+     "id": "L3-4",
+     "lens": "S",
+     "title": "Parameter tuple of DNOPS (8-1) mis-indexed: a=(0,0,0,0,4v)",
+     "label": "thm:mod-tr",
+     "file": "sections/s06_model_3.tex",
+     "lines": "28 (also s01_intro_3.tex 9; b_signs.tex 52, 58)",
+     "problem": "DNOPS writes a=(a_0,...,a_{n+1}) (six entries for n=4; a_0 does not occur in f). The five-entry tuple must be read as (a_1,...,a_5); read as (a_0,...,a_4) it would put 4v into the constant term a_4."
+    },
+    {
+     "id": "L3-5",
+     "lens": "S",
+     "title": "Free-energy convention attributed to DNOPS (2-26)-(2-29)",
+     "label": "conv:mod-kernel",
+     "file": "sections/s06_model.tex",
+     "lines": "20",
+     "problem": "DNOPS (2-26)-(2-29) define only omega_{g,k}; their kernel equals the manuscript's K_b (checked). They define no free energy, so the attribution does not cover F^TR_h. Only the definition itself is used (cor:mod-trF)."
+    },
+    {
+     "id": "L3-6",
+     "lens": "S",
+     "title": "thm:mod-tr hypothesis admits n=0, where omega_{h,0} is undefined",
+     "label": "thm:mod-tr",
+     "file": "sections/s06_model.tex",
+     "lines": "66",
+     "problem": "For n=0 there is no omega_{h,0}, and DNOPS (2-35) concerns k>=1. The statement is used only with n>=1 (cor:mod-trF uses n=1), so this is only an imprecision."
+    }
+   ],
+   "coverage_gaps": [
+    {
+     "label": "lem:set-modhom",
+     "verdict": "not-fully-checked",
+     "note": "Not used by the identification; only its consistency with lem:mod-scale (ii) was noted.",
+     "lens": "S"
+    }
+   ]
+  },
+  {
+   "key": "L4",
+   "title": "The x-y swap formula: Alexandrov-Bychkov-Dunin-Barkowski-Kazarian-Shadrin (arXiv:2212.00320)",
+   "summaries": [
+    "[S] The manuscript uses ABDKS (arXiv:2212.00320v3, which is the latest version) soundly. Theorem 7.1, (7.6), (7.7) with its 1/hbar^2, (7.9), (7.10) and the kernel (1.1) are transcribed exactly, with the v3 numbers. The sign dictionary omega_{h,n}=(-1)^n omega^ABDKS holds because the ABDKS kernel is -K_b. The model curve meets every hypothesis, including those of Thm 1.14 applied to the trivial swapped curve (p, W_v): the zeros of dx are simple and finite, and the order-4 pole at infinity is not a critical point. The formulas are used only inside their valid range. An independent genus-1 check (direct topological recursion against (7.10)) agrees exactly, symbolically in v, as does a series check of the edge-weight identity. Only minor findings: the JEMS numbering differs, the hypotheses are paraphrased incompletely, and the range of (7.9) is not stated."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "L4-1",
+     "lens": "S",
+     "title": "Published JEMS numbering differs from cited v3 equation numbers",
+     "label": "lem:mod-abdks",
+     "file": "sections/s06_model_7.tex; sections/s01_intro_3.tex; refs.bib",
+     "lines": "s06_model_7 l.10,15; s01_intro_3 l.9; refs.bib l.93-97",
+     "problem": "In the JEMS version, W_i is (7.4), W_{i,j} and the one-point formula are unnumbered, the closed formula is (7.5), and the base formula (1.13) is (1.7). This is correct under the declared v3 convention, but a reader who follows the DOI will ..."
+    },
+    {
+     "id": "L4-2",
+     "lens": "S",
+     "title": "Range of (7.9) not stated; the formula fails at (g,m)=(0,1)",
+     "label": "eq:mod-abdks",
+     "file": "sections/s06_model_7.tex",
+     "lines": "5-9",
+     "problem": "At (g,m)=(0,1) the right side of (7.9) is 0, not -y dx, because Thm 7.1 drops the delta_{(0,1)} term of (1.13). The manuscript uses (7.9) only for 2h-2+n>0 and (7.10) only for h>=1, so nothing is affected."
+    },
+    {
+     "id": "L4-3",
+     "lens": "S",
+     "title": "Hypotheses of ABDKS Thm 7.1 paraphrased incompletely",
+     "label": "lem:mod-abdks",
+     "file": "sections/s06_model_7.tex",
+     "lines": "5, 20",
+     "problem": "The paraphrase omits that y must be regular at the zeros of dx, that S is compact and B normalised, and the hypotheses of Thm 1.14 for the swapped data (P^1,z,x(z)). Thm 7.1 as printed says 'arbitrary rational x'. All of these hold here: th..."
+    }
+   ],
+   "coverage_gaps": [
+    {
+     "label": "prop:mod-period",
+     "verdict": "not-fully-checked",
+     "note": "Steps 1-2 (the ABDKS use) verified; Steps 3-5 for general h are outside this unit and were checked only at h=1.",
+     "lens": "S"
+    },
+    {
+     "label": "thm:mod-gap",
+     "verdict": "not-fully-checked",
+     "note": "ABDKS enters only through prop:mod-period, whose use of it is verified; cor:mod-trF was not checked here.",
+     "lens": "S"
+    }
+   ]
+  },
+  {
+   "key": "U13",
+   "title": "Connection I: the saddle series, rationality, the form lemma, Theorem P(a)",
+   "summaries": [
+    "[A] I found no fatal error, gap or fixable error in this unit. I re-derived every displayed formula the arguments rely on by hand. The checks were eq:con-chain, the Stirling identity, the Taylor data, lem:con-form (a)-(d), the PhiSP normalisation, V in z^{-1}Q[z^{-1}][[u]] and the multipliers in eq:con-bz. Each \"by X\" was opened and its hypotheses confirmed, including lem:fsp-generic, fsp-transl(b), fsp-refl and fsp-stirfe. Exact machine checks agree: eq:con-bz holds to z^8, and PF5^L(Lc) is 0 mod z^7 with c_n in Q[L,L^{-1}]. PhiSP computed from the hatted data matches L^{-4n}c_n. There is no circularity. Six minor points remain, mainly that the factor-by-factor proof of eq:con-bz runs in a symbol calculus rather than in A_L(zeta)[[t]][[z]]. Each has a short repair.",
+    "[B] I found no fatal error, gap or fixable error in U13; there are six minor points. I re-derived every displayed formula by hand. The definitions and proofs (def:gam-c and the Stirling-product identity, the Taylor data, prop:gam-rational, lem:con-form (a)-(d), def:con-PhiSP, the conventions and eq:con-chain, Theorem P(a)(i)) hold for all n. The formal stationary-phase lemmas they use are applied within their hypotheses. I also read and checked the proofs of P(a)(ii)-(iv) in s08_connection_5.tex. Small exact checks agree with the text: the shift identity behind eq:con-bz holds to z^7; c_1..c_3 come out as stated; PF5^L(Lc)=0 holds to z^3; c_n = L^{4n} ph^SP_n(L^{-5}) holds to n=3; and c_3(1)=h_3. The minor points are an imprecise 'factor by factor' ring claim in Step 3, a misstatement about order-1 Taylor coefficients in prop:gam-rational, and notation."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U13-1",
+     "lens": "B",
+     "title": "Normalisation by A_St(L,0), which is not in A_L",
+     "label": "def:gam-c",
+     "file": "sections/s08_connection_3.tex; sections/s08_connection_4.tex",
+     "lines": "s08_connection_3 l.21; s08_connection_4 l.61",
+     "problem": "A_St(L,0) = e^{S_1(L)} is a square root of 5L/(1-L^5) and does not lie in A_L. Over A_L the definition must be read as SPn_L[S_0; chi A_St/A_St(L,0)], whose amplitude has Taylor data in A_L."
+    },
+    {
+     "id": "U13-2",
+     "lens": "A",
+     "title": "S(1/x) = -W(x) and critical points x^5 = u hold only as formal symbols",
+     "label": "lem:con-form",
+     "file": "sections/s08_connection_3.tex; sections/s08_connection_4.tex",
+     "lines": "s08_connection_3 l.61; s08_connection_4 l.8-12",
+     "problem": "These are identities of symbols: they depend on branch conventions for log q and log x, and G converges only for |x|<1. Nothing downstream uses them analytically, since the proof of P(a)(ii) Step 3 re-proves the phase identity through deriv..."
+    },
+    {
+     "id": "U13-3",
+     "lens": "B",
+     "title": "Overloaded letters c, b, lambda",
+     "label": "thm:con-Pa",
+     "file": "sections/s08_connection_3.tex; sections/s08_connection_4.tex",
+     "lines": "s08_connection_4 l.22, 61-63",
+     "problem": "Each use is declared local, so the proofs are unambiguous, but the reuse is avoidable."
+    },
+    {
+     "id": "U13-4",
+     "lens": "A",
+     "title": "Notation clashes: c_0, c, lambda, theta_u",
+     "label": "def:gam-c",
+     "file": "sections/s08_connection_3.tex; sections/s08_connection.tex",
+     "lines": "s08_connection_3 l.10, l.21; s08_connection l.12",
+     "problem": "c_0 is also the generator of N (Cexp(c_0)=varpi_0), and lambda also names the torus weights. The formula in line 12 is correct but easy to misread."
+    },
+    {
+     "id": "U13-5",
+     "lens": "A",
+     "title": "Colour-i saddle series underspecified",
+     "label": "def:gam-c",
+     "file": "sections/s08_connection_3.tex",
+     "lines": "23",
+     "problem": "The disc and lambda must be re-chosen at zeta^i L; this works because prod_j(zeta^j - zeta^i L) = 1-L^5. Not used in this unit."
+    },
+    {
+     "id": "U13-6",
+     "lens": "A",
+     "title": "Order-1 Taylor coefficient of S_0 called rational",
+     "label": "prop:gam-rational",
+     "file": "sections/s08_connection_3.tex",
+     "lines": "50",
+     "problem": "S_0'(L) = lambda + 5log(5L) - sum_j log(zeta^j-L) is not rational in L; it vanishes only because of the choice of lambda. The statement holds for order at least 2."
+    },
+    {
+     "id": "U13-7",
+     "lens": "B",
+     "title": "Order-1 Taylor coefficient of S_0 is called branch-free",
+     "label": "prop:gam-rational",
+     "file": "sections/s08_connection_3.tex",
+     "lines": "50",
+     "problem": "The order-1 coefficient of S_0 is S_0'(sigma) = lambda + 5log(5sigma) - sum log(zeta^j - sigma), which contains logarithms. Its value at L is 0 only by the choice of lambda, as the next sentence of the text explains. The intended claim is o..."
+    },
+    {
+     "id": "U13-8",
+     "lens": "B",
+     "title": "'Critical points are x^5=u' stated with no ring",
+     "label": "lem:con-form",
+     "file": "sections/s08_connection_3.tex",
+     "lines": "61",
+     "problem": "This is an informal statement about formal series: no ring is given in which log(1-x^5) = log(1-u) is solved. Only X=1 being critical over Q[[u]] is used, and part (c) proves that."
+    },
+    {
+     "id": "U13-9",
+     "lens": "B",
+     "title": "Proof that ph^SP_n lies in Q[[u]] omits two trivial hypotheses",
+     "label": "def:con-PhiSP",
+     "file": "sections/s08_connection_4.tex",
+     "lines": "35",
+     "problem": "The proof also needs that the covariance (1-u)/5 lies in Q[[u]] and that hat a(1;0) = (1-u)^{-1/2} is a unit (lem:fsp-param (i)). Both are immediate."
+    },
+    {
+     "id": "U13-10",
+     "lens": "A",
+     "title": "S_0(L) and A_St(L,0) are not elements of A_L",
+     "label": "thm:con-Pa",
+     "file": "sections/s08_connection_4.tex",
+     "lines": "61",
+     "problem": "S_0(L) and A_St(L,0)=e^{S_1(L)} involve logarithms and do not lie in A_L. Only the order >=1 data of S_0 and the normalised amplitude A_St/A_St(L,0) do."
+    },
+    {
+     "id": "U13-11",
+     "lens": "A",
+     "title": "eq:con-bz proved factor by factor outside the ring it names",
+     "label": "thm:con-Pa",
+     "file": "sections/s08_connection_4.tex",
+     "lines": "74-79",
+     "problem": "The single factors and their translates involve log q, log(5L), log(L-zeta^j), log z and poles in z, so they are not elements of that ring. The step also tacitly uses that the Stirling expansion is consistent under a change of base point. T..."
+    },
+    {
+     "id": "U13-12",
+     "lens": "B",
+     "title": "eq:con-bz is said to be proved factor by factor in a ring that does not contain the factors",
+     "label": "thm:con-Pa",
+     "file": "sections/s08_connection_4.tex",
+     "lines": "74-79",
+     "problem": "The six factors and two of the multipliers (prod_k(5sigma/z+k) carries z^{-5}; the log q, log(5sigma), log(sigma-zeta^j), log z symbols) are not elements of A_L(zeta)[[t]][[z]]. Only the full ratio and the product of the multipliers lie the..."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "L2",
+   "title": "Topological recursion: Eynard-Orantin (arXiv:math-ph/0702045)",
+   "summaries": [
+    "[S] Every Eynard-Orantin (v4) statement the model section uses is quoted correctly, in the right conventions, and within its hypotheses. The curve x=W_v(p), y=p is in EO's class for v\u22600. The dictionary K_b=-K^EO, omega_{h,n}=(-1)^n W_n, FTR=-F^EO is right. d_v at fixed x is exactly EO's temperature variation (5-27) between the poles infinity and 0 of y dx, i.e. path = ray 0 to infinity with Lambda=-1, and Omega/dy=1/p is regular at the branch points. Base case (0,2) matches EO's Rauch formula analytically; thm:mod-var(i) holds numerically at (1,1) and (0,3) to 1e-40. Symplectic invariance, EO homogeneity and EO dilaton are not needed anywhere. Four minor findings only; main one: unused thm:mod-var(ii) is proved from (5-15), which the intro declares unused."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "L2-1",
+     "lens": "S",
+     "title": "Sign-table dilaton row lacks range 2h-2+n>0 and EO's extra residues",
+     "label": "tab:sgn-tr",
+     "file": "sections/b_signs_2.tex",
+     "lines": "23",
+     "problem": "At (h,n)=(0,1) the left side is 0 but the right side is y dx. EO (4-30) also takes residues at p_1..p_k and has a delta term. The row is used in no proof."
+    },
+    {
+     "id": "L2-2",
+     "lens": "S",
+     "title": "thm:mod-var (ii) proved from EO (5-15), which the intro declares unused",
+     "label": "thm:mod-var",
+     "file": "sections/s06_model_8.tex",
+     "lines": "34, 39; also s01_intro_3.tex:9,23; b_signs_2.tex:24",
+     "problem": "A stated result rests on a quoted equation that the declared input list excludes, so the input list and the proof disagree. Validity is unaffected: (ii) is used nowhere (prop:mod-V1 uses only (i); thm:mod-V(ii) goes through prop:mod-period)..."
+    },
+    {
+     "id": "L2-3",
+     "lens": "S",
+     "title": "EO's covariant D_Omega silently replaced by delta_Omega",
+     "label": "thm:mod-var",
+     "file": "sections/s06_model_8.tex",
+     "lines": "39",
+     "problem": "EO state these for D_Omega = delta_Omega + tr(kappa delta tau kappa d/dkappa). The two coincide only because the curve has genus 0 (no kappa, no tau), which the proof does not say."
+    },
+    {
+     "id": "L2-4",
+     "lens": "S",
+     "title": "Dictionary omega_{h,n}=(-1)^n W_n^(h) stated without range; false at (0,1)",
+     "label": "conv:mod-kernel",
+     "file": "sections/s06_model.tex",
+     "lines": "20-21; also b_signs_2.tex:20",
+     "problem": "At (h,n)=(0,1), omega_{0,1} = y dx while W_1^(0) = 0 by EO (4-7), so the identity fails there. It holds, by the kernel count, for 2h-2+n >= 0, which is the only use."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "L5",
+   "title": "Quantum Riemann-Roch, Teleman reconstruction and the genus-0 axioms",
+   "summaries": [
+    "[S] Every quoted statement in L5 checks out against its source, in the manuscript's conventions. The value (QRR), R(q=0)=diag(h_{w_i}) with twist weight -5\u03b6^i, is confirmed by GJR18 (16)-(17), by GJR17 (12)-(13) and (19)-(20) at t=0, by Giv01 (Proposition, \u00a72.2 Theorem 1 and Remark) and by CG Corollary 1. The sign of the exponent, R versus R^{-1}, z versus -z and the basis all agree. I re-derived it independently from Mumford's GRR for the constant-map theory together with Teleman Prop 8.7(i). This matters: Theorem C is equivalent to that exact value. (T) is quoted in the right version (the flat-vacuum orbit statement, which needs no homogeneity). But it does not contain the flatness (b) or the fixing of R's constants; those are in Teleman Props 8.4/8.7(ii) and GJR18 (16). The eight findings are all minor and do not break the proof: this flatness point, an undeclared hypothesis, an overstated remark, mis-references, and a z/-z sloppiness inside GJR18 (37)."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "L5-1",
+     "lens": "S",
+     "title": "GJR18 Lemma 7.7 (37): z vs -z inside GJR18; manuscript's description of what it proves",
+     "label": "thm:gam-ginf / thm:int-gamma",
+     "file": "sections/s01_intro_2.tex; sections/s09_gamma_3.tex; sections/s09_gamma_4.tex",
+     "lines": "s01_intro_2 60-68; s09_gamma_3 24-28; s09_gamma_4 3-12",
+     "problem": "The formula matches the right side of (37) exactly (z^5 coefficient 4537/3937500 checked). But GJR18 Cor 7.6 defines r_l via (-z)^l, while (37) displays 1+sum r_l z^l. Read literally, the LG series would be G_inf(-z). GJR18's own proof supp..."
+    },
+    {
+     "id": "L5-2",
+     "lens": "S",
+     "title": "Giv01 and CG do not state (QRR) for this T-equivariant twisted theory",
+     "label": "thm:set-qrr",
+     "file": "sections/s01_intro.tex; sections/s01_intro_3.tex",
+     "lines": "s01_intro 12; s01_intro_3 10",
+     "problem": "Giv01 Thm 1 covers untwisted equivariant GW (the tangent factor). CG Cor 1 covers a fibrewise S^1 Euler class over a non-equivariant base, as a 1/lambda-adic operator. The specialised combined statement is only in GJR18 (17) and GJR17 (19)-..."
+    },
+    {
+     "id": "L5-3",
+     "lens": "S",
+     "title": "(T): Teleman Thm (2) gives no flatness (b) or constant-fixing; (b) is called a convention",
+     "label": "def:set-rows / thm:set-GT",
+     "file": "sections/s02_setup_4.tex; sections/s02_setup_5.tex; sections/s01_intro_3.tex",
+     "lines": "s02_setup_4 7-15; s02_setup_5 40-47; s01_intro_3 10,13",
+     "problem": "Teleman v3 Thm (2) is an orbit/existence statement over C: flat-vacuum CohFTs form the T_z Sp_L^+ T_z^{-1} orbit of I_A. GJR18 Thm 4.1 likewise only names 'an R-matrix' that is symplectic. The proof also needs (b) along the line, and that R..."
+    },
+    {
+     "id": "L5-4",
+     "lens": "S",
+     "title": "rmk:set-qrrsign overstates that ph_1=-3/20 is forced independently of (QRR)",
+     "label": "rmk:set-qrrsign",
+     "file": "sections/s02_setup_4.tex",
+     "lines": "52",
+     "problem": "lem:gau-HPF(iii) forces this only for solutions whose coefficients lie in Q[[u]]. For the actual rows in Q(zeta)[[q]], ph_1 = -3/20 + c u^{4/5} with c = -d_1, where d_1 is the z-coefficient of D_0 (thm:gau-R0(iv)). d_1 = 0 needs (QRR) or Th..."
+    },
+    {
+     "id": "L5-5",
+     "lens": "S",
+     "title": "Teleman hypotheses (all-genus CohFT with flat unit, formal base) are not explicitly declared",
+     "label": "thm:set-GT / thm:set-G0",
+     "file": "sections/s02_setup_5.tex; sections/s02_setup.tex; sections/s01_intro_3.tex",
+     "lines": "s02_setup_5 40-47; s02_setup 95-108; s01_intro_3 12-13",
+     "problem": "Teleman needs the full all-genus CohFT axioms with flat unit. His theorem is stated over C, and his families live over neighbourhoods of a point of the Frobenius manifold. Here the CohFT is over Q(zeta)[[q]] in the Novikov direction, and q=..."
+    },
+    {
+     "id": "L5-6",
+     "lens": "S",
+     "title": "GJR18 Thm 4.1 mixes Omega^lambda and R_tau; manuscript's reading is the coherent one",
+     "label": "thm:set-GT",
+     "file": "sections/s02_setup_5.tex",
+     "lines": "40-47",
+     "problem": "GJR18 prints Omega^lambda (unshifted, Novikov q) with R_tau, and its shift tau contains log q. The only consistent reading is the theory at t=tau with Novikov variable 1, i.e. Q=e^{T(q)}. That is exactly how thm:set-GT states it."
+    },
+    {
+     "id": "L5-7",
+     "lens": "S",
+     "title": "GJR18 '\u00a73.1, (9)' mis-reference: (9) is in \u00a73.2",
+     "label": "def:set-fq",
+     "file": "sections/s02_setup.tex; sections/s01_intro.tex",
+     "lines": "s02_setup 24; s01_intro 10",
+     "problem": "In arXiv v1, (9) is in \u00a73.2 'Full torus localization'. \u00a73.1 defines the formal-quintic cycle in an unnumbered display. The content matches."
+    },
+    {
+     "id": "L5-8",
+     "lens": "S",
+     "title": "(G0)(d) cites GJR18 (14), which is the q-direction S-matrix equation",
+     "label": "thm:set-G0",
+     "file": "sections/s02_setup.tex",
+     "lines": "102-106",
+     "problem": "(14) is zDS+S.H=A.S at tau=I_1/I_0, rewritten in the q-direction. The general QDE is the unnumbered display before (14). (d) is its adjoint form and also follows from TRR plus the string equation, (G0)(b),(c)."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U08",
+   "title": "The u-adic convergence lemma (appendix C) and the reduction theorem (Theorem R, cor:red-can, the Model Lemma as a hypothesis)",
+   "summaries": [
+    "[A] Appendix C (lem:tra-conv) and Section 5 (Theorem R, cor:red-can) hold up; I found no fatal point, gap or fixable error. I checked every inference and opened every cited statement: lem:tra-sum/frames/twoslot/coeff/T/F, cor:tra-slice/edges, prop:tra-can, lem:set-modhom, lem:set-dilaton, lem:gau-vanshape, thm:mod-MLK. Each is used within its hypotheses: (Sp), (A), v'(0)\u22600 and delta in u^2Q[[u]] are each genuinely needed and are supplied for P_can. The Model Lemma enters exactly in the form def:red-ML that thm:mod-MLK proves. There is no circularity. Exact-arithmetic checks of the identities in (e3), (f1) and (f2) all pass. What remains are seven minor imprecisions, chiefly the dependency sentence, the n=0 case in (b4) and an informal \"in short\".",
+    "[B] The unit holds up. Every step of lem:tra-conv (a)-(f) and of Theorem R (thm:red-main, cor:red-can) follows from the cited statements, used within their hypotheses. The Model Lemma enters only as a hypothesis, and only ML(h)(i) with at least one frame for h<=g-1. The adversarial checks found nothing wrong: degenerate vertices, loops, half-edges carrying H, the unbounded number of H-insertions in the vertex graph (handled by the uniform bound 2-2g+j+4l/5), logarithms in F_0 and F_1, and the role of v'(0)!=0. Independent exact checks also pass: the closed form of Y^C, the frames and their u-orders, the identities in (f1), (f2) and (e3), and <HHH>_0=-5/v. I found no fatal, gap or fixable item. The eight findings are all minor: incomplete dependency claims, an 'in short' formula that is false in genus 0 and 1, one mis-reference, edge cases with n=0, notation clashes, and one citation of (f) slightly outside its setting."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U08-1",
+     "lens": "B",
+     "title": "Notation clashes in the appendix (D, N, c)",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "10, 29, 63",
+     "problem": "D clashes with the global macro D = q d/dq. N is also the exponent in 'modulo u^N' in the same proof. c is also used for the coefficient families c_(k,a). In (c), 'this section' means sec:tra. All of this is cosmetic."
+    },
+    {
+     "id": "U08-2",
+     "lens": "B",
+     "title": "(b4) and (e2) apply (b2)/(b3) outside the stated n>=1",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "13, 21, 24, 57",
+     "problem": "Part (b) assumes n>=1. The one-vertex graph has n=0, and so does (l,j)=(0,0). In both cases nothing needs expanding, and Theorem R applies (b4) only to edge graphs, where lem:red-genus gives n>=1."
+    },
+    {
+     "id": "U08-3",
+     "lens": "A",
+     "title": "(b4) stated for all leg-free graphs, but (b) assumes n >= 1 slots",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "13, 21, 49",
+     "problem": "The vertex graph has a vertex with n=0 slots, which (b1)-(b3) do not cover. That case is trivial and is handled by (e). (b4) is used only for edge graphs (thm:red-main Step 3), where every vertex has n_w >= 1."
+    },
+    {
+     "id": "U08-4",
+     "lens": "A",
+     "title": "YC(v(u)) called an element of H^u",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "22",
+     "problem": "YC is a vector of lowered components in Q((z))[[u]]^5; only J^C = eta^{-1} YC is an element of H^u. Also, 'this section' inside an appendix means Section 4."
+    },
+    {
+     "id": "U08-5",
+     "lens": "A",
+     "title": "Unused claim wt(k,b) >= 3/5 in part (d)",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "23, 51",
+     "problem": "The claim is correct but used nowhere in the note."
+    },
+    {
+     "id": "U08-6",
+     "lens": "A",
+     "title": "Dependency sentence of lem:tra-conv lists too few prerequisites",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "35",
+     "problem": "(a),(b2)-(b4),(e) also use lem:tra-frames, cor:tra-slice, lem:tra-twoslot and lem:tra-sum, and (c) uses lem:gau-vanshape. None of these uses lem:tra-conv, so there is no circularity; only the wording is wrong."
+    },
+    {
+     "id": "U08-7",
+     "lens": "B",
+     "title": "Dependency list of lem:tra-conv says 'only' but is incomplete",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "35 (also s05_reduction.tex 7)",
+     "problem": "(a), (b2)-(b4) and (e) also use lem:tra-frames, cor:tra-slice, lem:tra-twoslot and lem:tra-sum. (b4) and (f1) use (b1) and (d), and (e2) uses def:set-graphsum. Theorem R also uses lem:set-modhom and lem:set-dilaton through lem:tra-conv. Eve..."
+    },
+    {
+     "id": "U08-8",
+     "lens": "B",
+     "title": "Definition of F-bar_g cited to lem:set-dilaton instead of def:set-graphsum",
+     "label": "lem:tra-conv",
+     "file": "sections/a3_uconv.tex",
+     "lines": "57",
+     "problem": "F-bar_g is defined in def:set-graphsum and def:set-modcohft; lem:set-dilaton (iii) only reinterprets it. This is a mis-reference."
+    },
+    {
+     "id": "U08-9",
+     "lens": "A",
+     "title": "Notation overloads: Cont_Gamma, D, d",
+     "label": "def:red-flatsum",
+     "file": "sections/s05_reduction.tex",
+     "lines": "14-24",
+     "problem": "This clashes with Cont_Gamma[E,q;Omega] of def:set-graphsum, which has no d-factors. D = 3h-3+n in lem:tra-conv clashes with the matrix D of def:tra-dressing (ii), and d (dilaton factor) sits next to the derivative symbol. Each is explained..."
+    },
+    {
+     "id": "U08-10",
+     "lens": "A",
+     "title": "Informal 'in short' function form of the Model Lemma",
+     "label": "def:red-ML",
+     "file": "sections/s05_reduction.tex",
+     "lines": "39",
+     "problem": "For h=0,1, F^m_h contains log v and only derivatives of order >=3 (resp. >=1) are meaningful. The precise statement is the preceding Taylor-coefficient form (equivalence checked). Nothing uses the 'in short' form."
+    },
+    {
+     "id": "U08-11",
+     "lens": "B",
+     "title": "'In short' function form of ML is false for h=0,1 at low order",
+     "label": "def:red-ML",
+     "file": "sections/s05_reduction.tex",
+     "lines": "39",
+     "problem": "For h=0 the Taylor coefficients of order n<=2 of F-bar_0 vanish, but those of F_0 o Pi_0 = -(5/2)(v+Pi_0)^2 log(v+Pi_0) contain log v. The order-0 coefficient for h=1 fails the same way. The precise statement just before it (2h-2+n>0) is co..."
+    },
+    {
+     "id": "U08-12",
+     "lens": "B",
+     "title": "Redundant hypothesis in Theorem R; 'non-regular dressings' in a remark",
+     "label": "thm:red-main",
+     "file": "sections/s05_reduction.tex",
+     "lines": "56 (side remark: s10_main_2.tex 51)",
+     "problem": "The hypothesis repeats def:tra-dressing. A dressing is regular in u by definition, so the remark's phrase contradicts the definition. The remark enters no proof."
+    },
+    {
+     "id": "U08-13",
+     "lens": "A",
+     "title": "'If moreover ML_g holds' in Theorem R(b) overstates the hypotheses",
+     "label": "thm:red-main",
+     "file": "sections/s05_reduction.tex",
+     "lines": "58-59, 75",
+     "problem": "The proof of (b) (Step 4, via lem:tra-conv (e)) uses only ML_g, not ML_h for h<g. The statement is harmless but stronger in its hypotheses than needed."
+    },
+    {
+     "id": "U08-14",
+     "lens": "B",
+     "title": "Step 3 leaves out the vertex unit d^{2h-2+n}, which (b4) does not cover",
+     "label": "thm:red-main",
+     "file": "sections/s05_reduction.tex",
+     "lines": "73 (with a3_uconv.tex 21)",
+     "problem": "The flat-sum vertex factor is d^{2h-2+n} times the factor of (b3) that (b4) treats. Multiplying by a unit of Q[[u]] commutes with all the sums, so the conclusion stands, but the step is not stated."
+    },
+    {
+     "id": "U08-15",
+     "lens": "B",
+     "title": "def:flh-outer (ii) cites lem:tra-conv (f) outside its stated setting",
+     "label": "def:flh-outer",
+     "file": "sections/s07_comparison.tex",
+     "lines": "24",
+     "problem": "lem:tra-conv (f) is stated for model correlators with X_i in H^u_+ and kappa in Q[[u]]^x, not for an arbitrary CohFT over Q(zeta)((s)). The computation is identical, and lem:set-dilaton (iii) already covers that ring, so validity is unaffec..."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U06",
+   "title": "Gauge IV: WKB solutions, colours, thm:gau-R0, cor:gau-rowsNN, cor:gau-colours, the window F_g",
+   "summaries": [
+    "[A] Unit U06 (s03_gauge_7.tex, s03_gauge_8.tex) holds up. I found nothing fatal and no gap. All eight statements are proved as stated, and every cited statement is used within its hypotheses. Machine checks support two of them: the formula T^w_1(Lg)=5zeta^{4i}Dg and the colour-1 scaling of the T-system. Formal-WKB uniqueness, colour covariance and the identity Q D_0 = P_can Q^{m,(0)} are correct. That identity is proved first over Laurent polynomials in L and then carried to Q(zeta)((s)). The forward references (cor:gau-rowsNN inside thm:gau-R0(iv), and thm:gam-D in def:gau-Fg) are not circular. The six findings are all minor: a routine step left implicit (the formal exponential), imprecise statements, and one downstream mis-citation (def:mai-Fcf claims colour-0 representatives in N, which needs thm:con-glue).",
+    "[B] Unit U06 (s03_gauge_7, s03_gauge_8) is sound. All eight statements are proved. The hypotheses of every cited lemma and of (QRR) hold at each point of use. Results move between the q-chart and the s-chart only through injective differential maps on Q(zeta)[L,1/L]; no identity is pushed through ev, whose injectivity is never assumed. I re-derived the key formulas by hand and confirmed them with exact wolframscript checks: the PF5^(i) coefficients and T^w_1, the HPF recursion (polynomial coefficients, resonance holding identically in the free coefficients up to n=15), and the colour-0 T-system against Phi^can at u=0. No fatal, gap or fixable finding. There are four minor points. The most relevant: the def:mai-Fcf justification (s10_main.tex l.81) needs colour-0 row representatives in N, which this unit does not provide; it follows from thm:con-glue."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U06-1",
+     "lens": "A",
+     "title": "'proved later, independently of this section' is inaccurate",
+     "label": "sec:set",
+     "file": "sections/s02_setup.tex",
+     "lines": "14",
+     "problem": "Both use Section 2: def:set-rows, prop:set-cyclicLR, cor:set-cyclicPF5 and (QRR). The intended claim is that they do not use the definitions that cite them; I checked that there is no circularity."
+    },
+    {
+     "id": "U06-2",
+     "lens": "B",
+     "title": "Forward-referenced facts are not proved 'independently of this section'",
+     "label": "sec:set",
+     "file": "sections/s02_setup.tex",
+     "lines": "14",
+     "problem": "Both rest on Section 2: prop:set-cyclicLR, cor:set-cyclicPF5, def:set-rows, thm:set-qrr, lem:set-hrot, lem:set-canon, def:set-tau, prop:set-modrows, def:set-M0. There is no circularity, because none of these uses the definitions that cite t..."
+    },
+    {
+     "id": "U06-3",
+     "lens": "A",
+     "title": "lem:gau-wkb: derivation on k((s)) unspecified; part (iii) needs zeta in k",
+     "label": "lem:gau-wkb",
+     "file": "sections/s03_gauge_7.tex",
+     "lines": "20, 24",
+     "problem": "D should be stated as -(1-s^5)/(5s^4)d/ds and q as (1-s^5)/5^5. DL alone fixes D only among continuous derivations. Part (iii) needs zeta in k; this is only implicit."
+    },
+    {
+     "id": "U06-4",
+     "lens": "A",
+     "title": "Formal exponential: passage to PF5^{(i)}(L Phi_i)=0 left implicit",
+     "label": "lem:gau-colrows",
+     "file": "sections/s03_gauge_7.tex",
+     "lines": "20, 62; also s03_gauge_8.tex 28",
+     "problem": "The differential algebra holding the formal exponential is never specified. Cancelling it needs e^{u_i/z} to be a non-zero-divisor."
+    },
+    {
+     "id": "U06-5",
+     "lens": "B",
+     "title": "Unstated routine step: stripping the formal exponential from cor:set-cyclicPF5(b)",
+     "label": "lem:gau-colrows",
+     "file": "sections/s03_gauge_7.tex",
+     "lines": "62 (also s03_gauge_8.tex l.28)",
+     "problem": "The corollary says that e^{u_i/z} z L Phi_i solves PF5. lem:gau-wkb needs PF5^(i)(L Phi_i) = 0. The one-line conjugation by e^{u_i/z}, and cancelling the constant z (a non-zero-divisor), is not written."
+    },
+    {
+     "id": "U06-6",
+     "lens": "A",
+     "title": "Ambiguous 'this'; frame dependence of Phi^can, A^can, D_0 suppressed",
+     "label": "thm:gau-R0",
+     "file": "sections/s03_gauge_8.tex",
+     "lines": "11, 13, 70",
+     "problem": "The referent is unclear (for G^ the u^n coefficients are in fact polynomials in zh, by lem:mai-Ghat). D_0 depends a priori on (alpha,beta) through P_can and varpi_0. Harmless, because thm:gam-D gives D_0=1 in every frame."
+    },
+    {
+     "id": "U06-7",
+     "lens": "A",
+     "title": "A^act_n in Q(zeta)[L,L^{-1}] holds only via an injective embedding",
+     "label": "thm:gau-R0",
+     "file": "sections/s03_gauge_8.tex",
+     "lines": "13, 28",
+     "problem": "It means that A^act_n is the image of a unique Laurent polynomial under L->(1-5^5q)^{-1/5}. The proof shows this correctly, but the statement does not say so."
+    },
+    {
+     "id": "U06-8",
+     "lens": "A",
+     "title": "Colour-0 representatives in N need thm:con-glue; def:mai-Fcf mis-cites lem:gau-colrows",
+     "label": "cor:gau-rowsNN",
+     "file": "sections/s03_gauge_8.tex",
+     "lines": "13, 36; downstream s10_main.tex 81",
+     "problem": "Rationality of A^act_n needs D_0 in Q[[z]] (thm:con-glue) or D_0=1. Neither lem:gau-colrows nor cor:gau-rowsNN provides it."
+    },
+    {
+     "id": "U06-9",
+     "lens": "B",
+     "title": "Frame dependence of D_0 and of (F_g) not displayed",
+     "label": "def:gau-Fg",
+     "file": "sections/s03_gauge_8.tex",
+     "lines": "5, 68-71",
+     "problem": "P_can, Phi^can and D_0 are defined for a fixed conifold frame (alpha,beta). Nothing in this unit shows D_0 is frame-independent; that follows only from thm:gam-D (D_0 = Phi^SP(z,1)/h(z) = 1). This is harmless, because (F_g) is used frame by..."
+    },
+    {
+     "id": "U06-10",
+     "lens": "B",
+     "title": "def:mai-Fcf assumes rational colour-0 representatives that cor:gau-rowsNN does not supply",
+     "label": "cor:gau-rowsNN",
+     "file": "sections/s10_main.tex (uses sections/s03_gauge_8.tex l.13, l.36)",
+     "lines": "s10_main.tex l.81; s03_gauge_8.tex l.13, l.36",
+     "problem": "lem:gau-colrows says nothing about rationality. The colour-0 representatives of cor:gau-rowsNN (i) are built from A^act_n, and thm:gau-R0 (iii) only places these in Q(zeta)[L,1/L], since D_0 is only known in Q(zeta)[[z]] there. Without rati..."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "X1",
+   "title": "Circularity and logical order",
+   "summaries": [
+    "[S] The all-genus argument has no circular logic. None of the four regex 'cycles' is a real cycle: each is a citation between parts that are proved separately, and the parts are proved in a consistent order. I checked all 63 forward references flagged in proofs, and also the forward references in statements. In every case the later result's proof does not depend on the earlier one; the formal stationary-phase appendix cites nothing from the main body. Every induction and recursion in the chain has a correct base case and a step that uses only strictly smaller cases. There is no induction on the genus. I rebuilt the dependency tree of thm:mai-main, cor:mai-gap and thm:gam-D from the proofs: every leaf is proved in the note or is a declared input. Four minor findings concern the author's own descriptions of the logical order and of where the inputs enter."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "X1-1",
+     "lens": "S",
+     "title": "Input ledger says Section 3 uses only genus-zero data, but (QRR) and the R-matrix rows enter",
+     "label": "sec:int-inputs",
+     "file": "sections/s01_intro_3.tex",
+     "lines": "17 (cf. 10, 21); s03_gauge_7.tex:62; s03_gauge_8.tex:13,28",
+     "problem": "lem:gau-colrows Step 3 uses (QRR), and the text says so itself. thm:gau-R0 (iii)-(iv) uses the actual rows from def:set-rows(b), i.e. the R-matrix in Givental's convention, which the Conditionality paragraph attributes to (T)/(QRR). Line 10..."
+    },
+    {
+     "id": "X1-2",
+     "lens": "S",
+     "title": "PPZ results applied over Q-algebras beyond their stated scope",
+     "label": "def:set-graphsum",
+     "file": "sections/s02_setup_4.tex; sections/s10_main_2.tex",
+     "lines": "s02_setup_4:79; s10_main_2:27",
+     "problem": "This extension is asserted, not proved, and is not covered by the statement numbers of the declared input (Q), which are stated over Q. It is routine, but it is the only node of the dependency tree that is neither proved in the note nor lit..."
+    },
+    {
+     "id": "X1-3",
+     "lens": "S",
+     "title": "'Proved later, independently of this section' is literally false",
+     "label": "sec:set",
+     "file": "sections/s02_setup.tex",
+     "lines": "14",
+     "problem": "All four depend on Section 2: lem:gau-confexp on def:set-confexp and def:set-frames; cor:gau-rowsNN via thm:gau-R0 on cor:set-cyclicPF5, def:set-frob and lem:set-canon; lem:gau-colrows on def:set-rows, thm:set-qrr and prop:set-cyclicLR(iii)..."
+    },
+    {
+     "id": "X1-4",
+     "lens": "S",
+     "title": "Two mutual citations are resolved only by the order of parts, which the text never states",
+     "label": "thm:gau-U",
+     "file": "sections/s03_gauge_4.tex; sections/s03_gauge_8.tex",
+     "lines": "s03_gauge_4:22,48; s03_gauge_8:30,36-44",
+     "problem": "Both are well founded: (a), then lem:gau-lead, then (b),(d), then prop:gau-graded, then (c); and (iii), then rowsNN(i), then (iv). But the text never states this order, so a reader may suspect circularity. Presentation only."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "X5",
+   "title": "Ledger of inputs and of unproved assertions",
+   "summaries": [
+    "[S] I found no fatal error and no gap in the ledger. Every literature result used in a proof of Theorems A, C, Gamma(a) or Corollary B is a declared input or a definitional source, up to minor points: (1) the DNOPS (2-26)-(2-29) convention is relied on but not declared; (2) EO (5-15) is used in the unused thm:mod-var(ii); (3) standard GW axioms sit inside the stated (T) and (M); (4) the claim that PPZ holds verbatim over other rings is justified badly, though embedding the rings in C closes it; (5) the intro says Section 3 uses no input, but it uses (QRR). \"No finite computation enters a proof\" holds. The three unproved identities in Section 6 were verified. All labels resolve, and no proof uses material cut by the trim."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "X5-1",
+     "lens": "S",
+     "title": "Theorem Gamma(b) actually uses no quoted input; DLMF 24.2.3 is undeclared",
+     "label": "lem:fsp-dlmf5118",
+     "file": "sections/a_formalsp_5.tex; sections/s01_intro_3.tex",
+     "lines": "a_formalsp_5 l.9, l.69; s01_intro_3 l.21",
+     "problem": "lem:fsp-dlmf5118 derives B_k(theta+1)-B_k(theta)=k theta^{k-1} inline from the generating function DLMF 24.2.3. That formula is the definition used in def:fsp-stirling and is not listed. B_1=-1/2 and B_odd=0 are used without comment. The in..."
+    },
+    {
+     "id": "X5-2",
+     "lens": "S",
+     "title": "Trim residue in citation lists and bibliography annotations",
+     "label": "sec:int-inputs",
+     "file": "sections/s01_intro_3.tex; refs.bib; sections/s10_main_2.tex",
+     "lines": "s01_intro_3 l.23; refs.bib l.204; s10_main_2 l.36",
+     "problem": "Neither is cited in the body any longer. The refs.bib DLMF annotation names 5.11.1, 5.11.8 and 2.3.8, which are absent. s10_main_2 l.36 omits the '(6)' of PPZ Rem 2.1 that the intro lists. All are left over from the trim and harmless."
+    },
+    {
+     "id": "X5-3",
+     "lens": "S",
+     "title": "Input paragraph says Section 3 uses no quoted input, but lem:gau-colrows uses (QRR)",
+     "label": "lem:gau-colrows",
+     "file": "sections/s01_intro_3.tex; sections/s03_gauge_7.tex",
+     "lines": "s01_intro_3 l.17; s03_gauge_7 l.52-63",
+     "problem": "lem:gau-colrows (in sec:gau) uses (QRR) in its Step 3, and through it so do cor:gau-rowsNN(iii) and cor:gau-colours. The same intro paragraph lists lem:gau-colrows among the (QRR) places, so the text is internally inconsistent. Validity is ..."
+    },
+    {
+     "id": "X5-4",
+     "lens": "S",
+     "title": "Statement numbers of (T) and (M) are not checked against the journal versions",
+     "label": "sec:int-inputs",
+     "file": "sections/s01_intro.tex; sections/s01_intro_3.tex",
+     "lines": "s01_intro l.12; s01_intro_3 l.11",
+     "problem": "Draft notes and refs.bib say these numbers come from the arXiv versions and were not compared with the journal versions. This is consistent with 'statement numbers refer to the arXiv versions', but should be settled before submission."
+    },
+    {
+     "id": "X5-5",
+     "lens": "S",
+     "title": "PPZ results used over other coefficient rings; the given justification is not a proof",
+     "label": "def:set-graphsum",
+     "file": "sections/s02_setup_4.tex; sections/s10_main_2.tex",
+     "lines": "s02_setup_4 l.79; s10_main_2 l.27",
+     "problem": "Polynomiality alone does not transfer an identity proved for CohFTs over Q: CohFT data are not free variables, since they satisfy the gluing and unit axioms. What is true is that the PPZ proofs are formal. As written, the sentence extends a..."
+    },
+    {
+     "id": "X5-6",
+     "lens": "S",
+     "title": "Standard GW facts are folded into the formulation of (T), (M) and def:set-rows",
+     "label": "thm:set-GT",
+     "file": "sections/s02_setup_5.tex; sections/s02_setup_4.tex; sections/s02_setup.tex",
+     "lines": "s02_setup_5 l.42; s02_setup_4 l.9; s02_setup l.91",
+     "problem": "The divisor axiom is used in all genera, but (G0) covers genus 0 only; it is needed for ev(F_g^N)=F_g. The log-free coefficient ring of R is needed for WKB uniqueness over Q(zeta)[[q]] in thm:gau-R0(iii) and lem:gau-colrows. (G0)(b) as stat..."
+    },
+    {
+     "id": "X5-7",
+     "lens": "S",
+     "title": "Classical identities in the model section are stated without proof (all verified)",
+     "label": "lem:mod-abdks",
+     "file": "sections/s06_model_7.tex; sections/s06_model_9.tex",
+     "lines": "s06_model_7 l.15, l.71; s06_model_9 l.2",
+     "problem": "These are stated without proof or citation in the chain of Theorem A. All are correct: S(a d)x^{-2}=1/(x^2-a^2/4) gives W_{ij} in closed form; Sigma_h=-4^h B_{2h}/(2h) was checked exactly for h<=6; reg_00 and (1/6){t;chi}(0) both equal b-a^..."
+    },
+    {
+     "id": "X5-8",
+     "lens": "S",
+     "title": "EO (5-15) is used in a proof but declared as entering no proof",
+     "label": "thm:mod-var",
+     "file": "sections/s06_model_8.tex; sections/s01_intro_3.tex",
+     "lines": "s06_model_8 l.29-40; s01_intro_3 l.23",
+     "problem": "The proof rests on an input the introduction says is not used. Part (ii) is never used: prop:mod-V1 uses only (i), and Theorem V(ii) gets its base case from prop:mod-period(iii). So no result depends on it, but the input ledger is inconsist..."
+    },
+    {
+     "id": "X5-9",
+     "lens": "S",
+     "title": "A relied-on reading of DNOPS (2-26)-(2-29) and an EO appendix pointer are not declared",
+     "label": "conv:mod-kernel",
+     "file": "sections/s06_model.tex; sections/s06_model_4.tex; sections/s02_setup_4.tex",
+     "lines": "s06_model l.20; s06_model_4 l.12; s02_setup_4 l.79; s02_setup_5 l.37",
+     "problem": "Matching the note's TR convention to the one in the quoted DOSS/DNOPS theorem is relied on by thm:mod-tr, yet DNOPS (2-26)-(2-29) is not among the declared items or conventions in sec:int-inputs. The EO appendix pointer is undeclared but no..."
+    },
+    {
+     "id": "X5-10",
+     "lens": "S",
+     "title": "Remarks and an intro sentence rest on computations that are not recorded",
+     "label": "rmk:mai-graphlocal",
+     "file": "sections/s10_main_2.tex; sections/s01_intro_2.tex; sections/s10_main_4.tex",
+     "lines": "s10_main_2 l.44-51; s01_intro_2 l.25; s10_main_4 l.41",
+     "problem": "These rest on computations that, by the draft notes, are not in the evidence appendix. None is a proof step, so 'no finite computation enters a proof' remains true. But the intro claim that Theorem A is not implied by a statement about the ..."
+    },
+    {
+     "id": "X5-11",
+     "lens": "S",
+     "title": "Corollary B concerns one chosen ring representative of F_g",
+     "label": "def:mai-Fcf",
+     "file": "sections/s10_main.tex; sections/s01_intro_2.tex",
+     "lines": "s10_main l.61-81; s01_intro_2 l.29-36",
+     "problem": "ev:N->Q[[q]][log q] is not known to be injective, so another N-representative of F_g could expand differently. Corollary B is proved for the graph-sum representative defined in def:mai-Fcf. The note says this at l.81, but the intro wording ..."
+    }
+   ],
+   "coverage_gaps": [
+    {
+     "label": "s03_gauge..._6, s04_transport_2/3, a2, a3 (line-by-line)",
+     "verdict": "not-fully-checked",
+     "note": "Only searched for citations (none) and phrase list; line-by-line left to U03-U08.",
+     "lens": "S"
+    }
+   ]
+  },
+  {
+   "key": "X3",
+   "title": "Conventions and signs",
+   "summaries": [
+    "[S] No sign or normalisation error affecting any statement used downstream was found. Every convention in scope was traced to its uses and re-derived: eta and its inverse in lowered and vector form; R against R^{-1} and z against -z; Delta_i and its square roots; canonical coordinates; dilaton leaf; TR kernel, factor 4 and Laplace variable; nu and the hatting matrices; stationary-phase factors; Bernoulli conventions. Independent pins: the CohFT graph sum gives <H>_1 = -1/(12v), matching TR and fixing the PPZ dilaton sign (the other sign gives -7/(48v)); omega_{0,3} matches between kernel, DOSS and ABDKS; (2-32) forces the index reading of (2-31); d = varpi_0 tau^{1/4} from three sides. Five minor notation and terminology points only."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "X3-1",
+     "lens": "S",
+     "title": "'Normalised stationary phase' means SP\u00b0 in one place and SP-hat in another",
+     "label": "def:fsp-wick",
+     "file": "sections/a_formalsp.tex",
+     "lines": "38-42 (vs s01_intro_2.tex 53; s08_connection_3.tex 19; s08_connection_4.tex 27; b_signs_2.tex 65)",
+     "problem": "The word means both SP\u00b0 and SP-hat = SP\u00b0/a_0(c). Each place is unambiguous in context because the formulas say SP-hat, but the terminology shifts."
+    },
+    {
+     "id": "X3-2",
+     "lens": "S",
+     "title": "The letter Delta-hat denotes both the hatted quintic TFT and the model TFT",
+     "label": "sec:sgn-var",
+     "file": "sections/b_signs.tex",
+     "lines": "32 (vs s02_setup_7.tex 37; b_signs.tex 56; s07_comparison_2.tex 60)",
+     "problem": "Everywhere else Delta-hat_i^{1/2} := zeta^{4i} varsigma is the model TFT. The two differ (varpi_0 against tau^{-1/4}, ratio d), so carrying the appendix letter into lem:flh-inputs(iv) gives the wrong TFT."
+    },
+    {
+     "id": "X3-3",
+     "lens": "S",
+     "title": "'Only B_{2k} enter' is false for Gamma_inf, which uses Bernoulli polynomials",
+     "label": "sec:sgn-var",
+     "file": "sections/b_signs.tex",
+     "lines": "34",
+     "problem": "True for h_w and Stirling's series. Gamma_inf (thm:gam-ginf, thm:int-gamma(b)) and beta_n(theta) use B_{5l+1}(1/5), which changes under the other convention. B_1 = -1/2 is also used in the proof of lem:fsp-stirfe. The DLMF choice is fixed, ..."
+    },
+    {
+     "id": "X3-4",
+     "lens": "S",
+     "title": "eta^{-1} in the outer edge is a bivector; its lowered-component matrix is eta",
+     "label": "def:set-outer",
+     "file": "sections/s02_setup_8.tex",
+     "lines": "46-48 (also s07_comparison_2.tex 78)",
+     "problem": "Correct only if eta^{-1} is read as the abstract inverse bivector (def:set-graphsum). Read as the matrix delta/5, the second term is off by 1/25. The antisymmetrised edge still comes out as a power series, so the misreading would go unnotic..."
+    },
+    {
+     "id": "X3-5",
+     "lens": "S",
+     "title": "Index reading of DNOPS (2-31) is forced by (2-32), but this is unstated",
+     "label": "prop:mod-Rtr",
+     "file": "sections/s06_model_2.tex",
+     "lines": "43 (and b_signs.tex 14)",
+     "problem": "No justification is given for this reading over its transpose. The note's own (2-32) check settles it: under the transposed reading (2-32) fails at order t^3 (13191/80000 against 11571/80000)."
+    }
+   ],
+   "coverage_gaps": [
+    {
+     "label": "lem:mod-abdks / thm:mod-Lreg",
+     "verdict": "not-fully-checked",
+     "note": "sign-insensitive regularity arguments not re-derived",
+     "lens": "S"
+    },
+    {
+     "label": "lem:mod-xfun",
+     "verdict": "not-fully-checked",
+     "note": "trace argument not re-derived; not sign-sensitive",
+     "lens": "S"
+    },
+    {
+     "label": "lem:con-relab / lem:con-key",
+     "verdict": "not-fully-checked",
+     "note": "exponent bookkeeping read, not re-derived term by term",
+     "lens": "S"
+    }
+   ]
+  },
+  {
+   "key": "L1",
+   "title": "The R-matrix action of Pandharipande-Pixton-Zvonkine (arXiv:1303.1043v3)",
+   "summaries": [
+    "[S] L1 is sound. Every PPZ v3 statement quoted in (Q) exists under the cited number (checked in the v3 PDF; p.20 is the right page). Each one says what the note takes from it, in the same conventions: legs R^{-1}(psi); the edge of (6) with R^{-1} at +psi, +psi'; the factor 1/|Aut|; the translation z1 - zR^{-1}(z)1, applied before R (the T_b of Prop 2.12); the left action R_a.(R_b.Omega) = (R_aR_b).Omega, in the order cor:mai-gap uses; and (8), a pull-back formula used correctly. The hypotheses (CohFT with unit, R symplectic with R(0)=1, T in z^2V[[z]]) hold at every place of use. Extending from Q to the note's rings is legitimate. A rank-one check confirmed the dilaton sign. Only five minor findings, none affecting validity."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "L1-1",
+     "lens": "S",
+     "title": "Bookkeeping of PPZ results omits Props 2.3, 2.7, Lemma 2.11 used in Prop 2.12's proof",
+     "label": "sec:int-inputs / cor:mai-gap",
+     "file": "sections/s01_intro_3.tex; sections/s10_main_2.tex",
+     "lines": "s01_intro_3 l.9; s10_main_2 l.27",
+     "problem": "The proof of the quoted Prop 2.12 begins 'By Proposition 2.9 ... equal CohFTs'. So it uses Prop 2.9 as well as Props 2.3 and 2.7 (that R Omega and T Omega are CohFTs), and Lemma 2.11 implicitly. These are missing from (Q) and from the 'hold..."
+    },
+    {
+     "id": "L1-2",
+     "lens": "S",
+     "title": "PPZ p.20 sentence about Givental and Teleman cannot fix the convention of (T)",
+     "label": "def:set-graphsum / sec:sgn-R",
+     "file": "sections/s02_setup_4.tex; sections/b_signs.tex",
+     "lines": "s02_setup_4 l.79; b_signs l.14",
+     "problem": "The quotation is accurate. But PPZ's sentence is an unproved one-line remark about other papers. It does not show that Teleman's Theorem (2) of (1.15) and GJR18 Thm 4.1, with Givental's R normalised as in def:set-rows (b), coincide with PPZ..."
+    },
+    {
+     "id": "L1-3",
+     "lens": "S",
+     "title": "Pairing over a ring not stated to be perfect",
+     "label": "def:set-graphsum",
+     "file": "sections/s02_setup_4.tex",
+     "lines": "l.70, l.75; also s02_setup_5 l.5, s07_comparison l.19",
+     "problem": "PPZ require eta to be non-degenerate. Over a ring, eta^{-1} exists only if the Gram matrix is invertible, and the text does not say so. This holds in every application (flat basis: 5 times a permutation matrix; colour basis: the identity; T..."
+    },
+    {
+     "id": "L1-4",
+     "lens": "S",
+     "title": "R'.(M.omega) is not a PPZ action, since R' is not an endomorphism",
+     "label": "def:set-outer",
+     "file": "sections/s02_setup_8.tex",
+     "lines": "l.50",
+     "problem": "R' maps the colour space to H, and R'(0) = Psi_Q is not 1, so Def 2.13 does not apply. def:flh-outer defines only contractions, not a CohFT O.Omega. The intended object is (Psi_cf)_*(X.(M.omega)) with X = Psi_cf^{-1}R', which is what cor:ma..."
+    },
+    {
+     "id": "L1-5",
+     "lens": "S",
+     "title": "'The dilaton sign is not a convention' is asserted, not proved",
+     "label": "prop:mod-Rtr",
+     "file": "sections/s06_model_2.tex",
+     "lines": "l.55",
+     "problem": "PPZ prove only that T_b works (Prop 2.12); their 'in a unique way' (p.26) is prose. Uniqueness is true when R_1 1 is nonzero, because the (0,4) unit axiom fails for the opposite sign (rank one: -2a), but it is not proved. It is also not nee..."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "L6",
+   "title": "The genus-0 mirror theorem and the remaining quoted formulas",
+   "summaries": [
+    "[S] All quoted items of L6 were obtained in the bibliography's versions and checked. Givental's Thm 11.6 (arXiv v2; Sec. 9 set-up, Prop. 11.4) is transcribed exactly in the pin of thm:set-mirror. The lambda_i are correctly eliminated from the exponent, the Cor. 11.7 misprint (l_alpha for lambda_alpha) is real, and translation steps (a)-(d) correctly give J(TH,z)=I/C_0 at lambda_i=zeta^i. The lambda-dependent factor C_0 exp(e_1 g_1/(zC_0)) was confirmed independently. Also checked: the J normalisation against Coates-Givental (10), N_{g,d} and F_g against both Lho-Pandharipande papers, Arbarello-Cornalba (1.7) with kappa_0 = 2g-2+n (used within range), and DLMF 24.2.3/24.4.1/5.11.8 (eq:fsp-5118 confirmed symbolically). No fatal, gap or fixable finding; six minor points of attribution, reference and wording."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "L6-1",
+     "lens": "S",
+     "title": "DLMF citation bookkeeping: stale annote, uncited 5.11.8, 24.4.1 not needed",
+     "label": "lem:fsp-dlmf5118",
+     "file": "sections/a_formalsp_5.tex",
+     "lines": "58-70; s01_intro_3.tex 21; refs.bib 202-204",
+     "problem": "The text cites none of 5.11.1, 5.11.8 or 2.3.8. 24.4.1 is derived in-line from the generating function 24.2.3, so part (b) needs no quoted input. eq:fsp-5118 agrees term by term with DLMF 5.11.8."
+    },
+    {
+     "id": "L6-2",
+     "lens": "S",
+     "title": "'Only the B_{2k} enter' is false for Bernoulli polynomials in G_infinity",
+     "label": "sec:sgn-var",
+     "file": "sections/b_signs.tex",
+     "lines": "34",
+     "problem": "B_{5l+1}(1/5) enters thm:gam-ginf and cor:gam-free; the other convention would replace B_n(theta) by B_n(theta+1). def:fsp-stirling fixes the DLMF convention, so no result is affected."
+    },
+    {
+     "id": "L6-3",
+     "lens": "S",
+     "title": "Regularity of localisation sum at lambda_i=zeta^i justified only for R^1 term",
+     "label": "def:set-fq",
+     "file": "sections/s02_setup.tex",
+     "lines": "24",
+     "problem": "Edge weights (a lambda_i + b lambda_j)/e - lambda_m (m not in {i,j}), tangent weights and node factors also enter the fixed-locus terms. They are nonzero at zeta (no fifth root of unity lies on a segment between two others), but the text do..."
+    },
+    {
+     "id": "L6-4",
+     "lens": "S",
+     "title": "Zagier-Zinger arXiv:0710.0889 does not contain the specialisation lambda_i = zeta^i",
+     "label": "def:set-fq",
+     "file": "sections/s02_setup.tex",
+     "lines": "24 (also s01_intro.tex 10; s01_intro_3.tex 15)",
+     "problem": "ZZ08 v1 studies only the hypergeometric series F(w,x) (its (1), = the note's P(w,q)) and never introduces torus weights or specialises them; full-text search finds no such passage. The attribution is inherited from GJR18 p.3. No proof depen..."
+    },
+    {
+     "id": "L6-5",
+     "lens": "S",
+     "title": "[GJR18, Sec. 3.1, (9)]: equation (9) is in Section 3.2",
+     "label": "def:set-fq",
+     "file": "sections/s02_setup.tex",
+     "lines": "24 (also s01_intro.tex 10)",
+     "problem": "In GJR18 v1 the formal quintic cycle at t=0, lambda_i=zeta^i lambda is an unnumbered display at the end of Sec. 3.1 (p.14); (9) is the first display of Sec. 3.2 'Full torus localization'. The content is there."
+    },
+    {
+     "id": "L6-6",
+     "lens": "S",
+     "title": "J at Q=1, t=T(q)H with formal log q defined only via divisor equation",
+     "label": "thm:set-mirror",
+     "file": "sections/s02_setup.tex",
+     "lines": "74-82, 104; a1_cyclicLR.tex 13-17",
+     "problem": "T = log q + I~_1/C_0 is not topologically nilpotent. For d>=1 the n-sum gives e^{dT}, which contains e^{d log q}, not in Q[[q]][log q]. The text implicitly uses the divisor equation and e^{log q}=q (e^T := q exp(I~_1/C_0); step (d) of the p..."
+    }
+   ],
+   "coverage_gaps": [
+    {
+     "label": "prop:set-cyclicLR / cor:set-cyclicPF5 / a1_cyclicLR",
+     "verdict": "not-fully-checked",
+     "note": "Only the use of (M) (lem:set-birkhoff) checked; the internal algebra of the appendix was not re-audited here.",
+     "lens": "S"
+    }
+   ]
+  },
+  {
+   "key": "U01",
+   "title": "Setup I: the formal quintic, genus-0 data, cyclic structure at large radius (statement), rows, (QRR), graph sum",
+   "summaries": [
+    "[C] I found no fatal error, gap or fixable error in Setup I (s02_setup, _2, _3, _4). I re-derived every displayed formula the argument depends on. Independent exact checks to O(q^6) confirm: the kappa^LR of prop:set-cyclicLR(i) via a Birkhoff computation separate from the appendix's Wronskian argument; the identity Mcyc^LR = kappa_3 PF4; PF4 p_k; and D L = (L^6 - L)/5. The translation of Givental's Theorem 11.6 into (M) is algebraically correct. The (QRR) twist sign agrees with Mumford's formula in the legs-R^{-1} convention, and (QRR) is consistent with the cyclic system at q=0. Downstream uses stay within hypotheses. The findings are minor: rmk:set-qrrsign wrongly says ph_1 = -3/20 is forced independently of (QRR), and the R-matrix input (properties (a), (b), coefficient ring) is not fully listed among the declared inputs. A short argument shows (b) and (QRR) alone determine R."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U01-1",
+     "lens": "C",
+     "title": "The algebra carrying the formal exponential e^{u_i/z} is not specified",
+     "label": "cor:set-cyclicPF5",
+     "file": "sections/s02_setup_3.tex; s02_setup_4.tex",
+     "lines": "12; 12, 24",
+     "problem": "This multiplies a power series in z by a series in z^{-1} (u_i contains log q), so no ambient ring is given. The argument closes once one is chosen."
+    },
+    {
+     "id": "U01-2",
+     "lens": "C",
+     "title": "Notation clash: R(0) means z=0 in some places and q=0 in others",
+     "label": "thm:set-qrr",
+     "file": "sections/s02_setup_4.tex; s02_setup_3.tex",
+     "lines": "17, 36; 33",
+     "problem": "An avoidable ambiguity in a note where both evaluations matter."
+    },
+    {
+     "id": "U01-3",
+     "lens": "C",
+     "title": "Remark claims ph_1=-3/20 is forced independently of (QRR); false for actual rows",
+     "label": "rmk:set-qrrsign",
+     "file": "sections/s02_setup_4.tex",
+     "lines": "52",
+     "problem": "lem:gau-HPF(iii) forces ph_1=-3/20 only if every ph_n lies in Q[[u]] (conifold regularity). The actual ph_1 lies in Q[[q]], where (4-5theta_u)ph_1=-3/5 has the solutions -3/20+c u^{4/5}, and u^{4/5}=(1-5^5q)^{4/5} is a power series in q. So..."
+    },
+    {
+     "id": "U01-4",
+     "lens": "C",
+     "title": "Properties (a), (b) and the coefficient ring of R are not listed explicitly as inputs",
+     "label": "def:set-rows",
+     "file": "sections/s02_setup_4.tex",
+     "lines": "7-15; s02_setup_2.tex 7",
+     "problem": "(b) drives prop:set-cyclicLR(iii), cor:set-cyclicPF5(b), lem:gau-colrows and thm:gau-R0, and (a) enters def:mai-Fcf. Yet sec:int-inputs mentions (b) only in parentheses under (QRR), and (T) does not state it. This is bookkeeping, not substa..."
+    },
+    {
+     "id": "U01-5",
+     "lens": "C",
+     "title": "Small imprecisions in the graph-sum definition",
+     "label": "def:set-graphsum",
+     "file": "sections/s02_setup_4.tex",
+     "lines": "70-81",
+     "problem": "Non-degeneracy of eta over the base ring (needed for eta^{-1}) is not stated. The sum defining F\u0304_h implicitly runs over stable (h,n) only. For a general E, Cont needs E symmetric (E_R is). The 'verbatim' transfer of PPZ is not argued. Part..."
+    },
+    {
+     "id": "U01-6",
+     "lens": "C",
+     "title": "Wording 'proved later, independently of this section' is inaccurate",
+     "label": "sec:set",
+     "file": "sections/s02_setup.tex",
+     "lines": "14",
+     "problem": "lem:gau-colrows and cor:gau-rowsNN use def:set-rows, prop:set-cyclicLR, cor:set-cyclicPF5, thm:set-qrr and lem:set-hrot. The intended claim, non-circularity, does hold."
+    },
+    {
+     "id": "U01-7",
+     "lens": "C",
+     "title": "Regularity of the localisation denominators at lambda=zeta is only partly justified",
+     "label": "def:set-fq",
+     "file": "sections/s02_setup.tex",
+     "lines": "24",
+     "problem": "The normal-bundle and node-smoothing weights also have to be non-zero at zeta. They are: (a lambda_i+b lambda_j)/d-lambda_k is non-zero by convexity on the unit circle, and (lambda_i-lambda_j)/d_1+(lambda_i-lambda_k)/d_2 is non-zero by a mo..."
+    },
+    {
+     "id": "U01-8",
+     "lens": "C",
+     "title": "J(TH,z) and <<.>>(TH) at Q=1 are not literally convergent sums",
+     "label": "thm:set-mirror",
+     "file": "sections/s02_setup.tex",
+     "lines": "76-82, 104-106",
+     "problem": "The sum over n of (dT)^n/n! does not converge in Q(zeta)[[q]][l]. The intended meaning goes through the divisor equation with e^{dT}:=q^d exp(d\u0128_1/C_0). Step (d) of the translation and lem:set-grading use exactly this, but the definition do..."
+    },
+    {
+     "id": "U01-9",
+     "lens": "C",
+     "title": "Pairing attributed to def:set-frob; it is defined in def:set-fq",
+     "label": "def:set-fq",
+     "file": "sections/s04_transport.tex",
+     "lines": "15",
+     "problem": "Mis-reference: the pairing is defined in def:set-fq."
+    }
+   ],
+   "coverage_gaps": [
+    {
+     "label": "rmk:set-qrrsign",
+     "verdict": "issue",
+     "note": "Arithmetic correct; the claim that ph_1 is forced independently of (QRR) is false for the actual rows (F1, minor, used in no proof).",
+     "lens": "C"
+    }
+   ]
+  },
+  {
+   "key": "U02",
+   "title": "Setup II: push-forward/insertion lemma, (T), Frobenius basis, frames, conifold expansion, tau, canonical coordinates, the model, M_0, model CohFT, dilaton lemma, hatting, outer sum, Property N",
+   "summaries": [
+    "[C] Unit U02 (s02_setup_5 to _8) is sound. Every proof was checked line by line, every load-bearing formula was re-derived by hand, and where possible confirmed by exact computation: Frobenius-basis obstruction matrix, tc to u^3, Fs_0, model symplecticity to t^10, v(u) equal-product identity, c_2..c_5. Downstream uses of the unit's lemmas (lem:flh-dil, lem:tra-conv (f), lem:tra-F, prop:mod-Rtr, cor:mai-gap, def:mai-Fcf) stay within their hypotheses. No fatal error, gap or fixable defect was found. The seven findings are all minor: terse justifications that close in a few lines, a parenthetical in (T) that relies on the all-genus divisor equation, which is not among the declared inputs, one mis-reference, one loose cross-reference, notation clashes, and the representative-dependence of 'the conifold expansion of F_g'. Full report in U02_C.md."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U02-1",
+     "lens": "C",
+     "title": "(T) parenthetical uses the all-genus divisor equation, not a declared input",
+     "label": "thm:set-GT",
+     "file": "sections/s02_setup_5.tex",
+     "lines": "42",
+     "problem": "This needs the higher-genus divisor equation of the twisted classes, including vanishing of degree-0 H-insertions. Declared inputs give only genus-0 divisor/string ((G0)). The fact is standard and the logic is unaffected if (T) is read exac..."
+    },
+    {
+     "id": "U02-2",
+     "lens": "C",
+     "title": "Notation clashes (s as index; T and t overloaded)",
+     "label": "lem:set-pushins",
+     "file": "sections/s02_setup_5.tex",
+     "lines": "7-9, 29",
+     "problem": "Harmless in context, but these clashes invite misreading in a long proof."
+    },
+    {
+     "id": "U02-3",
+     "lens": "C",
+     "title": "Vanishing of Conc(C_0,I_1) justified too tersely",
+     "label": "def:set-confexp",
+     "file": "sections/s02_setup_6.tex",
+     "lines": "14",
+     "problem": "The jet matrix also involves A_1..A_3 and derivatives of A_4. The claim is true because these vanish at q=0 (multiples of 1-u, D preserves qQ[[q]]). The only antidiagonal term is f_0 J_03 g_3 = 0. The constants of D on Q[[q]][l] are Q."
+    },
+    {
+     "id": "U02-4",
+     "lens": "C",
+     "title": "'Conifold expansion of F_g' depends on the chosen N-representative",
+     "label": "def:set-confexp",
+     "file": "sections/s02_setup_6.tex",
+     "lines": "20",
+     "problem": "Injectivity of ev is not proved, so F_g^cf is a property of the canonical representative F_g^N, not of the q-series F_g. The text acknowledges this in def:mai-Fcf and after lem:flh-inputs. The wording of cor:int-gap suggests an intrinsic no..."
+    },
+    {
+     "id": "U02-5",
+     "lens": "C",
+     "title": "Cross-reference to step (1) of lem:set-M0sympl proves a related, not identical, claim",
+     "label": "lem:set-modhom",
+     "file": "sections/s02_setup_7.tex",
+     "lines": "65",
+     "problem": "Step (1) treats varsigma -> zeta^{-i}varsigma applied to colour 0. The claim follows by composing the commuting substitutions, or directly (t -> zeta^{-1}t, varsigma^{nu_b-1} picks up zeta^{b+1}, U_i -> U_{i+1}). Checked."
+    },
+    {
+     "id": "U02-6",
+     "lens": "C",
+     "title": "Left side of the dilaton homogeneity identity left undefined for formal y",
+     "label": "lem:set-dilaton",
+     "file": "sections/s02_setup_8.tex",
+     "lines": "11-15, 24-28",
+     "problem": "With q/kappa+z1 = y/kappa+eps z1, the defining sum over m is infinite: psi-1 insertions are not cut off by dimension. The left side must be defined as the rearranged double series, convergent per y-degree. The proof and downstream uses (tra..."
+    },
+    {
+     "id": "U02-7",
+     "lens": "C",
+     "title": "Mis-reference: 'leg-free part of R'.(M.omega) in the sense of def:flh-outer'",
+     "label": "def:set-outer",
+     "file": "sections/s02_setup_8.tex",
+     "lines": "50",
+     "problem": "def:flh-outer defines contractions for a symplectic O with (unit). It defines no action of a map from the colour space to H and no 'leg-free part'. The intended statement uses X=R'(0)^{-1}R', lem:flh-frame and lem:set-pushins (iii), as in c..."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U16",
+   "title": "Formal stationary phase I: the ring, Wick/normalised series, universality, basic lemmas, translation, parameters, generic lemma",
+   "summaries": [
+    "[C] The unit (a_formalsp.tex, a_formalsp_2.tex, a_formalsp_3.tex) is sound. Every proof was checked step by step and the key formulas re-derived. I also checked independently: (eq:fsp-generic) through z^3 with a negative control, transl(b) with p=z, the universality formula on Stirling, pg(i) and homogeneity. No fatal issue, gap or fixable error was found. One statement is false as worded: lem:fsp-param(i) needs a Q-subalgebra, not a subring (counterexample over Z), but every use is over a Q-algebra. One functional is never defined: E_{zC} with a q-dependent covariance on R_n(A_0)[[q]] in cor:fsp-movebase and its descendants. The natural definition works. The remaining findings are imprecisions. Every later use of these lemmas (Theorem P(a), con-S2, con-id, LMI, Stirling, Fubini, cov) is within hypotheses."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U16-1",
+     "lens": "C",
+     "title": "Invertibility of Hess F(c_0) not checked before applying the formal IFT",
+     "label": "cor:fsp-movebase",
+     "file": "sections/a_formalsp_3.tex",
+     "lines": "23",
+     "problem": "lem:fsp-ift also requires Hess F(c_0) in GL_n(A), which is not mentioned. It is immediate: Hess F(c_0)=H_0+O(q) with H_0 invertible over A_0."
+    },
+    {
+     "id": "U16-2",
+     "lens": "C",
+     "title": "Parameters lemma (i) false for subrings not containing Q",
+     "label": "lem:fsp-param",
+     "file": "sections/a_formalsp_3.tex",
+     "lines": "36, 46",
+     "problem": "The universal polynomial (eq:fsp-univ) has rational coefficients (1/r!). Counterexample: A'=Z in A=Q, F=-t^2/2+t^3, a=1, det H=-1 gives [z^1]=(1/2)<t^6>=15/2, which is not in Z (checked by hand and by machine)."
+    },
+    {
+     "id": "U16-3",
+     "lens": "C",
+     "title": "Hypotheses on c and a left implicit in param (iv)",
+     "label": "lem:fsp-param",
+     "file": "sections/a_formalsp_3.tex",
+     "lines": "42, 46",
+     "problem": "The statement assumes, without saying so, that c is a non-degenerate critical point of F over A and that a lies in A[[x-c]]((z)) and is eps-free. The weight-finiteness argument needs this; it fails for a in A[[x-c]]((z))[[eps]]."
+    },
+    {
+     "id": "U16-4",
+     "lens": "C",
+     "title": "Holomorphic clause of the derivative lemma is ill-posed and only sketched",
+     "label": "lem:fsp-dq",
+     "file": "sections/a_formalsp_3.tex",
+     "lines": "55, 59",
+     "problem": "Holomorphically, S_q contains exp((F(c(q))-F_0(c_0))/z), which has no z-expansion with holomorphic coefficients. The clause makes sense only after dividing by [e^{F(c(q))/z}], and the proof is a one-line sketch. The clause is unused: con-S2..."
+    },
+    {
+     "id": "U16-5",
+     "lens": "C",
+     "title": "Gaussian functional with q-dependent covariance on R_n(A_0)[[q]] never defined",
+     "label": "def:fsp-ring / cor:fsp-movebase",
+     "file": "sections/a_formalsp.tex; sections/a_formalsp_2.tex; sections/a_formalsp_3.tex",
+     "lines": "a_formalsp.tex 16; a_formalsp_2.tex 69,78; a_formalsp_3.tex 15-31",
+     "problem": "'Coefficientwise in q' is literal only for a q-free covariance. Such amplitudes need not be amplitudes over A in the sense of def:fsp-wick (e.g. sum_d q^d z^{-d}). The exponential identity in the proof mixes weight and q-adic convergence, w..."
+    },
+    {
+     "id": "U16-6",
+     "lens": "C",
+     "title": "A[[y]]-linearity of the partial functional used but not stated",
+     "label": "lem:fsp-ring",
+     "file": "sections/a_formalsp.tex; sections/a_formalsp_2.tex",
+     "lines": "a_formalsp.tex 27; a_formalsp_2.tex 78",
+     "problem": "The proof of pg(iii) and lem:fsp-fubini ('linearity of E^v over functions of w and z') use E^t[y^gamma P]=y^gamma E^t[P], extended to summable sums. This is immediate from the definition on monomials but not stated."
+    },
+    {
+     "id": "U16-7",
+     "lens": "C",
+     "title": "'Perfect matchings of the multiset' must mean labelled copies",
+     "label": "lem:fsp-ring",
+     "file": "sections/a_formalsp.tex",
+     "lines": "25",
+     "problem": "Read literally, unlabelled multiset matchings give <t_1^4>=C_11^2 instead of 3C_11^2. The recursion and the generating function fix the intended meaning (labelled copies)."
+    }
+   ],
+   "coverage_gaps": []
+  },
+  {
+   "key": "U17",
+   "title": "Formal stationary phase II: change of variables, Fubini, formal Stirling, reflection, residues",
+   "summaries": [
+    "[C] Unit U17 (a_formalsp_4/5) is sound. I read every line and re-derived each displayed identity by hand. I also tested the main statements independently: change of variables in 1D and 2D, Fubini in 2D, the Stirling stationary phase for m from -2 to 3, the Stirling functional equation, DLMF 5.11.8 and reflection. All agree exactly. I found no fatal error and no gap. Five minor points: \"every amplitude\" is proved only for power-series amplitudes; the residue ring tacitly needs P_+ and P_- over k; the exponential under X -> X+chi is asserted without argument (an ODE argument closes it); one linearity step and one non-degeneracy step in Fubini are implicit; some notation clashes. Every downstream use (sections 8 and 9) stays within what is proved. These verdicts depend on lemmas of a_formalsp 1-3 (U16), which I read and found correct where used."
+   ],
+   "serious": [],
+   "minor": [
+    {
+     "id": "U17-1",
+     "lens": "C",
+     "title": "'Every amplitude' in change of variables proved only for power-series amplitudes",
+     "label": "lem:fsp-cov",
+     "file": "sections/a_formalsp_4.tex",
+     "lines": "19-23, 30, 39-43",
+     "problem": "For such general amplitudes the text does not define the composite a o phi. The polynomiality in s is taken from lem:fsp-univ, which covers only a in A[[t]]((z)). So the proof covers only amplitudes in A[[x-c]]((z))."
+    },
+    {
+     "id": "U17-2",
+     "lens": "C",
+     "title": "Fubini: E^v linearity over R(A)-functions and non-degeneracy of F^flat left implicit",
+     "label": "lem:fsp-fubini",
+     "file": "sections/a_formalsp_4.tex",
+     "lines": "56, 64, 77",
+     "problem": "lem:fsp-ring (iv) gives linearity only over A((z)), whereas the factor has infinitely many negative powers of z. The non-degeneracy of w0 is not stated."
+    },
+    {
+     "id": "U17-3",
+     "lens": "C",
+     "title": "Notation clashes and a typographical slip",
+     "label": "def:fsp-stirling",
+     "file": "sections/a_formalsp_5.tex",
+     "lines": "9, 18; a_formalsp_4 l.19, 39",
+     "problem": "Notation is reused (beta: amplitude vs beta_n(theta); rho: ring homomorphism vs rho(Y); B: algebra, Bernoulli numbers, inner series). The slip should read c + ((y-c')A[[y-c']])^n. None of this is ambiguous in context."
+    },
+    {
+     "id": "U17-4",
+     "lens": "C",
+     "title": "Residue ring needs coefficients of P_+, P_- to be constants",
+     "label": "lem:fsp-res",
+     "file": "sections/a_formalsp_5.tex",
+     "lines": "90, 98",
+     "problem": "The ring of the coefficients is not stated. If a coefficient had negative ord (e.g. zh X), the bound ord(c_j) >= eps|j| - M fails. The proof's bound ord >= k needs coefficients in k."
+    },
+    {
+     "id": "U17-5",
+     "lens": "C",
+     "title": "Image of the exponential under X -> X+chi asserted without proof",
+     "label": "lem:fsp-res",
+     "file": "sections/a_formalsp_5.tex",
+     "lines": "94, 98",
+     "problem": "e^{-f_0/zh} is neither a Laurent polynomial nor u-adically small, so a homomorphism property alone does not give compatibility with exp. prop:con-res uses this step to identify the residue in the Y and X charts."
+    }
+   ],
+   "coverage_gaps": []
+  }
+ ]
+}

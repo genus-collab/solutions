@@ -1,0 +1,94 @@
+==============================================================================================================
+un_e3_c: p = 2^89-1, D built mod (zhat^7, u^4)   [2026-11-13T18:53:51]
+--------------------------------------------------------------------------------------------------------------
+case A3
+      solve_ann: converged after 2 iteration(s)
+   X: 16 entries; symplectic: False; flat-irregular entries (a, b, k): hatted valuation vs mu: {}
+   annihilation in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 15/2 u^1 + -57/98 u^2 + 1193149/192080 u^3) e_1
+   genus 2: rows symplectic False; 2 edge graphs SINGULAR, (E, first order): graphs {(1, 1): [1, 2]}; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (1 s)
+        e.g. outer graph 1 (E=1, gv=(1,)): ['0', '-93/11200']
+        e.g. outer graph 2 (E=1, gv=(1, 1)): ['0', '-21/8192']
+   genus 3: rows symplectic False; 16 edge graphs SINGULAR, (E, first order): graphs {(1, 1): [1, 2], (2, 2): [3, 4, 5, 6, 7], (3, 3): [8, 9, 10, 11, 12, 13, 14, 15, 16]}; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (6 s)
+        e.g. outer graph 1 (E=1, gv=(1, 2)): ['0', '~-103085601/458752000000', '~23498264291/5619712000000', '[318387161059412741008336467 mod p]']
+        e.g. outer graph 2 (E=1, gv=(2,)): ['0', '~17762547/40960000000', '[476930223023780053898966745 mod p]', '[111342318834366402492189474 mod p]']
+        e.g. outer graph 3 (E=2, gv=(0, 2)): ['0', '0', '[145364634420120364818688992 mod p]', '[556857874118799940375734421 mod p]']
+--------------------------------------------------------------------------------------------------------------
+case A4
+      solve_ann: converged after 2 iteration(s)
+   X: 18 entries; symplectic: False; flat-irregular entries (a, b, k): hatted valuation vs mu: {}
+   annihilation in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 3/14 u^1 + 45533/3920 u^2 + 9429817/1852200 u^3) e_1
+   genus 2: rows symplectic False; 2 edge graphs SINGULAR, (E, first order): graphs {(1, 1): [1, 2]}; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (0 s)
+        e.g. outer graph 1 (E=1, gv=(1,)): ['0', '4709/1680000']
+        e.g. outer graph 2 (E=1, gv=(1, 1)): ['0', '-10269/2048000']
+   genus 3: rows symplectic False; 16 edge graphs SINGULAR, (E, first order): graphs {(1, 1): [1, 2], (2, 2): [3, 4, 5, 6, 7], (3, 3): [8, 9, 10, 11, 12, 13, 14, 15, 16]}; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (3 s)
+        e.g. outer graph 1 (E=1, gv=(1, 2)): ['0', '~44289047/344064000000', '[94424243608608479301257850 mod p]', '~1026014434900/5644819650651']
+        e.g. outer graph 2 (E=1, gv=(2,)): ['0', '[162028265056333629667843868 mod p]', '[266391855790894190710857097 mod p]', '[591209723726984332487993560 mod p]']
+        e.g. outer graph 3 (E=2, gv=(0, 2)): ['0', '0', '~3284790767594/2600543629627', '~-4081969108715/717706401268']
+--------------------------------------------------------------------------------------------------------------
+case C1a
+      solve_ann: converged after 2 iteration(s)
+      solve_ann: converged after 6 iteration(s)
+   X: 18 entries; symplectic: True; flat-irregular entries (a, b, k): hatted valuation vs mu: {(0, 1, 4): (2, 3), (0, 4, 1): (0, 1), (1, 1, 5): (3, 4), (2, 2, 5): (3, 4), (2, 3, 4): (2, 3), (4, 3, 1): (0, 1)}
+   annihilation in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 298/81 u^1 + 10559/2430 u^2 + 11365237/1458000 u^3) e_1
+NOTE (added by hand): the block above is INVALID for A3, A4 (each entry was scaled by its own random factor, which destroys the symplectic pairing: 'symplectic: False'); C1a crashed on T_eff with leading coefficient != 1. Both fixed; re-run below.
+==============================================================================================================
+un_e3_c: p = 2^89-1, D built mod (zhat^7, u^4)   [2026-11-13T18:54:27]
+--------------------------------------------------------------------------------------------------------------
+case A3
+      solve_ann: converged after 2 iteration(s)
+   X: 16 entries; symplectic: True; flat-irregular entries (a, b, k): hatted valuation vs mu: {}
+   annihilation in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 115/14 u^1 + 621/686 u^2 + 691518/84035 u^3) e_1
+   genus 2: rows symplectic True; ALL 6 edge graphs REGULAR; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (1 s)
+   genus 3: rows symplectic True; ALL 41 edge graphs REGULAR; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (5 s)
+--------------------------------------------------------------------------------------------------------------
+case A4
+      solve_ann: converged after 2 iteration(s)
+   X: 18 entries; symplectic: True; flat-irregular entries (a, b, k): hatted valuation vs mu: {}
+   annihilation in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + -17/20 u^1 + -71723/2400 u^2 + -623923409/4536000 u^3) e_1
+   genus 2: rows symplectic True; ALL 6 edge graphs REGULAR; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (0 s)
+   genus 3: rows symplectic True; ALL 41 edge graphs REGULAR; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (3 s)
+--------------------------------------------------------------------------------------------------------------
+case C1a
+      solve_ann: converged after 2 iteration(s)
+      solve_ann: converged after 6 iteration(s)
+   X: 18 entries; symplectic: True; flat-irregular entries (a, b, k): hatted valuation vs mu: {(0, 1, 4): (2, 3), (0, 4, 1): (0, 1), (1, 1, 5): (3, 4), (2, 2, 5): (3, 4), (2, 3, 4): (2, 3), (4, 3, 1): (0, 1)}
+   annihilation in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 298/81 u^1 + 10559/2430 u^2 + 11365237/1458000 u^3) e_1
+   genus 2: rows symplectic True; 3 edge graphs SINGULAR, (E, first order): graphs {(1, 0): [1], (2, 0): [3], (3, 1): [6]}; vertex graph in T_eff: (4413773/3023308800) T^-2 + (-47957/15552000) T^-1 NOT c_g T_eff^(2-2g)   (0 s)
+        e.g. outer graph 1 (E=1, gv=(1,)): ['13/3240', '-341/16200']
+        e.g. outer graph 3 (E=2, gv=(0,)): ['1/90', '-14/135']
+        e.g. outer graph 6 (E=3, gv=(0, 0)): ['0', '86/2025']
+   genus 3: rows symplectic True; 28 edge graphs SINGULAR, (E, first order): graphs {(1, 0): [2], (1, 2): [1], (2, 0): [4, 6], (2, 2): [3, 5], (3, 0): [8, 10], (3, 1): [12], (3, 2): [9, 11, 15], (4, 0): [19, 20], (4, 1): [18, 26], (4, 2): [17, 21, 23], (4, 3): [25], (5, 1): [31, 33], (5, 2): [29], (5, 3): [32, 36], (6, 2): [40], (6, 3): [39, 41]}; vertex graph in T_eff: ([134109906362315407660503136 mod p]) T^-4 + ([430202582035231879343517207 mod p]) T^-3 + (~177496183980/1653931473659) T^-2 + ([33088130942690516504079119 mod p]) T^-1 NOT c_g T_eff^(2-2g)   (4 s)
+        e.g. outer graph 1 (E=1, gv=(1, 2)): ['0', '0', '[433196686821103316363726767 mod p]', '[90063212510817188470706155 mod p]']
+        e.g. outer graph 2 (E=1, gv=(2,)): ['9851/55987200', '-476689/209952000', '[185718132178923727817857818 mod p]', '[320750032631894325887626252 mod p]']
+        e.g. outer graph 3 (E=2, gv=(0, 2)): ['0', '0', '~-1160432467/4232632320000', '[198135043775417681785336358 mod p]']
+--------------------------------------------------------------------------------------------------------------
+case C1b
+      solve_ann: converged after 2 iteration(s)
+      solve_ann: converged after 1 iteration(s)
+   X: 16 entries; symplectic: True; flat-irregular entries (a, b, k): hatted valuation vs mu: {(0, 2, 3): (1, 3), (1, 3, 3): (1, 3)}
+   annihilation in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 55/14 u^1 + 1516/315 u^2 + 44482867/5103000 u^3) e_1
+   genus 2: rows symplectic True; 1 edge graphs SINGULAR, (E, first order): graphs {(1, 1): [1]}; vertex graph in T_eff: (1/1200) T^-2 + (-41/22400) T^-1 NOT c_g T_eff^(2-2g)   (0 s)
+        e.g. outer graph 1 (E=1, gv=(1,)): ['0', '-1/56']
+   genus 3: rows symplectic True; 8 edge graphs SINGULAR, (E, first order): graphs {(1, 2): [2], (1, 3): [1], (2, 2): [4, 6], (2, 3): [5], (3, 3): [8, 10, 12]}; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (337/1756160) T^-2 + (~18443130313/7468070400000) T^-1 NOT c_g T_eff^(2-2g)   (3 s)
+        e.g. outer graph 1 (E=1, gv=(1, 2)): ['0', '0', '0', '-153689/564480000']
+        e.g. outer graph 2 (E=1, gv=(2,)): ['0', '0', '1/1120', '40794109/9525600000']
+        e.g. outer graph 4 (E=2, gv=(1,)): ['0', '0', '-3/1960', '-519163/5670000']
+--------------------------------------------------------------------------------------------------------------
+case C1c
+      solve_ann: converged after 2 iteration(s)
+      solve_ann: converged after 1 iteration(s)
+   X: 16 entries; symplectic: True; flat-irregular entries (a, b, k): hatted valuation vs mu: {(0, 2, 3): (2, 3), (1, 3, 3): (2, 3), (1, 4, 2): (1, 2), (4, 2, 2): (1, 2)}
+   annihilation in the window: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 19/5 u^1 + 85709/18900 u^2 + 1054777/127575 u^3) e_1
+   genus 2: rows symplectic True; ALL 6 edge graphs REGULAR; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (0 s)
+   genus 3: rows symplectic True; 4 edge graphs SINGULAR, (E, first order): graphs {(1, 3): [2], (2, 3): [4], (3, 3): [8, 12]}; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 = c_g T_eff^(2-2g)   (3 s)
+        e.g. outer graph 2 (E=1, gv=(2,)): ['0', '0', '0', '-1013/1181250']
+        e.g. outer graph 4 (E=2, gv=(1,)): ['0', '0', '0', '59/65625']
+        e.g. outer graph 8 (E=3, gv=(0,)): ['0', '0', '0', '152/28125']

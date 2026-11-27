@@ -1,0 +1,23 @@
+setup 4 s, mem (0.0, 0.0, 0.0)
+graph 3897 E 10 V 6 combos 21
+  20 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 0, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  40 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 0, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  60 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 0, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  80 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 0, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  100 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 0, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  120 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 0, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  140 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 0, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  160 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 1, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  180 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 1, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  200 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 1, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  220 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 1, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  240 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 1, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  260 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 1, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  280 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 1, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  301 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 2, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  321 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 2, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  341 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 2, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  361 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 2, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  381 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 2, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  401 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 2, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}
+  421 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 3, 'maxstate': 100000, 'maxkeys': 3125, 'maxitems': 968}

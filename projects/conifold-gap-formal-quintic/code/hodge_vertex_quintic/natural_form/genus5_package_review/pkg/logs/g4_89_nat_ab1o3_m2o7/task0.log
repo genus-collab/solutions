@@ -1,0 +1,13 @@
+==========================================================================================
+genus5_run g4_89_nat_ab1o3_m2o7: task 0 of 50, python 3.14.6, host ?
+   set-up 2 s: 379 inner graphs, K = 6
+   8 inner graphs assigned, estimated 0.00 h on the reference machine (heaviest task 0.00 h)
+   inner graph    0 (E= 0, V=1):     0.0 s, 1 outer graphs
+   inner graph   50 (E= 4, V=3):     0.9 s, 11 outer graphs
+   inner graph  100 (E= 5, V=3):     1.1 s, 11 outer graphs
+   inner graph  150 (E= 6, V=3):     7.0 s, 14 outer graphs
+   inner graph  200 (E= 6, V=4):     1.7 s, 16 outer graphs
+   inner graph  250 (E= 7, V=4):     2.7 s, 20 outer graphs
+   inner graph  300 (E= 7, V=5):     0.6 s, 33 outer graphs
+   inner graph  350 (E= 8, V=6):     0.1 s, 40 outer graphs
+TASK 0 OF 50 (g4_89_nat_ab1o3_m2o7) COMPLETE: 8 inner graphs, 17 s

@@ -1,0 +1,118 @@
+% Section 9, part 4 of 4: the orbifold point, the free coefficients, remarks. Last part of Section 9.
+
+\begin{thm}[The orbifold point]
+\label{thm:gam-ginf}
+No $c_n$ has a pole at $L=0$, and
+\begin{equation}
+\label{eq:gam-ginf}
+c(z;0)=\Ginf(z)=\exp\Bigl(\sum_{l\geq 1}(-1)^{l+1}\frac{B_{5l+1}(1/5)}{l(5l+1)}\,z^{5l}\Bigr).
+\end{equation}
+\end{thm}
+
+The same formula is the value at the orbifold point of the normalised stationary-phase series of the Landau--Ginzburg integral of the formal quintic considered in \cite{GJR18}, by \cite[Lemma~7.7, (37)]{GJR18} with $m=5$, $k=1$ and equivariant parameter $1$. We do not use, and do not claim, that their series coincides with $c(z;L)$.
+
+\begin{proof}
+Apply \cref{thm:gam-lmi} with $s_*=0$, $a_*=5$, so that $a(\sigma)=5\sigma$, and $M_*=1$; then $\delta=-z/5$, and $\mathsf Q=\re^{-\lambda/5}$ is a fifth root of $(-q)^{-1}$. Near $\sigma=0$ only the twist factor $\Gamma(1+5\sigma/z)$ degenerates; the five factors $\Gamma((\zeta^j-\sigma)/z)$, $j=0,\dots,4$, are regular there and supply, on a disc $\bbD$ around $0$ that contains no $\zeta^j$ and with fixed branches,
+\[
+\varphi(\sigma):=\sum_{j=0}^4\varphi_j(\sigma),\qquad \varphi_j(\sigma):=(\zeta^j-\sigma)\log(\zeta^j-\sigma)-(\zeta^j-\sigma),
+\]
+\[
+\cF:=\prod_{j=0}^4\cF^{(j)},\qquad \cF^{(j)}(\sigma,z):=(\zeta^j-\sigma)^{-1/2}\exp\Bigl(\sum_{k\geq 1}\bk_kz^{2k-1}(\zeta^j-\sigma)^{1-2k}\Bigr).
+\]
+After shrinking $\bbD$ the conditions of \cref{def:gam-lmidata} hold; $\cF(0,0)=\prod_j(\zeta^j)^{-1/2}\neq 0$. The phase $a\log a-a=5\sigma\log(5\sigma)-5\sigma$ and the Stirling form $a^{1/2}\mathrm{Poch}_1(z/a)\exp(\sum_k\bk_k(z/a)^{2k-1})$ of $\Gamma(1+a/z)$, with $\mathrm{Poch}_1=1$, are the twist terms of $\mathsf S_0$ and of $A_{\mathrm{St}}$; so $S=\mathsf S_0$, $A=A_{\mathrm{St}}$, and $\lambda(L)=-\varphi'(L)-5\log(5L)=\sum_j\log(\zeta^j-L)-5\log(5L)$ is the logarithm of \cref{def:gam-c}. Hence $c^{\cF}(z;L)=c(z;L)$ on $U_*$; by \cref{thm:gam-lmi}~(ii) every $c_n$ extends holomorphically to $L=0$, and, being rational by \cref{thm:gam-main}~(i), has no pole there. By \eqref{eq:gam-lmi},
+\[
+c(z;0)=\exp\bigl(\tilde\varphi(\delta)/z\bigr)\frac{\cF(\delta,z)}{\cF(0,0)}=\prod_{j=0}^4V_j(z),\qquad V_j(z):=\exp\bigl(\tilde\varphi_j(\delta)/z\bigr)\frac{\cF^{(j)}(\delta,z)}{\cF^{(j)}(0,0)},
+\]
+with $\tilde\varphi_j(x):=\varphi_j(x)-\varphi_j(0)-\varphi_j'(0)x$. Fix $j$, let $w$ be a local letter with $1/w=\zeta^{-j}z$, and put $\theta:=1/5$. Then $\zeta^j-\delta=z(w+\theta)$, and, expanding $\log(\zeta^j-\delta)=\log\zeta^j+\log(1+\theta/w)$ at $\sigma=0$ (the terms with $\log\zeta^j$ cancel, since $\varphi_j'(0)=-\log\zeta^j$),
+\[
+\tilde\varphi_j(\delta)/z=(w+\theta)\log(1+\theta/w)-\theta,\qquad \frac{\cF^{(j)}(\delta,z)}{\cF^{(j)}(0,0)}=(1+\theta/w)^{-1/2}\exp\Bigl(\sum_{k\geq 1}\bk_k(w+\theta)^{1-2k}\Bigr),
+\]
+the second because $z^{2k-1}(z(w+\theta))^{1-2k}=(w+\theta)^{1-2k}$. Therefore
+\[
+\log V_j=\Bigl(w+\theta-\frac12\Bigr)\log\Bigl(1+\frac{\theta}{w}\Bigr)-\theta+\sum_{k\geq 1}\bk_k(w+\theta)^{1-2k}=\sum_{n\geq 1}\beta_n(\theta)\,w^{-n}
+\]
+by \cref{lem:fsp-dlmf5118}, the formal shifted Stirling series, whose proof uses $B_k(\theta+1)-B_k(\theta)=k\theta^{k-1}$ \cite[24.4.1]{DLMF}, derived there from the generating function (no asymptotic statement is used, \cref{rmk:fsp-classical}); this is an identity in $\bbQ[\theta]\fps{1/w}$, with the coefficients $\beta_n(\theta)=(-1)^{n+1}B_{n+1}(\theta)/(n(n+1))$ of \cref{def:fsp-stirling}, and the substitution of $1/5$ for $\theta$ and of $\zeta^{-j}z$ for $1/w$ is a ring homomorphism from $\bbQ[\theta]\fps{1/w}$ to $\bbQ(\zeta)\fps{z}$. Summing over $j$,
+\[
+\log c(z;0)=\sum_{n\geq 1}\beta_n(1/5)\,z^n\sum_{j=0}^4\zeta^{-jn}=5\sum_{l\geq 1}\beta_{5l}(1/5)\,z^{5l},
+\]
+because $\sum_j\zeta^{-jn}$ is $5$ if $5\mid n$ and $0$ otherwise; and $5\beta_{5l}(1/5)=(-1)^{l+1}B_{5l+1}(1/5)/(l(5l+1))$, since $(-1)^{5l+1}=(-1)^{l+1}$. This is \eqref{eq:gam-ginf}.
+\end{proof}
+
+In the language of symbols (with $\log(a/z):=\log a-\log z$), the value \eqref{eq:gam-lmi} at $s_*=0$ is the product of the regular factors at the first pole $\sigma=-z/5$ of $\Gamma(1+5\sigma/z)$, divided by its non-series part:
+\[
+c(z;0)=\frac{\prod_{j=0}^4\Gst(\zeta^j/z+1/5)}{(2\pi)^{5/2}\,z^{3/2}\,\re^{\varphi(0)/z}\,\re^{-\varphi'(0)/5}\,\cF(0,0)},
+\]
+with the branches of $\log\zeta^j$ used in $\varphi$ and $\cF$. Indeed, with $\log(\zeta^j/z+\theta):=\log\zeta^j-\log z+\log(1+\theta/w)$ and $w=\zeta^j/z$ as in the proof, $\log\Gst(w+\theta)=\log V_j+(w+\theta-\frac12)(\log\zeta^j-\log z)-w+\frac12\log2\pi$; summing over $j$ and using $\sum_j\zeta^j=0$, $\sum_j\zeta^j\log\zeta^j=\varphi(0)$, $\sum_j\log\zeta^j=-\varphi'(0)$, $5\theta=1$ and $\cF(0,0)=\re^{\varphi'(0)/2}$ gives the display. The shift $1/5$ is $-\delta/z$, and $M_*=1$ is the integer that encodes the measure $\dd y$ of the twist factor.
+
+\begin{cor}[The coefficients are polynomials]
+\label{cor:gam-poly}
+Every $c_n$ lies in $\bbQ[L]$, and
+\[
+c_n(L)=\sum_{0\leq k\leq 4n/5}a_{n,k}L^{4n-5k},\qquad a_{n,k}=\coef{u^k}\mathrm{ph}^{\mathrm{SP}}_n.
+\]
+In particular $\mathrm{ph}^{\mathrm{SP}}_n$ has degree at most $\lfloor 4n/5\rfloor$ in $u$, and $\coef{u^{4m}}\mathrm{ph}^{\mathrm{SP}}_{5m}=c_{5m}(0)$ for $m\geq 1$.
+\end{cor}
+
+\begin{proof}
+By \cref{thm:gam-main}~(i) and (iii), $c_n\in\bbQ[L,L^{-1}]$, and by \cref{thm:gam-ginf} it has no pole at $L=0$; so $c_n\in\bbQ[L]$. By \cref{prop:gam-hatflat}, that is \cref{thm:con-Pa}~(iv), $c_n(L)=\sum_{k\geq 0}\coef{u^k}\mathrm{ph}^{\mathrm{SP}}_n\,L^{4n-5k}$, a finite sum since $\mathrm{ph}^{\mathrm{SP}}_n$ is a polynomial. The exponents $4n-5k$ are distinct, so $c_n\in\bbQ[L]$ forces $\coef{u^k}\mathrm{ph}^{\mathrm{SP}}_n=0$ whenever $4n-5k<0$, and the coefficient of $L^0$ in $c_{5m}$ is $\coef{u^{4m}}\mathrm{ph}^{\mathrm{SP}}_{5m}$.
+\end{proof}
+
+The bound $\deg c_n\leq 4n$ comes from the hatted side: by \cref{thm:con-Pa}~(iv), $c_n(L)=L^{4n}\mathrm{ph}^{\mathrm{SP}}_n(L^{-5})$ with $\mathrm{ph}^{\mathrm{SP}}_n$ a polynomial in $u$, which has no negative power of $u$ because it lies in $\bbQ\fps{u}$ (\cref{def:con-PhiSP}); \cref{thm:gam-lmi} does not give it. The equality $\deg\mathrm{ph}^{\mathrm{SP}}_n=\lfloor 4n/5\rfloor$ is not claimed.
+
+\begin{cor}[The free coefficients]
+\label{cor:gam-free}
+For $m\geq 1$ put $\fc^{\mathrm{SP}}_m:=\coef{u^{4m}}\mathrm{ph}^{\mathrm{SP}}_{5m}$, and let $\fc^{\mathrm{can}}_m$ and $\fc^{\mathrm{act}}_m$ be the free coefficients (\cref{lem:gau-HPF}) of $\Phican$ and of $\Phiact$; those of $\Phiact$ are defined because $\Phiact=\Phican$ has coefficients in $\bbQ\fps{u}$ (by \cref{thm:gam-D}, see the proof). Then
+\[
+\fc^{\mathrm{SP}}_m=c_{5m}(0)=\coef{z^{5m}}\Ginf,\qquad \fc^{\mathrm{can}}_m=\fc^{\mathrm{SP}}_m,\qquad 1+\sum_{m\geq 1}\fc^{\mathrm{can}}_mz^{5m}=\Ginf(z),\qquad \fc^{\mathrm{act}}_m=\fc^{\mathrm{can}}_m.
+\]
+For instance $\fc^{\mathrm{can}}_1=\coef{z^5}\Ginf=B_6(1/5)/6=4537/3937500$.
+\end{cor}
+
+\begin{proof}
+\Cref{cor:gam-poly} and \cref{thm:gam-ginf} give $\fc^{\mathrm{SP}}_m=c_{5m}(0)=\coef{z^{5m}}\Ginf$. By \cref{thm:con-Pb}, $\Phican=\PhiSP$, so $\fc^{\mathrm{can}}_m=\fc^{\mathrm{SP}}_m$; this uses neither (QRR) nor \cref{thm:gam-D}. By \cref{thm:gau-R0}~(iv), $\Phiact(\zh,u)\Dn_0(s^4\zh)=\Phican(\zh,u)$, and $\Dn_0=1$ by \cref{thm:gam-D}; so $\Phiact=\Phican$ and $\fc^{\mathrm{act}}_m=\fc^{\mathrm{can}}_m$. The term $l=1$ of \eqref{eq:gam-ginf} is $B_6(1/5)z^5/6$, and $B_6(\theta)=\theta^6-3\theta^5+\tfrac52\theta^4-\tfrac12\theta^2+\tfrac1{42}$ gives $B_6(1/5)/6=4537/3937500$.
+\end{proof}
+
+\subsection{Remarks}
+\label{sec:gam-rmk}
+
+\begin{rmk}[The seven-variable chart]
+\label{rmk:gam-sevenvar}
+Not used. \Cref{thm:gam-main}~(ii) also follows from a stationary phase in seven variables, in which all six Gamma factors are written as Euler integrals ($\Gamma(w)=z^{-w}\int x^w\re^{-x/z}\dd x/x$). For $L\in\Cstar$ let
+\[
+\mathsf S_7(\sigma,y,x_0,\dots,x_4):=\lambda\sigma-y+5\sigma\log y+\sum_{j=0}^4\bigl(-x_j+(\zeta^j-\sigma)\log x_j\bigr),
+\]
+with the integrand $z^{-1}\re^{\mathsf S_7/z}(x_0\cdots x_4)^{-1}\dd\sigma\,\dd y\,\dd x_0\cdots\dd x_4$; the six powers of $z$ multiply to $z^{-1}$ identically in $\sigma$, because $5-5=0$ and $\sum_j\zeta^j=0$. The critical point is $(L,5L,\zeta^0-L,\dots,\zeta^4-L)$ and the Hessian determinant is $1/(L^2(1-L^5)^2)$. Integrating first over $(y,x_0,\dots,x_4)$, with \cref{lem:fsp-fubini}, \cref{lem:fsp-prod} and \cref{lem:fsp-stirling} for $a=5\sigma$, $M=1$ (measure $\dd y$) and $a=\zeta^j-\sigma$, $M=0$ (measure $\dd x_j/x_j$), gives $c(z;L)$. Integrating first over $(\sigma,x_0)$, the phase is linear in $\sigma$, and the formal delta lemma restricts to $x_0=-qy^5/(x_1x_2x_3x_4)$, with a Jacobian proportional to $x_0$ that cancels the factor $1/x_0$ of the measure; what remains is the chart integrand $\re^{\psi/z}\dd y\prod_{j=1}^4\dd x_j/x_j$,
+\[
+\psi:=5\log y-y+\sum_{j=1}^4\bigl(-x_j+(\zeta^j-1)\log x_j\bigr)+\frac{qy^5}{x_1x_2x_3x_4},
+\]
+at its critical point $(5L,\zeta^1-L,\dots,\zeta^4-L)$. Here $1/\det\Hess\psi=-L^2[5]_L^2$, $[5]_L:=1+L+L^2+L^3+L^4$, vanishes only at $L=0,\zeta,\dots,\zeta^4$, where the critical point leaves the chart, and $\det\Hess\psi=-1/25$ at $L=1$. The two orders compute the same series on $\Cstar$; the chart coefficients are rational in $L$ and regular at $L=1$; and at $L=1$, where $q=0$, the chart integrand is the product of the Euler integrals of $\Gamma(1+5/z)$ and of the $\Gamma((\zeta^j-1)/z)$, whose normalised series is $\exp(\sum_k\bk_k\mathsf T_kz^{2k-1})=h(z)$. The seven-variable stationary phase itself is not defined at $L=1$, where its critical point $x_0=1-L$ leaves the domain of $\log x_0$; the value at $L=1$ is read off the chart. The mechanism is that of \cite[\S10]{MR1901075} (\cref{rmk:gam-prior}). \draftnote{Sketch only; the authors decide whether to include the full argument, which needs in addition the formal delta lemma (the restriction to the constraint, exactly, with the Jacobian) in appendix A.}
+\end{rmk}
+
+\begin{rmk}[Blindness to the measure of the twist factor]
+\label{rmk:gam-blind}
+\eqref{eq:gam-Gamma} does not see the measure of the twist factor. If $\Gamma(1+5\sigma/z)$ is replaced by $\Gamma(5\sigma/z)$, whose Euler integral carries $\dd y/y$ instead of $\dd y$, then, since $\Gst(1+w)=w\Gst(w)$, the regular amplitude $\cF$ of the proof of \cref{thm:gam-main}~(ii) is multiplied by the factor $(5\sigma)^{-1}$, which does not involve $z$ (the accompanying power of $z$ does not depend on $\sigma$ and is removed as in \cref{def:gam-c}), and \eqref{eq:gam-lmi} with $\delta=0$ gives the same value $h$. That the series changes away from $L=1$ is known only by computation (\cref{sec:evi-lmi}); it is not used. The measure $\dd y$ enters the proof of the main theorem through \cref{thm:con-Pb} and \cref{thm:con-Pa}~(iv), not through \eqref{eq:gam-Gamma}. At $L=0$ the twist factor is the degenerate one, and there the integer $M_*=1$ that encodes $\dd y$ produces the shift $\delta=-z/5$ of \cref{thm:gam-ginf}.
+\end{rmk}
+
+\begin{rmk}[What the hypotheses of LMI do]
+\label{rmk:gam-necessity}
+(a) \emph{Exactly one factor degenerates.} Let $\lambda_0,\dots,\lambda_{N-1}$ be pairwise distinct weights, $l\geq 1$ an integer, $d$ and $e$ numbers, and $Q\neq 0$ a complex parameter (these letters, and $S$ below, are local to this remark; here $\lambda$ carries an index and is not the logarithm of $-q$), and consider the phase $S(\sigma)=\sigma\log Q+\sum_j[(\lambda_j-\sigma)\log(\lambda_j-\sigma)-(\lambda_j-\sigma)]+(l\sigma+d)\log(l\sigma+d)-(l\sigma+d)$ of a summand $\prod_j\Gamma((\lambda_j-\sigma)/z)\,\Gamma(e+(l\sigma+d)/z)\,Q^{\sigma/z}$, with any branches. Suppose that the twist factor degenerates at the same point as $\Gamma((\lambda_i-\sigma)/z)$, that is $l\lambda_i+d=0$. Then no critical point of $S$ tends to $\lambda_i$ as $Q\to 0$. Indeed, near $\sigma=\lambda_i$ the critical equation $\log Q-\sum_j\log(\lambda_j-\sigma)+l\log(l\sigma+d)=0$ reads $\log Q+l\log(l(\sigma-\lambda_i))-\log(\lambda_i-\sigma)+O(1)=0$, the other terms being bounded there; its real part gives $(l-1)\log|\sigma-\lambda_i|=-\log|Q|+O(1)$. For $l\geq 2$ the right side tends to $+\infty$ while the left side tends to $-\infty$ as $\sigma\to\lambda_i$, and for $l=1$ the equation says $\log|Q|=O(1)$, which is impossible as $Q\to 0$. So there is no colour at $\lambda_i$. This is a statement about actual critical points and is used nowhere else.
+
+(b) \emph{The one-Gamma identity.} For $\varphi=0$ and $\cF=1$ the substitution $\sigma=L+(L-s_*)t$ (\cref{lem:fsp-cov}, constant Jacobian) turns the phase into $a(L)[(1+t)\log(1+t)-t]$ plus an affine function of $t$, and the normalised amplitude into a series $B(t,z/a(L))$ with $B(t,w)=(1+t)^{M_*-1/2}\mathrm{Poch}_{M_*}(w/(1+t))\exp(\sum_k\bk_k(w/(1+t))^{2k-1})$; \cref{lem:fsp-homog} with the unit $a(L)$ gives $c^{\cF}(z;L)=C(z/a(L))$ for one series $C\in 1+z\bbQ\fps{z}$ that depends only on $M_*$. If $C_n\neq 0$ for some $n\geq 1$, then $c^{\cF}_n(L)=C_na(L)^{-n}$ has a pole at $s_*$; \cref{thm:gam-lmi}~(ii) excludes this, so $C=1$, in accordance with \eqref{eq:gam-lmi}. This is the formal counterpart of the Mellin inversion formula $(2\pi\ri)^{-1}\int\Gamma(M_*+a)x^{-a}\,\dd a=x^{M_*}\re^{-x}$, whose stationary-phase series has no correction terms.
+
+(c) Computations in which one hypothesis of \cref{thm:gam-lmi} fails (two degenerate factors at $s_*$, a perturbed Stirling series of the degenerate factor, a degenerate argument that is not linear in $\sigma$, an amplitude that depends on $\lambda$, $\cF(s_*,0)=0$) show poles or non-holomorphic limits; they are recorded in \cref{sec:evi-lmi} and are not used.
+\end{rmk}
+
+\begin{rmk}[Complex \texorpdfstring{$M_*$}{M}]
+\label{rmk:gam-Mcomplex}
+\Cref{thm:gam-lmi} holds for every $M_*\in\bbC$, with $\exp(\sum_{n\geq 1}\beta_n(M_*)(z/a)^n)$ in place of $\mathrm{Poch}_{M_*}(z/a)\exp(\sum_k\bk_k(z/a)^{2k-1})$; this is not used and not proved here. \draftnote{Not proved here: the proof needs the formal stationary phase of Euler's integral with a non-integer exponent, which appendix A does not contain.}
+\end{rmk}
+
+\begin{rmk}[Generality]
+\label{rmk:gam-general}
+\Cref{thm:gam-lmi} applies to any Mellin--Barnes summand in which exactly one Gamma factor degenerates at the point, with an argument linear in $\sigma$, and whose other factors give data $\varphi$, $\cF$ free of $\lambda$, once the part of the powers of $z$ of the Stirling forms that depends on $\sigma$ has been absorbed into $\lambda$ (for the formal quintic it vanishes, \cref{def:gam-c}); this is not used. Examples for other equivariant targets, twisted and untwisted, were computed (\cref{sec:evi-lmi}); we do not quote the quantum Riemann--Roch normalisation of those theories and make no claim about them.
+\end{rmk}
+
+\begin{rmk}[Prior art]
+\label{rmk:gam-prior}
+The mechanism (an Euler integral for the degenerate factor, a chart in which the critical point survives at $q=0$, and a factorisation into one-variable Euler integrals there) is Givental's for the equivariant projective spaces \cite[\S10]{MR1901075}: there the chart $x_0=Q/(x_1\cdots x_n)$ is used, the integral factorises at $Q=0$, \cite[10.4~Lemma]{MR1901075} gives the Stirling series of the factors, and the continuity in $Q$ of the asymptotic solution is asserted. \draftnote{Describe \cite[\S10]{MR1901075} neutrally: decide whether it is presented there as an outline or as a proof.} \cite[Remark~7.2]{GJR18} states the analogous identity for their Landau--Ginzburg integral without proof, and \cite[Lemma~7.7, (37)]{GJR18} proves the value at the orbifold point for it (\cref{thm:gam-ginf}). \cite[Lemma~4.20]{MR2553377} gives an exact expansion in $q$, at $z=-1$, of an oscillatory integral in a chart of this kind, by termwise Gamma integrals, and \cite[\S7, (11)]{MR2276766} identifies the factor of an Euler-class twist with the stationary-phase expansion of an Euler integral. We are not aware of a proof of the identity \eqref{eq:gam-Gamma} in the literature.
+\end{rmk}

@@ -1,0 +1,23 @@
+==============================================================================================================
+genus3_quad  p = 2^61-1  frame (0, 0)  K = 3  nproc = 24  2026-11-09 21:46
+   2926 evaluation points on the 75-dimensional class, graphs [3, 6, 7, 8, 17]
+      quadrics 365/2926 jobs done (158 s)
+      quadrics 730/2926 jobs done (266 s)
+      quadrics 1095/2926 jobs done (376 s)
+      quadrics 1460/2926 jobs done (488 s)
+      quadrics 1825/2926 jobs done (593 s)
+      quadrics 2190/2926 jobs done (701 s)
+      quadrics 2555/2926 jobs done (810 s)
+      quadrics 2920/2926 jobs done (915 s)
+      quadrics 2926/2926 jobs done (916 s)
+   evaluations: 917 s
+PASS every evaluation: [u^0] = [u^1] = 0 for the two-edge graphs
+PASS Q_Gamma(0) = [u^2] of pass A (M_0) for the five graphs
+PASS Q_Gamma(N_1(t)) = [u^2] of the stored full passes of step 5 (covariant family, t = 0..3, 21-node interpolation of the vertex tensors)
+PASS Q_Gamma(N_1^taut) = 0 for the five graphs (R' = Psi + O(u^2) there): ['0', '0', '0', '0', '0']
+PASS cone structure: gradient of every Q_Gamma vanishes at N_1^taut (Q_Gamma is homogeneous quadratic in N_1 - N_1^taut)
+PASS stored tautological control pass: [u^2] = 0 for the five graphs
+PASS random N_1: direct evaluation = quadric (polarisation exact, degree <= 2 in N_1)
+   diagonal coefficients A_ii of Q_3 (first block, k = 1): ['33/100000', '[906735945693717642 mod p]', '[308389599841257173 mod p]', '[1217092772695301633 mod p]', '[1475660570756774456 mod p]', '33/100000*zeta^2', '[89051597398269147 mod p]', '[90402447240741241 mod p]', '[1848688369394104022 mod p]', '33/100000*zeta^4', '[346303542994650806 mod p]', '[1147112829255983833 mod p]', '33/100000*zeta^1', '[1793934361583975851 mod p]', '33/100000*zeta^3']
+total time 934 s
+QUAD ALL CHECKS PASSED

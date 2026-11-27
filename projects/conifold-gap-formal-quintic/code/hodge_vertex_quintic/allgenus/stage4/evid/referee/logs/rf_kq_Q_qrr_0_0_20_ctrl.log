@@ -1,0 +1,25 @@
+rf_kq (referee, independent code): field Q, mode qrr, frame (0, 0), q <= 4 (zhat^20), (H) n <= 24, REG q <= 4, K22 q <= 4
+   log file logs/rf_kq_Q_qrr_0_0_20_ctrl.log
+   setup 0.0 s; gamma (u^2 of the vanishing period) = 7/10, a_0 = 0
+   q =   1 done, 0 s
+   q =   2 done, 0 s
+   q =   3 done, 0 s
+   q =   4 done, 0 s
+   z^5   f = 4537/3937500; K11 = 0; K22 = 0; REG ok
+   z^10  f = -177640111151/31007812500000; K11 = 0; K22 = 0; REG ok
+   z^15  f = -284328315069009259339/6226756347656250000000; K11 = 0; K22 = 0; REG ok
+   z^20  f = 19636563411456..(31/29 digits); K11 = 0; K22 = 0; REG ok
+PASS (H) Phi(zhat, 1) = h at all 20 orders n <= 24 with 5 not | n (WKB from the PF operator, no free parameter): []
+PASS (N) K11_q = 0 for q = 1..4: []
+PASS K22_q = K11_q (the (2,2) slot, rows to a = 2) for q <= 4
+PASS REG: lower u-orders of the (1,1) slot vanish, q <= 4
+PASS ph_n(0) = F_(0,n) of the model for all n <= 20
+PASS deg ph_n = floor(4n/5) for 3 <= n <= 24, ph_1, ph_2 constant ([Fraction(-3, 20)], [Fraction(9, 800)]): []
+PASS resonances unobstructed (0 of the 4 multiples of 5 had a non-trivial rho at u^(4n/5))
+-- controls (q <= 4); m5 from rf_gauge (own Theorem-U solver, exact): -43397/807975000
+PASS control S: f_5 -> f_5 + m5 gives K11_1 = K22_1 = m5 exactly, REG still passes: -43397/807975000
+PASS control T: tau = 1 breaks REG (2 of 2 orders)
+PASS control W: untwisted weights break (H), first at n = [1, 2, 3]
+PASS control B1 (B_96 + 1): (H) intact, first K != 0 at q = [19], K_19 = 5^-95/9120 exactly: 1/230221166579..(1/71 digits)
+PASS control B2 (B_8 + 1): (H) fails first at n = [7]
+RF_KQ Q qrr 0_0 q<=4: ALL CHECKS PASSED   (0 s)

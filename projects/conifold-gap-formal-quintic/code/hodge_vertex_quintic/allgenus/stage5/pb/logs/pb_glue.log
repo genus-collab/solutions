@@ -1,0 +1,6 @@
+pb_glue.py
+  p = 2^61-1, frame (0,0): f_5, f_10, f_15 of Phi^can = EVID values: PASS; deg ph^can_n <= floor(4n/5), n <= 15: PASS; [u^4 w^5](Phi^stored - Phi^can) = m5: PASS
+  p = 2^61-1, frame (1/3,-2/7): f_5, f_10, f_15 of Phi^can = EVID values: PASS; deg ph^can_n <= floor(4n/5), n <= 15: PASS; [u^4 w^5](Phi^stored - Phi^can) = m5: PASS
+  p = 2^89-1, frame (0,0): f_5, f_10, f_15 of Phi^can = EVID values: PASS; deg ph^can_n <= floor(4n/5), n <= 15: PASS; [u^4 w^5](Phi^stored - Phi^can) = m5: PASS
+  p = 2^89-1, frame (1/3,-2/7): f_5, f_10, f_15 of Phi^can = EVID values: PASS; deg ph^can_n <= floor(4n/5), n <= 15: PASS; [u^4 w^5](Phi^stored - Phi^can) = m5: PASS
+ALL CHECKS PASSED

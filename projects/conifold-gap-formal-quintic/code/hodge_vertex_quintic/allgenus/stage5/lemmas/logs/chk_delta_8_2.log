@@ -1,0 +1,13 @@
+chk_delta: Lemma L2 through z^8, 2 instances per case; log logs/chk_delta_8_2.log
+PASS L2 (i) inst 0: SP over (sigma, t) = a(0; z) exactly through z^8 (sigma* = -4, g_t = -3)   a(0; z) = {0: Fraction(1, 1), 1: Fraction(1, 1)}  (0.0 s)
+PASS control (must fail): L2 nw = 0: amplitude depending on sigma (a + s(1 + t))   first differs at z^1
+PASS L2 (i) inst 1: SP over (sigma, t) = a(0; z) exactly through z^8 (sigma* = -5/4, g_t = -2)   a(0; z) = {0: Fraction(1, 1), 1: Fraction(-2, 1)}  (0.0 s)
+PASS L2 (ii) nw = 1 inst 0: SP over (sigma, t, w) = SP_w[f(tau(w), w); a(tau(w), w) g_t/G_t(tau(w), w)] through z^8   z^1: -31/12  (0.6 s)
+PASS control (must fail): L2 (ii) nw = 1: without the Jacobian g_t / G_t(tau(w), w)   first differs at z^1
+PASS control (must fail): L2 nw = 1: amplitude depending on sigma (a + s(1 + t))   first differs at z^1
+PASS L2 (ii) nw = 1 inst 1: SP over (sigma, t, w) = SP_w[f(tau(w), w); a(tau(w), w) g_t/G_t(tau(w), w)] through z^8   z^1: -8163/21296  (1.0 s)
+PASS L2 (ii) nw = 2 inst 0: SP over (sigma, t, w) = SP_w[f(tau(w), w); a(tau(w), w) g_t/G_t(tau(w), w)] through z^6   z^1: -922486285/837017984  (8.2 s)
+PASS control (must fail): L2 (ii) nw = 2: without the Jacobian g_t / G_t(tau(w), w)   first differs at z^1
+PASS control (must fail): L2 nw = 2: amplitude depending on sigma (a + s(1 + t))   first differs at z^1
+PASS L2 (ii) nw = 2 inst 1: SP over (sigma, t, w) = SP_w[f(tau(w), w); a(tau(w), w) g_t/G_t(tau(w), w)] through z^6   z^1: -1147286508/3721925  (7.1 s)
+CHK_DELTA 8 2: ALL CHECKS PASSED   (26 s)

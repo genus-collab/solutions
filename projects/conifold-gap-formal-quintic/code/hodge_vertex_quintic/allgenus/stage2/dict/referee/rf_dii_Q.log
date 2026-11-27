@@ -1,0 +1,9 @@
+rf_dii.py FIELD=Q KD=100 N1=400 N2=2000 WD=400
+anchors (model note s.1): 7 values of PiC checked
+D2 R_n^b = c_b PiC(tau_n(H^b)): repeated products n <= 400, binomial n <= 2000, mismatches 0 [3s]
+D1 log coefficient of Phi_k^b = Sum_i R_(k-i)(-x)^i/i!, k <= 100: mismatches 0 [5s]
+D3 common kernel of the Pi_i (closed form) = ker(log map) (legs), dim d(w), w <= 400: failing weights 0 [64s]
+== Controls (must fail)
+ c_3 = +3: 480 mismatches; sign (-1)^n: 2402 mismatches; Pi_i shifted by one: 80 failing weights; raw legs without the c_b rescaling: 390 failing weights (of 401)
+RESULT: ALL CHECKS PASSED [186s]
+# wall time: 3m5.979s

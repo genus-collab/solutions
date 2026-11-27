@@ -1,0 +1,25 @@
+cy_run: exact over Q, series through u^63
+(A) closed form PF4 u^x = Sum_j P_j(x) u^(x+j): j in [-3, -2, -1, 0, 1]
+[PASS] (A1) P_-3(x) = x (x-1)^2 (x-2) (indicial polynomial, exponents 0, 1, 1, 2)
+[PASS] (A2) PF4 maps Q[[u]] to Q[[u]]: P_j(n) = 0 whenever n + j < 0, n in {0, 1, 2}
+[PASS] (A3) f0 = 1 + (2/625)u^3, f1 = u - (19/60)u^3, f2 = u^2 + (37/30)u^3 (+ O(u^4)): the values of fq_conifold/UR
+    log obstructions (u^-3, u^-2, u^-1) of f0, f1, f2: [['-2', '17/5', '-7/5'], ['0', '0', '-7/5'], ['0', '0', '2']]
+[PASS] (A4) f1, f2 unobstructed at u^-3, u^-2; f0 obstructed at u^-3 (so g has no f0 part); gamma FOUND = 7/10   gamma = 7/10
+[PASS] (A5) g = u + (7/10)u^2 + (41/75)u^3 + (1133/2500)u^4 (FORMAL_QUINTIC_genus2 s.1)
+[PASS] (A6) cross-method: the operator applied to f0, f1, f2, y3 = g log u + h vanishes   precision u^61
+[PASS] (B1) C1: PF4* = Sum (-D)^k A_k = PF4 exactly
+[PASS] (B2) own criterion: L = L* iff A_3 = 2 D A_4 and A_1 = D A_2 - D^3 A_4 (A_0 free); PF4 satisfies both
+[CONTROL FAILS (as required)] (B3) control: PF4 + (1/7)(1-u) D is self-adjoint
+[PASS] (B4) M(y0, t) is formally self-adjoint for ARBITRARY units y0, Dt (not solutions): no non-self-adjoint operator is an M   precision u^59
+[CONTROL FAILS (as required)] (B5) control: that random M equals PF4
+    Bmat (basis f0, f1, f2, y3): [['0', '-7/5', '2', '-9/10'], ['7/5', '0', '0', '-1'], ['-2', '0', '0', '0'], ['9/10', '1', '0', '0']]
+[PASS] (C1) C2(ii): B(y_i, y_j) log-free and constant on the basis   precision u^62
+[PASS] (C2) Bmat equals CYC_PROOF s.3 and is antisymmetric; Pfaffian = 2, det = 4
+[PASS] (C3) C4: B(f_i, g) = 0 (i = 0, 1, 2) and B(y3, g) = 1
+[PASS] (C4) formal Picard-Lefschetz consistency: the u^-1 obstructions of f1, f2 equal B(f0, f1), B(f0, f2)   (-7/5, 2): gamma = 7/10 <=> B(f0, g) = 0
+[CONTROL FAILS (as required)] (C5) control: the order-3 part of B alone is constant on (f0, f1)
+[PASS] (D1) C3: T_0 = T_1 = T_2 = 0 and T_3 = 1/u (log-free), basis-independent form with Bmat^-1   precision u^61
+[PASS] (G1) M^5 - 1 - q prod_(k=1..5)(5M + kz) = z^5 D PF4 - 1 (M = zD; z-graded operator identity, exact)
+[PASS] (G2) PF5 = u M^5 - 1 - (1-u)(3zM^4 + (17/5)z^2M^3 + (9/5)z^3M^2 + (274/625)z^4M + (24/625)z^5) (POLY s.1)
+time 2.7 s
+ALL CHECKS PASSED

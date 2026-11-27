@@ -1,0 +1,24 @@
+ref5_item4: N = 40, exact over Q, colour 0
+[P] (L0) P_0 = 0: True; (L1) left factor 1-x^5 in every z^j, theta^b coefficient: True; (L3) P_1 = (1-x^5) x^-1 (1-theta): True
+[P] (L4) a <= 4j for every term: True (top a per j: {1: 4, 2: 8, 3: 12, 4: 16, 5: 20}); grade a + j = 0 mod 5: True; (L2) P_j(x^m) in xQ[x], 1<=m<=80: True; P_j(1) leaves xQ[x] (expected): True
+[free = 0] n <= 40: RHS_n = (1-x^5) rho_n, rho_n in x Q[x] of degree <= 4n, [x^0] rho_n = 0, A_n in x Q[x] of degree <= 4n+1, [z^(n+1)] P psi = 0: True
+[free = 0] independent hatted HPF (from A_e): [zhat^m] hpf_full(Phi) = 0 for m <= 41: True
+[free = 0] dictionary rho_n = x^(4n) r_n(x^-5), r_n := [zhat^(n+1)] hpf_full(Phi|ph_n=0)/(u(1-u)), n <= 30: True
+  ph_5 = ['47735919/128000000', '-203511/250000', '548547/1000000', '-6789/62500', '0']
+[free = (-1)^m (3m+1)/11] n <= 40: RHS_n = (1-x^5) rho_n, rho_n in x Q[x] of degree <= 4n, [x^0] rho_n = 0, A_n in x Q[x] of degree <= 4n+1, [z^(n+1)] P psi = 0: True
+[free = (-1)^m (3m+1)/11] independent hatted HPF (from A_e): [zhat^m] hpf_full(Phi) = 0 for m <= 41: True
+[free = (-1)^m (3m+1)/11] dictionary rho_n = x^(4n) r_n(x^-5), r_n := [zhat^(n+1)] hpf_full(Phi|ph_n=0)/(u(1-u)), n <= 30: True
+[P] hatted solver, true operator, n <= 10: obstructions = [] (must be empty)
+[P + z^2 x^3] (L0) P_0 = 0: True; (L1) left factor 1-x^5 in every z^j, theta^b coefficient: False; (L3) P_1 = (1-x^5) x^-1 (1-theta): True
+[P + z^2 x^3] (L4) a <= 4j for every term: True (top a per j: {1: 4, 2: 8, 3: 12, 4: 16, 5: 20}); grade a + j = 0 mod 5: True; (L2) P_j(x^m) in xQ[x], 1<=m<=80: True; P_j(1) leaves xQ[x] (expected): True
+  n = 1: RHS_n not divisible by 1 - x^5
+[P + z^2 x^3] flat recursion with trivial resonance succeeds (must be False): False
+[P + z^2 x^3] hatted solver: first obstruction (n, [u^(4n/5)] coefficient) = [(5, '6/25')] (must be non-empty)
+[P + z^2 (1-x^5) x^-2] (L0) P_0 = 0: True; (L1) left factor 1-x^5 in every z^j, theta^b coefficient: True; (L3) P_1 = (1-x^5) x^-1 (1-theta): True
+[P + z^2 (1-x^5) x^-2] (L4) a <= 4j for every term: True (top a per j: {1: 4, 2: 8, 3: 12, 4: 16, 5: 20}); grade a + j = 0 mod 5: True; (L2) P_j(x^m) in xQ[x], 1<=m<=80: False; P_j(1) leaves xQ[x] (expected): True
+[P + z^2 (1-x^5) x^-2] flat recursion with trivial resonance succeeds (must be False): False
+[P + z^2 (1-x^5) x^-2] hatted solver: first obstruction (n, [u^(4n/5)] coefficient) = [(5, '1814/3125')] (must be non-empty)
+
+real	0m2.214s
+user	0m0.015s
+sys	0m0.046s

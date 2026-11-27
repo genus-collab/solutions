@@ -1,0 +1,38 @@
+rf_t1_regress.py (referee engine rf_tr.py)  2026-11-13 20:12
+  [PASS] Q Airy omega_{0,3} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 1 keys, 0 mismatches
+  [PASS] Q Airy omega_{1,1} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 1 keys, 0 mismatches
+  [PASS] Q Airy omega_{0,4} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 4 keys, 0 mismatches
+  [PASS] Q Airy omega_{1,2} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 3 keys, 0 mismatches
+  [PASS] Q Airy omega_{2,1} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 1 keys, 0 mismatches
+  [PASS] Q Airy omega_{1,3} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 10 keys, 0 mismatches
+  [PASS] Q Airy omega_{2,2} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 6 keys, 0 mismatches
+  [PASS] Q Airy omega_{3,1} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 1 keys, 0 mismatches
+  [PASS] Q Airy dilaton: Sum Res Phi omega_{0,4} = (2-2g-n) omega_{0,3}
+  [PASS] Q Airy dilaton: Sum Res Phi omega_{1,2} = (2-2g-n) omega_{1,1}
+  [PASS] Q Airy dilaton: Sum Res Phi omega_{1,3} = (2-2g-n) omega_{1,2}
+  [PASS] Q Airy dilaton: Sum Res Phi omega_{0,5} = (2-2g-n) omega_{0,4}
+  [PASS] Q Airy dilaton: Sum Res Phi omega_{2,2} = (2-2g-n) omega_{2,1}
+  [PASS] Q Airy dilaton: Sum Res Phi omega_{1,4} = (2-2g-n) omega_{1,3}
+  [PASS] 2^61-1 Airy omega_{0,3} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 1 keys, 0 mismatches
+  [PASS] 2^61-1 Airy omega_{1,1} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 1 keys, 0 mismatches
+  [PASS] 2^61-1 Airy omega_{0,4} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 4 keys, 0 mismatches
+  [PASS] 2^61-1 Airy omega_{1,2} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 3 keys, 0 mismatches
+  [PASS] 2^61-1 Airy omega_{2,1} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 1 keys, 0 mismatches
+  [PASS] 2^61-1 Airy omega_{1,3} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 10 keys, 0 mismatches
+  [PASS] 2^61-1 Airy omega_{2,2} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 6 keys, 0 mismatches
+  [PASS] 2^61-1 Airy omega_{3,1} = psi-class intersection numbers x prod (2d+1)!! dp/p^(2d+2): 1 keys, 0 mismatches
+  [PASS] 2^61-1 Airy dilaton: Sum Res Phi omega_{0,4} = (2-2g-n) omega_{0,3}
+  [PASS] 2^61-1 Airy dilaton: Sum Res Phi omega_{1,2} = (2-2g-n) omega_{1,1}
+  [PASS] 2^61-1 Airy dilaton: Sum Res Phi omega_{1,3} = (2-2g-n) omega_{1,2}
+  [PASS] 2^61-1 Airy dilaton: Sum Res Phi omega_{0,5} = (2-2g-n) omega_{0,4}
+  [PASS] 2^61-1 Airy dilaton: Sum Res Phi omega_{2,2} = (2-2g-n) omega_{2,1}
+  [PASS] 2^61-1 Airy dilaton: Sum Res Phi omega_{1,4} = (2-2g-n) omega_{1,3}
+  [PASS] Gaussian curve x = p + 1/p (exact Q): F_2 = -1/240, B_2g/(2g(2g-2)) = -1/240 (0.2 s)
+  [PASS] Gaussian curve x = p + 1/p (exact Q): F_3 = 1/1008, B_2g/(2g(2g-2)) = 1/1008 (0.5 s)
+  [PASS] Gaussian curve x = p + 1/p (exact Q): F_4 = -1/1440, B_2g/(2g(2g-2)) = -1/1440 (3.5 s)
+  [PASS] Gaussian curve: omega_{1,2}, omega_{0,4}, omega_{2,2} symmetric
+  [PASS] Gaussian curve dilaton equation omega_{1,2} -> omega_{1,1}
+  [PASS] Gaussian curve dilaton equation omega_{2,2} -> omega_{2,1}
+  [PASS] Gaussian curve dilaton equation omega_{0,4} -> omega_{0,3}
+  [PASS] Gaussian curve dilaton equation omega_{1,3} -> omega_{1,2}
+== ALL CHECKS PASSED (4.4 s, 0 failures)

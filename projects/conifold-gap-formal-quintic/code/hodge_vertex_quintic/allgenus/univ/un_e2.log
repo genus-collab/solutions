@@ -1,0 +1,347 @@
+==============================================================================================================
+un_e2: gauges over Q (k <= 12, working precision O(u^24))
+--------------------------------------------------------------------------------------------------------------
+quintic, frame (0,0)  [regression]   (1.5 s)
+   T = Int f = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (9/20)x^4 + (35839/93750)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (-43397/807975000) z^5 + (-765368951400317/1305647201250000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+quintic, frame (1/3,-2/7)  [regression]   (1.6 s)
+   T = Int f = (1)x^1 + (11/30)x^2 + (751/1575)x^3 + (454/945)x^4 + (32621311/62015625)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (-43397/807975000) z^5 + (-765368951400317/1305647201250000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 + u/3)   (1.6 s)
+   T = Int f = (1)x^1 + (13/15)x^2 + (158/225)x^3 + (44/75)x^4 + (47089/93750)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (3851199997/5925150000) z^5 + (4312965750305915450955983/19589930607555000000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+g -> g (1 - 3u/5)   (1.5 s)
+   T = Int f = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (9/20)x^4 + (35839/93750)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (198270629/1269675000) z^5 + (165611041716312442547579/112642100993441250000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 + u/3 - 2u^2/7 + 5u^3/11), g -> g (1 - 3u/5 + u^2/2 + 2u^3/3)   (1.5 s)
+   T = Int f = (1)x^1 + (13/15)x^2 + (956/1575)x^3 + (1981/3300)x^4 + (3868103/7218750)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (31764344287/1163868750) z^5 + (5761596837414242725693984281037/41740938549382073203125000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 - 7u/4 + 3u^2 - u^3/9), g -> g (1 + 11u/6 - 5u^2/3 + 4u^3/13)   (1.5 s)
+   T = Int f = (1)x^1 + (-7/40)x^2 + (73/100)x^3 + (2717/3600)x^4 + (396659/562500)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (38700127538971973/59156697600000) z^5 + (417967829490578050112432493949753263881/4990308205957368053760000000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+lambda = f(0) = 3/2: f -> f (3/2 + u/3), g -> g (1 - 3u/5 + u^2/2)   (1.5 s)
+   T = Int f = (3/2)x^1 + (73/60)x^2 + (439/450)x^3 + (487/600)x^4 + (43339/62500)x^5 + O(x^26);  P'_11(0, z) = (2/3) z^0 + (915238702031/359952862500) z^5 + (-382006806145740134909048581153/221713447385390412375000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+perturbed, in frame (1/3,-2/7): f -> f (1 + 2u/5 - u^2/3), g -> g (1 + u/7 + 3u^2/4)   (1.5 s)
+   T = Int f = (1)x^1 + (17/30)x^2 + (146/315)x^3 + (53143/94500)x^4 + (36241186/62015625)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (-171815241648683/24387917400000) z^5 + (156149704669241602746340034667530437/4240713772728758278800000000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+==============================================================================================================
+un_e2: graph sums, p = 2^89-1
+--------------------------------------------------------------------------------------------------------------
+quintic, frame (0,0)  [regression]
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2 REGRESSION: rows from the gauge = the project rows in frame ('0', '0') (all 25 x 4 x 2 residues)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-7/6000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      (1 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3 REGRESSION: rows from the gauge = the project rows in frame ('0', '0') (all 25 x 7 x 4 residues)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-1/9000', '407/3780000', '-151/3780000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      (4 s)
+--------------------------------------------------------------------------------------------------------------
+quintic, frame (1/3,-2/7)  [regression]
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2 REGRESSION: rows from the gauge = the project rows in frame ('1/3', '-2/7') (all 25 x 4 x 2 residues)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-11/18000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      (1 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3 REGRESSION: rows from the gauge = the project rows in frame ('1/3', '-2/7') (all 25 x 7 x 4 residues)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-11/189000', '-197/8820000', '5567/238140000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      (4 s)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 + u/3)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-13/9000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (-1/3600) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-13/94500', '529/2835000', '-77/607500']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (-1/37800) t_c^-3 + (53/2268000) t_c^-2 + (-67/3402000) t_c^-1
+      (2 s)
+--------------------------------------------------------------------------------------------------------------
+g -> g (1 - 3u/5)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-7/6000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (0) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-1/9000', '407/3780000', '-151/3780000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+      (3 s)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 + u/3 - 2u^2/7 + 5u^3/11), g -> g (1 - 3u/5 + u^2/2 + 2u^3/3)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-13/9000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (-1/3600) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-13/94500', '4003/19845000', '-254647/1309770000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (-1/37800) t_c^-3 + (611/15876000) t_c^-2 + (-8671/130977000) t_c^-1
+      (3 s)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 - 7u/4 + 3u^2 - u^3/9), g -> g (1 + 11u/6 - 5u^2/3 + 4u^3/13)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '7/24000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (7/4800) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '1/36000', '-697/6720000', '-157441/725760000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (1/7200) t_c^-3 + (971/12096000) t_c^-2 + (-7117/29030400) t_c^-1
+      (3 s)
+--------------------------------------------------------------------------------------------------------------
+lambda = f(0) = 3/2: f -> f (3/2 + u/3), g -> g (1 - 3u/5 + u^2/2)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-73/54000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 3/2): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (-1/5400) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-73/567000', '16109/102060000', '-83347/918540000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 3/2): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (-1/56700) t_c^-3 + (67/5103000) t_c^-2 + (-871/91854000) t_c^-1
+      (3 s)
+--------------------------------------------------------------------------------------------------------------
+perturbed, in frame (1/3,-2/7): f -> f (1 + 2u/5 - u^2/3), g -> g (1 + u/7 + 3u^2/4)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-17/18000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (-1/3000) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-17/189000', '19/352800', '-30041/1190700000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (-1/31500) t_c^-3 + (13/315000) t_c^-2 + (-757/19845000) t_c^-1
+      (3 s)
+UN_E2 ALL CHECKS PASSED
+### RE-RUN by the second attempt, 2026-11-13T19:06:27+00:00
+==============================================================================================================
+un_e2: gauges over Q (k <= 12, working precision O(u^24))
+--------------------------------------------------------------------------------------------------------------
+quintic, frame (0,0)  [regression]   (1.9 s)
+   T = Int f = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (9/20)x^4 + (35839/93750)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (-43397/807975000) z^5 + (-765368951400317/1305647201250000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+quintic, frame (1/3,-2/7)  [regression]   (2.1 s)
+   T = Int f = (1)x^1 + (11/30)x^2 + (751/1575)x^3 + (454/945)x^4 + (32621311/62015625)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (-43397/807975000) z^5 + (-765368951400317/1305647201250000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 + u/3)   (2.2 s)
+   T = Int f = (1)x^1 + (13/15)x^2 + (158/225)x^3 + (44/75)x^4 + (47089/93750)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (3851199997/5925150000) z^5 + (4312965750305915450955983/19589930607555000000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+g -> g (1 - 3u/5)   (2.0 s)
+   T = Int f = (1)x^1 + (7/10)x^2 + (41/75)x^3 + (9/20)x^4 + (35839/93750)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (198270629/1269675000) z^5 + (165611041716312442547579/112642100993441250000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 + u/3 - 2u^2/7 + 5u^3/11), g -> g (1 - 3u/5 + u^2/2 + 2u^3/3)   (2.1 s)
+   T = Int f = (1)x^1 + (13/15)x^2 + (956/1575)x^3 + (1981/3300)x^4 + (3868103/7218750)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (31764344287/1163868750) z^5 + (5761596837414242725693984281037/41740938549382073203125000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 - 7u/4 + 3u^2 - u^3/9), g -> g (1 + 11u/6 - 5u^2/3 + 4u^3/13)   (2.1 s)
+   T = Int f = (1)x^1 + (-7/40)x^2 + (73/100)x^3 + (2717/3600)x^4 + (396659/562500)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (38700127538971973/59156697600000) z^5 + (417967829490578050112432493949753263881/4990308205957368053760000000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+lambda = f(0) = 3/2: f -> f (3/2 + u/3), g -> g (1 - 3u/5 + u^2/2)   (2.2 s)
+   T = Int f = (3/2)x^1 + (73/60)x^2 + (439/450)x^3 + (487/600)x^4 + (43339/62500)x^5 + O(x^26);  P'_11(0, z) = (2/3) z^0 + (915238702031/359952862500) z^5 + (-382006806145740134909048581153/221713447385390412375000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+--------------------------------------------------------------------------------------------------------------
+perturbed, in frame (1/3,-2/7): f -> f (1 + 2u/5 - u^2/3), g -> g (1 + u/7 + 3u^2/4)   (2.2 s)
+   T = Int f = (1)x^1 + (17/30)x^2 + (146/315)x^3 + (53143/94500)x^4 + (36241186/62015625)x^5 + O(x^26);  P'_11(0, z) = (1) z^0 + (-171815241648683/24387917400000) z^5 + (156149704669241602746340034667530437/4240713772728758278800000000000) z^10
+PASS    Theorem U: every p_{k,b}, k <= 12, is a power series in u
+PASS    (G): P' Y^C_model(v(u)) = P'_11(0, z) Y^C_system on z^-6..z^6 mod u^6 (13 coefficients of z, exact over Q)
+==============================================================================================================
+un_e2: graph sums, p = 2^89-1
+--------------------------------------------------------------------------------------------------------------
+quintic, frame (0,0)  [regression]
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2 REGRESSION: rows from the gauge = the project rows in frame ('0', '0') (all 25 x 4 x 2 residues)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-7/6000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      (2 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3 REGRESSION: rows from the gauge = the project rows in frame ('0', '0') (all 25 x 7 x 4 residues)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-1/9000', '407/3780000', '-151/3780000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      (6 s)
+--------------------------------------------------------------------------------------------------------------
+quintic, frame (1/3,-2/7)  [regression]
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2 REGRESSION: rows from the gauge = the project rows in frame ('1/3', '-2/7') (all 25 x 4 x 2 residues)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-11/18000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      (1 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3 REGRESSION: rows from the gauge = the project rows in frame ('1/3', '-2/7') (all 25 x 7 x 4 residues)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-11/189000', '-197/8820000', '5567/238140000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      (5 s)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 + u/3)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-13/9000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (-1/3600) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-13/94500', '529/2835000', '-77/607500']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (-1/37800) t_c^-3 + (53/2268000) t_c^-2 + (-67/3402000) t_c^-1
+      (4 s)
+--------------------------------------------------------------------------------------------------------------
+g -> g (1 - 3u/5)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-7/6000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (0) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-1/9000', '407/3780000', '-151/3780000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+      (4 s)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 + u/3 - 2u^2/7 + 5u^3/11), g -> g (1 - 3u/5 + u^2/2 + 2u^3/3)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-13/9000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (-1/3600) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-13/94500', '4003/19845000', '-254647/1309770000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (-1/37800) t_c^-3 + (611/15876000) t_c^-2 + (-8671/130977000) t_c^-1
+      (4 s)
+--------------------------------------------------------------------------------------------------------------
+f -> f (1 - 7u/4 + 3u^2 - u^3/9), g -> g (1 + 11u/6 - 5u^2/3 + 4u^3/13)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '7/24000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (7/4800) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '1/36000', '-697/6720000', '-157441/725760000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (1/7200) t_c^-3 + (971/12096000) t_c^-2 + (-7117/29030400) t_c^-1
+      (4 s)
+--------------------------------------------------------------------------------------------------------------
+lambda = f(0) = 3/2: f -> f (3/2 + u/3), g -> g (1 - 3u/5 + u^2/2)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-73/54000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 3/2): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (-1/5400) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-73/567000', '16109/102060000', '-83347/918540000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 3/2): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (-1/56700) t_c^-3 + (67/5103000) t_c^-2 + (-871/91854000) t_c^-1
+      (4 s)
+--------------------------------------------------------------------------------------------------------------
+perturbed, in frame (1/3,-2/7): f -> f (1 + 2u/5 - u^2/3), g -> g (1 + u/7 + 3u^2/4)
+PASS    genus 2: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^4, u^2)
+PASS    genus 2: all 6 outer graphs with edges are O(u^2) (regular)
+      vertex graph [u^0..]: ['1/1200', '-17/18000']
+      vertex graph in T/lambda: (1/1200) T^-2 + (0) T^-1
+PASS    genus 2: vertex graph = (1/1200) (T/lambda)^-2 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/1200', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/1200) t_c^-2 + (-1/3000) t_c^-1
+      (0 s)
+PASS    genus 3: the rows Ghat' Rhat(tau zhat) are symplectic mod (zhat^7, u^4)
+PASS    genus 3: all 41 outer graphs with edges are O(u^4) (regular)
+      vertex graph [u^0..]: ['1/25200', '-17/189000', '19/352800', '-30041/1190700000']
+      vertex graph in T/lambda: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+PASS    genus 3: vertex graph = (1/25200) (T/lambda)^-4 + 0 + .. + 0 (T = Int f, lambda = f(0)/t_c'(0) = 1): ['1/25200', '0', '0', '0']
+      control: the same vertex graph in the QUINTIC t_c: (1/25200) t_c^-4 + (-1/31500) t_c^-3 + (13/315000) t_c^-2 + (-757/19845000) t_c^-1
+      (4 s)
+UN_E2 ALL CHECKS PASSED

@@ -1,0 +1,8 @@
+T-system colour 0, F_0 = ['1', '-3/20', '9/800', '11571/80000', '-2415609/6400000', '47735919/128000000']
+symplecticity M0(-t)^T M0(t) = 1 through t^10: failures 0
+kappa= 1 sig=1: claim X = M0(t)^T: 0 mismatches, ctrl X = M0(t): 180 mismatches, ctrl X = M0(-t)^T: 125 mismatches, ctrl kappa ignored: 0 mismatches | IBP form: 0 | (2-32): 0
+kappa= 4 sig=1: claim X = M0(t)^T: 0 mismatches, ctrl X = M0(t): 180 mismatches, ctrl X = M0(-t)^T: 125 mismatches, ctrl kappa ignored: 250 mismatches | IBP form: 0 | (2-32): 0
+kappa=-1 sig=1: claim X = M0(t)^T: 0 mismatches, ctrl X = M0(t): 180 mismatches, ctrl X = M0(-t)^T: 125 mismatches, ctrl kappa ignored: 125 mismatches | IBP form: 0 | (2-32): 0
+kappa= 1 sig=2: claim X = M0(t)^T: 0 mismatches, ctrl X = M0(t): 180 mismatches, ctrl X = M0(-t)^T: 125 mismatches, ctrl kappa ignored: 0 mismatches | IBP form: 0 | (2-32): 0
+kappa= 4 sig=2: claim X = M0(t)^T: 0 mismatches, ctrl X = M0(t): 180 mismatches, ctrl X = M0(-t)^T: 125 mismatches, ctrl kappa ignored: 250 mismatches | IBP form: 0 | (2-32): 0
+ALL CHECKS PASSED

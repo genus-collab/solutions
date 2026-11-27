@@ -1,0 +1,72 @@
+field Z/(618970019642690137449562111)  v = 4
+  <omega_{1,1}, eul=-4z^5/5               > = 1/8 * v^(0)   [L]  regular
+  <omega_{1,1}, z^10                      > = -55/64 * v^(1)   [L]  regular
+  <omega_{1,1}, z^15                      > = -55/64 * v^(2)   [L]  regular
+  <omega_{1,1}, z^20                      > = -35/64 * v^(3)   [L]  regular
+  <omega_{1,1}, H=-log z                  > = -1/12 * v^(-1)   [bad: log]  SINGULAR
+  <omega_{1,1}, dil=-4z^5/5+v log z       > = 5/24 * v^(0)   [bad: log]  regular
+  <omega_{1,1}, z^-5                      > = 15 * v^(-2)   [bad: 1/v]  SINGULAR
+  <omega_{2,1}, eul=-4z^5/5               > = 0  (homogeneity allows v^(-2): nontrivial zero)
+  <omega_{2,1}, z^10                      > = 0  (homogeneity allows v^(-1): nontrivial zero)
+  <omega_{2,1}, z^15                      > = 2079/8192 * v^(0)   [L]  regular
+  <omega_{2,1}, z^20                      > = -75931/8192 * v^(1)   [L]  regular
+  <omega_{2,1}, H=-log z                  > = 1/120 * v^(-3)   [bad: log]  SINGULAR
+  <omega_{2,1}, dil=-4z^5/5+v log z       > = -1/120 * v^(-2)   [bad: log]  SINGULAR
+  <omega_{2,1}, z^-5                      > = 8 * v^(-4)   [bad: 1/v]  SINGULAR
+  <omega_{1,2}, unit | z^9> = -45/128 * v^(0)   [L,L]  regular
+  <omega_{1,2}, unit | z^14> = -805/256 * v^(1)   [L,L]  regular
+  <omega_{1,2}, unit | z^19> = -10545/2048 * v^(2)   [L,L]  regular
+  <omega_{1,2}, unit | tau1H=x log z-z^4/4+v/z> = 1/12 * v^(-1)   [mixed/bad]  SINGULAR
+  <omega_{1,2}, eul=-4z^5/5 | eul=-4z^5/5> = 1/8 * v^(0)   [L,L]  regular
+  <omega_{1,2}, eul=-4z^5/5 | z^10> = -135/64 * v^(1)   [L,L]  regular
+  <omega_{1,2}, eul=-4z^5/5 | z^15> = -3045/512 * v^(2)   [L,L]  regular
+  <omega_{1,2}, eul=-4z^5/5 | z^20> = -3895/512 * v^(3)   [L,L]  regular
+  <omega_{1,2}, eul=-4z^5/5 | dil=-4z^5/5+v log z> = 1/8 * v^(0)   [mixed/bad]  regular
+  <omega_{1,2}, eul=-4z^5/5 | z^-5> = 60 * v^(-2)   [mixed/bad]  SINGULAR
+  <omega_{1,2}, z^10 | z^10> = 2825/512 * v^(2)   [L,L]  regular
+  <omega_{1,2}, z^10 | z^15> = 29925/4096 * v^(3)   [L,L]  regular
+  <omega_{1,2}, z^10 | z^20> = 28375/4096 * v^(4)   [L,L]  regular
+  <omega_{1,2}, z^10 | H=-log z> = -5/4 * v^(0)   [mixed/bad]  regular
+  <omega_{1,2}, z^10 | dil=-4z^5/5+v log z> = -55/64 * v^(1)   [mixed/bad]  regular
+  <omega_{1,2}, z^10 | z^-5> = -125 * v^(-1)   [mixed/bad]  SINGULAR
+  <omega_{1,2}, z^15 | z^15> = 49875/8192 * v^(4)   [L,L]  regular
+  <omega_{1,2}, z^15 | z^20> = 35925/8192 * v^(5)   [L,L]  regular
+  <omega_{1,2}, z^15 | H=-log z> = -2605/512 * v^(1)   [mixed/bad]  regular
+  <omega_{1,2}, z^15 | dil=-4z^5/5+v log z> = -55/64 * v^(2)   [mixed/bad]  regular
+  <omega_{1,2}, z^15 | z^-5> = -23325/128 * v^(0)   [mixed/bad]  regular
+  <omega_{1,2}, z^20 | z^20> = 21075/8192 * v^(6)   [L,L]  regular
+  <omega_{1,2}, z^20 | H=-log z> = -3615/512 * v^(2)   [mixed/bad]  regular
+  <omega_{1,2}, z^20 | dil=-4z^5/5+v log z> = -35/64 * v^(3)   [mixed/bad]  regular
+  <omega_{1,2}, z^20 | z^-5> = -24175/128 * v^(1)   [mixed/bad]  regular
+  <omega_{1,2}, H=-log z | H=-log z> = 1/12 * v^(-2)   [mixed/bad]  SINGULAR
+  <omega_{1,2}, H=-log z | dil=-4z^5/5+v log z> = -1/12 * v^(-1)   [mixed/bad]  SINGULAR
+  <omega_{1,2}, H=-log z | z^-5> = 45 * v^(-3)   [mixed/bad]  SINGULAR
+  <omega_{1,2}, dil=-4z^5/5+v log z | dil=-4z^5/5+v log z> = 5/24 * v^(0)   [mixed/bad]  regular
+  <omega_{1,2}, dil=-4z^5/5+v log z | z^-5> = 15 * v^(-2)   [mixed/bad]  SINGULAR
+  <omega_{1,2}, z^-5 | z^-5> = 3100 * v^(-4)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, unit | z^19> = 39501/32768 * v^(0)   [L,L]  regular
+  <omega_{2,2}, unit | tau1H=x log z-z^4/4+v/z> = -1/120 * v^(-3)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, eul=-4z^5/5 | z^15> = 6237/8192 * v^(0)   [L,L]  regular
+  <omega_{2,2}, eul=-4z^5/5 | z^20> = -293329/8192 * v^(1)   [L,L]  regular
+  <omega_{2,2}, eul=-4z^5/5 | z^-5> = 32 * v^(-4)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, z^10 | z^10> = -165/64 * v^(0)   [L,L]  regular
+  <omega_{2,2}, z^10 | z^15> = 2489685/65536 * v^(1)   [L,L]  regular
+  <omega_{2,2}, z^10 | z^20> = 20370775/65536 * v^(2)   [L,L]  regular
+  <omega_{2,2}, z^10 | z^-5> = -475 * v^(-3)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, z^15 | z^15> = 82127925/262144 * v^(2)   [L,L]  regular
+  <omega_{2,2}, z^15 | z^20> = 260421375/262144 * v^(3)   [L,L]  regular
+  <omega_{2,2}, z^15 | dil=-4z^5/5+v log z> = 6237/8192 * v^(0)   [mixed/bad]  regular
+  <omega_{2,2}, z^15 | z^-5> = -375075/128 * v^(-2)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, z^20 | z^20> = 504776925/262144 * v^(4)   [L,L]  regular
+  <omega_{2,2}, z^20 | H=-log z> = -8 * v^(0)   [mixed/bad]  regular
+  <omega_{2,2}, z^20 | dil=-4z^5/5+v log z> = -227793/8192 * v^(1)   [mixed/bad]  regular
+  <omega_{2,2}, z^20 | z^-5> = -1337425/128 * v^(-1)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, H=-log z | H=-log z> = -1/40 * v^(-4)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, H=-log z | dil=-4z^5/5+v log z> = 1/40 * v^(-3)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, H=-log z | z^-5> = 8 * v^(-5)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, dil=-4z^5/5+v log z | dil=-4z^5/5+v log z> = -1/40 * v^(-2)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, dil=-4z^5/5+v log z | z^-5> = 24 * v^(-4)   [mixed/bad]  SINGULAR
+  <omega_{2,2}, z^-5 | z^-5> = 30250 * v^(-6)   [mixed/bad]  SINGULAR
+  (L,L) pairs with integer v-exponent < 0 that vanish (nontrivial zeros): {(1, 2): 2, (2, 2): 7}
+  Int_inf^0 omega_{1,1} = 1/12 * v^(-1)
+  Int_inf^0 omega_{2,1} = -1/120 * v^(-3)

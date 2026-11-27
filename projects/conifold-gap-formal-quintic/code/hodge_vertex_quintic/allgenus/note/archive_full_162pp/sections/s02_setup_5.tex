@@ -1,0 +1,90 @@
+% Section 2, part 5 of 8: the Frobenius basis at the conifold point; conifold frames; the differential ring and the conifold expansion; tau; the canonical coordinates.
+
+%-------------------------------------------------------------------------------
+\subsection{Conifold frames and the conifold expansion}
+\label{sec:set-frames}
+
+In this subsection functions of $u$ are formal series in $u$ (or in $s=u^{1/5}$), with $\Dq=-(1-u)\,\dd/\dd u$ (\cref{def:set-points}), and $\PFfour$ is taken in its $u$-form (\cref{def:set-genus0}).
+
+\begin{lem}[The Frobenius basis at the conifold point]
+\label{lem:set-frobbasis}
+Let $\theta\coloneqq u\,\dd/\dd u$, so that $\Dq=(1-u^{-1})\theta$ on $\bbQ\lser u$, and let $\ell$ be an indeterminate with $\Dq\ell=1-u^{-1}$, i.e.\ $\theta\ell=1$, a formal $\log u$ (the indeterminate of \cref{def:gau-conc}).
+\begin{enumerate}
+\item $\PFfour=\sum_{j=-3}^{1}u^jP_j(\theta)$ with polynomials $P_j$, where
+\[
+P_{-3}(x)=x(x-1)^2(x-2),\qquad P_{-2}(x)=-x(x-1)\bigl(4x^2-6x+\tfrac{17}5\bigr),\qquad P_{-1}(0)=0,\quad P_{-1}'(0)=-\tfrac75 .
+\]
+Hence $\PFfour$ maps $\bbQ\fps u$ into itself, its local exponents at $u=0$ are $0,1,1,2$, and a power-series solution is determined by its coefficients of $u^0,u^1,u^2$; $f_k$ ($k=0,1,2$) denotes the solution with $f_k=u^k+O(u^3)$.
+\item For $g=\sum_nb_nu^n\in\bbQ\fps u$, $\PFfour(g\ell)=\ell\,\PFfour g+r(g)$ with $r(g)\coloneqq\sum_nb_n\sum_jP_j'(n)u^{n+j}\in u^{-3}\bbQ\fps u$. If $\PFfour g=0$, then $g\ell+h$ with $h\in\bbQ\fps u$ solves $\PFfour$ for some $h$ if and only if $\coef{u^m}r(g)=0$ for $m=-3,-2,-1$.
+\item On $\operatorname{span}(f_0,f_1,f_2)$ the obstruction $(\coef{u^{-3}}r,\coef{u^{-2}}r,\coef{u^{-1}}r)$ has the matrix, in the columns $f_0,f_1,f_2$,
+\[
+\begin{pmatrix}-2&0&0\\ \frac{17}5&0&0\\ -\frac75&-\frac75&2\end{pmatrix},
+\]
+with kernel $\bbQ\,(0,1,\frac7{10})$. Hence, up to a non-zero factor, $\varpi_1\coloneqq f_1+\gamma f_2$, $\gamma\coloneqq\frac7{10}$, is the only power-series solution $g$ for which a solution $g\ell+h$, $h\in\bbQ\fps u$, exists; $h$ is unique up to adding power-series solutions, and the logarithmic solution with $\coef{u^0}h=\coef{u^1}h=\coef{u^2}h=0$ is $\varpi_1\ell+\rho_3$, $\rho_3\in u^3\bbQ\fps u$. The \emph{vanishing period} $\varpi_1=u+\frac7{10}u^2+O(u^3)$ is normalised by $\varpi_1=u+O(u^2)$.
+\end{enumerate}
+\end{lem}
+
+For instance $f_0=1+\frac2{625}u^3+O(u^4)$, $f_1=u-\frac{19}{60}u^3+O(u^4)$, $f_2=u^2+\frac{37}{30}u^3+O(u^4)$ and $\varpi_1=u+\frac7{10}u^2+\frac{41}{75}u^3+O(u^4)$.
+
+\begin{proof}
+(i) Since $\theta u^m=u^m(\theta+m)$ and $\Dq=(1-u^{-1})\theta$, every operator $\sum_kc_k\Dq^k$ with $c_k\in\bbQ[u,u^{-1}]$ is uniquely of the form $\sum_ju^jP_j(\theta)$. Moving the factors $u^{-1}$ to the left with $\theta u^{-1}=u^{-1}(\theta-1)$, the part of order $u^{-k}$ of $\Dq^k$ is $(-1)^ku^{-k}\theta(\theta-1)\cdots(\theta-k+1)$, and its part of order $u^{1-k}$ is $(-1)^{k-1}u^{1-k}\theta(\theta-1)\cdots(\theta-k+2)\bigl(k\theta-\binom k2\bigr)$ (the word with the factor $\theta$ in position $p+1$ contributes $\theta(\theta-1)\cdots(\theta-k+2)\,(\theta-k+1+p)$, $p=0,\dots,k-1$). In the $u$-form $\PFfour=u\Dq^4-(1-u)\bigl(2\Dq^3+\frac75\Dq^2+\frac25\Dq+\frac{24}{625}\bigr)$, the terms of order $u^{-3}$ come from $u\Dq^4$ and $-2\Dq^3$, and those of order $u^{-2}$ from $u\Dq^4$, $-2(1-u)\Dq^3$ and $-\frac75\Dq^2$. This gives
+\begin{align*}
+P_{-3}(\theta)&=\theta(\theta-1)(\theta-2)(\theta-3)+2\theta(\theta-1)(\theta-2)=\theta(\theta-1)^2(\theta-2),\\
+P_{-2}(\theta)&=-\theta(\theta-1)(\theta-2)(4\theta-6)-2\theta(\theta-1)(\theta-2)-6\theta(\theta-1)^2-\tfrac75\theta(\theta-1)\\
+&=-\theta(\theta-1)\bigl(4\theta^2-6\theta+\tfrac{17}5\bigr).
+\end{align*}
+Every $\Dq^k$ with $k\geq1$ ends with the factor $\theta$, and the term $-\frac{24}{625}(1-u)$ contributes to $P_0$ and $P_1$ only; so $P_j(0)=0$ for $j\leq-1$. The value $P_{-1}'(0)$ is computed in (iii). Now $\PFfour u^n=\sum_jP_j(n)u^{n+j}$, and $P_j(n)=0$ whenever $n\geq0$ and $n+j<0$ (the roots $0,1,2$ of $P_{-3}$, $0,1$ of $P_{-2}$ and $0$ of $P_{-1}$); so $\PFfour$ maps $\bbQ\fps u$ into itself. For $g=\sum b_nu^n$ the coefficient of $u^N$, $N\geq0$, in $\PFfour g$ is $P_{-3}(N+3)b_{N+3}$ plus a combination of $b_{N-1},\dots,b_{N+2}$, and $P_{-3}(N+3)=(N+3)(N+2)^2(N+1)\neq0$. So the equation $\PFfour g=0$ determines $b_{N+3}$ from the lower coefficients, and $b_0,b_1,b_2$ are free; the indicial polynomial $P_{-3}$ has the roots $0,1,1,2$.
+
+(ii) As $\theta\ell=1$, $\theta(u^n\ell)=u^n(n\ell+1)$, so $\theta$ acts on $\operatorname{span}(u^n\ell,u^n)$ as $n+N$ with $N(u^n\ell)=u^n$, $N(u^n)=0$, $N^2=0$. Hence $P(\theta)(u^n\ell)=u^n(P(n)\ell+P'(n))$ for every polynomial $P$, and $\PFfour(u^n\ell)=\ell\,\PFfour u^n+\sum_jP_j'(n)u^{n+j}$. Summing over $n$ (each power of $u$ receives finitely many contributions) gives $\PFfour(g\ell)=\ell\,\PFfour g+r(g)$. For $n\geq3$ all exponents $n+j$ are $\geq0$; so $r(g)\in u^{-3}\bbQ\fps u$, and its part of negative order depends only on $b_0,b_1,b_2$. If $\PFfour g=0$, then $\PFfour(g\ell+h)=r(g)+\PFfour h$ with $\PFfour h\in\bbQ\fps u$; a solution therefore requires $\coef{u^m}r(g)=0$ for $m<0$, and conversely, if these coefficients vanish, $\PFfour h=-r(g)$ is solved by the triangular recursion of (i), with $h_0,h_1,h_2$ free.
+
+(iii) By (ii), $\coef{u^m}r(g)=\sum_jP_j'(m-j)\,b_{m-j}$, the sum over $j$ with $m-j\geq0$. For $m=-3$ this is $P_{-3}'(0)b_0=-2b_0$; for $m=-2$ it is $P_{-3}'(1)b_1+P_{-2}'(0)b_0=\frac{17}5b_0$, since $1$ is a double root of $P_{-3}$; for $m=-1$ it is $P_{-3}'(2)b_2+P_{-2}'(1)b_1+P_{-1}'(0)b_0=2b_2-\frac75b_1+P_{-1}'(0)b_0$. Finally $P_{-1}'(0)=\coef{u^{-1}}r(1)=\coef{u^{-1}}\PFfour(\ell)$. From $\Dq u^{-m}=mu^{-m-1}-mu^{-m}$ one gets $\Dq\ell=1-u^{-1}$, $\Dq^2\ell=u^{-1}-u^{-2}$, $\Dq^3\ell=-u^{-1}+3u^{-2}-2u^{-3}$ and $\Dq^4\ell=u^{-1}-7u^{-2}+12u^{-3}-6u^{-4}$, and the coefficient of $u^{-1}$ in $\PFfour\ell$ is $-7$ (from $u\Dq^4\ell$) $+\,(2+6)$ (from $-2(1-u)\Dq^3\ell$) $-\frac75-\frac75$ (from $-\frac75(1-u)\Dq^2\ell$) $+\frac25$ (from $-\frac25(1-u)\Dq\ell$), that is $-\frac75$. The power-series solutions are $b_0f_0+b_1f_1+b_2f_2$, which gives the matrix; its kernel consists of the $(b_0,b_1,b_2)$ with $b_0=0$ and $2b_2=\frac75b_1$. The remaining statements follow from (ii): two logarithmic solutions with the same $g$ differ by a power-series solution, and the normalisation of $h$ fixes it.
+\end{proof}
+
+\begin{defn}[Conifold frames]
+\label{def:set-frames}
+A \emph{conifold frame} is given by $(\alpha,\beta)\in\bbQ^2$:
+\[
+\varpi_0\coloneqq f_0+\alpha\varpi_1+\beta f_2,\qquad\tc\coloneqq\varpi_1/\varpi_0 .
+\]
+Then $\varpi_0=1+\alpha u+O(u^2)$, so $\varpi_0(0)=1$ and $w_1\coloneqq\coef{u^1}\varpi_0=\alpha$, and $\tc=u+(\frac7{10}-\alpha)u^2+O(u^3)$, so $\tc'(0)=1$, $\Dq\tc(0)=-1$ and $\gamma_t+w_1=\frac7{10}$ for $\gamma_t\coloneqq\coef{u^2}\tc$. The vanishing period is always normalised by $\varpi_1=u+O(u^2)$. In the frame $(\alpha,\beta)=(0,0)$, $\varpi_0=1+O(u^3)$ and $\tc=u+\frac7{10}u^2+\frac{41}{75}u^3+\frac9{20}u^4+O(u^5)$. These are \emph{the conifold frames} of the note. In them the normalisation (N0) of \cref{lem:gau-diag} holds; it uses only $\varpi_0(0)=1$, $\tc'(0)=1$, $\varpi_1=u+O(u^2)$, and $v(u)=u+O(u^2)$ (\cref{def:set-tau}).
+\end{defn}
+
+\begin{defn}[The differential ring of the periods and the conifold expansion]
+\label{def:set-confexp}
+Let
+\[
+\Nring\coloneqq\bbQ[L^{\pm1},\logq,c_0,c_1,c_2,c_3,i_0,i_1,i_2][c_0^{-1},\mathsf W^{-1}],\qquad\mathsf W\coloneqq c_0^2+c_0i_1-c_1i_0,
+\]
+the localisation of a polynomial ring. Its derivation $\Dq$ is fixed on the generators: $\Dq L\coloneqq(L^6-L)/5$, $\Dq\logq\coloneqq1$, $\Dq c_j\coloneqq c_{j+1}$ ($j\leq2$), $\Dq c_3\coloneqq(L^5-1)\bigl(2c_3+\frac75c_2+\frac25c_1+\frac{24}{625}c_0\bigr)$, which is $\PFfour c_0=0$ with $u=L^{-5}$, $\Dq i_j\coloneqq i_{j+1}$ ($j\leq1$), and $\Dq i_2\coloneqq i_3$, the element of $\Nring$ determined by the concomitant relation $\Conc(c_0,I_1)=0$, where $I_1\coloneqq c_0\logq+i_0$, $\Dq^jI_1=\logq\,c_j+jc_{j-1}+i_j$ for $j\leq3$, and $\Conc$ is the concomitant of $\PFfour$ (\cref{def:gau-conc}): the terms with $\logq$ cancel because $\Conc(c_0,c_0)=0$ identically, and the relation is linear in $i_3$ with the coefficient $-uc_0=-L^{-5}c_0$, a unit of $\Nring$. In $\Nring$ put $C_0\coloneqq c_0$, $I_1\coloneqq c_0\logq+i_0$, $T\coloneqq I_1/C_0$ and $C_1\coloneqq\Dq T=\mathsf W/c_0^2$. The \emph{evaluation} $\ev\colon\Nring\to\bbQ\fps q[\logq]$, $c_j\mapsto\Dq^jC_0$, $i_j\mapsto\Dq^j\tilde I_1$, $\logq\mapsto\logq$, $L\mapsto L$, is a homomorphism of differential rings, with $\ev(\mathsf W)=C_0^2C_1$: it respects $\Dq c_3$ because $\PFfour C_0=0$, and $\Dq i_2$ because $\Conc(C_0,I_1)=0$. Indeed $\PFfour C_0=\PFfour I_1=0$ (\cref{lem:set-periods}), so the identity of differential polynomials of \cref{lem:gau-conc}~(i), with \cref{lem:gau-adj}, gives $\Dq\Conc(C_0,I_1)=0$, and $\Conc(C_0,I_1)$ is a constant; its part of order $q^0$ vanishes, because there only the leading coefficient of $\PFfour$ survives and the jets of $C_0$ and $I_1$ reduce to $(1,0,0,0)$ and $(\logq,1,0,0)$.
+
+The \emph{conifold expansion} in the frame $(\alpha,\beta)$ is the ring homomorphism $\Cexp_{\alpha,\beta}\colon\Nring\to\bbQ\lser s$ with
+\[
+c_j\mapsto\Dq^j\varpi_0,\qquad i_j\mapsto\Dq^j\varpi_1-j\,\Dq^{j-1}\varpi_0+\Xi\,\Dq^j\varpi_0,\qquad\logq\mapsto\log(1-u)=-\Xi,\qquad L\mapsto s^{-1},
+\]
+where $\Xi\coloneqq-\log(1-u)=\sum_{n\geq1}u^n/n$; it is well defined because $c_0\mapsto\varpi_0$ and $\mathsf W\mapsto\varpi_0\Dq\varpi_1-\varpi_1\Dq\varpi_0=\varpi_0^2\Dq\tc$ are units ($\varpi_0(0)=1$, $\Dq\tc(0)=-1$). It maps $C_0\mapsto\varpi_0$, $I_1\mapsto\varpi_1$, $T\mapsto\tc$ and $C_1\mapsto\Dq\tc$. No relation beyond $\PFfour$ and the concomitant relation is imposed. Replacing the primitive $-\Xi$ of $1$ by $-\Xi+k$, $k\in\bbQ$, composes $\Cexp_{\alpha,\beta}$ with the automorphism $i_j\mapsto i_j-kc_j$, $\logq\mapsto\logq+k$ of $\Nring$; this automorphism commutes with $\Dq$ and fixes $c_0$, $I_1$, $\mathsf W$ and $L$, hence $C_0$, $C_1$, $\Delta_i^{1/2}=\zeta^{4i}C_0/L$, the rows (\cref{cor:gau-rowsNN}) and the genus-$g$ sum $F_g^{\Nring}$ of \cref{def:mai-Fcf}. That $\Cexp_{\alpha,\beta}$ commutes with $\Dq$ is \cref{lem:gau-confexp}, and that the rows lie in $\Nring\otimes\bbQ(\zeta)$ is \cref{cor:gau-rowsNN}. An element of $\Nring\otimes\bbQ(\zeta)$, or a series with coefficients in it, is \emph{regular at the conifold point} if its conifold expansion lies in $\bbQ\fps u$, coefficientwise. The comparison with the conifold expansion of \cite{CGYZ26} is \cref{rmk:mai-constant}.
+\end{defn}
+
+\begin{defn}[The natural variable]
+\label{def:set-tau}
+Put
+\[
+\tau(u)\coloneqq\frac1{{}_2F_1(1,\frac45;\frac95;u)}=\Bigl(\sum_{n\geq0}\frac{4u^n}{5n+4}\Bigr)^{-1}\in1+u\bbQ\fps u,\qquad v(u)\coloneqq u\,\tau(u)^{-5/4}\in u+u^2\bbQ\fps u,
+\]
+the power being the binomial series, and $\varsigma\coloneqq v^{1/5}=s\,\tau^{-1/4}$, so that $z/\varsigma^4=\tau(u)\zh$. For instance $\tau=1-\frac49u+O(u^2)$ and $v=u+\frac59u^2+O(u^3)$. The letter $\tau$ denotes only this series.
+\end{defn}
+
+\begin{lem}[The canonical coordinates at the conifold point]
+\label{lem:set-canon}
+In $\bbQ(\zeta)\lser s$, with $\Dq=-(1-u)\,\dd/\dd u$ and $L=s^{-1}$, the solutions $y$ of $\Dq y=\zeta^iL$ are the series $y=c-\frac54\zeta^iu^{4/5}/\tau(u)$, $c\in\bbQ(\zeta)$, where $u^{4/5}=s^4$. So in the conifold chart the canonical coordinates of \cref{cor:set-cyclicPF5}~(a), which the note uses only through the equation $\Dq u_i=\zeta^iL$ and which are determined by it up to additive constants, are the series $u_i=u_i^{\mathrm c}-\frac54\zeta^iu^{4/5}/\tau(u)$, with constants $u_i^{\mathrm c}$, their values at $u=0$; and
+\[
+\tau(u)\,\zh=-\frac54\,\frac{\zeta^iz}{u_i-u_i^{\mathrm c}},\qquad u_i-u_i^{\mathrm c}=\zeta^i\bigl(u_0-u_0^{\mathrm c}\bigr).
+\]
+\end{lem}
+
+\begin{proof}
+Termwise, $\int_0^ut^{-1/5}(1-t)^{-1}\dd t=\sum_{n\geq0}\int_0^ut^{n-1/5}\dd t=\sum_n\frac{u^{n+4/5}}{n+4/5}=\frac54u^{4/5}\sum_n\frac{4u^n}{5n+4}=\frac54u^{4/5}/\tau(u)$. So $\frac{\dd}{\dd u}\bigl(\frac54u^{4/5}/\tau\bigr)=u^{-1/5}/(1-u)$, and $\Dq\bigl(-\frac54\zeta^iu^{4/5}/\tau\bigr)=\zeta^iu^{-1/5}=\zeta^iL$. The constants of $\Dq$ on $\bbQ(\zeta)\lser s$ are $\bbQ(\zeta)$, since $\Dq f=0$ means $\dd f/\dd s=0$; this gives the solutions. By \cref{cor:set-cyclicPF5}~(a), $\Dq u_i=\zeta^iL$. Finally $\zh=z/s^4=z/u^{4/5}$ gives $-\frac54\zeta^iz/(u_i-u_i^{\mathrm c})=\tau z/u^{4/5}=\tau\zh$.
+\end{proof}
+
+The constants $u_i^{\mathrm c}$ play no role: the note uses the canonical coordinates only through $\Dq u_i=\zeta^iL$ and through the differences $u_i-u_i^{\mathrm c}$, the integrals from the conifold point, whose orientation is fixed by $\Dq u_i=\zeta^iL$. The exponentials $\re^{u_i/z}$, and with them the constant factors $\re^{u_i^{\mathrm c}/z}$, are stripped from the formal solutions and are never absorbed into a normalisation series (\cref{thm:gau-R0}).
+
+\input{sections/s02_setup_6}

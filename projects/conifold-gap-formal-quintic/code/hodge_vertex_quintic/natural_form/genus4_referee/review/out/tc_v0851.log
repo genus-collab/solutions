@@ -1,0 +1,26 @@
+g4_split_g4_61_id.json: variant id, frame (0, 0): total = gap series: True; vertex row = gap series: False; non-zero rows with edges: 378; failed list of the run: []
+PASS g4_split_g4_61_id.json: total = (1/180000)(u/t_c)^6 mod u^6
+g4_split_g4_61_nat.json: variant nat, frame (0, 0): total = gap series: True; vertex row = gap series: True; non-zero rows with edges: 0; failed list of the run: []
+PASS g4_split_g4_61_nat.json: total = (1/180000)(u/t_c)^6 mod u^6
+PASS g4_split_g4_61_nat.json: vertex graph row = (1/180000)(u/t_c)^6 mod u^6 and no other non-zero row
+g4_split_g4_61_nat_ab1o3_m2o7.json: variant nat, frame (1/3, -2/7): total = gap series: True; vertex row = gap series: True; non-zero rows with edges: 0; failed list of the run: []
+PASS g4_split_g4_61_nat_ab1o3_m2o7.json: total = (1/180000)(u/t_c)^6 mod u^6
+PASS g4_split_g4_61_nat_ab1o3_m2o7.json: vertex graph row = (1/180000)(u/t_c)^6 mod u^6 and no other non-zero row
+g4_split_g4_89_M0.json: variant M0, frame (0, 0): total = gap series: True; vertex row = gap series: False; non-zero rows with edges: 149; failed list of the run: ['REGULARITY (variant M0): every outer graph with edges is O(u^6)', 'VERTEX GRAPH carries the polar part (1/180000) t_c^-6 + 0 + ... + 0']
+PASS g4_split_g4_89_M0.json: total = (1/180000)(u/t_c)^6 mod u^6
+   (control variant M0: vertex row equal to the gap series: False -- expected False)
+g4_split_g4_89_id.json: variant id, frame (0, 0): total = gap series: True; vertex row = gap series: False; non-zero rows with edges: 378; failed list of the run: []
+PASS g4_split_g4_89_id.json: total = (1/180000)(u/t_c)^6 mod u^6
+g4_split_g4_89_nat.json: variant nat, frame (0, 0): total = gap series: True; vertex row = gap series: True; non-zero rows with edges: 0; failed list of the run: []
+PASS g4_split_g4_89_nat.json: total = (1/180000)(u/t_c)^6 mod u^6
+PASS g4_split_g4_89_nat.json: vertex graph row = (1/180000)(u/t_c)^6 mod u^6 and no other non-zero row
+g4_split_g4_89_nat_ab1o3_m2o7.json: variant nat, frame (1/3, -2/7): total = gap series: True; vertex row = gap series: True; non-zero rows with edges: 0; failed list of the run: []
+PASS g4_split_g4_89_nat_ab1o3_m2o7.json: total = (1/180000)(u/t_c)^6 mod u^6
+PASS g4_split_g4_89_nat_ab1o3_m2o7.json: vertex graph row = (1/180000)(u/t_c)^6 mod u^6 and no other non-zero row
+g4_split_g4_89_nat_t5.json: variant nat_t5, frame (0, 0): total = gap series: True; vertex row = gap series: False; non-zero rows with edges: 3; failed list of the run: ['REGULARITY (variant nat_t5): every outer graph with edges is O(u^6)', 'VERTEX GRAPH carries the polar part (1/180000) t_c^-6 + 0 + ... + 0']
+PASS g4_split_g4_89_nat_t5.json: total = (1/180000)(u/t_c)^6 mod u^6
+   (control variant nat_t5: vertex row equal to the gap series: False -- expected False)
+t_c(u), frame (0,0): (1) u^1 + (7/10) u^2 + (41/75) u^3 + (9/20) u^4 + (35839/93750) u^5 + (310981/937500) u^6 + (59941643/205078125) u^7
+part files present: ['g4_61_id_run.json', 'g4_61_nat_ab1o3_m2o7_run.json', 'g4_61_nat_run.json', 'g4_89_M0_run.json', 'g4_89_id_run.json', 'g4_89_nat_ab1o3_m2o7_run.json', 'g4_89_nat_run.json', 'g4_89_nat_t5_run.json']
+tags whose --collect would merge part files of another tag (BUG: prefix filter): {'g4_61_nat': ['g4_61_nat_ab1o3_m2o7_run.json'], 'g4_89_nat': ['g4_89_nat_ab1o3_m2o7_run.json', 'g4_89_nat_t5_run.json']}
+RV_TC ALL CHECKS PASSED

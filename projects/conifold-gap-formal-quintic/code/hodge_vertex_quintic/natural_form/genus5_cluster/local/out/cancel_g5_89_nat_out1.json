@@ -1,0 +1,38 @@
+{
+ "trunc": "g5_89_nat_out1",
+ "maxout": 1,
+ "prime": "89",
+ "pieces_total": 14855,
+ "pieces_by_E": {
+  "0": 4555,
+  "1": 10300
+ },
+ "complete_rows": [
+  {
+   "q": 0,
+   "E": 0,
+   "contributions": 4555,
+   "row_zero": false
+  },
+  {
+   "q": 1,
+   "E": 1,
+   "contributions": 3479,
+   "row_zero": true
+  },
+  {
+   "q": 2,
+   "E": 1,
+   "contributions": 2296,
+   "row_zero": true
+  },
+  {
+   "q": 3,
+   "E": 1,
+   "contributions": 4525,
+   "row_zero": true
+  }
+ ],
+ "largest_cancelling": 4525,
+ "all_edged_rows_zero": true
+}

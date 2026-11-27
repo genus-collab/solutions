@@ -1,0 +1,66 @@
+==============================================================================================================
+rf_flat: K = 8, NU = 10, frame (0, 0) [2026-11-13T19:47:11]
+  (M) model system on monomials, z^-n, n <= 14: mismatches 0
+==============================================================================================================
+rf_flat: K = 8, NU = 10, frame (0, 0) [2026-11-13T19:47:20]
+  (M) model system on monomials, z^-n, n <= 14: mismatches 0
+  v(u) own = ur_gauge v: True;  t_c = [Fraction(0, 1), Fraction(1, 1), Fraction(7, 10), Fraction(41, 75)] ...; varpi_0 = [Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(2, 625)] ...
+  stored P_11(0, z) = 1 z^0, -43397/807975000 z^5
+  --- canonical gauge (K = 8, u < 10)
+  (Sp) symplectic defects (first 3): []
+  (G) positive powers: 160 complete coefficients, 0 non-zero (first []); z^0 part = -e_1: True (u < 8)
+  (T) T_P = t_c through u^7: True;  T_P = [Fraction(0, 1), Fraction(1, 1), Fraction(7, 10), Fraction(41, 75)] ...
+  (LT) [k, complete u-orders <= , V^(k)(q_T) = (T_P if k = 1 else 0), u-valuation]: [(1, 7, True, 1), (2, 7, True, None), (3, 6, True, None), (4, 5, True, None), (5, 4, True, None), (6, 3, True, 5), (7, 3, True, None), (8, 2, True, None)]
+  (D) d (P_0)_00 = 1: True;  d = tau^(1/4) varpi_0: True;  s = d T_P - v: valuation 2, s = [Fraction(0, 1), Fraction(0, 1), Fraction(1, 30), Fraction(127, 3150)] ...
+  (E') edge divisibility defects []; V^(k)-contractions: 550 complete coefficients, 0 non-zero (first []); control without (-1)^n: 28 of the (k, n, b) slots non-zero
+  --- stored gauge (K = 8, u < 10)
+  (Sp) symplectic defects (first 3): []
+  (G) positive powers: 160 complete coefficients, 13 non-zero (first [(1, 2, 4), (1, 2, 5), (1, 2, 6)]); z^0 part = -e_1: False (u < 8)
+  (T) T_P = t_c through u^7: False;  T_P = [Fraction(0, 1), Fraction(1, 1), Fraction(7, 10), Fraction(41, 75)] ...
+  (LT) [k, complete u-orders <= , V^(k)(q_T) = (T_P if k = 1 else 0), u-valuation]: [(1, 7, True, 1), (2, 7, True, None), (3, 6, True, None), (4, 5, True, None), (5, 4, True, None), (6, 3, False, 1), (7, 3, True, None), (8, 2, True, None)]
+  (D) d (P_0)_00 = 1: True;  d = tau^(1/4) varpi_0: True;  s = d T_P - v: valuation 2, s = [Fraction(0, 1), Fraction(0, 1), Fraction(1, 30), Fraction(127, 3150)] ...
+  (E') edge divisibility defects []; V^(k)-contractions: 550 complete coefficients, 17 non-zero (first [(1, 0, 1, 4), (1, 1, 0, 3), (1, 2, 4, 2), (1, 3, 3, 1)]); control without (-1)^n: 28 of the (k, n, b) slots non-zero
+  time 4 s
+RF_FLAT: canonical ALL PASS; stored-normalisation control fails as expected: True
+==============================================================================================================
+rf_flat: K = 16, NU = 16, frame (0, 0) [2026-11-13T19:47:37]
+  (M) model system on monomials, z^-n, n <= 22: mismatches 0
+  v(u) own = ur_gauge v: True;  t_c = [Fraction(0, 1), Fraction(1, 1), Fraction(7, 10), Fraction(41, 75)] ...; varpi_0 = [Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(2, 625)] ...
+  stored P_11(0, z) = 1 z^0, -43397/807975000 z^5, -765368951400317/1305647201250000000 z^10, -413495284380334910165431657/4383536794477928718750000000000 z^15
+  --- canonical gauge (K = 16, u < 16)
+  (Sp) symplectic defects (first 3): []
+  (G) positive powers: 575 complete coefficients, 0 non-zero (first []); z^0 part = -e_1: True (u < 14)
+  (T) T_P = t_c through u^14: True;  T_P = [Fraction(0, 1), Fraction(1, 1), Fraction(7, 10), Fraction(41, 75)] ...
+  (LT) [k, complete u-orders <= , V^(k)(q_T) = (T_P if k = 1 else 0), u-valuation]: [(1, 14, True, 1), (2, 13, True, None), (3, 12, True, None), (4, 11, True, None), (5, 11, True, None), (6, 10, True, 11), (7, 9, True, None), (8, 8, True, None)]
+  (D) d (P_0)_00 = 1: True;  d = tau^(1/4) varpi_0: True;  s = d T_P - v: valuation 2, s = [Fraction(0, 1), Fraction(0, 1), Fraction(1, 30), Fraction(127, 3150)] ...
+  (E') edge divisibility defects []; V^(k)-contractions: 2985 complete coefficients, 0 non-zero (first []); control without (-1)^n: 92 of the (k, n, b) slots non-zero
+  --- stored gauge (K = 16, u < 16)
+  (Sp) symplectic defects (first 3): [(10, 0, 3), (10, 1, 2), (10, 2, 1)]
+  (G) positive powers: 575 complete coefficients, 77 non-zero (first [(1, 2, 4), (1, 2, 5), (1, 2, 6)]); z^0 part = -e_1: False (u < 14)
+  (T) T_P = t_c through u^14: False;  T_P = [Fraction(0, 1), Fraction(1, 1), Fraction(7, 10), Fraction(41, 75)] ...
+  (LT) [k, complete u-orders <= , V^(k)(q_T) = (T_P if k = 1 else 0), u-valuation]: [(1, 14, False, 1), (2, 13, True, None), (3, 12, True, None), (4, 11, True, None), (5, 11, True, None), (6, 10, False, 1), (7, 9, True, None), (8, 8, True, None)]
+  (D) d (P_0)_00 = 1: True;  d = tau^(1/4) varpi_0: True;  s = d T_P - v: valuation 2, s = [Fraction(0, 1), Fraction(0, 1), Fraction(1, 30), Fraction(127, 3150)] ...
+  (E') edge divisibility defects [10]; V^(k)-contractions: 2985 complete coefficients, 92 non-zero (first [(1, 0, 1, 4), (1, 1, 0, 3), (1, 2, 4, 2), (1, 3, 3, 1)]); control without (-1)^n: 92 of the (k, n, b) slots non-zero
+  time 25 s
+RF_FLAT: canonical ALL PASS; stored-normalisation control fails as expected: True
+==============================================================================================================
+rf_flat: K = 16, NU = 16, frame (1/3, -2/7) [2026-11-13T19:49:37]
+  (M) model system on monomials, z^-n, n <= 22: mismatches 0
+  v(u) own = ur_gauge v: True;  t_c = [Fraction(0, 1), Fraction(1, 1), Fraction(11, 30), Fraction(751, 1575)] ...; varpi_0 = [Fraction(1, 1), Fraction(1, 3), Fraction(-11, 210), Fraction(-6574, 39375)] ...
+  stored P_11(0, z) = 1 z^0, -43397/807975000 z^5, -765368951400317/1305647201250000000 z^10, -413495284380334910165431657/4383536794477928718750000000000 z^15
+  --- canonical gauge (K = 16, u < 16)
+  (Sp) symplectic defects (first 3): []
+  (G) positive powers: 575 complete coefficients, 0 non-zero (first []); z^0 part = -e_1: True (u < 14)
+  (T) T_P = t_c through u^14: True;  T_P = [Fraction(0, 1), Fraction(1, 1), Fraction(11, 30), Fraction(751, 1575)] ...
+  (LT) [k, complete u-orders <= , V^(k)(q_T) = (T_P if k = 1 else 0), u-valuation]: [(1, 14, True, 1), (2, 13, True, None), (3, 12, True, None), (4, 11, True, None), (5, 11, True, None), (6, 10, True, 11), (7, 9, True, None), (8, 8, True, None)]
+  (D) d (P_0)_00 = 1: True;  d = tau^(1/4) varpi_0: True;  s = d T_P - v: valuation 2, s = [Fraction(0, 1), Fraction(0, 1), Fraction(1, 30), Fraction(127, 3150)] ...
+  (E') edge divisibility defects []; V^(k)-contractions: 2985 complete coefficients, 0 non-zero (first []); control without (-1)^n: 92 of the (k, n, b) slots non-zero
+  --- stored gauge (K = 16, u < 16)
+  (Sp) symplectic defects (first 3): [(10, 0, 3), (10, 1, 2), (10, 2, 1)]
+  (G) positive powers: 575 complete coefficients, 77 non-zero (first [(1, 2, 4), (1, 2, 5), (1, 2, 6)]); z^0 part = -e_1: False (u < 14)
+  (T) T_P = t_c through u^14: False;  T_P = [Fraction(0, 1), Fraction(1, 1), Fraction(11, 30), Fraction(751, 1575)] ...
+  (LT) [k, complete u-orders <= , V^(k)(q_T) = (T_P if k = 1 else 0), u-valuation]: [(1, 14, False, 1), (2, 13, True, None), (3, 12, True, None), (4, 11, True, None), (5, 11, True, None), (6, 10, False, 1), (7, 9, True, None), (8, 8, True, None)]
+  (D) d (P_0)_00 = 1: True;  d = tau^(1/4) varpi_0: True;  s = d T_P - v: valuation 2, s = [Fraction(0, 1), Fraction(0, 1), Fraction(1, 30), Fraction(127, 3150)] ...
+  (E') edge divisibility defects [10]; V^(k)-contractions: 2985 complete coefficients, 92 non-zero (first [(1, 0, 1, 4), (1, 1, 0, 3), (1, 2, 4, 2), (1, 3, 3, 1)]); control without (-1)^n: 92 of the (k, n, b) slots non-zero
+  time 27 s
+RF_FLAT: canonical ALL PASS; stored-normalisation control fails as expected: True

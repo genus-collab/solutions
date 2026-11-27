@@ -1,0 +1,11 @@
+pb_res.py 10   (exact over Q; every coefficient u^1..u^10, all powers of z)
+  V built: 18 non-zero coefficients, 0.0 s; positive or zero z-powers present: False
+  V at u^1: {-1: '-1'};  [u^2 z^-1] V = -7/10 (phase -1/2 plus Stirling b_1 = 1/12 gives -1/5: -7/10 = -gamma)
+  frame (0,0): V = C0 (Y^C_Q)_0 on all 18 keys (u^1..u^10): PASS
+    [z^-1] V = -g (vanishing period u + (7/10)u^2 + ...) for u^1..u^10: PASS
+  frame (1/3,-2/7): V = C0 (Y^C_Q)_0 on all 18 keys (u^1..u^10): PASS
+    [z^-1] V = -g (vanishing period u + (7/10)u^2 + ...) for u^1..u^10: PASS
+  control [no Stirling terms in at]: first mismatch (2, -1) (predicted u^2, z^-1): PASS (fails as it must)
+  control [vanishing period with gamma = 1/2]: first mismatch (2, -1) (predicted u^2, z^-1): PASS (fails as it must)
+total 0.1 s
+ALL CHECKS PASSED

@@ -1,0 +1,38 @@
+Tables(89, g=5, K=8, nat) built in 1.0 s; all assertions passed
+
+calibration on the 17 spot graphs (seconds per unit of proxy):
+     t   E   V         Ndec    Nsub 5^(E-V+1)        proxy      ind s s/Mproxy
+     1   1   2           22       2        1           66        0.8 12121.212
+     3   1   1           78       2        5          858        4.5 5244.755
+     5   2   3           96       4        1          480        0.0    0.000
+    25   3   2          168       8       25        33768        0.8   23.691
+    28   3   2          220       8       25        44220        1.7   38.444
+   118   4   2         1287      16      125      2575287       12.7    4.931
+   119   4   1        12870      16      625    128712870      348.4    2.707
+   383   5   6          672      32        1        22176        0.9   40.584
+   444   6   4          105      64      125       840105        3.8    4.523
+  1234   7   5          252     128      125      4032252       19.1    4.737
+  2318   8   6           84     255      125      2677584       13.8    5.154
+  2539   8   6           84     255      125      2677584       18.1    6.760
+  3638  10   6           21     968     3125     63525021      186.3    2.933
+  3847  10   6           25     968     3125     75625025      348.9    4.614
+  4356  11   7            5    1816     3125     28375005       72.0    2.537
+  4484  12   8            1    3302     3125     10318751       31.7    3.072
+  4552  12   8            1    3302     3125     10318751       45.6    4.419
+
+s per 1e6 proxy: min 0.000 (t=5), median 4.737, max 12121.212 (t=1)
+conservative rate used for planning: 12121.212 s per 1e6 proxy
+
+how the proxy ranks the whole list (top 12 by proxy):
+   t= 149 E= 5 V=1 proxy=1.945e+09  est_dp=39 s  predicted ind 23573569 s
+   t= 388 E= 6 V=2 proxy=1.411e+09  est_dp=141 s  predicted ind 17105540 s
+   t= 390 E= 6 V=2 proxy=1.411e+09  est_dp=147 s  predicted ind 17105540 s
+   t= 394 E= 6 V=2 proxy=1.411e+09  est_dp=148 s  predicted ind 17105540 s
+   t= 389 E= 6 V=2 proxy=1.386e+09  est_dp=106 s  predicted ind 16800084 s
+   t= 391 E= 6 V=2 proxy=1.386e+09  est_dp=107 s  predicted ind 16800084 s
+   t= 395 E= 6 V=2 proxy=1.386e+09  est_dp=107 s  predicted ind 16800084 s
+   t= 392 E= 6 V=2 proxy=1.287e+09  est_dp=130 s  predicted ind 15600078 s
+   t= 396 E= 6 V=2 proxy=1.287e+09  est_dp=174 s  predicted ind 15600078 s
+   t= 393 E= 6 V=2 proxy=1.001e+09  est_dp=84 s  predicted ind 12133394 s
+   t= 397 E= 6 V=2 proxy=1.001e+09  est_dp=84 s  predicted ind 12133394 s
+   t= 880 E= 7 V=3 proxy=8.820e+08  est_dp=85 s  predicted ind 10690936 s

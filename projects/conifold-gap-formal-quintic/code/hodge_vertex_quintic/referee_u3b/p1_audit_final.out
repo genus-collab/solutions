@@ -1,0 +1,498 @@
+============================== circ_61
+  shape: {'A1': (17, [6]), 'A2': (17, [6]), 'A3': (42, [6])}
+  c1_n_edge: 41
+  c1_bad: []
+  c1_ok: True
+  c1_lowest_order_by_E: {1: ['4'], 2: ['4'], 3: ['None'], 4: ['None'], 5: ['None'], 6: ['None']}
+  c1_u4_nonzero: [2, 3, 5, 6, 7, 8, 17]
+  c1_u5_nonzero: [2, 3, 5, 6, 7, 8, 17]
+  c1_below_E_nonzero: []
+  c2_ok: True
+  c2_total_rat: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-4320914306/115544591', '6679624624/7004751']
+  c2_vertex_eq_total_u0_3: [True, True, True, True]
+  c3_tc_rat: ['1', '7/10', '41/75', '9/20', '35839/93750', '310981/937500', '59941643/205078125']
+  c3_V_rat: ['1/25200', '0', '0', '0', '1713824083/82416438', '-4690565413/70473485']
+  c3_ok: True
+  c3_matches_stored_vertex_tc: True
+  c3_total_tc_rat: ['1/25200', '0', '0', '0', '4666586098/137406391', '-2013036691/181411270']
+  c3_total_tc_matches_state: True
+  c4_A1_nonzero_orders: {'E1': {2: [2, 3, 4, 5], 5: [2, 3, 4, 5]}, 'E2': {3: [3, 4, 5], 6: [3, 4, 5], 7: [3, 4, 5], 8: [3, 4, 5], 17: [3, 4, 5]}, 'E3': {4: [], 9: [5], 10: [5], 11: [5], 12: [5], 18: [], 19: [5], 20: [], 32: []}}
+  c4_A2_nonzero_orders: {'E1': {2: [3, 4, 5], 5: [3, 4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [], 9: [], 10: [], 11: [], 12: [], 18: [], 19: [], 20: [], 32: []}}
+  c4_A3_nonzero_orders: {'E1': {2: [4, 5], 5: [4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [], 9: [], 10: [], 11: [], 12: [], 18: [], 19: [], 20: [], 32: []}}
+  c4_A1_ok: True
+  c4_A1_not_regular: [(2, 2), (2, 3), (5, 2), (5, 3), (3, 3), (6, 3), (7, 3), (8, 3), (17, 3)]
+  c4_A2_ok: True
+  c4_A2_not_regular: [(2, 3), (5, 3)]
+  x_vertex_A1_A2_A3_u01: [True, True]
+  x_vertex_A2_A3_u2: True
+  x_3edge_u4_A2_eq_A3: True
+  x_3edge_u4_nonzero: []
+  x_2edge_u4_A2_ne_A3: [3, 6, 7, 8, 17]
+  x_1edge_u3_A2_ne_A3: [2, 5]
+  c5_delta_circulant: True
+  c5_delta_nonzero_coords: ['c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1', 'c6_2']
+  c5_delta_orders: [4, 5, 6]
+  c5_delta_rat: {'c4_1': '-4425318992/74549293', 'c4_2': '-5861968239/143527145', 'c5_0': '1', 'c5_1': '2', 'c5_2': '-1', 'c6_1': '3', 'c6_2': '1'}
+  c5_N1_conditions_nonzero: []
+  c5_n_conditions: 18
+  c5_n2_circulant: True
+  c5_n2_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1', 'c6_2']
+  c5_n2_nonzero75: 75
+  c5_n3_circulant: True
+  c5_n3_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']
+  c5_n3_nonzero75: 50
+  c5_Q_at_n1: {3: 0, 6: 0, 7: 0, 8: 0, 17: 0}
+  n2_rank_aug: (7, 7)
+  n2_rank_stored: 7
+  n2_rank_gradQ_only: 5
+  n2_solves: [True, True, True, True, True, True, True]
+  n2_rhs_nonzero: [True, True, True, True, True, True, True]
+  n3_rank_aug: (2, 2)
+  n3_solves: [True, True]
+  n3_rhs_nonzero: [True, True]
+  resp_1edge_u2_A2-A1_eq_J.n2: [True, True]
+  resp_2edge_u3_A2-A1_eq_gradQ.n2: [True, True, True, True, True]
+  resp_1edge_u3_A3-A2_eq_J.n3: [True, True]
+  resp_1edge_u1_J.n1_eq_-A_M0: [True, True]
+  failed_stored: []
+============================== circ_89
+  shape: {'A1': (17, [6]), 'A2': (17, [6]), 'A3': (42, [6])}
+  c1_n_edge: 41
+  c1_bad: []
+  c1_ok: True
+  c1_lowest_order_by_E: {1: ['4'], 2: ['4'], 3: ['None'], 4: ['None'], 5: ['None'], 6: ['None']}
+  c1_u4_nonzero: [2, 3, 5, 6, 7, 8, 17]
+  c1_u5_nonzero: [2, 3, 5, 6, 7, 8, 17]
+  c1_below_E_nonzero: []
+  c2_ok: True
+  c2_total_rat: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-29663/9072000000', 'None']
+  c2_vertex_eq_total_u0_3: [True, True, True, True]
+  c3_tc_rat: ['1', '7/10', '41/75', '9/20', '35839/93750', '310981/937500', '59941643/205078125']
+  c3_V_rat: ['1/25200', '0', '0', '0', 'None', 'None']
+  c3_ok: True
+  c3_matches_stored_vertex_tc: True
+  c3_total_tc_rat: ['1/25200', '0', '0', '0', '-57737/8400000000', 'None']
+  c3_total_tc_matches_state: True
+  c4_A1_nonzero_orders: {'E1': {2: [2, 3, 4, 5], 5: [2, 3, 4, 5]}, 'E2': {3: [3, 4, 5], 6: [3, 4, 5], 7: [3, 4, 5], 8: [3, 4, 5], 17: [3, 4, 5]}, 'E3': {4: [], 9: [5], 10: [5], 11: [5], 12: [5], 18: [], 19: [5], 20: [], 32: []}}
+  c4_A2_nonzero_orders: {'E1': {2: [3, 4, 5], 5: [3, 4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [], 9: [], 10: [], 11: [], 12: [], 18: [], 19: [], 20: [], 32: []}}
+  c4_A3_nonzero_orders: {'E1': {2: [4, 5], 5: [4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [], 9: [], 10: [], 11: [], 12: [], 18: [], 19: [], 20: [], 32: []}}
+  c4_A1_ok: True
+  c4_A1_not_regular: [(2, 2), (2, 3), (5, 2), (5, 3), (3, 3), (6, 3), (7, 3), (8, 3), (17, 3)]
+  c4_A2_ok: True
+  c4_A2_not_regular: [(2, 3), (5, 3)]
+  x_vertex_A1_A2_A3_u01: [True, True]
+  x_vertex_A2_A3_u2: True
+  x_3edge_u4_A2_eq_A3: True
+  x_3edge_u4_nonzero: []
+  x_2edge_u4_A2_ne_A3: [3, 6, 7, 8, 17]
+  x_1edge_u3_A2_ne_A3: [2, 5]
+  c5_delta_circulant: True
+  c5_delta_nonzero_coords: ['c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1', 'c6_2']
+  c5_delta_orders: [4, 5, 6]
+  c5_delta_rat: {'c4_1': 'None', 'c4_2': 'None', 'c5_0': '1', 'c5_1': '2', 'c5_2': '-1', 'c6_1': '3', 'c6_2': '1'}
+  c5_N1_conditions_nonzero: []
+  c5_n_conditions: 18
+  c5_n2_circulant: True
+  c5_n2_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1', 'c6_2']
+  c5_n2_nonzero75: 75
+  c5_n3_circulant: True
+  c5_n3_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']
+  c5_n3_nonzero75: 50
+  c5_Q_at_n1: {3: 0, 6: 0, 7: 0, 8: 0, 17: 0}
+  n2_rank_aug: (7, 7)
+  n2_rank_stored: 7
+  n2_rank_gradQ_only: 5
+  n2_solves: [True, True, True, True, True, True, True]
+  n2_rhs_nonzero: [True, True, True, True, True, True, True]
+  n3_rank_aug: (2, 2)
+  n3_solves: [True, True]
+  n3_rhs_nonzero: [True, True]
+  resp_1edge_u2_A2-A1_eq_J.n2: [True, True]
+  resp_2edge_u3_A2-A1_eq_gradQ.n2: [True, True, True, True, True]
+  resp_1edge_u3_A3-A2_eq_J.n3: [True, True]
+  resp_1edge_u1_J.n1_eq_-A_M0: [True, True]
+  failed_stored: []
+============================== circpi_61
+  shape: {'A1': (17, [6]), 'A2': (17, [6]), 'A3': (42, [6])}
+  c1_n_edge: 41
+  c1_bad: []
+  c1_ok: True
+  c1_lowest_order_by_E: {1: ['4'], 2: ['4'], 3: ['4', '5', 'None'], 4: ['4', '5', 'None'], 5: ['5', 'None'], 6: ['None']}
+  c1_u4_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 17]
+  c1_u5_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 27, 28]
+  c1_below_E_nonzero: []
+  c2_ok: True
+  c2_total_rat: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-4320914306/115544591', '6679624624/7004751']
+  c2_vertex_eq_total_u0_3: [True, True, True, True]
+  c3_tc_rat: ['1', '7/10', '41/75', '9/20', '35839/93750', '310981/937500', '59941643/205078125']
+  c3_V_rat: ['1/25200', '0', '0', '0', '130064601/90194765', '5717913637/31786802']
+  c3_ok: True
+  c3_matches_stored_vertex_tc: True
+  c3_total_tc_rat: ['1/25200', '0', '0', '0', '4666586098/137406391', '-2013036691/181411270']
+  c3_total_tc_matches_state: True
+  c4_A1_nonzero_orders: {'E1': {2: [2, 3, 4, 5], 5: [2, 3, 4, 5]}, 'E2': {3: [3, 4, 5], 6: [3, 4, 5], 7: [3, 4, 5], 8: [3, 4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A2_nonzero_orders: {'E1': {2: [3, 4, 5], 5: [3, 4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A3_nonzero_orders: {'E1': {2: [4, 5], 5: [4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A1_ok: True
+  c4_A1_not_regular: [(2, 2), (2, 3), (5, 2), (5, 3), (3, 3), (6, 3), (7, 3), (8, 3)]
+  c4_A2_ok: True
+  c4_A2_not_regular: [(2, 3), (5, 3)]
+  x_vertex_A1_A2_A3_u01: [True, True]
+  x_vertex_A2_A3_u2: True
+  x_3edge_u4_A2_eq_A3: True
+  x_3edge_u4_nonzero: [4, 9, 10, 11, 12]
+  x_2edge_u4_A2_ne_A3: [3, 6, 7, 8]
+  x_1edge_u3_A2_ne_A3: [2, 5]
+  c5_delta_circulant: True
+  c5_delta_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_1', 'c5_2', 'c6_1']
+  c5_delta_orders: [1, 2, 3, 4, 5, 6]
+  c5_delta_rat: {'c1_0': '1', 'c1_1': '2', 'c1_2': '6354079022/85550509', 'c2_1': '3704536160/11542331', 'c2_2': '-9143349531/139742792', 'c3_0': '3218953943/148664819', 'c3_1': '5686051949/2198267', 'c3_2': '6968676489/60952742', 'c4_1': '-4246106779/151319786', 'c4_2': '4806494083/28775851', 'c5_1': '-7098402115/1526571', 'c5_2': '-1475335008/207410207', 'c6_1': '-4105792649/25356721'}
+  c5_N1_conditions_nonzero: []
+  c5_n_conditions: 18
+  c5_n2_circulant: True
+  c5_n2_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1']
+  c5_n2_nonzero75: 70
+  c5_n3_circulant: True
+  c5_n3_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']
+  c5_n3_nonzero75: 50
+  c5_Q_at_n1: {3: 0, 6: 0, 7: 0, 8: 0, 17: 0}
+  n2_rank_aug: (6, 6)
+  n2_rank_stored: 6
+  n2_rank_gradQ_only: 4
+  n2_solves: [True, True, True, True, True, True, True]
+  n2_rhs_nonzero: [True, True, True, True, True, True, False]
+  n3_rank_aug: (2, 2)
+  n3_solves: [True, True]
+  n3_rhs_nonzero: [True, True]
+  resp_1edge_u2_A2-A1_eq_J.n2: [True, True]
+  resp_2edge_u3_A2-A1_eq_gradQ.n2: [True, True, True, True, True]
+  resp_1edge_u3_A3-A2_eq_J.n3: [True, True]
+  resp_1edge_u1_J.n1_eq_-A_M0: [True, True]
+  failed_stored: []
+============================== circpi_89
+  shape: {'A1': (17, [6]), 'A2': (17, [6]), 'A3': (42, [6])}
+  c1_n_edge: 41
+  c1_bad: []
+  c1_ok: True
+  c1_lowest_order_by_E: {1: ['4'], 2: ['4'], 3: ['4', '5', 'None'], 4: ['4', '5', 'None'], 5: ['5', 'None'], 6: ['None']}
+  c1_u4_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 17]
+  c1_u5_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 27, 28]
+  c1_below_E_nonzero: []
+  c2_ok: True
+  c2_total_rat: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-29663/9072000000', 'None']
+  c2_vertex_eq_total_u0_3: [True, True, True, True]
+  c3_tc_rat: ['1', '7/10', '41/75', '9/20', '35839/93750', '310981/937500', '59941643/205078125']
+  c3_V_rat: ['1/25200', '0', '0', '0', 'None', 'None']
+  c3_ok: True
+  c3_matches_stored_vertex_tc: True
+  c3_total_tc_rat: ['1/25200', '0', '0', '0', '-57737/8400000000', 'None']
+  c3_total_tc_matches_state: True
+  c4_A1_nonzero_orders: {'E1': {2: [2, 3, 4, 5], 5: [2, 3, 4, 5]}, 'E2': {3: [3, 4, 5], 6: [3, 4, 5], 7: [3, 4, 5], 8: [3, 4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A2_nonzero_orders: {'E1': {2: [3, 4, 5], 5: [3, 4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A3_nonzero_orders: {'E1': {2: [4, 5], 5: [4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A1_ok: True
+  c4_A1_not_regular: [(2, 2), (2, 3), (5, 2), (5, 3), (3, 3), (6, 3), (7, 3), (8, 3)]
+  c4_A2_ok: True
+  c4_A2_not_regular: [(2, 3), (5, 3)]
+  x_vertex_A1_A2_A3_u01: [True, True]
+  x_vertex_A2_A3_u2: True
+  x_3edge_u4_A2_eq_A3: True
+  x_3edge_u4_nonzero: [4, 9, 10, 11, 12]
+  x_2edge_u4_A2_ne_A3: [3, 6, 7, 8]
+  x_1edge_u3_A2_ne_A3: [2, 5]
+  c5_delta_circulant: True
+  c5_delta_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_1', 'c5_2', 'c6_1']
+  c5_delta_orders: [1, 2, 3, 4, 5, 6]
+  c5_delta_rat: {'c1_0': '1', 'c1_1': '2', 'c1_2': 'None', 'c2_1': 'None', 'c2_2': 'None', 'c3_0': 'None', 'c3_1': 'None', 'c3_2': 'None', 'c4_1': 'None', 'c4_2': 'None', 'c5_1': 'None', 'c5_2': 'None', 'c6_1': 'None'}
+  c5_N1_conditions_nonzero: []
+  c5_n_conditions: 18
+  c5_n2_circulant: True
+  c5_n2_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1']
+  c5_n2_nonzero75: 70
+  c5_n3_circulant: True
+  c5_n3_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']
+  c5_n3_nonzero75: 50
+  c5_Q_at_n1: {3: 0, 6: 0, 7: 0, 8: 0, 17: 0}
+  n2_rank_aug: (6, 6)
+  n2_rank_stored: 6
+  n2_rank_gradQ_only: 4
+  n2_solves: [True, True, True, True, True, True, True]
+  n2_rhs_nonzero: [True, True, True, True, True, True, False]
+  n3_rank_aug: (2, 2)
+  n3_solves: [True, True]
+  n3_rhs_nonzero: [True, True]
+  resp_1edge_u2_A2-A1_eq_J.n2: [True, True]
+  resp_2edge_u3_A2-A1_eq_gradQ.n2: [True, True, True, True, True]
+  resp_1edge_u3_A3-A2_eq_J.n3: [True, True]
+  resp_1edge_u1_J.n1_eq_-A_M0: [True, True]
+  failed_stored: []
+============================== circb_61
+  shape: {'A1': (17, [6]), 'A2': (17, [6]), 'A3': (42, [6])}
+  c1_n_edge: 41
+  c1_bad: []
+  c1_ok: True
+  c1_lowest_order_by_E: {1: ['4'], 2: ['4'], 3: ['4', '5', 'None'], 4: ['4', '5', 'None'], 5: ['5', 'None'], 6: ['None']}
+  c1_u4_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 21]
+  c1_u5_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 20, 21, 22, 24, 27, 28]
+  c1_below_E_nonzero: []
+  c2_ok: True
+  c2_total_rat: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-4320914306/115544591', '6679624624/7004751']
+  c2_vertex_eq_total_u0_3: [True, True, True, True]
+  c3_tc_rat: ['1', '7/10', '41/75', '9/20', '35839/93750', '310981/937500', '59941643/205078125']
+  c3_V_rat: ['1/25200', '0', '0', '0', '7876856371/143919161', '1106498625/207941537']
+  c3_ok: True
+  c3_matches_stored_vertex_tc: True
+  c3_total_tc_rat: ['1/25200', '0', '0', '0', '4666586098/137406391', '-2013036691/181411270']
+  c3_total_tc_matches_state: True
+  c4_A1_nonzero_orders: {'E1': {2: [2, 3, 4, 5], 5: [2, 3, 4, 5]}, 'E2': {3: [3, 4, 5], 6: [3, 4, 5], 7: [3, 4, 5], 8: [3, 4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [4, 5], 19: [5], 20: [5], 32: []}}
+  c4_A2_nonzero_orders: {'E1': {2: [3, 4, 5], 5: [3, 4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [5], 12: [4, 5], 18: [4, 5], 19: [], 20: [5], 32: []}}
+  c4_A3_nonzero_orders: {'E1': {2: [4, 5], 5: [4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [5], 12: [4, 5], 18: [4, 5], 19: [], 20: [5], 32: []}}
+  c4_A1_ok: True
+  c4_A1_not_regular: [(2, 2), (2, 3), (5, 2), (5, 3), (3, 3), (6, 3), (7, 3), (8, 3)]
+  c4_A2_ok: True
+  c4_A2_not_regular: [(2, 3), (5, 3)]
+  x_vertex_A1_A2_A3_u01: [True, True]
+  x_vertex_A2_A3_u2: True
+  x_3edge_u4_A2_eq_A3: True
+  x_3edge_u4_nonzero: [4, 9, 10, 12, 18]
+  x_2edge_u4_A2_ne_A3: [3, 6, 7, 8]
+  x_1edge_u3_A2_ne_A3: [2, 5]
+  c5_delta_circulant: True
+  c5_delta_nonzero_coords: ['c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2']
+  c5_delta_orders: [1, 2, 3, 4, 5]
+  c5_delta_rat: {'c1_1': '1', 'c1_2': '39432792/30970841', 'c2_1': '-6427067275/101845652', 'c2_2': '-3785154157/127012294', 'c3_0': '2515729475/41047442', 'c3_1': '1869100738/45566203', 'c3_2': '-3701657256/109827737', 'c4_1': '2498241629/149101400', 'c4_2': '-5407935503/91432544', 'c5_0': '9629156475/72085741', 'c5_1': '-4609225412/88502387', 'c5_2': '2474936871/61850867'}
+  c5_N1_conditions_nonzero: []
+  c5_n_conditions: 18
+  c5_n2_circulant: True
+  c5_n2_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1']
+  c5_n2_nonzero75: 70
+  c5_n3_circulant: True
+  c5_n3_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']
+  c5_n3_nonzero75: 50
+  c5_Q_at_n1: {3: 0, 6: 0, 7: 0, 8: 0, 17: 0}
+  n2_rank_aug: (6, 6)
+  n2_rank_stored: 6
+  n2_rank_gradQ_only: 4
+  n2_solves: [True, True, True, True, True, True, True]
+  n2_rhs_nonzero: [True, True, True, True, True, True, False]
+  n3_rank_aug: (2, 2)
+  n3_solves: [True, True]
+  n3_rhs_nonzero: [True, True]
+  resp_1edge_u2_A2-A1_eq_J.n2: [True, True]
+  resp_2edge_u3_A2-A1_eq_gradQ.n2: [True, True, True, True, True]
+  resp_1edge_u3_A3-A2_eq_J.n3: [True, True]
+  resp_1edge_u1_J.n1_eq_-A_M0: [True, True]
+  failed_stored: []
+============================== circb_89
+  shape: {'A1': (17, [6]), 'A2': (17, [6]), 'A3': (42, [6])}
+  c1_n_edge: 41
+  c1_bad: []
+  c1_ok: True
+  c1_lowest_order_by_E: {1: ['4'], 2: ['4'], 3: ['4', '5', 'None'], 4: ['4', '5', 'None'], 5: ['5', 'None'], 6: ['None']}
+  c1_u4_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 21]
+  c1_u5_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 20, 21, 22, 24, 27, 28]
+  c1_below_E_nonzero: []
+  c2_ok: True
+  c2_total_rat: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-29663/9072000000', 'None']
+  c2_vertex_eq_total_u0_3: [True, True, True, True]
+  c3_tc_rat: ['1', '7/10', '41/75', '9/20', '35839/93750', '310981/937500', '59941643/205078125']
+  c3_V_rat: ['1/25200', '0', '0', '0', 'None', 'None']
+  c3_ok: True
+  c3_matches_stored_vertex_tc: True
+  c3_total_tc_rat: ['1/25200', '0', '0', '0', '-57737/8400000000', 'None']
+  c3_total_tc_matches_state: True
+  c4_A1_nonzero_orders: {'E1': {2: [2, 3, 4, 5], 5: [2, 3, 4, 5]}, 'E2': {3: [3, 4, 5], 6: [3, 4, 5], 7: [3, 4, 5], 8: [3, 4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [4, 5], 19: [5], 20: [5], 32: []}}
+  c4_A2_nonzero_orders: {'E1': {2: [3, 4, 5], 5: [3, 4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [5], 12: [4, 5], 18: [4, 5], 19: [], 20: [5], 32: []}}
+  c4_A3_nonzero_orders: {'E1': {2: [4, 5], 5: [4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [5], 12: [4, 5], 18: [4, 5], 19: [], 20: [5], 32: []}}
+  c4_A1_ok: True
+  c4_A1_not_regular: [(2, 2), (2, 3), (5, 2), (5, 3), (3, 3), (6, 3), (7, 3), (8, 3)]
+  c4_A2_ok: True
+  c4_A2_not_regular: [(2, 3), (5, 3)]
+  x_vertex_A1_A2_A3_u01: [True, True]
+  x_vertex_A2_A3_u2: True
+  x_3edge_u4_A2_eq_A3: True
+  x_3edge_u4_nonzero: [4, 9, 10, 12, 18]
+  x_2edge_u4_A2_ne_A3: [3, 6, 7, 8]
+  x_1edge_u3_A2_ne_A3: [2, 5]
+  c5_delta_circulant: True
+  c5_delta_nonzero_coords: ['c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2']
+  c5_delta_orders: [1, 2, 3, 4, 5]
+  c5_delta_rat: {'c1_1': '1', 'c1_2': 'None', 'c2_1': 'None', 'c2_2': 'None', 'c3_0': 'None', 'c3_1': 'None', 'c3_2': 'None', 'c4_1': 'None', 'c4_2': 'None', 'c5_0': 'None', 'c5_1': 'None', 'c5_2': 'None'}
+  c5_N1_conditions_nonzero: []
+  c5_n_conditions: 18
+  c5_n2_circulant: True
+  c5_n2_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1']
+  c5_n2_nonzero75: 70
+  c5_n3_circulant: True
+  c5_n3_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']
+  c5_n3_nonzero75: 50
+  c5_Q_at_n1: {3: 0, 6: 0, 7: 0, 8: 0, 17: 0}
+  n2_rank_aug: (6, 6)
+  n2_rank_stored: 6
+  n2_rank_gradQ_only: 4
+  n2_solves: [True, True, True, True, True, True, True]
+  n2_rhs_nonzero: [True, True, True, True, True, True, False]
+  n3_rank_aug: (2, 2)
+  n3_solves: [True, True]
+  n3_rhs_nonzero: [True, True]
+  resp_1edge_u2_A2-A1_eq_J.n2: [True, True]
+  resp_2edge_u3_A2-A1_eq_gradQ.n2: [True, True, True, True, True]
+  resp_1edge_u3_A3-A2_eq_J.n3: [True, True]
+  resp_1edge_u1_J.n1_eq_-A_M0: [True, True]
+  failed_stored: []
+============================== circstar_61
+  shape: {'A1': (17, [6]), 'A2': (17, [6]), 'A3': (42, [6])}
+  c1_n_edge: 41
+  c1_bad: []
+  c1_ok: True
+  c1_lowest_order_by_E: {1: ['4'], 2: ['4'], 3: ['4', '5', 'None'], 4: ['4', '5', 'None'], 5: ['None'], 6: ['None']}
+  c1_u4_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 17]
+  c1_u5_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 24]
+  c1_below_E_nonzero: []
+  c2_ok: True
+  c2_total_rat: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-4320914306/115544591', '6679624624/7004751']
+  c2_vertex_eq_total_u0_3: [True, True, True, True]
+  c3_tc_rat: ['1', '7/10', '41/75', '9/20', '35839/93750', '310981/937500', '59941643/205078125']
+  c3_V_rat: ['1/25200', '0', '0', '0', '-3135412405/186626758', '8629826209/17496577']
+  c3_ok: True
+  c3_matches_stored_vertex_tc: True
+  c3_total_tc_rat: ['1/25200', '0', '0', '0', '4666586098/137406391', '-2013036691/181411270']
+  c3_total_tc_matches_state: True
+  c4_A1_nonzero_orders: {'E1': {2: [2, 3, 4, 5], 5: [2, 3, 4, 5]}, 'E2': {3: [3, 4, 5], 6: [3, 4, 5], 7: [3, 4, 5], 8: [3, 4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A2_nonzero_orders: {'E1': {2: [3, 4, 5], 5: [3, 4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A3_nonzero_orders: {'E1': {2: [4, 5], 5: [4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A1_ok: True
+  c4_A1_not_regular: [(2, 2), (2, 3), (5, 2), (5, 3), (3, 3), (6, 3), (7, 3), (8, 3)]
+  c4_A2_ok: True
+  c4_A2_not_regular: [(2, 3), (5, 3)]
+  x_vertex_A1_A2_A3_u01: [True, True]
+  x_vertex_A2_A3_u2: True
+  x_3edge_u4_A2_eq_A3: True
+  x_3edge_u4_nonzero: [4, 9, 10, 12]
+  x_2edge_u4_A2_ne_A3: [3, 6, 7, 8]
+  x_1edge_u3_A2_ne_A3: [2, 5]
+  c5_delta_circulant: True
+  c5_delta_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_1', 'c5_2', 'c6_1']
+  c5_delta_orders: [1, 2, 3, 4, 5, 6]
+  c5_delta_rat: {'c1_0': '1', 'c1_1': '5623527271/11032106', 'c1_2': '3884852155/94043148', 'c2_1': '9926451944/202199655', 'c2_2': '4559031534/78980143', 'c3_0': '-18/25', 'c3_1': '1980634459/149709043', 'c3_2': '6074187581/82946051', 'c4_1': '-2079788038/130943007', 'c4_2': '-2201864865/201347702', 'c5_1': '5343514165/76923474', 'c5_2': '1947492381/126908500', 'c6_1': '3429985672/83770553'}
+  c5_N1_conditions_nonzero: []
+  c5_n_conditions: 18
+  c5_n2_circulant: True
+  c5_n2_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1']
+  c5_n2_nonzero75: 70
+  c5_n3_circulant: True
+  c5_n3_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']
+  c5_n3_nonzero75: 50
+  c5_Q_at_n1: {3: 0, 6: 0, 7: 0, 8: 0, 17: 0}
+  n2_rank_aug: (6, 6)
+  n2_rank_stored: 6
+  n2_rank_gradQ_only: 4
+  n2_solves: [True, True, True, True, True, True, True]
+  n2_rhs_nonzero: [True, True, True, True, True, True, False]
+  n3_rank_aug: (2, 2)
+  n3_solves: [True, True]
+  n3_rhs_nonzero: [True, True]
+  resp_1edge_u2_A2-A1_eq_J.n2: [True, True]
+  resp_2edge_u3_A2-A1_eq_gradQ.n2: [True, True, True, True, True]
+  resp_1edge_u3_A3-A2_eq_J.n3: [True, True]
+  resp_1edge_u1_J.n1_eq_-A_M0: [True, True]
+  failed_stored: []
+============================== circstar_89
+  shape: {'A1': (17, [6]), 'A2': (17, [6]), 'A3': (42, [6])}
+  c1_n_edge: 41
+  c1_bad: []
+  c1_ok: True
+  c1_lowest_order_by_E: {1: ['4'], 2: ['4'], 3: ['4', '5', 'None'], 4: ['4', '5', 'None'], 5: ['None'], 6: ['None']}
+  c1_u4_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 17]
+  c1_u5_nonzero: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 24]
+  c1_below_E_nonzero: []
+  c2_ok: True
+  c2_total_rat: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-29663/9072000000', 'None']
+  c2_vertex_eq_total_u0_3: [True, True, True, True]
+  c3_tc_rat: ['1', '7/10', '41/75', '9/20', '35839/93750', '310981/937500', '59941643/205078125']
+  c3_V_rat: ['1/25200', '0', '0', '0', 'None', 'None']
+  c3_ok: True
+  c3_matches_stored_vertex_tc: True
+  c3_total_tc_rat: ['1/25200', '0', '0', '0', '-57737/8400000000', 'None']
+  c3_total_tc_matches_state: True
+  c4_A1_nonzero_orders: {'E1': {2: [2, 3, 4, 5], 5: [2, 3, 4, 5]}, 'E2': {3: [3, 4, 5], 6: [3, 4, 5], 7: [3, 4, 5], 8: [3, 4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [4, 5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A2_nonzero_orders: {'E1': {2: [3, 4, 5], 5: [3, 4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A3_nonzero_orders: {'E1': {2: [4, 5], 5: [4, 5]}, 'E2': {3: [4, 5], 6: [4, 5], 7: [4, 5], 8: [4, 5], 17: [4, 5]}, 'E3': {4: [4, 5], 9: [4, 5], 10: [4, 5], 11: [5], 12: [4, 5], 18: [5], 19: [5], 20: [5], 32: []}}
+  c4_A1_ok: True
+  c4_A1_not_regular: [(2, 2), (2, 3), (5, 2), (5, 3), (3, 3), (6, 3), (7, 3), (8, 3)]
+  c4_A2_ok: True
+  c4_A2_not_regular: [(2, 3), (5, 3)]
+  x_vertex_A1_A2_A3_u01: [True, True]
+  x_vertex_A2_A3_u2: True
+  x_3edge_u4_A2_eq_A3: True
+  x_3edge_u4_nonzero: [4, 9, 10, 12]
+  x_2edge_u4_A2_ne_A3: [3, 6, 7, 8]
+  x_1edge_u3_A2_ne_A3: [2, 5]
+  c5_delta_circulant: True
+  c5_delta_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_1', 'c5_2', 'c6_1']
+  c5_delta_orders: [1, 2, 3, 4, 5, 6]
+  c5_delta_rat: {'c1_0': '1', 'c1_1': 'None', 'c1_2': 'None', 'c2_1': 'None', 'c2_2': 'None', 'c3_0': '-18/25', 'c3_1': 'None', 'c3_2': 'None', 'c4_1': 'None', 'c4_2': 'None', 'c5_1': 'None', 'c5_2': 'None', 'c6_1': 'None'}
+  c5_N1_conditions_nonzero: []
+  c5_n_conditions: 18
+  c5_n2_circulant: True
+  c5_n2_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1']
+  c5_n2_nonzero75: 70
+  c5_n3_circulant: True
+  c5_n3_nonzero_coords: ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']
+  c5_n3_nonzero75: 50
+  c5_Q_at_n1: {3: 0, 6: 0, 7: 0, 8: 0, 17: 0}
+  n2_rank_aug: (6, 6)
+  n2_rank_stored: 6
+  n2_rank_gradQ_only: 4
+  n2_solves: [True, True, True, True, True, True, True]
+  n2_rhs_nonzero: [True, True, True, True, True, True, False]
+  n3_rank_aug: (2, 2)
+  n3_solves: [True, True]
+  n3_rhs_nonzero: [True, True]
+  resp_1edge_u2_A2-A1_eq_J.n2: [True, True]
+  resp_2edge_u3_A2-A1_eq_gradQ.n2: [True, True, True, True, True]
+  resp_1edge_u3_A3-A2_eq_J.n3: [True, True]
+  resp_1edge_u1_J.n1_eq_-A_M0: [True, True]
+  failed_stored: []
+============================== circ_x
+  structural_keys_differing: []
+  table_entries: {'agree': 9, 'mismatch': 0, 'unrec': 67, 'zero_both': 380, 'zero_one': 0, 'n': 456}
+  mismatches: []
+  rational_entries: {'A1[1][u^0]': '1/25200', 'A1[1][u^1]': '-1/9000', 'A2[1][u^0]': '1/25200', 'A2[1][u^1]': '-1/9000', 'A2[1][u^2]': '407/3780000', 'A3[1][u^0]': '1/25200', 'A3[1][u^1]': '-1/9000', 'A3[1][u^2]': '407/3780000', 'A3[1][u^3]': '-151/3780000'}
+  delta_coords: {'agree': 5, 'mismatch': 0, 'unrec': 2}
+  vertex_tc_cross: [('1/25200', True), ('0', True), ('0', True), ('0', True), ('None', False), ('None', False)]
+============================== circpi_x
+  structural_keys_differing: []
+  table_entries: {'agree': 9, 'mismatch': 0, 'unrec': 111, 'zero_both': 336, 'zero_one': 0, 'n': 456}
+  mismatches: []
+  rational_entries: {'A1[1][u^0]': '1/25200', 'A1[1][u^1]': '-1/9000', 'A2[1][u^0]': '1/25200', 'A2[1][u^1]': '-1/9000', 'A2[1][u^2]': '407/3780000', 'A3[1][u^0]': '1/25200', 'A3[1][u^1]': '-1/9000', 'A3[1][u^2]': '407/3780000', 'A3[1][u^3]': '-151/3780000'}
+  delta_coords: {'agree': 2, 'mismatch': 0, 'unrec': 11}
+  vertex_tc_cross: [('1/25200', True), ('0', True), ('0', True), ('0', True), ('None', False), ('None', False)]
+============================== circb_x
+  structural_keys_differing: []
+  table_entries: {'agree': 9, 'mismatch': 0, 'unrec': 111, 'zero_both': 336, 'zero_one': 0, 'n': 456}
+  mismatches: []
+  rational_entries: {'A1[1][u^0]': '1/25200', 'A1[1][u^1]': '-1/9000', 'A2[1][u^0]': '1/25200', 'A2[1][u^1]': '-1/9000', 'A2[1][u^2]': '407/3780000', 'A3[1][u^0]': '1/25200', 'A3[1][u^1]': '-1/9000', 'A3[1][u^2]': '407/3780000', 'A3[1][u^3]': '-151/3780000'}
+  delta_coords: {'agree': 1, 'mismatch': 0, 'unrec': 11}
+  vertex_tc_cross: [('1/25200', True), ('0', True), ('0', True), ('0', True), ('None', False), ('None', False)]
+============================== circstar_x
+  structural_keys_differing: []
+  table_entries: {'agree': 41, 'mismatch': 0, 'unrec': 75, 'zero_both': 340, 'zero_one': 0, 'n': 456}
+  mismatches: []
+  rational_entries: {'A1[7][u^3]': '10723/2400000', 'A1[7][u^4]': '179512849/100000000', 'A1[17][u^4]': '-17479/691200000', 'A1[18][u^5]': '186961/6000000', 'A1[10][u^4]': '-30143/7500', 'A1[10][u^5]': '-3403029/10000000', 'A1[19][u^5]': '9397/72000000', 'A1[20][u^5]': '-2701/12000000', 'A1[5][u^2]': '-164123/144000000', 'A1[5][u^3]': '-34231/450000000', 'A1[6][u^3]': '8213/8000000', 'A1[6][u^4]': '151035959/9000000000', 'A1[8][u^3]': '-1643/2400000', 'A1[8][u^4]': '-956477/72000000', 'A1[9][u^4]': '28979/15000', 'A1[9][u^5]': '5024953/12000000', 'A1[11][u^4]': '-227/12000', 'A1[11][u^5]': '4930031/30000000', 'A1[1][u^0]': '1/25200', 'A1[1][u^1]': '-1/9000', 'A1[1][u^2]': '501983/604800000', 'A1[1][u^3]': '421927879/1890000000', 'A1[12][u^4]': '1799/120000', 'A1[12][u^5]': '2395717/30000000', 'A1[2][u^2]': '5009/12000000', 'A1[2][u^3]': '-840916981/1800000000', 'A1[3][u^3]': '5979/25000', 'A1[3][u^4]': '7725871/6000000', 'A1[3][u^5]': '-894219221/2250000000', 'A1[4][u^4]': '-5697/5000', 'A1[4][u^5]': '304099/1500000', 'A2[1][u^0]': '1/25200', 'A2[1][u^1]': '-1/9000', 'A2[1][u^2]': '407/3780000', 'A3[15][u^4]': '9/4', 'A3[13][u^4]': '9/8', 'A3[1][u^0]': '1/25200', 'A3[1][u^1]': '-1/9000', 'A3[1][u^2]': '407/3780000', 'A3[1][u^3]': '-151/3780000', 'A3[14][u^4]': '-9/4'}
+  delta_coords: {'agree': 2, 'mismatch': 0, 'unrec': 11}
+  vertex_tc_cross: [('1/25200', True), ('0', True), ('0', True), ('0', True), ('None', False), ('None', False)]
+============================== distinct_61
+  circ|circpi: {'A1': 40, 'A2': 32, 'A3': 40, 'n_equal': [False, False, False]}
+  circ|circb: {'A1': 41, 'A2': 31, 'A3': 40, 'n_equal': [False, False, False]}
+  circ|circstar: {'A1': 40, 'A2': 31, 'A3': 37, 'n_equal': [False, False, False]}
+  circpi|circb: {'A1': 40, 'A2': 33, 'A3': 43, 'n_equal': [False, False, False]}
+  circpi|circstar: {'A1': 39, 'A2': 32, 'A3': 41, 'n_equal': [False, False, False]}
+  circb|circstar: {'A1': 40, 'A2': 32, 'A3': 42, 'n_equal': [False, False, False]}
+============================== distinct_89
+  circ|circpi: {'A1': 40, 'A2': 32, 'A3': 40, 'n_equal': [False, False, False]}
+  circ|circb: {'A1': 41, 'A2': 31, 'A3': 40, 'n_equal': [False, False, False]}
+  circ|circstar: {'A1': 40, 'A2': 31, 'A3': 37, 'n_equal': [False, False, False]}
+  circpi|circb: {'A1': 40, 'A2': 33, 'A3': 43, 'n_equal': [False, False, False]}
+  circpi|circstar: {'A1': 39, 'A2': 32, 'A3': 41, 'n_equal': [False, False, False]}
+  circb|circstar: {'A1': 40, 'A2': 32, 'A3': 42, 'n_equal': [False, False, False]}

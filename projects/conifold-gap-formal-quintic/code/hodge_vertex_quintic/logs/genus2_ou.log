@@ -1,0 +1,684 @@
+====================================================================================================
+prime p = 618970019642690137449562111
+rows (Nz = 6), conifold periods (alpha = beta = 0), rows truncated at O(s^24), symbol, HatRows: 1.0 s
+----------------------------------------------------------------------------------------------------
+(1) the hatted theory at (alpha, beta) = (0, 0): Qhat = Q s^{4n+1-c_a}, xhat = x/s; checks (a), (b), (c); point frame in t_c
+PASS ab00 HatRows: all Qhat[a][i][n] = Q s^{4n+1-c_a} and xhat = x/s are pure u-series (only s^{5k} terms), n <= 6
+PASS ab00 HatRows: every Qhat has valuation 0 with non-zero constant term, xhat = 1 + O(u); minimal s-precision 22 (u^0..u^4 known)
+PASS ab00 HatRows: Qhat|_{u=0} = the conifold symbol R^ (fq_symbol.Symbol.Rh) for all (a, i, n)
+PASS ab00 (a) s^{-10} x hatted sums at M = 1 = point-frame s-series sums (GraphSummer(SRows, 1)) through s^10, all 7 graphs
+PASS ab00 (b) [u^0] of the hatted sums at M = 1 = frozen sums = 1807/3072000, -811/256000, -57/64000, 843/1024000, 3/51200, 87/32000, 9/12800; total 1/1200
+PASS ab00 (b) [u^0] of the hatted sums at 2 random symplectic M (coefficient matrices read as [zhat^k]) = fq_leadsolve.frozen_sums at the same M
+PASS ab00 (c) hatted sums at random M are pure u-series (no s^k, 5 does not divide k, through the precision)
+   u-expansion of G_Gamma = s^10 T_Gamma at M = 1 (point frame), through u^2 (precision u^4):
+      graph 1 (genus-2 vertex): (1807/3072000) u^0 + (-7/8000) u^1 + (67/288000) u^2
+      graph 2 (g1 loop): (-811/256000) u^0 + (763/192000) u^1 + (-31/480000) u^2
+      graph 3 (g0 two loops): (-57/64000) u^0 + (89/20000) u^1 + (-609/100000) u^2
+      graph 4 (g1-g1): (843/1024000) u^0 + (-53/48000) u^1 + (1/32000) u^2
+      graph 5 (g0 loop - g1): (3/51200) u^0 + (-67/192000) u^1 + (371/480000) u^2
+      graph 6 (theta): (87/32000) u^0 + (-143/40000) u^1 + (149/100000) u^2
+      graph 7 (dumbbell): (9/12800) u^0 + (-59/16000) u^1 + (199/40000) u^2
+PASS ab00 point frame: total Sum_Gamma G_Gamma = F_2^cf s^10 = 1/1200 - (7/6000) u + (97/72000) u^2 - (6809/18000000) u^3 - (2551/15000000) u^4
+   t_c = (1)x^1 + (7/10)x^2 + (41/75)x^3 + O(x^8) (c_1 = 7/10): T_Gamma = a_0 t_c^-2 + (a_1 + 2 c_1 a_0) t_c^-1 + ...; per graph (t_c^-2, t_c^-1, t_c^0):
+      graph 1: 1807/3072000, -791/15360000, -2557/102400000
+      graph 2: -811/256000, -1771/3840000, 61889/76800000
+      graph 3: -57/64000, 41/12800, -22479/6400000
+      graph 4: 843/1024000, 743/15360000, -75257/307200000
+      graph 5: 3/51200, -41/153600, 8663/15360000
+      graph 6: 87/32000, 37/160000, 2009/3200000
+      graph 7: 9/12800, -173/64000, 3607/1280000
+PASS ab00 point frame in t_c: per-graph t_c^-2 = c_Gamma and t_c^-1 = -791/15360000, -1771/3840000, 41/12800, 743/15360000, -41/153600, 37/160000, -173/64000 (FORMAL_QUINTIC s.3)
+PASS ab00 point frame total in t_c: (1/1200) t_c^-2 + 0 t_c^-1 + constant 31/30000
+   step 1 in 0.5 s
+----------------------------------------------------------------------------------------------------
+(2) M_0 = R~ mod zhat^4 and the hatted sums G_Gamma[M_0](u): g1_Gamma = [u^1]
+   mu_k = [zhat^k] log R~ (first rows, Q(zeta) via sigma_m(mu_k[0][i]) = mu_k[0][mi]):
+      mu_1[0][.] = [1/20, (1/25) z + (3/25) z^2 + (1/25) z^3, -3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3, -1/25 + (2/25) z + (-1/25) z^2, -1/25 + (-1/25) z + (2/25) z^3]
+      mu_2[0][.] = [0, -27/1000 + (-9/500) z + (9/500) z^2 + (27/1000) z^3, -9/200 + (9/1000) z + (-9/250) z^2 + (-9/500) z^3, -27/500 + (-9/1000) z + (-27/1000) z^2 + (-9/200) z^3, -9/1000 + (9/500) z + (9/200) z^2 + (9/250) z^3]
+      mu_3[0][.] = [-3/200, -243/5000 + (-579/8000) z + (-243/5000) z^2, (243/5000) z + (-951/40000) z^2 + (243/5000) z^3, -243/5000 + (-243/5000) z + (-579/8000) z^3, 951/40000 + (579/8000) z + (579/8000) z^2 + (951/40000) z^3]
+PASS ab00 M_0 := SympM(mu_1, mu_2, mu_3) reproduces R~ mod zhat^4 exactly: M_0[k] = C_k for k = 0..3
+   hatted sums G_Gamma[M_0](u) with the tautological M_0, through u^4:
+      graph 1 (genus-2 vertex): (1/1200) u^0 + (-7/8000) u^1 + (67/288000) u^2 + (1/187500) u^3
+      graph 2 (g1 loop): (0) u^0 + (1/750) u^1 + (-1/480) u^2 + (-161/150000) u^3
+      graph 3 (g0 two loops): (0) u^0 + (0) u^1 + (1/1000) u^2 + (2/625) u^3
+      graph 4 (g1-g1): (0) u^0 + (-13/8000) u^1 + (19/96000) u^2 + (203/3600000) u^3
+      graph 5 (g0 loop - g1): (0) u^0 + (0) u^1 + (1/500) u^2 + (1/6000) u^3
+      graph 6 (theta): (0) u^0 + (0) u^1 + (0) u^2 + (-7/7500) u^3
+      graph 7 (dumbbell): (0) u^0 + (0) u^1 + (0) u^2 + (-9/5000) u^3
+PASS ab00 [u^0] G_Gamma[M_0] = (1/1200, 0, 0, 0, 0, 0, 0): every edge graph loses its leading pole (CONIFOLD_SYMBOL s.3)
+PASS ab00 KEY: g1_Gamma := [u^1] G_Gamma[M_0] = 0 for the graphs with >= 2 edges (3, 5, 6, 7): they are REGULAR for M = M_0 (and for every M_0 exp(uN)): {3: '0', 5: '0', 6: '0', 7: '0'}
+PASS ab00 g1_2 and g1_4 are RATIONAL (colour sums of a Z/5-covariant M_0): g1_2 = 1/750, g1_4 = -13/8000, g1_1 = -7/8000
+PASS ab00 Sum_Gamma g1_Gamma = -2 c_1/1200 = -7/6000 (= [u^1] of F_2^cf s^10 = -7/6000, M-independent); total through u^4 = the point-frame total of this frame
+   per-graph (t_c^-2, t_c^-1, t_c^0) with M_0: g1: 1/1200, 7/24000, 59/480000; g2: 0, 1/750, -23/20000; g3: 0, 0, 1/1000; g4: 0, -13/8000, -451/480000; g5: 0, 0, 1/500; g6: 0, 0, 0; g7: 0, 0, 0
+PASS ab00 with M_0: edge-graph 1/t_c coefficients = g1_Gamma; vertex 1/t_c coefficient = g1_1 + 2 c_1/1200 = 7/24000; total 1/t_c coefficient 0; total t_c^-2 = 1/1200
+   vertex graph with M_0: constant term (t_c^0) 59/480000; [u^2] G_1[M_0] = 67/288000
+   step 2 in 0.1 s
+----------------------------------------------------------------------------------------------------
+(3) directional derivatives D_N L_Gamma = d/d eps|_0 G^0_Gamma[M_0 exp(eps N)]: the 2 x 40 matrix J (graphs 2, 4)
+   40 basis directions N_v (fq_leadsolve.params_to_mats: nu_1, nu_3 symmetric with both entries 1; nu_2 antisymmetric (i,j) = +1, (j,i) = -1), eps = 0..9, frozen sums:
+      direction 10/40 done
+      direction 20/40 done
+      direction 30/40 done
+      direction 40/40 done
+PASS eps-polynomials G^0_Gamma[M_0 exp(eps N_v)] have degree <= 3 (coefficients of eps^4..eps^9 vanish) for all 40 directions and 7 graphs; maximal degree seen 3
+PASS constant terms = L_Gamma(M_0) = (1/1200, 0, .., 0) for every direction
+PASS D_N L_Gamma = 0 identically for the graphs with >= 2 edges: the 4 x 40 block for graphs 3, 5, 6, 7 is zero; rows 1, 2, 4 non-zero
+PASS Sum_Gamma J[Gamma] = 0 (the total 1/1200 is M-independent), i.e. J[1] = -(J[2] + J[4])
+PASS rank of the 2 x 40 matrix J (rows graphs 2, 4) = 2: the two linear equations are independent on the full class
+   J[2] (graph g1 loop) in Q(zeta) via Galois (sigma_m J_v = sgn J_{pi_m v}), 30 non-zero entries:
+      m1_00: -1/400; m1_01: 13/4000 + (13/4000) z + (-1/250) z^3; m1_02: 13/4000 + (-1/250) z + (13/4000) z^2; m1_03: 29/4000 + (1/250) z + (1/250) z^2 + (29/4000) z^3; m1_04: (-13/4000) z + (-29/4000) z^2 + (-13/4000) z^3; m1_11: (-1/400) z; m1_12: 1/250 + (29/4000) z + (29/4000) z^2 + (1/250) z^3; m1_13: (13/4000) z + (-1/250) z^2 + (13/4000) z^3; m1_14: -29/4000 + (-13/4000) z^2 + (-13/4000) z^3; m1_22: (-1/400) z^2; m1_23: -1/250 + (13/4000) z^2 + (13/4000) z^3; m1_24: -13/4000 + (-13/4000) z + (-29/4000) z^3; m1_33: (-1/400) z^3; m1_34: -13/4000 + (-29/4000) z + (-13/4000) z^2; m1_44: 1/400 + (1/400) z + (1/400) z^2 + (1/400) z^3; m2_01: -1/300 + (1/600) z + (1/150) z^2 + (1/300) z^3; m2_02: -1/100 + (-1/300) z + (-1/200) z^2 + (-1/150) z^3; m2_03: -1/150 + (1/300) z + (-1/300) z^2 + (-1/600) z^3; m2_04: -1/200 + (-1/600) z + (1/600) z^2 + (1/200) z^3; m2_12: -1/300 + (-1/150) z + (-1/100) z^2 + (-1/200) z^3; m2_13: -1/600 + (1/200) z + (-1/200) z^2 + (1/600) z^3; m2_14: 1/600 + (1/300) z + (-1/300) z^2 + (1/150) z^3; m2_23: 1/200 + (1/100) z + (1/150) z^2 + (1/300) z^3; m2_24: 1/150 + (1/200) z + (1/300) z^2 + (1/100) z^3; m2_34: -1/300 + (-1/150) z + (-1/600) z^2 + (1/300) z^3; m3_00: -1/48; m3_11: (-1/48) z^3; m3_22: (-1/48) z; m3_33: 1/48 + (1/48) z + (1/48) z^2 + (1/48) z^3; m3_44: (-1/48) z^2
+   J[4] (graph g1-g1) in Q(zeta) via Galois (sigma_m J_v = sgn J_{pi_m v}), 40 non-zero entries:
+      m1_00: 1/3200; m1_01: -1/2048 + (-1/2048) z + (-43/51200) z^3; m1_02: -1/2048 + (-43/51200) z + (-1/2048) z^2; m1_03: 9/25600 + (43/51200) z + (43/51200) z^2 + (9/25600) z^3; m1_04: (1/2048) z + (-9/25600) z^2 + (1/2048) z^3; m1_11: (1/3200) z; m1_12: 43/51200 + (9/25600) z + (9/25600) z^2 + (43/51200) z^3; m1_13: (-1/2048) z + (-43/51200) z^2 + (-1/2048) z^3; m1_14: -9/25600 + (1/2048) z^2 + (1/2048) z^3; m1_22: (1/3200) z^2; m1_23: -43/51200 + (-1/2048) z^2 + (-1/2048) z^3; m1_24: 1/2048 + (1/2048) z + (-9/25600) z^3; m1_33: (1/3200) z^3; m1_34: 1/2048 + (-9/25600) z + (1/2048) z^2; m1_44: -1/3200 + (-1/3200) z + (-1/3200) z^2 + (-1/3200) z^3; m2_01: -1/1280 + (-1/1280) z + (-1/1280) z^2 + (-1/640) z^3; m2_02: (-1/1280) z + (1/1280) z^3; m2_03: 1/1280 + (1/1280) z + (1/640) z^2 + (1/1280) z^3; m2_04: (1/1280) z + (-1/1280) z^2; m2_12: -1/1280 + (1/1280) z; m2_13: 1/1280 + (-1/1280) z^3; m2_14: -1/1280 + (-1/640) z + (-1/1280) z^2 + (-1/1280) z^3; m2_23: (-1/1280) z^2 + (1/1280) z^3; m2_24: -1/1280 + (1/1280) z^2; m2_34: 1/640 + (1/1280) z + (1/1280) z^2 + (1/1280) z^3; m3_00: 1/1152; m3_01: -1/576 + (-1/576) z + (-1/576) z^2 + (-1/576) z^3; m3_02: (1/576) z^3; m3_03: (1/576) z^2; m3_04: (1/576) z; m3_11: (1/1152) z^3; m3_12: (1/576) z^2; m3_13: (1/576) z; m3_14: 1/576; m3_22: (1/1152) z; m3_23: 1/576; m3_24: -1/576 + (-1/576) z + (-1/576) z^2 + (-1/576) z^3; m3_33: -1/1152 + (-1/1152) z + (-1/1152) z^2 + (-1/1152) z^3; m3_34: (1/576) z^3; m3_44: (1/1152) z^2
+PASS cross-check: J . coords(dexp(Y_e)) = mu-gradient of the stored leading polynomials L_Gamma (symbol_result.json) at the tautological point, all 7 graphs x 40 directions (0 failures); dexp(Y) = Y - [mu,Y]/2 + [mu,[mu,Y]]/6 verified numerically
+   step 3 in 23.0 s
+----------------------------------------------------------------------------------------------------
+(4) solving J n = -(g1_2, g1_4): full class and the classes (i)-(iii), RIGHT (M_0 exp(uN)) and LEFT (exp(uN') M_0) placement
+   system: J[2] . n = -g1_2 = -1/750,  J[4] . n = -g1_4 = 13/8000
+   (i) covariant scalar: nu_1 = b_1 diag(zeta^-i), nu_3 = b_3 diag(zeta^-3i), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 2 matrix rank 2, consistent True, solution dimension 0
+      equation graph 2: (-1/80) b_1 + (-5/48) b_3 = -1/750
+      equation graph 4: (1/640) b_1 + (5/1152) b_3 = 13/8000
+PASS ab00:cov:right: 2 x 2 matrix invertible (rank 2, the two equations independent), unique solution; RATIONAL entries and solution
+      solution (b_1, b_3) = (113/75, -21/125)
+   (i) covariant scalar: nu_1 = b_1 diag(zeta^-i), nu_3 = b_3 diag(zeta^-3i), LEFT placement [M = exp(uN') M_0]: restricted 2 x 2 matrix rank 2, consistent True, solution dimension 0
+      equation graph 2: (-1/120) b_1 + (-5/48) b_3 = -1/750
+      equation graph 4: (-1/1440) b_1 + (5/1152) b_3 = 13/8000
+PASS ab00:cov:left: 2 x 2 matrix invertible (rank 2, the two equations independent), unique solution; RATIONAL entries and solution
+      solution (b_1, b_3) = (-113/75, 2/15)
+      right and left placement span the same N-space: False (combined rank 3)
+   (ii) diagonal, Fourier modes X_a, Y_a (x_i = (1/5) Sum_a zeta^-ai X_a), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 10 matrix rank 2, consistent True, solution dimension 8
+      graph 2 row (X_0..X_4 | Y_0..Y_4): [0, -1/400, 0, 0, 0, 0, 0, 0, -1/48, 0]
+      graph 4 row (X_0..X_4 | Y_0..Y_4): [0, 1/3200, 0, 0, 0, 0, 0, 0, 1/1152, 0]
+PASS ab00:diag:right: restricted matrix RATIONAL in the Fourier modes; rank 2; consistent True
+      particular solution (RREF, free modes 0): X1 = 113/15, Y3 = -21/25; nullspace dimension 8
+      i.e. x_i = [113/75, -113/75 + (-113/75) z + (-113/75) z^2 + (-113/75) z^3, (113/75) z^3, (113/75) z^2, (113/75) z], y_i = [-21/125, (-21/125) z^2, 21/125 + (21/125) z + (21/125) z^2 + (21/125) z^3, (-21/125) z, (-21/125) z^3] (Q(zeta) via sigma_m x_i = x_{mi})
+   (ii) diagonal, Fourier modes X_a, Y_a (x_i = (1/5) Sum_a zeta^-ai X_a), LEFT placement [M = exp(uN') M_0]: restricted 2 x 10 matrix rank 2, consistent True, solution dimension 8
+      graph 2 row (X_0..X_4 | Y_0..Y_4): [0, -1/600, 0, 0, 0, 0, 0, 0, -1/48, 0]
+      graph 4 row (X_0..X_4 | Y_0..Y_4): [0, -1/7200, 0, 0, 0, 0, 0, 0, 1/1152, 0]
+PASS ab00:diag:left: restricted matrix RATIONAL in the Fourier modes; rank 2; consistent True
+      particular solution (RREF, free modes 0): X1 = -113/15, Y3 = 2/3; nullspace dimension 8
+      i.e. x_i = [-113/75, 113/75 + (113/75) z + (113/75) z^2 + (113/75) z^3, (-113/75) z^3, (-113/75) z^2, (-113/75) z], y_i = [2/15, (2/15) z^2, -2/15 + (-2/15) z + (-2/15) z^2 + (-2/15) z^3, (2/15) z, (2/15) z^3] (Q(zeta) via sigma_m x_i = x_{mi})
+      right and left placement span the same N-space: False (combined rank 14)
+   (iii) circulant (Z/5-covariant): c_1(0..2), c_2(1..2), c_3(0..2), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 8 matrix rank 2, consistent True, solution dimension 6
+      graph 2 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/80, 13/800 + (13/800) z + (-1/50) z^3, 13/800 + (-1/50) z + (13/800) z^2, -1/60 + (1/120) z + (1/30) z^2 + (1/60) z^3, -1/20 + (-1/60) z + (-1/40) z^2 + (-1/30) z^3, -5/48, 0, 0]
+      graph 4 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [1/640, -5/2048 + (-5/2048) z + (-43/10240) z^3, -5/2048 + (-43/10240) z + (-5/2048) z^2, -1/256 + (-1/256) z + (-1/256) z^2 + (-1/128) z^3, (-1/256) z + (1/256) z^3, 5/1152, -5/576 + (-5/576) z + (-5/576) z^2 + (-5/576) z^3, (5/576) z^3]
+PASS ab00:circ:right: consistent, rank 2, solution set of dimension 6; the covariant-scalar solution (c_1(0) = b_1, c_3(0) = b_3) is a particular solution
+   (iii) circulant (Z/5-covariant): c_1(0..2), c_2(1..2), c_3(0..2), LEFT placement [M = exp(uN') M_0]: restricted 2 x 8 matrix rank 2, consistent True, solution dimension 6
+      graph 2 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/120, (-1/60) z^3, (-1/60) z, 0, 0, -5/48, 0, 0]
+      graph 4 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/1440, (-1/720) z^3, (-1/720) z, -1/288 + (-1/288) z + (-1/288) z^2 + (-1/144) z^3, (-1/288) z + (1/288) z^3, 5/1152, -5/576 + (-5/576) z + (-5/576) z^2 + (-5/576) z^3, (5/576) z^3]
+PASS ab00:circ:left: consistent, rank 2, solution set of dimension 6; the covariant-scalar solution (c_1(0) = b_1, c_3(0) = b_3) is a particular solution
+PASS ab00:circ: the circulant class is Ad(M_0)-stable (M_0 is circulant): right and left placement give the SAME set of N (combined rank 8 = 8)
+   (iv) full sp: 40 coordinates, RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 40 matrix rank 2, consistent True, solution dimension 38
+PASS ab00:full:right: rank 2, consistent, affine solution space of dimension 38; the covariant-scalar solution is a particular solution
+   (iv) full sp: 40 coordinates, LEFT placement [M = exp(uN') M_0]: restricted 2 x 40 matrix rank 2, consistent True, solution dimension 38
+PASS ab00:full:left: rank 2, consistent, affine solution space of dimension 38; the covariant-scalar solution is a particular solution
+PASS ab00:full: left = right as sets (Ad(M_0) invertible, combined rank 40 = 40)
+   step 4 in 0.0 s
+----------------------------------------------------------------------------------------------------
+(5) verification by eps -> u: hatted sums with M_0 exp(eps N) at eps = 0..9, P_Gamma(eps; u), eps = u
+   ab00:cov:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 40901/172800, -945089759/1458000000, 13/11250000]
+      graph 2: [0, 0, -290179/540000, -321163/759375, -2010649/33750000]
+      graph 3: [0, 0, 3373/11250, 244576/84375, 83648/703125]
+      graph 4: [0, 0, -287/11520, -327595333/145800000, -347431/3000000]
+      graph 5: [0, 0, 61/2250, 20391977/4050000, 2006009/6750000]
+      graph 6: [0, 0, 0, -454016/253125, -7469/140625]
+      graph 7: [0, 0, 0, -238144/84375, -26413/140625]
+PASS ab00:cov:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:cov:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:cov:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 40901/172800, -945089759/1458000000, 13/11250000;  edge graphs' u^2 coefficients: -290179/540000, 3373/11250, -287/11520, 61/2250, 0, 0
+   ab00:cov:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 4242323/12960000, 945105311/1458000000, 13/11250000]
+      graph 2: [0, 0, -64183/108000, -2804819/12150000, -958393/33750000]
+      graph 3: [0, 0, 1517/5625, -25823/16875, 46697/703125]
+      graph 4: [0, 0, -846743/12960000, 15304291/9112500, -1000709/9000000]
+      graph 5: [0, 0, 1079/16875, -822167/253125, 8236057/33750000]
+      graph 6: [0, 0, 0, 281162/253125, -1087/28125]
+      graph 7: [0, 0, 0, 132496/84375, -18616/140625]
+PASS ab00:cov:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:cov:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:cov:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 4242323/12960000, 945105311/1458000000, 13/11250000;  edge graphs' u^2 coefficients: -64183/108000, 1517/5625, -846743/12960000, 1079/16875, 0, 0
+   ab00:diag:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 40901/172800, -945089759/1458000000, 13/11250000]
+      graph 2: [0, 0, -290179/540000, -321163/759375, -2010649/33750000]
+      graph 3: [0, 0, 3373/11250, 244576/84375, 83648/703125]
+      graph 4: [0, 0, -287/11520, -327595333/145800000, -347431/3000000]
+      graph 5: [0, 0, 61/2250, 20391977/4050000, 2006009/6750000]
+      graph 6: [0, 0, 0, -454016/253125, -7469/140625]
+      graph 7: [0, 0, 0, -238144/84375, -26413/140625]
+PASS ab00:diag:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:diag:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:diag:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 40901/172800, -945089759/1458000000, 13/11250000;  edge graphs' u^2 coefficients: -290179/540000, 3373/11250, -287/11520, 61/2250, 0, 0
+   ab00:diag:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 4242323/12960000, 945105311/1458000000, 13/11250000]
+      graph 2: [0, 0, -64183/108000, -2804819/12150000, -958393/33750000]
+      graph 3: [0, 0, 1517/5625, -25823/16875, 46697/703125]
+      graph 4: [0, 0, -846743/12960000, 15304291/9112500, -1000709/9000000]
+      graph 5: [0, 0, 1079/16875, -822167/253125, 8236057/33750000]
+      graph 6: [0, 0, 0, 281162/253125, -1087/28125]
+      graph 7: [0, 0, 0, 132496/84375, -18616/140625]
+PASS ab00:diag:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:diag:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:diag:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 4242323/12960000, 945105311/1458000000, 13/11250000;  edge graphs' u^2 coefficients: -64183/108000, 1517/5625, -846743/12960000, 1079/16875, 0, 0
+   ab00:circ:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 40901/172800, -945089759/1458000000, 13/11250000]
+      graph 2: [0, 0, -290179/540000, -321163/759375, -2010649/33750000]
+      graph 3: [0, 0, 3373/11250, 244576/84375, 83648/703125]
+      graph 4: [0, 0, -287/11520, -327595333/145800000, -347431/3000000]
+      graph 5: [0, 0, 61/2250, 20391977/4050000, 2006009/6750000]
+      graph 6: [0, 0, 0, -454016/253125, -7469/140625]
+      graph 7: [0, 0, 0, -238144/84375, -26413/140625]
+PASS ab00:circ:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:circ:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:circ:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 40901/172800, -945089759/1458000000, 13/11250000;  edge graphs' u^2 coefficients: -290179/540000, 3373/11250, -287/11520, 61/2250, 0, 0
+   ab00:circ:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 4242323/12960000, 945105311/1458000000, 13/11250000]
+      graph 2: [0, 0, -64183/108000, -2804819/12150000, -958393/33750000]
+      graph 3: [0, 0, 1517/5625, -25823/16875, 46697/703125]
+      graph 4: [0, 0, -846743/12960000, 15304291/9112500, -1000709/9000000]
+      graph 5: [0, 0, 1079/16875, -822167/253125, 8236057/33750000]
+      graph 6: [0, 0, 0, 281162/253125, -1087/28125]
+      graph 7: [0, 0, 0, 132496/84375, -18616/140625]
+PASS ab00:circ:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:circ:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:circ:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 4242323/12960000, 945105311/1458000000, 13/11250000;  edge graphs' u^2 coefficients: -64183/108000, 1517/5625, -846743/12960000, 1079/16875, 0, 0
+   ab00:full:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 40901/172800, -945089759/1458000000, 13/11250000]
+      graph 2: [0, 0, -290179/540000, -321163/759375, -2010649/33750000]
+      graph 3: [0, 0, 3373/11250, 244576/84375, 83648/703125]
+      graph 4: [0, 0, -287/11520, -327595333/145800000, -347431/3000000]
+      graph 5: [0, 0, 61/2250, 20391977/4050000, 2006009/6750000]
+      graph 6: [0, 0, 0, -454016/253125, -7469/140625]
+      graph 7: [0, 0, 0, -238144/84375, -26413/140625]
+PASS ab00:full:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:full:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:full:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 40901/172800, -945089759/1458000000, 13/11250000;  edge graphs' u^2 coefficients: -290179/540000, 3373/11250, -287/11520, 61/2250, 0, 0
+   ab00:full:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 4242323/12960000, 945105311/1458000000, 13/11250000]
+      graph 2: [0, 0, -64183/108000, -2804819/12150000, -958393/33750000]
+      graph 3: [0, 0, 1517/5625, -25823/16875, 46697/703125]
+      graph 4: [0, 0, -846743/12960000, 15304291/9112500, -1000709/9000000]
+      graph 5: [0, 0, 1079/16875, -822167/253125, 8236057/33750000]
+      graph 6: [0, 0, 0, 281162/253125, -1087/28125]
+      graph 7: [0, 0, 0, 132496/84375, -18616/140625]
+PASS ab00:full:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:full:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:full:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 4242323/12960000, 945105311/1458000000, 13/11250000;  edge graphs' u^2 coefficients: -64183/108000, 1517/5625, -846743/12960000, 1079/16875, 0, 0
+PASS ab00: a RANDOM point of the 38-dimensional solution space (particular + random nullspace combination) also regularises all six edge graphs (eps-degree 3)
+      (vertex graph there: [1/1200, -7/6000, [115866093014883675783378425 mod p], [364748890374589092703979781 mod p], 13/11250000])
+   step 5 in 13.4 s
+   full s-series picture: every hatted factor is a u-series, so after eps = u every colour-summed graph term is s^-10 x (u-series):
+   the s^k coefficients with 5 not dividing k vanish identically for every graph and every N (checked: is_u_series on all series above).
+----------------------------------------------------------------------------------------------------
+(6) the conifold-frame ambiguity: varpi^cf_0 = f_0 + alpha g + beta f_2 at (alpha, beta) = (1/3, -2/7)
+   varpi^cf_0 = (1)x^0 + (1/3)x^1 + (-11/210)x^2 + (-6574/39375)x^3 + O(x^22);  t_c = (1)x^1 + (11/30)x^2 + (751/1575)x^3 + O(x^8)
+PASS ab13 the conifold SYMBOL is independent of (alpha, beta): R^_{a,n}^{(i)} identical for all (a, i, n), n <= 6 (so J is unchanged)
+PASS ab13 xhat = varpi^cf_0(u) changes at O(u) (xhat_1 = alpha = 1/3) while xhat(0) = 1
+PASS ab13 HatRows: all Qhat[a][i][n] = Q s^{4n+1-c_a} and xhat = x/s are pure u-series (only s^{5k} terms), n <= 6
+PASS ab13 HatRows: every Qhat has valuation 0 with non-zero constant term, xhat = 1 + O(u); minimal s-precision 22 (u^0..u^4 known)
+PASS ab13 HatRows: Qhat|_{u=0} = the conifold symbol R^ (fq_symbol.Symbol.Rh) for all (a, i, n)
+PASS ab13 (a) s^{-10} x hatted sums at M = 1 = point-frame s-series sums (GraphSummer(SRows, 1)) through s^10, all 7 graphs
+PASS ab13 (b) [u^0] of the hatted sums at M = 1 = frozen sums = 1807/3072000, -811/256000, -57/64000, 843/1024000, 3/51200, 87/32000, 9/12800; total 1/1200
+PASS ab13 (b) [u^0] of the hatted sums at 2 random symplectic M (coefficient matrices read as [zhat^k]) = fq_leadsolve.frozen_sums at the same M
+PASS ab13 (c) hatted sums at random M are pure u-series (no s^k, 5 does not divide k, through the precision)
+   point frame total F_2^cf s^10 at this frame: (1/1200) u^0 + (-11/18000) u^1 + (-8581/1512000) u^2 + (-239489/378000000) u^3 + (57420829/6615000000) u^4
+PASS ab13 point frame total: [u^0] = 1/1200 and [u^1] = -2 c_1/1200 (so that the t_c^-1 coefficient vanishes), c_1 = 11/30
+   t_c = (1)x^1 + (11/30)x^2 + (751/1575)x^3 + O(x^8) (c_1 = 11/30): T_Gamma = a_0 t_c^-2 + (a_1 + 2 c_1 a_0) t_c^-1 + ...; per graph (t_c^-2, t_c^-1, t_c^0):
+      graph 1: 1807/3072000, -791/15360000, -38833/921600000
+      graph 2: -811/256000, -2371/3840000, -7051157/537600000
+      graph 3: -57/64000, -147/64000, 624721/134400000
+      graph 4: 843/1024000, 743/15360000, 21563623/6451200000
+      graph 5: 3/51200, -17/153600, -388579/107520000
+      graph 6: 87/32000, 317/160000, 123443/22400000
+      graph 7: 9/12800, 67/64000, -52313/26880000
+PASS ab13 point frame in t_c: per-graph t_c^-2 = c_Gamma unchanged (the t_c^-1 coefficients may change with alpha, beta: logged)
+PASS ab13 point frame total in t_c: (1/1200) t_c^-2 + 0 t_c^-1 + constant -313/60000
+   step 1 in 0.9 s
+PASS ab13 M_0 := SympM(mu_1, mu_2, mu_3) reproduces R~ mod zhat^4 exactly: M_0[k] = C_k for k = 0..3
+   hatted sums G_Gamma[M_0](u) with the tautological M_0, through u^4:
+      graph 1 (genus-2 vertex): (1/1200) u^0 + (-23/72000) u^1 + (-2089/6048000) u^2 + (-59659/378000000) u^3
+      graph 2 (g1 loop): (0) u^0 + (1/750) u^1 + (-1541/252000) u^2 + (503/175000) u^3
+      graph 3 (g0 two loops): (0) u^0 + (0) u^1 + (1/1000) u^2 + (-641/157500) u^3
+      graph 4 (g1-g1): (0) u^0 + (-13/8000) u^1 + (1/134400) u^2 + (-2257/12600000) u^3
+      graph 5 (g0 loop - g1): (0) u^0 + (0) u^1 + (-1/4500) u^2 + (533/378000) u^3
+      graph 6 (theta): (0) u^0 + (0) u^1 + (0) u^2 + (-11/22500) u^3
+      graph 7 (dumbbell): (0) u^0 + (0) u^1 + (0) u^2 + (-1/45000) u^3
+PASS ab13 [u^0] G_Gamma[M_0] = (1/1200, 0, 0, 0, 0, 0, 0): every edge graph loses its leading pole (CONIFOLD_SYMBOL s.3)
+PASS ab13 KEY: g1_Gamma := [u^1] G_Gamma[M_0] = 0 for the graphs with >= 2 edges (3, 5, 6, 7): they are REGULAR for M = M_0 (and for every M_0 exp(uN)): {3: '0', 5: '0', 6: '0', 7: '0'}
+PASS ab13 g1_2 and g1_4 are RATIONAL (colour sums of a Z/5-covariant M_0): g1_2 = 1/750, g1_4 = -13/8000, g1_1 = -23/72000
+PASS ab13 Sum_Gamma g1_Gamma = -2 c_1/1200 = -11/18000 (= [u^1] of F_2^cf s^10, M-independent); total through u^4 = the point-frame total of this frame
+   per-graph (t_c^-2, t_c^-1, t_c^0) with M_0: g1: 1/1200, 7/24000, 317/1440000; g2: 0, 1/750, -2363/420000; g3: 0, 0, 1/1000; g4: 0, -13/8000, -659/1120000; g5: 0, 0, -1/4500; g6: 0, 0, 0; g7: 0, 0, 0
+PASS ab13 with M_0: edge-graph 1/t_c coefficients = g1_Gamma; vertex 1/t_c coefficient = g1_1 + 2 c_1/1200 = 7/24000; total 1/t_c coefficient 0; total t_c^-2 = 1/1200
+   vertex graph with M_0: constant term (t_c^0) 317/1440000; [u^2] G_1[M_0] = -2089/6048000
+   step 2 in 0.2 s
+PASS ab13 M_0 (colour matrices C_0..C_3) identical to that of (0, 0)
+PASS ab13 J column 7 re-derived from FrozenRows(sym2) equals the (0, 0) one (J depends on the symbol only)
+   system: J[2] . n = -g1_2 = -1/750,  J[4] . n = -g1_4 = 13/8000
+   (i) covariant scalar: nu_1 = b_1 diag(zeta^-i), nu_3 = b_3 diag(zeta^-3i), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 2 matrix rank 2, consistent True, solution dimension 0
+      equation graph 2: (-1/80) b_1 + (-5/48) b_3 = -1/750
+      equation graph 4: (1/640) b_1 + (5/1152) b_3 = 13/8000
+PASS ab13:cov:right: 2 x 2 matrix invertible (rank 2, the two equations independent), unique solution; RATIONAL entries and solution
+      solution (b_1, b_3) = (113/75, -21/125)
+   (i) covariant scalar: nu_1 = b_1 diag(zeta^-i), nu_3 = b_3 diag(zeta^-3i), LEFT placement [M = exp(uN') M_0]: restricted 2 x 2 matrix rank 2, consistent True, solution dimension 0
+      equation graph 2: (-1/120) b_1 + (-5/48) b_3 = -1/750
+      equation graph 4: (-1/1440) b_1 + (5/1152) b_3 = 13/8000
+PASS ab13:cov:left: 2 x 2 matrix invertible (rank 2, the two equations independent), unique solution; RATIONAL entries and solution
+      solution (b_1, b_3) = (-113/75, 2/15)
+      right and left placement span the same N-space: False (combined rank 3)
+   (ii) diagonal, Fourier modes X_a, Y_a (x_i = (1/5) Sum_a zeta^-ai X_a), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 10 matrix rank 2, consistent True, solution dimension 8
+      graph 2 row (X_0..X_4 | Y_0..Y_4): [0, -1/400, 0, 0, 0, 0, 0, 0, -1/48, 0]
+      graph 4 row (X_0..X_4 | Y_0..Y_4): [0, 1/3200, 0, 0, 0, 0, 0, 0, 1/1152, 0]
+PASS ab13:diag:right: restricted matrix RATIONAL in the Fourier modes; rank 2; consistent True
+      particular solution (RREF, free modes 0): X1 = 113/15, Y3 = -21/25; nullspace dimension 8
+      i.e. x_i = [113/75, -113/75 + (-113/75) z + (-113/75) z^2 + (-113/75) z^3, (113/75) z^3, (113/75) z^2, (113/75) z], y_i = [-21/125, (-21/125) z^2, 21/125 + (21/125) z + (21/125) z^2 + (21/125) z^3, (-21/125) z, (-21/125) z^3] (Q(zeta) via sigma_m x_i = x_{mi})
+   (ii) diagonal, Fourier modes X_a, Y_a (x_i = (1/5) Sum_a zeta^-ai X_a), LEFT placement [M = exp(uN') M_0]: restricted 2 x 10 matrix rank 2, consistent True, solution dimension 8
+      graph 2 row (X_0..X_4 | Y_0..Y_4): [0, -1/600, 0, 0, 0, 0, 0, 0, -1/48, 0]
+      graph 4 row (X_0..X_4 | Y_0..Y_4): [0, -1/7200, 0, 0, 0, 0, 0, 0, 1/1152, 0]
+PASS ab13:diag:left: restricted matrix RATIONAL in the Fourier modes; rank 2; consistent True
+      particular solution (RREF, free modes 0): X1 = -113/15, Y3 = 2/3; nullspace dimension 8
+      i.e. x_i = [-113/75, 113/75 + (113/75) z + (113/75) z^2 + (113/75) z^3, (-113/75) z^3, (-113/75) z^2, (-113/75) z], y_i = [2/15, (2/15) z^2, -2/15 + (-2/15) z + (-2/15) z^2 + (-2/15) z^3, (2/15) z, (2/15) z^3] (Q(zeta) via sigma_m x_i = x_{mi})
+      right and left placement span the same N-space: False (combined rank 14)
+   (iii) circulant (Z/5-covariant): c_1(0..2), c_2(1..2), c_3(0..2), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 8 matrix rank 2, consistent True, solution dimension 6
+      graph 2 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/80, 13/800 + (13/800) z + (-1/50) z^3, 13/800 + (-1/50) z + (13/800) z^2, -1/60 + (1/120) z + (1/30) z^2 + (1/60) z^3, -1/20 + (-1/60) z + (-1/40) z^2 + (-1/30) z^3, -5/48, 0, 0]
+      graph 4 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [1/640, -5/2048 + (-5/2048) z + (-43/10240) z^3, -5/2048 + (-43/10240) z + (-5/2048) z^2, -1/256 + (-1/256) z + (-1/256) z^2 + (-1/128) z^3, (-1/256) z + (1/256) z^3, 5/1152, -5/576 + (-5/576) z + (-5/576) z^2 + (-5/576) z^3, (5/576) z^3]
+PASS ab13:circ:right: consistent, rank 2, solution set of dimension 6; the covariant-scalar solution (c_1(0) = b_1, c_3(0) = b_3) is a particular solution
+   (iii) circulant (Z/5-covariant): c_1(0..2), c_2(1..2), c_3(0..2), LEFT placement [M = exp(uN') M_0]: restricted 2 x 8 matrix rank 2, consistent True, solution dimension 6
+      graph 2 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/120, (-1/60) z^3, (-1/60) z, 0, 0, -5/48, 0, 0]
+      graph 4 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/1440, (-1/720) z^3, (-1/720) z, -1/288 + (-1/288) z + (-1/288) z^2 + (-1/144) z^3, (-1/288) z + (1/288) z^3, 5/1152, -5/576 + (-5/576) z + (-5/576) z^2 + (-5/576) z^3, (5/576) z^3]
+PASS ab13:circ:left: consistent, rank 2, solution set of dimension 6; the covariant-scalar solution (c_1(0) = b_1, c_3(0) = b_3) is a particular solution
+PASS ab13:circ: the circulant class is Ad(M_0)-stable (M_0 is circulant): right and left placement give the SAME set of N (combined rank 8 = 8)
+   (iv) full sp: 40 coordinates, RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 40 matrix rank 2, consistent True, solution dimension 38
+PASS ab13:full:right: rank 2, consistent, affine solution space of dimension 38; the covariant-scalar solution is a particular solution
+   (iv) full sp: 40 coordinates, LEFT placement [M = exp(uN') M_0]: restricted 2 x 40 matrix rank 2, consistent True, solution dimension 38
+PASS ab13:full:left: rank 2, consistent, affine solution space of dimension 38; the covariant-scalar solution is a particular solution
+PASS ab13:full: left = right as sets (Ad(M_0) invertible, combined rank 40 = 40)
+   step 4 in 0.1 s
+   ab13:cov:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -11/18000, 475621/2016000, -2504209219/5103000000, [595077166414954223515115419 mod p]]
+      graph 2: [0, 0, -2049853/3780000, -13608083/42525000, [348163689389775145024792232 mod p]]
+      graph 3: [0, 0, 3373/11250, 1299667/590625, 1318058261/620156250]
+      graph 4: [0, 0, -1937/80640, -675828791/291600000, [319507408349237952834588126 mod p]]
+      graph 5: [0, 0, 28/1125, 16634543/3543750, 1045127809/496125000]
+      graph 6: [0, 0, 0, -351356/253125, -66922117/53156250]
+      graph 7: [0, 0, 0, -200704/84375, -1629632/1265625]
+PASS ab13:cov:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab13:cov:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -11/18000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab13:cov:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 475621/2016000, -2504209219/5103000000, [595077166414954223515115419 mod p];  edge graphs' u^2 coefficients: -2049853/3780000, 3373/11250, -1937/80640, 28/1125, 0, 0
+   ab13:cov:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -11/18000, 29626181/90720000, 1104961219/1275750000, [601129192379629519677838260 mod p]]
+      graph 2: [0, 0, -459329/756000, -29883983/85050000, [182797553837490661108573516 mod p]]
+      graph 3: [0, 0, 1517/5625, -6688/3375, -58607219/68906250]
+      graph 4: [0, 0, -5846201/90720000, 3448360169/2041200000, [359158502307323915196496055 mod p]]
+      graph 5: [0, 0, 1577/22500, -14469557/4050000, [194568145639522883609267321 mod p]]
+      graph 6: [0, 0, 0, 370262/253125, 6691247/10631250]
+      graph 7: [0, 0, 0, 17689/9375, 4920259/2953125]
+PASS ab13:cov:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab13:cov:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -11/18000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab13:cov:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 29626181/90720000, 1104961219/1275750000, [601129192379629519677838260 mod p];  edge graphs' u^2 coefficients: -459329/756000, 1517/5625, -5846201/90720000, 1577/22500, 0, 0
+   step 5 in 3.0 s
+   summary of the (alpha, beta) dependence:
+   (alpha, beta) = (0, 0) -> (1/3, -2/7): c_1 of t_c 7/10 -> 11/30
+   g1_Gamma: {1: '-7/8000', 2: '1/750', 3: '0', 4: '-13/8000', 5: '0', 6: '0', 7: '0'} -> {1: '-23/72000', 2: '1/750', 3: '0', 4: '-13/8000', 5: '0', 6: '0', 7: '0'}
+   g1_2, g1_4 changed with (alpha, beta): False; g1_1 shifted by 2 alpha/1200: True; at the second frame g1_3 = g1_5 = g1_6 = g1_7 = 0 and Sum g1 = -2 c_1/1200: True
+   per-graph 1/t_c coefficients with M_0: {1: '7/24000', 2: '1/750', 3: '0', 4: '-13/8000', 5: '0', 6: '0', 7: '0'} -> {1: '7/24000', 2: '1/750', 3: '0', 4: '-13/8000', 5: '0', 6: '0', 7: '0'}
+   per-graph 1/t_c coefficients at M = 1 (point frame): {1: '-791/15360000', 2: '-1771/3840000', 3: '41/12800', 4: '743/15360000', 5: '-41/153600', 6: '37/160000', 7: '-173/64000'} -> {1: '-791/15360000', 2: '-2371/3840000', 3: '-147/64000', 4: '743/15360000', 5: '-17/153600', 6: '317/160000', 7: '67/64000'}
+   covariant-scalar solution (b_1, b_3), right placement: (113/75, -21/125) -> (113/75, -21/125)
+   covariant-scalar solution (b_1, b_3), left placement: (-113/75, 2/15) -> (-113/75, 2/15)
+   covariant-scalar solutions changed with (alpha, beta): {'right': False, 'left': False}
+PASS frame dependence: the totals t_c^-2 = 1/1200 and t_c^-1 = 0 persist at (1/3, -2/7) with M_0 (per-graph values logged above)
+time for prime 618970019642690137449562111: 44.3 s
+====================================================================================================
+prime p = 2305843009213693951
+rows (Nz = 6), conifold periods (alpha = beta = 0), rows truncated at O(s^24), symbol, HatRows: 1.6 s
+----------------------------------------------------------------------------------------------------
+(1) the hatted theory at (alpha, beta) = (0, 0): Qhat = Q s^{4n+1-c_a}, xhat = x/s; checks (a), (b), (c); point frame in t_c
+PASS ab00 HatRows: all Qhat[a][i][n] = Q s^{4n+1-c_a} and xhat = x/s are pure u-series (only s^{5k} terms), n <= 6
+PASS ab00 HatRows: every Qhat has valuation 0 with non-zero constant term, xhat = 1 + O(u); minimal s-precision 22 (u^0..u^4 known)
+PASS ab00 HatRows: Qhat|_{u=0} = the conifold symbol R^ (fq_symbol.Symbol.Rh) for all (a, i, n)
+PASS ab00 (a) s^{-10} x hatted sums at M = 1 = point-frame s-series sums (GraphSummer(SRows, 1)) through s^10, all 7 graphs
+PASS ab00 (b) [u^0] of the hatted sums at M = 1 = frozen sums = 1807/3072000, -811/256000, -57/64000, 843/1024000, 3/51200, 87/32000, 9/12800; total 1/1200
+PASS ab00 (b) [u^0] of the hatted sums at 2 random symplectic M (coefficient matrices read as [zhat^k]) = fq_leadsolve.frozen_sums at the same M
+PASS ab00 (c) hatted sums at random M are pure u-series (no s^k, 5 does not divide k, through the precision)
+   u-expansion of G_Gamma = s^10 T_Gamma at M = 1 (point frame), through u^2 (precision u^4):
+      graph 1 (genus-2 vertex): (1807/3072000) u^0 + (-7/8000) u^1 + (67/288000) u^2
+      graph 2 (g1 loop): (-811/256000) u^0 + (763/192000) u^1 + (-31/480000) u^2
+      graph 3 (g0 two loops): (-57/64000) u^0 + (89/20000) u^1 + (-609/100000) u^2
+      graph 4 (g1-g1): (843/1024000) u^0 + (-53/48000) u^1 + (1/32000) u^2
+      graph 5 (g0 loop - g1): (3/51200) u^0 + (-67/192000) u^1 + (371/480000) u^2
+      graph 6 (theta): (87/32000) u^0 + (-143/40000) u^1 + (149/100000) u^2
+      graph 7 (dumbbell): (9/12800) u^0 + (-59/16000) u^1 + (199/40000) u^2
+PASS ab00 point frame: total Sum_Gamma G_Gamma = F_2^cf s^10 = 1/1200 - (7/6000) u + (97/72000) u^2 - (6809/18000000) u^3 - (2551/15000000) u^4
+   t_c = (1)x^1 + (7/10)x^2 + (41/75)x^3 + O(x^8) (c_1 = 7/10): T_Gamma = a_0 t_c^-2 + (a_1 + 2 c_1 a_0) t_c^-1 + ...; per graph (t_c^-2, t_c^-1, t_c^0):
+      graph 1: 1807/3072000, [1931870251076338703 mod p], [2119842250429465739 mod p]
+      graph 2: -811/256000, -1771/3840000, [799003455754157641 mod p]
+      graph 3: -57/64000, 41/12800, -22479/6400000
+      graph 4: 843/1024000, [543675597856079330 mod p], [779855373616477061 mod p]
+      graph 5: 3/51200, -41/153600, [212823154830933212 mod p]
+      graph 6: 87/32000, 37/160000, 2009/3200000
+      graph 7: 9/12800, -173/64000, 3607/1280000
+PASS ab00 point frame in t_c: per-graph t_c^-2 = c_Gamma and t_c^-1 = -791/15360000, -1771/3840000, 41/12800, 743/15360000, -41/153600, 37/160000, -173/64000 (FORMAL_QUINTIC s.3)
+PASS ab00 point frame total in t_c: (1/1200) t_c^-2 + 0 t_c^-1 + constant 31/30000
+   step 1 in 0.9 s
+----------------------------------------------------------------------------------------------------
+(2) M_0 = R~ mod zhat^4 and the hatted sums G_Gamma[M_0](u): g1_Gamma = [u^1]
+   mu_k = [zhat^k] log R~ (first rows, Q(zeta) via sigma_m(mu_k[0][i]) = mu_k[0][mi]):
+      mu_1[0][.] = [1/20, (1/25) z + (3/25) z^2 + (1/25) z^3, -3/25 + (-2/25) z + (-2/25) z^2 + (-3/25) z^3, -1/25 + (2/25) z + (-1/25) z^2, -1/25 + (-1/25) z + (2/25) z^3]
+      mu_2[0][.] = [0, -27/1000 + (-9/500) z + (9/500) z^2 + (27/1000) z^3, -9/200 + (9/1000) z + (-9/250) z^2 + (-9/500) z^3, -27/500 + (-9/1000) z + (-27/1000) z^2 + (-9/200) z^3, -9/1000 + (9/500) z + (9/200) z^2 + (9/250) z^3]
+      mu_3[0][.] = [-3/200, -243/5000 + (-579/8000) z + (-243/5000) z^2, (243/5000) z + (-951/40000) z^2 + (243/5000) z^3, -243/5000 + (-243/5000) z + (-579/8000) z^3, 951/40000 + (579/8000) z + (579/8000) z^2 + (951/40000) z^3]
+PASS ab00 M_0 := SympM(mu_1, mu_2, mu_3) reproduces R~ mod zhat^4 exactly: M_0[k] = C_k for k = 0..3
+   hatted sums G_Gamma[M_0](u) with the tautological M_0, through u^4:
+      graph 1 (genus-2 vertex): (1/1200) u^0 + (-7/8000) u^1 + (67/288000) u^2 + (1/187500) u^3
+      graph 2 (g1 loop): (0) u^0 + (1/750) u^1 + (-1/480) u^2 + (-161/150000) u^3
+      graph 3 (g0 two loops): (0) u^0 + (0) u^1 + (1/1000) u^2 + (2/625) u^3
+      graph 4 (g1-g1): (0) u^0 + (-13/8000) u^1 + (19/96000) u^2 + (203/3600000) u^3
+      graph 5 (g0 loop - g1): (0) u^0 + (0) u^1 + (1/500) u^2 + (1/6000) u^3
+      graph 6 (theta): (0) u^0 + (0) u^1 + (0) u^2 + (-7/7500) u^3
+      graph 7 (dumbbell): (0) u^0 + (0) u^1 + (0) u^2 + (-9/5000) u^3
+PASS ab00 [u^0] G_Gamma[M_0] = (1/1200, 0, 0, 0, 0, 0, 0): every edge graph loses its leading pole (CONIFOLD_SYMBOL s.3)
+PASS ab00 KEY: g1_Gamma := [u^1] G_Gamma[M_0] = 0 for the graphs with >= 2 edges (3, 5, 6, 7): they are REGULAR for M = M_0 (and for every M_0 exp(uN)): {3: '0', 5: '0', 6: '0', 7: '0'}
+PASS ab00 g1_2 and g1_4 are RATIONAL (colour sums of a Z/5-covariant M_0): g1_2 = 1/750, g1_4 = -13/8000, g1_1 = -7/8000
+PASS ab00 Sum_Gamma g1_Gamma = -2 c_1/1200 = -7/6000 (= [u^1] of F_2^cf s^10 = -7/6000, M-independent); total through u^4 = the point-frame total of this frame
+   per-graph (t_c^-2, t_c^-1, t_c^0) with M_0: g1: 1/1200, 7/24000, 59/480000; g2: 0, 1/750, -23/20000; g3: 0, 0, 1/1000; g4: 0, -13/8000, -451/480000; g5: 0, 0, 1/500; g6: 0, 0, 0; g7: 0, 0, 0
+PASS ab00 with M_0: edge-graph 1/t_c coefficients = g1_Gamma; vertex 1/t_c coefficient = g1_1 + 2 c_1/1200 = 7/24000; total 1/t_c coefficient 0; total t_c^-2 = 1/1200
+   vertex graph with M_0: constant term (t_c^0) 59/480000; [u^2] G_1[M_0] = 67/288000
+   step 2 in 0.2 s
+----------------------------------------------------------------------------------------------------
+(3) directional derivatives D_N L_Gamma = d/d eps|_0 G^0_Gamma[M_0 exp(eps N)]: the 2 x 40 matrix J (graphs 2, 4)
+   40 basis directions N_v (fq_leadsolve.params_to_mats: nu_1, nu_3 symmetric with both entries 1; nu_2 antisymmetric (i,j) = +1, (j,i) = -1), eps = 0..9, frozen sums:
+      direction 10/40 done
+      direction 20/40 done
+      direction 30/40 done
+      direction 40/40 done
+PASS eps-polynomials G^0_Gamma[M_0 exp(eps N_v)] have degree <= 3 (coefficients of eps^4..eps^9 vanish) for all 40 directions and 7 graphs; maximal degree seen 3
+PASS constant terms = L_Gamma(M_0) = (1/1200, 0, .., 0) for every direction
+PASS D_N L_Gamma = 0 identically for the graphs with >= 2 edges: the 4 x 40 block for graphs 3, 5, 6, 7 is zero; rows 1, 2, 4 non-zero
+PASS Sum_Gamma J[Gamma] = 0 (the total 1/1200 is M-independent), i.e. J[1] = -(J[2] + J[4])
+PASS rank of the 2 x 40 matrix J (rows graphs 2, 4) = 2: the two linear equations are independent on the full class
+   J[2] (graph g1 loop) in Q(zeta) via Galois (sigma_m J_v = sgn J_{pi_m v}), 30 non-zero entries:
+      m1_00: -1/400; m1_01: 13/4000 + (13/4000) z + (-1/250) z^3; m1_02: 13/4000 + (-1/250) z + (13/4000) z^2; m1_03: 29/4000 + (1/250) z + (1/250) z^2 + (29/4000) z^3; m1_04: (-13/4000) z + (-29/4000) z^2 + (-13/4000) z^3; m1_11: (-1/400) z; m1_12: 1/250 + (29/4000) z + (29/4000) z^2 + (1/250) z^3; m1_13: (13/4000) z + (-1/250) z^2 + (13/4000) z^3; m1_14: -29/4000 + (-13/4000) z^2 + (-13/4000) z^3; m1_22: (-1/400) z^2; m1_23: -1/250 + (13/4000) z^2 + (13/4000) z^3; m1_24: -13/4000 + (-13/4000) z + (-29/4000) z^3; m1_33: (-1/400) z^3; m1_34: -13/4000 + (-29/4000) z + (-13/4000) z^2; m1_44: 1/400 + (1/400) z + (1/400) z^2 + (1/400) z^3; m2_01: -1/300 + (1/600) z + (1/150) z^2 + (1/300) z^3; m2_02: -1/100 + (-1/300) z + (-1/200) z^2 + (-1/150) z^3; m2_03: -1/150 + (1/300) z + (-1/300) z^2 + (-1/600) z^3; m2_04: -1/200 + (-1/600) z + (1/600) z^2 + (1/200) z^3; m2_12: -1/300 + (-1/150) z + (-1/100) z^2 + (-1/200) z^3; m2_13: -1/600 + (1/200) z + (-1/200) z^2 + (1/600) z^3; m2_14: 1/600 + (1/300) z + (-1/300) z^2 + (1/150) z^3; m2_23: 1/200 + (1/100) z + (1/150) z^2 + (1/300) z^3; m2_24: 1/150 + (1/200) z + (1/300) z^2 + (1/100) z^3; m2_34: -1/300 + (-1/150) z + (-1/600) z^2 + (1/300) z^3; m3_00: -1/48; m3_11: (-1/48) z^3; m3_22: (-1/48) z; m3_33: 1/48 + (1/48) z + (1/48) z^2 + (1/48) z^3; m3_44: (-1/48) z^2
+   J[4] (graph g1-g1) in Q(zeta) via Galois (sigma_m J_v = sgn J_{pi_m v}), 40 non-zero entries:
+      m1_00: 1/3200; m1_01: -1/2048 + (-1/2048) z + (-43/51200) z^3; m1_02: -1/2048 + (-43/51200) z + (-1/2048) z^2; m1_03: 9/25600 + (43/51200) z + (43/51200) z^2 + (9/25600) z^3; m1_04: (1/2048) z + (-9/25600) z^2 + (1/2048) z^3; m1_11: (1/3200) z; m1_12: 43/51200 + (9/25600) z + (9/25600) z^2 + (43/51200) z^3; m1_13: (-1/2048) z + (-43/51200) z^2 + (-1/2048) z^3; m1_14: -9/25600 + (1/2048) z^2 + (1/2048) z^3; m1_22: (1/3200) z^2; m1_23: -43/51200 + (-1/2048) z^2 + (-1/2048) z^3; m1_24: 1/2048 + (1/2048) z + (-9/25600) z^3; m1_33: (1/3200) z^3; m1_34: 1/2048 + (-9/25600) z + (1/2048) z^2; m1_44: -1/3200 + (-1/3200) z + (-1/3200) z^2 + (-1/3200) z^3; m2_01: -1/1280 + (-1/1280) z + (-1/1280) z^2 + (-1/640) z^3; m2_02: (-1/1280) z + (1/1280) z^3; m2_03: 1/1280 + (1/1280) z + (1/640) z^2 + (1/1280) z^3; m2_04: (1/1280) z + (-1/1280) z^2; m2_12: -1/1280 + (1/1280) z; m2_13: 1/1280 + (-1/1280) z^3; m2_14: -1/1280 + (-1/640) z + (-1/1280) z^2 + (-1/1280) z^3; m2_23: (-1/1280) z^2 + (1/1280) z^3; m2_24: -1/1280 + (1/1280) z^2; m2_34: 1/640 + (1/1280) z + (1/1280) z^2 + (1/1280) z^3; m3_00: 1/1152; m3_01: -1/576 + (-1/576) z + (-1/576) z^2 + (-1/576) z^3; m3_02: (1/576) z^3; m3_03: (1/576) z^2; m3_04: (1/576) z; m3_11: (1/1152) z^3; m3_12: (1/576) z^2; m3_13: (1/576) z; m3_14: 1/576; m3_22: (1/1152) z; m3_23: 1/576; m3_24: -1/576 + (-1/576) z + (-1/576) z^2 + (-1/576) z^3; m3_33: -1/1152 + (-1/1152) z + (-1/1152) z^2 + (-1/1152) z^3; m3_34: (1/576) z^3; m3_44: (1/1152) z^2
+PASS cross-check: J . coords(dexp(Y_e)) = mu-gradient of the stored leading polynomials L_Gamma (symbol_result.json) at the tautological point, all 7 graphs x 40 directions (0 failures); dexp(Y) = Y - [mu,Y]/2 + [mu,[mu,Y]]/6 verified numerically
+   step 3 in 33.5 s
+----------------------------------------------------------------------------------------------------
+(4) solving J n = -(g1_2, g1_4): full class and the classes (i)-(iii), RIGHT (M_0 exp(uN)) and LEFT (exp(uN') M_0) placement
+   system: J[2] . n = -g1_2 = -1/750,  J[4] . n = -g1_4 = 13/8000
+   (i) covariant scalar: nu_1 = b_1 diag(zeta^-i), nu_3 = b_3 diag(zeta^-3i), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 2 matrix rank 2, consistent True, solution dimension 0
+      equation graph 2: (-1/80) b_1 + (-5/48) b_3 = -1/750
+      equation graph 4: (1/640) b_1 + (5/1152) b_3 = 13/8000
+PASS ab00:cov:right: 2 x 2 matrix invertible (rank 2, the two equations independent), unique solution; RATIONAL entries and solution
+      solution (b_1, b_3) = (113/75, -21/125)
+   (i) covariant scalar: nu_1 = b_1 diag(zeta^-i), nu_3 = b_3 diag(zeta^-3i), LEFT placement [M = exp(uN') M_0]: restricted 2 x 2 matrix rank 2, consistent True, solution dimension 0
+      equation graph 2: (-1/120) b_1 + (-5/48) b_3 = -1/750
+      equation graph 4: (-1/1440) b_1 + (5/1152) b_3 = 13/8000
+PASS ab00:cov:left: 2 x 2 matrix invertible (rank 2, the two equations independent), unique solution; RATIONAL entries and solution
+      solution (b_1, b_3) = (-113/75, 2/15)
+      right and left placement span the same N-space: False (combined rank 3)
+   (ii) diagonal, Fourier modes X_a, Y_a (x_i = (1/5) Sum_a zeta^-ai X_a), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 10 matrix rank 2, consistent True, solution dimension 8
+      graph 2 row (X_0..X_4 | Y_0..Y_4): [0, -1/400, 0, 0, 0, 0, 0, 0, -1/48, 0]
+      graph 4 row (X_0..X_4 | Y_0..Y_4): [0, 1/3200, 0, 0, 0, 0, 0, 0, 1/1152, 0]
+PASS ab00:diag:right: restricted matrix RATIONAL in the Fourier modes; rank 2; consistent True
+      particular solution (RREF, free modes 0): X1 = 113/15, Y3 = -21/25; nullspace dimension 8
+      i.e. x_i = [113/75, -113/75 + (-113/75) z + (-113/75) z^2 + (-113/75) z^3, (113/75) z^3, (113/75) z^2, (113/75) z], y_i = [-21/125, (-21/125) z^2, 21/125 + (21/125) z + (21/125) z^2 + (21/125) z^3, (-21/125) z, (-21/125) z^3] (Q(zeta) via sigma_m x_i = x_{mi})
+   (ii) diagonal, Fourier modes X_a, Y_a (x_i = (1/5) Sum_a zeta^-ai X_a), LEFT placement [M = exp(uN') M_0]: restricted 2 x 10 matrix rank 2, consistent True, solution dimension 8
+      graph 2 row (X_0..X_4 | Y_0..Y_4): [0, -1/600, 0, 0, 0, 0, 0, 0, -1/48, 0]
+      graph 4 row (X_0..X_4 | Y_0..Y_4): [0, -1/7200, 0, 0, 0, 0, 0, 0, 1/1152, 0]
+PASS ab00:diag:left: restricted matrix RATIONAL in the Fourier modes; rank 2; consistent True
+      particular solution (RREF, free modes 0): X1 = -113/15, Y3 = 2/3; nullspace dimension 8
+      i.e. x_i = [-113/75, 113/75 + (113/75) z + (113/75) z^2 + (113/75) z^3, (-113/75) z^3, (-113/75) z^2, (-113/75) z], y_i = [2/15, (2/15) z^2, -2/15 + (-2/15) z + (-2/15) z^2 + (-2/15) z^3, (2/15) z, (2/15) z^3] (Q(zeta) via sigma_m x_i = x_{mi})
+      right and left placement span the same N-space: False (combined rank 14)
+   (iii) circulant (Z/5-covariant): c_1(0..2), c_2(1..2), c_3(0..2), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 8 matrix rank 2, consistent True, solution dimension 6
+      graph 2 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/80, 13/800 + (13/800) z + (-1/50) z^3, 13/800 + (-1/50) z + (13/800) z^2, -1/60 + (1/120) z + (1/30) z^2 + (1/60) z^3, -1/20 + (-1/60) z + (-1/40) z^2 + (-1/30) z^3, -5/48, 0, 0]
+      graph 4 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [1/640, -5/2048 + (-5/2048) z + (-43/10240) z^3, -5/2048 + (-43/10240) z + (-5/2048) z^2, -1/256 + (-1/256) z + (-1/256) z^2 + (-1/128) z^3, (-1/256) z + (1/256) z^3, 5/1152, -5/576 + (-5/576) z + (-5/576) z^2 + (-5/576) z^3, (5/576) z^3]
+PASS ab00:circ:right: consistent, rank 2, solution set of dimension 6; the covariant-scalar solution (c_1(0) = b_1, c_3(0) = b_3) is a particular solution
+   (iii) circulant (Z/5-covariant): c_1(0..2), c_2(1..2), c_3(0..2), LEFT placement [M = exp(uN') M_0]: restricted 2 x 8 matrix rank 2, consistent True, solution dimension 6
+      graph 2 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/120, (-1/60) z^3, (-1/60) z, 0, 0, -5/48, 0, 0]
+      graph 4 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/1440, (-1/720) z^3, (-1/720) z, -1/288 + (-1/288) z + (-1/288) z^2 + (-1/144) z^3, (-1/288) z + (1/288) z^3, 5/1152, -5/576 + (-5/576) z + (-5/576) z^2 + (-5/576) z^3, (5/576) z^3]
+PASS ab00:circ:left: consistent, rank 2, solution set of dimension 6; the covariant-scalar solution (c_1(0) = b_1, c_3(0) = b_3) is a particular solution
+PASS ab00:circ: the circulant class is Ad(M_0)-stable (M_0 is circulant): right and left placement give the SAME set of N (combined rank 8 = 8)
+   (iv) full sp: 40 coordinates, RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 40 matrix rank 2, consistent True, solution dimension 38
+PASS ab00:full:right: rank 2, consistent, affine solution space of dimension 38; the covariant-scalar solution is a particular solution
+   (iv) full sp: 40 coordinates, LEFT placement [M = exp(uN') M_0]: restricted 2 x 40 matrix rank 2, consistent True, solution dimension 38
+PASS ab00:full:left: rank 2, consistent, affine solution space of dimension 38; the covariant-scalar solution is a particular solution
+PASS ab00:full: left = right as sets (Ad(M_0) invertible, combined rank 40 = 40)
+   step 4 in 0.1 s
+----------------------------------------------------------------------------------------------------
+(5) verification by eps -> u: hatted sums with M_0 exp(eps N) at eps = 0..9, P_Gamma(eps; u), eps = u
+   ab00:cov:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 40901/172800, [2196330030410660668 mod p], [115566187092090805 mod p]]
+      graph 2: [0, 0, -290179/540000, -321163/759375, [685576591241858492 mod p]]
+      graph 3: [0, 0, 3373/11250, 244576/84375, 83648/703125]
+      graph 4: [0, 0, -287/11520, [745958922755526423 mod p], -347431/3000000]
+      graph 5: [0, 0, 61/2250, [415434910138761414 mod p], 2006009/6750000]
+      graph 6: [0, 0, 0, -454016/253125, -7469/140625]
+      graph 7: [0, 0, 0, -238144/84375, -26413/140625]
+PASS ab00:cov:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:cov:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:cov:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 40901/172800, [2196330030410660668 mod p], [115566187092090805 mod p];  edge graphs' u^2 coefficients: -290179/540000, 3373/11250, -287/11520, 61/2250, 0, 0
+   ab00:cov:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, [1211817823573743694 mod p], [821532704389457029 mod p], [115566187092090805 mod p]]
+      graph 2: [0, 0, -64183/108000, [1818535636712353409 mod p], [2155095055181675595 mod p]]
+      graph 3: [0, 0, 1517/5625, -25823/16875, 46697/703125]
+      graph 4: [0, 0, [264103180708004846 mod p], [2016783035662178961 mod p], -1000709/9000000]
+      graph 5: [0, 0, 1079/16875, -822167/253125, [1694476439597430738 mod p]]
+      graph 6: [0, 0, 0, 281162/253125, -1087/28125]
+      graph 7: [0, 0, 0, 132496/84375, -18616/140625]
+PASS ab00:cov:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:cov:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:cov:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: [1211817823573743694 mod p], [821532704389457029 mod p], [115566187092090805 mod p];  edge graphs' u^2 coefficients: -64183/108000, 1517/5625, [264103180708004846 mod p], 1079/16875, 0, 0
+   ab00:diag:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 40901/172800, [2196330030410660668 mod p], [115566187092090805 mod p]]
+      graph 2: [0, 0, -290179/540000, -321163/759375, [685576591241858492 mod p]]
+      graph 3: [0, 0, 3373/11250, 244576/84375, 83648/703125]
+      graph 4: [0, 0, -287/11520, [745958922755526423 mod p], -347431/3000000]
+      graph 5: [0, 0, 61/2250, [415434910138761414 mod p], 2006009/6750000]
+      graph 6: [0, 0, 0, -454016/253125, -7469/140625]
+      graph 7: [0, 0, 0, -238144/84375, -26413/140625]
+PASS ab00:diag:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:diag:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:diag:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 40901/172800, [2196330030410660668 mod p], [115566187092090805 mod p];  edge graphs' u^2 coefficients: -290179/540000, 3373/11250, -287/11520, 61/2250, 0, 0
+   ab00:diag:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, [1211817823573743694 mod p], [821532704389457029 mod p], [115566187092090805 mod p]]
+      graph 2: [0, 0, -64183/108000, [1818535636712353409 mod p], [2155095055181675595 mod p]]
+      graph 3: [0, 0, 1517/5625, -25823/16875, 46697/703125]
+      graph 4: [0, 0, [264103180708004846 mod p], [2016783035662178961 mod p], -1000709/9000000]
+      graph 5: [0, 0, 1079/16875, -822167/253125, [1694476439597430738 mod p]]
+      graph 6: [0, 0, 0, 281162/253125, -1087/28125]
+      graph 7: [0, 0, 0, 132496/84375, -18616/140625]
+PASS ab00:diag:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:diag:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:diag:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: [1211817823573743694 mod p], [821532704389457029 mod p], [115566187092090805 mod p];  edge graphs' u^2 coefficients: -64183/108000, 1517/5625, [264103180708004846 mod p], 1079/16875, 0, 0
+   ab00:circ:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 40901/172800, [2196330030410660668 mod p], [115566187092090805 mod p]]
+      graph 2: [0, 0, -290179/540000, -321163/759375, [685576591241858492 mod p]]
+      graph 3: [0, 0, 3373/11250, 244576/84375, 83648/703125]
+      graph 4: [0, 0, -287/11520, [745958922755526423 mod p], -347431/3000000]
+      graph 5: [0, 0, 61/2250, [415434910138761414 mod p], 2006009/6750000]
+      graph 6: [0, 0, 0, -454016/253125, -7469/140625]
+      graph 7: [0, 0, 0, -238144/84375, -26413/140625]
+PASS ab00:circ:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:circ:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:circ:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 40901/172800, [2196330030410660668 mod p], [115566187092090805 mod p];  edge graphs' u^2 coefficients: -290179/540000, 3373/11250, -287/11520, 61/2250, 0, 0
+   ab00:circ:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, [1211817823573743694 mod p], [821532704389457029 mod p], [115566187092090805 mod p]]
+      graph 2: [0, 0, -64183/108000, [1818535636712353409 mod p], [2155095055181675595 mod p]]
+      graph 3: [0, 0, 1517/5625, -25823/16875, 46697/703125]
+      graph 4: [0, 0, [264103180708004846 mod p], [2016783035662178961 mod p], -1000709/9000000]
+      graph 5: [0, 0, 1079/16875, -822167/253125, [1694476439597430738 mod p]]
+      graph 6: [0, 0, 0, 281162/253125, -1087/28125]
+      graph 7: [0, 0, 0, 132496/84375, -18616/140625]
+PASS ab00:circ:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:circ:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:circ:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: [1211817823573743694 mod p], [821532704389457029 mod p], [115566187092090805 mod p];  edge graphs' u^2 coefficients: -64183/108000, 1517/5625, [264103180708004846 mod p], 1079/16875, 0, 0
+   ab00:full:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, 40901/172800, [2196330030410660668 mod p], [115566187092090805 mod p]]
+      graph 2: [0, 0, -290179/540000, -321163/759375, [685576591241858492 mod p]]
+      graph 3: [0, 0, 3373/11250, 244576/84375, 83648/703125]
+      graph 4: [0, 0, -287/11520, [745958922755526423 mod p], -347431/3000000]
+      graph 5: [0, 0, 61/2250, [415434910138761414 mod p], 2006009/6750000]
+      graph 6: [0, 0, 0, -454016/253125, -7469/140625]
+      graph 7: [0, 0, 0, -238144/84375, -26413/140625]
+PASS ab00:full:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:full:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:full:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 40901/172800, [2196330030410660668 mod p], [115566187092090805 mod p];  edge graphs' u^2 coefficients: -290179/540000, 3373/11250, -287/11520, 61/2250, 0, 0
+   ab00:full:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -7/6000, [1211817823573743694 mod p], [821532704389457029 mod p], [115566187092090805 mod p]]
+      graph 2: [0, 0, -64183/108000, [1818535636712353409 mod p], [2155095055181675595 mod p]]
+      graph 3: [0, 0, 1517/5625, -25823/16875, 46697/703125]
+      graph 4: [0, 0, [264103180708004846 mod p], [2016783035662178961 mod p], -1000709/9000000]
+      graph 5: [0, 0, 1079/16875, -822167/253125, [1694476439597430738 mod p]]
+      graph 6: [0, 0, 0, 281162/253125, -1087/28125]
+      graph 7: [0, 0, 0, 132496/84375, -18616/140625]
+PASS ab00:full:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab00:full:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -7/6000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab00:full:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: [1211817823573743694 mod p], [821532704389457029 mod p], [115566187092090805 mod p];  edge graphs' u^2 coefficients: -64183/108000, 1517/5625, [264103180708004846 mod p], 1079/16875, 0, 0
+PASS ab00: a RANDOM point of the 38-dimensional solution space (particular + random nullspace combination) also regularises all six edge graphs (eps-degree 3)
+      (vertex graph there: [1/1200, -7/6000, [1537353532133921569 mod p], [2056690150183728248 mod p], [115566187092090805 mod p]])
+   step 5 in 13.6 s
+   full s-series picture: every hatted factor is a u-series, so after eps = u every colour-summed graph term is s^-10 x (u-series):
+   the s^k coefficients with 5 not dividing k vanish identically for every graph and every N (checked: is_u_series on all series above).
+----------------------------------------------------------------------------------------------------
+(6) the conifold-frame ambiguity: varpi^cf_0 = f_0 + alpha g + beta f_2 at (alpha, beta) = (1/3, -2/7)
+   varpi^cf_0 = (1)x^0 + (1/3)x^1 + (-11/210)x^2 + (-6574/39375)x^3 + O(x^22);  t_c = (1)x^1 + (11/30)x^2 + (751/1575)x^3 + O(x^8)
+PASS ab13 the conifold SYMBOL is independent of (alpha, beta): R^_{a,n}^{(i)} identical for all (a, i, n), n <= 6 (so J is unchanged)
+PASS ab13 xhat = varpi^cf_0(u) changes at O(u) (xhat_1 = alpha = 1/3) while xhat(0) = 1
+PASS ab13 HatRows: all Qhat[a][i][n] = Q s^{4n+1-c_a} and xhat = x/s are pure u-series (only s^{5k} terms), n <= 6
+PASS ab13 HatRows: every Qhat has valuation 0 with non-zero constant term, xhat = 1 + O(u); minimal s-precision 22 (u^0..u^4 known)
+PASS ab13 HatRows: Qhat|_{u=0} = the conifold symbol R^ (fq_symbol.Symbol.Rh) for all (a, i, n)
+PASS ab13 (a) s^{-10} x hatted sums at M = 1 = point-frame s-series sums (GraphSummer(SRows, 1)) through s^10, all 7 graphs
+PASS ab13 (b) [u^0] of the hatted sums at M = 1 = frozen sums = 1807/3072000, -811/256000, -57/64000, 843/1024000, 3/51200, 87/32000, 9/12800; total 1/1200
+PASS ab13 (b) [u^0] of the hatted sums at 2 random symplectic M (coefficient matrices read as [zhat^k]) = fq_leadsolve.frozen_sums at the same M
+PASS ab13 (c) hatted sums at random M are pure u-series (no s^k, 5 does not divide k, through the precision)
+   point frame total F_2^cf s^10 at this frame: (1/1200) u^0 + (-11/18000) u^1 + (-8581/1512000) u^2 + ([676169790003632145 mod p]) u^3 + ([1247217489047021831 mod p]) u^4
+PASS ab13 point frame total: [u^0] = 1/1200 and [u^1] = -2 c_1/1200 (so that the t_c^-1 coefficient vanishes), c_1 = 11/30
+   t_c = (1)x^1 + (11/30)x^2 + (751/1575)x^3 + O(x^8) (c_1 = 11/30): T_Gamma = a_0 t_c^-2 + (a_1 + 2 c_1 a_0) t_c^-1 + ...; per graph (t_c^-2, t_c^-1, t_c^0):
+      graph 1: 1807/3072000, [1931870251076338703 mod p], [1226570327979116006 mod p]
+      graph 2: -811/256000, -2371/3840000, [341924036590221216 mod p]
+      graph 3: -57/64000, -147/64000, [793246521507059945 mod p]
+      graph 4: 843/1024000, [543675597856079330 mod p], [1144999003398643379 mod p]
+      graph 5: 3/51200, -17/153600, [632734923858706227 mod p]
+      graph 6: 87/32000, 317/160000, [1349937981224487750 mod p]
+      graph 7: 9/12800, 67/64000, [1100033203588558909 mod p]
+PASS ab13 point frame in t_c: per-graph t_c^-2 = c_Gamma unchanged (the t_c^-1 coefficients may change with alpha, beta: logged)
+PASS ab13 point frame total in t_c: (1/1200) t_c^-2 + 0 t_c^-1 + constant -313/60000
+   step 1 in 0.9 s
+PASS ab13 M_0 := SympM(mu_1, mu_2, mu_3) reproduces R~ mod zhat^4 exactly: M_0[k] = C_k for k = 0..3
+   hatted sums G_Gamma[M_0](u) with the tautological M_0, through u^4:
+      graph 1 (genus-2 vertex): (1/1200) u^0 + (-23/72000) u^1 + (-2089/6048000) u^2 + ([615313041886942062 mod p]) u^3
+      graph 2 (g1 loop): (0) u^0 + (1/750) u^1 + (-1541/252000) u^2 + (503/175000) u^3
+      graph 3 (g0 two loops): (0) u^0 + (0) u^1 + (1/1000) u^2 + (-641/157500) u^3
+      graph 4 (g1-g1): (0) u^0 + (-13/8000) u^1 + (1/134400) u^2 + ([2173093614135713864 mod p]) u^3
+      graph 5 (g0 loop - g1): (0) u^0 + (0) u^1 + (-1/4500) u^2 + (533/378000) u^3
+      graph 6 (theta): (0) u^0 + (0) u^1 + (0) u^2 + (-11/22500) u^3
+      graph 7 (dumbbell): (0) u^0 + (0) u^1 + (0) u^2 + (-1/45000) u^3
+PASS ab13 [u^0] G_Gamma[M_0] = (1/1200, 0, 0, 0, 0, 0, 0): every edge graph loses its leading pole (CONIFOLD_SYMBOL s.3)
+PASS ab13 KEY: g1_Gamma := [u^1] G_Gamma[M_0] = 0 for the graphs with >= 2 edges (3, 5, 6, 7): they are REGULAR for M = M_0 (and for every M_0 exp(uN)): {3: '0', 5: '0', 6: '0', 7: '0'}
+PASS ab13 g1_2 and g1_4 are RATIONAL (colour sums of a Z/5-covariant M_0): g1_2 = 1/750, g1_4 = -13/8000, g1_1 = -23/72000
+PASS ab13 Sum_Gamma g1_Gamma = -2 c_1/1200 = -11/18000 (= [u^1] of F_2^cf s^10, M-independent); total through u^4 = the point-frame total of this frame
+   per-graph (t_c^-2, t_c^-1, t_c^0) with M_0: g1: 1/1200, 7/24000, 317/1440000; g2: 0, 1/750, -2363/420000; g3: 0, 0, 1/1000; g4: 0, -13/8000, -659/1120000; g5: 0, 0, -1/4500; g6: 0, 0, 0; g7: 0, 0, 0
+PASS ab13 with M_0: edge-graph 1/t_c coefficients = g1_Gamma; vertex 1/t_c coefficient = g1_1 + 2 c_1/1200 = 7/24000; total 1/t_c coefficient 0; total t_c^-2 = 1/1200
+   vertex graph with M_0: constant term (t_c^0) 317/1440000; [u^2] G_1[M_0] = -2089/6048000
+   step 2 in 0.2 s
+PASS ab13 M_0 (colour matrices C_0..C_3) identical to that of (0, 0)
+PASS ab13 J column 7 re-derived from FrozenRows(sym2) equals the (0, 0) one (J depends on the symbol only)
+   system: J[2] . n = -g1_2 = -1/750,  J[4] . n = -g1_4 = 13/8000
+   (i) covariant scalar: nu_1 = b_1 diag(zeta^-i), nu_3 = b_3 diag(zeta^-3i), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 2 matrix rank 2, consistent True, solution dimension 0
+      equation graph 2: (-1/80) b_1 + (-5/48) b_3 = -1/750
+      equation graph 4: (1/640) b_1 + (5/1152) b_3 = 13/8000
+PASS ab13:cov:right: 2 x 2 matrix invertible (rank 2, the two equations independent), unique solution; RATIONAL entries and solution
+      solution (b_1, b_3) = (113/75, -21/125)
+   (i) covariant scalar: nu_1 = b_1 diag(zeta^-i), nu_3 = b_3 diag(zeta^-3i), LEFT placement [M = exp(uN') M_0]: restricted 2 x 2 matrix rank 2, consistent True, solution dimension 0
+      equation graph 2: (-1/120) b_1 + (-5/48) b_3 = -1/750
+      equation graph 4: (-1/1440) b_1 + (5/1152) b_3 = 13/8000
+PASS ab13:cov:left: 2 x 2 matrix invertible (rank 2, the two equations independent), unique solution; RATIONAL entries and solution
+      solution (b_1, b_3) = (-113/75, 2/15)
+      right and left placement span the same N-space: False (combined rank 3)
+   (ii) diagonal, Fourier modes X_a, Y_a (x_i = (1/5) Sum_a zeta^-ai X_a), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 10 matrix rank 2, consistent True, solution dimension 8
+      graph 2 row (X_0..X_4 | Y_0..Y_4): [0, -1/400, 0, 0, 0, 0, 0, 0, -1/48, 0]
+      graph 4 row (X_0..X_4 | Y_0..Y_4): [0, 1/3200, 0, 0, 0, 0, 0, 0, 1/1152, 0]
+PASS ab13:diag:right: restricted matrix RATIONAL in the Fourier modes; rank 2; consistent True
+      particular solution (RREF, free modes 0): X1 = 113/15, Y3 = -21/25; nullspace dimension 8
+      i.e. x_i = [113/75, -113/75 + (-113/75) z + (-113/75) z^2 + (-113/75) z^3, (113/75) z^3, (113/75) z^2, (113/75) z], y_i = [-21/125, (-21/125) z^2, 21/125 + (21/125) z + (21/125) z^2 + (21/125) z^3, (-21/125) z, (-21/125) z^3] (Q(zeta) via sigma_m x_i = x_{mi})
+   (ii) diagonal, Fourier modes X_a, Y_a (x_i = (1/5) Sum_a zeta^-ai X_a), LEFT placement [M = exp(uN') M_0]: restricted 2 x 10 matrix rank 2, consistent True, solution dimension 8
+      graph 2 row (X_0..X_4 | Y_0..Y_4): [0, -1/600, 0, 0, 0, 0, 0, 0, -1/48, 0]
+      graph 4 row (X_0..X_4 | Y_0..Y_4): [0, -1/7200, 0, 0, 0, 0, 0, 0, 1/1152, 0]
+PASS ab13:diag:left: restricted matrix RATIONAL in the Fourier modes; rank 2; consistent True
+      particular solution (RREF, free modes 0): X1 = -113/15, Y3 = 2/3; nullspace dimension 8
+      i.e. x_i = [-113/75, 113/75 + (113/75) z + (113/75) z^2 + (113/75) z^3, (-113/75) z^3, (-113/75) z^2, (-113/75) z], y_i = [2/15, (2/15) z^2, -2/15 + (-2/15) z + (-2/15) z^2 + (-2/15) z^3, (2/15) z, (2/15) z^3] (Q(zeta) via sigma_m x_i = x_{mi})
+      right and left placement span the same N-space: False (combined rank 14)
+   (iii) circulant (Z/5-covariant): c_1(0..2), c_2(1..2), c_3(0..2), RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 8 matrix rank 2, consistent True, solution dimension 6
+      graph 2 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/80, 13/800 + (13/800) z + (-1/50) z^3, 13/800 + (-1/50) z + (13/800) z^2, -1/60 + (1/120) z + (1/30) z^2 + (1/60) z^3, -1/20 + (-1/60) z + (-1/40) z^2 + (-1/30) z^3, -5/48, 0, 0]
+      graph 4 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [1/640, -5/2048 + (-5/2048) z + (-43/10240) z^3, -5/2048 + (-43/10240) z + (-5/2048) z^2, -1/256 + (-1/256) z + (-1/256) z^2 + (-1/128) z^3, (-1/256) z + (1/256) z^3, 5/1152, -5/576 + (-5/576) z + (-5/576) z^2 + (-5/576) z^3, (5/576) z^3]
+PASS ab13:circ:right: consistent, rank 2, solution set of dimension 6; the covariant-scalar solution (c_1(0) = b_1, c_3(0) = b_3) is a particular solution
+   (iii) circulant (Z/5-covariant): c_1(0..2), c_2(1..2), c_3(0..2), LEFT placement [M = exp(uN') M_0]: restricted 2 x 8 matrix rank 2, consistent True, solution dimension 6
+      graph 2 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/120, (-1/60) z^3, (-1/60) z, 0, 0, -5/48, 0, 0]
+      graph 4 row (c1_0, c1_1, c1_2, c2_1, c2_2, c3_0, c3_1, c3_2): [-1/1440, (-1/720) z^3, (-1/720) z, -1/288 + (-1/288) z + (-1/288) z^2 + (-1/144) z^3, (-1/288) z + (1/288) z^3, 5/1152, -5/576 + (-5/576) z + (-5/576) z^2 + (-5/576) z^3, (5/576) z^3]
+PASS ab13:circ:left: consistent, rank 2, solution set of dimension 6; the covariant-scalar solution (c_1(0) = b_1, c_3(0) = b_3) is a particular solution
+PASS ab13:circ: the circulant class is Ad(M_0)-stable (M_0 is circulant): right and left placement give the SAME set of N (combined rank 8 = 8)
+   (iv) full sp: 40 coordinates, RIGHT placement [M = M_0 exp(uN)]: restricted 2 x 40 matrix rank 2, consistent True, solution dimension 38
+PASS ab13:full:right: rank 2, consistent, affine solution space of dimension 38; the covariant-scalar solution is a particular solution
+   (iv) full sp: 40 coordinates, LEFT placement [M = exp(uN') M_0]: restricted 2 x 40 matrix rank 2, consistent True, solution dimension 38
+PASS ab13:full:left: rank 2, consistent, affine solution space of dimension 38; the covariant-scalar solution is a particular solution
+PASS ab13:full: left = right as sets (Ad(M_0) invertible, combined rank 40 = 40)
+   step 4 in 0.1 s
+   ab13:cov:right: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with M_0 exp(eps N), degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -11/18000, 475621/2016000, [1026968464992641852 mod p], [1288032830081538417 mod p]]
+      graph 2: [0, 0, -2049853/3780000, [2106178585462764352 mod p], [181575541503056050 mod p]]
+      graph 3: [0, 0, 3373/11250, 1299667/590625, [423769216502996586 mod p]]
+      graph 4: [0, 0, -1937/80640, [104512895829008667 mod p], [59128269117721100 mod p]]
+      graph 5: [0, 0, 28/1125, [27040259028964655 mod p], [587959134469626757 mod p]]
+      graph 6: [0, 0, 0, -351356/253125, [240370163094388289 mod p]]
+      graph 7: [0, 0, 0, -200704/84375, -1629632/1265625]
+PASS ab13:cov:right: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab13:cov:right: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -11/18000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab13:cov:right: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: 475621/2016000, [1026968464992641852 mod p], [1288032830081538417 mod p];  edge graphs' u^2 coefficients: -2049853/3780000, 3373/11250, -1937/80640, 28/1125, 0, 0
+   ab13:cov:left: eps-polynomial P_Gamma(eps; u) from 10 hatted sums with exp(eps N') M_0, degree in eps 3; eps = u substituted; u-coefficients through u^4:
+      graph 1: [1/1200, -11/18000, [2059074826842813483 mod p], [419581787368929789 mod p], [27443398457673023 mod p]]
+      graph 2: [0, 0, -459329/756000, [238951840550559871 mod p], [1259490197437968306 mod p]]
+      graph 3: [0, 0, 1517/5625, -6688/3375, [250714057324227514 mod p]]
+      graph 4: [0, 0, [1847311461141335782 mod p], [436293558996274145 mod p], [1253638571563766415 mod p]]
+      graph 5: [0, 0, 1577/22500, [1854300305582504768 mod p], [1207337298551449571 mod p]]
+      graph 6: [0, 0, 0, 370262/253125, 6691247/10631250]
+      graph 7: [0, 0, 0, 17689/9375, 4920259/2953125]
+PASS ab13:cov:left: eps-degree <= 3; eps = u: ALL SIX edge graphs are O(u^2) (REGULAR at the conifold point)
+PASS ab13:cov:left: vertex graph [u^0] = 1/1200, [u^1] = -2 c_1/1200 = -11/18000 (1/t_c coefficient 0): the whole polar part (1/1200) t_c^-2 sits in the vertex graph
+PASS ab13:cov:left: total through u^4 = the point-frame total F_2^cf s^10 of this frame (M-independence holds for u-dependent M); all series pure u-series
+      vertex graph u^2, u^3, u^4 coefficients: [2059074826842813483 mod p], [419581787368929789 mod p], [27443398457673023 mod p];  edge graphs' u^2 coefficients: -459329/756000, 1517/5625, [1847311461141335782 mod p], 1577/22500, 0, 0
+   step 5 in 3.1 s
+   summary of the (alpha, beta) dependence:
+   (alpha, beta) = (0, 0) -> (1/3, -2/7): c_1 of t_c 7/10 -> 11/30
+   g1_Gamma: {1: '-7/8000', 2: '1/750', 3: '0', 4: '-13/8000', 5: '0', 6: '0', 7: '0'} -> {1: '-23/72000', 2: '1/750', 3: '0', 4: '-13/8000', 5: '0', 6: '0', 7: '0'}
+   g1_2, g1_4 changed with (alpha, beta): False; g1_1 shifted by 2 alpha/1200: True; at the second frame g1_3 = g1_5 = g1_6 = g1_7 = 0 and Sum g1 = -2 c_1/1200: True
+   per-graph 1/t_c coefficients with M_0: {1: '7/24000', 2: '1/750', 3: '0', 4: '-13/8000', 5: '0', 6: '0', 7: '0'} -> {1: '7/24000', 2: '1/750', 3: '0', 4: '-13/8000', 5: '0', 6: '0', 7: '0'}
+   per-graph 1/t_c coefficients at M = 1 (point frame): {1: '[1931870251076338703 mod p]', 2: '-1771/3840000', 3: '41/12800', 4: '[543675597856079330 mod p]', 5: '-41/153600', 6: '37/160000', 7: '-173/64000'} -> {1: '[1931870251076338703 mod p]', 2: '-2371/3840000', 3: '-147/64000', 4: '[543675597856079330 mod p]', 5: '-17/153600', 6: '317/160000', 7: '67/64000'}
+   covariant-scalar solution (b_1, b_3), right placement: (113/75, -21/125) -> (113/75, -21/125)
+   covariant-scalar solution (b_1, b_3), left placement: (-113/75, 2/15) -> (-113/75, 2/15)
+   covariant-scalar solutions changed with (alpha, beta): {'right': False, 'left': False}
+PASS frame dependence: the totals t_c^-2 = 1/1200 and t_c^-1 = 0 persist at (1/3, -2/7) with M_0 (per-graph values logged above)
+time for prime 2305843009213693951: 56.2 s
+====================================================================================================
+(7) cross-prime comparison: every Q / Q(zeta) value reconstructed at 2^89-1 reduced mod 2^61-1 against the residue there
+PASS all 696 reconstructed values (g1, u- and t_c-coefficients, J rows in Q(zeta), restricted matrices, solutions (b_1, b_3), verification coefficients) agree at both primes: ([], [])
+   values not reconstructible at 2^89-1 (bound 1e10; compared by nothing, residues logged only): 0 []
+PASS step-4 ranks, dimensions and consistency identical at both primes; J rank 2 at both
+   7 values used the 1e13 fallback bound at 2^89-1; all of them are confirmed by their 2^61-1 residues above
+total time 100.6 s
+ALL OU CHECKS PASSED

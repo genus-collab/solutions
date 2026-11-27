@@ -1,0 +1,49 @@
+self-test (3 + 5 zeta - 7 zeta^3)/1920 -> (3 + 5 zeta - 7 zeta^3)/1920 ; bits 11
+== Pi_A
+   c1_0  1   [1 bits: strong]
+   c1_1  0
+   c1_2  (1 + 1 zeta + 1 zeta^2 + 1 zeta^3)/2   [2 bits: strong]
+   c2_1  (-1 - 1 zeta + 1 zeta^2 + 1 zeta^3)/10   [4 bits: strong]
+   c2_2  (-1 - 1 zeta - 2 zeta^2 - 1 zeta^3)/8   [4 bits: strong]
+   c3_0  (18 + 6 zeta^2 + 6 zeta^3)/125   [7 bits: strong]
+   c3_1  (-3 - 69 zeta - 3 zeta^2)/1000   [10 bits: strong]
+   c3_2  (-99 zeta - 777 zeta^2 - 99 zeta^3)/8000   [13 bits: strong]
+   c4_1  (2349 - 567 zeta + 1782 zeta^2 + 891 zeta^3)/40000   [16 bits: strong]
+   c4_2  (9846 + 7173 zeta + 4500 zeta^2 + 14346 zeta^3)/160000   [18 bits: strong]
+   c5_0  0
+   c5_1  (187929 - 76356 zeta^2 - 76356 zeta^3)/800000   [20 bits: strong]
+   c5_2  not reconstructed   [24 bits: generic length, rejected]
+   c6_1  not reconstructed   [28 bits: generic length, rejected]
+   c6_2  0
+== Pi_B
+   c1_0  0
+   c1_1  1   [1 bits: strong]
+   c1_2  -1 zeta^2   [1 bits: strong]
+   c2_1  (-2 + 3 zeta - 1 zeta^2 - 5 zeta^3)/20   [5 bits: strong]
+   c2_2  (3 + 4 zeta + 5 zeta^2 + 8 zeta^3)/20   [5 bits: strong]
+   c3_0  (24 + 24 zeta + 12 zeta^3)/125   [7 bits: strong]
+   c3_1  (-249 - 126 zeta - 126 zeta^2 - 249 zeta^3)/4000   [12 bits: strong]
+   c3_2  (-126 + 123 zeta^2 + 123 zeta^3)/4000   [12 bits: strong]
+   c4_1  (13896 + 3159 zeta - 7578 zeta^2 + 6318 zeta^3)/80000   [17 bits: strong]
+   c4_2  (3159 + 10737 zeta - 10737 zeta^2 - 3159 zeta^3)/80000   [17 bits: strong]
+   c5_0  0
+   c5_1  not reconstructed   [23 bits: generic length, rejected]
+   c5_2  not reconstructed   [23 bits: generic length, rejected]
+   c6_1  not reconstructed   [28 bits: generic length, rejected]
+   c6_2  0
+== isolated
+   c1_0  0
+   c1_1  1   [1 bits: strong]
+   c1_2  not reconstructed   [30 bits: generic length, rejected]
+   c2_1  not reconstructed   [29 bits: generic length, rejected]
+   c2_2  not reconstructed   [29 bits: generic length, rejected]
+   c3_0  not reconstructed   [29 bits: generic length, rejected]
+   c3_1  not reconstructed   [29 bits: generic length, rejected]
+   c3_2  not reconstructed   [30 bits: generic length, rejected]
+   c4_1  not reconstructed   [30 bits: generic length, rejected]
+   c4_2  not reconstructed   [30 bits: generic length, rejected]
+   c5_0  not reconstructed   [30 bits: generic length, rejected]
+   c5_1  not reconstructed   [30 bits: generic length, rejected]
+   c5_2  not reconstructed   [30 bits: generic length, rejected]
+   c6_1  0
+   c6_2  0

@@ -1,0 +1,5 @@
+ev_ctrl: field 2^89-1, frame (0,0), q <= 20; log file logs/ev_ctrl_89.log
+   B1: first K_q != 0 at q = [19]; K_19 = 139886232664514008753762513; predicted dl = -S_95/(96*95) = 139886232664514008753762513
+PASS B1 (B_96 + 1): (H) unchanged at all n <= 104, K_q = 0 for q <= 18, K_19 = dl exactly (the a_19 test sees B_96)
+PASS B2 (B_8 + 1): (H) fails first at n = 7 (found [7, 8, 9])
+EV_CTRL 2^89-1: ALL CHECKS PASSED   (1 s)

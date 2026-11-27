@@ -1,0 +1,17 @@
+==============================================================================================================
+ig_run nat_61: 1 graphs requested, 13 jobs to do (0 already stored), nproc 13, deadline 900 s, started 2026-11-13 13:16:09
+   predicted cost of the queued jobs: 2.7 CPU-h (proxy rate 5e-6 s)
+   t= 149 shard 9/13 E= 5 V=1: 347.7 s, 6 non-zero outer rows   [1/13, wall 348 s]
+   t= 149 shard 1/13 E= 5 V=1: 348.2 s, 6 non-zero outer rows   [2/13, wall 349 s]
+   t= 149 shard 8/13 E= 5 V=1: 348.2 s, 6 non-zero outer rows   [3/13, wall 349 s]
+   t= 149 shard 6/13 E= 5 V=1: 348.2 s, 6 non-zero outer rows   [4/13, wall 349 s]
+   t= 149 shard 2/13 E= 5 V=1: 348.5 s, 6 non-zero outer rows   [5/13, wall 349 s]
+   t= 149 shard 4/13 E= 5 V=1: 348.8 s, 6 non-zero outer rows   [6/13, wall 349 s]
+   t= 149 shard 3/13 E= 5 V=1: 349.3 s, 6 non-zero outer rows   [7/13, wall 350 s]
+   t= 149 shard 7/13 E= 5 V=1: 349.3 s, 6 non-zero outer rows   [8/13, wall 350 s]
+   t= 149 shard 0/13 E= 5 V=1: 349.6 s, 6 non-zero outer rows   [9/13, wall 350 s]
+   t= 149 shard 10/13 E= 5 V=1: 349.6 s, 6 non-zero outer rows   [10/13, wall 350 s]
+   t= 149 shard 5/13 E= 5 V=1: 350.0 s, 6 non-zero outer rows   [11/13, wall 351 s]
+   t= 149 shard 12/13 E= 5 V=1: 350.5 s, 6 non-zero outer rows   [12/13, wall 351 s]
+   t= 149 shard 11/13 E= 5 V=1: 350.8 s, 6 non-zero outer rows   [13/13, wall 352 s]
+ig_run nat_61: 13 jobs finished in 352 s wall; queue empty

@@ -1,0 +1,48 @@
+ev_reduced: field 2^89-1, mode qrr, frame (0, 0), q <= 40 (zhat^200, u^160), (H) for n <= 204, REG/Ghat_22 for q <= 40
+   log file logs/ev_reduced_89_qrr_0_0_200.log
+   setup (periods, tau^m, model rows to t^200, u^160) in 0.4 s; dK_q/df_5q = 1
+   z^5  : f^QRR = 579722683034656735913912632; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 1..4 ok; 0 s
+   z^10 : f^QRR = 13150294379338413598821092; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 6..9 ok; 0 s
+   z^15 : f^QRR = 168458200486516949917241880; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 11..14 ok; 0 s
+   z^20 : f^QRR = 470435170936144302806473263; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 16..19 ok; 1 s
+   z^25 : f^QRR = 339767100678547781702105236; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 21..24 ok; 1 s
+   z^30 : f^QRR = 181677836187864173960414503; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 26..29 ok; 1 s
+   z^35 : f^QRR = 231475542529632714357457391; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 31..34 ok; 1 s
+   z^40 : f^QRR = 235260669571785909328266731; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 36..39 ok; 1 s
+   z^45 : f^QRR = 412119537937798851695769667; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 41..44 ok; 1 s
+   z^50 : f^QRR = 47669431669957505116170141; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 46..49 ok; 1 s
+   z^55 : f^QRR = 473959560267588326789207759; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 51..54 ok; 1 s
+   z^60 : f^QRR = 116090506856662756109582886; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 56..59 ok; 1 s
+   z^65 : f^QRR = 493674035166193165917377765; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 61..64 ok; 1 s
+   z^70 : f^QRR = 594937527230752489362701005; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 66..69 ok; 1 s
+   z^75 : f^QRR = 207736532048360763253641687; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 71..74 ok; 1 s
+   z^80 : f^QRR = 534112563584637597180763134; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 76..79 ok; 1 s
+   z^85 : f^QRR = 193172966873244907289433654; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 81..84 ok; 1 s
+   z^90 : f^QRR = 588368790122208611756500737; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 86..89 ok; 1 s
+   z^95 : f^QRR = 477103987333876915965784994; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 91..94 ok; 1 s
+   z^100: f^QRR = 233563235777799926595113662; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 96..99 ok; 1 s
+   z^105: f^QRR = 375835378557022362876167157; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 101..104 ok; 2 s
+   z^110: f^QRR = 425441563564779482661457281; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 106..109 ok; 2 s
+   z^115: f^QRR = 114661520674078729073040386; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 111..114 ok; 2 s
+   z^120: f^QRR = 306817766534098560557508230; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 116..119 ok; 2 s
+   z^125: f^QRR = 510749351786943805208536992; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 121..124 ok; 2 s
+   z^130: f^QRR = 232337744477797781089586969; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 126..129 ok; 2 s
+   z^135: f^QRR = 502299000206791946030050302; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 131..134 ok; 3 s
+   z^140: f^QRR = 360851768305633345883634549; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 136..139 ok; 3 s
+   z^145: f^QRR = 331801510443616479277799739; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 141..144 ok; 3 s
+   z^150: f^QRR = 119572493207987028276503238; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 146..149 ok; 4 s
+   z^155: f^QRR = 243991588208707222779108145; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 151..154 ok; 4 s
+   z^160: f^QRR = 392035417584796836036733823; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 156..159 ok; 4 s
+   z^165: f^QRR = 254168971481437739172722379; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 161..164 ok; 5 s
+   z^170: f^QRR = 424676844978952103172792140; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 166..169 ok; 5 s
+   z^175: f^QRR = 274030650968182039016715602; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 171..174 ok; 5 s
+   z^180: f^QRR = 450689937981142497302756428; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 176..179 ok; 6 s
+   z^185: f^QRR = 80400426511081688874106302; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 181..184 ok; 6 s
+   z^190: f^QRR = 169600156883753379879209464; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 186..189 ok; 7 s
+   z^195: f^QRR = 490814016527009837317372708; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 191..194 ok; 8 s
+   z^200: f^QRR = 474353276194801550752269691; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 196..199 ok; 8 s
+PASS (H): ph_n(1) = h_n for all 164 n <= 204 with 5 not | n (no free parameter: the WKB recursion alone): []
+PASS no resonance obstruction at the 40 multiples of 5 <= 204 (40 of them because deg rho_n < 4n/5): polynomial-type solution exists
+PASS (N): K_q = [z^5q] c^act = 0 for q = 1..40, i.e. a_1 = a_3 = .. = 0 through z^200: []
+PASS REG and (R1): [u^j] Ghat_11 = [u^j] Ghat_22 = 0 (j < 4q) and Ghat_22 slot = Ghat_11 slot, q <= 40
+EV_REDUCED 2^89-1 qrr 0_0 q<=40: ALL CHECKS PASSED   (8 s)

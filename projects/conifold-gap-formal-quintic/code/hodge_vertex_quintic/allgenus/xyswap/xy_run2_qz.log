@@ -1,0 +1,12 @@
+field Q(zeta_5) TR done 0.1s
+  (0,3) at ('-4', '-5/3', '-9/4'): closed(EO) = -3659393140755823449/2150406392627045618000 ; equal True TR value rational: True
+  (0,3) at ('-7/5', '-5', '-2'): closed(EO) = -45078550848125/139759778967646464 ; equal True TR value rational: True
+  (0,3) at ('-1', '3/2', '1/3'): closed(EO) = -1608050493/10429311376 ; equal True TR value rational: True
+CHECK omega_{0,3}: closed formula (Thm 7.1, EO sign) = direct TR: True  (0.1s)
+  (1,2) at ('-5/2', '-7/3'): closed(EO) = -4234499204831995392458988556849911/140584563571279825157468123163040000000 ; equal True TR value rational: True
+  (1,2) at ('3/2', '-1/4'): closed(EO) = 1787641036513714576961251968/32748235320360000674953203125 ; equal True TR value rational: True
+  (1,2) at ('1/5', '-8/5'): closed(EO) = 463415249284399926875521838992889892578125/143607976752496527664015133289525263953559552 ; equal True TR value rational: True
+CHECK omega_{1,2}: closed formula (Thm 7.1, EO sign) = direct TR: True  (0.2s)
+  (0,4) at ('-9', '-2', '-5', '2'): closed(EO) = 3212375144301751372173251765322756937/3767595419374291558654051217648568984000000 ; equal True TR value rational: True
+  (0,4) at ('4/5', '-7/2', '-9/5', '8/5'): closed(EO) = 259788064858111979983268847669524184132570671071530111786222765625/2677869914335315523201932400480404742095232128889785616085168522432 ; equal True TR value rational: True
+CHECK omega_{0,4}: closed formula (Thm 7.1, EO sign) = direct TR: True  (0.2s)

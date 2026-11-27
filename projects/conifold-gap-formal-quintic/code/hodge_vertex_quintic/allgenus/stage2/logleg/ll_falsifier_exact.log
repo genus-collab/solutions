@@ -1,0 +1,70 @@
+ll_falsifier.py exact 3,1 2,2 1,3 0,5 2,1 1,2 0,4 0,3 1,1  (allgenus/stage2/logleg, 2026-11-14 10:34)
+Q(zeta5)  omega_{3,1}: 70 e-basis coefficients (26.9 s, incl. lower omegas)
+  [PASS] (3,1) a=1 L-legs, k=0 log legs: 4 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.1 s)
+     e=0 values: [((25,), Fraction(3132675, 1024))]
+  [PASS] (3,1) a=0 k=1: <(-log p)^1>_3 = -1/252 = F_3^(1)(1) = -1/252   [frozen: -1/6300]
+  [PASS] (3,1) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 35)
+  [PASS] (3,1) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 0 []; p^-10: 1 [(-10,)=11575/4]; p^-15: 1 [(-15,)=44775925/64]
+Q(zeta5)  omega_{2,2}: 620 e-basis coefficients (0.0 s, incl. lower omegas)
+  [PASS] (2,2) a=2 L-legs, k=0 log legs: 27 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 15 (0.7 s)
+  [PASS] (2,2) a=1 L-legs, k=1 log legs: 3 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.1 s)
+     e=0 values: [((20,), Fraction(-2048, 1))]
+  [PASS] (2,2) a=0 k=2: <(-log p)^2>_2 = -1/40 = F_2^(2)(1) = -1/40   [frozen: 1/200]
+  [PASS] (2,2) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 30)
+  [PASS] (2,2) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 4 [(-5, 5)=-40, (-5, 10)=-1900]; p^-1: 0 []; p^-2: 1 [(-2, 17)=-17901/8]
+Q(zeta5)  omega_{1,3}: 580 e-basis coefficients (0.0 s, incl. lower omegas)
+  [PASS] (1,3) a=3 L-legs, k=0 log legs: 42 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 46 (1.3 s)
+  [PASS] (1,3) a=2 L-legs, k=1 log legs: 13 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 14 (0.2 s)
+  [PASS] (1,3) a=1 L-legs, k=2 log legs: 2 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.1 s)
+     e=0 values: [((15,), Fraction(-5005, 8))]
+  [PASS] (1,3) a=0 k=3: <(-log p)^3>_1 = -1/6 = F_1^(3)(1) = -1/6   [frozen: -1/6]
+  [PASS] (1,3) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 25)
+  [PASS] (1,3) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 3 [(-5, 5)=-225, (-5, 10)=-2750]; p^-1: 1 [(-1, 11)=-385/8]; p^-2: 2 [(-2, 7)=-7, (-2, 12)=-492]
+Q(zeta5)  omega_{0,5}: 1930 e-basis coefficients (0.3 s, incl. lower omegas)
+  [PASS] (0,5) a=5 L-legs, k=0 log legs: 127 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 401 (11.4 s)
+  [PASS] (0,5) a=4 L-legs, k=1 log legs: 88 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 340 (3.4 s)
+  [PASS] (0,5) a=3 L-legs, k=2 log legs: 42 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 91 (0.8 s)
+  [PASS] (0,5) a=2 L-legs, k=3 log legs: 13 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 14 (0.3 s)
+  [PASS] (0,5) a=1 L-legs, k=4 log legs: 2 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.2 s)
+     e=0 values: [((15,), Fraction(-1155, 1))]
+  [PASS] (0,5) a=0 k=5: <(-log p)^5>_0 = 2 = F_0^(5)(1) = 2   [frozen: -10]
+  [PASS] (0,5) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 25)
+  [PASS] (0,5) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 3 [(-5, 5)=-300, (-5, 10)=-3000]; p^-1: 1 [(-1, 11)=-231]; p^-2: 2 [(-2, 7)=-84, (-2, 12)=-1296]
+Q(zeta5)  omega_{2,1}: 40 e-basis coefficients (0.0 s, incl. lower omegas)
+  [PASS] (2,1) a=1 L-legs, k=0 log legs: 2 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.0 s)
+     e=0 values: [((15,), Fraction(2079, 128))]
+  [PASS] (2,1) a=0 k=1: <(-log p)^1>_2 = 1/120 = F_2^(1)(1) = 1/120   [frozen: -1/600]
+  [PASS] (2,1) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 25)
+  [PASS] (2,1) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 1 [(-5,)=2]; p^-10: 1 [(-10,)=12373/16]; p^-15: 1 [(-15,)=589965/32]
+Q(zeta5)  omega_{1,2}: 60 e-basis coefficients (0.0 s, incl. lower omegas)
+  [PASS] (1,2) a=2 L-legs, k=0 log legs: 4 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 5 (0.0 s)
+  [PASS] (1,2) a=1 L-legs, k=1 log legs: 1 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.0 s)
+     e=0 values: [((10,), Fraction(-20, 1))]
+  [PASS] (1,2) a=0 k=2: <(-log p)^2>_1 = 1/12 = F_1^(2)(1) = 1/12   [frozen: 1/12]
+  [PASS] (1,2) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 20)
+  [PASS] (1,2) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 2 [(-5, 5)=-75, (-5, 10)=-500]; p^-1: 0 []; p^-2: 1 [(-2, 7)=-7]
+Q(zeta5)  omega_{0,4}: 85 e-basis coefficients (0.0 s, incl. lower omegas)
+  [PASS] (0,4) a=4 L-legs, k=0 log legs: 4 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 46 (0.3 s)
+  [PASS] (0,4) a=3 L-legs, k=1 log legs: 6 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 36 (0.1 s)
+  [PASS] (0,4) a=2 L-legs, k=2 log legs: 4 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 9 (0.0 s)
+  [PASS] (0,4) a=1 L-legs, k=3 log legs: 1 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.0 s)
+     e=0 values: [((10,), Fraction(-60, 1))]
+  [PASS] (0,4) a=0 k=4: <(-log p)^4>_0 = -1 = F_0^(4)(1) = -1   [frozen: 5]
+  [PASS] (0,4) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 20)
+  [PASS] (0,4) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 2 [(-5, 5)=-100, (-5, 10)=-500]; p^-1: 1 [(-1, 6)=-12]; p^-2: 2 [(-2, 2)=-4, (-2, 7)=-56]
+Q(zeta5)  omega_{0,3}: 5 e-basis coefficients (0.0 s, incl. lower omegas)
+  [PASS] (0,3) a=3 L-legs, k=0 log legs: 0 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 6 (0.0 s)
+  [PASS] (0,3) a=2 L-legs, k=1 log legs: 0 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 4 (0.0 s)
+     e=0 values: [((1, 4), Fraction(4, 1)), ((2, 3), Fraction(6, 1)), ((3, 2), Fraction(6, 1)), ((4, 1), Fraction(4, 1))]
+  [PASS] (0,3) a=1 L-legs, k=2 log legs: 0 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.0 s)
+     e=0 values: [((5,), Fraction(-5, 1))]
+  [PASS] (0,3) a=0 k=3: <(-log p)^3>_0 = 1 = F_0^(3)(1) = 1   [frozen: -5]
+  [PASS] (0,3) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 15)
+  [PASS] (0,3) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 1 [(-5, 5)=-25]; p^-1: 1 [(-1, 1)=-1]; p^-2: 1 [(-2, 2)=-4]
+Q(zeta5)  omega_{1,1}: 10 e-basis coefficients (0.0 s, incl. lower omegas)
+  [PASS] (1,1) a=1 L-legs, k=0 log legs: 0 singular weight tuples tested (e<0), non-zero: 0; selection violations: 0; e=0 non-zero: 1 (0.0 s)
+     e=0 values: [((5,), Fraction(-5, 8))]
+  [PASS] (1,1) a=0 k=1: <(-log p)^1>_1 = -1/12 = F_1^(1)(1) = -1/12   [frozen: -1/12]
+  [PASS] (1,1) control: legs x, x^2 (functions of x) pair to exactly zero (with log legs, and x with all p^m, Sum m <= 15)
+  [PASS] (1,1) control (must be singular, at least one leg): off-L legs give non-zero e<0 values: p^-5: 1 [(-5,)=15/4]; p^-10: 1 [(-10,)=105/4]; p^-15: 1 [(-15,)=665/8]
+== ALL CHECKS PASSED (48.5 s, 0 failures)

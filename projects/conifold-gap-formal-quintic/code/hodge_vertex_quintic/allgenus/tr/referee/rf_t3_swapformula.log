@@ -1,0 +1,41 @@
+rf_t3_swapformula.py  2026-11-13 20:17
+  [PASS] (a) g = 2: A_g (finite sum) = 1/120, series form = 1/120, -B_2g/(2g) = 1/120
+  [PASS] (a) g = 3: A_g (finite sum) = -1/252, series form = -1/252, -B_2g/(2g) = -1/252
+  [PASS] (a) g = 4: A_g (finite sum) = 1/240, series form = 1/240, -B_2g/(2g) = 1/240
+  [PASS] (a) g = 5: A_g (finite sum) = -1/132, series form = -1/132, -B_2g/(2g) = -1/132
+  [PASS] (a) g = 6: A_g (finite sum) = 691/32760, series form = 691/32760, -B_2g/(2g) = 691/32760
+  [PASS] (a) g = 7: A_g (finite sum) = -1/12, series form = -1/12, -B_2g/(2g) = -1/12
+  [PASS] (a) g = 8: A_g (finite sum) = 3617/8160, series form = 3617/8160, -B_2g/(2g) = 3617/8160
+  [PASS] (a) g = 9: A_g (finite sum) = -43867/14364, series form = -43867/14364, -B_2g/(2g) = -43867/14364
+  [PASS] (a) g = 10: A_g (finite sum) = 174611/6600, series form = 174611/6600, -B_2g/(2g) = 174611/6600
+  [PASS] (a) g = 11: A_g (finite sum) = -77683/276, series form = -77683/276, -B_2g/(2g) = -77683/276
+  [PASS] (a) g = 12: A_g (finite sum) = 236364091/65520, series form = 236364091/65520, -B_2g/(2g) = 236364091/65520
+  [PASS] (a) g = 13: A_g (finite sum) = -657931/12, series form = -657931/12, -B_2g/(2g) = -657931/12
+  [PASS] (a) g = 14: A_g (finite sum) = 3392780147/3480, series form = 3392780147/3480, -B_2g/(2g) = 3392780147/3480
+  [PASS] (b) P = z^4/4, v = 4, g = 2: Res_0 = 1/1920, Res_inf = 0, F_g = -1/3840 (B_2g/(2g(2g-2)) v^(2-2g) = -1/3840)
+  [PASS] (b) P = z^4/4, v = 4, g = 3: Res_0 = -1/64512, Res_inf = 0, F_g = 1/258048 (B_2g/(2g(2g-2)) v^(2-2g) = 1/258048)
+  [PASS] (b) P = z^4/4, v = 4, g = 4: Res_0 = 1/983040, Res_inf = 0, F_g = -1/5898240 (B_2g/(2g(2g-2)) v^(2-2g) = -1/5898240)
+  [PASS] (b) P = z^4/4, v = 4, g = 5: Res_0 = -1/8650752, Res_inf = 0, F_g = 1/69206016 (B_2g/(2g(2g-2)) v^(2-2g) = 1/69206016)
+  [PASS] (b) P = z, v = 2, g = 2: Res_0 = 1/480, Res_inf = 0, F_g = -1/960 (B_2g/(2g(2g-2)) v^(2-2g) = -1/960)
+  [PASS] (b) P = z, v = 2, g = 3: Res_0 = -1/4032, Res_inf = 0, F_g = 1/16128 (B_2g/(2g(2g-2)) v^(2-2g) = 1/16128)
+  [PASS] (b) P = z, v = 2, g = 4: Res_0 = 1/15360, Res_inf = 0, F_g = -1/92160 (B_2g/(2g(2g-2)) v^(2-2g) = -1/92160)
+  [PASS] (b) P = z, v = 2, g = 5: Res_0 = -1/33792, Res_inf = 0, F_g = 1/270336 (B_2g/(2g(2g-2)) v^(2-2g) = 1/270336)
+  [PASS] (b) P = z^2/2 - 3z, v = 5, g = 2: Res_0 = 1/3000, Res_inf = 0, F_g = -1/6000 (B_2g/(2g(2g-2)) v^(2-2g) = -1/6000)
+  [PASS] (b) P = z^2/2 - 3z, v = 5, g = 3: Res_0 = -1/157500, Res_inf = 0, F_g = 1/630000 (B_2g/(2g(2g-2)) v^(2-2g) = 1/630000)
+  [PASS] (b) P = z^2/2 - 3z, v = 5, g = 4: Res_0 = 1/3750000, Res_inf = 0, F_g = -1/22500000 (B_2g/(2g(2g-2)) v^(2-2g) = -1/22500000)
+  [PASS] (b) P = z^2/2 - 3z, v = 5, g = 5: Res_0 = -1/51562500, Res_inf = 0, F_g = 1/412500000 (B_2g/(2g(2g-2)) v^(2-2g) = 1/412500000)
+  [PASS] (b) P = random quartic, v = 7, g = 2: Res_0 = 1/5880, Res_inf = 0, F_g = -1/11760 (B_2g/(2g(2g-2)) v^(2-2g) = -1/11760)
+  [PASS] (b) P = random quartic, v = 7, g = 3: Res_0 = -1/605052, Res_inf = 0, F_g = 1/2420208 (B_2g/(2g(2g-2)) v^(2-2g) = 1/2420208)
+  [PASS] (b) P = random quartic, v = 7, g = 4: Res_0 = 1/28235760, Res_inf = 0, F_g = -1/169414560 (B_2g/(2g(2g-2)) v^(2-2g) = -1/169414560)
+  [PASS] (b) P = random quartic, v = 7, g = 5: Res_0 = -1/760953732, Res_inf = 0, F_g = 1/6087629856 (B_2g/(2g(2g-2)) v^(2-2g) = 1/6087629856)
+  [PASS] (b) P = random quintic, v = 2, g = 2: Res_0 = 1/480, Res_inf = 0, F_g = -1/960 (B_2g/(2g(2g-2)) v^(2-2g) = -1/960)
+  [PASS] (b) P = random quintic, v = 2, g = 3: Res_0 = -1/4032, Res_inf = 0, F_g = 1/16128 (B_2g/(2g(2g-2)) v^(2-2g) = 1/16128)
+  [PASS] (b) P = random quintic, v = 2, g = 4: Res_0 = 1/15360, Res_inf = 0, F_g = -1/92160 (B_2g/(2g(2g-2)) v^(2-2g) = -1/92160)
+  [PASS] (b) P = random quintic, v = 2, g = 5: Res_0 = -1/33792, Res_inf = 0, F_g = 1/270336 (B_2g/(2g(2g-2)) v^(2-2g) = 1/270336)
+  [PASS] (c) mod 2^61-1, two simple poles, g = 2: TR F_g == formula (1.3) == B_2g/(2g(2g-2)) (v1^(2-2g) + v2^(2-2g)); Res_inf = 0 (0.4 s)
+  [PASS] (c) mod 2^61-1, two simple poles, g = 3: TR F_g == formula (1.3) == B_2g/(2g(2g-2)) (v1^(2-2g) + v2^(2-2g)); Res_inf = 0 (1.4 s)
+  [PASS] (c) control: the one-pole value B_4/8 v1^-2 alone does NOT reproduce F_2 of the two-pole curve
+  [PASS] (c) mod 2^89-1, two simple poles, g = 2: TR F_g == formula (1.3) == B_2g/(2g(2g-2)) (v1^(2-2g) + v2^(2-2g)); Res_inf = 0 (0.4 s)
+  [PASS] (c) mod 2^89-1, two simple poles, g = 3: TR F_g == formula (1.3) == B_2g/(2g(2g-2)) (v1^(2-2g) + v2^(2-2g)); Res_inf = 0 (1.3 s)
+  [PASS] (c) control: the one-pole value B_4/8 v1^-2 alone does NOT reproduce F_2 of the two-pole curve
+== ALL CHECKS PASSED (6.5 s, 0 failures)

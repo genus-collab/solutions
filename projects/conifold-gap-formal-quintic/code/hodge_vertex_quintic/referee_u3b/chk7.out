@@ -1,0 +1,18 @@
+== extra[0] at 2^61-1 paired with extra[1] at 2^89-1
+   c2_1  not reconstructed   [30 bits]
+   c2_2  not reconstructed   [29 bits]
+   c3_0  not reconstructed   [29 bits]
+   c3_1  not reconstructed   [29 bits]
+   c3_2  not reconstructed   [30 bits]
+   c4_1  not reconstructed   [29 bits]
+   c4_2  not reconstructed   [30 bits]
+== extra[1] at 2^61-1 paired with extra[0] at 2^89-1
+   c2_1  not reconstructed   [30 bits]
+   c2_2  not reconstructed   [30 bits]
+   c3_0  not reconstructed   [28 bits]
+   c3_1  not reconstructed   [30 bits]
+   c3_2  not reconstructed   [30 bits]
+   c4_1  not reconstructed   [30 bits]
+   c4_2  not reconstructed   [29 bits]
+   sum of the two c2_1: (-54 - 23 zeta - 27 zeta^2 - 31 zeta^3)/30   [6 bits]
+   product of the two c2_1: (841 + 474 zeta + 474 zeta^2 + 841 zeta^3)/1200   [11 bits]

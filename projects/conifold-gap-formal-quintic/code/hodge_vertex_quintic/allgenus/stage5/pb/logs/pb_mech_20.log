@@ -1,0 +1,11 @@
+pb_mech.py 20   (mod 2^61-1; u-orders <= 20)
+  step 1 (CFU): Y_k polynomial in T solved for k <= 20; V = tau^(-5/4) through u^20: PASS; Y_1 = (1+T)/18: PASS
+  step 2: beta(Y) built (1771 terms), 5.6 s
+  grading: pi_(c_b) contains only w^k with k = -b mod 5: PASS
+  step 4: eps_b pi_(c_b) = C0 x hatted first row of the CANONICAL gauge, all b, u^0..u^20, w^0..w^26: PASS
+  control [stored normalisation]: first mismatch (w, u, b) = (5, 4, 0) (predicted (5, 4, 0)): PASS (fails as it must)
+  step 6: sum_b pi_(c_b) s^(-c_b) I^C_(c_b)(v(u),z) = V on all 185 admissible keys (u^1..u^20; 45 of them with z^b, b > 0, where both sides must vanish; 105 non-zero keys): PASS
+    z-powers outside 4 mod 5 present: none (PASS)
+  control [reduction with V -> 1]: coefficients pi_m change: PASS (fails as it must)
+total 6.2 s
+ALL CHECKS PASSED

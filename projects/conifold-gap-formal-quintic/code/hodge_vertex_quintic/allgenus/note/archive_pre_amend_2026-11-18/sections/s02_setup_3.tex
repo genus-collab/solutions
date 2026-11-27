@@ -1,0 +1,36 @@
+% Section 2, part 3 of 8: the corollary of prop:set-cyclicLR; points; Frobenius data.
+
+\begin{cor}[Eigenvalues, idempotents and the fifth-order equation]
+\label{cor:set-cyclicPF5}
+Assume (M) and (G0).
+\begin{itemize}
+\item[(a)] $(H*)^5=(L/C_1)^5$. The eigenvalues of $H*$ are $\mu_i\coloneqq\zeta^iL/C_1$ ($i\in\bbZ/5$), labelled by $\mu_i(0)=\zeta^i$, the classical eigenvalue at $p_i$. The idempotents are
+\[
+e_i=\frac15\sum_{a=0}^4\Bigl(\prod_{b<a}\kappa^{\mathrm{LR}}_b\Bigr)\mu_i^{-a}H^a,\qquad\Delta_i\coloneqq\frac1{\eta(e_i,e_i)}=\frac{C_0^2\,\zeta^{3i}}{L^2}.
+\]
+The canonical coordinates along the line are functions $u_i$ with $\partial_Tu_i=\mu_i$, that is $\Dq u_i=\zeta^iL$; they are determined up to additive constants, the constants of $\Dq$ on $\bbQ(\zeta)\fps q[\logq]$ being $\bbQ(\zeta)$ (as in the proof of \cref{lem:set-periods}; for the conifold chart see \cref{lem:set-canon}).
+\item[(b)] For every solution $v$ of $z\partial_Tv=H*v$ in a differential $\bbQ\fps q$-algebra in which $z$ is a constant, $C_0v_0$ solves $\PFfive$. In particular, for the column $v=R(z)\tilde e_i\re^{u_i/z}$ of \cref{def:set-rows}, the function $\re^{u_i/z}\,z\,L\,\Phi_i(\zh,u)$ solves $\PFfive$: this is the WKB form of colour $i$.
+\end{itemize}
+\end{cor}
+
+\begin{proof}
+(a) By \cref{prop:set-cyclicLR}~(i), $(H*)^5H^a=\prod_b\kappa^{\mathrm{LR}}_b\,H^a=(L/C_1)^5H^a$, so the characteristic polynomial of $H*$ is $x^5-(L/C_1)^5$, with the pairwise distinct roots $\zeta^iL/C_1$, as $L/C_1\in1+q\bbQ\fps q$. The equation $H*x=\mu_ix$ for $x=\sum_ax_aH^a$ reads $x_a=x_{a-1}\kappa^{\mathrm{LR}}_{a-1}/\mu_i$, consistently around the cycle as $\prod_b\kappa^{\mathrm{LR}}_b=\mu_i^5$. As $*$ is commutative and associative with unit $1$, the eigenlines are ideals spanned by idempotents $e_i$ with $\sum_ie_i=1$; for the coefficient $x_0^{(i)}$ of $H^0$ in $e_i$, the coefficient of $H^a$ in $\sum_ie_i=1$ is $\bigl(\prod_{b<a}\kappa^{\mathrm{LR}}_b\bigr)(C_1/L)^a\sum_ix_0^{(i)}\zeta^{-ia}=\delta_{a0}$, whose unique solution is $x_0^{(i)}=1/5$. By the Frobenius property and $\eta(1,H^a)=5\,\delta_{a3}$, $\eta(e_i,e_i)=\eta(1,e_i)=\kappa^{\mathrm{LR}}_0\kappa^{\mathrm{LR}}_1\kappa^{\mathrm{LR}}_2\,\mu_i^{-3}=L^2/(C_0^2\zeta^{3i})$. Finally $\partial_Tu_i=\mu_i$ and $\Dq=C_1\partial_T$ give $\Dq u_i=\zeta^iL$.
+
+(b) By \cref{prop:set-cyclicLR}~(ii), $v_1=z\partial_Tv_0$, $v_2=z^2(\kappa^{\mathrm{LR}}_1)^{-1}\partial_T^2v_0$, $v_3=z^3\partial_T\bigl((\kappa^{\mathrm{LR}}_1)^{-1}\partial_T^2v_0\bigr)$ and, by \eqref{eq:set-McycLR},
+\[
+v_4=z^4(\kappa^{\mathrm{LR}}_3)^{-1}\Mcyc^{\mathrm{LR}}(C_0v_0)=z^4\,\PFfour(C_0v_0).
+\]
+The closing relation $z\partial_Tv_4=\kappa^{\mathrm{LR}}_4v_0$ becomes $z^5C_1^{-1}\Dq\PFfour(C_0v_0)=(C_0/C_1)v_0$, i.e.\ $\PFfive(C_0v_0)=0$ by \cref{lem:set-pf5}. The last statement concerns the rows and is proved after \cref{def:set-rows}.
+\end{proof}
+
+\begin{defn}[Points and variables]
+\label{def:set-points}
+Put $u\coloneqq1-5^5q$ and $s\coloneqq u^{1/5}$, so that $L=u^{-1/5}=s^{-1}$ and $\Dq=q\,\dd/\dd q=-(1-u)\,\dd/\dd u$, and put $\zh\coloneqq z/s^4=L^4z$, the hatted variable. The \emph{large-radius point} is $q=0$ ($u=1$, $L=s=1$, $\zh=z$), the \emph{conifold point} is $u=0$ ($q=5^{-5}$), and the \emph{orbifold point} is $q=\infty$ ($L=0$). Near $q=0$ the functions of the note lie in $\bbQ\fps q[\logq]$; near the conifold point they are Laurent series in $s$, with $\Dq=-\frac{1-s^5}5s^{-4}\frac{\dd}{\dd s}$; the passage is the conifold expansion of \cref{def:set-confexp}.
+\end{defn}
+
+\begin{defn}[Frobenius data and the topological field theory]
+\label{def:set-frob}
+Along the line $t=T(q)H$ let $e_i$ be the idempotents and $\Delta_i=1/\eta(e_i,e_i)$ (\cref{cor:set-cyclicPF5}~(a)), $\eta$ the pairing of \cref{def:set-fq}. The \emph{normalised canonical basis} is $\tilde e_i\coloneqq\Delta_i^{1/2}e_i$, so $\eta(\tilde e_i,\tilde e_j)=\delta_{ij}$, with the square roots $\zeta^{1/2}\coloneqq\zeta^3$ and $\Delta_i^{1/2}\coloneqq\zeta^{4i}\,C_0/L\in\bbQ(\zeta)\fps q$, so that $(\Delta_i^{1/2})^2=\zeta^{8i}C_0^2/L^2=\Delta_i$. At $q=0$, $\Delta_i(0)=W^0_i\coloneqq\prod_{j\neq i}(\lambda_i-\lambda_j)/(5\lambda_i)=\zeta^{3i}$. The \emph{topological field theory of the formal quintic} is the TFT $\TFT$ on $\bbH\otimes\bbQ(\zeta)\fps q$ with $\TFT_{g,n}(\tilde e_i,\dots,\tilde e_i)\coloneqq\Delta_i^{(2g-2+n)/2}=(\zeta^{4i}C_0/L)^{2g-2+n}$ and $\TFT_{g,n}$ vanishing on mixed colours; its unit is $1_{\TFT}\coloneqq\sum_i\Delta_i^{-1/2}\tilde e_i=\sum_ie_i=1$. We also regard $\TFT$ as a TFT on the colour space, with the orthonormal basis $\tilde e_i$ ($i\in\bbZ/5$) and the unit $1_{\TFT}$. By \cref{thm:set-GT}, since $R(0)=1$, $\TFT$ is the degree-zero part of the cohomological field theory along the line.
+\end{defn}
+
+\input{sections/s02_setup_4}

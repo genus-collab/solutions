@@ -1,0 +1,16 @@
+============================== prime 61
+quadrics on a random pure-high vector (q_HH): [0, 0, 0, 0, 0]
+  generic c_1(0)  trial 0: 7 equations on 7 high coordinates: rank 6, augmented rank 6 (consistent), fibre dimension 1; identically satisfied rows ['q17']; grad q_17 = 0 at (low, 0): False
+  generic c_1(0)  trial 1: 7 equations on 7 high coordinates: rank 6, augmented rank 6 (consistent), fibre dimension 1; identically satisfied rows ['q17']; grad q_17 = 0 at (low, 0): False
+  generic c_1(0)  trial 2: 7 equations on 7 high coordinates: rank 6, augmented rank 6 (consistent), fibre dimension 1; identically satisfied rows ['q17']; grad q_17 = 0 at (low, 0): False
+  c_1(0) = 0      trial 0: 7 equations on 7 high coordinates: rank 5, augmented rank 5 (consistent), fibre dimension 2; identically satisfied rows ['q6', 'q17']; grad q_17 = 0 at (low, 0): False
+  c_1(0) = 0      trial 1: 7 equations on 7 high coordinates: rank 5, augmented rank 5 (consistent), fibre dimension 2; identically satisfied rows ['q6', 'q17']; grad q_17 = 0 at (low, 0): False
+  c_1(0) = 0      trial 2: 7 equations on 7 high coordinates: rank 5, augmented rank 5 (consistent), fibre dimension 2; identically satisfied rows ['q6', 'q17']; grad q_17 = 0 at (low, 0): False
+============================== prime 89
+quadrics on a random pure-high vector (q_HH): [0, 0, 0, 0, 0]
+  generic c_1(0)  trial 0: 7 equations on 7 high coordinates: rank 6, augmented rank 6 (consistent), fibre dimension 1; identically satisfied rows ['q17']; grad q_17 = 0 at (low, 0): False
+  generic c_1(0)  trial 1: 7 equations on 7 high coordinates: rank 6, augmented rank 6 (consistent), fibre dimension 1; identically satisfied rows ['q17']; grad q_17 = 0 at (low, 0): False
+  generic c_1(0)  trial 2: 7 equations on 7 high coordinates: rank 6, augmented rank 6 (consistent), fibre dimension 1; identically satisfied rows ['q17']; grad q_17 = 0 at (low, 0): False
+  c_1(0) = 0      trial 0: 7 equations on 7 high coordinates: rank 5, augmented rank 5 (consistent), fibre dimension 2; identically satisfied rows ['q6', 'q17']; grad q_17 = 0 at (low, 0): False
+  c_1(0) = 0      trial 1: 7 equations on 7 high coordinates: rank 5, augmented rank 5 (consistent), fibre dimension 2; identically satisfied rows ['q6', 'q17']; grad q_17 = 0 at (low, 0): False
+  c_1(0) = 0      trial 2: 7 equations on 7 high coordinates: rank 5, augmented rank 5 (consistent), fibre dimension 2; identically satisfied rows ['q6', 'q17']; grad q_17 = 0 at (low, 0): False

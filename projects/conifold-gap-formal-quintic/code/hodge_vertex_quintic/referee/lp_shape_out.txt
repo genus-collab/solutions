@@ -1,0 +1,10 @@
+F5 total in 15 s: terms 4256, denominators c0^31 W^15 (= c0^61 C1^15), L-range (-5, 10)
+joint (c,i)-degree of the numerator monomials: {63: 4256} ; expected 2g-2 + a + 2b = 63
+i3 present: False  Lam present: False
+generators appearing: {'L': True, 'c0': True, 'c1': True, 'c2': True, 'c3': True, 'i0': True, 'i1': True, 'i2': True, 'i3': False, 'Lam': False}
+i-degree distribution: {0: 14, 1: 39, 2: 71, 3: 107, 4: 143, 5: 179, 6: 215, 7: 251, 8: 287, 9: 323, 10: 359, 11: 395, 12: 431, 13: 467, 14: 503, 15: 472}
+graph/colouring (4, (0, 0)) terms 723 den c0^12 W^7 Lrange (-5, 10)
+graph/colouring (4, (0, 1)) terms 723 den c0^12 W^7 Lrange (-5, 10)
+graph/colouring (6, (0, 1)) terms 4109 den c0^31 W^15 Lrange (-5, 10)
+graph/colouring (3, (0,)) terms 2055 den c0^22 W^11 Lrange (-5, 10)
+graph/colouring (1, (0,)) terms 3 den c0^3 W^0 Lrange (0, 10)

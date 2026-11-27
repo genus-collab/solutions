@@ -1,0 +1,18 @@
+ref_g1_birkhoff: N = 30 (q-order), K = 14 (periods c_0..c_K); exact rationals, ell explicit
+PASS  every kappa_a (a = 0..4) is ell-free
+PASS  kappa_0 = 1
+PASS  kappa_1 = L^5/(C_0^2 C_1^3)
+PASS  kappa_2 = 1
+PASS  kappa_3 = C_0/C_1
+PASS  kappa_4 = C_0/C_1
+PASS  closing phi^(5)_(k+5) = phi^(0)_k, k = 0..9 (H^5 = 1)
+PASS  product kappa_0..kappa_4 = (L/C_1)^5
+PASS  operator identity d_T^2 kappa_1^-1 d_T^2 C_0^-1 = (C_0/C_1) PF4 (all D-coefficients)
+PASS  PF4 c_k = 0 (k <= 3), PF4 c_4 = 1
+PASS  c1 non-equivariant: kappa_0..kappa_3 unchanged
+PASS (control fails as required)  c1 non-equivariant: closing
+PASS (control fails as required)  c2 twist O(4): kappa_1 = L^5/(C_0^2 C_1^3)
+PASS (control fails as required)  c3 operator identity with kappa_1 -> 1/(C_0^2 C_1^3)
+PASS (control fails as required)  c4 kappa_3 = C_1/C_0
+first coefficients: kappa_1 = ['1', '575', '1418125', '3798200625'] ; kappa_3 = ['1', '-650', '-821750', '-1491220000']
+TOTAL: 0 unexpected result(s)

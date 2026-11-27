@@ -1,0 +1,32 @@
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicc: circulant class, strata, p = 2^89-1
+PASS b-degrees of the tau-coefficients of G, H and of a_4 resolved with 70 nodes: ([9, 8, 7], [15, 14, 13, 12], 2)
+   degrees: U 51, squarefree part 18; a_4 2, content of G 5, content of H 9, gcd of the leading coefficients 5; GENUINE part 13 with 1 root(s) in F_p
+PASS the stored solution sits at a root of the genuine part
+   non-rational genuine roots: irreducible factors (degree, multiplicity count) [(4, 1), (8, 1)]
+   special b = 1*zeta^2 (content of H (H(b, .) = 0)): the other polynomial has degree 2, 2 root(s) in F_p
+      tau = [106903571803931227266083261 mod p]: point reconstructed, non-zero residuals []
+      tau = [337396630787153319825869741 mod p]: point reconstructed, non-zero residuals []
+   special b = ~-8296808261851/6964287916016 (content of H (H(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = ~8296808261851/6964287916016 (content of H (H(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = ~-8296808261851/6964287916016 (content of G (G(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = ~8296808261851/6964287916016 (content of G (G(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = -1*zeta^2 (content of G (G(b, .) = 0)): the other polynomial has degree 3, 2 root(s) in F_p
+      tau = [96263006056283166996088215 mod p]: point reconstructed, non-zero residuals []
+      tau = [342887275412361554178822668 mod p]: point reconstructed, non-zero residuals []
+   a_4(b) = 0 at b = ~-8296808261851/6964287916016: B_4(tau) has degree 2, the residual condition degree 3, gcd degree 0
+PASS no solution on the fibre a_4 = 0, b = ~-8296808261851/6964287916016 (B_4 and the residual condition have no common root)
+   a_4(b) = 0 at b = ~8296808261851/6964287916016: B_4(tau) has degree 2, the residual condition degree 3, gcd degree 0
+PASS no solution on the fibre a_4 = 0, b = ~8296808261851/6964287916016 (B_4 and the residual condition have no common root)
+   additional solutions at special b over F_p: 4
+   c1 = (0, 0, 1): a_4 != 0; deg G 2, deg H 3, gcd degree 0
+PASS c1 = (0, 0, 1): no solution (G and H non-zero with trivial gcd, a_4 != 0)
+PASS c1 = 0: m_1 = 0 fixes c2 up to scale (c2_2 from m_1 agrees)
+   c1 = 0, c2 = s v2: cubics at s = 1, w = 0: non-zero for graphs [9]
+PASS c1 = 0: the cubics do not depend on c3 and some cubic is non-zero on the c2-line, so c2 = 0
+   c1 = c2 = 0: the genus-2 rows leave the c3-line; quadrics on it: {3: '0', 6: '0', 7: '5/192*zeta^1', 8: '0', 17: '0'} (independent of the orders >= 4: True)
+PASS c1 = c2 = 0: some two-edge quadric is non-zero on the c3-line and independent of the high part, so c3 = 0: the stratum c1 = 0 contains only the pure-high solutions
+   chart c_1(0) = 1: tau-degrees of the four combinations of minors at random c1: [3, 3, 3, 3]; gcd degrees [0, 0, 0, 0, 0, 0]
+PASS chart c_1(0) = 1: at 6 random c1 = (1, a, b) the combinations of minors have no common root in tau (the cubic rows and q_3 are inconsistent)
+   (generic c1 only: the positive-dimensional part of the solution set in this chart is the plane Pi, see genus3_pi.py and genus3_cubicline.py)
+GENUS3_CUBICC ALL CHECKS PASSED

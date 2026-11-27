@@ -1,0 +1,84 @@
+% Section 2, part 8 of 8: the hatted theory, the outer graph sum, polar parts by reversion; Property N(g), the constants c_g.
+
+%-------------------------------------------------------------------------------
+\subsection{The hatted theory and the outer graph sum}
+\label{sec:set-hat}
+
+In this subsection a conifold frame is fixed, and the rows are expanded in it (\cref{def:set-confexp}; they lie in $\Nring\otimes\bbQ(\zeta)$ by \cref{cor:gau-rowsNN}): $\Qr^{(i)}_a(z)$ is a series in $z$ whose coefficients are Laurent series in $s$, and so is every series below.
+
+\begin{defn}[The hatted theory]
+\label{def:set-hat}
+The \emph{hatted classes} are $\hat H^a\coloneqq s^{1-\nu_a}H^a$, the hatted variable is $\zh=z/s^4$, and the \emph{hatted rows} are the lowered components with respect to the $\hat H^a$, as series in $\zh$:
+\[
+\hat\Qr^{(i)}_a(\zh)\coloneqq s^{1-\nu_a}\,\Qr^{(i)}_a(s^4\zh).
+\]
+The pairing is preserved: $\eta(\hat H^a,\hat H^b)=s^{2-\nu_a-\nu_b}\eta(H^a,H^b)=\eta(H^a,H^b)$, since $\nu_a+\nu_b=2$ on the pairs $a+b\equiv3$. The hatted unit of the state space is $\hat1\coloneqq\hat H^0=s1$. The element $\zeta^{-4i}\Cexp_{\alpha,\beta}(\Delta_i^{1/2})=s\varpi_0$ does not depend on $i$; put $\hat x\coloneqq\varpi_0=1+\alpha u+O(u^2)$. The \emph{hatted TFT} is $\hat\TFT\coloneqq s^{-1}.\TFT$, i.e.\ $\hat\TFT_{g,n}\coloneqq s^{-(2g-2+n)}\TFT_{g,n}$ (the rescaling of \cref{def:flh-outer}~(iv)): on the colour space $\hat\TFT_{g,n}(\tilde e_i,\dots,\tilde e_i)=(\zeta^{4i}\hat x)^{2g-2+n}$, and its unit is $s1_{\TFT}$. That the hatted rows are power series in $u$ is not assumed here; it is proved in \cref{cor:mai-natfact}.
+\end{defn}
+
+\begin{defn}[The outer graph sum]
+\label{def:set-outer}
+Let $M\coloneqq\Mo(\tau(u)\zh)$, taken exactly in $u$: with $\zh=z/s^4$ it is a power series in $z$ with coefficients in $\bbQ(\zeta)\lser s$, with $M(0)=1$ and $M(-z)^TM(z)=1$ (\cref{def:set-M0}, \cref{lem:set-M0sympl}). Let $\Qr$ be the matrix of the lowered rows of \cref{def:set-rows} expanded in the frame, and
+\[
+R'\coloneqq\Qr\,M^{-1},
+\]
+a series of maps from the colour space (orthonormal basis $\tilde e_i$) to $\bbH$. Its constant term is $R'(0)=\Qr(0)$, the expansion of the matrix $\Psi_{\mathrm Q}$ with the entries $\Qr^{(i)}_{a,0}$, the representatives in $\Nring\otimes\bbQ(\zeta)$ of $\eta(H^a,\tilde e_i)$. By the explicit form of $\Psi_{\mathrm Q}$ in \cref{lem:mai-Psi}~(i), $(\Psi_{\mathrm Q})_{ai}=\zeta^{i(a+1)}(\Psi_{\mathrm Q})_{a0}$ with $(\Psi_{\mathrm Q})_{30}=C_0/L$, and $\Psi_{\mathrm Q}^T\eta^{-1}\Psi_{\mathrm Q}=1$; with $\Delta_i^{-1/2}=\zeta^iL/C_0$ this gives $\sum_i\Delta_i^{-1/2}(\Psi_{\mathrm Q})_{ai}=(L/C_0)(\Psi_{\mathrm Q})_{a0}\sum_i\zeta^{i(a+2)}=5\,\delta_{a3}$. These are identities in $\Nring\otimes\bbQ(\zeta)$, so $R'(0)$ is an isometry which maps $1_{\TFT}$ to $1$. Its matrix is not the identity, and $R'$ satisfies the condition (unit) of \cref{def:flh-outer} with $\varkappa=1$, a condition on $R'(0)$ only. The \emph{outer graph sum} has the vertices $(M.\TFT)_{g,n}$, the classes of the cohomological field theory $M.\TFT$ on the colour space \cite[Def.~2.13]{PPZ15}, and the edges and leaves of $R'$: with $N(\psi,\psi')\coloneqq1-\bigl(R'^{-1}(\psi)\otimes R'^{-1}(\psi')\bigr)\eta^{-1}$, where $1=\sum_i\tilde e_i\otimes\tilde e_i$ is the inverse bivector of the colour space,
+\[
+E_{R'}(\psi,\psi')\coloneqq\frac{N(\psi,\psi')-\frac12N(-\psi',\psi')-\frac12N(\psi,-\psi)}{\psi+\psi'},\qquad q_{R'}(z)\coloneqq R'^{-1}(z)(-z1),
+\]
+with the leaf insertion $q_{R'}+z1_{\TFT}\in z^2(\text{colour space})\fps z$. The numerator vanishes at $\psi'=-\psi$, so $E_{R'}$ is a power series in $\psi,\psi'$; it is symmetric under the exchange of its two slots together with $\psi$ and $\psi'$, and its coefficient of $\psi^a\psi'^b$ involves $R'^{-1}$ only through $z^{a+b+1}$. No property of $R'$ other than the invertibility of $R'(0)$ is used. If $R'$ is symplectic, $R'(-z)^T\eta^{-1}R'(z)=1$, then $N(-\psi',\psi')=N(\psi,-\psi)=0$, $E_{R'}$ is the edge of \cite[Def.~2.2]{PPZ15} \cite[Rem.~2.1, (6)]{PPZ15}, and the outer graph sum is the leg-free part of $R'.(M.\TFT)$ in the sense of \cref{def:flh-outer}. For a leg-free stable graph $\Gamma$ of genus $g\geq2$ the \emph{outer term} is
+\[
+T_\Gamma\coloneqq\mathrm{Cont}_\Gamma\bigl[E_{R'},q_{R'};M.\TFT\bigr]\in\bbQ(\zeta)\lser s
+\]
+(\cref{def:set-graphsum}); the vertex tensors are the full tensors of $M.\TFT$, so $T_\Gamma$ contains the sum over all colourings of $\Gamma$. The \emph{vertex graph} is the stable graph with one vertex, of genus $g$, and no edge; its outer term contains all the leaf insertions of $R'$. The \emph{hatted term} $G_\Gamma$ is the same contraction formed with the hatted data of \cref{def:set-hat}: with $\hat M(\zh)\coloneqq\Mo(\tau\zh)$ and $\hat R'(\zh)\coloneqq\hat\Qr(\zh)\hat M(\zh)^{-1}$,
+\[
+G_\Gamma\coloneqq\mathrm{Cont}_\Gamma\bigl[E_{\hat R'},q_{\hat R'};\hat M.\hat\TFT\bigr],
+\]
+the edge and the leaf point being formed in the variable $\zh$ and with the unit $\hat1$. By \cref{lem:flh-hat}, $G_\Gamma=u^{2g-2}T_\Gamma$. The outer term $T_\Gamma$ is \emph{regular at the conifold point} if it lies in $\bbQ\fps u$.
+
+\emph{The symplecticity of $R'$.} As series in $q$ the rows are symplectic (\cref{def:set-rows}~(a)): $\Qr(-z)^T\eta^{-1}\Qr(z)=1$ over $\bbQ(\zeta)\fps q$. This identity is not transferred to the conifold expansion: that would require it in $\Nring\otimes\bbQ(\zeta)$, where it is not proved, and the injectivity of the evaluation $\ev$ of \cref{def:set-confexp} is not claimed. Instead, by \cref{cor:gau-colours} and \cref{lem:flh-inputs}~(i), the expanded rows are $\Qr=\Pc\Psi^{\mathrm m}_{v(u)}M\Dn^{-1}$, with $\Dn=\diag(\Dn_i)$ the normalisation series of \cref{thm:gau-R0} and \cref{cor:gau-colours} and $\Psi^{\mathrm m}_{v(u)}$ the isometry of \cref{def:set-modcohft}. With $\Pc(-z)^T\eta^{-1}\Pc(z)=\eta^{-1}$ (\cref{prop:gau-symp}; $\eta^{-1}=\eta/25$), $(\Psi^{\mathrm m}_{v(u)})^T\eta^{-1}\Psi^{\mathrm m}_{v(u)}=1$ and $M(-z)^TM(z)=M(z)M(-z)^T=1$ (\cref{lem:set-M0sympl}) this gives
+\[
+R'(-z)^T\eta^{-1}R'(z)=M(z)\,\diag\bigl((\Dn_i(z)\Dn_i(-z))^{-1}\bigr)_i\,M(-z)^T .
+\]
+So $R'$ is symplectic modulo $z^{3g-2}$ when $\Fg{g}$ holds (\cref{def:gau-Fg}), and it is symplectic because $\Dn=1$ (\cref{thm:gam-D}). The proof of \cref{thm:gam-D} uses neither $R'$ nor $T_\Gamma$, so there is no circularity, and no statement of this section uses the symplecticity of $R'$.
+\end{defn}
+
+\begin{rmk}[Polar parts by reversion]
+\label{rmk:set-reversion}
+Let $g\geq2$, $G\in\bbQ\fps u$ and $T\coloneqq u^{2-2g}G$; for instance $T=T_\Gamma$ and $G=G_\Gamma$, once the hatted data are known to be power series in $u$ (\cref{cor:mai-natfact}). In a conifold frame $\tc=u(1+O(u))\in\bbQ\fps u$, so $\bbQ\fps u=\bbQ\fps{\tc}$ and $u=\tc(1+O(\tc))$. For $m\in\bbZ$, $u^m=\tc^m(u/\tc)^m$ with $(u/\tc)^m\in1+\tc\bbQ\fps{\tc}$; hence
+\[
+T=\sum_{k=2-2g}^{-1}b_k\,\tc^k+(\text{an element of }\bbQ\fps u),
+\]
+where $(b_{2-2g},\dots,b_{-1})$ is the image of $(a_0,\dots,a_{2g-3})$, $a_k\coloneqq\coef{u^k}G$, under a lower triangular matrix with unit diagonal that depends only on $\tc$. So $T$ is regular if and only if $a_0=\dots=a_{2g-3}=0$, and $T\in c\,\tc^{2-2g}+\bbQ\fps u$ if and only if $a_0=c$ and $2g-3$ further affine conditions on $a_1,\dots,a_{2g-3}$ hold. For $g=2$, with $\gamma_t=\coef{u^2}\tc$ (\cref{def:set-frames}), $T=a_0\tc^{-2}+(a_1+2\gamma_ta_0)\tc^{-1}+\bbQ\fps u$.
+\end{rmk}
+
+%-------------------------------------------------------------------------------
+\subsection{Property N(\texorpdfstring{$g$}{g})}
+\label{sec:set-N}
+
+\begin{defn}[Property N($g$)]
+\label{def:set-N}
+Let $g\geq2$ and
+\begin{equation}
+\label{eq:set-cg}
+c_g\coloneqq\frac{(-1)^{g-1}B_{2g}\,5^{1-g}}{2g(2g-2)}=\frac{|B_{2g}|}{2g(2g-2)\,5^{g-1}} .
+\end{equation}
+\emph{Property N($g$)} holds if, for every conifold frame of \cref{def:set-frames}, the outer terms of \cref{def:set-outer}, with $M=\Mo(\tau(u)\zh)$ exactly in $u$, satisfy:
+\begin{enumerate}
+\item $T_\Gamma\in\bbQ\fps u$ for every leg-free stable graph $\Gamma$ of genus $g$ with at least one edge;
+\item $T_\Gamma\in c_g\,\tc^{2-2g}+\bbQ\fps u$ for the vertex graph.
+\end{enumerate}
+Property N($g$) is a statement about every graph, not only about the sum over the graphs. It is the statement of \cref{thm:mai-main} for one $g$.
+\end{defn}
+
+\begin{rmk}[The constants $c_g$]
+\label{rmk:set-cg}
+As $(-1)^{g-1}B_{2g}=|B_{2g}|$, the two forms in \eqref{eq:set-cg} agree and $c_g>0$. With $B_4=-\frac1{30}$, $B_6=\frac1{42}$, $B_8=-\frac1{30}$ and $B_{10}=\frac5{66}$,
+\[
+c_2=\frac1{1200},\qquad c_3=\frac1{25200},\qquad c_4=\frac1{180000},\qquad c_5=\frac1{660000}.
+\]
+In the model, $c_h$ is the constant of the free energies $\Fm_h=c_hv^{2-2h}$ (\cref{thm:mod-gap}), and
+\[
+c_h=(-5)^{1-h}\,\frac{B_{2h}}{2h(2h-2)}
+\]
+is $(-5)^{1-h}$ times the coefficient of the free energy $B_{2h}v^{2-2h}/(2h(2h-2))$ of topological recursion on the model curve (\cref{cor:mod-trF}). The constant refers to the normalisation $\varpi_1=u+O(u^2)$ of the vanishing period: for the vanishing period $k\varpi_1$, $k\in\bbQ^\times$, the flat coordinate is $k\tc$, and $c_g\tc^{2-2g}=(k^{2g-2}c_g)(k\tc)^{2-2g}$.
+\end{rmk}

@@ -1,0 +1,165 @@
+% Section 3, part 5 of 7: (R1), the diagonal, the vanishing solutions, the gauge identity (G), the canonical gauge, symplecticity.
+
+%-------------------------------------------------------------------------------
+\subsection{The residue relation, the diagonal, the vanishing solutions and (G)}
+\label{sec:gau-van}
+
+From now on, unless said otherwise, $A$ is the quintic system of \cref{prop:gau-quintic} in a conifold frame and $\tilde A$ is the model pulled back along $v=v(u)$ (\cref{prop:gau-equalprod}). Both are self-dual cyclic systems with one simple pole over $\bbQ\fps u$, with (EP), $r=\tilde r=-1$ and $b_a(0)=\tilde b_a(0)$ for $a\neq1$, so \cref{thm:gau-U} applies over $\bbQ$.
+
+\begin{lem}[The residue relation (R1)]
+\label{lem:gau-R1}
+Let $A,\tilde A$ be cyclic systems with one simple pole over $\Bbbk\fps u$, with residues $r,\tilde r$, and let $P\in\Gau(A,\tilde A)$; put $P(0,z):=\sum_kz^kP_k(0)\in\mathfrak{gl}_5(\Bbbk\fps z)$. Then $rE_{12}P(0,z)=\tilde r\,P(0,z)E_{12}$: column $1$ of $P(0,z)$ is $P_{11}(0,z)\mathbf e_1$, row $2$ is $P_{22}(0,z)\mathbf e_2^T$, and $rP_{22}(0,z)=\tilde rP_{11}(0,z)$. If $r=\tilde r$, then $P_{22}(0,z)=P_{11}(0,z)$.
+\end{lem}
+
+\begin{proof}
+$A=u^{-1}rE_{12}+(\text{power series in }u)$, and likewise for $\tilde A$. The term $zP'$ has no $u^{-1}$, so the coefficient of $u^{-1}$ in $AP-P\tilde A$ vanishes: $rE_{12}P(0,z)=\tilde rP(0,z)E_{12}$. The entry $(a,b)$ reads $r\,\delta_{a1}P_{2b}(0,z)=\tilde r\,P_{a1}(0,z)\delta_{b2}$; for $a=1$, $b\neq2$ it gives $P_{2b}(0,z)=0$, for $a\neq1$, $b=2$ it gives $P_{a1}(0,z)=0$, and for $(a,b)=(1,2)$ it gives $rP_{22}(0,z)=\tilde rP_{11}(0,z)$.
+\end{proof}
+
+\begin{lem}[The diagonal of the gauge]
+\label{lem:gau-diag}
+Let $A,\tilde A$ be cyclic systems with one simple pole over $\Bbbk\fps u$ with (EP), and $P$ a regular gauge. Then $P_0=\diag(p_{0,0},\dots,p_{0,4})$, and $\prod_ap_{0,a}=\cn(0)^5\det\Theta_U(0)=p_{0,1}(0)^5\prod_a\rho^U_a$ is a constant, where $\cn(0)\in\Bbbk^\times$ is as in \cref{thm:gau-U}~(b) and $\rho^U_a:=d^U_a(0)/d^U_1(0)$, i.e.\ $\rho^U_1=1$, $\rho^U_a=\prod_{c=1}^{a-1}(\tilde b_c/b_c)(0)$ for $a=2,3,4$ and $\rho^U_0=\prod_{c=1}^4(\tilde b_c/b_c)(0)$, with $(\tilde b_1/b_1)(0):=\tilde r/r$. Assume the normalisation
+\[
+\text{(N0)}\qquad b_a(0)=\tilde b_a(0)\ \ (a\neq1),\qquad r=\tilde r .
+\]
+Then $p_{0,a}(0)=p_{0,1}(0)$ for all $a$; if moreover $p_{0,1}(0)=1$, as for the canonical gauge of \cref{def:gau-can}, then $p_{0,a}(0)=1$ for all $a$, $\prod_ap_{0,a}=1$, and $p_{0,0}^5=\prod_{c=0}^3(b_c/\tilde b_c)^{4-c}$. For the quintic system in a conifold frame and the pulled-back model, where (N0) holds, and a regular gauge with $p_{0,1}(0)=1$ (for instance $\Pc$), this gives
+\[
+p_{0,0}(u)=\tau(u)^{-1/4}/\varpi_0,\qquad\text{i.e.}\qquad \tau^{1/4}p_{0,0}=1/\varpi_0 .
+\]
+\end{lem}
+
+\begin{proof}
+By \cref{thm:gau-U}~(b), $P_0=\cn(0)\,\mathfrak d\,\Theta_U$ with $\cn(0)\neq0$; so $p_{0,a}=\cn(0)\mathfrak d\,d^U_a$ and $\prod_ap_{0,a}=\cn(0)^5\mathfrak d^5\det\Theta_U=\cn(0)^5\det\Theta_U(0)$, by the definition of $\mathfrak d$. At $u=0$, $p_{0,a}(0)=\cn(0)d^U_a(0)=p_{0,1}(0)\rho^U_a$. The recursion $d^U_{a+1}=d^U_a\tilde b_a/b_a$ at $u=0$, with $(\tilde b_1/b_1)(0)=\tilde r/r$ and, going round the cycle by (EP), $d^U_0=d^U_4\tilde b_4/b_4$, gives the formula for $\rho^U_a$. Under (N0) every ratio at $u=0$ is $1$, so $d^U_a(0)=1$ and $\rho^U_a=1$ for all $a$, and $p_{0,a}(0)=\cn(0)$. If $p_{0,1}(0)=1$, then $\cn(0)=1$, all $p_{0,a}(0)=1$, $\prod_ap_{0,a}=\det\Theta_U(0)=1$, and $p_{0,0}=\mathfrak d=(\det\Theta_U)^{-1/5}$. Since $d^U_a=\prod_{c<a}\tilde b_c/b_c$, each $c\in\{0,\dots,3\}$ occurs in $4-c$ of the $d^U_a$, so $\det\Theta_U=\prod_{c=0}^3(\tilde b_c/b_c)^{4-c}$.
+
+For the two systems of \cref{prop:gau-quintic,prop:gau-equalprod} the ratios $b_c/\tilde b_c$, $c=0,\dots,3$, are
+\[
+\frac{\tc'}{v'},\qquad \frac{v}{u\,v'\varpi_0^2(1-u)^3\tc'^2},\qquad\frac{\tc'}{v'},\qquad\frac{\varpi_0}{(1-u)v'},
+\]
+so $p_{0,0}^5=\tc'^{\,4-6+2}\,v'^{-10}\,v^3u^{-3}\,\varpi_0^{-6+1}(1-u)^{-9-1}=v'^{-10}v^3u^{-3}\varpi_0^{-5}(1-u)^{-10}$. By (EP), $v'^5=v/(u(1-u)^5)$ (\cref{prop:gau-equalprod}~(ii)), hence $v'^{-10}=u^2(1-u)^{10}v^{-2}$ and $p_{0,0}^5=v/(u\varpi_0^5)=\tau^{-5/4}\varpi_0^{-5}$. Both $p_{0,0}$ and $\tau^{-1/4}/\varpi_0$ lie in $1+u\bbQ\fps u$, where fifth roots are unique, so they are equal.
+\end{proof}
+
+\begin{defn}[Vanishing solutions]
+\label{def:gau-van}
+\begin{enumerate}
+\item For $m\in\bbZ$ let $\IC_m(v,z):=\Res_{p=0}p^m\re^{-\Wv(p)/z}\dd p$ be the formal residue: in $\re^{-\Wv(p)/z}=\re^{-p^4/(4z)}\re^{-v/(pz)}$ the coefficient of each power of $v$ is a Laurent series in $p$ with coefficients in $\bbQ[z^{-1}]$, and $\Res_{p=0}$ takes its coefficient of $p^{-1}$. Explicitly
+\[
+\IC_m(v,z)=\sum_{i\geq0,\ m+4i+1\geq0}\frac{(-1/(4z))^i}{i!}\,\frac{(-v/z)^{m+4i+1}}{(m+4i+1)!}\in\bbQ[z^{-1}]\fps v .
+\]
+The \emph{vanishing solution of the model} is $\YC:=(\IC_0,-\IC_{-1},-\IC_3,\IC_2,\IC_1)$, i.e.\ $\YC_b=\varepsilon_b\IC_{\nu_b}$ (\cref{def:set-model}).
+\item For a cyclic system $A=\sum_ab_aE_{a,a+1}$ with one simple pole over $\bbQ\fps u$ put $y^{(0)}:=-\mathbf e_1$, $y^{(n+1)}_a:=\int_0^ub_a\,y^{(n)}_{a+1}\,\dd u$ (the integrands are power series by \cref{lem:gau-vanq}) and $Y^{\mathrm C}_A:=\sum_{n\geq0}z^{-n}y^{(n)}$. For the quintic system, $\YCQ:=Y^{\mathrm C}_A$ is the \emph{vanishing solution of the quintic}.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}[The model's vanishing solution]
+\label{lem:gau-vanmod}
+(i) $z\,\de_v\IC_m=-\IC_{m-1}$; (ii) $mz\IC_{m-1}-\IC_{m+3}+v\IC_{m-2}=0$. Hence $z\,\dd\YC_b/\dd v=b^{\mathrm m}_b\YC_{b+1}$, $b^{\mathrm m}=(1,-v^{-1},1,-1,-1)$, and $\YC(0,z)=-\mathbf e_1$.
+\end{lem}
+
+\begin{proof}
+(i) Differentiate the residue coefficientwise in $v$, using $\de_v\re^{-\Wv/z}=-(pz)^{-1}\re^{-\Wv/z}$. (ii) We have $\frac{\dd}{\dd p}\bigl(p^m\re^{-\Wv/z}\bigr)=\bigl(mp^{m-1}-z^{-1}(p^{m+3}-vp^{m-2})\bigr)\re^{-\Wv/z}$, since $\Wv'(p)=p^3-vp^{-2}$, and the residue of the derivative of a Laurent series vanishes. With $\YC=(\IC_0,-\IC_{-1},-\IC_3,\IC_2,\IC_1)$, (i) gives $z\de_v\YC_0=-\IC_{-1}=\YC_1$, $z\de_v\YC_2=\IC_2=\YC_3$, $z\de_v\YC_3=-\IC_1=-\YC_4$, $z\de_v\YC_4=-\IC_0=-\YC_0$, and $z\de_v\YC_1=\IC_{-2}=v^{-1}\IC_3=-v^{-1}\YC_2$ by (ii) at $m=0$. At $v=0$ only the terms with $m+4i+1=0$ survive; among $m\in\{0,-1,3,2,1\}$ this happens only for $m=-1$, $i=0$, with value $1$; so $\YC(0,z)=-\mathbf e_1$.
+\end{proof}
+
+\begin{lem}[Shape of $\YC$]
+\label{lem:gau-vanshape}
+For $n\geq0$ and $b\in\bbZ/5$, with $m:=\lfloor n/5\rfloor$,
+\[
+\coef{z^{-n}}\YC_b=\varepsilon_b\,(-1)^n\,\frac{v^{n-m}}{4^m\,m!\,(n-m)!}\quad\text{if }n\equiv\nu_b+1\pmod5,\qquad \coef{z^{-n}}\YC_b=0\ \text{otherwise}.
+\]
+Hence $\YC_b(v,z)=\varsigma^{\nu_b+1}y_b(z/\varsigma^4)$ with $y_b(t):=\YC_b(1,t)$ and $\varsigma=v^{1/5}$; the lowest terms are $\YC=(-v/z,\,-1,\,-v^4/(24z^4),\,-v^3/(6z^3),\,v^2/(2z^2))+\dots$; and at $v=v(u)$ the coefficient of $z^{-n}$ is $O(u^{n-m})$, so $\YC(v(u),z)\in\bbQ[z^{-1}]\fps u^5$ and $\YC(v(u),z)$ has no positive power of $z$.
+\end{lem}
+
+\begin{proof}
+In \cref{def:gau-van}~(i) with $m'=\nu_b$, the term of index $i$ is a multiple of $v^{m'+4i+1}z^{-n}$ with $n=m'+5i+1$; as $\nu_b+1\in\{0,\dots,4\}$, this gives $n\equiv\nu_b+1$ and $i=\lfloor n/5\rfloor=m$, the exponent of $v$ is $n-m$, the sign is $(-1)^{i+m'+4i+1}=(-1)^n$, and the denominator is $4^mm!\,(n-m)!$. Since $v^{n-m}z^{-n}=\varsigma^{n-5m}(z/\varsigma^4)^{-n}$ and $n-5m=\nu_b+1$, the homogeneity follows. For $v=u+O(u^2)$ the coefficient of $z^{-n}$ is $O(u^{n-m})$ with $n-m\geq4n/5$, so each power of $u$ receives contributions from finitely many $n$.
+\end{proof}
+
+\begin{lem}[Uniqueness of regular solutions]
+\label{lem:gau-uniq}
+Let $B=u^{-1}B_{-1}+\sum_{j\geq0}u^jB_j$ with $B_j\in\mathfrak{gl}_5(\Bbbk)$ independent of $z$. If $Y\in\Bbbk\lser z\fps u^5$ satisfies $z\de_uY=BY$ and $Y(0)=0$, then $Y=0$.
+\end{lem}
+
+\begin{proof}
+Write $Y=\sum_nu^nY^{(n)}$. The coefficient of $u^n$ in $z\de_uY=BY$ gives $\bigl((n+1)z-B_{-1}\bigr)Y^{(n+1)}=\sum_{j=0}^nB_jY^{(n-j)}$. The determinant $\det((n+1)z\,1-B_{-1})$ is a polynomial of degree $5$ in $z$ with leading coefficient $(n+1)^5\neq0$, hence a unit of $\Bbbk\lser z$ (for $B_{-1}=rE_{12}$ it is $((n+1)z)^5$). By induction all $Y^{(n)}$ vanish.
+\end{proof}
+
+A cyclic system with one simple pole is of this form ($B_{-1}=rE_{12}$), so its solutions in $\bbQ\lser z\fps u^5$ are determined by their values at $u=0$. By \cref{lem:gau-vanmod} and the chain rule, $\YC(v(u),z)$ is the solution of $z\de_uY=\tilde AY$ with value $-\mathbf e_1$, and by the next lemma $\YCQ$ is that of the quintic system; the vanishing solutions are characterised by this value, not by the absence of positive powers of $z$.
+
+\begin{lem}[The quintic's vanishing solution]
+\label{lem:gau-vanq}
+Let $A=\sum_ab_aE_{a,a+1}$ be a cyclic system with one simple pole over $\bbQ\fps u$, with residue $r$.
+\begin{enumerate}
+\item[(a)] $y^{(n)}_a=0$ unless $n\equiv1-a\pmod5$, and then $\ord_uy^{(n)}_a=(4n+\nu_a+1)/5$ exactly. If $b_a(0)=\tilde b_a(0)$ for $a\neq1$ and $r=\tilde r$, where $\tilde A$ is the pulled-back model, the leading coefficient of $y^{(n)}_a$ equals that of $\coef{z^{-n}}\YC_a(v(u),z)$.
+\item[(b)] Every integrand $b_ay^{(n)}_{a+1}$ is a power series: the pole of $b_1$ meets $y^{(n)}_2$, which is non-zero only for $n\equiv4\pmod5$ and then has order $(4n+4)/5\geq4$. In particular no logarithm arises.
+\item[(c)] $Y^{\mathrm C}_A\in\bbQ[z^{-1}]\fps u^5$, the coefficient of $z^{-n}$ having order at least $4n/5$; it solves $z\de_uY=AY$, and $Y^{\mathrm C}_A(0)=-\mathbf e_1$.
+\item[(d)] $\coef{z^{-1}}Y^{\mathrm C}_A=-\bigl(\int_0^ub_0\,\dd u\bigr)\mathbf e_0$ and $\coef{u^0}(Y^{\mathrm C}_A)_0=0$. For the quintic system in a conifold frame, $\coef{z^{-1}}\YCQ=-\tc\,\mathbf e_0$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+Put $e(n,a):=(4n+\nu_a+1)/5$; for $n\equiv1-a$ it is a non-negative integer, as $\nu_a\equiv-a$ and $\nu_a+1\geq0$. Write $b_a=b^\circ_au^{-\delta_{a1}}(1+O(u))$ with $b^\circ_a:=b_a(0)$ for $a\neq1$ and $b^\circ_1:=r$ (local letters). We show by induction on $n$ that for $n\equiv1-a$, $y^{(n)}_a=c^{(n)}_au^{e(n,a)}(1+O(u))$ with $c^{(n)}_a\neq0$, and $y^{(n)}_a=0$ otherwise. For $n=0$, $y^{(0)}=-\mathbf e_1$ and $e(0,1)=0$. The component $y^{(n+1)}_a$ is built from $y^{(n)}_{a+1}$, which vanishes unless $n\equiv1-(a+1)$, i.e.\ $n+1\equiv1-a$. In that case, using $\nu_{a+1}=\nu_a-1+5\delta_{a1}$, the integrand is $b_ay^{(n)}_{a+1}=b^\circ_ac^{(n)}_{a+1}u^{e(n+1,a)-1}(1+O(u))$ with $e(n+1,a)-1=(4n+\nu_a)/5\geq0$, a power series, and integration gives $c^{(n+1)}_a=b^\circ_ac^{(n)}_{a+1}/e(n+1,a)\neq0$. This proves the first part of (a) and (b); for $a=1$ the integrand involves $y^{(n)}_2$ with $n\equiv4$, of order $e(n,2)=(4n+4)/5\geq4$. The pulled-back model satisfies the same recursion for the leading coefficients with $\tilde b^\circ_a$ in place of $b^\circ_a$, so under the stated hypothesis the leading coefficients of $Y^{\mathrm C}_A$ and $Y^{\mathrm C}_{\tilde A}$ agree; and $Y^{\mathrm C}_{\tilde A}=\YC(v(u),z)$ by \cref{lem:gau-uniq}, both being solutions of $z\de_uY=\tilde AY$ with value $-\mathbf e_1$ (the first by (c) below, applied to $\tilde A$). (c) The order bound is $e(n,a)\geq4n/5$, so each power of $u$ receives finitely many $n$. The definition says $(y^{(n+1)})'=Ay^{(n)}$, hence $z\de_uY^{\mathrm C}_A=\sum_{n\geq1}z^{1-n}Ay^{(n-1)}=AY^{\mathrm C}_A$; and $y^{(n)}(0)=0$ for $n\geq1$. (d) $y^{(1)}_a=-\delta_{a0}\int_0^ub_0$, and $(Y^{\mathrm C}_A)_0(0)=y^{(0)}_0=0$. For the quintic, $b_0=\tc'$ and $\tc(0)=0$.
+\end{proof}
+
+In a conifold frame the hypothesis of (a) holds (\cref{prop:gau-equalprod}).
+
+\begin{thm}[The gauge identity (G)]
+\label{thm:gau-G}
+For every $P\in\Gau(A,\tilde A)$, in particular for every regular gauge from the pulled-back model to the quintic system,
+\begin{equation}
+\label{eq:gau-G}
+P(u,z)\,\YC(v(u),z)=P_{11}(0,z)\,\YCQ(u,z)\qquad\text{in }\bbQ\lser z\fps u^5 .
+\end{equation}
+\begin{enumerate}
+\item[(a)] For a graded regular gauge $P$, $P_{11}(0,z)$ is a unit of $\bbQ\fps{z^5}$, $\Pc:=P\,P_{11}(0,z)^{-1}$ is a graded regular gauge, and $\Pc$ is the unique regular gauge $P'$ with $P'\,\YC(v(u),z)=\YCQ$.
+\item[(b)] For a regular gauge $P$, $P\,\YC(v(u),z)$ has no positive power of $z$ if and only if $P_{11}(0,z)$ is a constant; the regular gauges with this property are the $\mu\Pc$, $\mu\in\bbQ^\times$.
+\item[(c)] For any two cyclic systems $A,\tilde A$ with one simple pole over $\bbQ\fps u$ and every $P\in\Gau(A,\tilde A)$: $P\,Y^{\mathrm C}_{\tilde A}=P_{11}(0,z)\,Y^{\mathrm C}_A$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+We prove (c), of which \eqref{eq:gau-G} is the case of the two systems of this subsection: $\YC(v(u),z)=Y^{\mathrm C}_{\tilde A}$ by \cref{lem:gau-uniq}, both being solutions of $z\de_uY=\tilde AY$ with value $-\mathbf e_1$ (\cref{lem:gau-vanmod,lem:gau-vanq}~(c)). Put $\tilde Y:=Y^{\mathrm C}_{\tilde A}\in\bbQ[z^{-1}]\fps u^5$. The product $P\tilde Y$ lies in $\bbQ\lser z\fps u^5$: at each order in $u$ it is a finite sum of products of a power series in $z$ and a polynomial in $z^{-1}$. It solves the first system: $z\de_u(P\tilde Y)=(AP-P\tilde A)\tilde Y+P\tilde A\tilde Y=A(P\tilde Y)$. Its value at $u=0$ is $P(0,z)(-\mathbf e_1)=-P_{11}(0,z)\mathbf e_1$ by \cref{lem:gau-R1}. $P_{11}(0,z)Y^{\mathrm C}_A$ is also a solution, $P_{11}(0,z)$ being constant in $u$, with the same value by \cref{lem:gau-vanq}~(c). \Cref{lem:gau-uniq} with $B=A$ gives the identity.
+
+(a) $P_{11}(0,z)$ is a unit of $\bbQ\fps{z^5}$ by \cref{prop:gau-graded}~(iii), so $\Pc$ is a graded regular gauge by \cref{prop:gau-graded}~(ii), and $(\Pc)_{11}(0,z)=1$; by \eqref{eq:gau-G}, $\Pc\YC(v(u))=\YCQ$. Conversely, let $P'$ be any regular gauge with $P'\YC(v(u))=\YCQ$. By \cref{thm:gau-U}~(b), (d), $P'=\Pc\cn(z)$ for some $\cn\in\bbQ\fps z^\times$, so that $\YCQ=\cn(z)\Pc\YC(v(u))=\cn(z)\YCQ$, i.e.\ $(\cn(z)-1)\YCQ=0$ in $\bbQ\lser z\fps u^5$; the coefficient of $u^0$ is $-(\cn(z)-1)\mathbf e_1$, so $\cn=1$. (b) If $P_{11}(0,z)=\mu$ is constant, then $P\YC(v(u))=\mu\YCQ$ lies in $\bbQ[z^{-1}]\fps u^5$. Conversely, the coefficient of $u^0$ of $P\YC(v(u))$ is $-P_{11}(0,z)\mathbf e_1$ with $P_{11}(0,z)\in\bbQ\fps z$, so it has no positive power of $z$ only if $P_{11}(0,z)$ is constant. With $P=\Pc\cn(z)$ we have $P_{11}(0,z)=\cn(z)$, which gives the last assertion.
+\end{proof}
+
+\begin{defn}[The canonical gauge]
+\label{def:gau-can}
+In a conifold frame, the \emph{canonical gauge} $\Pc$ is the regular gauge from the pulled-back model to the quintic system with $(\Pc)_{11}(0,z)=1$. It exists and is unique: $\Pc=P\,P_{11}(0,z)^{-1}$ for any graded regular gauge $P$ (\cref{thm:gau-G}~(a)), two graded regular gauges differ by a unit of $\bbQ\fps{z^5}$ (\cref{prop:gau-graded}), and a regular gauge $P'=\Pc\cn(z)$ (\cref{thm:gau-U}~(b)) with $P'_{11}(0,z)=1$ has $\cn=1$. Equivalently, $\Pc$ is the unique regular gauge with $\Pc\YC(v(u))=\YCQ$. It is graded, rational (\cref{thm:gau-U}~(d)), colour covariant, $\operatorname{Rot}_i\Pc=\Pc$ (\cref{prop:gau-graded}~(iv)), and $p_{0,a}(0)=1$ for its diagonal $z^0$-term (\cref{lem:gau-diag}). We write $\Pc=\sum_kz^k\sum_bp_{k,b}(u)E_{b+k,b}$.
+\end{defn}
+
+%-------------------------------------------------------------------------------
+\subsection{Symplecticity}
+\label{sec:gau-symp}
+
+\begin{prop}[Symplecticity]
+\label{prop:gau-symp}
+Let $A,\tilde A$ be self-dual cyclic systems with one simple pole over $\Bbbk\fps u$ with (EP) and $r=\tilde r$, and let $P$ be a regular gauge from $\tilde A$ to $A$, $\cn(z):=P_{11}(0,z)$. Then
+\begin{equation}
+\label{eq:gau-symp}
+P(u,-z)^T\eta\,P(u,z)=\cn(z)\cn(-z)\,\eta .
+\end{equation}
+In particular, for the two systems of \cref{sec:gau-van}, $\Pc$ is symplectic, $\Pc(u,-z)^T\eta\Pc(u,z)=\eta$; the symplectic regular gauges are the $\Pc\cn(z)$ with $\cn(z)\cn(-z)=1$, so symplecticity constrains only the even part of $\log(\cn/\cn(0))$; for graded gauges, $\cn=\pm\exp(a_1z^5+a_3z^{15}+a_5z^{25}+\cdots)$. Among the symplectic regular gauges, only (G) singles out $\Pc$.
+\end{prop}
+
+\begin{proof}
+Put $S:=P(u,-z)^T\eta P(u,z)$. Replacing $z$ by $-z$ in the gauge equation gives $zP'(-z)=-AP(-z)+P(-z)\tilde A$, so $zP'(-z)^T=-P(-z)^TA^T+\tilde A^TP(-z)^T$. Hence
+\[
+zS'=\bigl(-P(-z)^TA^T+\tilde A^TP(-z)^T\bigr)\eta P(z)+P(-z)^T\eta\bigl(AP(z)-P(z)\tilde A\bigr)=\tilde A^TS-S\tilde A,
+\]
+because $A^T\eta=\eta A$ by self-duality (\cref{def:gau-onepole}). With $T:=\eta^{-1}S$ and $\tilde A^T\eta=\eta\tilde A$ this is $zT'=\tilde AT-T\tilde A$, and $T$ has coefficients in $\mathfrak{gl}_5(\Bbbk\fps u)$. By \cref{thm:gau-U}~(b) for the pair $(\tilde A,\tilde A)$, $T=t(z)\,1$ for some $t\in\Bbbk\fps z$; no invertibility of $T_0$ is needed. Compare the entries $(2,1)$ at $u=0$: by \cref{lem:gau-R1} column $1$ of $P(0,z)$ is $\cn(z)\mathbf e_1$, so $S_{21}(0,z)=\sum_aP_{a2}(0,-z)\eta_{a1}\cn(z)=5P_{22}(0,-z)\cn(z)=5\cn(-z)\cn(z)$, using $\eta_{a1}=5\delta_{a2}$ and $P_{22}(0,\cdot)=P_{11}(0,\cdot)$ ($r=\tilde r$); on the other hand $S_{21}=t(z)\eta_{21}=5t(z)$. So $t(z)=\cn(z)\cn(-z)$. For the consequences: $(\Pc)_{11}(0,z)=1$; every regular gauge is $\Pc\cn(z)$ with $(\Pc\cn)_{11}(0,z)=\cn(z)$; $\cn(z)\cn(-z)=1$ forces $\cn(0)=\pm1$ and is equivalent to the oddness of $\log(\cn/\cn(0))$; for graded gauges $\cn\in\Bbbk\fps{z^5}$.
+\end{proof}
+
+\begin{cor}[The dual identity]
+\label{cor:gau-Gstar}
+As row vectors in $\bbQ\lser z\fps u$,
+\[
+\YCQ(u,-z)^T\eta\,\Pc(u,z)=\YC(v(u),-z)^T\eta .
+\]
+More generally, $\YCQ(-z)^T\eta P(z)=P_{11}(0,z)\,\YC(-z)^T\eta$ for every regular gauge $P$.
+\end{cor}
+
+\begin{proof}
+For a regular gauge, $P_{11}(0,z)$ is a unit of $\bbQ\fps z$, its constant term being $(P_0)_{11}(0)\neq0$. Substituting $-z$ for $z$ (a ring automorphism of $\bbQ\lser z\fps u$) in \eqref{eq:gau-G} gives $\YCQ(-z)=P_{11}(0,-z)^{-1}P(-z)\YC(-z)$. Transposing, multiplying on the right by $\eta P(z)$ and using \eqref{eq:gau-symp},
+\[
+\YCQ(-z)^T\eta P(z)=P_{11}(0,-z)^{-1}P_{11}(0,z)P_{11}(0,-z)\,\YC(-z)^T\eta=P_{11}(0,z)\,\YC(-z)^T\eta .\qedhere
+\]
+\end{proof}
+
+\input{sections/s03_gauge_6}

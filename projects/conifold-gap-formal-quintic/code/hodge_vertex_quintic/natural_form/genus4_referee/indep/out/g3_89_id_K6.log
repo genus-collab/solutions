@@ -1,0 +1,54 @@
+====================================================================================================
+ind_run g3_89_id_K6: 42 inner graphs, K = 6, NZ = 6, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.2 s
+   complete outer graphs: 42 of 42 (all)
+PASS 42 outer graphs equal the reference g3_state_89.json:A_id, coefficients u^0..u^5
+      compared, by number of outer edges: [(0, 1), (1, 2), (2, 5), (3, 9), (4, 12), (5, 8), (6, 5)]; non-zero in my table: 42
+   vertex graph: ['[35186990132276513688820058 mod p]', '[251134492422884823527411396 mod p]', '[273985538380181271403681344 mod p]', '[442037243737841885089088199 mod p]', '[416263412377987674802573263 mod p]', '[565510870031036388248120887 mod p]']
+   total: ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '[284355047606972826306720189 mod p]', '[383918576763827511157597137 mod p]']
+PASS GAP: total = (1/25200) t_c^-4 + 0 + .. + 0
+IND_RUN (g3_89_id_K6) ALL CHECKS PASSED
+====================================================================================================
+ind_run g3_89_id_K6: 42 inner graphs, K = 6, NZ = 6, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.2 s
+   inner graph   0 (E=0, V=1, gv=(3,)): momentum 0.01 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   1 (E=1, V=1, gv=(2,)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   2 (E=2, V=1, gv=(1,)): momentum 0.01 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   3 (E=3, V=1, gv=(0,)): momentum 0.10 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph   4 (E=1, V=2, gv=(1, 2)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   5 (E=2, V=2, gv=(0, 2)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   6 (E=2, V=2, gv=(1, 1)): momentum 0.00 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph   7 (E=2, V=2, gv=(1, 1)): momentum 0.00 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph   8 (E=3, V=2, gv=(0, 1)): momentum 0.01 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph   9 (E=3, V=2, gv=(0, 1)): momentum 0.01 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph  10 (E=3, V=2, gv=(0, 1)): momentum 0.01 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph  11 (E=3, V=2, gv=(0, 1)): momentum 0.01 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  12 (E=4, V=2, gv=(0, 0)): momentum 0.04 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph  13 (E=4, V=2, gv=(0, 0)): momentum 0.03 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph  14 (E=4, V=2, gv=(0, 0)): momentum 0.04 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph  15 (E=4, V=2, gv=(0, 0)): momentum 0.03 s, brute 0.01 s, 1 outer graphs, equal: True
+   inner graph  16 (E=2, V=3, gv=(1, 1, 1)): momentum 0.00 s, brute 0.04 s, 1 outer graphs, equal: True
+   inner graph  17 (E=3, V=3, gv=(0, 1, 1)): momentum 0.00 s, brute 0.03 s, 1 outer graphs, equal: True
+   inner graph  18 (E=3, V=3, gv=(0, 1, 1)): momentum 0.00 s, brute 0.03 s, 1 outer graphs, equal: True
+   inner graph  19 (E=3, V=3, gv=(0, 1, 1)): momentum 0.00 s, brute 0.05 s, 1 outer graphs, equal: True
+   inner graph  20 (E=4, V=3, gv=(0, 0, 1)): momentum 0.00 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  21 (E=4, V=3, gv=(0, 0, 1)): momentum 0.00 s, brute 0.03 s, 1 outer graphs, equal: True
+   inner graph  22 (E=4, V=3, gv=(0, 0, 1)): momentum 0.00 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  23 (E=4, V=3, gv=(0, 0, 1)): momentum 0.00 s, brute 0.03 s, 1 outer graphs, equal: True
+   inner graph  24 (E=4, V=3, gv=(0, 0, 1)): momentum 0.00 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  25 (E=4, V=3, gv=(0, 0, 1)): momentum 0.00 s, brute 0.03 s, 1 outer graphs, equal: True
+   inner graph  26 (E=5, V=3, gv=(0, 0, 0)): momentum 0.01 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  27 (E=5, V=3, gv=(0, 0, 0)): momentum 0.01 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  28 (E=5, V=3, gv=(0, 0, 0)): momentum 0.01 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  29 (E=5, V=3, gv=(0, 0, 0)): momentum 0.01 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  30 (E=5, V=3, gv=(0, 0, 0)): momentum 0.01 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  31 (E=3, V=4, gv=(0, 1, 1, 1)): momentum 0.00 s, brute 0.10 s, 1 outer graphs, equal: True
+   inner graph  32 (E=4, V=4, gv=(0, 0, 1, 1)): momentum 0.00 s, brute 0.06 s, 1 outer graphs, equal: True
+   inner graph  33 (E=4, V=4, gv=(0, 0, 1, 1)): momentum 0.00 s, brute 0.07 s, 1 outer graphs, equal: True
+   inner graph  34 (E=5, V=4, gv=(0, 0, 0, 1)): momentum 0.00 s, brute 0.04 s, 1 outer graphs, equal: True
+   inner graph  35 (E=5, V=4, gv=(0, 0, 0, 1)): momentum 0.00 s, brute 0.04 s, 1 outer graphs, equal: True
+   inner graph  36 (E=5, V=4, gv=(0, 0, 0, 1)): momentum 0.00 s, brute 0.04 s, 1 outer graphs, equal: True
+   inner graph  37 (E=6, V=4, gv=(0, 0, 0, 0)): momentum 0.00 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  38 (E=6, V=4, gv=(0, 0, 0, 0)): momentum 0.00 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  39 (E=6, V=4, gv=(0, 0, 0, 0)): momentum 0.00 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  40 (E=6, V=4, gv=(0, 0, 0, 0)): momentum 0.00 s, brute 0.02 s, 1 outer graphs, equal: True
+   inner graph  41 (E=6, V=4, gv=(0, 0, 0, 0)): momentum 0.00 s, brute 0.02 s, 1 outer graphs, equal: True
+BRUTE-FORCE CHECK (g3_89_id_K6) ALL EQUAL

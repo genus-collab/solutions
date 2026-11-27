@@ -1,0 +1,16 @@
+g5_flat_hatted: NMAX = 9, points L0 = ['2', '3', '-2', '1/2', '5/3']
+L0 = 2: c_n(L0) = L0^(4n) ph_n(L0^-5) for n <= 4: True
+L0 = 3: c_n(L0) = L0^(4n) ph_n(L0^-5) for n <= 4: True
+L0 = -2: c_n(L0) = L0^(4n) ph_n(L0^-5) for n <= 4: True
+L0 = 1/2: c_n(L0) = L0^(4n) ph_n(L0^-5) for n <= 4: True
+L0 = 5/3: c_n(L0) = L0^(4n) ph_n(L0^-5) for n <= 4: True
+c_5(L0) - L0^20 ph^(0)_5(L0^-5) at the points: ['4537/3937500', '4537/3937500', '4537/3937500', '4537/3937500', '4537/3937500'] ; equals 4537/3937500: True
+L0 = 2: c_n(L0) = L0^(4n) ph^SP_n(L0^-5) for n <= 9 (free coefficient f_1 from c_5): True
+L0 = 3: c_n(L0) = L0^(4n) ph^SP_n(L0^-5) for n <= 9 (free coefficient f_1 from c_5): True
+L0 = -2: c_n(L0) = L0^(4n) ph^SP_n(L0^-5) for n <= 9 (free coefficient f_1 from c_5): True
+L0 = 1/2: c_n(L0) = L0^(4n) ph^SP_n(L0^-5) for n <= 9 (free coefficient f_1 from c_5): True
+L0 = 5/3: c_n(L0) = L0^(4n) ph^SP_n(L0^-5) for n <= 9 (free coefficient f_1 from c_5): True
+control X1 at L0 = 2: c_1 matches L0^4 ph_1(L0^-5): False (must be False)
+control X2 at L0 = 2: c_1 matches L0^4 ph_1(L0^-5): False (must be False)
+control X3 at L0 = 2: c_1 = L0^3 ph_1(L0^-5): False (must be False)
+ph_1 = ['-3/20', '0']  c_1(2) = -12/5

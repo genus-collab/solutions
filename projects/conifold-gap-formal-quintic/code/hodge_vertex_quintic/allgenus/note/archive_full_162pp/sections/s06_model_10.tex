@@ -1,0 +1,57 @@
+% Section 6, part 10.
+\subsection{The Model Lemma on \texorpdfstring{$\sK$}{K}}
+\label{sec:mod-MLK}
+
+Recall \cref{def:red-ML}: $\ML{h}$ asserts (i) that for $n\geq 1$, $2h-2+n>0$ and $X_1,\dots,X_n\in\sK$ homogeneous over $\bbQ[v]$ (that is $X_i\in\sK\cap V_{w_i}$), $\langle X_1\cdots X_n\rangle_h(v)-(\Fm_h)^{(n)}(v)\prod_i\Pi_0(X_i)$ lies in $\bbQ[v]$, and (ii) that $\Fm_h=c_hv^{2-2h}$ for $h\geq 2$; here $\Fm_h$ is the free energy of \cref{cor:mod-trF} for $h\geq 2$, and $\Fm_1=-\frac1{12}\log v$, $\Fm_0=-\frac52v^2\log v$, of which only the derivatives of order $\geq 1$, respectively $\geq 3$, enter. Note that $\Fm_h=(-5)^{1-h}\FTR_h$ for every $h\geq 0$, with $\FTR_0,\FTR_1$ as in \cref{thm:mod-V}~(ii).
+
+\begin{thm}[The Model Lemma on $\sK$]
+\label{thm:mod-MLK}
+$\ML{h}$ holds for every $h\geq 0$.
+\end{thm}
+
+\begin{proof}
+Part (ii) of $\ML{h}$ is \cref{thm:mod-gap}. For part (i), let $X_i\in\sK\cap V_{w_i}$, $i=1,\dots,n$.
+
+\emph{Step 1 (topological recursion).} By \cref{thm:mod-tr}, $\langle q_{\phi_1}\cdots q_{\phi_n}\rangle_h=(-5)^{1-h}\langle\phi_1\cdots\phi_n\rangle^{\mathrm{TR}}_h$ for legs as in \cref{def:mod-ancvec}.
+
+\emph{Step 2 (the leg dictionary).} By \cref{prop:mod-LD}, the TR leg of $Y\in V_w$ is $-\Lambda(Y)$, and $q_{-\log p}=H$.
+
+\emph{Step 3 (the legs of $\sK$).} By \cref{cor:mod-Ksplit}, $X_i=Y_i+\Pi_0(X_i)H$ with $Y_i\in\sKo\cap V_{w_i}$ and $\Pi_0(X_i)\in\bbQ v^{w_i/5}$, a monomial with a non-negative exponent. Hence $X_i=q_{\ell_i}$ for the leg $\ell_i:=-\Lambda(Y_i)+\Pi_0(X_i)\,(-\log p)$ ($q$ is $\bbQ[v]$-linear in the leg). By \cref{thm:mod-lattice}~(b) and \cref{lem:mod-classL}~(i), $-\Lambda(Y_i)=\phi_i+f_i(x)$ with $\phi_i\in\bbQ[v][p]$ and $f_i\in\bbQ[v][x]$. (It is the lattice theorem, not homogeneity, that excludes terms $v^{-j}p^{w_i+5j}$ with $j>0$, which homogeneity would allow.)
+
+\emph{Step 4 (expansion).} By multilinearity and \cref{lem:mod-xfun}, which removes the components $f_i(x)$ (in every slot, whatever the other slots carry),
+\[
+\langle X_1\cdots X_n\rangle_h=(-5)^{1-h}\sum_{S\subseteq\{1,\dots,n\}}\prod_{i\notin S}\Pi_0(X_i)\,\big\langle(\phi_i)_{i\in S},(-\log p)^{n-|S|}\big\rangle^{\mathrm{TR}}_h .
+\]
+Every term with $S\neq\emptyset$ lies in $\bbQ[v]$: by \cref{thm:mod-Lreg} if $S=\{1,\dots,n\}$, and by \cref{thm:mod-V}~(i) otherwise; the factors $\Pi_0(X_i)$ are monomials with non-negative exponents.
+
+\emph{Step 5 (the pure logarithmic term).} By \cref{thm:mod-V}~(ii) and \cref{cor:mod-trF} (for $h=0,1$ by the normalisations recalled above), the term $S=\emptyset$ is
+\[
+(-5)^{1-h}\langle(-\log p)^n\rangle^{\mathrm{TR}}_h\prod_i\Pi_0(X_i)=(-5)^{1-h}(\FTR_h)^{(n)}\prod_i\Pi_0(X_i)=(\Fm_h)^{(n)}\prod_i\Pi_0(X_i).
+\]
+This proves (i).
+\end{proof}
+
+\Cref{thm:mod-MLK} holds modulo the quoted inputs named at the beginning of this section, and nothing about the quintic enters. The insertions met in \cref{thm:red-main} are $\bbQ\fps{u}$-combinations of homogeneous elements of $\sK$ (\cref{lem:tra-coeff}); there the statement is applied termwise (\cref{lem:tra-conv}~(b)).
+
+\begin{cor}[The one-point law on $\sK$]
+\label{cor:mod-onepoint}
+Let $h\geq 1$ and $X\in\sK\cap V_w$. If $\langle X\rangle_h$ is singular, that is, if its $v$-exponent is negative, then $\langle X\rangle_h=\Pi_0(X)\,(\Fm_h)'(v)$.
+\end{cor}
+
+\begin{proof}
+By \cref{thm:mod-MLK} with $n=1$, $\langle X\rangle_h-(\Fm_h)'\Pi_0(X)\in\bbQ[v]$. By \cref{lem:set-modhom}, $\langle X\rangle_h=Cv^e$ with $e=1-2h+w/5$, and $(\Fm_h)'\Pi_0(X)$ is a multiple of the same power $v^{1-2h}\cdot v^{w/5}$, since $\Pi_0(X)\in\bbQ v^{w/5}$; as $e<0$ by assumption, the difference, an element of $\bbQ[v]$ of this form, is $0$.
+\end{proof}
+
+\begin{cor}[The primary sector]
+\label{cor:mod-primary}
+Let $h\geq 1$ and $n\geq 1$. A primary correlator $\langle H^{a_1}\cdots H^{a_n}\rangle_h$ vanishes unless $a_1=\dots=a_n=1$, and $\langle H^n\rangle_h=(\Fm_h)^{(n)}(v)$.
+\end{cor}
+
+\begin{proof}
+By \cref{def:tra-tower} and the shift rule, $\Pi_i(H^a)=0$ for $i\geq 1$, and $\Pi_0(H^a)=0$ for $a\neq 1$, $\Pi_0(H)=1$; so $H^a\in\sKo$ for $a\neq 1$ and $H\in\sK$. By \cref{lem:set-modhom} the $v$-exponent of a primary correlator is $2-2h+\sum_i\wt(0,a_i)$ with $\wt(0,a)=(\nu_a-4)/5<0$, negative for $h\geq 1$. By \cref{thm:mod-MLK} the difference $\langle\prod_iH^{a_i}\rangle_h-(\Fm_h)^{(n)}\prod_i\Pi_0(H^{a_i})$ lies in $\bbQ[v]$ and is homogeneous of negative exponent, hence $0$; and $\prod_i\Pi_0(H^{a_i})$ is $1$ if all $a_i=1$ and $0$ otherwise.
+\end{proof}
+
+\begin{rmk}[Off $\sK$]
+\label{rmk:mod-offK}
+The restriction to $\sK$ cannot be dropped. Off $\sK$, that is, for insertions with a component along the directions $\psi^kH$ with $k\geq 1$, the singular part of a one-point correlator is in general not $\Pi_0(X)(\Fm_h)'$; and the singular parts of two-point correlators off $\sK$ are not of the form given by $\Fm_h(V(q))$ for any function $V$ of the insertion independent of the genus, linear or not. Both facts are known only by computation (genus $3$ and $4$ examples; \cref{sec:evi-model}); they are not used.
+\end{rmk}

@@ -1,0 +1,7 @@
+(E1) h_n exact (Q(zeta_5) traces) = h_n mod p for n <= 12, both primes, and h_5 = -257071/8064000000: True;  h_1 = -3/20
+(E2) p=2305843009213693951: Zagier-Zinger Phi_0..Phi_3 (n = 5) = (1/h) x QRR WKB, as q-series mod q^14: [True, True, True, True]
+(E2) p=618970019642690137449562111: Zagier-Zinger Phi_0..Phi_3 (n = 5) = (1/h) x QRR WKB, as q-series mod q^14: [True, True, True, True]
+     B_6(1/5)/6 = 4537/3937500
+(E3) p=2305843009213693951: F_inf = exp(Sum_l (-1)^(l+1) B_(5l+1)(1/5) z^(5l)/(l(5l+1))) for m <= 30: True
+(E3) p=618970019642690137449562111: F_inf = exp(Sum_l (-1)^(l+1) B_(5l+1)(1/5) z^(5l)/(l(5l+1))) for m <= 30: True
+RESULT rf_extra: PASS  [1.9 s]

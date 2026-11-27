@@ -1,0 +1,12 @@
+ev_struct: field 2^89-1, n <= 1000; log file logs/ev_struct_89_1000.log
+   n =   50 reached in 4 s (deg ph_n = 40)
+   n =  100 reached in 4 s (deg ph_n = 80)
+   n =  200 reached in 5 s (deg ph_n = 160)
+   n =  300 reached in 5 s (deg ph_n = 240)
+   n =  500 reached in 6 s (deg ph_n = 400)
+   n = 1000 reached in 13 s (deg ph_n = 800)
+PASS S1 deg ph_n = floor(4n/5) for 3 <= n <= 1000, ph_1 = -3/20 and ph_2 = 9/800 constant (free coefficient = top coefficient): []
+PASS S2 ph_n(0) = F_{0,n} (model, homogeneous) for all n <= 1000: automatic, not a criterion: []
+PASS S3 (H): ph_n(1) = h_n for all 800 n <= 1000 with 5 not | n: []
+PASS S4 R_n(1) = 0 at every n <= 1000; no resonance obstruction at the 200 multiples of 5 (200 of them because deg rho_n < 4n/5)
+EV_STRUCT 2^89-1 n<=1000: ALL CHECKS PASSED   (13 s)

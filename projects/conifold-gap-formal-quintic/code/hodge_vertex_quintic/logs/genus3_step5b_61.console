@@ -1,0 +1,113 @@
+--------------------------------------------------------------------------------------------------------------
+(5b) two-sided covariant-scalar dressing exp(u S_L) M_0 exp(u S_R), genus 2 + 3 O(u) system  (2026-11-09 20:07)
+   4 x 6 matrix (rows: genus-2 graphs 2, 4; genus-3 graphs 2, 5; columns ['b1', 'b3', 'b5', "b1'", "b3'", "b5'"]):
+      ['-1/80', '-5/48', '0', '-1/120', '-5/48', '0']
+      ['1/640', '5/1152', '0', '-1/1440', '5/1152', '0']
+      ['11/80000', '1/9600', '1/640', '-1/2000', '0', '1/640']
+      ['[934013560338571499 mod p]', '59/384000', '-1/46080', '-1/36000', '1/18000', '-1/46080']
+PASS two-sided scalar class: rank 4, consistent, 2-dimensional solution set: (4, True, 2)
+   particular solution ['1600063/252735', '-477191/421225', '5523764/2106125', '2032126/421225', '0', '0']; directions ['-5375/16849', '-15774/16849', '-977/84245', '-5375/16849', '1', '0'], ['0', '0', '-1', '0', '0', '1']
+      t=(0, 0) 1/8 jobs done (6 s)
+      t=(0, 0) 2/8 jobs done (6 s)
+      t=(0, 0) 3/8 jobs done (7 s)
+      t=(0, 0) 4/8 jobs done (7 s)
+      t=(0, 0) 5/8 jobs done (11 s)
+      t=(0, 0) 6/8 jobs done (23 s)
+      t=(0, 0) 7/8 jobs done (68 s)
+      t=(0, 0) 8/8 jobs done (324 s)
+   pass (t_1, t_2) = (0, 0): 325 s; max eps-degree 6
+PASS (0,0): 1-edge graphs vanish through u^1, every graph O(u^E)
+      t=(1, 0) 1/8 jobs done (6 s)
+      t=(1, 0) 2/8 jobs done (6 s)
+      t=(1, 0) 3/8 jobs done (7 s)
+      t=(1, 0) 4/8 jobs done (7 s)
+      t=(1, 0) 5/8 jobs done (11 s)
+      t=(1, 0) 6/8 jobs done (23 s)
+      t=(1, 0) 7/8 jobs done (68 s)
+      t=(1, 0) 8/8 jobs done (325 s)
+   pass (t_1, t_2) = (1, 0): 325 s; max eps-degree 6
+PASS (1,0): 1-edge graphs vanish through u^1, every graph O(u^E)
+      t=(2, 0) 1/8 jobs done (5 s)
+      t=(2, 0) 2/8 jobs done (6 s)
+      t=(2, 0) 3/8 jobs done (7 s)
+      t=(2, 0) 4/8 jobs done (7 s)
+      t=(2, 0) 5/8 jobs done (11 s)
+      t=(2, 0) 6/8 jobs done (23 s)
+      t=(2, 0) 7/8 jobs done (68 s)
+      t=(2, 0) 8/8 jobs done (325 s)
+   pass (t_1, t_2) = (2, 0): 325 s; max eps-degree 6
+PASS (2,0): 1-edge graphs vanish through u^1, every graph O(u^E)
+      t=(0, 1) 1/8 jobs done (6 s)
+      t=(0, 1) 2/8 jobs done (6 s)
+      t=(0, 1) 3/8 jobs done (7 s)
+      t=(0, 1) 4/8 jobs done (7 s)
+      t=(0, 1) 5/8 jobs done (11 s)
+      t=(0, 1) 6/8 jobs done (23 s)
+      t=(0, 1) 7/8 jobs done (68 s)
+      t=(0, 1) 8/8 jobs done (322 s)
+   pass (t_1, t_2) = (0, 1): 322 s; max eps-degree 6
+PASS (0,1): 1-edge graphs vanish through u^1, every graph O(u^E)
+      t=(0, 2) 1/8 jobs done (6 s)
+      t=(0, 2) 2/8 jobs done (6 s)
+      t=(0, 2) 3/8 jobs done (7 s)
+      t=(0, 2) 4/8 jobs done (7 s)
+      t=(0, 2) 5/8 jobs done (11 s)
+      t=(0, 2) 6/8 jobs done (23 s)
+      t=(0, 2) 7/8 jobs done (68 s)
+      t=(0, 2) 8/8 jobs done (324 s)
+   pass (t_1, t_2) = (0, 2): 324 s; max eps-degree 6
+PASS (0,2): 1-edge graphs vanish through u^1, every graph O(u^E)
+      t=(1, 1) 1/8 jobs done (6 s)
+      t=(1, 1) 2/8 jobs done (6 s)
+      t=(1, 1) 3/8 jobs done (7 s)
+      t=(1, 1) 4/8 jobs done (7 s)
+      t=(1, 1) 5/8 jobs done (11 s)
+      t=(1, 1) 6/8 jobs done (23 s)
+      t=(1, 1) 7/8 jobs done (68 s)
+      t=(1, 1) 8/8 jobs done (320 s)
+   pass (t_1, t_2) = (1, 1): 320 s; max eps-degree 6
+PASS (1,1): 1-edge graphs vanish through u^1, every graph O(u^E)
+      t=(2, 1) 1/8 jobs done (6 s)
+      t=(2, 1) 2/8 jobs done (6 s)
+      t=(2, 1) 3/8 jobs done (7 s)
+      t=(2, 1) 4/8 jobs done (7 s)
+      t=(2, 1) 5/8 jobs done (11 s)
+      t=(2, 1) 6/8 jobs done (23 s)
+      t=(2, 1) 7/8 jobs done (68 s)
+      t=(2, 1) 8/8 jobs done (307 s)
+   pass (t_1, t_2) = (2, 1): 307 s; max eps-degree 6
+PASS (2,1): 1-edge graphs vanish through u^1, every graph O(u^E)
+   quadratic forms Q_Gamma(t_1, t_2) = [u^2] of the two-edge graphs (coefficients of [(0, 0), (1, 0), (0, 1), (2, 0), (1, 1), (0, 2)]):
+PASS graph 3: the fitted quadric reproduces the check point (2,1) (degree <= 2 confirmed)
+      graph  3: ['[1747668923286381197 mod p]', '[24301110253465782 mod p]', '0', '[1326392637134776957 mod p]', '0', '0']
+PASS graph 6: the fitted quadric reproduces the check point (2,1) (degree <= 2 confirmed)
+      graph  6: ['[609461401491655079 mod p]', '[723917665652192987 mod p]', '0', '[904152042798466546 mod p]', '0', '0']
+PASS graph 7: the fitted quadric reproduces the check point (2,1) (degree <= 2 confirmed)
+      graph  7: ['[1315837951353187150 mod p]', '[800776443522543737 mod p]', '0', '[1663371464908134970 mod p]', '0', '0']
+PASS graph 8: the fitted quadric reproduces the check point (2,1) (degree <= 2 confirmed)
+      graph  8: ['[1041184668921411238 mod p]', '[603057037624715840 mod p]', '0', '[2083529792086017064 mod p]', '0', '0']
+PASS graph 17: the fitted quadric reproduces the check point (2,1) (degree <= 2 confirmed)
+      graph 17: ['[2012108767304727179 mod p]', '[886023307360770274 mod p]', '0', '[46647681088509018 mod p]', '0', '0']
+      Res_t2(Q_3, Q_6): degree 0 in t_1
+      Res_t2(Q_3, Q_7): degree 0 in t_1
+      Res_t2(Q_3, Q_8): degree 0 in t_1
+      Res_t2(Q_3, Q_17): degree 0 in t_1
+   gcd of the four resultants Res_t2(Q_3, Q_j), j = 6, 7, 8, 17: degree 0 (['0'])
+FAIL KEY (two-sided scalar class): the five [u^2] quadrics have NO common zero over the algebraic closure (gcd of resultants = constant)
+   gcd of Res_t2(Q_6, Q_j), j = 3, 7, 8, 17: degree 0
+step 5b time 2249 s
+STEP 5b FAILURES: ['KEY (two-sided scalar class): the five [u^2] quadrics have NO common zero over the algebraic closure (gcd of resultants = constant)']
+--------------------------------------------------------------------------------------------------------------
+(5b post) the two-sided family is effectively one-dimensional: univariate analysis of the [u^2] quadrics in t_1
+PASS second direction of the O(u) family = (0, 0, -1, 0, 0, 1): the central zhat^5 . 1 moved between the factors (M unchanged)
+PASS all t_2-dependent coefficients of the five quadrics vanish
+      graph  3: Q(t_1) = [1747668923286381197 mod p] + [24301110253465782 mod p] t_1 + [1326392637134776957 mod p] t_1^2; discriminant a square mod p: False; roots []
+      graph  6: Q(t_1) = [609461401491655079 mod p] + [723917665652192987 mod p] t_1 + [904152042798466546 mod p] t_1^2; discriminant a square mod p: True; roots ['7124167/403125', '[606098607609677475 mod p]']
+      graph  7: Q(t_1) = [1315837951353187150 mod p] + [800776443522543737 mod p] t_1 + [1663371464908134970 mod p] t_1^2; discriminant a square mod p: False; roots []
+      graph  8: Q(t_1) = [1041184668921411238 mod p] + [603057037624715840 mod p] t_1 + [2083529792086017064 mod p] t_1^2; discriminant a square mod p: False; roots []
+      graph 17: Q(t_1) = [2012108767304727179 mod p] + [886023307360770274 mod p] t_1 + [46647681088509018 mod p] t_1^2; discriminant a square mod p: True; roots ['2200616/134375', '[904556753904221607 mod p]']
+      gcd(Q_3, Q_6): degree 0
+      gcd(Q_3, Q_7): degree 0
+      gcd(Q_3, Q_8): degree 0
+      gcd(Q_3, Q_17): degree 0
+PASS KEY (two-sided covariant-scalar class, genus 2 + 3 O(u) solutions): the five [u^2] quadrics in t_1 have NO common zero over the algebraic closure (every gcd(Q_3, Q_j) is a constant)

@@ -1,0 +1,16 @@
+pp_res: u^1..u^14, exact over Q, frame (0,0)
+u^1: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -1..-1
+u^2: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -1..-1
+u^3: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -1..-1
+u^4: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -1..-1
+u^5: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -6..-1
+u^6: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -6..-1
+u^7: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -6..-1
+u^8: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -6..-1
+u^9: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -11..-1
+u^10: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -11..-1
+u^11: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -11..-1
+u^12: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -11..-1
+u^13: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -16..-1
+u^14: V == w0 (Y^C_Q)_0: True; positive z-powers in V: none; z-powers -16..-1
+RESULT residue = vanishing solution (no Stirling remnant) through u^14: PASS  [0.0 s]

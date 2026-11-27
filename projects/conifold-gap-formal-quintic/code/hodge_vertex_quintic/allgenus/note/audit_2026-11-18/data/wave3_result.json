@@ -1,0 +1,287 @@
+{
+ "seconds": [
+  {
+   "key": "U03B",
+   "summary": "I found no fatal error, gap or fixable error in Appendix A, Appendix B or s03_gauge part 1 (lem:gau-confexp, thm:gau-cyc (CYC), cor:gau-cycsys). I attacked the unit on quantifiers, index wrap-around mod 5, convention traps and formal ring operations, and checked each downstream use against what is proved. Exact wolframscript checks confirm the kappa^LR values, Wr = L^10, the jet matrix and its inverse, the Gram matrix, Mcyc = PF4 in several frames, and the special-geometry identity. I confirm U03_A's three minor points and add two wording points: cor:gau-cycsys (ii) wording, and a forward-reference pointer in prop:gau-quintic (i).",
+   "serious": [],
+   "minor": [
+    {
+     "title": "cor:gau-cycsys (ii) read literally leaves the forward recursion unshifted",
+     "label": "cor:gau-cycsys",
+     "file": "sections/s03_gauge.tex",
+     "lines": "80-83 (proof: a2_cyclicPF4.tex l.122)",
+     "problem": "The equivalence in (i) also contains the recursion Y_{a+1} = zD Y_a/kappa_a. Read literally, (ii) keeps that recursion unshifted, and that version is false. The proof applies the automorphism D -> D + w/z to the whole chain, so it proves th..."
+    },
+    {
+     "title": "prop:gau-quintic (i): closing relation pointer needs a forward reference",
+     "label": "prop:gau-quintic",
+     "file": "sections/s03_gauge_2.tex",
+     "lines": "20",
+     "problem": "cor:gau-cycsys gives the closing relation for the expanded rows only once PF5^{(i)}(varpi_0 Cexp(X_0)) = 0 is known, and that is not established at this point. It is supplied later: for colour 0 by thm:gau-R0 (iii)-(iv), via the Laurent-pol..."
+    },
+    {
+     "title": "lem:gau-conc (iv) tacitly uses Conc(f,varpi_1)=0 before lem:gau-iso (ii)",
+     "label": "lem:gau-conc",
+     "file": "sections/a2_cyclicPF4.tex",
+     "lines": "50",
+     "problem": "This silently drops the ell-term. It closes without circularity: the left side is in Q, and ell is transcendental over K, so Conc(f,varpi_1) = 0 and the K-part is a constant. This confirms U03_A's M1."
+    },
+    {
+     "title": "Formal setting at Q=1 left implicit; rings used are more than stated",
+     "label": "lem:set-grading",
+     "file": "sections/a1_cyclicLR.tex",
+     "lines": "5, 13-17",
+     "problem": "At Q=1 the double sum of (G0)(d) has meaning only after the divisor equation resums it into Q[T][[e^T]], followed by substitution into Q[[q]][l]. The appendix also works in Q[[q]][l][[w]], in H(x)Q(zeta)[[q]][l][[z^{-1}]] and in Q((q)). All..."
+    },
+    {
+     "title": "Notation clashes (J, P, Y_b, R)",
+     "label": "lem:gau-transv",
+     "file": "sections/a2_cyclicPF4.tex",
+     "lines": "68 (also 33 of a1, 50 of a2; macros.tex l.61)",
+     "problem": "These letters clash with the J-function, the jet matrix \\Jet, the system unknowns Y_a and the macro comment for \\cR. No proof becomes ambiguous. This confirms U03_A's M2."
+    }
+   ],
+   "coverage_notes": []
+  },
+  {
+   "key": "U05B",
+   "summary": "I read both files of Gauge III in full and attacked every statement: hypotheses, the mod-5 wrap-around, degenerate cases, z against -z, eta against eta^{-1}, the rings involved, the omitted arguments and every later use in the manuscript. All statements are true as written and all proofs are complete. I found no fatal error, no gap and no fixable error. I re-derived by hand the diagonal of the gauge (checked against symplecticity at z^0), the general symplectic form with r != r~ that cor:mai-univ uses, the vanishing-solution recursion against its closed form for n = 0..6, and r_1 = 3/5. I also checked the HPF identity with my own wolframscript script. There are five minor findings; two are new (F4, F5's second bullet). The other three confirm the first referee. F5 is a later remark (rmk:set-qrrsign) that cites lem:gau-HPF for more than the lemma proves; U01_C and L5 already reported it.",
+   "serious": [],
+   "minor": [
+    {
+     "title": "The letter c (\\cn) has three meanings in the unit",
+     "label": "lem:gau-diag / prop:gau-symp / thm:gau-G",
+     "file": "sections/s03_gauge_5.tex; sections/s03_gauge_6.tex",
+     "lines": "s03_gauge_5 l.20, l.31; s03_gauge_6 l.11-12, l.20, l.25, l.30, l.43",
+     "problem": "These are different series. P_11(0,z) = c_U(z) P^natural_11(0,z), and in general P_11(0,0) = c_U(0)(b~_0/b_0)(0). The last two meanings coincide for P = Pc c. No statement is affected: each proof uses its own definition consistently. A read..."
+    },
+    {
+     "title": "lem:gau-HPF (ii): omitted zh^0 clause; step numbers (1)-(5) clash with items (i)-(iii)",
+     "label": "lem:gau-HPF",
+     "file": "sections/s03_gauge_6.tex",
+     "lines": "l.61-65 (statement), l.71-73 (proof)",
+     "problem": "The equivalence silently uses that the zh^0-coefficient of the left side vanishes identically. It does, because every O_e preserves the zh^0-coefficient; my machine check confirms this. The proof numbers its steps (1)-(5) while the items ar..."
+    },
+    {
+     "title": "lem:gau-vanq (a): the pulled-back model is not specified for a general A",
+     "label": "lem:gau-vanq",
+     "file": "sections/s03_gauge_5.tex",
+     "lines": "l.81, l.89",
+     "problem": "A is an arbitrary one-pole system, but the v along which the model is pulled back is not stated. The proof needs A~ to be a one-pole system (to apply (c) and lem:gau-uniq), i.e. v in uQ[[u]] with v'(0) != 0. For the standing pair (v = v(u))..."
+    },
+    {
+     "title": "def:gau-can: existence cites only thm:gau-G (a), which is conditional",
+     "label": "def:gau-can",
+     "file": "sections/s03_gauge_6.tex",
+     "lines": "l.25",
+     "problem": "thm:gau-G (a) begins 'For a graded regular gauge P'. That such a gauge exists, rationally, is prop:gau-graded (i) / thm:gau-U (c),(d), which is not cited here. Graded is in fact not needed: for any regular P, P P_11(0,z)^{-1} = Pc by thm:ga..."
+    },
+    {
+     "title": "rmk:set-qrrsign cites lem:gau-HPF for more than the lemma proves (later use in a stronger form)",
+     "label": "rmk:set-qrrsign (uses lem:gau-HPF)",
+     "file": "sections/s02_setup_4.tex",
+     "lines": "l.52 (last sentence of rmk:set-qrrsign); also l.27",
+     "problem": "Here ph_1 is the coefficient of the actual rows, which def:set-rows takes as power series in q. lem:gau-HPF (iii) forces ph_1 = -3/20 only for ph_1 in Q[[u]]. In Q[[q]], and in Q((s)), the zh^2-equation (4 - 5 theta_u) ph_1 = -3/5 has the s..."
+    }
+   ],
+   "coverage_notes": []
+  },
+  {
+   "key": "U07B",
+   "summary": "Section 4 (transport) holds up: I found no fatal error, no gap and nothing that needs a repair. I re-derived every formula and sign, including the z/-z conventions, R against R^{-1}, the lowered and vector forms of (Sp) (they agree because eta^{-1}=eta/25), the mod-5 grading and the empty and n=0 cases. I also opened every cited statement and checked every later use in s05, s06, s07 and s10 against what the unit proves. Two independent exact-arithmetic scripts found no counterexample. The first tests a random graded symplectic dressing with u-dependent P_0 != 1 and v=u+u^2/3, and confirms Lemma E, Lemma T(b),(d) and (Sp). The second confirms the frames, the ten trivial frames and eq:tra-values, computed from the residue series of def:gau-van. I agree with U07_A. My further points are wording or reference issues only.",
+   "serious": [],
+   "minor": [
+    {
+     "title": "Sign appendix calls Lemma T vector-form",
+     "label": "lem:tra-T",
+     "file": "sections/b_signs.tex",
+     "lines": "22",
+     "problem": "Lemma T mixes the two forms. q_T and part (a) are in vector form, but (b) and (d) are computed with the lowered Y'=P Y^C and the lowered entries p_{k,b}. This is a description error only; no proof is affected."
+    },
+    {
+     "title": "Leaf-point paragraph says (Sp) unused, then uses it",
+     "label": "def:tra-edge",
+     "file": "sections/s04_transport_4.tex",
+     "lines": "35-40",
+     "problem": "The computation of q_T uses only the grading, but the PPZ action and its edge are defined only for symplectic R^vec, so that last identification does use (Sp). The paragraph also starts by assuming (Sp). Wording only."
+    },
+    {
+     "title": "Lemma F over-states which data enter",
+     "label": "lem:tra-F",
+     "file": "sections/s04_transport_4.tex",
+     "lines": "138, 146",
+     "problem": "Only P_0 enters, through (R^vec)^{-1}=(P^vec)^{-1}P_0^vec, and only non-negative powers of d occur. The statement is true as written but broader than needed."
+    },
+    {
+     "title": "Informal name for (A); affine slice equals K",
+     "label": "prop:tra-can",
+     "file": "sections/s04_transport.tex",
+     "lines": "8; s04_transport_4.tex 151",
+     "problem": "(A) is a condition on P Y^C, not literally an annihilation; it matches the phrase only through cor:tra-edges ((A) iff (Pi_0 x 1)E_P=0). Also, since -z+K=K by cor:tra-slice, 'q_T in K' and 'tilde q_T in -z+K' say the same kind of thing. Term..."
+    },
+    {
+     "title": "Mis-references (confirming U07_A M1)",
+     "label": "lem:tra-frames",
+     "file": "sections/s04_transport_2.tex",
+     "lines": "26, 28, 75; s04_transport.tex 15",
+     "problem": "Items (i)-(iii) and the homogeneity statement are in the unnumbered paragraphs after def:tra-tower (s04_transport.tex 54-72). The order bound is part (b) together with ord_u v>=1. The pairing formula is in s02_setup.tex line 32 (def:set-fq)..."
+    },
+    {
+     "title": "Regrouping, domain of Theta, 'non-zero' (confirming U07_A M2-M4)",
+     "label": "lem:tra-twoslot",
+     "file": "sections/s04_transport.tex",
+     "lines": "30, 83-87; s04_transport_2.tex 58, 77",
+     "problem": "Three small omissions. (1) The regrouping step needs one unstated line: the family of sub-sums is itself summable. (2) The domain of Theta (finitely supported sequences in Q[v], resp. all sequences in Q[[u]]) is not named. (3) The exponent ..."
+    },
+    {
+     "title": "Example (i) of a dressing: only the one-pole shape is unstated",
+     "label": "def:tra-dressing",
+     "file": "sections/s04_transport_4.tex",
+     "lines": "14",
+     "problem": "This refines U07_A M6. No rationality hypothesis is missing: P P_{11}(0,z)^{-1} does not depend on the choice of P, because P=P^natural c(z) by thm:gau-U(b) and c cancels, and P^natural is rational by thm:gau-U(d). The only unstated point i..."
+    }
+   ],
+   "coverage_notes": []
+  },
+  {
+   "key": "U1617B",
+   "summary": "Appendix D (formal stationary phase) has no fatal error and no gap. I attacked every lemma: quantifiers, conventions, the ring each object lives in, the omitted arguments, small-case tests and every downstream use. Seven independent wolframscript checks pass: Stirling stationary phase (z^5); eq:fsp-generic (z^3, z-dependent b, negative control); DLMF 5.11.8, stirfe and the St recursion; the Fubini+change of variables+Stirling chain of eq:gam-step1 (z^3); the shift identity of Theorem P(a) Step 3 (z^5); a 2-D moving-base-point test (q^2, z^-2..z^2). All of the first referee's minor points (U16 M1-M7, U17 F1-F5) are confirmed, and I re-derived their repairs. I add three new minor points. Theorems P, LMI, Gamma and C are unaffected.",
+   "serious": [],
+   "minor": [
+    {
+     "title": "Generic-base-point lemma assumes a phase over A_L but its use has a constant term outside A_L",
+     "label": "lem:fsp-generic",
+     "file": "sections/a_formalsp_3.tex",
+     "lines": "64; use at s08_connection_4.tex 61",
+     "problem": "The only use (thm:con-Pa (i)) takes S = S_0, whose value S_0(L) contains logarithms and is not in A_L. The proof of thm:con-Pa says the Taylor data lie in A_L, which holds only for orders >= 1. Nothing breaks: the proof of (iii) only involv..."
+    },
+    {
+     "title": "Unused clauses in lem:fsp-dq and lem:fsp-param",
+     "label": "lem:fsp-dq, lem:fsp-param (iii)",
+     "file": "sections/a_formalsp_3.tex",
+     "lines": "40, 55, 59",
+     "problem": "None of these clauses is cited anywhere. The only uses are lem:con-S2 and lem:fsp-generic (basic formal identity of lem:fsp-dq), lem:fsp-stirling Step 2 (lem:fsp-param (iv)) and s09_gamma_2 ('compare' lem:fsp-param (i)). The holomorphic cla..."
+    },
+    {
+     "title": "Second closure of the exponential-substitution step in the residue lemma",
+     "label": "lem:fsp-res (iii)",
+     "file": "sections/a_formalsp_5.tex",
+     "lines": "94, 98",
+     "problem": "This is asserted without argument (U17 F3). It is needed in prop:con-res to move the residue from X to Y. Only multiplicativity and the case X^{+-1} are proved; a ring homomorphism need not commute with e^{-f_0/zh}."
+    },
+    {
+     "title": "E_{zC} with a q-dependent covariance is not defined (confirmed U16 M1)",
+     "label": "def:fsp-ring Parameters; cor:fsp-movebase",
+     "file": "sections/a_formalsp.tex; a_formalsp_3.tex",
+     "lines": "a_formalsp.tex 16; a_formalsp_3.tex 15-31",
+     "problem": "When C, i.e. the critical point c, depends on q, 'coefficientwise in q' has no literal meaning, and amplitudes in A_0[[x-c_0]]((z))[[q]] need not have z-order bounded below uniformly in q. Used in cor:fsp-movebase, lem:fsp-pg (iii) (q-form)..."
+    },
+    {
+     "title": "'Subring' should be 'Q-subalgebra' (confirmed U16 M2)",
+     "label": "lem:fsp-param (i)",
+     "file": "sections/a_formalsp_3.tex",
+     "lines": "36",
+     "problem": "False as worded: with F = -t^2/2 + t^3 and A' = Z, the z^1 coefficient is 15/2. Every use is over a Q-algebra."
+    },
+    {
+     "title": "'Every amplitude' is proved only for power-series amplitudes (confirmed U17 F1)",
+     "label": "lem:fsp-cov, lem:fsp-cfu",
+     "file": "sections/a_formalsp_4.tex",
+     "lines": "19-23, 39-43",
+     "problem": "For a general amplitude in R_n(A), the composite a o phi and the polynomiality in s are not proved. Every use in the note has a in A[[x-c]]((z))."
+    }
+   ],
+   "coverage_notes": []
+  }
+ ],
+ "escalations": [
+  {
+   "key": "E1",
+   "title": "eq:con-bz in Theorem P(a) proved factor by factor outside the ring it names",
+   "verdict": "real-minor",
+   "reason": "eq:con-bz is true, and the factor-by-factor proof is valid once it is done in the right ring. The text names A_L(zeta)[[t]][[z]], which contains none of the factors. The right ring is B = A_L(zeta)[[t]]((z))[log z, log 5L, log(L-zeta^j)], with logarithms taken additively and T_z = exp(z d/dt) as a ring endomorphism of B. Two facts make it work. The Stirling series is consistent under a change of base point: T_z o eps = eps o tau_theta, two continuous ring homomorphisms that agree on generators. And lem:fsp-stirfe, iterated through tau_i tau_j = tau_{i+j}, gives each factor's shift. Choosing log q := -5 log 5L + sum_j log(L-zeta^j) makes all symbols cancel; exponentiating the remainder gives eq:con-bz in A_L[[t,z]]. U13-1/10, U14-2/3 and U14-5 are slips closed by lem:fsp-const or by renaming the intermediate ring. Theorem P(a) stands; checks (A)-(D) in e1checks.out all return 0.",
+   "repair": "s08_connection_4 l.79: say the factor computation is done additively in B (as in the reason field), with T_z fixing the symbols and log q := -5 log 5L + sum_j log(L-zeta^j). Add one line: for an affine a with slope alpha, eps_a: W=1/Y -> z/a(L+t), log Y -> log a - log z, satisfies T_z o eps_a = eps_a o tau_alpha, where tau_alpha: W -> W/(1+alpha W), log Y -> log Y + log(1+alpha W). By lem:fsp-stirfe, tau_m G - G = sum_{i=1}^m (log Y + log(1+i/Y)), where G = log Gst(1+Y). Summing the six differences gives log[q prod(5sigma+kz)/((sigma+z)^5-1)] in A_L[[t,z]]; then exponentiate. l.61: write the phase as S_0 - S_0(L) and the amplitude as chi A_St/A_St(L,0). s08_connection_5 l.10: change Q[X][[u]] to Q[X^{+-1}]((s)); l.8: apply lem:fsp-const before lem:fsp-cov.",
+   "affects": "none",
+   "confidence": 0.93,
+   "report": "<user home>/AppData/Local/Temp/claude/e4f9c78170babeb8/6e869404-a58f-4e56-808b-7dc78d09e28b/scratchpad/audit/verify/E1.md",
+   "second": null
+  },
+  {
+   "key": "E2",
+   "title": "Undefined or over-stated objects in the formal stationary-phase appendix and their downstream uses",
+   "verdict": "real-minor",
+   "reason": "All six points are real, but the earlier 'minor' labels are right. lem:fsp-param (i) is false over Z: F=-t^2/2+t^3, a=1 gives [z^1]=15/2. lem:fsp-res (i) fails if P_+- has coefficients of negative order. lem:fsp-cov/cfu, param (iv), movebase and fsp-dq are stated for more amplitudes than are proved. E_{zC} with a q-dependent C is never defined. Each is closed by a routine definition (work modulo q^N in R_n(A_0[q]/q^N), where a mod q^N is a genuine amplitude and the mixed exponentials converge) or by restricting the scope. Every downstream use stays inside the restricted, literally defined case: con-S2 (p^m), fsp-generic and Theorem P(a)(i) (eps-free b), stirling (x/a)^{-1}, P(a)(ii), con-id, the cfu amplitude fa_Y, fubini/LMI over C[[sigma-L]], gam-main (iii), residue with f_0 over Q, deltasrc. A wolframscript check of movebase (q^0..q^3, z^-3..z^3, with a negative control) agrees.",
+   "repair": "def:fsp-ring, Parameters: put B_N=A_0[q]/(q^N) and define E_{zC}[P], SPn_c[F;a] for P in R_n(A_0)[[q]], a in A_0[[x-c_0]]((z))[[q]] as lim_N of the functional over B_N (equivalently sum_d q^d E_{zC}[P_d]); exponentials are taken mod q^N in R_n(B_N). lem:fsp-param (i): 'subring' -> 'Q-subalgebra'. lem:fsp-param (iv): add 'c a non-degenerate critical point of F over A, a in A[[x-c]]((z))'. lem:fsp-cov, lem:fsp-cfu: 'every amplitude' -> 'every amplitude in A[[x-c]]((z))'. lem:fsp-ring (iv): add 'E^t_{zC}[gP]=gE^t_{zC}[P] for g in R_m(A)' (proof: write g as a summable family of monomials). lem:fsp-res (i): 'P_+- polynomials over k without constant term'.",
+   "affects": "none",
+   "confidence": 0.86,
+   "report": "<user home>/AppData/Local/Temp/claude/e4f9c78170babeb8/6e869404-a58f-4e56-808b-7dc78d09e28b/scratchpad/audit/verify/E2.md",
+   "second": null
+  },
+  {
+   "key": "E3",
+   "title": "lem:fsp-res (iii): the exponential under the substitution X -> X + chi, used in prop:con-res",
+   "verdict": "real-minor",
+   "reason": "The last sentence of lem:fsp-res (iii) is true, but the proof does not justify it. A ring homomorphism that agrees with the substitution on Laurent polynomials does not determine the image of E=e^{-f_0/zh}, because E is neither a Laurent polynomial nor u-adically small. The missing step is short and needs only E'=g'E with g=-f_0/zh, which follows termwise from the finite-sum coefficients of e^{-P_\u00b1/zh}. By induction E^{(j)}=Y_j(g',...,g^{(j)})E, where Y_j are the complete Bell polynomials. Substituting x_i->g^{(i)}, t->chi then gives T(E)=E exp(T(g)-g). Continuity and multiplicativity handle e^{-f_1/zh} and beta. The result is e^{-f(X+chi)/zh}beta(X+chi), read with the convention of (ii). The use in prop:con-res matches exactly: f=W_V, f_1=(V-1)/Y, chi=Y(X)-X, beta=a_Y, f(X+chi)=hatW, and a_Y(Y(X))Y'=hat a. That gives Res_Y=Res_X=hatV. Theorem P(b), the glue and Theorem C are unaffected. A Python check to u^4 agreed (sanity only).",
+   "repair": "a_formalsp_5.tex l.98, replace the last sentence of the proof of (iii) by: \"For E:=e^{-f_0/zh}, g:=-f_0/zh one has E'=g'E (the coefficients of e^{-P_\u00b1/zh} are finite sums). By induction E^{(j)}=Y_j(g',...,g^{(j)})E, Y_j the complete Bell polynomials, sum_j Y_j t^j/j!=exp(sum_{i>=1}x_i t^i/i!), as Y_{j+1}=x_1Y_j+DY_j with Dx_i=x_{i+1}. The substitution x_i->g^{(i)}, t->chi is a u-adically continuous ring homomorphism Q[x][[t]]->k[zh^{-1}][X^{\u00b11}][[u]], so E(X+chi)=E exp(sum_{i>=1}g^{(i)}chi^i/i!)=e^{-f_0(X)/zh}e^{-(f_0(X+chi)-f_0(X))/zh}. The map is u-adically continuous and k((zh^{-1}))[[u]]-linear, so it sends e^{-f_1/zh} to e^{-f_1(X+chi)/zh}; by multiplicativity Omega(X+chi)=e^{-f_0(X)/zh}(e^{-(f(X+chi)-f_0(X))/zh}beta(X+chi)), i.e. e^{-f(X+chi)/zh}beta(X+chi) in the convention of (ii).\" In the statement (l.94), say that this exponential is read with the convention of (ii) and that beta is as Q in (ii).",
+   "affects": "C (and A, B through the window (F_g)); no effect once the routine step is added",
+   "confidence": 0.9,
+   "report": "<user home>/AppData/Local/Temp/claude/e4f9c78170babeb8/6e869404-a58f-4e56-808b-7dc78d09e28b/scratchpad/audit/verify/E3.md",
+   "second": null
+  },
+  {
+   "key": "E4",
+   "title": "Completeness of the declared inputs about the R-matrix: flatness (b), constant-fixing, coefficient ring, all-genus divisor equation, Teleman hypotheses",
+   "verdict": "real-fixable",
+   "reason": "The note uses flatness (b) on the chains of Theorems A, B and C: in prop:set-cyclicLR(iii), cor:set-cyclicPF5(b), lem:gau-colrows, thm:gau-R0(iii) and thm:con-glue. Flatness means that the R with Omega = R.omega has columns R e~_i e^{u_i/z} solving the QDE along t=T(q)H. The note calls (b) a \"convention\" and does not prove it. No pinned statement contains it: Teleman Thm (2) in (1.15) and GJR18 Thm 4.1 only give the existence of some R. It is a theorem, and it is pinnable: GJR18 Lemma 5.2 eq. (16) is literally prop:set-cyclicLR(iii), and Teleman v3 Props 7.7, 8.2(ii), 8.4 and 8.7(ii) give it in general. The (QRR) value fixes the constants, and the note proves the uniqueness it needs (lem:gau-wkb). The log-free coefficient ring is declared (GJR18 Sec 4.1), and it also follows from (b) by WKB uniqueness over Q(zeta)[[q]][log q]. The all-genus divisor equation enters only in stating (T) at Q=e^T; it is standard. Teleman's hypotheses are covered through GJR18 Sec 4.1. No mathematical error; downstream results unchanged.",
+   "repair": "Define R in def:set-rows as the unique R=1+O(z), R_k in End(H)(x)Q(zeta)[[q]], satisfying (b) with q^0 part diag(h_{w_i}). Existence and uniqueness hold by solving recursively in the canonical frame, and symplecticity follows from (b), (G0) and (QRR). Restate (T) as: \"Omega(Q=e^{T(q)}) = R.omega for this R\". Pin it to GJR18 Sec 4.1, Thm 4.1 and Lemma 5.2, (16) with (17) in its proof; GJR17 (12)-(13) and Lemma 4.6; Teleman v3 Def 7.1 and Props 7.2, 7.7(7.7.a), 8.2(ii), 8.4, 8.7(ii); Givental math/0008067 Sec 1 Prop (a)-(c) and Sec 2.2 Thm 1 with the Remark; Coates-Givental Thm 1 and Cor 1. Add the all-genus divisor equation of the twisted classes and the all-genus CohFT axioms with flat unit (GJR18 Sec 4.1) to (T). Replace \"convention\" by \"quoted property\" in s01_intro_3 l.10 and def:set-rows. Add (b)/(T) to the hypotheses of prop:set-cyclicLR(iii) and cor:set-cyclicPF5(b), and to s08_connection_8 l.19 and s01_intro_3 l.17.",
+   "affects": "A, B, C",
+   "confidence": 0.75,
+   "report": "<user home>/AppData/Local/Temp/claude/e4f9c78170babeb8/6e869404-a58f-4e56-808b-7dc78d09e28b/scratchpad/audit/verify/E4.md",
+   "second": null
+  },
+  {
+   "key": "E5",
+   "title": "Misprints and readings in the quoted topological-recursion identification (DNOPS/DOSS) used for thm:mod-tr",
+   "verdict": "real-fixable",
+   "reason": "I checked the printed pages of DNOPS v2 and DOSS v1. DNOPS (2-33) is false as printed for the model curve: off the diagonal its leading term has the wrong sign (B_00 against -B_00), and on the diagonal the delta term is missing. thm:mod-tr Step 1 (s06_model_3 l.23, l.28) rests this hypothesis only on DNOPS's claim that compact curves satisfy (2-33) and on the sentence before DNOPS Thm 8.1. Both are claims about this false identity, and the correct global statement (Eynard App. B, LPSZ) is not a declared input. So as written the step is unjustified, not just misprinted. The correct form (DOSS (4-1)) holds for the model curve: I give a three-step proof via d1(B/dx1)+d2(B/dx2) = sum_k dxi^k(x)dxi^k and lem:mod-laplace(i); checked exactly, and numerically to 1e-45 for all 15 pairs (i,j). The other five points are correctly minor: the index reading is DNOPS's own left-action convention, and the leg identity confirms it while the transpose fails. With these corrections, (Q) gives exactly what thm:mod-tr and prop:mod-Rtr use. A, B, C and Gamma are unaffected.",
+   "repair": "s06_model_3 l.28: replace 'compatibility condition ... satisfies (2-30)-(2-33)' by: (*) (psi1+psi2)L_i(x)L_j[B - delta_ij dw dw'/(w-w')^2] = delta_ij - sum_k R^{-1}(psi1)^i_k R^{-1}(psi2)^j_k, the correct form of DNOPS (2-33) [DOSS (4-1)]. Proof: on P^1, d1(B/dx1)+d2(B/dx2) = sum_k dxi^k(x)dxi^k, since its 1-form in p1 is holomorphic except at c_k, with principal part that of dxi^k dxi^k because (dp/dw_k)^2 = -1/x''(c_k). Apply lem:mod-laplace(i) in each variable. For i=j, D(dw dw'/(w-w')^2) = dw dw'/(w^2 w'^2), whose transform is th1 th2. (Q), s01_intro_3 l.9: cite DOSS (2-22)-(2-26) (dilaton (2-23), 1/|Aut| (2-26)) and DNOPS 2.6 (2-30)-(2-32), (2-34), (2-35), with DNOPS Remark 2.1 (upper index the row) and (2-33) read as DOSS (4-1). Drop Prop. 4.3, Thm 8.1 and (8-1), or pin Prop. 4.3 (2) and a_1=...=a_4=0, a_5=4v. b_signs l.14: note the 1/|Aut| omitted in DNOPS 2.3.",
+   "affects": "none",
+   "confidence": 0.75,
+   "report": "<user home>/AppData/Local/Temp/claude/e4f9c78170babeb8/6e869404-a58f-4e56-808b-7dc78d09e28b/scratchpad/audit/verify/E5.md",
+   "second": null
+  },
+  {
+   "key": "E6",
+   "title": "PPZ results used over coefficient rings other than Q, and the PPZ statements used inside the proof of Prop. 2.12",
+   "verdict": "real-minor",
+   "reason": "PPZ propositions are used over other rings in only two ways: Prop. 2.12 (the unit property), over Q(zeta)[vs^\u00b11] and its specialisations including Q(zeta)((s)); and Props. 2.12 and 2.14 over Q(zeta)((s)). No PPZ proposition is used over N\u2297Q(zeta), Q(zeta)[[q]] or Q[[u]]; there only definitions, (8) and lemmas proved in the note enter. The cohomology causes no issue: H*(Mbar,Q) is finite-dimensional and every operation is an A-linear extension. The cited reason, \"polynomial in the coefficients\", does not prove the claim, as X5 says. X5's fix of embedding into C is incomplete because PPZ is stated over Q. The claim is still true. PPZ's proofs are formal, including those of 2.3, 2.7, 2.9 and Lemma 2.11 used inside 2.12; L1-1 is confirmed as bookkeeping. Alternatively, every use takes a semisimple TFT and symplectic R = exp(r), which are freely parametrised. The conclusions are then polynomial identities that hold at all rational points, so they hold over every Q-algebra. The chain is unaffected.",
+   "repair": "s02_setup_4 l.79: replace the last sentence with: \"Over a commutative Q-algebra A, V is free of finite rank and eta is perfect. Props. 2.12 and 2.14 of [PPZ15] are applied only to a TFT omega_y with orthonormal basis and unit sum y_i e_i (y_i in A^x), and to R=1+O(z) with R(-z)^T R(z)=1, i.e. R=exp(r) with r_k^T=(-1)^{k+1} r_k. For fixed (g,n), each conclusion used is a finite family of identities between Laurent polynomials over Q in y and finitely many free coordinates of the r_k. [PPZ15] gives them at all rational points, so they are polynomial identities and hold over A.\" In s10_main_2 l.27, cite this sentence instead of \"hold verbatim\". In s01_intro_3 l.9, drop \"Props. 2.4, 2.8 and 2.9 enter only through the proof of Prop. 2.14\", or list 2.3, 2.7, Lemma 2.11 and the Sec. 0.3 pull-back rule, and note that 2.9 is also used in the proof of 2.12.",
+   "affects": "none",
+   "confidence": 0.87,
+   "report": "<user home>/AppData/Local/Temp/claude/e4f9c78170babeb8/6e869404-a58f-4e56-808b-7dc78d09e28b/scratchpad/audit/verify/E6.md",
+   "second": null
+  },
+  {
+   "key": "E7",
+   "title": "What Corollary B states: representative-dependence, injectivity of ev, and frame change versus analytic continuation",
+   "verdict": "real-fixable",
+   "reason": "(a) ev is injective, so X4's m2 argument is correct. ev is injective exactly when L, l, C_0^(0..3) and I~_1^(0..2) are algebraically independent. The differential Galois group of PF4 is Sp_4 (Beukers-Heckman and Schlesinger). The pair (C_0, I_1) is isotropic and its stabiliser has dimension 3, so its jets have transcendence degree 7. log q is transcendental over the Picard-Vessiot field, because Sp_4 is perfect. The concomitant relation removes I~^(3). This is an undeclared external input, but nothing uses it. With it, F_g^N is the only preimage of F_g, so representative-dependence does not arise. (b) Theorems A, C, Gamma, Corollary B and rmk:int-constant claim exactly what is proved. The proof chain is unaffected. C_{alpha,beta} is a formal frame change, not analytic continuation: by irreducibility, the continuation of C_0 contains varpi_1 log u. Three sentences read as more than is proved: the abstract's \"factorise the R-matrix\", def:set-points l.28, and sec:sgn-lit l.106/108. In CGYZ's sense the last needs F_g^N in S, which l.108 calls \"not needed\". It holds by a checked few-line argument that uses Theorem C.",
+   "repair": "Abstract (main.tex l.18): replace with \"Expanding at u=0 in a conifold frame (substituting the frame periods for C_0, I_1 in the graph-sum representative), we factorise the expanded R-matrix...\", and add \"for this formal conifold expansion\" after \"conifold gap\". s02_setup_3.tex l.28: write \"near the conifold point the note uses their conifold expansions (def:set-confexp), Laurent series in s, not analytic continuations\". Add to What is not claimed: \"Nothing is claimed about the analytic continuation of F_g to u=0; C_{alpha,beta} is a formal change of isotropic frame.\" sec:sgn-lit l.108: replace \"is not needed\" with the argument. F_g^N is l-free and a_k-invariant, so it lies in Q[L^{\u00b11}][c_0^{\u00b11},c_1,c_2,c_3,pi_1,pi_2][W^{-1}], with pi_j=i_j-i_0c_j/c_0. By D=1, sigma: L->zeta L permutes the colours, so its L-degrees are divisible by 5. Hence F_g^N lies in S and F_g^cf equals the CGYZ expansion of F_g. Alternatively restrict l.106 to \"in the sense of Corollary B\". Optionally add the injectivity remark to def:mai-Fcf l.81.",
+   "affects": "none",
+   "confidence": 0.8,
+   "report": "<user home>/AppData/Local/Temp/claude/e4f9c78170babeb8/6e869404-a58f-4e56-808b-7dc78d09e28b/scratchpad/audit/verify/E7.md",
+   "second": null
+  },
+  {
+   "key": "E8",
+   "title": "Formulas behind notational findings on the chain: eta^{-1} in the outer edge, Delta-hat in lem:flh-inputs, dilaton homogeneity for formal y, the hatted unit",
+   "verdict": "real-minor",
+   "reason": "All five points are wording only; read literally, every chain formula is right and nothing misread is used. eta^{-1} in def:set-outer is the inverse bivector (def:set-graphsum, def:flh-outer(iii)); its lowered matrix is eta, and every matrix eta^{-1} (rmk:flh-fail(iii), cor:mai-gap, lem:flh-inputs(iii)) is the correct pairing. Misreading it rescales the edge by 1/25 (checked). The appendix hat-Delta (b_signs l.32) is cited nowhere; lem:flh-inputs(iv) uses def:set-modcohft. lem:set-dilaton(iii): for formal y each y-monomial gets one convergent series in b; lem:flh-dil substitutes y in z^2V[[z]]. lem:flh-hat: in hatted lowered coordinates (def:set-hat), hat-1 = s1 has components 5e_3 and q_hat = s^{-3}q(s^4 zh) (checked). Theorem A's TFT must be the conifold expansion (zeta^{4i}s varpi_0)^{2g-2+n}, the only reading that makes sense and the one the proof uses.",
+   "repair": "(1) def:set-outer l.46 and thm:flh-main Step 1 l.78: after eta^{-1} add \"(the inverse bivector of (H,eta), of matrix eta in lowered components; for symplectic R' the numerator is 1-R'(-psi)^T eta^{-1} R'(-psi'))\". (2) b_signs l.32: write \"hat-omega_{g,n}(e~_i^n)=(zeta^{4i} x-hat)^{2g-2+n}\" instead of hat-Delta. (3) lem:set-dilaton(iii): \"the left side is defined coefficientwise in y (each monomial of y-degree a gets sum_b, convergent since eps in m); for y in z^2V[[z]] it is the Taylor expansion of def:flh-outer(ii)\". (4) lem:flh-hat l.9: \"hat-R'(zh) is the map R'(s^4 zh) in hatted lowered components, where hat-1=s1 has components 5e_3\". (5) thm:mai-main l.11 and def:set-outer: \"omega the TFT of def:set-frob expanded in the frame, omega_{g,n}(e~_i^n)=(zeta^{4i} s varpi_0)^{2g-2+n}\".",
+   "affects": "none",
+   "confidence": 0.9,
+   "report": "<user home>/AppData/Local/Temp/claude/e4f9c78170babeb8/6e869404-a58f-4e56-808b-7dc78d09e28b/scratchpad/audit/verify/E8.md",
+   "second": null
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+system S2: m5 = 319129204271/48787200000
+   outer graph 0 (E=0, gv=[4]): (stored - canon)/m5 [u^0..u^5] = ['0', '0', '0', '0', '-1/8400000', '563/3402000000']
+   outer graph 1 (E=1, gv=[1, 3]): (stored - canon)/m5 [u^0..u^5] = ['0', '0', '0', '0', '-1/1008000', '947/272160000']
+   outer graph 2 (E=1, gv=[2, 2]): (stored - canon)/m5 [u^0..u^5] = ['0', '0', '0', '0', '1/900000', '-1181/324000000']
+   outer graph 3 (E=1, gv=[3]): (stored - canon)/m5 [u^0..u^5] = ['0', '0', '0', '0', '0', '1/5040000']
+   outer graph 4 (E=2, gv=[0, 3]): (stored - canon)/m5 [u^0..u^5] = ['0', '0', '0', '0', '0', '-1/1512000']
+   outer graph 7 (E=2, gv=[1, 2]): (stored - canon)/m5 [u^0..u^5] = ['0', '0', '0', '0', '0', '73/10800000']
+   outer graph 8 (E=2, gv=[1, 2]): (stored - canon)/m5 [u^0..u^5] = ['0', '0', '0', '0', '0', '-17/2700000']
+   graphs that move: [0, 1, 2, 3, 4, 7, 8] (prediction: subset of [0, 1, 2, 3, 4, 7, 8])
+   [u^4] column = universal frozen response (-1/8400000, -1/1008000, 1/900000 on graphs 0, 1, 2; 0 else): PASS
+   sum over outer graphs of (stored - canon)/m5: ['0', '0', '0', '0', '0', '0']  -> total unchanged: PASS
+   no difference below [u^4]: PASS

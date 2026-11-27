@@ -1,0 +1,448 @@
+==============================================================================
+prime p = 618970019642690137449562111
+rows, decorations, conifold periods (u-precision 18) in 0.7 s; t_c = (1)x^1 + (7/10)x^2 + (41/75)x^3 + O(x^22)
+------------------------------------------------------------------------------
+frame F0: 115 coloured graphs summed in 30.8 s
+PASS F0: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F0: Cf valuations constant along Z/5 colour orbits
+PASS F0: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + (-6809/18000000) s^5 + (-2551/15000000) s^10 + (-71573/562500000) s^15 + ([305951637603796017354912042 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F0: Cf(total NEl) = sum of coloured Cf series
+   (Cf substitutions 39.2 s)
+------------------------------------------------------------------------------
+frame F1: 115 coloured graphs summed in 30.5 s
+PASS F1: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F1: Cf valuations constant along Z/5 colour orbits
+   (F1 is not Z/5 covariant: common weight; exact colour-shift invariance not expected)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400*zeta^1) s^-6 + (-7/40000) s^-5 + (-119/1105920*zeta^2) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400*zeta^2) s^-6 + (-7/40000) s^-5 + (-119/1105920*zeta^4) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400*zeta^3) s^-6 + (-7/40000) s^-5 + (-119/1105920*zeta^1) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400*zeta^4) s^-6 + (-7/40000) s^-5 + (-119/1105920*zeta^3) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + (-6809/18000000) s^5 + (-2551/15000000) s^10 + (-71573/562500000) s^15 + ([305951637603796017354912042 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F1: Cf(total NEl) = sum of coloured Cf series
+PASS F1: total equals the F0 total exactly in N (structural at the zeta point, genus 2: Z/5 phases; not a test of the exponent sign)
+   (Cf substitutions 38.0 s)
+------------------------------------------------------------------------------
+frame F2: 115 coloured graphs summed in 30.6 s
+PASS F2: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F2: Cf valuations constant along Z/5 colour orbits
+   (F2 is not Z/5 covariant: common weight; exact colour-shift invariance not expected)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000*zeta^1) s^-6 + (-7/40000) s^-5 + (-1507/5529600*zeta^2) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000*zeta^2) s^-6 + (-7/40000) s^-5 + (-1507/5529600*zeta^4) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000*zeta^3) s^-6 + (-7/40000) s^-5 + (-1507/5529600*zeta^1) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000*zeta^4) s^-6 + (-7/40000) s^-5 + (-1507/5529600*zeta^3) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + (-6809/18000000) s^5 + (-2551/15000000) s^10 + (-71573/562500000) s^15 + ([305951637603796017354912042 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F2: Cf(total NEl) = sum of coloured Cf series
+PASS F2: total equals the F0 total exactly in N (structural at the zeta point, genus 2: Z/5 phases; not a test of the exponent sign)
+   (Cf substitutions 38.3 s)
+------------------------------------------------------------------------------
+frame F3: 115 coloured graphs summed in 30.5 s
+PASS F3: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F3: Cf valuations constant along Z/5 colour orbits
+   (F3 is not Z/5 covariant: common weight; exact colour-shift invariance not expected)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/3072000) s^-6 + (-7/40000) s^-5 + (-119/27648000) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/3072000*zeta^1) s^-6 + (-7/40000) s^-5 + (-119/27648000*zeta^2) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/3072000*zeta^2) s^-6 + (-7/40000) s^-5 + (-119/27648000*zeta^4) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/3072000*zeta^3) s^-6 + (-7/40000) s^-5 + (-119/27648000*zeta^1) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/3072000*zeta^4) s^-6 + (-7/40000) s^-5 + (-119/27648000*zeta^3) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + (-6809/18000000) s^5 + (-2551/15000000) s^10 + (-71573/562500000) s^15 + ([305951637603796017354912042 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F3: Cf(total NEl) = sum of coloured Cf series
+PASS F3: total equals the F0 total exactly in N (structural at the zeta point, genus 2: Z/5 phases; not a test of the exponent sign)
+   (Cf substitutions 38.7 s)
+------------------------------------------------------------------------------
+frame F4: 115 coloured graphs summed in 31.3 s
+PASS F4: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F4: Cf valuations constant along Z/5 colour orbits
+PASS F4: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + (-6809/18000000) s^5 + (-2551/15000000) s^10 + (-71573/562500000) s^15 + ([305951637603796017354912042 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F4: Cf(total NEl) = sum of coloured Cf series
+PASS F4: total equals the F0 total exactly in N
+   (Cf substitutions 39.9 s)
+------------------------------------------------------------------------------
+frame F5: 115 coloured graphs summed in 15.4 s
+PASS F5: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10        0
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F5: Cf valuations constant along Z/5 colour orbits
+PASS F5: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (0, 10), val -10: (1807/15360000) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + (1807/2400000000) s^5 + ([162009363346694086835566439 mod p]) s^10 + ...   [u-series; in t_c: (1807/15360000)/t_c^2 + (-791/76800000)/t_c + (-2557/512000000) + ...]
+      colour 1: Ldeg (0, 10), val -10: (1807/15360000) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + (1807/2400000000) s^5 + ([162009363346694086835566439 mod p]) s^10 + ...   [u-series; in t_c: (1807/15360000)/t_c^2 + (-791/76800000)/t_c + (-2557/512000000) + ...]
+      colour 2: Ldeg (0, 10), val -10: (1807/15360000) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + (1807/2400000000) s^5 + ([162009363346694086835566439 mod p]) s^10 + ...   [u-series; in t_c: (1807/15360000)/t_c^2 + (-791/76800000)/t_c + (-2557/512000000) + ...]
+      colour 3: Ldeg (0, 10), val -10: (1807/15360000) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + (1807/2400000000) s^5 + ([162009363346694086835566439 mod p]) s^10 + ...   [u-series; in t_c: (1807/15360000)/t_c^2 + (-791/76800000)/t_c + (-2557/512000000) + ...]
+      colour 4: Ldeg (0, 10), val -10: (1807/15360000) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + (1807/2400000000) s^5 + ([162009363346694086835566439 mod p]) s^10 + ...   [u-series; in t_c: (1807/15360000)/t_c^2 + (-791/76800000)/t_c + (-2557/512000000) + ...]
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + (-6809/18000000) s^5 + (-2551/15000000) s^10 + (-71573/562500000) s^15 + ([305951637603796017354912042 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F5: Cf(total NEl) = sum of coloured Cf series
+PASS F5: total equals the F0 total exactly in N
+   (Cf substitutions 36.6 s)
+------------------------------------------------------------------------------
+frame F0b: 115 coloured graphs summed in 16.7 s
+PASS F0b: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F0b: Cf valuations constant along Z/5 colour orbits
+PASS F0b: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+   total: 6842 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-27/16000) s^-6 + (-7/6000) s^-5 + (27/8000) s^-2 + (1/250) s^-1 + (97/72000) s^0 + (-19/9600) s^2 + ...
+PASS F0b: Cf(total NEl) = sum of coloured Cf series
+PASS F0b: total differs from the F0 total exactly in N
+   (Cf substitutions 38.9 s)
+------------------------------------------------------------------------------
+frame F5b: 115 coloured graphs summed in 31.6 s
+PASS F5b: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F5b: Cf valuations constant along Z/5 colour orbits
+PASS F5b: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+   total: 6842 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (27/16000) s^-6 + (-7/6000) s^-5 + (27/8000) s^-2 + (-1/250) s^-1 + (97/72000) s^0 + (19/9600) s^2 + ...
+PASS F5b: Cf(total NEl) = sum of coloured Cf series
+PASS F5b: total differs from the F0 total exactly in N
+   (Cf substitutions 42.8 s)
+------------------------------------------------------------------------------
+frame F4b: 115 coloured graphs summed in 33.7 s
+PASS F4b: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F4b: Cf valuations constant along Z/5 colour orbits
+PASS F4b: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: (1807/15360000) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+   total: 6842 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-3/1600) s^-6 + (-7/6000) s^-5 + (1/240) s^-2 + (1/225) s^-1 + (97/72000) s^0 + (-1/576) s^2 + ...
+PASS F4b: Cf(total NEl) = sum of coloured Cf series
+PASS F4b: total differs from the F0 total exactly in N
+   (Cf substitutions 43.1 s)
+------------------------------------------------------------------------------
+(iii) sensitivity of the F1 Cf verdict to varpi^cf_0 = f0 + alpha g + beta f2:
+   (alpha, beta) = (1, 0): valuations changed for 0/115 coloured graphs []; leading coefficient changed for 0
+   (alpha, beta) = (0, 1): valuations changed for 0/115 coloured graphs []; leading coefficient changed for 0
+   (alpha, beta) = (2/3, -1/7): valuations changed for 0/115 coloured graphs []; leading coefficient changed for 0
+time for prime 618970019642690137449562111: 741.4 s
+==============================================================================
+prime p = 2305843009213693951
+rows, decorations, conifold periods (u-precision 18) in 1.1 s; t_c = (1)x^1 + (7/10)x^2 + (41/75)x^3 + O(x^22)
+------------------------------------------------------------------------------
+frame F0: 115 coloured graphs summed in 33.6 s
+PASS F0: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F0: Cf valuations constant along Z/5 colour orbits
+PASS F0: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-111/1024000) s^-6 + (-7/40000) s^-5 + (-357/1024000) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + ([281666281616427361 mod p]) s^5 + ([2281032292157421885 mod p]) s^10 + ([98775030100443764 mod p]) s^15 + ([1996655918878466120 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F0: Cf(total NEl) = sum of coloured Cf series
+   (Cf substitutions 45.1 s)
+------------------------------------------------------------------------------
+frame F1: 115 coloured graphs summed in 33.9 s
+PASS F1: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F1: Cf valuations constant along Z/5 colour orbits
+   (F1 is not Z/5 covariant: common weight; exact colour-shift invariance not expected)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400*zeta^1) s^-6 + (-7/40000) s^-5 + (-119/1105920*zeta^2) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400*zeta^2) s^-6 + (-7/40000) s^-5 + (-119/1105920*zeta^4) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400*zeta^3) s^-6 + (-7/40000) s^-5 + (-119/1105920*zeta^1) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400*zeta^4) s^-6 + (-7/40000) s^-5 + (-119/1105920*zeta^3) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + ([281666281616427361 mod p]) s^5 + ([2281032292157421885 mod p]) s^10 + ([98775030100443764 mod p]) s^15 + ([1996655918878466120 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F1: Cf(total NEl) = sum of coloured Cf series
+PASS F1: total equals the F0 total exactly in N (structural at the zeta point, genus 2: Z/5 phases; not a test of the exponent sign)
+   (Cf substitutions 44.9 s)
+------------------------------------------------------------------------------
+frame F2: 115 coloured graphs summed in 34.0 s
+PASS F2: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F2: Cf valuations constant along Z/5 colour orbits
+   (F2 is not Z/5 covariant: common weight; exact colour-shift invariance not expected)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000*zeta^1) s^-6 + (-7/40000) s^-5 + (-1507/5529600*zeta^2) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000*zeta^2) s^-6 + (-7/40000) s^-5 + (-1507/5529600*zeta^4) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000*zeta^3) s^-6 + (-7/40000) s^-5 + (-1507/5529600*zeta^1) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000*zeta^4) s^-6 + (-7/40000) s^-5 + (-1507/5529600*zeta^3) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + ([281666281616427361 mod p]) s^5 + ([2281032292157421885 mod p]) s^10 + ([98775030100443764 mod p]) s^15 + ([1996655918878466120 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F2: Cf(total NEl) = sum of coloured Cf series
+PASS F2: total equals the F0 total exactly in N (structural at the zeta point, genus 2: Z/5 phases; not a test of the exponent sign)
+   (Cf substitutions 44.8 s)
+------------------------------------------------------------------------------
+frame F3: 115 coloured graphs summed in 33.4 s
+PASS F3: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F3: Cf valuations constant along Z/5 colour orbits
+   (F3 is not Z/5 covariant: common weight; exact colour-shift invariance not expected)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/3072000) s^-6 + (-7/40000) s^-5 + ([265759832610932853 mod p]) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/3072000*zeta^1) s^-6 + (-7/40000) s^-5 + ([2246711793240666090 mod p]) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/3072000*zeta^2) s^-6 + (-7/40000) s^-5 + ([2132696279772460381 mod p]) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/3072000*zeta^3) s^-6 + (-7/40000) s^-5 + ([2186099556795249284 mod p]) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/3072000*zeta^4) s^-6 + (-7/40000) s^-5 + ([86261565221773245 mod p]) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + ([281666281616427361 mod p]) s^5 + ([2281032292157421885 mod p]) s^10 + ([98775030100443764 mod p]) s^15 + ([1996655918878466120 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F3: Cf(total NEl) = sum of coloured Cf series
+PASS F3: total equals the F0 total exactly in N (structural at the zeta point, genus 2: Z/5 phases; not a test of the exponent sign)
+   (Cf substitutions 45.1 s)
+------------------------------------------------------------------------------
+frame F4: 115 coloured graphs summed in 33.5 s
+PASS F4: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F4: Cf valuations constant along Z/5 colour orbits
+PASS F4: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-37/614400) s^-6 + (-7/40000) s^-5 + (-119/1105920) s^-2 + (67/1440000) s^0 + ...
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + ([281666281616427361 mod p]) s^5 + ([2281032292157421885 mod p]) s^10 + ([98775030100443764 mod p]) s^15 + ([1996655918878466120 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F4: Cf(total NEl) = sum of coloured Cf series
+PASS F4: total equals the F0 total exactly in N
+   (Cf substitutions 46.4 s)
+------------------------------------------------------------------------------
+frame F5: 115 coloured graphs summed in 20.8 s
+PASS F5: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10        0
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F5: Cf valuations constant along Z/5 colour orbits
+PASS F5: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (0, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + ([381543368438384143 mod p]) s^5 + ([111642346068923667 mod p]) s^10 + ...   [u-series; in t_c: ([1393615335851750081 mod p])/t_c^2 + ([1308711253900745321 mod p])/t_c + ([885137051928631938 mod p]) + ...]
+      colour 1: Ldeg (0, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + ([381543368438384143 mod p]) s^5 + ([111642346068923667 mod p]) s^10 + ...   [u-series; in t_c: ([1393615335851750081 mod p])/t_c^2 + ([1308711253900745321 mod p])/t_c + ([885137051928631938 mod p]) + ...]
+      colour 2: Ldeg (0, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + ([381543368438384143 mod p]) s^5 + ([111642346068923667 mod p]) s^10 + ...   [u-series; in t_c: ([1393615335851750081 mod p])/t_c^2 + ([1308711253900745321 mod p])/t_c + ([885137051928631938 mod p]) + ...]
+      colour 3: Ldeg (0, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + ([381543368438384143 mod p]) s^5 + ([111642346068923667 mod p]) s^10 + ...   [u-series; in t_c: ([1393615335851750081 mod p])/t_c^2 + ([1308711253900745321 mod p])/t_c + ([885137051928631938 mod p]) + ...]
+      colour 4: Ldeg (0, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-7/40000) s^-5 + (67/1440000) s^0 + ([381543368438384143 mod p]) s^5 + ([111642346068923667 mod p]) s^10 + ...   [u-series; in t_c: ([1393615335851750081 mod p])/t_c^2 + ([1308711253900745321 mod p])/t_c + ([885137051928631938 mod p]) + ...]
+   total: 4256 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + ([281666281616427361 mod p]) s^5 + ([2281032292157421885 mod p]) s^10 + ([98775030100443764 mod p]) s^15 + ([1996655918878466120 mod p]) s^20 + ...   [u-series; in t_c: (1/1200)/t_c^2 + (0)/t_c + (31/30000) + ...]
+PASS F5: Cf(total NEl) = sum of coloured Cf series
+PASS F5: total equals the F0 total exactly in N
+   (Cf substitutions 42.9 s)
+------------------------------------------------------------------------------
+frame F0b: 115 coloured graphs summed in 18.3 s
+PASS F0b: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F0b: Cf valuations constant along Z/5 colour orbits
+PASS F0b: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-171/1280000) s^-6 + (-7/40000) s^-5 + (-189/320000) s^-2 + (67/1440000) s^0 + ...
+   total: 6842 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-27/16000) s^-6 + (-7/6000) s^-5 + (27/8000) s^-2 + (1/250) s^-1 + (97/72000) s^0 + (-19/9600) s^2 + ...
+PASS F0b: Cf(total NEl) = sum of coloured Cf series
+PASS F0b: total differs from the F0 total exactly in N
+   (Cf substitutions 43.4 s)
+------------------------------------------------------------------------------
+frame F5b: 115 coloured graphs summed in 32.5 s
+PASS F5b: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F5b: Cf valuations constant along Z/5 colour orbits
+PASS F5b: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (129/5120000) s^-6 + (-7/40000) s^-5 + (-129/5120000) s^-2 + (67/1440000) s^0 + ...
+   total: 6842 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (27/16000) s^-6 + (-7/6000) s^-5 + (27/8000) s^-2 + (-1/250) s^-1 + (97/72000) s^0 + (19/9600) s^2 + ...
+PASS F5b: Cf(total NEl) = sum of coloured Cf series
+PASS F5b: total differs from the F0 total exactly in N
+   (Cf substitutions 45.9 s)
+------------------------------------------------------------------------------
+frame F4b: 115 coloured graphs summed in 33.8 s
+PASS F4b: Cf images independent of Lam (0 vs 1) for all coloured graphs
+   graph  g_v        edges                     bound    nsing   minval  maxLdeg  minLdeg
+   1      (2,)       []                           10      5/5      -10       10       -2
+   2      (1,)       [(0, 0)]                      0      5/5      -10       10       -5
+   3      (0,)       [(0, 0), (0, 0)]              0      5/5      -10       10       -5
+   4      (1, 1)     [(0, 1)]                      0    25/25      -10       10       -5
+   5      (0, 1)     [(0, 0), (0, 1)]              0    25/25      -10       10       -5
+   6      (0, 0)     [(0, 1), (0, 1), (0, 1)]      0    25/25      -10       10       -5
+   7      (0, 0)     [(0, 0), (1, 1), (0, 1)]      0    25/25      -10       10       -5
+PASS F4b: Cf valuations constant along Z/5 colour orbits
+PASS F4b: coloured terms exactly Z/5 invariant in N (colour shift)
+   vertex graph (idx 1) per colour:
+      colour 0: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 1: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 2: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 3: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+      colour 4: Ldeg (-2, 10), val -10: ([1393615335851750081 mod p]) s^-10 + (-271/3072000) s^-6 + (-7/40000) s^-5 + (-1507/5529600) s^-2 + (67/1440000) s^0 + ...
+   total: 6842 terms, denominators (c0^31 W^15), L-degree (-5, 10); Cf: val -10: (1/1200) s^-10 + (-3/1600) s^-6 + (-7/6000) s^-5 + (1/240) s^-2 + (1/225) s^-1 + (97/72000) s^0 + (-1/576) s^2 + ...
+PASS F4b: Cf(total NEl) = sum of coloured Cf series
+PASS F4b: total differs from the F0 total exactly in N
+   (Cf substitutions 46.5 s)
+time for prime 2305843009213693951: 680.4 s
+==============================================================================
+cross-prime comparison of the valuation tables:
+PASS F0: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+PASS F1: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+PASS F2: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+PASS F3: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+PASS F4: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+PASS F5: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+PASS F0b: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+PASS F5b: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+PASS F4b: per-coloured-graph Cf valuations and tables identical at 2^89-1 and 2^61-1
+summary (p = 2^89-1): per frame, per graph: nsing/total, min valuation, max Ldeg  [bound in s-units]
+   F0   g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+   F1   g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+   F2   g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+   F3   g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+   F4   g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+   F5   g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+   F0b  g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+   F5b  g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+   F4b  g1:5/5,v-10,L10[10]  g2:5/5,v-10,L10[0]  g3:5/5,v-10,L10[0]  g4:25/25,v-10,L10[0]  g5:25/25,v-10,L10[0]  g6:25/25,v-10,L10[0]  g7:25/25,v-10,L10[0]
+total time 1422.3 s
+ALL S4 CHECKS PASSED

@@ -1,0 +1,23 @@
+% Section 2, part 2 of 8: the large-radius cyclic structure (statement).
+
+Along the line $t=T(q)H$, with $\Qn=1$, functions of $t$ are functions of $q$, and $\partial_T\coloneqq C_1^{-1}\Dq$ is the derivative in the coordinate $T$ of $H$, i.e.\ $\partial_{t^1}$ along the line (not the derivation $\de_t$ of \cref{def:gau-conc}). By (G0), the quantum product $*$ at $t=TH$ is commutative and associative, has the unit $1$, and is Frobenius for $\eta$: $\eta(x*y,w)=\langle\!\langle x,y,w\rangle\!\rangle=\eta(x,y*w)$.
+
+\begin{prop}[The large-radius cyclic structure]
+\label{prop:set-cyclicLR}
+Assume (M) and (G0). Along the line $t=T(q)H$, at $\lambda_i=\zeta^i$ and $\Qn=1$, the following hold.
+\begin{enumerate}
+\item In the flat basis, $H*H^a=\kappa^{\mathrm{LR}}_aH^{a+1}$ for $a\in\bbZ/5$, where
+\[
+\kappa^{\mathrm{LR}}=(\kappa^{\mathrm{LR}}_0,\dots,\kappa^{\mathrm{LR}}_4)=\Bigl(1,\ \frac{L^5}{C_0^2C_1^3},\ 1,\ \frac{C_0}{C_1},\ \frac{C_0}{C_1}\Bigr).
+\]
+\item Consequently, for every solution $v$ of the quantum differential equation $z\partial_Tv=H*v$, in any differential $\bbQ\fps q$-algebra in which $z$ is a constant, the lowered components $v_a\coloneqq\eta(H^a,v)$ satisfy $z\Dq v_a=C_1\kappa^{\mathrm{LR}}_a\,v_{a+1}$ for all $a\in\bbZ/5$.
+\item For every colour $i$ the rows of \cref{def:set-rows} (defined in \cref{sec:set-rows}) satisfy $(z\Dq+\zeta^iL)\Qr^{(i)}_a=C_1\kappa^{\mathrm{LR}}_a\,\Qr^{(i)}_{a+1}$ for $a\in\bbZ/5$. Equivalently, for $X_a\coloneqq\zeta^{-i}\Qr^{(i)}_a$,
+\[
+X_0=L\Phi_i/C_0,\qquad X_{a+1}=(C_1\kappa^{\mathrm{LR}}_a)^{-1}(z\Dq+\zeta^iL)X_a\quad(a=0,\dots,3),\qquad(z\Dq+\zeta^iL)X_4=C_0X_0 .
+\]
+\end{enumerate}
+\end{prop}
+
+The superscript LR distinguishes $\kappa^{\mathrm{LR}}$ from the coefficients $\kappa_a$ of \cref{prop:gau-quintic}. Parts (i) and (ii) are proved in \cref{sec:set-lrproof}, (iii) after \cref{def:set-rows}. Below, $\Mcyc^{\mathrm{LR}}\coloneqq\partial_T^2\circ(\kappa^{\mathrm{LR}}_1)^{-1}\circ\partial_T^2\circ C_0^{-1}$, and $\Mcyc^{\mathrm{LR}}=\kappa^{\mathrm{LR}}_3\,\PFfour$ by \eqref{eq:set-McycLR}.
+
+\input{sections/s02_setup_3}

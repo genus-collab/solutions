@@ -1,0 +1,3 @@
+rf_nvn.py: dim Q[p,q]_w/V_w = [w>=1], p^w not in V_w, q^n = -p^(4n)/4^n mod V: w <= 320, failing weights []
+control (must fail): the wrong sign q^n = +p^(4n)/4^n mod V holds at 0 of 80 weights 4n <= 320 (expected 0)
+RESULT: ALL CHECKS PASSED

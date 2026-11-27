@@ -1,0 +1,11 @@
+natural run  g5_61_nat: 100 part files, 4555 inner graphs, CPU 53.3 h
+point frame  g5_61_id: 1 part files, 4555 inner graphs, CPU 1.8 h
+coverage: natural 4555/4555 (missing []), point frame 4555/4555 (missing [])
+point-frame part files storing a piece q != t: 0 []
+stored (t -> q) pieces in the natural run: 340363
+inner graphs whose point-frame term is identically zero: 0
+ADDITIVITY: 4555 / 4555 identities verified; 0 failures
+total of the natural pieces == total of the point-frame terms: True
+total matches info['total'] of the cluster's results/g5_61_nat.json: True
+RESULT: PASS
+written out/additivity_frame00_p61.json

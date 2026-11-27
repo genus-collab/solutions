@@ -1,0 +1,103 @@
+% Formal stationary phase, part 2 of 5: universality, constants, homogeneity (end of sec:fsp-def); exact forms, Gaussian
+% perturbation, products, formal implicit functions (sec:fsp-basic). Continued in part 3.
+
+\begin{lem}[Universality of the coefficients]
+\label{lem:fsp-univ}
+Let $c$ be a non-degenerate critical point of $F$ over $A$ and $a(c+t)=\sum_{m\geq m_0}a_m(t)z^m$, $a_m\in A\fps{t}$. Then
+\begin{equation}
+\label{eq:fsp-univ}
+\coef{z^k}\,\SPn_c[F;a]=\sum_{m=m_0}^{k}\ \sum_{r=0}^{2(k-m)}\frac1{r!}\,\bigl\langle\,[F_{\geq3}^{\,r}\,a_m]_{2(k-m+r)}\bigr\rangle_C ,
+\end{equation}
+$[P]_d$ denoting the homogeneous part of degree $d$ in $t$. So $\coef{z^k}\SPn_c[F;a]$ is a polynomial over $\bbQ$ in the entries of $C$, the Taylor coefficients of $F$ at $c$ of orders $3,\dots,2(k-m_0)+2$ and those of the $a_m$ of orders $\leq2(k-m)$, linear in the latter. Consequently: (i) a ring homomorphism $\rho\colon A\to A'$, applied to the coefficients, maps $\SPn_c[F;a]$ to $\SPn_{\rho(c)}[\rho F;\rho a]$; (ii) if $A$ is a ring of holomorphic functions or of formal power series in some parameters, every coefficient is such a function, resp.\ series.
+\end{lem}
+
+\begin{proof}
+The terms $F_{\geq3}^{\,r}a_mz^{m-r}/r!$ form a summable family with sum $\exp(F_{\geq3}/z)\,a(c+t)$, so $E_{zC}$ applies termwise. A monomial $t^\alpha$ of $F_{\geq3}^{\,r}a_m$ contributes to $z^k$ if and only if $|\alpha|=2(k-m+r)$; as $F_{\geq3}^{\,r}\in(t)^{3r}$, this forces $r\leq2(k-m)$ and $m\leq k$. A contributing term with factors of $F_{\geq3}$ of degrees $l_1,\dots,l_r\geq3$ and a monomial of $a_m$ of degree $j$ has $l_1+\dots+l_r+j=2(k-m+r)$, so $l_i\leq2(k-m)+2$ and $j\leq2(k-m)$. Moments are polynomials in the entries of $C$ (\cref{lem:fsp-ring}~(iii)). For (i), $\rho$ maps the Taylor data at $c$ to those at $\rho(c)$, and $C$ to $-\rho(\mathsf H)^{-1}$; (ii) follows.
+\end{proof}
+
+\begin{lem}[Constants]
+\label{lem:fsp-const}
+For $\kappa\in A$, $\SPn_c[F+\kappa;a]=\SPn_c[F;a]$, and the full symbol of $\re^{(F+\kappa)/z}a\,\dd^nx$ is $[\re^{\kappa/z}]$ times that of $\re^{F/z}a\,\dd^nx$; so $\SPn_c[F;a]$ depends only on the Taylor coefficients of order $\geq2$ of $F$ at $c$ and on the Taylor series of $a$ at $c$.
+\end{lem}
+
+\begin{proof}
+$\mathsf H$ and $F_{\geq3}$ do not change; the last assertion is \eqref{eq:fsp-univ}.
+\end{proof}
+
+\begin{lem}[Homogeneity]
+\label{lem:fsp-homog}
+For $\mu\in A^\times$, $\SPn_c[\mu F;a(\cdot\,;z)](z)=\SPn_c[F;a(\cdot\,;\mu z')](z')$ at $z'=z/\mu$, i.e.\ after the isomorphism $A\lser{z}\to A\lser{z'}$, $z\mapsto\mu z'$; and, with the branch rule $\det(-\mu\mathsf H)^{1/2}:=\mu^{n/2}\det(-\mathsf H)^{1/2}$,
+\[
+[\re^{\mu F(c)/z}]\,(2\pi z)^{n/2}\,[\det(-\mu\mathsf H)^{-1/2}]=[\re^{F(c)/z'}]\,(2\pi z')^{n/2}\,[\det(-\mathsf H)^{-1/2}].
+\]
+\end{lem}
+
+\begin{proof}
+For $\mu F$ the Hessian is $\mu\mathsf H$, the covariance $C/\mu$ and the cubic part $\mu F_{\geq3}$. As $\langle t^\alpha\rangle_C$ is homogeneous of degree $|\alpha|/2$ in $C$, $E_{zC/\mu}[t^\alpha z^j]=\mu^{-|\alpha|/2}\langle t^\alpha\rangle_Cz^{j+|\alpha|/2}$, which at $z=\mu z'$ equals $\langle t^\alpha\rangle_C\mu^jz'^{\,j+|\alpha|/2}=E_{z'C}[t^\alpha(\mu z')^j]$. Both sides are linear, weight-preserving and compatible with summable sums, so $E_{zC/\mu}[P(t,z)]|_{z=\mu z'}=E_{z'C}[P(t,\mu z')]$ on $\cR_n(A)$; take $P=\exp(\mu F_{\geq3}/z)a(c+t;z)$, for which $P(t,\mu z')=\exp(F_{\geq3}/z')a(c+t;\mu z')$. The symbols agree term by term.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{Exact forms, Gaussian perturbation, implicit functions and parameters}
+\label{sec:fsp-basic}
+
+\begin{lem}[Exact forms]
+\label{lem:fsp-ibp}
+Let $c$ be a non-degenerate critical point of $F$ over $A$ and $h_1,\dots,h_n$ amplitudes with $\exp(F_{\geq3}/z)h_i\in\cR_n(A)$ (e.g.\ $h_i\in A\fps{x-c}\lser{z}$). Then $\SPn_c\bigl[F;\sum_i(\de_ih_i+z^{-1}(\de_iF)h_i)\bigr]=0$, i.e.\ $\mathrm{SP}_c[\dd(\re^{F/z}\iota)]=0$ for $\iota=\sum_i(-1)^{i-1}h_i\,\dd x_1\cdots\widehat{\dd x_i}\cdots\dd x_n$. The same holds for every sum of such expressions that is summable in $\cR_n(A)$ after multiplication by $\exp(F_{\geq3}/z)$.
+\end{lem}
+
+\begin{proof}
+First, for every $g\in\cR_n(A)$ and every $i$,
+\begin{equation}
+\label{eq:fsp-gibp}
+E_{zC}\bigl[\de_ig+z^{-1}(\mathsf Ht)_i\,g\bigr]=0\qquad\text{(Gaussian integration by parts).}
+\end{equation}
+Multiplying by $C$ and using $C\mathsf H=-1$, \eqref{eq:fsp-gibp} for all $i$ is equivalent to $E_{zC}[t_kg]=z\sum_jC_{kj}E_{zC}[\de_jg]$ for all $k$. For $g=t^\beta z^l$ both sides equal $z^{l+(|\beta|+1)/2}\sum_jC_{kj}\beta_j\langle t^{\beta-e_j}\rangle_C$ by the Wick recursion, and both sides are linear and compatible with summable sums. Now put $g_i:=\exp(F_{\geq3}/z)h_i$. Then $\de_ig_i=\exp(F_{\geq3}/z)(\de_ih_i+z^{-1}(\de_iF_{\geq3})h_i)$ and $\de_iF(c+t)=(\mathsf Ht)_i+\de_iF_{\geq3}(t)$, so $\exp(F_{\geq3}/z)\sum_i(\de_ih_i+z^{-1}(\de_iF)h_i)=\sum_i(\de_ig_i+z^{-1}(\mathsf Ht)_ig_i)$, whose image under $E_{zC}$ vanishes; summable sums are treated termwise.
+\end{proof}
+
+\begin{lem}[Gaussian perturbation]
+\label{lem:fsp-pg}
+Let $R$ be a commutative $\bbQ$-algebra, complete and separated for an ideal $I$, $\mathsf H\in GL_n(R)$ symmetric, $C:=-\mathsf H^{-1}$, $\mathsf K$ symmetric with entries in $I$, and $C_{\mathsf K}:=-(\mathsf H+\mathsf K)^{-1}$.
+
+(i) For $P\in R[t]$, $\langle\exp(\frac12t^{\mathrm T}\mathsf Kt)P\rangle_C=\det(1+\mathsf H^{-1}\mathsf K)^{-1/2}\langle P\rangle_{C_{\mathsf K}}$, both sides converging $I$-adically, the power being the binomial series.
+
+(ii) (Infinitesimal form.) For any symmetric $\mathsf K'$ over $R$, a variable $s$, $C_s:=-(\mathsf H+s\mathsf K')^{-1}$ and $d_s:=\det(1+s\mathsf H^{-1}\mathsf K')^{-1/2}$ in $R\fps{s}$: $\frac{\dd}{\dd s}(d_s\langle P\rangle_{C_s})=d_s\langle\frac12t^{\mathrm T}\mathsf K't\,P\rangle_{C_s}$.
+
+(iii) (With $z$ and outer variables.) Let $\mathsf H\in GL_n(A)$ be symmetric, $C=-\mathsf H^{-1}$, $y=(y_1,\dots,y_m)$ outer variables, $\mathsf K$ symmetric with entries in the ideal $(y)$ of $A\fps{y}$, and $\mathsf H':=\mathsf H+\mathsf K$. Then every term of $t^{\mathrm T}\mathsf Kt/(2z)$ has weight $\geq1/2$, and for $P\in\cR_{n+m}(A)$
+\[
+E^t_{zC}\bigl[\exp\bigl(t^{\mathrm T}\mathsf Kt/(2z)\bigr)P\bigr]=\bigl(\det\mathsf H'/\det\mathsf H\bigr)^{-1/2}E^t_{-z\mathsf H'^{-1}}[P]\qquad\text{in }\cR_m(A).
+\]
+The same holds over $A_0\fps{q}$ for $\mathsf K$ with entries in $(q)$ and $P\in\cR_n(A_0)\fps{q}$, coefficientwise in $q$.
+\end{lem}
+
+\begin{proof}
+(i), (ii). By the generating function $\langle P\rangle_C=[\exp(\frac12\sum_{ij}C_{ij}\de_i\de_j)P](0)$ (on $t^\alpha$ the operator removes the variables in pairs). Let $Q:=\frac12t^{\mathrm T}\mathsf K't$ and $\rho_s(P):=d_s\langle P\rangle_{C_s}$. As $\dd C_s/\dd s=C_s\mathsf K'C_s$, $\frac{\dd}{\dd s}\langle P\rangle_{C_s}=\frac12\sum_{ij}(C_s\mathsf K'C_s)_{ij}\langle\de_i\de_jP\rangle_{C_s}$; applying the Wick recursion $\langle t_iP\rangle_C=\sum_lC_{il}\langle\de_lP\rangle_C$ twice,
+\[
+\langle QP\rangle_{C_s}=\tfrac12\tr(\mathsf K'C_s)\,\langle P\rangle_{C_s}+\tfrac12\textstyle\sum_{lm}(C_s\mathsf K'C_s)_{lm}\langle\de_l\de_mP\rangle_{C_s};
+\]
+and $\frac{\dd}{\dd s}\log d_s=-\frac12\tr((\mathsf H+s\mathsf K')^{-1}\mathsf K')=\frac12\tr(C_s\mathsf K')$. Together $\frac{\dd}{\dd s}\rho_s(P)=\rho_s(QP)$, which is (ii). For (i) take $\mathsf K'=\mathsf K$ and $\Lambda_s(P):=\langle\exp(sQ)P\rangle_C=\sum_ks^k\langle Q^kP\rangle_C/k!$; then $\frac{\dd}{\dd s}\Lambda_s(P)=\Lambda_s(QP)$ and $\Lambda_0=\rho_0$, so all $s$-derivatives at $0$ agree ($\langle Q^kP\rangle_C$) and $\Lambda_s(P)=\rho_s(P)$ in $R\fps{s}$. The $s^k$-coefficients of both sides, of $d_s$ and of $C_s=-\sum_r(-s)^r(\mathsf H^{-1}\mathsf K)^r\mathsf H^{-1}$ lie in $I^k$, and $s=1$ is a ring homomorphism from such series to the complete ring $R$; it gives (i).
+(iii) The terms of $t^{\mathrm T}\mathsf Kt/(2z)$ are multiples of $t_it_jy^\gamma z^{-1}$, $|\gamma|\geq1$. For $P=t^\alpha y^\beta z^j$, the term $(t^{\mathrm T}\mathsf Kt/(2z))^kt^\alpha/k!$ has degree $2k+|\alpha|$ in $t$, so $E^t_{zC}[\exp(t^{\mathrm T}\mathsf Kt/(2z))t^\alpha y^\beta z^j]=\langle\exp(\frac12t^{\mathrm T}\mathsf Kt)t^\alpha\rangle_Cy^\beta z^{j+|\alpha|/2}$, which by (i) over $R=A\fps{y}$, $I=(y)$ (with $\det(1+\mathsf H^{-1}\mathsf K)=\det\mathsf H'/\det\mathsf H$, $C_{\mathsf K}=-\mathsf H'^{-1}$) is the right side for this $P$. Both sides are linear and compatible with summable sums (the exponential has terms of weight $\geq0$ only), so the identity extends to $\cR_{n+m}(A)$. Over $A_0\fps{q}$ the same holds at each power of $q$, to which finitely many $k$ contribute.
+\end{proof}
+
+\begin{lem}[Products]
+\label{lem:fsp-prod}
+Split the variables as $(t,y)$ and let $C=\diag(C_t,C_y)$ with constant blocks. Then, for $P\in\cR_{n+m}(A)$, $E_{zC}[P]=E^y_{zC_y}\bigl[E^t_{zC_t}[P]\bigr]$. Hence, for phases and amplitudes in separate variables,
+\[
+\SPn_{(c_1,c_2)}\bigl[F_1(t)+F_2(y);\,a_1(t)\,a_2(y)\bigr]=\SPn_{c_1}[F_1;a_1]\,\SPn_{c_2}[F_2;a_2],
+\]
+and the full symbols multiply, with $\det(-\mathsf H)^{1/2}:=\det(-\mathsf H_1)^{1/2}\det(-\mathsf H_2)^{1/2}$.
+\end{lem}
+
+\begin{proof}
+For block-diagonal $C$ the generating function factorises, so $\langle t^\alpha y^\beta\rangle_C=\langle t^\alpha\rangle_{C_t}\langle y^\beta\rangle_{C_y}$; both sides are linear and compatible with summable sums. For separated data the integrand is the product of $\exp(F_{1,\geq3}/z)a_1$, a function of $t$, and $\exp(F_{2,\geq3}/z)a_2$, a function of $y$; and $E^t[P_1(t)P_2(y)]=E^t[P_1]\,P_2$ with $E^t[P_1]\in A\lser{z}$.
+\end{proof}
+
+\begin{lem}[Formal implicit function theorem]
+\label{lem:fsp-ift}
+Let $B$ be a commutative $\bbQ$-algebra, complete and separated for an ideal $I$ (e.g.\ $B=A\fps{y}$, $I=(y)$, or $B=A_0\fps{q}$, $I=(q)$), and $F\in B\fps{t}$ with $\nabla F(0)\in I^n$ and $\mathsf H_0:=\Hess F(0)\in GL_n(B)$. Then there is a unique $c\in I^n$ with $\nabla F(c)=0$, and $\Hess F(c)$ is invertible.
+\end{lem}
+
+\begin{proof}
+Substitution of elements of $I$ into power series converges, $B$ being complete. For $c\in I^n$ put $\Psi(c):=c-\mathsf H_0^{-1}\nabla F(c)$; it lies in $I^n$, because $\nabla F(c)=\nabla F(0)+\mathsf H_0c+O(c^2)$ and $\nabla F(0)\in I^n$. Writing $\nabla F(c)-\nabla F(c')=\mathsf N(c,c')(c-c')$ with difference quotients, $\mathsf N(c,c')\equiv\mathsf H_0$ modulo $I$, one gets $\Psi(c)-\Psi(c')=-\mathsf H_0^{-1}(\mathsf N(c,c')-\mathsf H_0)(c-c')$, a matrix with entries in $I$ times $c-c'$; so $c-c'\in I^r$ implies $\Psi(c)-\Psi(c')\in I^{r+1}$. The iterates $c_{k+1}:=\Psi(c_k)$, $c_0=0$, satisfy $c_{k+1}-c_k\in I^{k+1}$, so they converge to some $c\in I^n$ with $\Psi(c)=c$, i.e.\ $\nabla F(c)=0$. Two such zeros $c,c'$ satisfy $c-c'=\Psi(c)-\Psi(c')$, hence $c-c'\in\bigcap_rI^r=0$. Finally $\Hess F(c)\equiv\mathsf H_0$ modulo $I$, and a matrix over $B$ invertible modulo $I$ is invertible.
+\end{proof}
+
+\input{sections/a_formalsp_3}

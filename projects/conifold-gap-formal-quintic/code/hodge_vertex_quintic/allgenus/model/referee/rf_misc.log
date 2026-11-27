@@ -1,0 +1,5 @@
+F_4 = 1/180000 (record 1/180000)
+<kappa(H^2,4)>_1 = 1/32 at v = 1, v-exponent 3 (worker: v^3/32)
+<tau_3(H^3)>_2 = 7/5760 (worker: 7/5760, e = 0)
+H^2 tower: e = 2 - 2h + 4B - n for all tuples; 181 non-zero pure kappa(H^2) correlators, all with e >= 1: True
+exit 0

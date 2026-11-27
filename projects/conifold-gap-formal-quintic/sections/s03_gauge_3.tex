@@ -1,0 +1,69 @@
+% Section 3, part 3 of 8: the commutant, lifting, the scalar equation.
+
+\begin{lem}[The commutant]\genusstatus{AI-proposed, unchecked}
+\label{lem:gau-comm}
+Let $F$ be a field of characteristic $0$, $\tilde b_0,\dots,\tilde b_4\in F^\times$, $\tilde A=\sum_a\tilde b_aE_{a,a+1}$, and define $\mathfrak{gl}^{(m)}$, $\Bprod^{(m)}_a$, $\Bprod$ and $\mathcal Y$ over $F$ as above.
+\begin{enumerate}
+\item[(a)] $\tilde A^m=\sum_a\Bprod^{(m)}_aE_{a,a+m}$ for $0\leq m\leq5$, so $\tilde A^5=\Bprod\,1$; $\mathcal Y=\sum_a\tilde b_a^{-1}E_{a+1,a}$, $\mathcal Y^j=\sum_a(\Bprod^{(j)}_a)^{-1}E_{a+j,a}$ for $0\leq j\leq5$, and $\tilde A^m=\Bprod\,\mathcal Y^{5-m}$ for $1\leq m\leq5$; $\det(x1-\tilde A)=x^5-\Bprod$.
+\item[(b)] For $X=\sum_a\xi_aE_{a,a+m}\in\mathfrak{gl}^{(m)}$, $[\tilde A,X]=\sum_a(\tilde b_a\xi_{a+1}-\xi_a\tilde b_{a+m})E_{a,a+m+1}\in\mathfrak{gl}^{(m+1)}$.
+\item[(c)] For every $m$, $\ker(\operatorname{ad}\tilde A)\cap\mathfrak{gl}^{(m)}=F\tilde A^m$; hence $\ker(\operatorname{ad}\tilde A)=F[\tilde A]=F[\mathcal Y]=\bigoplus_{j=0}^4F\mathcal Y^j$, of dimension $5$.
+\item[(d)] For $m\in\{1,\dots,5\}$ and $X=\sum_a\xi_aE_{a,a+m}\in\mathfrak{gl}^{(m)}$ put $\lambda_m(X):=\sum_a\xi_a/\Bprod^{(m)}_a$ (a local letter). Then $\lambda_m(\tilde A^m)=5$, $\operatorname{ad}\tilde A(\mathfrak{gl}^{(m-1)})=\ker\lambda_m$, $\mathfrak{gl}^{(m)}=F\tilde A^m\oplus\ker\lambda_m$, and $\mathfrak{gl}_5(F)=F[\mathcal Y]\oplus\operatorname{im}(\operatorname{ad}\tilde A)$.
+\item[(e)] The projection $\operatorname{pr}$ onto $F[\mathcal Y]$ along $\operatorname{im}(\operatorname{ad}\tilde A)$ is $F$-linear and preserves the shift; for $X\in\mathfrak{gl}^{(m)}$, $1\leq m\leq5$,
+\[
+\operatorname{pr}(X)=\tfrac15\lambda_m(X)\,\tilde A^m=\tfrac15\Bigl[\sum_a\xi_a\Bprod^{(5-m)}_{a+m}\Bigr]\mathcal Y^{5-m}.
+\]
+Equivalently, $\operatorname{pr}(X)$ is the unique element of $F[\mathcal Y]$ with $\tr(\operatorname{pr}(X)Z)=\tr(XZ)$ for all $Z\in F[\mathcal Y]$.
+\item[(f)] Let $F=\Bbbk\lser u$ and let $\tilde A$ have the one-pole shape. Then $\mathcal Y\in\mathfrak{gl}_5(\Bbbk\fps u)$; an element $\sum_{j=0}^4w_j\mathcal Y^j$ ($w_j\in\Bbbk\lser u$) lies in $\mathfrak{gl}_5(\Bbbk\fps u)$ if and only if every $w_j$ lies in $\Bbbk\fps u$; the commutant of $\tilde A$ in $\mathfrak{gl}_5(\Bbbk\fps u)$ is the ring $\Bbbk\fps u[\mathcal Y]:=\bigoplus_{j=0}^4\Bbbk\fps u\,\mathcal Y^j$; and for $X\in\mathfrak{gl}_5(\Bbbk\fps u)$ the coefficient of $\mathcal Y^j$ in $\operatorname{pr}(X)$ lies in $u^{-1}\Bbbk\fps u$ for $j=1,\dots,4$ and in $\Bbbk\fps u$ for $j=0$.
+\item[(g)] (Not used.) $x^5-\Bprod$ is separable, so $\tilde A$ is regular semisimple; in the situation of (f), $x^5-\Bprod$ is irreducible over $\Bbbk\lser u$, so $F[\mathcal Y]$ is a field.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(a) Induction on $m$, with $\Bprod^{(m)}_a\tilde b_{a+m}=\Bprod^{(m+1)}_a$ and $E_{a,a+5}=E_{aa}$; $\tilde A\sum_c\tilde b_c^{-1}E_{c+1,c}=1$ gives $\mathcal Y$, and $\mathcal Y^j$ follows likewise. Reindexing, $\mathcal Y^{5-m}=\sum_a(\Bprod^{(5-m)}_{a+m})^{-1}E_{a,a+m}$, and $\Bprod^{(m)}_a\Bprod^{(5-m)}_{a+m}=\Bprod$. In the Leibniz expansion of $\det(x1-\tilde A)$ only the identity and the even $5$-cycle $a\mapsto a+1$ contribute ($\pi(a)=a+1$ forces $\pi(a+1)=a+2$, and so on), the latter with $\prod_a(-\tilde b_a)=-\Bprod$.
+(b) $\tilde AX=\sum_a\tilde b_a\xi_{a+1}E_{a,a+1+m}$ and $X\tilde A=\sum_a\xi_a\tilde b_{a+m}E_{a,a+m+1}$.
+(c) By (b) $\operatorname{ad}\tilde A$ shifts the (direct) grading by $1$, so it suffices to treat $X\in\mathfrak{gl}^{(m)}$: $[\tilde A,X]=0$ means $\xi_{a+1}=\xi_a\tilde b_{a+m}/\tilde b_a$, whose solutions are determined by $\xi_0$, and $\xi_a=\Bprod^{(m)}_a$ is one. With $\tilde A^m=\Bprod\mathcal Y^{5-m}$ and $\mathcal Y=\Bprod^{-1}\tilde A^4$, $F[\tilde A]=F[\mathcal Y]$.
+(d) For $Z\in\ker(\operatorname{ad}\tilde A)$, $\tr(Z[\tilde A,Y])=0$. For $X\in\mathfrak{gl}^{(m)}$, (a) gives $\tr(X\tilde A^{5-m})=\sum_a\xi_a\Bprod^{(5-m)}_{a+m}=\Bprod\lambda_m(X)$, so $\lambda_m$ vanishes on $\operatorname{ad}\tilde A(\mathfrak{gl}^{(m-1)})$, which has dimension $4$ by (c); as $\lambda_m(\tilde A^m)=5\neq0$, this image is $\ker\lambda_m$. Summing over $m$ gives the last assertion.
+(e) $X=\frac15\lambda_m(X)\tilde A^m+\bigl(X-\frac15\lambda_m(X)\tilde A^m\bigr)$ with the second term in $\ker\lambda_m$; the second form uses (a). $X-\operatorname{pr}(X)\in\operatorname{im}(\operatorname{ad}\tilde A)$ is trace-orthogonal to $F[\mathcal Y]$ by (d), and the trace form is non-degenerate on $F[\tilde A]$: in the basis $1,\tilde A,\dots,\tilde A^4$ its Gram matrix has $5$ at $(0,0)$, $5\Bprod$ at $(i,5-i)$ and $0$ elsewhere ($\tilde A^n$ has shift $n$).
+(f) The entries of $\mathcal Y$ are the $\tilde b_a^{-1}$, integral since $\tilde b_1^{-1}=u(u\tilde b_1)^{-1}$. The supports $\{(a+j,a)\}$ of $\mathcal Y^0,\dots,\mathcal Y^4$ partition the $25$ positions, and the entry $(a+j,a)$ of $\sum_jw_j\mathcal Y^j$ is $w_j(\Bprod^{(j)}_a)^{-1}$. For $j\leq4$ the window $\{a,\dots,a+j-1\}$ contains the pole index $1$ at most once, so $(\Bprod^{(j)}_a)^{-1}$ is integral, and a unit for $a=2$; this gives the criterion. $\Bbbk\fps u[\mathcal Y]$ is a ring since $\mathcal Y^5=\Bprod^{-1}1$, $\Bprod^{-1}\in u\Bbbk\fps u$, and by (c) it is the integral commutant. For integral $X\in\mathfrak{gl}^{(m)}$, $1\leq m\leq4$, the coefficient $\frac15\sum_a\xi_a\Bprod^{(5-m)}_{a+m}$ involves at most four consecutive weights, at most one of them $\tilde b_1$, so it lies in $u^{-1}\Bbbk\fps u$; for $m=5$ it is $\frac15\tr X$.
+(g) $\gcd(x^5-\Bprod,5x^4)=1$. In the situation of (f), with $\Bprod^\circ:=u\Bprod$ (a unit) and $x=1/X$, $x^5-\Bprod=-\Bprod^\circ u^{-1}X^{-5}\bigl(X^5-u(\Bprod^\circ)^{-1}\bigr)$, an Eisenstein polynomial at $u$.
+\end{proof}
+
+\begin{lem}[Lifting]\genusstatus{AI-proposed, unchecked}
+\label{lem:gau-lift}
+Let $\tilde A$ have the one-pole shape, let $X\in\mathfrak{gl}_5(\Bbbk\fps u)$ have shift $m+1$ with $0\leq m\leq4$, and suppose $\operatorname{pr}(X)=0$. Then there is $\mathcal Z\in\mathfrak{gl}_5(\Bbbk\fps u)$ of shift $m$ with $[\tilde A,\mathcal Z]=X$, and every solution $\mathcal Z'\in\mathfrak{gl}_5(\Bbbk\fps u)$ of $[\tilde A,\mathcal Z']=X$ is $\mathcal Z+w$ with $w\in\Bbbk\fps u[\mathcal Y]$. If $\tilde A$ and $X$ have rational coefficients, $\mathcal Z$ can be chosen rational.
+\end{lem}
+
+\begin{proof}
+Write $X=\sum_a\xi_aE_{a,a+m+1}$ and try $\mathcal Z=\sum_a\rho_a\Bprod^{(m)}_aE_{a,a+m}$ (local letters). By \cref{lem:gau-comm}~(b), $[\tilde A,\mathcal Z]=\sum_a(\rho_{a+1}-\rho_a)\Bprod^{(m+1)}_aE_{a,a+m+1}$, so the equation is $\rho_{a+1}-\rho_a=\sigma_a:=\xi_a/\Bprod^{(m+1)}_a$, solvable if and only if $\sum_a\sigma_a=\lambda_{m+1}(X)=0$, i.e.\ $\operatorname{pr}(X)=0$ (\cref{lem:gau-comm}~(e)). Each $\sigma_a$ is integral, with $\sigma_a(0)=0$ when the window $\{a,\dots,a+m\}$ contains $1$. Put $\rho_1:=0$, $\rho_{a+1}:=\rho_a+\sigma_a$ ($a=1,\dots,4$); the relation for $a=0$ follows from $\sum_a\sigma_a=0$. The entry $\rho_a\Bprod^{(m)}_a$ is integral when the window $\{a,\dots,a+m-1\}$ avoids $1$, and otherwise ($a=2-m,\dots,1$) when $\rho_a(0)=0$: for $a=1$ by choice, and for $2-m\leq a\leq0$ because $\rho_a=-\sum_{c=a}^0\sigma_c$ with every window $\{c,\dots,c+m\}$ containing $1$. Two integral solutions differ by an element of $\Bbbk\fps u[\mathcal Y]$ (\cref{lem:gau-comm}~(c), (f)); the construction uses only field operations.
+\end{proof}
+
+\begin{lem}[The scalar equation]\genusstatus{AI-proposed, unchecked}
+\label{lem:gau-scal}
+Let $A$, $\tilde A$ have the one-pole shape and satisfy (EP).
+\begin{enumerate}
+\item[(a)] For $w=\sum_{j=0}^4w_j\mathcal Y^j$ with $w_j\in\Bbbk\lser u$,
+\[
+\operatorname{pr}\bigl(w'+\operatorname{dlog}\Theta_U\,w\bigr)=\sum_{j=0}^4\bigl(w_j'+\chi^U_jw_j\bigr)\mathcal Y^j,\qquad \chi^U_j:=-\frac j5\,\frac{\Bprod'}{\Bprod}+\frac15\tr(\operatorname{dlog}\Theta_U).
+\]
+In particular $\operatorname{pr}((\mathcal Y^j)')=-\frac j5(\Bprod'/\Bprod)\mathcal Y^j$ and $\operatorname{pr}(\operatorname{dlog}\Theta_U\,\mathcal Y^j)=\frac15\tr(\operatorname{dlog}\Theta_U)\,\mathcal Y^j$. Moreover $\chi^U_j=\frac j{5u}+\chi^\circ_j$ with $\chi^\circ_j:=-\frac j5(\Bprod^\circ)'/\Bprod^\circ+\frac15\tr(\operatorname{dlog}\Theta_U)\in\Bbbk\fps u$, where $\Bprod^\circ:=u\Bprod\in\Bbbk\fps u^\times$.
+\item[(b)] For $Z\in\mathfrak{gl}_5(\Bbbk\fps u)$ the equation $\operatorname{pr}(w'+\operatorname{dlog}\Theta_U\,w)=-\operatorname{pr}(Z)$ has solutions $w\in\Bbbk\fps u[\mathcal Y]$; their components $w_1,\dots,w_4$ are unique, and $w_0$ is unique up to $w_0\mapsto w_0+\cn\,\mathfrak d$, $\cn\in\Bbbk$.
+\item[(c)] For $Z=0$ the solutions in $\Bbbk\fps u[\mathcal Y]$ are exactly the $\cn\,\mathfrak d\,1$, $\cn\in\Bbbk$.
+\item[(d)] If the data are rational, so are the solutions for $\cn\in\bbQ$; $\mathfrak d\in1+u\bbQ\fps u$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(a) $(\mathcal Y^j)'$ has shift $5-j$, with entries $((\Bprod^{(j)}_a)^{-1})'$ at $(a+j,a)$; by \cref{lem:gau-comm}~(e),
+\[
+\operatorname{pr}((\mathcal Y^j)')=\frac15\Bigl[\sum_a\bigl((\Bprod^{(j)}_a)^{-1}\bigr)'\Bprod^{(j)}_a\Bigr]\mathcal Y^j=-\frac15\Bigl[\sum_a\frac{(\Bprod^{(j)}_a)'}{\Bprod^{(j)}_a}\Bigr]\mathcal Y^j ,
+\]
+and $\sum_a(\Bprod^{(j)}_a)'/\Bprod^{(j)}_a=\sum_a\sum_{i<j}\tilde b_{a+i}'/\tilde b_{a+i}=j\Bprod'/\Bprod$, each index occurring $j$ times. Likewise $\operatorname{dlog}\Theta_U\mathcal Y^j$ has entries $\frac{(d^U_{a+j})'}{d^U_{a+j}}(\Bprod^{(j)}_a)^{-1}$, and \cref{lem:gau-comm}~(e) gives $\frac15\tr(\operatorname{dlog}\Theta_U)\mathcal Y^j$. As $\operatorname{pr}$ is $\Bbbk\lser u$-linear and fixes $\Bbbk\lser u[\mathcal Y]$, the formula follows. Finally $\Bprod'/\Bprod=(\Bprod^\circ)'/\Bprod^\circ-u^{-1}$, and $\tr(\operatorname{dlog}\Theta_U)$ is integral since the $d^U_c$ are units.
+
+(b) By \cref{lem:gau-comm}~(f), $\operatorname{pr}(Z)=\sum_j\phi^Z_j\mathcal Y^j$ with $u\phi^Z_j\in\Bbbk\fps u$ for $j\geq1$ and $\phi^Z_0\in\Bbbk\fps u$ (local letters), and by (a) the equation splits into $w_j'+\chi^U_jw_j=-\phi^Z_j$. For $j=1,\dots,4$, multiplied by $u$, the coefficient of $u^n$ reads
+\[
+\Bigl(n+\frac j5\Bigr)w_{j,n}=-\coef{u^n}(u\phi^Z_j)-\sum_{l=0}^{n-1}\coef{u^{n-1-l}}\chi^\circ_j\cdot w_{j,l},
+\]
+with $n+j/5\neq0$: exactly one solution $w_j\in\Bbbk\fps u$. For $j=0$, $\chi^U_0=-\mathfrak d'/\mathfrak d$, so the equation is $\mathfrak d\,(w_0/\mathfrak d)'=-\phi^Z_0$, with solutions $w_0=\mathfrak d\bigl(\cn-\int_0^u\phi^Z_0/\mathfrak d\,\dd u\bigr)$, $\cn\in\Bbbk$ ($\int_0^u$ the formal antiderivative without constant term), and no others. (c) is (b) with $\phi^Z=0$. (d) The pivots are rational and $\mathfrak d$ is a binomial series of an element of $1+u\bbQ\fps u$.
+\end{proof}
+
+\input{sections/s03_gauge_4}

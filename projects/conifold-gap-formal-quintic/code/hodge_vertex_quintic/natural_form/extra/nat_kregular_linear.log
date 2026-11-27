@@ -1,0 +1,66 @@
+p = 2^61-1
+  order u^2: conditions [u^2] one-edge (2), [u^3] two-edge (5)
+     zhat^1 (0,1) K-regular     response: ALL ZERO
+     zhat^1 (2,4) K-regular     response: ALL ZERO
+     zhat^1 (3,3) K-regular     response: ['-1/400', '-1/7200', '0', '11/27000', '0', '0', '0']
+     zhat^2 (0,2) K-regular     response: ALL ZERO
+     zhat^2 (3,4) K-regular     response: ['1/300', '7/14400', '0', '-11/27000', '0', '0', '0']
+     zhat^3 (0,3) NOT K-regular response: ['-1/1200', '-1/14400', '1/900', '11/54000', '0', '1/5400', '0']
+     zhat^3 (1,2) NOT K-regular response: ALL ZERO
+     zhat^3 (4,4) K-regular     response: ['1/1200', '1/2880', '0', '0', '0', '0', '0']
+     zhat^4 (0,4) NOT K-regular response: ['0', '1/5760', '-1/360', '0', '0', '-1/2160', '0']
+     zhat^4 (1,3) NOT K-regular response: ['-1/288', '-7/69120', '-1/360', '77/259200', '-13/25920', '11/12960', '0']
+     zhat^5 (0,0) NOT K-regular response: ['-1/960', '0', '0', '0', '0', '0', '0']
+     zhat^5 (1,4) NOT K-regular response: ['13/5760', '7/27648', '0', '0', '1/648', '-11/5184', '0']
+     zhat^5 (2,3) NOT K-regular response: ['19/2880', '-5/13824', '0', '11/10368', '1/1728', '0', '0']
+     zhat^6 (0,1) NOT K-regular response: ALL ZERO
+     zhat^6 (2,4) NOT K-regular response: ['0', '25/27648', '0', '0', '0', '0', '0']
+  order u^3: conditions [u^3] one-edge (2)
+     zhat^1 (0,1) K-regular     response: ALL ZERO
+     zhat^1 (2,4) K-regular     response: ALL ZERO
+     zhat^1 (3,3) K-regular     response: ['-1/400', '-1/7200']
+     zhat^2 (0,2) K-regular     response: ALL ZERO
+     zhat^2 (3,4) K-regular     response: ['1/300', '7/14400']
+     zhat^3 (0,3) K-regular     response: ['-1/1200', '-1/14400']
+     zhat^3 (1,2) K-regular     response: ALL ZERO
+     zhat^3 (4,4) K-regular     response: ['1/1200', '1/2880']
+     zhat^4 (0,4) K-regular     response: ['0', '1/5760']
+     zhat^4 (1,3) NOT K-regular response: ['-1/288', '-7/69120']
+     zhat^5 (0,0) NOT K-regular response: ['-1/960', '0']
+     zhat^5 (1,4) NOT K-regular response: ['13/5760', '7/27648']
+     zhat^5 (2,3) NOT K-regular response: ['19/2880', '-5/13824']
+     zhat^6 (0,1) NOT K-regular response: ALL ZERO
+     zhat^6 (2,4) NOT K-regular response: ['0', '25/27648']
+p = 2^89-1
+  order u^2: conditions [u^2] one-edge (2), [u^3] two-edge (5)
+     zhat^1 (0,1) K-regular     response: ALL ZERO
+     zhat^1 (2,4) K-regular     response: ALL ZERO
+     zhat^1 (3,3) K-regular     response: ['-1/400', '-1/7200', '0', '11/27000', '0', '0', '0']
+     zhat^2 (0,2) K-regular     response: ALL ZERO
+     zhat^2 (3,4) K-regular     response: ['1/300', '7/14400', '0', '-11/27000', '0', '0', '0']
+     zhat^3 (0,3) NOT K-regular response: ['-1/1200', '-1/14400', '1/900', '11/54000', '0', '1/5400', '0']
+     zhat^3 (1,2) NOT K-regular response: ALL ZERO
+     zhat^3 (4,4) K-regular     response: ['1/1200', '1/2880', '0', '0', '0', '0', '0']
+     zhat^4 (0,4) NOT K-regular response: ['0', '1/5760', '-1/360', '0', '0', '-1/2160', '0']
+     zhat^4 (1,3) NOT K-regular response: ['-1/288', '-7/69120', '-1/360', '77/259200', '-13/25920', '11/12960', '0']
+     zhat^5 (0,0) NOT K-regular response: ['-1/960', '0', '0', '0', '0', '0', '0']
+     zhat^5 (1,4) NOT K-regular response: ['13/5760', '7/27648', '0', '0', '1/648', '-11/5184', '0']
+     zhat^5 (2,3) NOT K-regular response: ['19/2880', '-5/13824', '0', '11/10368', '1/1728', '0', '0']
+     zhat^6 (0,1) NOT K-regular response: ALL ZERO
+     zhat^6 (2,4) NOT K-regular response: ['0', '25/27648', '0', '0', '0', '0', '0']
+  order u^3: conditions [u^3] one-edge (2)
+     zhat^1 (0,1) K-regular     response: ALL ZERO
+     zhat^1 (2,4) K-regular     response: ALL ZERO
+     zhat^1 (3,3) K-regular     response: ['-1/400', '-1/7200']
+     zhat^2 (0,2) K-regular     response: ALL ZERO
+     zhat^2 (3,4) K-regular     response: ['1/300', '7/14400']
+     zhat^3 (0,3) K-regular     response: ['-1/1200', '-1/14400']
+     zhat^3 (1,2) K-regular     response: ALL ZERO
+     zhat^3 (4,4) K-regular     response: ['1/1200', '1/2880']
+     zhat^4 (0,4) K-regular     response: ['0', '1/5760']
+     zhat^4 (1,3) NOT K-regular response: ['-1/288', '-7/69120']
+     zhat^5 (0,0) NOT K-regular response: ['-1/960', '0']
+     zhat^5 (1,4) NOT K-regular response: ['13/5760', '7/27648']
+     zhat^5 (2,3) NOT K-regular response: ['19/2880', '-5/13824']
+     zhat^6 (0,1) NOT K-regular response: ALL ZERO
+     zhat^6 (2,4) NOT K-regular response: ['0', '25/27648']

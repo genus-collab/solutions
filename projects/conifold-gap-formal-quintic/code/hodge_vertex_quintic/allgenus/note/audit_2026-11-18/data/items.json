@@ -1,0 +1,4033 @@
+[
+ {
+  "label": "thm:int-main",
+  "env": "thm",
+  "file": "sections/s01_intro_2.tex",
+  "line": 9,
+  "stmt_refs": [
+   "def:set-frames",
+   "def:set-rows",
+   "def:set-confexp",
+   "def:set-outer",
+   "def:set-frob"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "thm:int-main"
+  ]
+ },
+ {
+  "label": "cor:int-gap",
+  "env": "cor",
+  "file": "sections/s01_intro_2.tex",
+  "line": 27,
+  "stmt_refs": [
+   "def:mai-Fcf"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "cor:int-gap"
+  ]
+ },
+ {
+  "label": "thm:int-D",
+  "env": "thm",
+  "file": "sections/s01_intro_2.tex",
+  "line": 44,
+  "stmt_refs": [
+   "def:gau-Fg"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "thm:int-D"
+  ]
+ },
+ {
+  "label": "thm:int-gamma",
+  "env": "thm",
+  "file": "sections/s01_intro_2.tex",
+  "line": 51,
+  "stmt_refs": [
+   "def:gam-c",
+   "def:fsp-stirling"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "thm:int-gamma"
+  ]
+ },
+ {
+  "label": "rmk:int-constant",
+  "env": "rmk",
+  "file": "sections/s01_intro_2.tex",
+  "line": 70,
+  "stmt_refs": [
+   "sec:sgn-lit",
+   "rmk:mai-constant"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:int-constant"
+  ]
+ },
+ {
+  "label": "def:set-fq",
+  "env": "defn",
+  "file": "sections/s02_setup.tex",
+  "line": 22,
+  "stmt_refs": [
+   "def:set-genus0"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-fq"
+  ]
+ },
+ {
+  "label": "def:set-genus0",
+  "env": "defn",
+  "file": "sections/s02_setup.tex",
+  "line": 37,
+  "stmt_refs": [
+   "def:set-points",
+   "cor:set-cyclicPF5"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-genus0",
+   "eq:set-PF5",
+   "eq:set-PF4"
+  ]
+ },
+ {
+  "label": "lem:set-pf5",
+  "env": "lem",
+  "file": "sections/s02_setup.tex",
+  "line": 59,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:set-pf5"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup.tex:64"
+ },
+ {
+  "label": "thm:set-mirror",
+  "env": "thm",
+  "file": "sections/s02_setup.tex",
+  "line": 68,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "thm:set-mirror"
+  ]
+ },
+ {
+  "label": "thm:set-G0",
+  "env": "thm",
+  "file": "sections/s02_setup.tex",
+  "line": 95,
+  "stmt_refs": [
+   "def:set-fq"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "thm:set-G0"
+  ]
+ },
+ {
+  "label": "prop:set-cyclicLR",
+  "env": "prop",
+  "file": "sections/s02_setup_2.tex",
+  "line": 5,
+  "stmt_refs": [
+   "def:set-rows",
+   "sec:set-rows"
+  ],
+  "proof_refs": [
+   "prop:set-cyclicLR",
+   "cor:set-cyclicPF5",
+   "def:set-rows",
+   "prop:set-cyclicLR",
+   "cor:set-cyclicPF5",
+   "prop:set-cyclicLR",
+   "lem:set-unitfrob",
+   "lem:set-periods",
+   "lem:set-birkhoff",
+   "lem:set-birkhoff",
+   "lem:set-wronskian",
+   "lem:set-grading",
+   "lem:set-birkhoff",
+   "lem:set-periods",
+   "lem:set-order3"
+  ],
+  "labels": [
+   "prop:set-cyclicLR"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_4.tex:23"
+ },
+ {
+  "label": "cor:set-cyclicPF5",
+  "env": "cor",
+  "file": "sections/s02_setup_3.tex",
+  "line": 3,
+  "stmt_refs": [
+   "lem:set-periods",
+   "lem:set-canon",
+   "def:set-rows"
+  ],
+  "proof_refs": [
+   "prop:set-cyclicLR",
+   "prop:set-cyclicLR",
+   "eq:set-McycLR",
+   "lem:set-pf5",
+   "def:set-rows"
+  ],
+  "labels": [
+   "cor:set-cyclicPF5"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_3.tex:16"
+ },
+ {
+  "label": "def:set-points",
+  "env": "defn",
+  "file": "sections/s02_setup_3.tex",
+  "line": 26,
+  "stmt_refs": [
+   "def:set-confexp"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-points"
+  ]
+ },
+ {
+  "label": "def:set-frob",
+  "env": "defn",
+  "file": "sections/s02_setup_3.tex",
+  "line": 31,
+  "stmt_refs": [
+   "cor:set-cyclicPF5",
+   "def:set-fq",
+   "thm:set-GT"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-frob"
+  ]
+ },
+ {
+  "label": "def:set-rows",
+  "env": "defn",
+  "file": "sections/s02_setup_4.tex",
+  "line": 7,
+  "stmt_refs": [
+   "cor:set-cyclicPF5",
+   "def:set-graphsum",
+   "thm:set-qrr",
+   "thm:set-GT",
+   "def:set-frob"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-rows"
+  ]
+ },
+ {
+  "label": "thm:set-qrr",
+  "env": "thm",
+  "file": "sections/s02_setup_4.tex",
+  "line": 29,
+  "stmt_refs": [
+   "def:set-rows"
+  ],
+  "proof_refs": [
+   "eq:set-qrr",
+   "cor:set-cyclicPF5",
+   "def:set-frob"
+  ],
+  "labels": [
+   "thm:set-qrr",
+   "eq:set-hw"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_4.tex:46"
+ },
+ {
+  "label": "rmk:set-qrrsign",
+  "env": "rmk",
+  "file": "sections/s02_setup_4.tex",
+  "line": 50,
+  "stmt_refs": [
+   "lem:gau-HPF"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:set-qrrsign"
+  ]
+ },
+ {
+  "label": "lem:set-hrot",
+  "env": "lem",
+  "file": "sections/s02_setup_4.tex",
+  "line": 55,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:set-hw"
+  ],
+  "labels": [
+   "lem:set-hrot"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_4.tex:60"
+ },
+ {
+  "label": "def:set-graphsum",
+  "env": "defn",
+  "file": "sections/s02_setup_4.tex",
+  "line": 68,
+  "stmt_refs": [
+   "lem:set-pushins",
+   "def:set-frob",
+   "sec:sgn"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-graphsum"
+  ]
+ },
+ {
+  "label": "lem:set-pushins",
+  "env": "lem",
+  "file": "sections/s02_setup_5.tex",
+  "line": 3,
+  "stmt_refs": [
+   "def:set-graphsum",
+   "def:set-graphsum"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "lem:set-pushins"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_5.tex:24"
+ },
+ {
+  "label": "thm:set-GT",
+  "env": "thm",
+  "file": "sections/s02_setup_5.tex",
+  "line": 40,
+  "stmt_refs": [
+   "def:set-fq",
+   "def:set-rows",
+   "def:set-frob",
+   "def:set-fq",
+   "lem:set-pushins"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "thm:set-GT"
+  ]
+ },
+ {
+  "label": "lem:set-frobbasis",
+  "env": "lem",
+  "file": "sections/s02_setup_5.tex",
+  "line": 55,
+  "stmt_refs": [
+   "def:gau-conc"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "lem:set-frobbasis"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_5.tex:73"
+ },
+ {
+  "label": "def:set-frames",
+  "env": "defn",
+  "file": "sections/s02_setup_6.tex",
+  "line": 3,
+  "stmt_refs": [
+   "lem:gau-diag",
+   "def:set-tau"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-frames"
+  ]
+ },
+ {
+  "label": "def:set-confexp",
+  "env": "defn",
+  "file": "sections/s02_setup_6.tex",
+  "line": 8,
+  "stmt_refs": [
+   "def:gau-conc",
+   "lem:set-periods",
+   "lem:gau-conc",
+   "lem:gau-adj",
+   "cor:gau-rowsNN",
+   "def:mai-Fcf",
+   "lem:gau-confexp",
+   "cor:gau-rowsNN",
+   "rmk:mai-constant"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-confexp"
+  ]
+ },
+ {
+  "label": "def:set-tau",
+  "env": "defn",
+  "file": "sections/s02_setup_6.tex",
+  "line": 23,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "def:set-tau"
+  ]
+ },
+ {
+  "label": "lem:set-canon",
+  "env": "lem",
+  "file": "sections/s02_setup_6.tex",
+  "line": 32,
+  "stmt_refs": [
+   "cor:set-cyclicPF5"
+  ],
+  "proof_refs": [
+   "cor:set-cyclicPF5"
+  ],
+  "labels": [
+   "lem:set-canon"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_6.tex:40"
+ },
+ {
+  "label": "def:set-model",
+  "env": "defn",
+  "file": "sections/s02_setup_6.tex",
+  "line": 50,
+  "stmt_refs": [
+   "def:gau-van",
+   "lem:con-S2",
+   "sec:sgn"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-model"
+  ]
+ },
+ {
+  "label": "prop:set-modrows",
+  "env": "prop",
+  "file": "sections/s02_setup_6.tex",
+  "line": 59,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "prop:set-modrows"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_6.tex:75"
+ },
+ {
+  "label": "def:set-M0",
+  "env": "defn",
+  "file": "sections/s02_setup_7.tex",
+  "line": 3,
+  "stmt_refs": [
+   "lem:set-M0sympl",
+   "lem:gau-colmod"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-M0"
+  ]
+ },
+ {
+  "label": "lem:set-M0sympl",
+  "env": "lem",
+  "file": "sections/s02_setup_7.tex",
+  "line": 16,
+  "stmt_refs": [],
+  "proof_refs": [
+   "prop:set-modrows",
+   "def:set-M0"
+  ],
+  "labels": [
+   "lem:set-M0sympl"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_7.tex:21"
+ },
+ {
+  "label": "def:set-modcohft",
+  "env": "defn",
+  "file": "sections/s02_setup_7.tex",
+  "line": 35,
+  "stmt_refs": [
+   "prop:set-modrows",
+   "def:set-M0",
+   "thm:gau-R0",
+   "def:set-M0",
+   "lem:set-M0sympl",
+   "def:set-graphsum",
+   "thm:mod-gap"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-modcohft"
+  ]
+ },
+ {
+  "label": "lem:set-modhom",
+  "env": "lem",
+  "file": "sections/s02_setup_7.tex",
+  "line": 44,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:set-M0sympl",
+   "def:set-M0",
+   "def:set-graphsum"
+  ],
+  "labels": [
+   "lem:set-modhom"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_7.tex:60"
+ },
+ {
+  "label": "lem:set-dilaton",
+  "env": "lem",
+  "file": "sections/s02_setup_8.tex",
+  "line": 3,
+  "stmt_refs": [
+   "def:set-graphsum"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "lem:set-dilaton"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s02_setup_8.tex:19"
+ },
+ {
+  "label": "def:set-hat",
+  "env": "defn",
+  "file": "sections/s02_setup_8.tex",
+  "line": 39,
+  "stmt_refs": [
+   "def:flh-outer",
+   "cor:mai-natfact"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-hat"
+  ]
+ },
+ {
+  "label": "def:set-outer",
+  "env": "defn",
+  "file": "sections/s02_setup_8.tex",
+  "line": 44,
+  "stmt_refs": [
+   "def:set-M0",
+   "lem:set-M0sympl",
+   "def:set-rows",
+   "lem:mai-Psi",
+   "def:flh-outer",
+   "def:flh-outer",
+   "def:set-graphsum",
+   "def:set-hat",
+   "lem:flh-hat",
+   "def:set-rows",
+   "lem:flh-inputs",
+   "def:gau-Fg",
+   "thm:gam-D"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-outer"
+  ]
+ },
+ {
+  "label": "def:set-N",
+  "env": "defn",
+  "file": "sections/s02_setup_8.tex",
+  "line": 59,
+  "stmt_refs": [
+   "def:set-frames",
+   "def:set-outer",
+   "thm:mai-main"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:set-N",
+   "eq:set-cg"
+  ]
+ },
+ {
+  "label": "rmk:set-cg",
+  "env": "rmk",
+  "file": "sections/s02_setup_8.tex",
+  "line": 74,
+  "stmt_refs": [
+   "eq:set-cg",
+   "thm:mod-gap",
+   "cor:mod-trF"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:set-cg"
+  ]
+ },
+ {
+  "label": "def:gau-conc",
+  "env": "defn",
+  "file": "sections/s03_gauge.tex",
+  "line": 28,
+  "stmt_refs": [
+   "lem:set-frobbasis",
+   "lem:set-frobbasis",
+   "def:set-confexp",
+   "lem:gau-confexp",
+   "cor:gau-rowsNN",
+   "lem:set-wronskian",
+   "lem:gau-conc"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:gau-conc",
+   "eq:gau-Mcyc"
+  ]
+ },
+ {
+  "label": "lem:gau-confexp",
+  "env": "lem",
+  "file": "sections/s03_gauge.tex",
+  "line": 49,
+  "stmt_refs": [
+   "def:set-frames",
+   "def:set-confexp",
+   "def:set-confexp",
+   "def:set-genus0"
+  ],
+  "proof_refs": [
+   "lem:gau-confexp",
+   "def:set-confexp",
+   "def:set-confexp",
+   "def:set-frames",
+   "lem:gau-iso"
+  ],
+  "labels": [
+   "lem:gau-confexp"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:125"
+ },
+ {
+  "label": "thm:gau-cyc",
+  "env": "thm",
+  "file": "sections/s03_gauge.tex",
+  "line": 58,
+  "stmt_refs": [
+   "lem:gau-iso",
+   "def:set-frames"
+  ],
+  "proof_refs": [
+   "thm:gau-cyc",
+   "lem:gau-sg",
+   "lem:gau-conc",
+   "eq:gau-Mcyc",
+   "lem:gau-iso"
+  ],
+  "labels": [
+   "thm:gau-cyc",
+   "eq:gau-cyc"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:105"
+ },
+ {
+  "label": "cor:gau-cycsys",
+  "env": "cor",
+  "file": "sections/s03_gauge.tex",
+  "line": 68,
+  "stmt_refs": [
+   "thm:gau-cyc",
+   "eq:gau-system"
+  ],
+  "proof_refs": [
+   "cor:gau-cycsys",
+   "eq:gau-Mcyc",
+   "thm:gau-cyc",
+   "lem:set-pf5"
+  ],
+  "labels": [
+   "cor:gau-cycsys",
+   "eq:gau-system"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:113"
+ },
+ {
+  "label": "def:gau-onepole",
+  "env": "defn",
+  "file": "sections/s03_gauge_2.tex",
+  "line": 7,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "def:gau-onepole"
+  ]
+ },
+ {
+  "label": "prop:gau-quintic",
+  "env": "prop",
+  "file": "sections/s03_gauge_2.tex",
+  "line": 12,
+  "stmt_refs": [
+   "def:set-frames",
+   "cor:gau-cycsys",
+   "prop:set-cyclicLR",
+   "cor:gau-cycsys",
+   "eq:gau-system",
+   "cor:gau-cycsys"
+  ],
+  "proof_refs": [
+   "lem:gau-confexp",
+   "cor:gau-cycsys",
+   "def:set-frames"
+  ],
+  "labels": [
+   "prop:gau-quintic"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_2.tex:30"
+ },
+ {
+  "label": "prop:gau-equalprod",
+  "env": "prop",
+  "file": "sections/s03_gauge_2.tex",
+  "line": 34,
+  "stmt_refs": [
+   "prop:set-modrows",
+   "prop:gau-quintic",
+   "def:set-tau"
+  ],
+  "proof_refs": [
+   "prop:gau-quintic",
+   "def:set-tau",
+   "prop:gau-quintic"
+  ],
+  "labels": [
+   "prop:gau-equalprod"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_2.tex:48"
+ },
+ {
+  "label": "thm:gau-U",
+  "env": "thm",
+  "file": "sections/s03_gauge_2.tex",
+  "line": 68,
+  "stmt_refs": [],
+  "proof_refs": [
+   "thm:gau-U",
+   "lem:gau-scal",
+   "lem:gau-lift",
+   "lem:gau-scal",
+   "eq:gau-reduced",
+   "thm:gau-U",
+   "prop:gau-graded",
+   "lem:gau-lead",
+   "lem:gau-comm",
+   "lem:gau-lift",
+   "lem:gau-scal",
+   "lem:gau-lead"
+  ],
+  "labels": [
+   "thm:gau-U"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_4.tex:3"
+ },
+ {
+  "label": "lem:gau-comm",
+  "env": "lem",
+  "file": "sections/s03_gauge_3.tex",
+  "line": 3,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:gau-comm"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_3.tex:21"
+ },
+ {
+  "label": "lem:gau-lift",
+  "env": "lem",
+  "file": "sections/s03_gauge_3.tex",
+  "line": 31,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:gau-comm",
+   "lem:gau-comm",
+   "lem:gau-comm"
+  ],
+  "labels": [
+   "lem:gau-lift"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_3.tex:36"
+ },
+ {
+  "label": "lem:gau-scal",
+  "env": "lem",
+  "file": "sections/s03_gauge_3.tex",
+  "line": 40,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:gau-comm",
+   "lem:gau-comm",
+   "lem:gau-comm"
+  ],
+  "labels": [
+   "lem:gau-scal"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_3.tex:55"
+ },
+ {
+  "label": "lem:gau-lead",
+  "env": "lem",
+  "file": "sections/s03_gauge_4.tex",
+  "line": 12,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:gau-reduced",
+   "lem:gau-comm",
+   "lem:gau-scal"
+  ],
+  "labels": [
+   "lem:gau-lead"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_4.tex:17"
+ },
+ {
+  "label": "lem:gau-degree",
+  "env": "lem",
+  "file": "sections/s03_gauge_4.tex",
+  "line": 27,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:gau-degree"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_4.tex:32"
+ },
+ {
+  "label": "prop:gau-graded",
+  "env": "prop",
+  "file": "sections/s03_gauge_4.tex",
+  "line": 36,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:gau-degree",
+   "thm:gau-U",
+   "thm:gau-U"
+  ],
+  "labels": [
+   "prop:gau-graded"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_4.tex:47"
+ },
+ {
+  "label": "lem:gau-R1",
+  "env": "lem",
+  "file": "sections/s03_gauge_5.tex",
+  "line": 9,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:gau-R1"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_5.tex:14"
+ },
+ {
+  "label": "lem:gau-diag",
+  "env": "lem",
+  "file": "sections/s03_gauge_5.tex",
+  "line": 18,
+  "stmt_refs": [
+   "thm:gau-U",
+   "def:gau-can"
+  ],
+  "proof_refs": [
+   "thm:gau-U",
+   "prop:gau-quintic",
+   "prop:gau-equalprod",
+   "prop:gau-equalprod"
+  ],
+  "labels": [
+   "lem:gau-diag"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_5.tex:30"
+ },
+ {
+  "label": "def:gau-van",
+  "env": "defn",
+  "file": "sections/s03_gauge_5.tex",
+  "line": 34,
+  "stmt_refs": [
+   "def:set-model",
+   "lem:gau-vanq"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:gau-van"
+  ]
+ },
+ {
+  "label": "lem:gau-vanmod",
+  "env": "lem",
+  "file": "sections/s03_gauge_5.tex",
+  "line": 46,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:gau-vanmod"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_5.tex:51"
+ },
+ {
+  "label": "lem:gau-vanshape",
+  "env": "lem",
+  "file": "sections/s03_gauge_5.tex",
+  "line": 55,
+  "stmt_refs": [],
+  "proof_refs": [
+   "def:gau-van"
+  ],
+  "labels": [
+   "lem:gau-vanshape"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_5.tex:64"
+ },
+ {
+  "label": "lem:gau-uniq",
+  "env": "lem",
+  "file": "sections/s03_gauge_5.tex",
+  "line": 68,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:gau-uniq"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_5.tex:73"
+ },
+ {
+  "label": "lem:gau-vanq",
+  "env": "lem",
+  "file": "sections/s03_gauge_5.tex",
+  "line": 77,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:gau-uniq",
+   "lem:gau-vanmod",
+   "prop:gau-equalprod"
+  ],
+  "labels": [
+   "lem:gau-vanq"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_5.tex:88"
+ },
+ {
+  "label": "thm:gau-G",
+  "env": "thm",
+  "file": "sections/s03_gauge_6.tex",
+  "line": 3,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:gau-G",
+   "lem:gau-uniq",
+   "lem:gau-vanmod",
+   "lem:gau-vanq",
+   "lem:gau-R1",
+   "lem:gau-vanq",
+   "lem:gau-uniq",
+   "prop:gau-graded",
+   "prop:gau-graded",
+   "eq:gau-G",
+   "thm:gau-U"
+  ],
+  "labels": [
+   "thm:gau-G",
+   "eq:gau-G"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_6.tex:17"
+ },
+ {
+  "label": "def:gau-can",
+  "env": "defn",
+  "file": "sections/s03_gauge_6.tex",
+  "line": 23,
+  "stmt_refs": [
+   "thm:gau-G",
+   "thm:gau-U",
+   "thm:gau-U",
+   "prop:gau-graded",
+   "lem:gau-diag"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:gau-can"
+  ]
+ },
+ {
+  "label": "prop:gau-symp",
+  "env": "prop",
+  "file": "sections/s03_gauge_6.tex",
+  "line": 28,
+  "stmt_refs": [
+   "sec:gau-van"
+  ],
+  "proof_refs": [
+   "def:gau-onepole",
+   "thm:gau-U",
+   "lem:gau-R1"
+  ],
+  "labels": [
+   "prop:gau-symp",
+   "eq:gau-symp"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_6.tex:38"
+ },
+ {
+  "label": "lem:gau-HPF",
+  "env": "lem",
+  "file": "sections/s03_gauge_6.tex",
+  "line": 52,
+  "stmt_refs": [
+   "eq:gau-HPF",
+   "eq:gau-HPF",
+   "eq:gau-HPF"
+  ],
+  "proof_refs": [
+   "eq:gau-HPF"
+  ],
+  "labels": [
+   "lem:gau-HPF",
+   "eq:gau-HPF"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_6.tex:70"
+ },
+ {
+  "label": "lem:gau-poly",
+  "env": "lem",
+  "file": "sections/s03_gauge_7.tex",
+  "line": 3,
+  "stmt_refs": [
+   "eq:gau-HPF",
+   "eq:gau-HPF",
+   "eq:gau-HPF"
+  ],
+  "proof_refs": [
+   "lem:gau-HPF",
+   "eq:gau-HPF",
+   "eq:gau-HPF"
+  ],
+  "labels": [
+   "lem:gau-poly"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_7.tex:14"
+ },
+ {
+  "label": "lem:gau-wkb",
+  "env": "lem",
+  "file": "sections/s03_gauge_7.tex",
+  "line": 18,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:gau-wkb"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_7.tex:28"
+ },
+ {
+  "label": "lem:gau-colmod",
+  "env": "lem",
+  "file": "sections/s03_gauge_7.tex",
+  "line": 38,
+  "stmt_refs": [
+   "prop:set-modrows",
+   "def:set-M0"
+  ],
+  "proof_refs": [
+   "prop:set-modrows",
+   "prop:set-modrows"
+  ],
+  "labels": [
+   "lem:gau-colmod"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_7.tex:48"
+ },
+ {
+  "label": "lem:gau-colrows",
+  "env": "lem",
+  "file": "sections/s03_gauge_7.tex",
+  "line": 52,
+  "stmt_refs": [
+   "def:set-rows"
+  ],
+  "proof_refs": [
+   "cor:set-cyclicPF5",
+   "lem:gau-wkb",
+   "cor:set-cyclicPF5",
+   "def:set-frob",
+   "lem:gau-wkb",
+   "lem:gau-wkb",
+   "thm:set-qrr",
+   "lem:set-hrot",
+   "def:set-rows",
+   "prop:set-cyclicLR"
+  ],
+  "labels": [
+   "lem:gau-colrows"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_7.tex:61"
+ },
+ {
+  "label": "thm:gau-R0",
+  "env": "thm",
+  "file": "sections/s03_gauge_8.tex",
+  "line": 3,
+  "stmt_refs": [
+   "lem:gau-colmod",
+   "lem:mai-Ghat",
+   "eq:gau-HPF",
+   "lem:gau-poly",
+   "def:set-rows",
+   "cor:gau-rowsNN"
+  ],
+  "proof_refs": [
+   "lem:gau-colmod",
+   "def:set-tau",
+   "lem:set-canon",
+   "def:set-tau",
+   "cor:gau-cycsys",
+   "eq:gau-HPF",
+   "lem:gau-HPF",
+   "def:set-M0",
+   "def:gau-can",
+   "lem:gau-diag",
+   "lem:gau-poly",
+   "cor:set-cyclicPF5",
+   "def:set-frob",
+   "lem:gau-wkb",
+   "prop:set-cyclicLR",
+   "cor:gau-rowsNN",
+   "prop:gau-quintic",
+   "eq:gau-R0zero"
+  ],
+  "labels": [
+   "thm:gau-R0",
+   "eq:gau-R0zero"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_8.tex:23"
+ },
+ {
+  "label": "cor:gau-rowsNN",
+  "env": "cor",
+  "file": "sections/s03_gauge_8.tex",
+  "line": 33,
+  "stmt_refs": [
+   "def:set-confexp",
+   "thm:gau-R0",
+   "lem:gau-colrows",
+   "def:mai-Fcf"
+  ],
+  "proof_refs": [
+   "lem:gau-conc",
+   "prop:gau-quintic",
+   "lem:gau-colrows"
+  ],
+  "labels": [
+   "cor:gau-rowsNN"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_8.tex:42"
+ },
+ {
+  "label": "cor:gau-colours",
+  "env": "cor",
+  "file": "sections/s03_gauge_8.tex",
+  "line": 46,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:gau-colmod",
+   "def:gau-can",
+   "prop:gau-graded",
+   "eq:gau-R0zero",
+   "cor:gau-rowsNN",
+   "thm:gau-R0",
+   "thm:gau-R0"
+  ],
+  "labels": [
+   "cor:gau-colours",
+   "eq:gau-R0"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s03_gauge_8.tex:60"
+ },
+ {
+  "label": "def:gau-Fg",
+  "env": "defn",
+  "file": "sections/s03_gauge_8.tex",
+  "line": 68,
+  "stmt_refs": [
+   "cor:gau-colours",
+   "thm:flh-main",
+   "thm:gam-D"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:gau-Fg"
+  ]
+ },
+ {
+  "label": "conv:tra-forms",
+  "env": "conv",
+  "file": "sections/s04_transport.tex",
+  "line": 13,
+  "stmt_refs": [
+   "def:set-frob",
+   "def:set-model",
+   "def:mod-weights",
+   "lem:set-modhom",
+   "def:tra-dressing",
+   "def:set-tau",
+   "lem:tra-twoslot",
+   "lem:tra-E",
+   "def:gau-van"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "conv:tra-forms"
+  ]
+ },
+ {
+  "label": "lem:tra-sum",
+  "env": "lem",
+  "file": "sections/s04_transport.tex",
+  "line": 33,
+  "stmt_refs": [],
+  "proof_refs": [
+   "conv:tra-forms"
+  ],
+  "labels": [
+   "lem:tra-sum"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport.tex:38"
+ },
+ {
+  "label": "def:tra-tower",
+  "env": "defn",
+  "file": "sections/s04_transport.tex",
+  "line": 44,
+  "stmt_refs": [
+   "def:gau-van",
+   "lem:gau-vanshape",
+   "conv:tra-forms"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:tra-tower",
+   "eq:tra-tower"
+  ]
+ },
+ {
+  "label": "lem:tra-theta",
+  "env": "lem",
+  "file": "sections/s04_transport.tex",
+  "line": 81,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:tra-shift"
+  ],
+  "labels": [
+   "lem:tra-theta"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport.tex:90"
+ },
+ {
+  "label": "def:tra-slice",
+  "env": "defn",
+  "file": "sections/s04_transport.tex",
+  "line": 94,
+  "stmt_refs": [
+   "lem:tra-theta",
+   "cor:tra-slice"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:tra-slice",
+   "eq:tra-slice"
+  ]
+ },
+ {
+  "label": "lem:tra-frames",
+  "env": "lem",
+  "file": "sections/s04_transport_2.tex",
+  "line": 4,
+  "stmt_refs": [
+   "lem:tra-theta"
+  ],
+  "proof_refs": [
+   "lem:tra-theta",
+   "def:tra-tower",
+   "lem:tra-theta",
+   "eq:tra-shift",
+   "def:tra-tower",
+   "lem:tra-theta",
+   "lem:tra-theta",
+   "eq:tra-values",
+   "lem:tra-sum"
+  ],
+  "labels": [
+   "lem:tra-frames"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_2.tex:25"
+ },
+ {
+  "label": "cor:tra-slice",
+  "env": "cor",
+  "file": "sections/s04_transport_2.tex",
+  "line": 44,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:tra-values"
+  ],
+  "labels": [
+   "cor:tra-slice"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_2.tex:52"
+ },
+ {
+  "label": "lem:tra-coeff",
+  "env": "lem",
+  "file": "sections/s04_transport_2.tex",
+  "line": 56,
+  "stmt_refs": [
+   "thm:red-main"
+  ],
+  "proof_refs": [
+   "lem:tra-frames",
+   "cor:tra-slice"
+  ],
+  "labels": [
+   "lem:tra-coeff"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_2.tex:61"
+ },
+ {
+  "label": "lem:tra-twoslot",
+  "env": "lem",
+  "file": "sections/s04_transport_2.tex",
+  "line": 65,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:tra-frames",
+   "lem:tra-sum",
+   "lem:tra-frames",
+   "lem:tra-sum"
+  ],
+  "labels": [
+   "lem:tra-twoslot"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_2.tex:74"
+ },
+ {
+  "label": "def:tra-dressing",
+  "env": "defn",
+  "file": "sections/s04_transport_4.tex",
+  "line": 7,
+  "stmt_refs": [
+   "prop:tra-can",
+   "thm:gau-G",
+   "prop:gau-symp",
+   "rmk:mai-annih"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:tra-dressing"
+  ]
+ },
+ {
+  "label": "def:tra-edge",
+  "env": "defn",
+  "file": "sections/s04_transport_4.tex",
+  "line": 17,
+  "stmt_refs": [
+   "def:red-flatsum",
+   "eq:tra-leaf"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:tra-edge"
+  ]
+ },
+ {
+  "label": "lem:tra-E",
+  "env": "lem",
+  "file": "sections/s04_transport_4.tex",
+  "line": 45,
+  "stmt_refs": [],
+  "proof_refs": [
+   "conv:tra-forms"
+  ],
+  "labels": [
+   "lem:tra-E",
+   "eq:tra-lemE"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_4.tex:55"
+ },
+ {
+  "label": "cor:tra-edges",
+  "env": "cor",
+  "file": "sections/s04_transport_4.tex",
+  "line": 90,
+  "stmt_refs": [
+   "lem:tra-twoslot"
+  ],
+  "proof_refs": [
+   "lem:tra-E",
+   "def:tra-dressing",
+   "conv:tra-forms",
+   "lem:tra-conv",
+   "lem:tra-E",
+   "eq:tra-pairing",
+   "lem:tra-E",
+   "lem:tra-twoslot"
+  ],
+  "labels": [
+   "cor:tra-edges"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_4.tex:95"
+ },
+ {
+  "label": "lem:tra-T",
+  "env": "lem",
+  "file": "sections/s04_transport_4.tex",
+  "line": 103,
+  "stmt_refs": [
+   "eq:tra-leaf"
+  ],
+  "proof_refs": [
+   "lem:tra-conv",
+   "eq:tra-pairing",
+   "lem:gau-vanshape",
+   "eq:tra-leaf",
+   "cor:tra-slice",
+   "cor:tra-slice",
+   "cor:tra-slice",
+   "lem:tra-conv",
+   "eq:tra-values",
+   "lem:tra-conv"
+  ],
+  "labels": [
+   "lem:tra-T"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_4.tex:118"
+ },
+ {
+  "label": "lem:tra-F",
+  "env": "lem",
+  "file": "sections/s04_transport_4.tex",
+  "line": 136,
+  "stmt_refs": [
+   "def:red-flatsum"
+  ],
+  "proof_refs": [
+   "def:set-graphsum",
+   "lem:set-dilaton",
+   "eq:tra-leaf",
+   "lem:tra-conv",
+   "lem:tra-conv",
+   "eq:tra-leaf",
+   "lem:set-modhom"
+  ],
+  "labels": [
+   "lem:tra-F"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_4.tex:141"
+ },
+ {
+  "label": "prop:tra-can",
+  "env": "prop",
+  "file": "sections/s04_transport_4.tex",
+  "line": 149,
+  "stmt_refs": [
+   "def:set-frames",
+   "def:set-tau",
+   "def:gau-can",
+   "cor:tra-edges",
+   "lem:tra-T",
+   "lem:tra-F"
+  ],
+  "proof_refs": [
+   "thm:gau-U",
+   "def:gau-can",
+   "prop:gau-equalprod",
+   "prop:gau-symp",
+   "thm:gau-G",
+   "lem:gau-vanq",
+   "lem:gau-vanq",
+   "lem:gau-diag",
+   "def:set-frames",
+   "prop:gau-equalprod",
+   "lem:tra-T",
+   "cor:tra-edges",
+   "lem:tra-twoslot",
+   "lem:tra-T",
+   "lem:tra-F"
+  ],
+  "labels": [
+   "prop:tra-can"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s04_transport_4.tex:154"
+ },
+ {
+  "label": "def:red-flatsum",
+  "env": "defn",
+  "file": "sections/s05_reduction.tex",
+  "line": 12,
+  "stmt_refs": [
+   "def:tra-edge",
+   "def:set-graphsum",
+   "def:set-modcohft",
+   "def:set-graphsum",
+   "eq:tra-leaf",
+   "thm:flh-main"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:red-flatsum",
+   "eq:red-vertex"
+  ]
+ },
+ {
+  "label": "def:red-ML",
+  "env": "defn",
+  "file": "sections/s05_reduction.tex",
+  "line": 29,
+  "stmt_refs": [
+   "lem:set-modhom",
+   "eq:set-cg"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:red-ML"
+  ]
+ },
+ {
+  "label": "lem:red-genus",
+  "env": "lem",
+  "file": "sections/s05_reduction.tex",
+  "line": 42,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:red-genus"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s05_reduction.tex:47"
+ },
+ {
+  "label": "thm:red-main",
+  "env": "thm",
+  "file": "sections/s05_reduction.tex",
+  "line": 54,
+  "stmt_refs": [
+   "def:tra-dressing"
+  ],
+  "proof_refs": [
+   "cor:tra-edges",
+   "lem:tra-twoslot",
+   "lem:tra-coeff",
+   "lem:tra-T",
+   "lem:red-genus",
+   "def:red-flatsum",
+   "lem:tra-conv",
+   "lem:tra-coeff",
+   "lem:tra-conv",
+   "lem:tra-twoslot",
+   "cor:tra-edges",
+   "lem:tra-conv",
+   "eq:red-vertex",
+   "lem:tra-T",
+   "lem:tra-conv"
+  ],
+  "labels": [
+   "thm:red-main"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s05_reduction.tex:64"
+ },
+ {
+  "label": "cor:red-can",
+  "env": "cor",
+  "file": "sections/s05_reduction.tex",
+  "line": 78,
+  "stmt_refs": [
+   "def:set-frames"
+  ],
+  "proof_refs": [
+   "prop:tra-can",
+   "thm:red-main"
+  ],
+  "labels": [
+   "cor:red-can"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s05_reduction.tex:83"
+ },
+ {
+  "label": "conv:mod-kernel",
+  "env": "conv",
+  "file": "sections/s06_model.tex",
+  "line": 10,
+  "stmt_refs": [
+   "sec:sgn-tr",
+   "tab:sgn-tr"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "conv:mod-kernel",
+   "eq:mod-kernel"
+  ]
+ },
+ {
+  "label": "def:mod-curve",
+  "env": "defn",
+  "file": "sections/s06_model.tex",
+  "line": 26,
+  "stmt_refs": [
+   "conv:mod-kernel",
+   "lem:mod-scale"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:mod-curve"
+  ]
+ },
+ {
+  "label": "def:mod-pair",
+  "env": "defn",
+  "file": "sections/s06_model.tex",
+  "line": 31,
+  "stmt_refs": [
+   "conv:mod-kernel",
+   "lem:mod-xfun"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:mod-pair"
+  ]
+ },
+ {
+  "label": "def:mod-xi",
+  "env": "defn",
+  "file": "sections/s06_model.tex",
+  "line": 48,
+  "stmt_refs": [
+   "def:set-model"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:mod-xi"
+  ]
+ },
+ {
+  "label": "def:mod-ancvec",
+  "env": "defn",
+  "file": "sections/s06_model.tex",
+  "line": 57,
+  "stmt_refs": [
+   "def:mod-pair"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:mod-ancvec"
+  ]
+ },
+ {
+  "label": "thm:mod-tr",
+  "env": "thm",
+  "file": "sections/s06_model.tex",
+  "line": 64,
+  "stmt_refs": [
+   "def:mod-ancvec"
+  ],
+  "proof_refs": [
+   "thm:mod-tr",
+   "prop:mod-Rtr",
+   "prop:mod-Rtr",
+   "eq:mod-235",
+   "eq:mod-235",
+   "lem:mod-scale",
+   "eq:mod-235",
+   "eq:mod-235",
+   "prop:mod-Rtr",
+   "def:set-modcohft",
+   "def:set-modcohft",
+   "def:set-M0",
+   "prop:set-modrows",
+   "def:mod-xi",
+   "eq:mod-235",
+   "eq:mod-tr",
+   "def:mod-pair"
+  ],
+  "labels": [
+   "thm:mod-tr",
+   "eq:mod-tr"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_3.tex:22"
+ },
+ {
+  "label": "lem:mod-laplace",
+  "env": "lem",
+  "file": "sections/s06_model_2.tex",
+  "line": 4,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:mod-laplace",
+   "eq:mod-laplace"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_2.tex:25"
+ },
+ {
+  "label": "lem:mod-scale",
+  "env": "lem",
+  "file": "sections/s06_model_2.tex",
+  "line": 29,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:mod-kernel",
+   "def:mod-pair"
+  ],
+  "labels": [
+   "lem:mod-scale"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_2.tex:37"
+ },
+ {
+  "label": "prop:mod-Rtr",
+  "env": "prop",
+  "file": "sections/s06_model_2.tex",
+  "line": 41,
+  "stmt_refs": [
+   "lem:mod-laplace"
+  ],
+  "proof_refs": [
+   "prop:mod-Rtr",
+   "lem:mod-laplace",
+   "lem:mod-laplace",
+   "lem:mod-laplace",
+   "lem:mod-laplace",
+   "prop:set-modrows",
+   "prop:set-modrows",
+   "def:set-M0",
+   "lem:gau-colmod",
+   "prop:set-modrows",
+   "eq:mod-Rtr-pf",
+   "lem:set-M0sympl",
+   "eq:mod-Rtr",
+   "lem:set-pushins"
+  ],
+  "labels": [
+   "prop:mod-Rtr",
+   "eq:mod-Rtr"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_3.tex:2"
+ },
+ {
+  "label": "lem:mod-xfun",
+  "env": "lem",
+  "file": "sections/s06_model_4.tex",
+  "line": 2,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:mod-kernel",
+   "conv:mod-kernel"
+  ],
+  "labels": [
+   "lem:mod-xfun"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_4.tex:11"
+ },
+ {
+  "label": "def:mod-legs",
+  "env": "defn",
+  "file": "sections/s06_model_4.tex",
+  "line": 22,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "def:mod-legs"
+  ]
+ },
+ {
+  "label": "prop:mod-LD",
+  "env": "prop",
+  "file": "sections/s06_model_4.tex",
+  "line": 27,
+  "stmt_refs": [
+   "conv:tra-forms"
+  ],
+  "proof_refs": [
+   "eq:mod-LD"
+  ],
+  "labels": [
+   "prop:mod-LD",
+   "eq:mod-LD"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_4.tex:37"
+ },
+ {
+  "label": "cor:mod-trF",
+  "env": "cor",
+  "file": "sections/s06_model_4.tex",
+  "line": 46,
+  "stmt_refs": [
+   "def:set-modcohft",
+   "def:set-modcohft",
+   "def:set-graphsum"
+  ],
+  "proof_refs": [
+   "conv:mod-kernel",
+   "lem:mod-xfun",
+   "thm:mod-tr",
+   "prop:mod-LD",
+   "lem:set-dilaton"
+  ],
+  "labels": [
+   "cor:mod-trF"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_4.tex:51"
+ },
+ {
+  "label": "def:mod-weights",
+  "env": "defn",
+  "file": "sections/s06_model_5.tex",
+  "line": 2,
+  "stmt_refs": [
+   "conv:tra-forms",
+   "prop:mod-LD",
+   "def:mod-pair"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:mod-weights"
+  ]
+ },
+ {
+  "label": "lem:mod-closure",
+  "env": "lem",
+  "file": "sections/s06_model_5.tex",
+  "line": 11,
+  "stmt_refs": [],
+  "proof_refs": [
+   "def:mod-legs"
+  ],
+  "labels": [
+   "lem:mod-closure"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_5.tex:20"
+ },
+ {
+  "label": "lem:mod-genfn",
+  "env": "lem",
+  "file": "sections/s06_model_5.tex",
+  "line": 24,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:mod-closure"
+  ],
+  "labels": [
+   "lem:mod-genfn"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_5.tex:29"
+ },
+ {
+  "label": "lem:mod-resid",
+  "env": "lem",
+  "file": "sections/s06_model_5.tex",
+  "line": 33,
+  "stmt_refs": [],
+  "proof_refs": [
+   "def:gau-van",
+   "def:tra-tower"
+  ],
+  "labels": [
+   "lem:mod-resid"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_5.tex:38"
+ },
+ {
+  "label": "prop:mod-dii",
+  "env": "prop",
+  "file": "sections/s06_model_5.tex",
+  "line": 46,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:mod-genfn",
+   "lem:mod-resid",
+   "def:tra-tower",
+   "eq:mod-dii",
+   "def:tra-slice"
+  ],
+  "labels": [
+   "prop:mod-dii",
+   "eq:mod-dii"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_5.tex:56"
+ },
+ {
+  "label": "lem:mod-count",
+  "env": "lem",
+  "file": "sections/s06_model_6.tex",
+  "line": 5,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:mod-count"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_6.tex:10"
+ },
+ {
+  "label": "lem:mod-classL",
+  "env": "lem",
+  "file": "sections/s06_model_6.tex",
+  "line": 14,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:mod-classL"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_6.tex:24"
+ },
+ {
+  "label": "lem:mod-modv",
+  "env": "lem",
+  "file": "sections/s06_model_6.tex",
+  "line": 28,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:mod-closure",
+   "lem:mod-closure",
+   "lem:mod-closure"
+  ],
+  "labels": [
+   "lem:mod-modv"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_6.tex:33"
+ },
+ {
+  "label": "thm:mod-lattice",
+  "env": "thm",
+  "file": "sections/s06_model_6.tex",
+  "line": 37,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:mod-count",
+   "lem:mod-closure",
+   "prop:mod-dii",
+   "lem:mod-classL",
+   "lem:mod-modv",
+   "lem:mod-count",
+   "lem:mod-classL",
+   "lem:mod-classL",
+   "lem:mod-classL",
+   "prop:mod-dii",
+   "lem:mod-classL",
+   "lem:mod-classL"
+  ],
+  "labels": [
+   "thm:mod-lattice"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_6.tex:49"
+ },
+ {
+  "label": "cor:mod-split",
+  "env": "cor",
+  "file": "sections/s06_model_6.tex",
+  "line": 53,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:mod-closure",
+   "prop:mod-dii"
+  ],
+  "labels": [
+   "cor:mod-split"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_6.tex:58"
+ },
+ {
+  "label": "cor:mod-Ksplit",
+  "env": "cor",
+  "file": "sections/s06_model_6.tex",
+  "line": 62,
+  "stmt_refs": [],
+  "proof_refs": [
+   "prop:mod-dii",
+   "def:tra-tower",
+   "cor:mod-split",
+   "thm:mod-lattice"
+  ],
+  "labels": [
+   "cor:mod-Ksplit"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_6.tex:67"
+ },
+ {
+  "label": "lem:mod-abdks",
+  "env": "lem",
+  "file": "sections/s06_model_7.tex",
+  "line": 22,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:mod-abdks",
+   "conv:mod-kernel"
+  ],
+  "labels": [
+   "lem:mod-abdks"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_7.tex:30"
+ },
+ {
+  "label": "thm:mod-Lreg",
+  "env": "thm",
+  "file": "sections/s06_model_7.tex",
+  "line": 38,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:mod-abdks",
+   "lem:mod-abdks",
+   "lem:mod-xfun"
+  ],
+  "labels": [
+   "thm:mod-Lreg"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_7.tex:43"
+ },
+ {
+  "label": "prop:mod-period",
+  "env": "prop",
+  "file": "sections/s06_model_7.tex",
+  "line": 50,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:mod-710",
+   "def:mod-xi",
+   "def:mod-pair",
+   "thm:mod-Lreg",
+   "lem:mod-scale"
+  ],
+  "labels": [
+   "prop:mod-period"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_7.tex:60"
+ },
+ {
+  "label": "thm:mod-gap",
+  "env": "thm",
+  "file": "sections/s06_model_7.tex",
+  "line": 76,
+  "stmt_refs": [
+   "conv:mod-kernel"
+  ],
+  "proof_refs": [
+   "prop:mod-period",
+   "cor:mod-trF"
+  ],
+  "labels": [
+   "thm:mod-gap"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_7.tex:81"
+ },
+ {
+  "label": "rmk:mod-hock",
+  "env": "rmk",
+  "file": "sections/s06_model_7.tex",
+  "line": 85,
+  "stmt_refs": [
+   "conv:mod-kernel"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:mod-hock"
+  ]
+ },
+ {
+  "label": "lem:mod-fixedx",
+  "env": "lem",
+  "file": "sections/s06_model_8.tex",
+  "line": 7,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:mod-fixedx"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_8.tex:12"
+ },
+ {
+  "label": "lem:mod-ibp",
+  "env": "lem",
+  "file": "sections/s06_model_8.tex",
+  "line": 16,
+  "stmt_refs": [],
+  "proof_refs": [
+   "def:mod-pair"
+  ],
+  "labels": [
+   "lem:mod-ibp"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_8.tex:25"
+ },
+ {
+  "label": "thm:mod-var",
+  "env": "thm",
+  "file": "sections/s06_model_8.tex",
+  "line": 29,
+  "stmt_refs": [],
+  "proof_refs": [
+   "conv:mod-kernel",
+   "lem:mod-fixedx"
+  ],
+  "labels": [
+   "thm:mod-var"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_8.tex:38"
+ },
+ {
+  "label": "lem:mod-genus0",
+  "env": "lem",
+  "file": "sections/s06_model_8.tex",
+  "line": 42,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:mod-fixedx"
+  ],
+  "labels": [
+   "lem:mod-genus0"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_8.tex:60"
+ },
+ {
+  "label": "prop:mod-V1",
+  "env": "prop",
+  "file": "sections/s06_model_8.tex",
+  "line": 71,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:mod-fixedx",
+   "thm:mod-var",
+   "lem:mod-ibp",
+   "eq:mod-V1"
+  ],
+  "labels": [
+   "prop:mod-V1",
+   "eq:mod-V1"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_8.tex:84"
+ },
+ {
+  "label": "lem:mod-w11",
+  "env": "lem",
+  "file": "sections/s06_model_9.tex",
+  "line": 8,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:mod-kernel",
+   "eq:mod-kernel"
+  ],
+  "labels": [
+   "lem:mod-w11"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_9.tex:17"
+ },
+ {
+  "label": "thm:mod-V",
+  "env": "thm",
+  "file": "sections/s06_model_9.tex",
+  "line": 30,
+  "stmt_refs": [
+   "thm:mod-gap",
+   "eq:mod-V1"
+  ],
+  "proof_refs": [
+   "prop:mod-V1",
+   "thm:mod-Lreg",
+   "lem:mod-genus0",
+   "eq:mod-V1",
+   "eq:mod-V1",
+   "prop:mod-period",
+   "thm:mod-gap",
+   "lem:mod-genus0",
+   "lem:mod-scale",
+   "eq:mod-loc",
+   "lem:mod-w11"
+  ],
+  "labels": [
+   "thm:mod-V"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_9.tex:40"
+ },
+ {
+  "label": "thm:mod-MLK",
+  "env": "thm",
+  "file": "sections/s06_model_10.tex",
+  "line": 7,
+  "stmt_refs": [],
+  "proof_refs": [
+   "thm:mod-gap",
+   "cor:mod-Ksplit",
+   "prop:mod-LD",
+   "thm:mod-lattice",
+   "lem:mod-classL",
+   "thm:mod-tr",
+   "lem:mod-xfun",
+   "thm:mod-Lreg",
+   "thm:mod-V",
+   "thm:mod-V"
+  ],
+  "labels": [
+   "thm:mod-MLK"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_10.tex:12"
+ },
+ {
+  "label": "cor:mod-onepoint",
+  "env": "cor",
+  "file": "sections/s06_model_10.tex",
+  "line": 26,
+  "stmt_refs": [],
+  "proof_refs": [
+   "thm:mod-MLK",
+   "lem:set-modhom"
+  ],
+  "labels": [
+   "cor:mod-onepoint"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s06_model_10.tex:31"
+ },
+ {
+  "label": "rmk:mod-offK",
+  "env": "rmk",
+  "file": "sections/s06_model_10.tex",
+  "line": 35,
+  "stmt_refs": [
+   "sec:evi-model"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:mod-offK"
+  ]
+ },
+ {
+  "label": "def:flh-outer",
+  "env": "defn",
+  "file": "sections/s07_comparison.tex",
+  "line": 15,
+  "stmt_refs": [
+   "lem:set-dilaton",
+   "def:set-graphsum",
+   "lem:set-dilaton",
+   "lem:tra-conv"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:flh-outer"
+  ]
+ },
+ {
+  "label": "lem:flh-frame",
+  "env": "lem",
+  "file": "sections/s07_comparison.tex",
+  "line": 40,
+  "stmt_refs": [
+   "def:flh-outer"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "lem:flh-frame"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s07_comparison.tex:48"
+ },
+ {
+  "label": "lem:flh-dil",
+  "env": "lem",
+  "file": "sections/s07_comparison.tex",
+  "line": 52,
+  "stmt_refs": [
+   "def:flh-outer",
+   "def:flh-outer"
+  ],
+  "proof_refs": [
+   "lem:set-dilaton"
+  ],
+  "labels": [
+   "lem:flh-dil"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s07_comparison.tex:61"
+ },
+ {
+  "label": "lem:flh-comm",
+  "env": "lem",
+  "file": "sections/s07_comparison.tex",
+  "line": 69,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:flh-comm"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s07_comparison.tex:77"
+ },
+ {
+  "label": "lem:flh-hat",
+  "env": "lem",
+  "file": "sections/s07_comparison_2.tex",
+  "line": 1,
+  "stmt_refs": [
+   "def:set-outer"
+  ],
+  "proof_refs": [
+   "lem:flh-comm"
+  ],
+  "labels": [
+   "lem:flh-hat"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s07_comparison_2.tex:11"
+ },
+ {
+  "label": "lem:flh-inputs",
+  "env": "lem",
+  "file": "sections/s07_comparison_2.tex",
+  "line": 30,
+  "stmt_refs": [
+   "thm:gau-R0",
+   "cor:gau-colours"
+  ],
+  "proof_refs": [
+   "prop:set-modrows",
+   "def:set-M0",
+   "lem:gau-colmod",
+   "def:set-tau",
+   "def:set-M0",
+   "def:set-M0",
+   "def:set-modcohft",
+   "lem:set-dilaton",
+   "thm:gau-R0",
+   "cor:gau-colours",
+   "prop:gau-symp",
+   "conv:tra-forms",
+   "def:flh-outer",
+   "def:tra-edge",
+   "def:gau-can",
+   "conv:tra-forms",
+   "lem:gau-diag",
+   "thm:gau-U",
+   "cor:gau-rowsNN",
+   "thm:gau-R0",
+   "cor:gau-rowsNN",
+   "def:set-frob",
+   "thm:gau-R0",
+   "prop:gau-symp",
+   "def:set-frob",
+   "def:set-modcohft"
+  ],
+  "labels": [
+   "lem:flh-inputs"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s07_comparison_2.tex:45"
+ },
+ {
+  "label": "thm:flh-main",
+  "env": "thm",
+  "file": "sections/s07_comparison_2.tex",
+  "line": 68,
+  "stmt_refs": [
+   "def:red-flatsum",
+   "def:set-outer"
+  ],
+  "proof_refs": [
+   "lem:flh-inputs",
+   "def:set-outer",
+   "lem:flh-inputs",
+   "lem:flh-inputs",
+   "lem:flh-inputs",
+   "lem:flh-inputs",
+   "lem:flh-comm",
+   "lem:flh-dil",
+   "lem:flh-frame",
+   "lem:flh-inputs",
+   "lem:flh-dil",
+   "def:tra-edge",
+   "def:red-flatsum",
+   "lem:tra-conv",
+   "lem:set-dilaton",
+   "lem:flh-hat"
+  ],
+  "labels": [
+   "thm:flh-main",
+   "eq:flh-main"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s07_comparison_2.tex:77"
+ },
+ {
+  "label": "rmk:flh-fail",
+  "env": "rmk",
+  "file": "sections/s07_comparison_2.tex",
+  "line": 98,
+  "stmt_refs": [
+   "lem:flh-inputs",
+   "prop:gau-symp",
+   "rmk:mai-stored",
+   "rmk:mai-graphlocal",
+   "cor:mai-gap"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:flh-fail"
+  ]
+ },
+ {
+  "label": "rmk:con-genus",
+  "env": "rmk",
+  "file": "sections/s08_connection.tex",
+  "line": 19,
+  "stmt_refs": [
+   "def:gau-Fg",
+   "lem:flh-inputs",
+   "def:set-rows",
+   "cor:gau-rowsNN",
+   "thm:gam-D"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:con-genus"
+  ]
+ },
+ {
+  "label": "def:gam-c",
+  "env": "defn",
+  "file": "sections/s08_connection_3.tex",
+  "line": 6,
+  "stmt_refs": [
+   "sec:gam",
+   "def:fsp-wick"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:gam-c"
+  ]
+ },
+ {
+  "label": "prop:gam-rational",
+  "env": "prop",
+  "file": "sections/s08_connection_3.tex",
+  "line": 44,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:fsp-univ",
+   "lem:fsp-const"
+  ],
+  "labels": [
+   "prop:gam-rational"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_3.tex:49"
+ },
+ {
+  "label": "lem:con-form",
+  "env": "lem",
+  "file": "sections/s08_connection_3.tex",
+  "line": 53,
+  "stmt_refs": [
+   "def:gam-c"
+  ],
+  "proof_refs": [
+   "def:fsp-stirling",
+   "def:set-tau",
+   "lem:fsp-univ",
+   "lem:fsp-const",
+   "lem:fsp-refl",
+   "prop:gam-rational"
+  ],
+  "labels": [
+   "lem:con-form"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_4.tex:3"
+ },
+ {
+  "label": "def:con-PhiSP",
+  "env": "defn",
+  "file": "sections/s08_connection_4.tex",
+  "line": 25,
+  "stmt_refs": [
+   "def:fsp-wick",
+   "lem:con-form",
+   "lem:fsp-univ"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:con-PhiSP"
+  ]
+ },
+ {
+  "label": "thm:con-Pa",
+  "env": "thm",
+  "file": "sections/s08_connection_4.tex",
+  "line": 47,
+  "stmt_refs": [
+   "def:gam-c",
+   "prop:gam-rational"
+  ],
+  "proof_refs": [
+   "def:gam-c",
+   "def:fsp-wick",
+   "lem:fsp-generic",
+   "eq:fsp-generic",
+   "eq:con-shiftD",
+   "lem:con-form",
+   "lem:fsp-transl",
+   "def:gam-c",
+   "eq:con-bz",
+   "lem:fsp-stirfe",
+   "def:gam-c",
+   "eq:con-bz",
+   "lem:fsp-transl",
+   "lem:fsp-univ",
+   "lem:fsp-cov",
+   "lem:con-form",
+   "lem:con-form",
+   "lem:fsp-homog",
+   "lem:fsp-const",
+   "lem:con-form",
+   "lem:fsp-univ",
+   "eq:con-chain",
+   "lem:gau-poly"
+  ],
+  "labels": [
+   "thm:con-Pa"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_4.tex:60"
+ },
+ {
+  "label": "lem:con-cfu",
+  "env": "lem",
+  "file": "sections/s08_connection_5.tex",
+  "line": 31,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:con-form"
+  ],
+  "labels": [
+   "lem:con-cfu"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_5.tex:40"
+ },
+ {
+  "label": "lem:con-red",
+  "env": "lem",
+  "file": "sections/s08_connection_5.tex",
+  "line": 44,
+  "stmt_refs": [
+   "lem:con-cfu"
+  ],
+  "proof_refs": [
+   "lem:con-cfu",
+   "def:set-model",
+   "lem:con-id"
+  ],
+  "labels": [
+   "lem:con-red"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_5.tex:57"
+ },
+ {
+  "label": "lem:con-S2",
+  "env": "lem",
+  "file": "sections/s08_connection_6.tex",
+  "line": 3,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:fsp-dq",
+   "lem:fsp-ibp",
+   "prop:set-modrows",
+   "lem:fsp-cov",
+   "lem:fsp-homog",
+   "prop:set-modrows",
+   "prop:set-modrows"
+  ],
+  "labels": [
+   "lem:con-S2"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_6.tex:8"
+ },
+ {
+  "label": "lem:con-id",
+  "env": "lem",
+  "file": "sections/s08_connection_6.tex",
+  "line": 16,
+  "stmt_refs": [
+   "def:set-frames",
+   "lem:con-cfu",
+   "lem:con-red",
+   "def:gau-onepole",
+   "prop:gau-graded",
+   "thm:gau-R0"
+  ],
+  "proof_refs": [
+   "lem:fsp-cov",
+   "lem:fsp-homog",
+   "lem:con-S2",
+   "lem:con-cfu",
+   "lem:fsp-cfu",
+   "lem:con-red",
+   "lem:fsp-ibp",
+   "def:fsp-wick",
+   "def:con-PhiSP",
+   "prop:set-modrows",
+   "thm:gau-R0",
+   "def:set-tau",
+   "lem:con-red"
+  ],
+  "labels": [
+   "lem:con-id"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_6.tex:32"
+ },
+ {
+  "label": "lem:con-relab",
+  "env": "lem",
+  "file": "sections/s08_connection_6.tex",
+  "line": 44,
+  "stmt_refs": [
+   "lem:fsp-res"
+  ],
+  "proof_refs": [
+   "lem:con-form",
+   "def:con-PhiSP"
+  ],
+  "labels": [
+   "lem:con-relab"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_6.tex:49"
+ },
+ {
+  "label": "lem:con-key",
+  "env": "lem",
+  "file": "sections/s08_connection_7.tex",
+  "line": 3,
+  "stmt_refs": [
+   "def:gau-van",
+   "def:set-tau"
+  ],
+  "proof_refs": [
+   "lem:con-red"
+  ],
+  "labels": [
+   "lem:con-key"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_7.tex:12"
+ },
+ {
+  "label": "prop:con-res",
+  "env": "prop",
+  "file": "sections/s08_connection_7.tex",
+  "line": 16,
+  "stmt_refs": [
+   "lem:con-id"
+  ],
+  "proof_refs": [
+   "lem:con-relab",
+   "lem:fsp-res",
+   "lem:con-red",
+   "lem:con-relab",
+   "lem:con-relab",
+   "lem:con-key",
+   "lem:con-id",
+   "def:gau-van",
+   "def:con-PhiSP"
+  ],
+  "labels": [
+   "prop:con-res"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_7.tex:24"
+ },
+ {
+  "label": "thm:con-Pb",
+  "env": "thm",
+  "file": "sections/s08_connection_7.tex",
+  "line": 36,
+  "stmt_refs": [
+   "def:set-frames"
+  ],
+  "proof_refs": [
+   "lem:con-cfu",
+   "lem:con-red",
+   "lem:fsp-cfu",
+   "lem:fsp-ibp",
+   "lem:fsp-res",
+   "lem:con-S2",
+   "lem:con-id",
+   "thm:con-Pa",
+   "thm:gau-R0",
+   "cor:gau-cycsys",
+   "lem:gau-poly",
+   "thm:gau-U",
+   "prop:gau-graded",
+   "thm:gau-G",
+   "prop:con-res",
+   "def:con-PhiSP",
+   "lem:gau-vanq"
+  ],
+  "labels": [
+   "thm:con-Pb"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_7.tex:43"
+ },
+ {
+  "label": "thm:con-glue",
+  "env": "thm",
+  "file": "sections/s08_connection_8.tex",
+  "line": 8,
+  "stmt_refs": [
+   "thm:con-Pb"
+  ],
+  "proof_refs": [
+   "thm:gau-R0",
+   "lem:gau-wkb",
+   "thm:gau-R0",
+   "thm:set-qrr",
+   "eq:set-qrr",
+   "thm:con-Pb",
+   "thm:set-mirror",
+   "thm:set-G0",
+   "cor:set-cyclicPF5",
+   "thm:gau-R0"
+  ],
+  "labels": [
+   "thm:con-glue",
+   "eq:con-glue"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_8.tex:18"
+ },
+ {
+  "label": "cor:con-A2",
+  "env": "cor",
+  "file": "sections/s08_connection_8.tex",
+  "line": 22,
+  "stmt_refs": [
+   "thm:con-Pa",
+   "cor:gam-equiv"
+  ],
+  "proof_refs": [
+   "cor:gau-colours",
+   "eq:con-glue",
+   "thm:con-Pb",
+   "thm:con-Pa"
+  ],
+  "labels": [
+   "cor:con-A2"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s08_connection_8.tex:27"
+ },
+ {
+  "label": "lem:gam-deltasrc",
+  "env": "lem",
+  "file": "sections/s09_gamma.tex",
+  "line": 19,
+  "stmt_refs": [],
+  "proof_refs": [
+   "def:fsp-wick",
+   "eq:gam-deltasrc",
+   "lem:fsp-ring"
+  ],
+  "labels": [
+   "lem:gam-deltasrc",
+   "eq:gam-deltasrc"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma.tex:29"
+ },
+ {
+  "label": "def:gam-lmidata",
+  "env": "defn",
+  "file": "sections/s09_gamma.tex",
+  "line": 37,
+  "stmt_refs": [
+   "lem:fsp-stirling",
+   "lem:fsp-stirfe"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:gam-lmidata"
+  ]
+ },
+ {
+  "label": "thm:gam-lmi",
+  "env": "thm",
+  "file": "sections/s09_gamma_2.tex",
+  "line": 3,
+  "stmt_refs": [
+   "def:gam-lmidata"
+  ],
+  "proof_refs": [
+   "lem:fsp-univ",
+   "sec:fsp",
+   "lem:fsp-fubini",
+   "lem:fsp-fubini",
+   "lem:fsp-cov",
+   "lem:fsp-stirling",
+   "def:fsp-wick",
+   "lem:fsp-fubini",
+   "lem:fsp-cov",
+   "lem:fsp-const",
+   "eq:gam-step1",
+   "lem:fsp-univ",
+   "eq:gam-chart",
+   "lem:fsp-param",
+   "eq:gam-chart",
+   "lem:fsp-const",
+   "lem:gam-deltasrc",
+   "eq:gam-atQ0",
+   "eq:gam-lmi"
+  ],
+  "labels": [
+   "thm:gam-lmi",
+   "eq:gam-lmi"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma_2.tex:20"
+ },
+ {
+  "label": "thm:gam-main",
+  "env": "thm",
+  "file": "sections/s09_gamma_3.tex",
+  "line": 12,
+  "stmt_refs": [
+   "def:gam-c",
+   "thm:gam-ginf",
+   "cor:gam-poly"
+  ],
+  "proof_refs": [
+   "prop:gam-rational",
+   "thm:gam-ginf",
+   "cor:gam-poly",
+   "thm:gam-lmi",
+   "lem:fsp-dlmf5118",
+   "cor:gam-poly",
+   "thm:con-Pa",
+   "thm:gam-lmi",
+   "def:gam-lmidata",
+   "def:gam-c",
+   "thm:gam-lmi",
+   "eq:gam-lmi",
+   "def:gam-c",
+   "lem:fsp-cov",
+   "lem:fsp-homog",
+   "lem:set-hrot"
+  ],
+  "labels": [
+   "thm:gam-main",
+   "eq:gam-Gamma"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma_3.tex:34"
+ },
+ {
+  "label": "prop:gam-hatflat",
+  "env": "prop",
+  "file": "sections/s09_gamma_3.tex",
+  "line": 52,
+  "stmt_refs": [],
+  "proof_refs": [
+   "thm:con-Pa",
+   "thm:gam-main",
+   "thm:con-Pa",
+   "thm:gam-main"
+  ],
+  "labels": [
+   "prop:gam-hatflat"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma_3.tex:60"
+ },
+ {
+  "label": "cor:gam-equiv",
+  "env": "cor",
+  "file": "sections/s09_gamma_3.tex",
+  "line": 64,
+  "stmt_refs": [
+   "eq:gam-Gamma",
+   "cor:con-A2",
+   "eq:gam-Gamma"
+  ],
+  "proof_refs": [
+   "thm:con-Pa",
+   "thm:gam-main",
+   "eq:gam-Gamma",
+   "cor:con-A2"
+  ],
+  "labels": [
+   "cor:gam-equiv"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma_3.tex:69"
+ },
+ {
+  "label": "thm:gam-D",
+  "env": "thm",
+  "file": "sections/s09_gamma_3.tex",
+  "line": 73,
+  "stmt_refs": [
+   "def:set-frames"
+  ],
+  "proof_refs": [
+   "thm:con-glue",
+   "thm:con-Pb",
+   "def:con-PhiSP",
+   "prop:gam-hatflat",
+   "thm:gam-main",
+   "cor:gau-colours",
+   "def:gau-Fg"
+  ],
+  "labels": [
+   "thm:gam-D"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma_3.tex:78"
+ },
+ {
+  "label": "thm:gam-ginf",
+  "env": "thm",
+  "file": "sections/s09_gamma_4.tex",
+  "line": 3,
+  "stmt_refs": [],
+  "proof_refs": [
+   "thm:gam-lmi",
+   "def:gam-lmidata",
+   "def:gam-c",
+   "thm:gam-lmi",
+   "thm:gam-main",
+   "eq:gam-lmi",
+   "lem:fsp-dlmf5118",
+   "def:fsp-stirling",
+   "eq:gam-ginf"
+  ],
+  "labels": [
+   "thm:gam-ginf",
+   "eq:gam-ginf"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma_4.tex:14"
+ },
+ {
+  "label": "cor:gam-poly",
+  "env": "cor",
+  "file": "sections/s09_gamma_4.tex",
+  "line": 41,
+  "stmt_refs": [],
+  "proof_refs": [
+   "thm:gam-main",
+   "thm:gam-ginf",
+   "prop:gam-hatflat",
+   "thm:con-Pa"
+  ],
+  "labels": [
+   "cor:gam-poly"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma_4.tex:50"
+ },
+ {
+  "label": "cor:gam-free",
+  "env": "cor",
+  "file": "sections/s09_gamma_4.tex",
+  "line": 54,
+  "stmt_refs": [
+   "lem:gau-HPF",
+   "thm:gam-D"
+  ],
+  "proof_refs": [
+   "cor:gam-poly",
+   "thm:gam-ginf",
+   "thm:con-Pb",
+   "thm:gam-D",
+   "thm:gau-R0",
+   "thm:gam-D",
+   "eq:gam-ginf"
+  ],
+  "labels": [
+   "cor:gam-free"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s09_gamma_4.tex:63"
+ },
+ {
+  "label": "rmk:gam-prior",
+  "env": "rmk",
+  "file": "sections/s09_gamma_4.tex",
+  "line": 70,
+  "stmt_refs": [
+   "thm:gam-ginf",
+   "eq:gam-Gamma"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:gam-prior"
+  ]
+ },
+ {
+  "label": "thm:mai-main",
+  "env": "thm",
+  "file": "sections/s10_main.tex",
+  "line": 9,
+  "stmt_refs": [
+   "def:set-frames",
+   "def:set-rows",
+   "def:set-confexp",
+   "def:set-frob",
+   "def:set-outer",
+   "eq:set-cg",
+   "lem:flh-hat"
+  ],
+  "proof_refs": [
+   "thm:gam-D",
+   "def:gau-Fg",
+   "thm:flh-main",
+   "def:red-flatsum",
+   "thm:mod-MLK",
+   "cor:red-can",
+   "prop:tra-can",
+   "lem:flh-hat",
+   "thm:gam-D",
+   "thm:con-glue",
+   "thm:con-Pa",
+   "thm:con-Pb",
+   "thm:gam-main",
+   "prop:gam-hatflat",
+   "cor:gau-colours",
+   "thm:flh-main",
+   "thm:gau-R0",
+   "cor:gau-colours",
+   "prop:gau-symp",
+   "lem:set-M0sympl",
+   "prop:tra-can",
+   "thm:gau-U",
+   "thm:gau-G",
+   "prop:gau-symp",
+   "sec:tra",
+   "prop:gau-quintic",
+   "prop:set-cyclicLR",
+   "thm:gau-cyc"
+  ],
+  "labels": [
+   "thm:mai-main"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s10_main.tex:25"
+ },
+ {
+  "label": "lem:mai-Psi",
+  "env": "lem",
+  "file": "sections/s10_main.tex",
+  "line": 37,
+  "stmt_refs": [],
+  "proof_refs": [
+   "def:set-frob",
+   "def:set-rows",
+   "prop:set-cyclicLR",
+   "prop:set-cyclicLR",
+   "cor:gau-rowsNN",
+   "lem:gau-confexp",
+   "def:set-frames",
+   "def:set-M0"
+  ],
+  "labels": [
+   "lem:mai-Psi"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s10_main.tex:53"
+ },
+ {
+  "label": "def:mai-Fcf",
+  "env": "defn",
+  "file": "sections/s10_main.tex",
+  "line": 61,
+  "stmt_refs": [
+   "cor:gau-rowsNN",
+   "lem:mai-Psi"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:mai-Fcf"
+  ]
+ },
+ {
+  "label": "cor:mai-gap",
+  "env": "cor",
+  "file": "sections/s10_main_2.tex",
+  "line": 1,
+  "stmt_refs": [
+   "def:set-frames"
+  ],
+  "proof_refs": [
+   "lem:gau-confexp",
+   "def:mai-Fcf",
+   "thm:gam-D",
+   "lem:flh-inputs",
+   "lem:set-M0sympl",
+   "lem:mai-Psi",
+   "lem:set-pushins",
+   "lem:set-M0sympl",
+   "def:set-outer",
+   "def:set-graphsum",
+   "lem:set-pushins",
+   "def:flh-outer",
+   "lem:mai-Psi",
+   "lem:flh-inputs",
+   "lem:flh-frame",
+   "def:set-outer",
+   "thm:mai-main"
+  ],
+  "labels": [
+   "cor:mai-gap"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s10_main_2.tex:10"
+ },
+ {
+  "label": "rmk:mai-constant",
+  "env": "rmk",
+  "file": "sections/s10_main_2.tex",
+  "line": 38,
+  "stmt_refs": [
+   "rmk:set-cg",
+   "sec:sgn-lit"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:mai-constant"
+  ]
+ },
+ {
+  "label": "rmk:mai-graphlocal",
+  "env": "rmk",
+  "file": "sections/s10_main_2.tex",
+  "line": 44,
+  "stmt_refs": [
+   "rmk:mai-stored",
+   "sec:evi",
+   "thm:gau-G"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:mai-graphlocal"
+  ]
+ },
+ {
+  "label": "rmk:mai-necessity",
+  "env": "rmk",
+  "file": "sections/s10_main_2.tex",
+  "line": 49,
+  "stmt_refs": [
+   "sec:evi",
+   "rmk:mai-stored",
+   "thm:red-main",
+   "def:tra-edge",
+   "rmk:mai-annih"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:mai-necessity"
+  ]
+ },
+ {
+  "label": "lem:mai-Ghat",
+  "env": "lem",
+  "file": "sections/s10_main_3.tex",
+  "line": 12,
+  "stmt_refs": [
+   "thm:gau-U",
+   "prop:gau-graded",
+   "def:gau-can"
+  ],
+  "proof_refs": [
+   "def:set-tau"
+  ],
+  "labels": [
+   "lem:mai-Ghat"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s10_main_3.tex:21"
+ },
+ {
+  "label": "cor:mai-natfact",
+  "env": "cor",
+  "file": "sections/s10_main_3.tex",
+  "line": 25,
+  "stmt_refs": [
+   "def:set-frames",
+   "lem:mai-Ghat"
+  ],
+  "proof_refs": [
+   "thm:gau-R0",
+   "cor:gau-colours",
+   "prop:set-modrows",
+   "def:set-tau",
+   "lem:set-canon",
+   "lem:flh-inputs",
+   "lem:mai-Ghat",
+   "prop:set-modrows",
+   "lem:mai-Psi",
+   "lem:mai-Ghat",
+   "lem:gau-R1",
+   "def:set-M0",
+   "thm:gau-U",
+   "lem:flh-inputs",
+   "lem:set-M0sympl",
+   "lem:mai-Psi",
+   "lem:set-M0sympl"
+  ],
+  "labels": [
+   "cor:mai-natfact"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s10_main_3.tex:39"
+ },
+ {
+  "label": "cor:mai-actual",
+  "env": "cor",
+  "file": "sections/s10_main_3.tex",
+  "line": 49,
+  "stmt_refs": [
+   "thm:gau-R0"
+  ],
+  "proof_refs": [
+   "lem:flh-inputs",
+   "thm:gau-R0",
+   "cor:gau-colours",
+   "thm:gam-D",
+   "def:gau-can",
+   "thm:gau-G"
+  ],
+  "labels": [
+   "cor:mai-actual"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s10_main_3.tex:54"
+ },
+ {
+  "label": "lem:mai-pole",
+  "env": "lem",
+  "file": "sections/s10_main_4.tex",
+  "line": 6,
+  "stmt_refs": [],
+  "proof_refs": [
+   "prop:gau-equalprod"
+  ],
+  "labels": [
+   "lem:mai-pole"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s10_main_4.tex:15"
+ },
+ {
+  "label": "cor:mai-univ",
+  "env": "cor",
+  "file": "sections/s10_main_4.tex",
+  "line": 19,
+  "stmt_refs": [
+   "def:gau-onepole",
+   "def:gau-can",
+   "thm:gau-U",
+   "prop:gau-graded"
+  ],
+  "proof_refs": [
+   "lem:gau-R1",
+   "prop:gau-symp",
+   "lem:gau-R1",
+   "thm:gau-G",
+   "lem:gau-vanmod",
+   "lem:gau-uniq",
+   "thm:gau-G",
+   "lem:gau-vanq",
+   "lem:gau-vanq",
+   "thm:gau-U",
+   "prop:gau-graded",
+   "def:tra-dressing",
+   "thm:red-main",
+   "thm:mod-MLK"
+  ],
+  "labels": [
+   "cor:mai-univ"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/s10_main_4.tex:30"
+ },
+ {
+  "label": "rmk:mai-annih",
+  "env": "rmk",
+  "file": "sections/s10_main_4.tex",
+  "line": 34,
+  "stmt_refs": [
+   "thm:red-main",
+   "thm:mod-MLK",
+   "def:tra-dressing",
+   "lem:flh-inputs"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:mai-annih"
+  ]
+ },
+ {
+  "label": "rmk:mai-stored",
+  "env": "rmk",
+  "file": "sections/s10_main_4.tex",
+  "line": 39,
+  "stmt_refs": [
+   "sec:sgn-norm",
+   "thm:gau-U",
+   "prop:gau-symp",
+   "thm:gau-G",
+   "thm:gau-G",
+   "thm:gau-U"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "rmk:mai-stored"
+  ]
+ },
+ {
+  "label": "lem:set-grading",
+  "env": "lem",
+  "file": "sections/a1_cyclicLR.tex",
+  "line": 7,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:set-grading"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a1_cyclicLR.tex:12"
+ },
+ {
+  "label": "lem:set-unitfrob",
+  "env": "lem",
+  "file": "sections/a1_cyclicLR.tex",
+  "line": 20,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:set-unitfrob"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a1_cyclicLR.tex:25"
+ },
+ {
+  "label": "lem:set-periods",
+  "env": "lem",
+  "file": "sections/a1_cyclicLR.tex",
+  "line": 29,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:set-pf5",
+   "eq:set-PF4"
+  ],
+  "labels": [
+   "lem:set-periods"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a1_cyclicLR.tex:42"
+ },
+ {
+  "label": "lem:set-birkhoff",
+  "env": "lem",
+  "file": "sections/a1_cyclicLR.tex",
+  "line": 54,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:set-periods",
+   "lem:set-grading",
+   "lem:set-grading",
+   "lem:set-unitfrob"
+  ],
+  "labels": [
+   "lem:set-birkhoff"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a1_cyclicLR.tex:63"
+ },
+ {
+  "label": "lem:set-wronskian",
+  "env": "lem",
+  "file": "sections/a1_cyclicLR.tex",
+  "line": 67,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:set-PF4",
+   "lem:set-periods",
+   "lem:set-periods"
+  ],
+  "labels": [
+   "lem:set-wronskian"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a1_cyclicLR.tex:72"
+ },
+ {
+  "label": "lem:set-order3",
+  "env": "lem",
+  "file": "sections/a1_cyclicLR.tex",
+  "line": 76,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:set-periods"
+  ],
+  "labels": [
+   "lem:set-order3"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a1_cyclicLR.tex:81"
+ },
+ {
+  "label": "lem:gau-const",
+  "env": "lem",
+  "file": "sections/a2_cyclicPF4.tex",
+  "line": 7,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:gau-const"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:12"
+ },
+ {
+  "label": "lem:gau-adj",
+  "env": "lem",
+  "file": "sections/a2_cyclicPF4.tex",
+  "line": 16,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:gau-adj"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:21"
+ },
+ {
+  "label": "lem:gau-conc",
+  "env": "lem",
+  "file": "sections/a2_cyclicPF4.tex",
+  "line": 25,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:gau-adj",
+   "lem:gau-const",
+   "lem:gau-adj",
+   "lem:gau-const"
+  ],
+  "labels": [
+   "lem:gau-conc"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:43"
+ },
+ {
+  "label": "lem:gau-transv",
+  "env": "lem",
+  "file": "sections/a2_cyclicPF4.tex",
+  "line": 58,
+  "stmt_refs": [
+   "def:gau-conc"
+  ],
+  "proof_refs": [
+   "lem:gau-conc"
+  ],
+  "labels": [
+   "lem:gau-transv"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:67"
+ },
+ {
+  "label": "lem:gau-iso",
+  "env": "lem",
+  "file": "sections/a2_cyclicPF4.tex",
+  "line": 71,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:gau-conc"
+  ],
+  "labels": [
+   "lem:gau-iso"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:80"
+ },
+ {
+  "label": "lem:gau-sg",
+  "env": "lem",
+  "file": "sections/a2_cyclicPF4.tex",
+  "line": 84,
+  "stmt_refs": [
+   "lem:gau-iso"
+  ],
+  "proof_refs": [
+   "lem:gau-transv",
+   "lem:gau-conc"
+  ],
+  "labels": [
+   "lem:gau-sg"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a2_cyclicPF4.tex:97"
+ },
+ {
+  "label": "lem:tra-conv",
+  "env": "lem",
+  "file": "sections/a3_uconv.tex",
+  "line": 8,
+  "stmt_refs": [
+   "def:set-modcohft",
+   "lem:tra-frames",
+   "lem:tra-twoslot",
+   "lem:tra-frames",
+   "cor:tra-slice",
+   "cor:tra-slice",
+   "lem:tra-twoslot",
+   "lem:tra-twoslot",
+   "lem:gau-vanshape",
+   "lem:tra-E",
+   "cor:tra-slice",
+   "def:red-ML",
+   "lem:set-modhom",
+   "lem:set-dilaton",
+   "lem:tra-T",
+   "lem:gau-diag",
+   "prop:tra-can"
+  ],
+  "proof_refs": [
+   "lem:gau-vanshape",
+   "def:gau-van",
+   "lem:gau-vanmod",
+   "conv:tra-forms",
+   "lem:tra-frames",
+   "lem:tra-twoslot",
+   "lem:tra-frames",
+   "lem:set-modhom",
+   "lem:tra-sum",
+   "lem:tra-frames",
+   "cor:tra-slice",
+   "lem:tra-twoslot",
+   "lem:tra-sum",
+   "lem:set-modhom",
+   "lem:set-dilaton",
+   "lem:set-modhom",
+   "lem:set-dilaton",
+   "lem:set-dilaton"
+  ],
+  "labels": [
+   "lem:tra-conv"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a3_uconv.tex:38"
+ },
+ {
+  "label": "def:fsp-ring",
+  "env": "defn",
+  "file": "sections/a_formalsp.tex",
+  "line": 12,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "def:fsp-ring"
+  ]
+ },
+ {
+  "label": "lem:fsp-ring",
+  "env": "lem",
+  "file": "sections/a_formalsp.tex",
+  "line": 19,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:fsp-ring"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp.tex:32"
+ },
+ {
+  "label": "def:fsp-wick",
+  "env": "defn",
+  "file": "sections/a_formalsp.tex",
+  "line": 36,
+  "stmt_refs": [
+   "lem:fsp-ring",
+   "sec:con"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "def:fsp-wick"
+  ]
+ },
+ {
+  "label": "lem:fsp-univ",
+  "env": "lem",
+  "file": "sections/a_formalsp_2.tex",
+  "line": 4,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:fsp-ring"
+  ],
+  "labels": [
+   "lem:fsp-univ",
+   "eq:fsp-univ"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_2.tex:14"
+ },
+ {
+  "label": "lem:fsp-const",
+  "env": "lem",
+  "file": "sections/a_formalsp_2.tex",
+  "line": 18,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:fsp-univ"
+  ],
+  "labels": [
+   "lem:fsp-const"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_2.tex:23"
+ },
+ {
+  "label": "lem:fsp-homog",
+  "env": "lem",
+  "file": "sections/a_formalsp_2.tex",
+  "line": 27,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:fsp-homog"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_2.tex:35"
+ },
+ {
+  "label": "lem:fsp-ibp",
+  "env": "lem",
+  "file": "sections/a_formalsp_2.tex",
+  "line": 43,
+  "stmt_refs": [],
+  "proof_refs": [
+   "eq:fsp-gibp"
+  ],
+  "labels": [
+   "lem:fsp-ibp"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_2.tex:48"
+ },
+ {
+  "label": "lem:fsp-pg",
+  "env": "lem",
+  "file": "sections/a_formalsp_2.tex",
+  "line": 57,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:fsp-pg"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_2.tex:72"
+ },
+ {
+  "label": "lem:fsp-prod",
+  "env": "lem",
+  "file": "sections/a_formalsp_2.tex",
+  "line": 81,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:fsp-prod"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_2.tex:90"
+ },
+ {
+  "label": "lem:fsp-ift",
+  "env": "lem",
+  "file": "sections/a_formalsp_2.tex",
+  "line": 94,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:fsp-ift"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_2.tex:99"
+ },
+ {
+  "label": "lem:fsp-transl",
+  "env": "lem",
+  "file": "sections/a_formalsp_3.tex",
+  "line": 4,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:fsp-univ",
+   "lem:fsp-ibp"
+  ],
+  "labels": [
+   "lem:fsp-transl"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_3.tex:9"
+ },
+ {
+  "label": "cor:fsp-movebase",
+  "env": "cor",
+  "file": "sections/a_formalsp_3.tex",
+  "line": 13,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:fsp-ift",
+   "lem:fsp-transl",
+   "lem:fsp-pg"
+  ],
+  "labels": [
+   "cor:fsp-movebase"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_3.tex:22"
+ },
+ {
+  "label": "lem:fsp-param",
+  "env": "lem",
+  "file": "sections/a_formalsp_3.tex",
+  "line": 34,
+  "stmt_refs": [
+   "cor:fsp-movebase"
+  ],
+  "proof_refs": [
+   "eq:fsp-univ",
+   "lem:fsp-ift",
+   "lem:fsp-univ",
+   "lem:fsp-ift",
+   "lem:fsp-ift",
+   "cor:fsp-movebase"
+  ],
+  "labels": [
+   "lem:fsp-param"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_3.tex:45"
+ },
+ {
+  "label": "lem:fsp-dq",
+  "env": "lem",
+  "file": "sections/a_formalsp_3.tex",
+  "line": 49,
+  "stmt_refs": [
+   "cor:fsp-movebase"
+  ],
+  "proof_refs": [
+   "cor:fsp-movebase",
+   "cor:fsp-movebase",
+   "lem:fsp-param"
+  ],
+  "labels": [
+   "lem:fsp-dq"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_3.tex:58"
+ },
+ {
+  "label": "lem:fsp-generic",
+  "env": "lem",
+  "file": "sections/a_formalsp_3.tex",
+  "line": 62,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:fsp-ift",
+   "lem:fsp-univ",
+   "lem:fsp-const",
+   "cor:fsp-movebase",
+   "lem:fsp-dq"
+  ],
+  "labels": [
+   "lem:fsp-generic",
+   "eq:fsp-generic"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_3.tex:81"
+ },
+ {
+  "label": "lem:fsp-piola",
+  "env": "lem",
+  "file": "sections/a_formalsp_4.tex",
+  "line": 8,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:fsp-piola"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_4.tex:13"
+ },
+ {
+  "label": "lem:fsp-cov",
+  "env": "lem",
+  "file": "sections/a_formalsp_4.tex",
+  "line": 17,
+  "stmt_refs": [
+   "lem:fsp-param"
+  ],
+  "proof_refs": [
+   "lem:fsp-ring",
+   "lem:fsp-univ",
+   "lem:fsp-piola",
+   "lem:fsp-ibp"
+  ],
+  "labels": [
+   "lem:fsp-cov"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_4.tex:26"
+ },
+ {
+  "label": "lem:fsp-cfu",
+  "env": "lem",
+  "file": "sections/a_formalsp_4.tex",
+  "line": 37,
+  "stmt_refs": [
+   "lem:fsp-cov"
+  ],
+  "proof_refs": [
+   "lem:fsp-cov"
+  ],
+  "labels": [
+   "lem:fsp-cfu"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_4.tex:46"
+ },
+ {
+  "label": "lem:fsp-fubini",
+  "env": "lem",
+  "file": "sections/a_formalsp_4.tex",
+  "line": 50,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:fsp-ift",
+   "lem:fsp-cov",
+   "lem:fsp-prod",
+   "lem:fsp-pg"
+  ],
+  "labels": [
+   "lem:fsp-fubini"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_4.tex:73"
+ },
+ {
+  "label": "def:fsp-stirling",
+  "env": "defn",
+  "file": "sections/a_formalsp_5.tex",
+  "line": 7,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "def:fsp-stirling"
+  ]
+ },
+ {
+  "label": "lem:fsp-stirfe",
+  "env": "lem",
+  "file": "sections/a_formalsp_5.tex",
+  "line": 16,
+  "stmt_refs": [
+   "def:fsp-stirling"
+  ],
+  "proof_refs": [],
+  "labels": [
+   "lem:fsp-stirfe"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_5.tex:21"
+ },
+ {
+  "label": "lem:fsp-stirling",
+  "env": "lem",
+  "file": "sections/a_formalsp_5.tex",
+  "line": 29,
+  "stmt_refs": [
+   "eq:fsp-stirling"
+  ],
+  "proof_refs": [
+   "eq:fsp-univ",
+   "lem:fsp-ibp",
+   "lem:fsp-param",
+   "lem:fsp-const",
+   "lem:fsp-param",
+   "lem:fsp-stirfe",
+   "eq:fsp-stirling",
+   "def:fsp-wick"
+  ],
+  "labels": [
+   "lem:fsp-stirling",
+   "eq:fsp-stirling"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_5.tex:46"
+ },
+ {
+  "label": "lem:fsp-dlmf5118",
+  "env": "lem",
+  "file": "sections/a_formalsp_5.tex",
+  "line": 58,
+  "stmt_refs": [],
+  "proof_refs": [
+   "lem:fsp-stirfe"
+  ],
+  "labels": [
+   "lem:fsp-dlmf5118",
+   "eq:fsp-5118"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_5.tex:68"
+ },
+ {
+  "label": "lem:fsp-refl",
+  "env": "lem",
+  "file": "sections/a_formalsp_5.tex",
+  "line": 72,
+  "stmt_refs": [
+   "lem:con-form"
+  ],
+  "proof_refs": [
+   "lem:fsp-stirfe"
+  ],
+  "labels": [
+   "lem:fsp-refl"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_5.tex:78"
+ },
+ {
+  "label": "lem:fsp-res",
+  "env": "lem",
+  "file": "sections/a_formalsp_5.tex",
+  "line": 86,
+  "stmt_refs": [],
+  "proof_refs": [],
+  "labels": [
+   "lem:fsp-res"
+  ],
+  "has_proof": true,
+  "proof_at": "sections/a_formalsp_5.tex:97"
+ }
+]

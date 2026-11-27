@@ -1,0 +1,12 @@
+log: logs/lf_dlmf_60_80.log   (python 3.14.6)
+PASS  D1 DLMF 5.11.1 at w + h re-expanded = DLMF 5.11.8, as polynomials in h, through x^60
+D1 x^1: [Fraction(1, 12), Fraction(-1, 2), Fraction(1, 2)] ; x^2: [Fraction(0, 1), Fraction(-1, 12), Fraction(1, 4), Fraction(-1, 6)]  (coefficients of h^0, h^1, ...)
+PASS  control: D1 sign (-1)^(k+1) in 5.11.8 -- identity FAILS as expected
+PASS  control: D1 (h + 1/2) for (h - 1/2) -- identity FAILS as expected
+PASS  D2 B_k(h + 1) - B_k(h) = k h^(k-1), k <= 61
+PASS  D3 LMI value at s* = 0 (delta = -z/5) = Ginf, through z^80
+PASS  control: D3 delta = +z/5 -- identity FAILS as expected  [first diff z^5]
+PASS  control: D3 no shift (M0 = 0) -- identity FAILS as expected  [first diff z^5]
+D3 [z^5], [z^10], [z^15] of Ginf: 4537/3937500, -177640111151/31007812500000, -284328315069009259339/6226756347656250000000
+checks: 7 passed, 0 failed; 0.4 s
+ALL CHECKS PASSED

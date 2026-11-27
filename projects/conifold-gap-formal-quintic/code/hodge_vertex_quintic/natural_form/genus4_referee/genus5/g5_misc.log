@@ -1,0 +1,6 @@
+====================================================================================================
+g5_misc, python 3.14.6
+1. PASS genus-5 set-up at 2^61-1: 4.3 s, all asserts of Split.__init__ passed, frozen_ok = True, valuations of E_out: [1]
+2. PASS collect step at genus 5: tc_expansion3 with K = 8 returns (c, 0, .., 0) for the synthetic total c t_c^-8 (8 coefficients returned)
+3. PASS original fq3_graphs._graph_dict (autos_of) on all 4555 genus-5 graphs: 11 s, slowest 0.1 s at (E, V) = (12, 8); |Aut| equal to the fast values (0 mismatches)
+4. PASS contraction classes of the 3302 subsets of inner graph 4484 (E = 12, V = 8): original canon 0.4 s, canon_fast 0.10 s, 483 outer graphs, same classes

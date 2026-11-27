@@ -1,0 +1,24 @@
+s15_run_all started 2026-11-14T10:52:47
+108 s  rc=0  s15_flat.py 89 3 3 -
+187 s  rc=0  s15_hat.py 89 6 34 M0
+188 s  rc=0  s15_hat.py 89 6 34 nat
+190 s  rc=0  s15_hat.py 89 8 44 nat
+90 s  rc=0  s15_flat.py 89 3 3 nodil
+5 s  rc=0  s15_flat.py 89 2 1
+43 s  rc=0  s15_flat.py 89 3 3 noT
+89 s  rc=0  s15_flat.py 89 3 3 nosign
+89 s  rc=0  s15_flat.py 89 3 3 stored
+93 s  rc=0  s15_flat.py 61 3 3 -
+172 s  rc=0  s15_hat.py 61 8 44 nat
+169 s  rc=0  s15_hat.py 61 6 34 nat
+43 s  rc=0  s15_flat.py 61 3 3 noT
+171 s  rc=0  s15_hat.py 61 6 34 M0
+4 s  rc=0  s15_flat.py 61 2 1
+90 s  rc=0  s15_flat.py 61 3 3 nodil
+93 s  rc=0  s15_flat.py 61 3 3 nosign
+94 s  rc=0  s15_flat.py 61 3 3 stored
+95 s  rc=0  s15_flat.py 89 3 3 - all 1/3,-2/7
+90 s  rc=0  s15_flat.py 89 3 3 nodil all 1/3,-2/7
+171 s  rc=0  s15_hat.py 89 8 44 nat 1/3,-2/7
+167 s  rc=0  s15_hat.py 89 6 34 M0 1/3,-2/7
+s15_run_all finished 2026-11-14T11:03:18

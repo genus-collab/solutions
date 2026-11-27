@@ -1,0 +1,32 @@
+genus 1:
+   <t0(H1)>_1: e = -1  value -1/12                        PiC 1          PiC F_h' -1/12                        remainder 0                        dW-pred -1/12
+   <t1(H0)>_1: e =  0  value 5/24                         PiC -1         PiC F_h' 1/12                         remainder 1/8                      dW-pred 1/12
+genus 2:
+   <t0(H1)>_2: e = -3  value -1/600                       PiC 1          PiC F_h' -1/600                       remainder 0                        dW-pred -1/600
+   <t1(H0)>_2: e = -2  value 1/600                        PiC -1         PiC F_h' 1/600                        remainder 0                        dW-pred 1/600
+   <t2(H4)>_2: e = -1  value 1/1200                       PiC -1/2       PiC F_h' 1/1200                       remainder 0                        dW-pred 0
+   <t3(H3)>_2: e =  0  value 7/5760                       PiC -1/6       PiC F_h' 1/3600                       remainder 3/3200                   dW-pred 0
+   <t4(H2)>_2: e =  1  value -5/1152                      PiC 1/24       PiC F_h' -1/14400                     remainder -41/9600                 dW-pred 0
+genus 3:
+   <t0(H1)>_3: e = -5  value -1/6300                      PiC 1          PiC F_h' -1/6300                      remainder 0                        dW-pred -1/6300
+   <t1(H0)>_3: e = -4  value 1/6300                       PiC -1         PiC F_h' 1/6300                       remainder 0                        dW-pred 1/6300
+   <t2(H4)>_3: e = -3  value 1/12600                      PiC -1/2       PiC F_h' 1/12600                      remainder 0                        dW-pred 0
+   <t3(H3)>_3: e = -2  value 1/37800                      PiC -1/6       PiC F_h' 1/37800                      remainder 0                        dW-pred 0
+   <t4(H2)>_3: e = -1  value -1/151200                    PiC 1/24       PiC F_h' -1/151200                    remainder 0                        dW-pred 0
+   <t5(H1)>_3: e = -1  value 53/1209600                   PiC 1/96       PiC F_h' -1/604800                    remainder 11/241920                dW-pred 0
+   <t6(H0)>_3: e =  0  value -1/46080                     PiC -1/480     PiC F_h' 1/3024000                    remainder -533/24192000            dW-pred 0
+   <t7(H4)>_3: e =  1  value 5/82944                      PiC -1/2880    PiC F_h' 1/18144000                   remainder 1457/24192000            dW-pred 0
+genus 4:
+   <t0(H1)>_4: e = -7  value -1/30000                     PiC 1          PiC F_h' -1/30000                     remainder 0                        dW-pred -1/30000
+   <t1(H0)>_4: e = -6  value 1/30000                      PiC -1         PiC F_h' 1/30000                      remainder 0                        dW-pred 1/30000
+   <t2(H4)>_4: e = -5  value 1/60000                      PiC -1/2       PiC F_h' 1/60000                      remainder 0                        dW-pred 0
+   <t3(H3)>_4: e = -4  value 1/180000                     PiC -1/6       PiC F_h' 1/180000                     remainder 0                        dW-pred 0
+   <t4(H2)>_4: e = -3  value -1/720000                    PiC 1/24       PiC F_h' -1/720000                    remainder 0                        dW-pred 0
+   <t5(H1)>_4: e = -3  value -1/6300000                   PiC 1/96       PiC F_h' -1/2880000                   remainder 19/100800000             dW-pred 0
+   <t6(H0)>_4: e = -2  value -1/8400000                   PiC -1/480     PiC F_h' 1/14400000                   remainder -19/100800000            dW-pred 0
+   <t7(H4)>_4: e = -1  value -1/12096000                  PiC -1/2880    PiC F_h' 1/86400000                   remainder -19/201600000            dW-pred 0
+   <t8(H3)>_4: e =  0  value 19/86016000                  PiC -1/20160   PiC F_h' 1/604800000                  remainder 4243/19353600000         dW-pred 0
+   <t9(H2)>_4: e =  1  value 7/4423680                    PiC 1/161280   PiC F_h' -1/4838400000                remainder 30629/19353600000        dW-pred 0
+   <t10(H1)>_4: e =  1  value -5/7962624                   PiC 1/1290240  PiC F_h' -1/38707200000               remainder -218741/348364800000     dW-pred 0
+ONE-POINT LAW for h >= 2 on all 26 admissible insertions (h <= 4): FAILS somewhere
+ONE-POINT LAW on the 17 singular ones (e < 0), h >= 2: FAILS

@@ -1,0 +1,9 @@
+task files: g5_89_nat 100, g5_61_nat 100, g5_89_id 1
+inner graphs with a stored piece: 89 4555, 61 4555, id 4555; graph list 4555
+inner graphs with a time: 89 4555, 61 4555
+outer graphs receiving a non-zero piece: 628 (vertex graph included: True)
+  of these, with 1 <= E <= 7 (the cancellation set): 627
+  outer graphs with 1 <= E <= 7 and no non-zero piece: 1036
+  outer graphs with E >= 8: 2891
+inner graphs by E: E=0:1, E=1:3, E=2:11, E=3:34, E=4:100, E=5:239, E=6:492, E=7:784, E=8:1002, E=9:926, E=10:632, E=11:260, E=12:71
+wrote G:\My Drive\Projects\Old\refGW\hodge_vertex_quintic\natural_form\genus5_cluster\indep\out\index.json

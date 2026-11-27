@@ -1,0 +1,23 @@
+rv_compose: prime 2^89-1, frame (0, 0), KZ = 9, K = 6; rows built in 3 s
+   tau = 1, -4/9, -50/567, -4300/96957, -344425/12216582, -32029400/1594263951
+PASS tau: own Pochhammer series = fq4_split.tau_pred
+PASS (1) M(z) M^-1(z) = 1 mod zhat^10, all u-orders < 6
+PASS (1) M^-1(z) M^-1(-z)^T = 1 (M symplectic) mod zhat^10
+PASS (2) symplectic remainder of R: B(0, N) = E_R(0, N-1)
+PASS (2) E_R recomputed from the rows = Split.ER (45 keys x 25 colours x 6 u-orders)
+PASS (2) symplectic remainder of M
+PASS (2) E_M recomputed from M^-1 = M_0^-1(tau zhat) = Split.EM
+PASS (3) symplectic remainder of R' = R M^-1
+PASS (3) M^-1 E_R' M^-T = Split.EO = E_R - E_M (all keys, colours, u-orders)
+PASS (5) [u^0] E_R' = 0 for all keys
+PASS (5) every entry of Split.EO has u-valuation >= 1 (needed for the restriction popcount < K): [1]
+PASS (5) Split.frozen_ok
+PASS (4) T_R'(1) = 0 (R' has the same unit)
+PASS (4) T_R recomputed = Split.TR
+PASS (4) T_R = T_M + M^-1 T_R' (d = 2..10)
+PASS (5) [u^0] T_R' = 0
+PASS (6) support of G = Psi^-1 R': [u^k zhat^n] G = 0 for n > floor((5k+2)/4), k <= 5, n <= 9
+      highest non-zero zhat-order of [u^k] G: {0: 0, 1: 1, 2: 3, 3: 4, 4: 5, 5: 6}
+PASS (6) control: the support rule FAILS for the mutated tau (1/tau coefficient of u^4 -> 4/25): [(4, 6), (4, 7), (4, 8), (4, 9), (5, 7), (5, 8), (5, 9)]
+PASS (6) control: the support rule FAILS for the mutated tau (1/tau coefficient of u^5 -> 4/30): [(5, 7), (5, 8), (5, 9)]
+RV_COMPOSE (2^89-1, frame 0,0) ALL CHECKS PASSED  (12 s)

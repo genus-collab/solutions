@@ -1,0 +1,60 @@
+% Section 6, part 5.
+\begin{defn}[Weight spaces, the leg map, the leg class]
+\label{def:mod-weights}
+For $w\geq 0$ let $V_w$ be the $\bbQ$-span of the insertions $v^m\psi^kH^b$ ($m,k\geq 0$, $b\in\bbZ/5$) with $w_b+4k+5m=w$, and $\mathbb F:=\bigoplus_wV_w$, the free graded $\bbQ[v]$-module on the $\psi^kH^b$ (the weights of \cref{conv:tra-forms}). The \emph{leg map} is the $\bbQ$-linear map $\Lambda\colon\mathbb F\to\mathsf M$ (the module defined below; \cref{lem:mod-closure}~(iii)), $\Lambda(v^m\psi^kH^b):=\varrho_b^{-1}v^m\phi^b_k$; by \cref{prop:mod-LD} the TR leg of $X\in\mathbb F$ is $-\Lambda(X)$. Let $\bbQ[p,\bar p]$, $\bar p=v/p$, be the subring of $\bbQ[v][p,p^{-1}]$ spanned by the $v^mp^j$ with $j\geq -m$; recall the leg class $\cL=\bbQ[v][p]+\bbQ(v)[x]$ (\cref{def:mod-pair}). Put
+\[
+\mathsf M:=\bbQ[p,\bar p]\oplus\log p\cdot\bbQ[v,x],\qquad \mathsf N:=\mathsf M/\bbQ[v,x]=\bbQ[p,\bar p]/\bbQ[v,x]\oplus\log p\cdot\bbQ[v,x],
+\]
+(the sum is direct since $1$ and $\log p$ are independent over Laurent polynomials; $\bbQ[v,x]\subset\bbQ[p,\bar p]$ as $v=p\bar p$, $x=p^4/4+\bar p$), graded by weight. For $F=A+\log p\cdot B\in\mathsf M$ the element $B\in\bbQ[v,x]$ is the \emph{$\log p$-coefficient} of $F$, and $F$ is \emph{log-free} if $B=0$. Finally $\mathrm d(w):=\lfloor w/5\rfloor+1-[5\mid w]$ and $\mathrm e(w):=\#\{(m,n)\in\bbZ_{\geq 0}^2: 5m+4n=w\}$.
+\end{defn}
+
+\begin{lem}[Closure]\genusstatus{AI-proposed, unchecked}
+\label{lem:mod-closure}
+\begin{enumerate}
+\item For $a,c\geq 0$, $I(p^a\bar p^c)=-p^{a+4}\bar p^c/(a-c+4)+p^a\bar p^{c+1}/(a-c-1)$, a term with a zero denominator being read as $-v^c\log p$, respectively $+v^{c+1}\log p$.
+\item For $g\in\bbQ[v,x]$ with an $x$-primitive $G$, $I(\log p\cdot g(x))=-\log p\cdot G(x)+\int G(x)\,\dd p/p$, where the last integral is termwise: $\int p^a\bar p^c\,\dd p/p=p^a\bar p^c/(a-c)$ if $a\neq c$ and $=v^c\log p$ if $a=c$.
+\item $I$ is $\bbQ[v]$-linear, $I(\mathsf M)\subset\mathsf M$ and $I(\bbQ[v,x])\subset\bbQ[v,x]$. Hence every leg $\phi^b_k$ lies in $\mathsf M$, and $\mathsf M$ is a $\bbQ[v,x]$-module.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) $-\int v^cp^{a-c}(p^3-vp^{-2})\,\dd p=-v^cp^{a-c+4}/(a-c+4)+v^{c+1}p^{a-c-1}/(a-c-1)$, with $\int\dd p/p=\log p$ in the exceptional cases. (ii) $\dd(\log p\cdot G(x))=G(x)\,\dd p/p+\log p\cdot g(x)\,\dd x$ with $G(x(p))\in\bbQ[p,\bar p]$, and the right side has no term $p^0(\log p)^0$, so it is the antiderivative of \cref{def:mod-legs}; replacing $G$ by $G+C$ changes the two terms by $\mp C\log p$. (iii) By (i), $I(\bbQ[p,\bar p])\subset\mathsf M$; by (ii), $I(\log p\cdot g)\in\mathsf M$, as $\int G\,\dd p/p\in\bbQ[p,\bar p]+\log p\cdot\bbQ[v]$. For $g\in\bbQ[v,x]$, $-g(x)\,\dd x=-\dd G(x(p))$ has no term $p^{-1}\dd p$, so $I(g)=-G(x)+[p^0]G(x(p))\in\bbQ[v,x]$. The $\phi^b_0$ lie in $\mathsf M$, so all $\phi^b_k$ do by induction; and $\bbQ[p,\bar p]$ is a ring containing $\bbQ[v,x]$.
+\end{proof}
+
+\begin{lem}[Generating function of the log coefficients]\genusstatus{AI-proposed, unchecked}
+\label{lem:mod-genfn}
+For all $b$ and $k$, the $\log p$-coefficient of $\phi^b_k$ is $\sum_{i=0}^k\mathcal R^b_{k-i}(-x)^i/i!$, where $\mathcal R^b_n:=\Res_{p=0}\Wv^n\,\dd\phi^b_0/n!$, a rational multiple of a power of $v$, possibly $0$.
+\end{lem}
+
+\begin{proof}
+Fix $b$, write $\phi_k:=\phi^b_k$, and put $\mathcal B_n:=\sum_{j=0}^nx^j\phi_{n-j}/j!$, the coefficient of $\epsilon^n$ in $e^{\epsilon x}\sum_k\epsilon^k\phi_k$. Since $\dd\phi_m/\dd p=-x'\phi_{m-1}$ for $m\geq 1$, $\dd\mathcal B_n/\dd p=x^n\phi_0'/n!$ telescopes to a Laurent polynomial in $p$. By \cref{lem:mod-closure}~(iii), $\mathcal B_n=A+\log p\cdot B$ with $A\in\bbQ[p,\bar p]$, $B\in\bbQ[v,x]$; then $\dd\mathcal B_n/\dd p=A'+B/p+\log p\cdot\dd B(x(p))/\dd p$ has no logarithmic term, so $B\in\bbQ[v]$, and as $A'$ has no term $p^{-1}$, $B=[p^{-1}]x^n\phi_0'/n!=\mathcal R^b_n$. Inverting, $\phi_k=\sum_{i=0}^k(-x)^i\mathcal B_{k-i}/i!$, and taking $\log p$-coefficients, which commutes with multiplication by $\bbQ[v,x]$, gives the claim. By weight, $\mathcal R^b_n$ is a rational multiple of a power of $v$, possibly $0$.
+\end{proof}
+
+\begin{lem}[The residue identity]\genusstatus{AI-proposed, unchecked}
+\label{lem:mod-resid}
+For all $n\geq 0$ and $b$, $\mathcal R^b_n=\varrho_b\,\Pi_0(\psi^nH^b)$.
+\end{lem}
+
+\begin{proof}
+By \cref{def:gau-van}, $\IC_m=\Res_{p=0}p^me^{-\Wv(p)/z}\dd p$ coefficientwise; with $\YC_b=\varepsilon_b\IC_{\nu_b}$ and $\Pi_0(z^nH^b)=(-1)^{n+1}[z^{-n}]\YC_b$ (\cref{def:tra-tower}) this gives
+\[
+[z^{-n}]\IC_m=\frac{(-1)^n}{n!}\Res_{p=0}p^m\Wv^n\,\dd p,\qquad \Pi_0(\psi^nH^b)=-\frac{\varepsilon_b}{n!}\Res_{p=0}p^{\nu_b}\Wv^n\,\dd p .
+\]
+Compare with $\dd\phi^b_0=\dd p,\ \dd p/p,\ -vp^{-2}\dd p,\ 3p^2\dd p,\ 2p\,\dd p$: for $b=0,1,3,4$ the identity is immediate, with $\varrho_b=-1,1,-3,-2$. For $b=2$, $\Res_{p=0}\Wv^n(p^3-vp^{-2})\,\dd p=\Res_{p=0}\dd(\Wv^{n+1})/(n+1)=0$, so $\mathcal R^2_n=-\Res_{p=0}p^3\Wv^n\dd p/n!=-\Pi_0(\psi^nH^2)$, and $\varrho_2=-1$.
+\end{proof}
+
+\begin{prop}[Log coefficients of the legs]\genusstatus{AI-proposed, unchecked}
+\label{prop:mod-dii}
+For all $b$ and $k$,
+\begin{equation}
+\label{eq:mod-dii}
+\text{the }\log p\text{-coefficient of }\phi^b_k\ =\ \varrho_b\sum_{i=0}^k\Pi_i(\psi^kH^b)\,\frac{(-x)^i}{i!}.
+\end{equation}
+Hence, for $X\in V_w$, the $\log p$-coefficient of $\Lambda(X)$ is $\sum_{i\geq 0}\Pi_i(X)(-x)^i/i!$, and $\Lambda(X)$ is log-free if and only if $X\in\sKo$.
+\end{prop}
+
+\begin{proof}
+\Cref{lem:mod-genfn,lem:mod-resid} and the shift rule $\Pi_i(\psi^kH^b)=\Pi_0(\psi^{k-i}H^b)$ of \cref{def:tra-tower} give \eqref{eq:mod-dii}. For $X\in V_w$ the factors $\varrho_b^{-1}$ of $\Lambda$ cancel, and the $\Pi_i$ are $\bbQ[v]$-linear. As $\Pi_i(X)\in\bbQ[v]$ and the powers of $x$ are independent over $\bbQ(v)$, $\Lambda(X)$ is log-free if and only if $\Pi_i(X)=0$ for all $i$, that is $X\in\sKo$ (\cref{def:tra-slice}).
+\end{proof}
+
+\input{sections/s06_model_6}

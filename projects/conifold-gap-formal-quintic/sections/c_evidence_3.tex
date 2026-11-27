@@ -1,0 +1,23 @@
+% Evidence appendix, part 3 of 3: the model. Last part of the appendix.
+
+\subsection{The model}
+\label{sec:evi-model}
+
+\Cref{tab:evi-model} lists the main checks of \cref{sec:mod}. Further, the formula of \cref{rmk:mod-hock} was checked for $h\leq 12$ exactly, and the singular lists of the Model Lemma at genus $0$ to $3$ all vanish, while deliberately wrong frames give non-zero values. Off $\sK$ (\cref{rmk:mod-offK}), exactly at $v=1$, $\langle\psi^5H\rangle_3=53/1209600$, whereas the one-point law of \cref{cor:mod-onepoint} would give $-1/604800$.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.4\textwidth}|>{\raggedright\arraybackslash}p{0.36\textwidth}|>{\raggedright\arraybackslash}p{0.16\textwidth}}
+statement & range & arithmetic\\ \hline
+topological recursion on $x=\Wv$ is $(-5)^{h-1}$ times the model CohFT, i.e.\ the model correlators are $(-5)^{1-h}$ times those of topological recursion (\cref{thm:mod-tr}) & $72120$ colour-basis correlators with $\psi$-deficit $\leq 6$ at $(h,n)=(0,3)$, $(0,4)$, $(0,5)$, $(1,1)$, $(1,2)$, $(1,3)$, $(2,1)$, $(2,2)$, $(3,1)$ ($4665$ non-zero); on $x=\kappa\Wv$, $\kappa=1,4,-1$: $6495$ each & two primes\\
+the R-matrix of the curve $x=\kappa\Wv$ is $\Mo(z/(\kappa\varsigma^4))$ (\cref{prop:mod-Rtr}) & all $25$ entries through $z^{10}$, $\kappa=1,4,-1$, $\varsigma=1,2$ & exact, $\bbQ(\zeta)$\\
+the dilaton-leaf sign of \cite[Def.~2.13]{PPZ15} & $(h,n)=(1,1)$, four points, $\kappa=1,4$; the opposite sign fails at all four & exact\\
+$\FTR_h(v=1)=B_{2h}/(2h(2h-2))=-\tfrac{1}{240},\tfrac{1}{1008},-\tfrac{1}{1440},\tfrac{1}{1056}$ & $h=2,\dots,5$ & $\bbQ(\zeta)$ ($h\leq 3$); two primes\\
+the period identity of \cref{prop:mod-period}; $\Sigma_h=-4^hB_{2h}/(2h)$ & $h\leq 7$; $h\leq 20$ & exact\\
+the lattice theorem (\cref{thm:mod-lattice}) & weight $\leq 400$; $\leq 1000$; $16200$ raw-leg kernel vectors & exact; two primes\\
+the leg dictionary (\cref{prop:mod-LD}) & $35000$ pairings per prime; $52$ frame one-point functions, $h=2,3$ & two primes; $\bbQ(\zeta)$\\
+the Model Lemma on $\sK$ (\cref{thm:mod-MLK}) & $5289$ correlators with $h\leq 4$, including $1302$ at $(h,n)=(2,4)$; $1395$ singular, all zero & exact; two primes\\
+\end{tabular}
+\caption{Checks on the model.}
+\label{tab:evi-model}
+\end{table}

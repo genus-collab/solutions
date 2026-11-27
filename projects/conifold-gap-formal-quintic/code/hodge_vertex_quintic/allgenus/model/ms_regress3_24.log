@@ -1,0 +1,2 @@
+PASS 23125 flat correlators on 37 tensors (genus 1-4, n <= 3, psi-deficit <= 6) = MVertex6 mod 2^89-1 (100 s)
+exit 0

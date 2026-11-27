@@ -1,0 +1,17 @@
+log logs/lm_run_q_16_p1.log  (python 3.14.6)
+field p1 (p = 4611686018427387761); z-order N = 16
+PASS  Q1 quintic colour 0: no pole at L = 1 and c_n(1) = h_n, n <= 16  min prec 43
+PASS  Q1 LMI formula F(1,z)/F(1,0) for the five regular factors = h  
+PASS  Q2 Gamma(5s) for Gamma(1 + 5s): still no pole and value h at L = 1 (the twist measure is invisible there)  
+PASS  Q2 ... but c_n(L) itself changes for L != 1 (orders n where the two series differ)  n in [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+PASS  Q3 singular factor Gamma(1 + (1 - sigma)/z): no pole, value = LMI with delta = z, and that value != h  first differing order 1
+PASS  Q4 q = oo: no pole at L = 0 and c_n(0) = [z^n] Ginf (Bernoulli closed form), n <= 16  
+PASS  Q4 LMI formula at s* = 0 (delta = -z/5) = Ginf  
+PASS  Q5 q = oo with Gamma(5s) (measure dy/y): no pole, value exp(5 Sum_(5|2k-1) b_k z^(2k-1)) = LMI(M0 = 0)  
+PASS  Q5 ... and this value differs from Ginf (the shift 1/5 comes from the measure dy)  
+PASS  Q6 colour 1 at L = zeta^1 (explicit zeta mod p): no pole, value h(zeta^-1 z)  
+PASS  Q6 control: colour 1 value != h(z) (the zeta-twist is seen)  
+PASS  Q6 colour 2 at L = zeta^2 (explicit zeta mod p): no pole, value h(zeta^-2 z)  
+PASS  Q6 control: colour 2 value != h(z) (the zeta-twist is seen)  
+13 checks: 13 PASS, 0 FAIL;  63.4 s
+ALL CHECKS PASSED

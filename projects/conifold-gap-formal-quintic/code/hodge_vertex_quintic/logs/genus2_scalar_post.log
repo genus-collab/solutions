@@ -1,0 +1,83 @@
+==================================================================================================
+prime p = 618970019642690137449562111
+   node (a1, a2) = (0, 0): 115 coloured graphs summed in 15.2 s
+   node (a1, a2) = (1, 0): 115 coloured graphs summed in 33.6 s
+   node (a1, a2) = (-1, 0): 115 coloured graphs summed in 33.4 s
+   node (a1, a2) = (2, 0): 115 coloured graphs summed in 23.3 s
+   node (a1, a2) = (0, 1): 115 coloured graphs summed in 12.1 s
+--------------------------------------------------------------------------------------------------
+(A) exact exponent classes and L-degree bounds of the NEls T0..T4 (no series truncation)
+PASS all T_k are Lam-free (no log q)
+PASS T0: exponent classes {-m mod 5 : m an L-power} = [0] (exact, all orders): [0]
+PASS T0: max L-degree over the 115 coloured graphs = 10 (so val Cf(T0) >= -10 exactly): L-degree range (-5, 10)
+PASS T1: exponent classes {-m mod 5 : m an L-power} = [4] (exact, all orders): [4]
+PASS T1: max L-degree over the 115 coloured graphs = 6 (so val Cf(T1) >= -6 exactly): L-degree range (-4, 6)
+PASS T2: exponent classes {-m mod 5 : m an L-power} = [3] (exact, all orders): [3]
+PASS T2: max L-degree over the 115 coloured graphs = 2 (so val Cf(T2) >= -2 exactly): L-degree range (-3, 2)
+PASS T3: exponent classes {-m mod 5 : m an L-power} = [2] (exact, all orders): [2]
+PASS T3: max L-degree over the 115 coloured graphs = -2 (so val Cf(T3) >= 2 exactly): L-degree range (-2, -2)
+PASS T4: exponent classes {-m mod 5 : m an L-power} = [2] (exact, all orders): [2]
+PASS T4: max L-degree over the 115 coloured graphs = -2 (so val Cf(T4) >= 2 exactly): L-degree range (-2, -2)
+--------------------------------------------------------------------------------------------------
+(B) table entries (23 representatives x 5 columns) and their Q(zeta) coordinates
+   575 Cf substitutions in 19.7 s
+--------------------------------------------------------------------------------------------------
+(C) optional q-dependent leading system: sub-system gcds after eliminating al_2 with the vertex graph
+   all 22 equations                                 22 equations, degrees [0, 2, 3], gcd degree 0: (1)
+PASS gcd = 1 for the sub-system: all 22 equations
+   without the 4 theta mixed colourings             18 equations, degrees [2, 3], gcd degree 0: (1)
+PASS gcd = 1 for the sub-system: without the 4 theta mixed colourings
+   monochrome equations only (graphs 2-7, colour 0)  6 equations, degrees [3], gcd degree 0: (1)
+PASS gcd = 1 for the sub-system: monochrome equations only (graphs 2-7, colour 0)
+   non-theta mixed colourings only                  12 equations, degrees [2], gcd degree 0: (1)
+PASS gcd = 1 for the sub-system: non-theta mixed colourings only
+PASS the theta mixed colourings' equations are non-zero constants (T0_-10 alone): [0, 0, 0, 0]
+   pairs of equations with a common factor (degree): 68 pairs; degree-3 pairs (proportional cubics): [((6, (0, 0)), (7, (0, 0)))]; degree-2 pairs: [((4, (0, 1)), (4, (0, 4))), ((4, (0, 2)), (4, (0, 3))), ((6, (0, 0)), (7, (0, 1))), ((6, (0, 0)), (7, (0, 2))), ((6, (0, 0)), (7, (0, 3))), ((6, (0, 0)), (7, (0, 4))), ((7, (0, 0)), (7, (0, 1))), ((7, (0, 0)), (7, (0, 2))), ((7, (0, 0)), (7, (0, 3))), ((7, (0, 0)), (7, (0, 4))), ((7, (0, 1)), (7, (0, 2))), ((7, (0, 1)), (7, (0, 3))), ((7, (0, 1)), (7, (0, 4))), ((7, (0, 2)), (7, (0, 3))), ((7, (0, 2)), (7, (0, 4))), ((7, (0, 3)), (7, (0, 4)))]
+time for prime 618970019642690137449562111: 140.6 s
+==================================================================================================
+prime p = 2305843009213693951
+   node (a1, a2) = (0, 0): 115 coloured graphs summed in 11.7 s
+   node (a1, a2) = (1, 0): 115 coloured graphs summed in 23.4 s
+   node (a1, a2) = (-1, 0): 115 coloured graphs summed in 23.2 s
+   node (a1, a2) = (2, 0): 115 coloured graphs summed in 23.3 s
+   node (a1, a2) = (0, 1): 115 coloured graphs summed in 12.4 s
+--------------------------------------------------------------------------------------------------
+(A) exact exponent classes and L-degree bounds of the NEls T0..T4 (no series truncation)
+PASS all T_k are Lam-free (no log q)
+PASS T0: exponent classes {-m mod 5 : m an L-power} = [0] (exact, all orders): [0]
+PASS T0: max L-degree over the 115 coloured graphs = 10 (so val Cf(T0) >= -10 exactly): L-degree range (-5, 10)
+PASS T1: exponent classes {-m mod 5 : m an L-power} = [4] (exact, all orders): [4]
+PASS T1: max L-degree over the 115 coloured graphs = 6 (so val Cf(T1) >= -6 exactly): L-degree range (-4, 6)
+PASS T2: exponent classes {-m mod 5 : m an L-power} = [3] (exact, all orders): [3]
+PASS T2: max L-degree over the 115 coloured graphs = 2 (so val Cf(T2) >= -2 exactly): L-degree range (-3, 2)
+PASS T3: exponent classes {-m mod 5 : m an L-power} = [2] (exact, all orders): [2]
+PASS T3: max L-degree over the 115 coloured graphs = -2 (so val Cf(T3) >= 2 exactly): L-degree range (-2, -2)
+PASS T4: exponent classes {-m mod 5 : m an L-power} = [2] (exact, all orders): [2]
+PASS T4: max L-degree over the 115 coloured graphs = -2 (so val Cf(T4) >= 2 exactly): L-degree range (-2, -2)
+--------------------------------------------------------------------------------------------------
+(B) table entries (23 representatives x 5 columns) and their Q(zeta) coordinates
+   575 Cf substitutions in 22.1 s
+--------------------------------------------------------------------------------------------------
+(C) optional q-dependent leading system: sub-system gcds after eliminating al_2 with the vertex graph
+   all 22 equations                                 22 equations, degrees [0, 2, 3], gcd degree 0: (1)
+PASS gcd = 1 for the sub-system: all 22 equations
+   without the 4 theta mixed colourings             18 equations, degrees [2, 3], gcd degree 0: (1)
+PASS gcd = 1 for the sub-system: without the 4 theta mixed colourings
+   monochrome equations only (graphs 2-7, colour 0)  6 equations, degrees [3], gcd degree 0: (1)
+PASS gcd = 1 for the sub-system: monochrome equations only (graphs 2-7, colour 0)
+   non-theta mixed colourings only                  12 equations, degrees [2], gcd degree 0: (1)
+PASS gcd = 1 for the sub-system: non-theta mixed colourings only
+PASS the theta mixed colourings' equations are non-zero constants (T0_-10 alone): [0, 0, 0, 0]
+   pairs of equations with a common factor (degree): 68 pairs; degree-3 pairs (proportional cubics): [((6, (0, 0)), (7, (0, 0)))]; degree-2 pairs: [((4, (0, 1)), (4, (0, 4))), ((4, (0, 2)), (4, (0, 3))), ((6, (0, 0)), (7, (0, 1))), ((6, (0, 0)), (7, (0, 2))), ((6, (0, 0)), (7, (0, 3))), ((6, (0, 0)), (7, (0, 4))), ((7, (0, 0)), (7, (0, 1))), ((7, (0, 0)), (7, (0, 2))), ((7, (0, 0)), (7, (0, 3))), ((7, (0, 0)), (7, (0, 4))), ((7, (0, 1)), (7, (0, 2))), ((7, (0, 1)), (7, (0, 3))), ((7, (0, 1)), (7, (0, 4))), ((7, (0, 2)), (7, (0, 3))), ((7, (0, 2)), (7, (0, 4))), ((7, (0, 3)), (7, (0, 4)))]
+time for prime 2305843009213693951: 119.4 s
+==================================================================================================
+(B) cross-prime comparison by residues (2^89-1 rationals reduced mod 2^61-1 vs the 2^61-1 residues)
+PASS all 115 table entries have Q(zeta) coordinates reconstructible at 2^89-1
+PASS 115 table entries: 2^89-1 Q(zeta) coordinates re-assembled mod 2^61-1 equal the 2^61-1 entries
+PASS 115 table entries: 2^89-1 coordinates reduced mod 2^61-1 equal the 2^61-1 coordinate residues
+   (1, (0,)) T0_-10 = 1807/15360000 at 2^89-1; mod 2^61-1: 1393615335851750081; 2^61-1 residue: 1393615335851750081
+   (4, (0, 0)) T0_-10 = -31/15360000 at 2^89-1; mod 2^61-1: 1550751631410234689; 2^61-1 residue: 1550751631410234689
+PASS rational leading-system coefficients identical at both primes
+PASS pairwise common-factor structure of the optional system identical at both primes
+total time 260.2 s
+ALL POST CHECKS PASSED

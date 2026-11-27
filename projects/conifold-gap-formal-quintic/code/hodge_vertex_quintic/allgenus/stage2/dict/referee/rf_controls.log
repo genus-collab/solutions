@@ -1,0 +1,9 @@
+rf_controls.py (exact over Q): every control below must detect its defect
+ok   K1 Phi_0^2 := x: leg map S_w -> N_w not injective at w = [4, 8, 9, 12, 13, 14] (expected first 4)
+ok   K2 Phi_0^2 := v^2/p^6: 13 legs outside M; of 180 log-free combinations (w <= 40) 31 outside Q[p,q], 31 outside L (expected > 0)
+ok   K3 Phi_0^0 := p + v/p^4: 13 legs outside M; of 180 log-free combinations (w <= 40) 61 outside Q[p,q], 61 outside L (expected > 0)
+ok   K4 log-dropping integration: dim 'K_0' != d(w) at w = [0, 4, 5, 8, 9, 10] (expected from w = 0)
+ok   K5 L-test anchors (1/p, v^2/p^5, v/p^2, v^2/p^6 rejected; v/p, v^2/p^2, p^3, v^3/p^3 accepted): [False, False, False, True, True, True, False, True]
+ok   K6 K_0 legs + (7/3) v^m p^j, w in (13, 21, 29, 36): 156/156 with j < -m rejected by in_L and in_Qpq, 170/170 with j >= -m accepted by both
+ok   K7 m >= -1 allowed: 42 of 222 log-free combinations (w <= 40) have legs outside L; first (-1, [(-1, Fraction(1, 1))])
+RESULT: ALL CONTROLS BEHAVE AS EXPECTED

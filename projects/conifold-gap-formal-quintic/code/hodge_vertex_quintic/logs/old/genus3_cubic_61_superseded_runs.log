@@ -1,0 +1,299 @@
+==============================================================================================================
+genus3_cubic: the nine three-edge cubics on the circulant class, p = 2^61-1
+      cubic points 29/237 jobs done (432 s)
+      cubic points 58/237 jobs done (589 s)
+      cubic points 87/237 jobs done (731 s)
+      cubic points 116/237 jobs done (888 s)
+      cubic points 145/237 jobs done (1099 s)
+      cubic points 174/237 jobs done (1256 s)
+      cubic points 203/237 jobs done (1370 s)
+      cubic points 232/237 jobs done (1469 s)
+      cubic points 237/237 jobs done (1484 s)
+   237 evaluations: 1484 s
+PASS (a) [u^0], [u^1], [u^2] vanish for every three-edge graph at every point
+PASS (a) c_Gamma(0) = 0: the [u^3] coefficients vanish at N_1 = N_1^taut
+PASS (b) fitted cubics = direct evaluation at 4 random circulant points (orders 1..4)
+PASS (b) the orders 5, 6 of Delta are invisible to the cubics (same values with random components of orders 5, 6)
+PASS (c) homogeneity: c(2 Delta) = 8 c(Delta)
+PASS (d) frozen-vertex [u^3] = [u^3] of the stored independent full pass at rational_solution_n, all nine graphs: {4: '[1199266418437331931 mod p]', 9: '[321056263872040091 mod p]', 10: '[909063797812520861 mod p]', 11: '[1011830857028781178 mod p]', 12: '[502689878361298003 mod p]', 18: '0', 19: '[2222457553540972165 mod p]', 20: '0', 32: '0'}
+PASS (d) frozen-vertex [u^3] = [u^3] of the stored independent full pass at circ_solution_n, all nine graphs: {4: '[2087854247287773507 mod p]', 9: '[2047263186856930123 mod p]', 10: '[216991822484945730 mod p]', 11: '[1545800926879492144 mod p]', 12: '[1697149153700516432 mod p]', 18: '[1729716285860392837 mod p]', 19: '[2139203271115667448 mod p]', 20: '[1486020734121059993 mod p]', 32: '[246866834834265860 mod p]'}
+PASS (d) frozen-vertex [u^3] = [u^3] of the stored independent full pass at full_solution_n, all nine graphs: {4: '[1981975321170851014 mod p]', 9: '[238375490791367625 mod p]', 10: '[1272189867255448379 mod p]', 11: '[1749909150463064696 mod p]', 12: '[372689845852650588 mod p]', 18: '[1965766867631756647 mod p]', 19: '[1682367867196236454 mod p]', 20: '[973116420261957326 mod p]', 32: '[2299170684429345313 mod p]'}
+PASS (e) full class: affine-linear in the order-4 coordinates (second difference in s of c(Delta_L + s Delta_4) vanishes)
+PASS (e) full class: orders 5, 6 invisible
+   order-4 dependence at the random full point (c(Delta_L + Delta_4) - c(Delta_L) non-zero for graphs): [9, 10, 11, 12, 19]
+   graph  4 (gv=(0,), ed=[(0, 0), (0, 0), (0, 0)]):  32 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_1', 'c3_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 2)]
+   graph  9 (gv=(0, 1), ed=[(0, 1), (0, 1), (0, 1)]):  49 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2), (1, 2, 3), (2, 2, 2)]
+   graph 10 (gv=(0, 1), ed=[(0, 0), (0, 1), (0, 1)]):  51 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2), (1, 2, 3)]
+   graph 11 (gv=(0, 1), ed=[(0, 0), (1, 1), (0, 1)]):  28 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2), (1, 2, 3)]
+   graph 12 (gv=(0, 1), ed=[(0, 0), (0, 0), (0, 1)]):  45 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2)]
+   graph 18 (gv=(0, 1, 1), ed=[(0, 1), (0, 2), (0, 2)]):  46 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 2), (1, 2, 3), (2, 2, 2)]
+   graph 19 (gv=(0, 1, 1), ed=[(0, 0), (0, 2), (1, 2)]):  34 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2), (1, 2, 3)]
+   graph 20 (gv=(0, 1, 1), ed=[(0, 0), (0, 1), (0, 2)]):  42 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 2), (1, 2, 3)]
+   graph 32 (gv=(0, 1, 1, 1), ed=[(0, 1), (0, 2), (0, 3)]):  20 non-zero monomials; variables ['c1_1', 'c1_2', 'c2_1', 'c2_2']; order types [(1, 1, 1), (1, 1, 2), (1, 2, 2), (2, 2, 2)]
+GENUS3_CUBIC ALL CHECKS PASSED
+--------------------------------------------------------------------------------------------------------------
+genus3_cubican: circulant class at O(u^3), p = 2^61-1
+PASS the two-edge quadrics are homogeneous in the 15 circulant coordinates of Delta
+PASS the genus-2 rows involve the orders 1..3 only
+PASS every cubic monomial has weight Sum (k - 1) <= 3
+PASS the cubics are affine-linear in z = (c3, c4) (no monomial with two variables of order >= 3)
+PASS every z-coefficient monomial contains a c1 variable (so the z-coefficients vanish at c1 = 0)
+   graph  4 (gv=(0,), ed=[(0, 0), (0, 0), (0, 0)]):  32 monomials; divisible by the variables []
+   graph  9 (gv=(0, 1), ed=[(0, 1), (0, 1), (0, 1)]):  49 monomials; divisible by the variables []
+   graph 10 (gv=(0, 1), ed=[(0, 0), (0, 1), (0, 1)]):  51 monomials; divisible by the variables []
+   graph 11 (gv=(0, 1), ed=[(0, 0), (1, 1), (0, 1)]):  28 monomials; divisible by the variables ['c1_0']
+   graph 12 (gv=(0, 1), ed=[(0, 0), (0, 0), (0, 1)]):  45 monomials; divisible by the variables []
+   graph 18 (gv=(0, 1, 1), ed=[(0, 1), (0, 2), (0, 2)]):  46 monomials; divisible by the variables []
+   graph 19 (gv=(0, 1, 1), ed=[(0, 0), (0, 2), (1, 2)]):  34 monomials; divisible by the variables ['c1_0']
+   graph 20 (gv=(0, 1, 1), ed=[(0, 0), (0, 1), (0, 2)]):  42 monomials; divisible by the variables []
+   graph 32 (gv=(0, 1, 1, 1), ed=[(0, 1), (0, 2), (0, 3)]):  20 monomials; divisible by the variables []
+PASS the genus-2 rows have rank 2 on the three c3 coordinates
+   (L2) solved for ['c3_0', 'c3_1'] in terms of c3_2 and x
+PASS A' entries are quadratic forms and b' entries cubic forms in x
+   (rank A', rank [A' | b']) at 5 random x: [(3, 4), (3, 4), (3, 4), (3, 4), (3, 4)]
+PASS at random x the system A'(x) z' = b'(x) is inconsistent (rank 3 vs 4)
+   126 maximal minors of [A' | b'] computed in 0 s: 90 non-zero, degrees [9]
+PASS minor polynomials = numerical 4 x 4 determinants at a random point (first 10 minors)
+PASS all minors vanish identically on c1 = 0
+   degree  9: 90 rows, rank 79 of 715 monomials (codimension 636) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+   degree 10: 450 rows, rank 279 of 1001 monomials (codimension 722) in 2 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 11: 500 rows processed, rank 304 / 1365
+         degree 11: 1000 rows processed, rank 447 / 1365
+   degree 11: 1350 rows, rank 556 of 1365 monomials (codimension 809) in 23 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 12: 500 rows processed, rank 304 / 1820
+         degree 12: 1000 rows processed, rank 447 / 1820
+         degree 12: 1500 rows processed, rank 599 / 1820
+         degree 12: 2000 rows processed, rank 681 / 1820
+         degree 12: 2500 rows processed, rank 746 / 1820
+--------------------------------------------------------------------------------------------------------------
+genus3_cubican: circulant class at O(u^3), p = 2^61-1
+PASS the two-edge quadrics are homogeneous in the 15 circulant coordinates of Delta
+PASS the genus-2 rows involve the orders 1..3 only
+PASS every cubic monomial has weight Sum (k - 1) <= 3
+PASS the cubics are affine-linear in z = (c3, c4) (no monomial with two variables of order >= 3)
+PASS every z-coefficient monomial contains a c1 variable (so the z-coefficients vanish at c1 = 0)
+   graph  4 (gv=(0,), ed=[(0, 0), (0, 0), (0, 0)]):  32 monomials; divisible by the variables []
+   graph  9 (gv=(0, 1), ed=[(0, 1), (0, 1), (0, 1)]):  49 monomials; divisible by the variables []
+   graph 10 (gv=(0, 1), ed=[(0, 0), (0, 1), (0, 1)]):  51 monomials; divisible by the variables []
+   graph 11 (gv=(0, 1), ed=[(0, 0), (1, 1), (0, 1)]):  28 monomials; divisible by the variables ['c1_0']
+   graph 12 (gv=(0, 1), ed=[(0, 0), (0, 0), (0, 1)]):  45 monomials; divisible by the variables []
+   graph 18 (gv=(0, 1, 1), ed=[(0, 1), (0, 2), (0, 2)]):  46 monomials; divisible by the variables []
+   graph 19 (gv=(0, 1, 1), ed=[(0, 0), (0, 2), (1, 2)]):  34 monomials; divisible by the variables ['c1_0']
+   graph 20 (gv=(0, 1, 1), ed=[(0, 0), (0, 1), (0, 2)]):  42 monomials; divisible by the variables []
+   graph 32 (gv=(0, 1, 1, 1), ed=[(0, 1), (0, 2), (0, 3)]):  20 monomials; divisible by the variables []
+PASS the genus-2 rows have rank 2 on the three c3 coordinates
+   (L2) solved for ['c3_0', 'c3_1'] in terms of c3_2 and x
+PASS A' entries are quadratic forms and b' entries cubic forms in x
+   (rank A', rank [A' | b']) at 5 random x: [(3, 4), (3, 4), (3, 4), (3, 4), (3, 4)]
+PASS at random x the system A'(x) z' = b'(x) is inconsistent (rank 3 vs 4)
+   126 maximal minors of [A' | b'] computed in 0 s: 90 non-zero, degrees [9]
+PASS minor polynomials = numerical 4 x 4 determinants at a random point (first 10 minors)
+PASS all minors vanish identically on c1 = 0
+   lower-degree consistency conditions: ["b'[graph 20] (A' row zero): degree 3", "b'[graph 32] (A' row zero): degree 3", '2x2 minor rows (4, 18), column 0: degree 5']
+PASS lower-degree conditions are homogeneous
+   degree  5: 31 rows, rank 26 of 126 monomials (codimension 100) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+   degree  6: 75 rows, rank 60 of 210 monomials (codimension 150) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+   degree  7: 155 rows, rank 118 of 330 monomials (codimension 212) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+   degree  8: 287 rows, rank 208 of 495 monomials (codimension 287) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 9: 500 rows processed, rank 344 / 715
+   degree  9: 580 rows, rank 364 of 715 monomials (codimension 351) in 0 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 10: 500 rows processed, rank 352 / 1001
+         degree 10: 1000 rows processed, rank 575 / 1001
+   degree 10: 1236 rows, rank 624 of 1001 monomials (codimension 377) in 4 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 11: 500 rows processed, rank 352 / 1365
+         degree 11: 1000 rows processed, rank 670 / 1365
+         degree 11: 1500 rows processed, rank 836 / 1365
+         degree 11: 2000 rows processed, rank 924 / 1365
+         degree 11: 2500 rows processed, rank 972 / 1365
+   degree 11: 2550 rows, rank 972 of 1365 monomials (codimension 393) in 29 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 12: 500 rows processed, rank 352 / 1820
+         degree 12: 1000 rows processed, rank 669 / 1820
+         degree 12: 1500 rows processed, rank 980 / 1820
+         degree 12: 2000 rows processed, rank 1144 / 1820
+         degree 12: 2500 rows processed, rank 1239 / 1820
+         degree 12: 3000 rows processed, rank 1290 / 1820
+         degree 12: 3500 rows processed, rank 1328 / 1820
+         degree 12: 4000 rows processed, rank 1349 / 1820
+         degree 12: 4500 rows processed, rank 1361 / 1820
+   degree 12: 4910 rows, rank 1379 of 1820 monomials (codimension 441) in 124 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 13: 500 rows processed, rank 352 / 2380
+         degree 13: 1000 rows processed, rank 669 / 2380
+         degree 13: 1500 rows processed, rank 985 / 2380
+         degree 13: 2000 rows processed, rank 1286 / 2380
+         degree 13: 2500 rows processed, rank 1490 / 2380
+         degree 13: 3000 rows processed, rank 1604 / 2380
+         degree 13: 3500 rows processed, rank 1667 / 2380
+         degree 13: 4000 rows processed, rank 1716 / 2380
+         degree 13: 4500 rows processed, rank 1748 / 2380
+         degree 13: 5000 rows processed, rank 1762 / 2380
+         degree 13: 5500 rows processed, rank 1784 / 2380
+         degree 13: 6000 rows processed, rank 1813 / 2380
+         degree 13: 6500 rows processed, rank 1834 / 2380
+         degree 13: 7000 rows processed, rank 1846 / 2380
+         degree 13: 7500 rows processed, rank 1861 / 2380
+         degree 13: 8000 rows processed, rank 1868 / 2380
+         degree 13: 8500 rows processed, rank 1887 / 2380
+   degree 13: 8797 rows, rank 1887 of 2380 monomials (codimension 493) in 352 s; c1_i^D in I: [False, False, False]; all degree-D monomials in c1 in I: False
+         degree 14: 500 rows processed, rank 352 / 3060
+         degree 14: 1000 rows processed, rank 669 / 3060
+         degree 14: 1500 rows processed, rank 985 / 3060
+         degree 14: 2000 rows processed, rank 1286 / 3060
+         degree 14: 2500 rows processed, rank 1599 / 3060
+         degree 14: 3000 rows processed, rank 1863 / 3060
+         degree 14: 3500 rows processed, rank 2012 / 3060
+         degree 14: 4000 rows processed, rank 2118 / 3060
+         degree 14: 4500 rows processed, rank 2173 / 3060
+         degree 14: 5000 rows processed, rank 2228 / 3060
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicb: circulant class, the locus c_1(0) = 0, m_1 = 0, p = 2^61-1
+PASS on {c_1(0) = 0, m_1 = 0, L2}: the cubics 11, 18, 19, 20, 32 vanish identically
+FAIL the (c5, c6) system (2 genus-3 rows + 5 quadrics) has rank 4; the rows of q_6, q_17 are dependent on the others: (3, 4, 4)
+   tau-degrees: deg G = 0, deg H = 0
+PASS tau-degrees resolved by the node counts (14, 30)
+   U(b) = Res_tau(G, H): interpolated on 40 nodes in 0 s: degree 0
+PASS b-degree of U resolved (degree < nodes - 5)
+   U has 0 distinct roots in F_p
+   squarefree part of U has degree 0
+FAIL genuine solutions with c_1(0) = 0, c_1 != 0 found over F_p (all 4 linear rows, 5 quadrics, 9 cubics vanish)
+GENUS3_CUBICB done; failures: ['the (c5, c6) system (2 genus-3 rows + 5 quadrics) has rank 4; the rows of q_6, q_17 are dependent on the others', 'genuine solutions with c_1(0) = 0, c_1 != 0 found over F_p (all 4 linear rows, 5 quadrics, 9 cubics vanish)']
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicb: circulant class, the locus c_1(0) = 0, m_1 = 0, p = 2^61-1
+PASS on {c_1(0) = 0, m_1 = 0, L2}: the cubics 11, 12, 18, 19, 20, 32 and the quadrics 6, 17 vanish identically (all 15 coordinates random)
+PASS on the locus c_4 and c_10 do not depend on the orders >= 4
+PASS on the locus c_9, q_3, q_8 depend on the orders <= 4 only
+   tau-degrees: deg G = 2, deg H = 3
+PASS tau-degrees resolved by the node counts (14, 30)
+   U(b) = Res_tau(G, H): interpolated on 120 nodes in 0 s: degree 51
+PASS b-degree of U resolved (degree < nodes - 5)
+   U has 6 distinct roots in F_p
+   squarefree part of U has degree 18
+   root b = [26949711098162226 mod p]: a4 !=0, G(b,.) deg 2, H(b,.) deg 3, gcd degree 1
+      tau = [2048921261607339263 mod p]: full point reconstructed (2 free high directions); non-zero residuals: []
+   root b = [194643636704778391 mod p]: a4 =0, G(b,.) zero, H(b,.) zero, gcd degree None
+   root b = 1*zeta^2: a4 !=0, G(b,.) deg 2, H(b,.) zero, gcd degree None
+   root b = [1438665011064155384 mod p]: a4 !=0, G(b,.) deg 1, H(b,.) deg 2, gcd degree 0
+   root b = -1*zeta^2: a4 !=0, G(b,.) zero, H(b,.) deg 3, gcd degree None
+   root b = [2111199372508915560 mod p]: a4 =0, G(b,.) zero, H(b,.) zero, gcd degree None
+PASS genuine solutions with c_1(0) = 0, c_1 != 0 found over F_p (all 4 linear rows, 5 quadrics, 9 cubics vanish): 1
+   SOLUTION 0 (normalised c1_1 = 1): ['c1_0: 0', 'c1_1: 1', 'c1_2: [26949711098162226 mod p]', 'c2_1: [2048921261607339263 mod p]', 'c2_2: [1680114837684171679 mod p]', 'c3_0: [809534973968046337 mod p]', 'c3_1: [2278989060326897475 mod p]', 'c3_2: [446154145177850050 mod p]', 'c4_1: [2301414177458018914 mod p]', 'c4_2: [77864787478062686 mod p]', 'c5_0: [1031937834953542369 mod p]', 'c5_1: [546701283361536799 mod p]', 'c5_2: [1942414773484159921 mod p]', 'c6_1: 0', 'c6_2: 0']
+GENUS3_CUBICB done; failures: []
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicc: circulant class, strata, p = 2^61-1
+PASS b-degrees of the tau-coefficients of G, H and of a_4 resolved with 70 nodes: ([9, 8, 7], [15, 14, 13, 12], 2)
+   degrees: U 51, squarefree part 18; a_4 2, content of G 5, content of H 9, gcd of the leading coefficients 5; GENUINE part 13 with 1 root(s) in F_p
+PASS the stored solution sits at a root of the genuine part
+   non-rational genuine roots: irreducible factors (degree, multiplicity count) [(2, 1), (10, 1)]
+   special b = [194643636704778391 mod p] (content of H (H(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = 1*zeta^2 (content of H (H(b, .) = 0)): the other polynomial has degree 2, 2 root(s) in F_p
+      tau = [568583147349475541 mod p]: point reconstructed, non-zero residuals []
+      tau = [588610723887314636 mod p]: point reconstructed, non-zero residuals []
+   special b = [2111199372508915560 mod p] (content of H (H(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = [194643636704778391 mod p] (content of G (G(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = -1*zeta^2 (content of G (G(b, .) = 0)): the other polynomial has degree 3, 2 root(s) in F_p
+      tau = [1943922680981712150 mod p]: point reconstructed, non-zero residuals []
+      tau = [2257701633876054802 mod p]: point reconstructed, non-zero residuals []
+   special b = [2111199372508915560 mod p] (content of G (G(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   a_4(b) = 0 at b = [194643636704778391 mod p]: B_4(tau) has degree 2, the residual condition degree 3, gcd degree 0
+PASS no solution on the fibre a_4 = 0, b = [194643636704778391 mod p] (B_4 and the residual condition have no common root)
+   a_4(b) = 0 at b = [2111199372508915560 mod p]: B_4(tau) has degree 2, the residual condition degree 3, gcd degree 0
+PASS no solution on the fibre a_4 = 0, b = [2111199372508915560 mod p] (B_4 and the residual condition have no common root)
+   additional solutions at special b over F_p: 4
+   c1 = (0, 0, 1): a_4 != 0; deg G 2, deg H 3, gcd degree 0
+PASS c1 = (0, 0, 1): no solution (G and H non-zero with trivial gcd, a_4 != 0)
+PASS c1 = 0: m_1 = 0 fixes c2 up to scale (c2_2 from m_1 agrees)
+   c1 = 0, c2 = s v2: cubics at s = 1, w = 0: non-zero for graphs [9]
+PASS c1 = 0: the cubics do not depend on c3 and some cubic is non-zero on the c2-line, so c2 = 0
+   c1 = c2 = 0: the genus-2 rows leave the c3-line; quadrics on it: {3: '0', 6: '0', 7: '5/192*zeta^1', 8: '0', 17: '0'} (independent of the orders >= 4: True)
+PASS c1 = c2 = 0: some two-edge quadric is non-zero on the c3-line and independent of the high part, so c3 = 0: the stratum c1 = 0 contains only the pure-high solutions
+   chart c_1(0) = 1: tau-degrees of the four minors at random c1: [3, 3, 3, 3]; gcd degrees [0, 0, 0, 0, 0, 0]
+PASS chart c_1(0) = 1: at 6 random c1 = (1, a, b) the four minors have no common root in tau (the cubic rows and q_3 are inconsistent)
+   chart c_1(0) = 1, random line 0: s-degrees of the three tau-resultants [104, 107, 101] (nodes 220), gcd degree 81
+   chart c_1(0) = 1, random line 1: s-degrees of the three tau-resultants [104, 107, 101] (nodes 220), gcd degree 81
+FAIL chart c_1(0) = 1: no solution on two random lines of the (a, b)-plane (resultant degrees resolved, trivial gcd)
+GENUS3_CUBICC FAILURES: ['chart c_1(0) = 1: no solution on two random lines of the (a, b)-plane (resultant degrees resolved, trivial gcd)']
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicc: circulant class, strata, p = 2^61-1
+PASS b-degrees of the tau-coefficients of G, H and of a_4 resolved with 70 nodes: ([9, 8, 7], [15, 14, 13, 12], 2)
+   degrees: U 51, squarefree part 18; a_4 2, content of G 5, content of H 9, gcd of the leading coefficients 5; GENUINE part 13 with 1 root(s) in F_p
+PASS the stored solution sits at a root of the genuine part
+   non-rational genuine roots: irreducible factors (degree, multiplicity count) [(2, 1), (10, 1)]
+   special b = [194643636704778391 mod p] (content of H (H(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = 1*zeta^2 (content of H (H(b, .) = 0)): the other polynomial has degree 2, 2 root(s) in F_p
+      tau = [568583147349475541 mod p]: point reconstructed, non-zero residuals []
+      tau = [588610723887314636 mod p]: point reconstructed, non-zero residuals []
+   special b = [2111199372508915560 mod p] (content of H (H(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = [194643636704778391 mod p] (content of G (G(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   special b = -1*zeta^2 (content of G (G(b, .) = 0)): the other polynomial has degree 3, 2 root(s) in F_p
+      tau = [1943922680981712150 mod p]: point reconstructed, non-zero residuals []
+      tau = [2257701633876054802 mod p]: point reconstructed, non-zero residuals []
+   special b = [2111199372508915560 mod p] (content of G (G(b, .) = 0)): the other polynomial has degree -1, 0 root(s) in F_p
+   a_4(b) = 0 at b = [194643636704778391 mod p]: B_4(tau) has degree 2, the residual condition degree 3, gcd degree 0
+PASS no solution on the fibre a_4 = 0, b = [194643636704778391 mod p] (B_4 and the residual condition have no common root)
+   a_4(b) = 0 at b = [2111199372508915560 mod p]: B_4(tau) has degree 2, the residual condition degree 3, gcd degree 0
+PASS no solution on the fibre a_4 = 0, b = [2111199372508915560 mod p] (B_4 and the residual condition have no common root)
+   additional solutions at special b over F_p: 4
+   c1 = (0, 0, 1): a_4 != 0; deg G 2, deg H 3, gcd degree 0
+PASS c1 = (0, 0, 1): no solution (G and H non-zero with trivial gcd, a_4 != 0)
+PASS c1 = 0: m_1 = 0 fixes c2 up to scale (c2_2 from m_1 agrees)
+   c1 = 0, c2 = s v2: cubics at s = 1, w = 0: non-zero for graphs [9]
+PASS c1 = 0: the cubics do not depend on c3 and some cubic is non-zero on the c2-line, so c2 = 0
+   c1 = c2 = 0: the genus-2 rows leave the c3-line; quadrics on it: {3: '0', 6: '0', 7: '5/192*zeta^1', 8: '0', 17: '0'} (independent of the orders >= 4: True)
+PASS c1 = c2 = 0: some two-edge quadric is non-zero on the c3-line and independent of the high part, so c3 = 0: the stratum c1 = 0 contains only the pure-high solutions
+   chart c_1(0) = 1: tau-degrees of the four combinations of minors at random c1: [3, 3, 3, 3]; gcd degrees [0, 0, 0, 0, 0, 0]
+PASS chart c_1(0) = 1: at 6 random c1 = (1, a, b) the combinations of minors have no common root in tau (the cubic rows and q_3 are inconsistent)
+   chart c_1(0) = 1, random line 0: s-degrees of the three tau-resultants [48, 48, 48] (nodes 120), gcd degree 6
+   chart c_1(0) = 1, random line 1: s-degrees of the three tau-resultants [48, 48, 48] (nodes 120), gcd degree 6
+FAIL chart c_1(0) = 1: no solution on two random lines of the (a, b)-plane (resultant degrees resolved, trivial gcd)
+GENUS3_CUBICC FAILURES: ['chart c_1(0) = 1: no solution on two random lines of the (a, b)-plane (resultant degrees resolved, trivial gcd)']
+--------------------------------------------------------------------------------------------------------------
+genus3_pi: the plane Pi of circulant solutions, p = 2^61-1
+   line 0: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p; the remaining factor of degree 5 divides a power of a_4|line: False
+   line 1: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p; the remaining factor of degree 5 divides a power of a_4|line: False
+   line 2: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p; the remaining factor of degree 5 divides a power of a_4|line: False
+   line 3: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p; the remaining factor of degree 5 divides a power of a_4|line: False
+FAIL on every random line of the chart c_1(0) = 1: exactly one solution point (F_p-rational); the rest of the common factor is supported on a_4 = 0
+PASS the solution points span a 2-dimensional linear space (rank of the 15-vectors, of their low parts, of their c1 parts): (2, 2, 2)
+FAIL ALL N_1-conditions vanish identically on Pi = span(A, B): 7 points of P^1 (forms of degree <= 3 in (x : y))
+   A: ['c1_0: 1', 'c1_1: 0', 'c1_2: -1/2*zeta^4', 'c2_1: [546612076598515791 mod p]', 'c2_2: [2239479157035299141 mod p]', 'c3_0: [532343820724339244 mod p]', 'c3_1: [2254543358767449384 mod p]', 'c3_2: [863543409078169275 mod p]', 'c4_1: [570628048317839969 mod p]', 'c4_2: [2063478838634482677 mod p]', 'c5_0: 0', 'c5_1: [1612363011499568111 mod p]', 'c5_2: [1814790425597015633 mod p]', 'c6_1: [393061989998238344 mod p]', 'c6_2: 0']
+   B: ['c1_0: 0', 'c1_1: 1', 'c1_2: -1*zeta^2', 'c2_1: [1943922680981712150 mod p]', 'c2_2: [494677967927976441 mod p]', 'c3_0: [470047775267488215 mod p]', 'c3_1: [294998946797036106 mod p]', 'c3_2: [1779302337148571430 mod p]', 'c4_1: [549793452461918241 mod p]', 'c4_2: [1932673344044091274 mod p]', 'c5_0: [2012432028094760975 mod p]', 'c5_1: [1709772562448840239 mod p]', 'c5_2: [532571407925631572 mod p]', 'c6_1: 0', 'c6_2: 0']
+PASS the c1-part of Pi is the line c1_0 + 2 zeta^3 c1_1 + 2 zeta c1_2 = 0 (the Fourier mode m = 3 of c_1 vanishes): A has c1 = (1, 0, -zeta^4/2), B has c1 = (0, 1, -zeta^2)
+PASS Pi lies in m_1 = 0
+   adding pure-high directions (kernel of the genus-3 rows, 5 of them) to a point of Pi: 0 keep all conditions (the invisible zhat^6 direction and the free visible direction)
+GENUS3_PI FAILURES: ['on every random line of the chart c_1(0) = 1: exactly one solution point (F_p-rational); the rest of the common factor is supported on a_4 = 0', 'ALL N_1-conditions vanish identically on Pi = span(A, B): 7 points of P^1 (forms of degree <= 3 in (x : y))']
+--------------------------------------------------------------------------------------------------------------
+genus3_pi: the plane Pi of circulant solutions, p = 2^61-1
+   line 0: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p; a_4|line has degree 2, the common factor of the tau^3-coefficients degree 0; the remaining factor of degree 5 is supported on these: False
+   line 1: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p; a_4|line has degree 2, the common factor of the tau^3-coefficients degree 0; the remaining factor of degree 5 is supported on these: False
+   line 2: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p; a_4|line has degree 2, the common factor of the tau^3-coefficients degree 0; the remaining factor of degree 5 is supported on these: False
+   line 3: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p; a_4|line has degree 2, the common factor of the tau^3-coefficients degree 0; the remaining factor of degree 5 is supported on these: False
+FAIL on every random line of the chart c_1(0) = 1: exactly one solution point (F_p-rational); the rest of the common factor is supported on a_4 = 0 and on the common zeros of the leading tau-coefficients (root at tau = infinity)
+PASS the solution points span a 2-dimensional linear space (rank of the 15-vectors, of their low parts, of their c1 parts): (2, 2, 2)
+PASS ALL N_1-conditions vanish identically on Pi = span(A, B): 7 points of P^1 (forms of degree <= 3 in (x : y))
+   A: ['c1_0: 1', 'c1_1: 0', 'c1_2: -1/2*zeta^4', 'c2_1: [546612076598515791 mod p]', 'c2_2: [2239479157035299141 mod p]', 'c3_0: [532343820724339244 mod p]', 'c3_1: [2254543358767449384 mod p]', 'c3_2: [863543409078169275 mod p]', 'c4_1: [570628048317839969 mod p]', 'c4_2: [2063478838634482677 mod p]', 'c5_0: 0', 'c5_1: [1612363011499568111 mod p]', 'c5_2: [1814790425597015633 mod p]', 'c6_1: [393061989998238344 mod p]', 'c6_2: 0']
+   B: ['c1_0: 0', 'c1_1: 1', 'c1_2: -1*zeta^2', 'c2_1: [1943922680981712150 mod p]', 'c2_2: [494677967927976441 mod p]', 'c3_0: [470047775267488215 mod p]', 'c3_1: [294998946797036106 mod p]', 'c3_2: [1779302337148571430 mod p]', 'c4_1: [549793452461918241 mod p]', 'c4_2: [1932673344044091274 mod p]', 'c5_0: 0', 'c5_1: [502313345591983654 mod p]', 'c5_2: [1630955200282468938 mod p]', 'c6_1: [2030578162463756845 mod p]', 'c6_2: 0']
+PASS the c1-part of Pi is the line c1_0 + 2 zeta^3 c1_1 + 2 zeta c1_2 = 0 (the Fourier mode m = 3 of c_1 vanishes): A has c1 = (1, 0, -zeta^4/2), B has c1 = (0, 1, -zeta^2)
+PASS Pi lies in m_1 = 0
+   adding pure-high directions (kernel of the genus-3 rows, 5 of them) to a point of Pi: 0 keep all conditions (the invisible zhat^6 direction and the free visible direction)
+GENUS3_PI FAILURES: ['on every random line of the chart c_1(0) = 1: exactly one solution point (F_p-rational); the rest of the common factor is supported on a_4 = 0 and on the common zeros of the leading tau-coefficients (root at tau = infinity)']
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicline: chart c_1(0) = 1, random lines, p = 2^61-1
+   tau-degree of the (c5, c6) determinant F: 4
+PASS tau-degree of F resolved
+   line 0: nodes 164, degrees of Res(E_1, E_k) [48, 48, 48] and of Res(E_k, F) [96, 96, 96, 96] (resolved: True); common factor g of degree 6; off a_4 = 0: degree 2 with 1 F_p-root(s); non-rational factor c of degree 1
+      at the F_p-root(s) (the point of Pi): every Res(E_k, F) vanishes: [True];  gcd(c, Res(E_k, F)) degrees: [1, 1, 1, 1]
+   line 1: nodes 164, degrees of Res(E_1, E_k) [48, 48, 48] and of Res(E_k, F) [96, 96, 96, 96] (resolved: True); common factor g of degree 6; off a_4 = 0: degree 2 with 1 F_p-root(s); non-rational factor c of degree 1
+      at the F_p-root(s) (the point of Pi): every Res(E_k, F) vanishes: [True];  gcd(c, Res(E_k, F)) degrees: [1, 1, 1, 1]
+PASS degrees resolved; on each line exactly one F_p-root off a_4 = 0, at which the (c5, c6) condition holds (the point of Pi)
+   VERDICT for the non-rational points: the (c5, c6) condition holds there too: they are candidates for further solutions
+GENUS3_CUBICLINE done; failures: []
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicline: chart c_1(0) = 1, random lines, p = 2^61-1
+   tau-degree of the (c5, c6) determinant F: 4
+PASS tau-degree of F resolved
+   line 0: nodes 164, degrees of Res(E_1, E_k) [48, 48, 48] and of Res(E_k, F) [96, 96, 96, 96] (resolved: True); common factor g of degree 6; off a_4 = 0: degree 2 with 1 F_p-root(s) of multiplicities [2]; remaining (non-rational) factor c of degree 0
+      at the F_p-root(s) (the point of Pi): every Res(E_k, F) vanishes: [True];  gcd(c, Res(E_k, F)) degrees: [0, 0, 0, 0]
+   line 1: nodes 164, degrees of Res(E_1, E_k) [48, 48, 48] and of Res(E_k, F) [96, 96, 96, 96] (resolved: True); common factor g of degree 6; off a_4 = 0: degree 2 with 1 F_p-root(s) of multiplicities [2]; remaining (non-rational) factor c of degree 0
+      at the F_p-root(s) (the point of Pi): every Res(E_k, F) vanishes: [True];  gcd(c, Res(E_k, F)) degrees: [0, 0, 0, 0]
+PASS degrees resolved; on each line exactly one F_p-root off a_4 = 0, at which the (c5, c6) condition holds (the point of Pi)
+PASS on each random line the common zeros of the minors off the conic a_4 = 0 are exactly the point of Pi (a double root): no other positive-dimensional family of solutions in the chart c_1(0) = 1
+GENUS3_CUBICLINE done; failures: []

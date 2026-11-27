@@ -1,0 +1,28 @@
+ev_reduced: field Q, mode can, frame (0, 0), q <= 20 (zhat^100, u^80), (H) for n <= 104, REG/Ghat_22 for q <= 20
+   log file logs/ev_reduced_Q_can_0_0_100.log
+   setup (periods, tau^m, model rows to t^100, u^80) in 2.5 s; dK_q/df_5q = 1
+   z^5  : f^can = 4537/3937500; ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 1..4 ok; 3 s
+   z^10 : f^can = -177640111151/31007812500000; ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 6..9 ok; 3 s
+   z^15 : f^can = -284328315069009259339/6226756347656250000000; ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 11..14 ok; 4 s
+   z^20 : f^can = 19636563411456..(31/29 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 16..19 ok; 4 s
+   z^25 : f^can = 38485622047381..(39/36 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 21..24 ok; 5 s
+   z^30 : f^can = -1176854732923..(54/45 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 26..29 ok; 5 s
+   z^35 : f^can = -3284302746540..(68/57 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 31..34 ok; 6 s
+   z^40 : f^can = 10164969525512..(77/62 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 36..39 ok; 7 s
+   z^45 : f^can = 27504218922159..(93/75 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 41..44 ok; 8 s
+   z^50 : f^can = -7788429637127..(106/82 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 46..49 ok; 9 s
+   z^55 : f^can = -1401559640615..(116/87 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 51..54 ok; 10 s
+   z^60 : f^can = 16983971454575..(132/99 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 56..59 ok; 12 s
+   z^65 : f^can = 31284734305393..(146/109 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 61..64 ok; 14 s
+   z^70 : f^can = -3929574525583..(163/120 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 66..69 ok; 16 s
+   z^75 : f^can = -3309268586615..(177/129 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 71..74 ok; 19 s
+   z^80 : f^can = 23037099847364..(191/138 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 76..79 ok; 23 s
+   z^85 : f^can = 22616447579489..(200/141 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 81..84 ok; 27 s
+   z^90 : f^can = -9884281021439..(220/155 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 86..89 ok; 32 s
+   z^95 : f^can = -3587308941803..(233/162 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 91..94 ok; 38 s
+   z^100: f^can = 21935768761573..(245/169 digits); ph^can(1) - h = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 96..99 ok; 45 s
+PASS (H): ph_n(1) = h_n for all 84 n <= 104 with 5 not | n (no free parameter: the WKB recursion alone): []
+PASS no resonance obstruction at the 20 multiples of 5 <= 104 (20 of them because deg rho_n < 4n/5): polynomial-type solution exists
+PASS (N), connection form: ph^can_5q(1) = h_5q for q = 1..20 (f^can fixed at the conifold by K_q = 0, no QRR input): []
+PASS REG and (R1): [u^j] Ghat_11 = [u^j] Ghat_22 = 0 (j < 4q) and Ghat_22 slot = Ghat_11 slot, q <= 20
+EV_REDUCED Q can 0_0 q<=20: ALL CHECKS PASSED   (45 s)

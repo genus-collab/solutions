@@ -1,0 +1,8 @@
+frame (0, 0): leading terms [z^-n] Y^C_Q,a = coefficient u^w, (n, a, w, coefficient) for n <= 6: [(0, 1, 0, '-1'), (1, 0, 1, '-1'), (2, 4, 2, '1/2'), (3, 3, 3, '-1/6'), (4, 2, 4, '-1/24'), (5, 1, 4, '1/96'), (6, 0, 5, '1/480')]
+PASS (V) frame (0, 0): ord_u [z^-n] Y^C_{Q,a} = (4n + c_a + 1)/5 exactly, zero off the grading n = 1 - a mod 5, same valuation and leading coefficient for the model Y^C(v(u)) (46 graded slots, n <= 45): []
+PASS (D) frame (0, 0): p_{0,a} = p_{0,0} prod_{j<a} bt_j/b_j and p_{0,0} = tau^(-1/4)/varpi_0 through u^37 (P_11(0, 0) = 1)
+frame (1/3, -2/7): leading terms [z^-n] Y^C_Q,a = coefficient u^w, (n, a, w, coefficient) for n <= 6: [(0, 1, 0, '-1'), (1, 0, 1, '-1'), (2, 4, 2, '1/2'), (3, 3, 3, '-1/6'), (4, 2, 4, '-1/24'), (5, 1, 4, '1/96'), (6, 0, 5, '1/480')]
+PASS (V) frame (1/3, -2/7): ord_u [z^-n] Y^C_{Q,a} = (4n + c_a + 1)/5 exactly, zero off the grading n = 1 - a mod 5, same valuation and leading coefficient for the model Y^C(v(u)) (46 graded slots, n <= 45): []
+PASS (D) frame (1/3, -2/7): p_{0,a} = p_{0,0} prod_{j<a} bt_j/b_j and p_{0,0} = tau^(-1/4)/varpi_0 through u^37 (P_11(0, 0) = 1)
+PASS (F) phi_{i,m} = (u tau^(-1/2)/5) tau^(-m) zeta^(i(m-2)) / (4^q q! (m-q)!), q = floor(m/5): support, phase and value for m <= 80: []
+GI_FORMULAS: ALL CHECKS PASSED   (8 s)

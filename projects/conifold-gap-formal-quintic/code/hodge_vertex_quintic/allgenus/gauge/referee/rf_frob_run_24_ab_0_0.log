@@ -1,0 +1,13 @@
+rf_frob_run: frame (0, 0), unknown C(z) = P(0, z) mod z^25, u-recursion to n = 22 (own periods, own recursion)
+   85 unknowns; recursion done in 7 s
+PASS grading of every P^(n) slot (e = a - b mod 5)
+   complete regularity equations per u-order n = 1..22: [7, 13, 19, 26, 32, 38, 44, 51, 57, 63, 69, 76, 82, 88, 94, 101, 107, 113, 119, 125, 125, 125] (total 1574); reach_n (max over entries): [3, 4, 5, 6, 8, 9, 10, 11, 13, 14, 15, 16, 18, 19, 20, 21, 23, 24, 25, 26, 28, 29]
+   (1) homogeneous system: rank 79 of 85 unknowns, inconsistent rows 0; free unknowns (a, b, k): [(1, 1, 0), (1, 1, 5), (1, 1, 10), (1, 1, 15), (1, 1, 20), (1, 2, 24)]
+PASS (1) below z^24 the only free unknowns are the normalisation slots C_11 at z^(5q) (solution space = C c(z^5))
+   (2) canonical normalisation: 84 of 85 unknowns determined, all slots with k < 24 determined; inconsistent rows 0
+PASS (2a) the normalised system is consistent
+   C diagonal at z^5 (b = 0..4): ['43397/807975000', '0', '?', '283/2835000', '-12659/201993750']
+   C_30 (pi) at z^3, z^8: 127/3150, 1416472237/725359556250000
+PASS (2b) C = P^can(0, z) of the project gauge (ur_gauge, normalised here) in all 84 determined slots k < 24: []
+PASS (3) P^(n)[z^e] from the u-recursion = ur_gauge canonical, 1171 complete slots (n <= 22, e >= 0): []
+RF_FROB_RUN 24_ab_0_0: ALL PASS (48 s)

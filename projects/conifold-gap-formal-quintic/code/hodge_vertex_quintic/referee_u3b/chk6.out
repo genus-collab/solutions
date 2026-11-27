@@ -1,0 +1,85 @@
+== Delta* (circ_star)
+   c1_0  1   [1 bits: strong]
+   c1_1  (1 zeta + 1 zeta^3)/2   [2 bits: strong]
+   c1_2  (1 zeta + 1 zeta^2)/2   [2 bits: strong]
+   c2_1  (21 - 9 zeta + 9 zeta^2 - 21 zeta^3)/40   [6 bits: strong]
+   c2_2  (12 - 30 zeta - 18 zeta^2 - 9 zeta^3)/40   [6 bits: strong]
+   c3_0  (-18)/25   [5 bits: strong]
+   c3_1  (-243 + 9 zeta - 243 zeta^2)/1600   [11 bits: strong]
+   c3_2  (243 zeta + 252 zeta^2 + 243 zeta^3)/1600   [11 bits: strong]
+   c4_1  (-21699 + 9549 zeta - 12150 zeta^2 - 6075 zeta^3)/160000   [18 bits: strong]
+   c4_2  (-9549 + 6075 zeta + 21699 zeta^2 + 12150 zeta^3)/160000   [18 bits: strong]
+   c5_0  0
+   c5_1  not reconstructed   [24 bits: generic length, rejected]
+   c5_2  not reconstructed   [24 bits: generic length, rejected]
+   c6_1  not reconstructed   [28 bits: generic length, rejected]
+   c6_2  0
+   reconstructed 10 of 13 non-zero coordinates
+== circ_b_extra[0] normalised c1_1 = 1
+   c1_0  0
+   c1_1  1   [1 bits: strong]
+   c1_2  1 zeta^2   [1 bits: strong]
+   c2_1  not reconstructed   [30 bits: generic length, rejected]
+   c2_2  not reconstructed   [30 bits: generic length, rejected]
+   c3_0  not reconstructed   [30 bits: generic length, rejected]
+   c3_1  not reconstructed   [30 bits: generic length, rejected]
+   c3_2  not reconstructed   [30 bits: generic length, rejected]
+   c4_1  not reconstructed   [29 bits: generic length, rejected]
+   c4_2  not reconstructed   [30 bits: generic length, rejected]
+   c5_0  not reconstructed   [30 bits: generic length, rejected]
+   c5_1  not reconstructed   [30 bits: generic length, rejected]
+   c5_2  not reconstructed   [30 bits: generic length, rejected]
+   c6_1  0
+   c6_2  0
+   reconstructed 2 of 12 non-zero coordinates
+== circ_b_extra[1] normalised c1_1 = 1
+   c1_0  0
+   c1_1  1   [1 bits: strong]
+   c1_2  1 zeta^2   [1 bits: strong]
+   c2_1  not reconstructed   [29 bits: generic length, rejected]
+   c2_2  not reconstructed   [30 bits: generic length, rejected]
+   c3_0  not reconstructed   [29 bits: generic length, rejected]
+   c3_1  not reconstructed   [30 bits: generic length, rejected]
+   c3_2  not reconstructed   [30 bits: generic length, rejected]
+   c4_1  not reconstructed   [29 bits: generic length, rejected]
+   c4_2  not reconstructed   [30 bits: generic length, rejected]
+   c5_0  not reconstructed   [29 bits: generic length, rejected]
+   c5_1  not reconstructed   [29 bits: generic length, rejected]
+   c5_2  not reconstructed   [30 bits: generic length, rejected]
+   c6_1  0
+   c6_2  0
+   reconstructed 2 of 12 non-zero coordinates
+== circ_b_extra[2] normalised c1_1 = 1
+   c1_0  0
+   c1_1  1   [1 bits: strong]
+   c1_2  -1 zeta^2   [1 bits: strong]
+   c2_1  (-2 + 3 zeta - 1 zeta^2 - 5 zeta^3)/20   [5 bits: strong]
+   c2_2  (3 + 4 zeta + 5 zeta^2 + 8 zeta^3)/20   [5 bits: strong]
+   c3_0  (24 + 24 zeta + 12 zeta^3)/125   [7 bits: strong]
+   c3_1  (-249 - 126 zeta - 126 zeta^2 - 249 zeta^3)/4000   [12 bits: strong]
+   c3_2  (-126 + 123 zeta^2 + 123 zeta^3)/4000   [12 bits: strong]
+   c4_1  (13896 + 3159 zeta - 7578 zeta^2 + 6318 zeta^3)/80000   [17 bits: strong]
+   c4_2  (3159 + 10737 zeta - 10737 zeta^2 - 3159 zeta^3)/80000   [17 bits: strong]
+   c5_0  not reconstructed   [27 bits: generic length, rejected]
+   c5_1  not reconstructed   [30 bits: generic length, rejected]
+   c5_2  not reconstructed   [30 bits: generic length, rejected]
+   c6_1  0
+   c6_2  0
+   reconstructed 9 of 12 non-zero coordinates
+== circ_b_extra[3] normalised c1_1 = 1
+   c1_0  0
+   c1_1  1   [1 bits: strong]
+   c1_2  -1 zeta^2   [1 bits: strong]
+   c2_1  (-98 - 33 zeta - 49 zeta^2 - 65 zeta^3)/180   [8 bits: strong]
+   c2_2  (-33 + 16 zeta + 65 zeta^2 + 32 zeta^3)/180   [8 bits: strong]
+   c3_0  (172 + 172 zeta + 86 zeta^3)/375   [9 bits: strong]
+   c3_1  (-182369 - 194006 zeta - 194006 zeta^2 - 182369 zeta^3)/324000   [19 bits: strong]
+   c3_2  (-194006 - 11637 zeta^2 - 11637 zeta^3)/324000   [19 bits: strong]
+   c4_1  not reconstructed   [26 bits: generic length, rejected]
+   c4_2  not reconstructed   [26 bits: generic length, rejected]
+   c5_0  not reconstructed   [29 bits: generic length, rejected]
+   c5_1  not reconstructed   [30 bits: generic length, rejected]
+   c5_2  not reconstructed   [29 bits: generic length, rejected]
+   c6_1  0
+   c6_2  0
+   reconstructed 7 of 12 non-zero coordinates

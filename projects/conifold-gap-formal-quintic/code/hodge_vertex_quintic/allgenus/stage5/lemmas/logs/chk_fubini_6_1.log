@@ -1,0 +1,18 @@
+chk_fubini: Lemma L1b through z^6, 1 random instances per shape (nx, ny); log logs/chk_fubini_6_1.log
+PASS (nx, ny) = (1, 1) inst 0: total SP = iterated SP through z^6 (H = [[-5, -2], [-2, -3]], 12 phase terms)   z^1: 4467/2662, z^2: 16091527/1288408  (0.1 s)
+PASS control (must fail): (nx, ny) = (1, 1): no factor (det K(y)/det K(0))^(-1/2)   first differs at z^1
+PASS control (must fail): (nx, ny) = (1, 1): inner covariance frozen at y = 0   first differs at z^1
+PASS control (must fail): (nx, ny) = (1, 1): inner expansion at x = 0, linear term dropped   first differs at z^1
+PASS (nx, ny) = (1, 2) inst 0: total SP = iterated SP through z^6 (H = [[-2, 2, 1], [2, -4, -1], [1, -1, -4]], 20 phase terms)   z^1: 649693/5488, z^2: 807195113479/8605184  (1.1 s)
+PASS control (must fail): (nx, ny) = (1, 2): no factor (det K(y)/det K(0))^(-1/2)   first differs at z^1
+PASS control (must fail): (nx, ny) = (1, 2): inner covariance frozen at y = 0   first differs at z^1
+PASS control (must fail): (nx, ny) = (1, 2): inner expansion at x = 0, linear term dropped   first differs at z^1
+PASS (nx, ny) = (2, 1) inst 0: total SP = iterated SP through z^6 (H = [[-5, 2, -2], [2, -5, 0], [-2, 0, -2]], 22 phase terms)   z^1: 1180745/10648, z^2: 1471280657651/20614528  (1.2 s)
+PASS control (must fail): (nx, ny) = (2, 1): no factor (det K(y)/det K(0))^(-1/2)   first differs at z^1
+PASS control (must fail): (nx, ny) = (2, 1): inner covariance frozen at y = 0   first differs at z^1
+PASS control (must fail): (nx, ny) = (2, 1): inner expansion at x = 0, linear term dropped   first differs at z^1
+PASS (nx, ny) = (2, 2) inst 0: total SP = iterated SP through z^6 (H = [[-2, 0, -2, 0], [0, -4, 1, -1], [-2, 1, -4, 1], [0, -1, 1, -2]], 43 phase terms)   z^1: 937/20, z^2: 1237732477/100000  (17.2 s)
+PASS control (must fail): (nx, ny) = (2, 2): no factor (det K(y)/det K(0))^(-1/2)   first differs at z^1
+PASS control (must fail): (nx, ny) = (2, 2): inner covariance frozen at y = 0   first differs at z^1
+PASS control (must fail): (nx, ny) = (2, 2): inner expansion at x = 0, linear term dropped   first differs at z^1
+CHK_FUBINI 6 1: ALL CHECKS PASSED   (36 s)

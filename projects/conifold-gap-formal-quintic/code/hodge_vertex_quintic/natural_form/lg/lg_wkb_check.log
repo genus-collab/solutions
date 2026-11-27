@@ -1,0 +1,5 @@
+PASS p = 2^89-1, colour 0, Nz = 40: deg_L phi_n = 4n: True;  [L^4n] phi_n = zeta^(-i n) g^0_n for all n <= 40: True   (0.0 s)
+PASS p = 2^89-1, colour 1, Nz = 40: deg_L phi_n = 4n: True;  [L^4n] phi_n = zeta^(-i n) g^0_n for all n <= 40: True   (0.0 s)
+PASS p = 2^61-1, colour 0, Nz = 40: deg_L phi_n = 4n: True;  [L^4n] phi_n = zeta^(-i n) g^0_n for all n <= 40: True   (0.0 s)
+PASS p = 2^61-1, colour 1, Nz = 40: deg_L phi_n = 4n: True;  [L^4n] phi_n = zeta^(-i n) g^0_n for all n <= 40: True   (0.0 s)
+ALL PASS

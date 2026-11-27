@@ -1,0 +1,6 @@
+  g=2 frame(4,2): exponent 1, (-5)^(1-g) <leg, omega> = -41/9600 = frozen value
+  g=2 frame(3,3): exponent 0, (-5)^(1-g) <leg, omega> = 3/3200 = frozen value
+  g=3 frame(6,0): exponent 0, (-5)^(1-g) <leg, omega> = 3/128000 = frozen value
+  g=3 frame(7,4): exponent 1, (-5)^(1-g) <leg, omega> = 223/2688000 = frozen value
+ E2E: 52 frame one-point functions (g = 2, 3), 4 non-zero, mismatches 0; 15.4 s
+RESULT: ALL CHECKS PASSED

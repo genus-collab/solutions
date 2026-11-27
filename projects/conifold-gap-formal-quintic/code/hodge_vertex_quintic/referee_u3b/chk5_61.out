@@ -1,0 +1,6 @@
+prime 61  B of Pi                            graph  6: grad q = 0: True  [u^0..u^2] = 0: True  [u^3] = 0: True  (eps-degree 4, 2 s)
+prime 61  B of Pi                            graph 17: grad q = 0: True  [u^0..u^2] = 0: True  [u^3] = 0: True  (eps-degree 2, 2 s)
+prime 61  extra[2] (B with another c5, c6)   graph  6: grad q = 0: False [u^0..u^2] = 0: True  [u^3] = 0: False (eps-degree 4, 3 s)
+prime 61  extra[2] (B with another c5, c6)   graph 17: grad q = 0: True  [u^0..u^2] = 0: True  [u^3] = 0: True  (eps-degree 2, 4 s)
+prime 61  A + 2B                             graph  6: grad q = 0: False [u^0..u^2] = 0: True  [u^3] = 0: False (eps-degree 4, 5 s)
+prime 61  A + 2B                             graph 17: grad q = 0: True  [u^0..u^2] = 0: True  [u^3] = 0: True  (eps-degree 2, 5 s)

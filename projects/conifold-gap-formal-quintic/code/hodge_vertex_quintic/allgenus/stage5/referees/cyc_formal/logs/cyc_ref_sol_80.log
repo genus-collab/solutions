@@ -1,0 +1,33 @@
+# logs/cyc_ref_sol_80.log (py -I -B cyc_ref_sol.py 80)
+PASS S1 f_0, f_1, f_2 solve PF4 (operator applied) below u^77
+PASS S1 f_k = u^k + O(u^3): f_0 = 1 + 2/625 u^3, f_1 = u - 19/60 u^3, f_2 = u^2 + 37/30 u^3 (CYC s.8, fq_conifold, UR)
+   obstruction matrix [u^m] r(f_i) (rows m = -3, -2, -1; columns i = 0, 1, 2): [['-2', '0', '0'], ['17/5', '0', '0'], ['-7/5', '-7/5', '2']]
+PASS S2 the l-part of PF4(f_i l) is PF4(f_i) = 0
+PASS S2 obstruction rank 2 on span(f_0, f_1, f_2), kernel spanned by (0, 1, 7/10): g = f_1 + (7/10) f_2 unique up to scale
+PASS S2 referee's formula [u^-3] r(f) = -2 f(0) on the basis
+PASS S2 the h-equation has no obstruction for g; h_0 = h_1 = h_2 = 0
+PASS S2 y_3 = g l + h solves PF4 below u^77
+   g = u + 7/10 u^2 + 41/75 u^3 + ...;  h = -23/360 u^3 + -6397/60000 u^4 + ...
+PASS control (fails as it must): S2 gamma = 1/2 unobstructed
+PASS control (fails as it must): S2 g + f_0 unobstructed
+   Bmat (basis f_0, f_1, f_2, y_3) = [['0', '-7/5', '2', '-9/10'], ['7/5', '0', '0', '-1'], ['-2', '0', '0', '0'], ['9/10', '1', '0', '0']]   (constancy checked below u^78)
+PASS S3 B(y_i, y_j) log-free
+PASS S3 B(y_i, y_j) constant (every u^e, e != 0, vanishes)
+PASS S3 B alternating
+PASS S3 Bmat equals the matrix of CYC s.3
+PASS S3 det Bmat = 4 and Pf(Bmat) = 2 (only B(f_0,f_2) = 2 and B(f_1,y_3) = -1 enter the Pfaffian)
+PASS S3 fq_conifold basis (f_0, g, f_2): column g vanishes ("pairing vacuous")
+PASS control (fails as it must): S3 concomitant without its k = 1 term constant on (f_0, f_1)
+PASS S4 det Wr is l-free and equals C u^-2 (no other power below u^76), C^2 = det Bmat = 4
+   det Wr = -2 u^-2
+PASS S5 C3: Wr Binv Wr^T = P^-1 entrywise (16 entries; T_k = 0 for k <= 2, T_3 = 1/u) below u^75
+PASS control (fails as it must): S5 the same with Binv perturbed by E_01 - E_10
+PASS S6 tau D = D tau on 6 random elements of R (l-degree 3, exact)
+PASS control (fails as it must): S6 l -> l + u commutes with D (on l)
+PASS S6 tau y_3 = y_3 + g, tau f_i = f_i
+PASS control (fails as it must): S6 l -> l + u maps y_3 to a solution
+PASS S6 B(tau y_i, tau y_j) = B(y_i, y_j), computed directly on the transformed elements
+PASS S6 B(f, g) = 0 for 5 random power-series solutions f
+PASS S6 B(y_3, g) = 1 (CYC s.5)
+PASS control (fails as it must): S6 Lemma 0's conclusion for D l' = 1 - u = D(-u) instead of 1 - 1/u (D l' in D(K)): l' + u is not a constant
+CYC_REF_SOL 80: ALL CHECKS PASSED   (15.1 s)

@@ -1,0 +1,18 @@
+rf_t5_rmat.py  2026-11-13 20:04  (exact Q(zeta5), z^0..z^10)
+kappa = 1 (x = 1 W, Lam = -5):
+  [PASS] (2-31) Laplace transform of B, row = branch point: X_n = (-1/kappa)^n C_n^T for n = 0..10 (all 25 entries); orders passing: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+     transposed reading X_n = (-1/kappa)^n C_n holds only for n = [0, 1]
+  [PASS] (2-32) (Laplace transform of dy) = R^-1(z) applied to the unit, n = 0..10, all colours
+  [PASS] (2-32) = M_0(z/kappa)^-1 1^ with 1^_k = 1/c_k (frozen unit), n = 0..10
+  [PASS] dilaton leaf T(z) = z(1^ - M_0^-1 1^), colour 0, z^2..z^5: ['-3/20', '-9/800', '11571/80000', '2415609/6400000']
+kappa = 4 (x = 4 W, Lam = -20):
+  [PASS] (2-31) Laplace transform of B, row = branch point: X_n = (-1/kappa)^n C_n^T for n = 0..10 (all 25 entries); orders passing: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+     transposed reading X_n = (-1/kappa)^n C_n holds only for n = [0, 1]
+  [PASS] (2-32) (Laplace transform of dy) = R^-1(z) applied to the unit, n = 0..10, all colours
+  [PASS] (2-32) = M_0(z/kappa)^-1 1^ with 1^_k = 1/c_k (frozen unit), n = 0..10
+kappa = -1 (x = -1 W, Lam = 5):
+  [PASS] (2-31) Laplace transform of B, row = branch point: X_n = (-1/kappa)^n C_n^T for n = 0..10 (all 25 entries); orders passing: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+     transposed reading X_n = (-1/kappa)^n C_n holds only for n = [0, 1]
+  [PASS] (2-32) (Laplace transform of dy) = R^-1(z) applied to the unit, n = 0..10, all colours
+  [PASS] (2-32) = M_0(z/kappa)^-1 1^ with 1^_k = 1/c_k (frozen unit), n = 0..10
+== ALL CHECKS PASSED (3.6 s, 0 failures)

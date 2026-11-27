@@ -1,0 +1,130 @@
+% Section 3, part 2 of 7: transversality, isotropy, the conifold expansion, special geometry, (CYC), the cyclic system.
+
+\begin{lem}[Transversality]
+\label{lem:gau-transv}
+For every basis $\mathbf x$ of $\mathcal S$ and $a,b\in\{0,\dots,3\}$, in the fraction field of $\bbK[\ell]$,
+\[
+\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}\,\Dq^ax_i\,\Dq^bx_j=(\Jet^{-1})_{ab},
+\]
+where $(\Jet^{-1})_{ab}=0$ for $a+b\leq2$ and $(\Jet^{-1})_{03}=u^{-1}$. In particular the transversality sums of \cref{def:gau-conc} do not depend on the basis, $\Upsilon_0=\Upsilon_1=\Upsilon_2=0$ and $\Upsilon_3=u^{-1}$.
+\end{lem}
+
+\begin{proof}
+$\bbK[\ell]$ is a domain and $\det\Wr_{\mathbf x}\neq0$ (\cref{lem:gau-conc}~(iv)), so $\Conc_{\mathbf x}=\Wr_{\mathbf x}^T\Jet\Wr_{\mathbf x}$ gives $\Jet^{-1}=\Wr_{\mathbf x}\Conc_{\mathbf x}^{-1}\Wr_{\mathbf x}^T$ over the fraction field; its entry $(a,b)$ is the left side. Let $J$ be the $4\times4$ exchange matrix, $J_{ac}=\delta_{a+c,3}$. The entry $(\Jet J)_{ac}=\Jet_{a,3-c}$ vanishes for $c<a$, because then $a+3-c\geq4$ (\cref{lem:gau-conc}~(iii)); so $\Jet J$ is upper triangular with diagonal entries $\Jet_{c,3-c}=(-1)^{3-c}u$, and so is its inverse $J\Jet^{-1}$, with diagonal entries $1/\Jet_{c,3-c}$. The entry $(J\Jet^{-1})_{ca}=(\Jet^{-1})_{3-c,a}$ vanishes for $a<c$, i.e.\ $(\Jet^{-1})_{ba}=0$ for $a+b<3$, and $(\Jet^{-1})_{03}=(J\Jet^{-1})_{33}=1/\Jet_{30}=u^{-1}$. The sums $\Upsilon_k$ are the entries $(0,k)$, and $\widetilde\Upsilon_k$ is built from the bivector $\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}x_i\otimes x_j\in\mathcal S\otimes\mathcal S$, which does not depend on $\mathbf x$: for the basis $\mathbf xM$, $M\in GL_4(\bbQ)$, the Gram matrix is $M^T\Conc_{\mathbf x}M$.
+\end{proof}
+
+\begin{lem}[Isotropy, formal Picard--Lefschetz]
+\label{lem:gau-iso}
+\begin{enumerate}
+\item $\sh$ commutes with $\Dq$, fixes $f_0,f_1,f_2$ and maps $y_3$ to $y_3+\varpi_1$; so $\sh(\mathcal S)=\mathcal S$.
+\item $\Conc(f,\varpi_1)=0$ for every $f\in\mathcal S\cap\bbK$, and $\Conc(y_3,\varpi_1)=1$.
+\item On $\mathcal S\cap\bbK$ the form $\Conc$ has rank $2$ and radical $\bbQ\varpi_1$, and a plane in $\mathcal S\cap\bbK$ is isotropic if and only if it contains $\varpi_1$. In particular $\operatorname{span}(y_0,\varpi_1)$ is isotropic for every power-series solution $y_0$; and $\Conc(f_0,f_1+\gamma'f_2)=-\frac75+2\gamma'$ vanishes only for $\gamma'=\gamma=\frac7{10}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) $\sh$ is an automorphism with inverse $\ell\mapsto\ell-1$. The maps $\Dq\circ\sh$ and $\sh\circ\Dq$ are additive and both satisfy $X(fg)=X(f)\sh(g)+\sh(f)X(g)$; they agree on $\bbK$, where $\sh$ is the identity, and on $\ell$, since $\Dq(\ell+1)=\Dq\ell=\sh(\Dq\ell)$ because $\Dq\ell\in\bbK$. By the twisted Leibniz rule they agree on every monomial $a\ell^k$, hence on $\bbK[\ell]$. Clearly $\sh f_k=f_k$, and $\sh y_3=\varpi_1(\ell+1)+\rho_3=y_3+\varpi_1$.
+
+(ii) $\Conc(f,g)$ is a polynomial in the derivatives of $f$ and $g$ with coefficients in $\bbK$, so $\sh\Conc(f,g)=\Conc(\sh f,\sh g)$ by (i). For $f\in\mathcal S\cap\bbK$ the number $\Conc(f,y_3)\in\bbQ$ (\cref{lem:gau-conc}~(ii)) is fixed by $\sh$, so $\Conc(f,y_3)=\Conc(f,y_3+\varpi_1)=\Conc(f,y_3)+\Conc(f,\varpi_1)$, i.e.\ $\Conc(f,\varpi_1)=0$. By alternation and \cref{lem:gau-conc}~(iv), $\Conc(y_3,\varpi_1)=-\Conc(f_1,y_3)-\gamma\Conc(f_2,y_3)=1$.
+
+(iii) By \cref{lem:gau-conc}~(iv) the Gram matrix of $\Conc$ on $(f_0,f_1,f_2)$ is $\frac75(E_{10}-E_{01})+2(E_{02}-E_{20})$, of rank $2$, with kernel spanned by $(0,1,\gamma)$, i.e.\ by $\varpi_1$; this also gives the last assertion. If a plane $\Lambda\subset\mathcal S\cap\bbK$ does not contain $\varpi_1$, then $\mathcal S\cap\bbK=\Lambda\oplus\bbQ\varpi_1$ with $\varpi_1$ in the radical, so $\Conc|_\Lambda$ has rank $2$ and $\Lambda$ is not isotropic. A plane containing $\varpi_1$ is spanned by $\varpi_1$ and some $y_0$, and it is isotropic by (ii) and alternation.
+\end{proof}
+
+\begin{lem}[The conifold expansion is a ring map]
+\label{lem:gau-confexp}
+Let $(\alpha,\beta)\in\bbQ^2$, $\varpi_0=f_0+\alpha\varpi_1+\beta f_2$ and $\tc=\varpi_1/\varpi_0$ (\cref{def:set-frames}), and extend $\Dq$ from $\bbK$ to $\bbQ\lser s$, $s^5=u$, by $\Dq s=-(1-s^5)/(5s^4)$. The assignment of \cref{def:set-confexp} on the generators of $\Nring$ extends to a unique ring homomorphism $\Cexp_{\alpha,\beta}\colon\Nring\to\bbQ\lser s$, and $\Cexp_{\alpha,\beta}\circ\Dq=\Dq\circ\Cexp_{\alpha,\beta}$. For the elements $C_0=c_0$, $I_1=c_0\logq+i_0$, $T=I_1/C_0$ and $C_1=\mathsf W/c_0^2$ of $\Nring$ (\cref{def:set-confexp}), which evaluate to the functions of \cref{def:set-genus0},
+\[
+\Cexp_{\alpha,\beta}(C_0)=\varpi_0,\qquad \Cexp_{\alpha,\beta}(I_1)=\varpi_1,\qquad \Cexp_{\alpha,\beta}(\mathsf W)=\varpi_0\Dq\varpi_1-\varpi_1\Dq\varpi_0=\varpi_0^2\,\Dq\tc ,
+\]
+so the conifold expansion sends $C_0$, $I_1$, $T$ and $C_1$ to $\varpi_0$, $\varpi_1$, $\tc$ and $\Dq\tc$.
+\end{lem}
+
+\begin{proof}
+Write $\Cexp:=\Cexp_{\alpha,\beta}$, and recall $\Xi=-\log(1-u)\in\bbQ\fps u$ (\cref{def:set-confexp}), so that $\Dq\Xi=-1$ and $\Dq^k\Xi=0$ for $k\geq2$. By \cref{def:set-confexp}, $\Cexp(L)=s^{-1}$, $\Cexp(\logq)=-\Xi$, $\Cexp(c_j)=\Dq^j\varpi_0$ and $\Cexp(i_j)=\Dq^j\varpi_1-j\Dq^{j-1}\varpi_0+\Xi\Dq^j\varpi_0=\Dq^j(\varpi_1+\Xi\varpi_0)$, the last equality by the Leibniz rule. $\Nring$ is the localisation of a polynomial ring at $L$, $c_0$ and $\mathsf W$, so the assignment extends to a unique ring homomorphism as soon as these three go to units. $s^{-1}$ and $\varpi_0$ ($\varpi_0(0)=1$) are units, and
+\[
+\Cexp(\mathsf W)=\varpi_0^2+\varpi_0\bigl(\Dq\varpi_1-\varpi_0+\Xi\Dq\varpi_0\bigr)-\Dq\varpi_0\bigl(\varpi_1+\Xi\varpi_0\bigr)=\varpi_0\Dq\varpi_1-\varpi_1\Dq\varpi_0=\varpi_0^2\Dq\tc,
+\]
+a unit because $\Dq\tc(0)=-\tc'(0)=-1$ (\cref{def:set-frames}). Also $\Cexp(I_1)=-\Xi\varpi_0+\varpi_1+\Xi\varpi_0=\varpi_1$.
+
+$\Dq\circ\Cexp$ and $\Cexp\circ\Dq$ are additive maps $\delta$ with $\delta(xy)=\delta(x)\Cexp(y)+\Cexp(x)\delta(y)$, so it suffices to compare them on the generators of the polynomial ring: on the inverted elements $L$, $c_0$, $\mathsf W$ such a map satisfies $\delta(x^{-1})=-\Cexp(x)^{-2}\delta(x)$. For $L$: $\Dq(s^{-1})=(s^{-6}-s^{-1})/5=\Cexp((L^6-L)/5)$; for $\logq$: $\Dq(-\Xi)=1$; for $c_0,c_1,c_2,i_0,i_1$ the images $\Dq^j\varpi_0$ and $\Dq^j(\varpi_1+\Xi\varpi_0)$ are shifted in $j$ by $\Dq$. In $\Nring$, $\Dq c_3$ is fixed by $\PFfour c_0=0$ (coefficients written through $u=L^{-5}$), and $\PFfour\varpi_0=0$ gives $\Cexp(\Dq c_3)=\Dq^4\varpi_0$. Finally $\Dq i_2$ is fixed by $\Conc(c_0,I_1)=0$, where $\Dq^3I_1=c_3\logq+3c_2+\Dq i_2$ and $\Conc$ has its coefficients in $\bbQ[u]$, $u=L^{-5}$ (\cref{def:gau-conc}); this relation is affine in $\Dq i_2$ with the unit coefficient $\Jet_{03}c_0=-L^{-5}c_0$, and by the cases treated $\Cexp(\Dq^bI_1)=\Dq^b\varpi_1$ for $b\leq2$. Its image under $\Cexp$ differs from $\Conc(\varpi_0,\varpi_1)=0$ (\cref{lem:gau-iso}~(ii)) only in the last slot, so $-u\varpi_0\bigl(\Cexp(\Dq^3I_1)-\Dq^3\varpi_1\bigr)=0$, and $\Cexp(\Dq i_2)=\Dq^3\varpi_1+\Xi\Dq^3\varpi_0-3\Dq^2\varpi_0=\Dq^3(\varpi_1+\Xi\varpi_0)=\Dq\Cexp(i_2)$. The last assertion follows from $\Cexp(I_1/c_0)=\tc$ and $\Cexp(\mathsf W/c_0^2)=\Dq\tc$.
+\end{proof}
+
+\begin{lem}[Special geometry]
+\label{lem:gau-sg}
+Let $y_0\in\bbK^\times$ and $t\in\bbK$ with $\Dq t\neq0$.
+\begin{enumerate}
+\item[(a)] For every basis $\mathbf x$ of $\mathcal S$: $\widetilde\Upsilon_1=\widetilde\Upsilon_2=0$ and $\widetilde\Upsilon_3=1/(u\,y_0^2(\Dq t)^3)$.
+\item[(b)] Suppose moreover that $y_0$ and $y_1:=ty_0$ lie in $\mathcal S\cap\bbK$ and span an isotropic plane; for instance $y_1=\varpi_1$ and $y_0$ any power-series solution not proportional to $\varpi_1$ (\cref{lem:gau-iso}). Then $\mathcal S$ has a basis $(x_0,\dots,x_3)$ with $x_0=y_0$, $x_1=y_1$, $\Conc(x_0,x_3)=\Conc(x_1,x_2)=1$ and $\Conc(x_0,x_2)=\Conc(x_1,x_3)=\Conc(x_2,x_3)=0$. With $\phi_i:=x_i/y_0$ (so $\phi_0=1$, $\phi_1=t$) and $\mathrm{Yuk}:=\de_t^2\phi_2$:
+\begin{enumerate}
+\item $\de_t^2\phi_3=-t\,\mathrm{Yuk}$; hence $\de_t^2(y/y_0)\in\mathrm{Yuk}\cdot\operatorname{span}_\bbQ(1,t)$ for every $y\in\mathcal S$;
+\item $\mathrm{Yuk}=1/(u\,y_0^2(\Dq t)^3)$.
+\end{enumerate}
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(a) Put $\dot t:=\Dq t$, a unit of $\bbK$, and (local notation) $\Upsilon^{\Dq}_m:=\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}(x_i/y_0)\Dq^m(x_j/y_0)$; $\Upsilon^{\Dq}_0=0$ because $\Conc_{\mathbf x}^{-1}$ is antisymmetric. The Leibniz rule for $x_j=y_0\cdot(x_j/y_0)$ gives $\Upsilon_k=\sum_m\binom km\,y_0\Dq^{k-m}y_0\,\Upsilon^{\Dq}_m$, so
+\[
+\Upsilon_1=y_0^2\Upsilon^{\Dq}_1,\quad \Upsilon_2=2y_0\Dq y_0\,\Upsilon^{\Dq}_1+y_0^2\Upsilon^{\Dq}_2,\quad \Upsilon_3=3y_0\Dq^2y_0\,\Upsilon^{\Dq}_1+3y_0\Dq y_0\,\Upsilon^{\Dq}_2+y_0^2\Upsilon^{\Dq}_3 .
+\]
+As operators $\Dq=\dot t\de_t$, $\Dq^2=(\Dq\dot t)\de_t+\dot t^2\de_t^2$ and $\Dq^3=(\Dq^2\dot t)\de_t+3\dot t(\Dq\dot t)\de_t^2+\dot t^3\de_t^3$, hence $\Upsilon^{\Dq}_1=\dot t\,\widetilde\Upsilon_1$, $\Upsilon^{\Dq}_2=(\Dq\dot t)\widetilde\Upsilon_1+\dot t^2\widetilde\Upsilon_2$ and $\Upsilon^{\Dq}_3=(\Dq^2\dot t)\widetilde\Upsilon_1+3\dot t(\Dq\dot t)\widetilde\Upsilon_2+\dot t^3\widetilde\Upsilon_3$. By \cref{lem:gau-transv}, $\Upsilon_1=\Upsilon_2=0$ and $\Upsilon_3=u^{-1}$; since $y_0$ and $\dot t$ are units, solving successively gives $\Upsilon^{\Dq}_1=\Upsilon^{\Dq}_2=0$, $\Upsilon^{\Dq}_3=1/(uy_0^2)$, and then (a). Isotropy is not used in (a).
+
+(b) $y_0$ and $y_1$ are linearly independent because $t$ is not constant, so $\Lambda:=\operatorname{span}(y_0,y_1)$ is an isotropic plane. As $\Conc$ is non-degenerate on the four-dimensional space $\mathcal S$ (\cref{lem:gau-conc}~(iv)), $\Lambda^\perp$ is two-dimensional and contains $\Lambda$, so $\Lambda^\perp=\Lambda$, and the map $\mathcal S\to\Lambda^*$, $x\mapsto\Conc(\cdot,x)|_\Lambda$, is onto. Choose $x_3$ with $\Conc(y_0,x_3)=1$, $\Conc(y_1,x_3)=0$, and $x_2'$ with $\Conc(y_0,x_2')=0$, $\Conc(y_1,x_2')=1$, and put $x_2:=x_2'-\Conc(x_2',x_3)\,y_0$; then $\Conc(y_0,x_2)=0$, $\Conc(y_1,x_2)=1$ and $\Conc(x_2,x_3)=0$. The Gram matrix of $(x_0,\dots,x_3)$ is $E_{03}+E_{12}-E_{21}-E_{30}$, invertible, so this is a basis, and $\Conc_{\mathbf x}^{-1}=-\Conc_{\mathbf x}$. In this basis the definition of $\widetilde\Upsilon_k$ reads
+\[
+\widetilde\Upsilon_k=-\phi_0\,\de_t^k\phi_3+\phi_3\,\de_t^k\phi_0-\phi_1\,\de_t^k\phi_2+\phi_2\,\de_t^k\phi_1 .
+\]
+For $k\geq2$, $\de_t^k1=\de_t^kt=0$, so $\widetilde\Upsilon_k=-\de_t^k\phi_3-t\,\de_t^k\phi_2$. For $k=2$ this gives $0=-\de_t^2\phi_3-t\,\mathrm{Yuk}$, which is (i); for $k=3$ it gives $\widetilde\Upsilon_3=\de_t(t\,\mathrm{Yuk})-t\,\de_t\mathrm{Yuk}=\mathrm{Yuk}$, which is (ii) by (a). Finally, for $y=\sum_ic_ix_i$ with $c_i\in\bbQ$, $\de_t^2(y/y_0)=c_2\mathrm{Yuk}-c_3t\,\mathrm{Yuk}$.
+\end{proof}
+
+In a conifold frame, $\mathrm{Yuk}=1/(u\varpi_0^2(\Dq\tc)^3)$ (with $u=A_4$) is the conifold expansion of $\kappa^{\mathrm{LR}}_1$ of \cref{prop:set-cyclicLR}; it is normalised by the Darboux form of (b), the three-point function $\eta(H*H,H)=5\kappa^{\mathrm{LR}}_1$ carries the factor $5$ of $\eta$, and the coefficient $\kappa_1=\mathrm{Yuk}\cdot\Dq\tc$ of \cref{prop:gau-quintic} carries none.
+
+\begin{thm}[The cyclic form of $\PFfour$, (CYC)]
+\label{thm:gau-cyc}
+Let $y_0\in\mathcal S\cap\bbK$ be non-zero and not proportional to $\varpi_1$, and let $\varpi_1$ be taken at any non-zero scale. Then, as operators in $\bbK[\Dq]$,
+\begin{equation}
+\label{eq:gau-cyc}
+\PFfour=\Mcyc(y_0,\varpi_1)=\frac1{y_0}\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\bigl(u\,y_0^2(\Dq t)^2\bigr)\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\frac1{y_0},\qquad t=\frac{\varpi_1}{y_0}.
+\end{equation}
+More generally $\PFfour=\Mcyc(y_0,y_1)$ for every basis $(y_0,y_1)$ of an isotropic plane in $\mathcal S\cap\bbK$; these are the planes that contain $\varpi_1$ (\cref{lem:gau-iso}~(iii)). $\Mcyc(y_0,y_1)$ is unchanged under $y_0\mapsto\mu y_0$, $y_1\mapsto\mu'y_1$ ($\mu,\mu'\in\bbQ^\times$) and $y_1\mapsto y_1+ay_0$ ($a\in\bbQ$). In particular $\PFfour=\Mcyc(\varpi_0,\varpi_1)$ in every conifold frame of \cref{def:set-frames}.
+\end{thm}
+
+\begin{proof}
+Put $t:=y_1/y_0$ and $\dot t:=\Dq t$. As operators $\Dq\circ\dot t^{-1}\circ\Dq=\dot t\,\de_t^2$, so
+\[
+\Mcyc(y_0,y_1)=\frac{\dot t}{y_0}\circ\de_t^2\circ\bigl(u\,y_0^2\dot t^3\bigr)\circ\de_t^2\circ\frac1{y_0}.
+\]
+For $y\in\mathcal S$, \cref{lem:gau-sg}~(b) gives $u\,y_0^2\dot t^3\de_t^2(y/y_0)=c_2-c_3t$ with constants $c_2,c_3$, which $\de_t^2$ kills; so $\Mcyc(y_0,y_1)$ annihilates $\mathcal S$. The coefficient of $\Dq^4$ in \eqref{eq:gau-Mcyc} is the product of the five multiplication factors,
+\[
+y_0^{-1}\cdot\dot t^{-1}\cdot uy_0^2\dot t^2\cdot\dot t^{-1}\cdot y_0^{-1}=u=A_4.
+\] Hence $E:=\Mcyc(y_0,y_1)-\PFfour=\sum_{k\leq3}e_k\Dq^k\in\bbK[\Dq]$ annihilates $\mathcal S$, i.e.\ the row vector $(e_0,\dots,e_3)$ satisfies $(e_0,\dots,e_3)\Wr_{\mathbf f}=0$; as $\det\Wr_{\mathbf f}\neq0$ (\cref{lem:gau-conc}~(iv)), $E=0$. Every step takes place in $\bbK$ or $\bbK[\ell]$, where $y_0$ and $\dot t$ are units; the condition $y_0(0)\neq0$ is not used. Under $y_0\mapsto\mu y_0$, $y_1\mapsto\mu'y_1$ the multiplication factors of \eqref{eq:gau-Mcyc} are multiplied by $\mu^{-1},\mu\mu'^{-1},\mu'^2,\mu\mu'^{-1},\mu^{-1}$, with product $1$, and constants commute with $\Dq$; under $y_1\mapsto y_1+ay_0$, $t\mapsto t+a$ and $\dot t$ is unchanged. The plane of the first statement contains $\varpi_1$ and is isotropic by \cref{lem:gau-iso}; in a conifold frame $\varpi_0$ is a power-series solution with $\varpi_0(0)=1$, not proportional to $\varpi_1$.
+\end{proof}
+
+\begin{cor}[The cyclic system is $\PFfive$]
+\label{cor:gau-cycsys}
+Let $(y_0,y_1)$ be as in \cref{thm:gau-cyc}, $t=y_1/y_0$, and
+\[
+\kappa=(\kappa_0,\dots,\kappa_4):=\Bigl(\Dq t,\ \frac{L^5}{y_0^2(\Dq t)^2},\ \Dq t,\ y_0,\ y_0\Bigr),\qquad L^5:=u^{-1},
+\]
+units of $\bbK$. Let $(\cR,\Dq)$ be a differential ring extending $(\bbK,\Dq)$ and $z\in\cR$ with $\Dq z=0$.
+\begin{enumerate}
+\item For $Y_0,\dots,Y_4\in\cR$ the cyclic system
+\begin{equation}
+\label{eq:gau-system}
+z\Dq Y_a=\kappa_aY_{a+1}\qquad(a\in\bbZ/5)
+\end{equation}
+holds if and only if $y_0Y_0$ solves $\PFfive$ and $Y_{a+1}=z\Dq Y_a/\kappa_a$ for $a=0,\dots,3$.
+\item If $z$ is invertible in $\cR$, then for every $w\in\cR$ the same holds with $z\Dq$ replaced by $z\Dq+w$ in \eqref{eq:gau-system} and in $\PFfive$.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+Inserting the $\kappa_a$ and comparing with \eqref{eq:gau-Mcyc} gives the identity of operators
+\[
+\kappa_4^{-1}\Dq\,\kappa_3^{-1}\Dq\,\kappa_2^{-1}\Dq\,\kappa_1^{-1}\Dq\,\kappa_0^{-1}\Dq\circ y_0^{-1}=y_0^{-1}\Dq\,y_0^{-1}\Dq\,\dot t^{-1}\Dq\,(uy_0^2\dot t^2)\Dq\,\dot t^{-1}\Dq\,y_0^{-1}=y_0^{-1}\Dq\circ\Mcyc(y_0,y_1),
+\]
+with $\dot t=\Dq t$ and $\kappa_1^{-1}=uy_0^2\dot t^2$. (i) Given the four relations $Y_{a+1}=z\Dq Y_a/\kappa_a$, $a=0,\dots,3$, the closing relation $z\Dq Y_4=\kappa_4Y_0$ reads $Y_0=z^5\kappa_4^{-1}\Dq\kappa_3^{-1}\Dq\cdots\kappa_0^{-1}\Dq\,Y_0$, because $z$ commutes with $\Dq$; by the identity and \cref{thm:gau-cyc} this is $y_0Y_0=z^5\Dq\,\PFfour(y_0Y_0)$, which is $\PFfive(y_0Y_0)=0$ by \cref{lem:set-pf5}. (That lemma is an identity of operators with coefficients in $\bbQ[q][z]$: its proof uses only $\Dq\circ q=q\circ(\Dq+1)$, which holds in $\cR$ for $q=(1-u)/5^5\in\bbK$.) The same chain of equivalences read in the other direction gives the converse. (ii) If $z$ is invertible, the map of the ring of differential operators $\cR[\Dq]$ that fixes $\cR$ and sends $\Dq$ to $\Dq+w/z$ is a ring automorphism, since $(\Dq+w/z)\circ f-f\circ(\Dq+w/z)=\Dq(f)$ for $f\in\cR$; it maps $z\Dq$ to $z\Dq+w$, and applying it to the operator identities used in (i) gives (ii).
+\end{proof}
+
+The corollary is applied in $\bbQ(\zeta)\lser s\lser z$ with $w=\zeta^iL=\zeta^is^{-1}$, to amplitudes of formal WKB solutions with exponential $\re^{u_i/z}$, $\Dq u_i=\zeta^iL$: the expanded rows (\cref{prop:gau-quintic}) and the canonical gauge applied to the model columns (\cref{thm:gau-R0}), and, through $z=s^4\zh$, to the hatted series of \cref{lem:gau-HPF}; with $w=0$ it applies in $\bbQ\lser z\lser u$ to solutions without exponential, such as the vanishing solutions of \cref{def:gau-van}. In a conifold frame $\kappa$ is the vector of \cref{prop:gau-quintic}. It does not assert that WKB solutions with rows free of logarithms exist; for the rows of \cref{def:set-rows} this is part of \cref{thm:gau-R0}.
+
+\input{sections/s03_gauge_3}

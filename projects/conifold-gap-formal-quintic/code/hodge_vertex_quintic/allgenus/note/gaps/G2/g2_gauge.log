@@ -1,0 +1,34 @@
+g2_gauge.py: K = 15, N = 32 (exact over Q)
+  log obstruction matrix (rows u^-3, u^-2, u^-1; columns f_0, f_1, f_2): [['-2', '0', '0'], ['17/5', '0', '0'], ['-7/5', '-7/5', '2']]
+  [PASS] obstruction matrix = [[-2,0,0],[17/5,0,0],[-7/5,-7/5,2]], kernel (0,1,7/10) 
+ frame (alpha, beta) = (0, 0); t_c = u + 7/10 u^2 + ..., v = u + 5/9 u^2 + ...
+  [PASS] equal products prod b = prod bt = -1/(u(1-u)^5) 
+  [PASS] values at 0: b_a(0) = bt_a(0) (a != 1), (u b_1)(0) = (u bt_1)(0) = -1 
+  constructed graded P_0..P_15; precisions [31, 30, 29, 28, 27, 27, 26, 25, 24, 23, 23, 22, 21, 20, 19, 19]
+  [PASS] gauge equation z P' = A P - P At, every entry and known coefficient 
+  [PASS] P_k holomorphic (power series) 
+  [PASS] P_0 diagonal with unit entries 
+  P_11(0,z) coefficients at z^0, z^5, ..: ['1', '0', '0', '0']
+  [PASS] P_can: P_11(0,z) = 1 
+  [PASS] P_can satisfies the gauge equation 
+  [PASS] G8: p_(0,a)(0) = 1 for every a (P_can) ['1', '1', '1', '1', '1']
+  [PASS] G8: prod_a p_(0,a) = 1 identically (to u^30) 
+  [PASS] lem:gau-diag: p_(0,0) = tau^(-1/4)/varpi_0 
+  [PASS] control: P_can * 2 has prod_a p_(0,a) = 32 (so the normalisation matters) 
+  [PASS] control: with bt_0 -> 2 bt_0, bt_1 -> bt_1/2 (bt(0) != b(0)) the canonical product is 1/16, not 1 const = 1/16
+ frame (alpha, beta) = (1/3, -2/7); t_c = u + 11/30 u^2 + ..., v = u + 5/9 u^2 + ...
+  [PASS] equal products prod b = prod bt = -1/(u(1-u)^5) 
+  [PASS] values at 0: b_a(0) = bt_a(0) (a != 1), (u b_1)(0) = (u bt_1)(0) = -1 
+  constructed graded P_0..P_15; precisions [31, 30, 29, 28, 27, 27, 26, 25, 24, 23, 23, 22, 21, 20, 19, 19]
+  [PASS] gauge equation z P' = A P - P At, every entry and known coefficient 
+  [PASS] P_k holomorphic (power series) 
+  [PASS] P_0 diagonal with unit entries 
+  P_11(0,z) coefficients at z^0, z^5, ..: ['1', '0', '0', '0']
+  [PASS] P_can: P_11(0,z) = 1 
+  [PASS] P_can satisfies the gauge equation 
+  [PASS] G8: p_(0,a)(0) = 1 for every a (P_can) ['1', '1', '1', '1', '1']
+  [PASS] G8: prod_a p_(0,a) = 1 identically (to u^30) 
+  [PASS] lem:gau-diag: p_(0,0) = tau^(-1/4)/varpi_0 
+  [PASS] control: P_can * 2 has prod_a p_(0,a) = 32 (so the normalisation matters) 
+  [PASS] control: with bt_0 -> 2 bt_0, bt_1 -> bt_1/2 (bt(0) != b(0)) the canonical product is 1/16, not 1 const = 1/16
+RESULT: ALL CHECKS PASSED

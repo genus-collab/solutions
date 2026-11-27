@@ -1,0 +1,104 @@
+% Abridged version, Section 4, part 1 of 2: the vanishing tower, the slice, dressings, Lemmas E, T, F. Continued in part 2 (Theorem R).
+\section{Transport and the reduction to the model}
+\label{sec:tra}
+
+This section states the transport lemmas: for every symplectic dressing $P$ of the model that annihilates the vanishing period, in particular for the canonical gauge $\Pc$, the edges lie in $\sKo\otimes\sKo$ and the leaf point lies in $\sK$. Theorem~R then reduces the regularity of the graph terms to a statement about the model. It follows \Lr{sec:tra,sec:red}. In this section $q$ denotes an element of a loop space, as in Givental's formalism.
+
+%-------------------------------------------------------------------------------
+\subsection{The vanishing tower and the slice}
+\label{sec:tra-tower}
+
+\emph{Settings} \Lr{conv:tra-forms}. The model is used with two rings of coefficients. In the \emph{graded setting} the coefficients lie in $\bbQ[v]$; the \emph{weight} of $v^mz^kH^b$ is $5m+4k+\nu_b+1$, $V_w$ is the $\bbQ$-span of the $v^mz^kH^b$ ($m,k\geq0$) of weight $w$, and $\cH^{\mathrm{gr}}_+:=\bigoplus_wV_w=\bbH\otimes\bbQ[v][z]$. In the \emph{$u$-adic setting} $v=v(u)$ is a non-zero element of $u\bbQ\fps u$, with $v'(0)\neq0$ from \cref{def:tra-dressing} on, and
+\[
+\cH^u:=\bbH\otimes\bbQ\lser z\fps u,\qquad\cH^u_+:=\bbH\otimes\bbQ\fps{u,z},\qquad\cH^u_-:=\bbH\otimes z^{-1}\bbQ[z^{-1}]\fps u ;
+\]
+the form $\Omega_{\mathrm s}(f,g):=\Res_z\,\eta(f(-z),g(z))\,\dd z$ is antisymmetric, and $\cH^u_\pm$ are isotropic and complementary. An insertion $\psi^kH^b$ is identified with the vector $z^kH^b$, with flat components $q_{(k,b)}:=\coef{z^k}q^b$. The \emph{vector form} of $P$ is $P^{\mathrm{vec}}:=\eta^{-1}P\eta$, and $J^{\mathrm C}:=\eta^{-1}\YC$ is the vector form of the vanishing solution. Infinite sums are sums of \emph{summable families}, finite modulo every power of $u$ in each coefficient \Lr{lem:tra-sum,lem:tra-conv}.
+
+\begin{defn}[The vanishing tower and the slice; {\Lr{def:tra-tower,def:tra-slice}}]
+\label{def:tra-tower}
+For $q$ in $\cH^{\mathrm{gr}}_+$ or in $\cH^u_+$ and $i\geq0$ put $\Pi_i(q):=-\coef{z^i}\,\langle\YC(-z),q(z)\rangle$, where $\langle Y,n\rangle:=\sum_aY_an^a$; $\Pi_0$ is the \emph{vanishing covector}. The \emph{slice} is
+\[
+\sK:=\{q:\Pi_i(q)=0\ \text{for all }i\geq1\},\qquad\sKo:=\sK\cap\ker\Pi_0 .
+\]
+\end{defn}
+
+By \cref{lem:gau-vanq}~(i), $\Pi_i(z^kH^b)=\Pi_0(z^{k-i}H^b)$ for $k\geq i$, $\Pi_i(z^kH^b)=0$ for $k<i$, and, with $r=\lfloor m/5\rfloor$,
+\[
+\Pi_0(z^mH^b)=-\varepsilon_b\,\frac{v^{m-r}}{4^r\,r!\,(m-r)!}\quad\text{if }b+m\equiv1\pmod5,\qquad\Pi_0(z^mH^b)=0\quad\text{otherwise};
+\]
+for example $\Pi_0(H)=1$, $\Pi_0(H^a)=0$ for $a\neq1$, and $\Pi_0(z1)=-v$. The tower consists of symplectic pairings with the vanishing solution: $\Omega_{\mathrm s}(z^{-k}J^{\mathrm C},q)=(-1)^{k+1}\Pi_{k-1}(q)$ for $k\geq1$.
+
+\begin{lem}[Frames; {\Lr{lem:tra-frames,cor:tra-slice,lem:tra-twoslot}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:tra-frames}
+Let $A$ be $\bbQ[v]$ or $\bbQ\fps u$, and $\cH^A_+$ the corresponding space $\cH^{\mathrm{gr}}_+$ or $\cH^u_+$.
+\begin{enumerate}
+\item $\cH^A_+=\sKo\oplus A\{z\}H$, where $A\{z\}$ is $\bbQ[v][z]$, respectively $\bbQ\fps{u,z}$; and $\sK=\sKo\oplus AH$. Moreover $-z1\in\sK$, and $\Pi_0(-z1+n+\mu H)=v+\mu$ for $n\in\sKo$ and $\mu\in A$.
+\item For every $(k,a)$ with $a\neq1$ there is exactly one element of $\sKo$ of the form $z^kH^a+\chi(z)H$; it is the \emph{frame}
+\[
+\fr(k,a)=z^kH^a+\sum_{j<k}f_jz^jH,\qquad f_j=c_{k,a,j}\,v^{(4(k-j)+\nu_a+1)/5},\quad c_{k,a,j}\in\bbQ,
+\]
+where $c_{k,a,j}=0$ unless the exponent is an integer, which is then $\geq1$. For example $\fr(1,0)=z1+vH=:\se$, the Euler--dilaton vector. The frames of the $u$-adic setting are those of the graded setting at $v=v(u)$.
+\item Every $n\in\sKo$ is the sum of the summable family $(n_{(k,a)}\fr(k,a))_{k\geq0,\,a\neq1}$, and $n\mapsto(n_{(k,a)})$ is injective.
+\item For a bivector series $E\in\bbH\otimes\bbH\otimes\bbQ\fps{\psi,\psi'}\fps u$ the following are equivalent: $(\Pi_i\otimes1)E=0$ and $(1\otimes\Pi_i)E=0$ for all $i\geq0$; $E$ is the sum of a summable family $(E^{\alpha\beta}\,\fr_\alpha(\psi)\otimes\fr_\beta(\psi'))$ with $E^{\alpha\beta}\in\bbQ\fps u$. In this case we say that $E$ lies in $\sKo\otimes\sKo$.
+\end{enumerate}
+\end{lem}
+
+
+
+%-------------------------------------------------------------------------------
+\subsection{Dressings, edges and the leaf point}
+\label{sec:tra-dress}
+
+\begin{defn}[Dressings; {\Lr{def:tra-dressing,def:tra-edge}}, abridged]
+\label{def:tra-dressing}
+Let $v=v(u)\in u\bbQ\fps u$ with $v'(0)\neq0$. A \emph{dressing of the model at $v(u)$} is a matrix series $P=\sum_{k\geq0}z^kP_k(u)$ with $P_k\in\mathfrak{gl}_5(\bbQ\fps u)$, graded, i.e.\ $P_k=\sum_bp_{k,b}E_{b+k,b}$, and with $P_0$ invertible; it acts on lowered components. We consider the two conditions
+\begin{description}
+\item[(Sp)] $P(-z)^T\eta P(z)=\eta$;
+\item[(A)] $Y':=P\,\YC(v(u))$ has no positive power of $z$.
+\end{description}
+Put $T_P:=-\coef{z^{-1}}Y'_0\in\bbQ\fps u$, the transported vanishing coordinate; $d:=(P_0)_{33}=p_{0,3}$, the dilaton factor, a unit of $\bbQ\fps u$; and $R:=P_0^{-1}P=1+O(z)$, with vector form $R^{\mathrm{vec}}$. For a dressing with (Sp), the \emph{edge} is $E_P:=E_{R^{\mathrm{vec}}}$ (\cref{def:set-graphsum}), the \emph{leaf point} is $q_T:=(P^{\mathrm{vec}})^{-1}(-z1)\in\cH^u_+$, and $\tilde q_T:=d\,q_T=-z1+dT_{\geq2}$, where $dT_{\geq2}=\ttr_{R^{\mathrm{vec}}}(z)\in z^2\cH^u_+$ is the translation of \cite[Def.~2.13]{PPZ15}.
+\end{defn}
+
+
+
+\begin{lem}[Lemma E; {\Lr{lem:tra-E}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:tra-E}
+Let $R=1+O(z)$ lie in $\mathfrak{gl}_5(\bbQ\fps{u,z})$ with $R(-z)^T\eta R(z)=\eta$, and let $f\in\cH^u_-$, both in vector form. Then $Rf\in\cH^u$, the contraction of the covector $\Omega_{\mathrm s}(f,\cdot)$ into the first slot of $E_R$ converges $u$-adically, and
+\[
+(\Omega_{\mathrm s}(f,\cdot)\otimes1)\,E_R(\psi')=-R(\psi')^{-1}\,(Rf)_{\geq0}(\psi')\qquad\text{in }\bbH\otimes\bbQ\fps{u,\psi'} ,
+\]
+where $(\cdot)_{\geq0}$ is the part with non-negative powers of $z$. Hence $E_R$ annihilates $\Omega_{\mathrm s}(f,\cdot)$ in the first slot, equivalently (by symmetry) in the second, if and only if $Rf\in\cH^u_-$.
+\end{lem}
+
+\begin{sketch}
+The contraction is the residue in $\psi$ of $\eta f(-\psi)$ against $E_R=(\psi+\psi')^{-1}\bigl(\eta^{-1}-R^{-1}(\psi)\eta^{-1}R^{-1}(\psi')^T\bigr)$, with $(\psi+\psi')^{-1}$ expanded in $\psi'/\psi$. The first term has no residue; in the second, symplecticity turns $R^{-1}(\psi)^T\eta f(-\psi)$ into $\eta\,(Rf)(-\psi)$, and the residue against the geometric series picks out its non-negative part.
+\end{sketch}
+
+\begin{cor}[Edges in $\sKo\otimes\sKo$; {\Lr{cor:tra-edges}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:tra-edges}
+Let $P$ be a dressing with (Sp). Then (A) holds if and only if $(\Pi_0\otimes1)E_P=0$, and if and only if $(\Pi_i\otimes1)E_P=(1\otimes\Pi_i)E_P=0$ for all $i\geq0$. If (A) holds, $E_P$ lies in $\sKo\otimes\sKo$, in the sense of \cref{lem:tra-frames}~(iv), with coefficients $E_P^{\alpha\beta}\in\bbQ\fps u$.
+\end{cor}
+
+Indeed $\Pi_{k-1}=\pm\Omega_{\mathrm s}(z^{-k}J^{\mathrm C},\cdot)$, and by Lemma~E the edge annihilates it if and only if $R^{\mathrm{vec}}z^{-k}J^{\mathrm C}$, that is $z^{-k}Y'$ up to an invertible matrix independent of $z$, has no non-negative power of $z$.
+
+\begin{lem}[Lemma T: the leaf point; Lemma F: finiteness; {\Lr{lem:tra-T,lem:tra-F}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:tra-T}
+Let $P$ be a dressing with (Sp) and (A).
+\begin{enumerate}
+\item $\Pi_0(q_T)=T_P$ and $\Pi_i(q_T)=0$ for $i\geq1$; so $q_T\in\sK$.
+\item $\tilde q_T=d\,q_T=-z1+dT_{\geq2}$ lies in $-z1+\sK=\sK$, with $\Pi_0(\tilde q_T)=d\,T_P=:v+\delta_P$. Moreover $dT_{\geq2}=y^\circ+\delta_PH$ with $y^\circ\in\sKo$, whose frame coordinates $y^\circ_{(k,a)}$ vanish for $k\leq1$.
+\item $\delta_P\in u^2\bbQ\fps u$; more precisely $T_P-p_{0,0}v\in u^2\bbQ\fps u$ and $d\,p_{0,0}=1$.
+\item For a dressing $P$ with (Sp) and a leg-free stable graph $\Gamma$, the contraction along $\Gamma$ of the edges $E_P$ with the vertex tensors $d^{2g_v-2+n_v}\dd^{n_v}\overline F_{g_v}(\tilde q_T)$ is a finite sum. If $d(0)=1$, each vertex tensor equals the Taylor expansion $\dd^{n_v}\overline F_{g_v}(q_T)$ at the base point $-z1$ in the direction $q_T+z1$.
+\end{enumerate}
+\end{lem}
+
+Part (i) follows from the adjunction $\Omega_{\mathrm s}(f,(P^{\mathrm{vec}})^{-1}g)=\Omega_{\mathrm s}(P^{\mathrm{vec}}f,g)$ with $f=z^{-i-1}J^{\mathrm C}$, $g=-z1$, from (A) and from the grading.
+
+\begin{prop}[The canonical gauge as a dressing; {\Lr{prop:tra-can}}]\genusstatus{AI-proposed, unchecked}
+\label{prop:tra-can}
+Let $(\alpha,\beta)\in\bbQ^2$ give a conifold frame and let $v(u)=u\tau(u)^{-5/4}$. The canonical gauge $\Pc$ is a dressing of the model at $v(u)$ with (Sp) and (A), with $Y'=\YCQ$, $T_{\Pc}=\tc$ and $d(0)=1$. Hence \cref{cor:tra-edges,lem:tra-T} apply to $\Pc$: its edges lie in $\sKo\otimes\sKo$, and $\tilde q_T\in-z1+\sK$ with $\Pi_0(\tilde q_T)=d\,\tc=v+\delta_{\Pc}$, $\delta_{\Pc}\in u^2\bbQ\fps u$.
+\end{prop}
+
+Here (Sp) is \cref{prop:gau-symp}, and (A) and $T_{\Pc}=\tc$ come from the gauge identity $\Pc\YC(v(u))=\YCQ$ (\cref{thm:gau-G}, \cref{lem:gau-vanq}~(ii)). So the gauge identity has two effects: it places the edges and the leaf of the canonical gauge in the slice, and it identifies the vanishing coordinate of the leaf with the flat coordinate $\tc$ of the frame.
+
+\input{summary/s04_transport_2}

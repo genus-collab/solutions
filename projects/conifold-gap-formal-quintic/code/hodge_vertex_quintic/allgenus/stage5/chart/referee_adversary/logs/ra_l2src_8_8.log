@@ -1,0 +1,25 @@
+ra_l2src: (L2') delta lemma with a source, exact over Q through z^8, 8 seeds; log logs/ra_l2src_8_8.log
+PASS seed 0: (alpha0, c) = (-5/4, -3): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^8
+PASS control seed 0: delta with the wrong sign is rejected
+PASS control seed 0: a pure m^3 term in the phase breaks the identity
+PASS seed 1: (alpha0, c) = (-6/5, 2): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^8
+PASS control seed 1: delta with the wrong sign is rejected
+PASS control seed 1: a pure m^3 term in the phase breaks the identity
+PASS seed 2: (alpha0, c) = (-6/7, -3): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^8
+PASS control seed 2: delta with the wrong sign is rejected
+PASS control seed 2: a pure m^3 term in the phase breaks the identity
+PASS seed 3: (alpha0, c) = (-3/2, -1): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^8
+PASS control seed 3: delta with the wrong sign is rejected
+PASS control seed 3: a pure m^3 term in the phase breaks the identity
+PASS seed 4: (alpha0, c) = (-3/4, 1/5): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^8
+PASS control seed 4: delta with the wrong sign is rejected
+PASS control seed 4: a pure m^3 term in the phase breaks the identity
+PASS seed 5: (alpha0, c) = (-1/7, 0): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^8
+PASS control seed 5: a pure m^3 term in the phase breaks the identity
+PASS seed 6: (alpha0, c) = (1, 1): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^8
+PASS control seed 6: delta with the wrong sign is rejected
+PASS control seed 6: a pure m^3 term in the phase breaks the identity
+PASS seed 7: (alpha0, c) = (-7/5, -1): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^8
+PASS control seed 7: delta with the wrong sign is rejected
+PASS control seed 7: a pure m^3 term in the phase breaks the identity
+RA_L2SRC 8 8: ALL CHECKS PASSED   (1 s)

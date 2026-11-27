@@ -1,0 +1,12 @@
+g3_lemE.py  N = 6 (mod u^N), M = 5 (psi' order); exact over Q
+[Sp] R(-z)^T eta R(z) = eta through z^18, mod u^6: True;  z-powers of R(0,z) that are non-zero: 18 of 18
+[E] f = z^-1 J^C         (terms z^-1..z^-7): LHS = RHS on all coefficients psi'^0..psi'^5 mod u^6: True (non-zero components 30 of 30)
+[C3] same f, sign psi' -> -psi' in (R f)_(>=0): identity holds: False (expected False)
+[E] f = z^-2 J^C         (terms z^-1..z^-8): LHS = RHS on all coefficients psi'^0..psi'^5 mod u^6: True (non-zero components 30 of 30)
+[C3] same f, sign psi' -> -psi' in (R f)_(>=0): identity holds: False (expected False)
+[E] f = random decaying  (terms z^-1..z^-11): LHS = RHS on all coefficients psi'^0..psi'^5 mod u^6: True (non-zero components 30 of 30)
+[C3] same f, sign psi' -> -psi' in (R f)_(>=0): identity holds: False (expected False)
+[DIV] numerator of E_R divisible by psi + psi' (N(psi,-psi) = 0 through degree 5): True
+[C1] NON-decaying f = Sum_(n=1..L) z^-n c: [u^0 psi'^0] of the contraction for L = 8, 13, 18, 23, 28 takes 5 distinct values (first two: ['1598028431/15750000000', '-6423379627/2250000000'], ['106852769499841/2320312500000000', '-105015504935880389/33783750000000000']): no limit as L grows (expected); each truncation satisfies the finite identity: True
+[C2] non-symplectic R (1 + z E_01) exp(X): N(psi, -psi) != 0 in 1 of 7 degrees 1..7 (expected > 0)
+RESULT: ALL CHECKS PASSED
