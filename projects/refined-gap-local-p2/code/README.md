@@ -68,7 +68,12 @@
   Genus 4 needs a cluster: see `cluster_genus4_hodge/README.txt` (Hodge-vertex graph sum) and
   `cluster_genus4/README.txt` (twisted R-matrix). The notebook `hodge_vertex/localp2CY5_hodge_genus3.nb` runs
   headless with `wolframscript -file run_nb_headless.wls localp2CY5_hodge_genus3.nb` (from `hodge_vertex/`);
-  its genus-4 section needs `hodge_graphterms_genus4.m` from the data release.
+  its genus-4 section needs `hodge_graphterms_genus4.m` from the data release. Checked on 2026-11-27 on this
+  folder without any `.mx` file and with the data release unpacked: all 30 input cells run without messages in
+  about 7 minutes (the genus-3 samples are recomputed) and give the stored outputs of `nb_headless_g4.out`, except
+  that the second half of cell 13 (comparison of the genus-4 evaluator with the genus-3 one on the decorated
+  graphs of genus 3) is skipped: it runs only when `hv_orbits_g3.mx` exists or the genus-3 cells have already
+  been evaluated.
 
 Mathematica notebooks (`.nb`) are accompanied by a plain-text export (`.m`, input cells as code, text cells as
 comments, outputs omitted), so that changes are diff-readable.
