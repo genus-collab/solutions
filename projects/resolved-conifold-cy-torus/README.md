@@ -33,6 +33,9 @@ local P² × C² (cited as [GEN26] in the PDF). It proves the two theorems on Ho
 `main.pdf`), and its working notes use Lemma A of this project
 (`code/hodge_vertex_conifold/lemmaA/LEMMA_A_PROOF.md`).
 
+See also [solutions/conifold-gap-formal-quintic](../conifold-gap-formal-quintic/): the same questions (graph regularity
+and the conifold gap) for the formal quintic, where a natural factorisation plays the role of the Hodge one.
+
 ## Contributors
 
 Listed for the record; workshop PDFs carry no individual author names
