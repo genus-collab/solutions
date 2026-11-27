@@ -1,0 +1,33 @@
+==============================================================================================================
+genus3_cubic: the nine three-edge cubics on the circulant class, p = 2^61-1
+      cubic points 29/237 jobs done (432 s)
+      cubic points 58/237 jobs done (589 s)
+      cubic points 87/237 jobs done (731 s)
+      cubic points 116/237 jobs done (888 s)
+      cubic points 145/237 jobs done (1099 s)
+      cubic points 174/237 jobs done (1256 s)
+      cubic points 203/237 jobs done (1370 s)
+      cubic points 232/237 jobs done (1469 s)
+      cubic points 237/237 jobs done (1484 s)
+   237 evaluations: 1484 s
+PASS (a) [u^0], [u^1], [u^2] vanish for every three-edge graph at every point
+PASS (a) c_Gamma(0) = 0: the [u^3] coefficients vanish at N_1 = N_1^taut
+PASS (b) fitted cubics = direct evaluation at 4 random circulant points (orders 1..4)
+PASS (b) the orders 5, 6 of Delta are invisible to the cubics (same values with random components of orders 5, 6)
+PASS (c) homogeneity: c(2 Delta) = 8 c(Delta)
+PASS (d) frozen-vertex [u^3] = [u^3] of the stored independent full pass at rational_solution_n, all nine graphs: {4: '[1199266418437331931 mod p]', 9: '[321056263872040091 mod p]', 10: '[909063797812520861 mod p]', 11: '[1011830857028781178 mod p]', 12: '[502689878361298003 mod p]', 18: '0', 19: '[2222457553540972165 mod p]', 20: '0', 32: '0'}
+PASS (d) frozen-vertex [u^3] = [u^3] of the stored independent full pass at circ_solution_n, all nine graphs: {4: '[2087854247287773507 mod p]', 9: '[2047263186856930123 mod p]', 10: '[216991822484945730 mod p]', 11: '[1545800926879492144 mod p]', 12: '[1697149153700516432 mod p]', 18: '[1729716285860392837 mod p]', 19: '[2139203271115667448 mod p]', 20: '[1486020734121059993 mod p]', 32: '[246866834834265860 mod p]'}
+PASS (d) frozen-vertex [u^3] = [u^3] of the stored independent full pass at full_solution_n, all nine graphs: {4: '[1981975321170851014 mod p]', 9: '[238375490791367625 mod p]', 10: '[1272189867255448379 mod p]', 11: '[1749909150463064696 mod p]', 12: '[372689845852650588 mod p]', 18: '[1965766867631756647 mod p]', 19: '[1682367867196236454 mod p]', 20: '[973116420261957326 mod p]', 32: '[2299170684429345313 mod p]'}
+PASS (e) full class: affine-linear in the order-4 coordinates (second difference in s of c(Delta_L + s Delta_4) vanishes)
+PASS (e) full class: orders 5, 6 invisible
+   order-4 dependence at the random full point (c(Delta_L + Delta_4) - c(Delta_L) non-zero for graphs): [9, 10, 11, 12, 19]
+   graph  4 (gv=(0,), ed=[(0, 0), (0, 0), (0, 0)]):  32 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_1', 'c3_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 2)]
+   graph  9 (gv=(0, 1), ed=[(0, 1), (0, 1), (0, 1)]):  49 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2), (1, 2, 3), (2, 2, 2)]
+   graph 10 (gv=(0, 1), ed=[(0, 0), (0, 1), (0, 1)]):  51 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2), (1, 2, 3)]
+   graph 11 (gv=(0, 1), ed=[(0, 0), (1, 1), (0, 1)]):  28 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2), (1, 2, 3)]
+   graph 12 (gv=(0, 1), ed=[(0, 0), (0, 0), (0, 1)]):  45 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2)]
+   graph 18 (gv=(0, 1, 1), ed=[(0, 1), (0, 2), (0, 2)]):  46 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 2), (1, 2, 3), (2, 2, 2)]
+   graph 19 (gv=(0, 1, 1), ed=[(0, 0), (0, 2), (1, 2)]):  34 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 1, 4), (1, 2, 2), (1, 2, 3)]
+   graph 20 (gv=(0, 1, 1), ed=[(0, 0), (0, 1), (0, 2)]):  42 non-zero monomials; variables ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2']; order types [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 2), (1, 2, 3)]
+   graph 32 (gv=(0, 1, 1, 1), ed=[(0, 1), (0, 2), (0, 3)]):  20 non-zero monomials; variables ['c1_1', 'c1_2', 'c2_1', 'c2_2']; order types [(1, 1, 1), (1, 1, 2), (1, 2, 2), (2, 2, 2)]
+GENUS3_CUBIC ALL CHECKS PASSED

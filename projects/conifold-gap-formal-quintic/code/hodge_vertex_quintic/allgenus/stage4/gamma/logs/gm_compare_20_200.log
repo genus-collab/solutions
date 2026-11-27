@@ -1,0 +1,23 @@
+gm_compare: NQ = 20 (exact over Q), NP = 200 (mod p)
+PASS (Q0) QRR rows over Q: (H) h_auto for all n <= 20 with 5 not | n, resonance coefficients zero
+PASS (Q1) deg ph_n <= floor(4n/5) for n <= 20, so R_n(L) in Q[L] with exponents 4n - 5k >= 0: [0, 0, 0, 2, 3, 4, 4, 5, 6, 7, 8, 8, 9, 10, 11, 12, 12, 13, 14, 15, 16]
+PASS (Q2) L = 2: c_n(L) = R_n(L) exactly over Q for n <= 20: []
+PASS (Q2) L = 1/2: c_n(L) = R_n(L) exactly over Q for n <= 20: []
+PASS (Q2) L = 7/3: c_n(L) = R_n(L) exactly over Q for n <= 20: []
+   e.g. c_5(2) = 11495493197/31500
+   (Q) done in 2.4 s
+PASS [p=2^61-1] (P0) (H) h_auto for n <= 200, resonance coefficients zero
+PASS [p=2^61-1] (G) free constants x_m = R_5m(0) = [z^5m] g(z) for m = 1..40: []
+PASS [p=2^61-1] (P1) L = 2: D(z) = c(z;L)/R(z;L) = 1 + O(z^201): None
+PASS [p=2^61-1] (P1) L = 3/5: D(z) = c(z;L)/R(z;L) = 1 + O(z^201): None
+PASS [p=2^61-1] (C) control: x_1 shifted by 1 -> D - 1 first non-zero at z^5 (expected z^5)
+PASS [p=2^61-1] (C) control: x_40 shifted by 3 -> D - 1 first non-zero at z^200 (expected z^200)
+   [p=2^61-1] done in 419.8 s
+PASS [p=2^89-1] (P0) (H) h_auto for n <= 200, resonance coefficients zero
+PASS [p=2^89-1] (G) free constants x_m = R_5m(0) = [z^5m] g(z) for m = 1..40: []
+PASS [p=2^89-1] (P1) L = 2: D(z) = c(z;L)/R(z;L) = 1 + O(z^201): None
+PASS [p=2^89-1] (P1) L = 3/5: D(z) = c(z;L)/R(z;L) = 1 + O(z^201): None
+PASS [p=2^89-1] (C) control: x_1 shifted by 1 -> D - 1 first non-zero at z^5 (expected z^5)
+PASS [p=2^89-1] (C) control: x_40 shifted by 3 -> D - 1 first non-zero at z^200 (expected z^200)
+   [p=2^89-1] done in 400.6 s
+GM_COMPARE 20 200: ALL CHECKS PASSED   (823 s)

@@ -1,0 +1,15 @@
+rf_direct (referee, independent): p = 2^61-1, frame (0, 0), zhat <= 55, u < 50, gauge precision NU = 115; log logs/rf_direct_61_0_0_55_50.log
+   rows of the five colours in 1 s
+PASS (H) for all five colours, 5 not | n <= 55 (QRR weights zeta^i - zeta^j, -5 zeta^i)
+PASS D1 closing relation Qh_0 = (1/C0) A_0 Qh_4, all colours, n <= 55, u < 50
+PASS D2 covariance Qh_(a,n)^(i) = zeta^(i(a+1-n)) Qh_(a,n)^(0) and F_(b,m)^(i) = zeta^(i(b+1-m)) F_(b,m)
+PASS D3 model symplecticity Sum_b R^_b^(i)(-t) R^_(3-b)^(j)(t) = 5 delta_ij, t^0..t^55
+   Ghat^act (matrix inverse, five colours) in 5 s
+PASS D4 Lemma P: colour-reduced pairing = matrix-inverse Ghat^act, 25 entries, zhat <= 30, u < 50
+PASS D5 grading: [zhat^N] Ghat^act_(a,c) = 0 unless a = c + N mod 5
+   canonical and stored gauges (own Theorem-U solver) in 9 s
+PASS D6 Ghat^act = Ghat^can in all 7840 slots (k <= 55, mu(b,k) <= j < 50; 7677 non-zero), lower slots vanish: []
+PASS D8 control: stored normalisation differs in 6501 slots, first at k = 5
+PASS D7 normalisation slots [u^4q zhat^5q] Ghat^act_11 = Ghat^act_22 = 0 for q = 1..11 (c^act = 1 + O(z^60))
+PASS D9 connection route: ph^can_N polynomial of degree floor(4N/5), ph^can_N(1) = h_N and ph^can_N = ph_N(QRR), N <= 55: []
+RF_DIRECT 2^61-1 0_0 NZ=55 K=50: ALL CHECKS PASSED   (10 s)

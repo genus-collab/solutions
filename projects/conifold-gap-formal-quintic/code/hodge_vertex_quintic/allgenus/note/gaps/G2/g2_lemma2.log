@@ -1,0 +1,21 @@
+g2_lemma2.py: exact over Q, u-precision 14, frame (0,0)
+  [PASS] At Y = 1 and Y holomorphic 
+  [PASS] pr((Y^0)') = -(0/5)(log calB)' Y^0 
+  [PASS] pr(Theta^-1 Theta' Y^0) = (tr/5) Y^0 
+  [PASS] pr((Y^1)') = -(1/5)(log calB)' Y^1 
+  [PASS] control: -(1/4)(log calB)' Y^1 differs 
+  [PASS] pr(Theta^-1 Theta' Y^1) = (tr/5) Y^1 
+  [PASS] pr((Y^2)') = -(2/5)(log calB)' Y^2 
+  [PASS] control: -(2/4)(log calB)' Y^2 differs 
+  [PASS] pr(Theta^-1 Theta' Y^2) = (tr/5) Y^2 
+  [PASS] pr((Y^3)') = -(3/5)(log calB)' Y^3 
+  [PASS] control: -(3/4)(log calB)' Y^3 differs 
+  [PASS] pr(Theta^-1 Theta' Y^3) = (tr/5) Y^3 
+  [PASS] pr((Y^4)') = -(4/5)(log calB)' Y^4 
+  [PASS] control: -(4/4)(log calB)' Y^4 differs 
+  [PASS] pr(Theta^-1 Theta' Y^4) = (tr/5) Y^4 
+  [PASS] residue of -(1/5)(log calB)' is 1/5 (so -(j/5)(log calB)' = j/(5u) + holomorphic) 
+  [PASS] tr(Theta^-1 Theta') holomorphic 
+  [PASS] pr(Z), Z holomorphic: Y^j-coefficients have at most a simple pole (j >= 1), Y^0-coefficient holomorphic (entry valuations by shift [0, -1, -1, -1, -1])
+  [PASS] control: for a non-diagonal matrix in place of Theta^-1 Theta' the trace rule fails 
+RESULT: ALL CHECKS PASSED

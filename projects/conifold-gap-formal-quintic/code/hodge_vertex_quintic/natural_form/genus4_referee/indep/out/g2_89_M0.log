@@ -1,0 +1,25 @@
+====================================================================================================
+ind_run g2_89_M0: 7 inner graphs, K = 4, NZ = 3, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.2 s
+   inner graph   0 (E=0, V=1, gv=(2,)): momentum 0.00 s, brute 0.00 s, 1 outer graphs, equal: True
+   inner graph   1 (E=1, V=1, gv=(1,)): momentum 0.00 s, brute 0.00 s, 2 outer graphs, equal: True
+   inner graph   2 (E=2, V=1, gv=(0,)): momentum 0.00 s, brute 0.00 s, 3 outer graphs, equal: True
+   inner graph   3 (E=1, V=2, gv=(1, 1)): momentum 0.00 s, brute 0.00 s, 2 outer graphs, equal: True
+   inner graph   4 (E=2, V=2, gv=(0, 1)): momentum 0.00 s, brute 0.00 s, 4 outer graphs, equal: True
+   inner graph   5 (E=3, V=2, gv=(0, 0)): momentum 0.00 s, brute 0.00 s, 4 outer graphs, equal: True
+   inner graph   6 (E=3, V=2, gv=(0, 0)): momentum 0.00 s, brute 0.00 s, 6 outer graphs, equal: True
+BRUTE-FORCE CHECK (g2_89_M0) ALL EQUAL
+====================================================================================================
+ind_run g2_89_M0: 7 inner graphs, K = 4, NZ = 3, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.1 s
+   7 inner graphs to do with 4 processes, deadline 1500 s
+      7/7 done (1 s wall)
+   run: wall 1 s, CPU (this and earlier runs) 1 s, slowest [(0.2, 2), (0.1, 6), (0.1, 5), (0.1, 1), (0.0, 4), (0.0, 3)]
+   complete outer graphs: 7 of 7 (all)
+   vertex graph: ['1/1200', '-7/8000', '67/288000', '1/187500']
+      outer graph   1 (E=1, gv=(1,), ed=[(0, 0)]): ['0', '1/750', '-1/480', '-161/150000']
+      outer graph   3 (E=1, gv=(1, 1), ed=[(0, 1)]): ['0', '-13/8000', '19/96000', '203/3600000']
+INFO (control variant M0, regularity NOT expected): 2 of the 6 complete outer graphs with edges are not O(u^2); vertex graph has the pure gap form: False
+   total: ['1/1200', '-7/6000', '97/72000', '-6809/18000000']
+PASS GAP: total = (1/1200) t_c^-2 + 0 + .. + 0
+PASS total of this variant = total of my point-frame run (variant id)
+PASS for each of the 7 inner graphs the split pieces add up to my point-frame term
+IND_RUN (g2_89_M0) ALL CHECKS PASSED

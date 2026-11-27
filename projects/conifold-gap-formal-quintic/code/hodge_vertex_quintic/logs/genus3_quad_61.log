@@ -1,0 +1,387 @@
+==============================================================================================================
+genus3_quad  p = 2^61-1  frame (0, 0)  K = 3  nproc = 24  2026-11-09 21:46
+   2926 evaluation points on the 75-dimensional class, graphs [3, 6, 7, 8, 17]
+      quadrics 365/2926 jobs done (158 s)
+      quadrics 730/2926 jobs done (266 s)
+      quadrics 1095/2926 jobs done (376 s)
+      quadrics 1460/2926 jobs done (488 s)
+      quadrics 1825/2926 jobs done (593 s)
+      quadrics 2190/2926 jobs done (701 s)
+      quadrics 2555/2926 jobs done (810 s)
+      quadrics 2920/2926 jobs done (915 s)
+      quadrics 2926/2926 jobs done (916 s)
+   evaluations: 917 s
+PASS every evaluation: [u^0] = [u^1] = 0 for the two-edge graphs
+PASS Q_Gamma(0) = [u^2] of pass A (M_0) for the five graphs
+PASS Q_Gamma(N_1(t)) = [u^2] of the stored full passes of step 5 (covariant family, t = 0..3, 21-node interpolation of the vertex tensors)
+PASS Q_Gamma(N_1^taut) = 0 for the five graphs (R' = Psi + O(u^2) there): ['0', '0', '0', '0', '0']
+PASS cone structure: gradient of every Q_Gamma vanishes at N_1^taut (Q_Gamma is homogeneous quadratic in N_1 - N_1^taut)
+PASS stored tautological control pass: [u^2] = 0 for the five graphs
+PASS random N_1: direct evaluation = quadric (polarisation exact, degree <= 2 in N_1)
+   diagonal coefficients A_ii of Q_3 (first block, k = 1): ['33/100000', '[906735945693717642 mod p]', '[308389599841257173 mod p]', '[1217092772695301633 mod p]', '[1475660570756774456 mod p]', '33/100000*zeta^2', '[89051597398269147 mod p]', '[90402447240741241 mod p]', '[1848688369394104022 mod p]', '33/100000*zeta^4', '[346303542994650806 mod p]', '[1147112829255983833 mod p]', '33/100000*zeta^1', '[1793934361583975851 mod p]', '33/100000*zeta^3']
+total time 934 s
+QUAD ALL CHECKS PASSED
+--------------------------------------------------------------------------------------------------------------
+(A) analysis of the O(u^2) quadrics, p = 2^61-1
+PASS N_1^taut satisfies the four O(u) equations
+   dim K_4 (full class) = 71
+PASS dim K_4 = 71
+PASS full class: every restricted form is homogeneous in t (cone with vertex N_1^taut): no constant or linear terms
+   ranks of the five forms on K_4 (71 x 71): {3: 43, 6: 10, 7: 62, 8: 34, 17: 12}
+   rank of a random linear combination: 71; dimension of the span of the five forms: 5
+PASS full class: Hilbert function in degree 3 equals that of a complete intersection of 5 quadrics in 71 variables (ideal rank 355 = 5 x 71): (355, 355)
+   dim K_4^circ = 11 (rank of the 4 x 15 restricted system 4)
+PASS dim K_4^circ = 11
+PASS circulant class: restricted forms homogeneous
+   ranks of the five forms on K_4^circ (11 x 11): {3: 7, 6: 2, 7: 10, 8: 6, 17: 2}
+   rank of a random combination: 11; span dimension: 5
+PASS circulant class: Hilbert function H(3) = 231 equals the complete-intersection value 231
+PASS circulant class: Hilbert function H(4) = 681 equals the complete-intersection value 681
+   => over the algebraic closure the common zero locus X^circ in P^10 is a complete intersection of dimension 5 (if both PASS): non-tautological complex solutions exist in the circulant class
+(B) sectors: K_4 intersected with the span of subsets of zhat-order blocks of the circulant class; exact common zeros where dim <= 3
+      blocks (5,): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (6,): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (1, 2): dim 1, common zeros [] (dim 1)
+      blocks (1, 3): dim 2, common zeros [] (dim 2 (gcd of binary forms, degree 0))
+      blocks (1, 4): dim 1, common zeros [] (dim 1)
+      blocks (1, 5): dim 2, common zeros [(1557454409177690950, 1)] (dim 2 (gcd of binary forms, degree 1))
+      blocks (1, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (2, 3): dim 1, common zeros [] (dim 1)
+      blocks (2, 5): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (2, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (3, 4): dim 1, common zeros [] (dim 1)
+      blocks (3, 5): dim 2, common zeros [(1557454409177690950, 1), (1557454409177690950, 1)] (dim 2 (gcd of binary forms, degree 2))
+      blocks (3, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (4, 5): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (4, 6): dim 2, common zeros all (dim 2 (all forms vanish identically on the line))
+      blocks (5, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (1, 2, 3): dim 4, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 4): dim 3, common zeros [] (dim 3: resultant degrees [4, 4, 4, 4], gcd degree 0)
+      blocks (1, 2, 5): dim 4, form ranks [3, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 6): dim 3, common zeros [('x-gcd of degree 4: roots not extracted',)] (dim 3: resultant degrees [4, 4, 4, 4], gcd degree 4)
+      blocks (1, 3, 4): dim 4, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 3, 5): dim 5, form ranks [4, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 6): dim 4, form ranks [3, 2, 3, 3, 2] (not solved: dim > 3)
+      blocks (1, 4, 5): dim 4, form ranks [2, 2, 2, 2, 2] (not solved: dim > 3)
+      blocks (1, 4, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (1, 5, 6): dim 4, form ranks [1, 2, 2, 2, 1] (not solved: dim > 3)
+      blocks (2, 3, 4): dim 3, common zeros [] (dim 3: resultant degrees [0, 4, 4, 4], gcd degree 0)
+      blocks (2, 3, 5): dim 4, form ranks [3, 0, 3, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 6): dim 3, common zeros [('x-gcd of degree 4: roots not extracted',)] (dim 3: resultant degrees [0, 4, 4, 4], gcd degree 4)
+      blocks (2, 4, 5): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (2, 4, 6): dim 2, common zeros all (dim 2 (all forms vanish identically on the line))
+      blocks (2, 5, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (3, 4, 5): dim 4, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (3, 4, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (3, 5, 6): dim 4, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (4, 5, 6): dim 5, form ranks [0, 0, 0, 0, 0] (not solved: dim > 3)
+      blocks (1, 2, 3, 4): dim 6, form ranks [6, 2, 6, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 5): dim 7, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 6): dim 6, form ranks [5, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 5): dim 6, form ranks [5, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 6): dim 5, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 5, 6): dim 6, form ranks [3, 2, 5, 4, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 5): dim 7, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 6): dim 6, form ranks [5, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 5, 6): dim 7, form ranks [4, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 4, 5, 6): dim 6, form ranks [2, 2, 2, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 5): dim 6, form ranks [3, 0, 5, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 6): dim 5, form ranks [3, 0, 4, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 5, 6): dim 6, form ranks [3, 0, 3, 2, 2] (not solved: dim > 3)
+      blocks (2, 4, 5, 6): dim 5, form ranks [0, 0, 0, 0, 0] (not solved: dim > 3)
+      blocks (3, 4, 5, 6): dim 6, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 5): dim 9, form ranks [7, 2, 9, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 6): dim 8, form ranks [7, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 5, 6): dim 9, form ranks [6, 2, 8, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 5, 6): dim 8, form ranks [5, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 5, 6): dim 9, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 5, 6): dim 8, form ranks [3, 0, 5, 2, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 5, 6): dim 11, form ranks [7, 2, 10, 6, 2] (not solved: dim > 3)
+FAIL no block sector of dimension <= 3 of the circulant class carries a non-tautological common zero: [((5,), 1, "['(1)']"), ((6,), 1, "['(1)']"), ((1, 5), 2, '[(1557454409177690950, 1)]'), ((1, 6), 1, "['(1)']"), ((2, 5), 1, "['(1)']"), ((2, 6), 1, "['(1)']"), ((3, 5), 2, '[(1557454409177690950, 1), (1557454409177690950, 1)]'), ((3, 6), 1, "['(1)']"), ((4, 5), 3, 'degenerate'), ((4, 6), 2, 'all'), ((5, 6), 3, 'degenerate'), ((1, 2, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((1, 4, 6), 3, 'degenerate'), ((2, 3, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((2, 4, 5), 3, 'degenerate'), ((2, 4, 6), 2, 'all'), ((2, 5, 6), 3, 'degenerate'), ((3, 4, 6), 3, 'degenerate')]
+(C) diagonal sector (15 colour-dependent scalar coordinates, odd orders): dim K_4^diag = 12; form ranks [8, 8, 12, 12, 8]; span 5
+   diagonal sector Hilbert function H(3) = 304 (complete intersection: 304)
+      diagonal blocks (1,): dim 4, ranks [4, 4, 4, 4, 4]
+      diagonal blocks (3,): dim 4, ranks [4, 0, 4, 4, 4]
+      diagonal blocks (5,): dim 4, ranks [0, 0, 0, 0, 0]
+      diagonal blocks (1, 3): dim 8, ranks [8, 8, 8, 8, 8]
+      diagonal blocks (1, 5): dim 8, ranks [4, 8, 8, 8, 4]
+      diagonal blocks (3, 5): dim 8, ranks [4, 0, 4, 4, 4]
+QUADAN FAILURES: ['no block sector of dimension <= 3 of the circulant class carries a non-tautological common zero']
+--------------------------------------------------------------------------------------------------------------
+(D) low/high decomposition of the circulant class at O(u^2), p = 2^61-1
+PASS genus-2 rows vanish on the high blocks (zhat^4, zhat^5, zhat^6) of the circulant class
+PASS the quadratic forms vanish identically on the 7 high circulant coordinates (q_HH = 0): a two-edge graph cannot carry two edges of psi-order >= 4
+   dim L_6 = 6 (genus-2 O(u) equations on the 8 low circulant coordinates, rank 2)
+PASS dim L_6 = 6
+PASS genus-3 rows have rank 2 on the 7 high coordinates (Delta_H can always absorb them)
+PASS random Delta_L #0 lies in L_6 (genus-2 rows vanish)
+   random Delta_L #0: 5 x 5 system rank 4, inconsistent
+PASS random Delta_L #1 lies in L_6 (genus-2 rows vanish)
+   random Delta_L #1: 5 x 5 system rank 4, inconsistent
+PASS random Delta_L #2 lies in L_6 (genus-2 rows vanish)
+   random Delta_L #2: 5 x 5 system rank 4, inconsistent
+PASS random Delta_L #3 lies in L_6 (genus-2 rows vanish)
+   random Delta_L #3: 5 x 5 system rank 4, inconsistent
+PASS random Delta_L #4 lies in L_6 (genus-2 rows vanish)
+   random Delta_L #4: 5 x 5 system rank 4, inconsistent
+   basis vector 0 of L_6: rank 4, inconsistent
+   basis vector 1 of L_6: rank 4, inconsistent
+   basis vector 2 of L_6: rank 4, inconsistent
+   basis vector 3 of L_6: rank 4, inconsistent
+   basis vector 4 of L_6: rank 4, inconsistent
+   basis vector 5 of L_6: rank 4, inconsistent
+FAIL KEY: for generic Delta_L in L_6 the 5 x 5 system for Delta_H is INVERTIBLE (then every low-order perturbation would extend to an O(u^2) solution): ranks [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]: by design this FAILS when the rank is 4 (one residual condition on Delta_L, see genus3_quadsolve2)
+QUADSOLVE FAILURES (expected for the KEY line): ['KEY: for generic Delta_L in L_6 the 5 x 5 system for Delta_H is INVERTIBLE (then every low-order perturbation would extend to an O(u^2) solution)']
+--------------------------------------------------------------------------------------------------------------
+(E) residual hypersurface of the circulant class and explicit O(u^2) solutions, p = 2^61-1
+PASS dim L_6 = 6 and dim H_5 = 5
+PASS cofactor left-kernel vector annihilates C at a random Delta_L (rank 4 confirmed)
+   random line #0 in L_6: F restricted has degree 6, 4 root(s) in F_p
+   random line #1 in L_6: F restricted has degree 6, 4 root(s) in F_p
+   random line #2 in L_6: F restricted has degree 6, 3 root(s) in F_p
+   random line #3 in L_6: F restricted has degree 6, 4 root(s) in F_p
+PASS F has degree <= 6 along every random line (degree 4 cofactors x degree 2 quadrics): [6, 6, 6, 6]
+PASS F_p-points of the residual hypersurface Y found on random lines: 15
+   (F has 15 F_p-roots on 4 random lines; a degree-6 polynomial has on average one root in F_p)
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+PASS an explicit non-tautological circulant N_1 with all five two-edge quadrics zero and the four O(u) equations satisfied was constructed
+   circulant coordinates of Delta = N_1 - N_1^taut (['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1', 'c6_2']): ['[2188344964121873561 mod p]', '[1670606768587674883 mod p]', '[1056427187764890773 mod p]', '[2099663762053987505 mod p]', '[114837101655156909 mod p]', '[193050214996238433 mod p]', '[539875287519915832 mod p]', '[429094262028675961 mod p]', '[1398351509001201702 mod p]', '[1895578613955288836 mod p]', '[157816529385175689 mod p]', '[491054704741402208 mod p]', '[545781225618618392 mod p]', '[1134004275757060303 mod p]', '0']
+PASS full class: dim of the genus-2 kernel in the low part = 38, of the genus-3 kernel in the high part = 33
+PASS full class: q_HH = 0 on the 35 high coordinates
+PASS full class: the 5 x 33 cross-term system has rank 5 for random Delta_L (every low-order perturbation extends to an O(u^2) solution: X^full is rational over Q(zeta)): [5, 5, 5]
+PASS full class: the extended random N_1 satisfies all five quadrics and the four O(u) equations
+      verify circ 2/17 jobs done (9 s)
+      verify circ 4/17 jobs done (10 s)
+      verify circ 6/17 jobs done (10 s)
+      verify circ 8/17 jobs done (10 s)
+      verify circ 10/17 jobs done (15 s)
+      verify circ 12/17 jobs done (16 s)
+      verify circ 14/17 jobs done (30 s)
+      verify circ 16/17 jobs done (299 s)
+      verify circ 17/17 jobs done (1153 s)
+   verification pass (circ solution; 17 graphs, full hatted theory, 21-node vertex interpolation): 1153 s
+      graph  1 (E=0): ['1/25200', '-1/9000', '[618432974567408202 mod p]', '[1132807754954366832 mod p]', '[809862491971010307 mod p]']
+      graph  2 (E=1): ['0', '0', '[124074112512444784 mod p]', '[1988364970449635857 mod p]', '[1602919279478543872 mod p]']
+      graph  5 (E=1): ['0', '0', '[950117714220314420 mod p]', '[1495098049992689175 mod p]', '[1931272188072991572 mod p]']
+      graph  3 (E=2): ['0', '0', '0', '[1689280130079956333 mod p]', '[1015594370343954225 mod p]']
+      graph  6 (E=2): ['0', '0', '0', '[421081081915124431 mod p]', '[1940783595842387737 mod p]']
+      graph  7 (E=2): ['0', '0', '0', '[1107531035026003446 mod p]', '[103862865213788201 mod p]']
+      graph  8 (E=2): ['0', '0', '0', '[324872629788169347 mod p]', '[248006079672719544 mod p]']
+      graph 17 (E=2): ['0', '0', '0', '[870595069350101709 mod p]', '[2182347010236118987 mod p]']
+      graph  4 (E=3): ['0', '0', '0', '[2087854247287773507 mod p]', '[506881508825485896 mod p]']
+      graph  9 (E=3): ['0', '0', '0', '[2047263186856930123 mod p]', '[2114856822789686721 mod p]']
+      graph 10 (E=3): ['0', '0', '0', '[216991822484945730 mod p]', '[1792824321274009912 mod p]']
+      graph 11 (E=3): ['0', '0', '0', '[1545800926879492144 mod p]', '[920130273375744875 mod p]']
+      graph 12 (E=3): ['0', '0', '0', '[1697149153700516432 mod p]', '[831553878145593700 mod p]']
+      graph 18 (E=3): ['0', '0', '0', '[1729716285860392837 mod p]', '[1571464473638956028 mod p]']
+      graph 19 (E=3): ['0', '0', '0', '[2139203271115667448 mod p]', '[2148636988072320099 mod p]']
+      graph 20 (E=3): ['0', '0', '0', '[1486020734121059993 mod p]', '[851863510775665578 mod p]']
+      graph 32 (E=3): ['0', '0', '0', '[246866834834265860 mod p]', '[344721989573256677 mod p]']
+PASS VERIFY (circ, independent full pass): one-edge graphs vanish through u^1 and all five two-edge graphs through u^2 (regular at O(u^2))
+   three-edge graphs [u^3] (cubic conditions, not imposed): {4: '[2087854247287773507 mod p]', 9: '[2047263186856930123 mod p]', 10: '[216991822484945730 mod p]', 11: '[1545800926879492144 mod p]', 12: '[1697149153700516432 mod p]', 18: '[1729716285860392837 mod p]', 19: '[2139203271115667448 mod p]', 20: '[1486020734121059993 mod p]', 32: '[246866834834265860 mod p]'}
+      verify full 2/17 jobs done (8 s)
+      verify full 4/17 jobs done (8 s)
+      verify full 6/17 jobs done (8 s)
+      verify full 8/17 jobs done (9 s)
+      verify full 10/17 jobs done (13 s)
+      verify full 12/17 jobs done (14 s)
+      verify full 14/17 jobs done (28 s)
+      verify full 16/17 jobs done (297 s)
+      verify full 17/17 jobs done (1156 s)
+   verification pass (full solution; 17 graphs, full hatted theory, 21-node vertex interpolation): 1156 s
+      graph  1 (E=0): ['1/25200', '-1/9000', '[112905160448010702 mod p]', '[2251340725485674698 mod p]', '[1084119814411146343 mod p]']
+      graph  2 (E=1): ['0', '0', '[2281152395487043343 mod p]', '[1856166043316802848 mod p]', '[1750545384880943179 mod p]']
+      graph  5 (E=1): ['0', '0', '[1604410254578807312 mod p]', '[718524657548091085 mod p]', '[486789072718978346 mod p]']
+      graph  3 (E=2): ['0', '0', '0', '[817036214921883605 mod p]', '[566905691366625215 mod p]']
+      graph  6 (E=2): ['0', '0', '0', '[1540673795969339855 mod p]', '[586759430037098123 mod p]']
+      graph  7 (E=2): ['0', '0', '0', '[985271876766988045 mod p]', '[942447117516396345 mod p]']
+      graph  8 (E=2): ['0', '0', '0', '[2160089035908444226 mod p]', '[1342815138758794187 mod p]']
+      graph 17 (E=2): ['0', '0', '0', '[1667676328940882751 mod p]', '[620845596266427656 mod p]']
+      graph  4 (E=3): ['0', '0', '0', '[1981975321170851014 mod p]', '[916895906575017734 mod p]']
+      graph  9 (E=3): ['0', '0', '0', '[238375490791367625 mod p]', '[923675936422522742 mod p]']
+      graph 10 (E=3): ['0', '0', '0', '[1272189867255448379 mod p]', '[708641721139746473 mod p]']
+      graph 11 (E=3): ['0', '0', '0', '[1749909150463064696 mod p]', '[1969604599655139825 mod p]']
+      graph 12 (E=3): ['0', '0', '0', '[372689845852650588 mod p]', '[1661921552712309502 mod p]']
+      graph 18 (E=3): ['0', '0', '0', '[1965766867631756647 mod p]', '[1845196377431237185 mod p]']
+      graph 19 (E=3): ['0', '0', '0', '[1682367867196236454 mod p]', '[1092574159697567017 mod p]']
+      graph 20 (E=3): ['0', '0', '0', '[973116420261957326 mod p]', '[714007378689316469 mod p]']
+      graph 32 (E=3): ['0', '0', '0', '[2299170684429345313 mod p]', '[1955254889769128875 mod p]']
+PASS VERIFY (full, independent full pass): one-edge graphs vanish through u^1 and all five two-edge graphs through u^2 (regular at O(u^2))
+   three-edge graphs [u^3] (cubic conditions, not imposed): {4: '[1981975321170851014 mod p]', 9: '[238375490791367625 mod p]', 10: '[1272189867255448379 mod p]', 11: '[1749909150463064696 mod p]', 12: '[372689845852650588 mod p]', 18: '[1965766867631756647 mod p]', 19: '[1682367867196236454 mod p]', 20: '[973116420261957326 mod p]', 32: '[2299170684429345313 mod p]'}
+QUADSOLVE2 ALL CHECKS PASSED
+--------------------------------------------------------------------------------------------------------------
+(A) analysis of the O(u^2) quadrics, p = 2^61-1
+PASS N_1^taut satisfies the four O(u) equations
+   dim K_4 (full class) = 71
+PASS dim K_4 = 71
+PASS full class: every restricted form is homogeneous in t (cone with vertex N_1^taut): no constant or linear terms
+   ranks of the five forms on K_4 (71 x 71): {3: 43, 6: 10, 7: 62, 8: 34, 17: 12}
+   rank of a random linear combination: 62; dimension of the span of the five forms: 5
+PASS full class: Hilbert function in degree 3 equals the complete-intersection value (ideal rank 355 = 5 x 71: no linear syzygies; NOT a proof of the dimension): (355, 355)
+   dim K_4^circ = 11 (rank of the 4 x 15 restricted system 4)
+PASS dim K_4^circ = 11
+PASS circulant class: restricted forms homogeneous
+   ranks of the five forms on K_4^circ (11 x 11): {3: 7, 6: 2, 7: 10, 8: 6, 17: 2}
+   rank of a random combination: 10; span dimension: 5
+PASS circulant class: Hilbert function H(3) = 231 equals the complete-intersection value 231 (consistency, not a dimension proof)
+PASS circulant class: Hilbert function H(4) = 681 equals the complete-intersection value 681 (consistency, not a dimension proof)
+   => the Hilbert function agrees with a complete intersection in degrees 3 and 4 (no linear syzygies, only the Koszul quadratic ones); dim X^circ >= 5 holds in any case and the exact dimension of the main component follows from the low/high decomposition (genus3_quadsolve2)
+(B) sectors: K_4 intersected with the span of subsets of zhat-order blocks of the circulant class; exact common zeros where dim <= 3
+      blocks (5,): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (6,): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (1, 2): dim 1, common zeros [] (dim 1)
+      blocks (1, 3): dim 2, common zeros [] (dim 2 (gcd of binary forms, degree 0))
+      blocks (1, 4): dim 1, common zeros [] (dim 1)
+      blocks (1, 5): dim 2, common zeros [(1557454409177690950, 1)] (dim 2 (gcd of binary forms, degree 1))
+      blocks (1, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (2, 3): dim 1, common zeros [] (dim 1)
+      blocks (2, 5): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (2, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (3, 4): dim 1, common zeros [] (dim 1)
+      blocks (3, 5): dim 2, common zeros [(1557454409177690950, 1), (1557454409177690950, 1)] (dim 2 (gcd of binary forms, degree 2))
+      blocks (3, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (4, 5): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (4, 6): dim 2, common zeros all (dim 2 (all forms vanish identically on the line))
+      blocks (5, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (1, 2, 3): dim 4, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 4): dim 3, common zeros [] (dim 3: resultant degrees [4, 4, 4, 4], gcd degree 0)
+      blocks (1, 2, 5): dim 4, form ranks [3, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 6): dim 3, common zeros [('x-gcd of degree 4: roots not extracted',)] (dim 3: resultant degrees [4, 4, 4, 4], gcd degree 4)
+      blocks (1, 3, 4): dim 4, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 3, 5): dim 5, form ranks [4, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 6): dim 4, form ranks [3, 2, 3, 3, 2] (not solved: dim > 3)
+      blocks (1, 4, 5): dim 4, form ranks [2, 2, 2, 2, 2] (not solved: dim > 3)
+      blocks (1, 4, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (1, 5, 6): dim 4, form ranks [1, 2, 2, 2, 1] (not solved: dim > 3)
+      blocks (2, 3, 4): dim 3, common zeros [] (dim 3: resultant degrees [0, 4, 4, 4], gcd degree 0)
+      blocks (2, 3, 5): dim 4, form ranks [3, 0, 3, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 6): dim 3, common zeros [('x-gcd of degree 4: roots not extracted',)] (dim 3: resultant degrees [0, 4, 4, 4], gcd degree 4)
+      blocks (2, 4, 5): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (2, 4, 6): dim 2, common zeros all (dim 2 (all forms vanish identically on the line))
+      blocks (2, 5, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (3, 4, 5): dim 4, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (3, 4, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (3, 5, 6): dim 4, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (4, 5, 6): dim 5, form ranks [0, 0, 0, 0, 0] (not solved: dim > 3)
+      blocks (1, 2, 3, 4): dim 6, form ranks [6, 2, 6, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 5): dim 7, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 6): dim 6, form ranks [5, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 5): dim 6, form ranks [5, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 6): dim 5, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 5, 6): dim 6, form ranks [3, 2, 5, 4, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 5): dim 7, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 6): dim 6, form ranks [5, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 5, 6): dim 7, form ranks [4, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 4, 5, 6): dim 6, form ranks [2, 2, 2, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 5): dim 6, form ranks [3, 0, 5, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 6): dim 5, form ranks [3, 0, 4, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 5, 6): dim 6, form ranks [3, 0, 3, 2, 2] (not solved: dim > 3)
+      blocks (2, 4, 5, 6): dim 5, form ranks [0, 0, 0, 0, 0] (not solved: dim > 3)
+      blocks (3, 4, 5, 6): dim 6, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 5): dim 9, form ranks [7, 2, 9, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 6): dim 8, form ranks [7, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 5, 6): dim 9, form ranks [6, 2, 8, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 5, 6): dim 8, form ranks [5, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 5, 6): dim 9, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 5, 6): dim 8, form ranks [3, 0, 5, 2, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 5, 6): dim 11, form ranks [7, 2, 10, 6, 2] (not solved: dim > 3)
+   block sectors of dimension <= 3 with common zeros (all of them are pure-high directions, on which q_HH = 0, or their mixtures): [((5,), 1, "['(1)']"), ((6,), 1, "['(1)']"), ((1, 5), 2, '[(1557454409177690950, 1)]'), ((1, 6), 1, "['(1)']"), ((2, 5), 1, "['(1)']"), ((2, 6), 1, "['(1)']"), ((3, 5), 2, '[(1557454409177690950, 1), (1557454409177690950, 1)]'), ((3, 6), 1, "['(1)']"), ((4, 5), 3, 'degenerate'), ((4, 6), 2, 'all'), ((5, 6), 3, 'degenerate'), ((1, 2, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((1, 4, 6), 3, 'degenerate'), ((2, 3, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((2, 4, 5), 3, 'degenerate'), ((2, 4, 6), 2, 'all'), ((2, 5, 6), 3, 'degenerate'), ((3, 4, 6), 3, 'degenerate')]
+PASS the common zeros found in block sectors of dimension <= 3 all involve the high blocks 4, 5, 6 (no low-order-only sector solution): [((5,), 1, "['(1)']"), ((6,), 1, "['(1)']"), ((1, 5), 2, '[(1557454409177690950, 1)]'), ((1, 6), 1, "['(1)']"), ((2, 5), 1, "['(1)']"), ((2, 6), 1, "['(1)']"), ((3, 5), 2, '[(1557454409177690950, 1), (1557454409177690950, 1)]'), ((3, 6), 1, "['(1)']"), ((4, 5), 3, 'degenerate'), ((4, 6), 2, 'all'), ((5, 6), 3, 'degenerate'), ((1, 2, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((1, 4, 6), 3, 'degenerate'), ((2, 3, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((2, 4, 5), 3, 'degenerate'), ((2, 4, 6), 2, 'all'), ((2, 5, 6), 3, 'degenerate'), ((3, 4, 6), 3, 'degenerate')]
+(C) diagonal sector (15 colour-dependent scalar coordinates, odd orders): dim K_4^diag = 12; form ranks [8, 8, 12, 12, 8]; span 5
+   diagonal sector Hilbert function H(3) = 304 (complete intersection: 304)
+      diagonal blocks (1,): dim 4, ranks [4, 4, 4, 4, 4]
+      diagonal blocks (3,): dim 4, ranks [4, 0, 4, 4, 4]
+      diagonal blocks (5,): dim 4, ranks [0, 0, 0, 0, 0]
+      diagonal blocks (1, 3): dim 8, ranks [8, 8, 8, 8, 8]
+      diagonal blocks (1, 5): dim 8, ranks [4, 8, 8, 8, 4]
+      diagonal blocks (3, 5): dim 8, ranks [4, 0, 4, 4, 4]
+QUADAN ALL CHECKS PASSED
+--------------------------------------------------------------------------------------------------------------
+(F) factorisation of q_6, q_17 and the Q(zeta)-rational hyperplane {m_1 = 0}; explicit rational solution, p = 2^61-1
+PASS q_6 has rank 2 on the circulant class
+PASS q_6 = a . m . m' with linear forms over F_p (discriminant a square)
+   q_6: factors with support ['c1_0'] and ['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2']; low-order-only factor: True
+PASS q_6: a factor is c_1(0) (up to scale)
+FAIL q_17 has rank 2 on the circulant class
+--------------------------------------------------------------------------------------------------------------
+(F) factorisation of q_6, q_17 and the Q(zeta)-rational hyperplane {m_1 = 0}; explicit rational solution, p = 2^61-1
+PASS dim K_4^circ = 11
+PASS pure-high part of K_4^circ has dimension 5
+PASS q_6 has rank 2 on K_4^circ
+PASS q_6 = a . m . m' with linear forms over F_p on K_4^circ
+   q_6: number of factors vanishing on the pure-high directions (i.e. depending on Delta_L only): 1
+PASS q_6 has exactly one factor depending on Delta_L only
+PASS the Delta_L-only factor of q_6 is c_1(0)
+PASS q_17 has rank 2 on K_4^circ
+PASS q_17 = a . m . m' with linear forms over F_p on K_4^circ
+   q_17: number of factors vanishing on the pure-high directions (i.e. depending on Delta_L only): 1
+PASS q_17 has exactly one factor depending on Delta_L only
+PASS m_1 extends to a functional of the 8 low circulant coordinates (consistent)
+   m_1 (graph 17, Delta_L-only factor) normalised at c1_1: ['c1_1: 1', 'c1_2: [128880293425833138 mod p]', 'c2_1: [742706253974327510 mod p]', 'c2_2: [540461535446104382 mod p]']
+PASS m_1 = 0 and the five free coordinates cut a 5-dimensional affine family in K_4^circ
+PASS the five remaining directions are pure-high
+PASS on {m_1 = 0}: the equation of graph 17 holds at every point of the fibre (row and rhs zero)
+PASS the other four equations have rank 4 on the five fibre directions and are consistent (solution = line, the invisible zhat^6 direction)
+PASS the explicit N_1 = N_1^taut + Delta satisfies all five two-edge quadrics and the four O(u) equations
+   circulant coordinates of Delta (Q(zeta) where reconstructible; free (c2_1, c2_2, c3_0, c3_1, c3_2) = (1, 2, -1, 3, 1), c6_2 = 0): ['c1_0: [2104836667272597962 mod p]', 'c1_1: [1061892653477861101 mod p]', 'c1_2: [689684225159834606 mod p]', 'c2_1: 1', 'c2_2: 2', 'c3_0: -1', 'c3_1: 3', 'c3_2: 1', 'c4_1: [1252452629747433022 mod p]', 'c4_2: [1771902853661191374 mod p]', 'c5_0: [398977268121123757 mod p]', 'c5_1: [1148992712103440600 mod p]', 'c5_2: [406590477640279664 mod p]', 'c6_1: [724683894905714142 mod p]', 'c6_2: 0']
+QUADSOLVE3 ALL CHECKS PASSED
+--------------------------------------------------------------------------------------------------------------
+(F) factorisation of q_6, q_17 and the Q(zeta)-rational hyperplane {m_1 = 0}; explicit rational solution, p = 2^61-1
+PASS dim K_4^circ = 11
+PASS pure-high part of K_4^circ has dimension 5
+PASS q_6 has rank 2 on K_4^circ
+PASS q_6 = a . m . m' with linear forms over F_p on K_4^circ
+   q_6: number of factors vanishing on the pure-high directions (i.e. depending on Delta_L only): 1
+PASS q_6 has exactly one factor depending on Delta_L only
+PASS the Delta_L-only factor of q_6 is c_1(0)
+PASS q_17 has rank 2 on K_4^circ
+PASS q_17 = a . m . m' with linear forms over F_p on K_4^circ
+   q_17: number of factors vanishing on the pure-high directions (i.e. depending on Delta_L only): 1
+PASS q_17 has exactly one factor depending on Delta_L only
+PASS m_1 extends to a functional of the 8 low circulant coordinates (consistent)
+   m_1 (graph 17, Delta_L-only factor) normalised at c1_1: ['c1_1: 1', 'c1_2: [128880293425833138 mod p]', 'c2_1: [742706253974327510 mod p]', 'c2_2: [540461535446104382 mod p]']
+PASS m_1 = 0 and the five free coordinates cut a 5-dimensional affine family in K_4^circ
+PASS the five remaining directions are pure-high
+PASS on {m_1 = 0}: the equation of graph 17 holds at every point of the fibre (row and rhs zero)
+PASS the other four equations have rank 4 on the five fibre directions and are consistent (solution = line, the invisible zhat^6 direction)
+PASS the explicit N_1 = N_1^taut + Delta satisfies all five two-edge quadrics and the four O(u) equations
+   circulant coordinates of Delta (Q(zeta) where reconstructible; free (c2_1, c2_2, c3_0, c3_1, c3_2) = (1, 2, -1, 3, 1), c6_2 = 0): ['c1_0: [2104836667272597962 mod p]', 'c1_1: [1061892653477861101 mod p]', 'c1_2: [689684225159834606 mod p]', 'c2_1: 1', 'c2_2: 2', 'c3_0: -1', 'c3_1: 3', 'c3_2: 1', 'c4_1: [1252452629747433022 mod p]', 'c4_2: [1771902853661191374 mod p]', 'c5_0: [398977268121123757 mod p]', 'c5_1: [1148992712103440600 mod p]', 'c5_2: [406590477640279664 mod p]', 'c6_1: [724683894905714142 mod p]', 'c6_2: 0']
+      verify rational 2/17 jobs done (12 s)
+      verify rational 4/17 jobs done (13 s)
+      verify rational 6/17 jobs done (13 s)
+      verify rational 8/17 jobs done (14 s)
+      verify rational 10/17 jobs done (18 s)
+      verify rational 12/17 jobs done (20 s)
+      verify rational 14/17 jobs done (34 s)
+      verify rational 16/17 jobs done (302 s)
+      verify rational 17/17 jobs done (1156 s)
+   verification pass (17 graphs, full hatted theory, 21-node vertex interpolation): 1156 s
+      graph  1 (E=0): ['1/25200', '-1/9000', '[2145561858074485729 mod p]', '[2138735472916201470 mod p]', '[491814558464884430 mod p]']
+      graph  2 (E=1): ['0', '0', '[599922092970726775 mod p]', '[142732523144776659 mod p]', '[1711923448153608554 mod p]']
+      graph  5 (E=1): ['0', '0', '[1252983859468648853 mod p]', '[1496454470199934827 mod p]', '[270912777408259286 mod p]']
+      graph  3 (E=2): ['0', '0', '0', '[930619733102616466 mod p]', '[1381359158185564949 mod p]']
+      graph  6 (E=2): ['0', '0', '0', '[906979656827649526 mod p]', '[624769678734799069 mod p]']
+      graph  7 (E=2): ['0', '0', '0', '[2186636569423183682 mod p]', '[54709873200328494 mod p]']
+      graph  8 (E=2): ['0', '0', '0', '[2050144551402806326 mod p]', '[15442008635577388 mod p]']
+      graph 17 (E=2): ['0', '0', '0', '[1596143420199590117 mod p]', '[312877292513965372 mod p]']
+      graph  4 (E=3): ['0', '0', '0', '[1199266418437331931 mod p]', '[958725429088665650 mod p]']
+      graph  9 (E=3): ['0', '0', '0', '[321056263872040091 mod p]', '[1048151742298256698 mod p]']
+      graph 10 (E=3): ['0', '0', '0', '[909063797812520861 mod p]', '[2116875556501610776 mod p]']
+      graph 11 (E=3): ['0', '0', '0', '[1011830857028781178 mod p]', '[1593182748535277508 mod p]']
+      graph 12 (E=3): ['0', '0', '0', '[502689878361298003 mod p]', '[1671269811827290429 mod p]']
+      graph 18 (E=3): ['0', '0', '0', '0', '[1384857546273021342 mod p]']
+      graph 19 (E=3): ['0', '0', '0', '[2222457553540972165 mod p]', '[921471702098785809 mod p]']
+      graph 20 (E=3): ['0', '0', '0', '0', '0']
+      graph 32 (E=3): ['0', '0', '0', '0', '0']
+PASS VERIFY (independent full pass): one-edge graphs vanish through u^1 and all five two-edge graphs through u^2 for the explicit Q(zeta)-rational circulant N_1
+QUADSOLVE3 ALL CHECKS PASSED

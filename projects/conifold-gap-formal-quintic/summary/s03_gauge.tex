@@ -1,0 +1,90 @@
+% Abridged version, Section 3, part 1 of 2: the cyclic form of PF4, the two cyclic systems, Theorem U. Continued in part 2.
+\section{Cyclic systems, Theorem U and the canonical gauge}
+\label{sec:gau}
+
+This section follows \Lr{sec:gau}. Here $\Dq=-(1-u)\,\dd/\dd u$, a prime denotes $\dd/\dd u$, $z$ is a constant, $E_{ab}$ ($a,b\in\bbZ/5$) are the matrix units and $\mathbf e_a$ the standard basis vectors; solutions, gauges and rows are in lowered components.
+
+%-------------------------------------------------------------------------------
+\subsection{The cyclic form of the fourth-order operator}
+\label{sec:gau-cyc}
+
+Let $\bbK:=\bbQ\lser u$, let $\ell$ be a formal $\log u$ ($\Dq\ell=1-u^{-1}$), let $y_3=\varpi_1\ell+\rho_3$, $\rho_3\in u^3\bbQ\fps u$, be the logarithmic solution of $\PFfour$ (\cref{lem:set-frobbasis}), and $\mathcal S:=\operatorname{span}_\bbQ(f_0,f_1,f_2,y_3)$; thus $\mathcal S\cap\bbK=\operatorname{span}(f_0,f_1,f_2)$ is the space of power-series solutions. For $y_0,y_1\in\bbK$ with $y_0\neq0$ and $t:=y_1/y_0$ not constant, the \emph{cyclic operator} is
+\[
+\Mcyc(y_0,y_1):=\frac1{y_0}\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\bigl(u\,y_0^2(\Dq t)^2\bigr)\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\frac1{y_0}\ \in\bbK[\Dq].
+\]
+
+\begin{thm}[The cyclic form of $\PFfour$, (CYC); {\Lr{thm:gau-cyc}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{thm:gau-cyc}
+Let $y_0\in\mathcal S\cap\bbK$ be non-zero and not proportional to $\varpi_1$. Then, as operators in $\bbK[\Dq]$, $\PFfour=\Mcyc(y_0,\varpi_1)$. In particular $\PFfour=\Mcyc(\varpi_0,\varpi_1)$ in every conifold frame of \cref{def:set-frames}.
+\end{thm}
+
+\begin{sketch}[Idea of the proof {\Lr{sec:gau-cycproof}}]
+$\PFfour$ is formally self-adjoint, so its concomitant $\Conc$ is a $\bbQ$-valued alternating form on $\mathcal S$. The automorphism $\ell\mapsto\ell+1$ maps $y_3$ to $y_3+\varpi_1$ (a formal Picard--Lefschetz transformation); hence $\Conc(f,\varpi_1)=0$ for every power-series solution $f$, and every plane in $\mathcal S\cap\bbK$ that contains $\varpi_1$ is isotropic. A transversality identity then gives the relations of special geometry: with $\de_t=(\Dq t)^{-1}\Dq$, the functions $u\,y_0^2(\Dq t)^3\,\de_t^2(y/y_0)$, $y\in\mathcal S$, lie in $\operatorname{span}_\bbQ(1,t)$. So $\Mcyc(y_0,\varpi_1)$ annihilates $\mathcal S$ and has the leading coefficient $u$ of $\PFfour$; the difference, of order at most $3$, vanishes.
+\end{sketch}
+
+\begin{cor}[The cyclic system is $\PFfive$; {\Lr{cor:gau-cycsys}}, for $y_1=\varpi_1$]\genusstatus{AI-proposed, unchecked}
+\label{cor:gau-cycsys}
+Let $y_0$ be as in \cref{thm:gau-cyc}, $t=\varpi_1/y_0$, and $\kappa=(\kappa_0,\dots,\kappa_4):=\bigl(\Dq t,\ L^5/(y_0^2(\Dq t)^2),\ \Dq t,\ y_0,\ y_0\bigr)$, $L^5:=u^{-1}$. Let $(\cR,\Dq)$ be a differential ring extending $(\bbK,\Dq)$ and $z\in\cR$ with $\Dq z=0$.
+\begin{enumerate}
+\item For $Y_0,\dots,Y_4\in\cR$ the cyclic system $z\Dq Y_a=\kappa_aY_{a+1}$ ($a\in\bbZ/5$) holds if and only if $y_0Y_0$ solves $\PFfive$ and $Y_{a+1}=z\Dq Y_a/\kappa_a$ for $a=0,\dots,3$.
+\item If $z$ is invertible in $\cR$, then for every $w\in\cR$ the same holds with $z\Dq$ replaced by $z\Dq+w$ in the system, in the relations $Y_{a+1}=z\Dq Y_a/\kappa_a$ and in $\PFfive$.
+\end{enumerate}
+\end{cor}
+
+
+
+%-------------------------------------------------------------------------------
+\subsection{The quintic system and the pulled-back model}
+\label{sec:gau-systems}
+
+\begin{defn}[Cyclic systems with one simple pole; regular gauges; {\Lr{def:gau-onepole}}]
+\label{def:gau-onepole}
+Let $\Bbbk$ be a field of characteristic $0$. A \emph{cyclic system with one simple pole} over $\Bbbk\fps u$ is a system $z\de_uY=AY$ with $A=\sum_{a\in\bbZ/5}b_aE_{a,a+1}$ whose coefficients have the \emph{one-pole shape}: $b_a\in\Bbbk\fps u^\times$ for $a\neq1$ and $ub_1\in\Bbbk\fps u^\times$. Its \emph{residue} is $r:=(ub_1)(0)$ and its \emph{product} is $\Bprod:=\prod_ab_a$. It is \emph{self-dual} if $b_0=b_2$ and $b_3=b_4$, i.e.\ $\eta A=A^T\eta$. For a second such system $\tilde A=\sum_a\tilde b_aE_{a,a+1}$, the condition (EP) of \emph{equal products} is $\prod_ab_a=\prod_a\tilde b_a$. The \emph{gauge equation} from $\tilde A$ to $A$ is $zP'=AP-P\tilde A$ for $P=\sum_{k\geq0}z^kP_k$, $P_k\in\mathfrak{gl}_5(\Bbbk\fps u)$; then $z\de_u(P\tilde Y)=AP\tilde Y$ whenever $z\de_u\tilde Y=\tilde A\tilde Y$. $\Gau(A,\tilde A)$ denotes the set of all solutions; it is a $\Bbbk\fps z$-module. A \emph{regular gauge} is an element of $\Gau(A,\tilde A)$ with $P_0\in\mathrm{GL}_5(\Bbbk\fps u)$. $P$ is \emph{graded} if $P_k=\sum_bp_{k,b}E_{b+k,b}$ for every $k$.
+\end{defn}
+
+\begin{prop}[The quintic cyclic system; {\Lr{prop:gau-quintic}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{prop:gau-quintic}
+Let $(\alpha,\beta)\in\bbQ^2$ give a conifold frame, $\tc=\varpi_1/\varpi_0$, and let $\kappa:=\bigl(\Dq\tc,\ L^5/(\varpi_0^2(\Dq\tc)^2),\ \Dq\tc,\ \varpi_0,\ \varpi_0\bigr)$, $L^5=u^{-1}$, be the vector of \cref{cor:gau-cycsys} for $y_0=\varpi_0$.
+\begin{enumerate}
+\item $\kappa_a=\Cexp_{\alpha,\beta}(C_1\kappa^{\mathrm{LR}}_a)$ for $a\in\bbZ/5$. Hence the conifold expansion carries the \emph{forward relations} $(z\Dq+\zeta^iL)X_a=C_1\kappa^{\mathrm{LR}}_aX_{a+1}$, $a=0,\dots,3$, of elements $X_a$ of $\Nring\lser z\otimes\bbQ(\zeta)$ (cf.\ \cref{prop:set-cyclicLR}~(iii)) to the relations $(z\Dq+\zeta^iL)\Cexp(X_a)=\kappa_a\Cexp(X_{a+1})$, $L=s^{-1}$; by \cref{cor:gau-cycsys}~(ii) the \emph{closing relation}, $a=4$, is then equivalent to the equation $\PFfive$, with $z\Dq$ replaced by $z\Dq+\zeta^iL$, for $\varpi_0\Cexp(X_0)$; for the rows it is obtained in \cref{thm:gau-R0}.
+\item The cyclic system $z\Dq Y_a=\kappa_aY_{a+1}$ is $z\de_uY=AY$ with $A=\sum_ab_aE_{a,a+1}$, $b_a:=-\kappa_a/(1-u)$,
+\[
+b=\Bigl(\tc',\ -\frac1{u\varpi_0^2(1-u)^3\tc'^2},\ \tc',\ -\frac{\varpi_0}{1-u},\ -\frac{\varpi_0}{1-u}\Bigr),
+\]
+a self-dual cyclic system with one simple pole over $\bbQ\fps u$, with residue $r=-1$, product $\prod_ab_a=-1/(u(1-u)^5)$, and $b_a(0)=1,1,-1,-1$ for $a=0,2,3,4$.
+\end{enumerate}
+\end{prop}
+
+\begin{prop}[Equal products and $v(u)$; {\Lr{prop:gau-equalprod}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{prop:gau-equalprod}
+Let $v\in u\bbQ\fps u$ with $v'(0)\neq0$. The model system $z\,\dd Y_b/\dd v=b^{\mathrm m}_bY_{b+1}$ pulled back along $v=v(u)$ is $z\de_uY=\tilde AY$ with $\tilde b=\bigl(v',\ -v'/v,\ v',\ -v',\ -v'\bigr)$ and $\prod_a\tilde b_a=-v'^5/v$.
+\begin{enumerate}
+\item If $v=u+O(u^2)$, $\tilde A$ is a self-dual cyclic system with one simple pole over $\bbQ\fps u$, with residue $\tilde r=-1$ and $\tilde b_a(0)=1,1,-1,-1$ for $a=0,2,3,4$.
+\item For $v=u+O(u^2)$, the products of $\tilde A$ and of the quintic system of \cref{prop:gau-quintic} are equal if and only if $v'^5/v=1/(u(1-u)^5)$, if and only if $v=u\,\tau(u)^{-5/4}$ (\cref{def:set-tau}).
+\end{enumerate}
+\end{prop}
+
+So the product of the coefficients, which does not depend on the frame, fixes the natural variable $\tau$: this is the origin of the natural form.
+
+%-------------------------------------------------------------------------------
+\subsection{Theorem U}
+\label{sec:gau-U}
+
+Let $A$, $\tilde A$ be cyclic systems with one simple pole over $\Bbbk\fps u$ satisfying (EP). Put $d^U_0:=1$, $d^U_{a+1}:=d^U_a\tilde b_a/b_a$ (consistently around the cycle, by (EP)), $\Theta_U:=\diag(d^U_0,\dots,d^U_4)$, so that $A\Theta_U=\Theta_U\tilde A$, and $\mathfrak d:=(\det\Theta_U/\det\Theta_U(0))^{-1/5}\in1+u\Bbbk\fps u$.
+
+\begin{thm}[Theorem U; {\Lr{thm:gau-U}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:gau-U}
+Let $A$, $\tilde A$ be cyclic systems with one simple pole over $\Bbbk\fps u$ with equal products.
+\begin{enumerate}
+\item[(a)] (Existence.) There is $P^\natural\in\Gau(A,\tilde A)$ with $P^\natural_0=\mathfrak d\,\Theta_U$, a diagonal matrix with unit entries.
+\item[(b)] (Uniqueness.) For every $P^\natural\in\Gau(A,\tilde A)$ with $P^\natural_0=\mathfrak d\,\Theta_U$, the map $\Bbbk\fps z\to\Gau(A,\tilde A)$, $\cn\mapsto P^\natural\cn(z)$, is bijective. Consequently every solution $P$ of the gauge equation with coefficients in $\mathfrak{gl}_5(\Bbbk\fps u)$ is $P^\natural\cn(z)$ for a unique $\cn\in\Bbbk\fps z$; its $z^0$-term is $P_0=\cn(0)\,\mathfrak d\,\Theta_U$, a diagonal matrix, and $P$ is a regular gauge if and only if $\cn(0)\neq0$. If $P$ is one regular gauge, the regular gauges are exactly the $P\cn(z)$ with $\cn\in\Bbbk\fps z^\times$. For the pair $(\tilde A,\tilde A)$: $\Gau(\tilde A,\tilde A)=\Bbbk\fps z\cdot1$.
+\item[(c)] (Graded gauges.) Graded regular gauges exist; if $P$ is one, the graded regular gauges are exactly the $P\cn(z)$ with $\cn\in\Bbbk\fps{z^5}^\times$.
+\item[(d)] (The field.) If all $b_a$, $\tilde b_a$ lie in $\bbQ\lser u$, then $P^\natural$ can be chosen in $\mathfrak{gl}_5(\bbQ\fps u)\fps z$; for every field $\Bbbk\supseteq\bbQ$ the solutions with coefficients in $\mathfrak{gl}_5(\Bbbk\fps u)$ are then $P^\natural\Bbbk\fps z$, and $P^\natural\cn$ has rational coefficients if and only if $\cn\in\bbQ\fps z$.
+\end{enumerate}
+\end{thm}
+
+\begin{sketch}[Sketch of the proof {\Lr{lem:gau-comm,lem:gau-lift,lem:gau-scal,lem:gau-lead,lem:gau-degree,prop:gau-graded}}]
+Write $P=\Theta_U\check P$. The gauge equation becomes $[\tilde A,\check P_0]=0$ and $[\tilde A,\check P_{k+1}]=\de_u\check P_k+\Theta_U^{-1}(\de_u\Theta_U)\,\check P_k$ for $k\geq0$. Over $\Bbbk\lser u$ the commutant of $\tilde A$ is $\Bbbk\lser u[\mathcal Y]$, $\mathcal Y:=\tilde A^{-1}$, and $\mathfrak{gl}_5$ is the direct sum of the commutant and of the image of $\operatorname{ad}\tilde A$, with a projection $\operatorname{pr}$ onto the commutant. So the step $k+1$ is solvable if and only if $\operatorname{pr}$ of the right side vanishes, and $\check P_{k+1}$ is then determined up to an element $w=\sum_{j=0}^4w_j\mathcal Y^j$ of the commutant, to be chosen so that the next step is solvable. This condition splits into five scalar equations $\de_uw_j+\chi^U_jw_j=-\phi_j$ with $\chi^U_j=\frac j{5u}+(\text{a power series})$: for $j=1,\dots,4$ the pivots $n+\frac j5$ do not vanish, and there is exactly one power-series solution; for $j=0$ there is one free constant. This constructs $P^\natural$; the same analysis shows that the lowest coefficient of any solution is a constant multiple of $\mathfrak d\,\Theta_U$, and peeling off these constants gives (b). For (c), the gauge equation is homogeneous for the $\bbZ/5$-degree $k+b-a$ of $z^kE_{ab}$, so the part of degree $0$ of $P^\natural$ is a solution with the same $z^0$-term. The construction is rational, which gives (d).
+\end{sketch}
+
+\input{summary/s03_gauge_2}

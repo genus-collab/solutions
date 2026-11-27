@@ -1,0 +1,9 @@
+ch_sigma: c(z; L) exact over Q(zeta5) through z^10; log logs/ch_sigma_10.log
+PASS two assemblies of the Taylor data (rational L in ch_phases, Q(zeta)-valued L here; shared Wick routine) agree through z^10 at L = 2, -2/3, 7/5, 3
+PASS c_n(L) is rational at rational L (n <= 10)
+PASS c_1(L) = -(3/20) L^4 and c_2(L) = (9/800) L^8 at these L (so c_1(1) = h_1, c_2(1) = h_2)
+PASS stored value c_5(2) = 11495493197/31500 (GAMMA logs; SYN4 s.3 E3) reproduced   11495493197/31500
+PASS Z/5 covariance: c_n(zeta^i L) = zeta^(-in) c_n(L) exactly, i = 1..4, n <= 10, L = 2, -2/3
+PASS control: the covariance with zeta^(+in) fails
+c_3(2), c_4(2) = 354278/625, -73040834/3125
+CH_SIGMA 10: ALL CHECKS PASSED   (3 s)

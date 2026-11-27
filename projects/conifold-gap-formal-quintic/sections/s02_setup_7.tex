@@ -1,0 +1,68 @@
+% Section 2, part 7 of 8: M_0 and its symplecticity; the model cohomological field theory and its homogeneity.
+
+\begin{defn}[The model $R$-matrix]
+\label{def:set-M0}
+Let $\Rhat^{\mathrm m}(t)$ be the $5\times5$ matrix with the entries (row $b$, colour column $i$)
+\[
+\Rhat^{\mathrm m,(i)}_b(t)\coloneqq\zeta^{i(b+1)}\Fs_b(\zeta^{-i}t),
+\]
+let $\Psi_0\coloneqq\Rhat^{\mathrm m}(0)$, with the entries $(\Psi_0)_{bi}=\varepsilon_b\zeta^{i(b+1)}$, and put $\Mo(t)\coloneqq\Psi_0^{-1}\Rhat^{\mathrm m}(t)$, the model $R$-matrix in Teleman's colour-colour form. Here $\Psi_0^T\eta^{-1}\Psi_0=1$:
+\[
+(\Psi_0^T\eta^{-1}\Psi_0)_{ij}=\frac15\sum_{a\in\bbZ/5}\varepsilon_a\varepsilon_{3-a}\zeta^{i(a+1)+j(4-a)}=\frac15\sum_{a\in\bbZ/5}\zeta^{(i-j)(a+1)}=\delta_{ij},
+\]
+since $\varepsilon_a\varepsilon_{3-a}=1$ for every $a$. So $\Psi_0^{-1}=\Psi_0^T\eta^{-1}$, $\Rhat^{\mathrm m}=\Psi_0\Mo$, and $\Mo(0)=1$. The columns $\re^{U_i/z}\varsigma^{\nu_b-1}\Rhat^{\mathrm m,(i)}_b(z/\varsigma^4)$ are homogeneous WKB solutions of colour $i$ of the model system (step~(1) of the proof of \cref{lem:set-M0sympl}; also \cref{lem:gau-colmod}).
+\end{defn}
+
+\begin{lem}[Symplecticity of $\Mo$]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-M0sympl}
+$\Mo(-t)^T\Mo(t)=1$, and hence $\Mo(t)\Mo(-t)^T=1$; that is, $\Mo$ lies in Givental's group of symplectic $R$-matrices in an orthonormal basis.
+\end{lem}
+
+\begin{proof}
+The letters $A^{\mathrm m}$, $\mathcal U$ and $\cN$ are local; all columns are formal WKB columns, with $\partial_v=(5\varsigma^4)^{-1}\partial_\varsigma$ and $\partial_v\re^{U/z}=(\partial_vU/z)\re^{U/z}$.
+
+(1) \emph{Colour-$i$ columns.} The model system $\frac z{5\varsigma^4}\partial_\varsigma Y_b=b^{\mathrm m}_b(\varsigma^5)Y_{b+1}$ is invariant under $\varsigma\mapsto\zeta^{-i}\varsigma$ (as $\zeta^{4i}=\zeta^{-i}$), which maps $U_0$ to $U_i$, $t$ to $\zeta^{-i}t$ and $\varsigma^{\nu_b-1}$ to $\zeta^{i(b+1)}\varsigma^{\nu_b-1}$ ($\nu_b\equiv-b$). Applied to the colour-$0$ solution of \cref{prop:set-modrows}~(b), it shows that $Y^{(i)}_b\coloneqq\re^{U_i/z}\varsigma^{\nu_b-1}\Rhat^{\mathrm m,(i)}_b(t)$ is a solution for every $i$.
+
+(2) \emph{Self-adjointness.} With $A^{\mathrm m}\coloneqq\sum_bb^{\mathrm m}_bE_{b,b+1}$ the model system is $z\partial_vY=A^{\mathrm m}Y$, and $(\eta^{-1}A^{\mathrm m})_{ac}=\frac15b^{\mathrm m}_{3-a}\delta_{c,4-a}$ is symmetric, since $b^{\mathrm m}_{a-1}=b^{\mathrm m}_{3-a}$ for all $a$ ($b^{\mathrm m}_4=b^{\mathrm m}_3$, $b^{\mathrm m}_0=b^{\mathrm m}_2$).
+
+(3) \emph{Constancy.} For the matrix $Y$ of the columns $Y^{(i)}$ and $\mathcal U(v,z)\coloneqq Y(v,-z)^T\eta^{-1}Y(v,z)$, $\partial_v\mathcal U=z^{-1}Y(v,-z)^T(\eta^{-1}A^{\mathrm m}-(A^{\mathrm m})^T\eta^{-1})Y(v,z)=0$ by (2).
+
+(4) \emph{Reduction.} Let $\cN(t)\coloneqq\Rhat^{\mathrm m}(-t)^T\eta^{-1}\Rhat^{\mathrm m}(t)$ over $\bbQ(\zeta)\fps t$. As $\nu_a+\nu_b=2$ on the pairs $a+b\equiv3$, $\mathcal U_{ij}=\re^{(U_j-U_i)/z}\cN_{ij}(t)$, and $\partial_v\mathcal U_{ij}=0$ is equivalent to $(\zeta^j-\zeta^i)\,\cN_{ij}(t)+\tfrac45t^2\,\cN_{ij}'(t)=0$. For $i\neq j$ the lowest coefficient of $\cN_{ij}$ would have to vanish, so $\cN_{ij}=0$; for $i=j$, $\cN_{ii}=\cN_{ii}(0)=1$ (\cref{def:set-M0}). Hence $\Rhat^{\mathrm m}(-t)^T\eta^{-1}\Rhat^{\mathrm m}(t)=1$.
+
+(5) \emph{Teleman form.} As $\Psi_0\Psi_0^T=\eta$, $\Mo(-t)^T\Mo(t)=\Rhat^{\mathrm m}(-t)^T\eta^{-1}\Rhat^{\mathrm m}(t)=1$, and a left inverse of a square matrix over a commutative ring is a right inverse.
+\end{proof}
+
+\begin{defn}[The model cohomological field theory]
+\label{def:set-modcohft}
+Let $\varsigma$ be a formal fifth root of $v$, as in \cref{prop:set-modrows}. The \emph{model TFT} $\TFT^{\mathrm m}_v$ is the TFT on the colour space, with the orthonormal basis $\tilde e_i$ ($i\in\bbZ/5$), \emph{defined} by $\hat\Delta_i^{1/2}\coloneqq\zeta^{4i}\varsigma$: $\TFT^{\mathrm m}_{v;h,n}(\tilde e_i,\dots,\tilde e_i)\coloneqq(\zeta^{4i}\varsigma)^{2h-2+n}$, $\TFT^{\mathrm m}_{v;h,n}=0$ on mixed colours, with the unit $\sum_i\hat\Delta_i^{-1/2}\tilde e_i=\varsigma^{-1}\sum_i\zeta^i\tilde e_i$. Let $\Psi^{\mathrm m}_v$ be the map from the colour space to $\bbH$ with the lowered entries $\eta(H^b,\Psi^{\mathrm m}_v\tilde e_i)\coloneqq\varsigma^{\nu_b-1}\varepsilon_b\zeta^{i(b+1)}=\varsigma^{\nu_b-1}(\Psi_0)_{bi}$: the value at $z=0$ of the colour columns of \cref{def:set-M0} with the exponentials stripped (the model columns $\Qr^{\mathrm m}$ of \cref{thm:gau-R0} at $z=0$). It is an isometry: on the pairs $a+b\equiv3$ the powers of $\varsigma$ cancel because $\nu_a+\nu_b=2$, so $(\Psi^{\mathrm m}_v)^T\eta^{-1}\Psi^{\mathrm m}_v=\Psi_0^T\eta^{-1}\Psi_0=1$ (\cref{def:set-M0}). The \emph{model cohomological field theory} on $(\bbH,\eta)$ is
+\[
+\Omega^{\mathrm{mod}}_v\coloneqq(\Psi^{\mathrm m}_v)_*\bigl(\Mo(z/\varsigma^4).\TFT^{\mathrm m}_v\bigr),\qquad(A_*\Omega)_{h,n}\coloneqq\Omega_{h,n}\circ(A^{-1})^{\otimes n},
+\]
+with the unit-preserving action of \cite[Defs.~2.5, 2.13]{PPZ15}, $\Mo(z/\varsigma^4)=1+O(z)$ being symplectic by \cref{lem:set-M0sympl}. Its ancestor correlators $\langle\psi^{k_1}H^{a_1}\cdots\psi^{k_n}H^{a_n}\rangle_h(v)\coloneqq\int_{\overline{\mathcal M}_{h,n}}\Omega^{\mathrm{mod}}_{v;h,n}(H^{a_1},\dots,H^{a_n})\prod_j\psi_j^{k_j}$ ($2h-2+n>0$) and its dilaton-shifted potentials $\overline F_h(q)$, with the base point $q=-z1$, are those of \cref{def:set-graphsum}. The \emph{free energies} are $\Fm_h\coloneqq\langle\ \rangle_h(v)$ ($h\geq2$); that $\Fm_h=c_hv^{2-2h}$ is \cref{thm:mod-gap}.
+\end{defn}
+
+\begin{lem}[Homogeneity of the model theory]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-modhom}
+\begin{itemize}
+\item[(a)] For every cohomological degree $D$,
+\[
+\Omega^{\mathrm{mod}}_{v;h,n}(H^{b_1},\dots,H^{b_n})_{[D]}=\varsigma^{\,2h-2+\sum_j\nu_{b_j}-4D}\,\Omega^{\mathrm{mod}}_{1;h,n}(H^{b_1},\dots,H^{b_n})_{[D]},
+\]
+where ${}_{[D]}$ is the part of degree $D$ and $\Omega^{\mathrm{mod}}_1$ is obtained by putting $\varsigma=1$.
+\item[(b)] Every ancestor correlator is $\langle\prod_j\psi^{k_j}H^{b_j}\rangle_h(v)=C\,v^e$ with $C\coloneqq\langle\prod_j\psi^{k_j}H^{b_j}\rangle_h(1)$ and
+\[
+e\coloneqq2-2h+\sum_j\wt(k_j,b_j),\qquad\wt(k,b)\coloneqq\frac{4k+\nu_b-4}5,\qquad v^e\coloneqq\varsigma^{5e}.
+\]
+\item[(c)] $C=0$ unless $e\in\bbZ$, and $C\in\bbQ$. A correlator is \emph{regular} if $e\geq0$; then it lies in $\bbQ[v]$.
+\end{itemize}
+\end{lem}
+
+\begin{proof}
+(a) First for $\Omega'\coloneqq\Mo(z/\varsigma^4).\TFT^{\mathrm m}_v$ in the basis $\tilde e_i$, graph by graph in \cite[Def.~2.2]{PPZ15} with the translation $\ttr(z)=z1'-z\Mo(z/\varsigma^4)^{-1}1'$ of \cite[Def.~2.13]{PPZ15}, $1'=\varsigma^{-1}\sum_i\zeta^i\tilde e_i$. Only the following ingredients involve $\varsigma$. A leg monomial $\psi^k$ carries $\varsigma^{-4k}$. An edge is $\varsigma^{-4}$ times a series in $\psi'/\varsigma^4$, $\psi''/\varsigma^4$, so its monomial $\psi'^a\psi''^b$, of degree $a+b+1$ after the gluing, carries $\varsigma^{-4(a+b+1)}$. The coefficient of $z^m$ in $\ttr$ carries $\varsigma^{-1-4(m-1)}$, and a translation point with $\psi^m$ has degree $m-1$ after the push-forward and raises the valence of its vertex by one. A vertex of genus $g_v$ with $n_v$ half-edges and legs and $m_v$ translation points carries $\varsigma^{2g_v-2+n_v+m_v}$. As $\sum_v(2g_v-2+n_v)=2h-2+n$ and each translation point contributes $-4(m-1)$ to the exponent and $m-1$ to the degree, every term of degree $D$ carries $\varsigma^{2h-2+n-4D}$. Finally $(\Psi^{\mathrm m}_v)^{-1}H^b=\varsigma^{\nu_b-1}\sum_i\varepsilon_b\zeta^{i(b+1)}\tilde e_i$, as $\Psi^{\mathrm m}_v$ is an isometry, which contributes $\varsigma^{\sum_j(\nu_{b_j}-1)}$.
+
+(b) The degree is $\mathsf D=3h-3+n-\sum_jk_j$, and $2h-2+\sum_j\nu_{b_j}-4\mathsf D=5e$.
+
+(c) Replacing $\varsigma$ by $\zeta^{-1}\varsigma$ replaces, by the computation of step~(1) of the proof of \cref{lem:set-M0sympl} ($U_i\mapsto U_{i+1}$, $t\mapsto\zeta^{-1}t$, $\varsigma^{\nu_b-1}\mapsto\zeta^{b+1}\varsigma^{\nu_b-1}$), the colour-$i$ column of \cref{def:set-M0} by the colour-$(i+1)$ column and $\hat\Delta_i^{1/2}$ by $\hat\Delta_{i+1}^{1/2}$, i.e.\ conjugates all data by the cyclic permutation $\tilde e_i\mapsto\tilde e_{i+1}$, an isometry of the colour space; by the naturality $A_*(R.\Omega)=(ARA^{-1}).(A_*\Omega)$ of \cref{def:set-graphsum}, $\Omega^{\mathrm{mod}}_v$ in the flat basis does not change, and (b) gives $(\zeta^{-5e}-1)C=0$. Likewise $\zeta\mapsto\zeta^k$ ($k\in(\bbZ/5)^\times$) fixes $\varsigma$ and the series $\Fs_b\in\bbQ\fps t$ (the colour-$0$ T-system has rational coefficients) and permutes the colours by $\tilde e_i\mapsto\tilde e_{ki}$; so $\Omega^{\mathrm{mod}}_v$ in the flat basis is Galois invariant, and $C\in\bbQ$. If $e\geq0$, $Cv^e\in\bbQ[v]$.
+\end{proof}
+
+\input{sections/s02_setup_8}

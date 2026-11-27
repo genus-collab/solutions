@@ -1,0 +1,10 @@
+rf_cfu: Lemma CFU mod u^17, exact over Q
+PASS (K1) What(1; u) = -(5/4)/tau(u) = -Sum 5u^n/(5n+4) mod u^17
+PASS (K2) solvable at every order k <= 16: r_k(1) = 0
+PASS (K3) phi_k(1) = 0 for k <= 16 (the five saddles Xi^5 = 1 are fixed)
+PASS (K4) deg phi_k = k for k <= 16: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+PASS (K4) phi_1 = (1 - y)/18, phi_2 = 13/567 - (101/4536) y - y^2/1512
+PASS (K5) What(Xi psi(Xi^5; u); u) = M(Xi; u) mod u^17 by direct substitution at Xi = 2, 3/2, -1/3, 5/7: []
+PASS (C) control: tau -> 1 (v = u) is obstructed at order 1 (r_1(1) != 0): [Fraction(-5, 9)]
+     phi_3 = ['743/55404', '-20431/1551312', '31/172368', '-163/387828']
+RF_CFU 16: ALL CHECKS PASSED   (1.3 s)

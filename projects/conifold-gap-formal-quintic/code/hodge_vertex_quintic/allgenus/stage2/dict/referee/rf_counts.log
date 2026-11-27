@@ -1,0 +1,5 @@
+T2 (worker's range): 861 in L, 859 not in L (worker: 861, 859); support rule agrees on 1720/1720
+T3 basis monomials of M_w, w <= 80: 1042 (worker: 1042)
+X3 monomials p^a q^c, a + 4c <= 40: 231 (worker: 231)
+Sum_w d(w) for w <= 160, 320, 400: [2640, 10400, 16200] (worker/critic: 2640, 10400, 16200)
+RESULT: ALL COUNTS REPRODUCED

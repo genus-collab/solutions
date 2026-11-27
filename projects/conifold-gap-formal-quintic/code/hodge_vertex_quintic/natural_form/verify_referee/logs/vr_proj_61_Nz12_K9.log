@@ -1,0 +1,16 @@
+====================================================================================================
+vr_proj: p = 2^61-1, Nz = 12, K = 9, prec_abs = 50, Nu = 20; project rows built in 6 s; min u-precision 9
+(1) degrees of G_n: [0, 1, 3, 4, 5, 6, 8, 9, 10]
+    floor((5n+2)/4):  [0, 1, 3, 4, 5, 6, 8, 9, 10]
+    vanishing matrix coefficients above the claimed degree (within zhat <= 12): 50; nonzero ones: 0
+(2) Fourier components of G (u < 9, zhat <= 12): verifier 215 nonzero, referee table 215; identical as residues: True
+(3) rule W as an IFF over 480 Z/5-allowed (n, k, a, b): weight >= 0 but ZERO: 0 []; weight < 0 but NONZERO: 0
+(4) chain relation, weight 0, k >= 1 (both sides nonzero required): L 9 of 9, R 9 of 9
+(5) left placement, u^1 zhat^12: c_1 required per Fourier component: 2 distinct values among 4 components (tau_1 = -4/9 among them: False); components with B = 0, A != 0: 0
+(5) left placement, u^1 zhat^11: c_1 required per Fourier component: 3 distinct values among 5 components (tau_1 = -4/9 among them: False); components with B = 0, A != 0: 0
+(5) left placement, u^1 zhat^10: c_1 required per Fourier component: 2 distinct values among 4 components (tau_1 = -4/9 among them: False); components with B = 0, A != 0: 0
+    right placement, u^1 zhat^12: distinct c_1: 1 (= -4/9: True)
+    right placement, u^1 zhat^11: distinct c_1: 1 (= -4/9: True)
+(6) A = M_0 Z M_0^-1: nonzero coefficients at w^k for k = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] (not a polynomial within the truncation)
+    identity row f: ['1', '-3/20', '9/800', '11571/80000', '-2415609/6400000', '[1403891457327899978 mod p]']
+time 6 s

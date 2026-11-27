@@ -1,0 +1,87 @@
+% Section 5 (one part); label prefix: red.
+% No new macros. Local letters: y^circ (the K_0-part of the leaf, as in sec:tra), t_alpha (frames at the half-edges).
+
+\section{Reduction to the model}
+\label{sec:red}
+
+This section proves Theorem R: for a dressing $P$ of the model with (Sp) and (A) (\cref{def:tra-dressing}), every term of the flat graph sum with an edge is regular, and the vertex graph is $c_gT_P^{2-2g}$ up to a regular series, provided that the Model Lemma on $\sK$ holds in the genera that occur; the Model Lemma is proved in \cref{sec:mod} (\cref{thm:mod-MLK}). The proof uses only the results of \cref{sec:tra}, no gauge equation and no datum of the quintic beyond $T_P$.
+
+\subsection{The flat sum and the Model Lemma}
+\label{sec:red-sum}
+
+\begin{defn}[the flat sum]
+\label{def:red-flatsum}
+Let $P$ be a dressing with (Sp), with edge $E_P$, leaf point $q_T$ and $\tilde q_T = d\,q_T$ (\cref{def:tra-edge}). For a leg-free stable graph $\Gamma$ of genus $g\geq 2$, $\mathrm{Cont}_\Gamma$ is $|\Aut\Gamma|^{-1}$ times the contraction along $\Gamma$, as in \cref{def:set-graphsum}, of $E_P$ on every edge with the vertex tensor
+\[
+d^{\,2g_v-2+n_v}\,\dd^{n_v}\overline F_{g_v}(\tilde q_T)
+\]
+at every vertex, of genus $g_v$ and valence $n_v$, one slot per half-edge; here $\overline F_h$ is the dilaton-shifted ancestor potential of the model (\cref{def:set-modcohft,def:set-graphsum}) and $\dd^n\overline F_h$ its $n$-th derivative. The \emph{flat sum} is $F^P_g := \sum_\Gamma\mathrm{Cont}_\Gamma$, the sum over the leg-free stable graphs of genus $g$, with no further factor. The \emph{vertex graph} has one vertex and no edge, and
+\begin{equation}
+\label{eq:red-vertex}
+\mathrm{Cont}_{\mathrm{vertex}} = d^{\,2g-2}\,\overline F_g(\tilde q_T) = d^{\,2g-2}\sum_{m\geq 0}\frac1{m!}\langle(dT_{\geq 2})^m\rangle_g ,
+\end{equation}
+with $dT_{\geq 2} = \tilde q_T+z1\in z^2\cH^u_+$ as in \eqref{eq:tra-leaf};
+an \emph{edge graph} is a graph with at least one edge; $\Gamma$ is \emph{regular} if $\mathrm{Cont}_\Gamma\in\bbQ\fps{u}$. For $P = \Pc$ we write $F_\Gamma := \mathrm{Cont}_\Gamma$, the \emph{flat term} of $\Gamma$; it is compared with the outer term $T_\Gamma$ in \cref{thm:flh-main}.
+\end{defn}
+
+The vertex tensor is defined by this homogeneous form, which makes sense for every dressing with (Sp), since its leaf $dT_{\geq 2}$ has $\psi$-degree at least $2$; every $\mathrm{Cont}_\Gamma$ is a finite sum (\cref{lem:tra-F}). When $d(0) = 1$, as for $\Pc$ (\cref{prop:tra-can}), it equals the Taylor expansion $\dd^{n_v}\overline F_{g_v}(q_T)$ at the base point $-z1$ (\cref{lem:tra-F}); when $d(0)\neq 1$ that expansion has in general no $u$-adic limit (\cref{lem:tra-conv}~(f2)).
+
+\begin{defn}[the Model Lemma on $\sK$]
+\label{def:red-ML}
+For $h\geq 2$ let $\Fm_h(v) := \langle\ \rangle_h(v)$ be the genus-$h$ free energy of the model, a rational multiple of $v^{2-2h}$ by \cref{lem:set-modhom}; put $\Fm_1(v) := -\frac{1}{12}\log v$ and $\Fm_0(v) := -\frac52v^2\log v$, of which only the derivatives of order $\geq 1$, resp.\ $\geq 3$, are used. For $h\geq 0$, $\ML{h}$ is the following statement.
+\begin{enumerate}
+\item For $n\geq 1$ with $2h-2+n>0$ and homogeneous $X_1,\dots,X_n\in\sK$ (graded setting, coefficients in $\bbQ[v]$),
+\[
+\langle X_1\cdots X_n\rangle_h(v)-(\Fm_h)^{(n)}(v)\prod_{i=1}^n\Pi_0(X_i)\ \in\ \bbQ[v] .
+\]
+\item For $h\geq 2$, $\Fm_h = c_hv^{2-2h}$, with $c_h$ as in \eqref{eq:set-cg}.
+\end{enumerate}
+By multilinearity over $\bbQ[v]$ and polarisation, (i) is equivalent to the function form: for every $y\in\sK$ (graded setting) and every $n$ with $2h-2+n>0$, the Taylor coefficient $\frac1{n!}\bigl(\langle y^n\rangle_h-(\Fm_h)^{(n)}(v)\Pi_0(y)^n\bigr)$ of $\overline F_h-\Fm_h\circ\Pi_0$ at the base point lies in $\bbQ[v]$; in short, $\overline F_h|_{-z+\sK} = \Fm_h\circ\Pi_0+\mathrm{Reg}_h$ with a regular remainder $\mathrm{Reg}_h$.
+\end{defn}
+
+\begin{lem}[genus bound for vertices of edge graphs]
+\label{lem:red-genus}
+Let $\Gamma$ be a leg-free stable graph of genus $g$ with at least one edge. Then every vertex of $\Gamma$ carries at least one half-edge and has genus at most $g-1$.
+\end{lem}
+
+\begin{proof}
+$\Gamma$ is connected and has an edge, so no vertex is isolated. The genus of $\Gamma$ is the sum of the vertex genera plus the first Betti number of $\Gamma$. If some vertex had genus $g$, all other vertices would have genus $0$ and $\Gamma$ would be a tree; a tree with an edge has at least two vertices of valence $1$, so a vertex of genus $0$ would carry a single half-edge, against stability. Hence every vertex has genus at most $g-1$.
+\end{proof}
+
+\subsection{Theorem R}
+\label{sec:red-thm}
+
+\begin{thm}[Theorem R]
+\label{thm:red-main}
+Fix $g\geq 2$ and a dressing $P$ of the model at $v(u)$, $v(0) = 0$, $v'(0)\neq 0$, with (Sp) and (A) (\cref{def:tra-dressing}).
+\begin{description}
+\item[(a)] If $\ML{h}$ holds for $0\leq h\leq g-1$, then $\mathrm{Cont}_\Gamma\in\bbQ\fps{u}$ for every leg-free stable graph $\Gamma$ of genus $g$ with at least one edge.
+\item[(b)] If moreover $\ML{g}$ holds, then $\mathrm{Cont}_{\mathrm{vertex}}\in c_g\,T_P^{2-2g}+\bbQ\fps{u}$.
+\end{description}
+The gauge equation is not used.
+\end{thm}
+
+\begin{proof}
+\emph{Step 1 (edges and leaves).} By \cref{cor:tra-edges} and \cref{lem:tra-twoslot}, $E_P = \sum_{\alpha,\beta}E_P^{\alpha\beta}\fr_\alpha(\psi)\otimes\fr_\beta(\psi')$, a summable family with $E_P^{\alpha\beta}\in\bbQ\fps{u}$; so every half-edge insertion is a frame, a homogeneous element of $\sKo$ evaluated at $v(u)$ (\cref{lem:tra-coeff}). By \cref{lem:tra-T}~(c), (d), the leaf is $dT_{\geq 2} = \tilde q_T+z1 = y^\circ+\delta_PH$ with $y^\circ\in\sKo$, whose frame coordinates lie in $\bbQ\fps{u}$ and vanish for $k\leq 1$, and $\delta_P\in u^2\bbQ\fps{u}$.
+
+\emph{Step 2 (vertex factors).} By \cref{lem:red-genus}, every vertex of an edge graph carries $n\geq 1$ half-edges and has genus $h\leq g-1$. By \cref{def:red-flatsum}, the factor of such a vertex whose half-edges carry the frames $t_{\alpha_1},\dots,t_{\alpha_n}$ is
+\[
+d^{\,2h-2+n}\sum_{m\geq 0}\frac1{m!}\langle t_{\alpha_1}\cdots t_{\alpha_n}(dT_{\geq 2})^m\rangle_h ,
+\]
+a finite sum ($m\leq 3h-3+n$, \cref{lem:tra-conv}~(d)). Expanding multilinearly, with $y^\circ$ expanded in frames (\cref{lem:tra-coeff}), every term is a product of elements of $\bbQ\fps{u}$ (powers of $d$ and $\delta_P$, frame coordinates of $y^\circ$) and of a model correlator of frames and $H$ containing the frame $t_{\alpha_1}$. As $\Pi_0(t_{\alpha_1}) = 0$, $\ML{h}$~(i) says that this correlator lies in $\bbQ[v]$, hence in $\bbQ\fps{u}$ at $v = v(u)$.
+
+\emph{Step 3 (edge graphs).} By \cref{lem:tra-conv}~(b4), applied to the edges $E_P$, which have property (i) of \cref{lem:tra-twoslot} by \cref{cor:tra-edges}, and to the leaves $dT_{\geq 2}\in z^2\cH^u_+\cap\sK$, the contraction along $\Gamma$ is the sum of the summable family obtained by expanding every edge in frames and every leaf as in Step 1; by \cref{lem:tra-conv}~(b2) no frame is split into its flat components. By Steps 1 and 2 every member of the family lies in $\bbQ\fps{u}$, hence so does its sum: $\mathrm{Cont}_\Gamma\in\bbQ\fps{u}$. This proves (a).
+
+\emph{Step 4 (the vertex graph).} By \eqref{eq:red-vertex}, $\mathrm{Cont}_{\mathrm{vertex}} = d^{\,2g-2}\,\overline F_g(\tilde q_T)$. By \cref{lem:tra-T}~(c), (d), $\tilde q_T\in -z1+z^2\cH^u_+$, $\Pi_i(\tilde q_T) = 0$ for $i\geq 1$, and $\Pi_0(\tilde q_T)-v = \delta_P\in u^2\bbQ\fps{u}$. So \cref{lem:tra-conv}~(e) ($g\geq 2$, $v'(0)\neq 0$) gives under $\ML{g}$ that $\overline F_g(\tilde q_T)\in c_g\,(v+\delta_P)^{2-2g}+\bbQ\fps{u}$. Finally $v+\delta_P = dT_P$, so $d^{\,2g-2}c_g(dT_P)^{2-2g} = c_gT_P^{2-2g}$, and $d^{\,2g-2}\bbQ\fps{u} = \bbQ\fps{u}$ as $d$ is a unit. This proves (b); since $v'(0)\neq 0$, $T_P = (v+\delta_P)/d$ is $u$ times a unit, so $T_P^{2-2g}\in\bbQ\lser{u}$.
+\end{proof}
+
+\begin{cor}[Theorem R for the canonical gauge]
+\label{cor:red-can}
+Let $(\alpha,\beta)\in\bbQ^2$ give a conifold frame (\cref{def:set-frames}) and let $g\geq 2$. If $\ML{h}$ holds for $0\leq h\leq g-1$, every edge graph of genus $g$ of the flat sum of $\Pc.\Omega^{\mathrm{mod}}_{v(u)}$ is regular: $F_\Gamma\in\bbQ\fps{u}$. If moreover $\ML{g}$ holds, the vertex graph satisfies $F_{\mathrm{vertex}}\in c_g\,\tc^{2-2g}+\bbQ\fps{u}$.
+\end{cor}
+
+\begin{proof}
+By \cref{prop:tra-can}, $\Pc$ is a dressing of the model at $v(u) = u\tau(u)^{-5/4}$, with $v(0) = 0$ and $v'(0) = 1$, satisfying (Sp) and (A), and $T_{\Pc} = \tc$. Apply \cref{thm:red-main}.
+\end{proof}
+
+By \cref{thm:mod-MLK} the hypotheses $\ML{h}$ hold for every $h\geq 0$; \cref{thm:flh-main} transfers the conclusion of \cref{cor:red-can} from the flat terms $F_\Gamma$ to the outer terms $T_\Gamma$, and \cref{thm:mai-main} assembles the result.

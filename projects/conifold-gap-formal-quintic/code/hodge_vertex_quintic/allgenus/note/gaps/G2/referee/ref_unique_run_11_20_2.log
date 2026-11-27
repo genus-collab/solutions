@@ -1,0 +1,33 @@
+ref_unique_run.py: random one-pole systems mod 2^61-1; unknowns k <= 11, m <= 20; window k <= 10, m <= M - k - 2
+ seed 20261115: (H), (EP) random system
+  [PASS] degree 0: window dimension 3 = #{k <= 10 : k = 0 mod 5} = 3 (truncated null space: 62)
+  [PASS] degree 0: lem:gau-lead: P_k = 0 for k < 0, P_0 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] degree 1: window dimension 2 = #{k <= 10 : k = 1 mod 5} = 2 (truncated null space: 61)
+  [PASS] degree 1: lem:gau-lead: P_k = 0 for k < 1, P_1 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] degree 2: window dimension 2 = #{k <= 10 : k = 2 mod 5} = 2 (truncated null space: 60)
+  [PASS] degree 2: lem:gau-lead: P_k = 0 for k < 2, P_2 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] degree 3: window dimension 2 = #{k <= 10 : k = 3 mod 5} = 2 (truncated null space: 60)
+  [PASS] degree 3: lem:gau-lead: P_k = 0 for k < 3, P_3 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] degree 4: window dimension 2 = #{k <= 10 : k = 4 mod 5} = 2 (truncated null space: 61)
+  [PASS] degree 4: lem:gau-lead: P_k = 0 for k < 4, P_4 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] pair (At, At): window spanned by z^r 1, every degree (V(At, At) = k[[z]] 1) [(3, 3, 3), (2, 2, 2), (2, 2, 2), (2, 2, 2), (2, 2, 2)]
+  [PASS] control: no pole ((H) violated, (EP) kept): every degree has window dimension K = 11 (rank 5, not 1) [11, 11, 11, 11, 11]
+  [PASS] control: unequal products: dimension 0 on the box k <= 1, m <= 8 (equal products, same box: 1, 1, 0, 0, 0) (unequal, equal) = [(0, 1), (0, 1), (0, 0), (0, 0), (0, 0)]
+ seed 7: (H), (EP) random system
+  [PASS] degree 0: window dimension 3 = #{k <= 10 : k = 0 mod 5} = 3 (truncated null space: 62)
+  [PASS] degree 0: lem:gau-lead: P_k = 0 for k < 0, P_0 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] degree 1: window dimension 2 = #{k <= 10 : k = 1 mod 5} = 2 (truncated null space: 61)
+  [PASS] degree 1: lem:gau-lead: P_k = 0 for k < 1, P_1 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] degree 2: window dimension 2 = #{k <= 10 : k = 2 mod 5} = 2 (truncated null space: 60)
+  [PASS] degree 2: lem:gau-lead: P_k = 0 for k < 2, P_2 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] degree 3: window dimension 2 = #{k <= 10 : k = 3 mod 5} = 2 (truncated null space: 60)
+  [PASS] degree 3: lem:gau-lead: P_k = 0 for k < 3, P_3 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] degree 4: window dimension 2 = #{k <= 10 : k = 4 mod 5} = 2 (truncated null space: 61)
+  [PASS] degree 4: lem:gau-lead: P_k = 0 for k < 4, P_4 spans the line of frak d Theta_U (ranks 0, 1, 1)
+  [PASS] pair (At, At): window spanned by z^r 1, every degree (V(At, At) = k[[z]] 1) [(3, 3, 3), (2, 2, 2), (2, 2, 2), (2, 2, 2), (2, 2, 2)]
+  [PASS] control: no pole ((H) violated, (EP) kept): every degree has window dimension K = 11 (rank 5, not 1) [11, 11, 11, 11, 11]
+  [PASS] control: unequal products: dimension 0 on the box k <= 1, m <= 8 (equal products, same box: 1, 1, 0, 0, 0) (unequal, equal) = [(0, 1), (0, 1), (0, 0), (0, 0), (0, 0)]
+  [info] margin 0 (window touching the truncation), degree 1: dimension 5 (prediction 2)
+  [info] margin 1 (window touching the truncation), degree 1: dimension 3 (prediction 2)
+  [PASS] unsplit system (k <= 4, m <= 8): null space 125 = sum of the five degree parts 125 (lem:gau-degree) 
+RESULT: ALL CHECKS PASSED

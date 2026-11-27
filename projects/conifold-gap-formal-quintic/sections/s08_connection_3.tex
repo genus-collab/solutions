@@ -1,0 +1,80 @@
+% Section 8 (part 3): the full-Stirling series, its rationality, the 1-form and PhiSP.
+
+\subsection{The full-Stirling series, its rationality, the \texorpdfstring{$1$}{1}-form and \texorpdfstring{$\PhiSP$}{the full-Stirling WKB function}}
+\label{sec:con-form}
+
+\begin{defn}[The full-Stirling saddle series]
+\label{def:gam-c}
+Let $\Cstar:=\bbC\setminus\{0,1,\zeta,\zeta^2,\zeta^3,\zeta^4\}$ and $q(L):=(1-L^{-5})/5^5$; no fifth root is taken. For $L\in\Cstar$ fix an open disc $\bbD_L$ around $L$ containing neither $0$ nor any $\zeta^j$, holomorphic branches of $\log(5\sigma)$ and of $\log(\zeta^j-\sigma)$, $j=0,\dots,4$, on $\bbD_L$, and put
+\[
+\lambda:=-5\log(5L)+\sum_{j=0}^4\log(\zeta^j-L),\qquad\text{so that}\qquad \re^{\lambda}=\frac{\prod_j(\zeta^j-L)}{(5L)^5}=-q(L)
+\]
+(the letter $\lambda$ is local to this section and \cref{sec:gam}). On $\bbD_L$ define
+\begin{align*}
+\mathsf S_0(\sigma)&:=\lambda\sigma+5\sigma\log(5\sigma)-5\sigma+\sum_{j=0}^4\bigl[(\zeta^j-\sigma)\log(\zeta^j-\sigma)-(\zeta^j-\sigma)\bigr],\\
+\mathsf S_1(\sigma)&:=\tfrac12\log(5\sigma)-\tfrac12\sum_{j=0}^4\log(\zeta^j-\sigma),\qquad
+\mathsf S_{2k}(\sigma):=\bk_k\Bigl[(5\sigma)^{1-2k}+\sum_{j=0}^4(\zeta^j-\sigma)^{1-2k}\Bigr]\quad(k\geq1),\\
+A_{\mathrm{St}}(\sigma,z)&:=\exp\Bigl(\mathsf S_1(\sigma)+\sum_{k\geq1}z^{2k-1}\mathsf S_{2k}(\sigma)\Bigr).
+\end{align*}
+Then $\mathsf S_0'(L)=0$ and $\mathsf S_0''=5/\sigma+\sum_j(\zeta^j-\sigma)^{-1}=5/(\sigma(1-\sigma^5))$, which does not vanish at $L$. The \emph{full-Stirling saddle series} is the normalised stationary-phase series (\cref{def:fsp-wick}), with constant term $1$, in the variable $\sigma$ with the measure $\dd\sigma$:
+\[
+c(z;L):=\SPh_L[\mathsf S_0;A_{\mathrm{St}}](z)=\sum_{n\geq0}c_n(L)z^n,\qquad c_0(L)=1 .
+\]
+For colour $i$ the series is defined in the same way at the critical point $\sigma=\zeta^iL$, with a disc around $\zeta^iL$, and with the branches and the logarithm of $-q$ chosen there as for $i=0$, so that $\zeta^iL$ is critical.
+\end{defn}
+
+With $\log(a/z):=\log a-\log z$ and $\Gst(1+w):=w\,\Gst(w)$ (\cref{def:fsp-stirling}) one has, identically in $\sigma\in\bbD_L$,
+\[
+\re^{\lambda\sigma/z}\,\Gst(1+5\sigma/z)\prod_{j=0}^4\Gst\bigl((\zeta^j-\sigma)/z\bigr)=(2\pi)^3z^2\exp\Bigl(\mathsf S_0/z+\mathsf S_1+\sum_kz^{2k-1}\mathsf S_{2k}\Bigr),
+\]
+because the coefficient of $(\log z)/z$ is $-[5\sigma+\sum_j(\zeta^j-\sigma)]=-\sum_j\zeta^j=0$ and that of $\log z$ is $-\frac12+\frac52=2$. So $c(z;L)$ is the normalised saddle series at $\sigma=L$ of the Mellin--Barnes summand $\Gamma(1+5\sigma/z)\prod_j\Gamma((\zeta^j-\sigma)/z)(-q)^{\sigma/z}\,\dd\sigma$, with all six Gamma factors replaced by $\Gst$ and $(-q)^{\sigma/z}:=\re^{\lambda\sigma/z}$; in the Euler integrals the twist factor $\Gamma(1+5\sigma/z)$ carries the measure $\dd y$ and the five factors $\Gamma((\zeta^j-\sigma)/z)$ carry $\dd x/x$.
+
+\emph{Taylor data.} Consider the local power sums $p_k(L):=\sum_j(\zeta^j-L)^{-k}$. Their generating function is
+\[
+\sum_{k\geq1}p_k(L)\,t^{k-1}=\sum_j(\zeta^j-L-t)^{-1}=\frac{5(L+t)^4}{1-(L+t)^5},
+\]
+so that $p_k\in(1-L^5)^{-k}\bbQ[L]$, and one has
+\begin{gather*}
+\mathsf S_0(L+t)-\mathsf S_0(L)=\sum_{k\geq1}\frac{5(-1)^{k+1}L^{-k}+p_k(L)}{k(k+1)}\,t^{k+1},\qquad
+-1/\mathsf S_0''(L)=-L(1-L^5)/5,\\
+\mathsf S_1(L+t)-\mathsf S_1(L)=\sum_{k\geq1}\frac{(-1)^{k+1}L^{-k}+p_k(L)}{2k}\,t^{k},\\
+[t^r]\,\mathsf S_{2k}(L+t)=\bk_k\binom{1-2k}{r}\bigl[5^{1-2k}L^{1-2k-r}+(-1)^rp_{2k-1+r}(L)\bigr].
+\end{gather*}
+
+\begin{prop}[Rationality]\genusstatus{AI-proposed, unchecked}
+\label{prop:gam-rational}
+The series $c(z;L)$ does not depend on the disc $\bbD_L$ nor on the branches of the logarithms, and every $c_n$ is the value at $L$ of an element of $\AL=\bbQ[L,L^{-1},(L^5-1)^{-1}]$. More precisely, $c(z;L)$ depends only on the Taylor coefficients of order at least $2$ of the phase at $L$ and on the normalised amplitude $A_{\mathrm{St}}/A_{\mathrm{St}}(L,0)$; $\lambda$ and the sign convention for $q$ never enter it, they only fix the dictionary $L\leftrightarrow q$.
+\end{prop}
+
+\begin{proof}
+(1) $\mathsf S_0$ and $A_{\mathrm{St}}$ are holomorphic on $\bbD_L$, $\mathsf S_0'(L)=0$ and $\mathsf S_0''(L)=5/(L(1-L^5))\neq0$. (2) By \cref{lem:fsp-univ}, $c_n(L)$ is a polynomial over $\bbQ$ in the Taylor coefficients at $L$ of $\mathsf S_0$ of orders $3,\dots,2n+2$, in those of $\mathsf S_1-\mathsf S_1(L)$ and of the $\mathsf S_{2k}$ (which determine the normalised amplitude), and in $-1/\mathsf S_0''(L)$. (3) These are the expressions displayed above: polynomials in $L^{-1}$, in the $p_k\in(1-L^5)^{-k}\bbQ[L]$ and in $-L(1-L^5)/5$. (4) Hence $c_n\in\AL$. (5) The Taylor coefficients of order at least $2$ of $\mathsf S_0$, and of order at least $1$ of $\mathsf S_1$ and $\mathsf S_{2k}$, are rational in $\sigma$ and carry no branch, and $\exp(\mathsf S_1(\sigma)-\mathsf S_1(L))$ is the branch equal to $1$ at $L$. Replacing $\log(5\sigma)$ by $\log(5\sigma)+2\pi\ri n$ and $\log(\zeta^j-\sigma)$ by $\log(\zeta^j-\sigma)+2\pi\ri n_j$ changes $\mathsf S_0'$ by $2\pi\ri(5n-\sum_jn_j)$, which the formula for $\lambda$ compensates; then $\mathsf S_0$ changes by the constant $2\pi\ri\sum_j\zeta^jn_j$ and $\mathsf S_1$ by a constant, which the normalised series does not see (\cref{lem:fsp-const}). A logarithm $\lambda+2\pi\ri k$ of $-q$ with $k\neq0$ gives $\mathsf S_0'(L)=2\pi\ri k\neq0$, so $L$ is critical only for $\lambda$; a smaller disc changes nothing. So $c(z;L)$ depends only on $L$, and only through the data named in the statement.
+\end{proof}
+
+\begin{lem}[One $1$-form]\genusstatus{AI-proposed, unchecked}
+\label{lem:con-form}
+Let $\Xi:=-\log(1-u)\in u\bbQ\fps{u}$ and $\cG(x):=\sum_{m\geq1}x^{5m-1}/(m(5m-1))$.
+\begin{enumerate}
+\item[(a)] In the colour-$0$ summand
+\[
+q^{\sigma/z}\,\Gamma(1+5\sigma/z)\Big/\prod_{j=0}^4\Gamma\bigl(1+(\sigma-\zeta^j)/z\bigr)
+\]
+expand $\Gamma(1+5\sigma/z)$ and the five factors $1/\Gamma(1+(\sigma-\zeta^j)/z)$ by Stirling's series, and put $x=1/\sigma$. The exponent is $S(\sigma)/z$ with $S(\sigma):=\sigma\log q+5\sigma\log(5\sigma)-\sum_j(\sigma-\zeta^j)\log(\sigma-\zeta^j)$: the terms in $(\log z)/z$ and the terms linear in $\sigma/z$ cancel. Moreover $S(1/x)=-\cW(x)$ with $\cW(x):=\Xi/x+\cG(x)$, and $\dd\cW/\dd x=-(\Xi+\log(1-x^5))/x^2$; formally, the critical points are $x^5=u$ (an identity of symbols, with $\log(1-x^5)$ and $\log(1-u)$ as series; it is used below only through (c)).
+\item[(b)] The half-densities and the measure combine to $(5\sigma/(\sigma^5-1))^{1/2}\,\dd\sigma=-\sqrt5\,(1-x^5)^{-1/2}\,\dd x$. Up to a factor independent of $x$, the summand times $\dd\sigma$ is $\re^{-\cW/z}\fa\,\dd x$ with
+\[
+\log\fa(x,z)=-\tfrac12\log(1-x^5)+\sum_{k\geq1}\bk_k(xz)^{2k-1}\Bigl[5^{1-2k}-5\sum_{P\geq0}\binom{2k-2+5P}{5P}x^{5P}\Bigr];
+\]
+$\fa$ does not depend on $u$, $\fa(0,z)=1$, and the coefficient of $x^a$ in $\fa$ is a polynomial in $z$ of degree at most $a$.
+\item[(c)] In the hatted variables $x=sX$, $z=s^4\zh$ one has $\cW/z=\hat\cW/\zh$ with
+\[
+\hat\cW(X;u)=\sum_{m\geq1}\frac{u^{m-1}}m\Bigl[\frac1X+\frac{X^{5m-1}}{5m-1}\Bigr],\qquad \hat\cW'(X)=-\frac1{uX^2}\log\frac{1-uX^5}{1-u};
+\]
+$X=1$ is critical for every $u$, $\hat\cW''(1)=5/(1-u)$, $\hat\cW(1)=\frac54\tau(u)^{-1}$, and $[t^k]\hat\cW(1+t)=\sum_{m\geq1}u^{m-1}[(-1)^k+\binom{5m-1}{k}/(5m-1)]/m$ lies in $\bbQ\fps{u}$. The hatted amplitude $\hat\fa(X;\zh):=\fa(sX,s^4\zh)$ has
+\[
+\log\hat\fa=-\tfrac12\log(1-uX^5)+\sum_{k\geq1}\bk_k(uX\zh)^{2k-1}\Bigl[5^{1-2k}-5\sum_{P\geq0}\binom{2k-2+5P}{5P}u^PX^{5P}\Bigr];
+\]
+it lies in $\bbQ[X,\zh]\fps{u}$, and $\hat\fa(1;0)=(1-u)^{-1/2}$.
+\item[(d)] The series $c(z;L)$ of \cref{def:gam-c} (the first Mellin--Barnes summand) and the normalised saddle series at $\sigma=L$ of the second summand of (a), with all Gamma factors replaced by their Stirling forms and the logarithm of $q$ chosen so that $L$ is critical, coincide.
+\end{enumerate}
+\end{lem}
+
+\input{sections/s08_connection_4}

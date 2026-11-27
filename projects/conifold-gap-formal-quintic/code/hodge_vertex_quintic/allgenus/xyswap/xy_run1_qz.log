@@ -1,0 +1,28 @@
+field Q(zeta_5) gmax(TR) 2
+  TR omega_{0,3}: 5 coefficients, symmetric failures 0, 1.4s
+  TR omega_{1,1}: 10 coefficients, symmetric failures 0, 1.4s
+  TR omega_{0,4}: 85 coefficients, symmetric failures -1, 1.5s
+  TR omega_{1,2}: 60 coefficients, symmetric failures 0, 1.5s
+  TR omega_{2,1}: 40 coefficients, symmetric failures 0, 1.5s
+  omega_{1,1} at p = 2: closed -4015/923521, TR -4015/923521, rational True
+  omega_{1,1} at p = -3/7: closed -618048478690461/21634033537600000, TR -618048478690461/21634033537600000, rational True
+  omega_{1,1} at p = 5/3: closed -54193561565625/2207627951800832, TR -54193561565625/2207627951800832, rational True
+  omega_{1,1} at p = 1/2: closed -67210/923521, TR -67210/923521, rational True
+CHECK omega_{1,1}: closed formula (Thm 7.1, EO sign) = direct TR at 4 points: True
+  omega_{2,1} at p = 2: closed -22424709843/819628286980801, TR -22424709843/819628286980801, rational True
+  omega_{2,1} at p = -3/7: closed 133699625892804168540735809570989386831/43538528039754374906030901248000000000000, TR 133699625892804168540735809570989386831/43538528039754374906030901248000000000000, rational True
+  omega_{2,1} at p = 5/3: closed -1016402579339926525218131036670905625/323839416579861091489391913154597879808, TR -1016402579339926525218131036670905625/323839416579861091489391913154597879808, rational True
+  omega_{2,1} at p = 1/2: closed -40696877359368/819628286980801, TR -40696877359368/819628286980801, rational True
+CHECK omega_{2,1}: closed formula (Thm 7.1, EO sign) = direct TR at 4 points: True
+CHECK F_2 (dilaton, direct TR, v=4) = B_2g/(2g(2g-2)) v^(2-2g) = -1/3840: True
+--- vanishing-period integral from the closed formula (ABDKS sign), symbolic v ---
+g=1: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-1: Fraction(-1, 12)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-1: Fraction(-1, 12)}; MATCH True; #terms 1; 1.6s
+g=2: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-3: Fraction(1, 120)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-3: Fraction(1, 120)}; MATCH True; #terms 2; 1.6s
+g=3: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-5: Fraction(-1, 252)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-5: Fraction(-1, 252)}; MATCH True; #terms 3; 1.6s
+g=4: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-7: Fraction(1, 240)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-7: Fraction(1, 240)}; MATCH True; #terms 4; 1.6s
+g=5: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-9: Fraction(-1, 132)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-9: Fraction(-1, 132)}; MATCH True; #terms 5; 1.6s
+g=6: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-11: Fraction(691, 32760)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-11: Fraction(691, 32760)}; MATCH True; #terms 6; 1.6s
+g=7: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-13: Fraction(-1, 12)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-13: Fraction(-1, 12)}; MATCH True; #terms 7; 1.6s
+g=8: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-15: Fraction(3617, 8160)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-15: Fraction(3617, 8160)}; MATCH True; #terms 8; 1.7s
+g=9: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-17: Fraction(-43867, 14364)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-17: Fraction(-43867, 14364)}; MATCH True; #terms 9; 1.7s
+g=10: each T_r regular at z=0: True; each T_r -> 0 at z=inf: True; Phi_g(0) = {-19: Fraction(174611, 6600)} (v-exponent: coeff); -B_2g/(2g) v^(1-2g): {-19: Fraction(174611, 6600)}; MATCH True; #terms 10; 1.8s

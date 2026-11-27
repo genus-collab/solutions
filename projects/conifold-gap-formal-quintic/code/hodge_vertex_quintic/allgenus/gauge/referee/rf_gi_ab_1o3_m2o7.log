@@ -1,0 +1,23 @@
+rf_gi: frame (1/3, -2/7), project gauge z^0..z^20, common precision O(u^30); own coefficients; 24 s
+   stored c(z) = P_11(0, z): z^0: 1, z^5: -43397/807975000, z^10: -765368951400317/1305647201250000000, z^15: -413495284380334910165431657/4383536794477928718750000000000, z^20: -9508616386787453133091969024000169754292717/23183533234909815742613953125000000000000000
+PASS direct substitution: the stored gauge solves u p_{k-1,c}' = (u b_{c+k-1}) p_{k,c} - (u bt_{c-1}) p_{k,c-1} with OWN b, bt (2940 coefficients): 0
+PASS direct substitution: the canonical gauge solves u p_{k-1,c}' = (u b_{c+k-1}) p_{k,c} - (u bt_{c-1}) p_{k,c-1} with OWN b, bt (2940 coefficients): 0
+PASS (R1) column 1 and row 2 of P(0, z) diagonal, P_22(0, z) = P_11(0, z) (stored and canonical)
+PASS (R2) P_21 = O(u^2); (R3) P_20 = u pi/z, P_31 = -u pi/z, P_21 = -u^2 pi/z^2 + .. (pi = P_30(0, z)), canonical gauge
+   pi(z) = z^3: -239/450, z^8: -20846188763/725359556250000, z^13: -31862716101441182131/23854174366837500000000, z^18: -4935352963541727553596161479541/96656986318238328248437500000000000
+PASS Lemma Q (V): ord_u [z^-n] Y^C_Q,a = (4n + c_a + 1)/5 exactly, zero off n = 1 - a mod 5, same leading term as the model (36 slots, n <= 45)
+PASS Lemma Q (d): [z^-1] Y^C_Q = -t_c e_0
+PASS Theorem G, canonical gauge: P Y^C = c(z) Y^C_Q on 1214 complete graded slots (positive-z slots with non-zero P Y^C: 0): []
+PASS Theorem G, stored gauge: P Y^C = c(z) Y^C_Q on 1214 complete graded slots (positive-z slots with non-zero P Y^C: 127): []
+PASS (G*) canonical, c = 1: 417 non-trivial complete identities, 0 failures (expected none): []
+PASS (G*) stored, twisted by its c(z): 557 non-trivial complete identities, 0 failures (expected none): []
+PASS (G*) CONTROL stored, untwisted: 557 non-trivial complete identities, 425 failures (expected some)
+PASS (G*) CONTROL canonical, wrong twist c(z): 557 non-trivial complete identities, 425 failures (expected some)
+   float diagnosis (old bound 2n+2): with (-1)**m: 197 tested, 197 float-valued, 115 fail, max |lhs-rhs| 8.9e-16; integer sign: 142 tested, 0 fail
+PASS    float failures only in float-valued slots, all of them exact identities ([old bound 2n+2])
+   float diagnosis (sharp bound floor(5n/4)): with (-1)**m: 555 tested, 555 float-valued, 361 fail, max |lhs-rhs| 1.3e-15; integer sign: 417 tested, 0 fail
+PASS    float failures only in float-valued slots, all of them exact identities ([sharp bound floor(5n/4)])
+PASS Prop S, canonical gauge: P(-z)^T eta P(z) = c(z) c(-z) eta, all entries z^0..z^20 mod u^29: 0
+PASS Prop S, stored gauge: P(-z)^T eta P(z) = c(z) c(-z) eta, all entries z^0..z^20 mod u^29: 0
+PASS diagonal: p_{0,0} = tau^(-1/4)/varpi_0 (canonical), and prod_a p_{0,a} = 1
+RF_GI ab_1o3_m2o7: ALL PASS (46 s)

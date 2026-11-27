@@ -1,0 +1,17 @@
+ref5_item3: u^0..u^8, zhat^0..zhat^11, mod 2^61-1; free coefficients [z^5m] Ginf (D = 1)
+  log solution exists (no negative powers) for gamma = 7/10: True; for gamma = 7/10 + 1/3: False (must be False)
+[frame (0, 0)] rows close (4 -> 0): True; model T-system closes: True; Lemma 3.A: True; Psi^T eta^-1 Psi = 1: True
+   (b) Qhat(0, zhat) = Rhat^mod(zhat): True; G(u,0) = 1: True; G(0,zhat) = 1: True
+   (c) degree violations (n, k) = [] (must be empty); first failure of Rt(-zh)^T Rt(zh) = 1: None ; of G(-zh)^T G(zh) = 1: None
+   control M_0 on the left: violations = [(1, 3), (2, 4), (3, 5)] (must be non-empty)
+   control M_0(zhat), no tau: violations = [(1, 3), (2, 4), (3, 5)] (must be non-empty)
+   control gamma = 7/10 + 1/3: rows close: False; violations = []
+   control: OU3 relation Psi eta^-1 Psi^T = eta^-1 holds: False (must be False)
+   control f_1 + 1/7 (D = 1 + d z^5): violations = [] ; G(0,zhat) = 1: True ; first failure of G(-zh)^T G(zh) = 1 at (u^n, zh^k) = (8, 10)
+[frame (1/3, -2/7)] rows close (4 -> 0): True; model T-system closes: True; Lemma 3.A: True; Psi^T eta^-1 Psi = 1: True
+   (b) Qhat(0, zhat) = Rhat^mod(zhat): True; G(u,0) = 1: True; G(0,zhat) = 1: True
+   (c) degree violations (n, k) = [] (must be empty); first failure of Rt(-zh)^T Rt(zh) = 1: None ; of G(-zh)^T G(zh) = 1: None
+
+real	0m1.977s
+user	0m0.000s
+sys	0m0.031s

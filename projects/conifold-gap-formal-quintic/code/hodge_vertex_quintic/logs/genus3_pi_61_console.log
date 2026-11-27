@@ -1,0 +1,15 @@
+--------------------------------------------------------------------------------------------------------------
+genus3_pi: the plane Pi of circulant solutions, p = 2^61-1
+   line 0: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p (multiplicity 2 as a root); a_4|line has degree 2, the common factor of the tau^3-coefficients degree 0; the remaining factor of degree 4 is supported on a_4 = 0: True
+   line 1: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p (multiplicity 2 as a root); a_4|line has degree 2, the common factor of the tau^3-coefficients degree 0; the remaining factor of degree 4 is supported on a_4 = 0: True
+   line 2: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p (multiplicity 2 as a root); a_4|line has degree 2, the common factor of the tau^3-coefficients degree 0; the remaining factor of degree 4 is supported on a_4 = 0: True
+   line 3: resultant degrees [48, 48, 48], common factor of degree 6: 1 solution point(s) in F_p (multiplicity 2 as a root); a_4|line has degree 2, the common factor of the tau^3-coefficients degree 0; the remaining factor of degree 4 is supported on a_4 = 0: True
+PASS on every random line of the chart c_1(0) = 1: exactly one solution point (F_p-rational, a double root of the common factor); the rest of the common factor is supported on the conic a_4 = 0
+PASS the solution points span a 2-dimensional linear space (rank of the 15-vectors, of their low parts, of their c1 parts): (2, 2, 2)
+PASS ALL N_1-conditions vanish identically on Pi = span(A, B): 7 points of P^1 (forms of degree <= 3 in (x : y))
+   A: ['c1_0: 1', 'c1_1: 0', 'c1_2: -1/2*zeta^4', 'c2_1: [546612076598515791 mod p]', 'c2_2: [2239479157035299141 mod p]', 'c3_0: [532343820724339244 mod p]', 'c3_1: [2254543358767449384 mod p]', 'c3_2: [863543409078169275 mod p]', 'c4_1: [570628048317839969 mod p]', 'c4_2: [2063478838634482677 mod p]', 'c5_0: 0', 'c5_1: [1612363011499568111 mod p]', 'c5_2: [1814790425597015633 mod p]', 'c6_1: [393061989998238344 mod p]', 'c6_2: 0']
+   B: ['c1_0: 0', 'c1_1: 1', 'c1_2: -1*zeta^2', 'c2_1: [1943922680981712150 mod p]', 'c2_2: [494677967927976441 mod p]', 'c3_0: [470047775267488215 mod p]', 'c3_1: [294998946797036106 mod p]', 'c3_2: [1779302337148571430 mod p]', 'c4_1: [549793452461918241 mod p]', 'c4_2: [1932673344044091274 mod p]', 'c5_0: 0', 'c5_1: [502313345591983654 mod p]', 'c5_2: [1630955200282468938 mod p]', 'c6_1: [2030578162463756845 mod p]', 'c6_2: 0']
+PASS the c1-part of Pi is the line c1_0 + 2 zeta^3 c1_1 + 2 zeta c1_2 = 0 (the Fourier mode m = 3 of c_1 vanishes): A has c1 = (1, 0, -zeta^4/2), B has c1 = (0, 1, -zeta^2)
+PASS Pi lies in m_1 = 0
+   adding pure-high directions (kernel of the genus-3 rows, 5 of them) to a point of Pi: 0 keep all conditions (the invisible zhat^6 direction and the free visible direction)
+GENUS3_PI ALL CHECKS PASSED

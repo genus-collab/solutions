@@ -1,0 +1,235 @@
+env.sh: using /usr/bin/python3 3.9.25
+==========================================================================================
+genus5_run g5_89_nat_t7_out2: task 18 of 20, python 3.9.25, host node005.stanage.hpc.shef.ac.uk
+   set-up 6 s: 4555 inner graphs, K = 8
+   229 inner graphs assigned, estimated 2.31 h on the reference machine (heaviest task 2.31 h)
+   inner graph 3759 (E=10, V=6):   133.8 s, 4 outer graphs
+   inner graph 1804 (E= 8, V=4):   237.4 s, 3 outer graphs
+   inner graph  918 (E= 7, V=3):   179.0 s, 3 outer graphs
+   inner graph 2859 (E= 9, V=5):    83.5 s, 6 outer graphs
+   inner graph  910 (E= 7, V=3):   143.1 s, 4 outer graphs
+   inner graph 2840 (E= 9, V=5):    73.9 s, 6 outer graphs
+   inner graph 2136 (E= 8, V=5):    62.3 s, 4 outer graphs
+   inner graph 1772 (E= 8, V=4):    63.6 s, 5 outer graphs
+   inner graph 1185 (E= 7, V=4):   105.5 s, 3 outer graphs
+   inner graph 1720 (E= 8, V=4):    53.2 s, 5 outer graphs
+   inner graph  535 (E= 6, V=3):    98.2 s, 4 outer graphs
+   inner graph 1799 (E= 8, V=4):    66.2 s, 4 outer graphs
+   inner graph 1708 (E= 8, V=4):    43.9 s, 7 outer graphs
+   inner graph 2778 (E= 9, V=5):    49.5 s, 4 outer graphs
+   inner graph 1707 (E= 8, V=4):    55.2 s, 6 outer graphs
+   inner graph  300 (E= 5, V=3):    60.6 s, 4 outer graphs
+   inner graph 1127 (E= 7, V=4):    63.3 s, 4 outer graphs
+   inner graph  624 (E= 6, V=4):    60.3 s, 6 outer graphs
+   inner graph 1141 (E= 7, V=4):    57.6 s, 5 outer graphs
+   inner graph 1108 (E= 7, V=4):    41.1 s, 7 outer graphs
+   inner graph 1962 (E= 8, V=5):    31.3 s, 7 outer graphs
+   inner graph 2760 (E= 9, V=5):    23.0 s, 5 outer graphs
+   inner graph 2255 (E= 8, V=5):    48.7 s, 4 outer graphs
+   inner graph 2856 (E= 9, V=5):    21.0 s, 5 outer graphs
+   inner graph 1005 (E= 7, V=4):    41.3 s, 7 outer graphs
+   inner graph  314 (E= 5, V=4):    40.0 s, 7 outer graphs
+   inner graph 1068 (E= 7, V=4):    30.9 s, 7 outer graphs
+   inner graph 2556 (E= 8, V=6):    24.3 s, 6 outer graphs
+   inner graph 2016 (E= 8, V=5):    24.6 s, 5 outer graphs
+   inner graph 3244 (E= 9, V=6):    16.7 s, 4 outer graphs
+   inner graph 2445 (E= 8, V=6):    27.3 s, 8 outer graphs
+   inner graph 2853 (E= 9, V=5):    19.7 s, 4 outer graphs
+   inner graph 2787 (E= 9, V=5):    18.9 s, 5 outer graphs
+   inner graph 2713 (E= 9, V=5):    20.4 s, 8 outer graphs
+   inner graph 1396 (E= 7, V=5):    27.3 s, 7 outer graphs
+   inner graph 2848 (E= 9, V=5):    13.7 s, 7 outer graphs
+   inner graph 2737 (E= 9, V=5):    17.0 s, 7 outer graphs
+   inner graph 4035 (E=10, V=7):    18.6 s, 4 outer graphs
+   inner graph 2939 (E= 9, V=5):    16.5 s, 8 outer graphs
+   inner graph 2154 (E= 8, V=5):    20.7 s, 5 outer graphs
+   inner graph  490 (E= 6, V=3):    29.6 s, 7 outer graphs
+   inner graph  887 (E= 7, V=3):    29.5 s, 10 outer graphs
+   inner graph 4033 (E=10, V=7):    11.6 s, 5 outer graphs
+   inner graph 4289 (E=11, V=7):     6.7 s, 5 outer graphs
+   inner graph 4279 (E=11, V=7):     6.8 s, 4 outer graphs
+   inner graph 2827 (E= 9, V=5):    13.9 s, 8 outer graphs
+   inner graph  598 (E= 6, V=4):    25.7 s, 6 outer graphs
+   inner graph 2885 (E= 9, V=5):    13.5 s, 6 outer graphs
+   inner graph 4006 (E=10, V=7):    10.4 s, 7 outer graphs
+   inner graph 2752 (E= 9, V=5):    10.4 s, 7 outer graphs
+   inner graph 1414 (E= 7, V=5):    19.9 s, 5 outer graphs
+   inner graph 1051 (E= 7, V=4):    23.1 s, 10 outer graphs
+   inner graph 1336 (E= 7, V=5):    19.1 s, 4 outer graphs
+   inner graph 4290 (E=11, V=7):     6.4 s, 8 outer graphs
+   inner graph  561 (E= 6, V=4):    27.7 s, 7 outer graphs
+   inner graph 3743 (E=10, V=6):    12.6 s, 7 outer graphs
+   inner graph  563 (E= 6, V=4):    27.8 s, 10 outer graphs
+   inner graph  136 (E= 4, V=3):    22.7 s, 6 outer graphs
+   inner graph 2544 (E= 8, V=6):    15.0 s, 4 outer graphs
+   inner graph 1748 (E= 8, V=4):    11.0 s, 7 outer graphs
+   inner graph 3104 (E= 9, V=6):     8.9 s, 6 outer graphs
+   inner graph 3102 (E= 9, V=6):     8.9 s, 6 outer graphs
+   inner graph  715 (E= 6, V=4):    21.1 s, 7 outer graphs
+   inner graph  525 (E= 6, V=3):    23.6 s, 6 outer graphs
+   inner graph 1432 (E= 7, V=5):    14.3 s, 10 outer graphs
+   inner graph  270 (E= 5, V=3):    19.5 s, 4 outer graphs
+   inner graph 3642 (E=10, V=6):     5.8 s, 8 outer graphs
+   inner graph  764 (E= 6, V=5):    15.6 s, 7 outer graphs
+   inner graph  804 (E= 6, V=5):    16.4 s, 5 outer graphs
+   inner graph 3655 (E=10, V=6):     6.1 s, 5 outer graphs
+   inner graph 2147 (E= 8, V=5):    12.2 s, 7 outer graphs
+   inner graph  306 (E= 5, V=4):    15.5 s, 11 outer graphs
+   inner graph 1104 (E= 7, V=4):    12.4 s, 7 outer graphs
+   inner graph 3847 (E=10, V=6):     5.9 s, 7 outer graphs
+   inner graph 3834 (E=10, V=6):     6.2 s, 4 outer graphs
+   inner graph 1566 (E= 7, V=6):    11.3 s, 7 outer graphs
+   inner graph 3097 (E= 9, V=6):     6.4 s, 7 outer graphs
+   inner graph 3610 (E=10, V=6):     4.7 s, 7 outer graphs
+   inner graph 1320 (E= 7, V=5):    10.3 s, 6 outer graphs
+   inner graph  336 (E= 5, V=4):    14.0 s, 6 outer graphs
+   inner graph 1400 (E= 7, V=5):    11.4 s, 9 outer graphs
+   inner graph 3691 (E=10, V=6):     4.9 s, 4 outer graphs
+   inner graph 3099 (E= 9, V=6):     6.2 s, 11 outer graphs
+   inner graph 3130 (E= 9, V=6):     6.1 s, 13 outer graphs
+   inner graph 3161 (E= 9, V=6):     6.3 s, 10 outer graphs
+   inner graph 2010 (E= 8, V=5):     7.6 s, 10 outer graphs
+   inner graph 3084 (E= 9, V=6):     5.5 s, 8 outer graphs
+   inner graph  986 (E= 7, V=4):    10.0 s, 12 outer graphs
+   inner graph  284 (E= 5, V=3):    13.6 s, 7 outer graphs
+   inner graph 1228 (E= 7, V=5):     9.8 s, 7 outer graphs
+   inner graph 3123 (E= 9, V=6):     5.5 s, 5 outer graphs
+   inner graph 3712 (E=10, V=6):     4.1 s, 12 outer graphs
+   inner graph 3725 (E=10, V=6):     4.0 s, 11 outer graphs
+   inner graph 3681 (E=10, V=6):     4.0 s, 12 outer graphs
+   inner graph 3266 (E= 9, V=6):     5.9 s, 9 outer graphs
+   inner graph 3022 (E= 9, V=6):     5.0 s, 11 outer graphs
+   inner graph 2987 (E= 9, V=6):     5.2 s, 10 outer graphs
+   inner graph  586 (E= 6, V=4):     9.7 s, 12 outer graphs
+   inner graph 3191 (E= 9, V=6):     6.0 s, 7 outer graphs
+   inner graph 3243 (E= 9, V=6):     4.9 s, 8 outer graphs
+   inner graph 1122 (E= 7, V=4):     8.4 s, 11 outer graphs
+   inner graph 4374 (E=11, V=7):     3.7 s, 4 outer graphs
+   inner graph 3727 (E=10, V=6):     3.4 s, 12 outer graphs
+   inner graph 4499 (E=12, V=8):     1.4 s, 4 outer graphs
+   inner graph 1428 (E= 7, V=5):     9.0 s, 11 outer graphs
+   inner graph 1252 (E= 7, V=5):     7.4 s, 10 outer graphs
+   inner graph  617 (E= 6, V=4):    11.1 s, 9 outer graphs
+   inner graph 1955 (E= 8, V=5):     8.4 s, 8 outer graphs
+   inner graph  990 (E= 7, V=4):     7.0 s, 12 outer graphs
+   inner graph 1263 (E= 7, V=5):     9.4 s, 11 outer graphs
+   inner graph  657 (E= 6, V=4):    10.5 s, 7 outer graphs
+   inner graph 2743 (E= 9, V=5):     3.9 s, 13 outer graphs
+   inner graph 4169 (E=10, V=7):     3.5 s, 4 outer graphs
+   inner graph 3637 (E=10, V=6):     3.2 s, 11 outer graphs
+   inner graph  832 (E= 6, V=5):     8.2 s, 12 outer graphs
+   inner graph 1192 (E= 7, V=4):     6.8 s, 11 outer graphs
+   inner graph 3892 (E=10, V=6):     3.5 s, 12 outer graphs
+   inner graph 4336 (E=11, V=7):     1.7 s, 4 outer graphs
+   inner graph 4136 (E=10, V=7):     4.4 s, 7 outer graphs
+   inner graph  725 (E= 6, V=5):     9.8 s, 12 outer graphs
+   inner graph 1545 (E= 7, V=6):     8.6 s, 8 outer graphs
+   inner graph 3014 (E= 9, V=6):     3.9 s, 9 outer graphs
+   inner graph  329 (E= 5, V=4):    11.3 s, 6 outer graphs
+   inner graph 4167 (E=10, V=7):     3.3 s, 7 outer graphs
+   inner graph 3676 (E=10, V=6):     3.2 s, 9 outer graphs
+   inner graph  372 (E= 5, V=5):     8.3 s, 6 outer graphs
+   inner graph 2832 (E= 9, V=5):     3.7 s, 13 outer graphs
+   inner graph 3263 (E= 9, V=6):     3.3 s, 13 outer graphs
+   inner graph 3008 (E= 9, V=6):     4.1 s, 12 outer graphs
+   inner graph 2783 (E= 9, V=5):     3.7 s, 11 outer graphs
+   inner graph  876 (E= 6, V=6):     7.2 s, 7 outer graphs
+   inner graph 2456 (E= 8, V=6):     4.1 s, 9 outer graphs
+   inner graph 1486 (E= 7, V=5):     5.5 s, 9 outer graphs
+   inner graph 2644 (E= 8, V=7):     3.4 s, 8 outer graphs
+   inner graph  455 (E= 6, V=4):     7.2 s, 5 outer graphs
+   inner graph 1473 (E= 7, V=5):     6.4 s, 13 outer graphs
+   inner graph 2667 (E= 9, V=5):     4.0 s, 12 outer graphs
+   inner graph 2557 (E= 8, V=6):     3.9 s, 11 outer graphs
+   inner graph 3486 (E= 9, V=7):     3.1 s, 8 outer graphs
+   inner graph 3965 (E=10, V=7):     2.0 s, 10 outer graphs
+   inner graph 2320 (E= 8, V=6):     3.4 s, 11 outer graphs
+   inner graph  690 (E= 6, V=4):     5.5 s, 11 outer graphs
+   inner graph 3788 (E=10, V=6):     2.9 s, 9 outer graphs
+   inner graph 3541 (E= 9, V=7):     3.1 s, 8 outer graphs
+   inner graph 3226 (E= 9, V=6):     3.2 s, 9 outer graphs
+   inner graph 1968 (E= 8, V=5):     3.0 s, 11 outer graphs
+   inner graph 3464 (E= 9, V=7):     2.7 s, 9 outer graphs
+   inner graph 3977 (E=10, V=7):     1.6 s, 11 outer graphs
+   inner graph  359 (E= 5, V=5):     7.5 s, 10 outer graphs
+   inner graph 1876 (E= 8, V=5):     2.9 s, 12 outer graphs
+   inner graph 3012 (E= 9, V=6):     2.1 s, 12 outer graphs
+   inner graph 4109 (E=10, V=7):     1.6 s, 5 outer graphs
+   inner graph 4041 (E=10, V=7):     2.0 s, 9 outer graphs
+   inner graph 2643 (E= 8, V=7):     4.2 s, 8 outer graphs
+   inner graph  234 (E= 5, V=3):     4.1 s, 6 outer graphs
+   inner graph  370 (E= 5, V=5):     5.2 s, 10 outer graphs
+   inner graph 2578 (E= 8, V=6):     2.5 s, 13 outer graphs
+   inner graph 4051 (E=10, V=7):     1.5 s, 8 outer graphs
+   inner graph  113 (E= 4, V=2):     7.9 s, 6 outer graphs
+   inner graph  477 (E= 6, V=4):     4.4 s, 7 outer graphs
+   inner graph  809 (E= 6, V=5):     5.0 s, 9 outer graphs
+   inner graph 2267 (E= 8, V=6):     3.0 s, 9 outer graphs
+   inner graph 3075 (E= 9, V=6):     2.0 s, 13 outer graphs
+   inner graph   78 (E= 4, V=4):     3.8 s, 6 outer graphs
+   inner graph  219 (E= 5, V=3):     4.8 s, 7 outer graphs
+   inner graph 4074 (E=10, V=7):     1.3 s, 8 outer graphs
+   inner graph 3490 (E= 9, V=7):     1.8 s, 9 outer graphs
+   inner graph 3496 (E= 9, V=7):     1.8 s, 9 outer graphs
+   inner graph 2354 (E= 8, V=6):     2.0 s, 13 outer graphs
+   inner graph 2625 (E= 8, V=7):     2.7 s, 11 outer graphs
+   inner graph 3542 (E= 9, V=7):     1.8 s, 9 outer graphs
+   inner graph 2515 (E= 8, V=6):     2.9 s, 13 outer graphs
+   inner graph 3343 (E= 9, V=6):     1.9 s, 14 outer graphs
+   inner graph 2183 (E= 8, V=5):     2.7 s, 13 outer graphs
+   inner graph 3345 (E= 9, V=6):     2.3 s, 14 outer graphs
+   inner graph 3591 (E= 9, V=8):     2.2 s, 7 outer graphs
+   inner graph  733 (E= 6, V=5):     3.7 s, 11 outer graphs
+   inner graph 4173 (E=10, V=7):     1.0 s, 8 outer graphs
+   inner graph 3654 (E=10, V=6):     1.0 s, 14 outer graphs
+   inner graph 1224 (E= 7, V=5):     2.4 s, 12 outer graphs
+   inner graph 3444 (E= 9, V=7):     1.6 s, 12 outer graphs
+   inner graph 2631 (E= 8, V=7):     2.5 s, 9 outer graphs
+   inner graph 3602 (E=10, V=6):     1.0 s, 8 outer graphs
+   inner graph   40 (E= 3, V=3):     3.1 s, 5 outer graphs
+   inner graph 4508 (E=12, V=8):     0.9 s, 7 outer graphs
+   inner graph  961 (E= 7, V=5):     2.1 s, 7 outer graphs
+   inner graph 3413 (E= 9, V=7):     1.8 s, 13 outer graphs
+   inner graph 3560 (E= 9, V=7):     1.1 s, 14 outer graphs
+   inner graph 2982 (E= 9, V=6):     1.1 s, 13 outer graphs
+   inner graph 2049 (E= 8, V=5):     1.8 s, 12 outer graphs
+   inner graph 3576 (E= 9, V=8):     1.2 s, 8 outer graphs
+   inner graph  847 (E= 6, V=6):     2.6 s, 10 outer graphs
+   inner graph   45 (E= 3, V=2):     4.6 s, 3 outer graphs
+   inner graph 3517 (E= 9, V=7):     1.3 s, 13 outer graphs
+   inner graph 4433 (E=11, V=8):     0.5 s, 11 outer graphs
+   inner graph   74 (E= 4, V=4):     1.8 s, 8 outer graphs
+   inner graph 4045 (E=10, V=7):     0.9 s, 9 outer graphs
+   inner graph  859 (E= 6, V=6):     2.3 s, 12 outer graphs
+   inner graph 4517 (E=12, V=8):     0.3 s, 12 outer graphs
+   inner graph 2606 (E= 8, V=7):     1.1 s, 13 outer graphs
+   inner graph 4445 (E=11, V=8):     0.5 s, 9 outer graphs
+   inner graph 3048 (E= 9, V=6):     0.8 s, 14 outer graphs
+   inner graph  198 (E= 5, V=4):     1.5 s, 10 outer graphs
+   inner graph  195 (E= 5, V=4):     2.1 s, 9 outer graphs
+   inner graph 4468 (E=11, V=8):     0.5 s, 13 outer graphs
+   inner graph 3933 (E=10, V=7):     0.5 s, 14 outer graphs
+   inner graph 2657 (E= 8, V=7):     1.2 s, 13 outer graphs
+   inner graph 4447 (E=11, V=8):     0.8 s, 14 outer graphs
+   inner graph 4395 (E=11, V=7):     0.5 s, 14 outer graphs
+   inner graph 4110 (E=10, V=7):     0.8 s, 13 outer graphs
+   inner graph 4257 (E=11, V=7):     0.5 s, 13 outer graphs
+   inner graph  192 (E= 5, V=4):     1.0 s, 8 outer graphs
+   inner graph 4489 (E=12, V=8):     0.2 s, 15 outer graphs
+   inner graph 3575 (E= 9, V=8):     0.7 s, 12 outer graphs
+   inner graph 4067 (E=10, V=7):     0.5 s, 12 outer graphs
+   inner graph 2663 (E= 8, V=8):     1.0 s, 12 outer graphs
+   inner graph  430 (E= 6, V=5):     0.7 s, 13 outer graphs
+   inner graph 4206 (E=10, V=8):     0.5 s, 13 outer graphs
+   inner graph  938 (E= 7, V=5):     0.5 s, 11 outer graphs
+   inner graph 4139 (E=10, V=7):     0.5 s, 13 outer graphs
+   inner graph 4076 (E=10, V=7):     0.4 s, 14 outer graphs
+   inner graph 4190 (E=10, V=8):     0.4 s, 14 outer graphs
+   inner graph 4449 (E=11, V=8):     0.3 s, 13 outer graphs
+   inner graph   57 (E= 4, V=3):     1.0 s, 4 outer graphs
+   inner graph 4217 (E=10, V=8):     0.2 s, 13 outer graphs
+   inner graph  928 (E= 7, V=6):     0.2 s, 13 outer graphs
+   inner graph   11 (E= 2, V=2):     0.6 s, 4 outer graphs
+   inner graph   51 (E= 4, V=4):     0.2 s, 6 outer graphs
+   inner graph  151 (E= 5, V=4):     0.1 s, 10 outer graphs
+TASK 18 OF 20 (g5_89_nat_t7_out2) COMPLETE: 229 inner graphs, 3359 s

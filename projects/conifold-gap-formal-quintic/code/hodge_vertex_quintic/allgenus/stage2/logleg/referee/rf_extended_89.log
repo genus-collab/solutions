@@ -1,0 +1,184 @@
+rf_run: P = 2^89-1, KM = 17, targets [(6, 1)]
+  curve set-up 8.9 s
+  [PASS] log functional: zeta-route == e-basis route Int_0^oo dp/(p-c)^(m+1)
+  omega_(0,3): 5 symmetric dxi-coefficients, symmetry violations 0, max k 0, max Sum k 0 (bound 3g-3+n = 0), 0.0 s
+  omega_(1,1): 10 symmetric dxi-coefficients, symmetry violations 0, max k 1, max Sum k 1 (bound 3g-3+n = 1), 0.0 s
+  omega_(0,4): 15 symmetric dxi-coefficients, symmetry violations 0, max k 1, max Sum k 1 (bound 3g-3+n = 1), 0.0 s
+  omega_(1,2): 30 symmetric dxi-coefficients, symmetry violations 0, max k 2, max Sum k 2 (bound 3g-3+n = 2), 0.0 s
+  omega_(0,5): 110 symmetric dxi-coefficients, symmetry violations 0, max k 2, max Sum k 2 (bound 3g-3+n = 2), 0.0 s
+  omega_(1,3): 125 symmetric dxi-coefficients, symmetry violations 0, max k 3, max Sum k 3 (bound 3g-3+n = 3), 0.0 s
+  omega_(2,1): 25 symmetric dxi-coefficients, symmetry violations 0, max k 4, max Sum k 4 (bound 3g-3+n = 4), 0.0 s
+  omega_(0,6): 435 symmetric dxi-coefficients, symmetry violations 0, max k 3, max Sum k 3 (bound 3g-3+n = 3), 0.0 s
+  omega_(1,4): 520 symmetric dxi-coefficients, symmetry violations 0, max k 4, max Sum k 4 (bound 3g-3+n = 4), 0.0 s
+  omega_(2,2): 170 symmetric dxi-coefficients, symmetry violations 0, max k 5, max Sum k 5 (bound 3g-3+n = 5), 0.1 s
+  omega_(0,7): 1570 symmetric dxi-coefficients, symmetry violations 0, max k 4, max Sum k 4 (bound 3g-3+n = 4), 0.0 s
+  omega_(1,5): 1966 symmetric dxi-coefficients, symmetry violations 0, max k 5, max Sum k 5 (bound 3g-3+n = 5), 0.1 s
+  omega_(2,3): 835 symmetric dxi-coefficients, symmetry violations 0, max k 6, max Sum k 6 (bound 3g-3+n = 6), 0.1 s
+  omega_(3,1): 40 symmetric dxi-coefficients, symmetry violations 0, max k 7, max Sum k 7 (bound 3g-3+n = 7), 0.0 s
+  omega_(1,6): 6860 symmetric dxi-coefficients, symmetry violations 0, max k 6, max Sum k 6 (bound 3g-3+n = 6), 0.5 s
+  omega_(2,4): 3505 symmetric dxi-coefficients, symmetry violations 0, max k 7, max Sum k 7 (bound 3g-3+n = 7), 0.4 s
+  omega_(3,2): 425 symmetric dxi-coefficients, symmetry violations 0, max k 8, max Sum k 8 (bound 3g-3+n = 8), 0.1 s
+  omega_(2,5): 13266 symmetric dxi-coefficients, symmetry violations 0, max k 8, max Sum k 8 (bound 3g-3+n = 8), 2.0 s
+  omega_(3,3): 2705 symmetric dxi-coefficients, symmetry violations 0, max k 9, max Sum k 9 (bound 3g-3+n = 9), 0.5 s
+  omega_(4,1): 55 symmetric dxi-coefficients, symmetry violations 0, max k 10, max Sum k 10 (bound 3g-3+n = 10), 0.1 s
+  omega_(3,4): 13170 symmetric dxi-coefficients, symmetry violations 0, max k 10, max Sum k 10 (bound 3g-3+n = 10), 3.5 s
+  omega_(4,2): 790 symmetric dxi-coefficients, symmetry violations 0, max k 11, max Sum k 11 (bound 3g-3+n = 11), 0.3 s
+  omega_(4,3): 6290 symmetric dxi-coefficients, symmetry violations 0, max k 12, max Sum k 12 (bound 3g-3+n = 12), 2.4 s
+  omega_(5,1): 70 symmetric dxi-coefficients, symmetry violations 0, max k 13, max Sum k 13 (bound 3g-3+n = 13), 0.1 s
+  omega_(5,2): 1270 symmetric dxi-coefficients, symmetry violations 0, max k 14, max Sum k 14 (bound 3g-3+n = 14), 0.7 s
+  omega_(6,1): 85 symmetric dxi-coefficients, symmetry violations 0, max k 16, max Sum k 16 (bound 3g-3+n = 16), 0.2 s
+  [PASS] (0,3) a=3 L-legs, k=0 log legs: 2 singular multisets (Sum m < 5, all residues mod 5), non-zero 0
+  [PASS] (0,3) a=2 L-legs, k=1 log legs: 4 singular multisets (Sum m < 5, all residues mod 5), non-zero 0
+  [PASS] (0,3) a=1 L-legs, k=2 log legs: 4 singular multisets (Sum m < 5, all residues mod 5), non-zero 0
+  [PASS] (0,3) <(-log p)^3> = 1  Gap/F_h^(3)(1) = 1  frozen (-5)^(1-h) x = -5
+  [PASS] (1,1) a=1 L-legs, k=0 log legs: 4 singular multisets (Sum m < 5, all residues mod 5), non-zero 0
+  [PASS] (1,1) <(-log p)^1> = -1/12  Gap/F_h^(1)(1) = -1/12  frozen (-5)^(1-h) x = -1/12
+  [PASS] (0,4) a=4 L-legs, k=0 log legs: 18 singular multisets (Sum m < 10, all residues mod 5), non-zero 0
+  [PASS] (0,4) a=3 L-legs, k=1 log legs: 23 singular multisets (Sum m < 10, all residues mod 5), non-zero 0
+  [PASS] (0,4) a=2 L-legs, k=2 log legs: 20 singular multisets (Sum m < 10, all residues mod 5), non-zero 0
+  [PASS] (0,4) a=1 L-legs, k=3 log legs: 9 singular multisets (Sum m < 10, all residues mod 5), non-zero 0
+  [PASS] (0,4) <(-log p)^4> = -1  Gap/F_h^(4)(1) = -1  frozen (-5)^(1-h) x = 5
+  [PASS] (1,2) a=2 L-legs, k=0 log legs: 20 singular multisets (Sum m < 10, all residues mod 5), non-zero 0
+  [PASS] (1,2) a=1 L-legs, k=1 log legs: 9 singular multisets (Sum m < 10, all residues mod 5), non-zero 0
+  [PASS] (1,2) <(-log p)^2> = 1/12  Gap/F_h^(2)(1) = 1/12  frozen (-5)^(1-h) x = 1/12
+  [PASS] (0,5) a=5 L-legs, k=0 log legs: 83 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (0,5) a=4 L-legs, k=1 log legs: 94 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (0,5) a=3 L-legs, k=2 log legs: 83 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (0,5) a=2 L-legs, k=3 log legs: 49 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (0,5) a=1 L-legs, k=4 log legs: 14 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (0,5) <(-log p)^5> = 2  Gap/F_h^(5)(1) = 2  frozen (-5)^(1-h) x = -10
+  [PASS] (1,3) a=3 L-legs, k=0 log legs: 83 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (1,3) a=2 L-legs, k=1 log legs: 49 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (1,3) a=1 L-legs, k=2 log legs: 14 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (1,3) <(-log p)^3> = -1/6  Gap/F_h^(3)(1) = -1/6  frozen (-5)^(1-h) x = -1/6
+  [PASS] (2,1) a=1 L-legs, k=0 log legs: 14 singular multisets (Sum m < 15, all residues mod 5), non-zero 0
+  [PASS] (2,1) <(-log p)^1> = 1/120  Gap/F_h^(1)(1) = 1/120  frozen (-5)^(1-h) x = -1/600
+  [PASS] (0,6) a=6 L-legs, k=0 log legs: 298 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (0,6) a=5 L-legs, k=1 log legs: 324 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (0,6) a=4 L-legs, k=2 log legs: 295 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (0,6) a=3 L-legs, k=3 log legs: 204 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (0,6) a=2 L-legs, k=4 log legs: 90 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (0,6) a=1 L-legs, k=5 log legs: 19 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (0,6) <(-log p)^6> = -6  Gap/F_h^(6)(1) = -6  frozen (-5)^(1-h) x = 30
+  [PASS] (1,4) a=4 L-legs, k=0 log legs: 295 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (1,4) a=3 L-legs, k=1 log legs: 204 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (1,4) a=2 L-legs, k=2 log legs: 90 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (1,4) a=1 L-legs, k=3 log legs: 19 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (1,4) <(-log p)^4> = 1/2  Gap/F_h^(4)(1) = 1/2  frozen (-5)^(1-h) x = 1/2
+  [PASS] (2,2) a=2 L-legs, k=0 log legs: 90 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (2,2) a=1 L-legs, k=1 log legs: 19 singular multisets (Sum m < 20, all residues mod 5), non-zero 0
+  [PASS] (2,2) <(-log p)^2> = -1/40  Gap/F_h^(2)(1) = -1/40  frozen (-5)^(1-h) x = 1/200
+  [PASS] (0,7) a=7 L-legs, k=0 log legs: 929 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (0,7) a=6 L-legs, k=1 log legs: 996 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (0,7) a=5 L-legs, k=2 log legs: 933 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (0,7) a=4 L-legs, k=3 log legs: 717 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (0,7) a=3 L-legs, k=4 log legs: 406 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (0,7) a=2 L-legs, k=5 log legs: 144 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (0,7) a=1 L-legs, k=6 log legs: 24 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (0,7) <(-log p)^7> = 24  Gap/F_h^(7)(1) = 24  frozen (-5)^(1-h) x = -120
+  [PASS] (1,5) a=5 L-legs, k=0 log legs: 933 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (1,5) a=4 L-legs, k=1 log legs: 717 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (1,5) a=3 L-legs, k=2 log legs: 406 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (1,5) a=2 L-legs, k=3 log legs: 144 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (1,5) a=1 L-legs, k=4 log legs: 24 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (1,5) <(-log p)^5> = -2  Gap/F_h^(5)(1) = -2  frozen (-5)^(1-h) x = -2
+  [PASS] (2,3) a=3 L-legs, k=0 log legs: 406 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (2,3) a=2 L-legs, k=1 log legs: 144 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (2,3) a=1 L-legs, k=2 log legs: 24 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (2,3) <(-log p)^3> = 1/10  Gap/F_h^(3)(1) = 1/10  frozen (-5)^(1-h) x = -1/50
+  [PASS] (3,1) a=1 L-legs, k=0 log legs: 24 singular multisets (Sum m < 25, all residues mod 5), non-zero 0
+  [PASS] (3,1) <(-log p)^1> = -1/252  Gap/F_h^(1)(1) = -1/252  frozen (-5)^(1-h) x = -1/6300
+  [PASS] (1,6) a=6 L-legs, k=0 log legs: 2689 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (1,6) a=5 L-legs, k=1 log legs: 2225 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (1,6) a=4 L-legs, k=2 log legs: 1477 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (1,6) a=3 L-legs, k=3 log legs: 710 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (1,6) a=2 L-legs, k=4 log legs: 210 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (1,6) a=1 L-legs, k=5 log legs: 29 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (1,6) <(-log p)^6> = 10  Gap/F_h^(6)(1) = 10  frozen (-5)^(1-h) x = 10
+  [PASS] (2,4) a=4 L-legs, k=0 log legs: 1477 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (2,4) a=3 L-legs, k=1 log legs: 710 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (2,4) a=2 L-legs, k=2 log legs: 210 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (2,4) a=1 L-legs, k=3 log legs: 29 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (2,4) <(-log p)^4> = -1/2  Gap/F_h^(4)(1) = -1/2  frozen (-5)^(1-h) x = 1/10
+  [PASS] (3,2) a=2 L-legs, k=0 log legs: 210 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (3,2) a=1 L-legs, k=1 log legs: 29 singular multisets (Sum m < 30, all residues mod 5), non-zero 0
+  [PASS] (3,2) <(-log p)^2> = 5/252  Gap/F_h^(2)(1) = 5/252  frozen (-5)^(1-h) x = 1/1260
+  [PASS] (2,5) a=5 L-legs, k=0 log legs: 4652 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (2,5) a=4 L-legs, k=1 log legs: 2724 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (2,5) a=3 L-legs, k=2 log legs: 1137 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (2,5) a=2 L-legs, k=3 log legs: 289 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (2,5) a=1 L-legs, k=4 log legs: 34 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (2,5) <(-log p)^5> = 3  Gap/F_h^(5)(1) = 3  frozen (-5)^(1-h) x = -3/5
+  [PASS] (3,3) a=3 L-legs, k=0 log legs: 1137 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (3,3) a=2 L-legs, k=1 log legs: 289 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (3,3) a=1 L-legs, k=2 log legs: 34 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (3,3) <(-log p)^3> = -5/42  Gap/F_h^(3)(1) = -5/42  frozen (-5)^(1-h) x = -1/210
+  [PASS] (4,1) a=1 L-legs, k=0 log legs: 34 singular multisets (Sum m < 35, all residues mod 5), non-zero 0
+  [PASS] (4,1) <(-log p)^1> = 1/240  Gap/F_h^(1)(1) = 1/240  frozen (-5)^(1-h) x = -1/30000
+  [PASS] (3,4) a=4 L-legs, k=0 log legs: 4626 singular multisets (Sum m < 40, all residues mod 5), non-zero 0
+  [PASS] (3,4) a=3 L-legs, k=1 log legs: 1708 singular multisets (Sum m < 40, all residues mod 5), non-zero 0
+  [PASS] (3,4) a=2 L-legs, k=2 log legs: 380 singular multisets (Sum m < 40, all residues mod 5), non-zero 0
+  [PASS] (3,4) a=1 L-legs, k=3 log legs: 39 singular multisets (Sum m < 40, all residues mod 5), non-zero 0
+  [PASS] (3,4) <(-log p)^4> = 5/6  Gap/F_h^(4)(1) = 5/6  frozen (-5)^(1-h) x = 1/30
+  [PASS] (4,2) a=2 L-legs, k=0 log legs: 380 singular multisets (Sum m < 40, all residues mod 5), non-zero 0
+  [PASS] (4,2) a=1 L-legs, k=1 log legs: 39 singular multisets (Sum m < 40, all residues mod 5), non-zero 0
+  [PASS] (4,2) <(-log p)^2> = -7/240  Gap/F_h^(2)(1) = -7/240  frozen (-5)^(1-h) x = 7/30000
+  [PASS] (4,3) a=3 L-legs, k=0 log legs: 2443 singular multisets (Sum m < 45, all residues mod 5), non-zero 0
+  [PASS] (4,3) a=2 L-legs, k=1 log legs: 484 singular multisets (Sum m < 45, all residues mod 5), non-zero 0
+  [PASS] (4,3) a=1 L-legs, k=2 log legs: 44 singular multisets (Sum m < 45, all residues mod 5), non-zero 0
+  [PASS] (4,3) <(-log p)^3> = 7/30  Gap/F_h^(3)(1) = 7/30  frozen (-5)^(1-h) x = -7/3750
+  [PASS] (5,1) a=1 L-legs, k=0 log legs: 44 singular multisets (Sum m < 45, all residues mod 5), non-zero 0
+  [PASS] (5,1) <(-log p)^1> = -1/132  Gap/F_h^(1)(1) = -1/132  frozen (-5)^(1-h) x = -1/82500
+  [PASS] (5,2) a=2 L-legs, k=0 log legs: 600 singular multisets (Sum m < 50, all residues mod 5), non-zero 0
+  [PASS] (5,2) a=1 L-legs, k=1 log legs: 49 singular multisets (Sum m < 50, all residues mod 5), non-zero 0
+  [PASS] (5,2) <(-log p)^2> = 3/44  Gap/F_h^(2)(1) = 3/44  frozen (-5)^(1-h) x = 3/27500
+  [PASS] (6,1) a=1 L-legs, k=0 log legs: 54 singular multisets (Sum m < 55, all residues mod 5), non-zero 0
+  [PASS] (6,1) <(-log p)^1> = 691/32760  Gap/F_h^(1)(1) = 691/32760  frozen (-5)^(1-h) x = -691/102375000
+  TOTAL singular multisets 40739 (mixed 19194), non-zero 0, Z/5 selection violations 0
+  [PASS] (V1) with + sign: 21733 tuples, 0 failures
+  [PASS] control (V1) with - sign must fail: 1920 failures of 21733
+  [PASS] control (V1) without xi-term must fail: 1920 failures of 21733
+  [PASS] dilaton (D) (EO Thm 4.7, no (Q1)): 21733 tuples, 0 failures
+  [PASS] (0,3) control off-L legs p^-j: 8 non-zero singular, e.g. [((-1, 1), Fraction(-1, 1)), ((-2, 2), Fraction(-4, 1)), ((-5, 5), Fraction(-25, 1))]; log leg based at p=2: 4 non-zero singular
+  [PASS] (1,1) control off-L legs p^-j: 3 non-zero singular, e.g. [((-5,), Fraction(15, 4)), ((-10,), Fraction(105, 4)), ((-15,), Fraction(665, 8))]
+  [PASS] (0,4) control off-L legs p^-j: 12 non-zero singular, e.g. [((-1, 6), Fraction(-12, 1)), ((-2, 2), Fraction(-4, 1)), ((-2, 7), Fraction(-56, 1))]; log leg based at p=2: 9 non-zero singular
+  [PASS] (1,2) control off-L legs p^-j: 10 non-zero singular, e.g. [((-2, 7), Fraction(-7, 1)), ((-5, 5), Fraction(-75, 1)), ((-5, 10), Fraction(-500, 1))]; log leg based at p=2: 9 non-zero singular
+  [PASS] (0,5) control off-L legs p^-j: 15 non-zero singular, e.g. [((-1, 11), Fraction(-231, 1)), ((-2, 7), Fraction(-84, 1)), ((-2, 12), Fraction(-1296, 1))]; log leg based at p=2: 14 non-zero singular
+  [PASS] (1,3) control off-L legs p^-j: 15 non-zero singular, e.g. [((-1, 11), Fraction(-385, 8)), ((-2, 7), Fraction(-7, 1)), ((-2, 12), Fraction(-492, 1))]; log leg based at p=2: 14 non-zero singular
+  [PASS] (2,1) control off-L legs p^-j: 3 non-zero singular, e.g. [((-5,), Fraction(2, 1)), ((-10,), Fraction(12373, 16)), ((-15,), Fraction(589965, 32))]
+  [PASS] (0,6) control off-L legs p^-j: 18 non-zero singular, e.g. [((-1, 16), Fraction(-6144, 1)), ((-2, 12), Fraction(-2304, 1)), ((-2, 17), Fraction(-40392, 1))]; log leg based at p=2: 19 non-zero singular
+  [PASS] (1,4) control off-L legs p^-j: 18 non-zero singular, e.g. [((-1, 16), Fraction(-2560, 1)), ((-2, 12), Fraction(-576, 1)), ((-2, 17), Fraction(-50031, 2))]; log leg based at p=2: 19 non-zero singular
+  [PASS] (2,2) control off-L legs p^-j: 16 non-zero singular, e.g. [((-2, 17), Fraction(-17901, 8)), ((-5, 5), Fraction(-40, 1)), ((-5, 10), Fraction(-1900, 1))]; log leg based at p=2: 19 non-zero singular
+  [PASS] (0,7) control off-L legs p^-j: 21 non-zero singular, e.g. [((-1, 21), Fraction(-208845, 1)), ((-2, 17), Fraction(-79560, 1)), ((-2, 22), Fraction(-1576080, 1))]; log leg based at p=2: 24 non-zero singular
+  [PASS] (1,5) control off-L legs p^-j: 21 non-zero singular, e.g. [((-1, 21), Fraction(-1044225, 8)), ((-2, 17), Fraction(-69615, 2)), ((-2, 22), Fraction(-1340955, 1))]; log leg based at p=2: 24 non-zero singular
+  [PASS] (2,3) control off-L legs p^-j: 21 non-zero singular, e.g. [((-1, 21), Fraction(-1461915, 128)), ((-2, 17), Fraction(-17901, 8)), ((-2, 22), Fraction(-993201, 4))]; log leg based at p=2: 24 non-zero singular
+  [PASS] (3,1) control off-L legs p^-j: 2 non-zero singular, e.g. [((-10,), Fraction(11575, 4)), ((-15,), Fraction(44775925, 64))]
+  [PASS] (1,6) control off-L legs p^-j: 23 non-zero singular, e.g. [((-1, 26), Fraction(-7207200, 1)), ((-2, 22), Fraction(-2106720, 1)), ((-2, 27), Fraction(-79397010, 1))]; log leg based at p=2: 29 non-zero singular
+  [PASS] (2,4) control off-L legs p^-j: 23 non-zero singular, e.g. [((-1, 26), Fraction(-1321320, 1)), ((-2, 22), Fraction(-297528, 1)), ((-2, 27), Fraction(-732317355, 32))]; log leg based at p=2: 29 non-zero singular
+  [PASS] (3,2) control off-L legs p^-j: 20 non-zero singular, e.g. [((-2, 27), Fraction(-202081473, 128)), ((-5, 15), Fraction(-25575, 1)), ((-5, 20), Fraction(-1958900, 1))]; log leg based at p=2: 29 non-zero singular
+  [PASS] (2,5) control off-L legs p^-j: 25 non-zero singular, e.g. [((-1, 31), Fraction(-15912780345, 128)), ((-2, 27), Fraction(-989381547, 32)), ((-2, 32), Fraction(-2054896725, 1))]; log leg based at p=2: 34 non-zero singular
+  [PASS] (3,3) control off-L legs p^-j: 25 non-zero singular, e.g. [((-1, 31), Fraction(-7302578085, 1024)), ((-2, 27), Fraction(-202081473, 128)), ((-2, 32), Fraction(-1053063999, 4))]; log leg based at p=2: 34 non-zero singular
+  [PASS] (4,1) control off-L legs p^-j: 2 non-zero singular, e.g. [((-10,), Fraction(828, 1)), ((-15,), Fraction(112750007, 16))]
+  [PASS] (3,4) control off-L legs p^-j: 27 non-zero singular, e.g. [((-1, 36), Fraction(-1344798720, 1)), ((-2, 32), Fraction(-313786368, 1)), ((-2, 37), Fraction(-9273884149239, 256))]; log leg based at p=2: 39 non-zero singular
+  [PASS] (4,2) control off-L legs p^-j: 24 non-zero singular, e.g. [((-2, 37), Fraction(-2084566248765, 1024)), ((-5, 25), Fraction(-518283675, 16)), ((-5, 30), Fraction(-27336340395, 8))]; log leg based at p=2: 39 non-zero singular
+  [PASS] (4,3) control off-L legs p^-j: 29 non-zero singular, e.g. [((-1, 41), Fraction(-11100376706214, 6321863288687)), ((-2, 37), Fraction(-2084566248765, 1024)), ((-2, 42), Fraction(-2315794378791, 7669986598915))]; log leg based at p=2: 44 non-zero singular
+  [PASS] (5,1) control off-L legs p^-j: 1 non-zero singular, e.g. [((-15,), Fraction(16052400, 1))]
+  [PASS] (5,2) control off-L legs p^-j: 26 non-zero singular, e.g. [((-2, 47), Fraction(9129724686150, 9686283822887)), ((-5, 35), Fraction(-8612680344975, 128)), ((-5, 40), None)]; log leg based at p=2: 49 non-zero singular
+  [PASS] (6,1) control off-L legs p^-j: 1 non-zero singular, e.g. [((-15,), Fraction(3408804, 1))]
+  [PASS] worker's number at (4,2): -868220928; referee -868220928
+  [PASS] worker's number at (3,3): -144609822225/1024; referee -144609822225/1024
+  [PASS] worker's number at (2,1): 2079/128; referee 2079/128
+  [PASS] worker's number at (3,1): 3132675/1024; referee 3132675/1024
+  [PASS] worker's number at (4,1): -45541532421/32768; referee -45541532421/32768
+  [PASS] worker's number at (4,2): -518283675/16; referee -518283675/16
+  [PASS] worker's number at (4,2): -2084566248765/1024; referee -2084566248765/1024
+  [PASS] worker's number at (1,1): 15/4; referee 15/4
+  [PASS] worker's number at (0,3): -1; referee -1
+  [PASS] worker's number at (3,1): 0; referee 0
+  [PASS] worker's number at (4,1): 0; referee 0
+  [PASS] worker's number at (0,3): 4; referee 4
+  [PASS] worker's number at (0,3): -5; referee -5
+  F_2(v=1) from the TR definition = -1/240; <p^5>_2 = 0
+  F_3(v=1) from the TR definition = 1/1008; <p^5>_3 = 0
+  F_4(v=1) from the TR definition = -1/1440; <p^5>_4 = 0
+  total 109.6 s

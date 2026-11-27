@@ -1,0 +1,16 @@
+ev_reduced: field Q, mode qrr, frame (0, 0), q <= 4 (zhat^20, u^16), (H) for n <= 24, REG/Ghat_22 for q <= 4
+   log file logs/ev_reduced_Q_qrr_0_0_20_ctrl.log
+   setup (periods, tau^m, model rows to t^20, u^16) in 0.0 s; dK_q/df_5q = 1
+   z^5  : f^QRR = 4537/3937500; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 1..4 ok; 0 s
+   z^10 : f^QRR = -177640111151/31007812500000; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 6..9 ok; 0 s
+   z^15 : f^QRR = -284328315069009259339/6226756347656250000000; K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 11..14 ok; 0 s
+   z^20 : f^QRR = 19636563411456..(31/29 digits); K_q = 0; REG ok/ok; Ghat_22 slot 0; (H) n = 16..19 ok; 0 s
+PASS (H): ph_n(1) = h_n for all 20 n <= 24 with 5 not | n (no free parameter: the WKB recursion alone): []
+PASS no resonance obstruction at the 4 multiples of 5 <= 24 (4 of them because deg rho_n < 4n/5): polynomial-type solution exists
+PASS (N): K_q = [z^5q] c^act = 0 for q = 1..4, i.e. a_1 = a_3 = .. = 0 through z^20: []
+PASS REG and (R1): [u^j] Ghat_11 = [u^j] Ghat_22 = 0 (j < 4q) and Ghat_22 slot = Ghat_11 slot, q <= 4
+-- failing controls (q <= 4); each must FAIL the test it targets
+PASS control S (stored normalisation at z^5, f_5 -> f_5 + m5): K_1 = m5 = -43397/807975000 exactly, REG still passes (blind to it): -43397/807975000
+PASS control T (tau -> 1, i.e. v = u, the wrong natural variable): REG fails for 2 of 2 orders
+PASS control W (QRR weights without -5 zeta^i): (H) fails at n = [1, 2, 3, 4]; K_1 = -5077249/653184000000
+EV_REDUCED Q qrr 0_0 q<=4: ALL CHECKS PASSED   (0 s)

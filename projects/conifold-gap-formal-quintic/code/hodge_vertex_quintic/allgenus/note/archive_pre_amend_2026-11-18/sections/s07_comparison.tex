@@ -1,0 +1,81 @@
+\section{Flat and hatted graph sums}
+\label{sec:flh}
+
+This section proves the comparison theorem, \cref{thm:flh-main}: for every $g\geq 2$ and every leg-free stable graph $\Gamma$ of genus $g$, the outer term $T_\Gamma$ of the natural form (\cref{def:set-outer}) equals the term $F_\Gamma$ of $\Gamma$ in the flat sum of $\Pc.\Omega^{\mathrm{mod}}_{v(u)}$ (\cref{def:red-flatsum}), provided the normalisation series $\Dn$ of \cref{thm:gau-R0} satisfies $\Fg{g}$ (\cref{def:gau-Fg}), which is proved for every $g$ in \cref{thm:gam-D}. The argument is graph by graph; it uses no total potential and no topological recursion.
+
+Throughout, a conifold frame (\cref{def:set-frames}) is fixed, the rows are expanded in it (\cref{def:set-confexp}, \cref{cor:gau-rowsNN}), and
+\[
+M\coloneqq\Mo(\tau(u)\zh),\qquad \zh=z/s^4,
+\]
+is read, exactly in $u$, as a power series in $z$ with coefficients in $\bbQ(\zeta)\lser{s}$. By \cref{def:set-M0} and \cref{lem:set-M0sympl}, $M(0)=1$ and $M(-z)^TM(z)=1$. As in \cref{def:set-outer}, $R'\coloneqq\Qr M^{-1}$, where $\Qr$ is the matrix of the lowered rows of \cref{def:set-rows} (flat index $a$, colour $i$). Two local letters denote diagonal matrices acting on lowered components: $\Lambda_s\coloneqq\diag(s^{1-\nu_a})$ and $\Lambda_\varsigma\coloneqq\diag(\varsigma^{1-\nu_a})$; they are not the leg map of \cref{def:mod-weights}.
+
+\subsection{Outer sums and four lemmas}
+\label{sec:flh-lemmas}
+
+\begin{defn}[outer sums with a non-unital constant part]
+\label{def:flh-outer}
+Let $\cA$ be $\bbQ\fps{u}$ or $\bbQ(\zeta)\lser{s}$; the second ring contains the first through $u=s^5$, and both carry the $u$-adic topology.
+\begin{enumerate}
+\item Let $\Omega$ be a CohFT with flat unit $1$ \cite[Def.~0.3]{PPZ15} on a free $\cA$-module $\mathbb V$ of finite rank with pairing $\eta$. Its correlators and its dilaton-shifted potentials (\cref{lem:set-dilaton}) are
+\[
+\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\rangle^{\Omega}_h=\int_{\overline{\mathcal M}_{h,n}}\Omega_{h,n}(a_1\otimes\cdots\otimes a_n)\,\psi_1^{k_1}\cdots\psi_n^{k_n},\qquad\overline F^{\Omega}_h(q)=\sum_{n}\frac{1}{n!}\langle(q+z1)^n\rangle^{\Omega}_h ,
+\]
+a point $q\in\mathbb V\fps{z}$ being inserted through $z^ka\mapsto\psi^ka$. For a leg-free stable graph $\Gamma$, with vertices $v$ of genus $g_v$ and valence $n_v$, a bivector series $E\in(\mathbb V\otimes\mathbb V)\fps{\psi,\psi'}$ that is symmetric under the exchange of its two slots, and a point $q$, let $\mathrm{Cont}_\Gamma[E,q;\Omega]$ be $|\Aut\Gamma|^{-1}$ times the contraction of the vertex tensors $\dd^{n_v}\overline F^{\Omega}_{g_v}(q)$, one slot for each half-edge, with one copy of $E$ for each edge, its two slots inserted at the two half-edges of that edge. As in \cref{def:set-graphsum}, the factor $|\Aut\Gamma|^{-1}$ is part of $\mathrm{Cont}_\Gamma$. The potentials of a CohFT are always shifted by its own flat unit.
+\item If $q+z1\in z^2\mathbb V\fps{z}$, every contraction is a finite sum: at a vertex each insertion of $q+z1$ has $\psi$-degree at least $2$ and raises the dimension by one, so only finitely many such insertions, and finitely many monomials of $E$, survive the dimension count. If $q+z1\in z\epsilon\,1+z^2\mathbb V\fps{z}$ with $\epsilon\in u\bbQ\fps{u}$, the vertex tensors are the Taylor expansions at the base point $-z1$; by the dilaton equation the terms with $m$ insertions of $z\epsilon 1$ are rational multiples of $\epsilon^m$ times terms without them, so these expansions converge $u$-adically (\cref{lem:set-dilaton}, \cref{lem:tra-conv}~(f)). Only these two cases occur below.
+\item Let $(\mathbb V',\eta',1')$ be a second such module and $O(z)=\sum_{k\geq0}O_kz^k$, with $O_k\colon\mathbb V\to\mathbb V'$ linear, a symplectic series: $O(-z)^*O(z)=1$, where $O^*\colon\mathbb V'\to\mathbb V$ is the adjoint for $\eta$ and $\eta'$; thus $O^{-1}(z)=O(-z)^*$. Assume
+\[
+\text{(unit)}\qquad O_0^{-1}1'=\varkappa^{-1}1\quad\text{for a unit }\varkappa\text{ of }\cA .
+\]
+The edge and the leaf point of $O$ are
+\[
+E_O(\psi,\psi')\coloneqq\frac{\eta^{-1}-\bigl(O^{-1}(\psi)\otimes O^{-1}(\psi')\bigr)\eta'^{-1}}{\psi+\psi'},\qquad q_O(z)\coloneqq O^{-1}(z)(-z1'),
+\]
+where $\eta^{-1}\in\mathbb V\otimes\mathbb V$ and $\eta'^{-1}\in\mathbb V'\otimes\mathbb V'$ are the inverse bivectors. By symplecticity the numerator vanishes at $\psi'=-\psi$, so $E_O$ is a symmetric power series in $\psi,\psi'$ \cite[Rem.~2.1 and (6)]{PPZ15}; by (unit), $q_O\in-z\varkappa^{-1}1+z^2\mathbb V\fps{z}$.
+\item For a unit $\varkappa$ of $\cA$ the CohFT $\varkappa.\Omega$ on $(\mathbb V,\eta)$ is $(\varkappa.\Omega)_{g,n}\coloneqq\varkappa^{2g-2+n}\,\Omega_{g,n}$. Its flat unit is $\varkappa^{-1}1$; the gluing axioms hold because the exponent $2g-2+n$ is additive under the gluing maps.
+\end{enumerate}
+\end{defn}
+
+If $\mathbb V'=\mathbb V$ and $O(0)=1$, then $\varkappa=1$, $q_O+z1=\ttr_O(z)$ is the translation of \cite[Def.~2.13]{PPZ15}, and $\mathrm{Cont}_\Gamma[E_O,q_O;\Omega]$ is the term of $\Gamma$ in the leg-free part of the unit-preserving action $O.\Omega$ (\cref{def:set-graphsum}). Two series with a non-unital constant part occur below. The canonical gauge $\Pc$ satisfies (unit) with $\varkappa=d$ (\cref{lem:flh-inputs}); as its constant term is an isometry, its edge and leaf point are those of \cref{def:tra-edge}. The outer matrix $R'$, from the colour space of $\TFT$ to the state space of the formal quintic, satisfies (unit) with $\varkappa=1$, and $T_\Gamma=\mathrm{Cont}_\Gamma[E_{R'},q_{R'};M.\TFT]$, with the edge of \cref{def:set-outer}. The definitions do not decide whether $R'$ is symplectic; under $\Fg{g}$ it is symplectic modulo $z^{3g-2}$ (\cref{lem:flh-inputs}~(iii)), which is all that the proof of \cref{thm:flh-main} uses.
+
+\begin{lem}[frame change]
+\label{lem:flh-frame}
+Let $A\colon(\widetilde{\mathbb V},\tilde\eta)\to(\mathbb V,\eta)$ be an isometry independent of $z$, $\widetilde\Omega$ a CohFT with flat unit $\tilde 1$ on $\widetilde{\mathbb V}$, and $A_*\widetilde\Omega$ the CohFT on $(\mathbb V,\eta)$ with $(A_*\widetilde\Omega)_{g,n}\coloneqq\widetilde\Omega_{g,n}\circ(A^{-1})^{\otimes n}$, whose flat unit is $A\tilde1$. For every leg-free stable graph $\Gamma$ and all $E$ and $q$ as in \cref{def:flh-outer}~(i),
+\[
+\mathrm{Cont}_\Gamma[E,q;A_*\widetilde\Omega]=\mathrm{Cont}_\Gamma\bigl[(A^{-1}\otimes A^{-1})E,\;A^{-1}q;\;\widetilde\Omega\bigr].
+\]
+\end{lem}
+
+\begin{proof}
+Since $A^{-1}(q+zA\tilde1)=A^{-1}q+z\tilde1$, insertion by insertion $\overline F^{A_*\widetilde\Omega}_h(q)=\overline F^{\widetilde\Omega}_h(A^{-1}q)$, and hence $\dd^n\overline F^{A_*\widetilde\Omega}_h(q)[w_1,\dots,w_n]=\dd^n\overline F^{\widetilde\Omega}_h(A^{-1}q)[A^{-1}w_1,\dots,A^{-1}w_n]$. Every term of $\mathrm{Cont}_\Gamma$ is a full contraction of the vertex tensors with the edge bivectors; writing the identity as $AA^{-1}$ on every half-edge turns the contraction with $E$ into the contraction with $(A^{-1}\otimes A^{-1})E$. The factor $|\Aut\Gamma|^{-1}$ is the same on both sides.
+\end{proof}
+
+\begin{lem}[TFT dilaton invariance]
+\label{lem:flh-dil}
+Let $\Omega$ be a CohFT with flat unit $1$ on $(\mathbb V,\eta)$ over $\cA$, let $\varkappa\in 1+u\bbQ\fps{u}$, let $E$ be as in \cref{def:flh-outer}~(i), and let $q\in\mathbb V\fps{z}$ with $q+z\varkappa^{-1}1\in z^2\mathbb V\fps{z}$. Then for every leg-free stable graph $\Gamma$
+\[
+\mathrm{Cont}_\Gamma[E,q;\varkappa.\Omega]=\mathrm{Cont}_\Gamma[E,q;\Omega].
+\]
+On the left the potentials are shifted by the unit $\varkappa^{-1}1$ of $\varkappa.\Omega$ and the contraction is a finite sum; on the right they are shifted by $1$, and $q+z1\in z(1-\varkappa^{-1})1+z^2\mathbb V\fps{z}$ with $1-\varkappa^{-1}\in u\bbQ\fps{u}$, so the vertex tensors are the $u$-adically convergent Taylor expansions of \cref{def:flh-outer}~(ii).
+\end{lem}
+
+\begin{proof}
+By multilinearity, $\langle(q+z\varkappa^{-1}1)^n\rangle^{\varkappa.\Omega}_h=\varkappa^{2h-2+n}\langle(q+z\varkappa^{-1}1)^n\rangle^{\Omega}_h=\varkappa^{2h-2}\langle(\varkappa q+z1)^n\rangle^{\Omega}_h$. Hence $\overline F^{\varkappa.\Omega}_h(q)=\varkappa^{2h-2}\,\overline F^{\Omega}_h(\varkappa q)$ and
+\[
+\dd^n\overline F^{\varkappa.\Omega}_h(q)=\varkappa^{2h-2+n}\,\bigl(\dd^n\overline F^{\Omega}_h\bigr)(\varkappa q),
+\]
+both sides being finite sums because $\varkappa q+z1\in z^2\mathbb V\fps{z}$. The dilaton identity of \cref{lem:set-dilaton}~(iii) at the point $\varkappa q$ reads $\dd^n\overline F^{\Omega}_h(q)=\varkappa^{2h-2+n}\,\dd^n\overline F^{\Omega}_h(\varkappa q)$ for $2h-2+n>0$, which holds at every vertex of a stable graph; it applies over both rings $\cA$ because $\varkappa(0)=1$, so that its two sides are, coefficient by coefficient, $u$-adically convergent series in $1-\varkappa^{-1}\in u\bbQ\fps{u}$ times correlators of $\Omega$. So the vertex tensors of the two sides agree, and the edge factors are the same.
+\end{proof}
+
+\begin{lem}[the $R$-action commutes with the TFT rescaling]
+\label{lem:flh-comm}
+Let $\Omega$ be a CohFT with flat unit $1$ on $(\mathbb V,\eta)$ over $\cA$, $\varkappa$ a unit of $\cA$, and $R(z)=1+O(z)$ an $\End(\mathbb V)$-valued series with $R(-z)^*R(z)=1$. For the unit-preserving action of \cite[Def.~2.13]{PPZ15},
+\[
+R.(\varkappa.\Omega)=\varkappa.(R.\Omega).
+\]
+\end{lem}
+
+\begin{proof}
+By \cite[Def.~2.13]{PPZ15}, $R.\Omega$ is the action of \cite[Def.~2.2]{PPZ15} on the translation \cite[Def.~2.5]{PPZ15} of $\Omega$ by $\ttr_R(z)=z1-zR^{-1}(z)1$, where $1$ is the unit of $\Omega$. The unit of $\varkappa.\Omega$ is $\varkappa^{-1}1$, so its translation is $\varkappa^{-1}\ttr_R$. In the graph sum for the genus-$g$, $n$-point class, a vertex of genus $g_v$ with $n_v$ half-edges and legs and $m$ translation points contributes $(\varkappa.\Omega)_{g_v,n_v+m}=\varkappa^{2g_v-2+n_v+m}\Omega_{g_v,n_v+m}$, its $m$ translation insertions contribute $\varkappa^{-m}$, and the legs and edges do not involve $\varkappa$. So every graph term is $\varkappa^{\sum_v(2g_v-2+n_v)}=\varkappa^{2g-2+n}$ times the corresponding term of $R.\Omega$, since $\sum_v(2g_v-2)+2E+n=2g-2+n$ for a connected stable graph of genus $g$ with $E$ edges and $n$ legs.
+\end{proof}
+
+\input{sections/s07_comparison_2}

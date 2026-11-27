@@ -1,0 +1,9 @@
+EQUAL    primitive roots coincide
+EQUAL    E_R: 21 tables x 25 entries x 4 coefficients
+EQUAL    T_R: leaves e = 2..7
+EQUAL    E_M
+EQUAL    E_out
+EQUAL    u-valuations of E_out
+EQUAL    xhat powers
+EQUAL    vertex vectors: 11 types (g_v, valence), 57 exponent patterns
+IND_CONV (g3, 2^89-1, nat): ALL TABLES EQUAL

@@ -1,0 +1,42 @@
+\subsection{Universality}
+\label{sec:mai-univ}
+
+The flat half of the proof of Theorem~A, \cref{cor:red-can} with \cref{thm:mod-MLK}, uses the formal quintic only through its cyclic system and the canonical gauge, and applies to every self-dual cyclic system with one simple pole whose product is that of a pulled-back model; the comparison (\cref{thm:flh-main}) and the normalisation (\cref{thm:gam-D}) are specific to the formal quintic. The systems are over $\bbQ$ (\cref{def:gau-onepole}), and for a non-zero series $y\in u\bbQ\fps{u}$ (a local letter), $\tilde A_y$ denotes the model pulled back by $y$, with coefficients $(y',-y'/y,y',-y',-y')$ in $\bbQ\lser{u}$ and product $-y'^5/y$ (\cref{prop:gau-equalprod}); it has the one-pole shape if and only if $y'(0)\neq0$.
+
+\begin{lem}[the pole order]
+\label{lem:mai-pole}
+Let $A=\sum_ab_aE_{a,a+1}$ with $b_a\in\bbQ\lser{u}$ non-zero, $\Bprod\coloneqq\prod_ab_a$, and let $y\in u\bbQ\fps{u}$ be non-zero of order $n\geq1$.
+\begin{enumerate}
+\item If the gauge equation $z\,\partial_uP=AP-P\tilde A_y$ has a solution whose $z^0$-coefficient $P_0$ is non-zero, then $\Bprod=-y'^5/y$.
+\item In that case $\ord_0\Bprod=4n-5\in\{-1,3,7,\dots\}$. If $\Bprod$ has a pole at $u=0$, then $n=1$, $\ord_0\Bprod=-1$ and $y'(0)^4=-\Res_{u=0}\Bprod$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) At $z^0$ the gauge equation reads $AP_0=P_0\tilde A_y$, hence $A^5P_0=P_0\tilde A_y^5$, with $A^5=\Bprod\cdot1$ and $\tilde A_y^5=-(y'^5/y)\cdot1$; so $(\Bprod+y'^5/y)P_0=0$ over the field $\bbQ\lser{u}$, and $P_0\neq0$ gives the claim (the necessity clause of \cref{prop:gau-equalprod}). (ii) $y'^5/y$ has order $5(n-1)-n=4n-5$; a pole forces $n=1$, and then $y=y'(0)u+O(u^2)$ and $y'^5/y=y'(0)^4u^{-1}+O(1)$, so $\Res_{u=0}\Bprod=-y'(0)^4$.
+\end{proof}
+
+\begin{cor}[universality, flat form]
+\label{cor:mai-univ}
+Let $v_A\in u\bbQ\fps{u}$ with $v_A'(0)\neq0$, and let $A$ be a self-dual one-pole system (\cref{def:gau-onepole}) with product $-v_A'^5/v_A$ and residue $r$; assume $r=-1/\lambda^2$ with $\lambda\in\bbQ^\times$ (a letter local to this corollary and its proof). Let $P^A_{\mathrm{can}}$ be the canonical gauge from $\tilde A_{v_A}$ to $A$, that is, the regular gauge with $(P^A_{\mathrm{can}})_{11}(0,z)=1$, which exists, is unique, is graded and has rational coefficients, as in \cref{def:gau-can} (\cref{thm:gau-U}, \cref{prop:gau-graded}); and let $P_A\coloneqq\lambda^{-1}P^A_{\mathrm{can}}$. Then for every $g\geq2$:
+\begin{enumerate}
+\item the term of every leg-free stable graph of genus $g$ with an edge in the flat sum of $P_A.\Omega^{\mathrm{mod}}_{v_A(u)}$ lies in $\bbQ\fps{u}$;
+\item the term of the vertex graph lies in $c_g(T_A/\lambda)^{2-2g}+\bbQ\fps{u}$, where $T_A\coloneqq\int_0^ub_0\,\dd u$.
+\end{enumerate}
+\end{cor}
+
+For the formal quintic in a conifold frame, $A$ is the system of \cref{prop:gau-quintic}, $v_A=v(u)$, $r=-1$ and $T_A=\tc$ (\cref{lem:gau-vanq}~(d)), and the corollary is \cref{cor:red-can} with \cref{thm:mod-MLK}. For a system $b=(b_0,\Bprod/(b_0^2b_3^2),b_0,b_3,b_3)$ with $\Bprod=-v_A'^5/v_A$ one has $r=-v_A'(0)^4/(b_0(0)b_3(0))^2$ by \cref{lem:mai-pole}, so $\lambda=\pm b_0(0)b_3(0)/v_A'(0)^2$; the vertex law is even in $\lambda$.
+
+\begin{proof}
+For the pair $(A,\tilde A_{v_A})$ the residue of $\tilde A_{v_A}$ is $\tilde r=-1$. By \cref{lem:gau-R1}, column $1$ of $P(0,z)$ is $P_{11}(0,z)e_1$ and $rP_{22}(0,z)=\tilde rP_{11}(0,z)$ for every regular gauge $P$. The proof of \cref{prop:gau-symp} uses the residues only in its last step, the evaluation of the entry $(2,1)$ at $u=0$ by \cref{lem:gau-R1}; with the general form of that lemma it gives $P(-z)^T\eta P(z)=(\tilde r/r)\,P_{11}(0,z)P_{11}(0,-z)\,\eta$. For $P_A$ one has $P_{11}(0,z)=\lambda^{-1}$ and $\tilde r/r=\lambda^2$, so $P_A$ is symplectic. By \cref{thm:gau-G}~(c), $P^A_{\mathrm{can}}\YC(v_A(u))=Y^{\mathrm C}_A$, since $\YC(v_A(u))$ is the vanishing solution of $\tilde A_{v_A}$ (\cref{lem:gau-vanmod}, the chain rule and \cref{lem:gau-uniq}, as in the proof of \cref{thm:gau-G}); so $P_A\YC(v_A(u))=\lambda^{-1}Y^{\mathrm C}_A$ has no positive power of $z$ (\cref{lem:gau-vanq}), which is (A), and $T_{P_A}=T_A/\lambda$ by \cref{lem:gau-vanq}~(d). $P_A$ is graded with coefficients in $\bbQ\fps{u}$ and invertible constant term (\cref{thm:gau-U}, \cref{prop:gau-graded}), so it is a dressing (\cref{def:tra-dressing}) with (Sp) and (A). \Cref{thm:red-main} with \cref{thm:mod-MLK} gives (i) and (ii).
+\end{proof}
+
+\begin{rmk}[non-gauge dressings]
+\label{rmk:mai-annih}
+\Cref{thm:red-main} does not use the gauge equation: with \cref{thm:mod-MLK} it gives, for every dressing $P$ with (Sp) and (A) (\cref{def:tra-dressing}) and every $g\geq2$, regular edge graphs in the flat sum of $P.\Omega^{\mathrm{mod}}_{v(u)}$ and the vertex graph in $c_gT_P^{2-2g}+\bbQ\fps{u}$. Only the flat form is claimed: a hatted statement would need an identity like \cref{lem:flh-inputs}~(ii), available only for the formal quintic.
+\end{rmk}
+
+\begin{rmk}[a non-canonical normalisation]
+\label{rmk:mai-stored}
+Let $P^\sharp\coloneqq\Pc\,\cn(z)$, $\cn\in1+z^5\bbQ\fps{z^5}$, be the regular gauge of the other normalisation of \cref{sec:sgn-norm}, and write $\cn(z)=1+m_5z^5+m_{10}z^{10}+\cdots$ ($P^\sharp$ is a local letter). By \cref{thm:gau-U}, $P^\sharp$ is a graded regular gauge. By \cref{prop:gau-symp}, $P^\sharp(-z)^T\eta P^\sharp(z)=\cn(z)\cn(-z)\eta$ with $\cn(z)\cn(-z)=1-(m_5^2-2m_{10})z^{10}+\cdots$: $P^\sharp$ is symplectic modulo $z^{10}$, and symplecticity constrains only the even part of $\log\cn$. By \cref{thm:gau-G}, $P^\sharp\YC=\cn(z)\YCQ$, whose part of positive degree in $z$ begins with $m_5(z^5\YCQ)_{+}=-m_5(z^5e_1+\tc z^4e_0+\cdots)$; by \cref{thm:gau-G}~(b), $P^\sharp$ satisfies (A) only if $\cn=1$. So the gauge equation does not imply (A), by the freedom $\cn(z^5)$ of \cref{thm:gau-U}; (G) fixes the odd part of $\log\cn$. The value of $m_5$ is known only by computation.
+\end{rmk}

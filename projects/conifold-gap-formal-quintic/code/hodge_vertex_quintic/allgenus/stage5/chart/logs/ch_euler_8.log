@@ -1,0 +1,51 @@
+ch_euler: (L3) exact over Q; a = 1 through z^8, a = -2/7 and 3/2 through z^6; log logs/ch_euler_8.log
+PASS a = 1, x^0 dx/x: normalised SP = z^(a/z+0) Gamma_St(a/z+0) normalised, z^0..z^8
+PASS a = 1, x^0 dx: normalised SP = z^(a/z+1) Gamma_St(a/z+1) normalised, z^0..z^8
+PASS a = 1, x^1 dx/x: normalised SP = z^(a/z+1) Gamma_St(a/z+1) normalised, z^0..z^8
+PASS a = 1, x^1 dx: normalised SP = z^(a/z+2) Gamma_St(a/z+2) normalised, z^0..z^8
+PASS a = 1, x^2 dx/x: normalised SP = z^(a/z+2) Gamma_St(a/z+2) normalised, z^0..z^8
+PASS a = 1, x^2 dx: normalised SP = z^(a/z+3) Gamma_St(a/z+3) normalised, z^0..z^8
+PASS a = 1, x^3 dx/x: normalised SP = z^(a/z+3) Gamma_St(a/z+3) normalised, z^0..z^8
+PASS a = 1, x^3 dx: normalised SP = z^(a/z+4) Gamma_St(a/z+4) normalised, z^0..z^8
+PASS a = 1, x^(-1) dx/x (negative m, used in step (e)), z^0..z^8
+PASS a = 1, x^(-1) dx (negative m, used in step (e)), z^0..z^8
+PASS a = 1, x^(-2) dx/x (negative m, used in step (e)), z^0..z^8
+PASS a = 1, x^(-2) dx (negative m, used in step (e)), z^0..z^8
+PASS a = 1, x^(-3) dx/x (negative m, used in step (e)), z^0..z^8
+PASS a = 1, x^(-3) dx (negative m, used in step (e)), z^0..z^8
+     a = 1 done in 0.1 s
+PASS a = -2/7, x^0 dx/x: normalised SP = z^(a/z+0) Gamma_St(a/z+0) normalised, z^0..z^6
+PASS a = -2/7, x^0 dx: normalised SP = z^(a/z+1) Gamma_St(a/z+1) normalised, z^0..z^6
+PASS a = -2/7, x^1 dx/x: normalised SP = z^(a/z+1) Gamma_St(a/z+1) normalised, z^0..z^6
+PASS a = -2/7, x^1 dx: normalised SP = z^(a/z+2) Gamma_St(a/z+2) normalised, z^0..z^6
+PASS a = -2/7, x^2 dx/x: normalised SP = z^(a/z+2) Gamma_St(a/z+2) normalised, z^0..z^6
+PASS a = -2/7, x^2 dx: normalised SP = z^(a/z+3) Gamma_St(a/z+3) normalised, z^0..z^6
+PASS a = -2/7, x^3 dx/x: normalised SP = z^(a/z+3) Gamma_St(a/z+3) normalised, z^0..z^6
+PASS a = -2/7, x^3 dx: normalised SP = z^(a/z+4) Gamma_St(a/z+4) normalised, z^0..z^6
+PASS a = -2/7, x^(-1) dx/x (negative m, used in step (e)), z^0..z^6
+PASS a = -2/7, x^(-1) dx (negative m, used in step (e)), z^0..z^6
+PASS a = -2/7, x^(-2) dx/x (negative m, used in step (e)), z^0..z^6
+PASS a = -2/7, x^(-2) dx (negative m, used in step (e)), z^0..z^6
+PASS a = -2/7, x^(-3) dx/x (negative m, used in step (e)), z^0..z^6
+PASS a = -2/7, x^(-3) dx (negative m, used in step (e)), z^0..z^6
+     a = -2/7 done in 0.0 s
+PASS a = 3/2, x^0 dx/x: normalised SP = z^(a/z+0) Gamma_St(a/z+0) normalised, z^0..z^6
+PASS a = 3/2, x^0 dx: normalised SP = z^(a/z+1) Gamma_St(a/z+1) normalised, z^0..z^6
+PASS a = 3/2, x^1 dx/x: normalised SP = z^(a/z+1) Gamma_St(a/z+1) normalised, z^0..z^6
+PASS a = 3/2, x^1 dx: normalised SP = z^(a/z+2) Gamma_St(a/z+2) normalised, z^0..z^6
+PASS a = 3/2, x^2 dx/x: normalised SP = z^(a/z+2) Gamma_St(a/z+2) normalised, z^0..z^6
+PASS a = 3/2, x^2 dx: normalised SP = z^(a/z+3) Gamma_St(a/z+3) normalised, z^0..z^6
+PASS a = 3/2, x^3 dx/x: normalised SP = z^(a/z+3) Gamma_St(a/z+3) normalised, z^0..z^6
+PASS a = 3/2, x^3 dx: normalised SP = z^(a/z+4) Gamma_St(a/z+4) normalised, z^0..z^6
+PASS a = 3/2, x^(-1) dx/x (negative m, used in step (e)), z^0..z^6
+PASS a = 3/2, x^(-1) dx (negative m, used in step (e)), z^0..z^6
+PASS a = 3/2, x^(-2) dx/x (negative m, used in step (e)), z^0..z^6
+PASS a = 3/2, x^(-2) dx (negative m, used in step (e)), z^0..z^6
+PASS a = 3/2, x^(-3) dx/x (negative m, used in step (e)), z^0..z^6
+PASS a = 3/2, x^(-3) dx (negative m, used in step (e)), z^0..z^6
+     a = 3/2 done in 0.0 s
+PASS control: b_k -> B_2k/(2k) fails (first at z^3: b_1 = B_2/2 agrees)   [3, 4, 5]
+PASS control: Pochhammer factor dropped (M = 2) fails at z^1   [1, 2, 3]
+PASS control: exp(-Sum b_k e^(2k-1)) (1/Gamma) fails at z^1   [1, 3, 5]
+first coefficients (a = 1, M = 0): ['1', '1/12', '1/288', '-139/51840', '-571/2488320', '163879/209018880']
+CH_EULER 8: ALL CHECKS PASSED   (0 s)

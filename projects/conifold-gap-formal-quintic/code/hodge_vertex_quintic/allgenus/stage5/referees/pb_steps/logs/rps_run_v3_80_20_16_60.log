@@ -1,0 +1,67 @@
+rps_run.py 80 20 16 60   (exact over Q; referee pb_steps)
+T1  relabelling: original-variable V versus the hatted residue H computed directly
+  V: support in u^>=1, z^beta with beta = 4 mod 5 and beta <= -1             PASS (840 terms through u^80)
+  V at u^1 is -1/z                                                           PASS 
+  H at hatted u^0: Sum_l (-1)^(5l+1) w^-(5l+1)/((4l+1)! 4^l l!)  (l < 4)     PASS 
+  H = s^-1 V under u^N w^j <-> u^(N+(1-4j)/5) z^j, hatted orders 0..20       PASS (476 coefficients, 375 non-zero; first mismatch None)
+  H has no w-power outside 4 mod 5 in the window                             PASS 
+  H has no positive w-power (V has no positive z-power)                      PASS 
+    V-terms covered by hatted orders <= 20: 375 of 840 (each matched exactly once: the map is injective)
+    hatted order u^0 collects original u-orders [1, 5, 9, 13, 17, 21, 25, 29, '...']
+    hatted order u^1 collects original u-orders [2, 6, 10, 14, 18, 22, 26, 30, '...']
+    hatted order u^2 collects original u-orders [3, 7, 11, 15, 19, 23, 27, 31, '...']
+    hatted order u^3 collects original u-orders [4, 8, 12, 16, 20, 24, 28, 32, '...']
+    (1.1 s)
+  control Lam/u -> 1 in the hatted phase (no regrouping factor)              PASS (fails as it must) (first mismatch (1, -96))
+  control hatted amplitude without (1-uX^5)^(-1/2)                           PASS (fails as it must) (first mismatch (1, -96))
+  control hatted amplitude with b_k -> -b_k                                  PASS (fails as it must) (first mismatch (1, -96))
+  control hatted amplitude with an extra u per Stirling term                 PASS (fails as it must) (first mismatch (1, -96))
+  control original G truncated to x^4/4                                      PASS (fails as it must) (first mismatch (1, -96))
+T2  CFU, reduction, and the hatted identity H = Sum_m pi_m Res_Y[Y^m e^(-f/w) dY]
+  CFU: V^4 = tau^-5 (V = tau^(-5/4), 1/tau = 2F1(1,4/5;9/5;u)) through u^17  PASS 
+  CFU: y_1 = (1 + T)/18, y_k polynomial                                      PASS 
+  inverse: x(T) y(T x(T)^5) = 1 through u^17                                 PASS 
+  grading: pi_m contains only w^j with j = m mod 5                           PASS 
+  degree bound deg_w [u^i] pi_m <= (5i - m)/4 (regularity of P^SP), i <= 17  PASS (18 coefficients in the top band)
+    beta(Y) has 1140 terms; max (w-degree - u-order) in beta: 0
+    w-degree of pi at u^i, i = 0..17: actual [0, 1, 2, 3, 5, 6, 7, 8, 10, 11, 12, 13, 15, 16, 17, 18, 20, 21]
+      bound floor((5i+1)/4) from regularity [0, 1, 2, 4, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, 17, 19, 20, 21];  a-priori bound of the reduction [0, 1, 2, 4, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, 17, 19, 20, 21]
+  weight: every beta monomial u^i Y^n w^j has n + 4j <= 5i (an original-variable object) PASS 
+  hence the reduction alone gives deg_w [u^i] pi <= floor((5i+1)/4) (a-priori = bound) PASS 
+  weight of pi: every u^i w^j in pi_m has m + 4j <= 5i                       PASS 
+  H = Sum_m pi_m R_m at hatted orders 0..17 (all w-powers in the window)     PASS (2011 coefficients; first mismatch None)
+    (11.8 s)
+  control pull-back without X'(Y)                                            PASS (fails as it must) (first mismatch (1, -96))
+  control reduction with V -> 1                                              PASS (fails as it must) (first mismatch (2, -96))
+  control no CFU (X = Y)                                                     PASS (fails as it must) (first mismatch (1, -96))
+T3  key lemma: Sum_m pi_m s^(-m) I^C_m(v(u), z) = V on admissible keys E' + (4b-1)/5 <= 16
+  residue side = V on all admissible keys                                    PASS (414 keys: 312 non-zero, 102 with b > 0, 74 with E' <= 0; first bad [])
+  control truncation: pi only through u^16 on the layer E' + (4b-1)/5 = 17   PASS (fails as it must) (20 of 22 keys wrong; e.g. [(2, 19), (6, 14)])
+  the same layer with pi through u^17                                        PASS (22 keys)
+  the bound is attained: pi at u^(E'+(4b-1)/5) contributes on some keys      PASS (336 keys)
+  control sign of pi_-1 flipped                                              PASS (fails as it must) (260 of 414 keys wrong)
+  control pi_2 and pi_3 exchanged                                            PASS (fails as it must) (293 of 414 keys wrong)
+  control pi from the reduction with V -> 1                                  PASS (fails as it must) (296 of 414 keys wrong)
+    (0.5 s)
+T4  (S2) and Prop. S (model rows, colour 0) through t^60
+  Prop. S: the pivot of F_0[n] in the closing relation at t^(n+1) is 4n (n = 1..60) PASS (pivot(1), pivot(60) = 4, 240)
+  Prop. S: closing relation satisfied through t^60                           PASS 
+  F_0 = 1 - 3/20 t + 9/800 t^2 + 11571/80000 t^3 - 2415609/6400000 t^4 (UR s.2) PASS 
+  F_b(0) = eps_b = (+,-,-,+,+)                                               PASS 
+  (S2): eps_b SP^norm[eta^(c_b) e^(-(1/eta+eta^4/4)/t) d eta] = F_b(t), all b PASS 
+  the SP rows satisfy the model system (T-relations) and its closing         PASS 
+  control all signs + in (S2)                                                PASS (fails as it must) 
+  control weights c_b -> c_b + 1 in (S2)                                     PASS (fails as it must) 
+  control system with T_k -> T_(k+1) not satisfied by the SP rows            PASS (fails as it must) 
+    (3.5 s)
+T5  s.2.6 without the gauge: Phi^SP = Sum_b eps_b pi_(c_b) tau^((1-c_b)/4) F_b(tau w), exact
+  Phi^SP: ph_0 = 1                                                           PASS 
+  ph^SP_n has no u-power above floor(4n/5) (within u^17)                     PASS (degrees [0, 0, 0, 2, 3, 4, 4, 5, 6, 7, 8, 8, 9, 10, 11, 12, 12, 13])
+  ph^SP_1 = -3/20 (= h_1) and ph^SP_2 = 9/800                                PASS 
+  Phi^SP = Sum_b eps_b pi_(c_b) tau^((1-c_b)/4) F_b(tau w), w^0..w^17, u^0..u^17 PASS (first mismatch (w, u) = None)
+  control without the signs eps_b                                            PASS (fails as it must) (first mismatch (w, u) = (3, 3))
+  control without the weights tau^((1-c_b)/4)                                PASS (fails as it must) (first mismatch (w, u) = (0, 1))
+  control F_b(w) in place of F_b(tau w)                                      PASS (fails as it must) (first mismatch (w, u) = (1, 1))
+    (2.4 s)
+total 20.0 s
+ALL CHECKS PASSED

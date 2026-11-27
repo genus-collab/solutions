@@ -1,0 +1,231 @@
+==============================================================================================================
+un_e1: p = 2^89-1
+PASS genus 2: E_R, T_R, xhat rebuilt from the row lists equal the tables of fq4_split.Split: (True, True, True)
+PASS genus 2 natural run: every outer graph with edges is O(u^2)
+PASS genus 2 natural run: vertex graph = (1/1200) t_c^-2 + 0 + ..: ['1/1200', '0']
+PASS genus 2: vertex graph [u^0], [u^1] = 1/1200, -7/6000 (notes)
+   (1 s)
+PASS genus 3: E_R, T_R, xhat rebuilt from the row lists equal the tables of fq4_split.Split: (True, True, True)
+PASS genus 3 natural run: every outer graph with edges is O(u^4)
+PASS genus 3 natural run: vertex graph = (1/25200) t_c^-4 + 0 + ..: ['1/25200', '0', '0', '0']
+PASS genus 3: all 42 outer graphs equal the stored table g3_nat_89_nat.json (A3) through u^3
+   (4 s)
+--------------------------------------------------------------------------------------------------------------
+first-order responses [eps^1] to rows -> (1 + eps X_flat(zhat)) rows; a response series is listed as [u^0, u^1, ..]
+   zhat H(x)H
+      flat entries (a, b, k): {(2, 1, 1): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/400', '-7/1000', '407/60000', '-151/60000'];  graph 5 (bridge g1-g2): ['1/7200', '-1/2700', '44309/136080000', '~-215265943/2326968000000']
+      genus 3, all one-edge graphs [u^0]: {2: '1/400', 5: '1/7200'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '1/24', 3: '0', 4: '1/288', 5: '0', 6: '0', 7: '0'}
+PASS zhat H(x)H: [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/400', '1/7200'] = MINUS the response on record: ['1/400', '1/7200']
+   zhat^2 (H(x)1 - 1(x)H)
+      flat entries (a, b, k): {(2, 0, 2): '-5', (3, 1, 2): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['-1/300', '7/1000', '-13/3000', '~57817523/96957000000'];  graph 5 (bridge g1-g2): ['-7/14400', '433/432000', '-324803/544320000', '~2666353/36936000000']
+      genus 3, all one-edge graphs [u^0]: {2: '-1/300', 5: '-7/14400'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '-5/288', 5: '0', 6: '0', 7: '0'}
+PASS zhat^2 (H(x)1 - 1(x)H): [eps^1 u^0] on genus-3 graphs (2, 5) = ['-1/300', '-7/14400'] = MINUS the response on record: ['-1/300', '-7/14400']
+   zhat^3 1(x)1
+      flat entries (a, b, k): {(3, 0, 3): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['-1/1200', '7/6000', '-287/864000', '~-936083/193914000000'];  graph 5 (bridge g1-g2): ['-1/2880', '7/14400', '-287/2073600', '~-936083/465393600000']
+      genus 3, all one-edge graphs [u^0]: {2: '-1/1200', 5: '-1/2880'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '5/48', 3: '0', 4: '-25/1152', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 1(x)1: [eps^1 u^0] on genus-3 graphs (2, 5) = ['-1/1200', '-1/2880'] = MINUS the response on record: ['-1/1200', '-1/2880']
+   Pi-type zhat (H^4(x)H^3 + H^3(x)H^4)
+      flat entries (a, b, k): {(0, 4, 1): '5', (4, 3, 1): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '-40973/1846800000'];  graph 5 (bridge g1-g2): ['0', '0', '0', '~9351119/1034208000000']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '1/240', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS Pi-type zhat (H^4(x)H^3 + H^3(x)H^4): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   Pi-type zhat (H^2(x)1 + 1(x)H^2)
+      flat entries (a, b, k): {(1, 0, 1): '-5', (3, 2, 1): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '0'];  graph 5 (bridge g1-g2): ['0', '0', '0', '0']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS Pi-type zhat (H^2(x)1 + 1(x)H^2): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   zhat^2 (H^4(x)H^2 - H^2(x)H^4)
+      flat entries (a, b, k): {(1, 4, 2): '5', (4, 2, 2): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '671417/6059812500'];  graph 5 (bridge g1-g2): ['0', '0', '0', '0']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^2 (H^4(x)H^2 - H^2(x)H^4): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   zhat^3 H^4(x)H
+      flat entries (a, b, k): {(2, 4, 3): '-5', (4, 1, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/1200', '-11/7200', '43997/68040000', '~845581/58174200000'];  graph 5 (bridge g1-g2): ['1/14400', '-263/1728000', '86657/1088640000', '~4887787/664848000000']
+      genus 3, all one-edge graphs [u^0]: {2: '1/1200', 5: '1/14400'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '5/24', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 H^4(x)H: [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/1200', '1/14400'] = MINUS the response on record: ['1/1200', '1/14400']
+   zhat^3 H^3(x)H^2
+      flat entries (a, b, k): {(0, 2, 3): '-5', (1, 3, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '-57223/45360000', '~-595728137/1163484000000'];  graph 5 (bridge g1-g2): ['0', '0', '-3937/48384000', '~-2406827/88646400000']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '25/1152', 2: '5/24', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 H^3(x)H^2: [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   Euler-dilaton zhat (H - zhat)(x)(H + zhat)
+      flat entries (a, b, k): {(2, 1, 1): '5', (2, 0, 2): '-5', (3, 1, 2): '5', (3, 0, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '-7/6000', '12019/4320000', '~-123815257/64638000000'];  graph 5 (bridge g1-g2): ['0', '7/48000', '-2293/17280000', '~-4733921/258552000000']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '-1/16', 3: '0', 4: '1/128', 5: '0', 6: '0', 7: '0'}
+PASS Euler-dilaton zhat (H - zhat)(x)(H + zhat): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   CONTROL zhat (H + zhat)(x)(H - zhat)
+      flat entries (a, b, k): {(2, 1, 1): '5', (2, 0, 2): '5', (3, 1, 2): '-5', (3, 0, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/150', '-91/6000', '49459/4320000', '~-602715863/193914000000'];  graph 5 (bridge g1-g2): ['7/7200', '-803/432000', '1154753/1088640000', '~-42062863/258552000000']
+      genus 3, all one-edge graphs [u^0]: {2: '1/150', 5: '7/7200'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '-1/16', 3: '0', 4: '49/1152', 5: '0', 6: '0', 7: '0'}
+PASS CONTROL zhat (H + zhat)(x)(H - zhat): [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/150', '7/7200'] = MINUS the response on record: ['1/150', '7/7200']
+   Euler-dilaton at genus 2 (record, M-dressing: vertex -7/128, loop on g1 1/16, bridge g1-g1 -1/128): ours {1: '0', 2: '-1/16', 3: '0', 4: '1/128', 5: '0', 6: '0', 7: '0'}
+PASS Euler-dilaton at genus 2: [eps^1 u^0] = -1/16 on graph 2 (loop on g1), 1/128 on graph 4 (bridge g1-g1) (minus the record), 0 elsewhere (vertex graph included): {2: '-1/16', 4: '1/128'}
+==============================================================================================================
+un_e1: p = 2^61-1
+PASS genus 2: E_R, T_R, xhat rebuilt from the row lists equal the tables of fq4_split.Split: (True, True, True)
+PASS genus 2 natural run: every outer graph with edges is O(u^2)
+PASS genus 2 natural run: vertex graph = (1/1200) t_c^-2 + 0 + ..: ['1/1200', '0']
+PASS genus 2: vertex graph [u^0], [u^1] = 1/1200, -7/6000 (notes)
+   (1 s)
+PASS genus 3: E_R, T_R, xhat rebuilt from the row lists equal the tables of fq4_split.Split: (True, True, True)
+PASS genus 3 natural run: every outer graph with edges is O(u^4)
+PASS genus 3 natural run: vertex graph = (1/25200) t_c^-4 + 0 + ..: ['1/25200', '0', '0', '0']
+PASS genus 3: all 42 outer graphs equal the stored table g3_nat_61_nat.json (A3) through u^3
+   (4 s)
+--------------------------------------------------------------------------------------------------------------
+first-order responses [eps^1] to rows -> (1 + eps X_flat(zhat)) rows; a response series is listed as [u^0, u^1, ..]
+   zhat H(x)H
+      flat entries (a, b, k): {(2, 1, 1): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/400', '-7/1000', '407/60000', '-151/60000'];  graph 5 (bridge g1-g2): ['1/7200', '-1/2700', '[370052235926502615 mod p]', '[2235923480870577400 mod p]']
+      genus 3, all one-edge graphs [u^0]: {2: '1/400', 5: '1/7200'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '1/24', 3: '0', 4: '1/288', 5: '0', 6: '0', 7: '0'}
+PASS zhat H(x)H: [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/400', '1/7200'] = MINUS the response on record: ['1/400', '1/7200']
+   zhat^2 (H(x)1 - 1(x)H)
+      flat entries (a, b, k): {(2, 0, 2): '-5', (3, 1, 2): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['-1/300', '7/1000', '-13/3000', '[597597963498862307 mod p]'];  graph 5 (bridge g1-g2): ['-7/14400', '433/432000', '[1712757129661077755 mod p]', '[871710571111621135 mod p]']
+      genus 3, all one-edge graphs [u^0]: {2: '-1/300', 5: '-7/14400'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '-5/288', 5: '0', 6: '0', 7: '0'}
+PASS zhat^2 (H(x)1 - 1(x)H): [eps^1 u^0] on genus-3 graphs (2, 5) = ['-1/300', '-7/14400'] = MINUS the response on record: ['-1/300', '-7/14400']
+   zhat^3 1(x)1
+      flat entries (a, b, k): {(3, 0, 3): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['-1/1200', '7/6000', '-287/864000', '[1987920902774517229 mod p]'];  graph 5 (bridge g1-g2): ['-1/2880', '7/14400', '-287/2073600', '[1020453960257190008 mod p]']
+      genus 3, all one-edge graphs [u^0]: {2: '-1/1200', 5: '-1/2880'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '5/48', 3: '0', 4: '-25/1152', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 1(x)1: [eps^1 u^0] on genus-3 graphs (2, 5) = ['-1/1200', '-1/2880'] = MINUS the response on record: ['-1/1200', '-1/2880']
+   Pi-type zhat (H^4(x)H^3 + H^3(x)H^4)
+      flat entries (a, b, k): {(0, 4, 1): '5', (4, 3, 1): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '[1197913564632678465 mod p]'];  graph 5 (bridge g1-g2): ['0', '0', '0', '[707359821876338790 mod p]']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '1/240', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS Pi-type zhat (H^4(x)H^3 + H^3(x)H^4): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   Pi-type zhat (H^2(x)1 + 1(x)H^2)
+      flat entries (a, b, k): {(1, 0, 1): '-5', (3, 2, 1): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '0'];  graph 5 (bridge g1-g2): ['0', '0', '0', '0']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS Pi-type zhat (H^2(x)1 + 1(x)H^2): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   zhat^2 (H^4(x)H^2 - H^2(x)H^4)
+      flat entries (a, b, k): {(1, 4, 2): '5', (4, 2, 2): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '[41110051555365816 mod p]'];  graph 5 (bridge g1-g2): ['0', '0', '0', '0']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^2 (H^4(x)H^2 - H^2(x)H^4): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   zhat^3 H^4(x)H
+      flat entries (a, b, k): {(2, 4, 3): '-5', (4, 1, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/1200', '-11/7200', '[537713270130356919 mod p]', '[499256533847548603 mod p]'];  graph 5 (bridge g1-g2): ['1/14400', '-263/1728000', '[671226428683428647 mod p]', '[195672475036984092 mod p]']
+      genus 3, all one-edge graphs [u^0]: {2: '1/1200', 5: '1/14400'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '5/24', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 H^4(x)H: [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/1200', '1/14400'] = MINUS the response on record: ['1/1200', '1/14400']
+   zhat^3 H^3(x)H^2
+      flat entries (a, b, k): {(0, 2, 3): '-5', (1, 3, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '[1955029176571589187 mod p]', '[1365257139733489957 mod p]'];  graph 5 (bridge g1-g2): ['0', '0', '[337807478221112497 mod p]', '[2234599650823577142 mod p]']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '25/1152', 2: '5/24', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 H^3(x)H^2: [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   Euler-dilaton zhat (H - zhat)(x)(H + zhat)
+      flat entries (a, b, k): {(2, 1, 1): '5', (2, 0, 2): '-5', (3, 1, 2): '5', (3, 0, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '-7/6000', '12019/4320000', '[1538136113142556624 mod p]'];  graph 5 (bridge g1-g2): ['0', '7/48000', '[2081989821655389739 mod p]', '[2087180091725008527 mod p]']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '-1/16', 3: '0', 4: '1/128', 5: '0', 6: '0', 7: '0'}
+PASS Euler-dilaton zhat (H - zhat)(x)(H + zhat): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   CONTROL zhat (H + zhat)(x)(H - zhat)
+      flat entries (a, b, k): {(2, 1, 1): '5', (2, 0, 2): '5', (3, 1, 2): '-5', (3, 0, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/150', '-91/6000', '49459/4320000', '[342940186144832010 mod p]'];  graph 5 (bridge g1-g2): ['7/7200', '-803/432000', '[962318571546928180 mod p]', '[343758949501766257 mod p]']
+      genus 3, all one-edge graphs [u^0]: {2: '1/150', 5: '7/7200'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '-1/16', 3: '0', 4: '49/1152', 5: '0', 6: '0', 7: '0'}
+PASS CONTROL zhat (H + zhat)(x)(H - zhat): [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/150', '7/7200'] = MINUS the response on record: ['1/150', '7/7200']
+   Euler-dilaton at genus 2 (record, M-dressing: vertex -7/128, loop on g1 1/16, bridge g1-g1 -1/128): ours {1: '0', 2: '-1/16', 3: '0', 4: '1/128', 5: '0', 6: '0', 7: '0'}
+PASS Euler-dilaton at genus 2: [eps^1 u^0] = -1/16 on graph 2 (loop on g1), 1/128 on graph 4 (bridge g1-g1) (minus the record), 0 elsewhere (vertex graph included): {2: '-1/16', 4: '1/128'}
+UN_E1 ALL CHECKS PASSED
+### RE-RUN by the second attempt, 2026-11-13T19:05:23+00:00
+==============================================================================================================
+un_e1: p = 2^89-1
+PASS genus 2: E_R, T_R, xhat rebuilt from the row lists equal the tables of fq4_split.Split: (True, True, True)
+PASS genus 2 natural run: every outer graph with edges is O(u^2)
+PASS genus 2 natural run: vertex graph = (1/1200) t_c^-2 + 0 + ..: ['1/1200', '0']
+PASS genus 2: vertex graph [u^0], [u^1] = 1/1200, -7/6000 (notes)
+   (1 s)
+PASS genus 3: E_R, T_R, xhat rebuilt from the row lists equal the tables of fq4_split.Split: (True, True, True)
+PASS genus 3 natural run: every outer graph with edges is O(u^4)
+PASS genus 3 natural run: vertex graph = (1/25200) t_c^-4 + 0 + ..: ['1/25200', '0', '0', '0']
+PASS genus 3: all 42 outer graphs equal the stored table g3_nat_89_nat.json (A3) through u^3
+   (6 s)
+--------------------------------------------------------------------------------------------------------------
+first-order responses [eps^1] to rows -> (1 + eps X_flat(zhat)) rows; a response series is listed as [u^0, u^1, ..]
+   zhat H(x)H
+      flat entries (a, b, k): {(2, 1, 1): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/400', '-7/1000', '407/60000', '-151/60000'];  graph 5 (bridge g1-g2): ['1/7200', '-1/2700', '44309/136080000', '~-215265943/2326968000000']
+      genus 3, all one-edge graphs [u^0]: {2: '1/400', 5: '1/7200'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '1/24', 3: '0', 4: '1/288', 5: '0', 6: '0', 7: '0'}
+PASS zhat H(x)H: [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/400', '1/7200'] = MINUS the response on record: ['1/400', '1/7200']
+   zhat^2 (H(x)1 - 1(x)H)
+      flat entries (a, b, k): {(2, 0, 2): '-5', (3, 1, 2): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['-1/300', '7/1000', '-13/3000', '~57817523/96957000000'];  graph 5 (bridge g1-g2): ['-7/14400', '433/432000', '-324803/544320000', '~2666353/36936000000']
+      genus 3, all one-edge graphs [u^0]: {2: '-1/300', 5: '-7/14400'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '-5/288', 5: '0', 6: '0', 7: '0'}
+PASS zhat^2 (H(x)1 - 1(x)H): [eps^1 u^0] on genus-3 graphs (2, 5) = ['-1/300', '-7/14400'] = MINUS the response on record: ['-1/300', '-7/14400']
+   zhat^3 1(x)1
+      flat entries (a, b, k): {(3, 0, 3): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['-1/1200', '7/6000', '-287/864000', '~-936083/193914000000'];  graph 5 (bridge g1-g2): ['-1/2880', '7/14400', '-287/2073600', '~-936083/465393600000']
+      genus 3, all one-edge graphs [u^0]: {2: '-1/1200', 5: '-1/2880'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '5/48', 3: '0', 4: '-25/1152', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 1(x)1: [eps^1 u^0] on genus-3 graphs (2, 5) = ['-1/1200', '-1/2880'] = MINUS the response on record: ['-1/1200', '-1/2880']
+   Pi-type zhat (H^4(x)H^3 + H^3(x)H^4)
+      flat entries (a, b, k): {(0, 4, 1): '5', (4, 3, 1): '5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '-40973/1846800000'];  graph 5 (bridge g1-g2): ['0', '0', '0', '~9351119/1034208000000']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '1/240', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS Pi-type zhat (H^4(x)H^3 + H^3(x)H^4): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   Pi-type zhat (H^2(x)1 + 1(x)H^2)
+      flat entries (a, b, k): {(1, 0, 1): '-5', (3, 2, 1): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '0'];  graph 5 (bridge g1-g2): ['0', '0', '0', '0']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS Pi-type zhat (H^2(x)1 + 1(x)H^2): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   zhat^2 (H^4(x)H^2 - H^2(x)H^4)
+      flat entries (a, b, k): {(1, 4, 2): '5', (4, 2, 2): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '0', '671417/6059812500'];  graph 5 (bridge g1-g2): ['0', '0', '0', '0']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '0', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^2 (H^4(x)H^2 - H^2(x)H^4): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   zhat^3 H^4(x)H
+      flat entries (a, b, k): {(2, 4, 3): '-5', (4, 1, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/1200', '-11/7200', '43997/68040000', '~845581/58174200000'];  graph 5 (bridge g1-g2): ['1/14400', '-263/1728000', '86657/1088640000', '~4887787/664848000000']
+      genus 3, all one-edge graphs [u^0]: {2: '1/1200', 5: '1/14400'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '5/24', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 H^4(x)H: [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/1200', '1/14400'] = MINUS the response on record: ['1/1200', '1/14400']
+   zhat^3 H^3(x)H^2
+      flat entries (a, b, k): {(0, 2, 3): '-5', (1, 3, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '0', '-57223/45360000', '~-595728137/1163484000000'];  graph 5 (bridge g1-g2): ['0', '0', '-3937/48384000', '~-2406827/88646400000']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '25/1152', 2: '5/24', 3: '0', 4: '0', 5: '0', 6: '0', 7: '0'}
+PASS zhat^3 H^3(x)H^2: [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   Euler-dilaton zhat (H - zhat)(x)(H + zhat)
+      flat entries (a, b, k): {(2, 1, 1): '5', (2, 0, 2): '-5', (3, 1, 2): '5', (3, 0, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['0', '-7/6000', '12019/4320000', '~-123815257/64638000000'];  graph 5 (bridge g1-g2): ['0', '7/48000', '-2293/17280000', '~-4733921/258552000000']
+      genus 3, all one-edge graphs [u^0]: {2: '0', 5: '0'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '-1/16', 3: '0', 4: '1/128', 5: '0', 6: '0', 7: '0'}
+PASS Euler-dilaton zhat (H - zhat)(x)(H + zhat): [eps^1 u^0] on genus-3 graphs (2, 5) = ['0', '0'] = MINUS the response on record: ['0', '0']
+   CONTROL zhat (H + zhat)(x)(H - zhat)
+      flat entries (a, b, k): {(2, 1, 1): '5', (2, 0, 2): '5', (3, 1, 2): '-5', (3, 0, 3): '-5'}   Z/5-graded: True
+      genus 3: graph 2 (loop on g=2): ['1/150', '-91/6000', '49459/4320000', '~-602715863/193914000000'];  graph 5 (bridge g1-g2): ['7/7200', '-803/432000', '1154753/1088640000', '~-42062863/258552000000']
+      genus 3, all one-edge graphs [u^0]: {2: '1/150', 5: '7/7200'}
+      genus 2, graphs 1..7 [u^0]: {1: '0', 2: '-1/16', 3: '0', 4: '49/1152', 5: '0', 6: '0', 7: '0'}
+PASS CONTROL zhat (H + zhat)(x)(H - zhat): [eps^1 u^0] on genus-3 graphs (2, 5) = ['1/150', '7/7200'] = MINUS the response on record: ['1/150', '7/7200']
+   Euler-dilaton at genus 2 (record, M-dressing: vertex -7/128, loop on g1 1/16, bridge g1-g1 -1/128): ours {1: '0', 2: '-1/16', 3: '0', 4: '1/128', 5: '0', 6: '0', 7: '0'}
+PASS Euler-dilaton at genus 2: [eps^1 u^0] = -1/16 on graph 2 (loop on g1), 1/128 on graph 4 (bridge g1-g1) (minus the record), 0 elsewhere (vertex graph included): {2: '-1/16', 4: '1/128'}
+UN_E1 ALL CHECKS PASSED

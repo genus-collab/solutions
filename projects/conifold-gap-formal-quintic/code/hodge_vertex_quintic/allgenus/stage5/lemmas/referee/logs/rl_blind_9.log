@@ -1,0 +1,6 @@
+rl_blind: toy chart, amplitude 1/x_1 versus 1/(X_0 x_1) (no Jacobian), through z^9; log logs/rl_blind_9.log
+L = 2: the two normalised chart series AGREE through z^9 (blind control)
+L = 3: the two normalised chart series differ first at z^1
+L = 7/4: the two normalised chart series differ first at z^1
+L = -3/2: the two normalised chart series differ first at z^1
+RL_BLIND 9: done (an observation, not a test of the lemmas)

@@ -1,0 +1,13 @@
+====================================================================================================
+genus4_split regression
+PASS genus 3, 2^89-1, variant id: all 42 outer graphs equal the stored table through u^5 (1 s)
+PASS genus 3, 2^89-1, variant M0: all 42 outer graphs equal the stored table through u^5 (5 s)
+PASS genus 3, 2^89-1, variant nat: all 42 outer graphs equal the stored table through u^3 (7 s)
+PASS genus 2, 2^89-1, variant nat: outer graphs equal the values of the notes
+PASS genus 2, 2^89-1, variant M0: outer graphs equal the values of the notes
+PASS genus 3, 2^61-1, variant id: all 42 outer graphs equal the stored table through u^5 (2 s)
+PASS genus 3, 2^61-1, variant M0: all 42 outer graphs equal the stored table through u^5 (6 s)
+PASS genus 3, 2^61-1, variant nat: all 42 outer graphs equal the stored table through u^3 (7 s)
+PASS genus 2, 2^61-1, variant nat: outer graphs equal the values of the notes
+PASS genus 2, 2^61-1, variant M0: outer graphs equal the values of the notes
+GENUS4_SPLIT REGRESSION ALL CHECKS PASSED

@@ -1,0 +1,28 @@
+====================================================================================================
+ind_post g4_89_nat_t5
+PASS (1) piecewise: 7146 (inner graph, outer graph) pieces compared with parts/g4_89_nat_t5_run.json, 7146 non-zero; mismatches: []
+(2) by number of outer edges E: [outer graphs, non-zero pieces through u^5, outer graphs with a non-zero sum, outer graphs with at least one non-zero piece]
+      E = 0: [1, 379, 1, 1]
+      E = 1: [3, 772, 3, 3]
+      E = 2: [7, 1363, 0, 7]
+      E = 3: [21, 2197, 0, 18]
+      E = 4: [43, 1839, 0, 24]
+      E = 5: [75, 596, 0, 16]
+      E = 6: [89, 0, 0, 0]
+      E = 7: [81, 0, 0, 0]
+      E = 8: [42, 0, 0, 0]
+      E = 9: [17, 0, 0, 0]
+      outer graph  0 (E=0, gv=[4], ed=[]): 379 non-zero pieces, sum = ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '[524864768289145751991647940 mod p]', '[7126827391122905041466534 mod p]']
+      outer graph  1 (E=1, gv=[1, 3], ed=[[0, 1]]): 268 non-zero pieces, sum = ['0', '0', '0', '0', '0', '[50202829232941990276411006 mod p]']
+      outer graph  2 (E=1, gv=[2, 2], ed=[[0, 1]]): 136 non-zero pieces, sum = ['0', '0', '0', '0', '0', '[68041054054496400697121296 mod p]']
+      outer graph  3 (E=1, gv=[3], ed=[[0, 0]]): 368 non-zero pieces, sum = ['0', '0', '0', '0', '0', '[5015395053609341287294173 mod p]']
+      outer graph  4 (E=2, gv=[0, 3], ed=[[0, 0], [0, 1]]): 166 non-zero pieces, sum = ['0', '0', '0', '0', '0', '0']
+      outer graph  5 (E=2, gv=[1, 1, 2], ed=[[0, 1], [1, 2]]): 108 non-zero pieces, sum = ['0', '0', '0', '0', '0', '0']
+      outer graph  6 (E=2, gv=[1, 1, 2], ed=[[0, 2], [1, 2]]): 140 non-zero pieces, sum = ['0', '0', '0', '0', '0', '0']
+      outer graph  7 (E=2, gv=[1, 2], ed=[[0, 0], [0, 1]]): 130 non-zero pieces, sum = ['0', '0', '0', '0', '0', '0']
+      outer graph  8 (E=2, gv=[1, 2], ed=[[0, 1], [0, 1]]): 230 non-zero pieces, sum = ['0', '0', '0', '0', '0', '0']
+      outer graph  9 (E=2, gv=[1, 2], ed=[[1, 1], [0, 1]]): 257 non-zero pieces, sum = ['0', '0', '0', '0', '0', '0']
+      outer graph 10 (E=2, gv=[2], ed=[[0, 0], [0, 0]]): 332 non-zero pieces, sum = ['0', '0', '0', '0', '0', '0']
+(3) vertex graph in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + ([495710741301642405188735636 mod p]) t_c^-1
+(3) total in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+(4) 379 complete outer graphs listed in out/g4_89_nat_t5_verified.txt

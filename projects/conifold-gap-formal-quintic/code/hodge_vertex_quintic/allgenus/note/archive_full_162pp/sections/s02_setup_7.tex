@@ -1,0 +1,74 @@
+% Section 2, part 7 of 8: the model cohomological field theory; its homogeneity; the dilaton lemma.
+
+\begin{defn}[The model cohomological field theory]
+\label{def:set-modcohft}
+Let $\varsigma$ be a formal fifth root of $v$, as in \cref{prop:set-modrows}. The \emph{model TFT} $\TFT^{\mathrm m}_v$ is the TFT on the colour space, with the orthonormal basis $\tilde e_i$ ($i\in\bbZ/5$), \emph{defined} by $\hat\Delta_i^{1/2}\coloneqq\zeta^{4i}\varsigma$:
+\[
+\TFT^{\mathrm m}_{v;h,n}(\tilde e_i,\dots,\tilde e_i)\coloneqq(\zeta^{4i}\varsigma)^{2h-2+n},\qquad\TFT^{\mathrm m}_{v;h,n}=0\text{ on mixed colours},
+\]
+with the unit $\sum_i\hat\Delta_i^{-1/2}\tilde e_i=\varsigma^{-1}\sum_i\zeta^i\tilde e_i$. Let $\Psi^{\mathrm m}_v$ be the map from the colour space to $\bbH$ with the lowered entries $\eta(H^b,\Psi^{\mathrm m}_v\tilde e_i)\coloneqq\varsigma^{\nu_b-1}\varepsilon_b\zeta^{i(b+1)}=\varsigma^{\nu_b-1}(\Psi_0)_{bi}$: the value at $z=0$ of the colour columns of \cref{def:set-M0} with the exponentials stripped (the model columns $\Qr^{\mathrm m}$ of \cref{thm:gau-R0} at $z=0$). It is an isometry: on the pairs $a+b\equiv3$ the powers of $\varsigma$ cancel because $\nu_a+\nu_b=2$, so $(\Psi^{\mathrm m}_v)^T\eta^{-1}\Psi^{\mathrm m}_v=\Psi_0^T\eta^{-1}\Psi_0=1$ (\cref{def:set-M0}). The \emph{model cohomological field theory} on $(\bbH,\eta)$ is
+\[
+\Omega^{\mathrm{mod}}_v\coloneqq(\Psi^{\mathrm m}_v)_*\bigl(\Mo(z/\varsigma^4).\TFT^{\mathrm m}_v\bigr),\qquad(A_*\Omega)_{h,n}\coloneqq\Omega_{h,n}\circ(A^{-1})^{\otimes n},
+\]
+where the action is the unit-preserving action of \cite[Def.~2.13]{PPZ15} (with \cite[Def.~2.5]{PPZ15}), and $\Mo(z/\varsigma^4)=1+O(z)$ is symplectic by \cref{lem:set-M0sympl}. Its ancestor correlators are
+\[
+\langle\psi^{k_1}H^{a_1}\cdots\psi^{k_n}H^{a_n}\rangle_h(v)\coloneqq\int_{\overline{\mathcal M}_{h,n}}\Omega^{\mathrm{mod}}_{v;h,n}(H^{a_1},\dots,H^{a_n})\prod_j\psi_j^{k_j}\qquad(2h-2+n>0),
+\]
+and its dilaton-shifted potentials $\overline F_h(q)$, with the base point $q=-z1$, are those of \cref{def:set-graphsum}. The \emph{free energies} are $\Fm_h\coloneqq\langle\ \rangle_h(v)$ ($h\geq2$); that $\Fm_h=c_hv^{2-2h}$ is \cref{thm:mod-gap}. The identification of $\Omega^{\mathrm{mod}}_v$ with the theory of a Hurwitz Frobenius manifold is not used (\cref{sec:sgn}).
+\end{defn}
+
+\begin{lem}[Homogeneity of the model theory]
+\label{lem:set-modhom}
+\begin{itemize}
+\item[(a)] For every cohomological degree $D$,
+\[
+\Omega^{\mathrm{mod}}_{v;h,n}(H^{b_1},\dots,H^{b_n})_{[D]}=\varsigma^{\,2h-2+\sum_j\nu_{b_j}-4D}\,\Omega^{\mathrm{mod}}_{1;h,n}(H^{b_1},\dots,H^{b_n})_{[D]},
+\]
+where ${}_{[D]}$ is the part of degree $D$ and $\Omega^{\mathrm{mod}}_1$ is obtained by putting $\varsigma=1$.
+\item[(b)] Every ancestor correlator is $\langle\prod_j\psi^{k_j}H^{b_j}\rangle_h(v)=C\,v^e$ with $C\coloneqq\langle\prod_j\psi^{k_j}H^{b_j}\rangle_h(1)$ and
+\[
+e\coloneqq2-2h+\sum_j\wt(k_j,b_j),\qquad\wt(k,b)\coloneqq\frac{4k+\nu_b-4}5,\qquad v^e\coloneqq\varsigma^{5e}.
+\]
+\item[(c)] $C=0$ unless $e\in\bbZ$, and $C\in\bbQ$. A correlator is \emph{regular} if $e\geq0$; then it lies in $\bbQ[v]$.
+\end{itemize}
+\end{lem}
+
+\begin{proof}
+(a) First for $\Omega'\coloneqq\Mo(z/\varsigma^4).\TFT^{\mathrm m}_v$ in the basis $\tilde e_i$, graph by graph in \cite[Def.~2.2]{PPZ15} with the translation of \cite[Def.~2.13]{PPZ15}, $\ttr(z)=z1'-z\Mo(z/\varsigma^4)^{-1}1'$, where $1'=\varsigma^{-1}\sum_i\zeta^i\tilde e_i$ is the unit of $\TFT^{\mathrm m}_v$. Every ingredient is free of $\varsigma$ except the following. A leg monomial $\psi^k$ of $\Mo^{-1}(\psi/\varsigma^4)$ carries $\varsigma^{-4k}$. An edge $\bigl(1-\Mo^{-1}(\psi'/\varsigma^4)\Mo^{-1}(\psi''/\varsigma^4)^T\bigr)/(\psi'+\psi'')$ is $\varsigma^{-4}$ times a series in $\psi'/\varsigma^4$, $\psi''/\varsigma^4$, so its monomial $\psi'^a\psi''^b$, of degree $a+b+1$ after the push-forward along the gluing map, carries $\varsigma^{-4(a+b+1)}$. The coefficient of $z^m$ in $\ttr(z)$ is proportional to $\varsigma^{-1}\varsigma^{-4(m-1)}$; a translation point with $\psi^m$ contributes the degree $m-1$ after the push-forward along the forgetful map, and it raises the valence of its vertex by one. A vertex of genus $g_v$ with $n_v$ half-edges and legs and $m_v$ translation points carries $\varsigma^{2g_v-2+n_v+m_v}$, from $\hat\Delta_i^{1/2}=\zeta^{4i}\varsigma$. Since $\sum_v(2g_v-2+n_v)=2h-2+n$ for a stable graph of genus $h$ with $n$ legs, and each translation point contributes $1+(-1-4(m-1))=-4(m-1)$ to the exponent of $\varsigma$ and $m-1$ to the degree, every term of degree $D$ carries $\varsigma^{2h-2+n-4D}$. Finally $(\Psi^{\mathrm m}_v)^{-1}H^b=\sum_i\eta(H^b,\Psi^{\mathrm m}_v\tilde e_i)\tilde e_i=\varsigma^{\nu_b-1}\sum_i\varepsilon_b\zeta^{i(b+1)}\tilde e_i$, as $\Psi^{\mathrm m}_v$ is an isometry, and the $n$ insertions contribute $\varsigma^{\sum_j(\nu_{b_j}-1)}$. This gives (a).
+
+(b) Integrating against $\prod_j\psi_j^{k_j}$ selects the degree $D=3h-3+n-\sum_jk_j$, and the exponent of $\varsigma$ becomes $2h-2+\sum_j\nu_{b_j}-4(3h-3+n-\sum_jk_j)=5\bigl(2-2h+\sum_j(4k_j+\nu_{b_j}-4)/5\bigr)=5e$.
+
+(c) Replace $\varsigma$ by $\zeta^{-1}\varsigma$. By step~(1) of the proof of \cref{lem:set-M0sympl}, this replaces, for every $i$, the colour-$i$ column of \cref{def:set-M0} by the colour-$(i+1)$ column; so it replaces $\Psi^{\mathrm m}_v$ by $\Psi^{\mathrm m}_v$ composed with the cyclic permutation $\tilde e_i\mapsto\tilde e_{i+1}$ of the colour space and $\Mo(t)$ by its conjugate by that permutation, and it replaces $\hat\Delta_i^{1/2}=\zeta^{4i}\varsigma$ by $\zeta^{4i-1}\varsigma=\hat\Delta_{i+1}^{1/2}$. By the naturality $A_*(R.\Omega)=(ARA^{-1}).(A_*\Omega)$ of \cref{def:set-graphsum}, applied to the permutation, an isometry of the colour space, $\Omega^{\mathrm{mod}}_v$ in the flat basis does not depend on the choice of the fifth root. By (b), $(\zeta^{-5e}-1)C=0$, so $C=0$ unless $e\in\bbZ$. In the same way an automorphism $\zeta\mapsto\zeta^k$ of $\bbQ(\zeta)$ ($k\in(\bbZ/5)^\times$) fixes $\varsigma$ and the series $\Fs_b$, which lie in $\bbQ\fps t$ because the colour-$0$ T-system has rational coefficients; it maps the colour-$i$ column to the colour-$ki$ column and $\hat\Delta_i^{1/2}$ to $\hat\Delta_{ki}^{1/2}$. By the same naturality, applied to the permutation $\tilde e_i\mapsto\tilde e_{ki}$, $\Omega^{\mathrm{mod}}_v$ in the flat basis is invariant under the Galois group of $\bbQ(\zeta)$; hence its correlators have rational coefficients, and $C\in\bbQ$. If $e\geq0$, $Cv^e\in\bbQ[v]$.
+\end{proof}
+
+\begin{lem}[The dilaton equation and the homogeneity of the potentials]
+\label{lem:set-dilaton}
+\begin{enumerate}
+\item Let $\Omega$ be a cohomological field theory with flat unit $1$ \cite[Def.~0.3~(i)--(iii)]{PPZ15}, with correlators as in \cref{def:set-graphsum}. For $2h-2+n>0$,
+\[
+\langle\psi1\cdot\psi^{k_1}a_1\cdots\psi^{k_n}a_n\rangle_h=(2h-2+n)\,\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\rangle_h .
+\]
+\item $\Omega^{\mathrm{mod}}_v$ has the flat unit $H^0=1$.
+\item Let $\mathsf R$ be a complete local $\bbQ$-algebra with maximal ideal $\mathfrak m$ (for instance $\bbQ\fps u$) and $\varkappa\in1+\mathfrak m$, or let $\mathsf R=\bbQ(\zeta)\lser s$ with the $s$-adic topology and $\varkappa\in1+u\bbQ\fps u$ ($u=s^5$); let $\Omega$ be a cohomological field theory with flat unit $1$ on a free $\mathsf R$-module $V$ of finite rank. Regard $\overline F_h(q)=\sum_n\frac1{n!}\langle(q+z1)^n\rangle_h$ as a formal function of $y\coloneqq q+z1\in V\fps z$, $y$ being a formal variable. Then, for $2h-2+n>0$,
+\[
+\dd^n\overline F_h(q/\varkappa)=\varkappa^{2h-2+n}\,\dd^n\overline F_h(q),
+\]
+and, for $n=0$ and $h\neq1$, $\overline F_h(\varkappa q)=\varkappa^{2-2h}\,\overline F_h(q)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) Let $\pi\colon\overline{\mathcal M}_{h,n+1}\to\overline{\mathcal M}_{h,n}$ forget the last point; by the symmetry of the classes we may put the insertion $\psi1$ there. By \cite[Def.~0.3~(iii)]{PPZ15}, $\Omega_{h,n+1}(a_1,\dots,a_n,1)=\pi^*\Omega_{h,n}(a_1,\dots,a_n)$. By \cite[(1.7)]{AC96}, $\pi_*\bigl(\psi_1^{k_1}\cdots\psi_n^{k_n}\psi_{n+1}^{a+1}\bigr)=\psi_1^{k_1}\cdots\psi_n^{k_n}\kappa_a$, the classes $\psi_j$ on the left being those of $\overline{\mathcal M}_{h,n+1}$, and $\kappa_0=2h-2+n$ \cite[p.~5]{AC96}. With $a=0$ and the projection formula, $\int\pi^*\Omega\cdot\psi_{n+1}\prod_j\psi_j^{k_j}=\int\Omega\cdot\pi_*\bigl(\psi_{n+1}\prod_j\psi_j^{k_j}\bigr)=(2h-2+n)\int\Omega\prod_j\psi_j^{k_j}$.
+
+(ii) By \cite[Prop.~2.12]{PPZ15} with \cite[Def.~2.13]{PPZ15}, $\Mo(z/\varsigma^4).\TFT^{\mathrm m}_v$ is a cohomological field theory with the unit $\varsigma^{-1}\sum_i\zeta^i\tilde e_i$ of $\TFT^{\mathrm m}_v$, and the push-forward by an isometry preserves the axioms. The lowered components of the image of this unit under $\Psi^{\mathrm m}_v$ are $\sum_i\zeta^i\varsigma^{-1}\varsigma^{\nu_b-1}\varepsilon_b\zeta^{i(b+1)}=\varepsilon_b\varsigma^{\nu_b-2}\sum_i\zeta^{i(b+2)}=5\,\delta_{b3}$, since $\varepsilon_3=1$ and $\nu_3=2$; these are the lowered components $\eta(H^b,1)$ of $H^0=1$.
+
+(iii) Write $q/\varkappa+z1=y/\varkappa+\epsilon z1$ with $\epsilon\coloneqq1-\varkappa^{-1}$, which lies in $\mathfrak m$, respectively in $u\bbQ\fps u$, so that $\epsilon^b\to0$ in $\mathsf R$; and $x=(x_1,\dots,x_n)$. By multilinearity, $\frac1{m!}\langle x\,(y/\varkappa+\epsilon z1)^m\rangle_h=\sum_{a+b=m}\frac{\varkappa^{-a}\epsilon^b}{a!\,b!}\langle x\,y^a(z1)^b\rangle_h$. Applying (i) $b$ times, which is allowed because $2h-2+n+a>0$ at every step, $\langle x\,y^a(z1)^b\rangle_h=(N)_b\langle x\,y^a\rangle_h$ with $N\coloneqq2h-2+n+a$ and $(N)_b\coloneqq N(N+1)\cdots(N+b-1)$. Hence
+\[
+\dd^n\overline F_h(q/\varkappa)[x]=\sum_a\frac{\varkappa^{-a}}{a!}\sum_b\frac{\epsilon^b}{b!}(N)_b\,\langle x\,y^a\rangle_h=\sum_a\frac{\varkappa^{-a}}{a!}(1-\epsilon)^{-N}\langle x\,y^a\rangle_h=\varkappa^{2h-2+n}\,\dd^n\overline F_h(q)[x],
+\]
+by the binomial series, which converges in $\mathsf R$ because $\epsilon^b\to0$, and $(1-\epsilon)^{-1}=\varkappa$. The identity holds coefficientwise in $y$, as each $\langle x\,y^a(z1)^b\rangle_h$ is a homogeneous polynomial of degree $a$ in $y$. The statement for $n=0$ follows in the same way, with $\varkappa^{-1}$, which satisfies the same hypothesis, in place of $\varkappa$ and $N=2h-2+a$; for $h=0$ the terms with fewer than three insertions $y$ vanish on both sides, because $\psi=0$ on $\overline{\mathcal M}_{0,3}$.
+\end{proof}
+
+The hypothesis on $\varkappa$ is used: for $\mathsf R=\bbQ\fps u$, and for $\mathsf R=\bbQ(\zeta)\lser s$, it says $\varkappa(0)=1$, and only then are the identities of (iii) identities of Taylor expansions at the base point $-z1$; for a constant $\varkappa\neq1$ the series in $\epsilon$ does not converge. In the applications (\cref{lem:tra-F}, \cref{lem:tra-conv}~(f), \cref{lem:flh-dil}, the last over both rings) the scalar $\varkappa$ is the dilaton factor $d\in\bbQ\fps u$ of the canonical gauge, and $d(0)=1$ by \cref{lem:gau-diag}.
+
+\input{sections/s02_setup_8}

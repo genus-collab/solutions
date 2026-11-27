@@ -1,0 +1,18 @@
+====================================================================================================
+rv_g4mut g4mut_baseline_nat_89_full: exact copy (control: every check must pass)
+   setup 5 s; 379 inner graphs; min val E_out = 1; frozen_ok = True; 5 processes
+      76/379 inner graphs (62 s)
+      152/379 inner graphs (137 s)
+      228/379 inner graphs (173 s)
+      304/379 inner graphs (260 s)
+   run: wall 298 s, CPU 1448 s, covered 379/379, crashes 0 []
+PASS all 379 inner graphs are covered by the part files
+PASS [u^0] E_R(a, b) = Eh_0(a, b) for all (a, b), all colours (so every outer edge is O(u))
+   total over all outer graphs: ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000']
+      outer graph   0 (E=0, gv=(4,)): ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000']
+   total in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS GAP: total = (1/180000) t_c^-6 + 0 + ... + 0 t_c^-1
+PASS REGULARITY (variant nat): every outer graph with edges is O(u^6)
+   vertex graph in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS VERTEX GRAPH carries the polar part (1/180000) t_c^-6 + 0 + ... + 0
+VERDICT g4mut_baseline_nat_89_full: control ok  (wall 298 s)

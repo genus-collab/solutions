@@ -1,0 +1,114 @@
+% Section 3, part 1 of 7; label prefix: gau. The main file inputs only this part; each part inputs the next.
+% Part 1: introduction; the cyclic form of PF4 (objects, constants, self-adjointness, the concomitant).
+% Part 2: transversality, isotropy, the conifold expansion, special geometry, (CYC), the cyclic system.
+% Part 3: the quintic system and the pulled-back model; Theorem U (statement), the commutant.
+% Part 4: lifting, the scalar equation, proof of Theorem U, the leading term, the Z/5-degree, graded gauges.
+% Part 5: (R1), the diagonal, the vanishing solutions, the gauge identity (G), the canonical gauge, symplecticity.
+% Part 6: HPF, polynomiality, formal WKB uniqueness, colour covariance of the model columns.
+% Part 7: colour covariance of the actual rows, the normalisation series D, the rows in the ring, the colours of D, (F_g).
+% No new macros. Local letters are declared where they occur.
+\section{Cyclic systems, Theorem U and the canonical gauge}
+\label{sec:gau}
+
+This section relates the cyclic system of the formal quintic at the conifold point to that of the model and defines the normalisation series $\Dn$ by which their formal solutions differ. \Cref{sec:gau-cyc} proves the cyclic form (CYC) of $\PFfour$ in every conifold frame, so that the cyclic system closes on $\PFfive$. \Cref{sec:gau-systems} writes the quintic system and the model pulled back along $v(u)$ as cyclic systems with one simple pole and equal products. \Cref{sec:gau-U} proves Theorem~U over every field of characteristic $0$: the gauges between two such systems form a free module of rank one over the constant series in $z$. \Cref{sec:gau-van} proves (R1), computes the diagonal of a gauge and proves the gauge identity (G) between the vanishing solutions, which singles out the canonical gauge $\Pc$; \cref{sec:gau-symp} proves that $\Pc$ is symplectic. \Cref{sec:gau-R0} compares $\Pc$ applied to the model columns with the rows of \cref{def:set-rows}: they differ by a constant diagonal series $\Dn=\diag(\Dn_i)$ with $\Dn_i(z)=\Dn_0(\zeta^{-i}z)$.
+
+\emph{Conventions.} $\Dq=q\,\dd/\dd q=-(1-u)\,\dd/\dd u$ (\cref{def:set-genus0,def:set-points}); for a series in $u$ a prime denotes $\dd/\dd u$; $z$ is a constant, and $z\de_u$ is $z\,\dd/\dd u$ at fixed $z$, so $z\Dq=-(1-u)z\de_u$. $E_{ab}$ ($a,b\in\bbZ/5$) are the matrix units and $\mathbf e_a$ the standard basis vectors; solutions, gauges and rows are in lowered components (\cref{def:set-rows}). The quoted inputs enter this section only through \cref{sec:set}: (M) and (G0) through \cref{prop:set-cyclicLR,cor:set-cyclicPF5}, and (QRR) only in Step~3 of the proof of \cref{lem:gau-colrows}. Everything else is proved here, by identities of formal series. Finite computations testing this section are reported in \cref{sec:evi-gauge}; no proof uses them.
+
+%-------------------------------------------------------------------------------
+\subsection{The cyclic form of the fourth-order operator}
+\label{sec:gau-cyc}
+
+In this subsection $\PFfour=\sum_{k=0}^4A_k\Dq^k$ is written in the variable $u$ (\cref{def:set-genus0}):
+\[
+A_4=u,\qquad A_3=-2(1-u),\qquad A_2=-\tfrac75(1-u),\qquad A_1=-\tfrac25(1-u),\qquad A_0=-\tfrac{24}{625}(1-u),
+\]
+and we use $\Dq(1-u)=1-u$ and $\Dq u=-(1-u)$ throughout.
+
+\begin{defn}[Objects of the cyclic-form theorem]
+\label{def:gau-conc}
+\begin{enumerate}
+\item $\bbK:=\bbQ\lser{u}$ with the derivation $\Dq$, and $\bbK[\ell]$ is the polynomial ring in an indeterminate $\ell$ with the unique extension of $\Dq$ for which $\Dq\ell=1-u^{-1}$ (so $\ell$ plays the role of $\log u$). $\bbK[\Dq]$ is the ring of differential operators $\sum_ka_k\Dq^k$, $a_k\in\bbK$, with $\Dq\circ a-a\circ\Dq=\Dq(a)$; it acts on every differential ring that extends $(\bbK,\Dq)$.
+\item $f_0,f_1,f_2\in\bbQ\fps u$ are the solutions of $\PFfour$ with $f_k=u^k+O(u^3)$, and $\varpi_1=f_1+\gamma f_2$, $\gamma=\frac7{10}$, is the vanishing period (\cref{lem:set-frobbasis}). $y_3:=\varpi_1\ell+\rho_3\in\bbK[\ell]$, $\rho_3\in u^3\bbQ\fps u$, is the logarithmic solution of \cref{lem:set-frobbasis}~(iii), whose indeterminate $\ell$ is the one above; thus $\PFfour y_3=0$ in $\bbK[\ell]$. Put $\mathcal S:=\operatorname{span}_\bbQ(f_0,f_1,f_2,y_3)\subset\bbK[\ell]$; no claim is made that $\mathcal S$ contains every solution in $\bbK[\ell]$. An element of $\mathcal S$ lies in $\bbK$ if and only if its coefficient of $y_3$ vanishes, so $\mathcal S\cap\bbK=\operatorname{span}(f_0,f_1,f_2)$, the space of power-series solutions of $\PFfour$.
+\item For $\cP=\sum_{k\leq4}a_k\Dq^k$ with coefficients $a_k$ in a differential ring $(\cR_0,\Dq)$, for instance $\cP\in\bbK[\Dq]$, the \emph{formal adjoint} is $\cP^*:=\sum_k(-\Dq)^k\circ a_k$, and the \emph{concomitant} of $\cP$ is the bilinear differential expression
+\[
+\Conc_\cP(f,g):=\sum_{k=1}^4\sum_{j=0}^{k-1}(-1)^j\,\Dq^j(a_kg)\,\Dq^{k-1-j}f .
+\]
+We write $\Conc:=\Conc_{\PFfour}$ and expand it as $\Conc(f,g)=\sum_{a,b=0}^3\Dq^af\,\Jet_{ab}\,\Dq^bg$ with $\Jet_{ab}\in\bbQ[u]\subset\bbK$; $\Jet=(\Jet_{ab})$ is the \emph{jet matrix}. The $A_k$ are polynomials in $u$, so $\PFfour$, $\PFfour^*$ and $\Conc$ have coefficients in the differential ring $\bbQ[u]$, $\Dq u=-(1-u)$, and act on every differential ring containing it: on $\bbK[\ell]$, and also on $\bbQ\fps q[\logq]$ (with $u=1-5^5q$), on $\Nring$ (with $u=L^{-5}$) and on $\bbQ\lser s$, where they are used in \cref{def:set-confexp,lem:gau-confexp,cor:gau-rowsNN}.
+\item For a basis $\mathbf x=(x_0,\dots,x_3)$ of $\mathcal S$, the \emph{Gram matrix} is $\Conc_{\mathbf x}:=(\Conc(x_i,x_j))_{i,j=0}^3$ and the \emph{Wronskian matrix} is $\Wr_{\mathbf x}:=(\Dq^ax_i)_{a,i=0}^3$ (row $a$, column $i$), whose determinant is the Wronskian $\Wr(x_0,\dots,x_3)$ in the sense of \cref{lem:set-wronskian}. The basis $\mathbf f:=(f_0,f_1,f_2,y_3)$ is the standard one.
+\item $\sh$ is the $\bbK$-algebra automorphism of $\bbK[\ell]$ with $\sh(\ell)=\ell+1$.
+\item For $t\in\bbK$ with $\Dq t\neq0$, $\de_t:=(\Dq t)^{-1}\Dq$, a derivation of $\bbK[\ell]$. For a basis $\mathbf x$ of $\mathcal S$ (with $\Conc_{\mathbf x}$ invertible, \cref{lem:gau-conc}) the \emph{transversality sums} are $\Upsilon_k:=\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}\,x_i\,\Dq^kx_j$ and, for $y_0\in\bbK^\times$, $\widetilde\Upsilon_k:=\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}\,(x_i/y_0)\,\de_t^k(x_j/y_0)$ ($k\geq0$), elements of the fraction field of $\bbK[\ell]$.
+\item For $y_0,y_1\in\bbK$ with $y_0\neq0$ and $t:=y_1/y_0$ not constant, the \emph{cyclic operator} is
+\begin{equation}
+\label{eq:gau-Mcyc}
+\Mcyc(y_0,y_1):=\frac1{y_0}\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\bigl(u\,y_0^2(\Dq t)^2\bigr)\circ\Dq\circ\frac1{\Dq t}\circ\Dq\circ\frac1{y_0}\ \in\bbK[\Dq].
+\end{equation}
+\end{enumerate}
+\end{defn}
+
+\begin{lem}[Constants of $\bbK{[\ell]}$]
+\label{lem:gau-const}
+$\{f\in\bbK[\ell]:\Dq f=0\}=\bbQ$.
+\end{lem}
+
+\begin{proof}
+For $f\in\bbK$, $\Dq f=-(1-u)f'=0$ gives $f'=0$, since $1-u$ is a unit of $\bbK$; so $f\in\bbQ$, the characteristic being $0$. Let $f=\sum_{k\leq n}a_k\ell^k$ with $a_k\in\bbK$, $a_n\neq0$ and $n\geq1$, and suppose $\Dq f=0$. Since $\Dq f=\sum_k\bigl(\Dq a_k+(k+1)a_{k+1}\Dq\ell\bigr)\ell^k$, the coefficient of $\ell^n$ gives $\Dq a_n=0$, so $a_n\in\bbQ^\times$, and the coefficient of $\ell^{n-1}$ gives $\Dq a_{n-1}=-na_n\Dq\ell=na_n(1-u)/u$. Dividing by the unit $-(1-u)$ gives $a_{n-1}'=-na_n/u$. This is impossible: the derivative of a Laurent series has no term in $u^{-1}$, and $na_n\neq0$. Hence $n=0$.
+\end{proof}
+
+\begin{lem}[$\PFfour$ is self-adjoint]
+\label{lem:gau-adj}
+$\PFfour^*=\PFfour$, as operators with coefficients in $\bbQ[u]$; hence as operators on every differential ring containing $\bbQ[u]$.
+\end{lem}
+
+\begin{proof}
+The formal adjoint is the anti-automorphism of $\bbQ[u][\Dq]$ (and of $\bbK[\Dq]$) that fixes the coefficients and sends $\Dq$ to $-\Dq$; it exists because it maps the relation $\Dq\circ a-a\circ\Dq=\Dq(a)$ to $a\circ(-\Dq)-(-\Dq)\circ a=\Dq(a)$, which holds. Here $q=(1-u)/5^5\in\bbQ[u]$ and $\Dq q=q$. Write $\PFfour=\Dq^4-5^5q\circ P_4(\Dq)$ with $P_4(\Dq):=\prod_{k=1}^4(\Dq+k/5)$, since $5q\prod_{k=1}^4(5\Dq+k)=5^5q\prod_{k=1}^4(\Dq+k/5)$. Then $(\Dq^4)^*=\Dq^4$ and $(q\circ P_4(\Dq))^*=P_4(-\Dq)\circ q$. From $\Dq(qf)=qf+q\Dq f$, i.e.\ $\Dq\circ q=q\circ(\Dq+1)$, we get $P_4(-\Dq)\circ q=q\circ P_4(-\Dq-1)$, and
+\[
+P_4(-\Dq-1)=\prod_{k=1}^4\Bigl(-\Bigl(\Dq+\frac{5-k}5\Bigr)\Bigr)=\prod_{k=1}^4\Bigl(\Dq+\frac k5\Bigr)=P_4(\Dq),
+\]
+because there are four sign changes and $k\mapsto5-k$ permutes the factors. Hence $\PFfour^*=\PFfour$. Equivalently: expanding $\sum_k(-\Dq)^k\circ A_k$ shows that an operator of order $4$ is self-adjoint if and only if $A_3=2\Dq A_4$ and $A_1=\Dq A_2-\Dq^3A_4$; here $2\Dq A_4=-2(1-u)=A_3$ and $\Dq A_2-\Dq^3A_4=-\frac75(1-u)+(1-u)=A_1$.
+\end{proof}
+
+\begin{lem}[The concomitant]
+\label{lem:gau-conc}
+\begin{enumerate}
+\item For every $\cP=\sum_{k\leq4}a_k\Dq^k$ with coefficients in a differential ring $\cR_0$ (for instance $\bbK$ or $\bbQ[u]$) and all $f,g$ in a differential ring extending $\cR_0$: $g\,\cP f-f\,\cP^*g=\Dq\,\Conc_\cP(f,g)$.
+\item For $f,g\in\mathcal S$, $\Conc(f,g)$ lies in $\bbQ$, and $\Conc$ is a $\bbQ$-bilinear alternating form on $\mathcal S$.
+\item The jet matrix is $\Jet_{ab}=\sum_{k=a+b+1}^4(-1)^{k-1-a}\binom{k-1-a}{b}\Dq^{k-1-a-b}A_k$, explicitly
+\[
+\Jet=\begin{pmatrix}0&\frac25(1-u)&1-u&-u\\-\frac25(1-u)&0&u&0\\-(1-u)&-u&0&0\\u&0&0&0\end{pmatrix};
+\]
+so $\Jet_{ab}=0$ for $a+b\geq4$, $\Jet_{3-j,j}=(-1)^ju$, and $\det\Jet=u^4$.
+\item For every basis $\mathbf x$ of $\mathcal S$, $\Conc_{\mathbf x}=\Wr_{\mathbf x}^T\Jet\,\Wr_{\mathbf x}$. In the standard basis
+\[
+\Conc_{\mathbf f}=\begin{pmatrix}0&-\frac75&2&\ast\\\frac75&0&0&-1\\-2&0&0&0\\-\ast&1&0&0\end{pmatrix},\qquad \operatorname{Pf}(\Conc_{\mathbf f})=2,\qquad\det\Conc_{\mathbf f}=4,
+\]
+where $\ast=\Conc(f_0,y_3)$ is not needed. Hence $\Conc$ is non-degenerate on $\mathcal S$, $\det\Wr_{\mathbf x}\neq0$ for every basis $\mathbf x$, and $u^2\det\Wr_{\mathbf f}\in\{2,-2\}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) Fix $k$, and put $w:=a_kg$ and, for $0\leq j\leq k$, $\mathsf t_j:=(-1)^j\Dq^jw\,\Dq^{k-j}f$; these letters are local. Then $\Dq\bigl[(-1)^j\Dq^jw\,\Dq^{k-1-j}f\bigr]=\mathsf t_j-\mathsf t_{j+1}$, and the sum over $j=0,\dots,k-1$ telescopes to $\mathsf t_0-\mathsf t_k=w\,\Dq^kf-f\,(-\Dq)^kw=g\,a_k\Dq^kf-f\,(-\Dq)^k(a_kg)$. Summing over $k$ gives (i); this is an identity of differential polynomials in $f$ and $g$.
+
+(ii) For $f,g\in\mathcal S$, (i) and \cref{lem:gau-adj} give $\Dq\Conc(f,g)=g\,\PFfour f-f\,\PFfour g=0$; as $\Conc(f,g)\in\bbK[\ell]$, \cref{lem:gau-const} gives $\Conc(f,g)\in\bbQ$. Bilinearity is clear. For alternation consider $\Conc(f,g)+\Conc(g,f)$ as a differential polynomial $Q=\sum_{a,b}q_{ab}f_ag_b$ in two indeterminates, $f_a=\Dq^af$, $g_b=\Dq^bg$, $q_{ab}\in\bbK$. By (i) and \cref{lem:gau-adj}, $\Dq Q=(g\,\PFfour f-f\,\PFfour g)+(f\,\PFfour g-g\,\PFfour f)=0$ identically. Suppose $Q\neq0$ and let $s$ be the largest value of $a+b$ with $q_{ab}\neq0$. In $\Dq Q$ the coefficient of $f_0g_{s+1}$ is $q_{0s}$, and for $c\geq1$, $c+d=s+1$, the coefficient of $f_cg_d$ is $q_{c-1,d}+q_{c,d-1}$ (with $q_{c,-1}:=0$). These vanish, so successively $q_{0,s}=q_{1,s-1}=\dots=q_{s,0}=0$, a contradiction. Hence $Q=0$ and $\Conc(f,g)=-\Conc(g,f)$.
+
+(iii) Expanding $\Dq^j(A_kg)=\sum_b\binom jb\Dq^{j-b}A_k\,\Dq^bg$ and putting $a=k-1-j$ gives the formula; the entries follow from it with $\Dq(1-u)=1-u$, $\Dq u=-(1-u)$. For example $\Jet_{01}=-A_2+2\Dq A_3-3\Dq^2A_4=(\frac75-4+3)(1-u)$, $\Jet_{02}=A_3-3\Dq A_4=1-u$ and $\Jet_{00}=A_1-\Dq A_2+\Dq^2A_3-\Dq^3A_4=0$. Only $k=4$ contributes when $a+b=3$, giving $(-1)^{3-a}A_4=(-1)^bu$, and no $k\leq4$ contributes when $a+b\geq4$. So $\Jet$ vanishes below its antidiagonal, whose entries are $u,-u,u,-u$; the reversal of four letters is an even permutation, and $\det\Jet=u^4$.
+
+(iv) The identity is (iii) evaluated on the basis: $(\Wr_{\mathbf x}^T\Jet\Wr_{\mathbf x})_{ij}=\sum_{a,b}\Dq^ax_i\,\Jet_{ab}\,\Dq^bx_j=\Conc(x_i,x_j)$. By (ii) every entry of $\Conc_{\mathbf f}$ is a rational number, which may be read off at $u=0$.
+
+\emph{Entries between power series.} At $u=0$ the matrix $\Jet$ is $\frac25(E_{01}-E_{10})+E_{02}-E_{20}$, so for power-series solutions $\Conc(f,g)=\bigl[\frac25(f\Dq g-g\Dq f)+(f\Dq^2g-g\Dq^2f)\bigr](0)$. For $f=u^k+O(u^3)$ one has $(f,\Dq f,\Dq^2f)(0)=(\delta_{k0},-\delta_{k1},-\delta_{k1}+2\delta_{k2})$, i.e.\ $(1,0,0)$, $(0,-1,-1)$, $(0,0,2)$ for $f_0,f_1,f_2$. Hence $\Conc(f_0,f_1)=-\frac25-1=-\frac75$, $\Conc(f_0,f_2)=2$ and $\Conc(f_1,f_2)=0$.
+
+\emph{Entries with $y_3$.} Write $\Dq^by_3=(\Dq^b\varpi_1)\ell+Y_b$ with $Y_b\in\bbK$. Then $\Conc(f,y_3)=\Conc(f,\varpi_1)\,\ell+\sum_{a,b}\Dq^af\,\Jet_{ab}\,Y_b$, and since $\Conc(f,y_3)$ is a constant, it equals the coefficient of $u^0$ in $\sum_{a,b}\Dq^af\,\Jet_{ab}Y_b$. With $\Dq\ell=1-u^{-1}$, $\Dq^2\ell=u^{-1}-u^{-2}$, $\Dq^3\ell=-2u^{-3}+3u^{-2}-u^{-1}$,
+\begin{align*}
+Y_0&=\rho_3, & Y_1&=\varpi_1\Dq\ell+\Dq\rho_3,\\
+Y_2&=2\Dq\varpi_1\Dq\ell+\varpi_1\Dq^2\ell+\Dq^2\rho_3, & Y_3&=3\Dq^2\varpi_1\Dq\ell+3\Dq\varpi_1\Dq^2\ell+\varpi_1\Dq^3\ell+\Dq^3\rho_3,
+\end{align*}
+and $\varpi_1=u+O(u^2)$, $\Dq\varpi_1=-1+O(u)$, $\rho_3\in u^3\bbQ\fps u$ give $Y_0\in u^3\bbQ\fps u$, $Y_1=-1+O(u)$, $Y_2=u^{-1}+O(1)$ and $Y_3=u^{-2}+O(u^{-1})$. Ordering by the derivatives of $f$,
+\begin{multline*}
+\sum_{a,b}\Dq^af\,\Jet_{ab}Y_b=f\bigl[\tfrac25(1-u)Y_1+(1-u)Y_2-uY_3\bigr]+\Dq f\bigl[-\tfrac25(1-u)Y_0+uY_2\bigr]\\
++\Dq^2f\bigl[-(1-u)Y_0-uY_1\bigr]+\Dq^3f\,uY_0 .
+\end{multline*}
+The first bracket is a power series (its terms in $u^{-1}$ cancel), the second is $1+O(u)$ and the third and fourth are $O(u)$. Hence $\Conc(f,y_3)=(\Dq f)(0)$ for every power series $f$ with $f(0)=0$, so $\Conc(f_1,y_3)=-1$ and $\Conc(f_2,y_3)=0$.
+
+For an alternating $4\times4$ matrix $(c_{ij})$, $\operatorname{Pf}=c_{01}c_{23}-c_{02}c_{13}+c_{03}c_{12}$, here $0-2\cdot(-1)+\ast\cdot0=2$, and $\det=\operatorname{Pf}^2=4$. So $\Conc$ is non-degenerate, and from $\det\Conc_{\mathbf x}=(\det\Wr_{\mathbf x})^2\det\Jet=(\det\Wr_{\mathbf x})^2u^4$ we get $\det\Wr_{\mathbf x}\neq0$ for every basis. Finally, differentiating the rows of $\Wr_{\mathbf f}$ and using $\Dq^4x=-A_4^{-1}\sum_{k\leq3}A_k\Dq^kx$ for $x\in\mathcal S$ gives Abel's identity $\Dq\det\Wr_{\mathbf f}=-(A_3/A_4)\det\Wr_{\mathbf f}=2u^{-1}(1-u)\det\Wr_{\mathbf f}$; with $\Dq(u^2)=-2u(1-u)$ this is $\Dq(u^2\det\Wr_{\mathbf f})=0$, so $u^2\det\Wr_{\mathbf f}\in\bbQ$ by \cref{lem:gau-const}, and its square is $\det\Conc_{\mathbf f}=4$.
+\end{proof}
+
+\input{sections/s03_gauge_2}

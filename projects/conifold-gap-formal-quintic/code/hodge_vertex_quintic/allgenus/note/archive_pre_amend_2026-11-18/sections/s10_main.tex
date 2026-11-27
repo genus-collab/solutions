@@ -1,0 +1,83 @@
+\section{The main theorem}
+\label{sec:mai}
+
+This section assembles Theorem~A and derives Corollary~B; the consequences of $\Dn=1$ for the natural form and universality are in \cref{sec:cmp}. A conifold frame of \cref{def:set-frames}, given by $(\alpha,\beta)\in\bbQ^2$, is fixed, and $M=\Mo(\tau(u)\zh)$ is taken exactly in $u$. As in \cref{sec:flh}, $\Lambda_s\coloneqq\diag(s^{1-\nu_a})$ and $\Lambda_\varsigma\coloneqq\diag(\varsigma^{1-\nu_a})$ act on lowered components (local letters, not the leg map of \cref{def:mod-weights}), and $1_{\TFT}=\sum_i\Delta_i^{-1/2}\tilde e_i$.
+
+\subsection{Theorem A and Corollary B}
+\label{sec:mai-thm}
+
+\begin{thm}[Theorem A]
+\label{thm:mai-main}
+Let $g\geq2$, let $(\alpha,\beta)\in\bbQ^2$ give a conifold frame (\cref{def:set-frames}), let $\varpi_1=u+O(u^2)$ be the vanishing period and $\tc=\varpi_1/\varpi_0$. Let $M\coloneqq\Mo(\tau(u)\zh)$, exactly in $u$, and $R'\coloneqq\Qr M^{-1}$, where $\Qr$ is the matrix of the lowered rows of \cref{def:set-rows} expanded in the frame (\cref{def:set-confexp}). For a leg-free stable graph $\Gamma$ of genus $g$ let $T_\Gamma\coloneqq\mathrm{Cont}_\Gamma[E_{R'},q_{R'};M.\TFT]$ be its outer term, $\TFT$ the TFT of \cref{def:set-frob} (\cref{def:set-outer}). Then:
+\begin{enumerate}
+\item $T_\Gamma$ lies in $\bbQ\fps{u}$ for every $\Gamma$ with at least one edge;
+\item for the vertex graph, $T_\Gamma\in c_g\,\tc^{2-2g}+\bbQ\fps{u}$, with
+\[
+c_g=\frac{(-1)^{g-1}B_{2g}\,5^{1-g}}{2g(2g-2)}
+\]
+as in \eqref{eq:set-cg}.
+\end{enumerate}
+The hatted terms are $G_\Gamma=u^{2g-2}T_\Gamma$ (\cref{lem:flh-hat}).
+\end{thm}
+
+A priori $T_\Gamma\in\bbQ(\zeta)\lser{s}$; the vertex graph is that of \cref{def:set-outer}.
+
+\begin{proof}
+Fix $g\geq2$ and the frame. By \cref{thm:gam-D}, $\Dn_0=1$ in $\bbQ\fps{z}$; in particular $\Fg{g}$ holds (\cref{def:gau-Fg}). By the comparison theorem, \cref{thm:flh-main}, $T_\Gamma=F_\Gamma$ for every leg-free stable graph $\Gamma$ of genus $g$, where $F_\Gamma$ is the term of $\Gamma$ in the flat sum of $\Pc.\Omega^{\mathrm{mod}}_{v(u)}$ (\cref{def:red-flatsum}). By \cref{thm:mod-MLK} the Model Lemma $\ML{h}$ holds for every $h\geq0$. So \cref{cor:red-can} applies: since $\ML{h}$ holds for $h\leq g-1$, $F_\Gamma$ lies in $\bbQ\fps{u}$ for every $\Gamma$ with an edge; since $\ML{g}$ holds as well, the vertex graph gives $F_\Gamma\in c_g\tc^{2-2g}+\bbQ\fps{u}$, the leaf point of $\Pc$ having the vanishing coordinate $T_{\Pc}=\tc$ (\cref{prop:tra-can}). This proves (i) and (ii). The last sentence is \cref{lem:flh-hat}.
+
+The statements cited rest on these: \cref{thm:gam-D} on \cref{thm:con-glue}, Theorem~P (\cref{thm:con-Pa,thm:con-Pb}), \cref{thm:gam-main}~(ii), \cref{prop:gam-hatflat}, \cref{cor:gau-colours}; \cref{thm:flh-main} on \cref{thm:gau-R0}~(iv), \cref{cor:gau-colours}, \cref{prop:gau-symp}, \cref{lem:set-M0sympl}; \cref{prop:tra-can} on \cref{thm:gau-U,thm:gau-G,prop:gau-symp} and \cref{sec:tra}; all on \cref{prop:gau-quintic}, from \cref{prop:set-cyclicLR,thm:gau-cyc}.
+\end{proof}
+
+\emph{Where the inputs enter.} (QRR) enters through the rows (\cref{thm:set-qrr}), \cref{lem:gau-colrows} and the glue \cref{thm:con-glue}; (M) and (G0) through \cref{thm:set-mirror,prop:set-cyclicLR,cor:set-cyclicPF5}; (T) through \cref{thm:set-GT}, which identifies the $R$-matrix whose rows define $T_\Gamma$; \cite{PPZ15} through \cref{thm:set-G0} (as part of (G0)), \cref{def:set-graphsum}, \cref{lem:set-pushins} (in the reading of the topological-recursion input, \cref{prop:mod-Rtr}~(ii)), \cref{def:set-modcohft}, \cref{lem:set-modhom}, \cref{lem:set-dilaton}, \cref{def:set-outer}, \cref{sec:tra-dress}, \cref{thm:mod-tr} and \cref{sec:flh}; \cite{Eynard:2007kz}, \cite{DuninBarkowski:2012bw} (as recalled in \cite{Dunin-Barkowski:2015caa}) and \cite{ABDKS25} through \cref{thm:mod-MLK}, on the model curve $x=\Wv(p)$, $y=p$ only; and \cite[(1.7)]{AC96} through \cref{lem:set-dilaton}.
+
+\emph{Conditionality.} Theorem~A holds modulo the quoted theorems (Q) of \cite{Eynard:2007kz}, \cite{DuninBarkowski:2012bw} (as recalled in \cite{Dunin-Barkowski:2015caa}), \cite{ABDKS25} and \cite{PPZ15} with the statement numbers listed in \cref{sec:int-inputs}, the value (QRR) of the $R$-matrix at the large-radius point, the genus-$0$ mirror theorem (M) and the genus-$0$ axioms (G0) of the twisted theory, Teleman's reconstruction (T), and the formula \cite[(1.7)]{AC96}; every other step is proved in the note. Topological recursion is used only on the model curve, never on a mirror curve of the quintic or of the formal quintic, and no finite computation enters the proof.
+
+To expand $F_g$ (\cref{def:set-fq}) at the conifold point we use its graph-sum representative in $\Nring$ (\cref{def:set-confexp}). Write $\Psi_{\mathrm Q}\coloneqq\Qr|_{z=0}$, now for the rows as elements of $\Nring\otimes\bbQ(\zeta)$ (\cref{cor:gau-rowsNN}); its conifold expansion $\Psi_{\mathrm{cf}}\coloneqq\Cexp_{\alpha,\beta}(\Psi_{\mathrm Q})$ is the matrix $\Psi_{\mathrm Q}$ of \cref{lem:flh-inputs}, and $\Psi(u)\coloneqq\Lambda_s\Psi_{\mathrm{cf}}$ is its hatted form; $\mathfrak m_a$, $\mathfrak w_a$ are local letters.
+
+\begin{lem}[the matrices $\Psi_{\mathrm Q}$ and $\Psi(u)$]
+\label{lem:mai-Psi}
+\begin{enumerate}
+\item In $\Nring\otimes\bbQ(\zeta)$, $(\Psi_{\mathrm Q})_{aj}=\zeta^{j(a+1)}\mathfrak m_a$, where
+\[
+(\mathfrak m_0,\dots,\mathfrak m_4)=\bigl(L/C_0,\;L^2/(C_0C_1),\;C_0C_1/L^2,\;C_0/L,\;1\bigr),
+\]
+and $\Psi_{\mathrm Q}^T\eta^{-1}\Psi_{\mathrm Q}=1$.
+\item $\Psi(u)_{aj}=\zeta^{j(a+1)}\mathfrak w_a(u)$, where
+\[
+(\mathfrak w_0,\dots,\mathfrak w_4)=\bigl(1/\varpi_0,\;1/(\varpi_0\Dq\tc),\;\varpi_0\Dq\tc,\;\varpi_0,\;1\bigr).
+\]
+Hence $\Psi(u)\in GL_5(\bbQ(\zeta)\fps{u})$, $\Psi(0)=\Psi_0$, and $\Psi_{\mathrm{cf}}^T\eta^{-1}\Psi_{\mathrm{cf}}=\Psi(u)^T\eta^{-1}\Psi(u)=1$, equivalently $\Psi_{\mathrm{cf}}\Psi_{\mathrm{cf}}^T=\Psi(u)\Psi(u)^T=\eta$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) At $z=0$, $\Qr^{(j)}_0(0)=\eta(1,\tilde e_j)=\Delta_j^{-1/2}=\zeta^jL/C_0$ (\cref{def:set-frob}); equivalently $\mathrm{ph}_0=1$ (\cref{def:set-rows}). By \cref{prop:set-cyclicLR}~(iii), $X_a=\zeta^{-j}\Qr^{(j)}_a$ satisfies $X_{a+1}=(C_1\kappa^{\mathrm{LR}}_a)^{-1}(z\Dq+\zeta^jL)X_a$ for $a\leq3$; at $z^0$ the term $z\Dq$ drops out, so $X_{a+1}(0)=\zeta^jL\,X_a(0)/(C_1\kappa^{\mathrm{LR}}_a)$, with $C_1\kappa^{\mathrm{LR}}=(C_1,L^5/(C_0^2C_1^2),C_1,C_0,C_0)$ and $X_0(0)=L/C_0$. This gives $\Qr^{(j)}_a(0)=\zeta^{j(a+1)}\mathfrak m_a$; only the relations of \cref{prop:set-cyclicLR} are used, so the identity holds in $\Nring\otimes\bbQ(\zeta)$ (\cref{cor:gau-rowsNN}). Since $(\eta^{-1})_{ab}=\frac15\delta_{a+b\equiv3}$ and $\mathfrak m_a\mathfrak m_{3-a}=1$ for every $a$,
+\[
+(\Psi_{\mathrm Q}^T\eta^{-1}\Psi_{\mathrm Q})_{ij}=\frac15\sum_a\zeta^{i(a+1)+j(4-a)}=\frac15\,\zeta^{i-j}\sum_a\zeta^{(i-j)a}=\delta_{ij}.
+\]
+(ii) The conifold expansion ($C_0\mapsto\varpi_0$, $C_1\mapsto\Dq\tc$, $L\mapsto s^{-1}$, \cref{lem:gau-confexp}) followed by the hatting factor $s^{1-\nu_a}$, $\nu=(0,-1,3,2,1)$, turns $\mathfrak m_a$ into $\mathfrak w_a$. At $u=0$, $\varpi_0(0)=1$ and $\Dq\tc(0)=-1$ (\cref{def:set-frames}) give $(\mathfrak w_a(0))_a=(1,-1,-1,1,1)=(\varepsilon_a)_a$, so $\Psi(0)=\Psi_0$ (\cref{def:set-M0}). The $\mathfrak w_a$ are units of $\bbQ\fps{u}$ with $\mathfrak w_a\mathfrak w_{3-a}=1$, which gives $\Psi(u)^T\eta^{-1}\Psi(u)=1$ as in (i); and $\Psi_{\mathrm{cf}}^T\eta^{-1}\Psi_{\mathrm{cf}}=\Psi(u)^T\Lambda_s^{-1}\eta^{-1}\Lambda_s^{-1}\Psi(u)=\Psi(u)^T\eta^{-1}\Psi(u)$, as $\Lambda_s\eta^{-1}\Lambda_s=\eta^{-1}$ ($\nu_a+\nu_{3-a}=2$). The equivalent forms follow from $A^{-1}=A^T\eta^{-1}$ for $A=\Psi_{\mathrm{cf}}$ and $A=\Psi(u)$.
+\end{proof}
+
+\begin{defn}[the genus-$g$ sum in the ring and its conifold expansion]
+\label{def:mai-Fcf}
+By \cref{cor:gau-rowsNN} the row coefficients $\Qr^{(i)}_{a,n}$ lie in $\Nring\otimes\bbQ(\zeta)$ and are free of $\logq$. By \cref{lem:mai-Psi}~(i), $\Psi_{\mathrm Q}^T\eta^{-1}\Psi_{\mathrm Q}=1$ in $\Nring\otimes\bbQ(\zeta)$. Put
+\[
+\tilde R\coloneqq\Psi_{\mathrm Q}^{-1}\Qr=\Psi_{\mathrm Q}^T\eta^{-1}\Qr ,
+\]
+the $R$-matrix in Teleman's colour-colour form; $\tilde R(0)=1$. For a matrix series $X(z)$ with $X(0)=1$ let $N_X(\psi,\psi')\coloneqq1-X^{-1}(\psi)X^{-1}(\psi')^T$ and
+\[
+E_X(\psi,\psi')\coloneqq\frac{N_X(\psi,\psi')-\frac12N_X(-\psi',\psi')-\frac12N_X(\psi,-\psi)}{\psi+\psi'} ,
+\]
+a power series for every $X$, since its numerator vanishes at $\psi=-\psi'$; it is symmetric, $E_X(\psi,\psi')^T=E_X(\psi',\psi)$, as $N_X(\psi,\psi')^T=N_X(\psi',\psi)$, and it is the edge of \cite[Def.~2.2]{PPZ15} when $X(-z)^TX(z)=1$, because then $N_X(-\psi',\psi')=N_X(\psi,-\psi)=0$ \cite[Rem.~2.1]{PPZ15}. (The symplecticity of $\tilde R$ is not known in $\Nring\otimes\bbQ(\zeta)$.) With the leaf point $q_{\tilde R}=\tilde R^{-1}(z)(-z1_{\TFT})$, $1_{\TFT}=\sum_i\Delta_i^{-1/2}\tilde e_i$, define
+\[
+F_g^{\Nring}\coloneqq\sum_\Gamma\mathrm{Cont}_\Gamma\bigl[E_{\tilde R},q_{\tilde R};\TFT\bigr]\in\Nring\otimes\bbQ(\zeta),
+\]
+the sum over the leg-free stable graphs of genus $g$ ($|\Aut\Gamma|^{-1}$ is part of $\mathrm{Cont}_\Gamma$). The \emph{conifold expansion} of $F_g$ in the frame $(\alpha,\beta)$ is
+\[
+F_g^{\mathrm{cf}}\coloneqq\Cexp_{\alpha,\beta}\bigl(F_g^{\Nring}\bigr)\in\bbQ\lser{s}.
+\]
+\end{defn}
+
+The definition is justified as follows. First, $F_g^{\Nring}$ is a polynomial over $\bbQ$ in finitely many row coefficients, in $\Delta_i^{\pm1/2}=(\zeta^{4i}C_0/L)^{\pm1}$ and in $\zeta$: the contraction is finite because $q_{\tilde R}+z1_{\TFT}=z(1_{\TFT}-\tilde R^{-1}(z)1_{\TFT})$ is $O(z^2)$ (\cref{def:flh-outer}~(ii)), the coefficients of $\tilde R^{-1}$ are polynomials in those of $\tilde R$, and the correlators of $\TFT$ are rational multiples of $\Delta_i^{(2h-2+n)/2}$, $2h-2+n>0$. Second, $F_g^{\Nring}$ lies in $\Nring$. For $k\in(\bbZ/5)^\times$ let $\sigma_k$ be the automorphism $\zeta\mapsto\zeta^k$ of $\Nring\otimes\bbQ(\zeta)$. By \cref{lem:gau-colrows}, $\Qr^{(i)}_{a,n}=\zeta^{i(a+1-n)}\Qr^{(0)}_{a,n}$ with $\Qr^{(0)}_{a,n}\in\Nring$, and $\Delta_i^{1/2}=\zeta^{4i}C_0/L$; hence $\sigma_k(\Qr^{(i)}_{a,n})=\Qr^{(ki)}_{a,n}$, $\sigma_k(\Delta_i^{1/2})=\Delta_{ki}^{1/2}$, and, by the explicit form of $\Psi_{\mathrm Q}$ in \cref{lem:mai-Psi}, $\sigma_k(\tilde R_{ij})=\tilde R_{ki,kj}$. So $\sigma_k$ permutes the colours; as $\TFT$ is diagonal in the colour basis, $F_g^{\Nring}$ is a sum over all colourings of the vertices, which $\sigma_k$ permutes, so $\sigma_k(F_g^{\Nring})=F_g^{\Nring}$ for every $k$ and $F_g^{\Nring}\in(\Nring\otimes\bbQ(\zeta))^{\mathrm{Gal}}=\Nring$. Third, $\ev(F_g^{\Nring})=F_g$: under $\ev$, $\tilde R$ becomes the $R$-matrix of \cref{def:set-rows} in the normalised canonical basis, which is symplectic (\cref{def:set-rows}~(a)), so the image of $E_{\tilde R}$ is the edge of \cite[Def.~2.2]{PPZ15}; the graph sum is then the integral over $\overline{\mathcal M}_g$ of the genus-$g$ class of the unit-preserving action on $\TFT$ (\cref{lem:set-pushins}~(iii), unit $1_{\TFT}$), which is the potential by (T), with the normalisation (QRR) (\cref{thm:set-GT,thm:set-qrr}). A change of the primitive of $1$ in \cref{def:set-confexp} fixes the rows and $\Delta_i^{1/2}$, hence $F_g^{\Nring}$. Whether $\ev$ is injective on $\Nring$ is neither needed nor proved.
+
+\input{sections/s10_main_2}

@@ -1,0 +1,76 @@
+% Section 3, part 6 of 8: the gauge identity (G), the canonical gauge, symplecticity, HPF.
+
+\begin{thm}[The gauge identity (G)]\genusstatus{AI-proposed, unchecked}
+\label{thm:gau-G}
+For every $P\in\Gau(A,\tilde A)$, in particular for every regular gauge from the pulled-back model to the quintic system,
+\begin{equation}
+\label{eq:gau-G}
+P(u,z)\,\YC(v(u),z)=P_{11}(0,z)\,\YCQ(u,z)\qquad\text{in }\bbQ\lser z\fps u^5 .
+\end{equation}
+\begin{enumerate}
+\item[(a)] For a graded regular gauge $P$, $P_{11}(0,z)$ is a unit of $\bbQ\fps{z^5}$, $\Pc:=P\,P_{11}(0,z)^{-1}$ is a graded regular gauge, and $\Pc$ is the unique regular gauge $P'$ with $P'\,\YC(v(u),z)=\YCQ$.
+\item[(b)] For a regular gauge $P$, $P\,\YC(v(u),z)$ has no positive power of $z$ if and only if $P_{11}(0,z)$ is a constant; the regular gauges with this property are the $\mu\Pc$, $\mu\in\bbQ^\times$.
+\item[(c)] For any two cyclic systems $A,\tilde A$ with one simple pole over $\bbQ\fps u$ and every $P\in\Gau(A,\tilde A)$: $P\,Y^{\mathrm C}_{\tilde A}=P_{11}(0,z)\,Y^{\mathrm C}_A$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+We prove (c), of which \eqref{eq:gau-G} is the case of the two systems of this subsection: $\YC(v(u),z)=Y^{\mathrm C}_{\tilde A}$ by \cref{lem:gau-uniq}, both being solutions of $z\de_uY=\tilde AY$ with value $-\mathbf e_1$ (\cref{lem:gau-vanmod,lem:gau-vanq}~(c)). Put $\tilde Y:=Y^{\mathrm C}_{\tilde A}\in\bbQ[z^{-1}]\fps u^5$. The product $P\tilde Y$ lies in $\bbQ\lser z\fps u^5$: at each order in $u$ it is a finite sum of products of a power series in $z$ and a polynomial in $z^{-1}$. It solves the first system: $z\de_u(P\tilde Y)=(AP-P\tilde A)\tilde Y+P\tilde A\tilde Y=A(P\tilde Y)$. Its value at $u=0$ is $P(0,z)(-\mathbf e_1)=-P_{11}(0,z)\mathbf e_1$ by \cref{lem:gau-R1}. $P_{11}(0,z)Y^{\mathrm C}_A$ is also a solution, $P_{11}(0,z)$ being constant in $u$, with the same value by \cref{lem:gau-vanq}~(c). \Cref{lem:gau-uniq} with $B=A$ gives the identity.
+
+(a) $P_{11}(0,z)$ is a unit of $\bbQ\fps{z^5}$ by \cref{prop:gau-graded}~(iii), so $\Pc$ is a graded regular gauge by \cref{prop:gau-graded}~(ii), and $(\Pc)_{11}(0,z)=1$; by \eqref{eq:gau-G}, $\Pc\YC(v(u))=\YCQ$. Conversely, let $P'$ be any regular gauge with $P'\YC(v(u))=\YCQ$. By \cref{thm:gau-U}~(b), (d), $P'=\Pc\cn(z)$ for some $\cn\in\bbQ\fps z^\times$, so that $\YCQ=\cn(z)\Pc\YC(v(u))=\cn(z)\YCQ$, i.e.\ $(\cn(z)-1)\YCQ=0$ in $\bbQ\lser z\fps u^5$; the coefficient of $u^0$ is $-(\cn(z)-1)\mathbf e_1$, so $\cn=1$. (b) If $P_{11}(0,z)=\mu$ is constant, then $P\YC(v(u))=\mu\YCQ$ lies in $\bbQ[z^{-1}]\fps u^5$. Conversely, the coefficient of $u^0$ of $P\YC(v(u))$ is $-P_{11}(0,z)\mathbf e_1$ with $P_{11}(0,z)\in\bbQ\fps z$, so it has no positive power of $z$ only if $P_{11}(0,z)$ is constant. With $P=\Pc\cn(z)$ we have $P_{11}(0,z)=\cn(z)$, which gives the last assertion.
+\end{proof}
+
+\begin{defn}[The canonical gauge]
+\label{def:gau-can}
+In a conifold frame, the \emph{canonical gauge} $\Pc$ is the regular gauge from the pulled-back model to the quintic system with $(\Pc)_{11}(0,z)=1$. It exists and is unique: $\Pc=P\,P_{11}(0,z)^{-1}$ for any graded regular gauge $P$ (one exists by \cref{prop:gau-graded}~(i); \cref{thm:gau-G}~(a)), and a regular gauge $\Pc\cn(z)$ (\cref{thm:gau-U}~(b)) has $(\Pc\cn)_{11}(0,z)=\cn(z)$. Equivalently, $\Pc$ is the unique regular gauge with $\Pc\YC(v(u))=\YCQ$. It is graded, rational (\cref{thm:gau-U}~(d)), colour covariant, $\operatorname{Rot}_i\Pc=\Pc$ (\cref{prop:gau-graded}~(iv)), and $p_{0,a}(0)=1$ for its diagonal $z^0$-term (\cref{lem:gau-diag}). We write $\Pc=\sum_kz^k\sum_bp_{k,b}(u)E_{b+k,b}$.
+\end{defn}
+
+\begin{prop}[Symplecticity]\genusstatus{AI-proposed, unchecked}
+\label{prop:gau-symp}
+Let $A,\tilde A$ be self-dual cyclic systems with one simple pole over $\Bbbk\fps u$ with (EP) and $r=\tilde r$, and let $P$ be a regular gauge from $\tilde A$ to $A$, $\cn(z):=P_{11}(0,z)$. Then
+\begin{equation}
+\label{eq:gau-symp}
+P(u,-z)^T\eta\,P(u,z)=\cn(z)\cn(-z)\,\eta .
+\end{equation}
+In particular, for the two systems of \cref{sec:gau-van}, $\Pc$ is symplectic, $\Pc(u,-z)^T\eta\Pc(u,z)=\eta$; the symplectic regular gauges are the $\Pc\cn(z)$ with $\cn(z)\cn(-z)=1$, so symplecticity constrains only the even part of $\log(\cn/\cn(0))$; for graded gauges, $\cn=\pm\exp(a_1z^5+a_3z^{15}+a_5z^{25}+\cdots)$. Among the symplectic regular gauges, only (G) singles out $\Pc$.
+\end{prop}
+
+\begin{proof}
+For $S:=P(u,-z)^T\eta P(u,z)$, the gauge equation at $-z$, transposed, and self-duality $A^T\eta=\eta A$, $\tilde A^T\eta=\eta\tilde A$ (\cref{def:gau-onepole}) give
+\[
+zS'=\bigl(-P(-z)^TA^T+\tilde A^TP(-z)^T\bigr)\eta P(z)+P(-z)^T\eta\bigl(AP(z)-P(z)\tilde A\bigr)=\tilde A^TS-S\tilde A,
+\]
+so $T:=\eta^{-1}S$ satisfies $zT'=\tilde AT-T\tilde A$ and $T=t(z)\,1$ by \cref{thm:gau-U}~(b) for $(\tilde A,\tilde A)$. At $u=0$, by \cref{lem:gau-R1} (column $1$ of $P(0,z)$ is $\cn(z)\mathbf e_1$, and $P_{22}(0,\cdot)=\cn$ as $r=\tilde r$) and $\eta_{a1}=5\delta_{a2}$, $S_{21}(0,z)=5P_{22}(0,-z)\cn(z)=5\cn(-z)\cn(z)$, while $S_{21}=5t(z)$. The consequences follow from $(\Pc\cn)_{11}(0,z)=\cn(z)$: $\cn(z)\cn(-z)=1$ forces $\cn(0)=\pm1$ and is equivalent to the oddness of $\log(\cn/\cn(0))$, and graded gauges have $\cn\in\Bbbk\fps{z^5}$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The normalisation series}
+\label{sec:gau-R0}
+
+We compare $\Pc$ applied to the model columns with the rows of \cref{def:set-rows}: colour $0$ in \cref{thm:gau-R0}, the others by colour covariance (\cref{cor:gau-colours}). Here $\theta_u:=u\,\dd/\dd u$, $\theta_{\zh}:=\zh\,\dd/\dd\zh$, and a series $\Phi(\zh,u)=\sum_n\zh^n\mathrm{ph}_n(u)$ with $\mathrm{ph}_n\in\bbQ\lser s$ is identified with $\sum_nz^ns^{-4n}\mathrm{ph}_n$ through $\zh=z/s^4=L^4z$ (\cref{def:set-points}); $\Dq$ acts on $\bbQ\lser s$ as in \cref{lem:gau-confexp}.
+
+\begin{lem}[HPF]\genusstatus{AI-proposed, unchecked}
+\label{lem:gau-HPF}
+For $e\in\bbZ$ let $\mathscr O_e:=1+\zh(1-u)\bigl(\tfrac45\theta_{\zh}-\tfrac e5-\theta_u\bigr)$, and for $\Phi=\sum_n\zh^n\mathrm{ph}_n$ as above put $\Phi^{[0]}:=\Phi$ and $\Phi^{[j]}:=\mathscr O_{-j}\Phi^{[j-1]}$, $j=1,\dots,5$.
+\begin{enumerate}
+\item $L\Phi$ satisfies $\PFfive^{(0)}(L\Phi)=0$, where $\PFfive^{(0)}$ is $\PFfive$ with $z\Dq$ replaced by $z\Dq+L$ (that is, $\re^{u_0/z}L\Phi$ solves $\PFfive$ formally), if and only if
+\begin{equation}
+\label{eq:gau-HPF}
+\Phi^{[5]}-\Phi-(1-u)\Bigl[3\zh\Phi^{[4]}+\tfrac{17}5u\zh^2\Phi^{[3]}+\tfrac95u^2\zh^3\Phi^{[2]}+\tfrac{274}{625}u^3\zh^4\Phi^{[1]}+\tfrac{24}{625}u^4\zh^5\Phi\Bigr]=0 .
+\end{equation}
+\item The coefficient of $\zh^{n+1}$ of the left side of \eqref{eq:gau-HPF} is $(1-u)\bigl[(4n-5\theta_u)\mathrm{ph}_n+r_n\bigr]$, where, with $\Phi^\flat_{j,n}$ the coefficient of $\zh^n$ of $\Phi^{[j]}$ computed with $\mathrm{ph}_n$ replaced by $0$ (and $\Phi^{[j]}_m:=\coef{\zh^m}\Phi^{[j]}$, zero for $m<0$),
+\[
+r_n:=\sum_{j=1}^5\Bigl(\frac{4n+j}5-\theta_u\Bigr)\Phi^\flat_{j-1,n}-3\Phi^\flat_{4,n}-\tfrac{17}5u\Phi^{[3]}_{n-1}-\tfrac95u^2\Phi^{[2]}_{n-2}-\tfrac{274}{625}u^3\Phi^{[1]}_{n-3}-\tfrac{24}{625}u^4\mathrm{ph}_{n-4}
+\]
+depends only on $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$; the coefficient of $\zh^0$ of the left side is $\Phi^{[5]}_0-\mathrm{ph}_0=0$, as every $\mathscr O_e$ preserves the coefficient of $\zh^0$. So, $1-u$ being non-zero in the field $\bbQ\lser s$, \eqref{eq:gau-HPF} holds if and only if $(4n-5\theta_u)\mathrm{ph}_n=-r_n$ for all $n\geq0$; here $r_0=0$, and $r_1=\frac35$ when $\mathrm{ph}_0=1$.
+\item If every $\mathrm{ph}_n$ lies in $\bbQ\fps u$, \eqref{eq:gau-HPF} reads $(4n-5k)\coef{u^k}\mathrm{ph}_n=-\coef{u^k}r_n$ for all $n,k\geq0$: for $5k\neq4n$ the coefficient $\coef{u^k}\mathrm{ph}_n$ is fixed by $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$, while for $n=5m$ the coefficient $\fc_m:=\coef{u^{4m}}\mathrm{ph}_{5m}$ is free and $\coef{u^{4m}}r_{5m}=0$ is required. In particular $\mathrm{ph}_0$ is a constant, and $\mathrm{ph}_0=1$ forces $\mathrm{ph}_1=-\frac3{20}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\emph{Step 1.} From $\Dq(s^cf)=(1-u)s^{c-5}\bigl(-\frac c5-\theta_u\bigr)f$ (as $\Dq=-(1-u)u^{-1}\theta_u$), the coefficient of $z^m$ of $(z\Dq+L)(s^eF^\flat)$, $F^\flat=\sum_m\zh^mF^\flat_m$ (a local letter), is $s^{e-4m-1}\bigl[F^\flat_m+(1-u)\bigl(\frac{4(m-1)-e}5-\theta_u\bigr)F^\flat_{m-1}\bigr]$; so $(z\Dq+L)(s^eF^\flat)=s^{e-1}\mathscr O_eF^\flat$. \emph{Step 2.} By induction $(z\Dq+L)^j(s^{-1}\Phi)=s^{-1-j}\Phi^{[j]}$; as $z=s^4\zh$, $z^m(z\Dq+L)^{5-m}(L\Phi)$ is $s^{-1}u^{m-1}\zh^m\Phi^{[5-m]}$. \emph{Step 3.} With $M=z\Dq$, $5^5q=1-u$ and the elementary symmetric functions $(\sigma_1,\dots,\sigma_5)=(3,\frac{17}5,\frac95,\frac{274}{625},\frac{24}{625})$ of $\frac15,\dots,\frac55$, $\PFfive=uM^5-1-(1-u)\sum_{k=1}^5\sigma_kz^kM^{5-k}$; replacing $M$ by $z\Dq+L$, applying to $L\Phi$ and using Step~2 gives $s^{-1}$ times the left side of \eqref{eq:gau-HPF}, which is (i).
+\emph{Step 4.} By definition $\Phi^{[j]}_m=\Phi^{[j-1]}_m+(1-u)\bigl(\frac{4(m-1)+j}5-\theta_u\bigr)\Phi^{[j-1]}_{m-1}$, so $\Phi^{[5]}_{n+1}-\mathrm{ph}_{n+1}=(1-u)\sum_{j=1}^5(\frac{4n+j}5-\theta_u)\Phi^{[j-1]}_n$; with $\Phi^{[j]}_n=\mathrm{ph}_n+\Phi^\flat_{j,n}$ the terms in $\mathrm{ph}_n$ are $(1-u)\bigl[\sum_{j=1}^5(\frac{4n+j}5-\theta_u)-3\bigr]\mathrm{ph}_n=(1-u)(4n-5\theta_u)\mathrm{ph}_n$, and the rest is $(1-u)r_n$. Clearly $r_0=0$; for $\mathrm{ph}_0=1$, $\Phi^\flat_{j,1}=(1-u)\frac{j(j+1)}{10}$ and $(c-\theta_u)(1-u)=c(1-u)+u$ give $r_1=\sum_{j=2}^5\frac{j(j-1)}{10}\bigl(\frac{4+j}5(1-u)+u\bigr)-6(1-u)-\frac{17}5u=\frac35$.
+\emph{Step 5.} (iii) follows from $\theta_uu^k=ku^k$: for $n=0$ it gives $\mathrm{ph}_0\in\bbQ$, and for $n=1$, with $r_1=\frac35$, $\mathrm{ph}_1=-\frac3{20}$.
+\end{proof}
+
+\input{sections/s03_gauge_7}

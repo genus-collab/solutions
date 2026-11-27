@@ -1,0 +1,280 @@
+loc_check.py  --  2026-11-03 20:14:06  Python 3.14.6
+== Engine validation (Witten-Kontsevich, Mumford ch_k, lambda classes) ==
+  [OK] <tau_0^3>_0: got 1, expected 1
+  [OK] <tau_1>_1: got 1/24, expected 1/24
+  [OK] <tau_4>_2 = Int_{Mbar_{2,1}} psi^4: got 1/1152, expected 1/1152
+  [OK] <tau_2 tau_3>_2: got 29/5760, expected 29/5760
+  [OK] <tau_2^3>_2: got 7/240, expected 7/240
+  [OK] <tau_7>_3: got 1/82944, expected 1/82944
+  [OK] <tau_2 tau_6>_3: got 77/414720, expected 77/414720
+  [OK] <tau_3 tau_5>_3: got 503/1451520, expected 503/1451520
+  [OK] <tau_4 tau_4>_3: got 607/1451520, expected 607/1451520
+  [OK] lambda_1 on Mbar_{1,1}: got 1/24, expected 1/24
+  [OK] Int_{Mbar_2} lambda_1^3: got 1/2880, expected 1/2880
+  [OK] Int_{Mbar_2} lambda_1 lambda_2: got 1/5760, expected 1/5760
+  [OK] Int_{Mbar_{2,1}} lambda_1 lambda_2 psi (= 2 Int lambda_1 lambda_2, dilaton): got 1/2880, expected 1/2880
+  [OK] Int_{Mbar_{2,1}} lambda_2 psi^2 (lambda_g conjecture 7/5760): got 7/5760, expected 7/5760
+  [OK] Int_{Mbar_3} lambda_1 lambda_2 lambda_3: got 1/1451520, expected 1/1451520
+  [OK] Int_{Mbar_3} lambda_2^3: got 1/725760, expected 1/725760
+  [OK] Int_{Mbar_3} lambda_1^6: got 1/90720, expected 1/90720
+  [OK] Int_{Mbar_{3,1}} lambda_3 psi^4 (lambda_g conjecture 31/967680): got 31/967680, expected 31/967680
+  [OK] Int_{Mbar_{1,1}} Lambda^vee(w) = -1/24 (w=7): got -1/24, expected -1/24
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(0,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0,), w=3: got 3/8, expected 3/8
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(1,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1,), w=3: got -33/16, expected -33/16
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(0, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 1), w=3: got 3/8, expected 3/8
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(0, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 2), w=3: got -33/16, expected -33/16
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(1, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 0), w=3: got 3/8, expected 3/8
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(1, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 1), w=3: got -33/16, expected -33/16
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(2, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 0), w=3: got -33/16, expected -33/16
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(0,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0,), w=-5/7: got 25/1176, expected 25/1176
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(1,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1,), w=-5/7: got -275/2352, expected -275/2352
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(0, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 1), w=-5/7: got 25/1176, expected 25/1176
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(0, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 2), w=-5/7: got -275/2352, expected -275/2352
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(1, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 0), w=-5/7: got 25/1176, expected 25/1176
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(1, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 1), w=-5/7: got -275/2352, expected -275/2352
+  [OK] Int Lambda^vee_1(w)Lambda^vee_1(-w) Lambda^vee(11/2) psi^(2, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 0), w=-5/7: got -275/2352, expected -275/2352
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(2,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2,), w=3: got 63/640, expected 63/640
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(3,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3,), w=3: got -297/320, expected -297/320
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(4,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4,), w=3: got 1089/512, expected 1089/512
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(0, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 3), w=3: got 63/640, expected 63/640
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(0, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 4), w=3: got -297/320, expected -297/320
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(0, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 5), w=3: got 1089/512, expected 1089/512
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(1, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 2), w=3: got 189/640, expected 189/640
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(1, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 3), w=3: got -891/320, expected -891/320
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(1, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 4), w=3: got 3267/512, expected 3267/512
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(2, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 1), w=3: got 189/640, expected 189/640
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(2, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 2), w=3: got -495/128, expected -495/128
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(2, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 3), w=3: got 31581/2560, expected 31581/2560
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(3, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 0), w=3: got 63/640, expected 63/640
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(3, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 1), w=3: got -891/320, expected -891/320
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(3, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 2), w=3: got 31581/2560, expected 31581/2560
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(4, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 0), w=3: got -297/320, expected -297/320
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(4, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 1), w=3: got 3267/512, expected 3267/512
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(5, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 0), w=3: got 1089/512, expected 1089/512
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(2,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2,), w=-5/7: got 125/395136, expected 125/395136
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(3,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3,), w=-5/7: got -1375/460992, expected -1375/460992
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(4,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4,), w=-5/7: got 75625/11063808, expected 75625/11063808
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(0, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 3), w=-5/7: got 125/395136, expected 125/395136
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(0, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 4), w=-5/7: got -1375/460992, expected -1375/460992
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(0, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 5), w=-5/7: got 75625/11063808, expected 75625/11063808
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(1, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 2), w=-5/7: got 125/131712, expected 125/131712
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(1, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 3), w=-5/7: got -1375/153664, expected -1375/153664
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(1, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 4), w=-5/7: got 75625/3687936, expected 75625/3687936
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(2, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 1), w=-5/7: got 125/131712, expected 125/131712
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(2, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 2), w=-5/7: got -34375/2765952, expected -34375/2765952
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(2, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 3), w=-5/7: got 438625/11063808, expected 438625/11063808
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(3, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 0), w=-5/7: got 125/395136, expected 125/395136
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(3, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 1), w=-5/7: got -1375/153664, expected -1375/153664
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(3, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 2), w=-5/7: got 438625/11063808, expected 438625/11063808
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(4, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 0), w=-5/7: got -1375/460992, expected -1375/460992
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(4, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 1), w=-5/7: got 75625/3687936, expected 75625/3687936
+  [OK] Int Lambda^vee_2(w)Lambda^vee_2(-w) Lambda^vee(11/2) psi^(5, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 0), w=-5/7: got 75625/11063808, expected 75625/11063808
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4,), w=3: got 837/35840, expected 837/35840
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5,), w=3: got -4059/14336, expected -4059/14336
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(6,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(6,), w=3: got 22869/20480, expected 22869/20480
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(7,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(7,), w=3: got -11979/8192, expected -11979/8192
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(0, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 5), w=3: got 837/35840, expected 837/35840
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(0, 6) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 6), w=3: got -4059/14336, expected -4059/14336
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(0, 7) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 7), w=3: got 22869/20480, expected 22869/20480
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(0, 8) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 8), w=3: got -11979/8192, expected -11979/8192
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(1, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 4), w=3: got 837/7168, expected 837/7168
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(1, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 5), w=3: got -20295/14336, expected -20295/14336
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(1, 6) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 6), w=3: got 22869/4096, expected 22869/4096
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(1, 7) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 7), w=3: got -59895/8192, expected -59895/8192
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(2, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 3), w=3: got 837/3584, expected 837/3584
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(2, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 4), w=3: got -230571/71680, expected -230571/71680
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(2, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 5), w=3: got 1055241/71680, expected 1055241/71680
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(2, 6) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 6), w=3: got -922383/40960, expected -922383/40960
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(3, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 2), w=3: got 837/3584, expected 837/3584
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(3, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 3), w=3: got -148599/35840, expected -148599/35840
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(3, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 4), w=3: got 1675971/71680, expected 1675971/71680
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(3, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 5), w=3: got -6025437/143360, expected -6025437/143360
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 1), w=3: got 837/7168, expected 837/7168
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 2), w=3: got -230571/71680, expected -230571/71680
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 3), w=3: got 1675971/71680, expected 1675971/71680
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 4), w=3: got -7271253/143360, expected -7271253/143360
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 0), w=3: got 837/35840, expected 837/35840
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 1), w=3: got -20295/14336, expected -20295/14336
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 2), w=3: got 1055241/71680, expected 1055241/71680
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 3), w=3: got -6025437/143360, expected -6025437/143360
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(6, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(6, 0), w=3: got -4059/14336, expected -4059/14336
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(6, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(6, 1), w=3: got 22869/4096, expected 22869/4096
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(6, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(6, 2), w=3: got -922383/40960, expected -922383/40960
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(7, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(7, 0), w=3: got 22869/20480, expected 22869/20480
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(7, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(7, 1), w=3: got -59895/8192, expected -59895/8192
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(8, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(8, 0), w=3: got -11979/8192, expected -11979/8192
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4,), w=-5/7: got 96875/22769316864, expected 96875/22769316864
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5,), w=-5/7: got -7046875/136615901184, expected -7046875/136615901184
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(6,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(6,), w=-5/7: got 378125/1858719744, expected 378125/1858719744
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(7,) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(7,), w=-5/7: got -20796875/78066229248, expected -20796875/78066229248
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(0, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 5), w=-5/7: got 96875/22769316864, expected 96875/22769316864
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(0, 6) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 6), w=-5/7: got -7046875/136615901184, expected -7046875/136615901184
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(0, 7) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 7), w=-5/7: got 378125/1858719744, expected 378125/1858719744
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(0, 8) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(0, 8), w=-5/7: got -20796875/78066229248, expected -20796875/78066229248
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(1, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 4), w=-5/7: got 484375/22769316864, expected 484375/22769316864
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(1, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 5), w=-5/7: got -35234375/136615901184, expected -35234375/136615901184
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(1, 6) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 6), w=-5/7: got 1890625/1858719744, expected 1890625/1858719744
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(1, 7) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(1, 7), w=-5/7: got -103984375/78066229248, expected -103984375/78066229248
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(2, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 3), w=-5/7: got 484375/11384658432, expected 484375/11384658432
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(2, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 4), w=-5/7: got -80059375/136615901184, expected -80059375/136615901184
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(2, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 5), w=-5/7: got 122134375/45538633728, expected 122134375/45538633728
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(2, 6) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(2, 6), w=-5/7: got -45753125/11152318464, expected -45753125/11152318464
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(3, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 2), w=-5/7: got 484375/11384658432, expected 484375/11384658432
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(3, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 3), w=-5/7: got -51596875/68307950592, expected -51596875/68307950592
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(3, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 4), w=-5/7: got 7184375/1686616064, expected 7184375/1686616064
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(3, 5) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(3, 5), w=-5/7: got -2092165625/273231802368, expected -2092165625/273231802368
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 1), w=-5/7: got 484375/22769316864, expected 484375/22769316864
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 2), w=-5/7: got -80059375/136615901184, expected -80059375/136615901184
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 3), w=-5/7: got 7184375/1686616064, expected 7184375/1686616064
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(4, 4) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(4, 4), w=-5/7: got -2524740625/273231802368, expected -2524740625/273231802368
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 0), w=-5/7: got 96875/22769316864, expected 96875/22769316864
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 1), w=-5/7: got -35234375/136615901184, expected -35234375/136615901184
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 2), w=-5/7: got 122134375/45538633728, expected 122134375/45538633728
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(5, 3) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(5, 3), w=-5/7: got -2092165625/273231802368, expected -2092165625/273231802368
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(6, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(6, 0), w=-5/7: got -7046875/136615901184, expected -7046875/136615901184
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(6, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(6, 1), w=-5/7: got 1890625/1858719744, expected 1890625/1858719744
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(6, 2) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(6, 2), w=-5/7: got -45753125/11152318464, expected -45753125/11152318464
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(7, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(7, 0), w=-5/7: got 378125/1858719744, expected 378125/1858719744
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(7, 1) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(7, 1), w=-5/7: got -103984375/78066229248, expected -103984375/78066229248
+  [OK] Int Lambda^vee_3(w)Lambda^vee_3(-w) Lambda^vee(11/2) psi^(8, 0) = (-1)^h w^(2h) Int Lambda^vee(11/2) psi^(8, 0), w=-5/7: got -20796875/78066229248, expected -20796875/78066229248
+  [OK] Int Hodge_v psi^() product form == exp(-sum (k-1)! p_k ch_k) form, h=2: got -19/324000, expected -19/324000
+  [OK] Int Hodge_v psi^(0,) product form == exp(-sum (k-1)! p_k ch_k) form, h=2: got 0, expected 0
+  [OK] Int Hodge_v psi^(1,) product form == exp(-sum (k-1)! p_k ch_k) form, h=2: got -19/162000, expected -19/162000
+  [OK] Int Hodge_v psi^(4,) product form == exp(-sum (k-1)! p_k ch_k) form, h=2: got 1/1152, expected 1/1152
+  [OK] Int Hodge_v psi^(1, 2) product form == exp(-sum (k-1)! p_k ch_k) form, h=2: got 15463/1728000, expected 15463/1728000
+  [OK] Int Hodge_v psi^(0, 3) product form == exp(-sum (k-1)! p_k ch_k) form, h=2: got 15463/5184000, expected 15463/5184000
+  [OK] Int Hodge_v psi^() product form == exp(-sum (k-1)! p_k ch_k) form, h=3: got -19/349920000, expected -19/349920000
+  [OK] Int Hodge_v psi^(0,) product form == exp(-sum (k-1)! p_k ch_k) form, h=3: got 0, expected 0
+  [OK] Int Hodge_v psi^(1,) product form == exp(-sum (k-1)! p_k ch_k) form, h=3: got -19/87480000, expected -19/87480000
+  [OK] Int Hodge_v psi^(7,) product form == exp(-sum (k-1)! p_k ch_k) form, h=3: got 1/82944, expected 1/82944
+  [OK] Int Hodge_v psi^(1, 2) product form == exp(-sum (k-1)! p_k ch_k) form, h=3: got -19/20412000, expected -19/20412000
+  [OK] Int Hodge_v psi^(0, 3) product form == exp(-sum (k-1)! p_k ch_k) form, h=3: got -19/102060000, expected -19/102060000
+  engine validation: ALL OK
+== Control: X = O(-1)+O(-1) -> P^1, CY torus (eps_1+eps_2 = lambda_0+lambda_1), e(-R pi_* f^*N) twist ==
+   expected from GV (F = sum_k (1/k)(2 sin(k g_s/2))^-2 Q^k): N_{0,1}=1, N_{1,1}=1/12, N_{2,1}=1/240, N_{0,2}=1/8, N_{1,2}=1/24, N_{2,2}=1/120; constant maps (-1)^g chi/2 Int lambda_{g-1}^3 with chi=2: N_{2,0}=1/2880, N_{3,0}=-1/725760
+   weights lambda=('2', '-3/7'), eps=(5/3,-2/21)
+  [OK] local P1 N_{0,1}: got 1, expected 1
+  [OK] local P1 N_{1,1}: got 1/12, expected 1/12
+  [OK] local P1 N_{2,1}: got 1/240, expected 1/240
+  [OK] local P1 N_{0,2}: got 1/8, expected 1/8
+  [OK] local P1 N_{1,2}: got 1/24, expected 1/24
+  [OK] local P1 N_{2,2}: got 1/120, expected 1/120
+  [OK] local P1 N_{2,0}: got 1/2880, expected 1/2880
+  [OK] local P1 N_{3,0}: got -1/725760, expected -1/725760
+   weights lambda=('1/3', '11/2'), eps=(-7,77/6)
+  [OK] local P1 N_{0,1}: got 1, expected 1
+  [OK] local P1 N_{1,1}: got 1/12, expected 1/12
+  [OK] local P1 N_{2,1}: got 1/240, expected 1/240
+  [OK] local P1 N_{0,2}: got 1/8, expected 1/8
+  [OK] local P1 N_{1,2}: got 1/24, expected 1/24
+  [OK] local P1 N_{2,2}: got 1/120, expected 1/120
+  [OK] local P1 N_{2,0}: got 1/2880, expected 1/2880
+  [OK] local P1 N_{3,0}: got -1/725760, expected -1/725760
+  local P^1 control: ALL OK
+== Formal quintic: T=(C^*)^5 on P^4, e(R pi_* f^*O(5)) in the numerator ==
+-- sample A=(1,3,7,12,20)
+   e_i = e(T_{p_i}): ['2508', '-1224', '1560', '-3960', '33592']
+   W_i^0 = e_i/(5 lambda_i): ['2508/5', '-408/5', '312/7', '-66', '8398/25']
+   Hodge weights wt_0: ['-2', '-6', '-11', '-19', '-5']
+   N_{0,1} = 2875
+   N_{0,2} = 4876875/8
+   N_{1,1} = -8403/70
+   N_{1,2} = -6817099/84
+   N_{2,1} = 52185778973/6174000000
+   N_{2,2} = 3445771977103/617400000
+   F_2(0) = sum_i (W_i^0)^(g-1) Int_Mbar_2 Hodge_wt_i = 685199687/27440000000
+   F_3(0) = sum_i (W_i^0)^(g-1) Int_Mbar_3 Hodge_wt_i = 15409216423738026241/7410192854400000000000
+   (0.2s)
+-- sample B=(2/3,-5,4,15/2,9)
+   e_i = e(T_{p_i}): ['-87125/81', '8925', '525', '-7175/16', '875']
+   W_i^0 = e_i/(5 lambda_i): ['-17425/54', '-357', '105/4', '-287/24', '175/9']
+   Hodge weights wt_0: ['17/3', '-10/3', '-41/6', '-25/3', '-10/3']
+   N_{0,1} = 2875
+   N_{0,2} = 4876875/8
+   N_{1,1} = -86231/1080
+   N_{1,2} = -25898741/432
+   N_{2,1} = -16983388003/104976000000
+   N_{2,2} = 46349450294959/20995200000
+   F_2(0) = sum_i (W_i^0)^(g-1) Int_Mbar_2 Hodge_wt_i = -176706721003/25194240000000
+   F_3(0) = sum_i (W_i^0)^(g-1) Int_Mbar_3 Hodge_wt_i = 136753832515980509/2203992115200000000000
+   (0.3s)
+-- sample 3A (homogeneity)
+   e_i = e(T_{p_i}): ['203148', '-99144', '126360', '-320760', '2720952']
+   W_i^0 = e_i/(5 lambda_i): ['67716/5', '-11016/5', '8424/7', '-1782', '226746/25']
+   Hodge weights wt_0: ['-6', '-18', '-33', '-57', '-15']
+   N_{0,1} = 2875
+   N_{0,2} = 4876875/8
+   N_{1,1} = -8403/70
+   N_{1,2} = -6817099/84
+   N_{2,1} = 52185778973/6174000000
+   N_{2,2} = 3445771977103/617400000
+   F_2(0) = sum_i (W_i^0)^(g-1) Int_Mbar_2 Hodge_wt_i = 685199687/27440000000
+   F_3(0) = sum_i (W_i^0)^(g-1) Int_Mbar_3 Hodge_wt_i = 15409216423738026241/7410192854400000000000
+   (0.3s)
+-- sample zeta: lambda_i = zeta^i
+   e_i = e(T_{p_i}): ['5', '((-5) + (-5)z^1 + (-5)z^2 + (-5)z^3)', '((5)z^3)', '((5)z^2)', '((5)z^1)']
+   W_i^0 = e_i/(5 lambda_i): ['1', '((1)z^3)', '((1)z^1)', '((-1) + (-1)z^1 + (-1)z^2 + (-1)z^3)', '((1)z^2)']
+   Hodge weights wt_0: ['((1) + (-1)z^1)', '((1) + (-1)z^2)', '((1) + (-1)z^3)', '((2) + (1)z^1 + (1)z^2 + (1)z^3)', '-5']
+   N_{0,1} = 2875
+   N_{0,2} = 4876875/8
+   N_{1,1} = -305/6
+   N_{1,2} = -535775/12
+   N_{2,1} = 2129/5760
+   N_{2,2} = 203401/144
+   F_2(0) = sum_i (W_i^0)^(g-1) Int_Mbar_2 Hodge_wt_i = -19/9600
+   F_3(0) = sum_i (W_i^0)^(g-1) Int_Mbar_3 Hodge_wt_i = 1/224000
+   (13.5s)
+-- checks
+  [OK] N_{0,1} = 2875 [A=(1,3,7,12,20)]: got 2875, expected 2875
+  [OK] N_{0,2} = 4876875/8 [A=(1,3,7,12,20)]: got 4876875/8, expected 4876875/8
+  [OK] N_{0,1} = 2875 [B=(2/3,-5,4,15/2,9)]: got 2875, expected 2875
+  [OK] N_{0,2} = 4876875/8 [B=(2/3,-5,4,15/2,9)]: got 4876875/8, expected 4876875/8
+  [OK] N_{0,1} = 2875 [3A (homogeneity)]: got 2875, expected 2875
+  [OK] N_{0,2} = 4876875/8 [3A (homogeneity)]: got 4876875/8, expected 4876875/8
+  [OK] N_{0,1} = 2875 [zeta: lambda_i = zeta^i]: got 2875, expected 2875
+  [OK] N_{0,2} = 4876875/8 [zeta: lambda_i = zeta^i]: got 4876875/8, expected 4876875/8
+  [OK] N_{1,1} degree-0 homogeneity (A vs 3A): got True, expected True
+  [info] N_{1,1} lambda-independent between samples A and B: False
+  [OK] N_{1,2} degree-0 homogeneity (A vs 3A): got True, expected True
+  [info] N_{1,2} lambda-independent between samples A and B: False
+  [OK] N_{2,1} degree-0 homogeneity (A vs 3A): got True, expected True
+  [info] N_{2,1} lambda-independent between samples A and B: False
+  [OK] N_{2,2} degree-0 homogeneity (A vs 3A): got True, expected True
+  [info] N_{2,2} lambda-independent between samples A and B: False
+  [OK] F_2(0) degree-0 homogeneity (A vs 3A): got True, expected True
+  [info] F_2(0) lambda-independent between samples A and B: False
+  [OK] F_3(0) degree-0 homogeneity (A vs 3A): got True, expected True
+  [info] F_3(0) lambda-independent between samples A and B: False
+  zeta point: rationality (LP remark; Galois invariance of the symmetric sum):
+  [OK] N_{0,1} at zeta in Q: got True, expected True
+  [OK] N_{0,2} at zeta in Q: got True, expected True
+  [OK] N_{1,1} at zeta in Q: got True, expected True
+  [OK] N_{1,2} at zeta in Q: got True, expected True
+  [OK] N_{2,1} at zeta in Q: got True, expected True
+  [OK] N_{2,2} at zeta in Q: got True, expected True
+  [OK] F_2(0) at zeta in Q: got True, expected True
+  [OK] F_3(0) at zeta in Q: got True, expected True
+  [info] true quintic constant maps (-1)^g chi/2 Int lambda_(g-1)^3, chi=-200: g=2: -5/144,  g=3: 5/36288
+  [info] zeta point: 5*Int_Mbar_2 Hodge_wt_0 = -19/9600, F_2(0) = -19/9600
+  [info] zeta point: 5*Int_Mbar_3 Hodge_wt_0 = 1/224000, F_3(0) = 1/224000
+-- d = 1 breakdown: edge p_i p_j (degree-1 cover), contracted genera (h_i, h_j); 'all lines' = sum over ordered pairs i != j with weight 1/2
+   [A=(1,3,7,12,20)] g=1: (h_i,h_j)=(0,1): all lines -8403/140; line p_0p_1 -135499/372096 | (h_i,h_j)=(1,0): all lines -8403/140; line p_0p_1 291109/124032
+   [A=(1,3,7,12,20)] g=2: (h_i,h_j)=(0,2): all lines 346091548795937398938629/7586932638789504000000; line p_0p_1 3359438537/40186368000 | (h_i,h_j)=(1,1): all lines -7324250675524136863/88477348557312000; line p_0p_1 -433461301/446515200 | (h_i,h_j)=(2,0): all lines 346091548795937398938629/7586932638789504000000; line p_0p_1 1362432617/496128000
+   [B=(2/3,-5,4,15/2,9)] g=1: (h_i,h_j)=(0,1): all lines -86231/2160; line p_0p_1 40658/286875 | (h_i,h_j)=(1,0): all lines -86231/2160; line p_0p_1 17168/34425
+   [B=(2/3,-5,4,15/2,9)] g=2: (h_i,h_j)=(0,2): all lines 986107442209452877577/4997831987232000000; line p_0p_1 -513724183/81281250000 | (h_i,h_j)=(1,1): all lines -24358314213921679/61701629472000; line p_0p_1 -752173/14630625 | (h_i,h_j)=(2,0): all lines 986107442209452877577/4997831987232000000; line p_0p_1 -202673837/1404540000
+   [3A (homogeneity)] g=1: (h_i,h_j)=(0,1): all lines -8403/140; line p_0p_1 -135499/372096 | (h_i,h_j)=(1,0): all lines -8403/140; line p_0p_1 291109/124032
+   [3A (homogeneity)] g=2: (h_i,h_j)=(0,2): all lines 346091548795937398938629/7586932638789504000000; line p_0p_1 3359438537/40186368000 | (h_i,h_j)=(1,1): all lines -7324250675524136863/88477348557312000; line p_0p_1 -433461301/446515200 | (h_i,h_j)=(2,0): all lines 346091548795937398938629/7586932638789504000000; line p_0p_1 1362432617/496128000
+   [zeta: lambda_i = zeta^i] g=1: (h_i,h_j)=(0,1): all lines -305/12; line p_0p_1 ((133/24) + (123/8)z^1 + (51/4)z^2 + (101/24)z^3) | (h_i,h_j)=(1,0): all lines -305/12; line p_0p_1 ((-59/6) + (-123/8)z^1 + (-67/6)z^2 + (-21/8)z^3)
+   [zeta: lambda_i = zeta^i] g=2: (h_i,h_j)=(0,2): all lines -24161/11520; line p_0p_1 ((-2179/16000) + (-41/960)z^1 + (2547/16000)z^2 + (6397/36000)z^3) | (h_i,h_j)=(1,1): all lines 2629/576; line p_0p_1 ((3817/14400) + (-1837/4800)z^2 + (-1837/4800)z^3) | (h_i,h_j)=(2,0): all lines -24161/11520; line p_0p_1 ((-4487/48000) + (41/960)z^1 + (15869/72000)z^2 + (9691/48000)z^3)
+== SUMMARY TABLE (formal quintic) ==
+quantity  A=(1,3,7,12,20)                               B=(2/3,-5,4,15/2,9)                           3A (homogeneity)                              zeta: lambda_i = zeta^i                       
+N_{0,1}   2875                                          2875                                          2875                                          2875                                          
+N_{0,2}   4876875/8                                     4876875/8                                     4876875/8                                     4876875/8                                     
+N_{1,1}   -8403/70                                      -86231/1080                                   -8403/70                                      -305/6                                        
+N_{1,2}   -6817099/84                                   -25898741/432                                 -6817099/84                                   -535775/12                                    
+N_{2,1}   52185778973/6174000000                        -16983388003/104976000000                     52185778973/6174000000                        2129/5760                                     
+N_{2,2}   3445771977103/617400000                       46349450294959/20995200000                    3445771977103/617400000                       203401/144                                    
+F_2(0)    685199687/27440000000                         -176706721003/25194240000000                  685199687/27440000000                         -19/9600                                      
+F_3(0)    15409216423738026241/7410192854400000000000   136753832515980509/2203992115200000000000     15409216423738026241/7410192854400000000000   1/224000                                      
+  quintic checks: ALL OK
+total time 14.7s; overall: ALL OK

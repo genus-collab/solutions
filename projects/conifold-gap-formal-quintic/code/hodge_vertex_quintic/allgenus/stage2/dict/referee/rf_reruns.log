@@ -1,0 +1,14 @@
+rf_reruns.log: referee re-runs of existing scripts (2026-11-14), outputs compared with the worker's logs
+SHA-256 critic/ originals, worker scratch copies, referee scratch copies:
+  f2766989b3608fac161cee8cdc61109ef9e8fa0fc4dd75de872633819dfdf488  critic/cr_dictionary.py
+  f2766989b3608fac161cee8cdc61109ef9e8fa0fc4dd75de872633819dfdf488  worker-scratch crcopy/cr_dictionary.py
+  f2766989b3608fac161cee8cdc61109ef9e8fa0fc4dd75de872633819dfdf488  referee-scratch crcopy/cr_dictionary.py
+  ce51185bc685c07b0771990c2699a3ce4e44313115dd39ab67ad4ea28b0dfbdf  critic/cr_laurent.py
+  ce51185bc685c07b0771990c2699a3ce4e44313115dd39ab67ad4ea28b0dfbdf  worker-scratch crcopy/cr_laurent.py
+  ce51185bc685c07b0771990c2699a3ce4e44313115dd39ab67ad4ea28b0dfbdf  referee-scratch crcopy/cr_laurent.py
+critic/cr_dictionary.py 80 320 (referee copy, wall 12m55.927s): byte-identical to ../cr_dictionary_80_320.log
+  its last line: RESULT: ALL CHECKS PASSED
+../dict_verify.py 160 60: byte-identical to ../dict_verify_160_60.log
+../dict_xcheck.py 100: byte-identical to ../dict_xcheck_100.log
+worker's copies of the critic logs in .. equal the worker's scratch logs: 80_320 yes, 100_400 yes
+not re-run: critic/cr_dictionary.py 100 400 (same code, 77 min; covered by rf_check.py Q 400 and the mod-p runs to w <= 1000)

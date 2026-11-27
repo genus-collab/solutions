@@ -1,0 +1,87 @@
+% Section 9, part 2 of 4: Theorem LMI and its proof. Continued in part 3.
+
+\begin{thm}[Theorem LMI: local Mellin inversion]
+\label{thm:gam-lmi}
+Let LMI data be given (\cref{def:gam-lmidata}).
+\begin{enumerate}
+\item For $L\in U_*$ every coefficient $c^{\cF}_n(L)$ depends only on $L$, not on the branch of $\log a$ or on $\lambda(L)$, and $c^{\cF}_n$ is holomorphic on $U_*$.
+\item Every $c^{\cF}_n$ extends holomorphically to $L=s_*$.
+\item With these extensions,
+\begin{equation}
+\label{eq:gam-lmi}
+c^{\cF}(z;s_*)=\exp\bigl(\tilde\varphi(\delta)/z\bigr)\,\frac{\cF(s_*+\delta,z)}{\cF(s_*,0)},\qquad \delta=-\frac{M_*z}{a_*},
+\end{equation}
+where both factors are re-expanded in $z$: $\tilde\varphi(\delta)/z=\sum_{k\geq 2}\varphi_k(-M_*/a_*)^kz^{k-1}$ and $\cF(s_*+\delta,z)=\sum_{n\geq 0}z^n\sum_{m+j=n}\cF_m^{(j)}(s_*)\,(-M_*/a_*)^j/j!$.
+\end{enumerate}
+\end{thm}
+
+The hypotheses enter the proof as follows. That $a$ is exactly linear in $\sigma$ and that $\varphi$ and $\cF$ do not involve $\lambda$ makes the chart data of Step~2 below holomorphic at $L=s_*$; the condition $\cF(s_*,0)\neq 0$ is used for the normalisation at $s_*$, and it is a genuine hypothesis (\cref{rmk:gam-necessity}); the integer $M_*$ enters through \cref{lem:fsp-stirling}. The proof applies verbatim when $\cF$ depends in addition holomorphically on $\mathsf Q$, and the value is then that of $\cF$ at $\mathsf Q=0$; this is not used.
+
+\begin{proof}
+\emph{Step 0: (i).} For $k\geq 2$ the Taylor coefficient of order $k$ at $L$ of $a\log a-a$ is $(-1)^ka_*/(k(k-1)(L-s_*)^{k-1})$; it involves no branch, and $\lambda(L)$ enters only the term of order one of $S$, which vanishes at the critical point. The normalised amplitude $A(L+t,z)/A(L,0)$ is the product of the binomial series $(1+t/(L-s_*))^{M_*-1/2}$, of the series $\mathrm{Poch}_{M_*}(z/a(L+t))\exp(\sum_k\bk_k(z/a(L+t))^{2k-1})$ in $t$, where $a(L+t)=a(L)(1+t/(L-s_*))$, and of $\cF(L+t,z)/\cF_0(L)$; it involves neither $\lambda$ nor a branch. By \cref{lem:fsp-univ}, $c^{\cF}_n(L)$ is a polynomial with rational coefficients in finitely many of these Taylor coefficients and in $-1/S''(L)=-(L-s_*)/(a_*+(L-s_*)\varphi''(L))$. Each of them is a holomorphic function of $L$ on $U_*$; the Taylor coefficients of $\varphi$ and of the $\cF_m/\cF_0$ are holomorphic on all of $\bbD$. This proves (i).
+
+\emph{Step 1: two variables.} Fix $L\in U_*$ and the branch of $\log a$ near $L$ used in $\lambda=\lambda(L)$. We use a local letter $\chi$ for the logarithm of the variable of the Euler integral of $\Gamma(M_*+a/z)$, and consider, in the two variables $(\sigma,\chi)$, the formal integrand with phase and amplitude
+\[
+\Phi_2(\sigma,\chi):=\lambda\sigma+\varphi(\sigma)+a(\sigma)\chi-\re^{\chi},\qquad \re^{M_*\chi}\,\cF(\sigma,z),
+\]
+at the point $(L,\chi_L)$, $\chi_L:=\log a(L)$ (the chosen branch). It is a formal integrand in the sense of \cref{sec:fsp}: its phase and amplitude are holomorphic near the point. It is motivated by the Euler integral of $\Gamma(M_*+a(\sigma)/z)$, but that integral also carries the factor $z^{M_*+a(\sigma)/z}$, whose dependence on $\sigma$ would add $a_*\sigma\log z$ to the phase, and this factor is not part of $\Phi_2$. The gradient $(\lambda+\varphi'(\sigma)+a_*\chi,\ a(\sigma)-\re^{\chi})$ vanishes at $(L,\chi_L)$ by the choice of $\lambda$, and, since $a''=0$, the Hessian there is
+\[
+\begin{pmatrix}\varphi''(L)&a_*\\ a_*&-a(L)\end{pmatrix},\qquad\text{with determinant }-a(L)\varphi''(L)-a_*^2=-a(L)S''(L)\neq 0.
+\]
+We apply \cref{lem:fsp-fubini} with the inner variable $\chi$ and the outer variable $\sigma$. The inner Hessian $-a(L)$ is invertible. Over the coefficient ring $\bbC\fps{\sigma-L}$ the inner critical point is $\chi(\sigma):=\chi_L+\log(1+(\sigma-L)/(L-s_*))$, the branch of $\log a(\sigma)$ that continues $\chi_L$, with $\re^{\chi(\sigma)}=a(\sigma)$; the inner critical value $\lambda\sigma+\varphi(\sigma)+a(\sigma)\chi(\sigma)-a(\sigma)$ is $S(\sigma)$; the inner Hessian at $\chi(\sigma)$ is $-a(\sigma)$, so that the factor of \cref{lem:fsp-fubini} is $(a(\sigma)/a(L))^{-1/2}$. The inner series is computed by \cref{lem:fsp-cov} with the map $\chi\mapsto x:=\re^{\chi}$, which sends $\chi(\sigma)$ to $a(\sigma)$ and has the Jacobian $a(\sigma)$ there; it turns the phase $a(\sigma)\log x-x$ into $a(\sigma)\chi-\re^{\chi}$ and the amplitude $x^{M_*-1}$ into $a(\sigma)^{-1}\re^{M_*\chi}$. With \cref{lem:fsp-stirling} for the unit $a=a(\sigma)$ of $\bbC\fps{\sigma-L}$, the integer $M=M_*$ and the measure $\dd x$, this gives
+\begin{align*}
+\SPn_{\chi(\sigma)}\bigl[a(\sigma)\chi-\re^{\chi};\,\re^{M_*\chi}\bigr]&=a(\sigma)\,\SPn_{a(\sigma)}\bigl[a(\sigma)\log x-x;\,x^{M_*-1}\bigr]\\
+&=a(\sigma)^{M_*}\,\mathrm{Poch}_{M_*}\bigl(z/a(\sigma)\bigr)\exp\Bigl(\sum_{k\geq 1}\bk_k\bigl(z/a(\sigma)\bigr)^{2k-1}\Bigr).
+\end{align*}
+The factor $\cF(\sigma,z)$ does not involve $\chi$; it lies in $\bbC\fps{\sigma-L}\fps{z}$, $\bbC\fps{\sigma-L}$ being the coefficient ring of the inner series, and it is carried along by the $\bbC\fps{\sigma-L}\fps{z}$-linearity of the inner $\SPn$ in the amplitude (\cref{def:fsp-wick}). So the outer amplitude is
+\[
+\Bigl(\frac{a(\sigma)}{a(L)}\Bigr)^{-1/2}a(\sigma)^{M_*}\,\mathrm{Poch}_{M_*}\bigl(z/a(\sigma)\bigr)\exp\Bigl(\sum_{k\geq1}\bk_k\bigl(z/a(\sigma)\bigr)^{2k-1}\Bigr)\cF(\sigma,z)=a(L)^{1/2}A(\sigma,z),
+\]
+and \cref{lem:fsp-fubini} gives
+\begin{equation}
+\label{eq:gam-step1}
+\SPh_{(L,\chi_L)}\bigl[\Phi_2;\,\re^{M_*\chi}\cF\bigr]=\SPh_L\bigl[S;\,A\bigr]=c^{\cF}(z;L).
+\end{equation}
+
+\emph{Step 2: the chart.} Let $\mu$ be a second local letter and translate $\chi=\mu-\lambda/a_*$ (\cref{lem:fsp-cov}, Jacobian $1$). Put $\mu_c(L):=-\varphi'(L)/a_*$ and $p(L):=(L,\mu_c(L))$. The translation maps $p(L)$ to $(L,\chi_L)$, since $\mu_c(L)-\lambda/a_*=-\varphi'(L)/a_*+\varphi'(L)/a_*+\log a(L)=\chi_L$. Because $a$ is exactly $a_*(\sigma-s_*)$, we have $\lambda\sigma+a(\sigma)(\mu-\lambda/a_*)=\lambda s_*+a(\sigma)\mu$, and the translation turns the phase into
+\[
+\Phi_2(\sigma,\mu-\lambda/a_*)=\lambda s_*+\Psi_{\mathsf Q}(\sigma,\mu),\qquad \Psi_{\mathsf Q}(\sigma,\mu):=\varphi(\sigma)+a(\sigma)\mu-\mathsf Q\,\re^{\mu},
+\]
+where $\Psi_{\mathsf Q}$ is a phase local to this proof (as is $\Psi_0$ below), and the amplitude into $\re^{M_*(\mu-\lambda/a_*)}\cF=\mathsf Q^{M_*}\re^{M_*\mu}\cF$, with $\mathsf Q=\mathsf Q(L)=\re^{-\lambda/a_*}$ and $\mathsf Q^{M_*}:=\re^{-M_*\lambda/a_*}$. The constant $\lambda s_*$ of the phase changes only the critical value (\cref{lem:fsp-const}), and the constant factor $\mathsf Q^{M_*}$ of the amplitude cancels in $\SPh$. With \eqref{eq:gam-step1} we obtain, for $L\in U_*$,
+\begin{equation}
+\label{eq:gam-chart}
+c^{\cF}(z;L)=\SPh_{p(L)}\bigl[\Psi_{\mathsf Q(L)};\,\re^{M_*\mu}\cF\bigr].
+\end{equation}
+Here $\lambda$ has disappeared, except through $\mathsf Q(L)=a(L)\re^{\varphi'(L)/a_*}$. This function is single-valued: a change of the branch of $\log a(L)$ changes $\lambda$ by an integer multiple of $2\pi\ri a_*$ and leaves $\re^{-\lambda/a_*}$ unchanged. It is holomorphic on $\bbD$, and it has a simple zero at $s_*$.
+
+\emph{The family of critical points.} For every $L\in\bbD$, including $L=s_*$, the point $p(L)$ is a critical point of $\Psi_{\mathsf Q(L)}$: the derivative $\partial_\sigma\Psi=\varphi'(\sigma)+a_*\mu$ vanishes at $p(L)$, and $\partial_\mu\Psi=a(\sigma)-\mathsf Q(L)\re^{\mu}$ equals $a(L)-a(L)\re^{\varphi'(L)/a_*}\re^{-\varphi'(L)/a_*}=0$ there. Since $\mathsf Q(L)\re^{\mu_c(L)}=a(L)$, the Hessian at $p(L)$ is
+\[
+H(L)=\begin{pmatrix}\varphi''(L)&a_*\\ a_*&-a(L)\end{pmatrix},\qquad \det H(L)=-a_*\bigl(a_*+(L-s_*)\varphi''(L)\bigr)\neq 0\quad(L\in\bbD).
+\]
+At $L=s_*$ we have $\mathsf Q(s_*)=0$, $\Psi_0(\sigma,\mu)=\varphi(\sigma)+a(\sigma)\mu$ and $p(s_*)=(s_*,\mu_*)$ with $\mu_*:=-\varphi'(s_*)/a_*$. The family $p$ is the family of critical points of the chart through $(s_*,\mu_*)$: over the complete ring $\bbC\fps{L-s_*}$ the phase $\Psi_{\mathsf Q(L)}$, expanded at $(s_*,\mu_*)$, has there the gradient $(0,-\mathsf Q(L)\re^{\mu_*})$, with entries in the maximal ideal, and the invertible Hessian $\bigl(\begin{smallmatrix}\varphi''(s_*)&a_*\\ a_*&-\mathsf Q(L)\re^{\mu_*}\end{smallmatrix}\bigr)$; by \cref{lem:fsp-ift} it has exactly one critical point congruent to $(s_*,\mu_*)$ modulo $L-s_*$, and the Taylor expansion of $p$ at $s_*$ is one, since the Taylor expansion of the identically vanishing gradient of $\Psi_{\mathsf Q(L)}$ at $p(L)$ is the gradient of the expanded phase at the expanded point. So the right side of \eqref{eq:gam-chart} is the stationary-phase series of the chart at its critical point through $(s_*,\mu_*)$, and no choice is involved. This uniqueness is not needed below: the continuation to $L=s_*$ uses only the explicit family $p$, whose Taylor data are given in closed form; no implicit function theorem, formal or holomorphic, enters it, and no convergence of a family of critical points in $\mathsf Q$ is required.
+
+\emph{Holomorphy: (ii).} In the variables $s=\sigma-L$ and $m=\mu-\mu_c(L)$ the phase $\Psi_{\mathsf Q(L)}$ is
+\[
+\Psi_{\mathsf Q(L)}(p(L))+\bigl[\varphi(L+s)-\varphi(L)-\varphi'(L)s\bigr]+a_*sm-a(L)\bigl(\re^{m}-1-m\bigr),
+\]
+because the terms of order one cancel; so its Taylor coefficients are the $\varphi^{(k)}(L)/k!$, the number $a_*$ and the numbers $-a(L)/k!$. The normalised amplitude is $\re^{M_*m}\cF(L+s,z)/\cF_0(L)$, with the Taylor coefficients $M_*^j/j!$ and $\cF_l^{(j)}(L)/(j!\,\cF_0(L))$; and the entries of $-H(L)^{-1}$ are holomorphic on $\bbD$, because $\det H(L)$ has no zero there. By \cref{lem:fsp-univ} the $n$-th coefficient of the right side of \eqref{eq:gam-chart} is a polynomial with rational coefficients in finitely many of these functions (this is the holomorphic dependence on a parameter, compare \cref{lem:fsp-param}~(i), here along the explicit family $p$). It is therefore holomorphic on all of $\bbD$, and by \eqref{eq:gam-chart} it equals $c^{\cF}_n$ on $U_*$. This proves (ii). At $L=s_*$ the data are the Taylor data of $\Psi_0$ and of $\re^{M_*\mu}\cF$ at $(s_*,\mu_*)$ and the entries of $-H(s_*)^{-1}$; since the coefficients are given by the same universal polynomials,
+\begin{equation}
+\label{eq:gam-atQ0}
+c^{\cF}(z;s_*)=\SPh_{(s_*,\mu_*)}\bigl[\Psi_0;\,\re^{M_*\mu}\cF\bigr].
+\end{equation}
+
+\emph{Step 3: the value.} In the variables $s:=\sigma-s_*$ and $m:=\mu-\mu_*$,
+\[
+\Psi_0=\varphi(s_*)+\tilde\varphi(s)+a_*sm
+\]
+exactly: the terms $\varphi'(s_*)s+a_*\mu_*s$ cancel, and there is no term in $m$ alone and no term $s^km$ with $k\geq 2$. The amplitude is $\re^{M_*\mu_*}\re^{M_*m}\cF(s_*+s,z)$. The constant $\varphi(s_*)$ of the phase does not matter (\cref{lem:fsp-const}), and \cref{lem:gam-deltasrc} with $P=\tilde\varphi\in s^2\bbC\fps{s}$, $c=M_*$ and $A(s,z)=\cF(s_*+s,z)$ gives $\SPn_{(s_*,\mu_*)}[\Psi_0;\,\re^{M_*\mu}\cF]=\re^{M_*\mu_*}\exp(\tilde\varphi(\delta)/z)\cF(s_*+\delta,z)$, whose constant term is $\re^{M_*\mu_*}\cF(s_*,0)$. Dividing by it, \eqref{eq:gam-atQ0} gives \eqref{eq:gam-lmi}.
+\end{proof}
+
+The proof uses \cref{lem:fsp-univ}, \cref{lem:fsp-const}, \cref{lem:fsp-cov}, \cref{lem:fsp-fubini}, \cref{lem:fsp-stirling} (with \cref{lem:fsp-stirfe} for the form of $A$), \cref{lem:fsp-ift} (inside \cref{lem:fsp-fubini}, and for the uniqueness statement of Step~2, which (ii) and (iii) do not need), the linearity of $\SPn$ in the amplitude over the coefficient ring with $z$ adjoined, here $\bbC\fps{\sigma-L}\fps{z}$ (\cref{def:fsp-wick}), and \cref{lem:gam-deltasrc}. No analytic theorem enters: holomorphy is used only in the elementary form that derivatives, sums, products and quotients by functions without zeros of holomorphic functions are holomorphic. The Pochhammer factor of $A$ enters only in Step~1, through an exact identity; at $L=s_*$ the same integer $M_*$ reappears as the source $\re^{M_*m}$, which \cref{lem:gam-deltasrc} turns into the shift $\delta$.
+
+\begin{rmk}[Local Mellin inversion in words]
+\label{rmk:gam-lmi-words}
+The factor $\Gamma(M_*+a(\sigma)/z)$ has its first pole where $M_*+a(\sigma)/z=0$, that is at $\sigma=s_*+\delta$. The right side of \eqref{eq:gam-lmi} equals $\exp\bigl((\varphi(s_*+\delta)-\varphi(s_*)-\varphi'(s_*)\delta)/z\bigr)\cF(s_*+\delta,z)/\cF(s_*,0)$, and $\varphi'(s_*)\delta/z=-\varphi'(s_*)M_*/a_*$ is a constant. So the saddle series, continued to the point $s_*$, is the normalised value of the regular part $\re^{\varphi(\sigma)/z}\cF(\sigma,z)$ of the integrand at the first pole $\sigma=s_*+\delta$ of the degenerate factor. For $M_*=0$ it is the normalised regular amplitude $\cF(s_*,z)/\cF(s_*,0)$ at $s_*$ itself.
+\end{rmk}
+
+\input{sections/s09_gamma_3}

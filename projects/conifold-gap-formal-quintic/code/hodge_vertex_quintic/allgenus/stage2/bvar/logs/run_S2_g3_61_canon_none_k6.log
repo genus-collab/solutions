@@ -1,0 +1,14 @@
+====================================================================================================
+bv_run S2_g3_61_canon_none_k6   [2026-11-14T10:21:19]
+system S2: f (1 + u/3 - 2u^2/7 + 5u^3/11), g (1 - 3u/5 + u^2/2 + 2u^3/3);  B -> B (1 - 5u/4 + 7u^2/3);  normalisation canon;  control none
+   rows: 170 of 175 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^5
+PASS    rows symplectic mod (zhat^7, u^6)
+   graph sum: 42 inner graphs, wall 7 s, CPU 7 s
+   RESULT: all 41 outer graphs with edges are O(u^4): REGULAR
+   vertex graph [u^0..u^5] = ['1/25200', '-13/94500', '[2213510176520285559 mod p]', '[1580926784184155967 mod p]', '[296612498899515932 mod p]', '[2236513575392136202 mod p]']
+   vertex graph in T'' = c0 T (c0 = 1): (1/25200) T''^-4 + (0) T''^-3 + (0) T''^-2 + (0) T''^-1  -> c_3 (T'')^-4 + 0
+   [control] in the quintic t_c: (1/25200) t_c^-4 + (-1/37800) t_c^-3 + ([463367402379176565 mod p]) t_c^-2 + ([1120743554054172870 mod p]) t_c^-1
+   [control] in the model v(u): (1/25200) v^-4 + (-1/14000) v^-3 + ([1740204526865444077 mod p]) v^-2 + ([361180454521385795 mod p]) v^-1
+   total, in T'': (1/25200) T''^-4 + (0) T''^-3 + (0) T''^-2 + (0) T''^-1
+   compared with R0 (same g, prime, window): 25 of 42 outer graphs in range differ (u^0..u^5): [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+BV_RUN S2_g3_61_canon_none_k6: checks passed; edge graphs all regular; vertex law holds

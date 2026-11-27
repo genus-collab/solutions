@@ -1,0 +1,4 @@
+#!/bin/bash
+n=$(( $(cat "$(dirname "$0")/cnt" 2>/dev/null || echo 1000) + 1 )); echo $n > "$(dirname "$0")/cnt"
+{ printf 'fake sbatch:'; for a in "$@"; do printf ' [%s]' "$a"; done; echo; } >&2
+echo "$n;stanage"

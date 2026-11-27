@@ -1,0 +1,430 @@
+====================================================================================================
+prime p = 618970019642690137449562111
+rows, conifold periods (u-precision 18), rows truncated at O(s^24): 1.0 s
+----------------------------------------------------------------------------------------------------
+(1) s-series pipeline (normalised basis), point frame M = 1
+   x = Cf(C0)/L = (1)x^1 + (2/625)x^16 + O(x^91)
+PASS Delta_i^{1/2} = zeta^{4i} x squares to Cf(Delta_i) for all colours
+PASS val Q^{(i)}_{a,n} = -4n + (0,-1,3,2,1)_a - 1, colour-independent, n <= 4: {(0, 0): [-1], (0, 1): [-5], (0, 2): [-9], (0, 3): [-13], (0, 4): [-17], (1, 0): [-2], (1, 1): [-6], (1, 2): [-10], (1, 3): [-14], (1, 4): [-18], (2, 0): [2], (2, 1): [-2], (2, 2): [-6], (2, 3): [-10], (2, 4): [-14], (3, 0): [1], (3, 1): [-3], (3, 2): [-7], (3, 3): [-11], (3, 4): [-15], (4, 0): [0], (4, 1): [-4], (4, 2): [-8], (4, 3): [-12], (4, 4): [-16]}
+PASS symplecticity Sum_ab Q_a^{(i)}(z) eta^{ab} Q_b^{(j)}(-z) = delta_ij to z^4 in s-series
+PASS M = 1: E'_{ij}(m,n) = Cf(fq_rows.edge_coeffs)/(Delta_i Delta_j)^{1/2} for all colours, m, n <= 2 (9.4 s)
+PASS M = 1: T'^{(i)}_d = Dil_i(d)/Delta_i^{1/2} (fq_rows.Dil), d = 2..4
+   M = 1 graph sums in 0.1 s
+   graph 1: (1807/3072000) s^-10 + (-7/8000) s^-5 + (67/288000) s^0 + O(s^19)
+   graph 2: (-811/256000) s^-10 + (763/192000) s^-5 + (-31/480000) s^0 + O(s^12)
+   graph 3: (-57/64000) s^-10 + (89/20000) s^-5 + (-609/100000) s^0 + O(s^12)
+   graph 4: (843/1024000) s^-10 + (-53/48000) s^-5 + (1/32000) s^0 + O(s^12)
+   graph 5: (3/51200) s^-10 + (-67/192000) s^-5 + (371/480000) s^0 + O(s^12)
+   graph 6: (87/32000) s^-10 + (-143/40000) s^-5 + (149/100000) s^0 + O(s^12)
+   graph 7: (9/12800) s^-10 + (-59/16000) s^-5 + (199/40000) s^0 + O(s^12)
+PASS M = 1: colour sums of the 7 graphs = point frame F5 (pergraph_polar_out.txt) at s^-10, s^-5, s^0; no other terms through s^0
+   total: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + (-6809/18000000) s^5 + (-2551/15000000) s^10 + O(s^12)
+PASS M = 1: total = (1/1200) s^-10 - (7/6000) s^-5 + 97/72000 - (6809/18000000) s^5 - (2551/15000000) s^10, u-series through s^10 (prec O(s^12))
+PASS M = 1: vertex graph per colour = (1807/15360000) s^-10 - (7/40000) s^-5 + 67/1440000 + ...
+PASS M = 1: graph 4 at (0,0) = -31/15360000 s^-10 + 1/240000 s^-5; at (0,1): 1/40000 - w/30000, -1/30000 + 11w/240000 (SCALAR_SCAN table)
+----------------------------------------------------------------------------------------------------
+(2) vertex tensors Omega^M = M.omega (fq_mvertex)
+PASS Omega^1 = omega: diagonal zeta^{4i(2g-2+n)} WK(g; d) for 21 (g, d) types
+PASS Omega^M for M = diag(exp(a1 zeta^-i z + a2 zeta^-3i z^3)) at F4 point = zeta^{4i(2g-2+n)} PhiVertexTable (fq_phi), monochrome
+PASS Omega^M for M = diag(exp(a1 zeta^-i z + a2 zeta^-3i z^3)) at true class = zeta^{4i(2g-2+n)} PhiVertexTable (fq_phi), monochrome
+PASS Omega^M for M = diag(exp(a1 zeta^-i z + a2 zeta^-3i z^3)) at random (a1, a2) = zeta^{4i(2g-2+n)} PhiVertexTable (fq_phi), monochrome
+PASS Omega^M for a non-covariant diagonal M (independent a1_i, a2_i) = per-colour PhiVertexTable
+PASS random full M: Omega^M symmetric under simultaneous permutation of (colour, psi-exponent) legs
+PASS random full M: string and dilaton equations of Omega^M with the unit 1 = Sum_k Delta_k^{-1/2} e~_k (flat unit; 9 types)
+   step 2 checks in 3.2 s
+----------------------------------------------------------------------------------------------------
+(3) outer sum R'.Omega^M (fq_msum)
+PASS M = diag(phi_i) at (-1/12, 1/360) covariant: colour sums of the 7 graphs = frame F4 at s^-10, s^-6, s^-5, s^-2, s^-1, s^0 (pergraph_polar_out.txt)
+PASS random covariant diagonal (a1, a2) = (269285090171714896042667816, 360091539745266112280811874): colour sums per graph = fq_phi.phi_frame via gsum_q (N ring), through s^10 (35.7 s)
+PASS random non-covariant diagonal (10 independent a1_i, a2_i): colour sums per graph = fq_diag_lib.diag_frame via gsum_q, through s^10 (35.5 s)
+PASS random full M: T'_d = (-1)^d Q'_{0,d-1} equals -[z^{d-1}] M(z) Q_0(-z) (R'^-1 = M R^-1), d = 2..4
+PASS random full M: the rows Q' = Q M^-1 are symplectic to z^3
+   random full M: graph sums in 0.1 s; total prec O(s^12)
+   graph 1: (1807/3072000) s^-10 + ([285667585471064633446294146 mod p]) s^-6 + (-7/8000) s^-5 + ([267506325113804445777970290 mod p]) s^-2 + O(s^19)
+   graph 2: (-811/256000) s^-10 + ([202284599697642103897690421 mod p]) s^-6 + (763/192000) s^-5 + ([530582674403061553538581892 mod p]) s^-2 + ([55559906568233858764731404 mod p]) s^-1 + O(s^12)
+   graph 3: (-57/64000) s^-10 + ([503244133329817709896696539 mod p]) s^-6 + (89/20000) s^-5 + ([513688664510719948116609789 mod p]) s^-2 + ([170114194244519895266585171 mod p]) s^-1 + O(s^12)
+   graph 4: (843/1024000) s^-10 + ([15530656359905698019722670 mod p]) s^-6 + (-53/48000) s^-5 + ([120421442295082224001248305 mod p]) s^-2 + ([7366015991444210896679324 mod p]) s^-1 + O(s^12)
+   graph 5: (3/51200) s^-10 + ([353131064382704072355162631 mod p]) s^-6 + (-67/192000) s^-5 + ([420213792899243767997081458 mod p]) s^-2 + ([224438571651196724160482466 mod p]) s^-1 + O(s^12)
+   graph 6: (87/32000) s^-10 + ([165693838024697653829914811 mod p]) s^-6 + (-143/40000) s^-5 + ([301616128370686270025580787 mod p]) s^-2 + ([293045148865058558471264577 mod p]) s^-1 + O(s^12)
+   graph 7: (9/12800) s^-10 + ([331358181662238540903205115 mod p]) s^-6 + (-59/16000) s^-5 + ([321851050978162340341175923 mod p]) s^-2 + ([487416201964927027339381280 mod p]) s^-1 + O(s^12)
+PASS random full M: TOTAL F_2 series M-independent through s^10 (= point-frame total)
+PASS random full M: leading s^-10 coefficient of every graph M-independent
+PASS random full M: s^-9, s^-8, s^-7 coefficients of every graph zero
+PASS random full M: s^-5 coefficient of every graph M-independent (weight classes), s^-4, s^-3 zero
+----------------------------------------------------------------------------------------------------
+(4) polar coefficients s^-10..s^-1 as polynomials in M: 161 monomials (1, m1 (15), m2 (10), m3 (15), m1 m1 (120)); 170 + 10 random symplectic M
+   180 evaluations in 21.5 s
+PASS fit: Vandermonde rank 161 = number of monomials, 0 inconsistent rows
+PASS fit verified on 10 extra random M for all 70 (graph, order) coefficients
+   graph 1: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1+m2  (other orders identically 0)
+   graph 2: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1+m2  s^-1: m1  (other orders identically 0)
+   graph 3: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1  s^-1: m1  (other orders identically 0)
+   graph 4: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1+m2  s^-1: m1  (other orders identically 0)
+   graph 5: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1+m2  s^-1: m1  (other orders identically 0)
+   graph 6: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1  s^-1: m1  (other orders identically 0)
+   graph 7: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1  s^-1: m1  (other orders identically 0)
+PASS monomial content: s^-10, s^-5 constant; s^-6, s^-1 linear in m1; s^-2 = m1 m1 + m2; s^-9,-8,-7,-4,-3 zero; m3 never
+PASS all 604 polynomial coefficients reconstruct in Q(zeta) (Galois conjugates sigma_m(c_mu) = c_{pi_m mu})
+----------------------------------------------------------------------------------------------------
+(5) the solve.  c_Gamma (s^-10), s^-5 coefficient, and the t_c^-1 coefficient c' = c_-5 + (7/5) c_Gamma (M-INDEPENDENT):
+   graph 1: c = 1807/3072000, c_-5 = -7/8000, t_c^-1 coefficient -791/15360000, target c_-5 = -(7/5)c = -12649/15360000
+   graph 2: c = -811/256000, c_-5 = 763/192000, t_c^-1 coefficient -1771/3840000, target c_-5 = -(7/5)c = 5677/1280000
+   graph 3: c = -57/64000, c_-5 = 89/20000, t_c^-1 coefficient 41/12800, target c_-5 = -(7/5)c = 399/320000
+   graph 4: c = 843/1024000, c_-5 = -53/48000, t_c^-1 coefficient 743/15360000, target c_-5 = -(7/5)c = -5901/5120000
+   graph 5: c = 3/51200, c_-5 = -67/192000, t_c^-1 coefficient -41/153600, target c_-5 = -(7/5)c = -21/256000
+   graph 6: c = 87/32000, c_-5 = -143/40000, t_c^-1 coefficient 37/160000, target c_-5 = -(7/5)c = -609/160000
+   graph 7: c = 9/12800, c_-5 = -59/16000, t_c^-1 coefficient -173/64000, target c_-5 = -(7/5)c = -63/64000
+PASS Z/5 structure: weight-1 coefficients in the modes L_{d,1} only, m2 part in B_{d,2} only, m1 m1 part only in L_{d,a} L_{d',a'} with a+a' = 2 mod 5
+   rank of the 14 weight-1 forms (s^-6, s^-1 of 7 graphs) in the 3 modes L_{d,1} = Sum_i zeta^i m1_{i,i+d}: 3;  m2 forms beta^Gamma = (coeff of B_{1,2}, B_{2,2}): rank 1
+   coefficients (Q(zeta)) of m1_00, m1_01, m1_02 in the s^-6 and s^-1 forms  [L^Gamma = Sum_d c_{0d} L_{d,1}]; of m2_01, m2_02 in s^-2:
+   graph 1: s^-6: (37/51200, (1/25600) z^3, (1/25600) z); s^-1: (0, 0, 0);  s^-2 m2: (-1/3840 + (-1/3840) z + (-1/3840) z^2 + (-1/1920) z^3, (-1/3840) z + (1/3840) z^3)
+   graph 2: s^-6: (-343/64000, (-1/3200) z^3, (-1/3200) z); s^-1: (19/1600, (3/4000) z^3, (3/4000) z);  s^-2 m2: (1/960 + (1/960) z + (1/960) z^2 + (1/480) z^3, (1/960) z + (-1/960) z^3)
+   graph 3: s^-6: (87/16000, -1/250 + (-1/250) z + (37/8000) z^3, -1/250 + (37/8000) z + (-1/250) z^2); s^-1: (-2/125, 3/625 + (3/625) z + (-23/5000) z^3, 3/625 + (-23/5000) z + (3/625) z^2);  s^-2 m2: (0, 0)
+   graph 4: s^-6: (11/51200, (-1/25600) z^3, (-1/25600) z); s^-1: (-1/1200, 0, 0);  s^-2 m2: (1/3840 + (1/3840) z + (1/3840) z^2 + (1/1920) z^3, (1/3840) z + (-1/3840) z^3)
+   graph 5: s^-6: (71/12800, (1/3200) z^3, (1/3200) z); s^-1: (-373/24000, (-3/4000) z^3, (-3/4000) z);  s^-2 m2: (-1/960 + (-1/960) z + (-1/960) z^2 + (-1/480) z^3, (-1/960) z + (1/960) z^3)
+   graph 6: s^-6: (-1/1600, 1/250 + (1/250) z + (-1/250) z^3, 1/250 + (-1/250) z + (1/250) z^2); s^-1: (3/1000, -3/625 + (-3/625) z + (1/625) z^3, -3/625 + (1/625) z + (-3/625) z^2);  s^-2 m2: (0, 0)
+   graph 7: s^-6: (-19/3200, (-1/1600) z^3, (-1/1600) z); s^-1: (7/400, (3/1000) z^3, (3/1000) z);  s^-2 m2: (0, 0)
+   all m2 forms proportional to B_{1,2} + kappa B_{2,2}, kappa = [187863937731448733860893294 mod p] (conjugates: ['[187863937731448733860893294 mod p]', '[187863937731448733860893294 mod p]', '[187863937731448733860893294 mod p]', '[187863937731448733860893294 mod p]'])
+   quadratic part of s^-2 in the modes x_d = L_{d,0}, y_d = L_{d,2}, z_d = L_{d,3}, w_d = L_{d,4}: Q^Gamma = x^T C y + z^T E w (F_p residues)
+   graph 1: C = [-119/19200 [241484105410795518436174408 mod p] [123851020877873261548517351 mod p]; [510606915051219884935729436 mod p] [184490094901459285870385235 mod p] [483924607036527527190503329 mod p]; [298535195522315519222945534 mod p] [179786555603042561051524867 mod p] [217673685663608563310638312 mod p]]  E = [-119/19200 [237488731653918947087927916 mod p] [182279334678599502469812088 mod p]; [596427641331836370269894794 mod p] [134548979119794755142705943 mod p] [569544279778047285760016224 mod p]; [154462350183170302264566881 mod p] [488837840401487542658627257 mod p] [614843861379868533774601806 mod p]]
+   graph 2: C = [89/4800 [289916420668007698064764559 mod p] [269805740465649050225092920 mod p]; [54876321827506826053178432 mod p] [281904926991160245998408974 mod p] [540181650424650441036235128 mod p]; [496264899829338517167535831 mod p] [518793816873210030693024754 mod p] [150799911314970081852391397 mod p]]  E = [89/4800 [434224917004156445517012771 mod p] [564799443640018903267579378 mod p]; [181608459333434570645281065 mod p] [481669390117818368909126142 mod p] [197702959458571406758183548 mod p]; [527112404607439252567762160 mod p] [520528716964810379163739416 mod p] [419029267378000612345223754 mod p]]
+   graph 3: C = [-7/400 [547318807539452149808210235 mod p] [34010802304882301571161259 mod p]; [276364346868116461109484850 mod p] [454963622570432670113790088 mod p] 0; [47047488395189135707911353 mod p] 0 [605827124425656298988023308 mod p]]  E = [-7/400 [34010802304882301571161259 mod p] [395063047366543584458748079 mod p]; [253214235282612129743114923 mod p] [454963622570432670113790088 mod p] 0; [371912935781039253092378152 mod p] 0 [605827124425656298988023308 mod p]]
+   graph 4: C = [71/19200 [377485914231894619013387703 mod p] [495118998764816875901044760 mod p]; [108363104591470252513832675 mod p] [439183464039647576398037244 mod p] [135045412606162610259058782 mod p]; [320434824120374618226616577 mod p] [439183464039647576398037244 mod p] [135045412606162610259058782 mod p]]  E = [-121/19200 [381481287988771190361634195 mod p] [436690684964090634979750023 mod p]; [22542378310853767179667317 mod p] [489124579821312107125716536 mod p] [49425739864642851689545887 mod p]; [464507669459519835184995230 mod p] [130132179241202594790934854 mod p] [356845256532592777244657399 mod p]]
+   graph 5: C = [-53/4800 [329053598974682439384797552 mod p] [349164279177041087224469191 mod p]; [564093697815183311396383679 mod p] [100176202769480106756537357 mod p] [78788369218039696413326983 mod p]; [122705119813351620282026280 mod p] [100176202769480106756537357 mod p] [78788369218039696413326983 mod p]]  E = [43/4800 [184745102638533691932549340 mod p] [54170576002671234181982733 mod p]; [437361560309255566804281046 mod p] [519381759285512121295382300 mod p] [421267060184118730691378563 mod p]; [91857615035250884881799951 mod p] [98441302677879758285822695 mod p] [429529032797699303370056737 mod p]]
+   graph 6: C = [1/200 0 0; 0 [396191747655890527211527435 mod p] 0; 0 0 [49805536056943024075685440 mod p]]  E = [1/200 0 0; 0 [396191747655890527211527435 mod p] 0; 0 0 [49805536056943024075685440 mod p]]
+   graph 7: C = [3/400 [71651212103237987641351876 mod p] [584959217337807835878400852 mod p]; [342605672774573676340077261 mod p] 0 0; [571922531247501001741650758 mod p] 0 0]  E = [-1/400 [584959217337807835878400852 mod p] [223906972276146552990814032 mod p]; [365755784360078007706447188 mod p] 0 0; [247057083861650884357183959 mod p] 0 0]
+   Q(zeta) coefficients of the orbit representatives of the m1 m1 monomials (c_{shift^s mu} = zeta^{2s} c_mu):
+   graph 1 (13): m1_00*m1_00: -119/7680; m1_00*m1_01: -1/7680 + (-1/7680) z + (-1/7680) z^2 + (-1/320) z^3; m1_00*m1_02: (-23/7680) z + (1/7680) z^3; m1_00*m1_03: 23/7680 + (23/7680) z + (1/320) z^2 + (23/7680) z^3; m1_00*m1_04: (1/7680) z + (-23/7680) z^2; m1_01*m1_01: 49/7680 + (49/7680) z^2; m1_01*m1_02: 1/7680 + (1/7680) z; m1_01*m1_03: 1/7680 + (1/7680) z^3; m1_01*m1_04: -1/7680 + (-1/7680) z^2 + (-1/7680) z^3; m1_01*m1_13: -1/7680 + (-1/7680) z + (-1/7680) z^3; m1_01*m1_14: (1/7680) z + (1/7680) z^2; m1_02*m1_02: (-49/7680) z + (-49/7680) z^2 + (-49/7680) z^3; m1_02*m1_03: (1/7680) z^2 + (1/7680) z^3
+   graph 2 (13): m1_00*m1_00: 89/1920; m1_00*m1_01: 1/1920 + (1/1920) z + (1/1920) z^2 + (1/64) z^3; m1_00*m1_02: (29/1920) z + (-1/1920) z^3; m1_00*m1_03: -29/1920 + (-29/1920) z + (-1/64) z^2 + (-29/1920) z^3; m1_00*m1_04: (-1/1920) z + (29/1920) z^2; m1_01*m1_01: 7/9600 + (3/50) z + (7/9600) z^2; m1_01*m1_02: -1/1920 + (-1/1920) z; m1_01*m1_03: -1/1920 + (-1/1920) z^3; m1_01*m1_04: 1/1920 + (1/1920) z^2 + (1/1920) z^3; m1_01*m1_13: 1/1920 + (1/1920) z + (1/1920) z^3; m1_01*m1_14: (-1/1920) z + (-1/1920) z^2; m1_02*m1_02: (-7/9600) z + (569/9600) z^2 + (-7/9600) z^3; m1_02*m1_03: (-1/1920) z^2 + (-1/1920) z^3
+   graph 3 (7): m1_00*m1_00: -7/160; m1_00*m1_01: (-1/80) z^3; m1_00*m1_02: (-1/80) z; m1_00*m1_03: 1/80 + (1/80) z + (1/80) z^2 + (1/80) z^3; m1_00*m1_04: (-1/80) z^2; m1_01*m1_01: -11/400 + (-3/25) z + (-11/400) z^2; m1_02*m1_02: (11/400) z + (-37/400) z^2 + (11/400) z^3
+   graph 4 (15): m1_00*m1_00: 71/7680; m1_00*m1_01: 1/7680 + (1/7680) z + (1/7680) z^2 + (1/320) z^3; m1_00*m1_02: (23/7680) z + (-1/7680) z^3; m1_00*m1_03: -23/7680 + (-23/7680) z + (-1/320) z^2 + (-23/7680) z^3; m1_00*m1_04: (-1/7680) z + (23/7680) z^2; m1_00*m1_11: 1/100 + (3/100) z + (1/100) z^2; m1_00*m1_22: (-1/100) z + (1/50) z^2 + (-1/100) z^3; m1_01*m1_01: -1/7680 + (-1/7680) z^2; m1_01*m1_02: -1/7680 + (-1/7680) z; m1_01*m1_03: -1/7680 + (-1/7680) z^3; m1_01*m1_04: 1/7680 + (1/7680) z^2 + (1/7680) z^3; m1_01*m1_13: 1/7680 + (1/7680) z + (1/7680) z^3; m1_01*m1_14: (-1/7680) z + (-1/7680) z^2; m1_02*m1_02: (1/7680) z + (1/7680) z^2 + (1/7680) z^3; m1_02*m1_03: (-1/7680) z^2 + (-1/7680) z^3
+   graph 5 (15): m1_00*m1_00: -53/1920; m1_00*m1_01: -1/1920 + (-1/1920) z + (-1/1920) z^2 + (-1/64) z^3; m1_00*m1_02: (-29/1920) z + (1/1920) z^3; m1_00*m1_03: 29/1920 + (29/1920) z + (1/64) z^2 + (29/1920) z^3; m1_00*m1_04: (1/1920) z + (-29/1920) z^2; m1_00*m1_11: -1/50 + (-3/50) z + (-1/50) z^2; m1_00*m1_22: (1/50) z + (-1/25) z^2 + (1/50) z^3; m1_01*m1_01: 1/1920 + (1/1920) z^2; m1_01*m1_02: 1/1920 + (1/1920) z; m1_01*m1_03: 1/1920 + (1/1920) z^3; m1_01*m1_04: -1/1920 + (-1/1920) z^2 + (-1/1920) z^3; m1_01*m1_13: -1/1920 + (-1/1920) z + (-1/1920) z^3; m1_01*m1_14: (1/1920) z + (1/1920) z^2; m1_02*m1_02: (-1/1920) z + (-1/1920) z^2 + (-1/1920) z^3; m1_02*m1_03: (1/1920) z^2 + (1/1920) z^3
+   graph 6 (3): m1_00*m1_00: 1/80; m1_01*m1_01: 1/50 + (3/50) z + (1/50) z^2; m1_02*m1_02: (-1/50) z + (1/25) z^2 + (-1/50) z^3
+   graph 7 (7): m1_00*m1_00: 3/160; m1_00*m1_01: (1/80) z^3; m1_00*m1_02: (1/80) z; m1_00*m1_03: -1/80 + (-1/80) z + (-1/80) z^2 + (-1/80) z^3; m1_00*m1_04: (1/80) z^2; m1_00*m1_11: 1/100 + (3/100) z + (1/100) z^2; m1_00*m1_22: (-1/100) z + (1/50) z^2 + (-1/100) z^3
+   reduced quadrics on K (pivot graph 1): 5 independent; local dimension of their common zero locus in K (dim 12) at random points of the linear subspaces: {('x', 'z'): [7, 7, 7], ('x', 'w'): [7, 7, 7], ('y', 'z'): [7, 7, 7], ('y', 'w'): [7, 7, 7]}
+   == system full (all 7 graphs, s^-9..s^-1, target_-5 = -(7/5) c_Gamma)
+      INCONSISTENT at the constant (M-independent) equations: (graph 1, s^-5, residual -791/15360000), (graph 2, s^-5, residual -1771/3840000), (graph 3, s^-5, residual 41/12800), (graph 4, s^-5, residual 743/15360000), (graph 5, s^-5, residual -41/153600), (graph 6, s^-5, residual 37/160000), (graph 7, s^-5, residual -173/64000)
+      linear part (s^-6, s^-1): rank 3, consistent True, kernel K dim 12;  s^-2: rank of the m2 coefficient matrix 1, quadratic obstruction on K: 6 non-zero restricted quadratic forms
+      RREF basis of K in Q(zeta) (Galois-consistent pivots: True):
+      k_1 = [1] m1_00 + [(-1) z] m1_44
+      k_2 = [1] m1_01 + [(-1) z^2] m1_34
+      k_3 = [1] m1_02 + [(-1) z^3] m1_24
+      k_4 = [1] m1_03 + [(-1) z] m1_24
+      k_5 = [1] m1_04 + [(-1) z] m1_34
+      k_6 = [1] m1_11 + [(-1) z^2] m1_44
+      k_7 = [1] m1_12 + [(-1) z^3] m1_34
+      k_8 = [1] m1_13 + [1 + (1) z + (1) z^2 + (1) z^3] m1_24
+      k_9 = [1] m1_14 + [(-1) z^2] m1_24
+      k_10 = [1] m1_22 + [(-1) z^3] m1_44
+      k_11 = [1] m1_23 + [1 + (1) z + (1) z^2 + (1) z^3] m1_34
+      k_12 = [1] m1_33 + [1 + (1) z + (1) z^2 + (1) z^3] m1_44
+      m2 kernel (b . m2 = 0), dim 9, RREF basis in Q(zeta) (pivots ok True):
+      k_1 = [1] m2_01 + [1 + (1) z + (1) z^2 + (1) z^3] m2_34
+      k_2 = [1] m2_02 + [(-1) z^2 + (-1) z^3] m2_34
+      k_3 = [1] m2_03 + [-1 + (-1) z + (-1) z^2] m2_34
+      k_4 = [1] m2_04 + [(1) z^2] m2_34
+      k_5 = [1] m2_12 + [(-1) z] m2_34
+      k_6 = [1] m2_13 + [(1) z + (1) z^2 + (1) z^3] m2_34
+      k_7 = [1] m2_14 + [1 + (1) z] m2_34
+      k_8 = [1] m2_23 + [(-1) z^3] m2_34
+      k_9 = [1] m2_24 + [(-1) z + (-1) z^2] m2_34
+   == system (a) edge graphs 2..7 only
+      INCONSISTENT at the constant (M-independent) equations: (graph 2, s^-5, residual -1771/3840000), (graph 3, s^-5, residual 41/12800), (graph 4, s^-5, residual 743/15360000), (graph 5, s^-5, residual -41/153600), (graph 6, s^-5, residual 37/160000), (graph 7, s^-5, residual -173/64000)
+      linear part (s^-6, s^-1): rank 3, consistent True, kernel K dim 12;  s^-2: rank of the m2 coefficient matrix 1, quadratic obstruction on K: 5 non-zero restricted quadratic forms
+      RREF basis of K in Q(zeta) (Galois-consistent pivots: True):
+      k_1 = [1] m1_00 + [(-1) z] m1_44
+      k_2 = [1] m1_01 + [(-1) z^2] m1_34
+      k_3 = [1] m1_02 + [(-1) z^3] m1_24
+      k_4 = [1] m1_03 + [(-1) z] m1_24
+      k_5 = [1] m1_04 + [(-1) z] m1_34
+      k_6 = [1] m1_11 + [(-1) z^2] m1_44
+      k_7 = [1] m1_12 + [(-1) z^3] m1_34
+      k_8 = [1] m1_13 + [1 + (1) z + (1) z^2 + (1) z^3] m1_24
+      k_9 = [1] m1_14 + [(-1) z^2] m1_24
+      k_10 = [1] m1_22 + [(-1) z^3] m1_44
+      k_11 = [1] m1_23 + [1 + (1) z + (1) z^2 + (1) z^3] m1_34
+      k_12 = [1] m1_33 + [1 + (1) z + (1) z^2 + (1) z^3] m1_44
+      m2 kernel (b . m2 = 0), dim 9, RREF basis in Q(zeta) (pivots ok True):
+      k_1 = [1] m2_01 + [1 + (1) z + (1) z^2 + (1) z^3] m2_34
+      k_2 = [1] m2_02 + [(-1) z^2 + (-1) z^3] m2_34
+      k_3 = [1] m2_03 + [-1 + (-1) z + (-1) z^2] m2_34
+      k_4 = [1] m2_04 + [(1) z^2] m2_34
+      k_5 = [1] m2_12 + [(-1) z] m2_34
+      k_6 = [1] m2_13 + [(1) z + (1) z^2 + (1) z^3] m2_34
+      k_7 = [1] m2_14 + [1 + (1) z] m2_34
+      k_8 = [1] m2_23 + [(-1) z^3] m2_34
+      k_9 = [1] m2_24 + [(-1) z + (-1) z^2] m2_34
+   == system (b) s^-5 targets only, all graphs
+      INCONSISTENT at the constant (M-independent) equations: (graph 1, s^-5, residual -791/15360000), (graph 2, s^-5, residual -1771/3840000), (graph 3, s^-5, residual 41/12800), (graph 4, s^-5, residual 743/15360000), (graph 5, s^-5, residual -41/153600), (graph 6, s^-5, residual 37/160000), (graph 7, s^-5, residual -173/64000)
+      linear part (s^-6, s^-1): rank 0, consistent True, kernel K dim 15;  s^-2: rank of the m2 coefficient matrix None, quadratic obstruction on K: none
+   == system subleading only: s^-6, s^-2, s^-1 = 0 for all 7 graphs (no s^-5)
+      no constant obstruction
+      linear part (s^-6, s^-1): rank 3, consistent True, kernel K dim 12;  s^-2: rank of the m2 coefficient matrix 1, quadratic obstruction on K: 6 non-zero restricted quadratic forms
+      RREF basis of K in Q(zeta) (Galois-consistent pivots: True):
+      k_1 = [1] m1_00 + [(-1) z] m1_44
+      k_2 = [1] m1_01 + [(-1) z^2] m1_34
+      k_3 = [1] m1_02 + [(-1) z^3] m1_24
+      k_4 = [1] m1_03 + [(-1) z] m1_24
+      k_5 = [1] m1_04 + [(-1) z] m1_34
+      k_6 = [1] m1_11 + [(-1) z^2] m1_44
+      k_7 = [1] m1_12 + [(-1) z^3] m1_34
+      k_8 = [1] m1_13 + [1 + (1) z + (1) z^2 + (1) z^3] m1_24
+      k_9 = [1] m1_14 + [(-1) z^2] m1_24
+      k_10 = [1] m1_22 + [(-1) z^3] m1_44
+      k_11 = [1] m1_23 + [1 + (1) z + (1) z^2 + (1) z^3] m1_34
+      k_12 = [1] m1_33 + [1 + (1) z + (1) z^2 + (1) z^3] m1_44
+      m2 kernel (b . m2 = 0), dim 9, RREF basis in Q(zeta) (pivots ok True):
+      k_1 = [1] m2_01 + [1 + (1) z + (1) z^2 + (1) z^3] m2_34
+      k_2 = [1] m2_02 + [(-1) z^2 + (-1) z^3] m2_34
+      k_3 = [1] m2_03 + [-1 + (-1) z + (-1) z^2] m2_34
+      k_4 = [1] m2_04 + [(1) z^2] m2_34
+      k_5 = [1] m2_12 + [(-1) z] m2_34
+      k_6 = [1] m2_13 + [(1) z + (1) z^2 + (1) z^3] m2_34
+      k_7 = [1] m2_14 + [1 + (1) z] m2_34
+      k_8 = [1] m2_23 + [(-1) z^3] m2_34
+      k_9 = [1] m2_24 + [(-1) z + (-1) z^2] m2_34
+   == system subleading only, edge graphs 2..7
+      no constant obstruction
+      linear part (s^-6, s^-1): rank 3, consistent True, kernel K dim 12;  s^-2: rank of the m2 coefficient matrix 1, quadratic obstruction on K: 5 non-zero restricted quadratic forms
+      RREF basis of K in Q(zeta) (Galois-consistent pivots: True):
+      k_1 = [1] m1_00 + [(-1) z] m1_44
+      k_2 = [1] m1_01 + [(-1) z^2] m1_34
+      k_3 = [1] m1_02 + [(-1) z^3] m1_24
+      k_4 = [1] m1_03 + [(-1) z] m1_24
+      k_5 = [1] m1_04 + [(-1) z] m1_34
+      k_6 = [1] m1_11 + [(-1) z^2] m1_44
+      k_7 = [1] m1_12 + [(-1) z^3] m1_34
+      k_8 = [1] m1_13 + [1 + (1) z + (1) z^2 + (1) z^3] m1_24
+      k_9 = [1] m1_14 + [(-1) z^2] m1_24
+      k_10 = [1] m1_22 + [(-1) z^3] m1_44
+      k_11 = [1] m1_23 + [1 + (1) z + (1) z^2 + (1) z^3] m1_34
+      k_12 = [1] m1_33 + [1 + (1) z + (1) z^2 + (1) z^3] m1_44
+      m2 kernel (b . m2 = 0), dim 9, RREF basis in Q(zeta) (pivots ok True):
+      k_1 = [1] m2_01 + [1 + (1) z + (1) z^2 + (1) z^3] m2_34
+      k_2 = [1] m2_02 + [(-1) z^2 + (-1) z^3] m2_34
+      k_3 = [1] m2_03 + [-1 + (-1) z + (-1) z^2] m2_34
+      k_4 = [1] m2_04 + [(1) z^2] m2_34
+      k_5 = [1] m2_12 + [(-1) z] m2_34
+      k_6 = [1] m2_13 + [(1) z + (1) z^2 + (1) z^3] m2_34
+      k_7 = [1] m2_14 + [1 + (1) z] m2_34
+      k_8 = [1] m2_23 + [(-1) z^3] m2_34
+      k_9 = [1] m2_24 + [(-1) z + (-1) z^2] m2_34
+time for prime 618970019642690137449562111: 107.6 s
+====================================================================================================
+prime p = 2305843009213693951
+rows, conifold periods (u-precision 18), rows truncated at O(s^24): 1.1 s
+----------------------------------------------------------------------------------------------------
+(1) s-series pipeline (normalised basis), point frame M = 1
+   x = Cf(C0)/L = (1)x^1 + (2/625)x^16 + O(x^91)
+PASS Delta_i^{1/2} = zeta^{4i} x squares to Cf(Delta_i) for all colours
+PASS val Q^{(i)}_{a,n} = -4n + (0,-1,3,2,1)_a - 1, colour-independent, n <= 4: {(0, 0): [-1], (0, 1): [-5], (0, 2): [-9], (0, 3): [-13], (0, 4): [-17], (1, 0): [-2], (1, 1): [-6], (1, 2): [-10], (1, 3): [-14], (1, 4): [-18], (2, 0): [2], (2, 1): [-2], (2, 2): [-6], (2, 3): [-10], (2, 4): [-14], (3, 0): [1], (3, 1): [-3], (3, 2): [-7], (3, 3): [-11], (3, 4): [-15], (4, 0): [0], (4, 1): [-4], (4, 2): [-8], (4, 3): [-12], (4, 4): [-16]}
+PASS symplecticity Sum_ab Q_a^{(i)}(z) eta^{ab} Q_b^{(j)}(-z) = delta_ij to z^4 in s-series
+PASS M = 1: E'_{ij}(m,n) = Cf(fq_rows.edge_coeffs)/(Delta_i Delta_j)^{1/2} for all colours, m, n <= 2 (10.1 s)
+PASS M = 1: T'^{(i)}_d = Dil_i(d)/Delta_i^{1/2} (fq_rows.Dil), d = 2..4
+   M = 1 graph sums in 0.1 s
+   graph 1: (1807/3072000) s^-10 + (-7/8000) s^-5 + (67/288000) s^0 + O(s^19)
+   graph 2: (-811/256000) s^-10 + (763/192000) s^-5 + (-31/480000) s^0 + O(s^12)
+   graph 3: (-57/64000) s^-10 + (89/20000) s^-5 + (-609/100000) s^0 + O(s^12)
+   graph 4: (843/1024000) s^-10 + (-53/48000) s^-5 + (1/32000) s^0 + O(s^12)
+   graph 5: (3/51200) s^-10 + (-67/192000) s^-5 + (371/480000) s^0 + O(s^12)
+   graph 6: (87/32000) s^-10 + (-143/40000) s^-5 + (149/100000) s^0 + O(s^12)
+   graph 7: (9/12800) s^-10 + (-59/16000) s^-5 + (199/40000) s^0 + O(s^12)
+PASS M = 1: colour sums of the 7 graphs = point frame F5 (pergraph_polar_out.txt) at s^-10, s^-5, s^0; no other terms through s^0
+   total: (1/1200) s^-10 + (-7/6000) s^-5 + (97/72000) s^0 + ([281666281616427361 mod p]) s^5 + ([2281032292157421885 mod p]) s^10 + O(s^12)
+PASS M = 1: total = (1/1200) s^-10 - (7/6000) s^-5 + 97/72000 - (6809/18000000) s^5 - (2551/15000000) s^10, u-series through s^10 (prec O(s^12))
+PASS M = 1: vertex graph per colour = (1807/15360000) s^-10 - (7/40000) s^-5 + 67/1440000 + ...
+PASS M = 1: graph 4 at (0,0) = -31/15360000 s^-10 + 1/240000 s^-5; at (0,1): 1/40000 - w/30000, -1/30000 + 11w/240000 (SCALAR_SCAN table)
+----------------------------------------------------------------------------------------------------
+(2) vertex tensors Omega^M = M.omega (fq_mvertex)
+PASS Omega^1 = omega: diagonal zeta^{4i(2g-2+n)} WK(g; d) for 21 (g, d) types
+PASS Omega^M for M = diag(exp(a1 zeta^-i z + a2 zeta^-3i z^3)) at F4 point = zeta^{4i(2g-2+n)} PhiVertexTable (fq_phi), monochrome
+PASS Omega^M for M = diag(exp(a1 zeta^-i z + a2 zeta^-3i z^3)) at true class = zeta^{4i(2g-2+n)} PhiVertexTable (fq_phi), monochrome
+PASS Omega^M for M = diag(exp(a1 zeta^-i z + a2 zeta^-3i z^3)) at random (a1, a2) = zeta^{4i(2g-2+n)} PhiVertexTable (fq_phi), monochrome
+PASS Omega^M for a non-covariant diagonal M (independent a1_i, a2_i) = per-colour PhiVertexTable
+PASS random full M: Omega^M symmetric under simultaneous permutation of (colour, psi-exponent) legs
+PASS random full M: string and dilaton equations of Omega^M with the unit 1 = Sum_k Delta_k^{-1/2} e~_k (flat unit; 9 types)
+   step 2 checks in 3.2 s
+----------------------------------------------------------------------------------------------------
+(3) outer sum R'.Omega^M (fq_msum)
+PASS M = diag(phi_i) at (-1/12, 1/360) covariant: colour sums of the 7 graphs = frame F4 at s^-10, s^-6, s^-5, s^-2, s^-1, s^0 (pergraph_polar_out.txt)
+PASS random covariant diagonal (a1, a2) = (591665247259521089, 562645978145809321): colour sums per graph = fq_phi.phi_frame via gsum_q (N ring), through s^10 (37.6 s)
+PASS random non-covariant diagonal (10 independent a1_i, a2_i): colour sums per graph = fq_diag_lib.diag_frame via gsum_q, through s^10 (37.6 s)
+PASS random full M: T'_d = (-1)^d Q'_{0,d-1} equals -[z^{d-1}] M(z) Q_0(-z) (R'^-1 = M R^-1), d = 2..4
+PASS random full M: the rows Q' = Q M^-1 are symplectic to z^3
+   random full M: graph sums in 0.1 s; total prec O(s^12)
+   graph 1: (1807/3072000) s^-10 + ([622291886401505381 mod p]) s^-6 + (-7/8000) s^-5 + ([1760813389840410257 mod p]) s^-2 + O(s^19)
+   graph 2: (-811/256000) s^-10 + ([2268514750074771869 mod p]) s^-6 + (763/192000) s^-5 + ([834446519228078163 mod p]) s^-2 + ([958443760988694264 mod p]) s^-1 + O(s^12)
+   graph 3: (-57/64000) s^-10 + ([2263589369447386901 mod p]) s^-6 + (89/20000) s^-5 + ([370954045396824722 mod p]) s^-2 + ([1581204471187269679 mod p]) s^-1 + O(s^12)
+   graph 4: (843/1024000) s^-10 + ([1646760816731475173 mod p]) s^-6 + (-53/48000) s^-5 + ([1402605595928690815 mod p]) s^-2 + ([32702494293967464 mod p]) s^-1 + O(s^12)
+   graph 5: (3/51200) s^-10 + ([952307401608256983 mod p]) s^-6 + (-67/192000) s^-5 + ([1389618374407693985 mod p]) s^-2 + ([107784417590240158 mod p]) s^-1 + O(s^12)
+   graph 6: (87/32000) s^-10 + ([118104785431276220 mod p]) s^-6 + (-143/40000) s^-5 + ([1639520579109418480 mod p]) s^-2 + ([1532172054256998479 mod p]) s^-1 + O(s^12)
+   graph 7: (9/12800) s^-10 + ([1351803027160103277 mod p]) s^-6 + (-59/16000) s^-5 + ([1825413532943659382 mod p]) s^-2 + ([399378820110217858 mod p]) s^-1 + O(s^12)
+PASS random full M: TOTAL F_2 series M-independent through s^10 (= point-frame total)
+PASS random full M: leading s^-10 coefficient of every graph M-independent
+PASS random full M: s^-9, s^-8, s^-7 coefficients of every graph zero
+PASS random full M: s^-5 coefficient of every graph M-independent (weight classes), s^-4, s^-3 zero
+----------------------------------------------------------------------------------------------------
+(4) polar coefficients s^-10..s^-1 as polynomials in M: 161 monomials (1, m1 (15), m2 (10), m3 (15), m1 m1 (120)); 170 + 10 random symplectic M
+   180 evaluations in 22.2 s
+PASS fit: Vandermonde rank 161 = number of monomials, 0 inconsistent rows
+PASS fit verified on 10 extra random M for all 70 (graph, order) coefficients
+   graph 1: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1+m2  (other orders identically 0)
+   graph 2: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1+m2  s^-1: m1  (other orders identically 0)
+   graph 3: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1  s^-1: m1  (other orders identically 0)
+   graph 4: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1+m2  s^-1: m1  (other orders identically 0)
+   graph 5: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1+m2  s^-1: m1  (other orders identically 0)
+   graph 6: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1  s^-1: m1  (other orders identically 0)
+   graph 7: s^-10: 1  s^-6: m1  s^-5: 1  s^-2: m1m1  s^-1: m1  (other orders identically 0)
+PASS monomial content: s^-10, s^-5 constant; s^-6, s^-1 linear in m1; s^-2 = m1 m1 + m2; s^-9,-8,-7,-4,-3 zero; m3 never
+   (p = 2^61-1: 0 of 604 coefficient coordinates beyond the reconstruction bound ~1.07e7 of fq_fp.ratrec; compared by residues in (6))
+----------------------------------------------------------------------------------------------------
+(5) the solve.  c_Gamma (s^-10), s^-5 coefficient, and the t_c^-1 coefficient c' = c_-5 + (7/5) c_Gamma (M-INDEPENDENT):
+   graph 1: c = 1807/3072000, c_-5 = -7/8000, t_c^-1 coefficient [1931870251076338703 mod p], target c_-5 = -(7/5)c = [1773907695106219188 mod p]
+   graph 2: c = -811/256000, c_-5 = 763/192000, t_c^-1 coefficient -1771/3840000, target c_-5 = -(7/5)c = 5677/1280000
+   graph 3: c = -57/64000, c_-5 = 89/20000, t_c^-1 coefficient 41/12800, target c_-5 = -(7/5)c = 399/320000
+   graph 4: c = 843/1024000, c_-5 = -53/48000, t_c^-1 coefficient [543675597856079330 mod p], target c_-5 = -(7/5)c = -5901/5120000
+   graph 5: c = 3/51200, c_-5 = -67/192000, t_c^-1 coefficient -41/153600, target c_-5 = -(7/5)c = -21/256000
+   graph 6: c = 87/32000, c_-5 = -143/40000, t_c^-1 coefficient 37/160000, target c_-5 = -(7/5)c = -609/160000
+   graph 7: c = 9/12800, c_-5 = -59/16000, t_c^-1 coefficient -173/64000, target c_-5 = -(7/5)c = -63/64000
+PASS Z/5 structure: weight-1 coefficients in the modes L_{d,1} only, m2 part in B_{d,2} only, m1 m1 part only in L_{d,a} L_{d',a'} with a+a' = 2 mod 5
+   rank of the 14 weight-1 forms (s^-6, s^-1 of 7 graphs) in the 3 modes L_{d,1} = Sum_i zeta^i m1_{i,i+d}: 3;  m2 forms beta^Gamma = (coeff of B_{1,2}, B_{2,2}): rank 1
+   coefficients (Q(zeta)) of m1_00, m1_01, m1_02 in the s^-6 and s^-1 forms  [L^Gamma = Sum_d c_{0d} L_{d,1}]; of m2_01, m2_02 in s^-2:
+   graph 1: s^-6: (37/51200, (1/25600) z^3, (1/25600) z); s^-1: (0, 0, 0);  s^-2 m2: (-1/3840 + (-1/3840) z + (-1/3840) z^2 + (-1/1920) z^3, (-1/3840) z + (1/3840) z^3)
+   graph 2: s^-6: (-343/64000, (-1/3200) z^3, (-1/3200) z); s^-1: (19/1600, (3/4000) z^3, (3/4000) z);  s^-2 m2: (1/960 + (1/960) z + (1/960) z^2 + (1/480) z^3, (1/960) z + (-1/960) z^3)
+   graph 3: s^-6: (87/16000, -1/250 + (-1/250) z + (37/8000) z^3, -1/250 + (37/8000) z + (-1/250) z^2); s^-1: (-2/125, 3/625 + (3/625) z + (-23/5000) z^3, 3/625 + (-23/5000) z + (3/625) z^2);  s^-2 m2: (0, 0)
+   graph 4: s^-6: (11/51200, (-1/25600) z^3, (-1/25600) z); s^-1: (-1/1200, 0, 0);  s^-2 m2: (1/3840 + (1/3840) z + (1/3840) z^2 + (1/1920) z^3, (1/3840) z + (-1/3840) z^3)
+   graph 5: s^-6: (71/12800, (1/3200) z^3, (1/3200) z); s^-1: (-373/24000, (-3/4000) z^3, (-3/4000) z);  s^-2 m2: (-1/960 + (-1/960) z + (-1/960) z^2 + (-1/480) z^3, (-1/960) z + (1/960) z^3)
+   graph 6: s^-6: (-1/1600, 1/250 + (1/250) z + (-1/250) z^3, 1/250 + (-1/250) z + (1/250) z^2); s^-1: (3/1000, -3/625 + (-3/625) z + (1/625) z^3, -3/625 + (1/625) z + (-3/625) z^2);  s^-2 m2: (0, 0)
+   graph 7: s^-6: (-19/3200, (-1/1600) z^3, (-1/1600) z); s^-1: (7/400, (3/1000) z^3, (3/1000) z);  s^-2 m2: (0, 0)
+   all m2 forms proportional to B_{1,2} + kappa B_{2,2}, kappa = [2104827747213031280 mod p] (conjugates: ['[2104827747213031280 mod p]', '[2104827747213031280 mod p]', '[2104827747213031280 mod p]', '[2104827747213031280 mod p]'])
+   quadratic part of s^-2 in the modes x_d = L_{d,0}, y_d = L_{d,2}, z_d = L_{d,3}, w_d = L_{d,4}: Q^Gamma = x^T C y + z^T E w (F_p residues)
+   graph 1: C = [-119/19200 [680939332662210328 mod p] [58053176063154337 mod p]; [490205790700989651 mod p] [173736530683267510 mod p] [107449826603493104 mod p]; [679409056524643963 mod p] [869440154835080088 mod p] [2177430536464545371 mod p]]  E = [-119/19200 [1988505152675898468 mod p] [1907594098770685837 mod p]; [2020261673747195292 mod p] [574843303896201270 mod p] [1847555172268811054 mod p]; [1507198005204147347 mod p] [434001134998184906 mod p] [514008305644230391 mod p]]
+   graph 2: C = [89/4800 [1773952054659870037 mod p] [1800677475690936058 mod p]; [1269004386698113046 mod p] [1904532937331032034 mod p] [1876043702799721535 mod p]; [322988057579841486 mod p] [1133925399087067550 mod p] [1661817109091264167 mod p]]  E = [89/4800 [996398596881041387 mod p] [1059895080430116144 mod p]; [75625663292970283 mod p] [300105844479296994 mod p] [1833151347779531588 mod p]; [670795235834868052 mod p] [569838469220954327 mod p] [1397977004731442234 mod p]]
+   graph 3: C = [-7/400 [455906532474706212 mod p] [1091811317080562180 mod p]; [915747857273877106 mod p] [1241599420119321344 mod p] 0; [1672560920568494354 mod p] 0 [1371902384827481472 mod p]]  E = [-7/400 [1091811317080562180 mod p] [2132402245367665248 mod p]; [1960955705078403461 mod p] [1241599420119321344 mod p] 0; [871767083958497652 mod p] 0 [1371902384827481472 mod p]]
+   graph 4: C = [71/19200 [1624903676551483623 mod p] [2247789833150539614 mod p]; [1815637218512704300 mod p] [1436402854378613863 mod p] [2198393182610200847 mod p]; [1626433952689049988 mod p] [1436402854378613863 mod p] [2198393182610200847 mod p]]  E = [-121/19200 [317337856537795483 mod p] [398248910443008114 mod p]; [285581335466498659 mod p] [1035296081165680103 mod p] [458287836944882897 mod p]; [798645004009546604 mod p] [1871841874215509045 mod p] [1555972404216821876 mod p]]
+   graph 5: C = [-53/4800 [531890954553823914 mod p] [505165533522757893 mod p]; [1036838622515580905 mod p] [1171917610126626401 mod p] [429799306413972416 mod p]; [1982854951633852465 mod p] [1171917610126626401 mod p] [429799306413972416 mod p]]  E = [43/4800 [1309444412332652564 mod p] [1245947928783577807 mod p]; [2230217345920723668 mod p] [470501693764667490 mod p] [472691661434162363 mod p]; [1635047773378825899 mod p] [1736004539992739624 mod p] [693639410773794349 mod p]]
+   graph 6: C = [1/200 0 0; 0 [989339675002220701 mod p] 0; 0 0 [1384029517447311531 mod p]]  E = [1/200 0 0; 0 [989339675002220701 mod p] 0; 0 0 [1384029517447311531 mod p]]
+   graph 7: C = [3/400 [1849936476738987739 mod p] [1214031692133131771 mod p]; [1390095151939816845 mod p] 0 0; [633282088645199597 mod p] 0 0]  E = [-1/400 [1214031692133131771 mod p] [173440763846028703 mod p]; [344887304135290490 mod p] 0 0; [1434075925255196299 mod p] 0 0]
+   Q(zeta) coefficients of the orbit representatives of the m1 m1 monomials (c_{shift^s mu} = zeta^{2s} c_mu):
+   graph 1 (13): m1_00*m1_00: -119/7680; m1_00*m1_01: -1/7680 + (-1/7680) z + (-1/7680) z^2 + (-1/320) z^3; m1_00*m1_02: (-23/7680) z + (1/7680) z^3; m1_00*m1_03: 23/7680 + (23/7680) z + (1/320) z^2 + (23/7680) z^3; m1_00*m1_04: (1/7680) z + (-23/7680) z^2; m1_01*m1_01: 49/7680 + (49/7680) z^2; m1_01*m1_02: 1/7680 + (1/7680) z; m1_01*m1_03: 1/7680 + (1/7680) z^3; m1_01*m1_04: -1/7680 + (-1/7680) z^2 + (-1/7680) z^3; m1_01*m1_13: -1/7680 + (-1/7680) z + (-1/7680) z^3; m1_01*m1_14: (1/7680) z + (1/7680) z^2; m1_02*m1_02: (-49/7680) z + (-49/7680) z^2 + (-49/7680) z^3; m1_02*m1_03: (1/7680) z^2 + (1/7680) z^3
+   graph 2 (13): m1_00*m1_00: 89/1920; m1_00*m1_01: 1/1920 + (1/1920) z + (1/1920) z^2 + (1/64) z^3; m1_00*m1_02: (29/1920) z + (-1/1920) z^3; m1_00*m1_03: -29/1920 + (-29/1920) z + (-1/64) z^2 + (-29/1920) z^3; m1_00*m1_04: (-1/1920) z + (29/1920) z^2; m1_01*m1_01: 7/9600 + (3/50) z + (7/9600) z^2; m1_01*m1_02: -1/1920 + (-1/1920) z; m1_01*m1_03: -1/1920 + (-1/1920) z^3; m1_01*m1_04: 1/1920 + (1/1920) z^2 + (1/1920) z^3; m1_01*m1_13: 1/1920 + (1/1920) z + (1/1920) z^3; m1_01*m1_14: (-1/1920) z + (-1/1920) z^2; m1_02*m1_02: (-7/9600) z + (569/9600) z^2 + (-7/9600) z^3; m1_02*m1_03: (-1/1920) z^2 + (-1/1920) z^3
+   graph 3 (7): m1_00*m1_00: -7/160; m1_00*m1_01: (-1/80) z^3; m1_00*m1_02: (-1/80) z; m1_00*m1_03: 1/80 + (1/80) z + (1/80) z^2 + (1/80) z^3; m1_00*m1_04: (-1/80) z^2; m1_01*m1_01: -11/400 + (-3/25) z + (-11/400) z^2; m1_02*m1_02: (11/400) z + (-37/400) z^2 + (11/400) z^3
+   graph 4 (15): m1_00*m1_00: 71/7680; m1_00*m1_01: 1/7680 + (1/7680) z + (1/7680) z^2 + (1/320) z^3; m1_00*m1_02: (23/7680) z + (-1/7680) z^3; m1_00*m1_03: -23/7680 + (-23/7680) z + (-1/320) z^2 + (-23/7680) z^3; m1_00*m1_04: (-1/7680) z + (23/7680) z^2; m1_00*m1_11: 1/100 + (3/100) z + (1/100) z^2; m1_00*m1_22: (-1/100) z + (1/50) z^2 + (-1/100) z^3; m1_01*m1_01: -1/7680 + (-1/7680) z^2; m1_01*m1_02: -1/7680 + (-1/7680) z; m1_01*m1_03: -1/7680 + (-1/7680) z^3; m1_01*m1_04: 1/7680 + (1/7680) z^2 + (1/7680) z^3; m1_01*m1_13: 1/7680 + (1/7680) z + (1/7680) z^3; m1_01*m1_14: (-1/7680) z + (-1/7680) z^2; m1_02*m1_02: (1/7680) z + (1/7680) z^2 + (1/7680) z^3; m1_02*m1_03: (-1/7680) z^2 + (-1/7680) z^3
+   graph 5 (15): m1_00*m1_00: -53/1920; m1_00*m1_01: -1/1920 + (-1/1920) z + (-1/1920) z^2 + (-1/64) z^3; m1_00*m1_02: (-29/1920) z + (1/1920) z^3; m1_00*m1_03: 29/1920 + (29/1920) z + (1/64) z^2 + (29/1920) z^3; m1_00*m1_04: (1/1920) z + (-29/1920) z^2; m1_00*m1_11: -1/50 + (-3/50) z + (-1/50) z^2; m1_00*m1_22: (1/50) z + (-1/25) z^2 + (1/50) z^3; m1_01*m1_01: 1/1920 + (1/1920) z^2; m1_01*m1_02: 1/1920 + (1/1920) z; m1_01*m1_03: 1/1920 + (1/1920) z^3; m1_01*m1_04: -1/1920 + (-1/1920) z^2 + (-1/1920) z^3; m1_01*m1_13: -1/1920 + (-1/1920) z + (-1/1920) z^3; m1_01*m1_14: (1/1920) z + (1/1920) z^2; m1_02*m1_02: (-1/1920) z + (-1/1920) z^2 + (-1/1920) z^3; m1_02*m1_03: (1/1920) z^2 + (1/1920) z^3
+   graph 6 (3): m1_00*m1_00: 1/80; m1_01*m1_01: 1/50 + (3/50) z + (1/50) z^2; m1_02*m1_02: (-1/50) z + (1/25) z^2 + (-1/50) z^3
+   graph 7 (7): m1_00*m1_00: 3/160; m1_00*m1_01: (1/80) z^3; m1_00*m1_02: (1/80) z; m1_00*m1_03: -1/80 + (-1/80) z + (-1/80) z^2 + (-1/80) z^3; m1_00*m1_04: (1/80) z^2; m1_00*m1_11: 1/100 + (3/100) z + (1/100) z^2; m1_00*m1_22: (-1/100) z + (1/50) z^2 + (-1/100) z^3
+   reduced quadrics on K (pivot graph 1): 5 independent; local dimension of their common zero locus in K (dim 12) at random points of the linear subspaces: {('x', 'z'): [7, 7, 7], ('x', 'w'): [7, 7, 7], ('y', 'z'): [7, 7, 7], ('y', 'w'): [7, 7, 7]}
+   == system full (all 7 graphs, s^-9..s^-1, target_-5 = -(7/5) c_Gamma)
+      INCONSISTENT at the constant (M-independent) equations: (graph 1, s^-5, residual [1931870251076338703 mod p]), (graph 2, s^-5, residual -1771/3840000), (graph 3, s^-5, residual 41/12800), (graph 4, s^-5, residual [543675597856079330 mod p]), (graph 5, s^-5, residual -41/153600), (graph 6, s^-5, residual 37/160000), (graph 7, s^-5, residual -173/64000)
+      linear part (s^-6, s^-1): rank 3, consistent True, kernel K dim 12;  s^-2: rank of the m2 coefficient matrix 1, quadratic obstruction on K: 6 non-zero restricted quadratic forms
+      RREF basis of K in Q(zeta) (Galois-consistent pivots: True):
+      k_1 = [1] m1_00 + [(-1) z] m1_44
+      k_2 = [1] m1_01 + [(-1) z^2] m1_34
+      k_3 = [1] m1_02 + [(-1) z^3] m1_24
+      k_4 = [1] m1_03 + [(-1) z] m1_24
+      k_5 = [1] m1_04 + [(-1) z] m1_34
+      k_6 = [1] m1_11 + [(-1) z^2] m1_44
+      k_7 = [1] m1_12 + [(-1) z^3] m1_34
+      k_8 = [1] m1_13 + [1 + (1) z + (1) z^2 + (1) z^3] m1_24
+      k_9 = [1] m1_14 + [(-1) z^2] m1_24
+      k_10 = [1] m1_22 + [(-1) z^3] m1_44
+      k_11 = [1] m1_23 + [1 + (1) z + (1) z^2 + (1) z^3] m1_34
+      k_12 = [1] m1_33 + [1 + (1) z + (1) z^2 + (1) z^3] m1_44
+      m2 kernel (b . m2 = 0), dim 9, RREF basis in Q(zeta) (pivots ok True):
+      k_1 = [1] m2_01 + [1 + (1) z + (1) z^2 + (1) z^3] m2_34
+      k_2 = [1] m2_02 + [(-1) z^2 + (-1) z^3] m2_34
+      k_3 = [1] m2_03 + [-1 + (-1) z + (-1) z^2] m2_34
+      k_4 = [1] m2_04 + [(1) z^2] m2_34
+      k_5 = [1] m2_12 + [(-1) z] m2_34
+      k_6 = [1] m2_13 + [(1) z + (1) z^2 + (1) z^3] m2_34
+      k_7 = [1] m2_14 + [1 + (1) z] m2_34
+      k_8 = [1] m2_23 + [(-1) z^3] m2_34
+      k_9 = [1] m2_24 + [(-1) z + (-1) z^2] m2_34
+   == system (a) edge graphs 2..7 only
+      INCONSISTENT at the constant (M-independent) equations: (graph 2, s^-5, residual -1771/3840000), (graph 3, s^-5, residual 41/12800), (graph 4, s^-5, residual [543675597856079330 mod p]), (graph 5, s^-5, residual -41/153600), (graph 6, s^-5, residual 37/160000), (graph 7, s^-5, residual -173/64000)
+      linear part (s^-6, s^-1): rank 3, consistent True, kernel K dim 12;  s^-2: rank of the m2 coefficient matrix 1, quadratic obstruction on K: 5 non-zero restricted quadratic forms
+      RREF basis of K in Q(zeta) (Galois-consistent pivots: True):
+      k_1 = [1] m1_00 + [(-1) z] m1_44
+      k_2 = [1] m1_01 + [(-1) z^2] m1_34
+      k_3 = [1] m1_02 + [(-1) z^3] m1_24
+      k_4 = [1] m1_03 + [(-1) z] m1_24
+      k_5 = [1] m1_04 + [(-1) z] m1_34
+      k_6 = [1] m1_11 + [(-1) z^2] m1_44
+      k_7 = [1] m1_12 + [(-1) z^3] m1_34
+      k_8 = [1] m1_13 + [1 + (1) z + (1) z^2 + (1) z^3] m1_24
+      k_9 = [1] m1_14 + [(-1) z^2] m1_24
+      k_10 = [1] m1_22 + [(-1) z^3] m1_44
+      k_11 = [1] m1_23 + [1 + (1) z + (1) z^2 + (1) z^3] m1_34
+      k_12 = [1] m1_33 + [1 + (1) z + (1) z^2 + (1) z^3] m1_44
+      m2 kernel (b . m2 = 0), dim 9, RREF basis in Q(zeta) (pivots ok True):
+      k_1 = [1] m2_01 + [1 + (1) z + (1) z^2 + (1) z^3] m2_34
+      k_2 = [1] m2_02 + [(-1) z^2 + (-1) z^3] m2_34
+      k_3 = [1] m2_03 + [-1 + (-1) z + (-1) z^2] m2_34
+      k_4 = [1] m2_04 + [(1) z^2] m2_34
+      k_5 = [1] m2_12 + [(-1) z] m2_34
+      k_6 = [1] m2_13 + [(1) z + (1) z^2 + (1) z^3] m2_34
+      k_7 = [1] m2_14 + [1 + (1) z] m2_34
+      k_8 = [1] m2_23 + [(-1) z^3] m2_34
+      k_9 = [1] m2_24 + [(-1) z + (-1) z^2] m2_34
+   == system (b) s^-5 targets only, all graphs
+      INCONSISTENT at the constant (M-independent) equations: (graph 1, s^-5, residual [1931870251076338703 mod p]), (graph 2, s^-5, residual -1771/3840000), (graph 3, s^-5, residual 41/12800), (graph 4, s^-5, residual [543675597856079330 mod p]), (graph 5, s^-5, residual -41/153600), (graph 6, s^-5, residual 37/160000), (graph 7, s^-5, residual -173/64000)
+      linear part (s^-6, s^-1): rank 0, consistent True, kernel K dim 15;  s^-2: rank of the m2 coefficient matrix None, quadratic obstruction on K: none
+   == system subleading only: s^-6, s^-2, s^-1 = 0 for all 7 graphs (no s^-5)
+      no constant obstruction
+      linear part (s^-6, s^-1): rank 3, consistent True, kernel K dim 12;  s^-2: rank of the m2 coefficient matrix 1, quadratic obstruction on K: 6 non-zero restricted quadratic forms
+      RREF basis of K in Q(zeta) (Galois-consistent pivots: True):
+      k_1 = [1] m1_00 + [(-1) z] m1_44
+      k_2 = [1] m1_01 + [(-1) z^2] m1_34
+      k_3 = [1] m1_02 + [(-1) z^3] m1_24
+      k_4 = [1] m1_03 + [(-1) z] m1_24
+      k_5 = [1] m1_04 + [(-1) z] m1_34
+      k_6 = [1] m1_11 + [(-1) z^2] m1_44
+      k_7 = [1] m1_12 + [(-1) z^3] m1_34
+      k_8 = [1] m1_13 + [1 + (1) z + (1) z^2 + (1) z^3] m1_24
+      k_9 = [1] m1_14 + [(-1) z^2] m1_24
+      k_10 = [1] m1_22 + [(-1) z^3] m1_44
+      k_11 = [1] m1_23 + [1 + (1) z + (1) z^2 + (1) z^3] m1_34
+      k_12 = [1] m1_33 + [1 + (1) z + (1) z^2 + (1) z^3] m1_44
+      m2 kernel (b . m2 = 0), dim 9, RREF basis in Q(zeta) (pivots ok True):
+      k_1 = [1] m2_01 + [1 + (1) z + (1) z^2 + (1) z^3] m2_34
+      k_2 = [1] m2_02 + [(-1) z^2 + (-1) z^3] m2_34
+      k_3 = [1] m2_03 + [-1 + (-1) z + (-1) z^2] m2_34
+      k_4 = [1] m2_04 + [(1) z^2] m2_34
+      k_5 = [1] m2_12 + [(-1) z] m2_34
+      k_6 = [1] m2_13 + [(1) z + (1) z^2 + (1) z^3] m2_34
+      k_7 = [1] m2_14 + [1 + (1) z] m2_34
+      k_8 = [1] m2_23 + [(-1) z^3] m2_34
+      k_9 = [1] m2_24 + [(-1) z + (-1) z^2] m2_34
+   == system subleading only, edge graphs 2..7
+      no constant obstruction
+      linear part (s^-6, s^-1): rank 3, consistent True, kernel K dim 12;  s^-2: rank of the m2 coefficient matrix 1, quadratic obstruction on K: 5 non-zero restricted quadratic forms
+      RREF basis of K in Q(zeta) (Galois-consistent pivots: True):
+      k_1 = [1] m1_00 + [(-1) z] m1_44
+      k_2 = [1] m1_01 + [(-1) z^2] m1_34
+      k_3 = [1] m1_02 + [(-1) z^3] m1_24
+      k_4 = [1] m1_03 + [(-1) z] m1_24
+      k_5 = [1] m1_04 + [(-1) z] m1_34
+      k_6 = [1] m1_11 + [(-1) z^2] m1_44
+      k_7 = [1] m1_12 + [(-1) z^3] m1_34
+      k_8 = [1] m1_13 + [1 + (1) z + (1) z^2 + (1) z^3] m1_24
+      k_9 = [1] m1_14 + [(-1) z^2] m1_24
+      k_10 = [1] m1_22 + [(-1) z^3] m1_44
+      k_11 = [1] m1_23 + [1 + (1) z + (1) z^2 + (1) z^3] m1_34
+      k_12 = [1] m1_33 + [1 + (1) z + (1) z^2 + (1) z^3] m1_44
+      m2 kernel (b . m2 = 0), dim 9, RREF basis in Q(zeta) (pivots ok True):
+      k_1 = [1] m2_01 + [1 + (1) z + (1) z^2 + (1) z^3] m2_34
+      k_2 = [1] m2_02 + [(-1) z^2 + (-1) z^3] m2_34
+      k_3 = [1] m2_03 + [-1 + (-1) z + (-1) z^2] m2_34
+      k_4 = [1] m2_04 + [(1) z^2] m2_34
+      k_5 = [1] m2_12 + [(-1) z] m2_34
+      k_6 = [1] m2_13 + [(1) z + (1) z^2 + (1) z^3] m2_34
+      k_7 = [1] m2_14 + [1 + (1) z] m2_34
+      k_8 = [1] m2_23 + [(-1) z^3] m2_34
+      k_9 = [1] m2_24 + [(-1) z + (-1) z^2] m2_34
+time for prime 2305843009213693951: 113.2 s
+====================================================================================================
+(6) cross-prime comparison (2^89-1 reconstructed Q(zeta) coordinates vs 2^61-1 residues)
+PASS all 604 polynomial coefficients agree at both primes (by residues of the reconstructed Q(zeta) values)
+PASS ranks, dimensions and obstruction sets identical at both primes
+total time 220.8 s
+ALL SYMPLECTIC CHECKS PASSED

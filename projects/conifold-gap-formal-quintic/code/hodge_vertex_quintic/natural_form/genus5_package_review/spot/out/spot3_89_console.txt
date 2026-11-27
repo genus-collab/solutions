@@ -1,0 +1,20 @@
+====================================================================================================
+   done 383 (1 s wall)
+   done 25 (2 s wall)
+   done 5 (2 s wall)
+   done 28 (3 s wall)
+   done 1 (3 s wall)
+   done 444 (4 s wall)
+   done 3 (6 s wall)
+   done 118 (13 s wall)
+   done 1234 (19 s wall)
+   t=   1 gv=[1, 4] ed=[[0, 1]]: independent 0.8 s, 2 non-zero outer rows, package 2; EQUAL: True; |Aut| own 1 package 1: True; momentum == colour-space brute force: True (0.0 s)
+   t=   3 gv=[4] ed=[[0, 0]]: independent 4.5 s, 2 non-zero outer rows, package 2; EQUAL: True; |Aut| own 2 package 2: True; momentum == colour-space brute force: True (0.0 s)
+   t=   5 gv=[1, 1, 3] ed=[[0, 1], [1, 2]]: independent 0.0 s, 4 non-zero outer rows, package 4; EQUAL: True; |Aut| own 1 package 1: True; momentum == colour-space brute force: True (1.0 s)
+   t=  25 gv=[0, 3] ed=[[0, 0], [0, 0], [0, 1]]: independent 0.8 s, 6 non-zero outer rows, package 6; EQUAL: True; |Aut| own 8 package 8: True; momentum == colour-space brute force: True (0.7 s)
+   t=  28 gv=[0, 3] ed=[[0, 1], [0, 1], [0, 1]]: independent 1.7 s, 4 non-zero outer rows, package 4; EQUAL: True; |Aut| own 6 package 6: True; momentum == colour-space brute force: True (0.9 s)
+   t= 118 gv=[0, 2] ed=[[0, 1], [0, 1], [0, 1], [1, 1]]: independent 12.7 s, 6 non-zero outer rows, package 6; EQUAL: True; |Aut| own 12 package 12: True
+   t= 383 gv=[0, 1, 1, 1, 1, 1] ed=[[0, 1], [0, 2], [0, 3], [0, 4], [0, 5]]: independent 0.9 s, 4 non-zero outer rows, package 4; EQUAL: True; |Aut| own 120 package 120: True
+   t= 444 gv=[0, 0, 0, 2] ed=[[0, 1], [0, 1], [0, 1], [1, 2], [1, 3], [2, 2]]: independent 3.8 s, 25 non-zero outer rows, package 25; EQUAL: True; |Aut| own 12 package 12: True
+   t=1234 gv=[0, 0, 0, 1, 1] ed=[[0, 1], [0, 1], [0, 1], [1, 2], [1, 3], [2, 2], [3, 4]]: independent 19.1 s, 44 non-zero outer rows, package 44; EQUAL: True; |Aut| own 12 package 12: True
+SPOT3 (89) ALL EQUAL, wall 19 s

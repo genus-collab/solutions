@@ -1,0 +1,90 @@
+{
+ "random Delta in ker A_17 (point 1)": {
+  "grad_zero": true,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": true,
+  "maxdeg": 2
+ },
+ "random Delta in ker A_17 (point 2)": {
+  "grad_zero": true,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": true,
+  "maxdeg": 2
+ },
+ "random Delta in ker A_17 (point 3)": {
+  "grad_zero": true,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": true,
+  "maxdeg": 2
+ },
+ "control: random Delta with m_1 = 0 on K_4^circ": {
+  "grad_zero": false,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": false,
+  "maxdeg": 2
+ },
+ "control: random circulant Delta": {
+  "grad_zero": false,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": false,
+  "u3_zero": false,
+  "maxdeg": 2
+ },
+ "Delta* (running circstar pass)": {
+  "grad_zero": true,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": true,
+  "maxdeg": 2
+ },
+ "A + 2B (circpi)": {
+  "grad_zero": true,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": true,
+  "maxdeg": 2
+ },
+ "genuine c1_0 = 0 point (circb)": {
+  "grad_zero": true,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": true,
+  "maxdeg": 2
+ },
+ "extra[3] (b = -zeta^2, not Pi)": {
+  "grad_zero": true,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": true,
+  "maxdeg": 2
+ },
+ "extra[0] (b = +zeta^2)": {
+  "grad_zero": false,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": false,
+  "maxdeg": 2
+ },
+ "B of Pi": {
+  "grad_zero": true,
+  "u01_zero": true,
+  "u2_is_q17": true,
+  "u2_zero": true,
+  "u3_zero": true,
+  "maxdeg": 2
+ }
+}

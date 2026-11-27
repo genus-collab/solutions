@@ -1,0 +1,15 @@
+====================================================================================================
+ref7_cands, p = 2^89-1, seed 2: g of degree 61, factors of degrees [1, 1, 10, 29]
+   factor of degree 1: b-degrees of R_2..R_4 [42, 42, 42]; gcd in b: degree 6 = (b - b_L)^6 x rest of degree 0   (0 s)
+      candidate on L (higher multiplicity 6): a4 = 0; tau-gcd of all 35 minors: degree 4 (4 non-zero minors at this (a, b))   (0 s)
+         tau-gcd of degree 4: NOT examined
+   factor of degree 1: b-degrees of R_2..R_4 [42, 42, 42]; gcd in b: degree 3 = (b - b_L)^2 x rest of degree 1   (0 s)
+      candidate off L: a4 != 0; tau-gcd of all 35 minors: degree 1 (25 non-zero minors at this (a, b))   (0 s)
+         seven-row system: rank 3, free 0 -> w, c4 found; cubics + q_3 consistent: True; FULL high system: rank 6, fails: ['inconsistent']; consistent after dropping one condition: {'q_6': True, 'q_7': True, 'q_8': True, 'J3_0': True, 'J3_1': False}   (0 s)
+   factor of degree 10: b-degrees of R_2..R_4 [42, 42, 42]; gcd in b: degree 3 = (b - b_L)^2 x rest of degree 1   (0 s)
+      candidate off L: a4 != 0; tau-gcd of all 35 minors: degree 1 (25 non-zero minors at this (a, b))   (1 s)
+         seven-row system: rank 3, free 0 -> w, c4 found; cubics + q_3 consistent: True; FULL high system: rank 6, fails: ['inconsistent']; consistent after dropping one condition: {'q_6': True, 'q_7': True, 'q_8': True, 'J3_0': True, 'J3_1': False}   (1 s)
+   factor of degree 29: b-degrees of R_2..R_4 [42, 42, 42]; gcd in b: degree 3 = (b - b_L)^2 x rest of degree 1   (3 s)
+      candidate off L: a4 != 0; tau-gcd of all 35 minors: degree 1 (25 non-zero minors at this (a, b))   (3 s)
+         seven-row system: rank 3, free 0 -> w, c4 found; cubics + q_3 consistent: True; FULL high system: rank 6, fails: ['inconsistent']; consistent after dropping one condition: {'q_6': True, 'q_7': True, 'q_8': True, 'J3_0': True, 'J3_1': False}   (4 s)
+REF7 summary: candidates (alpha-roots, with field degrees) 41; solution points of the full system found: 0; unexamined: [1]

@@ -1,0 +1,8 @@
+chk_res: FL2 and FL3 for the formal residue, u^0..u^6, v^0..v^14 (v = 1/w); log logs/chk_res_6_14.log
+PASS FL2 trial 0: Res[d(e^(-f/w) Q)] = 0 through u^6, v^14 (Q has 30 terms)   non-zero entries: []
+PASS FL2 trial 1: Res[d(e^(-f/w) Q)] = 0 through u^6, v^14 (Q has 25 terms)   non-zero entries: []
+PASS FL2 trial 2: Res[d(e^(-f/w) Q)] = 0 through u^6, v^14 (Q has 33 terms)   non-zero entries: []
+PASS control (must fail): FL2: the residue of e^(-f/w) dX (not exact) is non-zero   e.g. [u^0 v^1, v^5] = -1, 0
+PASS FL3 (residue): Res_Y[e^(-f/w) b dY] = Res_X[pull-back by Y = X(1 + u h(X^5))] through u^6, v^14   91 coefficients; [u^1 v^3] = 0
+PASS control (must fail): FL3 (residue): pull-back without Y'(X)
+CHK_RES 6 14: ALL CHECKS PASSED   (0 s)

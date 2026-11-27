@@ -1,0 +1,152 @@
+% Section 4, part 4 of 4: dressings, edges and the leaf point; Lemmas E, T, F; the canonical gauge.
+% Local letters: the ring cA = Q((psi))[[u,psi']], alpha, beta, C (in lem:tra-E); cN (numerator of the edge), xi, G.
+
+\subsection{Dressings, edges and the leaf point}
+\label{sec:tra-dress}
+
+\begin{defn}[dressings]
+\label{def:tra-dressing}
+Let $v = v(u)\in u\bbQ\fps{u}$ with $v'(0)\neq 0$. A \emph{dressing of the model at $v(u)$} is a matrix series $P = \sum_{k\geq 0}z^kP_k(u)$ with $P_k\in\mathfrak{gl}_5(\bbQ\fps{u})$, graded, i.e.\ $P_k = \sum_bp_{k,b}E_{b+k,b}$ with the matrix units $E_{a,b}$ (indices modulo $5$), and with $P_0$ invertible; it acts on lowered components, $Y\mapsto PY$. We consider the two conditions
+\begin{description}
+\item[(Sp)] $P(-z)^T\eta P(z) = \eta$;
+\item[(A)] $Y' := P\,\YC(v(u))$ has no positive power of $z$.
+\end{description}
+Put $T_P := -\coef{z^{-1}}Y'_0\in\bbQ\fps{u}$, the transported vanishing coordinate; $d := (P_0)_{33} = p_{0,3} = (P_0^{\mathrm{vec}})_{00}$, the dilaton factor, a unit of $\bbQ\fps{u}$; and $R := P_0^{-1}P = 1+O(z)$. Under (Sp), the equation at $z^0$ reads $P_0^T\eta P_0 = \eta$; hence $R$ satisfies (Sp) as well, and $p_{0,0}\,p_{0,3} = 1$. Examples: (i) the canonical gauge $\Pc$ (\cref{prop:tra-can}), and likewise $P\,P_{11}(0,z)^{-1}$ for a graded regular gauge $P$ from the pulled-back model to a self-dual one-pole system with equal products and equal residues (\cref{thm:gau-G}~(c), \cref{prop:gau-symp}); (ii) $DP$ with $P$ as in (i) and $D$ graded over $\bbQ\fps{u}$, $D_0$ invertible, with (Sp) and $DY'$ free of positive powers of $z$; these need not be gauges (\cref{rmk:mai-annih}).
+\end{defn}
+
+\begin{defn}[edges, the leaf point]
+\label{def:tra-edge}
+Let $R = 1+O(z)$ lie in $\mathfrak{gl}_5(\bbQ\fps{u,z})$, acting on vectors, with $R(-z)^T\eta R(z) = \eta$, and write $R^{-1}(\psi) := R(\psi)^{-1}$. The \emph{edge} of $R$ is the bivector (first index: first slot)
+\[
+E_R(\psi,\psi') := \frac{\eta^{-1}-R^{-1}(\psi)\,\eta^{-1}R^{-1}(\psi')^T}{\psi+\psi'} ;
+\]
+over $\bbQ\fps{u}$ the numerator is divisible by $\psi+\psi'$ (see below), so $E_R\in\bbH\otimes\bbH\otimes\bbQ\fps{u,\psi,\psi'}$, and $E_R(\psi,\psi')^T = E_R(\psi',\psi)$. For a dressing $P$ with (Sp) let $R^{\mathrm{vec}} = (P_0^{\mathrm{vec}})^{-1}P^{\mathrm{vec}}$ be the vector form of $R = P_0^{-1}P$, and put
+\[
+E_P := E_{R^{\mathrm{vec}}},\qquad q_T := (P^{\mathrm{vec}})^{-1}(-z1)\in\cH^u_+,\qquad \tilde q_T := d\,q_T ;
+\]
+$q_T$ is the \emph{leaf point}. The only graph sum attached to $P$ that enters the note is the \emph{flat sum of $P.\Omega^{\mathrm{mod}}_{v(u)}$} of \cref{def:red-flatsum}: the leg-free graph sum with the edge $E_P$ on every edge and, at a vertex of genus $g_v$ with $n_v$ half-edges, the $n_v$-th derivative of the model potential $\overline F_{g_v}$ at $\tilde q_T$ multiplied by $d^{2g_v-2+n_v}$. Its relation with the $R$-matrix action of \cite[Def.~2.2]{PPZ15} is stated after \eqref{eq:tra-leaf}.
+\end{defn}
+
+\emph{Divisibility.} Put $\cN(\psi,\psi') := \eta^{-1}-R^{-1}(\psi)\eta^{-1}R^{-1}(\psi')^T\in\mathfrak{gl}_5(\bbQ\fps{u}\fps{\psi,\psi'})$, the numerator of $E_R$; $R$ is invertible in $\mathfrak{gl}_5(\bbQ\fps{u,z})$ because $R(u,0) = 1$. Inverting $R(-z)^T\eta R(z) = \eta$ gives
+\[
+R^{-1}(\psi)\,\eta^{-1}R^{-1}(-\psi)^T = \eta^{-1},\qquad\text{i.e.}\qquad \cN(\psi,-\psi) = 0 .
+\] The substitution $\psi' = \xi-\psi$, with inverse $\xi = \psi+\psi'$ ($\xi$ a local letter), is an isomorphism of $\bbQ\fps{u}$-algebras from the power series in $\psi,\psi'$ to those in $\psi,\xi$; it turns $\cN$ into $\tilde\cN(\psi,\xi)$ with $\tilde\cN(\psi,0) = 0$, so $\tilde\cN = \xi\,G$ with $G\in\mathfrak{gl}_5(\bbQ\fps{u}\fps{\psi,\xi})$; transforming back, $\cN = (\psi+\psi')E_R$ with $E_R\in\mathfrak{gl}_5(\bbQ\fps{u}\fps{\psi,\psi'})$, unique because $\psi+\psi'$ is not a zero divisor. Since $\eta^{-1}$ is symmetric, $\cN(\psi,\psi')^T = \cN(\psi',\psi)$, hence $E_R(\psi,\psi')^T = E_R(\psi',\psi)$. For a dressing, $E_P$ is also given by the same formula with $P^{\mathrm{vec}}$ in place of $R^{\mathrm{vec}}$, because $(P_0^{\mathrm{vec}})^T\eta P_0^{\mathrm{vec}} = \eta$.
+
+\emph{The leaf point.} Let $P$ be a dressing with (Sp). By the grading $P_0$ is diagonal, so $P_0^{\mathrm{vec}}$ is diagonal with $(P_0^{\mathrm{vec}})_{00} = (P_0)_{33} = d$, and $(P_0^{\mathrm{vec}})^{-1}1 = d^{-1}1$. Since $P^{\mathrm{vec}} = P_0^{\mathrm{vec}}R^{\mathrm{vec}}$ and $R^{\mathrm{vec}} = 1+O(z)$,
+\begin{equation}
+\label{eq:tra-leaf}
+q_T = -\frac zd\,(R^{\mathrm{vec}})^{-1}(z)1 = -\frac zd\,1+T_{\geq 2},\qquad T_{\geq 2} := d^{-1}\bigl(z1-z(R^{\mathrm{vec}})^{-1}(z)1\bigr)\in z^2\cH^u_+ ,
+\end{equation}
+so that $\tilde q_T = dq_T = -z(R^{\mathrm{vec}})^{-1}(z)1 = -z1+dT_{\geq 2}$ and $dT_{\geq 2} = \tilde q_T+z1 = \ttr_{R^{\mathrm{vec}}}(z)$, the translation of \cite[Def.~2.13]{PPZ15} (the $T_b$ of \cite[Prop.~2.12]{PPZ15}); in the coefficients of $dT_{\geq 2} = z1-zd\,(P^{\mathrm{vec}})^{-1}(z)1$ only $d$ and the entries of the $(P^{-1})_k$ occur. Neither (Sp) nor (A) is used in \eqref{eq:tra-leaf}. Thus $E_P = E_{R^{\mathrm{vec}}}$ and $\tilde q_T = q_{R^{\mathrm{vec}}}$ are the edge and the leaf point of $R^{\mathrm{vec}}$ in the sense of \cref{def:set-graphsum}, i.e.\ those of the unit-preserving action $R^{\mathrm{vec}}.\Omega^{\mathrm{mod}}_{v(u)}$ of \cite[Defs.~2.2, 2.13]{PPZ15}; the vertex tensors of \cref{def:red-flatsum} are those of this action, in the form of \cref{def:set-graphsum}, multiplied by $d^{2g_v-2+n_v}$, and for $P_0 = 1$ the flat sum is the leg-free graph sum of $R^{\mathrm{vec}}.\Omega^{\mathrm{mod}}_{v(u)}$.
+
+\subsection{Lemmas E, T, F and the canonical gauge}
+\label{sec:tra-lemmas}
+
+\begin{lem}[Lemma E]
+\label{lem:tra-E}
+Let $R = 1+O(z)$ lie in $\mathfrak{gl}_5(\bbQ\fps{u,z})$ with $R(-z)^T\eta R(z) = \eta$, and let $f\in\cH^u_-$, both in vector form. Then $Rf\in\cH^u$, the contraction of the covector $\Omega_{\mathrm s}(f,\cdot)$ into the first slot of $E_R$ (it pairs $\psi^me$ with $\eta(\coef{z^{-m-1}}f(-z),e)$) converges $u$-adically, and
+\begin{equation}
+\label{eq:tra-lemE}
+(\Omega_{\mathrm s}(f,\cdot)\otimes 1)\,E_R(\psi') = -R(\psi')^{-1}\,(Rf)_{\geq 0}(\psi')\qquad\text{in }\bbH\otimes\bbQ\fps{u,\psi'} .
+\end{equation}
+Hence $E_R$ annihilates $\Omega_{\mathrm s}(f,\cdot)$ in the first slot, equivalently (by symmetry) in the second, if and only if $Rf\in\cH^u_-$. The computation takes place in the ring $\cA := \bbQ\lser{\psi}\fps{u,\psi'}$, the power-series ring in $u$ and $\psi'$ over the field $\bbQ\lser{\psi}$ ($\psi$ the variable of the first slot).
+\end{lem}
+
+\begin{proof}
+\emph{The ring.} $\cA$ contains $\bbQ\fps{u,\psi,\psi'}$, hence $E_R(\psi,\psi')$, $R^{-1}(\psi)$, $R^{-1}(\psi')$ and the numerator $\cN$ of $E_R$, and it contains $\bbQ[\psi^{-1}]\fps{u}$. The element $\psi+\psi' = \psi(1+\psi^{-1}\psi')$ is a unit of $\cA$, since $\psi$ is a unit of $\bbQ\lser{\psi}$ and $1+\psi^{-1}\psi'$ has constant term $1$ in the power-series ring $\cA$ over $\bbQ\lser{\psi}$; its inverse is $(\psi+\psi')^{-1} = \sum_{j\geq 0}(-\psi')^j\psi^{-j-1}$. The residue $\Res_\psi\colon\cA\to\bbQ\fps{u,\psi'}$, the coefficient of $\psi^{-1}$ taken coefficientwise in $(u,\psi')$, is $\bbQ\fps{u,\psi'}$-linear and commutes with sums that converge $(u,\psi')$-adically in $\cA$.
+
+\emph{Step 1 (the contraction as a residue).} Put $\alpha(\psi) := \eta f(-\psi)$, a vector with entries in $\psi^{-1}\bbQ[\psi^{-1}]\fps{u}$. By definition the contraction is $\sum_m\eta(\coef{z^{-m-1}}f(-z),\cdot)$ applied to $\coef{\psi^m}E_R$, and $\eta(\coef{z^{-m-1}}f(-z),e) = \coef{\psi^{-m-1}}\alpha(\psi)^Te$; so it is the vector $C(\psi')$ with $C(\psi')^T := \Res_\psi\,\alpha(\psi)^TE_R(\psi,\psi')$, the product taken in $\cA$. Modulo $u^{M+1}$ the vector $\alpha$ has finitely many non-zero coefficients, so at each order $u^M\psi'^n$ only finitely many $m$ contribute: this is the $u$-adic convergence.
+
+\emph{Step 2 (the expansion).} $(\psi+\psi')E_R = \cN$ holds in $\bbQ\fps{u,\psi,\psi'}\subset\cA$, and $\psi+\psi'$ is a unit of $\cA$; so $E_R = (\psi+\psi')^{-1}\cN$ in $\mathfrak{gl}_5(\cA)$, and distributivity in the commutative ring $\cA$ gives the identity of row vectors over $\cA$
+\[
+\alpha^TE_R = \alpha^T\eta^{-1}(\psi+\psi')^{-1}-\alpha^TR^{-1}(\psi)\,\eta^{-1}R^{-1}(\psi')^T(\psi+\psi')^{-1} .
+\]
+
+\emph{Step 3 (the first term).}
+\[
+\Res_\psi\bigl(\alpha^T\eta^{-1}(\psi+\psi')^{-1}\bigr) = \sum_j(-\psi')^j\Res_\psi\bigl(\alpha(\psi)^T\psi^{-j-1}\bigr)\eta^{-1} = \sum_j(-\psi')^j(\coef{\psi^j}\alpha)^T\eta^{-1} = 0,
+\]
+because $\alpha$ has no non-negative power of $\psi$; the sum over $j$ converges $\psi'$-adically and $\Res_\psi$ commutes with it.
+
+\emph{Step 4 (the second term).} Put $\beta(\psi) := R^{-1}(\psi)^T\alpha(\psi)$, whose entries are products of elements of $\bbQ\fps{\psi}\fps{u}$ and $\bbQ[\psi^{-1}]\fps{u}$, hence lie in $\bbQ\lser{\psi}\fps{u}$, and $\beta_{\geq 0}(y) := \sum_{j\geq 0}y^j\coef{\psi^j}\beta$. Since $R^{-1}(\psi')^T$ does not involve $\psi$,
+\[
+\Res_\psi\bigl(\alpha^TR^{-1}(\psi)\,\eta^{-1}R^{-1}(\psi')^T(\psi+\psi')^{-1}\bigr) = \sum_j(-\psi')^j(\coef{\psi^j}\beta)^T\eta^{-1}R^{-1}(\psi')^T = \beta_{\geq 0}(-\psi')^T\eta^{-1}R^{-1}(\psi')^T .
+\]
+
+\emph{Step 5 (symplecticity).} The hypothesis on $R$ gives $R(\psi)^{-1} = \eta^{-1}R(-\psi)^T\eta$, so $R^{-1}(\psi)^T = \eta R(-\psi)\eta^{-1}$ ($\eta$ is symmetric) and $\beta(\psi) = \eta R(-\psi)f(-\psi) = \eta\,(Rf)(-\psi)$, where $(Rf)(-\psi)$ is the element $Rf$ of $\cH^u$ with $z$ replaced by $-\psi$. Therefore $\coef{\psi^j}\beta = (-1)^j\eta\coef{z^j}(Rf)$ and $\beta_{\geq 0}(-\psi') = \eta\sum_{j\geq 0}\psi'^j\coef{z^j}(Rf) = \eta\,(Rf)_{\geq 0}(\psi')$. With Steps 2-4,
+\[
+C(\psi')^T = -\bigl(\eta(Rf)_{\geq 0}(\psi')\bigr)^T\eta^{-1}R^{-1}(\psi')^T,\qquad\text{i.e.}\qquad C(\psi') = -R(\psi')^{-1}(Rf)_{\geq 0}(\psi').
+\]
+
+\emph{Step 6.} $R(\psi')^{-1}$ is invertible in $\mathfrak{gl}_5(\bbQ\fps{u,\psi'})$, so $C = 0$ if and only if $(Rf)_{\geq 0} = 0$, i.e.\ if and only if $Rf\in\cH^u_-$ (the splitting of \cref{conv:tra-forms}). The second slot follows from $E_R(\psi,\psi')^T = E_R(\psi',\psi)$.
+\end{proof}
+
+The ring of Step 2 has to be named: in $\bbQ\lser{\psi'}\lser{\psi}\fps{u}$, where $(\psi+\psi')^{-1} = \sum_j(-\psi)^j\psi'^{-j-1}$, the split is a different one and its first term has in general a non-zero residue, the total being the same. The hypothesis $f\in\cH^u_-$ (the $u$-adic decay of the negative tail of $f$) makes the residue pairing converge; for $f = z^{-k}J^{\mathrm C}$ it is \cref{lem:tra-conv}~(c).
+
+\begin{cor}[Corollary E': edges in $\sKo\otimes\sKo$]
+\label{cor:tra-edges}
+Let $P$ be a dressing with (Sp). Then (A) holds if and only if $(\Pi_0\otimes 1)E_P = 0$, and if and only if $(\Pi_i\otimes 1)E_P = (1\otimes\Pi_i)E_P = 0$ for all $i\geq 0$. If (A) holds, $E_P$ lies in $\sKo\otimes\sKo$ in the sense of \cref{lem:tra-twoslot}: $E_P = \sum_{\alpha,\beta}E_P^{\alpha\beta}\fr_\alpha(\psi)\otimes\fr_\beta(\psi')$, the sum of a summable family whose coefficients $E_P^{\alpha\beta}\in\bbQ\fps{u}$ are the flat components of $E_P$ with $a,b\neq 1$.
+\end{cor}
+
+\begin{proof}
+$R^{\mathrm{vec}} = 1+O(z)$ satisfies the hypothesis of \cref{lem:tra-E}, since $R$ satisfies (Sp) (\cref{def:tra-dressing}) and (Sp) holds in vector form (\cref{conv:tra-forms}). For $k\geq 1$, $z^{-k}J^{\mathrm C}\in\cH^u_-$ (\cref{lem:tra-conv}~(c)). In vector form $P^{\mathrm{vec}}J^{\mathrm C} = \eta^{-1}P\eta\,\eta^{-1}\YC = \eta^{-1}(P\YC) = \eta^{-1}Y'$; as $P_0$ does not involve $z$ and multiplication by $z^{-k}$ shifts the splitting,
+\[
+(R^{\mathrm{vec}}z^{-k}J^{\mathrm C})_{\geq 0} = z^{-k}\,(P_0^{\mathrm{vec}})^{-1}\eta^{-1}\,(Y')_{\geq k} .
+\]
+If (A) holds, this vanishes for every $k\geq 1$, and \cref{lem:tra-E} shows that $E_P$ annihilates $\Omega_{\mathrm s}(z^{-k}J^{\mathrm C},\cdot) = (-1)^{k+1}\Pi_{k-1}$ \eqref{eq:tra-pairing} in each slot, for every $k\geq 1$; this is $(\Pi_i\otimes 1)E_P = (1\otimes\Pi_i)E_P = 0$ for all $i\geq 0$. Conversely, if $(\Pi_0\otimes 1)E_P = 0$, then \cref{lem:tra-E} with $f = z^{-1}J^{\mathrm C}$ gives $(Y')_{\geq 1} = 0$, which is (A). The frame expansion is \cref{lem:tra-twoslot}.
+\end{proof}
+
+\begin{lem}[Lemma T: the leaf point]
+\label{lem:tra-T}
+Let $P$ be a dressing with (Sp) and (A).
+\begin{description}
+\item[(a)] $\Omega_{\mathrm s}(f,q_T) = \Omega_{\mathrm s}(P^{\mathrm{vec}}f,-z1)$ for every $f\in\cH^u$.
+\item[(b)] $\Pi_0(q_T) = T_P$ and $\Pi_i(q_T) = 0$ for $i\geq 1$; so $q_T\in\sK$.
+\item[(c)] With $T_{\geq 2}\in z^2\cH^u_+$ as in \eqref{eq:tra-leaf}, $q_T = -(z/d)1+T_{\geq 2}$, and $\tilde q_T = d\,q_T = -z1+dT_{\geq 2}$ lies in $-z+\sK$, with
+\[
+\Pi_0(\tilde q_T) = d\,T_P =: v+\delta_P .
+\]
+Moreover $dT_{\geq 2} = \tilde q_T+z1 = \ttr_{R^{\mathrm{vec}}}(z)$ lies in $\sK\cap z^2\cH^u_+$, and $dT_{\geq 2} = y^\circ+\delta_PH$ with $y^\circ\in\sKo$, whose frame coordinates $y^\circ_{(k,a)}$ ($a\neq 1$) vanish for $k\leq 1$.
+\item[(d)] $\delta_P\in u^2\bbQ\fps{u}$; more precisely $T_P-p_{0,0}v\in u^2\bbQ\fps{u}$ and $d\,p_{0,0} = 1$.
+\end{description}
+\end{lem}
+
+\begin{proof}
+(a) By (Sp) in vector form, $\eta\,(P^{\mathrm{vec}})^{-1}(z) = P^{\mathrm{vec}}(-z)^T\eta$; hence $\eta(f(-z),(P^{\mathrm{vec}})^{-1}(z)g(z)) = \eta((P^{\mathrm{vec}}f)(-z),g(z))$ in $\bbQ\lser{z}\fps{u}$, and $\Omega_{\mathrm s}(f,(P^{\mathrm{vec}})^{-1}g) = \Omega_{\mathrm s}(P^{\mathrm{vec}}f,g)$ for $f,g\in\cH^u$, by associativity in $\mathfrak{gl}_5(\bbQ\lser{z}\fps{u})$ (\cref{lem:tra-conv}~(c)). Take $g = -z1$.
+
+(b) By \eqref{eq:tra-pairing} with $k = i+1$, by (a) and by $P^{\mathrm{vec}}J^{\mathrm C} = \eta^{-1}Y'$,
+\[
+\Pi_i(q_T) = (-1)^i\,\Omega_{\mathrm s}(z^{-i-1}J^{\mathrm C},q_T) = (-1)^i\,\Omega_{\mathrm s}(z^{-i-1}\eta^{-1}Y',-z1).
+\]
+Since $(\eta^{-1}Y')^T\eta\,1 = Y'_0$, the last pairing is $\Res_z(-z)^{-i}Y'_0(-z)\,\dd z = -\coef{z^{i-1}}Y'_0$; so
+\[
+\Pi_i(q_T) = (-1)^{i+1}\coef{z^{i-1}}Y'_0 .
+\]
+For $i = 0$ this is $T_P$; for $i\geq 2$ it vanishes by (A). For $i = 1$ it vanishes by the grading: $(P\YC)_0 = \sum_kz^kp_{k,-k}\YC_{-k}$, and $\YC_{-k}$ has only the powers $z^{-n}$ with $n\equiv\nu_{-k}+1\equiv 1+k\pmod 5$ (\cref{lem:gau-vanshape}), so $Y'_0$ has only the powers $z^{-n}$ with $n\equiv 1\pmod 5$, and $\coef{z^0}Y'_0 = 0$.
+
+(c) The formulas for $q_T$, $\tilde q_T$ and $dT_{\geq 2}$ are \eqref{eq:tra-leaf}. Since $\sK$ is a $\bbQ\fps{u}$-module and $-z+\sK = \sK$ (\cref{cor:tra-slice}), (b) gives $\tilde q_T\in -z+\sK$ with $\Pi_0(\tilde q_T) = dT_P$. As $-z1\in\sK$ (\cref{cor:tra-slice}), $dT_{\geq 2} = \tilde q_T+z1$ lies in $\sK\cap z^2\cH^u_+$, with $\Pi_0(dT_{\geq 2}) = dT_P+\Pi_0(z1) = dT_P-v = \delta_P$, and \cref{cor:tra-slice} with \cref{lem:tra-conv}~(b3) gives the decomposition: $y^\circ = dT_{\geq 2}-\delta_PH$ has the same flat components with $a\neq 1$ as $dT_{\geq 2}\in z^2\cH^u_+$.
+
+(d) By the grading, $T_P = -\coef{z^{-1}}(P\YC)_0 = -\sum_{k\geq 0}p_{k,-k}\coef{z^{-1-k}}\YC_{-k}$. The term $k = 0$ is $-p_{0,0}\coef{z^{-1}}\YC_0 = p_{0,0}v$, as $\coef{z^{-1}}\YC_0 = -v$ \eqref{eq:tra-values}. For $k\geq 1$ the coefficient $\coef{z^{-1-k}}\YC_{-k}$ has $u$-order at least $(k+1)-\lfloor(k+1)/5\rfloor\geq 2$ (\cref{lem:tra-conv}~(c)), and $p_{k,-k}\in\bbQ\fps{u}$; so $T_P-p_{0,0}v\in u^2\bbQ\fps{u}$. By (Sp) at $z^0$, $p_{0,0}\,\eta_{03}\,p_{0,3} = \eta_{03}$, i.e.\ $d\,p_{0,0} = 1$. Hence $dT_P = v+d\,(T_P-p_{0,0}v)$ and $\delta_P = dT_P-v\in u^2\bbQ\fps{u}$.
+\end{proof}
+
+\begin{lem}[Lemma F: finiteness]
+\label{lem:tra-F}
+Let $P$ be a dressing with (Sp) and $\Gamma$ a leg-free stable graph. The contraction along $\Gamma$ of the edges $E_P$ with the vertex tensors $d^{2g_v-2+n_v}\dd^{n_v}\overline F_{g_v}(\tilde q_T)$, one slot per half-edge (this is $|\Aut\Gamma|\,\mathrm{Cont}_\Gamma$ in the notation of \cref{def:red-flatsum}), is a finite sum of products of flat model correlators at $v = v(u)$, which are monomials $Cv(u)^e$ with $C\in\bbQ$ and $e\in\bbZ$, and of polynomials in the entries of the $P_k$, the $(P^{-1})_k$ and $d^{\pm 1}$. If $d(0) = 1$, each vertex tensor equals the Taylor expansion $\dd^{n_v}\overline F_{g_v}(q_T)$ of $\overline F_{g_v}$ at the base point $-z1$ in the direction $q_T+z1$.
+\end{lem}
+
+\begin{proof}
+\emph{Step 1 (vertices).} At a vertex of genus $h$ with $n$ half-edges, $2h-2+n>0$, the definition of $\overline F_h$ (\cref{def:set-graphsum,lem:set-dilaton}) and $\tilde q_T+z1 = dT_{\geq 2}$ \eqref{eq:tra-leaf} give
+\[
+d^{2h-2+n}\,\dd^n\overline F_h(\tilde q_T)[X_1,\dots,X_n] = d^{2h-2+n}\sum_{m\geq 0}\frac1{m!}\langle X_1\cdots X_n(dT_{\geq 2})^m\rangle_h .
+\]
+If $d(0) = 1$, \cref{lem:tra-conv}~(f1) with $\varkappa = d$ and $y = T_{\geq 2}$, i.e.\ the dilaton equation of \cref{lem:set-dilaton} applied with $d(0) = 1$, shows that this equals the $u$-adically convergent Taylor expansion $\sum_m\frac1{m!}\langle X_1\cdots X_n(q_T+z1)^m\rangle_h = \dd^n\overline F_h(q_T)[X_1,\dots,X_n]$. At $h = 1$ this needs $n\geq 1$, which holds at every genus-$1$ vertex of a leg-free stable graph of genus at least $2$; the logarithmic genus-$1$ term of the dilaton equation, which concerns $n = 0$, does not enter. \emph{Step 2 (leaves).} Since $dT_{\geq 2}\in z^2\cH^u_+$, the sum over $m$ stops at $m = 3h-3+n$, and only slot degrees $\leq 3h-3+n$ occur (\cref{lem:tra-conv}~(d)). \emph{Step 3 (edges).} Hence for each edge only its coefficients of $\psi^k\psi'^l$ with $k$ and $l$ bounded by the dimension bounds of its two vertices matter. Each of them is a finite combination of coefficients of the numerator $\cN$ of $E_P$, since $(\psi+\psi')E_P = \cN$ gives $\coef{\psi^k\psi'^l}E_P = \sum_{j=0}^l(-1)^j\coef{\psi^{k+1+j}\psi'^{l-j}}\cN$, and $\cN$ is a polynomial in the entries of $(R^{\mathrm{vec}})^{-1} = (P^{\mathrm{vec}})^{-1}P_0^{\mathrm{vec}}$. The coefficients of $dT_{\geq 2} = z1-zd\,(P^{\mathrm{vec}})^{-1}(z)1$ \eqref{eq:tra-leaf} are polynomials in $d$ and in the entries of the $(P^{-1})_k$. So the contraction is a finite sum of products of flat model correlators at $v(u)$, which are monomials $Cv(u)^e$ by \cref{lem:set-modhom}, and of such polynomials.
+\end{proof}
+
+\begin{prop}[the canonical gauge as a dressing]
+\label{prop:tra-can}
+Let $(\alpha,\beta)\in\bbQ^2$ give a conifold frame (\cref{def:set-frames}) and let $v(u) = u\tau(u)^{-5/4}$ (\cref{def:set-tau}), so that $v(0) = 0$ and $v'(0) = 1$. The canonical gauge $\Pc$ (\cref{def:gau-can}) is a dressing of the model at $v(u)$ with (Sp) and (A), with $Y' = \YCQ$, $T_{\Pc} = \tc$ and $d(0) = 1$. Hence the edges of $\Pc$ lie in $\sKo\otimes\sKo$, as $\bbQ\fps{u}$-combinations of frames (\cref{cor:tra-edges}); $q_T\in\sK$ with $\Pi_0(q_T) = \tc$, and $\tilde q_T = d\,q_T\in -z+\sK$ with $\Pi_0(\tilde q_T) = d\,\tc = v+\delta_{\Pc}$, $\delta_{\Pc}\in u^2\bbQ\fps{u}$ (\cref{lem:tra-T}); and every graph term is a finite sum, each vertex tensor being the Taylor expansion at the base point (\cref{lem:tra-F}).
+\end{prop}
+
+\begin{proof}
+By \cref{thm:gau-U}~(d) and \cref{def:gau-can}, $\Pc = \sum_kz^kP_k$ has $P_k\in\mathfrak{gl}_5(\bbQ\fps{u})$, is graded and has $P_0$ invertible: it is a dressing of the model at $v(u)$, the model being pulled back by $v(u)$ as in \cref{prop:gau-equalprod}. (Sp) is \cref{prop:gau-symp}. By \cref{thm:gau-G}~(a), $\Pc\YC(v(u)) = \YCQ$, which lies in $\bbQ[z^{-1}]\fps{u}^5$ by \cref{lem:gau-vanq}~(c), so it has no positive power of $z$: this is (A), with $Y' = \YCQ$. By \cref{lem:gau-vanq}~(d), $\coef{z^{-1}}\YCQ = -\tc\,\mathbf e_0$, so $T_{\Pc} = \tc$. By \cref{lem:gau-diag}, which applies because (N0) holds in the conifold frames (\cref{def:set-frames,prop:gau-equalprod}), $p_{0,a}(0) = 1$ for all $a$; so $d = p_{0,3} = 1/p_{0,0}$ (\cref{lem:tra-T}~(d)) has $d(0) = 1$. The rest is \cref{cor:tra-edges,lem:tra-twoslot,lem:tra-T,lem:tra-F}.
+\end{proof}

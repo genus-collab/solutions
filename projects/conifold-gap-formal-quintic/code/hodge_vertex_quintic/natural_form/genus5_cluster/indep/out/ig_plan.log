@@ -1,0 +1,18 @@
+complete strata E <= 5 (388 graphs) + E = 12 (71) + 20 package-heaviest: 479 graphs, predicted 45410 s
+   (of which graph 149 alone: 9724 s, run in 10 shards)
+   E= 6:  492 graphs in the stratum,   0 taken, predicted 0 s of the -66 s stratum budget
+   E= 7:  784 graphs in the stratum,   0 taken, predicted 0 s of the -70 s stratum budget
+   E= 8: 1002 graphs in the stratum,   0 taken, predicted 0 s of the -78 s stratum budget
+   E= 9:  926 graphs in the stratum,   0 taken, predicted 0 s of the -78 s stratum budget
+   E=10:  632 graphs in the stratum,   0 taken, predicted 0 s of the -70 s stratum budget
+   E=11:  260 graphs in the stratum,   0 taken, predicted 0 s of the -49 s stratum budget
+SAMPLE p89 nat: 479 inner graphs (10.5% of 4555), predicted 45410 CPU-s = 12.6 CPU-h
+   pieces to be compared: 20391 (of 168475 in the full run); outer graphs reached: 628
+   by E: E=0:1/1, E=1:3/3, E=2:11/11, E=3:34/34, E=4:100/100, E=5:239/239, E=6:0/492, E=7:0/784, E=8:8/1002, E=9:4/926, E=10:8/632, E=11:0/260, E=12:71/71
+SAMPLE p61 nat: 217 inner graphs, predicted 21958 CPU-s = 6.1 CPU-h; pieces 3724
+wrote sample_nat89.txt (478 graphs)
+wrote sample_nat61.txt (217 graphs)
+wrote sample_id89.txt (479 graphs)
+wrote sample_id61.txt (217 graphs)
+predicted id cost: p89 2262 s, p61 745 s
+predicted grand total: 19.5 CPU-h

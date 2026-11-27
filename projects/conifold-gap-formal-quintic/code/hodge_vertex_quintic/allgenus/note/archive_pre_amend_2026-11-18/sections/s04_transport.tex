@@ -1,0 +1,104 @@
+% Section 4, part 1 of 4; label prefix: tra. Part 2: frames, the affine slice, bivectors.
+% Part 3: pointer to the u-adic convergence lemma. Part 4: dressings, edges, Lemmas E, T, F, the canonical gauge.
+% No new macros. Local letters (declared where used): phi (a map of finite type), chi (sequences), pi_r, N, Theta.
+
+\section{The vanishing tower and transport}
+\label{sec:tra}
+
+This section fixes the two coefficient settings in which the model is used, defines the vanishing tower $\Pi_i$, the slice $\sK$ and its frames, and proves the transport lemmas: for every symplectic dressing $P$ of the model that annihilates the vanishing period, in particular for the canonical gauge $\Pc$ of \cref{def:gau-can}, the edges lie in $\sKo\otimes\sKo$, the leaf point lies in $\sK$, its dilaton rescaling lies in the affine slice $-z+\sK$, and every graph term is a finite sum. Every infinite sum is justified $u$-adically. In this section and the next, $q$ denotes an element of a loop space, as in Givental's formalism; the parameter $q$ of the formal quintic does not occur.
+
+\subsection{The vanishing tower and the slice}
+\label{sec:tra-tower}
+
+\begin{conv}[loop spaces, the two settings, forms, insertions]
+\label{conv:tra-forms}
+The state space $\bbH$ has the flat basis $H^a$, $a\in\bbZ/5$, with unit $1 = H^0$ and $H = H^1$, and the pairing $\eta(H^a,H^b) = 5\,\delta_{a+b\equiv 3}$ of \cref{def:set-frob}; as a matrix, $\eta$ is $5$ times the permutation matrix of $a\mapsto 3-a$, so $\eta^{-1} = \eta/25$. The charges and signs are those of \cref{def:set-model}, $\nu = (\nu_0,\dots,\nu_4) = (0,-1,3,2,1)$ and $\varepsilon = (1,-1,-1,1,1)$; put $w_b := \nu_b+1$. The \emph{weight} of $v^mz^kH^b$ is $5m+4k+w_b$ and the weight of a scalar $v^mz^k$ ($k\in\bbZ$) is $5m+4k$; $V_w$ denotes the $\bbQ$-span of the $v^mz^kH^b$ ($m,k\geq 0$) of weight $w$, which is the weight space of \cref{def:mod-weights}. In terms of the exponent weights of \cref{lem:set-modhom}, $4k+w_b = 5\wt(k,b)+5$.
+\begin{description}
+\item[Graded setting] Coefficients in $\bbQ[v]$. Each $V_w$ is finite-dimensional and consists of polynomials in $z$; put $\cH^{\mathrm{gr}}_+ := \bigoplus_wV_w = \bbH\otimes\bbQ[v][z]$. Givental's loop space $\bbH\otimes\bbQ[v]\lser{z^{-1}}$, with positive half $\cH^{\mathrm{gr}}_+$, is consistent in this setting, and every sum below is finite.
+\item[$u$-adic setting] $v$ is a non-zero element of $u\bbQ\fps{u}$, written $v(u)$ when its dependence on $u$ is stressed; from \cref{def:tra-dressing} on, $v'(0)\neq 0$; for the formal quintic it is the series $v(u) = u\tau(u)^{-5/4}$ of \cref{def:set-tau}. The loop space and its halves are
+\[
+\cH^u := \bbH\otimes\bbQ\lser{z}\fps{u},\qquad \cH^u_+ := \bbH\otimes\bbQ\fps{u,z},\qquad \cH^u_- := \bbH\otimes z^{-1}\bbQ[z^{-1}]\fps{u}.
+\]
+Here $\bbQ\lser{z}\fps{u}$ is the power-series ring in $u$ over the field $\bbQ\lser{z}$: its elements are the series $\sum_{k\in\bbZ}c_kz^k$ with $c_k\in\bbQ\fps{u}$ and $c_k\to 0$ $u$-adically as $k\to-\infty$, and products are finite modulo every power of $u$. It contains the one-variable objects of this section: the leaf points and the entries of the dressings are power series in $z$, and the vanishing solution has infinitely many negative powers of $z$; the edges, in two variables, are treated in \cref{lem:tra-twoslot,lem:tra-E}. Every $f\in\cH^u$ splits uniquely, coefficientwise in $u$, as $f = f_{\geq 0}+f_{<0}$ with $f_{\geq 0}\in\cH^u_+$ and $f_{<0}\in\cH^u_-$; $f_{\geq k}$ is the part with $z$-powers $\geq k$. The form
+\[
+\Omega_{\mathrm s}(f,g) := \Res_z\,\eta(f(-z),g(z))\,\dd z,
+\]
+with the residue taken coefficientwise in $u$, is $\bbQ\fps{u}$-bilinear and antisymmetric on $\cH^u$ (the substitution $z\mapsto -z$ is an automorphism of $\bbQ\lser{z}$ which changes the sign of the residue, and $\eta$ is symmetric), and $\cH^u_+$, $\cH^u_-$ are isotropic and complementary. The substitution $v\mapsto v(u)$ maps every $V_w$ into $\cH^u_+$, and every scalar series $\sum_{n\geq 1}c_nv^{(w+4n)/5}z^{-n}$ of scalar weight $w$ ($c_n\in\bbQ$) into $z^{-1}\bbQ[z^{-1}]\fps{u}$, since its $z^{-n}$-coefficient has $u$-order at least $(w+4n)/5$.
+\end{description}
+\emph{Insertions and components.} An insertion $\psi^kH^b$ is identified with the vector $z^kH^b$. For $q$ in $\cH^{\mathrm{gr}}_+$ or $\cH^u_+$ we write $q_{(k,b)} := \coef{z^k}q^b$ for its flat components, so $q = \sum_{k,b}q_{(k,b)}z^kH^b$. Solutions are written in lowered components: a vector $J$ has the components $Y_a := \eta(H^a,J)$, i.e.\ $Y = \eta J$, and for $n = \sum_an^aH^a$ we put $\langle Y,n\rangle := \sum_aY_an^a = \eta(J,n)$. Matrices $P$ (gauges and dressings) act on lowered components; the \emph{vector form} of $P$ is $P^{\mathrm{vec}} := \eta^{-1}P\eta$, the conjugate of $P$ by the permutation $a\mapsto 3-a$, which acts on vectors. Since $\eta^{-1} = \eta/25$, the condition $P(-z)^T\eta P(z) = \eta$ holds for $P$ if and only if it holds for $P^{\mathrm{vec}}$. The vanishing solution $\YC$ of \cref{def:gau-van} has the vector form $J^{\mathrm C} := \eta^{-1}\YC$; thus $\eta(J^{\mathrm C}(-z),q(z)) = \langle\YC(-z),q(z)\rangle$.
+
+\emph{Summable families; maps of finite type.} A family $(x_l)_{l\in L}$ in $\cH^u_+$ is \emph{summable} if for every flat index $(k,b)$ and every $N$ only finitely many $x_l$ have $\coef{z^k}x_l^b\notin u^N\bbQ\fps{u}$; its sum is taken coefficientwise and is finite modulo every power of $u$. The same definition is used for bivectors in $\bbH\otimes\bbH\otimes\bbQ\fps{\psi,\psi'}\fps{u}$, with the indices $(k,l,a,b)$ of the coefficients of $\psi^k\psi'^lH^a\otimes H^b$. A family $(y_l)$ in $\bbQ\lser{u}$ is summable if all $y_l$ lie in one $u^{N_0}\bbQ\fps{u}$ and for every $N$ only finitely many lie outside $u^N\bbQ\fps{u}$. Every regrouping of a summable family (a partition into subfamilies) consists of summable families, and the sum of their sums is the total sum, because coefficientwise this is a statement about finite sums; the sum of a summable family of elements of $\bbQ\fps{u}$ lies in $\bbQ\fps{u}$. A $\bbQ\fps{u}$-linear map $\phi\colon\cH^u_+\to\bbQ\lser{u}$ (a local letter) is \emph{of finite type} if $\phi(\cH^u_+)$ lies in some $u^{N_0}\bbQ\fps{u}$ and for every $N$ there are a finite set $F_N$ of flat indices and an integer $M_N$ such that $\phi(x)\in u^N\bbQ\fps{u}$ whenever $\coef{z^k}x^b\in u^{M_N}\bbQ\fps{u}$ for all $(k,b)\in F_N$, the other coefficients of $x$ being arbitrary; the same definition is used for maps on bivectors.
+\end{conv}
+
+\begin{lem}[the summation lemma]
+\label{lem:tra-sum}
+If $\phi$ is of finite type and $(x_l)_{l\in L}$ is a summable family in $\cH^u_+$, then $(\phi(x_l))_{l\in L}$ is summable and $\phi(\sum_lx_l) = \sum_l\phi(x_l)$. The same holds for maps of finite type on bivectors and summable families of bivectors.
+\end{lem}
+
+\begin{proof}
+Fix $N$, with $F_N$, $M_N$ as in \cref{conv:tra-forms}. By summability only a finite set $L_0\subset L$ of indices has a coefficient $\coef{z^k}x_l^b$, $(k,b)\in F_N$, outside $u^{M_N}\bbQ\fps{u}$; so $\phi(x_l)\in u^N\bbQ\fps{u}$ for $l\notin L_0$, and, as $\sum_{l\notin L_0}x_l$ has all its coefficients with index in $F_N$ in $u^{M_N}\bbQ\fps{u}$, linearity gives $\phi(\sum_lx_l)-\sum_{l\in L_0}\phi(x_l)\in u^N\bbQ\fps{u}$. Since all $\phi(x_l)$ lie in $u^{N_0}\bbQ\fps{u}$, $(\phi(x_l))$ is summable, and $\phi(\sum_lx_l)\equiv\sum_l\phi(x_l)$ modulo every $u^N$. Bivectors are treated in the same way.
+\end{proof}
+
+The maps of finite type used below are $x\mapsto\coef{z^k}x^b$, the $\Pi_i$, a model correlator in one insertion (\cref{lem:tra-conv}), $\Omega_{\mathrm s}(f,\cdot)$ for $f\in\cH^u_-$, and, coefficientwise in the other slot, $\Pi_i\otimes 1$ (\cref{lem:tra-twoslot}) and the contraction of \cref{lem:tra-E}.
+
+\begin{defn}[the vanishing tower]
+\label{def:tra-tower}
+Let $\YC$ be the vanishing solution of the model (\cref{def:gau-van}), in lowered components. For $q$ in $\cH^{\mathrm{gr}}_+$ or in $\cH^u_+$ and $i\geq 0$ put
+\begin{equation}
+\label{eq:tra-tower}
+\Pi_i(q) := -\coef{z^i}\,\langle\YC(-z),q(z)\rangle .
+\end{equation}
+$\Pi_0$ is the \emph{vanishing covector}. In the $u$-adic setting $\YC$ is taken at $v = v(u)$, where it lies in $\bbQ[z^{-1}]\fps{u}^5$ (\cref{lem:gau-vanshape}), and the product is taken in $\bbQ\lser{z}\fps{u}$ (\cref{conv:tra-forms}).
+\end{defn}
+
+\emph{The shift rule and the values.} The series $\YC$ has no positive power of $z$. Since $\coef{z^i}(z^k\YC_b(-z)) = (-1)^{k-i}\coef{z^{-(k-i)}}\YC_b$,
+\begin{equation}
+\label{eq:tra-shift}
+\Pi_i(z^kH^b) = \Pi_0(z^{k-i}H^b)\ \ (k\geq i),\qquad \Pi_i(z^kH^b) = 0\ \ (k<i),\qquad \Pi_0(z^mH^b) = (-1)^{m+1}\coef{z^{-m}}\YC_b .
+\end{equation}
+By the closed form of \cref{lem:gau-vanshape}, $\coef{z^{-n}}\YC_b = \varepsilon_b(-1)^nv^{n-r}/(4^r\,r!\,(n-r)!)$ with $r = \lfloor n/5\rfloor$ if $n\equiv\nu_b+1\pmod 5$, and $\coef{z^{-n}}\YC_b = 0$ otherwise. As $\nu_b+1\equiv 1-b\pmod 5$, this gives
+\begin{equation}
+\label{eq:tra-values}
+\Pi_0(z^mH^b) = -\varepsilon_b\,\frac{v^{m-r}}{4^r\,r!\,(m-r)!}\quad\bigl(r = \lfloor m/5\rfloor\bigr)\ \ \text{if } b+m\equiv 1\pmod 5,\qquad \Pi_0(z^mH^b) = 0\ \ \text{otherwise}.
+\end{equation}
+In particular:
+\begin{enumerate}
+\item $\Pi_0(z^mH) = \pi_rv^{4r}$ if $m = 5r$, and $\Pi_0(z^mH) = 0$ if $5\nmid m$, where $\pi_r := 1/(4^r\,r!\,(4r)!)$, $\pi_0 = 1$;
+\item $\Pi_0(H^a) = 0$ for $a\neq 1$;
+\item the $v$-exponent of a non-zero $\Pi_0(z^mH^b)$ is $m-\lfloor m/5\rfloor\geq 4m/5$; so in the $u$-adic setting $\ord_u\Pi_0(z^mH^b)\geq 4m/5$.
+\end{enumerate}
+For example $\Pi_0(H) = 1$, $\Pi_0(z1) = -v$ and $\Pi_0(z^6\,1) = -v^5/480$.
+
+\emph{Homogeneity and finite type.} The coefficient of $z^{-n}$ in $\YC_b$ is a multiple of $v^{n-\lfloor n/5\rfloor}$, of scalar weight $5(n-\lfloor n/5\rfloor)-4n = w_b$ when $n\equiv\nu_b+1\pmod 5$ (as $0\leq\nu_b+1\leq 4$); so $\YC_b$ is homogeneous of scalar weight $w_b$, and in the graded setting $\Pi_i$ maps $V_w$ into $\bbQ v^{(w-4i)/5}$ (zero unless $(w-4i)/5$ is a non-negative integer). In the $u$-adic setting $\Pi_i(q) = \sum_{k\geq i,\,b}q_{(k,b)}\,\Pi_0(z^{k-i}H^b)$ converges by (iii), and modulo $u^N$ it depends only on the $q_{(k,b)}$ with $4(k-i)/5<N$, taken modulo $u^N$: $\Pi_i$ maps $\cH^u_+$ to $\bbQ\fps{u}$ and is of finite type.
+
+\emph{The tower as symplectic pairings.} For $k\geq 1$, $z^{-k}J^{\mathrm C}\in\cH^u_-$ by \cref{lem:gau-vanshape}, and for $q\in\cH^u_+$
+\begin{equation}
+\label{eq:tra-pairing}
+\Omega_{\mathrm s}(z^{-k}J^{\mathrm C},q) = (-1)^{k+1}\,\Pi_{k-1}(q),
+\end{equation}
+because $(z^{-k}J^{\mathrm C})(-z) = (-1)^kz^{-k}J^{\mathrm C}(-z)$ and $\eta(J^{\mathrm C}(-z),q(z)) = \langle\YC(-z),q(z)\rangle$, so the left side is $(-1)^k\coef{z^{k-1}}\langle\YC(-z),q(z)\rangle$.
+
+\begin{lem}[the operator $\Theta$]
+\label{lem:tra-theta}
+Let $A$ be $\bbQ[v]$ (graded setting) or $\bbQ\fps{u}$ with $v = v(u)$ ($u$-adic setting). For a sequence $\chi = (\chi_j)_{j\geq 0}$ in $A$, finitely supported in the graded setting, put $\chi(z) := \sum_j\chi_jz^j$ and $\Theta\chi := (\Pi_i(\chi(z)H))_{i\geq 0}$. Then $\Theta = 1+N$, where
+\[
+(N\chi)_i := \sum_{r\geq 1}\pi_r\,v^{4r}\,\chi_{i+5r},
+\]
+and $\Theta$ is bijective, with inverse $\sum_{r\geq 0}(-N)^r$. The operator $N$, and hence $\Theta^{-1}$, maps sequences vanishing outside $[0,L)$ to sequences vanishing outside $[0,L)$; in the graded setting both map sequences with $\chi_j\in\bbQ v^{(w-4j)/5}$ for all $j$ to sequences of the same kind.
+\end{lem}
+
+\begin{proof}
+By the shift rule \eqref{eq:tra-shift} and the value (i) above, $\Pi_i(\chi(z)H) =\sum_{j\geq i}\chi_j\Pi_0(z^{j-i}H) = \sum_{r\geq 0}\pi_rv^{4r}\chi_{i+5r}$, which is $\chi_i+(N\chi)_i$ (a convergent sum in the $u$-adic setting, as $\ord_uv^{4r}\geq 4r$). In both settings $(1+N)\sum_{r\leq R}(-N)^r\chi = \chi-(-N)^{R+1}\chi = \sum_{r\leq R}(-N)^r(1+N)\chi$. Graded setting: if $\chi$ vanishes outside $[0,L)$, then $N\chi$ vanishes outside $[0,L-5)$, so $N^r\chi = 0$ for $5r\geq L$ and the sums are finite. $u$-adic setting: $\ord_u(N^r\chi)_i\geq 4r+\min_j\ord_u\chi_j$ uniformly in $i$, so $((-N)^r\chi)_{r\geq 0}$ is summable coefficientwise, $N$ commutes with its sum (the double family $(\pi_kv^{4k}((-N)^r\chi)_{i+5k})_{k\geq 1,\,r\geq 0}$ is summable at each $i$), and $(-N)^{R+1}\chi\to 0$. So $\sum_r(-N)^r$ is a two-sided inverse of $\Theta$. The statement on supports holds for $N$ by its definition, and in the graded setting $v^{4r}\chi_{i+5r}$ has scalar weight $20r+(w-4i-20r) = w-4i$ if $\chi_j$ has weight $w-4j$ for all $j$; both properties pass to $\Theta^{-1}$.
+\end{proof}
+
+\begin{defn}[the slice $\sK$ and $\sKo$]
+\label{def:tra-slice}
+In either setting, with $A$ as in \cref{lem:tra-theta} and $\cH^A_+ := \cH^{\mathrm{gr}}_+$, resp.\ $\cH^A_+ := \cH^u_+$,
+\begin{equation}
+\label{eq:tra-slice}
+\sK := \{q\in\cH^A_+ : \Pi_i(q) = 0\ \text{for all } i\geq 1\},\qquad \sKo := \sK\cap\ker\Pi_0 .
+\end{equation}
+Equivalently, $\sKo$ is the set of $n\in\cH^A_+$ with $\langle\YC(-z),n(z)\rangle$ in $z^{-1}\bbQ[z^{-1}]\fps{u}$ in the $u$-adic setting, and in $z^{-1}\bbQ[v]\fps{z^{-1}}$ in the graded setting. The \emph{affine slice} is $-z+\sK := -z1+\sK$; its description is \cref{cor:tra-slice}. When the setting must be named we write $\sK^A$, $\sKo^A$; the \emph{homogeneous} elements of $\sK$ are the elements of the $\sK\cap V_w$.
+\end{defn}
+
+\input{sections/s04_transport_2}

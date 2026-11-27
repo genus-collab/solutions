@@ -1,0 +1,69 @@
+% Abridged version, Section 2, part 2 of 2: the model, its R-matrix and its cohomological field theory; the outer graph sum; Property N(g).
+
+%-------------------------------------------------------------------------------
+\subsection{The model}
+\label{sec:set-model}
+
+\begin{defn}[The model; {\Lr{def:set-model}}]
+\label{def:set-model}
+The \emph{model} is the Landau--Ginzburg potential $\Wv(p):=p^4/4+v/p$, with the parameter $v$ and the primitive form $\dd p$. Its formal integrals $I_m(v,z):=\int p^m\re^{-\Wv(p)/z}\dd p$ ($m\in\bbZ$) are symbols subject to the two relations
+\[
+\text{(Mod1)}\quad z\,\partial_vI_m=-I_{m-1},\qquad\text{(Mod2)}\quad mz\,I_{m-1}-I_{m+3}+v\,I_{m-2}=0,
+\]
+which are realised by residues at $p=0$ (\cref{def:gau-van}) and by the formal stationary phase at a critical point (\cref{sec:con-fsp}). The charges and the signs are $\nu:=(0,-1,3,2,1)$ and $\varepsilon:=(1,-1,-1,1,1)$, with indices in $\bbZ/5$; thus $\nu_a\equiv-a\bmod5$ and $\nu_a+\nu_{3-a}=2$. The \emph{rows} of the model are $Y_b:=\varepsilon_bI_{\nu_b}$, and the dictionary of classes is $H^b\leftrightarrow\varepsilon_b\,p^{\nu_b}\dd p$. The critical points of $\Wv$ are the $p$ with $p^5=v$; colour $i$ corresponds to the critical point $p=\zeta^{-i}\varsigma$, $\varsigma^5=v$, where $\re^{-\Wv/z}=\re^{U_i/z}$ with $U_i:=-\frac54\zeta^i\varsigma^4$.
+\end{defn}
+
+\begin{prop}[The model system and the T-system; {\Lr{prop:set-modrows}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{prop:set-modrows}
+\begin{itemize}
+\item[(a)] If the symbols $I_m$ satisfy (Mod1) and (Mod2), the rows satisfy the \emph{model system} $z\,\partial_vY_b=b^{\mathrm m}_b\,Y_{b+1}$ ($b\in\bbZ/5$), with $b^{\mathrm m}:=\bigl(1,-\frac1v,1,-1,-1\bigr)$.
+\item[(b)] Fix a colour $i$ and put $t:=z/\varsigma^4$. A column $\re^{U_i/z}y$ with $y_b=\varsigma^{\nu_b-1}F_b(t)$, $F_b\in\bbQ(\zeta)\fps t$ (a \emph{homogeneous WKB column of colour $i$}) solves the model system if and only if, with $\mathcal T^{(i)}_k:=-\zeta^i+\frac t5\bigl(k-4t\frac{\dd}{\dd t}\bigr)$,
+\[
+F_1=\mathcal T^{(i)}_{-1}F_0,\quad F_2=-\mathcal T^{(i)}_{-2}F_1,\quad F_3=\mathcal T^{(i)}_2F_2,\quad F_4=-\mathcal T^{(i)}_1F_3,\quad F_0=-\mathcal T^{(i)}_0F_4.
+\]
+This T-system has a unique solution $F^{(i)}$ with $F^{(i)}_0(0)=1$, and $F^{(i)}_b(0)=\varepsilon_b\zeta^{ib}$. For colour $0$ we write $\Fs_b:=F^{(0)}_b\in\bbQ\fps t$; thus $\Fs_b(0)=\varepsilon_b$, and $\Fs_0=1-\frac3{20}t+\frac9{800}t^2+O(t^3)$.
+\end{itemize}
+\end{prop}
+
+\begin{defn}[The model $R$-matrix and the model cohomological field theory; {\Lr{def:set-M0,lem:set-M0sympl,def:set-modcohft}}]
+\label{def:set-M0}
+Let $\Rhat^{\mathrm m}(t)$ be the $5\times5$ matrix with the entries $\Rhat^{\mathrm m,(i)}_b(t):=\zeta^{i(b+1)}\Fs_b(\zeta^{-i}t)$ (row $b$, colour column $i$), let $\Psi_0:=\Rhat^{\mathrm m}(0)$, with the entries $(\Psi_0)_{bi}=\varepsilon_b\zeta^{i(b+1)}$, and put $\Mo(t):=\Psi_0^{-1}\Rhat^{\mathrm m}(t)$, the model $R$-matrix in Teleman's colour-colour form. Then $\Psi_0^T\eta^{-1}\Psi_0=1$, $\Mo(0)=1$, the columns $\re^{U_i/z}\varsigma^{\nu_b-1}\Rhat^{\mathrm m,(i)}_b(z/\varsigma^4)$ are homogeneous WKB solutions of colour $i$ of the model system, and $\Mo$ is symplectic: $\Mo(-t)^T\Mo(t)=1$. The \emph{model TFT} $\TFT^{\mathrm m}_v$ is the TFT on the colour space, with the orthonormal basis $\tilde e_i$, defined by $\TFT^{\mathrm m}_{v;h,n}(\tilde e_i,\dots,\tilde e_i):=(\zeta^{4i}\varsigma)^{2h-2+n}$ and $\TFT^{\mathrm m}_{v;h,n}=0$ on mixed colours. Let $\Psi^{\mathrm m}_v$ be the map from the colour space to $\bbH$ with the lowered entries $\eta(H^b,\Psi^{\mathrm m}_v\tilde e_i):=\varsigma^{\nu_b-1}(\Psi_0)_{bi}$; it is an isometry. The \emph{model cohomological field theory} on $(\bbH,\eta)$ is
+\[
+\Omega^{\mathrm{mod}}_v:=(\Psi^{\mathrm m}_v)_*\bigl(\Mo(z/\varsigma^4).\TFT^{\mathrm m}_v\bigr),\qquad(A_*\Omega)_{h,n}:=\Omega_{h,n}\circ(A^{-1})^{\otimes n},
+\]
+with the unit-preserving action of \cite[Defs.~2.5, 2.13]{PPZ15}. Its ancestor correlators $\langle\cdots\rangle_h(v)$ and its dilaton-shifted potentials $\overline F_h(q)$, with the base point $q=-z1$, are those of \cref{def:set-graphsum}. The \emph{free energies} are $\Fm_h:=\langle\ \rangle_h(v)$ ($h\geq2$).
+\label{def:set-modcohft}
+\end{defn}
+
+
+
+\begin{lem}[Homogeneity, dilaton equation; {\Lr{lem:set-modhom,lem:set-dilaton}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-dilaton}
+\begin{enumerate}
+\item Every ancestor correlator of the model is $\langle\prod_j\psi^{k_j}H^{b_j}\rangle_h(v)=C\,v^e$ with $C\in\bbQ$, $e:=2-2h+\sum_j\wt(k_j,b_j)$ and $\wt(k,b):=(4k+\nu_b-4)/5$, and $C=0$ unless $e\in\bbZ$. A correlator is \emph{regular} if $e\geq0$; then it lies in $\bbQ[v]$.
+\item $\Omega^{\mathrm{mod}}_v$ has the flat unit $H^0=1$. For a cohomological field theory with flat unit $1$ and $2h-2+n>0$, the insertion of $\psi1$ multiplies a correlator by $2h-2+n$: $\langle\psi1\cdot X\rangle_h=(2h-2+n)\langle X\rangle_h$ for $X=\psi^{k_1}a_1\cdots\psi^{k_n}a_n$.
+\item Let $\Omega$ be a cohomological field theory with flat unit $1$ on a free module of finite rank over a complete local $\bbQ$-algebra with maximal ideal $\mathfrak m$, and $\varkappa\in1+\mathfrak m$; or over $\bbQ(\zeta)\lser s$, and $\varkappa\in1+u\bbQ\fps u$. Then, for $2h-2+n>0$, $\dd^n\overline F_h(q/\varkappa)=\varkappa^{2h-2+n}\,\dd^n\overline F_h(q)$, the left side being defined coefficientwise in $q+z1$ as a convergent series in $1-\varkappa^{-1}$.
+\end{enumerate}
+\end{lem}
+
+The dilaton equation in (ii) uses \cite[(1.7)]{AC96}; in the applications of (iii), $\varkappa$ is the dilaton factor $d\in\bbQ\fps u$ of the canonical gauge, $d(0)=1$.
+
+%-------------------------------------------------------------------------------
+\subsection{The outer graph sum and Property N(\texorpdfstring{$g$}{g})}
+\label{sec:set-hat}
+
+A conifold frame is fixed, and the rows, which lie in $\Nring\otimes\bbQ(\zeta)$ (\cref{cor:gau-rowsNN}), are expanded in it: $\Qr^{(i)}_a(z)$, and every series below, is a series in $z$ over $\bbQ(\zeta)\lser s$.
+
+\begin{defn}[The outer graph sum; {\Lr{def:set-hat,def:set-outer}}, abridged]
+\label{def:set-outer}
+Let $M:=\Mo(\tau(u)\zh)$, taken exactly in $u$: with $\zh=z/s^4$ it is a power series in $z$ over $\bbQ(\zeta)\lser s$, with $M(0)=1$ and $M(-z)^TM(z)=1$. Let $\Qr$ be the matrix of the lowered rows of \cref{def:set-rows} expanded in the frame, and $R':=\Qr\,M^{-1}$, a series of maps from the colour space (orthonormal basis $\tilde e_i$) to $\bbH$. Its constant term $R'(0)=\Qr(0)$ is an isometry which maps $1_{\TFT}$ to $1$ \Lr{lem:mai-Psi}. The \emph{outer graph sum} has the vertices $(M.\TFT)_{g,n}$, the classes of the cohomological field theory $M.\TFT$ on the colour space \cite[Def.~2.13]{PPZ15}, where $\TFT$ is the TFT of \cref{def:set-frob} expanded in the frame, $\TFT_{g,n}(\tilde e_i,\dots,\tilde e_i)=(\zeta^{4i}s\varpi_0)^{2g-2+n}$, and the edges and leaves of $R'$: with $N(\psi,\psi'):=1-\bigl(R'^{-1}(\psi)\otimes R'^{-1}(\psi')\bigr)\eta^{-1}$, where $1=\sum_i\tilde e_i\otimes\tilde e_i$ and $\eta^{-1}\in\bbH\otimes\bbH$ is the inverse bivector of $(\bbH,\eta)$,
+\[
+E_{R'}(\psi,\psi'):=\frac{N(\psi,\psi')-\frac12N(-\psi',\psi')-\frac12N(\psi,-\psi)}{\psi+\psi'},\qquad q_{R'}(z):=R'^{-1}(z)(-z1),
+\]
+with the leaf insertion $q_{R'}+z1_{\TFT}\in z^2(\text{colour space})\fps z$. The numerator vanishes at $\psi'=-\psi$, so $E_{R'}$ is a power series in $\psi,\psi'$. If $R'$ is symplectic, $R'(-z)^T\eta^{-1}R'(z)=1$, then $N(-\psi',\psi')=N(\psi,-\psi)=0$, $E_{R'}$ is the edge of \cite[Def.~2.2]{PPZ15}, and with $X:=R'(0)^{-1}R'$ the outer graph sum is the leg-free part of the unit-preserving action $X.(M.\TFT)$ on the colour space. For a leg-free stable graph $\Gamma$ of genus $g\geq2$ the \emph{outer term} is $T_\Gamma:=\mathrm{Cont}_\Gamma[E_{R'},q_{R'};M.\TFT]\in\bbQ(\zeta)\lser s$. The \emph{vertex graph} is the stable graph with one vertex, of genus $g$, and no edge; its outer term contains all the leaf insertions of $R'$. The \emph{hatted term} $G_\Gamma$ is the same contraction formed with the hatted classes $\hat H^a:=s^{1-\nu_a}H^a$, the hatted rows $\hat\Qr^{(i)}_a(\zh):=s^{1-\nu_a}\Qr^{(i)}_a(s^4\zh)$, the hatted TFT $\hat\TFT_{g,n}:=s^{-(2g-2+n)}\TFT_{g,n}$, $\hat M(\zh):=\Mo(\tau\zh)$ and the unit $\hat1:=\hat H^0=s1$, in the variable $\zh$.
+\end{defn}
+
+\begin{defn}[Property N($g$); {\Lr{def:set-N}}]
+\label{def:set-N}
+Let $g\geq2$ and $c_g:=(-1)^{g-1}B_{2g}\,5^{1-g}/(2g(2g-2))=|B_{2g}|/(2g(2g-2)\,5^{g-1})$. \emph{Property N($g$)} holds if, for every conifold frame of \cref{def:set-frames}, the outer terms of \cref{def:set-outer}, with $M=\Mo(\tau(u)\zh)$ exactly in $u$, satisfy: (i) $T_\Gamma\in\bbQ\fps u$ for every leg-free stable graph $\Gamma$ of genus $g$ with at least one edge; (ii) $T_\Gamma\in c_g\,\tc^{2-2g}+\bbQ\fps u$ for the vertex graph. Here $c_2=\frac1{1200}$, $c_3=\frac1{25200}$, $c_4=\frac1{180000}$, $c_5=\frac1{660000}$.
+\end{defn}

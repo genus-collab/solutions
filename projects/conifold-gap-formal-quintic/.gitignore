@@ -1,0 +1,10 @@
+# genus.sty is fetched by CI from genus-collab/meta; keep a local copy out of git
+genus.sty
+# the repository-wide .gitignore excludes *.log, *.out, *.toc, *.aux, *.bbl, *.blg (LaTeX build products);
+# in code/ they are stored outputs of the scripts or parts of the archived note versions
+!code/**/*.log
+!code/**/*.out
+!code/**/*.toc
+!code/**/*.aux
+!code/**/*.bbl
+!code/**/*.blg

@@ -1,0 +1,240 @@
+====================================================================================================
+rf_e4: case q, normalisation canon, genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:01:28]
+   rows built and graph sum COMPLETE in 1 s (7 inner graphs)
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^1] = ['1/1200', '-7/6000']
+   vertex graph in T'' = c0 Int f: (1/1200) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/1200) T^-2 + (0) T^-1
+   (1 s)
+====================================================================================================
+rf_e4: case q, normalisation canon, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:01:29]
+   rows built and graph sum COMPLETE in 4 s (42 inner graphs)
+   RESULT: all 41 outer graphs with edges are O(u^4): REGULAR
+   vertex graph [u^0..u^3] = ['1/25200', '-1/9000', '407/3780000', '-151/3780000']
+   vertex graph in T'' = c0 Int f: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (4 s)
+====================================================================================================
+rf_e4: case qab, normalisation canon, genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:01:39]
+   rows built and graph sum COMPLETE in 3 s (7 inner graphs)
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^1] = ['1/1200', '-11/18000']
+   vertex graph in T'' = c0 Int f: (1/1200) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/1200) T^-2 + (0) T^-1
+   (3 s)
+====================================================================================================
+rf_e4: case qab, normalisation canon, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:01:42]
+   rows built and graph sum COMPLETE in 3 s (42 inner graphs)
+   RESULT: all 41 outer graphs with edges are O(u^4): REGULAR
+   vertex graph [u^0..u^3] = ['1/25200', '-11/189000', '-197/8820000', '5567/238140000']
+   vertex graph in T'' = c0 Int f: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (3 s)
+====================================================================================================
+rf_e4: case c1, normalisation canon, genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:01:45]
+   rows built and graph sum COMPLETE in 3 s (7 inner graphs)
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^1] = ['1/1200', '-13/9000']
+   vertex graph in T'' = c0 Int f: (1/1200) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/1200) T^-2 + (0) T^-1
+   (3 s)
+====================================================================================================
+rf_e4: case c1, normalisation canon, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:01:48]
+   rows built and graph sum COMPLETE in 4 s (42 inner graphs)
+   RESULT: all 41 outer graphs with edges are O(u^4): REGULAR
+   vertex graph [u^0..u^3] = ['1/25200', '-13/94500', '4003/19845000', '[199646352432842403561872533 mod p]']
+   vertex graph in T'' = c0 Int f: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (4 s)
+====================================================================================================
+rf_e4: case c2, normalisation canon, genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:01:52]
+   rows built and graph sum COMPLETE in 3 s (7 inner graphs)
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^1] = ['1/1200', '-73/54000']
+   vertex graph in T'' = c0 Int f: (1/1200) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/1200) T^-2 + (0) T^-1
+   (3 s)
+====================================================================================================
+rf_e4: case c2, normalisation canon, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:01:55]
+   rows built and graph sum COMPLETE in 4 s (42 inner graphs)
+   RESULT: all 41 outer graphs with edges are O(u^4): REGULAR
+   vertex graph [u^0..u^3] = ['1/25200', '-73/567000', '16109/102060000', '[482561893377613763525302508 mod p]']
+   vertex graph in T'' = c0 Int f: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (4 s)
+====================================================================================================
+rf_e4: case r1, normalisation canon, genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:01:59]
+   rows built and graph sum COMPLETE in 3 s (7 inner graphs)
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^1] = ['3/1600', '-153/64000']
+   vertex graph in T'' = c0 Int f: (1/1200) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/1200) T^-2 + (0) T^-1
+   (3 s)
+====================================================================================================
+rf_e4: case r1, normalisation canon, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:02:02]
+   rows built and graph sum COMPLETE in 4 s (42 inner graphs)
+   RESULT: all 41 outer graphs with edges are O(u^4): REGULAR
+   vertex graph [u^0..u^3] = ['9/44800', '-459/896000', '28789/143360000', '[232524807795949547259524314 mod p]']
+   vertex graph in T'' = c0 Int f: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (4 s)
+====================================================================================================
+rf_e4: case r2, normalisation canon, genus 2, max_outer None, p = 2^89-1   [2026-11-13T20:02:06]
+   rows built and graph sum COMPLETE in 3 s (7 inner graphs)
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^1] = ['1/1200', '-101/18000']
+   vertex graph in T'' = c0 Int f: (1/1200) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/1200) T^-2 + (0) T^-1
+   (3 s)
+====================================================================================================
+rf_e4: case r2, normalisation canon, genus 3, max_outer None, p = 2^89-1   [2026-11-13T20:02:09]
+   rows built and graph sum COMPLETE in 4 s (42 inner graphs)
+   RESULT: all 41 outer graphs with edges are O(u^4): REGULAR
+   vertex graph [u^0..u^3] = ['1/25200', '-101/189000', '116449/26460000', '-6895411/238140000']
+   vertex graph in T'' = c0 Int f: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (4 s)
+====================================================================================================
+rf_e4: case q, normalisation canon, genus 4, max_outer 2, p = 2^89-1   [2026-11-13T20:02:27]
+      352/379 inner graphs (62 s)
+   rows built and graph sum COMPLETE in 75 s (379 inner graphs)
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '[524864768289145751991647940 mod p]', '[130386105732170637302293009 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   PASS worker's e4_tab_a_89_out2.json: 0 of 11 outer rows differ []
+   (75 s)
+====================================================================================================
+rf_e4: case c1, normalisation canon, genus 4, max_outer None, p = 2^89-1   [2026-11-13T20:03:54]
+====================================================================================================
+rf_e4: case q, normalisation shift, genus 4, max_outer 2, p = 2^89-1   [2026-11-13T20:07:37]
+   rows built and graph sum COMPLETE in 126 s (379 inner graphs)
+   RESULT: 6 of 10 outer graphs with edges are SINGULAR
+      outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '0', '-1/1008000', '13/6804000']
+      outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '0', '1/900000', '-53/32400000']
+      outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '0', '0', '-41/68040000']
+      outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '0', '0', '-11/34020000']
+      outer graph 7 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '49/16200000']
+      outer graph 8 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '-17/8100000']
+   vertex graph [u^0..u^5] = ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '[559423264537032048450291700 mod p]', '[500550297642997336818956507 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (-1/8400000) T^-2 + ([418546086657867514558764762 mod p]) T^-1  -> NOT c_g T''^(2-2g) + 0
+      (shift - canon) per unit m, outer graph 0 (E=0, gv=[4]): ['0', '0', '0', '0', '-1/8400000', '-187/680400000']
+      (shift - canon) per unit m, outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '0', '-1/1008000', '13/6804000']
+      (shift - canon) per unit m, outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '0', '1/900000', '-53/32400000']
+      (shift - canon) per unit m, outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '0', '0', '-41/68040000']
+      (shift - canon) per unit m, outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '0', '0', '-11/34020000']
+      (shift - canon) per unit m, outer graph 7 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '49/16200000']
+      (shift - canon) per unit m, outer graph 8 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '-17/8100000']
+   (126 s)
+====================================================================================================
+rf_e4: case c1, normalisation canon, genus 4, max_outer 2, p = 2^89-1   [2026-11-13T20:09:51]
+   rows built and graph sum COMPLETE in 124 s (379 inner graphs)
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '2123/31500000', '[254931553987658748795578802 mod p]', '[371941487258700045847725415 mod p]', '[292678546214744155987828939 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   PASS worker's e4_tab_c1_89_out2.json: 0 of 11 outer rows differ []
+   (124 s)
+====================================================================================================
+rf_e4: case c1, normalisation shift, genus 4, max_outer 2, p = 2^89-1   [2026-11-13T20:11:56]
+   rows built and graph sum COMPLETE in 606 s (379 inner graphs)
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '2123/31500000', '[254931553987658748795578802 mod p]', '[371941487258700045847725415 mod p]', '[292678546214744155987828939 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   PASS worker's e4_tab_c1_89.json: 0 of 379 outer rows differ []
+   (606 s)
+   rows built and graph sum COMPLETE in 137 s (379 inner graphs)
+   RESULT: 6 of 10 outer graphs with edges are SINGULAR
+      outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '0', '-1/1008000', '1/280000']
+      outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '0', '1/900000', '-407/40500000']
+      outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '0', '0', '169/17010000']
+      outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '0', '0', '1/850500']
+      outer graph 7 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '-2/253125']
+      outer graph 8 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '-13/4050000']
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '2123/31500000', '[254931553987658748795578802 mod p]', '[406499983506586342306369175 mod p]', '[567117033585793273144103985 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (-1/8400000) T^-2 + (127/20250000) T^-1  -> NOT c_g T''^(2-2g) + 0
+      (shift - canon) per unit m, outer graph 0 (E=0, gv=[4]): ['0', '0', '0', '0', '-1/8400000', '3673/567000000']
+      (shift - canon) per unit m, outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '0', '-1/1008000', '1/280000']
+      (shift - canon) per unit m, outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '0', '1/900000', '-407/40500000']
+      (shift - canon) per unit m, outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '0', '0', '169/17010000']
+      (shift - canon) per unit m, outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '0', '0', '1/850500']
+      (shift - canon) per unit m, outer graph 7 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '-2/253125']
+      (shift - canon) per unit m, outer graph 8 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '-13/4050000']
+   (137 s)
+====================================================================================================
+rf_e4: case r1, normalisation canon, genus 4, max_outer None, p = 2^89-1   [2026-11-13T20:14:28]
+   rows built and graph sum COMPLETE in 610 s (379 inner graphs)
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['81/1280000', '-12393/51200000', '[373477344759087139255549360 mod p]', '[435133623064304926163302619 mod p]', '[60770018815005744528796589 mod p]', '[286520812894456583789542133 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (610 s)
+====================================================================================================
+rf_e4: case r2, normalisation canon, genus 4, max_outer None, p = 2^89-1   [2026-11-13T20:26:20]
+====================================================================================================
+rf_e4: case c2, normalisation canon, genus 4, max_outer 2, p = 2^89-1   [2026-11-13T20:26:20]
+   rows built and graph sum COMPLETE in 142 s (379 inner graphs)
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-73/2700000', '26767/486000000', '[72790512248840079000189598 mod p]', '[594779331427813129318382314 mod p]', '[585364097835913166593026321 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   PASS worker's e4_tab_c2_89_out2.json: 0 of 11 outer rows differ []
+   (142 s)
+====================================================================================================
+rf_e4: case q, normalisation canon, genus 4, max_outer 2, p = 2^61-1   [2026-11-13T20:36:24]
+   rows built and graph sum COMPLETE in 637 s (379 inner graphs)
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-101/900000', '492161/378000000', '[131086867063138425204773979 mod p]', '[198446752896352836110558164 mod p]', '[487536009465001773908528401 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   total in T'': (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1
+   (637 s)
+   rows built and graph sum COMPLETE in 122 s (379 inner graphs)
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-7/300000', '[990327418757541961 mod p]', '[881391017106020249 mod p]', '[1024229431246899910 mod p]', '[2068325165885277547 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   (122 s)
+====================================================================================================
+rf_e4: case q, normalisation shift, genus 4, max_outer 2, p = 2^61-1   [2026-11-13T20:38:26]
+   rows built and graph sum COMPLETE in 116 s (379 inner graphs)
+   RESULT: 6 of 10 outer graphs with edges are SINGULAR
+      outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '0', '-1/1008000', '[660790419687860284 mod p]']
+      outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '0', '1/900000', '[2258032564273547903 mod p]']
+      outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '0', '0', '[394663500815871713 mod p]']
+      outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '0', '0', '[1449052273674401088 mod p]']
+      outer graph 7 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '[741001297025277773 mod p]']
+      outer graph 8 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '[2026968946911837328 mod p]']
+   vertex graph [u^0..u^5] = ['1/180000', '-7/300000', '[990327418757541961 mod p]', '[881391017106020249 mod p]', '[635406928323360912 mod p]', '[1455345191137563311 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + ([1917020506290154953 mod p]) T^-2 + ([1609680132215763908 mod p]) T^-1  -> NOT c_g T''^(2-2g) + 0
+      (shift - canon) per unit m, outer graph 0 (E=0, gv=[4]): ['0', '0', '0', '0', '[1917020506290154953 mod p]', '[1692863034465979715 mod p]']
+      (shift - canon) per unit m, outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '0', '-1/1008000', '[660790419687860284 mod p]']
+      (shift - canon) per unit m, outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '0', '1/900000', '[2258032564273547903 mod p]']
+      (shift - canon) per unit m, outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '0', '0', '[394663500815871713 mod p]']
+      (shift - canon) per unit m, outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '0', '0', '[1449052273674401088 mod p]']
+      (shift - canon) per unit m, outer graph 7 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '[741001297025277773 mod p]']
+      (shift - canon) per unit m, outer graph 8 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '[2026968946911837328 mod p]']
+   (116 s)
+====================================================================================================
+rf_e4: case c1, normalisation canon, genus 4, max_outer 2, p = 2^61-1   [2026-11-13T20:40:45]
+   rows built and graph sum COMPLETE in 117 s (379 inner graphs)
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '[1685185248935604443 mod p]', '[1405297237083304027 mod p]', '[621841227945848098 mod p]', '[765186650918100301 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_g T''^(2-2g) + 0
+   (117 s)
+====================================================================================================
+rf_e4: case c1, normalisation shift, genus 4, max_outer 2, p = 2^61-1   [2026-11-13T20:42:42]
+   rows built and graph sum COMPLETE in 116 s (379 inner graphs)
+   RESULT: 6 of 10 outer graphs with edges are SINGULAR
+      outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '0', '-1/1008000', '1/280000']
+      outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '0', '1/900000', '[1133293770371652988 mod p]']
+      outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '0', '0', '[1591435775005918316 mod p]']
+      outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '0', '0', '1/850500']
+      outer graph 7 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '-2/253125']
+      outer graph 8 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '[1472416265243731948 mod p]']
+   vertex graph [u^0..u^5] = ['1/180000', '-13/450000', '[1685185248935604443 mod p]', '[1405297237083304027 mod p]', '[233018725022309100 mod p]', '[1802275848122441079 mod p]']
+   vertex graph in T'' = c0 Int f: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + ([1917020506290154953 mod p]) T^-2 + ([1592913130384176622 mod p]) T^-1  -> NOT c_g T''^(2-2g) + 0
+      (shift - canon) per unit m, outer graph 0 (E=0, gv=[4]): ['0', '0', '0', '0', '[1917020506290154953 mod p]', '[1037089197204340778 mod p]']
+      (shift - canon) per unit m, outer graph 1 (E=1, gv=[1, 3]): ['0', '0', '0', '0', '-1/1008000', '1/280000']
+      (shift - canon) per unit m, outer graph 2 (E=1, gv=[2, 2]): ['0', '0', '0', '0', '1/900000', '[1133293770371652988 mod p]']
+      (shift - canon) per unit m, outer graph 3 (E=1, gv=[3]): ['0', '0', '0', '0', '0', '[1591435775005918316 mod p]']
+      (shift - canon) per unit m, outer graph 4 (E=2, gv=[0, 3]): ['0', '0', '0', '0', '0', '1/850500']
+      (shift - canon) per unit m, outer graph 7 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '-2/253125']
+      (shift - canon) per unit m, outer graph 8 (E=2, gv=[1, 2]): ['0', '0', '0', '0', '0', '[1472416265243731948 mod p]']
+   (116 s)

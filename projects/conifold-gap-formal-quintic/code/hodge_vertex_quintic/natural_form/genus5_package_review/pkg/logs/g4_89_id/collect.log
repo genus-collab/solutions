@@ -1,0 +1,9 @@
+==========================================================================================
+genus5_run g4_89_id: collect
+   part files: ['local.json']; 379 inner graphs; CPU 0.0 h
+PASS all 379 inner graphs are covered by the part files: 0 missing, e.g. []
+   total over all graphs: ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '~923639/67500000000', '~-171583/67500000000']
+   total in t_c: (1/180000) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS GAP: total = (c) t_c^-6 + 0 + ... + 0 t_c^-1
+   c_4 = 1/180000; pattern |B_2g|/(2g(2g-2)5^(g-1)) = 1/180000: EQUAL
+GENUS5_RUN COLLECT (g4_89_id) ALL CHECKS PASSED

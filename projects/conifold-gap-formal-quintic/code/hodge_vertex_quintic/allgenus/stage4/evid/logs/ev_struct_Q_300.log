@@ -1,0 +1,17 @@
+ev_struct: field Q, n <= 300; log file logs/ev_struct_Q_300.log
+   n =   50 reached in 1 s (deg ph_n = 40)
+   n =  100 reached in 1 s (deg ph_n = 80)
+   n =  200 reached in 5 s (deg ph_n = 160)
+   n =  300 reached in 16 s (deg ph_n = 240)
+PASS S1 deg ph_n = floor(4n/5) for 3 <= n <= 300, ph_1 = -3/20 and ph_2 = 9/800 constant (free coefficient = top coefficient): []
+PASS S2 ph_n(0) = F_{0,n} (model, homogeneous) for all n <= 300: automatic, not a criterion: []
+PASS S3 (H): ph_n(1) = h_n for all 240 n <= 300 with 5 not | n: []
+PASS S4 R_n(1) = 0 at every n <= 300; no resonance obstruction at the 60 multiples of 5 (60 of them because deg rho_n < 4n/5)
+   free (top) coefficients f_5m = [u^4m] ph_5m, QRR normalisation (first six):
+      f_5 = 4537/3937500
+      f_10 = -177640111151/31007812500000
+      f_15 = -284328315069009259339/6226756347656250000000
+      f_20 = 1963656341145629520968888447777/98071412475585937500000000000
+      f_25 = 384856220473810858590961209369544943857/113575349006652832031250000000000000
+      f_30 = -11768547329234238398470365631303357138953684044963999/775449892261548042297363281250000000000000000
+EV_STRUCT Q n<=300: ALL CHECKS PASSED   (16 s)

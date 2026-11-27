@@ -1,0 +1,38 @@
+rf_kq (referee, independent code): field 2^89-1, mode qrr, frame (7/11, -3/5), q <= 40 (zhat^200), (H) n <= 204, REG q <= 40, K22 q <= 40
+   log file logs/rf_kq_89_qrr_7o11_m3o5_200.log
+   setup 0.4 s; gamma (u^2 of the vanishing period) = 185691005892807041234868634, a_0 = 0
+   q =   1 done, 0 s
+   q =   2 done, 0 s
+   q =   3 done, 0 s
+   q =   4 done, 0 s
+   q =   5 done, 1 s
+   q =   6 done, 1 s
+   q =   7 done, 1 s
+   q =   8 done, 1 s
+   q =  10 done, 1 s
+   q =  20 done, 1 s
+   q =  30 done, 3 s
+   q =  40 done, 6 s
+   z^5   f = 579722683034656735913912632; K11 = 0; K22 = 0; REG ok
+   z^10  f = 13150294379338413598821092; K11 = 0; K22 = 0; REG ok
+   z^15  f = 168458200486516949917241880; K11 = 0; K22 = 0; REG ok
+   z^20  f = 470435170936144302806473263; K11 = 0; K22 = 0; REG ok
+   z^25  f = 339767100678547781702105236; K11 = 0; K22 = 0; REG ok
+   z^30  f = 181677836187864173960414503; K11 = 0; K22 = 0; REG ok
+   z^35  f = 231475542529632714357457391; K11 = 0; K22 = 0; REG ok
+   z^40  f = 235260669571785909328266731; K11 = 0; K22 = 0; REG ok
+   z^50  f = 47669431669957505116170141; K11 = 0; K22 = 0; REG ok
+   z^75  f = 207736532048360763253641687; K11 = 0; K22 = 0; REG ok
+   z^100 f = 233563235777799926595113662; K11 = 0; K22 = 0; REG ok
+   z^125 f = 510749351786943805208536992; K11 = 0; K22 = 0; REG ok
+   z^150 f = 119572493207987028276503238; K11 = 0; K22 = 0; REG ok
+   z^175 f = 274030650968182039016715602; K11 = 0; K22 = 0; REG ok
+   z^200 f = 474353276194801550752269691; K11 = 0; K22 = 0; REG ok
+PASS (H) Phi(zhat, 1) = h at all 164 orders n <= 204 with 5 not | n (WKB from the PF operator, no free parameter): []
+PASS (N) K11_q = 0 for q = 1..40: []
+PASS K22_q = K11_q (the (2,2) slot, rows to a = 2) for q <= 40
+PASS REG: lower u-orders of the (1,1) slot vanish, q <= 40
+PASS ph_n(0) = F_(0,n) of the model for all n <= 200
+PASS deg ph_n = floor(4n/5) for 3 <= n <= 204, ph_1, ph_2 constant ([402330512767748589342215372], [526898229220839979503939747]): []
+PASS resonances unobstructed (0 of the 40 multiples of 5 had a non-trivial rho at u^(4n/5))
+RF_KQ 2^89-1 qrr 7o11_m3o5 q<=40: ALL CHECKS PASSED   (6 s)

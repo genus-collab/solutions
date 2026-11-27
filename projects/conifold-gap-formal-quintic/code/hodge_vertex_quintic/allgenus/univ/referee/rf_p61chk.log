@@ -1,0 +1,7 @@
+====================================================================================================
+q: sum over graphs of the worker's per-unit responses: [u^4] 0, [u^5] 0 (exact rationals)
+   p = 2^61-1: own (shift - canon) per unit m equals the worker's rationals on 7 graphs: PASS; graphs that differ [], missing []
+   p = 2^89-1: own (shift - canon) per unit m equals the worker's rationals on 7 graphs: PASS; graphs that differ [], missing []
+c1: sum over graphs of the worker's per-unit responses: [u^4] 0, [u^5] 0 (exact rationals)
+   p = 2^61-1: own (shift - canon) per unit m equals the worker's rationals on 7 graphs: PASS; graphs that differ [], missing []
+   p = 2^89-1: own (shift - canon) per unit m equals the worker's rationals on 7 graphs: PASS; graphs that differ [], missing []

@@ -1,0 +1,94 @@
+% Section 6, part 8.
+\subsection{Theorem V: logarithmic legs}
+\label{sec:mod-V}
+
+In this subsection the model curves are considered as a family in $v\neq 0$, and $\partial_v|_x$ denotes the derivative in $v$ at fixed $x$, computed locally away from the branch points through the inverse branches $p(x,v)$; $\partial_v|_p$ is the derivative at fixed $p$. Pairings in mixed form are as in \cref{def:mod-pair}.
+
+\begin{lem}[Fixed $p$ versus fixed $x$]
+\label{lem:mod-fixedx}
+$\partial_vp|_x=-p/(p^5-v)$. For every family of meromorphic forms, $\partial_v|_x=\partial_v|_p-\mathrm{Lie}_{\cX}$ in each variable, where $\cX:=\frac{p}{p^5-v}\frac{\dd}{\dd p}$. Moreover $\partial_v(y\,\dd x)|_x=-\dd p/p=\int_{q\in\mathfrak r}\omega_{0,2}(\cdot,q)$.
+\end{lem}
+
+\begin{proof}
+At fixed $x$, $\partial_vp|_x=-(\partial_vx|_p)/(\partial_px)=-(1/p)\big/\big((p^5-v)/p^2\big)=-p/(p^5-v)$. For $\omega=f(p,v)\,\dd p$ the chain rule gives $\partial_v|_x\omega=(\partial_vf+f_p\,\partial_vp|_x)\dd p+f\,\dd(\partial_vp|_x)=\partial_v|_p\omega-\mathrm{Lie}_{\cX}\omega$, and the same holds in each variable of a multidifferential. Since $y=p$, $\partial_v(y\,\dd x)|_x=(\partial_vp|_x)\,\dd x=-\frac{p}{p^5-v}\cdot\frac{p^5-v}{p^2}\dd p=-\dd p/p$, and $\int_{q\in\mathfrak r}\frac{\dd p\,\dd q}{(p-q)^2}=\dd p\Big[\frac{1}{p-q}\Big]_{q=0}^{q=\infty}=-\frac{\dd p}{p}$.
+\end{proof}
+
+\begin{lem}[Integration by parts]
+\label{lem:mod-ibp}
+Let $w$ be a meromorphic $1$-form on $\bbP^1$ with poles only at the branch points, zero residues, holomorphic at $p=0$ and $O(\dd p/p^2)$ at $p=\infty$ (for instance $\omega_{h,n}$ in one slot, $2h-2+n>0$).
+\begin{enumerate}
+\item For $\phi\in\bbQ[v][p]$ let $(\cX\dd\phi)_+\in\bbQ[v][p]$ be the quotient in the division $p\,\phi'(p)=(\cX\dd\phi)_+\,(p^5-v)+r$, $\deg r<5$; for $\phi=p^m$, $(\cX\dd\phi)_+=m\sum_{j\geq 0,\ m-5-5j\geq 0}v^jp^{m-5-5j}$. Then $(2\pi\ri)^{-1}\oint_{|p|=R}\phi\,\mathrm{Lie}_{\cX}w$ equals $-\langle(\cX\dd\phi)_+,w\rangle$.
+\item $\int_{\mathfrak r}\mathrm{Lie}_{\cX}w=0$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) On a curve $\mathrm{Lie}_{\cX}(\phi w)=\dd(\iota_{\cX}(\phi w))$, so $\oint\mathrm{Lie}_{\cX}(\phi w)=0$, and $\mathrm{Lie}_{\cX}(\phi w)=(\cX\phi)\,w+\phi\,\mathrm{Lie}_{\cX}w$. Here $\cX\phi=p\phi'/(p^5-v)=(\cX\dd\phi)_++r/(p^5-v)$, and $\oint\frac{r}{p^5-v}w=0$, since this form has all its poles inside the circle and is $O(\dd p/p^3)$ at $\infty$. The circle pairing of the polynomial $(\cX\dd\phi)_+$ is its residue pairing (\cref{def:mod-pair}). For $\phi=p^m$, $mp^m/(p^5-v)=m\sum_{j\geq 0}v^jp^{m-5-5j}$ for $|p|^5>|v|$, and the quotient is the polynomial part. (ii) $\int_{\mathfrak r}\mathrm{Lie}_{\cX}w=[\iota_{\cX}w]_0^\infty=0$: $\cX$ vanishes at $0$, where $w$ is holomorphic, and at $\infty$, $\cX=O(p^{-4})\,\dd/\dd p$ while $w=O(\dd p/p^2)$.
+\end{proof}
+
+\begin{thm}[The variational formula, in the form used]
+\label{thm:mod-var}
+Let $J=(p_1,\dots,p_n)$ be points off the branch points.
+\begin{enumerate}
+\item For $n\geq 1$ and $h+n>1$: $\partial_v|_x\,\omega_{h,n}(J)=\int_{q\in\mathfrak r}\omega_{h,n+1}(J,q)$.
+\item For $h\geq 2$: $\partial_v\FTR_h=\int_{\mathfrak r}\omega_{h,1}$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+This is \cite[Thm.~5.1]{Eynard:2007kz}, (5-14) for $g+k>1$ and (5-15) for $g\geq 1$, for the temperature variation of \cite[\S5.3, (5-27)--(5-30)]{Eynard:2007kz}, translated by \cref{conv:mod-kernel}. In the normalisation of \cite{Eynard:2007kz} a variation of the curve at fixed $x$ is described by $\delta_\Omega y|_x\,\dd x=-\Omega$ \cite[(5-1)]{Eynard:2007kz} with $\Omega(p)=\int_{\partial\Omega}B(p,q)\Lambda(q)$ \cite[(5-13)]{Eynard:2007kz}, and (5-14), (5-15) read $\delta_\Omega W^{(h)}_n(J)|_{x}=\int_{\partial\Omega}W^{(h)}_{n+1}(J,q)\Lambda(q)$ and $\delta_\Omega F^{(h)}=-\int_{\partial\Omega}W^{(h)}_1\Lambda$. By \cref{lem:mod-fixedx}, $\Omega=-\partial_v(y\,\dd x)|_x=\dd p/p=-\int_{\mathfrak r}\omega_{0,2}(\cdot,q)$: the path $\partial\Omega=\mathfrak r$ joins the two poles $0$ and $\infty$ of $y\,\dd x$, and $\Lambda=-1$ on it. With $\omega_{h,n}=(-1)^nW^{(h)}_n$ and $\FTR_h=-F^{(h)}$ this gives $\partial_v|_x\omega_{h,n}=(-1)^n\int_{\mathfrak r}W^{(h)}_{n+1}\Lambda=(-1)^{n+1}(-1)^{n+1}\int_{\mathfrak r}\omega_{h,n+1}=\int_{\mathfrak r}\omega_{h,n+1}$ and $\partial_v\FTR_h=-\delta_\Omega F^{(h)}=\int_{\mathfrak r}W^{(h)}_1\Lambda=-\int_{\mathfrak r}W^{(h)}_1=\int_{\mathfrak r}\omega_{h,1}$. The hypotheses hold: the branch points are simple with $\dd y\neq 0$ for every $v\neq 0$; the variation is at fixed $x$ and the Bergman kernel is that of the fixed $\bbP^1$; $\Omega/\dd y=1/p$ is regular at the branch points, as required for \cite[(5-4)]{Eynard:2007kz}; the path avoids the branch points and has no hard edges \cite[(5-13), footnote~8]{Eynard:2007kz}; the integrals converge, since $\omega_{h,n+1}$ is holomorphic at $0$ and $\infty$ in each variable; and the residues at the moving branch points commute with $\partial_v|_x$, computed on fixed small circles in the $x$-plane around the moving critical values. The case $(h,n)=(0,1)$, which (i) excludes, is the hypothesis $\partial_v(y\,\dd x)|_x=\int_{\mathfrak r}\omega_{0,2}$ itself.
+\end{proof}
+
+The case $(h,n)=(0,2)$ of (i) is also proved directly, in \cref{lem:mod-genus0}~(iii) below. Part~(ii) is used in no proof.
+
+\begin{lem}[Genus zero]
+\label{lem:mod-genus0}
+Put $e_{b,k}(p):=\dd p/(p-\varsigma_b)^{k+1}$ and $r_b:=1/(5\varsigma_b^3)$. Then:
+\begin{enumerate}
+\item $\partial_v|_x\,\omega_{0,2}(p_1,p_2)=\sum_br_b\,e_{b,1}(p_1)\,e_{b,1}(p_2)$;
+\item $\omega_{0,3}(p_0,p_1,p_2)=-\sum_be_{b,1}(p_0)e_{b,1}(p_1)e_{b,1}(p_2)/x''(\varsigma_b)$, the negative of \cite[Thm.~4.1 (4-20)]{Eynard:2007kz};
+\item $\int_{q\in\mathfrak r}\omega_{0,3}(p_1,p_2,q)=\partial_v|_x\,\omega_{0,2}(p_1,p_2)$;
+\item for $\phi_1,\phi_2,\phi_3\in\bbQ[v][p]$,
+\[
+\begin{aligned}
+\langle\phi_1\phi_2\phi_3\rangle^{\mathrm{TR}}_0&=-\tfrac15\textstyle\sum_b\varsigma_b^{-2}\prod_i\phi_i'(\varsigma_b), &\langle\phi_1\phi_2,-\log p\rangle^{\mathrm{TR}}_0&=\tfrac15\textstyle\sum_b\varsigma_b^{-3}\phi_1'(\varsigma_b)\phi_2'(\varsigma_b),\\
+\langle\phi_1,(-\log p)^2\rangle^{\mathrm{TR}}_0&=-\tfrac15\textstyle\sum_b\varsigma_b^{-4}\phi_1'(\varsigma_b), &\langle(-\log p)^3\rangle^{\mathrm{TR}}_0&=1/v,
+\end{aligned}
+\]
+and every pairing of $\omega_{0,3}$ with at least one leg in $\bbQ[v][p]$ lies in $\bbQ[v]$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) $\omega_{0,2}$ does not depend on $v$ at fixed $p$, so by \cref{lem:mod-fixedx}, $\partial_v|_x\omega_{0,2}=-(\mathrm{Lie}_{\cX,1}+\mathrm{Lie}_{\cX,2})\,\omega_{0,2}=-\dd_1\dd_2\big[(\cX(p_1)-\cX(p_2))/(p_1-p_2)\big]$, with $\cX$ read as the function $p/(p^5-v)$; indeed, for a function $g$ and the field $g\,\dd/\dd p$ acting in both variables,
+\[
+(\mathrm{Lie}_{1}+\mathrm{Lie}_{2})\frac{\dd p_1\dd p_2}{(p_1-p_2)^2}=\Big(\frac{g'(p_1)+g'(p_2)}{(p_1-p_2)^2}-\frac{2(g(p_1)-g(p_2))}{(p_1-p_2)^3}\Big)\dd p_1\dd p_2=\dd_1\dd_2\frac{g(p_1)-g(p_2)}{p_1-p_2}.
+\]
+By partial fractions $p/(p^5-v)=\sum_br_b/(p-\varsigma_b)$, with no polynomial part, so $(\cX(p_1)-\cX(p_2))/(p_1-p_2)=-\sum_br_b/((p_1-\varsigma_b)(p_2-\varsigma_b))$, whence (i).
+(ii) Only the two terms of ${\sum}'$ with $(h_1,I_1)=(0,\{p_1\})$, $(0,\{p_2\})$ occur in \eqref{eq:mod-kernel}. Near $\varsigma_b$ let $t:=q-\varsigma_b$, so $\iota_bq=\varsigma_b-t+O(t^2)$ and $\dd x(q)=x''(\varsigma_b)\,t(1+O(t))\,\dd t$. Then $\int_{\iota_bq}^q\omega_{0,2}(p_0,\cdot)=\dd p_0\Big(\frac1{p_0-q}-\frac1{p_0-\iota_bq}\Big)=\frac{2t\,\dd p_0}{(p_0-\varsigma_b)^2}(1+O(t))$ and $y(q)-y(\iota_bq)=2t(1+O(t))$, so $K_b(p_0,q)=\frac{e_{b,1}(p_0)}{2x''(\varsigma_b)t\,\dd t}(1+O(t))$. The bracket is $\omega_{0,2}(q,p_1)\omega_{0,2}(\iota_bq,p_2)+\omega_{0,2}(\iota_bq,p_1)\omega_{0,2}(q,p_2)=-2\,e_{b,1}(p_1)e_{b,1}(p_2)\,\dd t^2(1+O(t))$, because $\dd(\iota_bq)=-\dd t(1+O(t))$. The residue at $t=0$ of the product is $-e_{b,1}(p_0)e_{b,1}(p_1)e_{b,1}(p_2)/x''(\varsigma_b)$.
+(iii) Since $x''(\varsigma_b)=5\varsigma_b^2$ and
+\[
+\int_{\mathfrak r}e_{b,1}=\Big[-\frac{1}{p-\varsigma_b}\Big]_0^\infty=-\frac{1}{\varsigma_b},
+\]
+(ii) gives $\int_{q\in\mathfrak r}\omega_{0,3}(p_1,p_2,q)=\sum_br_b\,e_{b,1}(p_1)\,e_{b,1}(p_2)$, which is (i).
+(iv) $\Res_{p=\varsigma_b}\phi(p)\,e_{b,1}(p)=\phi'(\varsigma_b)$ and $\langle-\log p,e_{b,1}\rangle=\int_{\mathfrak r}e_{b,1}=-1/\varsigma_b$; inserting into (ii) gives the four formulas, the last one being $\frac15\sum_b\varsigma_b^{-5}=1/v$. Constants pair to zero, so in a pairing with an L-leg we may assume $\phi_i\in p\,\bbQ[v][p]$; then the powers of $\varsigma_b$ that occur are $\geq -4$, and $\sum_b\varsigma_b^N=5v^{N/5}$ if $5\mid N$ and $0$ otherwise. So only non-negative powers of $v$ survive.
+\end{proof}
+
+\begin{prop}[The recursion (V1)]
+\label{prop:mod-V1}
+Let $h\geq 0$, $a,k\geq 0$, $n=a+k\geq 1$, $2h-2+n>0$, and $\phi_1,\dots,\phi_a\in\bbQ[v][p]$. Then
+\begin{equation}
+\label{eq:mod-V1}
+\begin{aligned}
+\langle\phi_1\cdots\phi_a,(-\log p)^{k+1}\rangle^{\mathrm{TR}}_h={}&\partial_v\langle\phi_1\cdots\phi_a,(-\log p)^k\rangle^{\mathrm{TR}}_h-\sum_{i=1}^a\langle\cdots,\partial_v\phi_i,\cdots,(-\log p)^k\rangle^{\mathrm{TR}}_h\\
+&+\sum_{i=1}^a\langle\cdots,(\cX\dd\phi_i)_+,\cdots,(-\log p)^k\rangle^{\mathrm{TR}}_h ,
+\end{aligned}
+\end{equation}
+where $\partial_v\phi_i$ is the derivative of the coefficients and the dots stand for the other legs.
+\end{prop}
+
+\begin{proof}
+Fix $v_0\neq 0$. For $v$ near $v_0$ choose $R>\max_b|\varsigma_b(v)|$ and a ray $\mathfrak r$ avoiding all $\varsigma_b(v)$; then $C(v):=\langle\phi_1\cdots\phi_a,(-\log p)^k\rangle^{\mathrm{TR}}_h=(2\pi\ri)^{-a}\oint_{|p_i|=R}\int_{\mathfrak r^k}\prod_i\phi_i(p_i)\,\omega_{h,n}$ with contours independent of $v$. The integrand is holomorphic in $v$ on the compact contours and, on the rays, bounded near $v_0$ uniformly in $v$ by a constant times $|\dd q|/(1+|q|)^2$ (holomorphy at $0$, decay at $\infty$, continuity of the coefficients). So we may differentiate under the integrals: $\partial_vC=\sum_i\langle\cdots,\partial_v\phi_i,\cdots\rangle^{\mathrm{TR}}_h+$ the integral of $\prod_i\phi_i\,\partial_v|_p\omega_{h,n}$. By \cref{lem:mod-fixedx} and \cref{thm:mod-var}~(i) (applicable since $n\geq 1$ and $h+n>1$), $\partial_v|_p\omega_{h,n}=\int_{q\in\mathfrak r}\omega_{h,n+1}(\cdot,q)+\sum_{l=1}^n\mathrm{Lie}_{\cX,l}\,\omega_{h,n}$. The first term gives the pairing with one more log leg (Fubini; there are no diagonal poles); a Lie term in an L-slot gives $-\langle\cdots,(\cX\dd\phi_i)_+,\cdots\rangle^{\mathrm{TR}}_h$ by \cref{lem:mod-ibp}~(i), and in a log slot it gives $0$ by \cref{lem:mod-ibp}~(ii). Rearranging gives \eqref{eq:mod-V1}.
+\end{proof}
+
+\input{sections/s06_model_9}

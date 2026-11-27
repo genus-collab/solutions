@@ -1,0 +1,54 @@
+% Appendix A (formal stationary phase), part 1 of 5; label prefix: fsp. Each part inputs the next one at its end.
+% No new macros; local letters are declared where they occur.
+\section{Formal stationary phase}
+\label{sec:fsp}
+
+This appendix defines the formal stationary phase and proves the properties of it that are used in \cref{sec:con,sec:gam}. Everything is formal: the coefficients lie in an arbitrary commutative $\bbQ$-algebra $A$, the stationary phase at a critical point is defined by Wick contraction of the Taylor data there, and nothing is evaluated at $z\neq0$. The proofs use the Wick recursion (Gaussian integration by parts), the Leibniz rule, the Piola identity and formal implicit functions. Two places are not formal. The second proof of the Gaussian perturbation lemma (\cref{lem:fsp-pg}) uses one exact Gaussian integral; the first proof is algebraic, and it is the one the note relies on. The branch part of the reflection identity (\cref{lem:fsp-refl}) is not a statement about formal series; it is used only in \cref{lem:con-form}~(d). \Cref{rmk:fsp-analytic,rmk:fsp-classical} recall the analytic meaning of the formal objects; no proof uses them. In this appendix $t,x,y,v,w$ denote integration or outer variables, $\xi$ the variable of a generating function, $q$ and $\varepsilon$ formal parameters, and $\mathsf H$ a Hessian matrix.
+
+%-------------------------------------------------------------------------------
+\subsection{The weighted ring and the stationary-phase functional}
+\label{sec:fsp-def}
+
+\begin{defn}[Weighted ring and Gaussian functional]
+\label{def:fsp-ring}
+Let $t=(t_1,\dots,t_n)$ be variables and $z$ a formal variable, and put $\wt(t^\alpha z^j):=|\alpha|/2+j$ for $\alpha\in\bbZ_{\geq0}^n$, $j\in\bbZ$. Let $\cR_n(A)$ be the set of formal sums $\sum c_{\alpha,j}t^\alpha z^j$, $c_{\alpha,j}\in A$, such that for every $W$ only finitely many monomials of weight $\leq W$ have $c_{\alpha,j}\neq0$. A family $(P_\lambda)$ in $\cR_n(A)$ is \emph{summable} if for every $W$ only finitely many $P_\lambda$ have a non-zero term of weight $\leq W$; its sum is taken termwise. For a symmetric $C\in A^{n\times n}$ put $\langle t^\alpha\rangle_C:=\de_\xi^\alpha\exp(\xi^{\mathrm T}C\xi/2)|_{\xi=0}$, so that $\sum_\alpha\langle t^\alpha\rangle_C\,\xi^\alpha/\alpha!=\exp(\xi^{\mathrm T}C\xi/2)$, extended $A$-linearly to $A[t]$. The \emph{Gaussian functional} with covariance $zC$ is the $A$-linear map $E_{zC}\colon\cR_n(A)\to A\lser{z}$, $E_{zC}[t^\alpha z^j]:=\langle t^\alpha\rangle_C\,z^{j+|\alpha|/2}$, applied termwise; $E_{zC}[1]=1$.
+\emph{Outer variables.} If variables $y=(y_1,\dots,y_m)$ of weight $1/2$ are added and $C$ has entries in $A\fps{y}$, the partial functional $E^t_{zC}\colon\cR_{n+m}(A)\to\cR_m(A)$, $t^\alpha y^\beta z^j\mapsto\langle t^\alpha\rangle_C\,y^\beta z^{j+|\alpha|/2}$, acts on $t$ only.
+\emph{Parameters.} Over $A=A_0\fps{q}$ we work in $\cR_n(A_0)\fps{q}\supset\cR_n(A)$, coefficientwise in $q$. Alternatively $q$ gets the weight $1$, and $\cR_{n;q}(A_0)$ is the set of sums $\sum c\,t^\alpha q^dz^j$ with the same finiteness condition for the weight $|\alpha|/2+d+j$.
+\end{defn}
+
+\begin{lem}[The weighted ring]
+\label{lem:fsp-ring}
+(i) $\cR_n(A)$ is a ring containing $A\fps{t}\lser{z}$; multiplication by a fixed element, $\de/\de t_i$ and multiplication by $t_i$ preserve summable families and commute with their sums.
+
+(ii) If every term of $P\in\cR_n(A)$ has weight $\geq1/2$, the family $(P^k/k!)_k$ is summable, $\exp(P):=\sum_kP^k/k!$ lies in $\cR_n(A)$, and the usual rules for exponentials hold.
+
+(iii) $\langle t^\alpha\rangle_C=0$ for $|\alpha|$ odd; for $|\alpha|$ even it is the sum over the perfect matchings of the multiset $\{1^{\alpha_1},\dots,n^{\alpha_n}\}$ of the products of the $C_{ij}$ over the matched pairs; and $\langle t_it^\beta\rangle_C=\sum_jC_{ij}\beta_j\langle t^{\beta-e_j}\rangle_C$ (Wick recursion).
+
+(iv) $E_{zC}$ and $E^t_{zC}$ are well defined, do not lower the weight, and commute with sums of summable families; $E_{zC}$, and $E^t_{zC}$ for constant $C$, preserve the weight, and $E_{zC}[fP]=fE_{zC}[P]$ for $f\in A\lser{z}$.
+
+(v) For $J\in A^{n\times n}$ the substitution $t=Jy$ maps $\cR_n(A)$ to itself preserving the weight, and $E_{zC'}[P(Jy)]=E_{zJC'J^{\mathrm T}}[P]$ for all $P\in\cR_n(A)$ and symmetric $C'$.
+\end{lem}
+
+\begin{proof}
+(i) The weights of the non-zero terms of an element are bounded below. In a product, the coefficient of a monomial of weight $W$ is a sum over pairs of terms whose weights add up to $W$; as both weights are bounded below, it is a finite sum, and the same count gives the finiteness condition for the product and the assertions on summable families. An element $\sum_{j\geq j_0}a_jz^j$ of $A\fps{t}\lser{z}$ has in weight $\leq W$ only terms with $j_0\leq j\leq W$, $|\alpha|\leq2(W-j_0)$. The operators $\de/\de t_i$ and $t_i\cdot$ shift weights by $\mp1/2$. (ii) $P^k$ has weight $\geq k/2$. (iii) $\exp(\xi^{\mathrm T}C\xi/2)$ is even in $\xi$, and $\de_{\xi_i}\exp(\xi^{\mathrm T}C\xi/2)=(C\xi)_i\exp(\xi^{\mathrm T}C\xi/2)$; applying $\de_\xi^\beta$ at $\xi=0$ with the Leibniz rule gives the recursion (one derivative $\de_{\xi_j}$ must hit $\xi_j$, in $\beta_j$ ways). The recursion determines all moments from $\langle1\rangle_C=1$, and the matching sum satisfies it too (match $i$ with one of the remaining entries). (iv) A monomial of weight $w$ goes to a multiple of $z^w$, odd moments vanishing, and the coefficient of $z^k$ receives contributions only from the finitely many terms of weight $k$; this gives the assertions on $E_{zC}$. For $E^t_{zC}$, $\langle t^\alpha\rangle_C\in A\fps{y}$ is a polynomial in the entries of $C$, so the image of $t^\alpha y^\beta z^j$ is a sum of monomials $y^{\beta+\gamma}z^{j+|\alpha|/2}$ of weight $\geq\wt(t^\alpha y^\beta z^j)$ ($\gamma=0$ if $C$ is constant), and the coefficient of $y^\delta z^k$ receives contributions only from the finitely many terms with $\beta\leq\delta$, $j+|\alpha|/2=k$, which have weight $\leq k+|\delta|/2$. (v) By the generating function, $\langle\re^{\xi\cdot Jy}\rangle_{C'}=\langle\re^{(J^{\mathrm T}\xi)\cdot y}\rangle_{C'}=\exp(\xi^{\mathrm T}JC'J^{\mathrm T}\xi/2)$, i.e.\ $\langle(Jy)^\alpha\rangle_{C'}=\langle t^\alpha\rangle_{JC'J^{\mathrm T}}$, which is the claim for $P=t^\alpha z^j$; the substitution maps a monomial of weight $w$ to a finite sum of monomials of weight $w$, and (iv) extends the identity.
+\end{proof}
+
+\begin{defn}[The normalised stationary phase]
+\label{def:fsp-wick}
+Let $c\in A^n$. For a \emph{phase} $F\in A\fps{x-c}$, $c$ is a \emph{non-degenerate critical point over $A$} if $\nabla F(c)=0$ and $\mathsf H:=\Hess F(c)\in GL_n(A)$. With $t:=x-c$ write $F(c+t)=F(c)+\frac12t^{\mathrm T}\mathsf Ht+F_{\geq3}(t)$, $F_{\geq3}\in(t)^3$, and $C:=-\mathsf H^{-1}$. An \emph{amplitude} is a series $a\in A\fps{x-c}\lser{z}$, or any $a$ with $\exp(F_{\geq3}/z)\,a(c+t)\in\cR_n(A)$; every term of $F_{\geq3}/z$ has weight $\geq1/2$. The \emph{normalised stationary phase} is
+\[
+\SPn_c[F;a]:=E_{zC}\bigl[\exp\bigl(F_{\geq3}(t)/z\bigr)\,a(c+t)\bigr]\in A\lser{z}.
+\]
+Equivalently, substitute $t=z^{1/2}\tilde t$, expand in powers of $z^{1/2}$ and apply $\langle\cdot\rangle_C$ in $\tilde t$ termwise. The map $a\mapsto\SPn_c[F;a]$ is $A\lser{z}$-linear, in particular $A\fps{z}$-linear (\cref{lem:fsp-ring}~(iv)). If $a=\sum_{m\geq0}a_mz^m$, the constant term of $\SPn_c[F;a]$ is $a_0(c)$; if it is a unit, $\SPh_c[F;a]:=\SPn_c[F;a]/a_0(c)\in1+zA\fps{z}$. The \emph{full symbol} is
+\[
+\mathrm{SP}_c\bigl[\re^{F/z}a\,\dd^nx\bigr]:=\bigl[\re^{F(c)/z}\bigr]\,(2\pi z)^{n/2}\,\bigl[\det(-\mathsf H)^{-1/2}\bigr]\,\SPn_c[F;a],
+\]
+with formal symbols in brackets ($[\re^{F_1/z}][\re^{F_2/z}]=[\re^{(F_1+F_2)/z}]$ for $F_1,F_2\in A$; the square root, in an extension of $A$, is part of the datum). An identity of full symbols is an identity of normalised series together with an explicit identity of symbols under a stated rule for the square roots. Only normalised series are canonical; the note normalises series by their constant terms, so only the $z$-dependence of the symbols matters, and it is always explicit. The convention $\re^{F/z}$ becomes the convention $\re^{-\cW/z}$, resp.\ $\re^{-\hat\cW/\zh}$, of \cref{sec:con} through $F=-\cW$, resp.\ $F=-\hat\cW$ with $z$ renamed $\zh$.
+\end{defn}
+
+\begin{rmk}[Meaning for real data]
+\label{rmk:fsp-analytic}
+For real-analytic real data with $\mathsf H$ negative definite and the positive square root, the full symbol is the asymptotic expansion, as $z\to0^+$, of the integral of $\re^{F/z}a$ over a small neighbourhood of $c$ (Laplace's method). This is not used in any proof.
+\end{rmk}
+
+\input{sections/a_formalsp_2}

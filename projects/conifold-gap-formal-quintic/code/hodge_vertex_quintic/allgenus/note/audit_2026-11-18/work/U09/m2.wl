@@ -1,0 +1,14 @@
+Tk[k_, F_] := -F + t/5 (k F - 4 t D[F, t]);
+F0 = 1 + Sum[al[j] t^j, {j, 1, 5}];
+F1 = Tk[-1, F0]; F2 = -Tk[-2, F1]; F3 = Tk[2, F2]; F4 = -Tk[1, F3]; F0c = -Tk[0, F4];
+eqs = Table[SeriesCoefficient[F0c - F0, {t, 0, j}] == 0, {j, 1, 5}];
+alsol = Solve[eqs, Table[al[j], {j, 1, 4}]][[1]];
+Fs = Normal[Series[{F0, F1, F2, F3, F4} /. alsol, {t, 0, 3}]];
+zeta = Exp[2 Pi I/5]; eps = {1, -1, -1, 1, 1};
+Psi0inv = Table[(1/5) eps[[b + 1]] zeta^(-i (b + 1)), {i, 0, 4}, {b, 0, 4}];
+Rhat = Table[zeta^(i (b + 1)) (Fs[[b + 1]] /. t -> zeta^(-i) t), {b, 0, 4}, {i, 0, 4}];
+M0 = Psi0inv . Rhat;
+Mk[n_] := Table[SeriesCoefficient[M0[[i, j]], {t, 0, n}], {i, 5}, {j, 5}];
+Print["M2 antisym norm: ", N[Max[Abs[Mk[2] - Transpose[Mk[2]]]]]];
+Print["M2+M2T - M1^2: ", N[Max[Abs[Mk[2] + Transpose[Mk[2]] - Mk[1].Mk[1]]]]];
+Print[MatrixForm[Chop[N[Mk[2] - Transpose[Mk[2]]]]]];

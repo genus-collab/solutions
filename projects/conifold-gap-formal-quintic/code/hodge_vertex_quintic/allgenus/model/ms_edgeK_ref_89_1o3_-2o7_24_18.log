@@ -1,0 +1,68 @@
+ms_edgeK: rows ref, p = 2^89-1, frame (1/3, -2/7), zhat <= 24, u < 18 (setup 4 s)
+PASS (E_0) control (random covector) covector shifted by 0: 2160 coefficients (u^N, N <= 17), 965 non-zero, 1890 from sums of >= 2 entries
+PASS (E_0) vanishing covector shifted by 0: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1890 from sums of >= 2 entries
+PASS (E_1) control (random covector) covector shifted by 1: 2160 coefficients (u^N, N <= 17), 880 non-zero, 1800 from sums of >= 2 entries
+PASS (E_1) vanishing covector shifted by 1: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1800 from sums of >= 2 entries
+PASS (E_2) control (random covector) covector shifted by 2: 2160 coefficients (u^N, N <= 17), 800 non-zero, 1710 from sums of >= 2 entries
+PASS (E_2) vanishing covector shifted by 2: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1710 from sums of >= 2 entries
+PASS (E_3) control (random covector) covector shifted by 3: 2160 coefficients (u^N, N <= 17), 720 non-zero, 1620 from sums of >= 2 entries
+PASS (E_3) vanishing covector shifted by 3: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1620 from sums of >= 2 entries
+PASS (E_4) control (random covector) covector shifted by 4: 2160 coefficients (u^N, N <= 17), 645 non-zero, 1530 from sums of >= 2 entries
+PASS (E_4) vanishing covector shifted by 4: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1530 from sums of >= 2 entries
+PASS (E_5) control (random covector) covector shifted by 5: 2160 coefficients (u^N, N <= 17), 575 non-zero, 1440 from sums of >= 2 entries
+PASS (E_5) vanishing covector shifted by 5: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1440 from sums of >= 2 entries
+PASS (E_6) control (random covector) covector shifted by 6: 2160 coefficients (u^N, N <= 17), 510 non-zero, 1350 from sums of >= 2 entries
+PASS (E_6) vanishing covector shifted by 6: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1350 from sums of >= 2 entries
+PASS (E_7) control (random covector) covector shifted by 7: 2160 coefficients (u^N, N <= 17), 450 non-zero, 1260 from sums of >= 2 entries
+PASS (E_7) vanishing covector shifted by 7: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1260 from sums of >= 2 entries
+PASS (E_8) control (random covector) covector shifted by 8: 2160 coefficients (u^N, N <= 17), 390 non-zero, 1170 from sums of >= 2 entries
+PASS (E_8) vanishing covector shifted by 8: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1170 from sums of >= 2 entries
+PASS (E_9) control (random covector) covector shifted by 9: 2160 coefficients (u^N, N <= 17), 335 non-zero, 1080 from sums of >= 2 entries
+PASS (E_9) vanishing covector shifted by 9: 2160 coefficients (u^N, N <= 17), 0 non-zero, 1080 from sums of >= 2 entries
+PASS (E_10) control (random covector) covector shifted by 10: 2160 coefficients (u^N, N <= 17), 285 non-zero, 990 from sums of >= 2 entries
+PASS (E_10) vanishing covector shifted by 10: 2160 coefficients (u^N, N <= 17), 0 non-zero, 990 from sums of >= 2 entries
+PASS (E_11) control (random covector) covector shifted by 11: 2160 coefficients (u^N, N <= 17), 240 non-zero, 900 from sums of >= 2 entries
+PASS (E_11) vanishing covector shifted by 11: 2160 coefficients (u^N, N <= 17), 0 non-zero, 900 from sums of >= 2 entries
+PASS (E_12) control (random covector) covector shifted by 12: 2160 coefficients (u^N, N <= 17), 200 non-zero, 810 from sums of >= 2 entries
+PASS (E_12) vanishing covector shifted by 12: 2160 coefficients (u^N, N <= 17), 0 non-zero, 810 from sums of >= 2 entries
+PASS (E_13) control (random covector) covector shifted by 13: 2160 coefficients (u^N, N <= 17), 160 non-zero, 720 from sums of >= 2 entries
+PASS (E_13) vanishing covector shifted by 13: 2160 coefficients (u^N, N <= 17), 0 non-zero, 720 from sums of >= 2 entries
+PASS (E_14) control (random covector) covector shifted by 14: 2160 coefficients (u^N, N <= 17), 125 non-zero, 630 from sums of >= 2 entries
+PASS (E_14) vanishing covector shifted by 14: 2160 coefficients (u^N, N <= 17), 0 non-zero, 630 from sums of >= 2 entries
+PASS (E_15) control (random covector) covector shifted by 15: 2160 coefficients (u^N, N <= 17), 95 non-zero, 540 from sums of >= 2 entries
+PASS (E_15) vanishing covector shifted by 15: 2160 coefficients (u^N, N <= 17), 0 non-zero, 540 from sums of >= 2 entries
+PASS (E_16) control (random covector) covector shifted by 16: 2160 coefficients (u^N, N <= 17), 70 non-zero, 450 from sums of >= 2 entries
+PASS (E_16) vanishing covector shifted by 16: 2160 coefficients (u^N, N <= 17), 0 non-zero, 450 from sums of >= 2 entries
+PASS (E_17) control (random covector) covector shifted by 17: 2160 coefficients (u^N, N <= 17), 50 non-zero, 360 from sums of >= 2 entries
+PASS (E_17) vanishing covector shifted by 17: 2160 coefficients (u^N, N <= 17), 0 non-zero, 360 from sums of >= 2 entries
+PASS (E_18) control (random covector) covector shifted by 18: 2160 coefficients (u^N, N <= 17), 30 non-zero, 270 from sums of >= 2 entries
+PASS (E_18) vanishing covector shifted by 18: 2160 coefficients (u^N, N <= 17), 0 non-zero, 270 from sums of >= 2 entries
+PASS (E_19) control (random covector) covector shifted by 19: 2160 coefficients (u^N, N <= 17), 15 non-zero, 180 from sums of >= 2 entries
+PASS (E_19) vanishing covector shifted by 19: 2160 coefficients (u^N, N <= 17), 0 non-zero, 180 from sums of >= 2 entries
+PASS (E_20) control (random covector) covector shifted by 20: 2160 coefficients (u^N, N <= 17), 5 non-zero, 90 from sums of >= 2 entries
+PASS (E_20) vanishing covector shifted by 20: 2160 coefficients (u^N, N <= 17), 0 non-zero, 90 from sums of >= 2 entries
+VACUOUS (the control vanishes too at this truncation; k not counted) (E_21) control (random covector) covector shifted by 21: 2160 coefficients (u^N, N <= 17), 0 non-zero, 0 from sums of >= 2 entries
+VACUOUS (the control vanishes too at this truncation; k not counted) (E_22) control (random covector) covector shifted by 22: 2160 coefficients (u^N, N <= 17), 0 non-zero, 0 from sums of >= 2 entries
+VACUOUS (the control vanishes too at this truncation; k not counted) (E_23) control (random covector) covector shifted by 23: 2160 coefficients (u^N, N <= 17), 0 non-zero, 0 from sums of >= 2 entries
+   non-trivial vanishing sums over all counted shifts: 20790
+PASS (T_1) leaf: Sum phi_{i,d-1} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_2) leaf: Sum phi_{i,d-2} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_3) leaf: Sum phi_{i,d-3} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_4) leaf: Sum phi_{i,d-4} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_5) leaf: Sum phi_{i,d-5} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_6) leaf: Sum phi_{i,d-6} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_7) leaf: Sum phi_{i,d-7} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_8) leaf: Sum phi_{i,d-8} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_9) leaf: Sum phi_{i,d-9} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_10) leaf: Sum phi_{i,d-10} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_11) leaf: Sum phi_{i,d-11} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_12) leaf: Sum phi_{i,d-12} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_13) leaf: Sum phi_{i,d-13} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_14) leaf: Sum phi_{i,d-14} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_15) leaf: Sum phi_{i,d-15} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_16) leaf: Sum phi_{i,d-16} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_17) leaf: Sum phi_{i,d-17} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_18) leaf: Sum phi_{i,d-18} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_19) leaf: Sum phi_{i,d-19} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+PASS (T_20) leaf: Sum phi_{i,d-20} T(d)[i] = 0 mod u^18   [control, random covector: non-zero]
+MS_EDGEK ref 89 (1/3,-2/7): ALL PASS  (8 s)

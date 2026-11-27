@@ -1,0 +1,17 @@
+==========================================================================================
+genus5_run g5_61_id_ab1o3_m2o7: local run, 13 processes
+      inner graphs 911/4555 (462 s)
+      inner graphs 1822/4555 (614 s)
+      inner graphs 2733/4555 (710 s)
+      inner graphs 3644/4555 (771 s)
+      inner graphs 4555/4555 (805 s)
+   local run: 4555 inner graphs, wall 1003 s, CPU 10159 s
+==========================================================================================
+genus5_run g5_61_id_ab1o3_m2o7: collect
+   part files: ['local.json']; 4555 inner graphs; CPU 2.8 h
+PASS all 4555 inner graphs are covered by the part files: 0 missing, e.g. []
+   total over all graphs: ['1/660000', '-1/225000', '[1044927607911548807 mod p]', '[1556552000867062176 mod p]', '[264511426978961772 mod p]', '[587293459425035374 mod p]', '[134434792811628853 mod p]', '[2134399206325234367 mod p]']
+   total in t_c: (1/660000) t_c^-8 + (0) t_c^-7 + (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS GAP: total = (c) t_c^-8 + 0 + ... + 0 t_c^-1
+   c_5 = 1/660000; pattern |B_2g|/(2g(2g-2)5^(g-1)) = 1/660000: EQUAL
+GENUS5_RUN COLLECT (g5_61_id_ab1o3_m2o7) ALL CHECKS PASSED

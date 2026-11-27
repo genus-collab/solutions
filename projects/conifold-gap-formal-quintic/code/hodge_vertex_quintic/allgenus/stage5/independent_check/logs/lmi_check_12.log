@@ -1,0 +1,11 @@
+h_(w_0): h_1..h_5 = ['-3/20', '9/800', '-269/80000', '2823/6400000', '-257071/8064000000']
+PASS L = 2: two-variable chart SP = c(z; L) (one variable, full Stirling) through z^12   (5.6 s)
+     c_1..c_3(2) = ['-12/5', '72/25', '354278/625']
+PASS L = -2/3: two-variable chart SP = c(z; L) (one variable, full Stirling) through z^12   (11.9 s)
+PASS L = 1/2: two-variable chart SP = c(z; L) (one variable, full Stirling) through z^12   (18.2 s)
+PASS L = 3: two-variable chart SP = c(z; L) (one variable, full Stirling) through z^12   (24.1 s)
+PASS L = 1 (Q = 0): two-variable chart SP = h_(w_0)(z) through z^12   (29.0 s)
+PASS L = 2: c(z; L) with the singular factor's Stirling series dropped = chart  [control: must fail]   (35.1 s)
+PASS L = 1: chart = h with twist weight +5  [control: must fail]   (35.1 s)
+PASS L = 2: chart with Q e^(2 mu) = c(z; L)  [control: must fail]   (41.1 s)
+LMI_CHECK 12: ALL CHECKS PASSED   (41 s)

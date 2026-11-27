@@ -1,0 +1,127 @@
+% Abridged version, Section 2, part 1 of 2: the formal quintic, genus-zero data, the rows and (QRR), the graph sum and (T),
+% conifold frames and the conifold expansion. Continued in part 2 (the model, the outer graph sum, Property N(g)).
+\section{The formal quintic, the model and the outer graph sum}
+\label{sec:set}
+
+This section fixes the objects and states the quoted inputs in the form in which they are used; it follows \Lr{sec:set}. Throughout, $\zeta=\re^{2\pi\ri/5}$, colours $i,j$ and flat indices $a,b$ run over $\bbZ/5$, and $\overline{\mathcal M}_{g,n}$ is the moduli space of stable curves.
+
+%-------------------------------------------------------------------------------
+\subsection{The formal quintic and its genus-zero data}
+\label{sec:set-fq}
+
+\begin{defn}[The formal quintic; {\Lr{def:set-fq}}, abridged]
+\label{def:set-fq}
+Let $\bbT=(\bbC^*)^5$ act on $\bbP^4$ with weights $\lambda_0,\dots,\lambda_4$ on $H^0(\bbP^4,\cO(1))$ and $H:=c_1^{\bbT}(\cO(1))$. For $g,d\geq0$ the \emph{formal quintic invariant} $N_{g,d}:=\int_{[\overline{\mathcal M}_g(\bbP^4,d)]^{\mathrm{vir}}}e\bigl(R\pi_*f^*\cO(5)\bigr)$ \cite[\S0.2, (5)]{LP18}, \cite[\S0.2, (5)]{LP20} is defined by virtual localisation \cite{MR1666787} and specialised at $\lambda_i=\zeta^i$; it is a rational number. For $g\geq2$ the \emph{genus-$g$ potential} is $F_g:=\sum_{d\geq0}N_{g,d}\,\Qn^d\in\bbQ\fps{\Qn}$; along the mirror map $\Qn=\re^{T(q)}$ it becomes a power series in $q$. For $2g-2+n>0$ the classes $\Omega_{g,n}(\gamma_1,\dots,\gamma_n):=\sum_{d\geq0}\Qn^d\,\rho_*\bigl(e(R\pi_*f^*\cO(5))\prod_{j}\mathrm{ev}_j^*\gamma_j\cap[\overline{\mathcal M}_{g,n}(\bbP^4,d)]^{\mathrm{vir}}\bigr)$, with the stabilisation map $\rho$, are defined and specialised in the same way; with the \emph{twisted pairing} $\eta(a,b):=\int_{\bbP^4}ab\,e_{\bbT}(\cO(5))$ they are the classes of the cohomological field theory of the formal quintic \cite[\S4.1]{GJR18}, and $F_g=\int_{\overline{\mathcal M}_g}\Omega_{g,0}$. At $\lambda_i=\zeta^i$ the \emph{state space} is $\bbH:=\bbQ[H]/(H^5-1)$, with the flat basis $H^a$, $H^0=1$, and $\eta(H^a,H^b)=5\,\delta_{a+b\equiv3\bmod5}$.
+\end{defn}
+
+\emph{Genus-zero data} \Lr{def:set-genus0,lem:set-pf5}. Let $\Dq:=q\,\dd/\dd q$ and let $\logq$ be a formal $\log q$, $\Dq\logq=1$. Put $C_0:=\sum_{d\geq0}\frac{(5d)!}{(d!)^5}q^d$, $\tilde I_1:=5\sum_{d\geq1}\frac{(5d)!}{(d!)^5}\bigl(\sum_{m=d+1}^{5d}\frac1m\bigr)q^d$, $I_1:=C_0\logq+\tilde I_1$, the \emph{mirror map} $T:=I_1/C_0$, $\re^T:=q\exp(\tilde I_1/C_0)$, $C_1:=\Dq T$, and $L:=(1-5^5q)^{-1/5}$, so that $\Dq L=(L^6-L)/5$. The fifth-order and fourth-order operators are
+\[
+\PFfive:=(z\Dq)^5-1-q\prod_{k=1}^5(5z\Dq+kz),\qquad \PFfour:=\Dq^4-5q\prod_{k=1}^4(5\Dq+k),\qquad \PFfive=z^5\,\Dq\circ\PFfour-1 .
+\]
+The input (M) is the identity $J(T(q)H,z)=I(q,z)/C_0(q)$ at $\lambda_i=\zeta^i$ between the $J$-function of the twisted theory and the hypergeometric $I$-function \Lr{def:set-genus0,thm:set-mirror}, and (G0) gives the quantum product $*$ at $t=T(q)H$, $\Qn=1$, which is commutative, associative, has the unit $1$ and is Frobenius for $\eta$, with the quantum differential equation \Lr{thm:set-G0}. Along the line $t=T(q)H$ functions of $t$ are functions of $q$, and $\partial_T:=C_1^{-1}\Dq$.
+
+\begin{prop}[The large-radius cyclic structure; {\Lr{prop:set-cyclicLR}}]\genusstatus{AI-proposed, unchecked}
+\label{prop:set-cyclicLR}
+Assume (M) and (G0), and for (iii) the flatness part of (QRR), \cref{def:set-rows}~(b). Along the line $t=T(q)H$, at $\lambda_i=\zeta^i$ and $\Qn=1$, the following hold.
+\begin{enumerate}
+\item In the flat basis, $H*H^a=\kappa^{\mathrm{LR}}_aH^{a+1}$ for $a\in\bbZ/5$, where $\kappa^{\mathrm{LR}}=\bigl(1,\ L^5/(C_0^2C_1^3),\ 1,\ C_0/C_1,\ C_0/C_1\bigr)$.
+\item Consequently, for every solution $v$ of the quantum differential equation $z\partial_Tv=H*v$, in any differential $\bbQ\fps q$-algebra in which $z$ is a constant, the lowered components $v_a:=\eta(H^a,v)$ satisfy $z\Dq v_a=C_1\kappa^{\mathrm{LR}}_a\,v_{a+1}$ for all $a\in\bbZ/5$.
+\item For every colour $i$ the rows of \cref{def:set-rows} satisfy $(z\Dq+\zeta^iL)\Qr^{(i)}_a=C_1\kappa^{\mathrm{LR}}_a\,\Qr^{(i)}_{a+1}$ for $a\in\bbZ/5$.
+\end{enumerate}
+\end{prop}
+
+\begin{sketch}[Idea of the proof {\Lr{sec:set-lrproof,def:set-rows}}]
+A $\bbZ/5$-grading shows that $H*H^a$ is a multiple of $H^{a+1}$. By (M) the coefficients are expressed through the periods, the coefficients of $I/z$: their Wronskian $L^{10}$ gives $\kappa^{\mathrm{LR}}_1$, and an operator identity with $\PFfour$ gives $\kappa^{\mathrm{LR}}_3=C_0/C_1$, through $H^5=1$. Part (ii) is the Frobenius property, and (iii) is (ii) for the column $R(z)\tilde e_i\re^{u_i/z}$, by flatness.
+\end{sketch}
+
+\begin{cor}[{\Lr{cor:set-cyclicPF5}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{cor:set-cyclicPF5}
+Assume (M) and (G0), and for the last sentence of (b) the flatness part of (QRR).
+\begin{itemize}
+\item[(a)] The eigenvalues of $H*$ are $\mu_i:=\zeta^iL/C_1$, the idempotents $e_i$ satisfy $\Delta_i:=1/\eta(e_i,e_i)=C_0^2\zeta^{3i}/L^2$, and the canonical coordinates along the line are functions $u_i$ with $\Dq u_i=\zeta^iL$, determined up to additive constants.
+\item[(b)] For every solution $v$ of $z\partial_Tv=H*v$ in a differential $\bbQ\fps q$-algebra in which $z$ is a constant, $C_0v_0$ solves $\PFfive$. In particular, for the column $v=R(z)\tilde e_i\re^{u_i/z}$ of \cref{def:set-rows}, the function $\re^{u_i/z}\,z\,L\,\Phi_i(\zh,u)$ solves $\PFfive$: this is the WKB form of colour $i$.
+\end{itemize}
+\end{cor}
+
+\begin{defn}[Points, variables, Frobenius data; {\Lr{def:set-points,def:set-frob}}]
+\label{def:set-frob}
+Put $u:=1-5^5q$ and $s:=u^{1/5}$, so that $L=s^{-1}$ and $\Dq=-(1-u)\,\dd/\dd u$, and $\zh:=z/s^4=L^4z$, the hatted variable. The \emph{large-radius point} is $q=0$ ($u=1$), the \emph{conifold point} is $u=0$, and the \emph{orbifold point} is $q=\infty$ ($L=0$). The \emph{normalised canonical basis} is $\tilde e_i:=\Delta_i^{1/2}e_i$ with $\Delta_i^{1/2}:=\zeta^{4i}\,C_0/L$, so $\eta(\tilde e_i,\tilde e_j)=\delta_{ij}$. The \emph{topological field theory of the formal quintic} is the TFT $\TFT$ with $\TFT_{g,n}(\tilde e_i,\dots,\tilde e_i):=\Delta_i^{(2g-2+n)/2}$ and $\TFT_{g,n}$ vanishing on mixed colours; its unit is $1_{\TFT}:=\sum_i\Delta_i^{-1/2}\tilde e_i=1$.
+\end{defn}
+
+%-------------------------------------------------------------------------------
+\subsection{The \texorpdfstring{$R$}{R}-matrix, the graph sum and the quoted inputs (QRR), (T)}
+\label{sec:set-rows}
+
+\begin{defn}[The $R$-matrix and its rows; {\Lr{def:set-rows}}]
+\label{def:set-rows}
+Let $R(z)=1+\sum_{k\geq1}R_kz^k$, $R_k\in\End(\bbH)\otimes\bbQ(\zeta)\fps q$, be the $R$-matrix of the semisimple cohomological field theory of the formal quintic along the line $t=T(q)H$ \cite[\S4.1]{GJR18}, that is, the $R$-matrix of the quoted input (T), \cref{thm:set-GT}. It has the following properties, of which (a) is part of (T), (b) is part of (QRR), and (c) is Givental's convention: (a) $R$ is symplectic, $R(-z)^T\eta\,R(z)=\eta$ in the flat basis; (b) for every colour $i$ the column $R(z)\tilde e_i\re^{u_i/z}$ solves the quantum differential equation $z\partial_Tv=H*v$, that is, $w:=R(z)\tilde e_i$ satisfies $z\partial_Tw+\mu_iw=H*w$; (c) in the graph sums of \cref{def:set-graphsum}, $R$ acts with $R^{-1}(\psi)$ on the legs. The \emph{rows} are the lowered components $\Qr^{(i)}_a(z):=\eta(H^a,R(z)\tilde e_i)\in\bbQ(\zeta)\fps q\fps z$; $\Qr$ is the matrix $(\Qr^{(i)}_a)$, rows indexed by $a$, columns by $i$. With $\zh=L^4z$ we define $\Phi_i(\zh,u):=C_0\,\Qr^{(i)}_0(z)/(\zeta^iL)$ and the coefficients $\mathrm{ph}_n(u)$ by $\Phi_0(\zh,u)=\sum_{n\geq0}\mathrm{ph}_n(u)\,\zh^n$; then $\mathrm{ph}_0=1$. The \emph{flat amplitudes} are $A_n:=\coef{z^n}\bigl(C_0\,\Qr^{(0)}_0\bigr)=L^{4n+1}\,\mathrm{ph}_n(L^{-5})$.
+\end{defn}
+
+\begin{thm}[Flatness of the $R$-matrix and its value at $q=0$, (QRR); quoted; {\Lr{thm:set-qrr}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:set-qrr}
+For a finite multiset $\mathbf w$ of non-zero numbers put $\hw(z):=\exp\bigl(-\sum_{k\geq1}\bk_k\,z^{2k-1}\sum_{a\in\mathbf w}a^{1-2k}\bigr)$, $\bk_k:=B_{2k}/(2k(2k-1))$, and $\bw_i:=\{\zeta^i-\zeta^j\}_{j\neq i}\cup\{-5\zeta^i\}$. The $R$-matrix of \cref{def:set-rows} has coefficients in $\End(\bbH)\otimes\bbQ(\zeta)\fps q$ and satisfies \cref{def:set-rows}~(b); and $R(q=0)=\diag(h_{\bw_0},\dots,h_{\bw_4})$ in the basis $\tilde e_i(q=0)$, to all orders in $z$.
+\end{thm}
+
+The value is used only in the form $\Phi_i(z,1)=h_{\bw_i}(z)$, for every colour $i$; in particular, with $h:=h_{\bw_0}$ and $h_n:=\coef{z^n}h$, $\mathrm{ph}_n(1)=h_n$. Since $\bw_i=\zeta^i\bw_0$, $h_{\bw_i}(z)=h_{\bw_0}(\zeta^{-i}z)$. Assuming (M) and (G0), flatness and the value at $q=0$ determine $R$, and imply (a) \Lr{lem:set-hrot,lem:set-Runique}; so no uniqueness of the $R$-matrix in (T) is used, and (a) is not an independent input.
+
+\begin{defn}[The Givental--Teleman graph sum; {\Lr{def:set-graphsum}}, abridged]
+\label{def:set-graphsum}
+Let $\Omega$ be a cohomological field theory with unit $1$ \cite[Def.~0.3]{PPZ15} on a free module $V$ of finite rank with a perfect symmetric pairing $\eta$ over a commutative $\bbQ$-algebra, and $R(z)=1+O(z)\in\End(V)\fps z$ symplectic. The ancestor correlators are $\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\rangle_h:=\int_{\overline{\mathcal M}_{h,n}}\Omega_{h,n}(a_1,\dots,a_n)\prod_j\psi_j^{k_j}$; for a point $q\in V\fps z$ of the loop space the dilaton-shifted potential is $\overline F^\Omega_h(q):=\sum_{n:\,2h-2+n>0}\frac1{n!}\langle(q+z1)^n\rangle_h$, with $z^ka\mapsto\psi^ka$, and $\dd^n\overline F^\Omega_h(q)$ is its $n$-th derivative, a symmetric form on $V\fps z$. The \emph{leaf point} and the \emph{edge} of $R$ are $q_R(z):=R^{-1}(z)(-z1)=-z1+\ttr_R(z)$ and
+\[
+E_R(\psi,\psi'):=\frac{\eta^{-1}-\bigl(R^{-1}(\psi)\otimes R^{-1}(\psi')\bigr)\eta^{-1}}{\psi+\psi'}\in(V\otimes V)\fps{\psi,\psi'},
+\]
+where $\eta^{-1}\in V\otimes V$ is the inverse bivector and $\ttr_R(z):=z1-zR^{-1}(z)1\in z^2V\fps z$ is the translation of \cite[Def.~2.13]{PPZ15}. For a stable graph $\Gamma$ without legs, with vertices $v$ of genus $g_v$ and valence $n_v$, and a symmetric bivector series $E$, the contraction $\mathrm{Cont}_\Gamma[E,q;\Omega]$ is $|\Aut\Gamma|^{-1}$ times the contraction of the vertex tensors $\dd^{n_v}\overline F^\Omega_{g_v}(q)$, one slot for each half-edge, with one copy of $E(\psi,\psi')$ for each edge. The sum $\sum_\Gamma\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$ over the leg-free stable graphs of genus $g$ is the \emph{graph sum of genus $g$}; $R.\Omega$ denotes the unit-preserving action of \cite[Defs.~2.2, 2.5, 2.13]{PPZ15}.
+\end{defn}
+
+By the formula \cite[(8)]{PPZ15} for the pull-back of $\psi$ classes, for $g\geq2$, $\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$ is the term of $\Gamma$ in $\int_{\overline{\mathcal M}_g}(R.\Omega)_{g,0}$ \Lr{lem:set-pushins}.
+
+\begin{thm}[The reconstruction (T); quoted; {\Lr{thm:set-GT}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:set-GT}
+The input (T) of \cref{sec:int-inputs} holds: the classes $\Omega_{g,n}$ of \cref{def:set-fq} with $\Qn=\re^{T(q)}$ are the cohomological field theory at the point $t=T(q)H$ with $\Qn=1$, and it equals $R.\TFT$, with $\TFT$ of \cref{def:set-frob} and the symplectic $R$-matrix $R=1+O(z)$ of \cref{def:set-rows}, with coefficients in $\End(\bbH)\otimes\bbQ(\zeta)\fps q$.
+In particular, for $g\geq2$, $F_g=\sum_\Gamma\mathrm{Cont}_\Gamma[E_R,q_R;\TFT]$ as power series in $q$, the sum running over the leg-free stable graphs of genus $g$.
+\end{thm}
+
+%-------------------------------------------------------------------------------
+\subsection{Conifold frames and the conifold expansion}
+\label{sec:set-frames}
+
+In the variable $u$, $\PFfour=u\Dq^4-(1-u)\bigl(2\Dq^3+\frac75\Dq^2+\frac25\Dq+\frac{24}{625}\bigr)$ with $\Dq=-(1-u)\,\dd/\dd u$.
+
+\begin{lem}[The Frobenius basis at the conifold point; {\Lr{lem:set-frobbasis}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-frobbasis}
+$\PFfour$ maps $\bbQ\fps u$ into itself, its local exponents at $u=0$ are $0,1,1,2$, and a power-series solution is determined by its coefficients of $u^0,u^1,u^2$; $f_k$ ($k=0,1,2$) denotes the solution with $f_k=u^k+O(u^3)$. Let $\ell$ be a formal $\log u$. Up to a non-zero factor, the \emph{vanishing period} $\varpi_1:=f_1+\frac7{10}f_2=u+O(u^2)$ is the only power-series solution $g$ for which a solution $g\ell+h$, $h\in\bbQ\fps u$, exists.
+\end{lem}
+
+\begin{defn}[Conifold frames; {\Lr{def:set-frames}}]
+\label{def:set-frames}
+A \emph{conifold frame} is given by $(\alpha,\beta)\in\bbQ^2$: $\varpi_0:=f_0+\alpha\varpi_1+\beta f_2$ and $\tc:=\varpi_1/\varpi_0$. Then $\varpi_0=1+\alpha u+O(u^2)$ and $\tc=u+(\frac7{10}-\alpha)u^2+O(u^3)$, so $\varpi_0(0)=1$, $\tc'(0)=1$ and $\Dq\tc(0)=-1$.
+\end{defn}
+
+\begin{defn}[The differential ring of the periods and the conifold expansion; {\Lr{def:set-confexp}}, abridged]
+\label{def:set-confexp}
+Let
+\[
+\Nring:=\bbQ[L^{\pm1},\logq,c_0,c_1,c_2,c_3,i_0,i_1,i_2][c_0^{-1},\mathsf W^{-1}],\qquad\mathsf W:=c_0^2+c_0i_1-c_1i_0,
+\]
+with the derivation $\Dq$ fixed on the generators by $\Dq L:=(L^6-L)/5$, $\Dq\logq:=1$, $\Dq c_j:=c_{j+1}$, $\Dq i_j:=i_{j+1}$, and by the relations $\PFfour c_0=0$ (with $u=L^{-5}$) and $\Conc(c_0,I_1)=0$, which determine $\Dq c_3$ and $\Dq i_2$; here $I_1:=c_0\logq+i_0$ and $\Conc(f,g):=\sum_{k=1}^4\sum_{j=0}^{k-1}(-1)^j\,\Dq^j(A_kg)\,\Dq^{k-1-j}f$ is the concomitant of $\PFfour=\sum_kA_k\Dq^k$, for which $g\,\PFfour f-f\,\PFfour g=\Dq\,\Conc(f,g)$ \Lr{def:gau-conc,lem:gau-adj,lem:gau-conc}. Put $C_0:=c_0$, $T:=I_1/C_0$ and $C_1:=\Dq T=\mathsf W/c_0^2$. The \emph{evaluation} $\ev\colon\Nring\to\bbQ\fps q[\logq]$, $c_j\mapsto\Dq^jC_0$, $i_j\mapsto\Dq^j\tilde I_1$, $\logq\mapsto\logq$, $L\mapsto L$, is a homomorphism of differential rings. The \emph{conifold expansion} in the frame $(\alpha,\beta)$ is the ring homomorphism $\Cexp_{\alpha,\beta}\colon\Nring\to\bbQ\lser s$ with
+\[
+c_j\mapsto\Dq^j\varpi_0,\qquad i_j\mapsto\Dq^j\varpi_1-j\,\Dq^{j-1}\varpi_0+\Xi\,\Dq^j\varpi_0,\qquad\logq\mapsto\log(1-u)=-\Xi,\qquad L\mapsto s^{-1},
+\]
+where $\Xi:=-\log(1-u)=\sum_{n\geq1}u^n/n$. It commutes with $\Dq$ and maps $C_0$, $I_1$, $T$, $C_1$ to $\varpi_0$, $\varpi_1$, $\tc$, $\Dq\tc$ \Lr{lem:gau-confexp}; its $\bbQ(\zeta)$-linear extension is denoted by the same letter. An element of $\Nring\otimes\bbQ(\zeta)$, or a series over it, is \emph{regular at the conifold point} if its conifold expansion lies in $\bbQ\fps u$, coefficientwise.
+\end{defn}
+
+The conifold expansion substitutes the periods of a conifold frame for $C_0$ and $I_1$ in a representative in the ring $\Nring$; it is a formal change of frame, and no analytic continuation is involved. Whether $\ev$ is injective is neither needed nor proved, and identities between power series in $q$, such as the symplecticity of $R$, are not transferred to the conifold expansion.
+
+\begin{defn}[The natural variable and the canonical coordinates; {\Lr{def:set-tau,lem:set-canon}}]
+\label{def:set-tau}
+Put
+\[
+\tau(u):=\frac1{{}_2F_1(1,\frac45;\frac95;u)}=\Bigl(\sum_{n\geq0}\frac{4u^n}{5n+4}\Bigr)^{-1}\in1+u\bbQ\fps u,\qquad v(u):=u\,\tau(u)^{-5/4}\in u+u^2\bbQ\fps u,
+\]
+and $\varsigma:=v^{1/5}=s\,\tau^{-1/4}$, so that $z/\varsigma^4=\tau(u)\zh$. In $\bbQ(\zeta)\lser s$ the solutions $y$ of $\Dq y=\zeta^iL$ are the series $y=c-\frac54\zeta^iu^{4/5}/\tau(u)$, $c\in\bbQ(\zeta)$; so in the conifold chart the canonical coordinates are $u_i=u_i^{\mathrm c}-\frac54\zeta^iu^{4/5}/\tau(u)$, with constants $u_i^{\mathrm c}$, and $\tau(u)\,\zh=-\frac54\,\zeta^iz/(u_i-u_i^{\mathrm c})$.
+\label{lem:set-canon}
+\end{defn}
+
+
+
+\input{summary/s02_setup_2}

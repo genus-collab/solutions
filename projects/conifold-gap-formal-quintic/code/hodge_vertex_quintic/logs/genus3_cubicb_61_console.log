@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicb: circulant class, the locus c_1(0) = 0, m_1 = 0, p = 2^61-1
+PASS on {c_1(0) = 0, m_1 = 0, L2}: the cubics 11, 12, 18, 19, 20, 32 and the quadrics 6, 17 vanish identically (all 15 coordinates random)
+PASS on the locus c_4 and c_10 do not depend on the orders >= 4
+PASS on the locus c_9, q_3, q_8 depend on the orders <= 4 only
+   tau-degrees: deg G = 2, deg H = 3
+PASS tau-degrees resolved by the node counts (14, 30)
+   U(b) = Res_tau(G, H): interpolated on 120 nodes in 0 s: degree 51
+PASS b-degree of U resolved (degree < nodes - 5)
+   U has 6 distinct roots in F_p
+   squarefree part of U has degree 18
+   root b = [26949711098162226 mod p]: a4 !=0, G(b,.) deg 2, H(b,.) deg 3, gcd degree 1
+      tau = [2048921261607339263 mod p]: full point reconstructed (2 free high directions); non-zero residuals: []
+   root b = [194643636704778391 mod p]: a4 =0, G(b,.) zero, H(b,.) zero, gcd degree None
+   root b = 1*zeta^2: a4 !=0, G(b,.) deg 2, H(b,.) zero, gcd degree None
+   root b = [1438665011064155384 mod p]: a4 !=0, G(b,.) deg 1, H(b,.) deg 2, gcd degree 0
+   root b = -1*zeta^2: a4 !=0, G(b,.) zero, H(b,.) deg 3, gcd degree None
+   root b = [2111199372508915560 mod p]: a4 =0, G(b,.) zero, H(b,.) zero, gcd degree None
+PASS genuine solutions with c_1(0) = 0, c_1 != 0 found over F_p (all 4 linear rows, 5 quadrics, 9 cubics vanish): 1
+   SOLUTION 0 (normalised c1_1 = 1): ['c1_0: 0', 'c1_1: 1', 'c1_2: [26949711098162226 mod p]', 'c2_1: [2048921261607339263 mod p]', 'c2_2: [1680114837684171679 mod p]', 'c3_0: [809534973968046337 mod p]', 'c3_1: [2278989060326897475 mod p]', 'c3_2: [446154145177850050 mod p]', 'c4_1: [2301414177458018914 mod p]', 'c4_2: [77864787478062686 mod p]', 'c5_0: [1031937834953542369 mod p]', 'c5_1: [546701283361536799 mod p]', 'c5_2: [1942414773484159921 mod p]', 'c6_1: 0', 'c6_2: 0']
+GENUS3_CUBICB done; failures: []

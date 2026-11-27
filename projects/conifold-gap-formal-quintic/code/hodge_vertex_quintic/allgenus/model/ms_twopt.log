@@ -1,0 +1,62 @@
+t0(H0) t0(H2)          str=0          h1:e=-1,H=0  h2:e=-3,H=0  h3:e=-5,H=0 
+t0(H1) t0(H1)          str=0          h1:e=-2,H=0  h2:e=-4,H=0  h3:e=-6,H=0 
+t0(H3) t0(H4)          str=0          h1:e=-1,H=0  h2:e=-3,H=0  h3:e=-5,H=0 
+t0(H0) t1(H1)          str=1          h1:e=-1,H=1  h2:e=-3,H=1  h3:e=-5,H=1 
+t1(H0) t0(H1)          str=0          h1:e=-1,H=0  h2:e=-3,H=0  h3:e=-5,H=0 
+t0(H2) t1(H4)          str=0          h1:e=0,H=0  h2:e=-2,H=0  h3:e=-4,H=0 
+t1(H2) t0(H4)          str=0          h1:e=0,H=0  h2:e=-2,H=0  h3:e=-4,H=0 
+t0(H3) t1(H3)          str=0          h1:e=0,H=-1/2  h2:e=-2,H=0  h3:e=-4,H=0 
+t0(H0) t2(H0)          str=-1         h1:e=0,H=-5/2  h2:e=-2,H=-1  h3:e=-4,H=-1 
+t1(H0) t1(H0)          str=0          h1:e=0,H=-3/2  h2:e=-2,H=0  h3:e=-4,H=0 
+t0(H1) t2(H4)          str=0          h1:e=0,H=2  h2:e=-2,H=0  h3:e=-4,H=0 
+t1(H1) t1(H4)          str=0          h1:e=0,H=5/2  h2:e=-2,H=1/2  h3:e=-4,H=1/2  [!=str]
+t2(H1) t0(H4)          str=0          h1:e=0,H=5/2  h2:e=-2,H=-1/2  h3:e=-4,H=-1/2  [!=str]
+t0(H2) t2(H3)          str=0          h1:e=1,H=5/2  h2:e=-1,H=0  h3:e=-3,H=0 
+t1(H2) t1(H3)          str=0          h1:e=1,H=5/2  h2:e=-1,H=0  h3:e=-3,H=0 
+t2(H2) t0(H3)          str=0          h1:e=1,H=5/2  h2:e=-1,H=0  h3:e=-3,H=0 
+t0(H0) t3(H4)          str=-1/2       h2:e=-1,H=-1/2  h3:e=-3,H=-1/2 
+t1(H0) t2(H4)          str=0          h2:e=-1,H=0  h3:e=-3,H=0 
+t2(H0) t1(H4)          str=0          h2:e=-1,H=-1/2  h3:e=-3,H=-1/2  [!=str]
+t3(H0) t0(H4)          str=0          h2:e=-1,H=1/2  h3:e=-3,H=1/2  [!=str]
+t0(H1) t3(H3)          str=0          h2:e=-1,H=0  h3:e=-3,H=0 
+t1(H1) t2(H3)          str=0          h2:e=-1,H=-23/12  h3:e=-3,H=-13/48  [h-DEPENDENT] [!=str]
+t2(H1) t1(H3)          str=0          h2:e=-1,H=-11/6  h3:e=-3,H=-31/60  [h-DEPENDENT] [!=str]
+t3(H1) t0(H3)          str=0          h2:e=-1,H=-3/2  h3:e=-3,H=-11/60  [h-DEPENDENT] [!=str]
+t0(H2) t3(H2)          str=0          h2:e=0,H=0  h3:e=-2,H=0 
+t1(H2) t2(H2)          str=0          h2:e=0,H=0  h3:e=-2,H=0 
+t0(H0) t4(H3)          str=-1/6       h2:e=0,H=-35/48  h3:e=-2,H=-1/6 
+t1(H0) t3(H3)          str=0          h2:e=0,H=-27/16  h3:e=-2,H=0 
+t2(H0) t2(H3)          str=0          h2:e=0,H=-55/48  h3:e=-2,H=13/48  [!=str]
+t3(H0) t1(H3)          str=0          h2:e=0,H=-35/48  h3:e=-2,H=31/60  [!=str]
+t4(H0) t0(H3)          str=0          h2:e=0,H=5/16  h3:e=-2,H=11/60  [!=str]
+t0(H1) t4(H2)          str=0          h2:e=0,H=2  h3:e=-2,H=0 
+t1(H1) t3(H2)          str=0          h2:e=0,H=95/24  h3:e=-2,H=-1/24  [!=str]
+t2(H1) t2(H2)          str=0          h2:e=0,H=215/24  h3:e=-2,H=-19/48  [!=str]
+t3(H1) t1(H2)          str=0          h2:e=0,H=55/8  h3:e=-2,H=-23/48  [!=str]
+t4(H1) t0(H2)          str=0          h2:e=0,H=95/24  h3:e=-2,H=-19/48  [!=str]
+t0(H4) t4(H4)          str=0          h2:e=0,H=-5/4  h3:e=-2,H=1/4  [!=str]
+t1(H4) t3(H4)          str=0          h2:e=0,H=-15/4  h3:e=-2,H=-1/4  [!=str]
+t2(H4) t2(H4)          str=0          h2:e=0,H=-11/2  h3:e=-2,H=0 
+t0(H0) t5(H2)          str=1/24       h2:e=1,H=125/48  h3:e=-1,H=1/24 
+t1(H0) t4(H2)          str=0          h2:e=1,H=123/16  h3:e=-1,H=0 
+t2(H0) t3(H2)          str=0          h2:e=1,H=725/48  h3:e=-1,H=1/24  [!=str]
+t3(H0) t2(H2)          str=0          h2:e=1,H=725/48  h3:e=-1,H=19/48  [!=str]
+t4(H0) t1(H2)          str=0          h2:e=1,H=125/16  h3:e=-1,H=23/48  [!=str]
+t5(H0) t0(H2)          str=0          h2:e=1,H=125/48  h3:e=-1,H=19/48  [!=str]
+t0(H1) t5(H1)          str=0          h2:e=0,H=-247/96  h3:e=-2,H=55/192  [!=str]
+t1(H1) t4(H1)          str=0          h2:e=0,H=-125/16  h3:e=-2,H=253/240  [!=str]
+t2(H1) t3(H1)          str=0          h2:e=0,H=-725/48  h3:e=-2,H=15/8  [!=str]
+t0(H3) t5(H4)          str=0          h2:e=1,H=-125/48  h3:e=-1,H=11/120  [!=str]
+t1(H3) t4(H4)          str=0          h2:e=1,H=-125/16  h3:e=-1,H=31/120  [!=str]
+t2(H3) t3(H4)          str=0          h2:e=1,H=-725/48  h3:e=-1,H=13/96  [!=str]
+t3(H3) t2(H4)          str=0          h2:e=1,H=-713/48  h3:e=-1,H=0 
+t4(H3) t1(H4)          str=0          h2:e=1,H=-125/16  h3:e=-1,H=-1/12  [!=str]
+t5(H3) t0(H4)          str=0          h2:e=1,H=-125/48  h3:e=-1,H=1/12  [!=str]
+t0(H0) t6(H1)          str=1/96       h3:e=-1,H=-53/192  [!=str]
+t1(H0) t5(H1)          str=0          h3:e=-1,H=-275/192  [!=str]
+t2(H0) t4(H1)          str=0          h3:e=-1,H=-43/12  [!=str]
+t3(H0) t3(H1)          str=0          h3:e=-1,H=-521/96  [!=str]
+t4(H0) t2(H1)          str=0          h3:e=-1,H=-203/48  [!=str]
+t5(H0) t1(H1)          str=0          h3:e=-1,H=-283/128  [!=str]
+t6(H0) t0(H1)          str=0          h3:e=-1,H=-55/192  [!=str]
+singular (pair, genus) instances: 90; pairs whose Hess_h differs between singular genera: 3; singular instances != Hess_str: 42

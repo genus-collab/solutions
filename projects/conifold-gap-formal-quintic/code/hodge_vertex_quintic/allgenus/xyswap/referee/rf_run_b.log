@@ -1,0 +1,62 @@
+s = 1/2 done (0.9s)
+s = 1/3 done (1.7s)
+s = 1/4 done (2.7s)
+s = 1/5 done (3.7s)
+s = 5/7 done (4.8s)
+s = 3/4 done (5.8s)
+s = 2/5 done (6.7s)
+s = 3/5 done (7.8s)
+s = 1/6 done (8.7s)
+s = 5/6 done (9.7s)
+s = 4/7 done (10.7s)
+s = 3/7 done (11.8s)
+--- legs in L (polynomials in z): W = weight; ML1 predicts a polynomial in S = s^2 of degree <= floor(W/2), 0 if W < 0
+  g1 z^1            W= -4  all values zero: True
+  g1 z^2            W= -3  all values zero: True
+  g1 z^3            W= -2  all values zero: True
+  g1 z^4            W= -1  all values zero: True
+  g1 z^5            W=  0  polynomial of degree <= 0 in S: True;  value at S=0 -5/32;  = TR of the limiting curve x0: True
+  g1 z^6            W=  1  polynomial of degree <= 0 in S: True;  value at S=0 -35/48;  = TR of the limiting curve x0: True
+  g1 z^7            W=  2  polynomial of degree <= 1 in S: True;  value at S=0 -343/108;  = TR of the limiting curve x0: True
+  g1 z^8            W=  3  polynomial of degree <= 1 in S: True;  value at S=0 -298/27;  = TR of the limiting curve x0: True
+  g1 z^9            W=  4  polynomial of degree <= 2 in S: True;  value at S=0 -30737/864;  = TR of the limiting curve x0: True
+  g1 z^10           W=  5  polynomial of degree <= 2 in S: True;  value at S=0 -1244845/11664;  = TR of the limiting curve x0: True
+  g1 z^12           W=  7  polynomial of degree <= 3 in S: True;  value at S=0 -7386379/8748;  = TR of the limiting curve x0: True
+  g1 z^15           W= 10  polynomial of degree <= 5 in S: True;  value at S=0 -7152377365/472392;  = TR of the limiting curve x0: True
+  g2 z^1            W=-14  all values zero: True
+  g2 z^2            W=-13  all values zero: True
+  g2 z^3            W=-12  all values zero: True
+  g2 z^4            W=-11  all values zero: True
+  g2 z^5            W=-10  all values zero: True
+  g2 z^6            W= -9  all values zero: True
+  g2 z^7            W= -8  all values zero: True
+  g2 z^8            W= -7  all values zero: True
+  g2 z^9            W= -6  all values zero: True
+  g2 z^10           W= -5  all values zero: True
+  g2 z^12           W= -3  all values zero: True
+  g2 z^15           W=  0  polynomial of degree <= 0 in S: True;  value at S=0 2079/8192;  = TR of the limiting curve x0: True
+  (1,2) z^1,z^4        W= -5  all values zero: True
+  (1,2) z^1,z^9        W=  0  polynomial of degree <= 0 in S: True;  value at S=0 45/128;  = TR of the limiting curve x0: True
+  (1,2) z^2,z^3        W= -5  all values zero: True
+  (1,2) z^5,z^5        W=  0  polynomial of degree <= 0 in S: True;  value at S=0 25/128;  = TR of the limiting curve x0: True
+  (1,2) z^5,z^10       W=  5  polynomial of degree <= 2 in S: True;  value at S=0 258475/2916;  = TR of the limiting curve x0: True
+  (1,2) z^3,z^8        W=  1  polynomial of degree <= 0 in S: True;  value at S=0 -49/48;  = TR of the limiting curve x0: True
+  (1,2) z^4,z^6        W=  0  polynomial of degree <= 0 in S: True;  value at S=0 0;  = TR of the limiting curve x0: True
+  (1,2) z^1,z^14       W=  5  polynomial of degree <= 2 in S: True;  value at S=0 6336239/5832;  = TR of the limiting curve x0: True
+  (0,3) z^1,z^1,z^3    W=  0  polynomial of degree <= 0 in S: True;  value at S=0 -3/4;  = TR of the limiting curve x0: True
+  (0,3) z^1,z^2,z^2    W=  0  polynomial of degree <= 0 in S: True;  value at S=0 -1;  = TR of the limiting curve x0: True
+  (0,3) z^1,z^1,z^8    W=  5  polynomial of degree <= 2 in S: True;  value at S=0 -23030/243;  = TR of the limiting curve x0: True
+  (0,3) z^2,z^3,z^5    W=  5  polynomial of degree <= 2 in S: True;  value at S=0 -57575/162;  = TR of the limiting curve x0: True
+--- controls (bad legs / function of x): S^k * value for the smallest k making it a polynomial of degree <= 12
+  g1 -log z                 S^1 * value is polynomial (deg <= 8); value at S=0 of S^k*value: -1/64  => pole order 1 in S
+  g1 z^-5                   S^2 * value is polynomial (deg <= 8); value at S=0 of S^k*value: -45/256  => pole order 2 in S
+  g1 z^-1                   identically zero on the path
+  g1 x^2 (function of x)    identically zero on the path
+  g2 -log z                 S^3 * value is polynomial (deg <= 8); value at S=0 of S^k*value: 9/163840  => pole order 3 in S
+  g2 z^-5                   S^4 * value is polynomial (deg <= 8); value at S=0 of S^k*value: 81/8192  => pole order 4 in S
+  g2 z^-1                   identically zero on the path
+  g2 x^2 (function of x)    identically zero on the path
+  (1,2) z^5,-log z (mixed)     identically zero on the path
+  (1,2) z^5,z^-5 (mixed)       S^2 * value is polynomial (deg <= 8); value at S=0 of S^k*value: -675/256  => pole order 2 in S
+done 12.1s
+exit 0

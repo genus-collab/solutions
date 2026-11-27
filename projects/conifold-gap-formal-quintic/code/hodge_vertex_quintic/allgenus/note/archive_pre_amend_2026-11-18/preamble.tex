@@ -1,0 +1,123 @@
+% The preamble: packages, page layout, draft notes, theorem environments, cross-reference names and generic letters.
+% Loaded by the main file before the notation. Only the packages loaded here are available to the sections.
+
+\usepackage[margin=0.9in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%-------------------------------------------------------------------------------
+% Packages
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amssymb}
+\usepackage[mathscr]{eucal}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\definecolor{highlight}{HTML}{3465a4}
+\usepackage[hypertexnames=false, hyperfootnotes=false, colorlinks=true, linktocpage=true, allcolors=highlight, bookmarksdepth=2]{hyperref}
+\usepackage{cleveref}
+\usepackage{url}
+\usepackage{array}
+
+%-------------------------------------------------------------------------------
+% Typefaces and layout
+\usepackage{mathpazo}
+\usepackage{courier}
+\usepackage{microtype}
+\linespread{1.06}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{3}
+% enumitem is not assumed: first-level enumerate is labelled (i), (ii), ...; for named parts use
+% description or \item[(a)] with an explicit label.
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\renewcommand{\theenumi}{(\roman{enumi})}
+\numberwithin{equation}{section}
+
+%-------------------------------------------------------------------------------
+% Draft notes: visible, coloured, usable in text and in math. Set \showdraftnotesfalse to suppress them.
+\newif\ifshowdraftnotes
+\showdraftnotestrue
+\newcommand{\draftnotetext}[1]{\textcolor{red}{\footnotesize[\textbf{Draft note:} #1]}}
+\newcommand{\draftnote}[1]{\ifshowdraftnotes\ifmmode\text{\draftnotetext{#1}}\else\draftnotetext{#1}\fi\fi}
+
+%-------------------------------------------------------------------------------
+% Theorem environments
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+\newtheorem{example}[thm]{Example}
+\newtheorem{conv}[thm]{Convention}
+
+\crefname{equation}{Eq.}{Eqs.}
+\crefname{thm}{Theorem}{Theorems}
+\crefname{lem}{Lemma}{Lemmas}
+\crefname{prop}{Proposition}{Propositions}
+\crefname{cor}{Corollary}{Corollaries}
+\crefname{defn}{Definition}{Definitions}
+\crefname{rmk}{Remark}{Remarks}
+\crefname{notation}{Notation}{Notations}
+\crefname{example}{Example}{Examples}
+\crefname{conv}{Convention}{Conventions}
+\crefname{section}{Section}{Sections}
+\crefname{subsection}{Section}{Sections}
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{table}{Table}{Tables}
+
+%-------------------------------------------------------------------------------
+% Generic letters
+\newcommand{\bbA}{\mathbb{A}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbD}{\mathbb{D}}
+\newcommand{\bbE}{\mathbb{E}}
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbK}{\mathbb{K}}
+\newcommand{\bbL}{\mathbb{L}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbT}{\mathbb{T}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\mgp}[1]{\mathsf{#1}}
+
+%-------------------------------------------------------------------------------
+% General
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ri}{\mathrm{i}}
+\newcommand{\re}{\mathrm{e}}
+\newcommand{\de}{\partial}
+% \llbracket: from a font package if available, otherwise a substitute (stmaryrd is not assumed)
+\providecommand{\llbracket}{[\![}
+\providecommand{\rrbracket}{]\!]}
+\newcommand{\fps}[1]{\llbracket #1 \rrbracket}
+\newcommand{\lser}[1]{(\!(#1)\!)}
+\newcommand{\Frac}{\mathrm{Frac}}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator*{\Res}{Res}
+\DeclareMathOperator{\val}{val}
+\DeclareMathOperator{\ev}{ev}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\ord}{ord}
+\newcommand{\tensor}{\otimes}
+\newcommand{\coef}[1]{[#1]}                    % coefficient extraction, e.g. \coef{z^n}

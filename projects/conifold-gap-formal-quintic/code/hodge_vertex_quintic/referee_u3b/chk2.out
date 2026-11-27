@@ -1,0 +1,28 @@
+============================== prime 61
+pure-high point: J3 rows involve c4: True  residuals: []
+pure-high (circ)         rank 7; P1 stored: rhs non-zero rows ['J3(2)', 'J3(5)', 'gradq_3', 'gradq_6', 'gradq_7', 'gradq_8', 'gradq_17']; lambda.rhs = []; three-edge [u^0..u^3] all zero: True; one-edge [u^0,u^1] zero: True; two-edge [u^0..u^2] zero: True; script n2_rank 7; script failed list []
+A+2B (circpi)            rank 6; left-kernel support ['gradq_17']; P1 stored: rhs non-zero rows ['J3(2)', 'J3(5)', 'gradq_3', 'gradq_6', 'gradq_7', 'gradq_8']; lambda.rhs = [0]; three-edge [u^0..u^3] all zero: True; one-edge [u^0,u^1] zero: True; two-edge [u^0..u^2] zero: True; script n2_rank 6; script failed list []
+genuine c1_0=0 (circb)   rank 6; left-kernel support ['gradq_17']; P1 stored: rhs non-zero rows ['J3(2)', 'J3(5)', 'gradq_3', 'gradq_6', 'gradq_7', 'gradq_8']; lambda.rhs = [0]; three-edge [u^0..u^3] all zero: True; one-edge [u^0,u^1] zero: True; two-edge [u^0..u^2] zero: True; script n2_rank 6; script failed list []
+Delta* (circstar)        rank 6; left-kernel support ['gradq_17']; P1 not stored yet (keys: ['n1'])
+B of Pi                  rank 5; left-kernel support ['gradq_6']; left-kernel support ['gradq_17']
+random point of Pi       rank 6; left-kernel support ['gradq_17']
+extra[0]                 rank 7
+extra[1]                 rank 7
+extra[2]                 rank 6; left-kernel support ['gradq_17']
+extra[3]                 rank 6; left-kernel support ['gradq_17']
+   Delta*: left kernel has zero J3 components: True ; proportional at Delta and 2 Delta: True
+   genuine: left kernel has zero J3 components: True ; proportional at Delta and 2 Delta: True
+============================== prime 89
+pure-high point: J3 rows involve c4: True  residuals: []
+pure-high (circ)         rank 7; P1 stored: rhs non-zero rows ['J3(2)', 'J3(5)', 'gradq_3', 'gradq_6', 'gradq_7', 'gradq_8', 'gradq_17']; lambda.rhs = []; three-edge [u^0..u^3] all zero: True; one-edge [u^0,u^1] zero: True; two-edge [u^0..u^2] zero: True; script n2_rank 7; script failed list []
+A+2B (circpi)            rank 6; left-kernel support ['gradq_17']; P1 stored: rhs non-zero rows ['J3(2)', 'J3(5)', 'gradq_3', 'gradq_6', 'gradq_7', 'gradq_8']; lambda.rhs = [0]; three-edge [u^0..u^3] all zero: True; one-edge [u^0,u^1] zero: True; two-edge [u^0..u^2] zero: True; script n2_rank 6; script failed list []
+genuine c1_0=0 (circb)   rank 6; left-kernel support ['gradq_17']; P1 stored: rhs non-zero rows ['J3(2)', 'J3(5)', 'gradq_3', 'gradq_6', 'gradq_7', 'gradq_8']; lambda.rhs = [0]; three-edge [u^0..u^3] all zero: True; one-edge [u^0,u^1] zero: True; two-edge [u^0..u^2] zero: True; script n2_rank 6; script failed list []
+Delta* (circstar)        rank 6; left-kernel support ['gradq_17']; P1 not stored yet (keys: ['n1'])
+B of Pi                  rank 5; left-kernel support ['gradq_6']; left-kernel support ['gradq_17']
+random point of Pi       rank 6; left-kernel support ['gradq_17']
+extra[0]                 rank 7
+extra[1]                 rank 7
+extra[2]                 rank 6; left-kernel support ['gradq_17']
+extra[3]                 rank 6; left-kernel support ['gradq_17']
+   Delta*: left kernel has zero J3 components: True ; proportional at Delta and 2 Delta: True
+   genuine: left kernel has zero J3 components: True ; proportional at Delta and 2 Delta: True

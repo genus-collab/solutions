@@ -1,0 +1,20 @@
+====================================================================================================
+g5_setup mode b, prime 2^89-1, python 3.14.6
+   genus-5 setup 10.6 s; K = 8, KZ = 12, 4555 inner graphs, 78 edge keys (a, b), leaves e = 2..13; peak memory 51 MB
+PASS genus 5: Split.__init__ completed (asserts: symbol valuations, hatted-row purity H.val_ok, H.min_prec >= 8, M_0 M_0^-1 = 1 mod zhat^13)
+PASS genus 5: [u^0] E_R(a, b) = Eh_0(a, b) for all (a, b) with a + b <= 11 (frozen_ok): True
+   u-valuation of E_out(a, b) (min over colours): histogram [(1, 78)]
+   u-valuation of the entries E_out(a, b)[i][j]: histogram [(1, 1950)]
+   u-valuation of the leaves T_R(e)[j]: {2: [0], 3: [0], 4: [0], 5: [0], 6: [0], 7: [0], 8: [0], 9: [0], 10: [0], 11: [0], 12: [0], 13: [0]}
+   non-zero entries of E_M: 1950 of 1950
+   vertex types (g_v, valence) occurring: 29
+   all vertex tables: 0.8 s; slowest (s, g_v, valence, sorted decorations): [(0.2, 5, 0, 1), (0.1, 3, 4, 94), (0.1, 3, 3, 53), (0.1, 2, 6, 90), (0.0, 2, 5, 60), (0.0, 1, 8, 67), (0.0, 3, 2, 25), (0.0, 4, 2, 42)]
+   decorations per vertex (ordered half-edge exponents), by (g_v, valence): [((0, 3), 1), ((0, 4), 5), ((0, 5), 21), ((0, 6), 84), ((0, 7), 330), ((0, 8), 1287), ((0, 9), 5005), ((0, 10), 19448), ((1, 1), 2), ((1, 2), 6), ((1, 3), 20), ((1, 4), 70), ((1, 5), 252), ((1, 6), 924), ((1, 7), 3432), ((1, 8), 12870), ((2, 1), 5), ((2, 2), 21), ((2, 3), 84), ((2, 4), 330), ((2, 5), 1287), ((2, 6), 5005), ((3, 1), 8), ((3, 2), 45), ((3, 3), 220), ((3, 4), 1001), ((4, 1), 11), ((4, 2), 78), ((5, 0), 1)]
+   peak memory after the vertex tables: 51 MB
+G5_SETUP ALL CHECKS PASSED
+====================================================================================================
+g5_setup mode a, prime 2^89-1, python 3.14.6
+   genus-4 setup 6.3 s (fast graphs)
+PASS genus 4: the fast list is a relabelling of the original 379 graphs
+PASS genus 4, 2^89-1, natural M: Split.graph on the fast graph list = stored per-inner-graph tables for the 36 inner graphs with stored time < 1.0 s (11 s)
+G5_SETUP ALL CHECKS PASSED

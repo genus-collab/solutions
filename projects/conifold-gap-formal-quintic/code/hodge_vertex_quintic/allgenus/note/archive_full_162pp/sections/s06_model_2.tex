@@ -1,0 +1,57 @@
+% Section 6, part 2.
+Throughout \cref{lem:mod-laplace,lem:mod-scale,prop:mod-Rtr}, $\kappa\neq 0$ is a rational number and $x_\kappa:=\kappa\Wv$; the curve $(\bbP^1,x_\kappa,y=p)$ has the branch points $\varsigma_j$ of \cref{def:mod-curve}. The cases used are $\kappa=4$ and $\kappa=1$. The letter $\vartheta$ denotes the Laplace variable of \cite[(2-31), (2-32)]{Dunin-Barkowski:2015caa} (called $\zeta$ there).
+
+\begin{lem}[Formal Laplace series]
+\label{lem:mod-laplace}
+Let $c$ be a branch point of $x_\kappa$ and $w$ a local coordinate at $c$ with $x_\kappa=x_\kappa(c)-w^2/2$. For a $1$-form $\omega=\sum_{m\geq -M}a_mw^m\,\dd w$ meromorphic at $c$ with $\Res_c\omega=0$ put
+\begin{equation}
+\label{eq:mod-laplace}
+\begin{gathered}
+\mathsf L_c[\omega](\vartheta):=\sum_ma_m\,\mathsf G_m(\vartheta),\\
+\mathsf G_{2n}:=(2n-1)!!\,\vartheta^{-n}\ (n\geq 0),\qquad \mathsf G_{-2n}:=\frac{(-1)^n\vartheta^n}{(2n-1)!!}\ (n\geq 1),\qquad \mathsf G_m:=0\ (m\text{ odd}),
+\end{gathered}
+\end{equation}
+a formal Laurent series in $\vartheta^{-1}$ (the coefficient $a_{-1}$ vanishes). Then:
+\begin{enumerate}
+\item if $F$ is meromorphic at $c$ and $F\,\dd x_\kappa$ has zero residue at $c$, then $\mathsf L_c[\dd F]=-\vartheta\,\mathsf L_c[F\,\dd x_\kappa]$;
+\item $w$ is determined by $x_\kappa$ up to $w\mapsto -w$, which multiplies $\mathsf L_c$ by $-1$;
+\item let $k\in\bbC^\times$ and $v=k^5v'$, so that $x_{\kappa,v}(kp')=k^4x_{\kappa,v'}(p')$ and $\varsigma_j(v)=k\varsigma_j(v')$, and normalise the coordinates $w_j$ at $\varsigma_j$ by $\frac{\dd w_j}{\dd p}(\varsigma_j)=\sqrt{-5\kappa}\,\varsigma_j$ with one square root for all $v$; then $w_j(v)(kp')=k^2w_j(v')(p')$ and $\mathsf L_{\varsigma_j(v)}[p^m\dd p](\vartheta)=k^{m-1}\,\mathsf L_{\varsigma_j(v')}[p'^m\dd p'](k^4\vartheta)$;
+\item if $\omega$ is holomorphic at $c$, then $\vartheta\frac{\dd}{\dd\vartheta}\mathsf L_c[\omega]=\vartheta\,\mathsf L_c\big[(x_\kappa-x_\kappa(c))\,\omega\big]+\frac12\mathsf L_c[\omega]$.
+\end{enumerate}
+\end{lem}
+
+The integrals $\int\omega\,e^{(x_\kappa-x_\kappa(c))\vartheta}$ in \cite[(2-31), (2-32)]{Dunin-Barkowski:2015caa} are read as $\sqrt{2\pi/\vartheta}\,\mathsf L_c[\omega]$. For the diagonal entries of (2-31) the integrand has the polar part $\dd w/w^2$, and $\mathsf G_{-2}=-\vartheta$ produces exactly the entry $1$ of $R^{-1}=1+O(\vartheta^{-1})$; this is the prescription of \cite[\S3.1, \S3.5]{DuninBarkowski:2012bw} (the singular part $\dd w\,\dd w'/(w-w')^2$ gives the Kronecker delta, the regular part is transformed). (For orientation only: $\sqrt{2\pi/\vartheta}\,\mathsf L_c[\omega]$ is the asymptotic expansion, as $\vartheta\to+\infty$, of $\int\omega\,e^{-\vartheta w^2/2}$ along the real $w$-line deformed near $0$, by Watson's lemma; this is not used.)
+
+\begin{proof}
+All four statements are $\bbC$-linear in $\omega$ (resp.\ $F$), so it suffices to prove them for monomials. (i) For $F=w^m$, $m\neq -2$: $\dd F=mw^{m-1}\dd w$ and $F\,\dd x_\kappa=-w^{m+1}\dd w$, so the claim is $m\mathsf G_{m-1}=\vartheta\mathsf G_{m+1}$. For $m=2n+1\geq 1$ both sides are $(2n+1)!!\,\vartheta^{-n}$; for $m=-(2n+1)\leq -1$ both are $(-1)^n\vartheta^{n+1}/(2n-1)!!$; for even $m$ both vanish. The monomial $F=w^{-2}$ is excluded, since $F\,\dd x_\kappa=-w^{-1}\dd w$ has a residue. (ii) The coordinate is fixed by $w^2=2(x_\kappa(c)-x_\kappa)$ up to sign, and $w^m\dd w\mapsto(-1)^{m+1}w^m\dd w$ under $w\mapsto -w$, while only even $m$ contribute. (iii) Both $w_j(v)(kp')$ and $k^2w_j(v')(p')$ are coordinates at $\varsigma_j(v')$ in the variable $p'$ whose squares equal $2(x_{\kappa,v}(\varsigma_j(v))-x_{\kappa,v}(kp'))=2k^4(x_{\kappa,v'}(\varsigma_j(v'))-x_{\kappa,v'}(p'))$; their derivatives at $p'=\varsigma_j(v')$ are $k\sqrt{-5\kappa}\,\varsigma_j(v)$ and $k^2\sqrt{-5\kappa}\,\varsigma_j(v')$, which agree, so the two coordinates agree. Write $p'^m\dd p'=\sum_nb_nw'^n\dd w'$ with $w'=w_j(v')$. Then $p^m\dd p=k^{m+1}p'^m\dd p'=\sum_nk^{m-1-2n}b_nw^n\dd w$ with $w=w_j(v)=k^2w'$, and $\mathsf G_{2s}(\vartheta)=k^{4s}\mathsf G_{2s}(k^4\vartheta)$, $\mathsf G_{-2s}(\vartheta)=k^{-4s}\mathsf G_{-2s}(k^4\vartheta)$ give the claim. (iv) On $w^{2n}\dd w$ the left side is $-n(2n-1)!!\,\vartheta^{-n}$; since $(x_\kappa-x_\kappa(c))w^{2n}\dd w=-\frac12w^{2n+2}\dd w$, the right side is $-\frac12(2n+1)!!\,\vartheta^{-n}+\frac12(2n-1)!!\,\vartheta^{-n}$, the same; odd powers give $0$ on both sides.
+\end{proof}
+
+\begin{lem}[Scaling of the curve]
+\label{lem:mod-scale}
+\begin{enumerate}
+\item For constants $\kappa,\mu\neq 0$ let $\omega^{(\kappa,\mu)}_{h,n}$ and $F^{(\kappa,\mu)}_h$ be the correlators and free energies of $(\bbP^1,\kappa\Wv,\mu p,\omega_{0,2})$. Then $\omega^{(\kappa,\mu)}_{h,n}=(\kappa\mu)^{2-2h-n}\omega_{h,n}$ for $2h-2+n>0$, and $F^{(\kappa,\mu)}_h=(\kappa\mu)^{2-2h}\FTR_h$ for $h\geq 2$.
+\item For $k\in\bbC^\times$ let $m_k(p):=kp$. Then $m_k^*\,\omega^{(k^5v)}_{h,n}=k^{5(2-2h-n)}\,\omega^{(v)}_{h,n}$ and $\FTR_h(k^5v)=k^{5(2-2h)}\FTR_h(v)$, where the superscript is the parameter of the curve. Consequently a pairing of $\omega_{h,n}$ with the legs $p^{m_1},\dots,p^{m_j}$ in $j$ slots and with $-\log p$ in the other $n-j$ slots is a function $C(v)$ with $C(k^5v)=k^{5e}C(v)$, $e=2-2h-n+\sum_lm_l/5$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) The branch points and the involutions $\iota_b$ are those of $(\Wv,p)$, $\omega_{0,2}$ is unchanged, and the kernel becomes $K_b/(\kappa\mu)$. Suppose the claim holds for all $(h',n')$ with $2h'-2+n'<2h-2+n+1$, the exponent of $\omega_{0,2}$ being $0=2-0-2$. Every term of \eqref{eq:mod-kernel} for $\omega_{h,n+1}$ is one kernel times $\omega_{h-1,n+2}$, of exponent $2-2h-n$, or times a product $\omega_{h_1,|I_1|+1}\omega_{h_2,|I_2|+1}$, of exponent $(1-2h_1-|I_1|)+(1-2h_2-|I_2|)=2-2h-n$; the total exponent is $1-2h-n=2-2h-(n+1)$, which is the induction step. For the free energy, $\Phi_{y\dd x}$ becomes $\kappa\mu\,\Phi_{y\dd x}$, and $\kappa\mu(\kappa\mu)^{1-2h}=(\kappa\mu)^{2-2h}$. (ii) The map $m_k$ is an automorphism of $\bbP^1$ with $m_k^*W_{k^5v}=k^4\Wv$, $m_k^*p=kp$ and $m_k^*\omega_{0,2}=\omega_{0,2}$; it maps the branch points of $\Wv$ to those of $W_{k^5v}$. The recursion \eqref{eq:mod-kernel} is natural under isomorphisms of curves, so $m_k^*\omega^{(k^5v)}_{h,n}$ is the correlator of $(\bbP^1,k^4\Wv,kp,\omega_{0,2})$, which is $k^{5(2-2h-n)}\omega^{(v)}_{h,n}$ by (i); likewise for $\FTR_h$. For the pairings, pull the residues back along $m_k$; a leg $p_l^{m_l}$ contributes $k^{m_l}$, and a ray is mapped to a ray, along which the pairing does not depend on the choice (\cref{def:mod-pair}).
+\end{proof}
+
+\begin{prop}[The $R$-matrix of the curve]
+\label{prop:mod-Rtr}
+Let $v\neq 0$ and take at the branch points of $x_\kappa$ the coordinates $w_j$ of \cite[\S2.6]{Dunin-Barkowski:2015caa}, $x_\kappa=x_\kappa(\varsigma_j)-w_j^2/2$, normalised by $\frac{\dd w_j}{\dd p}(\varsigma_j)=\sqrt{-5\kappa}\,\varsigma_j$ with one square root for all $j$. Let $e^{\mathrm{TR}}_j$, $\Delta_j$ and $\xi^j$ be the corresponding data (2-30), (2-34) of \cite[\S2.6]{Dunin-Barkowski:2015caa}: $\Delta_j^{-1/2}=\frac{\dd y}{\dd w_j}(\varsigma_j)$ and $\xi^j(q)=\int_\infty^q\omega_{0,2}(w_j,\cdot)/\dd w_j|_{w_j=0}$; and let $R_{\mathrm{TR}}$ be the matrix series defined by (2-31) read through \cref{lem:mod-laplace}, $R_{\mathrm{TR}}^{-1}(\vartheta^{-1})^j{}_i:=-\vartheta^{-1}\mathsf L_{\varsigma_j}[\dd\xi^i]$ (upper index the row). Then, as formal series in $\vartheta^{-1}$:
+\begin{enumerate}
+\item $R_{\mathrm{TR}}^{-1}(\vartheta^{-1})^j{}_i=\Mo(t)_{ij}$ with $t=-1/(\kappa\varsigma^4\vartheta)$, for all $i,j$; consequently
+\begin{equation}
+\label{eq:mod-Rtr}
+R_{\mathrm{TR}}(\psi)=\Mo\big(\psi/(\kappa\varsigma^4)\big)
+\end{equation}
+in the basis $e^{\mathrm{TR}}_j$, and $R_{\mathrm{TR}}$ is symplectic in this orthonormal basis;
+\item (2-32) holds: $\sum_kR_{\mathrm{TR}}^{-1}(\vartheta^{-1})^i{}_k\Delta_k^{-1/2}=\mathsf L_{\varsigma_i}[\dd y]$, both sides being $\varsigma^{-1}\Rhat^{\mathrm m,(i)}_0(t)/\sqrt{-5\kappa}$. In the frozen basis $\bar e_j:=e^{\mathrm{TR}}_j/\sqrt{-5\kappa}$ the unit $\sum_k\Delta_k^{-1/2}e^{\mathrm{TR}}_k$ is $\hat 1:=\sum_k\bar e_k/\varsigma_k$, and the dilaton leaves of the graph formula carry the translation $\psi\big(\hat 1-\Mo^{-1}(\psi/(\kappa\varsigma^4))\hat 1\big)=\psi\,\hat 1-\psi R_{\mathrm{TR}}^{-1}(\psi)\hat 1$ of \cite[Def.~2.13]{PPZ15}.
+\end{enumerate}
+\end{prop}
+
+The sign of the dilaton leaves is that of \cite[\S2.3]{DuninBarkowski:2012bw} and of \cite[Prop.~2.12, Def.~2.13]{PPZ15}; \cite[\S2.3]{Dunin-Barkowski:2015caa} prints the opposite sign. The three sources treat the dilaton leaves in different forms: in \cite[\S2.3]{DuninBarkowski:2012bw} they are marked points, and a vertex is an integral of classes $\psi$ over the moduli space with these points; \cite[\S2.3]{Dunin-Barkowski:2015caa} takes the classes $\psi$ of the legs and edges on that space and then forgets the dilaton points by push-forward; \cite[Defs.~2.2, 2.5]{PPZ15} forget them first and take the classes $\psi$ on the smaller space. By \cref{lem:set-pushins}~(ii), applied at every vertex, the last two forms give the same classes, whose integrals are the sums over the dilaton leaves of the vertex integrals of the first form, when the translation is the series of the weights of the dilaton leaves; so the weights of \cite[\S2.3]{DuninBarkowski:2012bw} fix the sign of the translation in the push-forward form (\cref{prop:mod-Rtr}~(ii)). With legs $R^{-1}(\psi)$ the sign is not a convention: it is the one for which the action preserves the unit (\cref{sec:sgn-R}).
+
+\input{sections/s06_model_3}

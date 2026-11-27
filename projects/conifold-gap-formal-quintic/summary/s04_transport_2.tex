@@ -1,0 +1,51 @@
+% Abridged version, Section 4, part 2 of 2: the flat sum, the Model Lemma on K, Theorem R.
+
+%-------------------------------------------------------------------------------
+\subsection{The flat sum, the Model Lemma and Theorem R}
+\label{sec:red}
+
+\begin{defn}[The flat sum; {\Lr{def:red-flatsum}}]
+\label{def:red-flatsum}
+Let $P$ be a dressing with (Sp), with edge $E_P$, leaf point $q_T$ and $\tilde q_T=d\,q_T$. For a leg-free stable graph $\Gamma$ of genus $g\geq2$, $\mathrm{Cont}_\Gamma$ is $|\Aut\Gamma|^{-1}$ times the contraction along $\Gamma$, as in \cref{def:set-graphsum}, of $E_P$ on every edge with the vertex tensor $d^{\,2g_v-2+n_v}\,\dd^{n_v}\overline F_{g_v}(\tilde q_T)$ at every vertex, of genus $g_v$ and valence $n_v$; here $\overline F_h$ is the dilaton-shifted ancestor potential of the model. The \emph{flat sum} is $F^P_g:=\sum_\Gamma\mathrm{Cont}_\Gamma$. For the vertex graph,
+\[
+\mathrm{Cont}_{\mathrm{vertex}}=d^{\,2g-2}\,\overline F_g(\tilde q_T)=d^{\,2g-2}\sum_{m\geq0}\frac1{m!}\langle(dT_{\geq2})^m\rangle_g .
+\]
+For $P=\Pc$ we write $F_\Gamma:=\mathrm{Cont}_\Gamma$, the \emph{flat term} of $\Gamma$.
+\end{defn}
+
+
+
+\begin{defn}[The Model Lemma on $\sK$; {\Lr{def:red-ML}}]
+\label{def:red-ML}
+For $h\geq2$ let $\Fm_h(v):=\langle\ \rangle_h(v)$ be the genus-$h$ free energy of the model, a rational multiple of $v^{2-2h}$; put $\Fm_1(v):=-\frac1{12}\log v$ and $\Fm_0(v):=-\frac52v^2\log v$, of which only the derivatives of order $\geq1$, resp.\ $\geq3$, are used. For $h\geq0$, $\ML{h}$ is the following statement.
+\begin{enumerate}
+\item For $n\geq1$ with $2h-2+n>0$ and homogeneous $X_1,\dots,X_n\in\sK$ (graded setting, coefficients in $\bbQ[v]$),
+\[
+\langle X_1\cdots X_n\rangle_h(v)-(\Fm_h)^{(n)}(v)\prod_{i=1}^n\Pi_0(X_i)\ \in\ \bbQ[v] .
+\]
+\item For $h\geq2$, $\Fm_h=c_hv^{2-2h}$, with $c_h$ as in \cref{def:set-N}.
+\end{enumerate}
+In short, $\overline F_h|_{-z+\sK}=\Fm_h\circ\Pi_0+\mathrm{Reg}_h$ with a regular remainder $\mathrm{Reg}_h$, an identity of the Taylor coefficients at the base point of order $n>2-2h$.
+\end{defn}
+
+
+
+\begin{thm}[Theorem R; {\Lr{thm:red-main,cor:red-can}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:red-main}
+Fix $g\geq2$ and a dressing $P$ of the model at $v(u)$, $v(0)=0$, $v'(0)\neq0$, with (Sp) and (A).
+\begin{description}
+\item[(a)] If $\ML{h}$ holds for $0\leq h\leq g-1$, then $\mathrm{Cont}_\Gamma\in\bbQ\fps u$ for every leg-free stable graph $\Gamma$ of genus $g$ with at least one edge.
+\item[(b)] If $\ML{g}$ holds, then $\mathrm{Cont}_{\mathrm{vertex}}\in c_g\,T_P^{2-2g}+\bbQ\fps u$.
+\end{description}
+The gauge equation is not used. In particular, in a conifold frame: if $\ML{h}$ holds for $0\leq h\leq g-1$, every \emph{edge graph} (a graph with at least one edge) of genus $g$ of the flat sum of $\Pc.\Omega^{\mathrm{mod}}_{v(u)}$ is regular, $F_\Gamma\in\bbQ\fps u$; if moreover $\ML{g}$ holds, the vertex graph satisfies $F_{\mathrm{vertex}}\in c_g\,\tc^{2-2g}+\bbQ\fps u$.
+\end{thm}
+
+\begin{sketch}
+\emph{Edges and leaves.} By \cref{cor:tra-edges}, $E_P=\sum E_P^{\alpha\beta}\fr_\alpha\otimes\fr_\beta$ with coefficients in $\bbQ\fps u$, so every half-edge insertion is a frame, a homogeneous element of $\sKo$ evaluated at $v(u)$. By \cref{lem:tra-T}, the leaf is $dT_{\geq2}=y^\circ+\delta_PH$ with $y^\circ\in\sKo$ and $\delta_P\in u^2\bbQ\fps u$.
+
+\emph{Edge graphs.} Every vertex of a graph of genus $g$ with an edge carries at least one half-edge and has genus $h\leq g-1$ \Lr{lem:red-genus}. Its factor, with the frames $t_{\alpha_i}:=\fr_{\alpha_i}$ at its half-edges, is $d^{\,2h-2+n}\sum_m\frac1{m!}\langle t_{\alpha_1}\cdots t_{\alpha_n}(dT_{\geq2})^m\rangle_h$, a finite sum; expanded multilinearly, with $y^\circ$ expanded in frames, every term is a product of elements of $\bbQ\fps u$ and of a model correlator of frames and of $H$ that contains the frame $t_{\alpha_1}$. As $\Pi_0(t_{\alpha_1})=0$, the singular term of $\ML{h}$~(i) is absent, and the correlator lies in $\bbQ[v]$, hence in $\bbQ\fps u$ at $v=v(u)$. The contraction along $\Gamma$ is the sum of a summable family of such products, so it lies in $\bbQ\fps u$.
+
+\emph{The vertex graph.} Here $\mathrm{Cont}_{\mathrm{vertex}}=d^{\,2g-2}\,\overline F_g(\tilde q_T)$ with $\tilde q_T\in-z1+\sK$ and $\Pi_0(\tilde q_T)=v+\delta_P$. Under $\ML{g}$ the Taylor expansion at the base point resums, $u$-adically because $\delta_P\in u^2\bbQ\fps u$ and $v'(0)\neq0$, to $\overline F_g(\tilde q_T)\in c_g\,(v+\delta_P)^{2-2g}+\bbQ\fps u$. Finally $v+\delta_P=dT_P$, so $d^{\,2g-2}c_g(dT_P)^{2-2g}=c_gT_P^{2-2g}$: the dilaton factor cancels. The last statement is the case $P=\Pc$, $T_{\Pc}=\tc$ (\cref{prop:tra-can}).
+\end{sketch}
+
+

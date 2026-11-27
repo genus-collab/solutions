@@ -1,0 +1,87 @@
+% Section 2, part 5 of 8: the translation (push-forward and insertion), (T); the Frobenius basis at the conifold point; conifold frames; the differential ring and the conifold expansion; tau; the canonical coordinates.
+
+\begin{lem}[The translation: push-forward and insertion]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-pushins}
+Let $\Omega$ be a cohomological field theory \cite[Def.~0.3]{PPZ15} on a free module $V$ of finite rank with a perfect symmetric pairing $\eta$ (its Gram matrix is invertible) over a commutative $\bbQ$-algebra, with the correlators $\langle\cdots\rangle_h$ of \cref{def:set-graphsum}. Let $2h-2+n>0$, $m\geq0$, and let $p_m\colon\overline{\mathcal M}_{h,n+m}\to\overline{\mathcal M}_{h,n}$ forget the last $m$ points.
+\begin{enumerate}
+\item For $k_1,\dots,k_n\geq0$ and $c_1,\dots,c_m\geq1$, in $H^*(\overline{\mathcal M}_{h,n+m})$,
+\[
+\prod_{j=1}^n\psi_j^{k_j}\prod_{s=1}^m\psi_{n+s}^{c_s}=\prod_{j=1}^n(p_m^*\psi_j)^{k_j}\prod_{s=1}^m\psi_{n+s}^{c_s}.
+\]
+\item Let $\ttr\in z^2V\fps z$ and let $\ttr\Omega$ be the translation of $\Omega$ by $\ttr$ \cite[Def.~2.5]{PPZ15}. For $a_1,\dots,a_n\in V$ and $k_1,\dots,k_n\geq0$,
+\[
+(\ttr\Omega)_{h,n}(a_1,\dots,a_n)\prod_{j=1}^n\psi_j^{k_j}=\sum_{m\geq0}\frac1{m!}\,p_{m*}\Bigl(\Omega_{h,n+m}\bigl(a_1,\dots,a_n,\ttr(\psi_{n+1}),\dots,\ttr(\psi_{n+m})\bigr)\prod_{j=1}^n\psi_j^{k_j}\Bigr),
+\]
+where on the right $\psi_j$ is the class of $\overline{\mathcal M}_{h,n+m}$; consequently
+\[
+\int_{\overline{\mathcal M}_{h,n}}(\ttr\Omega)_{h,n}(a_1,\dots,a_n)\prod_{j=1}^n\psi_j^{k_j}=\sum_{m\geq0}\frac1{m!}\bigl\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\,\ttr^m\bigr\rangle_h ,
+\]
+$\ttr$ being inserted at $m$ further points through $z^ca\mapsto\psi^ca$. The sums are finite. If $\Omega$ has the unit $1$, the right side is $\dd^n\overline F^\Omega_h(q)(\psi^{k_1}a_1,\dots,\psi^{k_n}a_n)$ at $q=-z1+\ttr$.
+\item Let $\Omega$ have the unit $1$ and let $R(z)=1+O(z)$ be symplectic, as in \cref{def:set-graphsum}. For $g\geq2$ and every leg-free stable graph $\Gamma$ of genus $g$, $\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$ is the term of $\Gamma$ in $\int_{\overline{\mathcal M}_g}(R.\Omega)_{g,0}$, that is, $|\Aut\Gamma|^{-1}$ times the integral over $\overline{\mathcal M}_g$ of the contribution of $\Gamma$ in \cite[Def.~2.2]{PPZ15} to the action of $R$ on $\ttr_R\Omega$, which is $R.\Omega$ \cite[Def.~2.13]{PPZ15}. Consequently $\int_{\overline{\mathcal M}_g}(R.\Omega)_{g,0}$ is the graph sum of genus $g$. By \cite[Prop.~2.12]{PPZ15}, $R.\Omega$ is again a cohomological field theory with the unit $1$, to which (iii) applies; over a ring other than $\bbQ$ this is used only when $\Omega$ is one of the topological field theories of \cref{def:set-graphsum}, last paragraph.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) For $2h-2+N>0$ let $\pi\colon\overline{\mathcal M}_{h,N+1}\to\overline{\mathcal M}_{h,N}$ forget the last point and, for $j\leq N$, let $\delta_j$ be the divisor of the curves with a genus-$0$ component carrying only the markings $j$ and $N+1$ (local letters). The formula \cite[(8)]{PPZ15}, $\pi^*(\psi_j^d)=\psi_j^d-\delta_j\,\pi^*(\psi_j^{d-1})$, gives $\pi^*\psi_j=\psi_j-\delta_j$ for $d=1$, and for $d=2$, compared with $(\pi^*\psi_j)^2=(\psi_j-\delta_j)^2$, $\psi_j\delta_j=0$. Exchanging the markings $j$ and $N+1$ preserves $\delta_j$ and exchanges $\psi_j$ and $\psi_{N+1}$; so $\psi_{N+1}\delta_j=0$, i.e.\ $\psi_j\psi_{N+1}=\pi^*(\psi_j)\,\psi_{N+1}$. Replacing the factors $\psi_i$ one at a time, for $k_i\geq0$ and $c\geq1$,
+\[
+\textstyle\prod_{i=1}^N\psi_i^{k_i}\,\psi_{N+1}^c=\prod_{i=1}^N(\pi^*\psi_i)^{k_i}\,\psi_{N+1}^c,\tag{$*$}
+\]
+which for $N=n$ is (i) with $m=1$. For $m\geq2$ write $p_m=p_{m-1}\circ\pi$, $\pi$ forgetting the last point of $\overline{\mathcal M}_{h,n+m}$, and let $Y\coloneqq\prod_{s<m}\psi_{n+s}^{c_s}$, $X\coloneqq\prod_j\psi_j^{k_j}\,Y$ on $\overline{\mathcal M}_{h,n+m-1}$ (local letters). By $(*)$ with $N=n+m-1$ the left side of (i) is $\pi^*(X)\,\psi_{n+m}^{c_m}$; by (i) for $m-1$, $\pi^*(X)=\prod_j(p_m^*\psi_j)^{k_j}\,\pi^*(Y)$; and by $(*)$ again $\pi^*(Y)\,\psi_{n+m}^{c_m}=\prod_{s\leq m}\psi_{n+s}^{c_s}$ on $\overline{\mathcal M}_{h,n+m}$.
+
+(ii) By \cite[Def.~2.5]{PPZ15},
+\[
+(\ttr\Omega)_{h,n}(a_1,\dots,a_n)=\sum_m\frac1{m!}\,p_{m*}Z_m,\qquad Z_m\coloneqq\Omega_{h,n+m}(a_1,\dots,a_n,\ttr(\psi_{n+1}),\dots,\ttr(\psi_{n+m}))
+\]
+(a local letter), an argument $\ttr(\psi_{n+s})$ standing for $\sum_{c\geq2}\psi_{n+s}^c$ times the class with the argument $\ttr_c\coloneqq\coef{z^c}\ttr$. By the projection formula, $p_{m*}(Z_m)\prod_j\psi_j^{k_j}=p_{m*}\bigl(Z_m\prod_j(p_m^*\psi_j)^{k_j}\bigr)$, and as every term of $Z_m$ carries $\prod_s\psi_{n+s}^{c_s}$ with $c_s\geq2$, (i) replaces $p_m^*\psi_j$ by $\psi_j$. This is the first identity; the second follows from $\int p_{m*}W=\int W$. A term with $m$ translation points has degree at least $2m$ on a space of dimension $3h-3+n+m$, so the sums are finite. The last sentence is the definition of $\dd^n\overline F^\Omega_h$, as $q+z1=\ttr$.
+
+(iii) By \cite[Defs.~2.2, 2.13]{PPZ15}, $(R.\Omega)_{g,0}=\sum_\Gamma|\Aut\Gamma|^{-1}C_\Gamma$ (a local letter) over the leg-free stable graphs of genus $g$, where $C_\Gamma$ is the push-forward along the gluing map $\prod_v\overline{\mathcal M}_{g_v,n_v}\to\overline{\mathcal M}_g$ \cite[\S0.2, (1)]{PPZ15} of the contraction of the classes $(\ttr_R\Omega)_{g_v,n_v}$ at the vertices with the edges $E_R(\psi',\psi'')$ in the classes $\psi'$, $\psi''$ of the two half-edges \cite[Def.~2.2~(iii)]{PPZ15}, formed with $R^{-1}$ \cite[p.~20]{PPZ15}. The push-forward preserves integrals. Expanding each edge into finitely many relevant monomials $\psi'^{\,a}\psi''^{\,b}$, the integral over the product is the contraction of the forms $(x_1,\dots,x_{n_v})\mapsto\int_{\overline{\mathcal M}_{g_v,n_v}}(\ttr_R\Omega)_{g_v,n_v}(x_1,\dots,x_{n_v})\prod_l\psi_l^{k_l}$, which by (ii), as $q_R+z1=\ttr_R$, are $\dd^{n_v}\overline F^\Omega_{g_v}(q_R)(\psi^{k_1}x_1,\dots,\psi^{k_{n_v}}x_{n_v})$. Summing over the monomials gives $\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$, and summing over $\Gamma$ the graph sum.
+\end{proof}
+
+\begin{thm}[The reconstruction (T); quoted]\genusstatus{AI-proposed, unchecked}
+\label{thm:set-GT}
+At $\lambda_i=\zeta^i$ the classes $\Omega_{g,n}$ of \cref{def:set-fq}, in all genera, form a cohomological field theory with flat unit $1$ for $\eta$ over $\bbQ(\zeta)\fps{\Qn}$ \cite[Section~4.1]{GJR18}, \cite[Def.~0.3]{PPZ15}, and satisfy the divisor equation in all genera: for $2g-2+n>0$ the part of degree $d$ of $\pi_*\Omega_{g,n+1}(\gamma_1,\dots,\gamma_n,H)$ is $d$ times that of $\Omega_{g,n}(\gamma_1,\dots,\gamma_n)$, $\pi$ forgetting the last point (as in genus $0$, \cref{thm:set-G0}~(b): $E_{g,n+1,d}$ is the pull-back of $E_{g,n,d}$ and $\int_dH=d$). Hence the classes $\Omega_{g,n}$ with $\Qn=\re^{T(q)}$ are the theory at the point $t=T(q)H$ with $\Qn=1$, the cohomological field theory of the formal quintic along the line. It equals $R.\TFT$, with $\TFT$ of \cref{def:set-frob} and an $R$-matrix $R=1+O(z)$ with coefficients in $\End(\bbH)\otimes\bbQ(\zeta)\fps q$, symplectic as in \cref{def:set-rows}~(a) (which also follows from (QRR), \cref{lem:set-Runique}) \cite[Theorem~(2) in (1.15)]{MR2917177}, \cite[Section~4.1, Theorem~4.1]{GJR18}; this $R$ is the $R$-matrix of \cref{def:set-rows}. In particular, for $g\geq2$, since $F_g=\int_{\overline{\mathcal M}_g}\Omega_{g,0}$ (\cref{def:set-fq}), \cref{lem:set-pushins}~(iii) gives
+\[
+F_g=\sum_\Gamma\mathrm{Cont}_\Gamma[E_R,q_R;\TFT]
+\]
+as power series in $q$, the sum running over the leg-free stable graphs of genus $g$.
+\end{thm}
+
+%-------------------------------------------------------------------------------
+\subsection{Conifold frames and the conifold expansion}
+\label{sec:set-frames}
+
+In this subsection functions of $u$ are formal series in $u$ (or in $s=u^{1/5}$), $\Dq=-(1-u)\,\dd/\dd u$, and $\PFfour$ is taken in its $u$-form (\cref{def:set-genus0}).
+
+\begin{lem}[The Frobenius basis at the conifold point]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-frobbasis}
+Let $\theta\coloneqq u\,\dd/\dd u$, so that $\Dq=(1-u^{-1})\theta$ on $\bbQ\lser u$, and let $\ell$ be an indeterminate with $\Dq\ell=1-u^{-1}$, i.e.\ $\theta\ell=1$, a formal $\log u$ (the indeterminate of \cref{def:gau-conc}).
+\begin{enumerate}
+\item $\PFfour=\sum_{j=-3}^{1}u^jP_j(\theta)$ with polynomials $P_j$, where
+\[
+P_{-3}(x)=x(x-1)^2(x-2),\qquad P_{-2}(x)=-x(x-1)\bigl(4x^2-6x+\tfrac{17}5\bigr),\qquad P_{-1}(0)=0,\quad P_{-1}'(0)=-\tfrac75 .
+\]
+Hence $\PFfour$ maps $\bbQ\fps u$ into itself, its local exponents at $u=0$ are $0,1,1,2$, and a power-series solution is determined by its coefficients of $u^0,u^1,u^2$; $f_k$ ($k=0,1,2$) denotes the solution with $f_k=u^k+O(u^3)$.
+\item For $g=\sum_nb_nu^n\in\bbQ\fps u$, $\PFfour(g\ell)=\ell\,\PFfour g+r(g)$ with $r(g)\coloneqq\sum_nb_n\sum_jP_j'(n)u^{n+j}\in u^{-3}\bbQ\fps u$. If $\PFfour g=0$, then $g\ell+h$ with $h\in\bbQ\fps u$ solves $\PFfour$ for some $h$ if and only if $\coef{u^m}r(g)=0$ for $m=-3,-2,-1$.
+\item On $\operatorname{span}(f_0,f_1,f_2)$ the obstruction $(\coef{u^{-3}}r,\coef{u^{-2}}r,\coef{u^{-1}}r)$ has the matrix, in the columns $f_0,f_1,f_2$,
+\[
+\begin{pmatrix}-2&0&0\\ \frac{17}5&0&0\\ -\frac75&-\frac75&2\end{pmatrix},
+\]
+with kernel $\bbQ\,(0,1,\frac7{10})$. Hence, up to a non-zero factor, $\varpi_1\coloneqq f_1+\gamma f_2$, $\gamma\coloneqq\frac7{10}$, is the only power-series solution $g$ for which a solution $g\ell+h$, $h\in\bbQ\fps u$, exists; $h$ is unique up to adding power-series solutions, and the logarithmic solution with $\coef{u^0}h=\coef{u^1}h=\coef{u^2}h=0$ is $\varpi_1\ell+\rho_3$, $\rho_3\in u^3\bbQ\fps u$. The \emph{vanishing period} $\varpi_1=u+\frac7{10}u^2+O(u^3)$ is normalised by $\varpi_1=u+O(u^2)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) As $\theta u^m=u^m(\theta+m)$, every $\sum_kc_k\Dq^k$, $c_k\in\bbQ[u,u^{-1}]$, is uniquely $\sum_ju^jP_j(\theta)$. Moving the factors $u^{-1}$ to the left, the part of order $u^{-k}$ of $\Dq^k$ is $(-1)^ku^{-k}\theta(\theta-1)\cdots(\theta-k+1)$, and its part of order $u^{1-k}$ is $(-1)^{k-1}u^{1-k}\theta(\theta-1)\cdots(\theta-k+2)\bigl(k\theta-\binom k2\bigr)$ (the word with $\theta$ in position $p+1$ contributes $\theta\cdots(\theta-k+2)(\theta-k+1+p)$, $p=0,\dots,k-1$). In the $u$-form of $\PFfour$ the terms of order $u^{-3}$ come from $u\Dq^4$ and $-2\Dq^3$, those of order $u^{-2}$ from $u\Dq^4$, $-2(1-u)\Dq^3$ and $-\frac75\Dq^2$:
+\begin{align*}
+P_{-3}(\theta)&=\theta(\theta-1)(\theta-2)(\theta-3)+2\theta(\theta-1)(\theta-2)=\theta(\theta-1)^2(\theta-2),\\
+P_{-2}(\theta)&=-\theta(\theta-1)(\theta-2)(4\theta-6)-2\theta(\theta-1)(\theta-2)-6\theta(\theta-1)^2-\tfrac75\theta(\theta-1)\\
+&=-\theta(\theta-1)\bigl(4\theta^2-6\theta+\tfrac{17}5\bigr).
+\end{align*}
+Every $\Dq^k$, $k\geq1$, ends with $\theta$, and the constant term $-\frac{24}{625}(1-u)$ contributes to $P_0$, $P_1$ only; so $P_j(0)=0$ for $j\leq-1$. Since $\PFfour u^n=\sum_jP_j(n)u^{n+j}$ and $P_j(n)=0$ whenever $n\geq0>n+j$ (the roots $0,1,2$ of $P_{-3}$, $0,1$ of $P_{-2}$, $0$ of $P_{-1}$), $\PFfour$ preserves $\bbQ\fps u$; the coefficient of $u^N$ in $\PFfour g$ is $P_{-3}(N+3)b_{N+3}$, with $P_{-3}(N+3)=(N+3)(N+2)^2(N+1)\neq0$, plus a combination of $b_{N-1},\dots,b_{N+2}$, so $b_0,b_1,b_2$ are free and determine $g$.
+
+(ii) As $\theta(u^n\ell)=u^n(n\ell+1)$, $P(\theta)(u^n\ell)=u^n(P(n)\ell+P'(n))$ for every polynomial $P$; summing gives $\PFfour(g\ell)=\ell\,\PFfour g+r(g)$, and for $n\geq3$ all exponents $n+j$ are $\geq0$. If $\PFfour g=0$, $\PFfour(g\ell+h)=r(g)+\PFfour h$ with $\PFfour h\in\bbQ\fps u$; so a solution requires $\coef{u^m}r(g)=0$ for $m<0$, and conversely $\PFfour h=-r(g)$ is then solved by the recursion of (i).
+
+(iii) $\coef{u^m}r(g)=\sum_jP_j'(m-j)\,b_{m-j}$ over $m-j\geq0$: for $m=-3$, $P_{-3}'(0)b_0=-2b_0$; for $m=-2$, $P_{-3}'(1)b_1+P_{-2}'(0)b_0=\frac{17}5b_0$ ($1$ is a double root of $P_{-3}$); for $m=-1$, $2b_2-\frac75b_1+P_{-1}'(0)b_0$. And $P_{-1}'(0)=\coef{u^{-1}}\PFfour(\ell)$: from $\Dq\ell=1-u^{-1}$, $\Dq^2\ell=u^{-1}-u^{-2}$, $\Dq^3\ell=-u^{-1}+3u^{-2}-2u^{-3}$, $\Dq^4\ell=u^{-1}-7u^{-2}+12u^{-3}-6u^{-4}$, this coefficient is $-7+(2+6)-\frac75-\frac75+\frac25=-\frac75$. The kernel consists of the $(b_0,b_1,b_2)$ with $b_0=0$, $2b_2=\frac75b_1$; the rest follows from (ii), as two logarithmic solutions with the same $g$ differ by a power-series solution.
+\end{proof}
+
+\input{sections/s02_setup_6}

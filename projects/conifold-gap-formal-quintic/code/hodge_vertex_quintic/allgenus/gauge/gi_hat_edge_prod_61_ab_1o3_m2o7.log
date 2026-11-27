@@ -1,0 +1,13 @@
+gi_hat_edge: rows = prod, p = 2^61-1, frame (alpha, beta) = (1/3, -2/7), zhat <= 6, u < 6
+PASS Psi0[b][i] = Qhat_{b,0}^(i)(u = 0) = eps_b zeta^(i(b+1))
+   rows, R' and 21 edge tables E(m, n), m + n + 1 <= 6: 2 s
+   largest zhat-order m + n + 1 present in the edge tables at u^N, N = 0..5: [0, 1, 3, 4, 5, 6]
+   bound edge_degree_bound(N) (two factors of G, Theorem D):                [0, 1, 3, 4, 6, 7]
+PASS the edge tables respect the degree bound wherever it is below the truncation (N <= 4)
+PASS (L) Lemma E: contraction of a covector into an edge = R'^-1(psi') [R'(x) phi(-x)]_(>0)(psi')/psi'  (3 random covectors, 30 series identities mod u^6): 0
+PASS (E) vanishing covector: Sum_{i,m} phi_{i,m} E(m, n)[i][j] = 0 for all n < 6, j, and u^N, N <= 4 (150 coefficients, 65 of them sums of >= 2 non-zero table entries): []
+PASS (C) control (no (-1)^m): the contraction does NOT vanish (45 non-zero of 150)
+PASS Q'^(i)_{0,0} = zeta^i/xhat (the unit of the hatted TFT), all colours, mod u^6
+PASS (T) LEAF: u tau^(-1/2) Sum_{i, d >= 2} phi_{i,d} T(d)[i] = -t_c + u tau^(-3/2)/xhat  mod u^6
+PASS     leading term: Pi(T') = -(gamma_t + w_1 - 2/3) u^2 = (p_{1,4}(0)/2) u^2  [frame (0,0): -u^2/30]
+GI_HAT_EDGE prod_61_ab_1o3_m2o7: ALL CHECKS PASSED   (2 s)

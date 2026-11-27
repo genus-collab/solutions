@@ -1,0 +1,24 @@
+% Section 8 (part 1): the connection problem. Label prefix: con.
+% No new macros. Letters used in one proof only are declared there and are local to it.
+
+\section{The connection problem}
+\label{sec:con}
+
+The canonical gauge $\Pc$ of \cref{sec:gau} is normalised at the conifold point $u=0$, the rows of the formal quintic at $q=0$; the normalisation series $\Dn_0$ of \cref{thm:gau-R0} measures the difference, and $\Fg{g}$ for every $g$ (\cref{def:gau-Fg}) is the statement $\Dn_0=1$. This section reduces $\Dn_0=1$ to one identity at $q=0$. We define the full-Stirling saddle series $c(z;L)$ of a Mellin--Barnes summand and the hatted series $\PhiSP$ (\cref{sec:con-form}, after the conventions of \cref{sec:con-problem}). Theorem~P (\cref{sec:con-P}) shows that $\PhiSP$ solves HPF with polynomial coefficients (part~(a)) and, by the residue of a $1$-form at its pole, that it is $\Phican$ (part~(b)). The glue (\cref{sec:con-glue}) gives $\Dn_0(z)=\PhiSP(z,1)/h(z)$; the value $\PhiSP(z,1)=c(z;1)$ is determined in \cref{sec:gam}. We work in colour~$0$; the other colours follow by \cref{cor:gau-colours}.
+
+\subsection{Conventions}
+\label{sec:con-problem}
+
+A colour-$0$ WKB function is a series $\Phi(\zh,u)=\sum_{n\geq 0}\mathrm{ph}_n(u)\zh^n$ with $\mathrm{ph}_0=1$ (\cref{def:set-points,def:set-rows}). We write $\PFfive^{L}$ for $\PFfive$ with $z\Dq$ replaced by $z\Dq+L$, that is, $\PFfive^{L}=\re^{-u_0/z}\,\PFfive\,\re^{u_0/z}$ with $\Dq u_0=L$; it is the operator $\PFfive^{(0)}$ of \cref{lem:gau-HPF,lem:gau-wkb}. At fixed $z$ one has $u\,\dd/\dd u=\theta_u-\tfrac45\theta_{\zh}$ and $z/u=\zh/s$, so that for $e\in\bbZ$ and $F$ in $\bbQ\lser{s}\fps{\zh}$
+\begin{equation}
+\label{eq:con-chain}
+(z\Dq+L)(s^eF)=s^{e-1}\mathscr O_eF,\qquad \mathscr O_e=1+\zh(1-u)\bigl(\tfrac45\theta_{\zh}-\tfrac e5-\theta_u\bigr),
+\end{equation}
+the chain rule of \cref{lem:gau-HPF}. Write $\PFfive=u(z\Dq)^5-1-(1-u)\sum_{m=1}^5e_mz^m(z\Dq)^{5-m}$, with $e_m$ the elementary symmetric functions of $\tfrac15,\dots,\tfrac55$. Applying \eqref{eq:con-chain} five times to $s^{-1}\Phi$ gives $\PFfive^{L}(s^{-1}\Phi)=s^{-1}\,\mathrm{HPF}(\Phi)$, where $\mathrm{HPF}(\Phi)$ is the left side of \eqref{eq:gau-HPF}; so $L\re^{u_0/z}\Phi$ solves $\PFfive$ if and only if $\Phi$ solves HPF, in $\bbQ\lser{s}\fps{\zh}$. The free coefficients of $\Phi$ are $\fc_m=[u^{4m}]\mathrm{ph}_{5m}$ (\cref{lem:gau-HPF}).
+
+\begin{rmk}[Genus bookkeeping]
+\label{rmk:con-genus}
+By \cref{def:gau-Fg}, $\Fg{g}$ says that $\Dn_0-1$ has no terms $z^1,\dots,z^{3g-3}$; the coefficient of $z^n$ enters $\Fg{g}$ first at $g=\lceil(n+3)/3\rceil$. The identity $\Dn_0(z)\Dn_0(-z)=1$, the symplecticity of $R'$ (\cref{lem:flh-inputs}~(iii)), would halve the conditions. Deriving it from the symplecticity of $R$ (\cref{def:set-rows}~(a)) would need that symplecticity for the representatives of the rows in $\Nring\otimes\bbQ(\zeta)$ (\cref{cor:gau-rowsNN}), which is not claimed. So it is not used; it follows from $\Dn_0=1$ (\cref{thm:gam-D}).
+\end{rmk}
+
+\input{sections/s08_connection_3}

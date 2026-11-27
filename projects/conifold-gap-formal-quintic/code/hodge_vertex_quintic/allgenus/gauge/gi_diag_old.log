@@ -1,0 +1,3 @@
+first version: (-1) ** m (a float for m < 0): 119 identities tested, 73 failing; types ['float']; |lhs - rhs| in [5.1e-21, 8.9e-16]; first four [(1, 0, 2), (1, 2, 0), (1, 2, 10), (1, 2, 15)]
+integer sign: 119 identities tested, 0 failing; types []; |lhs - rhs| in [-, -]; first four []
+GI_DIAG_OLD: DIAGNOSIS CONFIRMED (float rounding only; exact identities hold)

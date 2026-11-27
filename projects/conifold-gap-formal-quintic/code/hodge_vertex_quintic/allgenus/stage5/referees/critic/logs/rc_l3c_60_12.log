@@ -1,0 +1,11 @@
+# logs/rc_l3c_60_12.log (py -I -B rc_l3c.py 60 12)
+rc_l3c NW = 60, NL = 12 (critic of the Stage-5 referees; exact over Q)
+PASS D1 formal 5.11.8: coefficients of w^-1..w^-60 agree as polynomials in h
+PASS D2 input of the interpolation proof: B_m(h + 1) = B_m(h) + m h^(m-1), m = 2..61
+PASS D3 input: beta_n(0) = b_k for n = 2k-1 and 0 for even n (n <= 60)
+PASS L1 Lemma L3-C: N[log t - t, t^(M-1); 1] = exp(Sum beta_n(M) z^n) as polynomials in M through z^12
+PASS L1 degree: [z^n] is a polynomial of degree 2n in M (n <= 12)
+PASS L2 integer M = -3..4: the polynomial form equals Poch_M(z) exp(Sum_k b_k z^(2k-1)) (the (L3) of CP2 s.2.8)
+PASS L3 control: amplitude t^M dt in place of t^(M-1) dt (i.e. M -> M + 1) equals exp(Sum beta_n(M) z^n)  [control: must fail; it fails]
+PASS L3 control: at M = 0 the series equals exp(Sum beta_n(1/5) z^n)  [control: must fail; it fails]
+rc_l3c 60 12: ALL CHECKS PASSED

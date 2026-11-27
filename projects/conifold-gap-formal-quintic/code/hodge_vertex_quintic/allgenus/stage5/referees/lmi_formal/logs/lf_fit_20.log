@@ -1,0 +1,17 @@
+log: logs/lf_fit_20.log   (python 3.14.6)
+evaluated c(z; L) through z^20 at 24 rational points
+n = 1: c_n(L) = (-3/20) L^4
+n = 2: c_n(L) = (9/800) L^8
+n = 3: c_n(L) = (67/1250) L^2 + (-126/625) L^7 + (11571/80000) L^12
+n =  5: c_n(0) = 4537/3937500 = [z^n] Ginf: True
+n = 10: c_n(0) = -177640111151/31007812500000 = [z^n] Ginf: True
+n = 15: c_n(0) = -284328315069009259339/6226756347656250000000 = [z^n] Ginf: True
+n = 20: c_n(0) = 1963656341145629520968888447777/98071412475585937500000000000 = [z^n] Ginf: True
+PASS  fit confirmed on 3 extra points for every n <= 20
+PASS  c_n in Q[L], exponents 4n - 5k, 0 <= 4n - 5k <= 4n (no negative or too-large exponent), n <= 20
+PASS  (Gamma): c_n(1) = h_n (h from its definition), n <= 20
+PASS  orbifold point: c_n(0) = [z^n] Ginf (0 unless 5 | n), n <= 20
+PASS  control: singular Stirling series dropped: c_1 admits the Laurent fit -- identity FAILS as expected
+PASS  control: twist weight +5: c_n(1) = h_n for all n -- identity FAILS as expected
+checks: 6 passed, 0 failed; 11.7 s
+ALL CHECKS PASSED

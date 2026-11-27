@@ -1,0 +1,71 @@
+(* The actual pair: quintic system in a conifold frame, pulled-back model. Low-order checks of prop:gau-quintic, prop:gau-equalprod, Theorem U (a) *)
+Nn = 16; K = 2;
+ser[f_] := Normal[Series[f, {u, 0, Nn}]];
+Dq[f_] := -(1 - u) D[f, u];
+PF4[f_] := u Dq[Dq[Dq[Dq[f]]]] - (1 - u) (2 Dq[Dq[Dq[f]]] + 7/5 Dq[Dq[f]] + 2/5 Dq[f] + 24/625 f);
+MM = Nn + 6;
+sol[k_] := Module[{c, f, eq, s},
+   f = u^k + Sum[c[n] u^n, {n, 3, MM}];
+   eq = CoefficientList[Expand[PF4[f]] + u^(MM + 20), u][[1 ;; MM - 2]];
+   s = Solve[Thread[eq == 0], Table[c[n], {n, 3, MM}]];
+   Normal[Series[f /. s[[1]], {u, 0, MM - 3}]]];
+{f0, f1, f2} = sol /@ {0, 1, 2};
+Print["PF4 residual check: ", Table[Series[PF4[f], {u, 0, 8}], {f, {f0, f1, f2}}]];
+w1 = f1 + 7/10 f2;
+{al, be} = {2/3, -5/7};
+w0 = f0 + al w1 + be f2;
+tc = ser[w1/w0];
+Print["tc (frame al,be) = ", Series[tc, {u, 0, 3}], "   expected u + (7/10 - al) u^2: ", 7/10 - al];
+Print["tc frame (0,0): ", Series[w1/f0, {u, 0, 3}]];
+tcp = D[tc, u];
+b = ser /@ {tcp, -1/(u w0^2 (1 - u)^3 tcp^2), tcp, -w0/(1 - u), -w0/(1 - u)};
+tau = 1/Sum[4 u^n/(5 n + 4), {n, 0, Nn + 4}];
+v = ser[u tau^(-5/4)]; vp = D[v, u];
+bt = ser /@ {vp, -vp/v, vp, -vp, -vp};
+Print["product b + 1/(u(1-u)^5): ", Series[Times @@ b + 1/(u (1 - u)^5), {u, 0, Nn - 6}]];
+Print["EP: ", Series[Times @@ b - Times @@ bt, {u, 0, Nn - 6}]];
+Print["b(0), bt(0) for a=0,2,3,4: ", (b[[{1, 3, 4, 5}]] /. u -> 0), (bt[[{1, 3, 4, 5}]] /. u -> 0), "  residues: ", {Expand[u b[[2]]] /. u -> 0, Expand[u bt[[2]]] /. u -> 0}];
+(* check that the cyclic system encodes PF4: Mcyc(w0,w1) g = PF4 g on test functions *)
+Mcyc[g_] := Module[{dt = Dq[tc]}, ser[(1/w0) Dq[ser[(1/dt) Dq[ser[u w0^2 dt^2 Dq[ser[(1/dt) Dq[ser[g/w0]]]]]]]]]];
+Print["Mcyc - PF4 on u^k, k=0..4: ", Table[Series[Mcyc[u^k] - PF4[u^k], {u, 0, 6}], {k, 0, 4}]];
+(* Theorem U construction *)
+ix[a_] := Mod[a, 5] + 1;
+mat[c_, m_] := Module[{M = ConstantArray[0, {5, 5}]}, Do[M[[ix[a], ix[a + m]]] = c[[ix[a]]], {a, 0, 4}]; M];
+A = mat[b, 1]; At = mat[bt, 1];
+Bp[m_, a_] := ser[Product[bt[[ix[a + i]]], {i, 0, m - 1}]];
+BB = Bp[5, 0];
+d = {1}; Do[AppendTo[d, ser[d[[-1]] bt[[a + 1]]/b[[a + 1]]]], {a, 0, 3}];
+Theta = DiagonalMatrix[d];
+dlog = DiagonalMatrix[ser[D[#, u]/#] & /@ d];
+detTh = Times @@ d;
+frakd = ser[(detTh/(detTh /. u -> 0))^(-1/5)];
+Print["d(0) = ", d /. u -> 0];
+Print["p00 - tau^(-1/4)/w0: ", Series[frakd - tau^(-1/4)/w0, {u, 0, Nn - 6}]];
+trdlog = ser[Tr[dlog]];
+Ypow[j_] := Module[{M = ConstantArray[0, {5, 5}]}, Do[M[[ix[a + j], ix[a]]] = ser[1/Bp[j, a]], {a, 0, 4}]; M];
+prcoef[X_] := Table[With[{m = 5 - j}, ser[(1/5) Sum[X[[ix[a], ix[a + m]]] Bp[5 - m, a + m], {a, 0, 4}]]], {j, 0, 4}];
+lift[X_] := Module[{Z = ConstantArray[0, {5, 5}], sig, rho},
+   Do[sig = Table[ser[X[[ix[a], ix[a + m + 1]]]/Bp[m + 1, a]], {a, 0, 4}];
+    rho = ConstantArray[0, 5];
+    Do[rho[[ix[a + 1]]] = rho[[ix[a]]] + sig[[ix[a]]], {a, 1, 4}];
+    Do[Z[[ix[a], ix[a + m]]] = ser[rho[[ix[a]]] Bp[m, a]], {a, 0, 4}], {m, 0, 4}]; Z];
+chi[j_] := ser[-(j/5) D[BB, u]/BB + trdlog/5];
+solvescal[phi_] := Module[{w = {}, c, M = Nn - 2, wj, eqs, s},
+   AppendTo[w, ser[frakd (-Integrate[ser[phi[[1]]/frakd], u])]];
+   Do[wj = Sum[c[n] u^n, {n, 0, M}];
+    eqs = CoefficientList[Expand[u D[wj, u] + Expand[u chi[j]] wj + Expand[u phi[[j + 1]]]] + u^(3 Nn), u][[1 ;; M + 1]];
+    s = Solve[Thread[eqs == 0], Table[c[n], {n, 0, M}]];
+    AppendTo[w, wj /. s[[1]]], {j, 1, 4}]; w];
+minord[M_] := Min[Exponent[#, u, Min] & /@ Select[Flatten[M], # =!= 0 &]];
+Pc = {frakd IdentityMatrix[5]};
+Do[X = Map[ser, D[Pc[[-1]], u] + dlog . Pc[[-1]], {2}];
+  Z = lift[X];
+  ZZ = Map[ser, D[Z, u] + dlog . Z, {2}];
+  w = solvescal[prcoef[ZZ]];
+  AppendTo[Pc, Map[ser, Z + Sum[w[[j + 1]] Ypow[j], {j, 0, 4}], {2}]], {k, 1, K}];
+P = Map[ser, Theta . #, {2}] & /@ Pc;
+Print["min u-orders of P_k: ", minord /@ P];
+chk[M_, n_] := Union[Flatten[Map[Take[CoefficientList[Expand[u^2 #] + u^60, u], n] &, M, {2}]]];
+Print["z^0 eq: ", chk[A . P[[1]] - P[[1]] . At, Nn - 4]];
+Do[Print["z^", k, " eq: ", chk[D[P[[k]], u] - (A . P[[k + 1]] - P[[k + 1]] . At), Nn - 4 - 3 k]], {k, 1, K}];
+Print["P_1 entries at u=0 (graded shape: entry (b+1,b)): ", MatrixForm[P[[2]] /. u -> 0]];

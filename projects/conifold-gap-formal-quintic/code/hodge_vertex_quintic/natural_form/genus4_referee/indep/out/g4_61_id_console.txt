@@ -1,0 +1,12 @@
+====================================================================================================
+ind_run g4_61_id: 379 inner graphs, K = 6, NZ = 9, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.7 s
+   379 inner graphs to do with 4 processes, deadline 1500 s
+      379/379 done (56 s wall)
+   run: wall 56 s, CPU (this and earlier runs) 211 s, slowest [(22.8, 32), (10.1, 80), (10.1, 78), (9.9, 77), (9.6, 81), (9.1, 79)]
+   complete outer graphs: 379 of 379 (all)
+PASS 379 outer graphs equal the reference g4_split_g4_61_id.json, coefficients u^0..u^5
+      compared, by number of outer edges: [(0, 1), (1, 3), (2, 7), (3, 21), (4, 43), (5, 75), (6, 89), (7, 81), (8, 42), (9, 17)]; non-zero in my table: 379
+   vertex graph: ['[1800628594957292819 mod p]', '[98023593845640297 mod p]', '[1780872003898469270 mod p]', '[766442253212588587 mod p]', '[1595534844309977958 mod p]', '[623599753832064645 mod p]']
+   total: ['1/180000', '-7/300000', '[990327418757541961 mod p]', '[881391017106020249 mod p]', '[1024229431246899910 mod p]', '[2068325165885277547 mod p]']
+PASS GAP: total = (1/180000) t_c^-6 + 0 + .. + 0
+IND_RUN (g4_61_id) ALL CHECKS PASSED

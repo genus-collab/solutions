@@ -1,0 +1,12 @@
+independent series k = -4..7 through zhat^24: 0.5 s
+PASS (S) scalar recursion (typed from the note) == J_0(-4 zhat), orders <= 24
+PASS (S) scalar recursion == row 0 of the stored JSON, orders <= 40
+PASS (M) cyclic recursion (re-implemented) == J_{c_a}(-4 zhat), a = 0..4, orders <= 24  [Theorem B to this order]
+PASS (M) cyclic recursion == stored JSON, all rows, orders <= 40
+PASS (R1) g_{k-1} = g_k - (zhat/5)(k-1-4 theta) g_k, k = -3..7, orders <= 24
+PASS (R2) g_{k+5} = g_k + (k+2) zhat g_{k+1}, k = -4..2, orders <= 24
+PASS (R2) consequence: g_k != g_{k+5} for k = -4, -3, -1, 0, 1, 2 (only g_3 = g_{-2}): 'x^{-a} dx mod 5' is NOT an identity of classes
+PASS (P) symplecticity of the model rows (independent series), orders <= 24
+PASS (Y) (n - mu_a) g^a_n = (5/4)(g^{a+1}_{n+1} - g^a_{n+1}), mu = (-1/4,-1/2,1/2,1/4,0), orders < 24
+f_7, f_8 = -7749624763881/512000000000 720285444605727/16384000000000
+ALL PASS

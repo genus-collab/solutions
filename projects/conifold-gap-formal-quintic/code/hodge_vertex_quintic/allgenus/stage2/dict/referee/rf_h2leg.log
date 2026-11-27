@@ -1,0 +1,8 @@
+Phi_0^2 = (0) p^4 + (1) q: predicted bijective True; failing weights (w <= 40): []
+Phi_0^2 = (1) p^4 + (0) q: predicted bijective True; failing weights (w <= 40): []
+Phi_0^2 = (1) p^4 + (4) q: predicted bijective False; failing weights (w <= 40): [4, 8, 9, 12, 13, 14]
+Phi_0^2 = (1/4) p^4 + (1) q: predicted bijective False; failing weights (w <= 40): [4, 8, 9, 12, 13, 14]
+Phi_0^2 = (2) p^4 + (3) q: predicted bijective True; failing weights (w <= 40): []
+Phi_0^2 = (1/2) p^4 + (2) q: predicted bijective False; failing weights (w <= 40): [4, 8, 9, 12, 13, 14]
+Phi_0^2 = (-3) p^4 + (5) q: predicted bijective True; failing weights (w <= 40): []
+RESULT: PREDICTION CONFIRMED

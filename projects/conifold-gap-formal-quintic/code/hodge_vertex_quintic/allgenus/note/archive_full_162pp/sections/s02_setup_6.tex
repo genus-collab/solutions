@@ -1,0 +1,100 @@
+% Section 2, part 6 of 8: the model W_v, its rows and the T-system; M_0 and its symplecticity.
+
+%-------------------------------------------------------------------------------
+\subsection{The model}
+\label{sec:set-model}
+
+\begin{defn}[The model]
+\label{def:set-model}
+The \emph{model} is the Landau--Ginzburg potential $\Wv(p)\coloneqq p^4/4+v/p$, with the parameter $v$ and the primitive form $\dd p$. Its formal integrals $I_m(v,z)\coloneqq\int p^m\re^{-\Wv(p)/z}\dd p$ ($m\in\bbZ$) are symbols subject to the two relations
+\[
+\text{(Mod1)}\quad z\,\partial_vI_m=-I_{m-1},\qquad\text{(Mod2)}\quad mz\,I_{m-1}-I_{m+3}+v\,I_{m-2}=0,
+\]
+which express the differentiation under the integral sign ($\partial_v\Wv=p^{-1}$) and the vanishing of the integral of the exact form $\dd(p^m\re^{-\Wv/z})=\bigl(mp^{m-1}-(p^{m+3}-vp^{m-2})/z\bigr)\re^{-\Wv/z}\dd p$ ($\Wv'(p)=p^3-vp^{-2}$); in the note they are realised by residues at $p=0$ (\cref{def:gau-van}) and by the formal stationary phase at a critical point (\cref{lem:con-S2}). The charges and the signs are
+\[
+\nu=(\nu_0,\dots,\nu_4)\coloneqq(0,-1,3,2,1),\qquad\varepsilon=(\varepsilon_0,\dots,\varepsilon_4)\coloneqq(1,-1,-1,1,1),
+\]
+with indices in $\bbZ/5$; thus $\nu_a\equiv-a\bmod5$ and $\nu_a+\nu_{3-a}=2$. The \emph{rows} of the model are $Y_b\coloneqq\varepsilon_bI_{\nu_b}$, i.e.\ $Y=(I_0,-I_{-1},-I_3,I_2,I_1)$, and the dictionary of classes is $H^b\leftrightarrow\varepsilon_b\,p^{\nu_b}\dd p$. The model is homogeneous: under $p\mapsto kp$, $v\mapsto k^5v$, $z\mapsto k^4z$ the form $p^m\re^{-\Wv(p)/z}\dd p$ is multiplied by $k^{m+1}$. The critical points of $\Wv$ are the $p$ with $p^5=v$, and the critical values are $\frac54p^4$; colour $i$ corresponds to the critical point $p=\zeta^{-i}\varsigma$, $\varsigma^5=v$, where $\re^{-\Wv/z}=\re^{U_i/z}$ with $U_i\coloneqq-\frac54\zeta^i\varsigma^4$. Other normalisations of the model found in the literature are compared in \cref{sec:sgn}.
+\end{defn}
+
+\begin{prop}[The model system and the T-system]
+\label{prop:set-modrows}
+\begin{itemize}
+\item[(a)] If the symbols $I_m$ satisfy (Mod1) and (Mod2), the rows satisfy the \emph{model system}
+\[
+z\,\partial_vY_b=b^{\mathrm m}_b\,Y_{b+1}\quad(b\in\bbZ/5),\qquad b^{\mathrm m}=(b^{\mathrm m}_0,\dots,b^{\mathrm m}_4)\coloneqq\Bigl(1,-\frac1v,1,-1,-1\Bigr).
+\]
+\item[(b)] Fix a colour $i$, let $\varsigma$ be a formal fifth root of $v$, with $\partial_v\varsigma=1/(5\varsigma^4)$, and put $t\coloneqq z/\varsigma^4$; then $\partial_vU_i=-\zeta^i\varsigma^{-1}$ and $\partial_vt=-\frac45t/v$. A \emph{WKB column of colour $i$} is a column $\re^{U_i/z}y$ with $y\in\bbQ(\zeta)[\varsigma^{\pm1}]\fps z^5$, $\re^{U_i/z}$ being a formal exponential with $\partial_v\re^{U_i/z}=(\partial_vU_i/z)\re^{U_i/z}$; it is \emph{homogeneous} if $y_b=\varsigma^{\nu_b-1}F_b(t)$ with $F_b\in\bbQ(\zeta)\fps t$. A homogeneous WKB column solves the model system if and only if
+\begin{gather*}
+F_1=\mathcal T^{(i)}_{-1}F_0,\quad F_2=-\mathcal T^{(i)}_{-2}F_1,\quad F_3=\mathcal T^{(i)}_2F_2,\quad F_4=-\mathcal T^{(i)}_1F_3,\quad F_0=-\mathcal T^{(i)}_0F_4,\\
+\mathcal T^{(i)}_k\coloneqq-\zeta^i+\frac t5\Bigl(k-4t\frac{\dd}{\dd t}\Bigr).
+\end{gather*}
+This T-system has a unique solution $F^{(i)}$ with $F^{(i)}_0(0)=1$, and $F^{(i)}_b(0)=\varepsilon_b\zeta^{ib}$. For colour $0$ we write $\mathcal T_k\coloneqq\mathcal T^{(0)}_k$ and $\Fs_b\coloneqq F^{(0)}_b$; thus $\Fs_b(0)=\varepsilon_b$, and for instance $\Fs_0=1-\frac3{20}t+\frac9{800}t^2+O(t^3)$. Two homogeneous WKB solutions of colour $i$ differ by a constant factor; and if $Y\neq0$ is a homogeneous WKB solution of colour $i$ and $d(z)\in\bbQ(\zeta)\fps z$, then $d(z)Y$ is a WKB solution of colour $i$, which is homogeneous only if $d(z)$ is constant.
+\end{itemize}
+\end{prop}
+
+The last two sentences of (b) are the \emph{uniqueness half} of the proposition; they use no hypothesis on the formal quintic.
+
+\begin{proof}
+(a) By (Mod1), $z\partial_vY_0=-I_{-1}=Y_1$, $z\partial_vY_2=-z\partial_vI_3=I_2=Y_3$, $z\partial_vY_3=-I_1=-Y_4$ and $z\partial_vY_4=-I_0=-Y_0$. By (Mod1) and (Mod2) at $m=0$, $z\partial_vY_1=-z\partial_vI_{-1}=I_{-2}=v^{-1}I_3=-v^{-1}Y_2$.
+
+(b) With $\partial_v\varsigma^c=\frac c5\varsigma^{c-5}$ and $\partial_vt=-\frac45t\varsigma^{-5}$, the chain rule gives, for every $c$ and every $F\in\bbQ(\zeta)\fps t$,
+\[
+z\,\partial_v\bigl[\re^{U_i/z}\varsigma^cF(t)\bigr]=\re^{U_i/z}\varsigma^{c-1}\Bigl(-\zeta^iF+\frac t5\bigl(cF-4tF'\bigr)\Bigr)=\re^{U_i/z}\varsigma^{c-1}\,\mathcal T^{(i)}_cF .
+\]
+Hence $z\partial_vY_b=\re^{U_i/z}\varsigma^{\nu_b-2}\mathcal T^{(i)}_{\nu_b-1}F_b$, while $b^{\mathrm m}_bY_{b+1}=b^{\mathrm m}_b\re^{U_i/z}\varsigma^{\nu_{b+1}-1}F_{b+1}$. For $b\neq1$, $\nu_{b+1}-1=\nu_b-2$, and $b^{\mathrm m}_1\varsigma^{\nu_2-1}=-\varsigma^{-5}\varsigma^2=-\varsigma^{\nu_1-2}$; so the powers of $\varsigma$ match, and with $(\nu_b-1)_b=(-1,-2,2,1,0)$ and the signs of $b^{\mathrm m}$ the model system becomes the T-system.
+
+On monomials, $\mathcal T^{(i)}_kt^n=-\zeta^it^n+\frac{k-4n}5t^{n+1}$. The T-system is equivalent to its first four relations, which define $F_1,\dots,F_4$ from $F_0$, together with the closing relation $F_0=-\mathcal T^{(i)}_0\mathcal T^{(i)}_1\mathcal T^{(i)}_2\mathcal T^{(i)}_{-2}\mathcal T^{(i)}_{-1}F_0$. The operator on the right maps $t^n$ to $t^n+4n\zeta^{4i}t^{n+1}+O(t^{n+2})$, because $(-\zeta^i)^5=-1$, $(-\zeta^i)^4=\zeta^{4i}$, and the five indices $-1,-2,2,1,0$ have sum $0$, so that $\frac15\sum_j(k_j-4n)=-4n$. Hence the coefficient of $t^{n+1}$ in the closing relation reads
+\[
+4n\zeta^{4i}\coef{t^n}F_0+(\text{a combination of the }\coef{t^m}F_0,\ m<n)=0 .
+\]
+The pivot $4n\zeta^{4i}$ is non-zero for $n\geq1$; so the $\coef{t^n}F_0$, $n\geq1$, are determined recursively by $\coef{t^0}F_0$, and every value of $\coef{t^0}F_0$ gives a solution. The solutions form a one-dimensional space, and $F^{(i)}$ is the one with $F_0(0)=1$. At $t=0$ the operator $\mathcal T^{(i)}_k$ acts as $-\zeta^i$, which gives $F^{(i)}_1(0)=-\zeta^i$, $F^{(i)}_2(0)=-\zeta^{2i}$, $F^{(i)}_3(0)=\zeta^{3i}$, $F^{(i)}_4(0)=\zeta^{4i}$, i.e.\ $F^{(i)}_b(0)=\varepsilon_b\zeta^{ib}$. Two homogeneous WKB solutions of colour $i$ correspond to two solutions of the T-system, so they differ by a constant factor. Since $z$ is a constant for $\partial_v$, $d(z)Y$ solves the model system with the same exponential. Write $d(z)=\sum_kd_k\varsigma^{4k}t^k$ and $Y_0=\re^{U_i/z}\varsigma^{-1}F_0$ with $F_0(0)\neq0$ (as $Y\neq0$). If $d_1=\dots=d_{k-1}=0$, the coefficient of $t^k$ in $d(z)F_0$ is $d_0\coef{t^k}F_0+d_k\varsigma^{4k}F_0(0)$, which does not involve $\varsigma$ only if $d_k=0$; by induction, $d(z)Y$ is homogeneous only if $d_k=0$ for all $k\geq1$.
+\end{proof}
+
+\begin{defn}[The model $R$-matrix]
+\label{def:set-M0}
+Let $\Rhat^{\mathrm m}(t)$ be the $5\times5$ matrix with the entries (row $b$, colour column $i$)
+\[
+\Rhat^{\mathrm m,(i)}_b(t)\coloneqq\zeta^{i(b+1)}\Fs_b(\zeta^{-i}t),
+\]
+let $\Psi_0\coloneqq\Rhat^{\mathrm m}(0)$, with the entries $(\Psi_0)_{bi}=\varepsilon_b\zeta^{i(b+1)}$, and put
+\[
+\Mo(t)\coloneqq\Psi_0^{-1}\Rhat^{\mathrm m}(t),
+\]
+the model $R$-matrix in Teleman's colour-colour form. Here $\Psi_0^T\eta^{-1}\Psi_0=1$:
+\[
+(\Psi_0^T\eta^{-1}\Psi_0)_{ij}=\frac15\sum_{a\in\bbZ/5}\varepsilon_a\varepsilon_{3-a}\zeta^{i(a+1)+j(4-a)}=\frac15\sum_{a\in\bbZ/5}\zeta^{(i-j)(a+1)}=\delta_{ij},
+\]
+since $\varepsilon_a\varepsilon_{3-a}=1$ for every $a$. So $\Psi_0^{-1}=\Psi_0^T\eta^{-1}$, $\Rhat^{\mathrm m}=\Psi_0\Mo$, and $\Mo(0)=1$. The columns $\re^{U_i/z}\varsigma^{\nu_b-1}\Rhat^{\mathrm m,(i)}_b(z/\varsigma^4)$ are homogeneous WKB solutions of colour $i$ of the model system (step~(1) of the proof of \cref{lem:set-M0sympl}; also \cref{lem:gau-colmod}).
+\end{defn}
+
+\begin{lem}[Symplecticity of $\Mo$]
+\label{lem:set-M0sympl}
+$\Mo(-t)^T\Mo(t)=1$, and hence $\Mo(t)\Mo(-t)^T=1$; that is, $\Mo$ lies in Givental's group of symplectic $R$-matrices in an orthonormal basis.
+\end{lem}
+
+\begin{proof}
+The letters $A^{\mathrm m}$, $\mathcal U$ and $\cN$ are local. Everything is formal: the columns below are formal WKB columns, $\partial_v$ acts on $\bbQ(\zeta)[\varsigma^{\pm1}]\fps z$ by $\partial_v=(5\varsigma^4)^{-1}\partial_\varsigma$ and on the formal exponentials by $\partial_v\re^{U/z}=(\partial_vU/z)\re^{U/z}$.
+
+(1) \emph{Colour-$i$ columns.} In the variable $\varsigma$ the model system reads $(z/(5\varsigma^4))\,\partial_\varsigma Y_b=b^{\mathrm m}_b(\varsigma^5)Y_{b+1}$, which is invariant under the substitution $\varsigma\mapsto\zeta^{-i}\varsigma$ (this substitution commutes with $(5\varsigma^4)^{-1}\partial_\varsigma$, as $\zeta^{4i}=\zeta^{-i}$). It maps $U_0=-\frac54\varsigma^4$ to $U_i$, $t$ to $\zeta^{-i}t$, and $\varsigma^{\nu_b-1}$ to $\zeta^{i(b+1)}\varsigma^{\nu_b-1}$, since $\nu_b\equiv-b\bmod5$. Applied to the colour-$0$ solution $\re^{U_0/z}\varsigma^{\nu_b-1}\Fs_b(t)$ of \cref{prop:set-modrows}~(b), it shows that $Y^{(i)}_b\coloneqq\re^{U_i/z}\varsigma^{\nu_b-1}\Rhat^{\mathrm m,(i)}_b(t)$ is a formal solution, for every $i$.
+
+(2) \emph{Self-adjointness.} Let $A^{\mathrm m}\coloneqq\sum_bb^{\mathrm m}_bE_{b,b+1}$, so that the model system is $z\partial_vY=A^{\mathrm m}Y$. Then $(\eta^{-1}A^{\mathrm m})_{ac}=\frac15b^{\mathrm m}_{3-a}\delta_{c,4-a}$, and $\eta^{-1}A^{\mathrm m}$ is symmetric if and only if $b^{\mathrm m}_{a-1}=b^{\mathrm m}_{3-a}$ for all $a\in\bbZ/5$; this holds, since $b^{\mathrm m}_4=b^{\mathrm m}_3$ and $b^{\mathrm m}_0=b^{\mathrm m}_2$.
+
+(3) \emph{Constancy.} Let $Y$ be the matrix with the columns $Y^{(i)}$ and $\mathcal U(v,z)\coloneqq Y(v,-z)^T\eta^{-1}Y(v,z)$. As $Y(v,-z)$ solves $-z\partial_vY=A^{\mathrm m}Y$, $\partial_v\mathcal U=z^{-1}Y(v,-z)^T\bigl(\eta^{-1}A^{\mathrm m}-(A^{\mathrm m})^T\eta^{-1}\bigr)Y(v,z)=0$ by (2).
+
+(4) \emph{Reduction.} On the pairs $a+b\equiv3$ one has $\nu_a+\nu_b=2$, so the powers of $\varsigma$ cancel and $\mathcal U_{ij}=\re^{(U_j-U_i)/z}\cN_{ij}(t)$ with $\cN(t)\coloneqq\Rhat^{\mathrm m}(-t)^T\eta^{-1}\Rhat^{\mathrm m}(t)$, a matrix over $\bbQ(\zeta)\fps t$. With $\partial_vU_k=-\zeta^k\varsigma^{-1}$, $\partial_vt=-\frac45t/v$ and $z=t\varsigma^4$, $\partial_v\mathcal U_{ij}=0$ is equivalent to
+\[
+(\zeta^j-\zeta^i)\,\cN_{ij}(t)+\tfrac45t^2\,\cN_{ij}'(t)=0 .
+\]
+For $i\neq j$ the lowest non-zero coefficient of $\cN_{ij}$ would have to vanish, so $\cN_{ij}=0$; for $i=j$, $\cN_{ii}'=0$, so $\cN_{ii}=\cN_{ii}(0)=(\Psi_0^T\eta^{-1}\Psi_0)_{ii}=1$ (\cref{def:set-M0}). Hence $\Rhat^{\mathrm m}(-t)^T\eta^{-1}\Rhat^{\mathrm m}(t)=1$.
+
+(5) \emph{Teleman form.} From $\Psi_0^T\eta^{-1}\Psi_0=1$ we get $\Psi_0\Psi_0^T=\eta$, and so
+\[
+\Mo(-t)^T\Mo(t)=\Rhat^{\mathrm m}(-t)^T(\Psi_0\Psi_0^T)^{-1}\Rhat^{\mathrm m}(t)=\Rhat^{\mathrm m}(-t)^T\eta^{-1}\Rhat^{\mathrm m}(t)=1 .
+\]
+Finally $\Mo(-t)^T$ is a left inverse of the square matrix $\Mo(t)$ over the commutative ring $\bbQ(\zeta)\fps t$, hence also a right inverse.
+\end{proof}
+
+The proof uses only \cref{prop:set-modrows}; the self-adjointness of step~(2) is what it rests on. It also gives the identity $\Rhat^{\mathrm m}(-t)^T\eta^{-1}\Rhat^{\mathrm m}(t)=1$ for the rows of the model in the flat basis.
+
+\input{sections/s02_setup_7}

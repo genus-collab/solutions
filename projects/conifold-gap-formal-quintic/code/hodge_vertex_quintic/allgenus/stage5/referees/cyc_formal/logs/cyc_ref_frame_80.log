@@ -1,0 +1,49 @@
+# logs/cyc_ref_frame_80.log (py -I -B cyc_ref_frame.py 80)
+PASS F1 project frame (0, 0), mu = 1, nu = 1: B(y_0, y_1) = 0; adapted basis with Bmat = signed permutation (Bmat^-1 = -Bmat)
+PASS F1 project frame (0, 0), mu = 1, nu = 1: the adapted basis starts with y_0 and y_1
+PASS F1 project frame (0, 0), mu = 1, nu = 1: tau_0 = tau_1 = tau_2 = 0 and u y_0^2 Dt^3 tau_3 = 1 below u^76
+PASS F1 project frame (0, 0), mu = 1, nu = 1: Y = th^2 f_2 = tau_3 and th^2 f_3 = -t Y
+PASS F2 project frame (0, 0), mu = 1, nu = 1: M = PF4 coefficientwise (D^0..D^4, leading u) below u^77
+PASS F2 project frame (0, 0), mu = 1, nu = 1: u y_0^2 Dt^3 th^2(y/y_0) = c_2 - c_3 t on y_2, y_3' (= 1 and -t)
+PASS F3 project frame (0, 0), mu = 1, nu = 1: prod c_a = 1/u; O o (1/y_0) = (1/y_0) o D o PF4 below u^76 (closing relation <=> PF5)
+PASS F3 project frame (0, 0), mu = 1, nu = 1: UR/GI b_a = -c_a/(1-u) for a = 0..4; prod b = -1/(u (1-u)^5)
+PASS F3 frame (0,0): varpi_0 = 1 + O(u^3), t_c = u + 7/10 u^2 + 41/75 u^3 + O(u^4) (UR s.1, GI)
+PASS F1 project frame (1/3, -2/7), mu = 1, nu = 1: B(y_0, y_1) = 0; adapted basis with Bmat = signed permutation (Bmat^-1 = -Bmat)
+PASS F1 project frame (1/3, -2/7), mu = 1, nu = 1: the adapted basis starts with y_0 and y_1
+PASS F1 project frame (1/3, -2/7), mu = 1, nu = 1: tau_0 = tau_1 = tau_2 = 0 and u y_0^2 Dt^3 tau_3 = 1 below u^76
+PASS F1 project frame (1/3, -2/7), mu = 1, nu = 1: Y = th^2 f_2 = tau_3 and th^2 f_3 = -t Y
+PASS F2 project frame (1/3, -2/7), mu = 1, nu = 1: M = PF4 coefficientwise (D^0..D^4, leading u) below u^77
+PASS F2 project frame (1/3, -2/7), mu = 1, nu = 1: u y_0^2 Dt^3 th^2(y/y_0) = c_2 - c_3 t on y_2, y_3' (= 1 and -t)
+PASS F3 project frame (1/3, -2/7), mu = 1, nu = 1: prod c_a = 1/u; O o (1/y_0) = (1/y_0) o D o PF4 below u^76 (closing relation <=> PF5)
+PASS F3 project frame (1/3, -2/7), mu = 1, nu = 1: UR/GI b_a = -c_a/(1-u) for a = 0..4; prod b = -1/(u (1-u)^5)
+PASS F1 project frame (7/11, -3/5), mu = 1, nu = 1: B(y_0, y_1) = 0; adapted basis with Bmat = signed permutation (Bmat^-1 = -Bmat)
+PASS F1 project frame (7/11, -3/5), mu = 1, nu = 1: the adapted basis starts with y_0 and y_1
+PASS F1 project frame (7/11, -3/5), mu = 1, nu = 1: tau_0 = tau_1 = tau_2 = 0 and u y_0^2 Dt^3 tau_3 = 1 below u^76
+PASS F1 project frame (7/11, -3/5), mu = 1, nu = 1: Y = th^2 f_2 = tau_3 and th^2 f_3 = -t Y
+PASS F2 project frame (7/11, -3/5), mu = 1, nu = 1: M = PF4 coefficientwise (D^0..D^4, leading u) below u^77
+PASS F2 project frame (7/11, -3/5), mu = 1, nu = 1: u y_0^2 Dt^3 th^2(y/y_0) = c_2 - c_3 t on y_2, y_3' (= 1 and -t)
+PASS F3 project frame (7/11, -3/5), mu = 1, nu = 1: prod c_a = 1/u; O o (1/y_0) = (1/y_0) o D o PF4 below u^76 (closing relation <=> PF5)
+PASS F3 project frame (7/11, -3/5), mu = 1, nu = 1: UR/GI b_a = -c_a/(1-u) for a = 0..4; prod b = -1/(u (1-u)^5)
+PASS F1 project frame (-5/2, 4), mu = -3, nu = 7/2: B(y_0, y_1) = 0; adapted basis with Bmat = signed permutation (Bmat^-1 = -Bmat)
+PASS F1 project frame (-5/2, 4), mu = -3, nu = 7/2: the adapted basis starts with y_0 and y_1
+PASS F1 project frame (-5/2, 4), mu = -3, nu = 7/2: tau_0 = tau_1 = tau_2 = 0 and u y_0^2 Dt^3 tau_3 = 1 below u^76
+PASS F1 project frame (-5/2, 4), mu = -3, nu = 7/2: Y = th^2 f_2 = tau_3 and th^2 f_3 = -t Y
+PASS F2 project frame (-5/2, 4), mu = -3, nu = 7/2: M = PF4 coefficientwise (D^0..D^4, leading u) below u^77
+PASS F2 project frame (-5/2, 4), mu = -3, nu = 7/2: u y_0^2 Dt^3 th^2(y/y_0) = c_2 - c_3 t on y_2, y_3' (= 1 and -t)
+PASS F3 project frame (-5/2, 4), mu = -3, nu = 7/2: prod c_a = 1/u; O o (1/y_0) = (1/y_0) o D o PF4 below u^76 (closing relation <=> PF5)
+PASS F1 critic frame (1/3, -2/7), mu = 1, nu = 1: B(y_0, y_1) = 0; adapted basis with Bmat = signed permutation (Bmat^-1 = -Bmat)
+PASS F1 critic frame (1/3, -2/7), mu = 1, nu = 1: the adapted basis starts with y_0 and y_1
+PASS F1 critic frame (1/3, -2/7), mu = 1, nu = 1: tau_0 = tau_1 = tau_2 = 0 and u y_0^2 Dt^3 tau_3 = 1 below u^76
+PASS F1 critic frame (1/3, -2/7), mu = 1, nu = 1: Y = th^2 f_2 = tau_3 and th^2 f_3 = -t Y
+PASS F2 critic frame (1/3, -2/7), mu = 1, nu = 1: M = PF4 coefficientwise (D^0..D^4, leading u) below u^77
+PASS F2 critic frame (1/3, -2/7), mu = 1, nu = 1: u y_0^2 Dt^3 th^2(y/y_0) = c_2 - c_3 t on y_2, y_3' (= 1 and -t)
+PASS F3 critic frame (1/3, -2/7), mu = 1, nu = 1: prod c_a = 1/u; O o (1/y_0) = (1/y_0) o D o PF4 below u^76 (closing relation <=> PF5)
+PASS F3 critic frame (1/3, -2/7), mu = 1, nu = 1: UR/GI b_a = -c_a/(1-u) for a = 0..4; prod b = -1/(u (1-u)^5)
+PASS control (fails as it must): F2 control, frame (1/3,-2/7), t = f_1/y_0 (non-isotropic pair): M = PF4
+PASS control (fails as it must): F2 control, frame (1/3,-2/7), t = (f_1 + f_2/2)/y_0 (non-isotropic pair): M = PF4
+PASS control (fails as it must): F2 control: middle factor u y_0^2 Dt^3 instead of Dt^2: M = PF4
+PASS control (fails as it must): F3 control: c_1 = 1/(u y_0^2 Dt^3): O o (1/y_0) = (1/y_0) D PF4
+PASS control (fails as it must): F3 control: c_2 <-> c_3: O o (1/y_0) = (1/y_0) D PF4
+PASS F1 observation: for t = f_1/y_0 (non-isotropic) tau_0 = tau_1 = tau_2 = 0 still hold (Frobenius basis and Binv)
+PASS control (fails as it must): F1 control, t = f_1/y_0: u y_0^2 Dt^3 th^2(f_2/y_0) lies in span(1, t)
+CYC_REF_FRAME 80: ALL CHECKS PASSED   (18.6 s)

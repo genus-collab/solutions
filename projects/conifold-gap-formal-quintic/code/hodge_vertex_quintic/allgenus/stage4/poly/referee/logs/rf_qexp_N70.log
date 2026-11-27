@@ -1,0 +1,17 @@
+rf_qexp: colour-0 WKB at large radius (q-expansion), n <= 70, primes 2^61-1, 2^89-1
+worker's f_q read from ../logs/pp_run_norm_Q14.log: q = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+p = 2305843009213693951:
+  (T) q-series of ph_n terminate at degree floor(4n/5) for all n <= 70: True  [(H) for the 56 values 5 not| n]
+  degrees: deg ph_n <= floor(4n/5): True; equality fails exactly for n in [2]
+  (M) ph_n(0) = model [t^n] F_0 for n <= 70: True
+  (W) f_m = worker's exact values (mod p) for 14 values m = 1..14: True
+p = 618970019642690137449562111:
+  (T) q-series of ph_n terminate at degree floor(4n/5) for all n <= 70: True  [(H) for the 56 values 5 not| n]
+  degrees: deg ph_n <= floor(4n/5): True; equality fails exactly for n in [2]
+  (M) ph_n(0) = model [t^n] F_0 for n <= 70: True
+  (W) f_m = worker's exact values (mod p) for 14 values m = 1..14: True
+ph_5 = 47735919/128000000 - (203511/250000)u + (548547/1000000)u^2 - (6789/62500)u^3 + (4537/3937500)u^4 (POLY s.1), both primes: True
+CONTROL A_n(0) shifted by {3: 1}: termination first fails at n = 3 (predicted 3): fails as predicted
+CONTROL A_n(0) shifted by {5: 1}: termination first fails at n = 6 (predicted 6): fails as predicted
+CONTROL A_n(0) shifted by {10: 7}: termination first fails at n = 11 (predicted 11): fails as predicted
+RESULT rf_qexp n <= 70: PASS  [0.4 s]

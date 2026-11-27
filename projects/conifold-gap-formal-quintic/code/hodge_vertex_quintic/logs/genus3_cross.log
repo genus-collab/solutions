@@ -1,0 +1,5 @@
+cross-prime: 494 values reconstructed at 2^89-1 with the default bound 1e10 compared, 0 mismatches, 1983 not reconstructible at that bound (compared by nothing), 0 missing in the 2^61-1 state
+   1e13-fallback reconstructions: 509, of which 164 confirmed at 2^61-1 and 345 NOT confirmed (spurious reconstructions; residues are the values of record there)
+structural data (ranks, consistency, dimensions, regular sets, J rank/degree) identical at both primes: True []
+headline (2^89-1 reconstructions): total F_3 u-coefficients ['1/25200', '-1/9000', '407/3780000', '-151/3780000', '-29663/9072000000', '~364981/75600000000']; total in t_c ['1/25200', '0', '0', '0']; g1 graphs 2, 5 = -1463/600000, 232351/120000000; vertex [u^0] = 1/25200
+ALL CROSS-PRIME CHECKS PASSED

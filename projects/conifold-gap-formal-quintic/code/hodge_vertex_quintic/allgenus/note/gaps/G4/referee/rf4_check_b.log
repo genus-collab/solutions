@@ -1,0 +1,7 @@
+B1/B2 kappa=1 (mismatches over 4 points): TR = closed form: 0, GS(s=+1) = TR: 0, GS(s=-1) = TR: 4, ctrl GS(R^-1 -> R, s=+1) = TR: 4
+   sample p0 = 3: TR -25688745/27437936768, GS(+1) -25688745/27437936768, GS(-1) -13829535/27437936768
+B1/B2 kappa=4 (mismatches over 4 points): TR = closed form: 0, GS(s=+1) = TR: 0, GS(s=-1) = TR: 4, ctrl GS(R^-1 -> R, s=+1) = TR: 4
+   sample p0 = 3: TR -25688745/109751747072, GS(+1) -25688745/109751747072, GS(-1) -13829535/109751747072
+B3 Res_(varsigma_b) x^k omega_11 = 0 (35 residues): 0 non-zero; control p^k (k=1..9): 40 of 45 non-zero; Res_0 x^5 omega_11 = -15/4
+B4 <-log p>_1 (v = 1): ray-pushed residues -1/12, closed-form integral -1/12; control (wrong involution) -29/96
+ALL CHECKS PASSED

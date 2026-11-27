@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------------------------------------
+(E) residual hypersurface of the circulant class and explicit O(u^2) solutions, p = 2^61-1
+PASS dim L_6 = 6 and dim H_5 = 5
+PASS cofactor left-kernel vector annihilates C at a random Delta_L (rank 4 confirmed)
+   random line #0 in L_6: F restricted has degree 6, 4 root(s) in F_p
+   random line #1 in L_6: F restricted has degree 6, 4 root(s) in F_p
+   random line #2 in L_6: F restricted has degree 6, 3 root(s) in F_p
+   random line #3 in L_6: F restricted has degree 6, 4 root(s) in F_p
+PASS F has degree <= 6 along every random line (degree 4 cofactors x degree 2 quadrics): [6, 6, 6, 6]
+PASS F_p-points of the residual hypersurface Y found on random lines: 15
+   (F has 15 F_p-roots on 4 random lines; a degree-6 polynomial has on average one root in F_p)
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+   point of Y: C h = -q consistent (rank 4, 1-dim fibre); Q_Gamma(N_1) all zero: True; O(u) equations: True
+PASS an explicit non-tautological circulant N_1 with all five two-edge quadrics zero and the four O(u) equations satisfied was constructed
+   circulant coordinates of Delta = N_1 - N_1^taut (['c1_0', 'c1_1', 'c1_2', 'c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_0', 'c5_1', 'c5_2', 'c6_1', 'c6_2']): ['[2188344964121873561 mod p]', '[1670606768587674883 mod p]', '[1056427187764890773 mod p]', '[2099663762053987505 mod p]', '[114837101655156909 mod p]', '[193050214996238433 mod p]', '[539875287519915832 mod p]', '[429094262028675961 mod p]', '[1398351509001201702 mod p]', '[1895578613955288836 mod p]', '[157816529385175689 mod p]', '[491054704741402208 mod p]', '[545781225618618392 mod p]', '[1134004275757060303 mod p]', '0']
+PASS full class: dim of the genus-2 kernel in the low part = 38, of the genus-3 kernel in the high part = 33
+PASS full class: q_HH = 0 on the 35 high coordinates
+PASS full class: the 5 x 33 cross-term system has rank 5 for random Delta_L (every low-order perturbation extends to an O(u^2) solution: X^full is rational over Q(zeta)): [5, 5, 5]
+PASS full class: the extended random N_1 satisfies all five quadrics and the four O(u) equations
+      verify circ 2/17 jobs done (9 s)
+      verify circ 4/17 jobs done (10 s)
+      verify circ 6/17 jobs done (10 s)
+      verify circ 8/17 jobs done (10 s)
+      verify circ 10/17 jobs done (15 s)
+      verify circ 12/17 jobs done (16 s)
+      verify circ 14/17 jobs done (30 s)
+      verify circ 16/17 jobs done (299 s)
+      verify circ 17/17 jobs done (1153 s)
+   verification pass (circ solution; 17 graphs, full hatted theory, 21-node vertex interpolation): 1153 s
+      graph  1 (E=0): ['1/25200', '-1/9000', '[618432974567408202 mod p]', '[1132807754954366832 mod p]', '[809862491971010307 mod p]']
+      graph  2 (E=1): ['0', '0', '[124074112512444784 mod p]', '[1988364970449635857 mod p]', '[1602919279478543872 mod p]']
+      graph  5 (E=1): ['0', '0', '[950117714220314420 mod p]', '[1495098049992689175 mod p]', '[1931272188072991572 mod p]']
+      graph  3 (E=2): ['0', '0', '0', '[1689280130079956333 mod p]', '[1015594370343954225 mod p]']
+      graph  6 (E=2): ['0', '0', '0', '[421081081915124431 mod p]', '[1940783595842387737 mod p]']
+      graph  7 (E=2): ['0', '0', '0', '[1107531035026003446 mod p]', '[103862865213788201 mod p]']
+      graph  8 (E=2): ['0', '0', '0', '[324872629788169347 mod p]', '[248006079672719544 mod p]']
+      graph 17 (E=2): ['0', '0', '0', '[870595069350101709 mod p]', '[2182347010236118987 mod p]']
+      graph  4 (E=3): ['0', '0', '0', '[2087854247287773507 mod p]', '[506881508825485896 mod p]']
+      graph  9 (E=3): ['0', '0', '0', '[2047263186856930123 mod p]', '[2114856822789686721 mod p]']
+      graph 10 (E=3): ['0', '0', '0', '[216991822484945730 mod p]', '[1792824321274009912 mod p]']
+      graph 11 (E=3): ['0', '0', '0', '[1545800926879492144 mod p]', '[920130273375744875 mod p]']
+      graph 12 (E=3): ['0', '0', '0', '[1697149153700516432 mod p]', '[831553878145593700 mod p]']
+      graph 18 (E=3): ['0', '0', '0', '[1729716285860392837 mod p]', '[1571464473638956028 mod p]']
+      graph 19 (E=3): ['0', '0', '0', '[2139203271115667448 mod p]', '[2148636988072320099 mod p]']
+      graph 20 (E=3): ['0', '0', '0', '[1486020734121059993 mod p]', '[851863510775665578 mod p]']
+      graph 32 (E=3): ['0', '0', '0', '[246866834834265860 mod p]', '[344721989573256677 mod p]']
+PASS VERIFY (circ, independent full pass): one-edge graphs vanish through u^1 and all five two-edge graphs through u^2 (regular at O(u^2))
+   three-edge graphs [u^3] (cubic conditions, not imposed): {4: '[2087854247287773507 mod p]', 9: '[2047263186856930123 mod p]', 10: '[216991822484945730 mod p]', 11: '[1545800926879492144 mod p]', 12: '[1697149153700516432 mod p]', 18: '[1729716285860392837 mod p]', 19: '[2139203271115667448 mod p]', 20: '[1486020734121059993 mod p]', 32: '[246866834834265860 mod p]'}
+      verify full 2/17 jobs done (8 s)
+      verify full 4/17 jobs done (8 s)
+      verify full 6/17 jobs done (8 s)
+      verify full 8/17 jobs done (9 s)
+      verify full 10/17 jobs done (13 s)
+      verify full 12/17 jobs done (14 s)
+      verify full 14/17 jobs done (28 s)
+      verify full 16/17 jobs done (297 s)
+      verify full 17/17 jobs done (1156 s)
+   verification pass (full solution; 17 graphs, full hatted theory, 21-node vertex interpolation): 1156 s
+      graph  1 (E=0): ['1/25200', '-1/9000', '[112905160448010702 mod p]', '[2251340725485674698 mod p]', '[1084119814411146343 mod p]']
+      graph  2 (E=1): ['0', '0', '[2281152395487043343 mod p]', '[1856166043316802848 mod p]', '[1750545384880943179 mod p]']
+      graph  5 (E=1): ['0', '0', '[1604410254578807312 mod p]', '[718524657548091085 mod p]', '[486789072718978346 mod p]']
+      graph  3 (E=2): ['0', '0', '0', '[817036214921883605 mod p]', '[566905691366625215 mod p]']
+      graph  6 (E=2): ['0', '0', '0', '[1540673795969339855 mod p]', '[586759430037098123 mod p]']
+      graph  7 (E=2): ['0', '0', '0', '[985271876766988045 mod p]', '[942447117516396345 mod p]']
+      graph  8 (E=2): ['0', '0', '0', '[2160089035908444226 mod p]', '[1342815138758794187 mod p]']
+      graph 17 (E=2): ['0', '0', '0', '[1667676328940882751 mod p]', '[620845596266427656 mod p]']
+      graph  4 (E=3): ['0', '0', '0', '[1981975321170851014 mod p]', '[916895906575017734 mod p]']
+      graph  9 (E=3): ['0', '0', '0', '[238375490791367625 mod p]', '[923675936422522742 mod p]']
+      graph 10 (E=3): ['0', '0', '0', '[1272189867255448379 mod p]', '[708641721139746473 mod p]']
+      graph 11 (E=3): ['0', '0', '0', '[1749909150463064696 mod p]', '[1969604599655139825 mod p]']
+      graph 12 (E=3): ['0', '0', '0', '[372689845852650588 mod p]', '[1661921552712309502 mod p]']
+      graph 18 (E=3): ['0', '0', '0', '[1965766867631756647 mod p]', '[1845196377431237185 mod p]']
+      graph 19 (E=3): ['0', '0', '0', '[1682367867196236454 mod p]', '[1092574159697567017 mod p]']
+      graph 20 (E=3): ['0', '0', '0', '[973116420261957326 mod p]', '[714007378689316469 mod p]']
+      graph 32 (E=3): ['0', '0', '0', '[2299170684429345313 mod p]', '[1955254889769128875 mod p]']
+PASS VERIFY (full, independent full pass): one-edge graphs vanish through u^1 and all five two-edge graphs through u^2 (regular at O(u^2))
+   three-edge graphs [u^3] (cubic conditions, not imposed): {4: '[1981975321170851014 mod p]', 9: '[238375490791367625 mod p]', 10: '[1272189867255448379 mod p]', 11: '[1749909150463064696 mod p]', 12: '[372689845852650588 mod p]', 18: '[1965766867631756647 mod p]', 19: '[1682367867196236454 mod p]', 20: '[973116420261957326 mod p]', 32: '[2299170684429345313 mod p]'}
+QUADSOLVE2 ALL CHECKS PASSED

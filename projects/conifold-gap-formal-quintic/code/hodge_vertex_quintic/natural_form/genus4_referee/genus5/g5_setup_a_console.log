@@ -1,0 +1,6 @@
+====================================================================================================
+g5_setup mode a, prime 2^89-1, python 3.14.6
+   genus-4 setup 6.3 s (fast graphs)
+PASS genus 4: the fast list is a relabelling of the original 379 graphs
+PASS genus 4, 2^89-1, natural M: Split.graph on the fast graph list = stored per-inner-graph tables for the 36 inner graphs with stored time < 1.0 s (11 s)
+G5_SETUP ALL CHECKS PASSED

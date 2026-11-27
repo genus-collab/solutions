@@ -1,0 +1,64 @@
+% Appendix: signs and normalisations (label prefix sgn). Conventions and dictionaries only.
+% Continued in part 2.
+\section{Signs and normalisations}
+\label{sec:sgn}
+
+This appendix collects the sign conventions and normalisations, and the dictionaries to the sources quoted. Every entry is a convention, or a dictionary derived at the place cited; the body refers to it only for orientation. The comparison with \cite{CGYZ26} at the end is proved there, for the definitions of \cite{CGYZ26} as recalled there, and enters no proof of the body.
+
+%-------------------------------------------------------------------------------
+\subsection{The \texorpdfstring{$R$}{R}-matrix and its action}
+\label{sec:sgn-R}
+
+\emph{Givental's convention.} $R(z)=1+O(z)$ is taken in Givental's convention, $S\sim R\,\re^{u/z}$, with legs $R^{-1}(\psi)$. That the columns $R(z)\tilde e_i\,\re^{u_i/z}$ solve $z\de_Tv=H*v$ along $t=T(q)H$ is not part of the convention but the quoted property (QRR) (\cref{def:set-rows}~(b), \cref{thm:set-qrr}); and $R(-z)^T\eta R(z)=\eta$ in the flat basis (\cref{def:set-rows}~(a)); equivalently $R(z)^{-1}=R(-z)^*$, the adjoint with respect to $\eta$.
+
+\emph{The action.} The action is that of \cite[Def.~2.2]{PPZ15}, also the convention of Givental and Teleman by the remark after it: the legs carry $R^{-1}(\psi)$, and the edge is $E_R(\psi,\psi')=\bigl(\eta^{-1}-R^{-1}(\psi)\,\eta^{-1}R^{-1}(\psi')^T\bigr)/(\psi+\psi')$, a power series because $R$ is symplectic \cite[Remark~2.1, (6)]{PPZ15}. The action of \cite[\S2.3]{Dunin-Barkowski:2015caa} is the same up to the factor $1/|\Aut\Gamma|$, omitted there and present in \cite[(2-26)]{DuninBarkowski:2012bw} and \cite[Def.~2.2]{PPZ15}, and up to the sign of the dilaton leaves (legs $R^{-1}(\psi)$ acting on column vectors, the row index being the outgoing colour); by \cite[Remark~2.1]{Dunin-Barkowski:2015caa} Givental's matrix $R$ is the transpose of theirs. The unit-preserving action is $R.\Omega=R\,\ttr_R\,\Omega$ with the translation $\ttr_R(z)=z\,1-z\,R^{-1}(z)\,1$ of \cite[Def.~2.13]{PPZ15}, the translation $T_b$ of \cite[Prop.~2.12]{PPZ15}; so the dilaton leaves carry $+\psi\bigl(1-R^{-1}(\psi)1\bigr)$. This is also the sign of the dilaton leaves of topological recursion (\cref{prop:mod-Rtr}) and of \cite[\S2.3]{DuninBarkowski:2012bw}; \cite[\S2.3]{Dunin-Barkowski:2015caa} prints the opposite sign. $\mathrm{Cont}_\Gamma$ includes the factor $|\Aut\Gamma|^{-1}$ (\cref{def:set-graphsum}).
+
+\emph{The colour basis.} In the basis of idempotents $e_i=\Delta_i^{-1/2}\tilde e_i$, $\eta(e_i,e_j)=\delta_{ij}/\Delta_i$, a vertex of genus $g_v$ and colour $i$ carries $\Delta_i^{g_v-1}$; the edge between colours $i$ and $j$ is
+\[
+\frac{\delta_{ij}\Delta_i-\Delta_i^{1/2}\Delta_j^{1/2}\sum_{a,b}\eta^{ab}\Qr^{(i)}_a(-\psi)\Qr^{(j)}_b(-\psi')}{\psi+\psi'},\qquad\eta^{ab}=\tfrac15\delta_{a+b\equiv3\,(5)};
+\]
+and the dilaton leaf of colour $i$ in degree $k\geq2$ is $(-1)^k\Delta_i^{1/2}\coef{z^{k-1}}\Qr^{(i)}_0(z)$. These are \cite[Defs.~2.2, 2.13]{PPZ15} in the basis $e_i$; the proofs use the form of \cite{PPZ15}.
+
+\emph{Lowered and vector forms.} Solutions $\phi$ and gauges are written in lowered components $Y_a=\eta(H^a,\phi)$ (\cref{conv:tra-forms}). As a matrix $\eta$ is $5$ times the permutation matrix of $a\leftrightarrow3-a$; a gauge $P$ acting on lowered components acts on vectors by $P^{\mathrm{vec}}=\eta^{-1}P\eta$, and the dilaton factor is $d:=(P_0)_{33}=(P_0^{\mathrm{vec}})_{00}$ (\cref{def:tra-dressing}). The condition (A) is stated in lowered form, \cref{lem:tra-E} and the leaf point of \cref{lem:tra-T} in vector form; parts (b), (d) of \cref{lem:tra-T} are computed in lowered form.
+
+%-------------------------------------------------------------------------------
+\subsection{Variables, colours and quantum Riemann--Roch}
+\label{sec:sgn-var}
+
+\emph{Operators and points.} $\Dq=q\,\dd/\dd q=-(1-u)\,\dd/\dd u$, so $z\Dq=-(1-u)z\de_u$; along the mirror coordinate $\de_T=C_1^{-1}\Dq$ (\cref{prop:set-cyclicLR}); in \cref{sec:gau-cyc}, $\de_t=(\Dq t)^{-1}\Dq$ (\cref{def:gau-conc}); $\theta_u=u\,\dd/\dd u$, $\theta_{\zh}=\zh\,\dd/\dd\zh$ (\cref{lem:gau-HPF}). The points are those of \cref{def:set-points}.
+
+\emph{Colours.} Colour $i\in\bbZ/5$ is the fixed point $p_i$ of the torus, of weight $\lambda_i=\zeta^i$; the eigenvalue $\zeta^iL$ of $C_1H*$, so that $\Dq u_i=\zeta^iL$ (\cref{cor:set-cyclicPF5}); and the critical point $\sigma=\zeta^iL$ of the Mellin--Barnes summand (\cref{def:gam-c}). The colour covariances are $\Phi_i(\zh,u)=\Phi_0(\zeta^{-i}\zh,u)$ (\cref{lem:gau-colrows}), $\Dn_i(z)=\Dn_0(\zeta^{-i}z)$ (\cref{cor:gau-colours}) and $h_{\bw_i}(z)=h(\zeta^{-i}z)$ (\cref{lem:set-hrot}). The square roots are fixed by $\zeta^{1/2}:=\zeta^3$: $\Delta_i^{1/2}=\zeta^{4i}C_0/L$, and $(W^0_i)^{-1/2}=\zeta^i$ for $W^0_i=\zeta^{3i}$ (\cref{def:set-frob}).
+
+\emph{Flat and hatted.} The flat theory uses $(u,z)$, the classes $H^a$ and the rows $\Qr$; the hatted theory (\cref{def:set-hat}) uses $(u,\zh)$, $z=s^4\zh$, the classes $\hat H^a=s^{1-\nu_a}H^a$, the rows $\hat\Qr_a=s^{1-\nu_a}\Qr_a$, the hatted TFT $\hat\TFT_{g,n}(\tilde e_i,\dots,\tilde e_i)=(\zeta^{4i}\hat x)^{2g-2+n}$ with $\hat x=\varpi_0$, the unit $\hat1=s\,1$ and the rescaling $\Omega_{g,n}\mapsto s^{-(2g-2+n)}\Omega_{g,n}$; $\eta$ is preserved, since $\nu_a+\nu_b=2$ on the $\eta$-pairs $(0,3)$, $(1,2)$, $(4,4)$; and $G_\Gamma=u^{2g-2}T_\Gamma$ (\cref{lem:flh-hat}).
+
+\emph{Quantum Riemann--Roch.} The tangent directions at $p_i$ contribute their weights $\lambda_i-\lambda_j$, $j\neq i$, and the Euler-class twist minus its fibre weight $5\lambda_i$ \cite[(10)]{LP20}; so $\bw_i=\{\zeta^i-\zeta^j\}_{j\neq i}\cup\{-5\zeta^i\}$ and $h_1=-\frac3{20}$ (\cref{thm:set-qrr,rmk:set-qrrsign}), used in the form $\Phi_i(z,1)=h_{\bw_i}(z)$ (\cref{eq:set-qrr}). The Bernoulli numbers and polynomials are those of \cref{def:fsp-stirling}, $\xi\,\re^{\theta\xi}/(\re^\xi-1)=\sum_nB_n(\theta)\xi^n/n!$ \cite[24.2.3]{DLMF}, $B_n=B_n(0)$; in $h_{\bw}$, $\Gst$ and Stirling's series only the numbers $B_{2k}$, $k\geq1$, enter, so there the conventions $\xi/(\re^\xi-1)$ and $\xi/(1-\re^{-\xi})$ give the same formulas ($B_1=-\frac12$ occurs only inside the proof of \cref{lem:fsp-stirfe}). The polynomials $B_n(\theta)$ of \cref{lem:fsp-dlmf5118} and the values $B_{5l+1}(\frac15)$ in $\Ginf$ (\cref{thm:gam-ginf}) depend on the convention, which is that of \cite[24.2.3]{DLMF}; the other one would replace $B_n(\theta)$ by $B_n(\theta+1)=B_n(\theta)+n\theta^{n-1}$.
+
+%-------------------------------------------------------------------------------
+\subsection{Normalisations of the model}
+\label{sec:sgn-model}
+
+The note uses one normalisation of the model, $\Wv(p)=p^4/4+v/p$ with the integrands $p^m\re^{-\Wv(p)/z}\dd p$ and the curve $x=\Wv(p)$, $y=p$ (\cref{def:set-model,def:mod-curve}); its branch points are $\varsigma_b=\zeta^{-b}\varsigma$, $\varsigma^5=v$, with $x''(\varsigma_b)=5\varsigma_b^2$ and the pairwise distinct critical values $x(\varsigma_b)=\frac54\zeta^b\varsigma^4$. \Cref{tab:sgn-model} gives the other normalisations that occur in the sources quoted.
+
+\begin{table}[ht]
+\caption{Normalisations of the model.}
+\label{tab:sgn-model}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.4\textwidth}>{\raggedright\arraybackslash}p{0.3\textwidth}@{}}
+\hline
+form & relation to $\Wv$ & use \\
+\hline
+\cite[(8-1)]{Dunin-Barkowski:2015caa}, $n=4$: $f=p^4+a_2p^2+a_3p+a_4+\frac{a_5}{p-a_1}$ & at $(a_1,\dots,a_5)=(0,0,0,0,4v)$, $f=4\Wv$; critical points $p^5=v$, critical values $5p_c^4$ & the curve to which the quoted theorem is applied in \cref{thm:mod-tr}, transferred to $x=\Wv$ by \cref{lem:mod-scale}; \cite[\S8]{Dunin-Barkowski:2015caa} itself is not used \\
+the curve $x=p^4+V/p$, $y=p$ (cf.\ \cite[(7.2)]{ABDKS25}) & $V=4v$: $x=4\Wv$; $\omega_{h,n}[\Wv]=4^{2h-2+n}\,\omega_{h,n}[p^4+V/p]|_{V=4v}$, and every pairing scales by $4^{2h-2+n}$ & not used: \cite[Theorem~7.1]{ABDKS25} is applied to $x=\Wv$ itself (\cref{lem:mod-abdks}) \\
+$\lambda=x^4+u'/x$, integrand $\re^{\lambda/z'}x^k\dd x$ & $x=p$, $u'=4v$, $z'=-4z$: $\re^{\lambda/z'}=\re^{-\Wv/z}$; at $v=1$ the row $b$ of colour $i$ of \cref{def:set-M0} is $\varepsilon_b\zeta^{i(b+1)}\SPn_{x=1}[\lambda;x^{\nu_b}](-4\zeta^{-i}t)$ (\cref{prop:set-modrows,lem:con-S2}) & dictionary only \\
+TFT of topological recursion & $\Delta_j=-5\varsigma_j^2$ in the basis $e^{\mathrm{TR}}_j$ of \cite[(2-30)]{Dunin-Barkowski:2015caa}, with $x=x(\varsigma_j)-w_j^2/2$ and the uniform orientation $\frac{\dd w_j}{\dd p}(\varsigma_j)=\sqrt{-5}\,\varsigma_j$ (one root for all $j$); frozen basis $\bar e_j=e^{\mathrm{TR}}_j/\sqrt{-5}$ & \cref{prop:mod-Rtr,thm:mod-tr} \\
+model TFT & defined by $\hat\Delta_i^{1/2}:=\zeta^{4i}\varsigma$ in the normalised canonical basis, unit $\sum_i\hat\Delta_i^{-1/2}\tilde e_i$ & \cref{def:set-modcohft} \\
+topological recursion versus the model & $\omega_{h,n}=(-5)^{h-1}\sum\langle\prod_i\psi^{d_i}H^{a_i}\rangle_h\prod_i\dd\xi_{a_i,d_i}$; $\Fm_h=(-5)^{1-h}\FTR_h$ & \cref{thm:mod-tr,cor:mod-trF} \\
+Hurwitz space & \cite[(8-1)]{Dunin-Barkowski:2015caa} with $n=4$ on the line $(a_1,\dots,a_5)=(0,0,0,0,4v)$; called $H_{0;1,4}$ in \cite{CvdLPS23} & the identification is not used \\
+$H$ and $\se$ & $H=\dd/\dd v$, $\se=z\,1+vH=\fr(1,0)$; $\langle H\rangle_1=-1/(12v)$, $\langle\se\rangle_1=\frac18$; replacing $H$ and $\se$ by $-H$ and $-\se$ changes both signs & \cref{lem:tra-frames}; sign anchors, used in no proof \\
+\hline
+\end{tabular}
+\end{table}
+
+\input{sections/b_signs_2}

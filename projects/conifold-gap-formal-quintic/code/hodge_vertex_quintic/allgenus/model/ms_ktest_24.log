@@ -1,0 +1,6 @@
+(2,4): 1302 correlators of K-generators with >= 1 kappa, 376 singular, 0 singular non-zero
+   non-zero correlators with >= 1 kappa, (h, n, towers) = (2, 4, 'H2only'): v-exponent histogram {2: 17}
+   non-zero correlators with >= 1 kappa, (h, n, towers) = (2, 4, 'mixed'): v-exponent histogram {0: 180, 1: 421, 2: 191}
+(ML1) <H^4>_2 = 1/10   F_h^(n)(1) = 1/10   ok
+(ML2) 1302 correlators of K-generators with >= 1 kappa; 376 of them singular (e < 0); 0 singular ones NON-ZERO
+ML on K: CONSISTENT with all data

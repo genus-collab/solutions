@@ -1,0 +1,67 @@
+====================================================================================================
+outer lists identical at both primes: 4555 graphs
+(a) totals
+   u^0: 2^89-1 alone -> 1/660000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> 1/660000 (reduces to the 2^89-1 residue: True); CRT -> 1/660000 (den smooth: True)
+   u^1: 2^89-1 alone -> -7/825000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> -7/825000 (reduces to the 2^89-1 residue: True); CRT -> -7/825000 (den smooth: True)
+   u^2: 2^89-1 alone -> 199/9900000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> 199/9900000 (reduces to the 2^89-1 residue: True); CRT -> 199/9900000 (den smooth: True)
+   u^3: 2^89-1 alone -> -717/27500000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> -717/27500000 (reduces to the 2^89-1 residue: True); CRT -> -717/27500000 (den smooth: True)
+   u^4: 2^89-1 alone -> 449357/22500000000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> None; CRT -> 449357/22500000000 (den smooth: True)
+   u^5: 2^89-1 alone -> -5593217/618750000000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> None; CRT -> -5593217/618750000000 (den smooth: True)
+   u^6: 2^89-1 alone -> -4668314908965/4939268731453 (reduces to the 2^61-1 residue: False); 2^61-1 alone -> None; CRT -> 14686042363/6496875000000000 (den smooth: True)
+   u^7: 2^89-1 alone -> 952715118971/17416291380050 (reduces to the 2^61-1 residue: False); 2^61-1 alone -> -716830304/610592523 (reduces to the 2^89-1 residue: False); CRT -> -8370858511/32484375000000000 (den smooth: True)
+(b) gap form with an independent t_c (referee ref_rows.periods)
+   p = 2^89-1: total == (1/660000) (u/t_c)^8 through u^7: True
+   p = 2^61-1: total == (1/660000) (u/t_c)^8 through u^7: True
+(c) per outer graph: 0 entries zero at both primes; 0 non-zero entries reconstructed at 2^89-1 alone AND reducing to the 2^61-1 residue; 22096 INCONSISTENT; 14344 not reconstructible at 2^89-1 alone, of which 6559 have a CRT reconstruction with a 1000-smooth denominator; zero at one prime only: 0
+   inconsistent (first 20): [(0, 0, '13243742298647/8318059381379'), (0, 1, '6350163184743/11522733692626'), (0, 2, '-2336547372765/615886897318'), (0, 5, '8602554480554/5444186230877'), (1, 0, '8699003272967/6668513724613'), (1, 1, '-951977390643/9590072801947'), (1, 2, '-961725094701/8901388473151'), (1, 3, '508051577079/6689225871844'), (1, 4, '12289237296535/4354540634764'), (2, 0, '-14497426908732/1379535885163'), (2, 2, '4903859804369/5000842255032'), (2, 3, '-17078691576917/9009877770613'), (2, 4, '-12331405677611/9262070613559'), (2, 5, '7710599691240/398680972783'), (2, 6, '-561183718617/9103420631884'), (2, 7, '-8224293462240/10927986180289'), (3, 1, '4938165525016/9387848838631'), (3, 3, '-7070529321375/12568668468598'), (3, 7, '-4624930438238/16711036456021'), (4, 0, '-980833628418/11565716616505')]
+   no smooth CRT reconstruction (first 20): [(0, 3, 'None'), (0, 4, '16263608784089977293129/14188170664144441522904'), (0, 6, '24398371671480529419957/10640001598526092283155'), (0, 7, '-1950477270081329434257/25746892714936711126909'), (1, 5, '-6933692395860704605617/16069954054385590907507'), (1, 6, '-24211197260710701861836/16268721817665717944743'), (1, 7, 'None'), (2, 1, '-16318056883459796956328/25877461315561049463511'), (3, 0, 'None'), (3, 2, '4526742649210888596374/9750201246774962197077'), (3, 4, '-12687558619136812288952/18141362806990286598575'), (3, 5, '-576427802182911263505/19807304893970609361008'), (3, 6, '7147825639606380412895/24067738407427646853798'), (4, 2, 'None'), (5, 0, '20229247006099479365867/8559655366156490532557'), (5, 3, 'None'), (5, 7, '-3845870898405834756593/14747974602022559355496'), (6, 1, '-18612080333791835832163/8449696854563573549445'), (7, 5, '17204181295917114231499/11573371113317982877871'), (7, 6, 'None')]
+====================================================================================================
+outer lists identical at both primes: 4555 graphs
+(a) totals
+   u^0: 2^89-1 alone -> 1/660000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> 1/660000 (reduces to the 2^89-1 residue: True); CRT -> 1/660000 (den smooth: True)
+   u^1: 2^89-1 alone -> -7/825000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> -7/825000 (reduces to the 2^89-1 residue: True); CRT -> -7/825000 (den smooth: True)
+   u^2: 2^89-1 alone -> 199/9900000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> 199/9900000 (reduces to the 2^89-1 residue: True); CRT -> 199/9900000 (den smooth: True)
+   u^3: 2^89-1 alone -> -717/27500000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> -717/27500000 (reduces to the 2^89-1 residue: True); CRT -> -717/27500000 (den smooth: True)
+   u^4: 2^89-1 alone -> 449357/22500000000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> None; CRT -> 449357/22500000000 (den smooth: True)
+   u^5: 2^89-1 alone -> -5593217/618750000000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> None; CRT -> -5593217/618750000000 (den smooth: True)
+   u^6: 2^89-1 alone -> -4668314908965/4939268731453 (reduces to the 2^61-1 residue: False); 2^61-1 alone -> None; CRT -> 14686042363/6496875000000000 (den smooth: True)
+   u^7: 2^89-1 alone -> 952715118971/17416291380050 (reduces to the 2^61-1 residue: False); 2^61-1 alone -> -716830304/610592523 (reduces to the 2^89-1 residue: False); CRT -> -8370858511/32484375000000000 (den smooth: True)
+(b) gap form with an independent t_c (referee ref_rows.periods)
+   p = 2^89-1: total == (1/660000) (u/t_c)^8 through u^7: True
+   p = 2^61-1: total == (1/660000) (u/t_c)^8 through u^7: True
+(c) per outer graph (4555 x 8 entries): {'zero_both': 0, 'zero_one': 0, 's89_ok': 0, 's89_bad': 0, 's61_ok': 0, 's61_bad': 5, 'crt_small': 13127, 'undecided': 23308}
+   meaning: s89_ok = small rational at 2^89-1 that reduces to the 2^61-1 residue; s89_bad = small at 2^89-1 but does NOT reduce (a real inconsistency); crt_small = only the CRT reconstruction is small (consistent, weaker evidence; by power of u: [(0, 3769), (1, 3800), (2, 3344), (3, 1703), (4, 437), (5, 73), (6, 1)]); undecided = no small rational even after CRT (height > 2^120, or not rational)
+   inconsistent entries (first 20): [(244, 4, '47414769/179779'), (330, 5, '22230567/348835'), (2180, 1, '1352373/21913667'), (2419, 0, '743929327/12818'), (2504, 6, '262389/132479323')]
+====================================================================================================
+outer lists identical at both primes: 4555 graphs
+(a) totals
+   u^0: 2^89-1 alone -> 1/660000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> 1/660000 (reduces to the 2^89-1 residue: True); CRT -> 1/660000 (den smooth: True)
+   u^1: 2^89-1 alone -> -7/825000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> -7/825000 (reduces to the 2^89-1 residue: True); CRT -> -7/825000 (den smooth: True)
+   u^2: 2^89-1 alone -> 199/9900000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> 199/9900000 (reduces to the 2^89-1 residue: True); CRT -> 199/9900000 (den smooth: True)
+   u^3: 2^89-1 alone -> -717/27500000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> -717/27500000 (reduces to the 2^89-1 residue: True); CRT -> -717/27500000 (den smooth: True)
+   u^4: 2^89-1 alone -> 449357/22500000000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> None; CRT -> 449357/22500000000 (den smooth: True)
+   u^5: 2^89-1 alone -> -5593217/618750000000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> None; CRT -> -5593217/618750000000 (den smooth: True)
+   u^6: 2^89-1 alone -> -4668314908965/4939268731453 (reduces to the 2^61-1 residue: False); 2^61-1 alone -> None; CRT -> 14686042363/6496875000000000 (den smooth: True)
+   u^7: 2^89-1 alone -> 952715118971/17416291380050 (reduces to the 2^61-1 residue: False); 2^61-1 alone -> -716830304/610592523 (reduces to the 2^89-1 residue: False); CRT -> -8370858511/32484375000000000 (den smooth: True)
+(b) gap form with an independent t_c (referee ref_rows.periods)
+   p = 2^89-1: total == (1/660000) (u/t_c)^8 through u^7: True
+   p = 2^61-1: total == (1/660000) (u/t_c)^8 through u^7: True
+(c) per outer graph (4555 x 8 entries): {'zero_both': 0, 'zero_one': 0, 's89_ok': 0, 's89_bad': 0, 's61_ok': 0, 's61_bad': 1, 'crt_small': 13128, 'undecided': 23311}
+   meaning: s89_ok = small rational at 2^89-1 that reduces to the 2^61-1 residue; s89_bad = small at 2^89-1 but does NOT reduce (a real inconsistency); crt_small = only the CRT reconstruction is small (consistent, weaker evidence; by power of u: [(0, 3769), (1, 3801), (2, 3344), (3, 1703), (4, 437), (5, 73), (6, 1)]); undecided = no small rational even after CRT (height > 2^120, or not rational)
+   inconsistent entries (first 20): [(2419, 0, '743929327/12818')]
+====================================================================================================
+outer lists identical at both primes: 4555 graphs
+(a) totals
+   u^0: 2^89-1 alone -> 1/660000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> 1/660000 (reduces to the 2^89-1 residue: True); CRT -> 1/660000 (den smooth: True)
+   u^1: 2^89-1 alone -> -7/825000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> -7/825000 (reduces to the 2^89-1 residue: True); CRT -> -7/825000 (den smooth: True)
+   u^2: 2^89-1 alone -> 199/9900000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> 199/9900000 (reduces to the 2^89-1 residue: True); CRT -> 199/9900000 (den smooth: True)
+   u^3: 2^89-1 alone -> -717/27500000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> -717/27500000 (reduces to the 2^89-1 residue: True); CRT -> -717/27500000 (den smooth: True)
+   u^4: 2^89-1 alone -> 449357/22500000000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> None; CRT -> 449357/22500000000 (den smooth: True)
+   u^5: 2^89-1 alone -> -5593217/618750000000 (reduces to the 2^61-1 residue: True); 2^61-1 alone -> None; CRT -> -5593217/618750000000 (den smooth: True)
+   u^6: 2^89-1 alone -> -4668314908965/4939268731453 (reduces to the 2^61-1 residue: False); 2^61-1 alone -> None; CRT -> 14686042363/6496875000000000 (den smooth: True)
+   u^7: 2^89-1 alone -> 952715118971/17416291380050 (reduces to the 2^61-1 residue: False); 2^61-1 alone -> -716830304/610592523 (reduces to the 2^89-1 residue: False); CRT -> -8370858511/32484375000000000 (den smooth: True)
+(b) gap form with an independent t_c (referee ref_rows.periods)
+   p = 2^89-1: total == (1/660000) (u/t_c)^8 through u^7: True
+   p = 2^61-1: total == (1/660000) (u/t_c)^8 through u^7: True
+(c) per outer graph (4555 x 8 entries): {'zero_both': 0, 'zero_one': 0, 's89_ok': 0, 's89_bad': 0, 's61_ok': 0, 's61_bad': 0, 'crt_small': 13129, 'undecided': 23311}
+   meaning: crt_small = the CRT reconstruction is a small rational (|num| den < 2^120) with a 1000-smooth denominator (consistent; by power of u: [(0, 3770), (1, 3801), (2, 3344), (3, 1703), (4, 437), (5, 73), (6, 1)]; s89_ok of them are already reconstructed at 2^89-1 alone); s89_bad / s61_bad = small smooth rational at one prime that does NOT reduce to the other residue and no small CRT rational (a real inconsistency, or a coincidence); undecided = no small rational even after CRT (height > 2^120, or not rational)

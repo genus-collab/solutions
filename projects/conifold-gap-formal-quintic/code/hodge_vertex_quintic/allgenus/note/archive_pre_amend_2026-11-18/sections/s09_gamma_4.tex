@@ -1,0 +1,73 @@
+% Section 9, part 4 of 4: the orbifold point, the free coefficients, prior art. Last part of Section 9.
+
+\begin{thm}[The orbifold point]
+\label{thm:gam-ginf}
+No $c_n$ has a pole at $L=0$, and
+\begin{equation}
+\label{eq:gam-ginf}
+c(z;0)=\Ginf(z)=\exp\Bigl(\sum_{l\geq 1}(-1)^{l+1}\frac{B_{5l+1}(1/5)}{l(5l+1)}\,z^{5l}\Bigr).
+\end{equation}
+\end{thm}
+
+We do not use, and do not claim, that the series of \cite{GJR18} coincides with $c(z;L)$.
+
+\begin{proof}
+Apply \cref{thm:gam-lmi} with $s_*=0$, $a_*=5$, so that $a(\sigma)=5\sigma$, and $M_*=1$; then $\delta=-z/5$, and $\mathsf Q=\re^{-\lambda/5}$ is a fifth root of $(-q)^{-1}$. Near $\sigma=0$ only the twist factor $\Gamma(1+5\sigma/z)$ degenerates; the five factors $\Gamma((\zeta^j-\sigma)/z)$, $j=0,\dots,4$, are regular there and supply, on a disc $\bbD$ around $0$ that contains no $\zeta^j$ and with fixed branches,
+\[
+\varphi(\sigma):=\sum_{j=0}^4\varphi_j(\sigma),\qquad \varphi_j(\sigma):=(\zeta^j-\sigma)\log(\zeta^j-\sigma)-(\zeta^j-\sigma),
+\]
+\[
+\cF:=\prod_{j=0}^4\cF^{(j)},\qquad \cF^{(j)}(\sigma,z):=(\zeta^j-\sigma)^{-1/2}\exp\Bigl(\sum_{k\geq 1}\bk_kz^{2k-1}(\zeta^j-\sigma)^{1-2k}\Bigr).
+\]
+After shrinking $\bbD$ the conditions of \cref{def:gam-lmidata} hold; $\cF(0,0)=\prod_j(\zeta^j)^{-1/2}\neq 0$. The phase $a\log a-a=5\sigma\log(5\sigma)-5\sigma$ and the Stirling form $a^{1/2}\mathrm{Poch}_1(z/a)\exp(\sum_k\bk_k(z/a)^{2k-1})$ of $\Gamma(1+a/z)$, with $\mathrm{Poch}_1=1$, are the twist terms of $\mathsf S_0$ and of $A_{\mathrm{St}}$; so $S=\mathsf S_0$, $A=A_{\mathrm{St}}$, and $\lambda(L)=-\varphi'(L)-5\log(5L)=\sum_j\log(\zeta^j-L)-5\log(5L)$ is the logarithm of \cref{def:gam-c}. Hence $c^{\cF}(z;L)=c(z;L)$ on $U_*$; by \cref{thm:gam-lmi}~(ii) every $c_n$ extends holomorphically to $L=0$, and, being rational by \cref{thm:gam-main}~(i), has no pole there. By \eqref{eq:gam-lmi},
+\[
+c(z;0)=\exp\bigl(\tilde\varphi(\delta)/z\bigr)\frac{\cF(\delta,z)}{\cF(0,0)}=\prod_{j=0}^4V_j(z),\qquad V_j(z):=\exp\bigl(\tilde\varphi_j(\delta)/z\bigr)\frac{\cF^{(j)}(\delta,z)}{\cF^{(j)}(0,0)},
+\]
+with $\tilde\varphi_j(x):=\varphi_j(x)-\varphi_j(0)-\varphi_j'(0)x$. Fix $j$, let $w$ be a local letter with $1/w=\zeta^{-j}z$, and put $\theta:=1/5$. Then $\zeta^j-\delta=z(w+\theta)$, and, expanding $\log(\zeta^j-\delta)=\log\zeta^j+\log(1+\theta/w)$ at $\sigma=0$ (the terms with $\log\zeta^j$ cancel, since $\varphi_j'(0)=-\log\zeta^j$),
+\[
+\tilde\varphi_j(\delta)/z=(w+\theta)\log(1+\theta/w)-\theta,\qquad \frac{\cF^{(j)}(\delta,z)}{\cF^{(j)}(0,0)}=(1+\theta/w)^{-1/2}\exp\Bigl(\sum_{k\geq 1}\bk_k(w+\theta)^{1-2k}\Bigr),
+\]
+the second because $z^{2k-1}(z(w+\theta))^{1-2k}=(w+\theta)^{1-2k}$. Therefore
+\[
+\log V_j=\Bigl(w+\theta-\frac12\Bigr)\log\Bigl(1+\frac{\theta}{w}\Bigr)-\theta+\sum_{k\geq 1}\bk_k(w+\theta)^{1-2k}=\sum_{n\geq 1}\beta_n(\theta)\,w^{-n}
+\]
+by \cref{lem:fsp-dlmf5118}, the formal shifted Stirling series (no asymptotic statement is used); this is an identity in $\bbQ[\theta]\fps{1/w}$, with the coefficients $\beta_n(\theta)=(-1)^{n+1}B_{n+1}(\theta)/(n(n+1))$ of \cref{def:fsp-stirling}, and the substitution of $1/5$ for $\theta$ and of $\zeta^{-j}z$ for $1/w$ is a ring homomorphism from $\bbQ[\theta]\fps{1/w}$ to $\bbQ(\zeta)\fps{z}$. Summing over $j$,
+\[
+\log c(z;0)=\sum_{n\geq 1}\beta_n(1/5)\,z^n\sum_{j=0}^4\zeta^{-jn}=5\sum_{l\geq 1}\beta_{5l}(1/5)\,z^{5l},
+\]
+because $\sum_j\zeta^{-jn}$ is $5$ if $5\mid n$ and $0$ otherwise; and $5\beta_{5l}(1/5)=(-1)^{l+1}B_{5l+1}(1/5)/(l(5l+1))$, since $(-1)^{5l+1}=(-1)^{l+1}$. This is \eqref{eq:gam-ginf}.
+\end{proof}
+
+\begin{cor}[The coefficients are polynomials]
+\label{cor:gam-poly}
+Every $c_n$ lies in $\bbQ[L]$, and
+\[
+c_n(L)=\sum_{0\leq k\leq 4n/5}a_{n,k}L^{4n-5k},\qquad a_{n,k}=\coef{u^k}\mathrm{ph}^{\mathrm{SP}}_n.
+\]
+In particular $\mathrm{ph}^{\mathrm{SP}}_n$ has degree at most $\lfloor 4n/5\rfloor$ in $u$, and $\coef{u^{4m}}\mathrm{ph}^{\mathrm{SP}}_{5m}=c_{5m}(0)$ for $m\geq 1$.
+\end{cor}
+
+\begin{proof}
+By \cref{thm:gam-main}~(i) and (iii), $c_n\in\bbQ[L,L^{-1}]$, and by \cref{thm:gam-ginf} it has no pole at $L=0$; so $c_n\in\bbQ[L]$. By \cref{prop:gam-hatflat}, that is \cref{thm:con-Pa}~(iv), $c_n(L)=\sum_{k\geq 0}\coef{u^k}\mathrm{ph}^{\mathrm{SP}}_n\,L^{4n-5k}$, a finite sum since $\mathrm{ph}^{\mathrm{SP}}_n$ is a polynomial. The exponents $4n-5k$ are distinct, so $c_n\in\bbQ[L]$ forces $\coef{u^k}\mathrm{ph}^{\mathrm{SP}}_n=0$ whenever $4n-5k<0$, and the coefficient of $L^0$ in $c_{5m}$ is $\coef{u^{4m}}\mathrm{ph}^{\mathrm{SP}}_{5m}$.
+\end{proof}
+
+\begin{cor}[The free coefficients]
+\label{cor:gam-free}
+For $m\geq 1$ put $\fc^{\mathrm{SP}}_m:=\coef{u^{4m}}\mathrm{ph}^{\mathrm{SP}}_{5m}$, and let $\fc^{\mathrm{can}}_m$ and $\fc^{\mathrm{act}}_m$ be the free coefficients (\cref{lem:gau-HPF}) of $\Phican$ and of $\Phiact$; those of $\Phiact$ are defined because $\Phiact=\Phican$ has coefficients in $\bbQ\fps{u}$ (by \cref{thm:gam-D}, see the proof). Then
+\[
+\fc^{\mathrm{SP}}_m=c_{5m}(0)=\coef{z^{5m}}\Ginf,\qquad \fc^{\mathrm{can}}_m=\fc^{\mathrm{SP}}_m,\qquad 1+\sum_{m\geq 1}\fc^{\mathrm{can}}_mz^{5m}=\Ginf(z),\qquad \fc^{\mathrm{act}}_m=\fc^{\mathrm{can}}_m.
+\]
+For instance $\fc^{\mathrm{can}}_1=\coef{z^5}\Ginf=B_6(1/5)/6=4537/3937500$.
+\end{cor}
+
+\begin{proof}
+\Cref{cor:gam-poly} and \cref{thm:gam-ginf} give $\fc^{\mathrm{SP}}_m=c_{5m}(0)=\coef{z^{5m}}\Ginf$. By \cref{thm:con-Pb}, $\Phican=\PhiSP$, so $\fc^{\mathrm{can}}_m=\fc^{\mathrm{SP}}_m$; this uses neither (QRR) nor \cref{thm:gam-D}. By \cref{thm:gau-R0}~(iv), $\Phiact(\zh,u)\Dn_0(s^4\zh)=\Phican(\zh,u)$, and $\Dn_0=1$ by \cref{thm:gam-D}; so $\Phiact=\Phican$ and $\fc^{\mathrm{act}}_m=\fc^{\mathrm{can}}_m$. The term $l=1$ of \eqref{eq:gam-ginf} is $B_6(1/5)z^5/6$, and $B_6(\theta)=\theta^6-3\theta^5+\tfrac52\theta^4-\tfrac12\theta^2+\tfrac1{42}$ gives $B_6(1/5)/6=4537/3937500$.
+\end{proof}
+
+\subsection{Prior art}
+\label{sec:gam-rmk}
+
+\begin{rmk}[Prior art]
+\label{rmk:gam-prior}
+The mechanism (an Euler integral for the degenerate factor, a chart in which the critical point survives at $q=0$, and a factorisation into one-variable Euler integrals there) is Givental's for the equivariant projective spaces \cite[\S10]{MR1901075}, with the chart $x_0=Q/(x_1\cdots x_n)$ and the Stirling series of the factors from \cite[10.4~Lemma]{MR1901075}; the continuity in $Q$ of the asymptotic solution is asserted there. \draftnote{Describe \cite[\S10]{MR1901075} neutrally: decide whether it is presented there as an outline or as a proof.} \cite[Remark~7.2]{GJR18} states the analogous identity for their Landau--Ginzburg integral without proof, and \cite[Lemma~7.7, (37)]{GJR18} proves its value at the orbifold point (\cref{thm:gam-ginf}). See also \cite[Lemma~4.20]{MR2553377} (an exact expansion in $q$ of an oscillatory integral in such a chart) and \cite[\S7, (11)]{MR2276766} (the factor of an Euler-class twist as the stationary-phase expansion of an Euler integral). We are not aware of a proof of \eqref{eq:gam-Gamma} in the literature.
+\end{rmk}

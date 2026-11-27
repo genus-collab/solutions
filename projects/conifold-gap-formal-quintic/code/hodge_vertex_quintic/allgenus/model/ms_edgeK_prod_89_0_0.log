@@ -1,0 +1,16 @@
+ms_edgeK: rows prod, p = 2^89-1, frame (0, 0), zhat <= 6, u < 6 (setup 1 s)
+PASS (E_0) control (random covector) covector shifted by 0: 150 coefficients (u^N, N <= 4), 65 non-zero, 150 from sums of >= 2 entries
+PASS (E_0) vanishing covector shifted by 0: 150 coefficients (u^N, N <= 4), 0 non-zero, 150 from sums of >= 2 entries
+PASS (E_1) control (random covector) covector shifted by 1: 150 coefficients (u^N, N <= 4), 45 non-zero, 125 from sums of >= 2 entries
+PASS (E_1) vanishing covector shifted by 1: 150 coefficients (u^N, N <= 4), 0 non-zero, 125 from sums of >= 2 entries
+PASS (E_2) control (random covector) covector shifted by 2: 150 coefficients (u^N, N <= 4), 30 non-zero, 100 from sums of >= 2 entries
+PASS (E_2) vanishing covector shifted by 2: 150 coefficients (u^N, N <= 4), 0 non-zero, 100 from sums of >= 2 entries
+PASS (E_3) control (random covector) covector shifted by 3: 150 coefficients (u^N, N <= 4), 15 non-zero, 75 from sums of >= 2 entries
+PASS (E_3) vanishing covector shifted by 3: 150 coefficients (u^N, N <= 4), 0 non-zero, 75 from sums of >= 2 entries
+PASS (E_4) control (random covector) covector shifted by 4: 150 coefficients (u^N, N <= 4), 5 non-zero, 50 from sums of >= 2 entries
+PASS (E_4) vanishing covector shifted by 4: 150 coefficients (u^N, N <= 4), 0 non-zero, 50 from sums of >= 2 entries
+VACUOUS (the control vanishes too at this truncation; k not counted) (E_5) control (random covector) covector shifted by 5: 150 coefficients (u^N, N <= 4), 0 non-zero, 25 from sums of >= 2 entries
+   non-trivial vanishing sums over all counted shifts: 500
+PASS (T_1) leaf: Sum phi_{i,d-1} T(d)[i] = 0 mod u^6   [control, random covector: non-zero]
+PASS (T_2) leaf: Sum phi_{i,d-2} T(d)[i] = 0 mod u^6   [control, random covector: non-zero]
+MS_EDGEK prod 89 (0,0): ALL PASS  (1 s)

@@ -1,0 +1,9 @@
+rl_fl4: FL4 and T(b) (p = +z) on the toy Mellin-Barnes sigma-phase at L = 3, z^8, eps^8; log logs/rl_fl4_8_8.log
+PASS FL4: z d/deps S_0 = S_1 (= SP of sigma A_St at the moving critical point), all z^k eps^d with k + d <= 8, d <= 7
+PASS FL4 iterated: (z d/deps)^2 S_0 = S_2 (P(zD_q) SP = SP[P(sigma) ..], P = sigma^2), all z^k eps^d with k + d <= 8, d <= 6
+PASS control (must fail): FL4 without e^((F_eps(c) - F_0(c_0))/z)
+PASS control (must fail): FL4 without (Delta(eps)/Delta(0))^(-1/2)
+PASS control (must fail): P(sigma) = sigma + z claimed for z d/deps
+PASS T(b), p = +z (Theorem P(a) shift): SP^norm_L[S_0; e^((S_0(L+t+z) - S_0(L+t))/z) A_St(L+t+z)] = SP^norm_L[S_0; A_St], z^0..z^8   z^1 = 211/24
+PASS control (must fail): T(b) without the exponential factor   first differs at z^1
+RL_FL4 8 8: ALL CHECKS PASSED   (4 s)

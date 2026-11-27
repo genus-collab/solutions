@@ -1,0 +1,47 @@
+local run g5_89_nat_out1: 4555 inner graphs, 14855 non-zero pieces in all
+   non-zero pieces by the edge number of the outer graph: [(0, 4555), (1, 10300)]
+
+COMPLETE rows of the local run (E(q) <= 1), with the number of non-zero contributions:
+   outer graph   0  E=0  gv=[5]  aut=1 :  4555 non-zero pieces, row NON-ZERO
+   outer graph   1  E=1  gv=[1, 4]  aut=1 :  3479 non-zero pieces, row = 0
+   outer graph   2  E=1  gv=[2, 3]  aut=1 :  2296 non-zero pieces, row = 0
+   outer graph   3  E=1  gv=[4]  aut=2 :  4525 non-zero pieces, row = 0
+
+PASS: every complete row with edges is exactly zero in all 8 coefficients
+largest number of non-zero contributions cancelling for a single outer graph: 4525
+
+outer graph 1 (E=1, gv=[1, 4]): 3479 non-zero pieces; the first 8 of them, coefficient u^2 (residues mod 2^89-1):
+   inner graph    1 (E= 1, gv=[1, 4]                ):                            0   partial sum                            0
+   inner graph    4 (E= 2, gv=[0, 4]                ):                            0   partial sum                            0
+   inner graph    5 (E= 2, gv=[1, 1, 3]             ):  506125968335122346992671672   partial sum  506125968335122346992671672
+   inner graph    6 (E= 2, gv=[1, 1, 3]             ):  254812277381996188391311823   partial sum  141968226074428397934421384
+   inner graph    8 (E= 2, gv=[1, 2, 2]             ):   94395371106872451597573609   partial sum  236363597181300849531994993
+   inner graph   11 (E= 2, gv=[1, 3]                ):  463004985689994245716556460   partial sum   80398563228604957798989342
+   inner graph   15 (E= 3, gv=[0, 1, 1, 3]          ):  477001793568261739515140727   partial sum  557400356796866697314130069
+   inner graph   16 (E= 3, gv=[0, 1, 2, 2]          ):  524574648535817685851988502   partial sum  463004985689994245716556460
+   ... sum over ALL 3479 pieces: ZERO in every one of the 8 coefficients
+   coefficients u^k with more than one non-zero contribution: [2, 3, 4, 5, 6, 7] (counts [3477, 3479, 3479, 3479, 3479, 3479])
+   the sum of the other 3478 pieces alone (piece of inner graph 1 removed) is NON-ZERO: no piece is redundant
+
+outer graph 2 (E=1, gv=[2, 3]): 2296 non-zero pieces; the first 8 of them, coefficient u^2 (residues mod 2^89-1):
+   inner graph    2 (E= 1, gv=[2, 3]                ):                            0   partial sum                            0
+   inner graph    5 (E= 2, gv=[1, 1, 3]             ):                            0   partial sum                            0
+   inner graph    7 (E= 2, gv=[1, 2, 2]             ):                            0   partial sum                            0
+   inner graph    8 (E= 2, gv=[1, 2, 2]             ):                            0   partial sum                            0
+   inner graph    9 (E= 2, gv=[1, 3]                ):                            0   partial sum                            0
+   inner graph   13 (E= 2, gv=[2, 2]                ):                            0   partial sum                            0
+   inner graph   15 (E= 3, gv=[0, 1, 1, 3]          ):                            0   partial sum                            0
+   inner graph   16 (E= 3, gv=[0, 1, 2, 2]          ):                            0   partial sum                            0
+   ... sum over ALL 2296 pieces: ZERO in every one of the 8 coefficients
+   coefficients u^k with more than one non-zero contribution: [2, 3, 4, 5, 6, 7] (counts [2175, 2295, 2296, 2296, 2296, 2296])
+   the sum of the other 2295 pieces alone (piece of inner graph 2 removed) is NON-ZERO: no piece is redundant
+
+outer graph 3 (E=1, gv=[4]): 4525 non-zero pieces; the first 8 of them, coefficient u^1 (residues mod 2^89-1):
+   inner graph    3 (E= 1, gv=[4]                   ):  138914464475069882513564173   partial sum  138914464475069882513564173
+   inner graph    4 (E= 2, gv=[0, 4]                ):  341034563300114769615361585   partial sum  479949027775184652128925758
+   inner graph    9 (E= 2, gv=[1, 3]                ):  239665440200521602157508673   partial sum  100644448333016116836872320
+   inner graph   10 (E= 2, gv=[1, 3]                ):  611037976142976884799912169   partial sum   92712404833302864187222378
+   inner graph   11 (E= 2, gv=[1, 3]                ):  548643370442327186537393488   partial sum   22385755632939913275053755
+   inner graph   12 (E= 2, gv=[2, 2]                ):  322139595238240246131793734   partial sum  344525350871180159406847489
+   inner graph   13 (E= 2, gv=[2, 2]                ):  418287094052471041097666472   partial sum  143842425280961063054951850
+   inner graph   14 (E= 2, gv=[3]                   ):  613414967600112978948630824   partial sum  138287373238383904554020563

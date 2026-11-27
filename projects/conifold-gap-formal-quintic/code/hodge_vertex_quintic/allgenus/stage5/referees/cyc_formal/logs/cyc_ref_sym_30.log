@@ -1,0 +1,8 @@
+# logs/cyc_ref_sym_30.log (py -I -B cyc_ref_sym.py 30)
+PASS Y1 B(y_0, g) = 0 identically in (alpha, beta)
+PASS Y0 the symbols are live: t = u + (7/10 - alpha) u^2 + ..., coefficients of t of total degree up to 28
+   M has 9 non-zero coefficient entries below u^27 (top total degree in alpha, beta seen: 0)
+PASS Y2 M = PF4 coefficientwise below u^27, identically in (alpha, beta)
+PASS Y3 O o (1/y_0) = (1/y_0) o D o PF4 below u^26, identically in (alpha, beta)
+PASS control (fails as it must): Y2 control: y_1 = f_1 (non-isotropic): M = PF4 identically
+CYC_REF_SYM 30: ALL CHECKS PASSED   (47.2 s)

@@ -1,0 +1,12 @@
+g3_decomp.py  N = 10 (mod u^N), K = 30 (z-degree); v(u) = u tau^(-5/4); exact over Q
+[T1] Theta^-1 Theta = Theta Theta^-1 = 1 on a random vector of length 31: True
+[T2] Pi_i(pr q) = 0 mod u^10 for 0 <= i <= 33 (Neumann terms used: 3): True
+[T3] pr(q) = Sum [z^k]q^a frame(k,a)(v(u)) on all 155 coefficients: True
+[T4] ord_u f_j(v(u)) = (4(k-j)+nu_a+1)/5 for all 3312 non-zero frame coefficients, k <= 90: failures 0
+[T5] Sum_k z^k 1: [u^0 z^0 H] of pr(truncation at K) last changes at K = 0 (predicted bound -1); value 0
+[T5] Sum_k z^k 1: [u^9 z^0 H] of pr(truncation at K) last changes at K = 11 (predicted bound 11); value 11143682408390498095/192395236505531963904
+[T5] Sum_k z^k 1: [u^9 z^3 H] of pr(truncation at K) last changes at K = 14 (predicted bound 14); value 11143682408390498095/192395236505531963904
+[T5-C] CONTROL v = 1 + u: the exact partial sums of [u^0 z^0 H] of Sum_(k<=K) frame(k,0) change 12 times for K <= 60 (at every K = 1 mod 5): no u-adic limit (expected)
+[T6] toy form, v = u tau^(-5/4): ord_u(mu(X^(K+5)) - mu(X^(K))) for K = 5..35: [1, 5, 9, 13, 17, None, None] (bound 4K/5 - 3; None = 0 mod u^20): True
+[T6-C] CONTROL v = 1 + u: the same differences have ord_u [0, 0, 0, 0, 0, 0, 0]: no convergence (expected)
+RESULT: ALL CHECKS PASSED

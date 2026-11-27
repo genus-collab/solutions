@@ -1,0 +1,38 @@
+====================================================================================================
+(A) regression of the dictionary on single-term left dressings (status on record: nat_kregular_linear.log, both primes)
+   leading covector y(zhat), flat components b = 0..4 (classes 1, H, H^2, H^3, H^4): ['(-1) zhat^-1 + (1/480) zhat^-6', '(-1) zhat^-0 + (1/96) zhat^-5', '(-1/24) zhat^-4 + (1/161280) zhat^-9', '(-1/6) zhat^-3 + (1/20160) zhat^-8', '(1/2) zhat^-2 + (-1/2880) zhat^-7']
+   zhat^1 [(0, 1), (1, 0)]       flat: 5 E_04 [H^3 (x) H^4], 5 E_43 [H^4 (x) H^3]                   annihilates y: True  on record: INVISIBLE
+   zhat^1 [(2, 4), (4, 2)]       flat: -5 E_10 [H^2 (x) 1], -5 E_32 [1 (x) H^2]                     annihilates y: True  on record: INVISIBLE
+   zhat^1 [(3, 3)]               flat: 5 E_21 [H (x) H]                                             annihilates y: False on record: VISIBLE
+   zhat^2 [(0, 2), (2, 0)]       flat: 5 E_14 [H^2 (x) H^4], -5 E_42 [H^4 (x) H^2]                  annihilates y: True  on record: INVISIBLE
+   zhat^2 [(3, 4), (4, 3)]       flat: -5 E_20 [H (x) 1], 5 E_31 [1 (x) H]                          annihilates y: False on record: VISIBLE
+   zhat^3 [(0, 3), (3, 0)]       flat: -5 E_24 [H (x) H^4], -5 E_41 [H^4 (x) H]                     annihilates y: False on record: VISIBLE
+   zhat^3 [(1, 2), (2, 1)]       flat: -5 E_02 [H^3 (x) H^2], -5 E_13 [H^2 (x) H^3]                 annihilates y: True  on record: INVISIBLE
+   zhat^3 [(4, 4)]               flat: 5 E_30 [1 (x) 1]                                             annihilates y: False on record: VISIBLE
+   zhat^4 [(0, 4), (4, 0)]       flat: -5 E_34 [1 (x) H^4], 5 E_40 [H^4 (x) 1]                      annihilates y: False on record: VISIBLE
+   zhat^4 [(1, 3), (3, 1)]       flat: -5 E_01 [H^3 (x) H], 5 E_23 [H (x) H^3]                      annihilates y: False on record: VISIBLE
+   zhat^5 [(0, 0)]               flat: 5 E_44 [H^4 (x) H^4]                                         annihilates y: False on record: VISIBLE
+   zhat^5 [(1, 4), (4, 1)]       flat: 5 E_00 [H^3 (x) 1], 5 E_33 [1 (x) H^3]                       annihilates y: False on record: VISIBLE
+   zhat^5 [(2, 3), (3, 2)]       flat: 5 E_11 [H^2 (x) H], 5 E_22 [H (x) H^2]                       annihilates y: False on record: VISIBLE
+   zhat^6 [(0, 1), (1, 0)]       flat: -5 E_04 [H^3 (x) H^4], 5 E_43 [H^4 (x) H^3]                  annihilates y: False on record: INVISIBLE
+   zhat^6 [(2, 4), (4, 2)]       flat: -5 E_10 [H^2 (x) 1], 5 E_32 [1 (x) H^2]                      annihilates y: False on record: VISIBLE
+PASS every ANNIHILATING single term is INVISIBLE on record (the implication predicted by the mechanism)
+PASS the three terms listed VISIBLE in the brief (zhat H(x)H, zhat^2 (H(x)1 - 1(x)H), zhat^3 1(x)1) are NOT annihilating
+PASS the Pi-type terms and zhat^2 (H^4(x)H^2 - H^2(x)H^4) ARE annihilating
+   agreement annihilating <=> invisible: 14 of 15 single terms; exceptions: [('zhat^6 (H^4 (x) H^3 - H^3 (x) H^4)', 'not annihilating', 'INVISIBLE')]
+   Euler-dilaton block of [u^2] G (alpha = -127/15750): flat entries {('zhat^1', 'E_21'): '-127/3150', ('zhat^2', 'E_20'): '127/3150', ('zhat^2', 'E_31'): '-127/3150', ('zhat^3', 'E_30'): '127/3150'}
+PASS the Euler-dilaton block alpha zhat (H - zhat)(x)(H + zhat) of G_2 ANNIHILATES y (all signs/transposes of the dictionary): {}
+PASS control: the opposite relative sign zhat (H + zhat)(x)(H - zhat) (visible on record: -1/150, -7/7200) does NOT annihilate y: {(2, 1): '127/1575', (3, 2): '-127/1575'}
+====================================================================================================
+(B) the actual G (referee table over Q, frame (0,0), zhat <= 16, u <= 11)
+   397 Fourier components; zhat-degrees of [u^n] G, n = 0..11: [0, 1, 3, 4, 5, 6, 8, 9, 10, 11, 13, 14]
+PASS Gt(u, zhat = 0) = 1 and Z/5 grading a = b + k
+PASS (a) ALL 84 graded coefficients [u^N zhat^e] (e >= 1, e <= floor((5N+2)/4), N <= 11) of Gt y(tau zhat) vanish; 73 of them are sums of >= 2 non-zero products: []
+   the slot (a, e, N) = (1, 5, 4) [where P -> P (1 + c z^5) would enter as -c]: terms (G entry, value, y factor, value): []
+PASS p_{0,0}(u) = tau^(-1/4)/varpi_0  (so g_0 = tau^(1/4) p_{0,0} = 1/xhat)
+PASS (b) g_a u tau^(-1/2) [zhat^-j] (Gt y(tau zhat))_a = [zhat^-j] Yhat^Q_a for all a, j = 0..21, u^0..u^11 (264 coefficients, quintic side from the periods only): []
+PASS (c) LEAF: [zhat^-1] (Gt y(tau zhat))_0 = -t_c xhat tau^(1/2)/u through u^11, i.e. Pi(T') = -t_c + u tau^(-3/2)/xhat
+   vhat = u tau^(-3/2)/xhat = (1)x^1 + (2/3)x^2 + (95/189)x^3 + (24381086/60598125)x^4 + O(x^12)
+   t_c - vhat = -Pi(T') = (1/30)x^2 + (208/4725)x^3 + (11552281/242392500)x^4 + (6167995177/127256062500)x^5 + O(x^8)
+PASS t_c - vhat = u^2/30 + O(u^3) in frame (0,0): one leaf gives (2-2g) c_g u^(1-2g) u^2/30 = -(g-1) c_g/15 u^(3-2g)
+GI_HAT_TABLE ALL CHECKS PASSED   (3 s)

@@ -1,0 +1,102 @@
+% Section 6, part 7.
+\subsection{L-regularity and the Gap Theorem}
+\label{sec:mod-Lreg}
+
+We use the closed formula of \cite[Thm.~7.1]{ABDKS25}: for an arbitrary rational function $x(z)$ on $\bbP^1$ such that $\dd x$ has only simple zeros, the differentials of topological recursion for the curve $(x=x(z),y=z)$ with the Bergman kernel and the initial form $\omega^{(0)}_{1,0}=-y\,\dd x$ are
+\begin{equation}
+\label{eq:mod-abdks}
+\omega^{(g)}_{m,0}=[\hbar^{2g}]\sum_{r_1,\dots,r_m\geq 0}\prod_{i=1}^m\big(\mathcal D_{x_i}\big)^{r_i}[w_i^{r_i}]\sum_{\Gamma}\hbar^{2g(\Gamma)}\prod_{\{i,j\}\in E(\Gamma)}W_{i,j}\prod_{i=1}^mW_i
+\end{equation}
+\cite[(7.9)]{ABDKS25}, where $\Gamma$ runs over the connected simple graphs on the vertices $1,\dots,m$, $g(\Gamma)$ is the first Betti number, $\mathcal D_{x_i}\eta:=\dd(\eta/\dd x_i)$ on $1$-forms in $z_i$, $S(u):=\sinh(u/2)/(u/2)$,
+\begin{gather*}
+W_i:=-\exp\!\big(-w_i(S(w_i\hbar\partial_{z_i})-1)\,x(z_i)\big)\frac{\dd z_i}{w_i},\\
+W_{i,j}:=\frac{1}{\hbar^2}\Big(\exp\!\big(\hbar^2w_iw_jS(w_i\hbar\partial_{z_i})S(w_j\hbar\partial_{z_j})(z_i-z_j)^{-2}\big)-1\Big)
+\end{gather*}
+\cite[(7.6), (7.7)]{ABDKS25}, and $W_{i,j}=\sum_{k\geq 0}(\hbar^2/4)^k(w_i+w_j)^{2k}w_iw_j(z_i-z_j)^{-2k-2}$; for one point \cite[(7.10)]{ABDKS25},
+\begin{equation}
+\label{eq:mod-710}
+\sum_{g\geq 1}\hbar^{2g}\omega^{(g)}_{1,0}=\sum_{r\geq 0}\mathcal D_x^r[w^r]W_1 .
+\end{equation}
+The standing assumptions of \cite[\S1.1]{ABDKS25} (a compact curve, $x,y$ meromorphic, the critical points of $x$ simple, $y$ regular with $\dd y\neq 0$ there) hold for $x=\Wv$, $y=p$, $v\neq 0$: $\Wv$ is rational, $\dd\Wv=(p^5-v)\dd p/p^2$ has exactly five zeros, all simple, and $y=p$ has $\dd y=\dd p\neq 0$. The kernel of \cite[(1.1)]{ABDKS25} with $\omega^{(0)}_{1,0}=-y\,\dd x$ is the negative of ours (\cref{conv:mod-kernel}), so $\omega_{h,n}=(-1)^n\omega^{(h)}_{n,0}$.
+
+\begin{lem}[Structure of the correlators]
+\label{lem:mod-abdks}
+For $2h-2+n>0$ there are an integer $K\geq 0$ and $N_{h,n}\in\bbQ[v][p_1,\dots,p_n]$ with
+\[
+\omega_{h,n}=N_{h,n}(p;v)\,\frac{\prod_i\dd p_i}{\prod_i(p_i^5-v)^K}.
+\]
+\end{lem}
+
+\begin{proof}
+(1) \emph{Each term of \eqref{eq:mod-abdks} lies in $\bbQ[v][p_i,p_i^{-1},(p_i^5-v)^{-1},(p_i-p_j)^{-1}]\prod_i\dd p_i$, and for fixed $(h,n)$ there are finitely many terms.} Since $S(u)-1=\sum_{k\geq 1}u^{2k}/(4^k(2k+1)!)$,
+\[
+-w\big(S(w\hbar\partial_p)-1\big)\Wv(p)=\sum_{k\geq 1}w^{2k+1}\hbar^{2k}\epsilon_k(p),\qquad \epsilon_k:=-\frac{\Wv^{(2k)}}{4^k(2k+1)!}\quad(\text{local letters}),
+\]
+and $\Wv^{(2k)}=(p^4/4)^{(2k)}+(2k)!\,v\,p^{-2k-1}\in\bbQ[v][p,p^{-1}]$. In $W_i$ every $\hbar^{2k}$ comes with $w_i^{2k+1}$, and in $W_{i,j}$ every $\hbar^2$ comes with $(w_i+w_j)^2$ and one more factor $(p_i-p_j)^{-2}$ ($z_i=p_i$). So at fixed order $\hbar^{2h}$ the degrees in the $w_i$ are bounded, only finitely many $r_i$ and graphs contribute, and the coefficients are polynomials over $\bbQ$ in the $\epsilon_k(p_i)$ and the $(p_i-p_j)^{-1}$. Finally $\mathcal D_x(f\,\dd p)=\dd\big(p^2f/(p^5-v)\big)$ keeps this ring and only adds powers of $(p^5-v)^{-1}$. (2) \emph{Clearing.} Write the finite sum as $\omega_{h,n}=P\prod_i\dd p_i\big/\big(\prod_ip_i^{a}\prod_i(p_i^5-v)^{K}\prod_{i<j}(p_i-p_j)^{e}\big)$ with $P\in\bbQ[v][p]$. By \cref{conv:mod-kernel}, $\omega_{h,n}$ has poles only at the branch points; $p_i=0$ and the diagonals contain none ($v\neq 0$). So for every $v\neq 0$ the polynomial $P$ vanishes to order at least $e$ along $p_i=p_j$ and at least $a$ along $p_i=0$. Divide $P$ by $(p_i-p_j)^e$, respectively $p_i^a$, as polynomials in $p_i$ over $\bbQ[v][p_k:k\neq i]$ (the divisors are monic, so the division algorithm works over this ring): the remainder vanishes for every $v\neq 0$ and every $p$, hence it is $0$. One factor at a time, all these denominators cancel in $\bbQ[v][p]$, and no negative power of $v$ arises.
+\end{proof}
+
+\begin{thm}[L-regularity]
+\label{thm:mod-Lreg}
+Let $2h-2+n>0$. For legs $\phi_1,\dots,\phi_n\in\bbQ[v][p]$ the residue pairing $\langle\phi_1\cdots\phi_n\rangle^{\mathrm{TR}}_h$ lies in $\bbQ[v]$. For legs in $\cL=\bbQ[v][p]+\bbQ(v)[x]$ the residue pairing lies in $\bbQ[v]$; the components in $\bbQ(v)[x]$ pair to zero.
+\end{thm}
+
+\begin{proof}
+(1) Fix all variables but $p_l$ off the branch points. By \cref{lem:mod-abdks}, $\phi_l(p_l)\omega_{h,n}$ is a rational $1$-form in $p_l$ with poles at the branch points and possibly at $p_l=\infty$; it is holomorphic at $p_l=0$. By the residue theorem, $\sum_b\Res_{p_l=\varsigma_b}=-\Res_{p_l=\infty}$. (2) The result is again a polynomial over $\prod_{m\neq l}(p_m^5-v)^K$: in one variable, $(p^5-v)^{-K}=\sum_{j\geq 0}\binom{K+j-1}{j}v^jp^{-5K-5j}$ for $|p|^5>|v|$, so
+\[
+\Res_{p=\infty}\frac{p^a\,\dd p}{(p^5-v)^K}=\begin{cases}-\binom{K+j-1}{j}v^j&\text{if }a+1=5(K+j)\text{ with an integer }j\geq 0,\\ 0&\text{otherwise,}\end{cases}
+\]
+an element of $\bbQ[v]$. The iterated residues commute, as there are no diagonal poles. So $\langle\phi_1\cdots\phi_n\rangle^{\mathrm{TR}}_h=(-1)^n\Res_{p_1=\infty}\cdots\Res_{p_n=\infty}\big[\prod_l\phi_l(p_l)\,N_{h,n}\prod_l\dd p_l/\prod_l(p_l^5-v)^K\big]$ is a finite $\bbQ[v]$-combination of such residues, hence in $\bbQ[v]$. (3) By \cref{lem:mod-xfun} the components in $\bbQ(v)[x]$ of legs in $\cL$ pair to zero, whatever decomposition is chosen.
+\end{proof}
+
+By \cref{lem:mod-scale}~(ii) a pairing with monomial legs $p^{m_l}$ is $Cv^e$ with $e=2-2h-n+\sum_lm_l/5$; \cref{thm:mod-Lreg} says that $C=0$ whenever $e<0$.
+
+\begin{prop}[The period of $\omega_{h,1}$]
+\label{prop:mod-period}
+Let $h\geq 1$. Then:
+\begin{enumerate}
+\item $\omega_{h,1}=\dd\Phi_h$ with $\Phi_h$ rational and holomorphic at $p=0$ and $p=\infty$;
+\item $\int_\infty^0\omega_{h,1}=\frac{B_{2h}}{2h}\,v^{1-2h}$ along any path avoiding the branch points;
+\item for $h\geq 2$, $\FTR_h=\dfrac{B_{2h}}{2h(2h-2)}\,v^{2-2h}$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\emph{Step 1 (exactness).} Write $\omega^{\mathrm A}_{h,1}:=\omega^{(h)}_{1,0}=-\omega_{h,1}$. By \eqref{eq:mod-710}, $\omega^{\mathrm A}_{h,1}=[\hbar^{2h}]\sum_{r\geq 1}\mathcal D_x^r[w^r]W_1$; the term $r=0$ is $-[w^1]e^{E}\dd p=0$, where $E:=\sum_kw^{2k+1}\hbar^{2k}\epsilon_k=O(w^3)$. For $r\geq 1$, $\mathcal D_x^r(a\,\dd p)=\dd\big(D_x^{r-1}(a/x')\big)$ with $D_x=(1/x')\,\dd/\dd p$ on functions (\cref{def:mod-xi}). Hence $\omega^{\mathrm A}_{h,1}=\dd\Phi^{\mathrm A}_h$ with $\Phi^{\mathrm A}_h:=\sum_{r\geq 1}D_x^{r-1}(a_r/x')$, $a_r:=-[\hbar^{2h}][w^{r+1}]e^{E}=-\sum\frac1{j!}\prod_{i=1}^j\epsilon_{k_i}$, the sum over $j\geq 1$ and $k_1+\dots+k_j=h$ with $r=2h-1+j$; it is finite ($1\leq j\leq h$). Put $\Phi_h:=-\Phi^{\mathrm A}_h$.
+
+\emph{Step 2 ($p=\infty$).} $\deg\epsilon_k\leq 4-2k$, $1/x'=p^2/(p^5-v)$ has degree $-3$, and $D_x$ lowers the degree by $4$; every term of $\Phi^{\mathrm A}_h$ has degree at most $(4j-2h)-3-4(2h-2+j)=5-10h\leq -5$. So $\Phi^{\mathrm A}_h$ is holomorphic at $\infty$ and $\Phi^{\mathrm A}_h(\infty)=0$.
+
+\emph{Step 3 ($p=0$).} Write $\epsilon_k=\epsilon^0_k+(\text{terms of order}\geq 0)$ with $\epsilon^0_k:=-v\,p^{-2k-1}/(4^k(2k+1))$; further $1/x'=-(p^2/v)(1-p^5/v)^{-1}$, and $D_x=\delta_0+(\text{an operator raising the order by at least }6)$ with $\delta_0:=-(p^2/v)\,\dd/\dd p$. In the \emph{pure part} of a term, all $\epsilon_k$, $1/x'$, $D_x$ are replaced by $\epsilon^0_k$, $-p^2/v$, $\delta_0$. In the variable $\bar p=v/p$ one has $\delta_0=\dd/\dd\bar p$, $-p^2/v=-v/\bar p^2$ and $\epsilon^0_k=-\bar p^{2k+1}v^{-2k}/(4^k(2k+1))$. With the local letters $\tilde w:=w\bar p$, $\hbar':=\hbar/(2v)$, $E_0:=-\sum_{k\geq 1}\hbar'^{2k}\tilde w^{2k+1}/(2k+1)$ and $C_{h,r}:=[\hbar'^{2h}][\tilde w^{r+1}]\exp(E_0)$, the pure part of $a_r$ is $-(2v)^{-2h}\bar p^{r+1}C_{h,r}$, and the pure part of the $r$-th term is $(\dd/\dd\bar p)^{r-1}\big[(2v)^{-2h}v\,C_{h,r}\bar p^{r-1}\big]=v(2v)^{-2h}(r-1)!\,C_{h,r}$, a constant. Replacing a pure factor by its correction raises the order in $p$ by at least $3$ (by at least $2k+1$ for $\epsilon_k$, at least $5$ for $1/x'$ and for $D_x$), and $\delta_0$ never lowers the order. So every term is a constant plus $O(p^3)$: $\Phi^{\mathrm A}_h$ is holomorphic at $0$, and $\Phi^{\mathrm A}_h(0)=v(2v)^{-2h}\Sigma_h$ with $\Sigma_h:=\sum_r(r-1)!\,C_{h,r}$.
+
+\emph{Step 4 (the identity $\Sigma_h=-4^hB_{2h}/(2h)$).} Let $\mathsf a(\mathsf x):=\sum_{k\geq 1}\mathsf x^k/(2k+1)$, so that $E_0=-\tilde w\,\mathsf a(\hbar'^2\tilde w^2)$. With $r+1=2h+j$, the coefficient $C_{h,r}$ comes from $E_0^j/j!$ alone, and $C_{h,r}=\frac{(-1)^j}{j!}[\mathsf x^h]\mathsf a(\mathsf x)^j$. Hence, by the binomial series $(1+\mathsf a)^{1-2h}=\sum_j(-1)^j\binom{2h-2+j}{j}\mathsf a^j$ (the term $j=0$ has no $\mathsf x^h$, as $h\geq 1$, and the terms $j>h$ none either),
+\[
+\Sigma_h=\sum_{j=1}^h(-1)^j\frac{(2h-2+j)!}{j!}[\mathsf x^h]\mathsf a^j=(2h-2)!\,[\mathsf x^h](1+\mathsf a(\mathsf x))^{1-2h}.
+\]
+With $\mathsf x=\mathsf y^2$, $1+\mathsf a(\mathsf y^2)=\operatorname{artanh}(\mathsf y)/\mathsf y$, so $[\mathsf x^h](1+\mathsf a)^{1-2h}=[\mathsf y^{1}]\operatorname{artanh}(\mathsf y)^{1-2h}$. By the Lagrange--B\"urmann formula for $\mathsf y=\tanh\mathsf u$, $[\mathsf y^n]H(\mathsf u(\mathsf y))=\frac1n\Res_{\mathsf u=0}H'(\mathsf u)\tanh(\mathsf u)^{-n}\dd\mathsf u$ for $n\neq 0$ and every Laurent series $H$ (change of variables and one integration by parts), applied to $H(\mathsf u)=\mathsf u^{1-2h}$ and $n=1$: $[\mathsf y^1]\mathsf u^{1-2h}=(1-2h)[\mathsf u^{2h}](\mathsf u\coth\mathsf u)=(1-2h)4^hB_{2h}/(2h)!$. So $\Sigma_h=-4^hB_{2h}/(2h)$ and $\Phi^{\mathrm A}_h(0)=-\frac{B_{2h}}{2h}v^{1-2h}$. This proves (i).
+
+\emph{Step 5.} (ii) Since $\Phi_h$ is rational, $\int_\infty^0\omega_{h,1}=\Phi_h(0)-\Phi_h(\infty)=-\Phi^{\mathrm A}_h(0)=\frac{B_{2h}}{2h}v^{1-2h}$ along any path avoiding the branch points. (iii) $\Phi_{y\dd x}=p^5/5-v\log p$, so $(2-2h)\FTR_h=\frac15\langle p^5\rangle^{\mathrm{TR}}_h+v\langle-\log p\rangle^{\mathrm{TR}}_h$, the residue pairings with any branch of $\log p$ (\cref{def:mod-pair}). Here $\langle p^5\rangle^{\mathrm{TR}}_h\in\bbQ[v]$ by \cref{thm:mod-Lreg}, of exponent $2-2h<0$ (\cref{lem:mod-scale}~(ii)), hence $0$; and $\langle-\log p\rangle^{\mathrm{TR}}_h=\int_{\mathfrak r}\omega_{h,1}=-\int_\infty^0\omega_{h,1}=-\frac{B_{2h}}{2h}v^{1-2h}$ by (ii). So $\FTR_h=\frac{-v}{2-2h}\cdot\frac{B_{2h}}{2h}v^{1-2h}=\frac{B_{2h}}{2h(2h-2)}v^{2-2h}$.
+\end{proof}
+
+\begin{lem}[The vanishing period]
+\label{lem:mod-vanper}
+For $h\geq 1$, $\langle-\log p\rangle^{\mathrm{TR}}_h=\int_{\mathfrak r}\omega_{h,1}=\sum_b\Res_{\varsigma_b}(-\log p)\,\omega_{h,1}=-\frac{B_{2h}}{2h}\,v^{1-2h}$.
+\end{lem}
+
+\begin{proof}
+The first equality is \cref{def:mod-pair}. For the second, $\log p$ is single-valued near each $\varsigma_b$ and $\Res_{\varsigma_b}(\log p\,\dd\Phi_h)=-\Res_{\varsigma_b}\Phi_h\,\dd p/p$; the residue theorem for the rational form $\Phi_h\,\dd p/p$, whose other poles are $0$ and $\infty$, gives $\sum_b\Res_{\varsigma_b}\log p\cdot\omega_{h,1}=\Phi_h(0)-\Phi_h(\infty)=\int_\infty^0\omega_{h,1}$, while $\int_{\mathfrak r}\omega_{h,1}=-\int_\infty^0\omega_{h,1}$ for the ray $\mathfrak r$ from $0$ to $\infty$. The value is \cref{prop:mod-period}~(ii).
+\end{proof}
+
+\begin{thm}[The Gap Theorem]
+\label{thm:mod-gap}
+On the model curve, for every $h\geq 2$, $\FTR_h=\dfrac{B_{2h}}{2h(2h-2)}v^{2-2h}$ in the convention of \cref{conv:mod-kernel}; hence $\Fm_h=c_hv^{2-2h}$ with $c_h=(-5)^{1-h}\dfrac{B_{2h}}{2h(2h-2)}=\dfrac{(-1)^{h-1}B_{2h}}{2h(2h-2)\,5^{h-1}}$.
+\end{thm}
+
+\begin{proof}
+\Cref{prop:mod-period}~(iii) and \cref{cor:mod-trF}.
+\end{proof}
+
+\begin{rmk}[A first proof through a formula of Hock]
+\label{rmk:mod-hock}
+The value of $\FTR_h$ can also be read off from \cite[Cor.~1.2, (1.3)]{Hock25}, whose kernel and free energy \cite[(2.1), (1.1)]{Hock25} are those of \cref{conv:mod-kernel}; for $y$ unramified (here $y=p$ is a global coordinate) it expresses $\FTR_h$ as $\frac{1}{2-2h}\sum\Res\,[\hbar^{2h-1}]$ of an explicit series, the residues being taken at the logarithmic singularities of $x$ (there are none here) and at the other singularities of $x$ and $y$, here the poles $p=0$ and $p=\infty$. The residue at $\infty$ vanishes by a degree count, and at $p=0$ only the leading terms contribute, giving $v^{2-2h}A_h$ with $A_h=(2h-2)!\,[\mathsf x^h](1+\mathsf a(\mathsf x/4))^{1-2h}=4^{-h}\Sigma_h=-B_{2h}/(2h)$ by the Lagrange inversion of Step~4 above, so that $\FTR_h=A_hv^{2-2h}/(2-2h)$. This argument is only sketched here and is not used. \draftnote{The closed forms printed in \cite[\S3.2]{Hock25} are not used; only Cor.~1.2 there is cited.}
+\end{rmk}
+
+\input{sections/s06_model_8}

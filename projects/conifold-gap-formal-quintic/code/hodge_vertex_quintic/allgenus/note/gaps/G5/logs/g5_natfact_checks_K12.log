@@ -1,0 +1,9 @@
+g5_natfact_checks: K = 12, exact over Q(zeta)
+(1) Psi_0^T eta^-1 Psi_0 = 1: True
+(1) control/erratum: Psi_0 eta^-1 Psi_0^T = eta^-1 (OU3 s.3 wording): False (False expected)
+(2) row 0 of Psi_0 equals (zeta^(-4j))_j: True
+(3) mu(b,k) integral, >= max(0,(4k-4)/5) for k <= 40: True ; mu = 0 exactly at (b,k) = [(0, 0), (1, 0), (1, 1), (2, 0), (3, 0), (4, 0)]
+(4) model rows: closing relation through t^12: True ; Fs_b(0) = ['1', '-1', '-1', '1', '1'] ; Fs_0 = ['1', '-3/20', '9/800', '11571/80000'] ...
+(4) Rhat^mod(0) = Psi_0: True
+(4) M_0(-t)^T M_0(t) = 1 through t^12: True
+(4) control: Fs_0 perturbed at t^3 (closing relation then fails) -> symplectic: False (False expected)

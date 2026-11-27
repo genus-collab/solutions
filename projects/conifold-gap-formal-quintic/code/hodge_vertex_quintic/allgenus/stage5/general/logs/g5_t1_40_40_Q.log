@@ -1,0 +1,32 @@
+g5_t1: formal quintic colour 0, c(z; 1 + eps) as Laurent series in eps; z^0..z^40, eps-truncation 40; field Q (exact)
+   n =  0: eps-orders -0..-1 all zero: True;  [eps^0] c_n = 1;  h_n = 1
+   n =  1: eps-orders -1..-1 all zero: True;  [eps^0] c_n = -3/20;  h_n = -3/20
+   n =  2: eps-orders -2..-1 all zero: True;  [eps^0] c_n = 9/800;  h_n = 9/800
+   n =  3: eps-orders -3..-1 all zero: True;  [eps^0] c_n = -269/80000;  h_n = -269/80000
+   n =  4: eps-orders -4..-1 all zero: True;  [eps^0] c_n = 2823/6400000;  h_n = 2823/6400000
+   n =  5: eps-orders -5..-1 all zero: True;  [eps^0] c_n = -257071/8064000000;  h_n = -257071/8064000000
+   n =  6: eps-orders -6..-1 all zero: True;  [eps^0] c_n = 2942137/537600000000;  h_n = 2942137/537600000000
+   n =  7: eps-orders -7..-1 all zero: True;  [eps^0] c_n = 3832987939/10752000000000;  h_n = 3832987939/10752000000000
+   n =  8: eps-orders -8..-1 all zero: True;  [eps^0] c_n = -276241733339/5160960000000000;  h_n = -276241733339/5160960000000000
+   n =  9: eps-orders -9..-1 all zero: True;  [eps^0] c_n = 41236524917071/172032000000000000;  h_n = 41236524917071/172032000000000000
+   n = 10: eps-orders -10..-1 all zero: True;  [eps^0] c_n = -47540536142145509/1300561920000000000000;  h_n = -47540536142145509/1300561920000000000000
+PASS (R) [Q] no negative power of eps in c_n(1+eps), all n <= 40
+PASS (V) [Q] [eps^0] c_n = h_n for all n <= 40 (incl. (N) at n = 5, 10, ..)   []
+   (100.8 s)
+Controls (exact over Q, z^0..z^12):
+   control (wrong twist sign in h (w contains +5)): first pole at z^None; first value mismatch at z^1
+PASS control keeps (R) and fails through (V), as predicted: wrong twist sign in h (w contains +5)
+   control (Stirling series of Gamma(1+5s) dropped): first pole at z^None; first value mismatch at z^1
+PASS control keeps (R) and fails through (V), as predicted: Stirling series of Gamma(1+5s) dropped
+   control (Stirling series of the singular factor dropped): first pole at z^1; first value mismatch at z^2
+PASS control fails through (R), as predicted: Stirling series of the singular factor dropped
+   control (b_1 + 1/7 in every factor): first pole at z^1; first value mismatch at z^1
+PASS control fails through (R), as predicted: b_1 + 1/7 in every factor
+   control (b_3 + 1/7 in the singular factor only): first pole at z^5; first value mismatch at z^7
+PASS control fails through (R), as predicted: b_3 + 1/7 in the singular factor only
+   control (b_3 + 1/7 in the regular factors only): first pole at z^None; first value mismatch at z^5
+PASS control keeps (R) and fails through (V), as predicted: b_3 + 1/7 in the regular factors only
+PASS regular-only b_3 perturbation: value = exp(Sum z^n A_n(1)) of the PERTURBED regular factors, n <= 12
+PASS positive control Gamma(5s) for Gamma(1+5s): (R) and (V) still hold, n <= 12 (chart: only the elementary factor changes)
+ALL CHECKS PASSED
+total 104.8 s; log logs/g5_t1_40_40_Q.log

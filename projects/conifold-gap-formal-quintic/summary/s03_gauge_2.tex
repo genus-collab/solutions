@@ -1,0 +1,116 @@
+% Abridged version, Section 3, part 2 of 2: the residue relation, the vanishing solutions, (G), the canonical gauge, symplecticity; the normalisation series.
+
+%-------------------------------------------------------------------------------
+\subsection{The vanishing solutions, the gauge identity and symplecticity}
+\label{sec:gau-van}
+
+From now on, unless said otherwise, $A$ is the quintic system of \cref{prop:gau-quintic} in a conifold frame and $\tilde A$ is the model pulled back along $v=v(u)$; by \cref{prop:gau-equalprod}, \cref{thm:gau-U} applies to them over $\bbQ$.
+
+\begin{lem}[The residue relation (R1) and the diagonal; {\Lr{lem:gau-R1,lem:gau-diag}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:gau-R1}
+Let $A,\tilde A$ be cyclic systems with one simple pole over $\Bbbk\fps u$, with residues $r,\tilde r$, and let $P\in\Gau(A,\tilde A)$; put $P(0,z):=\sum_kz^kP_k(0)$. Then $rE_{12}P(0,z)=\tilde r\,P(0,z)E_{12}$: column $1$ of $P(0,z)$ is $P_{11}(0,z)\mathbf e_1$, row $2$ is $P_{22}(0,z)\mathbf e_2^T$, and $rP_{22}(0,z)=\tilde rP_{11}(0,z)$. For the quintic system in a conifold frame and the pulled-back model, and a regular gauge $P$ whose diagonal $z^0$-term $P_0=\diag(p_{0,0},\dots,p_{0,4})$ has $p_{0,1}(0)=1$, one has $p_{0,a}(0)=1$ for all $a$ and $p_{0,0}(u)=\tau(u)^{-1/4}/\varpi_0$.
+\end{lem}
+
+\begin{defn}[Vanishing solutions; {\Lr{def:gau-van}}]
+\label{def:gau-van}
+\begin{enumerate}
+\item For $m\in\bbZ$ the formal residue at $p=0$, taken coefficientwise in $v$, is
+\[
+\IC_m(v,z):=\Res_{p=0}p^m\re^{-\Wv(p)/z}\dd p=\sum_{i\geq0,\ m+4i+1\geq0}\frac{(-1/(4z))^i}{i!}\,\frac{(-v/z)^{m+4i+1}}{(m+4i+1)!}\in\bbQ[z^{-1}]\fps v .
+\]
+The \emph{vanishing solution of the model} is $\YC:=(\IC_0,-\IC_{-1},-\IC_3,\IC_2,\IC_1)$, i.e.\ $\YC_b=\varepsilon_b\IC_{\nu_b}$.
+\item For a cyclic system $A=\sum_ab_aE_{a,a+1}$ with one simple pole over $\bbQ\fps u$ put $y^{(0)}:=-\mathbf e_1$, $y^{(n+1)}_a:=\int_0^ub_a\,y^{(n)}_{a+1}\,\dd u$ and $Y^{\mathrm C}_A:=\sum_{n\geq0}z^{-n}y^{(n)}$. For the quintic system, $\YCQ:=Y^{\mathrm C}_A$ is the \emph{vanishing solution of the quintic}.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}[{\Lr{lem:gau-vanmod,lem:gau-vanshape,lem:gau-uniq,lem:gau-vanq}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:gau-vanq}
+\begin{enumerate}
+\item The residues $\IC_m$ satisfy (Mod1) and (Mod2); hence $\YC$ solves the model system and $\YC(0,z)=-\mathbf e_1$. With $m:=\lfloor n/5\rfloor$, $\coef{z^{-n}}\YC_b=\varepsilon_b(-1)^nv^{n-m}/(4^m\,m!\,(n-m)!)$ if $n\equiv\nu_b+1\bmod5$, and $0$ otherwise; so $\YC(v(u),z)\in\bbQ[z^{-1}]\fps u^5$ has no positive power of $z$.
+\item In \cref{def:gau-van}~(ii) every integrand is a power series; no logarithm arises. $Y^{\mathrm C}_A\in\bbQ[z^{-1}]\fps u^5$ solves $z\de_uY=AY$, and $Y^{\mathrm C}_A(0)=-\mathbf e_1$. For the quintic system in a conifold frame, $\coef{z^{-1}}\YCQ=-\tc\,\mathbf e_0$.
+\item Let $B=u^{-1}B_{-1}+\sum_{j\geq0}u^jB_j$ with $B_j\in\mathfrak{gl}_5(\Bbbk)$ independent of $z$. If $Y\in\Bbbk\lser z\fps u^5$ satisfies $z\de_uY=BY$ and $Y(0)=0$, then $Y=0$.
+\end{enumerate}
+\end{lem}
+
+\begin{thm}[The gauge identity (G); {\Lr{thm:gau-G}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{thm:gau-G}
+For every $P\in\Gau(A,\tilde A)$, in particular for every regular gauge from the pulled-back model to the quintic system,
+\[
+P(u,z)\,\YC(v(u),z)=P_{11}(0,z)\,\YCQ(u,z)\qquad\text{in }\bbQ\lser z\fps u^5 .
+\]
+\begin{enumerate}
+\item[(a)] For a graded regular gauge $P$, $P_{11}(0,z)$ is a unit of $\bbQ\fps{z^5}$, $\Pc:=P\,P_{11}(0,z)^{-1}$ is a graded regular gauge, and $\Pc$ is the unique regular gauge $P'$ with $P'\,\YC(v(u),z)=\YCQ$.
+\item[(b)] For a regular gauge $P$, $P\,\YC(v(u),z)$ has no positive power of $z$ if and only if $P_{11}(0,z)$ is a constant; the regular gauges with this property are the $\mu\Pc$, $\mu\in\bbQ^\times$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}[Proof of the identity]
+By \cref{lem:gau-vanq}, $\YC(v(u),z)=Y^{\mathrm C}_{\tilde A}$. The product $P\,Y^{\mathrm C}_{\tilde A}$ lies in $\bbQ\lser z\fps u^5$ and solves $z\de_uY=AY$, by the gauge equation; its value at $u=0$ is $P(0,z)(-\mathbf e_1)=-P_{11}(0,z)\mathbf e_1$ by (R1). $P_{11}(0,z)Y^{\mathrm C}_A$ is a solution with the same value, and \cref{lem:gau-vanq}~(iii) gives the identity. Parts (a) and (b) follow from \cref{thm:gau-U}~(b), (c) and the coefficient of $u^0$.
+\end{proof}
+
+\begin{defn}[The canonical gauge; {\Lr{def:gau-can}}]
+\label{def:gau-can}
+In a conifold frame, the \emph{canonical gauge} $\Pc$ is the regular gauge from the pulled-back model to the quintic system with $(\Pc)_{11}(0,z)=1$. It exists and is unique. Equivalently, $\Pc$ is the unique regular gauge with $\Pc\YC(v(u))=\YCQ$. It is graded, rational, colour covariant (that is, $\zeta^{i(a-b)}(\Pc)_{ab}(u,\zeta^{-i}z)=(\Pc)_{ab}(u,z)$ for all $i$, which is equivalent to being graded), and $p_{0,a}(0)=1$ for its diagonal $z^0$-term. We write $\Pc=\sum_kz^k\sum_bp_{k,b}(u)E_{b+k,b}$.
+\end{defn}
+
+\begin{prop}[Symplecticity; {\Lr{prop:gau-symp}}]\genusstatus{AI-proposed, unchecked}
+\label{prop:gau-symp}
+Let $A,\tilde A$ be self-dual cyclic systems with one simple pole over $\Bbbk\fps u$ with (EP) and $r=\tilde r$, and let $P$ be a regular gauge from $\tilde A$ to $A$, $\cn(z):=P_{11}(0,z)$. Then $P(u,-z)^T\eta\,P(u,z)=\cn(z)\cn(-z)\,\eta$. In particular, for the two systems of this subsection, $\Pc$ is symplectic, $\Pc(u,-z)^T\eta\Pc(u,z)=\eta$; the symplectic regular gauges are the $\Pc\cn(z)$ with $\cn(z)\cn(-z)=1$, so symplecticity constrains only the even part of $\log(\cn/\cn(0))$. Among the symplectic regular gauges, only (G) singles out $\Pc$.
+\end{prop}
+
+\begin{proof}[Proof of the identity]
+By self-duality, $T:=\eta^{-1}P(u,-z)^T\eta P(u,z)$ satisfies $zT'=\tilde AT-T\tilde A$, so $T=t(z)\,1$ by \cref{thm:gau-U}~(b) for the pair $(\tilde A,\tilde A)$; by (R1), $r=\tilde r$ and $\eta_{a1}=5\delta_{a2}$, the entry $(2,1)$ of $\eta T$ at $u=0$ gives $5t(z)=5\cn(-z)\cn(z)$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The normalisation series}
+\label{sec:gau-R0}
+
+We compare $\Pc$ applied to the model columns with the rows of \cref{def:set-rows}. Here $\theta_u:=u\,\dd/\dd u$, $\theta_{\zh}:=\zh\,\dd/\dd\zh$, and a series $\Phi(\zh,u)=\sum_n\zh^n\mathrm{ph}_n(u)$ is identified with $\sum_nz^ns^{-4n}\mathrm{ph}_n$ through $\zh=z/s^4$.
+
+\begin{lem}[HPF; {\Lr{lem:gau-HPF,lem:gau-poly}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:gau-HPF}
+For $e\in\bbZ$ let $\mathscr O_e:=1+\zh(1-u)\bigl(\tfrac45\theta_{\zh}-\tfrac e5-\theta_u\bigr)$, and put $\Phi^{[0]}:=\Phi$, $\Phi^{[j]}:=\mathscr O_{-j}\Phi^{[j-1]}$, $j=1,\dots,5$.
+\begin{enumerate}
+\item $L\Phi$ satisfies $\PFfive^{(0)}(L\Phi)=0$, where $\PFfive^{(0)}$ is $\PFfive$ with $z\Dq$ replaced by $z\Dq+L$ (that is, $\re^{u_0/z}L\Phi$ solves $\PFfive$ formally), if and only if
+\begin{equation}
+\label{eq:gau-HPF}
+\Phi^{[5]}-\Phi-(1-u)\Bigl[3\zh\Phi^{[4]}+\tfrac{17}5u\zh^2\Phi^{[3]}+\tfrac95u^2\zh^3\Phi^{[2]}+\tfrac{274}{625}u^3\zh^4\Phi^{[1]}+\tfrac{24}{625}u^4\zh^5\Phi\Bigr]=0 .
+\end{equation}
+\item The coefficient of $\zh^{n+1}$ of the left side of \eqref{eq:gau-HPF} is $(1-u)\bigl[(4n-5\theta_u)\mathrm{ph}_n+r_n\bigr]$, where $r_n$ depends only on $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$. So, if every $\mathrm{ph}_n$ lies in $\bbQ\fps u$, the coefficient $\coef{u^k}\mathrm{ph}_n$ is fixed by $\mathrm{ph}_0,\dots,\mathrm{ph}_{n-1}$ for $5k\neq4n$, while for $n=5m$ the coefficient $\fc_m:=\coef{u^{4m}}\mathrm{ph}_{5m}$ is free.
+\item Let $\Phi$ be a solution of \eqref{eq:gau-HPF} with $\mathrm{ph}_0=1$ and every $\mathrm{ph}_n\in\bbQ\fps u$. Then every $\mathrm{ph}_n$ is a polynomial in $u$, and the solutions with $\mathrm{ph}_0=1$ and coefficients in $\bbQ\fps u$ are exactly the $\Phi\,\mathsf k(z)$, $\mathsf k\in1+z^5\bbQ\fps{z^5}$ (with $z^n=s^{4n}\zh^n$).
+\end{enumerate}
+\end{lem}
+
+\begin{lem}[Formal WKB uniqueness and colour covariance; {\Lr{lem:gau-wkb,lem:gau-colmod,lem:gau-colrows}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:gau-colrows}
+Let $(\cR,\Dq,L)$ be $(\Bbbk\fps q,\,q\,\dd/\dd q,\,(1-5^5q)^{-1/5})$ or $(\Bbbk\lser s,\Dq,s^{-1})$, $\Bbbk\supseteq\bbQ(\zeta)$ a field. A \emph{colour-$i$ WKB amplitude} of $\PFfive$ over $\cR$ is a series $\cA=\sum_{n\geq0}\cA_nz^n\in\cR\fps z$ with $\PFfive^{(i)}\cA=0$, where $\PFfive^{(i)}$ is $\PFfive$ with $z\Dq$ replaced by $z\Dq+\zeta^iL$.
+\begin{enumerate}
+\item If $\cA,\cA'$ are colour-$i$ WKB amplitudes with $\cA_0=\cA'_0=L$, then $\cA'=\cA\,\mathsf k(z)$ for a unique $\mathsf k\in1+z\Bbbk\fps z$; and $\cA(z)\mapsto\cA(\zeta^{-i}z)$ is a bijection from colour-$0$ to colour-$i$ WKB amplitudes that preserves $\cA_0$.
+\item The model columns $\Qr^{\mathrm m,(i)}_b(v,z):=\varsigma^{\nu_b-1}\Rhat^{\mathrm m,(i)}_b(z/\varsigma^4)$ satisfy $\Qr^{\mathrm m,(i)}_b(u,z)=\zeta^{i(b+1)}\Qr^{\mathrm m,(0)}_b(u,\zeta^{-i}z)$ at $v=v(u)$.
+\item For every $i$, as identities of formal series in $z$ with coefficients in $\bbQ(\zeta)\fps q$, $\Phi_i(\zh,u)=\Phi_0(\zeta^{-i}\zh,u)$ and $\Qr^{(i)}_a(z)=\zeta^{i(a+1)}\Qr^{(0)}_a(\zeta^{-i}z)$.
+\end{enumerate}
+\end{lem}
+
+In (iii), $L\Phi_i$ and $L\Phi_0(\zeta^{-i}\zh,u)$ are colour-$i$ WKB amplitudes, so they differ by a constant series $\mathsf k(z)$, and (QRR) at $q=0$ gives $\mathsf k=1$; this is the only place in this section where the value of (QRR) enters.
+
+\begin{thm}[The normalisation series $\Dn$; {\Lr{thm:gau-R0,cor:gau-colours}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{thm:gau-R0}
+Let $(\alpha,\beta)$ be a conifold frame, $\Pc$ the canonical gauge, and $\Qr^{\mathrm m,(i)}$ the model columns at $v=v(u)$.
+\begin{enumerate}
+\item For every $i$, $\Pc\Qr^{\mathrm m,(i)}$ is a formal WKB solution of the quintic system with exponential $\re^{u_i/z}$: its rows $X_a\in\bbQ(\zeta)\lser s\fps z$ satisfy $(z\Dq+\zeta^iL)X_a=\kappa_aX_{a+1}$ for $a\in\bbZ/5$, with $L=s^{-1}$.
+\item $\Phican(\zh,u):=\varpi_0\,s\,\bigl(\Pc\Qr^{\mathrm m,(0)}\bigr)_0\big|_{z=s^4\zh}$ (row $0$, colour $0$) solves \eqref{eq:gau-HPF}, with coefficients in $\bbQ\fps u$ and $\mathrm{ph}^{\mathrm{can}}_0=1$. Hence every $\mathrm{ph}^{\mathrm{can}}_n$ is a polynomial in $u$ and $A^{\mathrm{can}}_n:=L^{4n+1}\mathrm{ph}^{\mathrm{can}}_n(L^{-5})$ lies in $\bbQ[L,L^{-1}]$.
+\item Let $A^{\mathrm{act}}:=C_0\Qr^{(0)}_0=\sum_nA^{\mathrm{act}}_nz^n$ be the flat amplitude of the actual colour-$0$ row $0$. In $\bbQ(\zeta)\fps q$, with $L=(1-5^5q)^{-1/5}$, both $A^{\mathrm{can}}:=\sum_nA^{\mathrm{can}}_nz^n$ and $A^{\mathrm{act}}$ are colour-$0$ WKB amplitudes of $\PFfive$ with coefficient $L$ at $z^0$. Hence $A^{\mathrm{can}}=A^{\mathrm{act}}\,\Dn_0(z)$ for a unique $\Dn_0\in1+z\bbQ(\zeta)\fps z$, and every $A^{\mathrm{act}}_n$ is the image of a unique element of $\bbQ(\zeta)[L,L^{-1}]$.
+\item In hatted form, $\Phiact(\zh,u)\,\Dn_0(s^4\zh)=\Phican(\zh,u)$, $\Phiact:=\Phi_0$. For every $i$, $\Dn_i(z):=\Dn_0(\zeta^{-i}z)$ is the unique series in $\bbQ(\zeta)\fps z$ with $\Qr^{(i)}\,\Dn_i(z)=\Pc\,\Qr^{\mathrm m,(i)}(v(u))$ in $\bbQ(\zeta)\lser s\fps z$, for the conifold expansions of the rows. Hence, with $\Dn:=\diag(\Dn_0,\dots,\Dn_4)$, $\Qr\,\Dn=\Pc\,\Qr^{\mathrm m}(v(u))$, and $\Dn_0=1$ implies $\Dn=1$.
+\end{enumerate}
+\end{thm}
+
+\begin{sketch}
+(i) The model columns solve the pulled-back model with the exponentials $\re^{U_i/z}$, and $U_i(v(u))=-\frac54\zeta^iu^{4/5}/\tau=u_i-u_i^{\mathrm c}$ (\cref{def:set-tau}): this is where the choice of $\tau$ enters. The gauge equation then gives the quintic system for $\Pc\Qr^{\mathrm m,(i)}$. (ii) By (i) and \cref{cor:gau-cycsys}~(ii), $L\Phican$ solves $\PFfive^{(0)}$; in the hatted variables the entries of $\Pc$ carry non-negative integer powers of $u$ only, and $\mathrm{ph}^{\mathrm{can}}_0=\varpi_0\tau^{1/4}p_{0,0}=1$ by \cref{lem:gau-R1}; then \cref{lem:gau-HPF}~(iii) applies. (iii) $\bbQ[L,L^{-1}]$ embeds in $\bbQ\fps q$ and in $\bbQ\lser s$ compatibly with $\Dq$; $A^{\mathrm{act}}$ is a WKB amplitude by \cref{cor:set-cyclicPF5}~(b), and \cref{lem:gau-colrows}~(i) gives $\Dn_0$. (iv) Row $0$ is (iii); the other rows follow from the forward relations, $\Dn_0$ being constant, and the other colours from the colour covariance of $\Pc$, of the model columns and of the rows.
+\end{sketch}
+
+\begin{cor}[The rows lie in the differential ring; the window $\Fg{g}$; {\Lr{cor:gau-rowsNN,cor:gau-colours,def:gau-Fg}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{cor:gau-rowsNN}
+For all $i,a,n$ the row coefficient $\coef{z^n}\Qr^{(i)}_a$ is the evaluation of an explicit $\logq$-free element of $\Nring\otimes\bbQ(\zeta)$: for colour $0$, row $0$ is $A^{\mathrm{act}}_n(L)\,c_0^{-1}$; the rows $a=1,\dots,4$ follow from the forward relations of \cref{prop:set-cyclicLR}~(iii); and colour $i$ is $\zeta^{i(a+1-n)}$ times colour $0$. These representatives are used throughout; in this sense the rows lie in $\Nring\otimes\bbQ(\zeta)$ and have conifold expansions, and the expanded rows of every colour form a WKB solution of the quintic system with exponential $\re^{u_i/z}$. For $g\geq2$, the \emph{window} $\Fg{g}$ is the statement $\Dn_0\equiv1\pmod{z^{3g-2}}$ in the conifold frame considered; it implies $\Dn\equiv1\pmod{z^{3g-2}}$, and it is the hypothesis of the comparison theorem (\cref{thm:flh-main}).
+\label{def:gau-Fg}
+\end{cor}

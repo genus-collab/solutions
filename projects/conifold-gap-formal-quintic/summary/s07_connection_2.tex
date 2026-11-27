@@ -1,0 +1,70 @@
+% Abridged version, Section 7, part 2 of 2: Theorem P(b) and the glue.
+
+Theorem~P(b) identifies $\PhiSP$ with $\Phican$. Both solve HPF with constant term $1$ and coefficients in $\bbQ\fps u$, so by \cref{lem:gau-HPF}~(iii) they differ by a series $\mathsf s(z)\in1+z^5\bbQ\fps{z^5}$, which has to be shown to be $1$. The equation does not determine it; it is determined by a second functional on the same $1$-form, the residue at the pole, compared with the gauge identity (G).
+
+\begin{lem}[The uniformising map and the reduction; {\Lr{lem:con-cfu,lem:con-red}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:con-cfu}
+There are unique $Y_k\in\bbQ[T]$ ($k\geq1$) and $V\in1+u\bbQ\fps u$ such that $Y:=X\bigl(1+\sum_{k\geq1}u^kY_k(X^5)\bigr)$ satisfies
+\[
+\hat\cW(X;u)=V/Y+Y^4/4=W_V(Y)\qquad\text{in }\bbQ[X,X^{-1}]\fps u.
+\]
+Moreover $V=\tau^{-5/4}$, and the point $X=1$ goes to the critical point $Y_c:=Y(1)=V^{1/5}=\tau^{-1/4}$ of $W_V$. Let $\fa_Y(Y;\zh):=\hat\fa(X(Y);\zh)\,X'(Y)\in\bbQ[Y,\zh]\fps u$ be the hatted amplitude in the variable $Y$. There are $\pi_m\in\bbQ[\zh]\fps u$ ($m=-1,\dots,3$) and $\mathcal E\in Y\bbQ[Y,\zh]\fps u$ with
+\[
+\fa_Y\,\re^{-W_V/\zh}\,\dd Y=\sum_{m=-1}^{3}\pi_m\,Y^m\re^{-W_V/\zh}\,\dd Y+\dd\bigl(\mathcal E\,\re^{-W_V/\zh}\bigr),
+\]
+and $\pi_m$ contains only powers $\zh^k$ with $k\equiv m\bmod5$.
+\end{lem}
+
+Here $V$ is identified by the critical value $\hat\cW(1)=\frac54\tau^{-1}=\frac54V^{4/5}$; in the flat variables $p=sY$ the parameter of the model potential is again $uV=v(u)$. The reduction uses (Mod2), in the form of the exact forms $\zh\,\dd(Y^{n-3}\re^{-W_V/\zh})$, to lower the degree in $Y$ to the five exponents $-1,\dots,3$, which are the charges $\nu_b$.
+
+\begin{lem}[The two functionals on the reduced form; {\Lr{lem:con-S2,lem:con-id,prop:con-res}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{lem:con-id}
+Work in a conifold frame.
+\begin{enumerate}
+\item (The model identity.) For $W_1(\tilde p):=\tilde p^4/4+1/\tilde p$ and every $b\in\bbZ/5$, $\SPn_{\tilde p=1}[-W_1;\tilde p^{\nu_b}](t)=\varepsilon_b\Fs_b(t)$.
+\item $\PhiSP=\sum_b\varepsilon_b\,\pi_{\nu_b}\,\tau^{(1-\nu_b)/4}\Fs_b(\tau\zh)$.
+\item Let $P$ be a graded regular gauge with coefficients in $\bbQ\fps u$ from the pulled-back model to the quintic system, and let $\Phi_P$ be $\varpi_0$ times the colour-$0$ entry of the hatted row $0$ of $P\,\Qr^{\mathrm m}(v(u))$; for $P=\Pc$ this is $\Phican$. Then $\Phi_P/\varpi_0=\sum_b\tau^{(1-\nu_b)/4}\,G_b\,\Fs_b(\tau\zh)$ with $G_b:=s^{\nu_b}P_{0b}(u,s^4\zh)$, and such an expansion, with coefficients that contain only powers $\zh^k$, $k\equiv-b\bmod5$, is unique. Hence, if $\Phi_P=\PhiSP$, then $G_b=\varepsilon_b\pi_{\nu_b}/\varpi_0$ for every $b$.
+\item (The residue.) If $P$ is as in (iii) and $\Phi_P=\PhiSP$, then $\cV=\varpi_0\,\bigl(P\,\YC(v(u),z)\bigr)_0$ in $\bbQ\lser z\fps u$.
+\end{enumerate}
+\end{lem}
+
+\begin{sketch}
+(i) The stationary phases $J_m$ of $p^m\re^{-\Wv/z}\dd p$ at the critical point $p=\varsigma$ satisfy (Mod1), by the derivative in the parameter $v$, and (Mod2), by the vanishing on exact forms; so they solve the model system, and the uniqueness of the T-system (\cref{prop:set-modrows}) identifies them. (ii) The stationary phase is invariant under the uniformising map and vanishes on the exact part, so \cref{lem:con-cfu} and (i), rescaled to $Y_c$, give the formula. (iv) The formal residue at the pole is also invariant under the uniformising map and vanishes on exact forms; so the residue of the hatted form is $\sum_m\pi_m\Res_Y[Y^m\re^{-W_V/\zh}\dd Y]$, and the model residues are the $\IC_m(v(u),z)$ up to powers of $s$. The same coefficients $\pi_{\nu_b}$, which are the entries of $P$ by (iii), now multiply the entries of the vanishing solution: the sum is $\varpi_0\sum_bP_{0b}\YC_b$.
+\end{sketch}
+
+\begin{thm}[Theorem P(b); {\Lr{thm:con-Pb}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:con-Pb}
+In every conifold frame of \cref{def:set-frames}, $\PhiSP=\Phican$ in $\bbQ\fps u\fps{\zh}$. The proof does not use (QRR).
+\end{thm}
+
+\begin{proof}[Proof, given the lemmas]
+Let $\PhiSP=\Phican\,\mathsf s(z)$ with $\mathsf s\in1+z^5\bbQ\fps{z^5}$, and put $P^{\mathrm{SP}}:=\mathsf s(z)\Pc$. By \cref{thm:gau-U} it is a graded regular gauge, and $\Phi_{P^{\mathrm{SP}}}=\mathsf s(z)\Phican=\PhiSP$. The gauge identity $\Pc\YC(v(u),z)=\YCQ$ (\cref{thm:gau-G}), multiplied by $\mathsf s(z)$, gives $(P^{\mathrm{SP}}\YC)_0=\mathsf s(z)(\YCQ)_0$, and \cref{lem:con-id}~(iv) for $P=P^{\mathrm{SP}}$ gives
+\[
+\cV=\varpi_0\,\mathsf s(z)\,(\YCQ)_0\qquad\text{in }\bbQ\lser z\fps u .
+\]
+Compare the coefficients of $u^1$. On the left only $k=1$ contributes in \cref{def:con-PhiSP}, because $\Xi=u+O(u^2)$, and $[x^0](\re^{-\cG/z}\fa)=1$; so $[u^1]\cV=-1/z$. On the right, $[u^0](\YCQ)_0=0$ and $[u^1](\YCQ)_0=-1/z$, since only $y^{(1)}_0=-\tc$ contributes at $u^1$ and $\tc=u+O(u^2)$ (\cref{lem:gau-vanq}, \Lr{lem:gau-vanq}); with $\varpi_0(0)=1$ the right side has the $u^1$-coefficient $-\mathsf s(z)/z$. Hence $\mathsf s=1$.
+\end{proof}
+
+So the freedom $\cn(z^5)$ left by the differential equation is fixed on both sides by the same normalisation, the residue at the pole: on the side of the gauge by (G), on the side of the Mellin--Barnes summand by the explicit residue $\cV$.
+
+%-------------------------------------------------------------------------------
+\subsection{The glue}
+\label{sec:con-glue}
+
+For a colour-$0$ WKB function with polynomial coefficients write $\Phi(z,1):=\sum_n\mathrm{ph}_n(1)z^n$, its value at $u=1$, where $\zh=z$.
+
+\begin{thm}[The glue; {\Lr{thm:con-glue}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:con-glue}
+In $\bbQ(\zeta)\fps z$, $h(z)\,\Dn_0(z)=\Phican(z,1)$; hence $\Dn_0\in1+z\bbQ\fps z$, and, by \cref{thm:con-Pb}, $\Dn_0(z)=\PhiSP(z,1)/h(z)$.
+\end{thm}
+
+\begin{proof}
+By \cref{thm:gau-R0}~(ii), (iii), $A^{\mathrm{can}}=A^{\mathrm{act}}\,\Dn_0$ is an identity in $\bbQ(\zeta)[L,L^{-1}]\fps z$, with $A^{\mathrm{can}}_n=L^{4n+1}\mathrm{ph}^{\mathrm{can}}_n(L^{-5})$. Evaluation at $L=1$, that is $u=1$, $q=0$, $\zh=z$, is a ring homomorphism $\bbQ(\zeta)[L,L^{-1}]\to\bbQ(\zeta)$; it gives $A^{\mathrm{act}}(z)|_{L=1}\,\Dn_0(z)=\Phican(z,1)$. As $(1-5^5q)^{-1/5}=1+O(q)$, $A^{\mathrm{act}}_n|_{L=1}$ is the coefficient of $q^0$ of $A^{\mathrm{act}}_n$, which is $h_n$ by (QRR) (\cref{thm:set-qrr}). As $h\in1+z\bbQ\fps z$ is invertible, $\Dn_0=\Phican(z,1)/h(z)$ has rational coefficients.
+\end{proof}
+
+\begin{cor}[{\Lr{cor:con-A2}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:con-A2}
+$\Dn=1$ if and only if $\PhiSP(z,1)=h(z)$. By \cref{thm:con-Pa}~(iv), $\PhiSP(z,1)=c(z;1)$, the value at $L=1$ of the Laurent polynomials $c_n$; so the condition reads $c(z;1)=h(z)$.
+\end{cor}
+
+The glue is the place where the value of (QRR) at colour $0$ enters. The coefficient of $z^n$ of $\Dn_0$ enters $\Fg{g}$ first at $g=\lceil(n+3)/3\rceil$ \Lr{rmk:con-genus}.

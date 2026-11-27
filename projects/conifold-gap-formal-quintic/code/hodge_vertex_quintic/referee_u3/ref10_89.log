@@ -1,0 +1,12 @@
+====================================================================================================
+ref10_direct, p = 2^89-1
+   Delta*: three-edge graphs done (66 s)
+   Delta*: [u^0..u^3] of the 9 three-edge graphs all zero: True; [u^0..u^2] of the 5 two-edge graphs all zero: True; direct values = fitted forms (CircSys): True   (85 s)
+   3 Delta* (homogeneity): three-edge graphs done (108 s)
+   3 Delta* (homogeneity): [u^0..u^3] of the 9 three-edge graphs all zero: True; [u^0..u^2] of the 5 two-edge graphs all zero: True; direct values = fitted forms (CircSys): True   (111 s)
+   point A + 7 B of Pi (control): three-edge graphs done (132 s)
+   point A + 7 B of Pi (control): [u^0..u^3] of the 9 three-edge graphs all zero: True; [u^0..u^2] of the 5 two-edge graphs all zero: True; direct values = fitted forms (CircSys): True   (135 s)
+   random circulant Delta on m_1 = 0, L2 (control): three-edge graphs done (155 s)
+   random circulant Delta on m_1 = 0, L2 (control): [u^0..u^3] of the 9 three-edge graphs all zero: False; [u^0..u^2] of the 5 two-edge graphs all zero: False; direct values = fitted forms (CircSys): True   (159 s)
+      non-zero: cubics [4, 9, 10, 11, 12, 19], quadrics [3, 6, 7, 8]
+REF10 done (159 s)

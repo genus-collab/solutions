@@ -1,0 +1,77 @@
+% Section 2, part 8 of 8: the dilaton lemma; the hatted theory, the outer graph sum; Property N(g), the constants c_g.
+
+\begin{lem}[The dilaton equation and the homogeneity of the potentials]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-dilaton}
+\begin{enumerate}
+\item Let $\Omega$ be a cohomological field theory with flat unit $1$ \cite[Def.~0.3~(i)--(iii)]{PPZ15}, with correlators as in \cref{def:set-graphsum}. For $2h-2+n>0$,
+\[
+\langle\psi1\cdot\psi^{k_1}a_1\cdots\psi^{k_n}a_n\rangle_h=(2h-2+n)\,\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\rangle_h .
+\]
+\item $\Omega^{\mathrm{mod}}_v$ has the flat unit $H^0=1$.
+\item Let $\mathsf R$ be a complete local $\bbQ$-algebra with maximal ideal $\mathfrak m$ (for instance $\bbQ\fps u$) and $\varkappa\in1+\mathfrak m$, or let $\mathsf R=\bbQ(\zeta)\lser s$ with the $s$-adic topology and $\varkappa\in1+u\bbQ\fps u$ ($u=s^5$); let $\Omega$ be a cohomological field theory with flat unit $1$ on a free $\mathsf R$-module $V$ of finite rank. Regard $\overline F_h(q)=\sum_n\frac1{n!}\langle(q+z1)^n\rangle_h$ as a formal function of $y\coloneqq q+z1\in V\fps z$, $y$ being a formal variable. The left sides below are defined coefficientwise in $y$: writing $q/\varkappa+z1=y/\varkappa+\epsilon\,z1$ with $\epsilon\coloneqq1-\varkappa^{-1}$, every monomial of degree $a$ in $y$ receives a series in $\epsilon$, which converges in $\mathsf R$; for $y\in z^2V\fps z$ only finitely many $a$ contribute, and the result is the Taylor expansion of \cref{def:flh-outer}~(ii). Then, for $2h-2+n>0$,
+\[
+\dd^n\overline F_h(q/\varkappa)=\varkappa^{2h-2+n}\,\dd^n\overline F_h(q),
+\]
+and, for $n=0$ and $h\neq1$, $\overline F_h(\varkappa q)=\varkappa^{2-2h}\,\overline F_h(q)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) Put the insertion $\psi1$ at the last point and let $\pi\colon\overline{\mathcal M}_{h,n+1}\to\overline{\mathcal M}_{h,n}$ forget it. By \cite[Def.~0.3~(iii)]{PPZ15}, $\Omega_{h,n+1}(a_1,\dots,a_n,1)=\pi^*\Omega_{h,n}(a_1,\dots,a_n)$. By \cite[(1.7)]{AC96}, $\pi_*\bigl(\psi_1^{k_1}\cdots\psi_n^{k_n}\psi_{n+1}^{a+1}\bigr)=\psi_1^{k_1}\cdots\psi_n^{k_n}\kappa_a$, the classes on the left being those of $\overline{\mathcal M}_{h,n+1}$, and $\kappa_0=2h-2+n$ \cite[p.~5]{AC96}; take $a=0$ and use the projection formula.
+
+(ii) By \cite[Prop.~2.12, Def.~2.13]{PPZ15}, $\Mo(z/\varsigma^4).\TFT^{\mathrm m}_v$ is a cohomological field theory with the unit $\varsigma^{-1}\sum_i\zeta^i\tilde e_i$, and the push-forward by an isometry preserves the axioms. The lowered components of the image of this unit are $\varepsilon_b\varsigma^{\nu_b-2}\sum_i\zeta^{i(b+2)}=5\,\delta_{b3}$ ($\varepsilon_3=1$, $\nu_3=2$), those of $H^0=1$.
+
+(iii) Write $q/\varkappa+z1=y/\varkappa+\epsilon z1$ with $\epsilon\coloneqq1-\varkappa^{-1}$, which lies in $\mathfrak m$, respectively in $u\bbQ\fps u$, so that $\epsilon^b\to0$ in $\mathsf R$; and $x=(x_1,\dots,x_n)$. By multilinearity and (i) applied $b$ times (allowed since $2h-2+n+a>0$ at every step), with $N\coloneqq2h-2+n+a$ and $(N)_b\coloneqq N(N+1)\cdots(N+b-1)$,
+\[
+\dd^n\overline F_h(q/\varkappa)[x]=\sum_a\frac{\varkappa^{-a}}{a!}\sum_b\frac{\epsilon^b}{b!}(N)_b\,\langle x\,y^a\rangle_h=\sum_a\frac{\varkappa^{-a}}{a!}(1-\epsilon)^{-N}\langle x\,y^a\rangle_h=\varkappa^{2h-2+n}\,\dd^n\overline F_h(q)[x],
+\]
+by the binomial series, which converges in $\mathsf R$, and $(1-\epsilon)^{-1}=\varkappa$; this holds coefficientwise in $y$, as $\langle x\,y^a(z1)^b\rangle_h$ is homogeneous of degree $a$ in $y$. For $n=0$ the same computation with $\varkappa^{-1}$ in place of $\varkappa$ and $N=2h-2+a$ applies; for $h=0$ the terms with fewer than three insertions $y$ vanish on both sides, as $\psi=0$ on $\overline{\mathcal M}_{0,3}$.
+\end{proof}
+
+In the applications (\cref{lem:tra-F}, \cref{lem:tra-conv}~(f), \cref{lem:flh-dil}) $\varkappa$ is the dilaton factor $d\in\bbQ\fps u$ of the canonical gauge, $d(0)=1$ (\cref{lem:gau-diag}).
+
+%-------------------------------------------------------------------------------
+\subsection{The hatted theory and the outer graph sum}
+\label{sec:set-hat}
+
+In this subsection a conifold frame is fixed, and the rows, which lie in $\Nring\otimes\bbQ(\zeta)$ (\cref{cor:gau-rowsNN}), are expanded in it (\cref{def:set-confexp}): $\Qr^{(i)}_a(z)$, and every series below, is a series in $z$ over $\bbQ(\zeta)\lser s$.
+
+\begin{defn}[The hatted theory]
+\label{def:set-hat}
+The \emph{hatted classes} are $\hat H^a\coloneqq s^{1-\nu_a}H^a$, the hatted variable is $\zh=z/s^4$, and the \emph{hatted rows} are the lowered components with respect to the $\hat H^a$, as series in $\zh$: $\hat\Qr^{(i)}_a(\zh)\coloneqq s^{1-\nu_a}\,\Qr^{(i)}_a(s^4\zh)$. The pairing is preserved: $\eta(\hat H^a,\hat H^b)=s^{2-\nu_a-\nu_b}\eta(H^a,H^b)=\eta(H^a,H^b)$, since $\nu_a+\nu_b=2$ on the pairs $a+b\equiv3$. The hatted unit of the state space is $\hat1\coloneqq\hat H^0=s1$. The element $\zeta^{-4i}\Cexp_{\alpha,\beta}(\Delta_i^{1/2})=s\varpi_0$ does not depend on $i$; put $\hat x\coloneqq\varpi_0=1+\alpha u+O(u^2)$. The \emph{hatted TFT} is $\hat\TFT\coloneqq s^{-1}.\TFT$, i.e.\ $\hat\TFT_{g,n}\coloneqq s^{-(2g-2+n)}\TFT_{g,n}$ (the rescaling of \cref{def:flh-outer}~(iv)): on the colour space $\hat\TFT_{g,n}(\tilde e_i,\dots,\tilde e_i)=(\zeta^{4i}\hat x)^{2g-2+n}$, and its unit is $s1_{\TFT}$. That the hatted rows are power series in $u$ is not assumed here; it is proved in \cref{cor:mai-natfact}.
+\end{defn}
+
+\begin{defn}[The outer graph sum]
+\label{def:set-outer}
+Let $M\coloneqq\Mo(\tau(u)\zh)$, taken exactly in $u$: with $\zh=z/s^4$ it is a power series in $z$ over $\bbQ(\zeta)\lser s$, with $M(0)=1$ and $M(-z)^TM(z)=1$ (\cref{def:set-M0}, \cref{lem:set-M0sympl}). Let $\Qr$ be the matrix of the lowered rows of \cref{def:set-rows} expanded in the frame, and $R'\coloneqq\Qr\,M^{-1}$, a series of maps from the colour space (orthonormal basis $\tilde e_i$) to $\bbH$. Its constant term $R'(0)=\Qr(0)$ is the expansion of the matrix $\Psi_{\mathrm Q}$ with the entries $\Qr^{(i)}_{a,0}$, the representatives in $\Nring\otimes\bbQ(\zeta)$ of $\eta(H^a,\tilde e_i)$. By \cref{lem:mai-Psi}~(i), $(\Psi_{\mathrm Q})_{ai}=\zeta^{i(a+1)}(\Psi_{\mathrm Q})_{a0}$ with $(\Psi_{\mathrm Q})_{30}=C_0/L$, and $\Psi_{\mathrm Q}^T\eta^{-1}\Psi_{\mathrm Q}=1$; with $\Delta_i^{-1/2}=\zeta^iL/C_0$ this gives $\sum_i\Delta_i^{-1/2}(\Psi_{\mathrm Q})_{ai}=5\,\delta_{a3}$. These are identities in $\Nring\otimes\bbQ(\zeta)$, so $R'(0)$, whose matrix is not the identity, is an isometry which maps $1_{\TFT}$ to $1$, and $R'$ satisfies the condition (unit) of \cref{def:flh-outer} with $\varkappa=1$. The \emph{outer graph sum} has the vertices $(M.\TFT)_{g,n}$, the classes of the cohomological field theory $M.\TFT$ on the colour space \cite[Def.~2.13]{PPZ15}, where $\TFT$ is the TFT of \cref{def:set-frob} expanded in the frame, $\TFT_{g,n}(\tilde e_i,\dots,\tilde e_i)=(\zeta^{4i}s\varpi_0)^{2g-2+n}$, and the edges and leaves of $R'$: with $N(\psi,\psi')\coloneqq1-\bigl(R'^{-1}(\psi)\otimes R'^{-1}(\psi')\bigr)\eta^{-1}$, where $1=\sum_i\tilde e_i\otimes\tilde e_i$ is the inverse bivector of the colour space and $\eta^{-1}\in\bbH\otimes\bbH$ is the inverse bivector of $(\bbH,\eta)$ (in lowered components its matrix is $\eta$, whereas the matrix $\eta^{-1}=\eta/25$ is the pairing on lowered components; so for symplectic $R'$, in lowered components, $N(\psi,\psi')=1-R'(-\psi)^T\eta^{-1}R'(-\psi')$),
+\[
+E_{R'}(\psi,\psi')\coloneqq\frac{N(\psi,\psi')-\frac12N(-\psi',\psi')-\frac12N(\psi,-\psi)}{\psi+\psi'},\qquad q_{R'}(z)\coloneqq R'^{-1}(z)(-z1),
+\]
+with the leaf insertion $q_{R'}+z1_{\TFT}\in z^2(\text{colour space})\fps z$. The numerator vanishes at $\psi'=-\psi$, so $E_{R'}$ is a power series in $\psi,\psi'$; it is symmetric under the exchange of its two slots together with $\psi$ and $\psi'$, and its coefficient of $\psi^a\psi'^b$ involves $R'^{-1}$ only through $z^{a+b+1}$; only the invertibility of $R'(0)$ is used. If $R'$ is symplectic, $R'(-z)^T\eta^{-1}R'(z)=1$, then $N(-\psi',\psi')=N(\psi,-\psi)=0$, $E_{R'}$ is the edge of \cite[Def.~2.2]{PPZ15} \cite[Rem.~2.1, (6)]{PPZ15}, and $E_{R'}$, $q_{R'}$ are the edge and the leaf point of \cref{def:flh-outer}~(ii) for $O=R'$; with $X\coloneqq R'(0)^{-1}R'$ (symplectic, $X(0)=1$) they are $E_X$ and $q_X$, so the outer graph sum is the leg-free part of the unit-preserving action $X.(M.\TFT)$ on the colour space (\cref{lem:set-pushins}~(iii)). For a leg-free stable graph $\Gamma$ of genus $g\geq2$ the \emph{outer term} is $T_\Gamma\coloneqq\mathrm{Cont}_\Gamma[E_{R'},q_{R'};M.\TFT]\in\bbQ(\zeta)\lser s$ (\cref{def:set-graphsum}); the vertex tensors are the full tensors of $M.\TFT$, with all their components in the colour basis ($M.\TFT$ is not diagonal in the colours, so there is no separate sum over colourings). The \emph{vertex graph} is the stable graph with one vertex, of genus $g$, and no edge; its outer term contains all the leaf insertions of $R'$. The \emph{hatted term} is the same contraction formed with the hatted data of \cref{def:set-hat}, $G_\Gamma\coloneqq\mathrm{Cont}_\Gamma[E_{\hat R'},q_{\hat R'};\hat M.\hat\TFT]$ with $\hat M(\zh)\coloneqq\Mo(\tau\zh)$ and $\hat R'(\zh)\coloneqq\hat\Qr(\zh)\hat M(\zh)^{-1}$, the edge and the leaf point being formed in the variable $\zh$ and with the unit $\hat1$. By \cref{lem:flh-hat}, $G_\Gamma=u^{2g-2}T_\Gamma$. The outer term $T_\Gamma$ is \emph{regular at the conifold point} if it lies in $\bbQ\fps u$.
+
+\emph{The symplecticity of $R'$.} The symplecticity of the rows over $\bbQ(\zeta)\fps q$ (\cref{def:set-rows}~(a)) is not transferred to the conifold expansion, as the injectivity of $\ev$ is not claimed. Instead, by \cref{lem:flh-inputs}~(iii), $R'$ is symplectic modulo $z^{3g-2}$ when $\Fg{g}$ holds (\cref{def:gau-Fg}), and symplectic because $\Dn=1$ (\cref{thm:gam-D}), whose proof uses neither $R'$ nor $T_\Gamma$; no statement of this section uses the symplecticity of $R'$.
+\end{defn}
+
+%-------------------------------------------------------------------------------
+\subsection{Property N(\texorpdfstring{$g$}{g})}
+\label{sec:set-N}
+
+\begin{defn}[Property N($g$)]
+\label{def:set-N}
+Let $g\geq2$ and
+\begin{equation}
+\label{eq:set-cg}
+c_g\coloneqq\frac{(-1)^{g-1}B_{2g}\,5^{1-g}}{2g(2g-2)}=\frac{|B_{2g}|}{2g(2g-2)\,5^{g-1}} .
+\end{equation}
+\emph{Property N($g$)} holds if, for every conifold frame of \cref{def:set-frames}, the outer terms of \cref{def:set-outer}, with $M=\Mo(\tau(u)\zh)$ exactly in $u$, satisfy:
+\begin{enumerate}
+\item $T_\Gamma\in\bbQ\fps u$ for every leg-free stable graph $\Gamma$ of genus $g$ with at least one edge;
+\item $T_\Gamma\in c_g\,\tc^{2-2g}+\bbQ\fps u$ for the vertex graph.
+\end{enumerate}
+It is the statement of \cref{thm:mai-main} for one $g$, about every graph, not only about their sum.
+\end{defn}
+
+\begin{rmk}[The constants $c_g$]
+\label{rmk:set-cg}
+As $(-1)^{g-1}B_{2g}=|B_{2g}|$, the two forms in \eqref{eq:set-cg} agree and $c_g>0$; $c_2=\frac1{1200}$, $c_3=\frac1{25200}$, $c_4=\frac1{180000}$, $c_5=\frac1{660000}$. In the model, $c_h$ is the constant of $\Fm_h=c_hv^{2-2h}$ (\cref{thm:mod-gap}), $(-5)^{1-h}$ times that of the free energy $B_{2h}v^{2-2h}/(2h(2h-2))$ of topological recursion (\cref{cor:mod-trF}). For the vanishing period $k\varpi_1$, $k\in\bbQ^\times$, $c_g\tc^{2-2g}=(k^{2g-2}c_g)(k\tc)^{2-2g}$.
+\end{rmk}

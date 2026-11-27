@@ -1,0 +1,86 @@
+% Abridged version, Section 7, part 1 of 2: formal stationary phase, the full-Stirling series, Theorem P(a). Continued in part 2.
+\section{The connection problem}
+\label{sec:con}
+
+The canonical gauge is normalised at the conifold point $u=0$, the rows of the formal quintic at $q=0$; the normalisation series $\Dn_0$ of \cref{thm:gau-R0} measures the difference. This section reduces $\Dn_0=1$ to one identity at $q=0$. The bridge is the saddle series $c(z;L)$ of a Mellin--Barnes summand, with hatted form $\PhiSP$, which is defined for all $q$ at once: Theorem~P shows that $\PhiSP$ is $\Phican$, and the glue gives $\Dn_0(z)=\PhiSP(z,1)/h(z)$. We work in colour~$0$. This section follows \Lr{sec:con}.
+
+%-------------------------------------------------------------------------------
+\subsection{Formal stationary phase}
+\label{sec:con-fsp}
+
+Stationary phase is used as an algebraic operation on Taylor series \Lr{sec:fsp}; nothing is evaluated at $z\neq0$. Let $A$ be a commutative $\bbQ$-algebra and $c\in A^n$. A \emph{phase} $F\in A\fps{x-c}$ has the \emph{non-degenerate critical point} $c$ if $\nabla F(c)=0$ and $\mathsf H:=\Hess F(c)\in GL_n(A)$. Write $F(c+t)=F(c)+\frac12t^{\mathrm T}\mathsf Ht+F_{\geq3}(t)$ and $C:=-\mathsf H^{-1}$. For an amplitude $a\in A\fps{x-c}\lser z$ the \emph{normalised stationary phase} is
+\[
+\SPn_c[F;a]:=E_{zC}\bigl[\exp\bigl(F_{\geq3}(t)/z\bigr)\,a(c+t)\bigr]\in A\lser z,\qquad E_{zC}[t^\alpha z^j]:=\langle t^\alpha\rangle_C\,z^{j+|\alpha|/2},
+\]
+where $\langle t^\alpha\rangle_C$ is the Gaussian moment with covariance $C$, the sum over the perfect matchings of the products of the entries of $C$ \Lr{def:fsp-ring,def:fsp-wick}. If $a=\sum_{m\geq0}a_mz^m$, its constant term is $a_0(c)$; if this is a unit, $\SPh_c[F;a]:=\SPn_c[F;a]/a_0(c)\in1+zA\fps z$.  The coefficients of $\SPn_c[F;a]$ are universal polynomials over $\bbQ$ in the entries of $C$ and in finitely many Taylor coefficients of $F$, of order at least $3$, and of $a$ \Lr{lem:fsp-univ}; in particular they do not see constants added to $F$. By \Lr{sec:fsp}, the stationary phase vanishes on exact forms $\dd(\re^{F/z}\iota)$; it is invariant under formal changes of variables and under translations by multiples of $z$; it can be iterated variable by variable (a formal Fubini theorem); it commutes with derivatives in a parameter. The \emph{formal Stirling form} is the expression $\Gst(Y):=\exp\bigl((Y-\frac12)\log Y-Y+\frac12\log2\pi+\sum_{k\geq1}\bk_kY^{1-2k}\bigr)$, with $\Gst(1+w):=w\,\Gst(w)$; it satisfies the functional equation, and it is the stationary phase of Euler's integral: for a unit $a$ and an integer $M$,
+\[
+\SPn_a\bigl[a\log x-x;\ x^{M-1}\bigr]=a^{M-1}\,\mathrm{Poch}_M(z/a)\,\exp\Bigl(\sum_{k\geq1}\bk_k\,(z/a)^{2k-1}\Bigr)
+\]
+\Lr{lem:fsp-stirfe,lem:fsp-stirling}, where $\mathrm{Poch}_M(w)$ is the polynomial or rational function with $\mathrm{Poch}_{m+1}(w)=(1+mw)\mathrm{Poch}_m(w)$ and $\mathrm{Poch}_0=\mathrm{Poch}_1=1$.
+
+%-------------------------------------------------------------------------------
+\subsection{The full-Stirling saddle series and \texorpdfstring{$\PhiSP$}{the full-Stirling WKB function}}
+\label{sec:con-form}
+
+\begin{defn}[The full-Stirling saddle series; {\Lr{def:gam-c,prop:gam-rational}}]
+\label{def:gam-c}
+Let $\Cstar:=\bbC\setminus\{0,1,\zeta,\zeta^2,\zeta^3,\zeta^4\}$ and $q(L):=(1-L^{-5})/5^5$. For $L\in\Cstar$ fix an open disc $\bbD_L$ around $L$ containing neither $0$ nor any $\zeta^j$, holomorphic branches of $\log(5\sigma)$ and of $\log(\zeta^j-\sigma)$ on $\bbD_L$, and put $\lambda:=-5\log(5L)+\sum_{j=0}^4\log(\zeta^j-L)$, so that $\re^\lambda=-q(L)$. On $\bbD_L$ define
+\begin{align*}
+\mathsf S_0(\sigma)&:=\lambda\sigma+5\sigma\log(5\sigma)-5\sigma+\sum_{j=0}^4\bigl[(\zeta^j-\sigma)\log(\zeta^j-\sigma)-(\zeta^j-\sigma)\bigr],\\
+\mathsf S_1(\sigma)&:=\tfrac12\log(5\sigma)-\tfrac12\sum_{j=0}^4\log(\zeta^j-\sigma),\qquad\mathsf S_{2k}(\sigma):=\bk_k\Bigl[(5\sigma)^{1-2k}+\sum_{j=0}^4(\zeta^j-\sigma)^{1-2k}\Bigr]\quad(k\geq1),
+\end{align*}
+and $A_{\mathrm{St}}(\sigma,z):=\exp\bigl(\mathsf S_1(\sigma)+\sum_{k\geq1}z^{2k-1}\mathsf S_{2k}(\sigma)\bigr)$.
+Then $\mathsf S_0'(L)=0$ and $\mathsf S_0''=5/(\sigma(1-\sigma^5))$, which does not vanish at $L$. The \emph{full-Stirling saddle series} is
+\[
+c(z;L):=\SPh_L[\mathsf S_0;A_{\mathrm{St}}](z)=\sum_{n\geq0}c_n(L)z^n,\qquad c_0(L)=1 .
+\]
+It does not depend on the disc nor on the branches of the logarithms, and every $c_n$ is the value at $L$ of an element of $\AL=\bbQ[L,L^{-1},(L^5-1)^{-1}]$.
+\end{defn}
+
+Up to a factor $(2\pi)^3z^2$, $\exp(\mathsf S_0/z)A_{\mathrm{St}}$ is the product $\re^{\lambda\sigma/z}\,\Gst(1+5\sigma/z)\prod_j\Gst((\zeta^j-\sigma)/z)$: this is the summand of \cref{thm:int-gamma} with all six Gamma factors replaced by $\Gst$. 
+
+By the reflection formula for $\Gst$, the same series is the saddle series of the colour-$0$ summand $q^{\sigma/z}\,\Gamma(1+5\sigma/z)/\prod_j\Gamma(1+(\sigma-\zeta^j)/z)$ \Lr{lem:con-form}~(d). In the variable $x=1/\sigma$ this summand, with its Stirling expansions, is $\re^{-\cW/z}\fa\,\dd x$ up to a factor independent of $x$, where, with $\Xi=-\log(1-u)$,
+\begin{gather*}
+\cW(x):=\frac{\Xi}x+\sum_{m\geq1}\frac{x^{5m-1}}{m(5m-1)},\\
+\log\fa(x,z)=-\tfrac12\log(1-x^5)+\sum_{k\geq1}\bk_k(xz)^{2k-1}\Bigl[5^{1-2k}-5\sum_{P\geq0}\binom{2k-2+5P}{5P}x^{5P}\Bigr].
+\end{gather*}
+In the hatted variables $x=sX$, $z=s^4\zh$ one has $\cW/z=\hat\cW/\zh$ and $\hat\fa(X;\zh):=\fa(sX,s^4\zh)\in\bbQ[X,\zh]\fps u$, with
+\[
+\hat\cW(X;u)=\sum_{m\geq1}\frac{u^{m-1}}m\Bigl[\frac1X+\frac{X^{5m-1}}{5m-1}\Bigr],\qquad\hat\cW'(1)=0,\qquad\hat\cW''(1)=\frac5{1-u},\qquad\hat\cW(1)=\frac5{4\,\tau(u)} :
+\]
+the point $X=1$ is critical for every $u$, and by \cref{lem:set-canon} the critical exponential is $\re^{-\hat\cW(1)/\zh}=\re^{(u_0-u_0^{\mathrm c})/z}$ \Lr{lem:con-form}.
+
+\begin{defn}[The full-Stirling WKB function and the residue; {\Lr{def:con-PhiSP}}]
+\label{def:con-PhiSP}
+The \emph{full-Stirling WKB function} is the normalised stationary-phase series, with constant term $1$, of $\re^{-\hat\cW/\zh}\hat\fa\,\dd X$ at $X=1$:
+\[
+\PhiSP(\zh,u):=\SPh_{X=1}[-\hat\cW;\hat\fa](\zh)=\sum_{n\geq0}\mathrm{ph}^{\mathrm{SP}}_n(u)\zh^n,\qquad\mathrm{ph}^{\mathrm{SP}}_0=1,\quad\mathrm{ph}^{\mathrm{SP}}_n\in\bbQ\fps u .
+\]
+The \emph{residue} of the flat $1$-form is $\cV:=\Res_{x=0}\re^{-\cW/z}\fa\,\dd x:=\sum_{k\geq1}\frac{(-\Xi/z)^k}{k!}\,[x^{k-1}]\bigl(\re^{-\cG/z}\fa\bigr)\in z^{-1}\bbQ[z^{-1}]\fps u$, where $\cG:=\cW-\Xi/x$.
+\end{defn}
+
+So one $1$-form carries two functionals, the stationary phase at the critical point and the residue at the pole; for the model form $p^m\re^{-\Wv/z}\dd p$ these are the model rows and the vanishing solution $\IC_m$.
+
+%-------------------------------------------------------------------------------
+\subsection{Theorem P}
+\label{sec:con-P}
+
+The ring $\AL$ carries the derivation $\Dq$ with $\Dq L=(L^6-L)/5$, for which $\Dq q=q$; let $\jmath\colon\AL\to\bbQ\lser s$ be the injective ring homomorphism with $\jmath(L)=s^{-1}$, and write $\PFfive^L$ for $\PFfive$ with $z\Dq$ replaced by $z\Dq+L$.
+
+\begin{thm}[Theorem P(a); {\Lr{thm:con-Pa}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:con-Pa}
+Let $c(z;L)=\sum_nc_n(L)z^n$ be the full-Stirling saddle series, with $c_n\in\AL$.
+\begin{enumerate}
+\item $\PFfive^{L}\bigl(L\,c(z;L)\bigr)=0$ in $\AL\fps z$.
+\item In $\bbQ\lser s\fps z$ one has $\jmath(c)(z)=\PhiSP(s^{-4}z,s^5)$; that is, $\jmath(c_n)=s^{-4n}\mathrm{ph}^{\mathrm{SP}}_n$ for every $n$.
+\item $\PhiSP$ solves HPF, \eqref{eq:gau-HPF}, in $\bbQ\fps u\fps{\zh}$.
+\item Every $\mathrm{ph}^{\mathrm{SP}}_n$ is a polynomial in $u$; hence $c_n(L)=L^{4n}\mathrm{ph}^{\mathrm{SP}}_n(L^{-5})$ in $\AL$, and $c_n\in\bbQ[L,L^{-1}]$.
+\end{enumerate}
+The proof uses no input from outside [L].
+\end{thm}
+
+\begin{sketch}
+(i) The series $c$ depends on $q$ only through the factor $(-q)^{\sigma/z}$ of the summand, so $z\Dq$ acts under the stationary phase as multiplication by $\sigma$: for $c\langle\chi\rangle:=\SPn_L[\mathsf S_0;\chi A_{\mathrm{St}}/A_{\mathrm{St}}(L,0)]$, $\chi\in\bbQ[\sigma,z]$, one has $(z\Dq+L)(L\,c\langle\chi\rangle)=L\,c\langle\sigma\chi\rangle$ (the derivative in a parameter, with the moving critical point $L$). Hence $\PFfive^L(L\,c)=L\bigl(c\langle\sigma^5-1\rangle-c\langle q\prod_{k=1}^5(5\sigma+kz)\rangle\bigr)$. The two terms are equal, because the translation $\sigma\mapsto\sigma+z$ leaves the stationary phase invariant and, by the functional equation of $\Gst$, turns the amplitude $(\sigma^5-1)A_{\mathrm{St}}$ into $q\prod_k(5\sigma+kz)A_{\mathrm{St}}$. (ii) is the change of variables $\sigma=L/X$, under which the phase $\mathsf S_0$ becomes $-s^4(\hat\cW-\hat\cW(1))$ and the normalised amplitude becomes $\hat\fa/\hat\fa(1;0)$. (iii) follows from (i) and (ii) by the chain rule of \cref{lem:gau-HPF}, and (iv) from \cref{lem:gau-HPF}~(iii).
+\end{sketch}
+
+\input{summary/s07_connection_2}

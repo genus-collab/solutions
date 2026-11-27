@@ -1,0 +1,23 @@
+ra_2var: two-variable chart (one Euler integral) against the one-variable full-Stirling series, through z^3; log logs/ra_2var_3.log
+PASS quintic, colour 0 [Q, eps = 1/2]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS quintic, colour 0 [Q, eps = -3/7]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS quintic, colour 0 [Q, eps-series]: 2-variable chart = 1-variable full-Stirling series through z^3
+     (0.2 s)
+PASS quintic with Gamma(1 + (1 - sigma)/z) (M0 = 1) [Q, eps = 1/2]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS quintic with Gamma(1 + (1 - sigma)/z) (M0 = 1) [Q, eps = -3/7]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS quintic with Gamma(1 + (1 - sigma)/z) (M0 = 1) [Q, eps-series]: 2-variable chart = 1-variable full-Stirling series through z^3
+     (0.2 s)
+PASS orbifold point L = 0 (singular factor Gamma(1 + 5 sigma/z)) [Q, eps = 1/2]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS orbifold point L = 0 (singular factor Gamma(1 + 5 sigma/z)) [Q, eps = -3/7]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS orbifold point L = 0 (singular factor Gamma(1 + 5 sigma/z)) [Q, eps-series]: 2-variable chart = 1-variable full-Stirling series through z^3
+     (0.1 s)
+PASS core lemma, random g, F (alpha0 = -1, M0 = 0) [Q, eps = 1/2]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS core lemma, random g, F (alpha0 = -1, M0 = 0) [Q, eps = -3/7]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS core lemma, random g, F (alpha0 = -1, M0 = 0) [Q, eps-series]: 2-variable chart = 1-variable full-Stirling series through z^3
+     (0.2 s)
+PASS core lemma, random g, F (alpha0 = 2, M0 = 1) [Q, eps = 1/2]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS core lemma, random g, F (alpha0 = 2, M0 = 1) [Q, eps = -3/7]: 2-variable chart = 1-variable full-Stirling series through z^3
+PASS core lemma, random g, F (alpha0 = 2, M0 = 1) [Q, eps-series]: 2-variable chart = 1-variable full-Stirling series through z^3
+     (0.2 s)
+PASS control: 1-variable form without the singular Stirling series differs from the chart (eps = 1/2)
+RA_2VAR 3: ALL CHECKS PASSED   (1 s)

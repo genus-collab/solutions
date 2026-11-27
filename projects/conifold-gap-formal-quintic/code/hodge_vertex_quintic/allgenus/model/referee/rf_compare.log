@@ -1,0 +1,35 @@
+(1) one-point functions <tau_k(H^b)>_h (b + k = 1 mod 5), law PiC(X) F_h'(1), remainder
+   h=1 <t0(H1)> e= -1 value -1/12                  law -1/12                  remainder 0                      Pi_5 0 inK True
+   h=1 <t1(H0)> e=  0 value 5/24                   law 1/12                   remainder 1/8                    Pi_5 0 inK True
+   h=2 <t0(H1)> e= -3 value -1/600                 law -1/600                 remainder 0                      Pi_5 0 inK True
+   h=2 <t1(H0)> e= -2 value 1/600                  law 1/600                  remainder 0                      Pi_5 0 inK True
+   h=2 <t2(H4)> e= -1 value 1/1200                 law 1/1200                 remainder 0                      Pi_5 0 inK True
+   h=2 <t3(H3)> e=  0 value 7/5760                 law 1/3600                 remainder 3/3200                 Pi_5 0 inK True
+   h=2 <t4(H2)> e=  1 value -5/1152                law -1/14400               remainder -41/9600               Pi_5 0 inK True
+   h=3 <t0(H1)> e= -5 value -1/6300                law -1/6300                remainder 0                      Pi_5 0 inK True
+   h=3 <t1(H0)> e= -4 value 1/6300                 law 1/6300                 remainder 0                      Pi_5 0 inK True
+   h=3 <t2(H4)> e= -3 value 1/12600                law 1/12600                remainder 0                      Pi_5 0 inK True
+   h=3 <t3(H3)> e= -2 value 1/37800                law 1/37800                remainder 0                      Pi_5 0 inK True
+   h=3 <t4(H2)> e= -1 value -1/151200              law -1/151200              remainder 0                      Pi_5 0 inK True
+   h=3 <t5(H1)> e= -1 value 53/1209600             law -1/604800              remainder 11/241920              Pi_5 1 inK False
+   h=3 <t6(H0)> e=  0 value -1/46080               law 1/3024000              remainder -533/24192000          Pi_5 -1 inK False
+   h=3 <t7(H4)> e=  1 value 5/82944                law 1/18144000             remainder 1457/24192000          Pi_5 -1/2 inK False
+   h=4 <t0(H1)> e= -7 value -1/30000               law -1/30000               remainder 0                      Pi_5 0 inK True
+   h=4 <t1(H0)> e= -6 value 1/30000                law 1/30000                remainder 0                      Pi_5 0 inK True
+   h=4 <t2(H4)> e= -5 value 1/60000                law 1/60000                remainder 0                      Pi_5 0 inK True
+   h=4 <t3(H3)> e= -4 value 1/180000               law 1/180000               remainder 0                      Pi_5 0 inK True
+   h=4 <t4(H2)> e= -3 value -1/720000              law -1/720000              remainder 0                      Pi_5 0 inK True
+   h=4 <t5(H1)> e= -3 value -1/6300000             law -1/2880000             remainder 19/100800000           Pi_5 1 inK False
+   h=4 <t6(H0)> e= -2 value -1/8400000             law 1/14400000             remainder -19/100800000          Pi_5 -1 inK False
+   h=4 <t7(H4)> e= -1 value -1/12096000            law 1/86400000             remainder -19/201600000          Pi_5 -1/2 inK False
+   h=4 <t8(H3)> e=  0 value 19/86016000            law 1/604800000            remainder 4243/19353600000       Pi_5 -1/6 inK False
+   h=4 <t9(H2)> e=  1 value 7/4423680              law -1/4838400000          remainder 30629/19353600000      Pi_5 1/24 inK False
+   h=4 <t10(H1)> e=  1 value -5/7962624             law -1/38707200000         remainder -218741/348364800000   Pi_5 1/96 inK False
+(2) the worker's list of singular correlators (ms_singlist_full.log), recomputed
+   986 lines recomputed exactly (two primes), 0 compared mod 2^61-1 only, 0 mismatches, 0 skipped
+(3) Hessians Hess_h(X,Y) = (<XY>_h - F_h'' PiC PiC)/F_h' for the three pairs reported genus dependent
+   t1(H1) t2(H3):  h=2 e=-1 <XY>=23/7200 Hess=-23/12   h=3 e=-3 <XY>=13/302400 Hess=-13/48
+   t2(H1) t1(H3):  h=2 e=-1 <XY>=11/3600 Hess=-11/6   h=3 e=-3 <XY>=31/378000 Hess=-31/60
+   t3(H1) t0(H3):  h=2 e=-1 <XY>=1/400 Hess=-3/2   h=3 e=-3 <XY>=11/378000 Hess=-11/60
+rf_compare done (10 s)
+exit 0

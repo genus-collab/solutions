@@ -1,0 +1,52 @@
+% Section 6, part 9.
+Let $c$ be a branch point, $t:=p-c$, and $\chi$ (a local letter) a local coordinate at $c$ with $x=x(c)+\lambda\chi^2$, $\lambda\neq 0$, so that $\iota_c\colon\chi\mapsto-\chi$. Write $y=\sum_ky_k\chi^k$ and, near $(c,c)$, $\omega_{0,2}=\big[(\chi_1-\chi_2)^{-2}+\mathrm{reg}(\chi_1,\chi_2)\big]\dd\chi_1\dd\chi_2$ with $\mathrm{reg}$ holomorphic and symmetric; then $\mathrm{reg}_{00}:=\mathrm{reg}(0,0)=\frac16\{t;\chi\}(0)$, where $\{t;\chi\}=t'''/t'-\frac32(t''/t')^2$ is the Schwarzian derivative of $t$ as a function of $\chi$ (both sides are $t_3/t_1-(t_2/t_1)^2$ for $t=t_1\chi+t_2\chi^2+t_3\chi^3+\cdots$, by expanding $t'(\chi_1)t'(\chi_2)/(t(\chi_1)-t(\chi_2))^2$). For a $1$-form $\eta=\sum_m\eta_m\chi^m\dd\chi$ holomorphic at $c$ put
+\begin{equation}
+\label{eq:mod-loc}
+\mathrm{Loc}_c[\eta]:=-\frac{1}{4\lambda y_1}\Big[\mathrm{reg}_{00}\,\eta_0+\frac{\eta_2}{12}-\frac{y_3}{4y_1}\,\eta_0\Big].
+\end{equation}
+
+\begin{lem}[A local formula for $\omega_{1,1}$]\genusstatus{AI-proposed, unchecked}
+\label{lem:mod-w11}
+\begin{enumerate}
+\item $\omega_{1,1}(p_0)=\sum_c\mathrm{Loc}_c[\omega_{0,2}(p_0,\cdot)]$ for $p_0$ off the branch points, $\omega_{0,2}(p_0,\cdot)$ being a form in the second slot.
+\item $\omega_{1,1}=\dd G$ with $G$ rational, with poles only at the branch points and $G(\infty)=0$; so $\omega_{1,1}$ has zero residues, is holomorphic at $p=0$ and is $O(\dd p/p^2)$ at $\infty$.
+\item $\langle-\log p\rangle^{\mathrm{TR}}_1=\int_{\mathfrak r}\omega_{1,1}=\sum_c\mathrm{Loc}_c[-\dd q/q]$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) By \eqref{eq:mod-kernel},
+\[
+\omega_{1,1}(p_0)=\sum_c\Res_{q\to c}K_c(p_0,q)\,\omega_{0,2}(q,\iota_cq).
+\]
+Expand $\omega_{0,2}(p_0,q')=\dd p_0\sum_mB_m(p_0)\chi^m\dd\chi$ for $q'$ near $c$ with coordinate $\chi$. Then $\int_{\iota_cq}^q\omega_{0,2}(p_0,\cdot)=2\,\dd p_0\sum_{m\text{ even}}B_m\chi^{m+1}/(m+1)$, $y(q)-y(\iota_cq)=2\sum_{k\text{ odd}}y_k\chi^k$ and $\dd x=2\lambda\chi\,\dd\chi$, so
+\[
+K_c(p_0,q)=\frac{\dd p_0}{\dd\chi}\,\frac{1}{4\lambda y_1}\Big[B_0\chi^{-1}+\Big(\frac{B_2}{3}-B_0\frac{y_3}{y_1}\Big)\chi+O(\chi^3)\Big],
+\]
+and $\omega_{0,2}(q,\iota_cq)=-\big[(4\chi^2)^{-1}+\mathrm{reg}_{00}+O(\chi^2)\big]\dd\chi^2$ ($\dd(-\chi)=-\dd\chi$, and $\mathrm{reg}(\chi,-\chi)=\mathrm{reg}_{00}+O(\chi^2)$ by symmetry). The coefficient of $\chi^{-1}\dd\chi$ in the product is $-\frac{1}{4\lambda y_1}\big[B_0\,\mathrm{reg}_{00}+\frac14\big(\frac{B_2}{3}-B_0\frac{y_3}{y_1}\big)\big]\dd p_0=\mathrm{Loc}_c[\omega_{0,2}(p_0,\cdot)]$.
+(ii) $\omega_{0,2}(p_0,q)=\dd_{p_0}\big[\dd q/(q-p_0)\big]$, and near $c$, $\dd q/(q-p_0)=\sum_mg_m(p_0)\chi^m\dd\chi$ with $g_m$ rational, with poles only at $c$ and $g_m(\infty)=0$. So $B_m\dd p_0=\dd g_m$, and by (i) $\omega_{1,1}=\dd G$ with $G$ a combination of the $g_0,g_2$ at the five branch points. (iii) The residues in (i) are integrals over small circles avoiding $\mathfrak r$; the ray integral converges by (ii), and as $\omega_{0,2}(p_0,q)=O(p_0^{-2})\dd p_0$ uniformly for $q$ on the circles, it may be taken inside: $\int_{p_0\in\mathfrak r}\omega_{0,2}(p_0,q)=-\dd q/q$, and $\mathrm{Loc}_c$ is linear in finitely many Taylor coefficients. Finally, by (i) and \eqref{eq:mod-kernel}, $\mathrm{Loc}_c[\eta]=\Res_{q\to c}\frac12\frac{\int_{\iota_cq}^q\eta}{(y(q)-y(\iota_cq))\dd x(q)}\,\omega_{0,2}(q,\iota_cq)$ for $\eta$ holomorphic at $c$; this form does not depend on the coordinate $\chi$.
+\end{proof}
+
+\begin{thm}[Theorem V]\genusstatus{AI-proposed, unchecked}
+\label{thm:mod-V}
+Let $h\geq 0$, $a,k\geq 0$, $n=a+k\geq 1$, $2h-2+n>0$, and $\phi_1,\dots,\phi_a\in\bbQ[v][p]$.
+\begin{enumerate}
+\item If $a\geq 1$, then $\langle\phi_1\cdots\phi_a,(-\log p)^k\rangle^{\mathrm{TR}}_h\in\bbQ[v]$.
+\item If $a=0$, then $\langle(-\log p)^k\rangle^{\mathrm{TR}}_h=(\FTR_h)^{(k)}(v)$, with $\FTR_h$ of \cref{thm:mod-gap} for $h\geq 2$, $\FTR_1:=-\frac1{12}\log v$ (here $k\geq 1$) and $\FTR_0:=\frac12v^2\log v$ (here $k\geq 3$).
+\item The recursion \eqref{eq:mod-V1} holds.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+(iii) is \cref{prop:mod-V1}. (i) Fix $h$ and $a\geq 1$ and induct on $k$. The first admissible case is $k=0$ if $2h-2+a>0$ (\cref{thm:mod-Lreg}), and otherwise $\langle\phi_1,(-\log p)^2\rangle^{\mathrm{TR}}_0$ or $\langle\phi_1\phi_2,-\log p\rangle^{\mathrm{TR}}_0$ (\cref{lem:mod-genus0}~(iv)). In the step, the right side of \eqref{eq:mod-V1} consists of a $v$-derivative of, and pairings with, $a$ L-legs in $\bbQ[v][p]$ ($p^5-v$ is monic) and $k$ log legs; all lie in $\bbQ[v]$ by induction.
+
+(ii) For $a=0$, \eqref{eq:mod-V1} reads $\langle(-\log p)^{k+1}\rangle^{\mathrm{TR}}_h=\partial_v\langle(-\log p)^k\rangle^{\mathrm{TR}}_h$, so it suffices to treat the first admissible $k$. \emph{$h\geq 2$, $k=1$.} As in the proof of \cref{prop:mod-period}~(iii), $(2-2h)\FTR_h=v\langle-\log p\rangle^{\mathrm{TR}}_h$, and $\FTR_h$ is a multiple of $v^{2-2h}$ (\cref{thm:mod-gap}), so $\langle-\log p\rangle^{\mathrm{TR}}_h=(\FTR_h)'(v)$. \emph{$h=0$, $k=3$.} \Cref{lem:mod-genus0}~(iv). \emph{$h=1$, $k=1$.} We show $\langle-\log p\rangle^{\mathrm{TR}}_1=-1/(12v)$.
+
+\emph{Reduction to $v=1$.} By \cref{lem:mod-scale}~(ii) with $k=\varsigma$, $m_\varsigma^*\omega^{(v)}_{1,1}=v^{-1}\omega^{(1)}_{1,1}$, and rays go to rays, so $\langle-\log p\rangle^{\mathrm{TR}}_1(v)=v^{-1}\langle-\log p\rangle^{\mathrm{TR}}_1(1)$. Let $v=1$, $\varsigma=1$, $\varsigma_b=\zeta^{-b}$.
+
+\emph{Five equal contributions.} $\rho_b(p):=\zeta^{-b}p$ sends $1$ to $\varsigma_b$, with $x\circ\rho_b=\zeta^bx$, $y\circ\rho_b=\zeta^{-b}y$, $\rho_b^*\omega_{0,2}=\omega_{0,2}$, $\rho_b^*(\dd q/q)=\dd q/q$; hence $\iota_b\circ\rho_b=\rho_b\circ\iota_0$ and $(y(q)-y(\iota q))\,\dd x(q)$ is unchanged. By the coordinate-free form of $\mathrm{Loc}$, $\mathrm{Loc}_{\varsigma_b}[-\dd q/q]=\mathrm{Loc}_1[-\dd q/q]$.
+
+\emph{The contribution at $c=1$.} With $t=p-1$, $x(1+t)=\frac54+\frac52t^2+\frac54t^4-t^5+O(t^6)$, so $\lambda=5/2$, $\chi=t+\frac{t^3}4-\frac{t^4}5+O(t^5)$ and $t=\chi-\frac{\chi^3}4+\frac{\chi^4}5+O(\chi^5)$. Hence $y_1=1$, $y_2=0$, $y_3=-\frac14$; $\{t;\chi\}(0)=-\frac32$ ($t'''(0)=-\frac32$, $t''(0)=0$), so $\mathrm{reg}_{00}=-\frac14$; and $-\dd q/q=-\big(1-\chi+\frac14\chi^2+O(\chi^3)\big)\dd\chi$, so $\eta_0=-1$, $\eta_2=-\frac14$. By \eqref{eq:mod-loc}, $\mathrm{Loc}_1[-\dd q/q]=-\frac1{10}\big[\frac14-\frac1{48}-\frac1{16}\big]=-\frac1{60}$. By \cref{lem:mod-w11}~(iii) the total at $v=1$ is $5\cdot(-\frac1{60})=-\frac1{12}$. So $\langle-\log p\rangle^{\mathrm{TR}}_1=-1/(12v)=(\FTR_1)'(v)$.
+\end{proof}
+
+\input{sections/s06_model_10}

@@ -1,0 +1,32 @@
+rows: symplectic True, edge symmetry True, edge g.f. True
+PASS (A) F_2 = 1/1200
+PASS (A) F_3 = 1/25200
+PASS (A) F_4 = 1/180000
+PASS (A) <tau_1(1)>_1 = 5/24
+PASS (A) <H>_1 = -1/12  (F_1 = -(1/12) log v)
+PASS (A) <H,H,H>_0 = -5  (F_0''' = -5/v)
+PASS (A) <H^1>_2 = d_v^1 (c_g v^(2-2g)) at v = 1 = -1/600
+PASS (A) <h^1>_2 = d_t^1 (c_g t^(2-2g)) at t = -1
+PASS (A) <H^2>_2 = d_v^2 (c_g v^(2-2g)) at v = 1 = 1/200
+PASS (A) <h^2>_2 = d_t^2 (c_g t^(2-2g)) at t = -1
+PASS (A) <H^3>_2 = d_v^3 (c_g v^(2-2g)) at v = 1 = -1/50
+PASS (A) <h^3>_2 = d_t^3 (c_g t^(2-2g)) at t = -1
+PASS (A) <H^1>_3 = d_v^1 (c_g v^(2-2g)) at v = 1 = -1/6300
+PASS (A) <h^1>_3 = d_t^1 (c_g t^(2-2g)) at t = -1
+PASS (A) <H^2>_3 = d_v^2 (c_g v^(2-2g)) at v = 1 = 1/1260
+PASS (A) <h^2>_3 = d_t^2 (c_g t^(2-2g)) at t = -1
+PASS (A) <H^3>_3 = d_v^3 (c_g v^(2-2g)) at v = 1 = -1/210
+PASS (A) <h^3>_3 = d_t^3 (c_g t^(2-2g)) at t = -1
+PASS (A) <H^1>_4 = d_v^1 (c_g v^(2-2g)) at v = 1 = -1/30000
+PASS (A) <h^1>_4 = d_t^1 (c_g t^(2-2g)) at t = -1
+PASS (A) <H^1>_1 = d_v^1 (-(1/12) log v) = -1/12
+PASS (A) <H^2>_1 = d_v^2 (-(1/12) log v) = 1/12
+PASS (A) <H^3>_1 = d_v^3 (-(1/12) log v) = -1/6
+PASS (A) <H^4>_1 = d_v^4 (-(1/12) log v) = 1/2
+PASS (C) string equation on 17 samples
+PASS (C) dilaton equation on 17 samples
+PASS (C) symmetry under permutations of the insertions
+   project symbol and MVertex6 built (0.8 s)
+PASS (B) project colour matrices C_0..C_6 = Fourier transform of the Q rows (2^89-1)
+PASS (B) 2512 flat correlators (28 tensors, psi-deficit <= 6, genus 0..3) = MVertex6 on the project symbol, mod 2^89-1 (68 s)
+ALL PASS

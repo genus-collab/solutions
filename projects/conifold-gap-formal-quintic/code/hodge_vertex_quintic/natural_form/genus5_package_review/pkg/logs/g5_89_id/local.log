@@ -1,0 +1,8 @@
+==========================================================================================
+genus5_run g5_89_id: local run, 13 processes
+      inner graphs 911/4555 (278 s)
+      inner graphs 1822/4555 (378 s)
+      inner graphs 2733/4555 (442 s)
+      inner graphs 3644/4555 (482 s)
+      inner graphs 4555/4555 (504 s)
+   local run: 4555 inner graphs, wall 651 s, CPU 6433 s

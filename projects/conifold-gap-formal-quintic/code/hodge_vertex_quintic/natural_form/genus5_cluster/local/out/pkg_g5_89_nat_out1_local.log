@@ -1,0 +1,15 @@
+==========================================================================================
+genus5_run g5_89_nat_out1: local run, 1 processes
+   local run: 4 inner graphs, wall 268 s, CPU 263 s
+==========================================================================================
+genus5_run g5_89_nat_out1: local run, 1 processes
+   local run: 5 inner graphs, wall 169 s, CPU 164 s
+==========================================================================================
+genus5_run g5_89_nat_out1: local run, 13 processes
+      inner graphs 909/4546 (2137 s)
+      inner graphs 1818/4546 (2739 s)
+      inner graphs 2727/4546 (3035 s)
+      inner graphs 3636/4546 (3180 s)
+      inner graphs 4545/4546 (3237 s)
+      inner graphs 4546/4546 (3237 s)
+   local run: 4546 inner graphs, wall 3327 s, CPU 41946 s

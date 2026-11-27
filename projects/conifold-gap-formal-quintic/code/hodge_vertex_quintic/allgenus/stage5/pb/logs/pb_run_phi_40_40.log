@@ -1,0 +1,26 @@
+pb_run_phi.py 40 40   (M = 44 u-coefficients per w-order)
+  p = 2^61-1: gamma = ok 7/10 (found from the log obstruction), c0 = 0
+  model rows F_b(0) = [1, -1, -1, 1, 1]
+  (A) deg ph^SP_n <= floor(4n/5) for all n <= 40: PASS (equality for 40 of 41 n; n = 2 has degree 0)
+      SP: 40 saddles, 11.8 s
+  (B) frame (0,0): Phi^can = Phi^SP in all [w^n u^k], n <= 40, k < 44 (1804 coefficients): PASS  [gauge+row 0.7 s]
+  control [stored normalisation p_(5q,0)(0)=0]: first mismatch (5, 4) (predicted (5, 4)): PASS (fails as it must)
+  control [free constant shifted by 1/7 at K=10]: first mismatch (10, 8) (predicted (10, 8)): PASS (fails as it must)
+  (B) frame (1/3,-2/7): Phi^can = Phi^SP in all [w^n u^k], n <= 40, k < 44 (1804 coefficients): PASS  [gauge+row 0.7 s]
+  (D) (Gamma): ph^SP_n(1) = h_n for all n <= 40: PASS
+  control [SP variant drop5]: first w-order differing from Phi^SP: 1 (predicted 1): PASS (fails as it must)
+  control [SP variant flip]: first w-order differing from Phi^SP: 1 (predicted 1): PASS (fails as it must)
+  control [v = u, tau -> 1]: gauge construction breaks (kernel does not close (equal products?)): PASS (fails as it must)
+  p = 2^89-1: gamma = ok 7/10 (found from the log obstruction), c0 = 0
+  model rows F_b(0) = [1, -1, -1, 1, 1]
+  (A) deg ph^SP_n <= floor(4n/5) for all n <= 40: PASS (equality for 40 of 41 n; n = 2 has degree 0)
+      SP: 40 saddles, 12.8 s
+  (B) frame (0,0): Phi^can = Phi^SP in all [w^n u^k], n <= 40, k < 44 (1804 coefficients): PASS  [gauge+row 0.6 s]
+  control [stored normalisation p_(5q,0)(0)=0]: first mismatch (5, 4) (predicted (5, 4)): PASS (fails as it must)
+  control [free constant shifted by 1/7 at K=10]: first mismatch (10, 8) (predicted (10, 8)): PASS (fails as it must)
+  (D) (Gamma): ph^SP_n(1) = h_n for all n <= 40: PASS
+  control [SP variant drop5]: first w-order differing from Phi^SP: 1 (predicted 1): PASS (fails as it must)
+  control [SP variant flip]: first w-order differing from Phi^SP: 1 (predicted 1): PASS (fails as it must)
+  control [v = u, tau -> 1]: gauge construction breaks (kernel does not close (equal products?)): PASS (fails as it must)
+total 29.3 s
+ALL CHECKS PASSED

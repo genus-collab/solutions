@@ -1,0 +1,13 @@
+ra_l2src: (L2') delta lemma with a source, exact over Q through z^6, 4 seeds; log logs/ra_l2src_6_4.log
+PASS seed 0: (alpha0, c) = (3/7, -1): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^6
+PASS control seed 0: delta with the wrong sign is rejected
+PASS control seed 0: a pure m^3 term in the phase breaks the identity
+PASS seed 1: (alpha0, c) = (-3, -1): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^6
+PASS control seed 1: delta with the wrong sign is rejected
+PASS control seed 1: a pure m^3 term in the phase breaks the identity
+PASS seed 2: (alpha0, c) = (8/7, 0): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^6
+PASS control seed 2: a pure m^3 term in the phase breaks the identity
+PASS seed 3: (alpha0, c) = (-7/2, -1): 2-variable Wick = exp(P(delta)/z) A(delta, z) through z^6
+PASS control seed 3: delta with the wrong sign is rejected
+PASS control seed 3: a pure m^3 term in the phase breaks the identity
+RA_L2SRC 6 4: ALL CHECKS PASSED   (0 s)

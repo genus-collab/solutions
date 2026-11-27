@@ -1,0 +1,90 @@
+% Section 9, part 1 of 4 (continued in parts 2-4); label prefix: gam.
+% No new macros. Local letters, declared where they are used: s, m (the variables of lem:gam-deltasrc and of Step 3 of the
+% proof of thm:gam-lmi); chi, mu, Phi_2, Psi_Q, p(L) (the Euler and the chart variable, the two phases and the family of critical
+% points in the proof of thm:gam-lmi; Psi_Q is not the matrix Psi_0 of def:set-M0); w, theta (proof of thm:gam-ginf).
+% Discs are written \bbD (as \bbD_L in def:gam-c): the letter D is the operator q d/dq.
+
+\section{The Gamma identity and the normalisation}
+\label{sec:gam}
+
+This section proves Theorem Gamma (\cref{thm:gam-main}): the full-Stirling saddle series $c(z;L)$ of \cref{def:gam-c} has no pole at $L=1$, that is at $q=0$, and its value there is the series $h=h_{\bw_0}$ of (QRR),
+\[
+c(z;1)=h(z).
+\]
+By Theorem~P and the glue of \cref{sec:con} this identity is equivalent to $\Dn=1$, and it gives $\Fg{g}$ for every $g\geq 2$ (\cref{thm:gam-D}). The proof is local: near a point at which exactly one Gamma factor of the Mellin--Barnes summand degenerates, only that factor is written as an Euler integral; after a change of chart the two-variable stationary phase depends holomorphically on a parameter that vanishes at the point, where a Gaussian computation evaluates it exactly (Theorem~LMI, \cref{thm:gam-lmi}). At $L=0$, that is at $q=\infty$, the same theorem gives the free coefficients of \cref{lem:gau-HPF} in closed form (\cref{thm:gam-ginf}, \cref{cor:gam-free}). Everything here is formal stationary phase (\cref{sec:fsp}); the only input from outside the note that enters this section directly is (QRR), through \cref{thm:con-glue} in the proof of \cref{thm:gam-D} (\cref{sec:int-inputs}). Topological recursion is not used.
+
+\subsection{The saddle series}
+\label{sec:gam-series}
+
+We use the objects of \cref{def:gam-c} and \cref{prop:gam-rational}. For $L\in\Cstar$, $\lambda$ is the logarithm of $-q(L)$ that makes $\sigma=L$ a critical point of the phase $\mathsf S_0$, $A_{\mathrm{St}}=\exp\bigl(\mathsf S_1+\sum_{k\geq 1}z^{2k-1}\mathsf S_{2k}\bigr)$ is the full-Stirling amplitude, and
+\[
+c(z;L)=\sum_{n\geq 0}c_n(L)z^n=\SPh_L\bigl[\mathsf S_0;\,A_{\mathrm{St}}\bigr].
+\]
+Here and below, for a phase $F$ with a non-degenerate critical point $c$ and an amplitude $a=\sum_{m\geq 0}a_mz^m$ with $a_0(c)\neq 0$, $\SPh_c[F;\,a]$ denotes the series $\SPn_c[F;\,a]$ of \cref{def:fsp-wick} divided by its constant term, which is $a_0(c)$. By \cref{prop:gam-rational} every $c_n$ lies in $\AL=\bbQ[L,L^{-1},(L^5-1)^{-1}]$ and does not depend on the choices of disc and branches made in \cref{def:gam-c}; by \cref{lem:con-form}~(d) $c(z;L)$ is also the normalised saddle series of the second Mellin--Barnes summand $q^{\sigma/z}\Gamma(1+5\sigma/z)/\prod_j\Gamma(1+(\sigma-\zeta^j)/z)$. Of the six Gamma factors of the summand, the twist factor $\Gamma(1+5\sigma/z)$ carries the measure $\dd y$ of its Euler integral and the five factors $\Gamma((\zeta^j-\sigma)/z)$ carry $\dd x/x$. At each of the three points $L=1$, $L=\zeta^i$ and $L=0$ exactly one of the six factors degenerates, namely $\Gamma((1-\sigma)/z)$, $\Gamma((\zeta^i-\sigma)/z)$ and $\Gamma(1+5\sigma/z)$ respectively, and the theorem of \cref{sec:gam-lmi} applies at each of them.
+
+\subsection{Local Mellin inversion}
+\label{sec:gam-lmi}
+
+The following lemma is the only stationary-phase computation of this section that is not in \cref{sec:fsp}. Data that are holomorphic at the base point enter only through their Taylor series.
+
+\begin{lem}[The delta lemma with a source]
+\label{lem:gam-deltasrc}
+Let $a_*\in\bbC^\times$ and $c\in\bbC$, let $P\in s^2\bbC\fps{s}$, and let $A\in\bbC\fps{s}\fps{z}$. In two variables $(s,m)$ consider the phase $F(s,m):=P(s)+a_*sm$, of exactly this form (no term in $m$ alone and no term $s^km$ with $k\geq 2$), and the amplitude $\re^{cm}A(s,z)$. Then $(0,0)$ is a non-degenerate critical point of $F$, $\det\Hess F(0,0)=-a_*^2$, and, exactly,
+\begin{equation}
+\label{eq:gam-deltasrc}
+\SPn_{(0,0)}\bigl[F;\,\re^{cm}A\bigr]=\exp\bigl(P(\delta)/z\bigr)\,A(\delta,z),\qquad \delta:=-cz/a_*,
+\end{equation}
+where both factors are re-expanded in $z$: $P(\delta)/z=\sum_{k\geq 2}\coef{s^k}P\,(-c/a_*)^kz^{k-1}$ lies in $z\bbC\fps{z}$, and $A(\delta,z)=\sum_{n\geq 0}z^n\sum_{j+l=n}\coef{s^jz^l}A\,(-c/a_*)^j$. For $c=0$ the series is $A(0,z)$.
+\end{lem}
+
+\begin{proof}
+The gradient of $F$ is $(P'(s)+a_*m,\,a_*s)$; it vanishes at $(0,0)$ because $P\in s^2\bbC\fps{s}$. The Hessian at $(0,0)$ is
+\[
+H=\begin{pmatrix}P''(0)&a_*\\ a_*&0\end{pmatrix},\qquad \det H=-a_*^2\neq 0,
+\]
+and the covariance $C=-H^{-1}$ has the entries $C_{ss}=0$, $C_{sm}=-1/a_*$ and $C_{mm}=P''(0)/a_*^2$. The quadratic part of $F$ is $P''(0)s^2/2+a_*sm$, so the part of order at least three is $F_3(s)=P(s)-P''(0)s^2/2$, a series in $s$ alone. Write $\re^{F_3(s)/z}A(s,z)=\sum_{a\geq 0}g_a(z)s^a$; each $g_a$ is a Laurent series in $z$ of order at least $-a/3$, since every term of $F_3/z$ has degree at least $3$ in $s$ and order $-1$ in $z$. By \cref{def:fsp-wick} the left side of \eqref{eq:gam-deltasrc} is
+\[
+E_{zC}\Bigl[\re^{F_3/z}\re^{cm}A\Bigr]=\sum_{a,r\geq 0}\frac{c^r}{r!}\,g_a(z)\,\langle s^am^r\rangle_C\,z^{(a+r)/2}.
+\]
+The Gaussian moment $\langle s^am^r\rangle_C$ is the sum, over the perfect matchings of the multiset formed by $a$ copies of $s$ and $r$ copies of $m$, of the products of the entries of $C$ attached to the matched pairs. Since $C_{ss}=0$, only matchings in which every copy of $s$ is paired with a copy of $m$ contribute. When $r\geq a$ there are $r!/(r-a)!$ ways of pairing the copies of $s$, and the remaining $r-a$ copies of $m$ are paired among themselves in $(r-a-1)!!$ ways when $r-a$ is even; so
+\[
+\langle s^am^r\rangle_C=\frac{r!}{(r-a)!}\,(r-a-1)!!\,C_{sm}^{\,a}\,C_{mm}^{\,(r-a)/2}\quad\text{if }r-a\text{ is even and }\geq 0,
+\]
+with $(-1)!!:=1$, and $\langle s^am^r\rangle_C=0$ otherwise. Put $r=a+2j$. Since $(2j-1)!!/(2j)!=1/(2^jj!)$,
+\[
+\sum_{r\geq 0}\frac{c^r}{r!}\langle s^am^r\rangle_C\,z^{(a+r)/2}=(cC_{sm}z)^a\sum_{j\geq 0}\frac{1}{j!}\Bigl(\frac{c^2C_{mm}z}{2}\Bigr)^j=\delta^a\exp\Bigl(\frac{P''(0)\delta^2}{2z}\Bigr),
+\]
+because $cC_{sm}z=-cz/a_*=\delta$ and $c^2C_{mm}z/2=P''(0)c^2z/(2a_*^2)=P''(0)\delta^2/(2z)$. Hence
+\begin{align*}
+\SPn_{(0,0)}\bigl[F;\,\re^{cm}A\bigr]&=\exp\Bigl(\frac{P''(0)\delta^2}{2z}\Bigr)\sum_{a\geq 0}g_a(z)\delta^a\\
+&=\exp\Bigl(\frac{P''(0)\delta^2}{2z}\Bigr)\exp\Bigl(\frac{F_3(\delta)}{z}\Bigr)A(\delta,z)=\exp\bigl(P(\delta)/z\bigr)A(\delta,z).
+\end{align*}
+All sums are finite at each order of $z$: the term $g_a(z)\delta^a$ has order at least $2a/3$, and for fixed $a$ the sum over $j$ is a power series in $z$. The middle equality holds because the substitution $s\mapsto\delta$ is compatible with sums, products and exponentials on the series $\sum_ag_a(z)s^a$ whose coefficients $g_a$ have order at least $-a/3$, a class that contains $F_3/z$ and $A$ and is closed under products. For $c=0$ we have $\delta=0$, and the series is $A(0,z)$.
+\end{proof}
+
+\begin{defn}[LMI data]
+\label{def:gam-lmidata}
+LMI data consist of a point $s_*\in\bbC$, a number $a_*\in\bbC^\times$, an integer $M_*$, an open disc $\bbD$ around $s_*$, a holomorphic function $\varphi$ on $\bbD$, and a series $\cF(\sigma,z)=\sum_{m\geq 0}\cF_m(\sigma)z^m$ of holomorphic functions on $\bbD$, such that $\cF_0$ has no zero on $\bbD$ (in particular $\cF(s_*,0)\neq 0$) and $a_*+(\sigma-s_*)\varphi''(\sigma)\neq 0$ for every $\sigma\in\bbD$. Put $\varphi_k:=\varphi^{(k)}(s_*)/k!$, put
+\[
+a(\sigma):=a_*(\sigma-s_*),
+\]
+which is exactly linear in $\sigma$, and $U_*:=\bbD\setminus\{s_*\}$. For $L\in U_*$ choose a branch of $\log a$ near $L$ and put
+\[
+\lambda(L):=-\varphi'(L)-a_*\log a(L),\qquad S(\sigma):=\lambda(L)\,\sigma+\varphi(\sigma)+a(\sigma)\log a(\sigma)-a(\sigma),
+\]
+\[
+A(\sigma,z):=a(\sigma)^{M_*-1/2}\,\mathrm{Poch}_{M_*}\bigl(z/a(\sigma)\bigr)\exp\Bigl(\sum_{k\geq 1}\bk_k\bigl(z/a(\sigma)\bigr)^{2k-1}\Bigr)\,\cF(\sigma,z),
+\]
+that is, the expansion of $z^{M_*+a/z}\,\Gst(M_*+a/z)$ given by \cref{lem:fsp-stirling}~(iii) and \cref{lem:fsp-stirfe}, without its factor $(2\pi z)^{1/2}$ and without its phase factor $\re^{(a\log a-a)/z}$, times $\cF$; the power $a^{M_*-1/2}$ is taken with any branch near $L$. Let
+\[
+c^{\cF}(z;L)=\sum_{n\geq 0}c^{\cF}_n(L)z^n:=\SPh_L\bigl[S;\,A\bigr].
+\]
+Finally put $\delta:=-M_*z/a_*$, $\tilde\varphi(x):=\varphi(s_*+x)-\varphi(s_*)-\varphi'(s_*)x$, and define the chart parameter
+\[
+\mathsf Q(L):=\re^{-\lambda(L)/a_*}=a(L)\,\re^{\varphi'(L)/a_*}.
+\]
+\end{defn}
+
+The point $L$ is critical for $S$: since the derivative of $a\log a-a$ is $a_*\log a$, $S'(\sigma)=\lambda(L)+\varphi'(\sigma)+a_*\log a(\sigma)$, which vanishes at $\sigma=L$. Moreover $S''(L)=\varphi''(L)+a_*^2/a(L)$, that is $S''(L)=(a_*+(L-s_*)\varphi''(L))/(L-s_*)$, which is non-zero on $U_*$; and $A(L,0)=a(L)^{M_*-1/2}\cF_0(L)\neq 0$; so $c^{\cF}(z;L)$ is defined for every $L\in U_*$.
+
+\input{sections/s09_gamma_2}

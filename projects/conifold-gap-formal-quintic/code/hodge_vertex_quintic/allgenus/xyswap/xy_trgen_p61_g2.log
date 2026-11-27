@@ -1,0 +1,2 @@
+p = 2305843009213693951 seed 7 branch points [2185628714235507769, 910400992860572984] ...; c3,c2,c1,V nonzero: True
+CHECK F_2 = B_2g/(2g(2g-2)) V^(2-2g) at a generic point of the Hurwitz family: True  (0.3s)

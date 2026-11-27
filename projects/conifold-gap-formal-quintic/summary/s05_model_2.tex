@@ -1,0 +1,74 @@
+% Abridged version, Section 5, part 2 of 2: L-regularity, the Gap Theorem, Theorem V, the Model Lemma on K.
+
+%-------------------------------------------------------------------------------
+\subsection{L-regularity, the Gap Theorem and Theorem V}
+\label{sec:mod-Lreg}
+
+The next two statements use the closed formula \cite[Theorem~7.1, (7.9), (7.10)]{ABDKS25} for the differentials of topological recursion on a rational curve $(x=x(z),y=z)$; its assumptions hold for $x=\Wv$, $y=p$, $v\neq0$.
+
+\begin{thm}[L-regularity; {\Lr{lem:mod-abdks,thm:mod-Lreg}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:mod-Lreg}
+For $2h-2+n>0$ there are an integer $K\geq0$ and $N_{h,n}\in\bbQ[v][p_1,\dots,p_n]$ with $\omega_{h,n}=N_{h,n}(p;v)\prod_i\dd p_i\big/\prod_i(p_i^5-v)^K$. Consequently, for legs $\phi_1,\dots,\phi_n\in\bbQ[v][p]$ the residue pairing $\langle\phi_1\cdots\phi_n\rangle^{\mathrm{TR}}_h$ lies in $\bbQ[v]$; for legs in $\cL=\bbQ[v][p]+\bbQ(v)[x]$ it is the restriction of an element of $\bbQ[v]$, and the components in $\bbQ(v)[x]$ pair to zero.
+\end{thm}
+
+\begin{sketch}
+The formula of \cite{ABDKS25} writes $\omega_{h,n}$ as a finite sum of terms in $\bbQ[v][p_i,p_i^{-1},(p_i^5-v)^{-1},(p_i-p_j)^{-1}]\prod_i\dd p_i$; there are no poles at $p_i=0$ or on the diagonals, so these denominators cancel in $\bbQ[v][p]$, without negative powers of $v$. For polynomial legs the sum of the residues at the branch points is minus the residue at $p=\infty$, and $\Res_{p=\infty}p^a\,\dd p/(p^5-v)^K$ is an integer multiple of a non-negative power of $v$.
+\end{sketch}
+
+\begin{thm}[The Gap Theorem; {\Lr{prop:mod-period,thm:mod-gap}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:mod-gap}
+On the model curve, for every $h\geq1$, $\omega_{h,1}=\dd\Phi_h$ with $\Phi_h$ rational and holomorphic at $p=0$ and $p=\infty$, and $\int_\infty^0\omega_{h,1}=\frac{B_{2h}}{2h}\,v^{1-2h}$ along any path avoiding the branch points. For every $h\geq2$,
+\[
+\FTR_h=\frac{B_{2h}}{2h(2h-2)}\,v^{2-2h},\qquad\text{hence}\qquad\Fm_h=c_hv^{2-2h},\quad c_h=(-5)^{1-h}\frac{B_{2h}}{2h(2h-2)}=\frac{(-1)^{h-1}B_{2h}}{2h(2h-2)\,5^{h-1}} .
+\]
+\end{thm}
+
+\begin{sketch}
+By \cite[(7.10)]{ABDKS25}, $\omega_{h,1}$ is the differential of an explicit rational function $\Phi_h$, a finite sum of terms $D_x^{r-1}(a_r/x')$. It vanishes at $p=\infty$ by a count of degrees. At $p=0$ only the leading parts of the factors contribute, those of the pole $v/p$ of $\Wv$, and the value is $v^{1-2h}$ times a universal constant, which is $B_{2h}/(2h)$. The free energy follows from $(2-2h)\FTR_h=\langle\Phi_{y\dd x}\rangle^{\mathrm{TR}}_h$ with $\Phi_{y\dd x}=p^5/5-v\log p$, whose polynomial part pairs to zero.
+\end{sketch}
+
+For logarithmic legs the tool is the variational formula of topological recursion \cite[Theorem~5.1, (5-14)]{Eynard:2007kz}: for points $J$ off the branch points, $n\geq1$ and $h+n>1$,
+\[
+\partial_v|_x\,\omega_{h,n}(J)=\int_{q\in\mathfrak r}\omega_{h,n+1}(J,q),
+\]
+where $\partial_v|_x$ is the derivative in $v$ at fixed $x$ \Lr{thm:mod-var}. With $\partial_v|_x=\partial_v|_p-\mathrm{Lie}_{\cX}$, $\cX:=\frac p{p^5-v}\frac{\dd}{\dd p}$, and an integration by parts, it becomes a recursion on the number of log legs.
+
+\begin{thm}[Theorem V; {\Lr{thm:mod-V}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:mod-V}
+Let $h\geq0$, $a,k\geq0$, $n=a+k\geq1$, $2h-2+n>0$, and $\phi_1,\dots,\phi_a\in\bbQ[v][p]$.
+\begin{enumerate}
+\item If $a\geq1$, then $\langle\phi_1\cdots\phi_a,(-\log p)^k\rangle^{\mathrm{TR}}_h\in\bbQ[v]$.
+\item If $a=0$, then $\langle(-\log p)^k\rangle^{\mathrm{TR}}_h=(\FTR_h)^{(k)}(v)$, with $\FTR_h$ of \cref{thm:mod-gap} for $h\geq2$, $\FTR_1:=-\frac1{12}\log v$ (here $k\geq1$) and $\FTR_0:=\frac12v^2\log v$ (here $k\geq3$).
+\item The recursion (V1) holds:
+\[
+\begin{aligned}
+\langle\phi_1\cdots\phi_a,(-\log p)^{k+1}\rangle^{\mathrm{TR}}_h={}&\partial_v\langle\phi_1\cdots\phi_a,(-\log p)^k\rangle^{\mathrm{TR}}_h-\sum_{i=1}^a\langle\cdots,\partial_v\phi_i,\cdots,(-\log p)^k\rangle^{\mathrm{TR}}_h\\
+&+\sum_{i=1}^a\langle\cdots,(\cX\dd\phi_i)_+,\cdots,(-\log p)^k\rangle^{\mathrm{TR}}_h ,
+\end{aligned}
+\]
+where $(\cX\dd\phi)_+\in\bbQ[v][p]$ is the quotient in the division of $p\,\phi'(p)$ by $p^5-v$.
+\end{enumerate}
+\end{thm}
+
+\begin{sketch}
+(iii) is the variational formula, differentiated under the pairings. For (i), induct on $k$: the right side of (V1) consists of a $v$-derivative of, and pairings with, $a$ polynomial legs and $k$ log legs, and the induction starts with \cref{thm:mod-Lreg} or, in genus $0$, with the explicit $\omega_{0,3}$. For (ii), (V1) with $a=0$ reads $\langle(-\log p)^{k+1}\rangle^{\mathrm{TR}}_h=\partial_v\langle(-\log p)^k\rangle^{\mathrm{TR}}_h$, so it suffices to treat the first admissible $k$: for $h\geq2$ this is \cref{thm:mod-gap}, and for $h=0,1$ it follows from $\omega_{0,3}$ and from a local formula for $\omega_{1,1}$.
+\end{sketch}
+
+%-------------------------------------------------------------------------------
+\subsection{The Model Lemma on \texorpdfstring{$\sK$}{K}}
+\label{sec:mod-MLK}
+
+\begin{thm}[The Model Lemma on $\sK$; {\Lr{thm:mod-MLK}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:mod-MLK}
+$\ML{h}$ holds for every $h\geq0$.
+\end{thm}
+
+\begin{proof}[Proof, given the results of this section]
+Part (ii) of $\ML{h}$ is \cref{thm:mod-gap}. For part (i), let $X_i\in\sK\cap V_{w_i}$, $i=1,\dots,n$. By \cref{thm:mod-lattice}~(c), $X_i=Y_i+\Pi_0(X_i)H$ with $Y_i\in\sKo\cap V_{w_i}$ and $\Pi_0(X_i)\in\bbQ v^{w_i/5}$, a monomial with a non-negative exponent. By \cref{prop:mod-LD}, $X_i=q_{\ell_i}$ for the leg $\ell_i:=-\Lambda(Y_i)+\Pi_0(X_i)\,(-\log p)$, and by \cref{thm:mod-lattice}~(a), $-\Lambda(Y_i)=\phi_i+f_i(x)$ with $\phi_i\in\bbQ[v][p]$ and $f_i\in\bbQ[v][x]$. By \cref{thm:mod-tr}, multilinearity and the vanishing of the pairings with functions of $x$,
+\[
+\langle X_1\cdots X_n\rangle_h=(-5)^{1-h}\sum_{S\subseteq\{1,\dots,n\}}\prod_{i\notin S}\Pi_0(X_i)\,\big\langle(\phi_i)_{i\in S},(-\log p)^{n-|S|}\big\rangle^{\mathrm{TR}}_h .
+\]
+Every term with $S\neq\emptyset$ lies in $\bbQ[v]$, by \cref{thm:mod-Lreg} if $S=\{1,\dots,n\}$ and by \cref{thm:mod-V}~(i) otherwise. By \cref{thm:mod-V}~(ii) and $\Fm_h=(-5)^{1-h}\FTR_h$ (for every $h\geq0$, with $\FTR_0$, $\FTR_1$ as in \cref{thm:mod-V}), the term $S=\emptyset$ is $(\Fm_h)^{(n)}(v)\prod_i\Pi_0(X_i)$.
+\end{proof}
+
+

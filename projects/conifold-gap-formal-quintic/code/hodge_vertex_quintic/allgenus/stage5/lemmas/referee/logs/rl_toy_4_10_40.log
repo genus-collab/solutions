@@ -1,0 +1,24 @@
+rl_toy: toy chart, k = 2, (c_0, c_1) = (1, -2); (T), (A), (B) through z^4; (D) through z^10 (Ser margin 40); log logs/rl_toy_4_10_40.log
+     h_toy = 1 + 1/72 z + 1/10368 z^2 + -2731/11197440 z^3 + ...
+PASS L = 3: (T) total 4-variable SP = (A) sigma-SP of the full-Stirling form (L1b + L3), z^0..z^4   z^1, z^2 = 211/24, 441961/1152  (1 s)
+PASS L = 3: (A) by Wick (scaled exp, generating-function moments) = (A) by Lagrange-Buermann
+PASS L = 3: (T) = (B) chart SP in (y, x_1), amplitude 1/x_1 (L2 + L1b), z^0..z^4
+PASS L = 3: measure dy/y throughout: (T) = (A) = (B)
+PASS control (must fail): (A) without (Delta_in(sigma)/Delta_in(L))^(-1/2)   first differs at z^1
+PASS control (must fail): (B) without the Jacobian X_0   first differs at z^1
+PASS control (must fail): (B) with dy/y against (T) with dy   first differs at z^1
+PASS L = -3/2: (T) total 4-variable SP = (A) sigma-SP of the full-Stirling form (L1b + L3), z^0..z^4   z^1, z^2 = -13/31944, -399781/185530752  (1 s)
+PASS L = -3/2: (A) by Wick (scaled exp, generating-function moments) = (A) by Lagrange-Buermann
+PASS L = -3/2: (T) = (B) chart SP in (y, x_1), amplitude 1/x_1 (L2 + L1b), z^0..z^4
+PASS L = -3/2: measure dy/y throughout: (T) = (A) = (B)
+PASS control (must fail): (A) without (Delta_in(sigma)/Delta_in(L))^(-1/2)   first differs at z^1
+PASS control (must fail): (B) without the Jacobian X_0   first differs at z^1
+PASS control (must fail): (B) with dy/y against (T) with dy   first differs at z^1
+PASS L = c_0 = 1 (q = 0): chart SP = h_toy (step (d): L1c(ii), (G4), L3), z^0..z^10   (0 s)
+PASS precision guard: (D) coefficients d^(<=2) identical with Ser cut-offs 42 and 48
+PASS (D) toy (Gamma): c_n(L) has no pole at L = c_0, n <= 10   valuations in d: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+PASS (D) toy (Gamma): c_n(c_0) = [z^n] h_toy, n <= 10   (24 s)
+PASS (D) with dy/y (chart predicts the same value, St_1 = St_0): regular, value h_toy
+PASS control (must fail): (D) with b_k -> -b_k   regular: False; first pole/mismatch at n = 1
+PASS control (must fail): (D) with colour-0 Stirling terms dropped   regular: False; first pole/mismatch at n = 1
+RL_TOY 4 10 40: ALL CHECKS PASSED   (57 s)

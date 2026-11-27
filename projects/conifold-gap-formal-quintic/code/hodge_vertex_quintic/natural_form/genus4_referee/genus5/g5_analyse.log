@@ -1,0 +1,79 @@
+GENUS 5, Split.graph as it stands (2^89-1, natural M, K = 8), reference machine = this workstation, one core, CPython 3.14.6
+   graphs: 4555; sampled (decoration, subset) pairs: 510860 first pass + 45141 second pass on the 150 heaviest
+   TOTAL estimated CPU: 277 h   (first pass alone: 268 h)
+   validation: 30 graphs run completely: measured 4299 s, sampled estimate 4762 s, ratio 0.90; per graph (estimate > 5 s) the ratio ranges over 0.60 .. 1.25
+   per number of edges:   E  graphs   sum [h]   mean [s]   max [h]
+                          0       1       0.0          0      0.00
+                          1       3       0.0          0      0.00
+                          2      11       0.0          1      0.00
+                          3      34       0.0          5      0.01
+                          4     100       0.6         23      0.05
+                          5     239       3.9         59      0.12
+                          6     492      14.7        107      0.15
+                          7     784      43.5        200      0.69
+                          8    1002      73.9        266      1.70
+                          9     926      76.0        296      2.38
+                         10     632      49.7        283      4.09
+                         11     260      12.3        171      0.57
+                         12      71       1.9         97      0.21
+   graphs above   10 min:  296  (they hold 128 h = 46 % of the total)
+   graphs above   30 min:   72  (they hold 66 h = 24 % of the total)
+   graphs above   60 min:   15  (they hold 26 h = 10 % of the total)
+   graphs above  120 min:    5  (they hold 13 h = 5 % of the total)
+   slowest graphs:
+      t=3897 E=10 V=6 gv=[0, 0, 0, 0, 0, 0] valences=[3, 3, 3, 3, 3, 5] edges=[[0, 1], [0, 2], [0, 5], [1, 3], [1, 5], [2, 4], [2, 5], [3, 4], [3, 5], [4, 5]]: 4.09 h (21 decorations x 968 subsets x 724 ms, 22 samples)
+      t=2938 E= 9 V=5 gv=[0, 0, 0, 0, 0] valences=[3, 3, 4, 4, 4] edges=[[0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]: 2.38 h (125 decorations x 502 subsets x 137 ms, 110 samples)
+      t=2864 E= 9 V=5 gv=[0, 0, 0, 0, 0] valences=[3, 3, 4, 4, 4] edges=[[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3], [2, 4], [3, 4], [4, 4]]: 2.28 h (125 decorations x 502 subsets x 131 ms, 115 samples)
+      t=2863 E= 9 V=5 gv=[0, 0, 0, 0, 0] valences=[3, 3, 4, 5, 3] edges=[[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3], [2, 4], [3, 4], [3, 4]]: 2.18 h (105 decorations x 502 subsets x 149 ms, 102 samples)
+      t=2930 E= 9 V=5 gv=[0, 0, 0, 0, 0] valences=[3, 3, 3, 3, 6] edges=[[0, 1], [0, 2], [0, 4], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4], [4, 4]]: 2.01 h (84 decorations x 502 subsets x 171 ms, 88 samples)
+      t=2134 E= 8 V=5 gv=[0, 0, 0, 0, 1] valences=[3, 3, 4, 4, 2] edges=[[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3], [2, 4], [3, 4]]: 1.70 h (150 decorations x 255 subsets x 160 ms, 94 samples)
+      t=3871 E=10 V=6 gv=[0, 0, 0, 0, 0, 0] valences=[3, 3, 3, 3, 4, 4] edges=[[0, 1], [0, 2], [0, 4], [1, 3], [1, 5], [2, 4], [2, 5], [3, 4], [3, 5], [4, 5]]: 1.61 h (25 decorations x 968 subsets x 239 ms, 63 samples)
+      t=3809 E=10 V=6 gv=[0, 0, 0, 0, 0, 0] valences=[3, 3, 3, 4, 3, 4] edges=[[0, 1], [0, 2], [0, 3], [1, 3], [1, 4], [2, 3], [2, 4], [3, 5], [4, 5], [5, 5]]: 1.49 h (25 decorations x 968 subsets x 222 ms, 68 samples)
+      t=3758 E=10 V=6 gv=[0, 0, 0, 0, 0, 0] valences=[3, 3, 3, 4, 4, 3] edges=[[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 4], [3, 4], [3, 5], [4, 5], [4, 5]]: 1.40 h (25 decorations x 968 subsets x 209 ms, 72 samples)
+      t=3785 E=10 V=6 gv=[0, 0, 0, 0, 0, 0] valences=[3, 3, 3, 3, 5, 3] edges=[[0, 1], [0, 2], [0, 3], [1, 2], [1, 4], [2, 4], [3, 4], [3, 5], [4, 5], [4, 5]]: 1.38 h (21 decorations x 968 subsets x 245 ms, 62 samples)
+      t=3903 E=10 V=6 gv=[0, 0, 0, 0, 0, 0] valences=[3, 3, 3, 3, 4, 4] edges=[[0, 1], [0, 4], [0, 5], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5], [3, 4], [3, 5]]: 1.34 h (25 decorations x 968 subsets x 199 ms, 76 samples)
+      t=3759 E=10 V=6 gv=[0, 0, 0, 0, 0, 0] valences=[3, 3, 3, 4, 3, 4] edges=[[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 4], [3, 4], [3, 5], [4, 5], [5, 5]]: 1.30 h (25 decorations x 968 subsets x 193 ms, 78 samples)
+   proxy of genus4_split.cost_order: log-log correlation with the estimate -0.025, slope -0.03, residual scatter factor 3.58
+   structural proxy ncombo*nsub*Sum 5^(f+1)(1+d): log-log correlation with the estimate 0.983, slope 1.00, residual scatter factor 1.26
+   task balancing, Split.graph as it stands (mean / heaviest task, hours on the reference machine):
+      N =  25: mean 11.06 | round robin, present proxy: 14.78 | round robin, structural proxy: 14.80 | longest-first with the estimates: 11.06
+      N =  50: mean 5.53 | round robin, present proxy: 9.30 | round robin, structural proxy: 9.20 | longest-first with the estimates: 5.53
+      N = 100: mean 2.77 | round robin, present proxy: 7.45 | round robin, structural proxy: 6.55 | longest-first with the estimates: 4.09
+      N = 200: mean 1.38 | round robin, present proxy: 5.37 | round robin, structural proxy: 5.21 | longest-first with the estimates: 4.09
+
+SUBSET-DP PROTOTYPE (g5_dp.graph_dp), same machine: TOTAL estimated CPU 46.2 h  (speed-up 6.0); peak memory of a worker 99 MB
+   validation: 17 graphs run completely with graph_dp: measured 2235 s, sampled estimate 2443 s, ratio 0.92; peak memory 95 MB
+   per number of edges:   E  graphs   sum [h]   mean [s]   max [h]
+                          0       1      0.00        0.1      0.00
+                          1       3      0.00        0.0      0.00
+                          2      11      0.00        0.3      0.00
+                          3      34      0.02        2.2      0.00
+                          4     100      0.26        9.4      0.02
+                          5     239      1.32       19.9      0.06
+                          6     492      4.24       31.0      0.06
+                          7     784      8.92       40.9      0.11
+                          8    1002     12.85       46.2      0.30
+                          9     926     10.96       42.6      0.46
+                         10     632      6.16       35.1      0.70
+                         11     260      1.35       18.7      0.07
+                         12      71      0.13        6.6      0.01
+   graphs above   10 min:   24  (they hold 6.0 h)
+   graphs above   30 min:    1  (they hold 0.7 h)
+   graphs above   60 min:    0  (they hold 0.0 h)
+   slowest graphs:
+      t=3897 E=10 V=6 gv=[0, 0, 0, 0, 0, 0] valences=[3, 3, 3, 3, 3, 5]: 0.70 h (21 decorations x 120.76 s, 4 samples)
+      t=2864 E= 9 V=5 gv=[0, 0, 0, 0, 0] valences=[3, 3, 4, 4, 4]: 0.46 h (125 decorations x 13.19 s, 4 samples)
+      t=2938 E= 9 V=5 gv=[0, 0, 0, 0, 0] valences=[3, 3, 4, 4, 4]: 0.45 h (125 decorations x 13.09 s, 4 samples)
+      t=2863 E= 9 V=5 gv=[0, 0, 0, 0, 0] valences=[3, 3, 4, 5, 3]: 0.39 h (105 decorations x 13.24 s, 4 samples)
+      t=2930 E= 9 V=5 gv=[0, 0, 0, 0, 0] valences=[3, 3, 3, 3, 6]: 0.31 h (84 decorations x 13.45 s, 4 samples)
+      t=2134 E= 8 V=5 gv=[0, 0, 0, 0, 1] valences=[3, 3, 4, 4, 2]: 0.30 h (150 decorations x 7.25 s, 4 samples)
+      t=1776 E= 8 V=4 gv=[0, 0, 0, 0] valences=[4, 4, 4, 4]: 0.25 h (625 decorations x 1.43 s, 9 samples)
+      t=1800 E= 8 V=4 gv=[0, 0, 0, 0] valences=[3, 4, 4, 5]: 0.21 h (525 decorations x 1.46 s, 9 samples)
+      t=1784 E= 8 V=4 gv=[0, 0, 0, 0] valences=[3, 4, 4, 5]: 0.21 h (525 decorations x 1.44 s, 9 samples)
+      t=1792 E= 8 V=4 gv=[0, 0, 0, 0] valences=[3, 4, 4, 5]: 0.21 h (525 decorations x 1.42 s, 9 samples)
+   task balancing, subset-DP prototype (mean / heaviest task, hours on the reference machine):
+      N =  25: mean 1.85 | round robin, present proxy: 2.56 | round robin, structural proxy: 2.36 | longest-first with the estimates: 1.85
+      N =  50: mean 0.92 | round robin, present proxy: 1.72 | round robin, structural proxy: 1.54 | longest-first with the estimates: 0.92
+      N = 100: mean 0.46 | round robin, present proxy: 1.23 | round robin, structural proxy: 1.14 | longest-first with the estimates: 0.70
+      N = 200: mean 0.23 | round robin, present proxy: 0.97 | round robin, structural proxy: 0.89 | longest-first with the estimates: 0.70
+wrote g5_cost_table.json (4555 graphs)

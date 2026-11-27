@@ -1,0 +1,72 @@
+% Section 8 (part 8 of 8): the glue; the finite route.
+
+\subsection{The glue}
+\label{sec:con-glue}
+
+For a colour-$0$ WKB function with polynomial coefficients write $\Phi(z,1):=\sum_n\mathrm{ph}_n(1)z^n$, its value at $u=1$, where $\zh=z$.
+
+\begin{thm}[The glue]
+\label{thm:con-glue}
+In $\bbQ(\zeta)\fps{z}$,
+\begin{equation}
+\label{eq:con-glue}
+h(z)\,\Dn_0(z)=\Phican(z,1);
+\end{equation}
+hence $\Dn_0\in1+z\bbQ\fps{z}$, and, by \cref{thm:con-Pb}, $\Dn_0(z)=\PhiSP(z,1)/h(z)$.
+\end{thm}
+
+\begin{proof}
+We recall how \cref{thm:gau-R0}~(ii)--(iv) places both columns in one ring. (a) The canonical flat amplitude $A^{\mathrm{can}}=\sum_nA^{\mathrm{can}}_nz^n$ has $A^{\mathrm{can}}_n=L^{4n+1}\mathrm{ph}^{\mathrm{can}}_n(L^{-5})\in\bbQ[L,L^{-1}]$, the $\mathrm{ph}^{\mathrm{can}}_n$ being polynomials. (b) In $\bbQ(\zeta)\fps{q}$, with $L=(1-5^5q)^{-1/5}$, $A^{\mathrm{can}}$ and the actual amplitude $A^{\mathrm{act}}$ are colour-$0$ WKB columns of $\PFfive$ with the same exponential $\re^{u_0/z}$ and the same leading term $L$; by formal WKB uniqueness (\cref{lem:gau-wkb}, with $\Bbbk=\bbQ(\zeta)$) they differ by a constant series in $1+z\bbQ(\zeta)\fps{z}$. (c) Hence every $A^{\mathrm{act}}_n$ lies in $\bbQ(\zeta)[L,L^{-1}]$. (d) The ring $\bbQ(\zeta)[L,L^{-1}]\fps{z}$ embeds in $\bbQ(\zeta)\lser{s}\fps{\zh}$, where the comparison of \cref{thm:gau-R0} takes place, with the same exponential stripped on both sides; there $A^{\mathrm{act}}\,\Dn_0=A^{\mathrm{can}}$, the constant series of (b) is $\Dn_0\in1+z\bbQ(\zeta)\fps{z}$, and it does not depend on $u$ (the actual function has constant term $1$, so it is not a zero divisor). (e) Evaluation at $L=1$ is a ring homomorphism $\bbQ(\zeta)[L,L^{-1}]\to\bbQ(\zeta)$; applied coefficientwise it gives $A^{\mathrm{act}}(z)|_{L=1}\,\Dn_0(z)=A^{\mathrm{can}}(z)|_{L=1}$ in $\bbQ(\zeta)\fps{z}$. Since $A^{\mathrm{can}}_n|_{L=1}=\mathrm{ph}^{\mathrm{can}}_n(1)$, the right side is $\Phican(z,1)$, a series with rational coefficients. The point $L=1$ is $u=1$, $q=0$, where $\zh=z$; as $(1-5^5q)^{-1/5}=1+O(q)$, the value at $L=1$ of the Laurent polynomial $A^{\mathrm{act}}_n$ is the coefficient of $q^0$ of its image in $\bbQ(\zeta)\fps q$, and $A^{\mathrm{act}}_n(q=0)=h_n$ for every $n$, by (QRR) in the form of \cref{thm:set-qrr}, \eqref{eq:set-qrr}; so the left side is $h(z)\Dn_0(z)$. As $h\in1+z\bbQ\fps{z}$ is invertible in $\bbQ\fps{z}$, $\Dn_0=\Phican(z,1)/h(z)$ has rational coefficients, and \cref{thm:con-Pb} gives the second form. In particular the actual amplitude has rational coefficients, $A^{\mathrm{act}}_n=\sum_{m\leq n}A^{\mathrm{can}}_m\coef{z^{n-m}}\Dn_0^{-1}\in\bbQ[L,L^{-1}]$. This is the only place in this section where an input enters: (QRR), together with the actual rows and their WKB form, which rest on (M) and (G0) (\cref{thm:set-mirror,thm:set-G0}) through \cref{cor:set-cyclicPF5} and \cref{thm:gau-R0}. Neither the finite route of \cref{sec:con-finite} nor the degree bound \cref{prop:con-deg} is used.
+\end{proof}
+
+\begin{cor}
+\label{cor:con-A2}
+$\Dn=1$ if and only if $\PhiSP(z,1)=h(z)$. By \cref{thm:con-Pa}~(iv), $\PhiSP(z,1)=c(z;1)$, the value at $L=1$ of the Laurent polynomials $c_n$; so the condition reads $c(z;1)=h(z)$ (\cref{cor:gam-equiv}).
+\end{cor}
+
+\begin{proof}
+By \cref{cor:gau-colours}, $\Dn_i(z)=\Dn_0(\zeta^{-i}z)$, so $\Dn=1$ if and only if $\Dn_0=1$; by \eqref{eq:con-glue} and \cref{thm:con-Pb}, $\Dn_0=1$ if and only if $\PhiSP(z,1)=h(z)$. By \cref{thm:con-Pa}~(iv), $c_n(1)=\mathrm{ph}^{\mathrm{SP}}_n(1)$.
+\end{proof}
+
+The condition of \cref{cor:con-A2} is a connection statement: $\PhiSP$ is built at the conifold point $u=0$, as a series in $u$ whose coefficients turn out to be polynomials, and it is compared at $u=1$ with the value prescribed there. The gauge, the periods and the model have dropped out of it.
+
+\begin{rmk}[Why an exact input is needed]
+\label{rmk:con-why}
+Any two colour-$0$ WKB columns of $\PFfive$ with the same exponential differ by a constant series (\cref{lem:gau-wkb}). The properties used so far, namely $\PFfive$, symplecticity (which could at most give $\Dn_0(z)\Dn_0(-z)=1$, and only through the symplecticity of the expanded rows, \cref{rmk:con-genus}), the $\bbZ/5$-grading and the polynomial structure (\cref{lem:gau-poly,prop:con-deg}), are all invariant under $\Dn_0\mapsto\Dn_0\exp(a(z))$ for every odd series $a\in z^5\bbQ\fps{z^{10}}$: multiplication by such a factor commutes with HPF, keeps the coefficients polynomial ($z^5=u^4\zh^5$) and preserves $\Dn_0(z)\Dn_0(-z)=1$. So no argument using only these properties decides $\Dn_0$. Theorem~P removes the conifold end by an exact identity, the residue at the pole of the $1$-form (\cref{prop:con-res}), and Theorem Gamma supplies the exact input at $q=0$ (\cref{sec:gam}); both arguments are formal, but their input is the Mellin--Barnes integrand. Among the conclusions of the natural factorisation \cref{cor:mai-natfact}, the symplecticity of $G$ is the only one that a change of the rows by a scalar factor $\cn(z)^{-1}$, $\cn\in1+z^5\bbQ\fps{z^5}$, can violate: the factor multiplies $G$ by $\cn(z)^{-1}$, which is $1$ at $u=0$ and at $\zh=0$ and has polynomial coefficients ($z^5=u^4\zh^5$), and $G\cn^{-1}$ is symplectic if and only if $\cn(z)\cn(-z)=1$; so it is blind to the factors $\exp(a(z))$ with $a$ odd. The computations of \cref{sec:evi-normal} illustrate this; they are not used.
+\end{rmk}
+
+\subsection{The finite route}
+\label{sec:con-finite}
+
+This subsection reads the normalisation at the conifold point order by order. It explains the computations of \cref{sec:evi-normal} and is not used by the proof of the main theorem. Let $\Phi$ be a colour-$0$ WKB function solving HPF with coefficients in $\bbQ\fps{u}$; by \cref{lem:gau-poly} and \cref{thm:gau-R0}~(ii), $\Phi=\Phican\,\cn(z)$ for a unique $\cn\in1+z^5\bbQ\fps{z^5}$. Its hatted rows $\hat\Qr(\Phi)$ are built as follows: row $0$ of colour $0$ is $\Phi/\varpi_0$; the rows $a=1,\dots,4$ follow by the forward relations of the cyclic system (\cref{cor:gau-cycsys}); colour $i$ follows from $\Phi_i(\zh,u)=\Phi(\zeta^{-i}\zh,u)$ and the covariance $[\zh^n]\hat\Qr^{(i)}_a=\zeta^{i(a+1-n)}[\zh^n]\hat\Qr^{(0)}_a$ (\cref{lem:gau-colrows}). Put $\Ghat(\Phi):=\hat\Qr(\Phi)\,\Rhat^{\mathrm m}(\tau\zh)^{-1}$.
+
+\begin{lem}[Reading the normalisation]
+\label{lem:con-N}
+$\Ghat(\Phi)$ is the hatted form $\Lambda_sP(u,s^4\zh)\Lambda_\varsigma^{-1}$, $\Lambda_s=\diag(s^{1-\nu_a})$, $\Lambda_\varsigma=\diag(\varsigma^{1-\nu_b})$, of the graded regular gauge $P=\Pc\,\cn(z)$, and $P_{11}(0,z)=P_{22}(0,z)=\cn(z)$. Moreover $[u^j\zh^{5r}]\Ghat_{11}=0$ for $j<4r$, and
+\[
+\mathsf K_r:=[u^{4r}\zh^{5r}]\Ghat_{11}=[z^{5r}]\cn=[u^{4r}\zh^{5r}]\Ghat_{22}\qquad(r\geq1).
+\]
+As a function of the free coefficients of $\Phi$, $\mathsf K_r-\fc_r$ depends only on $\fc_1,\dots,\fc_{r-1}$. (The index $r$ is a local letter.)
+\end{lem}
+
+\begin{proof}
+For $\Phi=\Phican$ the rows built in this way are the hatted rows of $\Pc\Qr^{\mathrm m}(v(u))$: this matrix solves the quintic system (\cref{thm:gau-R0}~(i)), so its rows follow from row $0$ by the forward relations, and it is colour covariant (\cref{lem:gau-colmod,prop:gau-graded}). The forward relations and the colour covariance commute with multiplication by $\cn(z)$, because $\cn(\zeta z)=\cn(z)$; so $\hat\Qr(\Phi)=\cn(z)\,\hat\Qr(\Phican)$ and $\Ghat(\Phi)$ is the hatted form of $\Pc\cn(z)$, which is a graded regular gauge (\cref{thm:gau-U}~(b), \cref{prop:gau-graded}), with $P_{11}(0,z)=\cn(z)$ since $\Pc$ is canonical. By \cref{lem:gau-R1}, $P_{22}(0,z)=P_{11}(0,z)$. For $b\in\{1,2\}$ the hatted diagonal entry is $\Ghat_{bb}=\tau^{(1-\nu_b)/4}P_{bb}(u,s^4\zh)$, and the graded entry $P_{bb}$ contains only $z^{5r}=u^{4r}\zh^{5r}$, with coefficient $p_{5r,b}(u)$; so $[\zh^{5r}]\Ghat_{bb}=\tau^{(1-\nu_b)/4}u^{4r}p_{5r,b}(u)$, whose $u^{4r}$-coefficient is $p_{5r,b}(0)=[z^{5r}]P_{bb}(0,z)=[z^{5r}]\cn$. Finally $\fc_r=[u^{4r}\zh^{5r}](\Phican\cn)=\sum_{m=0}^r[z^{5m}]\cn\cdot\fc^{\mathrm{can}}_{r-m}$, where $\fc^{\mathrm{can}}_k:=[u^{4k}]\mathrm{ph}^{\mathrm{can}}_{5k}$ and $\fc^{\mathrm{can}}_0:=1$, by extracting the coefficient of $u^{4r}\zh^{5r}$ from the product with $\cn(z)=\sum_m[z^{5m}]\cn\,u^{4m}\zh^{5m}$; so $\mathsf K_r=\fc_r-\fc^{\mathrm{can}}_r-\sum_{0<m<r}[z^{5m}]\cn\cdot\fc^{\mathrm{can}}_{r-m}$, and the $[z^{5m}]\cn$, $m<r$, are determined by $\fc_1,\dots,\fc_{r-1}$ in the same way.
+\end{proof}
+
+Let $\Phi^{\mathrm{pol}}$ be the solution of HPF of \cref{prop:con-deg} whose free coefficients are fixed by $\mathrm{ph}^{\mathrm{pol}}_{5m}(1)=h_{5m}$, $m\geq1$; this is possible because $\fc_m$ enters $\mathrm{ph}_{5m}(1)$ with coefficient $1$ and does not enter $\mathrm{ph}_n$ for $n<5m$.
+
+\begin{thm}[The connection form]
+\label{thm:con-conn}
+With $\Phi^{\mathrm{pol}}$ as above:
+\begin{enumerate}
+\item $\Dn_0\in\bbQ\fps{z^5}$ if and only if $\mathrm{ph}^{\mathrm{pol}}_n(1)=h_n$ for every $n$ with $5\nmid n$.
+\item If $\Dn_0\in\bbQ\fps{z^5}$, then the actual colour-$0$ function is $\Phi^{\mathrm{pol}}$, $\Dn_0=\cn^{-1}$ for the series $\cn$ of \cref{lem:con-N} applied to $\Phi^{\mathrm{pol}}$, and $\Dn_0=1$ if and only if $\mathsf K_r=0$ for every $r\geq1$; the conditions $\mathsf K_r=0$, $r\geq1$, characterise the free coefficients of $\Phican$.
+\item $\Dn_0=1$ if and only if $\mathrm{ph}^{\mathrm{can}}_n(1)=h_n$ for every $n$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+(The letters $\mathsf p$, $\mathsf d$ are local to this proof.) By \cref{lem:gau-poly}, $\Phi^{\mathrm{pol}}=\Phican\,\mathsf p(z)$ with $\mathsf p\in1+z^5\bbQ\fps{z^5}$, and by \cref{thm:gau-R0}~(iv) the actual function is $\Phican/\Dn_0=\Phi^{\mathrm{pol}}/\mathsf d$ with $\mathsf d:=\mathsf p\Dn_0$; by \eqref{eq:con-glue}, $\Phi^{\mathrm{pol}}(z,1)=h(z)\,\mathsf d(z)$. (i) $\Dn_0\in\bbQ\fps{z^5}$ if and only if $\mathsf d\in\bbQ\fps{z^5}$. If $\mathrm{ph}^{\mathrm{pol}}_n(1)=h_n$ for every $n$ with $5\nmid n$, then $\Phi^{\mathrm{pol}}(z,1)=h(z)$, the multiples of $5$ agreeing by construction, so $\mathsf d=1$. Otherwise let $N$ be the least $n$ with $\mathrm{ph}^{\mathrm{pol}}_n(1)\neq h_n$; then $5\nmid N$, and $\mathsf d=1+(\mathrm{ph}^{\mathrm{pol}}_N(1)-h_N)z^N+O(z^{N+1})$ is not in $\bbQ\fps{z^5}$. (ii) By (i), $\mathsf d=1$, so the actual function is $\Phi^{\mathrm{pol}}$ and $\mathsf p=\Dn_0^{-1}$; \cref{lem:con-N} applied to $\Phi^{\mathrm{pol}}$ has $\cn=\mathsf p$. Hence $\Dn_0=1$ if and only if $\cn=1$, if and only if $\mathsf K_r=[z^{5r}]\cn=0$ for every $r$, and by the last clause of \cref{lem:con-N} these conditions fix the free coefficients recursively, at the values of $\Phican$. (iii) is \eqref{eq:con-glue}.
+\end{proof}
+
+By \cref{cor:con-frame}, $\mathsf K_r=[z^{5r}](\Phi/\Phican)$ and $\Dn_0=\Phican(z,1)/h(z)$ do not depend on the conifold frame; computations of $\mathsf K_r$ in several frames (\cref{sec:evi-normal}) are therefore no independent evidence for $\Dn_0=1$.

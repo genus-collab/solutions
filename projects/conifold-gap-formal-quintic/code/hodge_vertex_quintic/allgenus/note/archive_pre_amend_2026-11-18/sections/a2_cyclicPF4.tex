@@ -1,0 +1,133 @@
+% Appendix: the cyclic form of the fourth-order operator (proofs of thm:gau-cyc, cor:gau-cycsys and lem:gau-confexp); label prefix: gau.
+\section{The cyclic form of the fourth-order operator}
+\label{sec:gau-cycproof}
+
+This appendix proves \cref{thm:gau-cyc,cor:gau-cycsys,lem:gau-confexp}, with the notation of \cref{def:gau-conc} and the coefficients $A_k$ of \cref{sec:gau-cyc}.
+
+\begin{lem}[Constants of $\bbK{[\ell]}$]
+\label{lem:gau-const}
+$\{f\in\bbK[\ell]:\Dq f=0\}=\bbQ$.
+\end{lem}
+
+\begin{proof}
+For $f\in\bbK$, $\Dq f=-(1-u)f'=0$ gives $f'=0$, so $f\in\bbQ$. Let $f=\sum_{k\leq n}a_k\ell^k$ with $a_k\in\bbK$, $a_n\neq0$, $n\geq1$, and $\Dq f=0$. As $\Dq f=\sum_k\bigl(\Dq a_k+(k+1)a_{k+1}\Dq\ell\bigr)\ell^k$, the coefficient of $\ell^n$ gives $a_n\in\bbQ^\times$, and that of $\ell^{n-1}$ gives $\Dq a_{n-1}=na_n(1-u)/u$, i.e.\ $a_{n-1}'=-na_n/u$; impossible, since a derivative of a Laurent series has no term in $u^{-1}$.
+\end{proof}
+
+\begin{lem}[$\PFfour$ is self-adjoint]
+\label{lem:gau-adj}
+$\PFfour^*=\PFfour$, as operators with coefficients in $\bbQ[u]$; hence as operators on every differential ring containing $\bbQ[u]$.
+\end{lem}
+
+\begin{proof}
+The formal adjoint is the anti-automorphism of $\bbQ[u][\Dq]$ fixing the coefficients and sending $\Dq$ to $-\Dq$; it exists because it maps the relation $\Dq\circ a-a\circ\Dq=\Dq(a)$ to $a\circ(-\Dq)-(-\Dq)\circ a=\Dq(a)$. With $q=(1-u)/5^5$, $\Dq q=q$, write $\PFfour=\Dq^4-5^5q\circ P_4(\Dq)$, $P_4(\Dq):=\prod_{k=1}^4(\Dq+k/5)$. Then $(\Dq^4)^*=\Dq^4$ and $(q\circ P_4(\Dq))^*=P_4(-\Dq)\circ q=q\circ P_4(-\Dq-1)$, by $\Dq\circ q=q\circ(\Dq+1)$, and $P_4(-\Dq-1)=\prod_{k=1}^4\bigl(-(\Dq+\frac{5-k}5)\bigr)=P_4(\Dq)$ (four sign changes, $k\mapsto5-k$ permutes the factors).
+\end{proof}
+
+\begin{lem}[The concomitant]
+\label{lem:gau-conc}
+\begin{enumerate}
+\item For every $\cP=\sum_{k\leq4}a_k\Dq^k$ with coefficients in a differential ring $\cR_0$ (for instance $\bbK$ or $\bbQ[u]$) and all $f,g$ in a differential ring extending $\cR_0$: $g\,\cP f-f\,\cP^*g=\Dq\,\Conc_\cP(f,g)$.
+\item For $f,g\in\mathcal S$, $\Conc(f,g)$ lies in $\bbQ$, and $\Conc$ is a $\bbQ$-bilinear alternating form on $\mathcal S$.
+\item The jet matrix is $\Jet_{ab}=\sum_{k=a+b+1}^4(-1)^{k-1-a}\binom{k-1-a}{b}\Dq^{k-1-a-b}A_k$, explicitly
+\[
+\Jet=\begin{pmatrix}0&\frac25(1-u)&1-u&-u\\-\frac25(1-u)&0&u&0\\-(1-u)&-u&0&0\\u&0&0&0\end{pmatrix};
+\]
+so $\Jet_{ab}=0$ for $a+b\geq4$, $\Jet_{3-j,j}=(-1)^ju$, and $\det\Jet=u^4$.
+\item For every basis $\mathbf x$ of $\mathcal S$, $\Conc_{\mathbf x}=\Wr_{\mathbf x}^T\Jet\,\Wr_{\mathbf x}$. In the standard basis
+\[
+\Conc_{\mathbf f}=\begin{pmatrix}0&-\frac75&2&\ast\\\frac75&0&0&-1\\-2&0&0&0\\-\ast&1&0&0\end{pmatrix},\qquad \operatorname{Pf}(\Conc_{\mathbf f})=2,\qquad\det\Conc_{\mathbf f}=4,
+\]
+where $\ast=\Conc(f_0,y_3)$ is not needed. Hence $\Conc$ is non-degenerate on $\mathcal S$, $\det\Wr_{\mathbf x}\neq0$ for every basis $\mathbf x$, and $u^2\det\Wr_{\mathbf f}\in\{2,-2\}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) Fix $k$ and put $w:=a_kg$, $\mathsf t_j:=(-1)^j\Dq^jw\,\Dq^{k-j}f$ (local letters). Then $\Dq\bigl[(-1)^j\Dq^jw\,\Dq^{k-1-j}f\bigr]=\mathsf t_j-\mathsf t_{j+1}$, and the sum over $j<k$ telescopes to $\mathsf t_0-\mathsf t_k=g\,a_k\Dq^kf-f\,(-\Dq)^k(a_kg)$; sum over $k$.
+
+(ii) For $f,g\in\mathcal S$, (i) and \cref{lem:gau-adj} give $\Dq\Conc(f,g)=g\,\PFfour f-f\,\PFfour g=0$, so $\Conc(f,g)\in\bbQ$ by \cref{lem:gau-const}. For alternation, $Q:=\Conc(f,g)+\Conc(g,f)=\sum_{a,b}q_{ab}f_ag_b$ is a differential polynomial in indeterminates $f_a=\Dq^af$, $g_b=\Dq^bg$ with $\Dq Q=0$ identically, by (i) and \cref{lem:gau-adj}. If $Q\neq0$, let $s$ be the largest $a+b$ with $q_{ab}\neq0$; in $\Dq Q$ the coefficient of $f_0g_{s+1}$ is $q_{0s}$ and that of $f_cg_d$ ($c\geq1$, $c+d=s+1$) is $q_{c-1,d}+q_{c,d-1}$, so successively $q_{0,s}=q_{1,s-1}=\dots=q_{s,0}=0$, a contradiction.
+
+(iii) Expand $\Dq^j(A_kg)=\sum_b\binom jb\Dq^{j-b}A_k\,\Dq^bg$ and put $a=k-1-j$; the entries follow with $\Dq(1-u)=1-u$, $\Dq u=-(1-u)$, e.g.\ $\Jet_{01}=-A_2+2\Dq A_3-3\Dq^2A_4=\frac25(1-u)$, $\Jet_{02}=A_3-3\Dq A_4=1-u$, $\Jet_{00}=A_1-\Dq A_2+\Dq^2A_3-\Dq^3A_4=0$. For $a+b=3$ only $k=4$ contributes, giving $(-1)^bu$, and nothing contributes for $a+b\geq4$; the antidiagonal $u,-u,u,-u$ and the even reversal of four letters give $\det\Jet=u^4$.
+
+(iv) The identity is (iii) on the basis. By (ii) the entries of $\Conc_{\mathbf f}$ are rational and may be read at $u=0$. \emph{Power series.} At $u=0$, $\Jet=\frac25(E_{01}-E_{10})+E_{02}-E_{20}$, so $\Conc(f,g)=\bigl[\frac25(f\Dq g-g\Dq f)+(f\Dq^2g-g\Dq^2f)\bigr](0)$, and $(f,\Dq f,\Dq^2f)(0)$ is $(1,0,0)$, $(0,-1,-1)$, $(0,0,2)$ for $f_0,f_1,f_2$; hence $\Conc(f_0,f_1)=-\frac75$, $\Conc(f_0,f_2)=2$, $\Conc(f_1,f_2)=0$. \emph{Entries with $y_3$.} Write $\Dq^by_3=(\Dq^b\varpi_1)\ell+Y_b$, $Y_b\in\bbK$; then the constant $\Conc(f,y_3)=\Conc(f,\varpi_1)\ell+\sum_{a,b}\Dq^af\,\Jet_{ab}Y_b$ is the coefficient of $u^0$ of the second term. From $\Dq\ell=1-u^{-1}$, $\Dq^2\ell=u^{-1}-u^{-2}$, $\Dq^3\ell=-2u^{-3}+3u^{-2}-u^{-1}$ and $Y_1=\varpi_1\Dq\ell+\Dq\rho_3$, $Y_2=2\Dq\varpi_1\Dq\ell+\varpi_1\Dq^2\ell+\Dq^2\rho_3$, $Y_3=3\Dq^2\varpi_1\Dq\ell+3\Dq\varpi_1\Dq^2\ell+\varpi_1\Dq^3\ell+\Dq^3\rho_3$, with $\varpi_1=u+O(u^2)$, one gets $Y_0=\rho_3\in u^3\bbQ\fps u$, $Y_1=-1+O(u)$, $Y_2=u^{-1}+O(1)$, $Y_3=u^{-2}+O(u^{-1})$, and
+\[
+\begin{aligned}\sum_{a,b}\Dq^af\,\Jet_{ab}Y_b={}&f\bigl[\tfrac25(1-u)Y_1+(1-u)Y_2-uY_3\bigr]\\
+&+\Dq f\bigl[-\tfrac25(1-u)Y_0+uY_2\bigr]+\Dq^2f\bigl[-(1-u)Y_0-uY_1\bigr]+\Dq^3f\,uY_0 ,\end{aligned}
+\]
+where the first bracket is a power series, the second is $1+O(u)$ and the others are $O(u)$. So $\Conc(f,y_3)=(\Dq f)(0)$ when $f(0)=0$: $\Conc(f_1,y_3)=-1$, $\Conc(f_2,y_3)=0$. Then $\operatorname{Pf}=c_{01}c_{23}-c_{02}c_{13}+c_{03}c_{12}=2$ and $\det=4$; $\det\Conc_{\mathbf x}=(\det\Wr_{\mathbf x})^2u^4$ gives $\det\Wr_{\mathbf x}\neq0$. Finally Abel's identity $\Dq\det\Wr_{\mathbf f}=-(A_3/A_4)\det\Wr_{\mathbf f}=2u^{-1}(1-u)\det\Wr_{\mathbf f}$ and $\Dq(u^2)=-2u(1-u)$ give $\Dq(u^2\det\Wr_{\mathbf f})=0$, so $u^2\det\Wr_{\mathbf f}\in\bbQ$ (\cref{lem:gau-const}), with square $\det\Conc_{\mathbf f}=4$.
+\end{proof}
+
+\begin{lem}[Transversality]
+\label{lem:gau-transv}
+For every basis $\mathbf x$ of $\mathcal S$ and $a,b\in\{0,\dots,3\}$, in the fraction field of $\bbK[\ell]$,
+\[
+\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}\,\Dq^ax_i\,\Dq^bx_j=(\Jet^{-1})_{ab},
+\]
+where $(\Jet^{-1})_{ab}=0$ for $a+b\leq2$ and $(\Jet^{-1})_{03}=u^{-1}$. In particular the transversality sums of \cref{def:gau-conc} do not depend on the basis, $\Upsilon_0=\Upsilon_1=\Upsilon_2=0$ and $\Upsilon_3=u^{-1}$.
+\end{lem}
+
+\begin{proof}
+As $\det\Wr_{\mathbf x}\neq0$, $\Conc_{\mathbf x}=\Wr_{\mathbf x}^T\Jet\Wr_{\mathbf x}$ gives $\Jet^{-1}=\Wr_{\mathbf x}\Conc_{\mathbf x}^{-1}\Wr_{\mathbf x}^T$, whose entry $(a,b)$ is the left side. With the exchange matrix $J_{ac}=\delta_{a+c,3}$, $\Jet J$ is upper triangular with diagonal $(-1)^{3-c}u$ (\cref{lem:gau-conc}~(iii)), hence so is $J\Jet^{-1}$, with diagonal entries the inverses: $(\Jet^{-1})_{ba}=0$ for $a+b<3$ and $(\Jet^{-1})_{03}=1/\Jet_{30}=u^{-1}$. The $\Upsilon_k$ are the entries $(0,k)$, and $\widetilde\Upsilon_k$ is built from the bivector $\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}x_i\otimes x_j$, which is basis independent since the basis $\mathbf xM$ has Gram matrix $M^T\Conc_{\mathbf x}M$.
+\end{proof}
+
+\begin{lem}[Isotropy, formal Picard--Lefschetz]
+\label{lem:gau-iso}
+\begin{enumerate}
+\item $\sh$ commutes with $\Dq$, fixes $f_0,f_1,f_2$ and maps $y_3$ to $y_3+\varpi_1$; so $\sh(\mathcal S)=\mathcal S$.
+\item $\Conc(f,\varpi_1)=0$ for every $f\in\mathcal S\cap\bbK$, and $\Conc(y_3,\varpi_1)=1$.
+\item On $\mathcal S\cap\bbK$ the form $\Conc$ has rank $2$ and radical $\bbQ\varpi_1$, and a plane in $\mathcal S\cap\bbK$ is isotropic if and only if it contains $\varpi_1$. In particular $\operatorname{span}(y_0,\varpi_1)$ is isotropic for every power-series solution $y_0$; and $\Conc(f_0,f_1+\gamma'f_2)=-\frac75+2\gamma'$ vanishes only for $\gamma'=\gamma=\frac7{10}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) $\Dq\circ\sh$ and $\sh\circ\Dq$ are additive and satisfy $X(fg)=X(f)\sh(g)+\sh(f)X(g)$; they agree on $\bbK$ and on $\ell$ (as $\Dq\ell\in\bbK$), hence on $\bbK[\ell]$. Clearly $\sh f_k=f_k$ and $\sh y_3=y_3+\varpi_1$. (ii) By (i), $\sh\Conc(f,g)=\Conc(\sh f,\sh g)$. For $f\in\mathcal S\cap\bbK$ the constant $\Conc(f,y_3)$ is fixed by $\sh$, so $\Conc(f,y_3)=\Conc(f,y_3+\varpi_1)$, i.e.\ $\Conc(f,\varpi_1)=0$; and $\Conc(y_3,\varpi_1)=-\Conc(f_1,y_3)-\gamma\Conc(f_2,y_3)=1$ (\cref{lem:gau-conc}~(iv)). (iii) The Gram matrix on $(f_0,f_1,f_2)$ is $\frac75(E_{10}-E_{01})+2(E_{02}-E_{20})$, of rank $2$ with kernel $\bbQ\varpi_1$; this gives the last assertion. A plane $\Lambda\not\ni\varpi_1$ satisfies $\mathcal S\cap\bbK=\Lambda\oplus\bbQ\varpi_1$, so $\Conc|_\Lambda$ has rank $2$; a plane containing $\varpi_1$ is isotropic by (ii).
+\end{proof}
+
+\begin{lem}[Special geometry]
+\label{lem:gau-sg}
+Let $y_0\in\bbK^\times$ and $t\in\bbK$ with $\Dq t\neq0$.
+\begin{enumerate}
+\item[(a)] For every basis $\mathbf x$ of $\mathcal S$: $\widetilde\Upsilon_1=\widetilde\Upsilon_2=0$ and $\widetilde\Upsilon_3=1/(u\,y_0^2(\Dq t)^3)$.
+\item[(b)] Suppose moreover that $y_0$ and $y_1:=ty_0$ lie in $\mathcal S\cap\bbK$ and span an isotropic plane; for instance $y_1=\varpi_1$ and $y_0$ any power-series solution not proportional to $\varpi_1$ (\cref{lem:gau-iso}). Then $\mathcal S$ has a basis $(x_0,\dots,x_3)$ with $x_0=y_0$, $x_1=y_1$, $\Conc(x_0,x_3)=\Conc(x_1,x_2)=1$ and $\Conc(x_0,x_2)=\Conc(x_1,x_3)=\Conc(x_2,x_3)=0$. With $\phi_i:=x_i/y_0$ (so $\phi_0=1$, $\phi_1=t$) and $\mathrm{Yuk}:=\de_t^2\phi_2$:
+\begin{enumerate}
+\item $\de_t^2\phi_3=-t\,\mathrm{Yuk}$; hence $\de_t^2(y/y_0)\in\mathrm{Yuk}\cdot\operatorname{span}_\bbQ(1,t)$ for every $y\in\mathcal S$;
+\item $\mathrm{Yuk}=1/(u\,y_0^2(\Dq t)^3)$.
+\end{enumerate}
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(a) Put $\dot t:=\Dq t$ and $\Upsilon^{\Dq}_m:=\sum_{i,j}(\Conc_{\mathbf x}^{-1})_{ij}(x_i/y_0)\Dq^m(x_j/y_0)$ (local letters); $\Upsilon^{\Dq}_0=0$ by antisymmetry. The Leibniz rule gives $\Upsilon_k=\sum_m\binom km\,y_0\Dq^{k-m}y_0\,\Upsilon^{\Dq}_m$, a triangular system whose diagonal entries are the unit $y_0^2$; with $\Upsilon_1=\Upsilon_2=0$, $\Upsilon_3=u^{-1}$ (\cref{lem:gau-transv}) it gives $\Upsilon^{\Dq}_1=\Upsilon^{\Dq}_2=0$, $\Upsilon^{\Dq}_3=1/(uy_0^2)$. Likewise $\Dq=\dot t\de_t$, $\Dq^2=(\Dq\dot t)\de_t+\dot t^2\de_t^2$, $\Dq^3=(\Dq^2\dot t)\de_t+3\dot t(\Dq\dot t)\de_t^2+\dot t^3\de_t^3$ express $\Upsilon^{\Dq}_m$ ($m\leq3$) triangularly in $\widetilde\Upsilon_1,\dots,\widetilde\Upsilon_m$ with the unit $\dot t^m$ as coefficient of $\widetilde\Upsilon_m$; solving successively gives (a). Isotropy is not used in (a).
+
+(b) $\Lambda:=\operatorname{span}(y_0,y_1)$ is an isotropic plane, since $t$ is not constant. As $\Conc$ is non-degenerate on $\mathcal S$ by \cref{lem:gau-conc}~(iv), $\Lambda^\perp=\Lambda$ and $x\mapsto\Conc(\cdot,x)|_\Lambda$ maps $\mathcal S$ onto $\Lambda^*$. Choose $x_3$ with $\Conc(y_0,x_3)=1$, $\Conc(y_1,x_3)=0$, and $x_2'$ with $\Conc(y_0,x_2')=0$, $\Conc(y_1,x_2')=1$, and put $x_2:=x_2'-\Conc(x_2',x_3)y_0$. The Gram matrix is $E_{03}+E_{12}-E_{21}-E_{30}$, so this is a basis with $\Conc_{\mathbf x}^{-1}=-\Conc_{\mathbf x}$, and $\widetilde\Upsilon_k=-\phi_0\de_t^k\phi_3+\phi_3\de_t^k\phi_0-\phi_1\de_t^k\phi_2+\phi_2\de_t^k\phi_1$. For $k\geq2$, $\de_t^k1=\de_t^kt=0$, so $\widetilde\Upsilon_k=-\de_t^k\phi_3-t\,\de_t^k\phi_2$: $k=2$ gives (i), and $k=3$ gives $\widetilde\Upsilon_3=\de_t(t\,\mathrm{Yuk})-t\,\de_t\mathrm{Yuk}=\mathrm{Yuk}$, which is (ii) by (a). For $y=\sum_ic_ix_i$, $\de_t^2(y/y_0)=(c_2-c_3t)\mathrm{Yuk}$.
+\end{proof}
+
+In a conifold frame, $\mathrm{Yuk}=1/(u\varpi_0^2(\Dq\tc)^3)$ is the conifold expansion of $\kappa^{\mathrm{LR}}_1$ of \cref{prop:set-cyclicLR}, and $\kappa_1=\mathrm{Yuk}\cdot\Dq\tc$ in \cref{prop:gau-quintic}.
+
+\begin{proof}[Proof of \cref{thm:gau-cyc}]
+Put $t:=y_1/y_0$, $\dot t:=\Dq t$. As $\Dq\circ\dot t^{-1}\circ\Dq=\dot t\,\de_t^2$,
+\[
+\Mcyc(y_0,y_1)=\frac{\dot t}{y_0}\circ\de_t^2\circ\bigl(u\,y_0^2\dot t^3\bigr)\circ\de_t^2\circ\frac1{y_0}.
+\]
+For $y\in\mathcal S$, \cref{lem:gau-sg}~(b) gives $u\,y_0^2\dot t^3\de_t^2(y/y_0)=c_2-c_3t$ with constants $c_2,c_3$, which $\de_t^2$ kills; so $\Mcyc(y_0,y_1)$ annihilates $\mathcal S$. Its coefficient of $\Dq^4$ is the product $y_0^{-1}\cdot\dot t^{-1}\cdot uy_0^2\dot t^2\cdot\dot t^{-1}\cdot y_0^{-1}=u=A_4$ of the multiplication factors. Hence $E:=\Mcyc(y_0,y_1)-\PFfour=\sum_{k\leq3}e_k\Dq^k$ annihilates $\mathcal S$, i.e.\ $(e_0,\dots,e_3)\Wr_{\mathbf f}=0$, and $E=0$ as $\det\Wr_{\mathbf f}\neq0$ (\cref{lem:gau-conc}~(iv)). Under $y_0\mapsto\mu y_0$, $y_1\mapsto\mu'y_1$ the multiplication factors of \eqref{eq:gau-Mcyc} acquire $\mu^{-1},\mu\mu'^{-1},\mu'^2,\mu\mu'^{-1},\mu^{-1}$, with product $1$; under $y_1\mapsto y_1+ay_0$, $\dot t$ is unchanged. The plane of the first statement contains $\varpi_1$ and is isotropic by \cref{lem:gau-iso}; in a conifold frame $\varpi_0$ is a power-series solution with $\varpi_0(0)=1$, not proportional to $\varpi_1$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{cor:gau-cycsys}]
+With $\dot t=\Dq t$ and $\kappa_1^{-1}=uy_0^2\dot t^2$, \eqref{eq:gau-Mcyc} gives the operator identity
+\[
+\kappa_4^{-1}\Dq\,\kappa_3^{-1}\Dq\,\kappa_2^{-1}\Dq\,\kappa_1^{-1}\Dq\,\kappa_0^{-1}\Dq\circ y_0^{-1}=y_0^{-1}\Dq\,y_0^{-1}\Dq\,\dot t^{-1}\Dq\,(uy_0^2\dot t^2)\Dq\,\dot t^{-1}\Dq\,y_0^{-1}=y_0^{-1}\Dq\circ\Mcyc(y_0,y_1).
+\]
+(i) Given $Y_{a+1}=z\Dq Y_a/\kappa_a$ for $a\leq3$, the closing relation $z\Dq Y_4=\kappa_4Y_0$ reads
+\[
+Y_0=z^5\kappa_4^{-1}\Dq\kappa_3^{-1}\Dq\cdots\kappa_0^{-1}\Dq\,Y_0\qquad(\text{$z$ commutes with $\Dq$});
+\]
+by the identity and \cref{thm:gau-cyc} this is $y_0Y_0=z^5\Dq\,\PFfour(y_0Y_0)$, i.e.\ $\PFfive(y_0Y_0)=0$ by \cref{lem:set-pf5}, an operator identity over $\bbQ[q][z]$ whose proof uses only $\Dq\circ q=q\circ(\Dq+1)$, valid in $\cR$. The converse is the same chain read backwards. (ii) For invertible $z$, $\Dq\mapsto\Dq+w/z$ fixing $\cR$ is a ring automorphism of $\cR[\Dq]$, since $(\Dq+w/z)\circ f-f\circ(\Dq+w/z)=\Dq(f)$; it maps $z\Dq$ to $z\Dq+w$, and applying it to the identities of (i) gives (ii).
+\end{proof}
+
+\begin{proof}[Proof of \cref{lem:gau-confexp}]
+Write $\Cexp:=\Cexp_{\alpha,\beta}$ and $\Xi=-\log(1-u)$ (\cref{def:set-confexp}), so $\Dq\Xi=-1$ and $\Dq^k\Xi=0$ for $k\geq2$. By \cref{def:set-confexp}, $\Cexp(L)=s^{-1}$, $\Cexp(\logq)=-\Xi$, $\Cexp(c_j)=\Dq^j\varpi_0$ and $\Cexp(i_j)=\Dq^j\varpi_1-j\Dq^{j-1}\varpi_0+\Xi\Dq^j\varpi_0=\Dq^j(\varpi_1+\Xi\varpi_0)$ (Leibniz rule). $\Nring$ is the localisation of a polynomial ring at $L$, $c_0$ and $\mathsf W$, so the assignment extends uniquely once these go to units: $s^{-1}$ and $\varpi_0$ are units, and
+\[
+\Cexp(\mathsf W)=\varpi_0^2+\varpi_0\bigl(\Dq\varpi_1-\varpi_0+\Xi\Dq\varpi_0\bigr)-\Dq\varpi_0\bigl(\varpi_1+\Xi\varpi_0\bigr)=\varpi_0\Dq\varpi_1-\varpi_1\Dq\varpi_0=\varpi_0^2\Dq\tc
+\]
+is a unit since $\Dq\tc(0)=-\tc'(0)=-1$ (\cref{def:set-frames}). Also $\Cexp(I_1)=-\Xi\varpi_0+\varpi_1+\Xi\varpi_0=\varpi_1$.
+
+$\Dq\circ\Cexp$ and $\Cexp\circ\Dq$ are $\Cexp$-derivations, so it suffices to compare them on the generators (on an inverted element, $\delta(x^{-1})=-\Cexp(x)^{-2}\delta(x)$). For $L$: $\Dq(s^{-1})=(s^{-6}-s^{-1})/5=\Cexp((L^6-L)/5)$; for $\logq$: $\Dq(-\Xi)=1$; for $c_0,c_1,c_2,i_0,i_1$ the images are shifted in $j$ by $\Dq$. $\Dq c_3$ is fixed in $\Nring$ by $\PFfour c_0=0$, and $\PFfour\varpi_0=0$ gives $\Cexp(\Dq c_3)=\Dq^4\varpi_0$. $\Dq i_2$ is fixed by $\Conc(c_0,I_1)=0$, with $\Dq^3I_1=c_3\logq+3c_2+\Dq i_2$; this relation is affine in $\Dq i_2$ with unit coefficient $\Jet_{03}c_0=-L^{-5}c_0$, and $\Cexp(\Dq^bI_1)=\Dq^b\varpi_1$ for $b\leq2$ by the cases treated. So its image differs from $\Conc(\varpi_0,\varpi_1)=0$ (\cref{lem:gau-iso}~(ii)) only in the last slot, $-u\varpi_0\bigl(\Cexp(\Dq^3I_1)-\Dq^3\varpi_1\bigr)=0$, whence $\Cexp(\Dq i_2)=\Dq^3\varpi_1+\Xi\Dq^3\varpi_0-3\Dq^2\varpi_0=\Dq\Cexp(i_2)$. The last assertion follows from $\Cexp(I_1/c_0)=\tc$ and $\Cexp(\mathsf W/c_0^2)=\Dq\tc$.
+\end{proof}

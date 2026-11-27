@@ -1,0 +1,19 @@
+====================================================================================================
+ind_run g4_61_nat: 379 inner graphs, K = 6, NZ = 9, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.9 s
+   379 inner graphs to do with 5 processes, deadline 1500 s
+      11/379 done (65 s wall)
+      39/379 done (126 s wall)
+      110/379 done (186 s wall)
+      379/379 done (212 s wall)
+   run: wall 213 s, CPU (this and earlier runs) 1043 s, slowest [(37.1, 81), (33.8, 32), (30.8, 80), (30.8, 79), (27.2, 77), (23.5, 169)]
+   complete outer graphs: 379 of 379 (all)
+PASS 379 outer graphs equal the reference g4_split_g4_61_nat.json, coefficients u^0..u^5
+      compared, by number of outer edges: [(0, 1), (1, 3), (2, 7), (3, 21), (4, 43), (5, 75), (6, 89), (7, 81), (8, 42), (9, 17)]; non-zero in my table: 1
+   vertex graph: ['1/180000', '-7/300000', '[990327418757541961 mod p]', '[881391017106020249 mod p]', '[1024229431246899910 mod p]', '[2068325165885277547 mod p]']
+PASS REGULARITY (nat): the 378 complete outer graphs with edges are O(u^6)
+PASS VERTEX GRAPH = (1/180000) t_c^-6 + 0 + .. + 0, i.e. [u^0..u^5] G = (1/180000) (u/t_c)^6
+   total: ['1/180000', '-7/300000', '[990327418757541961 mod p]', '[881391017106020249 mod p]', '[1024229431246899910 mod p]', '[2068325165885277547 mod p]']
+PASS GAP: total = (1/180000) t_c^-6 + 0 + .. + 0
+PASS total of this variant = total of my point-frame run (variant id)
+PASS for each of the 379 inner graphs the split pieces add up to my point-frame term
+IND_RUN (g4_61_nat) ALL CHECKS PASSED

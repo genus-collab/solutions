@@ -1,0 +1,14 @@
+====================================================================================================
+bv_run S5_g2_61_canon_none_k4   [2026-11-14T10:20:52]
+system S5: S1 with the residue of B multiplied by 2^20 (v'(0) = 32);  normalisation canon;  control none
+   rows: 95 of 100 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^3
+PASS    rows symplectic mod (zhat^4, u^4)
+   graph sum: 7 inner graphs, wall 1 s, CPU 1 s
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^3] = ['[860848058605631788 mod p]', '[1561824329008548238 mod p]', '[2085317119035944446 mod p]', '[1668371850352539149 mod p]']
+   vertex graph in T'' = c0 T (c0 = 1024): (1/1200) T''^-2 + (0) T''^-1  -> c_2 (T'')^-2 + 0
+   [control] in the quintic t_c: ([860848058605631788 mod p]) t_c^-2 + (0) t_c^-1
+   [control] in the model v(u): (1/1228800) v^-2 + ([555907423007138579 mod p]) v^-1
+   total, in T'': (1/1200) T''^-2 + (0) T''^-1
+   compared with R0 (same g, prime, window): 6 of 7 outer graphs in range differ (u^0..u^3): [0, 1, 2, 3, 4, 6]
+BV_RUN S5_g2_61_canon_none_k4: checks passed; edge graphs all regular; vertex law holds

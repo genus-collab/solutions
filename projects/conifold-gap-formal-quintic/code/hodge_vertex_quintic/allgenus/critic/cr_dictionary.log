@@ -1,0 +1,77 @@
+cr_dictionary.py KMAX=20 WMAX=60 (exact over Q, v symbolic)
+== Test A: TR monodromy constant term mu_0 versus the vanishing covector PiC
+ b=0: k=1: mu0=1 v^1 PiC=-1 ratio=-1; k=6: mu0=1/480 v^5 PiC=-1/480 ratio=-1; k=11: mu0=1/11612160 v^9 PiC=-1/11612160 ratio=-1; k=16: mu0=1/2391175987200 v^13 PiC=-1/2391175987200 ratio=-1
+ b=1: k=0: mu0=1 v^0 PiC=1 ratio=1; k=5: mu0=1/96 v^4 PiC=1/96 ratio=1; k=10: mu0=1/1290240 v^8 PiC=1/1290240 ratio=1; k=15: mu0=1/183936614400 v^12 PiC=1/183936614400 ratio=1; k=20: mu0=1/128549621071872000 v^16 PiC=1/128549621071872000 ratio=1
+ b=2: k=4: mu0=-1/24 v^4 PiC=1/24 ratio=-1; k=9: mu0=-1/161280 v^8 PiC=1/161280 ratio=-1; k=14: mu0=-1/15328051200 v^12 PiC=1/15328051200 ratio=-1; k=19: mu0=-1/8034351316992000 v^16 PiC=1/8034351316992000 ratio=-1
+ b=3: k=3: mu0=1/2 v^3 PiC=-1/6 ratio=-3; k=8: mu0=1/6720 v^7 PiC=-1/20160 ratio=-3; k=13: mu0=1/425779200 v^11 PiC=-1/1277337600 ratio=-3; k=18: mu0=1/167382319104000 v^15 PiC=-1/502146957312000 ratio=-3
+ b=4: k=2: mu0=1 v^2 PiC=-1/2 ratio=-2; k=7: mu0=1/1440 v^6 PiC=-1/2880 ratio=-2; k=12: mu0=1/58060800 v^10 PiC=-1/116121600 ratio=-2; k=17: mu0=1/16738231910400 v^14 PiC=-1/33476463820800 ratio=-2
+ eps = 1 ; c_b eps^k0 = {0: Fraction(-1, 1), 1: Fraction(1, 1), 2: Fraction(-1, 1), 3: Fraction(-3, 1), 4: Fraction(-2, 1)}
+ non-zero comparisons: 21 ; zero-pattern slots: 84
+== Test B: log-free combinations (= K_0) have legs in L = Q[v][p] + Q(v)[x]
+ w= 0: |S|= 1 rank(log map)= 1 dim K_0= 0 (expected  0), in L: 0/0, rank mod x = 0 = dim L_w/Q[x] 0
+ w= 1: |S|= 1 rank(log map)= 0 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 2: |S|= 1 rank(log map)= 0 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 3: |S|= 1 rank(log map)= 0 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 4: |S|= 2 rank(log map)= 1 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 5: |S|= 2 rank(log map)= 1 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 6: |S|= 2 rank(log map)= 0 dim K_0= 2 (expected  2), in L: 2/2, rank mod x = 2 = dim L_w/Q[x] 2
+ w= 7: |S|= 2 rank(log map)= 0 dim K_0= 2 (expected  2), in L: 2/2, rank mod x = 2 = dim L_w/Q[x] 2
+ w= 8: |S|= 3 rank(log map)= 1 dim K_0= 2 (expected  2), in L: 2/2, rank mod x = 2 = dim L_w/Q[x] 2
+ w= 9: |S|= 3 rank(log map)= 1 dim K_0= 2 (expected  2), in L: 2/2, rank mod x = 2 = dim L_w/Q[x] 2
+ w=10: |S|= 3 rank(log map)= 1 dim K_0= 2 (expected  2), in L: 2/2, rank mod x = 2 = dim L_w/Q[x] 2
+ w=11: |S|= 3 rank(log map)= 0 dim K_0= 3 (expected  3), in L: 3/3, rank mod x = 3 = dim L_w/Q[x] 3
+ w=12: |S|= 4 rank(log map)= 1 dim K_0= 3 (expected  3), in L: 3/3, rank mod x = 3 = dim L_w/Q[x] 3
+ w=13: |S|= 4 rank(log map)= 1 dim K_0= 3 (expected  3), in L: 3/3, rank mod x = 3 = dim L_w/Q[x] 3
+ w=14: |S|= 4 rank(log map)= 1 dim K_0= 3 (expected  3), in L: 3/3, rank mod x = 3 = dim L_w/Q[x] 3
+ w=15: |S|= 4 rank(log map)= 1 dim K_0= 3 (expected  3), in L: 3/3, rank mod x = 3 = dim L_w/Q[x] 3
+ w=16: |S|= 5 rank(log map)= 1 dim K_0= 4 (expected  4), in L: 4/4, rank mod x = 4 = dim L_w/Q[x] 4
+ w=17: |S|= 5 rank(log map)= 1 dim K_0= 4 (expected  4), in L: 4/4, rank mod x = 4 = dim L_w/Q[x] 4
+ w=18: |S|= 5 rank(log map)= 1 dim K_0= 4 (expected  4), in L: 4/4, rank mod x = 4 = dim L_w/Q[x] 4
+ w=19: |S|= 5 rank(log map)= 1 dim K_0= 4 (expected  4), in L: 4/4, rank mod x = 4 = dim L_w/Q[x] 4
+ w=20: |S|= 6 rank(log map)= 2 dim K_0= 4 (expected  4), in L: 4/4, rank mod x = 4 = dim L_w/Q[x] 4
+ w=21: |S|= 6 rank(log map)= 1 dim K_0= 5 (expected  5), in L: 5/5, rank mod x = 5 = dim L_w/Q[x] 5
+ w=22: |S|= 6 rank(log map)= 1 dim K_0= 5 (expected  5), in L: 5/5, rank mod x = 5 = dim L_w/Q[x] 5
+ w=23: |S|= 6 rank(log map)= 1 dim K_0= 5 (expected  5), in L: 5/5, rank mod x = 5 = dim L_w/Q[x] 5
+ w=24: |S|= 7 rank(log map)= 2 dim K_0= 5 (expected  5), in L: 5/5, rank mod x = 5 = dim L_w/Q[x] 5
+ w=25: |S|= 7 rank(log map)= 2 dim K_0= 5 (expected  5), in L: 5/5, rank mod x = 5 = dim L_w/Q[x] 5
+ w=26: |S|= 7 rank(log map)= 1 dim K_0= 6 (expected  6), in L: 6/6, rank mod x = 6 = dim L_w/Q[x] 6
+ w=27: |S|= 7 rank(log map)= 1 dim K_0= 6 (expected  6), in L: 6/6, rank mod x = 6 = dim L_w/Q[x] 6
+ w=28: |S|= 8 rank(log map)= 2 dim K_0= 6 (expected  6), in L: 6/6, rank mod x = 6 = dim L_w/Q[x] 6
+ w=29: |S|= 8 rank(log map)= 2 dim K_0= 6 (expected  6), in L: 6/6, rank mod x = 6 = dim L_w/Q[x] 6
+ w=30: |S|= 8 rank(log map)= 2 dim K_0= 6 (expected  6), in L: 6/6, rank mod x = 6 = dim L_w/Q[x] 6
+ w=31: |S|= 8 rank(log map)= 1 dim K_0= 7 (expected  7), in L: 7/7, rank mod x = 7 = dim L_w/Q[x] 7
+ w=32: |S|= 9 rank(log map)= 2 dim K_0= 7 (expected  7), in L: 7/7, rank mod x = 7 = dim L_w/Q[x] 7
+ w=33: |S|= 9 rank(log map)= 2 dim K_0= 7 (expected  7), in L: 7/7, rank mod x = 7 = dim L_w/Q[x] 7
+ w=34: |S|= 9 rank(log map)= 2 dim K_0= 7 (expected  7), in L: 7/7, rank mod x = 7 = dim L_w/Q[x] 7
+ w=35: |S|= 9 rank(log map)= 2 dim K_0= 7 (expected  7), in L: 7/7, rank mod x = 7 = dim L_w/Q[x] 7
+ w=36: |S|=10 rank(log map)= 2 dim K_0= 8 (expected  8), in L: 8/8, rank mod x = 8 = dim L_w/Q[x] 8
+ w=37: |S|=10 rank(log map)= 2 dim K_0= 8 (expected  8), in L: 8/8, rank mod x = 8 = dim L_w/Q[x] 8
+ w=38: |S|=10 rank(log map)= 2 dim K_0= 8 (expected  8), in L: 8/8, rank mod x = 8 = dim L_w/Q[x] 8
+ w=39: |S|=10 rank(log map)= 2 dim K_0= 8 (expected  8), in L: 8/8, rank mod x = 8 = dim L_w/Q[x] 8
+ w=40: |S|=11 rank(log map)= 3 dim K_0= 8 (expected  8), in L: 8/8, rank mod x = 8 = dim L_w/Q[x] 8
+ w=41: |S|=11 rank(log map)= 2 dim K_0= 9 (expected  9), in L: 9/9, rank mod x = 9 = dim L_w/Q[x] 9
+ w=42: |S|=11 rank(log map)= 2 dim K_0= 9 (expected  9), in L: 9/9, rank mod x = 9 = dim L_w/Q[x] 9
+ w=43: |S|=11 rank(log map)= 2 dim K_0= 9 (expected  9), in L: 9/9, rank mod x = 9 = dim L_w/Q[x] 9
+ w=44: |S|=12 rank(log map)= 3 dim K_0= 9 (expected  9), in L: 9/9, rank mod x = 9 = dim L_w/Q[x] 9
+ w=45: |S|=12 rank(log map)= 3 dim K_0= 9 (expected  9), in L: 9/9, rank mod x = 9 = dim L_w/Q[x] 9
+ w=46: |S|=12 rank(log map)= 2 dim K_0=10 (expected 10), in L: 10/10, rank mod x = 10 = dim L_w/Q[x] 10
+ w=47: |S|=12 rank(log map)= 2 dim K_0=10 (expected 10), in L: 10/10, rank mod x = 10 = dim L_w/Q[x] 10
+ w=48: |S|=13 rank(log map)= 3 dim K_0=10 (expected 10), in L: 10/10, rank mod x = 10 = dim L_w/Q[x] 10
+ w=49: |S|=13 rank(log map)= 3 dim K_0=10 (expected 10), in L: 10/10, rank mod x = 10 = dim L_w/Q[x] 10
+ w=50: |S|=13 rank(log map)= 3 dim K_0=10 (expected 10), in L: 10/10, rank mod x = 10 = dim L_w/Q[x] 10
+ w=51: |S|=13 rank(log map)= 2 dim K_0=11 (expected 11), in L: 11/11, rank mod x = 11 = dim L_w/Q[x] 11
+ w=52: |S|=14 rank(log map)= 3 dim K_0=11 (expected 11), in L: 11/11, rank mod x = 11 = dim L_w/Q[x] 11
+ w=53: |S|=14 rank(log map)= 3 dim K_0=11 (expected 11), in L: 11/11, rank mod x = 11 = dim L_w/Q[x] 11
+ w=54: |S|=14 rank(log map)= 3 dim K_0=11 (expected 11), in L: 11/11, rank mod x = 11 = dim L_w/Q[x] 11
+ w=55: |S|=14 rank(log map)= 3 dim K_0=11 (expected 11), in L: 11/11, rank mod x = 11 = dim L_w/Q[x] 11
+ w=56: |S|=15 rank(log map)= 3 dim K_0=12 (expected 12), in L: 12/12, rank mod x = 12 = dim L_w/Q[x] 12
+ w=57: |S|=15 rank(log map)= 3 dim K_0=12 (expected 12), in L: 12/12, rank mod x = 12 = dim L_w/Q[x] 12
+ w=58: |S|=15 rank(log map)= 3 dim K_0=12 (expected 12), in L: 12/12, rank mod x = 12 = dim L_w/Q[x] 12
+ w=59: |S|=15 rank(log map)= 3 dim K_0=12 (expected 12), in L: 12/12, rank mod x = 12 = dim L_w/Q[x] 12
+ w=60: |S|=16 rank(log map)= 4 dim K_0=12 (expected 12), in L: 12/12, rank mod x = 12 = dim L_w/Q[x] 12
+ total log-free basis vectors tested: 390 ; in L: 390
+== Control: a combination with a NON-zero log part fails, and z^-5-type legs fail the L test
+ p^-5 v^2 in L: False (expected False)
+ v/p in L: True (expected True: v/p = x - p^4/4)
+ tau_5(H): PiC = (Fraction(1, 96), 4) ; TR log coefficient f(x) = [((0, 4), Fraction(1, 96)), ((5, 0), Fraction(-1, 120))]
+RESULT: ALL CHECKS PASSED

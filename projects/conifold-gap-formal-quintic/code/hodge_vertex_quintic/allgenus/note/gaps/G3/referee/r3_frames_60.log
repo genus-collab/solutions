@@ -1,0 +1,12 @@
+r3_frames.py  KMAX = 60  (exact over Q; Y^C from the residue definition at v = 1 and v = 2)
+[Y] model system z dY_b/dv = bmod_b Y_(b+1): mismatches 0; Y^C(0) = -e_1: mismatches 0; closed form of lem:gau-vanshape: mismatches 0  (n < 80, v = 1, 2)
+[F] 244 frames (k <= 60, a != 1) by Gaussian elimination: singular systems 0; Pi_i(frame) != 0 for some i <= k+12: 0
+[T] trivial frames found: [(0, 0), (0, 2), (0, 3), (0, 4), (1, 2), (1, 3), (1, 4), (2, 2), (2, 3), (3, 2)]
+[T] = {(k,a) : k < nu_a + 1} (10 elements): True;  missing from the source list of eight: [(2, 2), (3, 2)]
+[J] top correction f_(k - nu_a - 1) = eps_a v^(nu_a+1)/(nu_a+1)!: failures 0
+[W] exponent (4(k-j)+nu_a+1)/5 integral, >= 1, and f_j(2) = 2^e f_j(1): failures 0
+[X] outline examples frame(1,0), (2,4), (3,3), (4,2), (6,0) at v = 1: mismatches none
+[C1] control, frames from Y^C with z^-n (n >= 5) dropped: 214 of 224 frames (5 <= k <= 60) NOT annihilated (expected > 0)
+[C2] control, wrong exponent (4(k-j)+nu_a)/5: refuted on 1488 coefficients (expected > 0)
+[C3] control, rule 'trivial iff k <= nu_a + 1' (14 elements) agrees with the computation: False (expected False)
+RESULT: ALL CHECKS PASSED

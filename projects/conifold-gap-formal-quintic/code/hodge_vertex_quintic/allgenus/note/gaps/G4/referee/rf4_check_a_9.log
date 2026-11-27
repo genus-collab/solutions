@@ -1,0 +1,9 @@
+A1 T-system closing relation through t^10: True; F_0 = ['1', '-3/20', '9/800', '11571/80000', '-2415609/6400000']
+A2 M0(-t)^T M0(t) = 1: 0 failures; Rhat(-t)^T eta^-1 Rhat(t) = 1: 0 failures (orders 0..9)
+   control (eta^-1 -> 1/5): 8 failures at order 0 (must be > 0)
+A3 kappa=1: X = M0(t)^T, t = -1/(kappa lam): 0 mismatches of 250; controls: no transpose 160, sign-flipped t 125 | A4 (2-32): 0 mismatches
+A3 kappa=4: X = M0(t)^T, t = -1/(kappa lam): 0 mismatches of 250; controls: no transpose 160, sign-flipped t 125 | A4 (2-32): 0 mismatches
+A3 kappa=-1: X = M0(t)^T, t = -1/(kappa lam): 0 mismatches of 250; controls: no transpose 160, sign-flipped t 125 | A4 (2-32): 0 mismatches
+A3 kappa=1/2: X = M0(t)^T, t = -1/(kappa lam): 0 mismatches of 250; controls: no transpose 160, sign-flipped t 125 | A4 (2-32): 0 mismatches
+A5 IBP form (1) of GAPS_G4_2 (kappa = 1): 0 mismatches of 250
+ALL CHECKS PASSED

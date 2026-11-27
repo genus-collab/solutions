@@ -1,0 +1,79 @@
+% Section 3, part 2 of 8: the quintic system and the pulled-back model; Theorem U (notation, statement).
+
+%-------------------------------------------------------------------------------
+\subsection{The quintic system and the pulled-back model}
+\label{sec:gau-systems}
+
+\begin{defn}[Cyclic systems with one simple pole; regular gauges]
+\label{def:gau-onepole}
+Let $\Bbbk$ be a field of characteristic $0$. A \emph{cyclic system with one simple pole} over $\Bbbk\fps u$ is a system $z\de_uY=AY$ with $A=\sum_{a\in\bbZ/5}b_aE_{a,a+1}$ whose coefficients have the \emph{one-pole shape}: $b_a\in\Bbbk\fps u^\times$ for $a\neq1$ and $ub_1\in\Bbbk\fps u^\times$. Its \emph{residue} is $r:=(ub_1)(0)\in\Bbbk^\times$ and its \emph{product} is $\Bprod:=\prod_ab_a\in\Bbbk\lser u$. It is \emph{self-dual} if $b_0=b_2$ and $b_3=b_4$, i.e.\ $\eta A=A^T\eta$ for $\eta=(5\,\delta_{a+b\equiv3})_{a,b}$ (the entries $(c,d)$ are $5b_{d-1}\delta_{c+d\equiv4}$ and $5b_{c-1}\delta_{c+d\equiv4}$). For a second such system $\tilde A=\sum_a\tilde b_aE_{a,a+1}$, with residue $\tilde r$, the condition (EP) of \emph{equal products} is $\prod_ab_a=\prod_a\tilde b_a$. The \emph{gauge equation} from $\tilde A$ to $A$ is $zP'=AP-P\tilde A$ for $P=\sum_{k\geq0}z^kP_k$, $P_k\in\mathfrak{gl}_5(\Bbbk\fps u)$; then $z\de_u(P\tilde Y)=AP\tilde Y$ whenever $z\de_u\tilde Y=\tilde A\tilde Y$. $\Gau(A,\tilde A)$ denotes the set of all solutions $P\in\mathfrak{gl}_5(\Bbbk\fps u)\fps z$; it is a $\Bbbk\fps z$-module, since $z(P\cn)'=(AP-P\tilde A)\cn$ for $\cn\in\Bbbk\fps z$. A \emph{regular gauge} is an element of $\Gau(A,\tilde A)$ with $P_0$ invertible. $P$ is \emph{graded} if $P_k=\sum_bp_{k,b}E_{b+k,b}$ for every $k$.
+\end{defn}
+
+\begin{prop}[The quintic cyclic system]
+\label{prop:gau-quintic}
+Let $(\alpha,\beta)\in\bbQ^2$ give a conifold frame (\cref{def:set-frames}), $\tc=\varpi_1/\varpi_0$, and
+\[
+\kappa:=\Bigl(\Dq\tc,\ \frac{L^5}{\varpi_0^2(\Dq\tc)^2},\ \Dq\tc,\ \varpi_0,\ \varpi_0\Bigr),\qquad L^5=u^{-1},
+\]
+the vector of \cref{cor:gau-cycsys} for $(y_0,y_1)=(\varpi_0,\varpi_1)$.
+\begin{enumerate}
+\item $\kappa_a=\Cexp_{\alpha,\beta}(C_1\kappa^{\mathrm{LR}}_a)$ for $a\in\bbZ/5$, where $C_1\kappa^{\mathrm{LR}}=(C_1,L^5/(C_0^2C_1^2),C_1,C_0,C_0)$ (\cref{prop:set-cyclicLR}) is represented in $\Nring$ by $(\mathsf W/c_0^2,\ L^5c_0^2/\mathsf W^2,\ \mathsf W/c_0^2,\ c_0,\ c_0)$. Hence the conifold expansion carries the forward relations $(z\Dq+\zeta^iL)X_a=C_1\kappa^{\mathrm{LR}}_aX_{a+1}$ ($a=0,\dots,3$) of elements of $\Nring\lser z\otimes\bbQ(\zeta)$ to the relations $(z\Dq+\zeta^iL)\Cexp(X_a)=\kappa_a\Cexp(X_{a+1})$, $L=s^{-1}$; the closing relation is then given by \cref{cor:gau-cycsys}.
+\item The cyclic system \eqref{eq:gau-system} is $z\de_uY=AY$ with $A=\sum_ab_aE_{a,a+1}$, $b_a:=-\kappa_a/(1-u)$,
+\[
+b=\Bigl(\tc',\ -\frac1{u\varpi_0^2(1-u)^3\tc'^2},\ \tc',\ -\frac{\varpi_0}{1-u},\ -\frac{\varpi_0}{1-u}\Bigr),
+\]
+a self-dual cyclic system with one simple pole over $\bbQ\fps u$, with residue $r=-1$, product $\prod_ab_a=-1/(u(1-u)^5)$, and $b_a(0)=1,1,-1,-1$ for $a=0,2,3,4$.
+\item More generally, for $y_0\in\mathcal S\cap\bbK$ not proportional to $\varpi_1$ and $t=\varpi_1/y_0$, the coefficients $-\kappa_a/(1-u)$ of \cref{cor:gau-cycsys} have the one-pole shape if and only if $y_0(0)\neq0$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) By \cref{lem:gau-confexp}, $\Cexp(c_0)=\varpi_0$, $\Cexp(\mathsf W/c_0^2)=\Dq\tc$ and $\Cexp(L^5)=u^{-1}$, which gives the five entries (for $\kappa_1$, $u^{-1}\varpi_0^2/(\varpi_0^4(\Dq\tc)^2)$). As $\Cexp$ is a ring homomorphism commuting with $\Dq$, with $\Cexp(L)=s^{-1}$, it carries each forward relation to the relation with $\kappa_a$; the closing relation is \cref{cor:gau-cycsys}~(ii) with $w=\zeta^is^{-1}$. (ii) As $\Dq=-(1-u)\,\dd/\dd u$, $z\Dq Y_a=\kappa_aY_{a+1}$ is $z\de_uY_a=b_aY_{a+1}$, and $\Dq\tc=-(1-u)\tc'$, $L^5=u^{-1}$ give $b$. As $\varpi_0(0)=\tc'(0)=1$ (\cref{def:set-frames}), $b_0,b_2,b_3,b_4$ are units with the stated values and $(ub_1)(0)=-1$; self-duality is visible, and $\prod_ab_a=\tc'^2\cdot\bigl(-u^{-1}\varpi_0^{-2}(1-u)^{-3}\tc'^{-2}\bigr)\cdot\varpi_0^2(1-u)^{-2}$. (iii) If $y_0(0)\neq0$, then $t=u/y_0(0)+O(u^2)$, so $t'(0)\neq0$ and the computation of (ii) applies to $(y_0,t)$; if $y_0(0)=0$, $-y_0/(1-u)$ is not a unit.
+\end{proof}
+
+\begin{prop}[Equal products and $v(u)$]
+\label{prop:gau-equalprod}
+Let $v\in u\bbQ\fps u$ with $v'(0)\neq0$. The model system $z\,\dd Y_b/\dd v=b^{\mathrm m}_bY_{b+1}$, $b^{\mathrm m}=(1,-v^{-1},1,-1,-1)$ (\cref{prop:set-modrows}), pulled back along $v=v(u)$ is $z\de_uY=\tilde AY$ with $\tilde A=v'(u)\sum_bb^{\mathrm m}_b(v(u))E_{b,b+1}$, i.e.
+\[
+\tilde b=\bigl(v',\ -v'/v,\ v',\ -v',\ -v'\bigr),\qquad \prod_a\tilde b_a=-v'^5/v .
+\]
+\begin{enumerate}
+\item If $v=u+O(u^2)$, $\tilde A$ is a self-dual cyclic system with one simple pole over $\bbQ\fps u$, with residue $\tilde r=-1$ and $\tilde b_a(0)=1,1,-1,-1$ for $a=0,2,3,4$.
+\item For $v=u+O(u^2)$, the products of $\tilde A$ and of the quintic system of \cref{prop:gau-quintic} are equal if and only if $v'^5/v=1/(u(1-u)^5)$, if and only if $v=u\,\tau(u)^{-5/4}$ (\cref{def:set-tau}).
+\item (Necessity of (EP).) If $A,\tilde A$ are cyclic systems with one simple pole over $\Bbbk\fps u$ and $\Gau(A,\tilde A)\neq0$, then $\prod_ab_a=\prod_a\tilde b_a$.
+\end{enumerate}
+In particular, for $v=v(u)$ and every conifold frame, the quintic system and the pulled-back model are two self-dual cyclic systems with one simple pole satisfying (EP), and $b_a(0)=\tilde b_a(0)$ for $a\neq1$, $r=\tilde r=-1$.
+\end{prop}
+
+\begin{proof}
+The chain rule gives $\tilde A$, and $\prod_a\tilde b_a=v'^5\cdot(-v^{-1})\cdot(-1)^2$. (i) $v'$ is a unit with $v'(0)=1$, and $-uv'/v$ a unit with value $-1$ at $u=0$. (ii) The first equivalence is \cref{prop:gau-quintic}~(ii). Write $v=uw$, $w\in1+u\bbQ\fps u$; elements of $1+u\bbQ\fps u$ have unique $n$-th roots there (binomial series; $c^n\neq1$ for $c\in1+u\bbQ\fps u\smallsetminus\{1\}$). As $v'(0)=1$, $v'^5=w(1-u)^{-5}$ is equivalent to $v'=w^{1/5}(1-u)^{-1}$. In $\bbQ\lser s$, $s^5=u$, with $v^{4/5}:=s^4w^{4/5}$ and $\frac{\dd}{\dd u}v^{4/5}=\frac45s^{-1}w^{-1/5}v'$, this reads $\frac{\dd}{\dd u}v^{4/5}=\frac45s^{-1}(1-u)^{-1}$, which is also the derivative of $s^4/\tau=\sum_{n\geq0}\frac4{5n+4}u^{n+4/5}$ (\cref{def:set-tau}). As $\dd/\dd u$ has kernel $\bbQ$ on $\bbQ\lser s$ and $v^{4/5}-s^4/\tau\in s^4\bbQ\fps u$, the equation is equivalent to $w^{4/5}=\tau^{-1}$, i.e.\ $w=\tau^{-5/4}$. (iii) If $P\neq0$ and $P_n$ is its first non-zero coefficient, the coefficient of $z^n$ of the gauge equation is $AP_n=P_n\tilde A$, so $A^5P_n=P_n\tilde A^5$; as $A^5=(\prod_ab_a)1$ and $\tilde A^5=(\prod_a\tilde b_a)1$, (EP) follows. The last sentence combines (i), (ii) and \cref{prop:gau-quintic}~(ii).
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{Theorem U}
+\label{sec:gau-U}
+
+Throughout this subsection $\Bbbk$ is a field of characteristic $0$, $A=\sum_ab_aE_{a,a+1}$ and $\tilde A=\sum_a\tilde b_aE_{a,a+1}$ are cyclic systems with one simple pole over $\Bbbk\fps u$ satisfying (EP), and a prime is $\dd/\dd u$. The following notation is local to this subsection.
+\begin{itemize}
+\item $\mathfrak{gl}^{(m)}:=\bigoplus_a\Bbbk\lser uE_{a,a+m}$ for $m\in\bbZ/5$; an element of $\mathfrak{gl}^{(m)}$ has \emph{shift} $m$, and $\mathfrak{gl}_5(\Bbbk\lser u)=\bigoplus_m\mathfrak{gl}^{(m)}$.
+\item $\Bprod^{(m)}_a:=\tilde b_a\tilde b_{a+1}\cdots\tilde b_{a+m-1}$ for $0\leq m\leq5$ (so $\Bprod^{(0)}_a=1$ and $\Bprod^{(5)}_a=\Bprod:=\prod_a\tilde b_a$), and $\mathcal Y:=\tilde A^{-1}$.
+\item $\Theta_U:=\diag(d^U_0,\dots,d^U_4)$ with $d^U_0:=1$ and $d^U_{a+1}:=d^U_a\tilde b_a/b_a$; $\operatorname{dlog}\Theta_U:=\Theta_U^{-1}\Theta_U'$; $\mathfrak d:=(\det\Theta_U/\det\Theta_U(0))^{-1/5}$.
+\item If $\Bbbk$ contains $\zeta$, put $\mathrm{gr}:=\diag(0,1,2,3,4)$, $\zeta^{i(\mathrm{gr}+1)}:=\diag(\zeta^{i(a+1)})_a$, and define the \emph{colour rotation} on matrices and on vectors by
+\[
+\operatorname{Rot}_iP(u,z):=\zeta^{i(\mathrm{gr}+1)}P(u,\zeta^{-i}z)\zeta^{-i(\mathrm{gr}+1)},\qquad \operatorname{Rot}_iY(u,z):=\zeta^{i(\mathrm{gr}+1)}Y(u,\zeta^{-i}z).
+\]
+\end{itemize}
+By (EP), $d^U_4\tilde b_4/b_4=\prod_a\tilde b_a/b_a=1=d^U_0$, so the recursion of $d^U$ holds for every $a\in\bbZ/5$. The $d^U_a$ are units of $\Bbbk\fps u$ ($\tilde b_1/b_1=(u\tilde b_1)/(ub_1)$), so $\mathfrak d\in1+u\Bbbk\fps u$ is a binomial series and $\mathfrak d'=-\frac15\tr(\operatorname{dlog}\Theta_U)\,\mathfrak d$; and $(A\Theta_U)_{a,a+1}=b_ad^U_{a+1}=d^U_a\tilde b_a=(\Theta_U\tilde A)_{a,a+1}$, so $A\Theta_U=\Theta_U\tilde A$.
+
+\begin{thm}[Theorem U]
+\label{thm:gau-U}
+Let $A$, $\tilde A$ be cyclic systems with one simple pole over $\Bbbk\fps u$ with equal products.
+\begin{enumerate}
+\item[(a)] (Existence.) There is $P^\natural\in\Gau(A,\tilde A)$ with $P^\natural_0=\mathfrak d\,\Theta_U$, a diagonal matrix with unit entries.
+\item[(b)] (Uniqueness.) For every $P^\natural\in\Gau(A,\tilde A)$ with $P^\natural_0=\mathfrak d\,\Theta_U$, the map $\Bbbk\fps z\to\Gau(A,\tilde A)$, $\cn\mapsto P^\natural\cn(z)$, is bijective. Consequently every solution $P$ of the gauge equation with coefficients in $\mathfrak{gl}_5(\Bbbk\fps u)$ is $P^\natural\cn(z)$ for a unique $\cn\in\Bbbk\fps z$; its $z^0$-term is $P_0=\cn(0)\,\mathfrak d\,\Theta_U$, a diagonal matrix, and $P$ is a regular gauge if and only if $\cn(0)\neq0$. If $P$ is one regular gauge, the regular gauges are exactly the $P\cn(z)$ with $\cn\in\Bbbk\fps z^\times$. For the pair $(\tilde A,\tilde A)$: $\Gau(\tilde A,\tilde A)=\Bbbk\fps z\cdot1$.
+\item[(c)] (Graded gauges.) Graded regular gauges exist; if $P$ is one, the graded regular gauges are exactly the $P\cn(z)$ with $\cn\in\Bbbk\fps{z^5}^\times$.
+\item[(d)] (The field.) If all $b_a$, $\tilde b_a$ lie in $\bbQ\lser u$, then $P^\natural$ can be chosen in $\mathfrak{gl}_5(\bbQ\fps u)\fps z$; for every field $\Bbbk\supseteq\bbQ$ the solutions with coefficients in $\mathfrak{gl}_5(\Bbbk\fps u)$ are then $P^\natural\Bbbk\fps z$, and $P^\natural\cn$ has rational coefficients if and only if $\cn\in\bbQ\fps z$.
+\end{enumerate}
+\end{thm}
+
+\input{sections/s03_gauge_3}

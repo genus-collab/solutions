@@ -1,0 +1,14 @@
+genus 0, <= 5 insertions: 43 singular lists, 0 skipped by the deficit cut; C4-sensitive frames (weight <= 5): [(6, 0), (7, 0), (7, 4)]; singular lists containing one: 0 (0 skipped, 0 testable), first testable: None
+genus 1, <= 5 insertions: 418 singular lists, 0 skipped by the deficit cut; C4-sensitive frames (weight <= 7): [(6, 0), (7, 0), (7, 4), (8, 0), (8, 3), (8, 4)]; singular lists containing one: 0 (0 skipped, 0 testable), first testable: None
+genus 1, <= 6 insertions: 1464 singular lists, 0 skipped by the deficit cut; C4-sensitive frames (weight <= 8): [(6, 0), (7, 0), (7, 4), (8, 0), (8, 3), (8, 4)]; singular lists containing one: 1 (0 skipped, 1 testable), first testable: (((6, 0),), 5, -1)
+genus 2, <= 4 insertions: 485 singular lists, 60 skipped by the deficit cut; C4-sensitive frames (weight <= 8): [(6, 0), (7, 0), (7, 4), (8, 0), (8, 3), (8, 4)]; singular lists containing one: 1 (1 skipped, 0 testable), first testable: None
+genus 2, <= 5 insertions: 1849 singular lists, 469 skipped by the deficit cut; C4-sensitive frames (weight <= 9): [(6, 0), (7, 0), (7, 4), (8, 0), (8, 3), (8, 4)]; singular lists containing one: 10 (10 skipped, 0 testable), first testable: None
+genus 3, <= 3 insertions: 291 singular lists, 164 skipped by the deficit cut; C4-sensitive frames (weight <= 9): [(6, 0), (7, 0), (7, 4), (8, 0), (8, 3), (8, 4)]; singular lists containing one: 7 (7 skipped, 0 testable), first testable: None
+genus 3, <= 4 insertions: 1405 singular lists, 918 skipped by the deficit cut; C4-sensitive frames (weight <= 10): [(6, 0), (7, 0), (7, 4), (8, 0), (8, 3), (8, 4)]; singular lists containing one: 45 (45 skipped, 0 testable), first testable: None
+genus 4, <= 2 insertions: 81 singular lists, 75 skipped by the deficit cut; C4-sensitive frames (weight <= 10): [(6, 0), (7, 0), (7, 4), (8, 0), (8, 3), (8, 4)]; singular lists containing one: 12 (12 skipped, 0 testable), first testable: None
+genus 4, <= 3 insertions: 601 singular lists, 557 skipped by the deficit cut; C4-sensitive frames (weight <= 11): [(6, 0), (7, 0), (7, 4), (8, 0), (8, 3), (8, 4)]; singular lists containing one: 72 (72 skipped, 0 testable), first testable: None
+frame(5,0) = {(5, 0): (Fraction(1, 1), Fraction(0, 1)), (4, 1): (Fraction(1, 1), Fraction(1, 1))}
+frame(6,0) = {(6, 0): (Fraction(1, 1), Fraction(0, 1)), (5, 1): (Fraction(1, 1), Fraction(1, 1)), (0, 1): (Fraction(-1, 120), Fraction(5, 1))}
+frame(5,4) = {(5, 4): (Fraction(1, 1), Fraction(0, 1)), (3, 1): (Fraction(1, 2), Fraction(2, 1))}
+frame(6,4) = {(6, 4): (Fraction(1, 1), Fraction(0, 1)), (4, 1): (Fraction(1, 2), Fraction(2, 1))}
+frame(7,3) = {(7, 3): (Fraction(1, 1), Fraction(0, 1)), (4, 1): (Fraction(1, 6), Fraction(3, 1))}

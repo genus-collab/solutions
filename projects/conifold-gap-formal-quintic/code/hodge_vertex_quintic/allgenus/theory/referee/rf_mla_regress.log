@@ -1,0 +1,17 @@
+==============================================================================================================
+rf_mla regress, p3 = 1208925819614629174706261 (= 1 mod 10) [2026-11-13T19:51:30]
+  LG rows g^0, g^4 (n <= 5) = LG_MODEL.md table: True, True
+  F_2 = <>_2                         = 1/1200       expected 1/1200     ok
+  F_3 = <>_3                         = 1/25200      expected 1/25200    ok
+  <HHH>_0                            = -5           expected -5         ok
+  <H>_1                              = -1/12        expected -1/12      ok
+  <tau_1(1)>_1                       = 5/24         expected 5/24       ok
+  <HH>_1                             = 1/12         expected 1/12       ok
+  <H>_2 = F_2'                       = -1/600       expected -1/600     ok
+  <frame(1,0)>_1                     = 1/8          expected 1/8        ok
+  <frame(3,3)>_2                     = 3/3200       expected 3/3200     ok
+  <frame(4,2)>_2                     = -41/9600     expected -41/9600   ok
+  <frame(1,0)>_2                     = 0            expected 0          ok
+  <tau_1(H) tau_0(1)>_2 = <H>_2      = -1/600       expected -1/600     ok
+  frames at general v: f(1,0) = {(1, 0): (Fraction(1, 1), Fraction(0, 1)), (0, 1): (Fraction(1, 1), Fraction(1, 1))}; f(2,0) = {(2, 0): (Fraction(1, 1), Fraction(0, 1)), (1, 1): (Fraction(1, 1), Fraction(1, 1))}; f(4,2) = {(4, 2): (Fraction(1, 1), Fraction(0, 1)), (0, 1): (Fraction(-1, 24), Fraction(4, 1))}; f(5,3) = {(5, 3): (Fraction(1, 1), Fraction(0, 1)), (2, 1): (Fraction(1, 6), Fraction(3, 1))}
+RF_MLA REGRESS: ALL PASS

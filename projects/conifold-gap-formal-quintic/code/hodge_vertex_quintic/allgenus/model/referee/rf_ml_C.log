@@ -1,0 +1,8 @@
+(3,3) kappa    :   246 singular generator correlators with >= 1 kappa,     0 NON-ZERO;  ML1 <H^3>_3: ok -1/210
+(3,3) wrongsign:   246 singular generator correlators with >= 1 kappa,   159 NON-ZERO   e.g. H H k(H0,1) e=-6; H H k(H4,2) e=-5
+(3,3) bare     :   246 singular generator correlators with >= 1 kappa,   150 NON-ZERO   e.g. H H k(H0,1) e=-6; H H k(H4,2) e=-5
+TOTAL kappa    : 246 tested, 0 non-zero
+TOTAL wrongsign: 246 tested, 159 non-zero
+TOTAL bare     : 246 tested, 150 non-zero
+rf_ml done (1 s)
+exit 0

@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------------
+genus3_cubicb: circulant class, the locus c_1(0) = 0, m_1 = 0, p = 2^89-1
+PASS on {c_1(0) = 0, m_1 = 0, L2}: the cubics 11, 12, 18, 19, 20, 32 and the quadrics 6, 17 vanish identically (all 15 coordinates random)
+PASS on the locus c_4 and c_10 do not depend on the orders >= 4
+PASS on the locus c_9, q_3, q_8 depend on the orders <= 4 only
+   tau-degrees: deg G = 2, deg H = 3
+PASS tau-degrees resolved by the node counts (14, 30)
+   U(b) = Res_tau(G, H): interpolated on 120 nodes in 0 s: degree 51
+PASS b-degree of U resolved (degree < nodes - 5)
+   U has 6 distinct roots in F_p
+   squarefree part of U has degree 18
+   root b = 1*zeta^2: a4 !=0, G(b,.) deg 2, H(b,.) zero, gcd degree None
+   root b = ~-8296808261851/6964287916016: a4 =0, G(b,.) zero, H(b,.) zero, gcd degree None
+   root b = ~7593971576379/9616655168039: a4 !=0, G(b,.) deg 1, H(b,.) deg 2, gcd degree 0
+   root b = ~8246076060363/3628243043717: a4 !=0, G(b,.) deg 2, H(b,.) deg 3, gcd degree 1
+      tau = [149959372765714457286185668 mod p]: full point reconstructed (2 free high directions); non-zero residuals: []
+   root b = ~8296808261851/6964287916016: a4 =0, G(b,.) zero, H(b,.) zero, gcd degree None
+   root b = -1*zeta^2: a4 !=0, G(b,.) zero, H(b,.) deg 3, gcd degree None
+PASS genuine solutions with c_1(0) = 0, c_1 != 0 found over F_p (all 4 linear rows, 5 quadrics, 9 cubics vanish): 1
+   SOLUTION 0 (normalised c1_1 = 1): ['c1_0: 0', 'c1_1: 1', 'c1_2: ~8246076060363/3628243043717', 'c2_1: [149959372765714457286185668 mod p]', 'c2_2: [204294535477108761122884845 mod p]', 'c3_0: [316588390471627836453726793 mod p]', 'c3_1: [228008031371929073797920895 mod p]', 'c3_2: [497672901557246725135232625 mod p]', 'c4_1: ~-7868490645339/6175211431154', 'c4_2: [158729624653492256154264327 mod p]', 'c5_0: [314155239918282050917452217 mod p]', 'c5_1: [105794624567087018595587017 mod p]', 'c5_2: [168786260069672632723729678 mod p]', 'c6_1: 0', 'c6_2: 0']
+GENUS3_CUBICB done; failures: []

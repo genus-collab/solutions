@@ -1,0 +1,55 @@
+% Section 6, part 4.
+\begin{lem}[Functions of $x$ pair to zero]\genusstatus{AI-proposed, unchecked}
+\label{lem:mod-xfun}
+Let $2h-2+n>0$, $n\geq 1$, let $p_2,\dots,p_n$ be points of $\bbP^1$ that are not branch points, and let $f$ be holomorphic near the five critical values $x(\varsigma_b)$ (for instance $f\in\bbQ(v)[X]$ with coefficients regular at the fixed $v\neq0$). Then for each $b$,
+\[
+\Res_{p=\varsigma_b}f(x(p))\,\omega_{h,n}(p,p_2,\dots,p_n)=0 .
+\]
+Consequently every pairing of $\omega_{h,n}$ in which one slot is paired with $f(x)$ by the residue pairing, the other slots being paired by residues at the branch points, on circles or along rays, vanishes; legs $\phi,\phi'\in\cL$ with $\phi-\phi'\in\bbQ(v)[x]$ have the same residue pairings; and (with $f=1$) $\omega_{h,n}$ has zero residues at the branch points in each variable.
+\end{lem}
+
+\begin{proof}
+\emph{The trace identity.} For $X\in\bbP^1$ let $p^1(X),\dots,p^5(X)$ be the roots of $T^5-4XT+4v$, the points of $x^{-1}(X)$. We claim $\mathrm{Tr}\,\omega(X):=\sum_{i=1}^5\omega_{h,n}(p^i(X),p_2,\dots,p_n)=0$. For $q'\notin x^{-1}(X)$, $\prod_i(q'-p^i(X))=4q'\,(x(q')-X)$, so $\sum_i\omega_{0,2}(p^i(X),q')=\dd X\,\dd x(q')/(X-x(q'))^2$, and hence $\sum_i\int_{\iota_bq}^q\omega_{0,2}(p^i(X),\cdot)=\dd X\big[(X-x(q))^{-1}-(X-x(\iota_bq))^{-1}\big]=0$. Take disjoint $\iota_b$-stable small discs $U_b\ni\varsigma_b$ avoiding $p_2,\dots,p_n$, $U:=\bigcup_bU_b$. For $p_1\notin U$, \eqref{eq:mod-kernel} writes $\omega_{h,n}(p_1,J)$ as $\sum_b(2\pi\ri)^{-1}\oint_{\partial U_b}K_b(p_1,q)$ times the bracket, which does not depend on $p_1$ (the path in $K_b$ stays in $U_b$). For $X\notin x(\overline U)$, summing over $i$ under the integrals gives $\mathrm{Tr}\,\omega(X)=0$, hence $\mathrm{Tr}\,\omega=0$ because a meromorphic form on $\bbP^1$ that vanishes on a non-empty open set vanishes (cf.\ \cite[App.~A, (A-1), (A-5)]{Eynard:2007kz}, not used).
+
+\emph{The residues.} Put $X_b:=x(\varsigma_b)$. The fibre $x^{-1}(X_b)$ is $\varsigma_b$ (local degree $2$) and three points $q_1,q_2,q_3$ of local degree $1$, none a branch point (the critical values are distinct) and none $0$ or $\infty$. So $\eta:=f(x)\,\omega_{h,n}(\cdot,J)$ is holomorphic at the $q_k$ (\cref{conv:mod-kernel}). The preimage of a small circle around $X_b$ is a union of loops around the points of the fibre, so $\Res_{X_b}\mathrm{Tr}(\eta)=\sum_{q\in x^{-1}(X_b)}\Res_q\eta$, and $\mathrm{Tr}(\eta)=f(X)\,\mathrm{Tr}\,\omega=0$ gives $\Res_{\varsigma_b}\eta=0$.
+
+\emph{Consequences.} By symmetry the slot carrying $f(x)$ may be the first; the contours of the other slots can be taken disjoint from small discs around the branch points, and there are no diagonal poles, so the residue in the first slot may be taken first, and it vanishes. (Cf.\ \cite[Thm.~4.4 (4-23), Cor.~4.1 (4-26)--(4-29), App.~A (A-25)]{Eynard:2007kz}, not used here.)
+\end{proof}
+
+\subsection{The leg dictionary and the residue identity}
+\label{sec:mod-legs}
+
+\begin{defn}[The legs]
+\label{def:mod-legs}
+Let $\phi^b_0:=p,\ \log p,\ v/p,\ p^3,\ p^2$ for $b=0,\dots,4$. For $F$ in the span of the $p^j(\log p)^l$ ($j\in\bbZ$, $l\geq 0$) with coefficients in $\bbQ[v]$, let $I(F)$ be the termwise antiderivative of $-F\,\dd x=-F(p^3-vp^{-2})\,\dd p$ without a term $p^0(\log p)^0$ (that of $p^j(\log p)^l\dd p$ is $p^{j+1}$ times a polynomial in $\log p$ if $j\neq -1$, and $(\log p)^{l+1}/(l+1)$ if $j=-1$). Put $\phi^b_{k+1}:=I(\phi^b_k)$. Then $D_x\phi^b_{k+1}=-\phi^b_k$, and $\phi^b_k$ is homogeneous of weight $\wt(\phi^b_k)=w_b+4k$, where $w_b:=\nu_b+1$, that is $(w_0,\dots,w_4)=(1,0,4,3,2)$.
+\end{defn}
+
+\begin{prop}[The leg dictionary]\genusstatus{AI-proposed, unchecked}
+\label{prop:mod-LD}
+Let $\varrho=(\varrho_0,\dots,\varrho_4):=(-1,1,-1,-3,-2)$. For all $a,b\in\bbZ/5$ and $k,d\geq 0$,
+\begin{equation}
+\label{eq:mod-LD}
+\langle\phi^b_k,\dd\xi_{a,d}\rangle=\sum_c\Res_{c}\phi^b_k\,\dd\xi_{a,d}=-\varrho_b\,\delta_{ab}\,\delta_{dk},
+\end{equation}
+$c$ running over the branch points and $\log p$ being any branch near each of them. For the legs $\phi^b_k$ and their $\bbQ[v]$-linear combinations, which need not lie in the class of \cref{def:mod-ancvec}, we define $q_\phi(z):=\sum_{a,d}\langle\phi,\dd\xi_{a,d}\rangle H^az^d$ by the pairing \eqref{eq:mod-LD}; where both definitions apply they agree (for $-\log p$ by the last display of \cref{def:mod-pair}). Hence $q_{\phi^b_k}=-\varrho_b\,z^kH^b$, and, in this sense, the TR leg of $v^mz^kH^b$ (the insertion $v^m\psi^kH^b$, \cref{conv:tra-forms}) is $-\varrho_b^{-1}v^m\phi^b_k$. In particular the unit $H^0$ has the TR leg $y=p$; $\Phi_{y\dd x}=p^5/5-v\log p=-\phi^0_1$ has $q_{\Phi_{y\dd x}}=-z\,H^0$; $-\log p$ has $q_{-\log p}=H$; the Euler-dilaton vector $\se=z\,H^0+vH$ has the TR leg $-p^5/5$; and $q_{f(x)}=0$ for $f\in\bbQ(v)[x]$. \Cref{thm:mod-tr} is applied only to legs in $\cL$ and to $-\log p$ (proof of \cref{thm:mod-MLK}).
+\end{prop}
+
+\begin{proof}
+\emph{Step 1 (branches and functions of $x$).} Each leg is analytic near every $c\neq 0$. A change of branch $\log p\mapsto\log p+2\pi\ri N$ changes $\phi^b_k$ by a polynomial $\delta^b_k$ in $x$ with constant coefficients, by induction: $\delta^b_0\in\{0,2\pi\ri N\}$, and $\dd\phi^b_{k+1}=-\phi^b_k\,\dd x$ survives the substitution, so $\delta^b_{k+1}+\int_0^x\delta^b_k$ is constant. For $f$ holomorphic near $c$, repeated integration by parts gives $\Res_cf(x)\,\dd\xi_{a,d}=\pm\Res_cf^{(d+1)}(x)\,\xi_a\dd x=0$, as $\xi_a\dd x=\varepsilon'_av^{\alpha_a}p^{m_a-2}\dd p$ is holomorphic at $c$. So the pairings do not depend on the branches, and $q_{f(x)}=0$.
+\emph{Step 2 (lowering).} For $d\geq 1$, $\xi_{a,d}\dd\phi=(D_x\phi)\,\dd\xi_{a,d-1}$, so integration by parts gives $\langle\phi,\dd\xi_{a,d}\rangle=-\langle D_x\phi,\dd\xi_{a,d-1}\rangle$, that is $\langle\phi^b_{k+1},\dd\xi_{a,d}\rangle=\langle\phi^b_k,\dd\xi_{a,d-1}\rangle$.
+\emph{Step 3 ($d=0$, $k\geq 1$).} $\langle\phi^b_k,\dd\xi_a\rangle=\sum_c\Res_c\phi^b_{k-1}\,\xi_a\dd x=0$, as $\xi_a\dd x$ is holomorphic at $c$.
+\emph{Step 4 ($k=0$, $d\geq 1$).} $\langle\phi^b_0,\dd\xi_{a,d}\rangle=-\sum_c\Res_cD_x^d(\xi_a)\,\dd\phi^b_0$. This rational form is holomorphic at $p=0$ ($D_x$ maps functions holomorphic at $0$ to $O(p^2)$, and $\dd\phi^b_0=O(p^{-2})\dd p$) and $O(p^{1-4d})\dd p$ at $\infty$; by the residue theorem the sum vanishes.
+\emph{Step 5 ($k=d=0$).} Write $\dd\phi^b_0=\gamma_bp^{n_b}\dd p$ with $(\gamma_b,n_b)=(1,0),(1,-1),(-v,-2),(3,2),(2,1)$ (local constants). Since $\Res_cp^N\dd p/(p^5-v)=c^{N-4}/5$ and $\sum_cc^N=5v^{N/5}$ if $5\mid N$ and $0$ otherwise, $\langle\phi^b_0,\dd\xi_a\rangle=-\varepsilon'_a\gamma_bv^{\alpha_a}\,\frac15\sum_cc^{m_a+n_b-4}$, non-zero only if $m_a+n_b\equiv 4\pmod 5$, that is $a=b$; for $a=b=0,\dots,4$ the values are $1,-1,1,3,2=-\varrho_b$.
+\emph{Step 6.} If $k=d$, Steps 2 and 5 give $-\varrho_b\delta_{ab}$; if $k>d$, Steps 2 and 3 give $0$; if $k<d$, Steps 2 and 4 give $0$. This is \eqref{eq:mod-LD}. The consequences: $\phi^0_0=p$, $-\varrho_0=1$; $\phi^0_1=-(p^5/5-v\log p)$, so $q_{\Phi_{y\dd x}}=\varrho_0z\,H^0=-zH^0$; $q_{\log p}=-\varrho_1H=-H$; and the TR leg of $\se$ is $\phi^0_1-v\phi^1_0=-p^5/5$.
+\end{proof}
+
+\begin{cor}[Free energies of the model and of the curve]\genusstatus{AI-proposed, unchecked}
+\label{cor:mod-trF}
+For $h\geq 2$ let $\Fm_h(v)=\langle\ \rangle_h(v)=\int_{\overline{\mathcal M}_h}\Omega^{\mathrm{mod}}_{v;h,0}$ be the genus-$h$ free energy of the model CohFT (\cref{def:set-modcohft}), the value at the base point $-z1$ of the dilaton-shifted potential $\overline F_h$ (\cref{def:set-modcohft,def:set-graphsum}). Then $\Fm_h=(-5)^{1-h}\FTR_h$.
+\end{cor}
+
+\begin{proof}
+By \cref{conv:mod-kernel}, $(2-2h)\FTR_h=\langle\Phi_{y\dd x}\rangle^{\mathrm{TR}}_h$, for any branch of $\log p$ (\cref{lem:mod-xfun}); only this definition is used (cf.\ \cite[Def.~4.3 (4-10), Thm.~4.7 (4-30)]{Eynard:2007kz}). By \cref{thm:mod-tr} and \cref{prop:mod-LD}, $\langle\Phi_{y\dd x}\rangle^{\mathrm{TR}}_h=-(-5)^{h-1}\langle\psi H^0\rangle_h$, and the dilaton equation for the flat unit $H^0$ (\cref{lem:set-dilaton}~(i), (ii)) gives $\langle\psi H^0\rangle_h=(2h-2)\Fm_h$. Comparing, $(2-2h)\FTR_h=(2-2h)(-5)^{h-1}\Fm_h$.
+\end{proof}
+
+\input{sections/s06_model_5}

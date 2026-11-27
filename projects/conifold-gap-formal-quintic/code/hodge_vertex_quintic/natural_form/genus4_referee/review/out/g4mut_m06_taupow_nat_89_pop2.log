@@ -1,0 +1,15 @@
+====================================================================================================
+rv_g4mut g4mut_m06_taupow_nat_89_pop2: E_M(a,b) = tau^(a+b) Eh_0 instead of tau^(a+b+1)
+   setup 5 s; 379 inner graphs; min val E_out = 1; frozen_ok = True; 5 processes
+      76/379 inner graphs (38 s)
+      152/379 inner graphs (65 s)
+      228/379 inner graphs (81 s)
+      304/379 inner graphs (114 s)
+   run: wall 138 s, CPU 649 s, covered 379/379, crashes 0 []
+FAIL REGULARITY restricted: the 10 outer graphs with 1..2 edges are O(u^6): {1: (1, (1, 3), [1, 2, 3, 4, 5]), 2: (1, (2, 2), [1, 2, 3, 4, 5]), 3: (1, (3,), [1, 2, 3, 4, 5]), 4: (2, (0, 3), [2, 3, 4, 5]), 5: (2, (1, 1, 2), [2, 3, 4, 5]), 6: (2, (1, 1, 2), [2, 3, 4, 5]), 7: (2, (1, 2), [2, 3, 4, 5]), 8: (2, (1, 2), [2, 3, 4, 5]), 9: (2, (1, 2), [2, 3, 4, 5]), 10: (2, (2,), [2, 3, 4, 5])}
+      number of non-regular outer graphs: 10 of 10; by E: {1: 3, 2: 7}
+   vertex graph: ['1/180000', '[558435309829820442918654836 mod p]', '[263881988376827840043689663 mod p]', '[5957705210215764717248316 mod p]', '[436835238078150486571264299 mod p]', '[307988948822509794412122182 mod p]']
+   vertex graph in t_c: (1/180000) t_c^-6 + (~-5044942767172/3195189749265) t_c^-5 + (~-3113832699014/767968599551) t_c^-4 + ([305163388050943715828400642 mod p]) t_c^-3 + ([335030899895882466072269677 mod p]) t_c^-2 + ([317056913514569680039823613 mod p]) t_c^-1
+FAIL VERTEX GRAPH carries the polar part (1/180000) t_c^-6 + 0 + ... + 0
+FAIL rows of the 11 outer graphs with <= 2 edges equal the stored table of record: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+VERDICT g4mut_m06_taupow_nat_89_pop2: DETECTED: ['REGULARITY restricted: the 10 outer graphs with 1..2 edges are O(u^6)', 'VERTEX GRAPH carries the polar part (1/180000) t_c^-6 + 0 + ... + 0', 'rows of the 11 outer graphs with <= 2 edges equal the stored table of record']  (wall 138 s)

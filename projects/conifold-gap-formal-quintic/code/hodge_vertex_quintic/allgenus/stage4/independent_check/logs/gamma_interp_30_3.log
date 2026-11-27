@@ -1,0 +1,15 @@
+gamma_interp: NMAX = 30 (z^0..z^30), EXTRA = 3 check points, exact over Q
+   n =  0: 1 free exponents, fit on 1 points, checked on 27 more; c_n(1) = 1; h_n = 1
+   n =  1: 1 free exponents, fit on 1 points, checked on 27 more; c_n(1) = -3/20; h_n = -3/20
+   n =  2: 2 free exponents, fit on 2 points, checked on 26 more; c_n(1) = 9/800; h_n = 9/800
+   n =  3: 3 free exponents, fit on 3 points, checked on 25 more; c_n(1) = -269/80000; h_n = -269/80000
+   n =  4: 4 free exponents, fit on 4 points, checked on 24 more; c_n(1) = 2823/6400000; h_n = 2823/6400000
+   n =  5: 5 free exponents, fit on 5 points, checked on 23 more; c_n(1) = -257071/8064000000; h_n = -257071/8064000000
+   n =  6: 5 free exponents, fit on 5 points, checked on 23 more; c_n(1) = 2942137/537600000000; h_n = 2942137/537600000000
+   n =  7: 6 free exponents, fit on 6 points, checked on 22 more; c_n(1) = 3832987939/10752000000000; h_n = 3832987939/10752000000000
+   n =  8: 7 free exponents, fit on 7 points, checked on 21 more; c_n(1) = -276241733339/5160960000000000; h_n = -276241733339/5160960000000000
+   n =  9: 8 free exponents, fit on 8 points, checked on 20 more; c_n(1) = 41236524917071/172032000000000000; h_n = 41236524917071/172032000000000000
+   n = 10: 9 free exponents, fit on 9 points, checked on 19 more; c_n(1) = -47540536142145509..(41 chars); h_n = -47540536142145509..(41 chars)
+PASS (P) c_n(L) polynomial with exponents 4n-5k on all extra points, n <= 30: []
+PASS (G) c_n(1) = h_n for all n <= 30 (incl. (N) at n = 5, 10, ..): []  (108.0 s)
+controls skipped (noctrl)

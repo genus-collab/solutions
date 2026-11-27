@@ -1,0 +1,16 @@
+====================================================================================================
+ind_run g3_61_nat_K6: 42 inner graphs, K = 6, NZ = 6, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.3 s
+   42 inner graphs to do with 4 processes, deadline 1500 s
+      42/42 done (2 s wall)
+   run: wall 2 s, CPU (this and earlier runs) 3 s, slowest [(0.5, 12), (0.5, 3), (0.4, 14), (0.4, 13), (0.1, 29), (0.1, 28)]
+   complete outer graphs: 42 of 42 (all)
+PASS 42 outer graphs equal the reference g3_nat_61_nat.json:A3 (through u^3), coefficients u^0..u^3
+      compared, by number of outer edges: [(0, 1), (1, 2), (2, 5), (3, 9), (4, 12), (5, 8), (6, 5)]; non-zero in my table: 25
+   vertex graph: ['1/25200', '-1/9000', '[1692624801300167406 mod p]', '[1473910101773845645 mod p]', '[1514339058245256348 mod p]', '[791708274461283068 mod p]']
+PASS REGULARITY (nat): the 41 complete outer graphs with edges are O(u^4)
+PASS VERTEX GRAPH = (1/25200) t_c^-4 + 0 + .. + 0, i.e. [u^0..u^3] G = (1/25200) (u/t_c)^4
+   total: ['1/25200', '-1/9000', '[1692624801300167406 mod p]', '[1473910101773845645 mod p]', '[1648421880536047755 mod p]', '[411689739253977666 mod p]']
+PASS GAP: total = (1/25200) t_c^-4 + 0 + .. + 0
+PASS total of this variant = total of my point-frame run (variant id)
+PASS for each of the 42 inner graphs the split pieces add up to my point-frame term
+IND_RUN (g3_61_nat_K6) ALL CHECKS PASSED

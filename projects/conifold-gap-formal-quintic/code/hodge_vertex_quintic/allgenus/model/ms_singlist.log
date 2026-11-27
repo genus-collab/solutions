@@ -1,0 +1,17 @@
+(0,3): 1 singular correlators; 1 with all insertions in K (remainder != 0 for 0); 0 with D-content (remainder != 0 for 0)
+(0,4): 8 singular correlators; 7 with all insertions in K (remainder != 0 for 0); 1 with D-content (remainder != 0 for 1)
+(0,5): 52 singular correlators; 37 with all insertions in K (remainder != 0 for 0); 15 with D-content (remainder != 0 for 10)
+(1,1): 1 singular correlators; 1 with all insertions in K (remainder != 0 for 0); 0 with D-content (remainder != 0 for 0)
+(1,2): 5 singular correlators; 4 with all insertions in K (remainder != 0 for 0); 1 with D-content (remainder != 0 for 1)
+(1,3): 28 singular correlators; 19 with all insertions in K (remainder != 0 for 0); 9 with D-content (remainder != 0 for 8)
+(1,4): 130 singular correlators; 73 with all insertions in K (remainder != 0 for 0); 57 with D-content (remainder != 0 for 44)
+(2,1): 3 singular correlators; 3 with all insertions in K (remainder != 0 for 0); 0 with D-content (remainder != 0 for 0)
+(2,2): 24 singular correlators; 14 with all insertions in K (remainder != 0 for 0); 10 with D-content (remainder != 0 for 10)
+(2,3): 146 singular correlators; 64 with all insertions in K (remainder != 0 for 0); 82 with D-content (remainder != 0 for 75)
+(2,4): 674 singular correlators; 232 with all insertions in K (remainder != 0 for 0); 442 with D-content (remainder != 0 for 398)
+(3,1): 6 singular correlators; 5 with all insertions in K (remainder != 0 for 0); 1 with D-content (remainder != 0 for 1)
+(3,2): 61 singular correlators; 21 with all insertions in K (remainder != 0 for 0); 40 with D-content (remainder != 0 for 40)
+(3,3): 415 singular correlators; 107 with all insertions in K (remainder != 0 for 0); 308 with D-content (remainder != 0 for 296)
+(4,1): 8 singular correlators; 5 with all insertions in K (remainder != 0 for 0); 3 with D-content (remainder != 0 for 3)
+skip (4,2): no amplitude
+ALL-K singular correlators have zero remainder: True

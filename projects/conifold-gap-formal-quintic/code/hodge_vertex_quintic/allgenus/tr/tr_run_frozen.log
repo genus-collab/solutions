@@ -1,0 +1,26 @@
+tr_run.py frozen  (allgenus/tr, 2026-11-13 19:36)
+  [PASS] p = 2^89-1: (g,n) = (0,3): TR x (-5)^(1-g) == MVertex6(M_0) on 125 colour-basis correlators (D <= 6), 5 of them non-zero
+  [PASS] p = 2^89-1: (g,n) = (1,1): TR x (-5)^(1-g) == MVertex6(M_0) on 10 colour-basis correlators (D <= 6), 10 of them non-zero
+  [PASS] p = 2^89-1: (g,n) = (0,4): TR x (-5)^(1-g) == MVertex6(M_0) on 3125 colour-basis correlators (D <= 6), 165 of them non-zero
+  [PASS] p = 2^89-1: (g,n) = (1,2): TR x (-5)^(1-g) == MVertex6(M_0) on 150 colour-basis correlators (D <= 6), 90 of them non-zero
+  [PASS] p = 2^89-1: (g,n) = (2,1): TR x (-5)^(1-g) == MVertex6(M_0) on 25 colour-basis correlators (D <= 6), 25 of them non-zero
+  [PASS] p = 2^89-1: (g,n) = (1,3): TR x (-5)^(1-g) == MVertex6(M_0) on 2500 colour-basis correlators (D <= 6), 925 of them non-zero
+  [PASS] p = 2^89-1: (g,n) = (2,2): TR x (-5)^(1-g) == MVertex6(M_0) on 525 colour-basis correlators (D <= 6), 405 of them non-zero
+  [PASS] p = 2^89-1: (g,n) = (3,1): TR x (-5)^(1-g) == MVertex6(M_0) on 35 colour-basis correlators (D <= 6), 35 of them non-zero
+  [PASS] p = 2^89-1: (g,n) = (0,5): TR x (-5)^(1-g) == MVertex6(M_0) on 65625 colour-basis correlators (D <= 6), 3005 of them non-zero
+  [PASS] p = 2^89-1: F_2 frozen (MVertex6) = 1/1200 == (-5)^(1-g) F_g(TR)
+  [PASS] p = 2^89-1: F_3 frozen (MVertex6) = 1/25200 == (-5)^(1-g) F_g(TR)
+  p = 2^89-1: 72120 correlators compared, 4665 non-zero
+  [PASS] p = 2^61-1: (g,n) = (0,3): TR x (-5)^(1-g) == MVertex6(M_0) on 125 colour-basis correlators (D <= 6), 5 of them non-zero
+  [PASS] p = 2^61-1: (g,n) = (1,1): TR x (-5)^(1-g) == MVertex6(M_0) on 10 colour-basis correlators (D <= 6), 10 of them non-zero
+  [PASS] p = 2^61-1: (g,n) = (0,4): TR x (-5)^(1-g) == MVertex6(M_0) on 3125 colour-basis correlators (D <= 6), 165 of them non-zero
+  [PASS] p = 2^61-1: (g,n) = (1,2): TR x (-5)^(1-g) == MVertex6(M_0) on 150 colour-basis correlators (D <= 6), 90 of them non-zero
+  [PASS] p = 2^61-1: (g,n) = (2,1): TR x (-5)^(1-g) == MVertex6(M_0) on 25 colour-basis correlators (D <= 6), 25 of them non-zero
+  [PASS] p = 2^61-1: (g,n) = (1,3): TR x (-5)^(1-g) == MVertex6(M_0) on 2500 colour-basis correlators (D <= 6), 925 of them non-zero
+  [PASS] p = 2^61-1: (g,n) = (2,2): TR x (-5)^(1-g) == MVertex6(M_0) on 525 colour-basis correlators (D <= 6), 405 of them non-zero
+  [PASS] p = 2^61-1: (g,n) = (3,1): TR x (-5)^(1-g) == MVertex6(M_0) on 35 colour-basis correlators (D <= 6), 35 of them non-zero
+  [PASS] p = 2^61-1: (g,n) = (0,5): TR x (-5)^(1-g) == MVertex6(M_0) on 65625 colour-basis correlators (D <= 6), 3005 of them non-zero
+  [PASS] p = 2^61-1: F_2 frozen (MVertex6) = 1/1200 == (-5)^(1-g) F_g(TR)
+  [PASS] p = 2^61-1: F_3 frozen (MVertex6) = 1/25200 == (-5)^(1-g) F_g(TR)
+  p = 2^61-1: 72120 correlators compared, 4665 non-zero
+== ALL CHECKS PASSED (6.3 s, 0 failures)

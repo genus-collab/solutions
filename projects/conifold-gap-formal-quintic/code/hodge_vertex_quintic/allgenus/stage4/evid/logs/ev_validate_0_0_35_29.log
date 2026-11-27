@@ -1,0 +1,19 @@
+ev_validate: frame (0, 0), window zhat <= 35, u < 29; log file logs/ev_validate_0_0_35_29.log
+   exact colour-0 data over Q in 0.4 s
+PASS [2^89-1] V1 periods C0, C1 (u < 29) = ref_hat
+PASS [2^89-1] V2 h_n = ref_rows.hcoef, n <= 39
+PASS [2^89-1] V3 ph_n = ref_rows.wkb, n <= 39 (degrees [0, 0, 0, 2, 3, 4, 4, 5, 6, 7, 8, 8]..)
+PASS [2^89-1] V4 rows Qh_a (colour 0) = HatRows.Q[a][0], a = 0..4, n <= 35, u < 29
+PASS [2^89-1] V5 Prop. S: model rows F_b = quintic symbol Psi0 M_0, all b, i, n <= 35: []
+PASS [2^89-1] V6 colour-reduced pairing = direct Ghat^act (gi_actual_norm.actual): 25 entries x 36 orders x 29 u-terms (2598 non-zero): []
+PASS [2^89-1] V7 exact-Q computation reduced mod p = mod-p computation (ph_n, rows, F_b)
+   [2^89-1] done in 26 s
+PASS [2^61-1] V1 periods C0, C1 (u < 29) = ref_hat
+PASS [2^61-1] V2 h_n = ref_rows.hcoef, n <= 39
+PASS [2^61-1] V3 ph_n = ref_rows.wkb, n <= 39 (degrees [0, 0, 0, 2, 3, 4, 4, 5, 6, 7, 8, 8]..)
+PASS [2^61-1] V4 rows Qh_a (colour 0) = HatRows.Q[a][0], a = 0..4, n <= 35, u < 29
+PASS [2^61-1] V5 Prop. S: model rows F_b = quintic symbol Psi0 M_0, all b, i, n <= 35: []
+PASS [2^61-1] V6 colour-reduced pairing = direct Ghat^act (gi_actual_norm.actual): 25 entries x 36 orders x 29 u-terms (2598 non-zero): []
+PASS [2^61-1] V7 exact-Q computation reduced mod p = mod-p computation (ph_n, rows, F_b)
+   [2^61-1] done in 27 s
+EV_VALIDATE 0_0 NZ=35 K=29: ALL CHECKS PASSED   (53 s)

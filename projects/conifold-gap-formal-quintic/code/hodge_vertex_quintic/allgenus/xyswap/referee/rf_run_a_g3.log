@@ -1,0 +1,58 @@
+=== family r=['1', '-2', '3', '-6', '-3/2'] (c3,c2,c1,V)=('22/3', '-22', '-198', '-216')
+  TR omega_(0, 3): 5 coefficients, symmetry violations 0 (2.0s)
+  TR omega_(1, 1): 15 coefficients, symmetry violations 0 (2.0s)
+  TR omega_(0, 4): 105 coefficients, symmetry violations 0 (2.1s)
+  TR omega_(1, 2): 85 coefficients, symmetry violations 0 (2.3s)
+  TR omega_(2, 1): 45 coefficients, symmetry violations 0 (2.5s)
+  TR omega_(1, 3): 915 coefficients, symmetry violations 0 (3.5s)
+  TR omega_(2, 2): 885 coefficients, symmetry violations 0 (5.4s)
+  TR omega_(3, 1): 75 coefficients, symmetry violations 0 (5.7s)
+  F_2: polynomial part of Phi gives 0; log part gives -1/11197440; B_2g/(2g(2g-2)) V^(2-2g) = -1/11197440; EQUAL True
+  F_3: polynomial part of Phi gives 0; log part gives 1/2194196594688; B_2g/(2g(2g-2)) V^(2-2g) = 1/2194196594688; EQUAL True
+  g=1: Int_inf^0 omega = -1/2592, (B_2g/2g) V^(1-2g) = -1/2592, EQUAL True; Sum Res log z omega = -1/2592 = Phi(0)-Phi(inf): True
+  g=2: Int_inf^0 omega = 1/1209323520, (B_2g/2g) V^(1-2g) = 1/1209323520, EQUAL True; Sum Res log z omega = 1/1209323520 = Phi(0)-Phi(inf): True
+  g=3: Int_inf^0 omega = -1/118486616113152, (B_2g/2g) V^(1-2g) = -1/118486616113152, EQUAL True; Sum Res log z omega = -1/118486616113152 = Phi(0)-Phi(inf): True
+  closed n=1 g=1: = TR at 3 points: True; each T_r regular at 0: True; max deg_inf T_r = -5; Phi^A_g(0) = 1/2592, -(B_2g/2g) V^(1-2g) = 1/2592: True
+  closed n=1 g=2: = TR at 3 points: True; each T_r regular at 0: True; max deg_inf T_r = -15; Phi^A_g(0) = -1/1209323520, -(B_2g/2g) V^(1-2g) = -1/1209323520: True
+  closed n=1 g=3: = TR at 3 points: True; each T_r regular at 0: True; max deg_inf T_r = -25; Phi^A_g(0) = 1/118486616113152, -(B_2g/2g) V^(1-2g) = 1/118486616113152: True
+  closed n=2 g=1 (single edge, edge expanded in hbar) = TR at 2 points: True (5.9s)
+  closed n=2 g=2 (single edge, edge expanded in hbar) = TR at 2 points: True (6.4s)
+  closed (0,3) = Sum_i D_xi[prod_j (zi - zj)^-2] = TR at 2 points: True
+  control: closed omega_{1,1} with the opposite sign differs from TR: True
+=== family r=['3', '6', '-2', '4', '-4'] (c3,c2,c1,V)=('-28/3', '-32', '592', '2304')
+  TR omega_(0, 3): 5 coefficients, symmetry violations 0 (8.4s)
+  TR omega_(1, 1): 15 coefficients, symmetry violations 0 (8.4s)
+  TR omega_(0, 4): 105 coefficients, symmetry violations 0 (8.5s)
+  TR omega_(1, 2): 85 coefficients, symmetry violations 0 (8.8s)
+  TR omega_(2, 1): 45 coefficients, symmetry violations 0 (9.0s)
+  TR omega_(1, 3): 915 coefficients, symmetry violations 0 (9.9s)
+  TR omega_(2, 2): 885 coefficients, symmetry violations 0 (11.8s)
+  TR omega_(3, 1): 75 coefficients, symmetry violations 0 (12.2s)
+  F_2: polynomial part of Phi gives 0; log part gives -1/1274019840; B_2g/(2g(2g-2)) V^(2-2g) = -1/1274019840; EQUAL True
+  F_3: polynomial part of Phi gives 0; log part gives 1/28404714672488448; B_2g/(2g(2g-2)) V^(2-2g) = 1/28404714672488448; EQUAL True
+  g=1: Int_inf^0 omega = 1/27648, (B_2g/2g) V^(1-2g) = 1/27648, EQUAL True; Sum Res log z omega = 1/27648 = Phi(0)-Phi(inf): True
+  g=2: Int_inf^0 omega = -1/1467670855680, (B_2g/2g) V^(1-2g) = -1/1467670855680, EQUAL True; Sum Res log z omega = -1/1467670855680 = Phi(0)-Phi(inf): True
+  g=3: Int_inf^0 omega = 1/16361115651353346048, (B_2g/2g) V^(1-2g) = 1/16361115651353346048, EQUAL True; Sum Res log z omega = 1/16361115651353346048 = Phi(0)-Phi(inf): True
+  closed n=1 g=1: = TR at 3 points: True; each T_r regular at 0: True; max deg_inf T_r = -5; Phi^A_g(0) = -1/27648, -(B_2g/2g) V^(1-2g) = -1/27648: True
+  closed n=1 g=2: = TR at 3 points: True; each T_r regular at 0: True; max deg_inf T_r = -15; Phi^A_g(0) = 1/1467670855680, -(B_2g/2g) V^(1-2g) = 1/1467670855680: True
+  closed n=1 g=3: = TR at 3 points: True; each T_r regular at 0: True; max deg_inf T_r = -25; Phi^A_g(0) = -1/16361115651353346048, -(B_2g/2g) V^(1-2g) = -1/16361115651353346048: True
+  closed n=2 g=1 (single edge, edge expanded in hbar) = TR at 2 points: True (12.3s)
+  closed n=2 g=2 (single edge, edge expanded in hbar) = TR at 2 points: True (12.9s)
+  closed (0,3) = Sum_i D_xi[prod_j (zi - zj)^-2] = TR at 2 points: True
+  control: closed omega_{1,1} with the opposite sign differs from TR: True
+=== Gaussian control x = z + 9/z
+  TR omega_(0, 3): 2 coefficients, symmetry violations 0 (13.2s)
+  TR omega_(1, 1): 6 coefficients, symmetry violations 0 (13.2s)
+  TR omega_(0, 4): 24 coefficients, symmetry violations 0 (13.2s)
+  TR omega_(1, 2): 28 coefficients, symmetry violations 0 (13.3s)
+  TR omega_(2, 1): 18 coefficients, symmetry violations 0 (13.3s)
+  TR omega_(1, 3): 180 coefficients, symmetry violations 0 (13.5s)
+  TR omega_(2, 2): 180 coefficients, symmetry violations 0 (13.7s)
+  TR omega_(3, 1): 30 coefficients, symmetry violations 0 (13.7s)
+  F_2: polynomial part of Phi gives 0; log part gives -1/19440; B_2g/(2g(2g-2)) V^(2-2g) = -1/19440; EQUAL True
+  F_3: polynomial part of Phi gives 0; log part gives 1/6613488; B_2g/(2g(2g-2)) V^(2-2g) = 1/6613488; EQUAL True
+  g=1: Int_inf^0 omega = 1/108, (B_2g/2g) V^(1-2g) = 1/108, EQUAL True; Sum Res log z omega = 1/108 = Phi(0)-Phi(inf): True
+  g=2: Int_inf^0 omega = -1/87480, (B_2g/2g) V^(1-2g) = -1/87480, EQUAL True; Sum Res log z omega = -1/87480 = Phi(0)-Phi(inf): True
+  g=3: Int_inf^0 omega = 1/14880348, (B_2g/2g) V^(1-2g) = 1/14880348, EQUAL True; Sum Res log z omega = 1/14880348 = Phi(0)-Phi(inf): True
+done 13.7s
+exit 0

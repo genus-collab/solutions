@@ -1,0 +1,18 @@
+====================================================================================================
+ref6_plane, p = 2^89-1, seed 1
+   D_k: total degree 8, tau-degree 4
+   at a generic alpha: b-degrees of R_2, R_3, R_4: [42, 42, 42] (node count 70); common factor of degree 2 = (b - b_L)^2
+   R'_k = R_k / L^2: b-degree 40 (verified with 2 spare nodes; R'_k L^2 = R_k at the test alpha)
+      node 0 / 1609  (0 s)
+      node 200 / 1609  (4 s)
+      node 400 / 1609  (10 s)
+      node 600 / 1609  (15 s)
+      node 800 / 1609  (20 s)
+      node 1000 / 1609  (25 s)
+      node 1200 / 1609  (31 s)
+      node 1400 / 1609  (36 s)
+      node 1600 / 1609  (41 s)
+   U_23, U_24: degrees 1586, 1586 from 1609 nodes (bound 1600): resolved: True   (43 s)
+   g = gcd(U_23, U_24): degree 61  (45 s)
+   squarefree part of g: degree 41, irreducible factors of degrees [1, 1, 10, 29]; multiplicities of the F_p-roots: [21, 1]
+REF6 done (47 s)

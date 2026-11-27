@@ -1,0 +1,23 @@
+chk_change: Lemmas L1a and FL1 through z^8, 2 instances per dimension; log logs/chk_change_8_2.log
+PASS L1a n = 1 inst 0: SP_x[f; a] = SP_y[f o phi; (a o phi) det Dphi / det J] through z^8 (J = [[2]])   z^1: -7/18  (0.0 s)
+PASS control (must fail): L1a n = 1: without det Dphi   first differs at z^1
+PASS control (must fail): L1a n = 1: phase pulled back by J only   first differs at z^1
+PASS FL1 n = 1 inst 0: SP of an exact form vanishes through z^8   nonzero orders: []
+PASS control (must fail): FL1 n = 1: without the z^-1 (d_i f) h_i term   first nonzero order z^2
+PASS L1a n = 1 inst 1: SP_x[f; a] = SP_y[f o phi; (a o phi) det Dphi / det J] through z^8 (J = [[-2]])   z^1: 223/128  (0.0 s)
+PASS FL1 n = 1 inst 1: SP of an exact form vanishes through z^8   nonzero orders: []
+PASS L1a n = 2 inst 0: SP_x[f; a] = SP_y[f o phi; (a o phi) det Dphi / det J] through z^8 (J = [[2, 1], [1, 2]])   z^1: -11/4  (0.3 s)
+PASS control (must fail): L1a n = 2: without det Dphi   first differs at z^1
+PASS control (must fail): L1a n = 2: phase pulled back by J only   first differs at z^1
+PASS FL1 n = 2 inst 0: SP of an exact form vanishes through z^8   nonzero orders: []
+PASS control (must fail): FL1 n = 2: without the z^-1 (d_i f) h_i term   first nonzero order z^0
+PASS L1a n = 2 inst 1: SP_x[f; a] = SP_y[f o phi; (a o phi) det Dphi / det J] through z^8 (J = [[1, 1], [-1, 0]])   z^1: -8703/2744  (0.4 s)
+PASS FL1 n = 2 inst 1: SP of an exact form vanishes through z^8   nonzero orders: []
+PASS L1a n = 3 inst 0: SP_x[f; a] = SP_y[f o phi; (a o phi) det Dphi / det J] through z^6 (J = [[-2, -2, 2], [-2, 2, 1], [2, -1, -1]])   z^1: 1400/9  (3.1 s)
+PASS control (must fail): L1a n = 3: without det Dphi   first differs at z^1
+PASS control (must fail): L1a n = 3: phase pulled back by J only   first differs at z^1
+PASS FL1 n = 3 inst 0: SP of an exact form vanishes through z^6   nonzero orders: []
+PASS control (must fail): FL1 n = 3: without the z^-1 (d_i f) h_i term   first nonzero order z^0
+PASS L1a n = 3 inst 1: SP_x[f; a] = SP_y[f o phi; (a o phi) det Dphi / det J] through z^6 (J = [[-1, 1, 0], [2, 1, 2], [0, -2, -2]])   z^1: 6361/16  (3.1 s)
+PASS FL1 n = 3 inst 1: SP of an exact form vanishes through z^6   nonzero orders: []
+CHK_CHANGE 8 2: ALL CHECKS PASSED   (14 s)

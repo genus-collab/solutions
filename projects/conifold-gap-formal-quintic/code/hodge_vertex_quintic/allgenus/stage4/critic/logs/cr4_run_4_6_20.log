@@ -1,0 +1,47 @@
+cr4_run: Q = 4 (z^20), MCAN = 6 (z^30), NSP = 20; field Q (exact); log logs/cr4_run_4_6_20.log
+PASS A1 gamma = 7/10, t_c = u + (7/10)u^2 + (41/75)u^3 + (9/20)u^4, f_0 = 1 + (2/625)u^3 + .. (frame (0,0))
+PASS A1 C0(0) C1(0) = -1 in the frames (0,0), (1/3,-2/7), (7/11,-3/5)
+PASS A2 model F_0 through t^7 = UR s.2 values; F_b(0) = (1,-1,-1,1,1); closure F_0 = -T_0 F_4 (asserted)
+PASS A3 h_1 = -3/20, h_5 = -257071/8064000000 (QRR, weight -5)
+PASS A3 p_m = Sum_j (1-zeta^j)^-m vanishes for odd m < 400 exactly at the odd multiples of 5 (evid s.8.2)   zeros 40
+PASS B1 (H): ph_n(1) = h_n for all 24 n <= 30 with 5 not | n (no free parameter)   []
+PASS B2 resonances unobstructed; deg ph_n <= floor(4n/5) for n <= 30
+PASS B2 deg ph_n = floor(4n/5) exactly for 3 <= n <= 30 (n = 2: deg 0 < 1)
+PASS B3 ph_n(0) = F_(0,n) (model) for n <= 30: automatic, not a criterion
+PASS B4 f_1, f_2, f_3 (QRR) = the evid / poly / gamma values   4537/3937500
+     B done in 0.0 s
+PASS C1 frame (0,0), QRR: KA = KE = KP for q <= 4; REG (KA, KE) and first-row divisibility
+PASS C1 frame (0,0), QRR: values all 0 (D = 1 to z^20); K_q = [z^5q] Phi(z,1)/h(z)
+PASS C1 frame (0,0), pert. A (ph_5q(1) = h_5q + 1/(q+2)): KA = KE = KP for q <= 4; REG (KA, KE) and first-row divisibility
+PASS C1 frame (0,0), pert. A (ph_5q(1) = h_5q + 1/(q+2)): values = evid referee A (rf_pfree) for q <= 3; K_q = [z^5q] Phi(z,1)/h(z)   ['1/3', '6048257071/24192000000']
+PASS C1 frame (0,0), pert. B (f_q^QRR + 1/(q+2)): KA = KE = KP for q <= 4; REG (KA, KE) and first-row divisibility
+PASS C1 frame (0,0), pert. B (f_q^QRR + 1/(q+2)): values K_2 = 1/4 - f_1/3 (predicted), all non-zero; K_q = [z^5q] Phi(z,1)/h(z)   ['1/3', '737147/2953125']
+PASS C1 frame (1/3,-2/7), QRR: KA = KE = KP for q <= 4; REG (KA, KE) and first-row divisibility
+PASS C1 frame (1/3,-2/7), QRR: values all 0 (D = 1 to z^20); K_q = [z^5q] Phi(z,1)/h(z)
+PASS C1 frame (1/3,-2/7), pert. A (ph_5q(1) = h_5q + 1/(q+2)): KA = KE = KP for q <= 4; REG (KA, KE) and first-row divisibility
+PASS C1 frame (1/3,-2/7), pert. A (ph_5q(1) = h_5q + 1/(q+2)): values = evid referee A (rf_pfree) for q <= 3; K_q = [z^5q] Phi(z,1)/h(z)   ['1/3', '6048257071/24192000000']
+PASS C1 frame (1/3,-2/7), pert. B (f_q^QRR + 1/(q+2)): KA = KE = KP for q <= 4; REG (KA, KE) and first-row divisibility
+PASS C1 frame (1/3,-2/7), pert. B (f_q^QRR + 1/(q+2)): values K_2 = 1/4 - f_1/3 (predicted), all non-zero; K_q = [z^5q] Phi(z,1)/h(z)   ['1/3', '737147/2953125']
+PASS C2 m5 = [u^4] g_4 = p'_(4,1)(0) = -43397/807975000 from the first row (no free coefficient enters)
+PASS C2 stored normalisation (f_1 + m5): KA_1 = KE_1 = KP_1 = m5; regularity blind
+PASS C3 control tau -> 1 (wrong natural variable) breaks KA / REG   (Fraction(-29231, 3937500), False)
+     C4 probe (not a control): vanishing period g + f_2/7 (not a conifold frame): KE = ['0', '0'], KP = ['0', '0'] (KE sees C1 only via C1(0); KP only C0)
+     C done in 1.0 s
+PASS D1 f^can (fixed by KA = 0, no QRR input) = f^QRR for m <= 6 (z^30)
+PASS D1 connection form: ph^can_n(1) = h_n for ALL n <= 30 (incl. 5 | n): D_0 = 1 mod z^31, i.e. (F_g) for g <= 10
+PASS D1 REG of the canonical function (KA reading) for q <= 6
+PASS D2 Ginf closed form (gamma s.0 item 6): f^QRR_m = [z^5m] exp(Sum_l (-1)^(l+1) B_(5l+1)(1/5) z^5l/(l(5l+1))), m <= 6   f_1 = B_6(1/5)/6: True
+     D done in 0.2 s
+PASS E1 u0 = 0: Phi^SP(w; 0) = model F_0(w) through w^20 (the model is the conifold limit of the integrand)
+PASS E2 u0 = 1/2: Phi^SP = Phi^QRR (= Phi^can) through w^20, exact
+PASS E2 u0 = 1/2: Phi^SP / Phi^(0) has only w^5m terms ((H) for SP) and f^SP_m = f^QRR_m = f^can_m, m <= 4
+PASS E2 u0 = -1/3: Phi^SP = Phi^QRR (= Phi^can) through w^20, exact
+PASS E2 u0 = -1/3: Phi^SP / Phi^(0) has only w^5m terms ((H) for SP) and f^SP_m = f^QRR_m = f^can_m, m <= 4
+PASS E2 u0 = 3/7: Phi^SP = Phi^QRR (= Phi^can) through w^20, exact
+PASS E2 u0 = 3/7: Phi^SP / Phi^(0) has only w^5m terms ((H) for SP) and f^SP_m = f^QRR_m = f^can_m, m <= 4
+PASS E3 flat dictionary c_n(L) = L^4n ph_n(L^-5): c_5(2) = 2^20 ph^SP_5(1/32) = 11495493197/31500 (gamma logs)
+PASS E4 control b_2 -> b_2 + 1: SP != QRR first at w^3
+PASS E4 control drop the Gamma(1+5s) Stirling term: SP != QRR first at w^1
+PASS E4 control QRR twist weight +5 instead of -5: (H) fails first at n = 1   [1, 2, 3, 4, 6]
+     E done in 1.0 s
+CR4_RUN 4 6 20: ALL CHECKS PASSED   (2 s)

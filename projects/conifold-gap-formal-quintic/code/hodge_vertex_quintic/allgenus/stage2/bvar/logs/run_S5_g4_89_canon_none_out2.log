@@ -1,0 +1,16 @@
+====================================================================================================
+bv_run S5_g4_89_canon_none_out2   [2026-11-14T10:43:07]
+system S5: S1 with the residue of B multiplied by 2^20 (v'(0) = 32);  normalisation canon;  control none
+   rows: 245 of 250 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^5
+PASS    rows symplectic mod (zhat^10, u^6)
+      94/379 inner graphs (57 s wall, 132 s CPU)
+      188/379 inner graphs (93 s wall, 239 s CPU)
+      282/379 inner graphs (143 s wall, 387 s CPU)
+      376/379 inner graphs (210 s wall, 593 s CPU)
+   graph sum: 379 inner graphs, wall 216 s, CPU 596 s
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR
+   vertex graph [u^0..u^5] = ['16777216/5625', '-117440512/9375', '2940207104/140625', '~-12238979072/703125', '~1937011376128/263671875', '~-359835631616/263671875']
+   vertex graph in T'' = c0 T (c0 = 1024): (1/180000) T''^-6 + (0) T''^-5 + (0) T''^-4 + (0) T''^-3 + (0) T''^-2 + (0) T''^-1  -> c_4 (T'')^-6 + 0
+   [control] in the quintic t_c: (16777216/5625) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+   [control] in the model v(u): (~-3202559735019/3745211482111) v^-6 + ([312249436911541789217968535 mod p]) v^-5 + ([77014840180596728116788757 mod p]) v^-4 + ([21346663464151026058320480 mod p]) v^-3 + ([387974264701372187465281173 mod p]) v^-2 + ([454561699981906848916993206 mod p]) v^-1
+BV_RUN S5_g4_89_canon_none_out2: checks passed; edge graphs all regular; vertex law holds

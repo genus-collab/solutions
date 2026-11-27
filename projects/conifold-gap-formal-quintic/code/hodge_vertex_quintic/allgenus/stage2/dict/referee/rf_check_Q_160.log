@@ -1,0 +1,24 @@
+rf_check.py FIELD=Q WMAX=160 KLEG=100 WRANK=160 KCLOSED=60
+R0 counts w <= 4000 (S_w for w <= 1000): done
+R1 Lemma 1(c): monomials 1326 in L (j >= -m), 1374 not in L (j < -m); 606 random elements agree
+R2 Lemma 2 (i), (ii) on the monomial basis of M_w, w <= 100: 1602 basis elements
+legs computed k <= 100 [8s]
+R3 legs_iter in M for k <= 100; legs_closed = legs_iter mod Q[v][x] for k <= 60 (290 of 305 differ by a non-zero element of Q[v][x])
+R4 Lemma 3 mod-v images and 2x2 determinants: 505 checks (k <= 100)
+ w=   0 |S|=  1 dim K_0=  0 (d(w)=  0) ok=True  [23s]
+ w=   1 |S|=  1 dim K_0=  1 (d(w)=  1) ok=True  [23s]
+ w=   2 |S|=  1 dim K_0=  1 (d(w)=  1) ok=True  [23s]
+ w=   3 |S|=  1 dim K_0=  1 (d(w)=  1) ok=True  [23s]
+ w=   4 |S|=  2 dim K_0=  1 (d(w)=  1) ok=True  [23s]
+ w=   5 |S|=  2 dim K_0=  1 (d(w)=  1) ok=True  [23s]
+ w=   6 |S|=  2 dim K_0=  2 (d(w)=  2) ok=True  [23s]
+ w=   7 |S|=  2 dim K_0=  2 (d(w)=  2) ok=True  [23s]
+ w=   8 |S|=  3 dim K_0=  2 (d(w)=  2) ok=True  [23s]
+ w=   9 |S|=  3 dim K_0=  2 (d(w)=  2) ok=True  [23s]
+ w=  10 |S|=  3 dim K_0=  2 (d(w)=  2) ok=True  [23s]
+ w=  11 |S|=  3 dim K_0=  3 (d(w)=  3) ok=True  [23s]
+ w=  12 |S|=  4 dim K_0=  3 (d(w)=  3) ok=True  [23s]
+ w= 100 |S|= 26 dim K_0= 20 (d(w)= 20) ok=True  [24s]
+R5 rank = |S_w| for w <= 160; R6/R7 w <= 160: 2640 K_0 basis vectors, failing weights []
+RESULT: ALL CHECKS PASSED [32s]
+# wall time: 0m31.859s

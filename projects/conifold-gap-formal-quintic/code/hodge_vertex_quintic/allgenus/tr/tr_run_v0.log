@@ -1,0 +1,28 @@
+tr_run.py v0  (allgenus/tr, 2026-11-13 19:38)
+  [PASS] F_p, p = 61897: omega_{0,3}: c_m = 0 for |m| < 5, so omega^(u) = u^0 Omega_1(p) + O(u) (regular at u = 0); limit: (1, 1, 3): -3, (1, 2, 2): -4, (1, 3, 1): -3, (2, 1, 2): -4, (2, 2, 1): -4, (3, 1, 1): -3
+  [PASS] F_p, p = 61897: omega_{0,4}: c_m = 0 for |m| < 10, so omega^(u) = u^0 Omega_2(p) + O(u) (regular at u = 0); limit: 46 monomials
+  [PASS] F_p, p = 61897: omega_{0,5}: c_m = 0 for |m| < 15, so omega^(u) = u^0 Omega_3(p) + O(u) (regular at u = 0); limit: 401 monomials
+  [PASS] F_p, p = 61897: omega_{1,1}: c_m = 0 for |m| < 5, so omega^(u) = u^0 Omega_1(p) + O(u) (regular at u = 0); limit: (5,): -5/8
+  [PASS] F_p, p = 61897: omega_{1,2}: c_m = 0 for |m| < 10, so omega^(u) = u^0 Omega_2(p) + O(u) (regular at u = 0); limit: (1, 9): 45/8, (3, 7): -21/8, (5, 5): 25/8, (7, 3): -21/8, (9, 1): 45/8
+  [PASS] F_p, p = 61897: omega_{1,3}: c_m = 0 for |m| < 15, so omega^(u) = u^0 Omega_3(p) + O(u) (regular at u = 0); limit: 46 monomials
+  [PASS] F_p, p = 61897: omega_{1,4}: c_m = 0 for |m| < 20, so omega^(u) = u^0 Omega_4(p) + O(u) (regular at u = 0); limit: 425 monomials
+  [PASS] F_p, p = 61897: omega_{2,1}: c_m = 0 for |m| < 15, so omega^(u) = u^0 Omega_3(p) + O(u) (regular at u = 0); limit: (15,): 2079/128
+  [PASS] F_p, p = 61897: omega_{2,2}: c_m = 0 for |m| < 20, so omega^(u) = u^0 Omega_4(p) + O(u) (regular at u = 0); limit: 15 monomials
+  [PASS] F_p, p = 61897: omega_{2,3}: c_m = 0 for |m| < 25, so omega^(u) = u^0 Omega_5(p) + O(u) (regular at u = 0); limit: 141 monomials
+  [PASS] F_p, p = 61897: omega_{3,1}: c_m = 0 for |m| < 25, so omega^(u) = u^0 Omega_5(p) + O(u) (regular at u = 0); limit: (25,): 3132675/1024
+  [PASS] F_p, p = 61897: omega_{3,2}: c_m = 0 for |m| < 30, so omega^(u) = u^0 Omega_6(p) + O(u) (regular at u = 0); limit: 15 monomials
+  [PASS] F_p, p = 61897: omega_{4,1}: c_m = 0 for |m| < 35, so omega^(u) = u^0 Omega_7(p) + O(u) (regular at u = 0); limit: (35,): -45541532421/32768
+  [PASS] F_p, p = 23058: omega_{0,3}: c_m = 0 for |m| < 5, so omega^(u) = u^0 Omega_1(p) + O(u) (regular at u = 0); limit: (1, 1, 3): -3, (1, 2, 2): -4, (1, 3, 1): -3, (2, 1, 2): -4, (2, 2, 1): -4, (3, 1, 1): -3
+  [PASS] F_p, p = 23058: omega_{0,4}: c_m = 0 for |m| < 10, so omega^(u) = u^0 Omega_2(p) + O(u) (regular at u = 0); limit: 46 monomials
+  [PASS] F_p, p = 23058: omega_{0,5}: c_m = 0 for |m| < 15, so omega^(u) = u^0 Omega_3(p) + O(u) (regular at u = 0); limit: 401 monomials
+  [PASS] F_p, p = 23058: omega_{1,1}: c_m = 0 for |m| < 5, so omega^(u) = u^0 Omega_1(p) + O(u) (regular at u = 0); limit: (5,): -5/8
+  [PASS] F_p, p = 23058: omega_{1,2}: c_m = 0 for |m| < 10, so omega^(u) = u^0 Omega_2(p) + O(u) (regular at u = 0); limit: (1, 9): 45/8, (3, 7): -21/8, (5, 5): 25/8, (7, 3): -21/8, (9, 1): 45/8
+  [PASS] F_p, p = 23058: omega_{1,3}: c_m = 0 for |m| < 15, so omega^(u) = u^0 Omega_3(p) + O(u) (regular at u = 0); limit: 46 monomials
+  [PASS] F_p, p = 23058: omega_{1,4}: c_m = 0 for |m| < 20, so omega^(u) = u^0 Omega_4(p) + O(u) (regular at u = 0); limit: 425 monomials
+  [PASS] F_p, p = 23058: omega_{2,1}: c_m = 0 for |m| < 15, so omega^(u) = u^0 Omega_3(p) + O(u) (regular at u = 0); limit: (15,): 2079/128
+  [PASS] F_p, p = 23058: omega_{2,2}: c_m = 0 for |m| < 20, so omega^(u) = u^0 Omega_4(p) + O(u) (regular at u = 0); limit: 15 monomials
+  [PASS] F_p, p = 23058: omega_{2,3}: c_m = 0 for |m| < 25, so omega^(u) = u^0 Omega_5(p) + O(u) (regular at u = 0); limit: 141 monomials
+  [PASS] F_p, p = 23058: omega_{3,1}: c_m = 0 for |m| < 25, so omega^(u) = u^0 Omega_5(p) + O(u) (regular at u = 0); limit: (25,): 3132675/1024
+  [PASS] F_p, p = 23058: omega_{3,2}: c_m = 0 for |m| < 30, so omega^(u) = u^0 Omega_6(p) + O(u) (regular at u = 0); limit: 15 monomials
+  [PASS] F_p, p = 23058: omega_{4,1}: c_m = 0 for |m| < 35, so omega^(u) = u^0 Omega_7(p) + O(u) (regular at u = 0); limit: (35,): -500150486/556948529
+== ALL CHECKS PASSED (18.5 s, 0 failures)

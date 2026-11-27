@@ -1,0 +1,222 @@
+==============================================================================
+prime p = 618970019642690137449562111
+PASS colour 0: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-0/L, Pcal_1 L = 0 (psi_0 = L propto Delta_0^-1/2 C0 = zeta^(-3*0/2) L)
+PASS colour 0 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+   psi_{0,1}/L = (-3/20) L^4
+   psi_{0,2}/L = (9/800) L^8
+   psi_{0,3}/L = (67/1250) L^2 + (-126/625) L^7 + (11571/80000) L^12
+   psi_{0,4}/L = (67/3125) L^1 + (-7973/25000) L^6 + (4221/6250) L^11 + (-2415609/6400000) L^16
+   psi_{0,5}/L = (4537/3937500) L^0 + (-6789/62500) L^5 + (548547/1000000) L^10 + (-203511/250000) L^15 + (47735919/128000000) L^20
+   psi_{0,6}/L = (23038213/131250000) L^4 + (-22971377/12500000) L^9 + (103679433/20000000) L^14 + (-139792653/25000000) L^19 + ([561290073309396008702996771 mod p]) L^24
+   psi_{0,7}/L = (476773/2343750) L^3 + (-8897367831/1750000000) L^8 + (6647358861/250000000) L^13 + ([215230137285872190648660866 mod p]) L^18 + ([475430834639864106192255389 mod p]) L^23 + ([281889239825543020739962690 mod p]) L^28
+PASS colour 1: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-1/L, Pcal_1 L = 0 (psi_0 = L propto Delta_1^-1/2 C0 = zeta^(-3*1/2) L)
+PASS colour 1 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-2/L, Pcal_1 L = 0 (psi_0 = L propto Delta_2^-1/2 C0 = zeta^(-3*2/2) L)
+PASS colour 2 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-3/L, Pcal_1 L = 0 (psi_0 = L propto Delta_3^-1/2 C0 = zeta^(-3*3/2) L)
+PASS colour 3 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-4/L, Pcal_1 L = 0 (psi_0 = L propto Delta_4^-1/2 C0 = zeta^(-3*4/2) L)
+PASS colour 4 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS Z/5 covariance psi_{1,n} = zeta^(-1 n) psi_{0,n} (n <= 7)
+PASS Z/5 covariance psi_{2,n} = zeta^(-2 n) psi_{0,n} (n <= 7)
+PASS Z/5 covariance psi_{3,n} = zeta^(-3 n) psi_{0,n} (n <= 7)
+PASS Z/5 covariance psi_{4,n} = zeta^(-4 n) psi_{0,n} (n <= 7)
+   h_{wt_0}(z) exact (power sums of 1/(1-zeta^j) by Newton, -5 weight): 1, -3/20, 9/800, -269/80000, 2823/6400000, -257071/8064000000, 2942137/537600000000, 3832987939/10752000000000
+PASS h_{wt_0}(z) has the exact rational coefficients above (checked mod p)
+PASS h_{wt_1}(z) = h_{wt_0}(zeta^-1 z)
+PASS h_{wt_2}(z) = h_{wt_0}(zeta^-2 z)
+PASS h_{wt_3}(z) = h_{wt_0}(zeta^-3 z)
+PASS h_{wt_4}(z) = h_{wt_0}(zeta^-4 z)
+rows built in 0.4 s; sizes (terms) P_a^(0) by z-order: [[1, 1, 1, 3, 4, 5, 5], [1, 3, 3, 4, 7, 9, 11], [6, 38, 87, 87, 115, 185, 234], [6, 30, 90, 150, 150, 195, 270], [6, 10, 30, 63, 84, 105, 105]]
+   denominators (c0-power, W-power) of P_a^(0): [[(1, 0), (1, 0), (1, 0), (1, 0), (1, 0), (1, 0), (1, 0)], [(1, 1), (2, 1), (2, 1), (2, 1), (2, 1), (2, 1), (2, 1)], [(3, 1), (4, 2), (5, 2), (5, 2), (5, 2), (5, 2), (5, 2)], [(3, 2), (4, 3), (6, 4), (7, 4), (7, 4), (7, 4), (7, 4)], [(4, 2), (5, 3), (7, 4), (8, 5), (9, 5), (9, 5), (9, 5)]]
+PASS rows are log-free (no Lam) and reduced (no i3)
+PASS rows at q = 0: P_0^{(i)} = zeta^{0 i} h_{wt_i}(z) (QRR constants), all i
+PASS rows at q = 0: P_1^{(i)} = zeta^{1 i} h_{wt_i}(z) (QRR constants), all i
+PASS rows at q = 0: P_2^{(i)} = zeta^{2 i} h_{wt_i}(z) (QRR constants), all i
+PASS rows at q = 0: P_3^{(i)} = zeta^{3 i} h_{wt_i}(z) (QRR constants), all i
+PASS rows at q = 0: P_4^{(i)} = zeta^{4 i} h_{wt_i}(z) (QRR constants), all i
+PASS Z/5 covariance of the rows: P_a^{(i)}(z) = zeta^{ia} P_a^{(0)}(zeta^-i z), exact in N
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+   symplecticity (25 pairs) in 3.5 s
+PASS symplecticity at a random point of the reduced generators
+PASS Tier-1: WKB rows (q-series of L, C0, Itilde_1 substituted) = exact I-function rows, all a, i, z^<=6, q^<=12
+   Tier-1 in 1.9 s
+PASS Dil_0(2) = (-1)^2 [z^1] P_0 in F_p[L^+-1], L-degree range [4, 4], top degree 4(d-1) = 4: (-3/20) L^4
+PASS Dil_1(2) = zeta^(-1*1) Dil_0(2)
+PASS Dil_2(2) = zeta^(-2*1) Dil_0(2)
+PASS Dil_3(2) = zeta^(-3*1) Dil_0(2)
+PASS Dil_4(2) = zeta^(-4*1) Dil_0(2)
+PASS Dil_0(3) = (-1)^3 [z^2] P_0 in F_p[L^+-1], L-degree range [8, 8], top degree 4(d-1) = 8: (-9/800) L^8
+PASS Dil_0(4) = (-1)^4 [z^3] P_0 in F_p[L^+-1], L-degree range [2, 12], top degree 4(d-1) = 12: (67/1250) L^2 + (-126/625) L^7 + (11571/80000) L^12
+PASS Dil_0(5) = (-1)^5 [z^4] P_0 in F_p[L^+-1], L-degree range [1, 16], top degree 4(d-1) = 16: (-67/3125) L^1 + (7973/25000) L^6 + (-4221/6250) L^11 + (2415609/6400000) L^16
+PASS Dil_0(6) = (-1)^6 [z^5] P_0 in F_p[L^+-1], L-degree range [0, 20], top degree 4(d-1) = 20: (4537/3937500) L^0 + (-6789/62500) L^5 + (548547/1000000) L^10 + (-203511/250000) L^15 + (47735919/128000000) L^20
+PASS Dil_0(7) = (-1)^7 [z^6] P_0 in F_p[L^+-1], L-degree range [4, 24], top degree 4(d-1) = 24: (-23038213/131250000) L^4 + (22971377/12500000) L^9 + (-103679433/20000000) L^14 + (139792653/25000000) L^19 + ([57679946333294128746565340 mod p]) L^24
+PASS edge coefficients E^{(ij)}_{mn} = E^{(ji)}_{nm} (m+n <= 5)
+   edges (m, n <= 2, all pairs) in 5.8 s; sizes E^{(00)}: {(0, 0): 93, (0, 1): 287, (0, 2): 528, (1, 0): 287, (1, 1): 731, (1, 2): 881, (2, 0): 528, (2, 1): 881, (2, 2): 1144}
+PASS rows_times(h_{(1)}^-1): q = 0 value zeta^{ia} h_{wt_i} h_{(lambda=1)}^-1
+time 45.6 s
+==============================================================================
+prime p = 2305843009213693951
+PASS colour 0: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-0/L, Pcal_1 L = 0 (psi_0 = L propto Delta_0^-1/2 C0 = zeta^(-3*0/2) L)
+PASS colour 0 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 0 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+   psi_{0,1}/L = (-3/20) L^4
+   psi_{0,2}/L = (9/800) L^8
+   psi_{0,3}/L = (67/1250) L^2 + (-126/625) L^7 + (11571/80000) L^12
+   psi_{0,4}/L = (67/3125) L^1 + (-7973/25000) L^6 + (4221/6250) L^11 + (-2415609/6400000) L^16
+   psi_{0,5}/L = (4537/3937500) L^0 + (-6789/62500) L^5 + (548547/1000000) L^10 + (-203511/250000) L^15 + ([1403891457327899978 mod p]) L^20
+   psi_{0,6}/L = ([1575275293281087522 mod p]) L^4 + ([446360846972449920 mod p]) L^9 + ([414292773431982229 mod p]) L^14 + ([1941593877435386245 mod p]) L^19 + ([1534496604297317665 mod p]) L^24
+   psi_{0,7}/L = (476773/2343750) L^3 + ([240266049513588891 mod p]) L^8 + ([1070875819533116624 mod p]) L^13 + ([748815693387991665 mod p]) L^18 + ([137456511831507662 mod p]) L^23 + ([1965302068826829284 mod p]) L^28
+PASS colour 1: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-1/L, Pcal_1 L = 0 (psi_0 = L propto Delta_1^-1/2 C0 = zeta^(-3*1/2) L)
+PASS colour 1 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 1 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-2/L, Pcal_1 L = 0 (psi_0 = L propto Delta_2^-1/2 C0 = zeta^(-3*2/2) L)
+PASS colour 2 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 2 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-3/L, Pcal_1 L = 0 (psi_0 = L propto Delta_3^-1/2 C0 = zeta^(-3*3/2) L)
+PASS colour 3 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 3 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4: symbol equation Pcal_0 = 0, a_1 = 5 zeta^-4/L, Pcal_1 L = 0 (psi_0 = L propto Delta_4^-1/2 C0 = zeta^(-3*4/2) L)
+PASS colour 4 z^1: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^2: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^3: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^4: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^5: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^6: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS colour 4 z^7: residues at fifth roots of unity (remainder mod L^5-1) and at L=0 vanish: rem={} res0=0
+PASS Z/5 covariance psi_{1,n} = zeta^(-1 n) psi_{0,n} (n <= 7)
+PASS Z/5 covariance psi_{2,n} = zeta^(-2 n) psi_{0,n} (n <= 7)
+PASS Z/5 covariance psi_{3,n} = zeta^(-3 n) psi_{0,n} (n <= 7)
+PASS Z/5 covariance psi_{4,n} = zeta^(-4 n) psi_{0,n} (n <= 7)
+PASS h_{wt_0}(z) has the exact rational coefficients above (checked mod p)
+PASS h_{wt_1}(z) = h_{wt_0}(zeta^-1 z)
+PASS h_{wt_2}(z) = h_{wt_0}(zeta^-2 z)
+PASS h_{wt_3}(z) = h_{wt_0}(zeta^-3 z)
+PASS h_{wt_4}(z) = h_{wt_0}(zeta^-4 z)
+rows built in 0.7 s; sizes (terms) P_a^(0) by z-order: [[1, 1, 1, 3, 4, 5, 5], [1, 3, 3, 4, 7, 9, 11], [6, 38, 87, 87, 115, 185, 234], [6, 30, 90, 150, 150, 195, 270], [6, 10, 30, 63, 84, 105, 105]]
+   denominators (c0-power, W-power) of P_a^(0): [[(1, 0), (1, 0), (1, 0), (1, 0), (1, 0), (1, 0), (1, 0)], [(1, 1), (2, 1), (2, 1), (2, 1), (2, 1), (2, 1), (2, 1)], [(3, 1), (4, 2), (5, 2), (5, 2), (5, 2), (5, 2), (5, 2)], [(3, 2), (4, 3), (6, 4), (7, 4), (7, 4), (7, 4), (7, 4)], [(4, 2), (5, 3), (7, 4), (8, 5), (9, 5), (9, 5), (9, 5)]]
+PASS rows are log-free (no Lam) and reduced (no i3)
+PASS rows at q = 0: P_0^{(i)} = zeta^{0 i} h_{wt_i}(z) (QRR constants), all i
+PASS rows at q = 0: P_1^{(i)} = zeta^{1 i} h_{wt_i}(z) (QRR constants), all i
+PASS rows at q = 0: P_2^{(i)} = zeta^{2 i} h_{wt_i}(z) (QRR constants), all i
+PASS rows at q = 0: P_3^{(i)} = zeta^{3 i} h_{wt_i}(z) (QRR constants), all i
+PASS rows at q = 0: P_4^{(i)} = zeta^{4 i} h_{wt_i}(z) (QRR constants), all i
+PASS Z/5 covariance of the rows: P_a^{(i)}(z) = zeta^{ia} P_a^{(0)}(zeta^-i z), exact in N
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(0)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_0 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(1)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_1 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(2)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_2 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(3)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_3 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(0)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(1)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(2)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(3)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+PASS symplecticity Sum_ab P_a^{(4)}(z) eta^{ab} P_b^{(4)}(-z) = delta Delta_4 EXACT in N mod relation, z^<=6
+   symplecticity (25 pairs) in 5.1 s
+PASS symplecticity at a random point of the reduced generators
+PASS Tier-1: WKB rows (q-series of L, C0, Itilde_1 substituted) = exact I-function rows, all a, i, z^<=6, q^<=12
+   Tier-1 in 2.1 s
+PASS Dil_0(2) = (-1)^2 [z^1] P_0 in F_p[L^+-1], L-degree range [4, 4], top degree 4(d-1) = 4: (-3/20) L^4
+PASS Dil_1(2) = zeta^(-1*1) Dil_0(2)
+PASS Dil_2(2) = zeta^(-2*1) Dil_0(2)
+PASS Dil_3(2) = zeta^(-3*1) Dil_0(2)
+PASS Dil_4(2) = zeta^(-4*1) Dil_0(2)
+PASS Dil_0(3) = (-1)^3 [z^2] P_0 in F_p[L^+-1], L-degree range [8, 8], top degree 4(d-1) = 8: (-9/800) L^8
+PASS Dil_0(4) = (-1)^4 [z^3] P_0 in F_p[L^+-1], L-degree range [2, 12], top degree 4(d-1) = 12: (67/1250) L^2 + (-126/625) L^7 + (11571/80000) L^12
+PASS Dil_0(5) = (-1)^5 [z^4] P_0 in F_p[L^+-1], L-degree range [1, 16], top degree 4(d-1) = 16: (-67/3125) L^1 + (7973/25000) L^6 + (-4221/6250) L^11 + (2415609/6400000) L^16
+PASS Dil_0(6) = (-1)^6 [z^5] P_0 in F_p[L^+-1], L-degree range [0, 20], top degree 4(d-1) = 20: (4537/3937500) L^0 + (-6789/62500) L^5 + (548547/1000000) L^10 + (-203511/250000) L^15 + ([1403891457327899978 mod p]) L^20
+PASS Dil_0(7) = (-1)^7 [z^6] P_0 in F_p[L^+-1], L-degree range [4, 24], top degree 4(d-1) = 24: ([730567715932606429 mod p]) L^4 + ([1859482162241244031 mod p]) L^9 + ([1891550235781711722 mod p]) L^14 + ([364249131778307706 mod p]) L^19 + ([771346404916376286 mod p]) L^24
+PASS edge coefficients E^{(ij)}_{mn} = E^{(ji)}_{nm} (m+n <= 5)
+   edges (m, n <= 2, all pairs) in 6.1 s; sizes E^{(00)}: {(0, 0): 93, (0, 1): 287, (0, 2): 528, (1, 0): 287, (1, 1): 731, (1, 2): 881, (2, 0): 528, (2, 1): 881, (2, 2): 1144}
+PASS rows_times(h_{(1)}^-1): q = 0 value zeta^{ia} h_{wt_i} h_{(lambda=1)}^-1
+time 48.9 s
+ALL S2 CHECKS PASSED

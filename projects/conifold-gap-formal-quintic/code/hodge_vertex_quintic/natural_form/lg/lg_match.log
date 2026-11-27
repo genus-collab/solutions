@@ -1,0 +1,79 @@
+J_k(eps) coefficients (exact), k = -3..6, through eps^6:
+   J_-3: 1, -21/80, 441/12800, 22869/5120000, 783783/1638400000, -106729623/131072000000, -117243369243/104857600000000
+   J_-2: 1, -9/80, -63/12800, 9009/5120000, 2945943/1638400000, 23432409/26214400000, -9454287843/104857600000000
+   J_-1: 1, -1/80, -111/12800, -13191/5120000, -8841/1638400000, 116525493/131072000000, 93088145997/104857600000000
+   J_0: 1, 3/80, 9/12800, -11571/5120000, -2415609/1638400000, -47735919/131072000000, 52989974037/104857600000000
+   J_1: 1, 3/80, 21/2560, 5229/5120000, -1411641/1638400000, -138080943/131072000000, -57474780363/104857600000000
+   J_2: 1, -1/80, 81/12800, 16569/5120000, 1504503/1638400000, -47810763/131072000000, -93810960243/104857600000000
+   J_3: 1, -9/80, -63/12800, 9009/5120000, 2945943/1638400000, 23432409/26214400000, -9454287843/104857600000000
+   J_4: 1, -21/80, -231/12800, -14091/5120000, 916839/1638400000, 164837673/131072000000, 102635329797/104857600000000
+   J_5: 1, -37/80, -231/12800, -32571/5120000, -3252249/1638400000, 8729721/131072000000, 108222351237/104857600000000
+   J_6: 1, -57/80, 9/512, -19071/5120000, -5388201/1638400000, -228351123/131072000000, -28788322563/104857600000000
+====================================================================================================
+p = 2^89-1; dump checks: {'val_ok': True, 'hat_val_ok': True, 'symbol_check': True, 'symplectic_failures': 0, 'cov_a_plus_1_minus_n': True}
+(A) agnostic fit R^_a^(0)(zhat) = N_a J_k(c zhat), k in -3..6
+   a = 0: row (rational reconstruction where possible) ['1', '-3/20', '9/800', '11571/80000', '-2415609/6400000', '47735919/128000000', '52989974037/25600000000']
+          matching (k, N_a, c): [(0, '1', '-4')]
+   a = 1: row (rational reconstruction where possible) ['-1', '-1/20', '111/800', '-13191/80000', '8841/6400000', '116525493/128000000', '-93088145997/25600000000']
+          matching (k, N_a, c): [(-1, '-1', '-4')]
+   a = 2: row (rational reconstruction where possible) ['-1', '-9/20', '63/800', '9009/80000', '-2945943/6400000', '23432409/25600000', '9454287843/25600000000']
+          matching (k, N_a, c): [(-2, '-1', '-4'), (3, '-1', '-4')]
+   a = 3: row (rational reconstruction where possible) ['1', '1/20', '81/800', '-16569/80000', '1504503/6400000', '47810763/128000000', '-93810960243/25600000000']
+          matching (k, N_a, c): [(2, '1', '-4')]
+   a = 4: row (rational reconstruction where possible) ['1', '-3/20', '21/160', '-5229/80000', '-1411641/6400000', '138080943/128000000', '-57474780363/25600000000']
+          matching (k, N_a, c): [(1, '1', '-4')]
+PASS (A) row a = 0 equals N_a J_k(-4 zhat), N_a = 1, exactly for k in [0] (expected c_a = 0; J_3 = J_-2 identically)
+PASS (A) row a = 1 equals N_a J_k(-4 zhat), N_a = -1, exactly for k in [-1] (expected c_a = -1; J_3 = J_-2 identically)
+PASS (A) row a = 2 equals N_a J_k(-4 zhat), N_a = -1, exactly for k in [-2, 3] (expected c_a = 3; J_3 = J_-2 identically)
+PASS (A) row a = 3 equals N_a J_k(-4 zhat), N_a = 1, exactly for k in [2] (expected c_a = 2; J_3 = J_-2 identically)
+PASS (A) row a = 4 equals N_a J_k(-4 zhat), N_a = 1, exactly for k in [1] (expected c_a = 1; J_3 = J_-2 identically)
+PASS (B) all 175 residues R^_{a,n}^{(i)} = N_a zeta^{i(a+1-n)} (-4)^n j_{c_a,n}, N = (1,-1,-1,1,1): 0 mismatches
+PASS (B) NEGATIVE: the guess H^a <-> x^a dx (row a = N_a J_a) holds only for a = 0 (the correct labelling is k = -a mod 5): [0]
+PASS (B) identity row f = J_k(-4 zhat) only for k = 0 (primitive form dx; k = -1 would be dx/x, k = 1 x dx): [0]
+      first zhat-order at which J_k(-4 zhat) differs from f: {-3: 1, -2: 1, -1: 1, 0: None, 1: 2, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1}
+(C) controls: f against N J_k(c zhat) for lambda = x^P + u/x^Q, P + Q = 5 (c fitted at zhat^1)
+   (P, Q) = (4, 1): matching (k, c) = [(0, '-4')]
+PASS (C) (4,1): only k = 0, c = -4: [(0, '-4')]
+   (P, Q) = (3, 2): matching (k, c) = []
+PASS (C) (3,2): no k in -6..6 matches
+   (P, Q) = (2, 3): matching (k, c) = []
+PASS (C) (2,3): no k in -6..6 matches
+   (P, Q) = (1, 4): matching (k, c) = [(-2, '-1')]
+PASS (C) (1,4): only k = -2, c = -1 (the SAME model under x -> 1/x: x + u/x^4 with x^-2 dx = -d(1/x)): [(-2, '-1')]
+PASS (D) colour matrices C_0..C_6 (175 entries) = (1/5) Sum_a zeta^{j(4-a)+i(a+1-n)} (-4)^n j_{c_a,n}: 0 mismatches
+PASS (D) eta^{ab} of the dump is (1/5) delta_{a+b = 3 mod 5}
+====================================================================================================
+p = 2^61-1; dump checks: {'val_ok': True, 'hat_val_ok': True, 'symbol_check': True, 'symplectic_failures': 0, 'cov_a_plus_1_minus_n': True}
+(A) agnostic fit R^_a^(0)(zhat) = N_a J_k(c zhat), k in -3..6
+   a = 0: row (rational reconstruction where possible) ['1', '-3/20', '9/800', '11571/80000', '-360288414496/1177161', '306244961356/500607', '18737484883/1212816']
+          matching (k, N_a, c): [(0, '1', '-4')]
+   a = 1: row (rational reconstruction where possible) ['-1', '-1/20', '111/800', '-13191/80000', '720575942897/1822578', '990792061052/157115', '319481355499/1100601']
+          matching (k, N_a, c): [(-1, '-1', '-4')]
+   a = 2: row (rational reconstruction where possible) ['-1', '-9/20', '63/800', '9009/80000', '-360288804970/1813543', '180145321403/1459922', '-919544866068/286613']
+          matching (k, N_a, c): [(-2, '-1', '-4'), (3, '-1', '-4')]
+   a = 3: row (rational reconstruction where possible) ['1', '1/20', '81/800', '-16569/80000', '-360287498665/2005817', '270216049674/192845', '-972057201757/70456']
+          matching (k, N_a, c): [(2, '1', '-4')]
+   a = 4: row (rational reconstruction where possible) ['1', '-3/20', '21/160', '-5229/80000', '-360288206218/1070089', '-918733898622/394307', '-236263488382/2072029']
+          matching (k, N_a, c): [(1, '1', '-4')]
+PASS (A) row a = 0 equals N_a J_k(-4 zhat), N_a = 1, exactly for k in [0] (expected c_a = 0; J_3 = J_-2 identically)
+PASS (A) row a = 1 equals N_a J_k(-4 zhat), N_a = -1, exactly for k in [-1] (expected c_a = -1; J_3 = J_-2 identically)
+PASS (A) row a = 2 equals N_a J_k(-4 zhat), N_a = -1, exactly for k in [-2, 3] (expected c_a = 3; J_3 = J_-2 identically)
+PASS (A) row a = 3 equals N_a J_k(-4 zhat), N_a = 1, exactly for k in [2] (expected c_a = 2; J_3 = J_-2 identically)
+PASS (A) row a = 4 equals N_a J_k(-4 zhat), N_a = 1, exactly for k in [1] (expected c_a = 1; J_3 = J_-2 identically)
+PASS (B) all 175 residues R^_{a,n}^{(i)} = N_a zeta^{i(a+1-n)} (-4)^n j_{c_a,n}, N = (1,-1,-1,1,1): 0 mismatches
+PASS (B) NEGATIVE: the guess H^a <-> x^a dx (row a = N_a J_a) holds only for a = 0 (the correct labelling is k = -a mod 5): [0]
+PASS (B) identity row f = J_k(-4 zhat) only for k = 0 (primitive form dx; k = -1 would be dx/x, k = 1 x dx): [0]
+      first zhat-order at which J_k(-4 zhat) differs from f: {-3: 1, -2: 1, -1: 1, 0: None, 1: 2, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1}
+(C) controls: f against N J_k(c zhat) for lambda = x^P + u/x^Q, P + Q = 5 (c fitted at zhat^1)
+   (P, Q) = (4, 1): matching (k, c) = [(0, '-4')]
+PASS (C) (4,1): only k = 0, c = -4: [(0, '-4')]
+   (P, Q) = (3, 2): matching (k, c) = []
+PASS (C) (3,2): no k in -6..6 matches
+   (P, Q) = (2, 3): matching (k, c) = []
+PASS (C) (2,3): no k in -6..6 matches
+   (P, Q) = (1, 4): matching (k, c) = [(-2, '-1')]
+PASS (C) (1,4): only k = -2, c = -1 (the SAME model under x -> 1/x: x + u/x^4 with x^-2 dx = -d(1/x)): [(-2, '-1')]
+PASS (D) colour matrices C_0..C_6 (175 entries) = (1/5) Sum_a zeta^{j(4-a)+i(a+1-n)} (-4)^n j_{c_a,n}: 0 mismatches
+PASS (D) eta^{ab} of the dump is (1/5) delta_{a+b = 3 mod 5}
+====================================================================================================
+ALL PASS

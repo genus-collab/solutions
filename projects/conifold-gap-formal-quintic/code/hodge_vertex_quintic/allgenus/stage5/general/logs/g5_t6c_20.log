@@ -1,0 +1,11 @@
+g5_t6c: further hypothesis tests, z^0..z^20, exact over Q
+PASS F3 Phi = 0, random A_0, A_n (trial 0): no pole, value exp(Sum z^n A_n(s*)), n <= 20   first pole None, mismatches []
+PASS F3 Phi = 0, random A_0, A_n (trial 1): no pole, value exp(Sum z^n A_n(s*)), n <= 20   first pole None, mismatches []
+PASS H1 lambda_0 = 0 in the O(5)-twisted P^4 at q = oo (two singular factors, c = -1 and 5): poles, as the degenerate chart predicts   first pole at z^1; pole orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+PASS H2 amplitude of Gamma_St(1/2 + Y), Bernoulli series of Gamma_St(Y) (quintic colour-0 regular part): pole   first pole at z^1
+PASS H2 positive control: amplitude of Gamma_St(1 + Y), series of Gamma_St(Y) (quintic colour-0 regular part): no pole   first pole at z^None
+PASS L0 singular factor alone: ct_n(0) = 0 for 1 <= n <= 20 (one-Gamma identity, leading poles)
+   L0 without the singular Stirling series: ct_1(0), ct_2(0), ct_3(0) = ['1/12', '25/288', '9041/51840']
+PASS L0   so the z^1 residue is 1/12 - b_1 = 0
+ALL CHECKS PASSED
+total 19.3 s; log logs/g5_t6c_20.log

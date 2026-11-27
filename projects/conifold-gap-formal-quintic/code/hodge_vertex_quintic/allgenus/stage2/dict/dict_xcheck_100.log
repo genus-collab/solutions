@@ -1,0 +1,7 @@
+dict_xcheck.py KMAX=100
+X1 legs equal to the critic's recursion: 505/505 (b = 0..4, k <= 100)
+X2 closed mod-v images: 505 checks
+X3 monomials p^a q^c (a + 4c <= 40) reduced into Q[v][p] by subtracting Q[v][x]: 231
+X4 log part of Phi_k^1 has x-degree k, leading coefficient (-1)^k/k!: 101 checks
+C4 leg of tau_0(H^2)/v = 1/p in L: False (expected False)
+RESULT: ALL CHECKS PASSED

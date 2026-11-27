@@ -1,0 +1,55 @@
+==============================================================================================================
+genus3_natural: variant nat, p = 2^89-1, frame (alpha, beta) = 1/3,-2/7
+PASS M_0(tau zhat) M_0(tau zhat)^-1 = 1 mod (zhat^7, u^6)
+   G = R~(zhat; u) M_0(tau(u) zhat)^-1: zhat-degree of [u^n] G for n = 0..5: [0, 1, 3, 4, 5, 6]  (truncation: zhat^6)
+PASS FACTORISATION: [u^0] G = 1 and deg_zhat [u^n] G = 1, 3, 4, 5 for n = 1, 2, 3, 4 with tau = 1/2F1(1, 4/5; 9/5; u) (orders up to 6 tested)
+      [u^1 zhat^1] G, Fourier components Xhat(m, m')/25: {(0, 1): '-1/75', (1, 0): '-1/75', (2, 4): '7/225', (4, 2): '7/225'}
+      [u^2 zhat^1] G, Fourier components Xhat(m, m')/25: {(0, 1): '-1/378', (1, 0): '-1/378', (2, 4): '-3089/28350', (3, 3): '239/2250', (4, 2): '-3089/28350'}
+      [u^2 zhat^2] G, Fourier components Xhat(m, m')/25: {(0, 2): '-17/23625', (1, 1): '1/2250', (2, 0): '-32/23625', (3, 4): '239/2250', (4, 3): '-239/2250'}
+      [u^2 zhat^3] G, Fourier components Xhat(m, m')/25: {(4, 4): '-239/2250'}
+      [u^3 zhat^1] G, Fourier components Xhat(m, m')/25: {(0, 1): '-43/32319', (1, 0): '-43/32319', (2, 4): '-23435441/605981250', (3, 3): '2141231/33665625', (4, 2): '-23435441/605981250'}
+      [u^3 zhat^2] G, Fourier components Xhat(m, m')/25: {(0, 2): '71/323190', (1, 1): '1/5670', (2, 0): '53591/8079750', (3, 4): '430484/33665625', (4, 3): '27953/7481250'}
+      [u^3 zhat^3] G, Fourier components Xhat(m, m')/25: {(0, 3): '-8783/67331250', (1, 2): '-51512/100996875', (2, 1): '-14107/28856250', (3, 0): '-242794/33665625', (4, 4): '408119/7481250'}
+      [u^3 zhat^4] G, Fourier components Xhat(m, m')/25: {(0, 4): '-8783/67331250', (4, 0): '242794/33665625'}
+PASS G_1 = zhat X_1, X_1 = (7/225) [1 (x) H^2 + H^2 (x) 1 component] + (-1/75) [H^3 (x) H^4 + H^4 (x) H^3 component], NO H (x) H component
+PASS the N_k = [u^k] log(M_0^-1 M) are in sp (k = 1..5)
+PASS M_0 exp(Sum_k u^k N_k) = M exactly mod (zhat^7, u^6)
+PASS N_1 - N_1^taut is circulant
+   circulant coordinates of N_1 - N_1^taut: ['c1_0: 22/225', 'c1_1: [365842636364858852054820855 mod p]', 'c1_2: ~-8819494115612/6179404677537', 'c2_1: ~-2772382214167/4678233071421', 'c2_2: [277507737992459509819795396 mod p]', 'c3_0: 4/625', 'c3_1: [19746835908877382534540307 mod p]', 'c3_2: [407714482756116583532790034 mod p]', 'c4_1: [235758743817301400866448809 mod p]', 'c4_2: [13874071688699409943569213 mod p]', 'c5_1: [433812982056776334402999149 mod p]', 'c5_2: [430881268685406376520326789 mod p]', 'c6_1: ~-5699656297464/3384400167595', 'c6_2: [404247694130566741589962486 mod p]']
+GENUS3_NATURAL (nat, no pass) ALL CHECKS PASSED
+==============================================================================================================
+genus3_natural: variant nat, p = 2^89-1, frame (alpha, beta) = 1/3,-2/7
+PASS M_0(tau zhat) M_0(tau zhat)^-1 = 1 mod (zhat^7, u^6)
+   G = R~(zhat; u) M_0(tau(u) zhat)^-1: zhat-degree of [u^n] G for n = 0..5: [0, 1, 3, 4, 5, 6]  (truncation: zhat^6)
+PASS FACTORISATION: [u^0] G = 1 and deg_zhat [u^n] G = 1, 3, 4, 5 for n = 1, 2, 3, 4 with tau = 1/2F1(1, 4/5; 9/5; u) (orders up to 6 tested)
+      [u^1 zhat^1] G, Fourier components Xhat(m, m')/25: {(0, 1): '-1/75', (1, 0): '-1/75', (2, 4): '7/225', (4, 2): '7/225'}
+      [u^2 zhat^1] G, Fourier components Xhat(m, m')/25: {(0, 1): '-1/378', (1, 0): '-1/378', (2, 4): '-3089/28350', (3, 3): '239/2250', (4, 2): '-3089/28350'}
+      [u^2 zhat^2] G, Fourier components Xhat(m, m')/25: {(0, 2): '-17/23625', (1, 1): '1/2250', (2, 0): '-32/23625', (3, 4): '239/2250', (4, 3): '-239/2250'}
+      [u^2 zhat^3] G, Fourier components Xhat(m, m')/25: {(4, 4): '-239/2250'}
+      [u^3 zhat^1] G, Fourier components Xhat(m, m')/25: {(0, 1): '-43/32319', (1, 0): '-43/32319', (2, 4): '-23435441/605981250', (3, 3): '2141231/33665625', (4, 2): '-23435441/605981250'}
+      [u^3 zhat^2] G, Fourier components Xhat(m, m')/25: {(0, 2): '71/323190', (1, 1): '1/5670', (2, 0): '53591/8079750', (3, 4): '430484/33665625', (4, 3): '27953/7481250'}
+      [u^3 zhat^3] G, Fourier components Xhat(m, m')/25: {(0, 3): '-8783/67331250', (1, 2): '-51512/100996875', (2, 1): '-14107/28856250', (3, 0): '-242794/33665625', (4, 4): '408119/7481250'}
+      [u^3 zhat^4] G, Fourier components Xhat(m, m')/25: {(0, 4): '-8783/67331250', (4, 0): '242794/33665625'}
+PASS G_1 = zhat X_1, X_1 = (7/225) [1 (x) H^2 + H^2 (x) 1 component] + (-1/75) [H^3 (x) H^4 + H^4 (x) H^3 component], NO H (x) H component
+PASS the N_k = [u^k] log(M_0^-1 M) are in sp (k = 1..5)
+PASS M_0 exp(Sum_k u^k N_k) = M exactly mod (zhat^7, u^6)
+PASS N_1 - N_1^taut is circulant
+   circulant coordinates of N_1 - N_1^taut: ['c1_0: 22/225', 'c1_1: [365842636364858852054820855 mod p]', 'c1_2: ~-8819494115612/6179404677537', 'c2_1: ~-2772382214167/4678233071421', 'c2_2: [277507737992459509819795396 mod p]', 'c3_0: 4/625', 'c3_1: [19746835908877382534540307 mod p]', 'c3_2: [407714482756116583532790034 mod p]', 'c4_1: [235758743817301400866448809 mod p]', 'c4_2: [13874071688699409943569213 mod p]', 'c5_1: [433812982056776334402999149 mod p]', 'c5_2: [430881268685406376520326789 mod p]', 'c6_1: ~-5699656297464/3384400167595', 'c6_2: [404247694130566741589962486 mod p]']
+      pass (N1, N2, N3) 5/42 jobs done (10 s)
+      pass (N1, N2, N3) 10/42 jobs done (11 s)
+      pass (N1, N2, N3) 15/42 jobs done (12 s)
+      pass (N1, N2, N3) 20/42 jobs done (13 s)
+      pass (N1, N2, N3) 25/42 jobs done (13 s)
+      pass (N1, N2, N3) 30/42 jobs done (14 s)
+      pass (N1, N2, N3) 35/42 jobs done (27 s)
+      pass (N1, N2, N3) 40/42 jobs done (78 s)
+      pass (N1, N2, N3) 42/42 jobs done (1174 s)
+   pass (42 graphs): 1174 s; maximal eps-degree 18
+      graph  1 (E=0, gv=(3,)): ['1/25200', '-11/189000', '-197/8820000', '5567/238140000', '[409583088381955420316543302 mod p]']
+PASS FINAL: all 41 edge graphs of genus 3 are O(u^4), i.e. REGULAR at the conifold point
+PASS FINAL: total over the 42 graphs = point-frame total through u^3 (M-independence)
+   vertex graph in t_c: (1/25200) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS FINAL: the vertex graph alone carries the polar part: (1/25200) t_c^-4 + 0 t_c^-3 + 0 t_c^-2 + 0 t_c^-1
+   genus-2 graphs with the same M (1 s): {1: ['1/1200', '-11/18000', '-2663/6048000'], 2: ['0', '0', '-703/108000'], 3: ['0', '0', '1/2250'], 4: ['0', '0', '239/288000'], 5: ['0', '0', '0'], 6: ['0', '0', '0'], 7: ['0', '0', '0']}
+PASS GENUS 2: all six edge graphs are O(u^2) (regular) with the same M; vertex graph [u^0] = 1/1200
+GENUS3_NATURAL (nat) ALL CHECKS PASSED

@@ -1,0 +1,20 @@
+rf_run_res: exact over Q, mod u^30 (closing relation mod u^26), all powers of z at these orders
+PASS (P0) own Frobenius for L4: gamma FORCED by the log partner = 7/10; g = u + 7/10 u^2 + 41/75 u^3 + ...: ['0', '1', '7/10', '41/75', '1133/2500', '6089/15625']
+PASS (P1) vanishing period closed form g = -Sum_k alpha_(k-1) (log(1-u))^k/k!, alpha = [y^m] exp(Sum b_k (5^(1-2k) - 5) y^(2k-1)), mod u^30: ['1', '-2/5', '2/25', '2/625']
+PASS (R0) psi = Res Omega: only z^-n with n = 1 mod 5 (Z/5 grading of row 0), no z^0 or positive power: [-16, -11, -6, -1]
+PASS (R1) [z^-1] psi = -g (= -C0 t_c in every frame) mod u^30
+PASS (R2) frame (0, 0): rows of psi/C0 satisfy the cyclic system incl. the closing relation 4 -> 0
+PASS (R2) frame (0, 0): no positive power of z in any row (within precision): []
+PASS (R2) frame (0, 0): Y(0) = -e_1 (row 1 = -1 at u = 0: K = 1), so Res Omega = C0 Y^C_Q,0 (Lemma 1): {(1, 0): Fraction(-1, 1)}
+PASS (R2) frame (1/3, -2/7): rows of psi/C0 satisfy the cyclic system incl. the closing relation 4 -> 0
+PASS (R2) frame (1/3, -2/7): no positive power of z in any row (within precision): []
+PASS (R2) frame (1/3, -2/7): Y(0) = -e_1 (row 1 = -1 at u = 0: K = 1), so Res Omega = C0 Y^C_Q,0 (Lemma 1): {(1, 0): Fraction(-1, 1)}
+PASS (R2) frame (7/11, -3/5): rows of psi/C0 satisfy the cyclic system incl. the closing relation 4 -> 0
+PASS (R2) frame (7/11, -3/5): no positive power of z in any row (within precision): []
+PASS (R2) frame (7/11, -3/5): Y(0) = -e_1 (row 1 = -1 at u = 0: K = 1), so Res Omega = C0 Y^C_Q,0 (Lemma 1): {(1, 0): Fraction(-1, 1)}
+     t_c in the last frame (7/11, -3/5) = ['0', '1', '7/110', '5996/9075', '86149/199650']
+PASS (R3) Y(0) = -e_1 on the 3 x 3 grid alpha in {0, 1/3, -2}, beta in {0, -2/7, 5}: hence for EVERY conifold frame: []
+PASS (C1) control: without the Stirling corrections the criterion FAILS: closing False, no-positive False, Y(0) False
+PASS (C2) control: periods with a wrong vanishing period (gamma + 1/7) -> criterion FAILS: closing False, no-positive False, Y(0) False
+PASS (C3) control: residue normalisation K = 2 -> Y(0) = -2 e_1 (criterion FAILS): {(1, 0): Fraction(-2, 1)}
+RF_RUN_RES 30: ALL CHECKS PASSED   (1 s)

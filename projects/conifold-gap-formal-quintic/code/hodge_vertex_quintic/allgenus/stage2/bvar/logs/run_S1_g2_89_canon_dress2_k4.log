@@ -1,0 +1,15 @@
+====================================================================================================
+bv_run S1_g2_89_canon_dress2_k4   [2026-11-14T10:23:02]
+system S1: quintic f, g;  B -> B (1 + u/3 - 2u^2/7);  normalisation canon;  control dress2
+   rows: 95 of 100 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^3
+   rows dressed by 1 + (1/7) u^2 zhat E_(2,1): flat-regular (mu(1,1) = 0), X^2 = 0, violates annihilation at zhat^1
+PASS    rows symplectic mod (zhat^4, u^4)
+   graph sum: 7 inner graphs, wall 1 s, CPU 1 s
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^3] = ['1/1200', '-7/6000', '643/1555200', '[583113618428128506069817660 mod p]']
+   vertex graph in T'' = c0 T (c0 = 1): (1/1200) T''^-2 + (0) T''^-1  -> c_2 (T'')^-2 + 0
+   [control] in the quintic t_c: (1/1200) t_c^-2 + (0) t_c^-1
+   [control] in the model v(u): (1/1200) v^-2 + (-29/162000) v^-1
+   total, in T'': (1/1200) T''^-2 + (0) T''^-1
+   compared with R0 (same g, prime, window): 6 of 7 outer graphs in range differ (u^0..u^3): [0, 1, 2, 3, 4, 6]
+BV_RUN S1_g2_89_canon_dress2_k4: checks passed; edge graphs all regular; vertex law holds

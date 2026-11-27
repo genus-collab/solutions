@@ -1,0 +1,12 @@
+resample: 120 graphs, 4 processes -> G:\My Drive\Projects\Old\refGW\hodge_vertex_quintic\natural_form\genus4_referee\genus5\g5_dpresample_g5_89_nat_K8.jsonl
+   12/120 done (124 s)
+   24/120 done (378 s)
+   36/120 done (576 s)
+   48/120 done (627 s)
+   60/120 done (665 s)
+   72/120 done (703 s)
+   84/120 done (743 s)
+   96/120 done (794 s)
+   108/120 done (948 s)
+   120/120 done (1226 s)
+resample COMPLETE: 120 of 120 graphs, wall 1226 s

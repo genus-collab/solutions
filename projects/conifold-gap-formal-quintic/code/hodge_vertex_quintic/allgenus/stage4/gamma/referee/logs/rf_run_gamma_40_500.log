@@ -1,0 +1,37 @@
+rf_run_gamma: NQ = 40 (exact over Q), NP = 500 (mod 2^127-1 and 2^107-1), NR = 80
+PASS (A1) transport operator: T_0 = 0 and T_1 = (L^6 - L) d/dL (n <= 12)
+PASS (A1) (H) h_auto: R_n(1) = h_n automatically for all 5 not| n <= 40
+PASS (A1) exponents = 4n mod 5 and R_n in Q[L] (min exponent >= 0), deg ph_n <= floor(4n/5): [0, 0, 0, 2, 3, 4, 4, 5, 6, 7, 8, 8, 9, 10, 11, 12]
+PASS (A2) top coefficients [L^(4n)] R_n = ph_n(0) = model F_0 coefficients (own model SP), n <= 40: [Fraction(1, 1), Fraction(-3, 20), Fraction(9, 800), Fraction(11571, 80000)]
+PASS (A3) h_5 = -257071/8064000000, x_1 = 4537/3937500 = B_6(1/5)/6, x_1 + m5 = 4437977/4039875000
+PASS (A3) ph_5 = 47735919/128000000 - (203511/250000)u + (548547/1000000)u^2 - (6789/62500)u^3 + (4537/3937500)u^4
+PASS (A3) x_2 = -177640111151/31007812500000, x_3 = -284328315069009259339/6226756347656250000000 (sibling EVID values)
+PASS (A4) (Gamma) exact: c_n(L) = R_n(L), n <= 40, L = 2: []
+PASS (A4) (Gamma) exact: c_n(L) = R_n(L), n <= 40, L = 1/2: []
+PASS (A4) (Gamma) exact: c_n(L) = R_n(L), n <= 40, L = 7/3: []
+PASS (A4) (Gamma) exact: c_n(L) = R_n(L), n <= 40, L = 5/4: []
+PASS (A4) (Gamma) exact: c_n(L) = R_n(L), n <= 40, L = 2/3: []
+PASS (A4) (Gamma) exact: c_n(L) = R_n(L), n <= 40, L = -3: []
+     c_5(2) = 11495493197/31500
+PASS (A5) Ginf: Bernoulli-polynomial closed form = direct re-expansion of Stirling for Gamma(y + 1/5), z^0..z^40
+PASS (A5) free constants x_m = [z^5m] Ginf, m <= 8 (exact)
+PASS (A6) single-Gamma lemma, r = 0: Stirling saddle series = (-Y d/dY)^r e^-Y exactly through eps^40: [Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+PASS (A6) single-Gamma lemma, r = 1: Stirling saddle series = (-Y d/dY)^r e^-Y exactly through eps^40: [Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+PASS (A6) single-Gamma lemma, r = 2: Stirling saddle series = (-Y d/dY)^r e^-Y exactly through eps^40: [Fraction(1, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(0, 1)]
+PASS (A6) single-Gamma lemma, r = 3: Stirling saddle series = (-Y d/dY)^r e^-Y exactly through eps^40: [Fraction(1, 1), Fraction(-3, 1), Fraction(1, 1), Fraction(0, 1)]
+PASS (A7) control: drop the j = 0 Stirling term (the factor Gamma((1-sigma)/z)) -> (Gamma) fails: first at z^1
+PASS (A7) control: b_2 -> b_2 + 1 in every Stirling series -> fails first at z^3: first at z^3
+     (A) done in 301.6 s
+PASS [p=2^127-1] (B1) (H) h_auto for all 5 not| n <= 500; min exponent >= 0
+PASS [p=2^127-1] (B2) (Gamma): D = c(z;L)/R(z;L) = 1 + O(z^501), L = 2: None
+PASS [p=2^127-1] (B2) (Gamma): D = c(z;L)/R(z;L) = 1 + O(z^501), L = 3/5: None
+PASS [p=2^127-1] (B2) (Gamma): D = c(z;L)/R(z;L) = 1 + O(z^501), L = 4/3: None
+     [p=2^127-1] (B) main part 368.1 s
+PASS [p=2^107-1] (B1) (H) h_auto for all 5 not| n <= 500; min exponent >= 0
+PASS [p=2^107-1] (B2) (Gamma): D = c(z;L)/R(z;L) = 1 + O(z^501), L = 2: None
+PASS [p=2^107-1] (B2) (Gamma): D = c(z;L)/R(z;L) = 1 + O(z^501), L = 9/7: None
+     [p=2^107-1] (B) main part 196.4 s
+PASS [p=2^127-1] (B3) (Gamma) at 6 random L in F_p (seeded), n <= 80
+PASS [p=2^127-1] (B5) control: x_1 -> x_1 + 1 makes D - 1 first non-zero at z^5: 5
+PASS [p=2^127-1] (B5) control: x_16 -> x_16 + 3 makes D - 1 first non-zero at z^80: 80
+RF_RUN_GAMMA 40 500: ALL CHECKS PASSED   (869 s)

@@ -1,0 +1,52 @@
+ref_proj_run.py: 5 random points; general weights (random quadratic polynomials), dual numbers, exact Q
+  [PASS] pt 0 (u0 = 5/7): Theta_U closes up under (EP): d_5 = 1 (value and derivative)
+  [PASS] pt 0: [Y^0..Y^4 | ad At] has rank 25 (gl_5 = Q[Y] + im ad At, direct)
+  [PASS] pt 0: closed formula pr(X) = (1/5) lambda_m(X) At^m (each shift) = linear-algebra pr
+  [PASS] pt 0: pr((Y^j)') = -(j/5)(Bprod'/Bprod) Y^j, j = 0..4
+  [PASS] pt 0: control: with j/4 the first fact fails (every j >= 1)
+  [PASS] pt 0: pr(dlogTheta_U Y^j) = (tr dlogTheta_U/5) Y^j, j = 0..4
+  [PASS] pt 0: control: a non-diagonal matrix in place of dlogTheta_U breaks the trace rule
+  [PASS] pt 0: pr(c' + dlogTheta c) = Sum_j (c_j' + kappa_j c_j) Y^j
+  [PASS] pt 0: control: Frobenius-orthogonal projection of (Y^2)' differs from pr
+  [PASS] pt 0: control: with prod b != prod bt the cyclic definition of Theta_U does not close
+  [PASS] pt 1 (u0 = 1/7): Theta_U closes up under (EP): d_5 = 1 (value and derivative)
+  [PASS] pt 1: [Y^0..Y^4 | ad At] has rank 25 (gl_5 = Q[Y] + im ad At, direct)
+  [PASS] pt 1: closed formula pr(X) = (1/5) lambda_m(X) At^m (each shift) = linear-algebra pr
+  [PASS] pt 1: pr((Y^j)') = -(j/5)(Bprod'/Bprod) Y^j, j = 0..4
+  [PASS] pt 1: control: with j/4 the first fact fails (every j >= 1)
+  [PASS] pt 1: pr(dlogTheta_U Y^j) = (tr dlogTheta_U/5) Y^j, j = 0..4
+  [PASS] pt 1: control: a non-diagonal matrix in place of dlogTheta_U breaks the trace rule
+  [PASS] pt 1: pr(c' + dlogTheta c) = Sum_j (c_j' + kappa_j c_j) Y^j
+  [PASS] pt 1: control: Frobenius-orthogonal projection of (Y^2)' differs from pr
+  [PASS] pt 1: control: with prod b != prod bt the cyclic definition of Theta_U does not close
+  [PASS] pt 2 (u0 = 8/9): Theta_U closes up under (EP): d_5 = 1 (value and derivative)
+  [PASS] pt 2: [Y^0..Y^4 | ad At] has rank 25 (gl_5 = Q[Y] + im ad At, direct)
+  [PASS] pt 2: closed formula pr(X) = (1/5) lambda_m(X) At^m (each shift) = linear-algebra pr
+  [PASS] pt 2: pr((Y^j)') = -(j/5)(Bprod'/Bprod) Y^j, j = 0..4
+  [PASS] pt 2: control: with j/4 the first fact fails (every j >= 1)
+  [PASS] pt 2: pr(dlogTheta_U Y^j) = (tr dlogTheta_U/5) Y^j, j = 0..4
+  [PASS] pt 2: control: a non-diagonal matrix in place of dlogTheta_U breaks the trace rule
+  [PASS] pt 2: pr(c' + dlogTheta c) = Sum_j (c_j' + kappa_j c_j) Y^j
+  [PASS] pt 2: control: Frobenius-orthogonal projection of (Y^2)' differs from pr
+  [PASS] pt 2: control: with prod b != prod bt the cyclic definition of Theta_U does not close
+  [PASS] pt 3 (u0 = 9/4): Theta_U closes up under (EP): d_5 = 1 (value and derivative)
+  [PASS] pt 3: [Y^0..Y^4 | ad At] has rank 25 (gl_5 = Q[Y] + im ad At, direct)
+  [PASS] pt 3: closed formula pr(X) = (1/5) lambda_m(X) At^m (each shift) = linear-algebra pr
+  [PASS] pt 3: pr((Y^j)') = -(j/5)(Bprod'/Bprod) Y^j, j = 0..4
+  [PASS] pt 3: control: with j/4 the first fact fails (every j >= 1)
+  [PASS] pt 3: pr(dlogTheta_U Y^j) = (tr dlogTheta_U/5) Y^j, j = 0..4
+  [PASS] pt 3: control: a non-diagonal matrix in place of dlogTheta_U breaks the trace rule
+  [PASS] pt 3: pr(c' + dlogTheta c) = Sum_j (c_j' + kappa_j c_j) Y^j
+  [PASS] pt 3: control: Frobenius-orthogonal projection of (Y^2)' differs from pr
+  [PASS] pt 3: control: with prod b != prod bt the cyclic definition of Theta_U does not close
+  [PASS] pt 4 (u0 = 7/5): Theta_U closes up under (EP): d_5 = 1 (value and derivative)
+  [PASS] pt 4: [Y^0..Y^4 | ad At] has rank 25 (gl_5 = Q[Y] + im ad At, direct)
+  [PASS] pt 4: closed formula pr(X) = (1/5) lambda_m(X) At^m (each shift) = linear-algebra pr
+  [PASS] pt 4: pr((Y^j)') = -(j/5)(Bprod'/Bprod) Y^j, j = 0..4
+  [PASS] pt 4: control: with j/4 the first fact fails (every j >= 1)
+  [PASS] pt 4: pr(dlogTheta_U Y^j) = (tr dlogTheta_U/5) Y^j, j = 0..4
+  [PASS] pt 4: control: a non-diagonal matrix in place of dlogTheta_U breaks the trace rule
+  [PASS] pt 4: pr(c' + dlogTheta c) = Sum_j (c_j' + kappa_j c_j) Y^j
+  [PASS] pt 4: control: Frobenius-orthogonal projection of (Y^2)' differs from pr
+  [PASS] pt 4: control: with prod b != prod bt the cyclic definition of Theta_U does not close
+RESULT: ALL CHECKS PASSED

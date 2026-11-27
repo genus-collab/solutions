@@ -1,0 +1,6 @@
+rf_eexp: q^0..q^6, z^-d..z^12; c_n from the hatted ph_n (rf_hat, n <= 18); log logs/rf_eexp_6_12.log
+PASS step (e): L e^(Dpsi/z) c(z; L(q)) = h(z) Sum_d q^d I_d(z), all coefficients q^d z^n, d <= 6, -d <= n <= 12 (112 non-zero)
+PASS control: factor L dropped fails, first at (q^d, z^n) = [(1, 0)]
+PASS control: e^(Dpsi/z) dropped fails, first at (q^d, z^n) = [(1, -1)]
+PASS control: twist +5 in h fails, first at [(0, 1)]
+RF_EEXP 6 12: ALL CHECKS PASSED   (4 s)

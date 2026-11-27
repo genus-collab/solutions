@@ -1,0 +1,37 @@
+====================================================================================================
+vr_frames: p = 2^89-1, Nz = 12, K = 9; claimed degrees floor((5n+2)/4) = [0, 1, 3, 4, 5, 6, 8, 9, 10]
+frame (alpha, beta) = (0, 0)  [6 s]
+   degrees of G_n: [0, 1, 3, 4, 5, 6, 8, 9, 10];  symbol M_0 identical to that of the frame (0,0): True
+   rule W: violations 0, non-sharp 0 [] of 48 testable pairs;  chain L 9/9, R 9/9
+   G_1 Fourier: {(0, 1): '-1/75', (1, 0): '-1/75', (2, 4): '-8/225', (4, 2): '-8/225'}
+   (3,3) of the zhat-linear part at u^1..u^4: ['0', '-127/15750', '-167269/33665625', '[300536019699791619791190794 mod p]'];  u^2 value = -127/15750 - (2/5) beta: True;  (2,4)[u zhat] = (alpha - 8/45)/5: True
+frame (alpha, beta) = (1/3, -2/7)  [7 s]
+   degrees of G_n: [0, 1, 3, 4, 5, 6, 8, 9, 10];  symbol M_0 identical to that of the frame (0,0): True
+   rule W: violations 0, non-sharp 0 [] of 48 testable pairs;  chain L 9/9, R 9/9
+   G_1 Fourier: {(0, 1): '-1/75', (1, 0): '-1/75', (2, 4): '7/225', (4, 2): '7/225'}
+   (3,3) of the zhat-linear part at u^1..u^4: ['0', '239/2250', '2141231/33665625', '[443092815516274050359166133 mod p]'];  u^2 value = -127/15750 - (2/5) beta: True;  (2,4)[u zhat] = (alpha - 8/45)/5: True
+frame (alpha, beta) = (0, 5)  [7 s]
+   degrees of G_n: [0, 1, 3, 4, 5, 6, 8, 9, 10];  symbol M_0 identical to that of the frame (0,0): True
+   rule W: violations 0, non-sharp 0 [] of 48 testable pairs;  chain L 9/9, R 9/9
+   G_1 Fourier: {(0, 1): '-1/75', (1, 0): '-1/75', (2, 4): '-8/225', (4, 2): '-8/225'}
+   (3,3) of the zhat-linear part at u^1..u^4: ['0', '-31627/15750', '-40566019/33665625', '[502732892783070398024714406 mod p]'];  u^2 value = -127/15750 - (2/5) beta: True;  (2,4)[u zhat] = (alpha - 8/45)/5: True
+frame (alpha, beta) = (8/45, 0)  [7 s]
+   degrees of G_n: [0, 1, 3, 4, 5, 6, 8, 9, 10];  symbol M_0 identical to that of the frame (0,0): True
+   rule W: violations 0, non-sharp 2 [(0, 2, 1, 2, 1), (2, 0, 1, 2, 1)] of 48 testable pairs;  chain L 9/9, R 9/9
+   G_1 Fourier: {(0, 1): '-1/75', (1, 0): '-1/75'}
+   (3,3) of the zhat-linear part at u^1..u^4: ['0', '-127/15750', '-167269/33665625', '[300536019699791619791190794 mod p]'];  u^2 value = -127/15750 - (2/5) beta: True;  (2,4)[u zhat] = (alpha - 8/45)/5: True
+frame (alpha, beta) = (0, -127/6300)  [7 s]
+   degrees of G_n: [0, 1, 2, 4, 5, 6, 8, 9, 10];  symbol M_0 identical to that of the frame (0,0): True
+   rule W: violations 0, non-sharp 4 [(0, 0, 3, 3, 2), (0, 1, 2, 3, 2), (1, 0, 2, 3, 2), (1, 1, 1, 3, 2)] of 48 testable pairs;  chain L 9/9, R 9/9
+   G_1 Fourier: {(0, 1): '-1/75', (1, 0): '-1/75', (2, 4): '-8/225', (4, 2): '-8/225'}
+   (3,3) of the zhat-linear part at u^1..u^4: ['0', '0', '-8783/67331250', '-278879/1731375000'];  u^2 value = -127/15750 - (2/5) beta: True;  (2,4)[u zhat] = (alpha - 8/45)/5: True
+frame (alpha, beta) = (8/45, -127/6300)  [7 s]
+   degrees of G_n: [0, 1, 2, 4, 5, 6, 8, 9, 10];  symbol M_0 identical to that of the frame (0,0): True
+   rule W: violations 0, non-sharp 6 [(0, 0, 3, 3, 2), (0, 1, 2, 3, 2), (0, 2, 1, 2, 1), (1, 0, 2, 3, 2), (1, 1, 1, 3, 2), (2, 0, 1, 2, 1)] of 48 testable pairs;  chain L 9/9, R 9/9
+   G_1 Fourier: {(0, 1): '-1/75', (1, 0): '-1/75'}
+   (3,3) of the zhat-linear part at u^1..u^4: ['0', '0', '-8783/67331250', '-278879/1731375000'];  u^2 value = -127/15750 - (2/5) beta: True;  (2,4)[u zhat] = (alpha - 8/45)/5: True
+frame (alpha, beta) = (-3/11, 2/13)  [7 s]
+   degrees of G_n: [0, 1, 3, 4, 5, 6, 8, 9, 10];  symbol M_0 identical to that of the frame (0,0): True
+   rule W: violations 0, non-sharp 0 [] of 48 testable pairs;  chain L 9/9, R 9/9
+   G_1 Fourier: {(0, 1): '-1/75', (1, 0): '-1/75', (2, 4): '-223/2475', (4, 2): '-223/2475'}
+   (3,3) of the zhat-linear part at u^1..u^4: ['0', '-14251/204750', '-18333997/437653125', '[486954651098924190260615520 mod p]'];  u^2 value = -127/15750 - (2/5) beta: True;  (2,4)[u zhat] = (alpha - 8/45)/5: True

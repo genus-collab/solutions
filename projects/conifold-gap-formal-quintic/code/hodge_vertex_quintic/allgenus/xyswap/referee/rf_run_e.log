@@ -1,0 +1,43 @@
+(1) F_g from arXiv:2502.18115 Cor. 1.2
+  GUE x = z + 1/z                                      g=2: from z=0 -1/240, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 1/z                                      g=3: from z=0 1/1008, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 1/z                                      g=4: from z=0 -1/1440, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 1/z                                      g=5: from z=0 1/1056, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 1/z                                      g=6: from z=0 -691/327600, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 3/z                                      g=2: from z=0 -1/2160, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 3/z                                      g=3: from z=0 1/81648, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 3/z                                      g=4: from z=0 -1/1049760, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 3/z                                      g=5: from z=0 1/6928416, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  GUE x = z + 3/z                                      g=6: from z=0 -691/19344452400, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  line x = z^4 + 4/z                                   g=2: from z=0 -1/3840, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  line x = z^4 + 4/z                                   g=3: from z=0 1/258048, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  line x = z^4 + 4/z                                   g=4: from z=0 -1/5898240, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  line x = z^4 + 4/z                                   g=5: from z=0 1/69206016, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  line x = z^4 + 4/z                                   g=6: from z=0 -691/343513497600, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  family r=(1,-2,3,-6,-3/2)                            g=2: from z=0 -1/11197440, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  family r=(1,-2,3,-6,-3/2)                            g=3: from z=0 1/2194196594688, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  family r=(1,-2,3,-6,-3/2)                            g=4: from z=0 -1/146246337602519040, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  family r=(1,-2,3,-6,-3/2)                            g=5: from z=0 1/5003730693267627442176, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  family r=(1,-2,3,-6,-3/2)                            g=6: from z=0 -691/72423816100512248047966617600, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  random x = z^4+(2/7)z^3-(5/3)z^2+(11/2)z+3-(9/5)/z   g=2: from z=0 -5/3888, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  random x = z^4+(2/7)z^3-(5/3)z^2+(11/2)z+3-(9/5)/z   g=3: from z=0 625/6613488, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  random x = z^4+(2/7)z^3-(5/3)z^2+(11/2)z+3-(9/5)/z   g=4: from z=0 -3125/153055008, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  random x = z^4+(2/7)z^3-(5/3)z^2+(11/2)z+3-(9/5)/z   g=5: from z=0 390625/45457337376, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+  random x = z^4+(2/7)z^3-(5/3)z^2+(11/2)z+3-(9/5)/z   g=6: from z=0 -269921875/45690822790704, from z=inf 0; = B_2g/(2g(2g-2)) V^(2-2g): True
+(2) control, double pole: x = z^4 + 2z^2 + 3/z + W/z^2 (c_2 V^-2 = -1/2160)
+  W = 1: F_2 = 0 (z=0: 0, z=inf: 0); equals c_2 V^-2: False
+  W = 1/10: F_2 = 0 (z=0: 0, z=inf: 0); equals c_2 V^-2: False
+  W = -3/7: F_2 = 0 (z=0: 0, z=inf: 0); equals c_2 V^-2: False
+(3) Borel-sum identity
+  g=1: -1/3 ; -2^2g B_2g/(2g) = -1/3 ; equal True
+  g=2: 2/15 ; -2^2g B_2g/(2g) = 2/15 ; equal True
+  g=3: -16/63 ; -2^2g B_2g/(2g) = -16/63 ; equal True
+  g=4: 16/15 ; -2^2g B_2g/(2g) = 16/15 ; equal True
+  g=5: -256/33 ; -2^2g B_2g/(2g) = -256/33 ; equal True
+  g=6: 353792/4095 ; -2^2g B_2g/(2g) = 353792/4095 ; equal True
+  g=7: -4096/3 ; -2^2g B_2g/(2g) = -4096/3 ; equal True
+  g=8: 7407616/255 ; -2^2g B_2g/(2g) = 7407616/255 ; equal True
+  g=9: -2874867712/3591 ; -2^2g B_2g/(2g) = -2874867712/3591 ; equal True
+  g=10: 22886612992/825 ; -2^2g B_2g/(2g) = 22886612992/825 ; equal True
+done 2.0s
+exit 0

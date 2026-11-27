@@ -1,0 +1,10 @@
+rf_pfree (referee): field Q, q <= 20; log logs/rf_pfree_Q_100.log
+   QRR: -[u^4q] S_q for q = 1..3: ['0', '0', '0']
+PASS QRR: REG' S_q = O(u^4q) for q <= 20 (no periods used)
+PASS QRR: -[u^4q] S_q = K_q (rf_kq, with C0, C1) in frames (0,0) and (1/3,-2/7), q <= 20
+PASS QRR: values all zero (D = 1)
+   perturbed f_5q + 1/(q+2): -[u^4q] S_q for q = 1..3: ['1/3', '6048257071/24192000000', '780415789166012126329/3901685760000000000000']
+PASS perturbed f_5q + 1/(q+2): REG' S_q = O(u^4q) for q <= 20 (no periods used)
+PASS perturbed f_5q + 1/(q+2): -[u^4q] S_q = K_q (rf_kq, with C0, C1) in frames (0,0) and (1/3,-2/7), q <= 20
+PASS perturbed f_5q + 1/(q+2): values non-zero (the comparison is not vacuous)
+RF_PFREE Q q<=20: ALL CHECKS PASSED   (59 s)

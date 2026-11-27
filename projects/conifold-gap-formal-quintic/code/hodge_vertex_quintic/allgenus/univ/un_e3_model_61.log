@@ -1,0 +1,24 @@
+==============================================================================================================
+un_e3_model: dressings of the pure model, p = 2^61-1   [2026-11-13T19:34:48]
+   model vanishing covector: y_1 = ['0', '-1', '-5/9', '-220/567'] (= -v), y_2 = ['0', '0', '1/2', '5/9'] (= v^2/2)
+--------------------------------------------------------------------------------------------------------------
+case M0
+   X: 0 entries; symplectic True; flat-regular True; annihilation in the window True; z^0 coeff of D Y^C: (-1 u^0) e_1
+   genus 2: rows symplectic True; ALL 6 edge graphs REGULAR; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g)   (1 s)
+   genus 3: rows symplectic True; ALL 41 edge graphs REGULAR; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g)   (3 s)
+--------------------------------------------------------------------------------------------------------------
+case MA1
+   X: 16 entries; symplectic True; flat-regular True; annihilation in the window True; z^0 coeff of D Y^C: (-1 u^0 + -1/3 u^1 + -137/108 u^2 + 3287/6804 u^3) e_1
+   genus 2: rows symplectic True; ALL 6 edge graphs REGULAR; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g)   (0 s)
+   genus 3: rows symplectic True; ALL 41 edge graphs REGULAR; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g)   (3 s)
+--------------------------------------------------------------------------------------------------------------
+case MA2
+   X: 18 entries; symplectic True; flat-regular True; annihilation in the window True; z^0 coeff of D Y^C: (-1 u^0 + 7/3 u^1 + 571/864 u^2 + 174115/435456 u^3) e_1
+   genus 2: rows symplectic True; ALL 6 edge graphs REGULAR; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g)   (0 s)
+   genus 3: rows symplectic True; ALL 41 edge graphs REGULAR; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g)   (3 s)
+--------------------------------------------------------------------------------------------------------------
+case MB
+   X: 16 entries; symplectic True; flat-regular True; annihilation in the window False; z^0 coeff of D Y^C: (-1 u^0 + -1/3 u^1 + -137/108 u^2 + 3287/6804 u^3) e_1
+   genus 2: rows symplectic True; ALL 6 edge graphs REGULAR; vertex graph in T_eff: (1/1200) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g)   (0 s)
+   genus 3: rows symplectic True; 3 SINGULAR, (E, first order): {(1, 2): [1, 2], (2, 3): [3]}; vertex graph in T_eff: (1/25200) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1 -> c_g T_eff^(2-2g)   (3 s)
+UN_E3_MODEL done

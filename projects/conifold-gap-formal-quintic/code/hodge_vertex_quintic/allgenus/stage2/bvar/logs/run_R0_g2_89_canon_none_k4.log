@@ -1,0 +1,13 @@
+====================================================================================================
+bv_run R0_g2_89_canon_none_k4   [2026-11-14T10:19:06]
+system R0: regression: formal quintic, B unperturbed;  normalisation canon;  control none
+   rows: 0 of 100 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^3
+PASS    rows symplectic mod (zhat^4, u^4)
+   graph sum: 7 inner graphs, wall 1 s, CPU 1 s
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^3] = ['1/1200', '-7/6000', '287/864000', '~936083/193914000000']
+   vertex graph in T'' = c0 T (c0 = 1): (1/1200) T''^-2 + (0) T''^-1  -> c_2 (T'')^-2 + 0
+   [control] in the quintic t_c: (1/1200) t_c^-2 + (0) t_c^-1
+   [control] in the model v(u): (1/1200) v^-2 + (-13/54000) v^-1
+   total, in T'': (1/1200) T''^-2 + (0) T''^-1
+BV_RUN R0_g2_89_canon_none_k4: checks passed; edge graphs all regular; vertex law holds

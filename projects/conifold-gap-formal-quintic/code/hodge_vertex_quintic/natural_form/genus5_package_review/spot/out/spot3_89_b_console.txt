@@ -1,0 +1,18 @@
+====================================================================================================
+   done 2539 (18 s wall)
+   done 4484 (32 s wall)
+   done 2318 (32 s wall)
+   done 4552 (46 s wall)
+   done 4356 (72 s wall)
+   done 3638 (187 s wall)
+   done 3847 (349 s wall)
+   done 119 (380 s wall)
+   t= 119 gv=[1] ed=[[0, 0], [0, 0], [0, 0], [0, 0]]: independent 348.4 s, 5 non-zero outer rows, package 5; EQUAL: True; |Aut| own 384 package 384: True
+   t=2318 gv=[0, 0, 0, 0, 1, 1] ed=[[0, 1], [0, 2], [0, 2], [0, 2], [0, 3], [1, 4], [1, 5], [3, 3]]: independent 13.8 s, 50 non-zero outer rows, package 50; EQUAL: True; |Aut| own 24 package 24: True
+   t=3638 gv=[0, 0, 0, 0, 0, 0] ed=[[0, 1], [0, 2], [0, 2], [1, 3], [1, 3], [1, 3], [1, 4], [2, 5], [4, 4], [5, 5]]: independent 186.3 s, 136 non-zero outer rows, package 136; EQUAL: True; |Aut| own 48 package 48: True
+   t=4356 gv=[0, 0, 0, 0, 0, 0, 0] ed=[[0, 1], [0, 2], [0, 4], [1, 3], [1, 3], [1, 3], [2, 5], [2, 6], [4, 4], [5, 5], [6, 6]]: independent 72.0 s, 117 non-zero outer rows, package 117; EQUAL: True; |Aut| own 96 package 96: True
+   t=4484 gv=[0, 0, 0, 0, 0, 0, 0, 0] ed=[[0, 1], [0, 1], [0, 2], [1, 3], [2, 4], [2, 4], [3, 5], [3, 5], [4, 6], [5, 7], [6, 6], [7, 7]]: independent 31.7 s, 223 non-zero outer rows, package 223; EQUAL: True; |Aut| own 64 package 64: True
+   t=4552 gv=[0, 0, 0, 0, 0, 0, 0, 0] ed=[[0, 2], [0, 3], [0, 4], [1, 5], [1, 6], [1, 7], [2, 3], [2, 3], [4, 5], [4, 5], [6, 7], [6, 7]]: independent 45.6 s, 139 non-zero outer rows, package 139; EQUAL: True; |Aut| own 64 package 64: True
+   t=2539 gv=[0, 0, 0, 0, 1, 1] ed=[[0, 1], [0, 2], [0, 4], [1, 3], [1, 5], [2, 3], [2, 3], [3, 3]]: independent 18.1 s, 73 non-zero outer rows, package 73; EQUAL: True; |Aut| own 4 package 4: True
+   t=3847 gv=[0, 0, 0, 0, 0, 0] ed=[[0, 1], [0, 2], [0, 4], [1, 3], [1, 4], [1, 4], [2, 3], [2, 3], [4, 5], [5, 5]]: independent 348.9 s, 138 non-zero outer rows, package 138; EQUAL: True; |Aut| own 8 package 8: True
+SPOT3 (89) ALL EQUAL, wall 380 s

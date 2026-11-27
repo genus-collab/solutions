@@ -1,0 +1,23 @@
+==============================================================================================================
+th_mla: ML_Lambda on the frozen model, p = 2^61-1, genera [0, 1, 2, 3], max insertions [5, 5, 4, 3]  [2026-11-13T19:12:59]
+--------------------------------------------------------------------------------------------------------------
+genus 0 (insertions <= 5, frames k <= 3): 43 singular lists (e < 0) tested, 43 vanish, 0 FAIL; 0 skipped (psi-deficit > 6)   (1 s)
+   control C1 (frames -> leading monomials): 5 of the singular lists are NON-zero, e.g. [('lead(1,0) H^3', -1, '-5'), ('lead(0,0) lead(2,0) H^3', -1, '-5'), ('lead(1,0) lead(1,0) H^3', -1, '-10'), ('lead(1,0) H^4', -2, '10')]
+   control C2 (regular lists, e in {0, 1}): 269 of 365 non-zero, e.g. [('f(0,0) f(0,0) f(0,3)', 0, '5'), ('f(0,0) f(0,2) f(1,0)', 1, '5'), ('f(0,0) f(0,4) f(0,4)', 0, '5')]
+PASS ML_Lambda(0) on all tested singular lists
+--------------------------------------------------------------------------------------------------------------
+genus 1 (insertions <= 5, frames k <= 6): 418 singular lists (e < 0) tested, 418 vanish, 0 FAIL; 0 skipped (psi-deficit > 6)   (113 s)
+   control C1 (frames -> leading monomials): 64 of the singular lists are NON-zero, e.g. [('lead(1,0) H^1', -1, '-1/12'), ('lead(0,0) lead(2,0) H^1', -1, '-1/12'), ('lead(1,0) lead(1,0) H^1', -1, '-1/6'), ('lead(1,0) H^2', -2, '1/6')]
+   control C2 (regular lists, e in {0, 1}): 1264 of 1429 non-zero, e.g. [('f(1,0)', 0, '1/8'), ('f(2,4)', 1, '-1/24'), ('f(0,0) f(2,0)', 0, '1/8')]
+PASS ML_Lambda(1) on all tested singular lists
+--------------------------------------------------------------------------------------------------------------
+genus 2 (insertions <= 4, frames k <= 9): 425 singular lists (e < 0) tested, 425 vanish, 0 FAIL; 102 skipped (psi-deficit > 6)   (143 s)
+   control C1 (frames -> leading monomials): 165 of the singular lists are NON-zero, e.g. [('lead(1,0)', -2, '1/600'), ('lead(2,4)', -1, '1/1200'), ('lead(0,0) lead(2,0)', -2, '1/600'), ('lead(0,0) lead(3,4)', -1, '1/1200')]
+   control C2 (regular lists, e in {0, 1}): 740 of 878 non-zero, e.g. [('f(3,3)', 0, '3/3200'), ('f(4,2)', 1, '-41/9600'), ('f(0,0) f(4,3)', 0, '3/3200')]
+PASS ML_Lambda(2) on all tested singular lists
+--------------------------------------------------------------------------------------------------------------
+genus 3 (insertions <= 3, frames k <= 12): 127 singular lists (e < 0) tested, 127 vanish, 0 FAIL; 262 skipped (psi-deficit > 6)   (123 s)
+   control C1 (frames -> leading monomials): 88 of the singular lists are NON-zero, e.g. [('lead(0,2) lead(5,0)', -1, '-19/302400'), ('lead(0,3) lead(4,0)', -2, '-11/378000'), ('lead(0,3) lead(5,4)', -1, '-11/756000'), ('lead(0,4) lead(3,0)', -3, '-1/12600')]
+   control C2 (regular lists, e in {0, 1}): 172 of 212 non-zero, e.g. [('f(0,2) f(7,3)', 1, '121/537600'), ('f(0,3) f(6,3)', 0, '13/384000'), ('f(0,3) f(7,2)', 1, '943/8064000')]
+PASS ML_Lambda(3) on all tested singular lists
+TH_MLA 61: ALL PASS   (380 s)

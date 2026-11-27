@@ -1,0 +1,153 @@
+% Section 2, part 4 of 8: the R-matrix and its rows; (QRR); the twist sign; the derivation of (QRR); h_w rotation; the graph sum; the two forms of the translation; (T).
+
+%-------------------------------------------------------------------------------
+\subsection{The \texorpdfstring{$R$}{R}-matrix, its rows and quantum Riemann--Roch}
+\label{sec:set-rows}
+
+\begin{defn}[The $R$-matrix and its rows]
+\label{def:set-rows}
+Let $R(z)=1+\sum_{k\geq1}R_kz^k$, with $R_k\in\End(\bbH)\otimes\bbQ(\zeta)\fps q$, be the $R$-matrix of the formal quintic along the line $t=T(q)H$: the $R$-matrix of its semisimple cohomological field theory \cite[Section~4.1]{GJR18}, in Givental's convention. This means:
+\begin{itemize}
+\item[(a)] $R$ is symplectic: $R(-z)^T\eta\,R(z)=\eta$, as matrices in the flat basis;
+\item[(b)] for every colour $i$ the column $R(z)\tilde e_i\re^{u_i/z}$ solves the quantum differential equation $z\partial_Tv=H*v$, that is, $w\coloneqq R(z)\tilde e_i$ satisfies $z\partial_Tw+\mu_iw=H*w$ (\cref{cor:set-cyclicPF5}~(a)); thus the fundamental solution has the form $R(z)\re^{u/z}$ in the normalised canonical basis;
+\item[(c)] in the graph sums of \cref{def:set-graphsum}, $R$ acts with $R^{-1}(\psi)$ on the legs.
+\end{itemize}
+Its value at $q=0$ is the quoted input (QRR), \cref{thm:set-qrr}, and its graph sum is the cohomological field theory of the formal quintic, the quoted input (T), \cref{thm:set-GT}.
+
+The \emph{rows} are the lowered components $\Qr^{(i)}_a(z)\coloneqq\eta(H^a,R(z)\tilde e_i)\in\bbQ(\zeta)\fps q\fps z$, with the coefficients $\Qr^{(i)}_{a,n}\coloneqq\coef{z^n}\Qr^{(i)}_a$, and $\Qr$ denotes the matrix $(\Qr^{(i)}_a)$, with rows indexed by $a$ and columns by $i$. With $\zh=L^4z$ we \emph{define}
+\[
+\Phi_i(\zh,u)\coloneqq\frac{C_0\,\Qr^{(i)}_0(z)}{\zeta^iL},\qquad\text{i.e.}\quad\coef{\zh^n}\Phi_i\coloneqq\frac{C_0\,\Qr^{(i)}_{0,n}}{\zeta^iL^{4n+1}},
+\]
+and the coefficients $\mathrm{ph}_n(u)$ by $\Phi_0(\zh,u)=\sum_{n\geq0}\mathrm{ph}_n(u)\,\zh^n$, power series in $q=(1-u)/5^5$; $\mathrm{ph}_0=1$, because $R(0)=1$ and $\eta(1,\tilde e_0)=\Delta_0^{-1/2}=L/C_0$ (\cref{def:set-frob}). The \emph{flat amplitudes} are
+\[
+A_n\coloneqq\coef{z^n}\bigl(C_0\,\Qr^{(0)}_0\bigr)=L^{4n+1}\,\mathrm{ph}_n(L^{-5}),\qquad\text{so that}\quad\sum_nA_nz^n=L\,\Phi_0(L^4z,L^{-5}).
+\]
+\end{defn}
+
+\begin{proof}[Proof of \cref{prop:set-cyclicLR}~(iii) and of the end of \cref{cor:set-cyclicPF5}~(b)]
+For each colour $i$ put $w\coloneqq R(z)\tilde e_i$; by \cref{def:set-rows}~(b) it satisfies $z\partial_Tw+\mu_iw=H*w$. Taking lowered components as in the proof of \cref{prop:set-cyclicLR}~(ii), $z\partial_Tw_a+\mu_iw_a=\eta(H^a,H*w)=\eta(H*H^a,w)=\kappa^{\mathrm{LR}}_aw_{a+1}$ with $w_a=\Qr^{(i)}_a$; multiplying by $C_1$, with $\Dq=C_1\partial_T$ and $C_1\mu_i=\zeta^iL$ (\cref{cor:set-cyclicPF5}~(a)), gives $(z\Dq+\zeta^iL)\Qr^{(i)}_a=C_1\kappa^{\mathrm{LR}}_a\Qr^{(i)}_{a+1}$. Dividing by $\zeta^i$ gives the relations for $X_a$, with $C_1\kappa^{\mathrm{LR}}_4=C_0$ in the closing relation, and $X_0=\zeta^{-i}\Qr^{(i)}_0=L\Phi_i/C_0$ is the definition of $\Phi_i$. For the WKB form, the column $v=R(z)\tilde e_i\re^{u_i/z}$, with $\re^{u_i/z}$ a formal exponential, $\Dq\re^{u_i/z}=z^{-1}(\Dq u_i)\re^{u_i/z}$, solves $z\partial_Tv=H*v$ by \cref{def:set-rows}~(b); so \cref{cor:set-cyclicPF5}~(b) applies to it, and $C_0v_0=\re^{u_i/z}C_0\Qr^{(i)}_0=\zeta^i\re^{u_i/z}L\Phi_i$. Multiplying by the constant $z\zeta^{-i}$ gives the statement.
+\end{proof}
+
+The colour covariance $\Qr^{(i)}_{a,n}=\zeta^{i(a+1-n)}\Qr^{(0)}_{a,n}$, equivalently $\Phi_i(\zh,u)=\Phi_0(\zeta^{-i}\zh,u)$, is \cref{lem:gau-colrows}; the equation satisfied by $\Phi_0$ and its free coefficients are \cref{lem:gau-HPF}.
+
+\begin{thm}[The $R$-matrix at $q=0$, (QRR); quoted]
+\label{thm:set-qrr}
+For a finite multiset $\mathbf w$ of non-zero numbers put
+\begin{equation}
+\label{eq:set-hw}
+\hw(z)\coloneqq\exp\Bigl(-\sum_{k\geq1}\bk_k\,z^{2k-1}\sum_{a\in\mathbf w}a^{1-2k}\Bigr),\qquad\bk_k\coloneqq\frac{B_{2k}}{2k(2k-1)},
+\end{equation}
+and $\bw_i\coloneqq\{\zeta^i-\zeta^j\}_{j\neq i}\cup\{-5\zeta^i\}$. In Givental's convention (\cref{def:set-rows}), $R(q=0)=\diag(h_{\bw_0},\dots,h_{\bw_4})$ in the basis $\tilde e_i(q=0)$: $R(0,z)\tilde e_i(0)=h_{\bw_i}(z)\,\tilde e_i(0)$, where $R(0,z)$ is the part of order $q^0$ of $R(z)$, to all orders in $z$.
+\end{thm}
+
+This is \cite[proof of Lemma~5.2, (17)]{GJR18} and \cite[proof of Lemma~4.6, (19)--(20)]{GJR17} at $t=0$; both refer to \cite[Section~2.2, Theorem~1 and the Remark after it]{Giv01} and to \cite[Theorem~1, Corollary~1]{MR2276766}. It is the quoted input (QRR) of the note. It is used for every colour, and only in the following form.
+
+\emph{Form used.} For every colour $i$,
+\begin{equation}
+\label{eq:set-qrr}
+\Phi_i(z,1)=h_{\bw_i}(z);
+\end{equation}
+in particular, with $h\coloneqq h_{\bw_0}$ and $h_n\coloneqq\coef{z^n}h$, $A_n(q=0)=\mathrm{ph}_n(1)=h_n$. (In \cref{sec:gau} the colour-$0$ column of the actual $R$-matrix is written $\Phiact$, to distinguish it from the canonical one.)
+
+\begin{proof}[Proof of the form used]
+The point $q=0$ is $u=1$, where $L=1$, $\zh=z$ and $C_0=1$. For every $q$, $\eta(1,\tilde e_i)=\Delta_i^{1/2}\eta(1,e_i)=\Delta_i^{1/2}\eta(e_i,e_i)=\Delta_i^{-1/2}=\zeta^{-4i}L/C_0=\zeta^iL/C_0$ (\cref{cor:set-cyclicPF5}~(a) and the square roots of \cref{def:set-frob}). By (QRR), $R(0,z)\tilde e_i(0)=h_{\bw_i}(z)\tilde e_i(0)$, so the part of order $q^0$ of $\Qr^{(i)}_0$ is $h_{\bw_i}(z)\,\eta(1,\tilde e_i)|_{q=0}=\zeta^ih_{\bw_i}(z)$, and $\Phi_i(z,1)=\zeta^{-i}\Qr^{(i)}_0|_{q=0}=h_{\bw_i}(z)$.
+\end{proof}
+
+\begin{rmk}[The twist sign]
+\label{rmk:set-qrrsign}
+The weight $-5\zeta^i$ in $\bw_i$ is minus the weight $5\zeta^i$ of the fibre of $\cO(5)$ at $p_i$: this is the sign of a twist by an Euler class, for which the Chern root $5\zeta^i$ contributes the factor $\exp\bigl(+\sum_m\bk_m(z/5\zeta^i)^{2m-1}\bigr)=\exp\bigl(-\sum_m\bk_mz^{2m-1}(-5\zeta^i)^{1-2m}\bigr)$. The same sign appears in \cite[(17)]{GJR18}, in \cite[Corollary~1]{MR2276766} and in the vertex class \cite[(26)]{LP20} (\cref{rmk:set-qrrderiv}, Step~2). Pairing $j$ with $5-j$ gives $\frac1{1-\zeta^j}+\frac1{1-\zeta^{-j}}=1$, so $\sum_{j=1}^4\frac1{1-\zeta^j}=2$ and $\sum_{a\in\bw_0}a^{-1}=2-\frac15=\frac95$; hence $h_1=-\bk_1\cdot\frac95=-\frac1{12}\cdot\frac95=-\frac3{20}$, whereas the weight $+5$ would give $-\frac{11}{60}$. That $\mathrm{ph}_1=-\frac3{20}$ is forced, independently of (QRR), is part of \cref{lem:gau-HPF}.
+\end{rmk}
+
+\begin{rmk}[How (QRR) follows from the cohomological field theory]
+\label{rmk:set-qrrderiv}
+This remark is not used by the proofs of the note. It derives $R(q=0)$ from the cohomological field theory, assuming (T) and two classical facts on the Hodge bundle $\bbE$. The letter $\mathsf h$ is local.
+
+\emph{Step 1 (the quantum differential equation alone).} $R(0,z)$ is diagonal in the basis $\tilde e_i(0)$, with entries $c_i(z)\in\bbQ(\zeta)\fps z$, $c_i(0)=1$, $c_i(z)c_i(-z)=1$. Indeed, the $R$-matrix of \cite[Theorem~4.1]{GJR18} has the form $\mathbf E\exp h$ of \cite[8.7~Proposition~(ii)]{MR2917177}, with $\mathbf E$ a solution of the system of \cite[8.2~Proposition~(ii)]{MR2917177} and $\exp h$ constant and diagonal, so its columns solve the quantum differential equation, as in \cref{def:set-rows}~(b). In the form $(z\Dq+\Dq u_i)(R\tilde e_i)=C_1\,H*(R\tilde e_i)$ take the part of order $q^0$: $\Dq$ kills it, $\Dq u_i(0)=\zeta^i$, $C_1(0)=1$, and $H*$ at $q=0$ is the classical product. So $R(0,z)\tilde e_i(0)$ lies, coefficientwise in $z$, in the $\zeta^i$-eigenline of the classical multiplication by $H$, which is spanned by $\tilde e_i(0)$, the eigenvalues $\zeta^0,\dots,\zeta^4$ being distinct. The symplectic condition \cite[(5)]{PPZ15}, with $\eta(\tilde e_i,\tilde e_j)=\delta_{ij}$, gives $c_i(z)c_i(-z)=1$; so $c_i$ is the exponential of an odd series.
+
+\emph{Step 2 (the theory at $q=0$).} The part of order $q^0$ comes from the constant maps: $\overline{\mathcal M}_{g,n}(\bbP^4,0)=\overline{\mathcal M}_{g,n}\times\bbP^4$, the virtual class is $e(\bbE^\vee\boxtimes T_{\bbP^4})$ and $R\pi_*f^*\cO(5)=\cO(5)-\bbE^\vee\otimes\cO(5)$. In degree $0$ the insertions of $TH$ give classes pulled back along forgetful maps, whose push-forwards vanish, and the divisor equation holds for the classes; so the part of order $q^0$ at $t=TH$ is the degree-$0$ part. Localisation on $\bbP^4$ gives $\Omega_{g,n}(\gamma_1,\dots,\gamma_n)|_{q=0}=\sum_j\prod_k\gamma_k(p_j)\,H_g^{(p_j)}$ with \cite[(26)]{LP20}
+\[
+H_g^{(p_i)}=\frac{e(\bbE^*\otimes T_{p_i}\bbP^4)}{e(T_{p_i}\bbP^4)}\cdot\frac{5\lambda_i}{e(\bbE^*\otimes(5\lambda_i))}.
+\]
+Write $\mathsf h(w)\coloneqq e(\bbE^*\otimes\bbC_w)$ for the line $\bbC_w$ of weight $w$. Mumford's relation in the form $\mathsf h(w)\mathsf h(-w)=(-1)^gw^{2g}$ \cite[Section~2.1]{MR1728879} gives $H_g^{(p_i)}=W_i^{g-1}\prod_{a\in\bw_i}\mathsf h(a)/a^g$ with $W_i=\prod_{j\neq i}(\lambda_i-\lambda_j)/(5\lambda_i)=\Delta_i(0)$, and $\mathsf h(a)/a^g=\exp\bigl(-\sum_k(2k-2)!\,\mathrm{ch}_{2k-1}(\bbE)\,a^{1-2k}\bigr)$, using $\mathrm{ch}_{2k}(\bbE)=0$ for $k\geq1$. So in the basis $\tilde e_i(0)$, $\Omega|_{q=0}=\bigoplus_i\Omega^{(i)}$, where $\Omega^{(i)}_{g,n}(\tilde e_i,\dots,\tilde e_i)=\Delta_i(0)^{(2g-2+n)/2}\exp\bigl(\sum_ks^{(i)}_k\mathrm{ch}_{2k-1}(\bbE)\bigr)$, $s^{(i)}_k\coloneqq-(2k-2)!\sum_{a\in\bw_i}a^{1-2k}$, and mixed colours give $0$.
+
+\emph{Step 3 (Hodge classes as $R$-matrix actions).} For an odd series $h(z)=\sum_jh_{2j-1}z^{2j-1}$, the theory with the classes $\exp\{\sum_jh_{2j-1}\frac{(2j)!}{B_{2j}}\mathrm{ch}_{2j-1}(\bbE)\}$ times a rank-one TFT $\omega$ \cite[(8.6)]{MR2917177} is the transform $T_z^{-1}\circ\exp h(z)\circ T_z$ of $\omega$ \cite[8.7~Proposition~(i)]{MR2917177}. In the convention of \cite[Def.~2.13]{PPZ15} this is $\exp(h).\omega$: \cite[p.~20]{PPZ15} use the inverse $R$-matrix on the legs and state that Givental and Teleman use the same convention, and the sign is confirmed in genus one: for $R=\exp(\sum_kr_{2k-1}z^{2k-1})$ acting on the trivial rank-one theory, $\int_{\overline{\mathcal M}_{1,1}}(R.\omega)_{1,1}(1)=r_1(\int\kappa_1-\int\psi_1)+\frac{r_1}2=\frac{r_1}2$, the last term coming from the graph with one loop ($|\Aut|=2$, edge term $r_1$), while $\int_{\overline{\mathcal M}_{1,1}}a_1\lambda_1=a_1/24$ for the class $\exp(a_1\mathrm{ch}_1(\bbE)+\dots)$; so $r_1=a_1/12=a_1B_2/2!$, as $h_{2k-1}=a_kB_{2k}/(2k)!$ requires, whereas opposite conventions would change the sign of every odd coefficient. Matching $h_{2k-1}(2k)!/B_{2k}=s^{(i)}_k$ gives $h_{2k-1}=-\bk_k\sum_{a\in\bw_i}a^{1-2k}$, i.e.\ $\exp h=h_{\bw_i}$ by \eqref{eq:set-hw}; so $\Omega^{(i)}=h_{\bw_i}.\omega^{(i)}$, $\omega^{(i)}$ the rank-one TFT of colour $i$. For colour $0$, $a_1=-\sum_{a\in\bw_0}a^{-1}=-\frac95$ and $r_1=-\frac3{20}=h_1$ (\cref{rmk:set-qrrsign}).
+
+\emph{Step 4 (the graph sum at $q=0$).} By (T), $\Omega=R.\TFT$ (\cref{thm:set-GT}). For fixed $(g,n)$ and cohomological degree the graph sum is finite and polynomial in the coefficients of $R$ and $\TFT$, so taking the part of order $q^0$ commutes with it, and $\Omega|_{q=0}=R(0).\TFT(0)=\bigoplus_ic_i.\omega^{(i)}$ by Step~1: a diagonal $R$-matrix acting on a direct sum of rank-one TFTs keeps the colours, since a vertex term vanishes unless its half-edges have one colour and the edges and the translation are diagonal.
+
+\emph{Step 5 (uniqueness in rank one).} By Steps 2--4, $c_i.\omega^{(i)}=h_{\bw_i}.\omega^{(i)}$. With $\delta_i\coloneqq c_i/h_{\bw_i}=\exp(\sum_kd_kz^{2k-1})$ and the group property \cite[Prop.~2.14]{PPZ15}, $\delta_i.\omega^{(i)}=\omega^{(i)}$, i.e.\ by Step~3 $\exp\bigl(\sum_kd_k\frac{(2k)!}{B_{2k}}\mathrm{ch}_{2k-1}(\bbE)\bigr)=1$ on every $\overline{\mathcal M}_{g,n}$. Taking logarithms (the class is unipotent) and separating degrees, $d_k\frac{(2k)!}{B_{2k}}\mathrm{ch}_{2k-1}(\bbE)=0$. If for every $k\geq1$ the class $\mathrm{ch}_{2k-1}(\bbE)$ is non-zero in $H^*(\overline{\mathcal M}_{g,n})$ for some $(g,n)$, then $d_k=0$ for all $k$, $c_i=h_{\bw_i}$, and $R(q=0)=\diag(h_{\bw_i})$, which is (QRR). The rank-one theories are described in \cite[8.10~Proposition]{MR2917177}; that description is not used here.\draftnote{Mumford's relation $\mathrm{ch}_{2k}(\bbE)=0$ and, for every $k\geq1$, the non-vanishing of $\mathrm{ch}_{2k-1}(\bbE)$ in some $H^*(\overline{\mathcal M}_{g,n})$ are used here without a pinned statement}
+\end{rmk}
+
+\begin{lem}[Rotation of the colours]
+\label{lem:set-hrot}
+$h_{\bw_i}(z)=h_{\bw_0}(\zeta^{-i}z)$ for every $i$.
+\end{lem}
+
+\begin{proof}
+As multisets $\bw_i=\zeta^i\bw_0$, since $\zeta^i-\zeta^j=\zeta^i(1-\zeta^{j-i})$ and $-5\zeta^i=\zeta^i(-5)$. Hence $\sum_{a\in\bw_i}a^{1-2k}=\zeta^{i(1-2k)}\sum_{a\in\bw_0}a^{1-2k}$, and $z^{2k-1}\zeta^{i(1-2k)}=(\zeta^{-i}z)^{2k-1}$ in \eqref{eq:set-hw}.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The graph sum}
+\label{sec:set-graph}
+
+\begin{defn}[The Givental--Teleman graph sum]
+\label{def:set-graphsum}
+Let $\Omega$ be a cohomological field theory with unit $1$ \cite[Def.~0.3]{PPZ15} on a free module $V$ of finite rank with pairing $\eta$ over a commutative $\bbQ$-algebra, and let $R(z)=1+O(z)\in\End(V)\fps z$ be symplectic, $R(-z)^*R(z)=1$ with ${}^*$ the adjoint for $\eta$ \cite[(5)]{PPZ15}. The ancestor correlators are $\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\rangle_h\coloneqq\int_{\overline{\mathcal M}_{h,n}}\Omega_{h,n}(a_1,\dots,a_n)\prod_j\psi_j^{k_j}$; for $q\in V\fps z$ (a point of the loop space, in Givental's notation; not the parameter $q$) the dilaton-shifted potential is $\overline F^\Omega_h(q)\coloneqq\sum_n\frac1{n!}\langle(q+z1)^n\rangle_h$, a point being inserted through $z^ka\mapsto\psi^ka$ (base point $q=-z1$), and $\dd^n\overline F^\Omega_h(q)$ is its $n$-th derivative, the symmetric $n$-linear form $(x_1,\dots,x_n)\mapsto\sum_m\frac1{m!}\langle x_1\cdots x_n(q+z1)^m\rangle_h$ on $V\fps z$. The \emph{edge} and the \emph{leaf point} of $R$ are
+\begin{gather*}
+E_R(\psi,\psi')\coloneqq\frac{\eta^{-1}-\bigl(R^{-1}(\psi)\otimes R^{-1}(\psi')\bigr)\eta^{-1}}{\psi+\psi'}\in(V\otimes V)\fps{\psi,\psi'},\\
+q_R(z)\coloneqq R^{-1}(z)(-z1)=-z1+\ttr_R(z),
+\end{gather*}
+where $\eta^{-1}\in V\otimes V$ is the inverse bivector, $E_R$ is a power series by the symplectic condition \cite[Rem.~2.1, (6)]{PPZ15}, and $\ttr_R(z)\coloneqq z1-zR^{-1}(z)1\in z^2V\fps z$ is the translation of \cite[Def.~2.13]{PPZ15}. For a stable graph $\Gamma$ without legs, with vertices $v$ of genus $g_v$ and valence $n_v$ and of total genus $g=\sum_vg_v+h^1(\Gamma)$, the contraction
+\[
+\mathrm{Cont}_\Gamma[E,q;\Omega]\coloneqq|\Aut\Gamma|^{-1}\Bigl\langle\prod_v\dd^{n_v}\overline F^\Omega_{g_v}(q),\ \prod_eE\Bigr\rangle
+\]
+contracts, at each vertex, the $n_v$-th derivative of $\overline F^\Omega_{g_v}$ at $q$, one slot for each half-edge, with one copy of the bivector $E(\psi,\psi')$ for each edge, its two slots at the two half-edges of that edge; it includes the factor $|\Aut\Gamma|^{-1}$, so that sums over graphs carry no further factor. For $q=q_R$ the contraction is a finite sum, as $\ttr_R\in z^2V\fps z$. Let $R.\Omega$ be the unit-preserving action of \cite[Defs.~2.2, 2.5, 2.13]{PPZ15}: legs $R^{-1}(\psi)$, edges $E_R$, translation $\ttr_R$; \cite[p.~20]{PPZ15} use the inverse $R^{-1}$ on the legs, the convention of Givental and Teleman. The translation of \cite[Def.~2.5]{PPZ15} pushes the translation points forward along the forgetful maps, so that the half-edges carry the classes $\psi$ of $\overline{\mathcal M}_{g_v,n_v}$, whereas the vertex tensors above insert these points and use the classes $\psi$ of $\overline{\mathcal M}_{g_v,n_v+m}$. The two forms agree: for $g\geq2$, $\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$ is the term of $\Gamma$ in $\int_{\overline{\mathcal M}_g}(R.\Omega)_{g,0}$ (\cref{lem:set-pushins}~(iii) below). The sum $\sum_\Gamma\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$ over the leg-free stable graphs of genus $g$ is the \emph{graph sum of genus $g$}. The definitions and propositions of \cite{PPZ15} are stated over $\bbQ$; those used in the note are identities between finite sums, polynomial in the coefficients of the $R$-matrices and of the cohomological field theory, and they hold verbatim over every commutative $\bbQ$-algebra.
+
+\emph{Colours.} When $\Omega=\TFT$ (\cref{def:set-frob}), which vanishes on mixed colours, a \emph{coloured graph} is a stable graph with a colour at each vertex, and the term of $\Gamma$ is the sum over its colourings. For a constant isometry $A\colon(W,\eta_W)\to(V,\eta)$ and $A_*\Omega\coloneqq\Omega\circ(A^{-1})^{\otimes n}$ one has $A_*(R.\Omega)=(ARA^{-1}).(A_*\Omega)$, which is immediate from \cite[Defs.~2.2, 2.13]{PPZ15}; it gives the graph sum in the colour basis, whose edges and leaves are written out in \cref{sec:sgn}.
+\end{defn}
+
+\begin{lem}[The translation: push-forward and insertion]
+\label{lem:set-pushins}
+Let $\Omega$ be a cohomological field theory \cite[Def.~0.3]{PPZ15} on a free module $V$ of finite rank with pairing $\eta$ over a commutative $\bbQ$-algebra, with the correlators $\langle\cdots\rangle_h$ of \cref{def:set-graphsum}. Let $2h-2+n>0$, $m\geq0$, and let $p_m\colon\overline{\mathcal M}_{h,n+m}\to\overline{\mathcal M}_{h,n}$ forget the last $m$ points.
+\begin{enumerate}
+\item For $k_1,\dots,k_n\geq0$ and $c_1,\dots,c_m\geq1$, in $H^*(\overline{\mathcal M}_{h,n+m})$,
+\[
+\prod_{j=1}^n\psi_j^{k_j}\prod_{s=1}^m\psi_{n+s}^{c_s}=\prod_{j=1}^n(p_m^*\psi_j)^{k_j}\prod_{s=1}^m\psi_{n+s}^{c_s}.
+\]
+\item Let $\ttr\in z^2V\fps z$ and let $\ttr\Omega$ be the translation of $\Omega$ by $\ttr$ \cite[Def.~2.5]{PPZ15}. For $a_1,\dots,a_n\in V$ and $k_1,\dots,k_n\geq0$,
+\[
+(\ttr\Omega)_{h,n}(a_1,\dots,a_n)\prod_{j=1}^n\psi_j^{k_j}=\sum_{m\geq0}\frac1{m!}\,p_{m*}\Bigl(\Omega_{h,n+m}\bigl(a_1,\dots,a_n,\ttr(\psi_{n+1}),\dots,\ttr(\psi_{n+m})\bigr)\prod_{j=1}^n\psi_j^{k_j}\Bigr),
+\]
+where on the right $\psi_j$ is the class of $\overline{\mathcal M}_{h,n+m}$; consequently
+\[
+\int_{\overline{\mathcal M}_{h,n}}(\ttr\Omega)_{h,n}(a_1,\dots,a_n)\prod_{j=1}^n\psi_j^{k_j}=\sum_{m\geq0}\frac1{m!}\bigl\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\,\ttr^m\bigr\rangle_h ,
+\]
+$\ttr$ being inserted at $m$ further points through $z^ca\mapsto\psi^ca$. The sums are finite. If $\Omega$ has the unit $1$, the right side is $\dd^n\overline F^\Omega_h(q)(\psi^{k_1}a_1,\dots,\psi^{k_n}a_n)$ at $q=-z1+\ttr$.
+\item Let $\Omega$ have the unit $1$ and let $R(z)=1+O(z)$ be symplectic, as in \cref{def:set-graphsum}. For $g\geq2$ and every leg-free stable graph $\Gamma$ of genus $g$, $\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$ is the term of $\Gamma$ in $\int_{\overline{\mathcal M}_g}(R.\Omega)_{g,0}$, that is, $|\Aut\Gamma|^{-1}$ times the integral over $\overline{\mathcal M}_g$ of the contribution of $\Gamma$ in \cite[Def.~2.2]{PPZ15} to the action of $R$ on $\ttr_R\Omega$, which is $R.\Omega$ \cite[Def.~2.13]{PPZ15}. Consequently $\int_{\overline{\mathcal M}_g}(R.\Omega)_{g,0}$ is the graph sum of genus $g$. By \cite[Prop.~2.12]{PPZ15}, $R.\Omega$ is again a cohomological field theory with the unit $1$, to which (iii) applies.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) Let first $m=1$. For $N\geq0$ with $2h-2+N>0$ let $\pi\colon\overline{\mathcal M}_{h,N+1}\to\overline{\mathcal M}_{h,N}$ forget the last point, and for $j\leq N$ let $\delta_j$ be the class of the divisor of $\overline{\mathcal M}_{h,N+1}$ of the curves with a genus-$0$ component carrying only the markings $j$ and $N+1$ ($N$, $\pi$ and $\delta_j$ are local letters). The formula \cite[(8)]{PPZ15} for the map forgetting one point, $\pi^*(\psi_j^d)=\psi_j^d-\delta_j\,\pi^*(\psi_j^{d-1})$, gives $\pi^*\psi_j=\psi_j-\delta_j$ for $d=1$; for $d=2$ its right side is then $\psi_j^2-\delta_j\psi_j+\delta_j^2$, while $\pi^*(\psi_j^2)=(\psi_j-\delta_j)^2$, so $\psi_j\delta_j=0$. The automorphism of $\overline{\mathcal M}_{h,N+1}$ exchanging the markings $j$ and $N+1$ preserves the divisor and exchanges $\psi_j$ and $\psi_{N+1}$ under pull-back; hence $\psi_{N+1}\delta_j=0$ as well, that is, $\psi_j\psi_{N+1}=\pi^*(\psi_j)\,\psi_{N+1}$ for every $j\leq N$. It follows that, for $k_1,\dots,k_N\geq0$ and $c\geq1$,
+\[
+\textstyle\prod_{i=1}^N\psi_i^{k_i}\,\psi_{N+1}^c=\prod_{i=1}^N(\pi^*\psi_i)^{k_i}\,\psi_{N+1}^c,\tag{$*$}
+\]
+the classes $\psi_i$ on the left being those of $\overline{\mathcal M}_{h,N+1}$: replace the factors $\psi_i$ by their pull-backs one at a time, by the identity just proved, which needs only one factor $\psi_{N+1}$. For $N=n$, $\pi=p_1$ and $(*)$ is (i) for $m=1$. Let now $m\geq2$ and assume (i) for $m-1$. Write $p_m=p_{m-1}\circ\pi$, where $\pi\colon\overline{\mathcal M}_{h,n+m}\to\overline{\mathcal M}_{h,n+m-1}$ forgets the last point, and let $Y\coloneqq\prod_{s<m}\psi_{n+s}^{c_s}$ and $X\coloneqq\prod_j\psi_j^{k_j}\,Y$ (local letters) be these monomials in the classes of $\overline{\mathcal M}_{h,n+m-1}$. By $(*)$ for $\pi$, with $N=n+m-1$ and $c=c_m$, the left side of (i) is $\pi^*(X)\,\psi_{n+m}^{c_m}$. By (i) for $m-1$, $X=\prod_j(p_{m-1}^*\psi_j)^{k_j}\,Y$, so $\pi^*(X)=\prod_j(p_m^*\psi_j)^{k_j}\,\pi^*(Y)$; and by $(*)$ again, $\pi^*(Y)\,\psi_{n+m}^{c_m}=\prod_{s<m}\psi_{n+s}^{c_s}\,\psi_{n+m}^{c_m}$ in the classes of $\overline{\mathcal M}_{h,n+m}$. Together, the left side of (i) is the right side.
+
+(ii) By \cite[Def.~2.5]{PPZ15} and the convention stated after it, $(\ttr\Omega)_{h,n}(a_1,\dots,a_n)=\sum_m\frac1{m!}\,p_{m*}Z_m$ with $Z_m\coloneqq\Omega_{h,n+m}(a_1,\dots,a_n,\ttr(\psi_{n+1}),\dots,\ttr(\psi_{n+m}))$ (a local letter), where an argument $\ttr(\psi_{n+s})$ stands for $\sum_{c\geq2}\psi_{n+s}^c$ times the class with the argument $\ttr_c\coloneqq\coef{z^c}\ttr$. By the projection formula, $p_{m*}(Z_m)\prod_j\psi_j^{k_j}=p_{m*}\bigl(Z_m\prod_j(p_m^*\psi_j)^{k_j}\bigr)$. Each term of $Z_m$ is a class $\Omega_{h,n+m}(a_1,\dots,a_n,\ttr_{c_1},\dots,\ttr_{c_m})$ times $\prod_s\psi_{n+s}^{c_s}$ with every $c_s\geq2$, so by (i) the pulled-back classes $p_m^*\psi_j$ may be replaced by the classes $\psi_j$ of $\overline{\mathcal M}_{h,n+m}$; this is the first identity. The second follows by integration, since $\int_{\overline{\mathcal M}_{h,n}}p_{m*}(W)=\int_{\overline{\mathcal M}_{h,n+m}}W$ for every class $W$: the term $m$ becomes $\frac1{m!}\langle\psi^{k_1}a_1\cdots\psi^{k_n}a_n\,\ttr^m\rangle_h$. A term with $m$ translation points has degree at least $2m$ on $\overline{\mathcal M}_{h,n+m}$, of dimension $3h-3+n+m$, so it vanishes for $m>3h-3+n$, and only the $c_s\leq3h-3+n+m$ contribute. The last sentence is the definition of $\dd^n\overline F^\Omega_h$ in \cref{def:set-graphsum}, as $q+z1=\ttr$.
+
+(iii) By \cite[Def.~2.13]{PPZ15}, $R.\Omega$ is the action of \cite[Def.~2.2]{PPZ15} on the translation of $\Omega$ by $\ttr_R(z)=z1-zR^{-1}(z)1\in z^2V\fps z$. In \cite[Def.~2.2]{PPZ15}, $(R.\Omega)_{g,0}=\sum_\Gamma|\Aut\Gamma|^{-1}C_\Gamma$ (a local letter) over the leg-free stable graphs of genus $g$, where $C_\Gamma$ is the push-forward, along the gluing map $\prod_v\overline{\mathcal M}_{g_v,n_v}\to\overline{\mathcal M}_g$ of \cite[\S0.2, (1)]{PPZ15}, of the class obtained by placing $(\ttr_R\Omega)_{g_v,n_v}$ at each vertex and, at each edge, the bivector $E_R(\psi',\psi'')$ in the classes $\psi'$, $\psi''$ of its two half-edges on the moduli spaces of their vertices, and contracting; $E_R$ is the edge of \cite[Def.~2.2~(iii)]{PPZ15}, which, as all formulas of that definition, is formed with $R^{-1}$ \cite[p.~20]{PPZ15}. Since the push-forward preserves integrals, the term of $\Gamma$ is $|\Aut\Gamma|^{-1}$ times the integral of that class over $\prod_v\overline{\mathcal M}_{g_v,n_v}$. Expand every edge class into monomials $\psi'^{\,a}\psi''^{\,b}$ with coefficients in $V\otimes V$; only finitely many of them have degree at most the dimension. For each choice of monomials the integral over the product is the contraction, with these coefficients, of the tensor product over the vertices of the multilinear forms $(x_1,\dots,x_{n_v})\mapsto\int_{\overline{\mathcal M}_{g_v,n_v}}(\ttr_R\Omega)_{g_v,n_v}(x_1,\dots,x_{n_v})\prod_l\psi_l^{k_l}$, where $k_l$ is the exponent at the half-edge $l$ of $v$. By (ii), as $q_R+z1=\ttr_R$, this form is $\dd^{n_v}\overline F^\Omega_{g_v}(q_R)(\psi^{k_1}x_1,\dots,\psi^{k_{n_v}}x_{n_v})$. Summing over the monomials gives $|\Aut\Gamma|^{-1}\langle\prod_v\dd^{n_v}\overline F^\Omega_{g_v}(q_R),\prod_eE_R\rangle=\mathrm{Cont}_\Gamma[E_R,q_R;\Omega]$, and summing over $\Gamma$ gives the graph sum.
+\end{proof}
+
+\begin{thm}[The reconstruction (T); quoted]
+\label{thm:set-GT}
+The cohomological field theory of the formal quintic along the line, i.e.\ the classes $\Omega_{g,n}$ of \cref{def:set-fq} with $\Qn=\re^{T(q)}$ (which, by the divisor equation, is the theory at the point $t=T(q)H$ with $\Qn=1$), equals $R.\TFT$, with $R$ of \cref{def:set-rows} and $\TFT$ of \cref{def:set-frob} \cite[Theorem~(2) in (1.15)]{MR2917177}, \cite[Section~4.1, Theorem~4.1]{GJR18}. In particular, for $g\geq2$, since $F_g=\int_{\overline{\mathcal M}_g}\Omega_{g,0}$ (\cref{def:set-fq}), \cref{lem:set-pushins}~(iii) gives
+\[
+F_g=\sum_\Gamma\mathrm{Cont}_\Gamma[E_R,q_R;\TFT]
+\]
+as power series in $q$, the sum running over the leg-free stable graphs of genus $g$.
+\end{thm}
+
+This is the quoted input (T); its second assertion follows from the first by \cref{lem:set-pushins}~(iii), applied to $\TFT$ with its unit $1$ and to the symplectic series $R$ with $R(0)=1$ (\cref{def:set-rows}~(a)). In Theorems~A and~C it identifies the $R$-matrix whose rows enter the outer graph sum (\cref{sec:set-hat}) and define the normalisation series $\Dn$ (\cref{thm:gau-R0}); in Corollary~B it identifies the total with $F_g$ (\cref{cor:mai-gap}).
+
+\input{sections/s02_setup_5}

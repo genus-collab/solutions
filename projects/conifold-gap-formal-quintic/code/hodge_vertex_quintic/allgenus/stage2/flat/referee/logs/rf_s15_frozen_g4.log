@@ -1,0 +1,2 @@
+rf_s15 frozen genus-4 check (own engine, Frozen(P89, 12), Engine(N = 1), outer_sums(4); command run inline 2026-11-14):
+F_4(1) = 1/180000 expected 1/180000; 299 s

@@ -1,0 +1,8 @@
+r3_uadic.py  N = 10 (mod u^N), I = 12; v(u) = u tau^(-5/4); exact over Q
+[V] 2F1 coefficients from Pochhammer = 4/(5n+4): True;  v = 1 u + 5/9 u^2 + 220/567 u^3 + ..
+[U1] finite q (z-degree 25): top-down solution of Pi_i(q - s H) = 0 equals the frame formula on all 26 entries: True
+[U2] infinite q: Pi_i(q) = (Theta sigma)_i mod u^10 for 0 <= i <= 12: failures 0;  frames beyond the cut visible: 0
+[U2-C] CONTROL, frame sum cut at k - j <= 10: Pi_i(q) != (Theta sigma)_i for 13 of 13 values of i (expected > 0)
+[U3] last frame index k changing [u^m] sigma_j, (j, m, last, bound j + floor((5m-1)/4)): [(0, 1, 1, 1), (0, 9, 11, 11), (3, 9, 14, 14), (7, 8, 16, 16)]: True
+[C] CONTROL v = 1 + u: the u^0 part of sigma_0 (frame formula, k <= 60) changes at 48 values of (k, a); the u^0 part of Pi_0(q) changes at 61 values of m <= 60 (expected: both grow with the cut: no u-adic limit)
+RESULT: ALL CHECKS PASSED

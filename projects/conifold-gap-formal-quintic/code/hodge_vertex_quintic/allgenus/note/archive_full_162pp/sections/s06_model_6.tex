@@ -1,0 +1,80 @@
+% Section 6, part 6.
+\subsection{The lattice theorem}
+\label{sec:mod-lattice}
+
+\begin{lem}[Counting]
+\label{lem:mod-count}
+For every $w\geq 0$, $V_w$ has exactly $\mathrm d(w)$ basis triples $(m,k,b)$ with $b\neq 1$ and exactly $\mathrm e(w)$ with $b=1$.
+\end{lem}
+
+\begin{proof}
+Fix $m$ with $5m\leq w$ and put $r:=w-5m$. A triple with $b\neq 1$ needs $w_b+4k=r$ with $w_b\in\{1,4,3,2\}$ for $b=0,2,3,4$. These four weights meet every class modulo $4$ exactly once, so there is exactly one candidate $b$, and it works unless $w_b>r$; this happens only for the class $0$, where $w_2=4$ and $r=0$, that is $w=5m$. Hence the number is $\lfloor w/5\rfloor+1-[5\mid w]=\mathrm d(w)$. The triples with $b=1$ ($w_1=0$) are the pairs $(m,k)$ with $5m+4k=w$.
+\end{proof}
+
+\begin{lem}[The leg class]
+\label{lem:mod-classL}
+\begin{enumerate}
+\item $\bbQ[p,\bar p]=\bbQ[p,x]=\bbQ[v][p]+\bbQ[v][x]$, and $\bbQ[p,x]$ is a free $\bbQ[v,x]$-module with basis $1,p,p^2,p^3,p^4$.
+\item $\bbQ[v][p^{\pm1}]\cap\bbQ(v)[x]=\bbQ[v][x]$.
+\item $\cL\cap\bbQ[v][p^{\pm1}]=\bbQ[p,\bar p]$: a Laurent polynomial with coefficients in $\bbQ[v]$ lies in $\cL$ if and only if each of its terms $v^mp^j$ has $j\geq -m$.
+\item $\cL/\bbQ(v)[x]=\bbQ[p,\bar p]/\bbQ[v,x]=\bbQ[v][p]/\bbQ[v]=\bigoplus_{i=1}^4\bbQ[v,x]\,p^i$; it is free over $\bbQ[v]$, of dimension $\mathrm d(w)$ in weight $w$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) $\bar p=x-p^4/4$ gives $\bbQ[p,\bar p]=\bbQ[p,x]$, and $v=p\bar p=px-p^5/4$. The elements $p$ and $x$ are algebraically independent, since $p$ and $v$ are and $v=px-p^5/4$. The map $\bbQ[v,x][T]/(T^5-4xT+4v)\to\bbQ[p,x]$, $T\mapsto p$, is onto; its source is $\bbQ[x,T]$ (eliminate $v=(4xT-T^5)/4$), so by the independence it is an isomorphism, which gives the basis. Next, $\bbQ[v][p]+\bbQ[v][x]\subset\bbQ[p,\bar p]$. Conversely let $F\in\bbQ[p,\bar p]$ be homogeneous with a negative power of $p$, and let $v^mp^{-n}$ ($n>0$, $m\geq n$) be its term with the most negative exponent; by homogeneity it is the only term with this exponent. Since $x^n=\sum_t\binom nt4^{t-n}v^tp^{4n-5t}$ has the lowest term $v^np^{-n}$, subtracting a multiple of $v^{m-n}x^n$ gives an element of $\bbQ[p,\bar p]$ whose most negative exponent is larger; by induction $F\in\bbQ[v][p]+\bbQ[v][x]$. (ii) Let $P=\sum_{n\leq N}a_nx^n$ with $a_N\neq 0$ lie in $\bbQ[v][p^{\pm1}]$. Only $x^N$ contributes to $p^{4N}$, with the coefficient $a_N4^{-N}$, so $a_N\in\bbQ[v]$; induct on $N$. (iii) The inclusion $\supset$ follows from (i). If $F=R+P$ with $R\in\bbQ[v][p]$ and $P\in\bbQ(v)[x]$ is a Laurent polynomial over $\bbQ[v]$, then $P=F-R\in\bbQ[v][x]$ by (ii), so $F\in\bbQ[p,\bar p]$ by (i). (iv) The map $\bbQ[p,\bar p]\to\cL/\bbQ(v)[x]$ is onto because $\bbQ[v][p]\subset\bbQ[p,\bar p]$, with kernel $\bbQ[p,\bar p]\cap\bbQ(v)[x]=\bbQ[v,x]$ by (ii). By (i), $\bbQ[p,\bar p]/\bbQ[v,x]=\bigoplus_{i=1}^4\bbQ[v,x]p^i$. As the lowest term of $x^n$ is $v^np^{-n}$, $\bbQ[v][p]\cap\bbQ[v][x]=\bbQ[v]$, so the quotient is also $\bbQ[v][p]/\bbQ[v]$, whose weight-$w$ part has the basis $v^mp^{w-5m}$, $0\leq m\leq w/5$, $5m<w$: $\mathrm d(w)$ elements.
+\end{proof}
+
+\begin{lem}[Reduction modulo $v$]
+\label{lem:mod-modv}
+In every weight, $\Lambda\otimes\bbQ[v]/(v)\colon\mathbb F/v\mathbb F\to\mathsf N/v\mathsf N$ is an isomorphism; here $\Lambda$ is followed by the projection $\mathsf M\to\mathsf N$.
+\end{lem}
+
+\begin{proof}
+$\Lambda$ is graded and $\bbQ[v]$-linear with values in $\mathsf M$ (\cref{lem:mod-closure}). \emph{Source.} In weight $w$, $\mathbb F/v\mathbb F$ has the basis $\psi^kH^b$ with $w_b+4k=w$: one element if $4\nmid w$; $\{\psi^{n-1}H^2,\psi^nH\}$ if $w=4n\geq 4$; $\{H\}$ if $w=0$. \emph{Target.} $\mathsf N/v\mathsf N=\bbQ[p,\bar p]/(\bbQ[v,x]+p\bar p\,\bbQ[p,\bar p])\oplus\log p\cdot\bbQ[x]$. The ring $\bbQ[p,\bar p]$ is the polynomial ring in $p,\bar p$, and $\bbQ[p,\bar p]/(p\bar p)$ has the basis $1$, $p^a$, $\bar p^c$ ($a,c\geq 1$). The image of $\bbQ[v,x]$ is spanned by $1$ and the $x^n\equiv p^{4n}/4^n+\bar p^n$; so the first summand has the basis $\{p^a:a\geq 1\}$, with $\bar p^n\equiv -4^{-n}p^{4n}$, and $(\mathsf N/v\mathsf N)_w$ has the basis $\{p^w\}$ if $w\geq 1$, $4\nmid w$; $\{p^{4n},\log p\cdot x^n\}$ if $w=4n\geq 4$; $\{\log p\}$ if $w=0$. \emph{The map.} By \cref{lem:mod-closure}~(iii), $I$ induces a map on $\mathsf N/v\mathsf N$. By \cref{lem:mod-closure}~(i), $I(p^a)\equiv -p^{a+4}/(a+4)$ modulo $v\mathsf M$ for $a\geq 1$, so $\phi^b_k\equiv(-1)^kp^{w_b+4k}/\prod_{i=1}^k(w_b+4i)$ for $b=0,4,3$; since $\bar p\equiv -p^4/4$ modulo $\bbQ[v,x]$, $\phi^2_k\equiv(-1)^{k+1}p^{4k+4}/\big(4\prod_{i=1}^k(4+4i)\big)$; and by \cref{lem:mod-closure}~(ii) the $\log p$-component of $\phi^1_k$ is $(-1)^kx^k/k!$ modulo $v$. In weight $4n$ the matrix in these bases is triangular with non-zero diagonal entries; in the other weights it is a non-zero $1\times 1$ matrix (the factors $\varrho_b^{-1}$ do not matter).
+\end{proof}
+
+\begin{thm}[The lattice theorem]
+\label{thm:mod-lattice}
+For every $w\geq 0$:
+\begin{enumerate}
+\item[(a)] $V_w$ has $\mathrm d(w)$ basis triples with $b\neq 1$ and $\mathrm e(w)$ with $b=1$;
+\item[(b)] for $X\in\sKo\cap V_w$, $\Lambda(X)$ lies in $\bbQ[p,\bar p]=\bbQ[v][p]+\bbQ[v][x]$, exactly and not only modulo functions of $x$;
+\item[(c)] $\Lambda\colon\sKo\cap V_w\to(\cL/\bbQ(v)[x])_w$ is bijective, and both sides have dimension $\mathrm d(w)$;
+\item[(d)] $\Lambda\colon V_w\to\mathsf N_w$ is bijective; $\mathsf N$ is a free $\bbQ[v]$-module with basis $\{\Lambda(\psi^kH^b)\}$.
+\end{enumerate}
+The coefficients must lie in $\bbQ[v]$: over $\bbQ(v)$ the statement fails, since $\Lambda(H^2/v)=-1/p\notin\cL$.
+\end{thm}
+
+\begin{proof}
+(a) is \cref{lem:mod-count}. (b) $\Lambda(X)\in\mathsf M$ by \cref{lem:mod-closure}, and it is log-free by \cref{prop:mod-dii}, so $\Lambda(X)\in\bbQ[p,\bar p]$, which equals $\bbQ[v][p]+\bbQ[v][x]$ by \cref{lem:mod-classL}~(i). (d) $\Lambda\colon\mathbb F\to\mathsf N$ is a graded $\bbQ[v]$-linear map between modules with finite-dimensional homogeneous pieces, zero in negative weights. Let $C$ be its cokernel. By right exactness of $\otimes\bbQ[v]/(v)$ and \cref{lem:mod-modv}, $C/vC=0$. If $C\neq 0$, let $w$ be minimal with $C_w\neq 0$; then $(vC)_w=vC_{w-5}=0$, so $C_w=(C/vC)_w=0$, a contradiction. So $\Lambda$ is onto. Since $\dim V_w=\mathrm d(w)+\mathrm e(w)$ (\cref{lem:mod-count}) and $\dim\mathsf N_w=\mathrm d(w)+\mathrm e(w)$ (\cref{lem:mod-classL}~(iv), and $\dim\bbQ[v,x]_w=\mathrm e(w)$ as $v,x$ are algebraically independent), $\Lambda_w$ is bijective and $\mathsf N\cong\mathbb F$ is free. (c) By (b) the image lies in $\bbQ[p,\bar p]$, and $\cL/\bbQ(v)[x]=\bbQ[p,\bar p]/\bbQ[v,x]$ by \cref{lem:mod-classL}~(iv). If $\Lambda(X)\in\bbQ(v)[x]$, then $\Lambda(X)\in\bbQ[p,\bar p]\cap\bbQ(v)[x]=\bbQ[v,x]$ (\cref{lem:mod-classL}~(ii)), so $\Lambda(X)=0$ in $\mathsf N$ and $X=0$ by (d). Given $\phi\in(\bbQ[p,\bar p]/\bbQ[v,x])_w$, the element $X:=\Lambda^{-1}(\phi\oplus 0)$ of (d) has a log-free leg, so $X\in\sKo$ by \cref{prop:mod-dii}. Both sides have dimension $\mathrm d(w)$ by \cref{lem:mod-classL}~(iv). Finally $\Lambda(H^2)=\varrho_2^{-1}v/p=-v/p$, and $-1/p\notin\cL$ by \cref{lem:mod-classL}~(iii).
+\end{proof}
+
+\begin{cor}[Splitting of $V_w$]
+\label{cor:mod-split}
+$V_w=(\sKo\cap V_w)\oplus\operatorname{span}\{v^m\psi^kH:5m+4k=w\}$. Every $X\in V_w$ is $X_0+\sum a_{m,k}v^m\psi^kH$ with $X_0\in\sKo$, the $a_{m,k}$ being read off from the $\log p$-coefficient of $\Lambda(X)$.
+\end{cor}
+
+\begin{proof}
+The decomposition is \cref{lem:tra-frames}~(a) in weight $w$. Alternatively: by \cref{lem:mod-closure}~(ii) and induction, the $\log p$-coefficient of $\phi^1_k$ is $(-1)^kx^k/k!$ plus terms of lower degree in $x$, so the map that sends $X$ to the $\log p$-coefficient of $\Lambda(X)$, restricted to the span of the $v^m\psi^kH$, is triangular onto $\bbQ[v,x]_w$ ($v^m\psi^kH\leftrightarrow v^mx^k$), hence bijective; its kernel on $V_w$ is $\sKo\cap V_w$ by \cref{prop:mod-dii}.
+\end{proof}
+
+\begin{cor}[Splitting of $\sK\cap V_w$]
+\label{cor:mod-Ksplit}
+$\sK\cap V_w=(\sKo\cap V_w)\oplus\bbQ v^{w/5}H$ if $5\mid w$, and $\sK\cap V_w=\sKo\cap V_w$ otherwise. On $\sK$ the only legs beyond $\bbQ[p,\bar p]$ are multiples of $\log p$: for $X\in\sK\cap V_w$, $\Lambda(X)=\Lambda(X-\Pi_0(X)H)+\Pi_0(X)\log p$ with $\Lambda(X-\Pi_0(X)H)\in\bbQ[p,\bar p]$.
+\end{cor}
+
+\begin{proof}
+By \cref{prop:mod-dii}, $X\in\sK$ if and only if the $\log p$-coefficient $\sum_i\Pi_i(X)(-x)^i/i!$ of $\Lambda(X)$ does not involve $x$, that is, equals $\Pi_0(X)$, which lies in $\bbQ v^{w/5}$ (\cref{def:tra-tower}; zero unless $5\mid w$). Write $X=X_0+Y$ as in \cref{cor:mod-split}. Then $\Lambda(Y)$ has the same $\log p$-coefficient as $\Lambda(X)$, while $\Lambda(\Pi_0(X)H)=\Pi_0(X)\log p$ has the $\log p$-coefficient $\Pi_0(X)$; by injectivity on the span of the $v^m\psi^kH$, $Y=\Pi_0(X)H$. Conversely $\sKo\subset\sK$ and $H\in\sK$. The last statement follows from \cref{thm:mod-lattice}~(b), as $X-\Pi_0(X)H\in\sKo\cap V_w$.
+\end{proof}
+
+\begin{cor}[A basis of $\sKo\cap V_w$]
+\label{cor:mod-basis}
+The elements $v^m\fr(k,a)$ ($a\neq 1$) of weight $w$ form a basis of $\sKo\cap V_w$, and $\dim\sKo\cap V_w=\mathrm d(w)$.
+\end{cor}
+
+\begin{proof}
+By \cref{lem:tra-frames}~(b), (c) in the graded setting, the frame coordinates identify $\sKo\cap V_w$ with the families $(c_{(k,a)})_{a\neq 1}$ in which $c_{(k,a)}$ is a rational multiple of $v^{(w-4k-\nu_a-1)/5}$, zero unless the exponent is a non-negative integer; so the $v^m\fr(k,a)$ of weight $w$, that is the triples $(m,k,a)$ with $a\neq 1$ and $w_a+4k+5m=w$, form a basis. Their number is $\mathrm d(w)$ by \cref{thm:mod-lattice}~(a). (The same dimension follows from \cref{thm:mod-lattice}~(c).)
+\end{proof}
+
+\input{sections/s06_model_7}

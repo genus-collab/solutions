@@ -1,0 +1,17 @@
+====================================================================================================
+bv_run S1_g2_89_canon_staleM_k4   [2026-11-14T10:23:06]
+system S1: quintic f, g;  B -> B (1 + u/3 - 2u^2/7);  normalisation canon;  control staleM
+   rows: 95 of 100 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^3
+   CONTROL: E_M built with the QUINTIC tau (M not recomputed)
+PASS    rows symplectic mod (zhat^4, u^4)
+   graph sum: 7 inner graphs, wall 1 s, CPU 1 s
+   RESULT: 2 of 6 outer graphs with edges are SINGULAR
+      outer graph   1 (E=1, gv=[1]): [u^0..u^1] = ['0', '1/11250']
+      outer graph   2 (E=1, gv=[1, 1]): [u^0..u^1] = ['0', '-13/120000']
+   vertex graph [u^0..u^3] = ['1/1200', '-413/360000', '174193/453600000', '~-86666117/11850300000']
+   vertex graph in T'' = c0 T (c0 = 1): (1/1200) T''^-2 + (7/360000) T''^-1  -> NOT c_g T''^(2-2g) + 0
+   [control] in the quintic t_c: (1/1200) t_c^-2 + (7/360000) t_c^-1
+   [control] in the model v(u): (1/1200) v^-2 + (-517/3240000) v^-1
+   total, in T'': (1/1200) T''^-2 + (0) T''^-1
+   compared with R0 (same g, prime, window): 7 of 7 outer graphs in range differ (u^0..u^3): [0, 1, 2, 3, 4, 5, 6]
+BV_RUN S1_g2_89_canon_staleM_k4: checks passed; edge graphs singular [1, 2]; vertex law FAILS

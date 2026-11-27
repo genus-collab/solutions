@@ -1,0 +1,82 @@
+% Section 8 (part 4): proof of the 1-form lemma; PhiSP and the residue; Theorem P(a), statement and part (i).
+
+\begin{proof}
+(a) Replace each $\Gamma(1+y)$ by its Stirling form (\cref{def:fsp-stirling})
+\[
+\Gst(1+y)=y\,\Gst(y)=\sqrt{2\pi}\,y^{y+1/2}\re^{-y}\exp\Bigl(\sum_{k\geq1}\bk_ky^{1-2k}\Bigr),
+\]
+with $y=5\sigma/z$ for the numerator and $y=(\sigma-\zeta^j)/z$ for the factors of the denominator, and $\log(a/z)=\log a-\log z$. The terms in $(\log z)/z$ are $-(\log z/z)\,[5\sigma-\sum_j(\sigma-\zeta^j)]=0$, those linear in $\sigma/z$ are $[-5\sigma+\sum_j(\sigma-\zeta^j)]/z=0$, and $q^{\sigma/z}=\re^{\sigma\log q/z}$; what remains of order $1/z$ is $S(\sigma)/z$. At $\sigma=1/x$ write $\log(1/x-\zeta^j)=\log(1-\zeta^jx)-\log x$; with $\sum_j(1/x-\zeta^j)=5/x$ and $\log q+5\log5=\log(1-u)$ this gives $S(1/x)=-\Xi/x-\sum_j(1/x-\zeta^j)\log(1-\zeta^jx)$. Expanding $\log(1-\zeta^jx)=-\sum_n\zeta^{jn}x^n/n$ and summing over $j$, only the terms with $5\mid n$ survive in $\sum_j\log(1-\zeta^jx)$ and only those with $5\mid n+1$ in $\sum_j\zeta^j\log(1-\zeta^jx)$, and
+\[
+\sum_j(1/x-\zeta^j)\log(1-\zeta^jx)=-\sum_{m\geq1}\frac{x^{5m-1}}m+5\sum_{m\geq1}\frac{x^{5m-1}}{5m-1}=\cG(x).
+\]
+Then $\cG'(x)=\sum_mx^{5m-2}/m=-x^{-2}\log(1-x^5)$ gives $\dd\cW/\dd x$, which vanishes if and only if $\log(1-x^5)=\log(1-u)$.
+
+(b) The half-densities are $(5\sigma/z)^{1/2}$ from $\Gamma(1+5\sigma/z)$ and $((\sigma-\zeta^j)/z)^{-1/2}$ from the denominator; their product is $z^2(5\sigma/\prod_j(\sigma-\zeta^j))^{1/2}=z^2(5\sigma/(\sigma^5-1))^{1/2}$, and at $\sigma=1/x$ one has $5\sigma/(\sigma^5-1)=5x^4/(1-x^5)$ and $\dd\sigma=-\dd x/x^2$. The Stirling series contribute $\sum_k\bk_k[(5\sigma/z)^{1-2k}-\sum_j((\sigma-\zeta^j)/z)^{1-2k}]=\sum_k\bk_k(xz)^{2k-1}[5^{1-2k}-\sum_j(1-\zeta^jx)^{1-2k}]$, and $\sum_j(1-\zeta^jx)^{-r}=5\sum_{5\mid i}\binom{r-1+i}{i}x^i$ (expand and sum over $j$). The constant $-(2\pi)^{-2}\sqrt5$ and the power $z^2$ do not depend on $x$; what is left is $\re^{-\cW/z}\fa\,\dd x$. Every monomial of $\log\fa$ has $z$-degree at most its $x$-degree, hence so has every monomial of $\fa$.
+
+(c) With $x=sX$ and $z=s^4\zh$ one has $\Xi/(xz)=(\Xi/u)/(X\zh)$ with $\Xi/u=\sum_mu^{m-1}/m$, and $\cG(sX)/(s^4\zh)=\sum_mu^{m-1}X^{5m-1}/(m(5m-1)\zh)$; this is $\hat\cW/\zh$. Termwise in $u$,
+\[
+\hat\cW'(X)=\sum_m\frac{u^{m-1}}m(X^{5m-2}-X^{-2})=(uX^2)^{-1}\sum_m\frac{u^m}m(X^{5m}-1),
+\]
+which is the formula stated and vanishes at $X=1$; differentiating the logarithm at $X=1$ gives $\hat\cW''(1)=5/(1-u)$; and $\hat\cW(1)=5\sum_mu^{m-1}/(5m-1)=\frac54\sum_{n\geq0}4u^n/(5n+4)=\frac54\tau^{-1}$ (\cref{def:set-tau}). The Taylor coefficients at $X=1$ follow from those of $(1+t)^{-1}$ and $(1+t)^{5m-1}$. Finally $xz=uX\zh$ and $x^5=uX^5$ in (b).
+
+(d) By \cref{lem:fsp-univ,lem:fsp-const}, a normalised saddle series depends only on the Taylor coefficients of order at least $2$ of the phase at the critical point and on the normalised amplitude. For $y_j:=(\zeta^j-\sigma)/z$ the formal reflection identity \cref{lem:fsp-refl} gives $\log\Gst(y_j)+\log\Gst(1-y_j)=\log2\pi+(y_j-\frac12)(\log y_j-\log(-y_j))$, and $\log y_j-\log(-y_j)=\pi\ri\,\epsilon_j$ with an odd integer $\epsilon_j$ fixed by the branches. Since $1-y_j=1+(\sigma-\zeta^j)/z$, the product $\prod_j\Gst(1+(\sigma-\zeta^j)/z)^{-1}$ is a constant times $\re^{c/z}\re^{\pi\ri(\sum_j\epsilon_j)\sigma/z}\prod_j\Gst((\zeta^j-\sigma)/z)$, with $c$ independent of $\sigma$. Moreover $q^{\sigma/z}=\re^{(\lambda+\pi\ri\epsilon)\sigma/z}$ with an odd integer $\epsilon$, because the logarithms of $q$ and of $-q$ differ by an odd multiple of $\pi\ri$. So the second summand, in Stirling form, is a constant times $\re^{c/z}$ times the first with $\lambda$ replaced by $\lambda+\pi\ri e$, where $e:=\epsilon+\sum_j\epsilon_j$ is even. If $L$ is critical for both, then $e=0$ (step (5) of the proof of \cref{prop:gam-rational}). The two integrands then have the same phase up to an additive constant and the same amplitude up to a constant factor, so their normalised series coincide.
+\end{proof}
+
+\begin{defn}[The full-Stirling WKB function and the residue]
+\label{def:con-PhiSP}
+The \emph{full-Stirling WKB function} is the normalised stationary-phase series, with constant term $1$, of $\re^{-\hat\cW/\zh}\hat\fa\,\dd X$ at $X=1$:
+\[
+\PhiSP(\zh,u):=\SPh_{X=1}[-\hat\cW;\hat\fa](\zh)=\sum_{n\geq0}\mathrm{ph}^{\mathrm{SP}}_n(u)\zh^n,\qquad\mathrm{ph}^{\mathrm{SP}}_0=1 .
+\]
+Equivalently,
+\[
+\PhiSP=\mathrm{SP}_{X=1}\bigl[\re^{-\hat\cW/\zh}\hat\fa\,\dd X\bigr]\Big/\bigl((2\pi\zh/5)^{1/2}\re^{-\hat\cW(1)/\zh}\bigr),
+\]
+the full stationary phase of \cref{def:fsp-wick} divided by $(2\pi\zh/5)^{1/2}\re^{-\hat\cW(1)/\zh}$, which is the Gaussian factor $(2\pi\zh)^{1/2}\hat\cW''(1)^{-1/2}$ times the critical exponential $\re^{-\hat\cW(1)/\zh}$ times the amplitude value $\hat\fa(1;0)=(1-u)^{-1/2}$; in every comparison below this $\zh$-dependent factor is common to both sides. By \cref{lem:con-form}~(c) and \cref{lem:fsp-univ}, every $\mathrm{ph}^{\mathrm{SP}}_n$ lies in $\bbQ\fps{u}$. The \emph{residue} of the flat $1$-form is
+\[
+\cV:=\Res_{x=0}\re^{-\cW/z}\fa\,\dd x:=\sum_{k\geq1}\frac{(-\Xi/z)^k}{k!}\,[x^{k-1}]\bigl(\re^{-\cG/z}\fa\bigr).
+\]
+Since $\Xi\in u\bbQ\fps{u}$, $\cG\in x^4\bbQ\fps{x}$ and the coefficient of $x^a$ in $\fa$ has $z$-degree at most $a$, each $u$-order of $\cV$ is a finite sum, and $\cV\in z^{-1}\bbQ[z^{-1}]\fps{u}$.
+\end{defn}
+
+\subsection{Theorem P}
+\label{sec:con-P}
+
+The ring $\AL$ carries the derivation $\Dq$ with $\Dq L=(L^6-L)/5$; it contains $q=q(L)$, and $\Dq q=q$, so that $\Dq=q\,\dd/\dd q$ on $\AL$. Let $\jmath\colon\AL\to\bbQ\lser{s}$ be the ring homomorphism with $\jmath(L)=s^{-1}$; it is injective, because $\bbQ(L)\to\bbQ\lser{s}$, $L\mapsto s^{-1}$, is a field embedding.
+
+\begin{thm}[Theorem P(a)]
+\label{thm:con-Pa}
+Let $c(z;L)=\sum_nc_n(L)z^n$ be the full-Stirling saddle series, with $c_n\in\AL$ (\cref{def:gam-c,prop:gam-rational}).
+\begin{enumerate}
+\item $\PFfive^{L}\bigl(L\,c(z;L)\bigr)=0$ in $\AL\fps{z}$.
+\item In $\bbQ\lser{s}\fps{z}$ one has $\jmath(c)(z)=\PhiSP(s^{-4}z;s^5)$; that is, $\jmath(c_n)=s^{-4n}\mathrm{ph}^{\mathrm{SP}}_n$ for every $n$.
+\item $\PhiSP$ solves HPF in $\bbQ\fps{u}\fps{\zh}$.
+\item Every $\mathrm{ph}^{\mathrm{SP}}_n$ is a polynomial in $u$; hence $c_n(L)=L^{4n}\mathrm{ph}^{\mathrm{SP}}_n(L^{-5})$ in $\AL$, and $c_n\in\bbQ[L,L^{-1}]$.
+\end{enumerate}
+\end{thm}
+
+The proof of Theorem~P(a) uses no input from outside the note; part (ii) does not use (iv).
+
+\begin{proof}[Proof of (i)]
+In this proof $\mathsf S_0$ is the formal phase at $\sigma=L$ given by its Taylor data, which lie in $\AL$ (\cref{def:gam-c}), and $\sigma=L+t$. For $\chi\in\bbQ[\sigma,z]$ put $c\langle\chi\rangle(z;L):=\SPn_L[\mathsf S_0;\chi A_{\mathrm{St}}]/A_{\mathrm{St}}(L,0)$, so that $c=c\langle1\rangle$; the map $\chi\mapsto c\langle\chi\rangle$ extends $\AL[z]$-linearly to $\AL[\sigma,z]$ (\cref{def:fsp-wick}). The letters $\chi$, $a$, $b$, $b_z$ are local to this proof.
+
+\emph{Step 1 (the shift identity).} We apply \cref{lem:fsp-generic}. First, $\mathsf S_0'(L)=0$ and $\mathsf S_0''(\sigma)=5/(\sigma(1-\sigma^5))=-1/\delta(\sigma)$, $\delta(\sigma)=(\sigma^6-\sigma)/5$. Next, $A_{\mathrm{St}}(\sigma,0)^2=\re^{2\mathsf S_1}=5\sigma/\prod_j(\zeta^j-\sigma)=5\sigma/(1-\sigma^5)=-\mathsf r(\sigma)$, so the quotient of $A_{\mathrm{St}}(\sigma,0)$ by $A_{\mathrm{St}}(L,0)$ is $(\mathsf r(\sigma)/\mathsf r(L))^{1/2}$, the root with constant term $1$ at $L$. Finally $b:=\chi\,A_{\mathrm{St}}(\sigma,z)/A_{\mathrm{St}}(\sigma,0)=\chi\exp\bigl(\sum_kz^{2k-1}\mathsf S_{2k}(\sigma)\bigr)$ lies in $\bbA_\sigma\fps{z}$, because $\sigma^{-1}$ and the power sums $\sum_j(\zeta^j-\sigma)^{-r}\in(1-\sigma^5)^{-r}\bbQ[\sigma]$ lie in $\bbA_\sigma$. So $\chi A_{\mathrm{St}}/A_{\mathrm{St}}(L,0)=(\mathsf r(\sigma)/\mathsf r(L))^{1/2}b$, and \eqref{eq:fsp-generic} gives
+\begin{equation}
+\label{eq:con-shiftD}
+(z\Dq+L)\bigl(L\,c\langle\chi\rangle\bigr)=L\,c\langle\sigma\chi\rangle\quad\text{in }\AL\lser{z},\qquad\chi\in\bbQ[\sigma,z].
+\end{equation}
+
+\emph{Step 2 ($\PFfive$).} $\PFfive=(z\Dq)^5-1-q\prod_{k=1}^5(5z\Dq+kz)$, with $q$ acting by multiplication on the left. Iterating \eqref{eq:con-shiftD} and using the $\AL[z]$-linearity of $\chi\mapsto c\langle\chi\rangle$,
+\[
+\PFfive^{L}(L\,c)=L\Bigl(c\langle\sigma^5-1\rangle-c\bigl\langle q\textstyle\prod_{k=1}^5(5\sigma+kz)\bigr\rangle\Bigr).
+\]
+
+\emph{Step 3 (the shift).} By \cref{lem:con-form}~(d) and its proof, the phase $S$ of the second Mellin--Barnes summand has the same Taylor coefficients at $L$ as $\mathsf S_0$ in every order at least $1$, and its amplitude is a constant multiple of $A_{\mathrm{St}}$; so $S$ may replace $\mathsf S_0$ in $c\langle\cdot\rangle$. Put $a:=(\sigma^5-1)A_{\mathrm{St}}/A_{\mathrm{St}}(L,0)$ and let $b_z(t):=\exp\bigl((S(L+t+z)-S(L+t))/z\bigr)\,a(L+t+z)$ be its translate by $z$ (\cref{lem:fsp-transl}~(b)); the exponent lies in $\AL\fps{t,z}$ without constant term, because $S'(L)=0$. We claim
+\begin{equation}
+\label{eq:con-bz}
+b_z=q\prod_{k=1}^5(5\sigma+kz)\,A_{\mathrm{St}}/A_{\mathrm{St}}(L,0)\qquad\text{in }\AL\fps{t}\fps{z},\quad\sigma=L+t .
+\end{equation}
+Both sides lie in $\AL\fps{t}\fps{z}$ (the Taylor data of $A_{\mathrm{St}}/A_{\mathrm{St}}(L,0)$ at $L$ do, \cref{def:gam-c}), which embeds in $\AL(\zeta)\fps{t}\fps{z}$, $\AL(\zeta):=\AL\otimes\bbQ(\zeta)$, where $(L-\zeta^j)^{-1}$ exists; we prove \eqref{eq:con-bz} there, factor by factor, the product over $j$ being invariant under the Galois group of $\bbQ(\zeta)/\bbQ$. Write the Stirling-expanded second summand as the product of the six factors $\re^{\sigma\log q/z}$, $\Gst(1+5\sigma/z)$ and $\Gst(1+(\sigma-\zeta^j)/z)^{-1}$, $j=0,\dots,4$. Under $\sigma\mapsto\sigma+z$ the formal functional equation $\Gst(Y+1)=Y\,\Gst(Y)$ of \cref{lem:fsp-stirfe}, applied five times to the first Gamma factor and once to each of the others, with $1/Y=z/(5\sigma+kz)$ ($k=1,\dots,5$) and $1/Y=z/(\sigma+z-\zeta^j)$, all in $z\AL(\zeta)\fps{t}\fps{z}$, multiplies these factors by $q$, by $\prod_{k=1}^5(5\sigma/z+k)$ and by $z/(\sigma+z-\zeta^j)$ respectively; the terms in $\log z$ cancel before and after the shift, as in \cref{def:gam-c}. The product of the multipliers is $q\prod_k(5\sigma+kz)/((\sigma+z)^5-1)$, which is \eqref{eq:con-bz}. By \cref{lem:fsp-transl}~(b), $\SPn_L[S;b_z]=\SPn_L[S;a]$, that is, $c\langle q\prod_k(5\sigma+kz)\rangle=c\langle\sigma^5-1\rangle$; by Step 2, $\PFfive^{L}(L\,c)=0$.
+\end{proof}
+
+\input{sections/s08_connection_5}

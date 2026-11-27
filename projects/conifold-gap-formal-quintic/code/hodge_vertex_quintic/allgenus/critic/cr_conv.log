@@ -1,0 +1,35 @@
+== (1) vertex constants
+PASS g=2: c_g = 1/1200 in all four forms (= record)
+PASS g=3: c_g = 1/25200 in all four forms (= record)
+PASS g=4: c_g = 1/180000 in all four forms (= record)
+PASS g=5: c_g = 1/660000 in all four forms (= record)
+PASS g=6: c_g = 691/1023750000 in all four forms
+PASS g=7: c_g = 1/2250000 in all four forms
+PASS g=8: c_g = 3617/8925000000 in all four forms
+PASS g=9: c_g = 43867/89775000000 in all four forms
+PASS g=10: c_g = 174611/232031250000 in all four forms
+PASS g=11: c_g = 77683/53906250000 in all four forms
+PASS g=12: c_g = 236364091/70382812500000 in all four forms
+PASS x = p^4 + 4/p: F_2, F_3 = -1/3840, 1/258048 (xyswap direct TR: -1/3840, 1/258048)
+PASS TR F_2..F_5 on x = W = -1/240, 1/1008, -1/1440, 1/1056
+== (2) vanishing covector conventions (v = 1)
+PASS PiC(tau_k(H^b)) = (-1)^(k+1) [z^-k] Y^C_b reproduces the model's printed PiC list (MODEL_SINGULAR s.1)
+PASS gauge phi(tau_m(H^c)) / (u tau^(-1/2-m)) = -PiC on the printed list (GAUGE_IDENTITY_HAT s.2)
+PASS support rule: PiC(tau_m(H^b)) != 0 iff b = 1 - m mod 5 (m <= 60)
+PASS closed form |phi_m| = 1/(4^q q! (m-q)!), q = floor(m/5) (m <= 60)
+PASS theory worker's frames frame(1,0), (2,4), (3,3), (4,2) lie in ker PiC
+PASS one-point law at <tau_5(H)>_3: PiC F_3' = -1/604800, value on record 53/1209600 (law REFUTED off K)
+== (3) z^5 normalisation response at genus 4 (per unit m5, [u^4])
+PASS univ bridges (1,3) + (2,2) = 1/8400000 = model's 'bridges' term
+PASS sum over graphs = 0 = model's Delta_4(5) (a statement about the TOTAL)
+PASS per graph the response is non-zero: graphs 1, 2 singular at [u^4] (Conjecture N sees it)
+== (4) leaf bookkeeping
+PASS frame (0,0): gamma_t + w_1 = 7/10, 2 gamma_t + 2 w_1 - 4/3 = 1/15, p_14(0)/2 = -1/30
+PASS frame (1/3,-2/7): gamma_t + w_1 = 7/10, 2 gamma_t + 2 w_1 - 4/3 = 1/15, p_14(0)/2 = -1/30
+PASS g=2: gap minus leafless u^1 term = -(g-1) c_g/15 = -1/18000
+PASS g=3: gap minus leafless u^1 term = -(g-1) c_g/15 = -1/189000
+== (5) Euler-dilaton edge legs, curve x = z^4 + v/z, tau_0(1) <-> -z, tau_0(H) <-> -log z, tau_k = Int tau_(k-1) dx
+PASS psi 1 + v H <-> -(4/5) z^5
+PASS psi(psi 1 + v H) <-> -(16/45) z^9 + (v/5) z^4 (referee right; worker's -(2/5) z^9 is a slip) : [((4, 0, 1), Fraction(1, 5)), ((9, 0, 0), Fraction(-16, 45))]
+PASS Int^k(-(4/5) z^5) dx log-free for k <= 4, log z at k = 5: [0, 0, 0, 0, 1, 1]
+RESULT: ALL CHECKS PASSED

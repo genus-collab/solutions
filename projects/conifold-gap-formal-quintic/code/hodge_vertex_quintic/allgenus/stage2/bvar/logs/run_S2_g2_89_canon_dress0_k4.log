@@ -1,0 +1,21 @@
+====================================================================================================
+bv_run S2_g2_89_canon_dress0_k4   [2026-11-14T10:23:10]
+system S2: f (1 + u/3 - 2u^2/7 + 5u^3/11), g (1 - 3u/5 + u^2/2 + 2u^3/3);  B -> B (1 - 5u/4 + 7u^2/3);  normalisation canon;  control dress0
+   rows: 95 of 100 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^3
+   rows dressed by 1 + (1/7) u^0 zhat E_(2,1): flat-regular (mu(1,1) = 0), X^2 = 0, violates annihilation at zhat^1
+PASS    rows symplectic mod (zhat^4, u^4)
+   graph sum: 7 inner graphs, wall 1 s, CPU 1 s
+   RESULT: 6 of 6 outer graphs with edges are SINGULAR
+      outer graph   1 (E=1, gv=[1]): [u^0..u^1] = ['1/840', '-13/6300']
+      outer graph   2 (E=1, gv=[1, 1]): [u^0..u^1] = ['1/10080', '-1/21600']
+      outer graph   3 (E=2, gv=[0]): [u^0..u^1] = ['1/1960', '-13/14700']
+      outer graph   4 (E=2, gv=[0, 1]): [u^0..u^1] = ['1/5880', '-569/352800']
+      outer graph   5 (E=3, gv=[0, 0]): [u^0..u^1] = ['1/13720', '-37/27440']
+      outer graph   6 (E=3, gv=[0, 0]): [u^0..u^1] = ['1/20580', '-3/13720']
+   vertex graph [u^0..u^3] = ['1/1200', '-13/9000', '35107/40320000', '~647498177/26136000000']
+   vertex graph in T'' = c0 T (c0 = 1): (1/1200) T''^-2 + (0) T''^-1  -> c_2 (T'')^-2 + 0
+   [control] in the quintic t_c: (1/1200) t_c^-2 + (-1/3600) t_c^-1
+   [control] in the model v(u): (1/1200) v^-2 + (-3/4000) v^-1
+   total, in T'': (7223/2469600) T''^-2 + (-4721/1852200) T''^-1
+   compared with R0 (same g, prime, window): 7 of 7 outer graphs in range differ (u^0..u^3): [0, 1, 2, 3, 4, 5, 6]
+BV_RUN S2_g2_89_canon_dress0_k4: checks passed; edge graphs singular [1, 2, 3, 4, 5, 6]; vertex law holds

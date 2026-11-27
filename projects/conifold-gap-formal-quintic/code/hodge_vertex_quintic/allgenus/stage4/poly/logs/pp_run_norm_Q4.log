@@ -1,0 +1,17 @@
+pp_run_norm: Q = 4 (z^0..z^20), WKB to w^20, u-series mod u^19, frame (0,0), exact over Q
+(H) h_auto: ph_n(1) = h_n automatically for all n <= 20, 5 not | n: True (16 checks)
+degrees deg ph_n <= floor(4n/5) for n <= 20: True
+first-row extraction: all divisibility checks passed (regularity of P_0.)  [0.2 s]
+q=0  [z^0] c^act = 1   p^act_(5q,0)(0) = 1
+q=1  [z^5] c^act = 0   p^act_(5q,0)(0) = 43397/807975000
+q=2  [z^10] c^act = 0   p^act_(5q,0)(0) = 153074543599907/261129440250000000
+q=3  [z^15] c^act = 0   p^act_(5q,0)(0) = 413771318332542504477988261/4383536794477928718750000000000
+q=4  [z^20] c^act = 0   p^act_(5q,0)(0) = 465922604829709108967628849959695473356159323/1135993128510580971388083703125000000000000000
+   f_1 (free coefficient [u^4] ph_5, QRR) = 4537/3937500
+   f_2 (free coefficient [u^8] ph_10, QRR) = -177640111151/31007812500000
+   f_3 (free coefficient [u^12] ph_15, QRR) = -284328315069009259339/6226756347656250000000
+   f_4 (free coefficient [u^16] ph_20, QRR) = 1963656341145629520968888447777/98071412475585937500000000000
+RESULT (N) c^act = 1 through z^20: PASS
+CONTROL zero-free solution: c != 1 at z^5: True; c = 1/F_inf^QRR through z^20: True
+CONTROL stored normalisation: p_(5q,0)(0) = ['1', '0', '0', '0', '0']; [z^5] c = -43397/807975000 (= m5: True); c != 1: True
+time 0.9 s

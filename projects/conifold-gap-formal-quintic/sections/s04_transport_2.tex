@@ -1,0 +1,82 @@
+% Section 4, part 2 of 4: frames, the affine slice, coefficients of frames, frame expansion of bivectors.
+% Local letters: chi^q (the H-part of q), pr_{K_0}, f_j^{(k,a)} (the coefficients of frame(k,a)), n(c).
+
+\begin{lem}[frames]\genusstatus{AI-proposed, unchecked}
+\label{lem:tra-frames}
+Let $A$ be as in \cref{lem:tra-theta}, and $A\{z\} := \bbQ[v][z]$ in the graded, $A\{z\} := \bbQ\fps{u,z}$ in the $u$-adic setting.
+\begin{description}
+\item[(a)] $\cH^A_+ = \sKo^A\oplus A\{z\}H$. In the graded setting $V_w = (\sKo\cap V_w)\oplus(A\{z\}H\cap V_w)$ for every $w$.
+\item[(b)] For every $(k,a)$ with $a\neq 1$ there is exactly one element of $\sKo^A$ of the form $z^kH^a+\chi(z)H$ with $\chi(z)\in A\{z\}$; it is
+\[
+\fr(k,a) = z^kH^a+\sum_{j<k}f_jz^jH,\qquad f_j = c_{k,a,j}\,v^{(4(k-j)+\nu_a+1)/5},\quad c_{k,a,j}\in\bbQ,
+\]
+where $c_{k,a,j} = 0$ unless the exponent is an integer, which is then $\geq 1$. No element of $\sKo^A$ has the form $z^kH+\sum_{j<k}\chi_jz^jH$.
+\item[(c)] (Frame coordinates.) The map $\sKo^A\to\prod_{k\geq 0,\,a\neq 1}A$, $n\mapsto(n_{(k,a)})$, is injective. In the $u$-adic setting it is bijective; in the graded setting its image is the set of finitely supported families in $\bbQ[v]$, and on $\sKo\cap V_w$ the $(k,a)$-member is a rational multiple of $v^{(w-4k-\nu_a-1)/5}$. The inverse sends $(c_{(k,a)})$ to the sum of the summable family $(c_{(k,a)}\fr(k,a))$. In particular the projection $\mathrm{pr}_{\sKo}$ of $\cH^A_+$ onto $\sKo^A$ along $A\{z\}H$ is $\mathrm{pr}_{\sKo}(q) = \sum_{k,\,a\neq 1}q_{(k,a)}\fr(k,a)$.
+\item[(d)] The frames of the $u$-adic setting are the frames of the graded setting at $v = v(u)$.
+\end{description}
+Moreover $\fr(k,a) = z^kH^a$ if and only if $k<\nu_a+1$; these ten \emph{trivial frames} are those with $(k,a) = (0,0)$, $(0,2)$, $(1,2)$, $(2,2)$, $(3,2)$, $(0,3)$, $(1,3)$, $(2,3)$, $(0,4)$, $(1,4)$. For example
+\begin{gather*}
+\fr(1,0) = z1+vH =: \se,\qquad \fr(2,4) = z^2H^4+\tfrac{v^2}{2}H,\qquad \fr(3,3) = z^3H^3+\tfrac{v^3}{6}H,\\
+\fr(4,2) = z^4H^2-\tfrac{v^4}{24}H,\qquad \fr(6,0) = z^6\,1+vz^5H-\tfrac{v^5}{120}H ;
+\end{gather*}
+$\se$ is the Euler--dilaton vector.
+\end{lem}
+
+\begin{proof}
+\emph{The decomposition (a).} For $q\in\cH^A_+$ put $\chi^q := \Theta^{-1}((\Pi_i(q))_{i\geq 0})$ (\cref{lem:tra-theta}) and $\mathrm{pr}_{\sKo}(q) := q-\chi^q(z)H$. By the definition of $\Theta$, $\Pi_i(\chi^q(z)H) = (\Theta\chi^q)_i = \Pi_i(q)$, so $\mathrm{pr}_{\sKo}(q)\in\sKo^A$ and $q = \mathrm{pr}_{\sKo}(q)+\chi^q(z)H$; in the graded setting $(\Pi_i(q))_i$ is finitely supported and $\chi^q(z)$ is a polynomial. If $\chi(z)H\in\sKo^A$, then $\Theta\chi = 0$, hence $\chi = 0$ by the injectivity of $\Theta$: the sum is direct. For $q\in V_w$, $(\Pi_i(q))_i$ vanishes beyond the $z$-degree of $q$ and $\Pi_i(q)\in\bbQ v^{(w-4i)/5}$ (the paragraph on homogeneity after \cref{def:tra-tower}); by \cref{lem:tra-theta} $\chi^q_j\in\bbQ v^{(w-4j)/5}$, so $\chi^q(z)H$ and $\mathrm{pr}_{\sKo}(q)$ lie in $V_w$. This proves (a).
+
+\emph{Frames: (b) and (d).} For $a\neq 1$ put $\fr(k,a) := \mathrm{pr}_{\sKo}(z^kH^a)$. The sequence $(\Pi_i(z^kH^a))_i$, which is $(\Pi_0(z^{k-i}H^a))_i$, vanishes for $i>k$ by the shift rule \eqref{eq:tra-shift} and at $i = k$ by the value (ii) after \cref{def:tra-tower}; so it vanishes outside $[0,k)$, hence so does $\chi^{z^kH^a}$ (\cref{lem:tra-theta}), and $\fr(k,a) = z^kH^a+\sum_{j<k}f_jz^jH$ with $f_j := -\chi^{z^kH^a}_j$. Uniqueness: the difference of two such elements lies in $\sKo^A\cap A\{z\}H = 0$. An element $z^kH+\sum_{j<k}\chi_jz^jH\neq 0$ lies in $A\{z\}H$, hence not in $\sKo^A$, by (a). Exponents: in the graded setting $z^kH^a\in V_w$ with $w = 4k+\nu_a+1$, so by the proof of (a) $f_j\in\bbQ v^{(w-4j)/5} = \bbQ v^{(4(k-j)+\nu_a+1)/5}$, and $f_j = 0$ unless this exponent is a non-negative integer, i.e.\ unless $j\equiv k-\nu_a-1\pmod 5$; for $j\leq k-1$ and $a\neq 1$ (so $\nu_a\geq 0$) the exponent is at least $(4+1)/5 = 1$. For (d): the substitution $v\mapsto v(u)$ commutes with every $\Pi_i$ on polynomials in $z$ over $\bbQ[v]$, so a graded frame at $v(u)$ lies in the $u$-adic $\sKo$, has the form of (b), and is the $u$-adic frame by uniqueness.
+
+By \cref{lem:tra-theta} the frame condition $\Pi_i(\fr(k,a)) = 0$ ($i\geq 0$) reads $f_i+(Nf)_i = -\Pi_0(z^{k-i}H^a)$, i.e.
+\[
+f_i = -\Pi_0(z^{k-i}H^a)-\sum_{r\geq 1}\pi_rv^{4r}f_{i+5r}\qquad(0\leq i<k),
+\]
+from which the examples follow with \eqref{eq:tra-values}; e.g.\ for $\fr(6,0)$, $f_5 = -\Pi_0(z1) = v$ and $f_0 = -\Pi_0(z^6\,1)-\pi_1v^4f_5 = -v^5/120$. Trivial frames: if $k\geq\nu_a+1$, the index $j_0 := k-\nu_a-1$ satisfies $0\leq j_0<k$ and $j_0+5r>k$ for $r\geq 1$ (as $\nu_a\leq 3$), so the recursion gives $f_{j_0} = -\Pi_0(z^{\nu_a+1}H^a) = \varepsilon_av^{\nu_a+1}/(\nu_a+1)!\neq 0$; if $k<\nu_a+1$, no $j<k$ satisfies $j\equiv k-\nu_a-1\pmod 5$, since $1\leq k-j\leq\nu_a$, so all $f_j$ vanish. Counting the $k<\nu_a+1$ for $a = 0,2,3,4$ ($\nu_a = 0,3,2,1$) gives the ten trivial frames.
+
+\emph{Frame coordinates: (c).} Let $c = (c_{(k,a)})_{k\geq 0,\,a\neq 1}$ be a family in $A$, finitely supported in the graded setting, and write $f^{(k,a)}_j$ for the coefficient $f_j$ of $\fr(k,a)$. The coefficient $\coef{z^j}(\cdot)^b$ of $c_{(k,a)}\fr(k,a)$ is, for $b\neq 1$, $c_{(j,b)}$ if $(k,a) = (j,b)$ and $0$ otherwise; for $b = 1$ it is $c_{(k,a)}f^{(k,a)}_j$, of $u$-order at least $(4(k-j)+\nu_a+1)/5\geq(4(k-j)+1)/5$ by (b) and $\ord_uv\geq 1$. So the family $(c_{(k,a)}\fr(k,a))$ is summable; let $n(c)$ be its sum. As each $\Pi_i$ is of finite type, \cref{lem:tra-sum} gives $\Pi_i(n(c)) = 0$: $n(c)\in\sKo^A$, with $n(c)_{(k,a)} = c_{(k,a)}$ for $a\neq 1$. Conversely, for $n\in\sKo^A$ and $c_{(k,a)} := n_{(k,a)}$, $n-n(c)$ has no component with $a\neq 1$, so it lies in $\sKo^A\cap A\{z\}H = 0$ by (a). Hence $n\mapsto(n_{(k,a)})$ is bijective with inverse $c\mapsto n(c)$. For any $q$, $\mathrm{pr}_{\sKo}(q)$ and $\sum_{k,\,a\neq 1}q_{(k,a)}\fr(k,a)$ are elements of $\sKo^A$ with the components of $q$ for $a\neq 1$ ($\mathrm{pr}_{\sKo}$ changes only $H$-components); so they are equal, and
+\begin{equation}
+\label{eq:tra-decomp}
+q = \sum_{k,\,a\neq 1}q_{(k,a)}\fr(k,a)+\chi^q(z)H,\qquad \chi^q_j = q_{(j,1)}-\sum_{k>j,\,a\neq 1}q_{(k,a)}f^{(k,a)}_j,
+\end{equation}
+the last sum being $u$-adically convergent (finite in the graded setting). In the graded setting an element of $\sKo$ is a polynomial in $z$, so its frame coordinates are finitely supported, and on $\sKo\cap V_w$ the coordinate $n_{(k,a)} = \coef{z^k}n^a$ is the coefficient of a monomial $v^mz^kH^a$ of weight $w$, a rational multiple of $v^{(w-4k-\nu_a-1)/5}$; as $\Pi_i$ maps $V_w$ to $\bbQ v^{(w-4i)/5}$, $\sKo\cap\cH^{\mathrm{gr}}_+ = \bigoplus_w(\sKo\cap V_w)$.
+\end{proof}
+
+\begin{cor}[the affine slice]\genusstatus{AI-proposed, unchecked}
+\label{cor:tra-slice}
+$\sK^A = \sKo^A\oplus AH$, the decomposition being $q = (q-\Pi_0(q)H)+\Pi_0(q)H$. Moreover $-z1\in\sK^A$, so the affine slice $-z+\sK$ is the set $\{q\in\cH^A_+ : \Pi_i(q) = 0,\ i\geq 1\}$, i.e.\ $\sK^A$ itself; its points are written uniquely as $q = -z1+n+\mu H$ with $n\in\sKo^A$ and $\mu\in A$ (a local letter), and
+\[
+\Pi_0(-z1+n+\mu H) = v+\mu .
+\]
+\end{cor}
+
+\begin{proof}
+By the shift rule $\Pi_i(H) = 0$ for $i\geq 1$, and $\Pi_0(H) = 1$; so $H\in\sK^A$, $AH\cap\sKo^A = 0$, and $q-\Pi_0(q)H\in\sKo^A$ for $q\in\sK^A$. By \eqref{eq:tra-values} and the shift rule, $\Pi_0(-z1) = v$, $\Pi_1(-z1) = -\Pi_0(1) = 0$ and $\Pi_i(-z1) = 0$ for $i\geq 2$. Hence $-z1\in\sK^A$, and for $q = -z1+y$, $y = n+\mu H\in\sK^A$, linearity gives $\Pi_0(q) = v+\mu$.
+\end{proof}
+
+\begin{lem}[coefficients of frames]\genusstatus{AI-proposed, unchecked}
+\label{lem:tra-coeff}
+Over $\bbQ\fps{u}$, every $n\in\sKo$ is the sum of the summable family $(n_{(k,a)}\fr(k,a))$, where $\fr(k,a)\in\sKo\cap V_{4k+\nu_a+1}$ is homogeneous over $\bbQ[v]$, evaluated at $v(u)$, and every non-zero coefficient $f_j$ of $\fr(k,a)$ has the $v$-exponent $\wt(k,a)-\wt(j,1) = (4(k-j)+\nu_a+1)/5\geq 1$; every $q\in\sK$ is such a sum plus $\Pi_0(q)H$. So every insertion used in \cref{thm:red-main} is a $\bbQ\fps{u}$-combination, in the sense of summable families, of homogeneous elements of $\sKo$ and of $H$.
+\end{lem}
+
+\begin{proof}
+\Cref{lem:tra-frames}~(b)-(d) and \cref{cor:tra-slice}, with $\wt(k,a)-\wt(j,1) = ((4k+\nu_a-4)-(4j-1-4))/5$.
+\end{proof}
+
+\begin{lem}[frame expansion of bivectors]\genusstatus{AI-proposed, unchecked}
+\label{lem:tra-twoslot}
+For $E\in\bbH\otimes\bbH\otimes\bbQ\fps{\psi,\psi'}\fps{u}$ write $E^{ab}_{kl} := \coef{\psi^k\psi'^l}E^{ab}$ (first index: first slot), put $E_{\cdot,(l,b)} := \sum_{k,a}E^{ab}_{kl}\psi^kH^a$, an element of $\cH^u_+$ in the variable $\psi$, and
+\[
+(\Pi_i\otimes 1)E := \sum_{l,b}\Pi_i(E_{\cdot,(l,b)})\,\psi'^lH^b ;
+\]
+$(1\otimes\Pi_i)E$ is defined in the same way with the two slots exchanged. The following are equivalent: (i) $(\Pi_i\otimes 1)E = 0$ and $(1\otimes\Pi_i)E = 0$ for all $i\geq 0$; (ii) $E$ is the sum of the summable family $(E^{\alpha\beta}\,\fr_\alpha(\psi)\otimes\fr_\beta(\psi'))$ over $\alpha = (k,a)$, $\beta = (l,b)$ with $a,b\neq 1$, where $E^{\alpha\beta} := E^{ab}_{kl}$. The coefficients in (ii) are unique: they are the flat components of $E$ with $a,b\neq 1$.
+\end{lem}
+
+\begin{proof}
+The family in (ii) is summable for any coefficients in $\bbQ\fps{u}$: the coefficient of $\psi^{k'}\psi'^{l'}H^{a'}\otimes H^{b'}$ of the $(\alpha,\beta)$-term is a product of a coefficient of $\fr_\alpha$ and one of $\fr_\beta$; for $a'\neq 1$ only $\alpha = (k',a')$ contributes, for $a' = 1$ the $u$-order is at least $(4(k-k')+1)/5$ (the exponent of \cref{lem:tra-frames}~(b), with $\nu_a\geq0$ and $\ord_uv\geq1$), and likewise in the second slot. The same computation shows that the coefficient of $\psi^k\psi'^lH^a\otimes H^b$, $a,b\neq 1$, of the sum is $E^{\alpha\beta}$: this is the uniqueness.
+(ii)$\Rightarrow$(i): coefficientwise in the other slot, $\Pi_i\otimes 1$ and $1\otimes\Pi_i$ are of finite type and kill every term; apply \cref{lem:tra-sum}.
+(i)$\Rightarrow$(ii): for each $(l,b)$, $E_{\cdot,(l,b)}\in\sKo$ by the first half of (i), so $E_{\cdot,(l,b)} = \sum_\alpha E^{ab}_{kl}\fr_\alpha(\psi)$ over $\alpha = (k,a)$, $a\neq 1$ (\cref{lem:tra-frames}~(c)); regrouping the double family $\bigl(E^{ab}_{kl}\,\fr_\alpha(\psi)\otimes\psi'^lH^b\bigr)$ over $(\alpha,(l,b))$, summable by the computation of the first paragraph in the first slot (the second slot is a flat monomial), gives the summable family $(\fr_\alpha\otimes G_\alpha)_\alpha$ (\cref{conv:tra-forms}) and $E = \sum_\alpha\fr_\alpha(\psi)\otimes G_\alpha(\psi')$ with $G_\alpha := \sum_{l,b}E^{ab}_{kl}\psi'^lH^b$. By \cref{lem:tra-sum}, $0 = (1\otimes\Pi_i)E = \sum_\alpha\Pi_i(G_\alpha)\fr_\alpha(\psi)$, an element of $\sKo$ with frame coordinates $(\Pi_i(G_\alpha))_\alpha$, which therefore vanish. So $G_\alpha\in\sKo$ and $G_\alpha = \sum_\beta E^{\alpha\beta}\fr_\beta(\psi')$; the resulting double family is summable, with sum $E$.
+\end{proof}
+
+``Edges in $\sKo\otimes\sKo$'' means (ii), a completed tensor product made precise by summable families.
+
+\input{sections/s04_transport_3}

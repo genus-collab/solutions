@@ -1,0 +1,22 @@
+ch_chart: exact Q(zeta5): chart through z^1, Omega_7 through z^1, q = 0 chart through z^2; mod p: chart through z^2, Omega_7 through z^2; log logs/ch_chart_1_1_2_2_2.log
+PASS [Q(zeta)] L = 1 (q = 0): chart SP = h_(w_0)(z) exactly through z^2 (step (d))   0.1 s
+PASS [Q(zeta)] L = 2: chart SP = c(z; L) exactly through z^1 (steps (b)-(c))   0.1 s; c_1..c_3 = ['-12/5']
+PASS [Q(zeta)] L = 2: 7-variable SP of Omega_7 = c(z; L) exactly through z^1 (order (a) + Fubini)   0.0 s
+PASS [Q(zeta)] L = -2/3: chart SP = c(z; L) exactly through z^1 (steps (b)-(c))   0.1 s; c_1..c_3 = ['-4/135']
+PASS [F_p, p = 4611686018427388081] L = 1: chart SP = h through z^2
+PASS [F_p, p = 4611686018427388081] L = 3: chart SP = c(z; L) through z^2
+PASS [F_p, p = 4611686018427388081] L = 3: 7-variable SP of Omega_7 = c(z; L) through z^2
+PASS [F_p, p = 4611686018427388081] L = 5/4: chart SP = c(z; L) through z^2
+PASS [F_p, p = 4611686018427388081] L = -1/2: chart SP = c(z; L) through z^2
+     [F_p, p = 4611686018427388081] done in 0.4 s
+PASS [F_p, p = 1208925819614629174706261] L = 1: chart SP = h through z^2
+PASS [F_p, p = 1208925819614629174706261] L = 3: chart SP = c(z; L) through z^2
+PASS [F_p, p = 1208925819614629174706261] L = 3: 7-variable SP of Omega_7 = c(z; L) through z^2
+PASS [F_p, p = 1208925819614629174706261] L = 5/4: chart SP = c(z; L) through z^2
+PASS [F_p, p = 1208925819614629174706261] L = -1/2: chart SP = c(z; L) through z^2
+     [F_p, p = 1208925819614629174706261] done in 0.4 s
+PASS control: chart without the Jacobian X_0 of (L2) fails, first at z^1   [1, 2]
+PASS control: chart with measure dy/y fails, first at z^2 (z^1 is blind to it)   [2]
+PASS control: Omega_7 with dy/y (Gamma(5s)) differs from c(z; L)   [2]
+PASS control pair: Omega_7 with dy/y equals the sigma-form built with Gamma_St(5s) (consistent change), through z^2
+CH_CHART: ALL CHECKS PASSED   (1 s)

@@ -1,0 +1,3 @@
+run (2,4) graphs [0, 5608): 41250 entries, 626.8 s
+<user home>/AppData/Local/Temp/claude/d7c1b608d03d194a/37f24460-3601-4c85-b123-5156e19eb475/scratchpad/allgenus_model/loop.sh: line 6: [: 5608: integer expression expected
+LOOP (2,4) DONE at 5608 of 5608

@@ -1,0 +1,94 @@
+% Section 2, part 3 of 8: the Wronskian, operators of order three, proof of prop:set-cyclicLR, its corollary; points; Frobenius data.
+
+\begin{lem}[The Wronskian]
+\label{lem:set-wronskian}
+$\Wr(\mathfrak p_0,\dots,\mathfrak p_3)\coloneqq\det\bigl(\Dq^j\mathfrak p_k\bigr)_{j,k=0,\dots,3}=L^{10}$.
+\end{lem}
+
+\begin{proof}
+By \eqref{eq:set-PF4} the leading coefficient of $\PFfour$ is $1-5^5q=L^{-5}$, a unit, and its coefficient of $\Dq^3$ is $-6250q$. Differentiate the determinant row by row: the rows $j<3$ give determinants with two equal rows, and in the last row $\Dq^4\mathfrak p_k=-L^5\bigl(-6250q\,\Dq^3\mathfrak p_k+(\text{terms in }\Dq^2\mathfrak p_k,\Dq\mathfrak p_k,\mathfrak p_k)\bigr)$ for $k\leq3$ (\cref{lem:set-periods}), whose last terms are combinations of the other rows. Hence $\Dq\Wr=6250qL^5\,\Wr$. Also $\Dq L^{10}=10L^9\Dq L=6250qL^{15}=6250qL^5\,L^{10}$, by $\Dq L=5^4qL^6$. So $\Dq(\Wr\,L^{-10})=0$, and $\Wr\,L^{-10}$ is a constant (the constants of $\Dq$ on $\bbQ\fps q[\logq]$ are $\bbQ$, proof of \cref{lem:set-periods}), equal to its part of order $q^0$. Taking this part is a ring homomorphism to $\bbQ[\logq]$ on which $\Dq$ acts as $\dd/\dd\logq$; by $\tilde{\mathfrak p}_m(0)=\delta_{m0}$ it maps $\Dq^j\mathfrak p_k$ to $\logq^{k-j}/(k-j)!$ for $k\geq j$ and to $0$ for $k<j$, so it maps the determinant to that of an upper unitriangular matrix, which is $1$.
+\end{proof}
+
+\begin{lem}[Operators of order at most three]
+\label{lem:set-order3}
+If $\Theta=\sum_{j=0}^3r_j\Dq^j$ with $r_j\in\bbQ\lser q$ satisfies $\Theta\mathfrak p_k=0$ for $k=0,\dots,3$, then $\Theta=0$.
+\end{lem}
+
+\begin{proof}
+By \cref{lem:set-periods}, $\sum_k\mathfrak p_k\mathfrak w^k=\re^{\logq\mathfrak w}\cP(\mathfrak w,q)$. Since the $r_j$ do not involve $\logq$ and $\Dq\re^{\logq\mathfrak w}=\mathfrak w\re^{\logq\mathfrak w}$, the Leibniz rule gives, coefficientwise in $\mathfrak w$,
+\[
+\sum_k(\Theta\mathfrak p_k)\mathfrak w^k=\Theta\bigl(\re^{\logq\mathfrak w}\cP\bigr)=\re^{\logq\mathfrak w}\,\cP_\Theta,\qquad\cP_\Theta\coloneqq\sum_{j=0}^3r_j(\Dq+\mathfrak w)^j\cP\in\bbQ\lser q\fps{\mathfrak w}.
+\]
+The hypothesis says that the left side is $O(\mathfrak w^4)$; as $\re^{\logq\mathfrak w}$ is invertible with constant term $1$, $\cP_\Theta=O(\mathfrak w^4)$. Now $\coef{\mathfrak w^n}\cP_\Theta=\sum_{j=0}^3m_{nj}r_j$ with $m_{nj}\coloneqq\sum_{i\leq\min(j,n)}\binom ji\Dq^{j-i}\tilde{\mathfrak p}_{n-i}\in\bbQ\fps q$, $n,j=0,\dots,3$. Modulo $q$, $\Dq^e\tilde{\mathfrak p}_m\equiv0$ unless $e=0$ and $m=0$, because $\tilde{\mathfrak p}_m(0)=\delta_{m0}$ and $\Dq$ kills $q^0$; so $m_{nj}\equiv\delta_{nj}\bmod q$. Hence $\det(m_{nj})$ is a unit of $\bbQ\fps q$, and $\sum_jm_{nj}r_j=0$ for $n=0,\dots,3$ gives $r_j=0$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{prop:set-cyclicLR}]
+(i) By \cref{lem:set-unitfrob}, $\kappa^{\mathrm{LR}}_0=\kappa^{\mathrm{LR}}_2=1$ and $\kappa^{\mathrm{LR}}_3=\kappa^{\mathrm{LR}}_4$.
+
+\emph{The coefficient $\kappa^{\mathrm{LR}}_1$.} By \cref{lem:set-periods,lem:set-birkhoff}, $\mathfrak p_k=C_0\mathsf p^{(0)}_k$ with $\mathsf p^{(0)}_0=1$ and $\mathsf p^{(0)}_1=T$. For any four functions $f_k$, $\det(\Dq^j(C_0f_k))=C_0^4\det(\Dq^jf_k)$, because $\Dq^j(C_0f)$ is $C_0\Dq^jf$ plus a combination of the $\Dq^{j'}f$, $j'<j$, with coefficients independent of $f$; and $\det(\Dq^jf_k)=C_1^{0+1+2+3}\det(\partial_T^jf_k)$, because $\Dq=C_1\partial_T$, so that $\Dq^j$ is $C_1^j\partial_T^j$ plus terms with fewer $\partial_T$. With $f=(1,T,\mathsf p^{(0)}_2,\mathsf p^{(0)}_3)$ and $\partial_TT=1$,
+\[
+\det(\partial_T^jf_k)=\partial_T^2\mathsf p^{(0)}_2\,\partial_T^3\mathsf p^{(0)}_3-\partial_T^3\mathsf p^{(0)}_2\,\partial_T^2\mathsf p^{(0)}_3=\bigl(\partial_T^2\mathsf p^{(0)}_2\bigr)^2\,\partial_T\Bigl(\frac{\partial_T^2\mathsf p^{(0)}_3}{\partial_T^2\mathsf p^{(0)}_2}\Bigr)=(\kappa^{\mathrm{LR}}_1)^2\kappa^{\mathrm{LR}}_2
+\]
+by \cref{lem:set-birkhoff}. So \cref{lem:set-wronskian} gives $C_0^4C_1^6(\kappa^{\mathrm{LR}}_1)^2\kappa^{\mathrm{LR}}_2=L^{10}$, and with $\kappa^{\mathrm{LR}}_2=1$,
+\[
+\Bigl(\kappa^{\mathrm{LR}}_1-\frac{L^5}{C_0^2C_1^3}\Bigr)\Bigl(\kappa^{\mathrm{LR}}_1+\frac{L^5}{C_0^2C_1^3}\Bigr)=0
+\]
+in the domain $\bbQ\fps q$. The second factor has the constant term $2$ (\cref{lem:set-grading}; $C_0(0)=C_1(0)=L(0)=1$), so $\kappa^{\mathrm{LR}}_1=L^5/(C_0^2C_1^3)$.
+
+\emph{The coefficient $\kappa^{\mathrm{LR}}_3$.} Let $\Mcyc^{\mathrm{LR}}\coloneqq\partial_T^2\circ(\kappa^{\mathrm{LR}}_1)^{-1}\circ\partial_T^2\circ C_0^{-1}$, a differential operator with coefficients in $\bbQ\fps q$ ($C_0$, $C_1$ and $\kappa^{\mathrm{LR}}_1$ are units). By \cref{lem:set-birkhoff}, $\Mcyc^{\mathrm{LR}}\mathfrak p_0=\partial_T^2(\kappa^{\mathrm{LR}}_1)^{-1}\partial_T^21=0$, $\Mcyc^{\mathrm{LR}}\mathfrak p_1=0$ (as $\partial_T^2T=0$), $\Mcyc^{\mathrm{LR}}\mathfrak p_2=\partial_T^2\bigl((\kappa^{\mathrm{LR}}_1)^{-1}\kappa^{\mathrm{LR}}_1\bigr)=0$, $\Mcyc^{\mathrm{LR}}\mathfrak p_3=\partial_T\kappa^{\mathrm{LR}}_2=0$ and $\Mcyc^{\mathrm{LR}}\mathfrak p_4=\kappa^{\mathrm{LR}}_3$. In powers of $\Dq$, $\Mcyc^{\mathrm{LR}}=(\kappa^{\mathrm{LR}}_1C_0C_1^4)^{-1}\Dq^4+(\text{order}\leq3)$, and $\PFfour=L^{-5}\Dq^4+(\text{order}\leq3)$ by \eqref{eq:set-PF4}. So $\Mcyc^{\mathrm{LR}}-\chi\,\PFfour$, $\chi\coloneqq L^5/(\kappa^{\mathrm{LR}}_1C_0C_1^4)$, has order at most $3$ and kills $\mathfrak p_0,\dots,\mathfrak p_3$ (\cref{lem:set-periods}); by \cref{lem:set-order3} it vanishes:
+\[
+\Mcyc^{\mathrm{LR}}=\chi\,\PFfour .
+\]
+Hence $\kappa^{\mathrm{LR}}_3=\Mcyc^{\mathrm{LR}}\mathfrak p_4=\chi\,\PFfour\mathfrak p_4=\chi$ (\cref{lem:set-periods}), and by the value of $\kappa^{\mathrm{LR}}_1$, $\chi=C_0^2C_1^3/(C_0C_1^4)=C_0/C_1$. Finally $\kappa^{\mathrm{LR}}_4=\kappa^{\mathrm{LR}}_3$. This proves (i).
+
+(ii) For a solution $v$ of the quantum differential equation the Frobenius property and the commutativity of $*$ give $z\partial_T\eta(H^a,v)=\eta(H^a,H*v)=\eta(H*H^a,v)=\kappa^{\mathrm{LR}}_a\eta(H^{a+1},v)$, and $z\partial_T=C_1^{-1}z\Dq$; the pairing $\eta(H^a,\cdot)$ has constant coefficients, so it commutes with $\partial_T$.
+
+(iii) is proved after \cref{def:set-rows}, which defines the rows it concerns.
+\end{proof}
+
+Every step is an identity in $\bbQ\fps q$ or in $\bbQ\fps q[\logq]$; no truncation in $q$ and no analytic continuation is used. The proof uses (M), (G0)(a)--(d), \cref{lem:set-pf5} and the restrictions of $I$ to the fixed points (in the derivation of $\Dq\PFfour\mathfrak p_k=0$ in \cref{lem:set-periods} one colour suffices); it uses neither the cyclic form (CYC) of \cref{thm:gau-cyc} nor any statement in a conifold frame. The operator $\Mcyc^{\mathrm{LR}}$ is the large-radius analogue of the operator $\Mcyc$ of \cref{def:gau-conc}. The coefficient $\kappa^{\mathrm{LR}}_3=\Mcyc^{\mathrm{LR}}\mathfrak p_4$ is the one that sees the equivariant relation $H^5=1$: it involves the period $\mathfrak p_4$, which satisfies the inhomogeneous equation $\PFfour\mathfrak p_4=1$. Relations equivalent to (i) are stated, in other notation, in \cite[Props.~6.1--6.2]{GR19} and, for $a\leq3$, in \cite[Section~2.4.3, (17), and Section~2.4.4, (19)--(20)]{LP20}; the proof above does not use them.
+
+\begin{cor}[Eigenvalues, idempotents and the fifth-order equation]
+\label{cor:set-cyclicPF5}
+Assume (M) and (G0).
+\begin{itemize}
+\item[(a)] $(H*)^5=(L/C_1)^5$. The eigenvalues of $H*$ are $\mu_i\coloneqq\zeta^iL/C_1$ ($i\in\bbZ/5$), labelled by $\mu_i(0)=\zeta^i$, the classical eigenvalue at $p_i$. The idempotents are
+\[
+e_i=\frac15\sum_{a=0}^4\Bigl(\prod_{b<a}\kappa^{\mathrm{LR}}_b\Bigr)\mu_i^{-a}H^a,\qquad\Delta_i\coloneqq\frac1{\eta(e_i,e_i)}=\frac{C_0^2\,\zeta^{3i}}{L^2}.
+\]
+The canonical coordinates along the line are functions $u_i$ with $\partial_Tu_i=\mu_i$, that is $\Dq u_i=\zeta^iL$; they are determined up to additive constants, the constants of $\Dq$ on $\bbQ(\zeta)\fps q[\logq]$ being $\bbQ(\zeta)$ (as in the proof of \cref{lem:set-periods}; for the conifold chart see \cref{lem:set-canon}).
+\item[(b)] For every solution $v$ of $z\partial_Tv=H*v$ in a differential $\bbQ\fps q$-algebra in which $z$ is a constant, $C_0v_0$ solves $\PFfive$. In particular, for the column $v=R(z)\tilde e_i\re^{u_i/z}$ of \cref{def:set-rows}, the function $\re^{u_i/z}\,z\,L\,\Phi_i(\zh,u)$ solves $\PFfive$: this is the WKB form of colour $i$.
+\end{itemize}
+\end{cor}
+
+\begin{proof}
+(a) By \cref{prop:set-cyclicLR}~(i), $(H*)^5H^a=\kappa^{\mathrm{LR}}_a\kappa^{\mathrm{LR}}_{a+1}\cdots\kappa^{\mathrm{LR}}_{a+4}H^a$ and $\prod_a\kappa^{\mathrm{LR}}_a=L^5/C_1^5$. So $H*$ is the weighted cyclic shift with characteristic polynomial $x^5-(L/C_1)^5$; since $L/C_1\in1+q\bbQ\fps q$, its roots are the $\zeta^iL/C_1$, pairwise distinct. The eigenvector equation $H*x=\mu_ix$ for $x=\sum_ax_aH^a$ reads $x_a=x_{a-1}\kappa^{\mathrm{LR}}_{a-1}/\mu_i$, so $x_a=x_0\bigl(\prod_{b<a}\kappa^{\mathrm{LR}}_b\bigr)\mu_i^{-a}$, consistently around the cycle because $\prod_b\kappa^{\mathrm{LR}}_b=\mu_i^5$. As $*$ is commutative and associative with unit $1$, each eigenline of $H*$ is an ideal, and the five eigenlines, the eigenvalues being distinct, are spanned by the idempotents $e_i$, with $\sum_ie_i=1$. Write $x_0^{(i)}$ for the coefficient $x_0$ of $e_i$. The coefficient of $H^a$ in $\sum_ie_i=1$ is $\bigl(\prod_{b<a}\kappa^{\mathrm{LR}}_b\bigr)(C_1/L)^a\sum_ix_0^{(i)}\zeta^{-ia}=\delta_{a0}$ for $0\leq a\leq4$; as the matrix $(\zeta^{-ia})_{a,i}$ is invertible and $\sum_i\zeta^{-ia}=5\,\delta_{a0}$, the unique solution is $x_0^{(i)}=1/5$ for every $i$. By the Frobenius property $\eta(e_i,e_i)=\eta(1,e_i*e_i)=\eta(1,e_i)$, and $\eta(1,H^a)=5\,\delta_{a3}$ (\cref{def:set-fq}) gives $\eta(1,e_i)=\kappa^{\mathrm{LR}}_0\kappa^{\mathrm{LR}}_1\kappa^{\mathrm{LR}}_2\,\mu_i^{-3}=\kappa^{\mathrm{LR}}_1\mu_i^{-3}=L^2/(C_0^2\zeta^{3i})$. The canonical coordinates satisfy $\partial_Tu_i=\mu_i$, the eigenvalue of $H*$ on $e_i$; as $\Dq=C_1\partial_T$, this is $\Dq u_i=\zeta^iL$.
+
+(b) From $z\partial_Tv_a=\kappa^{\mathrm{LR}}_av_{a+1}$ for $a=0,\dots,3$ (\cref{prop:set-cyclicLR}~(ii)) one gets $v_1=z\partial_Tv_0$, $v_2=z^2(\kappa^{\mathrm{LR}}_1)^{-1}\partial_T^2v_0$, $v_3=z^3\partial_T\bigl((\kappa^{\mathrm{LR}}_1)^{-1}\partial_T^2v_0\bigr)$ and $v_4=z^4(\kappa^{\mathrm{LR}}_3)^{-1}\Mcyc^{\mathrm{LR}}(C_0v_0)$. In the proof of \cref{prop:set-cyclicLR}, $\Mcyc^{\mathrm{LR}}=\chi\,\PFfour$ as operators and $\chi=\kappa^{\mathrm{LR}}_3$, so $v_4=z^4\,\PFfour(C_0v_0)$. The closing relation $z\partial_Tv_4=\kappa^{\mathrm{LR}}_4v_0$ becomes $z^5C_1^{-1}\Dq\PFfour(C_0v_0)=(C_0/C_1)v_0$, i.e.\ $(z^5\Dq\PFfour-1)(C_0v_0)=0$, which is $\PFfive(C_0v_0)=0$ by \cref{lem:set-pf5}. The last statement concerns the rows and is proved after \cref{def:set-rows}.
+\end{proof}
+
+The statement that the rows lie in the differential ring of the periods, the third consequence of \cref{prop:set-cyclicLR}, is \cref{cor:gau-rowsNN}.
+
+\begin{defn}[Points and variables]
+\label{def:set-points}
+Put $u\coloneqq1-5^5q$ and $s\coloneqq u^{1/5}$, so that $L=u^{-1/5}=s^{-1}$ and $\Dq=q\,\dd/\dd q=-(1-u)\,\dd/\dd u$, and put $\zh\coloneqq z/s^4=L^4z$, the hatted variable. The \emph{large-radius point} is $q=0$ ($u=1$, $L=s=1$, $\zh=z$), the \emph{conifold point} is $u=0$ ($q=5^{-5}$), and the \emph{orbifold point} is $q=\infty$ ($L=0$). Near $q=0$ the functions of the note are elements of $\bbQ\fps q$ or $\bbQ\fps q[\logq]$; near the conifold point they are Laurent series in $s$, with $u=s^5$, $L=s^{-1}$ and $\Dq=-\frac{1-s^5}5s^{-4}\frac{\dd}{\dd s}$. The passage from the first description to the second is the conifold expansion of \cref{def:set-confexp}.
+\end{defn}
+
+\begin{defn}[Frobenius data and the topological field theory]
+\label{def:set-frob}
+At $\lambda_i=\zeta^i$ the pairing is (\cref{def:set-fq})
+\[
+\eta(H^a,H^b)=\sum_{i\in\bbZ/5}\frac{5\,\zeta^{i(a+b+1)}}{\prod_{j\neq i}(\zeta^i-\zeta^j)}=5\,\delta_{a+b\equiv3\bmod5},
+\]
+since $\prod_{j\neq i}(\zeta^i-\zeta^j)=5\zeta^{4i}$ is the derivative of $x^5-1$ at $\zeta^i$; as matrices $\eta^{-1}=\eta/25$, i.e.\ $\eta^{cc'}=\frac15\delta_{c+c'\equiv3}$. Along the line $t=T(q)H$ let $e_i$ be the idempotents and $\Delta_i=1/\eta(e_i,e_i)$ (\cref{cor:set-cyclicPF5}~(a)). The \emph{normalised canonical basis} is $\tilde e_i\coloneqq\Delta_i^{1/2}e_i$, so $\eta(\tilde e_i,\tilde e_j)=\delta_{ij}$, with the square roots
+\[
+\zeta^{1/2}\coloneqq\zeta^3,\qquad\Delta_i^{1/2}\coloneqq\zeta^{4i}\,C_0/L\in\bbQ(\zeta)\fps q,
+\]
+so that $(\Delta_i^{1/2})^2=\zeta^{8i}C_0^2/L^2=\Delta_i$. At $q=0$, $\Delta_i(0)=W^0_i\coloneqq\prod_{j\neq i}(\lambda_i-\lambda_j)/(5\lambda_i)=\zeta^{3i}$. The \emph{topological field theory of the formal quintic} is the TFT $\TFT$ on $\bbH\otimes\bbQ(\zeta)\fps q$ with
+\[
+\TFT_{g,n}(\tilde e_i,\dots,\tilde e_i)\coloneqq\Delta_i^{(2g-2+n)/2}=(\zeta^{4i}C_0/L)^{2g-2+n},
+\]
+and $\TFT_{g,n}$ vanishing on mixed colours; its unit is $1_{\TFT}\coloneqq\sum_i\Delta_i^{-1/2}\tilde e_i=\sum_ie_i=1$. We also regard $\TFT$ as a TFT on the colour space, with the orthonormal basis $\tilde e_i$ ($i\in\bbZ/5$) and the unit $1_{\TFT}$. By \cref{thm:set-GT}, since $R(0)=1$, $\TFT$ is the degree-zero part of the cohomological field theory along the line.
+\end{defn}
+
+\input{sections/s02_setup_4}

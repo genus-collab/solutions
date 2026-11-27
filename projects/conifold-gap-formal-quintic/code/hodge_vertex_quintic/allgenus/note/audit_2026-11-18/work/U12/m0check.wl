@@ -1,0 +1,17 @@
+nmax = 8;
+T[k_, f_] := Expand[-f + (t/5) (k f - 4 t D[f, t])];
+F0 = 1 + Sum[c[n] t^n, {n, 1, nmax + 2}];
+F1 = T[-1, F0]; F2 = -T[-2, F1]; F3 = T[2, F2]; F4 = -T[1, F3];
+cl = Expand[F0 + T[0, F4]];
+eqs = Table[Coefficient[cl, t, n] == 0, {n, 1, nmax + 3}];
+sol = Solve[eqs[[1 ;; nmax + 2]], Table[c[n], {n, 1, nmax + 2}]][[1]];
+Fs = Normal[Series[# /. sol, {t, 0, nmax}]] & /@ {F0, F1, F2, F3, F4};
+Print["Fs0 = ", Fs[[1]]];
+z5 = Exp[2 Pi I/5];
+Rh[t_] := Table[z5^(i (b + 1)) (Fs[[b + 1]] /. t0_ :> t0) /. Global`t -> z5^(-i) t, {b, 0, 4}, {i, 0, 4}];
+Rht = Table[z5^(i (b + 1)) (Fs[[b + 1]] /. Global`t -> z5^(-i) s), {b, 0, 4}, {i, 0, 4}];
+Rhm = Rht /. s -> -s;
+J = Table[If[Mod[a + b, 5] == 3, 1/5, 0], {a, 0, 4}, {b, 0, 4}];
+NN = Transpose[Rhm].J.Rht;
+NNs = Map[Normal[Series[#, {s, 0, nmax}]] &, NN, {2}];
+Print["max deviation symbolic: ", Simplify[FullSimplify /@ Flatten[NNs - IdentityMatrix[5]]] // Union];

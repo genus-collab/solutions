@@ -1,0 +1,101 @@
+rf_crctrl.py: critic falsifier with the H^2 leg v/p replaced by v^2/p^6; KMAX=12 WMAX=48
+== Test A: TR monodromy constant term mu_0 versus the vanishing covector PiC
+ b=0: k=1: mu0=1 v^1 PiC=-1 ratio=-1; k=6: mu0=1/480 v^5 PiC=-1/480 ratio=-1; k=11: mu0=1/11612160 v^9 PiC=-1/11612160 ratio=-1
+ b=1: k=0: mu0=1 v^0 PiC=1 ratio=1; k=5: mu0=1/96 v^4 PiC=1/96 ratio=1; k=10: mu0=1/1290240 v^8 PiC=1/1290240 ratio=1
+ b=2: k=4: mu0=-3/32 v^4 PiC=1/24 ratio=-9/4; k=9: mu0=-1/46080 v^8 PiC=1/161280 ratio=-7/2
+ b=3: k=3: mu0=1/2 v^3 PiC=-1/6 ratio=-3; k=8: mu0=1/6720 v^7 PiC=-1/20160 ratio=-3
+ b=4: k=2: mu0=1 v^2 PiC=-1/2 ratio=-2; k=7: mu0=1/1440 v^6 PiC=-1/2880 ratio=-2; k=12: mu0=1/58060800 v^10 PiC=-1/116121600 ratio=-2
+FAIL ratio not eps^k: b=2 k=9
+ eps = 1 ; c_b eps^k0 = {0: Fraction(-1, 1), 1: Fraction(1, 1), 2: Fraction(-9, 4), 3: Fraction(-3, 1), 4: Fraction(-2, 1)}
+ non-zero comparisons: 13 ; zero-pattern slots: 52
+== Test B: log-free combinations (= K_0) have legs in L = Q[v][p] + Q(v)[x]
+ w= 0: |S|= 1 rank(log map)= 1 dim K_0= 0 (expected  0), in L: 0/0, rank mod x = 0 = dim L_w/Q[x] 0
+ w= 1: |S|= 1 rank(log map)= 0 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 2: |S|= 1 rank(log map)= 0 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 3: |S|= 1 rank(log map)= 0 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+FAIL w=4: a log-free combination is NOT in L (remainder [((4, 0, 0), Fraction(-9, 16)), ((9, 0, -1), Fraction(-5, 16)), ((14, 0, -2), Fraction(-15, 256))])
+ w= 4: |S|= 2 rank(log map)= 1 dim K_0= 1 (expected  1), in L: 0/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 5: |S|= 2 rank(log map)= 1 dim K_0= 1 (expected  1), in L: 1/1, rank mod x = 1 = dim L_w/Q[x] 1
+ w= 6: |S|= 2 rank(log map)= 0 dim K_0= 2 (expected  2), in L: 2/2, rank mod x = 2 = dim L_w/Q[x] 2
+ w= 7: |S|= 2 rank(log map)= 0 dim K_0= 2 (expected  2), in L: 2/2, rank mod x = 2 = dim L_w/Q[x] 2
+FAIL w=8: a log-free combination is NOT in L (remainder [((3, 0, 1), Fraction(-3, 16)), ((8, 0, 0), Fraction(1, 32)), ((13, 0, -1), Fraction(5, 256))])
+ w= 8: |S|= 3 rank(log map)= 1 dim K_0= 2 (expected  2), in L: 1/2, rank mod x = 2 = dim L_w/Q[x] 2
+FAIL w=9: a log-free combination is NOT in L (remainder [((4, 0, 1), Fraction(-9, 16)), ((9, 0, 0), Fraction(-5, 16)), ((14, 0, -1), Fraction(-15, 256))])
+ w= 9: |S|= 3 rank(log map)= 1 dim K_0= 2 (expected  2), in L: 1/2, rank mod x = 2 = dim L_w/Q[x] 2
+ w=10: |S|= 3 rank(log map)= 1 dim K_0= 2 (expected  2), in L: 2/2, rank mod x = 2 = dim L_w/Q[x] 2
+ w=11: |S|= 3 rank(log map)= 0 dim K_0= 3 (expected  3), in L: 3/3, rank mod x = 3 = dim L_w/Q[x] 3
+FAIL w=12: a log-free combination is NOT in L (remainder [((2, 0, 2), Fraction(-3, 32)), ((7, 0, 1), Fraction(1, 32)), ((12, 0, 0), Fraction(-1, 1024))])
+ w=12: |S|= 4 rank(log map)= 1 dim K_0= 3 (expected  3), in L: 2/3, rank mod x = 3 = dim L_w/Q[x] 3
+FAIL w=13: a log-free combination is NOT in L (remainder [((3, 0, 2), Fraction(-3, 16)), ((8, 0, 1), Fraction(1, 32)), ((13, 0, 0), Fraction(5, 256))])
+ w=13: |S|= 4 rank(log map)= 1 dim K_0= 3 (expected  3), in L: 2/3, rank mod x = 3 = dim L_w/Q[x] 3
+FAIL w=14: a log-free combination is NOT in L (remainder [((4, 0, 2), Fraction(-9, 16)), ((9, 0, 1), Fraction(-5, 16)), ((14, 0, 0), Fraction(-15, 256))])
+ w=14: |S|= 4 rank(log map)= 1 dim K_0= 3 (expected  3), in L: 2/3, rank mod x = 3 = dim L_w/Q[x] 3
+ w=15: |S|= 4 rank(log map)= 1 dim K_0= 3 (expected  3), in L: 3/3, rank mod x = 3 = dim L_w/Q[x] 3
+FAIL w=16: a log-free combination is NOT in L (remainder [((1, 0, 3), Fraction(-3, 32)), ((6, 0, 2), Fraction(1, 48)), ((11, 0, 1), Fraction(-3, 1024))])
+ w=16: |S|= 5 rank(log map)= 1 dim K_0= 4 (expected  4), in L: 3/4, rank mod x = 4 = dim L_w/Q[x] 4
+FAIL w=17: a log-free combination is NOT in L (remainder [((2, 0, 3), Fraction(-3, 32)), ((7, 0, 2), Fraction(1, 32)), ((12, 0, 1), Fraction(-1, 1024))])
+ w=17: |S|= 5 rank(log map)= 1 dim K_0= 4 (expected  4), in L: 3/4, rank mod x = 4 = dim L_w/Q[x] 4
+FAIL w=18: a log-free combination is NOT in L (remainder [((3, 0, 3), Fraction(-3, 16)), ((8, 0, 2), Fraction(1, 32)), ((13, 0, 1), Fraction(5, 256))])
+ w=18: |S|= 5 rank(log map)= 1 dim K_0= 4 (expected  4), in L: 3/4, rank mod x = 4 = dim L_w/Q[x] 4
+FAIL w=19: a log-free combination is NOT in L (remainder [((4, 0, 3), Fraction(-9, 16)), ((9, 0, 2), Fraction(-5, 16)), ((14, 0, 1), Fraction(-15, 256))])
+ w=19: |S|= 5 rank(log map)= 1 dim K_0= 4 (expected  4), in L: 3/4, rank mod x = 4 = dim L_w/Q[x] 4
+FAIL w=20: a log-free combination is NOT in L (remainder [((0, 0, 4), Fraction(27, 1792)), ((5, 0, 3), Fraction(1, 240)), ((10, 0, 2), Fraction(-73, 30720))])
+ w=20: |S|= 6 rank(log map)= 2 dim K_0= 4 (expected  4), in L: 3/4, rank mod x = 4 = dim L_w/Q[x] 4
+FAIL w=21: a log-free combination is NOT in L (remainder [((1, 0, 4), Fraction(-3, 32)), ((6, 0, 3), Fraction(1, 48)), ((11, 0, 2), Fraction(-3, 1024))])
+ w=21: |S|= 6 rank(log map)= 1 dim K_0= 5 (expected  5), in L: 4/5, rank mod x = 5 = dim L_w/Q[x] 5
+FAIL w=22: a log-free combination is NOT in L (remainder [((2, 0, 4), Fraction(-3, 32)), ((7, 0, 3), Fraction(1, 32)), ((12, 0, 2), Fraction(-1, 1024))])
+ w=22: |S|= 6 rank(log map)= 1 dim K_0= 5 (expected  5), in L: 4/5, rank mod x = 5 = dim L_w/Q[x] 5
+FAIL w=23: a log-free combination is NOT in L (remainder [((3, 0, 4), Fraction(-3, 16)), ((8, 0, 3), Fraction(1, 32)), ((13, 0, 2), Fraction(5, 256))])
+ w=23: |S|= 6 rank(log map)= 1 dim K_0= 5 (expected  5), in L: 4/5, rank mod x = 5 = dim L_w/Q[x] 5
+FAIL w=24: a log-free combination is NOT in L (remainder [((4, 0, 4), Fraction(1, 960)), ((9, 0, 3), Fraction(-67, 92160)), ((14, 0, 2), Fraction(79, 430080))])
+ w=24: |S|= 7 rank(log map)= 2 dim K_0= 5 (expected  5), in L: 4/5, rank mod x = 5 = dim L_w/Q[x] 5
+FAIL w=25: a log-free combination is NOT in L (remainder [((0, 0, 5), Fraction(27, 1792)), ((5, 0, 4), Fraction(1, 240)), ((10, 0, 3), Fraction(-73, 30720))])
+ w=25: |S|= 7 rank(log map)= 2 dim K_0= 5 (expected  5), in L: 4/5, rank mod x = 5 = dim L_w/Q[x] 5
+FAIL w=26: a log-free combination is NOT in L (remainder [((1, 0, 5), Fraction(-3, 32)), ((6, 0, 4), Fraction(1, 48)), ((11, 0, 3), Fraction(-3, 1024))])
+ w=26: |S|= 7 rank(log map)= 1 dim K_0= 6 (expected  6), in L: 5/6, rank mod x = 6 = dim L_w/Q[x] 6
+FAIL w=27: a log-free combination is NOT in L (remainder [((2, 0, 5), Fraction(-3, 32)), ((7, 0, 4), Fraction(1, 32)), ((12, 0, 3), Fraction(-1, 1024))])
+ w=27: |S|= 7 rank(log map)= 1 dim K_0= 6 (expected  6), in L: 5/6, rank mod x = 6 = dim L_w/Q[x] 6
+FAIL w=28: a log-free combination is NOT in L (remainder [((3, 0, 5), Fraction(1, 2880)), ((8, 0, 4), Fraction(-163, 737280)), ((13, 0, 3), Fraction(235, 3354624))])
+ w=28: |S|= 8 rank(log map)= 2 dim K_0= 6 (expected  6), in L: 5/6, rank mod x = 6 = dim L_w/Q[x] 6
+FAIL w=29: a log-free combination is NOT in L (remainder [((4, 0, 5), Fraction(1, 960)), ((9, 0, 4), Fraction(-67, 92160)), ((14, 0, 3), Fraction(79, 430080))])
+ w=29: |S|= 8 rank(log map)= 2 dim K_0= 6 (expected  6), in L: 5/6, rank mod x = 6 = dim L_w/Q[x] 6
+FAIL w=30: a log-free combination is NOT in L (remainder [((0, 0, 6), Fraction(27, 1792)), ((5, 0, 5), Fraction(1, 240)), ((10, 0, 4), Fraction(-73, 30720))])
+ w=30: |S|= 8 rank(log map)= 2 dim K_0= 6 (expected  6), in L: 5/6, rank mod x = 6 = dim L_w/Q[x] 6
+FAIL w=31: a log-free combination is NOT in L (remainder [((1, 0, 6), Fraction(-3, 32)), ((6, 0, 5), Fraction(1, 48)), ((11, 0, 4), Fraction(-3, 1024))])
+ w=31: |S|= 8 rank(log map)= 1 dim K_0= 7 (expected  7), in L: 6/7, rank mod x = 7 = dim L_w/Q[x] 7
+FAIL w=32: a log-free combination is NOT in L (remainder [((2, 0, 6), Fraction(1, 5760)), ((7, 0, 5), Fraction(-419, 5160960)), ((12, 0, 4), Fraction(6511, 268369920))])
+ w=32: |S|= 9 rank(log map)= 2 dim K_0= 7 (expected  7), in L: 6/7, rank mod x = 7 = dim L_w/Q[x] 7
+FAIL w=33: a log-free combination is NOT in L (remainder [((3, 0, 6), Fraction(1, 2880)), ((8, 0, 5), Fraction(-163, 737280)), ((13, 0, 4), Fraction(235, 3354624))])
+ w=33: |S|= 9 rank(log map)= 2 dim K_0= 7 (expected  7), in L: 6/7, rank mod x = 7 = dim L_w/Q[x] 7
+FAIL w=34: a log-free combination is NOT in L (remainder [((4, 0, 6), Fraction(1, 960)), ((9, 0, 5), Fraction(-67, 92160)), ((14, 0, 4), Fraction(79, 430080))])
+ w=34: |S|= 9 rank(log map)= 2 dim K_0= 7 (expected  7), in L: 6/7, rank mod x = 7 = dim L_w/Q[x] 7
+FAIL w=35: a log-free combination is NOT in L (remainder [((0, 0, 7), Fraction(27, 1792)), ((5, 0, 6), Fraction(1, 240)), ((10, 0, 5), Fraction(-73, 30720))])
+ w=35: |S|= 9 rank(log map)= 2 dim K_0= 7 (expected  7), in L: 6/7, rank mod x = 7 = dim L_w/Q[x] 7
+FAIL w=36: a log-free combination is NOT in L (remainder [((1, 0, 7), Fraction(1, 5760)), ((6, 0, 6), Fraction(-263, 6193152)), ((11, 0, 5), Fraction(9433, 984023040))])
+ w=36: |S|=10 rank(log map)= 2 dim K_0= 8 (expected  8), in L: 7/8, rank mod x = 8 = dim L_w/Q[x] 8
+FAIL w=37: a log-free combination is NOT in L (remainder [((2, 0, 7), Fraction(1, 5760)), ((7, 0, 6), Fraction(-419, 5160960)), ((12, 0, 5), Fraction(6511, 268369920))])
+ w=37: |S|=10 rank(log map)= 2 dim K_0= 8 (expected  8), in L: 7/8, rank mod x = 8 = dim L_w/Q[x] 8
+FAIL w=38: a log-free combination is NOT in L (remainder [((3, 0, 7), Fraction(1, 2880)), ((8, 0, 6), Fraction(-163, 737280)), ((13, 0, 5), Fraction(235, 3354624))])
+ w=38: |S|=10 rank(log map)= 2 dim K_0= 8 (expected  8), in L: 7/8, rank mod x = 8 = dim L_w/Q[x] 8
+FAIL w=39: a log-free combination is NOT in L (remainder [((4, 0, 7), Fraction(1, 960)), ((9, 0, 6), Fraction(-67, 92160)), ((14, 0, 5), Fraction(79, 430080))])
+ w=39: |S|=10 rank(log map)= 2 dim K_0= 8 (expected  8), in L: 7/8, rank mod x = 8 = dim L_w/Q[x] 8
+FAIL w=40: a log-free combination is NOT in L (remainder [((0, 0, 8), Fraction(39799, 255467520)), ((5, 0, 7), Fraction(-263, 30965760)), ((10, 0, 6), Fraction(460987, 88562073600))])
+ w=40: |S|=11 rank(log map)= 3 dim K_0= 8 (expected  8), in L: 7/8, rank mod x = 8 = dim L_w/Q[x] 8
+FAIL w=41: a log-free combination is NOT in L (remainder [((1, 0, 8), Fraction(1, 5760)), ((6, 0, 7), Fraction(-263, 6193152)), ((11, 0, 6), Fraction(9433, 984023040))])
+ w=41: |S|=11 rank(log map)= 2 dim K_0= 9 (expected  9), in L: 8/9, rank mod x = 9 = dim L_w/Q[x] 9
+FAIL w=42: a log-free combination is NOT in L (remainder [((2, 0, 8), Fraction(1, 5760)), ((7, 0, 7), Fraction(-419, 5160960)), ((12, 0, 6), Fraction(6511, 268369920))])
+ w=42: |S|=11 rank(log map)= 2 dim K_0= 9 (expected  9), in L: 8/9, rank mod x = 9 = dim L_w/Q[x] 9
+FAIL w=43: a log-free combination is NOT in L (remainder [((3, 0, 8), Fraction(1, 2880)), ((8, 0, 7), Fraction(-163, 737280)), ((13, 0, 6), Fraction(235, 3354624))])
+ w=43: |S|=11 rank(log map)= 2 dim K_0= 9 (expected  9), in L: 8/9, rank mod x = 9 = dim L_w/Q[x] 9
+FAIL w=44: a log-free combination is NOT in L (remainder [((4, 0, 8), Fraction(-263, 123863040)), ((9, 0, 7), Fraction(404389, 265686220800)), ((14, 0, 6), Fraction(-7697969, 18066663014400))])
+ w=44: |S|=12 rank(log map)= 3 dim K_0= 9 (expected  9), in L: 8/9, rank mod x = 9 = dim L_w/Q[x] 9
+FAIL w=45: a log-free combination is NOT in L (remainder [((0, 0, 9), Fraction(39799, 255467520)), ((5, 0, 8), Fraction(-263, 30965760)), ((10, 0, 7), Fraction(460987, 88562073600))])
+ w=45: |S|=12 rank(log map)= 3 dim K_0= 9 (expected  9), in L: 8/9, rank mod x = 9 = dim L_w/Q[x] 9
+FAIL w=46: a log-free combination is NOT in L (remainder [((1, 0, 9), Fraction(1, 5760)), ((6, 0, 8), Fraction(-263, 6193152)), ((11, 0, 7), Fraction(9433, 984023040))])
+ w=46: |S|=12 rank(log map)= 2 dim K_0=10 (expected 10), in L: 9/10, rank mod x = 10 = dim L_w/Q[x] 10
+FAIL w=47: a log-free combination is NOT in L (remainder [((2, 0, 9), Fraction(1, 5760)), ((7, 0, 8), Fraction(-419, 5160960)), ((12, 0, 7), Fraction(6511, 268369920))])
+ w=47: |S|=12 rank(log map)= 2 dim K_0=10 (expected 10), in L: 9/10, rank mod x = 10 = dim L_w/Q[x] 10
+FAIL w=48: a log-free combination is NOT in L (remainder [((3, 0, 9), Fraction(-263, 371589120)), ((8, 0, 8), Fraction(242131, 531372441600)), ((13, 0, 7), Fraction(-2707417, 18066663014400))])
+ w=48: |S|=13 rank(log map)= 3 dim K_0=10 (expected 10), in L: 9/10, rank mod x = 10 = dim L_w/Q[x] 10
+ total log-free basis vectors tested: 255 ; in L: 216
+RESULT: 40 FAIL lines, 39 of them 'log-free combination NOT in L' (expected > 0: the falsifier detects the bad leg)

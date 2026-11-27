@@ -1,0 +1,22 @@
+====================================================================================================
+ind_run g4_89_nat_t5: 379 inner graphs, K = 6, NZ = 9, zeta rows checks {'h_auto': True, 'psi_orth': True, 'sympl': True, 'covar': True, 'circ': True}, setup 0.7 s
+   379 inner graphs to do with 4 processes, deadline 1500 s
+      8/379 done (64 s wall)
+      27/379 done (127 s wall)
+      67/379 done (189 s wall)
+      208/379 done (249 s wall)
+      379/379 done (259 s wall)
+   run: wall 259 s, CPU (this and earlier runs) 1023 s, slowest [(34.8, 81), (32.3, 32), (31.9, 79), (29.4, 80), (25.1, 77), (24.2, 169)]
+   complete outer graphs: 379 of 379 (all)
+PASS 379 outer graphs equal the reference g4_split_g4_89_nat_t5.json, coefficients u^0..u^5
+      compared, by number of outer edges: [(0, 1), (1, 3), (2, 7), (3, 21), (4, 43), (5, 75), (6, 89), (7, 81), (8, 42), (9, 17)]; non-zero in my table: 4
+   vertex graph: ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '[524864768289145751991647940 mod p]', '[7126827391122905041466534 mod p]']
+      outer graph   1 (E=1, gv=(1, 3), ed=[(0, 1)]): ['0', '0', '0', '0', '0', '[50202829232941990276411006 mod p]']
+      outer graph   2 (E=1, gv=(2, 2), ed=[(0, 1)]): ['0', '0', '0', '0', '0', '[68041054054496400697121296 mod p]']
+      outer graph   3 (E=1, gv=(3,), ed=[(0, 0)]): ['0', '0', '0', '0', '0', '[5015395053609341287294173 mod p]']
+INFO (control variant nat_t5, regularity NOT expected): 3 of the 378 complete outer graphs with edges are not O(u^6); vertex graph has the pure gap form: False
+   total: ['1/180000', '-7/300000', '701/18000000', '-1459/45000000', '[524864768289145751991647940 mod p]', '[130386105732170637302293009 mod p]']
+PASS GAP: total = (1/180000) t_c^-6 + 0 + .. + 0
+PASS total of this variant = total of my point-frame run (variant id)
+PASS for each of the 379 inner graphs the split pieces add up to my point-frame term
+IND_RUN (g4_89_nat_t5) ALL CHECKS PASSED

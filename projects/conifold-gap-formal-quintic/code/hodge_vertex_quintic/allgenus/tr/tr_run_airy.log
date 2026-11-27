@@ -1,0 +1,50 @@
+tr_run.py airy  (allgenus/tr, 2026-11-13 19:35)
+  Airy omega_{0,3}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{0,4}: 4 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,2}: 3 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{2,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{0,5}: 15 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,3}: 10 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{2,2}: 6 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{3,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  dilaton  Sum Res Phi omega_{0,4} = (2-2g-n) omega_{0,3}: True
+  dilaton  Sum Res Phi omega_{1,2} = (2-2g-n) omega_{1,1}: True
+  dilaton  Sum Res Phi omega_{1,3} = (2-2g-n) omega_{1,2}: True
+  dilaton  Sum Res Phi omega_{2,2} = (2-2g-n) omega_{2,1}: True
+  dilaton  Sum Res Phi omega_{0,5} = (2-2g-n) omega_{0,4}: True
+  Airy regression over Q(zeta5): PASS (0.5 s)
+  [PASS] Airy curve over Q(zeta5)
+  Airy omega_{0,3}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{0,4}: 4 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,2}: 3 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{2,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{0,5}: 15 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,3}: 10 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{2,2}: 6 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{3,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  dilaton  Sum Res Phi omega_{0,4} = (2-2g-n) omega_{0,3}: True
+  dilaton  Sum Res Phi omega_{1,2} = (2-2g-n) omega_{1,1}: True
+  dilaton  Sum Res Phi omega_{1,3} = (2-2g-n) omega_{1,2}: True
+  dilaton  Sum Res Phi omega_{2,2} = (2-2g-n) omega_{2,1}: True
+  dilaton  Sum Res Phi omega_{0,5} = (2-2g-n) omega_{0,4}: True
+  Airy regression over F_p, p = 618970019642690137449562111: PASS (0.0 s)
+  [PASS] Airy curve over F_p, p = 618970019642690137449562111
+  Airy omega_{0,3}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{0,4}: 4 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,2}: 3 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{2,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{0,5}: 15 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{1,3}: 10 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{2,2}: 6 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  Airy omega_{3,1}: 1 coefficients, 0 mismatches with Witten-Kontsevich, symmetry failures 0
+  dilaton  Sum Res Phi omega_{0,4} = (2-2g-n) omega_{0,3}: True
+  dilaton  Sum Res Phi omega_{1,2} = (2-2g-n) omega_{1,1}: True
+  dilaton  Sum Res Phi omega_{1,3} = (2-2g-n) omega_{1,2}: True
+  dilaton  Sum Res Phi omega_{2,2} = (2-2g-n) omega_{2,1}: True
+  dilaton  Sum Res Phi omega_{0,5} = (2-2g-n) omega_{0,4}: True
+  Airy regression over F_p, p = 2305843009213693951: PASS (0.0 s)
+  [PASS] Airy curve over F_p, p = 2305843009213693951
+== ALL CHECKS PASSED (0.6 s, 0 failures)

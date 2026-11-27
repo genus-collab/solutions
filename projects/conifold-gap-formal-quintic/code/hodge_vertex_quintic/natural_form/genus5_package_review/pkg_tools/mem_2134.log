@@ -1,0 +1,11 @@
+setup 4 s, mem (0.0, 0.0, 0.0)
+graph 2134 E 8 V 5 combos 150
+  20 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 2, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}
+  40 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 4, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}
+  60 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 6, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}
+  80 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 8, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}
+  100 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 11, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}
+  120 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 13, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}
+  140 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 15, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}
+  160 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 17, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}
+  180 s: peakWS 0 MB, WS 0 MB, peak commit 0 MB, {'combos': 20, 'maxstate': 10000, 'maxkeys': 625, 'maxitems': 255}

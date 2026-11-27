@@ -1,0 +1,10 @@
+cy_extra: exact over Q, u^39, z^-n for n <= 16
+[PASS] (X1) varpi0 (Y^C_Q)_0 in frame programme (1/3,-2/7) equals the frame-(0,0) one, n <= 16
+[PASS] (X1) varpi0 (Y^C_Q)_0 in frame programme (7/11,-3/5) equals the frame-(0,0) one, n <= 16
+[PASS] (X1) varpi0 (Y^C_Q)_0 in frame programme (-2,0) equals the frame-(0,0) one, n <= 16
+[PASS] (X1) varpi0 (Y^C_Q)_0 in frame critic-convention (1/3,-2/7) = f0 + f1/3 - 2f2/7 equals the frame-(0,0) one, n <= 16
+[PASS] (X2) rescaled frame (2 varpi0, 3 g): Psi = 3 Psi(0,0) (the vanishing solution carries the scale of g, not of varpi0)
+[CONTROL FAILS (as required)] (X3) control: wrong gamma (y1 = f1 + f2/2) gives the same Psi
+    Psi_1 = (-1)u^1 + (-7/10)u^2 + (-41/75)u^3 ; Psi_6 = (1/480)u^5
+time 0.4 s
+ALL CHECKS PASSED

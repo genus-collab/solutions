@@ -1,0 +1,15 @@
+ch_lemmas: exact over Q, through z^3, 1 seeds per test; log logs/ch_lemmas_3_1.log
+PASS (S1) seed 0: N[Phi, d_i(e^(Phi/z) h)] = 0 for i = 1, 2, all orders <= 3
+PASS (L1a) seed 0: change of variables, N transforms by det D chi(0)
+PASS (L1b) seed 0: Fubini, inner dimension 1
+PASS (L1b) seed 0: Fubini, inner dimension 2
+PASS (L2) seed 0: delta lemma, N = A(X_0, z) exactly
+PASS control: (L1a) without the Jacobian fails
+PASS control: (L1b) without beta fails
+PASS control: (L2) with a sigma-dependent amplitude fails
+PASS control: (L2) with a sigma^2 term in the phase fails
+PASS (L1c)(iii): q-dependent critical point re-expanded = Sum_d (q/z)^d/d! N[psi_0, y^(5d)], q^0..q^4, z^-d..z^3
+PASS (L1c)(iii) + (L3): N[psi_0, y^(5d); 5] = 5^(5d) prod_(i=1..5d) (1 + iz/5) exp(Sum b_k (z/5)^(2k-1))
+PASS control: (L1c)(iii) without the critical-value exponential e^((psi_q(y_c) - psi_0(5))/z) fails
+PASS control: (L1c)(iii) without the Hessian ratio fails
+CH_LEMMAS: ALL CHECKS PASSED   (1 s)

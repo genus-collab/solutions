@@ -1,0 +1,74 @@
+% Abridged version, Section 5, part 1 of 2: the model as topological recursion, the leg dictionary, the lattice theorem.
+% Continued in part 2 (L-regularity, the Gap Theorem, Theorem V, the Model Lemma).
+\section{The model: topological recursion on the model curve}
+\label{sec:mod}
+
+Topological recursion is applied here, and only here, to the curve $x=\Wv(p)$, $y=p$ on $\bbP^1$, $v\neq0$, and to its rescalings; nothing about the quintic enters. This section follows \Lr{sec:mod}; the inputs (Q) are those of \cref{sec:int-inputs}.
+
+%-------------------------------------------------------------------------------
+\subsection{The model as topological recursion}
+\label{sec:mod-tr}
+
+\emph{Conventions} \Lr{conv:mod-kernel,def:mod-curve,def:mod-pair,def:mod-xi,def:mod-ancvec}. For meromorphic functions $x,y$ on $\bbP^1$ such that $\dd x$ has only simple zeros, the \emph{branch points} $\varsigma_b$, and $\dd y\neq0$ there, put $\omega_{0,1}:=y\,\dd x$ and $\omega_{0,2}(p_1,p_2):=\dd p_1\,\dd p_2/(p_1-p_2)^2$; the correlators $\omega_{h,n}$, $2h-2+n>0$, are defined by the recursion of \cite[(2-26)--(2-29)]{Dunin-Barkowski:2015caa}, a sum of residues at the branch points \Lr{conv:mod-kernel}; for $h\geq2$ the free energy is defined by $(2-2h)\FTR_h:=\sum_b\Res_{\varsigma_b}\Phi_{y\dd x}\,\omega_{h,1}$, $\dd\Phi_{y\dd x}=y\,\dd x$. On the \emph{model curve} $x=\Wv(p)$, $y=p$ one has $\dd x=(p^5-v)\,\dd p/p^2$; the branch points are $\varsigma_b:=\zeta^{-b}\varsigma$, and $p=0$, $p=\infty$ are the poles of $x$. The \emph{leg class} is $\cL:=\bbQ[v][p]+\bbQ(v)[x]$; for legs $\phi_1,\dots,\phi_n\in\cL$ the \emph{residue pairing} is
+\[
+\langle\phi_1\cdots\phi_n\rangle^{\mathrm{TR}}_h:=\sum_{b_1,\dots,b_n}\Res_{p_1=\varsigma_{b_1}}\cdots\Res_{p_n=\varsigma_{b_n}}\prod_{l=1}^n\phi_l(p_l)\,\omega_{h,n}(p_1,\dots,p_n),
+\]
+and the \emph{log leg} $-\log p$ is paired by integration along a ray $\mathfrak r$ from $0$ to $\infty$ avoiding the branch points, $\langle\cdots,-\log p,\cdots\rangle^{\mathrm{TR}}_h:=\int_{p'\in\mathfrak r}\omega_{h,n}(\dots,p',\dots)$. Let $D_x:=\dd/\dd x$, and for $a\in\bbZ/5$ and $d\geq0$ let
+\[
+\xi_a:=\varepsilon'_a\,v^{\alpha_a}\frac{p^{m_a}}{p^5-v},\quad(m_a,\varepsilon'_a,\alpha_a)=(4,-1,0),\ (0,1,1),\ (1,1,0),\ (2,-1,0),\ (3,-1,0),\qquad\xi_{a,d}:=D_x^d\xi_a ;
+\]
+for a leg $\phi$ put $q_\phi(z):=\sum_{a,d}\langle\phi,\dd\xi_{a,d}\rangle H^az^d$, where $\langle\phi,w\rangle:=\sum_b\Res_{\varsigma_b}\phi\,w$.
+
+\begin{thm}[The model as topological recursion; {\Lr{thm:mod-tr}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:mod-tr}
+Let $v\neq0$, $n\geq1$ and $2h-2+n>0$. The correlators of the model curve are
+\[
+\omega_{h,n}(p_1,\dots,p_n)=(-5)^{h-1}\sum_{a_1,\dots,a_n}\sum_{d_1,\dots,d_n\geq0}\Big\langle\prod_{i=1}^n\psi^{d_i}H^{a_i}\Big\rangle_h(v)\,\prod_{i=1}^n\dd\xi_{a_i,d_i}(p_i),
+\]
+a finite sum, the brackets being the ancestor correlators of $\Omega^{\mathrm{mod}}_v$. Equivalently, for legs $\phi_1,\dots,\phi_n$ in $\cL$ or equal to $-\log p$, $\langle q_{\phi_1}\cdots q_{\phi_n}\rangle_h=(-5)^{1-h}\langle\phi_1\cdots\phi_n\rangle^{\mathrm{TR}}_h$.
+\end{thm}
+
+\begin{sketch}[Sketch of the proof {\Lr{lem:mod-laplace,lem:mod-scale,prop:mod-Rtr}}]
+The quoted theorem \cite[Theorem~4.1]{DuninBarkowski:2012bw}, as recalled in \cite[\S2.6]{Dunin-Barkowski:2015caa}, says: for a compact curve with simple branch points, if the matrix $R$ defined by the Laplace transforms at the branch points of the forms $\dd\xi^i$ attached to them is symplectic, satisfies \cite[(2-32)]{Dunin-Barkowski:2015caa}, and the expansion of $\omega_{0,2}$ at the branch points is the edge of $R$, then the correlators are the graph sum of $R$ on a topological field theory, paired with the forms $\dd(D_x^d\xi^i)$. The three hypotheses are verified for the curves $x=\kappa\Wv$, $y=p$: the Laplace transforms reduce to the series of the forms $p^m\dd p$ at each branch point, which satisfy (Mod1) and (Mod2), hence the T-system of \cref{prop:set-modrows}; by its uniqueness, $R_{\mathrm{TR}}(\psi)=\Mo\bigl(\psi/(\kappa\varsigma^4)\bigr)$, which is symplectic (\cref{def:set-M0}). The theorem is applied at $\kappa=4$ and transferred to $\kappa=1$ by scaling; passing to the normalised canonical basis of $\TFT^{\mathrm m}_v$ produces the factor $(-5)^{h-1}$ (the metric of topological recursion is $-\frac15$ times that of the model), and passing to the flat basis by $\Psi^{\mathrm m}_v$ turns the forms $\xi^i$ into the $\xi_a$.
+\end{sketch}
+
+%-------------------------------------------------------------------------------
+\subsection{The leg dictionary and the lattice theorem}
+\label{sec:mod-legs}
+
+Let $\phi^b_0:=p,\ \log p,\ v/p,\ p^3,\ p^2$ for $b=0,\dots,4$, and $\phi^b_{k+1}:=I(\phi^b_k)$, where $I(F)$ is the termwise antiderivative of $-F\,\dd x$ without constant term; so $D_x\phi^b_{k+1}=-\phi^b_k$, and $\phi^b_k$ is homogeneous of weight $\nu_b+1+4k$ for the weights $p:1$, $v:5$, $x:4$.
+
+\begin{prop}[The leg dictionary; {\Lr{prop:mod-LD}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{prop:mod-LD}
+Let $\varrho:=(-1,1,-1,-3,-2)$. For all $a,b\in\bbZ/5$ and $k,d\geq0$, $\langle\phi^b_k,\dd\xi_{a,d}\rangle=-\varrho_b\,\delta_{ab}\,\delta_{dk}$. Hence $q_{\phi^b_k}=-\varrho_b\,z^kH^b$: the leg of the insertion $v^m\psi^kH^b$ is $-\varrho_b^{-1}v^m\phi^b_k$. In particular the unit $H^0$ has the leg $y=p$; $\Phi_{y\dd x}=p^5/5-v\log p$ has $q_{\Phi_{y\dd x}}=-z\,H^0$; $-\log p$ has $q_{-\log p}=H$; the Euler--dilaton vector $\se=z\,H^0+vH$ has the leg $-p^5/5$; and $q_{f(x)}=0$ for $f\in\bbQ(v)[x]$.
+\end{prop}
+
+Functions of $x$ pair to zero with every $\omega_{h,n}$, because the sum of $\omega_{h,n}$ over the five sheets of $x$ vanishes \Lr{lem:mod-xfun}. With the dilaton equation the dictionary gives $\Fm_h=(-5)^{1-h}\FTR_h$ for $h\geq2$ \Lr{cor:mod-trF}.
+
+The \emph{leg map} is the $\bbQ$-linear map $\Lambda(v^m\psi^kH^b):=\varrho_b^{-1}v^m\phi^b_k$ on the free $\bbQ[v]$-module on the $\psi^kH^b$, graded by the weight spaces $V_w$; it takes values in $\mathsf M:=\bbQ[p,\bar p]\oplus\log p\cdot\bbQ[v,x]$, where $\bar p:=v/p$ and $\bbQ[p,\bar p]=\bbQ[v][p]+\bbQ[v][x]$ is the ring of the Laurent polynomials whose terms $v^mp^j$ have $j\geq-m$. The element of $\bbQ[v,x]$ multiplying $\log p$ is the \emph{$\log p$-coefficient}.
+
+\begin{prop}[Log coefficients of the legs; {\Lr{prop:mod-dii}}]\genusstatus{AI-proposed, unchecked}
+\label{prop:mod-dii}
+For all $b$ and $k$, the $\log p$-coefficient of $\phi^b_k$ is $\varrho_b\sum_{i=0}^k\Pi_i(\psi^kH^b)\,(-x)^i/i!$. Hence, for $X\in V_w$, the $\log p$-coefficient of $\Lambda(X)$ is $\sum_{i\geq0}\Pi_i(X)(-x)^i/i!$, and $\Lambda(X)$ is log-free if and only if $X\in\sKo$.
+\end{prop}
+
+\begin{sketch}
+The $\log p$-coefficients of the $\phi^b_k$ are generated by the residues $\Res_{p=0}\Wv^n\,\dd\phi^b_0/n!$, and these are $\varrho_b\,\Pi_0(\psi^nH^b)$, since $\IC_m=\Res_{p=0}p^m\re^{-\Wv/z}\dd p$ \Lr{lem:mod-genfn,lem:mod-resid}.
+\end{sketch}
+
+Thus the vanishing tower, defined by the residue at the pole $p=0$ of the model, measures exactly the logarithms of the legs.
+
+\begin{thm}[The lattice theorem; {\Lr{thm:mod-lattice,cor:mod-Ksplit}}, abridged]\genusstatus{AI-proposed, unchecked}
+\label{thm:mod-lattice}
+For every $w\geq0$:
+\begin{enumerate}
+\item[(a)] for $X\in\sKo\cap V_w$, $\Lambda(X)$ lies in $\bbQ[p,\bar p]=\bbQ[v][p]+\bbQ[v][x]$, exactly and not only modulo functions of $x$;
+\item[(b)] $\Lambda\colon\sKo\cap V_w\to(\cL/\bbQ(v)[x])_w$ is bijective;
+\item[(c)] $\sK\cap V_w=(\sKo\cap V_w)\oplus\bbQ v^{w/5}H$ if $5\mid w$, and $\sK\cap V_w=\sKo\cap V_w$ otherwise; for $X\in\sK\cap V_w$, $\Lambda(X)=\Lambda(X-\Pi_0(X)H)+\Pi_0(X)\log p$ with $\Lambda(X-\Pi_0(X)H)\in\bbQ[p,\bar p]$.
+\end{enumerate}
+
+\end{thm}
+
+Part (a) is \cref{prop:mod-dii}; the bijectivity is proved modulo $v$ and lifted by a graded Nakayama argument \Lr{lem:mod-modv}. So an insertion from $\sK$ has a leg that is a polynomial in $p$ with coefficients in $\bbQ[v]$, plus a function of $x$, which pairs to zero, plus $\Pi_0(X)$ times the log leg.
+
+\input{summary/s05_model_2}

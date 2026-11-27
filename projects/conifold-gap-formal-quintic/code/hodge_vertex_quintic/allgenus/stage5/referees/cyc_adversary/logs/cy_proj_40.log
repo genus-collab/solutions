@@ -1,0 +1,23 @@
+cy_proj: project modules imported read-only from the package folder (relative: ../../../../); NU = 40
+[PASS] (P1) frame (0, 0): fq_conifold f0, f1, f2 = own closed-form Frobenius basis through u^39
+[PASS] (P1) frame (0, 0): gamma = 7/10, g, h (h_0 = h_1 = h_2 = 0) agree
+[PASS] (P1) frame (0, 0): varpi0 = f0 + alpha g + beta f2 and t_c = g/varpi0 agree (programme convention)
+[PASS] (P1) frame (0, 0): pairing table in the basis (f0, g, f2) = [[0,0,2],[0,0,0],[-2,0,0]], constant, pairing_vacuous   project Bmat = [['0', '0', '2'], ['0', '0', '0'], ['-2', '0', '0']]
+[PASS] (P2) frame (0, 0), Lam = 0: Cf(kinv[a]) = 1/c_a for a = 0, 1, 2, 3 (fq_rows order = CYC order)   per a: [True, True, True, True]; s-orders < 228, mod 2^89-1
+[PASS] (P2) frame (0, 0), Lam = 0: Cf(C1) = Cf(W)/Cf(c0)^2 = D t_c and Cf(c0) = varpi0
+[PASS] (P2) frame (0, 0), Lam = 3: Cf(kinv[a]) = 1/c_a for a = 0, 1, 2, 3 (fq_rows order = CYC order)   per a: [True, True, True, True]; s-orders < 228, mod 2^89-1
+[PASS] (P2) frame (0, 0), Lam = 3: Cf(C1) = Cf(W)/Cf(c0)^2 = D t_c and Cf(c0) = varpi0
+[CONTROL FAILS (as required)] (P2) control, frame (0, 0): Cf(kinv[1]) = 1/(5 c_1) (a Yukawa factor 5 in the row coefficient)
+[PASS] (P3) frame (0, 0): UR s.1 b_a = -c_a/(1-u) for all five a (incl. the closing coefficient c_4 = varpi0)
+[PASS] (P1) frame (1/3, -2/7): fq_conifold f0, f1, f2 = own closed-form Frobenius basis through u^39
+[PASS] (P1) frame (1/3, -2/7): gamma = 7/10, g, h (h_0 = h_1 = h_2 = 0) agree
+[PASS] (P1) frame (1/3, -2/7): varpi0 = f0 + alpha g + beta f2 and t_c = g/varpi0 agree (programme convention)
+[PASS] (P1) frame (1/3, -2/7): pairing table in the basis (f0, g, f2) = [[0,0,2],[0,0,0],[-2,0,0]], constant, pairing_vacuous   project Bmat = [['0', '0', '2'], ['0', '0', '0'], ['-2', '0', '0']]
+[PASS] (P2) frame (1/3, -2/7), Lam = 0: Cf(kinv[a]) = 1/c_a for a = 0, 1, 2, 3 (fq_rows order = CYC order)   per a: [True, True, True, True]; s-orders < 228, mod 2^89-1
+[PASS] (P2) frame (1/3, -2/7), Lam = 0: Cf(C1) = Cf(W)/Cf(c0)^2 = D t_c and Cf(c0) = varpi0
+[PASS] (P2) frame (1/3, -2/7), Lam = 3: Cf(kinv[a]) = 1/c_a for a = 0, 1, 2, 3 (fq_rows order = CYC order)   per a: [True, True, True, True]; s-orders < 228, mod 2^89-1
+[PASS] (P2) frame (1/3, -2/7), Lam = 3: Cf(C1) = Cf(W)/Cf(c0)^2 = D t_c and Cf(c0) = varpi0
+[CONTROL FAILS (as required)] (P2) control, frame (1/3, -2/7): Cf(kinv[1]) = 1/(5 c_1) (a Yukawa factor 5 in the row coefficient)
+[PASS] (P3) frame (1/3, -2/7): UR s.1 b_a = -c_a/(1-u) for all five a (incl. the closing coefficient c_4 = varpi0)
+time 5.3 s
+ALL CHECKS PASSED

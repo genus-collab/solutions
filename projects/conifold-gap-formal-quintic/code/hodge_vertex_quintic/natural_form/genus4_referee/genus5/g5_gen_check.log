@@ -1,0 +1,35 @@
+====================================================================================================
+g5_gen_check
+PASS type (2, 0), E <= 3: 7 graphs; fast list = original list (as canonical forms of fq3_graphs.canon) with equal |Aut|; original 0.0 s, fast 0.00 s: (7, 7)
+PASS type (2, 0): canon_fast is invariant under random relabellings (3 per graph)
+PASS type (3, 0), E <= 6: 42 graphs; fast list = original list (as canonical forms of fq3_graphs.canon) with equal |Aut|; original 0.0 s, fast 0.01 s: (42, 42)
+PASS type (3, 0): canon_fast is invariant under random relabellings (3 per graph)
+PASS type (4, 0), E <= 9: 379 graphs; fast list = original list (as canonical forms of fq3_graphs.canon) with equal |Aut|; original 2.2 s, fast 0.10 s: (379, 379)
+PASS type (4, 0): canon_fast is invariant under random relabellings (3 per graph)
+PASS type (2, 2), E <= 5: 75 graphs; fast list = original list (as canonical forms of fq3_graphs.canon) with equal |Aut|; original 0.0 s, fast 0.01 s: (75, 75)
+PASS type (2, 2): canon_fast is invariant under random relabellings (3 per graph)
+PASS type (1, 4), E <= 4: 163 graphs; fast list = original list (as canonical forms of fq3_graphs.canon) with equal |Aut|; original 0.0 s, fast 0.01 s: (163, 163)
+PASS type (1, 4): canon_fast is invariant under random relabellings (3 per graph)
+PASS type (3, 1), E <= 5: 135 graphs; fast list = original list (as canonical forms of fq3_graphs.canon) with equal |Aut|; original 0.1 s, fast 0.03 s: (135, 135)
+PASS type (3, 1): canon_fast is invariant under random relabellings (3 per graph)
+PASS type (0, 6), E <= 3: 236 graphs; fast list = original list (as canonical forms of fq3_graphs.canon) with equal |Aut|; original 0.2 s, fast 0.06 s: (236, 236)
+PASS type (0, 6): canon_fast is invariant under random relabellings (3 per graph)
+   E =  1:     3 graphs (5 degenerations, 5 distinct raw, 0.0 s; cumulative 0.0 s)
+   E =  2:    11 graphs (31 degenerations, 23 distinct raw, 0.0 s; cumulative 0.0 s)
+   E =  3:    34 graphs (192 degenerations, 110 distinct raw, 0.0 s; cumulative 0.0 s)
+   E =  4:   100 graphs (878 degenerations, 397 distinct raw, 0.0 s; cumulative 0.1 s)
+   E =  5:   239 graphs (3368 degenerations, 1280 distinct raw, 0.2 s; cumulative 0.3 s)
+   E =  6:   492 graphs (9209 degenerations, 3030 distinct raw, 0.4 s; cumulative 0.6 s)
+   E =  7:   784 graphs (16364 degenerations, 5817 distinct raw, 1.0 s; cumulative 1.7 s)
+   E =  8:  1002 graphs (21810 degenerations, 8675 distinct raw, 2.1 s; cumulative 3.8 s)
+   E =  9:   926 graphs (21617 degenerations, 9819 distinct raw, 1.9 s; cumulative 5.7 s)
+   E = 10:   632 graphs (14536 degenerations, 7563 distinct raw, 1.7 s; cumulative 7.4 s)
+   E = 11:   260 graphs (6286 degenerations, 3692 distinct raw, 1.0 s; cumulative 8.5 s)
+   E = 12:    71 graphs (1225 degenerations, 798 distinct raw, 0.8 s; cumulative 9.2 s)
+genus 5, leg-free: 4555 graphs in 10.4 s; per number of edges [1, 3, 11, 34, 100, 239, 492, 784, 1002, 926, 632, 260, 71]
+PASS genus 5: total number of leg-free stable graphs = 4555 (known value): 4555
+   per number of vertices: [(1, 6), (2, 55), (3, 262), (4, 743), (5, 1252), (6, 1298), (7, 726), (8, 213)]
+PASS genus 5: |Aut| of all 4555 graphs equals the brute-force fq_graphs.aut_count (40 s)
+PASS genus 5: every graph is stable of genus 5
+PASS genus 5: keys pairwise distinct
+G5_GEN_CHECK ALL CHECKS PASSED

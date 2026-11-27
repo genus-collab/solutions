@@ -1,0 +1,85 @@
+% Section 2, part 2 of 8: the large-radius cyclic structure (statement; grading, unit, periods, Birkhoff recursion).
+
+Along the line $t=T(q)H$, with $\Qn=1$, functions of $t$ are functions of $q$, and $\partial_T\coloneqq C_1^{-1}\Dq$ is the derivative in the coordinate $T$ of $H$, i.e.\ $\partial_{t^1}$ along the line ($\partial_T$ is not the derivation $\de_t$ of \cref{def:gau-conc}, which is defined in a conifold frame). By (G0), the quantum product $*$ at $t=TH$ is commutative and associative, has the unit $1$, and is Frobenius for $\eta$: $\eta(x*y,w)=\langle\!\langle x,y,w\rangle\!\rangle=\eta(x,y*w)$.
+
+\begin{prop}[The large-radius cyclic structure]
+\label{prop:set-cyclicLR}
+Assume (M) and (G0). Along the line $t=T(q)H$, at $\lambda_i=\zeta^i$ and $\Qn=1$, the following hold.
+\begin{enumerate}
+\item In the flat basis, $H*H^a=\kappa^{\mathrm{LR}}_aH^{a+1}$ for $a\in\bbZ/5$, where
+\[
+\kappa^{\mathrm{LR}}=(\kappa^{\mathrm{LR}}_0,\dots,\kappa^{\mathrm{LR}}_4)=\Bigl(1,\ \frac{L^5}{C_0^2C_1^3},\ 1,\ \frac{C_0}{C_1},\ \frac{C_0}{C_1}\Bigr).
+\]
+\item Consequently, for every solution $v$ of the quantum differential equation $z\partial_Tv=H*v$, in any differential $\bbQ\fps q$-algebra in which $z$ is a constant, the lowered components $v_a\coloneqq\eta(H^a,v)$ satisfy $z\Dq v_a=C_1\kappa^{\mathrm{LR}}_a\,v_{a+1}$ for all $a\in\bbZ/5$.
+\item For every colour $i$ the rows of \cref{def:set-rows} (defined in \cref{sec:set-rows}) satisfy $(z\Dq+\zeta^iL)\Qr^{(i)}_a=C_1\kappa^{\mathrm{LR}}_a\,\Qr^{(i)}_{a+1}$ for $a\in\bbZ/5$. Equivalently, for $X_a\coloneqq\zeta^{-i}\Qr^{(i)}_a$,
+\[
+X_0=L\Phi_i/C_0,\qquad X_{a+1}=(C_1\kappa^{\mathrm{LR}}_a)^{-1}(z\Dq+\zeta^iL)X_a\quad(a=0,\dots,3),\qquad(z\Dq+\zeta^iL)X_4=C_0X_0 .
+\]
+\end{enumerate}
+\end{prop}
+
+The superscript LR distinguishes $\kappa^{\mathrm{LR}}$ from the coefficients $\kappa_a$ of the cyclic system in a conifold frame (\cref{prop:gau-quintic}). The proof of (i) and (ii) occupies the rest of this subsection up to \cref{cor:set-cyclicPF5}; it uses (M), (G0), \cref{lem:set-pf5} and the pairing of \cref{def:set-fq}, through six lemmas. Part (iii) concerns the rows, which are defined only after \cref{cor:set-cyclicPF5}~(a); it is proved after \cref{def:set-rows}, from (ii) and \cref{cor:set-cyclicPF5}~(a). The letters $\mathfrak w$, $\cP$, $\mathfrak p_k$, $\tilde{\mathfrak p}_m$, $\mathsf p^{(a)}_k$, $X_a$, $\Mcyc^{\mathrm{LR}}$ and $\chi$ are local to this subsection. Before \cref{prop:set-cyclicLR}~(i) is proved, $\kappa^{\mathrm{LR}}_a$ denotes the structure constant of \cref{lem:set-grading}.
+
+\begin{lem}[The $\bbZ/5$ grading]
+\label{lem:set-grading}
+At $\lambda_i=\zeta^i$ and $t=TH$, $\langle\!\langle H^a,H^b,H^c\rangle\!\rangle=0$ unless $a+b+c\equiv3\bmod5$. Hence $H^a*H^b$ is a multiple of $H^{a+b}$, and $H*H^a=\kappa^{\mathrm{LR}}_aH^{a+1}$ with $\kappa^{\mathrm{LR}}_a\in1+q\bbQ\fps q$.
+\end{lem}
+
+\begin{proof}
+By the divisor equation (G0)(b), with $\Qn=1$,
+\[
+\langle\!\langle H^a,H^b,H^c\rangle\!\rangle(TH)=\eta(H^aH^b,H^c)+\sum_{d\geq1}\re^{dT}\langle H^a,H^b,H^c\rangle_{0,3,d};
+\]
+in degree $0$ the insertions of $TH$ contribute nothing, because $\overline{\mathcal M}_{0,3+n}(\bbP^4,0)=\overline{\mathcal M}_{0,3+n}\times\bbP^4$ and the integrand is pulled back from $\bbP^4$. By (G0)(a), before the specialisation the term of degree $d\geq1$ is a symmetric polynomial in $\lambda_0,\dots,\lambda_4$, homogeneous of degree $m=a+b+c-3$, that is, a polynomial in the elementary symmetric functions $e_1,\dots,e_5$, of weighted degree $m$. At $\lambda_j=\zeta^j$ the identity $\prod_j(x-\zeta^j)=x^5-1$ gives $e_1=\dots=e_4=0$ and $e_5=1$, so the value is $0$ unless $5\mid m$, i.e.\ unless $a+b+c\equiv3\bmod5$. The classical term is $\eta(H^{a+b},H^c)=5\,\delta_{a+b+c\equiv3}$ (\cref{def:set-fq}). Since $\eta^{cc'}$ is supported on $c+c'\equiv3$, the product $H^a*H^b=\sum_{c,c'}\langle\!\langle H^a,H^b,H^c\rangle\!\rangle\eta^{cc'}H^{c'}$ is supported on $c'\equiv a+b$. The structure constant $\kappa^{\mathrm{LR}}_a$ is a power series in $\re^T$ with rational coefficients, hence lies in $\bbQ\fps q$ through $\re^T=q\exp(\tilde I_1/C_0)$; at $q=0$ the product is the classical one, $H*H^a=H^{a+1}$, so $\kappa^{\mathrm{LR}}_a(0)=1$.
+\end{proof}
+
+\begin{lem}[Unit and Frobenius property]
+\label{lem:set-unitfrob}
+$\kappa^{\mathrm{LR}}_0=\kappa^{\mathrm{LR}}_2=1$ and $\kappa^{\mathrm{LR}}_3=\kappa^{\mathrm{LR}}_4$.
+\end{lem}
+
+\begin{proof}
+The class $1$ is the unit of $*$ by the string equation, so $H*1=H$ and $\kappa^{\mathrm{LR}}_0=1$. By commutativity and the Frobenius property, $\eta(H*H^a,H^{2-a})=\eta(H^a,H*H^{2-a})$, i.e.\ $5\kappa^{\mathrm{LR}}_a=\eta(\kappa^{\mathrm{LR}}_aH^{a+1},H^{2-a})=\eta(H^a,\kappa^{\mathrm{LR}}_{2-a}H^{3-a})=5\kappa^{\mathrm{LR}}_{2-a}$ (\cref{def:set-fq}). So $\kappa^{\mathrm{LR}}_a=\kappa^{\mathrm{LR}}_{2-a}$ for all $a\in\bbZ/5$, that is $\kappa^{\mathrm{LR}}_0=\kappa^{\mathrm{LR}}_2$ and $\kappa^{\mathrm{LR}}_3=\kappa^{\mathrm{LR}}_4$.
+\end{proof}
+
+\begin{lem}[The periods]
+\label{lem:set-periods}
+Let $\mathfrak w$ be an indeterminate and
+\[
+\cP(\mathfrak w,q)\coloneqq\sum_{d\geq0}q^d\,\frac{\prod_{k=1}^{5d}(5\mathfrak w+k)}{\prod_{k=1}^d\bigl((\mathfrak w+k)^5-\mathfrak w^5\bigr)}\in\bbQ\fps q\fps{\mathfrak w},
+\]
+the denominators being polynomials in $\mathfrak w$ with the constant term $(d!)^5$. The map $\bbQ\fps q[\logq]\fps{\mathfrak w}\to\bbH\otimes\bbQ\fps q[\logq]\fps{z^{-1}}$, $\sum_ka_k\mathfrak w^k\mapsto\sum_ka_kH^kz^{-k}$ (with $H^k\coloneqq H^{k\bmod5}$), is an injective ring homomorphism, and $I/z$ is the image of $\re^{\logq\mathfrak w}\cP(\mathfrak w,q)$. Hence
+\[
+\frac Iz=\sum_{k\geq0}\mathfrak p_kH^kz^{-k},\qquad\mathfrak p_k\coloneqq\sum_{j=0}^k\frac{\logq^j}{j!}\,\tilde{\mathfrak p}_{k-j},\qquad\tilde{\mathfrak p}_m\coloneqq\coef{\mathfrak w^m}\cP\in\bbQ\fps q,\quad\tilde{\mathfrak p}_m(0)=\delta_{m0},
+\]
+with $\mathfrak p_0=C_0$ and $\mathfrak p_1=I_1$. Moreover $\PFfour\mathfrak p_k=0$ for $k=0,\dots,3$, and $\PFfour\mathfrak p_4=1$.
+\end{lem}
+
+\begin{proof}
+The map is multiplicative because $H^5=1$, and injective because distinct powers of $\mathfrak w$ go to distinct powers of $z$. Followed by the restriction to $p_i$ it sends a series $G(\mathfrak w)$ to $G(\zeta^i/z)$. At the zeta point $\prod_j(\zeta^i-\zeta^j+kz)=(\zeta^i+kz)^5-1$, and $\prod_{k=1}^{5d}(5\zeta^i/z+k)=z^{-5d}\prod_{k=1}^{5d}(5\zeta^i+kz)$, $\prod_{k=1}^d((\zeta^i/z+k)^5-(\zeta^i/z)^5)=z^{-5d}\prod_{k=1}^d((\zeta^i+kz)^5-1)$; so the powers of $z$ cancel in each term $q^d$, and as $q^{\zeta^i/z}=\re^{\logq\zeta^i/z}$, the restriction of the image of $\re^{\logq\mathfrak w}\cP$ to $p_i$ is $I_i/z$. As the five restrictions determine an element, $I/z$ is the image of $\re^{\logq\mathfrak w}\cP$, and expanding $\re^{\logq\mathfrak w}\cP=\sum_k\mathfrak p_k\mathfrak w^k$ gives the formula for $\mathfrak p_k$. The term $q^0$ of $\cP$ is $1$, so $\tilde{\mathfrak p}_m(0)=\delta_{m0}$. The constant term of $\cP$ in $\mathfrak w$ is $\sum_dq^d(5d)!/(d!)^5=C_0$, and its coefficient of $\mathfrak w$ is, by logarithmic differentiation, $\sum_dq^d\frac{(5d)!}{(d!)^5}\bigl(\sum_{k=1}^{5d}\frac5k-\sum_{k=1}^d\frac5k\bigr)=\tilde I_1$; hence $\mathfrak p_0=C_0$ and $\mathfrak p_1=C_0\logq+\tilde I_1=I_1$.
+
+\emph{The operator $\PFfive$.} Since $z$ is a constant, $\prod_{j}(z\Dq-\zeta^j)=(z\Dq)^5-1$. On the term $q^d$ of $I_i$, which is $q^{d+\zeta^i/z}$ times a function of $z$, the operator $z\Dq$ acts by $\zeta^i+dz$, so $\prod_j(z\Dq-\zeta^j)$ multiplies it by $\prod_j(\zeta^i-\zeta^j+dz)$; this cancels the factors $k=d$ of the denominator (and kills the term $d=0$), and leaves $q\prod_{k=1}^5(5\zeta^i+(5d-5+k)z)$ times the term $q^{d-1}$. On the term $q^{d-1}$ the operator $\prod_{k=1}^5(5z\Dq+kz)$ acts by the same factor $\prod_{k=1}^5(5\zeta^i+(5d-5+k)z)$. Hence $\PFfive I_i=0$. By \cref{lem:set-pf5} and $I_i/z=\sum_k\zeta^{ik}\mathfrak p_kz^{-k}$,
+\[
+0=\PFfive(I_i/z)=\sum_{k\geq0}\zeta^{ik}\bigl(z^{5-k}\,\Dq\PFfour\mathfrak p_k-z^{-k}\mathfrak p_k\bigr),
+\]
+and the coefficients of $z^5,z^4,\dots,z^1$ give $\Dq\PFfour\mathfrak p_k=0$ for $k=0,\dots,4$.
+
+\emph{Constants.} The constants of $\Dq$ on $\bbQ\fps q[\logq]$ are $\bbQ$: on $\bbQ\fps q$, $\Dq\sum_nc_nq^n=\sum_nnc_nq^n$, whose constants are $\bbQ$; and if $f=\sum_{j\leq N}a_j\logq^j$ with $a_j\in\bbQ\fps q$, $a_N\neq0$, $N\geq1$ and $\Dq f=0$, the coefficient of $\logq^N$ gives $\Dq a_N=0$, so $a_N\in\bbQ$, and the coefficient of $\logq^{N-1}$ gives $\Dq a_{N-1}=-Na_N\neq0$, which is impossible since $\Dq$ maps $\bbQ\fps q$ into $q\bbQ\fps q$. Hence $\PFfour\mathfrak p_k\in\bbQ$ for $k\leq4$, equal to its part of order $q^0$. Taking the part of order $q^0$ commutes with $\Dq$, which acts on it as $\dd/\dd\logq$, and it kills the multiples of $q$. By \eqref{eq:set-PF4} and $\tilde{\mathfrak p}_m(0)=\delta_{m0}$, the part of order $q^0$ of $\PFfour\mathfrak p_k$ is $(\dd/\dd\logq)^4(\logq^k/k!)$, which is $0$ for $k\leq3$ and $1$ for $k=4$.
+\end{proof}
+
+\begin{lem}[The Birkhoff recursion]
+\label{lem:set-birkhoff}
+Put $\mathsf p^{(0)}_k\coloneqq\mathfrak p_k/C_0$ for $k\geq0$ and, recursively for $a=0,\dots,3$, $\mathsf p^{(a+1)}_k\coloneqq\partial_T\mathsf p^{(a)}_k/\kappa^{\mathrm{LR}}_a$ for $k\geq a+1$. Then, along the line $t=TH$,
+\[
+J_a=\sum_{k\geq a}\mathsf p^{(a)}_k\,H^kz^{a-k},\qquad\mathsf p^{(a)}_a=1\qquad(a=0,\dots,4),
+\]
+and $\kappa^{\mathrm{LR}}_a=\partial_T\mathsf p^{(a)}_{a+1}$ for $a=0,\dots,3$. In particular $\mathsf p^{(0)}_1=T$, $\kappa^{\mathrm{LR}}_1=\partial_T^2\mathsf p^{(0)}_2$, $\kappa^{\mathrm{LR}}_2=\partial_T\bigl(\partial_T^2\mathsf p^{(0)}_3/\kappa^{\mathrm{LR}}_1\bigr)$ and, since $\kappa^{\mathrm{LR}}_2=1$, $\kappa^{\mathrm{LR}}_3=\partial_T^2\bigl(\partial_T^2\mathsf p^{(0)}_4/\kappa^{\mathrm{LR}}_1\bigr)$.
+\end{lem}
+
+\begin{proof}
+Induction on $a$. By (G0)(d) and (M), $J_0=J/z=I/(zC_0)$ along the line, and by \cref{lem:set-periods} this is $\sum_k(\mathfrak p_k/C_0)H^kz^{-k}$, with $\mathsf p^{(0)}_0=\mathfrak p_0/C_0=1$; distinct $k$ carry distinct powers of $z$, so the coefficients are well defined. By (G0)(d) with $b=1$ and \cref{lem:set-grading}, $z\partial_TJ_a=\kappa^{\mathrm{LR}}_aJ_{a+1}$ for $a=0,\dots,3$, the derivative in the direction $H$ along the line being $\partial_T$. Differentiating the expansion of $J_a$ gives $z\partial_TJ_a=\sum_{k\geq a+1}(\partial_T\mathsf p^{(a)}_k)H^kz^{a+1-k}$, the term $k=a$ being $z\partial_T1=0$. Since $J_{a+1}=H^{a+1}+O(z^{-1})$, the coefficient of $z^0$ gives $\kappa^{\mathrm{LR}}_a=\partial_T\mathsf p^{(a)}_{a+1}$; as $\kappa^{\mathrm{LR}}_a$ is a unit of $\bbQ\fps q$ (\cref{lem:set-grading}), $J_{a+1}=z\partial_TJ_a/\kappa^{\mathrm{LR}}_a$ gives the expansion of $J_{a+1}$, with $\mathsf p^{(a+1)}_{a+1}=1$. For the closed forms, $\mathsf p^{(0)}_1=I_1/C_0=T$, and $\kappa^{\mathrm{LR}}_0=\partial_TT=1$ gives $\mathsf p^{(1)}_k=\partial_T\mathsf p^{(0)}_k$; then $\mathsf p^{(2)}_k=\partial_T^2\mathsf p^{(0)}_k/\kappa^{\mathrm{LR}}_1$ and $\mathsf p^{(3)}_k=\partial_T\mathsf p^{(2)}_k/\kappa^{\mathrm{LR}}_2$, and the formulas follow from $\kappa^{\mathrm{LR}}_a=\partial_T\mathsf p^{(a)}_{a+1}$ and \cref{lem:set-unitfrob}.
+
+Only derivatives along the line $t=TH$ are used: $J_{a+1}$ is obtained from $J_a$ by the quantum differential equation in the direction $b=1$, so the J-function is never needed off the line.
+\end{proof}
+
+\input{sections/s02_setup_3}

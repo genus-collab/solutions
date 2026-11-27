@@ -1,0 +1,3 @@
+outer graph q=1502 (E=7): 31 inner graphs carry a non-zero piece there, 17 of them were missing
+outer graph q=839 (E=6): 35 inner graphs carry a non-zero piece there, 20 of them were missing
+wrote sample_extra89.txt: 20 graphs, predicted 2517 CPU-s

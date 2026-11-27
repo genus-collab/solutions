@@ -1,0 +1,8 @@
+g5_89_nat: 4555 inner graphs;  g5_89_nat_ab1o3_m2o7: 4555 inner graphs
+(a) PIECES: 340363 in frame (0,0), 340369 in the second frame; only in (0,0): 30; only in the second frame: 36
+(b) COEFFICIENTS: 340333 common pieces, 124 with a different u-support bitmask
+    u-support histogram identical: False
+(c) ROWS: 1 non-zero merged rows in frame (0,0), 1 in the second frame; sets equal: True; rows with a different u-support: 0
+    outer graphs that receive a piece but whose row cancels to 0: 627 (0,0) / 627 second frame; sets equal: True
+written out/selection_rule.json
+VERDICT: the non-zero pattern is DIFFERENT across the two frames

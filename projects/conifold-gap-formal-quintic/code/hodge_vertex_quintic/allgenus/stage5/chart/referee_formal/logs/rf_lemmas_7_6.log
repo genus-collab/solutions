@@ -1,0 +1,18 @@
+rf_lemmas: N = 7, 6 seeds; log logs/rf_lemmas_7_6.log
+PASS (T0) one-variable SP: Lagrange-Buermann (sp1) = Wick definition (wickN, differential operator), 6 seeds, z^0..z^7
+PASS (T1) (L3) exact over Q: M = -3..5, a = 1 (through z^18), 7/3, -2/5 (through z^12)
+PASS (T1) (L3) exact over Q(zeta): M = -3..5, a = zeta - 2, through z^8
+PASS control: (T1) b_k -> B_2k/(2k) (M = 0) fails, first at z^3
+PASS control: (T1) Pochhammer factor dropped (M = 3) fails, first at z^1
+PASS control: (T1) exp(-Sum b_k ...) (M = 1) fails, first at z^1
+PASS (T2) (L2): N[s G + Fh, A(xi, z)] = A(X_0, z) EXACTLY (no z-corrections), 6 seeds, through z^7
+PASS control: (T2) amplitude with an s xi term gives the same series
+PASS control: (T2) phase with an s^2 xi term (not linear in sigma) gives the same series
+PASS (T3) (L1b) Fubini: N[Phi, A] = N[phi, beta B] (inner series over Q[[w]], inner point critical identically in w), 6 seeds, through z^7
+PASS control: (T3) Fubini without the factor beta
+PASS control: (T3) Fubini with the inner critical point frozen at v = 0
+PASS (T4) (S1): N[Phi, (d_v Phi) h + z d_v h] = 0, 6 seeds, through z^7
+PASS control: (T4) N[Phi, (d_v Phi) h] alone vanishes
+PASS (T5) (L1a): N[ph o chi, (A o chi) chi'] = chi'(0) N[ph, A] for chi = mu t + c2 t^2 + c3 t^3, 6 seeds
+PASS control: (T5) without the Jacobian chi'
+RF_LEMMAS 7 6: ALL CHECKS PASSED   (55 s)

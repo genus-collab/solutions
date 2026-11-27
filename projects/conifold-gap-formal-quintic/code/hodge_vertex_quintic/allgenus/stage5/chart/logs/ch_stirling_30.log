@@ -1,0 +1,11 @@
+PASS T_k is rational for k = 1..30 (Galois invariance)
+PASS weights: T_k = W_k = -Sum_(a in w_0) a^(1-2k) exactly for k = 1..30 (odd exponent 1-2k: sign of -5 and of 1 - zeta^j)
+PASS h(z) = exp(Sum_k b_k T_k z^(2k-1)) equals h_(w_0) by Newton sums through z^59 (k <= 30)
+PASS stored values: h_1 = -3/20, h_5 = -257071/8064000000 (GAMMA s.1, POLY s.1)   (Fraction(-3, 20), Fraction(-257071, 8064000000))
+PASS product of the five normalised Stirling series (Q(zeta)[[z]]) = h through z^25
+PASS control: twist weight +5 (chart factor Gamma(1 - 5/z)) fails, first at z^1   [1, 2, 3]
+PASS control: tangent weights 1 - zeta^j in the chart fails, first at z^1   [1, 2, 3]
+PASS control: factor Gamma(1 + 5/z) dropped fails, first at z^1   [1, 2, 3]
+PASS control: b_k -> -b_k fails, first at z^1   [1, 3, 5]
+h_1..h_5 = ['-3/20', '9/800', '-269/80000', '2823/6400000', '-257071/8064000000']
+CH_STIRLING 30: ALL CHECKS PASSED   (0 s)

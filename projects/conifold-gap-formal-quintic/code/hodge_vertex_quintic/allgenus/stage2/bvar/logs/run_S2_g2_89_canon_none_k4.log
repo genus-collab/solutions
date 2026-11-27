@@ -1,0 +1,14 @@
+====================================================================================================
+bv_run S2_g2_89_canon_none_k4   [2026-11-14T10:19:14]
+system S2: f (1 + u/3 - 2u^2/7 + 5u^3/11), g (1 - 3u/5 + u^2/2 + 2u^3/3);  B -> B (1 - 5u/4 + 7u^2/3);  normalisation canon;  control none
+   rows: 95 of 100 residue slots (a, i, zhat^n) differ from the project rows (quintic, frame (0,0)); u-window u^0..u^3
+PASS    rows symplectic mod (zhat^4, u^4)
+   graph sum: 7 inner graphs, wall 1 s, CPU 1 s
+   RESULT: all 6 outer graphs with edges are O(u^2): REGULAR
+   vertex graph [u^0..u^3] = ['1/1200', '-13/9000', '35107/40320000', '~647498177/26136000000']
+   vertex graph in T'' = c0 T (c0 = 1): (1/1200) T''^-2 + (0) T''^-1  -> c_2 (T'')^-2 + 0
+   [control] in the quintic t_c: (1/1200) t_c^-2 + (-1/3600) t_c^-1
+   [control] in the model v(u): (1/1200) v^-2 + (-3/4000) v^-1
+   total, in T'': (1/1200) T''^-2 + (0) T''^-1
+   compared with R0 (same g, prime, window): 6 of 7 outer graphs in range differ (u^0..u^3): [0, 1, 2, 3, 4, 6]
+BV_RUN S2_g2_89_canon_none_k4: checks passed; edge graphs all regular; vertex law holds

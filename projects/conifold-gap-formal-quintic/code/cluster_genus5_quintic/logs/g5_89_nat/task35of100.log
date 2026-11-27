@@ -1,0 +1,51 @@
+==========================================================================================
+genus5_run g5_89_nat: task 35 of 100, python 3.9.25, host node013.stanage.hpc.shef.ac.uk
+   set-up 6 s: 4555 inner graphs, K = 8
+   46 inner graphs assigned, estimated 0.46 h on the reference machine (heaviest task 0.70 h)
+   inner graph 3249 (E= 9, V=6):   474.6 s, 52 outer graphs
+   inner graph  548 (E= 6, V=3):   159.7 s, 19 outer graphs
+   inner graph 1750 (E= 8, V=4):   134.9 s, 36 outer graphs
+   inner graph 2236 (E= 8, V=5):   104.9 s, 69 outer graphs
+   inner graph 2190 (E= 8, V=5):    82.7 s, 49 outer graphs
+   inner graph 3155 (E= 9, V=6):    81.1 s, 142 outer graphs
+   inner graph 1982 (E= 8, V=5):    58.9 s, 65 outer graphs
+   inner graph  926 (E= 7, V=3):    53.6 s, 25 outer graphs
+   inner graph 1923 (E= 8, V=5):    58.8 s, 69 outer graphs
+   inner graph 2096 (E= 8, V=5):    42.9 s, 87 outer graphs
+   inner graph 2116 (E= 8, V=5):    45.0 s, 65 outer graphs
+   inner graph 2195 (E= 8, V=5):    44.6 s, 59 outer graphs
+   inner graph 1059 (E= 7, V=4):    37.7 s, 48 outer graphs
+   inner graph 3176 (E= 9, V=6):    26.5 s, 103 outer graphs
+   inner graph  125 (E= 4, V=2):    38.8 s, 8 outer graphs
+   inner graph 1080 (E= 7, V=4):    21.5 s, 45 outer graphs
+   inner graph 3823 (E=10, V=6):    25.5 s, 88 outer graphs
+   inner graph 2329 (E= 8, V=6):    23.7 s, 62 outer graphs
+   inner graph 3688 (E=10, V=6):    19.3 s, 101 outer graphs
+   inner graph 3291 (E= 9, V=6):    20.5 s, 110 outer graphs
+   inner graph 3225 (E= 9, V=6):    17.9 s, 107 outer graphs
+   inner graph 1346 (E= 7, V=5):    15.1 s, 39 outer graphs
+   inner graph 3521 (E= 9, V=7):    15.5 s, 100 outer graphs
+   inner graph 2524 (E= 8, V=6):    12.3 s, 83 outer graphs
+   inner graph 3014 (E= 9, V=6):    10.6 s, 115 outer graphs
+   inner graph 2675 (E= 9, V=5):    14.5 s, 76 outer graphs
+   inner graph 2941 (E= 9, V=5):    11.1 s, 65 outer graphs
+   inner graph 3280 (E= 9, V=6):     9.1 s, 98 outer graphs
+   inner graph  843 (E= 6, V=6):     9.4 s, 12 outer graphs
+   inner graph 2570 (E= 8, V=6):     7.2 s, 70 outer graphs
+   inner graph 3395 (E= 9, V=6):     8.3 s, 104 outer graphs
+   inner graph 1508 (E= 7, V=5):     6.6 s, 64 outer graphs
+   inner graph 1575 (E= 7, V=6):     8.3 s, 53 outer graphs
+   inner graph 1552 (E= 7, V=6):     5.4 s, 51 outer graphs
+   inner graph 3350 (E= 9, V=6):     5.3 s, 75 outer graphs
+   inner graph   90 (E= 4, V=3):     3.4 s, 12 outer graphs
+   inner graph  733 (E= 6, V=5):     5.6 s, 30 outer graphs
+   inner graph 2292 (E= 8, V=6):     4.0 s, 86 outer graphs
+   inner graph 4533 (E=12, V=8):     4.3 s, 227 outer graphs
+   inner graph 1635 (E= 7, V=6):     4.0 s, 49 outer graphs
+   inner graph   43 (E= 3, V=2):     4.2 s, 5 outer graphs
+   inner graph 4421 (E=11, V=8):     2.7 s, 196 outer graphs
+   inner graph 4282 (E=11, V=7):     2.8 s, 253 outer graphs
+   inner graph  481 (E= 6, V=4):     2.2 s, 37 outer graphs
+   inner graph 4204 (E=10, V=8):     1.4 s, 127 outer graphs
+   inner graph  419 (E= 6, V=5):     1.2 s, 24 outer graphs
+TASK 35 OF 100 (g5_89_nat) COMPLETE: 46 inner graphs, 1754 s

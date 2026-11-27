@@ -1,0 +1,9 @@
+r3_lemE_run.py  N = 7 (mod u^N), M = 5 (psi' order); exact over Q
+[Sp] R(-z)^T eta R(z) = eta through z^28 mod u^7: defects 0; R R^-1 = 1: True;  [P] non-zero x^d coefficients of R^-1(0, x), 1 <= d <= 28: 28
+[DIV] N/(psi+psi') expanded in psi'/psi = expanded in psi/psi' (divisibility, (Sp)): True; = difference quotient: True
+[E] f = z^-1 J^C        LHS = RHS: True (non-zero components 30 of 30); Step-4 form = LHS: True; [C4] sign flip holds: False; [C3] extra z^0 term holds: False
+[E] f = z^-3 J^C        LHS = RHS: True (non-zero components 30 of 30); Step-4 form = LHS: True; [C4] sign flip holds: False; [C3] extra z^0 term holds: False
+[E] f = random decaying LHS = RHS: True (non-zero components 30 of 30); Step-4 form = LHS: True; [C4] sign flip holds: False; [C3] extra z^0 term holds: False
+[C1] non-decaying f, cut L = 6, 9, 12, 15: 4 distinct values of the u^0 psi'^0 contraction (expected 4); each cut satisfies the finite identity
+[C2] non-symplectic R^-1: the two expansions of N/(psi+psi') agree (divisibility): False (expected False); difference quotient = psi'/psi expansion: True (True for every R: the psi-free defect eta^-1 - R^-1(-psi') eta^-1 R^-1(psi')^T contributes only negative powers of psi), = psi/psi' expansion: False (expected False)
+RESULT: ALL CHECKS PASSED

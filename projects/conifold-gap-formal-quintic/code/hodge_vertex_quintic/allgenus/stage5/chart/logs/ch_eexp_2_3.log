@@ -1,0 +1,8 @@
+PASS c_n(L), n <= 5: Laurent fit with exponents 4n-5k confirmed on 3 extra points each
+PASS padding coefficients vanish: c_n in Q[L], exponents 4n - 5k, 0 <= k <= floor(4n/5) (n <= 5)
+PASS D_q Dpsi = L - 1 (critical value of the chart phase, D_q = q d/dq), through q^2
+PASS step (e): L e^(Dpsi/z) c(z; L(q)) = h(z) Sum_d q^d I_d(z), all coefficients q^d z^n, d <= 2, -d <= n <= 3   15
+PASS control: factor L dropped fails (first at q^1)   [(1, 0), (1, 1)]
+PASS control: e^(Dpsi/z) dropped fails (first at q^1)   [(1, -1), (1, 0)]
+PASS control: h with the z^1 log-coefficient of twist +5 (-11/60 for -3/20) fails at q^0 z^1   [(0, 1), (0, 2)]
+CH_EEXP 2 3: ALL CHECKS PASSED   (0 s)

@@ -1,0 +1,5 @@
+==============================================================================================================
+ig_run x2668_nat61: 1 graphs requested, 1 jobs to do (0 already stored), nproc 1, deadline 2000 s, started 2026-11-13 14:37:38
+   predicted cost of the queued jobs: 0.2 CPU-h (proxy rate 5e-6 s)
+   t=2668 E= 9 V=5: 161.7 s, 28 non-zero outer rows   [1/1, wall 162 s]
+ig_run x2668_nat61: 1 jobs finished in 162 s wall; queue empty

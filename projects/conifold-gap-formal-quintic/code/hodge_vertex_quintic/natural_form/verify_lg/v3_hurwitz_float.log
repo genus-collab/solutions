@@ -1,0 +1,8 @@
+PASS (a) eta constant in t = (a1, a2, a3, a4 - a2^2/8, a5) at 6 random complex points (sum over critical points): max deviation 4.36e-15
+PASS (b) c_555 = 1/a5: max deviation 9.34e-15
+PASS (b) c_4ab = eta_ab (unit d/dt4): max deviation 4.36e-15
+PASS (a) control: naive coordinate a4 gives eta(d_a2, d_a2) = -a2/8: 6.48e-17
+PASS (d) on the line the critical points satisfy p^5 = r/4 and f(p_c) = 5 p_c^4
+PASS (c) Gram matrices of the classes x^k dx (k = -2..2) for the forms dx and dx/x coincide; support k + l = 2 mod 5: 2.1e-16
+PASS (c) the spectrum attached to each class x^k dx is the same for dx (d = 1/2) and dx/x (d = 1): [(-2, 0.5), (-1, -0.5), (0, -0.25), (1, 0.0), (2, 0.25)]: [(-2, 0.5), (-1, -0.5), (0, -0.25), (1, 0.0), (2, 0.25)]
+ALL PASS

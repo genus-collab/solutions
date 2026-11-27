@@ -1,0 +1,21 @@
+v = 1; x[p_] := p^4/4 + v/p; c = 1; nn = 8;
+ser = -t + Sum[a[k] t^k, {k, 2, nn}];
+rules = {};
+Do[
+  eq = SeriesCoefficient[x[c + (ser /. rules)] - x[c + t], {t, 0, k + 1}];
+  r1 = Solve[eq == 0, a[k]];
+  rules = Join[rules, First[r1]];
+  , {k, 2, nn}];
+iq = c + (ser /. rules);
+Print["iota(1+t) = 1 + ", Series[iq - 1, {t, 0, 5}]];
+q = c + t;
+Kc = (1/2) (1/(p0 - q) - 1/(p0 - iq))/((q - iq) x'[q]);
+w02 = D[iq, t]/(q - iq)^2;
+res = Together[SeriesCoefficient[Series[Kc w02, {t, 0, 1}], -1]];
+Print["c=1 contribution to omega11 (coef of dp0): ", res];
+G = Integrate[res, p0];
+Print["primitive: ", Together[G]];
+val = Limit[G, p0 -> Infinity] - (G /. p0 -> 0);
+Print["G(inf)-G(0) = ", val, "  times 5 = ", 5 val];
+num = -NIntegrate[res /. p0 -> -s1, {s1, 0, Infinity}];
+Print["numeric ray integral (negative axis) = ", num, " times 5 = ", 5 num];

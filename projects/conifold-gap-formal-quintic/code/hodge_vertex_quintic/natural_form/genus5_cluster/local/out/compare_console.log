@@ -1,0 +1,23 @@
+local part files ['local.json']: 4555 inner graphs, CPU 11.77 h (wall was logged by the run)
+reference G:\My Drive\Projects\Old\refGW\cluster_genus5_quintic\results\g5_89_nat.json: tag g5_89_nat, failed [], 628 stored rows, 4555 outer graphs
+PASS the local run covers all 4555 inner graphs: 4555 covered, 0 missing
+local merged table: 4 rows with a stored piece
+PASS every outer graph with a local piece has E <= 1
+outer graphs with E <= 1 (exact in the local run): [0, 1, 2, 3]
+PASS all 32 entries of the 4 complete rows agree with the cluster run
+   outer graph   0 (E=0, gv=[5], aut=1): ['1/660000', '-7/825000', '199/9900000', '-717/27500000', '449357/22500000000', '-5593217/618750000000', None, None]
+   outer graph   1 (E=1, gv=[1, 4], aut=1): ZERO (all 8 coefficients)
+   outer graph   2 (E=1, gv=[2, 3], aut=1): ZERO (all 8 coefficients)
+   outer graph   3 (E=1, gv=[4], aut=2): ZERO (all 8 coefficients)
+PASS exactly one complete row is non-zero, the vertex graph q = 0: [0]
+   local vertex graph in t_c: (1/660000) t_c^-8 + (0) t_c^-7 + (0) t_c^-6 + (0) t_c^-5 + (0) t_c^-4 + (0) t_c^-3 + (0) t_c^-2 + (0) t_c^-1
+PASS local vertex graph = (c_5) t_c^-8 + 0 + ... + 0 t_c^-1
+PASS local c_5 equals |B_10|/(10*8*5^4) = 1/660000: 1/660000
+PASS local vertex t_c vector equals the cluster's info['vertex']
+PASS the local rows DIFFER from the control g5_89_M0_out2 (it is a real test, not an identity): [0, 1, 2, 3]
+   control g5_89_M0_out2: complete rows differing from the local run: [0, 1, 2, 3]; its non-zero rows with edges: [1, 2, 3]
+PASS the local rows DIFFER from the control g5_89_nat_t7_out2 (it is a real test, not an identity): [0, 1, 2, 3]
+   control g5_89_nat_t7_out2: complete rows differing from the local run: [0, 1, 2, 3]; its non-zero rows with edges: [1, 2, 3]
+PASS the local collect result agrees with this independent re-merge on the complete rows
+   local collect reported failed = []; nonregular = {}
+G5L_COMPARE ALL CHECKS PASSED

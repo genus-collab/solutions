@@ -1,0 +1,15 @@
+================================================================================
+original generator, genus 5, Emax 12, deadline 1440 s
+   E =  1:     3 graphs (5 canonical forms, 0.0 s; cumulative 0.0 s)
+   E =  2:    11 graphs (31 canonical forms, 0.0 s; cumulative 0.0 s)
+   E =  3:    34 graphs (192 canonical forms, 0.0 s; cumulative 0.0 s)
+   E =  4:   100 graphs (878 canonical forms, 0.0 s; cumulative 0.1 s)
+   E =  5:   239 graphs (3368 canonical forms, 0.4 s; cumulative 0.4 s)
+   E =  6:   492 graphs (9209 canonical forms, 4.6 s; cumulative 5.0 s)
+   E =  7:   784 graphs (16364 canonical forms, 41.3 s; cumulative 46.3 s)
+   E =  8:  1002 graphs (21810 canonical forms, 136.4 s; cumulative 182.8 s)
+   E =  9:   926 graphs (21617 canonical forms, 289.7 s; cumulative 472.5 s)
+   E = 10:   632 graphs (14536 canonical forms, 337.6 s; cumulative 810.0 s)
+   E = 11:   260 graphs (6286 canonical forms, 569.1 s; cumulative 1379.1 s)
+   E = 12: STOPPED at the deadline after 35 of 260 source graphs (212 canonical forms, 41 distinct so far, 61 s in this level)
+counts per E (complete levels): [1, 3, 11, 34, 100, 239, 492, 784, 1002, 926, 632, 260]; total 4484; wall 1440.2 s; INCOMPLETE (deadline)

@@ -1,0 +1,5 @@
+Pi_rand                      131 s (104+25) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+Pi_A+2B                      131 s (104+26) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+circ_b_extra0                131 s (104+26) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+circ_b_sol0                  131 s (104+26) | 3-edge nonzero [u^0..3]: {} | 2-edge nonzero [u^0..2]: {} | 1-edge nonzero [u^0,1]: {} | direct=S.cub: True direct=S.quad: True | K=4 vs K=3 agree: True
+done 131 s -> C:\Users\user\AppData\Local\Temp\claude\d7c1b608d03d194a\37f24460-3601-4c85-b123-5156e19eb475\scratchpad\ref_u3\ref_direct_89_C.json

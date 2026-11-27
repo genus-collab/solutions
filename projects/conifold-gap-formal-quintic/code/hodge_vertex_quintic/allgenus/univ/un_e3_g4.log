@@ -1,0 +1,50 @@
+==============================================================================================================
+un_e3_g4: case A at genus 4, seed 20261113, maxout 2, p = 2^89-1   [2026-11-13T18:56:10]
+   X: 27 entries, zhat-orders [1, 2, 3, 4, 5, 6]; infinitesimally symplectic: True; flat-regular: True; solved in 3 iterations (skipped m = [6])
+   annihilation (D Y^C_Q)_+ = 0 mod u^6 for m = 1..9, INCLUDING the unsolved m = [6]: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 4 u^1 + 1003/210 u^2 + 175783/29400 u^3 + 11580299/1587600 u^4 + ~223233556757/17860500000 u^5) e_1   [not constant: D is not a gauge between cyclic systems]
+   T_eff = u (1 u^0 + 89/70 u^1 + 19267/11025 u^2 + 49463/19600 u^3 + 747292513/186046875 u^4 + ~690300889259/357210000000 u^5)
+   dressed rows symplectic mod (zhat^10, u^6): True
+   RESULT: all 10 outer graphs with edges (<= 2 edges) are O(u^6): REGULAR   (537 s)
+   vertex graph in T_eff: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_4 T_eff^-6 + 0 + .. + 0
+UN_E3_G4 done
+==============================================================================================================
+un_e3_g4: case A at genus 4, seed 20261113, maxout None, p = 2^89-1   [2026-11-13T19:09:02]
+   X: 27 entries, zhat-orders [1, 2, 3, 4, 5, 6]; infinitesimally symplectic: True; flat-regular: True; solved in 3 iterations (skipped m = [6])
+   annihilation (D Y^C_Q)_+ = 0 mod u^6 for m = 1..9, INCLUDING the unsolved m = [6]: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + 4 u^1 + 1003/210 u^2 + 175783/29400 u^3 + 11580299/1587600 u^4 + ~223233556757/17860500000 u^5) e_1   [not constant: D is not a gauge between cyclic systems]
+   T_eff = u (1 u^0 + 89/70 u^1 + 19267/11025 u^2 + 49463/19600 u^3 + 747292513/186046875 u^4 + ~690300889259/357210000000 u^5)
+   dressed rows symplectic mod (zhat^10, u^6): True
+      37/379 inner graphs (48 s wall, 134 s CPU)
+      74/379 inner graphs (74 s wall, 247 s CPU)
+      111/379 inner graphs (152 s wall, 499 s CPU)
+      148/379 inner graphs (183 s wall, 666 s CPU)
+      185/379 inner graphs (220 s wall, 823 s CPU)
+      222/379 inner graphs (254 s wall, 957 s CPU)
+      259/379 inner graphs (274 s wall, 1055 s CPU)
+      296/379 inner graphs (347 s wall, 1336 s CPU)
+      333/379 inner graphs (378 s wall, 1461 s CPU)
+      370/379 inner graphs (405 s wall, 1576 s CPU)
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR   (413 s)
+   vertex graph in T_eff: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_4 T_eff^-6 + 0 + .. + 0
+UN_E3_G4 done
+==============================================================================================================
+un_e3_g4: case A at genus 4, seed 2, maxout None, p = 2^89-1   [2026-11-13T19:16:09]
+   X: 29 entries, zhat-orders [0, 1, 2, 3, 4, 5, 6]; infinitesimally symplectic: True; flat-regular: True; solved in 4 iterations (skipped m = [6])
+   annihilation (D Y^C_Q)_+ = 0 mod u^6 for m = 1..9, INCLUDING the unsolved m = [6]: True
+   z^0 coefficient of D Y^C_Q: (-1 u^0 + -4/7 u^1 + 257/420 u^2 + 378907/352800 u^3 + 595583/4233600 u^4 + ~317466104897/37044000000 u^5) e_1   [not constant: D is not a gauge between cyclic systems]
+   T_eff = u (1 u^0 + -137/40 u^1 + 155303/33600 u^2 + -15985/4032 u^3 + ~13513647041/4536000000 u^4 + [31850039937852252074533486 mod p] u^5)
+   dressed rows symplectic mod (zhat^10, u^6): True
+      37/379 inner graphs (53 s wall, 147 s CPU)
+      74/379 inner graphs (82 s wall, 275 s CPU)
+      111/379 inner graphs (164 s wall, 536 s CPU)
+      148/379 inner graphs (195 s wall, 713 s CPU)
+      185/379 inner graphs (236 s wall, 882 s CPU)
+      222/379 inner graphs (272 s wall, 1021 s CPU)
+      259/379 inner graphs (292 s wall, 1120 s CPU)
+      296/379 inner graphs (366 s wall, 1410 s CPU)
+      333/379 inner graphs (399 s wall, 1546 s CPU)
+      370/379 inner graphs (426 s wall, 1654 s CPU)
+   RESULT: all 378 outer graphs with edges are O(u^6): REGULAR   (433 s)
+   vertex graph in T_eff: (1/180000) T^-6 + (0) T^-5 + (0) T^-4 + (0) T^-3 + (0) T^-2 + (0) T^-1  -> c_4 T_eff^-6 + 0 + .. + 0
+UN_E3_G4 done

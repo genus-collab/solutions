@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------------------------------------
+(A) analysis of the O(u^2) quadrics, p = 2^61-1
+PASS N_1^taut satisfies the four O(u) equations
+   dim K_4 (full class) = 71
+PASS dim K_4 = 71
+PASS full class: every restricted form is homogeneous in t (cone with vertex N_1^taut): no constant or linear terms
+   ranks of the five forms on K_4 (71 x 71): {3: 43, 6: 10, 7: 62, 8: 34, 17: 12}
+   rank of a random linear combination: 62; dimension of the span of the five forms: 5
+PASS full class: Hilbert function in degree 3 equals the complete-intersection value (ideal rank 355 = 5 x 71: no linear syzygies; NOT a proof of the dimension): (355, 355)
+   dim K_4^circ = 11 (rank of the 4 x 15 restricted system 4)
+PASS dim K_4^circ = 11
+PASS circulant class: restricted forms homogeneous
+   ranks of the five forms on K_4^circ (11 x 11): {3: 7, 6: 2, 7: 10, 8: 6, 17: 2}
+   rank of a random combination: 10; span dimension: 5
+PASS circulant class: Hilbert function H(3) = 231 equals the complete-intersection value 231 (consistency, not a dimension proof)
+PASS circulant class: Hilbert function H(4) = 681 equals the complete-intersection value 681 (consistency, not a dimension proof)
+   => the Hilbert function agrees with a complete intersection in degrees 3 and 4 (no linear syzygies, only the Koszul quadratic ones); dim X^circ >= 5 holds in any case and the exact dimension of the main component follows from the low/high decomposition (genus3_quadsolve2)
+(B) sectors: K_4 intersected with the span of subsets of zhat-order blocks of the circulant class; exact common zeros where dim <= 3
+      blocks (5,): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (6,): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (1, 2): dim 1, common zeros [] (dim 1)
+      blocks (1, 3): dim 2, common zeros [] (dim 2 (gcd of binary forms, degree 0))
+      blocks (1, 4): dim 1, common zeros [] (dim 1)
+      blocks (1, 5): dim 2, common zeros [(1557454409177690950, 1)] (dim 2 (gcd of binary forms, degree 1))
+      blocks (1, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (2, 3): dim 1, common zeros [] (dim 1)
+      blocks (2, 5): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (2, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (3, 4): dim 1, common zeros [] (dim 1)
+      blocks (3, 5): dim 2, common zeros [(1557454409177690950, 1), (1557454409177690950, 1)] (dim 2 (gcd of binary forms, degree 2))
+      blocks (3, 6): dim 1, common zeros ['(1)'] (dim 1)
+      blocks (4, 5): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (4, 6): dim 2, common zeros all (dim 2 (all forms vanish identically on the line))
+      blocks (5, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (1, 2, 3): dim 4, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 4): dim 3, common zeros [] (dim 3: resultant degrees [4, 4, 4, 4], gcd degree 0)
+      blocks (1, 2, 5): dim 4, form ranks [3, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 6): dim 3, common zeros [('x-gcd of degree 4: roots not extracted',)] (dim 3: resultant degrees [4, 4, 4, 4], gcd degree 4)
+      blocks (1, 3, 4): dim 4, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 3, 5): dim 5, form ranks [4, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 6): dim 4, form ranks [3, 2, 3, 3, 2] (not solved: dim > 3)
+      blocks (1, 4, 5): dim 4, form ranks [2, 2, 2, 2, 2] (not solved: dim > 3)
+      blocks (1, 4, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (1, 5, 6): dim 4, form ranks [1, 2, 2, 2, 1] (not solved: dim > 3)
+      blocks (2, 3, 4): dim 3, common zeros [] (dim 3: resultant degrees [0, 4, 4, 4], gcd degree 0)
+      blocks (2, 3, 5): dim 4, form ranks [3, 0, 3, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 6): dim 3, common zeros [('x-gcd of degree 4: roots not extracted',)] (dim 3: resultant degrees [0, 4, 4, 4], gcd degree 4)
+      blocks (2, 4, 5): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (2, 4, 6): dim 2, common zeros all (dim 2 (all forms vanish identically on the line))
+      blocks (2, 5, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (3, 4, 5): dim 4, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (3, 4, 6): dim 3, common zeros degenerate (dim 3: resultant degrees [0, 0, 0, 0], gcd degree 0 (a resultant vanishes identically))
+      blocks (3, 5, 6): dim 4, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (4, 5, 6): dim 5, form ranks [0, 0, 0, 0, 0] (not solved: dim > 3)
+      blocks (1, 2, 3, 4): dim 6, form ranks [6, 2, 6, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 5): dim 7, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 6): dim 6, form ranks [5, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 5): dim 6, form ranks [5, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 6): dim 5, form ranks [4, 2, 4, 4, 2] (not solved: dim > 3)
+      blocks (1, 2, 5, 6): dim 6, form ranks [3, 2, 5, 4, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 5): dim 7, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 6): dim 6, form ranks [5, 2, 5, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 5, 6): dim 7, form ranks [4, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 4, 5, 6): dim 6, form ranks [2, 2, 2, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 5): dim 6, form ranks [3, 0, 5, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 6): dim 5, form ranks [3, 0, 4, 2, 2] (not solved: dim > 3)
+      blocks (2, 3, 5, 6): dim 6, form ranks [3, 0, 3, 2, 2] (not solved: dim > 3)
+      blocks (2, 4, 5, 6): dim 5, form ranks [0, 0, 0, 0, 0] (not solved: dim > 3)
+      blocks (3, 4, 5, 6): dim 6, form ranks [0, 0, 1, 0, 0] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 5): dim 9, form ranks [7, 2, 9, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 6): dim 8, form ranks [7, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 5, 6): dim 9, form ranks [6, 2, 8, 6, 2] (not solved: dim > 3)
+      blocks (1, 2, 4, 5, 6): dim 8, form ranks [5, 2, 6, 5, 2] (not solved: dim > 3)
+      blocks (1, 3, 4, 5, 6): dim 9, form ranks [6, 2, 7, 6, 2] (not solved: dim > 3)
+      blocks (2, 3, 4, 5, 6): dim 8, form ranks [3, 0, 5, 2, 2] (not solved: dim > 3)
+      blocks (1, 2, 3, 4, 5, 6): dim 11, form ranks [7, 2, 10, 6, 2] (not solved: dim > 3)
+   block sectors of dimension <= 3 with common zeros (all of them are pure-high directions, on which q_HH = 0, or their mixtures): [((5,), 1, "['(1)']"), ((6,), 1, "['(1)']"), ((1, 5), 2, '[(1557454409177690950, 1)]'), ((1, 6), 1, "['(1)']"), ((2, 5), 1, "['(1)']"), ((2, 6), 1, "['(1)']"), ((3, 5), 2, '[(1557454409177690950, 1), (1557454409177690950, 1)]'), ((3, 6), 1, "['(1)']"), ((4, 5), 3, 'degenerate'), ((4, 6), 2, 'all'), ((5, 6), 3, 'degenerate'), ((1, 2, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((1, 4, 6), 3, 'degenerate'), ((2, 3, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((2, 4, 5), 3, 'degenerate'), ((2, 4, 6), 2, 'all'), ((2, 5, 6), 3, 'degenerate'), ((3, 4, 6), 3, 'degenerate')]
+PASS the common zeros found in block sectors of dimension <= 3 all involve the high blocks 4, 5, 6 (no low-order-only sector solution): [((5,), 1, "['(1)']"), ((6,), 1, "['(1)']"), ((1, 5), 2, '[(1557454409177690950, 1)]'), ((1, 6), 1, "['(1)']"), ((2, 5), 1, "['(1)']"), ((2, 6), 1, "['(1)']"), ((3, 5), 2, '[(1557454409177690950, 1), (1557454409177690950, 1)]'), ((3, 6), 1, "['(1)']"), ((4, 5), 3, 'degenerate'), ((4, 6), 2, 'all'), ((5, 6), 3, 'degenerate'), ((1, 2, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((1, 4, 6), 3, 'degenerate'), ((2, 3, 6), 3, "[('x-gcd of degree 4: roots not extracted',)]"), ((2, 4, 5), 3, 'degenerate'), ((2, 4, 6), 2, 'all'), ((2, 5, 6), 3, 'degenerate'), ((3, 4, 6), 3, 'degenerate')]
+(C) diagonal sector (15 colour-dependent scalar coordinates, odd orders): dim K_4^diag = 12; form ranks [8, 8, 12, 12, 8]; span 5
+   diagonal sector Hilbert function H(3) = 304 (complete intersection: 304)
+      diagonal blocks (1,): dim 4, ranks [4, 4, 4, 4, 4]
+      diagonal blocks (3,): dim 4, ranks [4, 0, 4, 4, 4]
+      diagonal blocks (5,): dim 4, ranks [0, 0, 0, 0, 0]
+      diagonal blocks (1, 3): dim 8, ranks [8, 8, 8, 8, 8]
+      diagonal blocks (1, 5): dim 8, ranks [4, 8, 8, 8, 4]
+      diagonal blocks (3, 5): dim 8, ranks [4, 0, 4, 4, 4]
+QUADAN ALL CHECKS PASSED

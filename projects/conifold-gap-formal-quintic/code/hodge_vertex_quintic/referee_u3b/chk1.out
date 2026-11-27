@@ -1,0 +1,48 @@
+============================== prime 61
+zeta^5 = 1: True  zeta != 1: True  z^2 ok: True
+(1) c_32 == kappa m_1^3 as polynomials: True  kappa != 0: True  monomials: 20
+    cubics vanishing identically on m_1 = 0: [18, 20, 32]
+    cubics all of whose monomials contain c1_0: [11, 19]
+    order-4 dependence (index 8 or 9 in support): [9, 10, 11, 12, 19]
+(2) c1 = 0: non-zero cubics and their variables: {9: [3, 4], 18: [3, 4], 32: [3, 4]}
+    c1 = 0 and m_1 = 0 (c2 on its line): non-zero cubics: [9]
+(3) residuals at A, B, random xA+yB: [] [] []  m_1: 0 0
+    Delta*: non-zero residuals []  m_1 = 0  c3_0 = -18/25  c5_0, c6_2 = 0 0
+    c1 of Delta* == c1 of A + a B: True  c3_0 of that Pi point: 0/1  c3_0(A), c3_0(B): [532343820724339244] [470047775267488215]
+    Delta* - Pi point, non-zero coordinates: ['c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_1', 'c5_2', 'c6_1']
+    rank of (A, B, Delta*) on coordinates 0..9: 3
+    line of Pi at c1(Delta*): c1_0 + 2 z^3 c1_1 + 2 z c1_2 = 0
+    a_4 on the c1-line of Pi: degree <= 2: True  leading != 0: True  discriminant == 0 (tangent): True  double root == c1_1(Delta*): True
+(4) stored c1_0 = 0 points: residuals [] [[], [], [], []]
+    extra[0]: b = + zeta^2;  coordinates 0..9 proportional to Pi_B: False
+    extra[1]: b = + zeta^2;  coordinates 0..9 proportional to Pi_B: False
+    extra[2]: b = - zeta^2;  coordinates 0..9 proportional to Pi_B: True
+    extra[3]: b = - zeta^2;  coordinates 0..9 proportional to Pi_B: False
+    U_b1 degree: 51  genuine degree: 13  factor degrees: [[2, 1], [10, 1]]  F_p roots of the genuine part: 1
+(5) rank of the 7 x 15 N_2 matrix: random pure-high 4  A+2B 6  random Pi 6  B 5  genuine c1_0=0 point 6  extras [7, 7, 6, 6]  Delta* 6  random point 7
+    homogeneity: residuals at s*Delta*, s*sol: [] []
+    rank of the conditions on the 7 high coordinates (fibre dimension = 7 - rank): A+2B 6  B 5  genuine 5  extras [5, 5, 5, 5]  Delta* 6
+============================== prime 89
+zeta^5 = 1: True  zeta != 1: True  z^2 ok: True
+(1) c_32 == kappa m_1^3 as polynomials: True  kappa != 0: True  monomials: 20
+    cubics vanishing identically on m_1 = 0: [18, 20, 32]
+    cubics all of whose monomials contain c1_0: [11, 19]
+    order-4 dependence (index 8 or 9 in support): [9, 10, 11, 12, 19]
+(2) c1 = 0: non-zero cubics and their variables: {9: [3, 4], 18: [3, 4], 32: [3, 4]}
+    c1 = 0 and m_1 = 0 (c2 on its line): non-zero cubics: [9]
+(3) residuals at A, B, random xA+yB: [] [] []  m_1: 0 0
+    Delta*: non-zero residuals []  m_1 = 0  c3_0 = -18/25  c5_0, c6_2 = 0 0
+    c1 of Delta* == c1 of A + a B: True  c3_0 of that Pi point: 0/1  c3_0(A), c3_0(B): [447749842730611464429020264] [50187033753535933445823790]
+    Delta* - Pi point, non-zero coordinates: ['c2_1', 'c2_2', 'c3_0', 'c3_1', 'c3_2', 'c4_1', 'c4_2', 'c5_1', 'c5_2', 'c6_1']
+    rank of (A, B, Delta*) on coordinates 0..9: 3
+    line of Pi at c1(Delta*): c1_0 + 2 z^3 c1_1 + 2 z c1_2 = 0
+    a_4 on the c1-line of Pi: degree <= 2: True  leading != 0: True  discriminant == 0 (tangent): True  double root == c1_1(Delta*): True
+(4) stored c1_0 = 0 points: residuals [] [[], [], [], []]
+    extra[0]: b = + zeta^2;  coordinates 0..9 proportional to Pi_B: False
+    extra[1]: b = + zeta^2;  coordinates 0..9 proportional to Pi_B: False
+    extra[2]: b = - zeta^2;  coordinates 0..9 proportional to Pi_B: True
+    extra[3]: b = - zeta^2;  coordinates 0..9 proportional to Pi_B: False
+    U_b1 degree: 51  genuine degree: 13  factor degrees: [[4, 1], [8, 1]]  F_p roots of the genuine part: 1
+(5) rank of the 7 x 15 N_2 matrix: random pure-high 4  A+2B 6  random Pi 6  B 5  genuine c1_0=0 point 6  extras [7, 7, 6, 6]  Delta* 6  random point 7
+    homogeneity: residuals at s*Delta*, s*sol: [] []
+    rank of the conditions on the 7 high coordinates (fibre dimension = 7 - rank): A+2B 6  B 5  genuine 5  extras [5, 5, 5, 5]  Delta* 6

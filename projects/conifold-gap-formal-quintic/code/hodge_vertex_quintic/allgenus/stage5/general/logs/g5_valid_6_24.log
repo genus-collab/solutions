@@ -1,0 +1,16 @@
+g5_valid: engine vs independent fixed-point SP, z^0..z^6, exact over Q
+PASS V1 quintic: engine series in eps vanishes beyond eps^(5n) at z^n (polynomial c_n), n <= 6
+PASS V1 quintic: engine polynomial at L = 2 equals the fixed-point SP, n <= 6
+PASS V1 c_5(2) = 11495493197/31500 (STAGE4_SYNTHESIS s.3, E3)   11495493197/31500
+PASS V1 quintic: engine polynomial at L = -2/3 equals the fixed-point SP, n <= 6
+PASS V1 quintic: engine polynomial at L = 3/2 equals the fixed-point SP, n <= 6
+   V2 W1 colour 0, n = 0: |engine(trunc. eps^24) - FP(1 + 1/1000)| / |FP| = 0.000e+00
+   V2 W1 colour 0, n = 1: |engine(trunc. eps^24) - FP(1 + 1/1000)| / |FP| = 1.733e-52
+   V2 W1 colour 0, n = 2: |engine(trunc. eps^24) - FP(1 + 1/1000)| / |FP| = 5.358e-46
+   V2 W1 colour 0, n = 3: |engine(trunc. eps^24) - FP(1 + 1/1000)| / |FP| = 9.889e-41
+   V2 W1 colour 0, n = 4: |engine(trunc. eps^24) - FP(1 + 1/1000)| / |FP| = 4.241e-36
+   V2 W1 colour 0, n = 5: |engine(trunc. eps^24) - FP(1 + 1/1000)| / |FP| = 9.332e-32
+   V2 W1 colour 0, n = 6: |engine(trunc. eps^24) - FP(1 + 1/1000)| / |FP| = 9.957e-28
+PASS V2 agreement to better than 10^-20 relative (sanity check; truncation error only), all n <= 6   worst 9.957e-28
+ALL CHECKS PASSED
+total 0.7 s; log logs/g5_valid_6_24.log

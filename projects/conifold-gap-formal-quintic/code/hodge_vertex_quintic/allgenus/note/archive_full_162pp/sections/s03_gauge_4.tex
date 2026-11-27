@@ -1,0 +1,100 @@
+% Section 3, part 4 of 7: lifting, the scalar equation, proof of Theorem U, the leading term, the Z/5-degree, graded gauges.
+
+\begin{lem}[Lifting]
+\label{lem:gau-lift}
+Let $\tilde A$ have the one-pole shape, let $X\in\mathfrak{gl}_5(\Bbbk\fps u)$ have shift $m+1$ with $0\leq m\leq4$, and suppose $\operatorname{pr}(X)=0$. Then there is $\mathcal Z\in\mathfrak{gl}_5(\Bbbk\fps u)$ of shift $m$ with $[\tilde A,\mathcal Z]=X$, and every solution $\mathcal Z'\in\mathfrak{gl}_5(\Bbbk\fps u)$ of $[\tilde A,\mathcal Z']=X$ is $\mathcal Z+w$ with $w\in\Bbbk\fps u[\mathcal Y]$. If $\tilde A$ and $X$ have rational coefficients, $\mathcal Z$ can be chosen rational.
+\end{lem}
+
+\begin{proof}
+Write $X=\sum_a\xi_aE_{a,a+m+1}$ and look for $\mathcal Z=\sum_a\rho_a\Bprod^{(m)}_aE_{a,a+m}$ with $\rho_a\in\Bbbk\lser u$ (local letters). By \cref{lem:gau-comm}~(b) and $\tilde b_a\Bprod^{(m)}_{a+1}=\Bprod^{(m)}_a\tilde b_{a+m}=\Bprod^{(m+1)}_a$,
+\[
+[\tilde A,\mathcal Z]=\sum_a(\rho_{a+1}-\rho_a)\Bprod^{(m+1)}_aE_{a,a+m+1},
+\]
+so the equation is $\rho_{a+1}-\rho_a=\sigma_a:=\xi_a/\Bprod^{(m+1)}_a$ for $a\in\bbZ/5$. It is solvable if and only if $\sum_a\sigma_a=\lambda_{m+1}(X)=0$, i.e.\ if and only if $\operatorname{pr}(X)=0$ (\cref{lem:gau-comm}~(e)). Each $\sigma_a$ is integral, and $\sigma_a(0)=0$ whenever the window $\{a,\dots,a+m\}$ contains the pole index $1$, because then $\Bprod^{(m+1)}_a$ is $u^{-1}$ times a unit; for $m+1=5$ every window contains $1$. Put $\rho_1:=0$ and $\rho_{a+1}:=\rho_a+\sigma_a$ for $a=1,2,3,4$; the relation for $a=0$ then holds because $\sum_a\sigma_a=0$. All $\rho_a$ are integral. The entry $\rho_a\Bprod^{(m)}_a$ is integral if the window $\{a,\dots,a+m-1\}$ avoids $1$, and if it contains $1$ (that is, for the $m$ indices $a=2-m,\dots,1$) it is integral provided $\rho_a(0)=0$. For $a=1$ this holds by the choice $\rho_1=0$; for $a=2-m,\dots,0$ one has $\rho_a=\rho_1-\sum_{c=a}^0\sigma_c$, and every window $\{c,\dots,c+m\}$ with $2-m\leq c\leq0$ contains $1$, so $\rho_a(0)=0$. Hence $\mathcal Z$ is integral. Two integral solutions differ by an element of $\ker(\operatorname{ad}\tilde A)\cap\mathfrak{gl}_5(\Bbbk\fps u)=\Bbbk\fps u[\mathcal Y]$ (\cref{lem:gau-comm}~(c), (f)). The construction uses only field operations on the data.
+\end{proof}
+
+\begin{lem}[The scalar equation]
+\label{lem:gau-scal}
+Let $A$, $\tilde A$ have the one-pole shape and satisfy (EP).
+\begin{enumerate}
+\item[(a)] For $w=\sum_{j=0}^4w_j\mathcal Y^j$ with $w_j\in\Bbbk\lser u$,
+\[
+\operatorname{pr}\bigl(w'+\operatorname{dlog}\Theta_U\,w\bigr)=\sum_{j=0}^4\bigl(w_j'+\chi^U_jw_j\bigr)\mathcal Y^j,\qquad \chi^U_j:=-\frac j5\,\frac{\Bprod'}{\Bprod}+\frac15\tr(\operatorname{dlog}\Theta_U).
+\]
+In particular $\operatorname{pr}((\mathcal Y^j)')=-\frac j5(\Bprod'/\Bprod)\mathcal Y^j$ and $\operatorname{pr}(\operatorname{dlog}\Theta_U\,\mathcal Y^j)=\frac15\tr(\operatorname{dlog}\Theta_U)\,\mathcal Y^j$. Moreover $\chi^U_j=\frac j{5u}+\chi^\circ_j$ with $\chi^\circ_j:=-\frac j5(\Bprod^\circ)'/\Bprod^\circ+\frac15\tr(\operatorname{dlog}\Theta_U)\in\Bbbk\fps u$, where $\Bprod^\circ:=u\Bprod\in\Bbbk\fps u^\times$.
+\item[(b)] For $Z\in\mathfrak{gl}_5(\Bbbk\fps u)$ the equation $\operatorname{pr}(w'+\operatorname{dlog}\Theta_U\,w)=-\operatorname{pr}(Z)$ has solutions $w\in\Bbbk\fps u[\mathcal Y]$; their components $w_1,\dots,w_4$ are unique, and $w_0$ is unique up to $w_0\mapsto w_0+\cn\,\mathfrak d$, $\cn\in\Bbbk$.
+\item[(c)] For $Z=0$ the solutions in $\Bbbk\fps u[\mathcal Y]$ are exactly the $\cn\,\mathfrak d\,1$, $\cn\in\Bbbk$.
+\item[(d)] If the data are rational, so are the solutions for $\cn\in\bbQ$; $\mathfrak d\in1+u\bbQ\fps u$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(a) $(\mathcal Y^j)'=\sum_a((\Bprod^{(j)}_a)^{-1})'E_{a+j,a}$ has shift $5-j$; written as $\sum_{a'}\xi_{a'}E_{a',a'+5-j}$ it has $a'=a+j$ and $\xi_{a'}=((\Bprod^{(j)}_{a'-j})^{-1})'$. By \cref{lem:gau-comm}~(e) with $m=5-j$ (and $m=5$ for $j=0$),
+\[
+\operatorname{pr}((\mathcal Y^j)')=\frac15\Bigl[\sum_a\bigl((\Bprod^{(j)}_a)^{-1}\bigr)'\Bprod^{(j)}_a\Bigr]\mathcal Y^j=-\frac15\Bigl[\sum_a\frac{(\Bprod^{(j)}_a)'}{\Bprod^{(j)}_a}\Bigr]\mathcal Y^j .
+\]
+Here $(\Bprod^{(j)}_a)'/\Bprod^{(j)}_a=\sum_{i=0}^{j-1}\tilde b_{a+i}'/\tilde b_{a+i}$, and as $a$ runs over $\bbZ/5$ each index $c$ occurs for exactly the $j$ pairs $(a,i)=(c-i,i)$; so the sum is $j\sum_c\tilde b_c'/\tilde b_c=j\Bprod'/\Bprod$. Next, $\operatorname{dlog}\Theta_U\,\mathcal Y^j=\sum_a\frac{(d^U_{a+j})'}{d^U_{a+j}}(\Bprod^{(j)}_a)^{-1}E_{a+j,a}$, so now $\xi_{a'}=\frac{(d^U_{a'})'}{d^U_{a'}}(\Bprod^{(j)}_{a'-j})^{-1}$, and \cref{lem:gau-comm}~(e) gives $\frac15\bigl[\sum_{a'}(d^U_{a'})'/d^U_{a'}\bigr]\mathcal Y^j=\frac15\tr(\operatorname{dlog}\Theta_U)\mathcal Y^j$. As $\operatorname{pr}$ is $\Bbbk\lser u$-linear and fixes $\Bbbk\lser u[\mathcal Y]$, $\operatorname{pr}(w'+\operatorname{dlog}\Theta_Uw)=\sum_j\operatorname{pr}\bigl(w_j'\mathcal Y^j+w_j(\mathcal Y^j)'+w_j\operatorname{dlog}\Theta_U\mathcal Y^j\bigr)=\sum_j(w_j'+\chi^U_jw_j)\mathcal Y^j$. Finally $\Bprod=\Bprod^\circ/u$ with $\Bprod^\circ$ a unit by the one-pole shape, so $\Bprod'/\Bprod=(\Bprod^\circ)'/\Bprod^\circ-u^{-1}$, and $\tr(\operatorname{dlog}\Theta_U)=\sum_c(d^U_c)'/d^U_c$ is integral because the $d^U_c$ are units.
+
+(b) By \cref{lem:gau-comm}~(f), $\operatorname{pr}(Z)=\sum_j\phi^Z_j\mathcal Y^j$ with $u\phi^Z_j\in\Bbbk\fps u$ for $j\geq1$ and $\phi^Z_0\in\Bbbk\fps u$ (local letters). By (a) and the linear independence of the $\mathcal Y^j$ the equation splits into $w_j'+\chi^U_jw_j=-\phi^Z_j$, $j=0,\dots,4$. For $j=1,\dots,4$ multiply by $u$: $uw_j'+(\frac j5+u\chi^\circ_j)w_j=-u\phi^Z_j$. For $w_j=\sum_nw_{j,n}u^n$ the coefficient of $u^n$ reads
+\[
+\Bigl(n+\frac j5\Bigr)w_{j,n}=-\coef{u^n}(u\phi^Z_j)-\sum_{l=0}^{n-1}\coef{u^{n-1-l}}\chi^\circ_j\cdot w_{j,l},
+\]
+and $n+j/5$ is a non-zero rational number for every $n\geq0$: so there is exactly one solution $w_j\in\Bbbk\fps u$. For $j=0$, $\chi^U_0=\frac15\tr(\operatorname{dlog}\Theta_U)=-\mathfrak d'/\mathfrak d$, so the equation is $\mathfrak d\,(w_0/\mathfrak d)'=-\phi^Z_0$; its solutions in $\Bbbk\fps u$ are $w_0=\mathfrak d\bigl(\cn-\int_0^u\phi^Z_0/\mathfrak d\,\dd u\bigr)$, $\cn\in\Bbbk$, where $\int_0^u$ is the formal antiderivative without constant term, and the difference $e$ of two solutions satisfies $(e/\mathfrak d)'=0$, so $e\in\Bbbk\mathfrak d$.
+
+(c) is (b) with $\phi^Z=0$: the recursion gives $w_j=0$ for $j\geq1$, and $w_0=\cn\mathfrak d$. (d) The pivots $n+j/5$ are rational, $\det\Theta_U/\det\Theta_U(0)$ lies in $1+u\bbQ\fps u$ and its binomial series $\mathfrak d$ has rational coefficients.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:gau-U}~(a)]
+\emph{Reduction.} Write $P=\Theta_U\check P$; $\check P$ (a local letter) has coefficients in $\mathfrak{gl}_5(\Bbbk\fps u)$ if and only if $P$ has, since $\Theta_U$ is invertible over $\Bbbk\fps u$. As $A\Theta_U=\Theta_U\tilde A$, we have $AP-P\tilde A=\Theta_U(\tilde A\check P-\check P\tilde A)$ and $zP'=z\Theta_U'\check P+z\Theta_U\check P'$, so the gauge equation is equivalent to $z\check P'=[\tilde A,\check P]-z\operatorname{dlog}\Theta_U\,\check P$, i.e.\ to
+\begin{equation}
+\label{eq:gau-reduced}
+[\tilde A,\check P_0]=0,\qquad [\tilde A,\check P_{k+1}]=\check P_k'+\operatorname{dlog}\Theta_U\,\check P_k\quad(k\geq0).
+\end{equation}
+\emph{Construction.} We construct $\check P_k=\mathcal Z_k+w^{(k)}$ with $\mathcal Z_k\in\mathfrak{gl}_5(\Bbbk\fps u)$ and $w^{(k)}\in\Bbbk\fps u[\mathcal Y]$ such that, for every $k\geq0$, (I$_k$) $[\tilde A,\check P_k]=\check P_{k-1}'+\operatorname{dlog}\Theta_U\check P_{k-1}$ (with $\check P_{-1}:=0$) and (S$_k$) $\operatorname{pr}(\check P_k'+\operatorname{dlog}\Theta_U\check P_k)=0$. For $k=0$ put $\mathcal Z_0:=0$ and $w^{(0)}:=\mathfrak d\,1$: (I$_0$) holds because $w^{(0)}$ commutes with $\tilde A$, and (S$_0$) is \cref{lem:gau-scal}~(c). Given $\check P_k$, the matrix $X_{k+1}:=\check P_k'+\operatorname{dlog}\Theta_U\check P_k$ is integral with $\operatorname{pr}(X_{k+1})=0$ by (S$_k$); since $\operatorname{pr}$ preserves the shift, \cref{lem:gau-lift} applied to each shift component gives an integral $\mathcal Z_{k+1}$ with $[\tilde A,\mathcal Z_{k+1}]=X_{k+1}$. Choose $w^{(k+1)}\in\Bbbk\fps u[\mathcal Y]$ by \cref{lem:gau-scal}~(b) with $Z:=\mathcal Z_{k+1}'+\operatorname{dlog}\Theta_U\mathcal Z_{k+1}$ and any value of the free constant. Then (I$_{k+1}$) holds since $[\tilde A,w^{(k+1)}]=0$, and (S$_{k+1}$) holds since $\operatorname{pr}(\check P_{k+1}'+\operatorname{dlog}\Theta_U\check P_{k+1})=\operatorname{pr}(Z)+\operatorname{pr}\bigl((w^{(k+1)})'+\operatorname{dlog}\Theta_Uw^{(k+1)}\bigr)=0$. By \eqref{eq:gau-reduced}, $P^\natural:=\Theta_U\sum_kz^k\check P_k$ lies in $\Gau(A,\tilde A)$, and $P^\natural_0=\mathfrak d\,\Theta_U$. The only choices are the free constant of \cref{lem:gau-scal}~(b) at each order and the normalisation $\rho_1=0$ inside \cref{lem:gau-lift}, which the next choice of $w^{(k+1)}$ absorbs.
+\end{proof}
+
+\begin{lem}[The leading term of a solution of the gauge equation]
+\label{lem:gau-lead}
+Let $A$, $\tilde A$ have the one-pole shape and satisfy (EP), let $P\in\Gau(A,\tilde A)$ and $n\geq0$ with $P_0=\dots=P_{n-1}=0$. Then $P_n=\cn\,\mathfrak d\,\Theta_U$ for a unique $\cn\in\Bbbk$, namely $\cn=(P_n)_{00}(0)$.
+\end{lem}
+
+\begin{proof}
+Put $\check P:=\Theta_U^{-1}P$, so $\check P_l=0$ for $l<n$. The coefficient of $z^n$ in the reduced equation \eqref{eq:gau-reduced} is $[\tilde A,\check P_n]=0$ (for $n=0$ this is the first equation), so $\check P_n\in\ker(\operatorname{ad}\tilde A)\cap\mathfrak{gl}_5(\Bbbk\fps u)=\Bbbk\fps u[\mathcal Y]$ (\cref{lem:gau-comm}~(c), (f)). The coefficient of $z^{n+1}$ says that $\check P_n'+\operatorname{dlog}\Theta_U\check P_n=[\tilde A,\check P_{n+1}]$ lies in $\operatorname{im}(\operatorname{ad}\tilde A)$, so $\operatorname{pr}(\check P_n'+\operatorname{dlog}\Theta_U\check P_n)=0$. By \cref{lem:gau-scal}~(c), $\check P_n=\cn\,\mathfrak d\,1$. As $d^U_0=1$ and $\mathfrak d(0)=1$, $\cn=(P_n)_{00}(0)$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:gau-U}~(b) and (d)]
+(b) Let $P^\natural\in\Gau(A,\tilde A)$ with $P^\natural_0=\mathfrak d\,\Theta_U$; the gauge of (a) is one. \emph{Injectivity:} if $\cn\neq0$ has order $n$ in $z$, then $\coef{z^n}(P^\natural\cn)=\cn_nP^\natural_0=\cn_n\mathfrak d\Theta_U\neq0$. \emph{Surjectivity:} let $P\in\Gau(A,\tilde A)$. We define $\cn_0,\cn_1,\dots\in\Bbbk$ recursively. Suppose $R^{(n)}:=P-P^\natural(\cn_0+\cn_1z+\dots+\cn_{n-1}z^{n-1})$ is $0$ modulo $z^n$ (for $n=0$ this is empty); $R^{(n)}\in\Gau(A,\tilde A)$ because $\Gau(A,\tilde A)$ is a $\Bbbk\fps z$-module. By \cref{lem:gau-lead}, $\coef{z^n}R^{(n)}=\cn_n\mathfrak d\Theta_U$ for a unique $\cn_n\in\Bbbk$. Then $R^{(n+1)}=R^{(n)}-\cn_nz^nP^\natural$ lies in $\Gau(A,\tilde A)$ and $\coef{z^n}R^{(n+1)}=\cn_n\mathfrak d\Theta_U-\cn_nP^\natural_0=0$, so $R^{(n+1)}\equiv0$ modulo $z^{n+1}$. Put $\cn:=\sum_n\cn_nz^n$. For every $l$ and every $n>l$, $\coef{z^l}(P-P^\natural\cn)=\coef{z^l}R^{(n)}-\coef{z^l}P^\natural(\cn-\sum_{m<n}\cn_mz^m)=0$. Hence $P=P^\natural\cn$. Its $z^0$-term is $\cn(0)\mathfrak d\Theta_U$, invertible if and only if $\cn(0)\neq0$. If $P=P^\natural\cn_P$ is a regular gauge, every regular gauge $P^\natural\cn'$ equals $P\cdot(\cn_P^{-1}\cn')$ with $\cn_P^{-1}\cn'\in\Bbbk\fps z^\times$, and conversely. For the pair $(\tilde A,\tilde A)$ one has $\Theta_U=1$ and $\mathfrak d=1$, and $1\in\Gau(\tilde A,\tilde A)$; so $\Gau(\tilde A,\tilde A)=\Bbbk\fps z\cdot1$.
+
+(d) Every object used in the proof of (a) is obtained from the $b_a$, $\tilde b_a$ by field operations in $\bbQ\lser u$, the derivative and the integration $\int_0^u$ of power series: $\Theta_U$, $\operatorname{dlog}\Theta_U$, $\mathcal Y$, $\Bprod^{(m)}_a$, $\Bprod^\circ$, $\operatorname{pr}$ (\cref{lem:gau-comm}~(e)), $\mathfrak d$, the lift of \cref{lem:gau-lift} and the solutions of \cref{lem:gau-scal}~(b) (\cref{lem:gau-scal}~(d)). With every free constant chosen in $\bbQ$, the construction therefore runs inside $\mathfrak{gl}_5(\bbQ\fps u)\fps z$. For a field $\Bbbk\supseteq\bbQ$ the proofs of \cref{lem:gau-comm,lem:gau-lift,lem:gau-scal,lem:gau-lead} hold verbatim over $\Bbbk$, so the solutions over $\Bbbk$ are $P^\natural\Bbbk\fps z$ by (b). If $P=P^\natural\cn$ has rational coefficients, the recursion of the surjectivity proof computes $\cn_n=(\coef{z^n}R^{(n)})_{00}(0)$ from rational data, so $\cn\in\bbQ\fps z$.
+\end{proof}
+
+\begin{lem}[The $\bbZ/5$-degree of the gauge equation]
+\label{lem:gau-degree}
+For $P=\sum_kz^kP_k$ with $P_k\in\mathfrak{gl}_5(\Bbbk\lser u)$ and $\delta\in\bbZ/5$ put $P^{[\delta]}:=\sum_kz^k\sum_{(a,b):\,k+b-a\equiv\delta}(P_k)_{ab}E_{ab}$, so that $P=\sum_\delta P^{[\delta]}$, and $P$ is graded if and only if $P=P^{[0]}$. Let $\operatorname{ge}(P):=zP'-AP+P\tilde A$. Then $\operatorname{ge}(P^{[\delta]})=\operatorname{ge}(P)^{[\delta+1]}$; in particular every degree part of a solution of the gauge equation is a solution.
+\end{lem}
+
+\begin{proof}
+Give $z^kf(u)E_{ab}$ the degree $k+b-a$ modulo $5$. The derivative in $u$ does not change it and the factor $z$ adds $1$, so $zP'$ raises the degree of each homogeneous term by $1$. $A\,(fz^kE_{cd})=b_{c-1}fz^kE_{c-1,d}$ has degree $k+d-c+1$, and $(fz^kE_{cd})\tilde A=\tilde b_dfz^kE_{c,d+1}$ has degree $k+d+1-c$. So $\operatorname{ge}$ maps homogeneous series of degree $\delta$ to homogeneous series of degree $\delta+1$, and by additivity $\operatorname{ge}(P)^{[\delta+1]}=\operatorname{ge}(P^{[\delta]})$.
+\end{proof}
+
+\begin{prop}[Graded gauges]
+\label{prop:gau-graded}
+Let $A$, $\tilde A$ have the one-pole shape and satisfy (EP).
+\begin{enumerate}
+\item Graded regular gauges exist; they can be chosen rational if all $b_a$, $\tilde b_a$ are rational.
+\item If $P$ is a graded regular gauge, the graded regular gauges are exactly the $P\cn(z)$ with $\cn\in\Bbbk\fps{z^5}^\times$.
+\item For a graded regular gauge $P$, $P_{11}(0,z)=\sum_{m\geq0}(P_{5m})_{11}(0)\,z^{5m}$ is a unit of $\Bbbk\fps{z^5}$.
+\item If $\zeta\in\Bbbk$, then $\operatorname{Rot}_iP=\sum_\delta\zeta^{-i\delta}P^{[\delta]}$; so $P$ is graded if and only if $\operatorname{Rot}_1P=P$, if and only if $\operatorname{Rot}_iP=P$ for all $i$, and $\frac15\sum_i\operatorname{Rot}_iP=P^{[0]}$. Moreover $A\,\zeta^{i(\mathrm{gr}+1)}=\zeta^i\zeta^{i(\mathrm{gr}+1)}A$, and the same for $\tilde A$; $\operatorname{Rot}_i$ maps solutions of $z\de_uY=AY$ to solutions, and $\operatorname{Rot}_i(PY)=(\operatorname{Rot}_iP)(\operatorname{Rot}_iY)$, $\operatorname{Rot}_i(Y\mathsf d(z))=\operatorname{Rot}_i(Y)\,\mathsf d(\zeta^{-i}z)$ for scalar series $\mathsf d$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) Let $P^\natural$ be as in \cref{thm:gau-U}~(a), rational in the rational case by (d). Its $z^0$-term $\mathfrak d\Theta_U$ is diagonal, of degree $0$. By \cref{lem:gau-degree}, $P^{\mathrm{gr}}:=(P^\natural)^{[0]}$ solves the gauge equation, and $P^{\mathrm{gr}}_0=P^\natural_0$ is invertible. (ii) By \cref{thm:gau-U}~(b) the regular gauges are the $P\cn(z)$, $\cn\in\Bbbk\fps z^\times$. Write $\cn=\sum_{r\in\bbZ/5}\cn^{(r)}$ with $\cn^{(r)}:=\sum_{n\equiv r}\cn_nz^n$. As $P$ has degree $0$ and $z^n$ adds $n$ to the degree, $(P\cn)^{[r]}=P\cn^{(r)}$. So $P\cn$ is graded if and only if $P\cn^{(r)}=0$ for $r\neq0$, if and only if $\cn^{(r)}=0$ for $r\neq0$, because $\cn\mapsto P\cn$ is injective ($P=P^\natural\cn_P$ with $\cn_P\neq0$, and $\Bbbk\fps z$ is a domain); that is, if and only if $\cn\in\Bbbk\fps{z^5}$. (iii) For graded $P$ the entry $(P_k)_{11}$ vanishes unless $1\equiv1+k$, so $P_{11}(0,z)\in\Bbbk\fps{z^5}$, and its constant term is $(P_0)_{11}(0)=\cn(0)\mathfrak d(0)d^U_1(0)\neq0$ by \cref{thm:gau-U}~(b). (iv) The entry $(a,b)$ of $\coef{z^k}\operatorname{Rot}_iP$ is $\zeta^{i(a+1)-ik-i(b+1)}(P_k)_{ab}=\zeta^{-i(k+b-a)}(P_k)_{ab}$, which gives the first assertion; the equivalences follow because the decomposition $P=\sum_\delta P^{[\delta]}$ is direct, $\zeta^{-i\delta}\neq1$ for $i,\delta\not\equiv0$, and $\sum_i\zeta^{-i\delta}=5\,\delta_{\delta,0}$. The entry $(a,a+1)$ of $\zeta^{i(\mathrm{gr}+1)}A\zeta^{-i(\mathrm{gr}+1)}$ is $\zeta^{i(a+1)}b_a\zeta^{-i(a+2)}=\zeta^{-i}b_a$, which is the commutation rule. Hence, for a solution $Y$, $z\de_u(\operatorname{Rot}_iY)=\zeta^i\zeta^{i(\mathrm{gr}+1)}\bigl[(\zeta^{-i}z)\de_uY\bigr](u,\zeta^{-i}z)=\zeta^i\zeta^{i(\mathrm{gr}+1)}A\,Y(u,\zeta^{-i}z)=A\operatorname{Rot}_iY$. The two product rules are immediate from the definitions.
+\end{proof}
+
+\begin{rmk}[What the proof of Theorem~U uses; the role of the pole]
+\label{rmk:gau-Uremarks}
+The proof of \cref{thm:gau-U} uses only the one-pole shape, (EP) and the characteristic $0$ (in $\lambda_m(\tilde A^m)=5\neq0$, in the pivots $n+j/5\neq0$, and for $\mathfrak d$ and the constants of $\dd/\dd u$). The pole of $\tilde b_1$ enters exactly through the integrality statements, \cref{lem:gau-comm}~(f) and the window argument of \cref{lem:gau-lift}, and through the term $j/(5u)$ of $\chi^U_j$. For two systems without a pole (all ten weights units, with (EP)) the integrality statements hold trivially and $\chi^U_j\in\Bbbk\fps u$ for every $j$, so in the proof of \cref{lem:gau-scal}~(b) every equation $w_j'+\chi^U_jw_j=-\phi^Z_j$, $j=0,\dots,4$, has the solutions $\mathcal E_j\bigl(\mathsf a_j-\int_0^u\phi^Z_j/\mathcal E_j\,\dd u\bigr)$, $\mathsf a_j\in\Bbbk$, with $\mathcal E_j:=\exp(-\int_0^u\chi^U_j\,\dd u)$ (local letters). Then the proof of \cref{lem:gau-lead} gives the leading terms $\Theta_U\sum_j\mathsf a_j\mathcal E_j\mathcal Y^j$, the construction of \cref{thm:gau-U}~(a) started from $w^{(0)}:=\mathcal E_j\mathcal Y^j$ gives a solution $P^{(j)}$ for each $j$, and the proof of \cref{thm:gau-U}~(b), with the five leading terms in place of one, shows that $P^{(0)},\dots,P^{(4)}$ form a basis of $\Gau(A,\tilde A)$ over $\Bbbk\fps z$. So the solution module has rank $5$, and $P_{11}(0,z)=1$ no longer fixes a gauge (see \cref{sec:evi-gauge} for a computed example). This is not used.
+\end{rmk}
+
+\input{sections/s03_gauge_5}

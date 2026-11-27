@@ -1,0 +1,22 @@
+(* TR omega_{1,1} for x = p^4/4 + 1/p, y = p, kernel of conv:mod-kernel, v=1 *)
+xf[q_] := q^4/4 + 1/q;
+n = 8;
+X = Series[xf[1 + e] - xf[1], {e, 0, n + 2}];
+x2 = SeriesCoefficient[X, 2];
+w = Series[e Sqrt[Normal[Series[X/(x2 e^2), {e, 0, n}]]], {e, 0, n}];
+winv = InverseSeries[w];
+sig = Normal[ComposeSeries[winv, -w]];
+q = 1 + e; iq = 1 + sig;
+xp = D[xf[qq], qq] /. qq -> q;
+expr = (1/2) (1/(p - q) - 1/(p - iq))/((e - sig) xp) * D[sig, e]/(e - sig)^2;
+f0 = Together[SeriesCoefficient[Series[expr, {e, 0, 2}], -1]];
+Print["f0 = ", f0];
+z = Exp[2 Pi I/5];
+om = Together[FullSimplify[Sum[(f0 /. p -> z^b p) z^b, {b, 0, 4}]]];
+Print["omega11/dp = ", om];
+xi1 = 1/(p^5 - 1);
+xi0 = -p^4/(p^5 - 1);
+xi01 = p^2/(p^5 - 1) D[xi0, p];
+sol = Solve[Thread[CoefficientList[Numerator[Together[om - (c1 D[xi1, p] + c2 D[xi01, p])]], p] == 0], {c1, c2}];
+Print["fit: ", sol];
+Print["int_0^inf: ", Integrate[om, {p, 0, Infinity}]];

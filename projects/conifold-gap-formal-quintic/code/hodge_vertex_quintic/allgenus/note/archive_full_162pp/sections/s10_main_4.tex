@@ -1,0 +1,80 @@
+\subsection{Universality}
+\label{sec:mai-univ}
+
+The flat half of the proof of Theorem~A, \cref{cor:red-can} with \cref{thm:mod-MLK}, uses the formal quintic only through its cyclic system and the canonical gauge; in flat form it applies to every self-dual cyclic system with one simple pole whose product is that of a pulled-back model. The comparison with the outer terms (\cref{thm:flh-main}) and the normalisation (\cref{thm:gam-D}) are specific to the formal quintic and are not part of this subsection. Throughout this subsection the systems are over $\bbQ$, in the sense of \cref{def:gau-onepole}, and for a non-zero series $y\in u\bbQ\fps{u}$ (a local letter), $\tilde A_y$ denotes the model pulled back by $y$, with coefficients $(y',-y'/y,y',-y',-y')$ in $\bbQ\lser{u}$ and product $-y'^5/y$ (\cref{prop:gau-equalprod}); it has the one-pole shape if and only if $y'(0)\neq0$.
+
+\begin{lem}[the pole order]
+\label{lem:mai-pole}
+Let $A=\sum_ab_aE_{a,a+1}$ with $b_a\in\bbQ\lser{u}$ non-zero, $\Bprod\coloneqq\prod_ab_a$, and let $y\in u\bbQ\fps{u}$ be non-zero of order $n\geq1$.
+\begin{enumerate}
+\item If the gauge equation $z\,\partial_uP=AP-P\tilde A_y$ has a solution whose $z^0$-coefficient $P_0$ is non-zero, then $\Bprod=-y'^5/y$.
+\item In that case $\ord_0\Bprod=4n-5\in\{-1,3,7,\dots\}$. If $\Bprod$ has a pole at $u=0$, then $n=1$, $\ord_0\Bprod=-1$ and $y'(0)^4=-\Res_{u=0}\Bprod$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) At $z^0$ the gauge equation reads $AP_0=P_0\tilde A_y$, hence $A^5P_0=P_0\tilde A_y^5$; for a cyclic system $A^5=\Bprod\cdot1$, and $\tilde A_y^5=-(y'^5/y)\cdot1$. So $(\Bprod+y'^5/y)P_0=0$ over the field $\bbQ\lser{u}$, and $P_0\neq0$ gives the claim; this is the necessity clause of \cref{prop:gau-equalprod}. (ii) If $y$ has order $n$, then $y'^5$ has order $5(n-1)$ and $y'^5/y$ has order $5(n-1)-n=4n-5$. A pole forces $4n-5<0$, i.e. $n=1$; then $y=y'(0)u+O(u^2)$ and $y'^5/y=y'(0)^4u^{-1}+O(1)$, so $\Res_{u=0}\Bprod=-y'(0)^4$.
+\end{proof}
+
+The lemma is relative to the fixed model $\Wv$: a product with a pole of another order is not the product of a model pulled back by a power series.
+
+\begin{lem}[a change of the product is a change of coordinate]
+\label{lem:mai-coord}
+Let $X$ be a self-dual one-pole system with coefficients $b_a$ and product $\Bprod_X$, and $v_X\in u\bbQ\fps{u}$ with $v_X'^5=-\Bprod_Xv_X$ and $a_X\coloneqq v_X'(0)\neq0$. Let $v_{\mathrm q}\coloneqq v(u)$ be the function of \cref{def:set-tau}, so that $-v_{\mathrm q}'^5/v_{\mathrm q}=-1/(u(1-u)^5)$ is the product of the quintic system (\cref{prop:gau-quintic}), and let $\phi\coloneqq v_X^{-1}\circ v_{\mathrm q}\in w\bbQ\fps{w}$, where $w$ is the new coordinate; $\phi'(0)=1/a_X$. Let $\tilde X$ be the system in the coordinate $w$ with coefficients $\tilde b_a(w)\coloneqq\phi'(w)\,b_a(\phi(w))$.
+\begin{enumerate}
+\item[(a)] $\tilde X$ is a self-dual one-pole system with the product of the quintic system, its model pull-back is $v_X\circ\phi=v_{\mathrm q}$, and it has the same residue as $X$.
+\item[(b)] If $P(u,z)$ is a regular gauge from $\tilde A_{v_X}$ to $X$, then $P(\phi(w),z)$ is a regular gauge from $\tilde A_{v_{\mathrm q}}$ to $\tilde X$, with the same $P_{11}(0,z)$, $P_{00}(0,z)$ and $P_0(0)$; graded gauges go to graded gauges, and the canonical gauge to the canonical gauge.
+\item[(c)] The vanishing solutions pull back: $Y^{\mathrm C}_{\tilde X}(w)=Y^{\mathrm C}_X(\phi(w))$, so (G) holds for $X$ if and only if it holds for $\tilde X$, and $T_{\tilde X}=T_X\circ\phi$, where $T_X\coloneqq\int_0^ub_0\,\dd u$.
+\item[(d)] For a dressing $P$ of the model at $v_X(u)$ (\cref{def:tra-dressing}) and $\tilde P(w,z)\coloneqq P(\phi(w),z)$, a dressing of the model at $v_{\mathrm q}(w)$, every term of the flat sums satisfies $F^{\tilde X}_\Gamma(w)=F^X_\Gamma(\phi(w))$, where $F^X_\Gamma$ is the term of $\Gamma$ in the flat sum of $P.\Omega^{\mathrm{mod}}_{v_X(u)}$ and $F^{\tilde X}_\Gamma$ that of $\tilde P.\Omega^{\mathrm{mod}}_{v_{\mathrm q}(w)}$.
+\item[(e)] A graph is regular for $X$ if and only if it is regular for $\tilde X$, and a vertex law $c_gT^{2-2g}+\bbQ\fps{u}$ transports to $c_g(T\circ\phi)^{2-2g}+\bbQ\fps{w}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(a) $\prod_a\tilde b_a=\phi'^5\Bprod_X(\phi)=-\phi'^5v_X'(\phi)^5/v_X(\phi)=-(v_X\circ\phi)'^5/(v_X\circ\phi)=-v_{\mathrm q}'^5/v_{\mathrm q}$. Each $\tilde b_a$ is $\phi'\,b_a\circ\phi$, so the self-dual shape $\tilde b_{a-1}=\tilde b_{3-a}$ is kept, and since $\phi(0)=0$ and $\phi'(0)\neq0$ the orders at $0$ are kept; the residue is $\lim_{w\to0}w\phi'(w)b_1(\phi(w))=\lim_{u\to0}ub_1(u)$, because $w\phi'(w)/\phi(w)\to1$. (b) Let $A_X=\sum_ab_aE_{a,a+1}$. By the chain rule, $z\,\partial_wP(\phi(w),z)=\phi'(w)\,(A_XP-P\tilde A_{v_X})(\phi(w))$, and the systems in the coordinate $w$ are $\phi'\cdot A_X\circ\phi$, which is $\tilde X$, and $\phi'\cdot\tilde A_{v_X}\circ\phi=\tilde A_{v_X\circ\phi}$. The coefficients stay in $\bbQ\fps{w}$, the grading is untouched, and the normalisations are conditions at the origin, which $\phi$ fixes. (c) The vanishing solutions are built by $y^{(n+1)}_a=\int_0^ub_a\,y^{(n)}_{a+1}\,\dd u$ from $y^{(0)}=-e_1$ (\cref{def:gau-van}), and $\int_0^{\phi(w)}h(u)\,\dd u=\int_0^wh(\phi(w'))\,\phi'(w')\,\dd w'$; the model's vanishing solution is a function of $v$ and $v_{\tilde X}=v_X\circ\phi$. (d) Every ingredient of the flat sum (the edges and the leaf point of $P$, the factor $d$, and the model correlators at $v_X(u)$, \cref{def:red-flatsum}) is formed pointwise in $u$, without derivatives in $u$, and every term is a finite sum (\cref{lem:tra-F}). (e) $f\mapsto f\circ\phi$ maps $\bbQ\lser{u}$ isomorphically onto $\bbQ\lser{w}$ and $\bbQ\fps{u}$ onto $\bbQ\fps{w}$.
+\end{proof}
+
+In a hatted normalisation, in which the term of a genus-$g$ graph is multiplied by $u^{2g-2}$ as in \cref{lem:flh-hat}, (d) reads $\tilde G_\Gamma(w)=(w/\phi(w))^{2g-2}G_\Gamma(\phi(w))$. By the lemma, a self-dual one-pole system whose product is that of a model pulled back by a power series, $-v_X'^5/v_X$ with $v_X\in u\bbQ\fps{u}$, is a coordinate change of a system with the product of the quintic system; the residue of the product is a coordinate effect as well (take $\phi$ linear).
+
+\begin{cor}[universality, flat form]
+\label{cor:mai-univ}
+Let $v_A\in u\bbQ\fps{u}$ with $v_A'(0)\neq0$, and let $A$ be a self-dual one-pole system (\cref{def:gau-onepole}) with product $-v_A'^5/v_A$ and residue $r$; assume $r=-1/\lambda^2$ with $\lambda\in\bbQ^\times$ (a letter local to this corollary and its proof). Let $P^A_{\mathrm{can}}$ be the canonical gauge from $\tilde A_{v_A}$ to $A$, that is, the regular gauge with $(P^A_{\mathrm{can}})_{11}(0,z)=1$, which exists, is unique, is graded and has rational coefficients, as in \cref{def:gau-can} (\cref{thm:gau-U}, \cref{prop:gau-graded}); and let $P_A\coloneqq\lambda^{-1}P^A_{\mathrm{can}}$. Then for every $g\geq2$:
+\begin{enumerate}
+\item the term of every leg-free stable graph of genus $g$ with an edge in the flat sum of $P_A.\Omega^{\mathrm{mod}}_{v_A(u)}$ lies in $\bbQ\fps{u}$;
+\item the term of the vertex graph lies in $c_g(T_A/\lambda)^{2-2g}+\bbQ\fps{u}$, where $T_A\coloneqq\int_0^ub_0\,\dd u$.
+\end{enumerate}
+\end{cor}
+
+For the formal quintic in a conifold frame, $A$ is the system of \cref{prop:gau-quintic}, $v_A=v(u)$, $r=-1$ and $T_A=\tc$ (\cref{lem:gau-vanq}~(d)), and the corollary is \cref{cor:red-can} with \cref{thm:mod-MLK}. For a system $b=(b_0,\Bprod/(b_0^2b_3^2),b_0,b_3,b_3)$ with $\Bprod=-v_A'^5/v_A$ one has $r=-v_A'(0)^4/(b_0(0)b_3(0))^2$ by \cref{lem:mai-pole}, so $\lambda=\pm b_0(0)b_3(0)/v_A'(0)^2$; the vertex law is even in $\lambda$.
+
+\begin{proof}
+For the pair $(A,\tilde A_{v_A})$ the residue of $\tilde A_{v_A}$ is $\tilde r=-1$. By \cref{lem:gau-R1}, column $1$ of $P(0,z)$ is $P_{11}(0,z)e_1$ and $rP_{22}(0,z)=\tilde rP_{11}(0,z)$ for every regular gauge $P$. The proof of \cref{prop:gau-symp} uses the residues only in its last step, the evaluation of the entry $(2,1)$ at $u=0$ by \cref{lem:gau-R1}; with the general form of that lemma it gives $P(-z)^T\eta P(z)=(\tilde r/r)\,P_{11}(0,z)P_{11}(0,-z)\,\eta$. For $P_A$ one has $P_{11}(0,z)=\lambda^{-1}$ and $\tilde r/r=\lambda^2$, so $P_A$ is symplectic. By \cref{thm:gau-G}~(c), $P^A_{\mathrm{can}}\YC(v_A(u))=Y^{\mathrm C}_A$, since $\YC(v_A(u))$ is the vanishing solution of $\tilde A_{v_A}$ (\cref{lem:gau-vanmod}, the chain rule and \cref{lem:gau-uniq}, as in the proof of \cref{thm:gau-G}); so $P_A\YC(v_A(u))=\lambda^{-1}Y^{\mathrm C}_A$ has no positive power of $z$ (\cref{lem:gau-vanq}), which is (A), and $T_{P_A}=T_A/\lambda$ by \cref{lem:gau-vanq}~(d). $P_A$ is graded with coefficients in $\bbQ\fps{u}$ and invertible constant term (\cref{thm:gau-U}, \cref{prop:gau-graded}), so it is a dressing (\cref{def:tra-dressing}) with (Sp) and (A). \Cref{thm:red-main} with \cref{thm:mod-MLK} gives (i) and (ii).
+\end{proof}
+
+\begin{rmk}[non-gauge dressings]
+\label{rmk:mai-annih}
+\Cref{thm:red-main} does not use the gauge equation. It applies to every dressing $P$ with (Sp) and (A) in the sense of \cref{def:tra-dressing}, whether or not $P$ solves a gauge equation, and with \cref{thm:mod-MLK} it gives, for every $g\geq2$, that every edge graph of the flat sum of $P.\Omega^{\mathrm{mod}}_{v(u)}$ is regular and that the vertex graph lies in $c_gT_P^{2-2g}+\bbQ\fps{u}$. Here, as in \cref{cor:mai-univ}, only the flat form is claimed: a statement about a hatted sum would need an identity of the type of \cref{lem:flh-inputs}~(ii), which is available only for the rows of the formal quintic.
+\end{rmk}
+
+\begin{rmk}[a non-canonical normalisation]
+\label{rmk:mai-stored}
+Let $P^\sharp\coloneqq\Pc\,\cn(z)$, $\cn\in1+z^5\bbQ\fps{z^5}$, be the regular gauge of the other normalisation of \cref{sec:sgn-norm}, and write $\cn(z)=1+m_5z^5+m_{10}z^{10}+\cdots$ ($P^\sharp$ is a local letter). By \cref{thm:gau-U}, $P^\sharp$ is a graded regular gauge: it solves the gauge equation and is regular in $u$. By \cref{prop:gau-symp}, $P^\sharp(-z)^T\eta P^\sharp(z)=\cn(z)\cn(-z)\eta$ with $\cn(z)\cn(-z)=1-(m_5^2-2m_{10})z^{10}+\cdots$: $P^\sharp$ is symplectic modulo $z^{10}$, and symplecticity constrains only the even part of $\log\cn$. By \cref{thm:gau-G}, $P^\sharp\YC=\cn(z)\YCQ$, whose part of positive degree in $z$ begins with $m_5(z^5\YCQ)_{+}=-m_5(z^5e_1+\tc z^4e_0+\cdots)$; by \cref{thm:gau-G}~(b), $P^\sharp$ satisfies (A) only if $\cn=1$. So the gauge equation does not imply (A); this holds by construction, through the freedom $\cn(z^5)$ of \cref{thm:gau-U}, and it is (G) that fixes the odd part of $\log\cn$. The value of $m_5$, which is known only by computation, is recorded in \cref{sec:evi}, and the graphs that become singular in \cref{sec:evi-univ}.
+\end{rmk}
+
+\subsection{Remarks}
+\label{sec:mai-rmk}
+
+\begin{rmk}[graph-locality]
+\label{rmk:mai-graphlocal}
+The computations of \cref{sec:evi-univ} show that in the normalisation of \cref{rmk:mai-stored} six edge graphs of genus $4$ become singular, while the singular part of the total is unchanged: the normalisation only moves singular terms between the vertex graph and these edge graphs. So the singular part of the total does not determine the singular parts of the graph terms, and no argument that uses the total potential only through its singular part, such as the gap of the total, can prove Theorem~A. The proof is graph-local, and it uses the odd part of $\log\cn$, which is fixed by (G) (\cref{thm:gau-G}) and not by symplecticity.
+\end{rmk}
+
+\begin{rmk}[the hypotheses cannot be dropped]
+\label{rmk:mai-necessity}
+The computations of \cref{sec:evi-univ} give dressings that violate (A), among them $P^\sharp$ of \cref{rmk:mai-stored}, and dressings that are not regular in $u$ in the flat frame, whose flat sums have singular edge graphs: neither hypothesis of \cref{thm:red-main} can be dropped in general. For (Sp) no such example exists, because without it the numerator of the edge does not vanish at $\psi=-\psi'$ and the edge of \cref{def:tra-edge} is not a power series. The flatness in $u$, i.e. the gauge equation, is not a hypothesis (\cref{rmk:mai-annih}).
+\end{rmk}
+
+\begin{rmk}[the shape of the factorisation]
+\label{rmk:mai-analogy}
+\Cref{cor:mai-natfact} has the shape \emph{(a gauge regular at the singular point) $\times$ (the $R$-matrix of a universal local model in its natural variable)}. When the local model is a single critical point next to a logarithmic singularity, as for an integral of Gamma-function type with a constant weight, its $R$-matrix is a Stirling series in $z$ divided by that weight, and the second factor does not depend on $q$. Here the local model is $\Wv(p)=p^4/4+v/p$ with the form $\dd p$, whose five critical points coalesce onto the pole as $v\to0$; its natural variable $z/\varsigma^4=\tau(u)\zh$ is, up to the constant factor $-\frac54\zeta^i$, $z$ divided by the canonical coordinate measured from the conifold point (\cref{lem:set-canon}), which degenerates there, so the second factor depends on $u$. The counterpart of a scalar Hodge-type factor is $\Mo(\tau\zh)$ together with the regular gauge, not $\Mo$ alone. The form is natural, not forced: computations through genus $3$ show that the graph sums alone do not single it out.\draftnote{The computation behind the last sentence (the factorisations that make every edge graph of genus at most $3$ regular, besides the natural form) is not recorded in the evidence appendix; record it there, with its range, or drop the sentence.}
+\end{rmk}
