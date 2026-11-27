@@ -1,0 +1,13 @@
+lambda = (): 0 through x^34 ; wrong-sign control: nonzero (first x^2)
+lambda = (1): 0 through x^34 ; wrong-sign control: nonzero (first x^4)
+lambda = (2): 0 through x^34 ; wrong-sign control: nonzero (first x^5)
+lambda = (1,1): 0 through x^34 ; wrong-sign control: nonzero (first x^6)
+lambda = (3): 0 through x^34 ; wrong-sign control: nonzero (first x^6)
+lambda = (2,1): 0 through x^34 ; wrong-sign control: nonzero (first x^7)
+lambda = (1,1,1): 0 through x^34 ; wrong-sign control: nonzero (first x^8)
+lambda = (4): 0 through x^34 ; wrong-sign control: nonzero (first x^7)
+lambda = (3,1): 0 through x^34 ; wrong-sign control: nonzero (first x^8)
+lambda = (2,2): 0 through x^34 ; wrong-sign control: nonzero (first x^8)
+lambda = (2,1,1): 0 through x^34 ; wrong-sign control: nonzero (first x^9)
+lambda = (1,1,1,1): 0 through x^34 ; wrong-sign control: nonzero (first x^10)
+SUMMARY tau=-5/3 d=4 P=34: 12 monomials, 0 failures; wrong sign: 12 of 12 nonzero

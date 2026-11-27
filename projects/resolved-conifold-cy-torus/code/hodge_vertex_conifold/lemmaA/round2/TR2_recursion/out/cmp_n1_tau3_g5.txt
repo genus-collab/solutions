@@ -1,0 +1,5 @@
+tau=3/1 g=2: 1:0 2:0 3:nz 4:nz 5:nz 6:nz
+tau=3/1 g=3: 1:0 2:0 3:0 4:0 5:nz 6:nz 7:nz 8:nz
+tau=3/1 g=4: 1:0 2:0 3:0 4:0 5:0 6:0 7:nz 8:nz 9:nz 10:nz
+tau=3/1 g=5: 1:0 2:0 3:0 4:0 5:0 6:0 7:0 8:0 9:nz 10:nz 11:nz 12:nz
+tau=3/1: 36 comparisons, 0 mismatches; formula 5s, TR 242s; first nonzero values: Xi_2(3)=-277/82944  Xi_3(5)=-5665/1990656  Xi_4(7)=-2853025/382205952  Xi_5(9)=-558409145/13759414272  

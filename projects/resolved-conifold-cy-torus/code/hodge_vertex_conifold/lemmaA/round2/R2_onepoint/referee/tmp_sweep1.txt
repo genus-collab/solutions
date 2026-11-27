@@ -1,0 +1,22 @@
+tau=1/2 g=5 mu=(3,3,3,3,3): ref 769600087  engine 769600087  OK
+tau=1/2 g=5 mu=(3,3,3,3,2): ref 1352047204  engine 1352047204  OK
+tau=1/2 g=5 mu=(3,3,3,3,1): ref 1139846805  engine 1139846805  OK
+tau=1/2 g=5 mu=(3,3,3,2,2): ref 0  engine 0  OK
+tau=1/2 g=5 mu=(3,3,3,2,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,3,3,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,3,2,2,2): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,3,2,2,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,3,2,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,3,1,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,2,2,2,2): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,2,2,2,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,2,2,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,2,1,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(3,1,1,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(2,2,2,2,2): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(2,2,2,2,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(2,2,2,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(2,2,1,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(2,1,1,1,1): ref 0  engine 0  OK  [range]
+tau=1/2 g=5 mu=(1,1,1,1,1): ref 0  engine 0  OK  [range]
+SUMMARY tau=1/2 g=5 n=5 jmax=3 p=2147483629: tuples 21, compared 21, OK 21, MISMATCH 0, no-data 0; range points 17 (ref zero at 17)

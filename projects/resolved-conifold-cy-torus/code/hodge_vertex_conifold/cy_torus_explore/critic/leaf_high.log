@@ -1,0 +1,21 @@
+rows 0.2958641052246094
+rho_1 == u/(2E^2): True
+k 0 [t^k](rho q_t) x prod(E-j psi): degree 1 (bound k = 0 ) tested through psi^19  limit const part ok
+k 1 [t^k](rho q_t) x prod(E-j psi): degree 1 (bound k = 1 ) tested through psi^19  limit const part ok
+k 2 [t^k](rho q_t) x prod(E-j psi): degree 2 (bound k = 2 ) tested through psi^19  limit const part ok
+k 3 [t^k](rho q_t) x prod(E-j psi): degree 3 (bound k = 3 ) tested through psi^19  limit const part ok
+k 4 [t^k](rho q_t) x prod(E-j psi): degree 4 (bound k = 4 ) tested through psi^19  limit const part ok
+k 5 [t^k](rho q_t) x prod(E-j psi): degree 5 (bound k = 5 ) tested through psi^19  limit const part ok
+k 6 [t^k](rho q_t) x prod(E-j psi): degree 6 (bound k = 6 ) tested through psi^19  limit const part ok
+k 7 [t^k](rho q_t) x prod(E-j psi): degree 7 (bound k = 7 ) tested through psi^19  limit const part ok
+k 8 [t^k](rho q_t) x prod(E-j psi): degree 8 (bound k = 8 ) tested through psi^19  limit const part ok
+k 9 [t^k](rho q_t) x prod(E-j psi): degree 9 (bound k = 9 ) tested through psi^19  limit const part ok
+k 10 [t^k](rho q_t) x prod(E-j psi): degree 10 (bound k = 10 ) tested through psi^19  limit const part ok
+k 0 E_11 bi-degree test: violations 0 of 119
+k 1 E_11 bi-degree test: violations 0 of 116
+k 2 E_11 bi-degree test: violations 0 of 111
+k 3 E_11 bi-degree test: violations 0 of 104
+k 4 E_11 bi-degree test: violations 0 of 95
+k 5 E_11 bi-degree test: violations 0 of 84
+k 6 E_11 bi-degree test: violations 0 of 71
+time 0.47632408142089844

@@ -1,0 +1,86 @@
+genus 2, r = 1
+(1) lattice values X_k(j), j_i >= 1, D <= 2h-2
+  j = (1)  D = 0 in range   X_0..X_2 = 0 ; 0 ; 0
+  j = (2)  D = 1 in range   X_0..X_2 = 0 ; 0 ; 0
+  j = (3)  D = 2 BOUNDARY   X_0..X_2 = -1/320 ; 1/360 ; 7/2880
+(2) strong form: Int c(T) e_k prod psi^b / prod_m (1 - m psi), all 0 <= b_i <= j_i - 1, j in range
+  k = 0: 0 non-zero out of 3
+  k = 1: 0 non-zero out of 3
+  k = 2: 0 non-zero out of 3
+genus 2, r = 2
+(1) lattice values X_k(j), j_i >= 1, D <= 2h-2
+  j = (1,1)  D = 0 in range   X_0..X_2 = 0 ; 0 ; 0
+  j = (1,2)  D = 1 in range   X_0..X_2 = 0 ; 0 ; 0
+  j = (1,3)  D = 2 BOUNDARY   X_0..X_2 = -3/320 ; 1/120 ; 7/960
+  j = (2,2)  D = 2 BOUNDARY   X_0..X_2 = -1/180 ; 1/180 ; 7/960
+(2) strong form: Int c(T) e_k prod psi^b / prod_m (1 - m psi), all 0 <= b_i <= j_i - 1, j in range
+  k = 0: 0 non-zero out of 3
+  k = 1: 0 non-zero out of 3
+  k = 2: 0 non-zero out of 3
+genus 3, r = 1
+(1) lattice values X_k(j), j_i >= 1, D <= 2h-2
+  j = (1)  D = 0 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (2)  D = 1 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (3)  D = 2 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (4)  D = 3 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (5)  D = 4 BOUNDARY   X_0..X_3 = -65/24192 ; 269/120960 ; 467/120960 ; 31/40320
+(2) strong form: Int c(T) e_k prod psi^b / prod_m (1 - m psi), all 0 <= b_i <= j_i - 1, j in range
+  k = 0: 0 non-zero out of 10
+  k = 1: 0 non-zero out of 10
+  k = 2: 0 non-zero out of 10
+  k = 3: 0 non-zero out of 10
+genus 3, r = 2
+(1) lattice values X_k(j), j_i >= 1, D <= 2h-2
+  j = (1,1)  D = 0 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (1,2)  D = 1 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (1,3)  D = 2 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (1,4)  D = 3 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (1,5)  D = 4 BOUNDARY   X_0..X_3 = -325/24192 ; 269/24192 ; 467/24192 ; 31/8064
+  j = (2,2)  D = 2 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (2,3)  D = 3 in range   X_0..X_3 = 0 ; 0 ; 0 ; 0
+  j = (2,4)  D = 4 BOUNDARY   X_0..X_3 = -8/945 ; 1/135 ; 467/30240 ; 31/8064
+  j = (3,3)  D = 4 BOUNDARY   X_0..X_3 = -39/4480 ; 19/2688 ; 571/40320 ; 31/8064
+(2) strong form: Int c(T) e_k prod psi^b / prod_m (1 - m psi), all 0 <= b_i <= j_i - 1, j in range
+  k = 0: 0 non-zero out of 20
+  k = 1: 0 non-zero out of 20
+  k = 2: 0 non-zero out of 20
+  k = 3: 0 non-zero out of 20
+genus 4, r = 1
+(1) lattice values X_k(j), j_i >= 1, D <= 2h-2
+  j = (1)  D = 0 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (2)  D = 1 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (3)  D = 2 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (4)  D = 3 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (5)  D = 4 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (6)  D = 5 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (7)  D = 6 BOUNDARY   X_0..X_4 = -1967/276480 ; 433/80640 ; 4673/322560 ; 281/48384 ; 127/215040
+(2) strong form: Int c(T) e_k prod psi^b / prod_m (1 - m psi), all 0 <= b_i <= j_i - 1, j in range
+  k = 0: 0 non-zero out of 21
+  k = 1: 0 non-zero out of 21
+  k = 2: 0 non-zero out of 21
+  k = 3: 0 non-zero out of 21
+  k = 4: 0 non-zero out of 21
+genus 4, r = 2
+(1) lattice values X_k(j), j_i >= 1, D <= 2h-2
+  j = (1,1)  D = 0 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (1,2)  D = 1 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (1,3)  D = 2 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (1,4)  D = 3 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (1,5)  D = 4 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (1,6)  D = 5 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (1,7)  D = 6 BOUNDARY   X_0..X_4 = -13769/276480 ; 433/11520 ; 4673/46080 ; 281/6912 ; 127/30720
+  j = (2,2)  D = 2 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (2,3)  D = 3 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (2,4)  D = 4 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (2,5)  D = 5 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (2,6)  D = 6 BOUNDARY   X_0..X_4 = -9/280 ; 1/40 ; 1531/20160 ; 281/8064 ; 127/30720
+  j = (3,3)  D = 4 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (3,4)  D = 5 in range   X_0..X_4 = 0 ; 0 ; 0 ; 0 ; 0
+  j = (3,5)  D = 6 BOUNDARY   X_0..X_4 = -425/14336 ; 353/16128 ; 21583/322560 ; 2551/80640 ; 127/30720
+  j = (4,4)  D = 6 BOUNDARY   X_0..X_4 = -44/1575 ; 53/2520 ; 13099/201600 ; 12349/403200 ; 127/30720
+(2) strong form: Int c(T) e_k prod psi^b / prod_m (1 - m psi), all 0 <= b_i <= j_i - 1, j in range
+  k = 0: 0 non-zero out of 70
+  k = 1: 0 non-zero out of 70
+  k = 2: 0 non-zero out of 70
+  k = 3: 0 non-zero out of 70
+  k = 4: 0 non-zero out of 70

@@ -1,0 +1,2425 @@
+x = 2  (c = 3, Lemma-A tau = -2/3, sigma = -2/9)
+   sum rule t^0: ok
+   Sum j A_j = -c^2 rho, t^0: ok
+   sum rule t^1: ok
+   Sum j A_j = -c^2 rho, t^1: ok
+   sum rule t^2: ok
+   Sum j A_j = -c^2 rho, t^2: ok
+   sum rule t^3: ok
+   Sum j A_j = -c^2 rho, t^3: ok
+   sum rule t^4: ok
+   Sum j A_j = -c^2 rho, t^4: ok
+   sum rule t^5: ok
+   Sum j A_j = -c^2 rho, t^5: ok
+   sum rule t^6: ok
+   Sum j A_j = -c^2 rho, t^6: ok
+   sum rule t^7: ok
+   Sum j A_j = -c^2 rho, t^7: ok
+   sum rule t^8: ok
+   Sum j A_j = -c^2 rho, t^8: ok
+   rho t^0 vs kt5 data: ok
+   rho t^1 vs kt5 data: ok
+   rho t^2 vs kt5 data: ok
+   rho t^3 vs kt5 data: ok
+   rho t^4 vs kt5 data: ok
+   rho t^5 vs kt5 data: ok
+   lam_0 coefficient zero at t^1 (data): ok
+   a_1^(1) closed form vs kt5 data: ok
+   a_2^(1) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^2 (data): ok
+   a_1^(2) closed form vs kt5 data: ok
+   a_2^(2) closed form vs kt5 data: ok
+   a_3^(2) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^3 (data): ok
+   a_1^(3) closed form vs kt5 data: ok
+   a_2^(3) closed form vs kt5 data: ok
+   a_3^(3) closed form vs kt5 data: ok
+   a_4^(3) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^4 (data): ok
+   a_1^(4) closed form vs kt5 data: ok
+   a_2^(4) closed form vs kt5 data: ok
+   a_3^(4) closed form vs kt5 data: ok
+   a_4^(4) closed form vs kt5 data: ok
+   a_5^(4) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^5 (data): ok
+   a_1^(5) closed form vs kt5 data: ok
+   a_2^(5) closed form vs kt5 data: ok
+   a_3^(5) closed form vs kt5 data: ok
+   a_4^(5) closed form vs kt5 data: ok
+   a_5^(5) closed form vs kt5 data: ok
+   a_6^(5) closed form vs kt5 data: ok
+   top a_2^(1): ok
+   sub-top a_1^(1): ok
+   top a_3^(2): ok
+   sub-top a_2^(2): ok
+   top a_4^(3): ok
+   sub-top a_3^(3): ok
+   top a_5^(4): ok
+   sub-top a_4^(4): ok
+   top a_6^(5): ok
+   sub-top a_5^(5): ok
+   top a_7^(6): ok
+   sub-top a_6^(6): ok
+   top a_8^(7): ok
+   sub-top a_7^(7): ok
+   top a_9^(8): ok
+   sub-top a_8^(8): ok
+   C_1 = (c^2/1) eps_1(sigma): ok
+   C_2 = (c^2/2) eps_2(sigma): ok
+   C_3 = (c^2/3) eps_3(sigma): ok
+   C_4 = (c^2/4) eps_4(sigma): ok
+   C_5 = (c^2/5) eps_5(sigma): ok
+   C_6 = (c^2/6) eps_6(sigma): ok
+   C_7 = (c^2/7) eps_7(sigma): ok
+   C_8 = (c^2/8) eps_8(sigma): ok
+   C_9 = (c^2/9) eps_9(sigma): ok
+   G_(2) has no t^0: ok
+   [t^D] G_(2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2) = 0 (sub-top cancellation): ok
+   G_(2 2) has no t^0: ok
+   G_(2 2) has no t^1: ok
+   [t^D] G_(2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2) has no t^0: ok
+   G_(2 2 2) has no t^1: ok
+   G_(2 2 2) has no t^2: ok
+   [t^D] G_(2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2) has no t^0: ok
+   G_(2 2 2 2) has no t^1: ok
+   G_(2 2 2 2) has no t^2: ok
+   G_(2 2 2 2) has no t^3: ok
+   [t^D] G_(2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2) has no t^4: ok
+   [t^D] G_(2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2) has no t^5: ok
+   [t^D] G_(2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2 2) has no t^5: ok
+   G_(2 2 2 2 2 2 2) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 2 3) has no t^5: ok
+   G_(2 2 2 2 2 3) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 3) has no t^5: ok
+   [t^D] G_(2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 4) has no t^0: ok
+   G_(2 2 2 2 4) has no t^1: ok
+   G_(2 2 2 2 4) has no t^2: ok
+   G_(2 2 2 2 4) has no t^3: ok
+   G_(2 2 2 2 4) has no t^4: ok
+   G_(2 2 2 2 4) has no t^5: ok
+   G_(2 2 2 2 4) has no t^6: ok
+   [t^D] G_(2 2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3) has no t^0: ok
+   G_(2 2 2 3) has no t^1: ok
+   G_(2 2 2 3) has no t^2: ok
+   G_(2 2 2 3) has no t^3: ok
+   G_(2 2 2 3) has no t^4: ok
+   [t^D] G_(2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3 3) has no t^0: ok
+   G_(2 2 2 3 3) has no t^1: ok
+   G_(2 2 2 3 3) has no t^2: ok
+   G_(2 2 2 3 3) has no t^3: ok
+   G_(2 2 2 3 3) has no t^4: ok
+   G_(2 2 2 3 3) has no t^5: ok
+   G_(2 2 2 3 3) has no t^6: ok
+   [t^D] G_(2 2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 4) has no t^0: ok
+   G_(2 2 2 4) has no t^1: ok
+   G_(2 2 2 4) has no t^2: ok
+   G_(2 2 2 4) has no t^3: ok
+   G_(2 2 2 4) has no t^4: ok
+   G_(2 2 2 4) has no t^5: ok
+   [t^D] G_(2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 5) has no t^0: ok
+   G_(2 2 2 5) has no t^1: ok
+   G_(2 2 2 5) has no t^2: ok
+   G_(2 2 2 5) has no t^3: ok
+   G_(2 2 2 5) has no t^4: ok
+   G_(2 2 2 5) has no t^5: ok
+   G_(2 2 2 5) has no t^6: ok
+   [t^D] G_(2 2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 3) has no t^0: ok
+   G_(2 2 3) has no t^1: ok
+   G_(2 2 3) has no t^2: ok
+   G_(2 2 3) has no t^3: ok
+   [t^D] G_(2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 3) has no t^0: ok
+   G_(2 2 3 3) has no t^1: ok
+   G_(2 2 3 3) has no t^2: ok
+   G_(2 2 3 3) has no t^3: ok
+   G_(2 2 3 3) has no t^4: ok
+   G_(2 2 3 3) has no t^5: ok
+   [t^D] G_(2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 4) has no t^0: ok
+   G_(2 2 3 4) has no t^1: ok
+   G_(2 2 3 4) has no t^2: ok
+   G_(2 2 3 4) has no t^3: ok
+   G_(2 2 3 4) has no t^4: ok
+   G_(2 2 3 4) has no t^5: ok
+   G_(2 2 3 4) has no t^6: ok
+   [t^D] G_(2 2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 2 4) has no t^0: ok
+   G_(2 2 4) has no t^1: ok
+   G_(2 2 4) has no t^2: ok
+   G_(2 2 4) has no t^3: ok
+   G_(2 2 4) has no t^4: ok
+   [t^D] G_(2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 5) has no t^0: ok
+   G_(2 2 5) has no t^1: ok
+   G_(2 2 5) has no t^2: ok
+   G_(2 2 5) has no t^3: ok
+   G_(2 2 5) has no t^4: ok
+   G_(2 2 5) has no t^5: ok
+   [t^D] G_(2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 6) has no t^0: ok
+   G_(2 2 6) has no t^1: ok
+   G_(2 2 6) has no t^2: ok
+   G_(2 2 6) has no t^3: ok
+   G_(2 2 6) has no t^4: ok
+   G_(2 2 6) has no t^5: ok
+   G_(2 2 6) has no t^6: ok
+   [t^D] G_(2 2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 6) = 0 (sub-top cancellation): ok
+   G_(2 3) has no t^0: ok
+   G_(2 3) has no t^1: ok
+   G_(2 3) has no t^2: ok
+   [t^D] G_(2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3) has no t^0: ok
+   G_(2 3 3) has no t^1: ok
+   G_(2 3 3) has no t^2: ok
+   G_(2 3 3) has no t^3: ok
+   G_(2 3 3) has no t^4: ok
+   [t^D] G_(2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3 3) has no t^0: ok
+   G_(2 3 3 3) has no t^1: ok
+   G_(2 3 3 3) has no t^2: ok
+   G_(2 3 3 3) has no t^3: ok
+   G_(2 3 3 3) has no t^4: ok
+   G_(2 3 3 3) has no t^5: ok
+   G_(2 3 3 3) has no t^6: ok
+   [t^D] G_(2 3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 4) has no t^0: ok
+   G_(2 3 4) has no t^1: ok
+   G_(2 3 4) has no t^2: ok
+   G_(2 3 4) has no t^3: ok
+   G_(2 3 4) has no t^4: ok
+   G_(2 3 4) has no t^5: ok
+   [t^D] G_(2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 3 5) has no t^0: ok
+   G_(2 3 5) has no t^1: ok
+   G_(2 3 5) has no t^2: ok
+   G_(2 3 5) has no t^3: ok
+   G_(2 3 5) has no t^4: ok
+   G_(2 3 5) has no t^5: ok
+   G_(2 3 5) has no t^6: ok
+   [t^D] G_(2 3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 5) = 0 (sub-top cancellation): ok
+   G_(2 4) has no t^0: ok
+   G_(2 4) has no t^1: ok
+   G_(2 4) has no t^2: ok
+   G_(2 4) has no t^3: ok
+   [t^D] G_(2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4) = 0 (sub-top cancellation): ok
+   G_(2 4 4) has no t^0: ok
+   G_(2 4 4) has no t^1: ok
+   G_(2 4 4) has no t^2: ok
+   G_(2 4 4) has no t^3: ok
+   G_(2 4 4) has no t^4: ok
+   G_(2 4 4) has no t^5: ok
+   G_(2 4 4) has no t^6: ok
+   [t^D] G_(2 4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4 4) = 0 (sub-top cancellation): ok
+   G_(2 5) has no t^0: ok
+   G_(2 5) has no t^1: ok
+   G_(2 5) has no t^2: ok
+   G_(2 5) has no t^3: ok
+   G_(2 5) has no t^4: ok
+   [t^D] G_(2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 5) = 0 (sub-top cancellation): ok
+   G_(2 6) has no t^0: ok
+   G_(2 6) has no t^1: ok
+   G_(2 6) has no t^2: ok
+   G_(2 6) has no t^3: ok
+   G_(2 6) has no t^4: ok
+   G_(2 6) has no t^5: ok
+   [t^D] G_(2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 6) = 0 (sub-top cancellation): ok
+   G_(2 7) has no t^0: ok
+   G_(2 7) has no t^1: ok
+   G_(2 7) has no t^2: ok
+   G_(2 7) has no t^3: ok
+   G_(2 7) has no t^4: ok
+   G_(2 7) has no t^5: ok
+   G_(2 7) has no t^6: ok
+   [t^D] G_(2 7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 7) = 0 (sub-top cancellation): ok
+   G_(3) has no t^0: ok
+   G_(3) has no t^1: ok
+   [t^D] G_(3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3) = 0 (sub-top cancellation): ok
+   G_(3 3) has no t^0: ok
+   G_(3 3) has no t^1: ok
+   G_(3 3) has no t^2: ok
+   G_(3 3) has no t^3: ok
+   [t^D] G_(3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 3) has no t^0: ok
+   G_(3 3 3) has no t^1: ok
+   G_(3 3 3) has no t^2: ok
+   G_(3 3 3) has no t^3: ok
+   G_(3 3 3) has no t^4: ok
+   G_(3 3 3) has no t^5: ok
+   [t^D] G_(3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 4) has no t^0: ok
+   G_(3 3 4) has no t^1: ok
+   G_(3 3 4) has no t^2: ok
+   G_(3 3 4) has no t^3: ok
+   G_(3 3 4) has no t^4: ok
+   G_(3 3 4) has no t^5: ok
+   G_(3 3 4) has no t^6: ok
+   [t^D] G_(3 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 4) = 0 (sub-top cancellation): ok
+   G_(3 4) has no t^0: ok
+   G_(3 4) has no t^1: ok
+   G_(3 4) has no t^2: ok
+   G_(3 4) has no t^3: ok
+   G_(3 4) has no t^4: ok
+   [t^D] G_(3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 4) = 0 (sub-top cancellation): ok
+   G_(3 5) has no t^0: ok
+   G_(3 5) has no t^1: ok
+   G_(3 5) has no t^2: ok
+   G_(3 5) has no t^3: ok
+   G_(3 5) has no t^4: ok
+   G_(3 5) has no t^5: ok
+   [t^D] G_(3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 5) = 0 (sub-top cancellation): ok
+   G_(3 6) has no t^0: ok
+   G_(3 6) has no t^1: ok
+   G_(3 6) has no t^2: ok
+   G_(3 6) has no t^3: ok
+   G_(3 6) has no t^4: ok
+   G_(3 6) has no t^5: ok
+   G_(3 6) has no t^6: ok
+   [t^D] G_(3 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 6) = 0 (sub-top cancellation): ok
+   G_(4) has no t^0: ok
+   G_(4) has no t^1: ok
+   G_(4) has no t^2: ok
+   [t^D] G_(4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4) = 0 (sub-top cancellation): ok
+   G_(4 4) has no t^0: ok
+   G_(4 4) has no t^1: ok
+   G_(4 4) has no t^2: ok
+   G_(4 4) has no t^3: ok
+   G_(4 4) has no t^4: ok
+   G_(4 4) has no t^5: ok
+   [t^D] G_(4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 4) = 0 (sub-top cancellation): ok
+   G_(4 5) has no t^0: ok
+   G_(4 5) has no t^1: ok
+   G_(4 5) has no t^2: ok
+   G_(4 5) has no t^3: ok
+   G_(4 5) has no t^4: ok
+   G_(4 5) has no t^5: ok
+   G_(4 5) has no t^6: ok
+   [t^D] G_(4 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 5) = 0 (sub-top cancellation): ok
+   G_(5) has no t^0: ok
+   G_(5) has no t^1: ok
+   G_(5) has no t^2: ok
+   G_(5) has no t^3: ok
+   [t^D] G_(5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(5) = 0 (sub-top cancellation): ok
+   G_(6) has no t^0: ok
+   G_(6) has no t^1: ok
+   G_(6) has no t^2: ok
+   G_(6) has no t^3: ok
+   G_(6) has no t^4: ok
+   [t^D] G_(6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(6) = 0 (sub-top cancellation): ok
+   G_(7) has no t^0: ok
+   G_(7) has no t^1: ok
+   G_(7) has no t^2: ok
+   G_(7) has no t^3: ok
+   G_(7) has no t^4: ok
+   G_(7) has no t^5: ok
+   [t^D] G_(7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(7) = 0 (sub-top cancellation): ok
+   G_(8) has no t^0: ok
+   G_(8) has no t^1: ok
+   G_(8) has no t^2: ok
+   G_(8) has no t^3: ok
+   G_(8) has no t^4: ok
+   G_(8) has no t^5: ok
+   G_(8) has no t^6: ok
+   [t^D] G_(8) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(8) = 0 (sub-top cancellation): ok
+   Lemma 5.2: 44 irreducible R with D <= 7: leading ok 44, sub-top cancels 44; deficit-2 coefficient non-zero in 15 of 29
+x = 1/3  (c = 4/3, Lemma-A tau = -1/4, sigma = -3/16)
+   sum rule t^0: ok
+   Sum j A_j = -c^2 rho, t^0: ok
+   sum rule t^1: ok
+   Sum j A_j = -c^2 rho, t^1: ok
+   sum rule t^2: ok
+   Sum j A_j = -c^2 rho, t^2: ok
+   sum rule t^3: ok
+   Sum j A_j = -c^2 rho, t^3: ok
+   sum rule t^4: ok
+   Sum j A_j = -c^2 rho, t^4: ok
+   sum rule t^5: ok
+   Sum j A_j = -c^2 rho, t^5: ok
+   sum rule t^6: ok
+   Sum j A_j = -c^2 rho, t^6: ok
+   sum rule t^7: ok
+   Sum j A_j = -c^2 rho, t^7: ok
+   sum rule t^8: ok
+   Sum j A_j = -c^2 rho, t^8: ok
+   rho t^0 vs kt5 data: ok
+   rho t^1 vs kt5 data: ok
+   rho t^2 vs kt5 data: ok
+   rho t^3 vs kt5 data: ok
+   rho t^4 vs kt5 data: ok
+   rho t^5 vs kt5 data: ok
+   lam_0 coefficient zero at t^1 (data): ok
+   a_1^(1) closed form vs kt5 data: ok
+   a_2^(1) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^2 (data): ok
+   a_1^(2) closed form vs kt5 data: ok
+   a_2^(2) closed form vs kt5 data: ok
+   a_3^(2) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^3 (data): ok
+   a_1^(3) closed form vs kt5 data: ok
+   a_2^(3) closed form vs kt5 data: ok
+   a_3^(3) closed form vs kt5 data: ok
+   a_4^(3) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^4 (data): ok
+   a_1^(4) closed form vs kt5 data: ok
+   a_2^(4) closed form vs kt5 data: ok
+   a_3^(4) closed form vs kt5 data: ok
+   a_4^(4) closed form vs kt5 data: ok
+   a_5^(4) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^5 (data): ok
+   a_1^(5) closed form vs kt5 data: ok
+   a_2^(5) closed form vs kt5 data: ok
+   a_3^(5) closed form vs kt5 data: ok
+   a_4^(5) closed form vs kt5 data: ok
+   a_5^(5) closed form vs kt5 data: ok
+   a_6^(5) closed form vs kt5 data: ok
+   top a_2^(1): ok
+   sub-top a_1^(1): ok
+   top a_3^(2): ok
+   sub-top a_2^(2): ok
+   top a_4^(3): ok
+   sub-top a_3^(3): ok
+   top a_5^(4): ok
+   sub-top a_4^(4): ok
+   top a_6^(5): ok
+   sub-top a_5^(5): ok
+   top a_7^(6): ok
+   sub-top a_6^(6): ok
+   top a_8^(7): ok
+   sub-top a_7^(7): ok
+   top a_9^(8): ok
+   sub-top a_8^(8): ok
+   C_1 = (c^2/1) eps_1(sigma): ok
+   C_2 = (c^2/2) eps_2(sigma): ok
+   C_3 = (c^2/3) eps_3(sigma): ok
+   C_4 = (c^2/4) eps_4(sigma): ok
+   C_5 = (c^2/5) eps_5(sigma): ok
+   C_6 = (c^2/6) eps_6(sigma): ok
+   C_7 = (c^2/7) eps_7(sigma): ok
+   C_8 = (c^2/8) eps_8(sigma): ok
+   C_9 = (c^2/9) eps_9(sigma): ok
+   G_(2) has no t^0: ok
+   [t^D] G_(2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2) = 0 (sub-top cancellation): ok
+   G_(2 2) has no t^0: ok
+   G_(2 2) has no t^1: ok
+   [t^D] G_(2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2) has no t^0: ok
+   G_(2 2 2) has no t^1: ok
+   G_(2 2 2) has no t^2: ok
+   [t^D] G_(2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2) has no t^0: ok
+   G_(2 2 2 2) has no t^1: ok
+   G_(2 2 2 2) has no t^2: ok
+   G_(2 2 2 2) has no t^3: ok
+   [t^D] G_(2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2) has no t^4: ok
+   [t^D] G_(2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2) has no t^5: ok
+   [t^D] G_(2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2 2) has no t^5: ok
+   G_(2 2 2 2 2 2 2) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 2 3) has no t^5: ok
+   G_(2 2 2 2 2 3) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 3) has no t^5: ok
+   [t^D] G_(2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 4) has no t^0: ok
+   G_(2 2 2 2 4) has no t^1: ok
+   G_(2 2 2 2 4) has no t^2: ok
+   G_(2 2 2 2 4) has no t^3: ok
+   G_(2 2 2 2 4) has no t^4: ok
+   G_(2 2 2 2 4) has no t^5: ok
+   G_(2 2 2 2 4) has no t^6: ok
+   [t^D] G_(2 2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3) has no t^0: ok
+   G_(2 2 2 3) has no t^1: ok
+   G_(2 2 2 3) has no t^2: ok
+   G_(2 2 2 3) has no t^3: ok
+   G_(2 2 2 3) has no t^4: ok
+   [t^D] G_(2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3 3) has no t^0: ok
+   G_(2 2 2 3 3) has no t^1: ok
+   G_(2 2 2 3 3) has no t^2: ok
+   G_(2 2 2 3 3) has no t^3: ok
+   G_(2 2 2 3 3) has no t^4: ok
+   G_(2 2 2 3 3) has no t^5: ok
+   G_(2 2 2 3 3) has no t^6: ok
+   [t^D] G_(2 2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 4) has no t^0: ok
+   G_(2 2 2 4) has no t^1: ok
+   G_(2 2 2 4) has no t^2: ok
+   G_(2 2 2 4) has no t^3: ok
+   G_(2 2 2 4) has no t^4: ok
+   G_(2 2 2 4) has no t^5: ok
+   [t^D] G_(2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 5) has no t^0: ok
+   G_(2 2 2 5) has no t^1: ok
+   G_(2 2 2 5) has no t^2: ok
+   G_(2 2 2 5) has no t^3: ok
+   G_(2 2 2 5) has no t^4: ok
+   G_(2 2 2 5) has no t^5: ok
+   G_(2 2 2 5) has no t^6: ok
+   [t^D] G_(2 2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 3) has no t^0: ok
+   G_(2 2 3) has no t^1: ok
+   G_(2 2 3) has no t^2: ok
+   G_(2 2 3) has no t^3: ok
+   [t^D] G_(2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 3) has no t^0: ok
+   G_(2 2 3 3) has no t^1: ok
+   G_(2 2 3 3) has no t^2: ok
+   G_(2 2 3 3) has no t^3: ok
+   G_(2 2 3 3) has no t^4: ok
+   G_(2 2 3 3) has no t^5: ok
+   [t^D] G_(2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 4) has no t^0: ok
+   G_(2 2 3 4) has no t^1: ok
+   G_(2 2 3 4) has no t^2: ok
+   G_(2 2 3 4) has no t^3: ok
+   G_(2 2 3 4) has no t^4: ok
+   G_(2 2 3 4) has no t^5: ok
+   G_(2 2 3 4) has no t^6: ok
+   [t^D] G_(2 2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 2 4) has no t^0: ok
+   G_(2 2 4) has no t^1: ok
+   G_(2 2 4) has no t^2: ok
+   G_(2 2 4) has no t^3: ok
+   G_(2 2 4) has no t^4: ok
+   [t^D] G_(2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 5) has no t^0: ok
+   G_(2 2 5) has no t^1: ok
+   G_(2 2 5) has no t^2: ok
+   G_(2 2 5) has no t^3: ok
+   G_(2 2 5) has no t^4: ok
+   G_(2 2 5) has no t^5: ok
+   [t^D] G_(2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 6) has no t^0: ok
+   G_(2 2 6) has no t^1: ok
+   G_(2 2 6) has no t^2: ok
+   G_(2 2 6) has no t^3: ok
+   G_(2 2 6) has no t^4: ok
+   G_(2 2 6) has no t^5: ok
+   G_(2 2 6) has no t^6: ok
+   [t^D] G_(2 2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 6) = 0 (sub-top cancellation): ok
+   G_(2 3) has no t^0: ok
+   G_(2 3) has no t^1: ok
+   G_(2 3) has no t^2: ok
+   [t^D] G_(2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3) has no t^0: ok
+   G_(2 3 3) has no t^1: ok
+   G_(2 3 3) has no t^2: ok
+   G_(2 3 3) has no t^3: ok
+   G_(2 3 3) has no t^4: ok
+   [t^D] G_(2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3 3) has no t^0: ok
+   G_(2 3 3 3) has no t^1: ok
+   G_(2 3 3 3) has no t^2: ok
+   G_(2 3 3 3) has no t^3: ok
+   G_(2 3 3 3) has no t^4: ok
+   G_(2 3 3 3) has no t^5: ok
+   G_(2 3 3 3) has no t^6: ok
+   [t^D] G_(2 3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 4) has no t^0: ok
+   G_(2 3 4) has no t^1: ok
+   G_(2 3 4) has no t^2: ok
+   G_(2 3 4) has no t^3: ok
+   G_(2 3 4) has no t^4: ok
+   G_(2 3 4) has no t^5: ok
+   [t^D] G_(2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 3 5) has no t^0: ok
+   G_(2 3 5) has no t^1: ok
+   G_(2 3 5) has no t^2: ok
+   G_(2 3 5) has no t^3: ok
+   G_(2 3 5) has no t^4: ok
+   G_(2 3 5) has no t^5: ok
+   G_(2 3 5) has no t^6: ok
+   [t^D] G_(2 3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 5) = 0 (sub-top cancellation): ok
+   G_(2 4) has no t^0: ok
+   G_(2 4) has no t^1: ok
+   G_(2 4) has no t^2: ok
+   G_(2 4) has no t^3: ok
+   [t^D] G_(2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4) = 0 (sub-top cancellation): ok
+   G_(2 4 4) has no t^0: ok
+   G_(2 4 4) has no t^1: ok
+   G_(2 4 4) has no t^2: ok
+   G_(2 4 4) has no t^3: ok
+   G_(2 4 4) has no t^4: ok
+   G_(2 4 4) has no t^5: ok
+   G_(2 4 4) has no t^6: ok
+   [t^D] G_(2 4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4 4) = 0 (sub-top cancellation): ok
+   G_(2 5) has no t^0: ok
+   G_(2 5) has no t^1: ok
+   G_(2 5) has no t^2: ok
+   G_(2 5) has no t^3: ok
+   G_(2 5) has no t^4: ok
+   [t^D] G_(2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 5) = 0 (sub-top cancellation): ok
+   G_(2 6) has no t^0: ok
+   G_(2 6) has no t^1: ok
+   G_(2 6) has no t^2: ok
+   G_(2 6) has no t^3: ok
+   G_(2 6) has no t^4: ok
+   G_(2 6) has no t^5: ok
+   [t^D] G_(2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 6) = 0 (sub-top cancellation): ok
+   G_(2 7) has no t^0: ok
+   G_(2 7) has no t^1: ok
+   G_(2 7) has no t^2: ok
+   G_(2 7) has no t^3: ok
+   G_(2 7) has no t^4: ok
+   G_(2 7) has no t^5: ok
+   G_(2 7) has no t^6: ok
+   [t^D] G_(2 7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 7) = 0 (sub-top cancellation): ok
+   G_(3) has no t^0: ok
+   G_(3) has no t^1: ok
+   [t^D] G_(3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3) = 0 (sub-top cancellation): ok
+   G_(3 3) has no t^0: ok
+   G_(3 3) has no t^1: ok
+   G_(3 3) has no t^2: ok
+   G_(3 3) has no t^3: ok
+   [t^D] G_(3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 3) has no t^0: ok
+   G_(3 3 3) has no t^1: ok
+   G_(3 3 3) has no t^2: ok
+   G_(3 3 3) has no t^3: ok
+   G_(3 3 3) has no t^4: ok
+   G_(3 3 3) has no t^5: ok
+   [t^D] G_(3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 4) has no t^0: ok
+   G_(3 3 4) has no t^1: ok
+   G_(3 3 4) has no t^2: ok
+   G_(3 3 4) has no t^3: ok
+   G_(3 3 4) has no t^4: ok
+   G_(3 3 4) has no t^5: ok
+   G_(3 3 4) has no t^6: ok
+   [t^D] G_(3 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 4) = 0 (sub-top cancellation): ok
+   G_(3 4) has no t^0: ok
+   G_(3 4) has no t^1: ok
+   G_(3 4) has no t^2: ok
+   G_(3 4) has no t^3: ok
+   G_(3 4) has no t^4: ok
+   [t^D] G_(3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 4) = 0 (sub-top cancellation): ok
+   G_(3 5) has no t^0: ok
+   G_(3 5) has no t^1: ok
+   G_(3 5) has no t^2: ok
+   G_(3 5) has no t^3: ok
+   G_(3 5) has no t^4: ok
+   G_(3 5) has no t^5: ok
+   [t^D] G_(3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 5) = 0 (sub-top cancellation): ok
+   G_(3 6) has no t^0: ok
+   G_(3 6) has no t^1: ok
+   G_(3 6) has no t^2: ok
+   G_(3 6) has no t^3: ok
+   G_(3 6) has no t^4: ok
+   G_(3 6) has no t^5: ok
+   G_(3 6) has no t^6: ok
+   [t^D] G_(3 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 6) = 0 (sub-top cancellation): ok
+   G_(4) has no t^0: ok
+   G_(4) has no t^1: ok
+   G_(4) has no t^2: ok
+   [t^D] G_(4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4) = 0 (sub-top cancellation): ok
+   G_(4 4) has no t^0: ok
+   G_(4 4) has no t^1: ok
+   G_(4 4) has no t^2: ok
+   G_(4 4) has no t^3: ok
+   G_(4 4) has no t^4: ok
+   G_(4 4) has no t^5: ok
+   [t^D] G_(4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 4) = 0 (sub-top cancellation): ok
+   G_(4 5) has no t^0: ok
+   G_(4 5) has no t^1: ok
+   G_(4 5) has no t^2: ok
+   G_(4 5) has no t^3: ok
+   G_(4 5) has no t^4: ok
+   G_(4 5) has no t^5: ok
+   G_(4 5) has no t^6: ok
+   [t^D] G_(4 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 5) = 0 (sub-top cancellation): ok
+   G_(5) has no t^0: ok
+   G_(5) has no t^1: ok
+   G_(5) has no t^2: ok
+   G_(5) has no t^3: ok
+   [t^D] G_(5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(5) = 0 (sub-top cancellation): ok
+   G_(6) has no t^0: ok
+   G_(6) has no t^1: ok
+   G_(6) has no t^2: ok
+   G_(6) has no t^3: ok
+   G_(6) has no t^4: ok
+   [t^D] G_(6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(6) = 0 (sub-top cancellation): ok
+   G_(7) has no t^0: ok
+   G_(7) has no t^1: ok
+   G_(7) has no t^2: ok
+   G_(7) has no t^3: ok
+   G_(7) has no t^4: ok
+   G_(7) has no t^5: ok
+   [t^D] G_(7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(7) = 0 (sub-top cancellation): ok
+   G_(8) has no t^0: ok
+   G_(8) has no t^1: ok
+   G_(8) has no t^2: ok
+   G_(8) has no t^3: ok
+   G_(8) has no t^4: ok
+   G_(8) has no t^5: ok
+   G_(8) has no t^6: ok
+   [t^D] G_(8) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(8) = 0 (sub-top cancellation): ok
+   Lemma 5.2: 44 irreducible R with D <= 7: leading ok 44, sub-top cancels 44; deficit-2 coefficient non-zero in 22 of 29
+x = -5/7  (c = 2/7, Lemma-A tau = 5/2, sigma = 35/4)
+   sum rule t^0: ok
+   Sum j A_j = -c^2 rho, t^0: ok
+   sum rule t^1: ok
+   Sum j A_j = -c^2 rho, t^1: ok
+   sum rule t^2: ok
+   Sum j A_j = -c^2 rho, t^2: ok
+   sum rule t^3: ok
+   Sum j A_j = -c^2 rho, t^3: ok
+   sum rule t^4: ok
+   Sum j A_j = -c^2 rho, t^4: ok
+   sum rule t^5: ok
+   Sum j A_j = -c^2 rho, t^5: ok
+   sum rule t^6: ok
+   Sum j A_j = -c^2 rho, t^6: ok
+   sum rule t^7: ok
+   Sum j A_j = -c^2 rho, t^7: ok
+   sum rule t^8: ok
+   Sum j A_j = -c^2 rho, t^8: ok
+   rho t^0 vs kt5 data: ok
+   rho t^1 vs kt5 data: ok
+   rho t^2 vs kt5 data: ok
+   rho t^3 vs kt5 data: ok
+   rho t^4 vs kt5 data: ok
+   rho t^5 vs kt5 data: ok
+   lam_0 coefficient zero at t^1 (data): ok
+   a_1^(1) closed form vs kt5 data: ok
+   a_2^(1) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^2 (data): ok
+   a_1^(2) closed form vs kt5 data: ok
+   a_2^(2) closed form vs kt5 data: ok
+   a_3^(2) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^3 (data): ok
+   a_1^(3) closed form vs kt5 data: ok
+   a_2^(3) closed form vs kt5 data: ok
+   a_3^(3) closed form vs kt5 data: ok
+   a_4^(3) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^4 (data): ok
+   a_1^(4) closed form vs kt5 data: ok
+   a_2^(4) closed form vs kt5 data: ok
+   a_3^(4) closed form vs kt5 data: ok
+   a_4^(4) closed form vs kt5 data: ok
+   a_5^(4) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^5 (data): ok
+   a_1^(5) closed form vs kt5 data: ok
+   a_2^(5) closed form vs kt5 data: ok
+   a_3^(5) closed form vs kt5 data: ok
+   a_4^(5) closed form vs kt5 data: ok
+   a_5^(5) closed form vs kt5 data: ok
+   a_6^(5) closed form vs kt5 data: ok
+   top a_2^(1): ok
+   sub-top a_1^(1): ok
+   top a_3^(2): ok
+   sub-top a_2^(2): ok
+   top a_4^(3): ok
+   sub-top a_3^(3): ok
+   top a_5^(4): ok
+   sub-top a_4^(4): ok
+   top a_6^(5): ok
+   sub-top a_5^(5): ok
+   top a_7^(6): ok
+   sub-top a_6^(6): ok
+   top a_8^(7): ok
+   sub-top a_7^(7): ok
+   top a_9^(8): ok
+   sub-top a_8^(8): ok
+   C_1 = (c^2/1) eps_1(sigma): ok
+   C_2 = (c^2/2) eps_2(sigma): ok
+   C_3 = (c^2/3) eps_3(sigma): ok
+   C_4 = (c^2/4) eps_4(sigma): ok
+   C_5 = (c^2/5) eps_5(sigma): ok
+   C_6 = (c^2/6) eps_6(sigma): ok
+   C_7 = (c^2/7) eps_7(sigma): ok
+   C_8 = (c^2/8) eps_8(sigma): ok
+   C_9 = (c^2/9) eps_9(sigma): ok
+   G_(2) has no t^0: ok
+   [t^D] G_(2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2) = 0 (sub-top cancellation): ok
+   G_(2 2) has no t^0: ok
+   G_(2 2) has no t^1: ok
+   [t^D] G_(2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2) has no t^0: ok
+   G_(2 2 2) has no t^1: ok
+   G_(2 2 2) has no t^2: ok
+   [t^D] G_(2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2) has no t^0: ok
+   G_(2 2 2 2) has no t^1: ok
+   G_(2 2 2 2) has no t^2: ok
+   G_(2 2 2 2) has no t^3: ok
+   [t^D] G_(2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2) has no t^4: ok
+   [t^D] G_(2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2) has no t^5: ok
+   [t^D] G_(2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2 2) has no t^5: ok
+   G_(2 2 2 2 2 2 2) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 2 3) has no t^5: ok
+   G_(2 2 2 2 2 3) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 3) has no t^5: ok
+   [t^D] G_(2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 4) has no t^0: ok
+   G_(2 2 2 2 4) has no t^1: ok
+   G_(2 2 2 2 4) has no t^2: ok
+   G_(2 2 2 2 4) has no t^3: ok
+   G_(2 2 2 2 4) has no t^4: ok
+   G_(2 2 2 2 4) has no t^5: ok
+   G_(2 2 2 2 4) has no t^6: ok
+   [t^D] G_(2 2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3) has no t^0: ok
+   G_(2 2 2 3) has no t^1: ok
+   G_(2 2 2 3) has no t^2: ok
+   G_(2 2 2 3) has no t^3: ok
+   G_(2 2 2 3) has no t^4: ok
+   [t^D] G_(2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3 3) has no t^0: ok
+   G_(2 2 2 3 3) has no t^1: ok
+   G_(2 2 2 3 3) has no t^2: ok
+   G_(2 2 2 3 3) has no t^3: ok
+   G_(2 2 2 3 3) has no t^4: ok
+   G_(2 2 2 3 3) has no t^5: ok
+   G_(2 2 2 3 3) has no t^6: ok
+   [t^D] G_(2 2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 4) has no t^0: ok
+   G_(2 2 2 4) has no t^1: ok
+   G_(2 2 2 4) has no t^2: ok
+   G_(2 2 2 4) has no t^3: ok
+   G_(2 2 2 4) has no t^4: ok
+   G_(2 2 2 4) has no t^5: ok
+   [t^D] G_(2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 5) has no t^0: ok
+   G_(2 2 2 5) has no t^1: ok
+   G_(2 2 2 5) has no t^2: ok
+   G_(2 2 2 5) has no t^3: ok
+   G_(2 2 2 5) has no t^4: ok
+   G_(2 2 2 5) has no t^5: ok
+   G_(2 2 2 5) has no t^6: ok
+   [t^D] G_(2 2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 3) has no t^0: ok
+   G_(2 2 3) has no t^1: ok
+   G_(2 2 3) has no t^2: ok
+   G_(2 2 3) has no t^3: ok
+   [t^D] G_(2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 3) has no t^0: ok
+   G_(2 2 3 3) has no t^1: ok
+   G_(2 2 3 3) has no t^2: ok
+   G_(2 2 3 3) has no t^3: ok
+   G_(2 2 3 3) has no t^4: ok
+   G_(2 2 3 3) has no t^5: ok
+   [t^D] G_(2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 4) has no t^0: ok
+   G_(2 2 3 4) has no t^1: ok
+   G_(2 2 3 4) has no t^2: ok
+   G_(2 2 3 4) has no t^3: ok
+   G_(2 2 3 4) has no t^4: ok
+   G_(2 2 3 4) has no t^5: ok
+   G_(2 2 3 4) has no t^6: ok
+   [t^D] G_(2 2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 2 4) has no t^0: ok
+   G_(2 2 4) has no t^1: ok
+   G_(2 2 4) has no t^2: ok
+   G_(2 2 4) has no t^3: ok
+   G_(2 2 4) has no t^4: ok
+   [t^D] G_(2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 5) has no t^0: ok
+   G_(2 2 5) has no t^1: ok
+   G_(2 2 5) has no t^2: ok
+   G_(2 2 5) has no t^3: ok
+   G_(2 2 5) has no t^4: ok
+   G_(2 2 5) has no t^5: ok
+   [t^D] G_(2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 6) has no t^0: ok
+   G_(2 2 6) has no t^1: ok
+   G_(2 2 6) has no t^2: ok
+   G_(2 2 6) has no t^3: ok
+   G_(2 2 6) has no t^4: ok
+   G_(2 2 6) has no t^5: ok
+   G_(2 2 6) has no t^6: ok
+   [t^D] G_(2 2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 6) = 0 (sub-top cancellation): ok
+   G_(2 3) has no t^0: ok
+   G_(2 3) has no t^1: ok
+   G_(2 3) has no t^2: ok
+   [t^D] G_(2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3) has no t^0: ok
+   G_(2 3 3) has no t^1: ok
+   G_(2 3 3) has no t^2: ok
+   G_(2 3 3) has no t^3: ok
+   G_(2 3 3) has no t^4: ok
+   [t^D] G_(2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3 3) has no t^0: ok
+   G_(2 3 3 3) has no t^1: ok
+   G_(2 3 3 3) has no t^2: ok
+   G_(2 3 3 3) has no t^3: ok
+   G_(2 3 3 3) has no t^4: ok
+   G_(2 3 3 3) has no t^5: ok
+   G_(2 3 3 3) has no t^6: ok
+   [t^D] G_(2 3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 4) has no t^0: ok
+   G_(2 3 4) has no t^1: ok
+   G_(2 3 4) has no t^2: ok
+   G_(2 3 4) has no t^3: ok
+   G_(2 3 4) has no t^4: ok
+   G_(2 3 4) has no t^5: ok
+   [t^D] G_(2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 3 5) has no t^0: ok
+   G_(2 3 5) has no t^1: ok
+   G_(2 3 5) has no t^2: ok
+   G_(2 3 5) has no t^3: ok
+   G_(2 3 5) has no t^4: ok
+   G_(2 3 5) has no t^5: ok
+   G_(2 3 5) has no t^6: ok
+   [t^D] G_(2 3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 5) = 0 (sub-top cancellation): ok
+   G_(2 4) has no t^0: ok
+   G_(2 4) has no t^1: ok
+   G_(2 4) has no t^2: ok
+   G_(2 4) has no t^3: ok
+   [t^D] G_(2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4) = 0 (sub-top cancellation): ok
+   G_(2 4 4) has no t^0: ok
+   G_(2 4 4) has no t^1: ok
+   G_(2 4 4) has no t^2: ok
+   G_(2 4 4) has no t^3: ok
+   G_(2 4 4) has no t^4: ok
+   G_(2 4 4) has no t^5: ok
+   G_(2 4 4) has no t^6: ok
+   [t^D] G_(2 4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4 4) = 0 (sub-top cancellation): ok
+   G_(2 5) has no t^0: ok
+   G_(2 5) has no t^1: ok
+   G_(2 5) has no t^2: ok
+   G_(2 5) has no t^3: ok
+   G_(2 5) has no t^4: ok
+   [t^D] G_(2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 5) = 0 (sub-top cancellation): ok
+   G_(2 6) has no t^0: ok
+   G_(2 6) has no t^1: ok
+   G_(2 6) has no t^2: ok
+   G_(2 6) has no t^3: ok
+   G_(2 6) has no t^4: ok
+   G_(2 6) has no t^5: ok
+   [t^D] G_(2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 6) = 0 (sub-top cancellation): ok
+   G_(2 7) has no t^0: ok
+   G_(2 7) has no t^1: ok
+   G_(2 7) has no t^2: ok
+   G_(2 7) has no t^3: ok
+   G_(2 7) has no t^4: ok
+   G_(2 7) has no t^5: ok
+   G_(2 7) has no t^6: ok
+   [t^D] G_(2 7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 7) = 0 (sub-top cancellation): ok
+   G_(3) has no t^0: ok
+   G_(3) has no t^1: ok
+   [t^D] G_(3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3) = 0 (sub-top cancellation): ok
+   G_(3 3) has no t^0: ok
+   G_(3 3) has no t^1: ok
+   G_(3 3) has no t^2: ok
+   G_(3 3) has no t^3: ok
+   [t^D] G_(3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 3) has no t^0: ok
+   G_(3 3 3) has no t^1: ok
+   G_(3 3 3) has no t^2: ok
+   G_(3 3 3) has no t^3: ok
+   G_(3 3 3) has no t^4: ok
+   G_(3 3 3) has no t^5: ok
+   [t^D] G_(3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 4) has no t^0: ok
+   G_(3 3 4) has no t^1: ok
+   G_(3 3 4) has no t^2: ok
+   G_(3 3 4) has no t^3: ok
+   G_(3 3 4) has no t^4: ok
+   G_(3 3 4) has no t^5: ok
+   G_(3 3 4) has no t^6: ok
+   [t^D] G_(3 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 4) = 0 (sub-top cancellation): ok
+   G_(3 4) has no t^0: ok
+   G_(3 4) has no t^1: ok
+   G_(3 4) has no t^2: ok
+   G_(3 4) has no t^3: ok
+   G_(3 4) has no t^4: ok
+   [t^D] G_(3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 4) = 0 (sub-top cancellation): ok
+   G_(3 5) has no t^0: ok
+   G_(3 5) has no t^1: ok
+   G_(3 5) has no t^2: ok
+   G_(3 5) has no t^3: ok
+   G_(3 5) has no t^4: ok
+   G_(3 5) has no t^5: ok
+   [t^D] G_(3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 5) = 0 (sub-top cancellation): ok
+   G_(3 6) has no t^0: ok
+   G_(3 6) has no t^1: ok
+   G_(3 6) has no t^2: ok
+   G_(3 6) has no t^3: ok
+   G_(3 6) has no t^4: ok
+   G_(3 6) has no t^5: ok
+   G_(3 6) has no t^6: ok
+   [t^D] G_(3 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 6) = 0 (sub-top cancellation): ok
+   G_(4) has no t^0: ok
+   G_(4) has no t^1: ok
+   G_(4) has no t^2: ok
+   [t^D] G_(4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4) = 0 (sub-top cancellation): ok
+   G_(4 4) has no t^0: ok
+   G_(4 4) has no t^1: ok
+   G_(4 4) has no t^2: ok
+   G_(4 4) has no t^3: ok
+   G_(4 4) has no t^4: ok
+   G_(4 4) has no t^5: ok
+   [t^D] G_(4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 4) = 0 (sub-top cancellation): ok
+   G_(4 5) has no t^0: ok
+   G_(4 5) has no t^1: ok
+   G_(4 5) has no t^2: ok
+   G_(4 5) has no t^3: ok
+   G_(4 5) has no t^4: ok
+   G_(4 5) has no t^5: ok
+   G_(4 5) has no t^6: ok
+   [t^D] G_(4 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 5) = 0 (sub-top cancellation): ok
+   G_(5) has no t^0: ok
+   G_(5) has no t^1: ok
+   G_(5) has no t^2: ok
+   G_(5) has no t^3: ok
+   [t^D] G_(5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(5) = 0 (sub-top cancellation): ok
+   G_(6) has no t^0: ok
+   G_(6) has no t^1: ok
+   G_(6) has no t^2: ok
+   G_(6) has no t^3: ok
+   G_(6) has no t^4: ok
+   [t^D] G_(6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(6) = 0 (sub-top cancellation): ok
+   G_(7) has no t^0: ok
+   G_(7) has no t^1: ok
+   G_(7) has no t^2: ok
+   G_(7) has no t^3: ok
+   G_(7) has no t^4: ok
+   G_(7) has no t^5: ok
+   [t^D] G_(7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(7) = 0 (sub-top cancellation): ok
+   G_(8) has no t^0: ok
+   G_(8) has no t^1: ok
+   G_(8) has no t^2: ok
+   G_(8) has no t^3: ok
+   G_(8) has no t^4: ok
+   G_(8) has no t^5: ok
+   G_(8) has no t^6: ok
+   [t^D] G_(8) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(8) = 0 (sub-top cancellation): ok
+   Lemma 5.2: 44 irreducible R with D <= 7: leading ok 44, sub-top cancels 44; deficit-2 coefficient non-zero in 29 of 29
+x = 3/2  (c = 5/2, Lemma-A tau = -3/5, sigma = -6/25)
+   sum rule t^0: ok
+   Sum j A_j = -c^2 rho, t^0: ok
+   sum rule t^1: ok
+   Sum j A_j = -c^2 rho, t^1: ok
+   sum rule t^2: ok
+   Sum j A_j = -c^2 rho, t^2: ok
+   sum rule t^3: ok
+   Sum j A_j = -c^2 rho, t^3: ok
+   sum rule t^4: ok
+   Sum j A_j = -c^2 rho, t^4: ok
+   sum rule t^5: ok
+   Sum j A_j = -c^2 rho, t^5: ok
+   sum rule t^6: ok
+   Sum j A_j = -c^2 rho, t^6: ok
+   sum rule t^7: ok
+   Sum j A_j = -c^2 rho, t^7: ok
+   sum rule t^8: ok
+   Sum j A_j = -c^2 rho, t^8: ok
+   rho t^0 vs kt5 data: ok
+   rho t^1 vs kt5 data: ok
+   rho t^2 vs kt5 data: ok
+   rho t^3 vs kt5 data: ok
+   rho t^4 vs kt5 data: ok
+   rho t^5 vs kt5 data: ok
+   lam_0 coefficient zero at t^1 (data): ok
+   a_1^(1) closed form vs kt5 data: ok
+   a_2^(1) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^2 (data): ok
+   a_1^(2) closed form vs kt5 data: ok
+   a_2^(2) closed form vs kt5 data: ok
+   a_3^(2) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^3 (data): ok
+   a_1^(3) closed form vs kt5 data: ok
+   a_2^(3) closed form vs kt5 data: ok
+   a_3^(3) closed form vs kt5 data: ok
+   a_4^(3) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^4 (data): ok
+   a_1^(4) closed form vs kt5 data: ok
+   a_2^(4) closed form vs kt5 data: ok
+   a_3^(4) closed form vs kt5 data: ok
+   a_4^(4) closed form vs kt5 data: ok
+   a_5^(4) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^5 (data): ok
+   a_1^(5) closed form vs kt5 data: ok
+   a_2^(5) closed form vs kt5 data: ok
+   a_3^(5) closed form vs kt5 data: ok
+   a_4^(5) closed form vs kt5 data: ok
+   a_5^(5) closed form vs kt5 data: ok
+   a_6^(5) closed form vs kt5 data: ok
+   top a_2^(1): ok
+   sub-top a_1^(1): ok
+   top a_3^(2): ok
+   sub-top a_2^(2): ok
+   top a_4^(3): ok
+   sub-top a_3^(3): ok
+   top a_5^(4): ok
+   sub-top a_4^(4): ok
+   top a_6^(5): ok
+   sub-top a_5^(5): ok
+   top a_7^(6): ok
+   sub-top a_6^(6): ok
+   top a_8^(7): ok
+   sub-top a_7^(7): ok
+   top a_9^(8): ok
+   sub-top a_8^(8): ok
+   C_1 = (c^2/1) eps_1(sigma): ok
+   C_2 = (c^2/2) eps_2(sigma): ok
+   C_3 = (c^2/3) eps_3(sigma): ok
+   C_4 = (c^2/4) eps_4(sigma): ok
+   C_5 = (c^2/5) eps_5(sigma): ok
+   C_6 = (c^2/6) eps_6(sigma): ok
+   C_7 = (c^2/7) eps_7(sigma): ok
+   C_8 = (c^2/8) eps_8(sigma): ok
+   C_9 = (c^2/9) eps_9(sigma): ok
+   G_(2) has no t^0: ok
+   [t^D] G_(2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2) = 0 (sub-top cancellation): ok
+   G_(2 2) has no t^0: ok
+   G_(2 2) has no t^1: ok
+   [t^D] G_(2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2) has no t^0: ok
+   G_(2 2 2) has no t^1: ok
+   G_(2 2 2) has no t^2: ok
+   [t^D] G_(2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2) has no t^0: ok
+   G_(2 2 2 2) has no t^1: ok
+   G_(2 2 2 2) has no t^2: ok
+   G_(2 2 2 2) has no t^3: ok
+   [t^D] G_(2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2) has no t^4: ok
+   [t^D] G_(2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2) has no t^5: ok
+   [t^D] G_(2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2 2) has no t^5: ok
+   G_(2 2 2 2 2 2 2) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 2 3) has no t^5: ok
+   G_(2 2 2 2 2 3) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 3) has no t^5: ok
+   [t^D] G_(2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 4) has no t^0: ok
+   G_(2 2 2 2 4) has no t^1: ok
+   G_(2 2 2 2 4) has no t^2: ok
+   G_(2 2 2 2 4) has no t^3: ok
+   G_(2 2 2 2 4) has no t^4: ok
+   G_(2 2 2 2 4) has no t^5: ok
+   G_(2 2 2 2 4) has no t^6: ok
+   [t^D] G_(2 2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3) has no t^0: ok
+   G_(2 2 2 3) has no t^1: ok
+   G_(2 2 2 3) has no t^2: ok
+   G_(2 2 2 3) has no t^3: ok
+   G_(2 2 2 3) has no t^4: ok
+   [t^D] G_(2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3 3) has no t^0: ok
+   G_(2 2 2 3 3) has no t^1: ok
+   G_(2 2 2 3 3) has no t^2: ok
+   G_(2 2 2 3 3) has no t^3: ok
+   G_(2 2 2 3 3) has no t^4: ok
+   G_(2 2 2 3 3) has no t^5: ok
+   G_(2 2 2 3 3) has no t^6: ok
+   [t^D] G_(2 2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 4) has no t^0: ok
+   G_(2 2 2 4) has no t^1: ok
+   G_(2 2 2 4) has no t^2: ok
+   G_(2 2 2 4) has no t^3: ok
+   G_(2 2 2 4) has no t^4: ok
+   G_(2 2 2 4) has no t^5: ok
+   [t^D] G_(2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 5) has no t^0: ok
+   G_(2 2 2 5) has no t^1: ok
+   G_(2 2 2 5) has no t^2: ok
+   G_(2 2 2 5) has no t^3: ok
+   G_(2 2 2 5) has no t^4: ok
+   G_(2 2 2 5) has no t^5: ok
+   G_(2 2 2 5) has no t^6: ok
+   [t^D] G_(2 2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 3) has no t^0: ok
+   G_(2 2 3) has no t^1: ok
+   G_(2 2 3) has no t^2: ok
+   G_(2 2 3) has no t^3: ok
+   [t^D] G_(2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 3) has no t^0: ok
+   G_(2 2 3 3) has no t^1: ok
+   G_(2 2 3 3) has no t^2: ok
+   G_(2 2 3 3) has no t^3: ok
+   G_(2 2 3 3) has no t^4: ok
+   G_(2 2 3 3) has no t^5: ok
+   [t^D] G_(2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 4) has no t^0: ok
+   G_(2 2 3 4) has no t^1: ok
+   G_(2 2 3 4) has no t^2: ok
+   G_(2 2 3 4) has no t^3: ok
+   G_(2 2 3 4) has no t^4: ok
+   G_(2 2 3 4) has no t^5: ok
+   G_(2 2 3 4) has no t^6: ok
+   [t^D] G_(2 2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 2 4) has no t^0: ok
+   G_(2 2 4) has no t^1: ok
+   G_(2 2 4) has no t^2: ok
+   G_(2 2 4) has no t^3: ok
+   G_(2 2 4) has no t^4: ok
+   [t^D] G_(2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 5) has no t^0: ok
+   G_(2 2 5) has no t^1: ok
+   G_(2 2 5) has no t^2: ok
+   G_(2 2 5) has no t^3: ok
+   G_(2 2 5) has no t^4: ok
+   G_(2 2 5) has no t^5: ok
+   [t^D] G_(2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 6) has no t^0: ok
+   G_(2 2 6) has no t^1: ok
+   G_(2 2 6) has no t^2: ok
+   G_(2 2 6) has no t^3: ok
+   G_(2 2 6) has no t^4: ok
+   G_(2 2 6) has no t^5: ok
+   G_(2 2 6) has no t^6: ok
+   [t^D] G_(2 2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 6) = 0 (sub-top cancellation): ok
+   G_(2 3) has no t^0: ok
+   G_(2 3) has no t^1: ok
+   G_(2 3) has no t^2: ok
+   [t^D] G_(2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3) has no t^0: ok
+   G_(2 3 3) has no t^1: ok
+   G_(2 3 3) has no t^2: ok
+   G_(2 3 3) has no t^3: ok
+   G_(2 3 3) has no t^4: ok
+   [t^D] G_(2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3 3) has no t^0: ok
+   G_(2 3 3 3) has no t^1: ok
+   G_(2 3 3 3) has no t^2: ok
+   G_(2 3 3 3) has no t^3: ok
+   G_(2 3 3 3) has no t^4: ok
+   G_(2 3 3 3) has no t^5: ok
+   G_(2 3 3 3) has no t^6: ok
+   [t^D] G_(2 3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 4) has no t^0: ok
+   G_(2 3 4) has no t^1: ok
+   G_(2 3 4) has no t^2: ok
+   G_(2 3 4) has no t^3: ok
+   G_(2 3 4) has no t^4: ok
+   G_(2 3 4) has no t^5: ok
+   [t^D] G_(2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 3 5) has no t^0: ok
+   G_(2 3 5) has no t^1: ok
+   G_(2 3 5) has no t^2: ok
+   G_(2 3 5) has no t^3: ok
+   G_(2 3 5) has no t^4: ok
+   G_(2 3 5) has no t^5: ok
+   G_(2 3 5) has no t^6: ok
+   [t^D] G_(2 3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 5) = 0 (sub-top cancellation): ok
+   G_(2 4) has no t^0: ok
+   G_(2 4) has no t^1: ok
+   G_(2 4) has no t^2: ok
+   G_(2 4) has no t^3: ok
+   [t^D] G_(2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4) = 0 (sub-top cancellation): ok
+   G_(2 4 4) has no t^0: ok
+   G_(2 4 4) has no t^1: ok
+   G_(2 4 4) has no t^2: ok
+   G_(2 4 4) has no t^3: ok
+   G_(2 4 4) has no t^4: ok
+   G_(2 4 4) has no t^5: ok
+   G_(2 4 4) has no t^6: ok
+   [t^D] G_(2 4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4 4) = 0 (sub-top cancellation): ok
+   G_(2 5) has no t^0: ok
+   G_(2 5) has no t^1: ok
+   G_(2 5) has no t^2: ok
+   G_(2 5) has no t^3: ok
+   G_(2 5) has no t^4: ok
+   [t^D] G_(2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 5) = 0 (sub-top cancellation): ok
+   G_(2 6) has no t^0: ok
+   G_(2 6) has no t^1: ok
+   G_(2 6) has no t^2: ok
+   G_(2 6) has no t^3: ok
+   G_(2 6) has no t^4: ok
+   G_(2 6) has no t^5: ok
+   [t^D] G_(2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 6) = 0 (sub-top cancellation): ok
+   G_(2 7) has no t^0: ok
+   G_(2 7) has no t^1: ok
+   G_(2 7) has no t^2: ok
+   G_(2 7) has no t^3: ok
+   G_(2 7) has no t^4: ok
+   G_(2 7) has no t^5: ok
+   G_(2 7) has no t^6: ok
+   [t^D] G_(2 7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 7) = 0 (sub-top cancellation): ok
+   G_(3) has no t^0: ok
+   G_(3) has no t^1: ok
+   [t^D] G_(3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3) = 0 (sub-top cancellation): ok
+   G_(3 3) has no t^0: ok
+   G_(3 3) has no t^1: ok
+   G_(3 3) has no t^2: ok
+   G_(3 3) has no t^3: ok
+   [t^D] G_(3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 3) has no t^0: ok
+   G_(3 3 3) has no t^1: ok
+   G_(3 3 3) has no t^2: ok
+   G_(3 3 3) has no t^3: ok
+   G_(3 3 3) has no t^4: ok
+   G_(3 3 3) has no t^5: ok
+   [t^D] G_(3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 4) has no t^0: ok
+   G_(3 3 4) has no t^1: ok
+   G_(3 3 4) has no t^2: ok
+   G_(3 3 4) has no t^3: ok
+   G_(3 3 4) has no t^4: ok
+   G_(3 3 4) has no t^5: ok
+   G_(3 3 4) has no t^6: ok
+   [t^D] G_(3 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 4) = 0 (sub-top cancellation): ok
+   G_(3 4) has no t^0: ok
+   G_(3 4) has no t^1: ok
+   G_(3 4) has no t^2: ok
+   G_(3 4) has no t^3: ok
+   G_(3 4) has no t^4: ok
+   [t^D] G_(3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 4) = 0 (sub-top cancellation): ok
+   G_(3 5) has no t^0: ok
+   G_(3 5) has no t^1: ok
+   G_(3 5) has no t^2: ok
+   G_(3 5) has no t^3: ok
+   G_(3 5) has no t^4: ok
+   G_(3 5) has no t^5: ok
+   [t^D] G_(3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 5) = 0 (sub-top cancellation): ok
+   G_(3 6) has no t^0: ok
+   G_(3 6) has no t^1: ok
+   G_(3 6) has no t^2: ok
+   G_(3 6) has no t^3: ok
+   G_(3 6) has no t^4: ok
+   G_(3 6) has no t^5: ok
+   G_(3 6) has no t^6: ok
+   [t^D] G_(3 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 6) = 0 (sub-top cancellation): ok
+   G_(4) has no t^0: ok
+   G_(4) has no t^1: ok
+   G_(4) has no t^2: ok
+   [t^D] G_(4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4) = 0 (sub-top cancellation): ok
+   G_(4 4) has no t^0: ok
+   G_(4 4) has no t^1: ok
+   G_(4 4) has no t^2: ok
+   G_(4 4) has no t^3: ok
+   G_(4 4) has no t^4: ok
+   G_(4 4) has no t^5: ok
+   [t^D] G_(4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 4) = 0 (sub-top cancellation): ok
+   G_(4 5) has no t^0: ok
+   G_(4 5) has no t^1: ok
+   G_(4 5) has no t^2: ok
+   G_(4 5) has no t^3: ok
+   G_(4 5) has no t^4: ok
+   G_(4 5) has no t^5: ok
+   G_(4 5) has no t^6: ok
+   [t^D] G_(4 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 5) = 0 (sub-top cancellation): ok
+   G_(5) has no t^0: ok
+   G_(5) has no t^1: ok
+   G_(5) has no t^2: ok
+   G_(5) has no t^3: ok
+   [t^D] G_(5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(5) = 0 (sub-top cancellation): ok
+   G_(6) has no t^0: ok
+   G_(6) has no t^1: ok
+   G_(6) has no t^2: ok
+   G_(6) has no t^3: ok
+   G_(6) has no t^4: ok
+   [t^D] G_(6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(6) = 0 (sub-top cancellation): ok
+   G_(7) has no t^0: ok
+   G_(7) has no t^1: ok
+   G_(7) has no t^2: ok
+   G_(7) has no t^3: ok
+   G_(7) has no t^4: ok
+   G_(7) has no t^5: ok
+   [t^D] G_(7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(7) = 0 (sub-top cancellation): ok
+   G_(8) has no t^0: ok
+   G_(8) has no t^1: ok
+   G_(8) has no t^2: ok
+   G_(8) has no t^3: ok
+   G_(8) has no t^4: ok
+   G_(8) has no t^5: ok
+   G_(8) has no t^6: ok
+   [t^D] G_(8) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(8) = 0 (sub-top cancellation): ok
+   Lemma 5.2: 44 irreducible R with D <= 7: leading ok 44, sub-top cancels 44; deficit-2 coefficient non-zero in 25 of 29
+x = 7/4  (c = 11/4, Lemma-A tau = -7/11, sigma = -28/121)
+   sum rule t^0: ok
+   Sum j A_j = -c^2 rho, t^0: ok
+   sum rule t^1: ok
+   Sum j A_j = -c^2 rho, t^1: ok
+   sum rule t^2: ok
+   Sum j A_j = -c^2 rho, t^2: ok
+   sum rule t^3: ok
+   Sum j A_j = -c^2 rho, t^3: ok
+   sum rule t^4: ok
+   Sum j A_j = -c^2 rho, t^4: ok
+   sum rule t^5: ok
+   Sum j A_j = -c^2 rho, t^5: ok
+   sum rule t^6: ok
+   Sum j A_j = -c^2 rho, t^6: ok
+   sum rule t^7: ok
+   Sum j A_j = -c^2 rho, t^7: ok
+   sum rule t^8: ok
+   Sum j A_j = -c^2 rho, t^8: ok
+   rho t^0 vs kt5 data: ok
+   rho t^1 vs kt5 data: ok
+   rho t^2 vs kt5 data: ok
+   rho t^3 vs kt5 data: ok
+   rho t^4 vs kt5 data: ok
+   rho t^5 vs kt5 data: ok
+   lam_0 coefficient zero at t^1 (data): ok
+   a_1^(1) closed form vs kt5 data: ok
+   a_2^(1) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^2 (data): ok
+   a_1^(2) closed form vs kt5 data: ok
+   a_2^(2) closed form vs kt5 data: ok
+   a_3^(2) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^3 (data): ok
+   a_1^(3) closed form vs kt5 data: ok
+   a_2^(3) closed form vs kt5 data: ok
+   a_3^(3) closed form vs kt5 data: ok
+   a_4^(3) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^4 (data): ok
+   a_1^(4) closed form vs kt5 data: ok
+   a_2^(4) closed form vs kt5 data: ok
+   a_3^(4) closed form vs kt5 data: ok
+   a_4^(4) closed form vs kt5 data: ok
+   a_5^(4) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^5 (data): ok
+   a_1^(5) closed form vs kt5 data: ok
+   a_2^(5) closed form vs kt5 data: ok
+   a_3^(5) closed form vs kt5 data: ok
+   a_4^(5) closed form vs kt5 data: ok
+   a_5^(5) closed form vs kt5 data: ok
+   a_6^(5) closed form vs kt5 data: ok
+   top a_2^(1): ok
+   sub-top a_1^(1): ok
+   top a_3^(2): ok
+   sub-top a_2^(2): ok
+   top a_4^(3): ok
+   sub-top a_3^(3): ok
+   top a_5^(4): ok
+   sub-top a_4^(4): ok
+   top a_6^(5): ok
+   sub-top a_5^(5): ok
+   top a_7^(6): ok
+   sub-top a_6^(6): ok
+   top a_8^(7): ok
+   sub-top a_7^(7): ok
+   top a_9^(8): ok
+   sub-top a_8^(8): ok
+   C_1 = (c^2/1) eps_1(sigma): ok
+   C_2 = (c^2/2) eps_2(sigma): ok
+   C_3 = (c^2/3) eps_3(sigma): ok
+   C_4 = (c^2/4) eps_4(sigma): ok
+   C_5 = (c^2/5) eps_5(sigma): ok
+   C_6 = (c^2/6) eps_6(sigma): ok
+   C_7 = (c^2/7) eps_7(sigma): ok
+   C_8 = (c^2/8) eps_8(sigma): ok
+   C_9 = (c^2/9) eps_9(sigma): ok
+   G_(2) has no t^0: ok
+   [t^D] G_(2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2) = 0 (sub-top cancellation): ok
+   G_(2 2) has no t^0: ok
+   G_(2 2) has no t^1: ok
+   [t^D] G_(2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2) has no t^0: ok
+   G_(2 2 2) has no t^1: ok
+   G_(2 2 2) has no t^2: ok
+   [t^D] G_(2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2) has no t^0: ok
+   G_(2 2 2 2) has no t^1: ok
+   G_(2 2 2 2) has no t^2: ok
+   G_(2 2 2 2) has no t^3: ok
+   [t^D] G_(2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2) has no t^4: ok
+   [t^D] G_(2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2) has no t^5: ok
+   [t^D] G_(2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2 2) has no t^5: ok
+   G_(2 2 2 2 2 2 2) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 2 3) has no t^5: ok
+   G_(2 2 2 2 2 3) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 3) has no t^5: ok
+   [t^D] G_(2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 4) has no t^0: ok
+   G_(2 2 2 2 4) has no t^1: ok
+   G_(2 2 2 2 4) has no t^2: ok
+   G_(2 2 2 2 4) has no t^3: ok
+   G_(2 2 2 2 4) has no t^4: ok
+   G_(2 2 2 2 4) has no t^5: ok
+   G_(2 2 2 2 4) has no t^6: ok
+   [t^D] G_(2 2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3) has no t^0: ok
+   G_(2 2 2 3) has no t^1: ok
+   G_(2 2 2 3) has no t^2: ok
+   G_(2 2 2 3) has no t^3: ok
+   G_(2 2 2 3) has no t^4: ok
+   [t^D] G_(2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3 3) has no t^0: ok
+   G_(2 2 2 3 3) has no t^1: ok
+   G_(2 2 2 3 3) has no t^2: ok
+   G_(2 2 2 3 3) has no t^3: ok
+   G_(2 2 2 3 3) has no t^4: ok
+   G_(2 2 2 3 3) has no t^5: ok
+   G_(2 2 2 3 3) has no t^6: ok
+   [t^D] G_(2 2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 4) has no t^0: ok
+   G_(2 2 2 4) has no t^1: ok
+   G_(2 2 2 4) has no t^2: ok
+   G_(2 2 2 4) has no t^3: ok
+   G_(2 2 2 4) has no t^4: ok
+   G_(2 2 2 4) has no t^5: ok
+   [t^D] G_(2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 5) has no t^0: ok
+   G_(2 2 2 5) has no t^1: ok
+   G_(2 2 2 5) has no t^2: ok
+   G_(2 2 2 5) has no t^3: ok
+   G_(2 2 2 5) has no t^4: ok
+   G_(2 2 2 5) has no t^5: ok
+   G_(2 2 2 5) has no t^6: ok
+   [t^D] G_(2 2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 3) has no t^0: ok
+   G_(2 2 3) has no t^1: ok
+   G_(2 2 3) has no t^2: ok
+   G_(2 2 3) has no t^3: ok
+   [t^D] G_(2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 3) has no t^0: ok
+   G_(2 2 3 3) has no t^1: ok
+   G_(2 2 3 3) has no t^2: ok
+   G_(2 2 3 3) has no t^3: ok
+   G_(2 2 3 3) has no t^4: ok
+   G_(2 2 3 3) has no t^5: ok
+   [t^D] G_(2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 4) has no t^0: ok
+   G_(2 2 3 4) has no t^1: ok
+   G_(2 2 3 4) has no t^2: ok
+   G_(2 2 3 4) has no t^3: ok
+   G_(2 2 3 4) has no t^4: ok
+   G_(2 2 3 4) has no t^5: ok
+   G_(2 2 3 4) has no t^6: ok
+   [t^D] G_(2 2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 2 4) has no t^0: ok
+   G_(2 2 4) has no t^1: ok
+   G_(2 2 4) has no t^2: ok
+   G_(2 2 4) has no t^3: ok
+   G_(2 2 4) has no t^4: ok
+   [t^D] G_(2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 5) has no t^0: ok
+   G_(2 2 5) has no t^1: ok
+   G_(2 2 5) has no t^2: ok
+   G_(2 2 5) has no t^3: ok
+   G_(2 2 5) has no t^4: ok
+   G_(2 2 5) has no t^5: ok
+   [t^D] G_(2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 6) has no t^0: ok
+   G_(2 2 6) has no t^1: ok
+   G_(2 2 6) has no t^2: ok
+   G_(2 2 6) has no t^3: ok
+   G_(2 2 6) has no t^4: ok
+   G_(2 2 6) has no t^5: ok
+   G_(2 2 6) has no t^6: ok
+   [t^D] G_(2 2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 6) = 0 (sub-top cancellation): ok
+   G_(2 3) has no t^0: ok
+   G_(2 3) has no t^1: ok
+   G_(2 3) has no t^2: ok
+   [t^D] G_(2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3) has no t^0: ok
+   G_(2 3 3) has no t^1: ok
+   G_(2 3 3) has no t^2: ok
+   G_(2 3 3) has no t^3: ok
+   G_(2 3 3) has no t^4: ok
+   [t^D] G_(2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3 3) has no t^0: ok
+   G_(2 3 3 3) has no t^1: ok
+   G_(2 3 3 3) has no t^2: ok
+   G_(2 3 3 3) has no t^3: ok
+   G_(2 3 3 3) has no t^4: ok
+   G_(2 3 3 3) has no t^5: ok
+   G_(2 3 3 3) has no t^6: ok
+   [t^D] G_(2 3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 4) has no t^0: ok
+   G_(2 3 4) has no t^1: ok
+   G_(2 3 4) has no t^2: ok
+   G_(2 3 4) has no t^3: ok
+   G_(2 3 4) has no t^4: ok
+   G_(2 3 4) has no t^5: ok
+   [t^D] G_(2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 3 5) has no t^0: ok
+   G_(2 3 5) has no t^1: ok
+   G_(2 3 5) has no t^2: ok
+   G_(2 3 5) has no t^3: ok
+   G_(2 3 5) has no t^4: ok
+   G_(2 3 5) has no t^5: ok
+   G_(2 3 5) has no t^6: ok
+   [t^D] G_(2 3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 5) = 0 (sub-top cancellation): ok
+   G_(2 4) has no t^0: ok
+   G_(2 4) has no t^1: ok
+   G_(2 4) has no t^2: ok
+   G_(2 4) has no t^3: ok
+   [t^D] G_(2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4) = 0 (sub-top cancellation): ok
+   G_(2 4 4) has no t^0: ok
+   G_(2 4 4) has no t^1: ok
+   G_(2 4 4) has no t^2: ok
+   G_(2 4 4) has no t^3: ok
+   G_(2 4 4) has no t^4: ok
+   G_(2 4 4) has no t^5: ok
+   G_(2 4 4) has no t^6: ok
+   [t^D] G_(2 4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4 4) = 0 (sub-top cancellation): ok
+   G_(2 5) has no t^0: ok
+   G_(2 5) has no t^1: ok
+   G_(2 5) has no t^2: ok
+   G_(2 5) has no t^3: ok
+   G_(2 5) has no t^4: ok
+   [t^D] G_(2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 5) = 0 (sub-top cancellation): ok
+   G_(2 6) has no t^0: ok
+   G_(2 6) has no t^1: ok
+   G_(2 6) has no t^2: ok
+   G_(2 6) has no t^3: ok
+   G_(2 6) has no t^4: ok
+   G_(2 6) has no t^5: ok
+   [t^D] G_(2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 6) = 0 (sub-top cancellation): ok
+   G_(2 7) has no t^0: ok
+   G_(2 7) has no t^1: ok
+   G_(2 7) has no t^2: ok
+   G_(2 7) has no t^3: ok
+   G_(2 7) has no t^4: ok
+   G_(2 7) has no t^5: ok
+   G_(2 7) has no t^6: ok
+   [t^D] G_(2 7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 7) = 0 (sub-top cancellation): ok
+   G_(3) has no t^0: ok
+   G_(3) has no t^1: ok
+   [t^D] G_(3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3) = 0 (sub-top cancellation): ok
+   G_(3 3) has no t^0: ok
+   G_(3 3) has no t^1: ok
+   G_(3 3) has no t^2: ok
+   G_(3 3) has no t^3: ok
+   [t^D] G_(3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 3) has no t^0: ok
+   G_(3 3 3) has no t^1: ok
+   G_(3 3 3) has no t^2: ok
+   G_(3 3 3) has no t^3: ok
+   G_(3 3 3) has no t^4: ok
+   G_(3 3 3) has no t^5: ok
+   [t^D] G_(3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 4) has no t^0: ok
+   G_(3 3 4) has no t^1: ok
+   G_(3 3 4) has no t^2: ok
+   G_(3 3 4) has no t^3: ok
+   G_(3 3 4) has no t^4: ok
+   G_(3 3 4) has no t^5: ok
+   G_(3 3 4) has no t^6: ok
+   [t^D] G_(3 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 4) = 0 (sub-top cancellation): ok
+   G_(3 4) has no t^0: ok
+   G_(3 4) has no t^1: ok
+   G_(3 4) has no t^2: ok
+   G_(3 4) has no t^3: ok
+   G_(3 4) has no t^4: ok
+   [t^D] G_(3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 4) = 0 (sub-top cancellation): ok
+   G_(3 5) has no t^0: ok
+   G_(3 5) has no t^1: ok
+   G_(3 5) has no t^2: ok
+   G_(3 5) has no t^3: ok
+   G_(3 5) has no t^4: ok
+   G_(3 5) has no t^5: ok
+   [t^D] G_(3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 5) = 0 (sub-top cancellation): ok
+   G_(3 6) has no t^0: ok
+   G_(3 6) has no t^1: ok
+   G_(3 6) has no t^2: ok
+   G_(3 6) has no t^3: ok
+   G_(3 6) has no t^4: ok
+   G_(3 6) has no t^5: ok
+   G_(3 6) has no t^6: ok
+   [t^D] G_(3 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 6) = 0 (sub-top cancellation): ok
+   G_(4) has no t^0: ok
+   G_(4) has no t^1: ok
+   G_(4) has no t^2: ok
+   [t^D] G_(4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4) = 0 (sub-top cancellation): ok
+   G_(4 4) has no t^0: ok
+   G_(4 4) has no t^1: ok
+   G_(4 4) has no t^2: ok
+   G_(4 4) has no t^3: ok
+   G_(4 4) has no t^4: ok
+   G_(4 4) has no t^5: ok
+   [t^D] G_(4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 4) = 0 (sub-top cancellation): ok
+   G_(4 5) has no t^0: ok
+   G_(4 5) has no t^1: ok
+   G_(4 5) has no t^2: ok
+   G_(4 5) has no t^3: ok
+   G_(4 5) has no t^4: ok
+   G_(4 5) has no t^5: ok
+   G_(4 5) has no t^6: ok
+   [t^D] G_(4 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 5) = 0 (sub-top cancellation): ok
+   G_(5) has no t^0: ok
+   G_(5) has no t^1: ok
+   G_(5) has no t^2: ok
+   G_(5) has no t^3: ok
+   [t^D] G_(5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(5) = 0 (sub-top cancellation): ok
+   G_(6) has no t^0: ok
+   G_(6) has no t^1: ok
+   G_(6) has no t^2: ok
+   G_(6) has no t^3: ok
+   G_(6) has no t^4: ok
+   [t^D] G_(6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(6) = 0 (sub-top cancellation): ok
+   G_(7) has no t^0: ok
+   G_(7) has no t^1: ok
+   G_(7) has no t^2: ok
+   G_(7) has no t^3: ok
+   G_(7) has no t^4: ok
+   G_(7) has no t^5: ok
+   [t^D] G_(7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(7) = 0 (sub-top cancellation): ok
+   G_(8) has no t^0: ok
+   G_(8) has no t^1: ok
+   G_(8) has no t^2: ok
+   G_(8) has no t^3: ok
+   G_(8) has no t^4: ok
+   G_(8) has no t^5: ok
+   G_(8) has no t^6: ok
+   [t^D] G_(8) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(8) = 0 (sub-top cancellation): ok
+   Lemma 5.2: 44 irreducible R with D <= 7: leading ok 44, sub-top cancels 44; deficit-2 coefficient non-zero in 29 of 29
+x = -2/9  (c = 7/9, Lemma-A tau = 2/7, sigma = 18/49)
+   sum rule t^0: ok
+   Sum j A_j = -c^2 rho, t^0: ok
+   sum rule t^1: ok
+   Sum j A_j = -c^2 rho, t^1: ok
+   sum rule t^2: ok
+   Sum j A_j = -c^2 rho, t^2: ok
+   sum rule t^3: ok
+   Sum j A_j = -c^2 rho, t^3: ok
+   sum rule t^4: ok
+   Sum j A_j = -c^2 rho, t^4: ok
+   sum rule t^5: ok
+   Sum j A_j = -c^2 rho, t^5: ok
+   sum rule t^6: ok
+   Sum j A_j = -c^2 rho, t^6: ok
+   sum rule t^7: ok
+   Sum j A_j = -c^2 rho, t^7: ok
+   sum rule t^8: ok
+   Sum j A_j = -c^2 rho, t^8: ok
+   rho t^0 vs kt5 data: ok
+   rho t^1 vs kt5 data: ok
+   rho t^2 vs kt5 data: ok
+   rho t^3 vs kt5 data: ok
+   rho t^4 vs kt5 data: ok
+   rho t^5 vs kt5 data: ok
+   lam_0 coefficient zero at t^1 (data): ok
+   a_1^(1) closed form vs kt5 data: ok
+   a_2^(1) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^2 (data): ok
+   a_1^(2) closed form vs kt5 data: ok
+   a_2^(2) closed form vs kt5 data: ok
+   a_3^(2) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^3 (data): ok
+   a_1^(3) closed form vs kt5 data: ok
+   a_2^(3) closed form vs kt5 data: ok
+   a_3^(3) closed form vs kt5 data: ok
+   a_4^(3) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^4 (data): ok
+   a_1^(4) closed form vs kt5 data: ok
+   a_2^(4) closed form vs kt5 data: ok
+   a_3^(4) closed form vs kt5 data: ok
+   a_4^(4) closed form vs kt5 data: ok
+   a_5^(4) closed form vs kt5 data: ok
+   lam_0 coefficient zero at t^5 (data): ok
+   a_1^(5) closed form vs kt5 data: ok
+   a_2^(5) closed form vs kt5 data: ok
+   a_3^(5) closed form vs kt5 data: ok
+   a_4^(5) closed form vs kt5 data: ok
+   a_5^(5) closed form vs kt5 data: ok
+   a_6^(5) closed form vs kt5 data: ok
+   top a_2^(1): ok
+   sub-top a_1^(1): ok
+   top a_3^(2): ok
+   sub-top a_2^(2): ok
+   top a_4^(3): ok
+   sub-top a_3^(3): ok
+   top a_5^(4): ok
+   sub-top a_4^(4): ok
+   top a_6^(5): ok
+   sub-top a_5^(5): ok
+   top a_7^(6): ok
+   sub-top a_6^(6): ok
+   top a_8^(7): ok
+   sub-top a_7^(7): ok
+   top a_9^(8): ok
+   sub-top a_8^(8): ok
+   C_1 = (c^2/1) eps_1(sigma): ok
+   C_2 = (c^2/2) eps_2(sigma): ok
+   C_3 = (c^2/3) eps_3(sigma): ok
+   C_4 = (c^2/4) eps_4(sigma): ok
+   C_5 = (c^2/5) eps_5(sigma): ok
+   C_6 = (c^2/6) eps_6(sigma): ok
+   C_7 = (c^2/7) eps_7(sigma): ok
+   C_8 = (c^2/8) eps_8(sigma): ok
+   C_9 = (c^2/9) eps_9(sigma): ok
+   G_(2) has no t^0: ok
+   [t^D] G_(2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2) = 0 (sub-top cancellation): ok
+   G_(2 2) has no t^0: ok
+   G_(2 2) has no t^1: ok
+   [t^D] G_(2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2) has no t^0: ok
+   G_(2 2 2) has no t^1: ok
+   G_(2 2 2) has no t^2: ok
+   [t^D] G_(2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2) has no t^0: ok
+   G_(2 2 2 2) has no t^1: ok
+   G_(2 2 2 2) has no t^2: ok
+   G_(2 2 2 2) has no t^3: ok
+   [t^D] G_(2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2) has no t^4: ok
+   [t^D] G_(2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2) has no t^5: ok
+   [t^D] G_(2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 2 2) has no t^0: ok
+   G_(2 2 2 2 2 2 2) has no t^1: ok
+   G_(2 2 2 2 2 2 2) has no t^2: ok
+   G_(2 2 2 2 2 2 2) has no t^3: ok
+   G_(2 2 2 2 2 2 2) has no t^4: ok
+   G_(2 2 2 2 2 2 2) has no t^5: ok
+   G_(2 2 2 2 2 2 2) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 2 2) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 2 2) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 2 3) has no t^5: ok
+   G_(2 2 2 2 2 3) has no t^6: ok
+   [t^D] G_(2 2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 3) has no t^0: ok
+   G_(2 2 2 2 3) has no t^1: ok
+   G_(2 2 2 2 3) has no t^2: ok
+   G_(2 2 2 2 3) has no t^3: ok
+   G_(2 2 2 2 3) has no t^4: ok
+   G_(2 2 2 2 3) has no t^5: ok
+   [t^D] G_(2 2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 2 4) has no t^0: ok
+   G_(2 2 2 2 4) has no t^1: ok
+   G_(2 2 2 2 4) has no t^2: ok
+   G_(2 2 2 2 4) has no t^3: ok
+   G_(2 2 2 2 4) has no t^4: ok
+   G_(2 2 2 2 4) has no t^5: ok
+   G_(2 2 2 2 4) has no t^6: ok
+   [t^D] G_(2 2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3) has no t^0: ok
+   G_(2 2 2 3) has no t^1: ok
+   G_(2 2 2 3) has no t^2: ok
+   G_(2 2 2 3) has no t^3: ok
+   G_(2 2 2 3) has no t^4: ok
+   [t^D] G_(2 2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 3 3) has no t^0: ok
+   G_(2 2 2 3 3) has no t^1: ok
+   G_(2 2 2 3 3) has no t^2: ok
+   G_(2 2 2 3 3) has no t^3: ok
+   G_(2 2 2 3 3) has no t^4: ok
+   G_(2 2 2 3 3) has no t^5: ok
+   G_(2 2 2 3 3) has no t^6: ok
+   [t^D] G_(2 2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 2 4) has no t^0: ok
+   G_(2 2 2 4) has no t^1: ok
+   G_(2 2 2 4) has no t^2: ok
+   G_(2 2 2 4) has no t^3: ok
+   G_(2 2 2 4) has no t^4: ok
+   G_(2 2 2 4) has no t^5: ok
+   [t^D] G_(2 2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 2 5) has no t^0: ok
+   G_(2 2 2 5) has no t^1: ok
+   G_(2 2 2 5) has no t^2: ok
+   G_(2 2 2 5) has no t^3: ok
+   G_(2 2 2 5) has no t^4: ok
+   G_(2 2 2 5) has no t^5: ok
+   G_(2 2 2 5) has no t^6: ok
+   [t^D] G_(2 2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 3) has no t^0: ok
+   G_(2 2 3) has no t^1: ok
+   G_(2 2 3) has no t^2: ok
+   G_(2 2 3) has no t^3: ok
+   [t^D] G_(2 2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 3) has no t^0: ok
+   G_(2 2 3 3) has no t^1: ok
+   G_(2 2 3 3) has no t^2: ok
+   G_(2 2 3 3) has no t^3: ok
+   G_(2 2 3 3) has no t^4: ok
+   G_(2 2 3 3) has no t^5: ok
+   [t^D] G_(2 2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 2 3 4) has no t^0: ok
+   G_(2 2 3 4) has no t^1: ok
+   G_(2 2 3 4) has no t^2: ok
+   G_(2 2 3 4) has no t^3: ok
+   G_(2 2 3 4) has no t^4: ok
+   G_(2 2 3 4) has no t^5: ok
+   G_(2 2 3 4) has no t^6: ok
+   [t^D] G_(2 2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 2 4) has no t^0: ok
+   G_(2 2 4) has no t^1: ok
+   G_(2 2 4) has no t^2: ok
+   G_(2 2 4) has no t^3: ok
+   G_(2 2 4) has no t^4: ok
+   [t^D] G_(2 2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 4) = 0 (sub-top cancellation): ok
+   G_(2 2 5) has no t^0: ok
+   G_(2 2 5) has no t^1: ok
+   G_(2 2 5) has no t^2: ok
+   G_(2 2 5) has no t^3: ok
+   G_(2 2 5) has no t^4: ok
+   G_(2 2 5) has no t^5: ok
+   [t^D] G_(2 2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 5) = 0 (sub-top cancellation): ok
+   G_(2 2 6) has no t^0: ok
+   G_(2 2 6) has no t^1: ok
+   G_(2 2 6) has no t^2: ok
+   G_(2 2 6) has no t^3: ok
+   G_(2 2 6) has no t^4: ok
+   G_(2 2 6) has no t^5: ok
+   G_(2 2 6) has no t^6: ok
+   [t^D] G_(2 2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 2 6) = 0 (sub-top cancellation): ok
+   G_(2 3) has no t^0: ok
+   G_(2 3) has no t^1: ok
+   G_(2 3) has no t^2: ok
+   [t^D] G_(2 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3) has no t^0: ok
+   G_(2 3 3) has no t^1: ok
+   G_(2 3 3) has no t^2: ok
+   G_(2 3 3) has no t^3: ok
+   G_(2 3 3) has no t^4: ok
+   [t^D] G_(2 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 3 3) has no t^0: ok
+   G_(2 3 3 3) has no t^1: ok
+   G_(2 3 3 3) has no t^2: ok
+   G_(2 3 3 3) has no t^3: ok
+   G_(2 3 3 3) has no t^4: ok
+   G_(2 3 3 3) has no t^5: ok
+   G_(2 3 3 3) has no t^6: ok
+   [t^D] G_(2 3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 3 3) = 0 (sub-top cancellation): ok
+   G_(2 3 4) has no t^0: ok
+   G_(2 3 4) has no t^1: ok
+   G_(2 3 4) has no t^2: ok
+   G_(2 3 4) has no t^3: ok
+   G_(2 3 4) has no t^4: ok
+   G_(2 3 4) has no t^5: ok
+   [t^D] G_(2 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 4) = 0 (sub-top cancellation): ok
+   G_(2 3 5) has no t^0: ok
+   G_(2 3 5) has no t^1: ok
+   G_(2 3 5) has no t^2: ok
+   G_(2 3 5) has no t^3: ok
+   G_(2 3 5) has no t^4: ok
+   G_(2 3 5) has no t^5: ok
+   G_(2 3 5) has no t^6: ok
+   [t^D] G_(2 3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 3 5) = 0 (sub-top cancellation): ok
+   G_(2 4) has no t^0: ok
+   G_(2 4) has no t^1: ok
+   G_(2 4) has no t^2: ok
+   G_(2 4) has no t^3: ok
+   [t^D] G_(2 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4) = 0 (sub-top cancellation): ok
+   G_(2 4 4) has no t^0: ok
+   G_(2 4 4) has no t^1: ok
+   G_(2 4 4) has no t^2: ok
+   G_(2 4 4) has no t^3: ok
+   G_(2 4 4) has no t^4: ok
+   G_(2 4 4) has no t^5: ok
+   G_(2 4 4) has no t^6: ok
+   [t^D] G_(2 4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 4 4) = 0 (sub-top cancellation): ok
+   G_(2 5) has no t^0: ok
+   G_(2 5) has no t^1: ok
+   G_(2 5) has no t^2: ok
+   G_(2 5) has no t^3: ok
+   G_(2 5) has no t^4: ok
+   [t^D] G_(2 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 5) = 0 (sub-top cancellation): ok
+   G_(2 6) has no t^0: ok
+   G_(2 6) has no t^1: ok
+   G_(2 6) has no t^2: ok
+   G_(2 6) has no t^3: ok
+   G_(2 6) has no t^4: ok
+   G_(2 6) has no t^5: ok
+   [t^D] G_(2 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 6) = 0 (sub-top cancellation): ok
+   G_(2 7) has no t^0: ok
+   G_(2 7) has no t^1: ok
+   G_(2 7) has no t^2: ok
+   G_(2 7) has no t^3: ok
+   G_(2 7) has no t^4: ok
+   G_(2 7) has no t^5: ok
+   G_(2 7) has no t^6: ok
+   [t^D] G_(2 7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(2 7) = 0 (sub-top cancellation): ok
+   G_(3) has no t^0: ok
+   G_(3) has no t^1: ok
+   [t^D] G_(3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3) = 0 (sub-top cancellation): ok
+   G_(3 3) has no t^0: ok
+   G_(3 3) has no t^1: ok
+   G_(3 3) has no t^2: ok
+   G_(3 3) has no t^3: ok
+   [t^D] G_(3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 3) has no t^0: ok
+   G_(3 3 3) has no t^1: ok
+   G_(3 3 3) has no t^2: ok
+   G_(3 3 3) has no t^3: ok
+   G_(3 3 3) has no t^4: ok
+   G_(3 3 3) has no t^5: ok
+   [t^D] G_(3 3 3) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 3) = 0 (sub-top cancellation): ok
+   G_(3 3 4) has no t^0: ok
+   G_(3 3 4) has no t^1: ok
+   G_(3 3 4) has no t^2: ok
+   G_(3 3 4) has no t^3: ok
+   G_(3 3 4) has no t^4: ok
+   G_(3 3 4) has no t^5: ok
+   G_(3 3 4) has no t^6: ok
+   [t^D] G_(3 3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 3 4) = 0 (sub-top cancellation): ok
+   G_(3 4) has no t^0: ok
+   G_(3 4) has no t^1: ok
+   G_(3 4) has no t^2: ok
+   G_(3 4) has no t^3: ok
+   G_(3 4) has no t^4: ok
+   [t^D] G_(3 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 4) = 0 (sub-top cancellation): ok
+   G_(3 5) has no t^0: ok
+   G_(3 5) has no t^1: ok
+   G_(3 5) has no t^2: ok
+   G_(3 5) has no t^3: ok
+   G_(3 5) has no t^4: ok
+   G_(3 5) has no t^5: ok
+   [t^D] G_(3 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 5) = 0 (sub-top cancellation): ok
+   G_(3 6) has no t^0: ok
+   G_(3 6) has no t^1: ok
+   G_(3 6) has no t^2: ok
+   G_(3 6) has no t^3: ok
+   G_(3 6) has no t^4: ok
+   G_(3 6) has no t^5: ok
+   G_(3 6) has no t^6: ok
+   [t^D] G_(3 6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(3 6) = 0 (sub-top cancellation): ok
+   G_(4) has no t^0: ok
+   G_(4) has no t^1: ok
+   G_(4) has no t^2: ok
+   [t^D] G_(4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4) = 0 (sub-top cancellation): ok
+   G_(4 4) has no t^0: ok
+   G_(4 4) has no t^1: ok
+   G_(4 4) has no t^2: ok
+   G_(4 4) has no t^3: ok
+   G_(4 4) has no t^4: ok
+   G_(4 4) has no t^5: ok
+   [t^D] G_(4 4) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 4) = 0 (sub-top cancellation): ok
+   G_(4 5) has no t^0: ok
+   G_(4 5) has no t^1: ok
+   G_(4 5) has no t^2: ok
+   G_(4 5) has no t^3: ok
+   G_(4 5) has no t^4: ok
+   G_(4 5) has no t^5: ok
+   G_(4 5) has no t^6: ok
+   [t^D] G_(4 5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(4 5) = 0 (sub-top cancellation): ok
+   G_(5) has no t^0: ok
+   G_(5) has no t^1: ok
+   G_(5) has no t^2: ok
+   G_(5) has no t^3: ok
+   [t^D] G_(5) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(5) = 0 (sub-top cancellation): ok
+   G_(6) has no t^0: ok
+   G_(6) has no t^1: ok
+   G_(6) has no t^2: ok
+   G_(6) has no t^3: ok
+   G_(6) has no t^4: ok
+   [t^D] G_(6) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(6) = 0 (sub-top cancellation): ok
+   G_(7) has no t^0: ok
+   G_(7) has no t^1: ok
+   G_(7) has no t^2: ok
+   G_(7) has no t^3: ok
+   G_(7) has no t^4: ok
+   G_(7) has no t^5: ok
+   [t^D] G_(7) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(7) = 0 (sub-top cancellation): ok
+   G_(8) has no t^0: ok
+   G_(8) has no t^1: ok
+   G_(8) has no t^2: ok
+   G_(8) has no t^3: ok
+   G_(8) has no t^4: ok
+   G_(8) has no t^5: ok
+   G_(8) has no t^6: ok
+   [t^D] G_(8) = prod (-1)^j C_j/|Aut|: ok
+   [t^(D+1)] G_(8) = 0 (sub-top cancellation): ok
+   Lemma 5.2: 44 irreducible R with D <= 7: leading ok 44, sub-top cancels 44; deficit-2 coefficient non-zero in 29 of 29
+ALL OK

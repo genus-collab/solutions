@@ -1,0 +1,6 @@
+(A) genus 7 r = 1: 11 Lemma-A points (parts >= 2, D <= 2h-3), 0 violations
+(C) genus 7 r = 1: 1 control points (D = 2h-2), 1 non-zero; non-zero components: {13}:all
+(M) genus 7 r = 1: 12 lattice points with parts >= 0, 1 <= J, D <= 2h-3: 0 violations
+(H) genus 7 r = 1, D = 12: Hurwitz component zero at 0 points, non-zero at 1
+(H) genus 7 r = 1, D = 13: Hurwitz component zero at 1 points, non-zero at 0
+(H) genus 7 r = 1, D = 14: Hurwitz component zero at 0 points, non-zero at 1

@@ -1,0 +1,16 @@
+genus 2: range D <= 1, 1 multisets, 2 unknown coefficients, 1 relations; extra: none; rank 2, nullity 0
+   not forced to vanish: none
+genus 3: range D <= 3, 6 multisets, 18 unknown coefficients, 4 relations; extra: none; rank 15, nullity 3
+   not forced to vanish: (3) (2,2) (4) (3,2) (2,2,2)
+genus 4: range D <= 5, 18 multisets, 72 unknown coefficients, 12 relations; extra: none; rank 63, nullity 9
+   not forced to vanish: (3) (2,2) (4) (3,2) (2,2,2) (5) (4,2) (3,3) (3,2,2) (2,2,2,2) (4,3) (4,2,2) (3,3,2) (3,2,2,2) (2,2,2,2,2)
+genus 5: range D <= 7, 44 multisets, 220 unknown coefficients, 30 relations; extra: none; rank 196, nullity 24
+   not forced to vanish: (3) (2,2) (4) (3,2) (2,2,2) (5) (4,2) (3,3) (3,2,2) (2,2,2,2) (6) (5,2) (4,3) (4,2,2) (3,3,2) (3,2,2,2) (2,2,2,2,2) (5,3) (5,2,2) (4,4) (4,3,2) (4,2,2,2) (3,3,3) (3,3,2,2) (3,2,2,2,2) (2,2,2,2,2,2) (6,3) (6,2,2) (5,4) (5,3,2) (5,2,2,2) (4,4,2) (4,3,3) (4,3,2,2) (4,2,2,2,2) (3,3,3,2) (3,3,2,2,2) (3,2,2,2,2,2) (2,2,2,2,2,2,2)
+genus 3: range D <= 3, 6 multisets, 18 unknown coefficients, 4 relations; extra: H; rank 17, nullity 1
+   not forced to vanish: (3) (2,2)
+genus 3: range D <= 3, 6 multisets, 18 unknown coefficients, 4 relations; extra: H,L; rank 18, nullity 0
+   not forced to vanish: none
+genus 4: range D <= 5, 18 multisets, 72 unknown coefficients, 12 relations; extra: H,L; rank 71, nullity 1
+   not forced to vanish: (3) (2,2)
+genus 5: range D <= 7, 44 multisets, 220 unknown coefficients, 30 relations; extra: H,L; rank 215, nullity 5
+   not forced to vanish: (3) (2,2) (4) (3,2) (2,2,2) (3,3) (3,2,2) (2,2,2,2) (5,3) (5,2,2) (4,4) (4,3,2) (4,2,2,2) (3,3,3) (3,3,2,2) (3,2,2,2,2) (2,2,2,2,2,2)

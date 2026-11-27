@@ -1,0 +1,11 @@
+genus 1 (slice m = 1): consistent
+genus 2 (slice m = 1): consistent
+genus 3 (slice m = 1): consistent
+genus 4 (slice m = 1): consistent
+genus 5 (slice m = 1): consistent
+  C_0 [lambda^0] = (1)s^0
+  C_0 [lambda^2] = (-1/24)s^0 (-1/12)s^1
+  C_0 [lambda^4] = (7/5760)s^0 (7/1440)s^1 (1/240)s^2
+  C_0 [lambda^6] = (-31/967680)s^0 (-31/161280)s^1 (-41/120960)s^2 (-1/6048)s^3
+  C_0 [lambda^8] = (127/154828800)s^0 (127/19353600)s^1 (103/5806080)s^2 (67/3628800)s^3 (1/172800)s^4
+  C_0 [lambda^10] = (-73/3503554560)s^0 (-73/350355456)s^1 (-5851/7664025600)s^2 (-2389/1916006400)s^3 (-277/319334400)s^4 (-1/5322240)s^5

@@ -1,0 +1,21 @@
+tau=2 g=3 mu=(4,4,4): xy 12003563/34560  engine 12003563/34560  OK
+tau=2 g=3 mu=(4,4,3): xy 1036541/11520  engine 1036541/11520  OK
+tau=2 g=3 mu=(4,4,2): xy 922631/51840  engine 922631/51840  OK
+tau=2 g=3 mu=(4,4,1): xy 23861/10368  engine 23861/10368  OK
+tau=2 g=3 mu=(4,3,3): xy 28957/1728  engine 28957/1728  OK
+tau=2 g=3 mu=(4,3,2): xy 33859/20736  engine 33859/20736  OK
+tau=2 g=3 mu=(4,3,1): xy -6877/41472  engine -6877/41472  OK
+tau=2 g=3 mu=(4,2,2): xy -3031/23040  engine -3031/23040  OK
+tau=2 g=3 mu=(4,2,1): xy -11557/207360  engine -11557/207360  OK
+tau=2 g=3 mu=(4,1,1): xy 0  engine 0  OK  [range]
+tau=2 g=3 mu=(3,3,3): xy 16475/10368  engine 16475/10368  OK
+tau=2 g=3 mu=(3,3,2): xy -5143/41472  engine -5143/41472  OK
+tau=2 g=3 mu=(3,3,1): xy -16561/290304  engine -16561/290304  OK
+tau=2 g=3 mu=(3,2,2): xy -1619/41472  engine -1619/41472  OK
+tau=2 g=3 mu=(3,2,1): xy 0  engine 0  OK  [range]
+tau=2 g=3 mu=(3,1,1): xy 0  engine 0  OK  [range]
+tau=2 g=3 mu=(2,2,2): xy 0  engine 0  OK  [range]
+tau=2 g=3 mu=(2,2,1): xy 0  engine 0  OK  [range]
+tau=2 g=3 mu=(2,1,1): xy 0  engine 0  OK  [range]
+tau=2 g=3 mu=(1,1,1): xy 0  engine 0  OK  [range]
+total 20, mismatches 0, homogeneity violations 0

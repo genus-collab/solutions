@@ -1,0 +1,8 @@
+Hirota equations up to weight 8: 40 non-trivial (y-monomials)
+G=1 tau=2/7 R=(): 40 Hirota equations evaluated at the dilaton point (all genera 0..G), 0 non-zero totals
+G=1 tau=2/7 R=(2): 40 Hirota equations evaluated at the dilaton point (all genera 0..G), 0 non-zero totals
+G=1 tau=2/7 R=(3): 40 Hirota equations evaluated at the dilaton point (all genera 0..G), 0 non-zero totals
+
+real	1m4.727s
+user	1m4.264s
+sys	0m0.218s

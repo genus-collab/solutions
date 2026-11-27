@@ -1,0 +1,5 @@
+ref_xy3 tau=1 g=4 m<=6: 56 triples (40 non-zero), no symmetry check, range violations 0, engine mismatches 0
+ref_xy3 tau=2 g=5 m<=6: 56 triples (28 non-zero), no symmetry check, range violations 0, engine mismatches 0
+ref_xy3 tau=1 g=6 m<=7: 84 triples (38 non-zero), no symmetry check, range violations 0, engine mismatches 0
+ref_xy3 tau=1 g=7 m<=8: 120 triples (50 non-zero), no symmetry check, range violations 0, engine mismatches 0
+done

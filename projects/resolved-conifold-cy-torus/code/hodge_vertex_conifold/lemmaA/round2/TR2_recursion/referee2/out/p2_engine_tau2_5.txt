@@ -1,0 +1,11 @@
+tau=2/5 h=4 r=4: 53 values of mu (|mu| <= 12), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 5s
+tau=2/5 h=4 r=5: 60 values of mu (|mu| <= 13), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 37s
+tau=2/5 h=5 r=2: 36 values of mu (|mu| <= 12), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 1s
+tau=2/5 h=5 r=3: 67 values of mu (|mu| <= 13), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 4s
+tau=2/5 h=6 r=2: 49 values of mu (|mu| <= 14), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 3s
+tau=2/5 h=5 r=4: 94 values of mu (|mu| <= 14), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 33s
+tau=2/5 h=6 r=3: 102 values of mu (|mu| <= 15), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 26s
+tau=2/5 h=2 r=1: 5 values of mu (|mu| <= 5), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 0s
+tau=2/5 h=2 r=2: 9 values of mu (|mu| <= 6), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 0s
+tau=2/5 h=3 r=3: 23 values of mu (|mu| <= 9), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 0s
+tau=2/5 h=4 r=2: 25 values of mu (|mu| <= 10), 0 mismatches, 0 skipped (vanishing P2 normalisation); Hodge side non-zero in the range: 0; 0s

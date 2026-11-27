@@ -1,0 +1,8 @@
+t^1: z-expansion KP  -4/5   T1  -4/5
+t^2: z-expansion KP  -1/4   T1  -1/4
+t^3: z-expansion KP  0   T1  0
+t^4: z-expansion KP  11/9000   T1  11/9000
+t^5: z-expansion KP  0   T1  0
+t^6: z-expansion KP  44579/945000000   T1  44579/945000000
+t_zexp K=6 tau=-3/5: T1 confirmed to order 6
+t_zexp K=6 tau=3: T1 confirmed to order 6

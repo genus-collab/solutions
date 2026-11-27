@@ -1,0 +1,11 @@
+tau=2 g=4 mu=(3,3,3): xy -165097/995328  engine -165097/995328  OK
+tau=2 g=4 mu=(3,3,2): xy 0  engine 0  OK  [range]
+tau=2 g=4 mu=(3,3,1): xy 0  engine 0  OK  [range]
+tau=2 g=4 mu=(3,2,2): xy 0  engine 0  OK  [range]
+tau=2 g=4 mu=(3,2,1): xy 0  engine 0  OK  [range]
+tau=2 g=4 mu=(3,1,1): xy 0  engine 0  OK  [range]
+tau=2 g=4 mu=(2,2,2): xy 0  engine 0  OK  [range]
+tau=2 g=4 mu=(2,2,1): xy 0  engine 0  OK  [range]
+tau=2 g=4 mu=(2,1,1): xy 0  engine 0  OK  [range]
+tau=2 g=4 mu=(1,1,1): xy 0  engine 0  OK  [range]
+total 10, mismatches 0, homogeneity violations 0

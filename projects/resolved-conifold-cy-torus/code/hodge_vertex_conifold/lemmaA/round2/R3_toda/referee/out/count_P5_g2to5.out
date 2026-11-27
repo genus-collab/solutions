@@ -1,0 +1,2 @@
+equation P5, weight 5, coefficient of D_{t_5}: 4/5
+SUMMARY P5 G=2..5: 9 (G,D,R) cases; terms: H1 286445, H2 3143, empty0 2547839, ff 733804, target 9; survivors 0; bad target counts 0; target coefficient factor -c*k = -4 (non-zero needed)

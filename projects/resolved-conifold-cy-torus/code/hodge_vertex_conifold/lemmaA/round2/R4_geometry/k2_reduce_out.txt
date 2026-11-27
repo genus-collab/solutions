@@ -1,0 +1,5 @@
+genus 2: k=2 Mumford reduction vs table: ok;  two-leaf lambda_1 reduction (B1): ok
+genus 3: k=2 Mumford reduction vs table: ok;  two-leaf lambda_1 reduction (B1): ok
+genus 4: k=2 Mumford reduction vs table: ok;  two-leaf lambda_1 reduction (B1): ok
+genus 5: k=2 Mumford reduction vs table: ok;  two-leaf lambda_1 reduction (B1): ok
+genus 6: k=2 Mumford reduction vs table: ok;  two-leaf lambda_1 reduction (B1): skipped (no r=3 table)

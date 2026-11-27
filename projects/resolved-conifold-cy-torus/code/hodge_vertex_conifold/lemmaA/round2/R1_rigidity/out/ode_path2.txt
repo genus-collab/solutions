@@ -1,0 +1,4 @@
+ode_path K=4 tau=2/7 seed=1: 15 state coefficients compared with [Psi(phi_t)]_-, 0 mismatches
+ode_path2: free energy along the path, 4 orders compared, 0 mismatches
+ode_path K=5 tau=-3/5 seed=2: 21 state coefficients compared with [Psi(phi_t)]_-, 0 mismatches
+ode_path2: free energy along the path, 5 orders compared, 0 mismatches

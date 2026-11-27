@@ -1,0 +1,7 @@
+tau=-5/8 K=12: propagation 2434 consistency checks (0 failed), time 54s; kappa_2..4 = 1/24 0 -1/2880
+tau=9/4 K=12: propagation 2434 consistency checks (0 failed), time 50s; kappa_2..4 = 1/24 0 -1/2880
+ref_t1 (rat): 288 coefficients compared, 0 mismatches; propagation checks 4868, failed 0
+
+real	1m44.383s
+user	1m43.311s
+sys	0m0.560s

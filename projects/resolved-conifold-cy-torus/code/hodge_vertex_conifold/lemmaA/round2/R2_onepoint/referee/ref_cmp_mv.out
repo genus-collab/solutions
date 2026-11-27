@@ -1,0 +1,14 @@
+tau=-7/3 h=3 r=1: compared 5 with Route A's MV values, mismatches 0
+tau=-7/3 h=3 r=2: compared 4 with Route A's MV values, mismatches 0
+tau=2/7 h=2 r=2: compared 4 with Route A's MV values, mismatches 0
+tau=2/7 h=3 r=1: compared 5 with Route A's MV values, mismatches 0
+tau=2/7 h=3 r=2: compared 4 with Route A's MV values, mismatches 0
+tau=3/2 h=2 r=2: compared 4 with Route A's MV values, mismatches 0
+tau=3/2 h=3 r=1: compared 5 with Route A's MV values, mismatches 0
+tau=3/2 h=3 r=2: compared 4 with Route A's MV values, mismatches 0
+tau=5 h=2 r=2: compared 4 with Route A's MV values, mismatches 0
+tau=5 h=3 r=1: compared 5 with Route A's MV values, mismatches 0
+tau=5 h=3 r=2: compared 4 with Route A's MV values, mismatches 0
+tau=7/11 h=3 r=1: compared 5 with Route A's MV values, mismatches 0
+tau=7/11 h=3 r=2: compared 4 with Route A's MV values, mismatches 0
+TOTAL vs Route A MV (Schur side): compared 57, mismatches 0

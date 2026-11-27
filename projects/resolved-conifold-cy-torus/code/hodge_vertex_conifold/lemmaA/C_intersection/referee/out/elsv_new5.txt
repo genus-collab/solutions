@@ -1,0 +1,11 @@
+h=5 R=(2) D=1 range     Xi^(0) = 0  (Theorem H: 0, OK)   [16 s]
+h=5 R=(3) D=2 range     Xi^(0) = 0  (Theorem H: 0, OK)   [18 s]
+h=5 R=(4) D=3 range     Xi^(0) = 0  (Theorem H: 0, OK)   [16 s]
+h=5 R=(5) D=4 range     Xi^(0) = 0  (Theorem H: 0, OK)   [19 s]
+h=5 R=(6) D=5 range     Xi^(0) = 0  (Theorem H: 0, OK)   [18 s]
+h=5 R=(7) D=6 range     Xi^(0) = 0  (Theorem H: 0, OK)   [22 s]
+h=5 R=(8) D=7 range     Xi^(0) = 0  (Theorem H: 0, OK)   [21 s]
+h=5 R=(9) D=8 boundary  Xi^(0) = -4401/112640   [22 s]
+h=5 R=(10) D=9 outside   Xi^(0) = 0   [22 s]
+h=5 R=(11) D=10 outside   Xi^(0) = 1327385/202752   [28 s]
+SUMMARY (new5): 7 points in the range, 0 non-zero

@@ -1,0 +1,4 @@
+full G=7: 194 multisets in range, 1358 unknowns, 12582 relations (27 samples, p=998244353): rank 1358, NULLITY 0
+  [51 s]
+full G=8: 372 multisets in range, 2976 unknowns, 32520 relations (30 samples, p=998244353): rank 2976, NULLITY 0
+  [301 s]

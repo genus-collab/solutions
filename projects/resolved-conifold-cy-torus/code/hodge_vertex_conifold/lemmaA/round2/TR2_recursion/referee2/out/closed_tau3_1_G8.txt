@@ -1,0 +1,1 @@
+tau=3/1 G=8 p=2147483647: Norlund 540 checks, 0 mismatches; one-point 104 checks, 0 mismatches; (6.1) 104 checks, 0 mismatches; two-point 288 checks (+30 n=2 general), 0 mismatches; three-point 0 checks, 0 mismatches; 181s

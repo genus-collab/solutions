@@ -1,0 +1,12 @@
+propagation: 148 checks, 0 failed
+random path 1: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..6: 0 mismatches
+random path 2: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..6: 0 mismatches
+  leaf curve: W (genus-0 root) = zeta H_1/t (Theorem 11.1 zeta): yes; Kflow - K_t independent of mu: yes; constant = log H_1 - tau^2 t: yes
+leaf curve: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..6: 0 mismatches
+ref_flow K=6 tau=-5/8: total mismatching orders 0
+propagation: 148 checks, 0 failed
+random path 1: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..6: 6 mismatches
+random path 2: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..6: 6 mismatches
+  leaf curve: W (genus-0 root) = zeta H_1/t (Theorem 11.1 zeta): yes; Kflow - K_t independent of mu: NO; constant = log H_1 - tau^2 t: NO
+leaf curve: phi(0)=0 yes, phi(1)=1 yes, inverse ok yes, psi/mu exact yes, (psi-1)/(mu-1) exact yes; Phi(t) orders 1..6: 6 mismatches
+ref_flow K=6 tau=-5/8: total mismatching orders 18

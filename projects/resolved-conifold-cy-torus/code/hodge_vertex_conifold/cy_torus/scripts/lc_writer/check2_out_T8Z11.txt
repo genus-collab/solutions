@@ -1,0 +1,54 @@
+== CY sample (Fraction(5, 3), Fraction(-4, 7), Fraction(13, 6), Fraction(9, 11), Fraction(1129, 462))
+   negative z-powers of (E/(E+z)) F Ephi alg vanish (n<=8): True
+   KEY FORMULA (Thm 3.17_CY): h_(a1,A,-E) x Wick row == (E/(E+z)) F Ephi alg to tau^8 z^11: True
+   r^pt_{0,1}(z;0) == h_(E,-a1,-A) E/(E+z): True
+   L1 k=0: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 1 (bound 1), tested to z^11: True
+   L1 k=1: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 1 (bound 1), tested to z^11: True
+   L1 k=2: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 2 (bound 2), tested to z^11: True
+   L1 k=3: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 3 (bound 3), tested to z^11: True
+   L1 k=4: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 4 (bound 4), tested to z^11: True
+   L1 k=5: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 5 (bound 5), tested to z^11: True
+   L1 k=6: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 6 (bound 6), tested to z^11: True
+   L1 k=7: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 7 (bound 7), tested to z^11: True
+   L1 k=8: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 8 (bound 8), tested to z^11: True
+   A_j closed form reproduces [t^k](zG) - E delta_k0 for k <= 7: True
+   [t^1](zG) == (u/2)(1/(E+z) - 1/(E+2z)): True
+   rho_1 == u/(2E^2): True
+   F2: rho r_{1,1} = E/t + a1a2/(E+z) + O(t) (all z^m <= 11): True
+   Row 2 of the QDE at U_1 (z^m <= 11, t^-3..t^4): True
+   K_1 = <v_1(z),v_1(-z)>/Delta_1 == 1 (w^m <= 11, t^0..t^4): True
+   E_11(0,0): no negative t-powers: True ; [t^0] == -e1e2 a1a2 A B/(2E^2): True
+   E_11(1,0): no negative t-powers: True ; [t^0] == -e1e2 a1a2 A B/(2E^3): True
+   Theta(0) = 0, Theta_1 == -e1e2 a1a2 A B/E^2: True
+   E_11 flow d/dt(t^2 rho^2 E_11) = Theta Dg Dg (m+n <= 3, t^0..t^3): True
+   L3 k=0: [t^k](rho^2 E_11) x annihilators has bidegree <= (k,k) on psi and psi-prime orders <= 4: violations 0
+   L3 k=1: [t^k](rho^2 E_11) x annihilators has bidegree <= (k,k) on psi and psi-prime orders <= 4: violations 0
+   L3 k=2: [t^k](rho^2 E_11) x annihilators has bidegree <= (k,k) on psi and psi-prime orders <= 4: violations 0
+== CY sample (Fraction(-2, 5), Fraction(7, 4), Fraction(3, 1), Fraction(1, 6), Fraction(251, 60))
+   negative z-powers of (E/(E+z)) F Ephi alg vanish (n<=8): True
+   KEY FORMULA (Thm 3.17_CY): h_(a1,A,-E) x Wick row == (E/(E+z)) F Ephi alg to tau^8 z^11: True
+   r^pt_{0,1}(z;0) == h_(E,-a1,-A) E/(E+z): True
+   L1 k=0: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 1 (bound 1), tested to z^11: True
+   L1 k=1: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 1 (bound 1), tested to z^11: True
+   L1 k=2: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 2 (bound 2), tested to z^11: True
+   L1 k=3: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 3 (bound 3), tested to z^11: True
+   L1 k=4: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 4 (bound 4), tested to z^11: True
+   L1 k=5: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 5 (bound 5), tested to z^11: True
+   L1 k=6: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 6 (bound 6), tested to z^11: True
+   L1 k=7: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 7 (bound 7), tested to z^11: True
+   L1 k=8: [t^k](zG) prod_{j<=k+1}(E+jz) has z-degree 8 (bound 8), tested to z^11: True
+   A_j closed form reproduces [t^k](zG) - E delta_k0 for k <= 7: True
+   [t^1](zG) == (u/2)(1/(E+z) - 1/(E+2z)): True
+   rho_1 == u/(2E^2): True
+   F2: rho r_{1,1} = E/t + a1a2/(E+z) + O(t) (all z^m <= 11): True
+   Row 2 of the QDE at U_1 (z^m <= 11, t^-3..t^4): True
+   K_1 = <v_1(z),v_1(-z)>/Delta_1 == 1 (w^m <= 11, t^0..t^4): True
+   E_11(0,0): no negative t-powers: True ; [t^0] == -e1e2 a1a2 A B/(2E^2): True
+   E_11(1,0): no negative t-powers: True ; [t^0] == -e1e2 a1a2 A B/(2E^3): True
+   Theta(0) = 0, Theta_1 == -e1e2 a1a2 A B/E^2: True
+   E_11 flow d/dt(t^2 rho^2 E_11) = Theta Dg Dg (m+n <= 3, t^0..t^3): True
+   L3 k=0: [t^k](rho^2 E_11) x annihilators has bidegree <= (k,k) on psi and psi-prime orders <= 4: violations 0
+   L3 k=1: [t^k](rho^2 E_11) x annihilators has bidegree <= (k,k) on psi and psi-prime orders <= 4: violations 0
+   L3 k=2: [t^k](rho^2 E_11) x annihilators has bidegree <= (k,k) on psi and psi-prime orders <= 4: violations 0
+== a0 = 0: frame-B row at (0,a1,a2,e1,e2) == fibrewise frame-B row at x = a1/a2 with z -> z/a2 (tau^8, z^11): True
+   also h_(a1,a2,-E)(z) == h_(c,-x,-1)(z/a2)^-1: True

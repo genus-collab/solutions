@@ -1,0 +1,1 @@
+ref_margin G<=400: m(G) < 0 for G in {4 5 6 7}; m(G) = 0 for G in {3}; min over 8 <= G <= 400 of m(G): 1

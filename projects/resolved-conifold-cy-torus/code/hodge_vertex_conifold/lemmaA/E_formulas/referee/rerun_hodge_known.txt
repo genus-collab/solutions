@@ -1,0 +1,5 @@
+genus 2: l_g l_{g-1} l_{g-2} OK | psi^{g-1} l_g l_{g-1} OK | psi^{2g-2} l_g OK
+genus 3: l_g l_{g-1} l_{g-2} OK | psi^{g-1} l_g l_{g-1} OK | psi^{2g-2} l_g OK
+genus 4: l_g l_{g-1} l_{g-2} OK | psi^{g-1} l_g l_{g-1} OK | psi^{2g-2} l_g OK
+genus 5: l_g l_{g-1} l_{g-2} OK | psi^{g-1} l_g l_{g-1} OK | psi^{2g-2} l_g OK
+genus 6: l_g l_{g-1} l_{g-2} OK | psi^{g-1} l_g l_{g-1} OK | psi^{2g-2} l_g OK

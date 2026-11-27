@@ -1,0 +1,19 @@
+nu=(1): Eq s_nu = eps s_nu OK
+nu=(2): Eq s_nu = eps s_nu OK
+nu=(1,1): Eq s_nu = eps s_nu OK
+nu=(3): Eq s_nu = eps s_nu OK
+nu=(2,1): Eq s_nu = eps s_nu OK
+nu=(1,1,1): Eq s_nu = eps s_nu OK
+nu=(4): Eq s_nu = eps s_nu OK
+nu=(3,1): Eq s_nu = eps s_nu OK
+nu=(2,2): Eq s_nu = eps s_nu OK
+nu=(2,1,1): Eq s_nu = eps s_nu OK
+nu=(1,1,1,1): Eq s_nu = eps s_nu OK
+nu=(5): Eq s_nu = eps s_nu OK
+nu=(4,1): Eq s_nu = eps s_nu OK
+nu=(3,2): Eq s_nu = eps s_nu OK
+nu=(3,1,1): Eq s_nu = eps s_nu OK
+nu=(2,2,1): Eq s_nu = eps s_nu OK
+nu=(2,1,1,1): Eq s_nu = eps s_nu OK
+nu=(1,1,1,1,1): Eq s_nu = eps s_nu OK
+SUMMARY (Q=5/7, |nu| <= 5): bosonised Eq: 18 Schur functions, 0 failures; branching rule: 18, 0 failures

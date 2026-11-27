@@ -1,0 +1,1 @@
+ref_t1 K=28 tau=-1/5 mode=sym strat=big p=1000000007: 18459 multisets, 784 coefficients compared, 0 mismatches; non-zero relation orders 15; 104s

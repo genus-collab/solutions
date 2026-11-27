@@ -1,0 +1,6 @@
+genus 2 r 1: H' tested on 3 (j,b) pairs (j_i >= 0, J >= 1, D <= 2h-3, b_i <= j_i, Sum b <= J-1): 0 non-zero; excluded b = j cases: 2
+genus 2 r 2: H' tested on 14 (j,b) pairs (j_i >= 0, J >= 1, D <= 2h-3, b_i <= j_i, Sum b <= J-1): 0 non-zero; excluded b = j cases: 5
+genus 3 r 1: H' tested on 10 (j,b) pairs (j_i >= 0, J >= 1, D <= 2h-3, b_i <= j_i, Sum b <= J-1): 0 non-zero; excluded b = j cases: 4
+genus 3 r 2: H' tested on 58 (j,b) pairs (j_i >= 0, J >= 1, D <= 2h-3, b_i <= j_i, Sum b <= J-1): 0 non-zero; excluded b = j cases: 11
+genus 4 r 1: H' tested on 21 (j,b) pairs (j_i >= 0, J >= 1, D <= 2h-3, b_i <= j_i, Sum b <= J-1): 0 non-zero; excluded b = j cases: 6
+genus 4 r 2: H' tested on 160 (j,b) pairs (j_i >= 0, J >= 1, D <= 2h-3, b_i <= j_i, Sum b <= J-1): 0 non-zero; excluded b = j cases: 19

@@ -1,0 +1,434 @@
+Q h=2 R=(1) s=0: Hurwitz 0, data 0  ok
+Q h=2 R=(1) s=1: Hurwitz 31/360, data 31/360  ok
+Q h=2 R=(1) s=2: Hurwitz 4/5, data 4/5  ok
+Q h=2 R=(1) s=3: Hurwitz 49/15, data 49/15  ok
+Q h=2 R=(1) s=4: Hurwitz 331/36, data 331/36  ok
+Xi0 h=2 R=(1) (s=-1): Hurwitz 0, data 0  ok
+Q h=2 R=(2) s=0: Hurwitz 1/480, data 1/480  ok
+Q h=2 R=(2) s=1: Hurwitz 11/60, data 11/60  ok
+Q h=2 R=(2) s=2: Hurwitz 197/160, data 197/160  ok
+Q h=2 R=(2) s=3: Hurwitz 53/12, data 53/12  ok
+Q h=2 R=(2) s=4: Hurwitz 371/32, data 371/32  ok
+Xi0 h=2 R=(2) (s=-1): Hurwitz 0, data 0  ok
+Q h=2 R=(3) s=0: Hurwitz 1/40, data 1/40  ok
+Q h=2 R=(3) s=1: Hurwitz 221/576, data 221/576  ok
+Q h=2 R=(3) s=2: Hurwitz 61/32, data 61/32  ok
+Q h=2 R=(3) s=3: Hurwitz 1923/320, data 1923/320  ok
+Q h=2 R=(3) s=4: Hurwitz 10579/720, data 10579/720  ok
+Xi0 h=2 R=(3) (s=-1): Hurwitz -1/320, data -1/320  ok
+Q h=2 R=(4) s=0: Hurwitz 13/120, data 13/120  ok
+Q h=2 R=(4) s=1: Hurwitz 109/144, data 109/144  ok
+Q h=2 R=(4) s=2: Hurwitz 117/40, data 117/40  ok
+Q h=2 R=(4) s=3: Hurwitz 327/40, data 327/40  ok
+Q h=2 R=(4) s=4: Hurwitz 1343/72, data 1343/72  ok
+Xi0 h=2 R=(4) (s=-1): Hurwitz 0, data 0  ok
+Q h=2 R=(5) s=0: Hurwitz 5/16, data 5/16  ok
+Q h=2 R=(5) s=1: Hurwitz 223/160, data 223/160  ok
+Q h=2 R=(5) s=2: Hurwitz 529/120, data 529/120  ok
+Q h=2 R=(5) s=3: Hurwitz 5311/480, data 5311/480  ok
+Q h=2 R=(5) s=4: Hurwitz 5677/240, data 5677/240  ok
+Xi0 h=2 R=(5) (s=-1): Hurwitz 19/480, data 19/480  ok
+Q h=2 R=(6) s=0: Hurwitz 23/32, data 23/32  ok
+Q h=2 R=(6) s=1: Hurwitz 433/180, data 433/180  ok
+Q h=2 R=(6) s=2: Hurwitz 3119/480, data 3119/480  ok
+Q h=2 R=(6) s=3: Hurwitz 297/20, data 297/20  ok
+Q h=2 R=(6) s=4: Hurwitz 8611/288, data 8611/288  ok
+Xi0 h=2 R=(6) (s=-1): Hurwitz 1/6, data 1/6  ok
+Q h=2 R=(1 1) s=0: Hurwitz 1/720, data 1/720  ok
+Q h=2 R=(1 1) s=1: Hurwitz 593/360, data 593/360  ok
+Q h=2 R=(1 1) s=2: Hurwitz 323/16, data 323/16  ok
+Q h=2 R=(1 1) s=3: Hurwitz 4693/45, data 4693/45  ok
+Q h=2 R=(1 1) s=4: Hurwitz 51329/144, data 51329/144  ok
+Q h=2 R=(1 1) s=5: Hurwitz 38137/40, data 38137/40  ok
+Xi0 h=2 R=(1 1) (s=-1): Hurwitz 0, data 0  ok
+Q h=2 R=(1 2) s=0: Hurwitz 13/360, data 13/360  ok
+Q h=2 R=(1 2) s=1: Hurwitz 589/180, data 589/180  ok
+Q h=2 R=(1 2) s=2: Hurwitz 121/4, data 121/4  ok
+Q h=2 R=(1 2) s=3: Hurwitz 12511/90, data 12511/90  ok
+Q h=2 R=(1 2) s=4: Hurwitz 32077/72, data 32077/72  ok
+Q h=2 R=(1 2) s=5: Hurwitz 22881/20, data 22881/20  ok
+Xi0 h=2 R=(1 2) (s=-1): Hurwitz 0, data 0  ok
+Q h=2 R=(1 3) s=0: Hurwitz 81/320, data 81/320  ok
+Q h=2 R=(1 3) s=1: Hurwitz 2069/320, data 2069/320  ok
+Q h=2 R=(1 3) s=2: Hurwitz 14601/320, data 14601/320  ok
+Q h=2 R=(1 3) s=3: Hurwitz 178871/960, data 178871/960  ok
+Q h=2 R=(1 3) s=4: Hurwitz 536771/960, data 536771/960  ok
+Q h=2 R=(1 3) s=5: Hurwitz 440661/320, data 440661/320  ok
+Xi0 h=2 R=(1 3) (s=-1): Hurwitz -3/320, data -3/320  ok
+Q h=2 R=(1 4) s=0: Hurwitz 46/45, data 46/45  ok
+Q h=2 R=(1 4) s=1: Hurwitz 556/45, data 556/45  ok
+Q h=2 R=(1 4) s=2: Hurwitz 549/8, data 549/8  ok
+Q h=2 R=(1 4) s=3: Hurwitz 22511/90, data 22511/90  ok
+Q h=2 R=(1 4) s=4: Hurwitz 6329/9, data 6329/9  ok
+Q h=2 R=(1 4) s=5: Hurwitz 8304/5, data 8304/5  ok
+Xi0 h=2 R=(1 4) (s=-1): Hurwitz 0, data 0  ok
+Q h=2 R=(1 5) s=0: Hurwitz 875/288, data 875/288  ok
+Q h=2 R=(1 5) s=1: Hurwitz 32513/1440, data 32513/1440  ok
+Q h=2 R=(1 5) s=2: Hurwitz 49073/480, data 49073/480  ok
+Q h=2 R=(1 5) s=3: Hurwitz 482653/1440, data 482653/1440  ok
+Q h=2 R=(1 5) s=4: Hurwitz 254803/288, data 254803/288  ok
+Q h=2 R=(1 5) s=5: Hurwitz 192463/96, data 192463/96  ok
+Xi0 h=2 R=(1 5) (s=-1): Hurwitz 19/96, data 19/96  ok
+Q h=2 R=(1 6) s=0: Hurwitz 297/40, data 297/40  ok
+Q h=2 R=(1 6) s=1: Hurwitz 2363/60, data 2363/60  ok
+Q h=2 R=(1 6) s=2: Hurwitz 601/4, data 601/4  ok
+Q h=2 R=(1 6) s=3: Hurwitz 13417/30, data 13417/30  ok
+Q h=2 R=(1 6) s=4: Hurwitz 26683/24, data 26683/24  ok
+Q h=2 R=(1 6) s=5: Hurwitz 48401/20, data 48401/20  ok
+Xi0 h=2 R=(1 6) (s=-1): Hurwitz 1, data 1  ok
+Q h=2 R=(2 2) s=0: Hurwitz 13/60, data 13/60  ok
+Q h=2 R=(2 2) s=1: Hurwitz 439/72, data 439/72  ok
+Q h=2 R=(2 2) s=2: Hurwitz 3991/90, data 3991/90  ok
+Q h=2 R=(2 2) s=3: Hurwitz 733/4, data 733/4  ok
+Q h=2 R=(2 2) s=4: Hurwitz 99559/180, data 99559/180  ok
+Q h=2 R=(2 2) s=5: Hurwitz 491983/360, data 491983/360  ok
+Xi0 h=2 R=(2 2) (s=-1): Hurwitz -1/180, data -1/180  ok
+Q h=2 R=(2 3) s=0: Hurwitz 101/120, data 101/120  ok
+Q h=2 R=(2 3) s=1: Hurwitz 4063/360, data 4063/360  ok
+Q h=2 R=(2 3) s=2: Hurwitz 523/8, data 523/8  ok
+Q h=2 R=(2 3) s=3: Hurwitz 14569/60, data 14569/60  ok
+Q h=2 R=(2 3) s=4: Hurwitz 49637/72, data 49637/72  ok
+Q h=2 R=(2 3) s=5: Hurwitz 65497/40, data 65497/40  ok
+Xi0 h=2 R=(2 3) (s=-1): Hurwitz 0, data 0  ok
+Q h=2 R=(2 4) s=0: Hurwitz 1793/720, data 1793/720  ok
+Q h=2 R=(2 4) s=1: Hurwitz 7307/360, data 7307/360  ok
+Q h=2 R=(2 4) s=2: Hurwitz 23063/240, data 23063/240  ok
+Q h=2 R=(2 4) s=3: Hurwitz 14498/45, data 14498/45  ok
+Q h=2 R=(2 4) s=4: Hurwitz 619921/720, data 619921/720  ok
+Q h=2 R=(2 4) s=5: Hurwitz 235873/120, data 235873/120  ok
+Xi0 h=2 R=(2 4) (s=-1): Hurwitz 2/15, data 2/15  ok
+Q h=2 R=(2 5) s=0: Hurwitz 1471/240, data 1471/240  ok
+Q h=2 R=(2 5) s=1: Hurwitz 5063/144, data 5063/144  ok
+Q h=2 R=(2 5) s=2: Hurwitz 100811/720, data 100811/720  ok
+Q h=2 R=(2 5) s=3: Hurwitz 34139/80, data 34139/80  ok
+Q h=2 R=(2 5) s=4: Hurwitz 154889/144, data 154889/144  ok
+Q h=2 R=(2 5) s=5: Hurwitz 1700363/720, data 1700363/720  ok
+Xi0 h=2 R=(2 5) (s=-1): Hurwitz 103/144, data 103/144  ok
+Q h=2 R=(2 6) s=0: Hurwitz 793/60, data 793/60  ok
+Q h=2 R=(2 6) s=1: Hurwitz 2636/45, data 2636/45  ok
+Q h=2 R=(2 6) s=2: Hurwitz 403/2, data 403/2  ok
+Q h=2 R=(2 6) s=3: Hurwitz 67553/120, data 67553/120  ok
+Q h=2 R=(2 6) s=4: Hurwitz 48319/36, data 48319/36  ok
+Q h=2 R=(2 6) s=5: Hurwitz 28373/10, data 28373/10  ok
+Xi0 h=2 R=(2 6) (s=-1): Hurwitz 19/8, data 19/8  ok
+Q h=2 R=(3 3) s=0: Hurwitz 75/32, data 75/32  ok
+Q h=2 R=(3 3) s=1: Hurwitz 9403/480, data 9403/480  ok
+Q h=2 R=(3 3) s=2: Hurwitz 15059/160, data 15059/160  ok
+Q h=2 R=(3 3) s=3: Hurwitz 50869/160, data 50869/160  ok
+Q h=2 R=(3 3) s=4: Hurwitz 136511/160, data 136511/160  ok
+Q h=2 R=(3 3) s=5: Hurwitz 62485/32, data 62485/32  ok
+Xi0 h=2 R=(3 3) (s=-1): Hurwitz 21/160, data 21/160  ok
+Q h=2 R=(3 4) s=0: Hurwitz 673/120, data 673/120  ok
+Q h=2 R=(3 4) s=1: Hurwitz 1329/40, data 1329/40  ok
+Q h=2 R=(3 4) s=2: Hurwitz 1081/8, data 1081/8  ok
+Q h=2 R=(3 4) s=3: Hurwitz 12503/30, data 12503/30  ok
+Q h=2 R=(3 4) s=4: Hurwitz 126943/120, data 126943/120  ok
+Q h=2 R=(3 4) s=5: Hurwitz 93311/40, data 93311/40  ok
+Xi0 h=2 R=(3 4) (s=-1): Hurwitz 13/20, data 13/20  ok
+Q h=2 R=(3 5) s=0: Hurwitz 3819/320, data 3819/320  ok
+Q h=2 R=(3 5) s=1: Hurwitz 157463/2880, data 157463/2880  ok
+Q h=2 R=(3 5) s=2: Hurwitz 184777/960, data 184777/960  ok
+Q h=2 R=(3 5) s=3: Hurwitz 34907/64, data 34907/64  ok
+Q h=2 R=(3 5) s=4: Hurwitz 755671/576, data 755671/576  ok
+Q h=2 R=(3 5) s=5: Hurwitz 2677597/960, data 2677597/960  ok
+Xi0 h=2 R=(3 5) (s=-1): Hurwitz 401/192, data 401/192  ok
+Q h=2 R=(3 6) s=0: Hurwitz 927/40, data 927/40  ok
+Q h=2 R=(3 6) s=1: Hurwitz 10459/120, data 10459/120  ok
+Q h=2 R=(3 6) s=2: Hurwitz 10847/40, data 10847/40  ok
+Q h=2 R=(3 6) s=3: Hurwitz 7111/10, data 7111/10  ok
+Q h=2 R=(3 6) s=4: Hurwitz 65009/40, data 65009/40  ok
+Q h=2 R=(3 6) s=5: Hurwitz 133387/40, data 133387/40  ok
+Xi0 h=2 R=(3 6) (s=-1): Hurwitz 107/20, data 107/20  ok
+Q h=2 R=(4 4) s=0: Hurwitz 104/9, data 104/9  ok
+Q h=2 R=(4 4) s=1: Hurwitz 9619/180, data 9619/180  ok
+Q h=2 R=(4 4) s=2: Hurwitz 3791/20, data 3791/20  ok
+Q h=2 R=(4 4) s=3: Hurwitz 38857/72, data 38857/72  ok
+Q h=2 R=(4 4) s=4: Hurwitz 58588/45, data 58588/45  ok
+Q h=2 R=(4 4) s=5: Hurwitz 11093/4, data 11093/4  ok
+Xi0 h=2 R=(4 4) (s=-1): Hurwitz 81/40, data 81/40  ok
+Q h=2 R=(4 5) s=0: Hurwitz 15857/720, data 15857/720  ok
+Q h=2 R=(4 5) s=1: Hurwitz 60433/720, data 60433/720  ok
+Q h=2 R=(4 5) s=2: Hurwitz 21127/80, data 21127/80  ok
+Q h=2 R=(4 5) s=3: Hurwitz 502397/720, data 502397/720  ok
+Q h=2 R=(4 5) s=4: Hurwitz 230789/144, data 230789/144  ok
+Q h=2 R=(4 5) s=5: Hurwitz 263953/80, data 263953/80  ok
+Xi0 h=2 R=(4 5) (s=-1): Hurwitz 81/16, data 81/16  ok
+Q h=2 R=(4 6) s=0: Hurwitz 9437/240, data 9437/240  ok
+Q h=2 R=(4 6) s=1: Hurwitz 15421/120, data 15421/120  ok
+Q h=2 R=(4 6) s=2: Hurwitz 5831/16, data 5831/16  ok
+Q h=2 R=(4 6) s=3: Hurwitz 13486/15, data 13486/15  ok
+Q h=2 R=(4 6) s=4: Hurwitz 94601/48, data 94601/48  ok
+Q h=2 R=(4 6) s=5: Hurwitz 157007/40, data 157007/40  ok
+Xi0 h=2 R=(4 6) (s=-1): Hurwitz 11, data 11  ok
+Q h=2 R=(5 5) s=0: Hurwitz 925/24, data 925/24  ok
+Q h=2 R=(5 5) s=1: Hurwitz 91087/720, data 91087/720  ok
+Q h=2 R=(5 5) s=2: Hurwitz 64847/180, data 64847/180  ok
+Q h=2 R=(5 5) s=3: Hurwitz 71317/80, data 71317/80  ok
+Q h=2 R=(5 5) s=4: Hurwitz 704981/360, data 704981/360  ok
+Q h=2 R=(5 5) s=5: Hurwitz 562435/144, data 562435/144  ok
+Xi0 h=2 R=(5 5) (s=-1): Hurwitz 7757/720, data 7757/720  ok
+Q h=2 R=(5 6) s=0: Hurwitz 1029/16, data 1029/16  ok
+Q h=2 R=(5 6) s=1: Hurwitz 134519/720, data 134519/720  ok
+Q h=2 R=(5 6) s=2: Hurwitz 116989/240, data 116989/240  ok
+Q h=2 R=(5 6) s=3: Hurwitz 90831/80, data 90831/80  ok
+Q h=2 R=(5 6) s=4: Hurwitz 344221/144, data 344221/144  ok
+Q h=2 R=(5 6) s=5: Hurwitz 221921/48, data 221921/48  ok
+Xi0 h=2 R=(5 6) (s=-1): Hurwitz 1001/48, data 1001/48  ok
+Q h=2 R=(6 6) s=0: Hurwitz 2031/20, data 2031/20  ok
+Q h=2 R=(6 6) s=1: Hurwitz 32071/120, data 32071/120  ok
+Q h=2 R=(6 6) s=2: Hurwitz 1295/2, data 1295/2  ok
+Q h=2 R=(6 6) s=3: Hurwitz 14299/10, data 14299/10  ok
+Q h=2 R=(6 6) s=4: Hurwitz 11587/4, data 11587/4  ok
+Q h=2 R=(6 6) s=5: Hurwitz 217817/40, data 217817/40  ok
+Xi0 h=2 R=(6 6) (s=-1): Hurwitz 37, data 37  ok
+Q h=3 R=(1) s=0: Hurwitz 0, data 0  ok
+Q h=3 R=(1) s=1: Hurwitz 5933/5670, data 5933/5670  ok
+Q h=3 R=(1) s=2: Hurwitz 349679/6720, data 349679/6720  ok
+Q h=3 R=(1) s=3: Hurwitz 128881/210, data 128881/210  ok
+Q h=3 R=(1) s=4: Hurwitz 68365285/18144, data 68365285/18144  ok
+Q h=3 R=(1) s=5: Hurwitz 1332671/84, data 1332671/84  ok
+Q h=3 R=(1) s=6: Hurwitz 50117579/960, data 50117579/960  ok
+Q h=3 R=(1) s=7: Hurwitz 58462216/405, data 58462216/405  ok
+Xi0 h=3 R=(1) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(2) s=0: Hurwitz 1/20160, data 1/20160  ok
+Q h=3 R=(2) s=1: Hurwitz 10163/4536, data 10163/4536  ok
+Q h=3 R=(2) s=2: Hurwitz 15397/192, data 15397/192  ok
+Q h=3 R=(2) s=3: Hurwitz 1569059/1890, data 1569059/1890  ok
+Q h=3 R=(2) s=4: Hurwitz 172452145/36288, data 172452145/36288  ok
+Q h=3 R=(2) s=5: Hurwitz 16089959/840, data 16089959/840  ok
+Q h=3 R=(2) s=6: Hurwitz 105713401/1728, data 105713401/1728  ok
+Q h=3 R=(2) s=7: Hurwitz 93853549/567, data 93853549/567  ok
+Xi0 h=3 R=(2) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(3) s=0: Hurwitz 9/2240, data 9/2240  ok
+Q h=3 R=(3) s=1: Hurwitz 12713/2592, data 12713/2592  ok
+Q h=3 R=(3) s=2: Hurwitz 1266049/10080, data 1266049/10080  ok
+Q h=3 R=(3) s=3: Hurwitz 158857/140, data 158857/140  ok
+Q h=3 R=(3) s=4: Hurwitz 219036619/36288, data 219036619/36288  ok
+Q h=3 R=(3) s=5: Hurwitz 234288503/10080, data 234288503/10080  ok
+Q h=3 R=(3) s=6: Hurwitz 287839/4, data 287839/4  ok
+Q h=3 R=(3) s=7: Hurwitz 2158726427/11340, data 2158726427/11340  ok
+Xi0 h=3 R=(3) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(4) s=0: Hurwitz 41/756, data 41/756  ok
+Q h=3 R=(4) s=1: Hurwitz 120601/11340, data 120601/11340  ok
+Q h=3 R=(4) s=2: Hurwitz 665521/3360, data 665521/3360  ok
+Q h=3 R=(4) s=3: Hurwitz 11801897/7560, data 11801897/7560  ok
+Q h=3 R=(4) s=4: Hurwitz 34954939/4536, data 34954939/4536  ok
+Q h=3 R=(4) s=5: Hurwitz 4757089/168, data 4757089/168  ok
+Q h=3 R=(4) s=6: Hurwitz 366802403/4320, data 366802403/4320  ok
+Q h=3 R=(4) s=7: Hurwitz 2488856089/11340, data 2488856089/11340  ok
+Xi0 h=3 R=(4) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(5) s=0: Hurwitz 2125/6048, data 2125/6048  ok
+Q h=3 R=(5) s=1: Hurwitz 8134711/362880, data 8134711/362880  ok
+Q h=3 R=(5) s=2: Hurwitz 9441437/30240, data 9441437/30240  ok
+Q h=3 R=(5) s=3: Hurwitz 260638927/120960, data 260638927/120960  ok
+Q h=3 R=(5) s=4: Hurwitz 179117255/18144, data 179117255/18144  ok
+Q h=3 R=(5) s=5: Hurwitz 837028765/24192, data 837028765/24192  ok
+Q h=3 R=(5) s=6: Hurwitz 1012402291/10080, data 1012402291/10080  ok
+Q h=3 R=(5) s=7: Hurwitz 92014824169/362880, data 92014824169/362880  ok
+Xi0 h=3 R=(5) (s=-1): Hurwitz -65/24192, data -65/24192  ok
+Q h=3 R=(6) s=0: Hurwitz 681/448, data 681/448  ok
+Q h=3 R=(6) s=1: Hurwitz 515951/11340, data 515951/11340  ok
+Q h=3 R=(6) s=2: Hurwitz 9863737/20160, data 9863737/20160  ok
+Q h=3 R=(6) s=3: Hurwitz 416589/140, data 416589/140  ok
+Q h=3 R=(6) s=4: Hurwitz 65684035/5184, data 65684035/5184  ok
+Q h=3 R=(6) s=5: Hurwitz 10675837/252, data 10675837/252  ok
+Q h=3 R=(6) s=6: Hurwitz 38090523/320, data 38090523/320  ok
+Q h=3 R=(6) s=7: Hurwitz 1663871149/5670, data 1663871149/5670  ok
+Xi0 h=3 R=(6) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(7) s=0: Hurwitz 686/135, data 686/135  ok
+Q h=3 R=(7) s=1: Hurwitz 6430255/72576, data 6430255/72576  ok
+Q h=3 R=(7) s=2: Hurwitz 1530973/2016, data 1530973/2016  ok
+Q h=3 R=(7) s=3: Hurwitz 496190491/120960, data 496190491/120960  ok
+Q h=3 R=(7) s=4: Hurwitz 73807747/4536, data 73807747/4536  ok
+Q h=3 R=(7) s=5: Hurwitz 2094062807/40320, data 2094062807/40320  ok
+Q h=3 R=(7) s=6: Hurwitz 854370227/6048, data 854370227/6048  ok
+Q h=3 R=(7) s=7: Hurwitz 3525693367/10368, data 3525693367/10368  ok
+Xi0 h=3 R=(7) (s=-1): Hurwitz 913/8064, data 913/8064  ok
+Q h=3 R=(8) s=0: Hurwitz 1916/135, data 1916/135  ok
+Q h=3 R=(8) s=1: Hurwitz 375427/2268, data 375427/2268  ok
+Q h=3 R=(8) s=2: Hurwitz 35216917/30240, data 35216917/30240  ok
+Q h=3 R=(8) s=3: Hurwitz 14201011/2520, data 14201011/2520  ok
+Q h=3 R=(8) s=4: Hurwitz 94730297/4536, data 94730297/4536  ok
+Q h=3 R=(8) s=5: Hurwitz 481584421/7560, data 481584421/7560  ok
+Q h=3 R=(8) s=6: Hurwitz 144974299/864, data 144974299/864  ok
+Q h=3 R=(8) s=7: Hurwitz 638993321/1620, data 638993321/1620  ok
+Xi0 h=3 R=(8) (s=-1): Hurwitz 41/54, data 41/54  ok
+Q h=3 R=(1 1) s=0: Hurwitz 1/40320, data 1/40320  ok
+Q h=3 R=(1 1) s=1: Hurwitz 382441/11340, data 382441/11340  ok
+Q h=3 R=(1 1) s=2: Hurwitz 29875711/13440, data 29875711/13440  ok
+Q h=3 R=(1 1) s=3: Hurwitz 66517/2, data 66517/2  ok
+Q h=3 R=(1 1) s=4: Hurwitz 18027368965/72576, data 18027368965/72576  ok
+Q h=3 R=(1 1) s=5: Hurwitz 259070813/210, data 259070813/210  ok
+Q h=3 R=(1 1) s=6: Hurwitz 26958348059/5760, data 26958348059/5760  ok
+Q h=3 R=(1 1) s=7: Hurwitz 41566745704/2835, data 41566745704/2835  ok
+Q h=3 R=(1 1) s=8: Hurwitz 35664490661/896, data 35664490661/896  ok
+Xi0 h=3 R=(1 1) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(1 2) s=0: Hurwitz 41/9072, data 41/9072  ok
+Q h=3 R=(1 2) s=1: Hurwitz 785263/11340, data 785263/11340  ok
+Q h=3 R=(1 2) s=2: Hurwitz 11327333/3360, data 11327333/3360  ok
+Q h=3 R=(1 2) s=3: Hurwitz 18066847/405, data 18066847/405  ok
+Q h=3 R=(1 2) s=4: Hurwitz 1413633055/4536, data 1413633055/4536  ok
+Q h=3 R=(1 2) s=5: Hurwitz 124669915/84, data 124669915/84  ok
+Q h=3 R=(1 2) s=6: Hurwitz 70896056087/12960, data 70896056087/12960  ok
+Q h=3 R=(1 2) s=7: Hurwitz 47571217618/2835, data 47571217618/2835  ok
+Q h=3 R=(1 2) s=8: Hurwitz 25104064079/560, data 25104064079/560  ok
+Xi0 h=3 R=(1 2) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(1 3) s=0: Hurwitz 459/4480, data 459/4480  ok
+Q h=3 R=(1 3) s=1: Hurwitz 13171007/90720, data 13171007/90720  ok
+Q h=3 R=(1 3) s=2: Hurwitz 69704521/13440, data 69704521/13440  ok
+Q h=3 R=(1 3) s=3: Hurwitz 3622409/60, data 3622409/60  ok
+Q h=3 R=(1 3) s=4: Hurwitz 28549264279/72576, data 28549264279/72576  ok
+Q h=3 R=(1 3) s=5: Hurwitz 6025146773/3360, data 6025146773/3360  ok
+Q h=3 R=(1 3) s=6: Hurwitz 12315589127/1920, data 12315589127/1920  ok
+Q h=3 R=(1 3) s=7: Hurwitz 218312526961/11340, data 218312526961/11340  ok
+Q h=3 R=(1 3) s=8: Hurwitz 226630744987/4480, data 226630744987/4480  ok
+Xi0 h=3 R=(1 3) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(1 4) s=0: Hurwitz 908/945, data 908/945  ok
+Q h=3 R=(1 4) s=1: Hurwitz 6873299/22680, data 6873299/22680  ok
+Q h=3 R=(1 4) s=2: Hurwitz 26997337/3360, data 26997337/3360  ok
+Q h=3 R=(1 4) s=3: Hurwitz 22195087/270, data 22195087/270  ok
+Q h=3 R=(1 4) s=4: Hurwitz 4525179677/9072, data 4525179677/9072  ok
+Q h=3 R=(1 4) s=5: Hurwitz 1826286011/840, data 1826286011/840  ok
+Q h=3 R=(1 4) s=6: Hurwitz 32580074521/4320, data 32580074521/4320  ok
+Q h=3 R=(1 4) s=7: Hurwitz 62752275517/2835, data 62752275517/2835  ok
+Q h=3 R=(1 4) s=8: Hurwitz 16011942973/280, data 16011942973/280  ok
+Xi0 h=3 R=(1 4) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(1 5) s=0: Hurwitz 3125/567, data 3125/567  ok
+Q h=3 R=(1 5) s=1: Hurwitz 225041237/362880, data 225041237/362880  ok
+Q h=3 R=(1 5) s=2: Hurwitz 75373391/6048, data 75373391/6048  ok
+Q h=3 R=(1 5) s=3: Hurwitz 40757313557/362880, data 40757313557/362880  ok
+Q h=3 R=(1 5) s=4: Hurwitz 2878398025/4536, data 2878398025/4536  ok
+Q h=3 R=(1 5) s=5: Hurwitz 9134979053/3456, data 9134979053/3456  ok
+Q h=3 R=(1 5) s=6: Hurwitz 806225515313/90720, data 806225515313/90720  ok
+Q h=3 R=(1 5) s=7: Hurwitz 1850460672241/72576, data 1850460672241/72576  ok
+Q h=3 R=(1 5) s=8: Hurwitz 122365324471/1890, data 122365324471/1890  ok
+Xi0 h=3 R=(1 5) (s=-1): Hurwitz -325/24192, data -325/24192  ok
+Q h=3 R=(2 2) s=0: Hurwitz 82/945, data 82/945  ok
+Q h=3 R=(2 2) s=1: Hurwitz 6215473/45360, data 6215473/45360  ok
+Q h=3 R=(2 2) s=2: Hurwitz 8481079/1680, data 8481079/1680  ok
+Q h=3 R=(2 2) s=3: Hurwitz 3210307/54, data 3210307/54  ok
+Q h=3 R=(2 2) s=4: Hurwitz 883351673/2268, data 883351673/2268  ok
+Q h=3 R=(2 2) s=5: Hurwitz 2991810683/1680, data 2991810683/1680  ok
+Q h=3 R=(2 2) s=6: Hurwitz 13784694193/2160, data 13784694193/2160  ok
+Q h=3 R=(2 2) s=7: Hurwitz 108731254991/5670, data 108731254991/5670  ok
+Q h=3 R=(2 2) s=8: Hurwitz 353019983/7, data 353019983/7  ok
+Xi0 h=3 R=(2 2) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(2 3) s=0: Hurwitz 15551/20160, data 15551/20160  ok
+Q h=3 R=(2 3) s=1: Hurwitz 12522823/45360, data 12522823/45360  ok
+Q h=3 R=(2 3) s=2: Hurwitz 10299349/1344, data 10299349/1344  ok
+Q h=3 R=(2 3) s=3: Hurwitz 3196949/40, data 3196949/40  ok
+Q h=3 R=(2 3) s=4: Hurwitz 17768621831/36288, data 17768621831/36288  ok
+Q h=3 R=(2 3) s=5: Hurwitz 3605117293/1680, data 3605117293/1680  ok
+Q h=3 R=(2 3) s=6: Hurwitz 21510074449/2880, data 21510074449/2880  ok
+Q h=3 R=(2 3) s=7: Hurwitz 49826945705/2268, data 49826945705/2268  ok
+Q h=3 R=(2 3) s=8: Hurwitz 127334854799/2240, data 127334854799/2240  ok
+Xi0 h=3 R=(2 3) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(2 4) s=0: Hurwitz 394979/90720, data 394979/90720  ok
+Q h=3 R=(2 4) s=1: Hurwitz 6274297/11340, data 6274297/11340  ok
+Q h=3 R=(2 4) s=2: Hurwitz 50583899/4320, data 50583899/4320  ok
+Q h=3 R=(2 4) s=3: Hurwitz 61281569/567, data 61281569/567  ok
+Q h=3 R=(2 4) s=4: Hurwitz 56098321787/90720, data 56098321787/90720  ok
+Q h=3 R=(2 4) s=5: Hurwitz 9808068721/3780, data 9808068721/3780  ok
+Q h=3 R=(2 4) s=6: Hurwitz 795106580711/90720, data 795106580711/90720  ok
+Q h=3 R=(2 4) s=7: Hurwitz 71507920492/2835, data 71507920492/2835  ok
+Q h=3 R=(2 4) s=8: Hurwitz 388208804509/6048, data 388208804509/6048  ok
+Xi0 h=3 R=(2 4) (s=-1): Hurwitz -8/945, data -8/945  ok
+Q h=3 R=(2 5) s=0: Hurwitz 275789/15120, data 275789/15120  ok
+Q h=3 R=(2 5) s=1: Hurwitz 98682167/90720, data 98682167/90720  ok
+Q h=3 R=(2 5) s=2: Hurwitz 10028547/560, data 10028547/560  ok
+Q h=3 R=(2 5) s=3: Hurwitz 316749041/2160, data 316749041/2160  ok
+Q h=3 R=(2 5) s=4: Hurwitz 7107047735/9072, data 7107047735/9072  ok
+Q h=3 R=(2 5) s=5: Hurwitz 3523363329/1120, data 3523363329/1120  ok
+Q h=3 R=(2 5) s=6: Hurwitz 22264335251/2160, data 22264335251/2160  ok
+Q h=3 R=(2 5) s=7: Hurwitz 657987110201/22680, data 657987110201/22680  ok
+Q h=3 R=(2 5) s=8: Hurwitz 40649692191/560, data 40649692191/560  ok
+Xi0 h=3 R=(2 5) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(3 3) s=0: Hurwitz 1143/280, data 1143/280  ok
+Q h=3 R=(3 3) s=1: Hurwitz 5526179/10368, data 5526179/10368  ok
+Q h=3 R=(3 3) s=2: Hurwitz 38533399/3360, data 38533399/3360  ok
+Q h=3 R=(3 3) s=3: Hurwitz 478017433/4480, data 478017433/4480  ok
+Q h=3 R=(3 3) s=4: Hurwitz 496566817/810, data 496566817/810  ok
+Q h=3 R=(3 3) s=5: Hurwitz 11552676153/4480, data 11552676153/4480  ok
+Q h=3 R=(3 3) s=6: Hurwitz 1954141193/224, data 1954141193/224  ok
+Q h=3 R=(3 3) s=7: Hurwitz 9120100641577/362880, data 9120100641577/362880  ok
+Q h=3 R=(3 3) s=8: Hurwitz 2560142949/40, data 2560142949/40  ok
+Xi0 h=3 R=(3 3) (s=-1): Hurwitz -39/4480, data -39/4480  ok
+Q h=3 R=(3 4) s=0: Hurwitz 1001173/60480, data 1001173/60480  ok
+Q h=3 R=(3 4) s=1: Hurwitz 11603203/11340, data 11603203/11340  ok
+Q h=3 R=(3 4) s=2: Hurwitz 116030837/6720, data 116030837/6720  ok
+Q h=3 R=(3 4) s=3: Hurwitz 154711451/1080, data 154711451/1080  ok
+Q h=3 R=(3 4) s=4: Hurwitz 27974528759/36288, data 27974528759/36288  ok
+Q h=3 R=(3 4) s=5: Hurwitz 1305923257/420, data 1305923257/420  ok
+Q h=3 R=(3 4) s=6: Hurwitz 88273738303/8640, data 88273738303/8640  ok
+Q h=3 R=(3 4) s=7: Hurwitz 326727402859/11340, data 326727402859/11340  ok
+Q h=3 R=(3 4) s=8: Hurwitz 161699016743/2240, data 161699016743/2240  ok
+Xi0 h=3 R=(3 4) (s=-1): Hurwitz 0, data 0  ok
+Q h=3 R=(3 5) s=0: Hurwitz 417013/7560, data 417013/7560  ok
+Q h=3 R=(3 5) s=1: Hurwitz 700162679/362880, data 700162679/362880  ok
+Q h=3 R=(3 5) s=2: Hurwitz 14568129/560, data 14568129/560  ok
+Q h=3 R=(3 5) s=3: Hurwitz 23336981569/120960, data 23336981569/120960  ok
+Q h=3 R=(3 5) s=4: Hurwitz 8821703411/9072, data 8821703411/9072  ok
+Q h=3 R=(3 5) s=5: Hurwitz 50521276037/13440, data 50521276037/13440  ok
+Q h=3 R=(3 5) s=6: Hurwitz 90655943023/7560, data 90655943023/7560  ok
+Q h=3 R=(3 5) s=7: Hurwitz 12007595255507/362880, data 12007595255507/362880  ok
+Q h=3 R=(3 5) s=8: Hurwitz 34246746683/420, data 34246746683/420  ok
+Xi0 h=3 R=(3 5) (s=-1): Hurwitz 1301/2688, data 1301/2688  ok
+Q h=3 R=(4 4) s=0: Hurwitz 50368/945, data 50368/945  ok
+Q h=3 R=(4 4) s=1: Hurwitz 85368319/45360, data 85368319/45360  ok
+Q h=3 R=(4 4) s=2: Hurwitz 43010731/1680, data 43010731/1680  ok
+Q h=3 R=(4 4) s=3: Hurwitz 360774383/1890, data 360774383/1890  ok
+Q h=3 R=(4 4) s=4: Hurwitz 10944850213/11340, data 10944850213/11340  ok
+Q h=3 R=(4 4) s=5: Hurwitz 2093481199/560, data 2093481199/560  ok
+Q h=3 R=(4 4) s=6: Hurwitz 180549764323/15120, data 180549764323/15120  ok
+Q h=3 R=(4 4) s=7: Hurwitz 93498673837/2835, data 93498673837/2835  ok
+Q h=3 R=(4 4) s=8: Hurwitz 8538798551/105, data 8538798551/105  ok
+Xi0 h=3 R=(4 4) (s=-1): Hurwitz 97/210, data 97/210  ok
+Q h=3 R=(4 5) s=0: Hurwitz 2718451/18144, data 2718451/18144  ok
+Q h=3 R=(4 5) s=1: Hurwitz 309033419/90720, data 309033419/90720  ok
+Q h=3 R=(4 5) s=2: Hurwitz 382841743/10080, data 382841743/10080  ok
+Q h=3 R=(4 5) s=3: Hurwitz 2893044541/11340, data 2893044541/11340  ok
+Q h=3 R=(4 5) s=4: Hurwitz 21989846887/18144, data 21989846887/18144  ok
+Q h=3 R=(4 5) s=5: Hurwitz 9084461429/2016, data 9084461429/2016  ok
+Q h=3 R=(4 5) s=6: Hurwitz 1268835291419/90720, data 1268835291419/90720  ok
+Q h=3 R=(4 5) s=7: Hurwitz 1715453498611/45360, data 1715453498611/45360  ok
+Q h=3 R=(4 5) s=8: Hurwitz 924835208767/10080, data 924835208767/10080  ok
+Xi0 h=3 R=(4 5) (s=-1): Hurwitz 3553/1008, data 3553/1008  ok
+Q h=3 R=(5 5) s=0: Hurwitz 141875/384, data 141875/384  ok
+Q h=3 R=(5 5) s=1: Hurwitz 1076003743/181440, data 1076003743/181440  ok
+Q h=3 R=(5 5) s=2: Hurwitz 49703571/896, data 49703571/896  ok
+Q h=3 R=(5 5) s=3: Hurwitz 324763483/960, data 324763483/960  ok
+Q h=3 R=(5 5) s=4: Hurwitz 109942674295/72576, data 109942674295/72576  ok
+Q h=3 R=(5 5) s=5: Hurwitz 7278219385/1344, data 7278219385/1344  ok
+Q h=3 R=(5 5) s=6: Hurwitz 73234885791/4480, data 73234885791/4480  ok
+Q h=3 R=(5 5) s=7: Hurwitz 224462953253/5184, data 224462953253/5184  ok
+Q h=3 R=(5 5) s=8: Hurwitz 1389557610617/13440, data 1389557610617/13440  ok
+Xi0 h=3 R=(5 5) (s=-1): Hurwitz 21305/1344, data 21305/1344  ok
+Xi0_2(1) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_2(2) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_2(3) vs stored r=1 polynomial: Hurwitz -1/320, data -1/320  ok
+Xi0_2(4) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_2(5) vs stored r=1 polynomial: Hurwitz 19/480, data 19/480  ok
+Xi0_3(1) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_3(2) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_3(3) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_3(4) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_3(5) vs stored r=1 polynomial: Hurwitz -65/24192, data -65/24192  ok
+Xi0_3(6) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_3(7) vs stored r=1 polynomial: Hurwitz 913/8064, data 913/8064  ok
+Xi0_3(8) vs stored r=1 polynomial: Hurwitz 41/54, data 41/54  ok
+Xi0_4(1) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_4(2) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_4(3) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_4(4) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_4(5) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_4(6) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_4(7) vs stored r=1 polynomial: Hurwitz -1967/276480, data -1967/276480  ok
+Xi0_4(8) vs stored r=1 polynomial: Hurwitz 0, data 0  ok
+Xi0_4(9) vs stored r=1 polynomial: Hurwitz 1693/2560, data 1693/2560  ok
+Xi0_4(10) vs stored r=1 polynomial: Hurwitz 559/90, data 559/90  ok
+Xi0_4(11) vs stored r=1 polynomial: Hurwitz 105373/3072, data 105373/3072  ok
+B2: 429 comparisons, 0 mismatches
+
+real	7m38.575s
+user	7m36.499s
+sys	0m0.655s

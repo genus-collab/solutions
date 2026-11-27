@@ -1,0 +1,9 @@
+tau=2/1 (g,n)=(2,1): 2 zeros in the range |mu|<=2, 0 violations; first layer |mu|=3: (3)!=0
+tau=2/1 (g,n)=(2,2): 2 zeros in the range |mu|<=3, 0 violations; first layer |mu|=4: (1,3)!=0 (2,2)!=0
+tau=2/1 (g,n)=(3,1): 4 zeros in the range |mu|<=4, 0 violations; first layer |mu|=5: (5)!=0
+tau=2/1 (g,n)=(3,2): 6 zeros in the range |mu|<=5, 0 violations; first layer |mu|=6: (1,5)!=0 (2,4)!=0 (3,3)!=0
+tau=2/1 (g,n)=(4,1): 6 zeros in the range |mu|<=6, 0 violations; first layer |mu|=7: (7)!=0
+tau=2/1 (g,n)=(4,2): 12 zeros in the range |mu|<=7, 0 violations; first layer |mu|=8: (1,7)!=0 (2,6)!=0 (3,5)!=0 (4,4)!=0
+tau=2/1 (g,n)=(5,1): 8 zeros in the range |mu|<=8, 0 violations; first layer |mu|=9: (9)!=0
+tau=2/1 (g,n)=(5,2): 20 zeros in the range |mu|<=9, 0 violations; first layer |mu|=10: (1,9)!=0 (2,8)!=0 (3,7)!=0 (4,6)!=0 (5,5)!=0
+tau=2/1: 78 coefficients, 0 violations

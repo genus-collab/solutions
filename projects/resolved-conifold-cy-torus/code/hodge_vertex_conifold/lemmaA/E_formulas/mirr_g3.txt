@@ -1,0 +1,12 @@
+genus 3 R = {2} D = 1: all components 0
+genus 3 R = {3} D = 2: all components 0
+genus 3 R = {4} D = 3: all components 0
+genus 3 R = {5} D = 4 (control): non-zero components {0 1 2 3}
+genus 3 R = {2,2} D = 2: all components 0
+genus 3 R = {2,3} D = 3: all components 0
+genus 3 R = {2,4} D = 4 (control): non-zero components {0 1 2 3}
+genus 3 R = {3,3} D = 4 (control): non-zero components {0 1 2 3}
+genus 3 R = {2,2,2} D = 3: all components 0
+genus 3 R = {2,2,3} D = 4 (control): non-zero components {0 1 2 3}
+genus 3 R = {2,2,2,2} D = 4 (control): non-zero components {0 1 2 3}
+SUMMARY genus 3: 6 irreducible points, 0 with a non-zero component; 5 control points (D = 2h-2), 5 non-zero; 1.0 s

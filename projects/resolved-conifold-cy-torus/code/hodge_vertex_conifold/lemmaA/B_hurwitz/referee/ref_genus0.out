@@ -1,0 +1,9 @@
+genus 0 R=(2 2 2): Lambert p0 1, PropD 1, formula 1 ok
+genus 0 R=(2 3 5): Lambert p0 1, PropD 1, formula 1 ok
+genus 0 R=(4 4 4): Lambert p0 1, PropD 1, formula 1 ok
+genus 0 R=(2 2 2 2): Lambert p0 7, PropD 7, formula 7 ok
+genus 0 R=(2 3 3 4): Lambert p0 11, PropD 11, formula 11 ok
+genus 0 R=(2 2 2 2 2): Lambert p0 72, PropD 72, formula 72 ok
+genus 0 R=(3 3 3 3 2): Lambert p0 156, PropD 156, formula 156 ok
+genus 0 R=(2 2 2 2 2 2): Lambert p0 990, PropD 990, formula 990 ok
+GENUS0: 8 checks, 0 failures

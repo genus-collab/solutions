@@ -1,0 +1,3 @@
+x=2: t^0 predicted -385/746496, direct -385/746496 ok | t^1 predicted -97/139968, direct -97/139968 ok
+x=1/3: t^0 predicted -18325/47775744, direct -18325/47775744 ok | t^1 predicted -133/663552, direct -133/663552 ok
+x=-3/5: t^0 predicted 22982201/207360000, direct 22982201/207360000 ok | t^1 predicted -217/288, direct -217/288 ok

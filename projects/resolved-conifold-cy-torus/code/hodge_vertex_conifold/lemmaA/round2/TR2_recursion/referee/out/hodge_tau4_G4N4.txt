@@ -1,0 +1,1 @@
+tau=4/1 G=4 N=4 X=2 primes=1: 201 TR-vs-Hodge(P2) comparisons, 0 mismatches, 0 skipped (no table / zero normalisation); Lemma D: 76 zeros in range, 0 violations; 185s

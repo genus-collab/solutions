@@ -1,0 +1,45 @@
+# R2mv::compute gmax=7 K=20 P=70 Smax=36: 49735 partitions (conjugate pairs) in 48 s
+# engine done in 48 s (p = 1000000007, tau = 749653434)
+g=1 T=(13) D=12 excess=-12: R2mv 256833944, RouteE-table 256833944  MATCH
+g=2 T=(13) D=12 excess=-10: R2mv 525460640, RouteE-table 525460640  MATCH
+g=3 T=(13) D=12 excess=-8: R2mv 946559488, RouteE-table 946559488  MATCH
+g=4 T=(13) D=12 excess=-6: R2mv 907075544, RouteE-table 907075544  MATCH
+g=5 T=(13) D=12 excess=-4: R2mv 106729385, RouteE-table 106729385  MATCH
+g=6 T=(13) D=12 excess=-2: R2mv 403559844, RouteE-table 403559844  MATCH
+g=7 T=(13) D=12 excess=0: R2mv 974338488, g7-engine 974338488  MATCH
+g=1 T=(2,13) D=13 excess=-13: R2mv 679008529, RouteE-table 679008529  MATCH
+g=2 T=(2,13) D=13 excess=-11: R2mv 894120404, RouteE-table 894120404  MATCH
+g=3 T=(2,13) D=13 excess=-9: R2mv 276226518, RouteE-table 276226518  MATCH
+g=4 T=(2,13) D=13 excess=-7: R2mv 621369946, RouteE-table 621369946  MATCH
+g=5 T=(2,13) D=13 excess=-5: R2mv 473405264, RouteE-table 473405264  MATCH
+g=6 T=(2,13) D=13 excess=-3: R2mv 240556483, RouteE-table 240556483  MATCH
+g=7 T=(2,13) D=13 excess=-1: R2mv 1413483, g7-engine 1413483  MATCH
+g=1 T=(14) D=13 excess=-13: R2mv 298500611, RouteE-table 298500611  MATCH
+g=2 T=(14) D=13 excess=-11: R2mv 987750659, RouteE-table 987750659  MATCH
+g=3 T=(14) D=13 excess=-9: R2mv 213430035, RouteE-table 213430035  MATCH
+g=4 T=(14) D=13 excess=-7: R2mv 335943951, RouteE-table 335943951  MATCH
+g=5 T=(14) D=13 excess=-5: R2mv 345786354, RouteE-table 345786354  MATCH
+g=6 T=(14) D=13 excess=-3: R2mv 665716617, RouteE-table 665716617  MATCH
+g=7 T=(14) D=13 excess=-1: R2mv 996710330, g7-engine 996710330  MATCH
+g=1 T=(2,14) D=14 excess=-14: R2mv 560842471, RouteE-table 560842471  MATCH
+g=2 T=(2,14) D=14 excess=-12: R2mv 943243792, RouteE-table 943243792  MATCH
+g=3 T=(2,14) D=14 excess=-10: R2mv 55263127, RouteE-table 55263127  MATCH
+g=4 T=(2,14) D=14 excess=-8: R2mv 161941883, RouteE-table 161941883  MATCH
+g=5 T=(2,14) D=14 excess=-6: R2mv 899702740, RouteE-table 899702740  MATCH
+g=6 T=(2,14) D=14 excess=-4: R2mv 433629795, RouteE-table 433629795  MATCH
+g=7 T=(2,14) D=14 excess=-2: R2mv 320043870, g7-engine 320043870  MATCH
+g=1 T=(12) D=11 excess=-11: R2mv 215167277, RouteE-table 215167277  MATCH
+g=2 T=(12) D=11 excess=-9: R2mv 697172187, RouteE-table 697172187  MATCH
+g=3 T=(12) D=11 excess=-7: R2mv 232626525, RouteE-table 232626525  MATCH
+g=4 T=(12) D=11 excess=-5: R2mv 428357890, RouteE-table 428357890  MATCH
+g=5 T=(12) D=11 excess=-3: R2mv 377576927, RouteE-table 377576927  MATCH
+g=6 T=(12) D=11 excess=-1: R2mv 730575926, RouteE-table 730575926  MATCH
+g=7 T=(12) D=11 excess=1: R2mv 0 (no reference)  [in range: 0 as Lemma A predicts]
+g=1 T=(2,11) D=11 excess=-11: R2mv 165340640, RouteE-table 165340640  MATCH
+g=2 T=(2,11) D=11 excess=-9: R2mv 815228273, RouteE-table 815228273  MATCH
+g=3 T=(2,11) D=11 excess=-7: R2mv 471229203, RouteE-table 471229203  MATCH
+g=4 T=(2,11) D=11 excess=-5: R2mv 964893844, RouteE-table 964893844  MATCH
+g=5 T=(2,11) D=11 excess=-3: R2mv 685873739, RouteE-table 685873739  MATCH
+g=6 T=(2,11) D=11 excess=-1: R2mv 723491307, RouteE-table 723491307  MATCH
+g=7 T=(2,11) D=11 excess=1: R2mv 0 (no reference)  [in range: 0 as Lemma A predicts]
+SUMMARY validate p=1000000007 tau=749653434 gmax=7: 40 matches, 0 mismatches, 2 without reference; 54 s

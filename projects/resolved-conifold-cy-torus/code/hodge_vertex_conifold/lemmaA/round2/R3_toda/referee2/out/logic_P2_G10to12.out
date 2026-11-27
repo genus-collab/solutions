@@ -1,0 +1,9 @@
+# P_2 = (1/2) D[1,1] + (1/2) D[2]
+(L1) P_2 G=10: 915 relations (R at levels D-1, D = 1..17, r <= 999), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=11: 1597 relations (R at levels D-1, D = 1..19, r <= 999), survivors 0, circular 0, relations without exactly one target 0
+(L1) P_2 G=12: 2714 relations (R at levels D-1, D = 1..21, r <= 999), survivors 0, circular 0, relations without exactly one target 0
+(L1) SUMMARY P_2 G=10..12: 5226 relations, 0 surviving non-target terms, 0 circular terms; zero-reasons: FF 60820076, H1 32185513, H2 266305, L0 6186485
+(L2) Theorem B step, G=10: every profile at every level D <= 2G-3 reached, all side terms killed by (H1)/(H2)
+(L2) Theorem B step, G=11: every profile at every level D <= 2G-3 reached, all side terms killed by (H1)/(H2)
+(L2) Theorem B step, G=12: every profile at every level D <= 2G-3 reached, all side terms killed by (H1)/(H2)
+(L2) SUMMARY G=10..12: 1576 Theorem-B steps, 0 gaps

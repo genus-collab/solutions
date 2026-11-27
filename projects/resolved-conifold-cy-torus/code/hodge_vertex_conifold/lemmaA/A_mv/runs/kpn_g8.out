@@ -1,0 +1,6 @@
+genus 8: 372 multisets in the range, 2976 unknowns, 47696 equations (KP); rank 2976, nullity 0
+   not forced to vanish: none
+
+real	4m12.260s
+user	4m10.967s
+sys	0m0.749s

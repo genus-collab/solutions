@@ -1,0 +1,37 @@
+tau=-2/7 g=6 mu=(8,8): ref 2027654686  engine 2027654686  OK
+tau=-2/7 g=6 mu=(8,7): Pi = 0, [x^mu]F = 0 (consistent)
+tau=-2/7 g=6 mu=(8,6): ref 1091487696  engine 1091487696  OK
+tau=-2/7 g=6 mu=(8,5): ref 1665463814  engine 1665463814  OK
+tau=-2/7 g=6 mu=(8,4): ref 516257603  engine 516257603  OK
+tau=-2/7 g=6 mu=(8,3): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(8,2): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(8,1): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(7,7): Pi = 0, [x^mu]F = 0 (consistent)
+tau=-2/7 g=6 mu=(7,6): Pi = 0, [x^mu]F = 0 (consistent)
+tau=-2/7 g=6 mu=(7,5): Pi = 0, [x^mu]F = 0 (consistent)
+tau=-2/7 g=6 mu=(7,4): Pi = 0, [x^mu]F = 0 (consistent)
+tau=-2/7 g=6 mu=(7,3): Pi = 0, [x^mu]F = 0 (consistent)
+tau=-2/7 g=6 mu=(7,2): Pi = 0, [x^mu]F = 0 (consistent)
+tau=-2/7 g=6 mu=(7,1): Pi = 0, [x^mu]F = 0 (consistent)
+tau=-2/7 g=6 mu=(6,6): ref 252190031  engine 252190031  OK
+tau=-2/7 g=6 mu=(6,5): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(6,4): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(6,3): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(6,2): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(6,1): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(5,5): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(5,4): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(5,3): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(5,2): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(5,1): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(4,4): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(4,3): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(4,2): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(4,1): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(3,3): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(3,2): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(3,1): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(2,2): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(2,1): ref 0  engine 0  OK  [range]
+tau=-2/7 g=6 mu=(1,1): ref 0  engine 0  OK  [range]
+SUMMARY tau=-2/7 g=6 n=2 jmax=8 p=2147483647: tuples 28, compared 28, OK 28, MISMATCH 0, no-data 0; range points 23 (ref zero at 23)

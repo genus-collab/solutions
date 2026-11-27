@@ -1,0 +1,44 @@
+branch tau=2/7: j <= 40, 0 mismatches
+branch tau=-5/13: j <= 40, 0 mismatches
+res tau=2/7: n <= 8, t-order <= 12: 104 coefficients, 0 mismatches
+res tau=-3/11: n <= 8, t-order <= 12: 104 coefficients, 0 mismatches
+curve tau=2/7 K=13: phi(0)=0, phi(1)=1 failures 0; curve identity (l-independence and value -log C) mismatches 0
+curve tau=-3/5 K=13: phi(0)=0, phi(1)=1 failures 0; curve identity (l-independence and value -log C) mismatches 0
+curve tau=3 K=13: phi(0)=0, phi(1)=1 failures 0; curve identity (l-independence and value -log C) mismatches 0
+curve tau=-1/5 K=13: phi(0)=0, phi(1)=1 failures 0; curve identity (l-independence and value -log C) mismatches 0
+curve tau=-2/9 K=13: phi(0)=0, phi(1)=1 failures 0; curve identity (l-independence and value -log C) mismatches 0
+path tau=2/7 K=6 seed=1 dens=1: 6 non-zero P_j; 42 coefficients (21 non-zero), 0 mismatches
+path tau=-3/5 K=10 seed=1 dens=1: 10 non-zero P_j; 110 coefficients (55 non-zero), 0 mismatches
+path tau=-3/5 K=10 seed=2 dens=1: 10 non-zero P_j; 110 coefficients (55 non-zero), 0 mismatches
+path tau=5/3 K=11 seed=3 dens=0.5: 5 non-zero P_j; 132 coefficients (66 non-zero), 0 mismatches
+path tau=-2/7 K=10 seed=4 dens=0.7: 9 non-zero P_j; 110 coefficients (55 non-zero), 0 mismatches
+path tau=-1/5 K=12 seed=11 dens=0.8: 10 non-zero P_j; 156 coefficients (78 non-zero), 0 mismatches
+path tau=3 K=12 seed=12 dens=1: 12 non-zero P_j; 156 coefficients (78 non-zero), 0 mismatches
+ref_leaf: 275 comparisons, 0 mismatches
+ref_t1 K=24 tau=2/7 mode=sym strat=big p=1000000007: 7337 multisets, 576 coefficients compared, 0 mismatches; non-zero relation orders 13; 26s
+ref_t1 K=24 tau=-2/9 mode=r2 strat=big p=1000000007: 7337 multisets, 48 coefficients compared, 0 mismatches; non-zero relation orders 13; 14s
+ref_t1 cons K=16 tau=3/11 p=1000000007: 914 multisets, 0 inconsistent (strategies big/small/mix), 1s
+sensitivity PERT=noH1:
+ref_t1 K=12 tau=2/7 mode=sym strat=big p=1000000007: 271 multisets, 144 coefficients compared, 66 mismatches (orders 2 3 4 5 6 7 8 9 10 11 12); non-zero relation orders 12; 0s
+sensitivity PERT=Tt:
+ref_t1 K=12 tau=2/7 mode=sym strat=big p=1000000007: 271 multisets, 144 coefficients compared, 45 mismatches (orders 4 5 6 7 8 9 10 11 12); non-zero relation orders 11; 0s
+sensitivity PERT=E0:
+ref_t1 K=12 tau=2/7 mode=sym strat=big p=1000000007: 271 multisets, 144 coefficients compared, 28 mismatches (orders 6 7 8 9 10 11 12); non-zero relation orders 10; 0s
+sensitivity forcing G=8 without polar rows:
+ref_forcing G=8 p=1000000007: Lemma 8.1 row spaces at 31 framings, 0 differ; forcing inside hypotheses: 0 of 12 forced; odd polar orders non-zero: 0; 5s
+sensitivity forcing G=8 without two-leaf rows:
+ref_forcing G=8 p=1000000007: Lemma 8.1 row spaces at 31 framings, 0 differ; forcing inside hypotheses: 3 of 12 forced; odd polar orders non-zero: 0; 5s
+ref_tlr G=3 window=2 t=3..4: 4 unknowns, 24 equations, rank 2, NULLITY 2
+ref_tlr G=4 window=3 t=3..6: 12 unknowns, 78 equations, rank 9, NULLITY 3
+ref_tlr G=5 window=4 t=3..8: 24 unknowns, 168 equations, rank 24, NULLITY 0
+ref_tlr G=6 window=5 t=3..10: 40 unknowns, 300 equations, rank 40, NULLITY 0
+ref_tlr G=7 window=6 t=3..12: 60 unknowns, 480 equations, rank 60, NULLITY 0
+ref_tlr G=4 window=4 t=2..6: 20 unknowns, 72 equations, rank 9, NULLITY 11
+ref_tlr G=5 window=5 t=2..8: 35 unknowns, 156 equations, rank 24, NULLITY 11
+ref_tlr G=6 window=6 t=2..10: 54 unknowns, 280 equations, rank 47, NULLITY 7
+ref_tlr G=7 window=7 t=2..12: 77 unknowns, 450 equations, rank 77, NULLITY 0
+ref_tlr G=3 window=3 t=3..4: 6 unknowns, 22 equations, rank 2, NULLITY 4
+ref_tlr G=4 window=4 t=3..6: 16 unknowns, 72 equations, rank 9, NULLITY 7
+ref_tlr G=5 window=5 t=3..8: 30 unknowns, 156 equations, rank 24, NULLITY 6
+ref_tlr G=6 window=6 t=3..10: 48 unknowns, 280 equations, rank 47, NULLITY 1
+ref_tlr G=7 window=7 t=3..12: 70 unknowns, 450 equations, rank 70, NULLITY 0

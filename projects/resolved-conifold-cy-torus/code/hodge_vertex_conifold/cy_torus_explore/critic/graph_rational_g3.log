@@ -1,0 +1,45 @@
+evaluated 70 points 12.1s
+g 3 frame B weights -5/4 19/7 2/3 17/5 -533/420
+ total (m,n,degN): (0, 4, 4)
+ graph 0 gv [3] edges 0  Disc^-8 (1-Q)^-4 deg N 20  at Q=oo: regular  at Q=1: pole
+ graph 1 gv [2] edges 1  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 2 gv [1] edges 2  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 3 gv [0] edges 3  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 4 gv [1, 2] edges 2  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 5 gv [0, 2] edges 3  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 6 gv [1, 1] edges 4  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 7 gv [1, 1] edges 3  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 8 gv [0, 1] edges 6  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 9 gv [0, 1] edges 5  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 10 gv [0, 1] edges 4  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 11 gv [0, 1] edges 4  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 12 gv [0, 0] edges 8  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 13 gv [0, 0] edges 7  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 14 gv [0, 0] edges 6  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 15 gv [0, 0] edges 5  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 16 gv [1, 1, 1] edges 4  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 17 gv [0, 1, 1] edges 6  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 18 gv [0, 1, 1] edges 5  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 19 gv [0, 1, 1] edges 5  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 20 gv [0, 0, 1] edges 8  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 21 gv [0, 0, 1] edges 8  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 22 gv [0, 0, 1] edges 7  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 23 gv [0, 0, 1] edges 7  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 24 gv [0, 0, 1] edges 6  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 25 gv [0, 0, 1] edges 6  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 26 gv [0, 0, 0] edges 10  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 27 gv [0, 0, 0] edges 9  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 28 gv [0, 0, 0] edges 9  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 29 gv [0, 0, 0] edges 8  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 30 gv [0, 0, 0] edges 7  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 31 gv [0, 1, 1, 1] edges 6  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 32 gv [0, 0, 1, 1] edges 8  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 33 gv [0, 0, 1, 1] edges 7  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 34 gv [0, 0, 0, 1] edges 10  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 35 gv [0, 0, 0, 1] edges 9  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 36 gv [0, 0, 0, 1] edges 8  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 37 gv [0, 0, 0, 0] edges 12  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 38 gv [0, 0, 0, 0] edges 12  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 39 gv [0, 0, 0, 0] edges 11  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 40 gv [0, 0, 0, 0] edges 10  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular
+ graph 41 gv [0, 0, 0, 0] edges 9  Disc^-8 (1-Q)^-0 deg N 16  at Q=oo: regular  at Q=1: regular

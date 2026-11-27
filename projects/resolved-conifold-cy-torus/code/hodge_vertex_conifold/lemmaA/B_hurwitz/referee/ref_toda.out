@@ -1,0 +1,2 @@
+Toda (T), referee engine: monomials of degree <= 9, beta^<= 18: 1843 coefficients (424 non-zero), 0 mismatches
+sanity: sign-flipped right side fails at p_1 beta^4: yes

@@ -1,0 +1,3 @@
+M G=7 R=(13) EVEN [target level D(R+2)=13, excess -1] NONZERO: (-1/500)t^8 + (-9/500)t^9 + (-7/100)t^10 + (-77/500)t^11 + (-21/100)t^12 + (-91/500)t^13 + (-49/500)t^14 + (-3/100)t^15 + (-1/250)t^16 [=
+M G=7 R=(13) ODD  [target level D(R+2)=13, excess -1] zero polynomial [= ThmM]
+SUMMARY mode=data eq=M: 2 relations, 1 failures (table values used 12, engine values 0)

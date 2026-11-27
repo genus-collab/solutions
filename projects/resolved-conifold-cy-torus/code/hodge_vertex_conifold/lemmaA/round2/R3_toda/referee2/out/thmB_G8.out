@@ -1,0 +1,5 @@
+# R2mv::compute gmax=8 K=23 P=80 Smax=41: 130218 partitions (conjugate pairs) in 320 s
+Theorem B, g=8 R=(15) [R+2 = (2,15): D=15, excess -1]: residual 0 OK
+Theorem B, g=8 R=(16) [R+2 = (2,16): D=16, excess -2]: residual 0 OK
+Theorem B, g=8 R=(14) [R+2 = (2,14): D=14, excess 0]: residual 0 OK
+# genus <= 6 engine values cross-checked against tables: 468, mismatches 0; total 329 s

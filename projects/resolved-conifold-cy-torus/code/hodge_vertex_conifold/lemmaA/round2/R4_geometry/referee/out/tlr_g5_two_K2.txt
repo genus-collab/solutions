@@ -1,0 +1,1 @@
+genus 5 (reduced KP system, 13 samples): 35 one-leaf unknowns, 110 equations, rank 35, nullity 0

@@ -1,0 +1,42 @@
+\documentclass[11pt, reqno]{amsart}
+
+% Abridged version of main.tex. The preamble and the macros are those of the long version,
+% copied into summary/preamble_summary.tex and summary/macros_summary.tex.
+\input{summary/preamble_summary}
+\input{summary/macros_summary}
+
+%-------------------------------------------------------------------------------
+% Title
+
+\title[Refined GW theory of the resolved conifold on the CY torus (abridged)]{Refined Gromov--Witten theory of the resolved conifold on the Calabi--Yau torus: conifold regularity and rigidity}
+\author{The GENUS collaboration}
+\genusproject{solutions/resolved-conifold-cy-torus (abridged)}
+\thanks{This is the abridged version of the long document of the same title (output/main.pdf of this GENUS project), referred to as [L] throughout. It states the results and sketches the arguments; complete proofs are in the long version.}
+
+\begin{document}
+
+\begin{abstract}
+We study the equivariant Gromov--Witten theory of the resolved conifold times $\bbC^2$ on its Calabi--Yau four-torus, written as a Givental--Teleman graph sum with the normalised Hodge class of weights $(E,-\epsilon_1,-\epsilon_2)$ at every vertex. At the conifold point $\cQ=1$ one of the two idempotents is singular. We state, and sketch the proofs of, four results: every factor of the graph sum at the singular idempotent has a leaf structure, that is, after one rescaling the coefficient of $t^k$, $\cQ=\re^t$, is a combination of the functions $1/(E-j\psi)$ with $j\leq k+1$ (Theorem~A, at every non-degenerate weight point of the five-torus); the graph sum equals the Gromov--Witten potential on the Calabi--Yau torus (Theorem~B); every coloured stable graph with an edge is regular at the conifold point, the whole polar part being carried by the single-vertex graph with the value $\beta_{2g-2}(\epsilon_1,\epsilon_2)\,t^{2-2g}$ (Theorem~C); and for $g\geq2$ the genus-$g$ potential equals $\Pg\Li_{3-2g}(\cQ)/(\epsilon_1\epsilon_2)$ up to its constant term, that is, $\epsilon_1\epsilon_2\GW_{g,d}=\Pg d^{2g-3}$ for $d\geq1$ (Theorem~D). With genus $0$ and $1$ this proves the rigidity conjecture of \cite{BS} for the resolved conifold, for every non-zero class and every group acting through the Calabi--Yau torus. The inputs are Teleman's classification, the $R$-matrix action of Pandharipande--Pixton--Zvonkine, virtual localisation, Mumford's formula, Stirling's series, and two theorems on Hodge integrals from the companion paper \cite{LP2}; in genus one and degree $d\geq2$ the formula of \cite{BS} on the subtori $\alpha_i=\epsilon_j$ is used as an input. The constant-map term is not determined. This is the abridged version of the paper: it gives the statements and the key points of the arguments, and refers to the long version for the complete proofs.
+\end{abstract}
+
+\maketitle
+\genusdisclaimer
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\input{summary/s1_intro}
+\input{summary/s2_setup_a}
+\input{summary/s2_setup_b}
+\input{summary/s3_rows}
+\input{summary/s4_leaves_a}
+\input{summary/s4_leaves_b}
+\input{summary/s5_identification}
+\input{summary/s6_regularity}
+\input{summary/s7_rigidity}
+\input{summary/s8_evidence}
+
+\bibliographystyle{amsalpha}
+\bibliography{refs}
+
+\end{document}

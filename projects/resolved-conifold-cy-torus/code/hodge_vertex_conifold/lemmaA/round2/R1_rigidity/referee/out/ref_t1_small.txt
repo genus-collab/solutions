@@ -1,0 +1,9 @@
+tau=2/7 K=5: propagation 83 consistency checks (0 failed), time 1s; kappa_2..4 = 1/24 0 -1/2880
+ref_t1 (rat): 25 coefficients compared, 0 mismatches; propagation checks 83, failed 0
+tau=-5/8 K=8: propagation 420 consistency checks (0 failed), time 2s; kappa_2..4 = 1/24 0 -1/2880
+tau=7/4 K=8: propagation 420 consistency checks (0 failed), time 3s; kappa_2..4 = 1/24 0 -1/2880
+ref_t1 (rat): 128 coefficients compared, 0 mismatches; propagation checks 840, failed 0
+tau=-5/8 K=10: propagation 1057 consistency checks (0 failed), time 0s; kappa_2..4 = 41666667 0 174652779
+tau=7/4 K=10: propagation 1057 consistency checks (0 failed), time 0s; kappa_2..4 = 41666667 0 174652779
+tau=1/3 K=10: propagation 1057 consistency checks (0 failed), time 0s; kappa_2..4 = 41666667 0 174652779
+ref_t1 (mod): 300 coefficients compared, 0 mismatches; propagation checks 3171, failed 0

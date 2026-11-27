@@ -1,0 +1,16 @@
+tau=4 g=4 mu=(5,5): ref 843970847  engine -  (no data)
+tau=4 g=4 mu=(5,4): ref 1390563326  engine -  (no data)
+tau=4 g=4 mu=(5,3): ref 2046086627  engine -  (no data)
+tau=4 g=4 mu=(5,2): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(5,1): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(4,4): ref 1443732941  engine -  (no data)
+tau=4 g=4 mu=(4,3): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(4,2): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(4,1): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(3,3): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(3,2): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(3,1): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(2,2): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(2,1): ref 0  engine -  (no data)  [range]
+tau=4 g=4 mu=(1,1): ref 0  engine -  (no data)  [range]
+SUMMARY tau=4 g=4 n=2 jmax=5 p=2147483647: tuples 15, compared 0, OK 0, MISMATCH 0, no-data 15; range points 11 (ref zero at 11)

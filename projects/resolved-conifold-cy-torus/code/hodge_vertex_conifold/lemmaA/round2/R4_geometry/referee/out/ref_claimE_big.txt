@@ -1,0 +1,5 @@
+(V1) to order w^40: holds
+(V2) as polynomials in a, to order w^40: holds
+(P) P_j(w) = 0: coefficients of w^{2N}, N = 1..20, vanish as polynomials in j: yes
+(R) deg R_j <= j+1 for j = 1..36: yes
+(E) E(h,j) = 0 for 1 <= j <= 2h-1, h <= 16: 256 pairs, all zero

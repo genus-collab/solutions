@@ -1,0 +1,8 @@
+A  s.1 identities (W_1=0, L quadratic, (1.1), (1.4), norm, Delta=1/eta(e,e), Disc, (1.3), eta^-1): True
+B  Lemma 5.3: Disc(Q_1)=0 to O(a0^11), val(Q_1)=2, c2,c3,c4 as stated: True
+C  Lemma 5.5 / (1.5): U_1(s), V_2(s) in K[[s]], limits L_i, W_2, Delta_i, flop e(wt'): True
+D  Lemma 5.6: A_n, degrees, Li(1/Q) symmetry, series, polar part (-1)^(n+1) n! t^(-n-1), constants: True
+E  power sums: h_nw h_(E,-a1,-A) = h_w ; flop constants ; a0=0: h_nw h_w^-1 = h_(a1,a2,-E): True
+F  S(y) coefficients, P_2, P_3, beta_2, beta_4, gap_2 from Z_2 (Theorem VI at g=2), BS display vs P_g: True
+G  fresh d=1 localisation: g=1,2 equal P_1, P_2 on T_CY: True | equal BS line-1694 display and Lemma 5.7 shape on T_max: True | g=2 differs from P_2 off T_CY: True
+ALL: True

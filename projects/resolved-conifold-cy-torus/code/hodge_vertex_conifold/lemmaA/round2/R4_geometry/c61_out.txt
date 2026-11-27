@@ -1,0 +1,6 @@
+genus 2: (6.1) vs table: 40 comparisons (5 tau x 8 j), 0 mismatches
+genus 3: (6.1) vs table: 66 comparisons (6 tau x 11 j), 0 mismatches
+genus 4: (6.1) vs table: 98 comparisons (7 tau x 14 j), 0 mismatches
+genus 5: (6.1) vs table: 136 comparisons (8 tau x 17 j), 0 mismatches
+genus 6: (6.1) vs table: 180 comparisons (9 tau x 20 j), 0 mismatches
+genus 7: (6.1) vs table: 230 comparisons (10 tau x 23 j), 0 mismatches

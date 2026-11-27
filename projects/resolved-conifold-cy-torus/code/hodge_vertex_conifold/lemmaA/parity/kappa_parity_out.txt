@@ -1,0 +1,44 @@
+tau = 0
+  D= 1  kappa=1/2                          pred=1/2                          OK
+  D= 2  kappa=1/24                         pred=1/24                         OK
+  D= 3  kappa=0                            pred=0                            OK
+  D= 4  kappa=-1/2880                      pred=-1/2880                      OK
+  D= 5  kappa=0                            pred=0                            OK
+  D= 6  kappa=1/181440                     pred=1/181440                     OK
+  D= 7  kappa=0                            pred=0                            OK
+  D= 8  kappa=-1/9676800                   pred=-1/9676800                   OK
+  D= 9  kappa=0                            pred=0                            OK
+  D=10  kappa=1/479001600                  pred=1/479001600                  OK
+tau = 2/7
+  D= 1  kappa=11/14                        pred=11/14                        OK
+  D= 2  kappa=1/24                         pred=1/24                         OK
+  D= 3  kappa=0                            pred=0                            OK
+  D= 4  kappa=-1/2880                      pred=-1/2880                      OK
+  D= 5  kappa=0                            pred=0                            OK
+  D= 6  kappa=1/181440                     pred=1/181440                     OK
+  D= 7  kappa=0                            pred=0                            OK
+  D= 8  kappa=-1/9676800                   pred=-1/9676800                   OK
+  D= 9  kappa=0                            pred=0                            OK
+  D=10  kappa=1/479001600                  pred=1/479001600                  OK
+tau = 3/2
+  D= 1  kappa=2                            pred=2                            OK
+  D= 2  kappa=1/24                         pred=1/24                         OK
+  D= 3  kappa=0                            pred=0                            OK
+  D= 4  kappa=-1/2880                      pred=-1/2880                      OK
+  D= 5  kappa=0                            pred=0                            OK
+  D= 6  kappa=1/181440                     pred=1/181440                     OK
+  D= 7  kappa=0                            pred=0                            OK
+  D= 8  kappa=-1/9676800                   pred=-1/9676800                   OK
+  D= 9  kappa=0                            pred=0                            OK
+  D=10  kappa=1/479001600                  pred=1/479001600                  OK
+tau = -5/3
+  D= 1  kappa=-7/6                         pred=-7/6                         OK
+  D= 2  kappa=1/24                         pred=1/24                         OK
+  D= 3  kappa=0                            pred=0                            OK
+  D= 4  kappa=-1/2880                      pred=-1/2880                      OK
+  D= 5  kappa=0                            pred=0                            OK
+  D= 6  kappa=1/181440                     pred=1/181440                     OK
+  D= 7  kappa=0                            pred=0                            OK
+  D= 8  kappa=-1/9676800                   pred=-1/9676800                   OK
+  D= 9  kappa=0                            pred=0                            OK
+  D=10  kappa=1/479001600                  pred=1/479001600                  OK

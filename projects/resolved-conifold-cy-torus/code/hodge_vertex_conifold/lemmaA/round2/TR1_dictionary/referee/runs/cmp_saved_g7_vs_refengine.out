@@ -1,0 +1,56 @@
+tau=1 (1,1) [ref_engine]: 2 coefficients compared, 0 mismatches
+tau=1 (2,1) [ref_engine]: 5 coefficients compared, 0 mismatches
+tau=1 (3,1) [ref_engine]: 8 coefficients compared, 0 mismatches
+tau=1 (4,1) [ref_engine]: 11 coefficients compared, 0 mismatches
+tau=1 (5,1) [ref_engine]: 14 coefficients compared, 0 mismatches
+tau=1 (6,1) [ref_engine]: 17 coefficients compared, 0 mismatches
+tau=1 (7,1) [ref_engine]: 20 coefficients compared, 0 mismatches
+TOTAL 77 compared, 0 mismatches
+tau=2 (1,1) [ref_engine]: 2 coefficients compared, 0 mismatches
+tau=2 (2,1) [ref_engine]: 5 coefficients compared, 0 mismatches
+tau=2 (3,1) [ref_engine]: 8 coefficients compared, 0 mismatches
+tau=2 (4,1) [ref_engine]: 11 coefficients compared, 0 mismatches
+tau=2 (5,1) [ref_engine]: 14 coefficients compared, 0 mismatches
+tau=2 (6,1) [ref_engine]: 17 coefficients compared, 0 mismatches
+tau=2 (7,1) [ref_engine]: 20 coefficients compared, 0 mismatches
+TOTAL 77 compared, 0 mismatches
+tau=3 (1,1) [ref_engine]: 2 coefficients compared, 0 mismatches
+tau=3 (2,1) [ref_engine]: 5 coefficients compared, 0 mismatches
+tau=3 (3,1) [ref_engine]: 8 coefficients compared, 0 mismatches
+tau=3 (4,1) [ref_engine]: 11 coefficients compared, 0 mismatches
+tau=3 (5,1) [ref_engine]: 14 coefficients compared, 0 mismatches
+tau=3 (6,1) [ref_engine]: 17 coefficients compared, 0 mismatches
+tau=3 (7,1) [ref_engine]: 20 coefficients compared, 0 mismatches
+TOTAL 77 compared, 0 mismatches
+tau=1/2 (1,1) [ref_engine]: 2 coefficients compared, 0 mismatches
+tau=1/2 (2,1) [ref_engine]: 5 coefficients compared, 0 mismatches
+tau=1/2 (3,1) [ref_engine]: 8 coefficients compared, 0 mismatches
+tau=1/2 (4,1) [ref_engine]: 11 coefficients compared, 0 mismatches
+tau=1/2 (5,1) [ref_engine]: 14 coefficients compared, 0 mismatches
+tau=1/2 (6,1) [ref_engine]: 17 coefficients compared, 0 mismatches
+tau=1/2 (7,1) [ref_engine]: 20 coefficients compared, 0 mismatches
+TOTAL 77 compared, 0 mismatches
+tau=-1/2 (1,1) [ref_engine]: 2 coefficients compared, 0 mismatches
+tau=-1/2 (2,1) [ref_engine]: 5 coefficients compared, 0 mismatches
+tau=-1/2 (3,1) [ref_engine]: 8 coefficients compared, 0 mismatches
+tau=-1/2 (4,1) [ref_engine]: 11 coefficients compared, 0 mismatches
+tau=-1/2 (5,1) [ref_engine]: 14 coefficients compared, 0 mismatches
+tau=-1/2 (6,1) [ref_engine]: 17 coefficients compared, 0 mismatches
+tau=-1/2 (7,1) [ref_engine]: 20 coefficients compared, 0 mismatches
+TOTAL 77 compared, 0 mismatches
+tau=-1/3 (1,1) [ref_engine]: 2 coefficients compared, 0 mismatches
+tau=-1/3 (2,1) [ref_engine]: 5 coefficients compared, 0 mismatches
+tau=-1/3 (3,1) [ref_engine]: 8 coefficients compared, 0 mismatches
+tau=-1/3 (4,1) [ref_engine]: 11 coefficients compared, 0 mismatches
+tau=-1/3 (5,1) [ref_engine]: 14 coefficients compared, 0 mismatches
+tau=-1/3 (6,1) [ref_engine]: 17 coefficients compared, 0 mismatches
+tau=-1/3 (7,1) [ref_engine]: 20 coefficients compared, 0 mismatches
+TOTAL 77 compared, 0 mismatches
+tau=2/3 (1,1) [ref_engine]: 2 coefficients compared, 0 mismatches
+tau=2/3 (2,1) [ref_engine]: 5 coefficients compared, 0 mismatches
+tau=2/3 (3,1) [ref_engine]: 8 coefficients compared, 0 mismatches
+tau=2/3 (4,1) [ref_engine]: 11 coefficients compared, 0 mismatches
+tau=2/3 (5,1) [ref_engine]: 14 coefficients compared, 0 mismatches
+tau=2/3 (6,1) [ref_engine]: 17 coefficients compared, 0 mismatches
+tau=2/3 (7,1) [ref_engine]: 20 coefficients compared, 0 mismatches
+TOTAL 77 compared, 0 mismatches

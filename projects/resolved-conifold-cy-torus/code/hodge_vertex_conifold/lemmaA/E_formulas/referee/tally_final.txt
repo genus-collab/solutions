@@ -1,0 +1,6 @@
+genus 2 (r = 1,2,3,4): Lemma-A points 1, violations 0 | controls 2, non-zero 2, all components non-zero 2 | Conj-M lattice 15, violations 0 | Hurwitz zero/non-zero: D=2 0/2, D=3 3/0, D=4 0/5
+genus 3 (r = 1,2,3,4,5,6): Lemma-A points 6, violations 0 | controls 5, non-zero 5, all components non-zero 5 | Conj-M lattice 33, violations 0 | Hurwitz zero/non-zero: D=4 0/5, D=5 7/0, D=6 0/11
+genus 4 (r = 1,2,3,4,5,6,7,8): Lemma-A points 18, violations 0 | controls 11, non-zero 11, all components non-zero 11 | Conj-M lattice 59, violations 0 | Hurwitz zero/non-zero: D=6 0/11, D=7 15/0, D=8 0/22
+genus 5 (r = 1,2,3,4,5,6,7,8,9,10): Lemma-A points 44, violations 0 | controls 22, non-zero 22, all components non-zero 22 | Conj-M lattice 716, violations 0 | Hurwitz zero/non-zero: D=8 0/22, D=9 30/0, D=10 0/42
+genus 6 (r = 1,2,3,4,5,6,7,8,9,10): Lemma-A points 96, violations 0 | controls 42, non-zero 42, all components non-zero 42 | Conj-M lattice 668, violations 0 | Hurwitz zero/non-zero: D=10 0/42, D=11 55/0, D=12 0/75
+genus 7 (r = 1,2,3,4,5,6,7,8,9,10,11): Lemma-A points 194, violations 0 | controls 76, non-zero 76, all components non-zero 76 | Conj-M lattice 1015, violations 0 | Hurwitz zero/non-zero: D=12 0/70, D=13 89/0, D=14 0/116

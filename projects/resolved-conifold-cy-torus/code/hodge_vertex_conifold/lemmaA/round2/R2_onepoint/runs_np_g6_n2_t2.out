@@ -1,0 +1,37 @@
+tau=2 g=6 mu=(8,8): xy 438129443470079/6879707136  engine 438129443470079/6879707136  OK
+tau=2 g=6 mu=(8,7): xy 163183667191051/25798901760  engine 163183667191051/25798901760  OK
+tau=2 g=6 mu=(8,6): xy 7013265455891/24078974976  engine 7013265455891/24078974976  OK
+tau=2 g=6 mu=(8,5): xy -1255187259047/81983176704  engine -1255187259047/81983176704  OK
+tau=2 g=6 mu=(8,4): xy -479512340125/227030335488  engine -479512340125/227030335488  OK
+tau=2 g=6 mu=(8,3): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(8,2): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(8,1): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(7,7): xy 11566330128013/40131624960  engine 11566330128013/40131624960  OK
+tau=2 g=6 mu=(7,6): xy -2334911869379/156513337344  engine -2334911869379/156513337344  OK
+tau=2 g=6 mu=(7,5): xy -13881530705/6879707136  engine -13881530705/6879707136  OK
+tau=2 g=6 mu=(7,4): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(7,3): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(7,2): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(7,1): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(6,6): xy -177494049425/89436192768  engine -177494049425/89436192768  OK
+tau=2 g=6 mu=(6,5): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(6,4): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(6,3): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(6,2): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(6,1): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(5,5): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(5,4): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(5,3): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(5,2): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(5,1): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(4,4): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(4,3): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(4,2): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(4,1): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(3,3): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(3,2): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(3,1): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(2,2): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(2,1): xy 0  engine 0  OK  [range]
+tau=2 g=6 mu=(1,1): xy 0  engine 0  OK  [range]
+total 36, mismatches 0, homogeneity violations 0

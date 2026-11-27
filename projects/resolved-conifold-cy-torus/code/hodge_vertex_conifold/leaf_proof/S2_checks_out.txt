@@ -1,0 +1,6 @@
+S2_checks.pl, N = 22: 943 checks, 0 failures
+  A: 204
+  B: 208
+  C: 105
+  D: 414
+  E: 12

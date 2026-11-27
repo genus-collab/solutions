@@ -1,0 +1,19 @@
+  [R2TR] u(zeta) to order 64, 104.2 s
+  [R2TR] basis E_l, l <= 13, 792.6 s
+  [R2TR] (0,4) 5 terms 0.0 s
+  [R2TR] (1,2) 6 terms 0.0 s
+  [R2TR] (0,5) 21 terms 0.0 s
+  [R2TR] (1,3) 20 terms 0.0 s
+  [R2TR] (2,1) 5 terms 0.0 s
+  [R2TR] (0,6) 84 terms 0.1 s
+  [R2TR] (1,4) 70 terms 0.1 s
+  [R2TR] (2,2) 21 terms 0.1 s
+  [R2TR] (1,5) 252 terms 0.9 s
+  [R2TR] (2,3) 84 terms 0.6 s
+  [R2TR] (3,1) 8 terms 0.3 s
+  [R2TR] (2,4) 330 terms 3.5 s
+  [R2TR] (3,2) 45 terms 1.0 s
+  [R2TR] (3,3) 220 terms 5.4 s
+  [R2TR] (4,1) 11 terms 1.2 s
+  [R2TR] (4,2) 78 terms 5.4 s
+  [R2TR] (5,1) 14 terms 4.8 s

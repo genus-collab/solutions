@@ -1,0 +1,16 @@
+twoleaf G=13: 299 one-leaf unknowns, 132 two-leaf multisets, 2508 equations (32 samples, p=998244353): rank 299, NULLITY 0
+  [12 s]
+twoleaf G=14: 350 one-leaf unknowns, 156 two-leaf multisets, 3120 equations (34 samples, p=998244353): rank 350, NULLITY 0
+  [19 s]
+twoleaf G=15: 405 one-leaf unknowns, 182 two-leaf multisets, 3822 equations (36 samples, p=998244353): rank 405, NULLITY 0
+  [29 s]
+twoleaf G=16: 464 one-leaf unknowns, 210 two-leaf multisets, 4620 equations (38 samples, p=998244353): rank 464, NULLITY 0
+  [48 s]
+twoleaf G=17: 527 one-leaf unknowns, 240 two-leaf multisets, 5520 equations (40 samples, p=998244353): rank 527, NULLITY 0
+  [71 s]
+twoleaf G=18: 594 one-leaf unknowns, 272 two-leaf multisets, 6528 equations (42 samples, p=998244353): rank 594, NULLITY 0
+  [97 s]
+twoleaf G=19: 665 one-leaf unknowns, 306 two-leaf multisets, 7650 equations (44 samples, p=998244353): rank 665, NULLITY 0
+  [132 s]
+twoleaf G=20: 740 one-leaf unknowns, 342 two-leaf multisets, 8892 equations (46 samples, p=998244353): rank 740, NULLITY 0
+  [171 s]

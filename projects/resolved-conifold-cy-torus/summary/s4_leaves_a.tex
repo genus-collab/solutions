@@ -1,0 +1,152 @@
+% s4_leaves_a. First half of the abridged Section 4 (long version: Sections 4.1-4.5); label prefix: lea.
+\section{The leaf structure at generic weights}
+\label{sec:lea}
+
+This section sketches the proof of Theorem~A (\cref{thm:int-leaf}). The weights are complex numbers satisfying (ND) of \cref{def:set-ND}, or indeterminates, and all factors are the frame-B factors of \cref{def:set-rows,def:set-factors} at their true idempotents. From \cref{sec:row} we use, in the notation $\Fhyp$, $\Ephi$, $\Hcoef_n$, $\Gauss$, $\alg$ introduced there: the closed form $\rr_{0,1}=(E/(E+z))\,\Fhyp\,\Ephi\,\alg$ (\cref{thm:row-main}), the regularity at $z=0$ of its $\tau$-coefficients (\cref{cor:row-reg}), the value $\rr_{0,1}(z;0)=E/(E+z)$ (\cref{cor:row-F2}), and $\Lv_1=\muq+\dphi'$ with $\muq\coloneqq E/\tau-\wA$ \Lref{Lemma~3.29}. The singular idempotent comes first; the regular colour, the legs, the assembly of the proof, the closed forms and the case $\alpha_0=0$ follow, from \cref{thm:lea-row2reg} on. Along the way the following is obtained.
+
+\begin{thm}[{\Lref{Theorem~4.3}: quantum differential equation and symplecticity}]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-qde}
+\emergencystretch=2em
+\begin{enumerate}
+\item For $i=1,2$ the second row of the quantum differential equation holds to all orders in $z$: $z\Dop_i\vv_i=(\Aop-\Lv_i)\vv_i$, with $\vv_i$, $\Dop_i$ as in \cref{def:set-rows} and $\Aop\coloneqq\begin{bsmallmatrix}0&1\\-\alpha_1\alpha_2/\tau&E/\tau-\alpha_0\end{bsmallmatrix}$ acting on covectors (\cref{prop:lea-row2,thm:lea-row2reg}).
+\item $\langle\vv_i(w),\vv_j(-w)\rangle=\delta_{ij}\Delta_i$ for $i,j\in\{1,2\}$, to all orders in $w$ (\cref{prop:lea-K1}, \cref{cor:lea-orth}, \Lref{Corollary~4.29}).
+\item $\vv_2(z;0)=\hreg(z)\,(1,\alpha_1\alpha_2/E)$ with $\hreg=h_{(\alpha_1,\alpha_2,\wA,\wB,-E,-E)}$ (\cref{prop:lea-regrows}; the scalar factor is the analytic input there, the direction is formal).
+\end{enumerate}
+\end{thm}
+
+%-------------------------------------------------------------------------------
+\subsection{The key formula, Row 2 and the symplectic constant at the singular idempotent}
+\label{sec:lea-qde}
+
+\begin{prop}[{\Lref{Proposition~4.5}: the Hessian in the Euler coordinate; $\rho$; the key formula}]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-key}
+\leavevmode
+\begin{enumerate}
+\item $\Delta_1=\alpha_1\wA\epsilon_1\epsilon_2\,\cW_2(U_1)=-\epsilon_1\epsilon_2E^3\,\alg^2\,\tau^{-2}$.
+\item $\rho=\tau/(t\alg)=1+\uq t/(2E^2)+O(t^2)$ is a unit of $\Oan$, and $t^2\rho^2\Delta_1=-\epsilon_1\epsilon_2E^3$ exactly ((F1) for $\Delta_1$).
+\item (Key formula.)
+\begin{equation}
+\label{eq:lea-key}
+\Gk(z;t)\coloneqq\rho\,\rr_{0,1}(z;t)=\frac{E}{E+z}\,\frac{\tau}{t}\,\Fhyp(z,\tau)\,\Ephi(z,\tau);
+\end{equation}
+$\Gk$ lies in $\bbC\fps{z,t}$, $\Gk(z;0)=E/(E+z)$, and every $\Gk_k\coloneqq\coef{t^k}\Gk$ is a rational function of $z$ without pole at $z=0$ whose Taylor series is $\coef{t^k}(\rho\,\rr_{0,1})$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+(i) is the fourth form of \eqref{eq:set-Delta} with \cref{lem:row-hess}. So $\rho^{-2}=(t\alg/\tau)^2$, and multiplying \cref{thm:row-main} by $\rho$ cancels $\alg$; the properties of $\Gk_k$ are \cref{cor:row-reg} with (T) of \cref{lem:set-rings}.
+\end{proof}
+
+\begin{prop}[{\Lref{Proposition~4.7}: the second row of the quantum differential equation at the singular idempotent}]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-row2}
+To all orders in $z$, as identities of meromorphic functions of $t$ near $0$: $\rr_{1,1}=(\Lv_1+z\Dop_1)\rr_{0,1}$ (Row~1, which is the definition \eqref{eq:set-Hrow}), and $(\Lv_1+z\Dop_1)\rr_{1,1}=-(\alpha_1\alpha_2/\tau)\,\rr_{0,1}+(E/\tau-\alpha_0)\,\rr_{1,1}$ (Row~2). In matrix form $z\Dop_1\vv_1=(\Aop-\Lv_1)\vv_1$, and for $\leaVn\coloneqq t\rho\,\vv_1$, an element of $\bbC\fps{z,t}^2$,
+\begin{equation}
+\label{eq:lea-qde}
+z\,\leaVn'=(\Aop-\Lv_1)\leaVn .
+\end{equation}
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+By \cref{prop:lea-key}(ii), $\Lv_1+z\Dop_1=(t\rho)^{-1}(z\,\dd/\dd t+\Lv_1)(t\rho)$, and since $z\Ephi'=-\dphi'\Ephi$ and $\Lv_1-\dphi'=\muq$, conjugation by $\tau\Ephi$ turns $z\,\dd/\dd t+\Lv_1$ into $\Dz+\omq$, $\omq\coloneqq(E+z)/\tau-(\wA+z)$. By \eqref{eq:lea-key}, $t\rho\,\rr_{0,1}=(E/(E+z))\,\tau\Ephi\Fhyp$, hence $t\rho\,\rr_{1,1}=(E/(E+z))\,\tau\Ephi\,(\Dz+\omq)\Fhyp$, and Row~2 is the vanishing on $\Fhyp$ of the left side of the operator identity \Lref{Lemma~4.6}
+\[
+(\Dz+\omq)^2-\Big(\frac{E}{\tau}-\alpha_0\Big)(\Dz+\omq)+\frac{\alpha_1\alpha_2}{\tau}=\frac{(1-\tau)z^2}{\tau}\,\Gauss ,
+\]
+and $\Gauss[\Fhyp]=0$: Row~2 is Gauss's equation in operator form. The regular idempotent is not used.
+\end{proof}
+
+\emph{The operator $\Aop$} \Lref{Proposition~4.8}. $\Aop$ is the transpose of the matrix of $H\qprod$ in the basis $(1,H)$, and by \cref{prop:set-frob,prop:set-idem,lem:set-eig}: the covectors $\chiv_i\coloneqq(1,\Lv_i)$ satisfy $\Aop\chiv_i=\Lv_i\chiv_i$ and $\langle\chiv_i,\chiv_j\rangle=\delta_{ij}\Delta_i$; $\Aop$ is self-adjoint for \eqref{eq:set-pairing}, $\langle\Aop a,b\rangle=\langle a,\Aop b\rangle$; and $\Aop-\Lv_1$ is $(\Lv_2-\Lv_1)$ times the orthogonal projector onto $\bbC\chiv_2$, of rank one: with $\pim(a)\coloneqq\langle a,\chiv_2\rangle$,
+\begin{equation}
+\label{eq:lea-proj}
+\langle(\Aop-\Lv_1)a,b\rangle=\frac{\pim(a)\pim(b)}{\Thf}\quad\text{for all covectors }a,b,\qquad
+\Thf\coloneqq\frac{\Delta_2}{\Lv_2-\Lv_1}=-\epsilon_1\epsilon_2\wB\tau\sast\Lv_2 .
+\end{equation}
+
+\begin{prop}[{\Lref{Proposition~4.9}: the symplectic constant $\Kone=1$}]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-K1}
+Let $\Kone(z)\coloneqq\langle\vv_1(z),\vv_1(-z)\rangle/\Delta_1$, $\brow(\psi)\coloneqq\rho\,\vv_1(-\psi)$ and $\gl(\psi;t)\coloneqq\Gk(-\psi;t)$.
+\begin{enumerate}
+\item The series $\Kone$ lies in $\bbC\fps{z,t}$ and is independent of $t$.
+\item $\brow=\big(\gl,\ (\Lv_1-\psi/t)\gl-\psi\gl'\big)$, the series $t\brow$ lies in $\bbC\fps{\psi,t}^2$, $\coef{t^{-1}}\brow=(0,E)$, and $\gl|_{t=0}=E/(E-\psi)=E\lf_1(\psi)$.
+\item $\Kone=1$, that is, $\langle\vv_1(w),\vv_1(-w)\rangle=\Delta_1$ to all orders in $w$.
+\item Consequently the subtracted term in \eqref{eq:set-edge} is $\Pij_{11}(-w,w)=-\Delta_1$; moreover $\langle\brow(\psi),\brow(-\psi)\rangle=\rho^2\Delta_1=-\epsilon_1\epsilon_2E^3/t^2$ and $-\psi\,\frac{\dd}{\dd t}\big(t\brow(\psi)\big)=(\Aop-\Lv_1)\big(t\brow(\psi)\big)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+(i) $\Kone=-\langle\leaVn(z),\leaVn(-z)\rangle/(\epsilon_1\epsilon_2E^3)$, and its $t$-derivative vanishes by \eqref{eq:lea-qde} at $z$ and at $-z$ and the self-adjointness of $\Aop$. (ii) is Row~1 with the key formula: $t\rho\,\rr_{1,1}=(t\Lv_1+z)\Gk+zt\Gk'$, with value $(E+z)\cdot E/(E+z)=E$ at $t=0$, since $t\Lv_1\to E$; the $z$-dependence cancels because of the geometric form of (F2). (iii) By (ii), $\Kone|_{t=0}=-\langle(0,E),(0,E)\rangle/(\epsilon_1\epsilon_2E^3)=1$; conclude by (i). (iv) follows from (iii) and \eqref{eq:lea-qde} at $z=-\psi$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The dilaton leaves: (L1)}
+\label{sec:lea-L1}
+
+This subsection and the next are written over $\Kal$, by (P) of \cref{lem:set-rings}.
+
+\begin{thm}[{\Lref{Proposition~4.15 and Theorem~4.16}: (L1), all $k$}]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-L1}
+Put $\Rk_k(z)\coloneqq\coef{t^k}(z\Gk)$ and $q^{(k)}\coloneqq\coef{t^k}(\rho\qt)$. Then $\Rk_0=Ez/(E+z)$ and $q^{(0)}=\qo=E-E^2\lf_1$. For $k\geq1$ there are $a^{(k)}_j\in\Kal$, $1\leq j\leq k+1$, with
+\[
+\Rk_k(z)=\sum_{j=1}^{k+1}\frac{a_j^{(k)}}{E+jz},\qquad a_j^{(k)}=j\Res_{z=-E/j}\Rk_k,\qquad \sum_{j=1}^{k+1}a_j^{(k)}=0,\qquad
+q^{(k)}=\sum_{j=1}^{k+1}a_j^{(k)}\lf_j\in\Lsp_{k+1}.
+\]
+Moreover $\gl_0=E\lf_1$ and, for $k\geq1$, $\gl_k\coloneqq\coef{t^k}\gl=-\frac1E\sum_{j=1}^{k+1}j\,a_j^{(k)}\lf_j\in\Lsp_{k+1}$, with $\gl_k=O(\psi^{-2})$ at $\psi=\infty$.
+\end{thm}
+
+\begin{proof}[Sketch of proof]
+As $\qt=-\psi\,\rr_{0,1}(-\psi)$, $q^{(k)}(\psi)=\Rk_k(-\psi)$; by \eqref{eq:lea-key} and (T), $\Rk_k=\frac{Ez}{E+z}\sum_{n\leq k}d_{k,n}\Hcoef_n$ with $d_{k,n}=\coef{t^k}(\tau^{n+1}/t)$. Three facts give the result \Lref{Lemmas~4.12 and~4.13, Remark~4.14}. \emph{Poles away from $0$}: they are simple and lie in $\{-E/j:1\leq j\leq k+1\}$; they come from the coefficients $\Fhyp_n$ of $\Fhyp$ ($2\leq j\leq n+1$) and from $Ez/(E+z)$, the coefficients of $\Ephi$ being polynomials in $1/z$. \emph{No pole at $z=0$}: this is \cref{cor:row-reg}; the separate terms do have poles there. \emph{Value at $\infty$}: $\Fhyp_n(\infty)=1/(n+1)$, independently of the weights, and $\coef{\tau^m}\Ephi\to\delta_{m0}$, so $\Rk_k(\infty)=E\,\coef{t^k}\big(t^{-1}\sum_{n\geq0}\tau^{n+1}/(n+1)\big)=E\,\delta_{k0}$, because $-\log(1-\tau)=t$; this is how the normalisation by $\rho$ removes the constant leaf. Now (PF) of \cref{lem:set-leafid} gives the expansion of $\Rk_k$, $\Rk_k(0)=0$ the sum rule, and $\Gk_k=\Rk_k/z$ the formula for $\gl_k$.
+\end{proof}
+
+In particular every $\Dil_1(d)$ is analytic at $t=0$ ((F3) for $\Dil_1$), $\qt|_{t=0}=\qo$, and $\qt,\rho\qt\in\Dom$.
+
+%-------------------------------------------------------------------------------
+\subsection{The \texorpdfstring{$H$}{H}-row in leaf form and the \texorpdfstring{$\Edge_{11}$}{E11} flow: (F3) for \texorpdfstring{$\Edge_{11}$}{E11} and (L3)}
+\label{sec:lea-flow}
+
+Let $\Dg\coloneqq\frac{\dd}{\dd t}(t\gl)=\sum_k(k+1)\gl_kt^k$, so that $\brow=(\brow_0,\brow_1)=\big(\gl,\ \Lv_1\gl-\frac{\psi}{t}\Dg\big)$ by \cref{prop:lea-K1}(ii), and write $\Lv_1=E/t+\sum_{m\geq0}\lrem_mt^m$ (\cref{lem:set-eig}).
+
+\begin{prop}[{\Lref{Propositions~4.17 and~4.18}: the leaf structure of $\brow$ and its projection}]\genusstatus{AI-proposed, unchecked}
+\label{prop:lea-sigma}
+$\coef{t^{-1}}\brow=(0,E)$, and for $k\geq0$ both components of $\brow^{(k)}\coloneqq\coef{t^k}\brow$ lie in $\Lsp_{k+1}$: $\brow^{(k)}_0=\gl_k$ and $\brow^{(k)}_1=\big(E-(k+2)\psi\big)\gl_{k+1}+\sum_{m=0}^{k}\lrem_m\,\gl_{k-m}$. In particular $\brow^{(0)}=(E\lf_1,\ \alpha_1\alpha_2\lf_1)$; with $\coef{t^{-1}}\brow$ this is the second half of (F2). Moreover $\pim(\brow(\psi))=-\Thf\,\frac{\psi}{t}\,\Dg(\psi)$.
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+By (LAM3), the factor $E-(k+2)\psi$ turns the top leaf $\lf_{k+2}$ of $\gl_{k+1}=\sum_jg_j\lf_j$ into a constant, and the constants add up to $(k+2)\sum_jg_j/j$, which vanishes because $\gl_{k+1}=O(\psi^{-2})$ (\cref{thm:lea-L1}, (LAM4)); this works because the coefficient $E$ of the pole of $\Lv_1$ equals the leaf scale. For the projection, $\brow=\gl\,\chiv_1-(\psi/t)\Dg\,(0,1)$, $\pim(\chiv_1)=0$ and $\pim((0,1))=\Thf$.
+\end{proof}
+
+By \cref{prop:lea-K1}(iv) and \eqref{eq:set-edge}, with $\Yv\coloneqq t\brow\in\Kal\fps{t}\fps{\psi}^2$,
+\[
+\Ebar(\psi,\psi')\coloneqq t^2\rho^2\Edge_{11}(\psi,\psi')=\frac{-\epsilon_1\epsilon_2E^3-\langle\Yv(\psi),\Yv(\psi')\rangle}{\psi+\psi'} ,
+\]
+symmetric, and in $\Kal\fps{t}\fps{\psi,\psi'}$ as the numerator vanishes on $\psi'=-\psi$; so $\Edge_{11}(a,b)=\Edge_{11}(b,a)$.
+
+\begin{thm}[{\Lref{Theorem~4.20}: the $\Edge_{11}$ flow}]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-flow}
+In $\Kal\fps{t}\fps{\psi,\psi'}$,
+\begin{equation}
+\label{eq:lea-flow}
+\frac{\dd}{\dd t}\Ebar(\psi,\psi')=\Thf(t)\,\Dg(\psi)\,\Dg(\psi'),\qquad
+\Thf=\frac{\Delta_2}{\Lv_2-\Lv_1}=\epsilon_1\epsilon_2(\alpha_1\alpha_2-E\Lv_2)=\epsilon_1\epsilon_2(E\dphi'-\alpha_2\wA).
+\end{equation}
+\end{thm}
+
+\begin{proof}[Sketch of proof]
+By \cref{prop:lea-K1}(iv), $-\psi\,\Yv(\psi)'=(\Aop-\Lv_1)\Yv(\psi)$. So, by self-adjointness, $\psi\psi'$ times the $t$-derivative of the numerator is $(\psi+\psi')\langle(\Aop-\Lv_1)\Yv(\psi),\Yv(\psi')\rangle$: the denominator cancels, and by \eqref{eq:lea-proj} and \cref{prop:lea-sigma} the pairing is $\pim(\Yv(\psi))\pim(\Yv(\psi'))/\Thf=\Thf\,\psi\psi'\,\Dg(\psi)\Dg(\psi')$. The right side of \eqref{eq:lea-flow} is a product because $\Aop-\Lv_1$ has rank one. The forms of $\Thf$ are in \cref{lem:set-eig}; the last uses \eqref{eq:set-envelope}.
+\end{proof}
+
+\emph{Integration from $t=0$; (F3) for $\Edge_{11}$.} Since $\coef{t^0}\Yv=(0,E)$ and $\langle(0,E),(0,E)\rangle=-\epsilon_1\epsilon_2E^3$, one has $\coef{t^0}\Ebar=0$, so $\Ebar=\int_0^t\Thf\,\Dg(\psi)\Dg(\psi')\,\dd u$ termwise. Moreover $\Thf=O(t)$, as $\Delta_2$ is regular while $\Lv_2-\Lv_1=-\delta/\tau$ has a simple pole; with $\Thf_k\coloneqq\coef{t^k}\Thf$, $\Thf_1=-\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E^2$. Hence $\Ebar\in t^2\Kal\fps{t}\fps{\psi,\psi'}$, and $\Edge_{11}=(t\rho)^{-2}\Ebar$ is regular at $t=0$.
+
+\begin{thm}[{\Lref{Theorem~4.21}: (L3), all $k$}]\genusstatus{AI-proposed, unchecked}
+\label{thm:lea-L3}
+For every $k\geq0$,
+\[
+\coef{t^k}(\rho^2\Edge_{11})(\psi,\psi')=\frac{1}{k+2}\sum_{\substack{k_0\geq1,\ k_1,k_2\geq0\\ k_0+k_1+k_2=k+1}}\Thf_{k_0}(k_1+1)(k_2+1)\,\gl_{k_1}(\psi)\gl_{k_2}(\psi') ,
+\]
+which lies in $\mathrm{span}\{\lf_i(\psi)\lf_l(\psi'):i,l\geq1,\ (i-1)+(l-1)\leq k\}$ and is symmetric under $\psi\leftrightarrow\psi'$. At $t=0$ the loop has rank one:
+$\Edge_{11}(z,w)|_{t=0}=-\tfrac12\,\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB\,\lf_1(z)\lf_1(w)$.
+\end{thm}
+
+\begin{proof}[Sketch of proof]
+$\coef{t^k}(\rho^2\Edge_{11})=\coef{t^{k+2}}\Ebar=\coef{t^{k+1}}\big(\Thf\,\Dg(\psi)\Dg(\psi')\big)/(k+2)$ by the integrated flow. Every term has $k_1+k_2\leq k$, and $\gl_{k_i}\in\Lsp_{k_i+1}$ by \cref{thm:lea-L1}.
+\end{proof}
+
+As $\rho^{e-2}\in\Kal\fps{t}$, the same support bound holds for $\coef{t^k}(\rho^e\Edge_{11})$, for every integer $e$; and since $f_{1,b}=\coef{\psi'^b}\Edge_{11}$, (LAM1) shows that $\coef{t^k}(\rho f_{1,b})$ and $\coef{t^k}f_{1,b}$ lie in $\Lsp_{k+1}$ for every $b\geq0$: this is (L2) for $j=1$ \Lref{Corollary~4.22}.

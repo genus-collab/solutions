@@ -1,0 +1,4 @@
+genus 4 r=2: 1/sigma-structure ok; 280 coefficients compared with the engine, 0 mismatches
+genus 3 r=3: 1/sigma-structure ok; 589 coefficients compared with the engine, 0 mismatches
+compare exit 0
+(main session, 2026-10-31: round-1 check M3; wolframscript 18 s, then compare_g4r2.pl)

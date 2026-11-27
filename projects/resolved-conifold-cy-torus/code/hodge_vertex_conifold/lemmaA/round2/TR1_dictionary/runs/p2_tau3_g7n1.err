@@ -1,0 +1,35 @@
+  [setup] u done 40.0 s
+  [setup] xi_k done 60.4 s
+  [setup] y done 83.1 s
+  [rec] (0,4): 5 terms, 0.0 s
+  [rec] (1,2): 6 terms, 0.0 s
+  [rec] (0,5): 21 terms, 0.0 s
+  [rec] (1,3): 20 terms, 0.0 s
+  [rec] (2,1): 5 terms, 0.0 s
+  [rec] (0,6): 84 terms, 0.0 s
+  [rec] (1,4): 70 terms, 0.1 s
+  [rec] (2,2): 21 terms, 0.2 s
+  [rec] (0,7): 330 terms, 0.4 s
+  [rec] (1,5): 252 terms, 0.5 s
+  [rec] (2,3): 84 terms, 0.6 s
+  [rec] (3,1): 8 terms, 0.3 s
+  [rec] (0,8): 1287 terms, 3.9 s
+  [rec] (1,6): 924 terms, 4.4 s
+  [rec] (2,4): 330 terms, 2.8 s
+  [rec] (3,2): 45 terms, 1.7 s
+  [rec] (1,7): 3432 terms, 33.3 s
+  [rec] (2,5): 1287 terms, 16.6 s
+  [rec] (3,3): 220 terms, 5.3 s
+  [rec] (4,1): 11 terms, 1.9 s
+  [rec] (2,6): 5005 terms, 123.0 s
+  [rec] (3,4): 1001 terms, 29.8 s
+  [rec] (4,2): 78 terms, 7.6 s
+  [rec] (3,5): 4368 terms, 222.0 s
+  [rec] (4,3): 455 terms, 34.8 s
+  [rec] (5,1): 14 terms, 8.0 s
+  [rec] (4,4): 2380 terms, 211.2 s
+  [rec] (5,2): 120 terms, 31.2 s
+  [rec] (5,3): 816 terms, 146.4 s
+  [rec] (6,1): 17 terms, 25.5 s
+  [rec] (6,2): 171 terms, 99.6 s
+  [rec] (7,1): 20 terms, 91.5 s

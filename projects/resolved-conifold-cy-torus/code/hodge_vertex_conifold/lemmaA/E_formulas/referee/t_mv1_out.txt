@@ -1,0 +1,11 @@
+(a) MV one-part formula vs Mathematica table mv_g1_l1: 24 comparisons, 0 mismatches
+(a) MV one-part formula vs Mathematica table mv_g2_l1: 24 comparisons, 0 mismatches
+(a) MV one-part formula vs Mathematica table mv_g3_l1: 24 comparisons, 0 mismatches
+(a) MV one-part formula vs Mathematica table mv_g4_l1: 24 comparisons, 0 mismatches
+(b) genus 1: referee engine vs MV one-part formula: 18 comparisons, 0 mismatches [16.5 s]
+(b) genus 2: referee engine vs MV one-part formula: 18 comparisons, 0 mismatches [19.0 s]
+(b) genus 3: referee engine vs MV one-part formula: 18 comparisons, 0 mismatches [22.4 s]
+(b) genus 4: referee engine vs MV one-part formula: 18 comparisons, 0 mismatches [25.8 s]
+(b) genus 5: referee engine vs MV one-part formula: 18 comparisons, 0 mismatches [32.2 s]
+(b) genus 6: referee engine vs MV one-part formula: 18 comparisons, 0 mismatches [49.3 s]
+(b) genus 7: referee engine vs MV one-part formula: 18 comparisons, 0 mismatches [108.3 s]

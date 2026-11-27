@@ -1,0 +1,9 @@
+equation k=3: (1)[A;;u=1][A;2;u=0] + (-2)[A;3;u=0] + (1/6)[A;;u=1][A;;u=1][A;;u=1] + (1/2)[A;;u=1][S;;u=2] + (1/6)[A;;u=3] + (1)[S;2;u=1]
+nu = (): 0 through x^14 ; control (A -> -A): nonzero
+nu = (1): 0 through x^14 ; control (A -> -A): nonzero
+nu = (2): 0 through x^14 ; control (A -> -A): nonzero
+nu = (1,1): 0 through x^14 ; control (A -> -A): nonzero
+nu = (3): 0 through x^14 ; control (A -> -A): nonzero
+nu = (2,1): 0 through x^14 ; control (A -> -A): nonzero
+nu = (1,1,1): 0 through x^14 ; control (A -> -A): nonzero
+SUMMARY k=3 tau=2/7 d=3 P=14: 7 monomials, 0 failures; control nonzero in 7 of 7

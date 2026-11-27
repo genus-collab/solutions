@@ -1,0 +1,44 @@
+---- x = 2/7 ----
+---- x = 3/5 ----
+---- x = 7/3 ----
+---- x = -5/9 ----
+checks passed: 1540, failed: 0
+number of exact checks per type (all x values together):
+  4  (#-tau) s/(# - tau s) = # - x s
+  4  (x - c L_#)(x - c L_#) = x^# (times t), t^#..t^(N-#)
+  16  G_# = -(#-x)^#/(#(c+z)(c+#z))
+  4  Theta = x c dphi' - x
+  4  Theta_# = #, Theta_# = -x^#/c^#, Theta_# = x^# (#-x)^#/(# c^#)
+  12  [t^#] g = ((#-x)^#/(#c))(lam_# - # lam_#)
+  48  [t^#] rho^# E# from sigma = integrated flow
+  12  [t^#] sigma_# = (x/(#c^#))[(#-x+x^#) lam_# - #(#-x)^# lam_#]
+  12  [t^#] sigma_# = x lam_#
+  12  [t^#] t sigma = (#, c)
+  80  [t^#](z G) = Sum_j b_j/(c + j z)
+  4  critical equation x tau s^# - c s + # = #
+  20  dilaton t^#: Sum_j b_j = # (regular
+  20  dilaton t^#: no lam_#
+  216  full loop matrix t^# (#,#)
+  20  g_# = O(psi^-#): Sum_j a_j/j = #
+  4  l_# = c/# - x/c
+  144  leaf coefficient b_#(t) by residues, t^#
+  144  leaf coefficient b_#(t), hypergeometric form, t^#
+  132  leg j = #, b = #, t^#
+  60  leg t^# closed form, b = #
+  84  loop t^# corner (#,#)
+  136  loop t^# e_# (formula vs restricted table)
+  24  loop t^#: support (i-#)+(l-#) <= k
+  24  loop t^#: symmetric
+  136  loop t^#: table entry #,# covered
+  12  pi(sigma) = -(x^# - c x L_#)(psi/t) d/dt(t g), t^#..t^#
+  36  printed Theta(t)
+  36  printed dphi(t)
+  4  rank one
+  4  rho = tau/(t alg) against the stored rho, t^#..t^#
+  12  symplecticity <t sigma(psi), t sigma(-psi)> = -x c^# + O(t^#)
+  4  t (L_# + L_#) = c/u
+  4  t L_# L_# = x/u
+  12  t^# rho^# E# = O(t^#)
+  20  top dilaton coefficient t^#
+  4  x^# - c x L_# = -x^# tau s*^#
+  16  z G_# = c - c^#/(c+z)

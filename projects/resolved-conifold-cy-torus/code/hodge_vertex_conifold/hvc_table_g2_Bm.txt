@@ -1,0 +1,8 @@
+graph  genera  edges  |Aut|  decorated graphs  singular decorated graphs  polar part {t^-(2g-2), ..., t^-1} at Q = 1, t = Log Q (eps1 = x, eps2 = 1)
+1  {2}  {}  1  7  7  {(7 + 10*x^2 + 7*x^4)/(5760*x), 0}
+2  {1}  {{1, 1}}  2  7  0  regular
+3  {0}  {{1, 1}, {1, 1}}  8  2  0  regular
+4  {1, 1}  {{1, 2}}  2  6  0  regular
+5  {0, 1}  {{1, 1}, {1, 2}}  2  3  0  regular
+6  {0, 0}  {{1, 2}, {1, 2}, {1, 2}}  12  1  0  regular
+7  {0, 0}  {{1, 1}, {2, 2}, {1, 2}}  8  1  0  regular

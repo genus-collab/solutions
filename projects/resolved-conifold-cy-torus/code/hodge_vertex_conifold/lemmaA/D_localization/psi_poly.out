@@ -1,0 +1,11 @@
+h=2 R=(2) D=1 N0=4: deg Psi=4, mult of root s=1: 1, 2h-2-D=1, Psi(1)=0
+h=2 R=(3) D=2 N0=4: deg Psi=4, mult of root s=1: 0, 2h-2-D=0, Psi(1)=1367/186624
+h=2 R=(2,2) D=2 N0=5: deg Psi=5, mult of root s=1: 0, 2h-2-D=0, Psi(1)=2075/62208
+h=2 R=(1) D=0 N0=4: deg Psi=4, mult of root s=1: 1, 2h-2-D=2, Psi(1)=0
+h=2 R=() D=0 N0=3: deg Psi=3, mult of root s=1: 0, 2h-2-D=2, Psi(1)=-49279/1866240
+h=3 R=(2) D=1 N0=7: deg Psi=7, mult of root s=1: 1, 2h-2-D=3, Psi(1)=0
+h=3 R=(3) D=2 N0=7: deg Psi=7, mult of root s=1: 1, 2h-2-D=2, Psi(1)=0
+h=3 R=(4) D=3 N0=7: deg Psi=7, mult of root s=1: 1, 2h-2-D=1, Psi(1)=0
+h=3 R=(5) D=4 N0=7: deg Psi=7, mult of root s=1: 0, 2h-2-D=0, Psi(1)=205027/47029248
+h=3 R=(2,2) D=2 N0=8: deg Psi=8, mult of root s=1: 1, 2h-2-D=2, Psi(1)=0
+h=3 R=(2,3) D=3 N0=8: deg Psi=8, mult of root s=1: 1, 2h-2-D=1, Psi(1)=0

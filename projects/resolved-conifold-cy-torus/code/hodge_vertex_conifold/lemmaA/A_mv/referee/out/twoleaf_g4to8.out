@@ -1,0 +1,10 @@
+twoleaf G=4: 20 one-leaf unknowns, 6 two-leaf multisets, 60 equations (14 samples, p=1000000009): rank 9, NULLITY 11
+  [0 s]
+twoleaf G=5: 35 one-leaf unknowns, 12 two-leaf multisets, 132 equations (16 samples, p=1000000009): rank 24, NULLITY 11
+  [0 s]
+twoleaf G=6: 54 one-leaf unknowns, 20 two-leaf multisets, 240 equations (18 samples, p=1000000009): rank 47, NULLITY 7
+  [0 s]
+twoleaf G=7: 77 one-leaf unknowns, 30 two-leaf multisets, 390 equations (20 samples, p=1000000009): rank 77, NULLITY 0
+  [1 s]
+twoleaf G=8: 104 one-leaf unknowns, 42 two-leaf multisets, 588 equations (22 samples, p=1000000009): rank 104, NULLITY 0
+  [0 s]

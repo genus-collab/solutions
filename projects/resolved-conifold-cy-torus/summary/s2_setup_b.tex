@@ -1,0 +1,164 @@
+% s2_setup_b (abridged version). Label prefix: set. Rows, factors, graph sum, rings, leaves, Hodge side.
+%-------------------------------------------------------------------------------
+\subsection{The rows and the factors}
+\label{sec:set-rows}
+
+For a finite multiset $\mathsf{v}$ of non-zero weights put
+\begin{equation}
+\label{eq:set-h}
+h_{\mathsf{v}}(z)\coloneqq\exp\Big[-\sum_{k\geq1}\bk_k\,z^{2k-1}\sum_{a}\mathsf{v}_a^{1-2k}\Big],\qquad \bk_k\coloneqq\frac{B_{2k}}{2k(2k-1)},
+\end{equation}
+with $B_{2k}$ the Bernoulli numbers. Then $h_{\mathsf{u}+\mathsf{v}}=h_{\mathsf{u}}h_{\mathsf{v}}$, $h_{-\mathsf{v}}=h_{\mathsf{v}}^{-1}$, $h_{(v,-v)}=1$ and $h_{\mathsf{v}}(z)h_{\mathsf{v}}(-z)=1$; $h_{\mathsf{v}}$ is independent of $t$. The series in use are $\hw=h_{(E,-\epsilon_1,-\epsilon_2)}$, $\hnw=h_{(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)}$, $\hreg=h_{(\alpha_1,\alpha_2,\wA,\wB,-E,-E)}$ and $h_{\wts_\pm}$, with $\bw\coloneqq(E,-\epsilon_1,-\epsilon_2)$ and $\nw\coloneqq(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)$.
+
+\begin{defn}[{\Lref{Definition~2.15}: rows}]
+\label{def:set-rows}
+The \emph{point-frame identity row} at idempotent $i=1,2$ is
+\begin{equation}
+\label{eq:set-rpt}
+\rpt_{0,i}(z;t)\coloneqq\sum_{m\geq0}z^m\,\wick_m\big(\cW_2(U_i),\cW_3(U_i),\ldots\big),
+\end{equation}
+where the universal polynomial $\wick_m$ is the coefficient of $z^m$ in
+\[
+\sum_{n\geq0}\frac{(2n)!}{n!\,2^n}\Big(\frac{-z}{\cW_2}\Big)^{n}\,\coef{v^{2n}}\exp\Big[\sum_{k\geq3}\frac{\cW_kv^k}{k!\,z}\Big];
+\]
+thus $\wick_0=1$, and $\wick_m$ is a polynomial in $\cW_2^{-1},\cW_3,\ldots,\cW_{2m+2}$ with rational coefficients. The row \eqref{eq:set-rpt} is the normalised formal Laplace expansion of $\re^{\cW/z}\dd U/U$ at the critical point $U_i$ (\cref{prop:row-wickrow} for $i=1$, \cref{thm:lea-row2reg} for $i=2$). The \emph{row with the $\cQ=0$ constant} is $\rZ_{0,i}\coloneqq\hnw(z)\,\rpt_{0,i}(z;t)$; the matrix with these rows is $\RZ$. The \emph{frame-B rows} are
+\begin{equation}
+\label{eq:set-rowB}
+\rr_{0,i}(z;t)\coloneqq h_{(\alpha_1,\wA,-E)}(z)\,\rpt_{0,i}(z;t)=\hw(z)^{-1}\hnw(z)\,\rpt_{0,i}(z;t),
+\end{equation}
+the second equality by \cref{lem:set-hmult}; the matrix with these rows is $\RB=\RZ\hw^{-1}$, and \emph{frame B} means this frame. The frame-B rows depend on $(\alpha_0,\alpha_1,\alpha_2)$ only. The \emph{$H$-row} is
+\begin{equation}
+\label{eq:set-Hrow}
+\rr_{1,i}(z)\coloneqq(\Lv_i+z\Dop_i)\,\rr_{0,i}(z),\qquad \Dop_i\coloneqq\frac{\dd}{\dd t}-\frac{\Delta_i'}{2\Delta_i},
+\end{equation}
+a rule which holds in every frame, the scalar series $h$ being independent of $t$. The \emph{covector} of idempotent $i$ is $\vv_i(z)\coloneqq(\rr_{0,i}(z),\rr_{1,i}(z))$, and $\rr[m]\coloneqq\coef{z^m}\rr$.
+\end{defn}
+
+\begin{lem}[{\Lref{Lemma~2.16}: the multiset identity}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-hmult}
+One has
+\begin{equation}
+\label{eq:set-hmult}
+\hnw(z)\,h_{(E,-\alpha_1,-\wA)}(z)=\hw(z),\qquad\text{equivalently}\qquad \hw^{-1}\hnw=h_{(\alpha_1,\wA,-E)} .
+\end{equation}
+Moreover, for two multisets $\bw',\bw$ of non-zero weights, $h_{\bw'}=h_{\bw}$ if and only if $\bw'$ and $\bw$ agree up to pairs $(v,-v)$. In particular $\bw=(E,-\epsilon_1,-\epsilon_2)$ is, up to such pairs, the unique class with $h_{\bw}=\hnw h_{(E,-\alpha_1,-\wA)}$.
+\end{lem}
+
+The class $\bw$ makes the frame-B constant at $t=0$ the geometric series $\rr_{0,1}(z;0)=E/(E+z)$ (\cref{cor:row-F2}), because the point-frame row at $t=0$ is $h_{(E,-\alpha_1,-\wA)}E/(E+z)$ (\cref{prop:row-beta}); the same scalar $\hnw$ multiplies both idempotents (\cref{lem:ide-norm}).
+
+\begin{defn}[{\Lref{Definition~2.17}: dilaton and edge factors, legs}]
+\label{def:set-factors}
+All rows are the frame-B rows. The \emph{dilaton factors} are $\Dil_i(d)\coloneqq(-1)^d\,\rr_{0,i}[d-1]$ for $d\geq1$, and the \emph{dilaton series} at idempotent $i$ is
+\[
+\qt^{(i)}(\psi)\coloneqq\sum_{d\geq1}\Dil_i(d;t)\,\psi^d=-\psi\,\rr_{0,i}(-\psi;t),\qquad \qt\coloneqq\qt^{(1)} ;
+\]
+since $\rr_{0,i}[0]=1$, $\Dil_i(1)=-1$ at every $t$: the term $d=1$ is the dilaton shift. The \emph{pairing of the rows} and the \emph{edge factors} are
+\begin{equation}
+\label{eq:set-Pij}
+\Pij_{ij}(z,w)\coloneqq-\langle\vv_i(-z),\vv_j(-w)\rangle ,
+\end{equation}
+\begin{equation}
+\label{eq:set-edge}
+\Edge_{ij}(z,w)\coloneqq\frac{\Pij_{ij}(z,w)-\Pij_{ij}(-w,w)}{z+w}=\sum_{m,n\geq0}\Edge_{ij}(m,n)\,z^mw^n ,
+\end{equation}
+with the pairing \eqref{eq:set-pairing}; the numerator vanishes on $z=-w$, so the quotient is a power series in $z,w$ coefficientwise in $t$. In leaf language $\Edge_{11}(\psi,\psi')$ means $\Edge_{11}(z=\psi,w=\psi')$. The \emph{legs} are $f_{j,b}(\psi)\coloneqq\coef{w^b}\Edge_{1j}(\psi,w)$, for $j\in\{1,2\}$ and $b\geq0$.
+\end{defn}
+
+Once the symplectic relations $\langle\vv_i(z),\vv_j(-z)\rangle=\delta_{ij}\Delta_i$ are known (\cref{thm:lea-qde}), \eqref{eq:set-edge} reads $\Edge_{ij}(z,w)=[\delta_{ij}\Delta_i-\langle\vv_i(-z),\vv_j(-w)\rangle]/(z+w)$, and $\Edge_{ij}(m,n)=\Edge_{ji}(n,m)$.
+
+\begin{defn}[{\Lref{Definition~2.20}: $\rho$, the leaves, the leaf spaces}]
+\label{def:set-rho}
+By \cref{lem:set-limits}(i), $t^2\Delta_1/(-\epsilon_1\epsilon_2E^3)$ is analytic at $t=0$ with value $1$; let $\rho(t)\coloneqq\big(\Delta_1t^2/(-\epsilon_1\epsilon_2E^3)\big)^{-1/2}$, the branch with $\rho(0)=1$. The \emph{leaves} are $\lf_j(\psi)\coloneqq1/(E-j\psi)$ for $j\geq1$; in the row variable $z=-\psi$, $\lf_j=1/(E+jz)$. The \emph{leaf spaces} are $\Lsp_m\coloneqq\mathrm{span}(\lf_1,\ldots,\lf_m)$ and $\Lsp_m^+\coloneqq(\text{constants})+\Lsp_m$. Further
+\[
+\qo\coloneqq E-E^2\lf_1=-\frac{E\psi}{E-\psi},\qquad \Tdil(\psi)\coloneqq\qo+\psi=-\frac{\psi^2}{E-\psi}.
+\]
+\end{defn}
+
+%-------------------------------------------------------------------------------
+\subsection{Coloured stable graphs and the graph sum}
+\label{sec:set-graphsum}
+
+For a stable curve of genus $h$, with $\lambda_i=c_i(\Hdg)$ the Chern classes of the Hodge bundle, let $\Lamv(u)\coloneqq\sum_i(-1)^i\lambda_iu^{h-i}$; for a multiset $\mathsf{v}$ of non-zero weights the \emph{normalised Hodge class} is $\Hg_{\mathsf{v}}\coloneqq\prod_{a\in\mathsf{v}}\Lamv(\mathsf{v}_a)/\mathsf{v}_a^{h}$. The vertex class is
+\begin{equation}
+\label{eq:set-Hg}
+\Hg_{\bw}=\prod_{a=1}^{3}\frac{\Lamv(\bw_a)}{\bw_a^{h}},\qquad \bw=(E,-\epsilon_1,-\epsilon_2),
+\end{equation}
+the same at both colours and independent of $t$. It is a pull-back under the forgetful maps, so the string and dilaton equations hold for it when $h\geq2$.
+
+\begin{defn}[{\Lref{Definition~2.22}: coloured stable graphs; the decoration sum; the graph sum}]
+\label{def:set-graphsum}
+Fix $g\geq2$. Let $\Gamma$ run over the connected stable graphs of genus $g$ without legs, with vertex set $\Ver(\Gamma)$, edge set $\Edg(\Gamma)$, vertex genera $g_v$ and $n_v$ half-edges at $v$. A \emph{colouring} is a map $\col:\Ver(\Gamma)\to\{1,2\}$; colour $1$ is singular, colour $2$ regular. A \emph{decoration} assigns an exponent $a_h\geq0$ to each half-edge $h$ ($a_e,b_e$ at the two half-edges of an edge $e$, in a chosen order of its ends $v(e),v'(e)$) and to each vertex $v$ an integer $m_v\geq0$ with an ordered tuple $(d_{v,1},\ldots,d_{v,m_v})$ of \emph{dilaton degrees} $d_{v,k}\geq2$, with weight $1/m_v!$. The \emph{decoration sum} of $(\Gamma,\col)$ is
+\begin{multline}
+\label{eq:set-graphsum}
+\GCont(\Gamma,\col)\coloneqq\sum_{\mathrm{dec}}\ \prod_{v\in\Ver(\Gamma)}\Big[\Delta_{\col_v}^{\,g_v-1}\,\frac{1}{m_v!}\int_{\Mbar_{g_v,n_v+m_v}}\Hg_{\bw}\prod_{h\text{ at }v}\psi_h^{a_h}\prod_{k=1}^{m_v}\psi_{n_v+k}^{d_{v,k}}\ \prod_{k=1}^{m_v}\Dil_{\col_v}(d_{v,k})\Big]\\
+\times\prod_{e\in\Edg(\Gamma)}\Edge_{\col_{v(e)}\col_{v'(e)}}(a_e,b_e),
+\end{multline}
+and the \emph{frame-B Hodge-vertex graph sum} is
+\begin{equation}
+\label{eq:set-Gsum}
+\Gsum_g\coloneqq\sum_{\Gamma}\frac{1}{|\Aut\Gamma|}\sum_{\col:\Ver(\Gamma)\to\{1,2\}}\GCont(\Gamma,\col).
+\end{equation}
+\end{defn}
+
+The decoration sum is finite, since the integral vanishes unless $\sum_ha_h+\sum_kd_{v,k}\leq3g_v-3+n_v+m_v$ at every vertex, which forces $m_v\leq3g_v-3+n_v$; ``regular at the conifold point after summing over decorations'' means that the Laurent expansion of $\GCont(\Gamma,\col)$ in $t$ has no negative powers. Equation \eqref{eq:set-graphsum} is a definition; the regularity statements of \cref{sec:reg} are statements about it, and its identification with $\sF_g$ is Theorem~B, used only in \cref{sec:rig}.
+
+%-------------------------------------------------------------------------------
+\subsection{Rings, principles and leaf identities}
+\label{sec:set-rings}
+
+\begin{lem}[{\Lref{Lemma~2.23}: rings and principles; condensed}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-rings}
+Let $\Oan\coloneqq\bbC\{t\}=\bbC\{\tau\}$, $\Man$ the field of meromorphic germs, $\Oan(\Ddisc)$ the functions analytic on $\Ddisc$, $\Cz=\bbC\lser z$, $\Rz\coloneqq\Cz\lser\tau$ with the derivation $\dd/\dd t=(1-\tau)\dd/\dd\tau$, and $\Rzo\coloneqq\bbC\fps z\lser\tau\subset\Rz$; $\iota:\Oan\fps z\to\bbC\fps{z,\tau}$ Taylor-expands every $z$-coefficient, and $\Man\lser z$ denotes Laurent series in $z$ with coefficients in $\Man$.
+\begin{description}
+\item[Transfer.] An identity in $\Rz$ between elements of $\Rzo$ is an identity of formal double series: reading off $z^m$ gives identities of Laurent series in $\tau$ and, when these are expansions of meromorphic germs (as for all rows), identities of meromorphic functions of $t$ near $0$.
+\item[(P)] Every object built from the genus-zero data (the rows, the dilaton and edge factors, $\rho$, $\Lv_i$, $\Delta_i$) is obtained from the weights and $\tau$ by field operations, $\dd/\dd t$, and the expansions of the square roots $\delta$, $\alg$ and of logarithms of units; at $\tau=0$ the only denominators are $\alpha_1,\alpha_2,\wA,\wB,E,\epsilon_1,\epsilon_2$ and the Gauss denominators $E+jz$. Hence the $t$-, $z$- and $\psi$-coefficients are rational functions of the weights, regular on (ND); an identity between such coefficients proved at every complex weight point of a non-empty open subset of the weight space holds in $\Kal$ (or $\KCY$), and an identity or a membership proved over $\Kal$ specialises to every weight point with (ND).
+\item[Leaf spaces.] A rational function $f$ of $\psi$ lies in $\Lsp_m^+$ if and only if its poles are simple, lie in $\{E/j:1\leq j\leq m\}$, and $f$ is bounded at $\infty$; it lies in $\Lsp_m$ if and only if moreover $f(\psi)\to0$ as $\psi\to\infty$. A rational function regular at $0$ is identified with its Taylor series at $0$.
+\item[(T)] For an increasing chain $V_0\subset V_1\subset\cdots$ of subspaces of a vector space $V$ and $f\in V\fps\tau=V\fps t$: ($\coef{\tau^n}f\in V_n$ for $n\leq k$) if and only if ($\coef{t^n}f\in V_n$ for $n\leq k$); multiplication by a series in $t$ not involving the auxiliary variables preserves such a filtration.
+\end{description}
+\end{lem}
+
+\begin{lem}[{\Lref{Lemma~2.24}: leaf identities, partial fractions}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-leafid}
+For $j,m\geq1$:
+\textup{(LAM1)} $\coef{\psi^n}\lf_j=j^n/E^{n+1}$;
+\textup{(LAM2)} $\psi\lf_j=(E\lf_j-1)/j$;
+\textup{(LAM3)} $(E-m\psi)\lf_j=m/j+E(1-m/j)\lf_j$;
+\textup{(LAM4)} $f=\sum_{j}f_j\lf_j$ is $O(\psi^{-2})$ at $\psi=\infty$ if and only if $\sum_jf_j/j=0$;
+\textup{(LAM5)} $\lf_i\lf_j=(i\lf_i-j\lf_j)/(E(i-j))$ for $i\neq j$;
+\textup{(LAM6)} $\lf_j(\psi)-\lf_j(-w)=j(\psi+w)\lf_j(\psi)\lf_j(-w)$;
+\textup{(PF)} a rational function $f$ of $z$ whose poles are of order $\leq1$, lie in $\{-E/j:1\leq j\leq M\}$, and which is bounded at $\infty$, equals $f(\infty)+\sum_{j=1}^{M}\beta_j/(E+jz)$ with $\beta_j=\lim_{z\to-E/j}(E+jz)f(z)$.
+\end{lem}
+
+%-------------------------------------------------------------------------------
+\subsection{The Hodge side}
+\label{sec:set-hodge}
+
+Fix $h\geq2$, and let $\RRing\coloneqq\RRing_0\fps t$ with $\RRing_0$ a $\bbQ$-algebra in which $\epsilon_1,\epsilon_2,E$ are invertible (for instance $\bbC$ or $\KCY$).
+
+\begin{defn}[{\Lref{Definition~2.25}: the Hodge potential and the numbers $\Xiz_h$}]
+\label{def:set-fpot}
+For $\mathsf{b}_1,\ldots,\mathsf{b}_s\in\RRing\fps\psi$ put
+\[
+\dbase^s(\mathsf{b}_1,\ldots,\mathsf{b}_s)\coloneqq\sum_{m\geq0}\frac{1}{m!}\int_{\Mbar_{h,s+m}}\Hg_{\bw}\prod_{i=1}^{s}\mathsf{b}_i(\psi_i)\prod_{k=1}^{m}\Tdil(\psi_{s+k}),
+\]
+a finite sum. Let $\Dom\coloneqq\qo+t\RRing\fps\psi$. For $\mathbf{q}=\qo+\upsilon\in\Dom$ and $f_1,\ldots,f_n\in\RRing\fps\psi$ define
+\[
+\dd^n\Fpot_h(\mathbf{q})[f_1,\ldots,f_n]\coloneqq\sum_{r\geq0}\frac{1}{r!}\,\dbase^{n+r}(f_1,\ldots,f_n,\upsilon,\ldots,\upsilon)\quad(r\text{ entries }\upsilon),\qquad \Fpot_h(\mathbf{q})\coloneqq\dd^0\Fpot_h(\mathbf{q}),
+\]
+which converges $t$-adically. If $\mathbf{q}=-\psi+O(\psi^2)$, the \emph{dilaton-shifted form} is
+\[
+\Fpot_h(\mathbf{q})\coloneqq\sum_{m\geq0}\frac{1}{m!}\int_{\Mbar_{h,m}}\Hg_{\bw}\prod_{i=1}^{m}(\mathbf{q}+\psi)(\psi_i),
+\]
+and similarly for $\dd^n\Fpot_h(\mathbf{q})[f_1,\ldots,f_n]$; on the overlap with $\Dom$ the two definitions agree. In this form the decorations of \eqref{eq:set-graphsum} appear: since $\Dil_i(1)\psi=-\psi$, the vertex factor at a vertex of genus $h\geq2$ and colour $i$ with half-edge series $f_1,\ldots,f_n$ is $\Delta_i^{h-1}\dd^n\Fpot_h(\qt^{(i)})[f_1,\ldots,f_n]$. At idempotent $1$, $\qt\in\Dom$ and $\rho\qt\in\Dom$ (by (F1)--(F3) of \cref{thm:int-leaf}); at idempotent $2$, $\qt^{(2)}\notin\Dom$, only the dilaton-shifted form is used, and nothing is rescaled. For a multiset $\msU=\{j_1,\ldots,j_r\}$ of positive integers,
+\[
+\Xiz_h(\msU)\coloneqq\dd^r\Fpot_h(\qo)[\lf_{j_1},\ldots,\lf_{j_r}]=\dbase^r(\lf_{j_1},\ldots,\lf_{j_r}),
+\]
+the leaf-scale-$E$ integrals with the class $\Hg_{\bw}$; $J_{\msU}\coloneqq\sum_ij_i$, $\dg(\msU)\coloneqq\sum_i(j_i-1)$, and $\ZZ[h,n]\coloneqq\Xiz_h(1^n)$, so that $\ZZ[h,0]=\Fpot_h(\qo)$.
+\end{defn}
+
+\begin{defn}[{\Lref{Definition~2.26}: the statement $\Mirr(h)$}]
+\label{def:set-mirr}
+$\Mirr(h)$ is the statement: $\Xiz_h(\msM)=0$ for every \emph{non-empty} multiset $\msM$ of integers $\geq2$ with $\dg(\msM)\leq2h-3$.
+\end{defn}
+
+The empty multiset is excluded because $\Xiz_h(\emptyset)=\ZZ[h,0]$ is the value of the pole (\cref{thm:reg-VI}); parts equal to $1$ are removed by the string identity (\cref{lem:reg-string}). The statement $\Mirr(h)$ for the class $\Hg_{\bw}$, at the generic point of $\TCY$ and at every weight point with $\epsilon_1\epsilon_2E\neq0$, is the cited \cref{thm:reg-L}.

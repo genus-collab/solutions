@@ -1,0 +1,6 @@
+(A) genus 4 r = 2: 6 Lemma-A points (parts >= 2, D <= 2h-3), 0 violations
+(C) genus 4 r = 2: 3 control points (D = 2h-2), 3 non-zero; non-zero components: {2,6}:all {3,5}:all {4,4}:all
+(M) genus 4 r = 2: 19 lattice points with parts >= 0, 1 <= J, D <= 2h-3: 0 violations
+(H) genus 4 r = 2, D = 6: Hurwitz component zero at 0 points, non-zero at 3
+(H) genus 4 r = 2, D = 7: Hurwitz component zero at 3 points, non-zero at 0
+(H) genus 4 r = 2, D = 8: Hurwitz component zero at 0 points, non-zero at 4

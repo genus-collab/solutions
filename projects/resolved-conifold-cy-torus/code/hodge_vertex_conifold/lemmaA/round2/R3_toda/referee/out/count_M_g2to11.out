@@ -1,0 +1,8 @@
+equation M, weight 2, coefficient of D_{t_2}: 1
+SUMMARY M G=2..11: 3545 (G,D,R) cases; terms: H1 12422802, H2 132293, empty0 3170126, ff 21983776, target 3545; survivors 0; bad target counts 0; target coefficient factor -c*k = -2 (non-zero needed)
+
+real	12m55.748s
+user	12m50.732s
+sys	0m2.342s
+
+[exited with code 0]

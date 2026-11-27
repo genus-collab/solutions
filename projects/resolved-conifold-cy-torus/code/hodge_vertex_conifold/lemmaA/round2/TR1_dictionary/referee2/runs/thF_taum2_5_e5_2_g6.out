@@ -1,0 +1,9 @@
+TR mix done (262.5 s)
+TR bkmp done (475.2 s)
+TR base done (686.2 s)
+Hodge side (RefHodge::xi) done (858.3 s)
+tau = -2/5, sigma = -6/25, genus 6, one leaf, j = 0..19:
+  Theorem F at e = 5/2 (s = -3/2): 0 mismatches
+  BKMP (e = 0): 0 mismatches
+  P2 (base curve): 0 mismatches
+  time 858.7 s

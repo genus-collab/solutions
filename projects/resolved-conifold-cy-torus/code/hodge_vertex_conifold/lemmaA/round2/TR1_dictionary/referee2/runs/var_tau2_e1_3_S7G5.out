@@ -1,0 +1,23 @@
+mode var, tau = 2, sigma = 6, S = 7, GMAX = 5, lmax = 14, e0 = 1/3; setup 815.6 s
+basis check [x^m] xi_k = m^k Pi_m: 49 values, 0 failures
+recursion: 23 correlators, 1306.5 s
+(0,3): d/de C[k] vs Int Lambda omega_{g,n+1}: 1 coefficients, 0 mismatches
+(0,4): d/de C[k] vs Int Lambda omega_{g,n+1}: 5 coefficients, 0 mismatches
+(0,5): d/de C[k] vs Int Lambda omega_{g,n+1}: 21 coefficients, 0 mismatches
+(0,6): d/de C[k] vs Int Lambda omega_{g,n+1}: 84 coefficients, 0 mismatches
+(1,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 2 coefficients, 0 mismatches
+(1,2): d/de C[k] vs Int Lambda omega_{g,n+1}: 6 coefficients, 0 mismatches
+(1,3): d/de C[k] vs Int Lambda omega_{g,n+1}: 20 coefficients, 0 mismatches
+(1,4): d/de C[k] vs Int Lambda omega_{g,n+1}: 70 coefficients, 0 mismatches
+(1,5): d/de C[k] vs Int Lambda omega_{g,n+1}: 252 coefficients, 0 mismatches
+(2,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 5 coefficients, 0 mismatches
+(2,2): d/de C[k] vs Int Lambda omega_{g,n+1}: 21 coefficients, 0 mismatches
+(2,3): d/de C[k] vs Int Lambda omega_{g,n+1}: 84 coefficients, 0 mismatches
+(2,4): d/de C[k] vs Int Lambda omega_{g,n+1}: 330 coefficients, 0 mismatches
+(3,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 8 coefficients, 0 mismatches
+(3,2): d/de C[k] vs Int Lambda omega_{g,n+1}: 45 coefficients, 0 mismatches
+(3,3): d/de C[k] vs Int Lambda omega_{g,n+1}: 220 coefficients, 0 mismatches
+(4,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 11 coefficients, 0 mismatches
+(4,2): d/de C[k] vs Int Lambda omega_{g,n+1}: 78 coefficients, 0 mismatches
+(5,1): d/de C[k] vs Int Lambda omega_{g,n+1}: 14 coefficients, 0 mismatches
+TOTAL: 1277 comparisons, 0 failures; time 1456.7 s

@@ -1,0 +1,9 @@
+parsed /g/My Drive/Projects/Old/refGW/hodge_vertex_conifold/lemmaA/A_mv/../data/mv_g1_l3.txt (331 chars) in 0 s
+tau=2/7: 35 partitions, data eval 0 s all match
+tau=3/2: 35 partitions, data eval 0 s all match
+tau=5: 35 partitions, data eval 0 s all match
+tau=1/4: 35 partitions, data eval 0 s all match
+tau=-7/3: 35 partitions, data eval 0 s all match
+tau=-5/2: 35 partitions, data eval 0 s all match
+tau=7/11: 35 partitions, data eval 0 s all match
+SUMMARY g=1 l=3 maxpart=5 maxsize=1000: 245 matches, 0 mismatches (7 tau values x 35 partitions)

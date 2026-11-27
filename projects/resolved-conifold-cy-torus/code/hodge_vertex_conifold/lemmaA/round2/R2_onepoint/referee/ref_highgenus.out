@@ -1,0 +1,8 @@
+SUMMARY tau=1/2 g=12 n=1 jmax=36 p=2147483647: tuples 36, compared 0, OK 0, MISMATCH 0, no-data 36; range points 22 (ref zero at 22)
+SUMMARY tau=1/2 g=9 n=2 jmax=12 p=2147483647: tuples 78, compared 0, OK 0, MISMATCH 0, no-data 78; range points 62 (ref zero at 62)
+SUMMARY tau=3 g=12 n=1 jmax=36 p=2147483647: tuples 36, compared 0, OK 0, MISMATCH 0, no-data 36; range points 22 (ref zero at 22)
+SUMMARY tau=3 g=9 n=2 jmax=12 p=2147483647: tuples 78, compared 0, OK 0, MISMATCH 0, no-data 78; range points 62 (ref zero at 62)
+SUMMARY tau=-5/3 g=12 n=1 jmax=36 p=2147483647: tuples 36, compared 0, OK 0, MISMATCH 0, no-data 36; range points 22 (ref zero at 22)
+SUMMARY tau=-5/3 g=9 n=2 jmax=12 p=2147483647: tuples 78, compared 0, OK 0, MISMATCH 0, no-data 78; range points 62 (ref zero at 62)
+SUMMARY tau=1/2 g=7 n=3 jmax=7 p=2147483647: tuples 84, compared 0, OK 0, MISMATCH 0, no-data 84; range points 61 (ref zero at 61)
+SUMMARY tau=2 g=5 n=4 jmax=5 p=2147483647: tuples 70, compared 0, OK 0, MISMATCH 0, no-data 70; range points 31 (ref zero at 31)

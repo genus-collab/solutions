@@ -1,0 +1,10 @@
+genus 4 hodge {'graphs': 379, 'labelled': 71198, 'orbits': 27172} enum 4.8 s
+=== sample F(3,5) rows 2.0 s
+ii B total ok: True  | singular stable graphs: [1] of 379 | edge dec singular 7138 | pole>bound 0 | odd lead 0 | vertex graph polar=gap: True | tally [((0, 0), 19912), ((0, 4), 25), ((0, 6), 1), ((2, 2), 6069), ((4, 4), 1069), ((6, 6), 96)] | 12s
+=== sample S1 rows 2.0 s
+ii B total ok: True  | singular stable graphs: [1] of 379 | edge dec singular 7138 | pole>bound 0 | odd lead 0 | vertex graph polar=gap: True | tally [((0, 0), 19912), ((0, 4), 25), ((0, 6), 1), ((2, 2), 6069), ((4, 4), 1069), ((6, 6), 96)] | 12s
+=== sample S3 rows 2.1 s
+ii B total ok: True  | singular stable graphs: [1] of 379 | edge dec singular 7138 | pole>bound 0 | odd lead 0 | vertex graph polar=gap: True | tally [((0, 0), 19912), ((0, 4), 25), ((0, 6), 1), ((2, 2), 6069), ((4, 4), 1069), ((6, 6), 96)] | 12s
+=== sample S8 random F_p rows 2.0 s
+ii B total ok: True  | singular stable graphs: [1] of 379 | edge dec singular 7138 | pole>bound 0 | odd lead 0 | vertex graph polar=gap: True | tally [((0, 0), 19912), ((0, 4), 25), ((0, 6), 1), ((2, 2), 6069), ((4, 4), 1069), ((6, 6), 96)] | 12s
+done 60.5

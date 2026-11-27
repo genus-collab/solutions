@@ -1,0 +1,17 @@
+G=9 R={18} EVEN [D(R)=17, D(R+2)=18]: OK
+G=9 R={18} ODD  [D(R)=17, D(R+2)=18]: OK
+G=9 R={19} EVEN [D(R)=18, D(R+2)=19]: OK
+G=9 R={19} ODD  [D(R)=18, D(R+2)=19]: OK
+G=9 R={20} EVEN [D(R)=19, D(R+2)=20]: OK
+G=9 R={20} ODD  [D(R)=19, D(R+2)=20]: OK
+G=9 R={21} EVEN [D(R)=20, D(R+2)=21]: OK
+G=9 R={21} ODD  [D(R)=20, D(R+2)=21]: OK
+G=10 R={20} EVEN [D(R)=19, D(R+2)=20]: OK
+G=10 R={20} ODD  [D(R)=19, D(R+2)=20]: OK
+G=10 R={21} EVEN [D(R)=20, D(R+2)=21]: OK
+G=10 R={21} ODD  [D(R)=20, D(R+2)=21]: OK
+G=10 R={22} EVEN [D(R)=21, D(R+2)=22]: OK
+G=10 R={22} ODD  [D(R)=21, D(R+2)=22]: OK
+G=10 R={23} EVEN [D(R)=22, D(R+2)=23]: OK
+G=10 R={23} ODD  [D(R)=22, D(R+2)=23]: OK
+SUMMARY Hurwitz limit: 16 relations, 0 failures

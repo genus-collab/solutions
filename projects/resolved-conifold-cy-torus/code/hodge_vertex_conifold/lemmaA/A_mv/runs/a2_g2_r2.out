@@ -1,0 +1,15 @@
+q-data: /g/My Drive/Projects/Old/refGW/hodge_vertex_conifold/lemmaA/A_mv/../data/q_g2_r2.txt
+multiprobe genus 2 r = 2: found
+h=2 tau=2/7 R=(2,2) D=2: Xi=2075/62208  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (8 s)
+h=2 tau=2/7 R=(3,2) D=3: Xi=3577/77760  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (9 s)
+h=2 tau=2/7 R=(3,3) D=4: Xi=371/155520  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (13 s)
+h=2 tau=2/7 R=(4,2) D=4: Xi=-1625/31104  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (7 s)
+h=2 tau=3/2 R=(2,2) D=2: Xi=-22/3375  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (6 s)
+h=2 tau=3/2 R=(3,2) D=3: Xi=-197/13500  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (6 s)
+h=2 tau=3/2 R=(3,3) D=4: Xi=1531/21600  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (10 s)
+h=2 tau=3/2 R=(4,2) D=4: Xi=91/1350  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (5 s)
+h=2 tau=5 R=(2,2) D=2: Xi=-1651/288000  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (6 s)
+h=2 tau=5 R=(3,2) D=3: Xi=-443/216000  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (7 s)
+h=2 tau=5 R=(3,3) D=4: Xi=10639/86400  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (10 s)
+h=2 tau=5 R=(4,2) D=4: Xi=10759/86400  [deg-bound ok; laguerre ok; q-data ok; multiprobe ok] (5 s)
+SUMMARY h=2 r=2: 48 checks, 0 failures

@@ -1,0 +1,14 @@
+genus  1: (6.1) sigma-degree 1; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus  2: (6.1) sigma-degree 2; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus  3: (6.1) sigma-degree 3; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus  4: (6.1) sigma-degree 4; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus  5: (6.1) sigma-degree 5; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus  6: (6.1) sigma-degree 6; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus  7: (6.1) sigma-degree 7; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus  8: (6.1) sigma-degree 8; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus  9: (6.1) sigma-degree 9; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus 10: (6.1) sigma-degree 10; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus 11: (6.1) sigma-degree 11; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus 12: (6.1) sigma-degree 12; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus 13: (6.1) sigma-degree 13; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes
+genus 14: (6.1) sigma-degree 14; sigma^h coefficient = Theorem B: yes; sigma^(h-1) coefficient = -C1: yes

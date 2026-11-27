@@ -1,0 +1,8 @@
+characters: column orthogonality OK for n <= 7
+hook length formula = chi(1^n): OK n <= 8
+wk checks: <tau_4>_2 = 1/1152, <tau_1^3>_1 = 1/12, <tau_0 tau_2 tau_3>_2 = 0 (= <tau_1 tau_3>+<tau_2 tau_2> = 3/1152*... )
+  <tau_2 tau_6>_3 = 77/414720 vs (5+12g(g-1))/(5 24^g g!) = 77/414720
+d=1: g0 ok g1 ok g2 ok g3 ok g4 ok g5 ok g6 ok
+d=2: g0 ok g1 ok g2 ok g3 ok g4 ok g5 ok
+d=3: g0 ok g1 ok g2 ok g3 ok g4 ok g5 ok
+d=4: g0 ok g1 ok g2 ok g3 ok g4 ok

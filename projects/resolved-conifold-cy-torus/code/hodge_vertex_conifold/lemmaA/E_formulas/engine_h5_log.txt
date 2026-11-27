@@ -1,0 +1,10 @@
+genus 5 r=1: 14 tuples, cumulative time 28.4 s
+genus 5 r=2: 64 tuples, cumulative time 29.7 s
+genus 5 r=3: 174 tuples, cumulative time 31.7 s
+genus 5 r=4: 359 tuples, cumulative time 36.5 s
+genus 5 r=5: 628 tuples, cumulative time 52.9 s
+genus 5 r=6: 996 tuples, cumulative time 125.2 s
+genus 5 r=7: 1477 tuples, cumulative time 394.6 s
+real	6m39.848s
+user	6m35.296s
+sys	0m1.077s

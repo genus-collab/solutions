@@ -1,0 +1,13 @@
+genus  1: Claim E at j = 1..1: all zero
+genus  2: Claim E at j = 1..3: all zero
+genus  3: Claim E at j = 1..5: all zero
+genus  4: Claim E at j = 1..7: all zero
+genus  5: Claim E at j = 1..9: all zero
+genus  6: Claim E at j = 1..11: all zero
+genus  7: Claim E at j = 1..13: all zero
+genus  8: Claim E at j = 1..15: all zero
+genus  9: Claim E at j = 1..17: all zero
+genus 10: Claim E at j = 1..19: all zero
+genus 11: Claim E at j = 1..21: all zero
+genus 12: Claim E at j = 1..23: all zero
+Claim E: 144 (h,j) pairs checked for h <= 12, 0 failures

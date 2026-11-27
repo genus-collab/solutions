@@ -1,0 +1,5 @@
+tau=2/7: checked orders 1..23
+tau=-1/5: checked orders 1..23
+tau=-3/7: checked orders 1..23
+tau=5/3: checked orders 1..23
+t_T1_modp: 1104 coefficients compared, 0 mismatches

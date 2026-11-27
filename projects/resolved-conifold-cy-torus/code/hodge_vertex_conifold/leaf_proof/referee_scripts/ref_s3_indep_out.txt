@@ -1,0 +1,39 @@
+---- x = 3/7
+---- x = -2/5
+---- x = 5/2
+---- x = 4/3
+checks passed: 2868, failed: 0
+  180  (16) with Theta = -x^3 tau s*^2
+  4  (9) Delta_2 = (L_2 - L_1)(x^2 - c x L_2)
+  4  (9) t^2 Delta_1 = t(L_1 - L_2) t(x^2 - c x L_1)
+  4  Delta_2(0) = x^3/c
+  4  E_11(a,b) = E_11(b,a) (code formula)
+  4  F2: G_0 = c/(c+z)
+  4  F3: Phi = t^2 rho^2 E_11 = O(t^2) (code formula)
+  40  K_1 = 1 on the closed form, w^n
+  4  L_2 = x s* (from LofU)
+  4  Prop 4(a): [t^0] t sigma = (0, c)
+  36  QDE row 1 (definition)
+  36  QDE row 2 on the closed form (I4)
+  20  Sum_j b_j = 0
+  180  Theorem 7 / (16) vs code edge formula, t^0..t^(NT-2)
+  4  Theta (V8 def) = -x^3 tau s*^2
+  4  Theta = x c dphi' - x
+  4  Theta = x^2 - c x L_2
+  84  corner (17) vs loop table
+  20  dilaton table t^k vs closed form, psi^1..psi^10
+  4  dphi' = 1 - x s* (S1 1.2(c), S3 (14))
+  144  hypergeometric b_j(t) (1.6) vs dilaton table
+  4  l_0 = c/2 - x/c, l_1 = c/12 - x^2/c^3
+  856  leg table j=1 vs code edge formula
+  1080  loop table t^k vs code edge formula
+  36  regularity at z = 0 of [t^k] G (S1 Cor 7.1), independent
+  36  regularity at z = 0 of [t^k](F Exp[-dphi/z]) (S1 Cor 7.1), independent
+  4  rho vs stored table t^0..t^5
+  4  sigma^(0)_1 = x lam_1
+  4  sigma^(1)_0 = g_1 explicit
+  4  sigma^(1)_1 explicit
+  24  support (i-1)+(l-1) <= k of loop table
+  4  t^2 Delta_1 (0) = -x c^3
+  4  t^2 W2(U1) direct = closed formula
+  20  top coefficient (5)

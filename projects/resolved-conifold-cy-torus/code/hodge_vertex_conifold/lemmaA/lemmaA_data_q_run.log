@@ -1,0 +1,9 @@
+
+Get::noopen: Cannot open graphs.m.
+
+Get::noopen: Cannot open orbits.m.
+Q table genus 2, r = 1 [0 s]
+Q table genus 2, r = 2 [3 s]
+Q table genus 3, r = 1 [690 s]
+total 690 s
+exit 0

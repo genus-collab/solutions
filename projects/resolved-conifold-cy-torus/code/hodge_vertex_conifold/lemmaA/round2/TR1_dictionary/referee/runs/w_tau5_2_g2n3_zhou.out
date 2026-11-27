@@ -1,0 +1,10 @@
+tau = 5/2 (sigma = 35/4), y = zhou, G = 2, N = 3, series order 36; setup 6.3 s
+recursion: 8 correlators, 61.8 s
+(0,3):    1 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 5: 10 points (10 with prod Pi != 0), mismatches 0 [genus-0 formula]
+(1,1):    3 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 4: 4 points (4 with prod Pi != 0), mismatches 0 [Mathematica mv-table]
+(1,2):   13 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 6: 15 points (15 with prod Pi != 0), mismatches 0 [Mathematica mv-table]
+(1,3):   63 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 8: 56 points (56 with prod Pi != 0), mismatches 0 [Mathematica mv-table]
+(2,1):    9 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 7: 7 points (7 with prod Pi != 0), mismatches 0 [Mathematica mv-table]
+(2,2):   61 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 9: 36 points (36 with prod Pi != 0), mismatches 0 [Mathematica mv-table]
+(2,3):  377 w-terms, symmetry viol. 0, pole-order viol. 0; lattice |mu| <= 11: 165 points (165 with prod Pi != 0), mismatches 0 [Mathematica mv-table]
+TOTAL: 293 lattice comparisons, 0 failures; time 104.7 s

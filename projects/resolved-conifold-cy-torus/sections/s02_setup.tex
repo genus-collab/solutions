@@ -1,0 +1,678 @@
+% s02_setup. Section file; new macros at the top; label prefix: set.
+\providecommand{\pc}{\mathsf{p}}            % pc_{k,i}: coefficients of the polynomials Pol_k (local)
+\section{Set-up: the geometry, the torus and the genus-zero data}
+\label{sec:set}
+
+This section fixes the objects of the note: the target and its tori, the equivariant invariants, the genus-zero data of the resolved conifold at generic weights, the rows and factors of the frame-B Hodge-vertex graph sum, the leaf spaces and the Hodge-side integrals. Everything here is a definition or an elementary identity; nothing of the later sections is used, except where a forward reference says so explicitly. Throughout, idempotent (colour) $1$ is the singular one and idempotent (colour) $2$ the regular one, in the sense of \cref{def:set-alg}.
+
+%-------------------------------------------------------------------------------
+\subsection{The target, the tori and the weights}
+\label{sec:set-target}
+
+Let $X$ be the resolved conifold, the total space of $\cO(-1)\oplus\cO(-1)\to\bbP^1$, and let $Z\coloneqq X\times\bbC^2$, the total space of $\cO(-1)^{\oplus2}\oplus\cO^{\oplus2}\to\bbP^1$. The five-torus $\Tmax=(\bbC^*)^5$ acts on $Z$ with the two fixed points $p_+,p_-$ of the zero section $\bbP^1$, and with tangent weights
+\begin{equation}
+\label{eq:set-wts}
+\wts_+=(\alpha_0,\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2),\qquad
+\wts_-=(-\alpha_0,\alpha_0+\alpha_1,\alpha_0+\alpha_2,-\epsilon_1,-\epsilon_2)
+\end{equation}
+at $p_+$ and $p_-$: $\alpha_0$ is the weight of the tangent line of $\bbP^1$ at $p_+$, $\alpha_1,\alpha_2$ are the weights of the two $\cO(-1)$ summands at $p_+$, and $-\epsilon_1,-\epsilon_2$ are the weights of the two trivial directions. The $\Tmax$-linearised normal bundle of the zero section is $\Nb=\cO(-1)_{\alpha_1}\oplus\cO(-1)_{\alpha_2}\oplus\cO_{-\epsilon_1}\oplus\cO_{-\epsilon_2}$. \draftnote{compare the data of [BS, Appendix A] for the tangent weights.} We write throughout
+\[
+E\coloneqq\alpha_0+\alpha_1+\alpha_2,\qquad \wA\coloneqq\alpha_0+\alpha_2=E-\alpha_1,\qquad \wB\coloneqq\alpha_0+\alpha_1=E-\alpha_2,\qquad \uq\coloneqq(E-2\alpha_1)(E-2\alpha_2),
+\]
+so that $\wts_-=(-\alpha_0,\wB,\wA,-\epsilon_1,-\epsilon_2)$, $\wA\wB=\alpha_1\alpha_2+\alpha_0E$, $\uq=\alpha_0^2-(\alpha_1-\alpha_2)^2$ and $2\alpha_0E+4\alpha_1\alpha_2=E^2+\uq$ (indeed $\uq=E^2-2E(\alpha_1+\alpha_2)+4\alpha_1\alpha_2=E^2-2E(E-\alpha_0)+4\alpha_1\alpha_2$). The products of the tangent weights are
+\[
+\eul(\wts_+)=\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2,\qquad \eul(\wts_-)=-\alpha_0\wA\wB\epsilon_1\epsilon_2 .
+\]
+
+\begin{defn}[The Calabi--Yau torus; non-degeneracy]
+\label{def:set-ND}
+The \emph{Calabi--Yau four-torus} $\TCY\subset\Tmax$ is the subtorus on which the sum of the five tangent weights at $p_+$ (equivalently at $p_-$) vanishes,
+\[
+\TCY:\qquad E=\alpha_0+\alpha_1+\alpha_2=\epsilon_1+\epsilon_2 .
+\]
+Inside $\TCY$ we use the three-torus $\Tthree:\ \alpha_0=0$ (so $E=\alpha_1+\alpha_2=\epsilon_1+\epsilon_2$) and the \emph{fibrewise torus} $\TF:\ \alpha_0=0,\ \alpha_i=\epsilon_i$, which fixes the zero section pointwise, with normal weights $(\epsilon_1,\epsilon_2,-\epsilon_1,-\epsilon_2)$. The \emph{non-degeneracy condition} is
+\[
+\text{(ND)}\qquad \alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2E\neq0 .
+\]
+A \emph{weight point with (ND)} is a point of $\mathrm{Lie}(\TCY)$, with complex (or rational) coordinates, at which (ND) holds; $\alpha_0=0$ is allowed. At the generic point of $\TCY$ all of $\alpha_0,\alpha_1,\alpha_2,\wA,\wB,\epsilon_1,\epsilon_2,E,\alpha_1-\alpha_2$ are non-zero. The point of $\TF$ in this notation has $\alpha_0=0$, $\wA=\alpha_2=\epsilon_2$, $\wB=\alpha_1=\epsilon_1$, and (ND) there reads $\epsilon_1\epsilon_2E\neq0$.
+\end{defn}
+
+The function fields in use are
+\begin{equation}
+\label{eq:set-fields}
+\Kal\coloneqq\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2),\qquad
+\KCY\coloneqq\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1)\ \text{ with }\ \epsilon_2\coloneqq E-\epsilon_1,\qquad
+\Kred\coloneqq\bbQ(\alpha_1,\alpha_2,\epsilon_1),
+\end{equation}
+the five weights being indeterminates in $\Kal$; $\KCY$ is the function field of $\mathrm{Lie}(\TCY)$ and $\KCY=\Kred(\alpha_0)$. The same field $\Kred$, regarded as the function field of $\Tthree$, is written $\Kthree$. The statement ``at the generic point of $\TCY$'' means ``in $\KCY$'', where (ND) holds. The frame-B rows of \cref{def:set-rows} have coefficients in $\bbQ(\alpha_0,\alpha_1,\alpha_2)$ and never see $\epsilon_1,\epsilon_2$ separately, so nothing below depends on the choice of $\epsilon_1$ rather than $\epsilon_2$ as the fourth generator of $\KCY$.
+
+\begin{lem}[Symmetries of the weights]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-sym}
+The substitution $(\alpha_0,\alpha_1,\alpha_2)\mapsto(-\alpha_0,\alpha_0+\alpha_1,\alpha_0+\alpha_2)$ exchanges $\wts_+$ and $\wts_-$; it sends $(\alpha_0,\alpha_1,\alpha_2,\wA,\wB,E)$ to $(-\alpha_0,\wB,\wA,\alpha_2,\alpha_1,E)$, so it preserves $E$ and exchanges the pairs $(\alpha_1,\wA)\leftrightarrow(\wB,\alpha_2)$. It is induced by the automorphism of $Z$ lifting $z\mapsto1/z$ on $\bbP^1$ (the bundle $\cO(-1)^{\oplus2}\oplus\cO^{\oplus2}$ is $SL(2)$-homogeneous), so every equivariant invariant of \cref{def:set-inv}, as an element of $\KCY$, is invariant under it. Likewise $\alpha_1\leftrightarrow\alpha_2$ (exchange of the two $\cO(-1)$ summands) and $\epsilon_1\leftrightarrow\epsilon_2$ are symmetries.
+\end{lem}
+
+\begin{proof}
+Direct from \eqref{eq:set-wts}: $-\alpha_0+(\alpha_0+\alpha_1)+(\alpha_0+\alpha_2)=E$, $(-\alpha_0)+(\alpha_0+\alpha_2)=\alpha_2$ and $(-\alpha_0)+(\alpha_0+\alpha_1)=\alpha_1$. The automorphism of $Z$ covering the inversion of $\bbP^1$ exchanges $p_+$ and $p_-$ and conjugates the action of $\Tmax$ into the action with the exchanged weights; the invariants of \cref{def:set-inv}, being defined from the fixed loci and the weights alone, are invariant.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The invariants and the series}
+\label{sec:set-inv}
+
+\begin{defn}[Invariants by localisation; the series]
+\label{def:set-inv}
+For $g\geq2$ and $d\geq0$ let $\GW_{g,d}\coloneqq\GW^{Z,\TCY}_{g,d[\bbP^1]}\in\KCY$ be the genus-$g$, degree $d[\bbP^1]$ $\TCY$-equivariant Gromov--Witten invariant of $Z$ in the definition by localisation: a $\TCY$-fixed stable map to $Z$ has image in the compact $\TCY$-invariant curves, that is, in the zero section, and is fixed by the rotation of weight $\alpha_0$ of $\bbP^1$ (as $\alpha_0\neq0$ in $\KCY$), so the $\TCY$-fixed loci of $\Mbar_{g,0}(Z,d)$ are the $\alpha_0$-fixed loci of the proper moduli space $\Mbar_{g,0}(\bbP^1,d)$, and the invariant is the sum over them of the residues of the virtual localisation formula \cite{GP99}, with $\Nb$ moving. \draftnote{BS label: defn: refined GW invariant, defn: refined GW series.} For the five-torus the same definition gives $\GW^{\Tmax}_{g,d}\in\Kal$. The genus-$g$ series is
+\[
+\sF_g(\cQ)\coloneqq\sum_{d\geq0}\GW_{g,d}\,\cQ^d,\qquad \sG_g\coloneqq\sF_g-\sF_g(0)=\sum_{d\geq1}\GW_{g,d}\,\cQ^d ,
+\]
+with $\cQ$ the degree variable of $\bbP^1$. We put $t\coloneqq\log\cQ$, $\cQ=\re^{t}$, and
+\[
+\begin{gathered}
+\tau\coloneqq1-\frac1\cQ=1-\re^{-t},\qquad\text{so }\ \cQ=\frac1{1-\tau},\qquad \cQ\tau=\cQ-1,\qquad \frac{\dd\tau}{\dd t}=1-\tau,\\
+\tau=t-\frac{t^2}2+\frac{t^3}6+O(t^4),\qquad t=-\log(1-\tau).
+\end{gathered}
+\]
+The \emph{conifold point} is $\cQ=1$, that is, $t=\tau=0$. Finally, for $g\geq0$ and $n\geq1$,
+\[
+\begin{gathered}
+\Pg\coloneqq\coef{t^{2g}}\,\frac{\epsilon_1\epsilon_2\,t^2}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)},\qquad
+\beta_n(\epsilon_1,\epsilon_2)\coloneqq(n-1)!\,\coef{t^n}\,\frac{1}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)},\\
+\Li_{-n}(\cQ)\coloneqq\sum_{d\geq1}d^n\cQ^d ,
+\end{gathered}
+\]
+so that $\Ph{0}=1$; $\Pg$ is a polynomial in $\epsilon_1,\epsilon_2$ and $\beta_{2g-2}=(2g-3)!\,\Pg/(\epsilon_1\epsilon_2)$ for $g\geq2$ (\cref{lem:reg-beta}), and $\Li_{-n}$ is a rational function of $\cQ$ (\cref{lem:rig-li}).
+\end{defn}
+
+\begin{rmk}[The constant term]
+\label{rmk:set-d0}
+The series $\sF_g$ includes the term $d=0$, the constant-map term $\sF_g(0)=\GW_{g,0}$. The series of \cite{BS} sums over the non-zero classes, that is, over $d\geq1$; the difference is the constant $\sF_g(0)$, which the rigidity statement (\cref{thm:rig-main}) subtracts. The constant-map term is discussed in \cref{sec:rig} (\cref{rmk:rig-d0,prop:rig-flop,rmk:rig-F0}). The genus-$0$ and genus-$1$ invariants, of degree $d\geq1$, appear only in \cref{sec:rig}.
+\end{rmk}
+
+\emph{Derivatives and coefficients.} On functions of $t$ (at fixed auxiliary variables $z,w,\psi,\psi'$) a prime is $\dd/\dd t=\thQ=\cQ\,\dd/\dd\cQ$, and $f_\tau\coloneqq\dd f/\dd\tau$, so $f'=(1-\tau)f_\tau$. On functions of the Euler variable $s$ of \cref{def:set-alg} (phases, amplitudes) a prime or a superscript $(k)$ is $\dd/\dd s$, and $\de_\tau$ is the partial derivative in $\tau$ at fixed $s$. $\Dz\coloneqq z\,\dd/\dd t$. The symbols $\coef{t^k}$, $\coef{z^m}$, $\coef{\psi^a}$, $\coef{w^b}$ denote coefficients, taken coefficientwise in the other variables, and $X^{(k)}\coloneqq\coef{t^k}X$ ($k$ may be negative).
+
+%-------------------------------------------------------------------------------
+\subsection{The superpotential and the critical equation}
+\label{sec:set-crit}
+
+\begin{lem}[Superpotential, critical points]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-crit}
+Let $\thU\coloneqq U\,\dd/\dd U$ and
+\[
+\cW(U)\coloneqq\alpha_1\log(1-\cQ U)-\alpha_2\log U+\wA\log(1-U),\qquad \cW_k\coloneqq\thU^k\cW\quad(k\geq1).
+\]
+The $\cW_k$ are single valued and rational in $U$ and $\cQ$; explicitly
+\[
+\cW_1=U\cW_U=-\frac{\alpha_1\cQ U}{1-\cQ U}-\alpha_2-\frac{\wA U}{1-U},\qquad
+\cW_2=-\frac{\alpha_1\cQ U}{(1-\cQ U)^2}-\frac{\wA U}{(1-U)^2},\qquad
+\de_t\cW=-\frac{\alpha_1\cQ U}{1-\cQ U}.
+\]
+\begin{enumerate}
+\item The critical equation $U\cW_U=0$ is equivalent to
+\begin{equation}
+\label{eq:set-P}
+\Pq(U)\coloneqq\wB\cQ U^2-\big(\alpha_0+\cQ(\alpha_1-\alpha_2)\big)U-\alpha_2=0 ,
+\end{equation}
+and $(1-\cQ U)(1-U)\,U\cW_U=\Pq(U)$ identically. The roots $U_1,U_2$ of $\Pq$ satisfy
+\[
+U_1+U_2=\frac{\alpha_0+\cQ(\alpha_1-\alpha_2)}{\wB\cQ},\qquad U_1U_2=-\frac{\alpha_2}{\wB\cQ},
+\]
+and the discriminant of $\Pq$ in $U$ is $(\alpha_0+\cQ(\alpha_1-\alpha_2))^2+4\alpha_2\wB\cQ=\Disc(\cQ)$ of \cref{lem:set-disc}, equal to $\cQ^2\delta^2$ with $\delta$ as in \cref{def:set-alg}.
+\item $\Pq(1)=\wA(\cQ-1)$ and $\Pq(1/\cQ)=\alpha_1(1-\cQ)/\cQ=-\alpha_1\tau$. So, for $\cQ$ finite and non-zero, $U_i=1$ or $\cQ U_i=1$ happens only over $\cQ=1$.
+\item Put $\Lv(U)\coloneqq-\alpha_1\cQ U/(1-\cQ U)=\de_t\cW$. At a critical point, $\Lv(U)=\alpha_2+\wA U/(1-U)$, equivalently $U/(1-U)=(\Lv(U)-\alpha_2)/\wA$ and $1/(1-U)=(\Lv(U)+\alpha_0)/\wA$. Moreover $1-\cQ U$ is a unit of $\KCY(\cQ)[U]/(\Pq)$ for $\tau\neq0$, and in that ring
+\[
+\Lv(U)=\frac{\wB U+\alpha_2}{\tau}.
+\]
+\item With $p_a\coloneqq(1-aU)^{-1}$ for $a\in\{1,\cQ\}$: $\thU\log(1-aU)=1-p_a$, $\thU p_a=p_a^2-p_a$, $\thU^k\log U=0$ for $k\geq2$, and, with $\Pol_0(p)\coloneqq p$, $\Pol_n(p)\coloneqq(p^2-p)\Pol_{n-1}'(p)$,
+\begin{equation}
+\label{eq:set-Wk}
+\thU^k\log(1-aU)=-\Pol_{k-1}(p_a)\quad(k\geq2),\qquad \cW_k=-\alpha_1\Pol_{k-1}(p_\cQ)-\wA\Pol_{k-1}(p_1)\quad(k\geq2).
+\end{equation}
+$\Pol_n$ has degree $n+1$, leading coefficient $n!$, and $\Pol_n(0)=0$; we write $\Pol_{k-1}(p)=\sum_{i=1}^{k}\pc_{k-1,i}\,p^i$ with $\pc_{k-1,k}=(k-1)!$. In particular every $\cW_k$, $k\geq1$, is a polynomial in $p_1$ and $p_\cQ$ with coefficients in $\bbZ[\alpha_1,\alpha_2,\wA]$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) Multiply $U\cW_U$ by $(1-\cQ U)(1-U)$:
+\[
+-\alpha_1\cQ U(1-U)-\alpha_2(1-\cQ U)(1-U)-\wA U(1-\cQ U)
+=\cQ U^2(\alpha_1-\alpha_2+\wA)-U(\alpha_1\cQ-\alpha_2\cQ-\alpha_2+\wA)-\alpha_2 ,
+\]
+and $\alpha_1-\alpha_2+\wA=\wB$, $\alpha_1\cQ-\alpha_2\cQ-\alpha_2+\wA=\alpha_0+\cQ(\alpha_1-\alpha_2)$. \draftnote{The source writes the right side with an overall minus sign; the expansion above gives $+\Pq(U)$. The sign is immaterial for the critical equation.} The sum, product and discriminant of the roots are read off from \eqref{eq:set-P}; the discriminant is expanded in \cref{lem:set-disc}(i), and its identification with $\cQ^2\delta^2$ is \cref{lem:set-disc}(i) with \cref{def:set-alg}.
+(ii) $\Pq(1)=\wB\cQ-\alpha_0-\cQ(\alpha_1-\alpha_2)-\alpha_2=\cQ(\alpha_0+\alpha_2)-(\alpha_0+\alpha_2)$, and $\Pq(1/\cQ)=\wB/\cQ-(\alpha_0+\cQ(\alpha_1-\alpha_2))/\cQ-\alpha_2=(\wB-\alpha_0)/\cQ-\alpha_1=\alpha_1(1-\cQ)/\cQ$.
+(iii) $U\cW_U=0$ gives $-\alpha_1\cQ U/(1-\cQ U)=\alpha_2+\wA U/(1-U)$; then $1/(1-U)=1+U/(1-U)=(\wA+\Lv-\alpha_2)/\wA=(\Lv+\alpha_0)/\wA$. $1-\cQ U$ is a unit modulo $\Pq$ because $\Pq(1/\cQ)=-\alpha_1\tau\neq0$ by (ii). Finally
+\begin{align*}
+(\wB U+\alpha_2)(1-\cQ U)+\alpha_1\cQ U\tau&=\wB U-\wB\cQ U^2+\alpha_2-\alpha_2\cQ U+\alpha_1U(\cQ-1)\\
+&=-\wB\cQ U^2+U\big(\wB-\alpha_1+\cQ(\alpha_1-\alpha_2)\big)+\alpha_2=-\Pq(U),
+\end{align*}
+using $\alpha_1\cQ U\tau=\alpha_1U(\cQ-1)$ and $\wB-\alpha_1=\alpha_0$; so $(\wB U+\alpha_2)/\tau=-\alpha_1\cQ U/(1-\cQ U)$ modulo $\Pq$.
+(iv) $\thU\log(1-aU)=-aU/(1-aU)=1-p_a$ and $\thU p_a=aU/(1-aU)^2=p_a^2-p_a$; by induction $\thU^k\log(1-aU)=-\thU^{k-1}p_a=-\Pol_{k-1}(p_a)$, since $\thU\,P(p_a)=(p_a^2-p_a)P'(p_a)$ for a polynomial $P$. The degree, leading coefficient and vanishing at $0$ follow by induction from the recursion. Then \eqref{eq:set-Wk} is $\cW=\alpha_1\log(1-\cQ U)-\alpha_2\log U+\wA\log(1-U)$ differentiated $k\geq2$ times.
+\end{proof}
+
+The two roots are labelled by their behaviour at the conifold point: $U_1\to1$ and $U_2\to-\alpha_2/\wB$ as $t\to0$ (\cref{def:set-alg}, \cref{lem:set-eig}). Different labellings, by the behaviour at $\cQ=0$ and at $\cQ=\infty$, are used in \cref{lem:set-limits}(ii), (iii) and in \cref{sec:ide}; the text says which one is in force.
+
+%-------------------------------------------------------------------------------
+\subsection{Frobenius data}
+\label{sec:set-frob}
+
+\begin{prop}[Frobenius data in the flat basis]\genusstatus{AI-proposed, unchecked}
+\label{prop:set-frob}
+Let $\{1,H\}$ be the flat basis, $H$ the equivariant hyperplane class of $\bbP^1$ with $H|_{p_+}=0$, $H|_{p_-}=-\alpha_0$. The genus-zero potential of the $\TCY$-equivariant theory of $Z$ in the coordinates $t_0,t_1$ dual to $1,H$ is
+\[
+\mathsf{Prep}=\mathsf{Prep}^{\mathrm{cl}}+\frac{\Li_3(\re^{t_1})}{\epsilon_1\epsilon_2},\qquad
+\mathsf{Prep}^{\mathrm{cl}}=\frac16\Big[\frac{t_0^3}{\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2}-\frac{(t_0-\alpha_0t_1)^3}{\alpha_0\wA\wB\epsilon_1\epsilon_2}\Big],
+\]
+with $\cQ=\re^{t_1}$ (\cref{lem:ide-g0}; only its third derivatives are used here). Then:
+\begin{enumerate}
+\item the metric $\eta_{ij}\coloneqq\mathsf{Prep}_{0ij}$ and its inverse are
+\[
+\eta=\frac{1}{\wA\wB\epsilon_1\epsilon_2}\begin{pmatrix}E/(\alpha_1\alpha_2)&1\\1&-\alpha_0\end{pmatrix},\qquad
+\eta^{-1}=\epsilon_1\epsilon_2\begin{pmatrix}\alpha_0\alpha_1\alpha_2&\alpha_1\alpha_2\\\alpha_1\alpha_2&-E\end{pmatrix},
+\]
+independent of $t$;
+\item $1\qprod a=a$ for all $a$, and
+\[
+H\qprod H=-\frac{\alpha_1\alpha_2}{\tau}\,1+\Big(\frac E\tau-\alpha_0\Big)H ;
+\]
+\item the minimal polynomial of $H\qprod$ is $\mathsf{Leq}(\Lv)\coloneqq\Lv^2-(E/\tau-\alpha_0)\Lv+\alpha_1\alpha_2/\tau$; its roots $\Lv_1,\Lv_2$ (the eigenvalues of $H\qprod$) satisfy $\Lv_1+\Lv_2=E/\tau-\alpha_0$ and $\Lv_1\Lv_2=\alpha_1\alpha_2/\tau$;
+\item the product is commutative, associative and Frobenius: $\eta(a\qprod b,d)=\eta(a,b\qprod d)$.
+\end{enumerate}
+Covectors $a=(a_0,a_1)$ (components paired with $1$ and $H$) are paired by $\eta^{-1}$,
+\begin{equation}
+\label{eq:set-pairing}
+\langle a,b\rangle\coloneqq\sum\eta^{a'b'}a_{a'}b_{b'}=\epsilon_1\epsilon_2\big[\alpha_0\alpha_1\alpha_2\,a_0b_0+\alpha_1\alpha_2(a_0b_1+a_1b_0)-E\,a_1b_1\big],
+\end{equation}
+symmetric with constant coefficients, so that $\frac{\dd}{\dd t}\langle a,b\rangle=\langle a',b\rangle+\langle a,b'\rangle$.
+\end{prop}
+
+\begin{proof}
+The classical part is the localisation formula at the two fixed points: $\mathsf{Prep}^{\mathrm{cl}}=\frac16\sum_{p=p_\pm}(t_0+t_1H|_p)^3/\eul(\wts_p)$ with $H|_{p_+}=0$, $H|_{p_-}=-\alpha_0$ and the products of the tangent weights $\eul(\wts_+)=\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2$, $\eul(\wts_-)=-\alpha_0\wA\wB\epsilon_1\epsilon_2$ (equivalently, $H$ satisfies $H(H+\alpha_0)=0$, whose roots $0,-\alpha_0$ are the fixed points). Its third derivatives are
+\[
+\begin{gathered}
+\mathsf{Prep}^{\mathrm{cl}}_{000}=\frac{1}{\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2}-\frac{1}{\alpha_0\wA\wB\epsilon_1\epsilon_2}=\frac{E}{\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2},\qquad
+\mathsf{Prep}^{\mathrm{cl}}_{001}=\frac{1}{\wA\wB\epsilon_1\epsilon_2},\\
+\mathsf{Prep}^{\mathrm{cl}}_{011}=\frac{-\alpha_0}{\wA\wB\epsilon_1\epsilon_2},\qquad
+\mathsf{Prep}^{\mathrm{cl}}_{111}=\frac{\alpha_0^2}{\wA\wB\epsilon_1\epsilon_2},
+\end{gathered}
+\]
+using $\wA\wB-\alpha_1\alpha_2=\alpha_0E$; none has $\alpha_0$ in a denominator. (i) $\eta_{ij}=\mathsf{Prep}^{\mathrm{cl}}_{0ij}$ gives $\eta$. Its determinant is $(-\alpha_0E-\alpha_1\alpha_2)/(\alpha_1\alpha_2(\wA\wB\epsilon_1\epsilon_2)^2)=-1/(\alpha_1\alpha_2\wA\wB\epsilon_1^2\epsilon_2^2)$, since $\alpha_0E+\alpha_1\alpha_2=\wA\wB$; inverting,
+\[
+\eta^{-1}=-\alpha_1\alpha_2\wA\wB\epsilon_1^2\epsilon_2^2\cdot\frac{1}{\wA\wB\epsilon_1\epsilon_2}\begin{pmatrix}-\alpha_0&-1\\-1&E/(\alpha_1\alpha_2)\end{pmatrix}=\epsilon_1\epsilon_2\begin{pmatrix}\alpha_0\alpha_1\alpha_2&\alpha_1\alpha_2\\\alpha_1\alpha_2&-E\end{pmatrix}.
+\]
+(ii) $(\dd/\dd t_1)^3\Li_3(\re^{t_1})=\Li_0(\cQ)=\cQ/(1-\cQ)=-1/\tau$ (as $1-\cQ=-\cQ\tau$), so $\mathsf{Prep}_{111}=\mathsf{Prep}^{\mathrm{cl}}_{111}-1/(\epsilon_1\epsilon_2\tau)$, and the other third derivatives are classical. The structure constants are $c^i_{jk}=\sum_m\eta^{im}\mathsf{Prep}_{mjk}$, $e_j\qprod e_k=\sum_ic^i_{jk}e_i$ with $e_0=1$, $e_1=H$. Since $\mathsf{Prep}_{0jk}=\eta_{jk}$, $c^i_{0k}=\delta_{ik}$, which is $1\qprod a=a$. Further
+\begin{align*}
+c^0_{11}&=\epsilon_1\epsilon_2\Big[\alpha_0\alpha_1\alpha_2\cdot\frac{-\alpha_0}{\wA\wB\epsilon_1\epsilon_2}+\alpha_1\alpha_2\Big(\frac{\alpha_0^2}{\wA\wB\epsilon_1\epsilon_2}-\frac{1}{\epsilon_1\epsilon_2\tau}\Big)\Big]=-\frac{\alpha_1\alpha_2}{\tau},\\
+c^1_{11}&=\epsilon_1\epsilon_2\Big[\alpha_1\alpha_2\cdot\frac{-\alpha_0}{\wA\wB\epsilon_1\epsilon_2}-E\Big(\frac{\alpha_0^2}{\wA\wB\epsilon_1\epsilon_2}-\frac{1}{\epsilon_1\epsilon_2\tau}\Big)\Big]=-\frac{\alpha_0(\alpha_1\alpha_2+\alpha_0E)}{\wA\wB}+\frac E\tau=\frac E\tau-\alpha_0 .
+\end{align*}
+(iii) By (ii), $(H\qprod)^2-(E/\tau-\alpha_0)(H\qprod)+(\alpha_1\alpha_2/\tau)=0$ on the two-dimensional algebra generated by $H$, and $H\qprod$ is not scalar, so $\mathsf{Leq}$ is its minimal polynomial; the relations between the roots are Vieta's. (iv) The algebra is generated by $H$, and $\eta(e_j\qprod e_k,e_l)=\mathsf{Prep}_{ljk}$ is totally symmetric. The pairing \eqref{eq:set-pairing} is $\eta^{-1}$ written out.
+\end{proof}
+
+\draftnote{compare BS App. A for the Frobenius data; the note derives them from the genus-0 potential, whose derivation is \cref{lem:ide-g0}.} On $\TF$ these data read $\eta^{-1}=\begin{psmallmatrix}0&\xc^2\\\xc^2&-\cc\xc\end{psmallmatrix}$ and $H\qprod H=-(\xc/\tau)1+(\cc/\tau)H$ with $\xc=\alpha_1=\epsilon_1$, $\alpha_2=\epsilon_2=1$, $\cc=1+\xc=E$.
+
+%-------------------------------------------------------------------------------
+\subsection{Idempotents, the vertex weights, the quadratic algebra}
+\label{sec:set-idem}
+
+\begin{defn}[The quadratic algebra and its involution]
+\label{def:set-QA}
+Let $\QA\coloneqq\KCY(\cQ)[U]/(\Pq(U))$. It has the two characters $\ev_i:U\mapsto U_i$ ($i=1,2$), ring homomorphisms into the algebraic functions of $\cQ$, jointly injective because $\Pq$ has distinct roots ($\Disc\neq0$, \cref{lem:set-disc}). The \emph{involution} of $\QA$ is the ring automorphism $U\mapsto U_1+U_2-U$ (the Galois conjugation), which exchanges the two characters: $\ev_1\circ(\text{inv})=\ev_2$ and $\ev_2\circ(\text{inv})=\ev_1$. By \cref{lem:set-disc}(v), $\QA$ is the function field $\KCY(\Ccov)$ of the double cover $\Ccov\to\bbP^1_\cQ$, $\ydc^2=\Disc(\cQ)$, and the involution is its deck involution. By \cref{lem:set-crit}(iii), $\Lv(U)=(\wB U+\alpha_2)/\tau$ lies in $\QA$, and $\ev_i\Lv(U)=\Lv_i$.
+\end{defn}
+
+Every factor of idempotent $2$ defined below is obtained from the corresponding factor of idempotent $1$ by applying the involution, that is, by evaluating the same expression in $U$ at the other root; this is because the two scalar series $\hnw$ and $\hw^{-1}$ of \cref{def:set-rows} are the same at both idempotents (by \cref{def:set-rows}; that this is the correct normalisation at both idempotents is \cref{lem:ide-norm}). This is made precise in \cref{lem:lea-conj}.
+
+\begin{prop}[Idempotents and vertex weights]\genusstatus{AI-proposed, unchecked}
+\label{prop:set-idem}
+Let $\Lv_1\neq\Lv_2$ be the roots of $\mathsf{Leq}$.
+\begin{enumerate}
+\item $\eid_1=(H-\Lv_2)/(\Lv_1-\Lv_2)$ and $\eid_2=(H-\Lv_1)/(\Lv_2-\Lv_1)$ are the idempotents: $\eid_i\qprod\eid_j=\delta_{ij}\eid_i$, $H\qprod\eid_i=\Lv_i\eid_i$, $\eid_1+\eid_2=1$.
+\item $\eta(\eid_i,\eid_j)=0$ for $i\neq j$. Put $\Delta_i\coloneqq1/\eta(\eid_i,\eid_i)$; the normalised idempotents are $\fid_i\coloneqq\Delta_i^{1/2}\eid_i$. The \emph{vertex weight} of a vertex of genus $g_v$ and colour $i$ is $\Delta_i^{g_v-1}$.
+\item For $\{i,j\}=\{1,2\}$,
+\begin{equation}
+\label{eq:set-Delta}
+\begin{split}
+\Delta_i&=\frac{\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2(\Lv_i-\Lv_j)}{\alpha_1\alpha_2-E\Lv_j}
+=\epsilon_1\epsilon_2(\Lv_i-\Lv_j)(\alpha_1\alpha_2-E\Lv_i)\\
+&=\epsilon_1\epsilon_2(\alpha_0\alpha_1\alpha_2+2\alpha_1\alpha_2\Lv_i-E\Lv_i^2)
+=\alpha_1\wA\epsilon_1\epsilon_2\,\cW_2(U_i),
+\end{split}
+\end{equation}
+and $(\alpha_1\alpha_2-E\Lv_1)(\alpha_1\alpha_2-E\Lv_2)=\alpha_1\alpha_2\wA\wB$. The four expressions of \eqref{eq:set-Delta}, with $\Lv_i=\Lv(U)$, $\Lv_j=E/\tau-\alpha_0-\Lv(U)$ and $\cW_2=\cW_2(U)$, are equal as elements of $\QA$.
+\item $\Delta_1\Delta_2=-\epsilon_1^2\epsilon_2^2\,\alpha_1\alpha_2\wA\wB(\Lv_1-\Lv_2)^2$ and $\dfrac1{\Delta_1}+\dfrac1{\Delta_2}=\dfrac{E}{\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2}=\eta(1,1)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+(i) By \cref{prop:set-frob}(ii), (iii), $(H-\Lv_1)\qprod(H-\Lv_2)=H\qprod H-(\Lv_1+\Lv_2)H+\Lv_1\Lv_2=0$. Hence $(H-\Lv_1)\qprod\eid_1=0$, that is $H\qprod\eid_1=\Lv_1\eid_1$, and $\eid_1\qprod\eid_2=0$; with $\eid_1+\eid_2=1$ this gives $\eid_i\qprod\eid_i=\eid_i$. (ii) $\eta(\eid_i,\eid_j)=\eta(\eid_i\qprod\eid_j,1)=0$ for $i\neq j$ by the Frobenius property.
+(iii) First form: $\eta(\eid_i,\eid_i)=\eta(\eid_i\qprod\eid_i,1)=\eta(\eid_i,1)=\big(\eta(H,1)-\Lv_j\eta(1,1)\big)/(\Lv_i-\Lv_j)$, and by \cref{prop:set-frob}(i) this is
+\[
+\frac{1}{\Lv_i-\Lv_j}\Big[\frac{1}{\wA\wB\epsilon_1\epsilon_2}-\frac{\Lv_jE}{\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2}\Big]=\frac{\alpha_1\alpha_2-E\Lv_j}{\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2(\Lv_i-\Lv_j)}.
+\]
+The product identity: $(\alpha_1\alpha_2-E\Lv_1)(\alpha_1\alpha_2-E\Lv_2)=\alpha_1^2\alpha_2^2-E\alpha_1\alpha_2(E/\tau-\alpha_0)+E^2\alpha_1\alpha_2/\tau=\alpha_1\alpha_2(\alpha_1\alpha_2+\alpha_0E)=\alpha_1\alpha_2\wA\wB$; so $\alpha_1\alpha_2\wA\wB/(\alpha_1\alpha_2-E\Lv_j)=\alpha_1\alpha_2-E\Lv_i$, which is the second form. Third form: $(\Lv_i-\Lv_j)(\alpha_1\alpha_2-E\Lv_i)=\alpha_1\alpha_2\Lv_i-E\Lv_i^2-\alpha_1\alpha_2\Lv_j+E\Lv_i\Lv_j$, with $-\alpha_1\alpha_2\Lv_j=\alpha_1\alpha_2\Lv_i-\alpha_1\alpha_2(E/\tau-\alpha_0)$ and $E\Lv_i\Lv_j=E\alpha_1\alpha_2/\tau$; the terms in $\tau^{-1}$ cancel and $\alpha_0\alpha_1\alpha_2+2\alpha_1\alpha_2\Lv_i-E\Lv_i^2$ remains. Fourth form: at a critical point $\Lv=-\alpha_1\cQ U/(1-\cQ U)$, so $1/(1-\cQ U)=1+\cQ U/(1-\cQ U)=(\alpha_1-\Lv)/\alpha_1$ and $-\alpha_1\cQ U/(1-\cQ U)^2=\Lv(\alpha_1-\Lv)/\alpha_1$; and $U/(1-U)=(\Lv-\alpha_2)/\wA$, $1/(1-U)=(\Lv+\alpha_0)/\wA$ (\cref{lem:set-crit}(iii)), so $\wA U/(1-U)^2=(\Lv-\alpha_2)(\Lv+\alpha_0)/\wA$. Hence
+\begin{align*}
+\alpha_1\wA\,\cW_2(U)&=\wA\Lv(\alpha_1-\Lv)-\alpha_1(\Lv-\alpha_2)(\Lv+\alpha_0)\\
+&=-(\wA+\alpha_1)\Lv^2+\alpha_1(\wA-\alpha_0+\alpha_2)\Lv+\alpha_0\alpha_1\alpha_2=-E\Lv^2+2\alpha_1\alpha_2\Lv+\alpha_0\alpha_1\alpha_2 .
+\end{align*}
+Each of the four expressions is an element of $\QA$ (with $\Lv=\Lv(U)\in\QA$ and $1-U$, $1-\cQ U$ units of $\QA$ for $\tau\neq0$, by \cref{lem:set-crit}(ii)), and the computations above show that they have equal values under $\ev_1$ and under $\ev_2$; as the two characters are jointly injective, they are equal in $\QA$.
+(iv) The product follows from the second form of \eqref{eq:set-Delta} and the product identity; the sum is $\eta(\eid_1,\eid_1)+\eta(\eid_2,\eid_2)=\eta(\eid_1+\eid_2,1)=\eta(1,1)$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{Algebraic functions of \texorpdfstring{$\tau$}{tau}; the critical polynomial}
+\label{sec:set-alg}
+
+\begin{defn}[Algebraic functions of $\tau$]
+\label{def:set-alg}
+\begin{description}
+\item[$\delta$.] Put
+\[
+\delta^2\coloneqq(E+\alpha_0\tau)^2-4\wA\wB\tau=E^2-(E^2+\uq)\tau+\alpha_0^2\tau^2=(E-\alpha_0\tau)^2-4\alpha_1\alpha_2\tau ;
+\]
+the three forms agree since $4\wA\wB=4\alpha_1\alpha_2+4\alpha_0E$ and $2\alpha_0E+4\alpha_1\alpha_2=E^2+\uq$. Let $\delta$ be the root analytic near $\tau=0$ with $\delta(0)=E$. It is analytic on the disc $\Ddisc\coloneqq\{|\tau|<r_\Ddisc\}$, $r_\Ddisc$ the smallest modulus of a root of $\delta^2$; $r_\Ddisc$ is finite under (ND): for $\alpha_0\neq0$, $\delta^2$ is quadratic in $\tau$, and at $\alpha_0=0$, where $E^2+\uq=4\alpha_1\alpha_2\neq0$, $\delta^2=E^2-4\alpha_1\alpha_2\tau$. Further $\Ddisc'\coloneqq\Ddisc\cap\{|\tau|<1\}$ and $\Ddisc''\coloneqq\Ddisc'\setminus\{0\}$. (On $\TF$: $\delta^2=\cc^2-4\xc\tau$.)
+\item[The critical polynomial.] $\Ns(s)\coloneqq\wB\tau s^2-(E+\alpha_0\tau)s+\wA$, with roots
+\[
+\sast\coloneqq\frac{E+\alpha_0\tau-\delta}{2\wB\tau}=\frac{2\wA}{E+\alpha_0\tau+\delta},\qquad
+\stil\coloneqq\frac{E+\alpha_0\tau+\delta}{2\wB\tau}=\frac{\wA}{\wB\tau\sast},
+\]
+so that $\sast+\stil=(E+\alpha_0\tau)/(\wB\tau)$ and $\sast\stil=\wA/(\wB\tau)$. $\sast$ is analytic on $\Ddisc$ with $\sast(0)=\wA/E$: the denominator $E+\alpha_0\tau+\delta$ vanishes only where $(E+\alpha_0\tau)^2=\delta^2$, that is $4\wA\wB\tau=0$, that is $\tau=0$, where it equals $2E\neq0$. $\tau\stil$ is analytic with value $E/\wB$ at $0$. One has $\Ns'(\sast)=2\wB\tau\sast-(E+\alpha_0\tau)=-\delta$, $\Ns'(\stil)=+\delta$, and $\delta=E+\alpha_0\tau-2\wB\tau\sast$.
+\item[The critical points.] $U_1\coloneqq1-\tau\sast$ and $U_2\coloneqq1-\tau\stil$; these are the two roots of $\Pq$ (\cref{lem:set-eig}), with $U_1\to1$ and $U_2\to1-E/\wB=-\alpha_2/\wB$ as $t\to0$. $U_1$ is the root with the singular vertex weight (\cref{lem:set-limits}); idempotent $1$ is the \emph{singular} idempotent and idempotent $2$ the \emph{regular} one.
+\item[The Euler phase.] $\phi_\tau(s)\coloneqq\wA\log s+\alpha_1\log(1-s)-\alpha_2\log(1-\tau s)$, with principal branches near $(\tau,s)=(0,\wA/E)$; $\phi_0(\wA/E)=\wA\log(\wA/E)+\alpha_1\log(\alpha_1/E)$. Put $\dphi(\tau)\coloneqq\phi_\tau(\sast(\tau))-\phi_0(\wA/E)$, an analytic germ at $\tau=0$ with $\dphi(0)=0$.
+\end{description}
+\end{defn}
+
+\begin{lem}[The critical polynomial]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-N}
+Let $\tau\neq0$.
+\begin{enumerate}
+\item[(a)] $\phi_\tau'(s)=\dfrac{\wA}{s}-\dfrac{\alpha_1}{1-s}+\dfrac{\alpha_2\tau}{1-\tau s}=\dfrac{\Ns(s)}{s(1-s)(1-\tau s)}$. The critical points of $\phi_\tau$ in $\bbC\setminus\{0,1,1/\tau\}$ are $\sast$ and $\stil$. On $\Ddisc'$, $\sast\notin\{0,1,1/\tau\}$; on $\Ddisc''$, $\stil\notin\{0,1,1/\tau\}$ and $U_2\notin\{0,1,1/\cQ\}$.
+\item[(b)] At $s=\sast$ (and, for (ii) and (iv), also at $s=\stil$; (i) and (iii) hold at $\stil$ with $\delta$ replaced by $-\delta$ and $\wB\sast-\alpha_0$ by $\wB\stil-\alpha_0$):
+\begin{description}
+\item[(i)] $2\wB\tau\sast-(E+\alpha_0\tau)=-\delta$;
+\item[(ii)] $(1-\tau)\alpha_2s=(\wA-\wB s)(1-\tau s)$, equivalently $(E-\wB\tau s)(1-s)=\alpha_1(1-\tau s)$; moreover $E-\wB\tau\sast=\delta+\tau\Lv_2$ with $\Lv_2\coloneqq\wB\sast-\alpha_0$;
+\item[(iii)] $\dfrac{\dd\sast}{\dd\tau}=\dfrac{\sast\Lv_2}{\delta}$;
+\item[(iv)] $\wA-Es=-\tau s(\wB s-\alpha_0)$.
+\end{description}
+Consequently (envelope formula)
+\begin{equation}
+\label{eq:set-envelope}
+\dphi_\tau=\frac{\alpha_2\sast}{1-\tau\sast}=\frac{\wA-\wB\sast}{1-\tau},\qquad \dphi'=\wA-\wB\sast ,
+\end{equation}
+and $\dphi$ lies in $\tau\Oan$, with $\dphi=(\alpha_2\wA/E)\tau+O(\tau^2)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(a) The derivative is immediate from the definition of $\phi_\tau$. Over the common denominator the numerator is
+\[
+\wA(1-s)(1-\tau s)-\alpha_1s(1-\tau s)+\alpha_2\tau s(1-s)=\wA-(\wA+\alpha_1)s-\wA\tau s+\alpha_2\tau s+(\wA+\alpha_1-\alpha_2)\tau s^2=\Ns(s),
+\]
+using $\wA+\alpha_1=E$, $\alpha_2-\wA=-\alpha_0$, $\wA+\alpha_1-\alpha_2=\wB$. The roots of $\Ns$ are $\sast,\stil$ (\cref{def:set-alg}). $s=0$ is not a root ($\Ns(0)=\wA\neq0$); $\Ns(1)=\wB\tau-E-\alpha_0\tau+\wA=(\wB-\alpha_0)\tau-\alpha_1=\alpha_1(\tau-1)$, so a root equals $1$ only if $\tau=1$ ($\alpha_1\neq0$); $\Ns(1/\tau)=\wB/\tau-E/\tau-\alpha_0+\wA=(\wB-E)/\tau+\alpha_2=\alpha_2(1-1/\tau)$, so a root equals $1/\tau$ only if $\tau=1$ ($\alpha_2\neq0$). On $\Ddisc''$ both roots are finite ($\wB\tau\neq0$) and $\tau\neq1$; on $\Ddisc'$ the root $\sast$ is analytic with $\sast(0)=\wA/E\notin\{0,1\}$. Finally $U_2=0$ means $\stil=1/\tau$, and $U_2\in\{1,1/\cQ\}$ means $\stil\in\{0,1\}$, because $1-\cQ U_2=1-\cQ+\cQ\tau\stil=-\cQ\tau(1-\stil)$.
+
+(b) (i) is $\Ns'(\sast)=-\delta$. For (ii), first form:
+\begin{align*}
+(1-\tau)\alpha_2s-(\wA-\wB s)(1-\tau s)&=\alpha_2s-\alpha_2\tau s-\wA+\wA\tau s+\wB s-\wB\tau s^2\\
+&=-\big[\wB\tau s^2-(\wB+\alpha_2)s+(\alpha_2-\wA)\tau s+\wA\big]=-\Ns(s),
+\end{align*}
+since $\wB+\alpha_2=E$ and $\alpha_2-\wA=-\alpha_0$. Second form:
+\[
+(E-\wB\tau s)(1-s)-\alpha_1(1-\tau s)=E-Es-\wB\tau s+\wB\tau s^2-\alpha_1+\alpha_1\tau s=\wA-Es+\wB\tau s^2-(\wB-\alpha_1)\tau s=\Ns(s).
+\]
+Both vanish at both roots. By (i), $\delta=E+\alpha_0\tau-2\wB\tau\sast$, and $\tau\Lv_2=\wB\tau\sast-\alpha_0\tau$, so $E-\wB\tau\sast=\delta+\tau\Lv_2$. (iii) Differentiate $\Ns(\sast(\tau),\tau)=0$ in $\tau$: $\wB\sast{}^2+2\wB\tau\sast\sast_\tau-\alpha_0\sast-(E+\alpha_0\tau)\sast_\tau=0$, that is $\Ns'(\sast)\sast_\tau=-(\wB\sast{}^2-\alpha_0\sast)=-\sast\Lv_2$; with (i), $\sast_\tau=\sast\Lv_2/\delta$. At $\stil$ the same computation gives $\stil_\tau=-\stil(\wB\stil-\alpha_0)/\delta$. (iv) is $\Ns(s)=0$ rearranged: $\wA-Es=\alpha_0\tau s-\wB\tau s^2$.
+
+Envelope: $\frac{\dd}{\dd\tau}\phi_\tau(\sast(\tau))=(\de_\tau\phi_\tau)(\sast)+\phi_\tau'(\sast)\sast_\tau=(\de_\tau\phi_\tau)(\sast)=\alpha_2\sast/(1-\tau\sast)$, since $\phi'_\tau(\sast)=0$ and $\de_\tau\phi_\tau(s)=\alpha_2s/(1-\tau s)$; then the first form of (ii) gives $(\wA-\wB\sast)/(1-\tau)$, and $\dd/\dd t=(1-\tau)\dd/\dd\tau$. Since $\sast$, $1-\tau\sast$ are analytic on $\Ddisc$ with $\sast(0)=\wA/E$, $\dphi_\tau$ is analytic at $0$ with value $\alpha_2\wA/E$, and $\dphi(0)=0$.
+\end{proof}
+
+On $\TF$, (ii) is the factorisation $1-s=\xc s(1-\tau s)$; at generic weights $\Ns$ has no factorisation of this form, and the two forms of (ii) are what replaces it in \cref{sec:row,sec:lea}.
+
+\begin{lem}[Eigenvalues in terms of $\sast$]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-eig}
+\begin{enumerate}
+\item With $U=1-\tau s$ ($\tau\neq0$), $U$ is a root of $\Pq$ if and only if $\Ns(s)=0$; indeed $\Pq(1-\tau s)=\cQ\tau\Ns(s)$ as polynomials in $s$. The roots of $\Pq$ are $U_1=1-\tau\sast$ and $U_2=1-\tau\stil$.
+\item At a root $U_i$, $(\de_t\cW)(U_i)=\Lv(U_i)=\alpha_2+\wA U_i/(1-U_i)$, and
+\[
+\Lv_1=\frac{\wA}{\tau\sast}-\alpha_0,\qquad \Lv_2=\wB\sast-\alpha_0=\frac{\wA}{\tau\stil}-\alpha_0,\qquad
+\Lv_1+\Lv_2=\frac E\tau-\alpha_0,\qquad \Lv_1\Lv_2=\frac{\alpha_1\alpha_2}{\tau},\qquad \Lv_1-\Lv_2=\frac\delta\tau .
+\]
+So $\Lv_1,\Lv_2$ are the roots of $\mathsf{Leq}$, the eigenvalues of $H\qprod$, and the $\Lv_2$ of \cref{lem:set-N} is this one.
+\item $\Lv_1=E/t+\lrem(t)$ with $\lrem\coloneqq\wA/(\tau\sast)-\alpha_0-E/t\in\Oan$, $\lrem(0)=E/2-\alpha_0-\alpha_1\alpha_2/E$. $\Lv_2\in\Oan$ with $\Lv_2(0)=\alpha_1\alpha_2/E$. Also $\sast=\wA/E+s_1\tau+O(\tau^2)$ with $s_1\coloneqq\sast_\tau(0)=\wA\alpha_1\alpha_2/E^3$, and $\delta_\tau(0)=-(E^2+\uq)/(2E)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) Compare the two sides of $\Pq(1-\tau s)=\cQ\tau\Ns(s)$: both are quadratic in $s$; the coefficients of $s^2$ are $\wB\cQ\tau^2$ and $\cQ\tau\cdot\wB\tau$; the constant terms are $\Pq(1)=\wA(\cQ-1)=\wA\cQ\tau$ and $\cQ\tau\wA$; the coefficients of $s$ are $-\tau\Pq'(1)=-\tau\big(2\wB\cQ-\alpha_0-\cQ(\alpha_1-\alpha_2)\big)=-\tau\big(\cQ E+\alpha_0(\cQ-1)\big)=-\cQ\tau E-\alpha_0\cQ\tau^2$ and $-\cQ\tau(E+\alpha_0\tau)$. The roots correspond. (ii) The first statement is \cref{lem:set-crit}(iii). With $1-U_i=\tau s_i$ ($s_1=\sast$, $s_2=\stil$): $\Lv_i=\alpha_2+\wA(1-\tau s_i)/(\tau s_i)=\wA/(\tau s_i)-\alpha_0$. From $\sast\stil=\wA/(\wB\tau)$, $\wA/(\tau\stil)=\wB\sast$. Sum: $\wA(\sast+\stil)/(\tau\sast\stil)-2\alpha_0=(E+\alpha_0\tau)/\tau-2\alpha_0$. Product: $(\wA/(\tau\sast)-\alpha_0)(\wB\sast-\alpha_0)=\wA\wB/\tau-\alpha_0(\Lv_1+\alpha_0)-\alpha_0(\Lv_2+\alpha_0)+\alpha_0^2=(\wA\wB-\alpha_0E)/\tau=\alpha_1\alpha_2/\tau$. Difference: $\wA/(\tau\sast)-\wB\sast=(\wA-\wB\tau\sast{}^2)/(\tau\sast)=(E+\alpha_0\tau-2\wB\tau\sast)/\tau=\delta/\tau$, by $\Ns(\sast)=0$ and \cref{lem:set-N}(b)(i). By \cref{prop:set-frob}(iii) the roots of $\mathsf{Leq}$ are determined by their sum and product. (iii) $1/\tau=1/t+1/2+O(t)$. From \cref{lem:set-N}(b)(iii), $s_1=\sast(0)\Lv_2(0)/\delta(0)$ with $\Lv_2(0)=\wB\wA/E-\alpha_0=(\wA\wB-\alpha_0E)/E=\alpha_1\alpha_2/E$, so $s_1=(\wA/E)(\alpha_1\alpha_2/E)/E$. Then $\wA/(\tau\sast)=(E/\tau)\big(1-(E/\wA)s_1\tau+O(\tau^2)\big)=E/\tau-(E^2/\wA)s_1+O(\tau)=E/t+E/2-\alpha_1\alpha_2/E+O(t)$, which gives $\lrem\in\Oan$ and $\lrem(0)$. $\Lv_2=\wB\sast-\alpha_0$ is analytic with the stated value. Finally $2\delta\delta_\tau=-(E^2+\uq)+2\alpha_0^2\tau$ gives $\delta_\tau(0)$.
+\end{proof}
+
+On $\TF$: $\Lv_1=1/(\tau\sast)$, $\Lv_2=\xc\sast$, $\lrem(0)=\cc/2-\xc/\cc$.
+
+\begin{lem}[$\Delta_2$ in terms of $\sast$]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-Delta2}
+\begin{enumerate}
+\item $\alpha_1\alpha_2-E\Lv_2=-\wB\tau\sast\Lv_2$, and
+\[
+\Delta_2=\epsilon_1\epsilon_2\wB\,\delta\,\sast\Lv_2,\qquad
+\Delta_1\Delta_2=-\epsilon_1^2\epsilon_2^2\,\alpha_1\alpha_2\wA\wB\,\frac{\delta^2}{\tau^2}.
+\]
+Consequently $\Delta_2/(\Lv_2-\Lv_1)=\epsilon_1\epsilon_2(\alpha_1\alpha_2-E\Lv_2)=-\epsilon_1\epsilon_2\wB\tau\sast\Lv_2$ (this quantity is named $\Thf$ in \cref{sec:lea}).
+\item $\Delta_2\in\Oan$ with $\Delta_2(0)=\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E\neq0$ and $\Delta_2'(0)=0$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) By \cref{lem:set-eig}(ii), $\alpha_1\alpha_2-E\Lv_2=\alpha_1\alpha_2-E(\wB\sast-\alpha_0)=\wA\wB-E\wB\sast=\wB(\wA-E\sast)=-\wB\tau\sast(\wB\sast-\alpha_0)$ by \cref{lem:set-N}(b)(iv). The second form of \eqref{eq:set-Delta} with $\Lv_2-\Lv_1=-\delta/\tau$ gives $\Delta_2=\epsilon_1\epsilon_2(-\delta/\tau)(-\wB\tau\sast\Lv_2)$. The product is \cref{prop:set-idem}(iv) with $(\Lv_1-\Lv_2)^2=\delta^2/\tau^2$, and the last formula is the second form of \eqref{eq:set-Delta} divided by $\Lv_2-\Lv_1$.
+(ii) $\Delta_2=\epsilon_1\epsilon_2\wB\delta\sast\Lv_2$ is a product of elements of $\Oan$, with value $\epsilon_1\epsilon_2\wB E(\wA/E)(\alpha_1\alpha_2/E)$ at $0$. Derivative in $\tau$ at $0$, with $\delta_\tau(0)=-(E^2+\uq)/(2E)$, $\sast_\tau(0)=s_1=\wA\alpha_1\alpha_2/E^3$ and $(\Lv_2)_\tau(0)=\wB s_1$ (\cref{lem:set-eig}(iii)):
+\[
+(\delta\sast\Lv_2)_\tau(0)=-\frac{E^2+\uq}{2E}\cdot\frac{\wA}{E}\cdot\frac{\alpha_1\alpha_2}{E}+E\,s_1\frac{\alpha_1\alpha_2}{E}+E\frac{\wA}{E}\wB s_1
+=\frac{\wA\alpha_1\alpha_2}{E^3}\Big[-\frac{E^2+\uq}{2}+\alpha_1\alpha_2+\wA\wB\Big]=0,
+\]
+because $\wA\wB+\alpha_1\alpha_2=2\alpha_1\alpha_2+\alpha_0E=(E^2+\uq)/2$. Since $\dd/\dd t=(1-\tau)\dd/\dd\tau$, also $\Delta_2'(0)=0$.
+\end{proof}
+
+The companion statements for $\Delta_1$ (the form $\Delta_1=-\alpha_1\wA\epsilon_1\epsilon_2\delta U_1/(\tau^2\sast(1-\sast))=-\epsilon_1\epsilon_2E^3\alg^2/\tau^2$, which is (F1)) need the Hessian of the Euler phase and are \cref{lem:row-hess} and \cref{prop:lea-key}; the leading term is \cref{lem:set-limits}(i).
+
+%-------------------------------------------------------------------------------
+\subsection{The discriminant and the double cover; behaviour at \texorpdfstring{$\cQ=1,0,\infty$}{Q = 1, 0, infinity}}
+\label{sec:set-disc}
+
+\begin{lem}[The discriminant]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-disc}
+Let $\Disc(\cQ)\coloneqq\alpha_0^2+\big(2\alpha_0(\alpha_1+\alpha_2)+4\alpha_1\alpha_2\big)\cQ+(\alpha_1-\alpha_2)^2\cQ^2$.
+\begin{enumerate}
+\item $\Disc=\cQ^2\tau^2(\Lv_1-\Lv_2)^2=\cQ^2\delta^2=(\alpha_0+\cQ(\alpha_1-\alpha_2))^2+4\alpha_2\wB\cQ$, the discriminant of $\Pq(U)$ in $U$.
+\item The discriminant of $\Disc$ as a polynomial in $\cQ$ is $\big(2\alpha_0(\alpha_1+\alpha_2)+4\alpha_1\alpha_2\big)^2-4(\alpha_1-\alpha_2)^2\alpha_0^2=16\alpha_1\alpha_2\wA\wB$.
+\item $\Disc(1)=E^2$, $\Disc(0)=\alpha_0^2$, and the leading coefficient is $(\alpha_1-\alpha_2)^2$. So, at the generic point of $\TCY$, $\Disc$ has no root over $\cQ\in\{0,1\}$ and has two distinct finite roots.
+\item $\Disc$ is irreducible over $\KCY=\Kred(\alpha_0)$.
+\item The double cover $\Ccov\to\bbP^1_\cQ$ defined by $\ydc^2=\Disc(\cQ)$ has function field $\KCY(\Ccov)=\QA$, where $\QA=\KCY(\cQ)[U]/(\Pq(U))$ is the quadratic algebra of \cref{def:set-QA}, the two descriptions being identified by
+\[
+2\wB\cQ U-\big(\alpha_0+\cQ(\alpha_1-\alpha_2)\big)=\pm\ydc ;
+\]
+it is ramified exactly over the two roots of $\Disc$ and unramified over $\cQ=0,1,\infty$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) By \cref{lem:set-eig}(ii), $\tau^2(\Lv_1-\Lv_2)^2=\delta^2=(E-\alpha_0\tau)^2-4\alpha_1\alpha_2\tau$. Multiply by $\cQ^2$ and expand with $\cQ\tau=\cQ-1$: $\cQ^2(E-\alpha_0\tau)^2=(\cQ(E-\alpha_0)+\alpha_0)^2=\cQ^2(E-\alpha_0)^2+2\alpha_0\cQ(E-\alpha_0)+\alpha_0^2$ and $-4\alpha_1\alpha_2\tau\cQ^2=-4\alpha_1\alpha_2\cQ^2+4\alpha_1\alpha_2\cQ$; with $(E-\alpha_0)^2-4\alpha_1\alpha_2=(\alpha_1-\alpha_2)^2$ and $2\alpha_0(E-\alpha_0)=2\alpha_0(\alpha_1+\alpha_2)$ this is $\Disc$. The last form is a direct expansion: $(\alpha_0+\cQ(\alpha_1-\alpha_2))^2+4\alpha_2(\alpha_0+\alpha_1)\cQ=\alpha_0^2+\cQ\big(2\alpha_0(\alpha_1-\alpha_2)+4\alpha_0\alpha_2+4\alpha_1\alpha_2\big)+\cQ^2(\alpha_1-\alpha_2)^2$.
+(ii) With $p\coloneqq\alpha_1+\alpha_2$, $q\coloneqq\alpha_1\alpha_2$: $(2\alpha_0p+4q)^2-4\alpha_0^2(p^2-4q)=16\alpha_0pq+16q^2+16\alpha_0^2q=16q(\alpha_0^2+\alpha_0p+q)=16\alpha_1\alpha_2(\alpha_0+\alpha_1)(\alpha_0+\alpha_2)$.
+(iii) $\Disc(1)=\alpha_0^2+2\alpha_0(\alpha_1+\alpha_2)+(\alpha_1+\alpha_2)^2=E^2$; the rest is read off. Since $\alpha_1\neq\alpha_2$ and, by (ii), the discriminant is non-zero, the two roots are finite and distinct.
+(iv) A quadratic over a field is reducible if and only if its discriminant is a square. $16\alpha_1\alpha_2(\alpha_0+\alpha_1)(\alpha_0+\alpha_2)$, as a polynomial in $\alpha_0$ over $\Kred$, has the two simple roots $-\alpha_1\neq-\alpha_2$, so it is not a square in $\Kred[\alpha_0]$, hence not in $\Kred(\alpha_0)$ (if $f=(p/q)^2$ with $p,q$ coprime in the unique factorisation domain $\Kred[\alpha_0]$, then $q$ is a unit).
+(v) Solving $\Pq(U)=0$ gives $U=\big(\alpha_0+\cQ(\alpha_1-\alpha_2)\pm\sqrt{\Disc}\big)/(2\wB\cQ)$, so $\KCY(\cQ)[U]/(\Pq)=\KCY(\cQ)[\ydc]/(\ydc^2-\Disc)$. The cover $\ydc^2=\Disc$ is ramified where $\Disc$ has a simple zero, that is at its two roots (simple by (ii)); over $\cQ=0$ and $\cQ=1$ it is unramified by (iii); over $\cQ=\infty$, in the coordinate $\sQ=1/\cQ$, $\ydc^2=\cQ^2\big((\alpha_1-\alpha_2)^2+O(\sQ)\big)$ and $\ydc/\cQ\to\pm(\alpha_1-\alpha_2)\neq0$, so it is unramified there as well.
+\end{proof}
+
+\begin{lem}[Behaviour at $\cQ=1$, $\cQ=0$, $\cQ=\infty$]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-limits}
+\begin{enumerate}
+\item At $\cQ=1$ ($\tau\to0$): $\Lv_1=E/\tau+O(1)$ and $\Lv_2\to\alpha_1\alpha_2/E$;
+\[
+t^2\Delta_1\in\Oan\ \text{ with }\ t^2\Delta_1\big|_{t=0}=-\epsilon_1\epsilon_2E^3,\qquad \Delta_2(0)=\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E\neq0 .
+\]
+Idempotent $1$ is therefore the singular one. The exact unit $t^2\Delta_1/(-\epsilon_1\epsilon_2E^3)=\rho^{-2}$ is (F1) of \cref{thm:lea-main} (\cref{prop:lea-key}).
+\item At $\cQ=0$, label the roots of $\Pq$ by $U_+\to-\alpha_2/\alpha_0$ and $\cQ U_-\to\alpha_0/\wB$. Then $\Lv_+\to0$, $\Lv_-\to-\alpha_0$, and
+\[
+\Delta_+(0)=\eul(\wts_+)=\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2,\qquad \Delta_-(0)=\eul(\wts_-)=-\alpha_0\wA\wB\epsilon_1\epsilon_2,
+\]
+both non-zero in $\KCY$ because $\alpha_0\neq0$: the point $\cQ=0$ is semisimple at $\alpha_0\neq0$. (On $\Tthree$ and on $\TF$ it is not; see \cref{lem:rig-3Tid}.)
+\item At $\cQ=\infty$ ($\sQ\coloneqq1/\cQ\to0$): $U_1(\sQ)$ and $V_2(\sQ)\coloneqq\cQ U_2$ are power series in $\sQ$ over $\KCY$ with $U_1\to(\alpha_1-\alpha_2)/\wB$ and $V_2\to-\alpha_2/(\alpha_1-\alpha_2)$; $\Lv_1\to\alpha_1$, $\Lv_2\to\alpha_2$, and
+\begin{equation}
+\label{eq:set-Dinf}
+\begin{gathered}
+\Delta_1(\infty)=\epsilon_1\epsilon_2(\alpha_1-\alpha_2)(\alpha_1\alpha_2-E\alpha_1)=-\alpha_1\wB(\alpha_1-\alpha_2)\epsilon_1\epsilon_2,\\
+\Delta_2(\infty)=\epsilon_1\epsilon_2(\alpha_2-\alpha_1)(\alpha_1\alpha_2-E\alpha_2)=\alpha_2\wA(\alpha_1-\alpha_2)\epsilon_1\epsilon_2,
+\end{gathered}
+\end{equation}
+both non-zero in $\KCY$. Here the labels $1,2$ are those of the two points of $\Ccov$ over $\cQ=\infty$ at which $U\to(\alpha_1-\alpha_2)/\wB$, respectively $U\to0$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) By \cref{lem:set-eig}(iii), $\Lv_1=E/t+\lrem$ with $\lrem\in\Oan$ and $\Lv_2\in\Oan$ with $\Lv_2(0)=\alpha_1\alpha_2/E$; and $E/t=E/\tau+O(1)$. By the second form of \eqref{eq:set-Delta},
+\[
+t^2\Delta_1=\epsilon_1\epsilon_2\,t(\Lv_1-\Lv_2)\,t(\alpha_1\alpha_2-E\Lv_1)=\epsilon_1\epsilon_2\big(E+t(\lrem-\Lv_2)\big)\big(\alpha_1\alpha_2t-E^2-Et\lrem\big),
+\]
+a product of elements of $\Oan$ with value $\epsilon_1\epsilon_2E(-E^2)$ at $t=0$. $\Delta_2(0)$ is \cref{lem:set-Delta2}(ii).
+(ii) At $\cQ=0$, $\Pq(U)=-\alpha_0U-\alpha_2$ has the root $U_+(0)=-\alpha_2/\alpha_0$; for the other root put $V\coloneqq\cQ U$, so that $\cQ\Pq(U)=\wB V^2-(\alpha_0+\cQ(\alpha_1-\alpha_2))V-\alpha_2\cQ$, which at $\cQ=0$ is $V(\wB V-\alpha_0)$, with the simple root $V=\alpha_0/\wB$. Both are simple roots at $\cQ=0$, so $U_+$ and $V_-\coloneqq\cQ U_-$ are power series in $\cQ$. Then $\Lv_+=-\alpha_1\cQ U_+/(1-\cQ U_+)\to0$ and $\Lv_-=-\alpha_1V_-/(1-V_-)\to-\alpha_1(\alpha_0/\wB)/(1-\alpha_0/\wB)=-\alpha_0\alpha_1/(\wB-\alpha_0)=-\alpha_0$. By the second form of \eqref{eq:set-Delta}: $\Delta_+(0)=\epsilon_1\epsilon_2(0+\alpha_0)(\alpha_1\alpha_2)$ and $\Delta_-(0)=\epsilon_1\epsilon_2(-\alpha_0)(\alpha_1\alpha_2+\alpha_0E)=-\alpha_0\wA\wB\epsilon_1\epsilon_2$.
+(iii) Dividing \eqref{eq:set-P} by $\cQ$: $\wB U^2-(\alpha_0\sQ+\alpha_1-\alpha_2)U-\alpha_2\sQ=0$, which at $\sQ=0$ has the simple roots $U=(\alpha_1-\alpha_2)/\wB$ and $U=0$ (simple because $\alpha_1\neq\alpha_2$). For the second root put $V\coloneqq\cQ U$: $\wB\sQ V^2-(\alpha_0\sQ+\alpha_1-\alpha_2)V-\alpha_2=0$, with the simple root $V\to-\alpha_2/(\alpha_1-\alpha_2)$ at $\sQ=0$. Hence $U_1(\sQ)$ and $V_2(\sQ)$ are power series in $\sQ$. At $\tau=1$, $\Lv_1+\Lv_2\to E-\alpha_0=\alpha_1+\alpha_2$ and $\Lv_1\Lv_2\to\alpha_1\alpha_2$, so $\{\Lv_1,\Lv_2\}\to\{\alpha_1,\alpha_2\}$; at the point where $U\to(\alpha_1-\alpha_2)/\wB\neq0$, $\Lv=-\alpha_1\cQ U/(1-\cQ U)\to\alpha_1$. The values \eqref{eq:set-Dinf} follow from the second form of \eqref{eq:set-Delta}, using $\alpha_2-E=-\wB$, $\alpha_1-E=-\wA$. The same values follow from the fourth form: $\cW_2(U_1)\to-\wA U/(1-U)^2$ at $U=(\alpha_1-\alpha_2)/\wB$, $1-U=\wA/\wB$, giving $-(\alpha_1-\alpha_2)\wB/\wA$ and $\Delta_1(\infty)=\alpha_1\wA\epsilon_1\epsilon_2\cdot(-(\alpha_1-\alpha_2)\wB/\wA)$; and $\cW_2(U_2)\to-\alpha_1V/(1-V)^2$ at $V=-\alpha_2/(\alpha_1-\alpha_2)$, $1-V=\alpha_1/(\alpha_1-\alpha_2)$, giving $\alpha_2(\alpha_1-\alpha_2)/\alpha_1$ and $\Delta_2(\infty)=\alpha_1\wA\epsilon_1\epsilon_2\cdot\alpha_2(\alpha_1-\alpha_2)/\alpha_1$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The rows}
+\label{sec:set-rows}
+
+For a finite multiset $\mathsf{v}$ of non-zero weights put
+\begin{equation}
+\label{eq:set-h}
+h_{\mathsf{v}}(z)\coloneqq\exp\Big[-\sum_{k\geq1}\bk_k\,z^{2k-1}\sum_{a}\mathsf{v}_a^{1-2k}\Big],\qquad \bk_k\coloneqq\frac{B_{2k}}{2k(2k-1)},
+\end{equation}
+with $B_{2k}$ the Bernoulli numbers. Then $h_{\mathsf{u}+\mathsf{v}}=h_{\mathsf{u}}h_{\mathsf{v}}$ (union of multisets), $h_{-\mathsf{v}}=h_{\mathsf{v}}^{-1}$, $h_{(v,-v)}=1$, and $h_{\mathsf{v}}(z)h_{\mathsf{v}}(-z)=1$ (the exponent is odd in $z$); $h_{\mathsf{v}}\in1+z\bbQ(\mathsf{v})\fps z$ is independent of $t$. The series in use are
+\[
+\hw=h_{(E,-\epsilon_1,-\epsilon_2)},\qquad \hnw=h_{(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)},\qquad \hreg=h_{(\alpha_1,\alpha_2,\wA,\wB,-E,-E)},\qquad h_{\wts_\pm},
+\]
+with $\bw\coloneqq(E,-\epsilon_1,-\epsilon_2)$ and $\nw\coloneqq(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)$.
+
+\begin{defn}[Rows]
+\label{def:set-rows}
+\begin{description}
+\item[Point-frame identity row.] For $i=1,2$,
+\begin{equation}
+\label{eq:set-rpt}
+\rpt_{0,i}(z;t)\coloneqq\sum_{m\geq0}z^m\,\wick_m\big(\cW_2(U_i),\cW_3(U_i),\ldots\big),
+\end{equation}
+where $\wick_m$ is the universal polynomial
+\[
+\wick_m\coloneqq\sum_{n=m}^{3m}\frac{(2n)!\,(-1)^n}{n!\,2^n\,\cW_2^{\,n}}\sum_{p}\ \prod_k\frac{\cW_k^{m_k}}{(k!)^{m_k}\,m_k!},
+\]
+$p$ running over the partitions of $2n$ into exactly $n-m$ parts $\geq3$, $m_k$ the multiplicity of $k$ in $p$. Equivalently, $\wick_m$ is the coefficient of $z^m$ in
+\[
+\sum_{n\geq0}\frac{(2n)!}{n!\,2^n}\Big(\frac{-z}{\cW_2}\Big)^{n}\,\coef{v^{2n}}\exp\Big[\sum_{k\geq3}\frac{\cW_kv^k}{k!\,z}\Big],
+\]
+a term with $j$ factors $\cW_k$ and $v$-degree $2n$ having $z$-order $n-j$ (so $j=n-m$, and $n\leq3m$ because the parts are $\geq3$). Thus $\wick_0=1$, and $\wick_m$ is a polynomial in $\cW_2^{-1},\cW_3,\ldots,\cW_{2m+2}$ with rational coefficients, every monomial $\cW_2^{-n}\prod_i\cW_{k_i}$ having $\sum_ik_i=2n$. The row \eqref{eq:set-rpt} is the normalised formal Laplace expansion of $\re^{\cW/z}\dd U/U$ at the critical point $U_i$ (\cref{prop:row-wickrow} for $i=1$, \cref{thm:lea-row2reg} for $i=2$).
+\item[The row with the $\cQ=0$ constant.] $\rZ_{0,i}\coloneqq\hnw(z)\,\rpt_{0,i}(z;t)$. The matrix with these rows is $\RZ$; its meaning (the $R$-matrix of the CohFT, normalised at $\cQ=0$) is \cref{prop:ide-rows,lem:ide-norm,prop:ide-const}. On $\TF$, $\nw=(\xc,1,-\xc,-1)$ and $\hnw=1$.
+\item[Frame-B rows.]
+\begin{equation}
+\label{eq:set-rowB}
+\rr_{0,i}(z;t)\coloneqq h_{(\alpha_1,\wA,-E)}(z)\,\rpt_{0,i}(z;t)=\hw(z)^{-1}\hnw(z)\,\rpt_{0,i}(z;t),
+\end{equation}
+the second equality by \cref{lem:set-hmult}; the matrix with these rows is $\RB=\RZ\hw^{-1}$, and \emph{frame B} means this frame (\cref{prop:ide-frameB}). The frame-B rows depend on $(\alpha_0,\alpha_1,\alpha_2)$ only. In the sequel $\rr_{a,i}$ denotes the frame-B row unless ``point frame'' or $\RZ$ is said.
+\item[The $H$-row.]
+\begin{equation}
+\label{eq:set-Hrow}
+\rr_{1,i}(z)\coloneqq(\Lv_i+z\Dop_i)\,\rr_{0,i}(z),\qquad \Dop_i\coloneqq\frac{\dd}{\dd t}-\frac{\Delta_i'}{2\Delta_i},
+\end{equation}
+that is $\rr_{1,i}[0]=\Lv_i\rr_{0,i}[0]$ and $\rr_{1,i}[m]=\Lv_i\rr_{0,i}[m]+\Dop_i\rr_{0,i}[m-1]$ for $m\geq1$, where $\rr[m]\coloneqq\coef{z^m}\rr$. The rule \eqref{eq:set-Hrow} is linear over $\bbC\fps z$ with $t$-independent coefficients, so it holds in every frame (point frame, $\RZ$, frame B), the scalar series $h$ being independent of $t$. The \emph{covector} of idempotent $i$ is $\vv_i(z)\coloneqq(\rr_{0,i}(z),\rr_{1,i}(z))$, and $\vv_i[p]\coloneqq\coef{z^p}\vv_i$.
+\end{description}
+\end{defn}
+
+\begin{lem}[The multiset identity]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-hmult}
+\begin{equation}
+\label{eq:set-hmult}
+\hnw(z)\,h_{(E,-\alpha_1,-\wA)}(z)=\hw(z),\qquad\text{equivalently}\qquad \hw^{-1}\hnw\,h_{(E,-\alpha_1,-\wA)}=1,\qquad \hw^{-1}\hnw=h_{(\alpha_1,\wA,-E)} .
+\end{equation}
+Moreover, for two multisets $\bw',\bw$ of non-zero weights, $h_{\bw'}=h_{\bw}$ if and only if $\bw'$ and $\bw$ agree up to pairs $(v,-v)$. In particular $\bw=(E,-\epsilon_1,-\epsilon_2)$ is, up to such pairs, the unique class with $h_{\bw}=\hnw h_{(E,-\alpha_1,-\wA)}$.
+\end{lem}
+
+\begin{proof}
+As multisets, $\nw+(E,-\alpha_1,-\wA)=(\alpha_1,\wA,-\epsilon_1,-\epsilon_2,E,-\alpha_1,-\wA)=(E,-\epsilon_1,-\epsilon_2)+(\alpha_1,-\alpha_1)+(\wA,-\wA)$, and $h_{(v,-v)}=1$; this is \eqref{eq:set-hmult}. For the uniqueness: $h_{\mathsf{v}}$ depends on $\mathsf{v}$ only through the odd power sums $\sum_a\mathsf{v}_a^{1-2k}$, $k\geq1$, of the reciprocals $1/\mathsf{v}_a$, and $h_{\mathsf{v}}=1$ if and only if all of them vanish (the $\bk_k$ are non-zero). The even power sums of the multiset $\{1/\mathsf{v}_a\}$ and of its negative $\{-1/\mathsf{v}_a\}$ agree, and the odd ones are negatives of each other; so all odd power sums vanish if and only if the two multisets have the same power sums, if and only if (Newton's identities, in characteristic $0$: the power sums of a finite multiset determine it) $\{1/\mathsf{v}_a\}$ equals its negative, if and only if $\mathsf{v}$ is a union of pairs $(v,-v)$. Applied to $\mathsf{v}=\bw'+(-\bw)$: $h_{\bw'}=h_{\bw}$ if and only if $h_{\bw'}h_{\bw}^{-1}=h_{\bw'+(-\bw)}=1$, if and only if $\bw'+(-\bw)$ is a union of pairs, that is, $\bw'$ and $\bw$ agree up to pairs.
+\end{proof}
+
+The significance of the class $\bw$ is that it makes the frame-B constant at $t=0$ the geometric series: $\rr_{0,1}(z;0)=E/(E+z)$ (\cref{cor:row-F2}), because the point-frame row at $t=0$ is $h_{(E,-\alpha_1,-\wA)}E/(E+z)$ (\cref{prop:row-beta}). The same scalar $\hnw$ multiplies both idempotents (\cref{lem:ide-norm}), so the frame-B rows of the regular idempotent carry the non-trivial constant $h_{(\alpha_1,\wA,-E)}\rpt_{0,2}(z;0)$ (\cref{prop:lea-regrows}). On $\TF$, $\hnw=1$ and \eqref{eq:set-hmult} is $\hw=h_{(\cc,-\xc,-1)}=h_{(\xc,1,-\cc)}^{-1}$.
+
+%-------------------------------------------------------------------------------
+\subsection{The factors}
+\label{sec:set-factors}
+
+\begin{defn}[Dilaton and edge factors, legs]
+\label{def:set-factors}
+All rows are the frame-B rows of \cref{def:set-rows}.
+\begin{description}
+\item[Dilaton factors.] $\Dil_i(d)\coloneqq(-1)^d\,\rr_{0,i}[d-1]$ for $d\geq1$. The \emph{dilaton series} at idempotent $i$ is
+\[
+\qt^{(i)}(\psi)\coloneqq\sum_{d\geq1}\Dil_i(d;t)\,\psi^d=\sum_{m\geq0}(-1)^{m+1}\rr_{0,i}[m]\,\psi^{m+1}=-\psi\,\rr_{0,i}(-\psi;t),\qquad \qt\coloneqq\qt^{(1)} .
+\]
+Since $\rr_{0,i}[0]=1$ ($\wick_0=1$ and $h[0]=1$), $\Dil_i(1)=-1$ at every $t$: the term $d=1$ is the dilaton shift, $\Dil_i(1)\psi=-\psi$.
+\item[The pairing of the rows.]
+\begin{equation}
+\label{eq:set-Pij}
+\Pij_{ij}(z,w)\coloneqq-\langle\vv_i(-z),\vv_j(-w)\rangle=\sum_{p,q}\Pij^{ij}_{pq}z^pw^q,\qquad \Pij^{ij}_{pq}=-(-1)^{p+q}\langle\vv_i[p],\vv_j[q]\rangle,
+\end{equation}
+with the pairing \eqref{eq:set-pairing}.
+\item[Edge factors.]
+\begin{equation}
+\label{eq:set-edge}
+\Edge_{ij}(z,w)\coloneqq\frac{\Pij_{ij}(z,w)-\Pij_{ij}(-w,w)}{z+w}=\sum_{m,n\geq0}\Edge_{ij}(m,n)\,z^mw^n ;
+\end{equation}
+the numerator vanishes on $z=-w$, so the quotient lies in $\bbC\fps{z,w}$ coefficientwise in $t$ (\cref{lem:set-edgegen}). In leaf language $\Edge_{11}(\psi,\psi')$ means $\Edge_{11}(z=\psi,w=\psi')$, without change of sign.
+\item[Legs.] $f_{j,b}(\psi)\coloneqq\sum_a\Edge_{1j}(a,b)\psi^a=\coef{w^b}\Edge_{1j}(\psi,w)$, for $j\in\{1,2\}$ and $b\geq0$.
+\end{description}
+\end{defn}
+
+\begin{lem}[Edge factors as generating functions]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-edgegen}
+For any two rows $\vv_i,\vv_j$ (no symplecticity is assumed), the right side of \eqref{eq:set-edge} lies in $\bbC\fps{z,w}$ coefficientwise in $t$, and its coefficients are
+\begin{equation}
+\label{eq:set-EdN}
+\Edge_{ij}(m,n)=\sum_{k=0}^{n}(-1)^k\,\Pij^{ij}_{m+1+k,\,n-k} .
+\end{equation}
+\end{lem}
+
+\begin{proof}
+For $p\geq1$, $(z^p-(-w)^p)/(z+w)=\sum_{l=0}^{p-1}z^l(-w)^{p-1-l}$; for $p=0$ the quotient is $0$. So the right side of \eqref{eq:set-edge} equals $\sum_{p,q}\Pij^{ij}_{pq}w^q\sum_{l=0}^{p-1}z^l(-w)^{p-1-l}$, a power series in $z,w$. Its coefficient of $z^mw^n$ collects the terms with $l=m$, $p=m+1+k$ and $q=n-k$, where $k=p-1-m\in[0,n]$, each with the sign $(-1)^k$; this is \eqref{eq:set-EdN}.
+\end{proof}
+
+\begin{rmk}
+\label{rmk:set-edgesym}
+Once the symplectic relations $\langle\vv_i(z),\vv_j(-z)\rangle=\delta_{ij}\Delta_i$ are known (\cref{thm:lea-qde}(ii)), $\Pij_{ij}(-w,w)=-\delta_{ij}\Delta_i$ and \eqref{eq:set-edge} reads $\Edge_{ij}(z,w)=\big[\delta_{ij}\Delta_i-\langle\vv_i(-z),\vv_j(-w)\rangle\big]/(z+w)$, which is symmetric under $(i,z)\leftrightarrow(j,w)$: $\Edge_{ij}(m,n)=\Edge_{ji}(n,m)$. Until then the order of the two ends of an edge is part of the data in \cref{def:set-graphsum}.
+\end{rmk}
+
+\begin{defn}[$\rho$, the leaves, the leaf spaces]
+\label{def:set-rho}
+By \cref{lem:set-limits}(i), $t^2\Delta_1/(-\epsilon_1\epsilon_2E^3)$ is a unit of $\Oan$ with value $1$ at $t=0$; let
+\[
+\rho(t)\coloneqq\Big(\frac{\Delta_1t^2}{-\epsilon_1\epsilon_2E^3}\Big)^{-1/2},\qquad\text{the branch with }\rho(0)=1 .
+\]
+The \emph{leaves} are $\lf_j(\psi)\coloneqq1/(E-j\psi)$ for $j\geq1$ (and $\lf_0=1/E$, which appears only in \cref{rmk:reg-L0}); in the row variable $z=-\psi$, $\lf_j=1/(E+jz)$. The \emph{leaf spaces} are $\Lsp_m\coloneqq\mathrm{span}(\lf_1,\ldots,\lf_m)$ and $\Lsp_m^+\coloneqq(\text{constants})+\Lsp_m$. Further
+\[
+\qo\coloneqq E-E^2\lf_1=-\frac{E\psi}{E-\psi},\qquad \Tdil(\psi)\coloneqq\qo+\psi=-\frac{\psi^2}{E-\psi}.
+\]
+\end{defn}
+
+\begin{rmk}[Scope]
+\label{rmk:set-scope}
+The objects of the theorems of \cref{sec:row,sec:lea} are the formal series in $z$ (and $w$) defined by \eqref{eq:set-rpt}--\eqref{eq:set-edge} for all $m,n$, with coefficients that are functions of $t$ (algebraic functions of $\tau$, by \cref{lem:set-rings}). Each statement is an identity of formal power series in $\psi$ (and $\psi'$, $w$), valid at every $\psi$-order and every $t$-order.
+\end{rmk}
+
+%-------------------------------------------------------------------------------
+\subsection{Coloured stable graphs and the graph sum}
+\label{sec:set-graphsum}
+
+For a stable curve of genus $h$, with $\lambda_i=c_i(\Hdg)$ the Chern classes of the Hodge bundle, let $\Lamv(u)\coloneqq\sum_i(-1)^i\lambda_iu^{h-i}$. For a multiset $\mathsf{v}$ of non-zero weights the \emph{normalised Hodge class} is $\Hg_{\mathsf{v}}\coloneqq\prod_{a\in\mathsf{v}}\Lamv(\mathsf{v}_a)/\mathsf{v}_a^{h}$. The vertex class of the note is
+\begin{equation}
+\label{eq:set-Hg}
+\Hg_{\bw}=\prod_{a=1}^{3}\frac{\Lamv(\bw_a)}{\bw_a^{h}},\qquad \bw=(E,-\epsilon_1,-\epsilon_2),
+\end{equation}
+the same at both colours and independent of $t$. It is a pull-back under the forgetful maps, so the string and dilaton equations hold for it when $h\geq2$.
+
+\begin{defn}[Coloured stable graphs; the decoration sum; the graph sum]
+\label{def:set-graphsum}
+Fix $g\geq2$. Let $\Gamma$ run over the connected stable graphs of genus $g$ without legs, with vertex set $\Ver(\Gamma)$, edge set $\Edg(\Gamma)$, vertex genera $g_v$ and $n_v$ half-edges at $v$ (stability: $2g_v-2+n_v>0$; $g=h^1(\Gamma)+\sum_vg_v$). A \emph{colouring} is a map $\col:\Ver(\Gamma)\to\{1,2\}$, $v\mapsto\col_v$; colour $1$ is singular, colour $2$ regular. A \emph{decoration} assigns an exponent $a_h\geq0$ to each half-edge $h$ (we write $a_e,b_e$ for the exponents at the two half-edges of an edge $e$, in a chosen order of its ends $v(e),v'(e)$) and to each vertex $v$ an integer $m_v\geq0$ with an ordered tuple $(d_{v,1},\ldots,d_{v,m_v})$ of \emph{dilaton degrees} $d_{v,k}\geq2$, with weight $1/m_v!$. The \emph{decoration sum} of $(\Gamma,\col)$ is
+\begin{multline}
+\label{eq:set-graphsum}
+\GCont(\Gamma,\col)\coloneqq\sum_{\mathrm{dec}}\ \prod_{v\in\Ver(\Gamma)}\Big[\Delta_{\col_v}^{\,g_v-1}\,\frac{1}{m_v!}\int_{\Mbar_{g_v,n_v+m_v}}\Hg_{\bw}\prod_{h\text{ at }v}\psi_h^{a_h}\prod_{k=1}^{m_v}\psi_{n_v+k}^{d_{v,k}}\ \prod_{k=1}^{m_v}\Dil_{\col_v}(d_{v,k})\Big]\\
+\times\prod_{e\in\Edg(\Gamma)}\Edge_{\col_{v(e)}\col_{v'(e)}}(a_e,b_e),
+\end{multline}
+and the \emph{frame-B Hodge-vertex graph sum} is
+\begin{equation}
+\label{eq:set-Gsum}
+\Gsum_g\coloneqq\sum_{\Gamma}\frac{1}{|\Aut\Gamma|}\sum_{\col:\Ver(\Gamma)\to\{1,2\}}\GCont(\Gamma,\col).
+\end{equation}
+\end{defn}
+
+The decoration sum is finite: the integral vanishes unless $\sum_ha_h+\sum_kd_{v,k}\leq3g_v-3+n_v+m_v$ at every vertex, and as $d_{v,k}\geq2$ this forces $m_v\leq3g_v-3+n_v$; so in genus $g$ only finitely many $z$-coefficients of the rows enter, and $\GCont(\Gamma,\col)$ is a finite sum of products of the factors of \cref{prop:set-idem,def:set-factors}. This is what gives ``regular at the conifold point after summing over decorations'' its meaning in \cref{sec:reg}: the Laurent expansion of $\GCont(\Gamma,\col)$ in $t$ (\cref{lem:set-rings}) has no negative powers. The independence of \eqref{eq:set-graphsum} of the chosen order of the ends of each edge is \cref{rmk:set-edgesym}. Equation \eqref{eq:set-graphsum} is a definition; the regularity statements of \cref{sec:reg} are statements about it, and its identification with the Gromov--Witten series $\sF_g$ is \cref{prop:ide-main}, used only in \cref{sec:rig}.
+
+\emph{The dilaton shift.} The decorations carry dilaton degrees $d\geq2$ only. Since $\Dil_i(1)\psi=-\psi$, the sum over dilaton decorations at a vertex of genus $h$ and colour $i$ with half-edge series $f_1,\ldots,f_n$ equals $\Delta_i^{h-1}\sum_m\frac{1}{m!}\int\Hg_{\bw}\prod_rf_r(\psi_r)\prod_{k\leq m}(\qt^{(i)}+\psi)(\psi_{n+k})$, that is $\Delta_i^{h-1}\dd^n\Fpot_h(\qt^{(i)})[f_1,\ldots,f_n]$ in the dilaton-shifted form of \cref{def:set-fpot}; this identification is what makes the homogeneity step of \cref{thm:reg-main} apply.
+
+%-------------------------------------------------------------------------------
+\subsection{Rings, general principles, leaf identities}
+\label{sec:set-rings}
+
+\begin{lem}[Rings and principles]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-rings}
+\begin{description}
+\item[Rings.] $\Oan\coloneqq\bbC\{t\}=\bbC\{\tau\}$ (convergent power series; $\tau(t)$ is biholomorphic near $0$ and $\tau/t$, $t/\tau$ are units of $\Oan$); $\Man\coloneqq\bbC(\{t\})=\bbC(\{\tau\})$, the field of meromorphic germs; $\Oan(\Ddisc)$, $\Oan(\Ddisc')$ the functions analytic on $\Ddisc,\Ddisc'$. $\Cz=\bbC\lser z$ (formal Laurent series), in which $\bbC(z)$ is embedded by Laurent expansion at $z=0$. $\Rz\coloneqq\Cz\lser\tau$ with the $\Cz$-linear derivation $\dd/\dd t=(1-\tau)\dd/\dd\tau$; $\Rzo\coloneqq\bbC\fps z\lser\tau=\bbC\fps{z,\tau}[1/\tau]$, a subring of $\Rz$ and (expanding in $z$) of $\bbC\lser\tau\fps z$, compatibly with products and $\dd/\dd t$. $\iota:\Oan\fps z\to\bbC\fps{z,\tau}$, ``Taylor-expand every $z$-coefficient'', is an injective ring homomorphism commuting with $\dd/\dd\tau$ and with multiplication by elements of $\Oan$. $\mathrm{refl}:z\mapsto-z$ (coefficientwise) commutes with $\dd/\dd t$; $f(-z)\coloneqq\mathrm{refl}(f)$. $\Man\lser z$ denotes formal Laurent series in $z$, bounded below, with coefficients in $\Man$ ($\dd/\dd t$ coefficientwise).
+\item[Transfer.] An identity in $\Rz$ between elements of $\Rzo$ is an identity of formal double series: reading off $z^m$ gives identities of formal Laurent series in $\tau$, and, when these are expansions of meromorphic germs (as for all rows), identities of meromorphic functions of $t$ near $0$. ``To all orders in $z$'' means this; in $\Man\lser z$ it means ``coefficientwise in $z$, as identities in $\Man$''.
+\item[(P) Complex and indeterminate weights.] Every object of this note built from the genus-zero data ($\tau$, $\sast$, $\delta$, $\dphi$, $\alg$, $\rho$, $\Lv_i$, $\Delta_i$, $\Thf$, the rows, $h_{(\alpha_1,\wA,-E)}$, the dilaton and edge factors) is obtained from the weights and $\tau$ by field operations, $\dd/\dd t$, and the expansions of the square roots $\delta$, $\alg$ (units at $\tau=0$) and of logarithms of units. At $\tau=0$ the only denominators are $\alpha_1,\alpha_2,\wA,\wB,E,\epsilon_1,\epsilon_2$: $\sast(0)=\wA/E$, $1-\sast(0)=\alpha_1/E$, $U_2(0)=-\alpha_2/\wB$, $1-U_2(0)=E/\wB$, $\phi_0''(\wA/E)=-E^3/(\alpha_1\wA)$, $\Delta_2(0)=\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E$, and the Gauss denominators $E+jz$ of \cref{sec:row}. Hence the $t$-, $z$- and $\psi$-coefficients are rational functions of the weights with rational coefficients, regular on (ND); an identity between such coefficients proved at every complex weight point of a non-empty open subset of the weight space (more generally, of a set on which no non-zero rational function of the weights vanishes identically) holds in $\Kal$ (or $\KCY$), and conversely an identity or a membership proved over $\Kal$ specialises to every weight point with (ND). \Cref{sec:lea} is written over $\Kal$ where it says so.
+\item[Leaf spaces.] $\Lsp_m$ has dimension $m$ (the poles $E/j$, $1\leq j\leq m$, are distinct because $E\neq0$). A rational function $f$ of $\psi$ lies in $\Lsp_m^+$ if and only if its poles are simple, lie in $\{E/j:1\leq j\leq m\}$, and $f$ is bounded at $\infty$; it lies in $\Lsp_m$ if and only if moreover $f(\psi)\to0$ as $\psi\to\infty$. A rational function regular at $0$ is identified with its Taylor series at $0$ (an injective linear map, compatible with products and with the substitution $z\mapsto-\psi$); thus $\lf_j(\psi)=\sum_{n\geq0}j^n\psi^n/E^{n+1}$.
+\item[(T) $\tau$-orders versus $t$-orders.] For a vector space $V$ and $f=\sum_nf_n\tau^n\in V\fps\tau$, $V\fps\tau=V\fps t$ and
+\[
+\coef{t^k}f=\sum_{n=0}^{k}u_{k,n}f_n,\qquad u_{k,n}\coloneqq\coef{t^k}\tau^n\in\bbQ,\quad u_{k,k}=1,\quad u_{k,n}=0\ \text{for }n>k,
+\]
+with the inverse unitriangular relation from $t=-\log(1-\tau)$. So for every increasing chain $V_0\subset V_1\subset\cdots$ of subspaces, ($\coef{\tau^n}f\in V_n$ for $n\leq k$) if and only if ($\coef{t^n}f\in V_n$ for $n\leq k$). Multiplication by a series in $t$ that does not involve the auxiliary variables also preserves such a filtration: $\coef{t^k}(af)=\sum_ma_m\coef{t^{k-m}}f$.
+\end{description}
+\end{lem}
+
+\begin{proof}
+Everything is a definition or standard, except (T) and the characterisation of $\Lsp_m^+$. (T): $\tau=t-t^2/2+\cdots$, so $\tau^n=t^n+O(t^{n+1})$, which gives $u_{k,k}=1$ and $u_{k,n}=0$ for $n>k$; the relation is therefore unitriangular and invertible. The filtration statement follows: $\coef{t^k}f=f_k+\sum_{n<k}u_{k,n}f_n$ with $f_n\in V_n\subset V_k$, and conversely by the inverse relation. Leaf spaces: an element of $\Lsp_m^+$ clearly has the stated properties; conversely, by partial fractions (PF) below, a rational function with simple poles in $\{E/j\}$ and bounded at $\infty$ is a constant plus a combination of the $1/(\psi-E/j)=-j\lf_j$, and the constant is the value at $\infty$.
+\end{proof}
+
+\begin{lem}[Leaf identities, partial fractions]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-leafid}
+For $j,m\geq1$:
+\begin{description}
+\item[(LAM1)] $\coef{\psi^n}\lf_j=j^n/E^{n+1}$;
+\item[(LAM2)] $\psi\lf_j=(E\lf_j-1)/j$, that is $-\psi\lf_j=(1-E\lf_j)/j$;
+\item[(LAM3)] $(E-m\psi)\lf_j=m/j+E(1-m/j)\lf_j$; in particular $(E-j\psi)\lf_j=1$;
+\item[(LAM4)] for $f=\sum_{j=1}^{M}f_j\lf_j$ one has $f=-\frac1\psi\sum_jf_j/j+O(\psi^{-2})$ at $\psi=\infty$, so $f=O(\psi^{-2})$ if and only if $\sum_jf_j/j=0$;
+\item[(LAM5)] $\lf_i\lf_j=\dfrac{i\lf_i-j\lf_j}{E(i-j)}$ for $i\neq j$;
+\item[(LAM6)] $\lf_j(\psi)-\lf_j(-w)=j(\psi+w)\lf_j(\psi)\lf_j(-w)$.
+\item[(PF)] Let $S$ be a finite set of points and $f$ a rational function whose poles all lie in $S$, are of order $\leq1$, and which is bounded at $\infty$. Then $f=f(\infty)+\sum_{p\in S}\Res_{z=p}(f)/(z-p)$. For $S=\{-E/j:1\leq j\leq M\}$ (distinct and non-zero since $E\neq0$),
+\[
+f=f(\infty)+\sum_{j=1}^{M}\frac{\beta_j}{E+jz},\qquad \beta_j=j\Res_{z=-E/j}f=\lim_{z\to-E/j}(E+jz)f(z).
+\]
+\end{description}
+\end{lem}
+
+\begin{proof}
+(LAM1) is the geometric series $1/(E-j\psi)=E^{-1}\sum_n(j\psi/E)^n$. $(E-j\psi)\lf_j=1$ gives (LAM2). (LAM3): $(E-m\psi)\lf_j=1+(j-m)\psi\lf_j=1+\frac{j-m}{j}(E\lf_j-1)$. (LAM4): $\lf_j=-1/(j\psi)-E/(j^2\psi^2)-\cdots$ at $\psi=\infty$. (LAM5): $i\lf_i-j\lf_j=\dfrac{i(E-j\psi)-j(E-i\psi)}{(E-i\psi)(E-j\psi)}=(i-j)E\lf_i\lf_j$. (LAM6): $\dfrac{1}{E-j\psi}-\dfrac{1}{E+jw}=\dfrac{j(\psi+w)}{(E-j\psi)(E+jw)}$. (PF): the difference $h\coloneqq f-f(\infty)-\sum_p\Res_p(f)/(z-p)$ has no pole and $h(\infty)=0$; a rational function without poles is a polynomial, and a polynomial with limit $0$ at $\infty$ is $0$. For the second form, $1/(z+E/j)=j/(E+jz)$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The Hodge side}
+\label{sec:set-hodge}
+
+Fix $h\geq2$. Let $\RRing\coloneqq\RRing_0\fps t$ with $\RRing_0$ a $\bbQ$-algebra in which $\epsilon_1,\epsilon_2,E$ are invertible (for instance $\bbC$ or $\KCY$). The class $\Hg_{\bw}$ is that of \eqref{eq:set-Hg}, and $\Tdil$, $\qo$ are those of \cref{def:set-rho}, so that $\qo=\Tdil-\psi$.
+
+\begin{defn}
+\label{def:set-fpot}
+\begin{description}
+\item[Base-point derivatives.] For $\mathsf{b}_1,\ldots,\mathsf{b}_s\in\RRing\fps\psi$, put
+\[
+\dbase^s(\mathsf{b}_1,\ldots,\mathsf{b}_s)\coloneqq\sum_{m\geq0}\frac{1}{m!}\int_{\Mbar_{h,s+m}}\Hg_{\bw}\prod_{i=1}^{s}\mathsf{b}_i(\psi_i)\prod_{k=1}^{m}\Tdil(\psi_{s+k}).
+\]
+This is a finite sum, since $\Tdil=O(\psi^2)$ forces $m\leq3h-3+s$, and each power series is cut off by the dimension.
+\item[The potential on the neighbourhood $\Dom$ of $\qo$.] Let $\Dom\coloneqq\qo+t\RRing\fps\psi$. For $\mathbf{q}=\qo+\upsilon\in\Dom$ and $f_1,\ldots,f_n\in\RRing\fps\psi$, define
+\[
+\dd^n\Fpot_h(\mathbf{q})[f_1,\ldots,f_n]\coloneqq\sum_{r\geq0}\frac{1}{r!}\,\dbase^{n+r}(f_1,\ldots,f_n,\underbrace{\upsilon,\ldots,\upsilon}_{r}),\qquad \Fpot_h(\mathbf{q})\coloneqq\dd^0\Fpot_h(\mathbf{q}),
+\]
+which converges $t$-adically because $\upsilon=O(t)$. Here $\upsilon$ may have a term linear in $\psi$: $\Dom$ contains $\rho\qt$ (below), whose $\psi$-coefficient is $-\rho$; so $\mathbf{q}$ need not be of the form $-\psi+O(\psi^2)$. This is why the domain has to be stated.
+\item[The dilaton-shifted form.] If $\mathbf{q}=-\psi+O(\psi^2)$, put
+\[
+\Fpot_h(\mathbf{q})\coloneqq\sum_{m\geq0}\frac{1}{m!}\int_{\Mbar_{h,m}}\Hg_{\bw}\prod_{i=1}^{m}(\mathbf{q}+\psi)(\psi_i),
+\]
+a finite sum, and similarly for $\dd^n\Fpot_h(\mathbf{q})[f_1,\ldots,f_n]$. On the overlap with $\Dom$ the two definitions agree: expand $\prod(\Tdil+\upsilon)$ binomially, and the factor $\frac{1}{m!}\binom mr$ reindexes to $\frac{1}{r!}\frac{1}{(m-r)!}$. This is the form in which the decorations of \eqref{eq:set-graphsum} appear (the dilaton shift paragraph of \cref{sec:set-graphsum}): the vertex factor at a vertex of genus $h\geq2$ and colour $i$ with half-edge series $f_1,\ldots,f_n$ is $\Delta_i^{h-1}\dd^n\Fpot_h(\qt^{(i)})[f_1,\ldots,f_n]$, multilinear in the slots, applied term by term to loops and to edges between two vertices.
+\item[$\qt$ and $\Dom$.] At idempotent $1$, $\qt\in\Dom$: every $\Dil_1(d)$ lies in $\RRing$ and $\qt|_{t=0}=\qo$ (\cref{cor:row-F2}, \cref{thm:lea-L1}(iv)); and $\rho\in1+t\RRing$ by (F1) of \cref{thm:lea-main}, so $\rho\qt\in\Dom$ as well. At idempotent $2$, $\qt^{(2)}|_{t=0}=-\psi\,\hreg(-\psi)\neq\qo$ (\cref{prop:lea-regrows}), so $\qt^{(2)}\notin\Dom$; only the dilaton-shifted form is used there, and nothing is rescaled.
+\item[The numbers $\Xiz_h$.] For a multiset $\msU=\{j_1,\ldots,j_r\}$ of positive integers,
+\[
+\Xiz_h(\msU)\coloneqq\dd^r\Fpot_h(\qo)[\lf_{j_1},\ldots,\lf_{j_r}]=\dbase^r(\lf_{j_1},\ldots,\lf_{j_r})=\sum_{m\geq0}\frac{1}{m!}\int_{\Mbar_{h,r+m}}\Hg_{\bw}\prod_{i=1}^{r}\lf_{j_i}(\psi_i)\prod_{k=1}^{m}\Tdil(\psi_{r+k}),
+\]
+the leaf-scale-$E$ integrals with the class $\Hg_{\bw}$. Further $J_{\msU}\coloneqq\sum_ij_i$, $\dg(\msU)\coloneqq\sum_i(j_i-1)$, and $\ZZ[h,n]\coloneqq\Xiz_h(1^n)$, so that $\ZZ[h,0]=\Fpot_h(\qo)$.
+\end{description}
+\end{defn}
+
+\begin{defn}[The statement $\Mirr(h)$]
+\label{def:set-mirr}
+$\Mirr(h)$ is the statement: $\Xiz_h(\msM)=0$ for every \emph{non-empty} multiset $\msM$ of integers $\geq2$ with $\dg(\msM)\leq2h-3$.
+\end{defn}
+
+The empty multiset is excluded because $\Xiz_h(\emptyset)=\ZZ[h,0]$ is the value of the pole (\cref{thm:reg-VI}). Parts equal to $1$ are not in $\Mirr$: they are removed by the string identity (\cref{lem:reg-string}), and part $0$ never occurs (\cref{rmk:reg-nol0}). The statement $\Mirr(h)$ for the class $\Hg_{\bw}$, at the generic point of $\TCY$ and at every weight point with $\epsilon_1\epsilon_2E\neq0$, is the cited \cref{thm:reg-L}.
+
+%-------------------------------------------------------------------------------
+\subsection{The main statements}
+\label{sec:set-statements}
+
+The main theorems of the note are stated in \cref{sec:int-statements}, in the notation fixed in this section, and are proved later: Theorem~A, the leaf structure at generic weights (\cref{thm:int-leaf}), is \cref{thm:lea-main}; Theorem~B, the identification of the graph sum with the potential (\cref{thm:int-ident}), is \cref{prop:ide-main}; Theorem~C, the regularity of the coloured graphs with an edge and the polar part of the vertex graph (\cref{thm:int-reg}), is \cref{cor:reg-main}; Theorem~D, rigidity (\cref{thm:int-rig}), is \cref{thm:rig-main}; and the rigidity conjecture of \cite{BS} for the resolved conifold (\cref{cor:int-conj}) is \cref{cor:rig-conj}. Every object occurring in their statements has now been defined: the tori and the condition (ND) (\cref{def:set-ND}), the invariants and the series $\sF_g$, $\Pg$, $\beta_n$, $\Li_{-n}$ (\cref{def:set-inv}), the vertex weights $\Delta_i$ (\cref{prop:set-idem}), the frame-B rows and factors (\cref{def:set-rows,def:set-factors}), $\rho$, the leaves $\lf_j$ and the leaf spaces $\Lsp_m$ (\cref{def:set-rho}), the coloured graph sum $\Gsum_g$ (\cref{def:set-graphsum}) and the Hodge integral $\ZZ[g,0]$ (\cref{def:set-fpot}).

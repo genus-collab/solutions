@@ -1,0 +1,16 @@
+<tau_1>_1                                1/24                 1/24                 ok
+<tau_4>_2                                1/1152               1/1152               ok
+<tau_2 tau_3>_2                          29/5760              29/5760              ok
+<tau_7>_3                                1/82944              1/82944              ok
+<tau_10>_4                               1/7962624            1/7962624            ok
+<lambda_1>_{1,1}                         1/24                 1/24                 ok
+b_2 = <psi^2 lambda_2>_{2,1}             7/5760               7/5760               ok
+b_3 = <psi^4 lambda_3>_{3,1}             31/967680            31/967680            ok
+Int_M2 lambda_1^3                        1/2880               1/2880               ok
+Int_M2 lambda_1 lambda_2                 1/5760               1/5760               ok
+Int_M3 lambda_2^3                        1/725760             1/725760             ok
+Int_M3 lambda_1^6                        1/90720              1/90720              ok
+Int_M{2,1} psi lambda_2 lambda_1         1/2880               1/2880               ok
+Int_M{3,1} psi^2 lambda_3 lambda_2       1/120960             1/120960             ok
+Int_M{2,1} lambda_2^2                    0                    0                    ok
+Int_M3 lambda_3 lambda_1^3 (no reference value, printed only): 1/725760

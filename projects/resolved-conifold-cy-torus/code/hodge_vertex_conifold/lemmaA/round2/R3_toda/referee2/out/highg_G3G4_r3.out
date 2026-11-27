@@ -1,0 +1,30 @@
+# referee-2 high-genus test: p = 1000000007, tau = 907304221 (seed 33), gmax = 4
+# 25 profiles needed: (2) (2,2) (2,2,2) (2,2,2,2,5) (2,2,2,3) (2,2,2,5) (2,2,3) (2,2,3,3) (2,2,3,4) (2,2,4) (2,2,5) (2,3) (2,3,3) (2,3,3,3) (2,3,3,4) (2,3,4) (2,4) (2,5) (3) (3,3) (3,3,3) (3,3,4) (3,4) (4) (5)
+# R2mv::compute gmax=4 K=14 P=52 Smax=27: 7436 partitions (conjugate pairs) in 18 s
+# MV engine done in 18 s
+# cross-check against Route E tables (genus <= 6): 91 values, 0 mismatches
+P_2 G=3 eps=0 R=(2,2,3) [R+2: D=5, excess -1] 46 terms: residual 0 OK
+P_2 G=3 eps=1 R=(2,2,3) [R+2: D=5, excess -1] 0 terms: residual 0 OK
+   control (X_3(2,2,2,3) + 1, eps=0): residual 45236093 (nonzero, as it must be)
+P_2 G=3 eps=0 R=(2,3,3) [R+2: D=6, excess -2] 80 terms: residual 0 OK
+P_2 G=3 eps=1 R=(2,3,3) [R+2: D=6, excess -2] 52 terms: residual 0 OK
+   control (X_3(2,2,3,3) + 1, eps=0): residual 90472186 (nonzero, as it must be)
+P_2 G=3 eps=0 R=(3,3,3) [R+2: D=7, excess -3] 100 terms: residual 0 OK
+P_2 G=3 eps=1 R=(3,3,3) [R+2: D=7, excess -3] 96 terms: residual 0 OK
+   control (X_3(2,3,3,3) + 1, eps=0): residual 135708279 (nonzero, as it must be)
+P_3 G=3 eps=0 R=(2,2,3) [R+3: D=6, excess -2] 658 terms: residual 0 OK
+P_3 G=3 eps=1 R=(2,2,3) [R+3: D=6, excess -2] 348 terms: residual 0 OK
+   control (X_3(2,2,3,3) + 1, eps=0): residual 644265666 (nonzero, as it must be)
+P_2 G=4 eps=0 R=(2,3,4) [R+2: D=7, excess -1] 64 terms: residual 0 OK
+P_2 G=4 eps=1 R=(2,3,4) [R+2: D=7, excess -1] 0 terms: residual 0 OK
+   control (X_4(2,2,3,4) + 1, eps=0): residual 260780241 (nonzero, as it must be)
+P_2 G=4 eps=0 R=(3,3,4) [R+2: D=8, excess -2] 114 terms: residual 0 OK
+P_2 G=4 eps=1 R=(3,3,4) [R+2: D=8, excess -2] 70 terms: residual 0 OK
+   control (X_4(2,3,3,4) + 1, eps=0): residual 521560482 (nonzero, as it must be)
+P_2 G=4 eps=0 R=(2,2,2,5) [R+2: D=8, excess -2] 214 terms: residual 0 OK
+P_2 G=4 eps=1 R=(2,2,2,5) [R+2: D=8, excess -2] 134 terms: residual 0 OK
+   control (X_4(2,2,2,2,5) + 1, eps=0): residual 521560482 (nonzero, as it must be)
+P_3 G=4 eps=0 R=(2,3,4) [R+3: D=8, excess -2] 972 terms: residual 0 OK
+P_3 G=4 eps=1 R=(2,3,4) [R+3: D=8, excess -2] 492 terms: residual 0 OK
+   control (X_4(2,3,3,4) + 1, eps=0): residual 532010902 (nonzero, as it must be)
+SUMMARY highg p=1000000007 gmax=4: 16 relations, 0 failures; table cross-check 91/91; total 167 s

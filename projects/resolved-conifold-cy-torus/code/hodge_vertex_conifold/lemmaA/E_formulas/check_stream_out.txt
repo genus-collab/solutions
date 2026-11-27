@@ -1,0 +1,16 @@
+genus 2, r = 1: Lemma A points 1, violations 0; control points (D = 2h-2) 1, non-zero 1
+genus 3, r = 1: Lemma A points 3, violations 0; control points (D = 2h-2) 1, non-zero 1
+genus 3, r = 2: Lemma A points 2, violations 0; control points (D = 2h-2) 2, non-zero 2
+genus 3, r = 3: Lemma A points 1, violations 0; control points (D = 2h-2) 1, non-zero 1
+genus 4, r = 1: Lemma A points 5, violations 0; control points (D = 2h-2) 1, non-zero 1
+genus 4, r = 2: Lemma A points 6, violations 0; control points (D = 2h-2) 3, non-zero 3
+genus 4, r = 3: Lemma A points 4, violations 0; control points (D = 2h-2) 3, non-zero 3
+genus 4, r = 4: Lemma A points 2, violations 0; control points (D = 2h-2) 2, non-zero 2
+genus 4, r = 5: Lemma A points 1, violations 0; control points (D = 2h-2) 1, non-zero 1
+genus 5, r = 1: Lemma A points 7, violations 0; control points (D = 2h-2) 1, non-zero 1
+genus 5, r = 2: Lemma A points 12, violations 0; control points (D = 2h-2) 4, non-zero 4
+genus 5, r = 3: Lemma A points 11, violations 0; control points (D = 2h-2) 5, non-zero 5
+genus 5, r = 4: Lemma A points 7, violations 0; control points (D = 2h-2) 5, non-zero 5
+genus 6, r = 1: Lemma A points 9, violations 0; control points (D = 2h-2) 1, non-zero 1
+genus 6, r = 2: Lemma A points 20, violations 0; control points (D = 2h-2) 5, non-zero 5
+genus 6, r = 3: Lemma A points 23, violations 0; control points (D = 2h-2) 8, non-zero 8

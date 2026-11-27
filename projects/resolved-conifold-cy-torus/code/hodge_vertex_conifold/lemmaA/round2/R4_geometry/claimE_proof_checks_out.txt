@@ -1,0 +1,3 @@
+(V1) formal Bernoulli identity to order w^30: holds
+(V2) generating function of C_ext: 840 coefficients compared, 0 failures
+(V3) (R_T) as polynomial identities in j for N = 2..16: holds

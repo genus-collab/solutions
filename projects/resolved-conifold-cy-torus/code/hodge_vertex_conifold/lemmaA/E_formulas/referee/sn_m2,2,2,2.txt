@@ -1,0 +1,5 @@
+SN slice m = (2,2,2,2), genus 1: 7 grid values, 5 unknowns per sigma-power: consistent
+SN slice m = (2,2,2,2), genus 2: 10 grid values, 7 unknowns per sigma-power: consistent
+SN slice m = (2,2,2,2), genus 3: 13 grid values, 8 unknowns per sigma-power: consistent
+SN slice m = (2,2,2,2), genus 4: 16 grid values, 8 unknowns per sigma-power: consistent
+SN slice m = (2,2,2,2), genus 5: 19 grid values, 8 unknowns per sigma-power: consistent

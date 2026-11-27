@@ -1,0 +1,7 @@
+tau=1 g=2: identity holds through t^34, lowest power of x dF/dx: t^3 (Lemma D: >= 3)
+tau=1 g=3: identity holds through t^34, lowest power of x dF/dx: t^5 (Lemma D: >= 5)
+tau=1 g=4: identity holds through t^34, lowest power of x dF/dx: t^7 (Lemma D: >= 7)
+tau=1 g=5: identity holds through t^34, lowest power of x dF/dx: t^9 (Lemma D: >= 9)
+tau=1 g=6: identity holds through t^34, lowest power of x dF/dx: t^11 (Lemma D: >= 11)
+tau=1 g=7: identity holds through t^34, lowest power of x dF/dx: t^13 (Lemma D: >= 13)
+tau=1: claim-9 identity, g = 2..7: holds

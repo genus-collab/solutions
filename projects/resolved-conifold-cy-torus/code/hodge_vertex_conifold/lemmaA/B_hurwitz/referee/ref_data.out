@@ -1,0 +1,229 @@
+(a) ELSV g=1 m=(1 1 5): Hodge k=0 part vs referee Hurwitz engine: 53/6 vs 53/6 ok
+(a) ELSV g=1 m=(2 3 5): Hodge k=0 part vs referee Hurwitz engine: 70/3 vs 70/3 ok
+(a) ELSV g=1 m=(3 4 4): Hodge k=0 part vs referee Hurwitz engine: 361/12 vs 361/12 ok
+(a) ELSV g=2 m=(2 5 6): Hodge k=0 part vs referee Hurwitz engine: 372091/240 vs 372091/240 ok
+(a) ELSV g=2 m=(1 1 8): Hodge k=0 part vs referee Hurwitz engine: 157537/360 vs 157537/360 ok
+(a) ELSV g=2 m=(4 4 4): Hodge k=0 part vs referee Hurwitz engine: 12634/15 vs 12634/15 ok
+(a) ELSV g=3 m=(1 7): Hodge k=0 part vs referee Hurwitz engine: 16807/216 vs 16807/216 ok
+(a) ELSV g=3 m=(6 6): Hodge k=0 part vs referee Hurwitz engine: 61263/35 vs 61263/35 ok
+(a) ELSV g=3 m=(2 9): Hodge k=0 part vs referee Hurwitz engine: 2697559/2520 vs 2697559/2520 ok
+(a) ELSV g=3 m=(2 2 2): Hodge k=0 part vs referee Hurwitz engine: 5809/432 vs 5809/432 ok
+(a) ELSV g=3 m=(1 2 7): Hodge k=0 part vs referee Hurwitz engine: 8347687/2520 vs 8347687/2520 ok
+(a) ELSV g=3 m=(3 3 4): Hodge k=0 part vs referee Hurwitz engine: 3341545/1512 vs 3341545/1512 ok
+(a) ELSV g=4 m=(1 9): Hodge k=0 part vs referee Hurwitz engine: 378917433/89600 vs 378917433/89600 ok
+(a) ELSV g=4 m=(5 6): Hodge k=0 part vs referee Hurwitz engine: 2956685497/362880 vs 2956685497/362880 ok
+(a) ELSV g=4 m=(2 2): Hodge k=0 part vs referee Hurwitz engine: 671/28350 vs 671/28350 ok
+(a) ELSV g=4 m=(2 2 2): Hodge k=0 part vs referee Hurwitz engine: 8765287/604800 vs 8765287/604800 ok
+(a) ELSV g=4 m=(1 1 6): Hodge k=0 part vs referee Hurwitz engine: 2348708461/1814400 vs 2348708461/1814400 ok
+(a) ELSV g=4 m=(2 3 4): Hodge k=0 part vs referee Hurwitz engine: 88670965/24192 vs 88670965/24192 ok
+(a) ELSV g=4 m=(6 6 6): Hodge k=0 part vs referee Hurwitz engine: 542997381861/22400 vs 542997381861/22400 ok
+(b) g=2 R=(2) delta=-1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=2 j=2: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=2 R=(3) delta=0: Hodge k=0 value -1/320
+(b) g=2 j=3: Hodge k=0 vs Theorem B (form 1): -1/320 vs -1/320 ok
+(b) g=2 R=(4) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=2 j=4: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=2 R=(5) delta=2: Hodge k=0 vs referee REC: 19/480 vs 19/480 ok
+(b) g=2 j=5: Hodge k=0 vs Theorem B (form 1): 19/480 vs 19/480 ok
+(b) g=2 R=(6) delta=3: Hodge k=0 vs referee REC: 1/6 vs 1/6 ok
+(b) g=2 j=6: Hodge k=0 vs Theorem B (form 1): 1/6 vs 1/6 ok
+(b) g=2 R=(7) delta=4: Hodge k=0 vs referee REC: 29/64 vs 29/64 ok
+(b) g=2 j=7: Hodge k=0 vs Theorem B (form 1): 29/64 vs 29/64 ok
+(b) g=2 R=(8) delta=5: Hodge k=0 vs referee REC: 119/120 vs 119/120 ok
+(b) g=2 j=8: Hodge k=0 vs Theorem B (form 1): 119/120 vs 119/120 ok
+(b) g=2 R=(9) delta=6: Hodge k=0 vs referee REC: 91/48 vs 91/48 ok
+(b) g=2 j=9: Hodge k=0 vs Theorem B (form 1): 91/48 vs 91/48 ok
+(b) g=2 R=(10) delta=7: Hodge k=0 vs referee REC: 33/10 vs 33/10 ok
+(b) g=2 j=10: Hodge k=0 vs Theorem B (form 1): 33/10 vs 33/10 ok
+(b) g=2 R=(11) delta=8: Hodge k=0 vs referee REC: 343/64 vs 343/64 ok
+(b) g=2 j=11: Hodge k=0 vs Theorem B (form 1): 343/64 vs 343/64 ok
+(b) g=2 R=(12) delta=9: Hodge k=0 vs referee REC: 33/4 vs 33/4 ok
+(b) g=2 j=12: Hodge k=0 vs Theorem B (form 1): 33/4 vs 33/4 ok
+(b) g=2 R=(13) delta=10: Hodge k=0 vs referee REC: 1947/160 vs 1947/160 ok
+(b) g=2 j=13: Hodge k=0 vs Theorem B (form 1): 1947/160 vs 1947/160 ok
+(b) g=2 R=(14) delta=11: Hodge k=0 vs referee REC: 52/3 vs 52/3 ok
+(b) g=2 j=14: Hodge k=0 vs Theorem B (form 1): 52/3 vs 52/3 ok
+(b) g=2 R=(2 2) delta=0: Hodge k=0 value -1/180
+(b) g=2 R=(2 3) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=2 R=(2 4) delta=2: Hodge k=0 vs referee REC: 2/15 vs 2/15 ok
+(b) g=2 R=(2 5) delta=3: Hodge k=0 vs referee REC: 103/144 vs 103/144 ok
+(b) g=2 R=(2 6) delta=4: Hodge k=0 vs referee REC: 19/8 vs 19/8 ok
+(b) g=2 R=(2 7) delta=5: Hodge k=0 vs referee REC: 1477/240 vs 1477/240 ok
+(b) g=2 R=(2 8) delta=6: Hodge k=0 vs referee REC: 245/18 vs 245/18 ok
+(b) g=2 R=(2 9) delta=7: Hodge k=0 vs referee REC: 1077/40 vs 1077/40 ok
+(b) g=2 R=(2 10) delta=8: Hodge k=0 vs referee REC: 49 vs 49 ok
+(b) g=2 R=(2 11) delta=9: Hodge k=0 vs referee REC: 6017/72 vs 6017/72 ok
+(b) g=2 R=(3 3) delta=2: Hodge k=0 vs referee REC: 21/160 vs 21/160 ok
+(b) g=2 R=(3 4) delta=3: Hodge k=0 vs referee REC: 13/20 vs 13/20 ok
+(b) g=2 R=(3 5) delta=4: Hodge k=0 vs referee REC: 401/192 vs 401/192 ok
+(b) g=2 R=(3 6) delta=5: Hodge k=0 vs referee REC: 107/20 vs 107/20 ok
+(b) g=2 R=(3 7) delta=6: Hodge k=0 vs referee REC: 189/16 vs 189/16 ok
+(b) g=2 R=(3 8) delta=7: Hodge k=0 vs referee REC: 703/30 vs 703/30 ok
+(b) g=2 R=(3 9) delta=8: Hodge k=0 vs referee REC: 13713/320 vs 13713/320 ok
+(b) g=2 R=(3 10) delta=9: Hodge k=0 vs referee REC: 147/2 vs 147/2 ok
+(b) g=2 R=(4 4) delta=4: Hodge k=0 vs referee REC: 81/40 vs 81/40 ok
+(b) g=2 R=(4 5) delta=5: Hodge k=0 vs referee REC: 81/16 vs 81/16 ok
+(b) g=2 R=(4 6) delta=6: Hodge k=0 vs referee REC: 11 vs 11 ok
+(b) g=2 R=(4 7) delta=7: Hodge k=0 vs referee REC: 1729/80 vs 1729/80 ok
+(b) g=2 R=(4 8) delta=8: Hodge k=0 vs referee REC: 2359/60 vs 2359/60 ok
+(b) g=2 R=(4 9) delta=9: Hodge k=0 vs referee REC: 2691/40 vs 2691/40 ok
+(b) g=2 R=(5 5) delta=6: Hodge k=0 vs referee REC: 7757/720 vs 7757/720 ok
+(b) g=2 R=(5 6) delta=7: Hodge k=0 vs referee REC: 1001/48 vs 1001/48 ok
+(b) g=2 R=(5 7) delta=8: Hodge k=0 vs referee REC: 7207/192 vs 7207/192 ok
+(b) g=2 R=(5 8) delta=9: Hodge k=0 vs referee REC: 9181/144 vs 9181/144 ok
+(b) g=2 R=(6 6) delta=8: Hodge k=0 vs referee REC: 37 vs 37 ok
+(b) g=2 R=(6 7) delta=9: Hodge k=0 vs referee REC: 995/16 vs 995/16 ok
+(b) g=3 R=(2) delta=-3: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=3 j=2: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=3 R=(3) delta=-2: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=3 j=3: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=3 R=(4) delta=-1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=3 j=4: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=3 R=(5) delta=0: Hodge k=0 value -65/24192
+(b) g=3 j=5: Hodge k=0 vs Theorem B (form 1): -65/24192 vs -65/24192 ok
+(b) g=3 R=(6) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=3 j=6: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=3 R=(7) delta=2: Hodge k=0 vs referee REC: 913/8064 vs 913/8064 ok
+(b) g=3 j=7: Hodge k=0 vs Theorem B (form 1): 913/8064 vs 913/8064 ok
+(b) g=3 R=(8) delta=3: Hodge k=0 vs referee REC: 41/54 vs 41/54 ok
+(b) g=3 j=8: Hodge k=0 vs Theorem B (form 1): 41/54 vs 41/54 ok
+(b) g=3 R=(9) delta=4: Hodge k=0 vs referee REC: 1781/576 vs 1781/576 ok
+(b) g=3 j=9: Hodge k=0 vs Theorem B (form 1): 1781/576 vs 1781/576 ok
+(b) g=3 R=(10) delta=5: Hodge k=0 vs referee REC: 29/3 vs 29/3 ok
+(b) g=3 j=10: Hodge k=0 vs Theorem B (form 1): 29/3 vs 29/3 ok
+(b) g=3 R=(11) delta=6: Hodge k=0 vs referee REC: 14645/576 vs 14645/576 ok
+(b) g=3 j=11: Hodge k=0 vs Theorem B (form 1): 14645/576 vs 14645/576 ok
+(b) g=3 R=(12) delta=7: Hodge k=0 vs referee REC: 4961/84 vs 4961/84 ok
+(b) g=3 j=12: Hodge k=0 vs Theorem B (form 1): 4961/84 vs 4961/84 ok
+(b) g=3 R=(13) delta=8: Hodge k=0 vs referee REC: 47927/384 vs 47927/384 ok
+(b) g=3 j=13: Hodge k=0 vs Theorem B (form 1): 47927/384 vs 47927/384 ok
+(b) g=3 R=(14) delta=9: Hodge k=0 vs referee REC: 92521/378 vs 92521/378 ok
+(b) g=3 j=14: Hodge k=0 vs Theorem B (form 1): 92521/378 vs 92521/378 ok
+(b) g=3 R=(15) delta=10: Hodge k=0 vs referee REC: 173459/384 vs 173459/384 ok
+(b) g=3 j=15: Hodge k=0 vs Theorem B (form 1): 173459/384 vs 173459/384 ok
+(b) g=3 R=(16) delta=11: Hodge k=0 vs referee REC: 28535/36 vs 28535/36 ok
+(b) g=3 j=16: Hodge k=0 vs Theorem B (form 1): 28535/36 vs 28535/36 ok
+(b) g=3 R=(2 2) delta=-2: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=3 R=(2 3) delta=-1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=3 R=(2 4) delta=0: Hodge k=0 value -8/945
+(b) g=3 R=(2 5) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=3 R=(2 6) delta=2: Hodge k=0 vs referee REC: 15/28 vs 15/28 ok
+(b) g=3 R=(2 7) delta=3: Hodge k=0 vs referee REC: 7375/1728 vs 7375/1728 ok
+(b) g=3 R=(2 8) delta=4: Hodge k=0 vs referee REC: 182/9 vs 182/9 ok
+(b) g=3 R=(2 9) delta=5: Hodge k=0 vs referee REC: 5783/80 vs 5783/80 ok
+(b) g=3 R=(2 10) delta=6: Hodge k=0 vs referee REC: 7715/36 vs 7715/36 ok
+(b) g=3 R=(2 11) delta=7: Hodge k=0 vs referee REC: 372625/672 vs 372625/672 ok
+(b) g=3 R=(3 3) delta=0: Hodge k=0 value -39/4480
+(b) g=3 R=(3 4) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=3 R=(3 5) delta=2: Hodge k=0 vs referee REC: 1301/2688 vs 1301/2688 ok
+(b) g=3 R=(3 6) delta=3: Hodge k=0 vs referee REC: 941/252 vs 941/252 ok
+(b) g=3 R=(3 7) delta=4: Hodge k=0 vs referee REC: 10021/576 vs 10021/576 ok
+(b) g=3 R=(3 8) delta=5: Hodge k=0 vs referee REC: 11111/180 vs 11111/180 ok
+(b) g=3 R=(3 9) delta=6: Hodge k=0 vs referee REC: 35069/192 vs 35069/192 ok
+(b) g=3 R=(3 10) delta=7: Hodge k=0 vs referee REC: 39751/84 vs 39751/84 ok
+(b) g=3 R=(4 4) delta=2: Hodge k=0 vs referee REC: 97/210 vs 97/210 ok
+(b) g=3 R=(4 5) delta=3: Hodge k=0 vs referee REC: 3553/1008 vs 3553/1008 ok
+(b) g=3 R=(4 6) delta=4: Hodge k=0 vs referee REC: 227/14 vs 227/14 ok
+(b) g=3 R=(4 7) delta=5: Hodge k=0 vs referee REC: 163843/2880 vs 163843/2880 ok
+(b) g=3 R=(4 8) delta=6: Hodge k=0 vs referee REC: 18025/108 vs 18025/108 ok
+(b) g=3 R=(4 9) delta=7: Hodge k=0 vs referee REC: 240697/560 vs 240697/560 ok
+(b) g=3 R=(5 5) delta=4: Hodge k=0 vs referee REC: 21305/1344 vs 21305/1344 ok
+(b) g=3 R=(5 6) delta=5: Hodge k=0 vs referee REC: 18425/336 vs 18425/336 ok
+(b) g=3 R=(5 7) delta=6: Hodge k=0 vs referee REC: 275117/1728 vs 275117/1728 ok
+(b) g=3 R=(5 8) delta=7: Hodge k=0 vs referee REC: 204991/504 vs 204991/504 ok
+(b) g=3 R=(6 6) delta=6: Hodge k=0 vs referee REC: 13175/84 vs 13175/84 ok
+(b) g=3 R=(6 7) delta=7: Hodge k=0 vs referee REC: 228349/576 vs 228349/576 ok
+(b) g=4 R=(2) delta=-5: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 j=2: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=4 R=(3) delta=-4: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 j=3: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=4 R=(4) delta=-3: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 j=4: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=4 R=(5) delta=-2: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 j=5: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=4 R=(6) delta=-1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 j=6: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=4 R=(7) delta=0: Hodge k=0 value -1967/276480
+(b) g=4 j=7: Hodge k=0 vs Theorem B (form 1): -1967/276480 vs -1967/276480 ok
+(b) g=4 R=(8) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 j=8: Hodge k=0 vs Theorem B (form 1): 0 vs 0 ok
+(b) g=4 R=(9) delta=2: Hodge k=0 vs referee REC: 1693/2560 vs 1693/2560 ok
+(b) g=4 j=9: Hodge k=0 vs Theorem B (form 1): 1693/2560 vs 1693/2560 ok
+(b) g=4 R=(10) delta=3: Hodge k=0 vs referee REC: 559/90 vs 559/90 ok
+(b) g=4 j=10: Hodge k=0 vs Theorem B (form 1): 559/90 vs 559/90 ok
+(b) g=4 R=(11) delta=4: Hodge k=0 vs referee REC: 105373/3072 vs 105373/3072 ok
+(b) g=4 j=11: Hodge k=0 vs Theorem B (form 1): 105373/3072 vs 105373/3072 ok
+(b) g=4 R=(12) delta=5: Hodge k=0 vs referee REC: 2123/15 vs 2123/15 ok
+(b) g=4 j=12: Hodge k=0 vs Theorem B (form 1): 2123/15 vs 2123/15 ok
+(b) g=4 R=(13) delta=6: Hodge k=0 vs referee REC: 2212705/4608 vs 2212705/4608 ok
+(b) g=4 j=13: Hodge k=0 vs Theorem B (form 1): 2212705/4608 vs 2212705/4608 ok
+(b) g=4 R=(14) delta=7: Hodge k=0 vs referee REC: 21164/15 vs 21164/15 ok
+(b) g=4 j=14: Hodge k=0 vs Theorem B (form 1): 21164/15 vs 21164/15 ok
+(b) g=4 R=(15) delta=8: Hodge k=0 vs referee REC: 113932819/30720 vs 113932819/30720 ok
+(b) g=4 j=15: Hodge k=0 vs Theorem B (form 1): 113932819/30720 vs 113932819/30720 ok
+(b) g=4 R=(16) delta=9: Hodge k=0 vs referee REC: 3851419/432 vs 3851419/432 ok
+(b) g=4 j=16: Hodge k=0 vs Theorem B (form 1): 3851419/432 vs 3851419/432 ok
+(b) g=4 R=(17) delta=10: Hodge k=0 vs referee REC: 76459097/3840 vs 76459097/3840 ok
+(b) g=4 j=17: Hodge k=0 vs Theorem B (form 1): 76459097/3840 vs 76459097/3840 ok
+(b) g=4 R=(18) delta=11: Hodge k=0 vs referee REC: 250835/6 vs 250835/6 ok
+(b) g=4 j=18: Hodge k=0 vs Theorem B (form 1): 250835/6 vs 250835/6 ok
+(b) g=4 R=(2 2) delta=-4: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(2 3) delta=-3: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(2 4) delta=-2: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(2 5) delta=-1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(2 6) delta=0: Hodge k=0 value -9/280
+(b) g=4 R=(2 7) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(2 8) delta=2: Hodge k=0 vs referee REC: 544/135 vs 544/135 ok
+(b) g=4 R=(2 9) delta=3: Hodge k=0 vs referee REC: 55359/1280 vs 55359/1280 ok
+(b) g=4 R=(2 10) delta=4: Hodge k=0 vs referee REC: 809/3 vs 809/3 ok
+(b) g=4 R=(2 11) delta=5: Hodge k=0 vs referee REC: 14315653/11520 vs 14315653/11520 ok
+(b) g=4 R=(3 3) delta=-2: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(3 4) delta=-1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(3 5) delta=0: Hodge k=0 value -425/14336
+(b) g=4 R=(3 6) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(3 7) delta=2: Hodge k=0 vs referee REC: 80981/23040 vs 80981/23040 ok
+(b) g=4 R=(3 8) delta=3: Hodge k=0 vs referee REC: 1669/45 vs 1669/45 ok
+(b) g=4 R=(3 9) delta=4: Hodge k=0 vs referee REC: 3516283/15360 vs 3516283/15360 ok
+(b) g=4 R=(3 10) delta=5: Hodge k=0 vs referee REC: 2099/2 vs 2099/2 ok
+(b) g=4 R=(4 4) delta=0: Hodge k=0 value -44/1575
+(b) g=4 R=(4 5) delta=1: Hodge k=0 vs referee REC: 0 vs 0 ok
+(b) g=4 R=(4 6) delta=2: Hodge k=0 vs referee REC: 114/35 vs 114/35 ok
+(b) g=4 R=(4 7) delta=3: Hodge k=0 vs referee REC: 294899/8640 vs 294899/8640 ok
+(b) g=4 R=(4 8) delta=4: Hodge k=0 vs referee REC: 9413/45 vs 9413/45 ok
+(b) g=4 R=(4 9) delta=5: Hodge k=0 vs referee REC: 6097997/6400 vs 6097997/6400 ok
+(b) g=4 R=(5 5) delta=2: Hodge k=0 vs referee REC: 515419/161280 vs 515419/161280 ok
+(b) g=4 R=(5 6) delta=3: Hodge k=0 vs referee REC: 11057/336 vs 11057/336 ok
+(b) g=4 R=(5 7) delta=4: Hodge k=0 vs referee REC: 1837981/9216 vs 1837981/9216 ok
+(b) g=4 R=(5 8) delta=5: Hodge k=0 vs referee REC: 389303/432 vs 389303/432 ok
+(b) g=4 R=(6 6) delta=4: Hodge k=0 vs referee REC: 4127/21 vs 4127/21 ok
+(b) g=4 R=(6 7) delta=5: Hodge k=0 vs referee REC: 2529647/2880 vs 2529647/2880 ok
+(b) Lambert structure g=2 R=(3): ok
+(b) g=2 R=(3): Hodge k=0 vs referee Hurwitz/Lambert: -1/320 vs -1/320 ok
+(b) Lambert structure g=2 R=(7): ok
+(b) g=2 R=(7): Hodge k=0 vs referee Hurwitz/Lambert: 29/64 vs 29/64 ok
+(b) Lambert structure g=2 R=(2 2): ok
+(b) g=2 R=(2 2): Hodge k=0 vs referee Hurwitz/Lambert: -1/180 vs -1/180 ok
+(b) Lambert structure g=2 R=(2 5): ok
+(b) g=2 R=(2 5): Hodge k=0 vs referee Hurwitz/Lambert: 103/144 vs 103/144 ok
+(b) Lambert structure g=3 R=(5): ok
+(b) g=3 R=(5): Hodge k=0 vs referee Hurwitz/Lambert: -65/24192 vs -65/24192 ok
+(b) Lambert structure g=3 R=(2 4): ok
+(b) g=3 R=(2 4): Hodge k=0 vs referee Hurwitz/Lambert: -8/945 vs -8/945 ok
+(b) Lambert structure g=3 R=(3 3): ok
+(b) g=3 R=(3 3): Hodge k=0 vs referee Hurwitz/Lambert: -39/4480 vs -39/4480 ok
+(b) Lambert structure g=4 R=(2 6): ok
+(b) g=4 R=(2 6): Hodge k=0 vs referee Hurwitz/Lambert: -9/280 vs -9/280 ok
+(c) g4b g=4 R=(2 2 2) D=3: Hodge k=0 vs referee REC: 0 vs 0 ok
+(c) g4b g=4 R=(2 2 3) D=4: Hodge k=0 vs referee REC: 0 vs 0 ok
+(c) g4b g=4 R=(2 2 4) D=5: Hodge k=0 vs referee REC: 0 vs 0 ok
+(c) g4b g=4 R=(2 3 3) D=5: Hodge k=0 vs referee REC: 0 vs 0 ok
+(c) g4b g=4 R=(2 2 5) D=6 (delta=0): Hodge k=0 value -25/144
+(c) g4b g=4 R=(2 3 4) D=6 (delta=0): Hodge k=0 value -4/25
+(c) g4b g=4 R=(3 3 3) D=6 (delta=0): Hodge k=0 value -1003/6400
+(c) g4b g=4 R=(2 2 2 2) D=4: Hodge k=0 vs referee REC: 0 vs 0 ok
+(c) g4b g=4 R=(2 2 2 3) D=5: Hodge k=0 vs referee REC: 0 vs 0 ok
+(c) g4b g=4 R=(2 2 2 4) D=6 (delta=0): Hodge k=0 value -736/675
+(c) g4b g=4 R=(2 2 3 3) D=6 (delta=0): Hodge k=0 value -417/400
+(c) g4b g=4 R=(2 2 2 2 2) D=5: Hodge k=0 vs referee REC: 0 vs 0 ok
+(c) g4b g=4 R=(2 2 2 2 3) D=6 (delta=0): Hodge k=0 value -8
+REF_DATA(abc): 213 checks, 0 failures

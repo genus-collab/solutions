@@ -1,0 +1,5 @@
+amplitude identity (generic 3.16): True
+operator identity (generic 4.4): True
+eta^-1, u, Disc discriminant: True
+a0 = 0 frame-B rows are the fibrewise rows at x = a1/a2, z/a2: True
+Gamma-connection tails: (True, True, True)

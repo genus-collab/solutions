@@ -1,0 +1,8 @@
+(b) frame B fibrewise, x = 3/5 genus 2 : decorated graphs compared 27 (enumerated 27 ), unmatched 0 , mismatches 0
+(b) frame B fibrewise, x = 7/3 genus 2 : decorated graphs compared 27 (enumerated 27 ), unmatched 0 , mismatches 0
+(b) frame B fibrewise, x = 3/5 genus 3 : decorated graphs compared 693 (enumerated 693 ), unmatched 0 , mismatches 0
+(b) frame B fibrewise, x = 7/3 genus 3 : decorated graphs compared 693 (enumerated 693 ), unmatched 0 , mismatches 0
+(a) point frame CY torus, sample S1 (3, 4, 5, 11) genus 2 : decorated graphs compared 17 (enumerated 17 ), unmatched keys 0 , coefficient mismatches 0 (polar orders t^-2..t^-1), 0.0s
+(a) point frame CY torus, sample S1 (3, 4, 5, 11) genus 3 : decorated graphs compared 378 (enumerated 378 ), unmatched keys 0 , coefficient mismatches 0 (polar orders t^-4..t^-1), 2.0s
+(a) point frame CY torus, sample S3 (17, -5, 19, -8) genus 2 : decorated graphs compared 17 (enumerated 17 ), unmatched keys 0 , coefficient mismatches 0 (polar orders t^-2..t^-1), 0.1s
+(a) point frame CY torus, sample S3 (17, -5, 19, -8) genus 3 : decorated graphs compared 378 (enumerated 378 ), unmatched keys 0 , coefficient mismatches 0 (polar orders t^-4..t^-1), 2.9s

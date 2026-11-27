@@ -1,0 +1,42 @@
+== a3_kp_nullity.pl 3 H=2 H=3 H=4 L=2 L=3 L=4
+genus 3: 6 multisets in the range, 18 unknowns, 78 equations (KP H=2 H=3 H=4 L=2 L=3 L=4); rank 17, nullity 1
+   not forced to vanish: (2) (4) (3,2) (2,2,2)
+== a3_kp_nullity.pl 3 Z=2 H=3 H=4 L=3 L=4
+genus 3: 6 multisets in the range, 18 unknowns, 79 equations (KP Z=2 H=3 H=4 L=3 L=4); rank 18, nullity 0
+   not forced to vanish: none
+== a3_kp_nullity.pl 3 C H=2 H=3 H=4 L=2 L=3 L=4
+genus 3: 6 multisets in the range, 18 unknowns, 174 equations (KP + cut-and-join H=2 H=3 H=4 L=2 L=3 L=4); rank 18, nullity 0
+   not forced to vanish: none
+== a3_kp_nullity.pl 3 C Z=2 Z=3 H=4
+genus 3: 6 multisets in the range, 18 unknowns, 175 equations (KP + cut-and-join Z=2 Z=3 H=4); rank 18, nullity 0
+   not forced to vanish: none
+== a3_kp_nullity.pl 3 C H=2 H=3 H=4
+genus 3: 6 multisets in the range, 18 unknowns, 171 equations (KP + cut-and-join H=2 H=3 H=4); rank 17, nullity 1
+   not forced to vanish: (3) (2,2)
+== a3_kp_nullity.pl 4 H=2 H=3 H=4 H=5 H=6
+genus 4: 18 multisets in the range, 72 unknowns, 481 equations (KP H=2 H=3 H=4 H=5 H=6); rank 71, nullity 1
+   not forced to vanish: (2) (4) (3,2) (2,2,2) (5) (4,2) (3,3) (3,2,2) (2,2,2,2) (6) (5,2) (4,3) (4,2,2) (3,3,2) (3,2,2,2) (2,2,2,2,2)
+== a3_kp_nullity.pl 4 H=2 H=3 H=4 H=5 H=6 L=2 L=3 L=4 L=5 L=6
+genus 4: 18 multisets in the range, 72 unknowns, 486 equations (KP H=2 H=3 H=4 H=5 H=6 L=2 L=3 L=4 L=5 L=6); rank 72, nullity 0
+   not forced to vanish: none
+== same, seed 90210, p = 1e9+7
+genus 3: 6 multisets in the range, 18 unknowns, 174 equations (KP + cut-and-join H=2 H=3 H=4 L=2 L=3 L=4); rank 18, nullity 0
+   not forced to vanish: none
+genus 3: 6 multisets in the range, 18 unknowns, 78 equations (KP H=2 H=3 H=4 L=2 L=3 L=4); rank 17, nullity 1
+   not forced to vanish: (2) (4) (3,2) (2,2,2)
+== tlr_k01_z2.pl 3 two-leaf K01=1 Z2=1
+genus 3 (reduced KP system, 11 samples): 9 one-leaf unknowns, 22 equations, rank 7, nullity 2; one-leaf coefficients not all pivots for t = 3 4 (indicative)
+== tlr_k01_z2.pl 3 full K01=1 Z2=1
+genus 3 (reduced KP system, 11 samples): 9 one-leaf unknowns, 30 equations, rank 8, nullity 1; one-leaf coefficients not all pivots for t = 3 (indicative)
+== tlr_k01_z2.pl 3 two-leaf K01=2 Z2=1
+genus 3 (reduced KP system, 11 samples): 9 one-leaf unknowns, 25 equations, rank 9, nullity 0
+== tlr_k01_z2.pl 3 full K01=2 Z2=1
+genus 3 (reduced KP system, 11 samples): 9 one-leaf unknowns, 33 equations, rank 9, nullity 0
+== tlr_k01_z2.pl 4 two-leaf K01=1 Z2=1
+genus 4 (reduced KP system, 12 samples): 20 one-leaf unknowns, 57 equations, rank 17, nullity 3; one-leaf coefficients not all pivots for t = 6 (indicative)
+== tlr_k01_z2.pl 4 full K01=1 Z2=1
+genus 4 (reduced KP system, 12 samples): 20 one-leaf unknowns, 161 equations, rank 20, nullity 0
+== tlr_k01_z2.pl 4 two-leaf K01=2 Z2=1
+genus 4 (reduced KP system, 12 samples): 20 one-leaf unknowns, 62 equations, rank 20, nullity 0
+== tlr_k01_z2.pl 4 full K01=2 Z2=1
+genus 4 (reduced KP system, 12 samples): 20 one-leaf unknowns, 166 equations, rank 20, nullity 0

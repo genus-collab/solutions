@@ -1,0 +1,6 @@
+tau=-7/9 K=22: propagation 70554 consistency checks (0 failed), time 76s; kappa_2..4 = 41666667 0 174652779
+tau=5/2 K=22: propagation 70554 consistency checks (0 failed), time 85s; kappa_2..4 = 41666667 0 174652779
+ref_t1 (mod): 968 coefficients compared, 0 mismatches; propagation checks 141108, failed 0
+tau=3/11 K=20: propagation 38866 consistency checks (0 failed), time 32s; kappa_2..4 = 291154603 0 89079444
+tau=-13/7 K=20: propagation 38866 consistency checks (0 failed), time 33s; kappa_2..4 = 291154603 0 89079444
+ref_t1 (mod): 800 coefficients compared, 0 mismatches; propagation checks 77732, failed 0

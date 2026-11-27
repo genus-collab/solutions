@@ -1,0 +1,15 @@
+(Q2) frame point (genus-3 factors, ZMAX = 6), t-orders for m, n = 0..2: E_22 at U1 (its true value) {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}; EdN[2,2] read at U2 (as printed by hvc_asymptotics*.wls) {{-2, -2, -2}, {-2, -2, -2}, {-2, -2, -2}}; E_11 at U1 {{-2, -2, -2}, {-2, -2, -2}, {-2, -2, -2}}; E_12 at U1 {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}; E_21 at U1 {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}; Dil_2(n), n = 1..6, at U1 {0, 0, 0, 0, 0, 0} [1 s]
+(Q2) frame Am (genus-3 factors, ZMAX = 6), t-orders for m, n = 0..2: E_22 at U1 (its true value) {{2, 2, 2}, {2, 2, 2}, {2, 2, 2}}; EdN[2,2] read at U2 (as printed by hvc_asymptotics*.wls) {{-2, -2, -2}, {-2, -2, -2}, {-2, -2, -2}}; E_11 at U1 {{-2, -2, -2}, {-2, -2, -2}, {-2, -2, -2}}; E_12 at U1 {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}; E_21 at U1 {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}; Dil_2(n), n = 1..6, at U1 {0, 2, 2, 2, 2, 2} [3 s]
+(M14a) conjugate encoding, exact in the quadratic algebra: ratCN[a,2] = cconj ratCN[a,1] (a = 0, 1; z^0..z^9): True; DilN[2] = cconj DilN[1]: True; EdN[2,2] = cconj EdN[1,1]: True; EdN[2,1] = cconj EdN[1,2]: True [5 s]
+(M14b) E_22 at t = 0 (read at U1) = (x^3/c)[z^m w^n](1 - h_w(z)^2 h_w(w)^2)/(z + w) for all m + n <= 8 (division remainder 0): True; E_22(0,0) = -x^2 (1+x+x^2)/(6 c^2): True; 2x2 minor = (x^6/c^2) St_1 (72 St_2 + 5 St_1^3)/77760: True, value at x = 1:  3
+----
+4096; EdN[2,2] read at U2 = -(x^3/2)/c^(m+n+2) (the E_11 value; what F3 of conifold_regularity_note.md reports for E_22): True [12 s]
+      E_22(m, n) at t = 0, m + n <= 2: {{-1/6*(x^2*(1 + x + x^2))/(1 + x)^2, -1/72*(x*(1 + x + x^2)^2)/(1 + x)^3, (31 + 93*x + 78*x^2 + x^3 + 78*x^4 + 93*x^5 + 31*x^6)/(6480*(1 + x)^4)}, {-1/72*(x*(1 + x + x^2)^2)/(1 + x)^3, -1/3240*(23 + 69*x + 84*x^2 + 53*x^3 + 84*x^4 + 69*x^5 + 23*x^6)/(1 + x)^4, "-"}, {(31 + 93*x + 78*x^2 + x^3 + 78*x^4 + 93*x^5 + 31*x^6)/(6480*(1 + x)^4), "-", "-"}}
+(M15) E_21(m, n) = E_12(n, m) exactly in the quadratic algebra, m + n <= 8: True; smallest t-order at U1 of Dil_1, Dil_2 (d = 1..10): {0, 0}; of E_11, E_12, E_21, E_22 (m + n <= 8): {0, 0, 0, 0} [31 s]
+(M8) regular rows, m = 0..9: {t-order of r_{0,2}[m], of r_{1,2}[m], r_{0,2}[m](0) = [z^m] h_w^-2, r_{1,2}[m](0) = (x/c)[z^m] h_w^-2, [t^1] r_{0,2}[m] = 0}: {{0, 0, True, True, True}}; Delta_2 = x^3 delta sst^2 through t^10: True; Delta_2(0) = x^3/c, Delta_2'(0) = 0: {True, True} [33 s]
+(Q1) det of the E_11 block over psi-orders {0, 1}, t^0..t^3: {0, 0, ((-1 + x)^4*x^6)/(18*(1 + x)^10), -1/90*((-1 + x)^2*x^6*(1 - 5*x + x^2)*(11 - 25*x + 11*x^2))/(1 + x)^12}; t^2 coefficient - (1-x)^4 x^6/(18 c^10) = 0 [33 s]
+      rho: the branch-free closed form of Corollary 11.2(d) equals (Delta_1 t^2/(-x c^3))^(-1/2) through t^6: True
+(M10b) Theorem 11.4, rho^2 E_11 = Sum e_il(t) lam_i lam_l' with e_il = (i l/(c^2 t^2)) Int_0^t Theta Ahat_i' Ahat_l', against EdN[1,1] for m + n <= 8, t^0..t^6: True [35 s]
+(M13) (9.6), rho E_12(psi, w) = -Sum_j j <S_j(t), v_2(-w; t)> lam_j(psi) lam_j(-w), against EdN[1,2] for m + n <= 8, t^0..t^5: True [63 s]
+total time 63 s
+exit 0

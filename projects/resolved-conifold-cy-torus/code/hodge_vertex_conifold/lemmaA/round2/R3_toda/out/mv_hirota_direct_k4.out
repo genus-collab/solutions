@@ -1,0 +1,6 @@
+equation k=4: (1/2)[A;2;u=0][A;2;u=0] + (1/2)[A;;u=1][A;;u=1][A;2;u=0] + (1/2)[S;;u=2][A;2;u=0] + (1/2)[A;2;u=2] + (1)[A;;u=1][A;3;u=0] + (-3)[A;4;u=0] + (1/24)[A;;u=1][A;;u=1][A;;u=1][A;;u=1] + (1/4)[A;;u=1][A;;u=1][S;;u=2] + (1/6)[A;;u=1][A;;u=3] + (1)[A;;u=1][S;2;u=1] + (1/2)[S;2,2;u=0] + (1)[S;3;u=1] + (1/8)[S;;u=2][S;;u=2] + (1/24)[S;;u=4]
+nu = (): 0 through x^12 ; control (A -> -A): nonzero
+nu = (1): 0 through x^12 ; control (A -> -A): nonzero
+nu = (2): 0 through x^12 ; control (A -> -A): nonzero
+nu = (1,1): 0 through x^12 ; control (A -> -A): nonzero
+SUMMARY k=4 tau=2/7 d=2 P=12: 4 monomials, 0 failures; control nonzero in 4 of 4

@@ -1,0 +1,2 @@
+tau=123456789/987654321 G=7 p=2147483647: Norlund 432 checks, 0 mismatches; one-point 84 checks, 0 mismatches; (6.1) 84 checks, 0 mismatches; two-point 252 checks (+30 n=2 general), 0 mismatches; three-point 0 checks, 0 mismatches; 23s
+tau=123456789/987654321: n=3 (g<=4, mu_i<=4) 100 checks (78 non-zero), 0 mismatches; n=4 (g<=2, mu_i<=3) 45 checks (43 non-zero), 0 mismatches; 3s

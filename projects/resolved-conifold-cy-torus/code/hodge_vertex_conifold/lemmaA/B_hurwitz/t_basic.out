@@ -1,0 +1,39 @@
+T(nu=[]; n=3, b=2): characters 3, brute force 3  ok
+T(nu=[]; n=3, b=4): characters 27, brute force 27  ok
+T(nu=[2]; n=3, b=3): characters 27, brute force 27  ok
+T(nu=[3]; n=3, b=2): characters 6, brute force 6  ok
+T(nu=[2]; n=4, b=3): characters 120, brute force 120  ok
+T(nu=[2]; n=4, b=5): characters 3936, brute force 3936  ok
+T(nu=[2 2]; n=4, b=2): characters 12, brute force 12  ok
+T(nu=[3]; n=4, b=4): characters 864, brute force 864  ok
+T(nu=[4]; n=4, b=3): characters 96, brute force 96  ok
+T(nu=[2]; n=3, b=1): characters 3, brute force 3  ok
+Tc(nu=[2]; n=3, b=3): exp. formula 24, brute force 24  ok
+Tc(nu=[3]; n=3, b=2): exp. formula 6, brute force 6  ok
+Tc(nu=[2]; n=4, b=5): exp. formula 2880, brute force 2880  ok
+Tc(nu=[2 2]; n=4, b=4): exp. formula 576, brute force 576  ok
+Tc(nu=[3]; n=4, b=4): exp. formula 648, brute force 648  ok
+Tc(nu=[4]; n=4, b=3): exp. formula 96, brute force 96  ok
+Tc(nu=[2]; n=3, b=5): exp. formula 240, brute force 240  ok
+A_0(2,1^2) = 1  expected 1  ok
+A_0(2,1^3) = 5  expected 5  ok
+A_0(2,1^4) = 36  expected 36  ok
+A_0(2,1^5) = 343  expected 343  ok
+A_0(3,1^2) = 1  expected 1  ok
+A_0(3,1^3) = 6  expected 6  ok
+A_0(3,1^4) = 49  expected 49  ok
+A_0(3,1^5) = 512  expected 512  ok
+A_0(4,1^2) = 1  expected 1  ok
+A_0(4,1^3) = 7  expected 7  ok
+A_0(4,1^4) = 64  expected 64  ok
+A_0(4,1^5) = 729  expected 729  ok
+A_1(2) = 1/24 (exp 1/24), A_1(2,1) = 1/6 (exp 1/6) ok
+A_1(3) = 1/12 (exp 1/12), A_1(3,1) = 3/8 (exp 3/8) ok
+A_1(4) = 1/8 (exp 1/8), A_1(4,1) = 2/3 (exp 2/3) ok
+A_1(5) = 1/6 (exp 1/6), A_1(5,1) = 25/24 (exp 25/24) ok
+Xi0_1(2) = 0  expected 0  ok
+Xi0_1(3) = 1/24  expected 1/24  ok
+Xi0_1(4) = 1/12  expected 1/12  ok
+Xi0_1(5) = 1/8  expected 1/8  ok
+Xi0_1(6) = 1/6  expected 1/6  ok
+FAILURES: 0

@@ -1,0 +1,11 @@
+G=2 R={} EVEN  [R+2: D=1 excess=1]  OK (0)
+G=2 R={} ODD   [R+2: D=1 excess=1]  OK (0)
+G=2 R={2} EVEN  [R+2: D=2 excess=0]  OK (0)
+G=2 R={2} ODD   [R+2: D=2 excess=0]  OK (0)
+G=2 R={3} EVEN  [R+2: D=3 excess=-1]  FAIL: -1782/14706125 -27/160 -7/729
+G=2 R={3} ODD   [R+2: D=3 excess=-1]  OK (0)
+G=2 R={4} EVEN  [R+2: D=4 excess=-2]  OK (0)
+G=2 R={4} ODD   [R+2: D=4 excess=-2]  OK (0)
+G=2 R={5} EVEN  [R+2: D=5 excess=-3]  OK (0)
+G=2 R={5} ODD   [R+2: D=5 excess=-3]  OK (0)
+SUMMARY: 10 relations, 1 failures

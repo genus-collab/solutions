@@ -1,0 +1,1 @@
+ref_t1 cons K=26 tau=5/3 p=1000000007: 11731 multisets, 0 inconsistent (strategies big/small/mix), 66s

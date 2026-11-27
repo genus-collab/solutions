@@ -1,0 +1,68 @@
+# Referee 2 (route R2): raw outputs of the foreground runs of 2026-10-31 (copied from the session; background runs write their own *.out files).
+# All exact (Perl Math::BigRat). HVC = G:\My Drive\Projects\Old\refGW\hodge_vertex_conifold.
+
+## engine copy test: eng/t_moments.pl 3 1 reproduces E_formulas/referee/ref_engine_h3_r1.txt byte for byte (SAME)
+
+## ref_cmp61_engine.pl: (6.1) vs TR-free engine tables, every (component k, power j^b) coefficient (identity in tau and j)
+genus 2: 12 coefficients, 0 mismatches (E_formulas/engine_h2_r1.txt)
+genus 3: 26 coefficients, 0 mismatches
+genus 4: 45 coefficients, 0 mismatches
+genus 5: 69 coefficients, 0 mismatches
+genus 6: 98 coefficients, 0 mismatches (author engine_h6_r1.txt and E-referee ref_engine_h6_r1.txt)
+genus 7: 132 coefficients, 0 mismatches (E-referee ref_engine_h7_r1.txt; the R2 author's engine_h7_r1.txt is textually identical to it)
+genus 8: 171 coefficients, 0 mismatches; components 0..8 (NEW table eng/ref_engine_h8_r1.txt, RefHodge engine, 899 s)
+  gap formula sigma^h F_h = -(2h-3)! [l^{2h}] S(e1 l)S(e2 l) vs engine Xi_h(0)/(2-2h): OK at tau = 1, 2, 3, 1/3, -3/7, 5/2 for every h = 2..8
+  genus 8 sample: tau=1: sigma^8 F_8 = -813274284241/3743416320 (engine = formula); zeros of Xi_8(j) at j = 1..14 exactly
+
+## ref_mirr_engine.pl (TR-free Lemma A, every component)
+genus 8 r=1: 126 (R, component) values in the range D <= 13, 0 non-zero; first layer D = 14: 9 of 9 component values non-zero
+genus 8 r=2: 504 (R, component) values in the range D <= 13, 0 non-zero; first layer D = 14: 72 of 72 component values non-zero
+
+## ref_xy1.pl (Theorem 1, n = 1, own implementation) vs (6.1) at small genus
+ref_xy1 tau=1 g<=4 j<=10: compared 40, non-zero 28, mismatches 0
+ref_xy1 tau=2 g<=4 j<=10: compared 40, non-zero 28, mismatches 0
+
+## ref_xy2.pl (Theorem 1, n = 2, own implementation) vs engine, small genus
+ref_xy2 tau=1 g=2 m<=6: 21 pairs (19 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+ref_xy2 tau=2 g=3 m<=8: 36 pairs (30 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+ref_xy2 tau=3 g=4 m<=8: 36 pairs (24 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+
+## ref_xy3.pl (Theorem 1, n = 3, own divided-difference implementation) vs engine, small genus, with permutation symmetry check
+ref_xy3 tau=1 g=2 m<=4: 20 triples (18 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+ref_xy3 tau=2 g=3 m<=4: 20 triples (13 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+genus 10, tau = 1: xi3(2,2,21) = xi3(21,2,2) = 1271938965568194210015/536870912 (order independence of the iterated residue)
+
+## ref_cj.pl (Route A Theorem B, MV cut-and-join at the dilaton point, R = (j)): validation with TR-free engine data
+SUMMARY engine G=2 tau=1 j=1..8: 8 relations, 0 failures
+SUMMARY engine G=3 tau=2/7 j=1..10: 10 relations, 0 failures
+SUMMARY engine G=4 tau=3 j=1..12: 12 relations, 0 failures
+SUMMARY engine G=5 tau=3/2 j=1..17: 17 relations, 0 failures
+SUMMARY engine G=6 tau=3/2 j=1..20: 20 relations, 0 failures
+SUMMARY engine G=7 tau=3/2 j=1..23: 23 relations, 0 failures
+SUMMARY formula G=3 tau=1 j=1..10: 10 relations, 0 failures
+
+## ref_cj2.pl (Theorem B, R = (j1, j2)): validation with engine data, and formula at genus 2
+SUMMARY engine G=2 tau=2/7 j<=5: 15 relations, 0 failures
+SUMMARY formula G=2 tau=1 j<=5: 15 relations, 0 failures
+SUMMARY engine G=3 tau=3/2 j<=6: 21 relations, 0 failures
+SUMMARY engine G=4 tau=2 j<=6: 21 relations, 0 failures
+
+## ref_string.pl (string equation across n, R2 formulas on both sides)
+string test tau=2 G=9: 26 identities (Xi(m,1) = m Xi(m)), 0 failures
+string test tau=1 G=10: 30 identities, 0 failures
+string test tau=1 G=8: 36 identities (Xi(m1,m2,1) = (m1+m2) Xi(m1,m2)), 0 failures
+
+## kp/ref_hirota.pl (Route A's DJKM Hirota generator, sections 1-2 verbatim; values from engine or R2 formulas)
+MODE=engine G=2 tau=2/7 W=6: R=() and R=(2): 28 equations (129 and 235 non-zero individual terms), 0 failures
+SUMMARY MODE=formula G=2 tau=1 W=6: 42 equations (R = (), (2), (3)), 0 failures
+SUMMARY MODE=formula G=3 tau=2 W=4: 12 equations (R = (5),(6),(7),(8)), 0 failures
+SUMMARY MODE=engine G=3 tau=2 W=4: 12 equations, 0 failures
+
+## kp/a3_kp_nullity.pl 7 (Route A, rerun): genus 7: 194 multisets in the range, 1358 unknowns, 18640 equations (KP); rank 1358, nullity 0
+
+## ref_limits.pl 2 12: end components of (6.1) vs independent all-genus theorems (exact polynomial identities in j)
+h=2..12: Hurwitz component vs Route B Theorem B: 0 mismatches; lambda_g component vs b_h = [t^{2h}](t/2)/sin(t/2): 0 mismatches
+
+## ref_cmp_trhalf.pl: exact EO on C_{-1/2} vs (6.1) (own evaluation)
+tr/trhalf_g7_ref.out (rerun, 117 s): g = 2..7, 96 odd j, 0 mismatches
+../trcheck/trhalf_g8.out (author's run): g = 7, 8: 46 odd j, 0 mismatches (TOTAL 161 incl. g = 2..6)

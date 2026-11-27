@@ -1,0 +1,2 @@
+equation P3, weight 3, coefficient of D_{t_3}: 2/3
+SUMMARY P3 G=2..8: 365 (G,D,R) cases; terms: H1 10859304, H2 56781, empty0 15217670, ff 22863832, target 365; survivors 0; bad target counts 0; target coefficient factor -c*k = -2 (non-zero needed)

@@ -1,0 +1,69 @@
+x = 2 (c = 3, tau = -2/3, sigma = -2/9)
+  sum rule k=1                                               ok
+  sum rule k=2                                               ok
+  sum rule k=3                                               ok
+  top a_{2}^(1) = (-1)^2 C_2                                 ok
+  top a_{3}^(2) = (-1)^3 C_3                                 ok
+  top a_{4}^(3) = (-1)^4 C_4                                 ok
+  a_1^(1) = -(1-x)^2/2 = -c s1                               ok
+  sub-top a_2^(2) = a_2^(1) k (1-x)^2/(2c^2)                 ok
+  sub-top a_3^(3) = a_3^(2) k (1-x)^2/(2c^2)                 ok
+  k=2: coefficient of Xi(2) vanishes                         ok
+  k=3: coefficient of Xi(3) vanishes                         ok
+  k=3: coefficient of Xi(2,2) vanishes                       ok
+  k=3: residual Xi(2) coefficient = -(1-x)^2 x^2/(12 c^4)    ok
+  T_2 c=1 form proportional                                  ok
+  T_3 c=1 form proportional (1,2)                            ok
+  T_3 c=1 form proportional (1,3)                            ok
+x = 1/3 (c = 4/3, tau = -1/4, sigma = -3/16)
+  sum rule k=1                                               ok
+  sum rule k=2                                               ok
+  sum rule k=3                                               ok
+  top a_{2}^(1) = (-1)^2 C_2                                 ok
+  top a_{3}^(2) = (-1)^3 C_3                                 ok
+  top a_{4}^(3) = (-1)^4 C_4                                 ok
+  a_1^(1) = -(1-x)^2/2 = -c s1                               ok
+  sub-top a_2^(2) = a_2^(1) k (1-x)^2/(2c^2)                 ok
+  sub-top a_3^(3) = a_3^(2) k (1-x)^2/(2c^2)                 ok
+  k=2: coefficient of Xi(2) vanishes                         ok
+  k=3: coefficient of Xi(3) vanishes                         ok
+  k=3: coefficient of Xi(2,2) vanishes                       ok
+  k=3: residual Xi(2) coefficient = -(1-x)^2 x^2/(12 c^4)    ok
+  T_2 c=1 form proportional                                  ok
+  T_3 c=1 form proportional (1,2)                            ok
+  T_3 c=1 form proportional (1,3)                            ok
+x = -5/7 (c = 2/7, tau = 5/2, sigma = 35/4)
+  sum rule k=1                                               ok
+  sum rule k=2                                               ok
+  sum rule k=3                                               ok
+  top a_{2}^(1) = (-1)^2 C_2                                 ok
+  top a_{3}^(2) = (-1)^3 C_3                                 ok
+  top a_{4}^(3) = (-1)^4 C_4                                 ok
+  a_1^(1) = -(1-x)^2/2 = -c s1                               ok
+  sub-top a_2^(2) = a_2^(1) k (1-x)^2/(2c^2)                 ok
+  sub-top a_3^(3) = a_3^(2) k (1-x)^2/(2c^2)                 ok
+  k=2: coefficient of Xi(2) vanishes                         ok
+  k=3: coefficient of Xi(3) vanishes                         ok
+  k=3: coefficient of Xi(2,2) vanishes                       ok
+  k=3: residual Xi(2) coefficient = -(1-x)^2 x^2/(12 c^4)    ok
+  T_2 c=1 form proportional                                  ok
+  T_3 c=1 form proportional (1,2)                            ok
+  T_3 c=1 form proportional (1,3)                            ok
+x = 3/2 (c = 5/2, tau = -3/5, sigma = -6/25)
+  sum rule k=1                                               ok
+  sum rule k=2                                               ok
+  sum rule k=3                                               ok
+  top a_{2}^(1) = (-1)^2 C_2                                 ok
+  top a_{3}^(2) = (-1)^3 C_3                                 ok
+  top a_{4}^(3) = (-1)^4 C_4                                 ok
+  a_1^(1) = -(1-x)^2/2 = -c s1                               ok
+  sub-top a_2^(2) = a_2^(1) k (1-x)^2/(2c^2)                 ok
+  sub-top a_3^(3) = a_3^(2) k (1-x)^2/(2c^2)                 ok
+  k=2: coefficient of Xi(2) vanishes                         ok
+  k=3: coefficient of Xi(3) vanishes                         ok
+  k=3: coefficient of Xi(2,2) vanishes                       ok
+  k=3: residual Xi(2) coefficient = -(1-x)^2 x^2/(12 c^4)    ok
+  T_2 c=1 form proportional                                  ok
+  T_3 c=1 form proportional (1,2)                            ok
+  T_3 c=1 form proportional (1,3)                            ok
+ALL OK

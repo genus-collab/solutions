@@ -1,0 +1,8 @@
+genus 2: Mumford reduction of the lambda_1 component checked at 7 values of j: 0 mismatches
+p_1(h,j) polynomial: 0:-23/480 ; 1:97/1440 ; 2:-21/640 ; 3:29/5760
+genus 3: Mumford reduction of the lambda_1 component checked at 10 values of j: 0 mismatches
+p_1(h,j) polynomial: 0:121/2016 ; 1:-26851/181440 ; 2:111067/725760 ; 3:-163/2016 ; 4:22103/967680 ; 5:-475/145152 ; 6:77/414720
+genus 4: Mumford reduction of the lambda_1 component checked at 13 values of j: 0 mismatches
+p_1(h,j) polynomial: 0:-10219/86400 ; 1:29867/75600 ; 2:-16797047/29030400 ; 3:1172123/2488320 ; 4:-77677/331776 ; 5:1837051/24883200 ; 6:-2293681/154828800 ; 7:509917/278691840 ; 8:-58781/464486400 ; 9:149/39813120
+genus 5: Mumford reduction of the lambda_1 component checked at 16 values of j: 0 mismatches
+p_1(h,j) polynomial: 0:25507/73920 ; 1:-18985193/13305600 ; 2:52372207/19958400 ; 3:-2652943309/958003200 ; 4:42927184877/22992076800 ; 5:-361963781/425779200 ; 6:2475071957/9196830720 ; 7:-6376661/106444800 ; 8:1144956371/122624409600 ; 9:-7638649/7664025600 ; 10:1159453/16721510400 ; 11:-73/25804800 ; 12:49/955514880

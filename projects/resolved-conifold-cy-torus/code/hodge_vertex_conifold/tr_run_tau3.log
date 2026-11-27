@@ -1,0 +1,9 @@
+tau = 3, sigma = 12; v(z) = {3, 1, 7/36, 157/5184, 385/93312}...; E_1(z) = -169/5971968 + 3/z^4 - (65*z)/6718464; setup 0.6 s
+omega_{0,3} = <|{0, 0, 0} -> -12|>, omega_{1,1} = <|{0} -> 313/3456, {1} -> -1/2|>
+recursion done: 20 correlators, 8.7 s
+(2,1): 5 terms, symmetry violations 0; lattice points |mu| <= 6: 6, disagreements with Lemma D / Conjecture M: {}; first layer {{3} -> -277/82944}; TR vs Hodge (P2) at 4 points, mismatches: {}  [8.9 s]
+(2,2): 21 terms, symmetry violations 0; lattice points |mu| <= 5: 6, disagreements with Lemma D / Conjecture M: {}; first layer {{1, 3} -> -277/27648, {2, 2} -> -55/9216}; TR vs Hodge (P2) at 6 points, mismatches: {}  [8.9 s]
+(2,3): 84 terms, symmetry violations 0; lattice points |mu| <= 6: 7, disagreements with Lemma D / Conjecture M: {}; first layer {{1, 1, 3} -> -277/6912, {1, 2, 2} -> -55/2304}; TR vs Hodge (P2) at 7 points, mismatches: {}  [9. s]
+(3,1): 8 terms, symmetry violations 0; lattice points |mu| <= 8: 8, disagreements with Lemma D / Conjecture M: {}; first layer {{5} -> -5665/1990656}; TR vs Hodge (P2) at 6 points, mismatches: {}  [9.2 s]
+(3,2): 45 terms, symmetry violations 0; lattice points |mu| <= 7: 12, disagreements with Lemma D / Conjecture M: {}; first layer {{1, 5} -> -28325/1990656, {2, 4} -> -41701/4644864, {3, 3} -> -91553/9953280}; TR vs Hodge (P2) at 12 points, mismatches: {}  [9.5 s]
+(3,3): 220 terms, symmetry violations 0; lattice points |mu| <= 8: 16, disagreements with Lemma D / Conjecture M: {}; first layer {{1, 1, 5} -> -28325/331776, {1, 2, 4} -> -41701/774144, {1, 3, 3} -> -91553/1658880}; TR vs Hodge (P2) at 16 points, mismatches: {}  [10.5 s]

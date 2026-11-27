@@ -1,0 +1,37 @@
+tau=1 g=6 mu=(8,8): xy 69647913043351/2249195520  engine 69647913043351/2249195520  OK
+tau=1 g=6 mu=(8,7): xy 408148589679/187432960  engine 408148589679/187432960  OK
+tau=1 g=6 mu=(8,6): xy -1842995367/40370176  engine -1842995367/40370176  OK
+tau=1 g=6 mu=(8,5): xy -85217159/3407872  engine -85217159/3407872  OK
+tau=1 g=6 mu=(8,4): xy -1622565/1048576  engine -1622565/1048576  OK
+tau=1 g=6 mu=(8,3): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(8,2): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(8,1): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(7,7): xy -23633221995/524812288  engine -23633221995/524812288  OK
+tau=1 g=6 mu=(7,6): xy -6390507525/262406144  engine -6390507525/262406144  OK
+tau=1 g=6 mu=(7,5): xy -1550025/1048576  engine -1550025/1048576  OK
+tau=1 g=6 mu=(7,4): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(7,3): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(7,2): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(7,1): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(6,6): xy -16755375/11534336  engine -16755375/11534336  OK
+tau=1 g=6 mu=(6,5): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(6,4): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(6,3): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(6,2): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(6,1): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(5,5): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(5,4): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(5,3): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(5,2): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(5,1): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(4,4): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(4,3): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(4,2): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(4,1): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(3,3): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(3,2): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(3,1): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(2,2): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(2,1): xy 0  engine 0  OK  [range]
+tau=1 g=6 mu=(1,1): xy 0  engine 0  OK  [range]
+total 36, mismatches 0, homogeneity violations 0

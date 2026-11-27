@@ -1,0 +1,23 @@
+genus 1: B_h from REC vs two-leaf engine table: equal
+genus 2: B_h from REC vs two-leaf engine table: equal
+genus 3: B_h from REC vs two-leaf engine table: equal
+genus 4: B_h from REC vs two-leaf engine table: equal
+genus 5: B_h from REC vs two-leaf engine table: equal
+genus 6: B_h from REC vs two-leaf engine table: equal
+genus 7: B_h from REC vs two-leaf engine table: equal
+genus  1: Xi^(1) from REC+Mumford DIFFERS FROM the (6.1) closed form; in-range values j=2..0: all zero
+genus  2: Xi^(1) from REC+Mumford EQUALS the (6.1) closed form; in-range values j=2..2: all zero
+genus  3: Xi^(1) from REC+Mumford EQUALS the (6.1) closed form; in-range values j=2..4: all zero
+genus  4: Xi^(1) from REC+Mumford EQUALS the (6.1) closed form; in-range values j=2..6: all zero
+genus  5: Xi^(1) from REC+Mumford EQUALS the (6.1) closed form; in-range values j=2..8: all zero
+genus  6: Xi^(1) from REC+Mumford EQUALS the (6.1) closed form; in-range values j=2..10: all zero
+genus  7: Xi^(1) from REC+Mumford EQUALS the (6.1) closed form; in-range values j=2..12: all zero
+genus  8: Xi^(1) from REC+Mumford EQUALS the (6.1) closed form; in-range values j=2..14: all zero
+genus 1: Xi^(1) from REC+Mumford vs Hodge engine table: 1 MISMATCHES
+genus 2: Xi^(1) from REC+Mumford vs Hodge engine table: equal
+genus 3: Xi^(1) from REC+Mumford vs Hodge engine table: equal
+genus 4: Xi^(1) from REC+Mumford vs Hodge engine table: equal
+genus 5: Xi^(1) from REC+Mumford vs Hodge engine table: equal
+genus 6: Xi^(1) from REC+Mumford vs Hodge engine table: equal
+genus 7: Xi^(1) from REC+Mumford vs Hodge engine table: equal
+genus 8: Xi^(1) from REC+Mumford vs Hodge engine table: equal

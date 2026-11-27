@@ -1,0 +1,166 @@
+% s3_rows. Abridged Section 3 (long version: sections/s03_rows.tex); label prefix: row.
+\section{The singular row: Euler integral, Gauss equation and the Beta constant}
+\label{sec:row}
+
+This section computes the frame-B identity row $\rr_{0,1}(z;t)$ at the singular idempotent in closed form, at weights with (ND), complex or indeterminate (principle (P) of \cref{lem:set-rings}). All statements are formal, except \cref{lem:row-betaphase,prop:row-beta}, whose analytic inputs are Laplace's method, proved in full in \Lref{Lemma~3.11}, the Beta integral \cite[5.12.1]{DLMF}, and Stirling's series with remainder \cite[5.11.1 and Section~5.11(ii)]{DLMF}.
+
+%-------------------------------------------------------------------------------
+\subsection{The Euler coordinate and the formal Laplace calculus}
+\label{sec:row-euler}
+
+For $\tau\neq0$ put $U=1-\tau s$. Then $1-U=\tau s$, $1-\cQ U=-\cQ\tau(1-s)$, $\dd U/U=-\tau\,\dd s/(1-\tau s)$, and $\cW(1-\tau s)$ is the Euler phase $\phi_\tau(s)$ of \cref{def:set-alg} plus a term independent of $s$ \Lref{Lemma~3.1}; so $\re^{\cW/z}\dd U/U$ is $\re^{\phi_\tau(s)/z}(1-\tau s)^{-1}\dd s$ times a factor independent of $s$. The logarithmic points $U=1$ and $U=1/\cQ$ of $\cW$, which collide at $t=0$, are $s=0$ and $s=1$, and the critical point $\sast$ of $\phi_\tau$ stays at $\sast(0)=\wA/E$.
+
+\begin{lem}[{\Lref{Lemma~3.2}: Hessians, the unit $\alg$, the tensor rule; formal}]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-hess}
+Let $\tau\neq0$. Then
+\begin{equation}
+\label{eq:row-hess}
+\phi_\tau''(\sast)=-\frac{\delta}{\sast(1-\sast)U_1},\qquad
+\phi_\tau''(\stil)=\frac{\delta}{\stil(1-\stil)U_2},\qquad
+\phi_0''(\wA/E)=-\frac{E^3}{\alpha_1\wA},
+\end{equation}
+and both critical points are non-degenerate on $\Ddisc''$. Put $\alg(\tau)\coloneqq(1-\tau\sast)\big(\phi_\tau''(\sast)/\phi_0''(\wA/E)\big)^{1/2}$, the square root with $\alg(0)=1$. It is well defined:
+\begin{equation}
+\label{eq:row-alg}
+\alg^2=\frac{U_1^2\,\phi_\tau''(\sast)}{\phi_0''(\wA/E)}=\frac{\alpha_1\wA\,\delta\,U_1}{E^3\,\sast(1-\sast)}=\frac{\wA\,\delta\,(E-\wB\tau\sast)}{E^3\,\sast}
+\end{equation}
+is a unit of $\Oan(\Ddisc)$ with value $1$ at $\tau=0$, so $\alg$ and $1/\alg$ are analytic on $\Ddisc$. Tensor rule: $\cW_2(U_i)=U_i^2\phi_\tau''(s_i)/\tau^2$ with $(s_1,s_2)\coloneqq(\sast,\stil)$.
+\end{lem}
+
+So $\cW_2(U_1)$ has a double pole at $\tau=0$. For $k\geq2$ the rescaled derivatives $\wrk_k(\tau)\coloneqq\tau^k\cW_k(U_1)$ extend analytically to $\Ddisc'$, $\tau=0$ included, with $\wrk_k(0)=(-1)^k\phi_0^{(k)}(\wA/E)$, and $\wrk_2$ has no zero on $\Ddisc'$ \Lref{Lemma~3.4}.
+
+\begin{defn}[{\Lref{Definitions~3.5 and~3.7}: normalised formal Laplace expansions}]
+\label{def:row-Lnorm}
+Let $\Acal$ be the ring of formal sums $K=\sum_{p\geq0,\,q\in\bbZ}K_{pq}v^pz^q$ on whose support the weight $p/2+q$ is bounded below and takes each value $\leq N$ only finitely often. For $a\neq0$ the \emph{Gaussian functional} is
+\[
+\gauss{K}{a}\coloneqq\sum_{p\ \mathrm{even},\,q}K_{pq}\,(p-1)!!\,\Big(-\frac za\Big)^{p/2}z^q\ \in\Cz\qquad((-1)!!\coloneqq1).
+\]
+Data: a point $u_0$, a \emph{phase} $f$ analytic near $u_0$ with $f'(u_0)=0$ and $f_2\coloneqq f''(u_0)\neq0$, and an \emph{amplitude} $\amp\in\Oan_{u_0}[z,1/z]$, where $\Oan_{u_0}$ denotes the germs of analytic functions at $u_0$. With $\Rr_f(v)\coloneqq\sum_{k\geq3}f^{(k)}(u_0)v^k/k!$ and $\mathrm{Exp}[\Rr/z]\coloneqq\sum_j\Rr^j/(j!z^j)\in\Acal$, put $\Lnorm[f,\amp;u_0]\coloneqq\gauss{\amp(u_0+v)\,\mathrm{Exp}[\Rr_f(v)/z]}{f_2}\in\Cz$, and $\Lhat[f,\amp;u_0]\coloneqq\Lnorm[f,\amp;u_0]/\amp(u_0)$ for $\amp\in\Oan_{u_0}$ with $\amp(u_0)\neq0$. For $\amp=1$ the coefficient of $z^m$ in $\Lnorm[f,1;u_0]$ is the Wick polynomial $\wick_m$ of \cref{def:set-rows} with $\cW_k$ replaced by $f^{(k)}(u_0)$. For $\amp\in\Oan_{u_0}$, $\Lnorm[f,\amp;u_0]$ lies in $\bbC\fps z$, with constant term $\amp(u_0)$ and coefficients polynomial in $1/f_2$ and the Taylor coefficients of $f$ and $\amp$ at $u_0$. $\Lnorm$ is unchanged when a constant is added to $f$ and is linear in $\amp$. Rescaling of the phase: for a constant $\lambda\neq0$ and an amplitude $\amp$ independent of $z$, $\Lnorm[\lambda f,\amp;u_0](z)=\Lnorm[f,\amp;u_0](z/\lambda)$.
+\end{defn}
+
+\begin{prop}[{\Lref{Propositions~3.8, 3.9 and~3.10}: the three rules (P1), (P2), (P3); formal}]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-calc}
+Let $f$, $u_0$ and $\amp$ be as in \cref{def:row-Lnorm}.
+\begin{description}
+\item[(P3) Total derivatives.] $\Lnorm[f,\mathsf{k}'+f'\mathsf{k}/z;u_0]=0$ for every $\mathsf{k}\in\Oan_{u_0}[z,1/z]$.
+\item[(P2) Derivative in a parameter with a moving expansion point.] Here $\tau$ is any parameter and $s$ any coordinate. Let $f(\tau,s)$ and $\amp(\tau,s)$ be analytic near $(\tau_0,s_0)$ ($\amp$ may be a Laurent polynomial in $z$ with such coefficients), let $s_c(\tau)$ be analytic with $s_c(\tau_0)=s_0$, $\de_sf(\tau,s_c(\tau))=0$ and $f_2(\tau)\coloneqq\de_s^2f(\tau,s_c(\tau))\neq0$. Put $f_0(\tau)\coloneqq f(\tau,s_c(\tau))$ and $\mathsf{n}(\tau)\coloneqq\Lnorm[f(\tau,\cdot),\amp(\tau,\cdot);s_c(\tau)]$. Then every $z$-coefficient of $\mathsf{n}$ is analytic in $\tau$, and
+\begin{equation}
+\label{eq:row-P2}
+\de_\tau\mathsf{n}+\Big(\frac{f_{0,\tau}}{z}-\frac{f_{2,\tau}}{2f_2}\Big)\mathsf{n}=\Lnorm[f(\tau,\cdot),\Dam\amp;s_c(\tau)],\qquad \Dam\amp\coloneqq\de_\tau\amp+\amp\,\frac{\de_\tau f}{z}.
+\end{equation}
+\item[(P1) Coordinate invariance.] Let $h$ be analytic near $v_0$ with $h(v_0)=u_0$, $h_1\coloneqq h'(v_0)\neq0$, and let $\amp\in\Oan_{u_0}$. Then $f\circ h$ has a non-degenerate critical point at $v_0$, and $\Lnorm[f\circ h,(\amp\circ h)\,h';v_0]=h_1\,\Lnorm[f,\amp;u_0]$; so $\Lhat[f\circ h,(\amp\circ h)h';v_0]=\Lhat[f,\amp;u_0]$ if $\amp(u_0)\neq0$.
+\end{description}
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+(P3): $\re^{f/z}(\mathsf{k}'+f'\mathsf{k}/z)=\dd/\dd u\,(\re^{f/z}\mathsf{k})$, and the statement is Gaussian integration by parts, $\gauss{\dd K/\dd v}{a}=-(a/z)\gauss{vK}{a}$. (P2): $f_{0,\tau}/z$ comes from the moving critical value, $-f_{2,\tau}/(2f_2)$ from the Gaussian normalisation, and the motion of the expansion point contributes a total-derivative amplitude, killed by (P3). (P1): interpolate linearly between the affine map $u_0+h_1(v-v_0)$ and $h$; by (P2) and (P3) the expansion does not depend on the interpolation parameter.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The point-frame row and Gauss's equation}
+\label{sec:row-wickrow}
+
+Put
+\[
+\Nlap(z,\tau)\coloneqq\Lhat[\phi_\tau,(1-\tau s)^{-1};\sast(\tau)]=U_1\,\Lnorm[\phi_\tau,(1-\tau s)^{-1};\sast(\tau)],\qquad \Abeta(z)\coloneqq\Lnorm[\phi_0,1;\wA/E].
+\]
+
+\begin{prop}[{\Lref{Proposition~3.13}; formal}]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-wickrow}
+\begin{enumerate}
+\item For every $\tau\in\Ddisc''$ (every small $t\neq0$), coefficientwise in $z$, $\rpt_{0,1}(z;t)=\Nlap(z,\tau)$.
+\item For every $m\geq0$ and $\tau\in\Ddisc''$, $\coef{z^m}\rpt_{0,1}(z;t)=\wick_m\big(\wrk_2(\tau),\wrk_3(\tau),\dots,\wrk_{2m+2}(\tau)\big)$. Hence the $z^m$ coefficient of $\rpt_{0,1}$ extends analytically to all of $\Ddisc'$, $\tau=0$ included, with value $\coef{z^m}\Abeta$ at $\tau=0$.
+\item $\Nlap$ lies in $\Oan(\Ddisc')\fps z$, $\Nlap(z,0)=\Abeta(z)$, and the identity of (i) holds on all of $\Ddisc'$ and in $\bbC\fps z\fps t$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+In the coordinate $y=\log U$ the integrand $\re^{\cW/z}\dd U/U$ has amplitude $1$ and $\dd/\dd y=\thU$, so by \cref{def:set-rows} $\rpt_{0,1}=\Lnorm[\cW(\re^y),1;\log U_1]$. The change of coordinate $y=\log(1-\tau s)$ turns the phase into $\phi_\tau+\mathrm{const}$ and the amplitude into $-\tau(1-\tau s)^{-1}$; (P1) in its normalised form gives (i). For (ii): every monomial of $\wick_m$ is $\cW_2^{-n}\prod_i\cW_{k_i}$ with $\sum_ik_i=2n$, hence invariant under $\cW_k\mapsto\lambda^k\cW_k$ \Lref{Lemma~3.12}; with $\lambda=\tau$ it is the same monomial in the $\wrk_k$, so it is analytic at $\tau=0$, with no cancellation between monomials.
+\end{proof}
+
+Gauss's parameters, series and operator (acting on $\Cz\fps\tau$) are
+\begin{equation}
+\label{eq:row-gaussdef}
+\begin{gathered}
+\ga\coloneqq1+\frac{\alpha_2}{z},\quad \gb\coloneqq1+\frac{\wA}{z},\quad \gc\coloneqq2+\frac Ez,\qquad
+\Fhyp\coloneqq{}_2F_1(\ga,\gb;\gc;\tau)=\sum_{n\geq0}\frac{\prod_{j=1}^{n}(\alpha_2+jz)(\wA+jz)}{n!\,z^n\prod_{j=2}^{n+1}(E+jz)}\,\tau^n,\\
+\Gauss[Y]\coloneqq\tau(1-\tau)Y_{\tau\tau}+\big(\gc-(\ga+\gb+1)\tau\big)Y_\tau-\ga\gb\,Y ,
+\end{gathered}
+\end{equation}
+and $\Ephi\coloneqq\mathrm{Exp}[-\dphi/z]\in\bbC[1/z]\fps\tau$.
+
+\begin{prop}[{\Lref{Proposition~3.16}: Gauss's equation for the formal expansion; formal}]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-gaussode}
+Let $\Lt\coloneqq\Lnorm[\phi_\tau,(1-\tau s)^{-1};\sast(\tau)]$, an element of $\Oan(\Ddisc')\fps z$ by \cref{prop:row-wickrow}, and
+\[
+\Ngauss(z,\tau)\coloneqq\mathrm{Exp}[\dphi(\tau)/z]\,\Big(\frac{\phi_\tau''(\sast)}{\phi_0''(\wA/E)}\Big)^{-1/2}\iota(\Lt)\ \in\Cz\fps\tau
+\]
+(root with value $1$ at $\tau=0$; $\iota$ as in \cref{lem:set-rings}). Then $\Gauss[\Ngauss]=0$ in $\Cz\fps\tau$, $\Ngauss(z,0)=\Abeta(z)$, which lies in $1+z\Kal\fps z$, and $\Ngauss=\mathrm{Exp}[\dphi/z]\,\Nlap/\alg$.
+\end{prop}
+
+\begin{proof}[Sketch of proof]
+The decisive identity is pointwise in $(s,\tau)$ \Lref{Lemma~3.15}: with $f=\phi_\tau$, $\amp_0=(1-\tau s)^{-1}$, $\Dam$ as in \eqref{eq:row-P2} and $\kE\coloneqq s(1-s)(1-\tau s)^{-2}$,
+\[
+\tau(1-\tau)\Dam^2\amp_0+\big(\gc-(\ga+\gb+1)\tau\big)\Dam\amp_0-\ga\gb\,\amp_0=-\ga\,\big(\kE'+f'\kE/z\big),
+\]
+which is Euler's integration by parts, written for amplitudes. By (P2), $\nabla\coloneqq\dd/\dd\tau+\dphi_\tau/z-f_{2,\tau}/(2f_2)$ satisfies $\nabla\Lnorm[q]=\Lnorm[\Dam q]$ at the moving point $\sast(\tau)$; so Gauss's operator with $\nabla$ in place of $\dd/\dd\tau$, applied to $\Lt$, is the expansion of a total-derivative amplitude, which vanishes by (P3). Conjugation by $\mathrm{Exp}[\dphi/z](f_2(\tau)/f_2(0))^{-1/2}$ turns $\nabla$ into $\dd/\dd\tau$. No boundary term occurs.
+\end{proof}
+
+\begin{thm}[{\Lref{Theorem~3.18}: the closed form; formal}]\genusstatus{AI-proposed, unchecked}
+\label{thm:row-closed}
+In $\Cz\fps\tau$, $\Nlap=\Abeta\,\Fhyp\,\Ephi\,\alg$.
+\end{thm}
+
+\begin{proof}[Sketch of proof]
+If $Y=\sum_kY_k\tau^k\in\Cz\fps\tau$ satisfies $\Gauss[Y]=0$, then $(k+1)(k+\gc)Y_{k+1}=(k+\ga)(k+\gb)Y_k$, and $k+\gc=(E+(k+2)z)/z$ is a unit of $\Cz$ because $E\neq0$; so $Y=Y_0\Fhyp$ \Lref{Lemma~3.17}. Apply this to $\Ngauss$, with $\Ngauss(z,0)=\Abeta$, and multiply by $\alg\,\Ephi$.
+\end{proof}
+
+%-------------------------------------------------------------------------------
+\subsection{The Beta constant, the frame-B row, and (F2)}
+\label{sec:row-beta}
+
+The evaluation of $\Abeta$ is the one analytic input of this section and of \cref{sec:lea} (input (i) of \cref{sec:int-inputs}); $h_{\mathsf{v}}$ is the series \eqref{eq:set-h}. \Cref{lem:row-betaphase} is used again in \cref{prop:lea-regrows}, \cref{lem:ide-norm} and \cref{prop:rig-flop}.
+
+\begin{lem}[{\Lref{Lemma~3.19}: the Beta phase; analytic input}]\genusstatus{AI-proposed, unchecked}
+\label{lem:row-betaphase}
+Let $a$, $b$ be indeterminates, or complex numbers with $ab(a+b)\neq0$, and let $f(y)\coloneqq ay+b\log(1-\re^y)$, the phase $a\log U+b\log(1-U)$ in the coordinate $y=\log U$. Then $f$ has a critical point at $y_0\coloneqq\log(a/(a+b))$, with $f''(y_0)=-a(a+b)/b\neq0$, and $\Lnorm[f,1;y_0]=h_{(-a,-b,a+b)}(z)$ in $\bbQ(a,b)\fps z$.
+\end{lem}
+
+\begin{prop}[{\Lref{Proposition~3.20}: the Beta constant; analytic input}]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-beta}
+\begin{equation}
+\label{eq:row-beta}
+\Abeta(z)=\Lnorm[\phi_0,1;\wA/E]=h_{(E,-\alpha_1,-\wA)}(z)\,\frac{E}{E+z}\qquad\text{in }\bbQ(\alpha_1,\wA)\fps z .
+\end{equation}
+\end{prop}
+
+\begin{proof}[Sketch of proof of \cref{lem:row-betaphase,prop:row-beta}]
+Both sides have $z$-coefficients rational in the parameters, so it suffices to take them real and positive. Then $\Bfn(a/z,b/z+1)=\int_{-\infty}^0\re^{f(y)/z}\dd y$ and $\Bfn(\wA/z+1,\alpha_1/z+1)=\int_0^1\re^{\phi_0(s)/z}\dd s$ \cite[5.12.1]{DLMF}, and by Laplace's method \Lref{Lemma~3.11} such an integral is asymptotic, as $z\to0^+$, to $\re^{f(u_0)/z}\big(2\pi z/(-f''(u_0))\big)^{1/2}\Lnorm[f,1;u_0]$ at the maximum $u_0$ of the phase. On the other hand Stirling's series with remainder, applied to $\log\Gamma(a/z)+\log\Gamma(b/z)-\log\Gamma((a+b)/z)$, gives the prefactor $\re^{f(u_0)/z}\big(2\pi z(a+b)/(ab)\big)^{1/2}$ times the exponential of $\sum_k\bk_kz^{2k-1}\big(a^{1-2k}+b^{1-2k}-(a+b)^{1-2k}\big)$, which is $\log h_{(-a,-b,a+b)}$ because $1-2k$ is odd. The shifts of the arguments by $1$ contribute, through $\Gamma(u+1)=u\Gamma(u)$, the factor $b/(a+b)$, independent of $z$, for the lemma, and $\wA\alpha_1/(E(E+z))$ for the proposition, where $(a,b)=(\wA,\alpha_1)$; this factor turns the prefactor into that of Laplace's method, times $E/(E+z)$ in the case of the proposition, the origin of the factor $E/(E+z)$. Uniqueness of asymptotic power series concludes.
+\end{proof}
+
+\begin{cor}[{\Lref{Corollary~3.23}: regularity of the $\tau$-coefficients; formal given \eqref{eq:row-beta}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:row-reg}
+For every $k\geq0$, $\Kcoef_k\coloneqq\coef{\tau^k}(\Fhyp\Ephi\alg)$ and $\Hcoef_k\coloneqq\coef{\tau^k}(\Fhyp\Ephi)$ are rational functions of $z$ with coefficients in $\Kal$, without pole at $z=0$.
+\end{cor}
+
+Indeed $\Kcoef_k=\coef{\tau^k}(\Nlap/\Abeta)$ by \cref{thm:row-closed}, with $\Abeta\in1+z\bbC\fps z$ and $\Nlap\in\bbC\fps z\fps\tau$ (\cref{prop:row-wickrow}); the value of $\Abeta$ is not used here.
+
+\begin{thm}[{\Lref{Theorem~3.24}: the frame-B singular row; formal given \eqref{eq:row-beta}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:row-main}
+In $\bbC\fps z\fps t$, and coefficientwise in $z$ as analytic functions of $t$ near $0$,
+\begin{equation}
+\label{eq:row-main}
+\rr_{0,1}(z;t)=\frac{E}{E+z}\,\Fhyp(z,\tau)\,\Ephi(z,\tau)\,\alg(\tau),\qquad \tau=1-\re^{-t}.
+\end{equation}
+\end{thm}
+
+\begin{proof}[Sketch of proof]
+By \cref{def:set-rows}, \cref{prop:row-wickrow} and \cref{thm:row-closed}, $\rr_{0,1}=\hw^{-1}\hnw\rpt_{0,1}=\hw^{-1}\hnw\Abeta\,\Fhyp\Ephi\alg$, and by \cref{prop:row-beta} and the multiset identity of \cref{lem:set-hmult}, $\hw^{-1}\hnw\Abeta=\hw^{-1}\hnw h_{(E,-\alpha_1,-\wA)}\,E/(E+z)=E/(E+z)$; this is where the class $\bw$ is forced. The passage from $\tau$ to $t$ is the principle (T) of \cref{lem:set-rings}.
+\end{proof}
+
+\begin{cor}[{\Lref{Corollary~3.25}: (F2) at $t=0$}]\genusstatus{AI-proposed, unchecked}
+\label{cor:row-F2}
+$\rr_{0,1}(z;0)=E/(E+z)$. Also $\rpt_{0,1}(z;0)=\Abeta(z)=h_{(E,-\alpha_1,-\wA)}(z)\,E/(E+z)$, and for the row $\rZ_{0,1}=\hnw\rpt_{0,1}$ with the $\cQ=0$ constant, $\rZ_{0,1}(z;0)=\hw(z)\,E/(E+z)$.
+\end{cor}
+
+This is the first half of (F2) of Theorem~A (\cref{thm:int-leaf}). A second, purely formal proof of the regularity, by eikonal and transport equations, and the first order of $\rr_{0,1}$ in $t$ are in \Lref{Lemma~3.26, Proposition~3.27 and Remark~3.28}.

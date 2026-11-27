@@ -1,0 +1,32 @@
+torus: a1 = e1, alpha0 = 1 (e1 = 2/3, e2 = 5/4); CY check alpha0 + a1 + a2 - e1 - e2 = 0
+   (g,d) = (0,1): localization 6/5, prediction P_g d^(2g-3)/(e1 e2) = 6/5  ok [0 s]
+   (g,d) = (0,2): localization 3/20, prediction P_g d^(2g-3)/(e1 e2) = 3/20  ok [0 s]
+   (g,d) = (1,1): localization -289/2880, prediction P_g d^(2g-3)/(e1 e2) = -289/2880  ok [0 s]
+   (g,d) = (1,2): localization -289/5760, prediction P_g d^(2g-3)/(e1 e2) = -289/5760  ok [0 s]
+   (g,d) = (2,1): localization 527047/99532800, prediction P_g d^(2g-3)/(e1 e2) = 527047/99532800  ok [0 s]
+   (g,d) = (2,2): localization 527047/49766400, prediction P_g d^(2g-3)/(e1 e2) = 527047/49766400  ok [0 s]
+   (g,d) = (3,1): localization -565154239/2407897497600, prediction P_g d^(2g-3)/(e1 e2) = -565154239/2407897497600  ok [1 s]
+torus: a1 = e1, alpha0 = -3/7 (e1 = 2/3, e2 = 5/4); CY check alpha0 + a1 + a2 - e1 - e2 = 0
+   (g,d) = (0,1): localization 6/5, prediction P_g d^(2g-3)/(e1 e2) = 6/5  ok [0 s]
+   (g,d) = (0,2): localization 3/20, prediction P_g d^(2g-3)/(e1 e2) = 3/20  ok [0 s]
+   (g,d) = (1,1): localization -289/2880, prediction P_g d^(2g-3)/(e1 e2) = -289/2880  ok [0 s]
+   (g,d) = (1,2): localization -289/5760, prediction P_g d^(2g-3)/(e1 e2) = -289/5760  ok [0 s]
+   (g,d) = (2,1): localization 527047/99532800, prediction P_g d^(2g-3)/(e1 e2) = 527047/99532800  ok [0 s]
+   (g,d) = (2,2): localization 527047/49766400, prediction P_g d^(2g-3)/(e1 e2) = 527047/49766400  ok [0 s]
+   (g,d) = (3,1): localization -565154239/2407897497600, prediction P_g d^(2g-3)/(e1 e2) = -565154239/2407897497600  ok [0 s]
+torus: a2 = e2, alpha0 = 2 (e1 = 2/3, e2 = 5/4); CY check alpha0 + a1 + a2 - e1 - e2 = 0
+   (g,d) = (0,1): localization 6/5, prediction P_g d^(2g-3)/(e1 e2) = 6/5  ok [0 s]
+   (g,d) = (0,2): localization 3/20, prediction P_g d^(2g-3)/(e1 e2) = 3/20  ok [0 s]
+   (g,d) = (1,1): localization -289/2880, prediction P_g d^(2g-3)/(e1 e2) = -289/2880  ok [0 s]
+   (g,d) = (1,2): localization -289/5760, prediction P_g d^(2g-3)/(e1 e2) = -289/5760  ok [1 s]
+   (g,d) = (2,1): localization 527047/99532800, prediction P_g d^(2g-3)/(e1 e2) = 527047/99532800  ok [0 s]
+   (g,d) = (2,2): localization 527047/49766400, prediction P_g d^(2g-3)/(e1 e2) = 527047/49766400  ok [0 s]
+   (g,d) = (3,1): localization -565154239/2407897497600, prediction P_g d^(2g-3)/(e1 e2) = -565154239/2407897497600  ok [0 s]
+torus: generic T_CY (no a_i = e_j), alpha0 = 1, a1 = 1/3 (e1 = 2/3, e2 = 5/4); CY check alpha0 + a1 + a2 - e1 - e2 = 0
+   (g,d) = (0,1): localization 6/5, prediction P_g d^(2g-3)/(e1 e2) = 6/5  ok [0 s]
+   (g,d) = (0,2): localization 3/20, prediction P_g d^(2g-3)/(e1 e2) = 3/20  ok [0 s]
+   (g,d) = (1,1): localization -289/2880, prediction P_g d^(2g-3)/(e1 e2) = -289/2880  ok [0 s]
+   (g,d) = (1,2): localization -289/5760, prediction P_g d^(2g-3)/(e1 e2) = -289/5760  ok [0 s]
+   (g,d) = (2,1): localization 527047/99532800, prediction P_g d^(2g-3)/(e1 e2) = 527047/99532800  ok [0 s]
+   (g,d) = (2,2): localization 527047/49766400, prediction P_g d^(2g-3)/(e1 e2) = 527047/49766400  ok [0 s]
+ALL OK

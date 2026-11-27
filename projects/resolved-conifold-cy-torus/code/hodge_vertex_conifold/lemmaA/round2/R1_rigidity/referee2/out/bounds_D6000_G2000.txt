@@ -1,0 +1,4 @@
+(B2) for 8 <= D <= 6000: 0 violations
+(B1) and total count at sample G (300..2000, all odd D): 0 (B1) violations, 0 count failures
+
+[exited with code 0]

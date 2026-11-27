@@ -1,0 +1,33 @@
+==================== x = 3/7 (c = 10/7)
+  Wick rows done (17 s)
+  E22(0,0)|t=0 = -237/9800;  S4: -237/9800;  note F3: -27/1400  (note F3 agrees at 0 of 21 entries)
+  done x = 3/7 (43 s)
+==================== summary (comparisons / mismatches)
+  (9.1) sigma_-1 = (0, c)                                        7  0
+  (9.1) sigma_k leaf form vs Wick rows                          84  0
+  (9.8) E12 legs vs EdN                                        126  0
+  10.6'                                                          7  0
+  10.6(a)                                                       14  0
+  10.6(b)                                                        7  0
+  CF.4 loops vs EdN                                            126  0
+  Delta_1 leading                                                1  0
+  Delta_2 (10.1)                                                11  0
+  E11 legs: EdN vs Mathematica fit                             116  0
+  E11 symmetric                                                126  0
+  E12 legs: EdN vs Mathematica fit                             116  0
+  E21(b,a) = E12(a,b) (Prop 9.5)                               147  0
+  E22(t=0) = (x^3/c)(1 - h^2 h^2)/(z+w) (10.6(c))               21  0
+  F2                                                             7  0
+  F3: [t^-1] rho E12 = 0 (Prop 9.3(i))                          21  0
+  F3: [t^-1] rho E21 = 0 (needs 10.6(b))                        21  0
+  F3: t^2 rho^2 E11 = O(t^2)                                    42  0
+  K_1 = 1                                                       56  0
+  K_2 = 1                                                       49  0
+  Row 2 at U1                                                   36  0
+  Row 2 at U2 (Lemma 10.5)                                      42  0
+  V1                                                            17  0
+  W1 = 0 at roots                                               18  0
+  orthogonality (I5)                                            56  0
+  roots                                                         18  0
+  total comparisons: 1292 (x = 3/7)
+  all comparisons exact

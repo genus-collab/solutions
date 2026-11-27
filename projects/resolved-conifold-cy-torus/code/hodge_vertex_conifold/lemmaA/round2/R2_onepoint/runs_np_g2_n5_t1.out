@@ -1,0 +1,22 @@
+tau=1 g=2 mu=(3,3,3,3,3): xy 1004985/32  engine -  (no data)
+tau=1 g=2 mu=(3,3,3,3,2): xy 551667/40  engine -  (no data)
+tau=1 g=2 mu=(3,3,3,3,1): xy 244053/40  engine -  (no data)
+tau=1 g=2 mu=(3,3,3,2,2): xy 214149/40  engine -  (no data)
+tau=1 g=2 mu=(3,3,3,2,1): xy 41151/20  engine -  (no data)
+tau=1 g=2 mu=(3,3,3,1,1): xy 10593/16  engine -  (no data)
+tau=1 g=2 mu=(3,3,2,2,2): xy 139603/80  engine -  (no data)
+tau=1 g=2 mu=(3,3,2,2,1): xy 8611/16  engine -  (no data)
+tau=1 g=2 mu=(3,3,2,1,1): xy 4731/40  engine -  (no data)
+tau=1 g=2 mu=(3,3,1,1,1): xy 357/40  engine -  (no data)
+tau=1 g=2 mu=(3,2,2,2,2): xy 20761/48  engine -  (no data)
+tau=1 g=2 mu=(3,2,2,2,1): xy 345/4  engine -  (no data)
+tau=1 g=2 mu=(3,2,2,1,1): xy 21/8  engine -  (no data)
+tau=1 g=2 mu=(3,2,1,1,1): xy -161/32  engine -  (no data)
+tau=1 g=2 mu=(3,1,1,1,1): xy -45/32  engine -  (no data)
+tau=1 g=2 mu=(2,2,2,2,2): xy 1537/24  engine -  (no data)
+tau=1 g=2 mu=(2,2,2,2,1): xy 11/24  engine -  (no data)
+tau=1 g=2 mu=(2,2,2,1,1): xy -119/32  engine -  (no data)
+tau=1 g=2 mu=(2,2,1,1,1): xy -25/32  engine -  (no data)
+tau=1 g=2 mu=(2,1,1,1,1): xy 0  engine -  (no data)  [range]
+tau=1 g=2 mu=(1,1,1,1,1): xy 0  engine -  (no data)  [range]
+total 21, mismatches 0, homogeneity violations 0

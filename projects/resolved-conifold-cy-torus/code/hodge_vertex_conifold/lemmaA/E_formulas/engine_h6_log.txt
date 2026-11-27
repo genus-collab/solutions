@@ -1,0 +1,3 @@
+genus 6 r=1: 17 tuples, cumulative time 237.1 s
+genus 6 r=2: 90 tuples, cumulative time 245.9 s
+genus 6 r=3: 274 tuples, cumulative time 256.6 s

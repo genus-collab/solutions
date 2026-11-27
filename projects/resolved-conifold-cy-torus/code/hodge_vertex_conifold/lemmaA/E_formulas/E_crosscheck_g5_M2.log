@@ -1,0 +1,17 @@
+genus 5 lambda_5 lambda_4 lambda_3 =     1
+----------
+2554675200 (Faber:     1
+----------
+2554675200)
+genus 5 psi^4 lambda_5 lambda_4 =    1
+--------
+63866880 (Getzler-Pandharipande:    1
+--------
+63866880)
+genus 5, R = {4}: engine prediction CONFIRMED; value 0   [95 s]
+genus 5, R = {2, 3}: engine prediction CONFIRMED; value 0   [432 s]
+genus 5, R = {3, 4}: engine prediction CONFIRMED; value 0   [432 s]
+genus 5, R = {3, 3, 3}: engine prediction CONFIRMED; value 0   [1814 s]
+genus 5, R = {4, 6}: engine prediction CONFIRMED; value non-zero   [1814 s]
+done
+M2 exit 0 after 1840 s

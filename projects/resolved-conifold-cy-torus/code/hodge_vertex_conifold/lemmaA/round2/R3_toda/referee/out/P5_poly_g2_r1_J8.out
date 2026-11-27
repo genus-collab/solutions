@@ -1,0 +1,17 @@
+P5 G=2 R=() EVEN [target level D(R+5)=4, excess -2] zero polynomial
+P5 G=2 R=() ODD  [target level D(R+5)=4, excess -2] zero polynomial
+P5 G=2 R=(2) EVEN [target level D(R+5)=5, excess -3] zero polynomial
+P5 G=2 R=(2) ODD  [target level D(R+5)=5, excess -3] zero polynomial
+P5 G=2 R=(3) EVEN [target level D(R+5)=6, excess -4] zero polynomial
+P5 G=2 R=(3) ODD  [target level D(R+5)=6, excess -4] zero polynomial
+P5 G=2 R=(4) EVEN [target level D(R+5)=7, excess -5] zero polynomial
+P5 G=2 R=(4) ODD  [target level D(R+5)=7, excess -5] zero polynomial
+P5 G=2 R=(5) EVEN [target level D(R+5)=8, excess -6] zero polynomial
+P5 G=2 R=(5) ODD  [target level D(R+5)=8, excess -6] zero polynomial
+P5 G=2 R=(6) EVEN [target level D(R+5)=9, excess -7] zero polynomial
+P5 G=2 R=(6) ODD  [target level D(R+5)=9, excess -7] zero polynomial
+P5 G=2 R=(7) EVEN [target level D(R+5)=10, excess -8] zero polynomial
+P5 G=2 R=(7) ODD  [target level D(R+5)=10, excess -8] zero polynomial
+P5 G=2 R=(8) EVEN [target level D(R+5)=11, excess -9] zero polynomial
+P5 G=2 R=(8) ODD  [target level D(R+5)=11, excess -9] zero polynomial
+SUMMARY mode=data eq=P5: 16 relations, 0 failures (table values used 84, engine values 0)

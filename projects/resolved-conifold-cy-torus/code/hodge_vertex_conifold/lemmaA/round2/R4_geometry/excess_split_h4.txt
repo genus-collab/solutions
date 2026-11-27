@@ -1,0 +1,38 @@
+k=0: Lambda^vee(1) e_k vs Omega^(k): equal
+k=1: Lambda^vee(1) e_k vs Omega^(k): equal
+k=2: Lambda^vee(1) e_k vs Omega^(k): equal
+k=3: Lambda^vee(1) e_k vs Omega^(k): equal
+k=4: Lambda^vee(1) e_k vs Omega^(k): equal
+genus 4, N = 10.  k, j, EXCESS part E, NON-EXCESS part NE, total
+k=0 j= 2  E=0  NE=0  tot=0
+k=0 j= 3  E=0  NE=0  tot=0
+k=0 j= 4  E=0  NE=0  tot=0
+k=0 j= 5  E=0  NE=0  tot=0
+k=0 j= 6  E=0  NE=0  tot=0
+k=0 j= 7  E=-1967/276480  NE=0  tot=-1967/276480
+k=1 j= 2  E=0  NE=0  tot=0
+k=1 j= 3  E=0  NE=0  tot=0
+k=1 j= 4  E=0  NE=0  tot=0
+k=1 j= 5  E=0  NE=0  tot=0
+k=1 j= 6  E=0  NE=0  tot=0
+k=1 j= 7  E=0  NE=433/80640  tot=433/80640
+k=2 j= 2  E=0  NE=0  tot=0
+k=2 j= 3  E=0  NE=0  tot=0
+k=2 j= 4  E=-1/1260  NE=1/1260  tot=0
+k=2 j= 5  E=1/1728  NE=-1/1728  tot=0
+k=2 j= 6  E=3/128  NE=-3/128  tot=0
+k=2 j= 7  E=-1402513/24883200  NE=12341011/174182400  tot=4673/322560
+k=3 j= 2  E=0  NE=0  tot=0
+k=3 j= 3  E=0  NE=0  tot=0
+k=3 j= 4  E=-61/272160  NE=61/272160  tot=0
+k=3 j= 5  E=677/2177280  NE=-677/2177280  tot=0
+k=3 j= 6  E=-27617/1088640  NE=27617/1088640  tot=0
+k=3 j= 7  E=-10073/1244160  NE=121091/8709120  tot=281/48384
+k=4 j= 2  E=0  NE=0  tot=0
+k=4 j= 3  E=0  NE=0  tot=0
+k=4 j= 4  E=0  NE=0  tot=0
+k=4 j= 5  E=127/7257600  NE=-127/7257600  tot=0
+k=4 j= 6  E=12749/3628800  NE=-12749/3628800  tot=0
+k=4 j= 7  E=4810087/154828800  NE=-4718647/154828800  tot=127/215040
+
+[exited with code 0]

@@ -1,0 +1,3 @@
+tau=3/7: 84 Norlund-identity checks (j<=6, m<=6), 0 mismatches
+tau=-13/5: 70 Norlund-identity checks (j<=5, m<=6), 0 mismatches
+tau=2: 70 Norlund-identity checks (j<=5, m<=6), 0 mismatches

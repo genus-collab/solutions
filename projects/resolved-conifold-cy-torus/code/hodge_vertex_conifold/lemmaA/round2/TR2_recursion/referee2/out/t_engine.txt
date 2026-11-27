@@ -1,0 +1,13 @@
+tau=2 omega_11 xi-coefs: k0=0 ok  k0=1 ok
+tau=2 omega_03 = -6 ok
+tau=2 Xi_2(3): ok
+tau=2 Xi_3(5): ok
+tau=2 Xi_4(7): ok
+tau=2 g=2 [x^mu]F, mu=1..2: 0 0
+tau=2 g=3 [x^mu]F, mu=1..4: 0 0 0 0
+tau=2 g=4 [x^mu]F, mu=1..6: 0 0 0 0 0 0
+tau=2/1: genus 1,2 one-leaf vs Hodge formulas, j=1..7: all agree
+tau=3/7: genus 1,2 one-leaf vs Hodge formulas, j=1..7: all agree
+tau=-5/3: genus 1,2 one-leaf vs Hodge formulas, j=1..7: all agree
+tau=5/2: genus 1,2 one-leaf vs Hodge formulas, j=1..7: all agree
+tau=1 [x^9]F_5/C(17,8) = -2205/1048576 ok

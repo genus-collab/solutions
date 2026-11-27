@@ -1,0 +1,55 @@
+# Referee 2 (route R2): summary lines of the background runs of 2026-10-31 (full outputs in the files named).
+# All exact (Perl Math::BigRat); TR-free except the EO cross-check at tau = -1/2 (brief s.0 lists it as an allowed cross-check).
+
+## new TR-free engine tables (RefHodge engine copied from E_formulas/referee; eng/t_moments.pl; REF_NCH = 4 for genus 8, 5 for genus 9)
+eng/ref_engine_h8_r1.txt  genus 8 r = 1: 276 ch-monomials, Omega check failures 0, 899 s
+eng/ref_engine_h8_r2.txt  genus 8 r = 2: 1257 s
+eng/ref_engine_h8_r3.txt  genus 8 r = 3: 1157 s
+eng/ref_engine_h9_r1.txt  genus 9 r = 1: 521 ch-monomials, Omega check failures 0, 4159 s
+run_cmp61_h9.out: genus 9: 215 (component, j-power) coefficients of (6.1) vs engine, 0 mismatches; components 0..9; zeros j = 1..16;
+                  gap formula OK at tau = 1, 2, 3, 1/3, -3/7, 5/2
+
+## Theorem 1, n = 1 (ref_xy1.pl) = (6.1) at integer tau: run_xy1_g12.out
+ref_xy1 tau=1..5 g<=12 j<=40: 5 x 480 values (348 non-zero each), mismatches 0
+
+## Theorem 1, n = 2 (RefXY::xi2) vs engine: run_xy2_g7.out, run_xy2_g8.out
+ref_xy2 tau=1 g=7 m<=11: 66 pairs (25 non-zero), asymmetric 0, range violations 0, engine mismatches 0
+ref_xy2 tau=2 g=7 m<=10: 55 pairs (16 non-zero), ..., engine mismatches 0
+ref_xy2 tau=3 g=6 m<=10: 55 pairs (25 non-zero), ..., engine mismatches 0
+ref_xy2 tau=1 g=8 m<=14: 105 pairs (49 non-zero), ..., engine mismatches 0
+ref_xy2 tau=2 g=8 m<=12: 78 pairs (25 non-zero), ..., engine mismatches 0
+
+## Theorem 1, n = 3 (RefXY3::xi3) vs engine: run_xy3.out, run_xy3_g8.out
+ref_xy3 tau=1 g=4 m<=6: 56 triples (40 non-zero), engine mismatches 0
+ref_xy3 tau=2 g=5 m<=6: 56 triples (28 non-zero), engine mismatches 0
+ref_xy3 tau=1 g=6 m<=7: 84 triples (38 non-zero), engine mismatches 0
+ref_xy3 tau=1 g=7 m<=8: 120 triples (50 non-zero), engine mismatches 0
+ref_xy3 tau=1 g=8 m<=8: 120 triples (31 non-zero), engine mismatches 0   (new table eng/ref_engine_h8_r3.txt)
+
+## MV cut-and-join, R = (j), R2 values ((6.1) + Theorem 1 n = 2): run_cj_formula.out
+SUMMARY formula G=7 tau=1 j=1..23: 23 relations, 0 failures
+SUMMARY formula G=8 tau=1 j=1..26: 26 relations, 0 failures
+SUMMARY formula G=9 tau=1 j=1..29: 29 relations, 0 failures
+SUMMARY formula G=10 tau=1 j=1..32: 32 relations, 0 failures
+SUMMARY formula G=8 tau=2 j=1..26: 26 relations, 0 failures
+SUMMARY formula G=10 tau=2 j=1..32: 32 relations, 0 failures
+
+## MV cut-and-join, R = (j1, j2), R2 values ((6.1) + Theorem 1 n = 2, 3): run_cj2_formula_g8.out, run_cj2_formula_g9g10.out
+SUMMARY formula G=8 tau=1 j<=9: 45 relations, 0 failures
+SUMMARY formula G=9 tau=1 j<=11: 66 relations, 0 failures
+SUMMARY formula G=10 tau=1 j<=12 (j1 >= 10): 33 relations, 0 failures
+
+## full DJKM Hirota (KP) equations of the MV tau function at the dilaton point, W = 4, R = (j), j = 2G-3..2G+3: kp/run_hirota_*.out
+engine values (validation): G=6 tau=3/2: 21 equations, 0 failures; G=7 tau=3/2: 21 equations, 0 failures (15-21 non-zero terms each)
+R2 values: G=7, 8, 9, 10 at tau=1: 21 equations each (15-21 non-zero individual terms each), 0 failures
+
+## Route A KP ranks, rerun (kp/): genus 8 reduced system: 104 unknowns, 14472 equations, rank 104, nullity 0 (75 s);
+##                                genus 9 reduced system: 135 unknowns, 33887 equations, rank 135, nullity 0 (303 s)
+
+## exact EO recursion on C_{-1/2} (tr/status_trhalf.pl 17 9 10, JMAX = 41, 3286 s) vs (6.1): run_cmp_trhalf_g9.out
+tau=-1/2 g=2..9: 168 odd j compared, mismatches 0 (genus 9: 21 values, 13 non-zero)
+
+## TR-free Lemma A at genus 8, every component (ref_mirr_engine.pl / ref_mirr_engine_fast.pl on the new tables)
+genus 8 r=1: 126 (R, component) values in the range D <= 13, 0 non-zero; first layer D = 14: 9 of 9 component values non-zero
+genus 8 r=2: 504 values in the range, 0 non-zero; first layer: 72 of 72 non-zero
+genus 8 r=3: 1107 values in the range, 0 non-zero; first layer: 216 of 216 non-zero   (run_mirr_h8_r3.out)

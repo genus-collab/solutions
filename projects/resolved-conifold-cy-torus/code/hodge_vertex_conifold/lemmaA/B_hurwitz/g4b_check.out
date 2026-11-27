@@ -1,0 +1,14 @@
+genus 4 R=(2,2,2) D=3: k=0 component of the Hodge value 0 | Hurwitz/B2 - (no Hurwitz run)
+genus 4 R=(2,2,3) D=4: k=0 component of the Hodge value 0 | Hurwitz/B2 - (no Hurwitz run)
+genus 4 R=(2,2,4) D=5: k=0 component of the Hodge value 0 | Hurwitz/B2 - (no Hurwitz run)
+genus 4 R=(2,3,3) D=5: k=0 component of the Hodge value 0 | Hurwitz/B2 - (no Hurwitz run)
+genus 4 R=(2,2,5) D=6: k=0 component of the Hodge value -25/144 | Hurwitz/B2 -25/144 ok
+genus 4 R=(2,3,4) D=6: k=0 component of the Hodge value -4/25 | Hurwitz/B2 -4/25 ok
+genus 4 R=(3,3,3) D=6: k=0 component of the Hodge value -1003/6400 | Hurwitz/B2 -1003/6400 ok
+genus 4 R=(2,2,2,2) D=4: k=0 component of the Hodge value 0 | Hurwitz/B2 0 ok
+genus 4 R=(2,2,2,3) D=5: k=0 component of the Hodge value 0 | Hurwitz/B2 - (no Hurwitz run)
+genus 4 R=(2,2,2,4) D=6: k=0 component of the Hodge value -736/675 | Hurwitz/B2 -736/675 ok
+genus 4 R=(2,2,3,3) D=6: k=0 component of the Hodge value -417/400 | Hurwitz/B2 -417/400 ok
+genus 4 R=(2,2,2,2,2) D=5: k=0 component of the Hodge value 0 | Hurwitz/B2 0 ok
+genus 4 R=(2,2,2,2,3) D=6: k=0 component of the Hodge value -8 | Hurwitz/B2 -8 ok
+g4b_check: 8 comparisons, 0 mismatches

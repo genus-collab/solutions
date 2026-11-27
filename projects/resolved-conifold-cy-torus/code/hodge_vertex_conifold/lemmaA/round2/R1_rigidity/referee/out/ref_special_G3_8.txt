@@ -1,0 +1,7 @@
+G=3: framings so far 5, differing 0
+G=4: framings so far 16, differing 0
+G=5: framings so far 37, differing 0
+G=6: framings so far 68, differing 0
+G=7: framings so far 113, differing 0
+G=8: framings so far 176, differing 0
+ref_special G=3..8: 176 framings, 0 differ

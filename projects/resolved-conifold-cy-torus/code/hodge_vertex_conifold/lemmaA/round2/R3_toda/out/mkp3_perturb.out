@@ -1,0 +1,14 @@
+equation k=3: (1)[A;;u=1][A;2;u=0] + (-2)[A;3;u=0] + (1/6)[A;;u=1][A;;u=1][A;;u=1] + (1/2)[A;;u=1][S;;u=2] + (1/6)[A;;u=3] + (1)[S;2;u=1]
+k=3 G=2 R={} EVEN [R+3: D=2 excess=0] OK
+k=3 G=2 R={} ODD  [R+3: D=2 excess=0] OK
+k=3 G=2 R={2} EVEN [R+3: D=3 excess=-1] OK
+k=3 G=2 R={2} ODD  [R+3: D=3 excess=-1] OK
+k=3 G=2 R={3} EVEN [R+3: D=4 excess=-2] FAIL -8424/20588575 -3861/2560 4/81
+k=3 G=2 R={3} ODD  [R+3: D=4 excess=-2] FAIL -8424/144120025 -11583/10240 -10/243
+k=3 G=2 R={4} EVEN [R+3: D=5 excess=-3] OK
+k=3 G=2 R={4} ODD  [R+3: D=5 excess=-3] OK
+k=3 G=2 R={5} EVEN [R+3: D=6 excess=-4] OK
+k=3 G=2 R={5} ODD  [R+3: D=6 excess=-4] OK
+k=3 G=2 R={6} EVEN [R+3: D=7 excess=-5] OK
+k=3 G=2 R={6} ODD  [R+3: D=7 excess=-5] OK
+SUMMARY k=3: 12 relations, 2 failures

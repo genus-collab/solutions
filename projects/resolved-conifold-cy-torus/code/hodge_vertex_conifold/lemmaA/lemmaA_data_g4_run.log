@@ -1,0 +1,7 @@
+MV table genus 4, l = 1 [2 s]
+MV table genus 4, l = 2 [4 s]
+MV table genus 4, l = 3 [11 s]
+Q table genus 4, r = 1 [11 s]
+Q table genus 4, r = 2 [12 s]
+psi table genus 4: 156 entries [12 s]
+total 12 s

@@ -1,0 +1,5 @@
+genus 3 (reduced KP system, 11 samples): 9 one-leaf unknowns, 24 equations, rank 3, nullity 6; one-leaf coefficients not all pivots for t = 2 3 4 (indicative)
+genus 4 (reduced KP system, 12 samples): 20 one-leaf unknowns, 152 equations, rank 14, nullity 6; one-leaf coefficients not all pivots for t = 5 6 (indicative)
+genus 5 (reduced KP system, 13 samples): 35 one-leaf unknowns, 621 equations, rank 35, nullity 0
+genus 6 (reduced KP system, 14 samples): 54 one-leaf unknowns, 2026 equations, rank 54, nullity 0
+genus 7 (reduced KP system, 15 samples): 77 one-leaf unknowns, 5709 equations, rank 77, nullity 0

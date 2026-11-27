@@ -1,0 +1,14 @@
+NOTE (main session, 2026-10-31 12:02). The first versions of the tables in this folder (written 11:12-11:58) were WRONG: they
+contained unevaluated Witten-Kontsevich symbols (graphs.m had not been loaded because the script ran from lemmaA\). If you parsed
+any table before 12:01, discard what you derived from it.
+
+ALL tables were regenerated correctly at 12:01:41-12:01:43 (lemmaA\lemmaA_data.wls now runs from the project folder and aborts if
+any unevaluated symbol remains; every file was checked to be free of them). Current contents:
+  psi_g1.txt (n <= 5), psi_g2.txt (n <= 5), psi_g3.txt (n <= 4);  mv_g<g>_l<l>.txt for g = 1, 2, 3 and l = 1, 2, 3;
+  q_g2_r1, q_g2_r2, q_g3_r1, q_g3_r2.
+Spot check: mv_g1_l1 = (1 + x + m1 x + x^2)/(24 x (1 + x)^2) = (1/c)[<Omega_1>_1 + (m/c)<tau_1>_1], as it must be.
+The older data in the project folder (hvc_multiprobe_out.txt, hvc_multiprobe_g4_out.txt, hvc_multiprobe_g4b_out.txt,
+hvc_which_class_out.txt) were always correct.
+Larger tables (higher genus, more points) are cheap now: ask the main session (requested_checks) if you need them.
+
+ADDED 12:05: genus-4 tables mv_g4_l1..3, q_g4_r1, q_g4_r2, psi_g4 (n <= 3), same format (lemmaA\lemmaA_data_g4.wls, 12 s).

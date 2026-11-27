@@ -1,0 +1,15 @@
+  G=5 D=3: Z1=2, forced new points=6, total 8, need 4: closed
+  G=5 D=5: Z1=6, forced new points=0, total 6, need 4: closed
+  G=5 D=7: Z1=13, forced new points=0, total 13, need 4: closed
+ref_forcing G=5 p=1000000007: Lemma 8.1 row spaces at 10 framings, 0 differ; forcing inside hypotheses: 1 of 1 forced; outside: 16 of 23 forced; odd polar orders non-zero: 0; 0s
+  G=6 D=3: Z1=2, forced new points=6, total 8, need 5: closed
+  G=6 D=5: Z1=6, forced new points=8, total 14, need 5: closed
+  G=6 D=7: Z1=13, forced new points=0, total 13, need 5: closed
+  G=6 D=9: Z1=22, forced new points=0, total 22, need 5: closed
+ref_forcing G=6 p=1000000007: Lemma 8.1 row spaces at 15 framings, 0 differ; forcing inside hypotheses: 1 of 1 forced; outside: 35 of 49 forced; odd polar orders non-zero: 0; 1s
+  G=7 D=3: Z1=2, forced new points=8, total 10, need 6: closed
+  G=7 D=5: Z1=6, forced new points=8, total 14, need 6: closed
+  G=7 D=7: Z1=13, forced new points=10, total 23, need 6: closed
+  G=7 D=9: Z1=22, forced new points=0, total 22, need 6: closed
+  G=7 D=11: Z1=31, forced new points=0, total 31, need 6: closed
+ref_forcing G=7 p=1000000007: Lemma 8.1 row spaces at 22 framings, 0 differ; forcing inside hypotheses: 4 of 4 forced; outside: 61 of 91 forced; odd polar orders non-zero: 0; 5s

@@ -1,0 +1,4 @@
+tau=1 Xi_5(8) = 0  (TR normalisation sigma^(1-g) x this = 0)
+tau=1 Xi_5(9) = -2205/65536  (TR normalisation sigma^(1-g) x this = -2205/1048576)
+tau=1 Xi_6(10) = 0  (TR normalisation sigma^(1-g) x this = 0)
+tau=1 Xi_6(11) = -297675/1048576  (TR normalisation sigma^(1-g) x this = -297675/33554432)

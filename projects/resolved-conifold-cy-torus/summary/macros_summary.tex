@@ -1,0 +1,196 @@
+% macros_summary.tex: notation macros of the abridged version, copied from the long version
+% (main.tex and the local macros of its section files).
+%-------------------------------------------------------------------------------
+% Fields and rings
+\newcommand{\Kal}{\bbK_{\alpha}}               % Q(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)
+\newcommand{\KCY}{\bbK_{\mathrm{CY}}}          % Q(\alpha_0,\alpha_1,\alpha_2,\epsilon_1), \epsilon_2 = E - \epsilon_1
+\newcommand{\Kred}{\bbK}                       % Q(\alpha_1,\alpha_2,\epsilon_1) (a_0-adic arguments)
+\newcommand{\Kthree}{\bbK_{3}}                 % Q(\alpha_1,\alpha_2,\epsilon_1) as the function field of \Tthree
+\newcommand{\Cz}{\bbC\lser{z}}                 % formal Laurent series in z
+\newcommand{\Rz}{\mathsf{R}_{z}}               % \Cz((\tau))
+\newcommand{\Rzo}{\mathsf{R}_{z}^{\circ}}      % \bbC[[z]]((\tau))
+\newcommand{\Oan}{\mathscr{O}}                 % convergent power series in t (or \tau)
+\newcommand{\Man}{\mathscr{M}}                 % meromorphic germs
+\newcommand{\QA}{\mathsf{QA}}                  % quadratic algebra K(\cQ)[U]/(\Pq)
+\newcommand{\RRing}{\mathbf{R}}                % \Kal[[t]] (Hodge side)
+\newcommand{\Ccov}{\mathcal{C}}                % double cover \mathsf{y}^2 = \Disc(\cQ)
+\newcommand{\ydc}{\mathsf{y}}                  % \ydc^2 = \Disc(\cQ)
+
+%-------------------------------------------------------------------------------
+% Base and genus-zero data
+\newcommand{\thQ}{\theta_{\cQ}}                % \cQ d/d\cQ = d/dt
+\newcommand{\thU}{\theta_{U}}                  % U d/dU
+\newcommand{\Pq}{\mathsf{P}}                   % \Pq(U) = \wB\cQ U^2 - (\alpha_0 + \cQ(\alpha_1-\alpha_2))U - \alpha_2
+\newcommand{\Ns}{\mathsf{N}}                   % \Ns(s) = \wB\tau s^2 - (E+\alpha_0\tau)s + \wA
+\newcommand{\sast}{s^{\ast}}                   % singular root of \Ns
+\newcommand{\stil}{\tilde{s}}                  % regular root of \Ns
+\newcommand{\Lv}{\mathsf{L}}                   % eigenvalue function \Lv(U); \Lv_i = \Lv(U_i)
+\newcommand{\qprod}{\circ}                     % quantum product
+\newcommand{\eid}{\mathfrak{e}}                % idempotents
+\newcommand{\fid}{\mathfrak{f}}                % normalised idempotents \Delta_i^{1/2}\eid_i
+\newcommand{\Lsum}{\mathsf{S}}                 % \Lv_1 + \Lv_2 = E/\tau - \alpha_0
+\newcommand{\Lprod}{\mathsf{\Pi}}              % \Lv_1\Lv_2 = \alpha_1\alpha_2/\tau
+\newcommand{\lrem}{\ell}                       % \lrem(t) = \Lv_1 - E/t
+\newcommand{\muq}{\mu}                         % E/\tau - \wA
+\newcommand{\omq}{\omega}                      % (E+z)/\tau - (\wA+z)
+\newcommand{\Aop}{\bbA}                        % matrix of the quantum differential equation on covectors
+\newcommand{\chiv}{\boldsymbol{\chi}}          % \chiv_i = (1,\Lv_i)
+\newcommand{\pim}{\varpi}                      % \pim(a) = \langle a,\chiv_2\rangle
+\newcommand{\Thf}{\Theta}                      % \Delta_2/(\Lv_2-\Lv_1)
+\newcommand{\Pg}{\mathsf{P}_{g}}               % [t^{2g}] \epsilon_1\epsilon_2 t^2/(4\sinh(\epsilon_1 t/2)\sinh(\epsilon_2 t/2))
+\newcommand{\Ph}[1]{\mathsf{P}_{#1}}           % \Ph{h} for other genera
+\newcommand{\gapg}{\mathrm{gap}_g}
+\newcommand{\Ssh}{\mathsf{S}_{\circ}}          % \Ssh(y) = y/(2\sinh(y/2))
+\newcommand{\Aeul}{\cA}                        % \Aeul_n(\cQ): \Li_{-n} = \Aeul_n/(1-\cQ)^{n+1}
+
+%-------------------------------------------------------------------------------
+% Euler integral, Laplace calculus, Gauss
+\newcommand{\dphi}{\breve{\phi}}               % \phi_\tau(\sast) - \phi_0(\wA/E)
+\newcommand{\alg}{\mathfrak{a}}                % the unit \alg(\tau) with \alg(0)=1
+\newcommand{\Acal}{\mathscr{A}}                % ring of formal sums \sum K_{pq} v^p z^q
+\newcommand{\gauss}[2]{\langle\!\langle #1\rangle\!\rangle_{#2}}   % Gaussian functional
+\newcommand{\Lnorm}{\mathscr{N}}               % \Lnorm[f,a;u_0]: Gaussian-normalised formal Laplace expansion
+\newcommand{\Lhat}{\widehat{\mathscr{N}}}      % normalised to leading coefficient 1
+\newcommand{\Lfull}{\mathscr{N}^{\mathrm{full}}}
+\newcommand{\Rr}{\mathsf{Rr}}                  % remainder of the phase, \Rr_f(v)
+\newcommand{\Nlap}{\mathcal{N}}                % \Nlap(z,\tau) = \Lhat[\phi_\tau,(1-\tau s)^{-1};\sast]
+\newcommand{\wick}{\mathsf{wick}}              % \wick_m: Wick polynomials
+\newcommand{\Abeta}{\mathsf{A}_{\beta}}        % \Lnorm[\phi_0,1;\wA/E]
+\newcommand{\ga}{\mathsf{a}}                   % 1 + \alpha_2/z
+\newcommand{\gb}{\mathsf{b}}                   % 1 + \wA/z
+\newcommand{\gc}{\mathsf{c}}                   % 2 + E/z
+\newcommand{\Gauss}{\mathsf{Gauss}}            % Gauss's operator
+\newcommand{\Fhyp}{\mathsf{F}}                 % {}_2F_1(\ga,\gb;\gc;\tau)
+\newcommand{\Ephi}{\mathsf{X}}                 % \exp(-\dphi/z); coefficients \Ephi_n
+\newcommand{\Hcoef}{\mathsf{H}}                % \Hcoef_n = [\tau^n](\Fhyp\Ephi)
+\newcommand{\Kcoef}{\mathsf{K}}                % \Kcoef_n = [\tau^n](\Fhyp\Ephi\alg)
+\newcommand{\Dz}{\mathsf{D}_{z}}               % z d/dt
+\newcommand{\Dd}{\mathsf{D}}                   % abstract derivation symbol in the operator identity
+\newcommand{\Dop}{\mathsf{D}}                  % \Dop_i = d/dt - \Delta_i'/(2\Delta_i)
+\newcommand{\Eik}{\mathsf{Eik}}
+\newcommand{\Ptr}{\mathsf{P}_{\mathrm{tr}}}
+\newcommand{\Rtr}{\mathsf{R}_{\mathrm{tr}}}
+\newcommand{\Ttr}{\mathsf{T}_{\mathrm{tr}}}
+\newcommand{\Sph}{\mathsf{S}_{\phi}}           % eikonal phase
+\newcommand{\Phia}{\Phi}                       % transport amplitude
+\newcommand{\Ddisc}{\mathbb{D}}                % discs \Ddisc, \Ddisc', \Ddisc''
+\newcommand{\Pol}{\mathrm{Pol}}                % \Pol_n(p)
+\newcommand{\wrk}{\mathsf{w}}                  % \wrk_k = \tau^k \cW_k(U_1)  (\wr is the wreath-product symbol)
+\newcommand{\zq}{\zeta}                        % \tau e^{\dphi/E}
+\newcommand{\amp}{\mathsf{m}}                  % amplitude of a Laplace expansion (s03, s04)
+\newcommand{\Dam}{\mathsf{D}_{\mathrm{am}}}     % \Dam q = d_tau q + q (d_tau f)/z (s03, s04)
+\newcommand{\sQ}{\mathsf{s}}                    % 1/\cQ, the local coordinate at \cQ = \infty (s02, s07, appendix; not the Euler variable)
+
+%-------------------------------------------------------------------------------
+% Rows, factors, graph sums (one frame: frame B; point-frame objects carry a superscript pt)
+\newcommand{\rpt}{\mathrm{r}^{\mathrm{pt}}}    % \rpt_{0,i}: point-frame identity row
+\newcommand{\rZ}{\mathrm{r}^{Z}}               % \rZ_{0,i} = h_{\nw}\rpt_{0,i}: the row of R_Z
+\newcommand{\rr}{\mathrm{r}}                   % \rr_{a,i}: frame-B rows
+\newcommand{\vv}{\mathbf{r}}                   % \vv_i = (\rr_{0,i},\rr_{1,i})
+\newcommand{\Rm}{\mathsf{R}}                   % R-matrix at generic weights
+\newcommand{\RZ}{\mathsf{R}_{Z}}               % R-matrix with rows \rZ
+\newcommand{\RB}{\mathsf{R}'}                  % frame-B R-matrix \RZ h_{\bw}^{-1}
+\newcommand{\hw}{h_{\bw}}                      % h_{(E,-\epsilon_1,-\epsilon_2)}
+\newcommand{\hnw}{h_{\nw}}                     % h_{(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)}
+\newcommand{\hreg}{h_{\mathrm{reg}}}           % h_{(\alpha_1,\alpha_2,\wA,\wB,-E,-E)}
+\newcommand{\bk}{\mathsf{b}}                   % \bk_k = B_{2k}/(2k(2k-1))
+\newcommand{\TFT}{\boldsymbol{\omega}}         % semisimple TFT
+\newcommand{\Rinv}{\mathbf{B}}                 % \Rm^{-1}(\psi)
+\newcommand{\Mdef}{\mathbf{M}}                 % defect matrix of the flatness proof
+\newcommand{\Dil}{\mathsf{Dil}}                % \Dil_i(d) frame-B dilaton factors
+\newcommand{\Edge}{\cE}                        % \Edge_{ij}(m,n) frame-B edge factors
+\newcommand{\Ver}{\mathrm{Ver}}
+\newcommand{\Edg}{\mathrm{Edg}}
+\newcommand{\col}{\mathfrak{c}}                % colouring \col : \Ver(\Gamma) \to \{1,2\}
+\newcommand{\GCont}{\mathrm{Cont}}             % \GCont(\Gamma,\col)
+\newcommand{\Gsum}{\mathscr{G}}                % frame-B Hodge-vertex graph sum \Gsum_g
+\newcommand{\Pij}{\cP}                         % \Pij_{ij}(z,w) = -\langle \vv_i(-z),\vv_j(-w)\rangle
+\newcommand{\Kone}{\mathsf{K}_{1}}             % symplectic constant at idempotent 1
+\newcommand{\Ktwo}{\mathsf{K}_{2}}
+\newcommand{\brow}{\boldsymbol{\sigma}}        % \rho\vv_1(-\psi)
+\newcommand{\Yv}{\mathbf{Y}}                   % t\brow
+\newcommand{\Gk}{\mathsf{G}}                   % \Gk(z;t) = \rho\rr_{0,1}; \Gk_k = [t^k]\Gk
+\newcommand{\gl}{\mathsf{g}}                   % \gl(\psi;t) = \Gk(-\psi;t)
+\newcommand{\Dg}{\mathrm{D}\mathsf{g}}         % d/dt (t\gl)
+\newcommand{\Rk}{\mathsf{V}}                   % \Rk_k = [t^k](z\Gk)
+\newcommand{\Ebar}{\overline{\cE}}             % t^2\rho^2\Edge_{11}
+\newcommand{\Nbar}{\overline{\mathsf{N}}}      % numerator of \Ebar
+\newcommand{\Psh}{\mathfrak{p}}                % \Psh_k = \prod_{i\le k}((k+1)\alpha_2 - iE)((k+1)\wA - iE)
+\newcommand{\Cj}{\mathsf{C}}                   % \Cj_j = \Psh_{j-1}/(j!(j-1)!E^{2j-4})
+\newcommand{\Aleaf}{A}                         % A_j(t) leaf coefficient series
+\newcommand{\Ahat}{\widehat{A}}                % t A_j
+
+%-------------------------------------------------------------------------------
+% Leaves and Hodge side
+\newcommand{\lf}{\boldsymbol{\lambda}}         % \lf_j(\psi) = 1/(E - j\psi)
+\newcommand{\Lsp}{\mathscr{L}}                 % \Lsp_m = span{\lf_1,...,\lf_m}
+\newcommand{\qo}{\mathsf{q}_{\circ}}           % E - E^2\lf_1
+\newcommand{\qt}{\mathsf{q}_{t}}               % dilaton series -\psi\rr_{0,1}(-\psi)
+\newcommand{\Tdil}{T_{\mathrm{dil}}}           % \qo + \psi = -\psi^2/(E-\psi)
+\newcommand{\Fpot}{\mathsf{F}^{\mathrm{pot}}}  % \Fpot_h
+\newcommand{\dbase}{\mathfrak{d}}              % \dbase^s
+\newcommand{\Dom}{\mathfrak{D}}                % neighbourhood of \qo
+\newcommand{\Xiz}{\Xi}                         % \Xiz_h(\msM), scale E
+\newcommand{\Xit}{\Xi^{\tau}}                  % scale-1 integral of [LP2]
+\newcommand{\ZZ}{\mathrm{Z}}                   % \ZZ[h,n] = \Xiz_h(1^n)
+\newcommand{\Mirr}{\mathsf{M}_{\mathrm{irr}}}  % \Mirr(h)
+\newcommand{\dg}{\mathrm{dg}}                  % \dg(\msM) = \sum (j-1)
+\newcommand{\msM}{\mathsf{M}}                  % multiset of integers >= 2
+\newcommand{\msU}{\mathsf{U}}                  % multiset of positive integers
+\newcommand{\tauw}{\tau_{\bw}}                 % -\epsilon_1/E, the scale-1 parameter of [LP2]
+\newcommand{\st}{\sigma_{\!\bw}}               % -\epsilon_1\epsilon_2/E^2
+
+%-------------------------------------------------------------------------------
+% Three-torus and flop
+\newcommand{\xc}{\mathsf{x}}                   % \alpha_1/\alpha_2 on \Tthree
+\newcommand{\cc}{\mathsf{c}}                   % 1 + \xc = E/\alpha_2
+\newcommand{\kap}{\varkappa}                   % \epsilon_1\epsilon_2\alpha_2^4/\alpha_1
+\newcommand{\Zfl}{Z'}                          % the flop
+\newcommand{\Xfl}{X'}
+
+
+%-------------------------------------------------------------------------------
+% Local macros of the section files of the long version
+\providecommand{\pc}{\mathsf{p}}
+\providecommand{\kE}{k_E}
+\providecommand{\kph}{\kappa_{\mathrm{ph}}}
+\providecommand{\Lt}{\Lnorm_{\tau}}
+\providecommand{\Ngauss}{\Nlap_{\mathrm{G}}}
+\providecommand{\Spht}{\mathsf{S}_{\phi,\tau}}
+\providecommand{\Sphtt}{\mathsf{S}_{\phi,\tau\tau}}
+\providecommand{\Abetam}[1]{\mathsf{A}_{\beta,#1}}
+\providecommand{\Bfn}{\mathrm{B}}
+\providecommand{\leaVn}{\mathbf{n}}
+\providecommand{\leaPr}{\mathrm{Pr}}
+\providecommand{\leaPhiF}{\boldsymbol{\Phi}_{\Fhyp}}
+\providecommand{\leaLt}{\Lnorm_{2}}
+\providecommand{\leaDt}{\mathsf{D}_{\stil}}
+\providecommand{\leaDtau}{\mathsf{D}_{\stil,\tau}}
+\providecommand{\leaNtw}{\mathsf{N}_{12}}
+\providecommand{\leaDisc}{\Ddisc_{1}}
+\providecommand{\TFsup}{\mathrm{F}}
+\providecommand{\ideKt}{\widetilde{\bbK}_{\mathrm{CY}}}
+\providecommand{\ideFz}{\bbF_{\circ}}
+\providecommand{\ideone}{\mathbf{1}}
+\providecommand{\ideV}{\mathcal{V}}
+\providecommand{\idePF}{\mathsf{PF}}
+\providecommand{\idekm}{\mathsf{k}_{\mathrm{m}}}
+\providecommand{\ideCh}{\mathcal{X}}
+\providecommand{\ideCurve}{\mathfrak{C}}
+\providecommand{\idesec}{\varsigma}
+\providecommand{\ideLam}{\boldsymbol{\Lambda}}
+\providecommand{\idecan}{\boldsymbol{u}}
+\providecommand{\ideS}{\mathscr{S}}
+\providecommand{\idelg}[1]{\mathrm{a}^{#1}}
+\providecommand{\ideP}{\mathfrak{P}}
+\providecommand{\ideN}{\mathfrak{N}}
+\providecommand{\ideG}{\mathfrak{G}}
+\providecommand{\ideW}{\mathsf{W}_{\Psi}}
+\providecommand{\ideRf}{\mathsf{R}^{\mathrm{f}}}
+\providecommand{\ideY}{\mathsf{Y}}
+\providecommand{\ideZ}{\mathsf{Z}}
+\providecommand{\idesp}{\mathfrak{s}}
+\providecommand{\ideQU}{\mathrm{V}}
+\providecommand{\ideT}{\mathsf{T}_{\!\Rm}}
+\providecommand{\regbra}[2]{\langle #1\mid #2\rangle}
+\providecommand{\regD}{\dg}

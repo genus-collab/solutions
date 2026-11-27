@@ -1,0 +1,2 @@
+G=6 done: inside so far 1 (forced 1, all y forced 1); outside 3 (forced 3)
+ref_forcing G=6..6: inside the hypotheses 1 tuples, y_D forced in 1, all one-leaf values forced in 1; outside 3, forced 3

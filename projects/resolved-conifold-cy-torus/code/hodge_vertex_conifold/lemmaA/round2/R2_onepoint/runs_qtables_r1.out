@@ -1,0 +1,9 @@
+data q-table h=2 r=1 tau=1: total 6, mismatches 0, homogeneity violations 0
+data q-table h=2 r=1 tau=2: total 6, mismatches 0, homogeneity violations 0
+data q-table h=2 r=1 tau=3: total 6, mismatches 0, homogeneity violations 0
+data q-table h=3 r=1 tau=1: total 9, mismatches 0, homogeneity violations 0
+data q-table h=3 r=1 tau=2: total 9, mismatches 0, homogeneity violations 0
+data q-table h=3 r=1 tau=3: total 9, mismatches 0, homogeneity violations 0
+data q-table h=4 r=1 tau=1: total 12, mismatches 0, homogeneity violations 0
+data q-table h=4 r=1 tau=2: total 12, mismatches 0, homogeneity violations 0
+data q-table h=4 r=1 tau=3: total 12, mismatches 0, homogeneity violations 0

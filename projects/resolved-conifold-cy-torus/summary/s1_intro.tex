@@ -1,0 +1,142 @@
+% s1_intro (abridged version). Label prefix: int. The main theorems are stated here exactly as in the long version.
+\section{Introduction}
+\label{sec:int}
+
+This paper is the abridged version of a longer paper with the same title, which we call \emph{the long version} and cite as [L]: a reference such as \Lref{Theorem~4.1} is to the statement with that number in the long version. The statements below are those of the long version; the proofs are replaced by sketches which give the mechanism of each step, and the proofs are in [L]. A few steps of [L] are marked there as written out in more detail than in its sources and still to be checked; they are listed in \cref{sec:evi}.
+
+%-------------------------------------------------------------------------------
+\subsection{The setting}
+\label{sec:int-setting}
+
+Let $X$ be the resolved conifold, the total space of $\cO(-1)\oplus\cO(-1)\to\bbP^1$, and let $Z=X\times\bbC^2$. The five-torus $\Tmax=(\bbC^*)^5$ acts on $Z$ with two fixed points $p_\pm$ on the zero section, with tangent weights $(\alpha_0,\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2)$ at $p_+$ and $(-\alpha_0,\alpha_0+\alpha_1,\alpha_0+\alpha_2,-\epsilon_1,-\epsilon_2)$ at $p_-$: $\alpha_0$ is the weight of the tangent line of $\bbP^1$, $\alpha_1,\alpha_2$ are the weights of the two $\cO(-1)$ summands, and $-\epsilon_1,-\epsilon_2$ those of the two trivial directions. The \emph{Calabi--Yau torus} $\TCY\subset\Tmax$ is the four-torus on which the five tangent weights sum to zero,
+\[
+E\coloneqq\alpha_0+\alpha_1+\alpha_2=\epsilon_1+\epsilon_2 ,
+\]
+and we write $\wA\coloneqq\alpha_0+\alpha_2$, $\wB\coloneqq\alpha_0+\alpha_1$. The equivariant Gromov--Witten invariants $\GW_{g,d}$ of $Z$ in genus $g$ and degree $d[\bbP^1]$ are defined, as in \cite{BS}, by virtual localisation on the proper fixed loci of the moduli spaces of stable maps to $\bbP^1$ (\cref{def:set-inv}); on $\TCY$ they are elements of the function field $\KCY=\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1)$, $\epsilon_2=E-\epsilon_1$. The genus-$g$ series is
+\[
+\sF_g(\cQ)=\sum_{d\geq0}\GW_{g,d}\,\cQ^d ,\qquad \cQ=\re^{t},
+\]
+with the constant-map term $d=0$ included; the series of \cite{BS} runs over $d\geq1$, and the difference is the constant $\sF_g(0)$. The \emph{conifold point} is $\cQ=1$, that is $t=0$, where the two critical points of the superpotential governing the genus-zero theory collide with a logarithmic singularity.
+
+The tool is the Givental--Teleman expression of the higher-genus theory as a sum over stable graphs. On $\TCY$ the point $\cQ=0$ is semisimple (because $\alpha_0\neq0$), the equivariant classes of $Z$ form a semisimple cohomological field theory of rank two, and Teleman's classification writes it as the action of an $R$-matrix on the topological field theory with vertex weights $\Delta_i^{g_v-1}$, $i\in\{1,2\}$. The two idempotents behave very differently at the conifold point: one, the \emph{singular} idempotent (colour $1$), has $\Delta_1\sim-\epsilon_1\epsilon_2E^3/t^2$, the other, the \emph{regular} idempotent (colour $2$), has $\Delta_2$ analytic and non-zero at $t=0$. We write the graph sum in a particular frame, \emph{frame~B}: the $R$-matrix is multiplied on the right by the scalar series $\hw^{-1}$, $\hw=h_{(E,-\epsilon_1,-\epsilon_2)}$, which by Mumford's formula transfers the normalised Hodge class
+\[
+\Hg_{\bw}=\prod_{a=1}^{3}\frac{\Lamv(\bw_a)}{\bw_a^{g_v}},\qquad \bw=(E,-\epsilon_1,-\epsilon_2),\qquad \Lamv(u)=\sum_i(-1)^i\lambda_iu^{g_v-i},
+\]
+onto every vertex. The resulting \emph{frame-B Hodge-vertex graph sum} $\Gsum_g$ (\cref{def:set-graphsum}) is a sum over connected stable graphs of genus $g$ without legs, over colourings of their vertices by $\{1,2\}$, and over decorations, of products of vertex weights, dilaton factors and edge factors, all built from two rows $\rr_{0,i}(z;t)$, $\rr_{1,i}(z;t)$ per idempotent. The class $\bw$ is forced: it is the unique class, up to pairs $(v,-v)$, for which the singular row takes the value $E/(E+z)$ at the conifold point (\cref{lem:set-hmult}, \cref{cor:row-F2}). The rows themselves are normalised stationary-phase expansions of the Euler-type integrand $\re^{\cW/z}\dd U/U$ at the two critical points of the superpotential $\cW$, multiplied by one constant $\hnw=h_{(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)}$ fixed at $\cQ=0$.
+
+%-------------------------------------------------------------------------------
+\subsection{Statements}
+\label{sec:int-statements}
+
+The notation is that of \cref{sec:set}: the non-degeneracy condition (ND) is $\alpha_1\alpha_2\wA\wB\epsilon_1\epsilon_2E\neq0$ (\cref{def:set-ND}), a \emph{weight point with (ND)} is a point of $\mathrm{Lie}(\TCY)$ at which (ND) holds, $\alpha_0=0$ being allowed, and ``at the generic point of $\TCY$'' means ``in $\KCY$''. The frame-B rows and factors are those of \cref{def:set-rows,def:set-factors}; $\rho(t)=(\Delta_1t^2/(-\epsilon_1\epsilon_2E^3))^{-1/2}$ with $\rho(0)=1$; the \emph{leaves} are $\lf_j(\psi)=1/(E-j\psi)$, $j\geq1$, the \emph{leaf spaces} are $\Lsp_m=\mathrm{span}(\lf_1,\dots,\lf_m)$, $\qo=E-E^2\lf_1$, $\qt(\psi)=\sum_{d\geq1}\Dil_1(d)\psi^d$ is the dilaton series of the singular idempotent, and $f_{j,b}(\psi)=\coef{w^b}\Edge_{1j}(\psi,w)$ are the legs (\cref{def:set-rho}); $\tau=1-1/\cQ$, and $\delta$, $\sast$, $\Lv_2$, $\alg$ are the algebraic functions of $\tau$ of \cref{def:set-alg}, \cref{lem:set-eig} and \cref{lem:row-hess}. The first theorem is the structural statement from which everything else follows.
+
+\begin{thm}[{Theorem~A: leaf structure at generic weights; \Lref{Theorems~1.1 and~4.1}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-leaf}
+Let $(\alpha_0,\alpha_1,\alpha_2,\allowbreak\epsilon_1,\epsilon_2)$ be a weight point of $\TCY$ with (ND), or indeterminates with $E=\epsilon_1+\epsilon_2$ imposed. All factors are the frame-B factors at their true idempotents. Then:
+\begin{description}
+\item[(F1)] $\Delta_1=-\epsilon_1\epsilon_2E^3/(t^2\rho^2)$, where $\rho=\tau/(t\alg)$ is analytic at $t=0$ with $\rho(0)=1$, so that $\Delta_1=-(\epsilon_1\epsilon_2E^3/t^2)(1-\uq t/E^2+O(t^2))$, $\uq=(E-2\alpha_1)(E-2\alpha_2)$; $\Delta_2=\epsilon_1\epsilon_2\wB\delta\sast\Lv_2$ is analytic at $t=0$ with $\Delta_2(0)=\epsilon_1\epsilon_2\alpha_1\alpha_2\wA\wB/E\neq0$ and $\Delta_2'(0)=0$.
+\item[(F2)] $\rr_{0,1}(z;0)=E/(E+z)$, and $\rho\,\rr_{1,1}(z;t)=E/t+\alpha_1\alpha_2/(E+z)+O(t)$.
+\item[(F3)] Every frame-B dilaton factor $\Dil_i(d)$ ($i=1,2$, $d\geq1$) and every edge factor $\Edge_{ij}(m,n)$ ($i,j\in\{1,2\}$, $m,n\geq0$) is analytic at $t=0$.
+\item[(L1)] $\coef{t^0}(\rho\qt)=\qo=E-E^2\lf_1$, and $\coef{t^k}(\rho\qt)\in\Lsp_{k+1}$ for every $k\geq1$.
+\item[(L2)] For $j\in\{1,2\}$, every $b\geq0$ and every $k\geq0$, $\coef{t^k}(\rho f_{j,b})\in\Lsp_{k+1}$. Moreover $\Edge_{21}(b,a)=\Edge_{12}(a,b)$, and $\coef{t^k}f_{j,b}\in\Lsp_{k+1}$ as well.
+\item[(L3)] For every $k\geq0$, $\coef{t^k}(\rho^2\Edge_{11}(\psi,\psi'))\in\mathrm{span}\{\lf_i(\psi)\lf_l(\psi'):i,l\geq1,\ (i-1)+(l-1)\leq k\}$, and $\Edge_{11}(a,b)=\Edge_{11}(b,a)$. The same support bound holds for $\coef{t^k}(\rho^e\Edge_{11})$ for every integer $e$.
+\end{description}
+Every membership is an identity of formal power series in $\psi$ (and $\psi'$), valid at every $\psi$-order and every $t$-order; the coefficients are rational functions of the weights, regular on (ND). The bounds in (L1) and (L3) are sharp at generic weights.
+\end{thm}
+
+In words: at the conifold point the vertex weight of the singular idempotent has a double pole with an exactly known unit, every factor is regular, and the $t$-expansion of every rescaled factor at the singular idempotent is \emph{leaf-structured}: the coefficient of $t^k$ is a combination of the simple-pole functions $1/(E-j\psi)$ with $j\leq k+1$, and of their products for loops, with no constant term. The proof is sketched in \cref{sec:row,sec:lea}, where a closed form of every leaf coefficient is also given (\cref{thm:lea-closed}). The proof does not use the Calabi--Yau condition: the frame-B rows depend on $(\alpha_0,\alpha_1,\alpha_2)$ only, and $\epsilon_1\epsilon_2$ enters the factors as an overall constant, so the theorem holds at every weight point of the five-torus with (ND), with $\bw=(E,-\epsilon_1,-\epsilon_2)$ and $E=\alpha_0+\alpha_1+\alpha_2$ (\cref{rmk:lea-cy}). The Calabi--Yau condition enters the main chain once, in Theorem~C below, where it makes $\bw$ a sum-zero triple whose first weight is the leaf scale $E$.
+
+\begin{thm}[{Theorem~B: the graph sum is the potential; \Lref{Theorem~1.2 and Proposition~5.1}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-ident}
+Let $g\geq2$. At the generic point of $\TCY$, $\sF_g$ lies in $\KCY(\cQ)$, is regular at $\cQ=0$ with expansion $\sum_{d\geq0}\GW_{g,d}\cQ^d$ there, and
+\[
+\sF_g=\Gsum_g ,
+\]
+the frame-B Hodge-vertex graph sum \eqref{eq:set-Gsum} with vertex class $\Hg_{\bw}$, $\bw=(E,-\epsilon_1,-\epsilon_2)$, and the frame-B factors of \cref{def:set-rows,def:set-factors}, in which $\RB=\RZ\hw^{-1}$ and $\RZ$ has the rows $\hnw\rpt_{0,i}$, $\nw=(\alpha_1,\wA,-\epsilon_1,-\epsilon_2)$. Each coloured term $\GCont(\Gamma,\col)$ is an element of the function field $\KCY(\Ccov)$ of the double cover $\ydc^2=\Disc(\cQ)$ of $\bbP^1_\cQ$, regular over every $\cQ\notin\{0,1,\infty\}$ with $\Disc(\cQ)\neq0$.
+\end{thm}
+
+The proof is sketched in \cref{sec:ide}. It is an identity in $\KCY(\cQ)$, proved at the generic point of $\TCY$ without any specialisation: the field $\KCY$ embeds in $\bbC$, Teleman's classification applies there, and the $R$-matrix descends to $\KCY\lser{\cQ}$.
+
+\begin{thm}[{Theorem~C: regularity and the polar part; \Lref{Theorem~1.3 and Corollary~6.13}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-reg}
+Fix $g\geq2$. In frame B with $\bw=(E,-\epsilon_1,-\epsilon_2)$, at the generic point of $\TCY$ or at any weight point with (ND):
+\begin{enumerate}
+\item[(a)] every coloured stable graph $(\Gamma,\col)$ of genus $g$ with at least one edge is regular at $t=0$ after summing over decorations;
+\item[(b)] the single-vertex graph is regular at colour $2$, and at colour $1$ its polar part is exactly
+\[
+\gapg\,t^{2-2g},\qquad \gapg\coloneqq(-\epsilon_1\epsilon_2E^3)^{g-1}\ZZ[g,0]=\beta_{2g-2}(\epsilon_1,\epsilon_2)=\frac{(2g-3)!\,\Pg}{\epsilon_1\epsilon_2},
+\]
+with no polar term of order $t^{3-2g},\dots,t^{-1}$; here $\ZZ[g,0]$ is the Hodge integral of \cref{def:set-fpot}, and
+\[
+\Pg=\coef{t^{2g}}\frac{\epsilon_1\epsilon_2\,t^2}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)},\qquad
+\beta_n(\epsilon_1,\epsilon_2)=(n-1)!\,\coef{t^n}\frac{1}{4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2)} ;
+\]
+\item[(c)] hence the expansion of $\Gsum_g$ in $\KCY\lser t$ has polar part exactly $\gapg t^{2-2g}$, and, by \cref{thm:int-ident}, so has the image of $\sF_g$ under $\cQ=\re^t$.
+\end{enumerate}
+\end{thm}
+
+The proof is sketched in \cref{sec:reg}. Parts (a), (b) and the first half of (c) are statements about the decoration sums as defined in \cref{def:set-graphsum}; they rest on \cref{thm:int-leaf}, on the two theorems of the companion paper \cite{LP2} quoted as \cref{thm:reg-L,thm:reg-VI}, and on the string and dilaton equations. The whole polar part of the graph sum sits in the single-vertex graph at the singular colour.
+
+\begin{thm}[{Theorem~D: rigidity; \Lref{Theorems~1.4 and~7.1}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-rig}
+For $g\geq2$, in $\KCY(\cQ)$,
+\[
+\sF_g(\cQ)-\sF_g(0)=\frac{\Pg\,\Li_{3-2g}(\cQ)}{\epsilon_1\epsilon_2},\qquad\text{that is}\qquad \epsilon_1\epsilon_2\,\GW_{g,d}=\Pg\,d^{2g-3}\quad\text{for every }d\geq1,
+\]
+with $\Li_{-n}(\cQ)=\sum_{d\geq1}d^n\cQ^d$. Both sides of the second identity are polynomials in the weights on $\mathrm{Lie}(\TCY)$, so it holds at every point of $\mathrm{Lie}(\TCY)$, including $\alpha_1=\alpha_2$, $E=0$, $\epsilon_1=0$ or $\epsilon_2=0$, and $\alpha_0=0$; in particular $\epsilon_1\epsilon_2\GW_{g,d}$ depends on $(\epsilon_1,\epsilon_2)$ only, symmetrically and through $\epsilon_1^2,\epsilon_2^2$.
+\end{thm}
+
+The proof is sketched in \cref{sec:rig}. In genus $0$ one has $\epsilon_1\epsilon_2\GW_{0,d}=d^{-3}$ at every weight, by the Aspinwall--Morrison formula (\cref{prop:rig-g0}), and in genus $1$ one has $\epsilon_1\epsilon_2\GW_{1,d}=\Ph{1}/d=-(\epsilon_1^2+\epsilon_2^2)/(24d)$ on $\TCY$ (\cref{lem:rig-g1}); the genus-one statement is proved by direct localisation for $d=1$, and for $d\geq2$ it uses, as an input, the formula of \cite{BS} for the resolved conifold on the subtori on which $\alpha_i=\epsilon_j$. Together:
+
+\begin{cor}[{the rigidity conjecture of \cite{BS} for the resolved conifold; \Lref{Corollaries~1.5 and~7.13}}]\genusstatus{AI-proposed, unchecked}
+\label{cor:int-conj}
+For every $d\geq1$ and every $g\geq0$, $\epsilon_1\epsilon_2\,\GW_g(Z,\TCY;d[\bbP^1])=\Pg\,d^{2g-3}$, so that
+\[
+\sum_{g\geq0}\GW_g(Z,\TCY;d[\bbP^1])=\frac1d\Big(2\sinh\frac{d\epsilon_1}2\Big)^{-1}\Big(2\sinh\frac{d\epsilon_2}2\Big)^{-1}.
+\]
+Hence the rigidity conjecture of \cite{BS} holds for $X$ the resolved conifold, every non-zero class $d[\bbP^1]$, and the group $\TCY$; by contravariance it holds for every subtorus of $\TCY$ on which the invariants are defined by localisation (the normal bundle $\Nb$ moving on the fixed loci) and for every connected group whose maximal torus acts on $Z$ through such a subtorus, in particular for every Calabi--Yau subtorus of the five-torus with this property.
+\end{cor}
+
+The three-torus $\Tthree=\{\alpha_0=0\}\cap\TCY$, which contains the fibrewise torus $\TF$ ($\alpha_i=\epsilon_i$) on which the zero section is fixed pointwise, is not covered by the proof of \cref{thm:int-ident} directly, because $\cQ=0$ is not semisimple there; Theorems~A and~C hold on $\Tthree$ by a rescaling of the rows to the fibrewise ones and a ring map applied to the identity of \cref{thm:int-ident} (\cref{cor:rig-3T}), and rigidity on $\Tthree$ is the restriction of \cref{thm:int-rig} by polynomiality.
+
+%-------------------------------------------------------------------------------
+\subsection{Inputs}
+\label{sec:int-inputs}
+
+The results are conditional only on the following cited theorems, each named at the place where it enters.
+\begin{enumerate}
+\item Stirling's series for $\log\Gamma$ with remainder \cite[5.11.1 and Section~5.11(ii)]{DLMF}, together with the Beta integral \cite[5.12.1]{DLMF} and Laplace's method, which is proved in full in \Lref{Lemma~3.11}. This is the only analytic input of Theorem~A; it enters through the normalised expansion of the Beta phase (\cref{lem:row-betaphase}, \cref{prop:row-beta}).
+\item Teleman's classification of semisimple cohomological field theories \cite[Theorem~(2), (1.15), Prop.~8.7(ii)]{Tel12}, with the stability range of \cite[2.17--2.19, (2.15)]{Tel12} as reported there from \cite{Loo96,MW07,Har85,Iva90}; the $R$-matrix action and its group property \cite[Defs.~2.2, 2.13, Prop.~2.14]{PPZ15}; the virtual localisation formula \cite{GP99}; the twisted-theory axioms \cite[App.~1]{CG07}; Mumford's relation and formula \cite{Mum83}, \cite[Section~1.1]{FP00}; the non-vanishing of $\lambda_g\lambda_{g-1}\lambda_{g-2}$ \cite[Theorem~4]{FP00}; and the Aspinwall--Morrison formula \cite[p.~3]{FP00}. These enter Theorem~B; the localisation formula \cite{GP99} enters also Theorem~D (\cref{lem:rig-poly}) and genus $1$ (\cref{lem:rig-g1}), Mumford's relation enters genus $1$, and the Aspinwall--Morrison formula is the genus-zero statement (\cref{prop:rig-g0}). The locators in \cite{Tel12} are those of the arXiv version; they have not been compared with the journal numbering.
+\item The two theorems of the companion paper \cite{LP2}: the vanishing theorem for the Hodge integrals $\Xiz_h(\msM)$ with the class $\Hg_{(1,\tau,-1-\tau)}$ at leaf degree $\dg(\msM)\leq2h-3$ (\cite[Theorem~8.1, Corollaries~8.2--8.4]{LP2}, quoted as \cref{thm:reg-L}), and the value of the single vertex, $(-\epsilon_1\epsilon_2E^3)^{g-1}\ZZ[g,0]=\beta_{2g-2}(\epsilon_1,\epsilon_2)$ (\cite[Theorem~9.1]{LP2}, quoted as \cref{thm:reg-VI}). Both rest on the Mari\~no--Vafa formula \cite[(1)--(3)]{LLZ03}. They enter Theorem~C only. The numbering of the statements of \cite{LP2} quoted here is provisional.
+\item For genus $1$ and $d\geq2$ only, the formula of \cite{BS} for the resolved conifold on the subtori on which $\alpha_i=\epsilon_j$ (\cref{lem:rig-g1}).
+\end{enumerate}
+Which result uses which: Theorem~A uses (i); Theorem~C uses Theorem~A and (iii); Theorem~B uses (i), through the normalisation constant at $\cQ=0$, and (ii); Theorem~D uses Theorems~B and~C and, in the polynomiality lemma, \cite{GP99}; genus $0$ uses the Aspinwall--Morrison formula; genus $1$ uses \cite{GP99}, Mumford's relation and, for $d\geq2$, (iv). None of the arguments uses topological recursion, a mirror theorem, a degeneration argument or a finite-order computation; the one input proved by degeneration is (iv), used in genus $1$ for $d\geq2$ only; the finite-order checks that accompanied the work are summarised in \cref{sec:evi}, and no proof step refers to them.
+
+%-------------------------------------------------------------------------------
+\subsection{What is not claimed}
+\label{sec:int-notclaimed}
+
+\begin{enumerate}
+\item Nothing is claimed off $\TCY$. Theorem~A holds at every weight point of the five-torus with (ND), but Theorem~C does not: off $\TCY$ the class $\bw$ does not sum to zero, the vanishing theorem does not apply, and the coloured graphs with an edge acquire poles at $t=0$ (\cref{sec:evi}, as evidence only).
+\item The constant-map term $\sF_g(0)=\GW_{g,0}$ is not determined. It is a rational function of all five weights \Lref{Remark~7.5}, it depends on $\alpha$, as its computed values in genus $2,3,4$ show \Lref{Remark~7.16}, and it is not part of the conjecture, which concerns non-zero classes. The only statement about it proved in [L] is the flop identity $\sF_g(\infty)=\sF_g(0)$ (\cref{prop:rig-flop}).
+\item The conjecture for group actions on $Z$ that are not conjugate into the five-torus is not addressed.
+\item The proofs of the cited theorems of \cref{sec:int-inputs} are not reproduced, neither here nor in [L]. In particular the two theorems of \cite{LP2} are quoted, with the scale conversion written out (\cref{lem:reg-scale}).
+\end{enumerate}
+
+%-------------------------------------------------------------------------------
+\subsection{Plan and dependencies}
+\label{sec:int-strategy}
+
+\Cref{sec:set} fixes the genus-zero data, the rows and factors of the frame-B graph sum, the leaf spaces and the Hodge-side integrals. \Cref{sec:row} computes the singular row in closed form: in the Euler coordinate $U=1-\tau s$ the two critical points stay separated at $t=0$, the point-frame row is a normalised formal Laplace expansion which satisfies Gauss's hypergeometric equation in $\tau$, and its constant is a Beta integral evaluated by Stirling's series. \Cref{sec:lea} sketches the proof of Theorem~A: the closed form gives (L1) by partial fractions, the quantum differential equation and the self-adjointness of the quantum product give a first-order flow for the loop $\Edge_{11}$ with a rank-one right side of leaf series, hence (L3), and the same calculus at the second critical point gives (L2). \Cref{sec:ide} sketches the proof of Theorem~B: Teleman's $R$-matrix over $\KCY$ is flat, the rows form a second flat symplectic solution, and the two agree once the constants are fixed at $\cQ=0$. \Cref{sec:reg} quotes the two theorems of \cite{LP2} and sketches the proof of Theorem~C: dilaton homogeneity rescales each singular vertex, the leaf structure turns its expansion into Hodge integrals with leaves, and the vanishing theorem kills every polar term except that of the single vertex. \Cref{sec:rig} sketches the proof of Theorem~D, by locating the possible poles of the rational function $\sF_g$ and comparing with the polylogarithm at $\cQ=1$, together with genus $0$ and $1$, \cref{cor:int-conj}, the flop identity and the three-torus. \Cref{sec:evi} summarises the finite-order checks and what remains conditional.
+
+\emph{Dependencies.} \Cref{sec:row} uses \cref{sec:set}; \cref{sec:lea} uses \cref{sec:set,sec:row}; \cref{sec:ide} uses \cref{sec:set} and the Laplace calculus and Beta-phase lemma of \cref{sec:row}, not Theorem~A; \cref{sec:reg} uses \cref{sec:set}, Theorem~A and the cited theorems of \cite{LP2}, and uses Theorem~B only for the second half of \cref{thm:int-reg}(c); \cref{sec:rig} uses Theorems~B and~C, the genus-zero data of \cref{sec:set}, the localisation formula \cite{GP99} and, for the flop identity and the three-torus only, \cref{lem:row-betaphase} and \cref{cor:lea-a0}. Teleman's theorem and the other inputs of item (ii) of \cref{sec:int-inputs} enter only through \cref{sec:ide}.
+
+%-------------------------------------------------------------------------------
+\subsection{Relation to the results of \texorpdfstring{\cite{BS}}{[BS]}}
+\label{sec:int-BS}
+
+The paper \cite{BS} defines the refined invariants by localisation, formulates the rigidity conjecture for a rigid class on $X\times\bbC^2$ under a Calabi--Yau group action, proves the case in which the action on $X$ is itself Calabi--Yau, and proves for the resolved conifold the closed formula of \cref{cor:int-conj} on the subtori on which $\alpha_i=\epsilon_j$, by degeneration of the base curve and the relative invariants of local curves; it also verifies the formula on $\TCY$ by computer in low degree and genus. What is new here is the statement on all of $\TCY$, for every $d\geq1$ and every genus $g\geq2$, genus by genus, and the method: for $g\geq2$ no degeneration is used, and the result comes from the structure of the Hodge-vertex graph sum at the conifold point, that is, from Theorems~A, B and~C. The genus-one input of \cite{BS} at $d\geq2$ is the one place where a result of \cite{BS} is used.
+
+\subsection*{Acknowledgements}
+
+This work was supported by the UKRI grant UKRI2394 and by the Leverhulme Trust grant LIP-2023-007.
