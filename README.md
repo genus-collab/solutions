@@ -38,7 +38,7 @@ In LaTeX use `\genusstatus{<label>}` from `genus.sty` (in `genus-collab/meta`).
 
 ## Strand Leads
 
-- Strand Lead: [Andrea Brini](emailto:a.brini@sheffield.ac.uk) (interim)
+- Strand Lead: [Andrea Brini](mailto:a.brini@sheffield.ac.uk) (interim)
 - Deputy: *to be appointed*
 
 ## Licence
