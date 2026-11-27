@@ -1,0 +1,17 @@
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+pf built
+levels loaded from disk: {0, 1, 2, 3, 4, 5, 6}
+level 0 loaded from disk
+level 1 loaded from disk
+level 2 loaded from disk
+level 3 loaded from disk
+level 4 loaded from disk
+level 5 loaded from disk
+level 6 loaded from disk
+level 7 done: 45 coefficients, 104 u-samples, 924.8 s; max LeafCount 182
+level 8 done: 51 coefficients, 118 u-samples, 1498.4 s; max LeafCount 227
+level 9 done: 57 coefficients, 132 u-samples, 2212.9 s; max LeafCount 282
+saved PFu9.m

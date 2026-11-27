@@ -1,0 +1,38 @@
+---- x = 2/7 ----
+  x = 2/7, [t^0] rho^2 E11 by residue formula: -4/343
+  x = 2/7, [t^1] rho^2 E11 by residue formula: -100/27783, 400/83349 ; 400/83349, 0
+---- x = 3/5 ----
+  x = 3/5, [t^0] rho^2 E11 by residue formula: -27/250
+  x = 3/5, [t^1] rho^2 E11 by residue formula: -27/4000, 9/1000 ; 9/1000, 0
+---- x = 7/3 ----
+  x = 7/3, [t^0] rho^2 E11 by residue formula: -343/54
+  x = 7/3, [t^1] rho^2 E11 by residue formula: -686/675, 2744/2025 ; 2744/2025, 0
+---- x = -5/9 ----
+  x = -5/9, [t^0] rho^2 E11 by residue formula: 125/1458
+  x = -5/9, [t^1] rho^2 E11 by residue formula: 6125/5832, -6125/4374 ; -6125/4374, 0
+checks passed: 644, failed: 0
+number of exact checks per type (all x values together):
+  4  (#-tau) s/(# - tau s) = # - x s
+  4  (x - c L_#)(x - c L_#) = x^# (times t), t^#..t^(N-#)
+  4  Theta = x c dphi' - x
+  4  Theta_# = #, Theta_# = -x^#/c^#, Theta_# = x^# (#-x)^#/(# c^#)
+  24  conifold residue: C^(#)_# = -[t^#] kappa
+  60  conifold residue: S_# = #
+  4  conifold residue: e^(#)_# = #
+  4  conifold residue: e^(#)_# = #x^#(#-x)^#/(#c^#)
+  4  conifold residue: e^(#)_# = -x^#(#-x)^#/(#c^#)
+  4  conifold residue: e^(#)_# = -x^#/#
+  216  conifold residue: e^(#)_(#,#) = il/(c(i+l)) C_il vs Mathematica loop table
+  136  conifold residue: support t^# (#,#)
+  4  critical equation x tau s^# - c s + # = #
+  20  dilaton t^#: Sum_j b_j = # (regular
+  20  dilaton t^#: no lam_#
+  20  g_# = O(psi^-#): Sum_j a_j/j = #
+  4  l_# = c/# - x/c
+  36  printed Theta(t)
+  36  printed dphi(t)
+  4  rho = tau/(t alg) against the stored rho, t^#..t^#
+  4  t (L_# + L_#) = c/u
+  4  t L_# L_# = x/u
+  20  top dilaton coefficient t^#
+  4  x^# - c x L_# = -x^# tau s*^#

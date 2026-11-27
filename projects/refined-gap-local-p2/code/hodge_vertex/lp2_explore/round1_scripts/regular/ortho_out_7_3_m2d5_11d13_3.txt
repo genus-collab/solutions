@@ -1,0 +1,17 @@
+eta^-1 = [7000/3, 0, 0; 0, -630, -63; 0, -63, 0]   (expect eta^00 = 3 e1 e2 alpha^3 = 7000/3, eta^11 = -3 e1 e2 E, eta^12 = -3 e1 e2, eta^22 = 0)
+colour 0: s = (1/20) + (0) w, L = (50/3) + (0) w, L+alpha = (20) + (0) w; |P_a[m]| finite for all m <= 9 (exact Q(omega) values)
+   P0[0..2] = (1/6000) + (0) w | (-53/5040000) + (0) w | (25087/25401600000) + (0) w  (times Sqrt3/sq)
+colour 1: s = (11/20) + (1/4) w, L = (-550/273) + (-100/91) w, L+alpha = (120/91) + (-100/91) w; |P_a[m]| finite for all m <= 9 (exact Q(omega) values)
+   P0[0..2] = (11/6000) + (1/1200) w | (-559/15120000) + (13/604800) w | (-99103/25401600000) + (-24529/5080320000) w  (times Sqrt3/sq)
+colour 2: s = (3/10) + (-1/4) w, L = (-250/273) + (100/91) w, L+alpha = (220/91) + (100/91) w; |P_a[m]| finite for all m <= 9 (exact Q(omega) values)
+   P0[0..2] = (1/1000) + (-1/1200) w | (-221/3780000) + (-13/604800) w | (11771/12700800000) + (24529/5080320000) w  (times Sqrt3/sq)
+Pi_{00}: = delta_ij exactly through z^9
+Pi_{01}: = delta_ij exactly through z^9
+Pi_{02}: = delta_ij exactly through z^9
+Pi_{10}: = delta_ij exactly through z^9
+Pi_{11}: = delta_ij exactly through z^9
+Pi_{12}: = delta_ij exactly through z^9
+Pi_{20}: = delta_ij exactly through z^9
+Pi_{21}: = delta_ij exactly through z^9
+Pi_{22}: = delta_ij exactly through z^9
+ALL ORTHOGONALITY RELATIONS: EXACT  (t0 = -2/5, C1i = 11/13, XX = 3)

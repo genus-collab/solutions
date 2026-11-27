@@ -1,0 +1,171 @@
+% s09_value. Section file; new macros at the top; label prefix: val
+\newcommand{\valSh}{\mathsf{Sh}}               % shift operator f(N) -> f(N+\tau)
+\newcommand{\valb}{\mathsf{b}}                 % 1 - e^{-\tau\mathsf{t}}
+\newcommand{\valBor}{\mathrm{Bor}}             % Borel-type bijection
+\newcommand{\valnab}{\nabla}                   % \valSh - 1
+
+\section{The value of the vertex}
+\label{sec:val}
+
+We compute the integral $\ZZ[g,0]=\Xiz_g(\emptyset)$ of \cref{def:set-fpot}, which is excluded from \cref{thm:van-main}. It is a pure Hodge integral: it depends only on the class $\Hg_{\bw}$ and the scale $E$. For $n\geq 1$ put
+\begin{equation}\label{eq:val-beta}
+\beta_n(a,b)\coloneqq(n-1)!\,[\mathsf{t}^n]\,\frac{1}{4\sinh(a\mathsf{t}/2)\sinh(b\mathsf{t}/2)}.
+\end{equation}
+
+\begin{thm}\genusstatus{AI-proposed, unchecked}\label{thm:val-main}
+For $g\geq 2$,
+\[
+(-\epsilon_1\epsilon_2E^3)^{g-1}\,\ZZ[g,0]=\beta_{2g-2}(\epsilon_1,\epsilon_2).
+\]
+\end{thm}
+
+\begin{rmk}
+At $\epsilon_2=1$, $\epsilon_1=\mathsf{x}$, with $\mathsf{c}=1+\mathsf{x}=E$, this reads
+\[
+(-\mathsf{x}\mathsf{c}^3)^{g-1}\ZZ[g,0]=(2g-3)!\,[\mathsf{t}^{2g}]\frac{\mathsf{t}^2}{4\sinh(\mathsf{x}\mathsf{t}/2)\sinh(\mathsf{t}/2)}=(2g-3)!\,\frac{\mathsf{P}_g(\mathsf{x},1)}{\mathsf{x}},
+\]
+with $\mathsf{S}_{\circ}(z)\coloneqq(z/2)/\sinh(z/2)$ and $\mathsf{P}_g(a,b)\coloneqq[\mathsf{t}^{2g}]\mathsf{S}_{\circ}(a\mathsf{t})\mathsf{S}_{\circ}(b\mathsf{t})$.
+\end{rmk}
+
+We use the normalisation of \cref{sec:van}: $\tau$ an indeterminate, $\st=\tau(1+\tau)$, $\st'=\dd\st/\dd\tau=1+2\tau$, $\Hg_{\bwt}=\Lamv(1)\Lamv(\tau)\Lamv(-1-\tau)/(-\st)^h$, $\Tdil^{\tau}=-\psi^2/(1-\psi)$, and in addition $\mathsf{a}_1\coloneqq-\tau$, $\mathsf{a}_2\coloneqq1+\tau$. So
+\[
+\mathsf{a}_1\mathsf{a}_2=-\st,\qquad\mathsf{a}_1^2+\mathsf{a}_2^2=1+2\st,\qquad\tau\mathsf{a}_2=\st.
+\]
+Put
+\[
+\ZZ_h(\tau)\coloneqq\sum_m\frac{1}{m!}\Bigl\langle\Hg_{\bwt}\prod_k\Tdil^{\tau}(\psi_k)\Bigr\rangle_{h,m}=\Xit_h(\emptyset).
+\]
+
+\begin{thm}\genusstatus{AI-proposed, unchecked}\label{thm:val-tau}
+For every $h\geq 2$, identically in $\tau$,
+\[
+\st^{\,h-1}\,\ZZ_h(\tau)=\beta_{2h-2}(\mathsf{a}_1,\mathsf{a}_2).
+\]
+\end{thm}
+
+The proof uses \cite[eq.~(1)--(3)]{LLZ03} only at $\mu=1^a$, through \cref{prop:van-real}; \cref{lem:van-dil}; the equation \eqref{eq:van-bil} at $k=2$; and the following textbook facts: the string and dilaton equations for pulled-back classes, $\int_{\Mbar_{1,1}}\psi=\int_{\Mbar_{1,1}}\lambda_1=1/24$, Frobenius' transposition identity, and the facts inside \cref{prop:van-bil,prop:van-real}. It uses nothing from \cref{thm:van-main}. The proof combines the Mari\~no--Vafa formula, the first equation of the modified KP hierarchy and the cut-and-join eigenvalue on the $p_1$-slice, extracts the lowest order at the dilaton point, and uses the $\tau$-symmetry of $\Hg_{\bwt}$ to fix the integration constants.
+
+\begin{proof}[Proof of \cref{thm:val-main} from \cref{thm:val-tau}]
+By \eqref{eq:van-scale} at $r=0$, with $\mathsf{v}=\bw$, one has $\ZZ[h,0]=E^{-(3h-3)}\ZZ_h$ at $\tau=-\epsilon_1/E$, where $\mathsf{a}_i=\epsilon_i/E$. Further $-\epsilon_1\epsilon_2E^3=\st E^5$ and $\beta_n(c\,a,c\,b)=c^n\beta_n(a,b)$. So
+\[
+(-\epsilon_1\epsilon_2E^3)^{h-1}\ZZ[h,0]=\st^{\,h-1}E^{5h-5-3h+3}\ZZ_h=E^{2h-2}\beta_{2h-2}(\mathsf{a}_1,\mathsf{a}_2)=\beta_{2h-2}(\epsilon_1,\epsilon_2).\qedhere
+\]
+\end{proof}
+
+\subsection{Proof of the vertex identity at scale \texorpdfstring{$1$}{1}}
+\label{sec:val-proof}
+
+\begin{proof}[Proof of \cref{thm:val-tau}]
+\emph{Notation.} $M_h(1^a)\coloneqq\langle\Hg_{\bwt}\prod_{i=1}^a1/(1-\psi_i)\rangle_{h,a}$ and $G_h(\yv)\coloneqq\sum_aM_h(1^a)\yv^a/a!$. In genera $0$ and $1$ the sum starts at $a=1$. $M_0(1^a)\coloneqq a^{a-3}$, as in \cref{sec:van-notation}.
+
+\emph{Step 1 (the Mari\~no--Vafa formula in real form).} Let $\MVZ$, $\MVF$ be as in \cref{prop:van-real}. By \eqref{eq:van-real}, for $\mu=1^a$ one has $[x^{2g-2+a}p_1^a]\MVF=\st^{\,g+a-1}M_g(1^a)/a!$. Only $\mu=1^a$ is used below: $\de_2\MVF$ is eliminated in Step 2(c) without \eqref{eq:van-real}. On the slice $p=(p_1,0,0,\dots)$, set $p_1=\yv/(\st x)$. Then
+\begin{equation}\label{eq:val-slice}
+\MVF=\sum_{h\geq 0}\st^{\,h-1}x^{2h-2}\bigl(G_h(\yv)-G_h(0)\bigr)\quad\text{in }\bbQ(\tau)\fps{\yv}\lser{x}.
+\end{equation}
+There is no $a=0$ term on the Schur side, since $\MVZ(0)=1$. That constant plays no role below.
+
+\emph{Step 2 (a closed equation on the $p_1$ slice).} Write $\de_k=\de/\de p_k$.
+
+(a) \emph{Cut-and-join on the slice.} For $\nu\vdash n$, the formula $s_\nu=\sum_\mu\chi_\nu(\mu)p_\mu/z_\mu$ gives at $p=(p_1,0,\dots)$: $s_\nu=\chi_\nu(1^n)p_1^n/n!$ and $\de_2s_\nu=\chi_\nu(2,1^{n-2})p_1^{n-2}/(2(n-2)!)$. Frobenius' classical identity $\binom{n}{2}\chi_\nu(2,1^{n-2})=f_2(\nu)\chi_\nu(1^n)$ gives $p_1^2\de_2s_\nu=f_2(\nu)s_\nu$ on the slice (for $n\leq 1$ both sides vanish).\draftnote{No number pinned for Frobenius' transposition identity.} Hence $\de_\tau\MVZ|_p=xp_1^2\de_2\MVZ$ on the slice, and dividing by $\MVZ$ gives
+\[
+\de_\tau\MVF|_p=xp_1^2\de_2\MVF.
+\]
+
+(b) \emph{First equation of the hierarchy.} By \cref{prop:van-bil}, with $\MVZ_0=\MVZ$, $\MVZ_1=\MVZ(\re^{k\gamma_\tau}p_k)$, $\gamma_\tau=\tau x$, and with no normalising constant, \eqref{eq:van-bil} holds coefficientwise in $\bbQ[\tau]\lser{x}\fps{p}$. At $k=2$ one has $2\Bil_2=\Hir_1^2+\Hir_2$. So $(\Hir_1^2+\Hir_2)\MVZ_0\cdot\MVZ_1=0$. Both series have constant term $1$ in $p$, so one may divide by $\MVZ_0\MVZ_1$. Since $\de/\de\mathsf{t}_1=\de_1$ and $\de/\de\mathsf{t}_2=2\de_2$, and with $\MVF_1(p)\coloneqq\MVF(\re^{k\gamma_\tau}p_k)$, this reads
+\[
+2\de_2(\MVF-\MVF_1)+\de_1^2(\MVF+\MVF_1)+\bigl(\de_1(\MVF-\MVF_1)\bigr)^2=0.
+\]
+
+(c) \emph{Elimination of $\de_2$.} On the slice, $\de_2\MVF_1=\re^{2\gamma_\tau}(\de_2\MVF)(\re^{\gamma_\tau}p_1)$, and (a) gives $\de_2\MVF(P)=\de_\tau\MVF(P)/(xP^2)$, so the factor $\re^{2\gamma_\tau}$ cancels. With $\thv\coloneqq\yv\,\dd/\dd\yv=p_1\de_1$, multiplying by $p_1^2$ gives
+\begin{equation}\label{eq:val-star}
+\frac{2}{x}\bigl(1-\re^{\gamma_\tau\thv}\bigr)\MVF_\tau+(\thv^2-\thv)\bigl(1+\re^{\gamma_\tau\thv}\bigr)\MVF+\bigl((1-\re^{\gamma_\tau\thv})\thv\MVF\bigr)^2=0,
+\end{equation}
+where $\MVF_\tau\coloneqq\de_\tau|_p\MVF=(\de_\tau|_{\yv}+(\st'/\st)\thv)\MVF$, because $\yv=\st xp_1$, and where $\de_\tau$ acts before $\re^{\gamma_\tau\thv}$ and never differentiates $\gamma_\tau$. Equation \eqref{eq:val-star} is an exact identity in $\bbQ(\tau)\fps{\yv}\lser{x}$. It contains $\MVF$ only through $\thv\MVF$ and through $\thv$-derivatives of $\MVF_\tau$, so constants in $\yv$ are irrelevant.
+
+\emph{Step 3 (the dilaton point).} For $h\geq 2$ put $\mathsf{Q}_h(s)\coloneqq\mathsf{Q}_h(s;\emptyset)=\sum_k(s^k/k!)\langle\Hg_{\bwt}(\psi^2/(1-\psi))^k\rangle$. \Cref{lem:van-dil} at $\msU=\emptyset$, $J=0$ (its $G_{\msU}$ includes the $a=0$ term) gives
+\[
+G_h(\yv)=\pw^{2h-2}\mathsf{Q}_h(\pw-1),\qquad\pw\coloneqq1+s=\frac{1}{1-\tv},\qquad\yv=\tv\re^{-\tv}.
+\]
+The polynomial $\mathsf{Q}_h$ has degree at most $3h-3$ and $\mathsf{Q}_h(-1)=\ZZ_h$. So $G_h=\pw^{2h-2}(\ZZ_h+O(\pw))$, a polynomial in $\pw$. Also $\thv=(\pw-1)\pw^2\,\dd/\dd\pw$; with $\pv\coloneqq1/\pw$ this is $\thv=(1-1/\pv)\,\dd/\dd\pv$.
+
+Genus $0$: $\thv^2G_0=\sum_aa^{a-1}\yv^a/a!=\tv=1-\pv$, hence $G_0=\tfrac{5}{12}-\tfrac14\pv^2-\tfrac16\pv^3$.
+
+Genus $1$: by \cref{lem:van-dil} at $\msU=(1)$, $J=1$, the series $G^{(1)}_{(1)}(\yv)=\sum_aM_1(1^{a+1})\yv^a/a!$ equals $\pw\re^{\tv}\mathsf{Q}_1(s;(1))$, hence $\thv G_1=\yv G^{(1)}_{(1)}=\tv\pw\mathsf{Q}_1(s;(1))$. In genus $1$, $\Hg_{\bwt}=1-((1+\st)/\st)\lambda_1$. So the $s^0$ coefficient of $\mathsf{Q}_1(s;(1))$ is $\int_{\Mbar_{1,1}}\Hg_{\bwt}(1+\psi)=\tfrac{1}{24}-\tfrac{1+\st}{24\st}=-\tfrac{1}{24\st}$, the $s^1$ coefficient is $\langle\tau_0\tau_2\rangle_1=\tfrac{1}{24}$, and higher powers are excluded by degree: $\mathsf{Q}_1(s;(1))=(s-1/\st)/24$. So $\thv G_1=(\pw-1)(\pw-1-1/\st)/24$, that is,
+\[
+G_1=\frac{1}{24}\Bigl(-\log\pv+\bigl(1+\frac{1}{\st}\bigr)\pv\Bigr)+\text{const}.
+\]
+
+Every $x$-coefficient of $\thv\MVF$ and, modulo constants in $\yv$, of $\de_\tau|_{\yv}\MVF$ is a Laurent polynomial in $\pw$: $\pw$ does not depend on $\tau$ at fixed $\yv$, so $\de_\tau|_{\yv}$ only differentiates the coefficients, and the $\log\pv$ of $G_1$ has a $\tau$-independent coefficient. Laurent polynomials embed in $\bbQ(\tau)\fps{\yv}$, because $\pw=1+\yv+\cdots$ is transcendental over $\bbQ(\tau)$. So \eqref{eq:val-star}, in which constants are killed by $\thv$ or by $1-\re^{\gamma_\tau\thv}$, holds coefficientwise in the monomials $x^a\pw^b$.
+
+\emph{Step 4 (grading).} Map $x^a\pw^b$ to $\xinv^{\,b-a}N^{-b}$, with $\xinv\coloneqq1/x$ and $\pv=xN$. Each coefficient has a unique preimage, and $N$-powers are bounded above at fixed $\xinv$-order. (This is for $\thv\MVF$ and $\de_\tau|_{\yv}\MVF$ with the constants in $\yv$ removed; a constant $x^{2h-2}G_h(0)$ would map to $\xinv^{\,2-2h}N^0$, which is why they must be removed first.) This monomial substitution intertwines $\thv$ with $\xinv(1-\xinv/N)\,\dd/\dd N$, and $\gamma_\tau\thv$ with $\tau(1-\xinv/N)\,\dd/\dd N$, a derivation. So $\re^{\gamma_\tau\thv}f(N)=f(\mathsf{N}(\tau))$, where $\dd\mathsf{N}/\dd\mathsf{r}=1-\xinv/\mathsf{N}$, $\mathsf{N}(0)=N$, with flow time $\mathsf{r}$ running from $0$ to $\tau$ and the $\tau$ in the coefficients frozen. At fixed $\xinv$-order the flow converges $1/N$-adically, so the $x$-adic and $1/N$-adic expansions agree. Hence
+\begin{gather*}
+\re^{\gamma_\tau\thv}=\valSh+\xinv\,\valSh_1+O(\xinv^2),\\
+\valSh f(N)=f(M),\quad M\coloneqq N+\tau,\qquad\valSh_1f=-\ell f'(M),\quad\ell\coloneqq\log(M/N).
+\end{gather*}
+Put $\valnab\coloneqq\valSh-1$. By \eqref{eq:val-slice} and Step 3, modulo constants in $\yv$,
+\begin{align*}
+\MVF&=x\mathfrak{A}+\mathfrak{B}+\xinv\mathfrak{C}+\cdots,\\
+\mathfrak{A}&=-\frac{N^3}{6\st}+\kappa_0N,\qquad\kappa_0\coloneqq\frac{1+\st}{24\st},\\
+\mathfrak{B}&=-\frac{N^2}{4\st}-\frac{1}{24}\log N+\mathfrak{B}_s,\qquad\mathfrak{B}_s\coloneqq\sum_{h\geq 2}\st^{\,h-1}\ZZ_hN^{2-2h}.
+\end{align*}
+Here $\de_\tau$ is taken at fixed $N$, and primes are $\dd/\dd N$. Insert into \eqref{eq:val-star}.
+
+Order $\xinv^0$:
+\[
+-2\valnab\mathfrak{A}_\tau-(1+\valSh)\mathfrak{A}'+(\valnab\mathfrak{A}')^2=0.
+\]
+This holds identically: the $N^2$, $N^1$ and $N^0$ coefficients each vanish, the last only because of the value of $\kappa_0$.
+
+Order $\xinv^1$: $\mathfrak{C}$ does not enter, and
+\begin{multline*}
+-2\valnab\bigl(\mathfrak{B}_\tau+(\st'/\st)\mathfrak{A}'\bigr)-2\valSh_1\mathfrak{A}_\tau+(1+\valSh)\mathfrak{A}''+\frac{1}{N}(1+\valSh)\mathfrak{A}'-(1+\valSh)\mathfrak{B}'-\frac{\dd}{\dd N}\valSh_1\mathfrak{A}\\
++2(\valnab\mathfrak{A}')\bigl[\valnab(\mathfrak{B}'-\mathfrak{A}'/N)+\valSh_1\mathfrak{A}'\bigr]=0.
+\end{multline*}
+Use $\valnab\mathfrak{A}'=-(M+N)/(2\mathsf{a}_2)$. The pieces are:
+\begin{itemize}
+\item the coefficient of $\ell$: $2\mathfrak{A}_\tau'(M)+\mathfrak{A}''(M)-2(\valnab\mathfrak{A}')\mathfrak{A}''(M)=(MN-\st'/12)/\st^2$;
+\item the remaining source terms, not involving $\kappa_0$: $(M+N)\bigl[\st'/(\st\mathsf{a}_2)-3/(2\st)-1/(2\mathsf{a}_2^2)\bigr]=-\tau(M+N)/(2\st^2)$, from $2\st'\tau-3\st-\tau^2=-\tau$;
+\item the terms with $\kappa_0$: $(\kappa_0/\mathsf{a}_2)(1/M+1/N)$, using $N/M-M/N=-\tau(1/M+1/N)$;
+\item with $\LL[B]\coloneqq-2\valnab B_\tau-(1+\valSh)B'-((M+N)/\mathsf{a}_2)\valnab B'$, one has $\LL[c(\tau)N^2]=0$ if and only if $c=C/\st$ with $C$ constant, so the equation \eqref{eq:val-E1} below does not see the constant $C=-1/4$ (its value comes from $G_0$ in Step 3, and only the fact that it has this form is used here); and $\LL[-\tfrac{1}{24}\log N]=(1/(24\mathsf{a}_2))(1/M+1/N)$.
+\end{itemize}
+Since $\kappa_0+1/24=(1+2\st)/(24\st)$ and $\st/\mathsf{a}_2=\tau$, this gives
+\begin{equation}\label{eq:val-E1}
+\LL[\mathfrak{B}_s]=\frac{1}{\st^2}\Bigl\{-\ell\Bigl(MN-\frac{\st'}{12}\Bigr)+\frac{\tau(M+N)}{2}-\frac{\tau(1+2\st)}{24}\Bigl(\frac1M+\frac1N\Bigr)\Bigr\}.
+\end{equation}
+Equation \eqref{eq:val-E1} involves only the $\ZZ_h$, and no other unknown.
+
+\emph{Step 5 (solving \eqref{eq:val-E1}).} Let $\valBor\colon\bbQ(\tau)\fps{\mathsf{t}}\to N^{-1}\bbQ(\tau)\fps{1/N}$, $\mathsf{t}^k\mapsto k!N^{-k-1}$, which is a bijection. Checking on monomials gives:
+\[
+\valBor[\re^{-\tau\mathsf{t}}\phi]=\valSh\valBor[\phi],\quad N\valBor[\phi]=\phi(0)+\valBor[\phi_{\mathsf{t}}],\quad\frac{\dd}{\dd N}\valBor[\phi]=-\valBor[\mathsf{t}\phi],\quad\valBor\Bigl[\frac{1-\re^{-\tau\mathsf{t}}}{\mathsf{t}}\Bigr]=\ell.
+\]
+Set $\valb\coloneqq1-\re^{-\tau\mathsf{t}}$, so that $\valb_{\mathsf{t}}=\tau(1-\valb)$ and $2\valb_{\mathsf{t}}+\tau\valb=\tau(2-\valb)$. Write $\mathfrak{B}_s=\valBor[f_s/\mathsf{t}]$, with $f_s\coloneqq\sum_{h\geq 2}\st^{\,h-1}\ZZ_h\mathsf{t}^{2h-2}/(2h-3)!$. Then $\LL[\valBor[f/\mathsf{t}]]=\valBor[\mathfrak{L}f]$ for $f$ in $\mathsf{t}^2\bbQ(\tau)\fps{\mathsf{t}}$, where
+\[
+\mathfrak{L}f\coloneqq2\valb\Bigl(\frac{f_\tau}{\mathsf{t}}-\frac{f_{\mathsf{t}}}{\mathsf{a}_2}\Bigr)+(2-\valb)\frac{f}{\mathsf{a}_2}.
+\]
+For the right side of \eqref{eq:val-E1}: with $\phi=\valb/\mathsf{t}$, one has
+\[
+MN\ell-\frac{\tau(M+N)}{2}=\valBor[\phi_{\mathsf{t}\mathsf{t}}+\tau\phi_{\mathsf{t}}]=\valBor\Bigl[\frac{2\valb}{\mathsf{t}^3}-\frac{\tau(2-\valb)}{\mathsf{t}^2}\Bigr],
+\]
+a regular series. Also $1/M+1/N=\valBor[2-\valb]$.
+
+Apply the formula $\mathfrak{L}$ to $f_{\mathrm{sing}}\coloneqq-1/(\st\mathsf{t}^2)+d_0$, $d_0\coloneqq(1+2\st)/(24\st)$. Using $\st'/\st^2-2\tau/\st^2=1/\st^2$ for the coefficient of $\valb/\mathsf{t}^3$, and $\de_\tau d_0=-\st'/(24\st^2)$, one gets
+\[
+\mathfrak{L}f_{\mathrm{sing}}=\frac{1}{\st^2}\Bigl[\frac{2\valb}{\mathsf{t}^3}-\frac{\tau(2-\valb)}{\mathsf{t}^2}-\frac{\st'}{12}\frac{\valb}{\mathsf{t}}+\frac{\tau(1+2\st)}{24}(2-\valb)\Bigr],
+\]
+which is exactly minus the $\valBor$-preimage of the right side of \eqref{eq:val-E1}. Since $\valBor$ is injective, \eqref{eq:val-E1} is equivalent to
+\[
+\mathfrak{L}(f_{\mathrm{sing}}+f_s)=0.
+\]
+
+On the other side, $f_*\coloneqq1/(4\sinh(\mathsf{a}_1\mathsf{t}/2)\sinh(\mathsf{a}_2\mathsf{t}/2))=-1/(4\sinh(\tau\mathsf{t}/2)\sinh(\mathsf{a}_2\mathsf{t}/2))$ satisfies
+\[
+\frac{f_{*,\tau}}{\mathsf{t}f_*}-\frac{f_{*,\mathsf{t}}}{\mathsf{a}_2f_*}=-\frac{\coth(\tau\mathsf{t}/2)}{2\mathsf{a}_2}.
+\]
+Therefore $\mathfrak{L}f_*=(f_*/\mathsf{a}_2)\bigl[-\valb\coth(\tau\mathsf{t}/2)+2-\valb\bigr]=0$, because $\valb\coth(\tau\mathsf{t}/2)=1+\re^{-\tau\mathsf{t}}=2-\valb$. Also $f_*=f_{\mathrm{sing}}+f_{\mathrm{reg}}$, with $f_{\mathrm{reg}}=\sum_{h\geq 2}\beta_{2h-2}(\mathsf{a}_1,\mathsf{a}_2)\mathsf{t}^{2h-2}/(2h-3)!$, since $\mathsf{a}_1\mathsf{a}_2=-\st$ and $\mathsf{a}_1^2+\mathsf{a}_2^2=1+2\st$. So $f_{\Delta}\coloneqq f_s-f_{\mathrm{reg}}$, in $\mathsf{t}^2\bbQ(\tau)\fps{\mathsf{t}}$, satisfies $\mathfrak{L}f_{\Delta}=0$.
+
+\emph{Uniqueness.} This is where the $\tau$-symmetry is needed. Equation \eqref{eq:val-E1} alone does not determine the $\ZZ_h$: the general solution of $\mathfrak{L}f=0$ is $f_*\,\mathsf{g}((1+\tau)\mathsf{t})$ with $\mathsf{g}$ arbitrary, since the characteristics of $\de_\tau/\mathsf{t}-\de_{\mathsf{t}}/\mathsf{a}_2$ have invariant $(1+\tau)\mathsf{t}$. Suppose $f_{\Delta}=b_n\mathsf{t}^n+\cdots$ with $b_n\neq 0$ and $n\geq 2$. The $\mathsf{t}^n$ coefficient of $\mathfrak{L}f_{\Delta}$ gives $\tau b_n'-(n\tau-1)b_n/\mathsf{a}_2=0$ (here the prime is $\dd/\dd\tau$), so $b_n=C\tau^{-1}(1+\tau)^{n+1}$. But $f_{\Delta}$ is invariant under $\tau\mapsto-1-\tau$: $\st$ and $\Hg_{\bwt}$ are, since the weights $\tau$ and $-1-\tau$ swap, and $f_{\mathrm{reg}}$ is, since $\mathsf{a}_1$ and $\mathsf{a}_2$ swap. Invariance forces $C[(1+\tau)^{n+2}-(-1)^n\tau^{n+2}]=0$, hence $C=0$. So $f_{\Delta}=0$, that is, $\st^{\,h-1}\ZZ_h=\beta_{2h-2}(\mathsf{a}_1,\mathsf{a}_2)$ for every $h\geq 2$.
+\end{proof}
+
+\begin{rmk}
+Two limits, not used. Put $\mathsf{K}_{\kappa}\coloneqq\exp(-\sum_k\kappa_k/k)$; since $1-\Tdil^{\tau}(z)/z=1/(1-z)$, one has $\ZZ_h=\int_{\Mbar_h}\mathsf{K}_{\kappa}\Hg_{\bwt}$. The limit $\tau\to\infty$ of \cref{thm:val-tau} gives $\int\mathsf{K}_{\kappa}\Lamv(1)=B_{2h}/(2h(2h-2))=\chi(M_h)$, the value of Harer and Zagier \cite{HZ86}. The limit $\tau\to 0$ gives $\int\lambda_h\mathsf{K}_{\kappa}=-(2h-3)!\,b^{\lambda}_h$, with $b^{\lambda}_h\coloneqq\int\lambda_h\psi^{2h-2}>0$. Finite-order comparisons of the value are collected in \cref{sec:evi-van}; no proof uses them.\draftnote{The pushforward identity for $\mathsf{K}_{\kappa}$ (Arbarello--Cornalba) is textbook; no citation is pinned.}
+\end{rmk}

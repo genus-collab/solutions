@@ -1,0 +1,2 @@
+weights (1, 2, 5) (3, 7) (g,n)= (1, 3) D= 2 {'tests': 119, 'mismatch': 0, 'nonzero': 108, 'with_k_ge2': 63, 'secs': 10.3}
+weights (1, 2, 5) (3, 7) (g,n)= (2, 3) D= 2 {'tests': 453, 'mismatch': 0, 'nonzero': 440, 'with_k_ge2': 397, 'secs': 629.4}

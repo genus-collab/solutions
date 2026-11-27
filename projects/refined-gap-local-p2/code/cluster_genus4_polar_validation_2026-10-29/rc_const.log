@@ -1,0 +1,4 @@
+2026-10-28 22:34:29  [g=2] F_{2,0}(Q = 0) computed (0.1 s), LeafCount 1185
+2026-10-28 22:34:29  [g=2] VALIDATION OK: degree-zero term agrees with the stored genus-2 result
+2026-10-28 22:38:31  [g=3] F_{3,0}(Q = 0) computed (2.4 s), LeafCount 3989
+2026-10-28 22:38:31  [g=3] VALIDATION OK: degree-zero term agrees with the stored genus-3 result

@@ -1,0 +1,35 @@
+tau -5/3 gmax 4 maxdeg 19
+  k0=2 G=0 eps=0: relations 28
+  k0=2 G=0 eps=1: relations 28
+  k0=2 G=1 eps=0: relations 28
+  k0=2 G=1 eps=1: relations 28
+  k0=2 G=2 eps=0: relations 28
+  k0=2 G=2 eps=1: relations 28
+  k0=2 G=3 eps=0: relations 20
+  k0=2 G=3 eps=1: relations 20
+  k0=2 G=4 eps=0: relations 10
+  k0=2 G=4 eps=1: relations 10
+  k0=3 G=0 eps=0: relations 28
+  k0=3 G=0 eps=1: relations 28
+  k0=3 G=1 eps=0: relations 28
+  k0=3 G=1 eps=1: relations 28
+  k0=3 G=2 eps=0: relations 28
+  k0=3 G=2 eps=1: relations 28
+  k0=3 G=3 eps=0: relations 15
+  k0=3 G=3 eps=1: relations 15
+  k0=3 G=4 eps=0: relations 6
+  k0=3 G=4 eps=1: relations 6
+  k0=4 G=0 eps=0: relations 28
+  k0=4 G=0 eps=1: relations 28
+  k0=4 G=1 eps=0: relations 28
+  k0=4 G=1 eps=1: relations 28
+  k0=4 G=2 eps=0: relations 20
+  k0=4 G=2 eps=1: relations 20
+  k0=4 G=3 eps=0: relations 8
+  k0=4 G=3 eps=1: relations 8
+  k0=4 G=4 eps=0: relations 3
+  k0=4 G=4 eps=1: relations 3
+total relations 612 failures 0 skips {(2, 'skip'): 52, (3, 'skip'): 70, (4, 'skip'): 106}
+controls (tested, nonzero): {'perturb': [171, 171], 'beta_flip': [182, 148], 'rising': [182, 182], 'wrong_ck': [182, 148], 'even0': [182, 148]}
+target coefficient -(k0-1) Pi_k0 sigma^G tau delta = response of the relation to X_G(R+k0), k0 not in R (tested, equal): [124, 124]
+done2

@@ -1,0 +1,299 @@
+genus 3, KMAX = 6, factor order ORD = 16, t_c series order 36; Sun 1 Nov 2026 19:01:42
+self-check XX: y c1'/c1 with c1 = C1cf equals XXcf through t_c^4: True; XX(0) =   2
+-(-)
+  9; c1(0) = -1
+
+==================== eps1 = 1/3, eps2 = 1, sq = 3/8 ====================
+factor series built in 65 s
+(A) conifold valuations (order in t_c; Infinity = identically 0 to the order computed) of the per-colour factors
+  colour 0: sqrtDelta -1; rows P0 {1, 1, 1, 1, 1, 1, 1}, P1 {0, 1, 1, 1, 1, 1, 1}, P2 {0, 2, 2, 2, 2, 2, 2}; Dil[1..7] {1, 1, 1, 1, 1, 1, 1}; Leaf[0..6] {0, 1, 1, 1, 1, 1, 1}
+  colour 1: sqrtDelta 0; rows P0 {0, 0, 0, 0, 0, 0, 0}, P1 {0, 0, 0, 0, 0, 0, 0}, P2 {1, 1, 1, 1, 1, 1, 1}; Dil[1..7] {0, 0, 0, 0, 0, 0, 0}; Leaf[0..6] {0, 0, 0, 0, 0, 0, 0}
+  colour 2: sqrtDelta 0; rows P0 {0, 0, 0, 0, 0, 0, 0}, P1 {0, 0, 0, 0, 0, 0, 0}, P2 {1, 1, 1, 1, 1, 1, 1}; Dil[1..7] {0, 0, 0, 0, 0, 0, 0}; Leaf[0..6] {0, 0, 0, 0, 0, 0, 0}
+  edge E_00[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{2, 2, 2, 2, 2, 2}, {2, 2, 2, 2, 2}, {2, 2, 2, 2}, {2, 2, 2}, {2, 2}, {2}}   min 2
+  edge E_01[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_02[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_10[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_11[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_12[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_20[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_21[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_22[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0}, {0, 0}, {0}}   min 0
+  regular idempotents (colours 1, 2): minimal valuation of sqrtDelta, P0, P1, P2 (hence Dil, Leaf), E_ij (i, j in {1,2}) = 0  => ANALYTIC at the conifold (to z^6); sqrtDelta_1, sqrtDelta_2 at t_c = 0: {(-4*I)/27 + 4/(9*Sqrt[3]), (4*I)/27 + 4/(9*Sqrt[3])}
+(B) per-colouring polar parts {t_c^-P .. t_c^-1}, sum over all decorations of the stable graph with the colouring fixed
+  graph 1: genera {3}, edges {}, Aut 1, decorations 64; colour-sum = stored term through t_c^1: True (precision t_c^12)
+      colouring {0} (prec t_c^12): {-169/27216, 0, 0, 0}
+      singular colourings: 1 of 3
+      singular set S = {1} summed over the regular colours: {-169/27216, 0, 0, 0}
+      colour sum: {-169/27216, 0, 0, 0}
+  graph 2: genera {2}, edges {{1, 1}}, Aut 2, decorations 116; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 3: genera {1}, edges {{1, 1}, {1, 1}}, Aut 8, decorations 141; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 4: genera {0}, edges {{1, 1}, {1, 1}, {1, 1}}, Aut 48, decorations 93; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 5: genera {1, 2}, edges {{1, 2}}, Aut 1, decorations 90; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 6: genera {0, 2}, edges {{1, 1}, {1, 2}}, Aut 2, decorations 30; colour-sum = stored term through t_c^1: True (precision t_c^14)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 7: genera {1, 1}, edges {{1, 2}, {1, 2}}, Aut 4, decorations 100; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 8: genera {1, 1}, edges {{2, 2}, {1, 2}}, Aut 2, decorations 111; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 9: genera {0, 1}, edges {{1, 2}, {1, 2}, {1, 2}}, Aut 6, decorations 37; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 10: genera {0, 1}, edges {{1, 1}, {1, 2}, {1, 2}}, Aut 4, decorations 50; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 11: genera {0, 1}, edges {{1, 1}, {2, 2}, {1, 2}}, Aut 4, decorations 37; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 12: genera {0, 1}, edges {{1, 1}, {1, 1}, {1, 2}}, Aut 8, decorations 66; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 13: genera {0, 0}, edges {{1, 2}, {1, 2}, {1, 2}, {1, 2}}, Aut 48, decorations 25; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 14: genera {0, 0}, edges {{2, 2}, {1, 2}, {1, 2}, {1, 2}}, Aut 12, decorations 22; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 15: genera {0, 0}, edges {{1, 1}, {2, 2}, {1, 2}, {1, 2}}, Aut 16, decorations 25; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 16: genera {0, 0}, edges {{1, 1}, {2, 2}, {2, 2}, {1, 2}}, Aut 16, decorations 22; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 17: genera {1, 1, 1}, edges {{1, 3}, {2, 3}}, Aut 2, decorations 90; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 18: genera {0, 1, 1}, edges {{1, 2}, {1, 3}, {1, 3}}, Aut 2, decorations 30; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 19: genera {0, 1, 1}, edges {{1, 1}, {1, 3}, {2, 3}}, Aut 2, decorations 30; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 20: genera {0, 1, 1}, edges {{1, 1}, {1, 2}, {1, 3}}, Aut 4, decorations 45; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 21: genera {0, 0, 1}, edges {{1, 2}, {1, 2}, {1, 3}, {2, 3}}, Aut 4, decorations 10; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 22: genera {0, 0, 1}, edges {{1, 2}, {1, 2}, {1, 2}, {2, 3}}, Aut 6, decorations 15; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 23: genera {0, 0, 1}, edges {{2, 2}, {1, 2}, {1, 3}, {1, 3}}, Aut 4, decorations 10; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 24: genera {0, 0, 1}, edges {{2, 2}, {1, 2}, {1, 2}, {1, 3}}, Aut 4, decorations 15; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 25: genera {0, 0, 1}, edges {{1, 1}, {2, 2}, {1, 3}, {2, 3}}, Aut 8, decorations 10; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 26: genera {0, 0, 1}, edges {{1, 1}, {2, 2}, {1, 2}, {2, 3}}, Aut 4, decorations 15; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 27: genera {0, 0, 0}, edges {{1, 2}, {1, 3}, {1, 3}, {2, 3}, {2, 3}}, Aut 8, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 28: genera {0, 0, 0}, edges {{3, 3}, {1, 2}, {1, 2}, {1, 3}, {2, 3}}, Aut 8, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 29: genera {0, 0, 0}, edges {{3, 3}, {1, 2}, {1, 2}, {1, 2}, {2, 3}}, Aut 12, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 30: genera {0, 0, 0}, edges {{2, 2}, {3, 3}, {1, 2}, {1, 3}, {1, 3}}, Aut 8, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 31: genera {0, 0, 0}, edges {{1, 1}, {2, 2}, {3, 3}, {1, 3}, {2, 3}}, Aut 16, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 32: genera {0, 1, 1, 1}, edges {{1, 2}, {1, 3}, {1, 4}}, Aut 6, decorations 27; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 33: genera {0, 0, 1, 1}, edges {{1, 2}, {1, 2}, {1, 4}, {2, 3}}, Aut 4, decorations 9; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 34: genera {0, 0, 1, 1}, edges {{2, 2}, {1, 2}, {1, 3}, {1, 4}}, Aut 4, decorations 9; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 35: genera {0, 0, 0, 1}, edges {{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 3}}, Aut 4, decorations 3; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 36: genera {0, 0, 0, 1}, edges {{3, 3}, {1, 2}, {1, 2}, {1, 4}, {2, 3}}, Aut 4, decorations 3; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 37: genera {0, 0, 0, 1}, edges {{2, 2}, {3, 3}, {1, 2}, {1, 3}, {1, 4}}, Aut 8, decorations 3; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 38: genera {0, 0, 0, 0}, edges {{1, 3}, {1, 4}, {1, 4}, {2, 3}, {2, 3}, {2, 4}}, Aut 16, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 39: genera {0, 0, 0, 0}, edges {{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 4}, {3, 4}}, Aut 24, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 40: genera {0, 0, 0, 0}, edges {{4, 4}, {1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 3}}, Aut 8, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 41: genera {0, 0, 0, 0}, edges {{3, 3}, {4, 4}, {1, 2}, {1, 2}, {1, 4}, {2, 3}}, Aut 16, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 42: genera {0, 0, 0, 0}, edges {{2, 2}, {3, 3}, {4, 4}, {1, 2}, {1, 3}, {1, 4}}, Aut 48, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+SUMMARY eps1 = 1/3: self-checks all True: True; graphs with an edge that are singular for some colouring: {}; graphs with an edge singular for some singular set S (after summing the regular colours): {}; time 3987 s
+
+==================== eps1 = 1/8, eps2 = 1, sq = 8/27 ====================
+factor series built in 69 s
+(A) conifold valuations (order in t_c; Infinity = identically 0 to the order computed) of the per-colour factors
+  colour 0: sqrtDelta -1; rows P0 {1, 1, 1, 1, 1, 1, 1}, P1 {0, 1, 1, 1, 1, 1, 1}, P2 {0, 2, 2, 2, 2, 2, 2}; Dil[1..7] {1, 1, 1, 1, 1, 1, 1}; Leaf[0..6] {0, 1, 1, 1, 1, 1, 1}
+  colour 1: sqrtDelta 0; rows P0 {0, 0, 0, 0, 0, 0, 0}, P1 {0, 0, 0, 0, 0, 0, 0}, P2 {1, 1, 1, 1, 1, 1, 1}; Dil[1..7] {0, 0, 0, 0, 0, 0, 0}; Leaf[0..6] {0, 0, 0, 0, 0, 0, 0}
+  colour 2: sqrtDelta 0; rows P0 {0, 0, 0, 0, 0, 0, 0}, P1 {0, 0, 0, 0, 0, 0, 0}, P2 {1, 1, 1, 1, 1, 1, 1}; Dil[1..7] {0, 0, 0, 0, 0, 0, 0}; Leaf[0..6] {0, 0, 0, 0, 0, 0, 0}
+  edge E_00[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{2, 2, 2, 2, 2, 2}, {2, 2, 2, 2, 2}, {2, 2, 2, 2}, {2, 2, 2}, {2, 2}, {2}}   min 2
+  edge E_01[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_02[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_10[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_11[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_12[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_20[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1}, {1, 1}, {1}}   min 1
+  edge E_21[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0}, {0, 0}, {0}}   min 0
+  edge E_22[m, n] (rows m = 0..5, n = 0..KMAX-1-m): {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0}, {0, 0}, {0}}   min 0
+  regular idempotents (colours 1, 2): minimal valuation of sqrtDelta, P0, P1, P2 (hence Dil, Leaf), E_ij (i, j in {1,2}) = 0  => ANALYTIC at the conifold (to z^6); sqrtDelta_1, sqrtDelta_2 at t_c = 0: {(-9*I)/128 + (9*Sqrt[3])/128, (9*I)/128 + (9*Sqrt[3])/128}
+(B) per-colouring polar parts {t_c^-P .. t_c^-1}, sum over all decorations of the stable graph with the colouring fixed
+  graph 1: genera {3}, edges {}, Aut 1, decorations 64; colour-sum = stored term through t_c^1: True (precision t_c^12)
+      colouring {0} (prec t_c^12): {-1666067/117440512, 0, 0, 0}
+      singular colourings: 1 of 3
+      singular set S = {1} summed over the regular colours: {-1666067/117440512, 0, 0, 0}
+      colour sum: {-1666067/117440512, 0, 0, 0}
+  graph 2: genera {2}, edges {{1, 1}}, Aut 2, decorations 116; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 3: genera {1}, edges {{1, 1}, {1, 1}}, Aut 8, decorations 141; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 4: genera {0}, edges {{1, 1}, {1, 1}, {1, 1}}, Aut 48, decorations 93; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 3  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 5: genera {1, 2}, edges {{1, 2}}, Aut 1, decorations 90; colour-sum = stored term through t_c^1: True (precision t_c^13)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 6: genera {0, 2}, edges {{1, 1}, {1, 2}}, Aut 2, decorations 30; colour-sum = stored term through t_c^1: True (precision t_c^14)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 7: genera {1, 1}, edges {{1, 2}, {1, 2}}, Aut 4, decorations 100; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 8: genera {1, 1}, edges {{2, 2}, {1, 2}}, Aut 2, decorations 111; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 9: genera {0, 1}, edges {{1, 2}, {1, 2}, {1, 2}}, Aut 6, decorations 37; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 10: genera {0, 1}, edges {{1, 1}, {1, 2}, {1, 2}}, Aut 4, decorations 50; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 11: genera {0, 1}, edges {{1, 1}, {2, 2}, {1, 2}}, Aut 4, decorations 37; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 12: genera {0, 1}, edges {{1, 1}, {1, 1}, {1, 2}}, Aut 8, decorations 66; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 13: genera {0, 0}, edges {{1, 2}, {1, 2}, {1, 2}, {1, 2}}, Aut 48, decorations 25; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 14: genera {0, 0}, edges {{2, 2}, {1, 2}, {1, 2}, {1, 2}}, Aut 12, decorations 22; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 15: genera {0, 0}, edges {{1, 1}, {2, 2}, {1, 2}, {1, 2}}, Aut 16, decorations 25; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 16: genera {0, 0}, edges {{1, 1}, {2, 2}, {2, 2}, {1, 2}}, Aut 16, decorations 22; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 9  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 17: genera {1, 1, 1}, edges {{1, 3}, {2, 3}}, Aut 2, decorations 90; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 18: genera {0, 1, 1}, edges {{1, 2}, {1, 3}, {1, 3}}, Aut 2, decorations 30; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 19: genera {0, 1, 1}, edges {{1, 1}, {1, 3}, {2, 3}}, Aut 2, decorations 30; colour-sum = stored term through t_c^1: True (precision t_c^15)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 20: genera {0, 1, 1}, edges {{1, 1}, {1, 2}, {1, 3}}, Aut 4, decorations 45; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 21: genera {0, 0, 1}, edges {{1, 2}, {1, 2}, {1, 3}, {2, 3}}, Aut 4, decorations 10; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 22: genera {0, 0, 1}, edges {{1, 2}, {1, 2}, {1, 2}, {2, 3}}, Aut 6, decorations 15; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 23: genera {0, 0, 1}, edges {{2, 2}, {1, 2}, {1, 3}, {1, 3}}, Aut 4, decorations 10; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 24: genera {0, 0, 1}, edges {{2, 2}, {1, 2}, {1, 2}, {1, 3}}, Aut 4, decorations 15; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 25: genera {0, 0, 1}, edges {{1, 1}, {2, 2}, {1, 3}, {2, 3}}, Aut 8, decorations 10; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 26: genera {0, 0, 1}, edges {{1, 1}, {2, 2}, {1, 2}, {2, 3}}, Aut 4, decorations 15; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 27: genera {0, 0, 0}, edges {{1, 2}, {1, 3}, {1, 3}, {2, 3}, {2, 3}}, Aut 8, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 28: genera {0, 0, 0}, edges {{3, 3}, {1, 2}, {1, 2}, {1, 3}, {2, 3}}, Aut 8, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 29: genera {0, 0, 0}, edges {{3, 3}, {1, 2}, {1, 2}, {1, 2}, {2, 3}}, Aut 12, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 30: genera {0, 0, 0}, edges {{2, 2}, {3, 3}, {1, 2}, {1, 3}, {1, 3}}, Aut 8, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 31: genera {0, 0, 0}, edges {{1, 1}, {2, 2}, {3, 3}, {1, 3}, {2, 3}}, Aut 16, decorations 5; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 27  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 32: genera {0, 1, 1, 1}, edges {{1, 2}, {1, 3}, {1, 4}}, Aut 6, decorations 27; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 33: genera {0, 0, 1, 1}, edges {{1, 2}, {1, 2}, {1, 4}, {2, 3}}, Aut 4, decorations 9; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 34: genera {0, 0, 1, 1}, edges {{2, 2}, {1, 2}, {1, 3}, {1, 4}}, Aut 4, decorations 9; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 35: genera {0, 0, 0, 1}, edges {{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 3}}, Aut 4, decorations 3; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 36: genera {0, 0, 0, 1}, edges {{3, 3}, {1, 2}, {1, 2}, {1, 4}, {2, 3}}, Aut 4, decorations 3; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 37: genera {0, 0, 0, 1}, edges {{2, 2}, {3, 3}, {1, 2}, {1, 3}, {1, 4}}, Aut 8, decorations 3; colour-sum = stored term through t_c^1: True (precision t_c^16)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 38: genera {0, 0, 0, 0}, edges {{1, 3}, {1, 4}, {1, 4}, {2, 3}, {2, 3}, {2, 4}}, Aut 16, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 39: genera {0, 0, 0, 0}, edges {{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 4}, {3, 4}}, Aut 24, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 40: genera {0, 0, 0, 0}, edges {{4, 4}, {1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 3}}, Aut 8, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 41: genera {0, 0, 0, 0}, edges {{3, 3}, {4, 4}, {1, 2}, {1, 2}, {1, 4}, {2, 3}}, Aut 16, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+  graph 42: genera {0, 0, 0, 0}, edges {{2, 2}, {3, 3}, {4, 4}, {1, 2}, {1, 3}, {1, 4}}, Aut 48, decorations 1; colour-sum = stored term through t_c^1: True (precision t_c^17)
+      singular colourings: 0 of 81  => REGULAR colouring by colouring
+      colour sum: {}
+SUMMARY eps1 = 1/8: self-checks all True: True; graphs with an edge that are singular for some colouring: {}; graphs with an edge singular for some singular set S (after summing the regular colours): {}; time 3957 s
+written G:\My Drive\Projects\Old\refGW\hodge_vertex\lp2_explore\lp2_percolour_g3_out.txt

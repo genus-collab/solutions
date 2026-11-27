@@ -1,0 +1,13 @@
+e1 = 4, e2 = 9, E = 13; z-orders 0..9; s-precision 6; leaf tests k = 0..3
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+mode lin; XX = theta log c1: -1/30, 11/300, -11/3000, 11/30000, -11/300000
+  Rd = -17/90, 149/300, -383/1000, 1447/90000  (valuation 0)
+  G A0 symmetric (to known order): YES
+  closure fail colour 0 row 2 z^2 at s^-1: -221/270
+  closure fail colour 0 row 2 z^3 at s^0: 17/810
+  closure fail colour 0 row 2 z^4 at s^0: -17/10530
+  closure fail colour 0 row 2 z^5 at s^0: 17/136890
+  closure fail colour 0 row 2 z^6 at s^0: -17/1779570
+PF residual (true): ZERO all colours z^0..z^9
+my rows v1,v2 vs edges_sing rowsTrue: n/a
+closure C1i Th v = (A0 - z^2 c1 Rd E21) v [anomaly term OMITTED]: FAILED in 24 (min known s-order 2)

@@ -1,0 +1,144 @@
+e1 = 7, e2 = 3, E = 10; z-orders 0..9; s-precision 11; leaf tests k = 0..8
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+XX(s) = -2/9, 2/27, 10/243, 14/729, 16/2187, 128/59049, 112/177147, 320/531441, 41068/43046721, 159020/129140163, 515968/387420489   (XX(0) must be -2/9)
+rows built
+t_c(s) = 3, 5/2, 19/9, 587/324 ...;  rho(s) = 1, 1/6, 17/108, 287/1944 ... (known to s^9)
+t_c^2 rho^2 Delta_0 - 3 e1 e2 E^3 = 0 to s^7: OK
+inverse series s(t_c) check: OK
+s(t_c)/t_c = 1/3, -5/54, 37/1458, -1099/157464 ...
+identity check on the s-series: XX - (t/3) d/dt log wc = 0, 0, 0, 0, 0, 0, 0 (s^0..s^6)
+sigma known to s^8 (so t_c-orders <= 8); requested KMAX = 8
+
+=== gauge true ===
+  t_c^-1 sigma_0: minimal J = 0 (8 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {}; Sum beta_j/j = 0
+  t_c^-1 sigma_1: minimal J = 0 (8 checks): a1(psi) = 0; a0(lam_0) = 10; leaves {}; Sum beta_j/j = 0
+  t_c^-1 sigma_2: minimal J = 0 (8 checks): a1(psi) = 0; a0(lam_0) = -100; leaves {}; Sum beta_j/j = 0
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^0  sigma_0: minimal J = 1 (7 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1}; Sum beta_j/j = 10
+  t_c^0  sigma_1: minimal J = 1 (7 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1}; Sum beta_j/j = 100/9
+  t_c^0  sigma_2: minimal J = 0 (8 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {}; Sum beta_j/j = 0
+      [assuming pole set j <= 1: 7 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {}; Sum beta_j/j = 0
+      closed-form predicted psi-coefficient: 0  (= fitted)
+      sigma_2^(0) beta_j (j=1..1): 0
+  t_c^1  sigma_0: minimal J = 2 (6 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2}; Sum beta_j/j = 0
+  t_c^1  sigma_1: minimal J = 2 (6 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2}; Sum beta_j/j = 0
+  t_c^1  sigma_2: minimal J = 1 (7 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1}; Sum beta_j/j = 1000/81
+      [assuming pole set j <= 2: 6 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1}; Sum beta_j/j = 1000/81
+      closed-form predicted psi-coefficient: 0  (= fitted)
+      sigma_2^(1) beta_j (j=1..2): 1000/81, 0
+  t_c^2  sigma_0: minimal J = 3 (5 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3}; Sum beta_j/j = 0
+  t_c^2  sigma_1: minimal J = 3 (5 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3}; Sum beta_j/j = -1100/19683
+  t_c^2  sigma_2: minimal J = 2 (6 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2}; Sum beta_j/j = -2000/2187
+      [assuming pole set j <= 3: 5 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2}; Sum beta_j/j = -2000/2187
+      closed-form predicted psi-coefficient: 0  (= fitted)
+      sigma_2^(2) beta_j (j=1..3): -4000/2187, 4000/2187, 0
+  t_c^3  sigma_0: minimal J = 4 (4 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4}; Sum beta_j/j = 0
+  t_c^3  sigma_1: minimal J = 4 (4 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4}; Sum beta_j/j = 500/59049
+  t_c^3  sigma_2: minimal J = 3 (5 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3}; Sum beta_j/j = 6250/59049
+      [assuming pole set j <= 4: 4 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3}; Sum beta_j/j = 6250/59049
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^4  sigma_0: minimal J = 5 (3 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5}; Sum beta_j/j = 0
+  t_c^4  sigma_1: minimal J = 5 (3 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5}; Sum beta_j/j = -1195/1594323
+  t_c^4  sigma_2: minimal J = 4 (4 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4}; Sum beta_j/j = -500/59049
+      [assuming pole set j <= 5: 3 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4}; Sum beta_j/j = -500/59049
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^5  sigma_0: minimal J = 6 (2 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6}; Sum beta_j/j = 0
+  t_c^5  sigma_1: minimal J = 6 (2 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6}; Sum beta_j/j = 2800/129140163
+  t_c^5  sigma_2: minimal J = 5 (3 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5}; Sum beta_j/j = -7175/129140163
+      [assuming pole set j <= 6: 2 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5}; Sum beta_j/j = -7175/129140163
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^6  sigma_0: minimal J = 7 (1 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7}; Sum beta_j/j = 0
+  t_c^6  sigma_1: minimal J = 7 (1 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7}; Sum beta_j/j = 4715/774840978
+  t_c^6  sigma_2: minimal J = 6 (2 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6}; Sum beta_j/j = 6650/43046721
+      [assuming pole set j <= 7: 1 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6}; Sum beta_j/j = 6650/43046721
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^7  sigma_0: minimal J: untestable at z^9
+      [assuming pole set j <= 8: 0 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = 0
+      [hypothesis NO psi-linear term: minimal J = 8 (1 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = 0]
+  t_c^7  sigma_1: minimal J: untestable at z^9
+      [assuming pole set j <= 8: 0 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = -18925/13947137604
+      [hypothesis NO psi-linear term: minimal J = 8 (1 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = -18925/13947137604]
+  t_c^7  sigma_2: minimal J = 7 (1 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7}; Sum beta_j/j = -17185375/585779779368
+      [assuming pole set j <= 8: 0 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7}; Sum beta_j/j = -17185375/585779779368
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^8  sigma_0: minimal J: untestable at z^9
+      [pole set j <= 9 plus psi-linear term: too few z-orders]
+      [hypothesis NO psi-linear term: untestable]
+  t_c^8  sigma_1: minimal J: untestable at z^9
+      [pole set j <= 9 plus psi-linear term: too few z-orders]
+      [hypothesis NO psi-linear term: untestable]
+  t_c^8  sigma_2: minimal J: untestable at z^9
+      [pole set j <= 9 plus psi-linear term: too few z-orders]
+      [hypothesis NO psi-linear term: minimal J = 8 (1 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = 220550125/71172243193212]
+      closed-form predicted psi-coefficient: 0
+=== gauge c1=1 ===
+  t_c^-1 sigma_0: minimal J = 0 (8 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {}; Sum beta_j/j = 0
+  t_c^-1 sigma_1: minimal J = 0 (8 checks): a1(psi) = 0; a0(lam_0) = -10; leaves {}; Sum beta_j/j = 0
+  t_c^-1 sigma_2: minimal J = 0 (8 checks): a1(psi) = 0; a0(lam_0) = 100; leaves {}; Sum beta_j/j = 0
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^0  sigma_0: minimal J = 1 (7 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1}; Sum beta_j/j = 10
+  t_c^0  sigma_1: minimal J = 1 (7 checks): a1(psi) = 0; a0(lam_0) = -20/9; leaves {1}; Sum beta_j/j = -100/9
+  t_c^0  sigma_2: minimal J = 0 (8 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {}; Sum beta_j/j = 0
+      [assuming pole set j <= 1: 7 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {}; Sum beta_j/j = 0
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^1  sigma_0: minimal J = 2 (6 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2}; Sum beta_j/j = 0
+  t_c^1  sigma_1: minimal J = 2 (6 checks): a1(psi) = 0; a0(lam_0) = 10/81; leaves {1,2}; Sum beta_j/j = -200/81
+  t_c^1  sigma_2: minimal J = 1 (7 checks): a1(psi) = 0; a0(lam_0) = 200/81; leaves {1}; Sum beta_j/j = 1000/81
+      [assuming pole set j <= 2: 6 checks] a1(psi) = 0; a0(lam_0) = 200/81; leaves {1}; Sum beta_j/j = 1000/81
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^2  sigma_0: minimal J = 3 (5 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3}; Sum beta_j/j = 0
+  t_c^2  sigma_1: minimal J = 3 (5 checks): a1(psi) = 0; a0(lam_0) = -50/6561; leaves {1,2,3}; Sum beta_j/j = 3800/19683
+  t_c^2  sigma_2: minimal J = 2 (6 checks): a1(psi) = 0; a0(lam_0) = -200/243; leaves {1,2}; Sum beta_j/j = -1000/2187
+      [assuming pole set j <= 3: 5 checks] a1(psi) = 0; a0(lam_0) = -200/243; leaves {1,2}; Sum beta_j/j = -1000/2187
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^3  sigma_0: minimal J = 4 (4 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4}; Sum beta_j/j = 0
+  t_c^3  sigma_1: minimal J = 4 (4 checks): a1(psi) = 0; a0(lam_0) = 5/39366; leaves {1,2,3,4}; Sum beta_j/j = -800/177147
+  t_c^3  sigma_2: minimal J = 3 (5 checks): a1(psi) = 0; a0(lam_0) = 14050/59049; leaves {1,2,3}; Sum beta_j/j = -34750/177147
+      [assuming pole set j <= 4: 4 checks] a1(psi) = 0; a0(lam_0) = 14050/59049; leaves {1,2,3}; Sum beta_j/j = -34750/177147
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^4  sigma_0: minimal J = 5 (3 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5}; Sum beta_j/j = 0
+  t_c^4  sigma_1: minimal J = 5 (3 checks): a1(psi) = 0; a0(lam_0) = 7/118098; leaves {1,2,3,4,5}; Sum beta_j/j = -2680/1594323
+  t_c^4  sigma_2: minimal J = 4 (4 checks): a1(psi) = 0; a0(lam_0) = -35150/531441; leaves {1,2,3,4}; Sum beta_j/j = 13250/177147
+      [assuming pole set j <= 5: 3 checks] a1(psi) = 0; a0(lam_0) = -35150/531441; leaves {1,2,3,4}; Sum beta_j/j = 13250/177147
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^5  sigma_0: minimal J = 6 (2 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6}; Sum beta_j/j = 0
+  t_c^5  sigma_1: minimal J = 6 (2 checks): a1(psi) = 0; a0(lam_0) = -1939/172186884; leaves {1,2,3,4,5,6}; Sum beta_j/j = 5135/14348907
+  t_c^5  sigma_2: minimal J = 5 (3 checks): a1(psi) = 0; a0(lam_0) = 783755/43046721; leaves {1,2,3,4,5}; Sum beta_j/j = -2584475/129140163
+      [assuming pole set j <= 6: 2 checks] a1(psi) = 0; a0(lam_0) = 783755/43046721; leaves {1,2,3,4,5}; Sum beta_j/j = -2584475/129140163
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^6  sigma_0: minimal J = 7 (1 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7}; Sum beta_j/j = 0
+  t_c^6  sigma_1: minimal J = 7 (1 checks): a1(psi) = 0; a0(lam_0) = 1385/1205308188; leaves {1,2,3,4,5,6,7}; Sum beta_j/j = -46295/1162261467
+  t_c^6  sigma_2: minimal J = 6 (2 checks): a1(psi) = 0; a0(lam_0) = -1940335/387420489; leaves {1,2,3,4,5,6}; Sum beta_j/j = 1983325/387420489
+      [assuming pole set j <= 7: 1 checks] a1(psi) = 0; a0(lam_0) = -1940335/387420489; leaves {1,2,3,4,5,6}; Sum beta_j/j = 1983325/387420489
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^7  sigma_0: minimal J: untestable at z^9
+      [assuming pole set j <= 8: 0 checks] a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = 0
+      [hypothesis NO psi-linear term: minimal J = 8 (1 checks): a1(psi) = 0; a0(lam_0) = 0; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = 0]
+  t_c^7  sigma_1: minimal J: untestable at z^9
+      [assuming pole set j <= 8: 0 checks] a1(psi) = 0; a0(lam_0) = -36559/781039705824; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = 185165/97629963228
+      [hypothesis NO psi-linear term: minimal J = 8 (1 checks): a1(psi) = 0; a0(lam_0) = -36559/781039705824; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = 185165/97629963228]
+  t_c^7  sigma_2: minimal J = 7 (1 checks): a1(psi) = 0; a0(lam_0) = 269287735/195259926456; leaves {1,2,3,4,5,6,7}; Sum beta_j/j = -12538075/9298091736
+      [assuming pole set j <= 8: 0 checks] a1(psi) = 0; a0(lam_0) = 269287735/195259926456; leaves {1,2,3,4,5,6,7}; Sum beta_j/j = -12538075/9298091736
+      closed-form predicted psi-coefficient: 0  (= fitted)
+  t_c^8  sigma_0: minimal J: untestable at z^9
+      [pole set j <= 9 plus psi-linear term: too few z-orders]
+      [hypothesis NO psi-linear term: untestable]
+  t_c^8  sigma_1: minimal J: untestable at z^9
+      [pole set j <= 9 plus psi-linear term: too few z-orders]
+      [hypothesis NO psi-linear term: untestable]
+  t_c^8  sigma_2: minimal J: untestable at z^9
+      [pole set j <= 9 plus psi-linear term: too few z-orders]
+      [hypothesis NO psi-linear term: minimal J = 8 (1 checks): a1(psi) = 0; a0(lam_0) = -6011028925/15816054042936; leaves {1,2,3,4,5,6,7,8}; Sum beta_j/j = 52134707125/142344486386424]
+      closed-form predicted psi-coefficient: 0
+
+(I1) sigma_1 = Dc sigma_0 exactly (all z^0..z^9, to s^8): OK
+(I2) sigma_2 = c1^3 Del Dc sigma_1 + (E/2)(c1^2-1) sigma_1 exactly (to s^8): OK
+    L_1 = -E/(3 s c1): t_c-coefficients t_c^-1..t_c^3: 10, 5/9, 5/486, -5/2187, 37/157464
+    kappa = c1^3 Del: t_c^0..t_c^3: 0, -1, -1/18, -1/486;  mu: t_c^0..t_c^3: 0, 20/9, 10/81, -130/6561
+
+VIOLATIONS of (sigma^(-1) psi-independent; sigma^(k) in (Lam^+_{k+1})^3, no psi-linear term): none
+done
+
+real	0m14.271s
+user	0m13.906s
+sys	0m0.296s

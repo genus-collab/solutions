@@ -1,0 +1,29 @@
+h 5 R (2,) D 1 inrange True Xi 0 1.3
+h 5 R (3,) D 2 inrange True Xi 0 1.8
+h 5 R (4,) D 3 inrange True Xi 0 3.3
+h 5 R (5,) D 4 inrange True Xi 0 4.5
+h 5 R (8,) D 7 inrange True Xi 0 9.5
+h 5 R (9,) D 8 inrange False Xi -335396971/8398080000 11.4
+h 5 R (2, 2) D 2 inrange True Xi 0 4.1
+h 5 R (3, 2) D 3 inrange True Xi 0 2.5
+h 5 R (4, 2) D 4 inrange True Xi 0 3.9
+h 5 R (3, 3) D 4 inrange True Xi 0 1.4
+h 5 R (2, 2, 2) D 3 inrange True Xi 0 13.2
+h 6 R (2,) D 1 inrange True Xi 0 5.0
+h 6 R (3,) D 2 inrange True Xi 0 8.3
+h 6 R (5,) D 4 inrange True Xi 0 11.8
+h 6 R (11,) D 10 inrange False Xi -1003577861321/2799360000000 53.6
+h 6 R (2, 2) D 2 inrange True Xi 0 17.7
+h 7 R (2,) D 1 inrange True Xi 0 18.7
+h 7 R (4,) D 3 inrange True Xi 0 33.9
+Traceback (most recent call last):
+  File "<user home>\AppData\Local\Temp\claude\G--My-Drive-Projects-Old-refGW\37f24460-3601-4c85-b123-5156e19eb475\scratchpad\lp2_round5\MVmatch_ref2\testD.py", line 134, in <module>
+    v=Xi_schur(h,R,tau)
+  File "<user home>\AppData\Local\Temp\claude\G--My-Drive-Projects-Old-refGW\37f24460-3601-4c85-b123-5156e19eb475\scratchpad\lp2_round5\MVmatch_ref2\testD.py", line 95, in Xi_schur
+    L=Line(R,tau,N,Pext)
+  File "<user home>\AppData\Local\Temp\claude\G--My-Drive-Projects-Old-refGW\37f24460-3601-4c85-b123-5156e19eb475\scratchpad\lp2_round5\MVmatch_ref2\testD.py", line 45, in __init__
+    y=Y(nu,s.tau,s.P)
+  File "<user home>\AppData\Local\Temp\claude\G--My-Drive-Projects-Old-refGW\37f24460-3601-4c85-b123-5156e19eb475\scratchpad\lp2_round5\MVmatch_ref2\schur.py", line 76, in Y
+    L[2*k]=-BB[2*k]/(2*k*factorial(2*k))*sum(h**(2*k) for h in hs)
+            ~~^^^^^
+IndexError: list index out of range

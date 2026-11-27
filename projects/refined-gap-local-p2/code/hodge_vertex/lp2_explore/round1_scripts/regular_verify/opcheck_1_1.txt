@@ -1,0 +1,21 @@
+n=1: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=2: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=3: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=4: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=5: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=6: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=7: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=8: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=9: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=10: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=11: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=12: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=13: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=14: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=15: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=16: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=17: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=18: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=19: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+n=20: z^0 vanishes: 1; Op1,Op2,Op3 closed forms: 1 1 1
+ALL: OK

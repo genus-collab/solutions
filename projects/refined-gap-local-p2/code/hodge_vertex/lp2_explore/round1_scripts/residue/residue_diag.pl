@@ -1,0 +1,244 @@
+use strict; use warnings; use Math::BigRat;
+# edges_sing.pl -- CHECK 2 (analogue of F3/L2/L3 of hodge_vertex_conifold/leaf_proof/leaf_structure_proof.md) for K_P2 x C^2 on T_F,
+# frame B (rows times h_w(z)^-1, w = (E, -e1, -e2), as hv_sample.m), mode-B Hodge vertices, conifold polarisation.
+# Exact arithmetic (Math::BigRat, and Q(omega), omega = exp(2 pi i/3), for the two regular colours). No Mathematica.
+#
+# Construction (from lp2_lib.m buildRmatrix/evalPoint, re-derived by hand; see notes below):
+#  * cPP_k (cPP_z9.m) = 3^(p_k/2) sq^-1 N_k(L)/(E+3L)^(k+1), deg N_k <= k (N_k found by exact interpolation, checked).
+#  * Normalised rows Phat_{a,i} := sqD_i P_{a,i} (sqD = sqrtDelta of lp2_lib.m), so that the per-half-edge vertex factors are absorbed:
+#    Ehat_ij := sqD_i sqD_j Ed_ij, Dilhat_i(n) := sqD_i Dil_i(n), and a coloured graph = prod_v Delta^(g_v-1) * Hodge * prod Ehat * prod Dilhat,
+#    exactly the conifold convention of leaf_structure_proof.md s.1.2 (C6, C10, C11).
+#    Phat0_k = 3^((3+p_k)/2-k) alpha^2 N_k(L)/(alpha+L)^k,  L = -alpha/(1+3t),  alpha = E/3.
+#    Phat1 = L Phat0 + z Dop(Phat0),  Phat2 = Del [L Phat1 + z Dop(Phat1) - z XX Phat1]      (at c1 = 1, i.e. C1i = 1, C1p = XX/y)
+#    Dop(F) = (t/3) dF/dt - F/3 + (t/(1+3t)) F,   Del = 1 + 27 y.
+#    The edge factors depend on (C1i, C1p) only through XX (the C1i^2 terms cancel: etainv11 = E etainv12), so c1 = 1 is no loss for edges.
+#    The true rows for a section c1 are Phat1_true = Phat1/c1, Phat2_true = c1 Phat2 + (E/2)(c1 - 1/c1) Phat1 (reported for c1 = -2F1(1/3,2/3;1;Del),
+#    the normalisation C1cf of lp2_lib.m tcSetup: C1cf = 27 y dtc/dDel = -wc).
+#  * Colour i at t_i = omega^i t, t real; expansion variable s := 1 + 3t (real branch), so Del = 3s - 3s^2 + s^3 and t_c = Del + O(Del^2) = 3s + O(s^2).
+#    (t/3) d/dt at every colour = ((s-1)/3) d/ds.  XX = (Del - 1) wc'(Del)/wc(Del), wc = 2F1(1/3,2/3;1;Del) (the analytic solution of
+#    tcSetup's L2b at Del = 0; exponents 0,0, so it is unique; XX(0) = -2/9).
+#  * Edges: pre[p][q] = -(-1)^(p+q) Sum_ab etainv_ab Phat_a,i[p] Phat_b,j[q], Ehat_ij(m,n) = Sum_{k=0}^n (-1)^k pre[m+1+k][n-k] (evalPoint).
+# Leaf tests (variable psi = z of the edge generating function Sum E(m,n) z^m w^n, as conifold C12; leaves lam_j = 1/(E - j z)):
+#   L3-analogue: [s^k] Ehat_00(z,w) in span{lam_i(z) lam_l(w): (i-1)+(l-1) <= k};  L2-analogue: [s^k] [w^b] Ehat_0j(z,w) in span{lam_1..lam_(k+1)}(z).
+#   Because s = t_c * unit, and the statements are filtrations by order, they are equivalent for s and t_c, and for rho^e times the factors.
+# Usage: perl edges_sing.pl cPP_z9.m e1 e2 [NS=6] [KS=3]      (NS = s-precision of the rows; edges are then known to s^(NS-3))
+#   Runs of 2026-11-01: NS = 7, KS = 4 at (e1,e2) = (7,3), (5,2), (4,9) -> edges_sing_out_<e1>_<e2>.txt (about 1 min each).
+#   Diagnostics (off-shell polarisation, not part of the check): XXSHIFT=q adds the constant q to XX, XXSHIFT1=q adds q*s.
+#   Results: q = 1/10 constant shift -> E_00 acquires an s^-1 pole; q = 1/10 linear shift -> edges stay regular but the rank-one
+#   limit and the leaf supports fail. So the checks below are sensitive to the polarisation and pass only on shell.
+# Expected output: symplecticity exact (all zeros), all nine edge factors regular at s = 0, frame-B identity row = E/(E+z) at s = 0,
+#   E_00 at s^0 of rank one in lam_1 lam_1, E_0j at s^0 = lam_1(z) chi_j(w), leaf supports as in the conifold (if LC_P2 holds).
+
+my ($file, $E1, $E2, $NS, $KS) = @ARGV; $NS //= 6; $KS //= 3;
+sub QQ { Math::BigRat->new("$_[0]") }
+my $ZERO = QQ(0); my $ONE = QQ(1);
+local $/; open my $fh,'<',$file or die "$file: $!"; my $s=<$fh>; close $fh;
+$s =~ s/\s+//g; $s =~ s/^\{//; $s =~ s/\}$//;
+my @parts; { my $d=0; my $cur='';
+for my $ch (split //,$s){ if($ch eq '['||$ch eq '('){$d++} elsif($ch eq ']'||$ch eq ')'){$d--}
+  if($ch eq ',' && $d==0){push @parts,$cur;$cur=''} else {$cur.=$ch} } push @parts,$cur; }
+my $NZ = $#parts;   # z^0..z^NZ
+my $bs = chr(92);
+our ($e1,$e2,$s3,$sqv,$L);
+$e1 = QQ($E1); $e2 = QQ($E2); my $E = $e1+$e2; my $alpha = $E/3;
+sub ev { my ($x,$Lv,$s3v,$sqq)=@_; my $t=$x; $t =~ s/\Q$bs\E//g;
+  $t =~ s/\Q[Epsilon][1]\E/\$e1/g; $t =~ s/\Q[Epsilon][2]\E/\$e2/g; $t =~ s/\QLLL[0][y]\E/\$L/g;
+  $t =~ s/\QSqrt[3]\E/\$s3/g; $t =~ s/\bsq\b/\$sqv/g; $t =~ s/\^/**/g; $t =~ tr/[]/()/;
+  $t =~ s/(?<![\$\w.])(\d+)/QQ('$1')/g;
+  local $L = $Lv; local $s3 = $s3v; local $sqv = $sqq;
+  my $v = eval $t; die "$@ in $t" if $@; return $v; }
+print "e1 = $e1, e2 = $e2, E = $E; z-orders 0..$NZ; s-precision $NS; leaf tests k = 0..$KS\n";
+# ---- N_k, p_k ----
+my (@pk, @Nc);
+for my $k (0..$NZ) {
+  my $a = ev($parts[$k], QQ(5), $ONE, $ONE); my $b = ev($parts[$k], QQ(5), QQ(3), $ONE); my $c = ev($parts[$k], QQ(5), $ONE, QQ(2));
+  die "sq power not -1 at k=$k" unless $c*2 == $a;
+  my $q = $b/$a; my $p = ($q == 3) ? 1 : ($q == QQ('1/3') ? -1 : die "sqrt3 power ? at k=$k");
+  push @pk, $p;
+  my @xs = map { QQ($_+2) } 0..($k+3); my @ys = map { ev($parts[$k], $_, $ONE, $ONE) * ($E + 3*$_)**($k+1) } @xs;
+  my @cc = @ys; my $n = scalar(@xs);
+  for my $j (1..$n-1) { for (my $i=$n-1; $i>=$j; $i--) { $cc[$i] = ($cc[$i]-$cc[$i-1])/($xs[$i]-$xs[$i-$j]); } }
+  my @poly = ($ZERO) x $n; my @basis = ($ONE);
+  for my $i (0..$n-1) { for my $m (0..$#basis) { $poly[$m] += $cc[$i]*$basis[$m]; }
+    my @nb = ($ZERO) x (scalar(@basis)+1); for my $m (0..$#basis) { $nb[$m+1] += $basis[$m]; $nb[$m] -= $xs[$i]*$basis[$m]; } @basis = @nb; }
+  for my $m ($k+1..$n-1) { die "deg N_$k > $k" if $poly[$m] != 0; }
+  $Nc[$k] = [ @poly[0..$k] ];
+}
+print "Sqrt[3] powers p_k: @pk ; deg N_k <= k and sq^-1 checked for all k\n";
+# ---- Q(omega) ----
+sub K { [ $_[0], $_[1] // $ZERO ] }
+sub kq { [ QQ($_[0]), $ZERO ] }
+sub kadd { [ $_[0][0]+$_[1][0], $_[0][1]+$_[1][1] ] }
+sub ksub { [ $_[0][0]-$_[1][0], $_[0][1]-$_[1][1] ] }
+sub kmul { my ($x,$y)=@_; my $bd = $x->[1]*$y->[1]; [ $x->[0]*$y->[0]-$bd, $x->[0]*$y->[1]+$x->[1]*$y->[0]-$bd ] }
+sub ksc { [ $_[0]*$_[1][0], $_[0]*$_[1][1] ] }
+sub kz { $_[0][0] == 0 && $_[0][1] == 0 }
+sub kinv { my ($x)=@_; my ($a,$b)=@$x; my $nn = $a*$a-$a*$b+$b*$b; die "kinv 0" if $nn == 0; [ ($a-$b)/$nn, -$b/$nn ] }
+sub kstr { my ($x)=@_; return "$x->[0]" if $x->[1] == 0; return "($x->[0] + ($x->[1]) w)"; }
+my $W = [ $ZERO, $ONE ]; my $W2 = [ -$ONE, -$ONE ];
+# ---- truncated Laurent series in s: {v, N, a} (a->[i] = coefficient of s^(v+i)); known for exponents < N; all N capped at NS ----
+my $K0 = K($ZERO);
+sub sget { my ($f,$e)=@_; return $K0 if $e < $f->{v}; die "precision: s^$e of series known to $f->{N}" if $e >= $f->{N}; return $f->{a}[$e-$f->{v}] // $K0; }
+sub snew { my ($v,$N,$a)=@_; $N = $NS if $N > $NS; { v=>$v, N=>$N, a=>$a } }
+my $INF = 1000000;
+sub sconst { { v=>0, N=>$INF, a=>[ $_[0] ] } }
+sub spoly { my ($v,$a)=@_; { v=>$v, N=>$INF, a=>[ @$a ] } }   # exact (Laurent) polynomial s^v * (a0 + a1 s + ...)
+sub sext { my ($f)=@_; my $x = $f->{v} + scalar(@{$f->{a}}); return $x < $f->{N} ? $x : $f->{N}; }   # exponents >= sext are zero or unknown
+sub sadd { my ($f,$g)=@_; my $v = $f->{v} < $g->{v} ? $f->{v} : $g->{v}; my $N = $f->{N} < $g->{N} ? $f->{N} : $g->{N};
+  my $top = $N; if ($N >= $INF) { my ($x,$y) = (sext($f), sext($g)); $top = $x > $y ? $x : $y; }
+  my $r = { v=>$v, N=>$N, a=>[ map { kadd(sget($f,$_),sget($g,$_)) } $v..$top-1 ] }; $r->{N} = $NS if $r->{N} > $NS && $r->{N} < $INF; $r }
+sub ssub { my ($f,$g)=@_; sadd($f, sscal(K(-$ONE),$g)) }
+sub sscal { my ($k,$f)=@_; return { v=>$f->{v}, N=>$f->{N}, a=>[ map { kmul($k,$_ // $K0) } @{$f->{a}} ] }; snew($f->{v},$f->{N},[ map { kmul($k,$_ // $K0) } @{$f->{a}} ]) }
+sub smul { my ($f,$g)=@_; my $v = $f->{v}+$g->{v}; my $N1 = $f->{N}+$g->{v}; my $N2 = $g->{N}+$f->{v}; my $N = $N1<$N2?$N1:$N2; $N = $NS if $N > $NS;
+  my @a; for my $e ($v..$N-1) { my $acc = $K0; for my $i ($f->{v}..$e-$g->{v}) { my $x = $f->{a}[$i-$f->{v}]; next unless defined $x; next if kz($x);
+      my $y = $g->{a}[$e-$i-$g->{v}]; next unless defined $y; $acc = kadd($acc, kmul($x,$y)); } push @a,$acc; }
+  { v=>$v, N=>$N, a=>\@a } }
+sub sstrip { my ($f)=@_; my %g = (v=>$f->{v}, N=>$f->{N}, a=>[ @{$f->{a}} ]); while ($g{v} < $g{N} && kz($g{a}[0] // $K0)) { shift @{$g{a}}; $g{v}++; } \%g }
+sub sinv { my ($f)=@_; my $g = sstrip($f); die "sinv: zero series" if $g->{v} >= $g->{N}; my $R = $g->{N}-$g->{v}; my $Rc = $NS + $g->{v}; $R = $Rc if $R > $Rc;
+  my $b0 = kinv($g->{a}[0]); my @b = ($b0);
+  for my $n (1..$R-1) { my $acc = $K0; for my $j (1..$n) { my $x = $g->{a}[$j] // $K0; $acc = kadd($acc, kmul($x,$b[$n-$j])); } push @b, kmul(K(-$ONE), kmul($b0,$acc)); }
+  snew(-$g->{v}, -$g->{v}+$R, \@b) }
+sub sder { my ($f)=@_; my @a; for my $e ($f->{v}..sext($f)-1) { push @a, ksc(QQ($e), sget($f,$e)); }
+  return { v=>$f->{v}-1, N=>($f->{N} >= $INF ? $INF : $f->{N}-1), a=>[ @a ] } }   # coefficient e*a_e at s^(e-1)
+sub sval { my ($f)=@_; my $g = sstrip($f); return $g->{v} < $g->{N} ? $g->{v} : "none(<$g->{N})"; }
+# ---- XX on the conifold section, as a series in s ----
+my $sS = spoly(1, [ K($ONE) ]);
+my $Del = spoly(1, [ K(QQ(3)), K(QQ(-3)), K($ONE) ]);
+my @wa = ($ONE); for my $n (1..$NS+2) { push @wa, $wa[-1] * (QQ($n-1)+QQ('1/3'))*(QQ($n-1)+QQ('2/3'))/(QQ($n)*QQ($n)); }
+my $wc = sconst(K($ONE)); my $wcp = sconst(K($wa[1])); { my $Dp = sconst(K($ONE));
+  for my $n (1..$NS+1) { $Dp = smul($Dp,$Del); $wc = sadd($wc, sscal(K($wa[$n]),$Dp)); $wcp = sadd($wcp, sscal(K($wa[$n+1]*($n+1)),$Dp)); } }
+my $XX = smul(smul(sadd($Del, sconst(K(-$ONE))), $wcp), sinv($wc));
+if ($ENV{XXSHIFT}) { $XX = sadd($XX, sconst(K(QQ($ENV{XXSHIFT})))); print "OFF-SHELL TEST: XX shifted by $ENV{XXSHIFT}
+"; }   # diagnostic only
+if ($ENV{XXSHIFT1}) { $XX = sadd($XX, spoly(1, [ K(QQ($ENV{XXSHIFT1})) ])); print "OFF-SHELL TEST: XX shifted by ($ENV{XXSHIFT1}) s
+"; }   # diagnostic only
+print "XX(s) = ", join(', ', map { kstr(sget($XX,$_)) } 0..$NS-1), "   (XX(0) must be -2/9)\n";
+my $c1sec = sscal(K(-$ONE), $wc);   # C1cf = -wc
+# ---- h_w^-1 (frame B) ----
+my @B = (QQ('1/6'),QQ('-1/30'),QQ('1/42'),QQ('-1/30'),QQ('5/66'));
+my @w = ($E, -$e1, -$e2); my @lg = ($ZERO) x ($NZ+1);
+for my $k (1..5) { my $m = 2*$k-1; next if $m > $NZ; my $S = $ZERO; $S += $ONE/($_**$m) for @w; $lg[$m] = $B[$k-1]/(2*$k*(2*$k-1))*$S; }
+my @hinv = ($ONE, ($ZERO) x $NZ);
+for my $n (1..$NZ) { my $v = $ZERO; for my $k (1..$n) { $v += $k*$lg[$k]*$hinv[$n-$k]; } $hinv[$n] = $v/$n; }
+# ---- rows per colour ----
+my @om = (K($ONE), $W, $W2);
+my (@rows, @Delta, @rowsTrue);
+for my $i (0..0) {   # residue.pl: singular colour only
+  my $oi = $om[$i]; my $ti = spoly(0, [ ksc(QQ('-1/3'),$oi), ksc(QQ('1/3'),$oi) ]);        # t_i = omega^i (s-1)/3 (exact)
+  my ($vi, $ivi);
+  if ($i == 0) { $vi = spoly(1, [ K($ONE) ]); $ivi = spoly(-1, [ K($ONE) ]); }            # v_0 = 1+3t_0 = s exactly
+  else { $vi = spoly(0, [ ksub(K($ONE),$oi), $oi ]); $ivi = sinv($vi); }
+  my $Li = sscal(K(-$alpha), $ivi);
+  my $it = sinv($ti);
+  # (alpha+L)^-1 = v/(3 alpha t): exact in terms of v and 1/t (no Laurent cancellation needed)
+  my $iApL = sscal(K($ONE/(3*$alpha)), smul($vi, $it));
+  my $tov = smul($ti, $ivi);
+  my $Dop = sub { my ($F)=@_; sadd(sadd(smul(sscal(K(QQ('1/3'))
+            , sadd($sS, sconst(K(-$ONE)))), sder($F)), sscal(K(QQ('-1/3')),$F)), smul($tov,$F)) };
+  # L^j (alpha+L)^-k = (-alpha)^j v^(k-j) (3 alpha t)^-k : every term regular, no precision loss
+  my @Vp = (sconst(K($ONE))); push @Vp, smul($Vp[-1],$vi) for 1..$NZ;
+  my @Tp = (sconst(K($ONE))); push @Tp, smul($Tp[-1],$it) for 1..$NZ;
+  my @P0; for my $k (0..$NZ) { my $pp = (3+$pk[$k])/2 - $k; my $pref = $pp >= 0 ? QQ(3)**$pp : $ONE/(QQ(3)**(-$pp)); $pref *= $alpha*$alpha/((3*$alpha)**$k);
+    my $acc = sconst($K0); for my $j (0..$k) { $acc = sadd($acc, sscal(K($Nc[$k][$j]*(-$alpha)**$j), $Vp[$k-$j])); }
+    push @P0, sscal(K($pref), smul($acc, $Tp[$k])); }
+  my @P1; for my $m (0..$NZ) { my $x = smul($Li,$P0[$m]); $x = sadd($x, $Dop->($P0[$m-1])) if $m >= 1; push @P1, $x; }
+  my @P2; for my $m (0..$NZ) { my $x = smul($Li,$P1[$m]); $x = sadd($x, ssub($Dop->($P1[$m-1]), smul($XX,$P1[$m-1]))) if $m >= 1; push @P2, smul($Del,$x); }
+  # frame B
+  my @R; for my $a ([@P0],[@P1],[@P2]) { my @r; for my $k (0..$NZ) { my $acc = sconst($K0); for my $j (0..$k) { $acc = sadd($acc, sscal(K($hinv[$k-$j]), $a->[$j])); } push @r, $acc; } push @R, \@r; }
+  $rows[$i] = \@R;
+  $Delta[$i] = sscal(K(3*$e1*$e2*$E**3), smul(smul($ti,$ti), smul($ivi,$ivi)));
+  my $ic1 = sinv($c1sec);
+  $rowsTrue[$i] = [ $R[0], [ map { smul($R[1][$_], $ic1) } 0..$NZ ],
+     [ map { sadd(smul($c1sec,$R[2][$_]), smul(sscal(K($E/2), ssub($c1sec,$ic1)), $R[1][$_])) } 0..$NZ ] ];
+}
+print "rows built\n";
+my $et00 = 3*$alpha**3*$e1*$e2; my $et11 = -3*$E*$e1*$e2; my $et12 = -3*$e1*$e2;
+sub pairing { my ($ri,$rj,$p,$q)=@_;
+  sadd(sadd(sscal(K($et00), smul($ri->[0][$p],$rj->[0][$q])), sscal(K($et11), smul($ri->[1][$p],$rj->[1][$q]))),
+       sscal(K($et12), sadd(smul($ri->[1][$p],$rj->[2][$q]), smul($ri->[2][$p],$rj->[1][$q])))) }
+# ===================== residue.pl (appended to the row construction of edges_sing.pl, colour 0 only) =====================
+# Residue lemma test. sigma_a(psi) := Phat_{a,0}(-psi) (rows of the singular colour, frame B, normalised, c1 = 1 and c1 = C1cf).
+# Each s-coefficient of each component is fitted EXACTLY to  c0 + Sum_{j=1}^K b_j lam_j(psi),  lam_j(psi) = 1/(E - j psi),
+# from z^1..z^K and verified on z^(K+1)..z^NZ.  Then, with C_il := [lam_i lam_l'] P, P(psi,psi') := -<sigma(psi), sigma(psi')>
+# (index 0 = the constant function 1), the algebraic identity (proved in the report)
+#   [P(psi,psi') - P(-psi',psi')]/(psi+psi') = Sum_{i,l>=1} il/(E(i+l)) C_il lam_i lam_l'  +  Sum_{i>=1} (i/E) S_i lam_i(psi) lam_{-i}(psi'),
+#   S_i := E C_i0 + Sum_{l>=1} i C_il/(i+l),   lam_{-i}(psi') = 1/(E + i psi'),
+# is compared with the code's E_00 (difference quotient, as edges_sing.pl). Symplecticity (N(psi,-psi) = 0) <=> S_i = 0 (all i) and C_00 = -kappa.
+my $NE = $NZ-1;
+sub realq { my ($x)=@_; die "non-real coefficient at colour 0" unless $x->[1] == 0; return $x->[0]; }
+sub solve { my ($A)=@_; my $n = scalar(@$A); my @M = map { [ @$_ ] } @$A;
+  for my $c (0..$n-1) { my $p = $c; $p++ while $p < $n && $M[$p][$c] == 0; die "singular" if $p == $n; @M[$c,$p] = @M[$p,$c];
+    my $iv = $ONE/$M[$c][$c]; $M[$c] = [ map { $_*$iv } @{$M[$c]} ];
+    for my $r (0..$n-1) { next if $r == $c; my $f = $M[$r][$c]; next if $f == 0; $M[$r] = [ map { $M[$r][$_] - $f*$M[$c][$_] } 0..$n ]; } }
+  return [ map { $M[$_][$n] } 0..$n-1 ]; }
+sub leaffit { my ($f)=@_;
+  for my $K (0..$NZ-1) { my @b = ();
+    if ($K > 0) { my @A = map { my $m = $_; [ (map { (QQ(-$_))**$m / $E**($m+1) } 1..$K), $f->[$m] ] } 1..$K; @b = @{ solve(\@A) }; }
+    my $c0 = $f->[0]; $c0 -= $b[$_-1]/$E for 1..$K;
+    my $ok = 1; for my $m ($K+1..$NZ) { my $v = $ZERO; $v += $b[$_-1]*(QQ(-$_))**$m/$E**($m+1) for 1..$K; $ok = 0 if $v != $f->[$m]; }
+    return ($c0, \@b, $K, $NZ-$K) if $ok; }
+  return (); }
+my %eta = ('0,0'=>$et00, '1,1'=>$et11, '1,2'=>$et12, '2,1'=>$et12);
+# code edge E_00 (as edges_sing.pl section (C))
+my @Ed00; { my @pre; for my $p (0..$NZ) { for my $q (0..$NZ-$p) { $pre[$p][$q] = sscal(K((($p+$q)%2)?$ONE:-$ONE), pairing($rows[0],$rows[0],$p,$q)); } }
+  for my $m (0..$NE) { for my $n (0..$NE-$m) { my $acc = sconst($K0); for my $k (0..$n) { my $x = $pre[$m+1+$k][$n-$k]; $acc = sadd($acc, ($k%2)? sscal(K(-$ONE),$x) : $x); } $Ed00[$m][$n] = $acc; } } }
+my $edN = 99; my $edv = 99; for my $m (0..$NE) { for my $n (0..$NE-$m) { my $g = sstrip($Ed00[$m][$n]); $edN = $g->{N} if $g->{N} < $edN; $edv = $g->{v} if $g->{v} < $edv && $g->{v} < $g->{N}; } }
+print "code E_00: lowest s-power $edv, known to s^", $edN-1, "\n";
+my $nfail = 0;
+for my $set (['c1=1', $rows[0]], ['c1=C1cf', $rowsTrue[0]]) {
+  my ($name, $R) = @$set; print "==== rows $name ====\n";
+  my (%coef, @va, @ea);
+  for my $a (0..2) { my $v = 99; my $N = 99;
+    for my $m (0..$NZ) { my $g = sstrip($R->[$a][$m]); $N = $g->{N} if $g->{N} < $N; $v = $g->{v} if $g->{v} < $v && $g->{v} < $g->{N}; }
+    $va[$a] = $v; $ea[$a] = $N-1;
+    for my $e ($v..$N-1) { my @f = map { realq(sget($R->[$a][$_],$e)) } 0..$NZ;
+      my ($c0,$b,$Kk,$nch) = leaffit(\@f);
+      if (!defined $c0) { print "  sigma_$a [s^$e]: NOT of leaf form c0 + Sum b_j lam_j with K <= ", $NZ-2, "\n"; $nfail++; next; }
+      $coef{$a}{$e} = [ $c0, @$b ];
+      my $top = 0; for my $j (1..$Kk) { $top = $j if $b->[$j-1] != 0; }
+      print "  sigma_$a [s^$e]: c0 = $c0; leaves j <= $top (fit K = $Kk, $nch extra z-orders verified)", ($e >= 0 && $top > $e+1 ? "  [EXCEEDS e+1]" : ""), ($e < 0 && $top > 0 ? "  [psi-DEPENDENT at negative order]" : ""), "\n"; } }
+  my $kmin = 99; my $kmax = 99;
+  for my $ab (keys %eta) { my ($a,$b) = split /,/, $ab; my $x = $va[$a] + $ea[$b]; $kmax = $x if $x < $kmax; my $y = $va[$a]+$va[$b]; $kmin = $y if $y < $kmin; }
+  print "  pairing coefficients complete for s^$kmin .. s^$kmax\n";
+  for my $k ($kmin..$kmax) {
+    my %C; my $maxi = 0;
+    for my $ab (keys %eta) { my ($a,$b) = split /,/, $ab;
+      for my $e1 ($va[$a]..$ea[$a]) { my $e2 = $k - $e1; next unless exists $coef{$a}{$e1} && exists $coef{$b}{$e2};
+        my ($ca, $cb) = ($coef{$a}{$e1}, $coef{$b}{$e2});
+        for my $i (0..$#$ca) { next if $ca->[$i] == 0; for my $l (0..$#$cb) { next if $cb->[$l] == 0;
+          $C{$i}{$l} = ($C{$i}{$l} // $ZERO) - $eta{$ab}*$ca->[$i]*$cb->[$l]; $maxi = $i if $i > $maxi; $maxi = $l if $l > $maxi; } } } }
+    my $Cg = sub { $C{$_[0]}{$_[1]} // $ZERO };
+    # symmetry, constant term, residues S_i
+    my $sym = 1; for my $i (0..$maxi) { for my $l (0..$maxi) { $sym = 0 if $Cg->($i,$l) != $Cg->($l,$i); } }
+    my $kap = realq(sget($Delta[0],$k));
+    my $c00ok = ($Cg->(0,0) == -$kap);
+    my @S; my $Sok = 1; for my $i (1..$maxi) { my $v = $E*$Cg->($i,0); $v += QQ($i)*$Cg->($i,$_)/QQ($i+$_) for 1..$maxi; $S[$i] = $v; $Sok = 0 if $v != 0; }
+    # predicted edge coefficients A_il and support
+    my %A; my @out; for my $i (1..$maxi) { for my $l (1..$maxi) { my $v = QQ($i*$l)/($E*QQ($i+$l))*$Cg->($i,$l); $A{$i}{$l} = $v; push @out, "($i,$l)" if $v != 0 && ($i-1)+($l-1) > $k; } }
+    my $anyA = 0; for my $i (1..$maxi) { for my $l (1..$maxi) { $anyA = 1 if $A{$i}{$l} != 0; } }
+    # compare with code E_00 at s^k: all (m,n), m+n <= NE; prediction includes the S_i lam_i lam_{-i}' term (zero if symplectic)
+    my $cmp = 'not available (edge not known at this order)'; my $ncmp = 0;
+    if ($k < $edN) { my $ok = 1;
+      for my $m (0..$NE) { for my $n (0..$NE-$m) { my $pr = $ZERO;
+        for my $i (1..$maxi) { for my $l (1..$maxi) { next if $A{$i}{$l} == 0; $pr += $A{$i}{$l} * QQ($i)**$m * QQ($l)**$n / $E**($m+$n+2); }
+          $pr += (QQ($i)/$E)*$S[$i] * QQ($i)**$m * (QQ(-$i))**$n / $E**($m+$n+2) if $S[$i] != 0; }
+        $ncmp++; $ok = 0 if $pr != realq(sget($Ed00[$m][$n],$k)); } }
+      $cmp = $ok ? "EQUAL ($ncmp entries m+n <= $NE)" : "DIFFERENT"; $nfail++ unless $ok; }
+    $nfail++ unless $sym && $c00ok && $Sok;
+    print "  [s^$k] C symmetric: ", ($sym?"yes":"NO"), "; C_00 = -[s^$k]kappa (", $Cg->(0,0), " vs kappa ", $kap, "): ", ($c00ok?"yes":"NO"),
+          "; residues S_i = 0 (i=1..$maxi): ", ($Sok?"yes":"NO (".join(',',map { $S[$_] } 1..$maxi).")"), "\n";
+    print "         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': ", ($anyA ? "" : "ZERO; "), "support outside (i-1)+(l-1) <= $k: ", (@out ? join(' ',@out) : "none"), "; vs code E_00: $cmp\n";
+    if ($anyA) { my $top = 0; for my $i (1..$maxi) { for my $l (1..$maxi) { $top = $i if $A{$i}{$l} != 0 && $i > $top; } }
+      print "         A_il:"; for my $i (1..$top) { print "\n          ", join('  ', map { $A{$i}{$_} } 1..$top); } print "\n"; }
+  }
+}
+print "TOTAL failures: $nfail\ndone\n";
+# diag: for off-shell rows, fit sigma_a[s^e](z) = c0 + c1 z + Sum_{j<=K} b_j/(E + j z) (c1 z = -c1 psi: psi-linear remainder)
+sub linfit { my ($f)=@_;
+  for my $K (0..$NZ-3) { my @A = map { my $m = $_; [ ($m == 1 ? $ONE : $ZERO), (map { (QQ(-$_))**$m / $E**($m+1) } 1..$K), $f->[$m] ] } 1..$K+1;
+    my $x = solve(\@A); my ($c1, @b) = @$x; my $c0 = $f->[0]; $c0 -= $b[$_-1]/$E for 1..$K;
+    my $ok = 1; for my $m ($K+2..$NZ) { my $v = $ZERO; $v += $b[$_-1]*(QQ(-$_))**$m/$E**($m+1) for 1..$K; $ok = 0 if $v != $f->[$m]; }
+    return ($c0, $c1, $K, $NZ-$K-1) if $ok; } return (); }
+for my $set (['c1=1', $rows[0]], ['c1=C1cf', $rowsTrue[0]]) { my ($name,$R) = @$set;
+  for my $a (2) { for my $e (-1..4) { my @f = map { realq(sget($R->[$a][$_],$e)) } 0..$NZ; my @r = linfit(\@f);
+    print "  $name sigma_$a [s^$e]: ", (@r ? "c0 = $r[0], z-linear coefficient = $r[1], leaves K = $r[2] ($r[3] extra checks)" : "no fit"), "\n"; } } }

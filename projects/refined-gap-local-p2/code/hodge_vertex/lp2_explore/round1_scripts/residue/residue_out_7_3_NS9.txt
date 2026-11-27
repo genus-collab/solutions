@@ -1,0 +1,171 @@
+e1 = 7, e2 = 3, E = 10; z-orders 0..9; s-precision 9; leaf tests k = 0..3
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+XX(s) = -2/9, 2/27, 10/243, 14/729, 16/2187, 128/59049, 112/177147, 320/531441, 41068/43046721   (XX(0) must be -2/9)
+rows built
+code E_00: lowest s-power 0, known to s^6
+==== rows c1=1 ====
+  sigma_0 [s^0]: c0 = 0; leaves j <= 1 (fit K = 1, 8 extra z-orders verified)
+  sigma_0 [s^1]: c0 = 0; leaves j <= 2 (fit K = 2, 7 extra z-orders verified)
+  sigma_0 [s^2]: c0 = 0; leaves j <= 3 (fit K = 3, 6 extra z-orders verified)
+  sigma_0 [s^3]: c0 = 0; leaves j <= 4 (fit K = 4, 5 extra z-orders verified)
+  sigma_0 [s^4]: c0 = 0; leaves j <= 5 (fit K = 5, 4 extra z-orders verified)
+  sigma_0 [s^5]: c0 = 0; leaves j <= 6 (fit K = 6, 3 extra z-orders verified)
+  sigma_0 [s^6]: c0 = 0; leaves j <= 7 (fit K = 7, 2 extra z-orders verified)
+  sigma_0 [s^7]: c0 = 0; leaves j <= 8 (fit K = 8, 1 extra z-orders verified)
+  sigma_0 [s^8]: NOT of leaf form c0 + Sum b_j lam_j with K <= 7
+  sigma_1 [s^-1]: c0 = -10/3; leaves j <= 0 (fit K = 0, 9 extra z-orders verified)
+  sigma_1 [s^0]: c0 = 10/9; leaves j <= 1 (fit K = 1, 8 extra z-orders verified)
+  sigma_1 [s^1]: c0 = 20/27; leaves j <= 2 (fit K = 2, 7 extra z-orders verified)
+  sigma_1 [s^2]: c0 = 340/729; leaves j <= 3 (fit K = 3, 6 extra z-orders verified)
+  sigma_1 [s^3]: c0 = 620/2187; leaves j <= 4 (fit K = 4, 5 extra z-orders verified)
+  sigma_1 [s^4]: c0 = 1120/6561; leaves j <= 5 (fit K = 5, 4 extra z-orders verified)
+  sigma_1 [s^5]: c0 = 18620/177147; leaves j <= 6 (fit K = 6, 3 extra z-orders verified)
+  sigma_1 [s^6]: c0 = 36340/531441; leaves j <= 7 (fit K = 7, 2 extra z-orders verified)
+  sigma_1 [s^7]: c0 = 76520/1594323; leaves j <= 8 (fit K = 8, 1 extra z-orders verified)
+  sigma_2 [s^-1]: c0 = 100/3; leaves j <= 0 (fit K = 0, 9 extra z-orders verified)
+  sigma_2 [s^0]: c0 = -100/3; leaves j <= 0 (fit K = 0, 9 extra z-orders verified)
+  sigma_2 [s^1]: c0 = 200/27; leaves j <= 1 (fit K = 1, 8 extra z-orders verified)
+  sigma_2 [s^2]: c0 = -200/81; leaves j <= 2 (fit K = 2, 7 extra z-orders verified)
+  sigma_2 [s^3]: c0 = -3200/2187; leaves j <= 3 (fit K = 3, 6 extra z-orders verified)
+  sigma_2 [s^4]: c0 = -5600/6561; leaves j <= 4 (fit K = 4, 5 extra z-orders verified)
+  sigma_2 [s^5]: c0 = -89800/177147; leaves j <= 5 (fit K = 5, 4 extra z-orders verified)
+  sigma_2 [s^6]: c0 = -169400/531441; leaves j <= 6 (fit K = 6, 3 extra z-orders verified)
+  sigma_2 [s^7]: c0 = -348400/1594323; leaves j <= 7 (fit K = 7, 2 extra z-orders verified)
+  pairing coefficients complete for s^-2 .. s^6
+  [s^-2] C symmetric: yes; C_00 = -[s^-2]kappa (-7000 vs kappa 7000): yes; residues S_i = 0 (i=1..0): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': ZERO; support outside (i-1)+(l-1) <= -2: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+  [s^-1] C symmetric: yes; C_00 = -[s^-1]kappa (14000 vs kappa -14000): yes; residues S_i = 0 (i=1..1): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': ZERO; support outside (i-1)+(l-1) <= -1: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+  [s^0] C symmetric: yes; C_00 = -[s^0]kappa (-7000 vs kappa 7000): yes; residues S_i = 0 (i=1..2): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 0: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -70000/9
+  [s^1] C symmetric: yes; C_00 = -[s^1]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..3): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 1: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          70000/9  -280000/81
+          -280000/81  0
+  [s^2] C symmetric: yes; C_00 = -[s^2]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..4): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 2: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          140000/81  140000/81  -350000/243
+          140000/81  -140000/81  0
+          -350000/243  0  0
+  [s^3] C symmetric: yes; C_00 = -[s^3]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..5): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 3: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -700000/2187  1400000/729  -70000/243  -1120000/2187
+          1400000/729  0  -560000/729  0
+          -70000/243  -560000/729  0  0
+          -1120000/2187  0  0  0
+  [s^4] C symmetric: yes; C_00 = -[s^4]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..6): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 4: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -3710000/6561  13720000/19683  1960000/2187  -1400000/2187  -2450000/19683
+          13720000/19683  8120000/6561  -140000/243  -5600000/19683  0
+          1960000/2187  -140000/243  -6790000/19683  0  0
+          -1400000/2187  -5600000/19683  0  0  0
+          -2450000/19683  0  0  0  0
+  [s^5] C symmetric: yes; C_00 = -[s^5]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..7): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 5: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -6230000/19683  -980000/6561  58520000/59049  -280000/19683  -8750000/19683  560000/59049
+          -980000/6561  20440000/19683  7000000/19683  -10640000/19683  -1400000/19683  0
+          58520000/59049  7000000/19683  -10990000/19683  -7280000/59049  0  0
+          -280000/19683  -10640000/19683  -7280000/59049  0  0  0
+          -8750000/19683  -1400000/19683  0  0  0  0
+          560000/59049  0  0  0  0  0
+  [s^6] C symmetric: yes; C_00 = -[s^6]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..8): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 6: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -18200000/177147  -20020000/59049  76090000/177147  35840000/59049  -72800000/177147  -11060000/59049  20090000/531441
+          -20020000/59049  4480000/19683  161840000/177147  -40600000/177147  -700000/2187  980000/177147  0
+          76090000/177147  161840000/177147  -9100000/59049  -22120000/59049  -4550000/177147  0  0
+          35840000/59049  -40600000/177147  -22120000/59049  -20440000/531441  0  0  0
+          -72800000/177147  -700000/2187  -4550000/177147  0  0  0  0
+          -11060000/59049  980000/177147  0  0  0  0  0
+          20090000/531441  0  0  0  0  0  0
+==== rows c1=C1cf ====
+  sigma_0 [s^0]: c0 = 0; leaves j <= 1 (fit K = 1, 8 extra z-orders verified)
+  sigma_0 [s^1]: c0 = 0; leaves j <= 2 (fit K = 2, 7 extra z-orders verified)
+  sigma_0 [s^2]: c0 = 0; leaves j <= 3 (fit K = 3, 6 extra z-orders verified)
+  sigma_0 [s^3]: c0 = 0; leaves j <= 4 (fit K = 4, 5 extra z-orders verified)
+  sigma_0 [s^4]: c0 = 0; leaves j <= 5 (fit K = 5, 4 extra z-orders verified)
+  sigma_0 [s^5]: c0 = 0; leaves j <= 6 (fit K = 6, 3 extra z-orders verified)
+  sigma_0 [s^6]: c0 = 0; leaves j <= 7 (fit K = 7, 2 extra z-orders verified)
+  sigma_0 [s^7]: c0 = 0; leaves j <= 8 (fit K = 8, 1 extra z-orders verified)
+  sigma_0 [s^8]: NOT of leaf form c0 + Sum b_j lam_j with K <= 7
+  sigma_1 [s^-1]: c0 = 10/3; leaves j <= 0 (fit K = 0, 9 extra z-orders verified)
+  sigma_1 [s^0]: c0 = -10/3; leaves j <= 1 (fit K = 1, 8 extra z-orders verified)
+  sigma_1 [s^1]: c0 = 0; leaves j <= 2 (fit K = 2, 7 extra z-orders verified)
+  sigma_1 [s^2]: c0 = 0; leaves j <= 3 (fit K = 3, 6 extra z-orders verified)
+  sigma_1 [s^3]: c0 = 0; leaves j <= 4 (fit K = 4, 5 extra z-orders verified)
+  sigma_1 [s^4]: c0 = 0; leaves j <= 5 (fit K = 5, 4 extra z-orders verified)
+  sigma_1 [s^5]: c0 = 0; leaves j <= 6 (fit K = 6, 3 extra z-orders verified)
+  sigma_1 [s^6]: c0 = 0; leaves j <= 7 (fit K = 7, 2 extra z-orders verified)
+  sigma_1 [s^7]: c0 = 0; leaves j <= 8 (fit K = 8, 1 extra z-orders verified)
+  sigma_2 [s^-1]: c0 = -100/3; leaves j <= 0 (fit K = 0, 9 extra z-orders verified)
+  sigma_2 [s^0]: c0 = 100/3; leaves j <= 0 (fit K = 0, 9 extra z-orders verified)
+  sigma_2 [s^1]: c0 = 0; leaves j <= 1 (fit K = 1, 8 extra z-orders verified)
+  sigma_2 [s^2]: c0 = 0; leaves j <= 2 (fit K = 2, 7 extra z-orders verified)
+  sigma_2 [s^3]: c0 = 0; leaves j <= 3 (fit K = 3, 6 extra z-orders verified)
+  sigma_2 [s^4]: c0 = 0; leaves j <= 4 (fit K = 4, 5 extra z-orders verified)
+  sigma_2 [s^5]: c0 = 0; leaves j <= 5 (fit K = 5, 4 extra z-orders verified)
+  sigma_2 [s^6]: c0 = 0; leaves j <= 6 (fit K = 6, 3 extra z-orders verified)
+  sigma_2 [s^7]: c0 = 0; leaves j <= 7 (fit K = 7, 2 extra z-orders verified)
+  pairing coefficients complete for s^-2 .. s^6
+  [s^-2] C symmetric: yes; C_00 = -[s^-2]kappa (-7000 vs kappa 7000): yes; residues S_i = 0 (i=1..0): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': ZERO; support outside (i-1)+(l-1) <= -2: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+  [s^-1] C symmetric: yes; C_00 = -[s^-1]kappa (14000 vs kappa -14000): yes; residues S_i = 0 (i=1..1): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': ZERO; support outside (i-1)+(l-1) <= -1: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+  [s^0] C symmetric: yes; C_00 = -[s^0]kappa (-7000 vs kappa 7000): yes; residues S_i = 0 (i=1..2): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 0: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -70000/9
+  [s^1] C symmetric: yes; C_00 = -[s^1]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..3): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 1: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          70000/9  -280000/81
+          -280000/81  0
+  [s^2] C symmetric: yes; C_00 = -[s^2]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..4): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 2: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          140000/81  140000/81  -350000/243
+          140000/81  -140000/81  0
+          -350000/243  0  0
+  [s^3] C symmetric: yes; C_00 = -[s^3]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..5): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 3: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -700000/2187  1400000/729  -70000/243  -1120000/2187
+          1400000/729  0  -560000/729  0
+          -70000/243  -560000/729  0  0
+          -1120000/2187  0  0  0
+  [s^4] C symmetric: yes; C_00 = -[s^4]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..6): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 4: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -3710000/6561  13720000/19683  1960000/2187  -1400000/2187  -2450000/19683
+          13720000/19683  8120000/6561  -140000/243  -5600000/19683  0
+          1960000/2187  -140000/243  -6790000/19683  0  0
+          -1400000/2187  -5600000/19683  0  0  0
+          -2450000/19683  0  0  0  0
+  [s^5] C symmetric: yes; C_00 = -[s^5]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..7): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 5: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -6230000/19683  -980000/6561  58520000/59049  -280000/19683  -8750000/19683  560000/59049
+          -980000/6561  20440000/19683  7000000/19683  -10640000/19683  -1400000/19683  0
+          58520000/59049  7000000/19683  -10990000/19683  -7280000/59049  0  0
+          -280000/19683  -10640000/19683  -7280000/59049  0  0  0
+          -8750000/19683  -1400000/19683  0  0  0  0
+          560000/59049  0  0  0  0  0
+  [s^6] C symmetric: yes; C_00 = -[s^6]kappa (0 vs kappa 0): yes; residues S_i = 0 (i=1..8): yes
+         predicted E_00 = Sum il/(E(i+l)) C_il lam_i lam_l': support outside (i-1)+(l-1) <= 6: none; vs code E_00: EQUAL (45 entries m+n <= 8)
+         A_il:
+          -18200000/177147  -20020000/59049  76090000/177147  35840000/59049  -72800000/177147  -11060000/59049  20090000/531441
+          -20020000/59049  4480000/19683  161840000/177147  -40600000/177147  -700000/2187  980000/177147  0
+          76090000/177147  161840000/177147  -9100000/59049  -22120000/59049  -4550000/177147  0  0
+          35840000/59049  -40600000/177147  -22120000/59049  -20440000/531441  0  0  0
+          -72800000/177147  -700000/2187  -4550000/177147  0  0  0  0
+          -11060000/59049  980000/177147  0  0  0  0  0
+          20090000/531441  0  0  0  0  0  0
+TOTAL failures: 2
+done

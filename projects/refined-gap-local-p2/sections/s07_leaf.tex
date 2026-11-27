@@ -1,0 +1,414 @@
+% s07_leaf. Section file; new macros at the top; label prefix: lea
+\newcommand{\leaV}{\mathscr{V}}                 % \bbC[\psi] + span of the \lf_j, j >= 1
+\newcommand{\leaDg}{\mathrm{D}_{\ccf}}          % Y + z\ccf(1/\tc + d/d\tc)
+\newcommand{\leaDc}{\mathrm{D}_{\mathrm{c}}}    % \Yh + z/\tc + z d/d\tc
+\newcommand{\leaY}{\mathcal{Y}}                 % \tc\brow
+\newcommand{\leaU}{\widehat{\mathsf{U}}}        % scale-free edge
+
+\section{Leaf structure at the singular colour}
+\label{sec:lea}
+
+This section studies the factors of the decoration sum \cref{eq:set-graphsum} as functions of the conifold coordinate $\tc$, to all orders in $\tc$ and in the edge variables. All factors are the normalised frame-B factors of \cref{sec:set}, taken at $\cone=\ccf$. The result is \cref{thm:lea-main}: in every order in $\tc$, the singular row and the factors built from it are finite combinations of the leaves $\lf_j(\psi)=1/(E-j\psi)$, with a bound on $j$ that grows linearly with the order.
+
+The proofs are algebra on the closed form of the rows. They use \cref{lem:set-coord}, \cref{thm:row-pf}, \cref{lem:row-closed12}, \cref{cor:row-carry}, \cref{cor:row-closed} and \cref{prop:row-sympl}, and nothing else. They use nothing from \cref{sec:gen,sec:spe,sec:fra} and no statement of \cite{BS}: the pairing $\eta^{ab}$ and the operator $\LPF$ enter as definitions. In particular they depend neither on the mirror theorem nor on Teleman's classification.
+
+\textbf{Conventions of this section.} Except in \cref{lem:row-closed12}, part (G) of \cref{lem:lea-conj}, part (d) of \cref{prop:lea-H2} and \cref{rmk:lea-gauge}, which allow a general section $\cone$, we take $\cone=\ccf$. We write $v\coloneqq v_0$ and $Y\coloneqq Y_0$, on the real branch $t=-(1-\xi)^{1/3}/3$ of colour $0$. Then
+\begin{equation}\label{eq:lea-v}
+\theta v=\frac1E-\frac v3,\qquad Y=-\frac E3+\frac1v,\qquad \theta\log v=\frac YE,\qquad \Delta_0=\frac{3\epsilon_1\epsilon_2E}{v^{2}}.
+\end{equation}
+A half-edge with variable $\psi$ carries the row at $z=-\psi$. When $\epsilon_1,\epsilon_2$ are indeterminates, the scalars $\bbC$ in the spans below are read as the constant field $\Bbbk=\bbQ(\omega,\epsilon_1,\epsilon_2)$ of the proof of \cref{prop:row-sympl}. \draftnote{This sentence makes the reading of $\mathbb{C}$ in the spans explicit for indeterminate weights. Authors to confirm.}
+
+We recall the leaf notation of \cref{sec:set}: $\lf_j(\psi)\coloneqq1/(E-j\psi)$ for $j\in\bbZ\setminus\{0\}$; $\Lsp_m\coloneqq\mathrm{span}\{\lf_1,\dots,\lf_m\}$, $\Lsp_0\coloneqq0$, $\Lsp_m^{+}\coloneqq\bbC+\Lsp_m$; and $\qo\coloneqq E-E^2\lf_1$. Further, $\rho\coloneqq-Ev_0/\tc$ is the unit of \cref{lem:set-coord}, and $\qt(\psi)\coloneqq\sum_{d\ge1}\Dilh_0(d)\psi^d$.
+
+\subsection{Statement}
+
+\begin{thm}[Leaf structure]\genusstatus{AI-proposed, unchecked}\label{thm:lea-main}
+Let $\epsilon_1,\epsilon_2$ be complex numbers with $\epsilon_1\epsilon_2E\neq0$, or indeterminates. All factors are those of \cref{sec:set} at $\cone=\ccf$. Then:
+\begin{enumerate}
+\item[(F1)] $\Delta_0=3\epsilon_1\epsilon_2E^3/(\tc\rho)^2$, where $\rho$ is an analytic unit at $\tc=0$ with $\rho(0)=1$. For $j=1,2$, $\Delta_j$ is analytic at $\tc=0$, with
+\[
+\Delta_j(0)=\frac{\epsilon_1\epsilon_2E^3\omega^{2j}}{3(1-\omega^j)^2}\neq0.
+\]
+\item[(F2)] The normalised identity row at colour $0$ satisfies $\Ph_0^{(0)}(z;\tc=0)=E/(E+z)$. The rescaled row $\brow\coloneqq\rho\Ph^{(0)}(-\psi)$ has $\brow^{(-1)}=(0,E,-E^2)$ and $\brow^{(0)}=(E\lf_1,(E^2/9)\lf_1,0)$.
+\item[(F3)] Every dilaton factor $\Dilh_i(d)$ ($i\in\{0,1,2\}$, $d\ge1$) and every edge factor $\Edgeh_{ij}(m,n)$ ($i,j\in\{0,1,2\}$, $m,n\ge0$) is analytic at $\tc=0$.
+\item[(L1)] $[\tc^0](\rho\qt)=\qo$. For every $k\ge1$, $[\tc^k](\rho\qt)$ lies in $\Lsp_{k+1}$; in particular it has no constant term.
+\item[(L2)] Let $j\in\{1,2\}$ and let $e,b,k$ be integers with $b,k\ge0$. Then $[\tc^k][w^b](\rho^e\Edgeh_{0j}(\psi,w))$ lies in $\Lsp_{k+1}(\psi)$ and has no constant. Moreover $\Edgeh_{j0}(w,\psi)=\Edgeh_{0j}(\psi,w)$, so this covers both orientations of a mixed edge. For an edge whose other end is at colour $0$: $[\tc^k][\psi'^b](\rho^e\Edgeh_{00})$ lies in $\Lsp_{k+1}(\psi)$.
+\item[(L3)] For every integer $e$ and every $k\ge0$, $[\tc^k](\rho^e\Edgeh_{00}(\psi,\psi'))$ lies in
+\[
+\mathrm{span}\bigl\{\lf_i(\psi)\lf_l(\psi'):\ i,l\ge1,\ (i-1)+(l-1)\le k\bigr\}
+\]
+and is symmetric. Furthermore
+\[
+\Edgeh_{00}\big|_{\tc=0}=-\frac{\epsilon_1\epsilon_2E^4}{27}\,\lf_1(\psi)\lf_1(\psi').
+\]
+\end{enumerate}
+Every membership is an identity of formal power series in $\psi$ (and $\psi'$, $w$), holding at every $\psi$-order and every $\tc$-order. The coefficients of the leaves at each order lie in $\bbK=\bbQ(\epsilon_1,\epsilon_2)$, up to the algebraic factors in $\omega$ at the regular colours.
+\end{thm}
+
+The proof is given in \cref{sec:lea-proof}. It occupies the rest of the section.
+
+\begin{rmk}[Scaling]\label{rmk:lea-scale}
+The quantities $V_i=Ev_i=(1+3t_i)/t_i$, $\rho=-V_0/\tc$, $\tc$ and the function $\kappa$ of \cref{lem:lea-conj} do not depend on $\epsilon_1,\epsilon_2$. Moreover $\Srow(v,z)=\mathscr{S}(V,z/E)$ with
+\[
+\mathscr{S}(V,u)\coloneqq\sum_{l\ge0}\frac{r_l(Vu)^l}{\prod_{j\le l+1}(1+ju)},
+\]
+and $Y$, $\Yh$ and the function $\mu$ of \cref{lem:lea-conj}, as well as $\dtwo$ at $\cone=\ccf$, are $E$ times $\epsilon$-free series. Applying \cref{def:set-rows} gives $\brow_a(\psi;\tc;E)=E^a\brow_a(\psi/E;\tc;1)$, and the same scaling for the rows of colours $1,2$. With the values of $\eta^{ab}$ this gives
+\[
+\Delta_i=\epsilon_1\epsilon_2E^3\times(\text{universal}),\qquad \Dilh_i(d)=E^{1-d}\times(\text{universal}),\qquad \Edgeh_{ij}=\epsilon_1\epsilon_2E^2\,\leaU_{ij}(\psi/E,w/E;\tc),
+\]
+with $\leaU_{ij}$ universal. So \cref{thm:lea-main} is one statement over $\bbQ$ (over $\bbQ(\omega)$ at the regular colours). The framing $\tau=-\epsilon_1/E$ enters the rows only through the prefactor $\epsilon_1\epsilon_2$ and the scale $E$; it matters only on the Hodge side.
+
+The top coefficient of $\brow_0^{(k)}$ is non-zero if and only if $r_k\neq0$, independently of $\epsilon_1,\epsilon_2$, since only the summand $l=k$ of $\Srow$ reaches $\lf_{k+1}$. No statement on the non-vanishing of $r_k$ is made or used.
+\end{rmk}
+
+\subsection{Row \texorpdfstring{$0$}{0} at colour \texorpdfstring{$0$}{0}}\label{sec:lea-row0}
+
+Put $\brow\coloneqq\rho\Ph^{(0)}(z=-\psi)$, with components $\brow_a$, and $\brow^{(k)}\coloneqq[\tc^k]\brow$. By \cref{cor:row-carry}, in the colour-$0$, frame-B case, the $\brow^{(k)}$ are rational in $\psi$. By part (L1) of \cref{cor:row-closed} and by (I1), (I2) of \cref{lem:lea-conj} below, they lie in the space
+\[
+\leaV\coloneqq\bbC[\psi]\oplus\mathrm{span}\{\lf_j:\ j\ge1\},
+\]
+and partial fractions make the decomposition unique. Write $\brow_0^{(k)}=\sum_j\mathsf{b}_j^{(k)}\lf_j$. Here $\mathsf{b}_j^{(k)}$ is a local symbol, not to be confused with the $\beta_n$ of the conifold asymptotics. Translating \cref{lem:set-coord}, \cref{cor:row-closed} and \cref{prop:row-sympl} gives the following five facts, which, apart from the definition of the rows and \cref{lem:row-closed12} in \cref{prop:lea-H2}(d), are the only inputs of this subsection and of the next.
+
+\begin{enumerate}
+\item[(F1 at colour 0)] $\rho^2\Delta_0=3\epsilon_1\epsilon_2E^3/\tc^2$, with $\rho$ an analytic unit, $\rho(0)=1$. This is \cref{lem:set-coord}(b).
+\item[(L1 for $\brow_0$)] $\brow_0^{(-1)}=0$ and $\brow_0^{(k)}\in\Lsp_{k+1}$ for $k\ge0$. This is part (L1) of \cref{cor:row-closed}.
+\item[(F2)] $\brow_0^{(0)}=E\lf_1$. Indeed $\Srow(0,-\psi)=E/(E-\psi)$, and $\rho(0)=1$.
+\item[(Z-infinity)] For every $k$,
+\begin{equation}\label{eq:lea-Zinf}
+\sum_j\frac{\mathsf{b}_j^{(k)}}{j}=E\,\delta_{k0}.
+\end{equation}
+Indeed $\lim_{z\to\infty}z\rho\Srow=E$ by \cref{eq:row-zinf}; put $z=-\psi$ and use $-\psi\lf_j\to1/j$ as $\psi\to\infty$.
+\item[($K=1$)] As an identity of Laurent expansions in $\tc$ whose coefficients are rational functions of $\psi$, namely the restrictions to $\psi'=-\psi$ of elements of $\leaV\otimes\leaV$,
+\begin{multline}\label{eq:lea-K1}
+\eta^{00}\brow_0(\psi)\brow_0(-\psi)+\eta^{11}\brow_1(\psi)\brow_1(-\psi)\\
++\eta^{12}\bigl(\brow_1(\psi)\brow_2(-\psi)+\brow_2(\psi)\brow_1(-\psi)\bigr)=\frac{3\epsilon_1\epsilon_2E^3}{\tc^2}.
+\end{multline}
+This is \cref{prop:row-sympl} at $i=j=0$ combined with \cref{lem:set-coord}(b). Since \cref{prop:row-sympl} is an identity of rational functions of $t$ at each $z$-order, no continuation or branch argument is needed.
+\end{enumerate}
+
+From \cref{eq:row-zinf}: with $V=Ev$, the series $\Sinf=\sum_lr_l(Ev)^{l+1}/(l+1)!=V+V^2/18+O(V^3)$ equals $-\tc$, because $r_0=1$, $r_1=1/9$. Hence
+\begin{equation}\label{eq:lea-vexp}
+v=-\frac{\tc}{E}-\frac{\tc^2}{18E}+O(\tc^3),\qquad\rho=1+\frac{\tc}{18}+O(\tc^2).
+\end{equation}
+
+\begin{lem}[Dilaton factors at colour $0$]\genusstatus{AI-proposed, unchecked}\label{lem:lea-D0}
+\leavevmode
+\begin{enumerate}
+\item[(i)] $\rho\qt=-\psi\brow_0$.
+\item[(ii)] $[\tc^0](\rho\qt)=\qo=E-E^2\lf_1$.
+\item[(iii)] For $k\ge1$, $[\tc^k](\rho\qt)=-E\sum_j(\mathsf{b}_j^{(k)}/j)\lf_j$ lies in $\Lsp_{k+1}$, with no constant.
+\item[(iv)] Each $\Dilh_0(d)$ is analytic at $\tc=0$, with $\Dilh_0(d;0)=-E^{1-d}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+(i) By definition $\qt=-\psi\Srow(v,-\psi)$, and $\brow_0=\rho\Srow(v,-\psi)$.
+
+(ii), (iii) By \cref{eq:set-lam1},
+\[
+[\tc^k](\rho\qt)=-\psi\sum_j\mathsf{b}_j^{(k)}\lf_j=\sum_j\frac{\mathsf{b}_j^{(k)}}{j}-E\sum_j\frac{\mathsf{b}_j^{(k)}}{j}\lf_j.
+\]
+By \cref{eq:lea-Zinf}, the constant is $E\delta_{k0}$. At $k=0$ we have $\mathsf{b}_1^{(0)}=E$ by (F2), so the value is $E-E^2\lf_1=\qo$.
+
+(iv) We have $\Dilh_0(d)=(-1)^d[z^{d-1}]\Srow$. By the definition of $\Srow$, $[z^k]\Srow$ is a polynomial in $v$ of degree at most $k$, and $v$ is analytic. At $v=0$:
+\[
+(-1)^d[z^{d-1}]\frac{E}{E+z}=(-1)^d(-1/E)^{d-1}=-E^{1-d}.\qedhere
+\]
+\end{proof}
+
+The vanishing of the constant for $k\ge1$ is exactly (Z-infinity), that is, the normalisation $\Sinf(v)=-\tc$.
+
+\begin{rmk}[The section $\ccf$]\label{rmk:lea-onshell}
+The first-order system satisfied by the rows is \cref{eq:row-S1}; it is derived directly from \cref{thm:row-pf}. Let $\Fc=\theta\log\ccf$. Since $\ccf$ solves $\Ltwo$, the function $\Fc$ satisfies the Riccati equation
+\[
+\xi\,\theta\Fc+\xi\,\Fc^2+27y\,\Fc+6y=0,
+\]
+and it is the unique solution of this equation analytic at $\xi=0$, with $\Fc(0)=-2/9$: writing $\Fc=\sum_nx_n\xi^n$, the recursion
+\[
+(n+1)x_n=nx_{n-1}+[\Fc^2]_{n-1}+\tfrac29\delta_{n1}\qquad(n\ge1)
+\]
+is non-resonant. The proofs below use no first-order system for a general section, and no flow. That $\cone$ is the conifold section enters only through $\cone=\theta\tc$, that is, through (I1), (I2) of \cref{lem:lea-conj}, combined with (Z-infinity). This dependence is measured by \cref{prop:lea-H2}(d).
+\end{rmk}
+
+\subsection{Structure of the singular row}
+
+Everything in this subsection is algebra on the closed form, valid to all orders, using only the inputs of \cref{sec:lea-row0} and, for \cref{prop:lea-H2}(d), \cref{lem:row-closed12}. The identities (I1), (I2) below are proved, not assumed.
+
+\begin{lem}[Conjugation by $\rho$]\genusstatus{AI-proposed, unchecked}\label{lem:lea-conj}
+Recall $\ccf=\theta\tc$, and put $\leaDg\coloneqq Y+z\ccf(1/\tc+\dd/\dd\tc)$.
+\begin{enumerate}
+\item[(G)] For any section $\cone$: $\brow_1=\cone^{-1}\leaDg\brow_0$ and $\brow_2=\xi\cone^2(\leaDg-\dtwo)\brow_1$.
+\end{enumerate}
+For $\cone=\ccf$, put $\leaDc\coloneqq\Yh+z/\tc+z\,\dd/\dd\tc$. Then:
+\begin{enumerate}
+\item[(I1)] $\brow_1=\leaDc\brow_0$, where $\Yh\coloneqq\cone^{-1}Y=E\,\dd\log v/\dd\tc=E/\tc+E/18+O(\tc)$;
+\item[(I2)] $\brow_2=\kappa\leaDc\brow_1+\mu\brow_1$, where $\kappa\coloneqq\cone^3\xi=-\tc+O(\tc^2)$ and $\mu\coloneqq(E/2)(\cone^2-1)=O(\tc)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+By \cref{def:set-rows} and the fixed root $\Delta_0^{1/2}=\sqrt{3\epsilon_1\epsilon_2E}/v$ we have $\brow_a=\rho\Delta_0^{1/2}{\PB_a}^{(0)}$ at $z=-\psi$, and
+\[
+\rho\Delta_0^{1/2}=-\frac{Ev}{\tc}\cdot\frac{\sqrt{3\epsilon_1\epsilon_2E}}{v}=-\frac{E\sqrt{3\epsilon_1\epsilon_2E}}{\tc}.
+\]
+So ${\PB_a}^{(0)}$ is a constant multiple of $\tc\brow_a$; equivalently, one uses $\theta\log\rho=\theta\log v-\theta\log\tc$. Since $\tc$ is a coordinate, $\theta=\ccf\,\dd/\dd\tc$, and therefore
+\[
+(Y+z\theta)(\tc F)=\tc\Bigl(Y+\frac{z\ccf}{\tc}+z\ccf\frac{\dd}{\dd\tc}\Bigr)F=\tc\,\leaDg F.
+\]
+Substituting in \cref{def:set-rows} gives (G).
+
+Now let $\cone=\ccf$. Then $\cone^{-1}\leaDg=\leaDc$, which gives $\brow_1=\leaDc\brow_0$. By \cref{eq:lea-v}, $\Yh=\cone^{-1}Y=E\,\theta\log v/\theta\tc=E\,\dd\log v/\dd\tc$. From $v=-\rho\tc/E$ we get $\Yh=E/\tc+E\,\dd\log\rho/\dd\tc$, and the expansion follows from \cref{eq:lea-vexp}. This is (I1).
+
+Since $\leaDg=\cone\leaDc$, part (G) gives $\brow_2=\xi\cone^3\leaDc\brow_1-\xi\cone^2\dtwo\brow_1$. By the definition of $\dtwo$, $\xi\dtwo=E(\cone^{-2}-1)/2$, so $-\xi\cone^2\dtwo=(E/2)(\cone^2-1)=\mu$. Finally $\xi=\tc+O(\tc^2)$ and $\ccf(0)=-1$ by \cref{lem:set-coord}(a), so that $\kappa=-\tc+O(\tc^2)$ and $\mu=O(\tc)$. This is (I2).
+\end{proof}
+
+\begin{lem}[Recursion for coefficients]\genusstatus{AI-proposed, unchecked}\label{lem:lea-Dc}
+Let $F\in\tc^{-1}\leaV\fps{\tc}$, with $F^{(n)}\coloneqq[\tc^n]F$, and let $\Yh^{(m)}\coloneqq[\tc^m](\Yh-E/\tc)$. Then at $z=-\psi$,
+\[
+[\tc^n]\leaDc F=(E-(n+2)\psi)F^{(n+1)}+\sum_{m\ge0}\Yh^{(m)}F^{(n-m)}.
+\]
+\end{lem}
+
+\begin{proof}
+With $z=-\psi$, we have $\leaDc F=(\Yh-E/\tc)F+(E-\psi)F/\tc-\psi\,\dd F/\dd\tc$, and the coefficient of $\tc^n$ of $(E-\psi)F/\tc-\psi\,\dd F/\dd\tc$ is $(E-\psi-(n+1)\psi)F^{(n+1)}$.
+\end{proof}
+
+\begin{prop}[Structure of the singular row]\genusstatus{AI-proposed, unchecked}\label{prop:lea-H2}
+\leavevmode
+\begin{enumerate}
+\item[(a)] $\brow^{(k)}=0$ for $k\le-2$, and $\brow^{(-1)}=(0,E,-E^2)$.
+\item[(b)] For $k\ge0$, $\brow_0^{(k)}$ and $\brow_1^{(k)}$ lie in $\Lsp_{k+1}$, and $\brow_2^{(k)}$ lies in $\Lsp_k$. No component has a $\psi$-polynomial part or a constant at any $k\ge0$.
+\item[(c)] $\brow^{(0)}=(E\lf_1,(E^2/9)\lf_1,0)$.
+\item[(d)] Within the family $\cone=\ccf f(\xi)$, with $f$ analytic, the $\psi$-linear coefficient of $\brow_2$ is $E\xi\ccf^2\theta(f)/\tc$. It vanishes if and only if $f$ is constant. Analyticity of $\dtwo$ then forces $f=\pm1$. So in this family, the absence of $\psi$-polynomial parts selects the conifold section, up to sign. (The statement is confined to this family.)
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\emph{Step 1 ($\brow_1$).} Apply (I1) and \cref{lem:lea-Dc} with $F=\brow_0$.
+\begin{itemize}
+\item For $n\le-2$ the coefficient is $0$, since $\brow_0^{(k)}=0$ for $k\le-1$.
+\item For $n=-1$: $(E-\psi)E\lf_1=E$, by \cref{eq:set-lam2} and (F2). So $\brow_1^{(-1)}=E$.
+\item For $n\ge0$: by \cref{eq:set-lam2} with $N=n+2$, the term $(E-(n+2)\psi)\brow_0^{(n+1)}$ is the constant $(n+2)\sum_j\mathsf{b}_j^{(n+1)}/j$, which vanishes by \cref{eq:lea-Zinf} since $n+1\ge1$, plus terms in $\Lsp_{n+1}$; the top leaf $\lf_{n+2}$ cancels because $(E-(n+2)\psi)\lf_{n+2}=1$. The terms with $\Yh^{(m)}$ lie in $\Lsp_{n-m+1}$, and the term $m=n+1$ vanishes because $\brow_0^{(-1)}=0$. The term $E/\tc$ of $\Yh$ is built into the prefactor $E-(n+2)\psi$.
+\end{itemize}
+So $\brow_1^{(k)}\in\Lsp_{k+1}$ for $k\ge0$.
+
+\emph{Step 2 ($\brow_2$).} Apply \cref{lem:lea-Dc} with $F=\brow_1$, using Step 1.
+\begin{itemize}
+\item For $n\le-3$ the coefficient $[\tc^n]\leaDc\brow_1$ is $0$: this uses $\brow_1^{(-2)}=0$, and it is what gives $\brow_2^{(k)}=0$ for $k\le-2$.
+\item For $n=-2$ it is $E\cdot\brow_1^{(-1)}=E^2$. For $n=-1$ it is the constant obtained from $(E-\psi)\brow_1^{(0)}$, with $\brow_1^{(0)}\in\Lsp_1$, and $\Yh^{(0)}\brow_1^{(-1)}$.
+\item For $n\ge0$ it lies in $\Lsp^{+}_{n+1}$, by \cref{eq:set-lam2} and Step 1.
+\end{itemize}
+A $\psi$-linear term could only come from $(E-(n+2)\psi)$ times the constant part of $\brow_1^{(n+1)}$. That is zero: by Step 1 when $n+1\ge0$, and because $n+2=0$ for $n=-2$.
+
+By (I2), using $\kappa^{(0)}=\mu^{(0)}=0$ and $\kappa^{(1)}=-1$, where $\kappa^{(a)}\coloneqq[\tc^a]\kappa$, $\mu^{(a)}\coloneqq[\tc^a]\mu$: $\brow_2^{(k)}\in\Lsp^{+}_k$ for $k\ge0$, and $\brow_2^{(-1)}=-E^2$.
+
+\emph{Step 3 (constants of $\brow_2$).} By Steps 1 and 2 each component of $\brow$ is bounded as $\psi\to\infty$, with limit equal to its constant part. By Step 1 the limit of $\brow_1$ is $E/\tc$, and $\brow_0\to0$; call $\brow_2^\infty$ the limit of $\brow_2$. In \cref{eq:lea-K1} the two arguments are $\psi$ and $-\psi$; take the single limit $\psi\to\infty$. This limit is taken coefficientwise in $\tc$, and each coefficient is a rational function of $\psi$ by \cref{cor:row-carry}. Using $\eta^{11}=E\eta^{12}$, $\eta^{12}=-3\epsilon_1\epsilon_2$, $\eta^{22}=0$:
+\[
+-3\epsilon_1\epsilon_2\Bigl[E\Bigl(\frac{E}{\tc}\Bigr)^2+2\,\frac{E}{\tc}\,\brow_2^\infty\Bigr]=\frac{3\epsilon_1\epsilon_2E^3}{\tc^2}.
+\]
+Hence $\brow_2^\infty=-E^2/\tc$, and every constant of $\brow_2^{(k)}$, $k\ge0$, is $0$. This proves (a) and (b).
+
+\emph{Step 4 (part (c)).} The value of $\brow_0^{(0)}$ is (F2). With $r_1=1/9$ and \cref{eq:lea-vexp}, the expansion of $\rho\Srow(v,-\psi)$ gives
+\[
+\brow_0^{(1)}=-\frac{E}{18}\lf_1+\frac E9\lf_2.
+\]
+Then \cref{lem:lea-Dc} at $n=0$, with $\Yh^{(0)}=E/18$ from (I1), gives
+\[
+\brow_1^{(0)}=(E-2\psi)\brow_0^{(1)}+\frac{E^2}{18}\lf_1=\frac{E^2}{9}\lf_1,
+\]
+where we used $(E-2\psi)\lf_2=1$ and $(E-2\psi)\lf_1=2-E\lf_1$, which are \cref{eq:set-lam2}. Finally $\brow_2^{(0)}\in\Lsp_0=0$.
+
+\emph{Step 5 (part (d)).} Coefficientwise in $v$, with $\Sinf=\sum_lr_l(Ev)^{l+1}/(l+1)!$,
+\[
+\lim_{z\to\infty}\Srow^{[1]}=\frac{\Sinf'}{E},\qquad \lim_{z\to\infty}\frac{\Srow^{[2]}}{z}=\frac{v\Sinf''}{E^2}.
+\]
+\Cref{lem:row-closed12} states that
+\[
+\Ph_2=E\cone\,\xi\,\theta v\Bigl[\frac{E\,\theta v\,\Srow^{[2]}}{v^2}+\bigl(z\,\theta\log(\cone^{-1}\theta v)-\dtwo\bigr)\frac{\Srow^{[1]}}{v}\Bigr].
+\]
+The term with $\dtwo$ does not contribute to the limit of $\Ph_2/z$, since $\Srow^{[1]}$ is bounded. Therefore
+\[
+\lim_{z\to\infty}\frac{\Ph_2}{z}=\frac{\cone\,\xi\,\theta v}{v}\Bigl[\theta v\,\Sinf''+\theta\log(\cone^{-1}\theta v)\,\Sinf'\Bigr]=\frac{\xi}{\cone^{-2}v}\,\theta\bigl(\cone^{-1}\theta\Sinf\bigr),
+\]
+where the second equality is the Leibniz rule for $\theta(\cone^{-1}\theta v\,\Sinf')$. By (Z-infinity), $\Sinf=-\tc$, so $\cone^{-1}\theta\Sinf=-\ccf/\cone=-1/f$, and $\theta(-1/f)=\theta(f)/f^2$. Hence $\lim_{z\to\infty}\Ph_2/z=\xi\ccf^2\theta(f)/v$. Multiplying by $\rho$, using $\rho/v=-E/\tc$, and setting $\psi=-z$ gives the formula for the $\psi$-linear coefficient. It vanishes if and only if $\theta f=0$, that is, if and only if $f$ is constant. For constant $f$, $\dtwo=E(\ccf^{-2}f^{-2}-1)/(2\xi)$ is analytic at $\xi=0$ if and only if $f^2=1$, since $\ccf(0)^2=1$.
+\end{proof}
+
+\begin{rmk}
+A $\psi$-linear term $A\psi$ in $\brow$ would add the $\psi$-constant $-\langle A,\Ph^{(j)}(-w)\rangle$ to $\rho\Edgeh_{0j}$, by \cref{eq:set-edge}. This explains the role of the clause on $\psi$-polynomial parts in \cref{prop:lea-H2}(b). The remark is not used.
+\end{rmk}
+
+\begin{rmk}[Gauge]\label{rmk:lea-gauge}
+With the same $\cone$ at both colours, the combination
+\begin{equation}\label{eq:lea-gaugecomb}
+\eta^{11}\PB_1\PB_1'+\eta^{12}\bigl(\PB_1\PB_2'+\PB_2\PB_1'\bigr),
+\end{equation}
+where the unprimed rows are taken at a colour $i$ and an argument $z$ and the primed rows at a colour $j$ and an argument $z'$, depends only on $(\PB_0,\Fc)$, because $\eta^{11}=E\eta^{12}$. Indeed, put $\mathsf{Q}_1\coloneqq\Thp_i\PB_0$ and $\mathsf{T}\coloneqq\xi\Thp_i\mathsf{Q}_1+(E/2)\mathsf{Q}_1$. Using $\theta\cone^{-1}=-\cone^{-1}\Fc$ and $\xi\dtwo=E(\cone^{-2}-1)/2$, \cref{def:set-rows} gives $\PB_1=\cone^{-1}\mathsf{Q}_1$ and
+\[
+\PB_2=\cone\bigl[\mathsf{T}-z\xi\Fc\mathsf{Q}_1\bigr]-\cone^{-1}(E/2)\mathsf{Q}_1.
+\]
+Substituting in \cref{eq:lea-gaugecomb}, the terms in $\cone^{-2}$ cancel, and there remains $\eta^{12}\bigl[\mathsf{Q}_1\mathsf{T}'+\mathsf{T}\mathsf{Q}_1'-(z+z')\xi\Fc\mathsf{Q}_1\mathsf{Q}_1'\bigr]$.
+
+So every $\Edgeh_{ij}$ is the same in the true gauge and in the following gauge, in which $\cone$ is set to $1$ in the prefactors but $\Fc=\theta\log\ccf$ is kept (this is not the polarisation $\cone=1$):
+\[
+\PB_1^{\mathrm{hy}}\coloneqq\cone\PB_1,\qquad \PB_2^{\mathrm{hy}}\coloneqq\cone^{-1}\PB_2+\frac E2(\cone^{-2}-1)\cone\PB_1.
+\]
+The map between the two gauges is $z$-free, analytic and invertible, because $\ccf(0)=-1$. It preserves membership in $\bbC+\Lsp_m$, but not \cref{prop:lea-H2}(a), (c) or the no-constant clause of \cref{prop:lea-H2}(b): a constant at $k\ge0$ appears, for example $-(2/9)E$ in $\brow_1^{\mathrm{hy}}$ at $k=0$, and $\brow^{\mathrm{hy},(-1)}=(0,-E,E^2)$. This is harmless, since $\Edgeh_{ij}$ kills every $\psi$-constant and \cref{prop:lea-H2} is used only in the true gauge. In particular the sign of $\cone$ does not affect the edges. The sign of $\cone$ does not affect $\Dilh_i$ either, since it uses component $0$ of the row only, and $\Delta_i=3\epsilon_1\epsilon_2E/v_i^2$ does not involve $\cone$.
+\end{rmk}
+
+\subsection{The residue lemma and the edge at colour \texorpdfstring{$0$}{0}}
+
+\begin{lem}[Residue lemma]\genusstatus{AI-proposed, unchecked}\label{lem:lea-res}
+Let $f_0=1$ and $f_j=\lf_j$ for $j\ge1$. Let
+\[
+\mathsf{C}(\psi,\psi')=\sum_{i,l=0}^{K}C_{il}f_i(\psi)f_l(\psi'),\qquad C_{il}=C_{li},
+\]
+and suppose that $\varkappa+\mathsf{C}(\psi,-\psi)=0$ for a constant $\varkappa$. Then:
+\begin{enumerate}
+\item[(i)] $\varkappa=-C_{00}$;
+\item[(ii)] $EC_{i0}+\sum_{l\ge1}\dfrac{i\,C_{il}}{i+l}=0$ for every $i\ge1$;
+\item[(iii)] $\dfrac{\varkappa+\mathsf{C}(\psi,\psi')}{\psi+\psi'}=\displaystyle\sum_{i,l\ge1}\frac{il}{E(i+l)}\,C_{il}\,\lf_i(\psi)\lf_l(\psi')$.
+\end{enumerate}
+The statement holds for any rank and any constant symmetric pairing, since only the scalars $C_{il}$ occur.
+\end{lem}
+
+\begin{proof}
+We use the two identities
+\[
+\lf_i(\psi)-\lf_i(-\psi')=i(\psi+\psi')\lf_i(\psi)\lf_{-i}(\psi'),\qquad \lf_{-i}\lf_l=\frac{i\lf_{-i}+l\lf_l}{E(i+l)},
+\]
+the second one for $i,l\ge1$ at one and the same argument. On the diagonal, $\lf_i(-\psi)=\lf_{-i}(\psi)$, and so
+\[
+\varkappa+\mathsf{C}(\psi,-\psi)=\varkappa+C_{00}+\sum_{i\ge1}C_{i0}\bigl(\lf_i(\psi)+\lf_{-i}(\psi)\bigr)+\sum_{i,l\ge1}C_{il}\frac{l\lf_{-l}(\psi)+i\lf_i(\psi)}{E(i+l)}.
+\]
+This is a decomposition in the set $\{1,\lf_j:\ j\neq0\}$, which is linearly independent because the poles are distinct. The constant coefficient gives (i), and the coefficient of $\lf_i$ gives (ii). The coefficient of $\lf_{-l}$ gives (ii) again, by the symmetry of $C$.
+
+For (iii), by (i) and (ii),
+\[
+\varkappa+\mathsf{C}(\psi,\psi')=\sum_{i,l\ge1}C_{il}\Bigl[\lf_i(\psi)\lf_l(\psi')-\frac{i\lf_i(\psi)+l\lf_l(\psi')}{E(i+l)}\Bigr].
+\]
+Since
+\[
+i\lf_i(\psi)+l\lf_l(\psi')=\bigl(E(i+l)-il(\psi+\psi')\bigr)\lf_i(\psi)\lf_l(\psi'),
+\]
+the bracket equals $il(\psi+\psi')\lf_i(\psi)\lf_l(\psi')/(E(i+l))$.
+\end{proof}
+
+By \cref{eq:set-edge} and \cref{prop:row-sympl} at $i=j=0$, $\Edgeh_{00}(\psi,\psi')=\bigl[\Delta_0-\langle\Ph^{(0)}(-\psi),\Ph^{(0)}(-\psi')\rangle\bigr]/(\psi+\psi')$. Put $\leaY(\psi)\coloneqq\tc\brow(\psi)$ and
+\begin{equation}\label{eq:lea-Et}
+\Edget\coloneqq\tc^2\rho^2\Edgeh_{00}=\frac{3\epsilon_1\epsilon_2E^3-\langle\leaY(\psi),\leaY(\psi')\rangle}{\psi+\psi'}.
+\end{equation}
+The second equality uses \cref{lem:set-coord}(b).
+
+\begin{thm}[The edge at colour $0$]\genusstatus{AI-proposed, unchecked}\label{thm:lea-E00}
+Write $\lf_i=\lf_i(\psi)$ and $\lf_l'=\lf_l(\psi')$.
+\begin{enumerate}
+\item[(i)] We have
+\[
+\Edget=\sum_{n\ge2}\tc^n\sum_{\substack{i,l\ge1\\ i+l\le n}}\frac{il}{E(i+l)}\,C^{(n)}_{il}\,\lf_i\lf_l',\qquad C^{(n)}_{il}=-\sum_{k_1+k_2=n-2}\sum_{a,b}\eta^{ab}\,[\lf_i]\brow_a^{(k_1)}\,[\lf_l]\brow_b^{(k_2)}.
+\]
+\item[(ii)] $\Edgeh_{00}$ lies in $\bbK\fps{\psi,\psi'}\fps{\tc}$. In particular it is regular at the conifold.
+\item[(iii)] For all integers $e$ and all $k\ge0$: $[\tc^k](\rho^e\Edgeh_{00}(\psi,\psi'))$ lies in $\mathrm{span}\{\lf_i\lf_l':\ i,l\ge1,\ (i-1)+(l-1)\le k\}$, and it is symmetric.
+\item[(iv)] $\Edgeh_{00}|_{\tc=0}=-(\epsilon_1\epsilon_2E^4/27)\lf_1\lf_1'$.
+\item[(v)] $[\tc^k][\psi'^b](\rho^e\Edgeh_{00})$ lies in $\Lsp_{k+1}(\psi)$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+Apply \cref{lem:lea-res} order by order in $\tc$, at order $n$ with $\mathsf{C}=[\tc^n](-\langle\leaY(\psi),\leaY(\psi')\rangle)$ and $\varkappa=3\epsilon_1\epsilon_2E^3\delta_{n0}$. Its hypothesis is \cref{eq:lea-K1}. By \cref{prop:lea-H2}, $\leaY^{(0)}=\brow^{(-1)}=(0,E,-E^2)$ is constant. The constants of the $\leaY^{(a)}$ feed only $C_{i0}$, $C_{0l}$, $C_{00}$, and these do not appear on the right of \cref{lem:lea-res}(iii). Also by \cref{prop:lea-H2}, the leaf $\lf_i$ occurs in $\leaY^{(a)}$ only for $i\le a$, and $\lf_l$ occurs in $\leaY^{(b)}$ only for $l\le b$, with $a+b=n$. This gives (i), with $k_1=a-1$, $k_2=b-1\ge0$. At $n=0,1$ there are no admissible pairs.
+
+This gives the formal statement of (ii), with $\rho^{-2}\in\bbQ\fps{\tc}$. By \cref{cor:row-carry} each $\Edgeh_{00}(m,n)$, a polynomial in finitely many $z$-coefficients of the rows, is a meromorphic germ at $\tc=0$, so having no negative powers it is analytic.
+
+Parts (iii) and (v) follow by multiplying with the $z$-free unit $\rho^{e-2}$: at order $n=k+2$ we have $(i-1)+(l-1)\le n-2=k$. Multiplying by a power series in $\tc$ only brings in lower orders of $\Edget$. The symmetry follows from the symmetry of $\eta$, which gives $C^{(n)}_{il}=C^{(n)}_{li}$.
+
+For (iv): by \cref{prop:lea-H2}(c), $C^{(2)}_{11}=-\langle\mathbf{a},\mathbf{a}\rangle$ with $\mathbf{a}\coloneqq[\lf_1]\brow^{(0)}=(E,E^2/9,0)$, and
+\[
+\langle\mathbf{a},\mathbf{a}\rangle=\frac{\epsilon_1\epsilon_2E^3}{9}E^2-3\epsilon_1\epsilon_2E\frac{E^4}{81}=\frac{2\epsilon_1\epsilon_2E^5}{27}.
+\]
+So the coefficient of $\tc^2$ in $\Edget$ is $(1/(2E))(-2\epsilon_1\epsilon_2E^5/27)\lf_1\lf_1'=-(\epsilon_1\epsilon_2E^4/27)\lf_1\lf_1'$, and $\rho(0)=1$.
+\end{proof}
+
+\begin{rmk}
+Since the expansion (i) is explicit in $t$-independent leaves, no factorisation of the block of $\Edgeh_{00}$ and no flow equation in $\tc$ are used. Only the $\Delta$-normalised edge is treated here; vertex factors enter in \cref{sec:reg}.
+\end{rmk}
+
+\subsection{Regular colours and mixed edges}
+
+Throughout this subsection $j,j'\in\{1,2\}$. Let $\mathbf{v}_{j,k}(z)\coloneqq[\tc^k]\Ph^{(j)}(z)$, a vector of formal power series in $z$; it enters below at $z=-w$. It is not a vector of rational functions: since $v_j(0)\neq0$, the $l$-sum in $\Srow(v_j,-w)$ does not terminate (\cref{cor:row-carry}). Since $\Delta_j^{1/2}$ is analytic and non-zero at $\tc=0$, part (R) of \cref{cor:row-closed} gives $\mathbf{v}_{j,k}=0$ for $k<0$. Parts (M-a)--(M-c) below are taken $[w^b]$-wise, so they are not affected by the absence of rationality. Moreover, component $2$ of $\mathbf{v}_{j,0}$ is $0$ identically: in \cref{def:set-rows}, $\PB_2$ has the factor $\xi$, and the bracket is analytic at $\cone=\ccf$.
+
+\begin{thm}[Mixed and regular edges]\genusstatus{AI-proposed, unchecked}\label{thm:lea-M}
+\leavevmode
+\begin{enumerate}
+\item[(M-a)] $\rho\Edgeh_{0j}$ and $\Edgeh_{0j}$ lie in $\bbC\fps{\tc}\fps{\psi,w}$.
+\item[(M-b)] Write
+\[
+\brow^{(k_1)}=\mathbf{c}^{(k_1)}+\sum_{l=1}^{k_1+1}\mathbf{a}_l^{(k_1)}\lf_l,
+\]
+with $\mathbf{c}^{(-1)}=\brow^{(-1)}$, $\mathbf{a}^{(-1)}=0$, and $\mathbf{c}^{(k_1)}=0$ for $k_1\ge0$ by \cref{prop:lea-H2}. Then
+\[
+[\tc^k](\rho\Edgeh_{0j})(\psi,w)=-\sum_{k_1=0}^{k}\sum_{l=1}^{k_1+1}l\,\bigl\langle\mathbf{a}_l^{(k_1)},\mathbf{v}_{j,k-k_1}(-w)\bigr\rangle\frac{\lf_l(\psi)}{E+lw}.
+\]
+At $\tc=0$ this is of rank one: it equals $\lf_1(\psi)\chi_j(w)$, with
+\[
+\chi_j(w)=-\frac{\bigl\langle(E,E^2/9,0),\mathbf{v}_{j,0}(-w)\bigr\rangle}{E+w}.
+\]
+\item[(M-c)] For every integer $e$: $[\tc^k][w^b](\rho^e\Edgeh_{0j})$ lies in $\Lsp_{k+1}(\psi)$, with no constant.
+\item[(M-d)] $\Edgeh_{j0}(\psi,w)=\Edgeh_{0j}(w,\psi)$.
+\item[(M-e)] $\Edgeh_{jj'}$, $\Dilh_j$ and $\Delta_j$ are analytic at the conifold; $\Delta_j(0)=\epsilon_1\epsilon_2E^3\omega^{2j}/(3(1-\omega^j)^2)\neq0$; and $\Edgeh_{jj'}(\psi,w)=\Edgeh_{j'j}(w,\psi)$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+(M-a), (M-b). Put $\mathsf{n}(\psi,w)\coloneqq\rho\cP_{0j}(\psi,w)=-\langle\brow(\psi),\Ph^{(j)}(-w)\rangle$. By \cref{eq:set-edge},
+\[
+(\psi+w)\rho\Edgeh_{0j}=\mathsf{n}(\psi,w)-\mathsf{n}(-w,w).
+\]
+Every $\psi$-constant cancels in this difference: all of $\brow^{(-1)}$, and all constants at $k\ge0$ (which vanish anyway, by \cref{prop:lea-H2}). By \cref{eq:set-lam3}, $\lf_l(\psi)-\lf_l(-w)=l(\psi+w)\lf_l(\psi)\lf_l(-w)$, so the $\lf_l$ part of $\brow^{(k_1)}$ contributes
+\[
+-(\psi+w)\,l\,\bigl\langle\mathbf{a}_l^{(k_1)},\mathbf{v}_{j,k_2}(-w)\bigr\rangle\lf_l(\psi)\lf_l(-w),\qquad k_1+k_2=k,
+\]
+and $\lf_l(-w)=1/(E+lw)$. Dividing by $\psi+w$ gives the formula of (M-b). The coefficients for $k\le-1$ vanish because $\brow^{(-1)}$ is constant and $\mathbf{v}_{j,k}=0$ for $k<0$. The value at $\tc=0$ is the term $k=k_1=0$, $l=1$, with $\mathbf{a}_1^{(0)}=(E,E^2/9,0)$ from \cref{prop:lea-H2}(c), and $\rho(0)=1$. By \cref{cor:row-carry}, each $\Edgeh_{0j}(m,n)$ is a meromorphic germ with non-negative $\tc$-exponents, hence analytic. Since $\rho$ is an analytic unit, this holds with and without the factor $\rho$.
+
+(M-c). Take $[w^b]$ in (M-b), where $l\le k_1+1\le k+1$, and multiply by the $z$-free unit $\rho^{e-1}$.
+
+(M-d). This is the edge symmetry, from \cref{prop:row-sympl} at $(i,j)=(0,j)$, that is, $\langle\Ph^{(0)}(u),\Ph^{(j)}(-u)\rangle=0$, as an identity of Laurent expansions in $\tc$: by the drop-out step of the proof of \cref{prop:row-sympl}, the pairing depends only on row $0$, and each $z$-coefficient is rational in $t$. So $\cP_{0j}(-w,w)=0=\cP_{j0}(-w,w)$, and $\eta$ is symmetric.
+
+(M-e). Each $\Edgeh_{jj'}(m,n)$ is a polynomial in finitely many row coefficients, analytic by part (R) of \cref{cor:row-closed}. $\Dilh_j$ uses component $0$ only, and each $z$-coefficient of $\Srow(v_j,z)$ is a polynomial in the analytic function $v_j$. The value of $\Delta_j=3\epsilon_1\epsilon_2E^3/V_j^2$ uses $V_j=(1+3t_j)/t_j$ with $t_j\to-\omega^j/3$ and $1+3t_j\to1-\omega^j\neq0$. The symmetry is the edge symmetry, from \cref{prop:row-sympl}: by that proposition $\cP_{jj'}(-w,w)=-\delta_{jj'}\Delta_j$ does not depend on $w$, so that $\Edgeh_{jj'}(\psi,w)=[\delta_{jj'}\Delta_j-\langle\Ph^{(j)}(-\psi),\Ph^{(j')}(-w)\rangle]/(\psi+w)$, and $\eta$ is symmetric.
+\end{proof}
+
+\begin{rmk}
+The regular-regular edge between two different colours is covered by (M-e). That component $2$ of $\mathbf{v}_{j,0}$ vanishes can also be seen from orthogonality: the order-$\tc^{-1}$ part of $\langle\brow(u),\Ph^{(j)}(u)\rangle=0$ reads
+\[
+\bigl\langle\brow^{(-1)},\mathbf{v}_{j,0}\bigr\rangle=-3\epsilon_1\epsilon_2E\,(\mathbf{v}_{j,0})_2=0,
+\]
+since $\brow^{(-1)}=(0,E,-E^2)$ is constant. So the component $(\mathbf{v}_{j,0})_2$ does not contribute to $\chi_j$ in the rank-one form at $\tc=0$.
+\end{rmk}
+
+\subsection{Proof of the leaf structure}\label{sec:lea-proof}
+
+\begin{proof}[Proof of \cref{thm:lea-main}]
+(F1) is \cref{lem:set-coord}(b) at colour $0$ and (M-e) of \cref{thm:lea-M} at colours $1,2$.
+
+(F2) is part (F2) of \cref{cor:row-closed}, for the identity row, and \cref{prop:lea-H2}(a), (c), for the rescaled row.
+
+(F3): for $\Dilh_0$ this is \cref{lem:lea-D0}(iv), and for $\Dilh_j$ it is (M-e). For the edges: $\Edgeh_{00}$ is \cref{thm:lea-E00}(ii); $\Edgeh_{0j}$ is (M-a); $\Edgeh_{j0}$ is (M-d); $\Edgeh_{jj'}$ is (M-e).
+
+(L1) is \cref{lem:lea-D0}(ii), (iii).
+
+(L2) is (M-c) and (M-d) of \cref{thm:lea-M}, together with \cref{thm:lea-E00}(v).
+
+(L3) is \cref{thm:lea-E00}(iii), (iv).
+\end{proof}
+
+The values at $\tc=0$ are collected in the following table, for orientation.
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{ll}
+factor & value at $\tc=0$\\ \hline
+$\Dilh_0(d)$ & $-E^{1-d}$, that is, $\qt|_{\tc=0}=\qo=-E\psi/(E-\psi)$\\
+$\Edgeh_{00}$ & $-(\epsilon_1\epsilon_2E^4/27)\lf_1(\psi)\lf_1(\psi')$\\
+$\Edgeh_{0j}$ & $\lf_1(\psi)\chi_j(w)$, of rank one, $\chi_j(w)=-\langle(E,E^2/9,0),\mathbf{v}_{j,0}(-w)\rangle/(E+w)$\\
+$\Edgeh_{jj'}$ & analytic, no closed form given here\\
+$\Delta_0$ & $3\epsilon_1\epsilon_2E^3/(\tc\rho)^2$ (double pole)\\
+$\Delta_j$ & $\epsilon_1\epsilon_2E^3\omega^{2j}/(3(1-\omega^j)^2)\neq0$
+\end{tabular}
+\end{center}

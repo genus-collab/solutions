@@ -1,0 +1,108 @@
+e=(7,3) t0=1/2 control=none
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: 0
+  z^3 residual: 0
+  z^4 residual: 0
+  z^5 residual: 0
+  z^6 residual: 0
+  z^7 residual: 0
+  z^8 residual: 0
+  z^9 residual: 0
+  z^10 residual: 0
+e=(5,2) t0=-2/7 control=none
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: 0
+  z^3 residual: 0
+  z^4 residual: 0
+  z^5 residual: 0
+  z^6 residual: 0
+  z^7 residual: 0
+  z^8 residual: 0
+  z^9 residual: 0
+  z^10 residual: 0
+e=(4,9) t0=3/11 control=none
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: 0
+  z^3 residual: 0
+  z^4 residual: 0
+  z^5 residual: 0
+  z^6 residual: 0
+  z^7 residual: 0
+  z^8 residual: 0
+  z^9 residual: 0
+  z^10 residual: 0
+e=(1,-3) t0=5/4 control=none
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: 0
+  z^3 residual: 0
+  z^4 residual: 0
+  z^5 residual: 0
+  z^6 residual: 0
+  z^7 residual: 0
+  z^8 residual: 0
+  z^9 residual: 0
+  z^10 residual: 0
+e=(2,1) t0=-1/5 control=none
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: 0
+  z^3 residual: 0
+  z^4 residual: 0
+  z^5 residual: 0
+  z^6 residual: 0
+  z^7 residual: 0
+  z^8 residual: 0
+  z^9 residual: 0
+  z^10 residual: 0
+e=(7,3) t0=1/2 control=pert5
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: 0
+  z^3 residual: 0
+  z^4 residual: 0
+  z^5 residual: 0
+  z^6 residual: NONZERO (-766823251757/1451792885760000000000)
+  z^7 residual: NONZERO (865152770599373/25609626504806400000000000)
+  z^8 residual: NONZERO (15890907157685339/384144397572096000000000000)
+  z^9 residual: 0
+  z^10 residual: 0
+e=(7,3) t0=1/2 control=zneg
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: NONZERO (1/1350)
+  z^3 residual: NONZERO (-17/1134000)
+  z^4 residual: NONZERO (-541/70560000)
+  z^5 residual: NONZERO (-23517631/72013536000000)
+  z^6 residual: NONZERO (156590382383/241965480960000000)
+  z^7 residual: NONZERO (-865152770599373/12804813252403200000000)
+  z^8 residual: NONZERO (-412957668141567823/3983719678525440000000000)
+  z^9 residual: NONZERO (14682331248598428344201/271052286926870937600000000000)
+  z^10 residual: NONZERO (53986323316057227338790997/5464414104445718102016000000000000)
+e=(7,3) t0=1/2 control=hw
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: 0
+  z^3 residual: 0
+  z^4 residual: 0
+  z^5 residual: 0
+  z^6 residual: 0
+  z^7 residual: 0
+  z^8 residual: 0
+  z^9 residual: 0
+  z^10 residual: 0
+e=(7,3) t0=1/2 control=tdep
+  z^0 residual: 0
+  z^1 residual: 0
+  z^2 residual: NONZERO (1/120)
+  z^3 residual: NONZERO (-179/100800)
+  z^4 residual: NONZERO (227051/508032000)
+  z^5 residual: NONZERO (-79379429/6401203200000)
+  z^6 residual: NONZERO (8995278559/21508042752000000)
+  z^7 residual: NONZERO (-43003880804503/1138205622435840000000)
+  z^8 residual: NONZERO (-481558311649231501/9560927228461056000000000)
+  z^9 residual: NONZERO (-21334800427005951391/8031178871907287040000000000)
+  z^10 residual: NONZERO (4792399607653628112925813/485725698172952720179200000000000)

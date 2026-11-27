@@ -1,0 +1,30 @@
+form k=0: stored Sqrt3 power 1; interp verified on 6 extra pts: yes; s-exponents 1..1; OK
+form k=1: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..2; OK
+form k=2: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..3; OK
+form k=3: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..4; OK
+form k=4: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..5; OK
+form k=5: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..6; OK
+form k=6: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..7; OK
+form k=7: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..8; OK
+form k=8: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..9; OK
+form k=9: stored Sqrt3 power -1; interp verified on 6 extra pts: yes; s-exponents 1..10; OK
+S_0 = 1/4 s
+FORM ALL: OK
+PF z^0: 0
+PF z^1: 0
+PF z^2: 0
+PF z^3: 0
+PF z^4: 0
+PF z^5: 0
+PF z^6: 0
+PF z^7: 0
+PF z^8: 0
+PF z^9: 0
+PF ALL: EXACT ZERO
+colour 1: t = 0 + (-1/3) w, s = 3 + (3/2) w
+colour 2: t = 1/3 + (1/3) w, s = 3/2 + (-3/2) w
+Pi_11: = delta through z^9
+Pi_12: = delta through z^9
+Pi_21: = delta through z^9
+Pi_22: = delta through z^9
+ORTHO ALL: EXACT

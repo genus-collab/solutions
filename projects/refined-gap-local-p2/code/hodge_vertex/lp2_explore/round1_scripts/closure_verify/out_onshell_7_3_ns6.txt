@@ -1,0 +1,13 @@
+e1 = 7, e2 = 3, E = 10; z-orders 0..9; s-precision 6; leaf tests k = 0..3
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+mode onshell; XX = theta log c1: -2/9, 2/27, 10/243, 14/729, 16/2187
+  XX(direct) - XX(edges_sing): valuation none(<5)
+  Rd = 0, 0, 0, 0  (valuation none(<5))
+  G A0 symmetric (to known order): YES
+PF residual (true): ZERO all colours z^0..z^9
+my rows v1,v2 vs edges_sing rowsTrue: EQUAL
+closure C1i Th v = (A0 - z^2 c1 Rd E21) v: EXACT (min known s-order 2)
+
+real	7m44.554s
+user	7m39.515s
+sys	0m2.765s

@@ -1,0 +1,367 @@
+(* Plain-text export of localp2CY5_genus3.nb (2026-11-27): Input cells as code, text cells as comments; outputs omitted. *)
+
+(* ::Title:: Local P2 x C2: genus 3 free energy on the fibrewise torus *)
+
+(* ::Text:: Successor of localp2CY5_optimised.nb. Computes the Givental-Teleman graph sum for F_{g,0}(K_P2 x C^2, T_F) with the R-matrix to order z^6 from localp2final_CY5_v16.nb (sidecar cPPu6.mx), by automated enumeration of decorated stable graphs and exact evaluation at sample points, followed by reconstruction of the answer as a polynomial in XX = y c1'/c1 whose coefficients are rational functions of y and homogeneous Laurent polynomials in (eps1, eps2). The genus <= 2 results of v15 (F03, F04, F05, F11, F20) are reproduced as regression tests. Evaluate top to bottom; requires the sidecars cPPu6.mx and StableGraph-2.bin, StableGraph-3.bin in the notebook directory. *)
+
+(* ::Text:: Conventions. Vertices carry idempotent labels i in {0,1,2}; on T_F the canonical coordinates are LLL[i][y] = -alpha/(1 + 3 omega^i t), t = y^(1/3), alpha = (eps1+eps2)/3. Graph factors are those of v15: Dilaton[i,n] = [z^(n-1)] (-P_0i(-z)), Leaf[i,n,a] = [z^n] P_ai(-z), EdgeTerm[i,j,m,n] = [w^m z^n] (delta_ij - sum_ab P_ai(-w) eta^{-1}_ab P_bj(-z))/(w+z), sqrtDelta[i] = Sqrt[eps1 eps2/e3] (3 e3 + e2 LLL[i]). A graph contributes 1/|Aut(Gamma)| times the sum over ALL labelled psi-assignments on half-edges, legs and dilaton leaves and over all 3^V colourings, with the extra weights 1/m_v! (legs) and 1/nd_v! (dilaton leaves) and the vertex factor sqrtDelta^(2g_v-2+|H(v)|) <prod tau> (Witten-Kontsevich numbers by the string equation + DVV recursion). This reproduces every hand-written term of v15 and shows that the three-vertex chain graph of the 5-point function (excluded in v15, whose stored F05 output is stale) is needed to match Q d/dQ of the 4-point function. *)
+
+(* ::Text:: Numerics. Everything is evaluated at rational sample points (t0, x0 = eps1/eps2) with 300-digit arithmetic (omega numeric), keeping C1i = 1/c1 and C1p = c1' symbolic so that the XX-dependence is separated; the results are rational numbers, recovered exactly by Rationalize and then reconstructed as rational functions of y (generic rational reconstruction verified on spare points) and as symmetric homogeneous polynomials of degree 2g in (eps1, eps2). *)
+
+(* ::Section:: Core routines *)
+
+(* Part B core: fibrewise (T_F) Givental graph sum for K_P2 x C^2 by exact-structure sampling.
+   Load after defining cPP[0, i_][k] for k = 0..KMAX (rational functions of y, LLL[i][y], eps).
+   Everything is evaluated at numeric sample points (t0 = y^(1/3), x0 = eps1/eps2) in high precision,
+   keeping C1i = 1/c1, C1p = c1' symbolic so that the dependence on XX = y c1'/c1 is separated. *)
+
+PREC = 300;
+ww = Exp[2 Pi I/3];
+
+(* ---------- symbolic setup in t (i = 0 only; other idempotents by t -> w^i t) ---------- *)
+alpha = (\[Epsilon][1] + \[Epsilon][2])/3;
+eeF[1] = 3 alpha; eeF[2] = 3 alpha^2; eeF[3] = alpha^3;
+LLt0 = -alpha/(1 + 3 t);                         (* LLL[0][y] on T_F with y = t^3 *)
+sqrule = Power[(\[Epsilon][1] \[Epsilon][2])/(\[Epsilon][1] + \[Epsilon][2])^3, r_] :> sq^(2 r);
+etaF = -{{-(1/(3 eeF[3] \[Epsilon][1] \[Epsilon][2])), 0, 0}, {0, 0, 1/(3 \[Epsilon][1] \[Epsilon][2])}, {0, 1/(3 \[Epsilon][1] \[Epsilon][2]), -(eeF[1]/(3 \[Epsilon][1] \[Epsilon][2]))}};
+etainvF = Simplify[Inverse[etaF]];
+
+(* total y-derivative acting on expressions in t, C1i = 1/c1[y], C1p = c1'[y] *)
+Dy[expr_] := D[expr, t]/(3 t^2) - C1p C1i^2 D[expr, C1i] + c1pp D[expr, C1p];
+
+buildRmatrix[KMAX_] := Module[{P0, P1, P2, c2, d2, k},
+   cPPtk[k_] := cPPtk[k] = Together[cPP[0, 0][k] /. LLL[0][y] -> LLt0 /. y -> t^3 /. sqrule];
+   P0 = Sum[cPPtk[k] z^k, {k, 0, KMAX}];
+   P1 = Normal[Series[(LLt0 P0 + z t^3 Dy[P0]) C1i, {z, 0, KMAX}]];
+   c2 = C1i^2/(1 + 27 t^3); d2 = (\[Epsilon][1] + \[Epsilon][2]) (C1i^2 - 1)/(2 (1 + 27 t^3));
+   P2 = Normal[Series[(LLt0 P1 + z t^3 Dy[P1] - d2 P1)/c2, {z, 0, KMAX}]];
+   If[! FreeQ[{P1, P2}, c1pp], Print["WARNING: c1'' appeared"]];
+   PPsym[0] = Table[Together[Coefficient[P0, z, k]], {k, 0, KMAX}];
+   PPsym[1] = Table[Together[Coefficient[P1, z, k]], {k, 0, KMAX}];
+   PPsym[2] = Table[Together[Coefficient[P2, z, k]], {k, 0, KMAX}];
+   sqDsym = Sqrt[27] sq (3 eeF[3] + eeF[2] LLt0);   (* sqrtDelta[0] = Sqrt[eps1 eps2/ee3] (3 ee3 + ee2 L) *)
+   KMAXcur = KMAX;
+   Print["R-matrix rows built to z^", KMAX, "; LeafCounts row0/1/2: ", LeafCount /@ {PPsym[0], PPsym[1], PPsym[2]}];
+   ];
+
+(* ---------- numeric evaluation at a sample point ---------- *)
+(* returns association with Dil[i][n], Leaf[i][n] (a=1), Edge[i,j][m,n], sqD[i] as polynomials in C1i, C1p *)
+evalPoint[t0_, x0_, KMAX_] := Module[{sub, Pnum, i, a, k, pre, Dil, Lf, Ed, sqD, etainv, sqv, tt, zz, wv, cf},
+   sqv = N[Sqrt[x0/(1 + x0)^3], PREC];
+   etainv = N[etainvF /. {\[Epsilon][1] -> x0, \[Epsilon][2] -> 1}, PREC];
+   Do[tt = N[ww^i t0, PREC];
+    sub = {t -> tt, \[Epsilon][1] -> N[x0, PREC], \[Epsilon][2] -> N[1, PREC], sq -> sqv};
+    Do[Pnum[a, i] = Expand[PPsym[a] /. sub], {a, 0, 2}];   (* list of z-coefficients *)
+    sqD[i] = Expand[sqDsym /. sub];
+    Do[Dil[i][n] = (-1)^n Pnum[0, i][[n]], {n, 1, KMAX + 1}];   (* Dilaton[i,n] = coeff z^(n-1) of -P0(-z) *)
+    Do[Lf[i][n] = (-1)^n Pnum[1, i][[n + 1]], {n, 0, KMAX}];   (* Leaf[i,n,1] = coeff z^n of P1(-z) *)
+    , {i, 0, 2}];
+   Do[
+    pre = Table[KroneckerDelta[i, j] KroneckerDelta[m, 0] KroneckerDelta[n, 0] -
+       Sum[(-1)^(m + n) Pnum[a, i][[m + 1]] etainv[[a + 1, b + 1]] Pnum[b, j][[n + 1]], {a, 0, 2}, {b, 0, 2}],
+      {m, 0, KMAX}, {n, 0, KMAX}];   (* pre[[m+1,n+1]] = coeff of w^m z^n in PreEdgeTerm[i,j] *)
+    Do[Ed[i, j][m, n] = Expand[Sum[(-1)^k pre[[m + k + 2, n - k + 1]], {k, 0, n}]],
+     {m, 0, KMAX - 1}, {n, 0, KMAX - 1 - m}];
+    , {i, 0, 2}, {j, 0, 2}];
+   etainvN = etainv; <|"Dil" -> Dil, "Leaf" -> Lf, "Edge" -> Ed, "sqD" -> sqD, "Pnum" -> Pnum|>];
+
+(* ---------- Witten-Kontsevich numbers ---------- *)
+df[n_] := If[n <= 0, 1, n df[n - 2]];
+splitSum[g_, k_, rest_] := Module[{n = Length[rest], idx, tot = 0},
+   Do[idx = Subsets[Range[n]][[m]];
+    tot += Sum[df[2 r + 1] df[2 (k - 1 - r) + 1] Sum[wk[g1, Join[{r}, rest[[idx]]]] wk[g - g1, Join[{k - 1 - r}, rest[[Complement[Range[n], idx]]]]], {g1, 0, g}], {r, 0, k - 1}], {m, 2^n}]; tot];
+wk[g_, ds_List] := wk[g, ds] = Module[{d = Sort[ds], n, k, rest, tot}, n = Length[d];
+   If[g < 0 || n == 0 || Min[d] < 0 || Total[d] != 3 g - 3 + n || 2 g - 2 + n <= 0, Return[0]];
+   If[g == 0 && d == {0, 0, 0}, Return[1]]; If[g == 1 && d == {1}, Return[1/24]];
+   If[MemberQ[d, 0], rest = Delete[d, First[Position[d, 0]]]; Return[Sum[wk[g, ReplacePart[rest, j -> rest[[j]] - 1]], {j, Length[rest]}]]];
+   k = d[[1]] - 1; rest = Rest[d];
+   tot = Sum[df[2 k + 2 rest[[j]] + 1]/df[2 rest[[j]] - 1] wk[g, ReplacePart[rest, j -> rest[[j]] + k]], {j, Length[rest]}];
+   tot += 1/2 Sum[df[2 r + 1] df[2 (k - 1 - r) + 1] wk[g - 1, Join[{r, k - 1 - r}, rest]], {r, 0, k - 1}];
+   tot += 1/2 splitSum[g, k, rest]; tot/df[2 k + 3]];
+
+(* ---------- stable graphs ---------- *)
+(* graph = {genera, legs, adjacency matrix (diagonal = loops)} *)
+tabtoadj[diag_, up_] := Module[{K = Length[diag], A}, A = ConstantArray[0, {K, K}];
+   Do[A[[j, j]] = diag[[j]]; Do[A[[i, j]] = A[[j, i]] = up[[j, i - j]], {i, j + 1, K}], {j, 1, K}]; A];
+graphlist[raw_] := Module[{count = 1, K, g, m, l, atab, a, out = {}, adj},
+   While[count <= Length[raw],
+    K = raw[[count]]; g = Take[raw, {count + 1, count + K}]; m = Take[raw, {count + K + 1, count + 2 K}];
+    l = Take[raw, {count + 2 K + 1, count + 3 K}]; a = {};
+    If[K > 1, atab = Take[raw, {count + 3 K + 1, count + 3 K + K (K - 1)/2}];
+     Do[AppendTo[a, Take[atab, K - j]]; atab = Drop[atab, K - j], {j, 1, K - 1}]];
+    adj = tabtoadj[l, a]; AppendTo[out, {g, m, adj}];
+    count += 3 K + Length[Flatten[a]] + 1]; out];
+loadGraphs[gg_] := graphlist[DeleteCases[Delete[Delete[BinaryReadList["StableGraph-" <> ToString[gg] <> ".bin"], 1], -1], 13]];
+(* hand-coded graphs with legs for the genus <= 1 checks *)
+graphsWithLegs[0, 3] = {{{0}, {3}, {{0}}}};
+graphsWithLegs[0, 4] = {{{0}, {4}, {{0}}}, {{0, 0}, {2, 2}, {{0, 1}, {1, 0}}}};
+graphsWithLegs[0, 5] = {{{0}, {5}, {{0}}}, {{0, 0}, {2, 3}, {{0, 1}, {1, 0}}}, {{0, 0, 0}, {2, 1, 2}, {{0, 1, 0}, {1, 0, 1}, {0, 1, 0}}}};
+graphsWithLegs[1, 1] = {{{1}, {1}, {{0}}}, {{0}, {1}, {{1}}}};
+graphsWithLegs[g_, 0] := loadGraphs[g];
+
+edgesOf[A_] := Join[Flatten[Table[ConstantArray[{i, i}, A[[i, i]]], {i, Length[A]}], 1],
+   Flatten[Table[ConstantArray[{i, j}, A[[i, j]]], {i, Length[A]}, {j, i + 1, Length[A]}], 2]];
+autCount[gv_, mv_, A_] := Module[{V = Length[gv], perms},
+   perms = Select[Permutations[Range[V]], gv[[#]] == gv && mv[[#]] == mv && A[[#, #]] == A &];
+   Length[perms] Product[A[[i, j]]!, {i, 1, V}, {j, i + 1, V}] Product[2^A[[i, i]] A[[i, i]]!, {i, 1, V}]];
+
+(* vertex decoration options: for vertex with genus g, hs = number of half-edges, m = legs:
+   list of {hpowers, legpowers, dilpowers, weight}, weight = wk * 1/(m! nd!) *)
+vertexOptions[g_, hs_, m_] := Module[{res = {}, dim, nd, dils, hp, lp, rest, budget},
+   Do[dim = 3 g - 3 + hs + m + nd;
+    If[dim < 2 nd, Continue[]];
+    Do[budget = dim - Total[dils];
+     Do[Do[
+       AppendTo[res, {hp, lp, dils, wk[g, Join[hp, lp, dils]]/(m! nd!)}],
+       {lp, Select[Tuples[Range[0, budget - Total[hp]], m], Total[#] == budget - Total[hp] &]}],
+      {hp, Select[Tuples[Range[0, budget], hs], Total[#] <= budget &]}],
+     {dils, If[nd == 0, {{}}, Flatten[Table[Permutations /@ Select[IntegerPartitions[s, {nd}], Min[#] >= 2 &], {s, 2 nd, dim}], 2]]}],
+    {nd, 0, Max[0, 3 g - 3 + hs + m]}];
+   Select[res, #[[4]] =!= 0 &]];
+
+(* prepare a graph: half-edge bookkeeping and decoration list *)
+prepareGraph[{gv_, mv_, A_}] := Module[{V = Length[gv], ed, H, hv, hsAt, opts, decs, aut},
+   ed = edgesOf[A]; H = Flatten[Table[{{e, 1}, {e, 2}}, {e, Length[ed]}], 1];
+   hv = Table[ed[[h[[1]], h[[2]]]], {h, H}];
+   hsAt = Table[Flatten[Position[hv, v]], {v, V}];   (* indices into H of half-edges at v *)
+   opts = Table[vertexOptions[gv[[v]], Length[hsAt[[v]]], mv[[v]]], {v, V}];
+   decs = Tuples[opts];
+   aut = autCount[gv, mv, A];
+   <|"g" -> gv, "m" -> mv, "A" -> A, "edges" -> ed, "H" -> H, "hsAt" -> hsAt, "decs" -> decs, "aut" -> aut, "V" -> V|>];
+
+(* evaluate one prepared graph at a sample point (data from evalPoint) *)
+graphValue[gr_, data_] := Module[{V = gr["V"], ed = gr["edges"], H = gr["H"], hsAt = gr["hsAt"], Dil = data["Dil"], Lf = data["Leaf"], Ed = data["Edge"], sqD = data["sqD"], total = 0, hp, c, term, vfac, efac},
+   Do[  (* colourings *)
+    Do[ (* decorations: dec = list over vertices of {hp, lp, dils, w} *)
+     hp = ConstantArray[0, Length[H]];
+     Do[Do[hp[[hsAt[[v, r]]]] = dec[[v, 1, r]], {r, Length[hsAt[[v]]]}], {v, V}];
+     vfac = Product[dec[[v, 4]] sqD[c[[v]]]^(2 gr["g"][[v]] - 2 + Length[hsAt[[v]]] + gr["m"][[v]] + Length[dec[[v, 3]]])
+        Product[Lf[c[[v]]][b], {b, dec[[v, 2]]}] Product[Dil[c[[v]]][d], {d, dec[[v, 3]]}], {v, V}];
+     efac = Product[Ed[c[[ed[[e, 1]]]], c[[ed[[e, 2]]]]][hp[[2 e - 1]], hp[[2 e]]], {e, Length[ed]}];
+     total += vfac efac;
+     , {dec, gr["decs"]}];
+    , {c, Tuples[{0, 1, 2}, V]}];
+   Expand[total/gr["aut"]]];
+
+(* full graph sum F_{g,n} at a sample point *)
+graphSum[prepared_, data_] := Expand[Total[graphValue[#, data] & /@ prepared]];
+
+(* generic rational reconstruction from exact samples {u_s, v_s}: N(u)/D(u), D monic, verified on >= 5 spare points *)
+reconstruct[pts_] := Module[{n = Length[pts], us = pts[[All, 1]], vs = pts[[All, 2]], res = $Failed, T, dd, dn, m, A, rhs, sol, N0, D0, ok},
+   If[Union[vs] === {0}, Return[0]];
+   Do[
+    Do[dn = T - dd; m = dn + dd + 1;
+     If[m + 5 > n, Continue[]];
+     (* unknowns: n0..n_dn, d0..d_{dd-1}; equations N(u_s) - v_s (u_s^dd + sum d_j u_s^j) = 0 *)
+     A = Table[Join[Table[us[[s]]^j, {j, 0, dn}], Table[-vs[[s]] us[[s]]^j, {j, 0, dd - 1}]], {s, 1, m}];
+     rhs = Table[vs[[s]] us[[s]]^dd, {s, 1, m}];
+     sol = Quiet[Check[LinearSolve[A, rhs], $Failed]];
+     If[sol === $Failed, Continue[]];
+     N0 = Sum[sol[[j + 1]] u^j, {j, 0, dn}]; D0 = u^dd + Sum[sol[[dn + 2 + j]] u^j, {j, 0, dd - 1}];
+     ok = And @@ Table[((N0 /. u -> us[[s]]) - vs[[s]] (D0 /. u -> us[[s]])) == 0, {s, m + 1, n}];
+     If[ok, res = Together[N0/D0]; Return[]],
+     {dd, 0, T}];
+    If[res =!= $Failed, Return[]],
+    {T, 0, n - 6}];
+   res];
+
+(* ::Section:: Regression: genus <= 2 against the v15 closed forms *)
+
+(* ::Text:: Uses v15's cPP (k <= 3). F03 in v15 is <p^3> (no 1/3!), F05 is 5! times the graph sum with unlabelled legs; here the true 5-point function (Q d/dQ of the 4-point function) is used as the reference. *)
+
+SetDirectory[NotebookDirectory[]]; Get["v15data.mx"]; KMAX = 3; buildRmatrix[KMAX];
+
+v15sub = {c1[y] -> 1/C1i, Derivative[1][c1][y] -> C1p};
+F03v15 = -(1/(3 (1 + 27 y) c1[y]^3 \[Epsilon][1] \[Epsilon][2])) /. v15sub;
+F11v15 = -((c1[y] (4 + \[Epsilon][2]/(\[Epsilon][1] + 27 y \[Epsilon][1]) + \[Epsilon][1]/(\[Epsilon][2] + 27 y \[Epsilon][2])) + 12 y Derivative[1][c1][y])/(24 c1[y]^2)) /. v15sub;
+F04v15 = (y (9 c1[y] + (1 + 27 y) Derivative[1][c1][y]))/(24 (1 + 27 y)^2 c1[y]^5 \[Epsilon][1] \[Epsilon][2]) /. v15sub;
+F05true = ((-3 y (-1 + 135 y))/((1 + 27 y)^3 c1[y]^5 \[Epsilon][1] \[Epsilon][2]) - (90 y^2 Derivative[1][c1][y])/((1 + 27 y)^2 c1[y]^6 \[Epsilon][1] \[Epsilon][2]) - (5 y^2 Derivative[1][c1][y]^2)/((1 + 27 y) c1[y]^7 \[Epsilon][1] \[Epsilon][2])) /. v15sub;
+F20redv15 = -193/8640 + 5/(216*LL^3) + (13*LL^3)/1728 - LL^6/192 + (5*XX^3)/(8*LL^3) - \[Epsilon][1]^2/(720*\[Epsilon][2]^2) + (29*LL^3*\[Epsilon][1]^2)/(5760*\[Epsilon][2]^2) - (7*LL^6*\[Epsilon][1]^2)/(1920*\[Epsilon][2]^2) + (89*\[Epsilon][1])/(5760*\[Epsilon][2]) - (LL^3*\[Epsilon][1])/(72*\[Epsilon][2]) + (89*\[Epsilon][2])/(5760*\[Epsilon][1]) - (LL^3*\[Epsilon][2])/(72*\[Epsilon][1]) - \[Epsilon][2]^2/(720*\[Epsilon][1]^2) + (29*LL^3*\[Epsilon][2]^2)/(5760*\[Epsilon][1]^2) - (7*LL^6*\[Epsilon][2]^2)/(1920*\[Epsilon][1]^2) + XX^2*(-3/8 + 5/(8*LL^3) + \[Epsilon][1]/(16*\[Epsilon][2]) + \[Epsilon][2]/(16*\[Epsilon][1])) + XX*(-1/6 + 5/(24*LL^3) + LL^3/192 + (LL^3*\[Epsilon][1]^2)/(384*\[Epsilon][2]^2) + \[Epsilon][1]/(12*\[Epsilon][2]) - (LL^3*\[Epsilon][1])/(16*\[Epsilon][2]) + \[Epsilon][2]/(12*\[Epsilon][1]) - (LL^3*\[Epsilon][2])/(16*\[Epsilon][1]) + (LL^3*\[Epsilon][2]^2)/(384*\[Epsilon][1]^2));
+F20v15 = \[Epsilon][1] \[Epsilon][2] F20redv15 /. XX -> y C1p C1i /. LL -> (1 + 27 y)^(-1/3);
+expected = <|{0, 3} -> F03v15/3!, {0, 4} -> F04v15, {0, 5} -> F05true/5!, {1, 1} -> F11v15, {2, 0} -> F20v15|>;
+Do[Module[{prepared = prepareGraph /@ graphsWithLegs @@ gn, data = evalPoint[1/2, 2, KMAX], val, refv},
+  val = graphSum[prepared, data];
+  refv = Expand[N[expected[gn] /. {y -> 1/8, \[Epsilon][1] -> 2, \[Epsilon][2] -> 1}, PREC]];
+  Print[gn, ": max |graph sum - closed form| = ", N[Max[Abs[CoefficientList[Expand[val - refv], {C1i, C1p}]]], 5]]], {gn, Keys[expected]}]
+
+(* ::Section:: Genus 2 and genus 3 by sampling and reconstruction *)
+
+(* ::Text:: runGenus[g, KMAX, cPPfile] evaluates the full graph sum at 23 values of t and 2g+3 values of eps1/eps2, checks S3-invariance, homogeneity in (c1, c1') and the eps-structure, and reconstructs F_{g,0}. Results are saved to F<g>0_result.mx (Fg in y, XX, eps; Fgred in LL = (1+27y)^(-1/3), XX). *)
+
+runGenus[gg_, KMAX_, cppfile_] := Module[{}, (* Part B driver: F_{g,0} on T_F by sampling + reconstruction.
+   Usage: wolframscript -file partB_run.wl g KMAX cPPfile
+   cPPfile: "v15" (uses v15data.mx, k<=3) or a cPPu<K>.mx from partA_limit_u.wl (defines cPPL[k] in y, LLL[0][y]).
+   Output: F<g>0_result.mx with Fg (in y, XX, eps), Fgred (in LL, XX), samples. *)
+
+log[m_] := Module[{s = OpenAppend["partB_run_g" <> ToString[gg] <> ".log"]}, WriteString[s, DateString[{"Hour", ":", "Minute", ":", "Second"}], "  ", m, "\n"]; Close[s]; Print[m]];
+If[cppfile == "v15", Get["v15data.mx"],
+  Get[cppfile]; Do[cPP[0, 0][k] = cPPL[[k + 1]], {k, 0, KMAX}]];
+buildRmatrix[KMAX];
+
+(* R-matrix checks at a sample point: symplecticity sum_i P_bi(-z) etainv_ac P_ci(z) = delta_ab to O(z^KMAX), edge symmetry *)
+Module[{data = evalPoint[1/3, 5, KMAX], Pn, symp, edgesym},
+  Pn[a_, i_] := data["Pnum"][a, i];
+  symp = Max[Table[Max[Abs[Flatten[CoefficientList[Expand[Sum[Sum[(-1)^m Pn[b, i][[m + 1]] etainvN[[a + 1, c + 1]] Pn[c, i][[n - m + 1]], {m, 0, n}], {i, 0, 2}, {c, 0, 2}] - KroneckerDelta[a, b] KroneckerDelta[n, 0]], {C1i, C1p}]]]], {a, 0, 2}, {b, 0, 2}, {n, 0, KMAX}]];
+  edgesym = Max[Table[Max[Abs[Flatten[CoefficientList[Expand[data["Edge"][i, j][m, n] - data["Edge"][j, i][n, m]], {C1i, C1p}]]]], {i, 0, 2}, {j, 0, 2}, {m, 0, KMAX - 1}, {n, 0, KMAX - 1 - m}]];
+  log["R-matrix symplecticity residual (should be ~0): " <> ToString[N[symp, 5], InputForm] <> ";  edge-term symmetry residual: " <> ToString[N[edgesym, 5], InputForm]]];
+prepared = prepareGraph /@ graphsWithLegs[gg, 0];
+log["genus " <> ToString[gg] <> ": " <> ToString[Length[prepared]] <> " graphs, labelled decorations " <> ToString[Total[Length[#["decs"]] & /@ prepared]]];
+
+tsamples = {1/2, 1/3, 2/3, 1/4, 3/4, 1/5, 2/5, 3/5, 4/5, 1/6, 5/6, 1/7, 2/7, 3/7, 4/7, 5/7, 6/7, 1/8, 3/8, 5/8, 7/8, 1/9, 2/9};
+xsamples = Table[Prime[r + 1], {r, 1, 2 gg + 3}];   (* eps1/eps2 values: 3,5,7,... ; 2g+1 needed, +2 checks *)
+NT = Length[tsamples]; NX = Length[xsamples];
+ratl[v_] := Rationalize[Re[v], 10^-(PREC - 60)];
+sample = <||>;
+Do[Module[{tt = AbsoluteTime[], data, val, mons, homog},
+   data = evalPoint[t0, x0, KMAX];
+   val = graphSum[prepared, data];
+   If[Max[Abs[Im[CoefficientList[val, {C1i, C1p}]]]] > 10^-(PREC - 80), log["WARNING: imaginary part at " <> ToString[{t0, x0}]]];
+   (* homogeneity in (C1i, C1p): only monomials (C1i C1p)^k allowed *)
+   mons = Select[Flatten[Table[{a, b}, {a, 0, 3 gg}, {b, 0, 3 gg}], 1], #[[1]] != #[[2]] && Abs[Coefficient[Coefficient[val, C1i, #[[1]]], C1p, #[[2]]]] > 10^-(PREC - 80) &];
+   If[mons =!= {}, log["WARNING: non-homogeneous monomials " <> ToString[mons] <> " at " <> ToString[{t0, x0}]]];
+   sample[{t0, x0}] = Table[ratl[Coefficient[Coefficient[val, C1i, k], C1p, k]/t0^(3 k)], {k, 0, 3 gg - 3}];   (* coefficient of XX^k *)
+   If[t0 == tsamples[[1]], log["sample " <> ToString[{t0, x0}] <> " done in " <> ToString[Round[AbsoluteTime[] - tt, 0.1]] <> " s"]];
+   ], {t0, tsamples}, {x0, xsamples}];
+DumpSave["F" <> ToString[gg] <> "0_samples.mx", {sample, tsamples, xsamples}];
+log["all samples done"];
+
+(* eps-structure: x * F(x) = sum_{j=0}^{2g} a_j x^j (eps2 = 1), palindromic *)
+aCoef = <||>;
+Do[Module[{pts, A, rhs, sol, chk},
+   pts = Table[{x0, x0 sample[{t0, x0}][[k + 1]]}, {x0, xsamples}];
+   A = Table[x0^j, {x0, xsamples[[1 ;; 2 gg + 1]]}, {j, 0, 2 gg}]; rhs = pts[[1 ;; 2 gg + 1, 2]];
+   sol = LinearSolve[A, rhs];
+   chk = Table[Sum[sol[[j + 1]] x0^j, {j, 0, 2 gg}] - (x0 sample[{t0, x0}][[k + 1]]), {x0, xsamples[[2 gg + 2 ;;]]}];
+   If[Union[chk] =!= {0}, log["WARNING: eps-polynomial of degree 2g fails at t=" <> ToString[t0] <> " k=" <> ToString[k] <> ": " <> ToString[N[Max[Abs[chk]], 3]]]];
+   If[sol =!= Reverse[sol], log["WARNING: eps-polynomial not palindromic at t=" <> ToString[t0] <> " k=" <> ToString[k]]];
+   Do[aCoef[{t0, k, j}] = sol[[j + 1]], {j, 0, 2 gg}]], {t0, tsamples}, {k, 0, 3 gg - 3}];
+log["eps structure OK"];
+
+(* y-dependence: reconstruct a_{k,j}(y) as rational functions of y = t^3 *)
+Fg = 0; failed = {};
+Do[Module[{pts, r},
+   pts = Table[{t0^3, aCoef[{t0, k, j}]}, {t0, tsamples}];
+   r = reconstruct[pts] /. u -> y;
+   If[r === $Failed, AppendTo[failed, {k, j}], Fg += r XX^k \[Epsilon][1]^j \[Epsilon][2]^(2 gg - j)]], {k, 0, 3 gg - 3}, {j, 0, 2 gg}];
+If[failed =!= {}, log["RECONSTRUCTION FAILED for (k,j) = " <> ToString[failed]]];
+Fg = Fg/(\[Epsilon][1] \[Epsilon][2]);
+Fgred = Collect[Expand[Together[Fg/(\[Epsilon][1] \[Epsilon][2]) /. y -> (1 - LL^3)/(27 LL^3)]], XX, Factor];
+DumpSave["F" <> ToString[gg] <> "0_result.mx", {Fg, Fgred}];
+log["F" <> ToString[gg] <> "0 reconstructed; denominators: " <> ToString[Union[Cases[Fg, Power[b_, e_?Negative] :> b, Infinity]]]];
+Print["Fgred = ", InputForm[Fgred]];
+Export["F" <> ToString[gg] <> "0_result.txt", ToString[InputForm[Fgred]], "Text"];
+ Fgred]
+
+F20red = runGenus[2, 3, "cPPu6.mx"]
+
+Simplify[F20red - F20redv15]
+
+AbsoluteTiming[F30red = runGenus[3, 6, "cPPu6.mx"];]
+
+F30red
+
+(* ::Section:: Checks *)
+
+(* ::Text:: Q-expansions, unrefined GV invariants (compare with Katz-Klemm-Vafa / Haghighat-Klemm-Rauch), refined BPS numbers at low degree, the modular anomaly equation (normalisation fixed at genus 2), the conifold expansion (gap and Theorem 6.11), and the unrefined / Nekrasov-Shatashvili limits. *)
+
+(* Checks on the reconstructed free energies. Usage: wolframscript -file partB_checks.wl GMAX
+   Needs F20_result.mx (and F30_result.mx if GMAX = 3). Variables: y, XX = y c1'/c1, cc = c1[y]. *)
+GMAX = 3;
+log[m_] := Module[{s = OpenAppend["partB_checks.log"]}, WriteString[s, DateString[{"Hour", ":", "Minute", ":", "Second"}], "  ", m, "\n"]; Close[s]; Print[m]];
+e1 = \[Epsilon][1]; e2 = \[Epsilon][2];
+Get["F20_result.mx"]; F[2] = Fg;
+If[GMAX >= 3, Get["F30_result.mx"]; F[3] = Fg];
+(* genus 1 one-point function (v15 closed form) as Q d/dQ F_1, in (y, XX, cc) *)
+F11 = -(4 + (e1^2 + e2^2)/(e1 e2 (1 + 27 y)) + 12 XX)/(24 cc);
+(* genus-0 data *)
+C1[y_] = Hypergeometric2F1[1/3, 2/3, 1, -27 y];
+DMAX = 5;   (* Q-orders: 2 DMAX *)
+NQ = 2 DMAX;
+II10 = Log[y] + Sum[3 (3 d - 1)!/(d!)^3 (-y)^d, {d, 1, 2 NQ}];
+invmm = InverseSeries[Series[Exp[II10], {y, 0, 2 NQ}] /. y -> Q];
+(* dF0/dt from v15 (eps-independent on T_F after multiplying by eps1 eps2): use the known 5-pt data via F03: Q dQ F0 = ... we take dFdt from the closed forms:
+   d^2 F0/dt^2 = F03 (v15 convention <p^3> = F03) integrated twice is not needed; we use N0_d from F03 *)
+F03 = -(1/(3 (1 + 27 y) cc^3 e1 e2));
+XXser = Series[y C1'[y]/C1[y], {y, 0, 2 NQ}];
+Qser[f_] := Series[Normal[Series[f /. XX -> XXser /. cc -> C1[y], {y, 0, 2 NQ}]] /. y -> invmm, {Q, 0, NQ}];
+F03Q = Qser[F03];
+log["F03 Q-series * eps1 eps2: " <> ToString[Normal[F03Q e1 e2]]];
+(* genus 0 instanton part: F03 = (Q d/dQ)^3 F0  =>  [Q^d] F0 = [Q^d] F03 / d^3 *)
+F0Q = Sum[SeriesCoefficient[F03Q, d]/d^3 Q^d, {d, 1, NQ}];
+F1Q = Sum[SeriesCoefficient[Qser[F11], d]/d Q^d, {d, 1, NQ}];   (* F11 = Q d/dQ F1 *)
+FgQ[0] = F0Q; FgQ[1] = F1Q;
+Do[FgQ[g] = Normal[Qser[F[g]]], {g, 2, GMAX}];
+Do[log["F" <> ToString[g] <> " Q-series (eps1 eps2 times, first 4): " <> ToString[Simplify[Table[SeriesCoefficient[FgQ[g] e1 e2, {Q, 0, d}], {d, 1, 4}]]]], {g, 2, GMAX}];
+
+(* ---------- unrefined GV invariants ---------- *)
+(* unrefined limit: F_g(eps1, eps2 = -eps1) = (-eps1^2)^(g-1) F_{0,g};  generating function sum_g lambda^(2g-2) F_{0,g}
+   GV: sum_g lambda^(2g-2) F_{0,g}(Q) = sum_{d,k,g} n^g_d (1/k) (2 sin(k lambda/2))^(2g-2) Q^(dk)  *)
+Funref[g_] := If[g == 0, FgQ[0] e1 e2 /. e2 -> -e1 /. e1 -> 1 // Simplify,
+   If[g == 1, Simplify[(FgQ[1] /. e2 -> -e1)], Simplify[(FgQ[g] /. e2 -> -e1)/(-e1^2)^(g - 1)]]];
+Do[Fu[g] = Funref[g]; log["unrefined F_{0," <> ToString[g] <> "} Q-series: " <> ToString[Fu[g]]], {g, 0, GMAX}];
+gvSeries[lam_] := Sum[n[g, d]/k (2 Sin[k lam/2])^(2 g - 2) Q^(d k), {g, 0, GMAX}, {d, 1, NQ}, {k, 1, Floor[NQ/d]}];
+eqs = Flatten[Table[SeriesCoefficient[Series[gvSeries[lam], {lam, 0, 2 GMAX - 2}], {lam, 0, 2 g - 2}] - Fu[g] // Expand // CoefficientList[#, Q] &, {g, 0, GMAX}]];
+nsol = Solve[Thread[DeleteCases[eqs, 0] == 0], Flatten[Table[n[g, d], {g, 0, GMAX}, {d, 1, NQ}]]];
+log["unrefined GV invariants n^g_d (rows g = 0.." <> ToString[GMAX] <> ", d = 1.." <> ToString[NQ] <> "): " <> ToString[Table[n[g, d], {g, 0, GMAX}, {d, 1, NQ}] /. First[nsol]]];
+(* the same with lambda^2 -> -lambda^2 (sign convention) *)
+eqs2 = Flatten[Table[SeriesCoefficient[Series[gvSeries[I lam], {lam, 0, 2 GMAX - 2}], {lam, 0, 2 g - 2}] - Fu[g] // Expand // CoefficientList[#, Q] &, {g, 0, GMAX}]];
+nsol2 = Solve[Thread[DeleteCases[eqs2, 0] == 0], Flatten[Table[n[g, d], {g, 0, GMAX}, {d, 1, NQ}]]];
+log["   (with lambda -> I lambda): " <> ToString[Table[n[g, d], {g, 0, GMAX}, {d, 1, NQ}] /. First[nsol2]]];
+
+(* ---------- refined BPS numbers ---------- *)
+chi[j_, q_] := Sum[q^(2 m), {m, -j, j}];
+GWtot = Sum[FgQ[g], {g, 0, GMAX}]; GWtot = Normal[GWtot] - (Normal[GWtot] /. Q -> 0);
+spins[dd_] := Select[Flatten[Table[{jL, jR}, {jL, 0, (dd - 1) (dd - 2)/4, 1/2}, {jR, 0, dd (dd + 3)/4, 1/2}], 1], Mod[2 #[[1]] + 2 #[[2]] - dd - 1, 2] == 0 &];
+Do[Module[{bpsAnsatz, diffser, beqs, bunknowns, bsol},
+  bpsAnsatz = Sum[1/k Sum[(-1)^(2 sp[[1]] + 2 sp[[2]]) NN[dd, sp[[1]], sp[[2]]] chi[sp[[1]], Exp[k (e1 - e2)/2]] chi[sp[[2]], Exp[k (e1 + e2)/2]], {sp, spins[dd]}]/
+     ((Exp[k e1/2] - Exp[-k e1/2]) (Exp[k e2/2] - Exp[-k e2/2])) Q^(dd k), {dd, 1, DREF}, {k, 1, Floor[DREF/dd]}];
+  diffser = Series[(bpsAnsatz - Normal[GWtot] /. Q^p_ /; p > DREF -> 0) e1 e2 /. e2 -> s x2 /. e1 -> s x1, {s, 0, 2 GMAX}];
+  beqs = DeleteCases[Flatten[Table[CoefficientList[Expand[SeriesCoefficient[diffser, {s, 0, m}]], {Q, x1, x2}], {m, 0, 2 GMAX}]], 0];
+  bunknowns = Flatten[Table[NN[dd, sp[[1]], sp[[2]]], {dd, 1, DREF}, {sp, spins[dd]}]];
+  bsol = Solve[Thread[beqs == 0], bunknowns];
+  If[bsol === {}, log["refined BPS: INCONSISTENT at d <= " <> ToString[DREF]],
+   log["refined BPS numbers determined (nonzero), d <= " <> ToString[DREF] <> ": " <> ToString[Select[Thread[bunknowns -> (bunknowns /. First[bsol])], #[[2]] =!= 0 && NumberQ[#[[2]]] &]]];
+   log["   undetermined at this genus: " <> ToString[Select[bunknowns /. First[bsol], ! NumberQ[#] &] // Length]]]], {DREF, 1, 4}];
+
+(* ---------- modular anomaly equation ---------- *)
+(* Q d/dQ on functions of (y, XX, cc): Q dQ = (y/cc) d/dy with XX' = -(XX^2 + (27 XX y + 6 y)/(1+27y))/y, cc' = XX cc/y *)
+QdQ[f_] := Together[(y/cc) (D[f, y] + D[f, XX] (-(XX^2 + (27 XX y + 6 y)/(1 + 27 y))/y) + D[f, cc] (XX cc/y))];
+rhs2 = cc^2 (QdQ[F11] + F11^2);
+ratio2 = Together[D[F[2], XX]/rhs2];
+log["genus 2 anomaly: d F2/dXX / (cc^2 [QdQ F11 + F11^2]) = " <> ToString[ratio2]];
+If[GMAX >= 3,
+  rhs3 = cc^2 (QdQ[QdQ[F[2]]] + 2 F11 QdQ[F[2]]);
+  ratio3 = Together[D[F[3], XX]/rhs3];
+  log["genus 3 anomaly: d F3/dXX / (cc^2 [QdQ^2 F2 + 2 F11 QdQ F2]) = " <> ToString[ratio3]];
+  log["genus 3 anomaly holds with the genus-2 normalisation: " <> ToString[Simplify[ratio3 - ratio2] === 0]]];
+
+(* ---------- conifold expansion ---------- *)
+(* analytic solution of theta^2 + 3y(3theta+1)(3theta+2) at Delta = 1+27y = 0 gives theta t_c; t_c = int C1cf/(27 y) dDelta *)
+NC = 2 GMAX + 4;
+L2[f_] := Module[{th = y D[#, y] &}, th[th[f]] + 3 y (3 th[th[f]] + 3 th[f] + 2 (3 th[f] + f)) /. y -> (Del - 1)/27];   (* careful: (3theta+1)(3theta+2) f = 9 th^2 f + 9 th f + 2 f *)
+L2b[f_] := Module[{th = y D[#, y] &}, (th[th[f]] + 3 y (9 th[th[f]] + 9 th[f] + 2 f))];
+wc = Sum[a[n] Del^n, {n, 0, NC}] /. Del -> 1 + 27 y;
+ceq = CoefficientList[Normal[Series[L2b[wc] /. y -> (Del - 1)/27, {Del, 0, NC - 1}]], Del];
+csol = Solve[Thread[ceq == 0] /. a[0] -> 1, Table[a[n], {n, 1, NC}]];
+wcDel = Sum[a[n] Del^n, {n, 0, NC}] /. First[csol] /. a[0] -> 1;   (* theta t_c up to normalisation *)
+tc = Module[{ser = Normal[Series[wcDel/(Del - 1), {Del, 0, NC}]]}, Sum[Coefficient[ser, Del, n] Del^(n + 1)/(n + 1), {n, 0, NC}]];
+tc = Normal[Series[tc/SeriesCoefficient[tc, {Del, 0, 1}], {Del, 0, NC}]];
+log["conifold flat coordinate t_c(Delta) = " <> ToString[tc]];
+invcf = InverseSeries[Series[tc, {Del, 0, NC}] /. Del -> Del, tcv];
+C1cf = Normal[y 27 D[tc, Del]] /. Del -> 1 + 27 y;   (* theta t_c *)
+cfexp[f_] := Series[f /. XX -> y D[C1cf, y]/C1cf /. cc -> C1cf /. y -> (Del - 1)/27 /. Del -> invcf, {tcv, 0, 1}];
+Do[log["genus " <> ToString[g] <> " conifold expansion: " <> ToString[Simplify[cfexp[F[g]]]]], {g, 2, GMAX}];
+
+(* ---------- refined split (5.54): GW_g = sum_{g1+g2=g} (eps1+eps2)^(2 g1) (eps1 eps2)^(g2-1) F_{g1,g2} ---------- *)
+Do[Module[{poly, red, split},
+   poly = Expand[F[g] e1 e2];   (* symmetric homogeneous polynomial of degree 2g in eps *)
+   red = SymmetricReduction[poly, {e1, e2}, {ss, pp}][[1]];   (* in terms of ss = e1+e2, pp = e1 e2 *)
+   split = Table[Coefficient[Coefficient[red, ss, 2 g1], pp, g - g1], {g1, 0, g}];
+   Do[log["F_{" <> ToString[g1] <> "," <> ToString[g - g1] <> "} = " <> ToString[InputForm[Collect[Factor[split[[g1 + 1]] /. y -> (1 - LL^3)/(27 LL^3)], XX, Factor]]]], {g1, 0, g}]], {g, 2, GMAX}];
+
+(* ---------- refined BPS check against the known local P2 table at degree <= 3 ---------- *)
+tabHK = {{1, 0, 1} -> 1, {2, 0, 5/2} -> 1, {3, 0, 3} -> 1, {3, 1/2, 9/2} -> 1};   (* {d, jL, jR} -> N *)
+Module[{ansatz, diff},
+  ansatz = Sum[1/k Sum[(-1)^(2 r[[1, 2]] + 2 r[[1, 3]]) r[[2]] chi[r[[1, 2]], Exp[k (e1 - e2)/2]] chi[r[[1, 3]], Exp[k (e1 + e2)/2]] Q^(k r[[1, 1]]), {r, tabHK}]/((Exp[k e1/2] - Exp[-k e1/2]) (Exp[k e2/2] - Exp[-k e2/2])), {k, 1, 3}];
+  diff = Series[(ansatz - GWtot) e1 e2 /. Q^p_ /; p > 3 -> 0 /. e2 -> s x2 /. e1 -> s x1, {s, 0, 2 GMAX}];
+  log["refined GV/BPS formula with N(1;0,1) = N(2;0,5/2) = N(3;0,3) = N(3;1/2,9/2) = 1 vs GW_0..GW_" <> ToString[GMAX] <> " at Q^(<=3): residual = " <> ToString[Simplify[Normal[diff] /. Q^p_ /; p > 3 -> 0]]]];

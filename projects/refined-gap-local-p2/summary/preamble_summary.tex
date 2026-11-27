@@ -1,0 +1,64 @@
+% preamble_summary. Packages and theorem environments, copied from the preamble of the long version (main.tex).
+% GENUS workshop style: page geometry, fonts, hyperref, fancyhdr and the claim-status tags (genus-collab/meta)
+\usepackage{genus}
+% text width of the original note (170 mm), so that its displayed formulas still fit the line
+\geometry{margin=2cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%-------------------------------------------------------------------------------
+% Packages (modelled on the preamble of [BS]; only what is needed)
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amssymb}
+\usepackage[mathscr]{eucal}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\definecolor{highlight}{HTML}{3465a4}
+% hyperref is loaded by genus.sty, with the GENUS link colours
+\hypersetup{hypertexnames=false, hyperfootnotes=false, linktocpage=true, bookmarksdepth=2}
+\usepackage{cleveref}
+\usepackage{url}
+\usepackage{array}
+
+%-------------------------------------------------------------------------------
+% Typefaces, as in the long version: mathpazo (Palatino).
+% (mathpazo and courier dropped: genus.sty sets Latin Modern)
+\usepackage{microtype}
+\linespread{1.06}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{3}
+% enumitem is not assumed: first-level enumerate is labelled (i), (ii), ... ; for named parts use
+% description or \item[(A1)] with an explicit label.
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\renewcommand{\theenumi}{(\roman{enumi})}
+\numberwithin{equation}{section}
+
+%-------------------------------------------------------------------------------
+% Theorem environments (names as in [BS])
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+% genus.sty defines an example environment on its own counter; redefine it on the counter of thm
+\let\example\undefined\let\endexample\undefined\expandafter\let\csname c@example\endcsname\undefined
+\newtheorem{example}[thm]{Example}
+
+\crefname{equation}{Eq.}{Eqs.}
+\crefname{thm}{Theorem}{Theorems}
+\crefname{lem}{Lemma}{Lemmas}
+\crefname{prop}{Proposition}{Propositions}
+\crefname{cor}{Corollary}{Corollaries}
+\crefname{defn}{Definition}{Definitions}
+\crefname{rmk}{Remark}{Remarks}
+\crefname{notation}{Notation}{Notations}
+\crefname{example}{Example}{Examples}
+\crefname{section}{Section}{Sections}
+\crefname{subsection}{Section}{Sections}
+\crefname{appendix}{Appendix}{Appendices}

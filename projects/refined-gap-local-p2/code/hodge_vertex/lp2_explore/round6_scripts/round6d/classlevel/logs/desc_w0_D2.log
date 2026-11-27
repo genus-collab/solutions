@@ -1,0 +1,4 @@
+descendant test weights (1, 2, 5) (3, 7) (g,n) (1, 1) k<= 5 D 2 tests 18 nonzero 18 mismatch 0 secs 0.4
+descendant test weights (1, 2, 5) (3, 7) (g,n) (2, 1) k<= 6 D 2 tests 21 nonzero 20 mismatch 0 secs 7.8
+descendant test weights (1, 2, 5) (3, 7) (g,n) (1, 2) k<= 3 D 2 tests 78 nonzero 75 mismatch 0 secs 5.4
+descendant test weights (1, 2, 5) (3, 7) (g,n) (2, 2) k<= 2 D 2 tests 45 nonzero 41 mismatch 0 secs 301.2

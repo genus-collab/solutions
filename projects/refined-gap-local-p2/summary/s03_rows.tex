@@ -1,0 +1,127 @@
+% s03_rows (abridged version). The closed form of the rows.
+\section{The closed form of the rows}
+\label{sec:row}
+
+\Cref{thm:row-pf,cor:row-carry,cor:row-closed,prop:row-sympl} are statements about the closed form \eqref{eq:set-S} and \cref{def:set-rows} only, and they are proved by algebra on it, with no Gromov--Witten input. \Cref{prop:row-modrel} is a statement about the series \eqref{eq:set-gens} only. These results, with the closed forms of rows $1$ and $2$ \Lg{Lemma~3.14} recalled in \cref{sec:row-conseq}, are all that \cref{sec:lea} uses from this section. The identification of row $0$ of \cref{def:set-rows} with the canonical row of \cite{BS} is part of \cref{thm:spe-main}\textup{(a)}.
+
+%-------------------------------------------------------------------------------
+\subsection{Picard--Fuchs for the closed form}
+\label{sec:row-pf}
+
+Fix a colour $i$ on $\TF$ and write $V=V_i=Ev_i$, $Y=Y_i$. Put $\mathsf{a}\coloneqq1+E/z$ and $\mathsf{e}_n\coloneqq V^n/(\mathsf{a})_n$ for $n\in\bbZ$, with $(\mathsf{a})_n$ the Pochhammer symbol, so that $v\,\Srow(v,z)=z^{-1}\sum_{n\geq1}r_{n-1}\mathsf{e}_n$. Let $\Pconj\coloneqq\re^{-\mathsf{u}_i/z}\LPF\re^{\mathsf{u}_i/z}$ at $\alpha=\alpha^*$, with $\theta\mathsf{u}_i=Y_i$; that is, $\Pconj$ is $\LPF$ with $z\theta$ replaced by $z\theta+Y_i$.
+
+\begin{thm}[{\Lg{Theorem~3.1}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:row-pf}
+Let $\mathsf{s}\mathsf{e}_n=\mathsf{e}_{n-1}$, $\mathsf{N}\mathsf{e}_n=n\mathsf{e}_n$ and $\mathsf{t}\coloneqq3\mathsf{s}-\mathsf{N}$. Then $\Pconj=(z^3/27)(\mathsf{t}^3-27\mathsf{s}^3)$, and
+\begin{equation}
+\label{eq:row-pfcoef}
+\Pconj\Big(\sum_nb_n\mathsf{e}_n\Big)=-\frac{z^3}{27}\sum_m\big[27(m+1)b_{m+2}-3(3m^2+3m+1)b_{m+1}+m^3b_m\big]\mathsf{e}_m .
+\end{equation}
+Hence $\Delta_i^{-1/2}\,\hb(z)\,\Srow(v_i,z)\,\re^{\mathsf{u}_i/z}$ solves the Picard--Fuchs equation $\LPF(\cdot)=0$ at $\alpha=\alpha^*$ identically, for $i=0,1,2$.
+\end{thm}
+
+\begin{proof}[Idea of the proof]
+At every colour, $\theta V=1-V/3$, $Y+E/3=E/V$ and $y(V-3)^3=1$. With $\mathsf{T}\coloneqq z\theta+Y+E/3$ one finds $\mathsf{T}=(z/3)\mathsf{t}$ on the $\mathsf{e}_n$, and $\Pconj=\mathsf{T}^3+27y\prod_{j}(\mathsf{T}-E/3+jz/3)$, whose second term equals $-z^3\mathsf{s}^3$. Expanding $\mathsf{t}^3\mathsf{e}_n$ gives \eqref{eq:row-pfcoef}, and with $b_n=r_{n-1}$ the bracket vanishes by the recursion \eqref{eq:set-rec}. The identity holds both $z$-adically, as an identity of rational functions of $t_i$ at each $z$-order, and $V$-adically with coefficients rational in $z$; the second form is the one used at the conifold, in \eqref{eq:row-zinf}.
+\end{proof}
+
+Conversely, \Lg{Corollary~3.2}: if $b_n\in\bbC\lser{z}$, $b_n=0$ for $n\leq0$, and $\Pconj(\sum b_n\mathsf{e}_n)=0$ $V$-adically, then $b_n=b_1(z)r_{n-1}$. Thus the Picard--Fuchs equation fixes the row only up to a factor depending on $z$ alone; this factor is what \cref{sec:gen,sec:spe} determine.
+
+%-------------------------------------------------------------------------------
+\subsection{Formal stationary phase}
+\label{sec:row-sp}
+
+This subsection summarises \Lg{Sections~3.2--3.4}; it is used only for the frame formula. The normalised expansion $\Asym[\re^{-\phi/z}\gamma\,\dd^n\zeta]$ at a non-degenerate critical point is $(\det\Hess)^{-1/2}\exp(\frac z2\Hess^{ab}\partial_a\partial_b)(\re^{-\phi^{\mathrm{ng}}/z}\gamma)$ evaluated at the critical point, with $\Hess^{ab}$ the inverse of the Hessian $\Hess$ and $\phi^{\mathrm{ng}}$ the non-Gaussian part of the phase. It is proved formally, in $n$ dimensions, that expansions of total derivatives vanish; that the expansion may be differentiated with respect to a parameter, with a moving critical point; that it is invariant under changes of coordinates, with the Jacobian in the amplitude; and that it factorises when the phase splits exactly \Lg{Lemmas~3.3--3.8}. In dimension one these rules give the formal Stirling formula \Lg{Lemma~3.9}: for a non-zero number $a$ and a number $\beta$,
+\begin{equation}
+\label{eq:row-stirling}
+\Asym_{q=a}\big[\re^{-(q-a\log q)/z}\,q^{\beta-1}\,\dd q\big]=a^{\beta-1/2}\,\Theta(z/a,\beta),
+\end{equation}
+with the branch of $a^{\beta-1/2}$ fixed by the convention of the coordinate-invariance lemma. For the superpotential \eqref{eq:set-spot}, in the coordinates $x_j=\log q_j$ and with $\Pcr\coloneqq y^{-1/3}\re^{(x_0+x_1+x_2)/3}$, the critical points are exactly the points with $q_j=\alpha_j+Y$, $\Pcr=-3Y$, where $\Lhat(Y)=0$ and $Y(\alpha_j+Y)\neq0$; there $\det\mathrm{Hess}\,\cW=W(Y)/3$, $W=-Y\Lhat'(Y)$ on $\Lhat=0$, and the critical value $\mathsf{u}$ satisfies $\theta\mathsf{u}=Y$ \Lg{Lemma~3.10}. The \emph{algebraic row} is the series
+\begin{equation}
+\label{eq:row-Phi}
+\Phi(\alpha,Y;z)\coloneqq\exp\Big(-\frac z2(\Hess^{-1})^{ab}\partial_a\partial_b\Big)\exp\Big(z^{-1}\sum_{m\geq3}\Jet_m(\zeta)\Big)\Big|_{\zeta=0},
+\end{equation}
+where $\Hess\coloneqq\mathrm{diag}(\alpha_j+Y)-(Y/3)\mathsf{J}$, with $\mathsf{J}$ the all-ones matrix, and where
+$\Jet_m(\zeta)\coloneqq\sum_j(\alpha_j+Y)\zeta_j^m/m!-3Y(\sum_j\zeta_j/3)^m/m!$.
+
+\begin{prop}[{\Lg{Lemmas~3.11, 3.12, 3.13}}, in part]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-sp}
+\begin{enumerate}
+\item Let $U$ be a simply connected open set of $(y,\alpha)$, with $y\neq0$, on which a root $Y$ of $\Lhat$ is analytic and $YW(Y)\prod_j(Y+\alpha_j)$ does not vanish. On $U$,
+$\Asy\coloneqq\Asym_{x^{\mathrm{cr}}}[\re^{\cW/z}\dd\Omega]=\mathsf{k}_0\,W^{-1/2}\,\Phi(\alpha,Y;z)$,
+with $\mathsf{k}_0^2=-1/3$, $[z^n]\Phi\in\bbQ[\alpha,Y,W^{-1}]$ and $[z^0]\Phi=1$.
+\item For every $(y,\alpha)$ in $U$, including $\alpha=\alpha^*$, the expression $\re^{\mathsf{u}/z}\Asy$ is annihilated by $\LPF$.
+\item Write $\Pconj=\re^{-\mathsf{u}/z}\LPF\re^{\mathsf{u}/z}=\sum_{m=0}^{3}z^m\Pconj_m$, with $\theta\mathsf{u}=Y$. Then $\Pconj_0=0$ and $\Pconj_1=-(W/Y)(\theta+\frac12\theta\log W)$. If $f=\sum f_kz^k$ and $\mathsf{f}'=\sum\mathsf{f}'_kz^k$ have coefficients holomorphic on a connected domain on which $Y$ is holomorphic, $\Lhat(Y)=0$ and $YW(Y)\neq0$, if $\Pconj f=\Pconj\mathsf{f}'=0$ and $\mathsf{f}'_0$ is not identically $0$, then $f=\mathsf{c}(z)\mathsf{f}'$ for a unique $\mathsf{c}\in\bbC\fps{z}$. The same holds over $\bbF\fps{y}$, for a field $\bbF$ of characteristic $0$ and $Y\in\bbF\fps{y}$ with $\Lhat(Y)=0$ and $Y(0)W(Y)(0)\neq0$; then $\mathsf{c}\in\bbF\fps{z}$.
+\end{enumerate}
+\end{prop}
+
+Part (ii) follows from the first two rules: with $\mathsf{I}[h]\coloneqq\re^{\mathsf{u}/z}\Asym[h\,\re^{\cW/z}\dd\Omega]$, they give $\prod_j(z\theta+\alpha_j)\mathsf{I}[1]=\mathsf{I}[q_0q_1q_2]$ and $y\,\mathsf{I}[\Pcr^3]=-z^3y\prod_j(3\theta+j)\mathsf{I}[1]$, and $q_0q_1q_2=y\Pcr^3$. Part (iii) is an induction on the $z$-order.
+
+%-------------------------------------------------------------------------------
+\subsection{Consequences of the closed form}
+\label{sec:row-conseq}
+
+On $\TF$, at a fixed colour, $\theta v=1/E-v/3$, $Y=-E/3+1/v$ and $\theta\log v=Y/E$. From these, rows $1$ and $2$ have closed forms of the same kind as \eqref{eq:set-S}, for any non-vanishing section $\cone$ \Lg{Lemma~3.14}; for instance $\Ph_1=E\,\cone^{-1}(\theta v/v)\,\Srow^{[1]}$, where $\Srow^{[1]}$ is the series \eqref{eq:set-S} with the product running over $j\leq l$.
+
+\begin{cor}[Laurent form; {\Lg{Corollary~3.15}}, condensed]\genusstatus{AI-proposed, unchecked}
+\label{cor:row-carry}
+\begin{enumerate}
+\item At every colour, with $\cone=\ccf$, each $z^n$-coefficient of $\Ph_a^{(i)}$ is a Laurent polynomial in $v_i$ multiplied by $z$-free functions analytic at the conifold (namely $\cone^{\pm1}$, $\Fc$, $\xi$, $\dtwo$). So each such coefficient is a meromorphic germ at $y=-1/27$, and an identity between such series that holds on a punctured neighbourhood holds as an identity of Laurent expansions in $\tc$.
+\item At colour $0$ only, and in frame B only: since $v_0=O(\tc)$, each $[\tc^k]$-coefficient of $\rho^{\nu}\Ph^{(0)}$ ($\nu\in\bbZ$) involves only finitely many $v$-orders. So $[z^n]$ and $[\tc^k]$ commute, and each $[\tc^k]$-coefficient is rational in $z$.
+\end{enumerate}
+\end{cor}
+
+\begin{cor}[Consequences of the closed form; {\Lg{Corollary~3.16}}, parts]\genusstatus{AI-proposed, unchecked}
+\label{cor:row-closed}
+Write $v=v_0$.
+\begin{description}
+\item[(F2)] $\Srow(0,z)=E/(E+z)$: only $l=0$ survives at $v=0$.
+\item[(L1)] The $l$-th summand of $v\Srow$ carries $v^{l+1}$ and the proper fraction $z^l/\prod_{j\leq l+1}(1+jz/E)$, whose partial fractions at $z=-\psi$ lie in $\mathrm{span}\{\lf_1,\ldots,\lf_{l+1}\}$. As $v=\tc\cdot(\text{$z$-free unit})$, it follows that $[\tc^k](\rho\Srow)\in\mathrm{span}\{\lf_1,\ldots,\lf_{k+1}\}$, with no constant or polynomial part.
+\item[(R)] For $i=1,2$, every $z$-coefficient of the rows $\RLR_a^{(i)}$, $\PB_a^{(i)}$ with $\cone=\ccf$ is analytic at $y=-1/27$.
+\item[(Z-infinity)] Coefficientwise in $v=v_0$,
+\begin{equation}
+\label{eq:row-zinf}
+\lim_{z\to\infty}z\,v\,\Srow(v,z)=\Sinf=-\tc,\qquad\Sinf\coloneqq\sum_{l\geq0}\frac{r_l\,(Ev)^{l+1}}{(l+1)!}.
+\end{equation}
+Equivalently $\lim_{z\to\infty}z\rho\Srow=E$.
+\end{description}
+\end{cor}
+
+\begin{proof}[Idea of the proof of \eqref{eq:row-zinf}]
+By the $V$-adic form of \cref{thm:row-pf}, $\Pconj(v\Srow)=0$ coefficientwise in $v$, as identities of rational functions of $z$. Since $\Pconj_0=0$ and each $v$-coefficient of $v\Srow$ is $O(1/z)$, only the top part $z^3\Pconj_3$ contributes as $z\to\infty$, and $\Pconj_3=\xi\theta^3+27y\theta^2+6y\theta=\Ltwo\circ\theta$. So $\Ltwo(\theta\Sinf)=0$. The exponents of $\Ltwo$ at $\xi=0$ are $(0,0)$ and $\Sinf$ is analytic and vanishes at $v=0$, so $\Sinf=\kappa\tc$, and the $v^1$-coefficients give $\kappa=-1$.
+\end{proof}
+
+The identity \eqref{eq:row-zinf} is exactly the place where the normalisation of $\tc$ enters.
+
+\begin{prop}[Symplecticity; {\Lg{Proposition~3.17}}]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-sympl}
+Let $\epsilon_1,\epsilon_2$ be complex numbers with $\epsilon_1\epsilon_2E\neq0$, or indeterminates. For any non-vanishing section $\cone$ with $\Fc=\theta\log\cone$, and all $i,j$,
+\[
+\sum_{a,b}\RLR_a^{(i)}(z)\,\eta^{ab}\,\RLR_b^{(j)}(-z)=\delta_{ij}.
+\]
+The same holds for $\PB_a^{(i)}$, since $\hb(z)\hb(-z)=1$, and so $\langle\Ph^{(i)}(z),\Ph^{(j)}(-z)\rangle=\delta_{ij}\Delta_i$. The left side depends only on row $0$, and each of its $z$-coefficients is rational in $t$. So the identity holds at each $z$-order as an identity of rational functions of $t$, and its consequences at the conifold follow by expanding in $\tc$, with no continuation or branch argument.
+\end{prop}
+
+\begin{proof}[Sketch]
+The proof uses only \cref{thm:row-pf} and algebra. \emph{Drop-out.} Using $\theta\cone^{-1}=-\cone^{-1}\Fc$, $\xi\dtwo=E(\cone^{-2}-1)/2$ and $\eta^{11}=E\eta^{12}$, the terms with $\cone^{-2}$ and with $\Fc$ cancel in the pairing at arguments $z$, $-z$, for every $\cone$. What remains is $-1/E$ times $\widetilde\Pi_{ij}(z)\coloneqq\mathscr{B}((\mathrm{a},\mathrm{b},\mathrm{c})^{(i)}(z),(\mathrm{a},\mathrm{b},\mathrm{c})^{(j)}(-z))$, where $\mathrm{a}\coloneqq v_i\Srow(v_i,z)$, $\mathrm{b}\coloneqq\Thp_i\mathrm{a}$, $\mathrm{c}\coloneqq\xi\Thp_i\mathrm{b}$ and $\mathscr{B}(\mathrm{u},\mathrm{w})\coloneqq-\frac{E^3}{27}\mathrm{u}_0\mathrm{w}_0+E\mathrm{u}_1\mathrm{w}_1+\mathrm{u}_1\mathrm{w}_2+\mathrm{u}_2\mathrm{w}_1$. \emph{First-order system.} By \cref{thm:row-pf}, $\Thp(\mathrm{a},\mathrm{b},\mathrm{c})=\mathcal{D}(\mathrm{a},\mathrm{b},\mathrm{c})$ with a matrix $\mathcal{D}$ depending only on $y$ and $z^2$, and $\mathscr{B}(\mathcal{D}\mathrm{u},\mathrm{w})=\mathscr{B}(\mathrm{u},\mathcal{D}\mathrm{w})$. Hence $(Y_i-Y_j+z\theta)\widetilde\Pi_{ij}=0$. For $i\neq j$ induction on the $z$-order gives $\widetilde\Pi_{ij}=0$. For $i=j$ each $z$-coefficient is constant in $t$ and independent of $i$, and its value is read off at $t=-1/3$, where $\mathrm{a}=0$, $\mathrm{b}=\Srow(0,z)(1+z/E)=1$ and $\mathrm{c}=-E$: it is $-E$, exactly in $z$.
+\end{proof}
+
+By \cref{prop:row-sympl}, \eqref{eq:set-edge} becomes the Givental edge in $\Delta$-normalised form,
+\begin{equation}
+\label{eq:row-edgedelta}
+\Edgeh_{ij}(\psi,w)=\frac{\delta_{ij}\Delta_i-\big\langle\Ph^{(i)}(-\psi),\Ph^{(j)}(-w)\big\rangle}{\psi+w},
+\end{equation}
+and since $\eta$ is symmetric this gives the \emph{edge symmetry} $\Edgeh_{ij}(\psi,w)=\Edgeh_{ji}(w,\psi)$ for all $i,j$.
+
+\begin{prop}[{\Lg{Proposition~3.18}}, first part]\genusstatus{AI-proposed, unchecked}
+\label{prop:row-modrel}
+Let $A,D,\Ey,X$ be defined by \eqref{eq:set-I} and \eqref{eq:set-gens}. Then, as elements of $\bbQ\fps{y}$,
+\[
+A^2D=X,\qquad2\Ey=D-X.
+\]
+\end{prop}
+
+\begin{proof}[Idea of the proof]
+Reading off \eqref{eq:set-I} gives $\theta I_1^{[1]}/e_1(\alpha)=-\sum_da_dH_d(-y)^d$ and $\theta I_1^{[2]}=A\log y+\hI$ with $\hI\coloneqq\sum_d3a_d(H_{3d}-H_d)(-y)^d$, $H_n$ the harmonic numbers. The operator $\Ltwo$ annihilates $A$ and is injective on $y\bbQ\fps{y}$, and applying it to both sides proves the key identity $\sum_da_d(3H_{3d}-H_d)(-y)^d=-A\log(1+27y)$, which gives the second relation. For the first, $\Ltwo(\theta I_1^{[2]})=0$, so the Wronskian $A^2D$ of $A$ and $\theta I_1^{[2]}$ satisfies $\theta(\xi A^2D)=0$, with value $1$ at $y=0$.
+\end{proof}
+
+At $\cone=A$ the two relations give $\xi\cone^2=1/D$ and $\dtwo=e_1(\alpha^*)\Ey$, so \cref{def:set-rows} at $\cone=A$ has the recursion coefficients of the row recursion of \cite{BS}, which is \eqref{eq:gen-rowrec} below \Lg{Remark~3.19}.

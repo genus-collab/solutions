@@ -1,0 +1,25 @@
+Q, sample ('1', '2', '5') ('3', '7') D 3 K 5 {'M_rat=0': True, 'comm no psi^0': True, 'R^*': 'M_rat!=0, psi-orders [1, 2, 3, 4], min y 1', 'R(-z)': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1', 'H*->-H*': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1'}
+Q, sample ('2', '-3', '8') ('1', '4') D 3 K 5 {'M_rat=0': True, 'comm no psi^0': True, 'R^*': 'M_rat!=0, psi-orders [1, 2, 3, 4], min y 1', 'R(-z)': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1', 'H*->-H*': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1'}
+Q, sample ('1', '3', '8') ('5/2', '-3/7') D 3 K 5 {'M_rat=0': True, 'comm no psi^0': True, 'R^*': 'M_rat!=0, psi-orders [1, 2, 3, 4], min y 1', 'R(-z)': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1', 'H*->-H*': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1'}
+Q, sample ('3', '7', '-11/2') ('5/3', '-2/7') D 3 K 5 {'M_rat=0': True, 'comm no psi^0': True, 'R^*': 'M_rat!=0, psi-orders [1, 2, 3, 4], min y 1', 'R(-z)': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1', 'H*->-H*': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1'}
+Q, sample ('2', '-3', '7') ('1', '4') D 3 K 5 {'M_rat=0': True, 'comm no psi^0': True, 'R^*': 'M_rat!=0, psi-orders [1, 2, 3, 4], min y 1', 'R(-z)': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1', 'H*->-H*': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1'}
+Q, sample ('1/3', '5/7', '-2/9') ('11/4', '13/6') D 3 K 5 {'M_rat=0': True, 'comm no psi^0': True, 'R^*': 'M_rat!=0, psi-orders [1, 2, 3, 4], min y 1', 'R(-z)': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1', 'H*->-H*': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4], min y 1'}
+Q, sample ('1', '2', '5') ('3', '7') D 5 K 7 {'M_rat=0': True, 'comm no psi^0': True, 'R^*': 'M_rat!=0, psi-orders [1, 2, 3, 4, 5, 6], min y 1', 'R(-z)': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4, 5, 6], min y 1', 'H*->-H*': 'M_rat!=0, psi-orders [0, 1, 2, 3, 4, 5, 6], min y 1'}
+--- F_p p=1 mod 4, p=618970019642690137449562201 alpha (1, 3, 8) eps (Fraction(5, 2), Fraction(-3, 7)) D 3 K 5 field F62201 time 0.8
+  checks: {'C Psi=Psi Lambda': True, 'Psi^T etai Psi=1': True, 'R(-z)^T etai R(z)=1': True, 'R|Q=0=Psi|Q=0 h': True, 'Psi0=Delta^-1/2': True, 'A^2 D=X (comparison)': True, '2 e1 E=e1(D-X) (comparison)': True, 'C^0_11=0': True, '[H*,B] has no psi^0': True, 'M=0': True, 'a^i(psi;H^a)=R_ai(-psi)': True, 'z thQ(R Psi)=[H*,R]Psi': True}
+  ctl R^*(z)=R^-1(-z) : M!=0 (78 nonzero coeffs; psi-orders [1, 2, 3, 4]; min y-order 1)
+  ctl R(-z) : M!=0 (102 nonzero coeffs; psi-orders [0, 1, 2, 3, 4]; min y-order 1)
+  ctl H*->-H* : M!=0 (102 nonzero coeffs; psi-orders [0, 1, 2, 3, 4]; min y-order 1)
+  ctl theta->-theta : M!=0 (102 nonzero coeffs; psi-orders [0, 1, 2, 3, 4]; min y-order 1)
+  ctl constant frame Psi(0) in M : M!=0 (18 nonzero coeffs; psi-orders [0]; min y-order 1)
+  ctl h->h^-1 (expected M=0, A2.9) : M=0
+  ctl no h (expected M=0, A2.9) : M=0
+--- F_p p=1 mod 4, p=618970019642690137449562441 alpha (1, 3, 8) eps (Fraction(5, 2), Fraction(-3, 7)) D 3 K 5 field F62441 time 0.8
+  checks: {'C Psi=Psi Lambda': True, 'Psi^T etai Psi=1': True, 'R(-z)^T etai R(z)=1': True, 'R|Q=0=Psi|Q=0 h': True, 'Psi0=Delta^-1/2': True, 'A^2 D=X (comparison)': True, '2 e1 E=e1(D-X) (comparison)': True, 'C^0_11=0': True, '[H*,B] has no psi^0': True, 'M=0': True, 'a^i(psi;H^a)=R_ai(-psi)': True, 'z thQ(R Psi)=[H*,R]Psi': True}
+  ctl R^*(z)=R^-1(-z) : M!=0 (78 nonzero coeffs; psi-orders [1, 2, 3, 4]; min y-order 1)
+  ctl R(-z) : M!=0 (102 nonzero coeffs; psi-orders [0, 1, 2, 3, 4]; min y-order 1)
+  ctl H*->-H* : M!=0 (102 nonzero coeffs; psi-orders [0, 1, 2, 3, 4]; min y-order 1)
+  ctl theta->-theta : M!=0 (102 nonzero coeffs; psi-orders [0, 1, 2, 3, 4]; min y-order 1)
+  ctl constant frame Psi(0) in M : M!=0 (18 nonzero coeffs; psi-orders [0]; min y-order 1)
+  ctl h->h^-1 (expected M=0, A2.9) : M=0
+  ctl no h (expected M=0, A2.9) : M=0

@@ -1,0 +1,31 @@
+tau 2/7 sigma 18/49 gmax 3 max |mu| 15
+(a) MV side against direct Hodge integrals, g=1,2: 36 comparisons, 0 mismatches
+    genus 0: M_0(mu) = |mu|^(l-3): 7 comparisons, 0 mismatches
+    shape of log Z (only x^(2g-2+l)): 44 coefficients, 0 violations
+(b) deg_s Q_g(s;U) <= N: 27 cases, 0 failures (assert)
+(c) string on X and the values at U=1^v: 27 checks, 0 failures
+    outside range: h=2 T=(3,) D=2: nonzero
+    outside range: h=2 T=(2, 2) D=2: nonzero
+    outside range: h=2 T=(4,) D=3: nonzero
+    outside range: h=2 T=(3, 2) D=3: nonzero
+    outside range: h=2 T=(2, 2, 2) D=3: nonzero
+    outside range: h=2 T=(5,) D=4: nonzero
+    outside range: h=2 T=(4, 2) D=4: nonzero
+    outside range: h=2 T=(3, 3) D=4: nonzero
+    outside range: h=2 T=(3, 2, 2) D=4: nonzero
+    outside range: h=2 T=(2, 2, 2, 2) D=4: nonzero
+    outside range: h=2 T=(6,) D=5: nonzero
+    outside range: h=2 T=(5, 2) D=5: nonzero
+    outside range: h=2 T=(4, 3) D=5: nonzero
+    outside range: h=2 T=(4, 2, 2) D=5: nonzero
+    outside range: h=2 T=(3, 3, 2) D=5: nonzero
+    outside range: h=3 T=(5,) D=4: nonzero
+    outside range: h=3 T=(4, 2) D=4: nonzero
+    outside range: h=3 T=(3, 3) D=4: nonzero
+    outside range: h=3 T=(6,) D=5: nonzero
+    outside range: h=3 T=(5, 2) D=5: nonzero
+    outside range: h=3 T=(4, 3) D=5: nonzero
+    outside range: h=3 T=(7,) D=6: nonzero
+    outside range: h=3 T=(8,) D=7: nonzero
+(d) Lemma A range values vanish: 7 points, skipped (size) 32; outside-range nonzero count 23
+(e) one-part closed form (6.1) against MV side: 30 comparisons, 0 mismatches

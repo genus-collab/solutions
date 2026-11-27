@@ -1,0 +1,10 @@
+z^0: 0
+z^1: 0
+z^2: 0
+z^3: 0
+z^4: NONZERO
+z^5: 0
+z^6: NONZERO
+z^7: 0
+z^8: NONZERO
+Pi_ii != 1

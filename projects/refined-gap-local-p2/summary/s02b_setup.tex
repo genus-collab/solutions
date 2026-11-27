@@ -1,0 +1,114 @@
+% s02b_setup (abridged version). Set-up, part 2: rows, factors, decoration sum, Hodge side, Givental action.
+
+%-------------------------------------------------------------------------------
+\subsection{The rows and the factors}
+\label{sec:set-rows}
+
+\begin{defn}[Frame-B rows; {\Lg{Definition~2.4}}]
+\label{def:set-rows}
+At colour $i$ and for a non-vanishing section $\cone(y)$, put $\Thp_i\coloneqq Y_i+z\theta$ and
+\begin{align*}
+\PB_0^{(i)}&\coloneqq\Delta_i^{-1/2}\,\Srow(v_i,z),\\
+\PB_1^{(i)}&\coloneqq\cone^{-1}\,\Thp_i\,\PB_0^{(i)},\\
+\PB_2^{(i)}&\coloneqq\xi\,\cone^{2}\,\big[\Thp_i\,\PB_1^{(i)}-\dtwo\,\PB_1^{(i)}\big].
+\end{align*}
+The \emph{large-radius-frame rows} are $\RLR_a^{(i)}\coloneqq\hb(z)\,\PB_a^{(i)}$. The \emph{normalised rows} are $\Ph_a^{(i)}\coloneqq\Delta_i^{1/2}\PB_a^{(i)}$. Thus $\Ph_0^{(i)}=\Srow(v_i,z)$ is component $0$ of the normalised row $\Ph^{(i)}=(\Ph_0^{(i)},\Ph_1^{(i)},\Ph_2^{(i)})$, not the whole row. The main theorems take $\cone=\ccf$, the same section at every colour; this is legitimate because $\cone$ depends on $y$ only.
+\end{defn}
+
+With $\cone=A$ these are the rows of the row recursion of \cite{BS}, see \cref{prop:row-modrel}; the case $\cone=\ccf$ is the conifold substitution of \cref{def:fra-cf} applied to these rows.
+
+\emph{Pairing on the rows.} For vectors with components indexed by $a,b\in\{0,1,2\}$, put $\langle\mathsf{a},\mathsf{b}\rangle\coloneqq\sum_{a,b}\eta^{ab}\mathsf{a}_a\mathsf{b}_b$, with
+\begin{equation}
+\label{eq:set-etaTF}
+\eta^{00}=\frac{\epsilon_1\epsilon_2E^3}{9},\qquad\eta^{11}=-3\epsilon_1\epsilon_2E,\qquad\eta^{12}=\eta^{21}=-3\epsilon_1\epsilon_2,
+\end{equation}
+and all others $0$. Note that $\eta^{11}=E\eta^{12}$ and $\eta^{22}=0$. These are the values of the inverse Gram matrix of $\eta$ at $\alpha=\alpha^*$. As far as the decoration sum is concerned, \eqref{eq:set-etaTF} is a definition.
+
+\emph{The factors.} The \emph{vertex weight} at colour $i$ is $\Delta_i$. The \emph{dilaton factor} is
+\begin{equation}
+\label{eq:set-dil}
+\Dilh_i(d)\coloneqq(-1)^d[z^{d-1}]\Ph_0^{(i)}\quad(d\geq1),\qquad\text{equivalently}\qquad
+\qt^{(i)}(\psi)\coloneqq\sum_{d\geq1}\Dilh_i(d)\psi^d=-\psi\,\Srow(v_i,-\psi).
+\end{equation}
+Since $[z^0]\Srow=1$, we have $\Dilh_i(1)=-1$: the term $d=1$ is the dilaton shift, and the decorations below have $d\geq2$. The factor $\Dilh_i$ does not depend on $\cone$. We write $\qt\coloneqq\qt^{(0)}$. The \emph{edge factor}, with edge variables $\psi,w$, is defined by
+\begin{equation}
+\label{eq:set-edge}
+\begin{gathered}
+\cP_{ij}(\psi,w)\coloneqq-\big\langle\Ph^{(i)}(-\psi),\Ph^{(j)}(-w)\big\rangle,\qquad
+\Edgeh_{ij}(\psi,w)\coloneqq\frac{\cP_{ij}(\psi,w)-\cP_{ij}(-w,w)}{\psi+w},\\
+\Edgeh_{ij}(m,n)\coloneqq[\psi^mw^n]\Edgeh_{ij}.
+\end{gathered}
+\end{equation}
+No square root occurs in these factors: $\Ph_a=\Delta_i^{1/2}\PB_a$ does not depend on the sign of $\Delta_i^{1/2}$, because $\PB_0$ carries $\Delta_i^{-1/2}$ \Lg{Remark~2.6}.
+
+%-------------------------------------------------------------------------------
+\subsection{The Hodge class and the decoration sum}
+\label{sec:set-graphsum}
+
+For a stable curve of genus $h$, with $\lambda_i=c_i(\Hdg)$, let $\Lamv(u)\coloneqq\sum_i(-1)^i\lambda_iu^{h-i}$. For a multiset $\mathsf{v}$ of non-zero weights, the \emph{normalised Hodge class} is $\Hg_{\mathsf{v}}\coloneqq\prod_{a\in\mathsf{v}}\Lamv(a)/a^h$. We use
+\begin{equation}
+\label{eq:set-Hg}
+\Hg_{\bw}=\prod_{a=1}^{3}\frac{\Lamv(\bw_a)}{\bw_a^{h}},\qquad\bw=(E,-\epsilon_1,-\epsilon_2).
+\end{equation}
+It is the same at every colour and independent of $y$. The class is a pull-back under forgetful maps, so the string and dilaton equations hold for $\Hg_{\bw}$ when $h\geq2$.
+
+\begin{defn}[Decoration sum; {\Lg{Definition~2.7}}]
+\label{def:set-graphsum}
+Fix $g\geq2$. Let $\Gamma$ run over connected stable graphs of genus $g$ without legs, with vertex set $\Ver(\Gamma)$, edge set $\Edg(\Gamma)$, vertex genera $g_v$, and $n_v$ half-edges at $v$. A \emph{colouring} is a map $\col:\Ver(\Gamma)\to\{0,1,2\}$, $v\mapsto\col_v$. A \emph{decoration} assigns an exponent $a_h\geq0$ to each half-edge $h$ (we write $a_e,b_e$ for the exponents at the two half-edges of an edge $e$) and to each vertex $v$ an integer $m_v\geq0$ with an ordered tuple $(d_{v,1},\ldots,d_{v,m_v})$ of \emph{dilaton degrees} $d_{v,k}\geq2$, with weight $1/m_v!$. The \emph{decoration sum} of $(\Gamma,\col)$, with all factors taken at $\cone=\ccf$, is
+\begin{multline}
+\label{eq:set-graphsum}
+\GCont(\Gamma,\col)\coloneqq\sum_{\mathrm{dec}}\ \prod_{v\in\Ver(\Gamma)}\Big[\Delta_{\col_v}^{g_v-1}\frac{1}{m_v!}\int_{\Mbar_{g_v,n_v+m_v}}\Hg_{\bw}\prod_{h\text{ at }v}\psi_h^{a_h}\prod_{k=1}^{m_v}\psi_{n_v+k}^{d_{v,k}}\ \prod_{k=1}^{m_v}\Dilh_{\col_v}(d_{v,k})\Big]\\
+\times\prod_{e\in\Edg(\Gamma)}\Edgeh_{\col_{v(e)}\col_{v'(e)}}(a_e,b_e),
+\end{multline}
+where $v(e),v'(e)$ are the end points of $e$. The \emph{frame-B Hodge-vertex graph sum} is
+\begin{equation}
+\label{eq:set-Gsum}
+\Gsum_g\coloneqq\sum_{\Gamma}\frac{1}{|\Aut\Gamma|}\sum_{\col:\Ver(\Gamma)\to\{0,1,2\}}\GCont(\Gamma,\col).
+\end{equation}
+\end{defn}
+
+The decoration sum is finite, since $d_{v,k}\geq2$ forces $m_v\leq3g_v-3+n_v$; this is what gives ``analytic at the conifold'' its meaning in \cref{thm:reg-main}. By the edge symmetry \eqref{eq:row-edgedelta}, $\GCont(\Gamma,\col)$ does not depend on the orientation of the edges. The regularity statements of the paper are statements about the sum \eqref{eq:set-graphsum} as defined; its identification with a Gromov--Witten potential is a separate statement, \cref{prop:fra-frame}.
+
+%-------------------------------------------------------------------------------
+\subsection{The Hodge side}
+\label{sec:set-hodge}
+
+Fix $h\geq2$. Let $\RRing\coloneqq\RRing_0\fps{\tc}$, with $\RRing_0$ a $\bbQ$-algebra in which $\epsilon_1,\epsilon_2,E$ are invertible.
+
+\begin{defn}[{\Lg{Definition~2.8}}]
+\label{def:set-fpot}
+\begin{description}
+\item[Base-point derivatives.] For $\mathsf{b}_1,\ldots,\mathsf{b}_s\in\RRing\fps{\psi}$, put
+\[
+\dbase^s(\mathsf{b}_1,\ldots,\mathsf{b}_s)\coloneqq\sum_{m\geq 0}\frac{1}{m!}\int_{\Mbar_{h,s+m}}\Hg_{\bw}\prod_{i=1}^s\mathsf{b}_i(\psi_i)\prod_{k=1}^{m}\Tdil(\psi_{s+k}).
+\]
+This is a finite sum, since $\Tdil=O(\psi^2)$ forces $m\leq3h-3+s$.
+\item[The potential on the neighbourhood $\Dom$ of $\qo$.] Let $\Dom\coloneqq\qo+\tc\RRing\fps{\psi}$. For $\mathbf{q}=\qo+\delta\in\Dom$ and $f_1,\ldots,f_n\in\RRing\fps{\psi}$, define
+\[
+\dd^n\Fpot_h(\mathbf{q})[f_1,\ldots,f_n]\coloneqq\sum_{r\geq0}\frac{1}{r!}\,\dbase^{n+r}(f_1,\ldots,f_n,\underbrace{\delta,\ldots,\delta}_{r}),\qquad\Fpot_h(\mathbf{q})\coloneqq\dd^0\Fpot_h(\mathbf{q}),
+\]
+which converges $\tc$-adically because $\delta=O(\tc)$. Note that $\delta$ may have a term linear in $\psi$.
+\item[The dilaton-shifted form.] If $\mathbf{q}=-\psi+O(\psi^2)$, put $\Fpot_h(\mathbf{q})\coloneqq\sum_{m\geq 0}\frac{1}{m!}\int_{\Mbar_{h,m}}\Hg_{\bw}\prod_{i=1}^m(\mathbf{q}+\psi)(\psi_i)$, and similarly for $\dd^n\Fpot_h(\mathbf{q})[f_1,\ldots,f_n]$. On the overlap with $\Dom$ the two definitions agree. This form occurs at the regular colours.
+\item[The numbers $\Xiz_h$.] For a multiset $\msU=\{j_1,\ldots,j_r\}$ of integers,
+\[
+\Xiz_h(\msU)\coloneqq\dbase^r(\lf_{j_1},\ldots,\lf_{j_r})=\sum_{m\geq 0}\frac{1}{m!}\int_{\Mbar_{h,r+m}}\Hg_{\bw}\prod_{i=1}^{r}\lf_{j_i}(\psi_i)\prod_{k=1}^{m}\Tdil(\psi_{r+k}).
+\]
+Further, $J_{\msU}\coloneqq\sum_ij_i$, $\dg(\msU)\coloneqq\sum_i(j_i-1)$ and $\ZZ[h,n]\coloneqq\Xiz_h(1^n)$, so that $\ZZ[h,0]=\Fpot_h(\qo)$.
+\end{description}
+\end{defn}
+
+\begin{defn}[The statement $\Mirr(h)$; {\Lg{Definition~2.9}}]
+\label{def:set-mirr}
+$\Mirr(h)$ is the statement: $\Xiz_h(\msM)=0$ for every \emph{non-empty} multiset $\msM$ of integers $\geq2$ with $\dg(\msM)\leq2h-3$.
+\end{defn}
+
+The empty multiset is excluded because $\Xiz_h(\emptyset)=\ZZ[h,0]$ is the gap. Parts $0$ and $1$ are not in $\Mirr$: part $1$ is dealt with by \cref{lem:reg-string}, and part $0$ never occurs, see \cref{sec:reg-string}.
+
+\emph{The vertex factor.} By the definition of $\Fpot_h$, and because the decorations of \eqref{eq:set-graphsum} have $d\geq2$ with weight $1/m!$, the sum over dilaton decorations at a vertex $v$ of genus $h\geq2$ and colour $i$, with half-edge series $f_1,\ldots,f_n$ (where $f_r(\psi)=\sum_a(\text{edge coefficient})\,\psi^a$), equals
+\begin{equation}
+\label{eq:set-vertex}
+\Delta_i^{h-1}\,\dd^n\Fpot_h\big(\qt^{(i)}\big)[f_1,\ldots,f_n].
+\end{equation}
+Edges do not factorise in general, so \eqref{eq:set-vertex}, which is multilinear in the half-edge slots, is applied term by term, leaf by leaf, and coefficient by coefficient in the edge variables. \emph{Frame B} means the $\Rm$-matrix $\RB=\Rm_Z\,\hb^{-1}$; the Hodge weights are $\bw=(E,-\epsilon_1,-\epsilon_2)$ and not $-\bw$ \Lg{Remark~2.10}.
+
+\emph{The Givental action.} We use the action $\Rm.\Omega$ of a symplectic series $\Rm(z)\in1+z\End(V)\fps{z}$ on a cohomological field theory (CohFT) $\Omega$, in the form of \cite[Definitions~2.2, 2.5, 2.13 and Proposition~2.14]{PPZ15}: a translation by $T_{\Rm}(z)\coloneqq z(1-\Rm^{-1}(z)\mathbf{1})$ followed by a sum over stable graphs with $\Rm^{-1}(\psi)$ on the legs and the bivector $[\eta^{-1}-(\Rm^{-1}(\psi)\otimes\Rm^{-1}(\psi'))\eta^{-1}]/(\psi+\psi')$ on the edges. For a semisimple theory the rows of $\Rm$ are $\Rm_{aj}(z)\coloneqq\eta(H^a,\Rm(z)\fid_j)$, and in terms of the rows $\Delta_i^{1/2}\Rm_{ai}$ the translation and the bivector become the factors \eqref{eq:set-dil}, \eqref{eq:set-edge} (\cref{lem:fra-unfold}).

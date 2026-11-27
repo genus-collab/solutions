@@ -1,0 +1,35 @@
+cPP parsed: z^0..z^9, p_k = 1 -1 -1 -1 -1 -1 -1 -1 -1 -1; numerators (deg<=k) interpolated and verified at 3 extra points
+check theta t_c + wc = 0 (C1cf = -wc) to s^11: OK
+check L2b(wc)=0 to s^10: OK
+min stored s-valuation of sigma entries: -1
+e1=5 e2=2 E=7  Q(off-shell c1=-wc(1+Q Del))=0  NS=13  readout t_c^-1..t_c^8
+t_c^-1 sigma_0: J=0 checks=8 a1=0 a0=0 leaves{} Sum(beta/j)=0 beta=()
+t_c^-1 sigma_1: J=0 checks=8 a1=0 a0=7 leaves{} Sum(beta/j)=0 beta=()
+t_c^-1 sigma_2: J=0 checks=8 a1=0 a0=-49 leaves{} Sum(beta/j)=0 beta=()  my_pred_a1=0
+t_c^0  sigma_0: J=1 checks=7 a1=0 a0=0 leaves{1} Sum(beta/j)=7 beta=(7)
+t_c^0  sigma_1: J=1 checks=7 a1=0 a0=0 leaves{1} Sum(beta/j)=49/9 beta=(49/9)
+t_c^0  sigma_2: J=0 checks=8 a1=0 a0=0 leaves{} Sum(beta/j)=0 beta=()  my_pred_a1=0
+t_c^1  sigma_0: J=2 checks=6 a1=0 a0=0 leaves{1 2} Sum(beta/j)=0 beta=(-7/18,7/9)
+t_c^1  sigma_1: J=2 checks=6 a1=0 a0=0 leaves{1 2} Sum(beta/j)=0 beta=(-49/162,49/81)
+t_c^1  sigma_2: J=1 checks=7 a1=0 a0=0 leaves{1} Sum(beta/j)=343/81 beta=(343/81)  my_pred_a1=0
+t_c^2  sigma_0: J=3 checks=5 a1=0 a0=0 leaves{1 2 3} Sum(beta/j)=0 beta=(7/486,-7/81,7/81)
+t_c^2  sigma_1: J=3 checks=5 a1=0 a0=0 leaves{1 2 3} Sum(beta/j)=-539/19683 beta=(-49/1458,-49/2187,343/6561)
+t_c^2  sigma_2: J=2 checks=6 a1=0 a0=0 leaves{1 2} Sum(beta/j)=-686/2187 beta=(-1372/2187,1372/2187)  my_pred_a1=0
+t_c^3  sigma_0: J=4 checks=4 a1=0 a0=0 leaves{1 2 3 4} Sum(beta/j)=0
+t_c^3  sigma_1: J=4 checks=4 a1=0 a0=0 leaves{1 2 3 4} Sum(beta/j)=245/59049
+t_c^3  sigma_2: J=3 checks=5 a1=0 a0=0 leaves{1 2 3} Sum(beta/j)=8575/236196  my_pred_a1=0
+t_c^4  sigma_0: J=5 checks=3 a1=0 a0=0 leaves{1 2 3 4 5} Sum(beta/j)=0
+t_c^4  sigma_1: J=5 checks=3 a1=0 a0=0 leaves{1 2 3 4 5} Sum(beta/j)=-11711/31886460
+t_c^4  sigma_2: J=4 checks=4 a1=0 a0=0 leaves{1 2 3 4} Sum(beta/j)=-343/118098  my_pred_a1=0
+t_c^5  sigma_0: J=6 checks=2 a1=0 a0=0 leaves{1 2 3 4 5 6} Sum(beta/j)=0
+t_c^5  sigma_1: J=6 checks=2 a1=0 a0=0 leaves{1 2 3 4 5 6} Sum(beta/j)=1372/129140163
+t_c^5  sigma_2: J=5 checks=3 a1=0 a0=0 leaves{1 2 3 4 5} Sum(beta/j)=-98441/5165606520  my_pred_a1=0
+t_c^6  sigma_0: J=7 checks=1 a1=0 a0=0 leaves{1 2 3 4 5 6 7} Sum(beta/j)=0
+t_c^6  sigma_1: J=7 checks=1 a1=0 a0=0 leaves{1 2 3 4 5 6 7} Sum(beta/j)=46207/15496819560
+t_c^6  sigma_2: J=6 checks=2 a1=0 a0=0 leaves{1 2 3 4 5 6} Sum(beta/j)=45619/860934420  my_pred_a1=0
+t_c^7  sigma_0: [nolin hyp] J=8 checks=1 a0=0 leaves{1 2 3 4 5 6 7 8}
+t_c^7  sigma_1: [nolin hyp] J=8 checks=1 a0=0 leaves{1 2 3 4 5 6 7 8}
+t_c^7  sigma_2: J=7 checks=1 a1=0 a0=0 leaves{1 2 3 4 5 6 7} Sum(beta/j)=-6736667/669462604992  my_pred_a1=0
+t_c^8  sigma_0: untestable
+t_c^8  sigma_1: untestable
+t_c^8  sigma_2: [nolin hyp] J=8 checks=1 a0=0 leaves{1 2 3 4 5 6 7 8}  my_pred_a1=0

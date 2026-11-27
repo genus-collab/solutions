@@ -1,0 +1,3 @@
+2026-10-29 16:43:37  [g=2] 7 graphs, 37 labelled decorations, 27 decorated graphs (orbits), 12 dilaton-free; 884 sample points (26 t x 34 eps-ratios); 0. s; written hv_orbits_g2.mx
+2026-10-29 16:58:35  [g=3] 42 graphs, 1383 labelled decorations, 693 decorated graphs (orbits), 205 dilaton-free; 780 sample points (26 t x 30 eps-ratios); 1. s; written hv_orbits_g3.mx
+2026-10-29 17:22:32  [g=4] 379 graphs, 71198 labelled decorations, 27172 decorated graphs (orbits), 5647 dilaton-free; 680 sample points (34 t x 20 eps-ratios); 117.9 s; written hv_orbits_g4.mx

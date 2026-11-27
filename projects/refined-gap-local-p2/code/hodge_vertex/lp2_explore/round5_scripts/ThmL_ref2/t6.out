@@ -1,0 +1,11 @@
+﻿building
+built 0.3
+k 2 so far: coefficients 4 nonzero 0 controls swap [4, 4] tau_-1 [4, 4] wrong c_(k) [4, 4] t 0.3
+k 3 so far: coefficients 8 nonzero 0 controls swap [8, 8] tau_-1 [8, 8] wrong c_(k) [8, 8] t 0.3
+k 4 so far: coefficients 12 nonzero 0 controls swap [12, 12] tau_-1 [12, 12] wrong c_(k) [12, 12] t 0.3
+k 5 so far: coefficients 16 nonzero 0 controls swap [16, 16] tau_-1 [16, 16] wrong c_(k) [16, 16] t 0.3
+k 6 so far: coefficients 20 nonzero 0 controls swap [20, 20] tau_-1 [20, 20] wrong c_(k) [20, 20] t 0.4
+k 7 so far: coefficients 24 nonzero 0 controls swap [24, 24] tau_-1 [24, 24] wrong c_(k) [24, 24] t 0.5
+k 8 so far: coefficients 28 nonzero 0 controls swap [28, 28] tau_-1 [28, 28] wrong c_(k) [28, 28] t 0.7
+k 9 so far: coefficients 32 nonzero 0 controls swap [32, 32] tau_-1 [32, 32] wrong c_(k) [32, 32] t 1.1
+k 10 so far: coefficients 36 nonzero 0 controls swap [36, 36] tau_-1 [36, 36] wrong c_(k) [36, 36] t 2.0

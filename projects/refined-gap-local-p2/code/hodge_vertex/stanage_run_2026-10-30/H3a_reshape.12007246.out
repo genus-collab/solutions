@@ -1,0 +1,8 @@
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+Failed to open configuaration file at path: /users/<user>/.config/Wolfram/WolframScript/WolframScript.conf
+680 files, 680 of 680 points; max |Im|      -329
+0. 10; points with unexpected monomials: 0; points whose orbit sum differs from the reference total: 0; complete t-values: 34 of 34; incomplete: {}
+VALIDATION OK: sum of decorated graphs = reference total at every sample point
+wrote 120 chunk files (227 orbits each at most)

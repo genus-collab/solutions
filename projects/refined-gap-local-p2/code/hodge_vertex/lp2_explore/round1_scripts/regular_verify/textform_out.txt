@@ -1,0 +1,11 @@
+entries: 10
+k=0 denom (E+3L) powers: 1 ; max L power elsewhere: 0 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=1 denom (E+3L) powers: 2 ; max L power elsewhere: 1 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=2 denom (E+3L) powers: 3 ; max L power elsewhere: 2 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=3 denom (E+3L) powers: 4 ; max L power elsewhere: 3 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=4 denom (E+3L) powers: 5 ; max L power elsewhere: 4 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=5 denom (E+3L) powers: 6 ; max L power elsewhere: 5 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=6 denom (E+3L) powers: 7 ; max L power elsewhere: 6 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=7 denom (E+3L) powers: 8 ; max L power elsewhere: 7 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=8 denom (E+3L) powers: 9 ; max L power elsewhere: 8 ; Sqrt3 occurrences: 1 ; symbols: LRabqs
+k=9 denom (E+3L) powers: 10 ; max L power elsewhere: 9 ; Sqrt3 occurrences: 1 ; symbols: LRabqs

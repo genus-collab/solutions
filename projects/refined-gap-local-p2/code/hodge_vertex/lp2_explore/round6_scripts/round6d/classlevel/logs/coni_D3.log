@@ -1,0 +1,20 @@
+conifold <H,H>_{0,d} from GP (expected 1/(d e1 e2)): [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)]
+conifold class-level (1, 2, 3, 5, 7) (1, 1) D 3 tests 4 nonzero 4 mismatch 0 secs 0.2
+conifold class-level (1, 2, 3, 5, 7) (1, 2) D 3 tests 14 nonzero 12 mismatch 0 secs 1.0
+conifold class-level (1, 2, 3, 5, 7) (2, 0) D 3 tests 1 nonzero 1 mismatch 0 secs 0.2
+conifold class-level (1, 2, 3, 5, 7) (2, 1) D 3 tests 10 nonzero 9 mismatch 0 secs 0.7
+conifold class-level (1, 2, 3, 5, 7) (2, 2) D 3 tests 45 nonzero 42 mismatch 0 secs 10.2
+conifold controls (1, 2, 3, 5, 7) (1, 1) [tests,fails] {'legs +psi': [4, 2], 'R^*': [4, 0], 'R(-z)': [4, 2]}
+conifold controls (1, 2, 3, 5, 7) (1, 2) [tests,fails] {'legs +psi': [14, 7], 'R^*': [14, 1], 'R(-z)': [14, 4]}
+conifold controls (1, 2, 3, 5, 7) (2, 1) [tests,fails] {'legs +psi': [10, 8], 'R^*': [10, 5], 'R(-z)': [10, 4]}
+conifold controls (1, 2, 3, 5, 7) (2, 2) [tests,fails] {'legs +psi': [45, 33], 'R^*': [45, 19], 'R(-z)': [45, 19]}
+conifold <H,H>_{0,d} from GP (expected 1/(d e1 e2)): [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)]
+conifold class-level (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (1, 1) D 3 tests 4 nonzero 4 mismatch 0 secs 0.0
+conifold class-level (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (1, 2) D 3 tests 14 nonzero 12 mismatch 0 secs 0.3
+conifold class-level (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (2, 0) D 3 tests 1 nonzero 1 mismatch 0 secs 0.0
+conifold class-level (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (2, 1) D 3 tests 10 nonzero 9 mismatch 0 secs 0.5
+conifold class-level (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (2, 2) D 3 tests 45 nonzero 42 mismatch 0 secs 5.0
+conifold controls (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (1, 1) [tests,fails] {'legs +psi': [4, 2], 'R^*': [4, 0], 'R(-z)': [4, 2]}
+conifold controls (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (1, 2) [tests,fails] {'legs +psi': [14, 7], 'R^*': [14, 1], 'R(-z)': [14, 4]}
+conifold controls (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (2, 1) [tests,fails] {'legs +psi': [10, 8], 'R^*': [10, 5], 'R(-z)': [10, 4]}
+conifold controls (Fraction(2, 1), Fraction(-3, 1), Fraction(5, 2), Fraction(1, 3), Fraction(4, 1)) (2, 2) [tests,fails] {'legs +psi': [45, 33], 'R^*': [45, 19], 'R(-z)': [45, 19]}

@@ -1,0 +1,2951 @@
+2026-09-07 14:51:13  [g4_job1of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job18of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job2of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job10of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job38of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job32of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job33of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job31of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job26of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job24of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job16of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job17of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job7of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job27of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job8of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job13of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job5of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job34of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job39of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:13  [g4_job12of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job15of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job43of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job6of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job9of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job11of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job14of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job20of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job36of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job37of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job35of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job41of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job19of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job44of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job22of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:14  [g4_job42of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:15  [g4_job30of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:15  [g4_job40of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:15  [g4_job29of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:15  [g4_job28of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:15  [g4_job23of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:15  [g4_job21of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:15  [g4_job25of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:172026-09-07 14:51:17  [  [g4_job4of180g4_job3of180] ] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+
+2026-09-07 14:51:18  [2026-09-07 14:51:18g4_job49of180  [] g4_job50of1802026-09-07 14:51:18] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)2026-09-07 14:51:18start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+
+  [g4_job45of180  [] 2026-09-07 14:51:18start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+  [g4_job47of180] g4_job48of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:18  [g4_job46of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:51:33  [g4_job18of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:33  [g4_job10of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job1of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job2of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job7of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job16of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job26of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job32of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job33of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job38of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job27of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job8of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job31of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job13of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job5of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job12of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job15of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job34of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job39of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job9of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job6of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job17of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job11of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job43of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job14of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:34  [g4_job24of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job20of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job36of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job37of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job35of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job19of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job22of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job41of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job44of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job42of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job28of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job30of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job40of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job29of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job23of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:35  [g4_job21of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:51:36  [g4_job25of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:55:46  [g4_job18of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:462026-09-07 14:55:46  [g4_job22of180]   [g4_job25of1802026-09-07 14:55:462026-09-07 14:55:46  [g4_job17of180  [] g4_job15of180] ] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+
+2026-09-07 14:55:46  [g4_job21of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job8of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job7of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job9of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)2026-09-07 14:55:46
+  [g4_job10of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job27of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job33of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job31of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job38of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job39of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job49of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job6of180] 2026-09-07 14:55:46  [start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+g4_job5of180] 2026-09-07 14:55:46  [start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)g4_job2of180
+] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job50of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job48of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job3of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job16of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job44of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job45of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job14of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job20of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job13of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job23of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job12of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:46  [g4_job4of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+
+2026-09-07 14:55:46  [g4_job30of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job11of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job26of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [2026-09-07 14:55:47g4_job47of180  [g4_job43of180] ] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)  [
+g4_job46of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job32of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job29of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job28of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job40of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job37of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job41of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job35of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job34of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job42of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job24of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:55:47  [g4_job36of180] start: genus 4, KMAX 9, PREC 350, kernels 1, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 14:56:07  [g4_job21of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:07  [g4_job17of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:07  [g4_job25of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:07  [g4_job22of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:07  [g4_job15of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:07  [g4_job18of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:07  [g4_job13of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job1of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job33of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job11of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job12of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job26of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job31of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job23of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job8of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job16of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:08  [g4_job14of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job7of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job27of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job20of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job32of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job19of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job46of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job28of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job30of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job24of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job50of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job6of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job29of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:09  [g4_job5of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job4of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job34of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job41of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job2of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job3of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job48of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job43of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job39of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job44of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job9of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job35of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job10of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job38of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job49of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job47of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job40of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job45of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:10  [g4_job36of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:11  [g4_job37of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 14:56:11  [g4_job42of180] 3 points assigned, 0 already done, 3 to do
+2026-09-07 15:27:25  [g4_job29of180] point  1
+{-, 29}
+ 3 done in 1875.5 s; max |Im|      -311
+0. 10
+2026-09-07 15:27:26  [g4_job28of180] point  1
+{-, 23}
+ 3 done in 1877.1 s; max |Im|      -314
+0. 10
+2026-09-07 15:27:27  [g4_job31of180] point  1
+{-, 37}
+ 3 done in 1878.9 s; max |Im|      -309
+0. 10
+2026-09-07 15:27:29  [g4_job34of180] point  1
+{-, 47}
+ 3 done in 1879.4 s; max |Im|      -306
+0. 10
+2026-09-07 15:27:32  [g4_job33of180] point  1
+{-, 43}
+ 3 done in 1884. s; max |Im|      -307
+0. 10
+2026-09-07 15:27:34  [g4_job27of180] point  1
+{-, 19}
+ 3 done in 1885.7 s; max |Im|      -316
+0. 10
+2026-09-07 15:27:35  [g4_job38of180] point  1
+{-, 67}
+ 3 done in 1884.5 s; max |Im|      -303
+0. 10
+2026-09-07 15:27:35  [g4_job43of180] point  2
+{-, 7}
+ 3 done in 1884.8 s; max |Im|      -325
+0. 10
+2026-09-07 15:27:36  [g4_job44of180] point  2
+{-, 11}
+ 3 done in 1885.7 s; max |Im|      -321
+0. 10
+2026-09-07 15:27:37  [g4_job46of180] point  2
+{-, 17}
+ 3 done in 1887.6 s; max |Im|      -317
+0. 10
+2026-09-07 15:27:38  [g4_job37of180] point  1
+{-, 61}
+ 3 done in 1887.9 s; max |Im|      -304
+0. 10
+2026-09-07 15:27:39  [g4_job40of180] point  1
+{-, 73}
+ 3 done in 1888.3 s; max |Im|      -302
+0. 10
+2026-09-07 15:27:41  [g4_job41of180] point  2
+{-, 3}
+ 3 done in 1891.2 s; max |Im|      -332
+0. 10
+2026-09-07 15:27:41  [g4_job50of180] point  2
+{-, 31}
+ 3 done in 1891.6 s; max |Im|      -311
+0. 10
+2026-09-07 15:27:41  [g4_job47of180] point  2
+{-, 19}
+ 3 done in 1890.7 s; max |Im|      -315
+0. 10
+2026-09-07 15:27:41  [g4_job42of180] point  2
+{-, 5}
+ 3 done in 1890.5 s; max |Im|      -328
+0. 10
+2026-09-07 15:27:43  [g4_job8of180] point  1
+{-, 23}
+ 2 done in 1894.3 s; max |Im|      -314
+0. 10
+2026-09-07 15:27:43  [g4_job36of180] point  1
+{-, 59}
+ 3 done in 1892.5 s; max |Im|      -304
+0. 10
+2026-09-07 15:27:46  [g4_job48of180] point  2
+{-, 23}
+ 3 done in 1896.3 s; max |Im|      -314
+0. 10
+2026-09-07 15:27:46  [g4_job45of180] point  2
+{-, 13}
+ 3 done in 1896.1 s; max |Im|      -319
+0. 10
+2026-09-07 15:27:50  [g4_job21of180] point  1
+{-, 3}
+ 3 done in 1903.3 s; max |Im|      -333
+0. 10
+2026-09-07 15:27:53  [g4_job22of180] point  1
+{-, 5}
+ 3 done in 1905.6 s; max |Im|      -329
+0. 10
+2026-09-07 15:27:53  [g4_job32of180] point  1
+{-, 41}
+ 3 done in 1904.1 s; max |Im|      -308
+0. 10
+2026-09-07 15:27:55  [g4_job35of180] point  1
+{-, 53}
+ 3 done in 1904.6 s; max |Im|      -305
+0. 10
+2026-09-07 15:27:55  [g4_job25of180] point  1
+{-, 13}
+ 3 done in 1907.7 s; max |Im|      -319
+0. 10
+2026-09-07 15:27:57  [g4_job26of180] point  1
+{-, 17}
+ 3 done in 1908.9 s; max |Im|      -317
+0. 10
+2026-09-07 15:27:57  [g4_job18of180] point  1
+{-, 67}
+ 2 done in 1909.5 s; max |Im|      -303
+0. 10
+2026-09-07 15:28:02  [g4_job13of180] point  1
+{-, 43}
+ 2 done in 1914.9 s; max |Im|      -307
+0. 10
+2026-09-07 15:28:04  [g4_job39of180] point  1
+{-, 71}
+ 3 done in 1913.7 s; max |Im|      -302
+0. 10
+2026-09-07 15:28:04  [g4_job24of180] point  1
+{-, 11}
+ 3 done in 1914.6 s; max |Im|      -321
+0. 10
+2026-09-07 15:28:04  [g4_job20of180] point  1
+{-, 73}
+ 2 done in 1915.2 s; max |Im|      -302
+0. 10
+2026-09-07 15:28:07  [g4_job19of180] point  1
+{-, 71}
+ 2 done in 1918.5 s; max |Im|      -302
+0. 10
+2026-09-07 15:28:08  [g4_job17of180] point  1
+{-, 61}
+ 2 done in 1921.4 s; max |Im|      -304
+0. 10
+2026-09-07 15:28:09  [g4_job14of180] point  1
+{-, 47}
+ 2 done in 1921.1 s; max |Im|      -306
+0. 10
+2026-09-07 15:28:11  [g4_job11of180] point  1
+{-, 37}
+ 2 done in 1923.3 s; max |Im|      -309
+0. 10
+2026-09-07 15:28:11  [g4_job16of180] point  1
+{-, 59}
+ 2 done in 1922.6 s; max |Im|      -304
+0. 10
+2026-09-07 15:28:11  [g4_job49of180] point  2
+{-, 29}
+ 3 done in 1921.3 s; max |Im|      -311
+0. 10
+2026-09-07 15:28:12  [g4_job15of180] point  1
+{-, 53}
+ 2 done in 1924.4 s; max |Im|      -305
+0. 10
+2026-09-07 15:28:13  [g4_job12of180] point  1
+{-, 41}
+ 2 done in 1925.8 s; max |Im|      -308
+0. 10
+2026-09-07 15:28:19  [g4_job1of180] point  1
+{-, 3}
+ 2 done in 1931.9 s; max |Im|      -333
+0. 10
+2026-09-07 15:28:29  [g4_job7of180] point  1
+{-, 19}
+ 2 done in 1940.1 s; max |Im|      -316
+0. 10
+2026-09-07 15:28:35  [g4_job6of180] point  1
+{-, 17}
+ 2 done in 1945.4 s; max |Im|      -317
+0. 10
+2026-09-07 15:28:38  [g4_job5of180] point  1
+{-, 13}
+ 2 done in 1948.4 s; max |Im|      -319
+0. 10
+2026-09-07 15:28:39  [g4_job4of180] point  1
+{-, 11}
+ 2 done in 1949.1 s; max |Im|      -321
+0. 10
+2026-09-07 15:28:42  [g4_job2of180] point  1
+{-, 5}
+ 2 done in 1952.5 s; max |Im|      -329
+0. 10
+2026-09-07 15:28:43  [g4_job3of180] point  1
+{-, 7}
+ 2 done in 1953.4 s; max |Im|      -325
+0. 10
+2026-09-07 15:28:44  [g4_job30of180] point  1
+{-, 31}
+ 3 done in 1955.3 s; max |Im|      -311
+0. 10
+2026-09-07 15:28:48  [g4_job23of180] point  1
+{-, 7}
+ 3 done in 1959.3 s; max |Im|      -325
+0. 10
+2026-09-07 15:29:21  [g4_job9of180] point  1
+{-, 29}
+ 2 done in 1990.7 s; max |Im|      -311
+0. 10
+2026-09-07 15:29:30  [g4_job10of180] point  1
+{-, 31}
+ 2 done in 2000. s; max |Im|      -311
+0. 10
+2026-09-07 15:58:59  [g4_job44of180] point  1
+{-, 11}
+ 7 done in 1883.5 s; max |Im|      -324
+0. 10
+2026-09-07 15:59:02  [g4_job43of180] point  1
+{-, 7}
+ 7 done in 1887.2 s; max |Im|      -328
+0. 10
+2026-09-07 15:59:04  [g4_job29of180] point  5
+{-, 29}
+ 6 done in 1899. s; max |Im|      -311
+0. 10
+2026-09-07 15:59:04  [g4_job8of180] point  1
+{-, 23}
+ 6 done in 1881.4 s; max |Im|      -316
+0. 10
+2026-09-07 15:59:07  [g4_job38of180] point  5
+{-, 67}
+ 6 done in 1892.4 s; max |Im|      -303
+0. 10
+2026-09-07 15:59:08  [g4_job33of180] point  5
+{-, 43}
+ 6 done in 1896.7 s; max |Im|      -307
+0. 10
+2026-09-07 15:59:09  [g4_job31of180] point  5
+{-, 37}
+ 6 done in 1901.7 s; max |Im|      -309
+0. 10
+2026-09-07 15:59:09  [g4_job50of180] point  1
+{-, 31}
+ 7 done in 1888.3 s; max |Im|      -314
+0. 10
+2026-09-07 15:59:10  [g4_job46of180] point  1
+{-, 17}
+ 7 done in 1893.3 s; max |Im|      -320
+0. 10
+2026-09-07 15:59:10  [g4_job28of180] point  5
+{-, 23}
+ 6 done in 1904.3 s; max |Im|      -313
+0. 10
+2026-09-07 15:59:11  [g4_job27of180] point  5
+{-, 19}
+ 6 done in 1896.1 s; max |Im|      -315
+0. 10
+2026-09-07 15:59:11  [g4_job47of180] point  1
+{-, 19}
+ 7 done in 1890.5 s; max |Im|      -319
+0. 10
+2026-09-07 15:59:13  [g4_job41of180] point  1
+{-, 3}
+ 7 done in 1892. s; max |Im|      -335
+0. 10
+2026-09-07 15:59:14  [g4_job34of180] point  5
+{-, 47}
+ 6 done in 1904.6 s; max |Im|      -306
+0. 10
+2026-09-07 15:59:15  [g4_job42of180] point  1
+{-, 5}
+ 7 done in 1894.2 s; max |Im|      -331
+0. 10
+2026-09-07 15:59:19  [g4_job37of180] point  5
+{-, 61}
+ 6 done in 1900.8 s; max |Im|      -304
+0. 10
+2026-09-07 15:59:19  [g4_job40of180] point  5
+{-, 73}
+ 6 done in 1900.7 s; max |Im|      -302
+0. 10
+2026-09-07 15:59:24  [g4_job36of180] point  5
+{-, 59}
+ 6 done in 1901.1 s; max |Im|      -304
+0. 10
+2026-09-07 15:59:27  [g4_job48of180] point  1
+{-, 23}
+ 7 done in 1901.1 s; max |Im|      -317
+0. 10
+2026-09-07 15:59:29  [g4_job45of180] point  1
+{-, 13}
+ 7 done in 1902.7 s; max |Im|      -322
+0. 10
+2026-09-07 15:59:48  [g4_job35of180] point  5
+{-, 53}
+ 6 done in 1913.2 s; max |Im|      -305
+0. 10
+2026-09-07 15:59:56  [g4_job32of180] point  5
+{-, 41}
+ 6 done in 1923.4 s; max |Im|      -308
+0. 10
+2026-09-07 15:59:58  [g4_job39of180] point  5
+{-, 71}
+ 6 done in 1914. s; max |Im|      -302
+0. 10
+2026-09-07 16:00:14  [g4_job7of180] point  1
+{-, 19}
+ 6 done in 1905.8 s; max |Im|      -318
+0. 10
+2026-09-07 16:00:16  [g4_job49of180] point  1
+{-, 29}
+ 7 done in 1924.2 s; max |Im|      -314
+0. 10
+2026-09-07 16:00:17  [g4_job1of180] point  1
+{-, 3}
+ 6 done in 1917.3 s; max |Im|      -335
+0. 10
+2026-09-07 16:00:24  [g4_job18of180] point  1
+{-, 67}
+ 6 done in 1947.3 s; max |Im|      -305
+0. 10
+2026-09-07 16:00:26  [g4_job21of180] point  5
+{-, 3}
+ 6 done in 1956.3 s; max |Im|      -332
+0. 10
+2026-09-07 16:00:33  [g4_job13of180] point  1
+{-, 43}
+ 6 done in 1950.5 s; max |Im|      -310
+0. 10
+2026-09-07 16:00:34  [g4_job20of180] point  1
+{-, 73}
+ 6 done in 1950. s; max |Im|      -304
+0. 10
+2026-09-07 16:00:35  [g4_job25of180] point  5
+{-, 13}
+ 6 done in 1960. s; max |Im|      -319
+0. 10
+2026-09-07 16:00:38  [g4_job22of180] point  5
+{-, 5}
+ 6 done in 1965.6 s; max |Im|      -328
+0. 10
+2026-09-07 16:00:40  [g4_job26of180] point  5
+{-, 17}
+ 6 done in 1963.6 s; max |Im|      -316
+0. 10
+2026-09-07 16:00:41  [g4_job19of180] point  1
+{-, 71}
+ 6 done in 1953.8 s; max |Im|      -305
+0. 10
+2026-09-07 16:00:41  [g4_job17of180] point  1
+{-, 61}
+ 6 done in 1953.1 s; max |Im|      -306
+0. 10
+2026-09-07 16:00:44  [g4_job14of180] point  1
+{-, 47}
+ 6 done in 1954.2 s; max |Im|      -309
+0. 10
+2026-09-07 16:00:44  [g4_job6of180] point  1
+{-, 17}
+ 6 done in 1929.4 s; max |Im|      -319
+0. 10
+2026-09-07 16:00:47  [g4_job16of180] point  1
+{-, 59}
+ 6 done in 1955.7 s; max |Im|      -306
+0. 10
+2026-09-07 16:00:48  [g4_job15of180] point  1
+{-, 53}
+ 6 done in 1956.7 s; max |Im|      -308
+0. 10
+2026-09-07 16:00:48  [g4_job11of180] point  1
+{-, 37}
+ 6 done in 1957.4 s; max |Im|      -311
+0. 10
+2026-09-07 16:00:49  [g4_job5of180] point  1
+{-, 13}
+ 6 done in 1931.4 s; max |Im|      -322
+0. 10
+2026-09-07 16:00:50  [g4_job4of180] point  1
+{-, 11}
+ 6 done in 1931.4 s; max |Im|      -323
+0. 10
+2026-09-07 16:00:53  [g4_job12of180] point  1
+{-, 41}
+ 6 done in 1959.3 s; max |Im|      -310
+0. 10
+2026-09-07 16:00:54  [g4_job9of180] point  1
+{-, 29}
+ 6 done in 1893.3 s; max |Im|      -314
+0. 10
+2026-09-07 16:00:55  [g4_job24of180] point  5
+{-, 11}
+ 6 done in 1971.2 s; max |Im|      -320
+0. 10
+2026-09-07 16:00:59  [g4_job2of180] point  1
+{-, 5}
+ 6 done in 1936.5 s; max |Im|      -331
+0. 10
+2026-09-07 16:01:00  [g4_job3of180] point  1
+{-, 7}
+ 6 done in 1937.1 s; max |Im|      -328
+0. 10
+2026-09-07 16:01:13  [g4_job10of180] point  1
+{-, 31}
+ 6 done in 1902.5 s; max |Im|      -313
+0. 10
+2026-09-07 16:01:32  [g4_job30of180] point  5
+{-, 31}
+ 6 done in 1967.3 s; max |Im|      -311
+0. 10
+2026-09-07 16:02:21  [g4_job23of180] point  5
+{-, 7}
+ 6 done in 2013.6 s; max |Im|      -325
+0. 10
+2026-09-07 16:09:23  [g4_job9of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:23  [g4_job11of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:23  [g4_job5of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:23  [g4_job6of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:23  [g4_job10of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:23  [g4_job29of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:232026-09-07 16:09:23  [  [g4_job30of50g4_job28of50] ] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+
+2026-09-07 16:09:23  [g4_job1of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:23  [g4_job31of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:23  [g4_job26of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:23  [g4_job2of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job14of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job15of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job13of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job4of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job19of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job3of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:242026-09-07 16:09:24  [  [g4_job43of50g4_job40of50] ] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+
+2026-09-07 16:09:24  [g4_job38of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job39of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job35of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job32of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job37of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job44of50] 2026-09-07 16:09:24start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+  [g4_job45of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:24  [g4_job41of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:25  [g4_job46of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:25  [g4_job42of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:25  [g4_job24of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:25  [g4_job25of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:25  [g4_job27of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job12of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job8of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job21of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job16of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job23of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job17of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job20of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job22of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job18of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job33of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:26  [g4_job34of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:27  [g4_job36of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:27  [g4_job50of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:27  [g4_job49of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:27  [g4_job47of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:27  [g4_job48of50] start: genus 4, KMAX 9, PREC 350, kernels 8, 13.2.1 for Linux x86 (64-bit) (January 27, 2023)
+2026-09-07 16:09:43  [g4_job5of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:43  [g4_job6of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:43  [g4_job11of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:43  [g4_job30of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:43  [g4_job28of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:43  [g4_job29of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:43  [g4_job9of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:43  [g4_job31of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job1of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job10of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job26of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job7of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job2of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job14of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job40of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job19of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:44  [g4_job15of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:45  [g4_job13of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:45  [g4_job43of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:45  [g4_job45of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:45  [g4_job38of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:45  [g4_job41of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:45  [g4_job44of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:45  [g4_job35of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:45  [g4_job39of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:45  [g4_job42of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:45  [g4_job37of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:45  [g4_job32of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:45  [g4_job46of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:46  [g4_job24of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:46  [g4_job25of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:46  [g4_job27of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:46  [g4_job12of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:46  [g4_job3of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:46  [g4_job4of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job21of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job8of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job17of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job16of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job20of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job22of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job33of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job36of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job34of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job23of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:47  [g4_job18of50] 11 points assigned, 0 already done, 11 to do
+2026-09-07 16:09:48  [g4_job50of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:48  [g4_job47of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:49  [g4_job48of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:09:49  [g4_job49of50] 10 points assigned, 0 already done, 10 to do
+2026-09-07 16:10:00  [g4_job6of50] launched 8 subkernels
+2026-09-07 16:10:00  [g4_job5of50] launched 8 subkernels
+2026-09-07 16:10:01  [g4_job10of50] launched 8 subkernels
+2026-09-07 16:10:01  [g4_job28of50] launched 8 subkernels
+2026-09-07 16:10:01  [g4_job29of50] launched 8 subkernels
+2026-09-07 16:10:01  [g4_job31of50] launched 8 subkernels
+2026-09-07 16:10:01  [g4_job30of50] launched 8 subkernels
+2026-09-07 16:10:01  [g4_job1of50] launched 8 subkernels
+2026-09-07 16:10:02  [g4_job9of50] launched 8 subkernels
+2026-09-07 16:10:02  [g4_job26of50] launched 8 subkernels
+2026-09-07 16:10:02  [g4_job11of50] launched 8 subkernels
+2026-09-07 16:10:02  [g4_job15of50] launched 8 subkernels
+2026-09-07 16:10:02  [g4_job14of50] launched 8 subkernels
+2026-09-07 16:10:02  [g4_job2of50] launched 8 subkernels
+2026-09-07 16:10:03  [g4_job13of50] launched 8 subkernels
+2026-09-07 16:10:03  [g4_job7of50] launched 8 subkernels
+2026-09-07 16:10:03  [g4_job32of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job40of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job35of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job38of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job25of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job37of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job44of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job24of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job42of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job41of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job39of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job45of50] launched 8 subkernels
+2026-09-07 16:10:04  [g4_job27of50] launched 8 subkernels
+2026-09-07 16:10:05  [g4_job19of50] launched 8 subkernels
+2026-09-07 16:10:05  [g4_job43of50] launched 8 subkernels
+2026-09-07 16:10:05  [g4_job8of50] launched 8 subkernels
+2026-09-07 16:10:05  [g4_job4of50] launched 8 subkernels
+2026-09-07 16:10:06  [g4_job3of50] launched 8 subkernels
+2026-09-07 16:10:06  [g4_job21of50] launched 8 subkernels
+2026-09-07 16:10:06  [g4_job33of50] launched 8 subkernels
+2026-09-07 16:10:07  [g4_job12of50] launched 8 subkernels
+2026-09-07 16:10:07  [g4_job36of50] launched 8 subkernels
+2026-09-07 16:10:08  [g4_job46of50] launched 8 subkernels
+2026-09-07 16:10:08  [g4_job20of50] launched 8 subkernels
+2026-09-07 16:10:09  [g4_job17of50] launched 8 subkernels
+2026-09-07 16:10:09  [g4_job34of50] launched 8 subkernels
+2026-09-07 16:10:09  [g4_job50of50] launched 8 subkernels
+2026-09-07 16:10:09  [g4_job16of50] launched 8 subkernels
+2026-09-07 16:10:09  [g4_job22of50] launched 8 subkernels
+2026-09-07 16:10:09  [g4_job23of50] launched 8 subkernels
+2026-09-07 16:10:09  [g4_job47of50] launched 8 subkernels
+2026-09-07 16:10:09  [g4_job49of50] launched 8 subkernels
+2026-09-07 16:10:10  [g4_job48of50] launched 8 subkernels
+2026-09-07 16:10:14  [g4_job18of50] launched 8 subkernels
+2026-09-07 18:26:36  [g4_job6of50] point  1
+{-, 17}
+ 2 done in 7846.4 s; max |Im|      -317
+0. 10
+2026-09-07 18:26:36  [g4_job6of50] point  2
+{-, 59}
+ 3 done in 7030.6 s; max |Im|      -304
+0. 10
+2026-09-07 18:26:36  [g4_job6of50] point  1
+{-, 17}
+ 5 done in 7976.5 s; max |Im|      -318
+0. 10
+2026-09-07 18:26:36  [g4_job6of50] point  3
+{-, 59}
+ 5 done in 8189.5 s; max |Im|      -304
+0. 10
+2026-09-07 18:26:36  [g4_job6of50] point  5
+{-, 17}
+ 6 done in 7050. s; max |Im|      -316
+0. 10
+2026-09-07 18:26:36  [g4_job6of50] point  2
+{-, 59}
+ 7 done in 7043.4 s; max |Im|      -305
+0. 10
+2026-09-07 18:26:36  [g4_job6of50] point  5
+{-, 17}
+ 7 done in 8189.3 s; max |Im|      -316
+0. 10
+2026-09-07 18:26:36  [g4_job6of50] point  1
+{-, 59}
+ 8 done in 8122.2 s; max |Im|      -308
+0. 10
+2026-09-07 18:27:03  [g4_job46of50] point  2
+{-, 17}
+ 3 done in 7110.5 s; max |Im|      -317
+0. 10
+2026-09-07 18:27:03  [g4_job46of50] point  3
+{-, 59}
+ 4 done in 7904.6 s; max |Im|      -304
+0. 10
+2026-09-07 18:27:03  [g4_job46of50] point  3
+{-, 17}
+ 5 done in 7943.4 s; max |Im|      -317
+0. 10
+2026-09-07 18:27:03  [g4_job46of50] point  1
+{-, 59}
+ 6 done in 8208.8 s; max |Im|      -306
+0. 10
+2026-09-07 18:27:03  [g4_job46of50] point  2
+{-, 17}
+ 7 done in 7323.9 s; max |Im|      -317
+0. 10
+2026-09-07 18:27:03  [g4_job46of50] point  4
+{-, 59}
+ 7 done in 8208.3 s; max |Im|      -304
+0. 10
+2026-09-07 18:27:03  [g4_job46of50] point  1
+{-, 17}
+ 8 done in 7849.7 s; max |Im|      -320
+0. 10
+2026-09-07 18:27:03  [g4_job46of50] point  5
+{-, 59}
+ 8 done in 5184. s; max |Im|      -304
+0. 10
+2026-09-07 18:27:17  [g4_job5of50] point  1
+{-, 13}
+ 2 done in 8092. s; max |Im|      -319
+0. 10
+2026-09-07 18:27:17  [g4_job5of50] point  2
+{-, 53}
+ 3 done in 8039.5 s; max |Im|      -305
+0. 10
+2026-09-07 18:27:17  [g4_job5of50] point  1
+{-, 13}
+ 5 done in 8094.7 s; max |Im|      -321
+0. 10
+2026-09-07 18:27:17  [g4_job5of50] point  3
+{-, 53}
+ 5 done in 8139.2 s; max |Im|      -305
+0. 10
+2026-09-07 18:27:17  [g4_job5of50] point  5
+{-, 13}
+ 6 done in 8148.7 s; max |Im|      -319
+0. 10
+2026-09-07 18:27:17  [g4_job5of50] point  2
+{-, 53}
+ 7 done in 8231.2 s; max |Im|      -306
+0. 10
+2026-09-07 18:27:17  [g4_job5of50] point  5
+{-, 13}
+ 7 done in 4090.4 s; max |Im|      -319
+0. 10
+2026-09-07 18:27:17  [g4_job5of50] point  1
+{-, 53}
+ 8 done in 4093.8 s; max |Im|      -309
+0. 10
+2026-09-07 18:27:35  [g4_job40of50] point  1
+{-, 73}
+ 3 done in 7937.3 s; max |Im|      -302
+0. 10
+2026-09-07 18:27:35  [g4_job40of50] point  3
+{-, 31}
+ 4 done in 8192.8 s; max |Im|      -311
+0. 10
+2026-09-07 18:27:35  [g4_job40of50] point  2
+{-, 73}
+ 5 done in 8161.6 s; max |Im|      -302
+0. 10
+2026-09-07 18:27:35  [g4_job40of50] point  1
+{-, 31}
+ 6 done in 7778.6 s; max |Im|      -313
+0. 10
+2026-09-07 18:27:35  [g4_job40of50] point  1
+{-, 73}
+ 7 done in 7842.6 s; max |Im|      -305
+0. 10
+2026-09-07 18:27:35  [g4_job40of50] point  4
+{-, 31}
+ 7 done in 8243.7 s; max |Im|      -310
+0. 10
+2026-09-07 18:27:35  [g4_job40of50] point  6
+{-, 73}
+ 7 done in 8032.1 s; max |Im|      -302
+0. 10
+2026-09-07 18:27:35  [g4_job40of50] point  5
+{-, 31}
+ 8 done in 8245.5 s; max |Im|      -310
+0. 10
+2026-09-07 18:27:51  [g4_job9of50] point  1
+{-, 29}
+ 2 done in 8263. s; max |Im|      -311
+0. 10
+2026-09-07 18:27:51  [g4_job9of50] point  2
+{-, 71}
+ 3 done in 7845.9 s; max |Im|      -302
+0. 10
+2026-09-07 18:27:51  [g4_job9of50] point  1
+{-, 29}
+ 5 done in 8214. s; max |Im|      -313
+0. 10
+2026-09-07 18:27:51  [g4_job9of50] point  3
+{-, 71}
+ 5 done in 8241.6 s; max |Im|      -302
+0. 10
+2026-09-07 18:27:51  [g4_job9of50] point  5
+{-, 29}
+ 6 done in 8187.6 s; max |Im|      -311
+0. 10
+2026-09-07 18:27:51  [g4_job9of50] point  2
+{-, 71}
+ 7 done in 7893.1 s; max |Im|      -303
+0. 10
+2026-09-07 18:27:51  [g4_job9of50] point  5
+{-, 29}
+ 7 done in 7878.5 s; max |Im|      -311
+0. 10
+2026-09-07 18:27:51  [g4_job9of50] point  1
+{-, 71}
+ 8 done in 7891.2 s; max |Im|      -306
+0. 10
+2026-09-07 18:28:06  [g4_job11of50] point  1
+{-, 37}
+ 2 done in 8244.9 s; max |Im|      -309
+0. 10
+2026-09-07 18:28:06  [g4_job11of50] point  1
+{-, 3}
+ 4 done in 7927.9 s; max |Im|      -334
+0. 10
+2026-09-07 18:28:06  [g4_job11of50] point  1
+{-, 37}
+ 5 done in 7951.1 s; max |Im|      -310
+0. 10
+2026-09-07 18:28:06  [g4_job11of50] point  4
+{-, 3}
+ 5 done in 8277.9 s; max |Im|      -332
+0. 10
+2026-09-07 18:28:06  [g4_job11of50] point  5
+{-, 37}
+ 6 done in 7946.8 s; max |Im|      -309
+0. 10
+2026-09-07 18:28:06  [g4_job11of50] point  3
+{-, 3}
+ 7 done in 7948.2 s; max |Im|      -333
+0. 10
+2026-09-07 18:28:06  [g4_job11of50] point  5
+{-, 37}
+ 7 done in 8234.9 s; max |Im|      -309
+0. 10
+2026-09-07 18:28:06  [g4_job11of50] point  3
+{-, 3}
+ 8 done in 8152.6 s; max |Im|      -333
+0. 10
+2026-09-07 18:28:14  [g4_job2of50] point  1
+{-, 5}
+ 2 done in 8266.9 s; max |Im|      -329
+0. 10
+2026-09-07 18:28:14  [g4_job2of50] point  2
+{-, 41}
+ 3 done in 5722.1 s; max |Im|      -308
+0. 10
+2026-09-07 18:28:14  [g4_job2of50] point  1
+{-, 5}
+ 5 done in 8047.1 s; max |Im|      -330
+0. 10
+2026-09-07 18:28:14  [g4_job2of50] point  3
+{-, 41}
+ 5 done in 2131.9 s; max |Im|      -308
+0. 10
+2026-09-07 18:28:14  [g4_job2of50] point  5
+{-, 5}
+ 6 done in 8285.7 s; max |Im|      -328
+0. 10
+2026-09-07 18:28:14  [g4_job2of50] point  2
+{-, 41}
+ 7 done in 7535.6 s; max |Im|      -308
+0. 10
+2026-09-07 18:28:14  [g4_job2of50] point  5
+{-, 5}
+ 7 done in 5729.5 s; max |Im|      -328
+0. 10
+2026-09-07 18:28:14  [g4_job2of50] point  1
+{-, 41}
+ 8 done in 6752.1 s; max |Im|      -312
+0. 10
+2026-09-07 18:28:19  [g4_job10of50] point  1
+{-, 31}
+ 2 done in 8019.1 s; max |Im|      -311
+0. 10
+2026-09-07 18:28:19  [g4_job10of50] point  2
+{-, 73}
+ 3 done in 8009.1 s; max |Im|      -302
+0. 10
+2026-09-07 18:28:19  [g4_job10of50] point  1
+{-, 31}
+ 5 done in 8021.5 s; max |Im|      -312
+0. 10
+2026-09-07 18:28:19  [g4_job10of50] point  3
+{-, 73}
+ 5 done in 8254.4 s; max |Im|      -302
+0. 10
+2026-09-07 18:28:19  [g4_job10of50] point  5
+{-, 31}
+ 6 done in 8007.5 s; max |Im|      -311
+0. 10
+2026-09-07 18:28:19  [g4_job10of50] point  2
+{-, 73}
+ 7 done in 8292.2 s; max |Im|      -302
+0. 10
+2026-09-07 18:28:19  [g4_job10of50] point  5
+{-, 31}
+ 7 done in 8190.4 s; max |Im|      -311
+0. 10
+2026-09-07 18:28:19  [g4_job10of50] point  1
+{-, 73}
+ 8 done in 8143.6 s; max |Im|      -306
+0. 10
+2026-09-07 18:28:38  [g4_job24of50] point  1
+{-, 11}
+ 3 done in 7940.7 s; max |Im|      -321
+0. 10
+2026-09-07 18:28:38  [g4_job24of50] point  1
+{-, 47}
+ 4 done in 8308.1 s; max |Im|      -308
+0. 10
+2026-09-07 18:28:38  [g4_job24of50] point  2
+{-, 11}
+ 5 done in 8305.9 s; max |Im|      -321
+0. 10
+2026-09-07 18:28:38  [g4_job24of50] point  4
+{-, 47}
+ 5 done in 7960.6 s; max |Im|      -306
+0. 10
+2026-09-07 18:28:38  [g4_job24of50] point  1
+{-, 11}
+ 7 done in 7965.3 s; max |Im|      -324
+0. 10
+2026-09-07 18:28:38  [g4_job24of50] point  3
+{-, 47}
+ 7 done in 7942.8 s; max |Im|      -307
+0. 10
+2026-09-07 18:28:38  [g4_job24of50] point  6
+{-, 11}
+ 7 done in 8295.7 s; max |Im|      -320
+0. 10
+2026-09-07 18:28:38  [g4_job24of50] point  3
+{-, 47}
+ 8 done in 8294.1 s; max |Im|      -306
+0. 10
+2026-09-07 18:28:46  [g4_job26of50] point  1
+{-, 17}
+ 3 done in 8307.2 s; max |Im|      -317
+0. 10
+2026-09-07 18:28:46  [g4_job26of50] point  1
+{-, 59}
+ 4 done in 7967.7 s; max |Im|      -306
+0. 10
+2026-09-07 18:28:46  [g4_job26of50] point  2
+{-, 17}
+ 5 done in 7977.5 s; max |Im|      -317
+0. 10
+2026-09-07 18:28:46  [g4_job26of50] point  4
+{-, 59}
+ 5 done in 8301.9 s; max |Im|      -304
+0. 10
+2026-09-07 18:28:46  [g4_job26of50] point  1
+{-, 17}
+ 7 done in 7971.6 s; max |Im|      -320
+0. 10
+2026-09-07 18:28:46  [g4_job26of50] point  3
+{-, 59}
+ 7 done in 8318. s; max |Im|      -304
+0. 10
+2026-09-07 18:28:46  [g4_job26of50] point  6
+{-, 17}
+ 7 done in 7980.9 s; max |Im|      -316
+0. 10
+2026-09-07 18:28:46  [g4_job26of50] point  3
+{-, 59}
+ 8 done in 8308.3 s; max |Im|      -304
+0. 10
+2026-09-07 18:29:14  [g4_job27of50] point  1
+{-, 19}
+ 3 done in 7948.1 s; max |Im|      -316
+0. 10
+2026-09-07 18:29:14  [g4_job27of50] point  1
+{-, 61}
+ 4 done in 8326.7 s; max |Im|      -305
+0. 10
+2026-09-07 18:29:14  [g4_job27of50] point  2
+{-, 19}
+ 5 done in 7993. s; max |Im|      -316
+0. 10
+2026-09-07 18:29:14  [g4_job27of50] point  4
+{-, 61}
+ 5 done in 8329.7 s; max |Im|      -304
+0. 10
+2026-09-07 18:29:14  [g4_job27of50] point  1
+{-, 19}
+ 7 done in 8343.2 s; max |Im|      -319
+0. 10
+2026-09-07 18:29:14  [g4_job27of50] point  3
+{-, 61}
+ 7 done in 7990.4 s; max |Im|      -304
+0. 10
+2026-09-07 18:29:14  [g4_job27of50] point  6
+{-, 19}
+ 7 done in 8038.2 s; max |Im|      -315
+0. 10
+2026-09-07 18:29:14  [g4_job27of50] point  3
+{-, 61}
+ 8 done in 8321.9 s; max |Im|      -304
+0. 10
+2026-09-07 18:29:29  [g4_job1of50] point  1
+{-, 3}
+ 2 done in 8354. s; max |Im|      -333
+0. 10
+2026-09-07 18:29:29  [g4_job1of50] point  2
+{-, 37}
+ 3 done in 6478.8 s; max |Im|      -309
+0. 10
+2026-09-07 18:29:29  [g4_job1of50] point  1
+{-, 3}
+ 5 done in 8253.1 s; max |Im|      -334
+0. 10
+2026-09-07 18:29:29  [g4_job1of50] point  3
+{-, 37}
+ 5 done in 6560.9 s; max |Im|      -309
+0. 10
+2026-09-07 18:29:29  [g4_job1of50] point  5
+{-, 3}
+ 6 done in 6559.8 s; max |Im|      -332
+0. 10
+2026-09-07 18:29:29  [g4_job1of50] point  2
+{-, 37}
+ 7 done in 7947.1 s; max |Im|      -309
+0. 10
+2026-09-07 18:29:29  [g4_job1of50] point  5
+{-, 3}
+ 7 done in 8361.7 s; max |Im|      -332
+0. 10
+2026-09-07 18:29:29  [g4_job1of50] point  1
+{-, 37}
+ 8 done in 8029.7 s; max |Im|      -313
+0. 10
+2026-09-07 18:29:40  [g4_job25of50] point  1
+{-, 13}
+ 3 done in 7966.2 s; max |Im|      -319
+0. 10
+2026-09-07 18:29:40  [g4_job25of50] point  1
+{-, 53}
+ 4 done in 8358.3 s; max |Im|      -307
+0. 10
+2026-09-07 18:29:40  [g4_job25of50] point  2
+{-, 13}
+ 5 done in 7984.3 s; max |Im|      -319
+0. 10
+2026-09-07 18:29:40  [g4_job25of50] point  4
+{-, 53}
+ 5 done in 8361.5 s; max |Im|      -305
+0. 10
+2026-09-07 18:29:40  [g4_job25of50] point  1
+{-, 13}
+ 7 done in 7986.4 s; max |Im|      -322
+0. 10
+2026-09-07 18:29:40  [g4_job25of50] point  3
+{-, 53}
+ 7 done in 8370.3 s; max |Im|      -305
+0. 10
+2026-09-07 18:29:40  [g4_job25of50] point  6
+{-, 13}
+ 7 done in 8354.6 s; max |Im|      -319
+0. 10
+2026-09-07 18:29:40  [g4_job25of50] point  3
+{-, 53}
+ 8 done in 7957.9 s; max |Im|      -305
+0. 10
+2026-09-07 18:32:45  [g4_job21of50] point  1
+{-, 3}
+ 3 done in 7989.7 s; max |Im|      -333
+0. 10
+2026-09-07 18:32:45  [g4_job21of50] point  1
+{-, 37}
+ 4 done in 8058.4 s; max |Im|      -310
+0. 10
+2026-09-07 18:32:45  [g4_job21of50] point  2
+{-, 3}
+ 5 done in 8500.1 s; max |Im|      -333
+0. 10
+2026-09-07 18:32:45  [g4_job21of50] point  4
+{-, 37}
+ 5 done in 8028.5 s; max |Im|      -309
+0. 10
+2026-09-07 18:32:45  [g4_job21of50] point  1
+{-, 3}
+ 7 done in 8527.5 s; max |Im|      -335
+0. 10
+2026-09-07 18:32:45  [g4_job21of50] point  3
+{-, 37}
+ 7 done in 8553.9 s; max |Im|      -309
+0. 10
+2026-09-07 18:32:45  [g4_job21of50] point  6
+{-, 3}
+ 7 done in 8548.4 s; max |Im|      -331
+0. 10
+2026-09-07 18:32:45  [g4_job21of50] point  3
+{-, 37}
+ 8 done in 8118.9 s; max |Im|      -309
+0. 10
+2026-09-07 18:32:48  [g4_job30of50] point  1
+{-, 31}
+ 3 done in 8143.8 s; max |Im|      -311
+0. 10
+2026-09-07 18:32:48  [g4_job30of50] point  1
+{-, 73}
+ 4 done in 8544. s; max |Im|      -304
+0. 10
+2026-09-07 18:32:48  [g4_job30of50] point  2
+{-, 31}
+ 5 done in 8156. s; max |Im|      -311
+0. 10
+2026-09-07 18:32:48  [g4_job30of50] point  4
+{-, 73}
+ 5 done in 8157.8 s; max |Im|      -302
+0. 10
+2026-09-07 18:32:48  [g4_job30of50] point  1
+{-, 31}
+ 7 done in 8163.4 s; max |Im|      -314
+0. 10
+2026-09-07 18:32:48  [g4_job30of50] point  3
+{-, 73}
+ 7 done in 8457.2 s; max |Im|      -302
+0. 10
+2026-09-07 18:32:48  [g4_job30of50] point  6
+{-, 31}
+ 7 done in 8560.8 s; max |Im|      -311
+0. 10
+2026-09-07 18:32:48  [g4_job30of50] point  3
+{-, 73}
+ 8 done in 8461.2 s; max |Im|      -302
+0. 10
+2026-09-07 18:32:53  [g4_job29of50] point  1
+{-, 29}
+ 3 done in 7100.4 s; max |Im|      -311
+0. 10
+2026-09-07 18:32:53  [g4_job29of50] point  1
+{-, 71}
+ 4 done in 8564.5 s; max |Im|      -304
+0. 10
+2026-09-07 18:32:53  [g4_job29of50] point  2
+{-, 29}
+ 5 done in 7131.8 s; max |Im|      -311
+0. 10
+2026-09-07 18:32:53  [g4_job29of50] point  4
+{-, 71}
+ 5 done in 7816.2 s; max |Im|      -302
+0. 10
+2026-09-07 18:32:53  [g4_job29of50] point  1
+{-, 29}
+ 7 done in 8565.8 s; max |Im|      -314
+0. 10
+2026-09-07 18:32:53  [g4_job29of50] point  3
+{-, 71}
+ 7 done in 8088.9 s; max |Im|      -302
+0. 10
+2026-09-07 18:32:53  [g4_job29of50] point  6
+{-, 29}
+ 7 done in 8432.4 s; max |Im|      -311
+0. 10
+2026-09-07 18:32:53  [g4_job29of50] point  3
+{-, 71}
+ 8 done in 8324.1 s; max |Im|      -302
+0. 10
+2026-09-07 18:33:04  [g4_job28of50] point  1
+{-, 23}
+ 3 done in 8010.4 s; max |Im|      -314
+0. 10
+2026-09-07 18:33:04  [g4_job28of50] point  1
+{-, 67}
+ 4 done in 8577.8 s; max |Im|      -304
+0. 10
+2026-09-07 18:33:04  [g4_job28of50] point  2
+{-, 23}
+ 5 done in 8577.7 s; max |Im|      -314
+0. 10
+2026-09-07 18:33:04  [g4_job28of50] point  4
+{-, 67}
+ 5 done in 8546.5 s; max |Im|      -303
+0. 10
+2026-09-07 18:33:04  [g4_job28of50] point  1
+{-, 23}
+ 7 done in 8038.2 s; max |Im|      -317
+0. 10
+2026-09-07 18:33:04  [g4_job28of50] point  3
+{-, 67}
+ 7 done in 8026.2 s; max |Im|      -303
+0. 10
+2026-09-07 18:33:04  [g4_job28of50] point  6
+{-, 23}
+ 7 done in 8555.3 s; max |Im|      -313
+0. 10
+2026-09-07 18:33:04  [g4_job28of50] point  3
+{-, 67}
+ 8 done in 8035.1 s; max |Im|      -303
+0. 10
+2026-09-07 18:33:24  [g4_job18of50] point  1
+{-, 67}
+ 2 done in 8015.8 s; max |Im|      -303
+0. 10
+2026-09-07 18:33:24  [g4_job18of50] point  1
+{-, 23}
+ 4 done in 8051.6 s; max |Im|      -315
+0. 10
+2026-09-07 18:33:24  [g4_job18of50] point  1
+{-, 67}
+ 5 done in 8558. s; max |Im|      -304
+0. 10
+2026-09-07 18:33:24  [g4_job18of50] point  4
+{-, 23}
+ 5 done in 8050.9 s; max |Im|      -313
+0. 10
+2026-09-07 18:33:24  [g4_job18of50] point  5
+{-, 67}
+ 6 done in 8578.7 s; max |Im|      -303
+0. 10
+2026-09-07 18:33:24  [g4_job18of50] point  3
+{-, 23}
+ 7 done in 8047.2 s; max |Im|      -314
+0. 10
+2026-09-07 18:33:24  [g4_job18of50] point  5
+{-, 67}
+ 7 done in 8584.6 s; max |Im|      -303
+0. 10
+2026-09-07 18:33:24  [g4_job18of50] point  3
+{-, 23}
+ 8 done in 8559.4 s; max |Im|      -314
+0. 10
+2026-09-07 18:33:31  [g4_job19of50] point  1
+{-, 71}
+ 2 done in 8213.8 s; max |Im|      -302
+0. 10
+2026-09-07 18:33:31  [g4_job19of50] point  1
+{-, 29}
+ 4 done in 8194.9 s; max |Im|      -313
+0. 10
+2026-09-07 18:33:31  [g4_job19of50] point  1
+{-, 71}
+ 5 done in 8184. s; max |Im|      -304
+0. 10
+2026-09-07 18:33:31  [g4_job19of50] point  4
+{-, 29}
+ 5 done in 8600.7 s; max |Im|      -311
+0. 10
+2026-09-07 18:33:31  [g4_job19of50] point  5
+{-, 71}
+ 6 done in 8205.4 s; max |Im|      -302
+0. 10
+2026-09-07 18:33:31  [g4_job19of50] point  3
+{-, 29}
+ 7 done in 8584.8 s; max |Im|      -312
+0. 10
+2026-09-07 18:33:31  [g4_job19of50] point  5
+{-, 71}
+ 7 done in 8571.4 s; max |Im|      -302
+0. 10
+2026-09-07 18:33:31  [g4_job19of50] point  3
+{-, 29}
+ 8 done in 8589.1 s; max |Im|      -311
+0. 10
+2026-09-07 18:33:35  [g4_job43of50] point  2
+{-, 7}
+ 3 done in 8505. s; max |Im|      -325
+0. 10
+2026-09-07 18:33:35  [g4_job43of50] point  3
+{-, 43}
+ 4 done in 8202.8 s; max |Im|      -307
+0. 10
+2026-09-07 18:33:35  [g4_job43of50] point  3
+{-, 7}
+ 5 done in 8527.9 s; max |Im|      -325
+0. 10
+2026-09-07 18:33:35  [g4_job43of50] point  1
+{-, 43}
+ 6 done in 8134.3 s; max |Im|      -310
+0. 10
+2026-09-07 18:33:35  [g4_job43of50] point  2
+{-, 7}
+ 7 done in 8604.4 s; max |Im|      -326
+0. 10
+2026-09-07 18:33:35  [g4_job43of50] point  4
+{-, 43}
+ 7 done in 8410.5 s; max |Im|      -307
+0. 10
+2026-09-07 18:33:35  [g4_job43of50] point  1
+{-, 7}
+ 8 done in 8603.5 s; max |Im|      -329
+0. 10
+2026-09-07 18:33:35  [g4_job43of50] point  5
+{-, 43}
+ 8 done in 8413.9 s; max |Im|      -307
+0. 10
+2026-09-07 18:33:42  [g4_job42of50] point  2
+{-, 5}
+ 3 done in 8181.7 s; max |Im|      -328
+0. 10
+2026-09-07 18:33:42  [g4_job42of50] point  3
+{-, 41}
+ 4 done in 8169.2 s; max |Im|      -308
+0. 10
+2026-09-07 18:33:42  [g4_job42of50] point  3
+{-, 5}
+ 5 done in 8178.4 s; max |Im|      -328
+0. 10
+2026-09-07 18:33:42  [g4_job42of50] point  1
+{-, 41}
+ 6 done in 8151. s; max |Im|      -310
+0. 10
+2026-09-07 18:33:42  [g4_job42of50] point  2
+{-, 5}
+ 7 done in 8595.3 s; max |Im|      -329
+0. 10
+2026-09-07 18:33:42  [g4_job42of50] point  4
+{-, 41}
+ 7 done in 8593.4 s; max |Im|      -308
+0. 10
+2026-09-07 18:33:42  [g4_job42of50] point  1
+{-, 5}
+ 8 done in 8611.6 s; max |Im|      -332
+0. 10
+2026-09-07 18:33:42  [g4_job42of50] point  5
+{-, 41}
+ 8 done in 8611.3 s; max |Im|      -308
+0. 10
+2026-09-07 18:33:53  [g4_job31of50] point  1
+{-, 37}
+ 3 done in 8626.3 s; max |Im|      -309
+0. 10
+2026-09-07 18:33:53  [g4_job31of50] point  3
+{-, 3}
+ 4 done in 8593.8 s; max |Im|      -332
+0. 10
+2026-09-07 18:33:53  [g4_job31of50] point  2
+{-, 37}
+ 5 done in 8081.1 s; max |Im|      -309
+0. 10
+2026-09-07 18:33:53  [g4_job31of50] point  1
+{-, 3}
+ 6 done in 8027.8 s; max |Im|      -335
+0. 10
+2026-09-07 18:33:53  [g4_job31of50] point  1
+{-, 37}
+ 7 done in 8073.7 s; max |Im|      -312
+0. 10
+2026-09-07 18:33:53  [g4_job31of50] point  4
+{-, 3}
+ 7 done in 8582.3 s; max |Im|      -332
+0. 10
+2026-09-07 18:33:53  [g4_job31of50] point  6
+{-, 37}
+ 7 done in 8519.7 s; max |Im|      -309
+0. 10
+2026-09-07 18:33:53  [g4_job31of50] point  5
+{-, 3}
+ 8 done in 8129.6 s; max |Im|      -332
+0. 10
+2026-09-07 18:33:58  [g4_job41of50] point  2
+{-, 3}
+ 3 done in 8174.2 s; max |Im|      -332
+0. 10
+2026-09-07 18:33:58  [g4_job41of50] point  3
+{-, 37}
+ 4 done in 8197.6 s; max |Im|      -309
+0. 10
+2026-09-07 18:33:58  [g4_job41of50] point  3
+{-, 3}
+ 5 done in 8206.5 s; max |Im|      -332
+0. 10
+2026-09-07 18:33:58  [g4_job41of50] point  1
+{-, 37}
+ 6 done in 8162.9 s; max |Im|      -311
+0. 10
+2026-09-07 18:33:58  [g4_job41of50] point  2
+{-, 3}
+ 7 done in 8591.4 s; max |Im|      -333
+0. 10
+2026-09-07 18:33:58  [g4_job41of50] point  4
+{-, 37}
+ 7 done in 8628.1 s; max |Im|      -309
+0. 10
+2026-09-07 18:33:58  [g4_job41of50] point  1
+{-, 3}
+ 8 done in 8616.2 s; max |Im|      -335
+0. 10
+2026-09-07 18:33:58  [g4_job41of50] point  5
+{-, 37}
+ 8 done in 8624. s; max |Im|      -309
+0. 10
+2026-09-07 18:33:59  [g4_job20of50] point  1
+{-, 73}
+ 2 done in 8625.6 s; max |Im|      -302
+0. 10
+2026-09-07 18:33:59  [g4_job20of50] point  1
+{-, 31}
+ 4 done in 8219.8 s; max |Im|      -312
+0. 10
+2026-09-07 18:33:59  [g4_job20of50] point  1
+{-, 73}
+ 5 done in 8605.5 s; max |Im|      -303
+0. 10
+2026-09-07 18:33:59  [g4_job20of50] point  4
+{-, 31}
+ 5 done in 8225.2 s; max |Im|      -311
+0. 10
+2026-09-07 18:33:59  [g4_job20of50] point  5
+{-, 73}
+ 6 done in 8210.6 s; max |Im|      -302
+0. 10
+2026-09-07 18:33:59  [g4_job20of50] point  3
+{-, 31}
+ 7 done in 8221.2 s; max |Im|      -311
+0. 10
+2026-09-07 18:33:59  [g4_job20of50] point  5
+{-, 73}
+ 7 done in 8623.4 s; max |Im|      -302
+0. 10
+2026-09-07 18:33:59  [g4_job20of50] point  3
+{-, 31}
+ 8 done in 8620. s; max |Im|      -311
+0. 10
+2026-09-07 18:34:10  [g4_job17of50] point  1
+{-, 61}
+ 2 done in 8198.9 s; max |Im|      -304
+0. 10
+2026-09-07 18:34:10  [g4_job17of50] point  1
+{-, 19}
+ 4 done in 8230.2 s; max |Im|      -317
+0. 10
+2026-09-07 18:34:10  [g4_job17of50] point  1
+{-, 61}
+ 5 done in 8204.5 s; max |Im|      -305
+0. 10
+2026-09-07 18:34:10  [g4_job17of50] point  4
+{-, 19}
+ 5 done in 8221. s; max |Im|      -315
+0. 10
+2026-09-07 18:34:10  [g4_job17of50] point  5
+{-, 61}
+ 6 done in 8635.9 s; max |Im|      -304
+0. 10
+2026-09-07 18:34:10  [g4_job17of50] point  3
+{-, 19}
+ 7 done in 8632.4 s; max |Im|      -316
+0. 10
+2026-09-07 18:34:10  [g4_job17of50] point  5
+{-, 61}
+ 7 done in 8614.4 s; max |Im|      -304
+0. 10
+2026-09-07 18:34:10  [g4_job17of50] point  3
+{-, 19}
+ 8 done in 8612.8 s; max |Im|      -315
+0. 10
+2026-09-07 18:34:12  [g4_job23of50] point  1
+{-, 7}
+ 3 done in 8631.1 s; max |Im|      -325
+0. 10
+2026-09-07 18:34:12  [g4_job23of50] point  1
+{-, 43}
+ 4 done in 8637.5 s; max |Im|      -309
+0. 10
+2026-09-07 18:34:12  [g4_job23of50] point  2
+{-, 7}
+ 5 done in 8206.2 s; max |Im|      -325
+0. 10
+2026-09-07 18:34:12  [g4_job23of50] point  4
+{-, 43}
+ 5 done in 8205.2 s; max |Im|      -307
+0. 10
+2026-09-07 18:34:12  [g4_job23of50] point  1
+{-, 7}
+ 7 done in 8181.2 s; max |Im|      -328
+0. 10
+2026-09-07 18:34:12  [g4_job23of50] point  3
+{-, 43}
+ 7 done in 8207.6 s; max |Im|      -308
+0. 10
+2026-09-07 18:34:12  [g4_job23of50] point  6
+{-, 7}
+ 7 done in 8628. s; max |Im|      -325
+0. 10
+2026-09-07 18:34:12  [g4_job23of50] point  3
+{-, 43}
+ 8 done in 8627.8 s; max |Im|      -307
+0. 10
+2026-09-07 18:34:15  [g4_job45of50] point  2
+{-, 13}
+ 3 done in 8174.5 s; max |Im|      -319
+0. 10
+2026-09-07 18:34:15  [g4_job45of50] point  3
+{-, 53}
+ 4 done in 8644.9 s; max |Im|      -305
+0. 10
+2026-09-07 18:34:15  [g4_job45of50] point  3
+{-, 13}
+ 5 done in 8182.8 s; max |Im|      -319
+0. 10
+2026-09-07 18:34:15  [g4_job45of50] point  1
+{-, 53}
+ 6 done in 8118.6 s; max |Im|      -308
+0. 10
+2026-09-07 18:34:15  [g4_job45of50] point  2
+{-, 13}
+ 7 done in 8643. s; max |Im|      -320
+0. 10
+2026-09-07 18:34:15  [g4_job45of50] point  4
+{-, 53}
+ 7 done in 8203. s; max |Im|      -305
+0. 10
+2026-09-07 18:34:15  [g4_job45of50] point  1
+{-, 13}
+ 8 done in 8643.3 s; max |Im|      -323
+0. 10
+2026-09-07 18:34:15  [g4_job45of50] point  5
+{-, 53}
+ 8 done in 8619.5 s; max |Im|      -305
+0. 10
+2026-09-07 18:34:18  [g4_job44of50] point  2
+{-, 11}
+ 3 done in 8151.8 s; max |Im|      -321
+0. 10
+2026-09-07 18:34:18  [g4_job44of50] point  3
+{-, 47}
+ 4 done in 8190.6 s; max |Im|      -306
+0. 10
+2026-09-07 18:34:18  [g4_job44of50] point  3
+{-, 11}
+ 5 done in 8198.5 s; max |Im|      -321
+0. 10
+2026-09-07 18:34:18  [g4_job44of50] point  1
+{-, 47}
+ 6 done in 8191.8 s; max |Im|      -309
+0. 10
+2026-09-07 18:34:18  [g4_job44of50] point  2
+{-, 11}
+ 7 done in 8631.7 s; max |Im|      -321
+0. 10
+2026-09-07 18:34:18  [g4_job44of50] point  4
+{-, 47}
+ 7 done in 8625.7 s; max |Im|      -306
+0. 10
+2026-09-07 18:34:18  [g4_job44of50] point  1
+{-, 11}
+ 8 done in 8648.5 s; max |Im|      -325
+0. 10
+2026-09-07 18:34:18  [g4_job44of50] point  5
+{-, 47}
+ 8 done in 8646.3 s; max |Im|      -306
+0. 10
+2026-09-07 18:34:30  [g4_job22of50] point  1
+{-, 5}
+ 3 done in 8569.5 s; max |Im|      -329
+0. 10
+2026-09-07 18:34:30  [g4_job22of50] point  1
+{-, 41}
+ 4 done in 8543.5 s; max |Im|      -309
+0. 10
+2026-09-07 18:34:30  [g4_job22of50] point  2
+{-, 5}
+ 5 done in 8570.8 s; max |Im|      -328
+0. 10
+2026-09-07 18:34:30  [g4_job22of50] point  4
+{-, 41}
+ 5 done in 8636.1 s; max |Im|      -308
+0. 10
+2026-09-07 18:34:30  [g4_job22of50] point  1
+{-, 5}
+ 7 done in 8440.9 s; max |Im|      -331
+0. 10
+2026-09-07 18:34:30  [g4_job22of50] point  3
+{-, 41}
+ 7 done in 7819.9 s; max |Im|      -308
+0. 10
+2026-09-07 18:34:30  [g4_job22of50] point  6
+{-, 5}
+ 7 done in 8655.3 s; max |Im|      -328
+0. 10
+2026-09-07 18:34:30  [g4_job22of50] point  3
+{-, 41}
+ 8 done in 7131.9 s; max |Im|      -308
+0. 10
+2026-09-07 18:34:34  [g4_job16of50] point  1
+{-, 59}
+ 2 done in 8210.6 s; max |Im|      -304
+0. 10
+2026-09-07 18:34:34  [g4_job16of50] point  1
+{-, 17}
+ 4 done in 8211.3 s; max |Im|      -318
+0. 10
+2026-09-07 18:34:34  [g4_job16of50] point  1
+{-, 59}
+ 5 done in 8197.3 s; max |Im|      -306
+0. 10
+2026-09-07 18:34:34  [g4_job16of50] point  4
+{-, 17}
+ 5 done in 8209.7 s; max |Im|      -316
+0. 10
+2026-09-07 18:34:34  [g4_job16of50] point  5
+{-, 59}
+ 6 done in 8659. s; max |Im|      -304
+0. 10
+2026-09-07 18:34:34  [g4_job16of50] point  3
+{-, 17}
+ 7 done in 8651. s; max |Im|      -317
+0. 10
+2026-09-07 18:34:34  [g4_job16of50] point  5
+{-, 59}
+ 7 done in 8637.1 s; max |Im|      -304
+0. 10
+2026-09-07 18:34:34  [g4_job16of50] point  3
+{-, 17}
+ 8 done in 8632.7 s; max |Im|      -317
+0. 10
+2026-09-07 18:35:37  [g4_job12of50] point  1
+{-, 41}
+ 2 done in 6712.8 s; max |Im|      -308
+0. 10
+2026-09-07 18:35:37  [g4_job12of50] point  1
+{-, 5}
+ 4 done in 5685.4 s; max |Im|      -330
+0. 10
+2026-09-07 18:35:37  [g4_job12of50] point  1
+{-, 41}
+ 5 done in 7492.7 s; max |Im|      -309
+0. 10
+2026-09-07 18:35:37  [g4_job12of50] point  4
+{-, 5}
+ 5 done in 8723.1 s; max |Im|      -328
+0. 10
+2026-09-07 18:35:37  [g4_job12of50] point  5
+{-, 41}
+ 6 done in 8642.1 s; max |Im|      -308
+0. 10
+2026-09-07 18:35:37  [g4_job12of50] point  3
+{-, 5}
+ 7 done in 6715.1 s; max |Im|      -329
+0. 10
+2026-09-07 18:35:37  [g4_job12of50] point  5
+{-, 41}
+ 7 done in 8643.4 s; max |Im|      -308
+0. 10
+2026-09-07 18:35:37  [g4_job12of50] point  3
+{-, 5}
+ 8 done in 8665.2 s; max |Im|      -328
+0. 10
+2026-09-07 18:36:04  [g4_job8of50] point  1
+{-, 23}
+ 2 done in 8753.4 s; max |Im|      -314
+0. 10
+2026-09-07 18:36:04  [g4_job8of50] point  2
+{-, 67}
+ 3 done in 6892.3 s; max |Im|      -303
+0. 10
+2026-09-07 18:36:04  [g4_job8of50] point  1
+{-, 23}
+ 5 done in 8188.8 s; max |Im|      -315
+0. 10
+2026-09-07 18:36:04  [g4_job8of50] point  3
+{-, 67}
+ 5 done in 8742.7 s; max |Im|      -303
+0. 10
+2026-09-07 18:36:04  [g4_job8of50] point  5
+{-, 23}
+ 6 done in 8367.6 s; max |Im|      -313
+0. 10
+2026-09-07 18:36:04  [g4_job8of50] point  2
+{-, 67}
+ 7 done in 6909.1 s; max |Im|      -303
+0. 10
+2026-09-07 18:36:04  [g4_job8of50] point  5
+{-, 23}
+ 7 done in 8623.2 s; max |Im|      -314
+0. 10
+2026-09-07 18:36:04  [g4_job8of50] point  1
+{-, 67}
+ 8 done in 6923.2 s; max |Im|      -307
+0. 10
+2026-09-07 18:36:21  [g4_job14of50] point  1
+{-, 47}
+ 2 done in 8226.8 s; max |Im|      -306
+0. 10
+2026-09-07 18:36:21  [g4_job14of50] point  1
+{-, 11}
+ 4 done in 8221.9 s; max |Im|      -322
+0. 10
+2026-09-07 18:36:21  [g4_job14of50] point  1
+{-, 47}
+ 5 done in 8198.9 s; max |Im|      -308
+0. 10
+2026-09-07 18:36:21  [g4_job14of50] point  4
+{-, 11}
+ 5 done in 8221.1 s; max |Im|      -320
+0. 10
+2026-09-07 18:36:21  [g4_job14of50] point  5
+{-, 47}
+ 6 done in 8770.8 s; max |Im|      -306
+0. 10
+2026-09-07 18:36:21  [g4_job14of50] point  3
+{-, 11}
+ 7 done in 8748.9 s; max |Im|      -321
+0. 10
+2026-09-07 18:36:21  [g4_job14of50] point  5
+{-, 47}
+ 7 done in 8773.1 s; max |Im|      -306
+0. 10
+2026-09-07 18:36:21  [g4_job14of50] point  3
+{-, 11}
+ 8 done in 8749.5 s; max |Im|      -321
+0. 10
+2026-09-07 18:36:42  [g4_job15of50] point  1
+{-, 53}
+ 2 done in 8763.6 s; max |Im|      -305
+0. 10
+2026-09-07 18:36:42  [g4_job15of50] point  1
+{-, 13}
+ 4 done in 8794.1 s; max |Im|      -321
+0. 10
+2026-09-07 18:36:42  [g4_job15of50] point  1
+{-, 53}
+ 5 done in 8219.9 s; max |Im|      -307
+0. 10
+2026-09-07 18:36:42  [g4_job15of50] point  4
+{-, 13}
+ 5 done in 8218.2 s; max |Im|      -319
+0. 10
+2026-09-07 18:36:42  [g4_job15of50] point  5
+{-, 53}
+ 6 done in 8229.4 s; max |Im|      -305
+0. 10
+2026-09-07 18:36:42  [g4_job15of50] point  3
+{-, 13}
+ 7 done in 8223.3 s; max |Im|      -320
+0. 10
+2026-09-07 18:36:42  [g4_job15of50] point  5
+{-, 53}
+ 7 done in 8784.1 s; max |Im|      -305
+0. 10
+2026-09-07 18:36:42  [g4_job15of50] point  3
+{-, 13}
+ 8 done in 8767.6 s; max |Im|      -319
+0. 10
+2026-09-07 18:36:43  [g4_job13of50] point  1
+{-, 43}
+ 2 done in 8403.7 s; max |Im|      -307
+0. 10
+2026-09-07 18:36:43  [g4_job13of50] point  1
+{-, 7}
+ 4 done in 8783.9 s; max |Im|      -327
+0. 10
+2026-09-07 18:36:43  [g4_job13of50] point  1
+{-, 43}
+ 5 done in 8145.7 s; max |Im|      -309
+0. 10
+2026-09-07 18:36:43  [g4_job13of50] point  4
+{-, 7}
+ 5 done in 8720. s; max |Im|      -325
+0. 10
+2026-09-07 18:36:43  [g4_job13of50] point  5
+{-, 43}
+ 6 done in 8702.8 s; max |Im|      -307
+0. 10
+2026-09-07 18:36:43  [g4_job13of50] point  3
+{-, 7}
+ 7 done in 8269.1 s; max |Im|      -326
+0. 10
+2026-09-07 18:36:43  [g4_job13of50] point  5
+{-, 43}
+ 7 done in 8085.7 s; max |Im|      -307
+0. 10
+2026-09-07 18:36:43  [g4_job13of50] point  3
+{-, 7}
+ 8 done in 8794.6 s; max |Im|      -325
+0. 10
+2026-09-07 18:37:20  [g4_job37of50] point  1
+{-, 61}
+ 3 done in 8772.2 s; max |Im|      -304
+0. 10
+2026-09-07 18:37:20  [g4_job37of50] point  3
+{-, 19}
+ 4 done in 8166.6 s; max |Im|      -315
+0. 10
+2026-09-07 18:37:20  [g4_job37of50] point  2
+{-, 61}
+ 5 done in 8155.5 s; max |Im|      -304
+0. 10
+2026-09-07 18:37:20  [g4_job37of50] point  1
+{-, 19}
+ 6 done in 8160.5 s; max |Im|      -318
+0. 10
+2026-09-07 18:37:20  [g4_job37of50] point  1
+{-, 61}
+ 7 done in 8181.4 s; max |Im|      -307
+0. 10
+2026-09-07 18:37:20  [g4_job37of50] point  4
+{-, 19}
+ 7 done in 8777.8 s; max |Im|      -315
+0. 10
+2026-09-07 18:37:20  [g4_job37of50] point  6
+{-, 61}
+ 7 done in 8809.6 s; max |Im|      -304
+0. 10
+2026-09-07 18:37:20  [g4_job37of50] point  5
+{-, 19}
+ 8 done in 8830.1 s; max |Im|      -315
+0. 10
+2026-09-07 18:38:08  [g4_job34of50] point  1
+{-, 47}
+ 3 done in 8296. s; max |Im|      -306
+0. 10
+2026-09-07 18:38:08  [g4_job34of50] point  3
+{-, 11}
+ 4 done in 8873. s; max |Im|      -321
+0. 10
+2026-09-07 18:38:08  [g4_job34of50] point  2
+{-, 47}
+ 5 done in 8873.5 s; max |Im|      -306
+0. 10
+2026-09-07 18:38:08  [g4_job34of50] point  1
+{-, 11}
+ 6 done in 8290.2 s; max |Im|      -323
+0. 10
+2026-09-07 18:38:08  [g4_job34of50] point  1
+{-, 47}
+ 7 done in 8341.6 s; max |Im|      -309
+0. 10
+2026-09-07 18:38:08  [g4_job34of50] point  4
+{-, 11}
+ 7 done in 8342.7 s; max |Im|      -321
+0. 10
+2026-09-07 18:38:08  [g4_job34of50] point  6
+{-, 47}
+ 7 done in 8851.8 s; max |Im|      -306
+0. 10
+2026-09-07 18:38:08  [g4_job34of50] point  5
+{-, 11}
+ 8 done in 8853.2 s; max |Im|      -321
+0. 10
+2026-09-07 18:38:08  [g4_job36of50] point  1
+{-, 59}
+ 3 done in 8289. s; max |Im|      -304
+0. 10
+2026-09-07 18:38:08  [g4_job36of50] point  3
+{-, 17}
+ 4 done in 8348.6 s; max |Im|      -316
+0. 10
+2026-09-07 18:38:08  [g4_job36of50] point  2
+{-, 59}
+ 5 done in 8321.3 s; max |Im|      -304
+0. 10
+2026-09-07 18:38:08  [g4_job36of50] point  1
+{-, 17}
+ 6 done in 8828.6 s; max |Im|      -319
+0. 10
+2026-09-07 18:38:08  [g4_job36of50] point  1
+{-, 59}
+ 7 done in 8338.8 s; max |Im|      -307
+0. 10
+2026-09-07 18:38:08  [g4_job36of50] point  4
+{-, 17}
+ 7 done in 8869.4 s; max |Im|      -317
+0. 10
+2026-09-07 18:38:08  [g4_job36of50] point  6
+{-, 59}
+ 7 done in 8863.6 s; max |Im|      -304
+0. 10
+2026-09-07 18:38:08  [g4_job36of50] point  5
+{-, 17}
+ 8 done in 8875.3 s; max |Im|      -317
+0. 10
+2026-09-07 18:38:17  [g4_job33of50] point  1
+{-, 43}
+ 3 done in 8300.9 s; max |Im|      -307
+0. 10
+2026-09-07 18:38:17  [g4_job33of50] point  3
+{-, 7}
+ 4 done in 8330.8 s; max |Im|      -325
+0. 10
+2026-09-07 18:38:17  [g4_job33of50] point  2
+{-, 43}
+ 5 done in 8326.3 s; max |Im|      -307
+0. 10
+2026-09-07 18:38:17  [g4_job33of50] point  1
+{-, 7}
+ 6 done in 8849.6 s; max |Im|      -328
+0. 10
+2026-09-07 18:38:17  [g4_job33of50] point  1
+{-, 43}
+ 7 done in 8330.3 s; max |Im|      -310
+0. 10
+2026-09-07 18:38:17  [g4_job33of50] point  4
+{-, 7}
+ 7 done in 8885. s; max |Im|      -325
+0. 10
+2026-09-07 18:38:17  [g4_job33of50] point  6
+{-, 43}
+ 7 done in 8835.6 s; max |Im|      -307
+0. 10
+2026-09-07 18:38:17  [g4_job33of50] point  5
+{-, 7}
+ 8 done in 8881.1 s; max |Im|      -325
+0. 10
+2026-09-07 18:38:23  [g4_job38of50] point  1
+{-, 67}
+ 3 done in 8880.2 s; max |Im|      -303
+0. 10
+2026-09-07 18:38:23  [g4_job38of50] point  3
+{-, 23}
+ 4 done in 8322.7 s; max |Im|      -313
+0. 10
+2026-09-07 18:38:23  [g4_job38of50] point  2
+{-, 67}
+ 5 done in 8302.8 s; max |Im|      -303
+0. 10
+2026-09-07 18:38:23  [g4_job38of50] point  1
+{-, 23}
+ 6 done in 8406.7 s; max |Im|      -316
+0. 10
+2026-09-07 18:38:23  [g4_job38of50] point  1
+{-, 67}
+ 7 done in 8819.7 s; max |Im|      -306
+0. 10
+2026-09-07 18:38:23  [g4_job38of50] point  4
+{-, 23}
+ 7 done in 8442.7 s; max |Im|      -313
+0. 10
+2026-09-07 18:38:23  [g4_job38of50] point  6
+{-, 67}
+ 7 done in 8868.5 s; max |Im|      -303
+0. 10
+2026-09-07 18:38:23  [g4_job38of50] point  5
+{-, 23}
+ 8 done in 8893.6 s; max |Im|      -313
+0. 10
+2026-09-07 18:38:32  [g4_job32of50] point  1
+{-, 41}
+ 3 done in 8329.5 s; max |Im|      -308
+0. 10
+2026-09-07 18:38:32  [g4_job32of50] point  3
+{-, 5}
+ 4 done in 8902.5 s; max |Im|      -328
+0. 10
+2026-09-07 18:38:32  [g4_job32of50] point  2
+{-, 41}
+ 5 done in 8357.5 s; max |Im|      -308
+0. 10
+2026-09-07 18:38:32  [g4_job32of50] point  1
+{-, 5}
+ 6 done in 8862.4 s; max |Im|      -331
+0. 10
+2026-09-07 18:38:32  [g4_job32of50] point  1
+{-, 41}
+ 7 done in 8347.7 s; max |Im|      -311
+0. 10
+2026-09-07 18:38:32  [g4_job32of50] point  4
+{-, 5}
+ 7 done in 8360.3 s; max |Im|      -328
+0. 10
+2026-09-07 18:38:32  [g4_job32of50] point  6
+{-, 41}
+ 7 done in 8899.5 s; max |Im|      -308
+0. 10
+2026-09-07 18:38:32  [g4_job32of50] point  5
+{-, 5}
+ 8 done in 8878.7 s; max |Im|      -328
+0. 10
+2026-09-07 18:38:33  [g4_job35of50] point  1
+{-, 53}
+ 3 done in 8341. s; max |Im|      -305
+0. 10
+2026-09-07 18:38:33  [g4_job35of50] point  3
+{-, 13}
+ 4 done in 8344.2 s; max |Im|      -319
+0. 10
+2026-09-07 18:38:33  [g4_job35of50] point  2
+{-, 53}
+ 5 done in 8347.6 s; max |Im|      -305
+0. 10
+2026-09-07 18:38:33  [g4_job35of50] point  1
+{-, 13}
+ 6 done in 8899.7 s; max |Im|      -322
+0. 10
+2026-09-07 18:38:33  [g4_job35of50] point  1
+{-, 53}
+ 7 done in 8360.1 s; max |Im|      -308
+0. 10
+2026-09-07 18:38:33  [g4_job35of50] point  4
+{-, 13}
+ 7 done in 8892.8 s; max |Im|      -319
+0. 10
+2026-09-07 18:38:33  [g4_job35of50] point  6
+{-, 53}
+ 7 done in 8903. s; max |Im|      -305
+0. 10
+2026-09-07 18:38:33  [g4_job35of50] point  5
+{-, 13}
+ 8 done in 8890.9 s; max |Im|      -319
+0. 10
+2026-09-07 18:38:42  [g4_job39of50] point  1
+{-, 71}
+ 3 done in 8273.5 s; max |Im|      -302
+0. 10
+2026-09-07 18:38:42  [g4_job39of50] point  3
+{-, 29}
+ 4 done in 8301.4 s; max |Im|      -311
+0. 10
+2026-09-07 18:38:42  [g4_job39of50] point  2
+{-, 71}
+ 5 done in 8834.6 s; max |Im|      -302
+0. 10
+2026-09-07 18:38:42  [g4_job39of50] point  1
+{-, 29}
+ 6 done in 8262.5 s; max |Im|      -314
+0. 10
+2026-09-07 18:38:42  [g4_job39of50] point  1
+{-, 71}
+ 7 done in 8912.1 s; max |Im|      -305
+0. 10
+2026-09-07 18:38:42  [g4_job39of50] point  4
+{-, 29}
+ 7 done in 8894.8 s; max |Im|      -311
+0. 10
+2026-09-07 18:38:42  [g4_job39of50] point  6
+{-, 71}
+ 7 done in 8900.3 s; max |Im|      -302
+0. 10
+2026-09-07 18:38:42  [g4_job39of50] point  5
+{-, 29}
+ 8 done in 8517.3 s; max |Im|      -311
+0. 10
+2026-09-07 18:39:13  [g4_job47of50] point  2
+{-, 19}
+ 3 done in 8316.6 s; max |Im|      -315
+0. 10
+2026-09-07 18:39:13  [g4_job47of50] point  3
+{-, 61}
+ 4 done in 8938. s; max |Im|      -304
+0. 10
+2026-09-07 18:39:13  [g4_job47of50] point  3
+{-, 19}
+ 5 done in 8328.5 s; max |Im|      -315
+0. 10
+2026-09-07 18:39:13  [g4_job47of50] point  1
+{-, 61}
+ 6 done in 8317.2 s; max |Im|      -306
+0. 10
+2026-09-07 18:39:13  [g4_job47of50] point  2
+{-, 19}
+ 7 done in 8871.5 s; max |Im|      -316
+0. 10
+2026-09-07 18:39:13  [g4_job47of50] point  4
+{-, 61}
+ 7 done in 8328.1 s; max |Im|      -304
+0. 10
+2026-09-07 18:39:13  [g4_job47of50] point  1
+{-, 19}
+ 8 done in 8935.5 s; max |Im|      -319
+0. 10
+2026-09-07 18:39:13  [g4_job47of50] point  5
+{-, 61}
+ 8 done in 8925.4 s; max |Im|      -304
+0. 10
+2026-09-07 18:39:22  [g4_job50of50] point  2
+{-, 31}
+ 3 done in 8419.2 s; max |Im|      -311
+0. 10
+2026-09-07 18:39:22  [g4_job50of50] point  3
+{-, 73}
+ 4 done in 8437.7 s; max |Im|      -302
+0. 10
+2026-09-07 18:39:22  [g4_job50of50] point  3
+{-, 31}
+ 5 done in 8444.4 s; max |Im|      -310
+0. 10
+2026-09-07 18:39:22  [g4_job50of50] point  1
+{-, 73}
+ 6 done in 8426.2 s; max |Im|      -304
+0. 10
+2026-09-07 18:39:22  [g4_job50of50] point  2
+{-, 31}
+ 7 done in 8947.8 s; max |Im|      -311
+0. 10
+2026-09-07 18:39:22  [g4_job50of50] point  4
+{-, 73}
+ 7 done in 8892.3 s; max |Im|      -302
+0. 10
+2026-09-07 18:39:22  [g4_job50of50] point  1
+{-, 31}
+ 8 done in 8918.8 s; max |Im|      -314
+0. 10
+2026-09-07 18:39:22  [g4_job50of50] point  5
+{-, 73}
+ 8 done in 8885.8 s; max |Im|      -302
+0. 10
+2026-09-07 18:41:15  [g4_job49of50] point  2
+{-, 29}
+ 3 done in 8400.2 s; max |Im|      -311
+0. 10
+2026-09-07 18:41:15  [g4_job49of50] point  3
+{-, 71}
+ 4 done in 9017.5 s; max |Im|      -302
+0. 10
+2026-09-07 18:41:15  [g4_job49of50] point  3
+{-, 29}
+ 5 done in 9059.6 s; max |Im|      -311
+0. 10
+2026-09-07 18:41:15  [g4_job49of50] point  1
+{-, 71}
+ 6 done in 8388.3 s; max |Im|      -305
+0. 10
+2026-09-07 18:41:15  [g4_job49of50] point  2
+{-, 29}
+ 7 done in 8424.7 s; max |Im|      -312
+0. 10
+2026-09-07 18:41:15  [g4_job49of50] point  4
+{-, 71}
+ 7 done in 8409.6 s; max |Im|      -302
+0. 10
+2026-09-07 18:41:15  [g4_job49of50] point  1
+{-, 29}
+ 8 done in 9029.5 s; max |Im|      -315
+0. 10
+2026-09-07 18:41:15  [g4_job49of50] point  5
+{-, 71}
+ 8 done in 9055.9 s; max |Im|      -302
+0. 10
+2026-09-07 18:42:14  [g4_job7of50] point  1
+{-, 19}
+ 2 done in 9125. s; max |Im|      -316
+0. 10
+2026-09-07 18:42:14  [g4_job7of50] point  2
+{-, 61}
+ 3 done in 8560.9 s; max |Im|      -304
+0. 10
+2026-09-07 18:42:14  [g4_job7of50] point  1
+{-, 19}
+ 5 done in 8560.5 s; max |Im|      -317
+0. 10
+2026-09-07 18:42:14  [g4_job7of50] point  3
+{-, 61}
+ 5 done in 8565.9 s; max |Im|      -304
+0. 10
+2026-09-07 18:42:14  [g4_job7of50] point  5
+{-, 19}
+ 6 done in 8569.3 s; max |Im|      -315
+0. 10
+2026-09-07 18:42:14  [g4_job7of50] point  2
+{-, 61}
+ 7 done in 9116.9 s; max |Im|      -304
+0. 10
+2026-09-07 18:42:14  [g4_job7of50] point  5
+{-, 19}
+ 7 done in 9087. s; max |Im|      -315
+0. 10
+2026-09-07 18:42:14  [g4_job7of50] point  1
+{-, 61}
+ 8 done in 9080.8 s; max |Im|      -307
+0. 10
+2026-09-07 18:43:21  [g4_job48of50] point  2
+{-, 23}
+ 3 done in 9147.1 s; max |Im|      -314
+0. 10
+2026-09-07 18:43:21  [g4_job48of50] point  3
+{-, 67}
+ 4 done in 8667.4 s; max |Im|      -303
+0. 10
+2026-09-07 18:43:21  [g4_job48of50] point  3
+{-, 23}
+ 5 done in 8699.6 s; max |Im|      -313
+0. 10
+2026-09-07 18:43:21  [g4_job48of50] point  1
+{-, 67}
+ 6 done in 8925.6 s; max |Im|      -305
+0. 10
+2026-09-07 18:43:21  [g4_job48of50] point  2
+{-, 23}
+ 7 done in 9143.7 s; max |Im|      -314
+0. 10
+2026-09-07 18:43:21  [g4_job48of50] point  4
+{-, 67}
+ 7 done in 9184.8 s; max |Im|      -303
+0. 10
+2026-09-07 18:43:21  [g4_job48of50] point  1
+{-, 23}
+ 8 done in 8259.8 s; max |Im|      -317
+0. 10
+2026-09-07 18:43:21  [g4_job48of50] point  5
+{-, 67}
+ 8 done in 8997.6 s; max |Im|      -303
+0. 10
+2026-09-07 18:48:07  [g4_job3of50] point  1
+{-, 7}
+ 2 done in 8652.7 s; max |Im|      -325
+0. 10
+2026-09-07 18:48:07  [g4_job3of50] point  2
+{-, 43}
+ 3 done in 8634.1 s; max |Im|      -307
+0. 10
+2026-09-07 18:48:07  [g4_job3of50] point  1
+{-, 7}
+ 5 done in 9359.8 s; max |Im|      -327
+0. 10
+2026-09-07 18:48:07  [g4_job3of50] point  3
+{-, 43}
+ 5 done in 8646.9 s; max |Im|      -307
+0. 10
+2026-09-07 18:48:07  [g4_job3of50] point  5
+{-, 7}
+ 6 done in 8655. s; max |Im|      -325
+0. 10
+2026-09-07 18:48:07  [g4_job3of50] point  2
+{-, 43}
+ 7 done in 9437.1 s; max |Im|      -308
+0. 10
+2026-09-07 18:48:07  [g4_job3of50] point  5
+{-, 7}
+ 7 done in 9475.4 s; max |Im|      -325
+0. 10
+2026-09-07 18:48:07  [g4_job3of50] point  1
+{-, 43}
+ 8 done in 9441.1 s; max |Im|      -311
+0. 10
+2026-09-07 18:48:31  [g4_job4of50] point  1
+{-, 11}
+ 2 done in 8660.7 s; max |Im|      -321
+0. 10
+2026-09-07 18:48:31  [g4_job4of50] point  2
+{-, 47}
+ 3 done in 9462.3 s; max |Im|      -306
+0. 10
+2026-09-07 18:48:31  [g4_job4of50] point  1
+{-, 11}
+ 5 done in 9477.7 s; max |Im|      -323
+0. 10
+2026-09-07 18:48:31  [g4_job4of50] point  3
+{-, 47}
+ 5 done in 8665.2 s; max |Im|      -306
+0. 10
+2026-09-07 18:48:31  [g4_job4of50] point  5
+{-, 11}
+ 6 done in 8666.1 s; max |Im|      -320
+0. 10
+2026-09-07 18:48:31  [g4_job4of50] point  2
+{-, 47}
+ 7 done in 9500.2 s; max |Im|      -307
+0. 10
+2026-09-07 18:48:31  [g4_job4of50] point  5
+{-, 11}
+ 7 done in 8659.3 s; max |Im|      -321
+0. 10
+2026-09-07 18:48:31  [g4_job4of50] point  1
+{-, 47}
+ 8 done in 9397.2 s; max |Im|      -310
+0. 10
+2026-09-07 19:00:48  [g4_job46of50] point  2
+{-, 17}
+ 9 done in 2019.1 s; max |Im|      -318
+0. 10
+2026-09-07 19:00:48  [g4_job46of50] point  3
+{--, 59}
+ 10 done in 1956.2 s; max |Im|      -304
+0. 10
+2026-09-07 19:00:48  [g4_job46of50] job finished
+2026-09-07 19:07:43  [g4_job41of50] point  2
+{-, 3}
+ 9 done in 1944.8 s; max |Im|      -334
+0. 10
+2026-09-07 19:07:43  [g4_job41of50] point  3
+{--, 37}
+ 10 done in 2018.8 s; max |Im|      -309
+0. 10
+2026-09-07 19:07:43  [g4_job41of50] job finished
+2026-09-07 19:07:44  [g4_job43of50] point  2
+{-, 7}
+ 9 done in 2042. s; max |Im|      -327
+0. 10
+2026-09-07 19:07:44  [g4_job43of50] point  3
+{--, 43}
+ 10 done in 1932.8 s; max |Im|      -308
+0. 10
+2026-09-07 19:07:44  [g4_job43of50] job finished
+2026-09-07 19:07:49  [g4_job42of50] point  2
+{-, 5}
+ 9 done in 2041.2 s; max |Im|      -330
+0. 10
+2026-09-07 19:07:49  [g4_job42of50] point  3
+{--, 41}
+ 10 done in 1917.5 s; max |Im|      -308
+0. 10
+2026-09-07 19:07:49  [g4_job42of50] job finished
+2026-09-07 19:08:18  [g4_job44of50] point  2
+{-, 11}
+ 9 done in 1924.1 s; max |Im|      -323
+0. 10
+2026-09-07 19:08:18  [g4_job44of50] point  3
+{--, 47}
+ 10 done in 2034.1 s; max |Im|      -307
+0. 10
+2026-09-07 19:08:18  [g4_job44of50] job finished
+2026-09-07 19:08:23  [g4_job45of50] point  2
+{-, 13}
+ 9 done in 2041.2 s; max |Im|      -321
+0. 10
+2026-09-07 19:08:23  [g4_job45of50] point  3
+{--, 53}
+ 10 done in 1919.6 s; max |Im|      -305
+0. 10
+2026-09-07 19:08:23  [g4_job45of50] job finished
+2026-09-07 19:12:30  [g4_job50of50] point  2
+{-, 31}
+ 9 done in 1914.3 s; max |Im|      -312
+0. 10
+2026-09-07 19:12:30  [g4_job50of50] point  3
+{--, 73}
+ 10 done in 1981.9 s; max |Im|      -302
+0. 10
+2026-09-07 19:12:30  [g4_job50of50] job finished
+2026-09-07 19:12:59  [g4_job47of50] point  2
+{-, 19}
+ 9 done in 1953.1 s; max |Im|      -317
+0. 10
+2026-09-07 19:12:59  [g4_job47of50] point  3
+{--, 61}
+ 10 done in 2020.3 s; max |Im|      -304
+0. 10
+2026-09-07 19:12:59  [g4_job47of50] job finished
+2026-09-07 19:15:24  [g4_job49of50] point  2
+{-, 29}
+ 9 done in 1921.2 s; max |Im|      -313
+0. 10
+2026-09-07 19:15:24  [g4_job49of50] point  3
+{--, 71}
+ 10 done in 2042.3 s; max |Im|      -302
+0. 10
+2026-09-07 19:15:24  [g4_job49of50] job finished
+2026-09-07 19:17:07  [g4_job40of50] point  1
+{-, 73}
+ 9 done in 2965.9 s; max |Im|      -306
+0. 10
+2026-09-07 19:17:07  [g4_job40of50] point  3
+{--, 31}
+ 10 done in 2958.1 s; max |Im|      -311
+0. 10
+2026-09-07 19:17:07  [g4_job40of50] point  9
+{--, 73}
+ 10 done in 2639.7 s; max |Im|      -302
+0. 10
+2026-09-07 19:17:07  [g4_job40of50] job finished
+2026-09-07 19:17:13  [g4_job48of50] point  2
+{-, 23}
+ 9 done in 1974.5 s; max |Im|      -315
+0. 10
+2026-09-07 19:17:13  [g4_job48of50] point  3
+{--, 67}
+ 10 done in 2025.5 s; max |Im|      -303
+0. 10
+2026-09-07 19:17:13  [g4_job48of50] job finished
+2026-09-07 19:17:25  [g4_job11of50] point  7
+{-, 37}
+ 8 done in 2952.5 s; max |Im|      -309
+0. 10
+2026-09-07 19:17:25  [g4_job11of50] point  1
+{--, 3}
+ 10 done in 2000.3 s; max |Im|      -334
+0. 10
+2026-09-07 19:17:25  [g4_job11of50] point  7
+{--, 37}
+ 10 done in 2906.1 s; max |Im|      -309
+0. 10
+2026-09-07 19:17:25  [g4_job11of50] job finished
+2026-09-07 19:17:31  [g4_job24of50] point  1
+{-, 11}
+ 9 done in 1989.4 s; max |Im|      -326
+0. 10
+2026-09-07 19:17:31  [g4_job24of50] point  1
+{--, 47}
+ 10 done in 2915.2 s; max |Im|      -312
+0. 10
+2026-09-07 19:17:31  [g4_job24of50] point  9
+{--, 11}
+ 10 done in 2925.9 s; max |Im|      -320
+0. 10
+2026-09-07 19:17:31  [g4_job24of50] job finished
+2026-09-07 19:17:56  [g4_job9of50] point  7
+{-, 29}
+ 8 done in 2870.8 s; max |Im|      -311
+0. 10
+2026-09-07 19:17:56  [g4_job9of50] point  2
+{-, 71}
+ 9 done in 2331. s; max |Im|      -304
+0. 10
+2026-09-07 19:17:56  [g4_job9of50] point  7
+{--, 29}
+ 10 done in 2999.2 s; max |Im|      -311
+0. 10
+2026-09-07 19:17:56  [g4_job9of50] job finished
+2026-09-07 19:18:15  [g4_job6of50] point  7
+{-, 17}
+ 8 done in 2123.2 s; max |Im|      -316
+0. 10
+2026-09-07 19:18:15  [g4_job6of50] point  2
+{-, 59}
+ 9 done in 3026.9 s; max |Im|      -306
+0. 10
+2026-09-07 19:18:15  [g4_job6of50] point  7
+{--, 17}
+ 10 done in 3093.7 s; max |Im|      -316
+0. 10
+2026-09-07 19:18:15  [g4_job6of50] job finished
+2026-09-07 19:18:53  [g4_job25of50] point  1
+{-, 13}
+ 9 done in 2947.5 s; max |Im|      -324
+0. 10
+2026-09-07 19:18:53  [g4_job25of50] point  1
+{--, 53}
+ 10 done in 2908.8 s; max |Im|      -311
+0. 10
+2026-09-07 19:18:53  [g4_job25of50] point  9
+{--, 13}
+ 10 done in 1979.2 s; max |Im|      -319
+0. 10
+2026-09-07 19:18:53  [g4_job25of50] job finished
+2026-09-07 19:19:22  [g4_job26of50] point  1
+{-, 17}
+ 9 done in 3031.1 s; max |Im|      -321
+0. 10
+2026-09-07 19:19:22  [g4_job26of50] point  1
+{--, 59}
+ 10 done in 2805.5 s; max |Im|      -309
+0. 10
+2026-09-07 19:19:22  [g4_job26of50] point  9
+{--, 17}
+ 10 done in 2224.6 s; max |Im|      -316
+0. 10
+2026-09-07 19:19:22  [g4_job26of50] job finished
+2026-09-07 19:19:35  [g4_job5of50] point  7
+{-, 13}
+ 8 done in 3132.1 s; max |Im|      -319
+0. 10
+2026-09-07 19:19:35  [g4_job5of50] point  2
+{-, 53}
+ 9 done in 3053.7 s; max |Im|      -307
+0. 10
+2026-09-07 19:19:35  [g4_job5of50] point  7
+{--, 13}
+ 10 done in 2113.7 s; max |Im|      -319
+0. 10
+2026-09-07 19:19:36  [g4_job5of50] job finished
+2026-09-07 19:20:01  [g4_job1of50] point  7
+{-, 3}
+ 8 done in 1933.7 s; max |Im|      -331
+0. 10
+2026-09-07 19:20:01  [g4_job1of50] point  2
+{-, 37}
+ 9 done in 2987.3 s; max |Im|      -310
+0. 10
+2026-09-07 19:20:01  [g4_job1of50] point  7
+{--, 3}
+ 10 done in 3026. s; max |Im|      -332
+0. 10
+2026-09-07 19:20:01  [g4_job1of50] job finished
+2026-09-07 19:20:03  [g4_job2of50] point  7
+{-, 5}
+ 8 done in 3034.3 s; max |Im|      -328
+0. 10
+2026-09-07 19:20:03  [g4_job2of50] point  2
+{-, 41}
+ 9 done in 2100.3 s; max |Im|      -309
+0. 10
+2026-09-07 19:20:03  [g4_job2of50] point  7
+{--, 5}
+ 10 done in 3103.6 s; max |Im|      -328
+0. 10
+2026-09-07 19:20:03  [g4_job2of50] job finished
+2026-09-07 19:20:11  [g4_job10of50] point  7
+{-, 31}
+ 8 done in 3106.2 s; max |Im|      -311
+0. 10
+2026-09-07 19:20:11  [g4_job10of50] point  2
+{-, 73}
+ 9 done in 2790.6 s; max |Im|      -303
+0. 10
+2026-09-07 19:20:11  [g4_job10of50] point  7
+{--, 31}
+ 10 done in 2476.5 s; max |Im|      -311
+0. 10
+2026-09-07 19:20:11  [g4_job10of50] job finished
+2026-09-07 19:20:23  [g4_job27of50] point  1
+{-, 19}
+ 9 done in 2784.9 s; max |Im|      -320
+0. 10
+2026-09-07 19:20:23  [g4_job27of50] point  1
+{--, 61}
+ 10 done in 3063.4 s; max |Im|      -309
+0. 10
+2026-09-07 19:20:23  [g4_job27of50] point  9
+{--, 19}
+ 10 done in 2582.2 s; max |Im|      -315
+0. 10
+2026-09-07 19:20:23  [g4_job27of50] job finished
+2026-09-07 19:23:38  [g4_job21of50] point  1
+{-, 3}
+ 9 done in 2975.5 s; max |Im|      -335
+0. 10
+2026-09-07 19:23:38  [g4_job21of50] point  1
+{--, 37}
+ 10 done in 2184.2 s; max |Im|      -314
+0. 10
+2026-09-07 19:23:38  [g4_job21of50] point  9
+{--, 3}
+ 10 done in 3046.5 s; max |Im|      -331
+0. 10
+2026-09-07 19:23:38  [g4_job21of50] job finished
+2026-09-07 19:24:10  [g4_job19of50] point  7
+{-, 71}
+ 8 done in 3032.4 s; max |Im|      -302
+0. 10
+2026-09-07 19:24:10  [g4_job19of50] point  1
+{--, 29}
+ 10 done in 3002.9 s; max |Im|      -317
+0. 10
+2026-09-07 19:24:10  [g4_job19of50] point  7
+{--, 71}
+ 10 done in 2062. s; max |Im|      -302
+0. 10
+2026-09-07 19:24:10  [g4_job19of50] job finished
+2026-09-07 19:24:51  [g4_job29of50] point  1
+{-, 29}
+ 9 done in 3061.5 s; max |Im|      -316
+0. 10
+2026-09-07 19:24:51  [g4_job29of50] point  1
+{--, 71}
+ 10 done in 3112.6 s; max |Im|      -308
+0. 10
+2026-09-07 19:24:51  [g4_job29of50] point  9
+{--, 29}
+ 10 done in 2080.4 s; max |Im|      -311
+0. 10
+2026-09-07 19:24:51  [g4_job29of50] job finished
+2026-09-07 19:24:56  [g4_job28of50] point  1
+{-, 23}
+ 9 done in 3105.4 s; max |Im|      -318
+0. 10
+2026-09-07 19:24:56  [g4_job28of50] point  1
+{--, 67}
+ 10 done in 2101.4 s; max |Im|      -308
+0. 10
+2026-09-07 19:24:56  [g4_job28of50] point  9
+{--, 23}
+ 10 done in 3055.3 s; max |Im|      -313
+0. 10
+2026-09-07 19:24:56  [g4_job28of50] job finished
+2026-09-07 19:25:00  [g4_job23of50] point  1
+{-, 7}
+ 9 done in 2070.7 s; max |Im|      -330
+0. 10
+2026-09-07 19:25:00  [g4_job23of50] point  1
+{--, 43}
+ 10 done in 3041.7 s; max |Im|      -313
+0. 10
+2026-09-07 19:25:00  [g4_job23of50] point  9
+{--, 7}
+ 10 done in 3030.3 s; max |Im|      -325
+0. 10
+2026-09-07 19:25:00  [g4_job23of50] job finished
+2026-09-07 19:25:09  [g4_job17of50] point  7
+{-, 61}
+ 8 done in 3053.1 s; max |Im|      -304
+0. 10
+2026-09-07 19:25:09  [g4_job17of50] point  1
+{--, 19}
+ 10 done in 3019.1 s; max |Im|      -321
+0. 10
+2026-09-07 19:25:09  [g4_job17of50] point  7
+{--, 61}
+ 10 done in 2064.2 s; max |Im|      -304
+0. 10
+2026-09-07 19:25:09  [g4_job17of50] job finished
+2026-09-07 19:25:54  [g4_job18of50] point  7
+{-, 67}
+ 8 done in 2948.6 s; max |Im|      -303
+0. 10
+2026-09-07 19:25:54  [g4_job18of50] point  1
+{--, 23}
+ 10 done in 2613.3 s; max |Im|      -319
+0. 10
+2026-09-07 19:25:54  [g4_job18of50] point  7
+{--, 67}
+ 10 done in 3143.8 s; max |Im|      -303
+0. 10
+2026-09-07 19:25:54  [g4_job18of50] job finished
+2026-09-07 19:25:56  [g4_job30of50] point  1
+{-, 31}
+ 9 done in 3182.6 s; max |Im|      -315
+0. 10
+2026-09-07 19:25:56  [g4_job30of50] point  1
+{--, 73}
+ 10 done in 2652.8 s; max |Im|      -307
+0. 10
+2026-09-07 19:25:56  [g4_job30of50] point  9
+{--, 31}
+ 10 done in 3005.9 s; max |Im|      -311
+0. 10
+2026-09-07 19:25:56  [g4_job30of50] job finished
+2026-09-07 19:26:07  [g4_job20of50] point  7
+{-, 73}
+ 8 done in 3122.4 s; max |Im|      -302
+0. 10
+2026-09-07 19:26:07  [g4_job20of50] point  1
+{--, 31}
+ 10 done in 2977. s; max |Im|      -316
+0. 10
+2026-09-07 19:26:07  [g4_job20of50] point  7
+{--, 73}
+ 10 done in 2684.4 s; max |Im|      -302
+0. 10
+2026-09-07 19:26:07  [g4_job20of50] job finished
+2026-09-07 19:26:23  [g4_job31of50] point  1
+{-, 37}
+ 9 done in 1996.7 s; max |Im|      -313
+0. 10
+2026-09-07 19:26:23  [g4_job31of50] point  3
+{--, 3}
+ 10 done in 3143.7 s; max |Im|      -333
+0. 10
+2026-09-07 19:26:23  [g4_job31of50] point  9
+{--, 37}
+ 10 done in 3077.7 s; max |Im|      -309
+0. 10
+2026-09-07 19:26:23  [g4_job31of50] job finished
+2026-09-07 19:26:44  [g4_job16of50] point  7
+{-, 59}
+ 8 done in 2959.9 s; max |Im|      -304
+0. 10
+2026-09-07 19:26:44  [g4_job16of50] point  1
+{--, 17}
+ 10 done in 3124.5 s; max |Im|      -322
+0. 10
+2026-09-07 19:26:44  [g4_job16of50] point  7
+{--, 59}
+ 10 done in 2586.9 s; max |Im|      -304
+0. 10
+2026-09-07 19:26:44  [g4_job16of50] job finished
+2026-09-07 19:26:50  [g4_job12of50] point  7
+{-, 41}
+ 8 done in 3067.5 s; max |Im|      -308
+0. 10
+2026-09-07 19:26:50  [g4_job12of50] point  1
+{--, 5}
+ 10 done in 3028.2 s; max |Im|      -332
+0. 10
+2026-09-07 19:26:50  [g4_job12of50] point  7
+{--, 41}
+ 10 done in 2097. s; max |Im|      -308
+0. 10
+2026-09-07 19:26:50  [g4_job12of50] job finished
+2026-09-07 19:27:21  [g4_job22of50] point  1
+{-, 5}
+ 9 done in 2959.6 s; max |Im|      -333
+0. 10
+2026-09-07 19:27:21  [g4_job22of50] point  1
+{--, 41}
+ 10 done in 2397.7 s; max |Im|      -313
+0. 10
+2026-09-07 19:27:21  [g4_job22of50] point  9
+{--, 5}
+ 10 done in 3165.3 s; max |Im|      -328
+0. 10
+2026-09-07 19:27:21  [g4_job22of50] job finished
+2026-09-07 19:27:42  [g4_job13of50] point  7
+{-, 43}
+ 8 done in 3033.1 s; max |Im|      -307
+0. 10
+2026-09-07 19:27:42  [g4_job13of50] point  1
+{--, 7}
+ 10 done in 3053. s; max |Im|      -330
+0. 10
+2026-09-07 19:27:42  [g4_job13of50] point  7
+{--, 43}
+ 10 done in 2131.6 s; max |Im|      -307
+0. 10
+2026-09-07 19:27:42  [g4_job13of50] job finished
+2026-09-07 19:28:29  [g4_job8of50] point  7
+{-, 23}
+ 8 done in 3102.5 s; max |Im|      -313
+0. 10
+2026-09-07 19:28:29  [g4_job8of50] point  2
+{-, 67}
+ 9 done in 3139.3 s; max |Im|      -304
+0. 10
+2026-09-07 19:28:29  [g4_job8of50] point  7
+{--, 23}
+ 10 done in 2113.7 s; max |Im|      -314
+0. 10
+2026-09-07 19:28:29  [g4_job8of50] job finished
+2026-09-07 19:28:57  [g4_job14of50] point  7
+{-, 47}
+ 8 done in 2917.1 s; max |Im|      -306
+0. 10
+2026-09-07 19:28:57  [g4_job14of50] point  1
+{--, 11}
+ 10 done in 2346.6 s; max |Im|      -326
+0. 10
+2026-09-07 19:28:57  [g4_job14of50] point  7
+{--, 47}
+ 10 done in 3149.8 s; max |Im|      -306
+0. 10
+2026-09-07 19:28:57  [g4_job14of50] job finished
+2026-09-07 19:29:06  [g4_job37of50] point  1
+{-, 61}
+ 9 done in 2987.6 s; max |Im|      -308
+0. 10
+2026-09-07 19:29:06  [g4_job37of50] point  3
+{--, 19}
+ 10 done in 2156.8 s; max |Im|      -316
+0. 10
+2026-09-07 19:29:06  [g4_job37of50] point  9
+{--, 61}
+ 10 done in 3099.9 s; max |Im|      -304
+0. 10
+2026-09-07 19:29:06  [g4_job37of50] job finished
+2026-09-07 19:29:07  [g4_job15of50] point  7
+{-, 53}
+ 8 done in 2357.2 s; max |Im|      -305
+0. 10
+2026-09-07 19:29:07  [g4_job15of50] point  1
+{--, 13}
+ 10 done in 3138.7 s; max |Im|      -324
+0. 10
+2026-09-07 19:29:07  [g4_job15of50] point  7
+{--, 53}
+ 10 done in 2927.6 s; max |Im|      -305
+0. 10
+2026-09-07 19:29:07  [g4_job15of50] job finished
+2026-09-07 19:29:10  [g4_job36of50] point  1
+{-, 59}
+ 9 done in 2148.7 s; max |Im|      -309
+0. 10
+2026-09-07 19:29:10  [g4_job36of50] point  3
+{--, 17}
+ 10 done in 3056.2 s; max |Im|      -317
+0. 10
+2026-09-07 19:29:10  [g4_job36of50] point  9
+{--, 59}
+ 10 done in 3055. s; max |Im|      -304
+0. 10
+2026-09-07 19:29:10  [g4_job36of50] job finished
+2026-09-07 19:29:34  [g4_job38of50] point  1
+{-, 67}
+ 9 done in 3065.2 s; max |Im|      -307
+0. 10
+2026-09-07 19:29:34  [g4_job38of50] point  3
+{--, 23}
+ 10 done in 2069.7 s; max |Im|      -314
+0. 10
+2026-09-07 19:29:34  [g4_job38of50] point  9
+{--, 67}
+ 10 done in 3018.8 s; max |Im|      -303
+0. 10
+2026-09-07 19:29:34  [g4_job38of50] job finished
+2026-09-07 19:29:40  [g4_job34of50] point  1
+{-, 47}
+ 9 done in 3086.2 s; max |Im|      -311
+0. 10
+2026-09-07 19:29:40  [g4_job34of50] point  3
+{--, 11}
+ 10 done in 3024.8 s; max |Im|      -321
+0. 10
+2026-09-07 19:29:40  [g4_job34of50] point  9
+{--, 47}
+ 10 done in 2097.7 s; max |Im|      -306
+0. 10
+2026-09-07 19:29:40  [g4_job34of50] job finished
+2026-09-07 19:30:06  [g4_job33of50] point  1
+{-, 43}
+ 9 done in 3102.4 s; max |Im|      -312
+0. 10
+2026-09-07 19:30:06  [g4_job33of50] point  3
+{--, 7}
+ 10 done in 3103.3 s; max |Im|      -326
+0. 10
+2026-09-07 19:30:06  [g4_job33of50] point  9
+{--, 43}
+ 10 done in 2885.5 s; max |Im|      -307
+0. 10
+2026-09-07 19:30:06  [g4_job33of50] job finished
+2026-09-07 19:30:37  [g4_job39of50] point  1
+{-, 71}
+ 9 done in 3053.1 s; max |Im|      -307
+0. 10
+2026-09-07 19:30:37  [g4_job39of50] point  3
+{--, 29}
+ 10 done in 2892.5 s; max |Im|      -312
+0. 10
+2026-09-07 19:30:37  [g4_job39of50] point  9
+{--, 71}
+ 10 done in 3108.6 s; max |Im|      -302
+0. 10
+2026-09-07 19:30:37  [g4_job39of50] job finished
+2026-09-07 19:31:16  [g4_job35of50] point  1
+{-, 53}
+ 9 done in 2938.3 s; max |Im|      -310
+0. 10
+2026-09-07 19:31:16  [g4_job35of50] point  3
+{--, 13}
+ 10 done in 3157.2 s; max |Im|      -320
+0. 10
+2026-09-07 19:31:16  [g4_job35of50] point  9
+{--, 53}
+ 10 done in 2782.8 s; max |Im|      -305
+0. 10
+2026-09-07 19:31:16  [g4_job35of50] job finished
+2026-09-07 19:32:34  [g4_job32of50] point  1
+{-, 41}
+ 9 done in 3236.2 s; max |Im|      -312
+0. 10
+2026-09-07 19:32:34  [g4_job32of50] point  3
+{--, 5}
+ 10 done in 2886.8 s; max |Im|      -329
+0. 10
+2026-09-07 19:32:34  [g4_job32of50] point  9
+{--, 41}
+ 10 done in 2611.3 s; max |Im|      -308
+0. 10
+2026-09-07 19:32:34  [g4_job32of50] job finished
+2026-09-07 19:34:47  [g4_job7of50] point  7
+{-, 19}
+ 8 done in 3147.7 s; max |Im|      -315
+0. 10
+2026-09-07 19:34:47  [g4_job7of50] point  2
+{-, 61}
+ 9 done in 3108.4 s; max |Im|      -305
+0. 10
+2026-09-07 19:34:47  [g4_job7of50] point  7
+{--, 19}
+ 10 done in 2103.9 s; max |Im|      -315
+0. 10
+2026-09-07 19:34:47  [g4_job7of50] job finished
+2026-09-07 19:42:25  [g4_job4of50] point  7
+{-, 11}
+ 8 done in 3071.2 s; max |Im|      -320
+0. 10
+2026-09-07 19:42:25  [g4_job4of50] point  2
+{-, 47}
+ 9 done in 3228. s; max |Im|      -308
+0. 10
+2026-09-07 19:42:25  [g4_job4of50] point  7
+{--, 11}
+ 10 done in 3164.7 s; max |Im|      -321
+0. 10
+2026-09-07 19:42:25  [g4_job4of50] job finished
+2026-09-07 19:43:11  [g4_job3of50] point  7
+{-, 7}
+ 8 done in 3007.6 s; max |Im|      -325
+0. 10
+2026-09-07 19:43:11  [g4_job3of50] point  2
+{-, 43}
+ 9 done in 3298.1 s; max |Im|      -309
+0. 10
+2026-09-07 19:43:11  [g4_job3of50] point  7
+{--, 7}
+ 10 done in 2692.9 s; max |Im|      -325
+0. 10
+2026-09-07 19:43:11  [g4_job3of50] job finished

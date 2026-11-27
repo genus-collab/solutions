@@ -1,0 +1,27 @@
+(1) genus 3 residual scaling and controls
+  eps 3 7 t 1/1000 : ((total-GW0-Q GW1-Q^2 GW2-Q^3 GW3)/Q^3) = -1.59723e-01  ; /y = -1.59723e+08
+  eps 3 7 t 1/100000 : ((total-GW0-Q GW1-Q^2 GW2-Q^3 GW3)/Q^3) = -1.59723e-07  ; /y = -1.59723e+08
+  eps 3 7 t 1/10000000 : ((total-GW0-Q GW1-Q^2 GW2-Q^3 GW3)/Q^3) = -1.59723e-13  ; /y = -1.59723e+08
+  eps 5/2 -3/7 t 1/1000 : ((total-GW0-Q GW1-Q^2 GW2-Q^3 GW3)/Q^3) = 4.14335e-04  ; /y = 4.14335e+05
+  eps 5/2 -3/7 t 1/100000 : ((total-GW0-Q GW1-Q^2 GW2-Q^3 GW3)/Q^3) = 4.14335e-10  ; /y = 4.14335e+05
+  eps 5/2 -3/7 t 1/10000000 : ((total-GW0-Q GW1-Q^2 GW2-Q^3 GW3)/Q^3) = 4.14335e-16  ; /y = 4.14335e+05
+  control flip sign Theta(-z/E): total-GW0=6.3021e-02 ; flip sign Theta(z/eps): total-GW0=-1.9662e-11 (correct rows give 5.37e-11)
+(2) Hodge_v = h_v.1 with h_v = prod Theta(-z/v_a), graphs g=2,3
+  g 2 v ['3', '-7', '5/2'] graph==Int Hodge: True ; control Theta(+z/v): False
+  g 2 v ['1', '2', '5', '-3', '-7'] graph==Int Hodge: True ; control Theta(+z/v): False
+  g 2 v ['10', '-3', '-7'] graph==Int Hodge: True ; control Theta(+z/v): False
+  g 3 v ['3', '-7', '5/2'] graph==Int Hodge: True ; control Theta(+z/v): True
+  g 3 v ['1', '2', '5', '-3', '-7'] graph==Int Hodge: True ; control Theta(+z/v): True
+  g 3 v ['10', '-3', '-7'] graph==Int Hodge: True ; control Theta(+z/v): True
+(3) GW^T_{g,0}=Sum_i W_i^{g-1} Int Hodge_{wt_i}: polynomiality of e3*k*GW along a line and value at alpha*
+  g 2 eps 3 7 : degree in s of e3 k GW = 6 ; value at s=0: 5/32 ; T_F Hodge formula: 5/32 ; equal: True
+  g 2 eps 5/2 -3/7 : degree in s of e3 k GW = 6 ; value at s=0: 841/125440 ; T_F Hodge formula: 841/125440 ; equal: True
+  g 3 eps 3 7 : degree in s of e3 k GW = 8 ; value at s=0: 125/2016 ; T_F Hodge formula: 125/2016 ; equal: True
+  g 3 eps 5/2 -3/7 : degree in s of e3 k GW = 8 ; value at s=0: 707281/6195732480 ; T_F Hodge formula: 707281/6195732480 ; equal: True
+(4) generic alpha: Phi(alpha,Y;z)/Phi(alpha,-alpha_j;z) vs stripped I-function f(y,z)/f(y,0)
+  colour 0 poles in z of stripped coefficient (max abs coefficient, must be 0): 0
+   y=1.481e-08; differences Phi-side minus I-side at z^0..z^5: ['0.00e+00', '-1.15e-24', '7.79e-24', '-4.43e-23', '2.26e-22', '-1.07e-21']
+  colour 1 poles in z of stripped coefficient (max abs coefficient, must be 0): 0
+   y=-1.389e-09; differences Phi-side minus I-side at z^0..z^5: ['0.00e+00', '-2.83e-28', '1.65e-27', '3.91e-27', '2.84e-26', '1.23e-25']
+  colour 2 poles in z of stripped coefficient (max abs coefficient, must be 0): 0
+   y=3.556e-10; differences Phi-side minus I-side at z^0..z^5: ['0.00e+00', '1.08e-29', '2.32e-29', '4.18e-29', '6.84e-29', '1.05e-28']

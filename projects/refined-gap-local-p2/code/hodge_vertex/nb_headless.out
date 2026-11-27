@@ -1,0 +1,172 @@
+29 Input cells; evaluating 1..29
+
+=== Input cell 1 ===
+(* graphs.m -- stable graphs, decorations and Witten-Kontsevich numbers (shared by lp2_lib.m and rc_lib.m).
+   Verbatim from genRmat_g4_lib.m / localp2CY5_genus ...
+    (0. s)
+
+=== Input cell 2 ===
+(* orbits.m -- decorated stable graphs = orbits of labelled decorations under Aut(Gamma). Shared by both pipelines
+   (identical prepareGraph structure on both  ...
+    (0. s)
+
+=== Input cell 3 ===
+(* lp2_lib.m -- library for the per-decorated-graph Givental-Teleman graph sum of K_P2 x C^2 on the fibrewise torus T_F
+   (untwisted R-matrix), genus <= 4.  Lo ...
+    (0. s)
+
+=== Input cell 4 ===
+(* hv_lib3.m -- genus-general (g <= 3) Hodge-vertex machinery for the Givental-Teleman graph sum of K_P2 x C^2 on T_F.
+   Omega_Z = R' . (Hodge_w)^{+3}, R' = R_ ...
+    (0. s)
+
+=== Input cell 5 ===
+(* hv_lib4.m -- genus-general Hodge-vertex machinery for the Givental-Teleman graph sum of K_P2 x C^2 on T_F, valid in genus <= 4
+   (no closed forms needed): e ...
+    (0. s)
+
+=== Input cell 6 ===
+(* data directory: this notebook's folder if it holds the sidecars (cPP_z6.m, StableGraph-2/3.bin, ref/F20_F30_y.m, hv_orbits_g3.mx,
+   hv3_samples_B.mx, hodge_ ...
+data directory: G:\My Drive\Projects\Old\refGW\hodge_vertex
+    (0. s)
+
+=== Input cell 7 ===
+(* reconstruction of every decorated graph from a list of sample records {{t0, x0}, vectors, diagnostics, ...} *)
+reconstructAll[recs_, OTx_, ts_, xs_, gg_] :=  ...
+    (0. s)
+
+=== Input cell 8 ===
+(* Hodge integrals: known values, Mumford recursion against the closed forms, string and dilaton equations *)
+{hodgeOK, hodgeReport} = hodgeChecks3[]; Column[Ap ...
+--> Column[{"known values (lambda_1 on M_{1,1}; lambda_1 psi^3, lambda_2 psi^2, lambda_1 lambda_2 psi on M_{2,1}; lambda_1 lambda_2 on M_2; lambda_1^6 on M_3 by six-fold Mumford = 1/90720; lambda_3 psi^4 on M_{3,1}; lambda_3 lambda_2 psi^2 on M_{3,1}; lambda_1 lambda_2 lambda_3 on M_3): {True, True, True, True, True, True, True, True, True}", "Mumford recursion: lambda_1^2 = 0 (g=1), lambda_1 = lambda_g formula (g=1), lambda_1^2 = 2 lambda_2 and lambda_1^3 = 2 lambda_1 lambda_2 (g=2), lambda_1^4 = 0 (g=2), lambda_1^5 = 16 lambda_2 lambda_3 and lambda_1^6 = 16 lambda_1 lambda_2 lambda_3 with psi insertions (g=3): True", "string and dilaton equations for the Hodge correlators (genus 1-2: n <= 3, genus 3: n <= 2): True", "normalised Hodge class, genus 3: {{{1, 1, 1}, u[1]*u[2]*(u[1] + u[2])*u[3]*(u[1] + u[3])*(u[2] + u[3])}, {{1, 1, 0}, -((u[1] + u[2])*(u[1] + u[3])*(u[2] + u[3]))}, {{1, 0, 1}, (u[1] + u[2])*(u[1] + u[3])*(u[2] + u[3])*(u[1] + u[2] + u[3])}, {{1, 0, 0}, -u[1] - u[2] - u[3]}, {{0, 1, 1}, -((u[1] + u[2])*(u[1] + u[3])*(u[2] + u[3])*(u[1]*u[2] + u[1]*u[3] + u[2]*u[3]))}, {{0, 1, 0}, (u[1] + u[2] + u[3])^2}, {{0, 0, 1}, -u[1]^3 - u[2]^3 - u[3]^3}, {{0, 0, 0}, 1}}", "all checks passed: True"}]
+    (1.5 s)
+
+=== Input cell 9 ===
+(* the scalar R-action of h on the point theory (PPZ conventions) reproduces the normalised Hodge class on M_2 for arbitrary weights ... *)
+ppz2 = ppzScalar[2,  ...
+--> {-1/5760*((w1 + w2)*(w1 + w3)*(w2 + w3))/(w1^2*w2^2*w3^2), True}
+    (0.1 s)
+
+=== Input cell 10 ===
+(* ... and on M_3 (42 stable graphs) at exact rational weights *)
+SeedRandom[7]; Table[Module[{wn = Table[RandomInteger[{-9, 9}]/RandomInteger[{1, 5}], {3}]}, I ...
+--> {{{8/5, 3/2, -7/2}, True}, {{5/2, 4/5, -4}, True}}
+    (0.2 s)
+
+=== Input cell 11 ===
+(* the normalised Hodge class of genus 3 for the weights wB, as coefficients of lambda_1^i lambda_2^j lambda_3^k *)
+Table[{c[[1]], Factor[c[[2]] /. usubB]}, {c, ...
+--> TableForm[{{{1, 1, 1}, -(1/(\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2))}, {{1, 1, 0}, 1/(\[Epsilon][1]*\[Epsilon][2]*(\[Epsilon][1] + \[Epsilon][2]))}, {{1, 0, 1}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)/(\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2)}, {{1, 0, 0}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)/(\[Epsilon][1]*\[Epsilon][2]*(\[Epsilon][1] + \[Epsilon][2]))}, {{0, 1, 1}, 0}, {{0, 1, 0}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^2/(\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2)}, {{0, 0, 1}, (\[Epsilon][1]^6 + 3*\[Epsilon][1]^5*\[Epsilon][2] + 3*\[Epsilon][1]^4*\[Epsilon][2]^2 + \[Epsilon][1]^3*\[Epsilon][2]^3 + 3*\[Epsilon][1]^2*\[Epsilon][2]^4 + 3*\[Epsilon][1]*\[Epsilon][2]^5 + \[Epsilon][2]^6)/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{0, 0, 0}, 1}}]
+    (0. s)
+
+=== Input cell 12 ===
+(* the scalar h_wB(z) to z^6 *)
+Factor /@ hCoeffs[wB, 1, 6]
+--> {1, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)/(12*\[Epsilon][1]*\[Epsilon][2]*(\[Epsilon][1] + \[Epsilon][2])), (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^2/(288*\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2), -1/51840*(139*\[Epsilon][1]^6 + 417*\[Epsilon][1]^5*\[Epsilon][2] + 402*\[Epsilon][1]^4*\[Epsilon][2]^2 + 109*\[Epsilon][1]^3*\[Epsilon][2]^3 + 402*\[Epsilon][1]^2*\[Epsilon][2]^4 + 417*\[Epsilon][1]*\[Epsilon][2]^5 + 139*\[Epsilon][2]^6)/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3), -1/2488320*((\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)*(571*\[Epsilon][1]^6 + 1713*\[Epsilon][1]^5*\[Epsilon][2] + 1698*\[Epsilon][1]^4*\[Epsilon][2]^2 + 541*\[Epsilon][1]^3*\[Epsilon][2]^3 + 1698*\[Epsilon][1]^2*\[Epsilon][2]^4 + 1713*\[Epsilon][1]*\[Epsilon][2]^5 + 571*\[Epsilon][2]^6))/(\[Epsilon][1]^4*\[Epsilon][2]^4*(\[Epsilon][1] + \[Epsilon][2])^4), ((\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^2*(163879*\[Epsilon][1]^6 + 491637*\[Epsilon][1]^5*\[Epsilon][2] + 159882*\[Epsilon][1]^4*\[Epsilon][2]^2 - 499631*\[Epsilon][1]^3*\[Epsilon][2]^3 + 159882*\[Epsilon][1]^2*\[Epsilon][2]^4 + 491637*\[Epsilon][1]*\[Epsilon][2]^5 + 163879*\[Epsilon][2]^6))/(209018880*\[Epsilon][1]^5*\[Epsilon][2]^5*(\[Epsilon][1] + \[Epsilon][2])^5), (5246819*\[Epsilon][1]^12 + 31480914*\[Epsilon][1]^11*\[Epsilon][2] + 83618655*\[Epsilon][1]^10*\[Epsilon][2]^2 + 129518230*\[Epsilon][1]^9*\[Epsilon][2]^3 + 129487374*\[Epsilon][1]^8*\[Epsilon][2]^4 + 87130170*\[Epsilon][1]^7*\[Epsilon][2]^5 + 64799751*\[Epsilon][1]^6*\[Epsilon][2]^6 + 87130170*\[Epsilon][1]^5*\[Epsilon][2]^7 + 129487374*\[Epsilon][1]^4*\[Epsilon][2]^8 + 129518230*\[Epsilon][1]^3*\[Epsilon][2]^9 + 83618655*\[Epsilon][1]^2*\[Epsilon][2]^10 + 31480914*\[Epsilon][1]*\[Epsilon][2]^11 + 5246819*\[Epsilon][2]^12)/(75246796800*\[Epsilon][1]^6*\[Epsilon][2]^6*(\[Epsilon][1] + \[Epsilon][2])^6)}
+    (0. s)
+
+=== Input cell 13 ===
+(* the genus-general evaluator (hv_lib4.m): known values up to genus 4 (lambda_1^9 on M_4 = 1/113400 by nine-fold Mumford, the
+   Getzler-Pandharipande value la ...
+--> {461, True}
+    (12. s)
+
+=== Input cell 14 ===
+(* the normalised genus-4 Hodge class for wB as coefficients of lambda_1^k1 ch_3^k3 *)
+Table[{c[[1]], Factor[c[[2]] /. usubOf[wB]]}, {c, hodgeClass4[4]}] // Tab ...
+--> TableForm[{{{9, 0}, 1/(1728*\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{8, 0}, 0}, {{7, 0}, 0}, {{6, 1}, -1/24*1/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{6, 0}, 1/(48*\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2)}, {{5, 1}, 0}, {{5, 0}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^2/(24*\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{4, 1}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)/(4*\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{4, 0}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^4/(24*\[Epsilon][1]^4*\[Epsilon][2]^4*(\[Epsilon][1] + \[Epsilon][2])^4)}, {{3, 2}, -8/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{3, 1}, 2/(\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2)}, {{3, 0}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^3/(6*\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{2, 2}, 0}, {{2, 1}, (2*(\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^2)/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{2, 0}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)^2/(2*\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2)}, {{1, 2}, (12*(\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2))/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{1, 1}, (2*(\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)*(\[Epsilon][1]^6 + 3*\[Epsilon][1]^5*\[Epsilon][2] + 3*\[Epsilon][1]^4*\[Epsilon][2]^2 + \[Epsilon][1]^3*\[Epsilon][2]^3 + 3*\[Epsilon][1]^2*\[Epsilon][2]^4 + 3*\[Epsilon][1]*\[Epsilon][2]^5 + \[Epsilon][2]^6))/(\[Epsilon][1]^4*\[Epsilon][2]^4*(\[Epsilon][1] + \[Epsilon][2])^4)}, {{1, 0}, (\[Epsilon][1]^2 + \[Epsilon][1]*\[Epsilon][2] + \[Epsilon][2]^2)/(\[Epsilon][1]*\[Epsilon][2]*(\[Epsilon][1] + \[Epsilon][2]))}, {{0, 3}, -8/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{0, 2}, 12/(\[Epsilon][1]^2*\[Epsilon][2]^2*(\[Epsilon][1] + \[Epsilon][2])^2)}, {{0, 1}, (2*(\[Epsilon][1]^6 + 3*\[Epsilon][1]^5*\[Epsilon][2] + 3*\[Epsilon][1]^4*\[Epsilon][2]^2 + \[Epsilon][1]^3*\[Epsilon][2]^3 + 3*\[Epsilon][1]^2*\[Epsilon][2]^4 + 3*\[Epsilon][1]*\[Epsilon][2]^5 + \[Epsilon][2]^6))/(\[Epsilon][1]^3*\[Epsilon][2]^3*(\[Epsilon][1] + \[Epsilon][2])^3)}, {{0, 0}, 1}}]
+    (0. s)
+
+=== Input cell 15 ===
+(* genus 2: 7 stable graphs, 27 decorated graphs with Hodge vertices; 26 t x 34 eps-ratio sample points (a few minutes) *)
+gg = 2; KMAX = kmaxFor[gg];
+preparedH ...
+R-matrix coefficients from cPP_z6.m
+R-matrix rows built to z^3; LeafCounts row0/1/2: {435, 422, 1653}
+--> {33.2698776, Null}
+    (35.7 s)
+
+=== Input cell 16 ===
+(* the sum over the decorated graphs equals F_{2,0} exactly at every sample point *)
+Union[Flatten[Table[Total[r[[2]]] - refVector[Fref20, r[[1, 1]], r[[1, 2]], ...
+--> True
+    (1.7000000000000002 s)
+
+=== Input cell 17 ===
+(* agreement with the stored run (hodge_vertex_genus2_results.m, mode B) *)
+stored2 = Get["hodge_vertex_genus2_results.m"]["B"]["graphTerms"]; Table[Together[gr ...
+--> {True, True, True, True, True, True, True}
+    (0.1 s)
+
+=== Input cell 18 ===
+(* conifold polar parts {t_c^-2, t_c^-1} (eps1 = x, eps2 = 1): everything sits in the genus-2 vertex graph *)
+tcSetup[8]; Grid[Prepend[Table[{k, preparedH2[[k]] ...
+--> {{-1/1920*(7 + 10*x^2 + 7*x^4)/x, 0}, -1/1920*(7 + 10*x^2 + 7*x^4)/x}
+    (0. s)
+
+=== Input cell 19 ===
+(* genus 3: 42 stable graphs; decorated graphs with Hodge vertices from the sidecar hv_orbits_g3.mx (or recomputed) *)
+gg = 3; KMAX = kmaxFor[gg];
+If[FileExists ...
+R-matrix coefficients from cPP_z6.m
+R-matrix rows built to z^6; LeafCounts row0/1/2: {1898, 1873, 7996}
+    (4.3 s)
+
+=== Input cell 20 ===
+(* sampling: 780 points; the sidecar hv3_samples_B.mx holds the records of the stored run (delete it to recompute; see the
+   README for the timing per point) * ...
+--> 780
+    (1.8 s)
+
+=== Input cell 21 ===
+(* the sum over the decorated graphs equals F_{3,0} exactly at every sample point *)
+Union[Flatten[Table[Total[r[[2]]] - refVector[Fref30, r[[1, 1]], r[[1, 2]], ...
+--> True
+    (88.30000000000001 s)
+
+=== Input cell 22 ===
+(* conifold frame: polar parts {t_c^-4, t_c^-3, t_c^-2, t_c^-1} (eps1 = x, eps2 = 1) *)
+tcSetup[10]; polar3 = Table[polarOf[graphTerms3[[k]], 3], {k, Length[pre ...
+    (8.8 s)
+
+=== Input cell 23 ===
+(* the genus-3 vertex graph: decomposition of its polar part over its decorated graphs (dilaton-leaf patterns) *)
+Grid[Prepend[Table[{id, OTH3["descriptions"][i ...
+--> Grid[{{"id", "dilaton leaves", "polar part"}, {{1, 1}, {{}}, {-1/161280*(1 + x)^4, (1 + x)^4/725760, (-11*(1 + x)^4)/78382080, (1 + x)^4/151165440}}, {{1, 2}, {{2}}, {0, 0, 0, 0}}, {{1, 3}, {{3}}, {(-41*(1 + x)^2*(1 + x + x^2))/161280, (-41*(1 + x)^2*(1 + x + x^2))/1451520, (41*(1 + x)^2*(1 + x + x^2))/19595520, (-41*(1 + x)^2*(1 + x + x^2))/529079040}}, {{1, 4}, {{4}}, {-1/107520*(31 + 93*x + 208*x^2 + 261*x^3 + 208*x^4 + 93*x^5 + 31*x^6)/x, -1/193536*(31 + 93*x + 208*x^2 + 261*x^3 + 208*x^4 + 93*x^5 + 31*x^6)/x, -1/2612736*(31 + 93*x + 208*x^2 + 261*x^3 + 208*x^4 + 93*x^5 + 31*x^6)/x, (31 + 93*x + 208*x^2 + 261*x^3 + 208*x^4 + 93*x^5 + 31*x^6)/(70543872*x)}}, {{1, 5}, {{5}}, {(-41*(1 + x + x^2)^2)/64512, (-533*(1 + x + x^2)^2)/580608, (-451*(1 + x + x^2)^2)/1959552, (-287*(1 + x + x^2)^2)/30233088}}, {{1, 6}, {{6}}, {(-7*x*(1 + x + x^2))/15360, (-203*x*(1 + x + x^2))/138240, (-1421*x*(1 + x + x^2))/1866240, (-4837*x*(1 + x + x^2))/50388480}}, {{1, 7}, {{7}}, {-1/9216*x^2, (-61*x^2)/82944, (-191*x^2)/279936, (-4921*x^2)/30233088}}, {{1, 8}, {{2, 2}}, {(11*(1 + x)^2*(1 + x + x^2))/11520, 0, (-11*(1 + x)^2*(1 + x + x^2))/5598720, (11*(1 + x)^2*(1 + x + x^2))/37791360}}, {{1, 9}, {{2, 3}}, {(155 + 465*x + 1021*x^2 + 1267*x^3 + 1021*x^4 + 465*x^5 + 155*x^6)/(53760*x), (155 + 465*x + 1021*x^2 + 1267*x^3 + 1021*x^4 + 465*x^5 + 155*x^6)/(241920*x), (155 + 465*x + 1021*x^2 + 1267*x^3 + 1021*x^4 + 465*x^5 + 155*x^6)/(5225472*x), (155 + 465*x + 1021*x^2 + 1267*x^3 + 1021*x^4 + 465*x^5 + 155*x^6)/(176359680*x)}}, {{1, 10}, {{2, 4}}, {(2329*(1 + x + x^2)^2)/322560, (2329*(1 + x + x^2)^2)/483840, (123437*(1 + x + x^2)^2)/156764160, (25619*(1 + x + x^2)^2)/529079040}}, {{1, 11}, {{2, 5}}, {(323*x*(1 + x + x^2))/53760, (323*x*(1 + x + x^2))/34560, (83011*x*(1 + x + x^2))/26127360, (68153*x*(1 + x + x^2))/176359680}}, {{1, 12}, {{2, 6}}, {(77*x^2)/46080, (77*x^2)/13824, (76153*x^2)/22394880, (52591*x^2)/75582720}}, {{1, 13}, {{3, 3}}, {(1501*(1 + x + x^2)^2)/322560, (1501*(1 + x + x^2)^2)/725760, (1501*(1 + x + x^2)^2)/4478976, (28519*(1 + x + x^2)^2)/1058158080}}, {{1, 14}, {{3, 4}}, {(171*x*(1 + x + x^2))/17920, (19*x*(1 + x + x^2))/2240, (2489*x*(1 + x + x^2))/967680, (247*x*(1 + x + x^2))/653184}}, {{1, 15}, {{3, 5}}, {(503*x^2)/161280, (503*x^2)/90720, (216793*x^2)/78382080, (332483*x^2)/529079040}}, {{1, 16}, {{4, 4}}, {(607*x^2)/322560, (607*x^2)/241920, (196061*x^2)/156764160, (321103*x^2)/1058158080}}, {{1, 17}, {{2, 2, 2}}, {-1/322560*(1395 + 4185*x + 9098*x^2 + 11221*x^3 + 9098*x^4 + 4185*x^5 + 1395*x^6)/x, -1/2903040*(1395 + 4185*x + 9098*x^2 + 11221*x^3 + 9098*x^4 + 4185*x^5 + 1395*x^6)/x, -1/78382080*(1395 + 4185*x + 9098*x^2 + 11221*x^3 + 9098*x^4 + 4185*x^5 + 1395*x^6)/x, -1/1058158080*(1395 + 4185*x + 9098*x^2 + 11221*x^3 + 9098*x^4 + 4185*x^5 + 1395*x^6)/x}}, {{1, 18}, {{2, 2, 3}}, {(-859*(1 + x + x^2)^2)/21504, (-859*(1 + x + x^2)^2)/64512, (-4295*(1 + x + x^2)^2)/2612736, (-4295*(1 + x + x^2)^2)/35271936}}, {{1, 19}, {{2, 2, 4}}, {(-541*x*(1
+    (0. s)
+
+=== Input cell 24 ===
+(* which stable graphs contain singular decorated graphs (expected: exactly those with a vertex of genus >= 2), and whether the
+   cancellation inside such a gr ...
+--> {{1, 1, 29}, {2, 12, 19}, {5, 10, 24}, {6, 5, 12}}
+    (0. s)
+
+=== Input cell 25 ===
+(* the terms of a few edge graphs as polynomials in XX (E1 = eps1, E2 = eps2) *)
+showTerm[term_] := Module[{tm = Together[term]}, Column[Table[Row[{"XX^", j, "  ...
+--> TableForm[{{17, {1, 1, 1}, {{1, 3}, {2, 3}}, Column[{Row[{"XX^", 0, " : ", (81*E1^5*E2 - 72*E1^4*E2^2 + 178*E1^3*E2^3 - 72*E1^2*E2^4 + 81*E1*E2^5 + 59049*E1^6*y + 4374*E1^5*E2*y + 173259*E1^4*E2^2*y + 9612*E1^3*E2^3*y + 173259*E1^2*E2^4*y + 4374*E1*E2^5*y + 59049*E2^6*y + 59049*E1^5*E2*y^2 - 52488*E1^4*E2^2*y^2 + 129762*E1^3*E2^3*y^2 - 52488*E1^2*E2^4*y^2 + 59049*E1*E2^5*y^2)/(136048896*E1*E2*(1 + 27*y)^2)}], Row[{"XX^", 1, " : ", ((E1^2 + E2^2)^3*(-1 + 216*y))/(62208*E1*E2*(1 + 27*y)^2)}], Row[{"XX^", 2, " : ", ((E1^2 + E2^2)^3*(-2 + 189*y))/(27648*E1*E2*(1 + 27*y)^2)}]}]}, {18, {0, 1, 1}, {{1, 2}, {1, 3}, {1, 3}}, Column[{Row[{"XX^", 0, " : ", (27*E1^4 + 144*E1^3*E2 + 94*E1^2*E2^2 + 144*E1*E2^3 + 27*E2^4 + 9477*E1^4*y + 3888*E1^3*E2*y + 20034*E1^2*E2^2*y + 3888*E1*E2^3*y + 9477*E2^4*y)/(3779136*(1 + 27*y))}], Row[{"XX^", 1, " : ", (-64*E1^2*E2^2 - 8019*E1^4*y + 3888*E1^3*E2*y - 19494*E1^2*E2^2*y + 3888*E1*E2^3*y - 8019*E2^4*y + 1909251*E1^4*y^2 + 104976*E1^3*E2*y^2 + 3771846*E1^2*E2^2*y^2 + 104976*E1*E2^3*y^2 + 1909251*E2^4*y^2)/(68024448*y*(1 + 27*y))}], Row[{"XX^", 2, " : ", ((E1^2 + E2^2)*(8*E1*E2 - 972*E1^2*y + 432*E1*E2*y - 972*E2^2*y + 150903*E1^2*y^2 + 5832*E1*E2*y^2 + 150903*E2^2*y^2))/(1259712*y*(1 + 27*y))}], Row[{"XX^", 3, " : ", ((E1^2 + E2^2)^2*(-2 + 189*y))/(1152*(1 + 27*y))}]}]}, {19, {0, 1, 1}, {{1, 1}, {1, 3}, {2, 3}}, Column[{Row[{"XX^", 0, " : ", (2*E1^2*E2^2 + 729*E1^4*y + 1512*E1^2*E2^2*y + 729*E2^4*y)/(209952*(1 + 27*y))}], Row[{"XX^", 1, " : ", (2*E1^2*E2^2 - 243*E1^4*y + 54*E1^3*E2*y - 378*E1^2*E2^2*y + 54*E1*E2^3*y - 243*E2^4*y + 72171*E1^4*y^2 + 1458*E1^3*E2*y^2 + 145800*E1^2*E2^2*y^2 + 1458*E1*E2^3*y^2 + 72171*E2^4*y^2)/(1889568*y*(1 + 27*y))}], Row[{"XX^", 2, " : ", ((E1^2 + E2^2)*(8*E1*E2 - 2430*E1^2*y + 432*E1*E2*y - 2430*E2^2*y + 347733*E1^2*y^2 + 5832*E1*E2*y^2 + 347733*E2^2*y^2))/(2519424*y*(1 + 27*y))}], Row[{"XX^", 3, " : ", ((E1^2 + E2^2)^2*(-2 + 189*y))/(1152*(1 + 27*y))}]}]}, {20, {0, 1, 1}, {{1, 1}, {1, 2}, {1, 3}}, Column[{Row[{"XX^", 0, " : ", (-81*E1^4 - 72*E1^3*E2 - 206*E1^2*E2^2 - 72*E1*E2^3 - 81*E2^4 + 2187*E1^4*y - 1944*E1^3*E2*y + 3186*E1^2*E2^2*y - 1944*E1*E2^3*y + 2187*E2^4*y)/(3779136*(1 + 27*y))}], Row[{"XX^", 1, " : ", (-20*E1^2*E2^2 - 7290*E1^4*y + 3402*E1^3*E2*y - 15660*E1^2*E2^2*y + 3402*E1*E2^3*y - 7290*E2^4*y + 334611*E1^4*y^2 + 91854*E1^3*E2*y^2 + 654642*E1^2*E2^2*y^2 + 91854*E1*E2^3*y^2 + 334611*E2^4*y^2)/(34012224*y*(1 + 27*y))}], Row[{"XX^", 2, " : ", ((E1^2 + E2^2)*(28*E1*E2 - 4617*E1^2*y + 1512*E1*E2*y - 4617*E2^2*y + 52488*E1^2*y^2 + 20412*E1*E2*y^2 + 52488*E2^2*y^2))/(2519424*y*(1 + 27*y))}], Row[{"XX^", 3, " : ", -1/20736*((E1^2 + E2^2)^2*(1 + 108*y))/(y*(1 + 27*y))}]}]}, {21, {0, 0, 1}, {{1, 2}, {1, 2}, {1, 3}, {2, 3}}, Column[{Row[{"XX^", 0, " : ", (E1*E2*(36*E1^2 - 8*E1*E2 + 36*E2^2 + 8019*E1^2*y + 1296*E1*E2*y + 8019*E2^2*y))/629856}], Row[{"XX^", 1, " : ", (E1*E2*(4*E1*E2 + 81*E1^2*y + 324*E1*E2*y + 81*E2^2*y + 59049*E1^2*y^2 + 5832*E1*E2*y^2 + 59049*E2^2*y^2))/(314928*y)}],
+    (0.1 s)
+
+=== Input cell 26 ===
+(* genus 4 is computed on the cluster with cluster_genus4_hodge/ (379 stable graphs; the same code: hv_lib4.m generalises the Hodge
+   integrals to genus 4 with ...
+genus-4 result files not present in G:\My Drive\Projects\Old\refGW\hodge_vertex -- run cluster_genus4_hodge/ on the cluster and copy back {hodge_stablegraphs_genus4.m, hodge_graphterms_genus4.m}
+    (0. s)
+
+=== Input cell 27 ===
+(* total polar part {t_c^-6, ..., t_c^-1} versus the gap coefficient (-3)^3 5! [t^8] t^2/(4 sinh(e1 t/2) sinh(e2 t/2)) *)
+If[ValueQ[stable4], {Factor /@ Total[s ...
+    (0. s)
+
+=== Input cell 28 ===
+(* which stable graphs are regular at the conifold, and which contain singular decorated graphs *)
+If[ValueQ[stable4], regular4 = Select[Range[Length[stable4]], ...
+    (0. s)
+
+=== Input cell 29 ===
+(* the total F_{4,0} agrees with the untwisted genus-4 cluster result (q -> 0 part of genRmat_F40_cluster_result.m) *)
+If[ValueQ[stable4] && FileExistsQ["ref/ge ...
+    (0. s)
+
+headless run finished

@@ -1,0 +1,142 @@
+% s02a_setup (abridged version). Set-up, part 1: target, mirror data, colours, leaves, conifold coordinate, special functions.
+\section{Set-up: local \texorpdfstring{$\bbP^2$}{P2}, mirror data and the graph sum}
+\label{sec:set}
+
+This section fixes the objects, following \Lg{Section~2}. The rows, the factors and the decoration sum are defined by explicit formulas, and the statements of \cref{sec:lea,sec:van,sec:val} and of the first half of \cref{sec:reg} are statements about these formulas.
+
+%-------------------------------------------------------------------------------
+\subsection{Target, tori and invariants}
+\label{sec:set-target}
+
+Let $Z\coloneqq \KPtwo\times\bbC^2$, with projection $\mathrm{pr}:Z\to\bbP^2$, and let $\epsilon_1,\epsilon_2$ be the equivariant parameters of the $\bbC^2$ factor. Throughout, $E\coloneqq\epsilon_1+\epsilon_2$ and $\epsilon_1\epsilon_2E\neq 0$; the function of \cite{BS} defined in \eqref{eq:set-gens} is always written $\Ey$, with its argument. We put $\bbK\coloneqq\bbQ(\epsilon_1,\epsilon_2)$ and $\Kal\coloneqq\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$. The maximal torus $\Tmax\simeq(\bbC^\times)^5$ acts on $Z$ through an action on $\bbC^6$ with weights $(\alpha_0,\alpha_1,\alpha_2,0,-\epsilon_1,-\epsilon_2)$. It lifts the action on $\bbP^2$ with fixed points $P_0,P_1,P_2$, and $H\coloneqq\mathrm{pr}^*c_1^{\Tmax}(\cO_{\bbP^2}(1))$ satisfies $H|_{P_i}=-\alpha_i$ and $\prod_{i}(H+\alpha_i)=0$. The tangent weights at $P_i$, for $\{i,j,k\}=\{0,1,2\}$, are
+\[
+\wts_i\coloneqq\{3\alpha_i,\ \alpha_j-\alpha_i,\ \alpha_k-\alpha_i,\ -\epsilon_1,\ -\epsilon_2\},
+\qquad \wprod_i\coloneqq\prod_{a\in\wts_i}a ,
+\]
+and the equivariant pairing is $\eta(\phi,\phi')\coloneqq\sum_{k}\phi|_{P_k}\phi'|_{P_k}/\wprod_k$, with Gram matrix $\eta_{ab}=\eta(H^a,H^b)$ and inverse $\eta^{ab}$. The \emph{fibrewise torus} $\TF\subset\Tmax$ is the two-dimensional subtorus given by $\alpha=\alpha^*\coloneqq(E/3)(1,1,1)$. It acts trivially on $\bbP^2$. The weights of the normal bundle $\Ntw\coloneqq\cO(-3)_{3\alpha}\oplus\cO_{-\epsilon_1}\oplus\cO_{-\epsilon_2}$ on $\TF$ are recorded by the triple $\bw\coloneqq(E,-\epsilon_1,-\epsilon_2)$.
+
+For $g\geq 2$ and $d\geq 0$, the invariants $\GW_{g,d}^{\Tmax}$ are the degrees of the virtual class of $\Mbar_g(Z,d)$ defined by virtual localisation, as in \cite{BS}. On $\TF$ the same definition reads $\GW_{g,d}^{\TF}=\int_{[\Mbar_g(\bbP^2,d)]^{\vir}}e_{\TF}(R\pi_*f^*\Ntw)^{-1}$, see \cref{prop:gen-poly}. The generating series are
+\begin{equation}
+\label{eq:set-series}
+\sF_g^{\Tmax}\coloneqq\sum_{d\geq 0}\cQ^d\,\GW_{g,d}^{\Tmax},\qquad
+\sF_g^{\TF}\coloneqq\sum_{d\geq 0}\cQ^d\,\GW_{g,d}^{\TF}.
+\end{equation}
+
+\begin{rmk}[The term $d=0$; {\Lg{Remark~2.1}}]
+\label{rmk:set-d0}
+The series \eqref{eq:set-series} include the term $d=0$, which is the reading under which the identity with the stable graph sum holds on the nose. With a sum over $d>0$ only, as in the definition of the generating series in \cite{BS}, the two series differ by the constant $\GW_{g,0}^{\TF}\in\bbK$ of \cref{thm:spe-main}\textup{(b)}.
+\end{rmk}
+
+The quantum product $\qprod$ at a point $\ft=\sum_a\ft_aH^a$, with $\cQ\coloneqq\re^{\ft_1}$, its idempotents $\eid_i$, the numbers $\Delta_i\coloneqq\eta(\eid_i,\eid_i)^{-1}$, the normalised idempotents $\fid_i\coloneqq\Delta_i^{1/2}\eid_i$, the fundamental solution $\Fsol(\ft,z)$ and the small $J$-function $\Jsm(\cQ,z)$ have their usual definitions, with the conventions of \Lg{Section~2.1}.
+
+%-------------------------------------------------------------------------------
+\subsection{Mirror data}
+\label{sec:set-mirror}
+
+Put $\theta\coloneqq y\,\dd/\dd y$, $\xi\coloneqq1+27y$ and $X\coloneqq1/\xi$, so that $\theta=(\xi-1)\,\dd/\dd\xi$. The $I$-function of $Z$ and the operator of the equivariant Picard--Fuchs equation $\LPF I=0$ are
+\begin{equation}
+\label{eq:set-I}
+I(y,z)\coloneqq z\,y^{H/z}\sum_{d\geq0}y^d\,\frac{\prod_{m=0}^{3d-1}(-3H-mz)}{\prod_{j=0}^{2}\prod_{m=1}^{d}(H+\alpha_j+mz)},\qquad
+\LPF\coloneqq\prod_{j=0}^{2}(z\theta+\alpha_j)+z^3y\prod_{j=0}^{2}(3\theta+j).
+\end{equation}
+Let $I^{[a]}_n(y)$ be the coefficient of $H^az^{-n}$ in $I(y,z)$, and put $a_d\coloneqq(3d)!/(d!)^3$. Then $I_0^{[1]}=\log y+\gI$ with $\gI\in y\bbQ\fps{y}$ independent of $\alpha$, and the \emph{mirror map} is $\cQ(y)\coloneqq\re^{I_0^{[1]}(y)}=y\,\re^{\gI(y)}$, so that $\Kal\fps{\cQ}=\Kal\fps{y}$. Through it, $\sF_g^{\TF}(y)\coloneqq\sum_{d\geq0}\cQ(y)^d\,\GW_{g,d}^{\TF}$ is an element of $\bbK\fps{y}$. The generators of \cite{BS} are the following functions on $|y|<1/27$:
+\begin{equation}
+\label{eq:set-gens}
+\begin{gathered}
+A\coloneqq\theta\log\cQ=\sum_{d\geq0}a_d(-y)^d={}_2F_1\big(\tfrac13,\tfrac23;1;-27y\big),\qquad F\coloneqq\theta\log A,\qquad X=\frac{1}{1+27y},\\
+D\coloneqq\theta\big(A^{-1}\theta I_1^{[2]}\big),\qquad
+\Ey\coloneqq\frac{\theta\big(A^{-1}\theta I_1^{[1]}\big)}{e_1(\alpha)}.
+\end{gathered}
+\end{equation}
+The letters $\sfF$, $\sfA$ denote indeterminates whose values are $F$, $A$, and $\thQ\coloneqq\cQ\,\dd/\dd\cQ=A^{-1}\theta$. Further,
+\begin{equation}
+\label{eq:set-LW}
+\Lhat(Y)\coloneqq\prod_{j=0}^{2}(Y+\alpha_j)+27yY^3,\qquad W(Y)\coloneqq e_1(\alpha)Y^2+2e_2(\alpha)Y+3e_3(\alpha),
+\end{equation}
+with $e_k(\alpha)$ the elementary symmetric functions. At generic weights, $Y_i$ denotes the root of $\Lhat$ with $Y_i(0)=-\alpha_i$, and $\mathsf{u}_i$ is a primitive with $\theta\mathsf{u}_i=Y_i$. The \emph{superpotential} and the primitive form are
+\begin{equation}
+\label{eq:set-spot}
+\cW(y,\alpha,q)\coloneqq\sum\nolimits_{i}(q_i-\alpha_i\log q_i)+(q_0q_1q_2/y)^{1/3},\qquad
+\dd\Omega\coloneqq\tfrac13\,\dd\log q_0\,\dd\log q_1\,\dd\log q_2,
+\end{equation}
+and $\Asym$ is the normalised formal Laplace expansion of \cite{BS} at a non-degenerate critical point (\cref{sec:row-sp}).
+
+%-------------------------------------------------------------------------------
+\subsection{Colours on the fibrewise torus}
+\label{sec:set-colours}
+
+On $\TF$ put $t\coloneqq y^{1/3}$, $\omega\coloneqq\re^{2\pi\ri/3}$ and, for $i=0,1,2$, $t_i\coloneqq\omega^it$. Then
+\begin{equation}
+\label{eq:set-colours}
+Y_i\coloneqq-\frac{E/3}{1+3t_i},\qquad
+v_i\coloneqq\frac{1+3t_i}{Et_i}=\frac{3}{E+3Y_i},\qquad
+V_i\coloneqq Ev_i ,\qquad W(Y_i)=\frac{E}{v_i^2}=\frac E9(3Y_i+E)^2 .
+\end{equation}
+The $Y_i$ are the three roots of $\Lhat$ at $\alpha=\alpha^*$. We define
+\begin{equation}
+\label{eq:set-DeltaTF}
+\Delta_i\coloneqq3\epsilon_1\epsilon_2W(Y_i)=\frac{3\epsilon_1\epsilon_2E}{v_i^2},\qquad
+\Delta_i^{1/2}\coloneqq\frac{\sqrt{3\epsilon_1\epsilon_2E}}{v_i}.
+\end{equation}
+At generic weights $\Delta_i=3\epsilon_1\epsilon_2W_i$ is a statement, proved in \Lg{Lemma~4.20}; here \eqref{eq:set-DeltaTF} is a definition. Since $\xi=(1+3t)(1-3t+9t^2)$, and $1+3\omega^it=1-\omega^i\neq0$ at $t=-1/3$ for $i=1,2$, colour $0$ on the real branch $t\to-1/3$ is the unique colour with $Y_i\to\infty$ as $y\to-1/27$. We call it the \emph{singular colour}, and from now on $t$ is on this branch near $\xi=0$, that is $t=-(1-\xi)^{1/3}/3$ for $\xi$ small. The letter $z$ denotes the argument of a row. The letters $\psi,\psi',w$ denote edge variables: a half-edge with variable $\psi$ carries the row at $z=-\psi$.
+
+%-------------------------------------------------------------------------------
+\subsection{Leaves}
+\label{sec:set-leaves}
+
+For $j\in\bbZ\setminus\{0\}$ put $\lf_j(\psi)\coloneqq1/(E-j\psi)$, and put $\lf_0\coloneqq1/E$. Further, $\Lsp_m\coloneqq\mathrm{span}\{\lf_1,\ldots,\lf_m\}$, $\Lsp_0\coloneqq0$, $\Lsp_m^{+}\coloneqq\bbC+\Lsp_m$. Two elementary identities are used repeatedly:
+\begin{equation}
+\label{eq:set-lam}
+-\psi\,\lf_j=\frac{1-E\lf_j}{j},\qquad (E-N\psi)\,\lf_j=\frac Nj+\Big(1-\frac Nj\Big)E\lf_j\qquad(j\neq0);\quad\text{in particular }(E-N\psi)\lf_N=1 .
+\end{equation}
+The base point and the dilaton tail are
+\[
+\qo\coloneqq E-E^2\lf_1=-\frac{E\psi}{E-\psi},\qquad \Tdil\coloneqq\qo+\psi=-\frac{\psi^2}{E-\psi}.
+\]
+
+%-------------------------------------------------------------------------------
+\subsection{The conifold coordinate and the unit \texorpdfstring{$\rho$}{rho}}
+\label{sec:set-coord}
+
+Let $\Ltwo\coloneqq\theta^2+3y(3\theta+1)(3\theta+2)=\xi\theta^2+27y\theta+6y$. Its exponents at $\xi=0$ are $(0,0)$. Let $\wcf$ be the solution analytic at $\xi=0$ with $\wcf(0)=1$, and let $\tc$ be defined by $\theta\tc=-\wcf$, $\tc(\xi=0)=0$. Put $\ccf\coloneqq\theta\tc=-\wcf$. For any non-vanishing section $\cone(y)$ put
+\[
+\Fc\coloneqq\theta\log\cone,\qquad\dtwo\coloneqq\frac{E(\cone^{-2}-1)}{2\xi}.
+\]
+
+\begin{lem}[{\Lg{Lemma~2.2}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:set-coord}
+\begin{description}
+\item[(a)] $\tc=\xi+O(\xi^2)$ is an analytic coordinate at $\xi=0$, and $\ccf(0)=-1$. At $\cone=\ccf$, $\cone^{-1}$, $\Fc$ and $\dtwo$ are analytic at $\xi=0$; for $\dtwo$ this holds because $\cone(0)^{-2}=1$.
+\item[(b)] On the real branch $t=-(1-\xi)^{1/3}/3$ one has $v_0=-\tc/E+O(\tc^2)$. Hence
+$\rho\coloneqq-Ev_0/\tc$
+is an analytic unit with $\rho(0)=1$, and $\rho^2\Delta_0=3\epsilon_1\epsilon_2E^3/\tc^2$.
+\end{description}
+\end{lem}
+
+The proof is a direct computation. The normalisation of $\tc$ enters every exact constant through $\rho(0)=1$ and through the identity \eqref{eq:row-zinf}; the statements below are not stable under a non-linear change of the coordinate with the same leading term \Lg{Remark~2.3}.
+
+%-------------------------------------------------------------------------------
+\subsection{Special functions}
+\label{sec:set-special}
+
+Let
+\[
+\Theta(x)\coloneqq\exp\sum_{m\geq1}\frac{B_{2m}\,x^{2m-1}}{2m(2m-1)},\qquad
+\Theta(z,x)\coloneqq\exp\Big[-\sum_{k\geq1}\frac{B_{k+1}(x)(-z)^k}{k(k+1)}\Big],
+\]
+with $B_n(x)$ the Bernoulli polynomials, so that $\Theta(-x)=1/\Theta(x)$, $\Theta(z,0)=\Theta(z)$ and $\Theta(z,-m)=\Theta(z)/\prod_{j=1}^{m}(1-jz)$ for integers $m\geq0$. For a multiset $\mathsf{v}$ of non-zero weights put $h_{\mathsf{v}}(z)\coloneqq\prod_{a\in\mathsf{v}}\Theta(-z/a)$. In particular
+\begin{equation}
+\label{eq:set-hw}
+\hb(z)=\Theta(-z/E)\,\Theta(z/\epsilon_1)\,\Theta(z/\epsilon_2),\qquad\hb(z)\hb(-z)=1,
+\end{equation}
+and we put $\Nz(z)\coloneqq\sqrt{\epsilon_1\epsilon_2}\,\Theta(-z/\epsilon_1)\Theta(-z/\epsilon_2)$. The numbers $r_l$ are defined by the recursion
+\begin{equation}
+\label{eq:set-rec}
+r_{-1}=0,\quad r_0=1,\qquad 27(m+1)\,r_{m+1}=3(3m^2+3m+1)\,r_m-m^3\,r_{m-1}\quad(m\geq0),
+\end{equation}
+so that $r_0,r_1,r_2,r_3=1,\frac19,\frac2{81},\frac{14}{2187}$. The closed-form series is
+\begin{equation}
+\label{eq:set-S}
+\Srow(v,z)\coloneqq\sum_{l\geq0}\frac{r_l\,(vz)^l}{\prod_{j=1}^{l+1}(1+jz/E)}.
+\end{equation}
+Each $z$-coefficient of $\Srow$ is a polynomial in $v$, and $[z^k]\Srow$ has degree $\leq k$ in $v$.

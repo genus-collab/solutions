@@ -1,0 +1,33 @@
+﻿G 3 T (2, 2) k0 2 delta -2 base 0 resp==pred True
+G 3 T (2, 2, 2) k0 2 delta -1 base 0 resp==pred True
+G 3 T (3, 3) k0 3 delta 0 base 0 resp==pred True
+G 3 T (2, 3) k0 2 delta -1 base 0 resp==pred True
+G 3 T (2, 3) k0 3 delta -1 base 0 resp==pred True
+G 3 T (4,) k0 4 delta -1 base 0 resp==pred True
+G 2 T (2,) k0 2 delta -1 base 0 resp==pred True
+G 2 T (2, 2) k0 2 delta 0 base 0 resp==pred True
+G 4 T (2, 2) k0 2 delta -4 base 0 resp==pred True
+G 4 T (3, 3) k0 3 delta -2 base 0 resp==pred True
+G 4 T (2, 2, 3) k0 2 delta -2 base 0 resp==pred True
+G 4 T (2, 2, 3) k0 3 delta -2 base 0 resp==pred True
+G 4 T (4, 4) k0 4 delta 0 base 0 resp==pred True
+G 3 T (5, 5) k0 5 delta 4 base 0 resp==pred True
+G 4 T (2, 5) k0 2 delta -1 base 0 resp==pred True
+G 4 T (2, 5) k0 5 delta -1 base 0 resp==pred True
+G 3 T (2, 2) k0 2 delta -2 base 0 resp==pred True
+G 3 T (2, 2, 2) k0 2 delta -1 base 0 resp==pred True
+G 3 T (3, 3) k0 3 delta 0 base 0 resp==pred True
+G 3 T (2, 3) k0 2 delta -1 base 0 resp==pred True
+G 3 T (2, 3) k0 3 delta -1 base 0 resp==pred True
+G 3 T (4,) k0 4 delta -1 base 0 resp==pred True
+G 2 T (2,) k0 2 delta -1 base 0 resp==pred True
+G 2 T (2, 2) k0 2 delta 0 base 0 resp==pred True
+G 4 T (2, 2) k0 2 delta -4 base 0 resp==pred True
+G 4 T (3, 3) k0 3 delta -2 base 0 resp==pred True
+G 4 T (2, 2, 3) k0 2 delta -2 base 0 resp==pred True
+G 4 T (2, 2, 3) k0 3 delta -2 base 0 resp==pred True
+G 4 T (4, 4) k0 4 delta 0 base 0 resp==pred True
+G 3 T (5, 5) k0 5 delta 4 base 0 resp==pred True
+G 4 T (2, 5) k0 2 delta -1 base 0 resp==pred True
+G 4 T (2, 5) k0 5 delta -1 base 0 resp==pred True
+tests 32 failures 0

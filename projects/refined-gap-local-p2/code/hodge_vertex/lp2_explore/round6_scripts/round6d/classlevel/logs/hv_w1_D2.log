@@ -1,0 +1,5 @@
+Hodge-vertex form with legs ((1, 3, 8), (Fraction(5, 2), Fraction(-3, 7))) (1, 1) D 2 tests 6 nonzero 6 mismatch 0 secs 0.1
+Hodge-vertex form with legs ((1, 3, 8), (Fraction(5, 2), Fraction(-3, 7))) (1, 2) D 2 tests 30 nonzero 27 mismatch 0 secs 0.6
+Hodge-vertex form with legs ((1, 3, 8), (Fraction(5, 2), Fraction(-3, 7))) (2, 0) D 2 tests 1 nonzero 1 mismatch 0 secs 0.0
+Hodge-vertex form with legs ((1, 3, 8), (Fraction(5, 2), Fraction(-3, 7))) (2, 1) D 2 tests 15 nonzero 14 mismatch 0 secs 0.4
+Hodge-vertex form with legs ((1, 3, 8), (Fraction(5, 2), Fraction(-3, 7))) (2, 2) D 2 tests 99 nonzero 95 mismatch 0 secs 9.5

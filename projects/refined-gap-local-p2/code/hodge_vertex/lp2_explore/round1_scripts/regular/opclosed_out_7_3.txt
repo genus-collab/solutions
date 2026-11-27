@@ -1,0 +1,16 @@
+n= 1: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n= 2: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n= 3: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n= 4: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n= 5: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n= 6: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n= 7: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n= 8: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n= 9: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n=10: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n=11: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n=12: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n=13: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n=14: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+n=15: Op1 closed form ok; Op2 closed form ok; Op3 closed form ok
+closed forms: all exact for n = 1..15  (e1,e2) = (7,3)

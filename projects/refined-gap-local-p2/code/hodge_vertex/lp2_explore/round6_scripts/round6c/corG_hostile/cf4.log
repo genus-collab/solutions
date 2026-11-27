@@ -1,0 +1,9 @@
+g 4 field Fp eps 3 7 frame hodge perturb None time 559.1
+ total val -6 prec 21  expected leading -7840967/7840
+ leading coeff (xi^-6) == expected: True
+ polar part of G_g - (-3)^(g-1) beta/t_c^(2g-2), all zero: True  first bad: []
+ t_c^0 coeff of difference (rat.recon.): 444742208465767/1133953943270400
+ per colouring: edge-graph terms with negative valuation: 0 []  #terms 67047
+ vertex col 0: val -6  minus polar term: polar zero True
+ vertex col (1,) val 0
+ vertex col (2,) val 0

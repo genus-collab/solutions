@@ -1,0 +1,21 @@
+file /g/My Drive/Projects/Old/refGW/cluster_genus4_hodge/cPP_z9.m: 10 coefficients z^0..z^9; (e1,e2) = (1,1)
+k=0: Sqrt3^1; denominator (E+3L)^m with m = 1, max L-power elsewhere 0; interp verified on 8 extra points: yes; s-exponents 1..1; deg N_k = 0 (<= 0: yes); FORM OK
+   S_0(s) = (1/12) s^1
+k=1: Sqrt3^-1; denominator (E+3L)^m with m = 2, max L-power elsewhere 1; interp verified on 8 extra points: yes; s-exponents 1..2; deg N_k = 1 (<= 1: yes); FORM OK
+   S_1(s) = (-1/32) s^1 + (1/108) s^2
+k=2: Sqrt3^-1; denominator (E+3L)^m with m = 3, max L-power elsewhere 2; interp verified on 8 extra points: yes; s-exponents 1..3; deg N_k = 2 (<= 2: yes); FORM OK
+   S_2(s) = (25/1536) s^1 + (-11/864) s^2 + (1/486) s^3
+k=3: Sqrt3^-1; denominator (E+3L)^m with m = 4, max L-power elsewhere 3; interp verified on 8 extra points: yes; s-exponents 1..4; deg N_k = 3 (<= 3: yes); FORM OK
+   S_3(s) = (-35/4096) s^1 + (67/4608) s^2 + (-23/3888) s^3 + (7/13122) s^4
+k=4: Sqrt3^-1; denominator (E+3L)^m with m = 5, max L-power elsewhere 4; interp verified on 8 extra points: yes; s-exponents 1..5; deg N_k = 4 (<= 4: yes); FORM OK
+   S_4(s) = (553/131072) s^1 + (-571/36864) s^2 + (251/20736) s^3 + (-91/34992) s^4 + (2/59049) s^5
+k=5: Sqrt3^-1; denominator (E+3L)^m with m = 6, max L-power elsewhere 5; interp verified on 8 extra points: yes; s-exponents 1..6; deg N_k = 5 (<= 5: yes); FORM OK
+   S_5(s) = (-2079/1048576) s^1 + (6275/393216) s^2 + (-3583/165888) s^3 + (4669/559872) s^4 + (-59/236196) s^5 + (-110/531441) s^6
+k=6: Sqrt3^-1; denominator (E+3L)^m with m = 7, max L-power elsewhere 6; interp verified on 8 extra points: yes; s-exponents 1..7; deg N_k = 6 (<= 6: yes); FORM OK
+   S_6(s) = (50765/50331648) s^1 + (-50893/3145728) s^2 + (7067/196608) s^3 + (-99785/4478976) s^4 + (4361/3779136) s^5 + (4565/2125764) s^6 + (-5380/14348907) s^7
+k=7: Sqrt3^-1; denominator (E+3L)^m with m = 8, max L-power elsewhere 7; interp verified on 8 extra points: yes; s-exponents 1..8; deg N_k = 7 (<= 7: yes); FORM OK
+   S_7(s) = (-80795/134217728) s^1 + (7379357/452984832) s^2 + (-814129/14155776) s^3 + (7721903/143327232) s^4 + (-129985/30233088) s^5 + (-458975/34012224) s^6 + (49765/9565938) s^7 + (-67060/129140163) s^8
+k=8: Sqrt3^-1; denominator (E+3L)^m with m = 9, max L-power elsewhere 8; interp verified on 8 extra points: yes; s-exponents 1..9; deg N_k = 8 (<= 8: yes); FORM OK
+   S_8(s) = (7421843/25769803776) s^1 + (-59277241/3623878656) s^2 + (183231221/2038431744) s^3 + (-140647157/1146617856) s^4 + (13708187/967458816) s^5 + (18164575/272097792) s^6 + (-19584545/459165024) s^7 + (2397395/258280326) s^8 + (-724640/1162261467) s^9
+k=9: Sqrt3^-1; denominator (E+3L)^m with m = 10, max L-power elsewhere 9; interp verified on 8 extra points: yes; s-exponents 1..10; deg N_k = 9 (<= 9: yes); FORM OK
+   S_9(s) = (-323323/68719476736) s^1 + (1267055089/77309411328) s^2 + (-2258051893/16307453952) s^3 + (14784745619/55037657088) s^4 + (-334441093/7739670528) s^5 + (-2497749485/8707129344) s^6 + (110285965/408146688) s^7 + (-397548445/4132485216) s^8 + (16213820/1162261467) s^9 + (-54242720/94143178827) s^10

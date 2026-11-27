@@ -1,0 +1,103 @@
+e1 = 7, e2 = 3, E = 10; z-orders 0..9; s-precision 7; leaf tests k = 0..3
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+XX(s) = -2/9, 2/27, 10/243, 14/729, 16/2187, 128/59049, 112/177147   (XX(0) must be -2/9)
+rows built
+(A) symplecticity Sum_{p+q=n} (-1)^q <Phat_i[p], Phat_j[q]> = delta_ij delta_n0 Delta_i, all i,j, n <= 9, exact to s^4: OK
+(B) colour 0 (singular) rows, frame B, as series in s = 1+3t:
+  row 0 (c1=1): lowest s-power 0 (known to s^6)
+    [s^0] z^0..z^4: 1, -1/10, 1/100, -1/1000, 1/10000
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 0)
+    [s^1] z^0..z^4: 0, -1/30, 1/100, -7/3000, 1/2000
+      leaf form: in span{1, 1/(E+jz), j<=2} (numerator degree 1)
+    [s^2] z^0..z^4: 0, -1/30, 11/900, -11/3000, 19/18000
+      leaf form: in span{1, 1/(E+jz), j<=3} (numerator degree 2)
+  row 1 (c1=1): lowest s-power -1 (known to s^5)
+    [s^-1] z^0..z^4: -10/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^0] z^0..z^4: 0, 1/9, -1/90, 1/900, -1/9000
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 1)
+    [s^1] z^0..z^4: 0, 1/9, -1/54, 1/300, -17/27000
+      leaf form: in span{1, 1/(E+jz), j<=2} (numerator degree 2)
+  row 1 (c1=C1cf): lowest s-power -1 (known to s^5)
+    [s^-1] z^0..z^4: 10/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^0] z^0..z^4: -20/9, -1/9, 1/90, -1/900, 1/9000
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 1)
+    [s^1] z^0..z^4: 0, -1/27, 1/90, -7/2700, 1/1800
+      leaf form: in span{1, 1/(E+jz), j<=2} (numerator degree 1)
+  row 2 (c1=1): lowest s-power -1 (known to s^5)
+    [s^-1] z^0..z^4: 100/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^0] z^0..z^4: -100/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^1] z^0..z^4: 100/9, -10/27, 1/27, -1/270, 1/2700
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 1)
+  row 2 (c1=C1cf): lowest s-power -1 (known to s^5)
+    [s^-1] z^0..z^4: -100/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^0] z^0..z^4: 100/3, 0, 0, 0, 0
+      leaf form: in span{1, 1/(E+jz), j<=0} (numerator degree 0)
+    [s^1] z^0..z^4: 100/27, -10/27, 1/27, -1/270, 1/2700
+      leaf form: in span{1, 1/(E+jz), j<=1} (numerator degree 0)
+    frame-B identity row at s^0 = E/(E+z) exactly through z^9: OK
+(C) edge factors Ehat_ij(m,n), m+n <= 8:
+  (0,0): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (0,1): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (0,2): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (1,0): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (1,1): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (1,2): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (2,0): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (2,1): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (2,2): lowest s-power over all (m,n) = 0  (known to s^4)  REGULAR
+  (M1) c1=1 [s^-1] Phat_0(-psi) = c0 + Sum_{l<=0} b_l lam_l: OK (9 spare z-orders); c0 = 0
+  (M1) c1=1 [s^-1] Phat_1(-psi) = c0 + Sum_{l<=0} b_l lam_l: OK (9 spare z-orders); c0 = -10/3
+  (M1) c1=1 [s^-1] Phat_2(-psi) = c0 + Sum_{l<=0} b_l lam_l: OK (9 spare z-orders); c0 = 100/3
+  (M1) c1=1 [s^0] Phat_0(-psi) = c0 + Sum_{l<=1} b_l lam_l: OK (8 spare z-orders); c0 = 0; b = (10)
+  (M1) c1=1 [s^0] Phat_1(-psi) = c0 + Sum_{l<=1} b_l lam_l: OK (8 spare z-orders); c0 = 10/9; b = (-100/9)
+  (M1) c1=1 [s^0] Phat_2(-psi) = c0 + Sum_{l<=1} b_l lam_l: OK (8 spare z-orders); c0 = -100/3; b = (0)
+  (M1) c1=1 [s^1] Phat_0(-psi) = c0 + Sum_{l<=2} b_l lam_l: OK (7 spare z-orders); c0 = 0; b = (-10/3, 10/3)
+  (M1) c1=1 [s^1] Phat_1(-psi) = c0 + Sum_{l<=2} b_l lam_l: OK (7 spare z-orders); c0 = 20/27; b = (-100/27, -100/27)
+  (M1) c1=1 [s^1] Phat_2(-psi) = c0 + Sum_{l<=2} b_l lam_l: OK (7 spare z-orders); c0 = 200/27; b = (1000/27, 0)
+  (M1) c1=1 [s^2] Phat_0(-psi) = c0 + Sum_{l<=3} b_l lam_l: OK (6 spare z-orders); c0 = 0; b = (-20/9, 10/9, 10/9)
+  (M1) c1=1 [s^2] Phat_1(-psi) = c0 + Sum_{l<=3} b_l lam_l: OK (6 spare z-orders); c0 = 340/729; b = (200/243, -1100/243, -700/729)
+  (M1) c1=1 [s^2] Phat_2(-psi) = c0 + Sum_{l<=3} b_l lam_l: OK (6 spare z-orders); c0 = -200/81; b = (4000/243, 2000/243, 0)
+  (M1) c1=1 [s^3] Phat_0(-psi) = c0 + Sum_{l<=4} b_l lam_l: OK (5 spare z-orders); c0 = 0; b = (-340/243, -20/81, 110/81, 70/243)
+  (M1) c1=1 [s^3] Phat_1(-psi) = c0 + Sum_{l<=4} b_l lam_l: OK (5 spare z-orders); c0 = 620/2187; b = (5800/2187, -2000/729, -5900/2187, -100/2187)
+  (M1) c1=1 [s^3] Phat_2(-psi) = c0 + Sum_{l<=4} b_l lam_l: OK (5 spare z-orders); c0 = -3200/2187; b = (-4000/729, 5000/243, -1000/2187, 0)
+  (M1) c1=1 [s^4] Phat_0(-psi) = c0 + Sum_{l<=5} b_l lam_l: OK (4 spare z-orders); c0 = 0; b = (-620/729, -580/729, 200/243, 590/729, 10/729)
+  (M1) c1=1 [s^4] Phat_1(-psi) = c0 + Sum_{l<=5} b_l lam_l: OK (4 spare z-orders); c0 = 1120/6561; b = (18400/6561, -2000/6561, -22000/6561, -6700/6561, 1100/6561)
+  (M1) c1=1 [s^4] Phat_2(-psi) = c0 + Sum_{l<=5} b_l lam_l: OK (4 spare z-orders); c0 = -5600/6561; b = (-79000/6561, 1000/81, 68000/6561, -14000/6561, 0)
+  (M2) c1=1: closed form of E_01 (constants and s^-1 part dropped) vs code difference quotient, s^0..s^4, m+n <= 8: EQUAL (225 entries)
+  (M2) c1=1: closed form of E_02 (constants and s^-1 part dropped) vs code difference quotient, s^0..s^4, m+n <= 8: EQUAL (225 entries)
+  (M1) c1=C1cf [s^-1] Phat_0(-psi) = c0 + Sum_{l<=0} b_l lam_l: OK (9 spare z-orders); c0 = 0
+  (M1) c1=C1cf [s^-1] Phat_1(-psi) = c0 + Sum_{l<=0} b_l lam_l: OK (9 spare z-orders); c0 = 10/3
+  (M1) c1=C1cf [s^-1] Phat_2(-psi) = c0 + Sum_{l<=0} b_l lam_l: OK (9 spare z-orders); c0 = -100/3
+  (M1) c1=C1cf [s^0] Phat_0(-psi) = c0 + Sum_{l<=1} b_l lam_l: OK (8 spare z-orders); c0 = 0; b = (10)
+  (M1) c1=C1cf [s^0] Phat_1(-psi) = c0 + Sum_{l<=1} b_l lam_l: OK (8 spare z-orders); c0 = -10/3; b = (100/9)
+  (M1) c1=C1cf [s^0] Phat_2(-psi) = c0 + Sum_{l<=1} b_l lam_l: OK (8 spare z-orders); c0 = 100/3; b = (0)
+  (M1) c1=C1cf [s^1] Phat_0(-psi) = c0 + Sum_{l<=2} b_l lam_l: OK (7 spare z-orders); c0 = 0; b = (-10/3, 10/3)
+  (M1) c1=C1cf [s^1] Phat_1(-psi) = c0 + Sum_{l<=2} b_l lam_l: OK (7 spare z-orders); c0 = 0; b = (-100/27, 100/27)
+  (M1) c1=C1cf [s^1] Phat_2(-psi) = c0 + Sum_{l<=2} b_l lam_l: OK (7 spare z-orders); c0 = 0; b = (1000/27, 0)
+  (M1) c1=C1cf [s^2] Phat_0(-psi) = c0 + Sum_{l<=3} b_l lam_l: OK (6 spare z-orders); c0 = 0; b = (-20/9, 10/9, 10/9)
+  (M1) c1=C1cf [s^2] Phat_1(-psi) = c0 + Sum_{l<=3} b_l lam_l: OK (6 spare z-orders); c0 = 0; b = (-800/243, 500/243, 700/729)
+  (M1) c1=C1cf [s^2] Phat_2(-psi) = c0 + Sum_{l<=3} b_l lam_l: OK (6 spare z-orders); c0 = 0; b = (2000/243, 4000/243, 0)
+  (M1) c1=C1cf [s^3] Phat_0(-psi) = c0 + Sum_{l<=4} b_l lam_l: OK (5 spare z-orders); c0 = 0; b = (-340/243, -20/81, 110/81, 70/243)
+  (M1) c1=C1cf [s^3] Phat_1(-psi) = c0 + Sum_{l<=4} b_l lam_l: OK (5 spare z-orders); c0 = 0; b = (-1600/729, -200/729, 500/243, 100/2187)
+  (M1) c1=C1cf [s^3] Phat_2(-psi) = c0 + Sum_{l<=4} b_l lam_l: OK (5 spare z-orders); c0 = 0; b = (-4000/2187, 1000/81, 5000/729, 0)
+  (M1) c1=C1cf [s^4] Phat_0(-psi) = c0 + Sum_{l<=5} b_l lam_l: OK (4 spare z-orders); c0 = 0; b = (-620/729, -580/729, 200/243, 590/729, 10/729)
+  (M1) c1=C1cf [s^4] Phat_1(-psi) = c0 + Sum_{l<=5} b_l lam_l: OK (4 spare z-orders); c0 = 0; b = (-2600/2187, -3400/2187, 3400/2187, 6500/6561, -1100/6561)
+  (M1) c1=C1cf [s^4] Phat_2(-psi) = c0 + Sum_{l<=5} b_l lam_l: OK (4 spare z-orders); c0 = 0; b = (-25000/6561, 29000/6561, 22000/2187, 16000/6561, 0)
+  (M2) c1=C1cf: closed form of E_01 (constants and s^-1 part dropped) vs code difference quotient, s^0..s^4, m+n <= 8: EQUAL (225 entries)
+  (M2) c1=C1cf: closed form of E_02 (constants and s^-1 part dropped) vs code difference quotient, s^0..s^4, m+n <= 8: EQUAL (225 entries)
+  (M3) E_10(n,m) = E_01(m,n), s^0..s^4: OK (225)
+  (M3) E_20(n,m) = E_02(m,n), s^0..s^4: OK (225)
+  (M3) E_21(n,m) = E_12(m,n), s^0..s^4: OK (225)
+  (M4) conj(E_01) = E_02: OK (225)
+  (M4) conj(E_10) = E_20: OK (225)
+  (M4) conj(E_12) = E_21: OK (225)
+  (M4) conj(E_11) = E_22: OK (225)
+  (M4) conj(E_00) = E_00: OK (225)
+  (M5) E_12(0,0)|_{s=0} = -700/3, E_11(0,0)|_{s=0} = (-1400/9 + (-700/9) w)
+TOTAL failures: 0
+done

@@ -1,0 +1,1175 @@
+R-matrix coefficients from cPP_z6.m
+R-matrix rows built to z^6; LeafCounts row0/1/2: {1898, 1873, 7996}
+worker 1/2: rows of R' = R_Z h^(-1) built to z^6; 13.0.0 for Microsoft Windows (64-bit) (December 3, 2021)
+worker 1: 390 points assigned, 390 to do
+worker 1 point 1  1
+{-, 3}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 3  1
+{-, 7}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 5  1
+{-, 13}
+ 2 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 7  1
+{-, 19}
+ 2 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 9  1
+{-, 29}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 11  1
+{-, 37}
+ 2 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 13  1
+{-, 43}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 15  1
+{-, 53}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 17  1
+{-, 61}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 19  1
+{-, 71}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 21  1
+{-, 79}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 23  1
+{-, 89}
+ 2 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 25  1
+{-, 101}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 27  1
+{-, 107}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 29  1
+{-, 113}
+ 2 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 31  1
+{-, 3}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 33  1
+{-, 7}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 35  1
+{-, 13}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 37  1
+{-, 19}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 39  1
+{-, 29}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 41  1
+{-, 37}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 43  1
+{-, 43}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 45  1
+{-, 53}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 47  1
+{-, 61}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 49  1
+{-, 71}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 51  1
+{-, 79}
+ 3 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 53  1
+{-, 89}
+ 3 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 55  1
+{-, 101}
+ 3 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 57  1
+{-, 107}
+ 3 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 59  1
+{-, 113}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 61  2
+{-, 3}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 63  2
+{-, 7}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 65  2
+{-, 13}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 67  2
+{-, 19}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 69  2
+{-, 29}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 71  2
+{-, 37}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 73  2
+{-, 43}
+ 3 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 75  2
+{-, 53}
+ 3 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 77  2
+{-, 61}
+ 3 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 79  2
+{-, 71}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 81  2
+{-, 79}
+ 3 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 83  2
+{-, 89}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 85  2
+{-, 101}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 87  2
+{-, 107}
+ 3 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 89  2
+{-, 113}
+ 3 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 91  1
+{-, 3}
+ 4 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 93  1
+{-, 7}
+ 4 in 3. s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 95  1
+{-, 13}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 97  1
+{-, 19}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 99  1
+{-, 29}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 101  1
+{-, 37}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 103  1
+{-, 43}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 105  1
+{-, 53}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 107  1
+{-, 61}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 109  1
+{-, 71}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 111  1
+{-, 79}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 113  1
+{-, 89}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 115  1
+{-, 101}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 117  1
+{-, 107}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 119  1
+{-, 113}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 121  3
+{-, 3}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 123  3
+{-, 7}
+ 4 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 125  3
+{-, 13}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 127  3
+{-, 19}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 129  3
+{-, 29}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 131  3
+{-, 37}
+ 4 in 3.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 133  3
+{-, 43}
+ 4 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 135  3
+{-, 53}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 137  3
+{-, 61}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 139  3
+{-, 71}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 141  3
+{-, 79}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 143  3
+{-, 89}
+ 4 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 145  3
+{-, 101}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 147  3
+{-, 107}
+ 4 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 149  3
+{-, 113}
+ 4 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 151  1
+{-, 3}
+ 5 in 3.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 153  1
+{-, 7}
+ 5 in 3.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 155  1
+{-, 13}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 157  1
+{-, 19}
+ 5 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 159  1
+{-, 29}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 161  1
+{-, 37}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 163  1
+{-, 43}
+ 5 in 3.2 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 165  1
+{-, 53}
+ 5 in 3.3 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 167  1
+{-, 61}
+ 5 in 3.3 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 169  1
+{-, 71}
+ 5 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 171  1
+{-, 79}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 173  1
+{-, 89}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 175  1
+{-, 101}
+ 5 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 177  1
+{-, 107}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 179  1
+{-, 113}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 181  2
+{-, 3}
+ 5 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 183  2
+{-, 7}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 185  2
+{-, 13}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 187  2
+{-, 19}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 189  2
+{-, 29}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 191  2
+{-, 37}
+ 5 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 193  2
+{-, 43}
+ 5 in 3.3 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 195  2
+{-, 53}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 197  2
+{-, 61}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 199  2
+{-, 71}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 201  2
+{-, 79}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 203  2
+{-, 89}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 205  2
+{-, 101}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 207  2
+{-, 107}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 209  2
+{-, 113}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 211  3
+{-, 3}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 213  3
+{-, 7}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 215  3
+{-, 13}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 217  3
+{-, 19}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 219  3
+{-, 29}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 221  3
+{-, 37}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 223  3
+{-, 43}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 225  3
+{-, 53}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 227  3
+{-, 61}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 229  3
+{-, 71}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 231  3
+{-, 79}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 233  3
+{-, 89}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 235  3
+{-, 101}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 237  3
+{-, 107}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 239  3
+{-, 113}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 241  4
+{-, 3}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 243  4
+{-, 7}
+ 5 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 245  4
+{-, 13}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 247  4
+{-, 19}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 249  4
+{-, 29}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 251  4
+{-, 37}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 253  4
+{-, 43}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 255  4
+{-, 53}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 257  4
+{-, 61}
+ 5 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 259  4
+{-, 71}
+ 5 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 261  4
+{-, 79}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 263  4
+{-, 89}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 265  4
+{-, 101}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 267  4
+{-, 107}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 269  4
+{-, 113}
+ 5 in 3.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 271  1
+{-, 3}
+ 6 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 273  1
+{-, 7}
+ 6 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 275  1
+{-, 13}
+ 6 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 277  1
+{-, 19}
+ 6 in 3.4 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 279  1
+{-, 29}
+ 6 in 3.5 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 281  1
+{-, 37}
+ 6 in 3.2 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 283  1
+{-, 43}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 285  1
+{-, 53}
+ 6 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 287  1
+{-, 61}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 289  1
+{-, 71}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 291  1
+{-, 79}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 293  1
+{-, 89}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 295  1
+{-, 101}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 297  1
+{-, 107}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 299  1
+{-, 113}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 301  5
+{-, 3}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 303  5
+{-, 7}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 305  5
+{-, 13}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 307  5
+{-, 19}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 309  5
+{-, 29}
+ 6 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 311  5
+{-, 37}
+ 6 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 313  5
+{-, 43}
+ 6 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 315  5
+{-, 53}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 317  5
+{-, 61}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 319  5
+{-, 71}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 321  5
+{-, 79}
+ 6 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 323  5
+{-, 89}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 325  5
+{-, 101}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 327  5
+{-, 107}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 329  5
+{-, 113}
+ 6 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 331  1
+{-, 3}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 333  1
+{-, 7}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 335  1
+{-, 13}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 337  1
+{-, 19}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 339  1
+{-, 29}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 341  1
+{-, 37}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 343  1
+{-, 43}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 345  1
+{-, 53}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 347  1
+{-, 61}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 349  1
+{-, 71}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 351  1
+{-, 79}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 353  1
+{-, 89}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 355  1
+{-, 101}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 357  1
+{-, 107}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 359  1
+{-, 113}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 361  2
+{-, 3}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 363  2
+{-, 7}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 365  2
+{-, 13}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 367  2
+{-, 19}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 369  2
+{-, 29}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 371  2
+{-, 37}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 373  2
+{-, 43}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 375  2
+{-, 53}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 377  2
+{-, 61}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 379  2
+{-, 71}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 381  2
+{-, 79}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 383  2
+{-, 89}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 385  2
+{-, 101}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 387  2
+{-, 107}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 389  2
+{-, 113}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 391  3
+{-, 3}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 393  3
+{-, 7}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 395  3
+{-, 13}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 397  3
+{-, 19}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 399  3
+{-, 29}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 401  3
+{-, 37}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 403  3
+{-, 43}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 405  3
+{-, 53}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 407  3
+{-, 61}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 409  3
+{-, 71}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 411  3
+{-, 79}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 413  3
+{-, 89}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 415  3
+{-, 101}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 417  3
+{-, 107}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 419  3
+{-, 113}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 421  4
+{-, 3}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 423  4
+{-, 7}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 425  4
+{-, 13}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 427  4
+{-, 19}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 429  4
+{-, 29}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 431  4
+{-, 37}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 433  4
+{-, 43}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 435  4
+{-, 53}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 437  4
+{-, 61}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 439  4
+{-, 71}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 441  4
+{-, 79}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 443  4
+{-, 89}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 445  4
+{-, 101}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 447  4
+{-, 107}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 449  4
+{-, 113}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 451  5
+{-, 3}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 453  5
+{-, 7}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 455  5
+{-, 13}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 457  5
+{-, 19}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 459  5
+{-, 29}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 461  5
+{-, 37}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 463  5
+{-, 43}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 465  5
+{-, 53}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 467  5
+{-, 61}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 469  5
+{-, 71}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 471  5
+{-, 79}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 473  5
+{-, 89}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 475  5
+{-, 101}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 477  5
+{-, 107}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 479  5
+{-, 113}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 481  6
+{-, 3}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 483  6
+{-, 7}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 485  6
+{-, 13}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 487  6
+{-, 19}
+ 7 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 489  6
+{-, 29}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 491  6
+{-, 37}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 493  6
+{-, 43}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 495  6
+{-, 53}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 497  6
+{-, 61}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 499  6
+{-, 71}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 501  6
+{-, 79}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 503  6
+{-, 89}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 505  6
+{-, 101}
+ 7 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 507  6
+{-, 107}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 509  6
+{-, 113}
+ 7 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 511  1
+{-, 3}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 513  1
+{-, 7}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 515  1
+{-, 13}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 517  1
+{-, 19}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 519  1
+{-, 29}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 521  1
+{-, 37}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 523  1
+{-, 43}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 525  1
+{-, 53}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 527  1
+{-, 61}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 529  1
+{-, 71}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 531  1
+{-, 79}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 533  1
+{-, 89}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 535  1
+{-, 101}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 537  1
+{-, 107}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 539  1
+{-, 113}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 541  3
+{-, 3}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 543  3
+{-, 7}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 545  3
+{-, 13}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 547  3
+{-, 19}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 549  3
+{-, 29}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 551  3
+{-, 37}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 553  3
+{-, 43}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 555  3
+{-, 53}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 557  3
+{-, 61}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 559  3
+{-, 71}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 561  3
+{-, 79}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 563  3
+{-, 89}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 565  3
+{-, 101}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 567  3
+{-, 107}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 569  3
+{-, 113}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 571  5
+{-, 3}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 573  5
+{-, 7}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 575  5
+{-, 13}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 577  5
+{-, 19}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 579  5
+{-, 29}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 581  5
+{-, 37}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 583  5
+{-, 43}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 585  5
+{-, 53}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 587  5
+{-, 61}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 589  5
+{-, 71}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 591  5
+{-, 79}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 593  5
+{-, 89}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 595  5
+{-, 101}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 597  5
+{-, 107}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 599  5
+{-, 113}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 601  7
+{-, 3}
+ 8 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 603  7
+{-, 7}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 605  7
+{-, 13}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 607  7
+{-, 19}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 609  7
+{-, 29}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 611  7
+{-, 37}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 613  7
+{-, 43}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 615  7
+{-, 53}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 617  7
+{-, 61}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 619  7
+{-, 71}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 621  7
+{-, 79}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 623  7
+{-, 89}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 625  7
+{-, 101}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 627  7
+{-, 107}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 629  7
+{-, 113}
+ 8 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 631  1
+{-, 3}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 633  1
+{-, 7}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 635  1
+{-, 13}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 637  1
+{-, 19}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 639  1
+{-, 29}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 641  1
+{-, 37}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 643  1
+{-, 43}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 645  1
+{-, 53}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 647  1
+{-, 61}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 649  1
+{-, 71}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 651  1
+{-, 79}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 653  1
+{-, 89}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 655  1
+{-, 101}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 657  1
+{-, 107}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 659  1
+{-, 113}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 661  2
+{-, 3}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 663  2
+{-, 7}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 665  2
+{-, 13}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 667  2
+{-, 19}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 669  2
+{-, 29}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 671  2
+{-, 37}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 673  2
+{-, 43}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 675  2
+{-, 53}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 677  2
+{-, 61}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 679  2
+{-, 71}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 681  2
+{-, 79}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 683  2
+{-, 89}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 685  2
+{-, 101}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 687  2
+{-, 107}
+ 9 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 689  2
+{-, 113}
+ 9 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 691  1
+{--, 3}
+ 10 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 693  1
+{--, 7}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 695  1
+{--, 13}
+ 10 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 697  1
+{--, 19}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 699  1
+{--, 29}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 701  1
+{--, 37}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 703  1
+{--, 43}
+ 10 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 705  1
+{--, 53}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 707  1
+{--, 61}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 709  1
+{--, 71}
+ 10 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 711  1
+{--, 79}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 713  1
+{--, 89}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 715  1
+{--, 101}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 717  1
+{--, 107}
+ 10 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 719  1
+{--, 113}
+ 10 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 721  3
+{--, 3}
+ 10 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 723  3
+{--, 7}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 725  3
+{--, 13}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 727  3
+{--, 19}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 729  3
+{--, 29}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 731  3
+{--, 37}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 733  3
+{--, 43}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 735  3
+{--, 53}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 737  3
+{--, 61}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 739  3
+{--, 71}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 741  3
+{--, 79}
+ 10 in 2.6 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 743  3
+{--, 89}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 745  3
+{--, 101}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 747  3
+{--, 107}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 749  3
+{--, 113}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 751  7
+{--, 3}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 753  7
+{--, 7}
+ 10 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 755  7
+{--, 13}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 757  7
+{--, 19}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 759  7
+{--, 29}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 761  7
+{--, 37}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 763  7
+{--, 43}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 765  7
+{--, 53}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 767  7
+{--, 61}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 769  7
+{--, 71}
+ 10 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 771  7
+{--, 79}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 773  7
+{--, 89}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 775  7
+{--, 101}
+ 10 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 777  7
+{--, 107}
+ 10 in 2.8 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 point 779  7
+{--, 113}
+ 10 in 2.7 s; total-ref {0, 0, 0, 0, 0, 0, 0}
+worker 1 finished

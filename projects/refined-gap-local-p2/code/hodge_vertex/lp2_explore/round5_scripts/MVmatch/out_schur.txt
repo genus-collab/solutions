@@ -1,0 +1,3 @@
+characters: column orthogonality and hook length formula OK, n <= 8
+LLZ (3) = prod 1/(2 sin(h lambda/2)) as multisets of arguments: 271 partitions, n <= 12, failures 0
+tau=0: [p_mu]Z = prod 1/(2 sinh(mu_i x/2))/z_mu (p_k(q^rho) = 1/[k]): 66 partitions, failures 0

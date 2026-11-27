@@ -1,0 +1,30 @@
+alpha ['2/7', '5/11', '-3/13'] nu=-eps ['7/5', '-9/4'] z 3/17
+  eta_ab against BS eq:etaflat: True
+  GW_{0,d} eps1 eps2 = <H>_{0,1,d} eps1 eps2 / d: ['3', '-45/8', '244/9', '-12333/64']
+  <H^2>_{0,1,d} eps1 eps2 / e1(alpha): ['-5', '87/4', '-1544/9', '27671/16']
+     d=1 I and J at P_0, y^1: -521235/208033 -521235/208033
+  J = I through y^4 at P_0,P_1,P_2: True
+  eq:Ian 1/z coefficients against localisation: True
+  control, mirror map dropped (must be False): False
+  S(1) = J/z, S(H) = theta_Q J from two-point sums: True
+  QDE z theta_Q S(H^a) = Sum C^c_{1a} S(H^c), a=0,1,2 through Q^4: True
+alpha ['1/3', '-4/5', '11/2'] nu=-eps ['-2/9', '5/6'] z -7/19
+  eta_ab against BS eq:etaflat: True
+  GW_{0,d} eps1 eps2 = <H>_{0,1,d} eps1 eps2 / d: ['3', '-45/8', '244/9', '-12333/64']
+  <H^2>_{0,1,d} eps1 eps2 / e1(alpha): ['-5', '87/4', '-1544/9', '27671/16']
+     d=1 I and J at P_0, y^1: -19305/58529 -19305/58529
+  J = I through y^4 at P_0,P_1,P_2: True
+  eq:Ian 1/z coefficients against localisation: True
+  control, mirror map dropped (must be False): False
+  S(1) = J/z, S(H) = theta_Q J from two-point sums: True
+  QDE z theta_Q S(H^a) = Sum C^c_{1a} S(H^c), a=0,1,2 through Q^4: True
+alpha ['1/7', '3/5', '11/13'] nu=-eps ['-1/3', '-1714/1365'] z 5/23
+  eta_ab against BS eq:etaflat: True
+  GW_{0,d} eps1 eps2 = <H>_{0,1,d} eps1 eps2 / d: ['3', '-45/8', '244/9', '-12333/64']
+  <H^2>_{0,1,d} eps1 eps2 / e1(alpha): ['-5', '87/4', '-1544/9', '27671/16']
+     d=1 I and J at P_0, y^1: -2210/2441509 -2210/2441509
+  J = I through y^4 at P_0,P_1,P_2: True
+  eq:Ian 1/z coefficients against localisation: True
+  control, mirror map dropped (must be False): False
+  S(1) = J/z, S(H) = theta_Q J from two-point sums: True
+  QDE z theta_Q S(H^a) = Sum C^c_{1a} S(H^c), a=0,1,2 through Q^4: True

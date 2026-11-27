@@ -1,0 +1,181 @@
+% s01_intro. Section file; new macros at the top; label prefix: int
+\section{Introduction}
+\label{sec:int}
+
+%-------------------------------------------------------------------------------
+\subsection{The problem}
+\label{sec:int-problem}
+
+Let $Z=\KPtwo\times\bbC^2$, let $\epsilon_1,\epsilon_2$ be the equivariant parameters of the $\bbC^2$ factor, and put $E=\epsilon_1+\epsilon_2$, with $\epsilon_1\epsilon_2E\neq 0$. The fibrewise torus $\TF$ acts trivially on $\bbP^2$, with weight $E$ on the fibre of $\KPtwo$ and weights $-\epsilon_1,-\epsilon_2$ on $\bbC^2$. For $g\geq 2$ the refined Gromov--Witten generating series of \cite{BS} is, in the reading of this paper,
+\[
+\sF_g^{\TF}=\sum_{d\geq 0}\cQ^d\,\GW_{g,d}^{\TF},\qquad \GW_{g,d}^{\TF}=\int_{[\Mbar_g(\bbP^2,d)]^{\vir}}e_{\TF}\big(R\pi_*f^*\Ntw\big)^{-1},
+\]
+with $\Ntw=\cO(-3)_{E}\oplus\cO_{-\epsilon_1}\oplus\cO_{-\epsilon_2}$ on $\TF$; see \cref{sec:set-target} and \cref{rmk:set-d0}. Under the mirror map $\cQ(y)$ it is an element of $\bbK\fps{y}$, where $\bbK=\bbQ(\epsilon_1,\epsilon_2)$. Its coefficients $\sF_{k,h}$ in the expansion in $E^{2}$ and $\epsilon_1\epsilon_2$ are the objects of the refined direct integration of Huang--Klemm \cite{HK10}, in the formulation of \cite{BS}. \draftnote{\cite{HK10,CKK14,HKR08} are taken from the bibliography of \cite{BS} and were not consulted for this paper; decide whether to keep them.} That method prescribes four properties: finite generation, a modular anomaly equation, regularity at the orbifold point and an asymptotic behaviour at the conifold point $y=-1/27$. The last one, with $\Pi_{\gamma_{\mathrm{cf}}}$ the period of \cite{BS} vanishing linearly at $y=-1/27$ and $\sFcf_{k,h}$ the coefficient with $F$ replaced by $\Fcf$ (both are made precise below), reads
+\[
+\sFcf_{k,h}=\bfrak_{k,h}\,\Pi_{\gamma_{\mathrm{cf}}}^{2-2h-2k}+\cO(1),\qquad
+\bfrak_{k,h}=(-3)^{k+h-1}\big[E^{2k}(\epsilon_1\epsilon_2)^{h-1}\big]\beta_{2k+2h-2}(\epsilon_1,\epsilon_2),
+\]
+where
+\[
+\beta_n(\epsilon_1,\epsilon_2)=(n-1)!\,[\mathsf{t}^n]\,\frac{1}{4\sinh(\epsilon_1\mathsf{t}/2)\sinh(\epsilon_2\mathsf{t}/2)}.
+\]
+\draftnote{BS labels: def:dirint, eq:bkgcf.} The content of this property beyond the leading coefficient is the \emph{conifold gap}: no polar term other than the leading one occurs. In \cite{BS} the leading coefficient and a bound on the order of the pole are obtained, the full statement is formulated as a conjecture and verified in low genus, and it is remarked that a proof appears to require a significant leap in complexity. For related work on local $\bbP^2$ see \cite{LP18,BFGW21,CI18}; the first relation of \cref{prop:row-modrel} is attributed in \cite{BS} to \cite{ZZ08}. \draftnote{\cite{CI18,ZZ08} were not consulted for this paper; \cite{LP18} was read for a comparison of formulas and \cite{BFGW21} for its Lemma 4.2 only.} \draftnote{BS labels: thm:B, thm:cfasym, lem:cfpole, rmk:cfgap. Authors to decide how much of this background to keep.}
+
+In this paper we prove the refined conifold gap on the fibrewise torus in every genus. We also prove a more precise statement about the stable graph sum: every stable graph with an edge is regular at the conifold point, colouring by colouring, so that the whole polar part sits in the graph with one vertex.
+
+%-------------------------------------------------------------------------------
+\subsection{Statements}
+\label{sec:int-statements}
+
+We recall the objects briefly; the definitions are in \cref{sec:set,sec:fra}. Put $\theta=y\,\dd/\dd y$, $\xi=1+27y$, $X=1/\xi$, $A=\theta\log\cQ$ and $F=\theta\log A$. By \cref{thm:spe-main}(e), $\sF_g^{\TF}$ lies in $\bbK[y^{\pm1},\xi^{-1}][F]$ with $\deg_F\leq 3g-3$, and the polynomial in $F$ is unique, because $F$ is transcendental over $\bbC(y)$.
+
+\emph{The conifold data.} Let $\wcf={}_2F_1(\tfrac13,\tfrac23;1;\xi)$, and define $\tc$ by $\theta\tc=-\wcf$, $\tc(\xi=0)=0$; thus $\tc=\xi+O(\xi^2)$ is an analytic coordinate at $\xi=0$. Put $\ccf=\theta\tc$. The coordinate $\tcf$ of \cite{BS} is
+\[
+\tcf=\frac{\sqrt3}{2\pi}\big(I_1^{[2]}-\ri\pi I_0^{[1]}-\pi^2\big),
+\]
+on $y\in(-1/27,0)$ with the branch $\log y=\log(-y)+\ri\pi$, continued analytically to a neighbourhood of $\xi=0$; further $\Acf=\theta\tcf$ and $\Fcf=\theta\log\Acf$. By \cref{lem:fra-tcf}, $\tcf=\tc$ and $\Acf=\ccf$. The conifold substitution $\Cf$ is defined in \cref{def:fra-cf}: it is the identity on coefficients and it fixes $X$ and the roots $Y_i$, and on Gromov--Witten series it is the substitution $F\mapsto\Fcf$ in the unique polynomial above. It is a substitution on the polynomial, not an analytic continuation of the series. This is the reading of the substitution of \cite{BS} that we adopt as a definition, see \cref{rmk:fra-cfread}, and the conifold gap below is a statement about it. We write $\GWcf_g=\Cf(\sF_g^{\TF})$, a germ at $\xi=0$.
+
+\emph{The graph sum.} On $\TF$ put $t=y^{1/3}$, $t_i=\omega^it$ with $\omega=\re^{2\pi\ri/3}$, $v_i=(1+3t_i)/(Et_i)$ and $\Delta_i=3\epsilon_1\epsilon_2E/v_i^2$. Colour $0$ on the real branch $t\to-1/3$ is the \emph{singular colour}, the unique colour with $v_i\to 0$ as $y\to-1/27$. The rows are built by \cref{def:set-rows} from the explicit series
+\[
+\Srow(v,z)=\sum_{l\geq0}\frac{r_l\,(vz)^l}{\prod_{j=1}^{l+1}(1+jz/E)},
+\]
+with $r_l$ given by the recursion \eqref{eq:set-rec}. The vertices carry the class $\Hg_{\bw}$ of \eqref{eq:set-Hg}, with $\bw=(E,-\epsilon_1,-\epsilon_2)$. For a connected stable graph $\Gamma$ of genus $g$ without legs and a colouring $\col\colon\Ver(\Gamma)\to\{0,1,2\}$, $\GCont(\Gamma,\col)$ is the finite decoration sum \eqref{eq:set-graphsum}, and
+\[
+\Gsum_g=\sum_{\Gamma}\frac{1}{|\Aut\Gamma|}\sum_{\col}\GCont(\Gamma,\col)
+\]
+is the \emph{frame-B Hodge-vertex graph sum}. It is a sum of explicitly defined factors, and all of them are taken at the section $\cone=\ccf$. We write $\Gsum_g[\sfF]$ for the same sum with an indeterminate $\sfF$ in place of $\theta\log\cone$ in the edges (\cref{sec:fra}).
+
+\emph{Scope.} All statements below are on the fibrewise torus, with $\epsilon_1\epsilon_2E\neq 0$. The statements on graphs hold for each colouring separately. Generic weights on the maximal torus occur only in an intermediate step, \cref{thm:gen-main}.
+
+\begin{thm}[Frame formula]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-frame}
+For $g\geq 2$,
+\[
+\Cf(\sF_g^{\TF})=\Gsum_g[\Fcf],
+\]
+and this is $\Gsum_g$ of \eqref{eq:set-Gsum} at $\cone=\ccf$. If the series is taken with $d>0$ only, the right side is replaced by $\Gsum_g[\Fcf]-\GW_{g,0}^{\TF}$, where $\GW_{g,0}^{\TF}\in\bbK$ is the constant of \cref{prop:spe-const}.
+\end{thm}
+
+This is \cref{prop:fra-frame}. Its proof uses the mirror theorem \cite[Theorem~31]{CCIT15} at generic weights and the results of \cref{sec:int-inputs}, except the Mari\~no--Vafa formula and Barnes's second lemma.
+
+\begin{thm}[Regularity of graphs with an edge]\genusstatus{AI-proposed, unchecked}
+\label{thm:int-regularity}
+Fix $g\geq 2$. For every connected stable graph $\Gamma$ of genus $g$ with at least one edge, and for every colouring $\col$, the decoration sum $\GCont(\Gamma,\col)$ is analytic at $y=-1/27$, that is, its Laurent expansion in $\tc$ has no negative powers. The graph with one vertex is analytic at colours $1$ and $2$, and at colour $0$ its polar part is the single term
+\[
+(3\epsilon_1\epsilon_2E^3)^{g-1}\,\ZZ[g,0]\,\tc^{2-2g}=(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)\,\tc^{2-2g},
+\]
+where $\ZZ[g,0]=\Fpot_g(\qo)$ is the Hodge integral of \cref{def:set-fpot}. Hence the polar part of $\Gsum_g$ is exactly $(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)\,\tc^{2-2g}$.
+\end{thm}
+
+This combines \cref{thm:reg-main,cor:reg-sv,lem:reg-A}. It is a statement about the decoration sum as defined. Its proof uses the Mari\~no--Vafa formula \cite[eq.~(1)--(3)]{LLZ03} and textbook facts. It uses neither the mirror theorem, nor \cite{Tel12}, nor any statement of \cite{BS}.
+
+\begin{cor}[Refined conifold gap]\genusstatus{AI-proposed, unchecked}
+\label{cor:int-gap}
+For $g\geq 2$, on the fibrewise torus,
+\[
+\GWcf_g=\frac{(-3)^{g-1}\beta_{2g-2}(\epsilon_1,\epsilon_2)}{\tcf^{2g-2}}+\cO(1).
+\]
+Here $\cO(1)$ means that the difference is holomorphic in a neighbourhood of $\tcf=0$, equivalently of $y=-1/27$, with no negative powers of $\tcf$, and that its Taylor coefficients lie in $\bbK$. The value of the $\cO(1)$ term is not determined. The statement holds with either convention for the term $d=0$, since that term is a constant.
+\end{cor}
+
+At $g=2$ this reads
+\[
+\GWcf_2=-\frac{7\epsilon_1^4+10\epsilon_1^2\epsilon_2^2+7\epsilon_2^4}{1920\,\epsilon_1\epsilon_2}\,\frac{1}{\tcf^2}+\cO(1),
+\]
+which is the display of \cite{BS} at genus $2$. \draftnote{BS labels: rmk:cfgap, eq:F2ref.}
+
+For the coefficient form write $\sF_g^{\TF}=\sum_{k+h=g}E^{2k}(\epsilon_1\epsilon_2)^{h-1}\sF_{k,h}$. This expansion exists and is unique, with $\sF_{k,h}\in\bbQ[y^{\pm1},\xi^{-1}][F]$ (\cref{sec:reg-gap}). Put $\sFcf_{k,h}=\Cf(\sF_{k,h})$.
+
+\begin{cor}[Coefficients]\genusstatus{AI-proposed, unchecked}
+\label{cor:int-gapkh}
+For $k+h\geq 2$,
+\[
+\sFcf_{k,h}=\bfrak_{k,h}\,\tcf^{2-2h-2k}+\cO(1),\qquad
+\bfrak_{k,h}=(-3)^{k+h-1}\big[E^{2k}(\epsilon_1\epsilon_2)^{h-1}\big]\beta_{2k+2h-2}(\epsilon_1,\epsilon_2).
+\]
+\end{cor}
+
+\Cref{cor:int-gap,cor:int-gapkh} are \cref{cor:reg-gap,cor:reg-gapkh}. \Cref{cor:int-gapkh} is the conifold asymptotics in refined direct integration, with the period $\Pi_{\gamma_{\mathrm{cf}}}$ read through its expansion, as explained after \cref{cor:reg-gapkh}; then $\Pi_{\gamma_{\mathrm{cf}}}=\tc=\tcf$. By \cref{rmk:reg-unref} the $\cQ^d$ coefficient of $\sF_{0,h}$, $d\geq 1$, is the usual Gromov--Witten invariant of local $\bbP^2$, so the case $k=0$ concerns the unrefined series. \draftnote{Authors to decide whether to compare the cases $k=0$ and $h=0$ with \cite[Section~10.8]{CI18} and \cite[Conjecture~1.9]{BFGW21} respectively. This assignment is taken from \cite{BS}. Neither of those statements was read for this paper, no proof step uses them, and the comparison is not made in the proofs.}
+
+%-------------------------------------------------------------------------------
+\subsection{Results from the literature used in the proofs}
+\label{sec:int-inputs}
+
+The proofs of \cref{thm:int-frame,thm:int-regularity,cor:int-gap,cor:int-gapkh} use the following published results. The proofs of these results are not reproduced.
+\begin{description}
+\item[Mirror theorem at generic weights] \cite[Theorem~31]{CCIT15}, with Definition~28, eq.~(19), eq.~(4) and Remark~3 there, applied to $Z$ in \cref{thm:gen-mirror}. \draftnote{Numbers of \cite{CCIT15} are those of arXiv:1310.4163v5; the journal print has not been compared.} The genus-zero differential equation at generic weights is not a further input as a whole: it is derived in \cref{prop:gen-qde} from \cite[Lemma~1]{Pan98} and the boundary structure.
+\item[Classification of semisimple theories] \cite[Theorem~(2), Proposition~8.7(ii), 2.17--2.19, (2.15)]{Tel12}, which rest on Harer stability, as stated in \cite[Propositions~(2.1), (2.2)]{Loo96} with \cite{Har85,Iva90}, and on \cite[Theorem~1.1.1]{MW07}. \draftnote{Numbers of \cite{Tel12} are those of arXiv version 3; the journal numbering has not been compared.}
+\item[The group action] \cite[Definitions~2.2, 2.5, 2.13, Proposition~2.14, Section~3.2 and (5)]{PPZ15}.
+\item[Localisation and the virtual class] \cite[formula~(1), Appendices~A, C]{GP99}; the fundamental-class and splitting axioms of the virtual class, with \cite[Appendix~1 (iv)--(vi)]{CG07} for the twist.
+\item[Hodge classes] Mumford's formula in the form of \cite[Theorem (Mumford), Section~1.1]{FP00}; the relation $c(\Hdg)c(\Hdg^\vee)=1$ of \cite[(5.4), (5.5)]{Mum83}; and \cite[Theorem~4]{FP00}.
+\item[Special functions] \cite[Eq.~15.6.7]{DLMF}; Barnes's second lemma \cite{Bar10}; Gauss's values of the digamma function at $1/3$, $2/3$. \draftnote{Barnes's lemma: the form used in \cref{lem:fra-tcf} should be compared with a printed source before submission.}
+\item[Mari\~no--Vafa formula] \cite[eq.~(1)--(3)]{LLZ03}; \cite[Theorem~1]{OP04} is a second published proof. With it, the textbook facts: the string and dilaton equations with classes pulled back along forgetful maps, the genus-zero multinomial formula for $\psi$-integrals, the Frobenius formula and Frobenius' transposition identity, the values $\int_{\Mbar_{1,1}}\psi=\int_{\Mbar_{1,1}}\lambda_1=1/24$, the Murnaghan--Nakayama rule, the hook-length form of the principal specialisation of Schur functions, and Lagrange inversion.
+\end{description}
+
+The results enter as follows. \Cref{thm:int-regularity} uses only the Mari\~no--Vafa formula and its textbook facts; the evaluation of $\ZZ[g,0]$ uses that formula only at $\mu=1^a$. The mirror theorem enters only through \cref{thm:int-frame}, and through it \cref{cor:int-gap,cor:int-gapkh}. The frame change itself, \cref{thm:fra-change}, does not use the mirror theorem. In \cref{lem:fra-tcf} the logarithmic form of $\wcf$, which gives $\Fcf=\theta\log\ccf$ in \cref{thm:int-frame}, uses \cite[Eq.~15.6.7]{DLMF} and Gauss's values, and Barnes's second lemma is needed only for the constant in $\tcf=\tc$.
+
+We use \cite[Theorem~31]{CCIT15} at generic weights because \cref{sec:gen} cannot be moved to $\TF$: the quantum product at $\cQ=0$ is not semisimple there. The theorem of \cite{Coa09} gives the mirror statement on $\TF$.
+
+No topological recursion on the mirror curve of local $\bbP^2$ is used, and neither is remodelling. The only relation in the paper that is called a topological recursion is the genus-zero psi-class relation of \cref{prop:gen-qde}(i). The proof of \cite[Theorem~31]{CCIT15} does not use such input either; see \cref{rmk:gen-mirror}. We also do not use the conifold leading term, the pole bound or the graph sum for $\beta$ of \cite{BS}; \cref{rmk:reg-compare,rmk:reg-beta} compare them with the present results. \draftnote{BS labels: thm:cfasym, lem:cfpole, prop:cfgraphsum.} No proof step is a finite-order computation; evidence of that kind is collected in \cref{sec:evi}, and no proof uses it.
+
+%-------------------------------------------------------------------------------
+\subsection{What is not claimed}
+\label{sec:int-notclaimed}
+
+We claim nothing off the fibrewise torus, and in particular nothing about polar parts at general Calabi--Yau tori. We do not determine the value of the regular part of $\GWcf_g$. We do not show that $\sF_{k,h}$ lies in $\bbQ[X^{\pm1}][F]$: we prove only that $\sF_g^{\TF}$ lies in $\bbK[y^{\pm1},\xi^{-1}][F]$, with coefficients of $\sF_{k,h}$ in $\bbQ[X^{\pm1},(1-X)^{-1}]$, and the stronger form remains open for all $g$; it is independent of \cref{cor:int-gap}. We do not address the orbifold regularity, the holomorphic anomaly equations or the uniqueness statement in refined direct integration. The relation of $\Cf$ to a change of polarisation of the Givental quantisation is not addressed either. The cited theorems of \cref{sec:int-inputs} stay cited.
+
+%-------------------------------------------------------------------------------
+\subsection{Strategy}
+\label{sec:int-strategy}
+
+The proof has two independent parts: an identification of $\GWcf_g$ with the explicit sum $\Gsum_g$ and an analysis of $\Gsum_g$ at the conifold point.
+
+\emph{The frame formula.} This part has three steps.
+\begin{enumerate}
+\item At generic weights on the maximal torus, the theory is semisimple at $\cQ=0$, and \cite{Tel12} gives $\Omega=\Rm.\TFT$. Rows of $\Rm$ come from the mirror theorem and from the genus-zero differential equation. Their constants are fixed by the point $\cQ=0$, and flatness of $\Rm$ is derived directly (\cref{prop:gen-flat}). This gives the graph sum of \cref{thm:gen-main}.
+\item The sum over colourings at generic weights is a multi-trace over the local ring $\ringC$, which is $\locO[Y]/(\Lhat(Y))$ with $\locO$ the localisation at the prime of $\TF$. So the graph sum is a polynomial in an indeterminate $\sfF$ with coefficients in $\locO$, and it passes to $\TF$ by a ring map, with no limit in the weights (\cref{thm:spe-main}). The theorem of \cite{Tel12} is not applied on $\TF$.
+\item On $\TF$ the factor $\hb=\Theta(-z/E)\Theta(z/\epsilon_1)\Theta(z/\epsilon_2)$ is the same at all colours, and by Mumford's formula it can be moved into the vertices as the class $\Hg_{\bw}$ (\cref{thm:fra-change}). This is an identity for the total, polynomial in $\sfF$, and the substitution $\sfF\mapsto\Fcf$ gives \cref{thm:int-frame}.
+\end{enumerate}
+
+\emph{Regularity.} The analysis of $\Gsum_g$ uses the closed form of the rows, and the Hodge integrals at the vertices.
+\begin{enumerate}
+\item At the singular colour $v_0\to 0$ as $\tc\to 0$, $\Delta_0=3\epsilon_1\epsilon_2E^3/(\tc\rho)^2$ with $\rho$ an analytic unit, and the closed form gives $\Srow(0,z)=E/(E+z)$. To every order in $\tc$, the singular row and the factors built from it are finite combinations of the leaves $\lf_j(\psi)=1/(E-j\psi)$, with $j\leq k+1$ at order $\tc^k$ (\cref{thm:lea-main}). This is algebra on the closed form, and it uses the identity $\lim_{z\to\infty}z\,v_0\Srow(v_0,z)=-\tc$ of \eqref{eq:row-zinf} and symplecticity of the rows, \cref{prop:row-sympl}, which is proved from the closed form.
+\item By homogeneity under the dilaton equation, a colour-$0$ vertex of genus $h\geq 2$ contributes $\tc^{2-2h+k}$ times finite combinations of the numbers $\Xiz_h(\msU)$, with $\dg(\msU)=\sum_{j\in\msU}(j-1)\leq k$. These numbers are Hodge integrals over $\Mbar_{h,r+m}$ with the class $\Hg_{\bw}$; they involve neither the curve nor the periods of local $\bbP^2$.
+\item $\Xiz_h(\msU)=0$ for every non-empty multiset $\msU$ of positive integers with $\dg(\msU)\leq 2h-3$ (\cref{thm:van-main}, \cref{cor:van-parts}, \cref{lem:reg-A}). This is derived from the Mari\~no--Vafa formula: the pair of Mari\~no--Vafa series related by the shift $p_k\mapsto\re^{k\tau x}p_k$ satisfies one explicit bilinear equation for each $k\geq 2$, derived in \cref{sec:van}, and the lowest coefficient of that equation at the dilaton point gives an all-genus relation among these numbers.
+\item A non-zero term therefore needs $\dg_v\geq 2g_v-2$ at each rescaled vertex, and the counting in \cref{thm:reg-main} gives order at least $0$ in $\tc$ for every graph with an edge, colouring by colouring. In the graph with one vertex the empty multiset survives, with the value $\ZZ[g,0]$, and this is computed from the Mari\~no--Vafa formula at $\mu=1^a$ and the first equation of the hierarchy (\cref{thm:val-main}).
+\end{enumerate}
+
+\emph{Dependencies.} The results depend on each other and on the literature as follows.
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.3\textwidth}>{\raggedright\arraybackslash}p{0.33\textwidth}}
+Result & Uses from this paper & Uses from the literature\\
+\hline
+\cref{thm:row-pf,cor:row-carry,cor:row-closed,prop:row-sympl,prop:row-modrel} & definitions of \cref{sec:set} & none\\
+\cref{prop:gen-osc} & \cref{sec:row-sp,lem:row-analytic,lem:row-pfint,lem:row-wkb}, \cref{thm:gen-mirror,lem:gen-Y,thm:gen-const} & \cite{CCIT15,Pan98,Tel12,PPZ15,GP99,CG07,FP00}\\
+\cref{thm:gen-main} & \cref{prop:gen-qde,thm:gen-mirror,prop:gen-flat,thm:gen-const,prop:gen-osc} & \cite{CCIT15,Pan98,Tel12,PPZ15,GP99,CG07,FP00}\\
+\cref{thm:spe-main} & \cref{thm:gen-main,sec:row} & \cite{GP99}, $c(\Hdg)c(\Hdg^\vee)=1$\\
+\cref{thm:fra-change} & \cref{prop:row-sympl,lem:gen-mumford} & \cite{PPZ15,FP00}\\
+\cref{lem:fra-tcf} & \cref{lem:set-coord} & \cite{DLMF,Bar10}, Gauss's values\\
+\cref{prop:fra-frame} & \cref{thm:gen-main,thm:spe-main,thm:fra-change,lem:fra-LR,lem:fra-tcf} & \cite{CCIT15,Pan98,Tel12,PPZ15,GP99,CG07,FP00}, \cite{DLMF}, Gauss's values; not \cite{Bar10}\\
+\cref{thm:lea-main} & \cref{lem:set-coord,thm:row-pf,lem:row-closed12,cor:row-carry,cor:row-closed,prop:row-sympl} & none\\
+\cref{thm:van-main} & definition of $\Xiz_h$ & \cite{LLZ03}, textbook facts\\
+\cref{thm:val-main} & \cref{prop:van-real,lem:van-dil,eq:van-bil,cor:van-scale} & \cite{LLZ03} at $\mu=1^a$, textbook facts\\
+\cref{thm:reg-main,cor:reg-sv} & \cref{thm:lea-main,thm:lea-E00,thm:lea-M,lem:reg-A}, and \cref{thm:val-main} for \cref{cor:reg-sv} & \cite{LLZ03}, textbook facts\\
+\cref{cor:reg-gap,cor:reg-gapkh} & \cref{prop:fra-frame,lem:fra-tcf,cor:row-carry,thm:reg-main,cor:reg-sv}, \cref{thm:spe-main}(b), (e) & all of \cref{sec:int-inputs}
+\end{tabular}
+\end{center}
+The part of \cref{sec:row} on formal stationary phase enters only through \cref{prop:gen-osc} and \cref{sec:spe}; the regularity statements do not use it. So \cref{sec:lea,sec:van,sec:val} and \cref{thm:reg-main,cor:reg-sv} can be read independently of \cref{sec:gen,sec:spe,sec:fra}.
+
+\emph{Conventions.} A few readings are fixed where they are needed. The series $\sF_g$ includes $d=0$ (\cref{rmk:set-d0}); on $\TF$ the function $W$ takes the value $W(Y_i)=(E/9)(3Y_i+E)^2$ (\cref{sec:set-colours}); the double bracket of the genus-zero theory includes $d=0$ and carries the weights $\cQ^d/m!$ (before \cref{prop:gen-qde}); the branch of $\log y$ for $\tcf$ is fixed in \cref{lem:fra-tcf}; and $\Cf$ is the substitution of \cref{def:fra-cf}.
+
+%-------------------------------------------------------------------------------
+\subsection{Plan of the paper}
+\label{sec:int-plan}
+
+\Cref{sec:set} fixes the target, the mirror data, the rows, the factors, the decoration sum and the Hodge side. \Cref{sec:row} proves the properties of the closed form of the rows. \Cref{sec:gen} treats the cohomological field theory and its R-matrix at generic weights, \cref{sec:spe} specialises to the fibrewise torus, and \cref{sec:fra} gives the frame change, the conifold substitution and the frame formula. \Cref{sec:lea} proves the leaf structure at the singular colour. \Cref{sec:van} derives the vanishing of the Hodge integrals from the Mari\~no--Vafa formula, and \cref{sec:val} computes the value of the vertex. \Cref{sec:reg} assembles these into the regularity theorem and proves the gap. \Cref{sec:con} records the counterpart for the resolved conifold. \Cref{sec:evi} collects finite-order evidence; it is not part of any proof.
+
+
+\subsection*{Acknowledgements}
+
+This work was supported by the UKRI grant UKRI2394 and by the Leverhulme Trust grant LIP-2023-007.

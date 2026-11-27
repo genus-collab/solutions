@@ -1,0 +1,224 @@
+% s11_conifold. Section file; new macros at the top; label prefix: con
+\providecommand{\xc}{\mathsf{x}}
+\providecommand{\cc}{\mathsf{c}}
+\providecommand{\tcn}{\mathsf{t}}
+\providecommand{\Tcn}{\mathsf{T}}
+\section{The resolved conifold}
+\label{sec:con}
+\noindent The resolved conifold is treated in full in the GENUS companion project \texttt{solutions/resolved-conifold-cy-torus} (\url{https://github.com/genus-collab/solutions/tree/main/projects/resolved-conifold-cy-torus}).
+
+
+\draftnote{The full text of this section is to be decided. The statements below are complete. The regularity corollary is proved here. The rank-2 leaf structure has its own proof by a different route and is only stated. The proof of the frame formula is written in terms of the corresponding proofs of \cref{sec:gen,sec:fra}, with the rank-2 data explicit.}
+
+We record the counterpart of the preceding results for the resolved conifold times $\bbC^2$, on its fibrewise torus. Everything in this section is local to it: the weights $\alpha_0,\alpha_1,\alpha_2$ are those of the conifold, and the frame-B factors and $\Delta_i$ are the conifold ones, with colours in $\{1,2\}$.
+
+\subsection{Set-up}
+
+Let $Z_{\mathrm{cf}}\coloneqq\mathrm{Tot}(\cO(-1)^{\oplus 2}\oplus\cO^{\oplus 2}\to\bbP^1)$, and let $\mgp{T}=(\bbC^*)^5$ act with tangent weights $\wts_+=\{\alpha_0,\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2\}$ and $\wts_-=\{-\alpha_0,\alpha_0+\alpha_1,\alpha_0+\alpha_2,-\epsilon_1,-\epsilon_2\}$ at the fixed points $p_+,p_-$ of the zero section. The subtorus $\TF$ is $\alpha_0=0$, $\alpha_i=\epsilon_i$; it fixes the zero section pointwise, with normal weights $(\epsilon_1,\epsilon_2,-\epsilon_1,-\epsilon_2)$. For $g\geq 2$ let
+\[
+\sF_g(\cQ)\coloneqq\sum_{d\geq 0}\cQ^d\,\GW^{Z_{\mathrm{cf}},\TF}_{g,d[\bbP^1]},
+\]
+defined by virtual localisation on the proper fixed loci $\Mbar_{g,0}(Z_{\mathrm{cf}},d)^{\TF}=\Mbar_{g,0}(\bbP^1,d)$, as in \cite{BS}. It is homogeneous of degree $2g-2$ in $(\epsilon_1,\epsilon_2)$, so nothing is lost by setting $\epsilon_1=\xc$, $\epsilon_2=1$. Put $\cc\coloneqq1+\xc$, with $\xc\cc\neq 0$, so that $E=\cc$ and $\bw=(\cc,-\xc,-1)$. Thus $\tau=-\xc/\cc$, $-1-\tau=-1/\cc$ and $\st=-\xc/\cc^2$. The coordinate is $\tcn\coloneqq\log\cQ$, the conifold point is $\tcn=0$, and $\Tcn\coloneqq1-\re^{-\tcn}$. We write ${}'=\dd/\dd\tcn=\cQ\,\dd/\dd\cQ$.
+
+\emph{Frame-B factors.} Let $\cW(U)\coloneqq\xc\log(1-\cQ U)-\log U+\log(1-U)$, $\theta_U\coloneqq U\,\dd/\dd U$, $\cW_k\coloneqq\theta_U^k\cW$. The critical points are the roots of $\cQ\xc U^2+\cQ(1-\xc)U-1=0$; they satisfy $U_1\to 1$ and $U_2\to-1/\xc$ as $\tcn\to 0$, and the discriminant of this quadratic is $(\cc^2-4\xc\Tcn)/\xc^2$. The Frobenius data in the basis $\{1,H\}$ are constant in $\tcn$:
+\[
+\eta=\begin{pmatrix}\cc/\xc^3&1/\xc^2\\1/\xc^2&0\end{pmatrix},\qquad
+\eta^{-1}=\begin{pmatrix}0&\xc^2\\\xc^2&-\cc\xc\end{pmatrix},\qquad
+\langle a,b\rangle=\xc^2(a_0b_1+a_1b_0)-\cc\xc\,a_1b_1.
+\]
+The eigenvalues of $H\qprod$ are $\mathsf{L}_i=(\xc U_i+1)/\Tcn$, and $\Delta_i\coloneqq1/\eta(\eid_i,\eid_i)$. The point-frame row is the normalised formal Laplace expansion of $\re^{\cW/z}\dd U/U$ at $U_i$:
+\[
+\mathrm{r}^{\mathrm{pt}}_{0,i}(z)\coloneqq\sum_{n\geq 0}\frac{(2n)!}{n!\,2^n}\Big(\frac{-z}{\cW_2}\Big)^{\!n}\,[\varkappa^{2n}]\exp\Big(\sum_{k\geq 3}\frac{\cW_k\varkappa^k}{k!\,z}\Big),\qquad\cW_k=\cW_k(U_i),
+\]
+which lies in $1+z(\cdots)\fps{z}$, a term with $j$ factors $\cW_k$ and $\varkappa$-degree $2n$ having $z$-order $n-j$. The frame-B rows are $\mathrm{r}_{a,i}\coloneqq\hb(z)^{-1}\mathrm{r}^{\mathrm{pt}}_{a,i}$, where
+\[
+\hb(z)=\exp\Big(\sum_{k\geq 1}\frac{B_{2k}}{2k(2k-1)}\big(1+\xc^{1-2k}-\cc^{1-2k}\big)z^{2k-1}\Big),
+\]
+and $\mathrm{r}_{1,i}\coloneqq(\mathsf{L}_i+z\mathsf{D}_i)\mathrm{r}_{0,i}$, with $\mathsf{D}_i\coloneqq\dd/\dd\tcn-\Delta_i'/(2\Delta_i)$. Write $\mathbf{r}_i\coloneqq(\mathrm{r}_{0,i},\mathrm{r}_{1,i})$. The dilaton factors are $\Dilh_i(d)\coloneqq(-1)^d[z^{d-1}]\mathrm{r}_{0,i}$, with $\qt^{(i)}(\psi)=\sum_{d\geq 1}\Dilh_i(d)\psi^d=-\psi\,\mathrm{r}_{0,i}(-\psi)$ and $\qt\coloneqq\qt^{(1)}$. The edge factor is, with $\cP_{ij}(\psi,w)\coloneqq-\langle\mathbf{r}_i(-\psi),\mathbf{r}_j(-w)\rangle$,
+\[
+\Edgeh_{ij}(\psi,w)\coloneqq\frac{\cP_{ij}(\psi,w)-\cP_{ij}(-w,w)}{\psi+w}.
+\]
+The decoration sum $\GCont(\Gamma,\col)$, for a colouring $\col:\Ver(\Gamma)\to\{1,2\}$, is defined as in \cref{eq:set-graphsum} with vertex classes $\Delta_{\col_{v}}^{g_{v}-1}\Hg_{\bw}$. The leaves are $\lf_j(\psi)=1/(\cc-j\psi)$, $\qo=\cc-\cc^2\lf_1$, $\Tdil=-\psi^2/(\cc-\psi)$, and $\rho\coloneqq(\Delta_1\tcn^2/(-\xc\cc^3))^{-1/2}$ on the branch with $\rho(0)=1$.
+
+\begin{thm}[Rank-2 leaf structure]\genusstatus{AI-proposed, unchecked}
+\label{thm:con-leaf}
+Let $\xc$ be a complex number with $\xc\neq 0,-1$, or an indeterminate. Then, as identities of formal power series in $\psi$, $\psi'$, $w$ at every $\tcn$-order:
+\begin{description}
+\item[(F1)] $\Delta_1=-\xc\cc^3/(\tcn^2\rho^2)$ with $\rho$ analytic at $\tcn=0$, $\rho(0)=1$; $\Delta_2$ is analytic at $\tcn=0$, with $\Delta_2(0)=\xc^3/\cc\neq 0$.
+\item[(F2)] $\mathrm{r}_{0,1}(z;0)=\cc/(\cc+z)$, and $\rho\,\mathrm{r}_{1,1}(z;\tcn)=\cc/\tcn+\xc/(\cc+z)+\cO(\tcn)$.
+\item[(F3)] Every $\Dilh_i(d)$ ($d\geq 1$) and every $\Edgeh_{ij}(m,n)$ is analytic at $\tcn=0$.
+\item[(L1)] $[\tcn^0](\rho\qt)=\qo$, and $[\tcn^k](\rho\qt)\in\Lsp_{k+1}$ for $k\geq 1$.
+\item[(L2)] With $f_{j,b}\coloneqq[w^b]\Edgeh_{1j}(\psi,w)$, for $j\in\{1,2\}$, $b\geq 0$, $k\geq 0$: $[\tcn^k](\rho f_{j,b})\in\Lsp_{k+1}$, and $[\tcn^k]f_{j,b}\in\Lsp_{k+1}$ as well. Moreover $\Edgeh_{21}(b,a)=\Edgeh_{12}(a,b)$.
+\item[(L3)] For $k\geq 0$, $[\tcn^k](\rho^2\Edgeh_{11}(\psi,\psi'))\in\mathrm{span}\{\lf_i(\psi)\lf_l(\psi'):i,l\geq 1,\ (i-1)+(l-1)\leq k\}$, and $\Edgeh_{11}(a,b)=\Edgeh_{11}(b,a)$. The same support bound holds for $[\tcn^k](\rho^e\Edgeh_{11})$ for every integer $e$.
+\end{description}
+\end{thm}
+
+\begin{rmk}
+\Cref{thm:con-leaf} has its own proof, which is not reproduced here and is not the route of \cref{sec:lea}. It runs through an Euler integral for the singular row, a closed form of that row through Gauss's hypergeometric function, the quantum differential equation at each idempotent, and a flow equation for $\Edgeh_{11}$. Its one analytic input is the value $\hb(z)\cc/(\cc+z)$ of the normalised Laplace expansion of the Beta integral at $\tcn=0$, obtained from Laplace's method and Stirling's series with remainder, \cite[5.11.1, Section~5.11(ii)]{DLMF}. \draftnote{Pointer to be replaced by a reference or an appendix when the text of this section is decided.}
+\end{rmk}
+
+\subsection{Hodge side}
+
+The definitions of \cref{def:set-fpot} apply with $E$ replaced by $\cc$, $\tc$ by $\tcn$, colour $0$ by idempotent $1$, and $\RRing=\bbC\fps{\tcn}$ or $\bbQ(\xc)\fps{\tcn}$. The series $\qt$ lies in $\Dom$ at idempotent $1$, with $\qt|_{\tcn=0}=\qo$, and $\rho\qt\in\Dom$ by (F1). At idempotent $2$, $\qt^{(2)}|_{\tcn=0}=-\psi\,\hb(-\psi)^{-2}$ is not $\qo$, so $\qt^{(2)}\notin\Dom$; only the dilaton-shifted form is used there, and nothing is rescaled. \Cref{lem:reg-H0,lem:reg-string,lem:reg-C,lem:reg-L0} and their proofs depend neither on the rank nor on the target, and hold verbatim with $E\to\cc$.
+
+\begin{lem}[Range]\genusstatus{AI-proposed, unchecked}
+\label{lem:con-range}
+Let $\Gamma$ be a connected stable graph of genus $g$, without legs, with at least one edge. Then every $g_{v}\leq g-1$.
+\end{lem}
+
+\begin{proof}
+This is \cref{lem:reg-range}, whose proof uses only the graph.
+\end{proof}
+
+\emph{Vanishing.} By \cref{cor:van-scale} with $E=\cc$, $\tau=-\xc/\cc$, $\st=-\xc/\cc^2$,
+\[
+\Xiz_h(\msM)=\cc^{-(3h-3+2r)}\,\Xit_h(\msM)\big|_{\tau=-\xc/\cc}=0
+\]
+identically in $\xc$ and at every $\xc$ with $\xc\cc\neq 0$, for every non-empty multiset $\msM$ of integers $\geq 2$ with $\dg(\msM)\leq 2h-3$. So $\Mirr(h)$ holds for every $h\geq 2$ in this convention, also at $\xc=1$ ($\tau=-1/2$).
+
+\emph{The value of the pole.} \Cref{thm:val-tau} reads $\st^{h-1}\ZZ_h(\tau)=\beta_{2h-2}(a_1,a_2)$ in $\bbQ(\tau)$, with $a_1=-\tau$, $a_2=1+\tau$. Here $a_1=\xc/\cc$, $a_2=1/\cc$, and $\bbQ(\tau)=\bbQ(\xc)$ since $\tau=-\xc/(1+\xc)$ is a M\"obius change of variable. The weight count of \cref{cor:van-scale} at $r=0$ gives $\ZZ[h,0]=\cc^{-(3h-3)}\ZZ_h(-\xc/\cc)$. So, using $\beta_n(la,lb)=l^n\beta_n(a,b)$,
+\begin{equation}
+\label{eq:con-value}
+(-\xc\cc^3)^{h-1}\ZZ[h,0]=(-\xc)^{h-1}\ZZ_h=\st^{h-1}\cc^{2h-2}\ZZ_h=\cc^{2h-2}\beta_{2h-2}(\xc/\cc,1/\cc)=\beta_{2h-2}(\xc,1).
+\end{equation}
+$\ZZ_h$ is a polynomial in $1/\st$, by the expansion of \cref{cor:van-spec} at the empty multiset, so \cref{eq:con-value} holds at every $\xc$ with $\xc\cc\neq 0$, $\xc=1$ included. Further, let $\mathsf{P}_g\coloneqq[t^{2g}]\,\epsilon_1\epsilon_2t^2/(4\sinh(\epsilon_1t/2)\sinh(\epsilon_2t/2))$. Then $\mathsf{P}_g/(\epsilon_1\epsilon_2)=\beta_{2g-2}(\epsilon_1,\epsilon_2)/(2g-3)!$, and $\mathrm{Li}_{3-2g}(\re^{\tcn})=(2g-3)!\,\tcn^{2-2g}+(\text{analytic})$, since $\mathrm{Li}_{-n}(\re^{\tcn})=(\dd/\dd\tcn)^n(\re^{\tcn}/(1-\re^{\tcn}))$ and the only singular term of $\re^{\tcn}/(1-\re^{\tcn})$ is $-1/\tcn$. Put $\mathrm{gap}_g\coloneqq\beta_{2g-2}(\xc,1)$. It is the $\tcn^{2-2g}$ coefficient of $\mathsf{P}_g\mathrm{Li}_{3-2g}(\cQ)/(\epsilon_1\epsilon_2)$. By hand at $h=2$: $\ZZ_2=-(24+28s+7s^2)/5760$ with $s=1/\st=-\cc^2/\xc$ gives $-\xc\ZZ_2=(24\xc^2-28\cc^2\xc+7\cc^4)/(5760\xc)=(7+10\xc^2+7\xc^4)/(5760\xc)$. For non-vanishing, which is not used: with $(y/2)/\sinh(y/2)=\sum_ic_iy^{2i}$, $\mathrm{sign}\,c_i=(-1)^i$, one has $\beta_{2g-2}(a,b)=((2g-3)!/(ab))\sum_{i+j=g}c_ic_ja^{2i}b^{2j}$, all of whose terms have one sign at real $a,b\neq 0$.
+
+\subsection{Regularity}
+
+\begin{cor}[Regularity for the conifold]\genusstatus{AI-proposed, unchecked}
+\label{cor:con-reg}
+For every $g\geq 2$ and every $\xc$ with $\xc\cc\neq 0$: every coloured stable graph of genus $g$ with at least one edge is regular at $\tcn=0$ after summing over decorations, and the polar part of the single-vertex graph is $\mathrm{gap}_g\,\tcn^{2-2g}$, with $\mathrm{gap}_g=\beta_{2g-2}(\xc,1)$.
+\end{cor}
+
+This is a statement about the decoration sum as defined. Its proof uses \cite[eq.~(1)]{LLZ03}, for $\Mirr(h)$ and, only at $\mu=1^a$, for the value of the pole; the textbook facts listed in \cref{sec:van}; Frobenius' transposition identity; the principal specialisation; and, through \cref{thm:con-leaf}, Stirling's series with remainder. It does not use \cref{prop:con-frame}. The value $\mathrm{gap}_g$ is non-zero in $\bbQ(\xc)$ and at real $\xc$; it vanishes at the finitely many complex $\xc$ with $\beta_{2g-2}(\xc,1)=0$.
+
+\begin{proof}
+\Cref{thm:con-leaf} gives (F1), (F3) and the leaf statements for every $k$ and at every $\psi$-order. The proof is that of \cref{thm:reg-main,cor:reg-sv}, as follows.
+
+(i) \emph{Homogeneity.} At a singular vertex of genus $h\geq 2$ with $n_{v}$ half-edges, the vertex factor is
+\[
+\Delta_1^{h-1}\dd^{n_v}\Fpot_h(\qt)[f_1,\dots,f_{n_{v}}].
+\]
+By \cref{lem:reg-H0} with $\nu=\rho$ and (F1) it equals
+\[
+(-\xc\cc^3/\tcn^2)^{h-1}\,\dd^{n_v}\Fpot_h(\rho\qt)[\rho f_1,\dots,\rho f_{n_{v}}].
+\]
+
+(ii) \emph{Leaf expansion.} By (L1), $\rho\qt=\qo+\sum_{k\geq 1}\tcn^kq^{(k)}$ with $q^{(k)}\in\Lsp_{k+1}$. By (L2), (L3), every leg, loop and singular-singular edge attached to the vertex is a $\tcn$-series whose order-$\tcn^k$ coefficient is a combination of leaves $\lf_j$, $j\geq 1$, of total degree $\dg\leq k$. An $\Edgeh_{11}$ edge between two rescaled vertices splits its bound between its ends. At an end attached to a singular vertex of genus $0$ or $1$, which is not rescaled, the factor $\rho^{-1}=1+\cO(\tcn)$ does not raise $\dg$. So the coefficient of $\tcn^{2-2h+k}$ of the vertex factor is a finite combination of numbers $\Xiz_h(\msU)$ with all parts $\geq 1$ and $\dg(\msU)\leq k$.
+
+(iii) \emph{Vanishing.} Strip the parts equal to $1$ by \cref{lem:reg-string}. If only parts $1$ occur, the factor $J=0$ kills the term, by \cref{lem:reg-C}. Otherwise the remaining multiset $\msM$ has parts $\geq 2$ and $\dg(\msM)\leq k$, and the term vanishes by $\Mirr(h)$ whenever $k\leq 2h-3$; here $h\leq g-1$ in a graph with an edge, by \cref{lem:con-range}. So a non-zero polar term needs $\dg_{v}\geq 2g_{v}-2$ at every singular vertex of genus $\geq 2$ with at least one leaf.
+
+(iv) \emph{Counting.} In a connected graph with an edge every vertex has a half-edge. The $\tcn$-order of a non-zero term is at least $\sum_{v}(2-2g_{v}+\dg_{v})+2\#\{\text{singular vertices of genus }0\}+0$, the sum over singular vertices with $g_{v}\geq 2$, and the $0$ accounting for singular vertices of genus $1$ and all regular vertices, by (F1), (F3). This is at least $0$.
+
+(v) \emph{The single-vertex graph.} It has no edges, and its colour-$2$ term is regular, by (F1), (F3). At colour $1$ its only term with empty multiset is the order $k=0$, namely $(-\xc\cc^3)^{g-1}\Fpot_g(\qo)\tcn^{2-2g}$. All other polar terms have a non-empty multiset with $\dg\leq k\leq 2g-3$ and vanish by (iii) with $h=g$. The value is \cref{eq:con-value}.
+\end{proof}
+
+By genus: at $g=2$ the graphs with an edge use no instance of $\Mirr$, by \cref{lem:con-range}. At $g=3$ they use only $\Mirr(2)$. For $g\geq 4$ they use $\Mirr(h)$ for $2\leq h\leq g-1$. In every genus the single-vertex graph also uses $\Mirr(g)$.
+
+\begin{rmk}\leavevmode
+\begin{enumerate}
+\item The leaves that occur at order $\tcn^k$ have integer scales $j\leq k+1$, and only the vanishing direction is used.
+\item The ranges match exactly. The polar orders $k\leq 2h-3$ need $\dg\leq 2h-3$, the range of $\Mirr(h)$. The bound $\dg\leq k$ of \cref{thm:con-leaf} is sharp for generic $\xc$, and the first non-zero values, at $\dg=2h-2$, sit exactly at the order $\tcn^0$.
+\item The block of coefficients of $\Edgeh_{11}$ between two singular vertices does not factorise through legs regular at $\tcn=0$: it has rank $1$ at $\tcn=0$ and, for $\xc\neq 1$, rank $2$ for small $\tcn\neq 0$, with
+\[
+\det\big(\Edgeh_{11}(a,a')\big)_{a,a'\in\{0,1\}}=\frac{(1-\xc)^4\xc^6\tcn^2}{18\,\cc^{10}}+\cO(\tcn^3).
+\]
+Such blocks first occur at genus $4$. The proof above does not factorise the block: it expands $\rho^2\Edgeh_{11}$ in leaves independent of $\tcn$, and splits the leaf degree between the two ends.
+\end{enumerate}
+\end{rmk}
+
+\begin{rmk}[The constant term]
+For $g\geq 2$,
+\[
+\sF_g(0)=-\big(\epsilon_1^{2g-2}+\epsilon_2^{2g-2}\big)\frac{|B_{2g}B_{2g-2}|}{4g(2g-2)(2g-2)!}.
+\]
+Indeed \cite{GP99} on $\Mbar_g\times\bbP^1$, with fixed part $e(\Hdg^\vee\otimes T_{\bbP^1})=(-1)^g(\lambda_g-2\lambda_{g-1}\mathsf{h})$, $\mathsf{h}$ the point class, with moving part $\cN-\Hdg^\vee\otimes\cN$ for $\cN$ the normal bundle, and with $\Lamv(u)\Lamv(-u)=(-1)^gu^{2g}$, leaves in degree $3g-3$
+\[
+\sF_g(0)=(-1)^{g+1}\big(\epsilon_1^{2g-2}+\epsilon_2^{2g-2}\big)\int_{\Mbar_g}\lambda_g\,(2g-3)!\,\mathrm{ch}_{2g-3}(\Hdg).
+\]
+The relation $c(\Hdg)c(\Hdg^\vee)=1$ gives $\lambda_g(2g-3)!\,\mathrm{ch}_{2g-3}(\Hdg)=(-1)^g\lambda_g\lambda_{g-1}\lambda_{g-2}$ and $\lambda_{g-1}^2=2\lambda_g\lambda_{g-2}$, and \cite[Theorem~4]{FP00} gives the value.
+\end{rmk}
+
+\subsection{The frame formula}
+
+\begin{prop}[Frame formula for the conifold]\genusstatus{AI-proposed, unchecked}
+\label{prop:con-frame}
+For $g\geq 2$, $\sF_g$ lies in $\bbQ(\xc)(\cQ)$, and in $\bbQ(\xc)(\cQ)$
+\begin{equation}
+\label{eq:con-frame}
+\sF_g=\sum_\Gamma|\Aut\Gamma|^{-1}\sum_{\col:\Ver(\Gamma)\to\{1,2\}}\GCont(\Gamma,\col)
+\end{equation}
+over the connected stable graphs of genus $g$ without legs, with the frame-B factors above. Every coloured term is analytic for small $\Tcn\neq 0$ and meromorphic at $\Tcn=0$, so \cref{eq:con-frame} also holds there and for the Laurent series at $\tcn=0$. The class $\Hg_{\bw}$ is independent of $\tcn$.
+\end{prop}
+
+The proof uses \cite[Theorem~(2), Prop.~8.7(ii), 2.17--2.19, (2.15)]{Tel12}, \cite{GP99}, \cite[App.~1]{CG07}, \cite[Defs.~2.2, 2.13, Prop.~2.14]{PPZ15}, Mumford's theorem as in \cite{FP00} with \cite[Theorem~4]{FP00}, the Aspinwall--Morrison formula as in \cite[p.~3]{FP00}, and Stirling's series. It does not use \cite[Theorem~31]{CCIT15}. We write $\Rm$ for the $R$-matrix of the theory at generic weights. Regularity and the value of the pole in \cref{cor:con-reg} do not use this proposition.
+
+\begin{lem}[Normalisation constants]\genusstatus{AI-proposed, unchecked}
+\label{lem:con-norm}
+Let the weights be indeterminate, let
+\[
+\cW(U)\coloneqq\alpha_1\log(1-\cQ U)-\alpha_2\log U+(\alpha_0+\alpha_2)\log(1-U),
+\]
+which at $\alpha_0=0$, $\alpha_1=\xc$, $\alpha_2=1$ is the function $\cW$ above, and let $\mathrm{r}^{\mathrm{pt}}_{0,\pm}$ be the normalised expansions at the two critical points, labelled by $U_+\to-\alpha_2/\alpha_0$ and $\cQ U_-\to\alpha_0/(\alpha_0+\alpha_1)$ as $\cQ\to 0$. Their $z$-coefficients are analytic at $\cQ=0$, with
+\[
+\mathrm{r}^{\mathrm{pt}}_{0,+}(z;0)=h_{(\alpha_2,-\alpha_0-\alpha_2,\alpha_0)},\qquad
+\mathrm{r}^{\mathrm{pt}}_{0,-}(z;0)=h_{(-\alpha_0,-\alpha_1,\alpha_0+\alpha_1)}.
+\]
+Hence $h_{\wts_+}/\mathrm{r}^{\mathrm{pt}}_{0,+}(z;0)=h_{\wts_-}/\mathrm{r}^{\mathrm{pt}}_{0,-}(z;0)=h_{\mathsf{nw}}$, with $\mathsf{nw}\coloneqq(\alpha_1,\alpha_0+\alpha_2,-\epsilon_1,-\epsilon_2)$.
+\end{lem}
+
+\draftnote{The phase at generic weights was re-derived: it is the unique combination with the stated limits at $U_\pm$, its derivative $\partial_{\tcn}\cW=-\alpha_1\cQ U/(1-\cQ U)$ is the stated $\mathsf{L}$, and with it the identity for $\mathrm{PF}$ in the proof below was checked by hand. To be compared with \cite[Appendix~A]{BS}.}
+
+\begin{proof}
+At $U_+$, $\theta_U^k\log(1-\cQ U)=\cO(\cQ)$, so the $\cW_k(U_+)$ tend to those of $f=a\log U+b\log(1-U)$, $(a,b)=(-\alpha_2,\alpha_0+\alpha_2)$, at its critical point $a/(a+b)$. At $U_-$, $V\coloneqq\cQ U_-$ is analytic at $\cQ=0$, $\theta_U=\theta_V$, $\theta\log(1-V/\cQ)=V/(V-\cQ)\to 1$ and $\theta^k\log(1-V/\cQ)\to 0$ for $k\geq 2$, so the $\cW_k(U_-)$ tend to those of $a\log V+b\log(1-V)$, $(a,b)=(\alpha_0,\alpha_1)$. In both cases $\cW_2\to-a(a+b)/b\neq 0$, so each $z$-coefficient tends to that of the normalised expansion of $f$ in $\log U$ at the critical point. This limit is $h_{(-a,-b,a+b)}$. Both sides have $z$-coefficients rational in $(a,b)$, so let $a,b>0$. Then $f(\mathsf{y})=a\mathsf{y}+b\log(1-\re^{\mathsf{y}})$ is strictly concave on $(-\infty,0)$ and tends to $-\infty$ at both ends, and by Laplace's method
+\[
+\int_0^1U^{a/z}(1-U)^{b/z}\frac{\dd U}{U}=\mathrm{B}(a/z,b/z+1)
+\]
+(\cite[5.12.1]{DLMF}) has as asymptotic expansion for $z\to 0^+$ the exponential of the critical value times $(2\pi zb/(a(a+b)))^{1/2}$ times the normalised expansion. Stirling's series, \cite[5.11.1, Section~5.11(ii)]{DLMF}, for $\log\mathrm{B}(a/z,b/z)$, and $\mathrm{B}(a/z,b/z+1)=\mathrm{B}(a/z,b/z)\,b/(a+b)$, whose factor does not depend on $z$, give the same prefactor times $h_{(-a,-b,a+b)}$, and asymptotic expansions are unique. Substituting the two pairs $(a,b)$ gives the limits. The last statement holds because pairs $v,-v$ cancel: $h_{\wts_+}h_{(-\alpha_2,\alpha_0+\alpha_2,-\alpha_0)}=h_{\wts_-}h_{(\alpha_0,\alpha_1,-\alpha_0-\alpha_1)}=h_{\mathsf{nw}}$. As a check, $(a,b)=(-1,\cc)$, the phase on $\TF$ at $\cQ=1$, $U=-1/\xc$, gives $h_{(1,-\cc,\xc)}=\hb^{-1}$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{prop:con-frame}, in the terms of \cref{sec:gen,sec:fra}]
+Let $\Kal$ here denote $\bbQ(\alpha_0,\alpha_1,\alpha_2,\epsilon_1,\epsilon_2)$.
+
+\emph{(a) The cohomological field theory and its reconstruction.} A $\mgp{T}$-fixed stable map to $Z_{\mathrm{cf}}$ has image in the zero section, so the fixed loci are those of the proper $\Mbar_{g,n}(\bbP^1,d)$, and $R\pi_*f^*\cN_{\mathrm{cf}}$, with $\cN_{\mathrm{cf}}\coloneqq\cO(-1)_{\alpha_1}\oplus\cO(-1)_{\alpha_2}\oplus\cO_{-\epsilon_1}\oplus\cO_{-\epsilon_2}$, is moving there. Hence by \cite{GP99} the classes of $Z_{\mathrm{cf}}$ are those of the twisted theory of $\bbP^1$, and they form a cohomological field theory with flat unit over $\Kal\fps{\cQ}$ for the pairing $\int_{\bbP^1}ab/e_{\mgp{T}}(\cN_{\mathrm{cf}})$, by \cite[App.~1, (iv)--(vi)]{CG07}. The product at $\cQ=0$ is the semisimple classical product. By \cite[Theorem~(2), Prop.~8.7(ii)]{Tel12}, $\Omega=\Rm.\TFT$, with $\Rm$ a unique symplectic matrix with coefficients in $\Kal\lser{\cQ}$; the field of definition is obtained as in \cref{prop:gen-teleman}, using freeness of the action as in \cref{lem:gen-free}, which uses no rank. On the finite extension $\Kalt\lser{\cQ}$ of $\Kal\lser{\cQ}$, with $\Kalt\coloneqq\Kal(e(\wts_+)^{1/2},e(\wts_-)^{1/2})$, which contains $\Delta_i^{1/2}$, the flatness of \cref{prop:gen-flat} holds, with the proof given there. Each line of that proof does not see the rank: the edgeless form, the pushforward and the bubble term are statements about curves and about a semisimple Frobenius algebra; stability is \cite[2.17--2.19, (2.15)]{Tel12}; the skewness of the defect $\Mdef_0$ uses only that $\Psi^T\eta\Psi=1$, $\theta\eta=0$ and that $\Rm_1$ is symmetric in the frame $\fid_i$. The target enters only through the divisor equation and through non-degeneracy, as follows. Put $\mathsf{s}\coloneqq\alpha_0+\alpha_1+\alpha_2$ and $\mathsf{L}_i\coloneqq-\alpha_1\cQ U_i/(1-\cQ U_i)=\mathsf{u}_i'$ for $\mathsf{u}_i\coloneqq\cW(U_i)$. The genus-$0$ potential is the classical part, given by localisation, plus $\mathrm{Li}_3(\cQ)/(\epsilon_1\epsilon_2)$, with $\cQ$ the exponential of the coordinate along $H$: for $d>0$, $H^0(C,f^*\cO(-1))=0$ gives $\Mbar_{0,0}(Z_{\mathrm{cf}},d)=\Mbar_{0,0}(\bbP^1,d)\times\bbC^2$ with obstruction bundle $R^1\pi_*f^*(\cO(-1)^{\oplus 2})$, whose rank is the virtual dimension, so localising on $\bbC^2$ gives $\GW_{0,d}=1/(d^3\epsilon_1\epsilon_2)$, the Aspinwall--Morrison formula \cite[p.~3]{FP00}, and $\langle H,H,H\rangle_{0,d}=d^3\GW_{0,d}$ by the divisor equation. Hence $H\qprod H=(\mathsf{L}_++\mathsf{L}_-)H-\mathsf{L}_+\mathsf{L}_-$. At a root $U_i$ one has $U_i/(1-U_i)=(\mathsf{L}_i-\alpha_2)/(\alpha_0+\alpha_2)$, and $\eid_i=(H-\mathsf{L}_j)/(\mathsf{L}_i-\mathsf{L}_j)$, $j\neq i$, gives $\Delta_i=1/\eta(\eid_i,1)=\alpha_1\alpha_2(\alpha_0+\alpha_1)(\alpha_0+\alpha_2)\epsilon_1\epsilon_2(\mathsf{L}_i-\mathsf{L}_j)/(\alpha_1\alpha_2-\mathsf{s}\mathsf{L}_j)$. The Frobenius data at generic weights are therefore
+\begin{equation}
+\label{eq:con-Delta}
+\begin{gathered}
+\Delta_i=\epsilon_1\epsilon_2\big(\alpha_0\alpha_1\alpha_2+2\alpha_1\alpha_2\mathsf{L}_i-\mathsf{s}\mathsf{L}_i^2\big)=\alpha_1(\alpha_0+\alpha_2)\epsilon_1\epsilon_2\,\cW_2(U_i),\\
+\mathsf{L}_++\mathsf{L}_-=-\frac{\alpha_0+(\alpha_1+\alpha_2)\cQ}{1-\cQ},\qquad \mathsf{L}_+\mathsf{L}_-=-\frac{\alpha_1\alpha_2\cQ}{1-\cQ}.
+\end{gathered}
+\end{equation}
+With $\mathsf{L}_+(0)=0$ and $\mathsf{L}_-(0)=-\alpha_0$,
+\[
+\Delta_+(0)=\alpha_0\alpha_1\alpha_2\epsilon_1\epsilon_2,\qquad
+\Delta_-(0)=-\alpha_0(\alpha_0+\alpha_1)(\alpha_0+\alpha_2)\epsilon_1\epsilon_2,
+\]
+so $\Delta_+(0)/\Delta_-(0)=-\alpha_1\alpha_2/((\alpha_0+\alpha_1)(\alpha_0+\alpha_2))$. This element of $\Kal$ is non-constant, and $\bbQ$ is algebraically closed in the purely transcendental extension $\Kal$, so it is transcendental over $\bbQ$ and not a root of unity. Hence $\Delta_+^g-\Delta_-^g$ has a non-zero value at $\cQ=0$ for every $g\geq 1$, which is the non-degeneracy needed to conclude $\Mdef_0=0$. On $\TF$, $\alpha_0=0$ and $\cQ=0$ is not a semisimple point; the passage to $\TF$ is step (d), not this step. The result is that $\Rm\Psi\re^{\mathsf{U}/z}$ is a unitary fundamental solution of the quantum differential equation, with the sign of $z$ of \cref{prop:gen-flat}.
+
+\emph{(b) The rows.} Define the rows at generic weights by $\mathrm{r}_{0,i}\coloneqq h_{\mathsf{nw}}\mathrm{r}^{\mathrm{pt}}_{0,i}$ and $\mathrm{r}_{1,i}\coloneqq(\mathsf{L}_i+z\mathsf{D}_i)\mathrm{r}_{0,i}$. By \cref{eq:con-Delta}, $\mathsf{L}_i+z\mathsf{D}_i$ is $z$ times the operator of formal stationary phase for the phase $\cW(\re^{\mathsf{y}})$ at $\log U_i$. With
+\[
+\begin{aligned}
+\mathrm{PF}&\coloneqq z^2(\cQ-1)(\dd/\dd\tcn)^2-z(\alpha_0+(\alpha_1+\alpha_2)\cQ)\,\dd/\dd\tcn+\alpha_1\alpha_2\cQ\\
+&\phantom{:}=(\cQ-1)\big[(z\,\dd/\dd\tcn)^2-(\mathsf{L}_++\mathsf{L}_-)z\,\dd/\dd\tcn+\mathsf{L}_+\mathsf{L}_-\big],
+\end{aligned}
+\]
+Euler's integration by parts is the identity $\mathrm{PF}\,\re^{\cW/z}=\theta_U(\mathsf{k}_{\mathsf{m}}\re^{\cW/z})$, $\mathsf{k}_{\mathsf{m}}\coloneqq-z\alpha_1\cQ(1-U)/(1-\cQ U)$, in $U$ and $\cQ$. So, as in \cref{lem:row-pfint}, the second row of the quantum differential equation holds: $z\mathsf{D}_i\mathbf{r}_i=(\mathsf{A}-\mathsf{L}_i)\mathbf{r}_i$, with $\mathsf{A}^T$ the matrix of $H\qprod$. At $\cQ=0$: the $\cW_k(U_i)$ are analytic, $\mathsf{L}_+\to 0$, $\mathsf{L}_-\to-\alpha_0$, $\Delta_\pm\to e(\wts_\pm)$, so by \cref{lem:con-norm}, $\mathbf{r}_i(z)|_{\cQ=0}=h_{\wts_i}(z)(1,\mathsf{L}_i(0))$. Since $H\qprod$ is $\eta$-self-adjoint, $\eta^{-1}$ is constant, and $\mathsf{L}_+-\mathsf{L}_-$ is a unit of $\Kal\fps{\cQ}$, the bilinear $\langle\mathbf{r}_+(z),\mathbf{r}_-(-z)\rangle$ satisfies a homogeneous equation with non-zero leading coefficient and so vanishes, and $\langle\mathbf{r}_i(z),\mathbf{r}_i(-z)\rangle/\Delta_i$ is independent of $\cQ$, hence equal to its value $h_{\wts_i}(z)h_{\wts_i}(-z)=1$. So these rows give a unitary fundamental solution, and $\Rm$ is obtained from them by right multiplication by $\exp(\mathrm{diag}\sum_ka_kz^{2k-1})$ with constants $a_k$, by the argument of \cref{lem:gen-ambig}.
+
+\emph{(c) The constants.} By \cref{lem:gen-mumford}, $\Hg_{\mathsf{v}}=h_{\mathsf{v}}.1$. At $\cQ=0$ only constant maps contribute; by \cite{GP99} on $\Mbar_{g,n}\times\{p\}$, $\Omega_{g,n}(\eid_p,\dots,\eid_p)|_{\cQ=0}=e(\wts_p)^{g-1}\Hg_{\wts_p}$, mixed insertions vanish, and $\Delta_p|_{\cQ=0}=e(\wts_p)$. Comparing with $\Rm|_{\cQ=0}.\TFT$, using \cite[Prop.~2.14]{PPZ15}, and using as in \cref{lem:gen-ch} that $\mathrm{ch}_{2k-1}(\Hdg)\neq 0$ on $\Mbar_{k,1}$, induction on $k$ gives $a_k=0$. So the theory at generic weights is the point-frame sum for the rows of (b).
+
+\emph{(d) Specialisation to $\TF$.} The factors of (b) are elements of the quadratic algebra over $\Kal(\cQ)$ whose coordinates are regular along $\mathrm{Lie}(\TF)$ at generic $\cQ$: the two roots are distinct, with discriminant $((\xc-1)^2+4\xc/\cQ)/\xc^2$, they avoid $\{0,1,1/\cQ\}$, $\cW_2$ and $\Delta$ are finite and non-zero at both, $\eta^{-1}$ is polynomial, and $h_{\mathsf{nw}}\to h_{(\epsilon_1,\epsilon_2,-\epsilon_1,-\epsilon_2)}=1$. So the colour-summed total, invariant under conjugation hence in $\Kal(\cQ)$, restricts to the point-frame sum for the rows at $\TF$, that is, $\Rm_{\TF}$. On the side of invariants, $\GW^{\mgp{T}}_{g,d}$ is an integral over a proper space on which $\mgp{T}$ acts through $\alpha_0$, and the fibre characters of $\cN_{\mathrm{cf}}$ are $\alpha_1,\alpha_2,-\epsilon_1,-\epsilon_2$ up to multiples of $\alpha_0$; expanding in $\alpha_0$ puts it in $\bbQ[\alpha_1,\alpha_2,\epsilon_1,\epsilon_2][1/(\alpha_1\alpha_2\epsilon_1\epsilon_2)]\fps{\alpha_0}$, with image $\GW^{\TF}_{g,d}$ under $\alpha_0\to 0$, $\alpha_i\to\epsilon_i$. Writing the total as a quotient with denominator non-zero on $\TF$ gives $\sF_g$ in $\bbQ(\xc)(\cQ)$ as the point-frame sum for $\Rm_{\TF}$.
+
+\emph{(e) Frame B.} By (c), $\Hg_{\bw}=\hb.1$, so $\Hg_{\bw}\otimes\TFT=\hb.\TFT$, since $\hb$ is scalar. By \cite[Prop.~2.14]{PPZ15}, $\RB.(\Hg_{\bw}\otimes\TFT)=(\RB\hb).\TFT$. Integrated over $\Mbar_g$, the left side is the sum \cref{eq:con-frame} for $\RB$, and the right side is the point-frame sum for $\RB\hb$, which is $\sF_g$ for $\RB\hb=\Rm_{\TF}$ by (d). So $\RB=\Rm_{\TF}\hb^{-1}$; the exponent $-1$ is derived, not fitted. This is the relation $\mathrm{r}_{a,i}=\hb^{-1}\mathrm{r}^{\mathrm{pt}}_{a,i}$ of the set-up, and \cref{eq:con-frame} follows.
+\end{proof}
+
+\draftnote{Step (b) relies on the formal Laplace calculus in the coordinate $\log U$ and on the row equations at the regular idempotent, written for the conifold in a separate notation. Steps (a), (c) are written here through the rank-3 proofs of \cref{sec:gen}. Before the section is finalised, decide whether to write these out in rank 2.}
+
+\begin{rmk}\leavevmode
+\begin{enumerate}
+\item Since $\hb$ is scalar, independent of $\tcn$, and $\hb(z)\hb(-z)=1$, $\RB$ is again a unitary solution of the quantum differential equation, and all dependence on $\tcn$ in \cref{eq:con-frame} sits in $\Delta_i$, $\Dilh_i$, $\Edgeh_{ij}$.
+\item On $\TF$, $h_{\mathsf{nw}}=1$ because $\mathsf{nw}=(v,-v)$, equivalently $\Lamv(e)\Lamv(-e)=(-e^2)^g$.
+\item The passage to $\TF$ is the algebraic step (d), not an analytic continuation in $\cQ$ from large radius: on $\TF$ the point $\cQ=0$ is not semisimple, since both roots tend to infinity and both $\mathsf{L}_i\to 0$, and the stable-graph terms have poles there that cancel only in the total.
+\item The translation of \cite[Def.~2.13]{PPZ15} for $\RB$, $z(1-\RB{}^{-1}(z)1)$, has no $z^0$ and $z^1$ terms; its colour-$i$ part is $\sum_{d\geq 2}\Dilh_i(d)\psi^d$, and the omitted $-\psi$ is the dilaton shift.
+\item As an independent consistency check, not a proof step: by \cref{prop:con-frame} the sum over all graphs is $\sF_g$, by \cref{cor:con-reg} only the single-vertex graph is singular, and by the result of \cite{BS} on the resolved conifold, $\sF_g-\sF_g(0)=\mathsf{P}_g\mathrm{Li}_{3-2g}(\cQ)/(\epsilon_1\epsilon_2)$, the polar part of $\sF_g$ is $\mathrm{gap}_g\tcn^{2-2g}$. \draftnote{BS label: prop:ResConifold.}
+\end{enumerate}
+\end{rmk}

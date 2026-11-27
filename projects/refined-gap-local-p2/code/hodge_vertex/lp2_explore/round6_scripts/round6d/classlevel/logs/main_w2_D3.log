@@ -1,0 +1,4 @@
+weights (3, 7, Fraction(-11, 2)) (Fraction(5, 3), Fraction(-2, 7)) (g,n)= (1, 1) D= 3 {'tests': 6, 'mismatch': 0, 'nonzero': 6, 'with_k_ge2': 0, 'secs': 4.5}
+weights (3, 7, Fraction(-11, 2)) (Fraction(5, 3), Fraction(-2, 7)) (g,n)= (1, 2) D= 3 {'tests': 30, 'mismatch': 0, 'nonzero': 27, 'with_k_ge2': 9, 'secs': 35.2}
+weights (3, 7, Fraction(-11, 2)) (Fraction(5, 3), Fraction(-2, 7)) (g,n)= (2, 1) D= 3 {'tests': 15, 'mismatch': 0, 'nonzero': 14, 'with_k_ge2': 9, 'secs': 17.4}
+weights (3, 7, Fraction(-11, 2)) (Fraction(5, 3), Fraction(-2, 7)) (g,n)= (2, 2) D= 3 {'tests': 99, 'mismatch': 0, 'nonzero': 95, 'with_k_ge2': 78, 'secs': 158.9}

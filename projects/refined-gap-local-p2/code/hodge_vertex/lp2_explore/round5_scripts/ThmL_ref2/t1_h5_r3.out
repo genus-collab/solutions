@@ -1,0 +1,12 @@
+﻿h 2 in-range tests 5 nonzero: [] outside-range nonzero 20 / 20 skipped r>rmax 0 time 0.0
+  Xi(empty) -49279/1866240 Xi(0)/( (2-2h) Xi(empty)) 1
+  string test X(3,1)/X(3) (3 = J) : 3
+h 3 in-range tests 29 nonzero: [] outside-range nonzero 36 / 36 skipped r>rmax 3 time 0.5
+  Xi(empty) 3565223/188116992 Xi(0)/( (2-2h) Xi(empty)) 1
+  string test X(3,1)/X(3) (3 = J) : ('X(3)=0, X(3,1)=', Fraction(0, 1))
+h 4 in-range tests 71 nonzero: [] outside-range nonzero 60 / 60 skipped r>rmax 14 time 5.7
+  Xi(empty) -847338073/19349176320 Xi(0)/( (2-2h) Xi(empty)) 1
+  string test X(3,1)/X(3) (3 = J) : ('X(3)=0, X(3,1)=', Fraction(0, 1))
+h 5 in-range tests 139 nonzero: [] outside-range nonzero 88 / 88 skipped r>rmax 44 time 49.0
+  Xi(empty) 1934611421467/9194728587264 Xi(0)/( (2-2h) Xi(empty)) 1
+  string test X(3,1)/X(3) (3 = J) : ('X(3)=0, X(3,1)=', Fraction(0, 1))

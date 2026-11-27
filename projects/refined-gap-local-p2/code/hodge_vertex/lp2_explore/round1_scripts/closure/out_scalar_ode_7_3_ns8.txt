@@ -1,0 +1,13 @@
+e1 = 7, e2 = 3, E = 10; z-orders 0..9; s-precision 8; leaf tests k = 0..3
+Sqrt[3] powers p_k: 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ; deg N_k <= k and sq^-1 checked for all k
+XX(s) = -2/9, 2/27, 10/243, 14/729, 16/2187, 128/59049, 112/177147, 320/531441   (XX(0) must be -2/9)
+section check theta log c1 - XX: valuation none (zero to s^6)
+rows built
+colour 0: PF operator annihilates Phat0 (frame B), z^0..z^9: OK (exact to s^5)
+colour 1: PF operator annihilates Phat0 (frame B), z^0..z^9: OK (exact to s^5)
+colour 2: PF operator annihilates Phat0 (frame B), z^0..z^9: OK (exact to s^5)
+done
+
+real	0m25.150s
+user	0m24.765s
+sys	0m0.295s

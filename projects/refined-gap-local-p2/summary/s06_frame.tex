@@ -1,0 +1,98 @@
+% s06_frame (abridged version). The frame change and the conifold substitution.
+\section{The frame change and the conifold substitution}
+\label{sec:fra}
+
+This section passes from the point-frame sum of \cref{thm:spe-main}\textup{(d)} to the Hodge-vertex sum $\Gsum_g$ of \cref{def:set-graphsum}, and then applies the conifold substitution. The frame change, \cref{thm:fra-change}, uses only \cref{prop:row-sympl}, \cref{lem:gen-mumford} and \cite[Definitions~2.2, 2.5, 2.13 and Proposition~2.14]{PPZ15}. \Cref{thm:gen-main} and \cref{thm:spe-main} are needed only to identify $\Tsumb_g[\sfF]$ with the reduction of $\Tsum_g$, and through them the frame formula, \cref{prop:fra-frame}, uses the mirror theorem. \Cref{lem:fra-tcf} is independent of \cref{sec:gen,sec:spe}.
+
+\subsection{The frame change}
+
+For a colour $i$, the rows of \cref{def:set-rows} in normalised form, with $\opD_i\coloneqq z\theta+Y_i-\frac z2\theta\log\Delta_i$, are
+\begin{gather*}
+\Ph_0^{(i)}=\Srow(v_i,z),\qquad\Qh_i\coloneqq\opD_i\Srow(v_i,z),\qquad\Ph_1^{(i)}=\Qh_i/\cone,\qquad
+\Ph_2^{(i)}=\xi\,\cone\big[\opD_i\Qh_i-z\sfF\Qh_i-\dtwo\Qh_i\big].
+\end{gather*}
+Here $\cone$ and $\sfF$ are treated as independent symbols. Let $\Gsum_g[\sfF]$ be the sum \eqref{eq:set-Gsum}, with decoration sums \eqref{eq:set-graphsum}, for these rows, with vertex classes $\Delta_{\col_v}^{g_v-1}\Hg_{\bw}$. Let $\Tsumb_g[\sfF]$ be the same sum with rows $\hb(z)\Ph_a$ and point vertices, that is, the sum $\Tsumb_g$ of \cref{thm:spe-main}\textup{(d)}, with $\sfF$ free. Put $\Lom\coloneqq\bbK(\omega)(t)$.
+
+\begin{lem}[{\Lg{Lemma~6.1}}, parts \textup{(i)}, \textup{(ii)}]\genusstatus{AI-proposed, unchecked}
+\label{lem:fra-setup}
+With $\cone$ and $\sfF$ free, and a prime meaning evaluation at $w$,
+\begin{multline}
+\label{eq:fra-pair}
+\langle\Ph^{(i)}(z),\Ph^{(j)}(w)\rangle=\eta^{00}\Srow_i\Srow_j'-3\epsilon_1\epsilon_2E\,\Qh_i\Qh_j'\\
+-3\epsilon_1\epsilon_2\,\xi\,\big(\Qh_i(\opD_j\Qh_j)'+(\opD_i\Qh_i)\Qh_j'\big)+3\epsilon_1\epsilon_2\,\xi\,(z+w)\,\sfF\,\Qh_i\Qh_j',
+\end{multline}
+and $\langle\Ph^{(i)}(z),\Ph^{(j)}(-z)\rangle=\delta_{ij}\Delta_i$.
+\end{lem}
+
+The first identity is algebra with $\eta^{11}=E\eta^{12}$, $\eta^{22}=0$ and $2\xi\dtwo=E(\cone^{-2}-1)$: the terms in $\cone^{-2}$ cancel. At $w=-z$ the term in $\sfF$ and all dependence on $\cone$ disappear, and the second identity is \cref{prop:row-sympl}. In particular the edge is linear in $\sfF$, with $\de_{\sfF}\Edgeh_{ij}[\sfF](\psi,w)=3\epsilon_1\epsilon_2\,\xi\,\Qh_i(-\psi)\Qh_j(-w)$, and neither $\cone$ nor $A$ occurs in a term without legs \Lg{Theorem~6.5}. It follows that $\Psi_{ai}\coloneqq\Delta_i^{-1/2}\Ph_a^{(i)}(0)$ is an orthonormal frame, that $\RB(z)$ defined by $\eta(H^a,\RB(z)\fid_i)=\Delta_i^{-1/2}\Ph_a^{(i)}(z)$ is symplectic with $\RB(0)=1$, and that $\TFT(\eid_i^{\otimes n})\coloneqq\Delta_i^{g-1}$ is a semisimple topological field theory with unit.
+
+\begin{lem}[Unfolding; {\Lg{Lemma~6.2}}, conclusion]\genusstatus{AI-proposed, unchecked}
+\label{lem:fra-unfold}
+Let $\Omega_{\circ}$ be a rank-one cohomological field theory with unit, pulled back under forgetful maps, and let $\Rm$ be symplectic with $\Rm(0)=1$ and rows $r_{ai}(z)=\eta(H^a,\Rm(z)\fid_i)$. In the conventions of \cite[Definitions~2.2, 2.5, 2.13]{PPZ15}, $\int_{\Mbar_g}\big(\Rm.(\Omega_{\circ}\otimes\TFT)\big)_{g,0}$ equals the sum \eqref{eq:set-Gsum} with $\Omega_{\circ}$ at the vertices, with $m_v$-tuples weighted by $1/m_v!$, and with $d\geq2$, the factors being built from the rows $\Delta_i^{1/2}r_{ai}$ as in \eqref{eq:set-dil}, \eqref{eq:set-edge}. In particular, the rows with $\Omega_{\circ}=1$ and $\Rm=\RB\hb$ give $\Tsumb_g[\sfF]$, and the rows with $\Omega_{\circ}=\Hg_{\bw}$ and $\Rm=\RB$ give $\Gsum_g[\sfF]$.
+\end{lem}
+
+
+\begin{thm}[Frame change; {\Lg{Theorem~6.4}}]\genusstatus{AI-proposed, unchecked}
+\label{thm:fra-change}
+For all $g\geq2$, in $\Lom[\sfF]$,
+\[
+\Tsumb_g[\sfF]=\Gsum_g[\sfF].
+\]
+This is a polynomial identity in $\sfF$. It holds for the total, not graph by graph or colouring by colouring. More precisely, $\Hg_{\bw}=\hb.1$ for the series $\hb$ of \eqref{eq:set-hw}, in the conventions of \cite[Definition~2.13]{PPZ15}, and the rows of $\RB\hb$ are $\hb(z)$ times the rows of $\RB$, so that, writing $\Rm_{\TF}\coloneqq\RB\hb$ for the operator with these rows, $\RB=\Rm_{\TF}\hb^{-1}$. The series $\hb$ is the same at all colours, does not depend on $t$, and satisfies $\hb(z)\hb(-z)=1$.
+\end{thm}
+
+\begin{proof}[Sketch]
+By \cref{lem:gen-mumford}, $\Hg_{\mathsf{v}}=h_{\mathsf{v}}.1$, and for $\mathsf{v}=\bw$ this is the series $\hb$; so the weights and the sign are determined by the formula, not chosen. The scalar $\hb$ acts on $\TFT$ through monochromatic graphs, and $\hb.\TFT=\Hg_{\bw}\otimes\TFT$ as cohomological field theories with unit. By \cite[Proposition~2.14]{PPZ15}, $(\RB\hb).\TFT=\RB.(\hb.\TFT)=\RB.(\Hg_{\bw}\otimes\TFT)$. Integrating over $\Mbar_g$ and using \cref{lem:fra-unfold} on both sides gives the identity. The frame change is scalar, so no input specific to rank $3$ enters except \cref{prop:row-sympl}. For the identification of $\Tsumb_g[\sfF]$ with the reduction of $\Tsum_g$, the point is that $\redC(\Pn_0)=\hb\,\Srow(v,z)$ holds with the same $\hb$ at all three roots (\cref{thm:spe-main}\textup{(a)}), not merely up to a colour-dependent factor depending on $z$ only.
+\end{proof}
+
+At $\cone=A$, $\sfF=F$, the relations of \cref{prop:row-modrel} make these rows, leaves and edges those of the stable graph sum of \cite{BS}, and \cref{thm:spe-main}\textup{(d)} reads $\sF_g^{\TF}=\Tsumb_g[F]$ in $\bbK\lser{y}$ \Lg{Lemma~6.6}.
+
+\subsection{The conifold coordinate}
+
+Expanding \eqref{eq:set-I} gives $I_0^{[1]}=\log y+\gI$ and $I_1^{[2]}=\tfrac12\log^2y+\gI\log y+\gtwo$ with $\gtwo\in y\bbQ\fps{y}$, so that $\theta I_1^{[2]}=A\log y+\hI$ with $\hI=\gI+\theta\gtwo$. Following \cite{BS}, for $|y|<1/27$ put
+\[
+\tcf\coloneqq\frac{\sqrt3}{2\pi}\big(I_1^{[2]}-\ri\pi I_0^{[1]}-\pi^2\big),\qquad\Acf\coloneqq\theta\tcf,\qquad\Fcf\coloneqq\theta\log\Acf.
+\]
+Write $l\coloneqq\log(-y)$ and $\upsilon\coloneqq-27y$, so that $\xi=1-\upsilon$.
+
+\begin{lem}[{\Lg{Lemma~6.7}}]\genusstatus{AI-proposed, unchecked}
+\label{lem:fra-tcf}
+On $y\in(-1/27,0)$, with the branch $\log y=\log(-y)+\ri\pi$,
+\[
+\tcf=\frac{\sqrt3}{2\pi}\Big(\frac{l^2}{2}+\gI l+\gtwo-\frac{\pi^2}{2}\Big).
+\]
+Further $\wcf={}_2F_1(\tfrac13,\tfrac23;1;\xi)$ has the logarithmic form
+\begin{equation}
+\label{eq:fra-log}
+\wcf=-\frac{\sqrt3}{2\pi}\big(A\,l+\hI\big),
+\end{equation}
+so that $\Acf=-{}_2F_1(\tfrac13,\tfrac23;1;\xi)=\ccf$ and $\Fcf=\theta\log\Acf=\Fc|_{\cone=\ccf}$. Moreover $\tcf=\tc=\xi+O(\xi^2)$. On the other branch, $\log y=\log(-y)-\ri\pi$, the same expression equals $\tcf-\sqrt3\pi-\ri\sqrt3(l+\gI)$, with $\tcf$ as above, and so does not vanish at $\xi=0$.
+\end{lem}
+
+\begin{proof}[Sketch]
+The operator $\Ltwo$ is the hypergeometric operator with parameters $\tfrac13,\tfrac23;1$ in $\upsilon$, invariant under $\upsilon\mapsto1-\upsilon$, so $\wcf(\upsilon)=A(1-\upsilon)$. The Barnes integral representation \cite[Eq.~15.6.7]{DLMF}, closed to the right over the double poles of $\Gamma(-s)^2$, gives a logarithmic expansion whose constants are evaluated by Gauss's values of the digamma function at $1/3$, $2/3$; this is \eqref{eq:fra-log}. Applying $\theta$ to the first formula gives $\theta\tcf=-\wcf$, hence $\Acf=\ccf$ and $\Fcf=\Fc$; up to here Barnes's second lemma is not used. So $\tcf$ and $\tc$ are equal if their constants agree. The Barnes integral $\mathsf{T}_{\mathrm{B}}(\upsilon)$ of the same integrand times $-1/s$ is a primitive with $\tc=\mathsf{T}_{\mathrm{B}}(\upsilon)-\mathsf{T}_{\mathrm{B}}(1)$: its value at $\upsilon=1$ is $2\pi/\sqrt3$ by Barnes's second lemma \cite{Bar10}, and its behaviour as $\upsilon\to0$, from the triple pole at $s=0$, is $(\sqrt3/2\pi)(l^2/2+5\pi^2/6)+o(1)$. The difference matches the constant $-\pi^2/2$ of $\tcf$.
+\end{proof}
+
+From now on $\tcf$, $\Acf$, $\Fcf$ are taken on this branch, continued analytically to a neighbourhood of $\xi=0$.
+
+\subsection{The conifold substitution and the frame formula}
+
+\begin{defn}[{\Lg{Definition~6.9}}, condensed]
+\label{def:fra-cf}
+The substitution $\Cf$ is the identity on coefficients, with $\Cf(A)=\Acf$, $\Cf(F)=\Fcf$, $\Cf(X)=X$ and $\Cf(Y_i)=Y_i$. Formally: coloured terms are lifted to polynomials in indeterminates $\sfA^{\pm1},\sfF$ over a field of rational functions of a formal variable $t$; the evaluation $\evA$ is $\sfA\mapsto A$, $\sfF\mapsto F$, and the evaluation $\evcf$ is $\sfA\mapsto\Acf$, $\sfF\mapsto\Fcf$, $t\mapsto-(1-\xi)^{1/3}/3$, with values in meromorphic germs at $\xi=0$; and $\Cf\coloneqq\evcf\circ\evA^{-1}$ on functions. On Gromov--Witten series, $\Cf(\sF_g^{\TF})\coloneqq\evcf$ of the unique polynomial of \cref{thm:spe-main}\textup{(e)}.
+\end{defn}
+
+The conventions on $X$ and $Y_i$ are those compatible with the formulas of \cite{BS} for the conifold frame; the substitution is not the pull-back under the transformation $\tau\mapsto-1/(3\tau)$ of the modular parameter of \cite{BS} on the whole ring \Lg{Remark~6.10}. On terms without legs only the transcendence of $F$ is needed for $\Cf$ to be well defined, because $A$ cancels; statements involving $A$ use in addition the algebraic independence of $A$ and $F$ given by \cite[Lemma~4.2]{BFGW21}, which is not used in \cref{prop:fra-frame}. For a single coloured function $\Cf$ depends on the branch of $t$; the colour-summed total is independent of it, and the colour called $0$ under $\evcf$ is the singular colour of \cref{sec:set-colours} \Lg{Lemma~6.11}.
+
+\begin{prop}[Frame formula; {\Lg{Proposition~6.12}}]\genusstatus{AI-proposed, unchecked}
+\label{prop:fra-frame}
+For $g\geq2$, $\Cf(\sF_g^{\TF})=\Gsum_g[\Fcf]$, and this is $\Gsum_g$ of \eqref{eq:set-Gsum} at $\cone=\ccf$. If the series is taken with $d>0$ only, then $\Cf\big(\sum_{d>0}\cQ^d\GW_{g,d}^{\TF}\big)=\Gsum_g[\Fcf]-\GW_{g,0}^{\TF}$, with $\GW_{g,0}^{\TF}$ the constant in $\bbK$ of \cref{thm:spe-main}\textup{(b)}. The proof uses \cref{thm:gen-main} and \cref{thm:spe-main}, \cref{prop:row-sympl}, \cref{prop:row-modrel}, \cite[Definitions~2.2, 2.5, 2.13 and Proposition~2.14]{PPZ15} and, for the clause $\Fcf=\Fc$ only, the logarithmic form \eqref{eq:fra-log} (\cite[Eq.~15.6.7]{DLMF} and Gauss's values), not Barnes's second lemma.
+\end{prop}
+
+\begin{proof}[Proof, given the results above]
+By \cref{def:fra-cf}, \cref{thm:spe-main}\textup{(d)} and \cref{thm:fra-change},
+\[
+\Cf(\sF_g^{\TF})=\evcf\big(\Tsumb_g[\sfF]\big)=\evcf\big(\Gsum_g[\sfF]\big)=\Gsum_g[\Fcf].
+\]
+By \eqref{eq:fra-pair}, the edges of \eqref{eq:set-graphsum} at $\cone=\ccf$ have $\sfF=\Fc=\theta\log\ccf$, the symbol $\cone$ drops out, and $\Dilh$ does not involve $\cone$. By the logarithmic form in \cref{lem:fra-tcf}, $\Acf=\ccf$ and $\Fcf=\Fc$, so $\Gsum_g[\Fcf]$ is \eqref{eq:set-Gsum} at $\cone=\ccf$, term by term. The term $\GW_{g,0}^{\TF}$ with $d=0$ lies in $\bbK$ and is fixed by $\Cf$.
+\end{proof}

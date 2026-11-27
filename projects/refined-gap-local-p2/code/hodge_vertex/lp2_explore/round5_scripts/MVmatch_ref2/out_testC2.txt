@@ -1,0 +1,30 @@
+tau=5/3 R=(2,) M=6 G=1 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(5) lit=True Xi=-3/320 D=1 range=False g1table=True 0.0
+tau=5/3 R=(3,) M=6 G=1 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(5) lit=True Xi=31/960 D=2 range=False g1table=True 0.0
+tau=5/3 R=(4,) M=5 G=2 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(4) lit=True Xi=71/960 D=3 range=False g1table=True | g=2 N=4 tail0=True(1) lit=True Xi=-2211/512000 D=3 range=False 0.0
+tau=5/3 R=(2,) M=10 G=3 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(9) lit=True Xi=-3/320 D=1 range=False g1table=True | g=2 N=4 tail0=True(6) lit=True Xi=0 D=1 range=True | g=3 N=7 tail0=True(3) lit=True Xi=0 D=1 range=True 0.3
+tau=5/3 R=(5,) M=9 G=3 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(8) lit=True Xi=37/320 D=4 range=False g1table=True | g=2 N=4 tail0=True(5) lit=True Xi=19447/768000 D=4 range=False | g=3 N=7 tail0=True(2) lit=True Xi=-3318331/1105920000 D=4 range=False 0.5
+tau=5/3 R=(2, 2) M=8 G=2 forb=0 | (0,(j,k)) True | g=1 N=2 tail0=True(6) lit=True Xi=53/960 D=2 range=False | g=2 N=5 tail0=True(3) lit=True Xi=-29659/4608000 D=2 range=False 0.3
+tau=5/3 R=(3, 2) M=10 G=3 forb=0 | (0,(j,k)) True | g=1 N=2 tail0=True(8) lit=True Xi=17/80 D=3 range=False | g=2 N=5 tail0=True(5) lit=True Xi=-1611/128000 D=3 range=False | g=3 N=8 tail0=True(2) lit=True Xi=0 D=3 range=True 1.2
+tau=5/3 R=(2, 2, 2) M=7 G=1 forb=0 | g=0 N=0 tail0=True(7) lit=True Xi=1 D=3 range=False g0value=True | g=1 N=3 tail0=True(4) lit=True Xi=13/16 D=3 range=False 0.4
+tau=5/3 R=(3, 2, 2) M=6 G=1 forb=0 | g=0 N=0 tail0=True(6) lit=True Xi=1 D=4 range=False g0value=True | g=1 N=3 tail0=True(3) lit=True Xi=205/96 D=4 range=False 0.4
+tau=5/3 R=(3, 3, 2, 2) M=5 G=0 forb=0 | g=0 N=1 tail0=True(4) lit=True Xi=9 D=6 range=False g0value=True 0.6
+tau=5/3 R=(4,) M=14 G=4 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(13) lit=True Xi=71/960 D=3 range=False g1table=True | g=2 N=4 tail0=True(10) lit=True Xi=-2211/512000 D=3 range=False | g=3 N=7 tail0=True(7) lit=True Xi=0 D=3 range=True | g=4 N=10 tail0=True(4) lit=None Xi=0 D=3 range=True 4.6
+control x'=x (1,(3)) table holds: False forb 0
+control no e^-u (1,(3)) table holds: False forb 0
+control s->-s (1,(3)) table holds: False forb 0
+control no Pi (1,(3)) table holds: False forb 0
+tau=-5/8 R=(2,) M=6 G=1 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(5) lit=True Xi=8/45 D=1 range=False g1table=True 0.0
+tau=-5/8 R=(3,) M=6 G=1 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(5) lit=True Xi=79/360 D=2 range=False g1table=True 0.1
+tau=-5/8 R=(4,) M=5 G=2 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(4) lit=True Xi=47/180 D=3 range=False g1table=True | g=2 N=4 tail0=True(1) lit=True Xi=748/3375 D=3 range=False 0.1
+tau=-5/8 R=(2,) M=10 G=3 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(9) lit=True Xi=8/45 D=1 range=False g1table=True | g=2 N=4 tail0=True(6) lit=True Xi=0 D=1 range=True | g=3 N=7 tail0=True(3) lit=True Xi=0 D=1 range=True 0.4
+tau=-5/8 R=(5,) M=9 G=3 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(8) lit=True Xi=109/360 D=4 range=False g1table=True | g=2 N=4 tail0=True(5) lit=True Xi=63667/108000 D=4 range=False | g=3 N=7 tail0=True(2) lit=True Xi=2659457/19440000 D=4 range=False 0.7
+tau=-5/8 R=(2, 2) M=8 G=2 forb=0 | (0,(j,k)) True | g=1 N=2 tail0=True(6) lit=True Xi=37/60 D=2 range=False | g=2 N=5 tail0=True(3) lit=True Xi=679/4500 D=2 range=False 0.4
+tau=-5/8 R=(3, 2) M=10 G=3 forb=0 | (0,(j,k)) True | g=1 N=2 tail0=True(8) lit=True Xi=173/180 D=3 range=False | g=2 N=5 tail0=True(5) lit=True Xi=2692/3375 D=3 range=False | g=3 N=8 tail0=True(2) lit=True Xi=0 D=3 range=True 1.4
+tau=-5/8 R=(2, 2, 2) M=7 G=1 forb=0 | g=0 N=0 tail0=True(7) lit=True Xi=1 D=3 range=False g0value=True | g=1 N=3 tail0=True(4) lit=True Xi=41/9 D=3 range=False 0.5
+tau=-5/8 R=(3, 2, 2) M=6 G=1 forb=0 | g=0 N=0 tail0=True(6) lit=True Xi=1 D=4 range=False g0value=True | g=1 N=3 tail0=True(3) lit=True Xi=31/4 D=4 range=False 0.5
+tau=-5/8 R=(3, 3, 2, 2) M=5 G=0 forb=0 | g=0 N=1 tail0=True(4) lit=True Xi=9 D=6 range=False g0value=True 0.6
+tau=-5/8 R=(4,) M=14 G=4 forb=0 | (0,(j)) True | g=1 N=1 tail0=True(13) lit=True Xi=47/180 D=3 range=False g1table=True | g=2 N=4 tail0=True(10) lit=True Xi=748/3375 D=3 range=False | g=3 N=7 tail0=True(7) lit=True Xi=0 D=3 range=True | g=4 N=10 tail0=True(4) lit=None Xi=0 D=3 range=True 4.7
+control x'=x (1,(3)) table holds: False forb 0
+control no e^-u (1,(3)) table holds: False forb 0
+control s->-s (1,(3)) table holds: False forb 0
+control no Pi (1,(3)) table holds: False forb 0

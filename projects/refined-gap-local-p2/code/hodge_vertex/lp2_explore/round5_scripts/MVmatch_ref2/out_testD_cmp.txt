@@ -1,0 +1,90 @@
+2 (2,) 5/3 D 1 schur 0 def 0 OK 0.0
+2 (3,) 5/3 D 2 schur -1857/512000 def -1857/512000 OK 0.0
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (4,) 5/3 D 3 schur -2211/512000 def -2211/512000 OK 0.0
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (2, 2) 5/3 D 2 schur -29659/4608000 def -29659/4608000 OK 0.1
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (3, 2) 5/3 D 3 schur -1611/128000 def -1611/128000 OK 0.1
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (5,) 5/3 D 4 schur 19447/768000 def 19447/768000 OK 0.0
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (2,) -9/7 D 1 schur 0 def 0 OK 0.0
+2 (3,) -9/7 D 2 schur 1367/186624 def 1367/186624 OK 0.0
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (4,) -9/7 D 3 schur -833/311040 def -833/311040 OK 0.0
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (2, 2) -9/7 D 2 schur 2075/62208 def 2075/62208 OK 0.1
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (3, 2) -9/7 D 3 schur 3577/77760 def 3577/77760 OK 0.1
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+2 (5,) -9/7 D 4 schur -5261/155520 def -5261/155520 OK 0.0
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+3 (3,) 5/3 D 2 schur 0 def 0 OK 0.1
+3 (5,) 5/3 D 4 schur -3318331/1105920000 def -3318331/1105920000 OK 0.2
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+3 (6,) 5/3 D 5 schur -459471/57344000 def -459471/57344000 OK 0.2
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+3 (2, 2) 5/3 D 2 schur 0 def 0 OK 0.5
+3 (4, 2) 5/3 D 4 schur -2077859/221184000 def -2077859/221184000 OK 0.5
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+3 (3,) -9/7 D 2 schur 0 def 0 OK 0.1
+3 (5,) -9/7 D 4 schur 205027/47029248 def 205027/47029248 OK 0.2
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+3 (6,) -9/7 D 5 schur 99911/6718464 def 99911/6718464 OK 0.4
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+3 (2, 2) -9/7 D 2 schur 0 def 0 OK 0.4
+3 (4, 2) -9/7 D 4 schur 388505/47029248 def 388505/47029248 OK 0.8
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+4 (2,) 5/3 D 1 schur 0 def 0 OK 1.9
+4 (7,) 5/3 D 6 schur -5417280911/707788800000 def -5417280911/707788800000 OK 2.1
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+4 (8,) 5/3 D 7 schur -2680513633/78643200000 def -2680513633/78643200000 OK 2.6
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+4 (3, 3) 5/3 D 4 schur 0 def 0 OK 10.6
+4 (2,) -9/7 D 1 schur 0 def 0 OK 0.5
+4 (7,) -9/7 D 6 schur 193375/214990848 def 193375/214990848 OK 2.2
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+4 (8,) -9/7 D 7 schur 15401827/644972544 def 15401827/644972544 OK 2.7
+   ctl lagidx False
+   ctl J False
+   ctl nosign False
+4 (3, 3) -9/7 D 4 schur 0 def 0 OK 2.6
